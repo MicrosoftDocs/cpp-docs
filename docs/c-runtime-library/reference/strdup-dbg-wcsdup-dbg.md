@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strdup_dbg"
-  - "_wcsdup_dbg"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_strdup_dbg", "_wcsdup_dbg"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wcsdup_dbg"
-  - "strdup_dbg"
-  - "_strdup_dbg"
-  - "wcsdup_dbg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wcsdup_dbg function"
-  - "stdup_dbg function"
-  - "copying strings"
-  - "duplicating strings"
-  - "strings [C++], copying"
-  - "strings [C++], duplicating"
-  - "_strdup_dbg function"
-  - "wcsdup_dbg function"
+f1_keywords: ["_wcsdup_dbg", "strdup_dbg", "_strdup_dbg", "wcsdup_dbg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wcsdup_dbg function", "stdup_dbg function", "copying strings", "duplicating strings", "strings [C++], copying", "strings [C++], duplicating", "_strdup_dbg function", "wcsdup_dbg function"]
 ms.assetid: 681db70c-d124-43ab-b83e-5eeea9035097
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strdup_dbg, _wcsdup_dbg
 Versions of [_strdup and _wcsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md) that use the debug version of `malloc`.  
@@ -116,9 +77,6 @@ wchar_t *_wcsdup_dbg(
   
 ## Libraries  
  All debug versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Clone](https://msdn.microsoft.com/en-us/library/system.string.clone.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

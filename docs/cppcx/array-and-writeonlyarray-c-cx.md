@@ -1,21 +1,21 @@
 ---
-title: "Array and WriteOnlyArray (C++-CX) | Microsoft Docs"
+title: "Array and WriteOnlyArray (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
 caps.latest.revision: 28
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
-# Array and WriteOnlyArray (C++-CX)
-You can freely use regular C-style arrays or [std::array](../standard-library/array-class-stl.md) in a [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] program (although [std::vector](../standard-library/vector-class.md) is often a better choice), but in any API that is published in metadata, you must convert a C-style array or vector to a [Platform::Array](../cppcx/platform-array-class.md) or [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) type depending on how it is being used. The [Platform::Array](../cppcx/platform-array-class.md) type is neither as efficient nor as powerful as [std::vector](../standard-library/vector-class.md), so as a general guideline you should avoid its use in internal code that performs lots of operations on the array elements.  
+# Array and WriteOnlyArray (C++/CX)
+You can freely use regular C-style arrays or [std::array](../standard-library/array-class-stl.md) in a C++/CX program (although [std::vector](../standard-library/vector-class.md) is often a better choice), but in any API that is published in metadata, you must convert a C-style array or vector to a [Platform::Array](../cppcx/platform-array-class.md) or [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) type depending on how it is being used. The [Platform::Array](../cppcx/platform-array-class.md) type is neither as efficient nor as powerful as [std::vector](../standard-library/vector-class.md), so as a general guideline you should avoid its use in internal code that performs lots of operations on the array elements.  
   
  The following array types can be passed across the ABI:  
   
@@ -27,7 +27,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
   
 4.  return value of Platform::Array^  
   
- You use these array types to implement the three kinds of array patterns that are defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+ You use these array types to implement the three kinds of array patterns that are defined by the Windows Runtime.  
   
  PassArray  
  Used when the caller passes an array to a method. The C++ input parameter type is `const`[Platform::Array](../cppcx/platform-array-class.md)\<T>.  
@@ -39,7 +39,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
  Used when the caller receives an array that the method allocates. In C++/CX you can return the array in the return value as an Array^ or you can return it as an out parameter as type Array^*.  
   
 ## PassArray pattern  
- When client code passes an array to a C++ method and the method does not modify it, the method accepts the array as a const Array^. At the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI) level, this is known as a PassArray. The next example shows how to pass an array that's allocated in JavaScript to a C++ function that reads from it.  
+ When client code passes an array to a C++ method and the method does not modify it, the method accepts the array as a const Array^. At the Windows Runtime application binary interface (ABI) level, this is known as a PassArray. The next example shows how to pass an array that's allocated in JavaScript to a C++ function that reads from it.  
   
  [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]  
   

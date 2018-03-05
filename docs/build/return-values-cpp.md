@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 53583524-b337-4228-a9c6-c9bf516babe8
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Return Values (C++)
 A scalar return value that can fit into 64 bits is returned through RAX—this includes __m64 types. Non-scalar types including floats, doubles, and vector types such as [__m128](../cpp/m128.md), [__m128i](../cpp/m128i.md), [__m128d](../cpp/m128d.md) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.  
@@ -37,7 +22,7 @@ A scalar return value that can fit into 64 bits is returned through RAX—this i
   
  These examples show how parameters and return values are passed for functions with the specified declarations:  
   
-## Example of return value 1 – 64 bit result  
+## Example of return value 1 - 64 bit result  
   
 ```Output  
 __int64 func1(int a, float b, int c, int d, int e);  
@@ -45,7 +30,7 @@ __int64 func1(int a, float b, int c, int d, int e);
 // callee returns __int64 result in RAX.  
 ```  
   
-## Example of return value 2 – 128 bit result  
+## Example of return value 2 - 128 bit result  
   
 ```Output  
 __m128 func2(float a, double b, int c, __m64 d);   
@@ -53,7 +38,7 @@ __m128 func2(float a, double b, int c, __m64 d);
 // callee returns __m128 result in XMM0.  
 ```  
   
-## Example of return value 3 – user type result by pointer  
+## Example of return value 3 - user type result by pointer  
   
 ```Output  
 struct Struct1 {  
@@ -65,7 +50,7 @@ Struct1 func3(int a, double b, int c, float d);
 // callee returns pointer to Struct1 result in RAX.  
 ```  
   
-## Example of return value 4 – user type result by value  
+## Example of return value 4 - user type result by value  
   
 ```Output  
 struct Struct2 {  

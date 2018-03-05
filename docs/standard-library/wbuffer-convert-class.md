@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext::cvt::wbuffer_convert"
-  - "wbuffer_convert"
-  - "stdext.cvt.wbuffer_convert"
-  - "cvt.wbuffer_convert"
-  - "cvt::wbuffer_convert"
-  - "wbuffer/stdext::cvt::wbuffer_convert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wbuffer_convert class"
+ms.topic: "reference"
+f1_keywords: ["xlocmon/stdext::cvt::wbuffer_convert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wbuffer_convert class"]
 ms.assetid: 4a56f9bf-4138-4612-b516-525fea401358
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # wbuffer_convert Class
 Describes a stream buffer that controls the transmission of elements to and from a byte stream buffer.  

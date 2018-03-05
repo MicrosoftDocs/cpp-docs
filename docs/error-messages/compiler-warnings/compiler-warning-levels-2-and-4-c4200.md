@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4200"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4200"
+f1_keywords: ["C4200"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4200"]
 ms.assetid: e44d6073-937f-42b7-acc1-65e802b475c6
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 2 and 4) C4200
 nonstandard extension used : zero-sized array in struct/union  

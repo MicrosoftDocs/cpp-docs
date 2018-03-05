@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "iterator/std::back_insert_iterator"
-  - "std::back_insert_iterator"
-  - "back_insert_iterator"
-  - "std.back_insert_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "back_insert_iterator class"
+ms.topic: "reference"
+f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # back_insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the back end of a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `back_insert_iterator` class is templatized on the type of container.  
@@ -58,29 +38,29 @@ class back_insert_iterator;
   
 |||  
 |-|-|  
-|[back_insert_iterator](#back_insert_iterator__back_insert_iterator)|Constructs a `back_insert_iterator` that inserts elements after the last element in a container.|  
+|[back_insert_iterator](#back_insert_iterator)|Constructs a `back_insert_iterator` that inserts elements after the last element in a container.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#back_insert_iterator__container_type)|A type that provides a container for the `back_insert_iterator`.|  
-|[reference](#back_insert_iterator__reference)|A type that provides a reference for the `back_insert_iterator`.|  
+|[container_type](#container_type)|A type that provides a container for the `back_insert_iterator`.|  
+|[reference](#reference)|A type that provides a reference for the `back_insert_iterator`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#back_insert_iterator__operator_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
-|[operator++](#back_insert_iterator__operator_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|  
-|[operator=](#back_insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
+|[operator++](#op_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|  
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
   
 ## Requirements  
  **Header**: \<iterator>  
   
  **Namespace:** std  
   
-##  <a name="back_insert_iterator__back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
+##  <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
  Constructs a `back_insert_iterator` that inserts elements after the last element in a container.  
   
 ```   
@@ -142,7 +122,7 @@ The initial vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).  
 ```  
   
-##  <a name="back_insert_iterator__container_type"></a>  back_insert_iterator::container_type  
+##  <a name="container_type"></a>  back_insert_iterator::container_type  
  A type that provides a container for the `back_insert_iterator`.  
   
 ```   
@@ -194,7 +174,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_star"></a>  back_insert_iterator::operator*  
+##  <a name="op_star"></a>  back_insert_iterator::operator*  
  Dereferencing operator used to implement the output iterator expression \* *i* = *x*.  
   
 ```  
@@ -251,7 +231,7 @@ The vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_add_add"></a>  back_insert_iterator::operator++  
+##  <a name="op_add_add"></a>  back_insert_iterator::operator++  
  Increments the `back_insert_iterator` to the next location into which a value may be stored.  
   
 ```  
@@ -309,7 +289,7 @@ The vector vec is: ( 10 20 ).
 After the insertions, the vector vec becomes: ( 10 20 30 40 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_eq"></a>  back_insert_iterator::operator=  
+##  <a name="op_eq"></a>  back_insert_iterator::operator=  
  Appends or pushes a value onto the back end of a container.  
   
 ```  
@@ -318,7 +298,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The value to be inserted into the container.  
   
 ### Return Value  
@@ -372,7 +352,7 @@ int main( )
 }  
 ```  
   
-##  <a name="back_insert_iterator__reference"></a>  back_insert_iterator::reference  
+##  <a name="reference"></a>  back_insert_iterator::reference  
  A type that provides a reference for the `back_insert_iterator`.  
   
 ```  

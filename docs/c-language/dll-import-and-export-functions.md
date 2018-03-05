@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DLLs [C++], importing"
-  - "dllimport attribute [C++], storage-class attribute"
-  - "DLL exports [C++]"
-  - "declaring functions, with dllexport and dllimport"
-  - "extended storage-class attributes"
-  - "dllexport attribute [C++], storage-class attribute"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DLLs [C++], importing", "dllimport attribute [C++], storage-class attribute", "DLL exports [C++]", "declaring functions, with dllexport and dllimport", "extended storage-class attributes", "dllexport attribute [C++], storage-class attribute"]
 ms.assetid: 08d164b9-770a-4e14-afeb-c6f21d9e33e4
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # DLL Import and Export Functions
 **Microsoft Specific**  

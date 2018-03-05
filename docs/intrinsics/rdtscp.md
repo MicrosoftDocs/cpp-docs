@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__rdtscp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rdtscp intrinsic"
-  - "__rdtscp intrinsic"
-  - "rdtscp instruction"
+ms.topic: "reference"
+f1_keywords: ["__rdtscp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rdtscp intrinsic", "__rdtscp intrinsic", "rdtscp instruction"]
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __rdtscp
 **Microsoft Specific**  
@@ -95,7 +75,7 @@ int main()
 TSC_AUX was 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

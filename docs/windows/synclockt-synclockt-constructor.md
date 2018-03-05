@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SyncLockT, constructor"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SyncLockT, constructor"]
 ms.assetid: 713dfd9f-7369-4d86-b4a0-8b32c184d89b
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT::SyncLockT Constructor
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

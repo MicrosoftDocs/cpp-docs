@@ -4,51 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::CDataSource::GetProperty"
-  - "ATL.CDataSource.GetProperty"
-  - "CDataSource.GetProperty"
-  - "CDataSource::GetProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetProperty method"
+ms.topic: "reference"
+f1_keywords: ["ATL::CDataSource::GetProperty", "ATL.CDataSource.GetProperty", "CDataSource.GetProperty", "CDataSource::GetProperty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetProperty method"]
 ms.assetid: 6531147c-b164-4ab5-a4a7-509634b85b4d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::GetProperty
 Returns the value of a specified property for the connected data source object.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetProperty(   
-   const GUID& guid,   
+```cpp
+HRESULT GetProperty(const GUID& guid,   
    DBPROPID propid,   
-   VARIANT* pVariant    
-) const throw( );  
+   VARIANT* pVariant) const throw();  
 ```  
   
 #### Parameters  

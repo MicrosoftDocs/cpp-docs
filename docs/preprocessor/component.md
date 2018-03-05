@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.component"
-  - "component_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "component pragma"
-  - "pragmas, component"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.component", "component_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["component pragma", "pragmas, component"]
 ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # component
 Controls the collecting of browse information or dependency information from within source files.  

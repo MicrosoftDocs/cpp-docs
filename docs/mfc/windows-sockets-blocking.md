@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sockets [C++], blocking mode"
-  - "Windows Sockets [C++], Windows platforms"
-  - "Windows Sockets [C++], blocking mode"
-  - "sockets [C++], behavior on different Windows platforms"
-  - "blocking mode sockets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sockets [MFC], blocking mode", "Windows Sockets [MFC], Windows platforms", "Windows Sockets [MFC], blocking mode", "sockets [MFC], behavior on different Windows platforms", "blocking mode sockets"]
 ms.assetid: 10aca9b1-bfba-41a8-9c55-ea8082181e63
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Blocking
 This article and two companion articles explain several issues in Windows Sockets programming. This article covers blocking. The other issues are covered in the articles: [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md) and [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md).  

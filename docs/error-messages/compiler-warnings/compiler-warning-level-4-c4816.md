@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4816"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4816"
+f1_keywords: ["C4816"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4816"]
 ms.assetid: 60f730ae-d942-4db9-ab97-41d4a874d8da
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4816
 'param' : parameter has a zero-sized array which will be truncated (unless the object is passed by reference)  

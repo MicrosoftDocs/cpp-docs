@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SIZE"
-  - "dimensions, MFC"
-  - "dimensions"
-  - "CSize class"
+f1_keywords: ["CSize", "ATLTYPES/ATL::CSize", "ATLTYPES/ATL::CSize::CSize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SIZE", "dimensions, MFC", "dimensions", "CSize class"]
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSize Class
 Similar to the Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  

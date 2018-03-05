@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCoClass"
-  - "ATL.CComCoClass"
-  - "ATL::CComCoClass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComCoClass class"
-  - "aggregation [C++], aggregation models"
+f1_keywords: ["CComCoClass", "ATLCOM/ATL::CComCoClass", "ATLCOM/ATL::CComCoClass::CreateInstance", "ATLCOM/ATL::CComCoClass::Error", "ATLCOM/ATL::CComCoClass::GetObjectCLSID", "ATLCOM/ATL::CComCoClass::GetObjectDescription"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComCoClass class", "aggregation [C++], aggregation models"]
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComCoClass Class
 This class provides methods for creating instances of a class, and obtaining its properties.  
@@ -70,11 +50,11 @@ class CComCoClass
   
  `CComCoClass` also defines the default class factory and aggregation model for your object. `CComCoClass` uses the following two macros:  
   
-- [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4) Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md).  
+- [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory) Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md).  
   
-- [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab) Declares that your object can be aggregated.  
+- [DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable) Declares that your object can be aggregated.  
   
- You can override either of these defaults by specifying another macro in your class definition. For example, to use [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) instead of `CComClassFactory`, specify the [DECLARE_CLASSFACTORY2](http://msdn.microsoft.com/library/38a6c969-7297-4bb1-9ba6-1fe2d355b285) macro:  
+ You can override either of these defaults by specifying another macro in your class definition. For example, to use [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) instead of `CComClassFactory`, specify the [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) macro:  
   
  [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/ccomcoclass-class_1.h)]  
   
@@ -103,14 +83,14 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.  
   
 ### Return Value  
- A standard `HRESULT` value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description of possible return values.  
+ A standard `HRESULT` value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the Windows SDK for a description of possible return values.  
   
 ### Remarks  
  Use the first overload of this function for typical object creation; use the second overload when you need to aggregate the object being created.  
   
  The ATL class implementing the required COM object (that is, the class used as the first template parameter to [CComCoClass](../../atl/reference/ccomcoclass-class.md)) must be in the same project as the calling code. The creation of the COM object is carried out by the class factory registered for this ATL class.  
   
- These functions are useful for creating objects that you have prevented from being externally creatable by using the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](http://msdn.microsoft.com/library/abdc093c-6502-42de-8419-b7ebf45299d1) macro. They are also useful in situations where you want to avoid the COM API for reasons of efficiency.  
+ These functions are useful for creating objects that you have prevented from being externally creatable by using the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](object-map-macros.md#object_entry_non_createable_ex_auto) macro. They are also useful in situations where you want to avoid the COM API for reasons of efficiency.  
   
  Note that the interface `Q` must have an IID associated with it that can be retrieved using the [__uuidof](../../cpp/uuidof-operator.md) operator.  
   
@@ -213,7 +193,7 @@ static LPCTSTR WINAPI GetObjectDescription();
  The class object's description.  
   
 ### Remarks  
- The default implementation returns **NULL**. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](http://msdn.microsoft.com/library/32ac881c-97b1-44e2-a017-0e23eb99ac93) macro. For example:  
+ The default implementation returns **NULL**. You can override this method with the [DECLARE_OBJECT_DESCRIPTION](object-map-macros.md#declare_object_description) macro. For example:  
   
  [!code-cpp[NVC_ATL_COM#12](../../atl/codesnippet/cpp/ccomcoclass-class_3.h)]  
   

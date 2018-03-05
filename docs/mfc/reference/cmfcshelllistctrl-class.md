@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCShellListCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCShellListCtrl class"
+f1_keywords: ["CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes", "AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns", "AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh", "AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCShellListCtrl [MFC], DisplayFolder", "CMFCShellListCtrl [MFC], DisplayParentFolder", "CMFCShellListCtrl [MFC], EnableShellContextMenu", "CMFCShellListCtrl [MFC], GetCurrentFolder", "CMFCShellListCtrl [MFC], GetCurrentFolderName", "CMFCShellListCtrl [MFC], GetCurrentItemIdList", "CMFCShellListCtrl [MFC], GetCurrentShellFolder", "CMFCShellListCtrl [MFC], GetItemPath", "CMFCShellListCtrl [MFC], GetItemTypes", "CMFCShellListCtrl [MFC], IsDesktop", "CMFCShellListCtrl [MFC], OnCompareItems", "CMFCShellListCtrl [MFC], OnFormatFileDate", "CMFCShellListCtrl [MFC], OnFormatFileSize", "CMFCShellListCtrl [MFC], OnGetItemIcon", "CMFCShellListCtrl [MFC], OnGetItemText", "CMFCShellListCtrl [MFC], OnSetColumns", "CMFCShellListCtrl [MFC], Refresh", "CMFCShellListCtrl [MFC], SetItemTypes"]
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCShellListCtrl Class
 The `CMFCShellListCtrl` class provides Windows list control functionality and expands it by including the ability to display a list of shell items.  

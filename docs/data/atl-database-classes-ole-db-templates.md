@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB templates [C++], ATL database classes"
-  - "database classes [C++], OLE DB"
-  - "database classes [C++], ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB templates [C++], ATL database classes", "database classes [C++], OLE DB", "database classes [C++], ATL"]
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ATL Database Classes (OLE DB Templates)
 Microsoft provides several implementations of OLE DB, a set of COM interfaces that provide uniform access to data in diverse information sources and formats.  OLE DB is officially deprecated; this documentation is for developers who are maintaining legacy code. New applications should use ODBC to connect to SQL data sources.
@@ -49,7 +31,7 @@ Microsoft provides several implementations of OLE DB, a set of COM interfaces th
   
  Note that the MFC library contains one class, [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object, and displays the fields of the `CRowset` object in the dialog template's controls.  
   
- For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?linkid=121548).  
+ For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/p/?linkid=121548).  
   
 ## See Also  
  [Creating an OLE DB Consumer](../data/oledb/creating-an-ole-db-consumer.md)   

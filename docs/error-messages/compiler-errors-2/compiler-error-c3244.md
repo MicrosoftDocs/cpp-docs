@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3244"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3244"
+f1_keywords: ["C3244"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3244"]
 ms.assetid: dae6c49b-5212-4206-8f61-d4010c0b9969
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3244
 'method' : this method was introduced by 'interface' not by 'interface'  

@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDocument"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "documents [C++], serialization"
-  - "files [C++], documents"
-  - "command handling, documents and"
-  - "documents [C++], document classes"
-  - "documents [C++], multiple views"
-  - "serialization [C++], documents and"
-  - "CDocument class"
-  - "command routing, documents and"
-  - "views [C++], document"
-  - "documents [C++], command routing"
+f1_keywords: ["CDocument", "AFXWIN/CDocument", "AFXWIN/CDocument::CDocument", "AFXWIN/CDocument::AddView", "AFXWIN/CDocument::BeginReadChunks", "AFXWIN/CDocument::CanCloseFrame", "AFXWIN/CDocument::ClearChunkList", "AFXWIN/CDocument::ClearPathName", "AFXWIN/CDocument::DeleteContents", "AFXWIN/CDocument::FindChunk", "AFXWIN/CDocument::GetAdapter", "AFXWIN/CDocument::GetDocTemplate", "AFXWIN/CDocument::GetFile", "AFXWIN/CDocument::GetFirstViewPosition", "AFXWIN/CDocument::GetNextView", "AFXWIN/CDocument::GetPathName", "AFXWIN/CDocument::GetThumbnail", "AFXWIN/CDocument::GetTitle", "AFXWIN/CDocument::InitializeSearchContent", "AFXWIN/CDocument::IsModified", "AFXWIN/CDocument::IsSearchAndOrganizeHandler", "AFXWIN/CDocument::LoadDocumentFromStream", "AFXWIN/CDocument::OnBeforeRichPreviewFontChanged", "AFXWIN/CDocument::OnChangedViewList", "AFXWIN/CDocument::OnCloseDocument", "AFXWIN/CDocument::OnCreatePreviewFrame", "AFXWIN/CDocument::OnDocumentEvent", "AFXWIN/CDocument::OnDrawThumbnail", "AFXWIN/CDocument::OnLoadDocumentFromStream", "AFXWIN/CDocument::OnNewDocument", "AFXWIN/CDocument::OnOpenDocument", "AFXWIN/CDocument::OnPreviewHandlerQueryFocus", "AFXWIN/CDocument::OnPreviewHandlerTranslateAccelerator", "AFXWIN/CDocument::OnRichPreviewBackColorChanged", "AFXWIN/CDocument::OnRichPreviewFontChanged", "AFXWIN/CDocument::OnRichPreviewSiteChanged", "AFXWIN/CDocument::OnRichPreviewTextColorChanged", "AFXWIN/CDocument::OnSaveDocument", "AFXWIN/CDocument::OnUnloadHandler", "AFXWIN/CDocument::PreCloseFrame", "AFXWIN/CDocument::ReadNextChunkValue", "AFXWIN/CDocument::ReleaseFile", "AFXWIN/CDocument::RemoveChunk", "AFXWIN/CDocument::RemoveView", "AFXWIN/CDocument::ReportSaveLoadException", "AFXWIN/CDocument::SaveModified", "AFXWIN/CDocument::SetChunkValue", "AFXWIN/CDocument::SetModifiedFlag", "AFXWIN/CDocument::SetPathName", "AFXWIN/CDocument::SetTitle", "AFXWIN/CDocument::UpdateAllViews", "AFXWIN/CDocument::OnFileSendMail", "AFXWIN/CDocument::OnUpdateFileSendMail", "AFXWIN/CDocument::m_bGetThumbnailMode", "AFXWIN/CDocument::m_bPreviewHandlerMode", "AFXWIN/CDocument::m_bSearchMode", "AFXWIN/CDocument::m_clrRichPreviewBackColor", "AFXWIN/CDocument::m_clrRichPreviewTextColor", "AFXWIN/CDocument::m_lfRichPreviewFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDocument [MFC], CDocument", "CDocument [MFC], AddView", "CDocument [MFC], BeginReadChunks", "CDocument [MFC], CanCloseFrame", "CDocument [MFC], ClearChunkList", "CDocument [MFC], ClearPathName", "CDocument [MFC], DeleteContents", "CDocument [MFC], FindChunk", "CDocument [MFC], GetAdapter", "CDocument [MFC], GetDocTemplate", "CDocument [MFC], GetFile", "CDocument [MFC], GetFirstViewPosition", "CDocument [MFC], GetNextView", "CDocument [MFC], GetPathName", "CDocument [MFC], GetThumbnail", "CDocument [MFC], GetTitle", "CDocument [MFC], InitializeSearchContent", "CDocument [MFC], IsModified", "CDocument [MFC], IsSearchAndOrganizeHandler", "CDocument [MFC], LoadDocumentFromStream", "CDocument [MFC], OnBeforeRichPreviewFontChanged", "CDocument [MFC], OnChangedViewList", "CDocument [MFC], OnCloseDocument", "CDocument [MFC], OnCreatePreviewFrame", "CDocument [MFC], OnDocumentEvent", "CDocument [MFC], OnDrawThumbnail", "CDocument [MFC], OnLoadDocumentFromStream", "CDocument [MFC], OnNewDocument", "CDocument [MFC], OnOpenDocument", "CDocument [MFC], OnPreviewHandlerQueryFocus", "CDocument [MFC], OnPreviewHandlerTranslateAccelerator", "CDocument [MFC], OnRichPreviewBackColorChanged", "CDocument [MFC], OnRichPreviewFontChanged", "CDocument [MFC], OnRichPreviewSiteChanged", "CDocument [MFC], OnRichPreviewTextColorChanged", "CDocument [MFC], OnSaveDocument", "CDocument [MFC], OnUnloadHandler", "CDocument [MFC], PreCloseFrame", "CDocument [MFC], ReadNextChunkValue", "CDocument [MFC], ReleaseFile", "CDocument [MFC], RemoveChunk", "CDocument [MFC], RemoveView", "CDocument [MFC], ReportSaveLoadException", "CDocument [MFC], SaveModified", "CDocument [MFC], SetChunkValue", "CDocument [MFC], SetModifiedFlag", "CDocument [MFC], SetPathName", "CDocument [MFC], SetTitle", "CDocument [MFC], UpdateAllViews", "CDocument [MFC], OnFileSendMail", "CDocument [MFC], OnUpdateFileSendMail", "CDocument [MFC], m_bGetThumbnailMode", "CDocument [MFC], m_bPreviewHandlerMode", "CDocument [MFC], m_bSearchMode", "CDocument [MFC], m_clrRichPreviewBackColor", "CDocument [MFC], m_clrRichPreviewTextColor", "CDocument [MFC], m_lfRichPreviewFont"]
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDocument Class
 Provides the basic functionality for user-defined document classes.  

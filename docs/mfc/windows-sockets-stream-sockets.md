@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows Sockets [C++], stream sockets"
-  - "sockets [C++], stream sockets"
-  - "stream sockets [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "stream sockets [MFC]"]
 ms.assetid: 31faaa34-a995-493f-a30b-b8115293d619
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Stream Sockets
 This article describes stream sockets, one of the two Windows Socket types available. (The other type is the [datagram socket](../mfc/windows-sockets-datagram-sockets.md).)  
@@ -46,7 +27,7 @@ This article describes stream sockets, one of the two Windows Socket types avail
   
  A telephone call provides a good analogy for a stream. Under normal circumstances, the receiving party hears what you say in the order that you say it, without duplication or loss. Stream sockets are appropriate, for example, for implementations such as the File Transfer Protocol (FTP), which facilitates transferring ASCII or binary files of arbitrary size.  
   
- Stream sockets are preferable to datagram sockets when the data must be guaranteed to arrive and when data size is large. For more information about stream sockets, see the Windows Sockets specification. The specification is available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ Stream sockets are preferable to datagram sockets when the data must be guaranteed to arrive and when data size is large. For more information about stream sockets, see the Windows Sockets specification. The specification is available in the Windows SDK.  
   
  Using stream sockets can be superior to applications designed to use a datagram socket for broadcasting to all receiving sockets on the network because  
   

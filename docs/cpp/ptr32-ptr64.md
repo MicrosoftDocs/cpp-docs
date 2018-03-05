@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__ptr32_cpp"
-  - "__ptr64_cpp"
-  - "__ptr32"
-  - "__ptr64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__ptr64 keyword [C++]"
-  - "_ptr32 keyword [C++]"
-  - "ptr32 keyword [C++]"
-  - "ptr64 keyword [C++]"
-  - "_ptr64 keyword [C++]"
-  - "__ptr32 keyword [C++]"
+f1_keywords: ["__ptr32_cpp", "__ptr64_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__ptr64 keyword [C++]", "_ptr32 keyword [C++]", "ptr32 keyword [C++]", "ptr64 keyword [C++]", "_ptr64 keyword [C++]", "__ptr32 keyword [C++]"]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __ptr32, __ptr64
 ## Microsoft Specific  
@@ -87,7 +62,7 @@ int main()
 64  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Fundamental Types](../cpp/fundamental-types-cpp.md)

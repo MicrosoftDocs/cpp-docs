@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "SECTIONS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SECTIONS .def file statement"
+f1_keywords: ["SECTIONS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SECTIONS .def file statement"]
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # SECTIONS (C/C++)
 Introduces a section of one or more `definitions` that are access specifiers on sections in your project's output file.  
@@ -51,7 +34,7 @@ definitions
   
  `.section_name specifier`  
   
- where `.section_name` is the name of a section in your program image and `specifier`is one or more of the following access modifiers:  
+ where `.section_name` is the name of a section in your program image and `specifier` is one or more of the following access modifiers:  
   
 |Modifier|Description|  
 |--------------|-----------------|  

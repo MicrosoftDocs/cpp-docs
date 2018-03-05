@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "while_cpp"
-  - "while"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "while keyword [C++]"
-  - "while keyword [C++], syntax"
+f1_keywords: ["while_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["while keyword [C++]", "while keyword [C++], syntax"]
 ms.assetid: 358dbe76-5e5e-4af5-b575-c2293c636899
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # while Statement (C++)
 Executes *statement* repeatedly until *expression* evaluates to zero.  

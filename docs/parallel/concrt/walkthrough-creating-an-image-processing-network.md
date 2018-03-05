@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "image-processing networks, creating [Concurrency Runtime]"
-  - "creating image-processing networks [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["image-processing networks, creating [Concurrency Runtime]", "creating image-processing networks [Concurrency Runtime]"]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating an Image-Processing Network
 This document demonstrates how to create a network of asynchronous message blocks that perform image processing.  

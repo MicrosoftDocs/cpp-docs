@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::agent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "agent class"
+ms.topic: "reference"
+f1_keywords: ["agent", "AGENTS/concurrency::agent", "AGENTS/concurrency::agent::agent", "AGENTS/concurrency::agent::cancel", "AGENTS/concurrency::agent::start", "AGENTS/concurrency::agent::status", "AGENTS/concurrency::agent::status_port", "AGENTS/concurrency::agent::wait", "AGENTS/concurrency::agent::wait_for_all", "AGENTS/concurrency::agent::wait_for_one", "AGENTS/concurrency::agent::done", "AGENTS/concurrency::agent::run"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["agent class"]
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # agent Class
 A class intended to be used as a base class for all independent agents. It is used to hide state from other agents and interact using message-passing.  
@@ -50,27 +32,27 @@ class agent;
   
 |Name|Description|  
 |----------|-----------------|  
-|[agent Constructor](#ctor)|Overloaded. Constructs an agent.|  
+|[agent](#ctor)|Overloaded. Constructs an agent.|  
 |[~agent Destructor](#dtor)|Destroys the agent.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancel Method](#cancel)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
-|[start Method](#start)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
-|[status Method](#status)|A synchronous source of status information from the agent.|  
-|[status_port Method](#status_port)|An asynchronous source of status information from the agent.|  
-|[wait Method](#wait)|Waits for an agent to complete its task.|  
-|[wait_for_all Method](#wait_for_all)|Waits for all of the specified agents to complete their tasks.|  
-|[wait_for_one Method](#wait_for_one)|Waits for any one of the specified agents to complete its task.|  
+|[cancel](#cancel)|Moves an agent from either the `agent_created` or `agent_runnable` states to the `agent_canceled` state.|  
+|[start](#start)|Moves an agent from the `agent_created` state to the `agent_runnable` state, and schedules it for execution.|  
+|[status](#status)|A synchronous source of status information from the agent.|  
+|[status_port](#status_port)|An asynchronous source of status information from the agent.|  
+|[wait](#wait)|Waits for an agent to complete its task.|  
+|[wait_for_all](#wait_for_all)|Waits for all of the specified agents to complete their tasks.|  
+|[wait_for_one](#wait_for_one)|Waits for any one of the specified agents to complete its task.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[done Method](#done)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
-|[run Method](#run)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
+|[done](#done)|Moves an agent into the `agent_done` state, indicating that the agent has completed.|  
+|[run](#run)|Represents the main task of an agent. `run` should be overridden in a derived class, and specifies what the agent should do after it has been started.|  
   
 ## Remarks  
  For more information, see [Asynchronous Agents](../../../parallel/concrt/asynchronous-agents.md).  

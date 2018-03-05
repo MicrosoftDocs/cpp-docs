@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.GenerateWindowsMetadata"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadata"]
+dev_langs: ["C++"]
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /WINMD (Generate Windows Metadata)
 Enables generation of a Windows Runtime Metadata (.winmd) file.  
@@ -41,7 +25,7 @@ Enables generation of a Windows Runtime Metadata (.winmd) file.
   
 ## Remarks  
  /WINMD  
- The default setting for [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The linker generates both the binary executable file and the .winmd metadata file.  
+ The default setting for Universal Windows Platform apps. The linker generates both the binary executable file and the .winmd metadata file.  
   
  /WINMD:NO  
  The linker generates only the binary executable file, but not a .winmd file.  

@@ -4,63 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strdate"
-  - "_wstrdate"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_strdate", "_wstrdate"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tstrdate"
-  - "wstrdate"
-  - "_wstrdate"
-  - "_strdate"
-  - "strdate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strdate function"
-  - "dates, copying"
-  - "tstrdate function"
-  - "_wstrdate function"
-  - "wstrdate function"
-  - "_strdate function"
-  - "_tstrdate function"
-  - "copying dates"
+f1_keywords: ["_tstrdate", "wstrdate", "_wstrdate", "_strdate", "strdate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strdate function", "dates, copying", "tstrdate function", "_wstrdate function", "wstrdate function", "_strdate function", "_tstrdate function", "copying dates"]
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _strdate, _wstrdate
 Copy current system date to a buffer. More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md).  
@@ -142,9 +100,6 @@ int main()
 ```Output  
 OS date: 04/25/03  
 ```  
-  
-## .NET Framework Equivalent  
- [System::DateTime::Parse](https://msdn.microsoft.com/en-us/library/system.datetime.parse.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

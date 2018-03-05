@@ -4,47 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cmyproviderrowset"
-  - "myproviderrs.h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, wizard-generated files"
-  - "CMyProviderRowset class in MyProviderRS.H"
+ms.topic: "reference"
+f1_keywords: ["cmyproviderrowset", "myproviderrs.h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderRowset class in MyProviderRS.H"]
 ms.assetid: 7ba1a124-3842-40eb-a36b-302190a1af3a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderRowset (MyProviderRS.H)
 The wizard generates an entry for the rowset object. In this case, it is called `CMyProviderRowset`. The `CMyProviderRowset` class inherits from an OLE DB provider class called `CRowsetImpl`, which implements all the necessary interfaces for the rowset object. The following code shows the inheritance chain for `CRowsetImpl`:  
   
 ```  
 template <class T, class Storage, class CreatorClass,   
-   class ArrayType = CAtlArray<Storage> >  
+   class ArrayType = CAtlArray<Storage>>  
 class CMyRowsetImpl:  
    public CRowsetImpl<T, Storage, CreatorClass, ArrayType,   
-      CSimpleRow, IRowsetLocateImpl< T > >  
+      CSimpleRow, IRowsetLocateImpl< T >>  
 ```  
   
  `CRowsetImpl` also uses the `IAccessor` and `IColumnsInfo` interfaces. It uses these interfaces for output fields in tables. The class also provides an implementation for **IRowsetIdentity**, which allows the consumer to determine if two rows are identical. The `IRowsetInfo` interface implements properties for the rowset object. The **IConvertType** interface allows the provider to resolve differences between data types requested by the consumer and those used by the provider.  

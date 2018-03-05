@@ -1,39 +1,20 @@
 ---
-title: "How to: Diagnose and Fix Assembly Compatibility Problems (C++-CLI) | Microsoft Docs"
+title: "How to: Diagnose and Fix Assembly Compatibility Problems (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "versioning, diagnosing conflicts"
-  - "versioning"
-  - "exceptions, diagnosing odd behavior"
-  - "compatibility, between assemblies"
+dev_langs: ["C++"]
+helpviewer_keywords: ["versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]
 ms.assetid: 297c71e3-04a8-4d24-a5dc-b04a2c5cc6fb
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Diagnose and Fix Assembly Compatibility Problems (C++/CLI)
 This topic explains what can happen when the version of an assembly referenced at compile time doesn't match the version of the assembly referenced at runtime, and how to avoid the problem.  
@@ -42,7 +23,7 @@ This topic explains what can happen when the version of an assembly referenced a
   
  However, if the referenced assembly is changed and recompiled, and you do not recompile the referencing assembly that is dependent on it, the assemblies might not still be compatible. Optimization decisions that were valid at first might not be correct with respect to the new assembly version. Various runtime errors might occur due to these incompatibilities. There is no specific exception that will be produced in such cases. The way the failure is reported at runtime depends on the nature of the code change that caused the problem.  
   
- These errors should not be a problem in your final production code as long as the entire application is rebuilt for the released version of your product. Assemblies that are released to the public should be marked with an official version number, which will ensure that these problems are avoided. For more information, see [Assembly Versioning](http://msdn.microsoft.com/Library/775ad4fb-914f-453c-98ef-ce1089b6f903).  
+ These errors should not be a problem in your final production code as long as the entire application is rebuilt for the released version of your product. Assemblies that are released to the public should be marked with an official version number, which will ensure that these problems are avoided. For more information, see [Assembly Versioning](/dotnet/framework/app-domains/assembly-versioning).  
   
 ### Diagnosing and fixing an incompatibility error  
   

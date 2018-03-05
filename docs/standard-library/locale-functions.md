@@ -5,10 +5,12 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["locale/std::has_facet", "locale/std::isalnum", "locale/std::isalpha", "locale/std::iscntrl", "locale/std::isdigit", "locale/std::isgraph", "locale/std::islower", "locale/std::isprint", "locale/std::ispunct", "locale/std::isspace", "locale/std::isupper", "locale/std::isxdigit", "locale/std::tolower", "locale/std::toupper", "locale/std::use_facet"]
 ms.assetid: b06c1ceb-33a7-48d3-8d4b-2714bbb27f14
 caps.latest.revision: 15
 manager: "ghogen"
+helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalpha [C++]", "std::iscntrl [C++]", "std::isdigit [C++]", "std::isgraph [C++]", "std::islower [C++]", "std::isprint [C++]", "std::ispunct [C++]", "std::isspace [C++]", "std::isupper [C++]", "std::isxdigit [C++]", "std::tolower [C++]", "std::toupper [C++]", "std::use_facet [C++]"]
 ---
 # &lt;locale&gt; functions
 ||||  
@@ -141,7 +143,7 @@ bool isalpha(CharType Ch, const locale& Loc)
  **true** if the element tested is alphabetic; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **alpha**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **alpha**, `Ch`).  
   
 ### Example  
   
@@ -202,7 +204,7 @@ bool iscntrl(CharType Ch, const locale& Loc)
  **true** if the element tested is a control character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **cntrl**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **cntrl**, `Ch`).  
   
 ### Example  
   
@@ -263,7 +265,7 @@ bool isdigit(CharType Ch, const locale& Loc)
  **true** if the element tested is a numeric character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **digit**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **digit**, `Ch`).  
   
 ### Example  
   
@@ -324,7 +326,7 @@ bool isgraph(CharType Ch, const locale& Loc)
  **true** if the element tested is an alphanumeric or a punctuation character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **graph**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **graph**, `Ch`).  
   
 ### Example  
   
@@ -385,7 +387,7 @@ bool islower(CharType Ch, const locale& Loc)
  **true** if the element tested is a lowercase character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **lower**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **lower**, `Ch`).  
   
 ### Example  
   
@@ -446,7 +448,7 @@ bool isprint(CharType Ch, const locale& Loc)
  **true** if the element tested is a printable; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **print**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **print**, `Ch`).  
   
 ### Example  
   
@@ -506,7 +508,7 @@ bool ispunct(CharType Ch, const locale& Loc)
  **true** if the element tested is a punctuation character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)`<`[ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **punct**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)`<`[ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **punct**, `Ch`).  
   
 ### Example  
   
@@ -567,7 +569,7 @@ bool isspace(CharType Ch, const locale& Loc)
  **true** if the element tested is a whitespace character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **space**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **space**, `Ch`).  
   
 ### Example  
   
@@ -628,7 +630,7 @@ bool isupper(CharType Ch, const locale& Loc)
  **true** if the element tested is an uppercase character; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **upper**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **upper**, `Ch`).  
   
 ### Example  
   
@@ -689,7 +691,7 @@ bool isxdigit(CharType Ch, const locale& Loc)
  **true** if the element tested is a character used to represent a hexadecimal number; **false** if it is not.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#ctype__is)( **ctype**\< **CharType**>:: **xdigit**, `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [is](../standard-library/ctype-class.md#is)( **ctype**\< **CharType**>:: **xdigit**, `Ch`).  
   
  Hexadecimal digits use base 16 to represent numbers, using the numbers 0 through 9 plus case-insensitive letters A through F to represent the decimal numbers 0 through 15.  
   
@@ -752,7 +754,7 @@ CharType tolower(CharType Ch, const locale& Loc)
  The character converted to lower case.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [tolower](../standard-library/ctype-class.md#ctype__tolower)( `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [tolower](../standard-library/ctype-class.md#tolower)( `Ch`).  
   
 ### Example  
   
@@ -797,7 +799,7 @@ CharType toupper(CharType Ch, const locale& Loc)
  The character converted to upper case.  
   
 ### Remarks  
- The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [toupper](../standard-library/ctype-class.md#ctype__toupper)( `Ch`).  
+ The template function returns [use_facet](../standard-library/locale-functions.md#use_facet)< [ctype](../standard-library/ctype-class.md)\< **CharType**> >( `Loc`). [toupper](../standard-library/ctype-class.md#toupper)( `Ch`).  
   
 ### Example  
   

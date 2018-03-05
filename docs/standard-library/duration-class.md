@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::chrono::duration"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
+dev_langs: ["C++"]
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+helpviewer_keywords: ["std::chrono [C++], duration"]
+ms.workload: ["cplusplus"]
 ---
 # duration Class
 Describes a type that holds a *time interval*, which is an elapsed time between two time points.  
@@ -62,37 +47,37 @@ class duration <duration<Rep, Period1>, Period2>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration::duration Constructor](#duration__duration_constructor)|Constructs a `duration` object.|  
+|[duration](#duration)|Constructs a `duration` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration::count](#duration__count_method)|Returns the number of clock ticks in the time interval.|  
-|[duration::max](#duration__max_method)|Static. Returns the maximum allowable value of template parameter `Ref`.|  
-|[duration::min](#duration__min_method)|Static. Returns the lowest allowable value of template parameter `Ref`.|  
-|[duration::zero](#duration__zero_method)|Static. In effect, returns `Rep`(0).|  
+|[count](#count)|Returns the number of clock ticks in the time interval.|  
+|[max](#max)|Static. Returns the maximum allowable value of template parameter `Ref`.|  
+|[min](#min)|Static. Returns the lowest allowable value of template parameter `Ref`.|  
+|[zero](#zero)|Static. In effect, returns `Rep`(0).|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration::operator-](#duration__operator-)|Returns a copy of the `duration` object together with a negated tick count.|  
-|[duration::operator--](#duration__operator--)|Decrements the stored tick count.|  
-|[duration::operator=](#duration__operator_eq)|Reduces the stored tick count modulo a specified value.|  
-|[duration::operator*=](#duration__operator_star_eq)|Multiplies the stored tick count by a specified value.|  
-|[duration::operator/=](#duration__operator__eq)|Divides the stored tick count by the tick count of a specified `duration` object.|  
-|[duration::operator+](#duration__operator_add)|Returns `*this`.|  
-|[duration::operator++](#duration__operator_add_add)|Increments the stored tick count.|  
-|[duration::operator+=](#duration__operator_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|  
-|[duration::operator-=](#duration__operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|  
+|[duration::operator-](#operator-)|Returns a copy of the `duration` object together with a negated tick count.|  
+|[duration::operator--](#operator--)|Decrements the stored tick count.|  
+|[duration::operator=](#op_eq)|Reduces the stored tick count modulo a specified value.|  
+|[duration::operator*=](#op_star_eq)|Multiplies the stored tick count by a specified value.|  
+|[duration::operator/=](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|  
+|[duration::operator+](#op_add)|Returns `*this`.|  
+|[duration::operator++](#op_add_add)|Increments the stored tick count.|  
+|[duration::operator+=](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|  
+|[duration::operator-=](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   
-##  <a name="duration__count_method"></a>  duration::count  
+##  <a name="count"></a>  duration::count  
  Retrieves the number of clock ticks in the time interval.  
   
 ```  
@@ -102,7 +87,7 @@ constexpr Rep count() const;
 ### Return Value  
  The number of clock ticks in the time interval.  
   
-##  <a name="duration__duration_constructor"></a>  duration::duration Constructor  
+##  <a name="duration"></a>  duration::duration Constructor  
  Constructs a `duration` object.  
   
 ```  
@@ -142,7 +127,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
   
  Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).  
   
-##  <a name="duration__max_method"></a>  duration::max  
+##  <a name="max"></a>  duration::max  
  Static method that returns the upper bound for values of template parameter type `Ref`.  
   
 ```  
@@ -152,7 +137,7 @@ static constexpr duration max();
 ### Return Value  
  In effect, returns `duration(duration_values<rep>::max())`.  
   
-##  <a name="duration__min_method"></a>  duration::min  
+##  <a name="min"></a>  duration::min  
  Static method that returns the lower bound for values of template parameter type `Ref`.  
   
 ```  
@@ -183,7 +168,7 @@ duration operator--(int);
   
  The second method returns a copy of `*this` that is made before the decrement.  
   
-##  <a name="duration__operator_eq"></a>  duration::operator=  
+##  <a name="op_eq"></a>  duration::operator=  
  Reduces the stored tick count modulo a specified value.  
   
 ```  
@@ -199,7 +184,7 @@ duration& operator%=(const duration& Div);
 ### Return Value  
  The `duration` object after the modulo operation is performed.  
   
-##  <a name="duration__operator_star_eq"></a>  duration::operator*=  
+##  <a name="op_star_eq"></a>  duration::operator*=  
  Multiplies the stored tick count by a specified value.  
   
 ```  
@@ -213,7 +198,7 @@ duration& operator*=(const rep& Mult);
 ### Return Value  
  The `duration` object after the multiplication is performed.  
   
-##  <a name="duration__operator__eq"></a>  duration::operator/=  
+##  <a name="op_div_eq"></a>  duration::operator/=  
  Divides the stored tick count by a specified value.  
   
 ```  
@@ -227,14 +212,14 @@ duration& operator/=(const rep& Div);
 ### Return Value  
  The `duration` object after the division is performed.  
   
-##  <a name="duration__operator_add"></a>  duration::operator+  
+##  <a name="op_add"></a>  duration::operator+  
  Returns `*this`.  
   
 ```  
 constexpr duration operator+() const;
 ```  
   
-##  <a name="duration__operator_add_add"></a>  duration::operator++  
+##  <a name="op_add_add"></a>  duration::operator++  
  Increments the stored tick count.  
   
 ```  
@@ -248,7 +233,7 @@ duration operator++(int);
   
  The second method returns a copy of `*this` that is made before the increment.  
   
-##  <a name="duration__operator_add_eq"></a>  duration::operator+=  
+##  <a name="op_add_eq"></a>  duration::operator+=  
  Adds the tick count of a specified `duration` object to the stored tick count.  
   
 ```  
@@ -276,14 +261,14 @@ duration& operator-=(const duration& Dur);
 ### Return Value  
  The `duration` object after the subtraction is performed.  
   
-##  <a name="duration__zero_method"></a>  duration::zero  
+##  <a name="zero"></a>  duration::zero  
  Returns `duration(duration_values<rep>::zero())`.  
   
 ```  
 static constexpr duration zero();
 ```  
   
-##  <a name="duration__operator_mod_eq"></a>  duration::operator mod=  
+##  <a name="op_mod_eq"></a>  duration::operator mod=  
  Reduces the stored tick count modulo Div or Div.count().  
   
 ```  

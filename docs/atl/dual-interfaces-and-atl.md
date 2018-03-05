@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COM, and ATL"
-  - "ATL, dual interfaces"
-  - "dual interfaces, about dual interfaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COM, and ATL", "ATL, dual interfaces", "dual interfaces, about dual interfaces"]
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and ATL
 A dual interface allows its methods to be accessed as dispinterface methods or as vtable methods. This section covers some of the features of dual interfaces from an ATL perspective.  

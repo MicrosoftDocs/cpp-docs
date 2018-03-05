@@ -2,29 +2,26 @@
 title: "Platform::Metadata::RuntimeClassName | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Metadata::RuntimeClassName"
-helpviewer_keywords: 
-  - "RuntimeClassName"
-  - "Platform::Metadata::RuntimeClassName"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Metadata::RuntimeClassName"]
+helpviewer_keywords: ["RuntimeClassName", "Platform::Metadata::RuntimeClassName"]
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
 caps.latest.revision: 2
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::RuntimeClassName
 When applied to a class definition, ensures that a private class returns a valid name from the GetRuntimeClassName function..  
   
 ## Syntax  
   
-```vb  
+```cpp  
 [Platform::Metadata::RuntimeClassName] name  
 ```  
   
@@ -33,10 +30,10 @@ When applied to a class definition, ensures that a private class returns a valid
   
  The name of an existing public type that is visible in the Windows Runtime.  
   
-## Remarks  
+### Remarks  
  Use this attribute on private ref classes to specify a custom runtime type name and/or when the existing name does not meet the requirements. Specify as a name a public interface that the class implements.  
   
-## Example  
+### Example  
  The following example shows how to use the attribute. In this example, the runtime type name of HellowWorldImpl is Test::Native::MyComponent::IHelloWorld  
   
 ```  

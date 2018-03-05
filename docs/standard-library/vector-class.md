@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::vector"
-  - "vector"
-  - "std.vector"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vector class"
+ms.topic: "reference"
+f1_keywords: ["vector/std::vector::allocator_type", "vector/std::vector::const_iterator", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::const_reverse_iterator", "vector/std::vector::difference_type", "vector/std::vector::iterator", "vector/std::vector::pointer", "vector/std::vector::reference", "vector/std::vector::reverse_iterator", "vector/std::vector::size_type", "vector/std::vector::value_type", "vector/std::vector::assign", "vector/std::vector::at", "vector/std::vector::back", "vector/std::vector::begin", "vector/std::vector::capacity", "vector/std::vector::cbegin", "vector/std::vector::cend", "vector/std::vector::crbegin", "vector/std::vector::crend", "vector/std::vector::clear", "vector/std::vector::data", "vector/std::vector::emplace", "vector/std::vector::emplace_back", "vector/std::vector::empty", "vector/std::vector::end", "vector/std::vector::erase", "vector/std::vector::front", "vector/std::vector::get_allocator", "vector/std::vector::insert", "vector/std::vector::max_size", "vector/std::vector::pop_back", "vector/std::vector::push_back", "vector/std::vector::rbegin", "vector/std::vector::rend", "vector/std::vector::reserve", "vector/std::vector::resize", "vector/std::vector::shrink_to_fit", "vector/std::vector::size", "vector/std::vector::swap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::vector [C++], allocator_type", "std::vector [C++], const_iterator", "std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], const_reverse_iterator", "std::vector [C++], difference_type", "std::vector [C++], iterator", "std::vector [C++], pointer", "std::vector [C++], reference", "std::vector [C++], reverse_iterator", "std::vector [C++], size_type", "std::vector [C++], value_type", "std::vector [C++], assign", "std::vector [C++], at", "std::vector [C++], back", "std::vector [C++], begin", "std::vector [C++], capacity", "std::vector [C++], cbegin", "std::vector [C++], cend", "std::vector [C++], crbegin", "std::vector [C++], crend", "std::vector [C++], clear", "std::vector [C++], data", "std::vector [C++], emplace", "std::vector [C++], emplace_back", "std::vector [C++], empty", "std::vector [C++], end", "std::vector [C++], erase", "std::vector [C++], front", "std::vector [C++], get_allocator", "std::vector [C++], insert", "std::vector [C++], max_size", "std::vector [C++], pop_back", "std::vector [C++], push_back", "std::vector [C++], rbegin", "std::vector [C++], rend", "std::vector [C++], reserve", "std::vector [C++], resize", "std::vector [C++], shrink_to_fit", "std::vector [C++], size", "std::vector [C++], swap"]
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vector Class
 The C++ Standard Library vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.  
@@ -60,7 +41,7 @@ class vector
   
  The [vector\<bool> Class](../standard-library/vector-bool-class.md) is a full specialization of the template class vector for elements of type bool with an allocator for the underlying type used by the specialization.  
   
- The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#vector_lt_bool_gt___reference_class) is a nested class whose objects are able to provide references to elements (single bits) within a vector\<bool> object.  
+ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#reference_class) is a nested class whose objects are able to provide references to elements (single bits) within a vector\<bool> object.  
   
 ## Members  
   
@@ -68,72 +49,72 @@ class vector
   
 |||  
 |-|-|  
-|[vector](#vector__vector)|Constructs a vector of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other vector.|  
+|[vector](#vector)|Constructs a vector of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other vector.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[allocator_type](#vector__allocator_type)|A type that represents the `allocator` class for the vector object.|  
-|[const_iterator](#vector__const_iterator)|A type that provides a random-access iterator that can read a `const` element in a vector.|  
-|[const_pointer](#vector__const_pointer)|A type that provides a pointer to a `const` element in a vector.|  
-|[const_reference](#vector__const_reference)|A type that provides a reference to a `const` element stored in a vector for reading and performing `const` operations.|  
-|[const_reverse_iterator](#vector__const_reverse_iterator)|A type that provides a random-access iterator that can read any `const` element in the vector.|  
-|[difference_type](#vector__difference_type)|A type that provides the difference between the addresses of two elements in a vector.|  
-|[iterator](#vector__iterator)|A type that provides a random-access iterator that can read or modify any element in a vector.|  
-|[pointer](#vector__pointer)|A type that provides a pointer to an element in a vector.|  
-|[reference](#vector__reference)|A type that provides a reference to an element stored in a vector.|  
-|[reverse_iterator](#vector__reverse_iterator)|A type that provides a random-access iterator that can read or modify any element in a reversed vector.|  
-|[size_type](#vector__size_type)|A type that counts the number of elements in a vector.|  
-|[value_type](#vector__value_type)|A type that represents the data type stored in a vector.|  
+|[allocator_type](#allocator_type)|A type that represents the `allocator` class for the vector object.|  
+|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a `const` element in a vector.|  
+|[const_pointer](#const_pointer)|A type that provides a pointer to a `const` element in a vector.|  
+|[const_reference](#const_reference)|A type that provides a reference to a `const` element stored in a vector for reading and performing `const` operations.|  
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can read any `const` element in the vector.|  
+|[difference_type](#difference_type)|A type that provides the difference between the addresses of two elements in a vector.|  
+|[iterator](#iterator)|A type that provides a random-access iterator that can read or modify any element in a vector.|  
+|[pointer](#pointer)|A type that provides a pointer to an element in a vector.|  
+|[reference](#reference)|A type that provides a reference to an element stored in a vector.|  
+|[reverse_iterator](#reverse_iterator)|A type that provides a random-access iterator that can read or modify any element in a reversed vector.|  
+|[size_type](#size_type)|A type that counts the number of elements in a vector.|  
+|[value_type](#value_type)|A type that represents the data type stored in a vector.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[assign](#vector__assign)|Erases a vector and copies the specified elements to the empty vector.|  
-|[at](#vector__at)|Returns a reference to the element at a specified location in the vector.|  
-|[back](#vector__back)|Returns a reference to the last element of the vector.|  
-|[begin](#vector__begin)|Returns a random-access iterator to the first element in the vector.|  
-|[capacity](#vector__capacity)|Returns the number of elements that the vector could contain without allocating more storage.|  
-|[cbegin](#vector__cbegin)|Returns a random-access const iterator to the first element in the vector.|  
-|[cend](#vector__cend)|Returns a random-access const iterator that points just beyond the end of the vector.|  
-|[crbegin](#vector__crbegin)|Returns a const iterator to the first element in a reversed vector.|  
-|[crend](#vector__crend)|Returns a const iterator to the end of a reversed vector.|  
-|[clear](#vector__clear)|Erases the elements of the vector.|  
-|[data](#vector__data)|Returns a pointer to the first element in the vector.|  
-|[emplace](#vector__emplace)|Inserts an element constructed in place into the vector at a specified position.|  
-|[emplace_back](#vector__emplace_back)|Adds an element constructed in place to the end of the vector.|  
-|[empty](#vector__empty)|Tests if the vector container is empty.|  
-|[end](#vector__end)|Returns a random-access iterator that points to the end of the vector.|  
-|[erase](#vector__erase)|Removes an element or a range of elements in a vector from specified positions.|  
-|[front](#vector__front)|Returns a reference to the first element in a vector.|  
-|[get_allocator](#vector__get_allocator)|Returns an object to the `allocator` class used by a vector.|  
-|[insert](#vector__insert)|Inserts an element or a number of elements into the vector at a specified position.|  
-|[max_size](#vector__max_size)|Returns the maximum length of the vector.|  
-|[pop_back](#vector__pop_back)|Deletes the element at the end of the vector.|  
-|[push_back](#vector__push_back)|Add an element to the end of the vector.|  
-|[rbegin](#vector__rbegin)|Returns an iterator to the first element in a reversed vector.|  
-|[rend](#vector__rend)|Returns an iterator to the end of a reversed vector.|  
-|[reserve](#vector__reserve)|Reserves a minimum length of storage for a vector object.|  
-|[resize](#vector__resize)|Specifies a new size for a vector.|  
-|[shrink_to_fit](#vector__shrink_to_fit)|Discards excess capacity.|  
-|[size](#vector__size)|Returns the number of elements in the vector.|  
-|[swap](#vector__swap)|Exchanges the elements of two vectors.|  
+|[assign](#assign)|Erases a vector and copies the specified elements to the empty vector.|  
+|[at](#at)|Returns a reference to the element at a specified location in the vector.|  
+|[back](#back)|Returns a reference to the last element of the vector.|  
+|[begin](#begin)|Returns a random-access iterator to the first element in the vector.|  
+|[capacity](#capacity)|Returns the number of elements that the vector could contain without allocating more storage.|  
+|[cbegin](#cbegin)|Returns a random-access const iterator to the first element in the vector.|  
+|[cend](#cend)|Returns a random-access const iterator that points just beyond the end of the vector.|  
+|[crbegin](#crbegin)|Returns a const iterator to the first element in a reversed vector.|  
+|[crend](#crend)|Returns a const iterator to the end of a reversed vector.|  
+|[clear](#clear)|Erases the elements of the vector.|  
+|[data](#data)|Returns a pointer to the first element in the vector.|  
+|[emplace](#emplace)|Inserts an element constructed in place into the vector at a specified position.|  
+|[emplace_back](#emplace_back)|Adds an element constructed in place to the end of the vector.|  
+|[empty](#empty)|Tests if the vector container is empty.|  
+|[end](#end)|Returns a random-access iterator that points to the end of the vector.|  
+|[erase](#erase)|Removes an element or a range of elements in a vector from specified positions.|  
+|[front](#front)|Returns a reference to the first element in a vector.|  
+|[get_allocator](#get_allocator)|Returns an object to the `allocator` class used by a vector.|  
+|[insert](#insert)|Inserts an element or a number of elements into the vector at a specified position.|  
+|[max_size](#max_size)|Returns the maximum length of the vector.|  
+|[pop_back](#pop_back)|Deletes the element at the end of the vector.|  
+|[push_back](#push_back)|Add an element to the end of the vector.|  
+|[rbegin](#rbegin)|Returns an iterator to the first element in a reversed vector.|  
+|[rend](#rend)|Returns an iterator to the end of a reversed vector.|  
+|[reserve](#reserve)|Reserves a minimum length of storage for a vector object.|  
+|[resize](#resize)|Specifies a new size for a vector.|  
+|[shrink_to_fit](#shrink_to_fit)|Discards excess capacity.|  
+|[size](#size)|Returns the number of elements in the vector.|  
+|[swap](#swap)|Exchanges the elements of two vectors.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator&#91;&#93;](#vector__operator_at)|Returns a reference to the vector element at a specified position.|  
-|[operator=](#vector__operator_eq)|Replaces the elements of the vector with a copy of another vector.|  
+|[operator&#91;&#93;](#op_at)|Returns a reference to the vector element at a specified position.|  
+|[operator=](#op_eq)|Replaces the elements of the vector with a copy of another vector.|  
   
 ## Requirements  
  **Header:** \<vector>  
   
  **Namespace:** std  
   
-##  <a name="vector__allocator_type"></a>  vector::allocator_type  
+##  <a name="allocator_type"></a>  vector::allocator_type  
  A type that represents the allocator class for the vector object.  
   
 ```  
@@ -144,9 +125,9 @@ typedef Allocator allocator_type;
  `allocator_type` is a synonym for the template parameter **Allocator.**  
   
 ### Example  
-  See the example for [get_allocator](#vector__get_allocator) for an example that uses `allocator_type`.  
+  See the example for [get_allocator](#get_allocator) for an example that uses `allocator_type`.  
   
-##  <a name="vector__assign"></a>  vector::assign  
+##  <a name="assign"></a>  vector::assign  
  Erases a vector and copies the specified elements to the empty vector.  
   
 ```  
@@ -224,7 +205,7 @@ int main()
   
 ```  
   
-##  <a name="vector__at"></a>  vector::at  
+##  <a name="at"></a>  vector::at  
  Returns a reference to the element at a specified location in the vector.  
   
 ```  
@@ -271,7 +252,7 @@ The first element is 10
 The second element is 20  
 ```  
   
-##  <a name="vector__back"></a>  vector::back  
+##  <a name="back"></a>  vector::back  
  Returns a reference to the last element of the vector.  
   
 ```  
@@ -312,7 +293,7 @@ int main() {
 }  
 ```  
   
-##  <a name="vector__begin"></a>  vector::begin  
+##  <a name="begin"></a>  vector::begin  
  Returns a random-access iterator to the first element in the vector.  
   
 ```  
@@ -323,10 +304,10 @@ iterator begin();
 ```  
   
 ### Return Value  
- A random-access iterator addressing the first element in the `vector` or to the location succeeding an empty `vector`. You should always compare the value returned with [vector::end](#vector__end) to ensure it is valid.  
+ A random-access iterator addressing the first element in the `vector` or to the location succeeding an empty `vector`. You should always compare the value returned with [vector::end](#end) to ensure it is valid.  
   
 ### Remarks  
- If the return value of `begin` is assigned to a [vector::const_iterator](#vector__const_iterator), the `vector` object cannot be modified. If the return value of `begin` is assigned to an [vector::iterator](#vector__iterator), the `vector` object can be modified.  
+ If the return value of `begin` is assigned to a [vector::const_iterator](#const_iterator), the `vector` object cannot be modified. If the return value of `begin` is assigned to an [vector::iterator](#iterator), the `vector` object can be modified.  
   
 ### Example  
   
@@ -373,7 +354,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2  
 ```  
   
-##  <a name="vector__capacity"></a>  vector::capacity  
+##  <a name="capacity"></a>  vector::capacity  
  Returns the number of elements that the vector could contain without allocating more storage.  
   
 ```  
@@ -384,7 +365,7 @@ size_type capacity() const;
  The current length of storage allocated for the vector.  
   
 ### Remarks  
- The member function [resize](#vector__resize) will be more efficient if sufficient memory is allocated to accommodate it. Use the member function [reserve](#vector__reserve) to specify the amount of memory allocated.  
+ The member function [resize](#resize) will be more efficient if sufficient memory is allocated to accommodate it. Use the member function [reserve](#reserve) to specify the amount of memory allocated.  
   
 ### Example  
   
@@ -414,7 +395,7 @@ The length of storage allocated is 1.
 The length of storage allocated is now 2.  
 ```  
   
-##  <a name="vector__cbegin"></a>  vector::cbegin  
+##  <a name="cbegin"></a>  vector::cbegin  
  Returns a `const` iterator that addresses the first element in the range.  
   
 ```  
@@ -437,7 +418,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="vector__cend"></a>  vector::cend  
+##  <a name="cend"></a>  vector::cend  
  Returns a `const` iterator that addresses the location just beyond the last element in a range.  
   
 ```  
@@ -462,7 +443,7 @@ auto i2 = Container.cend();
   
  The value returned by `cend` should not be dereferenced.  
   
-##  <a name="vector__clear"></a>  vector::clear  
+##  <a name="clear"></a>  vector::clear  
  Erases the elements of the vector.  
   
 ```  
@@ -497,7 +478,7 @@ The size of v1 is 3
 The size of v1 after clearing is 0  
 ```  
   
-##  <a name="vector__const_iterator"></a>  vector::const_iterator  
+##  <a name="const_iterator"></a>  vector::const_iterator  
  A type that provides a random-access iterator that can read a **const** element in a vector.  
   
 ```  
@@ -508,9 +489,9 @@ typedef implementation-defined const_iterator;
  A type `const_iterator` cannot be used to modify the value of an element.  
   
 ### Example  
-  See the example for [back](#vector__back) for an example that uses `const_iterator`.  
+  See the example for [back](#back) for an example that uses `const_iterator`.  
   
-##  <a name="vector__const_pointer"></a>  vector::const_pointer  
+##  <a name="const_pointer"></a>  vector::const_pointer  
  A type that provides a pointer to a **const** element in a vector.  
   
 ```  
@@ -520,9 +501,9 @@ typedef typename Allocator::const_pointer const_pointer;
 ### Remarks  
  A type `const_pointer` cannot be used to modify the value of an element.  
   
- An [iterator](#vector__iterator) is more commonly used to access a vector element.  
+ An [iterator](#iterator) is more commonly used to access a vector element.  
   
-##  <a name="vector__const_reference"></a>  vector::const_reference  
+##  <a name="const_reference"></a>  vector::const_reference  
  A type that provides a reference to a **const** element stored in a vector for reading and performing **const** operations.  
   
 ```  
@@ -564,7 +545,7 @@ The first element is 10
 The second element is 20  
 ```  
   
-##  <a name="vector__const_reverse_iterator"></a>  vector::const_reverse_iterator  
+##  <a name="const_reverse_iterator"></a>  vector::const_reverse_iterator  
  A type that provides a random-access iterator that can read any **const** element in the vector.  
   
 ```  
@@ -575,9 +556,9 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
  A type `const_reverse_iterator` cannot modify the value of an element and is used to iterate through the vector in reverse.  
   
 ### Example  
-  See [rbegin](#vector__rbegin) for an example of how to declare and use an iterator.  
+  See [rbegin](#rbegin) for an example of how to declare and use an iterator.  
   
-##  <a name="vector__crbegin"></a>  vector::crbegin  
+##  <a name="crbegin"></a>  vector::crbegin  
  Returns a const iterator to the first element in a reversed vector.  
   
 ```  
@@ -623,7 +604,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.  
 ```  
   
-##  <a name="vector__crend"></a>  vector::crend  
+##  <a name="crend"></a>  vector::crend  
  Returns a const iterator that addresses the location succeeding the last element in a reversed vector.  
   
 ```  
@@ -634,7 +615,7 @@ const_reverse_iterator crend() const;
  A const reverse random-access iterator that addresses the location succeeding the last element in a reversed [vector](../standard-library/vector-class.md) (the location that had preceded the first element in the unreversed `vector`).  
   
 ### Remarks  
- `crend` is used with a reversed `vector` just as [vector::cend](#vector__cend) is used with a `vector`.  
+ `crend` is used with a reversed `vector` just as [vector::cend](#cend) is used with a `vector`.  
   
  With the return value of `crend` (suitably decremented), the `vector` object cannot be modified.  
   
@@ -669,7 +650,7 @@ int main( )
 1  
 ```  
   
-##  <a name="vector__data"></a>  vector::data  
+##  <a name="data"></a>  vector::data  
  Returns a pointer to the first element in the vector.  
   
 ```  
@@ -724,7 +705,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2  
 ```  
   
-##  <a name="vector__difference_type"></a>  vector::difference_type  
+##  <a name="difference_type"></a>  vector::difference_type  
  A type that provides the difference between two iterators that refer to elements within the same vector.  
   
 ```  
@@ -734,7 +715,7 @@ typedef typename Allocator::difference_type difference_type;
 ### Remarks  
  A `difference_type` can also be described as the number of elements between two pointers, because a pointer to an element contains its address.  
   
- An [iterator](#vector__iterator) is more commonly used to access a vector element.  
+ An [iterator](#iterator) is more commonly used to access a vector element.  
   
 ### Example  
   
@@ -779,7 +760,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.  
 ```  
   
-##  <a name="vector__emplace"></a>  vector::emplace  
+##  <a name="emplace"></a>  vector::emplace  
  Inserts an element constructed in place into the vector at a specified position.  
   
 ```  
@@ -794,7 +775,7 @@ iterator emplace(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.|  
-|` val`|The value of the element being inserted into the `vector`.|  
+|`val`|The value of the element being inserted into the `vector`.|  
   
 ### Return Value  
  The function returns an iterator that points to the position where the new element was inserted into the `vector`.  
@@ -844,7 +825,7 @@ v1 = 10 20 30
 vv1[0] = 10 20 30  
 ```  
   
-##  <a name="vector__emplace_back"></a>  vector::emplace_back  
+##  <a name="emplace_back"></a>  vector::emplace_back  
  Adds an element constructed in place to the end of the vector.  
   
 ```  
@@ -875,7 +856,7 @@ int main()
   
 ```  
   
-##  <a name="vector__empty"></a>  vector::empty  
+##  <a name="empty"></a>  vector::empty  
  Tests if the vector is empty.  
   
 ```  
@@ -911,7 +892,7 @@ int main( )
 The vector is not empty.  
 ```  
   
-##  <a name="vector__end"></a>  vector::end  
+##  <a name="end"></a>  vector::end  
  Returns the past-the-end iterator.  
   
 ```  
@@ -952,7 +933,7 @@ int main( )
 2  
 ```  
   
-##  <a name="vector__erase"></a>  vector::erase  
+##  <a name="erase"></a>  vector::erase  
  Removes an element or a range of elements in a vector from specified positions.  
   
 ```  
@@ -970,8 +951,8 @@ iterator erase(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|Position of the element to be removed from the vector.|  
-|` first`|Position of the first element removed from the vector.|  
-|` last`|Position just beyond the last element removed from the vector.|  
+|`first`|Position of the first element removed from the vector.|  
+|`last`|Position just beyond the last element removed from the vector.|  
   
 ### Return Value  
  An iterator that designates the first element remaining beyond any elements removed, or a pointer to the end of the vector if no such element exists.  
@@ -1021,7 +1002,7 @@ v1 = 20 30 40 50
 v1 = 20 50  
 ```  
   
-##  <a name="vector__front"></a>  vector::front  
+##  <a name="front"></a>  vector::front  
  Returns a reference to the first element in a vector.  
   
 ```  
@@ -1064,7 +1045,7 @@ int main( )
 }  
 ```  
   
-##  <a name="vector__get_allocator"></a>  vector::get_allocator  
+##  <a name="get_allocator"></a>  vector::get_allocator  
  Returns a copy of the allocator object used to construct the vector.  
   
 ```  
@@ -1100,7 +1081,7 @@ int main( )
 }  
 ```  
   
-##  <a name="vector__insert"></a>  vector::insert  
+##  <a name="insert"></a>  vector::insert  
  Inserts an element or a number of elements or a range of elements into the vector at a specified position.  
   
 ```  
@@ -1205,7 +1186,7 @@ v1 = 10 50 50 40 50 50 50 50 20 30
 vv1[0] = 10 50 50 40 50 50 50 50 20 30  
 ```  
   
-##  <a name="vector__iterator"></a>  vector::iterator  
+##  <a name="iterator"></a>  vector::iterator  
  A type that provides a random-access iterator that can read or modify any element in a vector.  
   
 ```  
@@ -1216,9 +1197,9 @@ typedef implementation-defined iterator;
  A type **iterator** can be used to modify the value of an element.  
   
 ### Example  
-  See the example for [begin](#vector__begin).  
+  See the example for [begin](#begin).  
   
-##  <a name="vector__max_size"></a>  vector::max_size  
+##  <a name="max_size"></a>  vector::max_size  
  Returns the maximum length of the vector.  
   
 ```  
@@ -1247,7 +1228,7 @@ int main( )
 }  
 ```  
   
-##  <a name="vector__operator_at"></a>  vector::operator[]  
+##  <a name="op_at"></a>  vector::operator[]  
  Returns a reference to the vector element at a specified position.  
   
 ```  
@@ -1292,7 +1273,7 @@ int main( )
 }  
 ```  
   
-##  <a name="vector__operator_eq"></a>  vector::operator=  
+##  <a name="op_eq"></a>  vector::operator=  
  Replaces the elements of the vector with a copy of another vector.  
   
 ```  
@@ -1306,10 +1287,10 @@ vector& operator=(vector&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|  
+|`right`|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|  
   
 ### Remarks  
- After erasing any existing elements in a `vector`, `operator=` either copies or moves the contents of ` right` into the `vector`.  
+ After erasing any existing elements in a `vector`, `operator=` either copies or moves the contents of `right` into the `vector`.  
   
 ### Example  
   
@@ -1352,7 +1333,7 @@ int main( )
 }  
 ```  
   
-##  <a name="vector__pointer"></a>  vector::pointer  
+##  <a name="pointer"></a>  vector::pointer  
  A type that provides a pointer to an element in a vector.  
   
 ```  
@@ -1392,7 +1373,7 @@ int main( )
 44  
 ```  
   
-##  <a name="vector__pop_back"></a>  vector::pop_back  
+##  <a name="pop_back"></a>  vector::pop_back  
  Deletes the element at the end of the vector.  
   
 ```  
@@ -1400,9 +1381,9 @@ void pop_back();
 ```  
   
 ### Remarks  
- For a code example, see [vector::push_back()](#vector__push_back).  
+ For a code example, see [vector::push_back()](#push_back).  
   
-##  <a name="vector__push_back"></a>  vector::push_back  
+##  <a name="push_back"></a>  vector::push_back  
  Adds an element to the end of the vector.  
   
 ```  
@@ -1456,7 +1437,7 @@ int main()
 }  
 ```  
   
-##  <a name="vector__rbegin"></a>  vector::rbegin  
+##  <a name="rbegin"></a>  vector::rbegin  
  Returns an iterator to the first element in a reversed vector.  
   
 ```  
@@ -1503,7 +1484,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.  
 ```  
   
-##  <a name="vector__reference"></a>  vector::reference  
+##  <a name="reference"></a>  vector::reference  
  A type that provides a reference to an element stored in a vector.  
   
 ```  
@@ -1511,9 +1492,9 @@ typedef typename Allocator::reference reference;
 ```  
   
 ### Example  
-  See [at](#vector__at) for an example of how to use **reference** in the vector class.  
+  See [at](#at) for an example of how to use **reference** in the vector class.  
   
-##  <a name="vector__rend"></a>  vector::rend  
+##  <a name="rend"></a>  vector::rend  
  Returns an iterator that addresses the location succeeding the last element in a reversed vector.  
   
 ```  
@@ -1525,7 +1506,7 @@ reverse_iterator rend();
  A reverse random-access iterator that addresses the location succeeding the last element in a reversed vector (the location that had preceded the first element in the unreversed vector).  
   
 ### Remarks  
- `rend` is used with a reversed vector just as [end](#vector__end) is used with a vector.  
+ `rend` is used with a reversed vector just as [end](#end) is used with a vector.  
   
  If the return value of `rend` is assigned to a `const_reverse_iterator`, then the vector object cannot be modified. If the return value of `rend` is assigned to a `reverse_iterator`, then the vector object can be modified.  
   
@@ -1560,7 +1541,7 @@ int main( )
 1  
 ```  
   
-##  <a name="vector__reserve"></a>  vector::reserve  
+##  <a name="reserve"></a>  vector::reserve  
  Reserves a minimum length of storage for a vector object, allocating space if necessary.  
   
 ```  
@@ -1568,7 +1549,7 @@ void reserve(size_type count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The minimum length of storage to be allocated for the vector.  
   
 ### Example  
@@ -1599,7 +1580,7 @@ Current capacity of v1 = 1
 Current capacity of v1 = 20  
 ```  
   
-##  <a name="vector__resize"></a>  vector::resize  
+##  <a name="resize"></a>  vector::resize  
  Specifies a new size for a vector.  
   
 ```  
@@ -1617,7 +1598,7 @@ void resize(size_type Newsize, Type Val);
 ### Remarks  
  If the container's size is less than the requested size, `Newsize`, elements are added to the vector until it reaches the requested size. If the container's size is larger than the requested size, the elements closest to the end of the container are deleted until the container reaches the size `Newsize`. If the present size of the container is the same as the requested size, no action is taken.  
   
- [size](#vector__size) reflects the current size of the vector.  
+ [size](#size) reflects the current size of the vector.  
   
 ### Example  
   
@@ -1725,7 +1706,7 @@ int main()
 }  
 ```  
   
-##  <a name="vector__reverse_iterator"></a>  vector::reverse_iterator  
+##  <a name="reverse_iterator"></a>  vector::reverse_iterator  
  A type that provides a random-access iterator that can read or modify any element in a reversed vector.  
   
 ```  
@@ -1736,9 +1717,9 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
  A type `reverse_iterator` is used to iterate through the vector in reverse.  
   
 ### Example  
-  See the example for [rbegin](#vector__rbegin).  
+  See the example for [rbegin](#rbegin).  
   
-##  <a name="vector__shrink_to_fit"></a>  vector::shrink_to_fit  
+##  <a name="shrink_to_fit"></a>  vector::shrink_to_fit  
  Discards excess capacity.  
   
 ```  
@@ -1777,7 +1758,7 @@ Current capacity of v1 = 20
 Current capacity of v1 = 1  
 ```  
   
-##  <a name="vector__size"></a>  vector::size  
+##  <a name="size"></a>  vector::size  
  Returns the number of elements in the vector.  
   
 ```  
@@ -1816,7 +1797,7 @@ Vector length is 1.
 Vector length is now 2.  
 ```  
   
-##  <a name="vector__size_type"></a>  vector::size_type  
+##  <a name="size_type"></a>  vector::size_type  
  A type that counts the number of elements in a vector.  
   
 ```  
@@ -1824,9 +1805,9 @@ typedef typename Allocator::size_type size_type;
 ```  
   
 ### Example  
-  See the example for [capacity](#vector__capacity).  
+  See the example for [capacity](#capacity).  
   
-##  <a name="vector__swap"></a>  vector::swap  
+##  <a name="swap"></a>  vector::swap  
  Exchanges the elements of two vectors.  
   
 ```  
@@ -1839,11 +1820,11 @@ friend void swap(
 ```  
   
 ### Parameters  
- ` right`  
- A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector ` left`.  
+ `right`  
+ A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector `left`.  
   
- ` left`  
- A vector whose elements are to be exchanged with those of the vector ` right`.  
+ `left`  
+ A vector whose elements are to be exchanged with those of the vector `right`.  
   
 ### Example  
   
@@ -1884,7 +1865,7 @@ The number of elements in v1 = 2
 The number of elements in v2 = 3  
 ```  
   
-##  <a name="vector__value_type"></a>  vector::value_type  
+##  <a name="value_type"></a>  vector::value_type  
  A type that represents the data type stored in a vector.  
   
 ```  
@@ -1915,7 +1896,7 @@ int main( )
 44  
 ```  
   
-##  <a name="vector__vector"></a>  vector::vector  
+##  <a name="vector"></a>  vector::vector  
  Constructs a vector of a specific size or with elements of a specific value or with a specific allocator or as a copy of all or part of some other vector.  
   
 ```  
@@ -1940,7 +1921,7 @@ vector(InputIterator First, InputIterator Last, const Allocator& Al);
 |||  
 |-|-|  
 |Parameter|Description|  
-|`Al`|The allocator class to use with this object. [get_allocator](#vector__get_allocator) returns the allocator class for the object.|  
+|`Al`|The allocator class to use with this object. [get_allocator](#get_allocator) returns the allocator class for the object.|  
 |`Count`|The number of elements in the constructed vector.|  
 |`Val`|The value of the elements in the constructed vector.|  
 |`Right`|The vector of which the constructed vector is to be a copy.|  

@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "carg"
-  - "cargf"
-  - "cargl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["carg", "cargf", "cargl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "carg"
-  - "cargf"
-  - "cargl"
-  - "complex/carg"
-  - "complex/cargf"
-  - "complex/cargl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "carg function"
-  - "cargf function"
-  - "cargl function"
+f1_keywords: ["carg", "cargf", "cargl", "complex/carg", "complex/cargf", "complex/cargl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["carg function", "cargf function", "cargl function"]
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # carg, cargf, cargl
 Retrieves the argument  of a complex number, with a branch cut along the negative real axis.  
@@ -87,7 +48,7 @@ long double cargl(
  A complex number.  
   
 ## Return Value  
- The argument (also known as the phase) of `z`. The result is in the interval [−π, +π].  
+ The argument (also known as the phase) of `z`. The result is in the interval [-π, +π].  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `carg` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `carg` always takes a `_Dcomplex` value and returns a `double` value.  

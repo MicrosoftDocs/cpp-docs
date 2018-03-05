@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.strings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "language strings"
+f1_keywords: ["c.strings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["language strings"]
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Language Strings
-The `setlocale` and `_create_locale` functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/goglobal/bb896001.aspx). The language string can be any of the values in the **Language** and **Language name abbreviation** columns of the list of supported languages. The C run-time library implementation also supports these language strings:  
+The `setlocale` and `_create_locale` functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [National Language Support (NLS) API Reference](https://www.microsoft.com/resources/msdn/goglobal/default.mspx). The language string can be any of the values in the **Language** and **Language name abbreviation** columns of the list of supported languages. For additional information on language support by operating system version, see [Appendix A: Product Behavior](http://msdn.microsoft.com/goglobal/bb896001.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference.   
+  
+The C run-time library implementation also supports these language strings:  
   
 |Language string|Equivalent Locale Name|  
 |---------------------|----------------------------|  

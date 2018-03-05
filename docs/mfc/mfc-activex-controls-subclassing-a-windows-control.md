@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "precreatewindow"
-  - "IsSubclassed"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OnDraw method, MFC ActiveX controls"
-  - "subclassing"
-  - "DoSuperclassPaint method"
-  - "subclassing Windows controls"
-  - "subclassing, Windows controls"
-  - "reflected messages, in ActiveX controls"
-  - "PreCreateWindow method, overriding"
-  - "MFC ActiveX controls, subclassed controls"
-  - "MFC ActiveX controls, creating"
-  - "IsSubclassed method"
+f1_keywords: ["precreatewindow", "IsSubclassed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OnDraw method, MFC ActiveX controls", "subclassing", "DoSuperclassPaint method [MFC]", "subclassing Windows controls", "subclassing, Windows controls", "reflected messages, in ActiveX controls", "PreCreateWindow method, overriding", "MFC ActiveX controls [MFC], subclassed controls", "MFC ActiveX controls [MFC], creating", "IsSubclassed method [MFC]"]
 ms.assetid: 3236d4de-401f-49b7-918d-c84559ecc426
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Subclassing a Windows Control
 This article describes the process for subclassing a common Windows control to create an ActiveX control. Subclassing an existing Windows control is a quick way to develop an ActiveX control. The new control will have the abilities of the subclassed Windows control, such as painting and responding to mouse clicks. The MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md) is an example of subclassing a Windows control.  

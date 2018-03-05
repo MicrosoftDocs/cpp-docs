@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CD2DPointU"
-  - "afxrendertarget/CD2DPointU"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DPointU class"
+f1_keywords: ["CD2DPointU", "AFXRENDERTARGET/CD2DPointU", "AFXRENDERTARGET/CD2DPointU::CD2DPointU"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DPointU [MFC], CD2DPointU"]
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DPointU Class
 A wrapper for `D2D1_POINT_2U`.  

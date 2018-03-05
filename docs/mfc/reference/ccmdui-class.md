@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCmdUI"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user interfaces, updating"
-  - "states, updating user interface object"
-  - "updating user interfaces for commands"
-  - "commands [C++], updating UI"
-  - "CCmdUI class"
-  - "toolbars [C++], updating"
-  - "command user interface"
-  - "menus [C++], updating as context changes"
-  - "buttons [C++], updating as context changes"
+f1_keywords: ["CCmdUI", "AFXWIN/CCmdUI", "AFXWIN/CCmdUI::ContinueRouting", "AFXWIN/CCmdUI::Enable", "AFXWIN/CCmdUI::SetCheck", "AFXWIN/CCmdUI::SetRadio", "AFXWIN/CCmdUI::SetText", "AFXWIN/CCmdUI::m_nID", "AFXWIN/CCmdUI::m_nIndex", "AFXWIN/CCmdUI::m_pMenu", "AFXWIN/CCmdUI::m_pOther", "AFXWIN/CCmdUI::m_pSubMenu"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCmdUI [MFC], ContinueRouting", "CCmdUI [MFC], Enable", "CCmdUI [MFC], SetCheck", "CCmdUI [MFC], SetRadio", "CCmdUI [MFC], SetText", "CCmdUI [MFC], m_nID", "CCmdUI [MFC], m_nIndex", "CCmdUI [MFC], m_pMenu", "CCmdUI [MFC], m_pOther", "CCmdUI [MFC], m_pSubMenu"]
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CCmdUI Class
 Is used only within an `ON_UPDATE_COMMAND_UI` handler in a `CCmdTarget`-derived class.  
@@ -86,7 +61,7 @@ class CCmdUI
   
 |User-Interface Item|Enable|SetCheck|SetRadio|SetText|  
 |--------------------------|------------|--------------|--------------|-------------|  
-|Menu item|Enables or disables|Checks (×) or unchecks|Checks using dot (•)|Sets item text|  
+|Menu item|Enables or disables|Checks or unchecks|Checks using a dot|Sets item text|  
 |Toolbar button|Enables or disables|Selects, unselects, or indeterminate|Same as `SetCheck`|(Not applicable)|  
 |Status-bar pane|Makes text visible or invisible|Sets pop-out or normal border|Same as `SetCheck`|Sets pane text|  
 |Normal button in `CDialogBar`|Enables or disables|Checks or unchecks check box|Same as `SetCheck`|Sets button text|  

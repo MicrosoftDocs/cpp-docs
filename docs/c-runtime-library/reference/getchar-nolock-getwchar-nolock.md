@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_getchar_nolock"
-  - "_getwchar_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_getchar_nolock", "_getwchar_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "getwchar_nolock"
-  - "_getwchar_nolock"
-  - "_getchar_nolock"
-  - "getchar_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_getwchar_nolock function"
-  - "getwchar_nolock function"
-  - "characters, reading"
-  - "_getchar_nolock function"
-  - "getchar_nolock function"
-  - "standard input, reading from"
+f1_keywords: ["getwchar_nolock", "_getwchar_nolock", "_getchar_nolock", "getchar_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_getwchar_nolock function", "getwchar_nolock function", "characters, reading", "_getchar_nolock function", "getchar_nolock function", "standard input, reading from"]
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getchar_nolock, _getwchar_nolock
 Reads a character from standard input.  
@@ -86,7 +49,7 @@ wint_t _getwchar_nolock( void );
 |`_getchar_nolock`|\<stdio.h>|  
 |`_getwchar_nolock`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -118,12 +81,6 @@ int main()
   
 This textInput was: This text  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::Read](https://msdn.microsoft.com/en-us/library/system.io.streamreader.read.aspx)  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

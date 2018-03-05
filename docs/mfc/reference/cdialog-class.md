@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "modal dialog boxes, creating"
-  - "MFC dialog boxes, base class"
-  - "modeless dialog boxes, creating"
-  - "modeless dialog boxes, displaying"
-  - "CDialog class"
+f1_keywords: ["CDialog", "AFXWIN/CDialog", "AFXWIN/CDialog::CDialog", "AFXWIN/CDialog::Create", "AFXWIN/CDialog::CreateIndirect", "AFXWIN/CDialog::DoModal", "AFXWIN/CDialog::EndDialog", "AFXWIN/CDialog::GetDefID", "AFXWIN/CDialog::GotoDlgCtrl", "AFXWIN/CDialog::InitModalIndirect", "AFXWIN/CDialog::MapDialogRect", "AFXWIN/CDialog::NextDlgCtrl", "AFXWIN/CDialog::OnInitDialog", "AFXWIN/CDialog::OnSetFont", "AFXWIN/CDialog::PrevDlgCtrl", "AFXWIN/CDialog::SetDefID", "AFXWIN/CDialog::SetHelpID", "AFXWIN/CDialog::OnCancel", "AFXWIN/CDialog::OnOK"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDialog [MFC], CDialog", "CDialog [MFC], Create", "CDialog [MFC], CreateIndirect", "CDialog [MFC], DoModal", "CDialog [MFC], EndDialog", "CDialog [MFC], GetDefID", "CDialog [MFC], GotoDlgCtrl", "CDialog [MFC], InitModalIndirect", "CDialog [MFC], MapDialogRect", "CDialog [MFC], NextDlgCtrl", "CDialog [MFC], OnInitDialog", "CDialog [MFC], OnSetFont", "CDialog [MFC], PrevDlgCtrl", "CDialog [MFC], SetDefID", "CDialog [MFC], SetHelpID", "CDialog [MFC], OnCancel", "CDialog [MFC], OnOK"]
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDialog Class
 The base class used for displaying dialog boxes on the screen.  
@@ -96,7 +75,7 @@ class CDialog : public CWnd
   
  To create a modal dialog box, construct an object on the stack using the constructor for your derived dialog class and then call `DoModal` to create the dialog window and its controls. If you wish to create a modeless dialog, call **Create** in the constructor of your dialog class.  
   
- You can also create a template in memory by using a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
+ You can also create a template in memory by using a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the Windows SDK. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
   
  The exchange and validation data map is written in an override of `CWnd::DoDataExchange` that is added to your new dialog class. See the [DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) member function in `CWnd` for more on the exchange and validation functionality.  
   
@@ -201,7 +180,7 @@ virtual BOOL Create(
   
  The **Create** member function returns immediately after it creates the dialog box.  
   
- Use the **WS_VISIBLE** style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow`. For further dialog-box styles and their application, see the [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] and [Window Styles](../../mfc/reference/window-styles.md) in the *MFC Reference*.  
+ Use the **WS_VISIBLE** style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow`. For further dialog-box styles and their application, see the [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the Windows SDK and [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) in the *MFC Reference*.  
   
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the **Create** function.  
   
@@ -225,7 +204,7 @@ virtual BOOL CreateIndirect(
   
 ### Parameters  
  `lpDialogTemplate`  
- Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
   
  `pParentWnd`  
  Points to the dialog object's parent window object (of type [CWnd](../../mfc/reference/cwnd-class.md)). If it is **NULL**, the dialog object's parent window is set to the main application window.  
@@ -242,11 +221,11 @@ virtual BOOL CreateIndirect(
 ### Remarks  
  The `CreateIndirect` member function returns immediately after it creates the dialog box.  
   
- Use the **WS_VISIBLE** style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow` to cause it to appear. For more information on how you can specify other dialog-box styles in the template, see the [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Use the **WS_VISIBLE** style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow` to cause it to appear. For more information on how you can specify other dialog-box styles in the template, see the [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the Windows SDK.  
   
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `CreateIndirect` function.  
   
- Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="domodal"></a>  CDialog::DoModal  
  Call this member function to invoke the modal dialog box and return the dialog-box result when done.  
@@ -256,7 +235,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- An `int` value that specifies the value of the `nResult` parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is –1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ An `int` value that specifies the value of the `nResult` parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is -1 if the function could not create the dialog box, or **IDABORT** if some other error occurred, in which case the output window will contain error information from [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  This member function handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.  
@@ -339,7 +318,7 @@ BOOL InitModalIndirect(
   
 ### Parameters  
  `lpDialogTemplate`  
- Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
   
  `hDialogTemplate`  
  Contains a handle to global memory containing a dialog-box template. This template is in the form of a **DLGTEMPLATE** structure and data for each control in the dialog box.  
@@ -356,7 +335,7 @@ BOOL InitModalIndirect(
 ### Remarks  
  To create a modal dialog box indirectly, first allocate a global block of memory and fill it with the dialog box template. Then call the empty `CDialog` constructor to construct the dialog-box object. Next, call `InitModalIndirect` to store your handle to the in-memory dialog-box template. The Windows dialog box is created and displayed later, when the [DoModal](#domodal) member function is called.  
   
- Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect  
  Call to convert the dialog-box units of a rectangle to screen units.  

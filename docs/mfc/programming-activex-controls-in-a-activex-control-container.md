@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX control containers [C++], accessing ActiveX controls"
-  - "Confirm Classes dialog box"
-  - "wrapper classes [C++], ActiveX controls"
-  - "ActiveX control containers [C++], wrapper classes"
-  - "ActiveX controls [C++], accessing"
-  - "MFC ActiveX controls [C++], accessing in containers"
-  - "header files [C++], for ActiveX control wrapper class"
-  - "wrapper classes [C++], using"
-  - "ActiveX controls [C++], wrapper classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "Confirm Classes dialog box", "wrapper classes [MFC], ActiveX controls", "ActiveX control containers [MFC], wrapper classes", "ActiveX controls [MFC], accessing", "MFC ActiveX controls [MFC], accessing in containers", "header files [MFC], for ActiveX control wrapper class", "wrapper classes [MFC], using", "ActiveX controls [MFC], wrapper classes"]
 ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container
 This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls. Basically, you will follow these steps:  

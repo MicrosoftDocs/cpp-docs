@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::ComPtr::operator&"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator& operator"
+f1_keywords: ["client/Microsoft::WRL::ComPtr::operator&"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator& operator"]
 ms.assetid: 2d77fda6-f4b2-45c1-8a0e-fbc355013531
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator&amp; Operator
 Releases the interface associated with this `ComPtr` object and then retrieves the address of the `ComPtr` object.  

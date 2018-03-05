@@ -1,24 +1,24 @@
 ---
-title: "Events (C++-CX) | Microsoft Docs"
+title: "Events (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
-# Events (C++-CX)
-A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type can declare (that is, publish) events, and client code in the same component or in other components can subscribe to those events by associating methods called *event handlers* with the event. Multiple event handlers can be associated with a single event. When the publishing object raises the event, it causes all event handlers to be invoked. In this way, a subscribing class can perform whatever custom action is appropriate when the publisher raises the event. An event has a delegate type that specifies the signature that all event handlers must have in order to subscribe to the event.  
+# Events (C++/CX)
+A Windows Runtime type can declare (that is, publish) events, and client code in the same component or in other components can subscribe to those events by associating methods called *event handlers* with the event. Multiple event handlers can be associated with a single event. When the publishing object raises the event, it causes all event handlers to be invoked. In this way, a subscribing class can perform whatever custom action is appropriate when the publisher raises the event. An event has a delegate type that specifies the signature that all event handlers must have in order to subscribe to the event.  
   
 ## Consuming events in Windows components  
- Many components in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] expose events. For example, a LightSensor object fires a ReadingChanged event when the sensor reports a new luminescence value. When you use a LightSensor object in your program, you can define a method that will be called when the ReadingChanged event is fired. The method can do whatever you want it to do; the only requirement is that its signature must match the signature of the delegate that is  For more information about how to create an delegate event handler and subscribe to an event, see [Delegates](../cppcx/delegates-c-cx.md).  
+ Many components in the Windows Runtime expose events. For example, a LightSensor object fires a ReadingChanged event when the sensor reports a new luminescence value. When you use a LightSensor object in your program, you can define a method that will be called when the ReadingChanged event is fired. The method can do whatever you want it to do; the only requirement is that its signature must match the signature of the delegate that is  For more information about how to create an delegate event handler and subscribe to an event, see [Delegates](../cppcx/delegates-c-cx.md).  
   
 ## Creating custom events  
   
@@ -51,7 +51,7 @@ A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type can declare (that is, publis
   
  [!code-cpp[cx_events#04](../cppcx/codesnippet/CPP/eventsupportinvs/eventclientclass.h#04)]  
   
-## Remarks  
+### Remarks  
  Multiple handlers may be associated with the same event. The event source sequentially calls into all event handlers from the same thread. If an event receiver blocks within the event handler method, it blocks the event source from invoking other event handlers for this event.  
   
  The order in which the event source invokes event handlers on event receivers is not guaranteed and may differ from call to call.  

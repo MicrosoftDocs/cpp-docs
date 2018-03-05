@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtMemDumpAllObjectsSince"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtMemDumpAllObjectsSince"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CrtMemDumpAllObjectsSince"
-  - "_CrtMemDumpAllObjectsSince"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtMemDumpAllObjectsSince function"
-  - "CrtMemDumpAllObjectsSince function"
+f1_keywords: ["CrtMemDumpAllObjectsSince", "_CrtMemDumpAllObjectsSince"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CrtMemDumpAllObjectsSince function", "CrtMemDumpAllObjectsSince function"]
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _CrtMemDumpAllObjectsSince
 Dumps information about objects in the heap from the start of program execution or from a specified heap state (debug version only).  
@@ -88,10 +57,7 @@ Dumps information about objects in the heap from the start of program execution 
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
+ For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

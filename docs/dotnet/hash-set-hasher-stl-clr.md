@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set::hasher"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hasher member [STL/CLR]"
+f1_keywords: ["cliext::hash_set::hasher"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hasher member [STL/CLR]"]
 ms.assetid: 0fafd645-0bdf-4d4c-8630-c536fbc4bd2c
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::hasher (STL/CLR)
 The hashing delegate for a key.  

@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonGalleryMenuButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonGalleryMenuButton class"
+f1_keywords: ["CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonGalleryMenuButton [MFC], CMFCRibbonGalleryMenuButton", "CMFCRibbonGalleryMenuButton [MFC], CopyFrom", "CMFCRibbonGalleryMenuButton [MFC], CreatePopupMenu", "CMFCRibbonGalleryMenuButton [MFC], GetPalette", "CMFCRibbonGalleryMenuButton [MFC], HasButton", "CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed"]
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonGalleryMenuButton Class
 Implements a ribbon menu button that contains ribbon galleries.  
-  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -77,7 +61,8 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
     CMFCToolBarButton* pExButton = 
     pMenuBar->GetButton(nBulletIndex);
 ASSERT_VALID (pExButton);
-    CMFCRibbonGalleryMenuButton paletteBullet (
+
+    CMFCRibbonGalleryMenuButton paletteBullet (
     pExButton->m_nID, 
     pExButton->GetImage (),  
     pExButton->m_strText);
@@ -98,7 +83,7 @@ ASSERT_VALID (pExButton);
  **Header:** afxRibbonPaletteGallery.h  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -156,7 +141,7 @@ CMFCRibbonGalleryMenuButton(
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  
   
 ##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CMFCPopupMenu* CreatePopupMenu();
@@ -167,7 +152,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 ### Remarks  
   
 ##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonGallery& GetPalette();
@@ -178,7 +163,7 @@ CMFCRibbonGallery& GetPalette();
 ### Remarks  
   
 ##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasButton() const;  
@@ -189,7 +174,7 @@ virtual BOOL HasButton() const;
 ### Remarks  
   
 ##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsEmptyMenuAllowed() const;  

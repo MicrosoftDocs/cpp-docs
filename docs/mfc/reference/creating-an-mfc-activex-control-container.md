@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.activex.container"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls [C++], containers"
-  - "ActiveX control containers [C++], creating"
-  - "containers [C++], creating"
-  - "OLE controls [C++], containers"
+f1_keywords: ["vc.appwiz.activex.container"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], containers", "ActiveX control containers [MFC], creating", "containers [MFC], creating", "OLE controls [MFC], containers"]
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating an MFC ActiveX Control Container
 An ActiveX control container is a parent program that supplies the environment for an ActiveX (formerly OLE) control to run. You can create an application capable of containing ActiveX controls with or without MFC, but it is much easier to do with MFC.  

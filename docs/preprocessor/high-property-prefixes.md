@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "high_property_prefixes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "high_property_prefixes attribute"
+ms.topic: "reference"
+f1_keywords: ["high_property_prefixes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["high_property_prefixes attribute"]
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # high_property_prefixes
 **C++ Specific**  

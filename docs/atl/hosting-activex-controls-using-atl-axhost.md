@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAxWindow2T class"
-  - "Calendar control (ActiveX), hosting with ATL AXHost"
-  - "Calendar control (ActiveX)"
-  - "ActiveX controls [C++], hosting"
-  - "hosting ActiveX controls"
-  - "AXHost method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAxWindow2T class", "Calendar control (ActiveX), hosting with ATL AXHost", "Calendar control (ActiveX)", "ActiveX controls [C++], hosting", "hosting ActiveX controls", "AXHost method"]
 ms.assetid: 2c1200ec-effb-4814-820a-509519699468
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Hosting ActiveX Controls Using ATL AXHost
 The sample in this topic shows how to create AXHost and how to host an ActiveX control using various ATL functions. It also shows how to access the control and sink events (using [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) from the control that is hosted. The sample hosts the Calendar control in a main window or in a child window.  
@@ -63,10 +42,10 @@ The sample in this topic shows how to create AXHost and how to host an ActiveX c
   
 ## See Also  
  [Control Containment FAQ](../atl/atl-control-containment-faq.md)   
- [AtlAxCreateControl](http://msdn.microsoft.com/library/582a883e-2050-4af0-bf27-e89a0948f41d)   
- [AtlAxCreateControlEx](http://msdn.microsoft.com/library/8b21d43b-7c3e-4ff1-9419-e0bd695d34df)   
- [AtlAxCreateControlLic](http://msdn.microsoft.com/library/b409bd0e-28c9-4d9a-80a4-8df77a3aff88)   
- [AtlAxCreateControlLicEx](http://msdn.microsoft.com/library/abcbef3f-fcb0-4c87-8524-bff31e31e1b2)   
+ [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)   
+ [AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)   
+ [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)   
+ [AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)   
  [CAxWindow2T Class](../atl/reference/caxwindow2t-class.md)   
  [IAxWinHostWindowLic Interface](../atl/reference/iaxwinhostwindowlic-interface.md)
 

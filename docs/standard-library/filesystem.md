@@ -4,41 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::directory_entry"
-  - "filesystem/std::experimental::filesystem::recursive_directory_iterator"
-  - "filesystem/std::experimental::filesystem::path"
-  - "filesystem/std::experimental::filesystem::filesystem_error"
-  - "filesystem/std::experimental::filesystem::directory_iterator"
-  - "<filesystem>"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::recursive_directory_iterator", "filesystem/std::experimental::filesystem::path", "filesystem/std::experimental::filesystem::filesystem_error", "filesystem/std::experimental::filesystem::directory_iterator", "<filesystem>"]
+dev_langs: ["C++"]
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt;
-Include the header \<filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
+Include the header &lt;filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
   
 ## Syntax  
   
@@ -49,7 +28,7 @@ using namespace std::experimental::filesystem::v1;
 ```  
   
 > [!IMPORTANT]
->  As of the release of Visual Studio 2017, the \<experimental/filesystem> header was not yet a C++ standard. Visual C++ 2017 implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).  
+>  As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. Visual C++ 2017 implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).  
   
  This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and Posix.  
   
@@ -67,15 +46,15 @@ using namespace std::experimental::filesystem::v1;
   
 -   An object of class path stores the pathname in native form, but supports easy conversion between this stored form and several external forms:  
   
-    -   A null-terminated sequence of char, encoded as favored by the operating system.  
+-   A null-terminated sequence of char, encoded as favored by the operating system.  
   
-    -   A null-terminated sequence of char, encoded as UTF-8.  
+-   A null-terminated sequence of char, encoded as UTF-8.  
   
-    -   A null-terminated sequence of wchar_t, encoded as favored by the operating system.  
+-   A null-terminated sequence of wchar_t, encoded as favored by the operating system.  
   
-    -   A null-terminated sequence of char16_t, encoded as UTF-16.  
+-   A null-terminated sequence of char16_t, encoded as UTF-16.  
   
-    -   A null-terminated sequence of char32_t, encoded as UTF-32.  
+-   A null-terminated sequence of char32_t, encoded as UTF-32.  
   
  Interconversions between these representations are mediated, as needed, by the use of one or more `codecvt` facets. If a specific locale object is not designated, these facets are obtained from the global locale.  
   
@@ -136,10 +115,10 @@ using namespace std::experimental::filesystem::v1;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy_options Enumeration](../standard-library/filesystem-enumerations.md#filesystem__copy_options)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
-|[directory_options Enumeration](../standard-library/filesystem-enumerations.md#filesystem__directory_options)|An enumeration that specifies options for directory iterators.|  
-|[file_type Enumeration](../standard-library/filesystem-enumerations.md#filesystem__file_type)|An enumeration for file types.|  
-|[perms Enumeration](../standard-library/filesystem-enumerations.md#filesystem__perms)|A bitmask type used to convey permissions and options to permissions|  
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
+|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|  
+|[file_type](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|  
+|[perms](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

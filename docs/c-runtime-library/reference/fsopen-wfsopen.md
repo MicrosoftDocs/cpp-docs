@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wfsopen"
-  - "_fsopen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wfsopen", "_fsopen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wfsopen"
-  - "fsopen"
-  - "tfsopen"
-  - "_tfsopen"
-  - "_wfsopen"
-  - "_fsopen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "opening files, streams"
-  - "fsopen function"
-  - "tfsopen function"
-  - "wfsopen function"
-  - "_fsopen function"
-  - "files [C++], opening"
-  - "_tfsopen function"
-  - "_wfsopen function"
-  - "file sharing [C++]"
+f1_keywords: ["wfsopen", "fsopen", "tfsopen", "_tfsopen", "_wfsopen", "_fsopen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["opening files, streams", "fsopen function", "tfsopen function", "wfsopen function", "_fsopen function", "files [C++], opening", "_tfsopen function", "_wfsopen function", "file sharing [C++]"]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _fsopen, _wfsopen
 Opens a stream with file sharing.  
@@ -116,7 +73,7 @@ FILE *_wfsopen(
   
 |Term|Definition|  
 |----------|----------------|  
-|`t`|Opens a file in text (translated) mode. In this mode, carriage return–line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z might cause `fseek` to behave improperly near the end of the file.|  
+|`t`|Opens a file in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z might cause `fseek` to behave improperly near the end of the file.|  
 |`b`|Opens a file in binary (untranslated) mode; the above translations are suppressed.|  
 |`S`|Specifies that caching is optimized for, but not restricted to, sequential access from disk.|  
 |`R`|Specifies that caching is optimized for, but not restricted to, random access from disk.|  
@@ -179,12 +136,6 @@ int main( void )
 ```Output  
 No one else in the network can write to this file until we are done.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::Open](https://msdn.microsoft.com/en-us/library/system.io.file.open.aspx)  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

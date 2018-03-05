@@ -4,34 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 6e3f0986-7905-4f94-90e5-22c2ebfc8cd0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Basic Windows Runtime Component Using WRL
-This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses JavaScript.  
+This document shows how to use the Windows Runtime C++ Template Library (WRL)to create a basic Windows Runtime component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a Universal Windows Platform app that uses JavaScript.  
   
 ## Prerequisites  
   
@@ -39,7 +24,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
 -   Experience with COM.  
   
-### To create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component that adds two numbers  
+### To create a basic Windows Runtime component that adds two numbers  
   
 1.  In Visual Studio, create a Visual C++ `WRLClassLibrary` project. The document [Class Library Project Template](../windows/wrl-class-library-project-template.md) describes how to download this template. Name the project `Contoso`.  
   
@@ -58,7 +43,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      We recommend that you use `_Out_` and other source annotation language (SAL) annotations to describe how a function uses its parameters. SAL annotations also describe return values. SAL annotations work with the [C/C++ Code Analysis tool](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) to discover possible defects in C and C++ source code. Common coding errors that are reported by the tool include buffer overruns, uninitialized memory, null pointer dereferences, and memory and resource leaks.  
   
-### To use the component from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app that uses JavaScript  
+### To use the component from a Universal Windows Platform app that uses JavaScript  
   
 1.  In Visual Studio, add a new JavaScript `Blank App` project to the `Contoso` solution. Name the project `CalculatorJS`.  
   

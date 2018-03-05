@@ -4,40 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sealed keyword [C++]"
-  - "derived classes, virtual functions"
-  - "virtual functions, sealing"
-  - "__sealed keyword"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sealed keyword [C++]", "derived classes, virtual functions", "virtual functions, sealing", "__sealed keyword"]
 ms.assetid: 0e9fae03-6425-4512-9a24-8ccb6dc8a0d4
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Sealing a Virtual Function
-The syntax for sealing a virtual function has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for sealing a virtual function has changed from Managed Extensions for C++ to Visual C++.  
   
  The `__sealed` keyword is used in Managed Extensions to modify either a reference type, disallowing subsequent derivation from it (see [Declaration of a Managed Class Type](../dotnet/declaration-of-a-managed-class-type.md)), or to modify a virtual function, disallowing subsequent overriding of the method in a derived class. For example:  
   

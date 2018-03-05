@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_sopen"
-  - "_wsopen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_sopen", "_wsopen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wsopen"
-  - "wsopen"
-  - "_sopen"
-  - "_tsopen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sopen function"
-  - "sharing files"
-  - "opening files, for sharing"
-  - "_sopen function"
-  - "wsopen function"
-  - "files [C++], opening"
-  - "files [C++], sharing"
-  - "_wsopen function"
+f1_keywords: ["_wsopen", "wsopen", "_sopen", "_tsopen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sopen function", "sharing files", "opening files, for sharing", "_sopen function", "wsopen function", "files [C++], opening", "files [C++], sharing", "_wsopen function"]
 ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _sopen, _wsopen
 Opens a file for sharing. More-secure versions of these functions are available—see [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).  
@@ -226,9 +186,6 @@ int _wsopen(
   
 ## Example  
  See the example for [_locking](../../c-runtime-library/reference/locking.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   

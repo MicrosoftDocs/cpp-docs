@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4407"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4407"
+f1_keywords: ["C4407"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4407"]
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4407
 cast between different pointer to member representations, compiler may generate incorrect code  

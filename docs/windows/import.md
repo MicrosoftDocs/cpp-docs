@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.import"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "import attribute"
+f1_keywords: ["vc-attr.import"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["import attribute"]
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # import
 Specifies another .idl, .odl, or header file containing definitions you want to reference from your main IDL.  
@@ -97,5 +80,4 @@ library MyLib {
  [importidl](../windows/importidl.md)   
  [importlib](../windows/importlib.md)   
  [include](../windows/include-cpp.md)   
- [includelib](../windows/includelib-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [includelib](../windows/includelib-cpp.md)   

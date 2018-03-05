@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtSetDumpClient"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtSetDumpClient"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtSetDumpClient"
-  - "CrtSetDumpClient"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtSetDumpClient function"
-  - "CrtSetDumpClient function"
+f1_keywords: ["_CrtSetDumpClient", "CrtSetDumpClient"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CrtSetDumpClient function", "CrtSetDumpClient function"]
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDumpClient
 Installs an application-defined function to dump `_CLIENT_BLOCK` type memory blocks (debug version only).  
@@ -97,9 +66,6 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
   
 ## Libraries  
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

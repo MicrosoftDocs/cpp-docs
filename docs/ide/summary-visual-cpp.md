@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<summary>"
-  - "summary"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<summary> C++ XML tag"
-  - "summary C++ XML tag"
+f1_keywords: ["<summary>", "summary"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;summary&gt; (Visual C++)
 The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../ide/remarks-visual-cpp.md) to add supplemental information to a type description.  

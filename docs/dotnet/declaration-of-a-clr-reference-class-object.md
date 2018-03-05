@@ -4,37 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "types [C++], reference types"
-  - "reference types, CLR"
+dev_langs: ["C++"]
+helpviewer_keywords: ["types [C++], reference types", "reference types, CLR"]
 ms.assetid: 6d64f746-3715-4948-ada3-88859f4150e4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a CLR Reference Class Object
-The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, a reference class type object is declared by using the ISO-C++ pointer syntax, with an optional use of the `__gc` keyword to the left of the star (`*`). For example, here are a variety of reference class type object declarations under the Managed Extensions syntax:  
   
@@ -245,7 +228,7 @@ Sexpr ^ Loop (Sexpr^ input) {
 Object^ obj = nullptr;  
 char*   pstr = nullptr; // 0 would also work here  
   
-// Error: no conversion of nullptr to 0 …  
+// Error: no conversion of nullptr to 0  
 int ival = nullptr;  
 ```  
   

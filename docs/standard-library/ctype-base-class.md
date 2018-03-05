@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "locale/std::ctype_base"
-  - "std.ctype_base"
-  - "ctype_base"
-  - "std::ctype_base"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ctype_base class"
+ms.topic: "reference"
+f1_keywords: ["locale/std::ctype_base"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ctype_base class"]
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ctype_base Class
 The class serves as a base class for facets of template class [ctype](../standard-library/ctype-class.md). A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.  
@@ -93,7 +73,7 @@ struct ctype_base : public locale::facet
   
 - **graph** (function [isgraph](../standard-library/locale-functions.md#isgraph))  
   
- You can characterize a combination of classifications by ORing these constants. In particular, it is always true that **alnum** == ( **alpha**``&#124; **digit**\) and **graph** \=\= \( **alnum**``&#124; **punct**).  
+ You can characterize a combination of classifications by ORing these constants. In particular, it is always true that **alnum** == ( **alpha** &#124; **digit**\) and **graph** \=\= \( **alnum** &#124; **punct**).  
   
 ## Requirements  
  **Header:** \<locale>  

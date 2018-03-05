@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "for keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["for keyword [C++]"]
 ms.assetid: 6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # for Statement (C++)
 Executes a statement repeatedly until the condition becomes false. For information on the range-based for statement, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).  

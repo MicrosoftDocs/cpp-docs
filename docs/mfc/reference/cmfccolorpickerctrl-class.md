@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCColorPickerCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCColorPickerCtrl class"
+f1_keywords: ["CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SelectCellHexagon", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminanceBarWidth", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetOriginalColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetPalette", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl", "CMFCColorPickerCtrl [MFC], GetColor", "CMFCColorPickerCtrl [MFC], GetHLS", "CMFCColorPickerCtrl [MFC], GetHue", "CMFCColorPickerCtrl [MFC], GetLuminance", "CMFCColorPickerCtrl [MFC], GetSaturation", "CMFCColorPickerCtrl [MFC], SelectCellHexagon", "CMFCColorPickerCtrl [MFC], SetColor", "CMFCColorPickerCtrl [MFC], SetHLS", "CMFCColorPickerCtrl [MFC], SetHue", "CMFCColorPickerCtrl [MFC], SetLuminance", "CMFCColorPickerCtrl [MFC], SetLuminanceBarWidth", "CMFCColorPickerCtrl [MFC], SetOriginalColor", "CMFCColorPickerCtrl [MFC], SetPalette", "CMFCColorPickerCtrl [MFC], SetSaturation", "CMFCColorPickerCtrl [MFC], SetType", "CMFCColorPickerCtrl [MFC], DrawCursor"]
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorPickerCtrl Class
 The `CMFCColorPickerCtrl` class provides functionality for a control that is used to select colors.  

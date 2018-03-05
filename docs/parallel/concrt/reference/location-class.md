@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::location"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "location class"
+ms.topic: "reference"
+f1_keywords: ["location", "CONCRT/concurrency::location", "CONCRT/concurrency::location::location", "CONCRT/concurrency::location::current", "CONCRT/concurrency::location::from_numa_node"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["location class"]
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # location Class
 An abstraction of a physical location on hardware.  
@@ -49,23 +32,23 @@ class location;
   
 |Name|Description|  
 |----------|-----------------|  
-|[location Constructor](#ctor)|Overloaded. Constructs a `location` object.|  
+|[location](#ctor)|Overloaded. Constructs a `location` object.|  
 |[~location Destructor](#dtor)|Destroys a `location` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[current Method](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
-|[from_numa_node Method](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
+|[current](#current)|Returns a `location` object representing the most specific place the calling thread is executing.|  
+|[from_numa_node](#from_numa_node)|Returns a `location` object which represents a given NUMA node.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Determines whether two `location` objects represent different location.|  
-|[operator= Operator](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
-|[operator== Operator](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
+|[operator!=](#operator_neq)|Determines whether two `location` objects represent different location.|  
+|[operator=](#operator_eq)|Assigns the contents of a different `location` object to this one.|  
+|[operator==](#operator_eq_eq)|Determines whether two `location` objects represent the same location.|  
   
 ## Inheritance Hierarchy  
  `location`  

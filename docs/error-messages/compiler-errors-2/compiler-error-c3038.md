@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3038"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3038"
+f1_keywords: ["C3038"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3038"]
 ms.assetid: 140ada3e-5636-43ef-a4ee-22a9f66a771f
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3038
 'var' : variable in 'private' clause cannot be a reduction variable in enclosing context  

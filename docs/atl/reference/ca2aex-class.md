@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CA2AEX<t_nBufferLength>"
-  - "CA2AEX"
-  - "ATL.CA2AEX<t_nBufferLength>"
-  - "ATLCONV/CA2AEX"
-  - "ATL.CA2AEX"
-  - "ATL::CA2AEX"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CA2AEX class"
+f1_keywords: ["CA2AEX", "ATLCONV/ATL::CA2AEX", "ATLCONV/ATL::CA2AEX::CA2AEX", "ATLCONV/ATL::CA2AEX::m_psz", "ATLCONV/ATL::CA2AEX::m_szBuffer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CA2AEX class"]
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CA2AEX Class
 This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and the typedef **CA2A**.  
@@ -97,10 +75,10 @@ class CA2AEX
   
 - **CA2A**  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  

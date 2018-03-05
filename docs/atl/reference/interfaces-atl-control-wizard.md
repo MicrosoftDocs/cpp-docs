@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.control.interfaces"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL Control Wizard, interfaces"
+f1_keywords: ["vc.codewiz.class.atl.control.interfaces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL Control Wizard, interfaces"]
 ms.assetid: 971eadcd-6a1e-46f2-b8fe-ee6b53dfe3ea
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Interfaces, ATL Control Wizard
 This page of the wizard identifies the interfaces that the control supports. By default, the supported interfaces are those typically used by most containers.  

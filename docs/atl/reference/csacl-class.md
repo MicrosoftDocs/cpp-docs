@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSacl"
-  - "ATL::CSacl"
-  - "CSacl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSacl class"
+f1_keywords: ["CSacl", "ATLSECURITY/ATL::CSacl", "ATLSECURITY/ATL::CSacl::CSacl", "ATLSECURITY/ATL::CSacl::AddAuditAce", "ATLSECURITY/ATL::CSacl::GetAceCount", "ATLSECURITY/ATL::CSacl::RemoveAce", "ATLSECURITY/ATL::CSacl::RemoveAllAces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSacl class"]
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSacl Class
 This class is a wrapper for a SACL (system access-control list) structure.  
@@ -75,11 +56,11 @@ class CSacl : public CAcl
 ## Remarks  
  A SACL contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log of a domain controller. Note that a SACL generates log entries only on the domain controller where the access attempt occurred, not on every domain controller that contains a replica of the object.  
   
- To set or retrieve the SACL in an object's security descriptor, the SE_SECURITY_NAME privilege must be enabled in the access token of the requesting thread. The administrators group has this privilege granted by default, and it can be granted to other users or groups. Having the privilege granted is not all that is required: before the operation defined by the privilege can be performed, the privilege must be enabled in the security access token in order to take effect. The model allows privileges to be enabled only for specific system operations, and then disabled when they are no longer needed. See [AtlGetSacl](http://msdn.microsoft.com/library/1d69611f-d8a7-467b-9d57-cbe2f1610bf8) and [AtlSetSacl](http://msdn.microsoft.com/library/54daab9a-8c69-45fd-86c4-18eb30d59547) for examples of enabling SE_SECURITY_NAME.  
+ To set or retrieve the SACL in an object's security descriptor, the SE_SECURITY_NAME privilege must be enabled in the access token of the requesting thread. The administrators group has this privilege granted by default, and it can be granted to other users or groups. Having the privilege granted is not all that is required: before the operation defined by the privilege can be performed, the privilege must be enabled in the security access token in order to take effect. The model allows privileges to be enabled only for specific system operations, and then disabled when they are no longer needed. See [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl) for examples of enabling SE_SECURITY_NAME.  
   
- Use the class methods provided to add, remove, create, and delete ACEs from the **SACL** object. See also [AtlGetSacl](http://msdn.microsoft.com/library/1d69611f-d8a7-467b-9d57-cbe2f1610bf8) and [AtlSetSacl](http://msdn.microsoft.com/library/54daab9a-8c69-45fd-86c4-18eb30d59547).  
+ Use the class methods provided to add, remove, create, and delete ACEs from the **SACL** object. See also [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -136,7 +117,7 @@ bool AddAuditAce(
  Returns **true** if the ACE is added to the `CSacl` object, **false** on failure.  
   
 ### Remarks  
- A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object. The second form of `AddAuditAce` is only available on Windows 2000 and later.  
+ A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   

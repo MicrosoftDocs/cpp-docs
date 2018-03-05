@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fputc"
-  - "fputwc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["fputc", "fputwc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fputc"
-  - "fputwc"
-  - "_fputtc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "streams, writing characters to"
-  - "fputtc function"
-  - "_fputtc function"
-  - "fputwc function"
-  - "fputc function"
+f1_keywords: ["fputc", "fputwc", "_fputtc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["streams, writing characters to", "fputtc function", "_fputtc function", "fputwc function", "fputc function"]
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fputc, fputwc
 Writes a character to a stream.  
@@ -85,7 +49,7 @@ wint_t fputwc(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- Each of these functions writes the single character `c` to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with `stream`*.* If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.  
+ Each of these functions writes the single character `c` to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with `stream`. If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.  
   
  The two functions behave identically if the stream is opened in ANSI mode. `fputc` does not currently support output into a UNICODE stream.  
   
@@ -111,7 +75,7 @@ wint_t fputwc(
 |`fputc`|\<stdio.h>|  
 |`fputwc`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+ The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   
@@ -137,12 +101,6 @@ int main( void )
 ```Output  
 This is a test of fputc!!  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamWriter::Write](https://msdn.microsoft.com/en-us/library/system.io.streamwriter.write.aspx)  
-  
--   [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

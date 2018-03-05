@@ -2,23 +2,20 @@
 title: "Platform::COMException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::COMException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::COMException Class"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::COMException Class"]
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::COMException Class
 Represents COM errors that occur during application execution. COMException is the base class for a set of predefined, standard exceptions.  
@@ -29,7 +26,7 @@ Represents COM errors that occur during application execution. COMException is t
 public ref class COMException : Exception,    IException,    IPrintable,    IEquatable  
 ```  
   
-## Members  
+### Members  
  The COMException class inherits from the Object class and the IException, IPrintable, and IEquatable interfaces.  
   
  COMException also has the following types of members.  
@@ -38,7 +35,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
   
 |Member|Description|  
 |------------|-----------------|  
-|`COMException`|Initializes a new instance of the COMException class.|  
+|[COMException](#ctor)|Initializes a new instance of the COMException class.|  
   
  **Methods**  
   
@@ -50,8 +47,8 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
   
 |Member|Description|  
 |------------|-----------------|  
-|[Exception::HResult Property](../cppcx/exception-hresult-property.md)|The HRESULT that corresponds to the exception.|  
-|[Exception::Message Property](../cppcx/exception-message-property.md)|Message that describes the exception.|  
+|[Exception::HResult](#hresult)|The HRESULT that corresponds to the exception.|  
+|[Exception::Message](#message)|Message that describes the exception.|  
   
 ## Derived Exceptions  
  The following predefined exceptions are derived from COMException. They differ from COMException only in their name, the name of their constructor, and their underlying HRESULT value.  
@@ -72,14 +69,57 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 |OutOfBoundsException|E_BOUNDS|Thrown when an operation attempts to access data outside the valid range.|  
 |OutOfMemoryException|E_OUTOFMEMORY|Thrown when there's insufficient memory to complete the operation.|  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   
  **Metadata:** platform.winmd  
+
+## <a name="ctor"></a> COMException::COMException Constructor
+Intializes a new instance of the COMException class.  
   
+### Syntax  
+  
+```cpp  
+COMException( int hresult )  
+```  
+  
+### Parameters  
+ hresult  
+ The error HRESULT that is represented by the exception.  
+  
+
+
+## <a name="hresult"></a> COMException::HResult Property
+The HRESULT that corresponds to the exception.  
+  
+### Syntax  
+  
+```cpp  
+public:property int HResult {    int get();}  
+```  
+  
+## Property Value  
+ An HRESULT value that specifies the error.  
+  
+### Remarks  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+
+## <a name="message"></a> COMException::Message Property
+Message that describes the exception.  
+  
+### Syntax  
+  
+```cpp  
+public:property String^ Message {    String^ get();}  
+```  
+  
+### Property Value  
+ A description of the exception.  
+    
+
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

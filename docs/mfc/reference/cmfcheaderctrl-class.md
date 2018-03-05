@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCHeaderCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCHeaderCtrl class"
+f1_keywords: ["CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState", "AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending", "AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl", "AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow", "AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCHeaderCtrl [MFC], CMFCHeaderCtrl", "CMFCHeaderCtrl [MFC], EnableMultipleSort", "CMFCHeaderCtrl [MFC], GetColumnState", "CMFCHeaderCtrl [MFC], GetSortColumn", "CMFCHeaderCtrl [MFC], IsAscending", "CMFCHeaderCtrl [MFC], IsDialogControl", "CMFCHeaderCtrl [MFC], IsMultipleSort", "CMFCHeaderCtrl [MFC], RemoveSortColumn", "CMFCHeaderCtrl [MFC], SetSortColumn", "CMFCHeaderCtrl [MFC], OnDrawItem", "CMFCHeaderCtrl [MFC], OnDrawSortArrow", "CMFCHeaderCtrl [MFC], OnFillBackground"]
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCHeaderCtrl Class
 The `CMFCHeaderCtrl` class supports sorting multiple columns in a header control.  

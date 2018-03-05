@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Graphics (C++ AMP)
 C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) namespace that you can use to access the texture support on GPUs. Some common scenarios are:  
@@ -41,10 +25,10 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
 -   The graphics APIs in C++ AMP provide alternative ways to access sub-word packed buffers. Textures that have formats that represent *texels* (texture elements) that are composed of 8-bit or 16-bit scalars allow access to such packed data storage.  
   
 ## The norm and unorm Types  
- The `norm` and `unorm` types are scalar types that limit the range of `float` values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to `float` and then clamped to the respective region that's allowed by norm [-1.0…1.0] or unorm [0.0…1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as `float` and `int`: +, -, *, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.  
+ The `norm` and `unorm` types are scalar types that limit the range of `float` values; this is known as *clamping*. These types can be explicitly constructed from other scalar types. In casting, the value is first cast to `float` and then clamped to the respective region that's allowed by norm [-1.0, 1.0] or unorm [0.0, 1.0]. Casting from +/- infinity returns +/-1. Casting from NaN is undefined. A norm can be implicitly constructed from a unorm and there is no loss of data. The implicit conversion operator to float is defined on these types. Binary operators are defined between these types and other built-in scalar types such as `float` and `int`: +, -, *, /, ==, !=, >, \<, >=, <=. The compound assignment operators are also supported: +=, -=, \*=, /=. The unary negation operator (-) is defined for norm types.  
   
 ## Short Vector Library  
- The Short Vector Library provides some of the functionality of the [Vector Type](http://go.microsoft.com/fwlink/p/linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are `double`, `float`, `int`, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding `typedef` that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as `__int8` and `__int16`.  
+ The Short Vector Library provides some of the functionality of the [Vector Type](http://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are `double`, `float`, `int`, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding `typedef` that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as `__int8` and `__int16`.  
   
 ||Length 2|Length 3|Length 4|  
 |-|--------------|--------------|--------------|  
@@ -83,7 +67,7 @@ C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/
   
 -   A short vector that has two or four components. The only exception is `double_4`, which is not allowed.  
   
- The `texture` object can have a rank of 1, 2, or 3. The `texture` object can be captured only by reference in the lambda of a call to `parallel_for_each`. The texture is stored on the GPU as Direct3D texture objects. For more information about textures and texels in Direct3D, see [Introduction to Textures in Direct3D 11](http://go.microsoft.com/fwlink/p/linkid=248502).  
+ The `texture` object can have a rank of 1, 2, or 3. The `texture` object can be captured only by reference in the lambda of a call to `parallel_for_each`. The texture is stored on the GPU as Direct3D texture objects. For more information about textures and texels in Direct3D, see [Introduction to Textures in Direct3D 11](http://go.microsoft.com/fwlink/p/?linkid=248502).  
   
  The texel type you use might be one of the many texture formats that are used in graphics programming. For example, an RGBA format could use 32 bits, with 8 bits each for the R, G, B, and A scalar elements. The texture hardware of a graphics card can access the individual elements based on the format. For example, if you are using the RGBA format, the texture hardware can extract each 8-bit element into a 32-bit form. In C++ AMP, you can set the bits per scalar element of your texel so that you can automatically access the individual scalar elements in the code without using bit-shifting.  
   
@@ -441,7 +425,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
   
 ## Interoperability  
 
- The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/LinkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/LinkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/LinkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
+ The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/?linkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/?linkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/?linkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.  
   
 ## See Also  
  [double_2 Class](../../parallel/amp/reference/double-2-class.md)   

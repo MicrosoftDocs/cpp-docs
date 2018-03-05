@@ -4,56 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.runtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MSVCR71.dll"
-  - "libraries [C++], multithreaded"
-  - "library files, run-time"
-  - "LIBCMT.lib"
-  - "LIBCP.lib"
-  - "LIBCPMT.lib"
-  - "run-time libraries, C"
-  - "CRT, release versions"
-  - "MSVCP71.dll"
-  - "LIBC.lib"
-  - "libraries [C++]"
-  - "libraries [C++], run-time"
-  - "linking [C++], libraries"
+f1_keywords: ["c.runtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CRT Library Features
 This topic discusses the various .lib files that comprise the C run-time libraries as well as their associated compiler options and preprocessor directives.  
   
 ## C Run-Time Libraries (CRT)  
- The C Run-time Library (CRT) is the part of the C++ Standard Library that incorporates the ISO C99 standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code, and pure managed code for .NET development. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.  
+ The C Run-time Library (CRT) is the part of the C++ Standard Library that incorporates the ISO C99 standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.  
   
- In Visual Studio 2015, the CRT has been refactored into new binaries. The Universal CRT (UCRT) contains the functions and globals exported by the standard C99 CRT library. The UCRT is now a Windows component, and ships as part of Windows 10. The static library, DLL import library, and header files for the UCRT are now found in the Windows 10 SDK. When you install Visual C++, Visual Studio setup installs the subset of the Windows 10 SDK required to use the UCRT. You can use the UCRT on any version of Windows supported by Visual Studio 2015. You can redistribute it using vcredist for supported versions of Windows other than Windows 10. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
+ Starting in Visual Studio 2015, the CRT has been refactored into new binaries. The Universal CRT (UCRT) contains the functions and globals exported by the standard C99 CRT library. The UCRT is now a Windows component, and ships as part of Windows 10. The static library, DLL import library, and header files for the UCRT are now found in the Windows 10 SDK. When you install Visual C++, Visual Studio setup installs the subset of the Windows 10 SDK required to use the UCRT. You can use the UCRT on any version of Windows supported by Visual Studio 2015 and later versions. You can redistribute it using vcredist for supported versions of Windows other than Windows 10. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   
  The following table lists the libraries that implement the UCRT.  
   
@@ -90,7 +60,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |msvcurt.lib|**Deprecated** Static library for the pure managed CRT.|**/clr:pure**||  
 |msvcurtd.lib|**Deprecated** Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
   
- If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will usethe statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
+ If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will use the statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
   
  Using the statically linked CRT implies that any state information saved by the C runtime library will be local to that instance of the CRT. For example, if you use [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) when using a statically linked CRT, the position of the `strtok` parser is unrelated to the `strtok` state used in code in the same process (but in a different DLL or EXE) that is linked to another instance of the static CRT. In contrast, the dynamically linked CRT shares state for all code within a process that is dynamically linked to the CRT. This concern does not apply if you use the new more secure versions of these functions; for example, `strtok_s` does not have this problem.  
   
@@ -98,9 +68,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
   
  If you are using the **/clr** compiler switch, your code will be linked with a static library, msvcmrt.lib. The static library provides a proxy between your managed code and the native CRT. You cannot use the statically linked CRT ( **/MT** or **/MTd** options) with **/clr**. Use the dynamically-linked libraries (**/MD** or **/MDd**) instead.  
   
- If you are using the **/clr:pure** compiler switch, your code will be linked with the static library msvcurt.lib. As with **/clr**, you cannot link with the statically linked library. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
-  
- For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md); for **/clr:pure**, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ For more information on using the CRT with **/clr**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md).  
   
  To build a debug version of your application, the [_DEBUG](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  
   
@@ -115,14 +83,14 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |LIBCPMTD.LIB|Multithreaded, static link|**/MTd**|_DEBUG, _MT|  
 |MSVCPRTD.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
   
- When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] at compile time. For example:  
+ When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by Visual C++ at compile time. For example:  
   
 ```  
 #include <ios>   
 ```  
   
 ## What problems exist if an application uses more than one CRT version?  
- If you have more than one DLL or EXE, then you may have more than one CRT, whether or not you are using different versions of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]. For example, statically linking the CRT into multiple DLLs can present the same problem. Developers encountering this problem with static CRTs have been instructed to compile with **/MD** to use the CRT DLL. If your DLLs pass CRT resources across the DLL boundary, you may encounter issues with mismatched CRTs and need to recompile your project with Visual C++.  
+ If you have more than one DLL or EXE, then you may have more than one CRT, whether or not you are using different versions of Visual C++. For example, statically linking the CRT into multiple DLLs can present the same problem. Developers encountering this problem with static CRTs have been instructed to compile with **/MD** to use the CRT DLL. If your DLLs pass CRT resources across the DLL boundary, you may encounter issues with mismatched CRTs and need to recompile your project with Visual C++.  
   
  If your program is using more than one version of the CRT, some care is needed when passing certain CRT objects (such as file handles, locales and environment variables) across DLL boundaries. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).  
   

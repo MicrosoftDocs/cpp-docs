@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HTTP client applications"
-  - "client applications [C++], HTTP"
-  - "Internet applications [C++], HTTP client applications"
-  - "applications [MFC], HTTP client"
-  - "Internet client applications [C++], HTTP table"
-  - "WinInet classes, HTTP"
+dev_langs: ["C++"]
+helpviewer_keywords: ["HTTP client applications [MFC]", "client applications [MFC], HTTP", "Internet applications [MFC], HTTP client applications", "applications [MFC], HTTP client", "Internet client applications [MFC], HTTP table", "WinInet classes [MFC], HTTP"]
 ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical HTTP Client Application
 The following table shows the steps you might perform in a typical HTTP client application:  

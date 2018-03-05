@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSecurityAttributes"
-  - "ATL::CSecurityAttributes"
-  - "CSecurityAttributes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSecurityAttributes class"
+f1_keywords: ["CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::Set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSecurityAttributes class"]
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSecurityAttributes Class
 This class is a thin wrapper for the security attributes structure.  
@@ -65,7 +46,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 ## Remarks  
  The **SECURITY_ATTRIBUTES** structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  `SECURITY_ATTRIBUTES`  

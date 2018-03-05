@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "mbtowc"
-  - "_mbtowc_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["mbtowc", "_mbtowc_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbtowc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbtowc function"
-  - "_mbtowc_l function"
-  - "mbtowc_l function"
+f1_keywords: ["mbtowc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbtowc function", "_mbtowc_l function", "mbtowc_l function"]
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # mbtowc, _mbtowc_l
 Convert a multibyte character to a corresponding wide character.  
@@ -86,7 +53,7 @@ int _mbtowc_l(
  The locale to use.  
   
 ## Return Value  
- If **mbchar** is not **NULL** and if the object that `mbchar` points to forms a valid multibyte character, `mbtowc` returns the length in bytes of the multibyte character. If `mbchar` is **NULL** or the object that it points to is a wide-character null character (L'\0'), the function returns 0. If the object that `mbchar` points to does not form a valid multibyte character within the first *count* characters, it returns –1.  
+ If **mbchar** is not **NULL** and if the object that `mbchar` points to forms a valid multibyte character, `mbtowc` returns the length in bytes of the multibyte character. If `mbchar` is **NULL** or the object that it points to is a wide-character null character (L'\0'), the function returns 0. If the object that `mbchar` points to does not form a valid multibyte character within the first *count* characters, it returns -1.  
   
 ## Remarks  
  The `mbtowc` function converts *count* or fewer bytes pointed to by `mbchar`, if `mbchar` is not **NULL**, to a corresponding wide character. `mbtowc` stores the resulting wide character at *wchar,* if *wchar* is not **NULL**. `mbtowc` does not examine more than `MB_CUR_MAX` bytes. `mbtowc` uses the current locale for locale-dependent behavior; `_mbtowc_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
@@ -161,9 +128,6 @@ Attempt to convert when target is NULL
 Attempt to convert a NULL pointer to a wide character:  
   Bytes converted: 0  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

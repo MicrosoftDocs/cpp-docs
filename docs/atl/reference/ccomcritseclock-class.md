@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComCritSecLock"
-  - "ATL.CComCritSecLock<TLock>"
-  - "ATL::CComCritSecLock<TLock>"
-  - "ATL.CComCritSecLock"
-  - "CComCritSecLock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComCritSecLock class"
+f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComCritSecLock class"]
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComCritSecLock Class
 This class provides methods for locking and unlocking a critical section object.  

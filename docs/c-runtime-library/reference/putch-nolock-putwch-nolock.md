@@ -4,68 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_putwch_nolock"
-  - "_putch_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-conio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_putwch_nolock", "_putch_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_putch_nolock"
-  - "_puttch_nolock"
-  - "putch_nolock"
-  - "putwch_nolock"
-  - "_putwch_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "putwch_nolock function"
-  - "puttch_nolock function"
-  - "characters, writing"
-  - "putch_nolock function"
-  - "_putch_nolock function"
-  - "_puttch_nolock function"
-  - "console, writing characters to"
-  - "_putwch_nolock function"
+f1_keywords: ["_putch_nolock", "_puttch_nolock", "putch_nolock", "putwch_nolock", "_putwch_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["putwch_nolock function", "puttch_nolock function", "characters, writing", "putch_nolock function", "_putch_nolock function", "_puttch_nolock function", "console, writing characters to", "_putwch_nolock function"]
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _putch_nolock, _putwch_nolock
 Writes a character to the console without locking the thread.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

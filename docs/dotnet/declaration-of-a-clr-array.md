@@ -4,36 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "array keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["array keyword [C++]"]
 ms.assetid: 36a8883c-2663-43f0-a90c-28f27035e036
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a CLR Array
-The syntax for declaring, instantiating, and initializing a managed array has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for declaring, instantiating, and initializing a managed array has changed from Managed Extensions for C++ to Visual C++.  
   
  The declaration of a CLR array object in Managed Extensions was an extension of the standard array declaration in which a `__gc` keyword was placed between the name of the array object and its possibly comma-filled dimension, as in the following pair of examples:  
   
@@ -56,7 +40,7 @@ Int32 f() [];
 int GetArray() __gc[];  
 ```  
   
- In [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], the declaration is much simpler. For example,  
+ In Visual C++, the declaration is much simpler. For example,  
   
 ```  
 array<Int32>^ f();  
@@ -75,7 +59,7 @@ int GetArray() __gc[] {
 }  
 ```  
   
- is considerably simplified in the new syntax (note that because boxing is implicit in the new syntax, the `__box` operator has been eliminated – see [Value Types and Their Behaviors (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md) for a discussion):  
+ is considerably simplified in the new syntax (note that because boxing is implicit in the new syntax, the `__box` operator has been eliminated - see [Value Types and Their Behaviors (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md) for a discussion):  
   
 ```  
 array<int>^ GetArray() {  

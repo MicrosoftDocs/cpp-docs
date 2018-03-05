@@ -4,31 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["initializer_list/std::initializer_list::initializer_list", "initializer_list/std::initializer_list::begin", "initializer_list/std::initializer_list::end", "initializer_list/std::initializer_list::size"]
+dev_langs: ["C++"]
 ms.assetid: 1f2c0ff4-5636-4f79-b008-e75426e3d2ab
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+helpviewer_keywords: ["std::initializer_list::initializer_list", "std::initializer_list::begin", "std::initializer_list::end", "std::initializer_list::size"]
+ms.workload: ["cplusplus"]
 ---
 # initializer_list Class
 Provides access to an array of elements in which each member is of the specified type.  
@@ -60,7 +47,7 @@ initializer_list<int> i1{ 1, 2, 3, 4 };
   
 |||  
 |-|-|  
-|[initializer_list](../standard-library/forward-list-class.md#forward_list__forward_list)|Constructs an object of type `initializer_list`.|  
+|[initializer_list](../standard-library/forward-list-class.md#forward_list)|Constructs an object of type `initializer_list`.|  
   
 ### Typedefs  
   
@@ -77,16 +64,16 @@ initializer_list<int> i1{ 1, 2, 3, 4 };
   
 |||  
 |-|-|  
-|[begin](#initializer_list__begin)|Returns a pointer to the first element in an `initializer_list`.|  
-|[end](#initializer_list__end)|Returns a pointer to one past the last element in an `initializer_list`.|  
-|[size](#initializer_list__size)|Returns the number of elements in the `initializer_list`.|  
+|[begin](#begin)|Returns a pointer to the first element in an `initializer_list`.|  
+|[end](#end)|Returns a pointer to one past the last element in an `initializer_list`.|  
+|[size](#size)|Returns the number of elements in the `initializer_list`.|  
   
 ## Requirements  
  **Header:** \<initializer_list>  
   
  **Namespace:** std  
   
-##  <a name="initializer_list__begin"></a>  initializer_list::begin  
+##  <a name="begin"></a>  initializer_list::begin  
  Returns a pointer to the first element in an `initializer_list`.  
   
 ```  
@@ -98,7 +85,7 @@ constexpr const InputIterator* begin() const noexcept;
   
 ### Remarks  
   
-##  <a name="initializer_list__end"></a>  initializer_list::end  
+##  <a name="end"></a>  initializer_list::end  
  Returns a pointer to one past the last element in an `initializer list`.  
   
 ```  
@@ -108,7 +95,7 @@ constexpr const InputIterator* end() const noexcept;
 ### Return Value  
  A pointer to one past the last element in the list. If the list is empty, this is the same as the pointer to the first element in the list.  
   
-##  <a name="initializer_list__initializer_list"></a>  initializer_list::initializer_list  
+##  <a name="initializer_list"></a>  initializer_list::initializer_list  
  Constructs an object of type `initializer_list`.  
   
 ```  
@@ -189,7 +176,7 @@ int main()
 c1 = 3c2 = 5 4 3 2 1c3 = 5 4 3 2 1c4 = 5 4c5 = 5 4  
 ```  
   
-##  <a name="initializer_list__size"></a>  initializer_list::size  
+##  <a name="size"></a>  initializer_list::size  
  Returns the number of elements in the list.  
   
 ```  

@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "clog"
-  - "clogf"
-  - "clogl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["clog", "clogf", "clogl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "clog"
-  - "clogf"
-  - "clogl"
-  - "complex/clog"
-  - "complex/clogf"
-  - "complex/clogl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clog function"
-  - "clogf function"
-  - "clogl function"
+f1_keywords: ["clog", "clogf", "clogl", "complex/clog", "complex/clogf", "complex/clogl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clog function", "clogf function", "clogl function"]
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # clog, clogf, clogl
 Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.  
@@ -87,7 +48,7 @@ _Lcomplex clogl(
  The base of the logarithm.  
   
 ## Return Value  
- The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [−iπ, +iπ] along the imaginary axis.  
+ The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.  
   
  The possible return values are:  
   

@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::filesystem_error"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["filesystem/std::experimental::filesystem::filesystem_error"]
+dev_langs: ["C++"]
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # filesystem_error Class
 A base class for all exceptions that are thrown to report a low-level system overflow.  
@@ -87,7 +71,7 @@ const char *what() const noexcept;
  The member function returns a pointer to an NTBS, preferably composed from runtime_error::what(), system_error::what(), mymesg, mypval1.native_string(), and mypval2.native_string().  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem  
   

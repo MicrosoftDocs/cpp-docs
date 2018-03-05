@@ -4,54 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::CRowset::MoveToBookmark"
-  - "ATL::CRowset<TAccessor>::MoveToBookmark"
-  - "ATL.CRowset.MoveToBookmark"
-  - "ATL.CRowset<TAccessor>.MoveToBookmark"
-  - "MoveToBookmark"
-  - "CRowset::MoveToBookmark"
-  - "CRowset.MoveToBookmark"
-  - "CRowset<TAccessor>::MoveToBookmark"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MoveToBookmark method"
+ms.topic: "reference"
+f1_keywords: ["ATL::CRowset::MoveToBookmark", "ATL::CRowset<TAccessor>::MoveToBookmark", "ATL.CRowset.MoveToBookmark", "ATL.CRowset<TAccessor>.MoveToBookmark", "MoveToBookmark", "CRowset::MoveToBookmark", "CRowset.MoveToBookmark", "CRowset<TAccessor>::MoveToBookmark"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MoveToBookmark method"]
 ms.assetid: 90124723-8daf-4692-ae2f-0db26b5db920
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::MoveToBookmark
 Fetches the row marked by a bookmark or the row at a specified offset (`lSkip`) from that bookmark.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveToBookmark(   
-   const CBookmarkBase& bookmark,   
-   LONG lSkip = 0    
-) throw( );  
+```cpp
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark,   
+   LONG lSkip = 0) throw();  
 ```  
   
 #### Parameters  
@@ -59,7 +32,7 @@ Fetches the row marked by a bookmark or the row at a specified offset (`lSkip`) 
  [in] A bookmark marking the location from which you want to fetch data.  
   
  `lSkip`  
- [in] The number count of rows from the bookmark to the target row. If `lSkip` is zero, the first row fetched is the bookmarked row. If `lSkip` is 1, the first row fetched is the row after the bookmarked row. If `lSkip` is –1, the first row fetched is the row before the bookmarked row.  
+ [in] The number count of rows from the bookmark to the target row. If `lSkip` is zero, the first row fetched is the bookmarked row. If `lSkip` is 1, the first row fetched is the row after the bookmarked row. If `lSkip` is -1, the first row fetched is the row before the bookmarked row.  
   
 ## Return Value  
  A standard `HRESULT`.  

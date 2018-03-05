@@ -4,64 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_WM_CREATE"
-  - "ON_WM_COMPACTING"
-  - "ON_WM_CHARTOITEM"
-  - "ON_WM_ASKCBFORMATNAME"
-  - "ON_WM_CTLCOLOR"
-  - "ON_WM_COMPAREITEM"
-  - "ON_WM_CHILDACTIVATE"
-  - "ON_WM_CONTEXTMENU"
-  - "ON_WM_ACTIVATE"
-  - "ON_WM_CANCELMODE"
-  - "ON_WM_CLOSE"
-  - "ON_WM_CAPTURECHANGED"
-  - "ON_WM_ACTIVATEAPP"
-  - "ON_WM_CHAR"
-  - "ON_WM_CHANGECBCHAIN"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_COMPACTING"
-  - "ON_WM_COMPAREITEM"
-  - "ON_WM_CLOSE"
-  - "ON_WM_CTLCOLOR"
-  - "ON_WM_CHAR"
-  - "ON_WM_CAPTURECHANGED"
-  - "ON_WM_CHARTOITEM"
-  - "ON_WM_CREATE"
-  - "ON_WM_ACTIVATE"
-  - "ON_WM_CONTEXTMENU"
-  - "ON_WM_CANCELMODE"
-  - "ON_WM_ASKCBFORMATNAME"
-  - "ON_WM_CHILDACTIVATE"
-  - "WM_ messages"
-  - "ON_WM_ACTIVATEAPP"
-  - "ON_WM_CHANGECBCHAIN"
+f1_keywords: ["ON_WM_CREATE", "ON_WM_COMPACTING", "ON_WM_CHARTOITEM", "ON_WM_ASKCBFORMATNAME", "ON_WM_CTLCOLOR", "ON_WM_COMPAREITEM", "ON_WM_CHILDACTIVATE", "ON_WM_CONTEXTMENU", "ON_WM_ACTIVATE", "ON_WM_CANCELMODE", "ON_WM_CLOSE", "ON_WM_CAPTURECHANGED", "ON_WM_ACTIVATEAPP", "ON_WM_CHAR", "ON_WM_CHANGECBCHAIN"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_COMPACTING [MFC]", "ON_WM_COMPAREITEM [MFC]", "ON_WM_CLOSE [MFC]", "ON_WM_CTLCOLOR [MFC]", "ON_WM_CHAR [MFC]", "ON_WM_CAPTURECHANGED [MFC]", "ON_WM_CHARTOITEM [MFC]", "ON_WM_CREATE [MFC]", "ON_WM_ACTIVATE [MFC]", "ON_WM_CONTEXTMENU [MFC]", "ON_WM_CANCELMODE [MFC]", "ON_WM_ASKCBFORMATNAME [MFC]", "ON_WM_CHILDACTIVATE [MFC]", "WM_ messages [MFC]", "ON_WM_ACTIVATEAPP [MFC]", "ON_WM_CHANGECBCHAIN"]
 ms.assetid: 4e315896-d646-4b87-b0ab-41a4a753b045
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # WM_ Message Handlers: A - C
 The following map entries on the left correspond to the function prototypes on the right:  

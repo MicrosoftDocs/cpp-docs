@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CReBarCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "child windows, rebar controls"
-  - "combo boxes, in rebar controls"
-  - "rebar controls"
+f1_keywords: ["CReBarCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using CReBarCtrl
 A rebar control acts as a container for child windows. These child windows, often other controls, are assigned to a rebar control band. A rebar control can contain one or more bands, with each band having any combination of a gripper bar, a bitmap, a text label, and a child window. However, bands cannot contain more than one child window.  

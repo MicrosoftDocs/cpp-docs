@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/FD"
-  - "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName"
-  - "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/FD compiler option [C++]"
-  - "program database file name [C++]"
-  - "-FD compiler option [C++]"
-  - "PDB files, creating"
-  - "program database compiler option [C++]"
-  - ".pdb files, creating"
-  - "FD compiler option [C++]"
+f1_keywords: ["/FD", "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName", "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/FD compiler option [C++]", "program database file name [C++]", "-FD compiler option [C++]", "PDB files, creating", "program database compiler option [C++]", ".pdb files, creating", "FD compiler option [C++]"]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Fd (Program Database File Name)
 Specifies a file name for the program database (PDB) file created by [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md).  
@@ -52,9 +27,9 @@ Specifies a file name for the program database (PDB) file created by [/Z7, /Zi, 
 ```  
   
 ## Remarks  
- Without **/Fd**, the PDB file name defaults to VC`x`0.pdb., where `x` is the major version of Visual C++ in use.  
+ Without **/Fd**, the PDB file name defaults to VC*x*0.pdb, where *x* is the major version of Visual C++ in use.  
   
- If you specify a path name that does not include a file name (the path ends in backslash), the compiler creates a .pdb file named VC`x`0.pdb. in the specified directory.  
+ If you specify a path name that does not include a file name (the path ends in backslash), the compiler creates a .pdb file named VC*x*0.pdb in the specified directory.  
   
  If you specify a file name that does not include an extension, the compiler uses .pdb as the extension.  
   

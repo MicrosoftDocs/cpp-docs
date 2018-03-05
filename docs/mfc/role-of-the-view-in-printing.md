@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "views, printing"
-  - "OnDraw method, and printing"
-  - "printing [MFC], OnDraw method"
-  - "printing [MFC], views"
-  - "CView class, role in printing"
-  - "printing views"
+dev_langs: ["C++"]
+helpviewer_keywords: ["views [MFC], printing", "OnDraw method [MFC], and printing", "printing [MFC], OnDraw method [MFC]", "printing [MFC], views", "CView class [MFC], role in printing", "printing views [MFC]"]
 ms.assetid: 8d4a3c8e-1fce-4edc-b608-94cb5f3e487e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Role of the View in Printing
 Your view also plays two important roles in printing its associated document.  

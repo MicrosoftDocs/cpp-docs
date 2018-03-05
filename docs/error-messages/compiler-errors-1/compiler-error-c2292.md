@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2292"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2292"
+f1_keywords: ["C2292"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2292"]
 ms.assetid: 256b392f-2b8f-4162-b578-e7633984e162
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2292
 'identifier': best case inheritance representation: 'representation1' declared but 'representation2' required  

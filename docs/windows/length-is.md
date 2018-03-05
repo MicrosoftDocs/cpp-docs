@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.length_is"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "length_is attribute"
+f1_keywords: ["vc-attr.length_is"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["length_is attribute"]
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # length_is
 Specifies the number of array elements to be transmitted.  
@@ -76,5 +59,4 @@ Specifies the number of array elements to be transmitted.
  [first_is](../windows/first-is.md)   
  [max_is](../windows/max-is.md)   
  [last_is](../windows/last-is.md)   
- [size_is](../windows/size-is.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [size_is](../windows/size-is.md)   

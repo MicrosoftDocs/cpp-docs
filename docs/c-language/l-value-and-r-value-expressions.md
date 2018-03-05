@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "L-values"
-  - "member-selection expressions"
-  - "R-value expressions"
-  - "subscript expressions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["L-values", "member-selection expressions", "R-value expressions", "subscript expressions"]
 ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # L-Value and R-Value Expressions
 Expressions that refer to memory locations are called "l-value" expressions. An l-value represents a storage region's "locator" value, or a "left" value, implying that it can appear on the left of the equal sign (**=**). L-values are often identifiers.  
@@ -48,7 +29,7 @@ Expressions that refer to memory locations are called "l-value" expressions. An 
   
 -   A subscript (**[ ]**) expression that does not evaluate to an array  
   
--   A member-selection expression (**–>** or **.**)  
+-   A member-selection expression (**->** or **.**)  
   
 -   A unary-indirection (**\***) expression that does not refer to an array  
   

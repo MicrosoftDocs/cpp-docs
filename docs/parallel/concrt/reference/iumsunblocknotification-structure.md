@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IUMSUnblockNotification"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSUnblockNotification structure"
+ms.topic: "reference"
+f1_keywords: ["IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSUnblockNotification structure"]
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IUMSUnblockNotification Structure
 Represents a notification from the Resource Manager that a thread proxy which blocked and triggered a return to the scheduler's designated scheduling context has unblocked and is ready to be scheduled. This interface is invalid once the thread proxy's associated execution context, returned from the `GetContext` method, is rescheduled.  
@@ -49,8 +32,8 @@ struct IUMSUnblockNotification;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSUnblockNotification::GetContext Method](#getcontext)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
-|[IUMSUnblockNotification::GetNextUnblockNotification Method](#getnextunblocknotification)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
+|[IUMSUnblockNotification::GetContext](#getcontext)|Returns the `IExecutionContext` interface for the execution context associated with the thread proxy which has unblocked. Once this method returns and the underlying execution context has been rescheduled via a call to the `IThreadProxy::SwitchTo` method, this interface is no longer valid.|  
+|[IUMSUnblockNotification::GetNextUnblockNotification](#getnextunblocknotification)|Returns the next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.|  
   
 ## Inheritance Hierarchy  
  `IUMSUnblockNotification`  

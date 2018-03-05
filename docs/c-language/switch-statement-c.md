@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "switch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "switch keyword [C]"
+f1_keywords: ["switch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["switch keyword [C]"]
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # switch Statement (C)
 The `switch` and **case** statements help control complex conditional and branching operations. The `switch` statement transfers control to a statement within its body.  
@@ -126,7 +109,7 @@ switch( i )
 }  
 ```  
   
- In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to –1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.  
+ In this example, a **break** statement follows each statement of the `switch` body. The **break** statement forces an exit from the statement body after one statement is executed. If `i` is equal to -1, only `n` is incremented. The **break** following the statement `n++;` causes execution control to pass out of the statement body, bypassing the remaining statements. Similarly, if `i` is equal to 0, only `z` is incremented; if `i` is equal to 1, only `p` is incremented. The final **break** statement is not strictly necessary, since control passes out of the body at the end of the compound statement, but it is included for consistency.  
   
  A single statement can carry multiple **case** labels, as the following example shows:  
   

@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleServerDoc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "servers, OLE"
-  - "OLE server applications, managing server documents"
-  - "container/server applications"
-  - "OLE server documents"
-  - "COleServerDoc class"
-  - "server documents, OLE"
-  - "OLE containers, server documents"
+f1_keywords: ["COleServerDoc", "AFXOLE/COleServerDoc", "AFXOLE/COleServerDoc::COleServerDoc", "AFXOLE/COleServerDoc::ActivateDocObject", "AFXOLE/COleServerDoc::ActivateInPlace", "AFXOLE/COleServerDoc::DeactivateAndUndo", "AFXOLE/COleServerDoc::DiscardUndoState", "AFXOLE/COleServerDoc::GetClientSite", "AFXOLE/COleServerDoc::GetEmbeddedItem", "AFXOLE/COleServerDoc::GetItemClipRect", "AFXOLE/COleServerDoc::GetItemPosition", "AFXOLE/COleServerDoc::GetZoomFactor", "AFXOLE/COleServerDoc::IsDocObject", "AFXOLE/COleServerDoc::IsEmbedded", "AFXOLE/COleServerDoc::IsInPlaceActive", "AFXOLE/COleServerDoc::NotifyChanged", "AFXOLE/COleServerDoc::NotifyClosed", "AFXOLE/COleServerDoc::NotifyRename", "AFXOLE/COleServerDoc::NotifySaved", "AFXOLE/COleServerDoc::OnDeactivate", "AFXOLE/COleServerDoc::OnDeactivateUI", "AFXOLE/COleServerDoc::OnDocWindowActivate", "AFXOLE/COleServerDoc::OnResizeBorder", "AFXOLE/COleServerDoc::OnShowControlBars", "AFXOLE/COleServerDoc::OnUpdateDocument", "AFXOLE/COleServerDoc::RequestPositionChange", "AFXOLE/COleServerDoc::SaveEmbedding", "AFXOLE/COleServerDoc::ScrollContainerBy", "AFXOLE/COleServerDoc::UpdateAllItems", "AFXOLE/COleServerDoc::CreateInPlaceFrame", "AFXOLE/COleServerDoc::DestroyInPlaceFrame", "AFXOLE/COleServerDoc::GetDocObjectServer", "AFXOLE/COleServerDoc::OnClose", "AFXOLE/COleServerDoc::OnExecOleCmd", "AFXOLE/COleServerDoc::OnFrameWindowActivate", "AFXOLE/COleServerDoc::OnGetEmbeddedItem", "AFXOLE/COleServerDoc::OnReactivateAndUndo", "AFXOLE/COleServerDoc::OnSetHostNames", "AFXOLE/COleServerDoc::OnSetItemRects", "AFXOLE/COleServerDoc::OnShowDocument"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleServerDoc [MFC], COleServerDoc", "COleServerDoc [MFC], ActivateDocObject", "COleServerDoc [MFC], ActivateInPlace", "COleServerDoc [MFC], DeactivateAndUndo", "COleServerDoc [MFC], DiscardUndoState", "COleServerDoc [MFC], GetClientSite", "COleServerDoc [MFC], GetEmbeddedItem", "COleServerDoc [MFC], GetItemClipRect", "COleServerDoc [MFC], GetItemPosition", "COleServerDoc [MFC], GetZoomFactor", "COleServerDoc [MFC], IsDocObject", "COleServerDoc [MFC], IsEmbedded", "COleServerDoc [MFC], IsInPlaceActive", "COleServerDoc [MFC], NotifyChanged", "COleServerDoc [MFC], NotifyClosed", "COleServerDoc [MFC], NotifyRename", "COleServerDoc [MFC], NotifySaved", "COleServerDoc [MFC], OnDeactivate", "COleServerDoc [MFC], OnDeactivateUI", "COleServerDoc [MFC], OnDocWindowActivate", "COleServerDoc [MFC], OnResizeBorder", "COleServerDoc [MFC], OnShowControlBars", "COleServerDoc [MFC], OnUpdateDocument", "COleServerDoc [MFC], RequestPositionChange", "COleServerDoc [MFC], SaveEmbedding", "COleServerDoc [MFC], ScrollContainerBy", "COleServerDoc [MFC], UpdateAllItems", "COleServerDoc [MFC], CreateInPlaceFrame", "COleServerDoc [MFC], DestroyInPlaceFrame", "COleServerDoc [MFC], GetDocObjectServer", "COleServerDoc [MFC], OnClose", "COleServerDoc [MFC], OnExecOleCmd", "COleServerDoc [MFC], OnFrameWindowActivate", "COleServerDoc [MFC], OnGetEmbeddedItem", "COleServerDoc [MFC], OnReactivateAndUndo", "COleServerDoc [MFC], OnSetHostNames", "COleServerDoc [MFC], OnSetItemRects", "COleServerDoc [MFC], OnShowDocument"]
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleServerDoc Class
 The base class for OLE server documents.  
@@ -433,7 +410,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
 ### Remarks  
  The default implementation calls `CDocument::OnCloseDocument`.  
   
- For more information and additional values, see [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information and additional values, see [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) in the Windows SDK.  
   
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
  Called by the framework when the user deactivates an embedded or linked item that is currently in-place active.  
@@ -609,7 +586,7 @@ virtual void OnResizeBorder(
 ### Remarks  
  This function resizes and adjusts toolbars and other user-interface elements in accordance with the new window size.  
   
- For more information, see [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) in the Windows SDK.  
   
  This is an advanced overridable.  
   

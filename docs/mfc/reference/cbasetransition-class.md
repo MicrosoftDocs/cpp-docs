@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBaseTransition"
-  - "afxanimationcontroller/CBaseTransition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CBaseTransition class"
+f1_keywords: ["CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::Clear", "AFXANIMATIONCONTROLLER/CBaseTransition::Create", "AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::GetType", "AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_transition", "AFXANIMATIONCONTROLLER/CBaseTransition::m_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CBaseTransition [MFC], CBaseTransition", "CBaseTransition [MFC], AddToStoryboard", "CBaseTransition [MFC], AddToStoryboardAtKeyframes", "CBaseTransition [MFC], Clear", "CBaseTransition [MFC], Create", "CBaseTransition [MFC], GetEndKeyframe", "CBaseTransition [MFC], GetRelatedVariable", "CBaseTransition [MFC], GetStartKeyframe", "CBaseTransition [MFC], GetTransition", "CBaseTransition [MFC], GetType", "CBaseTransition [MFC], IsAdded", "CBaseTransition [MFC], SetKeyframes", "CBaseTransition [MFC], SetRelatedVariable", "CBaseTransition [MFC], m_bAdded", "CBaseTransition [MFC], m_pEndKeyframe", "CBaseTransition [MFC], m_pRelatedVariable", "CBaseTransition [MFC], m_pStartKeyframe", "CBaseTransition [MFC], m_transition", "CBaseTransition [MFC], m_type"]
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CBaseTransition Class
 Represents a basic transition.  

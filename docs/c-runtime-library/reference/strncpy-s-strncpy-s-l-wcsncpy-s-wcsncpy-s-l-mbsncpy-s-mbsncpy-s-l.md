@@ -4,80 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsncpy_s_l"
-  - "wcsncpy_s"
-  - "_strncpy_s_l"
-  - "strncpy_s"
-  - "_mbsncpy_s"
-  - "_wcsncpy_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsncpy_s"
-  - "_wcsncpy_s_l"
-  - "strncpy_s"
-  - "_strncpy_s_l"
-  - "wcsncpy_s"
-  - "_tcsncpy_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wcsncpy_s_l function"
-  - "_mbsnbcpy_s function"
-  - "_tcsncpy_s_l function"
-  - "mbsncpy_s function"
-  - "strncpy_s_l function"
-  - "_strncpy_s_l function"
-  - "strncpy_s function"
-  - "mbsncpy_s_l function"
-  - "wcsncpy_s function"
-  - "copying strings"
-  - "strings [C++], copying"
-  - "_mbsnbcpy_s_l function"
-  - "_tcsncpy_s function"
-  - "wcsncpy_s_l function"
+f1_keywords: ["_tcsncpy_s", "_wcsncpy_s_l", "strncpy_s", "_strncpy_s_l", "wcsncpy_s", "_tcsncpy_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wcsncpy_s_l function", "_mbsnbcpy_s function", "_tcsncpy_s_l function", "mbsncpy_s function", "strncpy_s_l function", "_strncpy_s_l function", "strncpy_s function", "mbsncpy_s_l function", "wcsncpy_s function", "copying strings", "strings [C++], copying", "_mbsnbcpy_s_l function", "_tcsncpy_s function", "wcsncpy_s_l function"]
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
 caps.latest.revision: 47
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 Copies characters of one string to another.  These versions of [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  `_mbsncpy_s` and `_mbsncpy_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncpy_s` and `_mbsncpy_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -203,7 +150,7 @@ errno_t _mbsncpy_s_l(
   
  means that we are asking `strncpy_s` to copy five characters into a buffer five bytes long; this would leave no space for the null terminator, hence `strncpy_s` zeroes out the string and calls the invalid parameter handler.  
   
- If truncation behavior is needed, use `_TRUNCATE` or (`size` – 1):  
+ If truncation behavior is needed, use `_TRUNCATE` or (`size` - 1):  
   
  `strncpy_s(dst, 5, "a long string", _TRUNCATE);`  
   
@@ -215,7 +162,7 @@ errno_t _mbsncpy_s_l(
   
  If `strDest` or `strSource` is `NULL`, or `numberOfElements` is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.  
   
- `wcsncpy_s` and `_mbsncpy_s` are wide-character and multibyte-character versions of `strncpy_s`. The arguments and return value of `wcsncpy_s` and `mbsncpy_s`do vary accordingly. These six functions behave identically otherwise.  
+ `wcsncpy_s` and `_mbsncpy_s` are wide-character and multibyte-character versions of `strncpy_s`. The arguments and return value of `wcsncpy_s` and `mbsncpy_s` do vary accordingly. These six functions behave identically otherwise.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -413,9 +360,6 @@ After strncpy into middle of string:
 After strncpy_s (with null-termination):  
    'mice'  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

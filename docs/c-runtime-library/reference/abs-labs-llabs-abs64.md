@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "abs"
-  - "_abs64"
-  - "labs"
-  - "llabs"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["abs", "_abs64", "labs", "llabs"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "stdlib/_abs64"
-  - "math/abs"
-  - "_abs64"
-  - "abs"
-  - "labs"
-  - "math/labs"
-  - "llabs"
-  - "math/llabs"
-  - "cmath/abs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "absolute values"
-  - "abs function"
-  - "abs64 function"
-  - "_abs64 function"
-  - "calculating absolute values"
+f1_keywords: ["stdlib/_abs64", "math/abs", "_abs64", "abs", "labs", "math/labs", "llabs", "math/llabs", "cmath/abs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["absolute values", "abs function", "abs64 function", "_abs64 function", "calculating absolute values"]
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # abs, labs, llabs, _abs64
 Calculates the absolute value of the argument.  
@@ -180,9 +136,6 @@ Microsoft implementation-specific results:
  _abs64(_I64_MIN) returns 0x8000000000000000  
   
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Abs](https://msdn.microsoft.com/en-us/library/system.math.abs.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

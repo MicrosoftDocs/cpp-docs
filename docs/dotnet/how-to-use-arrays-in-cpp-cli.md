@@ -1,39 +1,23 @@
 ---
-title: "How to: Use Arrays in C++-CLI | Microsoft Docs"
+title: "How to: Use Arrays in C++/CLI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [C++], single-dimension"
+dev_langs: ["C++"]
+helpviewer_keywords: ["arrays [C++], single-dimension"]
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Arrays in C++/CLI
-This article describes how to use arrays in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+This article describes how to use arrays in C++/CLI.  
   
 ## Single-dimension arrays  
  The following sample shows how to create single-dimension arrays of reference, value, and native pointer types. It also shows how to return a single-dimension array from a function and how to pass a single-dimension array as an argument to a function.  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComSafeArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComSafeArray class"
+f1_keywords: ["CComSafeArray", "ATLSAFE/ATL::CComSafeArray", "ATLSAFE/ATL::CComSafeArray::CComSafeArray", "ATLSAFE/ATL::CComSafeArray::Add", "ATLSAFE/ATL::CComSafeArray::Attach", "ATLSAFE/ATL::CComSafeArray::CopyFrom", "ATLSAFE/ATL::CComSafeArray::CopyTo", "ATLSAFE/ATL::CComSafeArray::Create", "ATLSAFE/ATL::CComSafeArray::Destroy", "ATLSAFE/ATL::CComSafeArray::Detach", "ATLSAFE/ATL::CComSafeArray::GetAt", "ATLSAFE/ATL::CComSafeArray::GetCount", "ATLSAFE/ATL::CComSafeArray::GetDimensions", "ATLSAFE/ATL::CComSafeArray::GetLowerBound", "ATLSAFE/ATL::CComSafeArray::GetSafeArrayPtr", "ATLSAFE/ATL::CComSafeArray::GetType", "ATLSAFE/ATL::CComSafeArray::GetUpperBound", "ATLSAFE/ATL::CComSafeArray::IsSizable", "ATLSAFE/ATL::CComSafeArray::MultiDimGetAt", "ATLSAFE/ATL::CComSafeArray::MultiDimSetAt", "ATLSAFE/ATL::CComSafeArray::Resize", "ATLSAFE/ATL::CComSafeArray::SetAt", "ATLSAFE/ATL::CComSafeArray::m_psa"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComSafeArray class"]
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CComSafeArray Class
 This class is a wrapper for the **SAFEARRAY** structure.  
@@ -456,7 +438,7 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
   
 ### Parameters  
  `alIndex`  
- Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex`[0] *.*  
+ Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex[0]`.  
   
  *t*  
  A reference to the data returned.  

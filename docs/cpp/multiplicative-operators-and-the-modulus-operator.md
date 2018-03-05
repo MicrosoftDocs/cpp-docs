@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "%"
-  - "/"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], multiplicative"
-  - "arithmetic operators [C++], multiplicative operators"
-  - "modulus operator, C+"
-  - "* operator"
-  - "division operator, multiplicative operators"
-  - "% operator"
-  - "multiplication operator [C++], multiplicative operators"
-  - "multiplicative operators [C++]"
-  - "division operator"
+f1_keywords: ["%", "/"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], multiplicative", "arithmetic operators [C++], multiplicative operators", "modulus operator [C++]", "* operator", "division operator [C++], multiplicative operators", "% operator", "multiplication operator [C++], multiplicative operators", "multiplicative operators [C++]", "division operator"]
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Multiplicative Operators and the Modulus Operator
 ## Syntax  
@@ -69,7 +43,7 @@ expression % expression
   
  The division operator yields the result of dividing the first operand by the second.  
   
- The modulus operator yields the remainder given by the following expression, where *e1* is the first operand and *e2* is the second: *e1* – (*e1* / *e2*) \* *e2*, where both operands are of integral types.  
+ The modulus operator yields the remainder given by the following expression, where *e1* is the first operand and *e2* is the second: *e1* - (*e1* / *e2*) \* *e2*, where both operands are of integral types.  
   
  Division by 0 in either a division or a modulus expression is undefined and causes a run-time error. Therefore, the following expressions generate undefined, erroneous results:  
   
@@ -86,8 +60,8 @@ f / 0.0
 ## Microsoft Specific  
  In Microsoft C++, the result of a modulus expression is always the same as the sign of the first operand.  
   
-## END Microsoft Specific  
- If the computed division of two integers is inexact and only one operand is negative, the result is the largest integer (in magnitude, disregarding the sign) that is less than the exact value the division operation would yield. For example, the computed value of –11 / 3 is –3.666666666. The result of that integral division is –3.  
+**END Microsoft Specific**  
+ If the computed division of two integers is inexact and only one operand is negative, the result is the largest integer (in magnitude, disregarding the sign) that is less than the exact value the division operation would yield. For example, the computed value of -11 / 3 is -3.666666666. The result of that integral division is -3.  
   
  The relationship between the multiplicative operators is given by the identity (*e1* / *e2*) \* *e2* + *e1* % *e2* == *e1*.  
   

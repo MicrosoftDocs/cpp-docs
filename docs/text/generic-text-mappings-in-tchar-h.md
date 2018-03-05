@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tchar.h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapping generic-text"
-  - "generic-text mappings [C++]"
-  - "character sets [C++], generic-text mappings"
-  - "Unicode [C++], generic-text mappings"
-  - "MBCS [C++], generic-text mappings"
-  - "TCHAR.H data types, mapping"
-  - "mappings [C++], TCHAR.H"
+f1_keywords: ["tchar.h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapping generic-text", "generic-text mappings [C++]", "character sets [C++], generic-text mappings", "Unicode [C++], generic-text mappings", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
 caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings in Tchar.h
 To simplify the transporting of code for international use, the [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] run-time library provides [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)]-specific generic-text mappings for many data types, routines, and other objects. You can use these mappings, which are defined in Tchar.h, to write generic code that can be compiled for single-byte, multibyte, or [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] character sets, depending on a manifest constant that you define by using a `#define` statement. Generic-text mappings are [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] extensions that are not [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] compatible.  

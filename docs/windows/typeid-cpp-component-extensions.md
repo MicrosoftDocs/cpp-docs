@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "typeid keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["typeid keyword [C++]"]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # typeid  (C++ Component Extensions)
 Gets a value that indicates the type of an object.  
@@ -64,12 +47,12 @@ Platform::Type^ type = T::typeid;
  A type name.  
   
 ### Remarks  
- In [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)],  typeid returns a [Platform::Type](http://msdn.microsoft.com/Library/d6b03f1e-b240-49b9-a08e-53a460030475) that is constructed from runtime type information.  
+ In C++/CX,  typeid returns a [Platform::Type](../cppcx/platform-type-class.md) that is constructed from runtime type information.  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Syntax**  
   
 ```  

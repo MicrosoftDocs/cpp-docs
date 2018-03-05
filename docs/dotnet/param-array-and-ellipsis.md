@@ -4,38 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function overloading, argument matching"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function overloading, argument matching"]
 ms.assetid: 492e3f6c-1c4c-4e0c-a358-72f2d39c30be
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Param Array and Ellipsis
-Precedence of the param array for resolving overloaded function calls has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Precedence of the param array for resolving overloaded function calls has changed from Managed Extensions for C++ to Visual C++.  
   
- In both Managed Extensions and the new syntax, there is no explicit support for the param array that C# and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] support. Instead, one flags an ordinary array with an attribute, as follows:  
+ In both Managed Extensions and the new syntax, there is no explicit support for the param array that C# and Visual Basic support. Instead, one flags an ordinary array with an attribute, as follows:  
   
 ```  
 void Trace1( String* format, [ParamArray]Object* args[] );  
@@ -55,7 +39,7 @@ int fx( [ParamArray] Int32[] ); // 2
 fx( 1, 2 );  
 ```  
   
- resolves to `fx(…)` while in the new syntax, it resolves to the `ParamArray` instance. On the off chance that your program behavior depends on the invocation of the ellipsis instance over that of the `ParamArray`, you will need to modify either the signature or the call.  
+ resolves to `fx(...)` while in the new syntax, it resolves to the `ParamArray` instance. On the off chance that your program behavior depends on the invocation of the ellipsis instance over that of the `ParamArray`, you will need to modify either the signature or the call.  
   
 ## See Also  
  [General Language Changes (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)

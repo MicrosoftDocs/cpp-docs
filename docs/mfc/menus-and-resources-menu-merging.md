@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "status bars, OLE document applications"
-  - "visual editing, application menus and resources"
-  - "coordinating menu layouts"
-  - "OLE containers, menus and resources"
-  - "toolbars [C++], OLE document applications"
-  - "merging toolbar and status bar"
-  - "menus [C++], OLE document applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "coordinating menu layouts [MFC]", "OLE containers [MFC], menus and resources", "toolbars [MFC], OLE document applications", "merging toolbar and status bar [MFC]", "menus [MFC], OLE document applications"]
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Menu Merging
 This article details the steps necessary for OLE document applications to handle visual editing and in-place activation properly. In-place activation poses a challenge for both container and server (component) applications. The user remains in the same frame window (within the context of the container document) but is actually running another application (the server). This requires coordination between the resources of the container and server applications.  
@@ -48,7 +26,7 @@ This article details the steps necessary for OLE document applications to handle
 - [Toolbars and Status Bars](#_core_toolbars_and_status_bars)  
   
 ##  <a name="_core_menu_layouts"></a> Menu Layouts  
- The first step is to coordinate menu layouts. For more information, see the **Menu Creation** section in [Menu Programming Considerations](https://msdn.microsoft.com/library/ms647557.aspx) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ The first step is to coordinate menu layouts. For more information, see the **Menu Creation** section in [Menu Programming Considerations](https://msdn.microsoft.com/library/ms647557.aspx) in the Windows SDK.  
   
  Container applications should create a new menu to be used only when embedded items are activated in place. At the minimum, this menu should consist of the following, in the order listed:  
   
@@ -121,7 +99,7 @@ END
  When an embedded item is activated in place, the framework loads the in-place menu. It then asks the server application for its menu for in-place activation and inserts it where the separators are. This is how the menus combine. You get menus from the container for operating on the file and window placement, and you get menus from the server for operating on the item.  
   
 ##  <a name="_core_toolbars_and_status_bars"></a> Toolbars and Status Bars  
- Server applications should create a new toolbar and store its bitmap in a separate file. The application wizard–generated applications store this bitmap in a file called ITOOLBAR.BMP. The new toolbar replaces the container application's toolbar when your server's item is activated in place, and should contain the same items as your normal toolbar, but remove icons representing items on the File and Window menus.  
+ Server applications should create a new toolbar and store its bitmap in a separate file. The application wizard-generated applications store this bitmap in a file called ITOOLBAR.BMP. The new toolbar replaces the container application's toolbar when your server's item is activated in place, and should contain the same items as your normal toolbar, but remove icons representing items on the File and Window menus.  
   
  This toolbar is loaded in your `COleIPFrameWnd`-derived class, created for you by the application wizard. The status bar is handled by the container application. For more information on the implementation of in-place frame windows, see [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md).  
   

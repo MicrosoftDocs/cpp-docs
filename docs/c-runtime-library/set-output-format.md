@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_set_output_format"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr120.dll"
-  - "msvcr100.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
+apiname: ["_set_output_format"]
+apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "set_output_format"
-  - "_set_output_format"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_TWO_DIGIT_EXPONENT constant"
-  - "output formatting"
-  - "TWO_DIGIT_EXPONENT constant"
-  - "_set_output_format function"
-  - "set_output_format function"
+f1_keywords: ["set_output_format", "_set_output_format"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_TWO_DIGIT_EXPONENT constant", "output formatting", "TWO_DIGIT_EXPONENT constant", "_set_output_format function", "set_output_format function"]
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _set_output_format
 Customizes output formats used by formatted I/O functions.  
@@ -87,12 +56,9 @@ unsigned int _set_output_format(
   
  For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## Example  
   
-```  
+```C  
 // crt_set_output_format.c  
 #include <stdio.h>  
   
@@ -142,5 +108,4 @@ int main()
   
 ## See Also  
  [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   
- [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md)   
  [_get_output_format](../c-runtime-library/get-output-format.md)

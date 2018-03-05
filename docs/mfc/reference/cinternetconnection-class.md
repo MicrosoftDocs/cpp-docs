@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "asynchronous connections"
-  - "CInternetConnection class"
-  - "Internet connections"
+f1_keywords: ["CInternetConnection", "AFXINET/CInternetConnection", "AFXINET/CInternetConnection::CInternetConnection", "AFXINET/CInternetConnection::GetContext", "AFXINET/CInternetConnection::GetServerName", "AFXINET/CInternetConnection::GetSession"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInternetConnection [MFC], CInternetConnection", "CInternetConnection [MFC], GetContext", "CInternetConnection [MFC], GetServerName", "CInternetConnection [MFC], GetSession"]
 ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CInternetConnection Class
 Manages your connection to an Internet server.  

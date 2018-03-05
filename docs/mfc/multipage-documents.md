@@ -4,54 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pagination"
-  - "overriding, View class functions for printing"
-  - "OnPrepareDC method"
-  - "CPrintInfo structure, multipage documents"
-  - "OnEndPrinting method"
-  - "protocols, printing protocol"
-  - "document pages vs. printer pages"
-  - "printer mode"
-  - "printing [MFC], multipage documents"
-  - "printers, printer mode"
-  - "documents, printing"
-  - "OnPreparePrinting method"
-  - "OnPrint method"
-  - "DoPreparePrinting method and pagination"
-  - "OnDraw method, printing"
-  - "pagination, printing multipage documents"
-  - "printing [MFC], protocol"
-  - "pages, printing"
-  - "OnBeginPrinting method"
-  - "multipage documents"
-  - "printing [MFC], pagination"
-  - "documents, paginating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["pagination [MFC]", "overriding [MFC], View class functions for printing", "OnPrepareDC method [MFC]", "CPrintInfo structure [MFC], multipage documents", "OnEndPrinting method [MFC]", "protocols [MFC], printing protocol", "document pages vs. printer pages [MFC]", "printer mode [MFC]", "printing [MFC], multipage documents", "printers [MFC], printer mode", "documents [MFC], printing", "OnPreparePrinting method [MFC]", "OnPrint method [MFC]", "DoPreparePrinting method and pagination [MFC]", "OnDraw method [MFC], printing", "pagination [MFC], printing multipage documents", "printing [MFC], protocol", "pages [MFC], printing", "OnBeginPrinting method [MFC]", "multipage documents [MFC]", "printing [MFC], pagination", "documents [MFC], paginating"]
 ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Multipage Documents
 This article describes the Windows printing protocol and explains how to print documents that contain more than one page. The article covers the following topics:  

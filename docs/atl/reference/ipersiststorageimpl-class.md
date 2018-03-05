@@ -4,46 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IPersistStorageImpl"
-  - "ATL::IPersistStorageImpl<T>"
-  - "ATL.IPersistStorageImpl<T>"
-  - "IPersistStorageImpl"
-  - "ATL.IPersistStorageImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "storage, ATL"
-  - "IPersistStorageImpl class"
+f1_keywords: ["IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl::GetClassID", "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage", "ATLCOM/ATL::IPersistStorageImpl::InitNew", "ATLCOM/ATL::IPersistStorageImpl::IsDirty", "ATLCOM/ATL::IPersistStorageImpl::Load", "ATLCOM/ATL::IPersistStorageImpl::Save", "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IPersistStorageImpl Class
 This class implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -93,7 +71,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
   
 ##  <a name="handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage  
  Instructs the object to release all storage objects and enter HandsOff mode.  
@@ -106,7 +84,7 @@ STDMETHOD(HandsOffStorage)(void);
  Returns `S_OK`.  
   
 ### Remarks  
- See [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage::HandsOffStorage](http://msdn.microsoft.com/library/windows/desktop/ms679742) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistStorageImpl::InitNew  
  Initializes a new storage.  
@@ -118,7 +96,7 @@ STDMETHOD(InitNew)(IStorage*);
 ### Remarks  
  The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
   
- See [IPersistStorage:InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage:InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) in the Windows SDK.  
   
 ##  <a name="isdirty"></a>  IPersistStorageImpl::IsDirty  
  Checks whether the object's data has changed since it was last saved.  
@@ -130,7 +108,7 @@ STDMETHOD(IsDirty)(void);
 ### Remarks  
  The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
   
- See [IPersistStorage:IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage:IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910) in the Windows SDK.  
   
 ##  <a name="load"></a>  IPersistStorageImpl::Load  
  Loads the object's properties from the specified storage.  
@@ -142,7 +120,7 @@ STDMETHOD(Load)(IStorage* pStorage);
 ### Remarks  
  The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. **Load** uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.  
   
- See [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage:Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) in the Windows SDK.  
   
 ##  <a name="save"></a>  IPersistStorageImpl::Save  
  Saves the object's properties to the specified storage.  
@@ -154,7 +132,7 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ### Remarks  
  The ATL implementation delegates to the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface. When **Save** is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to **Save** and in calls to [Load](#load).  
   
- See [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage:Save](http://msdn.microsoft.com/library/windows/desktop/ms680680) in the Windows SDK.  
   
 ##  <a name="savecompleted"></a>  IPersistStorageImpl::SaveCompleted  
  Notifies an object that it can return to Normal mode to write to its storage object.  
@@ -167,7 +145,7 @@ STDMETHOD(SaveCompleted)(IStorage*);
  Returns `S_OK`.  
   
 ### Remarks  
- See [IPersistStorage:SaveCompleted](http://msdn.microsoft.com/library/windows/desktop/ms679713) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStorage:SaveCompleted](http://msdn.microsoft.com/library/windows/desktop/ms679713) in the Windows SDK.  
   
 ## See Also  
  [Storages and Streams](http://msdn.microsoft.com/library/windows/desktop/aa380352)   

@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interacting with users and role of view class"
-  - "drawing, data"
-  - "rendering data"
-  - "view classes, role in managing user interaction"
-  - "CView class, view architecture"
-  - "MFC, views"
-  - "views, using"
-  - "painting data"
-  - "user input, interpreting through view class"
-  - "view classes, role in displaying application data"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interacting with users and role of view class [MFC]", "drawing [MFC], data", "rendering data", "view classes [MFC], role in managing user interaction", "CView class [MFC], view architecture", "MFC, views", "views [MFC], using", "painting data", "user input [MFC], interpreting through view class [MFC]", "view classes [MFC], role in displaying application data"]
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using Views
 The view's responsibilities are to display the document's data graphically to the user and to accept and interpret user input as operations on the document. Your tasks in writing your view class are to:  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "marshal_as"
-  - "msclr.interop.marshal_as"
-  - "msclr::interop::marshal_as"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "marshal_as template [C++]"
+f1_keywords: ["marshal_as", "msclr.interop.marshal_as", "msclr::interop::marshal_as"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["marshal_as template [C++]"]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_as
 This method converts data between native and managed environments.  

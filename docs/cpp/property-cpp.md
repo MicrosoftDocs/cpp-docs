@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "property_cpp"
-  - "Property"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property __declspec keyword"
-  - "__declspec keyword [C++], property"
+f1_keywords: ["property_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property __declspec keyword", "__declspec keyword [C++], property"]
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # property (C++)
 **Microsoft Specific**  
@@ -45,9 +26,9 @@ translation.priority.ht:
   
 ```  
   
-      __declspec( property( get=get_func_name ) ) declarator  
-__declspec( property( put=put_func_name ) ) declarator  
-__declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name ) ) declarator  
+   __declspec( property( put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
 ```  
   
 ## Remarks  

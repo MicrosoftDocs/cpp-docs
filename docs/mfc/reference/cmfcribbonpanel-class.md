@@ -4,38 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonPanel"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonPanel class"
+f1_keywords: ["CMFCRibbonPanel", "AFXRIBBONPANEL/CMFCRibbonPanel", "AFXRIBBONPANEL/CMFCRibbonPanel::CMFCRibbonPanel", "AFXRIBBONPANEL/CMFCRibbonPanel::Add", "AFXRIBBONPANEL/CMFCRibbonPanel::AddSeparator", "AFXRIBBONPANEL/CMFCRibbonPanel::AddToolBar", "AFXRIBBONPANEL/CMFCRibbonPanel::FindByData", "AFXRIBBONPANEL/CMFCRibbonPanel::FindByID", "AFXRIBBONPANEL/CMFCRibbonPanel::GetCaptionHeight", "AFXRIBBONPANEL/CMFCRibbonPanel::GetCount", "AFXRIBBONPANEL/CMFCRibbonPanel::GetData", "AFXRIBBONPANEL/CMFCRibbonPanel::GetDefaultButton", "AFXRIBBONPANEL/CMFCRibbonPanel::GetDroppedDown", "AFXRIBBONPANEL/CMFCRibbonPanel::GetElement", "AFXRIBBONPANEL/CMFCRibbonPanel::GetElements", "AFXRIBBONPANEL/CMFCRibbonPanel::GetElementsByID", "AFXRIBBONPANEL/CMFCRibbonPanel::GetFocused", "AFXRIBBONPANEL/CMFCRibbonPanel::GetGalleryRect", "AFXRIBBONPANEL/CMFCRibbonPanel::GetHighlighted", "AFXRIBBONPANEL/CMFCRibbonPanel::GetIndex", "AFXRIBBONPANEL/CMFCRibbonPanel::GetItemIDsList", "AFXRIBBONPANEL/CMFCRibbonPanel::GetName", "AFXRIBBONPANEL/CMFCRibbonPanel::GetParentButton", "AFXRIBBONPANEL/CMFCRibbonPanel::GetParentCategory", "AFXRIBBONPANEL/CMFCRibbonPanel::GetParentMenuBar", "AFXRIBBONPANEL/CMFCRibbonPanel::GetPreferedMenuLocation", "AFXRIBBONPANEL/CMFCRibbonPanel::GetPressed", "AFXRIBBONPANEL/CMFCRibbonPanel::GetRect", "AFXRIBBONPANEL/CMFCRibbonPanel::GetVisibleElements", "AFXRIBBONPANEL/CMFCRibbonPanel::HasElement", "AFXRIBBONPANEL/CMFCRibbonPanel::HitTest", "AFXRIBBONPANEL/CMFCRibbonPanel::HitTestEx", "AFXRIBBONPANEL/CMFCRibbonPanel::Insert", "AFXRIBBONPANEL/CMFCRibbonPanel::InsertSeparator", "AFXRIBBONPANEL/CMFCRibbonPanel::IsCenterColumnVert", "AFXRIBBONPANEL/CMFCRibbonPanel::IsCollapsed", "AFXRIBBONPANEL/CMFCRibbonPanel::IsHighlighted", "AFXRIBBONPANEL/CMFCRibbonPanel::IsJustifyColumns", "AFXRIBBONPANEL/CMFCRibbonPanel::IsMainPanel", "AFXRIBBONPANEL/CMFCRibbonPanel::IsMenuMode", "AFXRIBBONPANEL/CMFCRibbonPanel::MakeGalleryItemVisible", "AFXRIBBONPANEL/CMFCRibbonPanel::OnKey", "AFXRIBBONPANEL/CMFCRibbonPanel::RecalcWidths", "AFXRIBBONPANEL/CMFCRibbonPanel::Remove", "AFXRIBBONPANEL/CMFCRibbonPanel::RemoveAll", "AFXRIBBONPANEL/CMFCRibbonPanel::Replace", "AFXRIBBONPANEL/CMFCRibbonPanel::ReplaceByID", "AFXRIBBONPANEL/CMFCRibbonPanel::SetCenterColumnVert", "AFXRIBBONPANEL/CMFCRibbonPanel::SetData", "AFXRIBBONPANEL/CMFCRibbonPanel::SetElementMenu", "AFXRIBBONPANEL/CMFCRibbonPanel::SetElementRTC", "AFXRIBBONPANEL/CMFCRibbonPanel::SetElementRTCByID", "AFXRIBBONPANEL/CMFCRibbonPanel::SetFocused", "AFXRIBBONPANEL/CMFCRibbonPanel::SetJustifyColumns", "AFXRIBBONPANEL/CMFCRibbonPanel::SetKeys", "AFXRIBBONPANEL/CMFCRibbonPanel::ShowPopup"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonPanel [MFC], CMFCRibbonPanel", "CMFCRibbonPanel [MFC], Add", "CMFCRibbonPanel [MFC], AddSeparator", "CMFCRibbonPanel [MFC], AddToolBar", "CMFCRibbonPanel [MFC], FindByData", "CMFCRibbonPanel [MFC], FindByID", "CMFCRibbonPanel [MFC], GetCaptionHeight", "CMFCRibbonPanel [MFC], GetCount", "CMFCRibbonPanel [MFC], GetData", "CMFCRibbonPanel [MFC], GetDefaultButton", "CMFCRibbonPanel [MFC], GetDroppedDown", "CMFCRibbonPanel [MFC], GetElement", "CMFCRibbonPanel [MFC], GetElements", "CMFCRibbonPanel [MFC], GetElementsByID", "CMFCRibbonPanel [MFC], GetFocused", "CMFCRibbonPanel [MFC], GetGalleryRect", "CMFCRibbonPanel [MFC], GetHighlighted", "CMFCRibbonPanel [MFC], GetIndex", "CMFCRibbonPanel [MFC], GetItemIDsList", "CMFCRibbonPanel [MFC], GetName", "CMFCRibbonPanel [MFC], GetParentButton", "CMFCRibbonPanel [MFC], GetParentCategory", "CMFCRibbonPanel [MFC], GetParentMenuBar", "CMFCRibbonPanel [MFC], GetPreferedMenuLocation", "CMFCRibbonPanel [MFC], GetPressed", "CMFCRibbonPanel [MFC], GetRect", "CMFCRibbonPanel [MFC], GetVisibleElements", "CMFCRibbonPanel [MFC], HasElement", "CMFCRibbonPanel [MFC], HitTest", "CMFCRibbonPanel [MFC], HitTestEx", "CMFCRibbonPanel [MFC], Insert", "CMFCRibbonPanel [MFC], InsertSeparator", "CMFCRibbonPanel [MFC], IsCenterColumnVert", "CMFCRibbonPanel [MFC], IsCollapsed", "CMFCRibbonPanel [MFC], IsHighlighted", "CMFCRibbonPanel [MFC], IsJustifyColumns", "CMFCRibbonPanel [MFC], IsMainPanel", "CMFCRibbonPanel [MFC], IsMenuMode", "CMFCRibbonPanel [MFC], MakeGalleryItemVisible", "CMFCRibbonPanel [MFC], OnKey", "CMFCRibbonPanel [MFC], RecalcWidths", "CMFCRibbonPanel [MFC], Remove", "CMFCRibbonPanel [MFC], RemoveAll", "CMFCRibbonPanel [MFC], Replace", "CMFCRibbonPanel [MFC], ReplaceByID", "CMFCRibbonPanel [MFC], SetCenterColumnVert", "CMFCRibbonPanel [MFC], SetData", "CMFCRibbonPanel [MFC], SetElementMenu", "CMFCRibbonPanel [MFC], SetElementRTC", "CMFCRibbonPanel [MFC], SetElementRTCByID", "CMFCRibbonPanel [MFC], SetFocused", "CMFCRibbonPanel [MFC], SetJustifyColumns", "CMFCRibbonPanel [MFC], SetKeys", "CMFCRibbonPanel [MFC], ShowPopup"]
 ms.assetid: 51d70749-1140-4386-b103-f14082049ba6
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonPanel Class
 Implements a panel that contains a set of ribbon elements. When the panel is drawn, it displays as many elements as possible, given the size of the panel.  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 
   
 ## Syntax  
   
@@ -389,7 +375,7 @@ LPCTSTR GetName() const;
 ### Remarks  
   
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonBaseElement* GetParentButton() const;  
@@ -410,7 +396,7 @@ CMFCRibbonCategory* GetParentCategory() const;
  A pointer to the ribbon category that contains this ribbon panel.  
   
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;  
@@ -635,7 +621,7 @@ virtual BOOL IsMainPanel() const;
  The main ribbon panel is displayed when the user selects the application button.  
   
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMenuMode() const;  
@@ -646,7 +632,7 @@ BOOL IsMenuMode() const;
 ### Remarks  
   
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnKey(UINT nChar);

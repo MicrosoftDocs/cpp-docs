@@ -2,23 +2,20 @@
 title: "Platform::Details Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Details"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Details Namespace"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Details"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Details Namespace"]
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace
 This namespace is intended for internal use only, and is not intended to be used for development.  
@@ -32,7 +29,7 @@ namespace Platform {
 }}  
 ```  
   
-## Members  
+### Members  
  Although this namespace is intended for internal use, browsers can display the following members of this namespace.  
   
 |Name|Remark|  
@@ -53,7 +50,7 @@ namespace Platform {
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

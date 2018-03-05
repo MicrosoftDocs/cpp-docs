@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pasting Clipboard data"
-  - "CRichEditCtrl class, paste operation"
-  - "cut operation in CRichEditCtrl class"
-  - "CRichEditCtrl class, Clipboard operations"
-  - "copy operations in rich edit controls"
-  - "Clipboard, operations in CRichEditCtrl"
-  - "rich edit controls, Clipboard operations"
+dev_langs: ["C++"]
+helpviewer_keywords: ["pasting Clipboard data", "CRichEditCtrl class [MFC], paste operation", "cut operation in CRichEditCtrl class [MFC]", "CRichEditCtrl class [MFC], Clipboard operations", "copy operations in rich edit controls", "Clipboard, operations in CRichEditCtrl", "rich edit controls [MFC], Clipboard operations"]
 ms.assetid: 15ce66bc-2636-4a35-a2ae-d52285dc1af6
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Clipboard Operations in Rich Edit Controls
 Your application can paste the contents of the Clipboard into a rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) using either the best available Clipboard format or a specific Clipboard format. You can also determine whether a rich edit control is capable of pasting a Clipboard format.  

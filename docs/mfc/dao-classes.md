@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.data"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "database classes [C++], DAO"
-  - "DAO [C++], classes"
+f1_keywords: ["vc.classes.data"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # DAO Classes
 These classes work with the other application framework classes to give easy access to Data Access Object (DAO) databases, which use the same database engine as Microsoft Visual Basic and Microsoft Access. The DAO classes can also access a wide variety of databases for which Open Database Connectivity (ODBC) drivers are available.  
@@ -41,7 +23,7 @@ These classes work with the other application framework classes to give easy acc
  Programs that use DAO databases will have at least a `CDaoDatabase` object and a `CDaoRecordset` object.  
   
 > [!NOTE]
->  As of Visual C++ .NET, the Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.  
+>  The Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use ODBC for new MFC projects. You should only use DAO in maintaining existing applications.  
   
  [CDaoWorkspace](../mfc/reference/cdaoworkspace-class.md)  
  Manages a named, password-protected database session from login to logoff. Most programs use the default workspace.  

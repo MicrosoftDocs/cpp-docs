@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAccelerateDecelerateTransition"
-  - "afxanimationcontroller/CAccelerateDecelerateTransition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAccelerateDecelerateTransition class"
+f1_keywords: ["CAccelerateDecelerateTransition", "afxanimationcontroller/CAccelerateDecelerateTransition"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAccelerateDecelerateTransition class [MFC]"]
 ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAccelerateDecelerateTransition Class
 Implements an accelerate-decelerate transition.  

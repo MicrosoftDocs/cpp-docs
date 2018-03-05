@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "::"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scope, scope resolution operator"
-  - "operators [C++], scope resolution"
-  - "scope resolution operator"
-  - ":: operator"
+f1_keywords: ["::"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", ":: operator"]
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Scope Resolution Operator: ::
 The scope resolution operator `::` is used to identify and disambiguate identifiers used in different scopes. For more information about scope, see [Scope](../cpp/scope-visual-cpp.md).  

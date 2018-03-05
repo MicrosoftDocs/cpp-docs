@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "__security_init_cookie"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["__security_init_cookie"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "security_init_cookie"
-  - "__security_init_cookie"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "security cookie [C++]"
-  - "__security_init_cookie function"
-  - "security_init_cookie function"
-  - "global security cookie"
+f1_keywords: ["security_init_cookie", "__security_init_cookie"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["security cookie [C++]", "__security_init_cookie function", "security_init_cookie function", "global security cookie"]
 ms.assetid: 32119905-0897-4a1c-84ca-bffd16c9b2af
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __security_init_cookie
 Initializes the global security cookie.  
@@ -79,8 +47,5 @@ void __security_init_cookie(void);
   
  `__security_init_cookie` is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- Not applicable. This function should only be called from native code, not managed code.  
-  
 ## See Also  
- [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260)
+ [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)

@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["forward_list/std::swap"]
 ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 caps.latest.revision: 11
 manager: "ghogen"

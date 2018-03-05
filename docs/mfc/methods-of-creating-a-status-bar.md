@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStatusBar class, vs. CStatusBarCtrl"
-  - "methods [MFC], creating status bars"
-  - "CStatusBarCtrl class, vs. CStatusBar"
-  - "CStatusBarCtrl class, creating"
-  - "methods [MFC]"
-  - "status bars, creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatusBar class [MFC], vs. CStatusBarCtrl", "methods [MFC], creating status bars", "CStatusBarCtrl class [MFC], vs. CStatusBar", "CStatusBarCtrl class [MFC], creating", "methods [MFC]", "status bars [MFC], creating"]
 ms.assetid: 9aeaf290-7099-4762-a5ba-9c26705333c9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Methods of Creating a Status Bar
 MFC provides two classes to create status bars: [CStatusBar](../mfc/reference/cstatusbar-class.md) and [CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md) (which wraps the Windows common control API). `CStatusBar` provides all of the functionality of the status bar common control, it automatically interacts with menus and toolbars, and it handles many of the required common control settings and structures for you; however, your resulting executable usually will be larger than that created by using `CStatusBarCtrl`.  

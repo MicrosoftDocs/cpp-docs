@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<thread>"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["<thread>"]
+dev_langs: ["C++"]
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;thread&gt;
 Include the standard header \<thread> to define the class `thread` and various supporting functions.  
@@ -66,23 +50,23 @@ Include the standard header \<thread> to define the class `thread` and various s
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_id Function](../standard-library/thread-functions.md#get_id_function)|Uniquely identifies the current thread of execution.|  
-|[sleep_for Function](../standard-library/thread-functions.md#sleep_for_function)|Blocks the calling thread.|  
-|[sleep_until Function](../standard-library/thread-functions.md#sleep_until_function)|Blocks the calling thread at least until the specified time.|  
-|[swap Function](../standard-library/thread-functions.md#swap_function)|Exchanges the states of two `thread` objects.|  
-|[yield Function](../standard-library/thread-functions.md#yield_function)|Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.|  
+|[get_id](../standard-library/thread-functions.md#get_id)|Uniquely identifies the current thread of execution.|  
+|[sleep_for](../standard-library/thread-functions.md#sleep_for)|Blocks the calling thread.|  
+|[sleep_until](../standard-library/thread-functions.md#sleep_until)|Blocks the calling thread at least until the specified time.|  
+|[swap](../standard-library/thread-functions.md#swap)|Exchanges the states of two `thread` objects.|  
+|[yield](../standard-library/thread-functions.md#yield)|Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator>= Operator](../standard-library/thread-operators.md#operator_gt__eq)|Determines whether one `thread::id` object is greater than or equal to another.|  
-|[operator> Operator](../standard-library/thread-operators.md#operator_gt_)|Determines whether one `thread::id` object is greater than another.|  
-|[operator<= Operator](../standard-library/thread-operators.md#operator_lt__eq)|Determines whether one `thread::id` object is less than or equal to another.|  
-|[operator< Operator](../standard-library/thread-operators.md#operator_lt_)|Determines whether one `thread::id` object is less than another.|  
-|[operator!= Operator](../standard-library/thread-operators.md#operator_neq)|Compares two `thread::id` objects for inequality.|  
-|[operator== Operator](../standard-library/thread-operators.md#operator_eq_eq)|Compares two `thread::id` objects for equality.|  
-|[operator<< Operator](../standard-library/thread-operators.md#operator_lt__lt_)|Inserts a text representation of a `thread::id` object into a stream.|  
+|[operator>= Operator](../standard-library/thread-operators.md#op_gt_eq)|Determines whether one `thread::id` object is greater than or equal to another.|  
+|[operator> Operator](../standard-library/thread-operators.md#op_gt)|Determines whether one `thread::id` object is greater than another.|  
+|[operator<= Operator](../standard-library/thread-operators.md#op_lt_eq)|Determines whether one `thread::id` object is less than or equal to another.|  
+|[operator< Operator](../standard-library/thread-operators.md#op_lt)|Determines whether one `thread::id` object is less than another.|  
+|[operator!= Operator](../standard-library/thread-operators.md#op_neq)|Compares two `thread::id` objects for inequality.|  
+|[operator== Operator](../standard-library/thread-operators.md#op_eq_eq)|Compares two `thread::id` objects for equality.|  
+|[operator<< Operator](../standard-library/thread-operators.md#op_lt_lt)|Inserts a text representation of a `thread::id` object into a stream.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

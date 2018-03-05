@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "match_results"
-  - "std::match_results"
-  - "regex/std::match_results"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "match_results class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::match_results"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["match_results class"]
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # match_results Class
 Holds a sequence of submatches.  
@@ -92,7 +73,7 @@ class match_results {
   
  **Namespace:** std  
   
-##  <a name="match_results__allocator_type"></a>  match_results::allocator_type  
+##  <a name="allocator_type"></a>  match_results::allocator_type  
  The type of an allocator for managing storage.  
   
 ```  
@@ -211,7 +192,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__begin"></a>  match_results::begin  
+##  <a name="begin"></a>  match_results::begin  
  Designates beginning of submatch sequence.  
   
 ```  
@@ -330,7 +311,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__char_type"></a>  match_results::char_type  
+##  <a name="char_type"></a>  match_results::char_type  
  The type of an element.  
   
 ```  
@@ -449,7 +430,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__const_iterator"></a>  match_results::const_iterator  
+##  <a name="const_iterator"></a>  match_results::const_iterator  
  The const iterator type for submatches.  
   
 ```  
@@ -568,7 +549,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__const_reference"></a>  match_results::const_reference  
+##  <a name="const_reference"></a>  match_results::const_reference  
  The type of an element const reference.  
   
 ```  
@@ -687,7 +668,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__difference_type"></a>  match_results::difference_type  
+##  <a name="difference_type"></a>  match_results::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -806,7 +787,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__empty"></a>  match_results::empty  
+##  <a name="empty"></a>  match_results::empty  
  Tests for no submatches.  
   
 ```  
@@ -925,7 +906,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__end"></a>  match_results::end  
+##  <a name="end"></a>  match_results::end  
  Designates end of submatch sequence.  
   
 ```  
@@ -1044,7 +1025,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__format"></a>  match_results::format  
+##  <a name="format"></a>  match_results::format  
  Formats submatches.  
   
 ```  
@@ -1183,7 +1164,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__get_allocator"></a>  match_results::get_allocator  
+##  <a name="get_allocator"></a>  match_results::get_allocator  
  Returns the stored allocator.  
   
 ```  
@@ -1302,7 +1283,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__iterator"></a>  match_results::iterator  
+##  <a name="iterator"></a>  match_results::iterator  
  The iterator type for submatches.  
   
 ```  
@@ -1421,7 +1402,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__length"></a>  match_results::length  
+##  <a name="length"></a>  match_results::length  
  Returns length of a submatch.  
   
 ```  
@@ -1544,7 +1525,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__match_results"></a>  match_results::match_results  
+##  <a name="match_results"></a>  match_results::match_results  
  Constructs the object.  
   
 ```  
@@ -1672,7 +1653,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__max_size"></a>  match_results::max_size  
+##  <a name="max_size"></a>  match_results::max_size  
  Gets largest number of submatches.  
   
 ```  
@@ -1791,7 +1772,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__operator_eq"></a>  match_results::operator=  
+##  <a name="op_eq"></a>  match_results::operator=  
  Copy a match_results object.  
   
 ```  
@@ -1914,7 +1895,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__operator_at"></a>  match_results::operator[]  
+##  <a name="op_at"></a>  match_results::operator[]  
  Access a subobject.  
   
 ```  
@@ -2037,7 +2018,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__position"></a>  match_results::position  
+##  <a name="position"></a>  match_results::position  
  Get starting offset of a subgroup.  
   
 ```  
@@ -2160,7 +2141,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__prefix"></a>  match_results::prefix  
+##  <a name="prefix"></a>  match_results::prefix  
  Gets sequence before first submatch.  
   
 ```  
@@ -2279,7 +2260,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__reference"></a>  match_results::reference  
+##  <a name="reference"></a>  match_results::reference  
  The type of an element reference.  
   
 ```  
@@ -2398,7 +2379,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__size"></a>  match_results::size  
+##  <a name="size"></a>  match_results::size  
  Counts number of submatches.  
   
 ```  
@@ -2517,7 +2498,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__size_type"></a>  match_results::size_type  
+##  <a name="size_type"></a>  match_results::size_type  
  The type of a submatch count.  
   
 ```  
@@ -2636,7 +2617,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__str"></a>  match_results::str  
+##  <a name="str"></a>  match_results::str  
  Returns a submatch.  
   
 ```  
@@ -2759,7 +2740,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__string_type"></a>  match_results::string_type  
+##  <a name="string_type"></a>  match_results::string_type  
  The type of a string.  
   
 ```  
@@ -2878,7 +2859,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__suffix"></a>  match_results::suffix  
+##  <a name="suffix"></a>  match_results::suffix  
  Gets sequence after last submatch.  
   
 ```  
@@ -2997,7 +2978,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__swap"></a>  match_results::swap  
+##  <a name="swap"></a>  match_results::swap  
  Swaps two match_results objects.  
   
 ```  
@@ -3120,7 +3101,7 @@ next submatch: matched == false
 empty == false  
 ```  
   
-##  <a name="match_results__value_type"></a>  match_results::value_type  
+##  <a name="value_type"></a>  match_results::value_type  
  The type of a submatch.  
   
 ```  

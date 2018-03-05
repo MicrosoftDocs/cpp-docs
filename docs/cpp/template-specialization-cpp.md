@@ -4,35 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "partial specialization of class templates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["partial specialization of class templates"]
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Template Specialization (C++)
+
 Class templates can be partially specialized, and the resulting class is still a template. Partial specialization allows template code to be partially customized for specific types in situations, such as:  
   
 -   A template has multiple types and only some of them need to be specialized. The result is a template parameterized on the remaining types.  
@@ -41,7 +26,7 @@ Class templates can be partially specialized, and the resulting class is still a
   
 ## Example  
   
-```  
+```cpp
 // partial_specialization_of_class_templates.cpp  
 template <class T> struct PTS {  
    enum {  
@@ -88,10 +73,11 @@ PTS<S*>::IsPointer == 1 PTS<S*>::IsPointerToDataMember ==0
 PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1  
 ```  
   
-## Example  
- If you have a template collection class that takes any type **T**, you can create a partial specialization that takes any pointer type **T\***. The following code demonstrates a collection class template `Bag` and a partial specialization for pointer types in which the collection dereferences the pointer types before copying them to the array. The collection then stores the values that are pointed to. With the original template, only the pointers themselves would have been stored in the collection, leaving the data vulnerable to deletion or modification. In this special pointer version of the collection, code to check for a null pointer in the `add` method is added.  
+## Example
+
+ If you have a template collection class that takes any type **T**, you can create a partial specialization that takes any pointer type **T***. The following code demonstrates a collection class template `Bag` and a partial specialization for pointer types in which the collection dereferences the pointer types before copying them to the array. The collection then stores the values that are pointed to. With the original template, only the pointers themselves would have been stored in the collection, leaving the data vulnerable to deletion or modification. In this special pointer version of the collection, code to check for a null pointer in the `add` method is added.  
   
-```  
+```cpp
 // partial_specialization_of_class_templates2.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -199,10 +185,11 @@ Null pointer!
 3 87 8 100   
 ```  
   
-## Example  
+## Example
+
  The following example defines a template class that takes pairs of any two types and then defines a partial specialization of that template class specialized so that one of the types is `int`. The specialization defines an additional sort method that implements a simple bubble sort based on the integer.  
   
-```  
+```cpp
 // partial_specialization_of_class_templates3.cpp  
 // compile with: /EHsc  
 #include <iostream>  

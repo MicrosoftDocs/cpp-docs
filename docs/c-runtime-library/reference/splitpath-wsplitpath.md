@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wsplitpath"
-  - "_splitpath"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wsplitpath", "_splitpath"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wsplitpath"
-  - "_splitpath"
-  - "splitpath"
-  - "_wsplitpath"
-  - "_tsplitpath"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_splitpath function"
-  - "pathnames"
-  - "wsplitpath function"
-  - "splitpath function"
-  - "_wsplitpath function"
-  - "tsplitpath function"
-  - "path names"
-  - "_tsplitpath function"
+f1_keywords: ["wsplitpath", "_splitpath", "splitpath", "_wsplitpath", "_tsplitpath"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_splitpath function", "pathnames", "wsplitpath function", "splitpath function", "_wsplitpath function", "tsplitpath function", "path names", "_tsplitpath function"]
 ms.assetid: 32bd76b5-1385-4ee8-a64c-abcb541cd2e4
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _splitpath, _wsplitpath
 Break a path name into components. More secure versions of these functions are available, see [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).  
@@ -140,9 +99,6 @@ void _wsplitpath(
   
 ## Example  
  See the example for [_makepath](../../c-runtime-library/reference/makepath-wmakepath.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

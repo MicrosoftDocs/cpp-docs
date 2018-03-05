@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4637"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4637"
+f1_keywords: ["C4637"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4637"]
 ms.assetid: 5fd347c1-2de9-408f-9136-1bf1ff273622
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4637
 XML document comment target: \<include> tag discarded.  reason  

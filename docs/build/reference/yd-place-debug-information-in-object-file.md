@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/yd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Yd compiler option [C++]"
-  - "-Yd compiler option [C++]"
-  - "debugging [C++], debug information files"
-  - "Yd compiler option [C++]"
+f1_keywords: ["/yd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Yd compiler option [C++]", "-Yd compiler option [C++]", "debugging [C++], debug information files", "Yd compiler option [C++]"]
 ms.assetid: c5a699fe-65ce-461e-964c-7f5eb2a8320a
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Yd (Place Debug Information in Object File)
 Paces complete debugging information in all object files created from a precompiled header (.pch) file when used with the [/Yc](../../build/reference/yc-create-precompiled-header-file.md) and [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) options. Deprecated.  
@@ -47,7 +27,7 @@ Paces complete debugging information in all object files created from a precompi
 ```  
   
 ## Remarks  
- **/Yd** is deprecated; [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] now supports multiple objects writing to a single .pdb file, use **/Zi** instead. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ **/Yd** is deprecated; [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] now supports multiple objects writing to a single .pdb file, use **/Zi** instead. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
  Unless you need to distribute a library containing debugging information, use the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) option rather than **/Z7** and **/Yd**.  
   

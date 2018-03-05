@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tool tips [C++], adding to toolbar buttons"
-  - "\n in tool tip"
-  - "toolbar buttons [C++], tool tips"
-  - "buttons [C++], tool tips"
-  - "Toolbar editor, creating tool tips"
+dev_langs: ["C++"]
+helpviewer_keywords: ["tool tips [C++], adding to toolbar buttons", "\n in tool tip", "toolbar buttons [C++], tool tips", "buttons [C++], tool tips", "Toolbar editor, creating tool tips"]
 ms.assetid: 0af65342-fd78-4e78-8d0d-dc68f7fc462e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Tool Tip for a Toolbar Button
 ### To create a tool tip  
@@ -51,7 +31,7 @@ translation.priority.ht:
   
  3. Notice that the word 'Print' now is floating under your mouse pointer.  
   
- 4. Look at the status bar (at the very bottom of the WordPad window) – notice that it now shows the text "Prints the active document".  
+ 4. Look at the status bar (at the very bottom of the WordPad window) - notice that it now shows the text "Prints the active document".  
   
  The 'Print' in Step 3 is the "Tool tip name," and the 'Prints the active document' from Step 4 is the "description of the button for the status bar."  
   
@@ -60,7 +40,7 @@ translation.priority.ht:
 > [!NOTE]
 >  You can edit prompt text using the [Properties Window](/visualstudio/ide/reference/properties-window).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
  Requirements  
   

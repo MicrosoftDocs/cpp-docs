@@ -4,54 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.deprecated"
-  - "deprecated_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deprecated pragma"
-  - "pragmas, deprecated"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.deprecated", "deprecated_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["deprecated pragma", "pragmas, deprecated"]
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # deprecated (C/C++)
 The **deprecated** pragma lets you indicate that a function, type, or any other identifier may no longer be supported in a future release or should no longer be used.  
+> [!NOTE]
+> For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs the Microsoft declspec or pragma, see [C++ Standard Attributes](../cpp/attributes2.md) attribute.
   
 ## Syntax  
   
 ```  
-  
 #pragma deprecated( identifier1 [,identifier2, ...] )  
 ```  
   
 ## Remarks  
- When the compiler encounters a deprecated symbol, it issues [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).  
+ When the compiler encounters an identifier specified by a **deprecated** pragma, it issues compiler warning [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).   
   
  You can deprecate macro names. Place the macro name in quotes or else macro expansion will occur.  
   
- The [deprecated](../cpp/deprecated-cpp.md) `__declspec` modifier allows you to specify deprecated status for particular forms of overloaded functions.  
+ Because the **deprecated** pragma works on all matching identifiers, and does not take signatures into account, it is not the best option for deprecating specific versions of overloaded functions. Any matching function name that is brought into scope triggers the warning.
+
+  We recommend you use the C++14 `[[deprecated]]` attribute, when possible, instead of the **deprecated** pragma. The Microsoft-specific [__declspec(deprecated)](../cpp/deprecated-cpp.md) declaration modifier is also a better choice in many cases than the **deprecated** pragma. The `[[deprecated]]` attribute and `__declspec(deprecated)` modifier allow you to specify deprecated status for particular forms of overloaded functions. The diagnostic warning only appears on references to the specific overloaded function the attribute or modifier applies to.  
   
 ## Example  
   

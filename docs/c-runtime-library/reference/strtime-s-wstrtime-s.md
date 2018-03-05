@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wstrtime_s"
-  - "_strtime_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wstrtime_s", "_strtime_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wstrtime_s"
-  - "strtime_s"
-  - "wstrtime_s"
-  - "_strtime_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wstrtime_s function"
-  - "copying time to buffers"
-  - "strtime_s function"
-  - "_wstrtime_s function"
-  - "time, copying"
-  - "_strtime_s function"
+f1_keywords: ["_wstrtime_s", "strtime_s", "wstrtime_s", "_strtime_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wstrtime_s function", "copying time to buffers", "strtime_s function", "_wstrtime_s function", "time, copying", "_strtime_s function"]
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strtime_s, _wstrtime_s
 Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](../../c-runtime-library/reference/strtime-wstrtime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -109,7 +71,7 @@ errno_t _wstrtime_s(
  Passing a value for `numberOfElements` that is greater than the actual size of the buffer will result in buffer overrun.  
   
 ## Remarks  
- These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by `timestr`*.* The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.  
+ These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.  
   
  `_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.  
   
@@ -172,18 +134,6 @@ int main()
 OS time:            14:37:49  
 OS date:            04/25/03  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::ToLongDateString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongdatestring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortDateString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

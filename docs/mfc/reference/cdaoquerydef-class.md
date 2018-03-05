@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoQueryDef"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "QueryDef objects"
-  - "CDaoQueryDef class"
-  - "queries [Visual Studio], defining"
+f1_keywords: ["CDaoQueryDef", "AFXDAO/CDaoQueryDef", "AFXDAO/CDaoQueryDef::CDaoQueryDef", "AFXDAO/CDaoQueryDef::Append", "AFXDAO/CDaoQueryDef::CanUpdate", "AFXDAO/CDaoQueryDef::Close", "AFXDAO/CDaoQueryDef::Create", "AFXDAO/CDaoQueryDef::Execute", "AFXDAO/CDaoQueryDef::GetConnect", "AFXDAO/CDaoQueryDef::GetDateCreated", "AFXDAO/CDaoQueryDef::GetDateLastUpdated", "AFXDAO/CDaoQueryDef::GetFieldCount", "AFXDAO/CDaoQueryDef::GetFieldInfo", "AFXDAO/CDaoQueryDef::GetName", "AFXDAO/CDaoQueryDef::GetODBCTimeout", "AFXDAO/CDaoQueryDef::GetParameterCount", "AFXDAO/CDaoQueryDef::GetParameterInfo", "AFXDAO/CDaoQueryDef::GetParamValue", "AFXDAO/CDaoQueryDef::GetRecordsAffected", "AFXDAO/CDaoQueryDef::GetReturnsRecords", "AFXDAO/CDaoQueryDef::GetSQL", "AFXDAO/CDaoQueryDef::GetType", "AFXDAO/CDaoQueryDef::IsOpen", "AFXDAO/CDaoQueryDef::Open", "AFXDAO/CDaoQueryDef::SetConnect", "AFXDAO/CDaoQueryDef::SetName", "AFXDAO/CDaoQueryDef::SetODBCTimeout", "AFXDAO/CDaoQueryDef::SetParamValue", "AFXDAO/CDaoQueryDef::SetReturnsRecords", "AFXDAO/CDaoQueryDef::SetSQL", "AFXDAO/CDaoQueryDef::m_pDAOQueryDef", "AFXDAO/CDaoQueryDef::m_pDatabase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoQueryDef [MFC], CDaoQueryDef", "CDaoQueryDef [MFC], Append", "CDaoQueryDef [MFC], CanUpdate", "CDaoQueryDef [MFC], Close", "CDaoQueryDef [MFC], Create", "CDaoQueryDef [MFC], Execute", "CDaoQueryDef [MFC], GetConnect", "CDaoQueryDef [MFC], GetDateCreated", "CDaoQueryDef [MFC], GetDateLastUpdated", "CDaoQueryDef [MFC], GetFieldCount", "CDaoQueryDef [MFC], GetFieldInfo", "CDaoQueryDef [MFC], GetName", "CDaoQueryDef [MFC], GetODBCTimeout", "CDaoQueryDef [MFC], GetParameterCount", "CDaoQueryDef [MFC], GetParameterInfo", "CDaoQueryDef [MFC], GetParamValue", "CDaoQueryDef [MFC], GetRecordsAffected", "CDaoQueryDef [MFC], GetReturnsRecords", "CDaoQueryDef [MFC], GetSQL", "CDaoQueryDef [MFC], GetType", "CDaoQueryDef [MFC], IsOpen", "CDaoQueryDef [MFC], Open", "CDaoQueryDef [MFC], SetConnect", "CDaoQueryDef [MFC], SetName", "CDaoQueryDef [MFC], SetODBCTimeout", "CDaoQueryDef [MFC], SetParamValue", "CDaoQueryDef [MFC], SetReturnsRecords", "CDaoQueryDef [MFC], SetSQL", "CDaoQueryDef [MFC], m_pDAOQueryDef", "CDaoQueryDef [MFC], m_pDatabase"]
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoQueryDef Class
 Represents a query definition, or "querydef," usually one saved in a database.  

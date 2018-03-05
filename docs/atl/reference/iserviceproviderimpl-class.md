@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IServiceProviderImpl<T>"
-  - "ATL.IServiceProviderImpl<T>"
-  - "ATL.IServiceProviderImpl"
-  - "ATL::IServiceProviderImpl"
-  - "IServiceProviderImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IServiceProviderImpl class"
-  - "IServiceProvider interface, ATL implementation"
+f1_keywords: ["IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl::QueryService"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IServiceProviderImpl class", "IServiceProvider interface, ATL implementation"]
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IServiceProviderImpl Class
 This class provides a default implementation of the `IServiceProvider` interface.  
@@ -66,9 +44,9 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
   
  **IServiceProviderImpl** specifies one method: [QueryService](#queryservice), which creates or accesses the specified service and returns an interface pointer to the specified interface for the service.  
   
- `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](http://msdn.microsoft.com/library/3c6ae156-8776-4588-8227-2d234daec236) and ending with [END_SERVICE_MAP](http://msdn.microsoft.com/library/9a35d02a-014c-413a-bb0b-bcca11ab45a6).  
+ `IServiceProviderImpl` uses a service map, starting with [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) and ending with [END_SERVICE_MAP](service-map-macros.md#end_service_map).  
   
- The service map contains two entries: [SERVICE_ENTRY](http://msdn.microsoft.com/library/e65ff9cc-15e8-41cf-b686-f99eb6686ca9), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](http://msdn.microsoft.com/library/09be4ce4-3ccd-4ff2-a95e-a9d5275354c1), which calls `QueryService` to chain to another object.  
+ The service map contains two entries: [SERVICE_ENTRY](service-map-macros.md#service_entry), which indicates a specified service id (SID) supported by the object, and [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain), which calls `QueryService` to chain to another object.  
   
 ## Inheritance Hierarchy  
  `IServiceProvider`  

@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.resvw.resource.copying"
-  - "vs.resvw.resource.copying"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], moving between files"
-  - "resources [Visual Studio], copying"
-  - "resource files, copying or moving resources between"
-  - "resource files, tiling"
-  - ".rc files, copying resources between"
-  - "rc files, copying resources between"
+f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], moving between files", "resources [Visual Studio], copying", "resource files, copying or moving resources between", "resource files, tiling", ".rc files, copying resources between", "rc files, copying resources between"]
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Copy Resources
 You can copy resources from one file to another without changing them or you can [change the language or condition of a resource while copying it](../windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md).  
@@ -75,7 +52,7 @@ You can copy resources from one file to another without changing them or you can
     > [!NOTE]
     >  To avoid conflicts with symbol names or values in the existing file, Visual C++ may change the transferred resource's symbol value or symbol name and value when you copy it to the new file.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
  Requirements  
   

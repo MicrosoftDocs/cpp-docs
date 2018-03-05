@@ -4,48 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ISpecifyPropertyPagesImpl"
-  - "ATL.ISpecifyPropertyPagesImpl<T>"
-  - "ATL::ISpecifyPropertyPagesImpl"
-  - "ATL::ISpecifyPropertyPagesImpl<T>"
-  - "ATL.ISpecifyPropertyPagesImpl"
-  - "ISpecifyPropertyPagesImpl Class"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, CLSIDs associated with"
-  - "ISpecifyPropertyPages"
-  - "ISpecifyPropertyPagesImpl class"
+f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages, CLSIDs associated with", "ISpecifyPropertyPages", "ISpecifyPropertyPagesImpl class"]
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ISpecifyPropertyPagesImpl Class
 This class implements **IUnknown** and provides a default implementation of the [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -93,7 +69,7 @@ STDMETHOD(GetPages)(CAUUID* pPages);
 ### Remarks  
  ATL uses the object's property map to retrieve each CLSID.  
   
- See [ISpecifyPropertyPages::GetPages](http://msdn.microsoft.com/library/windows/desktop/ms687276) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [ISpecifyPropertyPages::GetPages](http://msdn.microsoft.com/library/windows/desktop/ms687276) in the Windows SDK.  
   
 ## See Also  
  [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE initialization"
+f1_keywords: ["afxdisp/AfxOleInit", "afxdisp/AfxEnableControlContainer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE initialization"]
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # OLE Initialization
 Before an application can use OLE system services, it must initialize the OLE system DLLs and verify that the DLLs are the correct version. The **AfxOleInit** function initializes the OLE system DLLs.  
@@ -41,7 +24,24 @@ Before an application can use OLE system services, it must initialize the OLE sy
   
 |||  
 |-|-|  
-|[AfxOleInit](#afxoleinit)|Initializes the OLE libraries.|  
+|[AfxOleInit](#afxoleinit)|Initializes the OLE libraries.| 
+|[AfxEnableControlContainer](#afxenablecontrolcontainer)|Call this function in your application object's `InitInstance` function to enable support for containment of OLE controls.| 
+
+
+## <a name="afxenablecontrolcontainer"></a> AfxEnableControlContainer
+Call this function in your application object's `InitInstance` function to enable support for containment of OLE controls.  
+   
+### Syntax    
+```
+void AfxEnableControlContainer( );  
+```  
+   
+### Remarks  
+ For more information about OLE controls (now called ActiveX controls), see [ActiveX Control Topics](../mfc-activex-controls.md).  
+   
+### Requirements  
+ **Header:** afxdisp.h  
+
   
 ##  <a name="afxoleinit"></a>  AfxOleInit  
  Initializes OLE support for the application.  
@@ -58,7 +58,7 @@ BOOL AFXAPI AfxOleInit();
   
 -   Initializes the COM library on the current apartment of the calling application. For more information, see [OleInitialize](http://msdn.microsoft.com/library/windows/desktop/ms690134).  
   
--   Creates a message filter object, implementing the [IMessageFilter](http://msdn.microsoft.com/library/windows/desktop/ms693740) interface. This message filter can be accessed with a call to [AfxOleGetMessageFilter](http://msdn.microsoft.com/library/36cca011-4775-4086-b471-5557a87b266c).  
+-   Creates a message filter object, implementing the [IMessageFilter](http://msdn.microsoft.com/library/windows/desktop/ms693740) interface. This message filter can be accessed with a call to [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter).  
   
 > [!NOTE]
 >  If **AfxOleInit** is called from an MFC DLL, the call will fail. The failure occurs because the function assumes that, if it is called from a DLL, the OLE system was previously initialized by the calling application.  

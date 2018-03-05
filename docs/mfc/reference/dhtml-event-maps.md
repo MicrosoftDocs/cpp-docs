@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.macros.shared"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event map macros"
-  - "DHTML, event map macros"
-  - "macros, DHTML event map"
-  - "DHTML events, event map"
-  - "DHTML events"
+f1_keywords: ["vc.macros.shared"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event map macros [MFC]", "DHTML [MFC], event map macros", "macros [MFC], DHTML event map", "DHTML events [MFC], event map", "DHTML events [MFC]"]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # DHTML Event Maps
 The following macros can be used to handle DHTML events.  
@@ -81,6 +60,7 @@ The following macros can be used to handle DHTML events.
 |[DHTML_EVENT_ONSELECTSTART](#dhtml_event_onselectstart)|Used to handle the **onselectstart** event from an HTML element.|  
 |[DHTML_EVENT_TAG](#dhtml_event_tag)|Used to handle an event at the document level for all elements with a particular HTML tag.|  
 |[END_DHTML_EVENT_MAP](#end_dhtml_event_map)|Marks the end of the DHTML event map.|  
+|[END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline)|Marks the end of the DHTML event map. |
   
 ## URL Event Map Macros  
  The following macros can be used to handle DHTML events in [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-derived classes.  
@@ -134,7 +114,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 ### Remarks  
  Add a DHTML event map to your class to provide information to **CDHtmlDialog** that can be used to route events fired by HTML elements or ActiveX controls in a web page to handler functions in your class.  
   
- Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](http://msdn.microsoft.com/library/0cfec092-20ee-49f3-bc38-56d6a5572db2) macro to mark the end of the event map. These macros implement the following function:  
+ Place the `BEGIN_DHTML_EVENT_MAP` macro in the class's definition (.h) file followed by `DHTML_EVENT` macros for the events the class is to handle (for example, `DHTML_EVENT_ONMOUSEOVER` for mouseover events). Use the [END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline) macro to mark the end of the event map. These macros implement the following function:  
   
  `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`  
   
@@ -880,7 +860,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ### Remarks  
  Because a multipage DHTML dialog consists of multiple HTML pages, each of which can raise DHTML events, embedded event maps are used to map events to handlers on a per-page basis.  
   
- Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](dhtml-event-maps.md#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](dhtml-event-maps.md#end_embed_dhtml_event_map) macro.  
+ Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) macro.  
   
  Each embedded event map requires a corresponding [URL event entry](#url_event_entry) to map *mapName* (specified in `BEGIN_EMBED_DHTML_EVENT_MAP`) to a URL or HTML resource.  
   
@@ -1001,6 +981,20 @@ URL_EVENT_ENTRY(className, url,  mapName)
   
 ### Requirements  
   **Header** afxdhtml.h  
-    
-## See Also  
- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+##  <a name="end_dhtml_event_map_inline"></a>END_DHTML_EVENT_MAP_INLINE
+Marks the end of the DHTML event map.  
+   
+### Syntax    
+```
+END_DHTML_EVENT_MAP_INLINE( )    
+```  
+   
+### Remarks  
+ Must be used in conjunction with [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline).  
+   
+### Requirements  
+ **Header:** afxdhtml.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   

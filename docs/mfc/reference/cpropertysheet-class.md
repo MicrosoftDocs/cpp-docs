@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPropertySheet"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes, tabs"
-  - "CPropertySheet class"
-  - "property sheets, CPropertySheet class"
-  - "tab dialog boxes"
+f1_keywords: ["CPropertySheet", "AFXDLGS/CPropertySheet", "AFXDLGS/CPropertySheet::CPropertySheet", "AFXDLGS/CPropertySheet::AddPage", "AFXDLGS/CPropertySheet::Construct", "AFXDLGS/CPropertySheet::Create", "AFXDLGS/CPropertySheet::DoModal", "AFXDLGS/CPropertySheet::EnableStackedTabs", "AFXDLGS/CPropertySheet::EndDialog", "AFXDLGS/CPropertySheet::GetActiveIndex", "AFXDLGS/CPropertySheet::GetActivePage", "AFXDLGS/CPropertySheet::GetPage", "AFXDLGS/CPropertySheet::GetPageCount", "AFXDLGS/CPropertySheet::GetPageIndex", "AFXDLGS/CPropertySheet::GetTabControl", "AFXDLGS/CPropertySheet::MapDialogRect", "AFXDLGS/CPropertySheet::OnInitDialog", "AFXDLGS/CPropertySheet::PressButton", "AFXDLGS/CPropertySheet::RemovePage", "AFXDLGS/CPropertySheet::SetActivePage", "AFXDLGS/CPropertySheet::SetFinishText", "AFXDLGS/CPropertySheet::SetTitle", "AFXDLGS/CPropertySheet::SetWizardButtons", "AFXDLGS/CPropertySheet::SetWizardMode", "AFXDLGS/CPropertySheet::m_psh"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPropertySheet [MFC], CPropertySheet", "CPropertySheet [MFC], AddPage", "CPropertySheet [MFC], Construct", "CPropertySheet [MFC], Create", "CPropertySheet [MFC], DoModal", "CPropertySheet [MFC], EnableStackedTabs", "CPropertySheet [MFC], EndDialog", "CPropertySheet [MFC], GetActiveIndex", "CPropertySheet [MFC], GetActivePage", "CPropertySheet [MFC], GetPage", "CPropertySheet [MFC], GetPageCount", "CPropertySheet [MFC], GetPageIndex", "CPropertySheet [MFC], GetTabControl", "CPropertySheet [MFC], MapDialogRect", "CPropertySheet [MFC], OnInitDialog", "CPropertySheet [MFC], PressButton", "CPropertySheet [MFC], RemovePage", "CPropertySheet [MFC], SetActivePage", "CPropertySheet [MFC], SetFinishText", "CPropertySheet [MFC], SetTitle", "CPropertySheet [MFC], SetWizardButtons", "CPropertySheet [MFC], SetWizardMode", "CPropertySheet [MFC], m_psh"]
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPropertySheet Class
 Represents property sheets, also known as tab dialog boxes.  
@@ -95,7 +75,7 @@ class CPropertySheet : public CWnd
   
  Even though `CPropertySheet` is not derived from [CDialog](../../mfc/reference/cdialog-class.md), managing a `CPropertySheet` object is like managing a `CDialog` object. For example, creation of a property sheet requires two-part construction: call the constructor, and then call [DoModal](#domodal) for a modal property sheet or [Create](#create) for a modeless property sheet. `CPropertySheet` has two types of constructors: [CPropertySheet::Construct](#construct) and [CPropertySheet::CPropertySheet](#cpropertysheet).  
   
- When you construct a `CPropertySheet` object, some [Window Styles](../../mfc/reference/window-styles.md) can cause a first-chance exception to occur. This results from the system trying to change the style of the property sheet before the sheet is created. To avoid this exception, make sure that you set the following styles when you create your `CPropertySheet`:  
+ When you construct a `CPropertySheet` object, some [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) can cause a first-chance exception to occur. This results from the system trying to change the style of the property sheet before the sheet is created. To avoid this exception, make sure that you set the following styles when you create your `CPropertySheet`:  
   
 -   DS_3DLOOK  
   
@@ -302,7 +282,7 @@ CPropertySheet(
   
 ```  
 virtual BOOL Create(CWnd* pParentWnd = NULL,
-    DWORD dwStyle = (DWORD)–1,
+    DWORD dwStyle = (DWORD)-1,
     DWORD dwExStyle = 0);  
 ```  
   
@@ -311,10 +291,10 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
  Points to parent window. If **NULL**, parent is the desktop.  
   
  `dwStyle`  
- Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  `dwExStyle`  
- Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md)  
+ Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
 ### Return Value  
  Nonzero if the property sheet is created successfully; otherwise 0.  
@@ -322,7 +302,7 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 ### Remarks  
  The call to **Create** can be inside the constructor, or you can call it after the constructor is invoked.  
   
- The default style, expressed by passing –1 as `dwStyle`, is actually **WS_SYSMENU&#124;**`WS_POPUP`**&#124;WS_CAPTION&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_VISIBLE**. The default extended window style, expressed by passing 0 as `dwExStyle`, is actually **WS_EX_DLGMODALFRAME**.  
+ The default style, expressed by passing -1 as `dwStyle`, is actually **WS_SYSMENU&#124;**`WS_POPUP`**&#124;WS_CAPTION&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_VISIBLE**. The default extended window style, expressed by passing 0 as `dwExStyle`, is actually **WS_EX_DLGMODALFRAME**.  
   
  The **Create** member function returns immediately after creating the property sheet. To destroy the property sheet, call [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow).  
   
@@ -355,7 +335,7 @@ virtual INT_PTR DoModal();
 > [!NOTE]
 >  This exception must be handled by the operating system if you are compiling with the asynchronous exception handling model. For more information about exception handling models, see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md). In this case, do not wrap calls to `CPropertySheet::DoModal` with a C++ try-catch block in which the catch handles all exceptions, for example, `catch (...)`. This block would handle the exception intended for the operating system, and cause unpredictable behavior. However, you can safely use C++ exception handling with specific exception types or structured exception handling where the Access Violation exception is passed through to the operating system.  
   
- To avoid generating this first-chance exception, you can manually guarantee that the property sheet has the correct [Window Styles](../../mfc/reference/window-styles.md). You need to set the following styles for a property sheet:  
+ To avoid generating this first-chance exception, you can manually guarantee that the property sheet has the correct [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). You need to set the following styles for a property sheet:  
   
 -   DS_3DLOOK  
   
@@ -517,7 +497,7 @@ CTabCtrl* GetTabControl() const;
 ### Remarks  
  Use this structure to initialize the appearance of the property sheet after it is constructed but before it is displayed with the [DoModal](#domodal) member function. For example, set the `dwSize` member of `m_psh` to the size you want the property sheet to have.  
   
- For more information on this structure, including a listing of its members, see **PROPSHEETHEADER** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on this structure, including a listing of its members, see **PROPSHEETHEADER** in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/cpp/cpropertysheet-class_9.cpp)]  
@@ -536,7 +516,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Remarks  
  Dialog-box units are stated in terms of the current dialog-box base unit derived from the average width and height of characters in the font used for dialog-box text. One horizontal unit is one-fourth of the dialog-box base-width unit, and one vertical unit is one-eighth of the dialog-box base height unit.  
   
- The [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows function returns size information for the system font, but you can specify a different font for each property sheet if you use the **DS_SETFONT** style in the resource-definition file. The [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows function, described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], uses the appropriate font for this dialog box.  
+ The [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows function returns size information for the system font, but you can specify a different font for each property sheet if you use the **DS_SETFONT** style in the resource-definition file. The [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows function, described in the Windows SDK, uses the appropriate font for this dialog box.  
   
  The `MapDialogRect` member function replaces the dialog-box units in `lpRect` with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.  
   
@@ -595,7 +575,8 @@ void PressButton(int nButton);
   
 ```  
 void RemovePage(CPropertyPage* pPage);  
-void RemovePage(int nPage);```  
+void RemovePage(int nPage);
+```  
   
 ### Parameters  
  `pPage`  
@@ -612,7 +593,8 @@ void RemovePage(int nPage);```
   
 ```  
 BOOL SetActivePage(int nPage);  
-BOOL SetActivePage(CPropertyPage* pPage);```  
+BOOL SetActivePage(CPropertyPage* pPage);
+```  
   
 ### Parameters  
  `nPage`  

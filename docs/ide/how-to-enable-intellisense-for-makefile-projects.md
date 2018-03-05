@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCNMakeTool.IntelliSense"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Makefile projects, IntelliSense"
-  - "IntelliSense, Makefile projects"
+f1_keywords: ["VC.Project.VCNMakeTool.IntelliSense"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Makefile projects, IntelliSense", "IntelliSense, Makefile projects"]
 ms.assetid: 9443f453-f18f-4f12-a9a1-ef9dbf8b188f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How to: Enable IntelliSense for Makefile Projects
 IntelliSense fails to operate in the IDE for Visual C++ makefile projects when certain project settings, or compiler options, are set up incorrectly. Use this procedure to configure Visual C++ makefile projects, so that IntelliSense works when makefile projects are open in the Visual Studio development environment.  

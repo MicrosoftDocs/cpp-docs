@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3834"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3834"
+f1_keywords: ["C3834"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3834"]
 ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3834
 illegal explicit cast to a pinning pointer; use a pinned local variable instead  

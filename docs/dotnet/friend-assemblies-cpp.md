@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "friend assemblies, Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["friend assemblies, Visual C++"]
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Friend Assemblies (C++)
 For applicable runtimes, the *friend assemblies* language feature makes types that are at namespace scope or global scope in an assembly component accessible to one or more client assemblies or .netmodules.  
@@ -41,15 +24,15 @@ For applicable runtimes, the *friend assemblies* language feature makes types th
   
  (This language feature is not supported in all runtimes.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
- (This language feature is not supported in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].)  
+ (This language feature is not supported in the Windows Runtime.)  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
 #### To make types at namespace scope or global scope in an assembly component accessible to a client assembly or .netmodule  

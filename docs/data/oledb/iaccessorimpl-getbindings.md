@@ -4,53 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IAccessorImpl.GetBindings"
-  - "ATL::IAccessorImpl::GetBindings"
-  - "IAccessorImpl::GetBindings"
-  - "GetBindings"
-  - "ATL.IAccessorImpl.GetBindings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBindings method"
+ms.topic: "reference"
+f1_keywords: ["IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBindings method"]
 ms.assetid: eb550077-77ef-450b-89f1-a2930cee6ab8
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl::GetBindings
 Returns the basic columns bindings from the consumer in an accessor.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetBindings)(  
-   HACCESSOR hAccessor,  
+```cpp
+      STDMETHOD(GetBindings)(HACCESSOR hAccessor,  
    DBACCESSORFLAGS* pdwAccessorFlags,  
    DBCOUNTITEM* pcBindings,  
-   DBBINDING** prgBindings   
-);  
+   DBBINDING** prgBindings);  
 ```  
   
 #### Parameters  

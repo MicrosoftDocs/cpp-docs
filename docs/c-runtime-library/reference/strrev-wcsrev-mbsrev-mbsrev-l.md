@@ -4,81 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wcsrev"
-  - "_mbsrev"
-  - "_strrev"
-  - "_mbsrev_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wcsrev", "_mbsrev", "_strrev", "_mbsrev_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strrev"
-  - "_ftcsrev"
-  - "_tcsrev"
-  - "mbsrev"
-  - "mbsrev_l"
-  - "_wcsrev_fstrrev"
-  - "_mbsrev"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsrev_l function"
-  - "characters [C++], switching"
-  - "_mbsrev function"
-  - "strrev function"
-  - "_ftcsrev function"
-  - "strings [C++], reversing"
-  - "wcsrev function"
-  - "_strrev function"
-  - "mbsrev_l function"
-  - "reversing characters in strings"
-  - "ftcsrev function"
-  - "characters [C++], reversing order"
-  - "_wcsrev function"
-  - "mbsrev function"
-  - "tcsrev function"
-  - "_tcsrev function"
+f1_keywords: ["_strrev", "_ftcsrev", "_tcsrev", "mbsrev", "mbsrev_l", "_wcsrev_fstrrev", "_mbsrev"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsrev_l function", "characters [C++], switching", "_mbsrev function", "strrev function", "_ftcsrev function", "strings [C++], reversing", "wcsrev function", "_strrev function", "mbsrev_l function", "reversing characters in strings", "ftcsrev function", "characters [C++], reversing order", "_wcsrev function", "mbsrev function", "tcsrev function", "_tcsrev function"]
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strrev, _wcsrev, _mbsrev, _mbsrev_l
 Reverses the characters of a string.  
   
 > [!IMPORTANT]
->  `_mbsrev` and `_mbsrev_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsrev` and `_mbsrev_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -113,7 +59,7 @@ unsigned char *_mbsrev_l(
   
  `_mbsrev` validates its parameters. If either `string1` or `string2` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsrev` returns `NULL` and sets `errno` to `EINVAL`. `_strrev` and `_wcsrev` do not validate their parameters.  
   
- The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the `_l` suffix use the current locale and the ones that do have the`_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the `_l` suffix use the current locale and the ones that do have the `_l` suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -164,9 +110,6 @@ int main( void )
 ```Output  
 The string "Able was I ere I saw Elba" is a palindrome  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

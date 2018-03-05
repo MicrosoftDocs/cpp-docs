@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_map::equal_range"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "equal_range member [STL/CLR]"
+f1_keywords: ["cliext::hash_map::equal_range"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["equal_range member [STL/CLR]"]
 ms.assetid: 9b9a18b8-42fd-4d17-91bd-df85e583cf61
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::equal_range (STL/CLR)
 Finds range that matches a specified key.  
@@ -44,15 +27,15 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 ```  
   
 #### Parameters  
- key  
+ `key`  
  Key value to search for.  
   
 ## Remarks  
- The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_map::lower_bound (STL/CLR)](../dotnet/hash-map-lower-bound-stl-clr.md)`(``key``),` [hash_map::upper_bound (STL/CLR)](../dotnet/hash-map-upper-bound-stl-clr.md)`(``key``))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
+ The member function returns a pair of iterators `cliext::pair<iterator, iterator>(lower_bound(key), upper_bound(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_hash_map_equal_range.cpp   
 // compile with: /clr   
 #include <cliext/hash_map>   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.dll.appset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC DLL Wizard, application settings"
+f1_keywords: ["vc.appwiz.mfc.dll.appset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC DLL Wizard, application settings"]
 ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Application Settings, MFC DLL Wizard
 Use this page of the MFC DLL wizard to design and add basic features to a new MFC DLL project.  
@@ -40,10 +23,10 @@ Use this page of the MFC DLL wizard to design and add basic features to a new MF
 ## DLL type  
  Select the type of DLL you want to create.  
   
- **Regular DLL using shared MFC DLL**  
+ **Regular MFC DLL using shared MFC DLL**  
  Select this option to link the MFC library to your program as a shared DLL. Using this option, you cannot share MFC objects between your DLL and the calling application. Your program makes calls to the MFC library at run time. This option reduces the disk and memory requirements of your program if it is composed of multiple execution files that use the MFC library. Both Win32 and MFC programs can call functions in your DLL. You must redistribute the MFC DLL with this type of project.  
   
- **Regular DLL with MFC statically linked**  
+ **Regular MFC DLL with MFC statically linked**  
  Select this option to link your program statically to the MFC library at build time. Both Win32 and MFC programs can call functions in your DLL. While this option increases the size of your program, you do not need to redistribute the MFC DLL with this type of project. You cannot share MFC objects between your DLL and the calling application.  
   
  **MFC extension DLL**  

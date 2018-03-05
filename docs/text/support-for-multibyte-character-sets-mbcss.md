@@ -4,52 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MBCS [C++], about MBCS"
-  - "character sets [C++], multibyte"
-  - "multibyte characters [C++]"
-  - "MBCS [C++]"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
 caps.latest.revision: 11
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Support for Multibyte Character Sets (MBCSs)
 Multibyte character sets (MBCSs) are an older approach to the need to support character sets, like Japanese and Chinese, that cannot be represented in a single byte. If you are doing new development, you should use Unicode for all text strings except perhaps system strings that are not seen by end users. MBCS is a legacy technology and is not recommended for new development.  
   
  The most common MBCS implementation is double-byte character sets (DBCSs). Visual C++ in general, and MFC in particular, is fully enabled for DBCS.  
-  
-> [!WARNING]
->  In Visual Studio 2013 and later, the MFC libraries for multi-byle character encoding (MBCS) will be provided as an add-on to Visual Studio and will be available free of charge to Visual Studio customers (Professional and Enterprise editions only) from the MSDN download site.  
->   
->  The libraries require about 440 MB on your drive, and the installation includes all localized versions of the libraries. You can install it on any machine on which Visual Studio Community, Professional, or Enterprise edition is installed, and which has the in-box MFC feature enabled.  
->   
->  If you uninstall or repair Visual Studio, the MBCS libraries will also be uninstalled or repaired. However, if you just remove the MFC feature, the MBCS libraries will remain on your system. If you repair the MBCS libraries, Visual Studio is not modified in any way.  
->   
->  The Redistributable Packages for Visual Studio 2013 and later will still include the MBCS MFC DLLs. No additional steps are required to redistribute the DLLs to your customers.  
   
  For samples, see the MFC source code files.  
   

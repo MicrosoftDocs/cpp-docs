@@ -4,51 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ICommandImpl::Execute"
-  - "ICommandImpl.Execute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Execute method"
+ms.topic: "reference"
+f1_keywords: ["ICommandImpl::Execute", "ICommandImpl.Execute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Execute method"]
 ms.assetid: 033e0d4e-256b-4eed-9215-70e0bebb768c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl::Execute
 Executes the command.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Execute(  
-   IUnknown* pUnkOuter,  
+```cpp
+HRESULT Execute(IUnknown* pUnkOuter,  
    REFIID riid,  
    DBPARAMS* pParams,  
    DBROWCOUNT* pcRowsAffected,  
-   IUnknown** ppRowset   
-);  
+   IUnknown** ppRowset);  
 ```  
   
 #### Parameters  

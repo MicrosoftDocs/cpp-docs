@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vfprintf_l"
-  - "vfprintf"
-  - "vfwprintf"
-  - "_vfwprintf_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vfprintf_l", "vfprintf", "vfwprintf", "_vfwprintf_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vfwprintf"
-  - "_vftprintf"
-  - "vfprintf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_vfwprintf_l function"
-  - "_vftprintf function"
-  - "vfprintf function"
-  - "_vftprintf_l function"
-  - "vfprintf_l function"
-  - "vftprintf_l function"
-  - "vfwprintf_l function"
-  - "vftprintf function"
-  - "vfwprintf function"
-  - "_vfprintf_l function"
-  - "formatted text [C++]"
+f1_keywords: ["vfwprintf", "_vftprintf", "vfprintf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_vfwprintf_l function", "_vftprintf function", "vfprintf function", "_vftprintf_l function", "vfprintf_l function", "vftprintf_l function", "vfwprintf_l function", "vftprintf function", "vfwprintf function", "_vfprintf_l function", "formatted text [C++]"]
 ms.assetid: 4443be50-cedf-40b2-b3e2-ff2b3af3b666
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions exist; see [vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l](../../c-runtime-library/reference/vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md).  
@@ -134,15 +91,12 @@ int _vfwprintf_l(
   
 |Routine|Required header|Optional headers|  
 |-------------|---------------------|----------------------|  
-|`vfprintf`, _`vfprintf_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|  
-|`vfwprintf`, _`vfwprintf_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|  
+|`vfprintf`, `_vfprintf_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|  
+|`vfwprintf`, `_vfwprintf_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|  
   
  \* Required for UNIX V compatibility.  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

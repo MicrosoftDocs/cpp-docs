@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "BLOB"
-  - "CLongBinary"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BLOB (binary large object)"
-  - "CLongBinary class"
-  - "BLOB (binary large object), CLongBinary class"
+f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLongBinary class [MFC]"]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CLongBinary Class
 Simplifies working with very large binary data objects (often called BLOBs, or "binary large objects") in a database.  
@@ -65,7 +45,7 @@ class CLongBinary : public CObject
  For example, a record field in a SQL table might contain a bitmap representing a picture. A `CLongBinary` object stores such an object and keeps track of its size.  
   
 > [!NOTE]
->  In general, it is better practice now to use [CByteArray](../../mfc/reference/cbytearray-class.md) in conjunction with the [DFX_Binary](http://msdn.microsoft.com/library/678021a3-2e46-44d7-8528-71bb692dcc07) function. You can still use `CLongBinary`, but in general `CByteArray` provides more functionality under Win32, since there is no longer the size limitation encountered with 16-bit `CByteArray`. This advice applies to programming with Data Access Objects (DAO) as well as Open Database Connectivity (ODBC).  
+>  In general, it is better practice now to use [CByteArray](../../mfc/reference/cbytearray-class.md) in conjunction with the [DFX_Binary](record-field-exchange-functions.md#dfx_binary) function. You can still use `CLongBinary`, but in general `CByteArray` provides more functionality under Win32, since there is no longer the size limitation encountered with 16-bit `CByteArray`. This advice applies to programming with Data Access Objects (DAO) as well as Open Database Connectivity (ODBC).  
   
  To use a `CLongBinary` object, declare a field data member of type `CLongBinary` in your recordset class. This member will be an embedded member of the recordset class and will be constructed when the recordset is constructed. After the `CLongBinary` object is constructed, the record field exchange (RFX) mechanism loads the data object from a field in the current record on the data source and stores it back to the record when the record is updated. RFX queries the data source for the size of the binary large object, allocates storage for it (via the `CLongBinary` object's `m_hData` data member), and stores an `HGLOBAL` handle to the data in `m_hData`. RFX also stores the actual size of the data object in the `m_dwDataLength` data member. Work with the data in the object through `m_hData`, using the same techniques you would normally use to manipulate the data stored in a Windows `HGLOBAL` handle.  
   

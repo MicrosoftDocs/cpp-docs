@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.GenerateManifest"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-MANIFEST linker option"
-  - "/MANIFEST linker option"
-  - "MANIFEST linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.GenerateManifest"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-MANIFEST linker option", "/MANIFEST linker option", "MANIFEST linker option"]
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /MANIFEST (Create Side-by-Side Assembly Manifest)
 ```  
@@ -48,7 +29,7 @@ translation.priority.ht:
   
  The /MANIFEST:EMBED option specifies that the linker should embed the manifest file in the image as a resource of type RT_MANIFEST. The optional `ID` parameter is the resource ID to use for the manifest. Use a value of 1 for an executable file. Use a value of 2 for a DLL to enable it to specify private dependencies. If the `ID` parameter is not specified, the default value is 2 if the /DLL option is set; otherwise, the default value is 1.  
   
- Beginning with [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)], manifest files for executables contain a section that specifies User Account Control (UAC) information. If you specify /MANIFEST but specify neither [/MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md) nor [/DLL](../../build/reference/dll-build-a-dll.md), a default UAC fragment that has the UAC level set to *asInvoker* is inserted into the manifest. For more information about UAC levels, see [/MANIFESTUAC (Embeds UAC information in manifest)](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md).  
+ Beginning with Visual Studio 2008, manifest files for executables contain a section that specifies User Account Control (UAC) information. If you specify /MANIFEST but specify neither [/MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md) nor [/DLL](../../build/reference/dll-build-a-dll.md), a default UAC fragment that has the UAC level set to *asInvoker* is inserted into the manifest. For more information about UAC levels, see [/MANIFESTUAC (Embeds UAC information in manifest)](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md).  
   
  To change the default behavior for UAC, do one of these:  
   

@@ -4,67 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnbcpy_s_l"
-  - "_mbsnbcpy_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnbcpy_s_l", "_mbsnbcpy_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbcpy_s_l"
-  - "_mbsnbcpy_s"
-  - "mbsnbcpy_s"
-  - "_mbsnbcpy_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsnbcpy_s function"
-  - "tcsncpy_s function"
-  - "mbsnbcpy_s_l function"
-  - "_tcsncpy_s_l function"
-  - "mbsnbcpy_s function"
-  - "tcsncpy_s_l function"
-  - "_mbsnbcpy_s_l function"
-  - "_tcsncpy_s function"
+f1_keywords: ["mbsnbcpy_s_l", "_mbsnbcpy_s", "mbsnbcpy_s", "_mbsnbcpy_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsnbcpy_s function", "tcsncpy_s function", "mbsnbcpy_s_l function", "_tcsncpy_s_l function", "mbsnbcpy_s function", "tcsncpy_s_l function", "_mbsnbcpy_s_l function", "_tcsncpy_s function"]
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbcpy_s, _mbsnbcpy_s_l
 Copies `n` bytes of a string to a destination string. These versions of [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -143,9 +103,6 @@ errno_t _mbsnbcpy_s_l(
 |`_mbsnbcpy_s_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

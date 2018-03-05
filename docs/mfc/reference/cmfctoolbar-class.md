@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolBar class"
+f1_keywords: ["CMFCToolBar", "AFXTOOLBAR/CMFCToolBar", "AFXTOOLBAR/CMFCToolBar::AddBasicCommand", "AFXTOOLBAR/CMFCToolBar::AddCommandUsage", "AFXTOOLBAR/CMFCToolBar::AddToolBarForImageCollection", "AFXTOOLBAR/CMFCToolBar::AdjustLayout", "AFXTOOLBAR/CMFCToolBar::AdjustSize", "AFXTOOLBAR/CMFCToolBar::AllowChangeTextLabels", "AFXTOOLBAR/CMFCToolBar::AreTextLabels", "AFXTOOLBAR/CMFCToolBar::AutoGrayInactiveImages", "AFXTOOLBAR/CMFCToolBar::ButtonToIndex", "AFXTOOLBAR/CMFCToolBar::CalcFixedLayout", "AFXTOOLBAR/CMFCToolBar::CalcSize", "AFXTOOLBAR/CMFCToolBar::CanHandleSiblings", "AFXTOOLBAR/CMFCToolBar::CleanUpImages", "AFXTOOLBAR/CMFCToolBar::CleanUpLockedImages", "AFXTOOLBAR/CMFCToolBar::CanBeClosed", "AFXTOOLBAR/CMFCToolBar::CanBeRestored", "AFXTOOLBAR/CMFCToolBar::CanFocus", "AFXTOOLBAR/CMFCToolBar::CommandToIndex", "AFXTOOLBAR/CMFCToolBar::Create", "AFXTOOLBAR/CMFCToolBar::CreateEx", "AFXTOOLBAR/CMFCToolBar::Deactivate", "AFXTOOLBAR/CMFCToolBar::EnableCustomizeButton", "AFXTOOLBAR/CMFCToolBar::EnableDocking", "AFXTOOLBAR/CMFCToolBar::EnableLargeIcons", "AFXTOOLBAR/CMFCToolBar::EnableQuickCustomization", "AFXTOOLBAR/CMFCToolBar::EnableReflections", "AFXTOOLBAR/CMFCToolBar::EnableTextLabels", "AFXTOOLBAR/CMFCToolBar::FromHandlePermanent", "AFXTOOLBAR/CMFCToolBar::GetAllButtons", "AFXTOOLBAR/CMFCToolBar::GetAllToolbars", "AFXTOOLBAR/CMFCToolBar::GetBasicCommands", "AFXTOOLBAR/CMFCToolBar::GetButton", "AFXTOOLBAR/CMFCToolBar::GetButtonInfo", "AFXTOOLBAR/CMFCToolBar::GetButtonSize", "AFXTOOLBAR/CMFCToolBar::GetButtonStyle", "AFXTOOLBAR/CMFCToolBar::GetButtonText", "AFXTOOLBAR/CMFCToolBar::GetColdImages", "AFXTOOLBAR/CMFCToolBar::GetColumnWidth", "AFXTOOLBAR/CMFCToolBar::GetCommandButtons", "AFXTOOLBAR/CMFCToolBar::GetCount", "AFXTOOLBAR/CMFCToolBar::GetCustomizeButton", "AFXTOOLBAR/CMFCToolBar::GetDefaultImage", "AFXTOOLBAR/CMFCToolBar::GetDisabledImages", "AFXTOOLBAR/CMFCToolBar::GetDisabledMenuImages", "AFXTOOLBAR/CMFCToolBar::GetDroppedDownMenu", "AFXTOOLBAR/CMFCToolBar::GetGrayDisabledButtons", "AFXTOOLBAR/CMFCToolBar::GetHighlightedButton", "AFXTOOLBAR/CMFCToolBar::GetHotBorder", "AFXTOOLBAR/CMFCToolBar::GetHotTextColor", "AFXTOOLBAR/CMFCToolBar::GetHwndLastFocus", "AFXTOOLBAR/CMFCToolBar::GetOVERWRITESetText", "AFXTOOLBAR/CMFCToolBar::GetImageSize", "AFXTOOLBAR/CMFCToolBar::GetImages", "AFXTOOLBAR/CMFCToolBar::GetImagesOffset", "AFXTOOLBAR/CMFCToolBar::GetInvalidateItemRect", "AFXTOOLBAR/CMFCToolBar::GetItemID", "AFXTOOLBAR/CMFCToolBar::GetItemRect", "AFXTOOLBAR/CMFCToolBar::GetLargeColdImages", "AFXTOOLBAR/CMFCToolBar::GetLargeDisabledImages", "AFXTOOLBAR/CMFCToolBar::GetLargeImages", "AFXTOOLBAR/CMFCToolBar::GetLockedColdImages", "AFXTOOLBAR/CMFCToolBar::GetLockedDisabledImages", "AFXTOOLBAR/CMFCToolBar::GetLockedImages", "AFXTOOLBAR/CMFCToolBar::GetLockedImageSize", "AFXTOOLBAR/CMFCToolBar::GetLockedMenuImages", "AFXTOOLBAR/CMFCToolBar::GetMenuButtonSize", "AFXTOOLBAR/CMFCToolBar::GetMenuImageSize", "AFXTOOLBAR/CMFCToolBar::GetMenuImages", "AFXTOOLBAR/CMFCToolBar::GetOrigButtons", "AFXTOOLBAR/CMFCToolBar::GetOrigResetButtons", "AFXTOOLBAR/CMFCToolBar::GetResourceID", "AFXTOOLBAR/CMFCToolBar::GetRouteCommandsViaFrame", "AFXTOOLBAR/CMFCToolBar::GetRowHeight", "AFXTOOLBAR/CMFCToolBar::GetShowTooltips", "AFXTOOLBAR/CMFCToolBar::GetSiblingToolBar", "AFXTOOLBAR/CMFCToolBar::GetUserImages", "AFXTOOLBAR/CMFCToolBar::HitTest", "AFXTOOLBAR/CMFCToolBar::InsertButton", "AFXTOOLBAR/CMFCToolBar::InsertSeparator", "AFXTOOLBAR/CMFCToolBar::InvalidateButton", "AFXTOOLBAR/CMFCToolBar::IsAddRemoveQuickCustomize", "AFXTOOLBAR/CMFCToolBar::IsAltCustomizeMode", "AFXTOOLBAR/CMFCToolBar::IsAutoGrayInactiveImages", "AFXTOOLBAR/CMFCToolBar::IsBasicCommand", "AFXTOOLBAR/CMFCToolBar::IsButtonExtraSizeAvailable", "AFXTOOLBAR/CMFCToolBar::IsButtonHighlighted", "AFXTOOLBAR/CMFCToolBar::IsCommandPermitted", "AFXTOOLBAR/CMFCToolBar::IsCommandRarelyUsed", "AFXTOOLBAR/CMFCToolBar::IsCustomizeMode", "AFXTOOLBAR/CMFCToolBar::IsDragButton", "AFXTOOLBAR/CMFCToolBar::IsExistCustomizeButton", "AFXTOOLBAR/CMFCToolBar::IsFloating", "AFXTOOLBAR/CMFCToolBar::IsLargeIcons", "AFXTOOLBAR/CMFCToolBar::IsLastCommandFromButton", "AFXTOOLBAR/CMFCToolBar::IsLocked", "AFXTOOLBAR/CMFCToolBar::IsOneRowWithSibling", "AFXTOOLBAR/CMFCToolBar::IsUserDefined", "AFXTOOLBAR/CMFCToolBar::LoadBitmap", "AFXTOOLBAR/CMFCToolBar::LoadBitmapEx", "AFXTOOLBAR/CMFCToolBar::LoadParameters", "AFXTOOLBAR/CMFCToolBar::LoadState", "AFXTOOLBAR/CMFCToolBar::LoadToolBar", "AFXTOOLBAR/CMFCToolBar::LoadToolBarEx", "AFXTOOLBAR/CMFCToolBar::OnChangeHot", "AFXTOOLBAR/CMFCToolBar::OnFillBackground", "AFXTOOLBAR/CMFCToolBar::OnReset", "AFXTOOLBAR/CMFCToolBar::OnSetAccData", "AFXTOOLBAR/CMFCToolBar::OnSetDefaultButtonText", "AFXTOOLBAR/CMFCToolBar::RemoveAllButtons", "AFXTOOLBAR/CMFCToolBar::RemoveButton", "AFXTOOLBAR/CMFCToolBar::RemoveStateFromRegistry", "AFXTOOLBAR/CMFCToolBar::ReplaceButton", "AFXTOOLBAR/CMFCToolBar::ResetAll", "AFXTOOLBAR/CMFCToolBar::ResetAllImages", "AFXTOOLBAR/CMFCToolBar::RestoreOriginalState", "AFXTOOLBAR/CMFCToolBar::SaveState", "AFXTOOLBAR/CMFCToolBar::SetBasicCommands", "AFXTOOLBAR/CMFCToolBar::SetButtonInfo", "AFXTOOLBAR/CMFCToolBar::SetButtonStyle", "AFXTOOLBAR/CMFCToolBar::SetButtonText", "AFXTOOLBAR/CMFCToolBar::SetButtons", "AFXTOOLBAR/CMFCToolBar::SetCommandUsageOptions", "AFXTOOLBAR/CMFCToolBar::SetCustomizeMode", "AFXTOOLBAR/CMFCToolBar::SetGrayDisabledButtons", "AFXTOOLBAR/CMFCToolBar::SetHeight", "AFXTOOLBAR/CMFCToolBar::SetHotBorder", "AFXTOOLBAR/CMFCToolBar::SetHotTextColor", "AFXTOOLBAR/CMFCToolBar::SetLargeIcons", "AFXTOOLBAR/CMFCToolBar::SetLockedSizes", "AFXTOOLBAR/CMFCToolBar::SetMenuSizes", "AFXTOOLBAR/CMFCToolBar::SetNonPermittedCommands", "AFXTOOLBAR/CMFCToolBar::SetOneRowWithSibling", "AFXTOOLBAR/CMFCToolBar::SetPermament", "AFXTOOLBAR/CMFCToolBar::SetRouteCommandsViaFrame", "AFXTOOLBAR/CMFCToolBar::SetShowTooltips", "AFXTOOLBAR/CMFCToolBar::SetSiblingToolBar", "AFXTOOLBAR/CMFCToolBar::SetSizes", "AFXTOOLBAR/CMFCToolBar::SetToolBarBtnText", "AFXTOOLBAR/CMFCToolBar::SetTwoRowsWithSibling", "AFXTOOLBAR/CMFCToolBar::SetUserImages", "AFXTOOLBAR/CMFCToolBar::StretchPane", "AFXTOOLBAR/CMFCToolBar::TranslateChar", "AFXTOOLBAR/CMFCToolBar::UpdateButton", "AFXTOOLBAR/CMFCToolBar::WrapToolBar", "AFXTOOLBAR/CMFCToolBar::AllowShowOnList", "AFXTOOLBAR/CMFCToolBar::CalcMaxButtonHeight", "AFXTOOLBAR/CMFCToolBar::DoPaint", "AFXTOOLBAR/CMFCToolBar::DrawButton", "AFXTOOLBAR/CMFCToolBar::DrawSeparator", "AFXTOOLBAR/CMFCToolBar::OnUserToolTip", "AFXTOOLBAR/CMFCToolBar::m_bDontScaleImages", "AFXTOOLBAR/CMFCToolBar::m_dblLargeImageRatio"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBar [MFC], AddBasicCommand", "CMFCToolBar [MFC], AddCommandUsage", "CMFCToolBar [MFC], AddToolBarForImageCollection", "CMFCToolBar [MFC], AdjustLayout", "CMFCToolBar [MFC], AdjustSize", "CMFCToolBar [MFC], AllowChangeTextLabels", "CMFCToolBar [MFC], AreTextLabels", "CMFCToolBar [MFC], AutoGrayInactiveImages", "CMFCToolBar [MFC], ButtonToIndex", "CMFCToolBar [MFC], CalcFixedLayout", "CMFCToolBar [MFC], CalcSize", "CMFCToolBar [MFC], CanHandleSiblings", "CMFCToolBar [MFC], CleanUpImages", "CMFCToolBar [MFC], CleanUpLockedImages", "CMFCToolBar [MFC], CanBeClosed", "CMFCToolBar [MFC], CanBeRestored", "CMFCToolBar [MFC], CanFocus", "CMFCToolBar [MFC], CanHandleSiblings", "CMFCToolBar [MFC], CommandToIndex", "CMFCToolBar [MFC], Create", "CMFCToolBar [MFC], CreateEx", "CMFCToolBar [MFC], Deactivate", "CMFCToolBar [MFC], EnableCustomizeButton", "CMFCToolBar [MFC], EnableDocking", "CMFCToolBar [MFC], EnableLargeIcons", "CMFCToolBar [MFC], EnableQuickCustomization", "CMFCToolBar [MFC], EnableReflections", "CMFCToolBar [MFC], EnableTextLabels", "CMFCToolBar [MFC], FromHandlePermanent", "CMFCToolBar [MFC], GetAllButtons", "CMFCToolBar [MFC], GetAllToolbars", "CMFCToolBar [MFC], GetBasicCommands", "CMFCToolBar [MFC], GetButton", "CMFCToolBar [MFC], GetButtonInfo", "CMFCToolBar [MFC], GetButtonSize", "CMFCToolBar [MFC], GetButtonStyle", "CMFCToolBar [MFC], GetButtonText", "CMFCToolBar [MFC], GetColdImages", "CMFCToolBar [MFC], GetColumnWidth", "CMFCToolBar [MFC], GetCommandButtons", "CMFCToolBar [MFC], GetCount", "CMFCToolBar [MFC], GetCustomizeButton", "CMFCToolBar [MFC], GetDefaultImage", "CMFCToolBar [MFC], GetDisabledImages", "CMFCToolBar [MFC], GetDisabledMenuImages", "CMFCToolBar [MFC], GetDroppedDownMenu", "CMFCToolBar [MFC], GetGrayDisabledButtons", "CMFCToolBar [MFC], GetHighlightedButton", "CMFCToolBar [MFC], GetHotBorder", "CMFCToolBar [MFC], GetHotTextColor", "CMFCToolBar [MFC], GetHwndLastFocus", "CMFCToolBar [MFC], GetIgnoreSetText", "CMFCToolBar [MFC], GetImageSize", "CMFCToolBar [MFC], GetImages", "CMFCToolBar [MFC], GetImagesOffset", "CMFCToolBar [MFC], GetInvalidateItemRect", "CMFCToolBar [MFC], GetItemID", "CMFCToolBar [MFC], GetItemRect", "CMFCToolBar [MFC], GetLargeColdImages", "CMFCToolBar [MFC], GetLargeDisabledImages", "CMFCToolBar [MFC], GetLargeImages", "CMFCToolBar [MFC], GetLockedColdImages", "CMFCToolBar [MFC], GetLockedDisabledImages", "CMFCToolBar [MFC], GetLockedImages", "CMFCToolBar [MFC], GetLockedImageSize", "CMFCToolBar [MFC], GetLockedMenuImages", "CMFCToolBar [MFC], GetMenuButtonSize", "CMFCToolBar [MFC], GetMenuImageSize", "CMFCToolBar [MFC], GetMenuImages", "CMFCToolBar [MFC], GetOrigButtons", "CMFCToolBar [MFC], GetOrigResetButtons", "CMFCToolBar [MFC], GetResourceID", "CMFCToolBar [MFC], GetRouteCommandsViaFrame", "CMFCToolBar [MFC], GetRowHeight", "CMFCToolBar [MFC], GetShowTooltips", "CMFCToolBar [MFC], GetSiblingToolBar", "CMFCToolBar [MFC], GetUserImages", "CMFCToolBar [MFC], HitTest", "CMFCToolBar [MFC], InsertButton", "CMFCToolBar [MFC], InsertSeparator", "CMFCToolBar [MFC], InvalidateButton", "CMFCToolBar [MFC], IsAddRemoveQuickCustomize", "CMFCToolBar [MFC], IsAltCustomizeMode", "CMFCToolBar [MFC], IsAutoGrayInactiveImages", "CMFCToolBar [MFC], IsBasicCommand", "CMFCToolBar [MFC], IsButtonExtraSizeAvailable", "CMFCToolBar [MFC], IsButtonHighlighted", "CMFCToolBar [MFC], IsCommandPermitted", "CMFCToolBar [MFC], IsCommandRarelyUsed", "CMFCToolBar [MFC], IsCustomizeMode", "CMFCToolBar [MFC], IsDragButton", "CMFCToolBar [MFC], IsExistCustomizeButton", "CMFCToolBar [MFC], IsFloating", "CMFCToolBar [MFC], IsLargeIcons", "CMFCToolBar [MFC], IsLastCommandFromButton", "CMFCToolBar [MFC], IsLocked", "CMFCToolBar [MFC], IsOneRowWithSibling", "CMFCToolBar [MFC], IsUserDefined", "CMFCToolBar [MFC], LoadBitmap", "CMFCToolBar [MFC], LoadBitmapEx", "CMFCToolBar [MFC], LoadParameters", "CMFCToolBar [MFC], LoadState", "CMFCToolBar [MFC], LoadToolBar", "CMFCToolBar [MFC], LoadToolBarEx", "CMFCToolBar [MFC], OnChangeHot", "CMFCToolBar [MFC], OnFillBackground", "CMFCToolBar [MFC], OnReset", "CMFCToolBar [MFC], OnSetAccData", "CMFCToolBar [MFC], OnSetDefaultButtonText", "CMFCToolBar [MFC], RemoveAllButtons", "CMFCToolBar [MFC], RemoveButton", "CMFCToolBar [MFC], RemoveStateFromRegistry", "CMFCToolBar [MFC], ReplaceButton", "CMFCToolBar [MFC], ResetAll", "CMFCToolBar [MFC], ResetAllImages", "CMFCToolBar [MFC], RestoreOriginalState", "CMFCToolBar [MFC], SaveState", "CMFCToolBar [MFC], SetBasicCommands", "CMFCToolBar [MFC], SetButtonInfo", "CMFCToolBar [MFC], SetButtonStyle", "CMFCToolBar [MFC], SetButtonText", "CMFCToolBar [MFC], SetButtons", "CMFCToolBar [MFC], SetCommandUsageOptions", "CMFCToolBar [MFC], SetCustomizeMode", "CMFCToolBar [MFC], SetGrayDisabledButtons", "CMFCToolBar [MFC], SetHeight", "CMFCToolBar [MFC], SetHotBorder", "CMFCToolBar [MFC], SetHotTextColor", "CMFCToolBar [MFC], SetLargeIcons", "CMFCToolBar [MFC], SetLockedSizes", "CMFCToolBar [MFC], SetMenuSizes", "CMFCToolBar [MFC], SetNonPermittedCommands", "CMFCToolBar [MFC], SetOneRowWithSibling", "CMFCToolBar [MFC], SetPermament", "CMFCToolBar [MFC], SetRouteCommandsViaFrame", "CMFCToolBar [MFC], SetShowTooltips", "CMFCToolBar [MFC], SetSiblingToolBar", "CMFCToolBar [MFC], SetSizes", "CMFCToolBar [MFC], SetToolBarBtnText", "CMFCToolBar [MFC], SetTwoRowsWithSibling", "CMFCToolBar [MFC], SetUserImages", "CMFCToolBar [MFC], StretchPane", "CMFCToolBar [MFC], TranslateChar", "CMFCToolBar [MFC], UpdateButton", "CMFCToolBar [MFC], WrapToolBar", "CMFCToolBar [MFC], AllowShowOnList", "CMFCToolBar [MFC], CalcMaxButtonHeight", "CMFCToolBar [MFC], DoPaint", "CMFCToolBar [MFC], DrawButton", "CMFCToolBar [MFC], DrawSeparator", "CMFCToolBar [MFC], OnUserToolTip", "CMFCToolBar [MFC], m_bDontScaleImages", "CMFCToolBar [MFC], m_dblLargeImageRatio"]
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
 caps.latest.revision: 48
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBar Class
-The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.  
+The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
   
 ## Syntax  
   
@@ -620,7 +605,7 @@ virtual BOOL Create(
  A pointer to the parent window of the toolbar.  
   
  [in] `dwStyle`  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for the list of styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for the list of styles.  
   
  [in] `nID`  
  The ID of the child window of the toolbar.  
@@ -1158,7 +1143,7 @@ BOOL GetGrayDisabledButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` to dim the images of disabled buttons; `FALSE`to obtain images from the collection of disabled images.  
+ `TRUE` to dim the images of disabled buttons; `FALSE` to obtain images from the collection of disabled images.  
   
 ### Remarks  
  Use [CMFCToolBar::SetGrayDisabledButtons](#setgraydisabledbuttons) to switch between dimmed images and the images from the collection of disabled images.  
@@ -1931,7 +1916,7 @@ BOOL IsOneRowWithSibling();
  You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
 ##  <a name="isresourcechanged"></a>  CMFCToolBar::IsResourceChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsResourceChanged() const;  
@@ -1942,7 +1927,7 @@ virtual BOOL IsResourceChanged() const;
 ### Remarks  
   
 ##  <a name="issibling"></a>  CMFCToolBar::IsSibling  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsSibling();
@@ -2003,7 +1988,7 @@ virtual BOOL LoadBitmap(
  Call the `LoadBitmapEx` method to load additional images after you create the toolbar.  
   
 ##  <a name="loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL LoadBitmapEx(
@@ -2020,7 +2005,7 @@ virtual BOOL LoadBitmapEx(
 ### Remarks  
   
 ##  <a name="loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
@@ -2165,7 +2150,7 @@ AFX_IMPORT_DATA static double m_dblLargeImageRatio;
  The framework uses this data member when you do not specify a set of large images. For example, if you provide only the set of small images with size 16x16 and want the large images to have the size 24x24, set this data member to 1.5.  
   
 ##  <a name="nextmenu"></a>  CMFCToolBar::NextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL NextMenu();
@@ -2176,7 +2161,7 @@ virtual BOOL NextMenu();
 ### Remarks  
   
 ##  <a name="onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnBeforeRemoveButton(
@@ -2210,7 +2195,7 @@ virtual void OnChangeHot(int iHot);
  Override this method to process notifications that the user selected a button on a toolbar.  
   
 ##  <a name="onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnChangeVisualManager();
@@ -2235,7 +2220,7 @@ virtual void OnFillBackground(CDC* pDC);
  Override this method to draw custom background in derived classes.  
   
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnGlobalFontsChanged();
@@ -2256,7 +2241,7 @@ virtual void OnReset();
  The default implementation does nothing. Override `OnReset` in a class derived from `CMFCToolBar` when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
   
 ##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSetAccData(long lVal);
@@ -2313,7 +2298,7 @@ virtual BOOL OnUserToolTip(
  Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#onusertooltip) to obtain the tooltip text.  
   
 ##  <a name="prevmenu"></a>  CMFCToolBar::PrevMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PrevMenu();
@@ -2340,7 +2325,7 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
 ### Remarks  
  This method posts a `WM_COMMAND` message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
   
- Use the [ON_COMMAND](http://msdn.microsoft.com/library/f24f8bda-2cf4-49d5-aa3d-6f2e6bb003f2) macro to map the `WM_COMMAND` message to a member function.  
+ Use the [ON_COMMAND](message-map-macros-mfc.md#on_command) macro to map the `WM_COMMAND` message to a member function.  
   
 ##  <a name="removeallbuttons"></a>  CMFCToolBar::RemoveAllButtons  
  Removes all buttons and separators from the toolbar.  
@@ -2452,7 +2437,7 @@ static void __stdcall ResetAllImages();
  This method clears the image collections that are initialized by the [CMFCToolBar::LoadToolBar](#loadtoolbar) and [CMFCToolBar::LoadBitmap](#loadbitmap) methods.  
   
 ##  <a name="resetimages"></a>  CMFCToolBar::ResetImages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ResetImages();
@@ -2461,7 +2446,7 @@ virtual void ResetImages();
 ### Remarks  
   
 ##  <a name="restorefocus"></a>  CMFCToolBar::RestoreFocus  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void RestoreFocus();
@@ -2485,7 +2470,7 @@ virtual BOOL RestoreOriginalState();
  The framework calls this method when the user chooses the **Reset All** button on the **Toolbars** page of a customization dialog box.  
   
 ##  <a name="saveparameters"></a>  CMFCToolBar::SaveParameters  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
@@ -2712,7 +2697,7 @@ void SetHeight(int cyHeight);
  This method redraws the toolbar after it sets the height.  
   
 ##  <a name="sethelpmode"></a>  CMFCToolBar::SetHelpMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static void __stdcall SetHelpMode(BOOL bOn = TRUE);
@@ -2724,7 +2709,7 @@ static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 ### Remarks  
   
 ##  <a name="sethot"></a>  CMFCToolBar::SetHot  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL SetHot(CMFCToolBarButton* pMenuButton);
@@ -2768,7 +2753,7 @@ static void SetHotTextColor(COLORREF clrText);
  For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder).  
   
 ##  <a name="setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetIgnoreSetText(BOOL bValue);
@@ -2823,7 +2808,7 @@ void SetLockedSizes(
  Call the [CMFCToolBar::GetLockedImageSize](#getlockedimagesize) method to retrieve the size of locked images. Call the [CMFCToolBar::GetButtonSize](#getbuttonsize) method to retrieve the size of locked toolbar buttons.  
   
 ##  <a name="setmaskmode"></a>  CMFCToolBar::SetMaskMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetMaskMode(BOOL bMasked);
@@ -2888,7 +2873,7 @@ void SetOneRowWithSibling();
  The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibling) method when the user clicks the **Show Buttons on Two Rows** button.  
   
 ##  <a name="setorigbuttons"></a>  CMFCToolBar::SetOrigButtons  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetOrigButtons(const CObList& lstOrigButtons);

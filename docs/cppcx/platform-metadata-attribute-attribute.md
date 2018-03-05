@@ -2,23 +2,20 @@
 title: "Platform::Metadata::Attribute Attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Metadata::Attribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Metadata::Attribute Attribute"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Metadata::Attribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Metadata::Attribute Attribute"]
 ms.assetid: 0e69727f-429b-4f7d-85c6-eea614f14dd7
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::Attribute Attribute
 Represents the base class for all attributes.  
@@ -26,21 +23,18 @@ Represents the base class for all attributes.
 ## Syntax  
   
 ```cpp  
-  
 public ref class Attribute abstract : Object  
 ```  
   
 ## Inheritance  
- [Platform::Object](../cppcx/object-object-constructor.md)  
+ [Platform::Object](../cppcx/platform-object-class.md)  
   
  [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
   
-## Remarks  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
-  
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform::Metadata  
   

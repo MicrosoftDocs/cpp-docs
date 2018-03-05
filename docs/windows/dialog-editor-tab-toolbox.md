@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Toolbox [C++], Dialog Editor tab"
-  - "controls [C++], types"
-  - "syslink controls ino dialog boxes"
-  - "custom controls [Visual Studio], dialog boxes"
-  - "controls [C++], standard"
-  - "Dialog editor, creating controls"
-  - "controls [C++], adding to dialog boxes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls ino dialog boxes", "custom controls [Visual Studio], dialog boxes", "controls [C++], standard", "Dialog editor, creating controls", "controls [C++], adding to dialog boxes"]
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor Tab, Toolbox
 The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
@@ -46,7 +23,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [Button control](../mfc/reference/cbutton-class.md)  
   
--   [Check Box control](../mfc/reference/button-styles.md)  
+-   [Check Box control](../mfc/reference/styles-used-by-mfc.md#button-styles)  
   
 -   [Combo Box control](../mfc/reference/ccombobox-class.md)  
   
@@ -56,7 +33,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [List Box control](../mfc/reference/clistbox-class.md)  
   
--   [Radio Button control](../mfc/reference/button-styles.md)  
+-   [Radio Button control](../mfc/reference/styles-used-by-mfc.md#button-styles)  
   
 -   [Static Text control](../mfc/reference/cstatic-class.md)  
   
@@ -102,7 +79,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
 
  For more information on using the RichEdit 1.0 control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -111,7 +88,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
  [Controls](../mfc/controls-mfc.md)   
  [Control Classes](../mfc/control-classes.md)   
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   
- [Scroll-Bar Styles](../mfc/reference/scroll-bar-styles.md)   
+ [Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)   
  [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)   
  [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

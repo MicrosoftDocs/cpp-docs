@@ -4,44 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4356"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4356"
+f1_keywords: ["C4356"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4356"]
 ms.assetid: 3af3defe-de33-43b6-bd6c-2c2e09e34f3f
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4356
 'member' : static data member cannot be initialized via derived class  
   
- The initialization of a static data member was ill formed. The compiler accepted the initialization.  
-  
- This is a breaking change in the Visual C++ .NET 2003 compiler.  
-  
- For code that works the same in all versions of Visual C++, initialize the member through the base class.  
+ The initialization of a static data member was ill formed. The compiler accepted the initialization. To avoid the warning, initialize the member through the base class.  
   
  Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.  
   

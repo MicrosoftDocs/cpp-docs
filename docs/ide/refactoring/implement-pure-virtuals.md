@@ -4,28 +4,14 @@ ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-    - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-    - "cs-cz"
-    - "de-de"
-    - "es-es"
-    - "fr-fr"
-    - "it-it"
-    - "ja-jp"
-    - "ko-kr"
-    - "pl-pl"
-    - "pt-br"
-    - "ru-ru"
-    - "tr-tr"
-    - "zh-cn"
-    - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 
 # Implement Pure Virtuals

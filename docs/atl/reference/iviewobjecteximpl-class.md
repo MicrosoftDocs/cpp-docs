@@ -4,48 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IViewObjectExImpl<T>"
-  - "ATL.IViewObjectExImpl"
-  - "ATL::IViewObjectExImpl"
-  - "ATL.IViewObjectExImpl<T>"
-  - "IViewObjectExImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], drawing"
-  - "IViewObjectEx ATL implementation"
-  - "advise sinks"
-  - "IViewObjectExImpl class"
+f1_keywords: ["IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl::Draw", "ATLCTL/ATL::IViewObjectExImpl::Freeze", "ATLCTL/ATL::IViewObjectExImpl::GetAdvise", "ATLCTL/ATL::IViewObjectExImpl::GetColorSet", "ATLCTL/ATL::IViewObjectExImpl::GetExtent", "ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent", "ATLCTL/ATL::IViewObjectExImpl::GetRect", "ATLCTL/ATL::IViewObjectExImpl::GetViewStatus", "ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint", "ATLCTL/ATL::IViewObjectExImpl::QueryHitRect", "ATLCTL/ATL::IViewObjectExImpl::SetAdvise", "ATLCTL/ATL::IViewObjectExImpl::Unfreeze"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX controls [C++], drawing", "IViewObjectEx ATL implementation", "advise sinks", "IViewObjectExImpl class"]
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IViewObjectExImpl Class
 This class implements **IUnknown** and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -108,7 +84,7 @@ STDMETHOD(Draw)(
 ### Remarks  
  This method calls **CComControl::OnDrawAdvanced** which in turn calls your control class's `OnDraw` method. An `OnDraw` method is automatically added to your control class when you create your control with the ATL Control Wizard. The Wizard's default `OnDraw` draws a rectangle with the label "ATL 3.0".  
   
- See [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655) in the Windows SDK.  
   
 ##  <a name="freeze"></a>  IViewObjectExImpl::Freeze  
  Freezes the drawn representation of a control so it won't change until an `Unfreeze`. The ATL implementation returns **E_NOTIMPL**.  
@@ -122,7 +98,7 @@ STDMETHOD(Freeze)(
 ```  
   
 ### Remarks  
- See [IViewObject::Freeze](http://msdn.microsoft.com/library/windows/desktop/ms688728) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::Freeze](http://msdn.microsoft.com/library/windows/desktop/ms688728) in the Windows SDK.  
   
 ##  <a name="getadvise"></a>  IViewObjectExImpl::GetAdvise  
  Retrieves an existing advisory sink connection on the control, if there is one.  
@@ -137,7 +113,7 @@ STDMETHOD(GetAdvise)(
 ### Remarks  
  The advisory sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink).  
   
- See [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::GetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692772) in the Windows SDK.  
   
 ##  <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet  
  Returns the logical palette used by the control for drawing. The ATL implementation returns **E_NOTIMPL**.  
@@ -153,7 +129,7 @@ STDMETHOD(GetColorSet)(
 ```  
   
 ### Remarks  
- See [IViewObject::GetColorSet](http://msdn.microsoft.com/library/windows/desktop/ms686553) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::GetColorSet](http://msdn.microsoft.com/library/windows/desktop/ms686553) in the Windows SDK.  
   
 ##  <a name="getextent"></a>  IViewObjectExImpl::GetExtent  
  Retrieves the control's display size in HIMETRIC units (0.01 millimeter per unit) from the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
@@ -167,7 +143,7 @@ STDMETHOD(GetExtent)(
 ```  
   
 ### Remarks  
- See [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) in the Windows SDK.  
   
 ##  <a name="getnaturalextent"></a>  IViewObjectExImpl::GetNaturalExtent  
  Provides sizing hints from the container for the object to use as the user resizes it.  
@@ -185,7 +161,7 @@ STDMETHOD(GetNaturalExtent)(
 ### Remarks  
  If `dwAspect` is `DVASPECT_CONTENT` and *pExtentInfo->dwExtentMode* is **DVEXTENT_CONTENT**, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Otherwise, returns an error `HRESULT`.  
   
- See [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObjectEx::GetNaturalExtent](http://msdn.microsoft.com/library/windows/desktop/ms683718) in the Windows SDK.  
   
 ##  <a name="getrect"></a>  IViewObjectExImpl::GetRect  
  Returns a rectangle describing a requested drawing aspect. The ATL implementation returns **E_NOTIMPL**.  
@@ -195,7 +171,7 @@ STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 ```  
   
 ### Remarks  
- See [IViewObjectEx::GetRect](http://msdn.microsoft.com/library/windows/desktop/ms695246) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObjectEx::GetRect](http://msdn.microsoft.com/library/windows/desktop/ms695246) in the Windows SDK.  
   
 ##  <a name="getviewstatus"></a>  IViewObjectExImpl::GetViewStatus  
  Returns information about the opacity of the object and what drawing aspects are supported.  
@@ -207,7 +183,7 @@ STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
 ### Remarks  
  By default, ATL sets `pdwStatus` to indicate that the control supports **VIEWSTATUS_OPAQUE** (possible values are in the [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) enumeration).  
   
- See [IViewObjectEx::GetViewStatus](http://msdn.microsoft.com/library/windows/desktop/ms693371) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObjectEx::GetViewStatus](http://msdn.microsoft.com/library/windows/desktop/ms693371) in the Windows SDK.  
   
 ##  <a name="queryhitpoint"></a>  IViewObjectExImpl::QueryHitPoint  
  Checks if the specified point is in the specified rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.  
@@ -226,7 +202,7 @@ STDMETHOD(QueryHitPoint)(
   
  If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns `S_OK`. Otherwise, the method returns **E_FAIL**.  
   
- See [IViewObjectEx::QueryHitPoint](http://msdn.microsoft.com/library/windows/desktop/ms691209) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObjectEx::QueryHitPoint](http://msdn.microsoft.com/library/windows/desktop/ms691209) in the Windows SDK.  
   
 ##  <a name="queryhitrect"></a>  IViewObjectExImpl::QueryHitRect  
  Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a [HITRESULT](http://msdn.microsoft.com/library/windows/desktop/ms682187) value in `pHitResult`.  
@@ -245,7 +221,7 @@ STDMETHOD(QueryHitRect)(
   
  If `dwAspect` equals [DVASPECT_CONTENT](http://msdn.microsoft.com/library/windows/desktop/ms690318), the method returns `S_OK`. Otherwise, the method returns **E_FAIL**.  
   
- See [IViewObjectEx::QueryHitRect](http://msdn.microsoft.com/library/windows/desktop/ms693797) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObjectEx::QueryHitRect](http://msdn.microsoft.com/library/windows/desktop/ms693797) in the Windows SDK.  
   
 ##  <a name="setadvise"></a>  IViewObjectExImpl::SetAdvise  
  Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.  
@@ -262,7 +238,7 @@ STDMETHOD(SetAdvise)(
  The pointer to the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).  
 
   
- See [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::SetAdvise](http://msdn.microsoft.com/library/windows/desktop/ms683950) in the Windows SDK.  
   
 ##  <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze  
  Unfreezes the drawn representation of the control. The ATL implementation returns **E_NOTIMPL**.  
@@ -272,7 +248,7 @@ STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
 ```  
   
 ### Remarks  
- See [IViewObject::Unfreeze](http://msdn.microsoft.com/library/windows/desktop/ms686641) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IViewObject::Unfreeze](http://msdn.microsoft.com/library/windows/desktop/ms686641) in the Windows SDK.  
   
 ##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle  
  Implement this method to close the handle associated with this object.  

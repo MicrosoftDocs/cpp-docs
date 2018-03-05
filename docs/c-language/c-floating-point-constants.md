@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "types [C], constants"
-  - "floating-point numbers, floating-point constants"
-  - "constants, floating-point"
-  - "floating-point constants"
-  - "floating-point constants, about floating-point constants"
-  - "double data type, floating-point constants"
+dev_langs: ["C++"]
+helpviewer_keywords: ["types [C], constants", "floating-point numbers, floating-point constants", "constants, floating-point", "floating-point constants", "floating-point constants, about floating-point constants", "double data type, floating-point constants"]
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C Floating-Point Constants
 A "floating-point constant" is a decimal number that represents a signed real number. The representation of a signed real number includes an integer portion, a fractional portion, and an exponent. Use floating-point constants to represent floating-point values that cannot be changed.  
@@ -54,7 +33,7 @@ A "floating-point constant" is a decimal number that represents a signed real nu
  &nbsp;&nbsp; **E**  *sign*<sub>opt</sub> *digit-sequence*  
   
  *sign* : one of  
- &nbsp;&nbsp; **+ –**  
+ &nbsp;&nbsp; **+ -**  
   
  *digit-sequence*:  
  &nbsp;&nbsp; *digit*  
@@ -75,7 +54,7 @@ A "floating-point constant" is a decimal number that represents a signed real nu
 25E-4     /* =  0.0025 */  
 ```  
   
- Floating-point constants are positive unless they are preceded by a minus sign (**–**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
+ Floating-point constants are positive unless they are preceded by a minus sign (**-**). In this case, the minus sign is treated as a unary arithmetic negation operator. Floating-point constants have type `float`, `double`, or `long double`.  
   
  A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:  
   

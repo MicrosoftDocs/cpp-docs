@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MFC COM (MFC)"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], COM support"
-  - "MFC ActiveX controls [C++], COM support in MFC"
-  - "MFC COM [C++]"
-  - "ActiveX controls [C++], COM object model"
-  - "Active technology [C++]"
-  - "COM [C++], MFC support"
+f1_keywords: ["MFC COM (MFC)"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, COM support", "MFC ActiveX controls [MFC], COM support in MFC", "MFC COM [MFC]", "ActiveX controls [MFC], COM object model", "Active technology [MFC]", "COM [MFC], MFC support"]
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC COM
 A subset of MFC is designed to support COM, while most of the Active Template Library (ATL) is designed for COM programming. This section of topics describes MFC's support for COM.  
@@ -58,13 +36,13 @@ A subset of MFC is designed to support COM, while most of the Active Template Li
   
     -   [Upgrade an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)  
   
-    -   [Debugging an ActiveX Control](http://msdn.microsoft.com/library/bbc02cf7-a7e6-44fe-99af-87a43e1d7251)  
+    -   [Debugging an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)  
   
 -   Active scripting controls the integrated behavior of one or more ActiveX controls from a browser or server. For more information on active scripting, see [Active Technology on the Internet](../mfc/active-technology-on-the-internet.md).  
   
 -   [Automation](../mfc/automation.md) (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to "expose" objects so they can be manipulated.  
   
-     The automated object might be local or [remote](../mfc/remote-automation.md) (on another machine accessible across a network). Automation is available for both OLE and COM objects.  
+     The automated object might be local or remote (on another machine accessible across a network). Automation is available for both OLE and COM objects.  
   
 -   This section also provides information on how to write COM components using MFC, for example, in [Connection Points](../mfc/connection-points.md).  
   
@@ -76,8 +54,6 @@ A subset of MFC is designed to support COM, while most of the Active Template Li
  [Active Document Containment](../mfc/active-document-containment.md)  
   
  [Automation](../mfc/automation.md)  
-  
- [Remote Automation](../mfc/remote-automation.md)  
   
  [Connection Points](../mfc/connection-points.md)  
   

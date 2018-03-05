@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComModule"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComModule class"
-  - "DLL modules [C++], ATL"
+f1_keywords: ["CComModule", "ATLBASE/ATL::CComModule", "ATLBASE/ATL::CComModule::GetClassObject", "ATLBASE/ATL::CComModule::GetModuleInstance", "ATLBASE/ATL::CComModule::GetResourceInstance", "ATLBASE/ATL::CComModule::GetTypeLibInstance", "ATLBASE/ATL::CComModule::Init", "ATLBASE/ATL::CComModule::RegisterClassHelper", "ATLBASE/ATL::CComModule::RegisterClassObjects", "ATLBASE/ATL::CComModule::RegisterServer", "ATLBASE/ATL::CComModule::RegisterTypeLib", "ATLBASE/ATL::CComModule::RevokeClassObjects", "ATLBASE/ATL::CComModule::Term", "ATLBASE/ATL::CComModule::UnregisterClassHelper", "ATLBASE/ATL::CComModule::UnregisterServer", "ATLBASE/ATL::CComModule::UpdateRegistryClass", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceD", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceS", "ATLBASE/ATL::CComModule::m_csObjMap", "ATLBASE/ATL::CComModule::m_csTypeInfoHolder", "ATLBASE/ATL::CComModule::m_csWindowCreate", "ATLBASE/ATL::CComModule::m_hInst", "ATLBASE/ATL::CComModule::m_hInstResource", "ATLBASE/ATL::CComModule::m_hInstTypeLib", "ATLBASE/ATL::CComModule::m_pObjMap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComModule class", "DLL modules [C++], ATL"]
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComModule Class
 As of ATL 7.0, `CComModule` is deprecated: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -113,7 +95,7 @@ class CComModule : public _ATL_MODULE
  `CComModule`  
   
 ## Requirements  
- `Header:` atlbase.h  
+ **Header:** atlbase.h  
   
 ##  <a name="getclassobject"></a>  CComModule::GetClassObject  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -333,10 +315,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
   
 ### Parameters  
  `dwClsContext`  
- [in] Specifies the context in which the class object is to be run. Possible values are **CLSCTX_INPROC_SERVER**, **CLSCTX_INPROC_HANDLER**, or **CLSCTX_LOCAL_SERVER**. For a description of these values, see [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] Specifies the context in which the class object is to be run. Possible values are **CLSCTX_INPROC_SERVER**, **CLSCTX_INPROC_HANDLER**, or **CLSCTX_LOCAL_SERVER**. For a description of these values, see [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) in the Windows SDK.  
   
  `dwFlags`  
- [in] Determines the connection types to the class object. Possible values are **REGCLS_SINGLEUSE**, **REGCLS_MULTIPLEUSE**, or **REGCLS_MULTI_SEPARATE**. For a description of these values, see [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] Determines the connection types to the class object. Possible values are **REGCLS_SINGLEUSE**, **REGCLS_MULTIPLEUSE**, or **REGCLS_MULTI_SEPARATE**. For a description of these values, see [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) in the Windows SDK.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -368,7 +350,7 @@ HRESULT RegisterServer(
   
  If `bRegTypeLib` is **TRUE**, the type library information will also be updated.  
   
- See [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) for information on how to add an entry to the object map.  
+ See [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) for information on how to add an entry to the object map.  
   
  `RegisterServer` will be called automatically by **DLLRegisterServer** for a DLL or by `WinMain` for an EXE run with the **/RegServer** command line option.  
   
@@ -466,7 +448,7 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
   
  `UnregisterServer` will be called automatically by **DLLUnregisterServer** for a DLL or by `WinMain` for an EXE run with the **/UnregServer** command line option.  
   
- See [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) for information on how to add an entry to the object map.  
+ See [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) for information on how to add an entry to the object map.  
   
 ##  <a name="updateregistryclass"></a>  CComModule::UpdateRegistryClass  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -521,7 +503,7 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
   
  Depending on the value of `bRegister`, `UpdateRegistryClass` calls either [RegisterClassHelper](#registerclasshelper) or [UnregisterClassHelper](#unregisterclasshelper).  
   
- By specifying the [DECLARE_REGISTRY](http://msdn.microsoft.com/library/89b8949b-5c27-4a9c-8a51-ad276bba3a54) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
+ By specifying the [DECLARE_REGISTRY](registry-macros.md#declare_registry) macro, `UpdateRegistryClass` will be invoked automatically when your object map is processed.  
   
 ##  <a name="updateregistryfromresourced"></a>  CComModule::UpdateRegistryFromResourceD  
  As of ATL 7.0, `CComModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  
@@ -559,7 +541,7 @@ virtual HRESULT UpdateRegistryFromResourceD(
   
  If `bRegister` is **TRUE**, this method registers the object in the system registry; otherwise, it unregisters the object.  
   
- By specifying the [DECLARE_REGISTRY_RESOURCE](http://msdn.microsoft.com/library/7ac11498-8ee2-4156-8df2-7076f7ddda8b) or [DECLARE_REGISTRY_RESOURCEID](http://msdn.microsoft.com/library/65bf3576-5396-416e-ba48-e14b3236c49b) macro, `UpdateRegistryFromResourceD` will be invoked automatically when your object map is processed.  
+ By specifying the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro, `UpdateRegistryFromResourceD` will be invoked automatically when your object map is processed.  
   
 > [!NOTE]
 >  To substitute replacement values at run time, do not specify the `DECLARE_REGISTRY_RESOURCE` or `DECLARE_REGISTRY_RESOURCEID` macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceD`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
@@ -606,7 +588,7 @@ virtual HRESULT UpdateRegistryFromResourceS(
  `UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your stdafx.h.  
   
 > [!NOTE]
->  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](http://msdn.microsoft.com/library/7ac11498-8ee2-4156-8df2-7076f7ddda8b) or [DECLARE_REGISTRY_RESOURCEID](http://msdn.microsoft.com/library/65bf3576-5396-416e-ba48-e14b3236c49b) macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
+>  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro. Instead, create an array of **_ATL_REGMAP_ENTRIES** structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the `pMapEntries` parameter. This adds all the replacement values in the **_ATL_REGMAP_ENTRIES** structures to the Registrar's replacement map.  
   
  For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).  
   

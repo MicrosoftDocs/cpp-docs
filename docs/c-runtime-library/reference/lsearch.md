@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_lsearch"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_lsearch"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_lsearch"
-  - "lsearch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_lsearch function"
-  - "values, searching for"
-  - "keys, finding in arrays"
-  - "arrays [CRT], searching"
-  - "linear searches"
-  - "searching, linear"
-  - "lsearch function"
+f1_keywords: ["_lsearch", "lsearch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_lsearch function", "values, searching for", "keys, finding in arrays", "arrays [CRT], searching", "linear searches", "searching, linear", "lsearch function"]
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _lsearch
 Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md).  
@@ -146,9 +110,6 @@ int compare(const void *arg1, const void *arg2 )
 wordlist before _lsearch: hello thanks bye  
 wordlist after _lsearch: hello thanks bye extra  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

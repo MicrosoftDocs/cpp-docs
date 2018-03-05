@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DEllipse"
-  - "CD2DEllipse"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DEllipse class"
+f1_keywords: ["CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse::CD2DEllipse"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DEllipse [MFC], CD2DEllipse"]
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DEllipse Class
 A wrapper for `D2D1_ELLIPSE`.  

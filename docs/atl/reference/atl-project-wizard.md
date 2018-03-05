@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.appwiz.atl.com.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, creating"
-  - "ATL Project Wizard"
+f1_keywords: ["vc.appwiz.atl.com.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, creating", "ATL Project Wizard"]
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL Project Wizard
 The Active Template Library (ATL) is a set of template-based C++ classes that simplify writing small and fast COM objects. The ATL Project Wizard creates a project with the structures to contain COM objects.  

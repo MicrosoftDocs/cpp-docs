@@ -4,43 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDBSchemaRowsetImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDBSchemaRowsetImpl class"
+ms.topic: "reference"
+f1_keywords: ["IDBSchemaRowsetImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDBSchemaRowsetImpl class"]
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl Class
 Provides implementation for schema rowsets.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class SessionClass>  
 class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset  
 ```  

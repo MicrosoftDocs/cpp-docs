@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "links [C++], to embedded OLE objects"
-  - "containers [C++], links to embedded OLE objects"
-  - "containers [C++], advanced features"
-  - "container/server applications [C++]"
-  - "embedded objects [C++]"
-  - "OLE controls, containers"
-  - "OLE containers, advanced features"
-  - "server/container applications"
-  - "containers [C++], container applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Containers: Advanced Features
 This article describes the steps necessary to incorporate optional advanced features into existing container applications. These features are:  

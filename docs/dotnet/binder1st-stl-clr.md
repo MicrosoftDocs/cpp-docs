@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::binder1st"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binder1st function [STL/CLR]"
+f1_keywords: ["cliext::binder1st"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binder1st function [STL/CLR]"]
 ms.assetid: a989c9cc-a485-45d9-bd19-519018e6974b
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # binder1st (STL/CLR)
 The template class describes a one-argument functor that, when called, returns its stored two-argument functor called with its stored first argument and the supplied second argument. You use it specify a function object in terms of its stored functor.  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::ChainInterfaces::IidCount"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IidCount constant"
+f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces::IidCount"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IidCount constant"]
 ms.assetid: d4a90aa0-513c-4e99-b978-e12149734936
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::IidCount Constant
 The total number of interface IDs contained in the interfaces specified by template parameters `I0` through `I9`.  

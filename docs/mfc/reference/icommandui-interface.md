@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ICommandUI"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICommandUI interface"
+f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICommandUI interface [MFC]"]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ICommandUI Interface
 Manages user interface commands.  

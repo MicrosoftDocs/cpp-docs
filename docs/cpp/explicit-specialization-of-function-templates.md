@@ -4,42 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "overriding, functions"
-  - "function templates, specialization"
-  - "explicit specialization of function templates"
-  - "declaring functions, specialization of function template"
-  - "specialization of function templates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["overriding, functions", "function templates, specialization", "explicit specialization of function templates", "declaring functions [C++], specialization of function template", "specialization of function templates"]
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Explicit Specialization of Function Templates
 With a function template, you can define special behavior for a specific type by providing an explicit specialization (override) of the function template for that type. For example:  
   
-```  
+```cpp
 template<> void MySwap(double a, double b);  
 ```  
   
@@ -47,7 +27,7 @@ template<> void MySwap(double a, double b);
   
 ## Example  
   
-```  
+```cpp
 // explicit_specialization.cpp  
 template<class T> void f(T t)  
 {  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "merging profiles"
-  - "profile-guided optimizations, merging profiles"
+dev_langs: ["C++"]
+helpviewer_keywords: ["merging profiles", "profile-guided optimizations, merging profiles"]
 ms.assetid: aab686b5-59dd-40d1-a04b-5064690f65a6
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How to: Merge Multiple PGO Profiles into a Single Profile
 Profile-guided optimization (PGO) is a great tool for creating optimized binaries based on a scenario that is profiled. But what if you have an application that has several important, yet distinct scenarios; how do you create a single profile that PGO can use from several different scenarios? In Visual Studio, the PGO Manager, Pgomgr.exe, does this job for you.  

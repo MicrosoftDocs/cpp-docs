@@ -4,51 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "sub_match"
-  - "std::sub_match"
-  - "regex/std::sub_match"
-  - "std::sub_match::matched"
-  - "regex/std::sub_match::matched"
-  - "std::sub_match::compare"
-  - "regex/std::sub_match::compare"
-  - "std::sub_match::length"
-  - "regex/std::sub_match::length"
-  - "std::sub_match::str"
-  - "regex/std::sub_match::str"
-  - "std::sub_match::difference_type"
-  - "regex/std::sub_match::difference_type"
-  - "std::sub_match::iterator"
-  - "regex/std::sub_match::iterator"
-  - "std::sub_match::value_type"
-  - "regex/std::sub_match::value_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sub_match class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::sub_match", "regex/std::sub_match::matched", "regex/std::sub_match::compare", "regex/std::sub_match::length", "regex/std::sub_match::str", "regex/std::sub_match::difference_type", "regex/std::sub_match::iterator", "regex/std::sub_match::value_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::sub_match [C++]", "std::sub_match [C++], matched", "std::sub_match [C++], compare", "std::sub_match [C++], length", "std::sub_match [C++], str", "std::sub_match [C++], difference_type", "std::sub_match [C++], iterator", "std::sub_match [C++], value_type"]
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # sub_match Class
 Describes a submatch.  
@@ -80,7 +47,7 @@ public:
  The iterator type for submatches.  
   
 ## Remarks  
- The template class describes an object that designates a sequence of characters that matched a capture group in a call to [regex_match Function](../standard-library/regex-functions.md#regex_match_function) or to [regex_search Function](../standard-library/regex-functions.md#regex_search_function). Objects of type [match_results Class](../standard-library/match-results-class.md) hold an array of these objects, one for each capture group in the regular expression that was used in the search.  
+ The template class describes an object that designates a sequence of characters that matched a capture group in a call to [regex_match](../standard-library/regex-functions.md#regex_match) or to [regex_search](../standard-library/regex-functions.md#regex_search). Objects of type [match_results Class](../standard-library/match-results-class.md) hold an array of these objects, one for each capture group in the regular expression that was used in the search.  
   
  If the capture group was not matched the object's data member `matched` holds false, and the two iterators `first` and `second` (inherited from the base `std::pair`) are equal. If the capture group was matched, `matched` holds true, the iterator `first` points to the first character in the target sequence that matched the capture group, and the iterator `second` points one position past the last character in the target sequence that matched the capture group. Note that for a zero-length match the member `matched` holds true, the two iterators will be equal, and both will point to the position of the match.  
   
@@ -95,7 +62,7 @@ public:
   
  **Namespace:** std  
   
-##  <a name="sub_match__compare"></a>  sub_match::compare  
+##  <a name="compare"></a>  sub_match::compare  
  Compare submatch against a sequence.  
   
 ```  
@@ -178,7 +145,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__difference_type"></a>  sub_match::difference_type  
+##  <a name="difference_type"></a>  sub_match::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -241,7 +208,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__iterator"></a>  sub_match::iterator  
+##  <a name="iterator"></a>  sub_match::iterator  
  The type of an iterator.  
   
 ```  
@@ -304,7 +271,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__length"></a>  sub_match::length  
+##  <a name="length"></a>  sub_match::length  
  Returns the length of a submatch.  
   
 ```  
@@ -367,7 +334,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__matched"></a>  sub_match::matched  
+##  <a name="matched"></a>  sub_match::matched  
  Indicates if match succeeded.  
   
 ```  
@@ -430,7 +397,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__operator_basic_string_lt_value_type_gt_"></a>  sub_match::operator basic_string&lt;value_type&gt;  
+##  <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;  
  Casts submatch to a string.  
   
 ```  
@@ -493,7 +460,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__str"></a>  sub_match::str  
+##  <a name="str"></a>  sub_match::str  
  Converts submatch to a string.  
   
 ```  
@@ -556,7 +523,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__value_type"></a>  sub_match::value_type  
+##  <a name="value_type"></a>  sub_match::value_type  
  The type of an element.  
   
 ```  

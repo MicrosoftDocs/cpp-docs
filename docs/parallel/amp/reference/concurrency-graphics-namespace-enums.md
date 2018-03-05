@@ -5,12 +5,15 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["amp_graphics/concurrency::graphics::address_mode", "amp_graphics/concurrency::graphics::filter_mode"]
+dev_langs: ["C++"]
 ms.assetid: 1d2e1859-a3d7-4d3d-8e03-1a877a86b3e0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics namespace enums
 |||  
@@ -30,6 +33,9 @@ enum address_mode;
 ```  
 enum filter_mode;  
 ```  
-  
+## Requirements
+**Header:** amp_graphics.h
+**Namespace:** Concurrency::graphics
+
 ## See Also  
  [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

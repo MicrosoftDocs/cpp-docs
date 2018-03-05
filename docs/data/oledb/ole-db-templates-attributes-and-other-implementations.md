@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB, implementations"
-  - "OLE DB templates, about OLE DB templates"
-  - "OLE DB templates"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB, implementations", "OLE DB templates, about OLE DB templates", "OLE DB templates"]
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Templates, Attributes, and Other Implementations
 ## ATL OLE DB Templates  
@@ -56,7 +38,7 @@ translation.priority.ht:
   
 -   See the list of [OLE DB templates samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c).  
   
--   See [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)]).  
+-   See [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (in the Windows SDK).  
   
 ## OLE DB Attributes  
  The [OLE DB consumer attributes](../../windows/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the [OLE DB consumer templates](../../data/oledb/ole-db-consumer-templates-reference.md) to create working OLE DB consumers and providers. If you need to specify functionality not supported by the attributes, you can use the OLE DB Templates in conjunction with attributes in your code.  
@@ -65,7 +47,7 @@ translation.priority.ht:
  The MFC library has one class, [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object and displays the fields of the `CRowset` object in the dialog template's controls. It also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view. For more information, see `COleDBRecordView`.  
   
 ## OLE DB SDK Interfaces  
- In the cases where the OLE DB Templates do not support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ In the cases where the OLE DB Templates do not support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) in the Windows SDK.  
   
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   

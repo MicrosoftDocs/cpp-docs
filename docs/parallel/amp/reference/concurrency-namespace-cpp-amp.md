@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency namespace"
+ms.topic: "reference"
+f1_keywords: ["AMP/Concurrency"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency namespace"]
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency Namespace (C++ AMP)
 Provides classes and functions that accelerate the execution of C++ code on data-parallel hardware. For more information, see [C++ AMP Overview](../cpp-amp-overview.md)  
@@ -98,27 +81,27 @@ namespace Concurrency;
   
 |Name|Description|  
 |----------|-----------------|  
-|[all_memory_fence Function](concurrency-namespace-functions-amp.md#all_memory_fence)|Blocks execution of all threads in a tile until all memory accesses have been completed.|  
-|[amp_uninitialize Function](concurrency-namespace-functions-amp.md#amp_uninitialize)|Uninitializes the C++ AMP runtime.|  
-|[atomic_compare_exchange Function](concurrency-namespace-functions-amp.md#atomic_compare_exchange)|Overloaded. If the value stored at the specified location compares equal to the first specified value, then the second specified value is stored in the same location as an atomic operation.|  
-|[atomic_exchange Function](concurrency-namespace-functions-amp.md#atomic_exchange)|Overloaded. Sets the value stored at the specified location to the specified value as an atomic operation.|  
-|[atomic_fetch_add Function](concurrency-namespace-functions-amp.md#atomic_fetch_add)|Overloaded. Sets the value stored at the specified location to the sum of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_and Function](concurrency-namespace-functions-amp.md#atomic_fetch_and)|Overloaded. Sets the value stored at the specified location to the bitwise `and` of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_dec Function](concurrency-namespace-functions-amp.md#atomic_fetch_dec)|Overloaded. Decrements the value stored at the specified location and stores the result in the same location as an atomic operation.|  
-|[atomic_fetch_inc Function](concurrency-namespace-functions-amp.md#atomic_fetch_inc)|Overloaded. Increments the value stored at the specified location and stores the result in the same location as an atomic operation.|  
-|[atomic_fetch_max Function](concurrency-namespace-functions-amp.md#atomic_fetch_max)|Overloaded. Sets the value stored at the specified location to the larger of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_min Function](concurrency-namespace-functions-amp.md#atomic_fetch_min)|Overloaded. Sets the value stored at the specified location to the smaller of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_or Function](concurrency-namespace-functions-amp.md#atomic_fetch_or)|Overloaded. Sets the value stored at the specified location to the bitwise `or` of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_sub Function](concurrency-namespace-functions-amp.md#atomic_fetch_sub)|Overloaded. Sets the value stored at the specified location to the difference of that value and a specified value as an atomic operation.|  
-|[atomic_fetch_xor Function](concurrency-namespace-functions-amp.md#atomic_fetch_xor)|Overloaded. Sets the value stored at the specified location to the bitwise `xor` of that value and a specified value as an atomic operation.|  
-|[copy Function](concurrency-namespace-functions-amp.md#copy)|Copies a C++ AMP object. All synchronous data transfer requirements are met. Data can't be copied when code is running code on an accelerator. The general form of this function is `copy(src, dest)`.|  
-|[copy_async Function](concurrency-namespace-functions-amp.md#copy_async)|Copies a C++ AMP object and returns [completion_future](completion-future-class.md) that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.|  
-|[direct3d_abort Function](concurrency-namespace-functions-amp.md#direct3d_abort)|Aborts the execution of a function that has the `restrict(amp)` restriction clause.|  
-|[direct3d_errorf Function](concurrency-namespace-functions-amp.md#direct3d_errorf)|Prints a formatted string to the Visual Studio **Output** window and raises a [runtime_exception](runtime-exception-class.md) exception that has the same formatting string.|  
-|[direct3d_printf Function](concurrency-namespace-functions-amp.md#direct3d_printf)|Prints a formatted string to the Visual Studio **Output** window. It is called from a function that has the `restrict(amp)` restriction clause.|  
-|[global_memory_fence Function](concurrency-namespace-functions-amp.md#global_memory_fence)|Blocks execution of all threads in a tile until all global memory accesses have been completed.|  
+|[all_memory_fence](concurrency-namespace-functions-amp.md#all_memory_fence)|Blocks execution of all threads in a tile until all memory accesses have been completed.|  
+|[amp_uninitialize](concurrency-namespace-functions-amp.md#amp_uninitialize)|Uninitializes the C++ AMP runtime.|  
+|[atomic_compare_exchange](concurrency-namespace-functions-amp.md#atomic_compare_exchange)|Overloaded. If the value stored at the specified location compares equal to the first specified value, then the second specified value is stored in the same location as an atomic operation.|  
+|[atomic_exchange](concurrency-namespace-functions-amp.md#atomic_exchange)|Overloaded. Sets the value stored at the specified location to the specified value as an atomic operation.|  
+|[atomic_fetch_add](concurrency-namespace-functions-amp.md#atomic_fetch_add)|Overloaded. Sets the value stored at the specified location to the sum of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_and](concurrency-namespace-functions-amp.md#atomic_fetch_and)|Overloaded. Sets the value stored at the specified location to the bitwise `and` of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_dec](concurrency-namespace-functions-amp.md#atomic_fetch_dec)|Overloaded. Decrements the value stored at the specified location and stores the result in the same location as an atomic operation.|  
+|[atomic_fetch_inc](concurrency-namespace-functions-amp.md#atomic_fetch_inc)|Overloaded. Increments the value stored at the specified location and stores the result in the same location as an atomic operation.|  
+|[atomic_fetch_max](concurrency-namespace-functions-amp.md#atomic_fetch_max)|Overloaded. Sets the value stored at the specified location to the larger of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_min](concurrency-namespace-functions-amp.md#atomic_fetch_min)|Overloaded. Sets the value stored at the specified location to the smaller of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_or](concurrency-namespace-functions-amp.md#atomic_fetch_or)|Overloaded. Sets the value stored at the specified location to the bitwise `or` of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_sub](concurrency-namespace-functions-amp.md#atomic_fetch_sub)|Overloaded. Sets the value stored at the specified location to the difference of that value and a specified value as an atomic operation.|  
+|[atomic_fetch_xor](concurrency-namespace-functions-amp.md#atomic_fetch_xor)|Overloaded. Sets the value stored at the specified location to the bitwise `xor` of that value and a specified value as an atomic operation.|  
+|[copy](concurrency-namespace-functions-amp.md#copy)|Copies a C++ AMP object. All synchronous data transfer requirements are met. Data can't be copied when code is running code on an accelerator. The general form of this function is `copy(src, dest)`.|  
+|[copy_async](concurrency-namespace-functions-amp.md#copy_async)|Copies a C++ AMP object and returns [completion_future](completion-future-class.md) that can be waited on. Data can't be copied when code is running on an accelerator. The general form of this function is `copy(src, dest)`.|  
+|[direct3d_abort](concurrency-namespace-functions-amp.md#direct3d_abort)|Aborts the execution of a function that has the `restrict(amp)` restriction clause.|  
+|[direct3d_errorf](concurrency-namespace-functions-amp.md#direct3d_errorf)|Prints a formatted string to the Visual Studio **Output** window and raises a [runtime_exception](runtime-exception-class.md) exception that has the same formatting string.|  
+|[direct3d_printf](concurrency-namespace-functions-amp.md#direct3d_printf)|Prints a formatted string to the Visual Studio **Output** window. It is called from a function that has the `restrict(amp)` restriction clause.|  
+|[global_memory_fence](concurrency-namespace-functions-amp.md#global_memory_fence)|Blocks execution of all threads in a tile until all global memory accesses have been completed.|  
 |[parallel_for_each Function (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each)|Runs a function across the compute domain.|  
-|[tile_static_memory_fence Function](concurrency-namespace-functions-amp.md#tile_static_memory_fence)|Blocks execution of all threads in a tile until `tile_static` memory accesses have been completed.|  
+|[tile_static_memory_fence](concurrency-namespace-functions-amp.md#tile_static_memory_fence)|Blocks execution of all threads in a tile until `tile_static` memory accesses have been completed.|  
   
 ## Constants  
   

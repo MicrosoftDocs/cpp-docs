@@ -1,40 +1,20 @@
 ---
-title: "Generic Functions (C++-CLI) | Microsoft Docs"
+title: "Generic Functions (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functions [C++], generic"
-  - "generic methods"
-  - "generics [C++], functions"
-  - "methods [C++], generic"
-  - "generic functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["functions [C++], generic", "generic methods", "generics [C++], functions", "methods [C++], generic", "generic functions"]
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Functions (C++/CLI)
 A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  
@@ -44,15 +24,15 @@ A generic function is a function that is declared with type parameters. When cal
   
  This feature does not apply to all platforms.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
- This feature is not supported in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ This feature is not supported in the Windows Runtime.  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  
   
  **Syntax**  
@@ -96,7 +76,7 @@ return-type identifier<type-parameter identifier(s)>
   
  Generic functions are functions declared with a generic type parameter. They may be methods in a class or struct, or standalone functions. A single generic declaration implicitly declares a family of functions that differ only in the substitution of a different actual type for the generic type parameter.  
   
- In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)], class or struct constructors may not be declared with generic type parameters.  
+ In Visual C++, class or struct constructors may not be declared with generic type parameters.  
   
  When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. If the intended type argument cannot be deduced from the parameters used, the compiler will report an error.  
   

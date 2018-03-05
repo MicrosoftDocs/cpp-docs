@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CODBCFieldInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC, data source information"
-  - "CODBCFieldInfo structure"
+f1_keywords: ["CODBCFieldInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC [MFC], data source information", "CODBCFieldInfo structure [MFC]"]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CODBCFieldInfo Structure
 The `CODBCFieldInfo` structure contains information about the fields in an ODBC data source.  
@@ -56,13 +38,13 @@ struct CODBCFieldInfo
  The name of the field.  
   
  *m_nSQLType*  
- The SQL data type of the field. This can be an ODBC SQL data type or a driver-specific SQL data type. For a list of valid ODBC SQL data types, see "SQL Data Types" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For information about driver-specific SQL data types, see the driver's documentation.  
+ The SQL data type of the field. This can be an ODBC SQL data type or a driver-specific SQL data type. For a list of valid ODBC SQL data types, see "SQL Data Types" in the Windows SDK. For information about driver-specific SQL data types, see the driver's documentation.  
   
  *m_nPrecision*  
- The maximum precision of the field. For details, see "Precision, Scale, Length, and Display Size" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The maximum precision of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nScale*  
- The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nNullability*  
  Whether the field accepts a Null value. This can be one of two values: **SQL_NULLABLE** if the field accepts Null values, or **SQL_NO_NULLS** if the field does not accept Null values.  

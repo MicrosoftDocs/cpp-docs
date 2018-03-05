@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DResource"
-  - "CD2DResource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DResource class"
+f1_keywords: ["CD2DResource", "AFXRENDERTARGET/CD2DResource", "AFXRENDERTARGET/CD2DResource::CD2DResource", "AFXRENDERTARGET/CD2DResource::Create", "AFXRENDERTARGET/CD2DResource::Destroy", "AFXRENDERTARGET/CD2DResource::IsValid", "AFXRENDERTARGET/CD2DResource::IsAutoDestroy", "AFXRENDERTARGET/CD2DResource::ReCreate", "AFXRENDERTARGET/CD2DResource::m_bIsAutoDestroy", "AFXRENDERTARGET/CD2DResource::m_pParentTarget"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DResource [MFC], CD2DResource", "CD2DResource [MFC], Create", "CD2DResource [MFC], Destroy", "CD2DResource [MFC], IsValid", "CD2DResource [MFC], IsAutoDestroy", "CD2DResource [MFC], ReCreate", "CD2DResource [MFC], m_bIsAutoDestroy", "CD2DResource [MFC], m_pParentTarget"]
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DResource Class
 An abstract class that provides a interface for creating and managing D2D resources such as brushes, layers, and texts.  

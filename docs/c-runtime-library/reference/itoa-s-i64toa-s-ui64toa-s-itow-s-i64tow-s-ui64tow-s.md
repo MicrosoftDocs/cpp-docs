@@ -4,87 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ui64tow_s"
-  - "_itoa_s"
-  - "_itow_s"
-  - "_ui64toa_s"
-  - "_i64tow_s"
-  - "_i64toa_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ui64tow_s", "_itoa_s", "_itow_s", "_ui64toa_s", "_i64tow_s", "_i64toa_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "i64tot_s"
-  - "itow_s"
-  - "_ui64tow_s"
-  - "_itow_s"
-  - "ui64tot_s"
-  - "_ui64toa_s"
-  - "itoa_s"
-  - "_i64tow_s"
-  - "_i64tot_s"
-  - "_itot_s"
-  - "_i64toa_s"
-  - "_itoa_s"
-  - "ui64toa_s"
-  - "i64toa_s"
-  - "_ui64tot_s"
-  - "i64tow_s"
-  - "itot_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ui64toa_s function"
-  - "_itow_s function"
-  - "_i64tow_s function"
-  - "_itot_s function"
-  - "converting integers"
-  - "itow_s function"
-  - "i64toa_s function"
-  - "_ui64tow_s function"
-  - "integers, converting"
-  - "_i64tot_s function"
-  - "itoa_s function"
-  - "_itoa_s function"
-  - "ui64toa_s function"
-  - "i64tow_s function"
-  - "converting numbers, to strings"
-  - "_ui64tot_s function"
-  - "_i64toa_s function"
+f1_keywords: ["i64tot_s", "itow_s", "_ui64tow_s", "_itow_s", "ui64tot_s", "_ui64toa_s", "itoa_s", "_i64tow_s", "_i64tot_s", "_itot_s", "_i64toa_s", "_itoa_s", "ui64toa_s", "i64toa_s", "_ui64tot_s", "i64tow_s", "itot_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ui64toa_s function", "_itow_s function", "_i64tow_s function", "_itot_s function", "converting integers", "itow_s function", "i64toa_s function", "_ui64tow_s function", "integers, converting", "_i64tot_s function", "itoa_s function", "_itoa_s function", "ui64toa_s function", "i64tow_s function", "converting numbers, to strings", "_ui64tot_s function", "_i64toa_s function"]
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s
 Converts an integer to a string. These are versions of [_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow](../../c-runtime-library/reference/itoa-i64toa-ui64toa-itow-i64tow-ui64tow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -153,7 +87,7 @@ errno_t _itow_s(
  Size of the buffer in single-byte characters or wide characters.  
   
  [in] `radix`  
- Base of `value`; which must be in the range 2–36.  
+ Base of `value`; which must be in the range 2-36.  
   
 ## Return Value  
  Zero if successful; an error code on failure. If any of the following conditions applies, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
@@ -263,9 +197,6 @@ base 4: 33333333333333333333333333333333 (32 chars)
 base 3: 11112220022122120101211020120210210211220 (41 chars)  
 base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 chars)  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

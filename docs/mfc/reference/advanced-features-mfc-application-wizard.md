@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.exe.advanced"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC Application Wizard, advanced features"
+f1_keywords: ["vc.appwiz.mfc.exe.advanced"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC Application Wizard, advanced features"]
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Advanced Features, MFC Application Wizard
 This topic lists options for additional features for your application, such as Help, printing support, and so on. In each section, specify additional support for these advanced features.  
@@ -49,7 +32,7 @@ This topic lists options for additional features for your application, such as H
  Specifies that the application can handle objects that are implemented in another application, or exposes the application to Automation clients.  
   
  **ActiveX controls**  
- Supports ActiveX controls (default). If you do not select this option and later want to insert ActiveX controls into your project, you must add a call to [AfxEnableControlContainer](http://msdn.microsoft.com/library/7aa0b9d2-5329-4bc3-9d41-856e30fe2c2b) in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) member function.  
+ Supports ActiveX controls (default). If you do not select this option and later want to insert ActiveX controls into your project, you must add a call to [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) in your application's [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) member function.  
   
  **MAPI (Messaging API)**  
  Specifies that the application can create, manipulate, transfer, and store mail messages.  
@@ -65,7 +48,7 @@ This topic lists options for additional features for your application, such as H
   
  Version 6 of the Common Control DLL does not automatically update the earlier version of the Common Controls that your existing applications use. To use version 6 of the Common Control DLL, you must create an application manifest that directs your application to load the DLL. This Common Control DLL also supports the Windows XP themes.  
   
- An application manifest can also specify other DLLs and versions that your application needs. For more information about application manifests, see [Isolated Applications and Side-by-Side Assemblies](http://msdn.microsoft.com/library/dd408052) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ An application manifest can also specify other DLLs and versions that your application needs. For more information about application manifests, see [Isolated Applications and Side-by-Side Assemblies](http://msdn.microsoft.com/library/dd408052) in the Windows SDK.  
   
  **Support Restart Manager**  
  Adds support for the [Windows Restart Manager](http://msdn.microsoft.com/library/windows/desktop/aa373680\(v=vs.85\).aspx). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](http://msdn.microsoft.com/vstudio/ee886407).  

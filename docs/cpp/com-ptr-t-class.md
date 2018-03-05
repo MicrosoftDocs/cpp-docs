@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_ptr_t"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_com_ptr_t class"
+f1_keywords: ["_com_ptr_t"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_com_ptr_t class"]
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t Class
 **Microsoft Specific**  
@@ -76,10 +59,10 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 |[operators ==, !=, \<, >, \<=, >=](../cpp/com-ptr-t-relational-operators.md)|Compare the smart pointer object to another smart pointer, raw interface pointer, or **NULL**.|  
 |[Extractors](../cpp/com-ptr-t-extractors.md)|Extract the encapsulated COM interface pointer.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comip.h  
+ **Header:** \<comip.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

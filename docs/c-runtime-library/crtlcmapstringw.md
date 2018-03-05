@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__crtLCMapStringW"
-apilocation: 
-  - "msvcr90.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr100.dll"
-  - "msvcrt.dll"
-  - "msvcr120.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
+apiname: ["__crtLCMapStringW"]
+apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__crtLCMapStringW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__crtLCMapStringW"
+f1_keywords: ["__crtLCMapStringW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__crtLCMapStringW"]
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __crtLCMapStringW
 Maps one character string to another, performing a specified locale-dependent transformation. This function can also be used to generate a sort key for the input string.  
@@ -74,7 +48,7 @@ int __crtLCMapStringW(
  `cchSrc`  
  Size, in characters, of the string pointed to by the `lpSrcStr` parameter. This count can include the NULL terminator, or not include it.  
   
- A `cchSrc` value of –1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.  
+ A `cchSrc` value of -1 specifies that the string pointed to by `lpSrcStr` is null-terminated. If this is the case, and this function is being used in its string-mapping mode, the function calculates the string's length itself, and null-terminates the mapped string stored into `*lpDestStr`.  
   
  `lpDestStr`  
  Long pointer to a buffer into which the function stores the mapped string or sort key.  
@@ -90,7 +64,7 @@ int __crtLCMapStringW(
  Zero indicates failure. To get extended error information, call the `GetLastError` function.  
   
 ## Remarks  
- If `cchSrc` is greater than zero and `lpSrcStr` is a null-terminated string, `__crtLCMapStringW` sets `cchSrc` to the length of the string. Then `__crtLCMapStringW` calls the wide string (Unicode) version of the `LCMapString` function with the specified parameters. For more information about the parameters and return value of this function, see the `LCMapString` function at [MSDN Library](http://go.microsoft.com/fwlink/?linkID=150542).  
+ If `cchSrc` is greater than zero and `lpSrcStr` is a null-terminated string, `__crtLCMapStringW` sets `cchSrc` to the length of the string. Then `__crtLCMapStringW` calls the wide string (Unicode) version of the `LCMapString` function with the specified parameters. For more information about the parameters and return value of this function, see the `LCMapString` function at [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542).  
   
 ## Requirements  
   

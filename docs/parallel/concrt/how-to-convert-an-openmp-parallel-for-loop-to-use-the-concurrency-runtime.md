@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting from OpenMP to the Concurrency Runtime, parallel for loops"
-  - "converting from OpenMP to the Concurrency Runtime, parallel loops"
-  - "parallel for loops, converting from OpenMP to the Concurrency Runtime"
-  - "parallel loops, converting from OpenMP to the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, parallel for loops", "converting from OpenMP to the Concurrency Runtime, parallel loops", "parallel for loops, converting from OpenMP to the Concurrency Runtime", "parallel loops, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime
 
@@ -62,7 +42,7 @@ found 107254 prime numbers.
   
 ## Example  
 
- This example modifies the previous one to act on an [std::array](../../standard-library/array-class-stl.md) object instead of on a native array. Because OpenMP versions 2.0 and 2.5 allow for signed integral index types only in a `parallel``for` construct, you cannot use iterators to access the elements of a C++ Standard Library container in parallel. The Parallel Patterns Library (PPL) provides the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm, which performs tasks, in parallel, on an iterative container such as those provided by the C++ Standard Library. It uses the same partitioning logic that the `parallel_for` algorithm uses. The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently.  
+ This example modifies the previous one to act on an [std::array](../../standard-library/array-class-stl.md) object instead of on a native array. Because OpenMP versions 2.0 and 2.5 allow for signed integral index types only in a `parallel_for` construct, you cannot use iterators to access the elements of a C++ Standard Library container in parallel. The Parallel Patterns Library (PPL) provides the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm, which performs tasks, in parallel, on an iterative container such as those provided by the C++ Standard Library. It uses the same partitioning logic that the `parallel_for` algorithm uses. The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](../../standard-library/algorithm-functions.md#for_each) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently.  
   
  [!code-cpp[concrt-openmp#10](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_2.cpp)]  
   

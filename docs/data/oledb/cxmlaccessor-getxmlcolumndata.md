@@ -4,50 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.CXMLAccessor.GetXMLColumnData"
-  - "CXMLAccessor::GetXMLColumnData"
-  - "CXMLAccessor.GetXMLColumnData"
-  - "ATL::CXMLAccessor::GetXMLColumnData"
-  - "GetXMLColumnData"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetXMLColumnData method"
+ms.topic: "reference"
+f1_keywords: ["ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetXMLColumnData method"]
 ms.assetid: 719e8efe-8758-4af7-a855-0e44ea196546
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor::GetXMLColumnData
 Retrieves the column type information of a table as XML-formatted string data, by column.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetXMLColumnData(   
-   CSimpleStringW& strOutput    
-) throw( );  
+```cpp
+HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();  
 ```  
   
 #### Parameters  

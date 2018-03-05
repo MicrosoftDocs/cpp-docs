@@ -4,40 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4412"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4412"
+f1_keywords: ["C4412"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4412"]
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4412
 'function' : function signature contains type 'type'; C++ objects are unsafe to pass between pure code and mixed or native.  
   
- The **/clr:pure** compiler option is deprecated in Visual Studio 2015.  
+ The **/clr:pure** compiler option is deprecated in Visual Studio 2015. If you have code that needs to be "pure," we recommend that you port it to C#.  
   
  The compiler detected a potentially unsafe situation that could result in a runtime error: a call is being made from a **/clr:pure** compiland to a function that was imported via dllimport and the function signature contains an unsafe type. A type is unsafe if it contains a member function or has a data member that is an unsafe type or an indirection to an unsafe type.  
   
@@ -45,7 +28,6 @@ translation.priority.ht:
   
  A virtual member function is especially prone to give unexpected results.  However, even a non-virtual function should be tested to ensure that you get the correct results. If you are sure that you are getting the correct results, you can ignore this warning.  
   
- For more information on **/clr:pure**, see [How to: Migrate to /clr:pure (C++/CLI)](../../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md).  
   
  C4412 is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) and [dllexport, dllimport](../../cpp/dllexport-dllimport.md) for more information.  
   

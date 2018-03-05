@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCWindowsManagerDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCWindowsManagerDialog class"
+f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog"]
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCWindowsManagerDialog Class
 The `CMFCWindowsManagerDialog` object enables a user to manage MDI child windows in a MDI application.  

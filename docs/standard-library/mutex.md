@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<mutex>"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["<mutex>"]
+dev_langs: ["C++"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;mutex&gt;
 Include the standard header \<mutex> to define the classes `mutex`, `recursive_mutex`, `timed_mutex`, and `recursive_timed_mutex`; the templates `lock_guard` and `unique_lock`; and supporting types and functions that define mutual-exclusion code regions.  
   
 > [!WARNING]
->  The C++ Standard Library synchronization types in Visual Studio 2015 are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
+>  Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in \<mutex> should not be used with any ConcRT types or functions.  
   
 ## Syntax  
   
@@ -82,8 +66,8 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
   
 |Name|Description|  
 |----------|-----------------|  
-|[call_once Function](../standard-library/mutex-functions.md#call_once_function)|Provides a mechanism for calling a specified callable object exactly once during execution.|  
-|[lock Function](../standard-library/mutex-functions.md#lock_function)|Attempts to lock all arguments without deadlock.|  
+|[call_once](../standard-library/mutex-functions.md#call_once)|Provides a mechanism for calling a specified callable object exactly once during execution.|  
+|[lock](../standard-library/mutex-functions.md#lock)|Attempts to lock all arguments without deadlock.|  
   
 ### Structs  
   
@@ -98,9 +82,9 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
   
 |Name|Description|  
 |----------|-----------------|  
-|[adopt_lock Variable](../standard-library/mutex-functions.md#adopt_lock_variable)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|  
-|[defer_lock Variable](../standard-library/mutex-functions.md#defer_lock_variable)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|  
-|[try_to_lock Variable](../standard-library/mutex-functions.md#try_to_lock_variable)|Represents an object that can be passed to the constructor for `unique_lock` to indicate that the constructor should try to unlock the `mutex` that is also being passed to it without blocking.|  
+|[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|  
+|[defer_lock](../standard-library/mutex-functions.md#defer_lock)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|  
+|[try_to_lock](../standard-library/mutex-functions.md#try_to_lock)|Represents an object that can be passed to the constructor for `unique_lock` to indicate that the constructor should try to unlock the `mutex` that is also being passed to it without blocking.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

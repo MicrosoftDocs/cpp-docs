@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "acosf"
-  - "acos"
-  - "acosl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["acosf", "acos", "acosl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "acos"
-  - "acosl"
-  - "acosf"
-  - "math/acosf"
-  - "math/acosl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "acos function"
-  - "acosl function"
-  - "acosf function"
-  - "trigonometric functions"
-  - "arccosine function"
+f1_keywords: ["acos", "acosl", "acosf", "math/acosf", "math/acosl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["acos function", "acosl function", "acosf function", "trigonometric functions", "arccosine function"]
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # acos, acosf, acosl
 Calculates the arccosine.  
@@ -84,12 +45,12 @@ long double acosl(
   
 #### Parameters  
  `x`  
- Value between –1 and 1, for which to calculate the arccosine (the inverse cosine).  
+ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).  
   
 ## Return Value  
  The `acos` function returns the arccosine of `x` in the range 0 to π radians.  
   
- By default, if `x` is less than –1 or greater than 1, `acos` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, `acos` returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
@@ -154,9 +115,6 @@ int main( int ac, char* av[] )
 Arcsine of 0.000000 = 0.000000  
 Arccosine of 0.000000 = 1.570796  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Acos](https://msdn.microsoft.com/en-us/library/system.math.acos.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

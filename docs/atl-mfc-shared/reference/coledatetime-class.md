@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDateTime"
-  - "ATL.COleDateTime"
-  - "ATL::COleDateTime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "shared classes, COleDateTime"
-  - "time-only values"
-  - "Date data type, MFC encapsulation of"
-  - "COleDateTime class"
-  - "dates, handling in MFC"
-  - "time, handling in MFC"
+f1_keywords: ["COleDateTime", "ATLCOMTIME/ATL::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::Format", "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP", "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime", "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE", "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime", "ATLCOMTIME/ATL::COleDateTime::GetDay", "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek", "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear", "ATLCOMTIME/ATL::COleDateTime::GetHour", "ATLCOMTIME/ATL::COleDateTime::GetMinute", "ATLCOMTIME/ATL::COleDateTime::GetMonth", "ATLCOMTIME/ATL::COleDateTime::GetSecond", "ATLCOMTIME/ATL::COleDateTime::GetStatus", "ATLCOMTIME/ATL::COleDateTime::GetYear", "ATLCOMTIME/ATL::COleDateTime::ParseDateTime", "ATLCOMTIME/ATL::COleDateTime::SetDate", "ATLCOMTIME/ATL::COleDateTime::SetDateTime", "ATLCOMTIME/ATL::COleDateTime::SetStatus", "ATLCOMTIME/ATL::COleDateTime::SetTime", "ATLCOMTIME/ATL::COleDateTime::m_dt", "ATLCOMTIME/ATL::COleDateTime::m_status"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date data type, MFC encapsulation of", "COleDateTime class", "dates, handling in MFC", "time, handling in MFC"]
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDateTime Class
 Encapsulates the `DATE` data type that is used in OLE automation.  
@@ -67,13 +43,13 @@ class COleDateTime
 |[COleDateTime::GetAsSystemTime](#getassystemtime)|Call this method to obtain the time in the `COleDateTime` object as a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) data structure.|  
 |[COleDateTime::GetAsUDATE](#getasudate)|Call this method to obtain the time in the `COleDateTime` as a **UDATE** data structure.|  
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|Creates a `COleDateTime` object that represents the current time (static member function).|  
-|[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 – 31).|  
+|[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 - 31).|  
 |[COleDateTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week this `COleDateTime` object represents (Sunday = 1).|  
 |[COleDateTime::GetDayOfYear](#getdayofyear)|Returns the day of the year this `COleDateTime` object represents (Jan 1 = 1).|  
-|[COleDateTime::GetHour](#gethour)|Returns the hour this `COleDateTime` object represents (0 – 23).|  
-|[COleDateTime::GetMinute](#getminute)|Returns the minute this `COleDateTime` object represents (0 – 59).|  
-|[COleDateTime::GetMonth](#getmonth)|Returns the month this `COleDateTime` object represents (1 – 12).|  
-|[COleDateTime::GetSecond](#getsecond)|Returns the second this `COleDateTime` object represents (0 – 59).|  
+|[COleDateTime::GetHour](#gethour)|Returns the hour this `COleDateTime` object represents (0 - 23).|  
+|[COleDateTime::GetMinute](#getminute)|Returns the minute this `COleDateTime` object represents (0 - 59).|  
+|[COleDateTime::GetMonth](#getmonth)|Returns the month this `COleDateTime` object represents (1 - 12).|  
+|[COleDateTime::GetSecond](#getsecond)|Returns the second this `COleDateTime` object represents (0 - 59).|  
 |[COleDateTime::GetStatus](#getstatus)|Gets the status (validity) of this `COleDateTime` object.|  
 |[COleDateTime::GetYear](#getyear)|Returns the year this `COleDateTime` object represents.|  
 |[COleDateTime::ParseDateTime](#parsedatetime)|Reads a date/time value from a string and sets the value of `COleDateTime`.|  
@@ -207,7 +183,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  `filetimeSrc`  
- A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
  `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
  Indicate the date and time values to be copied into the new `COleDateTime` object.  
@@ -223,12 +199,12 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 |Date/time component|Valid range|  
 |--------------------------|-----------------|  
-|year|100 – 9999|  
-|month|0 – 12|  
-|day|0 – 31|  
-|hour|0 – 23|  
-|minute|0 – 59|  
-|second|0 – 59|  
+|year|100 - 9999|  
+|month|0 - 12|  
+|day|0 - 31|  
+|hour|0 - 23|  
+|minute|0 - 59|  
+|second|0 - 59|  
   
  Note that the actual upper bound for the day component varies based on the month and year components. For details, see the **SetDate** or `SetDateTime` member functions.  
   
@@ -246,7 +222,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *systimeSrc* **)** Constructs a `COleDateTime` object from a `SYSTEMTIME` value.  
   
-- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
 - `COleDateTime(` `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Constructs a `COleDateTime` object from the specified numerical values.  
   
@@ -254,7 +230,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
  For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the Windows SDK.  
   
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
@@ -628,19 +604,15 @@ DateTimeStatus GetStatus() const throw();
 ### Remarks  
  The return value is defined by the **DateTimeStatus** enumerated type, which is defined within the `COleDateTime` class.  
   
- `enum DateTimeStatus`  
-  
- `{`  
-  
- `error = -1,`  
-  
- `valid = 0,`  
-  
- `invalid = 1,    // Invalid date (out of range, etc.)`  
-  
- `null = 2,       // Literally has no value`  
-  
- `};`  
+```  
+enum DateTimeStatus  
+{  
+   error = -1,  
+   valid = 0,  
+   invalid = 1,    // Invalid date (out of range, etc.)  
+   null = 2,       // Literally has no value  
+};  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -770,13 +742,13 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** `udate` **)** The **UDATE** value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A **UDATE** structure represents an "unpacked" date. See the function [VarDateFromUdate](http://msdn.microsoft.com/en-us/1c924ac5-b896-49e1-9ccf-825ac7a030c8) for more details.  
   
-- **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+- **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entry in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entry in the Windows SDK.  
   
  For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the Windows SDK.  
   
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
@@ -887,9 +859,7 @@ bool ParseDateTime(
   
  `"8:30:00 Jan. 25, 1996"`  
   
- `"1/25/1996 8:30:00"  // always specify the full year,`  
-  
- `// even in a 'short date' format`  
+ `"1/25/1996 8:30:00"  // always specify the full year, even in a 'short date' format`  
   
  Note that the locale ID will also affect whether the string format is acceptable for conversion to a date/time value.  
   
@@ -923,9 +893,9 @@ int SetDate(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 – 9999|  
-|`nMonth`|1 – 12|  
-|`nDay`|0 – 31|  
+|`nYear`|100 - 9999|  
+|`nMonth`|1 - 12|  
+|`nDay`|0 - 31|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as `SystemTimeToVariantTime`.  
   
@@ -990,12 +960,12 @@ int SetDateTime(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nYear`|100 – 9999|  
-|`nMonth`|1 – 12|  
-|`nDay`|0 – 31|  
-|`nHour`|0 – 23|  
-|`nMin`|0 – 59|  
-|`nSec`|0 – 59|  
+|`nYear`|100 - 9999|  
+|`nMonth`|1 - 12|  
+|`nDay`|0 - 31|  
+|`nHour`|0 - 23|  
+|`nMin`|0 - 59|  
+|`nSec`|0 - 59|  
   
  If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](http://msdn.microsoft.com/en-us/d9d69521-9b33-4fc5-8a1c-929f216db450).  
   
@@ -1088,9 +1058,9 @@ int SetTime(
   
 |Parameter|Bounds|  
 |---------------|------------|  
-|`nHour`|0 – 23|  
-|`nMin`|0 – 59|  
-|`nSec`|0 – 59|  
+|`nHour`|0 - 23|  
+|`nMin`|0 - 59|  
+|`nSec`|0 - 59|  
   
  If the time value specified by the parameters is not valid, the status of this object is set to invalid and the value of this object is not changed.  
   

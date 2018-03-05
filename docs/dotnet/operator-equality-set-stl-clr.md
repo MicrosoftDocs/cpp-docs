@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::operator=="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator== member [STL/CLR]"
+f1_keywords: ["cliext::set::operator=="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator== member [STL/CLR]"]
 ms.assetid: 013a0a76-11fa-4fde-8a84-d96e26f56774
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator== (set) (STL/CLR)
 List equal comparison.  
@@ -53,7 +36,7 @@ template<typename Key>
  Right container to compare.  
   
 ## Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left``[i] ==` `right``[i]`. You use it to test whether `left` is ordered the same as `right` when the two sets are compared element by element.  
+ The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two sets are compared element by element.  
   
 ## Example  
   

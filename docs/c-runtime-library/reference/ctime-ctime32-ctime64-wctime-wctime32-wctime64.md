@@ -4,79 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ctime64"
-  - "_wctime32"
-  - "ctime"
-  - "_wctime64"
-  - "_ctime32"
-  - "_wctime"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ctime64", "_wctime32", "ctime", "_wctime64", "_ctime32", "_wctime"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wctime64"
-  - "_ctime32"
-  - "_tctime"
-  - "_wctime"
-  - "_wctime32"
-  - "_tctime64"
-  - "_ctime64"
-  - "ctime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tctime64 function"
-  - "_ctime32 function"
-  - "ctime32 function"
-  - "_wctime function"
-  - "wctime64 function"
-  - "_tctime64 function"
-  - "_tctime32 function"
-  - "_ctime64 function"
-  - "_wctime64 function"
-  - "ctime function"
-  - "wctime32 function"
-  - "ctime64 function"
-  - "_wctime32 function"
-  - "_tctime function"
-  - "tctime32 function"
-  - "tctime function"
-  - "wctime function"
-  - "time, converting"
+f1_keywords: ["_wctime64", "_ctime32", "_tctime", "_wctime", "_wctime32", "_tctime64", "_ctime64", "ctime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tctime64 function", "_ctime32 function", "ctime32 function", "_wctime function", "wctime64 function", "_tctime64 function", "_tctime32 function", "_ctime64 function", "_wctime64 function", "ctime function", "wctime32 function", "ctime64 function", "_wctime32 function", "_tctime function", "tctime32 function", "tctime function", "wctime function", "time, converting"]
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 Convert a time value to a string and adjust for local time zone settings. More secure versions of these functions are available; see [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).  
@@ -183,16 +125,6 @@ int main( void )
 ```Output  
 The time is Wed Feb 13 16:04:43 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::GetDateTimeFormats](https://msdn.microsoft.com/en-us/library/system.datetime.getdatetimeformats.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

@@ -4,46 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDBPropertiesImpl"
-  - "ATL.IDBPropertiesImpl"
-  - "ATL.IDBPropertiesImpl<T>"
-  - "ATL::IDBPropertiesImpl<T>"
-  - "ATL::IDBPropertiesImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDBPropertiesImpl class"
+ms.topic: "reference"
+f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDBPropertiesImpl class"]
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl Class
 Provides an implementation for the `IDBProperties` interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>   
 class ATL_NO_VTABLE IDBPropertiesImpl   
    : public IDBProperties, public CUtlProps<T>  

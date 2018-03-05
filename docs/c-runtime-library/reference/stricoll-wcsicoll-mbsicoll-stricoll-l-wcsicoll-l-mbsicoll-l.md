@@ -4,86 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsicoll_l"
-  - "_stricoll_l"
-  - "_mbsicoll"
-  - "_wcsicoll_l"
-  - "_wcsicoll"
-  - "_stricoll"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsicoll_l", "_stricoll_l", "_mbsicoll", "_wcsicoll_l", "_wcsicoll", "_stricoll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "stricoll"
-  - "_stricoll"
-  - "_wcsicoll"
-  - "mbsicoll_l"
-  - "_mbsicoll"
-  - "_ftcsicoll"
-  - "wcsicoll_l"
-  - "_tcsicoll"
-  - "mbsicoll"
-  - "stricoll_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "code pages, using for string comparisons"
-  - "_ftcsicoll function"
-  - "_mbsicoll_l function"
-  - "_mbsicoll function"
-  - "mbsicoll function"
-  - "stricoll function"
-  - "tcsicoll function"
-  - "string comparison [C++], culture-specific"
-  - "_tcsicoll function"
-  - "_stricoll function"
-  - "_stricoll_l function"
-  - "_wcsicoll function"
-  - "mbsicoll_l function"
-  - "stricoll_l function"
-  - "strings [C++], comparing by code page"
-  - "ftcsicoll function"
+f1_keywords: ["stricoll", "_stricoll", "_wcsicoll", "mbsicoll_l", "_mbsicoll", "_ftcsicoll", "wcsicoll_l", "_tcsicoll", "mbsicoll", "stricoll_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["code pages, using for string comparisons", "_ftcsicoll function", "_mbsicoll_l function", "_mbsicoll function", "mbsicoll function", "stricoll function", "tcsicoll function", "string comparison [C++], culture-specific", "_tcsicoll function", "_stricoll function", "_stricoll_l function", "_wcsicoll function", "mbsicoll_l function", "stricoll_l function", "strings [C++], comparing by code page", "ftcsicoll function"]
 ms.assetid: 8ec93016-5a49-49d2-930f-721566661d82
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l
 Compares strings by using locale-specific information.  
   
 > [!IMPORTANT]
->  `_mbsicoll` and `_mbsicoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsicoll` and `_mbsicoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -125,7 +66,7 @@ int _mbsicoll_l(
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of `string1` to `string2`*,* as follows.  
+ Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  
@@ -158,9 +99,6 @@ int _mbsicoll_l(
 |`_mbsicoll`, `_mbsicoll_l`|\<mbstring.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
   
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   

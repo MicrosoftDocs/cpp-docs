@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], makefile preprocessing"
-  - "EXIST operator"
-  - "preprocessing NMAKE makefile operators"
-  - "NMAKE program, operators"
-  - "DEFINED operator"
-  - "makefiles, preprocessing operators"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Makefile Preprocessing Operators
 Makefile preprocessing expressions can use operators that act on constant values, exit codes from commands, strings, macros, and file-system paths. To evaluate the expression, the preprocessor first expands macros, and then executes commands, and then performs the operations. Operations are evaluated in the order of explicit grouping in parentheses, and then in the order of operator precedence. The result is a constant value.  
@@ -46,7 +25,7 @@ Makefile preprocessing expressions can use operators that act on constant values
   
  To compare two strings, use the equality (`==`) operator or the inequality (`!=`) operator. Enclose strings in double quotation marks.  
   
- Integer constants can use the unary operators for numerical negation (`–`), one's complement (`~`), and logical negation (`!`).  
+ Integer constants can use the unary operators for numerical negation (`-`), one's complement (`~`), and logical negation (`!`).  
   
  Expressions can use the following operators. The operators of equal precedence are grouped together, and the groups are listed in decreasing order of precedence. Unary operators associate with the operand to the right. Binary operators of equal precedence associate operands from left to right.  
   

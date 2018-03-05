@@ -4,48 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IPerPropertyBrowsingImpl"
-  - "IPerPropertyBrowsing"
-  - "ATL::IPerPropertyBrowsingImpl"
-  - "ATL::IPerPropertyBrowsingImpl<T>"
-  - "IPerPropertyBrowsingImpl"
-  - "ATL.IPerPropertyBrowsingImpl<T>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPerPropertyBrowsingImpl class"
-  - "property pages, accessing information"
-  - "IPerPropertyBrowsing, ATL implementation"
+f1_keywords: ["IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue", "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPerPropertyBrowsingImpl class", "property pages, accessing information", "IPerPropertyBrowsing, ATL implementation"]
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IPerPropertyBrowsingImpl Class
 This class implements **IUnknown** and allows a client to access the information in an object's property pages.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -97,7 +73,7 @@ STDMETHOD(GetDisplayString)(
 ```  
   
 ### Remarks  
- See [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) in the Windows SDK.  
   
 ##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings  
  Fills each array with zero items.  
@@ -113,7 +89,7 @@ STDMETHOD(GetPredefinedStrings)(
  ATL's implementation of [GetPredefinedValue](#getpredefinedvalue) returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPerPropertyBrowsing::GetPredefinedStrings](http://msdn.microsoft.com/library/windows/desktop/ms679724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPerPropertyBrowsing::GetPredefinedStrings](http://msdn.microsoft.com/library/windows/desktop/ms679724) in the Windows SDK.  
   
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
  Retrieves a **VARIANT** containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`.  
@@ -131,7 +107,7 @@ STDMETHOD(GetPredefinedValue)(
 ### Remarks  
  ATL's implementation of [GetPredefinedStrings](#getpredefinedstrings) retrieves no corresponding strings.  
   
- See [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) in the Windows SDK.  
   
 ##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage  
  Retrieves the CLSID of the property page associated with the specified property.  
@@ -145,7 +121,7 @@ STDMETHOD(MapPropertyToPage)(
 ### Remarks  
  ATL uses the object's property map to obtain this information.  
   
- See [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) in the Windows SDK.  
   
 ## See Also  
  [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   

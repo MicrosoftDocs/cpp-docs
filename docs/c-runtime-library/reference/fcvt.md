@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_fcvt"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_fcvt"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fcvt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting floating point, to strings"
-  - "_fcvt function"
-  - "floating-point functions, converting number to string"
-  - "fcvt function"
-  - "floating-point functions"
+f1_keywords: ["_fcvt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting floating point, to strings", "_fcvt function", "floating-point functions, converting number to string", "fcvt function", "floating-point functions"]
 ms.assetid: 74584c88-f0dd-4907-8fca-52da5df583f5
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _fcvt
 Converts a floating-point number to a string. A more secure version of this function is available; see [_fcvt_s](../../c-runtime-library/reference/fcvt-s.md).  
@@ -132,9 +99,6 @@ int main( void )
 ```Output  
 source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "sealed_cpp"
-  - "sealed"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sealed keyword [C++]"
+f1_keywords: ["sealed_cpp", "sealed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sealed keyword [C++]"]
 ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # sealed  (C++ Component Extensions)
 `sealed` is a context-sensitive keyword for ref classes that indicates that a virtual member cannot be overridden, or that a type cannot be used as a base type.  
@@ -42,18 +24,15 @@ translation.priority.ht:
 >  The ISO C++11 Standard language has the [final](../cpp/final-specifier.md) keyword, which is supported in Visual Studio. Use `final` on standard classes, and `sealed` on ref classes.  
   
 ## All Runtimes  
- **Syntax**  
+  
+## Syntax
   
 ```  
-  
-      ref class  
-      identifier  
-      sealed {...};  
-virtualreturn-typeidentifier() sealed {...};  
-  
+ref class identifier sealed {...};  
+virtual return-type identifier() sealed {...};  
 ```  
   
- **Parameters**  
+### Parameters  
   
  *identifier*  
  The name of the function or class.  
@@ -61,17 +40,17 @@ virtualreturn-typeidentifier() sealed {...};
  *return-type*  
  The type that's returned by a function.  
   
- **Remarks**  
+## Remarks  
   
  In the first syntax example, a class is sealed. In the second example, a virtual function is sealed.  
   
- The `sealed` keyword is valid for native targets, and also for the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ The `sealed` keyword is valid for native targets, and also for the Windows Runtime and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
- You can detect at compile time whether a type is sealed by using the `__is_sealed (``type``)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ You can detect at compile time whether a type is sealed by using the `__is_sealed(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  `sealed` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### Requirements  
@@ -128,8 +107,6 @@ int main() {
    MyI2 -> f();  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 X::f override of I1::f  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data objects [C++], definition"
-  - "data transfer [C++]"
-  - "OLE [C++], data transfer"
-  - "data sources [C++], definition"
-  - "data transfer [C++], definition"
-  - "OLE [C++], data objects"
-  - "OLE [C++], data sources"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources (OLE)
 When you perform a data transfer, either by using the Clipboard or drag and drop, the data has a source and a destination. One application provides the data for copying and another application accepts it for pasting. Each side of the transfer needs to perform different operations on the same data for the transfer to succeed. The Microsoft Foundation Class (MFC) Library provides two classes that represent each side of this transfer:  

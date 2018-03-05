@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComboBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combo boxes, CComboBox objects"
-  - "CComboBox class"
+f1_keywords: ["CComboBox", "AFXWIN/CComboBox", "AFXWIN/CComboBox::CComboBox", "AFXWIN/CComboBox::AddString", "AFXWIN/CComboBox::Clear", "AFXWIN/CComboBox::CompareItem", "AFXWIN/CComboBox::Copy", "AFXWIN/CComboBox::Create", "AFXWIN/CComboBox::Cut", "AFXWIN/CComboBox::DeleteItem", "AFXWIN/CComboBox::DeleteString", "AFXWIN/CComboBox::Dir", "AFXWIN/CComboBox::DrawItem", "AFXWIN/CComboBox::FindString", "AFXWIN/CComboBox::FindStringExact", "AFXWIN/CComboBox::GetComboBoxInfo", "AFXWIN/CComboBox::GetCount", "AFXWIN/CComboBox::GetCueBanner", "AFXWIN/CComboBox::GetCurSel", "AFXWIN/CComboBox::GetDroppedControlRect", "AFXWIN/CComboBox::GetDroppedState", "AFXWIN/CComboBox::GetDroppedWidth", "AFXWIN/CComboBox::GetEditSel", "AFXWIN/CComboBox::GetExtendedUI", "AFXWIN/CComboBox::GetHorizontalExtent", "AFXWIN/CComboBox::GetItemData", "AFXWIN/CComboBox::GetItemDataPtr", "AFXWIN/CComboBox::GetItemHeight", "AFXWIN/CComboBox::GetLBText", "AFXWIN/CComboBox::GetLBTextLen", "AFXWIN/CComboBox::GetLocale", "AFXWIN/CComboBox::GetMinVisible", "AFXWIN/CComboBox::GetTopIndex", "AFXWIN/CComboBox::InitStorage", "AFXWIN/CComboBox::InsertString", "AFXWIN/CComboBox::LimitText", "AFXWIN/CComboBox::MeasureItem", "AFXWIN/CComboBox::Paste", "AFXWIN/CComboBox::ResetContent", "AFXWIN/CComboBox::SelectString", "AFXWIN/CComboBox::SetCueBanner", "AFXWIN/CComboBox::SetCurSel", "AFXWIN/CComboBox::SetDroppedWidth", "AFXWIN/CComboBox::SetEditSel", "AFXWIN/CComboBox::SetExtendedUI", "AFXWIN/CComboBox::SetHorizontalExtent", "AFXWIN/CComboBox::SetItemData", "AFXWIN/CComboBox::SetItemDataPtr", "AFXWIN/CComboBox::SetItemHeight", "AFXWIN/CComboBox::SetLocale", "AFXWIN/CComboBox::SetMinVisibleItems", "AFXWIN/CComboBox::SetTopIndex", "AFXWIN/CComboBox::ShowDropDown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComboBox [MFC], CComboBox", "CComboBox [MFC], AddString", "CComboBox [MFC], Clear", "CComboBox [MFC], CompareItem", "CComboBox [MFC], Copy", "CComboBox [MFC], Create", "CComboBox [MFC], Cut", "CComboBox [MFC], DeleteItem", "CComboBox [MFC], DeleteString", "CComboBox [MFC], Dir", "CComboBox [MFC], DrawItem", "CComboBox [MFC], FindString", "CComboBox [MFC], FindStringExact", "CComboBox [MFC], GetComboBoxInfo", "CComboBox [MFC], GetCount", "CComboBox [MFC], GetCueBanner", "CComboBox [MFC], GetCurSel", "CComboBox [MFC], GetDroppedControlRect", "CComboBox [MFC], GetDroppedState", "CComboBox [MFC], GetDroppedWidth", "CComboBox [MFC], GetEditSel", "CComboBox [MFC], GetExtendedUI", "CComboBox [MFC], GetHorizontalExtent", "CComboBox [MFC], GetItemData", "CComboBox [MFC], GetItemDataPtr", "CComboBox [MFC], GetItemHeight", "CComboBox [MFC], GetLBText", "CComboBox [MFC], GetLBTextLen", "CComboBox [MFC], GetLocale", "CComboBox [MFC], GetMinVisible", "CComboBox [MFC], GetTopIndex", "CComboBox [MFC], InitStorage", "CComboBox [MFC], InsertString", "CComboBox [MFC], LimitText", "CComboBox [MFC], MeasureItem", "CComboBox [MFC], Paste", "CComboBox [MFC], ResetContent", "CComboBox [MFC], SelectString", "CComboBox [MFC], SetCueBanner", "CComboBox [MFC], SetCurSel", "CComboBox [MFC], SetDroppedWidth", "CComboBox [MFC], SetEditSel", "CComboBox [MFC], SetExtendedUI", "CComboBox [MFC], SetHorizontalExtent", "CComboBox [MFC], SetItemData", "CComboBox [MFC], SetItemDataPtr", "CComboBox [MFC], SetItemHeight", "CComboBox [MFC], SetLocale", "CComboBox [MFC], SetMinVisibleItems", "CComboBox [MFC], SetTopIndex", "CComboBox [MFC], ShowDropDown"]
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComboBox Class
 Provides the functionality of a Windows combo box.  
@@ -112,7 +94,7 @@ class CComboBox : public CWnd
   
  The currently selected item (if any) in the list box is displayed in the static or edit control. In addition, if the combo box has the drop-down list style, the user can type the initial character of one of the items in the list, and the list box, if visible, will highlight the next item with that initial character.  
   
- The following table compares the three combo-box [styles](../../mfc/reference/combo-box-styles.md).  
+ The following table compares the three combo-box [styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles).  
   
 |Style|When is list box visible|Static or edit control|  
 |-----------|-------------------------------|-----------------------------|  
@@ -138,9 +120,9 @@ class CComboBox : public CWnd
   
  Potential message-map entries are the following:  
   
-- **ON_CBN_CLOSEUP** (Windows 3.1 and later.) The list box of a combo box has closed. This notification message is not sent for a combo box that has the [CBS_SIMPLE](../../mfc/reference/combo-box-styles.md) style.  
+- **ON_CBN_CLOSEUP** (Windows 3.1 and later.) The list box of a combo box has closed. This notification message is not sent for a combo box that has the [CBS_SIMPLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
-- **ON_CBN_DBLCLK** The user double-clicks a string in the list box of a combo box. This notification message is only sent for a combo box with the **CBS_SIMPLE** style. For a combo box with the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style, a double-click cannot occur because a single click hides the list box.  
+- **ON_CBN_DBLCLK** The user double-clicks a string in the list box of a combo box. This notification message is only sent for a combo box with the **CBS_SIMPLE** style. For a combo box with the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, a double-click cannot occur because a single click hides the list box.  
   
 - **ON_CBN_DROPDOWN** The list box of a combo box is about to drop down (be made visible). This notification message can occur only for a combo box with the **CBS_DROPDOWN** or **CBS_DROPDOWNLIST** style.  
   
@@ -193,10 +175,10 @@ int AddString(LPCTSTR lpszString);
  If the return value is greater than or equal to 0, it is the zero-based index to the string in the list box. The return value is **CB_ERR** if an error occurs; the return value is **CB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- If the list box was not created with the [CBS_SORT](../../mfc/reference/combo-box-styles.md) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted.  
+ If the list box was not created with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted.  
   
 > [!NOTE]
->  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+>  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
   
  To insert a string into a specific location within the list, use the [InsertString](#insertstring) member function.  
   
@@ -242,7 +224,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
   
 |Value|Meaning|  
 |-----------|-------------|  
-|– 1|Item 1 sorts before item 2.|  
+|- 1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -277,7 +259,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the style of the combo box. Apply any combination of [combo-box styles](../../mfc/reference/combo-box-styles.md) to the box.  
+ Specifies the style of the combo box. Apply any combination of [combo-box styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) to the box.  
   
  `rect`  
  Points to the position and size of the combo box. Can be a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object.  
@@ -298,7 +280,7 @@ virtual BOOL Create(
   
  These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CComboBox`, add a message map to the new class, and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a combo-box control. :  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a combo-box control. :  
   
 - **WS_CHILD** Always  
   
@@ -403,7 +385,7 @@ int Dir(
  If the return value is greater than or equal to 0, it is the zero-based index of the last filename added to the list. The return value is **CB_ERR** if an error occurs; the return value is **CB_ERRSPACE** if insufficient space is available to store the new strings.  
   
 ### Remarks  
- This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/cpp/ccombobox-class_10.cpp)]  
@@ -438,7 +420,7 @@ int FindString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If -1, the entire list box is searched from the beginning.  
   
  `lpszString`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string can contain any combination of uppercase and lowercase letters.  
@@ -447,7 +429,7 @@ int FindString(
  If the return value is greater than or equal to 0, it is the zero-based index of the matching item. It is **CB_ERR** if the search was unsuccessful.  
   
 ### Remarks  
- This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]  
@@ -463,7 +445,7 @@ int FindStringExact(
   
 ### Parameters  
  `nIndexStart`  
- Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is –1, the entire list box is searched from the beginning.  
+ Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is -1, the entire list box is searched from the beginning.  
   
  `lpszFind`  
  Points to the null-terminated string to search for. This string can contain a complete filename, including the extension. The search is not case sensitive, so this string can contain any combination of uppercase and lowercase letters.  
@@ -472,7 +454,7 @@ int FindStringExact(
  The zero-based index of the matching item, or **CB_ERR** if the search was unsuccessful.  
   
 ### Remarks  
- If the combo box was created with an owner-draw style but without the [CBS_HASSTRINGS](../../mfc/reference/combo-box-styles.md) style, `FindStringExact` attempts to match the doubleword value against the value of `lpszFind`.  
+ If the combo box was created with an owner-draw style but without the [CBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, `FindStringExact` attempts to match the doubleword value against the value of `lpszFind`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#13](../../mfc/reference/codesnippet/cpp/ccombobox-class_13.cpp)]  
@@ -492,7 +474,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775839) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775839) message, as described in the Windows SDK.  
   
 ##  <a name="getcount"></a>  CComboBox::GetCount  
  Call this member function to retrieve the number of items in the list-box portion of a combo box.  
@@ -535,7 +517,7 @@ BOOL GetCueBanner(
 ### Remarks  
  Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.  
   
- This method sends the [CB_GETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775843) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [CB_GETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775843) message, which is described in the Windows SDK.  
   
 ##  <a name="getcursel"></a>  CComboBox::GetCurSel  
  Call this member function to determine which item in the combo box is selected.  
@@ -591,7 +573,7 @@ int GetDroppedWidth() const;
  If successful, the minimum allowable width, in pixels; otherwise, **CB_ERR**.  
   
 ### Remarks  
- This function only applies to combo boxes with the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  
+ This function only applies to combo boxes with the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
  By default, the minimum allowable width of the drop-down list box is 0. The minimum allowable width can be set by calling [SetDroppedWidth](#setdroppedwidth). When the list-box portion of the combo box is displayed, its width is the larger of the minimum allowable width or the combo box width.  
   
@@ -624,7 +606,7 @@ BOOL GetExtendedUI() const;
 ### Remarks  
  The extended user interface can be identified in the following ways:  
   
--   Clicking the static control displays the list box only for combo boxes with the [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  
+-   Clicking the static control displays the list box only for combo boxes with the [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
 -   Pressing the DOWN ARROW key displays the list box (F4 is disabled).  
   
@@ -681,7 +663,7 @@ void* GetItemDataPtr(int nIndex) const;
  Contains the zero-based index of an item in the combo box's list box.  
   
 ### Return Value  
- Retrieves a pointer, or –1 if an error occurs.  
+ Retrieves a pointer, or -1 if an error occurs.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#22](../../mfc/reference/codesnippet/cpp/ccombobox-class_22.cpp)]  
@@ -695,7 +677,7 @@ int GetItemHeight(int nIndex) const;
   
 ### Parameters  
  `nIndex`  
- Specifies the component of the combo box whose height is to be retrieved. If the `nIndex` parameter is –1, the height of the edit-control (or static-text) portion of the combo box is retrieved. If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, `nIndex` specifies the zero-based index of the list item whose height is to be retrieved. Otherwise, `nIndex` should be set to 0.  
+ Specifies the component of the combo box whose height is to be retrieved. If the `nIndex` parameter is -1, the height of the edit-control (or static-text) portion of the combo box is retrieved. If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, `nIndex` specifies the zero-based index of the list item whose height is to be retrieved. Otherwise, `nIndex` should be set to 0.  
   
 ### Return Value  
  The height, in pixels, of the specified item in a combo box. The return value is **CB_ERR** if an error occurs.  
@@ -779,7 +761,7 @@ int GetMinVisible() const;
  The minimum number of visible items in the current drop-down list.  
   
 ### Remarks  
- This method sends the [CB_GETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [CB_GETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the Windows SDK.  
   
 ##  <a name="gettopindex"></a>  CComboBox::GetTopIndex  
  Retrieves the zero-based index of the first visible item in the list-box portion of the combo box.  
@@ -837,7 +819,7 @@ int InsertString(
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index to the position in the list box that will receive the string. If this parameter is –1, the string is added to the end of the list.  
+ Contains the zero-based index to the position in the list box that will receive the string. If this parameter is -1, the string is added to the end of the list.  
   
  `lpszString`  
  Points to the null-terminated string that is to be inserted.  
@@ -846,10 +828,10 @@ int InsertString(
  The zero-based index of the position at which the string was inserted. The return value is **CB_ERR** if an error occurs. The return value is **CB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- Unlike the [AddString](#addstring) member function, the `InsertString` member function does not cause a list with the [CBS_SORT](../../mfc/reference/combo-box-styles.md) style to be sorted.  
+ Unlike the [AddString](#addstring) member function, the `InsertString` member function does not cause a list with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style to be sorted.  
   
 > [!NOTE]
->  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+>  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/cpp/ccombobox-class_27.cpp)]  
@@ -866,10 +848,10 @@ BOOL LimitText(int nMaxChars);
  Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to 65,535 bytes.  
   
 ### Return Value  
- Nonzero if successful. If called for a combo box with the style [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) or for a combo box without an edit control, the return value is **CB_ERR**.  
+ Nonzero if successful. If called for a combo box with the style [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or for a combo box without an edit control, the return value is **CB_ERR**.  
   
 ### Remarks  
- If the combo box does not have the style [CBS_AUTOHSCROLL](../../mfc/reference/combo-box-styles.md), setting the text limit to be larger than the size of the edit control will have no effect.  
+ If the combo box does not have the style [CBS_AUTOHSCROLL](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles), setting the text limit to be larger than the size of the edit control will have no effect.  
   
  `LimitText` only limits the text the user can enter. It has no effect on any text already in the edit control when the message is sent, nor does it affect the length of the text copied to the edit control when a string in the list box is selected.  
   
@@ -888,7 +870,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.  
   
 ### Remarks  
- By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the dimensions of the list box in the combo box. If the combo box is created with the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
+ By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the dimensions of the list box in the combo box. If the combo box is created with the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
   
  Using the **CBS_OWNERDRAWFIXED** style in an owner-draw combo box created with the [SubclassDlgItem](../../mfc/reference/cwnd-class.md#subclassdlgitem) member function of `CWnd` involves further programming considerations. See the discussion in [Technical Note 14](../../mfc/tn014-custom-controls.md).  
   
@@ -931,7 +913,7 @@ int SelectString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If -1, the entire list box is searched from the beginning.  
   
  `lpszString`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string can contain any combination of uppercase and lowercase letters.  
@@ -966,7 +948,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 ### Remarks  
  Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.  
   
- This method sends the [CB_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775897) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [CB_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775897) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_combobox`, that is used to programmatically access the combo box control. This variable is used in the next example.  
@@ -987,10 +969,10 @@ int SetCurSel(int nSelect);
   
 ### Parameters  
  `nSelect`  
- Specifies the zero-based index of the string to select. If –1, any current selection in the list box is removed and the edit control is cleared.  
+ Specifies the zero-based index of the string to select. If -1, any current selection in the list box is removed and the edit control is cleared.  
   
 ### Return Value  
- The zero-based index of the item selected if the message is successful. The return value is **CB_ERR** if `nSelect` is greater than the number of items in the list or if `nSelect` is set to –1, which clears the selection.  
+ The zero-based index of the item selected if the message is successful. The return value is **CB_ERR** if `nSelect` is greater than the number of items in the list or if `nSelect` is set to -1, which clears the selection.  
   
 ### Remarks  
  If necessary, the list box scrolls the string into view (if the list box is visible). The text in the edit control of the combo box is changed to reflect the new selection. Any previous selection in the list box is removed.  
@@ -1013,7 +995,7 @@ int SetDroppedWidth(UINT nWidth);
  If successful, the new width of the list box, otherwise **CB_ERR**.  
   
 ### Remarks  
- This function only applies to combo boxes with the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  
+ This function only applies to combo boxes with the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
  By default, the minimum allowable width of the drop-down list box is 0. When the list-box portion of the combo box is displayed, its width is the larger of the minimum allowable width or the combo box width.  
   
@@ -1031,25 +1013,25 @@ BOOL SetEditSel(
   
 ### Parameters  
  `nStartChar`  
- Specifies the starting position. If the starting position is set to –1, then any existing selection is removed.  
+ Specifies the starting position. If the starting position is set to -1, then any existing selection is removed.  
   
  `nEndChar`  
- Specifies the ending position. If the ending position is set to –1, then all text from the starting position to the last character in the edit control is selected.  
+ Specifies the ending position. If the ending position is set to -1, then all text from the starting position to the last character in the edit control is selected.  
   
 ### Return Value  
- Nonzero if the member function is successful; otherwise 0. It is **CB_ERR** if `CComboBox` has the [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style or does not have a list box.  
+ Nonzero if the member function is successful; otherwise 0. It is **CB_ERR** if `CComboBox` has the [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style or does not have a list box.  
   
 ### Remarks  
  The positions are zero-based. To select the first character of the edit control, you specify a starting position of 0. The ending position is for the character just after the last character to select. For example, to select the first four characters of the edit control, you would use a starting position of 0 and an ending position of 4.  
   
 > [!NOTE]
->  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+>  This function is not supported by the Windows **ComboBoxEx** control. For more information on this control, see [ComboBoxEx Controls](http://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
   
 ### Example  
   See the example for [CComboBox::GetEditSel](#geteditsel).  
   
 ##  <a name="setextendedui"></a>  CComboBox::SetExtendedUI  
- Call the `SetExtendedUI` member function to select either the default user interface or the extended user interface for a combo box that has the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  
+ Call the `SetExtendedUI` member function to select either the default user interface or the extended user interface for a combo box that has the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
 ```  
 int SetExtendedUI(BOOL bExtended = TRUE);
@@ -1086,7 +1068,7 @@ void SetHorizontalExtent(UINT nExtent);
  Specifies the number of pixels by which the list-box portion of the combo box can be scrolled horizontally.  
   
 ### Remarks  
- If the width of the list box is smaller than this value, the horizontal scroll bar will horizontally scroll items in the list box. If the width of the list box is equal to or greater than this value, the horizontal scroll bar is hidden or, if the combo box has the [CBS_DISABLENOSCROLL](../../mfc/reference/combo-box-styles.md) style, disabled.  
+ If the width of the list box is smaller than this value, the horizontal scroll bar will horizontally scroll items in the list box. If the width of the list box is equal to or greater than this value, the horizontal scroll bar is hidden or, if the combo box has the [CBS_DISABLENOSCROLL](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, disabled.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#35](../../mfc/reference/codesnippet/cpp/ccombobox-class_37.cpp)]  
@@ -1154,9 +1136,9 @@ int SetItemHeight(
  `nIndex`  
  Specifies whether the height of list items or the height of the edit-control (or static-text) portion of the combo box is set.  
   
- If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, `nIndex` specifies the zero-based index of the list item whose height is to be set; otherwise, `nIndex` must be 0 and the height of all list items will be set.  
+ If the combo box has the [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, `nIndex` specifies the zero-based index of the list item whose height is to be set; otherwise, `nIndex` must be 0 and the height of all list items will be set.  
   
- If `nIndex` is –1, the height of the edit-control or static-text portion of the combo box is to be set.  
+ If `nIndex` is -1, the height of the edit-control or static-text portion of the combo box is to be set.  
   
  `cyItemHeight`  
  Specifies the height, in pixels, of the combo-box component identified by `nIndex`.  
@@ -1207,7 +1189,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [CB_SETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [CB_SETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_combobox`, that is used to programmatically access the combo box control. This variable is used in the next example.  
@@ -1240,7 +1222,7 @@ int SetTopIndex(int nIndex);
  [!code-cpp[NVC_MFC_CComboBox#40](../../mfc/reference/codesnippet/cpp/ccombobox-class_42.cpp)]  
   
 ##  <a name="showdropdown"></a>  CComboBox::ShowDropDown  
- Shows or hides the list box of a combo box that has the [CBS_DROPDOWN](../../mfc/reference/combo-box-styles.md) or [CBS_DROPDOWNLIST](../../mfc/reference/combo-box-styles.md) style.  
+ Shows or hides the list box of a combo box that has the [CBS_DROPDOWN](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [CBS_DROPDOWNLIST](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
 ```  
 void ShowDropDown(BOOL bShowIt = TRUE);
@@ -1253,7 +1235,7 @@ void ShowDropDown(BOOL bShowIt = TRUE);
 ### Remarks  
  By default, a combo box of this style will show the list box.  
   
- This member function has no effect on a combo box created with the [CBS_SIMPLE](../../mfc/reference/combo-box-styles.md) style.  
+ This member function has no effect on a combo box created with the [CBS_SIMPLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style.  
   
 ### Example  
   See the example for [CComboBox::GetDroppedState](#getdroppedstate).  

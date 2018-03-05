@@ -4,97 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDBPropSet::AddProperty"
-  - "CDBPropSet.AddProperty"
-  - "AddProperty"
-  - "ATL::CDBPropSet::AddProperty"
-  - "ATL.CDBPropSet.AddProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddProperty method"
+ms.topic: "reference"
+f1_keywords: ["CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddProperty method"]
 ms.assetid: dc9539d3-1ee4-40f3-9281-2068e6d65e93
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropSet::AddProperty
 Adds a property to the property set.  
   
 ## Syntax  
   
-```  
-  
-      bool AddProperty(   
-   DWORD dwPropertyID,   
-   const VARIANT& var,   
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   LPCSTR szValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   LPCWSTR szValue,   
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   bool bValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   BYTE bValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   short nValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   long nValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   float fltValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   double dblValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   CY cyValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
+```
+bool AddProperty(DWORD dwPropertyID,   
+   constVARIANT& var,   
+   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   bool bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   BYTE bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   short nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   long nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   float fltValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   double dblValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();  
 ```  
   
 #### Parameters  

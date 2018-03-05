@@ -4,50 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/base"
-  - "VC.Project.VCLinkerTool.BaseAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "base addresses [C++]"
-  - "programs [C++], preventing relocation"
-  - "semicolon [C++], specifier"
-  - "-BASE linker option"
-  - "key address size"
-  - "environment variables [C++], LIB"
-  - "programs [C++], base address"
-  - "LIB environment variable"
-  - "BASE linker option"
-  - "DLLs [C++], linking"
-  - "/BASE linker option"
-  - "@ symbol for base address"
-  - "executable files [C++], base address"
-  - "at sign symbol for base address"
+f1_keywords: ["/base", "VC.Project.VCLinkerTool.BaseAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["base addresses [C++]", "programs [C++], preventing relocation", "semicolon [C++], specifier", "-BASE linker option", "key address size", "environment variables [C++], LIB", "programs [C++], base address", "LIB environment variable", "BASE linker option", "DLLs [C++], linking", "/BASE linker option", "@ symbol for base address", "executable files [C++], base address", "at sign symbol for base address"]
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /BASE (Base Address)
 ```  

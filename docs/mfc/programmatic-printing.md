@@ -4,74 +4,41 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "printing [MFC], active documents"
-  - "active documents [C++], printing"
-  - "printing [MFC], programmatic"
-  - "IPrint interface"
-  - "printing [MFC]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["printing [MFC], active documents", "active documents [MFC], printing", "printing [MFC], programmatic", "IPrint interface", "printing [MFC]"]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Programmatic Printing
 OLE provided the means to uniquely identify persistent documents (**GetClassFile**) and load them into their associated code (`CoCreateInstance`, **QueryInterface(IID_IPersistFile)**, **QueryInterface(IID_IPersistStorage)**, **IPersistFile::Load**, and **IPersistStorage::Load**). To further enable printing documents, active document containment (using an existing OLE design not shipped with OLE 2.0 originally) introduces a base-standard printing interface, `IPrint`, generally available through any object that can load the persistent state of the document type. Each view of an active document can optionally support the **IPrint** interface to provide these capabilities.  
   
  The `IPrint` interface is defined as follows:  
   
- `interface IPrint : IUnknown`  
-  
- `{`  
-  
- `HRESULT SetInitialPageNum([in] LONG nFirstPage);`  
-  
- `HRESULT GetPageInfo(`  
-  
- `[out] LONG *pnFirstPage,`  
-  
- `[out] LONG *pcPages);`  
-  
- `HRESULT Print(`  
-  
- `[in] DWORD grfFlags,`  
-  
- `[in,out] DVTARGETDEVICE **pptd,`  
-  
- `[in,out] PAGESET ** ppPageSet,`  
-  
- `[in,out] STGMEDIUM **ppstgmOptions,`  
-  
- `[in] IContinueCallback* pCallback,`  
-  
- `[in] LONG nFirstPage,`  
-  
- `[out] LONG *pcPagesPrinted,`  
-  
- `[out] LONG *pnPageLast);`  
-  
- `};`  
+```  
+interface IPrint : IUnknown  
+    {  
+    HRESULT SetInitialPageNum([in] LONG nFirstPage);  
+    HRESULT GetPageInfo(  
+        [out] LONG *pnFirstPage,  
+        [out] LONG *pcPages);  
+    HRESULT Print(  
+        [in] DWORD grfFlags,  
+        [in,out] DVTARGETDEVICE **pptd,  
+        [in,out] PAGESET ** ppPageSet,  
+        [in,out] STGMEDIUM **ppstgmOptions,  
+        [in] IContinueCallback* pCallback,  
+        [in] LONG nFirstPage,  
+        [out] LONG *pcPagesPrinted,  
+        [out] LONG *pnPageLast);  
+    };  
+```  
   
  Clients and containers simply use **IPrint::Print** to instruct the document to print itself once that document is loaded, specifying printing control flags, the target device, the pages to print, and additional options. The client can also control the continuation of printing through the interface `IContinueCallback` (see below).  
   
@@ -85,21 +52,16 @@ OLE provided the means to uniquely identify persistent documents (**GetClassFile
   
  During a print procedure, you may want the client or container that initiated the printing to control whether or not the printing should continue. For example, the container may support a "Stop Print" command that should terminate the print job as soon as possible. To support this capability, the client of a printable object can implement a small notification sink object with the interface `IContinueCallback`:  
   
- `interface IContinueCallback : IUnknown`  
-  
- `{`  
-  
- `HRESULT FContinue(void);`  
-  
- `HRESULT FContinuePrinting(`  
-  
- `[in] LONG cPagesPrinted,`  
-  
- `[in] LONG nCurrentPage,`  
-  
- `[in] LPOLESTR pszPrintStatus);`  
-  
- `};`  
+```  
+interface IContinueCallback : IUnknown  
+    {  
+    HRESULT FContinue(void);  
+    HRESULT FContinuePrinting(  
+        [in] LONG cPagesPrinted,  
+        [in] LONG nCurrentPage,  
+        [in] LPOLESTR pszPrintStatus);  
+    };  
+```  
   
  This interface is designed to be useful as a generic continuation callback function that takes the place of the various continuation procedures in the Win32 API (such as the **AbortProc** for printing and the **EnumMetafileProc** for metafile enumeration). Thus this interface design is useful in a wide variety of time-consuming processes.  
   

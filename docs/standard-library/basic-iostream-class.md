@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "istream/std::basic_iostream"
-  - "std.basic_iostream"
-  - "basic_iostream"
-  - "std::basic_iostream"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_iostream class"
+ms.topic: "reference"
+f1_keywords: ["istream/std::basic_iostream", "istream/std::basic_iostream::swap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["basic_iostream class"]
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # basic_iostream Class
 A stream class that can do both input and output.  
@@ -62,26 +42,26 @@ public:
   
 |||  
 |-|-|  
-|[basic_iostream](#basic_iostream__basic_iostream)|Create a `basic_iostream` object.|  
+|[basic_iostream](#basic_iostream)|Create a `basic_iostream` object.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[swap](#basic_iostream__swap)|Exchanges the contents of the provided `basic_iostream` object for the contents of this object.|  
+|[swap](#swap)|Exchanges the contents of the provided `basic_iostream` object for the contents of this object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator=](#basic_iostream__operator_eq)|Assigns the value of a specified `basic_iostream` object to this object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|  
+|[operator=](#op_eq)|Assigns the value of a specified `basic_iostream` object to this object. This is a move assignment involving an `rvalue` that does not leave a copy behind.|  
   
 ## Requirements  
  **Header:** \<istream>  
   
  **Namespace:** std  
   
-##  <a name="basic_iostream__basic_iostream"></a>  basic_iostream::basic_iostream  
+##  <a name="basic_iostream"></a>  basic_iostream::basic_iostream  
  Create a `basic_iostream` object.  
   
 ```  
@@ -93,32 +73,32 @@ basic_iostream();
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  An existing `basic_streambuf` object.  
   
- ` right`  
+ `right`  
  An existing `basic_iostream` object that is used to construct a new `basic_iostream`.  
   
 ### Remarks  
- The first constructor initializes the base objects by way of `basic_istream(`` strbuf``)` and `basic_ostream(`` strbuf``)`.  
+ The first constructor initializes the base objects by way of `basic_istream(strbuf)` and `basic_ostream(strbuf)`.  
   
- The second constructor initializes the base objects by calling move `(`` right``)`.  
+ The second constructor initializes the base objects by calling `move(right)`.  
   
-##  <a name="basic_iostream__operator_eq"></a>  basic_iostream::operator=  
- Assign the value of a specified `basic_iostream` object to this object. This is a move assignment involving an `rvalue` that does not leave a copy behind.  
+##  <a name="op_eq"></a>  basic_iostream::operator=  
+ Assign the value of a specified `basic_iostream` object to this object. This is a move assignment involving an rvalue that does not leave a copy behind.  
   
 ```  
 basic_iostream& operator=(basic_iostream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `rvalue` reference to a `basic_iostream` object to assign from.  
   
 ### Remarks  
- The member operator calls swap `(`` right``)`.  
+ The member operator calls `swap(right)`.  
   
-##  <a name="basic_iostream__swap"></a>  basic_iostream::swap  
+##  <a name="swap"></a>  basic_iostream::swap  
  Exchanges the contents of the provided `basic_iostream` object for the contents of this object.  
   
 ```  
@@ -126,11 +106,11 @@ void swap(basic_iostream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The `basic_iostream` object to swap.  
   
 ### Remarks  
- The member function calls swap `(`` right``)`  
+ The member function calls `swap(right)`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

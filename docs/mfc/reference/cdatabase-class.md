@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDatabase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "database classes [C++], ODBC"
-  - "MFC [C++], ODBC"
-  - "ODBC [C++], CDatabase class"
-  - "ODBC database class"
-  - "database connections [C++], CDatabase class"
-  - "CDatabase class"
+f1_keywords: ["CDatabase", "AFXDB/CDatabase", "AFXDB/CDatabase::CDatabase", "AFXDB/CDatabase::BeginTrans", "AFXDB/CDatabase::BindParameters", "AFXDB/CDatabase::Cancel", "AFXDB/CDatabase::CanTransact", "AFXDB/CDatabase::CanUpdate", "AFXDB/CDatabase::Close", "AFXDB/CDatabase::CommitTrans", "AFXDB/CDatabase::ExecuteSQL", "AFXDB/CDatabase::GetBookmarkPersistence", "AFXDB/CDatabase::GetConnect", "AFXDB/CDatabase::GetCursorCommitBehavior", "AFXDB/CDatabase::GetCursorRollbackBehavior", "AFXDB/CDatabase::GetDatabaseName", "AFXDB/CDatabase::IsOpen", "AFXDB/CDatabase::OnSetOptions", "AFXDB/CDatabase::Open", "AFXDB/CDatabase::OpenEx", "AFXDB/CDatabase::Rollback", "AFXDB/CDatabase::SetLoginTimeout", "AFXDB/CDatabase::SetQueryTimeout", "AFXDB/CDatabase::m_hdbc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDatabase [MFC], CDatabase", "CDatabase [MFC], BeginTrans", "CDatabase [MFC], BindParameters", "CDatabase [MFC], Cancel", "CDatabase [MFC], CanTransact", "CDatabase [MFC], CanUpdate", "CDatabase [MFC], Close", "CDatabase [MFC], CommitTrans", "CDatabase [MFC], ExecuteSQL", "CDatabase [MFC], GetBookmarkPersistence", "CDatabase [MFC], GetConnect", "CDatabase [MFC], GetCursorCommitBehavior", "CDatabase [MFC], GetCursorRollbackBehavior", "CDatabase [MFC], GetDatabaseName", "CDatabase [MFC], IsOpen", "CDatabase [MFC], OnSetOptions", "CDatabase [MFC], Open", "CDatabase [MFC], OpenEx", "CDatabase [MFC], Rollback", "CDatabase [MFC], SetLoginTimeout", "CDatabase [MFC], SetQueryTimeout", "CDatabase [MFC], m_hdbc"]
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDatabase Class
 Represents a connection to a data source, through which you can operate on the data source.  
@@ -60,7 +38,7 @@ class CDatabase : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDatabase::BeginTrans](#begintrans)|Starts a "transaction" â€” a series of reversible calls to the `AddNew`, **Edit**, **Delete**, and **Update** member functions of class `CRecordset` â€” on the connected data source. The data source must support transactions for **BeginTrans** to have any effect.|  
+|[CDatabase::BeginTrans](#begintrans)|Starts a "transaction" — a series of reversible calls to the `AddNew`, **Edit**, **Delete**, and **Update** member functions of class `CRecordset` — on the connected data source. The data source must support transactions for **BeginTrans** to have any effect.|  
 |[CDatabase::BindParameters](#bindparameters)|Allows you to bind parameters before calling `CDatabase::ExecuteSQL`.|  
 |[CDatabase::Cancel](#cancel)|Cancels an asynchronous operation or a process from a second thread.|  
 |[CDatabase::CanTransact](#cantransact)|Returns nonzero if the data source supports transactions.|  
@@ -161,7 +139,7 @@ void Cancel();
 ```  
   
 ### Remarks  
- Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). For more information, see [Asynchronous Execution](https://msdn.microsoft.com/library/ms713563.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). For more information, see [Asynchronous Execution](https://msdn.microsoft.com/library/ms713563.aspx) in the Windows SDK.  
   
 ##  <a name="cantransact"></a>  CDatabase::CanTransact  
  Call this member function to determine whether the database allows transactions.  
@@ -287,7 +265,7 @@ DWORD GetBookmarkPersistence() const;
 |`SQL_BP_UPDATE`|The bookmark for a row is valid after an **Update** operation on that row.|  
 |`SQL_BP_OTHER_HSTMT`|Bookmarks associated with one recordset object are valid on a second recordset.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about bookmarks, see the article [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about bookmarks, see the article [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
   
 ##  <a name="getconnect"></a>  CDatabase::GetConnect  
  Call this member function to retrieve the connection string used during the call to `OpenEx` or `Open` that connected the `CDatabase` object to a data source.  
@@ -321,7 +299,7 @@ int GetCursorCommitBehavior() const;
 |`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction commit.|  
 |`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
 ##  <a name="getcursorrollbackbehavior"></a>  CDatabase::GetCursorRollbackBehavior  
  Call this member function to determine how a [Rollback](#rollback) operation affects cursors on open recordset objects.  
@@ -342,7 +320,7 @@ int GetCursorRollbackBehavior() const;
 |`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction rollback.|  
 |`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
 ##  <a name="getdatabasename"></a>  CDatabase::GetDatabaseName  
  Call this member function to retrieve the name of the currently connected database (provided that the data source defines a named object called "database").  
@@ -370,7 +348,7 @@ BOOL IsOpen() const;
  Nonzero if the `CDatabase` object is currently connected; otherwise 0.  
   
 ##  <a name="m_hdbc"></a>  CDatabase::m_hdbc  
- Contains a public handle to an ODBC data source connection â€” a "connection handle."  
+ Contains a public handle to an ODBC data source connection — a "connection handle."  
   
 ### Remarks  
  Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or **Open**. The framework deallocates the handle when you call the **delete** operator on the `CDatabase` object. Note that the **Close** member function does not deallocate the handle.  
@@ -417,7 +395,7 @@ virtual BOOL Open(
   
 ### Parameters  
  `lpszDSN`  
- Specifies a data source name â€” a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in `lpszConnect` (in the form "DSN=\<data-source>"), it must not be specified again in `lpszDSN`. In this case, `lpszDSN` should be **NULL**. Otherwise, you can pass **NULL** if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
+ Specifies a data source name — a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in `lpszConnect` (in the form "DSN=\<data-source>"), it must not be specified again in `lpszDSN`. In this case, `lpszDSN` should be **NULL**. Otherwise, you can pass **NULL** if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
   
  `bExclusive`  
  Not supported in this version of the class library. Currently, an assertion fails if this parameter is **TRUE**. The data source is always opened as shared (not exclusive).  
@@ -444,7 +422,7 @@ virtual BOOL Open(
   
  If you wish, you can open your own dialog box before you call **Open** to get information from the user, such as a password, then add that information to the connection string you pass to **Open**. Or you might want to save the connection string you pass so you can reuse it the next time your application calls **Open** on a `CDatabase` object.  
   
- You can also use the connection string for multiple levels of login authorization (each for a different `CDatabase` object) or to convey other data source-specific information. For more information about connection strings, see Chapter 5 in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ You can also use the connection string for multiple levels of login authorization (each for a different `CDatabase` object) or to convey other data source-specific information. For more information about connection strings, see Chapter 5 in the Windows SDK.  
   
  It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, **Open** throws a `CDBException`.  
   
@@ -505,7 +483,7 @@ BOOL Rollback();
  Nonzero if the transaction was successfully reversed; otherwise 0. If a **Rollback** call fails, the data source and transaction states are undefined. If **Rollback** returns 0, you must check the data source to determine its state.  
   
 ### Remarks  
- All `CRecordset``AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
+ All `CRecordset` `AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
   
  After a call to **Rollback**, the transaction is over, and you must call **BeginTrans** again for another transaction. The record that was current before you called **BeginTrans** becomes the current record again after **Rollback**.  
   
@@ -515,7 +493,7 @@ BOOL Rollback();
   See the article [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).  
   
 ##  <a name="setlogintimeout"></a>  CDatabase::SetLoginTimeout  
- Call this member function â€” before you call `OpenEx` or **Open** â€” to override the default number of seconds allowed before an attempted data source connection times out.  
+ Call this member function — before you call `OpenEx` or **Open** — to override the default number of seconds allowed before an attempted data source connection times out.  
   
 ```  
 void SetLoginTimeout(DWORD dwSeconds);

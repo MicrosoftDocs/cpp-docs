@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<scoped_allocator>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scoped_allocator Header"
+ms.topic: "reference"
+f1_keywords: ["<scoped_allocator>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["scoped_allocator Header"]
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;scoped_allocator&gt;
 Defines the container template class scoped_allocator.  
@@ -47,8 +30,8 @@ Defines the container template class scoped_allocator.
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/scoped-allocator-operators.md#operator_neq)|Tests if the scoped_allocator object on the left side of the operator is not equal to the list object on the right side.|  
-|[operator==](../standard-library/scoped-allocator-operators.md#operator_eq_eq)|Tests if the scoped_allocator object on the left side of the operator is equal to the list object on the right side.|  
+|[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|Tests if the scoped_allocator object on the left side of the operator is not equal to the list object on the right side.|  
+|[operator==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|Tests if the scoped_allocator object on the left side of the operator is equal to the list object on the right side.|  
   
 ### Classes  
   

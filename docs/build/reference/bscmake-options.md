@@ -4,59 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCBscMakeTool.OutputFile"
-  - "VC.Project.VCBscMakeTool.SuppressStartupBanner"
-  - "VC.Project.VCBscMakeTool.PreserveSBR"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/v BSCMAKE option"
-  - "Iu BSCMAKE option"
-  - "browse information files (.bsc), content"
-  - "/Er BSCMAKE option"
-  - "NOLOGO BSCMAKE option"
-  - "/s BSCMAKE option"
-  - "/Ei BSCMAKE option"
-  - "/o BSCMAKE option"
-  - "/NOLOGO BSCMAKE option"
-  - "/Iu BSCMAKE option"
-  - "s BSCMAKE option (/s)"
-  - "/Em BSCMAKE option"
-  - "Em BSCMAKE option"
-  - "Es BSCMAKE option"
-  - "files [C++], BSCMAKE"
-  - "Er BSCMAKE option"
-  - "BSCMAKE, options for controlling files"
-  - "controlling BSCMAKE options"
-  - "El BSCMAKE option"
-  - "/El BSCMAKE option"
-  - "/Es BSCMAKE option"
-  - "Ei BSCMAKE option"
+f1_keywords: ["VC.Project.VCBscMakeTool.OutputFile", "VC.Project.VCBscMakeTool.SuppressStartupBanner", "VC.Project.VCBscMakeTool.PreserveSBR"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/v BSCMAKE option", "Iu BSCMAKE option", "browse information files (.bsc), content", "/Er BSCMAKE option", "NOLOGO BSCMAKE option", "/s BSCMAKE option", "/Ei BSCMAKE option", "/o BSCMAKE option", "/NOLOGO BSCMAKE option", "/Iu BSCMAKE option", "s BSCMAKE option (/s)", "/Em BSCMAKE option", "Em BSCMAKE option", "Es BSCMAKE option", "files [C++], BSCMAKE", "Er BSCMAKE option", "BSCMAKE, options for controlling files", "controlling BSCMAKE options", "El BSCMAKE option", "/El BSCMAKE option", "/Es BSCMAKE option", "Ei BSCMAKE option"]
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Options
 This section describes the options available for controlling BSCMAKE. Several options control the content of the browse information file by excluding or including certain information. The exclusion options can allow BSCMAKE to run faster and may result in a smaller .bsc file. Option names are case sensitive (except for **/HELP** and **/NOLOGO**).  

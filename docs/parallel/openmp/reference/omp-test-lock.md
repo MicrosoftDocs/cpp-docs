@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "omp_test_lock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "omp_test_lock OpenMP function"
+ms.topic: "reference"
+f1_keywords: ["omp_test_lock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["omp_test_lock OpenMP function"]
 ms.assetid: 314ca85e-0749-4c16-800f-b0f36fed256d
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # omp_test_lock
 Attempts to set a lock but does not block thread execution.  

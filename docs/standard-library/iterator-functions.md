@@ -5,10 +5,12 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
 caps.latest.revision: 16
 manager: "ghogen"
+helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::begin [C++]", "std::cbegin [C++]", "std::cend [C++]", "std::distance [C++]", "std::end [C++]", "std::front_inserter [C++]", "std::inserter [C++]", "std::make_checked_array_iterator [C++]", "std::make_move_iterator [C++]", "std::make_unchecked_array_iterator [C++]", "std::next [C++]", "std::prev [C++]"]
 ---
 # &lt;iterator&gt; functions
 ||||  
@@ -324,14 +326,14 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The first iterator whose distance from the second is to be determined.  
   
- ` last`  
+ `last`  
  The second iterator whose distance from the first is to be determined.  
   
 ### Return Value  
- The number of times that ` first` must be incremented until it equal ` last`.  
+ The number of times that `first` must be incremented until it equal `last`.  
   
 ### Remarks  
  The distance function has constant complexity when **InputIterator** satisfies the requirements for a random-access iterator; otherwise, it has linear complexity and so is potentially expensive.  
@@ -431,7 +433,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
  A `front_insert_iterator` associated with the container object `_Cont`.  
   
 ### Remarks  
- The member function [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator__front_insert_iterator) of the front_insert_iterator class may also be used.  
+ The member function [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator) of the front_insert_iterator class may also be used.  
   
  Within the C++ Standard Library, the argument must refer to one of the two sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md) or "list Class".  
   
@@ -483,7 +485,7 @@ After the front insertions, the list L is:
 ```  
   
 ##  <a name="inserter"></a>  inserter  
- A helper template function that lets you use `inserter(``_Cont``,``_Where``)` instead of `insert_iterator<Container>(``_Cont`, `_Where``)`.  
+ A helper template function that lets you use `inserter(_Cont, _Where)` instead of `insert_iterator<Container>(_Cont, _Where)`.  
   
 ```  
 template <class Container>  
@@ -501,7 +503,7 @@ inserter(
  An iterator locating the point of insertion.  
   
 ### Remarks  
- The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator__insert_iterator)`<Container>(``_Cont``,` `_Where``)`.  
+ The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(_Cont, _Where)`.  
   
 ### Example  
   
@@ -654,7 +656,7 @@ make_move_iterator(const Iterator& _It);
  The iterator stored in the new move iterator.  
   
 ### Remarks  
- The template function returns `move_iterator``<Iterator>(``_It``)`.  
+ The template function returns `move_iterator` `<Iterator>(_It)`.  
   
 ##  <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator  
  Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.  
@@ -742,7 +744,7 @@ InputIterator next(
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The current position.  
   
  `_Off`  
@@ -765,7 +767,7 @@ BidirectionalIterator prev(
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  The current position.  
   
  `_Off`  

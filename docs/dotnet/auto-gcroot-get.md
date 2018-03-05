@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr::auto_gcroot::get"
-  - "msclr.auto_gcroot.get"
-  - "auto_gcroot::get"
-  - "auto_gcroot.get"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_gcroot::get"
+f1_keywords: ["msclr::auto_gcroot::get", "msclr.auto_gcroot.get", "auto_gcroot::get", "auto_gcroot.get"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["auto_gcroot::get"]
 ms.assetid: 0e922019-1cf5-4220-b5ab-6c4a2a6b40ec
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::get
 Gets the contained object.  

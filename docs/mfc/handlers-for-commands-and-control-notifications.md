@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "commands, handlers for"
-  - "functions [C++], handler"
-  - "handlers"
-  - "controls [MFC], notifications"
-  - "handlers, control notification"
-  - "notifications, handlers for control"
-  - "handlers, command"
+dev_langs: ["C++"]
+helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Handlers for Commands and Control Notifications
 There are no default handlers for commands or control-notification messages. Therefore, you are bound only by convention in naming your handlers for these categories of messages. When you map the command or control notification to a handler, the Properties windows proposes a name based on the command ID or control-notification code. You can accept the proposed name, change it, or replace it.  

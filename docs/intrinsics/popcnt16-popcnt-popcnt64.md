@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__popcnt64"
-  - "__popcnt"
-  - "__popcnt16"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "popcnt instruction"
-  - "__popcnt16"
-  - "__popcnt64"
-  - "__popcnt"
+ms.topic: "reference"
+f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __popcnt16, __popcnt, __popcnt64
 **Microsoft Specific**  
@@ -114,11 +91,11 @@ __popcnt16(0xff) = 8
 __popcnt16(0xffff) = 16  
 __popcnt(0x0) = 0  
 __popcnt(0xff) = 8  
-__oopcnt(0xffff) = 16  
+__popcnt(0xffff) = 16  
 __popcnt(0xffffffff) = 32  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

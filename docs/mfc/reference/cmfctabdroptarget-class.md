@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCTabDropTarget"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTabDropTarget class"
+f1_keywords: ["CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragEnter", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragLeave", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver", "AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx", "AFXBASETABCTRL/CMFCTabDropTarget::Register"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTabDropTarget [MFC], OnDragEnter", "CMFCTabDropTarget [MFC], OnDragLeave", "CMFCTabDropTarget [MFC], OnDragOver", "CMFCTabDropTarget [MFC], OnDropEx", "CMFCTabDropTarget [MFC], Register"]
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCTabDropTarget Class
 Provides the communication mechanism between a tab control and the OLE libraries.  

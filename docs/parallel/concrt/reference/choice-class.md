@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::choice"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "choice class"
+ms.topic: "reference"
+f1_keywords: ["choice", "AGENTS/concurrency::choice", "AGENTS/concurrency::choice::choice", "AGENTS/concurrency::choice::accept", "AGENTS/concurrency::choice::acquire_ref", "AGENTS/concurrency::choice::consume", "AGENTS/concurrency::choice::has_value", "AGENTS/concurrency::choice::index", "AGENTS/concurrency::choice::link_target", "AGENTS/concurrency::choice::release", "AGENTS/concurrency::choice::release_ref", "AGENTS/concurrency::choice::reserve", "AGENTS/concurrency::choice::unlink_target", "AGENTS/concurrency::choice::unlink_targets", "AGENTS/concurrency::choice::value"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["choice class"]
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # choice Class
 A `choice` messaging block is a multi-source, single-target block that represents a control-flow interaction with a set of sources. The choice block will wait for any one of multiple sources to produce a message and will propagate the index of the source that produced the message.  
@@ -62,25 +45,25 @@ class choice: public ISource<size_t>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[choice Constructor](#ctor)|Overloaded. Constructs a `choice` messaging block.|  
+|[choice](#ctor)|Overloaded. Constructs a `choice` messaging block.|  
 |[~choice Destructor](#dtor)|Destroys the `choice` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept Method](#accept)|Accepts a message that was offered by this `choice` block, transferring ownership to the caller.|  
-|[acquire_ref Method](#acquire_ref)|Acquires a reference count on this `choice` messaging block, to prevent deletion.|  
-|[consume Method](#consume)|Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
-|[has_value Method](#has_value)|Checks whether this `choice` messaging block has been initialized with a value yet.|  
-|[index Method](#index)|Returns an index into the `tuple` representing the element selected by the `choice` messaging block.|  
-|[link_target Method](#link_target)|Links a target block to this `choice` messaging block.|  
-|[release Method](#release)|Releases a previous successful message reservation.|  
-|[release_ref Method](#release_ref)|Releases a reference count on this `choice` messaging block.|  
-|[reserve Method](#reserve)|Reserves a message previously offered by this `choice` messaging block.|  
-|[unlink_target Method](#unlink_target)|Unlinks a target block from this `choice` messaging block.|  
-|[unlink_targets Method](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
-|[value Method](#value)|Gets the message whose index was selected by the `choice` messaging block.|  
+|[accept](#accept)|Accepts a message that was offered by this `choice` block, transferring ownership to the caller.|  
+|[acquire_ref](#acquire_ref)|Acquires a reference count on this `choice` messaging block, to prevent deletion.|  
+|[consume](#consume)|Consumes a message previously offered by this `choice` messaging block and successfully reserved by the target, transferring ownership to the caller.|  
+|[has_value](#has_value)|Checks whether this `choice` messaging block has been initialized with a value yet.|  
+|[index](#index)|Returns an index into the `tuple` representing the element selected by the `choice` messaging block.|  
+|[link_target](#link_target)|Links a target block to this `choice` messaging block.|  
+|[release](#release)|Releases a previous successful message reservation.|  
+|[release_ref](#release_ref)|Releases a reference count on this `choice` messaging block.|  
+|[reserve](#reserve)|Reserves a message previously offered by this `choice` messaging block.|  
+|[unlink_target](#unlink_target)|Unlinks a target block from this `choice` messaging block.|  
+|[unlink_targets](#unlink_targets)|Unlinks all targets from this `choice` messaging block. (Overrides [ISource::unlink_targets](isource-class.md#unlink_targets).)|  
+|[value](#value)|Gets the message whose index was selected by the `choice` messaging block.|  
   
 ## Remarks  
  The choice block ensures that only one of the incoming messages is consumed.  

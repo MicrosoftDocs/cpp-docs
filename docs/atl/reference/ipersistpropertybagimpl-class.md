@@ -4,45 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPersistPropertyBagImpl"
-  - "ATL.IPersistPropertyBagImpl<T>"
-  - "ATL::IPersistPropertyBagImpl"
-  - "ATL::IPersistPropertyBagImpl<T>"
-  - "ATL.IPersistPropertyBagImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPersistPropertyBagImpl class"
+f1_keywords: ["IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID", "ATLCOM/ATL::IPersistPropertyBagImpl::InitNew", "ATLCOM/ATL::IPersistPropertyBagImpl::Load", "ATLCOM/ATL::IPersistPropertyBagImpl::Save"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPersistPropertyBagImpl class"]
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IPersistPropertyBagImpl Class
 This class implements **IUnknown** and allows an object to save its properties to a client-supplied property bag.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -89,7 +68,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew  
  Initializes a newly created object.  
@@ -102,7 +81,7 @@ STDMETHOD(InitNew)();
  Returns `S_OK`.  
   
 ### Remarks  
- See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the Windows SDK.  
   
 ##  <a name="load"></a>  IPersistPropertyBagImpl::Load  
  Loads the object's properties from a client-supplied property bag.  
@@ -114,7 +93,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 ### Remarks  
  ATL uses the object's property map to retrieve this information.  
   
- See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the Windows SDK.  
   
 ##  <a name="save"></a>  IPersistPropertyBagImpl::Save  
  Saves the object's properties into a client-supplied property bag.  
@@ -129,8 +108,8 @@ STDMETHOD(Save)(
 ### Remarks  
  ATL uses the object's property map to store this information. By default, this method saves all properties, regardless of the value of *fSaveAllProperties*.  
   
- See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the Windows SDK.  
   
 ## See Also  
- [BEGIN_PROP_MAP](http://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427)   
+ [BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::complex<long double>"
-  - "complex<long double>"
-  - "std.complex<long double>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "complex<long double> function"
+ms.topic: "reference"
+f1_keywords: ["std::complex<long double>", "complex<long double>", "std.complex<long double>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["complex<long double> function"]
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # complex&lt;long double&gt;
 Describes an object that stores an ordered pair of objects both of type `long double`, the first representing the real part of a complex number and the second representing the imaginary part.  
@@ -62,7 +43,7 @@ complex(
  `_ImagVal`  
  The value of type `long double` for the imaginary part of the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type `long double` being constructed.  
   
 ## Return Value  

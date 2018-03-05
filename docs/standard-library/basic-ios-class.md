@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std.basic_ios"
-  - "ios/std::basic_ios"
-  - "basic_ios"
-  - "std::basic_ios"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_ios class"
+ms.topic: "reference"
+f1_keywords: ["ios/std::basic_ios", "ios/std::basic_ios::char_type", "ios/std::basic_ios::int_type", "ios/std::basic_ios::off_type", "ios/std::basic_ios::pos_type", "ios/std::basic_ios::traits_type", "ios/std::basic_ios::bad", "ios/std::basic_ios::clear", "ios/std::basic_ios::copyfmt", "ios/std::basic_ios::eof", "ios/std::basic_ios::exceptions", "ios/std::basic_ios::fail", "ios/std::basic_ios::fill", "ios/std::basic_ios::good", "ios/std::basic_ios::imbue", "ios/std::basic_ios::init", "ios/std::basic_ios::move", "ios/std::basic_ios::narrow", "ios/std::basic_ios::rdbuf", "ios/std::basic_ios::rdstate", "ios/std::basic_ios::set_rdbuf", "ios/std::basic_ios::setstate", "ios/std::basic_ios::swap", "ios/std::basic_ios::tie", "ios/std::basic_ios::widen", "ios/std::basic_ios::explicit operator bool"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_ios [C++]", "std::basic_ios [C++], char_type", "std::basic_ios [C++], int_type", "std::basic_ios [C++], off_type", "std::basic_ios [C++], pos_type", "std::basic_ios [C++], traits_type", "std::basic_ios [C++], bad", "std::basic_ios [C++], clear", "std::basic_ios [C++], copyfmt", "std::basic_ios [C++], eof", "std::basic_ios [C++], exceptions", "std::basic_ios [C++], fail", "std::basic_ios [C++], fill", "std::basic_ios [C++], good", "std::basic_ios [C++], imbue", "std::basic_ios [C++], init", "std::basic_ios [C++], move", "std::basic_ios [C++], narrow", "std::basic_ios [C++], rdbuf", "std::basic_ios [C++], rdstate", "std::basic_ios [C++], set_rdbuf", "std::basic_ios [C++], setstate", "std::basic_ios [C++], swap", "std::basic_ios [C++], tie", "std::basic_ios [C++], widen"]
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # basic_ios Class
 The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type **Elem**, whose character traits are determined by the class **Traits**.  
@@ -72,56 +52,56 @@ class basic_ios : public ios_base
   
 |||  
 |-|-|  
-|[basic_ios](#basic_ios__basic_ios)|Constructs the `basic_ios` class.|  
+|[basic_ios](#basic_ios)|Constructs the `basic_ios` class.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#basic_ios__char_type)|A synonym for the template parameter `Elem`.|  
-|[int_type](#basic_ios__int_type)|A synonym for `Traits::int_type`.|  
-|[off_type](#basic_ios__off_type)|A synonym for `Traits::off_type`.|  
-|[pos_type](#basic_ios__pos_type)|A synonym for `Traits::pos_type`.|  
-|[traits_type](#basic_ios__traits_type)|A synonym for the template parameter `Traits`.|  
+|[char_type](#char_type)|A synonym for the template parameter `Elem`.|  
+|[int_type](#int_type)|A synonym for `Traits::int_type`.|  
+|[off_type](#off_type)|A synonym for `Traits::off_type`.|  
+|[pos_type](#pos_type)|A synonym for `Traits::pos_type`.|  
+|[traits_type](#traits_type)|A synonym for the template parameter `Traits`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[bad](#basic_ios__bad)|Indicates a loss of integrity of the stream buffer.|  
-|[clear](#basic_ios__clear)|Clears all error flags.|  
-|[copyfmt](#basic_ios__copyfmt)|Copies flags from one stream to another.|  
-|[eof](#basic_ios__eof)|Indicates if the end of a stream has been reached.|  
-|[exceptions](#basic_ios__exceptions)|Indicates which exceptions will be thrown by the stream.|  
-|[fail](#basic_ios__fail)|Indicates failure to extract a valid field from a stream.|  
-|[fill](#basic_ios__fill)|Specifies or returns the character that will be used when the text is not as wide as the stream.|  
-|[good](#basic_ios__good)|Indicates the stream is in good condition.|  
-|[imbue](#basic_ios__imbue)|Changes the locale.|  
-|[init](#basic_ios__init)|Called by `basic_ios` constructors.|  
-|[move](#basic_ios__move)|Moves all values, except the pointer to the stream buffer, from the parameter to the current object.|  
-|[narrow](#basic_ios__narrow)|Finds the equivalent char to a given `char_type`.|  
-|[rdbuf](#basic_ios__rdbuf)|Routes stream to specified buffer.|  
-|[rdstate](#basic_ios__rdstate)|Reads the state of bits for flags.|  
-|[set_rdbuf](#basic_ios__set_rdbuf)|Assigns a stream buffer to be the read buffer for this stream object.|  
-|[setstate](#basic_ios__setstate)|Sets additional flags.|  
-|[swap](#basic_ios__swap)|Exchanges the values in this `basic_ios` object for those of another `basic_ios` object. The pointers to the stream buffers are not swapped.|  
-|[tie](#basic_ios__tie)|Ensures that one stream is processed before another stream.|  
-|[widen](#basic_ios__widen)|Finds the equivalent `char_type` to a given char.|  
+|[bad](#bad)|Indicates a loss of integrity of the stream buffer.|  
+|[clear](#clear)|Clears all error flags.|  
+|[copyfmt](#copyfmt)|Copies flags from one stream to another.|  
+|[eof](#eof)|Indicates if the end of a stream has been reached.|  
+|[exceptions](#exceptions)|Indicates which exceptions will be thrown by the stream.|  
+|[fail](#fail)|Indicates failure to extract a valid field from a stream.|  
+|[fill](#fill)|Specifies or returns the character that will be used when the text is not as wide as the stream.|  
+|[good](#good)|Indicates the stream is in good condition.|  
+|[imbue](#imbue)|Changes the locale.|  
+|[init](#init)|Called by `basic_ios` constructors.|  
+|[move](#move)|Moves all values, except the pointer to the stream buffer, from the parameter to the current object.|  
+|[narrow](#narrow)|Finds the equivalent char to a given `char_type`.|  
+|[rdbuf](#rdbuf)|Routes stream to specified buffer.|  
+|[rdstate](#rdstate)|Reads the state of bits for flags.|  
+|[set_rdbuf](#set_rdbuf)|Assigns a stream buffer to be the read buffer for this stream object.|  
+|[setstate](#setstate)|Sets additional flags.|  
+|[swap](#swap)|Exchanges the values in this `basic_ios` object for those of another `basic_ios` object. The pointers to the stream buffers are not swapped.|  
+|[tie](#tie)|Ensures that one stream is processed before another stream.|  
+|[widen](#widen)|Finds the equivalent `char_type` to a given char.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[explicit operator bool](#basic_ios__operator_bool)|Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.|  
-|[operator void *](#basic_ios__operator_void_star)|Indicates if the stream is still good.|  
-|[operator!](#basic_ios__operator_not)|Indicates if the stream is not bad.|  
+|[explicit operator bool](#op_bool)|Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.|  
+|[operator void *](#op_void_star)|Indicates if the stream is still good.|  
+|[operator!](#op_not)|Indicates if the stream is not bad.|  
   
 ## Requirements  
  **Header:** \<ios>  
   
  **Namespace:** std  
   
-##  <a name="basic_ios__bad"></a>  basic_ios::bad  
+##  <a name="bad"></a>  basic_ios::bad  
  Indicates a loss of integrity of the stream buffer  
   
 ```  
@@ -131,7 +111,7 @@ bool bad() const;
 ### Return Value  
  `true` if `rdstate & badbit` is nonzero; otherwise `false`.  
   
- For more information on `badbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#ios_base__iostate).  
+ For more information on `badbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
 ### Example  
   
@@ -153,7 +133,7 @@ int main( void )
   
 ```  
   
-##  <a name="basic_ios__basic_ios"></a>  basic_ios::basic_ios  
+##  <a name="basic_ios"></a>  basic_ios::basic_ios  
  Constructs the basic_ios class.  
   
 ```   
@@ -166,16 +146,16 @@ basic_ios();
  Standard buffer to store input or output elements.  
   
 ### Remarks  
- The first constructor initializes its member objects by calling [init](#basic_ios__init)(_ *Sb*). The second (protected) constructor leaves its member objects uninitialized. A later call to **init** must initialize the object before it can be safely destroyed.  
+ The first constructor initializes its member objects by calling [init](#init)(_ *Sb*). The second (protected) constructor leaves its member objects uninitialized. A later call to **init** must initialize the object before it can be safely destroyed.  
   
-##  <a name="basic_ios__char_type"></a>  basic_ios::char_type  
+##  <a name="char_type"></a>  basic_ios::char_type  
  A synonym for the template parameter **Elem**.  
   
 ```   
 typedef Elem char_type;  
 ```  
   
-##  <a name="basic_ios__clear"></a>  basic_ios::clear  
+##  <a name="clear"></a>  basic_ios::clear  
  Clears all error flags.  
   
 ```   
@@ -191,18 +171,18 @@ void clear(io_state state);
  Specifies whether the exception should be re-raised. Defaults to `false` (will not re-raise the exception).  
   
 ### Remarks  
- The flags are **goodbit**, **failbit**, **eofbit**, and **badbit**. Test for these flags with [good](#basic_ios__good), [bad](#basic_ios__bad), [eof](#basic_ios__eof), and [fail](#basic_ios__fail)  
+ The flags are **goodbit**, **failbit**, **eofbit**, and **badbit**. Test for these flags with [good](#good), [bad](#bad), [eof](#eof), and [fail](#fail)  
   
  The member function replaces the stored stream state information with:  
   
- `state` &#124; `(`[rdbuf](#basic_ios__rdbuf) != 0 **goodbit** : **badbit**)  
+ `state` &#124; `(`[rdbuf](#rdbuf) != 0 **goodbit** : **badbit**)  
   
- If `state`**&**[exceptions](#basic_ios__exceptions) is nonzero, it then throws an object of class [failure](../standard-library/ios-base-class.md#ios_base__failure).  
+ If `state`**&**[exceptions](#exceptions) is nonzero, it then throws an object of class [failure](../standard-library/ios-base-class.md#failure).  
   
 ### Example  
-  See [rdstate](#basic_ios__rdstate) and [getline](../standard-library/string-functions.md#getline) for examples using **clear**.  
+  See [rdstate](#rdstate) and [getline](../standard-library/string-functions.md#getline) for examples using **clear**.  
   
-##  <a name="basic_ios__copyfmt"></a>  basic_ios::copyfmt  
+##  <a name="copyfmt"></a>  basic_ios::copyfmt  
  Copies flags from one stream to another.  
   
 ```   
@@ -211,14 +191,14 @@ const basic_ios<Elem, Traits>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The stream whose flags you want to copy.  
   
 ### Return Value  
  The **this** object for the stream to which you are copying the flags.  
   
 ### Remarks  
- The member function reports the callback eventÂ erase_event. It then copies from ` right` into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event copyfmt_event. If, after the copy is complete, **state &**[exceptions](#basic_ios__exceptions) is nonzero, the function effectively calls [clear](#basic_ios__clear) with the argument [rdstate](#basic_ios__rdstate). It returns **\*this**.  
+ The member function reports the callback event **erase\_event**. It then copies from `right` into **\*this** the fill character, the tie pointer, and the formatting information. Before altering the exception mask, it reports the callback event **copyfmt_event**. If, after the copy is complete, **state &**[exceptions](#exceptions) is nonzero, the function effectively calls [clear](#clear) with the argument [rdstate](#rdstate). It returns **\*this**.  
   
 ### Example  
   
@@ -242,7 +222,7 @@ int main( )
   
 ```  
   
-##  <a name="basic_ios__eof"></a>  basic_ios::eof  
+##  <a name="eof"></a>  basic_ios::eof  
  Indicates if the end of a stream has been reached.  
   
 ```  
@@ -253,7 +233,7 @@ bool eof() const;
  `true` if the end of the stream has been reached, `false` otherwise.  
   
 ### Remarks  
- The member function returns `true` if [rdstate](#basic_ios__rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#ios_base__iostate).  
+ The member function returns `true` if [rdstate](#rdstate) `& eofbit` is nonzero. For more information on `eofbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
 ### Example  
   
@@ -278,7 +258,7 @@ int main( int argc, char* argv[] )
   
 ```  
   
-##  <a name="basic_ios__exceptions"></a>  basic_ios::exceptions  
+##  <a name="exceptions"></a>  basic_ios::exceptions  
  Indicates which exceptions will be thrown by the stream.  
   
 ```   
@@ -295,7 +275,7 @@ void exceptions(io_state Newexcept);
  The flags that are currently specified to thrown an exception for the stream.  
   
 ### Remarks  
- The first member function returns the stored exception mask. The second member function stores *_Except* in the exception mask and returns its previous stored value. Note that storing a new exception mask can throw an exception just like the call [clear](#basic_ios__clear)( [rdstate](#basic_ios__rdstate) ).  
+ The first member function returns the stored exception mask. The second member function stores *_Except* in the exception mask and returns its previous stored value. Note that storing a new exception mask can throw an exception just like the call [clear](#clear)( [rdstate](#rdstate) ).  
   
 ### Example  
   
@@ -335,7 +315,7 @@ Exception class: class std::ios_base::failure
 Exception description: ios_base::eofbit set   
 ```  
   
-##  <a name="basic_ios__fail"></a>  basic_ios::fail  
+##  <a name="fail"></a>  basic_ios::fail  
  Indicates failure to extract a valid field from a stream.  
   
 ```  
@@ -343,9 +323,9 @@ bool fail() const;
 ```  
   
 ### Return Value  
- `true` if [rdstate](#basic_ios__rdstate) `& (badbit|failbit)` is nonzero, otherwise `false`.  
+ `true` if [rdstate](#rdstate) `& (badbit|failbit)` is nonzero, otherwise `false`.  
   
- For more information on `failbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#ios_base__iostate).  
+ For more information on `failbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
 ### Example  
   
@@ -364,7 +344,7 @@ int main( void )
   
 ```  
   
-##  <a name="basic_ios__fill"></a>  basic_ios::fill  
+##  <a name="fill"></a>  basic_ios::fill  
  Specifies or returns the character that will be used when the text is not as wide as the stream.  
   
 ```   
@@ -409,7 +389,7 @@ xxxxa
 x   
 ```  
   
-##  <a name="basic_ios__good"></a>  basic_ios::good  
+##  <a name="good"></a>  basic_ios::good  
  Indicates the stream is in good condition.  
   
 ```  
@@ -417,14 +397,14 @@ bool good() const;
 ```  
   
 ### Return Value  
- `true` if [rdstate](#basic_ios__rdstate) `== goodbit` (no state flags are set), otherwise, `false`.  
+ `true` if [rdstate](#rdstate) `== goodbit` (no state flags are set), otherwise, `false`.  
   
- For more information on `goodbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#ios_base__iostate).  
+ For more information on `goodbit`, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
 ### Example  
-  See [basic_ios::bad](#basic_ios__bad) for an example of using `good`.  
+  See [basic_ios::bad](#bad) for an example of using `good`.  
   
-##  <a name="basic_ios__imbue"></a>  basic_ios::imbue  
+##  <a name="imbue"></a>  basic_ios::imbue  
  Changes the locale.  
   
 ```   
@@ -439,11 +419,11 @@ locale imbue(const locale& Loc);
  The previous locale.  
   
 ### Remarks  
- If [rdbuf](#basic_ios__rdbuf) is not a null pointer, the member function calls  
+ If [rdbuf](#rdbuf) is not a null pointer, the member function calls  
   
- `rdbuf`-> [pubimbue](../standard-library/basic-streambuf-class.md#basic_streambuf__pubimbue)(_ *Loc*)  
+ `rdbuf`-> [pubimbue](../standard-library/basic-streambuf-class.md#pubimbue)(_ *Loc*)  
   
- In any case, it returns [ios_base::imbue](../standard-library/ios-base-class.md#ios_base__imbue)(_ *Loc*).  
+ In any case, it returns [ios_base::imbue](../standard-library/ios-base-class.md#imbue)(_ *Loc*).  
   
 ### Example  
   
@@ -464,7 +444,7 @@ int main( )
   
 ```  
   
-##  <a name="basic_ios__init"></a>  basic_ios::init  
+##  <a name="init"></a>  basic_ios::init  
  Called by basic_ios constructors.  
   
 ```  
@@ -482,34 +462,34 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 ### Remarks  
  The member function stores values in all member objects, so that:  
   
-- [rdbuf](#basic_ios__rdbuf) returns *_Sb.*  
+- [rdbuf](#rdbuf) returns *_Sb.*  
   
-- [tie](#basic_ios__tie) returns a null pointer.  
+- [tie](#tie) returns a null pointer.  
   
-- [rdstate](#basic_ios__rdstate) returns [goodbit](../standard-library/ios-base-class.md#ios_base__iostate) if `_Sb` is nonzero; otherwise, it returns [badbit](../standard-library/ios-base-class.md#ios_base__iostate).  
+- [rdstate](#rdstate) returns [goodbit](../standard-library/ios-base-class.md#iostate) if `_Sb` is nonzero; otherwise, it returns [badbit](../standard-library/ios-base-class.md#iostate).  
   
-- [exceptions](#basic_ios__exceptions) returns **goodbit**.  
+- [exceptions](#exceptions) returns **goodbit**.  
   
-- [flags](../standard-library/ios-base-class.md#ios_base__flags) returns [skipws](../standard-library/ios-base-class.md#ios_base__fmtflags) &#124; [dec](../standard-library/ios-base-class.md#ios_base__fmtflags).  
+- [flags](../standard-library/ios-base-class.md#flags) returns [skipws](../standard-library/ios-base-class.md#fmtflags) &#124; [dec](../standard-library/ios-base-class.md#fmtflags).  
   
-- [width](../standard-library/ios-base-class.md#ios_base__width) returns 0.  
+- [width](../standard-library/ios-base-class.md#width) returns 0.  
   
-- [precision](../standard-library/ios-base-class.md#ios_base__precision) returns 6.  
+- [precision](../standard-library/ios-base-class.md#precision) returns 6.  
   
-- [fill](#basic_ios__fill) returns the space character.  
+- [fill](#fill) returns the space character.  
   
-- [getloc](../standard-library/ios-base-class.md#ios_base__getloc) returns `locale::classic`.  
+- [getloc](../standard-library/ios-base-class.md#getloc) returns `locale::classic`.  
   
-- [iword](../standard-library/ios-base-class.md#ios_base__iword) returns zero, and [pword](../standard-library/ios-base-class.md#ios_base__pword) returns a null pointer for all argument values.  
+- [iword](../standard-library/ios-base-class.md#iword) returns zero, and [pword](../standard-library/ios-base-class.md#pword) returns a null pointer for all argument values.  
   
-##  <a name="basic_ios__int_type"></a>  basic_ios::int_type  
+##  <a name="int_type"></a>  basic_ios::int_type  
  A synonym for **traits_type::int_type**.  
   
 ```  
 typedef typename traits_type::int_type int_type;  
 ```  
   
-##  <a name="basic_ios__move"></a>  basic_ios::move  
+##  <a name="move"></a>  basic_ios::move  
  Moves all values, except the pointer to the stream buffer, from the parameter to the current object.  
   
 ```   
@@ -521,13 +501,12 @@ void move(basic_ios&& right);
  The `ios_base` object to move values from.  
   
 ### Remarks  
- The protected member function moves all the values stored in ` right` to `*this` except the stored `stream buffer pointer`, which is unchanged in ` right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in ` right`.  
+ The protected member function moves all the values stored in `right` to `*this` except the stored `stream buffer pointer`, which is unchanged in `right` and set to a null pointer in `*this`. The stored `tie pointer` is set to a null pointer in `right`.  
   
-##  <a name="basic_ios__narrow"></a>  basic_ios::narrow  
+##  <a name="narrow"></a>  basic_ios::narrow  
  Finds the equivalent char to a given `char_type`.  
   
 ```  
- 
 char narrow(char_type Char, char Default = '\0') const;
 ```  
   
@@ -542,7 +521,7 @@ char narrow(char_type Char, char Default = '\0') const;
  The equivalent `char` to a given `char_type`.  
   
 ### Remarks  
- The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)**<**Â **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)( ) ). `narrow`( `Char`, `Default`).  
+ The member function returns [use_facet](../standard-library/basic-filebuf-class.md#open)\<ctype\<E> >( [getloc](../standard-library/ios-base-class.md#getloc)( ) ).`narrow`( `Char`, `Default`).  
   
 ### Example  
   
@@ -563,17 +542,16 @@ int main( )
   y[0] = wcout.narrow( x[0] );  
   cout << y[0] << endl;  
 }  
-  
 ```  
   
-##  <a name="basic_ios__off_type"></a>  basic_ios::off_type  
+##  <a name="off_type"></a>  basic_ios::off_type  
  A synonym for **traits_type::off_type**.  
   
 ```  
 typedef typename traits_type::off_type off_type;  
 ```  
   
-##  <a name="basic_ios__operator_void_star"></a>  basic_ios::operator void *  
+##  <a name="op_void_star"></a>  basic_ios::operator void *  
  Indicates if the stream is still good.  
   
 ```  
@@ -581,7 +559,7 @@ typedef typename traits_type::off_type off_type;
 ```  
   
 ### Return Value  
- The operator returns a null pointer only if [fail](#basic_ios__fail).  
+ The operator returns a null pointer only if [fail](#fail).  
   
 ### Example  
   
@@ -602,7 +580,7 @@ int main( )
 1  
 ```  
   
-##  <a name="basic_ios__operator_not"></a>  basic_ios::operator!  
+##  <a name="op_not"></a>  basic_ios::operator!  
  Indicates if the stream is not bad.  
   
 ```   
@@ -610,7 +588,7 @@ bool operator!() const;
 ```  
   
 ### Return Value  
- Returns [fail](#basic_ios__fail).  
+ Returns [fail](#fail).  
   
 ### Example  
   
@@ -631,7 +609,7 @@ int main( )
 0  
 ```  
   
-##  <a name="basic_ios__operator_bool"></a>  basic_ios::operator bool  
+##  <a name="op_bool"></a>  basic_ios::operator bool  
  Allows use of a `basic_ios` object as a `bool`. Automatic type conversion is disabled to prevent common, unintended side effects.  
   
 ```  
@@ -639,16 +617,16 @@ explicit operator bool() const;
 ```  
   
 ### Remarks  
- The operator returns a value convertible to `false` only if `fail``()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
+ The operator returns a value convertible to `false` only if `fail()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
   
-##  <a name="basic_ios__pos_type"></a>  basic_ios::pos_type  
+##  <a name="pos_type"></a>  basic_ios::pos_type  
  A synonym for **traits_type::pos_type**.  
   
 ```  
 typedef typename traits_type::pos_type pos_type;  
 ```  
   
-##  <a name="basic_ios__rdbuf"></a>  basic_ios::rdbuf  
+##  <a name="rdbuf"></a>  basic_ios::rdbuf  
  Routes stream to specified buffer.  
   
 ```   
@@ -691,7 +669,7 @@ int main( )
 test2  
 ```  
   
-##  <a name="basic_ios__rdstate"></a>  basic_ios::rdstate  
+##  <a name="rdstate"></a>  basic_ios::rdstate  
  Reads the state of bits for flags.  
   
 ```  
@@ -741,7 +719,7 @@ int main( )
 1   
 ```  
   
-##  <a name="basic_ios__setstate"></a>  basic_ios::setstate  
+##  <a name="setstate"></a>  basic_ios::setstate  
  Sets additional flags.  
   
 ```   
@@ -753,7 +731,7 @@ void setstate(iostate _State);
  Additional flags to set.  
   
 ### Remarks  
- The member function effectively calls [clear](#basic_ios__clear)(_ *State* &#124; [rdstate](#basic_ios__rdstate)).  
+ The member function effectively calls [clear](#clear)(_ *State* &#124; [rdstate](#rdstate)).  
   
 ### Example  
   
@@ -789,7 +767,7 @@ int main( )
 1   
 ```  
   
-##  <a name="basic_ios__set_rdbuf"></a>  basic_ios::set_rdbuf  
+##  <a name="set_rdbuf"></a>  basic_ios::set_rdbuf  
  Assigns a stream buffer to be the read buffer for this stream object.  
   
 ```   
@@ -798,13 +776,13 @@ basic_streambuf<Elem, Tr>* strbuf)
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  The stream buffer to become the read buffer.  
   
 ### Remarks  
- The protected member function stores ` strbuf` in the `stream buffer pointer`.It does not call `clear`.  
+ The protected member function stores `strbuf` in the `stream buffer pointer`.It does not call `clear`.  
   
-##  <a name="basic_ios__tie"></a>  basic_ios::tie  
+##  <a name="tie"></a>  basic_ios::tie  
  Ensures that one stream is processed before another stream.  
   
 ```  
@@ -815,11 +793,11 @@ basic_ostream<Elem, Traits>* str);
 ```  
   
 ### Parameters  
- ` str`  
+ `str`  
  A stream.  
   
 ### Return Value  
- The first member function returns the stored tie pointer. The second member function stores ` str` in the tie pointer and returns its previous stored value.  
+ The first member function returns the stored tie pointer. The second member function stores `str` in the tie pointer and returns its previous stored value.  
   
 ### Remarks  
  `tie` causes two streams to be synchronized, such that, operations on one stream occur after operations on the other stream are complete.  
@@ -843,14 +821,14 @@ int main( )
   
 ```  
   
-##  <a name="basic_ios__traits_type"></a>  basic_ios::traits_type  
+##  <a name="traits_type"></a>  basic_ios::traits_type  
  A synonym for the template parameter **Traits**.  
   
 ```   
 typedef Traits traits_type;  
 ```  
   
-##  <a name="basic_ios__widen"></a>  basic_ios::widen  
+##  <a name="widen"></a>  basic_ios::widen  
  Finds the equivalent `char_type` to a given `char`.  
   
 ```   
@@ -865,7 +843,7 @@ char_type widen(char Char) const;
  Finds the equivalent `char_type` to a given `char`.  
   
 ### Remarks  
- The member function returns [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)< **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). `widen`( `Char`).  
+ The member function returns [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **E**> >( [getloc](../standard-library/ios-base-class.md#getloc)). `widen`( `Char`).  
   
 ### Example  
   
@@ -888,7 +866,7 @@ int main( )
   
 ```  
   
-##  <a name="basic_ios__swap"></a>  basic_ios::swap  
+##  <a name="swap"></a>  basic_ios::swap  
  Exchanges the values in this `basic_ios` object for those of another `basic_ios` object. However, the pointers to the stream buffers are not swapped.  
   
 ```   
@@ -900,7 +878,7 @@ void swap(basic_ios&& right);
  The `basic_ios` object that is used to exchange values.  
   
 ### Remarks  
- The protected member function exchanges all the values stored in ` right` with `*this` except the stored `stream buffer pointer`.  
+ The protected member function exchanges all the values stored in `right` with `*this` except the stored `stream buffer pointer`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

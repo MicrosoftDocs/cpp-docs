@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "alignment_of"
-  - "std::alignment_of"
-  - "type_traits/std::alignment_of"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "alignment_of class"
-  - "alignment_of"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::alignment_of"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["alignment_of class", "alignment_of"]
 ms.assetid: 4141c59a-f94e-41c4-93fd-9ea578b27387
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # alignment_of Class
 Gets alignment of the specified type. This struct is implemented in terms of [alignof](../cpp/alignof-and-alignas-cpp.md). Use `alignof` directly when you simply need to query an alignment value. Use alignment_of when you need an integral constant, for example when doing tag dispatch.  

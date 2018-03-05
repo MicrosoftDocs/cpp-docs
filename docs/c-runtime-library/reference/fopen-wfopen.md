@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wfopen"
-  - "fopen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wfopen", "fopen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fopen"
-  - "_wfopen"
-  - "_tfopen"
-  - "corecrt_wstdio/_wfopen"
-  - "stdio/fopen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "opening files, for file I/O"
-  - "wfopen function"
-  - "tfopen function"
-  - "_tfopen function"
-  - "_wfopen function"
-  - "files [C++], opening"
-  - "fopen function"
+f1_keywords: ["fopen", "_wfopen", "_tfopen", "corecrt_wstdio/_wfopen", "stdio/fopen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["opening files, for file I/O", "wfopen function", "tfopen function", "_tfopen function", "_wfopen function", "files [C++], opening", "fopen function"]
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
 caps.latest.revision: 56
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fopen, _wfopen
 Opens a file. More-secure versions of these functions that perform additional parameter validation and return error codes are available; see [fopen_s, _wfopen_s](../../c-runtime-library/reference/fopen-s-wfopen-s.md).  
@@ -160,7 +120,7 @@ FILE *_wfopen(
  `t`  
  Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using `"a+"`, `fopen` checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using `fseek` and `ftell` to move within a file that ends with CTRL+Z may cause `fseek` to behave incorrectly near the end of the file.  
   
- In text mode, carriage return–linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return–linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).  
+ In text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).  
   
  `b`  
  Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.  

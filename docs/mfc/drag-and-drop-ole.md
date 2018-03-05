@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE server applications, drag and drop"
-  - "drag and drop [C++]"
-  - "OLE applications, drag and drop"
-  - "File Manager drag and drop support"
-  - "drag and drop [C++], about OLE drag and drop"
-  - "OLE drag and drop"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE server applications [MFC], drag and drop", "drag and drop [MFC]", "OLE applications [MFC], drag and drop", "File Manager drag and drop support [MFC]", "drag and drop [MFC], about OLE drag and drop", "OLE drag and drop [MFC]"]
 ms.assetid: a4595350-ca06-4400-88a1-f0175c76b77b
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Drag and Drop (OLE)
 The drag-and-drop feature of OLE is primarily a shortcut for copying and pasting data. When you use the Clipboard to copy or paste data, a number of steps are required. You select the data, click **Cut** or **Copy** from the **Edit** menu, move to the destination file, window or application, place the cursor in the desired location, and click **Paste** from the **Edit** menu.  

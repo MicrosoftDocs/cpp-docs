@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtDbgReport"
-  - "_CrtDbgReportW"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtDbgReport", "_CrtDbgReportW"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CrtDbgReport"
-  - "CrtDbgReportW"
-  - "_CrtDbgReportW"
-  - "_CrtDbgReport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debug reporting"
-  - "_CrtDbgReport function"
-  - "CrtDbgReport function"
-  - "CrtDbgReportW function"
-  - "_CrtDbgReportW function"
+f1_keywords: ["CrtDbgReport", "CrtDbgReportW", "_CrtDbgReportW", "_CrtDbgReport"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["debug reporting", "_CrtDbgReport function", "CrtDbgReport function", "CrtDbgReportW function", "_CrtDbgReportW function"]
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDbgReport, _CrtDbgReportW
 Generates a report with a debugging message and sends the report to three possible destinations (debug version only).  
@@ -101,7 +64,7 @@ int _CrtDbgReportW(
  Optional substitution arguments used by `format`.  
   
 ## Return Value  
- For all report destinations, `_CrtDbgReport` and `_CrtDbgReportW` return –1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user clicks the **Retry** button, these functions return 1. If the user clicks the **Abort** button in the Debug Message window, these functions immediately abort and do not return a value.  
+ For all report destinations, `_CrtDbgReport` and `_CrtDbgReportW` return -1 if an error occurs and 0 if no errors are encountered. However, when the report destination is a debug message window and the user clicks the **Retry** button, these functions return 1. If the user clicks the **Abort** button in the Debug Message window, these functions immediately abort and do not return a value.  
   
  The [_RPT, _RPTF](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) debug macros call `_CrtDbgReport` to generate their debug reports. The wide-character versions of these macros as well as [_ASSERT&#91;E&#93;](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), `_RPTW n` and `_RPTFW n`, use `_CrtDbgReportW` to generate their debug reports. When `_CrtDbgReport` or `_CrtDbgReportW` return 1, these macros start the debugger, provided that just-in-time (JIT) debugging is enabled.  
   
@@ -151,17 +114,7 @@ int main(int argc, char *argv[]) {
 }  
 ```  
   
- See [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167) for an example of how to change the report function.  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Debug::Write](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.write.aspx)  
-  
--   [System::Diagnostics::Debug::Writeline](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeline.aspx)  
-  
--   [System::Diagnostics::Debug::WriteIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeif.aspx)  
-  
--   [System::Diagnostics::Debug::WriteLineIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writelineif.aspx)  
+ See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2) for an example of how to change the report function.  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

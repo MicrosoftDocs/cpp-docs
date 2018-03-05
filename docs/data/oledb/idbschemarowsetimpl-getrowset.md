@@ -4,60 +4,33 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::IDBSchemaRowsetImpl::GetRowset"
-  - "ATL.IDBSchemaRowsetImpl.GetRowset"
-  - "IDBSchemaRowsetImpl<SessionClass>::GetRowset"
-  - "IDBSchemaRowsetImpl.GetRowset"
-  - "IDBSchemaRowsetImpl::GetRowset"
-  - "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset"
-  - "GetRowset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetRowset method"
+ms.topic: "reference"
+f1_keywords: ["ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset", "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetRowset method"]
 ms.assetid: 3ae28c22-e186-4a15-8591-b0192e784a6f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::GetRowset
 Returns a schema rowset.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetRowset)(  
-   IUnknown *pUnkOuter,  
+```cpp
+      STDMETHOD (GetRowset)(IUnknown *pUnkOuter,  
    REFGUID rguidSchema,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
-   IUnknown **ppRowset   
-);  
+   IUnknown **ppRowset);  
 ```  
   
 #### Parameters  
@@ -88,7 +61,7 @@ Returns a schema rowset.
 ## Remarks  
  This method requires the user to have a schema map in the session class. Using the schema map information, `GetRowset` creates a given rowset object if the `rguidSchema` parameter is equal to one of the map entries GUIDs. See [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) for a description of the map entry.  
   
- See [IDBSchemaRowset::GetRowset](https://msdn.microsoft.com/en-us/library/ms722634.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDBSchemaRowset::GetRowset](https://msdn.microsoft.com/en-us/library/ms722634.aspx) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atldb.h  

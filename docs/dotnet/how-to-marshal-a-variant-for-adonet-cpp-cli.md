@@ -1,38 +1,20 @@
 ---
-title: "How to: Marshal a VARIANT for ADO.NET (C++-CLI) | Microsoft Docs"
+title: "How to: Marshal a VARIANT for ADO.NET (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VARIANT, marshaling"
-  - "ADO.NET [C++], marshaling VARIANT types"
-  - "VARIANT"
+dev_langs: ["C++"]
+helpviewer_keywords: ["VARIANT, marshaling", "ADO.NET [C++], marshaling VARIANT types", "VARIANT"]
 ms.assetid: 67a180a7-5691-48ab-8d85-7f75a68dde91
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal a VARIANT for ADO.NET (C++/CLI)
 Demonstrates how to add a native `VARIANT` to a database and how to marshal a <xref:System.Object?displayProperty=fullName> from a database to a native `VARIANT`.  
@@ -174,11 +156,11 @@ ObjectCol: 42
     ```  
   
 ## .NET Framework Security  
- For information on security issues involving ADO.NET, see [Securing ADO.NET Applications](http://msdn.microsoft.com/Library/005a1d43-6ee5-471e-ad98-1d30a44d49d5).  
+ For information on security issues involving ADO.NET, see [Securing ADO.NET Applications](/dotnet/framework/data/adonet/securing-ado-net-applications).  
   
 ## See Also  
  <xref:System.Runtime.InteropServices>   
  [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)   
- [ADO.NET](http://msdn.microsoft.com/Library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)   
+ [ADO.NET](/dotnet/framework/data/adonet/index)   
  [Interoperability](http://msdn.microsoft.com/en-us/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
  [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

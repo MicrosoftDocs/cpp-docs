@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SQL, retrieving aggregate values from recordsets"
-  - "recordsets, retrieving SQL aggregate values"
-  - "retrieving SQL aggregate values from recordsets"
-  - "ODBC recordsets, retrieving SQL aggregate values"
-  - "SQL aggregate values"
-  - "SQL Server projects, retrieving aggregate values from recordsets"
-  - "SQL aggregate values, retrieving from recordsets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["SQL, retrieving aggregate values from recordsets", "recordsets, retrieving SQL aggregate values", "retrieving SQL aggregate values from recordsets", "ODBC recordsets, retrieving SQL aggregate values", "SQL aggregate values", "SQL Server projects, retrieving aggregate values from recordsets", "SQL aggregate values, retrieving from recordsets"]
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)
 This topic applies to the MFC ODBC classes.  

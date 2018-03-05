@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::single_assignment"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "single_assignment class"
+ms.topic: "reference"
+f1_keywords: ["single_assignment", "AGENTS/concurrency::single_assignment", "AGENTS/concurrency::single_assignment::single_assignment", "AGENTS/concurrency::single_assignment::has_value", "AGENTS/concurrency::single_assignment::value", "AGENTS/concurrency::single_assignment::accept_message", "AGENTS/concurrency::single_assignment::consume_message", "AGENTS/concurrency::single_assignment::link_target_notification", "AGENTS/concurrency::single_assignment::propagate_message", "AGENTS/concurrency::single_assignment::propagate_to_any_targets", "AGENTS/concurrency::single_assignment::release_message", "AGENTS/concurrency::single_assignment::reserve_message", "AGENTS/concurrency::single_assignment::resume_propagation", "AGENTS/concurrency::single_assignment::send_message"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["single_assignment class"]
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # single_assignment Class
 A `single_assignment` messaging block is a multi-target, multi-source, ordered `propagator_block` capable of storing a single, write-once `message`.  
@@ -54,29 +37,29 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_assignment Constructor](#ctor)|Overloaded. Constructs a `single_assignment` messaging block.|  
+|[single_assignment](#ctor)|Overloaded. Constructs a `single_assignment` messaging block.|  
 |[~single_assignment Destructor](#dtor)|Destroys the `single_assignment` messaging block.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[has_value Method](#has_value)|Checks whether this `single_assignment` messaging block has been initialized with a value yet.|  
-|[value Method](#value)|Gets a reference to the current payload of the message being stored in the `single_assignment` messaging block.|  
+|[has_value](#has_value)|Checks whether this `single_assignment` messaging block has been initialized with a value yet.|  
+|[value](#value)|Gets a reference to the current payload of the message being stored in the `single_assignment` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept_message Method](#accept_message)|Accepts a message that was offered by this `single_assignment` messaging block, returning a copy of the message to the caller.|  
-|[consume_message Method](#consume_message)|Consumes a message previously offered by the `single_assignment` and reserved by the target, returning a copy of the message to the caller.|  
-|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `single_assignment` messaging block.|  
-|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[propagate_to_any_targets Method](#propagate_to_any_targets)|Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.|  
-|[release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message Method](#reserve_message)|Reserves a message previously offered by this `single_assignment` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
-|[send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `send` method, when called by a source block.|  
+|[accept_message](#accept_message)|Accepts a message that was offered by this `single_assignment` messaging block, returning a copy of the message to the caller.|  
+|[consume_message](#consume_message)|Consumes a message previously offered by the `single_assignment` and reserved by the target, returning a copy of the message to the caller.|  
+|[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `single_assignment` messaging block.|  
+|[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Places the `message _PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.|  
+|[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Reserves a message previously offered by this `single_assignment` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[send_message](#send_message)|Synchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `send` method, when called by a source block.|  
   
 ## Remarks  
  A `single_assignment` messaging block propagates out copies of its message to each target.  
@@ -180,7 +163,7 @@ virtual message_status propagate_message(
   
 ##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
- Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
+ Places the `message` `_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
   
 ```
 virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);

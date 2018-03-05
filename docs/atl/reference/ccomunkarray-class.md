@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComUnkArray"
-  - "ATL.CComUnkArray<nMaxSize>"
-  - "ATL::CComUnkArray<nMaxSize>"
-  - "ATL::CComUnkArray"
-  - "CComUnkArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], managing"
-  - "CComUnkArray class"
+f1_keywords: ["CComUnkArray", "ATLCOM/ATL::CComUnkArray", "ATLCOM/ATL::CComUnkArray::CComUnkArray", "ATLCOM/ATL::CComUnkArray::Add", "ATLCOM/ATL::CComUnkArray::begin", "ATLCOM/ATL::CComUnkArray::end", "ATLCOM/ATL::CComUnkArray::GetCookie", "ATLCOM/ATL::CComUnkArray::GetUnknown", "ATLCOM/ATL::CComUnkArray::Remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], managing", "CComUnkArray class"]
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComUnkArray Class
 This class stores **IUnknown** pointers, and is designed to be used as a parameter to the [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) template class.  

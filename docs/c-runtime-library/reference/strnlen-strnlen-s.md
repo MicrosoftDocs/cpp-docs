@@ -4,92 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcsnlen"
-  - "strnlen_s"
-  - "_mbstrnlen"
-  - "_mbsnlen_l"
-  - "_mbstrnlen_l"
-  - "strnlen"
-  - "wcsnlen_s"
-  - "_mbsnlen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcsnlen", "strnlen_s", "_mbstrnlen", "_mbsnlen_l", "_mbstrnlen_l", "strnlen", "wcsnlen_s", "_mbsnlen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcsnlen"
-  - "strnlen_s"
-  - "_mbsnlen"
-  - "_mbsnlen_l"
-  - "_tcsnlen"
-  - "_tcscnlen"
-  - "_mbstrnlen_l"
-  - "wcsnlen_s"
-  - "_mbstrnlen"
-  - "strnlen"
-  - "_tcscnlen_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tcscnlen function"
-  - "_mbstrnlen function"
-  - "_mbsnlen_l function"
-  - "lengths, strings"
-  - "mbstrnlen function"
-  - "mbsnlen_l function"
-  - "_mbstrnlen_l function"
-  - "_tcscnlen_l function"
-  - "wcsnlen_l function"
-  - "_tcsnlen function"
-  - "_mbsnlen function"
-  - "strnlen function"
-  - "mbsnlen function"
-  - "wcsnlen_s function"
-  - "strnlen_s function"
-  - "mbstrnlen_l function"
-  - "wcsnlen function"
-  - "string length"
-  - "strnlen_l function"
+f1_keywords: ["wcsnlen", "strnlen_s", "_mbsnlen", "_mbsnlen_l", "_tcsnlen", "_tcscnlen", "_mbstrnlen_l", "wcsnlen_s", "_mbstrnlen", "strnlen", "_tcscnlen_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tcscnlen function", "_mbstrnlen function", "_mbsnlen_l function", "lengths, strings", "mbstrnlen function", "mbsnlen_l function", "_mbstrnlen_l function", "_tcscnlen_l function", "wcsnlen_l function", "_tcsnlen function", "_mbsnlen function", "strnlen function", "mbsnlen function", "wcsnlen_s function", "strnlen_s function", "mbstrnlen_l function", "wcsnlen function", "string length", "strnlen_l function"]
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
 caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 Gets the length of a string by using the current locale or one that has been passed in. These are more secure versions of [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).  
   
 > [!IMPORTANT]
->  `_mbsnlen`, `_mbsnlen_l`, `_mbstrnlen`, and `_mbstrnlen_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnlen`, `_mbsnlen_l`, `_mbstrnlen`, and `_mbstrnlen_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -152,7 +87,7 @@ size_t _mbstrnlen_l(
   
  Each of these functions returns the number of characters in `str`, not including the terminating null character. However, `strnlen` and `strnlen_s` interpret the string as a single-byte character string and therefore, the return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcsnlen` and `wcsnlen_s` are wide-character versions of `strnlen` and `strnlen_s` respectively; the arguments for `wcsnlen` and `wcsnlen_s` are wide-character strings and the count of characters are in wide-character units. Otherwise, `wcsnlen` and `strnlen` behave identically, as do `strnlen_s` and `wcsnlen_s`.  
   
- `strnlen`, `wcsnlen,` and `_mbsnlen` do not validate their parameters. If `str` is `NULL`, an access violation occurs.  
+ `strnlen`, `wcsnlen`, and `_mbsnlen` do not validate their parameters. If `str` is `NULL`, an access violation occurs.  
   
  `strnlen_s` and `wcsnlen_s` validate their parameters. If `str` is `NULL`, the functions return 0.  
   

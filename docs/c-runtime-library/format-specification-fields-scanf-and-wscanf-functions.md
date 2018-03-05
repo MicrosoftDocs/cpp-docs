@@ -4,51 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
+apilocation: ["msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wscanf"
-  - "scanf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "width, specifications in scanf function"
-  - "scanf format specifications"
-  - "scanf width specifications"
-  - "scanf type field characters"
-  - "type fields, scanf function"
-  - "format specification fields for scanf function"
-  - "type fields"
+f1_keywords: ["wscanf", "scanf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["width, specifications in scanf function", "scanf format specifications", "scanf width specifications", "scanf type field characters", "type fields, scanf function", "format specification fields for scanf function", "type fields"]
 ms.assetid: 7e95de1b-0b71-4de3-9f81-c9560c78e039
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Format Specification Fields: scanf and wscanf Functions
 The information here applies to the entire `scanf` family of functions, including the secure versions and describes the symbols used to tell the `scanf` functions how to parse the input stream, such as the input stream `stdin` for `scanf`, into values that are inserted into program variables.  
@@ -59,9 +28,9 @@ The information here applies to the entire `scanf` family of functions, includin
   
  The `format` argument specifies the interpretation of the input and can contain one or more of the following:  
   
--   White-space characters: blank (' '); tab ('\t'); or newline ('\n'). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non–white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.  
+-   White-space characters: blank (' '); tab ('\t'); or newline ('\n'). A white-space character causes `scanf` to read, but not store, all consecutive white-space characters in the input up to the next non-white-space character. One white-space character in the format matches any number (including 0) and combination of white-space characters in the input.  
   
--   Non–white-space characters, except for the percent sign (`%`). A non–white-space character causes `scanf` to read, but not store, a matching non–white-space character. If the next character in the input stream does not match, `scanf` terminates.  
+-   Non-white-space characters, except for the percent sign (`%`). A non-white-space character causes `scanf` to read, but not store, a matching non-white-space character. If the next character in the input stream does not match, `scanf` terminates.  
   
 -   Format specifications, introduced by the percent sign (`%`). A format specification causes `scanf` to read and convert characters in the input into values of a specified type. The value is assigned to an argument in the argument list.  
   

@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtDumpMemoryLeaks"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtDumpMemoryLeaks"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CRTDBG_LEAK_CHECK_DF"
-  - "CRTDBG_CHECK_CRT_DF"
-  - "_CRTDBG_LEAK_CHECK_DF"
-  - "CrtDumpMemoryLeaks"
-  - "_CrtDumpMemoryLeaks"
-  - "_CRTDBG_CHECK_CRT_DF"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CrtDumpMemoryLeaks function"
-  - "CRTDBG_LEAK_CHECK_DF macro"
-  - "_CRTDBG_LEAK_CHECK_DF macro"
-  - "_CrtDumpMemoryLeaks function"
-  - "CRTDBG_CHECK_CRT_DF macro"
-  - "_CRTDBG_CHECK_CRT_DF macro"
+f1_keywords: ["CRTDBG_LEAK_CHECK_DF", "CRTDBG_CHECK_CRT_DF", "_CRTDBG_LEAK_CHECK_DF", "CrtDumpMemoryLeaks", "_CrtDumpMemoryLeaks", "_CRTDBG_CHECK_CRT_DF"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CrtDumpMemoryLeaks function", "CRTDBG_LEAK_CHECK_DF macro", "_CRTDBG_LEAK_CHECK_DF macro", "_CrtDumpMemoryLeaks function", "CRTDBG_CHECK_CRT_DF macro", "_CRTDBG_CHECK_CRT_DF macro"]
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDumpMemoryLeaks
 Dumps all the memory blocks in the debug heap when a memory leak has occurred (debug version only).  
@@ -95,10 +56,7 @@ int _CrtDumpMemoryLeaks( void );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
+ For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

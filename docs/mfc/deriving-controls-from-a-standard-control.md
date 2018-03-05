@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "standard controls, deriving controls from"
-  - "common controls [C++], deriving from"
-  - "derived controls"
-  - "controls [MFC], derived"
-  - "Windows common controls [C++], deriving from"
-  - "standard controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["standard controls [MFC], deriving controls from", "common controls [MFC], deriving from", "derived controls", "controls [MFC], derived", "Windows common controls [MFC], deriving from", "standard controls"]
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Deriving Controls from a Standard Control
 As with any [CWnd](../mfc/reference/cwnd-class.md)-derived class, you can modify a control's behavior by deriving a new class from an existing control class.  

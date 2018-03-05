@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "transactions [C++], support for"
-  - "transactions [C++]"
-  - "databases [C++], transactions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["transactions [C++], support for", "transactions [C++]", "databases [C++], transactions"]
 ms.assetid: f80afbfe-1517-4fec-8870-9ffc70a58b05
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transactions  (MFC Data Access)
 The concept of a transaction was developed to handle cases in which the resulting state of the database depends on the total success of a series of operations. This could come about because successive operations might modify the results of previous operations. In such cases, if any one operation fails, the resulting state could be indeterminate.  

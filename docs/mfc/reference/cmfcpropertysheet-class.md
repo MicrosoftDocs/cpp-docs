@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertySheet"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertySheet::PreTranslateMessage method"
-  - "CMFCPropertySheet::OnInitDialog method"
-  - "CMFCPropertySheet class"
+f1_keywords: ["CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPage", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree", "AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight", "AFXPROPERTYSHEET/CMFCPropertySheet::GetLook", "AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth", "AFXPROPERTYSHEET/CMFCPropertySheet::GetTab", "AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl", "AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage", "AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage", "AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage", "AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList", "AFXPROPERTYSHEET/CMFCPropertySheet::SetLook"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertySheet [MFC], CMFCPropertySheet", "CMFCPropertySheet [MFC], AddPage", "CMFCPropertySheet [MFC], AddPageToTree", "CMFCPropertySheet [MFC], AddTreeCategory", "CMFCPropertySheet [MFC], EnablePageHeader", "CMFCPropertySheet [MFC], GetHeaderHeight", "CMFCPropertySheet [MFC], GetLook", "CMFCPropertySheet [MFC], GetNavBarWidth", "CMFCPropertySheet [MFC], GetTab", "CMFCPropertySheet [MFC], InitNavigationControl", "CMFCPropertySheet [MFC], OnActivatePage", "CMFCPropertySheet [MFC], OnDrawPageHeader", "CMFCPropertySheet [MFC], OnRemoveTreePage", "CMFCPropertySheet [MFC], RemoveCategory", "CMFCPropertySheet [MFC], RemovePage", "CMFCPropertySheet [MFC], SetIconsList", "CMFCPropertySheet [MFC], SetLook"]
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertySheet Class
 The `CMFCPropertySheet` class supports a property sheet where each property page is denoted by a page tab, a toolbar button, a tree control node, or a list item.  

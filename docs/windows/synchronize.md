@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.synchronize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronize attribute"
+f1_keywords: ["vc-attr.synchronize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["synchronize attribute"]
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # synchronize
 Synchronizes access to the target method.  
@@ -94,5 +77,4 @@ class CMyClass {
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [COM Attributes](../windows/com-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [COM Attributes](../windows/com-attributes.md)   

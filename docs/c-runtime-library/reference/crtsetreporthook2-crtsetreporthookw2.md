@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtSetReportHook2"
-  - "_CrtSetReportHookW2"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtSetReportHook2", "_CrtSetReportHookW2"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CrtSetReportHookW2"
-  - "CrtSetReportHook2"
-  - "_CrtSetReportHookW2"
-  - "_CrtSetReportHook2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CrtSetReportHook2 function"
-  - "_CrtSetReportHook2 function"
-  - "_CrtSetReportHookW2 function"
-  - "CrtSetReportHookW2 function"
+f1_keywords: ["CrtSetReportHookW2", "CrtSetReportHook2", "_CrtSetReportHookW2", "_CrtSetReportHook2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CrtSetReportHook2 function", "_CrtSetReportHook2 function", "_CrtSetReportHookW2 function", "CrtSetReportHookW2 function"]
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportHook2, _CrtSetReportHookW2
 Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).  

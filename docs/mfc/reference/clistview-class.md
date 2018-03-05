@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CListView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "views, and common controls"
-  - "CListView class"
+f1_keywords: ["CListView", "AFXCVIEW/CListView", "AFXCVIEW/CListView::CListView", "AFXCVIEW/CListView::GetListCtrl", "AFXCVIEW/CListView::RemoveImageList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CListView [MFC], CListView", "CListView [MFC], GetListCtrl", "CListView [MFC], RemoveImageList"]
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CListView Class
 Simplifies use of the list control and of [CListCtrl](../../mfc/reference/clistctrl-class.md), the class that encapsulates list-control functionality, with MFC's document-view architecture.  

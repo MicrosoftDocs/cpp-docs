@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "views [C++], view classes"
-  - "multiple views"
-  - "CView class"
-  - "document/view architecture"
-  - "input, and view class"
-  - "MDI [C++], view windows"
-  - "print preview, view windows"
-  - "windows [C++], views"
-  - "child windows, views"
-  - "frame windows [C++], views"
-  - "user input [C++], interpreting through view class"
+f1_keywords: ["CView", "AFXWIN/CView", "AFXWIN/CView::CView", "AFXWIN/CView::DoPreparePrinting", "AFXWIN/CView::GetDocument", "AFXWIN/CView::IsSelected", "AFXWIN/CView::OnDragEnter", "AFXWIN/CView::OnDragLeave", "AFXWIN/CView::OnDragOver", "AFXWIN/CView::OnDragScroll", "AFXWIN/CView::OnDrop", "AFXWIN/CView::OnDropEx", "AFXWIN/CView::OnInitialUpdate", "AFXWIN/CView::OnPrepareDC", "AFXWIN/CView::OnScroll", "AFXWIN/CView::OnScrollBy", "AFXWIN/CView::OnActivateFrame", "AFXWIN/CView::OnActivateView", "AFXWIN/CView::OnBeginPrinting", "AFXWIN/CView::OnDraw", "AFXWIN/CView::OnEndPrinting", "AFXWIN/CView::OnEndPrintPreview", "AFXWIN/CView::OnPreparePrinting", "AFXWIN/CView::OnPrint", "AFXWIN/CView::OnUpdate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CView [MFC], CView", "CView [MFC], DoPreparePrinting", "CView [MFC], GetDocument", "CView [MFC], IsSelected", "CView [MFC], OnDragEnter", "CView [MFC], OnDragLeave", "CView [MFC], OnDragOver", "CView [MFC], OnDragScroll", "CView [MFC], OnDrop", "CView [MFC], OnDropEx", "CView [MFC], OnInitialUpdate", "CView [MFC], OnPrepareDC", "CView [MFC], OnScroll", "CView [MFC], OnScrollBy", "CView [MFC], OnActivateFrame", "CView [MFC], OnActivateView", "CView [MFC], OnBeginPrinting", "CView [MFC], OnDraw", "CView [MFC], OnEndPrinting", "CView [MFC], OnEndPrintPreview", "CView [MFC], OnPreparePrinting", "CView [MFC], OnPrint", "CView [MFC], OnUpdate"]
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CView Class
 Provides the basic functionality for user-defined view classes.  
@@ -509,7 +482,7 @@ virtual DROPEFFECT OnDropEx(
   
 - `DROPEFFECT_SCROLL` Indicates that a drag scroll operation is about to occur or is occurring in the target.  
   
- For more information on setting the default menu command, see [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
+ For more information on setting the default menu command, see [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
   
 ##  <a name="onendprinting"></a>  CView::OnEndPrinting  
  Called by the framework after a document has been printed or previewed.  

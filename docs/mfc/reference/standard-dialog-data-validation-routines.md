@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "standard dialog, data validation routines"
+dev_langs: ["C++"]
+helpviewer_keywords: ["standard dialog, data validation routines"]
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Validation Routines
 This topic lists the standard dialog data validation (DDV) routines used for common MFC dialog controls.  
@@ -55,6 +39,7 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 |[DDV_MinMaxShort](#ddv_minmaxshort)|Verifies a given control value does not exceed a given **short** range.|  
 |[DDV_MinMaxSlider](#ddv_minmaxslider)|Verifies a given slider control value falls within the given range.|  
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verifies a given control value does not exceed a given **UINT** range.|  
+|[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verifies a given control value falls between two specified values.| 
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verifies a given control value does not exceed a given **ULONGLONG** range.|  
   
 
@@ -490,3 +475,41 @@ void AFXAPI DDV_MinMaxULongLong(
 ## See Also  
  [Standard Dialog Data Exchange Routines](../../mfc/reference/standard-dialog-data-exchange-routines.md)   
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+ ## DDV_MinMaxUnsigned
+Call `DDV_MinMaxUnsigned` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
+   
+### Syntax    
+```
+   void AFXAPI DDV_MinMaxUnsigned(  
+       CDataExchange* pDX,  
+       unsigned value,  
+       unsigned minVal,  
+       unsigned maxVal );  
+```
+### Parameters  
+ `pDX`  
+ A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ *value*  
+ A reference to a member variable of the dialog box, form view, or control view object with which data is validated.  
+  
+ `minVal`  
+ Minimum value (of type **unsigned** ) allowed.  
+  
+ `maxVal`  
+ Maximum value (of type **unsigned** ) allowed.  
+   
+### Remarks  
+ For more information about DDV, see [Dialog Data Exchange and Validation](../dialog-data-exchange-and-validation.md).  
+   
+### Requirements  
+ **Header:** afxdd_.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [DDX_Slider](#ddx_slider)   
+ [DDX_FieldSlider](#ddx_fieldslider)
+ 
+
+

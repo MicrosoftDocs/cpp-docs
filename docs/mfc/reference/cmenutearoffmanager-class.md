@@ -4,39 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMenuTearOffManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMenuTearOffManager class"
+f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMenuTearOffManager [MFC], CMenuTearOffManager", "CMenuTearOffManager [MFC], Build", "CMenuTearOffManager [MFC], GetRegPath", "CMenuTearOffManager [MFC], Initialize", "CMenuTearOffManager [MFC], IsDynamicID", "CMenuTearOffManager [MFC], Parse", "CMenuTearOffManager [MFC], Reset", "CMenuTearOffManager [MFC], SetInUse", "CMenuTearOffManager [MFC], SetupTearOffMenus"]
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMenuTearOffManager Class
 Manages tear-off menus. A tear-off menu is a menu on the menu bar. The user can remove a tear-off menu from the menu bar, causing the tear-off menu to float.  
   
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -81,7 +66,7 @@ class CMenuTearOffManager : public CObject
  **Header:** afxmenutearoffmanager.h  
   
 ##  <a name="build"></a>  CMenuTearOffManager::Build  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void Build(
@@ -106,7 +91,7 @@ CMenuTearOffManager();
  In most cases, you should not create a `CMenuTearOffManager` manually. The framework of your application creates the `CMenuTearOffManager` object when you call [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).  
   
 ##  <a name="getregpath"></a>  CMenuTearOffManager::GetRegPath  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 LPCTSTR GetRegPath() const;  
@@ -143,7 +128,7 @@ BOOL Initialize(
  The range of menu IDs from `uiTearOffMenuFirst` to `uiTearOffMenuLast` must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsDynamicID(UINT uiID) const;  
@@ -157,7 +142,7 @@ BOOL IsDynamicID(UINT uiID) const;
 ### Remarks  
   
 ##  <a name="parse"></a>  CMenuTearOffManager::Parse  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 UINT Parse(CString& str);
@@ -171,7 +156,7 @@ UINT Parse(CString& str);
 ### Remarks  
   
 ##  <a name="reset"></a>  CMenuTearOffManager::Reset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void Reset(HMENU hmenu);
@@ -183,7 +168,7 @@ void Reset(HMENU hmenu);
 ### Remarks  
   
 ##  <a name="setinuse"></a>  CMenuTearOffManager::SetInUse  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetInUse(
@@ -198,7 +183,7 @@ void SetInUse(
 ### Remarks  
   
 ##  <a name="setuptearoffmenus"></a>  CMenuTearOffManager::SetupTearOffMenus  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetupTearOffMenus(HMENU hMenu);

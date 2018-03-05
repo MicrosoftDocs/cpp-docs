@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBindStatusCallback"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "asynchronous data transfer [C++]"
-  - "data transfer [C++]"
-  - "data transfer [C++], asynchronous"
-  - "CBindStatusCallback class"
+f1_keywords: ["CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::Download", "ATLCTL/ATL::CBindStatusCallback::GetBindInfo", "ATLCTL/ATL::CBindStatusCallback::GetPriority", "ATLCTL/ATL::CBindStatusCallback::OnDataAvailable", "ATLCTL/ATL::CBindStatusCallback::OnLowResource", "ATLCTL/ATL::CBindStatusCallback::OnObjectAvailable", "ATLCTL/ATL::CBindStatusCallback::OnProgress", "ATLCTL/ATL::CBindStatusCallback::OnStartBinding", "ATLCTL/ATL::CBindStatusCallback::OnStopBinding", "ATLCTL/ATL::CBindStatusCallback::StartAsyncDownload", "ATLCTL/ATL::CBindStatusCallback::m_dwAvailableToRead", "ATLCTL/ATL::CBindStatusCallback::m_dwTotalRead", "ATLCTL/ATL::CBindStatusCallback::m_pFunc", "ATLCTL/ATL::CBindStatusCallback::m_pT", "ATLCTL/ATL::CBindStatusCallback::m_spBindCtx", "ATLCTL/ATL::CBindStatusCallback::m_spBinding", "ATLCTL/ATL::CBindStatusCallback::m_spMoniker", "ATLCTL/ATL::CBindStatusCallback::m_spStream"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["asynchronous data transfer [C++]", "data transfer [C++]", "data transfer [C++], asynchronous", "CBindStatusCallback class"]
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CBindStatusCallback Class
 This class implements the `IBindStatusCallback` interface.  
@@ -250,15 +230,13 @@ ATL_PDATAAVAILABLE m_pFunc;
 ### Remarks  
  The function pointed to by `m_pFunc` is a member of your object's class and has the following syntax:  
   
- `void Function_Name(`  
-  
- `CBindStatusCallback<T>* pbsc,`  
-  
- `BYTE* pBytes,`  
-  
- `DWORD dwSize`  
-  
- `);`  
+```  
+void Function_Name(  
+   CBindStatusCallback<T>* pbsc,  
+   BYTE* pBytes,  
+   DWORD dwSize  
+   );  
+```  
   
 ##  <a name="m_pt"></a>  CBindStatusCallback::m_pT  
  A pointer to the object requesting the asynchronous data transfer.  

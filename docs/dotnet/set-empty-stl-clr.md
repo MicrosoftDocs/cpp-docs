@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::empty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "empty member [STL/CLR]"
+f1_keywords: ["cliext::set::empty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["empty member [STL/CLR]"]
 ms.assetid: af10279f-e9e8-4599-b59b-5b8d92b619eb
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::empty (STL/CLR)
 Tests whether no elements are present.  

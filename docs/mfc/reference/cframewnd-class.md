@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFrameWnd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "frame window classes, base class"
-  - "single document interface (SDI), frame windows"
-  - "frame windows, creating"
-  - "CFrameWnd class"
+f1_keywords: ["CFrameWnd", "AFXWIN/CFrameWnd", "AFXWIN/CFrameWnd::CFrameWnd", "AFXWIN/CFrameWnd::ActivateFrame", "AFXWIN/CFrameWnd::BeginModalState", "AFXWIN/CFrameWnd::Create", "AFXWIN/CFrameWnd::CreateView", "AFXWIN/CFrameWnd::DockControlBar", "AFXWIN/CFrameWnd::EnableDocking", "AFXWIN/CFrameWnd::EndModalState", "AFXWIN/CFrameWnd::FloatControlBar", "AFXWIN/CFrameWnd::GetActiveDocument", "AFXWIN/CFrameWnd::GetActiveFrame", "AFXWIN/CFrameWnd::GetActiveView", "AFXWIN/CFrameWnd::GetControlBar", "AFXWIN/CFrameWnd::GetDockState", "AFXWIN/CFrameWnd::GetMenuBarState", "AFXWIN/CFrameWnd::GetMenuBarVisibility", "AFXWIN/CFrameWnd::GetMessageBar", "AFXWIN/CFrameWnd::GetMessageString", "AFXWIN/CFrameWnd::GetTitle", "AFXWIN/CFrameWnd::InitialUpdateFrame", "AFXWIN/CFrameWnd::InModalState", "AFXWIN/CFrameWnd::IsTracking", "AFXWIN/CFrameWnd::LoadAccelTable", "AFXWIN/CFrameWnd::LoadBarState", "AFXWIN/CFrameWnd::LoadFrame", "AFXWIN/CFrameWnd::NegotiateBorderSpace", "AFXWIN/CFrameWnd::OnBarCheck", "AFXWIN/CFrameWnd::OnContextHelp", "AFXWIN/CFrameWnd::OnSetPreviewMode", "AFXWIN/CFrameWnd::OnUpdateControlBarMenu", "AFXWIN/CFrameWnd::RecalcLayout", "AFXWIN/CFrameWnd::SaveBarState", "AFXWIN/CFrameWnd::SetActivePreviewView", "AFXWIN/CFrameWnd::SetActiveView", "AFXWIN/CFrameWnd::SetDockState", "AFXWIN/CFrameWnd::SetMenuBarState", "AFXWIN/CFrameWnd::SetMenuBarVisibility", "AFXWIN/CFrameWnd::SetMessageText", "AFXWIN/CFrameWnd::SetProgressBarPosition", "AFXWIN/CFrameWnd::SetProgressBarRange", "AFXWIN/CFrameWnd::SetProgressBarState", "AFXWIN/CFrameWnd::SetTaskbarOverlayIcon", "AFXWIN/CFrameWnd::SetTitle", "AFXWIN/CFrameWnd::ShowControlBar", "AFXWIN/CFrameWnd::ShowOwnedWindows", "AFXWIN/CFrameWnd::OnCreateClient", "AFXWIN/CFrameWnd::OnHideMenuBar", "AFXWIN/CFrameWnd::OnShowMenuBar", "AFXWIN/CFrameWnd::m_bAutoMenuEnable", "AFXWIN/CFrameWnd::rectDefault"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFrameWnd [MFC], CFrameWnd", "CFrameWnd [MFC], ActivateFrame", "CFrameWnd [MFC], BeginModalState", "CFrameWnd [MFC], Create", "CFrameWnd [MFC], CreateView", "CFrameWnd [MFC], DockControlBar", "CFrameWnd [MFC], EnableDocking", "CFrameWnd [MFC], EndModalState", "CFrameWnd [MFC], FloatControlBar", "CFrameWnd [MFC], GetActiveDocument", "CFrameWnd [MFC], GetActiveFrame", "CFrameWnd [MFC], GetActiveView", "CFrameWnd [MFC], GetControlBar", "CFrameWnd [MFC], GetDockState", "CFrameWnd [MFC], GetMenuBarState", "CFrameWnd [MFC], GetMenuBarVisibility", "CFrameWnd [MFC], GetMessageBar", "CFrameWnd [MFC], GetMessageString", "CFrameWnd [MFC], GetTitle", "CFrameWnd [MFC], InitialUpdateFrame", "CFrameWnd [MFC], InModalState", "CFrameWnd [MFC], IsTracking", "CFrameWnd [MFC], LoadAccelTable", "CFrameWnd [MFC], LoadBarState", "CFrameWnd [MFC], LoadFrame", "CFrameWnd [MFC], NegotiateBorderSpace", "CFrameWnd [MFC], OnBarCheck", "CFrameWnd [MFC], OnContextHelp", "CFrameWnd [MFC], OnSetPreviewMode", "CFrameWnd [MFC], OnUpdateControlBarMenu", "CFrameWnd [MFC], RecalcLayout", "CFrameWnd [MFC], SaveBarState", "CFrameWnd [MFC], SetActivePreviewView", "CFrameWnd [MFC], SetActiveView", "CFrameWnd [MFC], SetDockState", "CFrameWnd [MFC], SetMenuBarState", "CFrameWnd [MFC], SetMenuBarVisibility", "CFrameWnd [MFC], SetMessageText", "CFrameWnd [MFC], SetProgressBarPosition", "CFrameWnd [MFC], SetProgressBarRange", "CFrameWnd [MFC], SetProgressBarState", "CFrameWnd [MFC], SetTaskbarOverlayIcon", "CFrameWnd [MFC], SetTitle", "CFrameWnd [MFC], ShowControlBar", "CFrameWnd [MFC], ShowOwnedWindows", "CFrameWnd [MFC], OnCreateClient", "CFrameWnd [MFC], OnHideMenuBar", "CFrameWnd [MFC], OnShowMenuBar", "CFrameWnd [MFC], m_bAutoMenuEnable", "CFrameWnd [MFC], rectDefault"]
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFrameWnd Class
 Provides the functionality of a Windows single document interface (SDI) overlapped or pop-up frame window, along with members for managing the window.  
@@ -238,7 +218,7 @@ virtual BOOL Create(
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
  `dwStyle`  
- Specifies the window [style](../../mfc/reference/window-styles.md) attributes. Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
   
  `rect`  
  Specifies the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new window.  
@@ -250,7 +230,7 @@ virtual BOOL Create(
  Identifies the name of the menu resource to be used with the window. Use **MAKEINTRESOURCE** if the menu has an integer ID instead of a string. This parameter can be **NULL**.  
   
  `dwExStyle`  
- Specifies the window extended [style](../../mfc/reference/extended-window-styles.md) attributes.  
+ Specifies the window extended [style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) attributes.  
   
  `pContext`  
  Specifies a pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be **NULL**.  
@@ -471,9 +451,9 @@ virtual DWORD GetMenuBarState();
 ### Return Value  
  The return value can have the following values:  
   
--   AFX_MBS_VISIBLE (0x01) – The menu is visible.  
+-   AFX_MBS_VISIBLE (0x01) - The menu is visible.  
   
--   AFX_MBS_HIDDEN (0x02) – The menu is hidden.  
+-   AFX_MBS_HIDDEN (0x02) - The menu is hidden.  
   
 ### Remarks  
  If a runtime error occurs, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
@@ -630,7 +610,7 @@ virtual BOOL LoadFrame(
  The ID of shared resources associated with the frame window.  
   
  *dwDefaultStyle*  
- The frame's [style](../../mfc/reference/window-styles.md). Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ The frame's [style](../../mfc/reference/styles-used-by-mfc.md#window-styles). Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
   
  `pParentWnd`  
  A pointer to the frame's parent.  
@@ -736,10 +716,10 @@ virtual BOOL OnCreateClient(
   
 ### Parameters  
  `lpcs`  
- A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure *.*  
+ A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.  
   
  `pContext`  
- A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure *.*  
+ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -900,7 +880,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nState`|Specifies whether to display or hide the menu. The `nState` parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) – Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) – Hides the menu if it is visible, but has no effect if it is hidden.|  
+|[in] `nState`|Specifies whether to display or hide the menu. The `nState` parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) - Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) - Hides the menu if it is visible, but has no effect if it is hidden.|  
   
 ### Return Value  
  `true` if this method successfully changes the menu state; otherwise, `false`.  
@@ -931,7 +911,8 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 ```  
 void SetMessageText(LPCTSTR lpszText);  
-void SetMessageText(UINT nID);```  
+void SetMessageText(UINT nID);
+```  
   
 ### Parameters  
  `lpszText`  

@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "File menu"
-  - "identifiers [C++], command IDs"
-  - "command IDs, standard commands"
-  - "OLE commands"
-  - "commands [C++], standard"
-  - "standard command IDs"
-  - "Window menu commands"
-  - "standard commands"
-  - "View menu commands"
-  - "Edit menu standard commands"
-  - "Help, menus"
-  - "programmer-defined IDs [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["File menu", "identifiers [MFC], command IDs", "command IDs, standard commands", "OLE commands", "commands [MFC], standard", "standard command IDs", "Window menu commands", "standard commands", "View menu commands", "Edit menu standard commands", "Help [MFC], menus", "programmer-defined IDs [MFC]"]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Standard Commands
 The framework defines many standard command messages. The IDs for these commands typically take the form:  

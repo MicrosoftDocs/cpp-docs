@@ -4,69 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wgetdcwd_nolock"
-  - "_getdcwd_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_wgetdcwd_nolock", "_getdcwd_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wgetdcwd_nolock"
-  - "tgetdcwd_nolock"
-  - "wgetdcwd_nolock"
-  - "_getdcwd_nolock"
-  - "_tgetdcwd_nolock"
-  - "getdcwd_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "getdcwd_nolock function"
-  - "_tgetdcwd_nolock function"
-  - "working directory"
-  - "tgetdcwd_nolock function"
-  - "_getdcwd_nolock function"
-  - "current working directory"
-  - "wgetdcwd_nolock function"
-  - "_wgetdcwd_nolock function"
-  - "directories [C++], current working"
+f1_keywords: ["_wgetdcwd_nolock", "tgetdcwd_nolock", "wgetdcwd_nolock", "_getdcwd_nolock", "_tgetdcwd_nolock", "getdcwd_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["getdcwd_nolock function", "_tgetdcwd_nolock function", "working directory", "tgetdcwd_nolock function", "_getdcwd_nolock function", "current working directory", "wgetdcwd_nolock function", "_wgetdcwd_nolock function", "directories [C++], current working"]
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getdcwd_nolock, _wgetdcwd_nolock
 Gets the full path of the current working directory on the specified drive.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -113,9 +71,6 @@ wchar_t *_wgetdcwd_nolock(
 |`_wgetdcwd_nolock`|\<direct.h> or \<wchar.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   

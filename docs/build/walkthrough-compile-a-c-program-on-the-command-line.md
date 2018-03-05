@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-helpviewer_keywords: 
-  - "command-line applications [C++], C programs"
-  - "Visual C, compiling"
-  - "compiling programs [C++]"
-  - "C program compiling [C++]"
+helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
 caps.latest.revision: 46
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compile a C program on the command line
 Visual C++ includes a C compiler that you can use to create everything from basic console programs to full Windows Desktop applications, mobile apps, and more.  
@@ -44,29 +25,31 @@ Visual C++ includes a C compiler that you can use to create everything from basi
   
  Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and  how to download and install Visual Studio, including the free Visual Studio Community edition, see [VisualStudio.com](https://www.visualstudio.com/).  
   
- The Microsoft Visual C++ Build Tools installs only the command-line compiler, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download and install [Microsoft Visual C++ Build Tools 2015](http://go.microsoft.com/fwlink/?LinkId=691126).  
+ The Visual Studio Build Tools installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Visual Studio Build Tools](https://go.microsoft.com/fwlink/p/?linkid=840931) and run the installer. For more information, see [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
   
- Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment in order to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window**. You need a *developer* command prompt, which is a regular command prompt that has all the required environment variables set. Fortunately, Visual C++ installs shortcuts for you to launch developer command prompts that have the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they are located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is to find the right shortcut to use.  
+ Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment in order to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window**. You need a *developer command prompt* window, which is a regular command prompt window that has all the required environment variables set. Fortunately, Visual C++ installs shortcuts for you to launch developer command prompts that have the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they are located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is to find the right shortcut to use.  
   
 > [!NOTE]
->  A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we recommend you use a developer command prompt shortcut instead of building your own.  
+>  A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.  
   
 ## Open a developer command prompt  
   
-1.  If you have installed Visual Studio 2015 on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio 2015** folder (not the Visual Studio 2015 app). Choose **Developer Command Prompt for VS2015** to open the command prompt window.  
+1.  If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.  
   
-     If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.  
+     If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.  
   
      If you are using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.  
   
 2.  Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:  
   
     ```Output  
-    C:\Program Files (x86)\Microsoft Visual Studio 14.0>cl  
-    Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x86  
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl  
+    Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
-  
+    
     usage: cl [ option... ] filename... [ /link linkoption... ]  
+    
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>  
     ```  
   
      There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If this is similar to what you see, then you are ready to build C or C++ programs at the command line.  
@@ -74,7 +57,7 @@ Visual C++ includes a C compiler that you can use to create everything from basi
     > [!NOTE]
     >  If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.  
   
-     If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. Try reinstalling the Visual C++ component in Visual Studio, or reinstall the Microsoft Visual C++ Build Tools. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual C++, see [Install Visual Studio](/visualstudio/install/install-visual-studio).  
+     If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. Try reinstalling the Visual C++ component in Visual Studio, or reinstall the Visual Studio Build Tools. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual C++, see [Install Visual Studio](/visualstudio/install/install-visual-studio).  
   
     > [!NOTE]
     >  Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as Administrator** to successfully build and run the program that you create by following this walkthrough.  
@@ -108,9 +91,9 @@ Visual C++ includes a C compiler that you can use to create everything from basi
   
      Directory of C:\simple  
   
-    10/02/2015  03:46 PM    <DIR>          .  
-    10/02/2015  03:46 PM    <DIR>          ..  
-    10/02/2015  03:36 PM               143 simple.c  
+    10/02/2017  03:46 PM    <DIR>          .  
+    10/02/2017  03:46 PM    <DIR>          ..  
+    10/02/2017  03:36 PM               143 simple.c  
                    1 File(s)            143 bytes  
                    2 Dir(s)  514,900,566,016 bytes free  
   
@@ -124,11 +107,11 @@ Visual C++ includes a C compiler that you can use to create everything from basi
   
     ```Output  
     c:\simple>cl simple.c  
-    Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x86  
+    Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
   
     simple.c  
-    Microsoft (R) Incremental Linker Version 14.00.23918.0  
+    Microsoft (R) Incremental Linker Version 14.10.25017.0  
     Copyright (C) Microsoft Corporation.  All rights reserved.  
   
     /out:simple.exe  

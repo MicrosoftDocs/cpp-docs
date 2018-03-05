@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonApplicationButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonApplicationButton class"
+f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonApplicationButton Class
 Implements a special button located in the top-left corner of the application window. When clicked, the button opens a menu that usually contains common **File** commands like **Open**, **Save**, and **Exit**.  

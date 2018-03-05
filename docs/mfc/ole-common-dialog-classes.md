@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX classes [C++]"
-  - "dialog classes [C++], OLE"
-  - "OLE common dialog classes [C++]"
-  - "common dialog classes"
+f1_keywords: ["vc.classes.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX classes [MFC]", "dialog classes [MFC], OLE", "OLE common dialog classes [MFC]", "common dialog classes [MFC]"]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # OLE Common Dialog Classes
 These classes handle common OLE tasks by implementing a number of standard OLE dialog boxes. They also provide a consistent user interface for OLE functionality.  

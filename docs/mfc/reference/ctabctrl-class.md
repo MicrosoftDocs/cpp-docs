@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tab controls"
-  - "CTabCtrl class, common controls"
-  - "CTabCtrl class"
+f1_keywords: ["CTabCtrl", "AFXCMN/CTabCtrl", "AFXCMN/CTabCtrl::CTabCtrl", "AFXCMN/CTabCtrl::AdjustRect", "AFXCMN/CTabCtrl::Create", "AFXCMN/CTabCtrl::CreateEx", "AFXCMN/CTabCtrl::DeleteAllItems", "AFXCMN/CTabCtrl::DeleteItem", "AFXCMN/CTabCtrl::DeselectAll", "AFXCMN/CTabCtrl::DrawItem", "AFXCMN/CTabCtrl::GetCurFocus", "AFXCMN/CTabCtrl::GetCurSel", "AFXCMN/CTabCtrl::GetExtendedStyle", "AFXCMN/CTabCtrl::GetImageList", "AFXCMN/CTabCtrl::GetItem", "AFXCMN/CTabCtrl::GetItemCount", "AFXCMN/CTabCtrl::GetItemRect", "AFXCMN/CTabCtrl::GetItemState", "AFXCMN/CTabCtrl::GetRowCount", "AFXCMN/CTabCtrl::GetToolTips", "AFXCMN/CTabCtrl::HighlightItem", "AFXCMN/CTabCtrl::HitTest", "AFXCMN/CTabCtrl::InsertItem", "AFXCMN/CTabCtrl::RemoveImage", "AFXCMN/CTabCtrl::SetCurFocus", "AFXCMN/CTabCtrl::SetCurSel", "AFXCMN/CTabCtrl::SetExtendedStyle", "AFXCMN/CTabCtrl::SetImageList", "AFXCMN/CTabCtrl::SetItem", "AFXCMN/CTabCtrl::SetItemExtra", "AFXCMN/CTabCtrl::SetItemSize", "AFXCMN/CTabCtrl::SetItemState", "AFXCMN/CTabCtrl::SetMinTabWidth", "AFXCMN/CTabCtrl::SetPadding", "AFXCMN/CTabCtrl::SetToolTips"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTabCtrl [MFC], CTabCtrl", "CTabCtrl [MFC], AdjustRect", "CTabCtrl [MFC], Create", "CTabCtrl [MFC], CreateEx", "CTabCtrl [MFC], DeleteAllItems", "CTabCtrl [MFC], DeleteItem", "CTabCtrl [MFC], DeselectAll", "CTabCtrl [MFC], DrawItem", "CTabCtrl [MFC], GetCurFocus", "CTabCtrl [MFC], GetCurSel", "CTabCtrl [MFC], GetExtendedStyle", "CTabCtrl [MFC], GetImageList", "CTabCtrl [MFC], GetItem", "CTabCtrl [MFC], GetItemCount", "CTabCtrl [MFC], GetItemRect", "CTabCtrl [MFC], GetItemState", "CTabCtrl [MFC], GetRowCount", "CTabCtrl [MFC], GetToolTips", "CTabCtrl [MFC], HighlightItem", "CTabCtrl [MFC], HitTest", "CTabCtrl [MFC], InsertItem", "CTabCtrl [MFC], RemoveImage", "CTabCtrl [MFC], SetCurFocus", "CTabCtrl [MFC], SetCurSel", "CTabCtrl [MFC], SetExtendedStyle", "CTabCtrl [MFC], SetImageList", "CTabCtrl [MFC], SetItem", "CTabCtrl [MFC], SetItemExtra", "CTabCtrl [MFC], SetItemSize", "CTabCtrl [MFC], SetItemState", "CTabCtrl [MFC], SetMinTabWidth", "CTabCtrl [MFC], SetPadding", "CTabCtrl [MFC], SetToolTips"]
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTabCtrl Class
 Provides the functionality of the Windows common tab control.  
@@ -139,7 +120,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. See **Remarks** for a list of window styles that you can also apply to the control.  
+ Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the Windows SDK. See **Remarks** for a list of window styles that you can also apply to the control.  
   
  `rect`  
  Specifies the tab control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -187,10 +168,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. See **Remarks** in [Create](#create) for a list of window styles that you can also apply to the control.  
+ Specifies the tab control's style. Apply any combination of [tab control styles](http://msdn.microsoft.com/library/windows/desktop/bb760549), described in the Windows SDK. See **Remarks** in [Create](#create) for a list of window styles that you can also apply to the control.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -207,7 +188,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TCS_EX_FLATSEPARATORS**. For more information, see the styles described in [Tab Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760546) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TCS_EX_FLATSEPARATORS**. For more information, see the styles described in [Tab Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760546) in the Windows SDK.  
   
 ##  <a name="ctabctrl"></a>  CTabCtrl::CTabCtrl  
  Constructs a `CTabCtrl` object.  
@@ -255,7 +236,7 @@ void DeselectAll(BOOL fExcludeFocus);
  Flag that specifies the scope of the item deselection. If this parameter is set to **FALSE**, all tab buttons will be reset. If it is set to **TRUE**, then all tab items except for the one currently selected will be reset.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message, [TCM_DESELECTALL](http://msdn.microsoft.com/library/windows/desktop/bb760579), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message, [TCM_DESELECTALL](http://msdn.microsoft.com/library/windows/desktop/bb760579), as described in the Windows SDK.  
   
 ##  <a name="drawitem"></a>  CTabCtrl::DrawItem  
  Called by the framework when a visual aspect of an owner-draw tab control changes.  
@@ -293,7 +274,7 @@ int GetCurSel() const;
 ```  
   
 ### Return Value  
- Zero-based index of the selected tab if successful or – 1 if no tab is selected.  
+ Zero-based index of the selected tab if successful or - 1 if no tab is selected.  
   
 ##  <a name="getextendedstyle"></a>  CTabCtrl::GetExtendedStyle  
  Retrieves the extended styles that are currently in use for the tab control.  
@@ -303,10 +284,10 @@ DWORD GetExtendedStyle();
 ```  
   
 ### Return Value  
- Represents the extended styles currently in use for the tab control. This value is a combination of [tab control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb760546), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Represents the extended styles currently in use for the tab control. This value is a combination of [tab control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb760546), as described in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TCM_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760585), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TCM_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760585), as described in the Windows SDK.  
   
 ##  <a name="getimagelist"></a>  CTabCtrl::GetImageList  
  Retrieves the image list that's associated with a tab control.  
@@ -358,7 +339,7 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
  Size of the buffer pointed to by **pszText**. This member is ignored if the structure is not receiving information.  
   
  `iImage`  
- Index into the tab control's image list, or – 1 if there is no image for the tab.  
+ Index into the tab control's image list, or - 1 if there is no image for the tab.  
   
  **lParam**  
  Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](http://msdn.microsoft.com/library/windows/desktop/bb760556)structure. The **TCITEMHEADER** structure is identical to the `TCITEM` structure, but without the **lParam** member. The difference between the size of your structure and the size of the **TCITEMHEADER** structure should equal the number of extra bytes per tab.  
@@ -413,7 +394,7 @@ DWORD GetItemState(
  The zero-based index number of the item for which to retrieve state information.  
   
  `dwMask`  
- Mask specifying which of the item's state flags to return. For a list of values, see the mask member of the [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Mask specifying which of the item's state flags to return. For a list of values, see the mask member of the [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure, as described in the Windows SDK.  
   
 ### Return Value  
  A reference to a `DWORD` value receiving the state information. Can be one of the following values:  
@@ -470,7 +451,7 @@ BOOL HighlightItem(int idItem,   BOOL fHighlight = TRUE);
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the Win32 message [TCM_HIGHLIGHTITEM](http://msdn.microsoft.com/library/windows/desktop/bb760602), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the Win32 message [TCM_HIGHLIGHTITEM](http://msdn.microsoft.com/library/windows/desktop/bb760602), as described in the Windows SDK.  
   
 ##  <a name="hittest"></a>  CTabCtrl::HitTest  
  Determines which tab, if any, is at the specified screen position.  
@@ -481,10 +462,10 @@ int HitTest(TCHITTESTINFO* pHitTestInfo) const;
   
 ### Parameters  
  `pHitTestInfo`  
- Pointer to a [TCHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb760553) structure, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], which specifies the screen position to test.  
+ Pointer to a [TCHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb760553) structure, as described in the Windows SDK, which specifies the screen position to test.  
   
 ### Return Value  
- Returns the zero-based index of the tab or – 1 if no tab is at the specified position.  
+ Returns the zero-based index of the tab or - 1 if no tab is at the specified position.  
   
 ##  <a name="insertitem"></a>  CTabCtrl::InsertItem  
  Inserts a new tab in an existing tab control.  
@@ -554,13 +535,13 @@ LONG InsertItem(
  Application-defined data associated with the tab.  
   
  `dwState`  
- Specifies values for the item's states. For more information, see [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies values for the item's states. For more information, see [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) in the Windows SDK.  
   
  *dwStateMask*  
- Specifies which states are to be set. For more information, see [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies which states are to be set. For more information, see [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) in the Windows SDK.  
   
 ### Return Value  
- Zero-based index of the new tab if successful; otherwise – 1.  
+ Zero-based index of the new tab if successful; otherwise - 1.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTabCtrl#5](../../mfc/reference/codesnippet/cpp/ctabctrl-class_5.cpp)]  
@@ -591,7 +572,7 @@ void SetCurFocus(int nItem);
  Specifies the index of the tab that gets the focus.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TCM_SETCURFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb760610), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TCM_SETCURFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb760610), as described in the Windows SDK.  
   
 ##  <a name="setcursel"></a>  CTabCtrl::SetCurSel  
  Selects a tab in a tab control.  
@@ -605,7 +586,7 @@ int SetCurSel(int nItem);
  The zero-based index of the item to be selected.  
   
 ### Return Value  
- Zero-based index of the previously selected tab if successful, otherwise – 1.  
+ Zero-based index of the previously selected tab if successful, otherwise - 1.  
   
 ### Remarks  
  A tab control does not send a **TCN_SELCHANGING** or **TCN_SELCHANGE** notification message when a tab is selected using this function. These notifications are sent, using **WM_NOTIFY**, when the user clicks or uses the keyboard to change tabs.  
@@ -625,10 +606,10 @@ DWORD SetExtendedStyle(DWORD dwNewStyle,   DWORD dwExMask = 0);
  A `DWORD` value that indicates which styles in `dwNewStyle` are to be affected. Only the extended styles in `dwExMask` will be changed. All other styles will be maintained as is. If this parameter is zero, then all of the styles in `dwNewStyle` will be affected.  
   
 ### Return Value  
- A `DWORD` value that contains the previous [tab control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb760546), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A `DWORD` value that contains the previous [tab control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb760546), as described in the Windows SDK.  
   
 ### Return Value  
- This member function implements the behavior of the Win32 message [TCM_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760627), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TCM_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb760627), as described in the Windows SDK.  
   
 ##  <a name="setimagelist"></a>  CTabCtrl::SetImageList  
  Assigns an image list to a tab control.  
@@ -679,7 +660,7 @@ BOOL SetItemExtra(int nBytes);
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TCM_SETITEMEXTRA](http://msdn.microsoft.com/library/windows/desktop/bb760633), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TCM_SETITEMEXTRA](http://msdn.microsoft.com/library/windows/desktop/bb760633), as described in the Windows SDK.  
   
 ##  <a name="setitemsize"></a>  CTabCtrl::SetItemSize  
  Sets the width and height of the tab control items.  
@@ -710,7 +691,7 @@ BOOL SetItemState(
  The zero-based index number of the item for which to set state information.  
   
  `dwMask`  
- Mask specifying which of the item's state flags to set. For a list of values, see the mask member of the [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Mask specifying which of the item's state flags to set. For a list of values, see the mask member of the [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) structure, as described in the Windows SDK.  
   
  `dwState`  
  A reference to a `DWORD` value containing the state information. Can be one of the following values:  
@@ -738,7 +719,7 @@ int SetMinTabWidth(int cx);
  The previous minimum tab width.  
   
 ### Return Value  
- This member function implements the behavior of the Win32 message [TCM_SETMINTABWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760637), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TCM_SETMINTABWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760637), as described in the Windows SDK.  
   
 ##  <a name="setpadding"></a>  CTabCtrl::SetPadding  
  Sets the amount of space (padding) around each tab's icon and label in a tab control.  

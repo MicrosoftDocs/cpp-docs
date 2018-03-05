@@ -4,46 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__wargv"
-  - "__argv"
-  - "__argc"
-apilocation: 
-  - "msvcrt120.dll"
+apiname: ["__wargv", "__argv", "__argc"]
+apilocation: ["msvcrt120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__argv"
-  - "__argc"
-  - "__wargv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__argv"
-  - "__wargv"
-  - "__argc"
+f1_keywords: ["__argv", "__argc", "__wargv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __argc, __argv, __wargv
 The `__argc` global variable is a count of the number of command-line arguments passed to the program. `__argv` is a pointer to an array of single-byte-character or multi-byte-character strings that contain the program arguments, and `__wargv` is a pointer to an array of wide-character strings that contain the program arguments. These global variables provide the arguments to `main` or `wmain`.  

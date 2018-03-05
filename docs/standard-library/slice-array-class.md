@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "slice_array"
-  - "valarray/std::slice_array"
-  - "std.slice_array"
-  - "std::slice_array"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "slice_array class"
+ms.topic: "reference"
+f1_keywords: ["valarray/std::slice_array"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["slice_array class"]
 ms.assetid: a182d5f7-f35c-4e76-86f2-b5ac64ddc846
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # slice_array Class
 An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.  
@@ -94,10 +74,10 @@ public:
   
  `slice_array`\< **Type**> `valarray`< **Type**:: `operator[]` ( `slice`).  
   
- You construct a **slice_array\<Type>** object only by writing an expression of the form [va&#91;sl&#93;](../standard-library/valarray-class.md#valarray__operator_at), for a slice **sl** of valarray **va**. The member functions of class slice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected. The sequence controlled by the slice_array is defined by the three parameters of the slice constructor, the index of the first element in the slice, the number of elements, and the distance between the elements. A slice_array cut from valarray **va** declared by **va**[ `slice`(2, 5, 3)] selects elements with indices 2, 5, 8, 11, and 14 from **va**. The indices must be valid for the procedure to be valid.  
+ You construct a **slice_array\<Type>** object only by writing an expression of the form [va&#91;sl&#93;](../standard-library/valarray-class.md#op_at), for a slice **sl** of valarray **va**. The member functions of class slice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected. The sequence controlled by the slice_array is defined by the three parameters of the slice constructor, the index of the first element in the slice, the number of elements, and the distance between the elements. A slice_array cut from valarray **va** declared by **va**[ `slice`(2, 5, 3)] selects elements with indices 2, 5, 8, 11, and 14 from **va**. The indices must be valid for the procedure to be valid.  
   
 ## Example  
- See the example for [slice::slice](../standard-library/slice-class.md#slice__slice) for an example of how to declare and use a slice_array.  
+ See the example for [slice::slice](../standard-library/slice-class.md#slice) for an example of how to declare and use a slice_array.  
   
 ## Requirements  
  **Header:** \<valarray>  

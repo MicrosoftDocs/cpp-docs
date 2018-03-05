@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__wgetmainargs"
-  - "__getmainargs"
-apilocation: 
-  - "msvcr100.dll"
-  - "msvcrt.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
+apiname: ["__wgetmainargs", "__getmainargs"]
+apilocation: ["msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__wgetmainargs"
-  - "__getmainargs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__wgetmainargs"
-  - "__getmainargs"
+f1_keywords: ["__wgetmainargs", "__getmainargs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__wgetmainargs", "__getmainargs"]
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __getmainargs, __wgetmainargs
 Invokes command-line parsing and copies the arguments to `main()` back through the passed pointers.  
@@ -76,7 +47,7 @@ _startupinfo * _StartInfo);
  An integer that contains the number of arguments that follow in `argv`. The `argc` parameter is always greater than or equal to 1.  
   
  `_Argv`  
- An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv[0]` is the command with which the program is invoked, argv[1] is the first command-line argument, and so on, until argv[argc], which is always NULL. The first command-line argument is always `argv[1]` and the last one is `argv[argc – 1]`.  
+ An array of null-terminated strings representing command-line arguments entered by the user of the program. By convention, `argv[0]` is the command with which the program is invoked, argv[1] is the first command-line argument, and so on, until argv[argc], which is always NULL. The first command-line argument is always `argv[1]` and the last one is `argv[argc - 1]`.  
   
  `_Env`  
  An array of strings that represent the variables set in the user's environment. This array is terminated by a NULL entry.  

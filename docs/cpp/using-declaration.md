@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "using declaration"
-  - "declaring namespaces, unqualified names in namespaces"
-  - "declarations [C++], using-declaration"
-  - "namespaces [C++], unqualified names in"
-  - "using keyword [C++]"
-  - "declarations [C++], namespaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["using declaration", "declaring namespaces, unqualified names in namespaces", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]", "declarations [C++], namespaces"]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # using Declaration
 The using declaration introduces a name into the declarative region in which the using declaration appears.  

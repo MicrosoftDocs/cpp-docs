@@ -4,46 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cpp.hint"
-  - "vc.hint.file"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stop file"
-  - "cpp.hint"
-  - "hint file"
-  - "cpp.stop"
-  - "Class View, hint file"
+f1_keywords: ["cpp.hint", "vc.hint.file"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Hint Files
 A *hint file* helps the Visual Studio integrated development environment (IDE) interpret Visual C++ identifiers, such as the names of functions and macros. When you open a Visual C++ project, the IDE's *parsing system* analyzes the code in each source file in the project and gathers information about every identifier. Then the IDE uses that information to support features such as the **Class View** browser and the **Navigation Bar**.  
   
- The parsing system, which is introduced in [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocesser replaces the [macro identifier](../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.  
+ The parsing system, which is introduced in Visual C++ 2010, understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocesser replaces the [macro identifier](../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.  
   
  A hint file contains user-customizable *hints*, which have the same syntax as C/C++ macro definitions. Visual C++ includes a built-in hint file that is sufficient for most projects, but you can create your own hint files to improve the way Visual Studio handles identifiers.  
   
@@ -327,8 +304,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 -   The `#undef` hint in the `A2` directory removed the hints for `OBRACE` and `CBRACE` in the `Debug` directory hint file.  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
- [Creating and Controlling Environment Windows](http://msdn.microsoft.com/Library/496ecde3-4fe1-412c-b7b4-b40e3efda618)   
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)    
  [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)   
  [#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)   
  [SAL Annotations](../c-runtime-library/sal-annotations.md)   

@@ -1,34 +1,20 @@
 ---
-title: "Connect to Your Remote Linux Computer | Microsoft Docs"
+title: "Connect to your remote Linux computer | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "11/06/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-    - "devlang-cpp"
+ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-    - "cs-cz"
-    - "de-de"
-    - "es-es"
-    - "fr-fr"
-    - "it-it"
-    - "ja-jp"
-    - "ko-kr"
-    - "pl-pl"
-    - "pt-br"
-    - "ru-ru"
-    - "tr-tr"
-    - "zh-cn"
-    - "zh-tw"
+ms.workload: ["cplusplus", "linux"]
 ---
 
-# Connect to Your Remote Linux Computer
+# Connect to Your remote Linux computer
 
 When building, Linux code is copied to your remote Linux computer and then compiled on that system according to the settings chosen in Visual Studio.  To setup this remote connection:
 

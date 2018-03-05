@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.aggregatable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aggregatable attribute"
+f1_keywords: ["vc-attr.aggregatable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["aggregatable attribute"]
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # aggregatable
 Indicates that the class supports aggregation.  
@@ -67,9 +50,9 @@ Indicates that the class supports aggregation.
   
 |Parameter value|Inserted macro|  
 |---------------------|--------------------|  
-|**Never**|[DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/Library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)|  
-|**Allowed**|[DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/Library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3)|  
-|**Always**|[DECLARE_ONLY_AGGREGATABLE](http://msdn.microsoft.com/Library/a54220df-4330-4e4d-b7fb-8b63dd62d337)|  
+|**Never**|[DECLARE_NOT_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|  
+|**Allowed**|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|  
+|**Always**|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|  
   
 ## Example  
   
@@ -104,5 +87,4 @@ class CMyClass {};
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   

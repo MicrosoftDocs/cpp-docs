@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.implements_category"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "implements_category attribute"
+f1_keywords: ["vc-attr.implements_category"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["implements_category attribute"]
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # implements_category
 Specifies the component categories implemented by the target class.  
@@ -87,5 +70,5 @@ class CMyClass {};
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [IMPLEMENTED_CATEGORY](http://msdn.microsoft.com/Library/d898ef34-5684-4709-beb9-7114ddd96674)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)   
+ 

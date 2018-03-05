@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wmemset"
-  - "memset"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wmemset", "memset"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "memset"
-  - "wmemset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wmemset function"
-  - "memset function"
+f1_keywords: ["memset", "wmemset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wmemset function", "memset function"]
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # memset, wmemset
 Sets buffers to a specified character.  
@@ -157,9 +124,6 @@ int main( void )
 Before: This is a test of the wmemset function  
 After:  **** is a test of the wmemset function  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Buffer::SetByte](https://msdn.microsoft.com/en-us/library/system.buffer.setbyte.aspx)  
   
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   

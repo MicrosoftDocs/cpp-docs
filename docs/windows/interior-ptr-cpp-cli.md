@@ -1,40 +1,21 @@
 ---
-title: "interior_ptr (C++-CLI) | Microsoft Docs"
+title: "interior_ptr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "stdcli::language::interior_ptr"
-  - "interior_ptr_cpp"
-  - "interior_ptr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interior_ptr keyword [C++]"
+f1_keywords: ["stdcli::language::interior_ptr", "interior_ptr_cpp", "interior_ptr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interior_ptr keyword [C++]"]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # interior_ptr (C++/CLI)
 An *interior pointer* declares a pointer to inside a reference type, but not to the object itself. An interior pointer can point to a reference handle, value type, boxed type handle, member of a managed type, or to an element of a managed array.  

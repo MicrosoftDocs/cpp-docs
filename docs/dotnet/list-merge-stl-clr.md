@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::merge"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "merge member [STL/CLR]"
+f1_keywords: ["cliext::list::merge"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["merge member [STL/CLR]"]
 ms.assetid: f8e93cd3-bd08-4086-859b-08a2899cc9a6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::merge (STL/CLR)
 Merges two ordered controlled sequences.  
@@ -55,7 +38,7 @@ template<typename Pred2>
 ## Remarks  
  The first member function removes all elements from the sequence controlled by `right` and insert them in the controlled sequence. Both sequences must be previously ordered by `operator<` -- elements must not decrease in value as you progress through either sequence. The resulting sequence is also ordered by `operator<`. You use this member function to merge two sequences that increase in value into a sequence that also increases in value.  
   
- The second member function behaves the same as the first, except that the sequences are ordered by `pred` -- `pred``(X, Y)` must be false for any element `X` that follows element `Y` in the sequence. You use it to merge two sequences ordered by a predicate function or delegate that you specify.  
+ The second member function behaves the same as the first, except that the sequences are ordered by `pred` -- `pred(X, Y)` must be false for any element `X` that follows element `Y` in the sequence. You use it to merge two sequences ordered by a predicate function or delegate that you specify.  
   
  Both functions perform a stable merge -- no pair of elements in either of the original controlled sequences is reversed in the resulting controlled sequence. Also, if a pair of elements `X` and `Y` in the resulting controlled sequence has equivalent ordering -- `!(X < Y) && !(X < Y)` -- an element from the original controlled sequence appears before an element from the sequence controlled by `right`.  
   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "function_CPP"
-  - "vc-pragma.function"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function pragma"
-  - "pragmas, function"
+ms.topic: "reference"
+f1_keywords: ["function_CPP", "vc-pragma.function"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["function pragma", "pragmas, function"]
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # function (C/C++)
 Specifies that calls to functions specified in the pragma's argument list be generated.  

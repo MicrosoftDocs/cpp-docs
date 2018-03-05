@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gray and dithered bitmap functions"
+f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["gray and dithered bitmap functions [MFC]"]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Gray and Dithered Bitmap Functions
 **Gray Bitmap Functions**  

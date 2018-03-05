@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DLayer"
-  - "CD2DLayer"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DLayer class"
+f1_keywords: ["CD2DLayer", "AFXRENDERTARGET/CD2DLayer", "AFXRENDERTARGET/CD2DLayer::CD2DLayer", "AFXRENDERTARGET/CD2DLayer::Attach", "AFXRENDERTARGET/CD2DLayer::Create", "AFXRENDERTARGET/CD2DLayer::Destroy", "AFXRENDERTARGET/CD2DLayer::Detach", "AFXRENDERTARGET/CD2DLayer::Get", "AFXRENDERTARGET/CD2DLayer::GetSize", "AFXRENDERTARGET/CD2DLayer::IsValid", "AFXRENDERTARGET/CD2DLayer::m_pLayer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DLayer [MFC], CD2DLayer", "CD2DLayer [MFC], Attach", "CD2DLayer [MFC], Create", "CD2DLayer [MFC], Destroy", "CD2DLayer [MFC], Detach", "CD2DLayer [MFC], Get", "CD2DLayer [MFC], GetSize", "CD2DLayer [MFC], IsValid", "CD2DLayer [MFC], m_pLayer"]
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DLayer Class
 A wrapper for ID2D1Layer.  

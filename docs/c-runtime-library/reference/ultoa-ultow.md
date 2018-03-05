@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ultoa"
-  - "_ultow"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ultoa", "_ultow"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ultot"
-  - "ultow"
-  - "_ultoa"
-  - "_ultow"
-  - "_ultot"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ultot function"
-  - "converting integers"
-  - "_ultot function"
-  - "ultow function"
-  - "integers, converting"
-  - "_ultow function"
-  - "_ultoa function"
-  - "converting numbers, to strings"
+f1_keywords: ["ultot", "ultow", "_ultoa", "_ultow", "_ultot"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ultot function", "converting integers", "_ultot function", "ultow function", "integers, converting", "_ultow function", "_ultoa function", "converting numbers, to strings"]
 ms.assetid: 7a472dc4-5652-4513-93c3-3358522c23be
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ultoa, _ultow
 Convert an unsigned long integer to a string. More secure versions of these functions are available; see [_ultoa_s, _ultow_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md).  
@@ -99,13 +58,13 @@ wchar_t *_ultow(
  String result.  
   
  `radix`  
- Base of `value`*.*  
+ Base of `value`.  
   
 ## Return Value  
  Each of these functions returns a pointer to `str`. There is no error return.  
   
 ## Remarks  
- The `_ultoa` function converts `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. No overflow checking is performed. `radix` specifies the base of `value`; `radix` must be in the range 2 – 36. `_ultow` is a wide-character version of `_ultoa`.  
+ The `_ultoa` function converts `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. No overflow checking is performed. `radix` specifies the base of `value`; `radix` must be in the range 2 - 36. `_ultow` is a wide-character version of `_ultoa`.  
   
 > [!IMPORTANT]
 >  To prevent buffer overruns, ensure that the `str` buffer is large enough to hold the converted digits plus the trailing null-character.  
@@ -129,9 +88,6 @@ wchar_t *_ultow(
   
 ## Example  
  See the example for [_itoa](../../c-runtime-library/reference/itoa-i64toa-ui64toa-itow-i64tow-ui64tow.md).  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

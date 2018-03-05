@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member variables, defining for controls"
-  - "variables, dialog box control member variables"
-  - "controls [C++], member variables"
-  - "Dialog editor, defining member variables for controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog editor, defining member variables for controls"]
 ms.assetid: 84347c63-c33c-4b04-91f5-6d008c45ba58
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Defining Member Variables for Dialog Controls
 To define a member variable for any dialog box control except buttons, you can use the following method.  
@@ -56,7 +37,7 @@ To define a member variable for any dialog box control except buttons, you can u
     > [!TIP]
     >  To jump from any dialog box control to its existing handler, double-click the control.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+
   
  You can also use the **Member Variables** tab in **MFC Class Wizard** to add new member variables for a specified class, and view those that have already been defined.  
   

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.FXCompilerTool.ShaderModel"
-  - "VC.Project.FXCompilerTool.PreprocessorDefinitions"
-  - "VC.Project.FXCompilerTool.ShaderType"
-  - "VC.Project.FXCompilerTool.EnableDebuggingInformation"
-  - "VC.Project.FXCompilerTool.AdditionalIncludeDirectories"
-  - "VC.Project.FXCompilerTool.DisableOptimizations"
-  - "VC.Project.FXCompilerTool.EntryPointName"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.FXCompilerTool.ShaderModel", "VC.Project.FXCompilerTool.PreprocessorDefinitions", "VC.Project.FXCompilerTool.ShaderType", "VC.Project.FXCompilerTool.EnableDebuggingInformation", "VC.Project.FXCompilerTool.AdditionalIncludeDirectories", "VC.Project.FXCompilerTool.DisableOptimizations", "VC.Project.FXCompilerTool.EntryPointName"]
+dev_langs: ["C++"]
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: General
 To configure the following properties of the HLSL compiler (fxc.exe), use its **General** property page. For information about how to access the **General** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  

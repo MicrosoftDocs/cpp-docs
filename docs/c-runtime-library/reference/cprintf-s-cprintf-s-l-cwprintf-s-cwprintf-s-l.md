@@ -4,78 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_cwprintf_s_l"
-  - "_cprintf_s_l"
-  - "_cprintf_s"
-  - "_cwprintf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_cwprintf_s_l", "_cprintf_s_l", "_cprintf_s", "_cwprintf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_cwprintf_s_l"
-  - "_cprintf_s"
-  - "cwprintf_s"
-  - "_cprintf_s_l"
-  - "cwprintf_s_l"
-  - "cprintf_s_l"
-  - "_tcprintf_s"
-  - "cprintf_s"
-  - "_cwprintf_s"
-  - "tcprintf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcprintf_s_l function"
-  - "_cprintf_s_l function"
-  - "_cwprintf_s_l function"
-  - "tcprintf_s function"
-  - "_tcprintf_s_l function"
-  - "_cwprintf_s function"
-  - "cwprintf_s function"
-  - "_cprintf_s function"
-  - "cprintf_s function"
-  - "_tcprintf_s function"
-  - "cprintf_s_l function"
-  - "cwprintf_s_l function"
+f1_keywords: ["_cwprintf_s_l", "_cprintf_s", "cwprintf_s", "_cprintf_s_l", "cwprintf_s_l", "cprintf_s_l", "_tcprintf_s", "cprintf_s", "_cwprintf_s", "tcprintf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcprintf_s_l function", "_cprintf_s_l function", "_cwprintf_s_l function", "tcprintf_s function", "_tcprintf_s_l function", "_cwprintf_s function", "cwprintf_s function", "_cprintf_s function", "cprintf_s function", "_tcprintf_s function", "cprintf_s_l function", "cwprintf_s_l function"]
 ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 Formats and prints to the console. These versions of [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -114,7 +63,7 @@ int _cwprintf_s_l(
  The number of characters printed.  
   
 ## Remarks  
- These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return–line feed (CR-LF) combinations when output.  
+ These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
   
  An important distinction is that `_cwprintf_s` displays Unicode characters when used in Windows NT. Unlike `_cprintf_s`, `_cwprintf_s` uses the current console locale  
   

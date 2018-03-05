@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX classes [C++]"
-  - "OLE classes [C++]"
-  - "OLE [C++], classes"
+f1_keywords: ["vc.classes.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX classes [MFC]", "OLE classes [MFC]", "OLE [MFC], classes"]
 ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # OLE-Related Classes
 These classes provide a number of different services, ranging from exceptions to file input and output.  

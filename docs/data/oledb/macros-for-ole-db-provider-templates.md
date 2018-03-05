@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.templates.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB provider templates, macros"
-  - "macros, OLE DB Provider Templates"
-  - "Provider Template macros (OLE DB)"
-  - "OLE DB Provider Template macros"
+ms.topic: "reference"
+f1_keywords: ["vc.templates.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros"]
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Macros for OLE DB Provider Templates
 The OLE DB Templates Provider macros offer functionality in the following categories:  

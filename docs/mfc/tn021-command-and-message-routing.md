@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.routing"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "TN021"
-  - "command routing [C++], technical note TN021"
-  - "Windows messages [C++], routing"
+f1_keywords: ["vc.routing"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["TN021", "command routing [MFC], technical note TN021", "Windows messages [MFC], routing"]
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN021: Command and Message Routing
 > [!NOTE]

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "read-only poviders [C++]"
-  - "IRowsetLocate class"
-  - "IRowsetLocate class, adding to OLE DB template providers"
-  - "simple read-only poviders [C++]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["read-only poviders [C++]", "IRowsetLocate class", "IRowsetLocate class, adding to OLE DB template providers", "simple read-only poviders [C++]"]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Enhancing the Simple Read-Only Provider
 This section shows how to enhance the [simple read-only provider](../../data/oledb/implementing-the-simple-read-only-provider.md) created in the previous section. `IRowsetLocateImpl` creates an implementation for the `IRowsetLocate` interface and adds bookmark support for you.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::unique"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unique function [STL/CLR]"
+f1_keywords: ["cliext::unique"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unique function [STL/CLR]"]
 ms.assetid: 833cc314-b452-4659-bbb4-575c2bb63855
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # unique (STL/CLR)
 Removes duplicate elements that are adjacent to each other in a specified range.  
@@ -47,7 +30,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `unique`. For more information, see [unique](http://msdn.microsoft.com/Library/a9615038-2b77-43bf-876b-9f79be88eff0).  
+ This function behaves the same as the C++ Standard Library function `unique`. For more information, see [unique](../standard-library/algorithm-functions.md#unique).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

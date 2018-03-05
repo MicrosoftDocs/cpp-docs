@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3509"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3509"
+f1_keywords: ["C3509"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3509"]
 ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3509
 'type': invalid Automation return type; when a parameter is marked 'retval', the return type must be 'void', 'HRESULT' or 'SCODE'  

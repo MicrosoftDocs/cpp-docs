@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "frame window classes, about frame window classes"
-  - "frame window classes"
-  - "windows [C++], MDI"
-  - "document frame windows, classes"
-  - "single document interface (SDI), frame windows"
-  - "window classes, frame"
-  - "MFC [C++], frame windows"
-  - "MDI [C++], frame windows"
-  - "classes [C++], window"
+dev_langs: ["C++"]
+helpviewer_keywords: ["frame window classes [MFC], about frame window classes", "frame window classes [MFC]", "windows [MFC], MDI", "document frame windows [MFC], classes", "single document interface (SDI), frame windows", "window classes [MFC], frame", "MFC, frame windows", "MDI [MFC], frame windows", "classes [MFC], window"]
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Frame-Window Classes
 Each application has one "main frame window," a desktop window that usually has the application name in its caption. Each document usually has one "document frame window." A document frame window contains at least one view, which presents the document's data.  

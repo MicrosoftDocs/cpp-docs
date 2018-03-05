@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetSession"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CInternetSession class"
-  - "Internet sessions"
+f1_keywords: ["CInternetSession", "AFXINET/CInternetSession", "AFXINET/CInternetSession::CInternetSession", "AFXINET/CInternetSession::Close", "AFXINET/CInternetSession::EnableStatusCallback", "AFXINET/CInternetSession::GetContext", "AFXINET/CInternetSession::GetCookie", "AFXINET/CInternetSession::GetCookieLength", "AFXINET/CInternetSession::GetFtpConnection", "AFXINET/CInternetSession::GetGopherConnection", "AFXINET/CInternetSession::GetHttpConnection", "AFXINET/CInternetSession::OnStatusCallback", "AFXINET/CInternetSession::OpenURL", "AFXINET/CInternetSession::SetCookie", "AFXINET/CInternetSession::SetOption"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInternetSession [MFC], CInternetSession", "CInternetSession [MFC], Close", "CInternetSession [MFC], EnableStatusCallback", "CInternetSession [MFC], GetContext", "CInternetSession [MFC], GetCookie", "CInternetSession [MFC], GetCookieLength", "CInternetSession [MFC], GetFtpConnection", "CInternetSession [MFC], GetGopherConnection", "CInternetSession [MFC], GetHttpConnection", "CInternetSession [MFC], OnStatusCallback", "CInternetSession [MFC], OpenURL", "CInternetSession [MFC], SetCookie", "CInternetSession [MFC], SetOption"]
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CInternetSession Class
 Creates and initializes a single or several simultaneous Internet sessions and, if necessary, describes your connection to a proxy server.  
@@ -78,7 +60,7 @@ class CInternetSession : public CObject
 ## Remarks  
  If your Internet connection must be maintained for the duration of an application, you can create a `CInternetSession` member of the class [CWinApp](../../mfc/reference/cwinapp-class.md).  
   
- Once you have established an Internet session, you can call [OpenURL](#openurl). `CInternetSession` then parses the URL for you by calling the global function [AfxParseURL](http://msdn.microsoft.com/library/505c717e-aa52-4106-8522-eedff3d9bbae). Regardless of its protocol type, `CInternetSession` interprets the URL and manages it for you. It can handle requests for local files identified with the URL resource "file://". `OpenURL` will return a pointer to a [CStdioFile](../../mfc/reference/cstdiofile-class.md) object if the name you pass it is a local file.  
+ Once you have established an Internet session, you can call [OpenURL](#openurl). `CInternetSession` then parses the URL for you by calling the global function [AfxParseURL](internet-url-parsing-globals.md#afxparseurl). Regardless of its protocol type, `CInternetSession` interprets the URL and manages it for you. It can handle requests for local files identified with the URL resource "file://". `OpenURL` will return a pointer to a [CStdioFile](../../mfc/reference/cstdiofile-class.md) object if the name you pass it is a local file.  
   
  If you open a URL on an Internet server using `OpenURL`, you can read information from the site. If you want to perform service-specific (for example, HTTP, FTP, or gopher) actions on files located on a server, you must establish the appropriate connection with that server. To open a particular kind of connection directly to a particular service, use one of the following member functions:  
   
@@ -152,7 +134,7 @@ CInternetSession(
 ### Remarks  
  **CInternetSession** is the first Internet function called by an application. It initializes internal data structures and prepares for future calls from the application.  
   
- If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](http://msdn.microsoft.com/library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
+ If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception).  
   
 ### Example  
   See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).  
@@ -206,7 +188,7 @@ DWORD_PTR GetContext() const;
  For more information about asynchronous operations, see the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md).  
   
 ##  <a name="getcookie"></a>  CInternetSession::GetCookie  
- This member function implements the behavior of the Win32 function [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 function [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710), as described in the Windows SDK.  
   
 ```  
 static BOOL GetCookie(
@@ -423,7 +405,7 @@ virtual void OnStatusCallback(
 |`INTERNET_STATUS_RESPONSE_RECEIVED`|Successfully received a response from the server. The `lpvStatusInformation` parameter is **NULL**.|  
 |`INTERNET_STATUS_CLOSING_CONNECTION`|Closing the connection to the server. The `lpvStatusInformation` parameter is **NULL**.|  
 |`INTERNET_STATUS_CONNECTION_CLOSED`|Successfully closed the connection to the server. The `lpvStatusInformation` parameter is **NULL**.|  
-|`INTERNET_STATUS_HANDLE_CREATED`|Used by the Win32 API function [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) from another thread if the connect is taking too long. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]for more information about these functions.|  
+|`INTERNET_STATUS_HANDLE_CREATED`|Used by the Win32 API function [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|  
 |`INTERNET_STATUS_HANDLE_CLOSING`|Successfully terminated this handle value.|  
   
  Override this member function to require some action before a status callback routine is performed.  
@@ -527,7 +509,7 @@ static BOOL SetCookie(
  Returns **TRUE** if successful, or **FALSE** otherwise. To get the specific error code, call **GetLastError.**  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107), as described in the Windows SDK.  
   
 ##  <a name="setoption"></a>  CInternetSession::SetOption  
  Call this member function to set options for the Internet session.  
@@ -548,7 +530,7 @@ BOOL SetOption(
   
 ### Parameters  
  `dwOption`  
- The Internet option to set. See [Option Flags](http://msdn.microsoft.com/library/windows/desktop/aa385328) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]for a list of the possible options.  
+ The Internet option to set. See [Option Flags](http://msdn.microsoft.com/library/windows/desktop/aa385328) in the Windows SDKfor a list of the possible options.  
   
  `lpBuffer`  
  A buffer that contains the option setting.  

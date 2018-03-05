@@ -4,43 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IThreadPoolConfig"
-  - "ATL::IThreadPoolConfig"
-  - "ATL.IThreadPoolConfig"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IThreadPoolConfig interface"
+f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IThreadPoolConfig interface"]
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IThreadPoolConfig Interface
 This interface provides methods for configuring a thread pool.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   

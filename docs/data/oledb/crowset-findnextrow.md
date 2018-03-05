@@ -4,61 +4,33 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.CRowset.FindNextRow"
-  - "CRowset<TAccessor>.FindNextRow"
-  - "ATL::CRowset::FindNextRow"
-  - "CRowset::FindNextRow"
-  - "CRowset<TAccessor>::FindNextRow"
-  - "CRowset.FindNextRow"
-  - "ATL.CRowset<TAccessor>.FindNextRow"
-  - "ATL::CRowset<TAccessor>::FindNextRow"
-  - "FindNextRow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FindNextRow method"
+ms.topic: "reference"
+f1_keywords: ["ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FindNextRow method"]
 ms.assetid: 36484df9-3625-4f15-bf69-db73a8d91c55
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::FindNextRow
 Finds the next matching row after the specified bookmark.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT FindNextRow(   
-   DBCOMPAREOP op,   
-   BYTE* pData,   
+```
+HRESULT FindNextRow(DBCOMPAREOP op,   
+  BYTE* pData,   
    DBTYPE wType,   
    DBLENGTH nLength,   
    BYTE bPrecision,   
    BYTE bScale,   
    BOOL bSkipCurrent = TRUE,   
-   CBookmarkBase* pBookmark = NULL    
-) throw( );  
+   CBookmarkBase* pBookmark = NULL) throw();  
 ```  
   
 #### Parameters  
@@ -69,7 +41,7 @@ Finds the next matching row after the specified bookmark.
  [in] A pointer to the value to be matched.  
   
  `wType`  
- [in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](https://msdn.microsoft.com/en-us/library/ms723969.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] Indicates the data type of the value part of the buffer. For information about type indicators, see [Data Types](https://msdn.microsoft.com/en-us/library/ms723969.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  `nLength`  
  [in] The length, in bytes, of the consumer data structure allocated for the data value. For details, see the description of **cbMaxLen** in [DBBINDING Structures](https://msdn.microsoft.com/en-us/library/ms716845.aspx) in the *OLE DB Programmer's Reference.*  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CW2AEX<t_nBufferLength>"
-  - "CW2AEX"
-  - "ATL.CW2AEX<t_nBufferLength>"
-  - "ATL::CW2AEX"
-  - "ATL.CW2AEX"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CW2AEX class"
+f1_keywords: ["CW2AEX", "ATLCONV/ATL::CW2AEX", "ATLCONV/ATL::CW2AEX::CW2AEX", "ATLCONV/ATL::CW2AEX::m_psz", "ATLCONV/ATL::CW2AEX::m_szBuffer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CW2AEX class"]
 ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CW2AEX Class
 This class is used by the string conversion macros `CT2AEX`, `CW2TEX`, `CW2CTEX`, and `CT2CAEX`, and the typedef **CW2A**.  
@@ -100,10 +79,10 @@ class CW2AEX
   
 - **CW2A**  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  
@@ -121,7 +100,7 @@ CW2AEX(LPCWSTR psz) throw(...);
  The text string to be converted.  
   
  `nCodePage`  
- The code page used to perform the conversion. See the code page parameter discussion for the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] function [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) for more details.  
+ The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) for more details.  
   
 ### Remarks  
  Allocates the buffer used in the translation process.  

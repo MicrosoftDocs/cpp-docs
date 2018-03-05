@@ -4,40 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3718"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3718"
+f1_keywords: ["C3718"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3718"]
 ms.assetid: 346b5205-c44d-49d3-b66a-96417d3d6986
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3718
 can only call 'event' in the context of a member function of the receiving class  
   
- The `event`can only be called from the receiving class.  
+ The `event` can only be called from the receiving class.  
   
 ## Example  
  The following sample generates C3718:  

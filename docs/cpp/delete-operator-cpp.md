@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "delete_cpp"
-  - "delete"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "delete keyword [C++], syntax"
-  - "delete keyword [C++], deallocating objects"
-  - "delete keyword [C++]"
+f1_keywords: ["delete_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["delete keyword [C++], syntax", "delete keyword [C++], deallocating objects", "delete keyword [C++]"]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # delete Operator (C++)
 Deallocates a block of memory.  

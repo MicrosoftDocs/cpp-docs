@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fma"
-  - "fmaf"
-  - "fmal"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["fma", "fmaf", "fmal"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fma"
-  - "fmaf"
-  - "fmal"
-  - "math/fma"
-  - "math/fmaf"
-  - "math/fmal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fma function"
-  - "fmaf function"
-  - "fmal function"
+f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fma function", "fmaf function", "fmal function"]
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fma, fmaf, fmal
 Multiplies two values together,  adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.  
@@ -108,7 +69,7 @@ long double fmal(
  The value to add.  
   
 ## Return Value  
- Returns (`x` ×    `y`) + `z`. The return value is then rounded using the current rounding format.  
+ Returns `(x * y) + z`. The return value is then rounded using the current rounding format.  
   
  Otherwise, may return one of the following values:  
   
@@ -124,7 +85,7 @@ long double fmal(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `fma` that take and return float and long double types. In a C program, `fma` always takes and returns a double.  
+ Because C++ allows overloading, you can call overloads of `fma` that take and return **float** and **long double** types. In a C program, `fma` always takes and returns a **double**.  
   
  This function computes the value as though it were taken to infinite precision, and then rounds the final result.  
   
@@ -132,7 +93,7 @@ long double fmal(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fma`,                `fmaf`,  `fmal`|\<math.h>|\<cmath>|  
+|`fma`, `fmaf`, `fmal`|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "recordsets, data members"
-  - "field data members, recordset architecture"
-  - "field data members"
-  - "m_nParams data member, recordsets"
-  - "recordsets, architecture"
-  - "parameter data members in recordsets"
-  - "m_nFields data member"
-  - "ODBC recordsets, architecture"
-  - "m_nParams data member"
-  - "m_nFields data member, recordsets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["recordsets, data members", "field data members, recordset architecture", "field data members", "m_nParams data member, recordsets", "recordsets, architecture", "parameter data members in recordsets", "m_nFields data member", "ODBC recordsets, architecture", "m_nParams data member", "m_nFields data member, recordsets"]
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Architecture (ODBC)
 This topic applies to the MFC ODBC classes.  

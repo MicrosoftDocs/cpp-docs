@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CSinusoidalTransitionFromRange"
-  - "CSinusoidalTransitionFromRange"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSinusoidalTransitionFromRange class"
+f1_keywords: ["CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMaximumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMinimumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSinusoidalTransitionFromRange [MFC], CSinusoidalTransitionFromRange", "CSinusoidalTransitionFromRange [MFC], Create", "CSinusoidalTransitionFromRange [MFC], m_dblMaximumValue", "CSinusoidalTransitionFromRange [MFC], m_dblMinimumValue", "CSinusoidalTransitionFromRange [MFC], m_duration", "CSinusoidalTransitionFromRange [MFC], m_period", "CSinusoidalTransitionFromRange [MFC], m_slope"]
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSinusoidalTransitionFromRange Class
 Encapsulates a sinusoidal-range transition that has a given range of oscillation.  

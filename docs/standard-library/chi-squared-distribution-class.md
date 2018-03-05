@@ -4,57 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "chi_squared_distribution"
-  - "std::chi_squared_distribution"
-  - "random/std::chi_squared_distribution"
-  - "std::chi_squared_distribution::reset"
-  - "random/std::chi_squared_distribution::reset"
-  - "std::chi_squared_distribution::n"
-  - "random/std::chi_squared_distribution::n"
-  - "std::chi_squared_distribution::param"
-  - "random/std::chi_squared_distribution::param"
-  - "std::chi_squared_distribution::min"
-  - "random/std::chi_squared_distribution::min"
-  - "std::chi_squared_distribution::max"
-  - "random/std::chi_squared_distribution::max"
-  - "std::chi_squared_distribution::operator()"
-  - "random/std::chi_squared_distribution::operator()"
-  - "std::chi_squared_distribution::param_type"
-  - "random/std::chi_squared_distribution::param_type"
-  - "std::chi_squared_distribution::param_type::n"
-  - "random/std::chi_squared_distribution::param_type::n"
-  - "std::chi_squared_distribution::param_type::operator=="
-  - "random/std::chi_squared_distribution::param_type::operator=="
-  - "std::chi_squared_distribution::param_type::operator!="
-  - "random/std::chi_squared_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "chi_squared_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::chi_squared_distribution", "random/std::chi_squared_distribution::reset", "random/std::chi_squared_distribution::n", "random/std::chi_squared_distribution::param", "random/std::chi_squared_distribution::min", "random/std::chi_squared_distribution::max", "random/std::chi_squared_distribution::operator()", "random/std::chi_squared_distribution::param_type", "random/std::chi_squared_distribution::param_type::n", "random/std::chi_squared_distribution::param_type::operator==", "random/std::chi_squared_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::chi_squared_distribution [C++]", "std::chi_squared_distribution [C++], reset", "std::chi_squared_distribution [C++], n", "std::chi_squared_distribution [C++], param", "std::chi_squared_distribution [C++], min", "std::chi_squared_distribution [C++], max", "std::chi_squared_distribution [C++], param_type", "std::chi_squared_distribution [C++], param_type"]
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # chi_squared_distribution Class
 Generates a chi-squared distribution.  
@@ -100,8 +61,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[chi_squared_distribution::chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
-|`chi_squared_distribution::operator()`||[chi_squared_distribution::param_type](#chi_squared_distribution__param_type)|  
+|[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
+|`chi_squared_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `n()` returns the value for the stored distribution parameter `n`.  
   
@@ -115,7 +76,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/LinkId=400528).  
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/p/?linkid=400528).  
   
 ## Example  
   
@@ -245,7 +206,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="chi_squared_distribution__chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
+##  <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
 Constructs the distribution.  
   
 ```  
@@ -267,7 +228,7 @@ The first constructor constructs an object whose stored `n` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="chi_squared_distribution__param_type"></a>  chi_squared_distribution::param_type  
+##  <a name="param_type"></a>  chi_squared_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp    

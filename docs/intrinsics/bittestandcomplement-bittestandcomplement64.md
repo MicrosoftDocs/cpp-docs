@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_bittestandcomplement64"
-  - "_bittestandcomplement64_cpp"
-  - "_bittestandcomplement_cpp"
-  - "_bittestandcomplement"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "btc instruction"
-  - "_bittestandcomplement intrinsic"
-  - "_bittestandcomplement64 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_bittestandcomplement64", "_bittestandcomplement64_cpp", "_bittestandcomplement_cpp", "_bittestandcomplement"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["btc instruction", "_bittestandcomplement intrinsic", "_bittestandcomplement64 intrinsic"]
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _bittestandcomplement, _bittestandcomplement64
 **Microsoft Specific**  
@@ -119,7 +97,7 @@ Testing bit 0
 Value changed to 0, Result: 1  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

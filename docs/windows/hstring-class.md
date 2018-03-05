@@ -4,36 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::HString"
-dev_langs: 
-  - "C++"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HString"]
+dev_langs: ["C++"]
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HString Class
-Provides support for manipulating HSTRING handles.  
+A helper class for managing the lifetime of an HSTRING using the RAII pattern.
   
 ## Syntax  
   
@@ -42,7 +26,7 @@ class HString;
 ```  
   
 ## Remarks  
- The [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles.  
+ The Windows Runtime provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern. 
   
 ## Members  
   

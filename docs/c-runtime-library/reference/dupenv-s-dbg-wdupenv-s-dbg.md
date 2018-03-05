@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_dupenv_s_dbg"
-  - "_wdupenv_s_dbg"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_dupenv_s_dbg", "_wdupenv_s_dbg"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tdupenv_s_dbg"
-  - "_dupenv_s_dbg"
-  - "_wdupenv_s_dbg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tdupenv_s_dbg function"
-  - "dupenv_s_dbg function"
-  - "_wdupenv_s_dbg function"
-  - "environment variables"
-  - "tdupenv_s_dbg function"
-  - "wdupenv_s_dbg function"
-  - "_dupenv_s_dbg function"
+f1_keywords: ["_tdupenv_s_dbg", "_dupenv_s_dbg", "_wdupenv_s_dbg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tdupenv_s_dbg function", "dupenv_s_dbg function", "_wdupenv_s_dbg function", "environment variables", "tdupenv_s_dbg function", "wdupenv_s_dbg function", "_dupenv_s_dbg function"]
 ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _dupenv_s_dbg, _wdupenv_s_dbg
 Get a value from the current environment.  Versions of [_dupenv_s, _wdupenv_s](../../c-runtime-library/reference/dupenv-s-wdupenv-s.md) that allocate memory with [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) to provide additional debugging information.  
@@ -158,9 +120,6 @@ int main( void )
 pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl  
 nonexistentvariable = (null)  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Environment::GetEnvironmentVariable](https://msdn.microsoft.com/en-us/library/system.environment.getenvironmentvariable.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

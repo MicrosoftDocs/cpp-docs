@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleUpdateDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Update dialog"
-  - "links [C++], updating"
-  - "updating OLE links"
-  - "OLE dialog boxes, Edit Link"
-  - "OLE link updating"
-  - "COleUpdateDialog class"
+f1_keywords: ["COleUpdateDialog", "AFXODLGS/COleUpdateDialog", "AFXODLGS/COleUpdateDialog::COleUpdateDialog", "AFXODLGS/COleUpdateDialog::DoModal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleUpdateDialog [MFC], COleUpdateDialog", "COleUpdateDialog [MFC], DoModal"]
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleUpdateDialog Class
 Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.  
@@ -126,7 +104,7 @@ virtual INT_PTR DoModal();
   
 - **IDCANCEL** if none of the linked or embedded items in the current document need updating.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the Windows SDK.  
   
 ### Remarks  
  All links and/or embeddings are updated unless the user selects the Cancel button.  

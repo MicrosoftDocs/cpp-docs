@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc.main.startup"
-  - "_tmain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "program startup [C++]"
-  - "entry points, program"
-  - "wmain function"
-  - "_tmain function"
-  - "startup code, main function"
-  - "main function, program startup"
+f1_keywords: ["vc.main.startup", "_tmain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["program startup [C++]", "entry points, program", "wmain function", "_tmain function", "startup code, main function", "main function, program startup"]
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # main: Program Startup
-A special function named `main` is the starting point of execution for all C and [!INCLUDE[TLA#tla_cpp](../cpp/includes/tlasharptla_cpp_md.md)] programs. If you are writing code that adheres to the [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] programming model, you can use `wmain`, which is the wide-character version of `main`.  
+A special function named `main` is the starting point of execution for all C and C++ programs. If you are writing code that adheres to the [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] programming model, you can use `wmain`, which is the wide-character version of `main`.  
   
  The `main` function is not predefined by the compiler. It must be supplied in the program text.  
   
@@ -74,7 +51,7 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
   
  Alternatively, the `main` and `wmain` functions can be declared as returning `void` (no return value). If you declare `main` or `wmain` as returning `void`, you cannot return an exit code to the parent process or operating system by using a [return](../cpp/return-statement-in-program-termination-cpp.md) statement. To return an exit code when `main` or `wmain` is declared as `void`, you must use the [exit](../cpp/exit-function.md) function.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but are not required by the compiler. For more information and an example, see [Argument Definitions](../cpp/argument-definitions.md).  
   
 ## See Also  

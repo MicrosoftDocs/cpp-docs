@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "( ) parentheses in return statements"
+dev_langs: ["C++"]
+helpviewer_keywords: ["( ) parentheses in return statements"]
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # return Statement (C)
 The `return` statement terminates the execution of a function and returns control to the calling function. Execution resumes in the calling function at the point immediately following the call. A `return` statement can also return a value to the calling function. See [Return Type](../c-language/return-type.md) for more information.  

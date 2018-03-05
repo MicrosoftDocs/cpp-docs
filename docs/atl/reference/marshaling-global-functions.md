@@ -4,43 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]
+dev_langs: ["C++"]
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Marshaling Global Functions
 These functions provide support for marshaling and converting marshaling data into interface pointers.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  
 |[AtlFreeMarshalStream](#atlfreemarshalstream)|Releases the marshal data and the `IStream` pointer.|  
 |[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Creates a new stream object and marshals the specified interface pointer.|  
 |[AtlUnmarshalPtr](#atlunmarshalptr)|Converts a stream's marshaling data into an interface pointer.|  
+
+## Requirements:
+**Header:** atlbase.h
   
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream  
  Releases the marshal data in the stream, then releases the stream pointer.  

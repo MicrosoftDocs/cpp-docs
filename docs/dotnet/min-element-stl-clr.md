@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::min_element"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "min_element function [STL/CLR]"
+f1_keywords: ["cliext::min_element"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["min_element function [STL/CLR]"]
 ms.assetid: 2a9c6828-9722-454f-9c10-d4a184d4d21b
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # min_element (STL/CLR)
 Finds the first occurrence of smallest element in a specified range where the ordering criterion may be specified by a binary predicate.  
@@ -47,7 +30,7 @@ template<class _FwdIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `min_element`. For more information, see [min_element](http://msdn.microsoft.com/Library/4cf188f9-59f6-4d2c-a1aa-a259c0b1ac6c).  
+ This function behaves the same as the C++ Standard Library function `min_element`. For more information, see [min_element](../standard-library/algorithm-functions.md#min_element).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

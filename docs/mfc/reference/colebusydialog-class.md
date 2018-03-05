@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleBusyDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Server Not Responding dialog box"
-  - "Server Busy dialog box"
-  - "COleBusyDialog class"
+f1_keywords: ["COleBusyDialog", "AFXODLGS/COleBusyDialog", "AFXODLGS/COleBusyDialog::COleBusyDialog", "AFXODLGS/COleBusyDialog::DoModal", "AFXODLGS/COleBusyDialog::GetSelectionType", "AFXODLGS/COleBusyDialog::m_bz"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleBusyDialog [MFC], COleBusyDialog", "COleBusyDialog [MFC], DoModal", "COleBusyDialog [MFC], GetSelectionType", "COleBusyDialog [MFC], m_bz"]
 ms.assetid: c881a532-9672-4c41-b51b-5ce4a7246a6b
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleBusyDialog Class
 Used for the OLE Server Not Responding or Server Busy dialog boxes.  
@@ -72,7 +53,7 @@ class COleBusyDialog : public COleDialog
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
  For more information on OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -127,7 +108,7 @@ explicit COleBusyDialog(
 ### Remarks  
  To display the dialog box, call [DoModal](#domodal).  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
 ##  <a name="domodal"></a>  COleBusyDialog::DoModal  
  Call this function to display the OLE Server Busy or Server Not Responding dialog box.  
@@ -143,7 +124,7 @@ virtual INT_PTR DoModal();
   
 - **IDCANCEL** if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_bz](#m_bz) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -163,17 +144,13 @@ UINT GetSelectionType() const;
 ### Remarks  
  The return type values are specified by the **Selection** enumeration type declared in the `COleBusyDialog` class.  
   
- `enum Selection`  
-  
- `{`  
-  
- `switchTo,`  
-  
- `retry,`  
-  
- `callUnblocked`  
-  
- `};`  
+```  
+enum Selection {
+    switchTo,
+    retry,
+    callUnblocked
+    };
+```  
   
  Brief descriptions of these values follow:  
   
@@ -193,7 +170,7 @@ OLEUIBUSY m_bz;
 ### Remarks  
  Members of this structure can be modified directly or through member functions.  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

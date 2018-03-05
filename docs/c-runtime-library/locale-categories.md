@@ -4,50 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "LC_MAX"
-  - "LC_MIN"
-  - "LC_MONETARY"
-  - "LC_TIME"
-  - "LC_NUMERIC"
-  - "LC_COLLATE"
-  - "LC_CTYPE"
-  - "LC_ALL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LC_MIN constant"
-  - "LC_MONETARY constant"
-  - "LC_CTYPE constant"
-  - "locale constants"
-  - "LC_MAX constant"
-  - "LC_ALL constant"
-  - "LC_TIME constant"
-  - "LC_NUMERIC constant"
-  - "LC_COLLATE constant"
+f1_keywords: ["LC_MAX", "LC_MIN", "LC_MONETARY", "LC_TIME", "LC_NUMERIC", "LC_COLLATE", "LC_CTYPE", "LC_ALL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LC_MIN constant", "LC_MONETARY constant", "LC_CTYPE constant", "locale constants", "LC_MAX constant", "LC_ALL constant", "LC_TIME constant", "LC_NUMERIC constant", "LC_COLLATE constant"]
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Locale Categories
 ## Syntax  

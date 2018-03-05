@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CHeapPtrElementTraits"
-  - "CHeapPtrElementTraits"
-  - "ATL::CHeapPtrElementTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CHeapPtrElementTraits class"
+f1_keywords: ["CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CHeapPtrElementTraits::OUTARGTYPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHeapPtrElementTraits class"]
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CHeapPtrElementTraits Class
 This class provides methods, static functions, and typedefs useful when creating collections of heap pointers.  

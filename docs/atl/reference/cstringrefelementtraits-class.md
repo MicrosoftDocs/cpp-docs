@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStringRefElementTraits"
-  - "ATL.CStringRefElementTraits"
-  - "ATL::CStringRefElementTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStringRefElementTraits class"
+f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStringRefElementTraits class"]
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStringRefElementTraits Class
 This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.  

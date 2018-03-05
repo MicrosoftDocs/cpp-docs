@@ -4,78 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vcprintf_s"
-  - "_vcprintf_s_l"
-  - "_vcwprintf_s"
-  - "_vcwprintf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vcprintf_s", "_vcprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vcprintf_s"
-  - "vcwprintf_s_l"
-  - "_vcwprintf_s"
-  - "_vcwprintf_s_l"
-  - "_vcprintf_s_l"
-  - "_vtcprintf_s"
-  - "vcwprintf_s"
-  - "vcprintf_s_l"
-  - "_vcprintf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_vtcprintf_s_l function"
-  - "_vcwprintf_s_l function"
-  - "_vtcprintf_s function"
-  - "vtcprintf_s_l function"
-  - "vcprintf_s_l function"
-  - "_vcprintf_s function"
-  - "_vcwprintf_s function"
-  - "vcwprintf_s_l function"
-  - "vcwprintf_s function"
-  - "vcprintf_s function"
-  - "_vcprintf_s_l function"
-  - "vtcprintf_s function"
-  - "formatted text [C++]"
+f1_keywords: ["vcprintf_s", "vcwprintf_s_l", "_vcwprintf_s", "_vcwprintf_s_l", "_vcprintf_s_l", "_vtcprintf_s", "vcwprintf_s", "vcprintf_s_l", "_vcprintf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_vtcprintf_s_l function", "_vcwprintf_s_l function", "_vtcprintf_s function", "vtcprintf_s_l function", "vcprintf_s_l function", "_vcprintf_s function", "_vcwprintf_s function", "vcwprintf_s_l function", "vcwprintf_s function", "vcprintf_s function", "_vcprintf_s_l function", "vtcprintf_s function", "formatted text [C++]"]
 ms.assetid: 5a46d45a-30db-45df-9850-455cbdac5636
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 Writes formatted output to the console by using a pointer to a list of arguments. These versions of [_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l](../../c-runtime-library/reference/vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -173,9 +122,6 @@ int main()
 (10,23): Error C2111 : <some error text>  
   (Related to symbol '<symbol>' defined on line 5).  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

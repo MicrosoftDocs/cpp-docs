@@ -1,34 +1,19 @@
 ---
-title: "Walkthrough: Compiling a C++-CLI Program on the Command Line | Microsoft Docs"
+title: "Walkthrough: Compiling a C++/CLI Program on the Command Line | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a C++/CLI Program on the Command Line
 You can create Visual C++ programs that target the Common Language Runtime (CLR) and use the .NET Framework, and build them on the command line. Visual C++ supports the C++/CLI programming language, which has additional types and operators to target the .NET programming model. For an introduction to the C++/CLI language, see [Pure C++: Hello, C++/CLI](http://msdn.microsoft.com/magazine/cc163681.aspx). For general information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).  
@@ -48,9 +33,9 @@ You can create Visual C++ programs that target the Common Language Runtime (CLR)
   
 #### To compile a C++/CLI application on the command line  
   
-1.  Open a **Developer Command Prompt** window. (On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Command Prompt window, see [Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
+1.  Open a **Developer Command Prompt** window. For specific instructions, see [To open a developer command prompt window](../build/building-on-the-command-line.md#developer_command_prompt).  
   
-     Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the Command Prompt window as an administrator, open the shortcut menu for **Developer Command Prompt** and then choose **Run as administrator**.  
+     Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the command prompt window as an administrator, right-click to open the shortcut menu for the command prompt and then choose **More**, **Run as administrator**.  
   
 2.  At the command prompt, enter **notepad basicclr.cpp**.  
   
@@ -80,7 +65,6 @@ You can create Visual C++ programs that target the Common Language Runtime (CLR)
     ```  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Building C/C++ Programs](../build/building-c-cpp-programs.md)   
  [Compiler Options](../build/reference/compiler-options.md)

@@ -4,62 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_WM_RBUTTONUP"
-  - "ON_WM_PALETTECHANGED"
-  - "ON_WM_RBUTTONDBLCLK"
-  - "ON_WM_QUERYENDSESSION"
-  - "ON_WM_PARENTNOTIFY"
-  - "ON_WM_PALETTEISCHANGING"
-  - "ON_WM_QUERYOPEN"
-  - "ON_WM_PAINT"
-  - "ON_WM_QUERYNEWPALETTE"
-  - "ON_WM_RBUTTONDOWN"
-  - "ON_WM_RENDERALLFORMATS"
-  - "ON_WM_PAINTCLIPBOARD"
-  - "ON_WM_RENDERFORMAT"
-  - "ON_WM_QUERYDRAGICON"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_RENDERFORMAT"
-  - "ON_WM_QUERYOPEN"
-  - "ON_WM_RBUTTONDOWN"
-  - "ON_WM_PAINTCLIPBOARD"
-  - "ON_WM_QUERYNEWPALETTE"
-  - "ON_WM_RBUTTONUP"
-  - "ON_WM_PARENTNOTIFY"
-  - "ON_WM_RBUTTONDBLCLK"
-  - "ON_WM_PALETTECHANGED"
-  - "ON_WM_PALETTEISCHANGING"
-  - "ON_WM_QUERYDRAGICON"
-  - "ON_WM_PAINT"
-  - "ON_WM_RENDERALLFORMATS"
-  - "ON_WM_QUERYENDSESSION"
-  - "WM_ messages"
+f1_keywords: ["ON_WM_RBUTTONUP", "ON_WM_PALETTECHANGED", "ON_WM_RBUTTONDBLCLK", "ON_WM_QUERYENDSESSION", "ON_WM_PARENTNOTIFY", "ON_WM_PALETTEISCHANGING", "ON_WM_QUERYOPEN", "ON_WM_PAINT", "ON_WM_QUERYNEWPALETTE", "ON_WM_RBUTTONDOWN", "ON_WM_RENDERALLFORMATS", "ON_WM_PAINTCLIPBOARD", "ON_WM_RENDERFORMAT", "ON_WM_QUERYDRAGICON"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_RENDERFORMAT [MFC]", "ON_WM_QUERYOPEN [MFC]", "ON_WM_RBUTTONDOWN [MFC]", "ON_WM_PAINTCLIPBOARD [MFC]", "ON_WM_QUERYNEWPALETTE [MFC]", "ON_WM_RBUTTONUP [MFC]", "ON_WM_PARENTNOTIFY [MFC]", "ON_WM_RBUTTONDBLCLK [MFC]", "ON_WM_PALETTECHANGED [MFC]", "ON_WM_PALETTEISCHANGING [MFC]", "ON_WM_QUERYDRAGICON [MFC]", "ON_WM_PAINT [MFC]", "ON_WM_RENDERALLFORMATS [MFC]", "ON_WM_QUERYENDSESSION [MFC]", "WM_ messages"]
 ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # WM_ Messages: P - R
 The following map entries correspond to the function prototypes:  

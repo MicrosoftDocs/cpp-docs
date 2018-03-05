@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::path"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["filesystem/std::experimental::filesystem::path"]
+dev_langs: ["C++"]
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # path Class
 The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.  
@@ -39,13 +23,13 @@ The **path** class stores an object of type string\_type, called myname here for
   
 ## Syntax  
   
-```  
+```cpp  
 class path;  
 ```  
   
 ## path::append  
   
-```  
+```cpp  
 template <class Source>  
 path& append(const Source& source);  
    
@@ -57,7 +41,7 @@ path& append(InIt first, InIt last);
   
 ## path::assign  
   
-```  
+```cpp  
 template <class Source>  
 path& assign(const Source& source);  
   
@@ -69,7 +53,7 @@ path& assign(InIt first, InIt last);
   
 ## path::begin  
   
-```  
+```cpp  
 iterator begin() const;
 ```  
   
@@ -77,7 +61,7 @@ iterator begin() const;
   
 ## path::c_str  
   
-```  
+```cpp  
 const value_type& *c_str() const noexcept;  
 ```  
   
@@ -85,7 +69,7 @@ const value_type& *c_str() const noexcept;
   
 ## path::clear  
   
-```  
+```cpp  
 void clear() noexcept;  
 ```  
   
@@ -93,7 +77,7 @@ void clear() noexcept;
   
 ## path::compare  
   
-```  
+```cpp  
 int compare(const path& pval) const noexcept;  
 int compare(const string_type& str) const;
 int compare(const value_type *ptr) const;
@@ -103,7 +87,7 @@ int compare(const value_type *ptr) const;
   
 ## path::concat  
   
-```  
+```cpp  
 template <class Source>  
 path& concat(const Source& source);  
   
@@ -115,7 +99,7 @@ path& concat(InIt first, InIt last);
   
 ## path::const_iterator  
   
-```  
+```cpp  
 typedef iterator const_iterator;  
 ```  
   
@@ -123,7 +107,7 @@ typedef iterator const_iterator;
   
 ## path::empty  
   
-```  
+```cpp  
 bool empty() const noexcept;  
 ```  
   
@@ -131,7 +115,7 @@ bool empty() const noexcept;
   
 ## path::end  
   
-```  
+```cpp  
 iterator end() const;
 ```  
   
@@ -139,7 +123,7 @@ iterator end() const;
   
 ## path::extension  
   
-```  
+```cpp  
 path extension() const;
 ```  
   
@@ -151,7 +135,7 @@ path extension() const;
   
 ## path::filename  
   
-```  
+```cpp  
 path filename() const;
 ```  
   
@@ -159,7 +143,7 @@ path filename() const;
   
 ## path::generic_string  
   
-```  
+```cpp  
 template <class Elem,  
     class Traits = char_traits<Elem>,  
     class Alloc = allocator<Elem>>  
@@ -173,7 +157,7 @@ string generic_string() const;
   
 ## path::generic_u16string  
   
-```  
+```cpp  
 u16string generic_u16string() const;
 ```  
   
@@ -181,7 +165,7 @@ u16string generic_u16string() const;
   
 ## path::generic_u32string  
   
-```  
+```cpp  
 u32string generic_u32string() const;
 ```  
   
@@ -189,7 +173,7 @@ u32string generic_u32string() const;
   
 ## path::generic_u8string  
   
-```  
+```cpp  
 string generic_u8string() const;
 ```  
   
@@ -197,7 +181,7 @@ string generic_u8string() const;
   
 ## path::generic_wstring  
   
-```  
+```cpp  
 wstring generic_wstring() const;
 ```  
   
@@ -205,7 +189,7 @@ wstring generic_wstring() const;
   
 ## path::has_extension  
   
-```  
+```cpp  
 bool has_extension() const;
 ```  
   
@@ -213,7 +197,7 @@ bool has_extension() const;
   
 ## path::has_filename  
   
-```  
+```cpp  
 bool has_filename() const;
 ```  
   
@@ -221,7 +205,7 @@ bool has_filename() const;
   
 ## path::has_parent_path  
   
-```  
+```cpp  
 bool has_parent_path() const;
 ```  
   
@@ -229,7 +213,7 @@ bool has_parent_path() const;
   
 ## path::has_relative_path  
   
-```  
+```cpp  
 bool has_relative_path() const;
 ```  
   
@@ -237,7 +221,7 @@ bool has_relative_path() const;
   
 ## path::has_root_directory  
   
-```  
+```cpp  
 bool has_root_directory() const;
 ```  
   
@@ -245,7 +229,7 @@ bool has_root_directory() const;
   
 ## path::has_root_name  
   
-```  
+```cpp  
 bool has_root_name() const;
 ```  
   
@@ -253,7 +237,7 @@ bool has_root_name() const;
   
 ## path::has_root_path  
   
-```  
+```cpp  
 bool has_root_path() const;
 ```  
   
@@ -261,7 +245,7 @@ bool has_root_path() const;
   
 ## path::has_stem  
   
-```  
+```cpp  
 bool has_stem() const;
 ```  
   
@@ -269,7 +253,7 @@ bool has_stem() const;
   
 ## path::is_absolute  
   
-```  
+```cpp  
 bool is_absolute() const;
 ```  
   
@@ -277,7 +261,7 @@ bool is_absolute() const;
   
 ## path::is_relative  
   
-```  
+```cpp  
 bool is_relative() const;
 ```  
   
@@ -285,7 +269,7 @@ bool is_relative() const;
   
 ## path::iterator  
   
-```  
+```cpp  
 class iterator  
    {
    // bidirectional iterator for path  
@@ -322,7 +306,7 @@ class iterator
   
 ## path::make_preferred  
   
-```  
+```cpp  
 path& make_preferred();
 ```  
   
@@ -330,7 +314,7 @@ path& make_preferred();
   
 ## path::native  
   
-```  
+```cpp  
 const string_type& native() const noexcept;  
 ```  
   
@@ -338,7 +322,7 @@ const string_type& native() const noexcept;
   
 ## path::operator=  
   
-```  
+```cpp  
 path& operator=(const path& right);
 path& operator=(path&& right) noexcept;  
   
@@ -350,7 +334,7 @@ path& operator=(const Source& source);
   
 ## path::operator+=  
   
-```  
+```cpp  
 path& operator+=(const path& right);
 path& operator+=(const string_type& str);
 path& operator+=(const value_type *ptr);
@@ -379,7 +363,7 @@ path& operator+=(Elem elem);
   
 ## path::operator/=  
   
-```  
+```cpp  
 path& operator/=(const path& right);  
   
 template <class Source>  
@@ -394,7 +378,7 @@ path& operator/=(const Source& source);
   
 ## path::operator string_type  
   
-```  
+```cpp  
 operator string_type() const;
 ```  
   
@@ -402,7 +386,7 @@ operator string_type() const;
   
 ## path::parent_path  
   
-```  
+```cpp  
 path parent_path() const;
 ```  
   
@@ -410,7 +394,7 @@ path parent_path() const;
   
 ## path::path  
   
-```  
+```cpp  
 path();
 
 path(const path& right);
@@ -447,7 +431,7 @@ path(InIt first, InIt last, const locale& loc);
   
 ## path::preferred_separator  
   
-```  
+```cpp  
 #if _WIN32_C_LIB  
 static constexpr value_type preferred_separator == L'\\';  
 #else // assume Posix  
@@ -459,7 +443,7 @@ static constexpr value_type preferred_separator == '/';
   
 ## path::relative_path  
   
-```  
+```cpp  
 path relative_path() const;
 ```  
   
@@ -467,13 +451,13 @@ path relative_path() const;
   
 ## path::remove_filename  
   
-```  
+```cpp  
 path& remove_filename();
 ```  
   
 ## path::replace_extension  
   
-```  
+```cpp  
 path& replace_extension(const path& newext = path());
 ```  
   
@@ -481,7 +465,7 @@ path& replace_extension(const path& newext = path());
   
 ## path::replace_filename  
   
-```  
+```cpp  
 path& replace_filename(const path& pval);
 ```  
   
@@ -496,7 +480,7 @@ return (*this);
   
 ## path::root_directory  
   
-```  
+```cpp  
 path root_directory() const;
 ```  
   
@@ -504,7 +488,7 @@ path root_directory() const;
   
 ## path::root_name  
   
-```  
+```cpp  
 path root_name() const;
 ```  
   
@@ -512,7 +496,7 @@ path root_name() const;
   
 ## path::root_path  
   
-```  
+```cpp  
 path root_path() const;
 ```  
   
@@ -520,7 +504,7 @@ path root_path() const;
   
 ## path::stem  
   
-```  
+```cpp  
 path stem() const;
 ```  
   
@@ -528,9 +512,9 @@ path stem() const;
   
 ## path::string  
   
-```  
-template <class Elem, class Traits = char_traits<Elem>, class Alloc = allocator<Elem>>  
-basic_string<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const; 
+```cpp  
+template \<class Elem, class Traits = char_traits\<Elem>, class Alloc = allocator\<Elem>>  
+basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const; 
 string string() const;
 ```  
   
@@ -548,7 +532,7 @@ string string() const;
   
 ## path::string_type  
   
-```  
+```cpp  
 typedef basic_string<value_type> string_type;  
 ```  
   
@@ -556,7 +540,7 @@ typedef basic_string<value_type> string_type;
   
 ## path::swap  
   
-```  
+```cpp  
 void swap(path& right) noexcept;  
 ```  
   
@@ -564,7 +548,7 @@ void swap(path& right) noexcept;
   
 ## path::u16string  
   
-```  
+```cpp  
 u16string u16string() const;
 ```  
   
@@ -572,7 +556,7 @@ u16string u16string() const;
   
 ## path::u32string  
   
-```  
+```cpp  
 u32string u32string() const;
 ```  
   
@@ -580,7 +564,7 @@ u32string u32string() const;
   
 ## path::u8string  
   
-```  
+```cpp  
 string u8string() const;
 ```  
   
@@ -588,7 +572,7 @@ string u8string() const;
   
 ## path::value_type  
   
-```  
+```cpp  
 #if _WIN32_C_LIB  
 typedef wchar_t value_type;  
 #else // assume Posix  
@@ -600,14 +584,14 @@ typedef char value_type;
   
 ## path::wstring  
   
-```  
+```cpp  
 wstring wstring() const;
 ```  
   
  Converts the sequence stored in mypath to the encoding favored by the host system for a wchar_t sequence and returns it stored in an object of type wstring.  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem
   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CREATESTRUCT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CREATESTRUCT structure"
+f1_keywords: ["CREATESTRUCT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CREATESTRUCT structure [MFC]"]
 ms.assetid: 028c7b5e-4fdc-48da-a550-d3e4f9e6cc85
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CREATESTRUCT Structure
 The `CREATESTRUCT` structure defines the initialization parameters passed to the window procedure of an application.  
@@ -88,10 +71,10 @@ typedef struct tagCREATESTRUCT {
  Points to a null-terminated string that specifies the new window's name.  
   
  `lpszClass`  
- Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure; for more information, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]).  
+ Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure; for more information, see the Windows SDK).  
   
  `dwExStyle`  
- Specifies the [extended style](../../mfc/reference/extended-window-styles.md) for the new window.  
+ Specifies the [extended style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) for the new window.  
   
 ## Requirements  
  **Header:** winuser.h  

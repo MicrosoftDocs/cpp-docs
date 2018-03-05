@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_mm_inserti_si64"
-  - "_mm_insert_si64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insertq instruction"
-  - "_mm_insert_si64 intrinsic"
-  - "_mm_inserti_si64 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_mm_inserti_si64", "_mm_insert_si64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insertq instruction", "_mm_insert_si64 intrinsic", "_mm_inserti_si64 intrinsic"]
 ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
 **Microsoft Specific**  
@@ -88,7 +67,7 @@ __m128i _mm_inserti_si64(
   
  In a call to _mm_insert_si64, the field length is contained in bits 77:72 of Source2 and the index in bits 69:64.  
   
- If you call `_mm_inserti_si64`with arguments that the compiler cannot determine to be integer constants, the compiler generates code to pack those values into an XMM register and to call `_mm_insert_si64`.  
+ If you call `_mm_inserti_si64` with arguments that the compiler cannot determine to be integer constants, the compiler generates code to pack those values into an XMM register and to call `_mm_insert_si64`.  
   
  To determine hardware support for the `insertq` instruction call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit will be 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `insertq` instruction, the results are unpredictable.  
   
@@ -136,7 +115,7 @@ result2 = 0xfffffffff3210fff
 result3 = 0xfffffffff3210fff  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "reference_wrapper"
-  - "std::reference_wrapper"
-  - "functional/std::reference_wrapper"
-  - "type_traits/std::reference_wrapper"
-  - "xrefwrap/std::reference_wrapper"
-  - "type_traits/std::reference_wrapper::get"
-  - "type_traits/std::reference_wrapper::operator()"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference_wrapper class"
-  - "reference_wrapper"
+ms.topic: "reference"
+f1_keywords: ["functional/std::reference_wrapper", "type_traits/std::reference_wrapper", "xrefwrap/std::reference_wrapper", "type_traits/std::reference_wrapper::get", "type_traits/std::reference_wrapper::operator()", "functional/std::reference_wrapper::result_type", "functional/std::reference_wrapper::type", "functional/std::reference_wrapper::get", "functional/std::reference_wrapper::operator()"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::reference_wrapper [C++]", "std::reference_wrapper [C++]", "std::reference_wrapper [C++], result_type", "std::reference_wrapper [C++], type", "std::reference_wrapper [C++], get"]
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # reference_wrapper Class
 Wraps a reference.  
@@ -71,33 +47,33 @@ A `reference_wrapper<Ty>` is a copy constructible and copy assignable wrapper ar
   
 The type `Ty` must be an object type or a function type, or a static assert fails at compile time.  
   
-The helper functions [std::ref](functional-functions.md#ref_function) and [std::cref](functional-functions.md#cref_function) can be used to create `reference_wrapper` objects.  
+The helper functions [std::ref](functional-functions.md#ref) and [std::cref](functional-functions.md#cref) can be used to create `reference_wrapper` objects.  
   
 ### Constructors  
   
 |||  
 |-|-|  
-|[reference_wrapper::reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|  
+|[reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[reference_wrapper::result_type](#result_type)|The weak result type of the wrapped reference.|  
-|[reference_wrapper::type](#type)|The type of the wrapped reference.|  
+|[result_type](#result_type)|The weak result type of the wrapped reference.|  
+|[type](#type)|The type of the wrapped reference.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[reference_wrapper::get](#get)|Obtains the wrapped reference.|  
+|[get](#get)|Obtains the wrapped reference.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[reference_wrapper::operator Ty&amp;](#operator_ty_amp_)|Gets a pointer to the wrapped reference.|  
-|[reference_wrapper::operator()](#operator_call)|Calls the wrapped reference.|  
+|[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|  
+|[reference_wrapper::operator()](#op_call)|Calls the wrapped reference.|  
 ## Requirements  
  **Header:** \<functional>  
   
@@ -140,7 +116,7 @@ rwi = 1
 i = -1  
 ```  
   
-##  <a name="operator_ty_amp_"></a>  reference_wrapper::operator Ty&amp;  
+##  <a name="op_ty_amp"></a>  reference_wrapper::operator Ty&amp;  
  Gets the wrapped reference.  
   
 ```  
@@ -174,7 +150,7 @@ i = 1
 (int)rwi = 1  
 ```  
   
-##  <a name="operator_call"></a>  reference_wrapper::operator()  
+##  <a name="op_call"></a>  reference_wrapper::operator()  
  Calls the wrapped reference.  
   
 ```  
@@ -343,6 +319,6 @@ rwi = 1
 ```  
   
 ## See Also  
- [cref Function](../standard-library/functional-functions.md#cref_function)   
- [ref Function](../standard-library/functional-functions.md#ref_function)
+ [cref](../standard-library/functional-functions.md#cref)   
+ [ref](../standard-library/functional-functions.md#ref)
 

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec(dllexport) keyword [C++]"
-  - "exporting DLLs [C++], method comparison"
-  - "def files [C++], exporting from DLLs"
-  - ".def files [C++], exporting from DLLs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec(dllexport) keyword [C++]", "exporting DLLs [C++], method comparison", "def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs"]
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Determining Which Exporting Method to Use
 You can export functions in either of two ways—a .def file or the `__declspec(dllexport)` keyword. To help you decide which way is better for your DLL, consider these questions:  
@@ -68,7 +49,7 @@ You can export functions in either of two ways—a .def file or the `__declspec(
   
 -   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ### What do you want to know more about?  
   

@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_lsearch_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_lsearch_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_lsearch_s"
-  - "lsearch_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linear searching"
-  - "values, searching for"
-  - "keys, finding in arrays"
-  - "arrays [CRT], searching"
-  - "searching, linear"
-  - "_lsearch_s function"
-  - "lsearch_s function"
+f1_keywords: ["_lsearch_s", "lsearch_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["linear searching", "values, searching for", "keys, finding in arrays", "arrays [CRT], searching", "searching, linear", "_lsearch_s function", "lsearch_s function"]
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _lsearch_s
 Performs a linear search for a value. A version of [_lsearch](../../c-runtime-library/reference/lsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -119,9 +83,6 @@ void *_lsearch_s(
 |`_lsearch_s`|\<search.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

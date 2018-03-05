@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wfopen_s"
-  - "fopen_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wfopen_s", "fopen_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fopen_s"
-  - "_tfopen_s"
-  - "_wfopen_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wfopen_s function"
-  - "opening files, for file I/O"
-  - "_tfopen_s function"
-  - "tfopen_s function"
-  - "wfopen_s function"
-  - "fopen_s function"
-  - "Unicode [C++], creating files"
-  - "Unicode [C++], writing files"
-  - "files [C++], opening"
-  - "Unicode [C++], files"
+f1_keywords: ["fopen_s", "_tfopen_s", "_wfopen_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wfopen_s function", "opening files, for file I/O", "_tfopen_s function", "tfopen_s function", "wfopen_s function", "fopen_s function", "Unicode [C++], creating files", "Unicode [C++], writing files", "files [C++], opening", "Unicode [C++], files"]
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
 caps.latest.revision: 41
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fopen_s, _wfopen_s
 Opens a file. These versions of [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -94,7 +53,7 @@ errno_t _wfopen_s(
   
 ### Error Conditions  
   
-|`pFile`|`filename`|`mode`|Return Value|Contents of`pFile`|  
+|`pFile`|`filename`|`mode`|Return Value|Contents of `pFile`|  
 |-------------|----------------|------------|------------------|------------------------|  
 |`NULL`|any|any|`EINVAL`|unchanged|  
 |any|`NULL`|any|`EINVAL`|unchanged|  
@@ -114,9 +73,9 @@ errno_t _wfopen_s(
 ## Unicode support  
  `fopen_s` supports Unicode file streams. To open a new or existing Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen_s`:  
   
- `fopen_s(&fp, "newfile.txt", "rw,`   `ccs=`  `encoding` `");`  
+ `fopen_s(&fp, "newfile.txt", "rw, ccs=`*encoding*`");`  
   
- Allowed values of `encoding` are `UNICODE`, `UTF-8`, and `UTF-16LE`. If there no value is specified for `encoding`, `fopen_s` uses ANSI encoding.  
+ Allowed values of *encoding* are `UNICODE`, `UTF-8`, and `UTF-16LE`. If there no value is specified for *encoding*, `fopen_s` uses ANSI encoding.  
   
  If the file already exists and is opened for reading or appending, the Byte Order Mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the `ccs` flag. The `ccs` encoding is only used when no BOM is present or if the file is a new file.  
   
@@ -135,7 +94,7 @@ errno_t _wfopen_s(
   
  Files that are opened for writing in Unicode mode have a BOM written to them automatically.  
   
- If `mode` is "`a, ccs=<encoding>`", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)  
+ If `mode` is "a, ccs=*encoding*", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)  
   
 ### Generic-Text Routine Mappings  
   
@@ -174,7 +133,7 @@ errno_t _wfopen_s(
  `t`  
  Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with `"a+"`, `fopen_s` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z, may cause `fseek` to behave improperly near the end of the file.  
   
- Also, in text mode, carriage return–linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return–linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).  
+ Also, in text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).  
   
  `b`  
  Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.  

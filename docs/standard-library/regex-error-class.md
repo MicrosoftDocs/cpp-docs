@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "regex_error"
-  - "std::regex_error"
-  - "regex/std::regex_error"
-  - "std::regex_error::code"
-  - "regex/std::regex_error::code"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regex_error class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::regex_error", "regex/std::regex_error::code"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["regex_error class"]
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # regex_error Class
 Reports a bad basic_regex object.  
@@ -63,7 +42,7 @@ public:
   
  **Namespace:** std  
   
-##  <a name="regex_error__code"></a>  regex_error::code  
+##  <a name="code"></a>  regex_error::code  
  Returns the error code.  
   
 ```  
@@ -110,7 +89,7 @@ int main()
 regex error: unbalanced parentheses  
 ```  
   
-##  <a name="regex_error__regex_error"></a>  regex_error::regex_error  
+##  <a name="regex_error"></a>  regex_error::regex_error  
  Constructs the object.  
   
 ```  

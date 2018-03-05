@@ -4,87 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_utime64"
-  - "_utime"
-  - "_wutime"
-  - "_wutime64"
-  - "_wutime32"
-  - "_utime32"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tutime"
-  - "_utime64"
-  - "wutime"
-  - "utime32"
-  - "wutime64"
-  - "_utime"
-  - "wutime32"
-  - "_wutime"
-  - "utime"
-  - "utime64"
-  - "_wutime64"
-  - "_utime32"
-  - "_tutime64"
-  - "_wutime32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tutime function"
-  - "utime32 function"
-  - "utime64 function"
-  - "_utime function"
-  - "_tutime32 function"
-  - "time [C++], file modification"
-  - "wutime function"
-  - "_wutime function"
-  - "_wutime32 function"
-  - "_tutime64 function"
-  - "_tutime function"
-  - "files [C++], modification time"
-  - "_wutime64 function"
-  - "_utime32 function"
-  - "utime function"
-  - "_utime64 function"
-  - "wutime64 function"
-  - "wutime32 function"
-  - "tutime64 function"
-  - "tutime32 function"
+f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", "wutime32", "_wutime", "utime", "utime64", "_wutime64", "_utime32", "_tutime64", "_wutime32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tutime function", "utime32 function", "utime64 function", "_utime function", "_tutime32 function", "time [C++], file modification", "wutime function", "_wutime function", "_wutime32 function", "_tutime64 function", "_tutime function", "files [C++], modification time", "_wutime64 function", "_utime32 function", "utime function", "_utime64 function", "wutime64 function", "wutime32 function", "tutime64 function", "tutime32 function"]
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 Set the file modification time.  
@@ -126,7 +60,7 @@ int _wutime64(
  Pointer to stored time values.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-modification time was changed. A return value of –1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
+ Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
   
  `EACCES`  
  Path specifies directory or read-only file  
@@ -248,9 +182,6 @@ File time modified
                1 File(s)            935 bytes  
                0 Dir(s)  20,742,955,008 bytes free  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

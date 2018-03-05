@@ -5,14 +5,9 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "tuple/std::operator!="
-  - "tuple/std::operator>"
-  - "tuple/std::operator>="
-  - "tuple/std::operator<"
-  - "tuple/std::operator<="
-  - "tuple/std::operator=="
+ms.topic: "reference"
+f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 caps.latest.revision: 13
 manager: "ghogen"
@@ -20,10 +15,10 @@ manager: "ghogen"
 # &lt;tuple&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Compare `tuple` objects for inequality.  
   
 ```  
@@ -85,7 +80,7 @@ false
 true  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Compare `tuple` objects for less.  
   
 ```  
@@ -147,7 +142,7 @@ false
 true  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Compare `tuple` objects for less or equal.  
   
 ```  
@@ -209,7 +204,7 @@ true
 false  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Compare `tuple` objects for equality.  
   
 ```  
@@ -271,7 +266,7 @@ true
 false  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Compare `tuple` objects for greater.  
   
 ```  
@@ -333,7 +328,7 @@ false
 true  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Compare `tuple` objects for greater or equal.  
   
 ```  

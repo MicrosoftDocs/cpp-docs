@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "move constructor"
+dev_langs: ["C++"]
+helpviewer_keywords: ["move constructor"]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Move Constructors and Move Assignment Operators (C++)
 This topic describes how to write a *move constructor* and a move assignment operator for a C++ class. A move constructor enables you to implement move semantics, which can significantly improve the performance of your applications. For more information about move semantics, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
@@ -237,7 +221,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 ```  
   
 ## Example  
- The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. In [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.  
+ The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. In Visual C++ 2010, the `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.  
   
 ```cpp  
 // rvalue-references-move-semantics.cpp  
@@ -282,7 +266,7 @@ In ~MemoryBlock(). length = 50. Deleting resource.
 In ~MemoryBlock(). length = 75. Deleting resource.  
 ```  
   
- Before [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], this example produces the following output:  
+ Before Visual C++ 2010, this example produces the following output:  
   
 ```  
 In MemoryBlock(size_t). length = 25.  

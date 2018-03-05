@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CToolBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows toolbar common controls [C++]"
-  - "control bars [C++], CToolBar class"
-  - "toolbars [C++], CToolBar class"
-  - "buttons [C++], MFC toolbars"
-  - "bitmaps [C++], button controls"
-  - "CToolBar class"
-  - "Windows common controls [C++], CToolBar class"
+f1_keywords: ["CToolBar", "AFXEXT/CToolBar", "AFXEXT/CToolBar::CToolBar", "AFXEXT/CToolBar::CommandToIndex", "AFXEXT/CToolBar::Create", "AFXEXT/CToolBar::CreateEx", "AFXEXT/CToolBar::GetButtonInfo", "AFXEXT/CToolBar::GetButtonStyle", "AFXEXT/CToolBar::GetButtonText", "AFXEXT/CToolBar::GetItemID", "AFXEXT/CToolBar::GetItemRect", "AFXEXT/CToolBar::GetToolBarCtrl", "AFXEXT/CToolBar::LoadBitmap", "AFXEXT/CToolBar::LoadToolBar", "AFXEXT/CToolBar::SetBitmap", "AFXEXT/CToolBar::SetButtonInfo", "AFXEXT/CToolBar::SetButtons", "AFXEXT/CToolBar::SetButtonStyle", "AFXEXT/CToolBar::SetButtonText", "AFXEXT/CToolBar::SetHeight", "AFXEXT/CToolBar::SetSizes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CToolBar [MFC], CToolBar", "CToolBar [MFC], CommandToIndex", "CToolBar [MFC], Create", "CToolBar [MFC], CreateEx", "CToolBar [MFC], GetButtonInfo", "CToolBar [MFC], GetButtonStyle", "CToolBar [MFC], GetButtonText", "CToolBar [MFC], GetItemID", "CToolBar [MFC], GetItemRect", "CToolBar [MFC], GetToolBarCtrl", "CToolBar [MFC], LoadBitmap", "CToolBar [MFC], LoadToolBar", "CToolBar [MFC], SetBitmap", "CToolBar [MFC], SetButtonInfo", "CToolBar [MFC], SetButtons", "CToolBar [MFC], SetButtonStyle", "CToolBar [MFC], SetButtonText", "CToolBar [MFC], SetHeight", "CToolBar [MFC], SetSizes"]
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CToolBar Class
 Control bars that have a row of bitmapped buttons and optional separators.  
@@ -83,7 +60,7 @@ class CToolBar : public CControlBar
 ## Remarks  
  The buttons can act like pushbuttons, check-box buttons, or radio buttons. `CToolBar` objects are usually embedded members of frame-window objects derived from the class [CFrameWnd](../../mfc/reference/cframewnd-class.md) or [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md).  
   
- [CToolBar::GetToolBarCtrl](#gettoolbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for toolbar customization and additional functionality. `CToolBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetToolBarCtrl`, you can give your toolbars even more of the characteristics of Windows 95/98 toolbars. When you call `GetToolBarCtrl`, it will return a reference to a `CToolBarCtrl` object. See [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [CToolBar::GetToolBarCtrl](#gettoolbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for toolbar customization and additional functionality. `CToolBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetToolBarCtrl`, you can give your toolbars even more of the characteristics of Windows 95/98 toolbars. When you call `GetToolBarCtrl`, it will return a reference to a `CToolBarCtrl` object. See [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
   
  Visual C++ provides you with two methods to create a toolbar. To create a toolbar resource using the Resource Editor, follow these steps:  
   
@@ -156,7 +133,7 @@ int CommandToIndex(UINT nIDFind) const;
  Command ID of a toolbar button.  
   
 ### Return Value  
- The index of the button, or –1 if no button has the given command ID.  
+ The index of the button, or -1 if no button has the given command ID.  
   
 ##  <a name="create"></a>  CToolBar::Create  
  This member function creates a Windows toolbar (a child window) and associates it with the `CToolBar` object.  
@@ -229,7 +206,7 @@ virtual BOOL CreateEx(
  Additional styles for the creation of the embedded [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) object. By default, this value is set to **TBSTYLE_FLAT**. For a complete list of toolbar styles, see `dwStyle`.  
   
  `dwStyle`  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of appropriate styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for a list of appropriate styles.  
   
  *rcBorders*  
  A [CRect](../../atl-mfc-shared/reference/crect-class.md) object that defines the widths of the toolbar window borders. These borders are set to 0,0,0,0 by default, thereby resulting in a toolbar window with no borders.  
@@ -382,7 +359,7 @@ CToolBarCtrl& GetToolBarCtrl() const;
 ### Remarks  
  Use `GetToolBarCtrl` to take advantage of the functionality of the Windows toolbar common control, and to take advantage of the support [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) provides for toolbar customization.  
   
- For more information about using common controls, see the article [Controls](../../mfc/controls-mfc.md) and [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using common controls, see the article [Controls](../../mfc/controls-mfc.md) and [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/cpp/ctoolbar-class_3.cpp)]  
@@ -392,7 +369,8 @@ CToolBarCtrl& GetToolBarCtrl() const;
   
 ```  
 BOOL LoadBitmap(LPCTSTR lpszResourceName);  
-BOOL LoadBitmap(UINT nIDResource);```  
+BOOL LoadBitmap(UINT nIDResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -415,7 +393,8 @@ BOOL LoadBitmap(UINT nIDResource);```
   
 ```  
 BOOL LoadToolBar(LPCTSTR lpszResourceName);  
-BOOL LoadToolBar(UINT nIDResource);```  
+BOOL LoadToolBar(UINT nIDResource);
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -494,7 +473,7 @@ void SetButtonInfo(
  For separators, which have the style **TBBS_SEPARATOR**, this function sets the separator's width in pixels to the value stored in `iImage`.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
  For information on bitmap images and buttons, see the [CToolBar](../../mfc/reference/ctoolbar-class.md) Overview and [CToolBar::LoadBitmap](#loadbitmap).  
   
@@ -562,7 +541,7 @@ void SetButtonStyle(
  Before calling `SetButtonStyle`, call the [GetButtonStyle](#getbuttonstyle) member function to retrieve the button or separator style.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](http://msdn.microsoft.com/library/c4de3c21-2d2e-4b89-a4ce-d0c0e2d9edc4) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
 ##  <a name="setbuttontext"></a>  CToolBar::SetButtonText  
  Call this function to set the text on a button.  

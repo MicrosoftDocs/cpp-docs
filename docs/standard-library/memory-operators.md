@@ -5,29 +5,24 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "memory/std::operator!="
-  - "memory/std::operator>"
-  - "memory/std::operator>="
-  - "memory/std::operator<"
-  - "memory/std::operator<="
-  - "memory/std::operator<<"
-  - "memory/std::operator=="
+ms.topic: "reference"
+f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;&lt;](#operator_lt__lt_)|[operator&lt;=](#operator_lt__eq)|  
-|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|  
+|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests for inequality between objects.  
   
 ```  
@@ -48,10 +43,10 @@ bool operator!=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be tested for inequality.  
   
- ` right`  
+ `right`  
  One of the objects to be tested for inequality.  
   
  `Ty1`  
@@ -66,7 +61,7 @@ bool operator!=(
 ### Remarks  
  The first template operator returns false. (All default allocators are equal.)  
   
- The second and third template operators return `!(`` left` `==` ` right``)`.  
+ The second and third template operators return `!(left == right)`.  
   
 ### Example  
   
@@ -125,7 +120,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests for equality between objects.  
   
 ```  
@@ -146,10 +141,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be tested for equality.  
   
- ` right`  
+ `right`  
  One of the objects to be tested for equality.  
   
  `Ty1`  
@@ -234,7 +229,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests for one object being greater than or equal to a second object.  
   
 ```  
@@ -250,10 +245,10 @@ bool operator>=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -263,9 +258,9 @@ bool operator>=(
  The type controlled by the right shared pointer.  
   
 ### Remarks  
- The template operators return ` left``.get() >=` ` right``.get()`.  
+ The template operators return `left.get() >= right.get()`.  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests for one object being less than a second object.  
   
 ```  
@@ -281,10 +276,10 @@ bool operator<(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -293,7 +288,7 @@ bool operator<(
  `Ty2`  
  The type controlled by the right pointer.  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests for one object being less than or equal to a second object.  
   
 ```  
@@ -309,10 +304,10 @@ bool operator<=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -322,9 +317,9 @@ bool operator<=(
  The type controlled by the right shared pointer.  
   
 ### Remarks  
- The template operators return ` left``.get() <=` ` right``.get()`  
+ The template operators return `left.get() <= right.get()`  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests for one object being greater than a second object.  
   
 ```  
@@ -340,10 +335,10 @@ bool operator>(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -352,7 +347,7 @@ bool operator>(
  `Ty2`  
  The type controlled by the right shared pointer.  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
 Writes the shared pointer to the stream.  
   
 ```  

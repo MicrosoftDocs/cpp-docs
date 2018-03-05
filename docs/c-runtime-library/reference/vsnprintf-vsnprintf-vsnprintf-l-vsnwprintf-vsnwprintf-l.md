@@ -4,81 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vsnprintf"
-  - "_vsnprintf_l"
-  - "_vsnwprintf"
-  - "_vsnwprintf_l"
-  - "_vsnprintf"
-  - "_vsnprintf;"
-  - "vsnprintf; _vsnprintf"
-  - "_vsnwprintf;"
-  - "_vsnprintf_l;"
-  - "_vsnwprintf_l;"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntoskrnl.exe"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnprintf", "_vsnprintf;", "vsnprintf; _vsnprintf", "_vsnwprintf;", "_vsnprintf_l;", "_vsnwprintf_l;"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_vsnprintf"
-  - "_vsnwprintf"
-  - "_vsntprintf"
-  - "vsnprintf"
-  - "stdio/vsnprintf"
-  - "stdio/_vsnprintf"
-  - "stdio/_vsnprintf_l"
-  - "stdio/_vsnwprintf"
-  - "stdio/_vsnwprintf_l"
-  - "_vsnprintf_l"
-  - "_vsnwprintf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vsntprintf function"
-  - "_vsnwprintf_l function"
-  - "vsnwprintf_l function"
-  - "vsntprintf_l function"
-  - "_vsntprintf function"
-  - "_vsnprintf_l function"
-  - "vsnprintf function"
-  - "_vsntprintf_l function"
-  - "vsnprintf_l function"
-  - "_vsnwprintf function"
-  - "_vsnprintf function"
-  - "formatted text [C++]"
-  - "vsnwprintf function"
+f1_keywords: ["_vsnprintf", "_vsnwprintf", "_vsntprintf", "vsnprintf", "stdio/vsnprintf", "stdio/_vsnprintf", "stdio/_vsnprintf_l", "stdio/_vsnwprintf", "stdio/_vsnwprintf_l", "_vsnprintf_l", "_vsnwprintf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vsntprintf function", "_vsnwprintf_l function", "vsnwprintf_l function", "vsntprintf_l function", "_vsntprintf function", "_vsnprintf_l function", "vsnprintf function", "_vsntprintf_l function", "vsnprintf_l function", "_vsnwprintf function", "_vsnprintf function", "formatted text [C++]", "vsnwprintf function"]
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
 caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).  

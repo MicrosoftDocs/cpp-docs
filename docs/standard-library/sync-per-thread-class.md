@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext::sync_per_thread"
-  - "sync_per_thread"
-  - "allocators/stdext::sync_per_thread"
-  - "stdext.sync_per_thread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sync_per_thread class"
+ms.topic: "reference"
+f1_keywords: ["allocators/stdext::sync_per_thread", "allocators/stdext::sync_per_thread::allocate", "allocators/stdext::sync_per_thread::deallocate", "allocators/stdext::sync_per_thread::equals"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::sync_per_thread", "stdext::sync_per_thread [C++], allocate", "stdext::sync_per_thread [C++], deallocate", "stdext::sync_per_thread [C++], equals"]
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # sync_per_thread Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each thread.  
@@ -60,16 +40,16 @@ class sync_per_thread
   
 |||  
 |-|-|  
-|[allocate](#sync_per_thread__allocate)|Allocates a block of memory.|  
-|[deallocate](#sync_per_thread__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
-|[equals](#sync_per_thread__equals)|Compares two caches for equality.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_per_thread__allocate"></a>  sync_per_thread::allocate  
+##  <a name="allocate"></a>  sync_per_thread::allocate  
  Allocates a block of memory.  
   
 ```
@@ -85,7 +65,7 @@ void *allocate(std::size_t count);
 ### Remarks  
  The member function returns the result of a call to `cache::allocate(count)` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.  
   
-##  <a name="sync_per_thread__deallocate"></a>  sync_per_thread::deallocate  
+##  <a name="deallocate"></a>  sync_per_thread::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```
@@ -102,7 +82,7 @@ void deallocate(void* ptr, std::size_t count);
 ### Remarks  
  The member function calls `deallocate` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.  
   
-##  <a name="sync_per_thread__equals"></a>  sync_per_thread::equals  
+##  <a name="equals"></a>  sync_per_thread::equals  
  Compares two caches for equality.  
   
 ```

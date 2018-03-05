@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::<fstream>"
-  - "<fstream>"
-  - "std.<fstream>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fstream header"
+ms.topic: "reference"
+f1_keywords: ["<fstream>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fstream header"]
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;fstream&gt;
 Defines several classes that support iostreams operations on sequences stored in external files.  

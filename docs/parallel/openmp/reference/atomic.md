@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "atomic"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "atomic OpenMP directive"
+ms.topic: "reference"
+f1_keywords: ["atomic"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["atomic OpenMP directive"]
 ms.assetid: 275e0338-cf2f-4525-97b5-696250000df7
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # atomic
 Specifies that a memory location that will be updated atomically.  

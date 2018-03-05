@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Type Conversions and Type Safety (Modern C++)
 This document identifies common type conversion problems and describes how you can avoid them in your C++ code.  
@@ -89,7 +74,7 @@ cout << "unsigned val = " << num << " signed val = " << num2 << endl;
   
 ```  
   
- Notice that values are reinterpreted in both directions. If your program produces odd results in which the sign of the value seems inverted from what you expect, look for implicit conversions between signed and unsigned integral types. In the following example, the result of the expression ( 0 – 1) is implicitly converted from `int` to `unsigned int` when it's stored in `num`. This causes the bit pattern to be reinterpreted.  
+ Notice that values are reinterpreted in both directions. If your program produces odd results in which the sign of the value seems inverted from what you expect, look for implicit conversions between signed and unsigned integral types. In the following example, the result of the expression ( 0 - 1) is implicitly converted from `int` to `unsigned int` when it's stored in `num`. This causes the bit pattern to be reinterpreted.  
   
 ```cpp  
 unsigned int u3 = 0 - 1;  

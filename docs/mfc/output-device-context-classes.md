@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.output"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "device contexts, classes"
-  - "screen output classes"
-  - "printing classes"
-  - "window drawing classes"
-  - "painting classes"
-  - "output classes"
+f1_keywords: ["vc.classes.output"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["device contexts [MFC], classes", "screen output classes [MFC]", "printing classes [MFC]", "window drawing classes [MFC]", "painting classes [MFC]", "output classes [MFC]"]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Output (Device Context) Classes
 These classes encapsulate the different types of device contexts available in Windows.  

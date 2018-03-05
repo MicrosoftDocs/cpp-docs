@@ -4,42 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cmyprovidersession"
-  - "myprovidersess.h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMyProviderSession class in MyProviderSess.H"
-  - "OLE DB providers, wizard-generated files"
+ms.topic: "reference"
+f1_keywords: ["cmyprovidersession", "myprovidersess.h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMyProviderSession class in MyProviderSess.H", "OLE DB providers, wizard-generated files"]
 ms.assetid: d37ad471-cf05-49c5-aa47-cd10824d777f
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderSession (MyProviderSess.H)
 MyProviderSess.H contains the declaration and implementation for the OLE DB session object. The data source object creates the session object and represents a conversation between a consumer and provider. Several simultaneous sessions can be open for one data source. The inheritance list for `CMyProviderSession` follows:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CMyProviderSession  
 class ATL_NO_VTABLE CMyProviderSession :   

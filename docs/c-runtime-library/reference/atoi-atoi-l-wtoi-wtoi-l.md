@@ -4,70 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wtoi"
-  - "_wtoi_l"
-  - "atoi"
-  - "_atoi_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wtoi", "_wtoi_l", "atoi", "_atoi_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tstoi"
-  - "_wtoi"
-  - "_ttoi"
-  - "atoi"
-  - "_atoi_l"
-  - "_wtoi_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_atoi_l function"
-  - "ttoi function"
-  - "atoi_l function"
-  - "string conversion, to integers"
-  - "_wtoi function"
-  - "wtoi_l function"
-  - "tstoi function"
-  - "_ttoi function"
-  - "_tstoi function"
-  - "_wtoi_l function"
-  - "atoi function"
-  - "wtoi function"
+f1_keywords: ["_tstoi", "_wtoi", "_ttoi", "atoi", "_atoi_l", "_wtoi_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_atoi_l function", "ttoi function", "atoi_l function", "string conversion, to integers", "_wtoi function", "wtoi_l function", "tstoi function", "_ttoi function", "_tstoi function", "_wtoi_l function", "atoi function", "wtoi function"]
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # atoi, _atoi_l, _wtoi, _wtoi_l
 Convert a string to integer.  
@@ -106,11 +57,11 @@ int _wtoi_l(
 ## Remarks  
  These functions convert a character string to an integer value (`atoi` and `_wtoi`). The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character may be the null character ('\0' or L'\0') terminating the string.  
   
- The `str` argument to `atoi`and `_wtoi` has the following form:  
+ The `str` argument to `atoi` and `_wtoi` has the following form:  
   
  [`whitespace`] [`sign`] [`digits`]]  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -174,12 +125,6 @@ Function: atoi( "31412764" ) = 31412764
 Function: atoi( "3336402735171707160320" ) = 2147483647  
 Overflow condition occurred.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt32](https://msdn.microsoft.com/en-us/library/system.convert.toint32.aspx)  
-  
--   [System::Convert::ToUInt32](https://msdn.microsoft.com/en-us/library/system.convert.touint32.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

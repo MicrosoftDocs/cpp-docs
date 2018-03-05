@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CommandHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CommandHandler function"
+ms.topic: "reference"
+f1_keywords: ["CommandHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CommandHandler function"]
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CommandHandler
 `CommandHandler` is the function identified by the third parameter of the `COMMAND_HANDLER` macro in your message map.  
@@ -67,7 +50,7 @@ translation.priority.ht:
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [COMMAND_HANDLER](http://msdn.microsoft.com/library/7b53ffe3-be95-43f7-a21a-dc9516a19f2a).  
+ For an example of using this message handler in a message map, see [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

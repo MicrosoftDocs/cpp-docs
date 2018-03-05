@@ -4,46 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDispEventSimpleImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDispEventSimpleImpl class, using"
+f1_keywords: ["IDispEventSimpleImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDispEventSimpleImpl class, using"]
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using IDispEventSimpleImpl
 When using `IDispEventSimpleImpl` to handle events, you will need to:  
   
 -   Derive your class from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md).  
   
--   Add an [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) to your class.  
+-   Add an event sink map to your class.  
   
 -   Define [_ATL_FUNC_INFO](../atl/reference/atl-func-info-structure.md) structures describing the events.  
   
--   Add entries to the event sink map using the [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro.  
+-   Add entries to the event sink map using the [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) macro.  
   
 -   Implement the methods that you're interested in handling.  
   

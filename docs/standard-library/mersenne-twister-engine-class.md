@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "mersenne_twister_engine"
-  - "std::mersenne_twister_engine"
-  - "random/std::mersenne_twister_engine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mersenne_twister_engine class"
+ms.topic: "reference"
+f1_keywords: ["random/std::mersenne_twister_engine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mersenne_twister_engine class"]
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # mersenne_twister_engine Class
 Generates a high quality random sequence of integers based on the Mersenne twister algorithm.  
@@ -89,7 +70,7 @@ class mersenne_twister_engine;
  For more information about engine members, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts `W` bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N``W`-bit values used if `operator()` has been called at least `N` times, otherwise the `M``W`-bit values that have been used and the last `N - M` values of the seed.  
+ This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts `W` bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N` `W`-bit values used if `operator()` has been called at least `N` times, otherwise the `M` `W`-bit values that have been used and the last `N - M` values of the seed.  
   
  The generator twists the large value that it holds by using a twisted generalized feedback shift register defined by shift values `N` and `M`, a twist value `R`, and a conditional XOR-mask `A`. Additionally, the bits of the raw shift register are scrambled (tempered) according to a bit-scrambling matrix defined by values `U`, `D`, `S`, `B`, `T`, `C`, and `L`.  
   
@@ -119,7 +100,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
     43, 6364136223846793005ULL> mt19937_64;  
 ```  
   
- For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/LinkId=402356).  
+ For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/p/?linkid=402356).  
   
 ## Example  
  For a code example, see [\<random>](../standard-library/random.md).  

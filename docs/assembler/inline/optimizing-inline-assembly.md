@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "storage, optimizing in inline assembly"
-  - "optimization, inline assembly"
-  - "inline assembly, optimizing"
-  - "optimizing performance, inline assembly"
-  - "__asm keyword [C++], optimizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["storage, optimizing in inline assembly", "optimization, inline assembly", "inline assembly, optimizing", "optimizing performance, inline assembly", "__asm keyword [C++], optimizing"]
 ms.assetid: 52a7ec83-9782-4d96-94c1-53bb2ac9e8c8
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Optimizing Inline Assembly
 ## Microsoft Specific  

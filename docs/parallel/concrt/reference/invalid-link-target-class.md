@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::invalid_link_target"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "invalid_link_target class"
+ms.topic: "reference"
+f1_keywords: ["invalid_link_target", "CONCRT/concurrency::invalid_link_target", "CONCRT/concurrency::invalid_link_target::invalid_link_target"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["invalid_link_target class"]
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # invalid_link_target Class
 This class describes an exception thrown when the `link_target` method of a messaging block is called and the messaging block is unable to link to the target. This can be the result of exceeding the number of links the messaging block is allowed or attempting to link a specific target twice to the same source.  
@@ -49,7 +32,7 @@ class invalid_link_target : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[invalid_link_target Constructor](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
+|[invalid_link_target](#ctor)|Overloaded. Constructs an `invalid_link_target` object.|  
   
 ## Inheritance Hierarchy  
  `exception`  

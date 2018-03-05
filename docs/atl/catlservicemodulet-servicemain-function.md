@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ServiceMain"
-  - "CServiceModule::ServiceMain"
-  - "CServiceModule.ServiceMain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ServiceMain method"
+f1_keywords: ["ServiceMain", "CServiceModule::ServiceMain", "CServiceModule.ServiceMain"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ServiceMain method"]
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::ServiceMain Function
 The service control manager (SCM) calls `ServiceMain` when you open the Services Control Panel application, select the service, and click **Start**.  

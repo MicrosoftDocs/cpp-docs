@@ -5,19 +5,22 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["xutility/std::operator!=", "xutility/std::operator&gt;", "xutility/std::operator&gt;=", "xutility/std::operator&lt;", "xutility/std::operator&lt;=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
 caps.latest.revision: 10
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (iterator)", "std::operator&gt; (iterator)", "std::operator&gt;= (iterator)", "std::operator&lt; (iterator)", "std::operator&lt;= (iterator), std::operator== (iterator)"]
 ---
 # &lt;iterator&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator+](#operator_add)|  
-|[operator-](#operator-)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|  
+|[operator-](#operator-)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.  
   
 ```  
@@ -32,10 +35,10 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **iterator**.  
   
- ` right`  
+ `right`  
  An object of type **iterator**.  
   
 ### Return Value  
@@ -106,7 +109,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.  
   
 ```  
@@ -132,10 +135,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type iterator.  
   
- ` right`  
+ `right`  
  An object of type iterator.  
   
 ### Return Value  
@@ -144,7 +147,7 @@ bool operator==(
 ### Remarks  
  One iterator object is equal to another if they address the same elements in a container. If two iterators point to different elements in a container, then they are not equal.  
   
- The first two template operators return true only if both ` left` and ` right` store the same iterator. The third template operator returns true only if both ` left` and ` right` store the same stream pointer. The fourth template operator returns ` left.equal ( right)`.  
+ The first two template operators return true only if both `left` and `right` store the same iterator. The third template operator returns true only if both `left` and `right` store the same stream pointer. The fourth template operator returns ` left.equal ( right)`.  
   
 ### Example  
   
@@ -208,7 +211,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.  
   
 ```  
@@ -217,10 +220,10 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **iterator**.  
   
- ` right`  
+ `right`  
  An object of type **iterator**.  
   
 ### Return Value  
@@ -295,7 +298,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.  
   
 ```  
@@ -304,10 +307,10 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type iterator.  
   
- ` right`  
+ `right`  
  An object of type iterator.  
   
 ### Return Value  
@@ -386,7 +389,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.  
   
 ```  
@@ -395,10 +398,10 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type iterator.  
   
- ` right`  
+ `right`  
  An object of type iterator.  
   
 ### Return Value  
@@ -471,7 +474,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.  
   
 ```  
@@ -480,10 +483,10 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type iterator.  
   
- ` right`  
+ `right`  
  An object of type iterator.  
   
 ### Return Value  
@@ -562,7 +565,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_add"></a>  operator+  
+##  <a name="op_add"></a>  operator+  
  Adds an offset to an iterator and returns a `move_iterator` or a `reverse_iterator` addressing the inserted element at the new offset position.  
   
 ```  
@@ -583,11 +586,11 @@ operator+(
  `_Off`  
  The number of positions the const move_iterator or const reverse_iterator is to be offset.  
   
- ` right`  
+ `right`  
  The iterator to be offset.  
   
 ### Return Value  
- Returns the sum ` right` + `_Off`.  
+ Returns the sum `right` + `_Off`.  
   
 ### Example  
   
@@ -654,19 +657,19 @@ Tdiff operator-(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An iterator.  
   
- ` right`  
+ `right`  
  An iterator.  
   
 ### Return Value  
  The difference between two iterators `.`  
   
 ### Remarks  
- The first template operator returns ` left.base() -  right.base()`.  
+ The first template operator returns `left.base() - right.base()`.  
   
- The second template operator returns ` right.current -  left.current`.  
+ The second template operator returns `right.current - left.current`.  
   
  `Tdiff` is determined by the type of the returned expression. Otherwise, it is `RandomIterator1::difference_type`.  
   

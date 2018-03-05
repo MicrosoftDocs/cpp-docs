@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleStreamFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data streams [C++]"
-  - "streams [C++], OLE"
-  - "data streams [C++], OLE"
-  - "structured storage in OLE"
-  - "OLE structured storage [C++]"
-  - "OLE [C++], streams of data"
-  - "COleStreamFile class"
+f1_keywords: ["COleStreamFile", "AFXOLE/COleStreamFile", "AFXOLE/COleStreamFile::COleStreamFile", "AFXOLE/COleStreamFile::Attach", "AFXOLE/COleStreamFile::CreateMemoryStream", "AFXOLE/COleStreamFile::CreateStream", "AFXOLE/COleStreamFile::Detach", "AFXOLE/COleStreamFile::GetStream", "AFXOLE/COleStreamFile::OpenStream"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleStreamFile [MFC], COleStreamFile", "COleStreamFile [MFC], Attach", "COleStreamFile [MFC], CreateMemoryStream", "COleStreamFile [MFC], CreateStream", "COleStreamFile [MFC], Detach", "COleStreamFile [MFC], GetStream", "COleStreamFile [MFC], OpenStream"]
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleStreamFile Class
 Represents a stream of data ( `IStream`) in a compound file as part of OLE Structured Storage.  
@@ -75,7 +52,7 @@ class COleStreamFile : public CFile
   
  For more information about manipulating streams and storages, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..  
   
- For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) and [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) and [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -101,7 +78,7 @@ void Attach(LPSTREAM lpStream);
 ### Remarks  
  The object must not already be associated with an OLE stream.  
   
- For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
   
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
  Creates a `COleStreamFile` object.  
@@ -117,7 +94,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 ### Remarks  
  If `lpStream` is **NULL**, the object is not associated with an OLE stream, otherwise, the object is associated with the supplied OLE stream.  
   
- For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
   
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
  Safely creates a new stream out of global, shared memory where a failure is a normal, expected condition.  
@@ -136,7 +113,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 ### Remarks  
  The memory is allocated by the OLE subsystem.  
   
- For more information, see [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) in the Windows SDK.  
   
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream  
  Safely creates a new stream in the supplied storage object where a failure is a normal, expected condition.  
@@ -168,7 +145,7 @@ BOOL CreateStream(
 ### Remarks  
  A file exception will be thrown if the open fails and `pError` is not **NULL**.  
   
- For more information, see [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) in the Windows SDK.  
   
 ##  <a name="detach"></a>  COleStreamFile::Detach  
  Disassociates the stream from the object without closing the stream.  
@@ -183,7 +160,7 @@ LPSTREAM Detach();
 ### Remarks  
  The stream must be closed in some other fashion before the program terminates.  
   
- For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
   
 ##  <a name="getstream"></a>  COleStreamFile::GetStream  
  Call this function to return a pointer to current stream.  
@@ -225,7 +202,7 @@ BOOL OpenStream(
 ### Remarks  
  A file exception will be thrown if the open fails and `pError` is not **NULL**.  
   
- For more information, see [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) in the Windows SDK.  
   
 ## See Also  
  [CFile Class](../../mfc/reference/cfile-class.md)   

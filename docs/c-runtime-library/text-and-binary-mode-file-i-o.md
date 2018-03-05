@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.io"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], open functions"
-  - "I/O [CRT], text files"
-  - "functions [CRT], file access"
-  - "binary access, binary mode file I/O"
-  - "translation, modes"
-  - "I/O [CRT], binary"
-  - "text files, I/O"
-  - "I/O [CRT], translation modes"
-  - "translation modes (file I/O)"
-  - "binary access"
+f1_keywords: ["c.io"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++], open functions", "I/O [CRT], text files", "functions [CRT], file access", "binary access, binary mode file I/O", "translation, modes", "I/O [CRT], binary", "text files, I/O", "I/O [CRT], translation modes", "translation modes (file I/O)", "binary access"]
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Text and Binary Mode File I/O
 File I/O operations take place in one of two translation modes, text or binary, depending on the mode in which the file is opened. Data files are usually processed in text mode. To control the file translation mode, one can:  

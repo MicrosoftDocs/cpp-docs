@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "declarators, pointers"
-  - "declarations, pointers"
-  - "pointers"
-  - "pointers, declarations"
+dev_langs: ["C++"]
+helpviewer_keywords: ["declarators, pointers", "declarations, pointers", "pointers [C++]", "pointers, declarations"]
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Pointers (C++)
 Pointers are declared using the following sequence.  
@@ -81,8 +62,6 @@ Pointers are declared using the following sequence.
 ```  
 * identifier [ [ constant-expression ] ]  
 ```  
-  
--   However, pointer declarators can be more complex. For more information,see [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838).  
   
 -   Multiple declarators and their initializers may appear together in a single declaration in a comma separated list following the declaration specifier.  
   

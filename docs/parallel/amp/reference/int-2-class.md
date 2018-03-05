@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::int_2::y"
-  - "amp_short_vectors/Concurrency::graphics::int_2::set_x"
-  - "amp_short_vectors/Concurrency::graphics::int_2::set_y"
-  - "amp_short_vectors/Concurrency::graphics::int_2::get_yx"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator++"
-  - "amp_short_vectors/Concurrency::graphics::int_2::x"
-  - "amp_short_vectors/Concurrency::graphics::int_2::set_yx"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator/="
-  - "amp_short_vectors/Concurrency::graphics::int_2::get_y"
-  - "amp_short_vectors/Concurrency::graphics::int_2::gr"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator*="
-  - "amp_short_vectors/Concurrency::graphics::int_2::r"
-  - "amp_short_vectors/Concurrency::graphics::int_2::get_xy"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator="
-  - "amp_short_vectors/Concurrency::graphics::int_2::g"
-  - "amp_short_vectors/Concurrency::graphics::int_2::rg"
-  - "amp_short_vectors/Concurrency::graphics::int_2::xy"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator-="
-  - "amp_short_vectors/Concurrency::graphics::int_2::get_x"
-  - "amp_short_vectors/Concurrency::graphics::int_2::yx"
-  - "amp_short_vectors/Concurrency::graphics::int_2"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator-"
-  - "amp_short_vectors/Concurrency::graphics::int_2::set_xy"
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator+="
-  - "amp_short_vectors/Concurrency::graphics::int_2::operator--"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["amp_short_vectors/Concurrency::graphics::int_2::y", "amp_short_vectors/Concurrency::graphics::int_2::set_x", "amp_short_vectors/Concurrency::graphics::int_2::set_y", "amp_short_vectors/Concurrency::graphics::int_2::get_yx", "amp_short_vectors/Concurrency::graphics::int_2::operator++", "amp_short_vectors/Concurrency::graphics::int_2::x", "amp_short_vectors/Concurrency::graphics::int_2::set_yx", "amp_short_vectors/Concurrency::graphics::int_2::operator/=", "amp_short_vectors/Concurrency::graphics::int_2::get_y", "amp_short_vectors/Concurrency::graphics::int_2::gr", "amp_short_vectors/Concurrency::graphics::int_2::operator*=", "amp_short_vectors/Concurrency::graphics::int_2::r", "amp_short_vectors/Concurrency::graphics::int_2::get_xy", "amp_short_vectors/Concurrency::graphics::int_2::operator=", "amp_short_vectors/Concurrency::graphics::int_2::g", "amp_short_vectors/Concurrency::graphics::int_2::rg", "amp_short_vectors/Concurrency::graphics::int_2::xy", "amp_short_vectors/Concurrency::graphics::int_2::operator-=", "amp_short_vectors/Concurrency::graphics::int_2::get_x", "amp_short_vectors/Concurrency::graphics::int_2::yx", "amp_short_vectors/Concurrency::graphics::int_2", "amp_short_vectors/Concurrency::graphics::int_2::operator-", "amp_short_vectors/Concurrency::graphics::int_2::set_xy", "amp_short_vectors/Concurrency::graphics::int_2::operator+=", "amp_short_vectors/Concurrency::graphics::int_2::operator--"]
+dev_langs: ["C++"]
 ms.assetid: 258b02e9-f1ee-46c2-8edd-dc9f69184846
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # int_2 Class
 Represents a short vector of two integers.  
@@ -83,38 +43,38 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::get_x Method||  
-|int_2::get_xy Method||  
-|int_2::get_y Method||  
-|int_2::get_yx Method||  
-|int_2::ref_g Method||  
-|int_2::ref_r Method||  
-|int_2::ref_x Method||  
-|int_2::ref_y Method||  
-|int_2::set_x Method||  
-|int_2::set_xy Method||  
-|int_2::set_y Method||  
-|int_2::set_yx Method||  
+|int_2::get_x||  
+|int_2::get_xy||  
+|int_2::get_y||  
+|int_2::get_yx||  
+|int_2::ref_g||  
+|int_2::ref_r||  
+|int_2::ref_x||  
+|int_2::ref_y||  
+|int_2::set_x||  
+|int_2::set_xy||  
+|int_2::set_y||  
+|int_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::operator- Operator||  
-|int_2::operator-- Operator||  
-|int_2::operator%= Operator||  
-|int_2::operator&= Operator||  
-|int_2::operator*= Operator||  
-|int_2::operator/= Operator||  
-|int_2::operator^= Operator||  
-|int_2::operator&#124;= Operator||  
-|int_2::operator~ Operator||  
-|int_2::operator++ Operator||  
-|int_2::operator+= Operator||  
-|int_2::operator<\<= Operator||  
-|int_2::operator= Operator||  
-|int_2::operator-= Operator||  
-|int_2::operator>>= Operator||  
+|int_2::operator-||  
+|int_2::operator--||  
+|int_2::operator%=||  
+|int_2::operator&=||  
+|int_2::operator*=||  
+|int_2::operator/=||  
+|int_2::operator^=||  
+|int_2::operator&#124;=||  
+|int_2::operator~||  
+|int_2::operator++||  
+|int_2::operator+=||  
+|int_2::operator<\<=||  
+|int_2::operator=||  
+|int_2::operator-=||  
+|int_2::operator>>=||  
   
 ### Public Constants  
   
@@ -126,14 +86,14 @@ class int_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|int_2::g Data Member||  
-|int_2::gr Data Member||  
-|int_2::r Data Member||  
-|int_2::rg Data Member||  
-|int_2::x Data Member||  
-|int_2::xy Data Member||  
-|int_2::y Data Member||  
-|int_2::yx Data Member||  
+|int_2::g||  
+|int_2::gr||  
+|int_2::r||  
+|int_2::rg||  
+|int_2::x||  
+|int_2::xy||  
+|int_2::y||  
+|int_2::yx||  
   
 ## Inheritance Hierarchy  
  `int_2`  

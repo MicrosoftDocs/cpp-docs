@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "omp_get_dynamic"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "omp_get_dynamic OpenMP function"
+ms.topic: "reference"
+f1_keywords: ["omp_get_dynamic"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["omp_get_dynamic OpenMP function"]
 ms.assetid: efa843c5-7266-4a75-8db3-22992663d9db
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # omp_get_dynamic
 Returns a value that indicates if the number of threads available in subsequent parallel region can be adjusted by the run time.  

@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wtempnam"
-  - "_wtmpnam"
-  - "tmpnam"
-  - "_tempnam"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wtempnam", "_wtmpnam", "tmpnam", "_tempnam"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wtempnam"
-  - "_wtmpnam"
-  - "wtmpnam"
-  - "tmpnam"
-  - "_wtempnam"
-  - "_tempnam"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wtempnam function"
-  - "file names [C++], creating temporary"
-  - "_tempnam function"
-  - "ttmpnam function"
-  - "tmpnam function"
-  - "tempnam function"
-  - "wtmpnam function"
-  - "temporary files, creating"
-  - "file names [C++], temporary"
-  - "_ttmpnam function"
-  - "_wtmpnam function"
-  - "_wtempnam function"
+f1_keywords: ["wtempnam", "_wtmpnam", "wtmpnam", "tmpnam", "_wtempnam", "_tempnam"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wtempnam function", "file names [C++], creating temporary", "_tempnam function", "ttmpnam function", "tmpnam function", "tempnam function", "wtmpnam function", "temporary files, creating", "file names [C++], temporary", "_ttmpnam function", "_wtmpnam function", "_wtempnam function"]
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _tempnam, _wtempnam, tmpnam, _wtmpnam
 Generate names you can use to create temporary files. More secure versions of some of these functions are available; see [tmpnam_s, _wtmpnam_s](../../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md).  
@@ -101,7 +53,7 @@ wchar_t *_wtmpnam(
  Pointer that will hold the generated name and will be identical to the name returned by the function. This is a convenient way to save the generated name.  
   
 ## Return Value  
- Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam`and there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.  
+ Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam` and there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.  
   
 > [!NOTE]
 >  The pointers returned by `tmpnam` and `_wtmpnam` point to internal static buffers. [free](../../c-runtime-library/reference/free.md) should not be called to deallocate those pointers. `free` needs to be called for pointers allocated by `_tempnam` and `_wtempnam`.  
@@ -187,9 +139,6 @@ int main( void )
 \s1gk. is safe to use as a temporary file.  
 C:\DOCUME~1\user\LOCALS~1\Temp\2\stq2 is safe to use as a temporary file.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

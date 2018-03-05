@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ftime64"
-  - "_ftime"
-  - "_ftime32"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ftime64", "_ftime", "_ftime32"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ftime32"
-  - "_ftime"
-  - "_ftime64"
-  - "ftime64"
-  - "ftime"
-  - "ftime32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ftime64 function"
-  - "_ftime64 function"
-  - "current time"
-  - "_ftime function"
-  - "ftime function"
-  - "_ftime32 function"
-  - "ftime32 function"
-  - "time, getting current"
+f1_keywords: ["_ftime32", "_ftime", "_ftime64", "ftime64", "ftime", "ftime32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ftime64 function", "_ftime64 function", "current time", "_ftime function", "ftime function", "_ftime32 function", "ftime32 function", "time, getting current"]
 ms.assetid: 96bc464c-3bcd-41d5-a212-8bbd836b814a
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _ftime, _ftime32, _ftime64
 Get the current time. More secure versions of these functions are available; see [_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md).  
@@ -86,7 +42,7 @@ void _ftime64(
  Pointer to a `_timeb`,`__timeb32` or `__timeb64` structure.  
   
 ## Remarks  
- The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`*.* The `_timeb`, `__timeb32`,and`__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
+ The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
   
  `dstflag`  
  Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)  
@@ -170,9 +126,6 @@ Minutes between UTC and local time: 480
 Daylight savings time flag (1 means Daylight time is in effect): 1  
 The time is Mon Apr 28 11:08:54.230 2003  
 ```  
-  
-## .NET Framework Equivalent  
- [System::DateTime::Now](https://msdn.microsoft.com/en-us/library/system.datetime.now.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_dup"
-  - "_dup2"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_dup", "_dup2"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_dup2"
-  - "_dup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_dup2 function"
-  - "dup function"
-  - "file handles [C++], duplicating"
-  - "file handles [C++], reassigning"
-  - "dup2 function"
-  - "_dup function"
+f1_keywords: ["_dup2", "_dup"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_dup2 function", "dup function", "file handles [C++], duplicating", "file handles [C++], reassigning", "dup2 function", "_dup function"]
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _dup, _dup2
 Creates a second file descriptor for an open file (`_dup`), or reassigns a file descriptor (`_dup2`).  
@@ -79,7 +43,7 @@ int _dup2(
  Any file descriptor.  
   
 ## Return Value  
- `_dup` returns a new file descriptor. `_dup2` returns 0 to indicate success. If an error occurs, each function returns –1 and sets `errno` to `EBADF` if the file descriptor is invalid or to `EMFILE` if no more file descriptors are available. In the case of an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
+ `_dup` returns a new file descriptor. `_dup2` returns 0 to indicate success. If an error occurs, each function returns -1 and sets `errno` to `EBADF` if the file descriptor is invalid or to `EMFILE` if no more file descriptors are available. In the case of an invalid file descriptor, the function also invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -99,7 +63,7 @@ int cstderr = _dup( _fileno( stderr ));
 |`_dup`|\<io.h>|  
 |`_dup2`|\<io.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+ The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDEUWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   

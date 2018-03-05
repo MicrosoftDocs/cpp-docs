@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "CXX0021"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CXX0021"
-  - "CAN0021"
+f1_keywords: ["CXX0021"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CXX0021", "CAN0021"]
 ms.assetid: d6c0c35a-16c2-42c0-a7d2-e910350a47f0
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0021
 struct or union used as scalar  

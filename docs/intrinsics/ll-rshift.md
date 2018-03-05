@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__ll_rshift_cpp"
-  - "__ll_rshift"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__ll_rshift intrinsic"
-  - "ll_rshift intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__ll_rshift_cpp", "__ll_rshift"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__ll_rshift intrinsic", "ll_rshift intrinsic"]
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __ll_rshift
 **Microsoft Specific**  
@@ -107,7 +87,7 @@ fffffffffffffff0
   
  **Note** If `_ull_rshift` has been used, the MSB of the right-shifted value would have been zero, so the desired result would not have been obtained in the case of a negative value.  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinFormsControl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "CWinFormsControl class"
-  - "Windows Forms [C++], MFC support"
+f1_keywords: ["CWinFormsControl", "AFXWINFORMS/CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CreateManagedControl", "AFXWINFORMS/CWinFormsControl::GetControl", "AFXWINFORMS/CWinFormsControl::GetControlHandle"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinFormsControl [MFC], CWinFormsControl", "CWinFormsControl [MFC], CreateManagedControl", "CWinFormsControl [MFC], GetControl", "CWinFormsControl [MFC], GetControlHandle"]
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWinFormsControl Class
 Provides the basic functionality for hosting of a Windows Forms control.  
@@ -122,7 +103,7 @@ inline BOOL CreateManagedControl(
  The data type of the control to be created. Must be a [Type](https://msdn.microsoft.com/en-us/library/system.type) data type.  
   
  `dwStyle`  
- The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/window-styles.md). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.  
+ The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.  
   
  `rect`  
  A [RECT Structure](../../mfc/reference/rect-structure1.md) that defines the coordinates of the upper-left and lower-right corners of the control (first overload only).  
@@ -211,7 +192,7 @@ inline operator TManagedControl^() const;
 ```  
   
 ### Remarks  
- This operator passes `CWinFormsControl<``TManagedControl``>` to functions that accept a pointer to a Windows Forms control.  
+ This operator passes `CWinFormsControl<TManagedControl>` to functions that accept a pointer to a Windows Forms control.  
   
 ## See Also  
  [CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)   

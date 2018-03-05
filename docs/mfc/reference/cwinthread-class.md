@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinThread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "worker threads"
-  - "threading [MFC], safety"
-  - "CWinThread class"
-  - "threading [MFC], creating threads"
+f1_keywords: ["CWinThread", "AFXWIN/CWinThread", "AFXWIN/CWinThread::CWinThread", "AFXWIN/CWinThread::CreateThread", "AFXWIN/CWinThread::ExitInstance", "AFXWIN/CWinThread::GetMainWnd", "AFXWIN/CWinThread::GetThreadPriority", "AFXWIN/CWinThread::InitInstance", "AFXWIN/CWinThread::IsIdleMessage", "AFXWIN/CWinThread::OnIdle", "AFXWIN/CWinThread::PostThreadMessage", "AFXWIN/CWinThread::PreTranslateMessage", "AFXWIN/CWinThread::ProcessMessageFilter", "AFXWIN/CWinThread::ProcessWndProcException", "AFXWIN/CWinThread::PumpMessage", "AFXWIN/CWinThread::ResumeThread", "AFXWIN/CWinThread::Run", "AFXWIN/CWinThread::SetThreadPriority", "AFXWIN/CWinThread::SuspendThread", "AFXWIN/CWinThread::m_bAutoDelete", "AFXWIN/CWinThread::m_hThread", "AFXWIN/CWinThread::m_nThreadID", "AFXWIN/CWinThread::m_pActiveWnd", "AFXWIN/CWinThread::m_pMainWnd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinThread [MFC], CWinThread", "CWinThread [MFC], CreateThread", "CWinThread [MFC], ExitInstance", "CWinThread [MFC], GetMainWnd", "CWinThread [MFC], GetThreadPriority", "CWinThread [MFC], InitInstance", "CWinThread [MFC], IsIdleMessage", "CWinThread [MFC], OnIdle", "CWinThread [MFC], PostThreadMessage", "CWinThread [MFC], PreTranslateMessage", "CWinThread [MFC], ProcessMessageFilter", "CWinThread [MFC], ProcessWndProcException", "CWinThread [MFC], PumpMessage", "CWinThread [MFC], ResumeThread", "CWinThread [MFC], Run", "CWinThread [MFC], SetThreadPriority", "CWinThread [MFC], SuspendThread", "CWinThread [MFC], m_bAutoDelete", "CWinThread [MFC], m_hThread", "CWinThread [MFC], m_nThreadID", "CWinThread [MFC], m_pActiveWnd", "CWinThread [MFC], m_pMainWnd"]
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWinThread Class
 Represents a thread of execution within an application.  
@@ -154,7 +134,7 @@ CWinThread();
 ```  
   
 ### Remarks  
- To begin the thread's execution, call the [CreateThread](#createthread) member function. You will usually create threads by calling [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), which will call this constructor and `CreateThread`.  
+ To begin the thread's execution, call the [CreateThread](#createthread) member function. You will usually create threads by calling [AfxBeginThread](application-information-and-management.md#afxbeginthread), which will call this constructor and `CreateThread`.  
   
 ##  <a name="exitinstance"></a>  CWinThread::ExitInstance  
  Called by the framework from within a rarely overridden [Run](#run) member function to exit this instance of the thread, or if a call to [InitInstance](#initinstance) fails.  
@@ -214,7 +194,7 @@ int GetThreadPriority();
   
 - **THREAD_PRIORITY_IDLE**  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
 ##  <a name="initinstance"></a>  CWinThread::InitInstance  
  `InitInstance` must be overridden to initialize each new instance of a user-interface thread.  
@@ -438,7 +418,7 @@ virtual LRESULT ProcessWndProcException(
  Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.  
   
 ### Return Value  
- –1 if a `WM_CREATE` exception is generated; otherwise 0.  
+ -1 if a `WM_CREATE` exception is generated; otherwise 0.  
   
 ### Remarks  
  Do not call this member function directly.  
@@ -521,7 +501,7 @@ BOOL SetThreadPriority(int nPriority);
   
 - **THREAD_PRIORITY_IDLE**  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if function was successful; otherwise 0.  

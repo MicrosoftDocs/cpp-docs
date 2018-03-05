@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComPtrBase"
-  - "ATL::CComPtrBase<T>"
-  - "ATL.CComPtrBase<T>"
-  - "ATL::CComPtrBase"
-  - "CComPtrBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComPtrBase class"
+f1_keywords: ["CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase::Advise", "ATLCOMCLI/ATL::CComPtrBase::Attach", "ATLCOMCLI/ATL::CComPtrBase::CoCreateInstance", "ATLCOMCLI/ATL::CComPtrBase::CopyTo", "ATLCOMCLI/ATL::CComPtrBase::Detach", "ATLCOMCLI/ATL::CComPtrBase::IsEqualObject", "ATLCOMCLI/ATL::CComPtrBase::QueryInterface", "ATLCOMCLI/ATL::CComPtrBase::Release", "ATLCOMCLI/ATL::CComPtrBase::SetSite", "ATLCOMCLI/ATL::CComPtrBase::p"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComPtrBase class"]
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComPtrBase Class
 This class provides a basis for smart pointer classes using COM-based memory routines.  
@@ -122,7 +101,7 @@ HRESULT Advise(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- See [AtlAdvise](http://msdn.microsoft.com/library/625a2f03-6b7f-4761-be5d-d2871d1d3254) for more information.  
+ See [AtlAdvise](connection-point-global-functions.md#atladvise) for more information.  
   
 ##  <a name="attach"></a>  CComPtrBase::Attach  
  Call this method to take ownership of an existing pointer.  
@@ -372,7 +351,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method calls [AtlSetChildSite](http://msdn.microsoft.com/library/2a8ece19-6bfd-4e89-9d1d-e5a78f95e2df).  
+ This method calls [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

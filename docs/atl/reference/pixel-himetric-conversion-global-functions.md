@@ -4,37 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+f1_keywords: ["atlwin/ATL::AtlHiMetricToPixel", "atlwin/ATL::AtlPixelToHiMetric"]
+dev_langs: ["C++"]
 ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Pixel/HIMETRIC Conversion Global Functions
 These functions provide support for converting to and from pixel and HIMETRIC units.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  

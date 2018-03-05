@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-f1_keywords: 
-  - "c++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "language reference"
-  - "C++, language reference"
-  - "language reference, Visual C++"
-  - "Visual C++, language reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["language reference", "C++, language reference", "language reference, Visual C++", "Visual C++, language reference"]
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C++ Language Reference
 This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on *The Annotated C++ Reference Manual* by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.  

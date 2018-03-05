@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridFileProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridFileProperty class"
-  - "CMFCPropertyGridFileProperty::OnClickButton method"
+f1_keywords: ["CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty"]
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridFileProperty Class
 The `CMFCPropertyGridFileProperty` class supports a property list control item that opens a file selection dialog box.  

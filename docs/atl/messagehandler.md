@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MessageHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MessageHandler function"
+ms.topic: "reference"
+f1_keywords: ["MessageHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MessageHandler function"]
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MessageHandler
 **MessageHandler** is the name of the function identified by the second parameter of the `MESSAGE_HANDLER` macro in your message map.  
@@ -67,7 +50,7 @@ translation.priority.ht:
  The result of message processing. 0 if successful.  
   
 ## Remarks  
- For an example of using this message handler in a message map, see [MESSAGE_HANDLER](http://msdn.microsoft.com/library/0253a7f3-7eb3-4d2d-83b9-060161268d04).  
+ For an example of using this message handler in a message map, see [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).  
   
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   

@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "time"
-  - "_time64"
-  - "_time32"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["time", "_time64", "_time32"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "time"
-  - "_time64"
-  - "time/time"
-  - "time/_time32"
-  - "time/_time64"
-  - "_time32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "time32 function"
-  - "_time32 function"
-  - "_time64 function"
-  - "time functions"
-  - "system time"
-  - "time64 function"
+f1_keywords: ["time", "_time64", "time/time", "time/_time32", "time/_time64", "_time32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["time32 function", "_time32 function", "_time64 function", "time functions", "system time", "time64 function"]
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # time, _time32, _time64
 Get the system time.  
@@ -249,9 +208,6 @@ Christmas            Sat Dec 25 12:00:00 1993
   
 Today is Friday, day 25 of April in the year 2003.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

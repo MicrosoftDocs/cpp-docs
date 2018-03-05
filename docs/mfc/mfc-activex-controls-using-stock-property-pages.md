@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CLSID_CPicturePropPage"
-  - "CLSID_CColorPropPage"
-  - "CLSID_CFontPropPage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "picture stock property pages"
-  - "CLSID_CFontPropPage"
-  - "color stock property pages"
-  - "CLSID_CColorPropPage"
-  - "fonts, ActiveX controls"
-  - "stock properties, stock property pages"
-  - "CLSID_CPicturePropPage"
-  - "MFC ActiveX controls, property pages"
+f1_keywords: ["CLSID_CPicturePropPage", "CLSID_CColorPropPage", "CLSID_CFontPropPage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["picture stock property pages [MFC]", "CLSID_CFontPropPage [MFC]", "color stock property pages [MFC]", "CLSID_CColorPropPage [MFC]", "fonts [MFC], ActiveX controls", "stock properties [MFC], stock property pages", "CLSID_CPicturePropPage [MFC]", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Stock Property Pages
 This article discusses the stock property pages available for ActiveX controls and how to use them.  

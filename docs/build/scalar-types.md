@@ -4,45 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 07c9195e-b6c7-4083-8ef0-8a93032e4d1e
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Scalar Types
 Although the access of data can stem from any alignment, it is recommended that data be aligned on its natural boundary to avoid performance loss (or a multiple thereof). Enums are constant integers and are treated as 32-bit integers. The following table describes the type definition and recommended storage for it as it pertains to alignment using the following alignment values:  
   
--   Byte – 8 bits  
+-   Byte - 8 bits  
   
--   Word – 16 bits  
+-   Word - 16 bits  
   
--   Double Word – 32 bits  
+-   Double Word - 32 bits  
   
--   Quad Word – 64 bits  
+-   Quad Word - 64 bits  
   
--   Octa Word – 128 bits  
+-   Octa Word - 128 bits  
   
 |||||  
 |-|-|-|-|  

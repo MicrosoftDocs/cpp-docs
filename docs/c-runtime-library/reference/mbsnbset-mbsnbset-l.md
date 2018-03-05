@@ -4,67 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnbset"
-  - "_mbsnbset_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnbset", "_mbsnbset_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbset"
-  - "mbsnbset_l"
-  - "_mbsnbset"
-  - "_mbsnbset_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsnset function"
-  - "_tcsnset_l function"
-  - "_mbsnbset function"
-  - "_tcsnset function"
-  - "_mbsnbset_l function"
-  - "mbsnbset_l function"
-  - "tcsnset_l function"
-  - "mbsnbset function"
+f1_keywords: ["mbsnbset", "mbsnbset_l", "_mbsnbset", "_mbsnbset_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsnset function", "_tcsnset_l function", "_mbsnbset function", "_tcsnset function", "_mbsnbset_l function", "mbsnbset_l function", "tcsnset_l function", "mbsnbset function"]
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbset, _mbsnbset_l
 Sets the first `n` bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [_mbsnbset_s, _mbsnbset_s_l](../../c-runtime-library/reference/mbsnbset-s-mbsnbset-s-l.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -99,9 +59,9 @@ unsigned char *_mbsnbset_l(
  `_mbsnbset` returns a pointer to the altered string.  
   
 ## Remarks  
- The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte specified by `count`, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l`does not place a terminating null at the end of `str`.  
+ The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte specified by `count`, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l` does not place a terminating null at the end of `str`.  
   
- `_mbsnbset` and `_mbsnbset_l`is similar to `_mbsnset`, except that it sets `count` bytes rather than `count` characters of `c`.  
+ `_mbsnbset` and `_mbsnbset_l` is similar to `_mbsnset`, except that it sets `count` bytes rather than `count` characters of `c`.  
   
  If `str` is `NULL` or `count` is zero, this function generates an invalid parameter exception as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if `c` is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.  
   
@@ -150,9 +110,6 @@ int main( void )
 Before: This is a test  
 After:  **** is a test  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

@@ -4,50 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "COLUMN_ENTRY_LENGTH"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_ENTRY_LENGTH macro"
+ms.topic: "reference"
+f1_keywords: ["COLUMN_ENTRY_LENGTH"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_ENTRY_LENGTH macro"]
 ms.assetid: 1758babf-204c-4d1d-b82a-f9a607072e9a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_LENGTH
 Represents a binding on the rowset to the specific column in the database.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_LENGTH(  
-nOrdinal  
-,   
-data  
-,   
-length  
- )  
+```cpp
+COLUMN_ENTRY_LENGTH(nOrdinal, data, length)  
   
 ```  
   

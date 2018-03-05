@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.lcid"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LCID attribute"
+f1_keywords: ["vc-attr.lcid"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LCID attribute"]
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # lcid
 Lets you pass a locale identifier to a function.  
@@ -78,5 +61,4 @@ __interface IStatic {
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Parameter Attributes](../windows/parameter-attributes.md)   

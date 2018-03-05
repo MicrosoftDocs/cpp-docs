@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "default"
-  - "default_cpp"
-  - "switch"
-  - "switch_cpp"
-  - "case"
-  - "case_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "switch keyword [C++]"
-  - "case keyword [C++], in switch statements"
-  - "default keyword [C++]"
+f1_keywords: ["default_cpp", "switch_cpp", "case_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["switch keyword [C++]", "case keyword [C++], in switch statements", "default keyword [C++]"]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # switch Statement (C++)
 Allows selection among multiple sections of code, depending on the value of an integral expression.  
@@ -47,8 +23,7 @@ Allows selection among multiple sections of code, depending on the value of an i
 ## Syntax  
   
 ```  
-  
-      switch ( expression )  
+   switch ( init; expression )  
    case constant-expression : statement  
    [default  : statement]  
 ```  
@@ -99,11 +74,52 @@ int main() {
 }  
 ```  
   
- In the above example, `capa` is incremented if `c` is an uppercase `A`. The `break` statement after `capa++` terminates execution of the `switch` statement body and control passes to the `while` loop. Without the `break` statement, `lettera` and `nota` would also be incremented. A similar purpose is served by the `break` statement for `case 'a'`. If `c` is a lowercase `a`, `lettera` is incremented and the `break` statement terminates the `switch` statement body. If `c` is not an `a` or `A`, the `default` statement is executed.  
-  
+ In the above example, `capa` is incremented if `c` is an uppercase `A`. The `break` statement after `capa++` terminates execution of the `switch` statement body and control passes to the `while` loop. Without the `break` statement, execution would "fall through" to the next labeled statement, so that `lettera` and `nota` would also be incremented. A similar purpose is served by the `break` statement for `case 'a'`. If `c` is a lowercase `a`, `lettera` is incremented and the `break` statement terminates the `switch` statement body. If `c` is not an `a` or `A`, the `default` statement is executed.  
+
+ **Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute is specified in the C++17 standard. It can be used in a `switch` statement as a hint to the compiler (or to anyone reading the code) that fall-through behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior. Note that the attribute is applied to an empty statement within the labeled statement; in other words the semicolon is necessary.
+
+```cpp
+int main()
+{
+	int n = 5;
+	switch (n)
+	{
+
+	case 1:
+		a();
+		break;
+	case 2:
+		b();
+		d();
+		[[fallthrough]]; // I meant to do this!
+	case 3:
+		c();
+		break;
+	default:
+		d();
+		break;
+	}
+
+	return 0;
+}
+```
+
+ **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)):  A switch statement may introduce and initialize a variable whose scope is limited to the block of the switch statement:
+
+```cpp
+ switch (Gadget gadget(args); auto s = gadget.get_status())
+		{
+		case status::good:
+			gadget.zip();
+			break;
+		case status::bad:
+			throw BadGadget();
+		};
+```
+
  An inner block of a `switch` statement can contain definitions with initializations as long as they are reachable — that is, not bypassed by all possible execution paths. Names introduced using these declarations have local scope. For example:  
   
-```  
+```cpp  
 // switch_statement2.cpp  
 // C2360 expected  
 #include <iostream>  
@@ -137,13 +153,14 @@ int main(int argc, char *argv[])
 ```  
   
  A `switch` statement can be nested. In such cases, **case** or **default** labels associate with the closest `switch` statement that encloses them.  
-  
+
+ 
 ## Microsoft Specific  
  Microsoft C does not limit the number of case values in a `switch` statement. The number is limited only by the available memory. ANSI C requires at least 257 case labels be allowed in a `switch` statement.  
   
  The default for Microsoft C is that the Microsoft extensions are enabled. Use the [/Za](../build/reference/za-ze-disable-language-extensions.md) compiler option to disable these extensions.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   

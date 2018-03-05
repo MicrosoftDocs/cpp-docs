@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ChildWindow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message handlers [C++]"
-  - "message handling [C++], child window message handlers"
-  - "notifications, child window messages"
-  - "windows [C++], message handlers"
-  - "child windows, messages"
+f1_keywords: ["ChildWindow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], child window message handlers", "notifications [MFC], child window messages", "windows [MFC], message handlers", "child windows [MFC], messages"]
 ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Child Window Notification Message Handlers
 There are five categories of child window notification messages:  

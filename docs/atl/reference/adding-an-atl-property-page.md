@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, adding"
-  - "ATL projects, adding property pages"
-  - "controls [ATL], property pages"
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages, adding", "ATL projects, adding property pages", "controls [ATL], property pages"]
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Property Page
 To add an Active Template Library (ATL) property page to your project, your project must have been created as an ATL application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application or [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.  
@@ -50,7 +32,7 @@ To add an Active Template Library (ATL) property page to your project, your proj
   
 3.  In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the Templates pane, click **ATL Property Page** and then click **Open** to display the [ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md).  
   
- Once you create a property page for a control, you must provide the [PROP_PAGE](http://msdn.microsoft.com/library/2155973e-b96c-4385-bf85-5d6112c969b8) entry in the property map for the control.  
+ Once you create a property page for a control, you must provide the [PROP_PAGE](property-map-macros.md#prop_page) entry in the property map for the control.  
   
 ## See Also  
  [Property Pages](../../atl/atl-com-property-pages.md)   

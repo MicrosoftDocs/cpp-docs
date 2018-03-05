@@ -4,36 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, implementing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages, implementing"]
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Example: Implementing a Property Page
-This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface. This interface is exposed by documents in Visual Studio's [Common Environment Object Model Examples](http://msdn.microsoft.com/library/919cdb58-9f6d-45e6-a0f1-9ca8f6e7051f) (although the property page that you'll create won't care where the objects it manipulates come from as long as they support the correct interface).  
+This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.  
   
  The example is based on the [ATLPages sample](../visual-cpp-samples.md).  
   

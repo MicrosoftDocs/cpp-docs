@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vs.editors.resource"
-  - "vc.resvw.resource.editors"
-  - "vs.resvw.resource.editors"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "editors [C++], resource"
-  - "editors [C++]"
-  - "resource editors"
-  - "Windows [C++], application resource editing"
+f1_keywords: ["vs.editors.resource", "vc.resvw.resource.editors", "vs.resvw.resource.editors"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["editors [C++], resource", "editors [C++]", "resource editors", "Windows [C++], application resource editing"]
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Editors
 A Resource editor is a specialized environment for creating or modifying resources that are included in a Visual Studio project. The Visual Studio resource editors share techniques and interfaces to help you create and modify application resources quickly and easily. Resource editors enable you to [view and edit resources in the appropriate editor](../windows/viewing-and-editing-resources-in-a-resource-editor.md) and [preview resources](../windows/previewing-resources.md).  
@@ -47,14 +24,13 @@ A Resource editor is a specialized environment for creating or modifying resourc
   
  **Note** Because managed projects do not use resource script files, you must open your resources from **Solution Explorer**. You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 |Use the...|To edit...|  
 |----------------|----------------|  
 |[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual C++ projects.|  
 |[Binary Editor](binary-editor.md)|Binary data information and custom resources in Visual C++, Visual Basic, or Visual C# projects.|  
 |[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual C++ projects.|  
-|[HTML Designer](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)|HTML pages in both Design view and HTML view. Caveat: You cannot make changes to HTML pages that are in EXEs or DLLs because the changes are not imported back into the EXE or DLL.|  
 |[Image Editor](../windows/image-editor-for-icons.md)|Bitmaps, icons, cursors, and other image files in Visual C++, Visual Basic, or Visual C# projects.|  
 |[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual C++ projects.|  
 |[Ribbon Editor](../mfc/ribbon-designer-mfc.md)|Ribbon resources in MFC projects.|  

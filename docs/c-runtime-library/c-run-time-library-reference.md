@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.runtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRT"
-  - "run-time libraries"
-  - "CRT, reference"
+f1_keywords: ["c.runtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRT", "run-time libraries", "CRT, reference"]
 ms.assetid: a503e11c-8dca-4846-84fb-025a826c32b8
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C Run-Time Library Reference
 The Microsoft run-time library provides routines for programming for the Microsoft Windows operating system. These routines automate many common programming tasks that are not provided by the C and C++ languages.  
@@ -70,14 +51,8 @@ The Microsoft run-time library provides routines for programming for the Microso
  [Run-Time Error Checking](../c-runtime-library/run-time-error-checking.md)  
  Provides links to functions that support run-time error checks.  
   
- [Run-Time Library Behavior](../build/run-time-library-behavior.md)  
- Discusses the entry point into the CRT DLL.  
-  
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.  
+ [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
+ Discusses the entry point and startup code used for a DLL.  
   
  [Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.  
-  
-## See Also  
- [Visual C++ Libraries Reference](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)

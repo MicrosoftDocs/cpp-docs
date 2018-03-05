@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ultow_s"
-  - "_ultoa_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ultow_s", "_ultoa_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ultow_s"
-  - "ultoa_s"
-  - "ultow_s"
-  - "_ultoa_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ultoa_s function"
-  - "converting integers"
-  - "integers, converting"
-  - "_ultow_s function"
-  - "ultoa_s function"
-  - "converting numbers, to strings"
-  - "ultow_s function"
+f1_keywords: ["_ultow_s", "ultoa_s", "ultow_s", "_ultoa_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ultoa_s function", "converting integers", "integers, converting", "_ultow_s function", "ultoa_s function", "converting numbers, to strings", "ultow_s function"]
 ms.assetid: 606ce905-6752-46ac-a15a-bdc22920e1d4
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ultoa_s, _ultow_s
 Convert an unsigned long integer to a string. These are versions of [_ultoa, _ultow](../../c-runtime-library/reference/ultoa-ultow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -108,7 +69,7 @@ errno_t _ultow_s(
  Zero if the function was successful or an error code.  
   
 ## Remarks  
- The `_ultoa_s` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 – 36. `_ultow_s` is a wide character version of `_ultoa_s`; the second argument of `_ultow_s` is a wide character strings.  
+ The `_ultoa_s` function converts the digits of `value` to a null-terminated character string and stores the result (up to 33 bytes) in `str`. The `radix` argument specifies the base of `value`, which must be in the range 2 - 36. `_ultow_s` is a wide character version of `_ultoa_s`; the second argument of `_ultow_s` is a wide character strings.  
   
  If `str` is a `NULL` pointer, or if `sizeOfstr` is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL` or if the `value` or `str` out of range of a long integer, these functions will return a -1 and set the `errno` to `ERANGE`.  
   
@@ -128,9 +89,6 @@ errno_t _ultow_s(
 |`_ultow_s`|\<stdlib.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToString](https://msdn.microsoft.com/en-us/library/system.convert.tostring.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

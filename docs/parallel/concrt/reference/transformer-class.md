@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::transformer"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "transformer class"
+ms.topic: "reference"
+f1_keywords: ["transformer", "AGENTS/concurrency::transformer", "AGENTS/concurrency::transformer::transformer", "AGENTS/concurrency::transformer::accept_message", "AGENTS/concurrency::transformer::consume_message", "AGENTS/concurrency::transformer::link_target_notification", "AGENTS/concurrency::transformer::propagate_message", "AGENTS/concurrency::transformer::propagate_to_any_targets", "AGENTS/concurrency::transformer::release_message", "AGENTS/concurrency::transformer::reserve_message", "AGENTS/concurrency::transformer::resume_propagation", "AGENTS/concurrency::transformer::send_message", "AGENTS/concurrency::transformer::supports_anonymous_source"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["transformer class"]
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # transformer Class
 A `transformer` messaging block is a single-target, multi-source, ordered `propagator_block` which can accept messages of one type and is capable of storing an unbounded number of messages of a different type.  
@@ -58,23 +41,23 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
   
 |Name|Description|  
 |----------|-----------------|  
-|[transformer Constructor](#ctor)|Overloaded. Constructs a `transformer` messaging block.|  
+|[transformer](#ctor)|Overloaded. Constructs a `transformer` messaging block.|  
 |[~transformer Destructor](#dtor)|Destroys the `transformer` messaging block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept_message Method](#accept_message)|Accepts a message that was offered by this `transformer` messaging block, transferring ownership to the caller.|  
-|[consume_message Method](#consume_message)|Consumes a message previously offered by the `transformer` and reserved by the target, transferring ownership to the caller.|  
-|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `transformer` messaging block.|  
-|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[propagate_to_any_targets Method](#propagate_to_any_targets)|Executes the transformer function on the input messages.|  
-|[release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message Method](#reserve_message)|Reserves a message previously offered by this `transformer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
-|[send_message Method](#send_message)|Synchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `send` method, when called by a source block.|  
-|[supports_anonymous_source Method](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
+|[accept_message](#accept_message)|Accepts a message that was offered by this `transformer` messaging block, transferring ownership to the caller.|  
+|[consume_message](#consume_message)|Consumes a message previously offered by the `transformer` and reserved by the target, transferring ownership to the caller.|  
+|[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `transformer` messaging block.|  
+|[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Executes the transformer function on the input messages.|  
+|[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Reserves a message previously offered by this `transformer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[send_message](#send_message)|Synchronously passes a message from an `ISource` block to this `transformer` messaging block. It is invoked by the `send` method, when called by a source block.|  
+|[supports_anonymous_source](#supports_anonymous_source)|Overrides the `supports_anonymous_source` method to indicate that this block can accept messages offered to it by a source that is not linked. (Overrides [ITarget::supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

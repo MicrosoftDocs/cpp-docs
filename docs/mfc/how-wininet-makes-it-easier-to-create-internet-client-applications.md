@@ -4,40 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows Sockets [C++], vs. WinInet"
-  - "WinInet classes, vs. WinSock"
-  - "WinInet classes, Internet client applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows Sockets [MFC], vs. WinInet", "WinInet classes [MFC], vs. WinSock", "WinInet classes [MFC], Internet client applications"]
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How WinInet Makes It Easier to Create Internet Client Applications
 The Win32 Internet Extensions, or WinInet, provide access to common Internet protocols, including gopher, FTP, and HTTP. Using WinInet, you can write Internet client applications at a higher level of programming, without having to deal with WinSock, TCP/IP, or the details of specific Internet protocols. WinInet provides a consistent set of functions for all three protocols, with a familiar Win32 API interface. This consistency minimizes code changes you need to make if the underlying protocol changes (for example, from FTP to HTTP).  
   
- Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] for more information) or you can use WinInet through the [MFC WinInet classes](../mfc/mfc-classes-for-creating-internet-client-applications.md).  
+ Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the Windows SDK for more information) or you can use WinInet through the [MFC WinInet classes](../mfc/mfc-classes-for-creating-internet-client-applications.md).  
   
  **You can use WinInet to:**  
   

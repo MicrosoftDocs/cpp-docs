@@ -4,58 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.PrecompiledHeaderFile"
-  - "/fp"
-  - "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Fp compiler option [C++]"
-  - "-Fp compiler option [C++]"
-  - "naming precompiler header files"
-  - "PCH files, naming"
-  - "names [C++], PCH"
-  - ".pch files, naming"
-  - "precompiled header files, naming"
-  - "/Fp compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "/fp", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Fp (Name .Pch File)
 Provides a path name for a precompiled header instead of using the default path name.  
   
 ## Syntax  
   
-```  
-/Fppathname  
-```  
+> **/Fp**_pathname_  
   
 ## Remarks  
- Use this option with [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc**`filename` argument and from the base name of the source file.  
+ Use this option with [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc***filename* argument and from the base name of the source file.  
   
- If you do not specify an extension as part of the path name, an extension of .pch is assumed. If you specify a directory without a file name, the default file name is VC`x`0.pch., where `x` is the major version of Visual C++ in use.  
+ If you do not specify an extension as part of the path name, an extension of .pch is assumed. If you specify a directory without a file name, the default file name is VC*x*0.pch, where *x* is the major version of Visual C++ in use.  
   
  You can also use the **/Fp** option with **/Yu**.  
   

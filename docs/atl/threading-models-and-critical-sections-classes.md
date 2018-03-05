@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.atl.threads.models"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, critical sections"
-  - "ATL, multithreading"
-  - "threading [ATL], models"
-  - "critical sections"
+f1_keywords: ["vc.atl.threads.models"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, critical sections", "ATL, multithreading", "threading [ATL], models", "critical sections"]
 ms.assetid: 759f05ef-6285-4be6-a2cc-78572dd75146
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Threading Models and Critical Sections Classes
 The following classes define a threading model and critical section:  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPane"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPane class"
+f1_keywords: ["CPane", "AFXPANE/CPane", "AFXPANE/CPane::AdjustSizeImmediate", "AFXPANE/CPane::AllocElements", "AFXPANE/CPane::AllowShowOnPaneMenu", "AFXPANE/CPane::CalcAvailableSize", "AFXPANE/CPane::CalcInsideRect", "AFXPANE/CPane::CalcRecentDockedRect", "AFXPANE/CPane::CalcSize", "AFXPANE/CPane::CanBeDocked", "AFXPANE/CPane::CanBeTabbedDocument", "AFXPANE/CPane::ConvertToTabbedDocument", "AFXPANE/CPane::CopyState", "AFXPANE/CPane::Create", "AFXPANE/CPane::CreateDefaultMiniframe", "AFXPANE/CPane::CreateEx", "AFXPANE/CPane::DockByMouse", "AFXPANE/CPane::DockPane", "AFXPANE/CPane::DockPaneStandard", "AFXPANE/CPane::DockToFrameWindow", "AFXPANE/CPane::DoesAllowSiblingBars", "AFXPANE/CPane::FloatPane", "AFXPANE/CPane::GetAvailableExpandSize", "AFXPANE/CPane::GetAvailableStretchSize", "AFXPANE/CPane::GetBorders", "AFXPANE/CPane::GetClientHotSpot", "AFXPANE/CPane::GetDockSiteRow", "AFXPANE/CPane::GetExclusiveRowMode", "AFXPANE/CPane::GetHotSpot", "AFXPANE/CPane::GetMinSize", "AFXPANE/CPane::GetPaneName", "AFXPANE/CPane::GetVirtualRect", "AFXPANE/CPane::IsChangeState", "AFXPANE/CPane::IsDragMode", "AFXPANE/CPane::IsInFloatingMultiPaneFrameWnd", "AFXPANE/CPane::IsLeftOf", "AFXPANE/CPane::IsResizable", "AFXPANE/CPane::IsTabbed", "AFXPANE/CPane::LoadState", "AFXPANE/CPane::MoveByAlignment", "AFXPANE/CPane::MovePane", "AFXPANE/CPane::OnAfterChangeParent", "AFXPANE/CPane::OnBeforeChangeParent", "AFXPANE/CPane::OnPressCloseButton", "AFXPANE/CPane::OnShowControlBarMenu", "AFXPANE/CPane::RecalcLayout", "AFXPANE/CPane::SaveState", "AFXPANE/CPane::SetActiveInGroup", "AFXPANE/CPane::SetBorders", "AFXPANE/CPane::SetClientHotSpot", "AFXPANE/CPane::SetDockState", "AFXPANE/CPane::SetExclusiveRowMode", "AFXPANE/CPane::SetMiniFrameRTC", "AFXPANE/CPane::SetMinSize", "AFXPANE/CPane::SetVirtualRect", "AFXPANE/CPane::StretchPaneDeferWndPos", "AFXPANE/CPane::ToggleAutoHide", "AFXPANE/CPane::UndockPane", "AFXPANE/CPane::UpdateVirtualRect", "AFXPANE/CPane::OnAfterDock", "AFXPANE/CPane::OnAfterFloat", "AFXPANE/CPane::OnBeforeDock", "AFXPANE/CPane::OnBeforeFloat", "AFXPANE/CPane::m_bHandleMinSize", "AFXPANE/CPane::m_recentDockInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPane [MFC], AdjustSizeImmediate", "CPane [MFC], AllocElements", "CPane [MFC], AllowShowOnPaneMenu", "CPane [MFC], CalcAvailableSize", "CPane [MFC], CalcInsideRect", "CPane [MFC], CalcRecentDockedRect", "CPane [MFC], CalcSize", "CPane [MFC], CanBeDocked", "CPane [MFC], CanBeTabbedDocument", "CPane [MFC], ConvertToTabbedDocument", "CPane [MFC], CopyState", "CPane [MFC], Create", "CPane [MFC], CreateDefaultMiniframe", "CPane [MFC], CreateEx", "CPane [MFC], DockByMouse", "CPane [MFC], DockPane", "CPane [MFC], DockPaneStandard", "CPane [MFC], DockToFrameWindow", "CPane [MFC], DoesAllowSiblingBars", "CPane [MFC], FloatPane", "CPane [MFC], GetAvailableExpandSize", "CPane [MFC], GetAvailableStretchSize", "CPane [MFC], GetBorders", "CPane [MFC], GetClientHotSpot", "CPane [MFC], GetDockSiteRow", "CPane [MFC], GetExclusiveRowMode", "CPane [MFC], GetHotSpot", "CPane [MFC], GetMinSize", "CPane [MFC], GetPaneName", "CPane [MFC], GetVirtualRect", "CPane [MFC], IsChangeState", "CPane [MFC], IsDragMode", "CPane [MFC], IsInFloatingMultiPaneFrameWnd", "CPane [MFC], IsLeftOf", "CPane [MFC], IsResizable", "CPane [MFC], IsTabbed", "CPane [MFC], LoadState", "CPane [MFC], MoveByAlignment", "CPane [MFC], MovePane", "CPane [MFC], OnAfterChangeParent", "CPane [MFC], OnBeforeChangeParent", "CPane [MFC], OnPressCloseButton", "CPane [MFC], OnShowControlBarMenu", "CPane [MFC], OnShowControlBarMenu", "CPane [MFC], RecalcLayout", "CPane [MFC], SaveState", "CPane [MFC], SetActiveInGroup", "CPane [MFC], SetBorders", "CPane [MFC], SetClientHotSpot", "CPane [MFC], SetDockState", "CPane [MFC], SetExclusiveRowMode", "CPane [MFC], SetMiniFrameRTC", "CPane [MFC], SetMinSize", "CPane [MFC], SetVirtualRect", "CPane [MFC], StretchPaneDeferWndPos", "CPane [MFC], ToggleAutoHide", "CPane [MFC], UndockPane", "CPane [MFC], UpdateVirtualRect", "CPane [MFC], OnAfterDock", "CPane [MFC], OnAfterFloat", "CPane [MFC], OnBeforeDock", "CPane [MFC], OnBeforeFloat", "CPane [MFC], m_bHandleMinSize", "CPane [MFC], m_recentDockInfo"]
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPane Class
 The `CPane` class is an enhancement of the [CControlBar Class](../../mfc/reference/ccontrolbar-class.md). If you are upgrading an existing MFC project, replace all occurrences of `CControlBar` with `CPane`.  
@@ -339,7 +322,7 @@ virtual BOOL Create(
  Specifies the name of the Windows class.  
   
  [in] `dwStyle`  
- Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the `pParentWnd` window, in client coordinates.  
@@ -400,13 +383,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  [in] `dwStyleEx`  
- Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md).  
+ Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
  [in] `lpszClassName`  
  Specifies the name of the Windows class.  
   
  [in] `dwStyle`  
- Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the `pParentWnd` window, in client coordinates.  
@@ -907,7 +890,7 @@ virtual CSize MovePane(
  Not used.  
   
 ### Return Value  
- A `CSize` object that contains the differences in width and height between the new and old rectangles (old rectangle – `rectNew`).  
+ A `CSize` object that contains the differences in width and height between the new and old rectangles (old rectangle - `rectNew`).  
   
 ### Remarks  
  This method is used only for dockable panes.  
@@ -1106,7 +1089,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 ### Remarks  
  When a dockable pane is shown or an auto-hide button is chosen, the corresponding auto-hide pane is marked as active.  
   
- The appearance of an auto-hide button that is associated with the pane is based on two factors. If the pane is active, and the `static``BOOL``CMFCAutoHideButton::m_bOverlappingTabs` is `TRUE`, the framework displays the auto-hide button as an icon and a label. For an inactive pane, the framework displays only the auto-hide icon.  
+ The appearance of an auto-hide button that is associated with the pane is based on two factors. If the pane is active, and the `static BOOL CMFCAutoHideButton::m_bOverlappingTabs` is `TRUE`, the framework displays the auto-hide button as an icon and a label. For an inactive pane, the framework displays only the auto-hide icon.  
   
  If `CMFCAutoHideButton::m_bOverlappingTabs` is `FALSE`, or if the pane is not located in a group, the framework displays the associated auto-hide button as an icon and a label.  
   

@@ -4,65 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - ">>="
-  - "xor_eq"
-  - "&="
-  - "<<="
-  - "-="
-  - "and_eq"
-  - "^="
-  - "|="
-  - "/="
-  - "%="
-  - "or_eq"
-  - "+="
-  - "*="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "or_eq operator"
-  - "&= operator"
-  - "operators [C++], assignment"
-  - "assignment operators, C++"
-  - "xor_eq operator"
-  - "+= operator"
-  - "and_eq operator"
-  - ">>= operator"
-  - "|= operator"
-  - "operator>>="
-  - "*= operator"
-  - "%= operator"
-  - "^= operator"
-  - "operator >>="
-  - "= operator"
-  - "assignment operators"
-  - "-= operator"
-  - "/= operator"
-  - "<<= operator"
+f1_keywords: [">>=", "xor_eq", "&=", "<<=", "-=", "and_eq", "^=", "|=", "/=", "%=", "or_eq", "+=", "*="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["or_eq operator", "&= operator", "operators [C++], assignment", "assignment operators [C++], C++", "xor_eq operator", "+= operator", "and_eq operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "assignment operators [C++]", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Assignment Operators
 ## Syntax  
@@ -71,7 +24,7 @@ translation.priority.ht:
   
       expression assignment-operator expression   
 assignment-operator : one of  
-   =   *=   /=   %=   +=   –=   <<=   >>=   &=   ^=   |=  
+   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  
 ```  
   
 ## Remarks  
@@ -86,7 +39,7 @@ assignment-operator : one of
 |`/=`|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
 |`%=`|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |`+=`|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
-|**–=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
+|**-=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
 |**<\<=**|Shift the value of the first operand left the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**>>=**|Shift the value of the first operand right the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**&=**|Obtain the bitwise AND of the first and second operands; store the result in the object specified by the first operand.|  
@@ -202,7 +155,7 @@ B = A;
   
 -   An arithmetic type  
   
--   A pointer, if `op` is + or –  
+-   A pointer, if `op` is + or -  
   
  The *e1* `op`= *e2* form behaves as *e1* *= e1* `op` *e2*, but *e1* is evaluated only once.  
   

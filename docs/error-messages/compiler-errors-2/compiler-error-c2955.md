@@ -1,38 +1,21 @@
 ---
 title: "Compiler Error C2955 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2955"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2955"
+f1_keywords: ["C2955"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2955"]
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2955
 'identifier' : use of class template or alias generic requires template or generic argument list  
@@ -87,4 +70,16 @@ int main() {
    GC^ g;   // C2955  
    GC <int>^ g;  
 }  
+```
+
+## Example
+**Visual Studio 2017 and later:** The compiler correctly diagnoses missing template argument lists when the template appears in a template parameter list (for example as part of a default template argument or a non-type template parameter). The following code compiles in Visual Studio 2015 but produces an error in Visual Studio 2017.
+
+```
+template <class T> class ListNode;
+template <class T> using ListNodeMember = ListNode<T> T::*;
+template <class T, ListNodeMember M> class ListHead; // C2955: 'ListNodeMember': use of alias 
+                                                     // template requires template argument list
+
+// correct:  template <class T, ListNodeMember<T> M> class ListHead;
 ```

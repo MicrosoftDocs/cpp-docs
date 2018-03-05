@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPageSetupDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "page setup"
-  - "Print Setup dialog box"
-  - "Page Setup dialog box"
-  - "OLE Page Setup dialog box"
-  - "CPageSetupDialog class"
+f1_keywords: ["CPageSetupDialog", "AFXDLGS/CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CreatePrinterDC", "AFXDLGS/CPageSetupDialog::DoModal", "AFXDLGS/CPageSetupDialog::GetDeviceName", "AFXDLGS/CPageSetupDialog::GetDevMode", "AFXDLGS/CPageSetupDialog::GetDriverName", "AFXDLGS/CPageSetupDialog::GetMargins", "AFXDLGS/CPageSetupDialog::GetPaperSize", "AFXDLGS/CPageSetupDialog::GetPortName", "AFXDLGS/CPageSetupDialog::OnDrawPage", "AFXDLGS/CPageSetupDialog::PreDrawPage", "AFXDLGS/CPageSetupDialog::m_psd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPageSetupDialog [MFC], CPageSetupDialog", "CPageSetupDialog [MFC], CreatePrinterDC", "CPageSetupDialog [MFC], DoModal", "CPageSetupDialog [MFC], GetDeviceName", "CPageSetupDialog [MFC], GetDevMode", "CPageSetupDialog [MFC], GetDriverName", "CPageSetupDialog [MFC], GetMargins", "CPageSetupDialog [MFC], GetPaperSize", "CPageSetupDialog [MFC], GetPortName", "CPageSetupDialog [MFC], OnDrawPage", "CPageSetupDialog [MFC], PreDrawPage", "CPageSetupDialog [MFC], m_psd"]
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPageSetupDialog Class
 Encapsulates the services provided by the Windows common OLE Page Setup dialog box with additional support for setting and modifying print margins.  
@@ -214,7 +193,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### Return Value  
- The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the Windows SDK.  
   
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
  Call this function after calling [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) to retrieve the name of the system-defined printer device driver.  
@@ -277,7 +256,7 @@ PAGESETUPDLG m_psd;
   
  If you modify the `m_psd` data member directly, you will override any default behavior.  
   
- For more information on the [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) structure, see the Windows SDK.  
   
  See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
@@ -359,7 +338,7 @@ virtual UINT PreDrawPage(
 -   0x01f   Envelope in portrait mode (dot matrix)  
   
  `pPSD`  
- Pointer to a **PAGESETUPDLG** structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Pointer to a **PAGESETUPDLG** structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
   
 ### Return Value  
  Nonzero value if handled; otherwise 0.  

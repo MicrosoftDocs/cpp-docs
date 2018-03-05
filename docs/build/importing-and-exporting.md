@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DLLs [C++], importing"
-  - "exporting DLLs [C++]"
-  - "importing DLLs [C++]"
-  - "DLLs [C++], exporting from"
-  - "__declspec(dllimport) keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DLLs [C++], importing", "exporting DLLs [C++]", "importing DLLs [C++]", "DLLs [C++], exporting from", "__declspec(dllimport) keyword [C++]"]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Importing and Exporting
 You can import public symbols into an application or export functions from a DLL using two methods:  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "unary_negate"
-  - "std::unary_negate"
-  - "std.unary_negate"
-  - "xfunctional/std::unary_negate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unary_negate class"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::unary_negate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unary_negate class"]
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # unary_negate Class
 A template class providing a member function that negates the return value of a specified unary function.  
@@ -66,7 +46,7 @@ public:
 ## Remarks  
  The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*  
   
- The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1_function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
+ The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
   
 ## Example  
   

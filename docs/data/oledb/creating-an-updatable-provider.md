@@ -4,38 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, updatable"
-  - "notifications, support in providers"
-  - "OLE DB providers, creating"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, updatable", "notifications, support in providers", "OLE DB providers, creating"]
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an Updatable Provider
-Visual C++ 6.0 supported only read-only providers. Visual C++ .NET supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
+Visual C++ supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
   
  This topic assumes that you are starting with a workable provider. There are two steps to creating an updatable provider. You must first decide how the provider will make changes to the data store; specifically, whether changes are to be done immediately or deferred until an update command is issued. The section "[Making Providers Updatable](#vchowmakingprovidersupdatable)" describes the changes and settings you need to do in the provider code.  
   
@@ -225,7 +207,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how `FlushData` is implemented in the `RUpdateRowset` class in the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample (see Rowset.h in the sample code):  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
 ...  
@@ -324,7 +306,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how the **CommonGetColInfo** function is implemented in **CUpdateCommand** (see UpProvRS.cpp) in UpdatePV. Note how the columns have this **DBCOLUMNFLAGS_ISNULLABLE** for nullable columns.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////////  
 // CUpdateCommand (in UpProvRS.cpp)  
   
@@ -436,6 +418,7 @@ trData[0].m_nNumericPrecision = 10;
 trData[0].m_ulColumnFlags = DBCOLUMNFLAGS_WRITE |  
                             DBCOLUMNFLAGS_ISFIXEDLENGTH;  
 lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));  
+
 m_rgRowData.Add(trData[0]);  
 ```  
   

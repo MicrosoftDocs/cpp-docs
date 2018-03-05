@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CTokenPrivileges"
-  - "CTokenPrivileges"
-  - "ATL.CTokenPrivileges"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTokenPrivileges class"
+f1_keywords: ["CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::Add", "ATLSECURITY/ATL::CTokenPrivileges::Delete", "ATLSECURITY/ATL::CTokenPrivileges::DeleteAll", "ATLSECURITY/ATL::CTokenPrivileges::GetCount", "ATLSECURITY/ATL::CTokenPrivileges::GetDisplayNames", "ATLSECURITY/ATL::CTokenPrivileges::GetLength", "ATLSECURITY/ATL::CTokenPrivileges::GetLuidsAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetNamesAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetPTOKEN_PRIVILEGES", "ATLSECURITY/ATL::CTokenPrivileges::LookupPrivilege"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTokenPrivileges class"]
 ms.assetid: 89590105-f001-4014-870d-142926091231
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTokenPrivileges Class
 This class is a wrapper for the **TOKEN_PRIVILEGES** structure.  
@@ -80,13 +61,13 @@ class CTokenPrivileges
 |[CTokenPrivileges::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
+ An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
  The access token is used to describe the various security privileges granted to each user. A privilege consists of a 64-bit number called a locally unique identifier ( [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)) and a descriptor string.  
   
  The `CTokenPrivileges` class is a wrapper for the [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure and contains 0 or more privileges. Privileges can be added, deleted, or queried using the supplied class methods.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -156,7 +137,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
  Returns true if the privilege was successfully deleted, false otherwise.  
   
 ### Remarks  
- This method is useful as a tool for creating restricted tokens under Windows 2000.  
+ This method is useful as a tool for creating restricted tokens.  
   
 ##  <a name="deleteall"></a>  CTokenPrivileges::DeleteAll  
  Deletes all privileges from the `CTokenPrivileges` access token object.  

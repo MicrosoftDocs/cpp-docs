@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_telli64"
-  - "_tell"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_telli64", "_tell"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tell"
-  - "telli64"
-  - "_telli64"
-  - "_tell"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tell function"
-  - "file pointers [C++], getting"
-  - "_tell function"
-  - "file pointers [C++]"
-  - "telli64 function"
-  - "_telli64 function"
+f1_keywords: ["tell", "telli64", "_telli64", "_tell"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tell function", "file pointers [C++], getting", "_tell function", "file pointers [C++]", "telli64 function", "_telli64 function"]
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _tell, _telli64
 Get the position of the file pointer.  
@@ -79,7 +41,7 @@ __int64 _telli64(
 ## Return Value  
  The current position of the file pointer. On devices incapable of seeking, the return value is undefined.  
   
- A return value of –1L indicates an error. If `handle` is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L.  
+ A return value of -1L indicates an error. If `handle` is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   

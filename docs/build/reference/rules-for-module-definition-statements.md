@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - ".def"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "module definition files, statement syntax"
-  - "module definition files"
+f1_keywords: [".def"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["module definition files, statement syntax", "module definition files"]
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Rules for Module-Definition Statements
 The following syntax rules apply to all statements in a .def file. Other rules that apply to specific statements are described with each statement.  
@@ -57,5 +39,4 @@ The following syntax rules apply to all statements in a .def file. Other rules t
 -   If a string argument matches a [reserved word](../../build/reference/reserved-words.md), it must be enclosed in double quotation marks (").  
   
 ## See Also  
- [Module-Definition (.Def) Files](../../build/reference/module-definition-dot-def-files.md)   
- [Frequently Asked Questions on Building](http://msdn.microsoft.com/en-us/56a3bb8f-0181-4989-bab4-a07ba950ab08)
+ [Module-Definition (.Def) Files](../../build/reference/module-definition-dot-def-files.md)  

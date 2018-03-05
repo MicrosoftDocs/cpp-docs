@@ -4,45 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_COLUMN_ENTRY_FIXED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PROVIDER_COLUMN_ENTRY_FIXED macro"
+ms.topic: "reference"
+f1_keywords: ["PROVIDER_COLUMN_ENTRY_FIXED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_FIXED macro"]
 ms.assetid: 71f9c9aa-56a0-488b-96ba-5c72da9c71d0
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # PROVIDER_COLUMN_ENTRY_FIXED
 Represents a specific column supported by the provider.  
   
 ## Syntax  
   
-```  
-  
-PROVIDER_COLUMN_ENTRY_FIXED(  
-name  
+```cpp
+PROVIDER_COLUMN_ENTRY_FIXED(name  
 , ordinal, dbtype, member )  
 ```  
   

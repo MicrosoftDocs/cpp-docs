@@ -4,36 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "delayed loading of DLLs, linker support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["delayed loading of DLLs, linker support"]
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Linker Support for Delay-Loaded DLLs
-The Visual C++ linker now supports the delayed loading of DLLs. This relieves you of the need to use the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] functions **LoadLibrary** and **GetProcAddress** to implement DLL delayed loading.  
+The Visual C++ linker now supports the delayed loading of DLLs. This relieves you of the need to use the Windows SDK functions **LoadLibrary** and **GetProcAddress** to implement DLL delayed loading.  
   
  Before Visual C++ 6.0, the only way to load a DLL at run time was by using **LoadLibrary** and **GetProcAddress**; the operating system would load the DLL when the executable or DLL using it was loaded.  
   
@@ -65,7 +49,7 @@ The Visual C++ linker now supports the delayed loading of DLLs. This relieves yo
   
 -   [Constraints of Delay Loading DLLs](../../build/reference/constraints-of-delay-loading-dlls.md)  
   
--   [Understanding the Helper Function](http://msdn.microsoft.com/en-us/6279c12c-d908-4967-b0b3-cabfc3e91d3d)  
+-   [Understanding the Helper Function](understanding-the-helper-function.md)  
   
 -   [Developing Your Own Helper Function](../../build/reference/developing-your-own-helper-function.md)  
   

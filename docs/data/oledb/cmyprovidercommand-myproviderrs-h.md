@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cmyprovidercommand"
-  - "myproviderrs.h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, wizard-generated files"
-  - "CMyProviderCommand class in MyProviderRS.H"
+ms.topic: "reference"
+f1_keywords: ["cmyprovidercommand", "myproviderrs.h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderCommand class in MyProviderRS.H"]
 ms.assetid: b30b956e-cc91-4cf5-9fe6-f8b1ce9cc2a5
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderCommand (MyProviderRS.H)
 The `CMyProviderCommand` class is the implementation for the provider command object. It provides the implementation for the `IAccessor`, `ICommandText`, and **ICommandProperties** interfaces. The `IAccessor` interface is the same as the one in the rowset. The command object uses the accessor to specify bindings for parameters. The rowset object uses them to specify bindings for output columns. The `ICommandText` interface is a useful way to specify a command textually. This example uses the `ICommandText` interface later when it adds custom code; it also overrides the `ICommand::Execute` method. The **ICommandProperties** interface handles all of the properties for the command and rowset objects.  

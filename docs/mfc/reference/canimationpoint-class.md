@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimationPoint"
-  - "afxanimationcontroller/CAnimationPoint"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationPoint class"
+f1_keywords: ["CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetX", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetY", "AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationPoint [MFC], CAnimationPoint", "CAnimationPoint [MFC], AddTransition", "CAnimationPoint [MFC], GetDefaultValue", "CAnimationPoint [MFC], GetValue", "CAnimationPoint [MFC], GetX", "CAnimationPoint [MFC], GetY", "CAnimationPoint [MFC], SetDefaultValue", "CAnimationPoint [MFC], GetAnimationVariableList", "CAnimationPoint [MFC], m_xValue", "CAnimationPoint [MFC], m_yValue"]
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationPoint Class
 Implements the functionality of a point whose coordinates can be animated.  

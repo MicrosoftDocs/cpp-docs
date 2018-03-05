@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/subsystem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/SUBSYSTEM editbin option"
-  - "-SUBSYSTEM editbin option"
-  - "SUBSYSTEM editbin option"
+f1_keywords: ["/subsystem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/SUBSYSTEM editbin option", "-SUBSYSTEM editbin option", "SUBSYSTEM editbin option"]
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM
 Specifies the execution environment that's required by the executable image.  
@@ -51,7 +32,7 @@ Specifies the execution environment that's required by the executable image.
  You can specify any of the following subsystems:  
   
  BOOT_APPLICATION  
- An application that runs in the Windows boot environment. For more information about boot applications, see[About the BCD WMI Provider](http://msdn.microsoft.com/library/aa362639.aspx).  
+ An application that runs in the Windows boot environment. For more information about boot applications, see [About the BCD WMI Provider](http://msdn.microsoft.com/library/aa362639.aspx).  
   
  CONSOLE  
  A Windows character-mode application. The operating system provides a console for console applications.  
@@ -66,7 +47,7 @@ Specifies the execution environment that's required by the executable image.
  An app that runs in the POSIX subsystem in Windows.  
   
  WINDOWS  
- An app that runs in the Windows graphical environment. This includes both desktop apps and Windows Store apps.  
+ An app that runs in the Windows graphical environment. This includes both desktop apps and Universal Windows Platform (UWP) apps.  
   
  WINDOWSCE  
  The WINDOWSCE subsystem indicates that the app is intended to run on a device that has a version of the Windows CE kernel. Versions of the kernel include PocketPC, Windows Mobile, Windows Phone 7, Windows CE V1.0-6.0R3, and Windows Embedded Compact 7.  

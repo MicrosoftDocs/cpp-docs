@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ Standard Library, reference"
-  - "C++ Standard Library"
-  - "template libraries"
-  - "libraries, Standard C++"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ Standard Library, reference", "C++ Standard Library", "template libraries", "libraries, Standard C++"]
 ms.assetid: a37d3ba3-58af-47c7-9ee2-441ccd7b77ee
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Reference
 A C++ program can call on a large number of functions from this conforming implementation of the C++ Standard Library. These functions perform essential services such as input and output and provide efficient implementations of frequently used operations.  

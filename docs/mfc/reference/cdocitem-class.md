@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDocItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "items, document"
-  - "document items"
-  - "server documents, document items"
-  - "CDocItem class"
-  - "container document items"
-  - "client document items"
-  - "OLE documents, items"
-  - "server documents"
+f1_keywords: ["CDocItem", "AFXOLE/CDocItem", "AFXOLE/CDocItem::GetDocument", "AFXOLE/CDocItem::IsBlank"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDocItem [MFC], GetDocument", "CDocItem [MFC], IsBlank"]
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDocItem Class
 The base class for document items, which are components of a document's data.  

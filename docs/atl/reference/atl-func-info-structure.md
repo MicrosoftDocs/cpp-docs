@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_ATL_FUNC_INFO"
-  - "ATL::_ATL_FUNC_INFO"
-  - "ATL._ATL_FUNC_INFO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ATL_FUNC_INFO structure"
-  - "ATL_FUNC_INFO structure"
+ms.topic: "reference"
+f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ATL_FUNC_INFO structure", "ATL_FUNC_INFO structure"]
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_FUNC_INFO Structure
 Contains type information used to describe a method or property on a dispinterface.  
@@ -65,7 +45,7 @@ struct _ATL_FUNC_INFO {
  An array of variant types of the function parameters.  
   
 ## Remarks  
- Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7) macro.  
+ Internally, ATL uses this structure to hold information obtained from a type library. You may need to manipulate this structure directly if you provide type information for an event handler used with the [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) class and [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) macro.  
   
 ## Example  
  Given a dispinterface method defined in IDL:  
@@ -82,7 +62,7 @@ struct _ATL_FUNC_INFO {
 ## See Also  
  [Structures](../../atl/reference/atl-structures.md)   
  [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
- [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7)
+ [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
 
 
 

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "marshal_context::~marshal_context"
-  - "msclr.interop.marshal_context.~marshal_context"
-  - "marshal_context.~marshal_context"
-  - "msclr::interop::marshal_context::~marshal_context"
-  - "~marshal_context"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "marshal_context class [C++], operations"
+f1_keywords: ["marshal_context::~marshal_context", "msclr.interop.marshal_context.~marshal_context", "marshal_context.~marshal_context", "msclr::interop::marshal_context::~marshal_context", "~marshal_context"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["marshal_context class [C++], operations"]
 ms.assetid: 34c41b38-4c33-4f61-b74e-831ac46b4ab5
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context::~marshal_context
 Destroys a `marshal_context` object.  

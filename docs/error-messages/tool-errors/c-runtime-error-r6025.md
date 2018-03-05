@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "R6025"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "R6025"
+f1_keywords: ["R6025"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["R6025"]
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6025
 pure virtual function call  
@@ -53,4 +35,4 @@ pure virtual function call
   
  This error is caused by calling a virtual function in an abstract base class through a pointer which is created by a cast to the type of the derived class, but is actually a pointer to the base class. This can occur when casting from a **void\*** to a pointer to a class when the **void\*** was created during the construction of the base class.  
   
- For more information, see the [Microsoft support](http://go.microsoft.com/fwlink/?LinkId=75220) website.
+ For more information, see the [Microsoft support](http://go.microsoft.com/fwlink/p/?linkid=75220) website.

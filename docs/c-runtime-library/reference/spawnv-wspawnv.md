@@ -4,65 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wspawnv"
-  - "_spawnv"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-process-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wspawnv", "_spawnv"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wspawnv"
-  - "_spawnv"
-  - "_wspawnv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wspawnv function"
-  - "processes, creating"
-  - "_spawnv function"
-  - "processes, executing new"
-  - "process creation"
-  - "_wspawnv function"
-  - "spawnv function"
+f1_keywords: ["wspawnv", "_spawnv", "_wspawnv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wspawnv function", "processes, creating", "_spawnv function", "processes, executing new", "process creation", "_wspawnv function", "spawnv function"]
 ms.assetid: 72360ef4-dfa9-44c1-88c1-b3ecb660aa7d
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _spawnv, _wspawnv
 Creates and executes a new process.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -90,7 +52,7 @@ intptr_t _wspawnv(
  Array of pointers to arguments. The argument `argv`[0] is usually a pointer to a path in real mode or to the program name in protected mode, and `argv`[1] through `argv`[`n`] are pointers to the character strings forming the new argument list. The argument `argv`[`n` +1] must be a `NULL` pointer to mark the end of the argument list.  
   
 ## Return Value  
- The return value from a synchronous `_spawnv` or `_wspawnv` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnv` or `_wspawnv` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of –1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
+ The return value from a synchronous `_spawnv` or `_wspawnv` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnv` or `_wspawnv` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values.  
   
  `E2BIG`  
  Argument list exceeds 1024 bytes.  
@@ -125,12 +87,6 @@ intptr_t _wspawnv(
   
 ## Example  
  See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

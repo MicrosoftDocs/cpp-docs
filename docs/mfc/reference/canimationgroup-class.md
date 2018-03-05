@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationGroup"
-  - "CAnimationGroup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationGroup class"
+f1_keywords: ["CAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationGroup::CAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationGroup::Animate", "AFXANIMATIONCONTROLLER/CAnimationGroup::ApplyTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::FindAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationGroup::GetGroupID", "AFXANIMATIONCONTROLLER/CAnimationGroup::RemoveKeyframes", "AFXANIMATIONCONTROLLER/CAnimationGroup::RemoveTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::Schedule", "AFXANIMATIONCONTROLLER/CAnimationGroup::SetAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::AddKeyframes", "AFXANIMATIONCONTROLLER/CAnimationGroup::AddTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::CreateTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutoclearTransitions", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutodestroyAnimationObjects", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutodestroyKeyframes", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_lstAnimationObjects", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_lstKeyFrames", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_pStoryboard", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_nGroupID", "AFXANIMATIONCONTROLLER/CAnimationGroup::m_pParentController"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationGroup [MFC], CAnimationGroup", "CAnimationGroup [MFC], Animate", "CAnimationGroup [MFC], ApplyTransitions", "CAnimationGroup [MFC], FindAnimationObject", "CAnimationGroup [MFC], GetGroupID", "CAnimationGroup [MFC], RemoveKeyframes", "CAnimationGroup [MFC], RemoveTransitions", "CAnimationGroup [MFC], Schedule", "CAnimationGroup [MFC], SetAutodestroyTransitions", "CAnimationGroup [MFC], AddKeyframes", "CAnimationGroup [MFC], AddTransitions", "CAnimationGroup [MFC], CreateTransitions", "CAnimationGroup [MFC], m_bAutoclearTransitions", "CAnimationGroup [MFC], m_bAutodestroyAnimationObjects", "CAnimationGroup [MFC], m_bAutodestroyKeyframes", "CAnimationGroup [MFC], m_lstAnimationObjects", "CAnimationGroup [MFC], m_lstKeyFrames", "CAnimationGroup [MFC], m_pStoryboard", "CAnimationGroup [MFC], m_nGroupID", "CAnimationGroup [MFC], m_pParentController"]
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationGroup Class
 Implements an animation group, which combines an animation storyboard, animation objects, and transitions to define an animation.  

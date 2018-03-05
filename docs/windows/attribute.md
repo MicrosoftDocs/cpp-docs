@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.attribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__typeof keyword"
-  - "custom attributes, creating"
-  - "attribute attribute"
-  - "attributes [C++], custom"
+f1_keywords: ["vc-attr.attribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__typeof keyword", "custom attributes, creating", "attribute attribute", "attributes [C++], custom"]
 ms.assetid: 8cb3489f-65c4-44ea-b0aa-3c3c6b15741d
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # attribute
 Allows you to create a custom attribute.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/DELAY:UNLOAD linker option"
-  - "DELAY:UNLOAD linker option"
-  - "__FUnloadDelayLoadedDLL2"
-  - "delayed loading of DLLs, unloading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["/DELAY:UNLOAD linker option", "DELAY:UNLOAD linker option", "__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
 ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Explicitly Unloading a Delay-Loaded DLL
 The [/delay](../../build/reference/delay-delay-load-import-settings.md):unload linker option allows you to unload a DLL that was delay loaded. By default, when your code unloads the DLL (using /delay:unload and **__FUnloadDelayLoadedDLL2**), the delay-loaded imports remain in the import address table (IAT). However, if you use /delay:unload on the linker command line, the helper function will support the explicit unloading of the DLL, resetting the IAT to its original form; the now-invalid pointers will be overwritten. The IAT is a field in the [ImgDelayDescr](../../build/reference/calling-conventions-parameters-and-return-type.md) that contains the address of a copy of the original IAT (if it exists).  

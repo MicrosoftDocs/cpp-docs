@@ -4,50 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::CDynamicAccessor::GetColumnName"
-  - "GetColumnName"
-  - "ATL.CDynamicAccessor.GetColumnName"
-  - "CDynamicAccessor::GetColumnName"
-  - "CDynamicAccessor.GetColumnName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetColumnName method"
+ms.topic: "reference"
+f1_keywords: ["ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetColumnName method"]
 ms.assetid: 96a7452a-1f5b-41e9-ab37-88dac026f961
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetColumnName
 Retrieves the name of the specified column.  
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetColumnName(   
-   DBORDINAL nColumn    
-) const throw( );  
+```cpp
+      LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();  
 ```  
   
 #### Parameters  

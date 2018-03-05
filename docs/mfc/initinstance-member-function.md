@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "InitInstance"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "InitInstance method"
-  - "applications [MFC], initializing"
-  - "MFC [C++], initializing"
-  - "initializing MFC applications"
+f1_keywords: ["InitInstance"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["InitInstance method [MFC]", "applications [MFC], initializing", "MFC, initializing", "initializing MFC applications"]
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # InitInstance Member Function
 The Windows operating system allows you to run more than one copy, or "instance," of the same application. `WinMain` calls [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) every time a new instance of the application starts.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDockablePaneAdapter"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDockablePaneAdapter class"
+f1_keywords: ["CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::GetWrappedWnd", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDockablePaneAdapter [MFC], GetWrappedWnd", "CDockablePaneAdapter [MFC], LoadState", "CDockablePaneAdapter [MFC], SaveState", "CDockablePaneAdapter [MFC], SetWrappedWnd"]
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDockablePaneAdapter Class
 Provides docking support for `CWnd`-derived panes.  

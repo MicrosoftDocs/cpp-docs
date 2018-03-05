@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "A2219"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "A2219"
+ms.topic: "error-reference"
+f1_keywords: ["A2219"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["A2219"]
 ms.assetid: 5ebc2f40-e47e-4f8e-b7b9-960b9cfc9f6d
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2219
 **Bad alignment for offset in unwind code**  

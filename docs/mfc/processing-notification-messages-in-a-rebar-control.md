@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RBN_ notification messages, description of"
-  - "CReBarCtrl class, notification messages sent by"
-  - "RBN_ notification messages"
-  - "notifications, CReBarCtrl"
+dev_langs: ["C++"]
+helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in a Rebar Control
 In the parent class of the rebar control, create an `OnChildNotify` handler function with a switch statement for any rebar-control (`CReBarCtrl`) notification messages you want to handle. Notifications are sent to the parent window when the user drags objects over the rebar control, changes the layout of the rebar bands, deletes bands from the rebar control, and so on.  
@@ -58,7 +39,7 @@ In the parent class of the rebar control, create an `OnChildNotify` handler func
   
 -   **RBN_LAYOUTCHANGED** Sent by a rebar control when the user changes the layout of the control's bands.  
   
- For more information on these notifications, see [Rebar Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb774375) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information on these notifications, see [Rebar Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   

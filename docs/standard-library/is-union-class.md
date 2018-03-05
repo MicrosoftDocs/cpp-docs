@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_union"
-  - "std::is_union"
-  - "type_traits/std::is_union"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_union class"
-  - "is_union"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_union"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_union class", "is_union"]
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_union Class
 Tests if type is a union.  

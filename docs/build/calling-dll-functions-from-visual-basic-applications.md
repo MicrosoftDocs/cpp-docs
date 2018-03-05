@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functions [C++], calling DLL functions from Visual Basic"
-  - "DLL functions [C++]"
-  - "function calls [C++], DLL functions"
-  - "DLLs [C++], calling"
-  - "calling DLL functions from VB applications [C++]"
-  - "__stdcall keyword [C++]"
-  - "DLL functions [C++], calling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["functions [C++], calling DLL functions from Visual Basic", "DLL functions [C++]", "function calls [C++], DLL functions", "DLLs [C++], calling", "calling DLL functions from VB applications [C++]", "__stdcall keyword [C++]", "DLL functions [C++], calling"]
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Calling DLL Functions from Visual Basic Applications
 For Visual Basic applications (or applications in other languages such as Pascal or Fortran) to call functions in a C/C++ DLL, the functions must be exported using the correct calling convention without any name decoration done by the compiler.  
@@ -78,7 +56,7 @@ EXPORTS
    INITCODE=_InitCode@0  
 ```  
   
- For DLLs to be called by programs written in Visual Basic, the alias technique shown in this topic is needed in the .def file. If the alias is done in the Visual Basic program, use of aliasing in the .def file is not necessary. It can be done in the Visual Basic program by adding an alias clause to the [Declare](/dotnet/articles/visual-basic/language-reference/statements/declare-statement) statement.  
+ For DLLs to be called by programs written in Visual Basic, the alias technique shown in this topic is needed in the .def file. If the alias is done in the Visual Basic program, use of aliasing in the .def file is not necessary. It can be done in the Visual Basic program by adding an alias clause to the [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement) statement.  
   
 ## What do you want to know more about?  
   

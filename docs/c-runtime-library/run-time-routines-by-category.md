@@ -4,43 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.runtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "routines, run-time"
-  - "functions [CRT], run-time"
-  - "categories, run-time functions"
-  - "functions [CRT]"
+f1_keywords: ["c.runtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["routines, run-time", "functions [CRT], run-time", "categories, run-time functions", "functions [CRT]"]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Run-Time Routines by Category
-This section lists and describes Microsoft run-time library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte – character counterparts, where they exist.  
-  
- This section also provides .NET Framework equivalent methods or classes where available.  
+This section lists and describes Microsoft run-time library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte - character counterparts, where they exist.  
   
  The main categories of Microsoft run-time library routines are:  
   

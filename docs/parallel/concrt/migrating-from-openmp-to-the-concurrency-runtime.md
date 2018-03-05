@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, migrating from OpenMP"
-  - "OpenMP, migrating to the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, migrating from OpenMP", "OpenMP, migrating to the Concurrency Runtime"]
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Migrating from OpenMP to the Concurrency Runtime
 The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. The documents in this section compare [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) to the Concurrency Runtime and provide examples about how to migrate existing OpenMP code to use the Concurrency Runtime.  
@@ -53,7 +36,7 @@ The Concurrency Runtime enables a variety of programming models. These models ma
 |You require exception handling support.|The PPL lets you catch exceptions both inside and outside of a parallel region or loop. In OpenMP, you must handle the exception inside of the parallel region or loop.|  
 |You require a cancellation mechanism.|The PPL enables applications to cancel both individual tasks and parallel trees of work. OpenMP requires the application to implement its own cancellation mechanism.|  
 |You require parallel code to finish in a different context from which it starts.|The Concurrency Runtime lets you start a task in one context, and then wait on or cancel that task in another context. In OpenMP, all parallel work must finish in the context from which it starts.|  
-|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window), and [Walkthrough: Debugging a Parallel Application](http://msdn.microsoft.com/library/2820ac4c-c893-4d87-8c62-83981d561493).|  
+|You require enhanced debugging support.|Visual Studio provides the **Parallel Stacks** and **Parallel Tasks** windows so that you can more easily debug multithreaded applications.<br /><br /> For more information about debugging support for the Concurrency Runtime, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window), and [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).|  
   
 ## When Not to Migrate from OpenMP to the Concurrency Runtime  
  The following cases describe when it might not be appropriate to migrate existing OpenMP code to use the Concurrency Runtime.  

@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbctolower_l"
-  - "_mbctoupper_l"
-  - "_mbctoupper"
-  - "_mbctolower"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbctolower_l", "_mbctoupper_l", "_mbctoupper", "_mbctolower"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbctoupper_l"
-  - "mbctolower_l"
-  - "_mbctolower"
-  - "_mbctolower_l"
-  - "_mbctoupper"
-  - "mbctoupper"
-  - "mbctolower"
-  - "_mbctoupper_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbctolower function"
-  - "mbctolower_l function"
-  - "totupper function"
-  - "_mbctoupper function"
-  - "totlower function"
-  - "_mbctoupper_l function"
-  - "mbctolower function"
-  - "_totupper function"
-  - "_mbctolower_l function"
-  - "mbctoupper_l function"
-  - "_totlower function"
-  - "mbctoupper function"
+f1_keywords: ["mbctoupper_l", "mbctolower_l", "_mbctolower", "_mbctolower_l", "_mbctoupper", "mbctoupper", "mbctolower", "_mbctoupper_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbctolower function", "mbctolower_l function", "totupper function", "_mbctoupper function", "totlower function", "_mbctoupper_l function", "mbctolower function", "_totupper function", "_mbctolower_l function", "mbctoupper_l function", "_totlower function", "mbctoupper function"]
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 Tests and converts the case of a multibyte character.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -115,7 +65,7 @@ unsigned int _mbctoupper_l(
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The version of this function without the `_l` suffix uses the current locale for this locale-dependent behavior; the version with the `_l` suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
- In previous versions, `_mbctolower` was called`jtolower`, and `_mbctoupper` was called `jtoupper`. For new code, use the new names instead.  
+ In previous versions, `_mbctolower` was called `jtolower`, and `_mbctoupper` was called `jtoupper`. For new code, use the new names instead.  
   
 ### Generic-Text Routine Mappings  
   

@@ -4,95 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsupr_l"
-  - "_mbsupr"
-  - "_strupr_l"
-  - "_wcsupr"
-  - "_wcsupr_l"
-  - "_strupr"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntoskrnl.exe"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsupr_l", "_mbsupr", "_strupr_l", "_wcsupr", "_wcsupr_l", "_strupr"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbsupr"
-  - "_ftcsupr"
-  - "mbsupr"
-  - "_tcsupr"
-  - "strupr_l"
-  - "_fstrupr"
-  - "_strupr"
-  - "mbsupr_l"
-  - "_wcsupr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsupr_l function"
-  - "mbsupr function"
-  - "strupr function"
-  - "uppercase, converting strings to"
-  - "wcsupr function"
-  - "_wcsupr function"
-  - "string conversion [C++], case"
-  - "ftcsupr function"
-  - "_ftcsupr function"
-  - "_wcsupr_l function"
-  - "wcsupr_l function"
-  - "strings [C++], case"
-  - "tcsupr function"
-  - "_tcsupr_l function"
-  - "_fstrupr function"
-  - "_strupr_l function"
-  - "_mbsupr_l function"
-  - "converting case, CRT functions"
-  - "fstrupr function"
-  - "mbsupr_l function"
-  - "strupr_l function"
-  - "_strupr function"
-  - "_mbsupr function"
-  - "_tcsupr function"
-  - "strings [C++], converting case"
+f1_keywords: ["_mbsupr", "_ftcsupr", "mbsupr", "_tcsupr", "strupr_l", "_fstrupr", "_strupr", "mbsupr_l", "_wcsupr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsupr_l function", "mbsupr function", "strupr function", "uppercase, converting strings to", "wcsupr function", "_wcsupr function", "string conversion [C++], case", "ftcsupr function", "_ftcsupr function", "_wcsupr_l function", "wcsupr_l function", "strings [C++], case", "tcsupr function", "_tcsupr_l function", "_fstrupr function", "_strupr_l function", "_mbsupr_l function", "converting case, CRT functions", "fstrupr function", "mbsupr_l function", "strupr_l function", "_strupr function", "_mbsupr function", "_tcsupr function", "strings [C++], converting case"]
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 Converts a string to uppercase. More secure versions of these functions are available; see [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](../../c-runtime-library/reference/strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbsupr` and `_mbsupr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsupr` and `_mbsupr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -185,9 +117,6 @@ unsigned char *_mbsupr_l(
   
 ## Example  
  See the example for [_strlwr](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md).  
-  
-## .NET Framework Equivalent  
- [System::String::ToUpper](https://msdn.microsoft.com/en-us/library/system.string.toupper.aspx)  
   
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   

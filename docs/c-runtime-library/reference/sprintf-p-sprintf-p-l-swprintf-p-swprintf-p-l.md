@@ -4,72 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_sprintf_p"
-  - "_swprintf_p_l"
-  - "_swprintf_p"
-  - "_sprintf_p_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_sprintf_p", "_swprintf_p_l", "_swprintf_p", "_sprintf_p_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_sprintf_p"
-  - "_swprintf_p_l"
-  - "_sprintf_p_l"
-  - "_swprintf_p"
-  - "sprintf_p"
-  - "swprint_p_l"
-  - "swprintf_p"
-  - "swprintf_p_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sprintf_p_l function"
-  - "swprintf_p function"
-  - "swprintf_p_l function"
-  - "_sprintf_p function"
-  - "_sprintf_p_l function"
-  - "_swprintf_p function"
-  - "sprintf_p function"
-  - "_stprintf_p function"
-  - "stprintf_p function"
-  - "_swprintf_p_l function"
-  - "stprintf_p_l function"
-  - "formatted text [C++]"
-  - "_stprintf_p_l function"
+f1_keywords: ["_sprintf_p", "_swprintf_p_l", "_sprintf_p_l", "_swprintf_p", "sprintf_p", "swprint_p_l", "swprintf_p", "swprintf_p_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sprintf_p_l function", "swprintf_p function", "swprintf_p_l function", "_sprintf_p function", "_sprintf_p_l function", "_swprintf_p function", "sprintf_p function", "_stprintf_p function", "stprintf_p function", "_swprintf_p_l function", "stprintf_p_l function", "formatted text [C++]", "_stprintf_p_l function"]
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 Write formatted data to a string with the ability to specify the order that the parameters are used in the format string.  
@@ -81,27 +30,27 @@ int _sprintf_p(
    char *buffer,  
    size_t sizeOfBuffer,  
    const char *format [,  
-   argument] ...   
+   argument_list]  
 );  
 int _sprintf_p_l(  
    char *buffer,  
    size_t sizeOfBuffer,  
    const char *format,  
    locale_t locale [,  
-   argument] ...   
+   argument_list]  
 );  
 int _swprintf_p(  
    wchar_t *buffer,  
    size_t sizeOfBuffer,  
    const wchar_t *format [,  
-   argument]...  
+   argument_list]  
 );  
 int _swprintf_p_l(  
    wchar_t *buffer,  
    size_t sizeOfBuffer,  
    const wchar_t *format,  
    locale_t locale [,  
-   argument] …   
+   argument_list]   
 );  
 ```  
   
@@ -113,10 +62,10 @@ int _swprintf_p_l(
  Maximum number of characters to store.  
   
  `format`  
- Format-control string  
+ Format-control string.  
   
- `argument`  
- Optional arguments  
+ `argument_list`  
+ Optional arguments to the format string.  
   
  `locale`  
  The locale to use.  
@@ -124,14 +73,14 @@ int _swprintf_p_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or –1 if an error occurred.  
+ The number of characters written, or -1 if an error occurred.  
   
 ## Remarks  
- The `_sprintf_p` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for `printf_p`. A `NULL` character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined. The difference between `_sprintf_p` and `sprintf_s` is that `_sprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+ The `_sprintf_p` function formats and stores a series of characters and values in `buffer`. Each argument in the `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). A `NULL` character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined. The difference between `_sprintf_p` and `sprintf_s` is that `_sprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- `_swprintf_p` is a wide-character version of `_sprintf_p`; the pointer arguments to `_swprintf_p` are wide-character strings. Detection of encoding errors in `_swprintf_p` may differ from that in `_sprintf_p`. `_swprintf_p` and `fwprintf_p` behave identically except that `_swprintf_p` writes output to a string rather than to a destination of type `FILE`, and `_swprintf_p` requires the `count`parameter to specify the maximum number of characters to be written. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
+ `_swprintf_p` is a wide-character version of `_sprintf_p`; the pointer arguments to `_swprintf_p` are wide-character strings. Detection of encoding errors in `_swprintf_p` may differ from that in `_sprintf_p`. `_swprintf_p` and `fwprintf_p` behave identically except that `_swprintf_p` writes output to a string rather than to a destination of type `FILE`, and `_swprintf_p` requires the `count` parameter to specify the maximum number of characters to be written. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   
- `_sprintf_p` returns the number of bytes stored in `buffer`, not counting the terminating `NULL` character. `_swprintf_p`returns the number of wide characters stored in `buffer`, not counting the terminating `NULL` wide character. If `buffer` or `format` is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
+ `_sprintf_p` returns the number of bytes stored in `buffer`, not counting the terminating `NULL` character. `_swprintf_p` returns the number of wide characters stored in `buffer`, not counting the terminating `NULL` wide character. If `buffer` or `format` is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
   
 ### Generic-Text Routine Mappings  
   
@@ -151,7 +100,7 @@ int _swprintf_p_l(
   
 ## Example  
   
-```  
+```C  
 // crt_sprintf_p.c  
 // This program uses _sprintf_p to format various  
 // data and place them in the string named buffer.  
@@ -194,7 +143,7 @@ character count = 79
   
 ## Example  
   
-```  
+```C  
 // crt_swprintf_p.c  
 // This is the wide character example which  
 // also demonstrates _swprintf_p returning  
@@ -223,9 +172,6 @@ int main( void )
 Wrote 24 characters  
 Wrote -1 characters  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

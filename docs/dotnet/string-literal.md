@@ -4,37 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "string literals"
-  - "strings [C++], string literals"
+dev_langs: ["C++"]
+helpviewer_keywords: ["string literals", "strings [C++], string literals"]
 ms.assetid: 6d1fc3f8-0d58-4d68-9678-16b4f6dc4766
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # String Literal
-The handling of string literals has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The handling of string literals has changed from Managed Extensions for C++ to Visual C++.  
   
  In the Managed Extensions for C++ language design, a managed string literal was indicated by prefacing the string literal with an `S`. For example:  
   
@@ -91,7 +74,7 @@ int main () {
   
 3.  Select the function that represents the best match of the call. This is done by ranking the conversions applied to transform the arguments to the type of the viable function parameters. This is relatively straight-forward with a single parameter function; it becomes somewhat more complex when there are multiple parameters. A call fails during this phase if there is no best match. That is, if the conversions necessary to transform the type of the actual argument to the type of the formal parameter are equally good. The call is flagged as ambiguous.  
   
- In Managed Extensions, the resolution of this call invoked the `const char*` instance as the best match. In the new syntax, the conversion necessary to match `"abc"` to `const char*` and `String^` are now equivalent – that is, equally good – and so the call is flagged as bad – that is, as ambiguous.  
+ In Managed Extensions, the resolution of this call invoked the `const char*` instance as the best match. In the new syntax, the conversion necessary to match `"abc"` to `const char*` and `String^` are now equivalent - that is, equally good - and so the call is flagged as bad - that is, as ambiguous.  
   
  This leads us to two questions:  
   
@@ -99,9 +82,9 @@ int main () {
   
 -   What is the algorithm for determining when one type conversion is better than another?  
   
- The type of the string literal `"abc"` is `const char[4]` – remember, there is an implicit null terminating character at the end of every string literal.  
+ The type of the string literal `"abc"` is `const char[4]` - remember, there is an implicit null terminating character at the end of every string literal.  
   
- The algorithm for determining when one type conversion is better than another involves placing the possible type conversions in a hierarchy. Here is my understanding of that hierarchy – all these conversions, of course, are implicit. Using an explicit cast notation overrides the hierarchy similar to the way parentheses overrides the usual operator precedence of an expression.  
+ The algorithm for determining when one type conversion is better than another involves placing the possible type conversions in a hierarchy. Here is my understanding of that hierarchy - all these conversions, of course, are implicit. Using an explicit cast notation overrides the hierarchy similar to the way parentheses overrides the usual operator precedence of an expression.  
   
 1.  An exact match is best. Surprisingly, for an argument to be an exact match, it does not need to exactly match the parameter type; it just needs to be close enough. This is the key to understanding what is going on in this example, and how the language has changed.  
   

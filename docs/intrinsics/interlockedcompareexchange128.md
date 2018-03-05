@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedCompareExchange128_cpp"
-  - "_InterlockedCompareExchange128"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cmpxchg16b instruction"
-  - "_InterlockedCompareExchange128 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange128
 **Microsoft Specific**  
@@ -140,7 +120,7 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

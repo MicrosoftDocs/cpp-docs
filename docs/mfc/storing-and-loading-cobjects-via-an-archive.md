@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CObjects, loading through archives"
-  - "CArchive class, storing and loading objects"
-  - "Serialize method, vs. CArchive operators"
-  - "CObject class, CArchive objects"
-  - "CObjects"
+f1_keywords: ["CObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObjects [MFC], loading through archives", "CArchive class [MFC], storing and loading objects", "Serialize method, vs. CArchive operators", "CObject class [MFC], CArchive objects", "CObjects [MFC]"]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Storing and Loading CObjects via an Archive
 Storing and loading `CObject`s via an archive requires extra consideration. In certain cases, you should call the `Serialize` function of the object, where the `CArchive` object is a parameter of the `Serialize` call, as opposed to using the **<\<** or **>>** operator of the `CArchive`. The important fact to keep in mind is that the `CArchive` **>>** operator constructs the `CObject` in memory based on `CRuntimeClass` information previously written to the file by the storing archive.  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3190"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3190"
+f1_keywords: ["C3190"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3190"]
 ms.assetid: 7c701afa-85a7-4f7a-8881-0662436ac244
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3190
 'instantiation' with the provided template arguments is not the explicit instantiation of any member function of 'type'  

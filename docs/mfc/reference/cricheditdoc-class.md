@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRichEditDoc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document/view architecture, rich edit controls"
-  - "OLE containers, rich edit"
-  - "documents, rich edit"
-  - "rich edit controls, OLE container"
-  - "CRichEditDoc class"
+f1_keywords: ["CRichEditDoc", "AFXRICH/CRichEditDoc", "AFXRICH/CRichEditDoc::CreateClientItem", "AFXRICH/CRichEditDoc::GetStreamFormat", "AFXRICH/CRichEditDoc::GetView", "AFXRICH/CRichEditDoc::m_bRTF"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRichEditDoc [MFC], CreateClientItem", "CRichEditDoc [MFC], GetStreamFormat", "CRichEditDoc [MFC], GetView", "CRichEditDoc [MFC], m_bRTF"]
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRichEditDoc Class
 With [CRichEditView](../../mfc/reference/cricheditview-class.md) and [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md), provides the functionality of the rich edit control within the context of MFC's document view architecture.  
@@ -107,7 +86,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
   
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
  Call this function to determine the text format for streaming the contents of the rich edit.  

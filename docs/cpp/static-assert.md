@@ -4,51 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "C2338"
-  - "static_assert_cpp"
-  - "static_assert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ keywords, static_assert"
-  - "C2338"
-  - "assertions [C++], static_assert"
-  - "static_assert"
+f1_keywords: ["static_assert_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ keywords, static_assert", "C2338", "assertions [C++], static_assert", "static_assert"]
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # static_assert
-Tests a software assertion at compile time. If the specified constant expression is `false`, the compiler displays the specified message and the compilation fails with error C2338; otherwise, the declaration has no effect.  
+Tests a software assertion at compile time. If the specified constant expression is `false`, the compiler displays the specified message, if one is provided, and the compilation fails with error C2338; otherwise, the declaration has no effect.  
   
 ## Syntax  
   
-```  
-static_assert(   
-    constant-expression,   
-    string-literal   
-);  
+```   
+static_assert( constant-expression, string-literal );  
+
+**Visual Studio 2017 and later:**
+static_assert( constant-expression ); 
 ```  
   
 #### Parameters  
@@ -59,7 +37,7 @@ static_assert(
 |`string-literal`|An message that is displayed if the `constant-expression` parameter is zero. The message is a string of characters in the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).|  
   
 ## Remarks  
- The `constant-expression` parameter of a `static_assert` declaration represents a *software assertion*. A software assertion specifies a condition that you expect to be true at a particular point in your program. If the condition is true, the `static_assert` declaration has no effect. If the condition is false, the assertion fails, the compiler displays the message in `string-literal` parameter, and the compilation fails with an error.  
+ The `constant-expression` parameter of a `static_assert` declaration represents a *software assertion*. A software assertion specifies a condition that you expect to be true at a particular point in your program. If the condition is true, the `static_assert` declaration has no effect. If the condition is false, the assertion fails, the compiler displays the message in `string-literal` parameter, and the compilation fails with an error. In Visual Studio 2017 and later, the string-literal parameter is optional. 
   
  The `static_assert` declaration tests a software assertion at compile time. In contrast, the [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) macro tests a software assertion at run time and incurs a run time cost in space or time. The `static_assert` declaration is especially useful for debugging templates because template arguments can be included in the `constant-expression` parameter.  
   

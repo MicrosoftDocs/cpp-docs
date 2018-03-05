@@ -4,56 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.controls.messages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_VKEYTOITEM_REFLECT macro"
-  - "ON_WM_DRAWITEM_REFLECT macro"
-  - "ON_WM_VSCROLL_REFLECT macro"
-  - "ON_NOTIFY_REFLECT message"
-  - "ON_CONTROL_REFLECT_EX macro"
-  - "ON_UPDATE_COMMAND_UI_REFLECT macro"
-  - "ON_NOTIFY_REFLECT_EX message"
-  - "ON_WM_HSCROLL_REFLECT macro"
-  - "message reflection"
-  - "ON_WM_COMPAREITEM_REFLECT macro"
-  - "ON_WM_MEASUREITEM_REFLECT macro"
-  - "ON_NOTIFY message"
-  - "WM_COMMAND"
-  - "WM_CTLCOLOR message"
-  - "TN062"
-  - "ON_WM_CHARTOITEM_REFLECT macro"
-  - "ON_WM_CTLCOLOR_REFLECT macro"
-  - "ON_WM_DELETEITEM_REFLECT macro"
-  - "notification messages"
-  - "ON_WM_PARENTNOTIFY_REFLECT macro"
-  - "WM_NOTIFY message"
-  - "ON_CONTROL_REFLECT macro"
+f1_keywords: ["vc.controls.messages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_VKEYTOITEM_REFLECT macro [MFC]", "ON_WM_DRAWITEM_REFLECT macro [MFC]", "ON_WM_VSCROLL_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT message [MFC]", "ON_CONTROL_REFLECT_EX macro [MFC]", "ON_UPDATE_COMMAND_UI_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT_EX message [MFC]", "ON_WM_HSCROLL_REFLECT macro [MFC]", "message reflection [MFC]", "ON_WM_COMPAREITEM_REFLECT macro [MFC]", "ON_WM_MEASUREITEM_REFLECT macro [MFC]", "ON_NOTIFY message [MFC]", "WM_COMMAND [MFC]", "WM_CTLCOLOR message [MFC]", "TN062 [MFC]", "ON_WM_CHARTOITEM_REFLECT macro [MFC]", "ON_WM_CTLCOLOR_REFLECT macro [MFC]", "ON_WM_DELETEITEM_REFLECT macro [MFC]", "notification messages [MFC]", "ON_WM_PARENTNOTIFY_REFLECT macro [MFC]", "WM_NOTIFY message [MFC]", "ON_CONTROL_REFLECT macro"]
 ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN062: Message Reflection for Windows Controls
 > [!NOTE]

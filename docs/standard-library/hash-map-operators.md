@@ -5,21 +5,23 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 caps.latest.revision: 13
 manager: "ghogen"
 ---
 # &lt;hash_map&gt; operators
-||||  
-|-|-|-|  
-|[operator!=](#operator_neq)|[operator!= (hash_map)](#operator_neq__hash_map_)|[operator==](#operator_eq_eq)|  
-|[operator== (hash_map)](#operator_eq_eq__hash_map_)|  
+|||  
+|-|-|  
+|[operator!=](#op_neq)|[operator!= (multimap)](#op_neq_mm)|
+|[operator==](#op_eq_eq)|[operator== (multimap)](#op_eq_eq_mm)|
   
-##  <a name="operator_neq__hash_map_"></a>  operator!= (hash_map)  
+##  <a name="op_neq"></a>  operator!=  
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
+>  This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).  
   
  Tests if the hash_map object on the left side of the operator is not equal to the hash_map object on the right side.  
   
@@ -28,10 +30,10 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `hash_map`.  
   
- ` right`  
+ `right`  
  An object of type `hash_map`.  
   
 ### Return Value  
@@ -40,7 +42,7 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 ### Remarks  
  The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+ Members of the [<hash_map>](hash-map.md) and [<hash_set>](hash-set.md) header files in the [ stdext Namespace](stdext-namespace.md).  
   
 ### Example  
   
@@ -82,10 +84,10 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq__hash_map_"></a>  operator== (hash_map)  
+##  <a name="op_eq_eq"></a>  operator== 
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
+>  This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).  
   
  Tests if the hash_map object on the left side of the operator is equal to the hash_map object on the right side.  
   
@@ -94,10 +96,10 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `hash_map`.  
   
- ` right`  
+ `right`  
  An object of type `hash_map`.  
   
 ### Return Value  
@@ -105,9 +107,7 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
   
 ### Remarks  
  The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
-  
+    
 ### Example  
   
 ```cpp  
@@ -148,10 +148,10 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq_mm"></a>  operator!= (hash_multimap) 
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
+>  This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).  
   
  Tests if the hash_multimap object on the left side of the operator is not equal to the hash_multimap object on the right side.  
   
@@ -160,10 +160,10 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `hash_multimap`.  
   
- ` right`  
+ `right`  
  An object of type `hash_multimap`.  
   
 ### Return Value  
@@ -171,9 +171,7 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Remarks  
  The comparison between hash_multimap objects is based on a pairwise comparison of their elements. Two hash_multimaps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
-  
+   
 ### Example  
   
 ```cpp  
@@ -214,10 +212,10 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq_mm"></a>  operator==  (hash_multimap)
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
+>  This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).  
   
  Tests if the hash_multimap object on the left side of the operator is equal to the hash_multimap object on the right side.  
   
@@ -226,10 +224,10 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `hash_multimap`.  
   
- ` right`  
+ `right`  
  An object of type `hash_multimap`.  
   
 ### Return Value  
@@ -237,8 +235,6 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Remarks  
  The comparison between hash_multimap objects is based on a pairwise comparison of their elements. Two hash_multimaps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
   
@@ -281,5 +277,5 @@ The hash_multimaps hm1 and hm3 are equal.
 ```  
   
 ## See Also  
- [<hash_map>](../standard-library/hash-map.md)
+ [<hash_map>](hash-map.md)
 

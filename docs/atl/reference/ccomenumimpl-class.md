@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComEnumImpl"
-  - "ATL::CComEnumImpl"
-  - "CComEnumImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComEnumImpl class"
+f1_keywords: ["CComEnumImpl", "ATLCOM/ATL::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::Clone", "ATLCOM/ATL::CComEnumImpl::Init", "ATLCOM/ATL::CComEnumImpl::Next", "ATLCOM/ATL::CComEnumImpl::Reset", "ATLCOM/ATL::CComEnumImpl::Skip", "ATLCOM/ATL::CComEnumImpl::m_begin", "ATLCOM/ATL::CComEnumImpl::m_dwFlags", "ATLCOM/ATL::CComEnumImpl::m_end", "ATLCOM/ATL::CComEnumImpl::m_iter", "ATLCOM/ATL::CComEnumImpl::m_spUnk"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComEnumImpl class"]
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComEnumImpl Class
 This class provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array.  
@@ -157,17 +138,14 @@ HRESULT Init(
   
  The `flags` parameter allows you to specify how the enumerator should treat the array elements passed to it. `flags` can take one of the values from the **CComEnumFlags** enumeration shown below:  
   
- `enum CComEnumFlags`  
-  
- `{`  
-  
- `AtlFlagNoCopy = 0,`  
-  
- `AtlFlagTakeOwnership = 2, // BitOwn`  
-  
- `AtlFlagCopy = 3           // BitOwn | BitCopy`  
-  
- `};`  
+```  
+enum CComEnumFlags  
+   {  
+   AtlFlagNoCopy = 0,  
+   AtlFlagTakeOwnership = 2, // BitOwn  
+   AtlFlagCopy = 3           // BitOwn | BitCopy  
+   };  
+```  
   
  **AtlFlagNoCopy** means that the array's lifetime is not controlled by the enumerator. In this case, either the array will be static or the object identified by *pUnk* will be responsible for freeing the array when it's no longer needed.  
   

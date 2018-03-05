@@ -4,44 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDispEventImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDispEventImpl class, using"
+f1_keywords: ["IDispEventImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDispEventImpl class, using"]
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using IDispEventImpl
 When using `IDispEventImpl` to handle events, you will need to:  
   
 -   Derive your class from [IDispEventImpl](../atl/reference/idispeventimpl-class.md).  
   
--   Add an [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) to your class.  
+-   Add an event sink map to your class.  
   
--   Add entries to the event sink map using the [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro.  
+-   Add entries to the event sink map using the [SINK_ENTRY](reference/composite-control-macros.md#sink_entry) or [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex) macro.  
   
 -   Implement the methods that you're interested in handling.  
   

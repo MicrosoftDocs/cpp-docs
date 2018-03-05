@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "testing, OLE DB providers"
-  - "testing providers"
-  - "OLE DB providers, calling"
-  - "OLE DB providers, testing"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing the Read-Only Provider
 To test a provider, you need a consumer. It helps if the consumer can match up with the provider. The OLE DB consumer templates are a thin wrapper around OLE DB and match with the provider COM objects. Because the source is shipped with the consumer templates, it is easy to debug a provider with them. The consumer templates are also a very small and fast way to develop consumer applications.  
@@ -61,7 +42,7 @@ To test a provider, you need a consumer. It helps if the consumer can match up w
   
  Open the header file for the dialog class (in this case TestProvDlg.h). Add the following code to the header file (outside of any class declarations):  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // TestProvDlg.h  
   
@@ -84,13 +65,13 @@ END_COLUMN_MAP()
   
  Add a handler function for the **Run** button by pressing CTRL and double-clicking the **Run** button. Place the following code in the function:  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////  
 // TestProvDlg.cpp  
   
 void CtestProvDlg::OnRun()  
 {  
-   CCommand<CAccessor<CProvider> > table;  
+   CCommand<CAccessor<CProvider>> table;  
    CDataSource source;  
    CSession   session;  
   

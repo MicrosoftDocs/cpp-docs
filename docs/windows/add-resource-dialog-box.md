@@ -4,43 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.insertresource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], adding"
-  - "Add Resource dialog box"
+f1_keywords: ["vc.editors.insertresource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], adding", "Add Resource dialog box"]
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Add Resource Dialog Box
 Use this dialog box to add resources to a C++ Windows desktop application project.  
   
 > [!NOTE]
->  This information does not apply to resources in Windows Store apps. For more information about that, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This information does not apply to resources in Universal Windows Platform apps. For more information about that, see [App resources and the Resource Management System](/windows/uwp/app-resources/).  
   
  **Resource Type**  
  Specifies the kind of resource you want to create.  

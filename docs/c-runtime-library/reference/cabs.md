@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_cabs"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_cabs"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "cabsl"
-  - "_cabs"
-  - "_cabsl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cabs function"
-  - "cabsl function"
-  - "absolute values"
-  - "_cabsl function"
-  - "_cabs function"
-  - "calculating absolute values"
+f1_keywords: ["cabsl", "_cabs", "_cabsl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cabs function", "cabsl function", "absolute values", "_cabsl function", "_cabs function", "calculating absolute values"]
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _cabs
 Calculates the absolute value of a complex number.  
@@ -109,9 +73,6 @@ int main( void )
 ```Output  
 The absolute value of 3.000000 + 4.000000i is 5.000000  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

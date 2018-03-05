@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BEGIN_ACCESSOR_MAP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BEGIN_ACCESSOR_MAP macro"
+ms.topic: "reference"
+f1_keywords: ["BEGIN_ACCESSOR_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BEGIN_ACCESSOR_MAP macro"]
 ms.assetid: e6d6e3a4-62fa-4e49-8c53-caf8c9d20091
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_ACCESSOR_MAP
 Marks the beginning of the accessor map entries.  
@@ -41,13 +23,7 @@ Marks the beginning of the accessor map entries.
 ## Syntax  
   
 ```  
-  
-BEGIN_ACCESSOR_MAP(  
-x  
-,   
-num  
- )  
-  
+BEGIN_ACCESSOR_MAP(x, num)  
 ```  
   
 #### Parameters  

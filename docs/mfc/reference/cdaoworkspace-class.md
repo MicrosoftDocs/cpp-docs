@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoWorkspace"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO workspaces [C++]"
-  - "transaction spaces [C++], DAO workspace"
-  - "ODBC classes [C++], vs. DAO classes"
-  - "default workspaces [C++], DAO"
-  - "workspaces [C++], DAO"
-  - "sessions [C++], DAO workspace"
-  - "Workspace class"
-  - "CDaoWorkspace class"
-  - "workspaces [C++], interface to database engine"
-  - "Workspaces collection"
-  - "persistence [C++], DAO workspace"
-  - "workspaces [C++], default"
-  - "defaults [C++], workspaces"
-  - "DAO workspaces [C++], CDaoWorkspace class"
-  - "security [MFC], DAO workspaces"
-  - "security [MFC]"
-  - "database engine [C++], accessing via workspace"
-  - "transaction spaces [C++]"
-  - "DDLs [C++]"
-  - "workspaces [C++], persistence"
-  - "default workspaces [C++]"
+f1_keywords: ["CDaoWorkspace", "AFXDAO/CDaoWorkspace", "AFXDAO/CDaoWorkspace::CDaoWorkspace", "AFXDAO/CDaoWorkspace::Append", "AFXDAO/CDaoWorkspace::BeginTrans", "AFXDAO/CDaoWorkspace::Close", "AFXDAO/CDaoWorkspace::CommitTrans", "AFXDAO/CDaoWorkspace::CompactDatabase", "AFXDAO/CDaoWorkspace::Create", "AFXDAO/CDaoWorkspace::GetDatabaseCount", "AFXDAO/CDaoWorkspace::GetDatabaseInfo", "AFXDAO/CDaoWorkspace::GetIniPath", "AFXDAO/CDaoWorkspace::GetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::GetLoginTimeout", "AFXDAO/CDaoWorkspace::GetName", "AFXDAO/CDaoWorkspace::GetUserName", "AFXDAO/CDaoWorkspace::GetVersion", "AFXDAO/CDaoWorkspace::GetWorkspaceCount", "AFXDAO/CDaoWorkspace::GetWorkspaceInfo", "AFXDAO/CDaoWorkspace::Idle", "AFXDAO/CDaoWorkspace::IsOpen", "AFXDAO/CDaoWorkspace::Open", "AFXDAO/CDaoWorkspace::RepairDatabase", "AFXDAO/CDaoWorkspace::Rollback", "AFXDAO/CDaoWorkspace::SetDefaultPassword", "AFXDAO/CDaoWorkspace::SetDefaultUser", "AFXDAO/CDaoWorkspace::SetIniPath", "AFXDAO/CDaoWorkspace::SetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::SetLoginTimeout", "AFXDAO/CDaoWorkspace::m_pDAOWorkspace"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoWorkspace [MFC], CDaoWorkspace", "CDaoWorkspace [MFC], Append", "CDaoWorkspace [MFC], BeginTrans", "CDaoWorkspace [MFC], Close", "CDaoWorkspace [MFC], CommitTrans", "CDaoWorkspace [MFC], CompactDatabase", "CDaoWorkspace [MFC], Create", "CDaoWorkspace [MFC], GetDatabaseCount", "CDaoWorkspace [MFC], GetDatabaseInfo", "CDaoWorkspace [MFC], GetIniPath", "CDaoWorkspace [MFC], GetIsolateODBCTrans", "CDaoWorkspace [MFC], GetLoginTimeout", "CDaoWorkspace [MFC], GetName", "CDaoWorkspace [MFC], GetUserName", "CDaoWorkspace [MFC], GetVersion", "CDaoWorkspace [MFC], GetWorkspaceCount", "CDaoWorkspace [MFC], GetWorkspaceInfo", "CDaoWorkspace [MFC], Idle", "CDaoWorkspace [MFC], IsOpen", "CDaoWorkspace [MFC], Open", "CDaoWorkspace [MFC], RepairDatabase", "CDaoWorkspace [MFC], Rollback", "CDaoWorkspace [MFC], SetDefaultPassword", "CDaoWorkspace [MFC], SetDefaultUser", "CDaoWorkspace [MFC], SetIniPath", "CDaoWorkspace [MFC], SetIsolateODBCTrans", "CDaoWorkspace [MFC], SetLoginTimeout", "CDaoWorkspace [MFC], m_pDAOWorkspace"]
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspace Class
 Manages a named, password-protected database session from login to logoff, by a single user.  
@@ -720,7 +683,7 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
   
 ### Parameters  
  `lpszDefaultUser`  
- The default user name. A user name can be 1 – 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: " (quotation marks), / (forward slash), \ (backslash), \[ \] (brackets), : (colon), &#124; (pipe), \< (less-than sign), > (greater-than sign), + (plus sign), = (equal sign), ; (semicolon), , ( comma),  (question mark), * (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.  
+ The default user name. A user name can be 1 - 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: " (quotation marks), / (forward slash), \ (backslash), \[ \] (brackets), : (colon), &#124; (pipe), \< (less-than sign), > (greater-than sign), + (plus sign), = (equal sign), ; (semicolon), , ( comma),  (question mark), * (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.  
   
 ### Remarks  
  The default user name that you set applies to new workspaces you create after the call. When you create subsequent workspaces, you do not need to specify a user name in the [Create](#create) call.  

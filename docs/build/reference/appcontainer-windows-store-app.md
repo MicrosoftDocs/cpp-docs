@@ -1,36 +1,21 @@
 ---
-title: "-APPCONTAINER (Windows Store App) | Microsoft Docs"
+title: "/APPCONTAINER (UWP/Microsoft Store App) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
-# /APPCONTAINER (Windows Store App)
+# /APPCONTAINER (Microsoft Store App)
 Specifies whether the linker creates an executable image that must be run in an app container.  
   
 ## Syntax  
@@ -42,7 +27,7 @@ Specifies whether the linker creates an executable image that must be run in an 
 ## Remarks  
  By default, /APPCONTAINER is off.  
   
- This option modifies an executable to indicate whether the app must be run in the appcontainer process-isolation environment. Specify /APPCONTAINER for an app that must run in the appcontainer environment—for example, a [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] app. (The option is set automatically in Visual Studio when you create a [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] app from a template.) For a desktop app, specify /APPCONTAINER:NO or just omit the option.  
+ This option modifies an executable to indicate whether the app must be run in the appcontainer process-isolation environment. Specify /APPCONTAINER for an app that must run in the appcontainer environment—for example, a Universal Windows Platform (UWP) or Windows Phone 8.x app. (The option is set automatically in Visual Studio when you create a Universal Windows app from a template.) For a desktop app, specify /APPCONTAINER:NO or just omit the option.  
   
  The /APPCONTAINER option was introduced in [!INCLUDE[win8](../../build/reference/includes/win8_md.md)].  
   

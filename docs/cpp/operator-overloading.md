@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "operator_cpp"
-  - "operator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "redefinable operators"
-  - "non-redefinable operators"
-  - "operator keyword [C++]"
-  - "operators [C++], overloading"
-  - "operator overloading"
+f1_keywords: ["operator_cpp", "operator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["redefinable operators [C++]", "non-redefinable operators [C++]", "operator keyword [C++]", "operators [C++], overloading", "operator overloading"]
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Operator Overloading
 The `operator` keyword declares a function specifying what `operator-symbol` means when applied to instances of a class. This gives the operator more than one meaning, or "overloads" it. The compiler distinguishes between the different meanings of an operator by examining the types of its operands.  
@@ -52,7 +30,7 @@ type operator operator-symbol ( parameter-list )
 ## Remarks  
  You can redefine the function of most built-in operators globally or on a class-by-class basis. Overloaded operators are implemented as functions.  
   
- The name of an overloaded operator is `operator``x`, where `x` is the operator as it appears in the following table. For example, to overload the addition operator, you define a function called `operator+`. Similarly, to overload the addition/assignment operator, `+=`, define a function called `operator+=`.  
+ The name of an overloaded operator is `operator x`, where `x` is the operator as it appears in the following table. For example, to overload the addition operator, you define a function called `operator+`. Similarly, to overload the addition/assignment operator, `+=`, define a function called `operator+=`.  
   
 ### Redefinable Operators  
   
@@ -76,12 +54,12 @@ type operator operator-symbol ( parameter-list )
 |`+`|Unary Plus|Unary|  
 |`++`|Increment <sup>1</sup>|Unary|  
 |`+=`|Addition assignment|Binary|  
-|`–`|Subtraction|Binary|  
-|`–`|Unary negation|Unary|  
-|`––`|Decrement <sup>1</sup>|Unary|  
-|`–=`|Subtraction assignment|Binary|  
-|`–>`|Member selection|Binary|  
-|`–>*`|Pointer-to-member selection|Binary|  
+|`-`|Subtraction|Binary|  
+|`-`|Unary negation|Unary|  
+|`--`|Decrement <sup>1</sup>|Unary|  
+|`-=`|Subtraction assignment|Binary|  
+|`->`|Member selection|Binary|  
+|`->*`|Pointer-to-member selection|Binary|  
 |`/`|Division|Binary|  
 |`/=`|Division assignment|Binary|  
 |`<`|Less than|Binary|  

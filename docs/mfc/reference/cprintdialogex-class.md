@@ -4,40 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPrintDialogEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Print Setup dialog box"
-  - "CPrintDialogEx class"
-  - "Print dialog box"
+f1_keywords: ["CPrintDialogEx", "AFXDLGS/CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CreatePrinterDC", "AFXDLGS/CPrintDialogEx::DoModal", "AFXDLGS/CPrintDialogEx::GetCopies", "AFXDLGS/CPrintDialogEx::GetDefaults", "AFXDLGS/CPrintDialogEx::GetDeviceName", "AFXDLGS/CPrintDialogEx::GetDevMode", "AFXDLGS/CPrintDialogEx::GetDriverName", "AFXDLGS/CPrintDialogEx::GetPortName", "AFXDLGS/CPrintDialogEx::GetPrinterDC", "AFXDLGS/CPrintDialogEx::PrintAll", "AFXDLGS/CPrintDialogEx::PrintCollate", "AFXDLGS/CPrintDialogEx::PrintCurrentPage", "AFXDLGS/CPrintDialogEx::PrintRange", "AFXDLGS/CPrintDialogEx::PrintSelection", "AFXDLGS/CPrintDialogEx::m_pdex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPrintDialogEx [MFC], CPrintDialogEx", "CPrintDialogEx [MFC], CreatePrinterDC", "CPrintDialogEx [MFC], DoModal", "CPrintDialogEx [MFC], GetCopies", "CPrintDialogEx [MFC], GetDefaults", "CPrintDialogEx [MFC], GetDeviceName", "CPrintDialogEx [MFC], GetDevMode", "CPrintDialogEx [MFC], GetDriverName", "CPrintDialogEx [MFC], GetPortName", "CPrintDialogEx [MFC], GetPrinterDC", "CPrintDialogEx [MFC], PrintAll", "CPrintDialogEx [MFC], PrintCollate", "CPrintDialogEx [MFC], PrintCurrentPage", "CPrintDialogEx [MFC], PrintRange", "CPrintDialogEx [MFC], PrintSelection", "CPrintDialogEx [MFC], m_pdex"]
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPrintDialogEx Class
-Encapsulates the services provided by the Windows 2000 Print property sheet.  
+Encapsulates the services provided by the Windows Print property sheet.  
   
 ## Syntax  
   
@@ -83,7 +64,7 @@ class CPrintDialogEx : public CCommonDialog
   
  If you want your application to handle printing without the framework's involvement, you can use the `CPrintDialogEx` class "as is" with the constructor provided, or you can derive your own dialog class from `CPrintDialogEx` and write a constructor to suit your needs. In either case, these dialog boxes will behave like standard MFC dialog boxes because they are derived from class `CCommonDialog`.  
   
- To use a `CPrintDialogEx` object, first create the object using the `CPrintDialogEx` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pdex](#m_pdex) structure to initialize the values of the dialog box's controls. The `m_pdex` structure is of type [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844). For more information on this structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To use a `CPrintDialogEx` object, first create the object using the `CPrintDialogEx` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pdex](#m_pdex) structure to initialize the values of the dialog box's controls. The `m_pdex` structure is of type [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844). For more information on this structure, see the Windows SDK.  
   
  If you do not supply your own handles in `m_pdex` for the **hDevMode** and **hDevNames** members, be sure to call the Windows function **GlobalFree** for these handles when you are done with the dialog box.  
   
@@ -93,7 +74,7 @@ class CPrintDialogEx : public CCommonDialog
   
  The `CPrintDialogEx::GetDefaults` member function is useful for retrieving the current printer defaults without displaying a dialog box. This method requires no user interaction.  
   
- You can use the Windows **CommDlgExtendedError** function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ You can use the Windows **CommDlgExtendedError** function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.  
   
  For more information on using `CPrintDialogEx`, see [Common Dialog Classes](../../mfc/common-dialog-classes.md).  
   
@@ -118,7 +99,7 @@ class CPrintDialogEx : public CCommonDialog
  **Header:** afxdlgs.h  
   
 ##  <a name="cprintdialogex"></a>  CPrintDialogEx::CPrintDialogEx  
- Constructs a Windows 2000 Print property sheet.  
+ Constructs a Windows Print property sheet.  
   
 ```  
 CPrintDialogEx(
@@ -128,7 +109,7 @@ CPrintDialogEx(
   
 ### Parameters  
  `dwFlags`  
- One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the **PD_ALLPAGES** flag sets the default print range to all pages of the document. See the [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on these flags.  
+ One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the **PD_ALLPAGES** flag sets the default print range to all pages of the document. See the [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) structure in the Windows SDK for more information on these flags.  
   
  `pParentWnd`  
  A pointer to the dialog box's parent or owner window.  
@@ -152,14 +133,14 @@ HDC CreatePrinterDC();
  This DC is assumed to be the current printer DC, and any other previously obtained printer DCs must be deleted. This function can be called, and the resulting DC used, without ever displaying the Print dialog box.  
   
 ##  <a name="domodal"></a>  CPrintDialogEx::DoModal  
- Call this function to display the Windows 2000 common Print property sheet and allow the user to select various printing options such as the number of copies, page range, and whether copies should be collated.  
+ Call this function to display the Windows Print property sheet and allow the user to select various printing options such as the number of copies, page range, and whether copies should be collated.  
   
 ```  
 virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- The INT_PTR return value is actually an HRESULT. See the Return Values section in [PrintDlgEx](http://msdn.microsoft.com/library/windows/desktop/ms646942) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The INT_PTR return value is actually an HRESULT. See the Return Values section in [PrintDlgEx](http://msdn.microsoft.com/library/windows/desktop/ms646942) in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various print dialog options by setting members of the `m_pdex` structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -216,7 +197,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### Return Value  
- The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the Windows SDK.  
   
 ##  <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName  
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve the name of the system-defined printer device driver.  
@@ -262,7 +243,7 @@ PRINTDLGEX m_pdex;
 ```  
   
 ### Remarks  
- After constructing a `CPrintDialogEx` object, you can use `m_pdex` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pdex` structure, see [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ After constructing a `CPrintDialogEx` object, you can use `m_pdex` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pdex` structure, see [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) in the Windows SDK.  
   
  If you modify the `m_pdex` data member directly, you will override any default behavior.  
   
@@ -307,7 +288,7 @@ BOOL PrintRange() const;
  **TRUE** if only a range of pages in the document are to be printed; otherwise **FALSE**.  
   
 ### Remarks  
- The specified page ranges can be determined from [m_pdex](#m_pdex) (see **nPageRanges**, **nMaxPageRanges**, and **lpPageRanges** in the [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]).  
+ The specified page ranges can be determined from [m_pdex](#m_pdex) (see **nPageRanges**, **nMaxPageRanges**, and **lpPageRanges** in the [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) structure in the Windows SDK).  
   
 ##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection  
  Call this function after calling `DoModal` to determine whether to print only the currently selected items.  

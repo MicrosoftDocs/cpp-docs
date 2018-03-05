@@ -4,43 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPropertyPage2Impl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages"
-  - "IPropertyPage2 ATL implementation"
-  - "IPropertyPage2Impl class"
+f1_keywords: ["IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl::EditProperty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages", "IPropertyPage2 ATL implementation", "IPropertyPage2Impl class"]
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IPropertyPage2Impl Class
 This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -91,7 +72,7 @@ HRESULT EditProperty(DISPID dispID);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the Windows SDK.  
   
 ## See Also  
  [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "threading [C++]"
-  - "multiple threads"
-  - "concurrent programming [C++]"
-  - "programming [C++], multithreaded"
-  - "multithreading [C++], about multithreading"
-  - "multiple concurrent threads"
-  - "multithreading [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["threading [C++]", "multiple threads", "concurrent programming [C++]", "programming [C++], multithreaded", "multithreading [C++], about multithreading", "multiple concurrent threads", "multithreading [C++]"]
 ms.assetid: 24425b1f-5031-4c6b-aac7-017115a40e7c
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading Support for Older Code (Visual C++)
 Visual C++ allows you to have multiple concurrent threads of execution running simultaneously. With multithreading, you can spin off background tasks, manage simultaneous streams of input, manage a user interface, and much more.  
@@ -75,6 +53,3 @@ Visual C++ allows you to have multiple concurrent threads of execution running s
   
  [CSingleLock](../mfc/reference/csinglelock-class.md)  
  Represents the access-control mechanism used in controlling access to a resource in a multithreaded program.  
-  
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
- Provides links to topics describing conceptual information about the Visual C++ libraries and topics discussing various coding technologies and techniques.

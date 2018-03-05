@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlWinModule"
-  - "ATL.CAtlWinModule"
-  - "CAtlWinModule"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlWinModule class"
+f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlWinModule class"]
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlWinModule Class
 This class provides support for ATL windowing components.  
@@ -90,7 +71,7 @@ void AddCreateWndData(_AtlCreateWndData* pData, void* pObject);
  Pointer to an object's **this** pointer.  
   
 ### Remarks  
- This method calls [AtlWinModuleAddCreateWndData](http://msdn.microsoft.com/library/8463a6ed-07ea-4aad-92ec-ded681601b32) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
+ This method calls [AtlWinModuleAddCreateWndData](winmodule-global-functions.md#atlwinmoduleaddcreatewnddata) which initializes an [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) structure. This structure will store the **this** pointer, used to obtain the class instance in window procedures.  
   
 ##  <a name="catlwinmodule"></a>  CAtlWinModule::CAtlWinModule  
  The constructor.  

@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsspnp"
-  - "_wcsspnp"
-  - "_mbsspnp_l"
-  - "_strspnp"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsspnp", "_wcsspnp", "_mbsspnp_l", "_strspnp"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsspnp"
-  - "_mbsspnp"
-  - "strspnp"
-  - "_ftcsspnp"
-  - "_mbsspnp_l"
-  - "wcsspnp"
-  - "mbsspnp_l"
-  - "_wcsspnp"
-  - "_strspnp"
-  - "mbsspnp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strspnp function"
-  - "_wcsspnp function"
-  - "_mbsspnp_l function"
-  - "strspnp function"
-  - "mbsspnp function"
-  - "wcsspnp function"
-  - "_mbsspnp function"
-  - "mbsspnp_l function"
-  - "_tcsspnp function"
-  - "tcsspnp function"
+f1_keywords: ["_tcsspnp", "_mbsspnp", "strspnp", "_ftcsspnp", "_mbsspnp_l", "wcsspnp", "mbsspnp_l", "_wcsspnp", "_strspnp", "mbsspnp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strspnp function", "_wcsspnp function", "_mbsspnp_l function", "strspnp function", "mbsspnp function", "wcsspnp function", "_mbsspnp function", "mbsspnp_l function", "_tcsspnp function", "tcsspnp function"]
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 Returns a pointer to the first character in a given string that is not in another given string.  
   
 > [!IMPORTANT]
->  `_mbsspnp` and `_mbsspnp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsspnp` and `_mbsspnp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -110,7 +60,7 @@ unsigned char *_mbsspnp_l(
  Locale to use.  
   
 ## Return Value  
- `_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`*.* Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`*.* For each of these routines, no return value is reserved to indicate an error.  
+ `_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`. Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`. For each of these routines, no return value is reserved to indicate an error.  
   
 ## Remarks  
  The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in `str` that does not belong to the set of characters in `charset`. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.  
@@ -158,9 +108,6 @@ int main( void ) {
 ```  
 abbage  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

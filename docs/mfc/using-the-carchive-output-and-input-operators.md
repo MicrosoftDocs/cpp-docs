@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CArchive"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "objects [C++], loading from previously stored values"
-  - "CArchive class, storing and loading objects"
-  - "CArchive class, operators"
+f1_keywords: ["CArchive"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using the CArchive &lt;&lt; and &gt;&gt; Operators
 `CArchive` provides <\< and >> operators for writing and reading simple data types as well as `CObject`s to and from a file.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Variant"
-  - "_variant_t"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_variant_t class, operators"
-  - "_variant_t class"
-  - "_variant_t class, member functions"
-  - "VARIANT object"
-  - "VARIANT object, COM encapsulation"
+f1_keywords: ["_variant_t"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_variant_t class [C++], operators", "_variant_t class", "_variant_t class [C++], member functions", "VARIANT object", "VARIANT object [C++], COM encapsulation"]
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _variant_t Class
 **Microsoft Specific**  
@@ -68,10 +46,10 @@ translation.priority.ht:
 |[operator ==, !=](../cpp/variant-t-relational-operators.md)|Compare two `_variant_t` objects for equality or inequality.|  
 |[Extractors](../cpp/variant-t-extractors.md)|Extract data from the encapsulated **VARIANT** object.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comutil.h  
+ **Header:** \<comutil.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

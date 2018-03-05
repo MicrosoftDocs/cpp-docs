@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dllimport attribute [C++], storage-class attribute"
-  - "dllexport attribute [C++]"
-  - "dllexport attribute [C++], storage-class attribute"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dllimport attribute [C++], storage-class attribute", "dllexport attribute [C++]", "dllexport attribute [C++], storage-class attribute"]
 ms.assetid: ab058610-0190-4354-8955-86db66add7c6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # DLL Import and Export
 **Microsoft Specific**  

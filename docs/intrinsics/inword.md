@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__indword_cpp"
-  - "__indword"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "in instruction"
-  - "__inword intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__indword_cpp", "__indword"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["in instruction", "__inword intrinsic"]
 ms.assetid: 5c617edd-6709-40a1-aad2-40d5e39283c6
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __inword
 **Microsoft Specific**  
@@ -68,7 +48,7 @@ unsigned short __inword(
 ## Remarks  
  This routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "#"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "preprocessor, operators"
-  - "arguments [C++], converting to strings"
-  - "stringizing operator"
-  - "preprocessor"
-  - "string literals, converting macro parameters to"
-  - "macros [C++], converting parameters to strings"
-  - "# preprocessor operator"
+ms.topic: "reference"
+f1_keywords: ["#"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["preprocessor, operators", "arguments [C++], converting to strings", "stringizing operator", "preprocessor", "string literals, converting macro parameters to", "macros [C++], converting parameters to strings", "# preprocessor operator"]
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Stringizing Operator (#)
 The number-sign or "stringizing" operator (**#**) converts macro parameters to string literals without expanding the parameter definition. It is used only with macros that take arguments. If it precedes a formal parameter in the macro definition, the actual argument passed by the macro invocation is enclosed in quotation marks and treated as a string literal. The string literal then replaces each occurrence of a combination of the stringizing operator and formal parameter within the macro definition.  

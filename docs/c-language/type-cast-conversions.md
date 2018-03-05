@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data type conversion [C++], type-cast conversions"
-  - "conversions [C++], type-cast"
-  - "type casts"
-  - "explicit type conversions"
-  - "type casts [C++], about type-cast conversion"
-  - "type-cast conversions [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data type conversion [C++], type-cast conversions", "conversions [C++], type-cast", "type casts", "explicit type conversions", "type casts [C++], about type-cast conversion", "type-cast conversions [C++]"]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Type-Cast Conversions
 You can use type casts to explicitly convert types.  

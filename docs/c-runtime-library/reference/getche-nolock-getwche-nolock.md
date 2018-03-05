@@ -4,68 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_getche_nolock"
-  - "_getwche_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_getche_nolock", "_getwche_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getche_nolock"
-  - "_gettche_nolock"
-  - "_getwche_nolock"
-  - "getche_nolock"
-  - "getwche_nolock"
-  - "gettche_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "characters, getting from console"
-  - "_gettche_nolock function"
-  - "getwche_nolock function"
-  - "_getche_nolock function"
-  - "getche_nolock function"
-  - "console, reading from"
-  - "_getwche_nolock function"
-  - "gettche_nolock function"
+f1_keywords: ["_getche_nolock", "_gettche_nolock", "_getwche_nolock", "getche_nolock", "getwche_nolock", "gettche_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["characters, getting from console", "_gettche_nolock function", "getwche_nolock function", "_getche_nolock function", "getche_nolock function", "console, reading from", "_getwche_nolock function", "gettche_nolock function"]
 ms.assetid: 9e853ad4-4d8a-4442-9ae5-da4b434f0b8c
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getche_nolock, _getwche_nolock
 Gets a character from the console, with echo and without locking the thread.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -123,13 +82,13 @@ int main( void )
 }  
 ```  
   
+```Input  
+abcdefy
+```
+  
 ```Output  
-  
-abcdeyType 'Y' when finished typing keys: Y  
+Type 'Y' when finished typing keys: abcdefyY  
 ```  
-  
-## NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   

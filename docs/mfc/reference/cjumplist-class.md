@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxadv/CJumpList"
-  - "CJumpList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CJumpList class"
+f1_keywords: ["CJumpList", "AFXADV/CJumpList", "AFXADV/CJumpList::CJumpList", "AFXADV/CJumpList::AbortList", "AFXADV/CJumpList::AddDestination", "AFXADV/CJumpList::AddKnownCategory", "AFXADV/CJumpList::AddTask", "AFXADV/CJumpList::AddTasks", "AFXADV/CJumpList::AddTaskSeparator", "AFXADV/CJumpList::ClearAll", "AFXADV/CJumpList::ClearAllDestinations", "AFXADV/CJumpList::CommitList", "AFXADV/CJumpList::GetDestinationList", "AFXADV/CJumpList::GetMaxSlots", "AFXADV/CJumpList::GetRemovedItems", "AFXADV/CJumpList::InitializeList", "AFXADV/CJumpList::SetAppID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CJumpList [MFC], CJumpList", "CJumpList [MFC], AbortList", "CJumpList [MFC], AddDestination", "CJumpList [MFC], AddKnownCategory", "CJumpList [MFC], AddTask", "CJumpList [MFC], AddTasks", "CJumpList [MFC], AddTaskSeparator", "CJumpList [MFC], ClearAll", "CJumpList [MFC], ClearAllDestinations", "CJumpList [MFC], CommitList", "CJumpList [MFC], GetDestinationList", "CJumpList [MFC], GetMaxSlots", "CJumpList [MFC], GetRemovedItems", "CJumpList [MFC], InitializeList", "CJumpList [MFC], SetAppID"]
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CJumpList Class
 A `CJumpList` is the list of shortcuts revealed when you right click on an icon in the task bar.  

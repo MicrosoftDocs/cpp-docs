@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDP_OLE_INIT_FAILED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE visual editing servers"
-  - "accelerator tables [C++], server applications"
-  - "visual editing, application menus and resources"
-  - "server applications, accelerator table"
-  - "string tables, visual editing applications"
-  - "servers, menu additions"
-  - "resources [MFC], server applications"
-  - "OLE server applications, menus and resources"
-  - "string editing, visual editing applications"
-  - "IDP_OLE_INIT_FAILED macro"
-  - "server applications, OLE menus and resources"
-  - "OLE initialization failure"
+f1_keywords: ["IDP_OLE_INIT_FAILED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE visual editing servers [MFC]", "accelerator tables [MFC], server applications", "visual editing [MFC], application menus and resources", "server applications [MFC], accelerator table", "string tables [MFC], visual editing applications", "servers [MFC], menu additions", "resources [MFC], server applications", "OLE server applications [MFC], menus and resources", "string editing [MFC], visual editing applications", "IDP_OLE_INIT_FAILED macro [MFC]", "server applications [MFC], OLE menus and resources", "OLE initialization failure [MFC]"]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Server Additions
 This article explains the changes that need to be made to the menus and other resources in a visual editing server (component) application. A server application requires many additions to the menu structure and other resources because it can be started in one of three modes: stand alone, embedded, or in place. As described in the [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md) article, there are a maximum of four sets of menus. All four are used for an MDI full-server application, while only three are used for a miniserver. The application wizard will create the menu layout necessary for the type of server you want. Some customization may be necessary.  

@@ -4,65 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDynamicParameterAccessor.GetParamString"
-  - "GetParamString"
-  - "CDynamicParameterAccessor::GetParamString"
-  - "ATL.CDynamicParameterAccessor.GetParamString"
-  - "ATL::CDynamicParameterAccessor::GetParamString"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetParamString method"
+ms.topic: "reference"
+f1_keywords: ["CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetParamString method"]
 ms.assetid: 078c2b1c-7072-47c1-a203-f47e75363f91
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::GetParamString
 Retrieves the string data of the specified parameter stored in the buffer.  
   
 ## Syntax  
   
-```  
-  
-      bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringA& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringW& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   WCHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
+```
+bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringA& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringW& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CHAR* pBuffer,  
+   size_t* pMaxLen) throw();bool GetParamString(DBORDINAL nParam,  
+  WCHAR* pBuffer,  
+   size_t* pMaxLen) throw();  
 ```  
   
 #### Parameters  

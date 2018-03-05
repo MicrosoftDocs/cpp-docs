@@ -4,36 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Declarations and Definitions (C++)
-[Declarations](http://msdn.microsoft.com/en-us/2fd0cddb-b64c-4c9f-9aac-9f8e7ef892f4) introduce names in a program, for example the names of variables, namespaces, functions and classes. Declarations also specify type information as well as other characteristics of the object that is being declared. A name must be declared before it can be used; in C++ the point at which a name is declared determines whether it is visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit; you can use *forward declarations* to get around this limitation.  
+Declarations introduce names in a program, for example the names of variables, namespaces, functions and classes. Declarations also specify type information as well as other characteristics of the object that is being declared. A name must be declared before it can be used; in C++ the point at which a name is declared determines whether it is visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit; you can use *forward declarations* to get around this limitation.  
   
- [Definitions](http://msdn.microsoft.com/en-us/f96e2c0d-abb5-4414-9ea1-4d5b4048d50a) specify what code or data the name describes. The compiler needs the definition in order to allocate storage space for the thing that is being declared.  
+ Definitions specify what code or data the name describes. The compiler needs the definition in order to allocate storage space for the thing that is being declared.  
   
 ## Declarations  
  A declaration introduces one or more names into a program. Declarations can occur more than once in a program. Therefore, classes, structures, enumerated types, and other user-defined types can be declared for each compilation unit. The constraint on this multiple declaration is that all declarations must be identical. Declarations also serve as definitions, except when the declaration:  
@@ -81,7 +66,7 @@ char *strchr( const char *Str, const char Target );
   
  Declarations occur in a *scope*. The scope controls the visibility of the name declared and the duration of the object defined, if any. For more information about how scope rules interact with declarations, see [Scope](../cpp/scope-visual-cpp.md).  
   
- An object declaration is also a definition unless it contains the `extern` storage-class specifier described in [Storage-Class Specifiers](http://msdn.microsoft.com/en-us/10b3d22d-cb40-450b-994b-08cf9a211b6c). A function declaration is also a definition unless it is a prototype. A prototype is a function header without a defining function body. The definition of an object causes allocation of storage and appropriate initializations for that object.  
+ An object declaration is also a definition unless it contains the `extern` storage-class specifier described in [Storage classes](storage-classes-cpp.md). A function declaration is also a definition unless it is a prototype. A prototype is a function header without a defining function body. The definition of an object causes allocation of storage and appropriate initializations for that object.  
   
 ## Definitions  
  A definition is a unique specification of an object or variable, function, class, or enumerator. Because definitions must be unique, a program can contain only one definition for a given program element. There can be a many-to-one correspondence between declarations and definitions. There are two cases in which a program element can be declared and not defined:  

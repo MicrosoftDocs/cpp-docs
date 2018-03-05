@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2678"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2678"
+f1_keywords: ["C2678"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2678"]
 ms.assetid: 1f0a4e26-b429-44f5-9f94-cb66441220c8
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2678
 binary 'operator' : no operator defined which takes a left-hand operand of type 'type' (or there is no acceptable conversion)  

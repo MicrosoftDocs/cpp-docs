@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDI, frame windows"
-  - "control bars, updating in frame windows"
-  - "menus, updating as context changes"
-  - "user interface objects, updating"
-  - "accelerator tables [C++]"
-  - "sharing menus"
-  - "updating user-interface objects"
-  - "frame windows, updating"
-  - "status bars, updating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MDI [MFC], frame windows", "control bars [MFC], updating in frame windows", "menus [MFC], updating as context changes", "user interface objects [MFC], updating", "accelerator tables [MFC]", "sharing menus [MFC]", "updating user-interface objects [MFC]", "frame windows [MFC], updating", "status bars [MFC], updating"]
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Managing Menus, Control Bars, and Accelerators
 The frame window manages updating user-interface objects, including menus, toolbar buttons, the status bar, and accelerators. It also manages sharing the menu bar in MDI applications.  

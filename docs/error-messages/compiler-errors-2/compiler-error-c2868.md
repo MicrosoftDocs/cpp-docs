@@ -4,44 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2868"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2868"
+f1_keywords: ["C2868"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2868"]
 ms.assetid: 6ff5837b-e66d-44d1-9d17-80af35e08d08
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
-# Compiler Error C2868
-'identifier' : illegal syntax for using-declaration; expected qualified-name  
+# Compiler Error C2868  
   
- A [using declaration](../../cpp/using-declaration.md) requires a [qualified name](http://msdn.microsoft.com/en-us/3fefb16d-8120-4627-8b3f-3d90fbdcd1df).  
+> '*identifier*' : illegal syntax for using-declaration; expected qualified-name  
   
- The following sample generates C2868:  
+A [using declaration](../../cpp/using-declaration.md) requires a *qualified name*, a scope-operator (`::`) separated sequence of namespace, class, or enumeration names that ends with the identifier name. A single scope resolution operator may be used to introduce a name from the global namespace.  
   
-```  
+## Example  
+  
+The following sample generates C2868 and also shows correct usage:  
+  
+```cpp  
 // C2868.cpp  
 class X {  
 public:  

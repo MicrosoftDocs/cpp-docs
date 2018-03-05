@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::combinable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combinable class"
+ms.topic: "reference"
+f1_keywords: ["combinable", "PPL/concurrency::combinable", "PPL/concurrency::combinable::combinable", "PPL/concurrency::combinable::clear", "PPL/concurrency::combinable::combine", "PPL/concurrency::combinable::combine_each", "PPL/concurrency::combinable::local"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["combinable class"]
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # combinable Class
 The `combinable<T>` object is intended to provide thread-private copies of data, to perform lock-free thread-local sub-computations during parallel algorithms. At the end of the parallel operation, the thread-private sub-computations can then be merged into a final result. This class can be used instead of a shared variable, and can result in a performance improvement if there would otherwise be a lot of contention on that shared variable.  
@@ -54,23 +37,23 @@ class combinable;
   
 |Name|Description|  
 |----------|-----------------|  
-|[combinable Constructor](#ctor)|Overloaded. Constructs a new `combinable` object.|  
+|[combinable](#ctor)|Overloaded. Constructs a new `combinable` object.|  
 |[~combinable Destructor](#dtor)|Destroys a `combinable` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[clear Method](#clear)|Clears any intermediate computational results from a previous usage.|  
-|[combine Method](#combine)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.|  
-|[combine_each Method](#combine_each)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.|  
-|[local Method](#local)|Overloaded. Returns a reference to the thread-private sub-computation.|  
+|[clear](#clear)|Clears any intermediate computational results from a previous usage.|  
+|[combine](#combine)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.|  
+|[combine_each](#combine_each)|Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.|  
+|[local](#local)|Overloaded. Returns a reference to the thread-private sub-computation.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Assigns to a `combinable` object from another `combinable` object.|  
+|[operator=](#operator_eq)|Assigns to a `combinable` object from another `combinable` object.|  
   
 ## Remarks  
  For more information, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

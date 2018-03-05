@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mktime32"
-  - "mktime"
-  - "_mktime64"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mktime32", "mktime", "_mktime64"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mktime"
-  - "_mktime64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mktime32 function"
-  - "mktime function"
-  - "time functions"
-  - "mktime64 function"
-  - "converting times"
-  - "mktime32 function"
-  - "_mktime64 function"
-  - "time, converting"
+f1_keywords: ["mktime", "_mktime64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mktime32 function", "mktime function", "time functions", "mktime64 function", "converting times", "mktime32 function", "_mktime64 function", "time, converting"]
 ms.assetid: 284ed5d4-7064-48a2-bd50-15effdae32cf
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # mktime, _mktime32, _mktime64
 Convert the local time to a calendar value.  
@@ -81,9 +42,9 @@ __time64_t _mktime64(
  Pointer to time structure; see [asctime](../../c-runtime-library/reference/asctime-wasctime.md).  
   
 ## Return Value  
- `_mktime32` returns the specified calendar time encoded as a value of type [time_t](../../c-runtime-library/standard-types.md). If *timeptr* references a date before midnight, January 1, 1970, or if the calendar time cannot be represented, `_mktime32` returns –1 cast to type `time_t`. When using `_mktime32` and if *timeptr* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return –1 cast to type `time_t`.  
+ `_mktime32` returns the specified calendar time encoded as a value of type [time_t](../../c-runtime-library/standard-types.md). If *timeptr* references a date before midnight, January 1, 1970, or if the calendar time cannot be represented, `_mktime32` returns -1 cast to type `time_t`. When using `_mktime32` and if *timeptr* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type `time_t`.  
   
- `_mktime64` will return –1 cast to type `__time64_t` if *timeptr* references a date after 23:59:59, December 31, 3000, UTC.  
+ `_mktime64` will return -1 cast to type `__time64_t` if *timeptr* references a date after 23:59:59, December 31, 3000, UTC.  
   
 ## Remarks  
  The `mktime`, `_mktime32` and `_mktime64` functions convert the supplied time structure (possibly incomplete) pointed to by *timeptr* into a fully defined structure with normalized values and then converts it to a `time_t` calendar time value. The converted time has the same encoding as the values returned by the [time](../../c-runtime-library/reference/time-time32-time64.md) function. The original values of the `tm_wday` and `tm_yday` components of the *timeptr* structure are ignored, and the original values of the other components are not restricted to their normal ranges.  
@@ -159,9 +120,6 @@ Current time is Fri Apr 25 13:34:07 2003
   
 In 20 days the time will be Thu May 15 13:34:07 2003  
 ```  
-  
-## .NET Framework Equivalent  
- <xref:System.DateTimeOffset.%23ctor%2A>  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

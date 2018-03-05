@@ -4,46 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [C++]"
-  - "application deployment [C++]"
-  - "Visual C++, application deployment"
-  - "application deployment [C++], about application deployment"
-  - "deploying applications [C++], about deploying applications"
-  - "distributing applications [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]", "Visual C++, application deployment", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "distributing applications [C++]"]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Deploying Native Desktop Applications (Visual C++)
 Deployment is the process by which you distribute a finished application or component to be installed on other computers. Deployment planning starts when an application is created on a developer's computer. Deployment ends when the application is installed and ready to run on a user's computer.  
   
- Visual Studio provides different technologies for deploying Windows applications. These include [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment and Windows Installer deployment.  
+ Visual Studio provides different technologies for deploying Windows applications. These include ClickOnce deployment and Windows Installer deployment.  
   
--   [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] can be used to deploy C++ applications that target the common language runtime (CLR)—mixed, pure, and verifiable assemblies. Although you can use Windows Installer to deploy a managed application, we recommend that you use [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] because it takes advantage of .NET Framework security features such as manifest signing. [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] does not support deployment of native C++ applications. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
+-   ClickOnce can be used to deploy C++ applications that target the common language runtime (CLR)—mixed, pure, and verifiable assemblies. Although you can use Windows Installer to deploy a managed application, we recommend that you use ClickOnce because it takes advantage of .NET Framework security features such as manifest signing. ClickOnce does not support deployment of native C++ applications. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
   
 -   Windows Installer technology can be used to deploy either native C++ applications or C++ applications that target the CLR.  
   
@@ -73,6 +51,6 @@ Deployment is the process by which you distribute a finished application or comp
 ## Related Sections  
  [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
   
- [Deployment](http://msdn.microsoft.com/Library/238d8284-6042-4a38-a7f6-1ee8efd719da)  
+ [Deployment](/dotnet/framework/deployment/index)  
   
  [Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

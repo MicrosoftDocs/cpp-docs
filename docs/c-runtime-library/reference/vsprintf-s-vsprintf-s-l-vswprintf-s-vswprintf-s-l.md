@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vswprintf_s_l"
-  - "vsprintf_s"
-  - "vswprintf_s"
-  - "_vsprintf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vswprintf_s_l", "vsprintf_s", "vswprintf_s", "_vsprintf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vswprintf_s"
-  - "vsprintf_s"
-  - "_vstprintf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_vstprintf_s_l function"
-  - "vsprintf_s_l function"
-  - "_vstprintf_s function"
-  - "vswprintf_s function"
-  - "vstprintf_s function"
-  - "vstprintf_s_l function"
-  - "vswprintf_s_l function"
-  - "vsprintf_s function"
-  - "_vsprintf_s_l function"
-  - "formatted text [C++]"
-  - "_vswprintf_s_l function"
+f1_keywords: ["vswprintf_s", "vsprintf_s", "_vstprintf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_vstprintf_s_l function", "vsprintf_s_l function", "_vstprintf_s function", "vswprintf_s function", "vstprintf_s function", "vstprintf_s_l function", "vswprintf_s_l function", "vsprintf_s function", "_vsprintf_s_l function", "formatted text [C++]", "_vswprintf_s_l function"]
 ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 Write formatted output using a pointer to a list of arguments. These are versions of [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \__vswprintf_l](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -197,9 +153,6 @@ int main( void )
 123 < 456  
 This is a string  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

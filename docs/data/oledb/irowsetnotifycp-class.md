@@ -4,52 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IRowsetNotifyCP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IRowsetNotifyCP class"
+ms.topic: "reference"
+f1_keywords: ["IRowsetNotifyCP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IRowsetNotifyCP class"]
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP Class
 Implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx).  
   
-## Syntax  
-  
-```  
-template <  
-   class T,   
-   class ReentrantEventSync = CComSharedMutex   
->  
+## Syntax
+
+```cpp
+template <class T, class ReentrantEventSync = CComSharedMutex>  
 class IRowsetNotifyCP :   
    public IConnectionPointImpl<  
       T,   
       piid = &__uuidof(IRowsetNotify),   
-      CComDynamicUnkArray DynamicUnkArray  
-   >,  
+      CComDynamicUnkArray DynamicUnkArray>,  
    public ReentrantEventSync  
 ```  
   
@@ -90,8 +69,7 @@ class IRowsetNotifyCP :
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)   
  [Notifications (COM)](http://msdn.microsoft.com/library/windows/desktop/ms678433)   
- [Overview of Notifications (OLE DB)](https://msdn.microsoft.com/en-us/library/ms725406.aspx)   
- [BEGIN_CONNECTION_POINT_MAP](http://msdn.microsoft.com/library/3896cda6-a8e2-4ed1-ac38-befbe2352034)   
- [END_CONNECTION_POINT_MAP](http://msdn.microsoft.com/library/807c5233-b58c-49a2-a34f-3b5f4a7b1b82)   
- [CONNECTION_POINT_ENTRY](http://msdn.microsoft.com/library/0a7f3053-6433-49b2-a9b5-8a307e8efe14)   
+ [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)   
+ [END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)   
+ [CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)   
  [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)

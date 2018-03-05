@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "returns"
-  - "<returns>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "returns C++ XML tag"
-  - "<returns> C++ XML tag"
+f1_keywords: ["returns", "<returns>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;returns&gt; (Visual C++)
 The \<returns> tag should be used in the comment for a method declaration to describe the return value.  

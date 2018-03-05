@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "time, setting current"
-  - "current time, CTime object"
-  - "procedures, getting current time"
-  - "initializing objects, with the current time"
-  - "time, getting current"
+dev_langs: ["C++"]
+helpviewer_keywords: ["time, setting current", "current time, CTime object", "procedures, getting current time", "initializing objects, with the current time", "time, getting current"]
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Current Time: General Purpose Classes
 The following procedure shows how to create a `CTime` object and initialize it with the current time.  

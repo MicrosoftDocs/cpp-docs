@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Unicode [C++], programming with"
-  - "Unicode [C++], MFC and C run-time functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Unicode Programming Summary
 To take advantage of the MFC and C run-time support for Unicode, you need to:  
@@ -101,7 +84,7 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
   
 -   Use [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) to open Unicode files.  
   
- To summarize, MFC and the run-time library provide the following support for Unicode programming under Windows 2000:  
+ To summarize, MFC and the run-time library provide the following support for Unicode programming:  
   
 -   Except for database class member functions, all MFC functions are Unicode-enabled, including `CString`. `CString` also provides Unicode/ANSI conversion functions.  
   

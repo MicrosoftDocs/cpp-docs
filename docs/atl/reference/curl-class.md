@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CUrl"
-  - "CUrl"
-  - "ATL::CUrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CUrl class"
+f1_keywords: ["CUrl", "ATLUTIL/ATL::CUrl", "ATLUTIL/ATL::CUrl::CUrl", "ATLUTIL/ATL::CUrl::Canonicalize", "ATLUTIL/ATL::CUrl::Clear", "ATLUTIL/ATL::CUrl::CrackUrl", "ATLUTIL/ATL::CUrl::CreateUrl", "ATLUTIL/ATL::CUrl::GetExtraInfo", "ATLUTIL/ATL::CUrl::GetExtraInfoLength", "ATLUTIL/ATL::CUrl::GetHostName", "ATLUTIL/ATL::CUrl::GetHostNameLength", "ATLUTIL/ATL::CUrl::GetPassword", "ATLUTIL/ATL::CUrl::GetPasswordLength", "ATLUTIL/ATL::CUrl::GetPortNumber", "ATLUTIL/ATL::CUrl::GetScheme", "ATLUTIL/ATL::CUrl::GetSchemeName", "ATLUTIL/ATL::CUrl::GetSchemeNameLength", "ATLUTIL/ATL::CUrl::GetUrlLength", "ATLUTIL/ATL::CUrl::GetUrlPath", "ATLUTIL/ATL::CUrl::GetUrlPathLength", "ATLUTIL/ATL::CUrl::GetUserName", "ATLUTIL/ATL::CUrl::GetUserNameLength", "ATLUTIL/ATL::CUrl::SetExtraInfo", "ATLUTIL/ATL::CUrl::SetHostName", "ATLUTIL/ATL::CUrl::SetPassword", "ATLUTIL/ATL::CUrl::SetPortNumber", "ATLUTIL/ATL::CUrl::SetScheme", "ATLUTIL/ATL::CUrl::SetSchemeName", "ATLUTIL/ATL::CUrl::SetUrlPath", "ATLUTIL/ATL::CUrl::SetUserName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CUrl class"]
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CUrl Class
 This class represents a URL. It allows you to manipulate each element of the URL independently of the others whether parsing an existing URL string or building a string from scratch.  

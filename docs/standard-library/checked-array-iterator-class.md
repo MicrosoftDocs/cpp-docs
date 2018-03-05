@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "iterator/checked_array_iterator"
-  - "checked_array_iterator"
-  - "std::checked_array_iterator"
-  - "std.checked_array_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "checked_array_iterator, syntax"
-  - "checked_array_iterator class"
-  - "checked_array_iterator"
+ms.topic: "reference"
+f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # checked_array_iterator Class
 The `checked_array_iterator` class allows you to transform an array or pointer into a checked iterator. Use this class as a wrapper (using the [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) function) for raw pointers or arrays as a targeted way to provide checking and to manage unchecked pointer warnings instead of globally silencing these warnings. If necessary, you can use the unchecked version of this class, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).  
@@ -158,48 +136,48 @@ int main()
   
 |||  
 |-|-|  
-|[checked_array_iterator](#checked_array_iterator__checked_array_iterator)|Constructs a default `checked_array_iterator` or a `checked_array_iterator` from an underlying iterator.|  
+|[checked_array_iterator](#checked_array_iterator)|Constructs a default `checked_array_iterator` or a `checked_array_iterator` from an underlying iterator.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[difference_type](#checked_array_iterator__difference_type)|A type that provides the difference between two `checked_array_iterator`s referring to elements within the same container.|  
-|[pointer](#checked_array_iterator__pointer)|A type that provides a pointer to an element addressed by a `checked_array_iterator`.|  
-|[reference](#checked_array_iterator__reference)|A type that provides a reference to an element addressed by a `checked_array_iterator`.|  
+|[difference_type](#difference_type)|A type that provides the difference between two `checked_array_iterator`s referring to elements within the same container.|  
+|[pointer](#pointer)|A type that provides a pointer to an element addressed by a `checked_array_iterator`.|  
+|[reference](#reference)|A type that provides a reference to an element addressed by a `checked_array_iterator`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[base](#checked_array_iterator__base)|Recovers the underlying iterator from its `checked_array_iterator`.|  
+|[base](#base)|Recovers the underlying iterator from its `checked_array_iterator`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator==](#checked_array_iterator__operator_eq_eq)|Tests two `checked_array_iterator`s for equality.|  
-|[operator!=](#checked_array_iterator__operator_neq)|Tests two `checked_array_iterator`s for inequality.|  
-|[operator<](#checked_array_iterator__operator_lt_)|Tests if the `checked_array_iterator` on the left side of the operator is less than the `checked_array_iterator` on the right side.|  
-|[operator>](#checked_array_iterator__operator_gt_)|Tests if the `checked_array_iterator` on the left side of the operator is greater than the `checked_array_iterator` on the right side.|  
-|[operator<=](#checked_array_iterator__operator_lt__eq)|Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.|  
-|[operator>=](#checked_array_iterator__operator_gt__eq)|Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.|  
-|[operator*](#checked_array_iterator__operator_star)|Returns the element that a `checked_array_iterator` addresses.|  
-|[operator->](#checked_array_iterator__operator-_gt_)|Returns a pointer to the element addressed by the `checked_array_iterator`.|  
-|[operator++](#checked_array_iterator__operator_add_add)|Increments the `checked_array_iterator` to the next element.|  
-|[operator--](#checked_array_iterator__operator--)|Decrements the `checked_array_iterator` to the previous element.|  
-|[operator+=](#checked_array_iterator__operator_add_eq)|Adds a specified offset to a `checked_array_iterator`.|  
-|[operator+](#checked_array_iterator__operator_add)|Adds an offset to an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|  
-|[operator-=](#checked_array_iterator__operator-_eq)|Decrements a specified offset from a `checked_array_iterator`.|  
-|[operator-](#checked_array_iterator__operator-)|Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|  
-|[operator&#91;&#93;](#checked_array_iterator__operator_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|  
+|[operator==](#op_eq_eq)|Tests two `checked_array_iterator`s for equality.|  
+|[operator!=](#op_neq)|Tests two `checked_array_iterator`s for inequality.|  
+|[operator<](#op_lt)|Tests if the `checked_array_iterator` on the left side of the operator is less than the `checked_array_iterator` on the right side.|  
+|[operator>](#op_gt)|Tests if the `checked_array_iterator` on the left side of the operator is greater than the `checked_array_iterator` on the right side.|  
+|[operator<=](#op_lt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.|  
+|[operator>=](#op_gt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.|  
+|[operator*](#op_star)|Returns the element that a `checked_array_iterator` addresses.|  
+|[operator->](#operator-_gt)|Returns a pointer to the element addressed by the `checked_array_iterator`.|  
+|[operator++](#op_add_add)|Increments the `checked_array_iterator` to the next element.|  
+|[operator--](#operator--)|Decrements the `checked_array_iterator` to the previous element.|  
+|[operator+=](#op_add_eq)|Adds a specified offset to a `checked_array_iterator`.|  
+|[operator+](#op_add)|Adds an offset to an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|  
+|[operator-=](#operator-_eq)|Decrements a specified offset from a `checked_array_iterator`.|  
+|[operator-](#operator-)|Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.|  
+|[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.|  
   
 ## Requirements  
  **Header:** \<iterator>  
   
  **Namespace:** stdext  
   
-##  <a name="checked_array_iterator__base"></a>  checked_array_iterator::base  
+##  <a name="base"></a>  checked_array_iterator::base  
  Recovers the underlying iterator from its `checked_array_iterator`.  
   
 ```
@@ -240,7 +218,7 @@ The iterator underlying rpos is bpos & it points to: 1.
 *\  
 ```  
   
-##  <a name="checked_array_iterator__checked_array_iterator"></a>  checked_array_iterator::checked_array_iterator  
+##  <a name="checked_array_iterator"></a>  checked_array_iterator::checked_array_iterator  
  Constructs a default `checked_array_iterator` or a `checked_array _iterator` from an underlying iterator.  
   
 ```
@@ -301,7 +279,7 @@ int main() {
 *\  
 ```  
   
-##  <a name="checked_array_iterator__difference_type"></a>  checked_array_iterator::difference_type  
+##  <a name="difference_type"></a>  checked_array_iterator::difference_type  
  A type that provides the difference between two `checked_array_iterator`s referring to elements within the same container.  
   
 ```
@@ -311,11 +289,11 @@ typedef typename iterator_traits<_Iterator>::difference_type difference_type;
 ### Remarks  
  The `checked_array_iterator` difference type is the same as the iterator difference type.  
   
- See [checked_array_iterator::operator[]](#checked_array_iterator__operator_at) for a code sample.  
+ See [checked_array_iterator::operator[]](#op_at) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__operator_eq_eq"></a>  checked_array_iterator::operator==  
+##  <a name="op_eq_eq"></a>  checked_array_iterator::operator==  
  Tests two `checked_array_iterator`s for equality.  
   
 ```
@@ -368,7 +346,7 @@ checked_array_iterators are not equal
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_neq"></a>  checked_array_iterator::operator!=  
+##  <a name="op_neq"></a>  checked_array_iterator::operator!=  
  Tests two `checked_array_iterator`s for inequality.  
   
 ```
@@ -421,7 +399,7 @@ checked_array_iterators are not equal
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_lt_"></a>  checked_array_iterator::operator&lt;  
+##  <a name="op_lt"></a>  checked_array_iterator::operator&lt;  
  Tests if the `checked_array_iterator` on the left side of the operator is less than the `checked_array_iterator` on the right side.  
   
 ```
@@ -474,7 +452,7 @@ checked_output_iterator2 is less than checked_output_iterator
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_gt_"></a>  checked_array_iterator::operator&gt;  
+##  <a name="op_gt"></a>  checked_array_iterator::operator&gt;  
  Tests if the `checked_array_iterator` on the left side of the operator is greater than the `checked_array_iterator` on the right side.  
   
 ```
@@ -486,11 +464,11 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
  The `checked_array_iterator` to compare against.  
   
 ### Remarks  
- See [checked_array_iterator::operator&lt;](#checked_array_iterator__operator_lt_) for a code sample.  
+ See [checked_array_iterator::operator&lt;](#op_lt) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__operator_lt__eq"></a>  checked_array_iterator::operator&lt;=  
+##  <a name="lt_eq"></a>  checked_array_iterator::operator&lt;=  
  Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.  
   
 ```
@@ -502,11 +480,11 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
  The `checked_array_iterator` to compare against.  
   
 ### Remarks  
- See [checked_array_iterator::operator&gt;=](#checked_array_iterator__operator_gt__eq) for a code sample.  
+ See [checked_array_iterator::operator&gt;=](#op_gt_eq) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__operator_gt__eq"></a>  checked_array_iterator::operator&gt;=  
+##  <a name="gt_eq"></a>  checked_array_iterator::operator&gt;=  
  Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.  
   
 ```
@@ -559,7 +537,7 @@ checked_output_iterator2 is less than checked_output_iterator
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_star"></a>  checked_array_iterator::operator*  
+##  <a name="op_star"></a>  checked_array_iterator::operator*  
  Returns the element that a `checked_array_iterator` addresses.  
   
 ```
@@ -617,7 +595,7 @@ c[0].first = 10
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator-_gt_"></a>  checked_array_iterator::operator-&gt;  
+##  <a name="checked_array_iterator__operator-_gt"></a>  checked_array_iterator::operator-&gt;  
  Returns a pointer to the element addressed by the `checked_array_iterator`.  
   
 ```
@@ -628,11 +606,11 @@ pointer operator->() const;
  A pointer to the element addressed by the `checked_array_iterator`.  
   
 ### Remarks  
- See [checked_array_iterator::pointer](#checked_array_iterator__pointer) for a code sample.  
+ See [checked_array_iterator::pointer](#pointer) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__operator_add_add"></a>  checked_array_iterator::operator++  
+##  <a name="op_add_add"></a>  checked_array_iterator::operator++  
  Increments the `checked_array_iterator` to the next element.  
   
 ```
@@ -722,7 +700,7 @@ int main() {
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_add_eq"></a>  checked_array_iterator::operator+=  
+##  <a name="op_add_eq"></a>  checked_array_iterator::operator+=  
  Adds a specified offset to a `checked_array_iterator`.  
   
 ```
@@ -766,7 +744,7 @@ int main() {
 *\  
 ```  
   
-##  <a name="checked_array_iterator__operator_add"></a>  checked_array_iterator::operator+  
+##  <a name="op_add"></a>  checked_array_iterator::operator+  
  Adds an offset to an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.  
   
 ```
@@ -872,11 +850,11 @@ difference_type operator-(const checked_array_iterator& right) const;
  A `checked_array_iterator` addressing the offset element.  
   
 ### Remarks  
- See [checked_array_iterator::operator-](#checked_array_iterator__operator-) for a code sample.  
+ See [checked_array_iterator::operator-](#operator-) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__operator_at"></a>  checked_array_iterator::operator[]  
+##  <a name="op_at"></a>  checked_array_iterator::operator[]  
  Returns a reference to an element offset from the element addressed by a `checked_array_iterator` by a specified number of positions.  
   
 ```
@@ -922,7 +900,7 @@ int main() {
 *\  
 ```  
   
-##  <a name="checked_array_iterator__pointer"></a>  checked_array_iterator::pointer  
+##  <a name="pointer"></a>  checked_array_iterator::pointer  
  A type that provides a pointer to an element addressed by a `checked_array_iterator`.  
   
 ```
@@ -930,11 +908,11 @@ typedef typename iterator_traits<_Iterator>::pointer pointer;
 ```  
   
 ### Remarks  
- See [checked_array_iterator::operator*](#checked_array_iterator__operator_star) for a code sample.  
+ See [checked_array_iterator::operator*](#op_star) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="checked_array_iterator__reference"></a>  checked_array_iterator::reference  
+##  <a name="reference"></a>  checked_array_iterator::reference  
  A type that provides a reference to an element addressed by a `checked_array_iterator`.  
   
 ```
@@ -942,7 +920,7 @@ typedef typename iterator_traits<_Iterator>::reference reference;
 ```  
   
 ### Remarks  
- See [checked_array_iterator::operator[]](#checked_array_iterator__operator_at) for a code sample.  
+ See [checked_array_iterator::operator[]](#op_at) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   

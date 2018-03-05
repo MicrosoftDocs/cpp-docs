@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::single_link_registry"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "single_link_registry class"
+ms.topic: "reference"
+f1_keywords: ["single_link_registry", "AGENTS/concurrency::single_link_registry", "AGENTS/concurrency::single_link_registry::single_link_registry", "AGENTS/concurrency::single_link_registry::add", "AGENTS/concurrency::single_link_registry::begin", "AGENTS/concurrency::single_link_registry::contains", "AGENTS/concurrency::single_link_registry::count", "AGENTS/concurrency::single_link_registry::remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["single_link_registry class"]
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # single_link_registry Class
 The `single_link_registry` object is a `network_link_registry` that manages only a single source or target block.  
@@ -54,18 +37,18 @@ class single_link_registry : public network_link_registry<_Block>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[single_link_registry Constructor](#ctor)|Constructs a `single_link_registry` object.|  
+|[single_link_registry](#ctor)|Constructs a `single_link_registry` object.|  
 |[~single_link_registry Destructor](#dtor)|Destroys the `single_link_registry` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[add Method](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
-|[begin Method](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[contains Method](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[count Method](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove Method](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[add](#add)|Adds a link to the `single_link_registry` object. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[begin](#begin)|Returns an iterator to the first element in the `single_link_registry` object. (Overrides [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[contains](#contains)|Searches the `single_link_registry` object for a specified block. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[count](#count)|Counts the number of items in the `single_link_registry` object. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Removes a link from the `single_link_registry` object. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
   
 ## Inheritance Hierarchy  
  [network_link_registry](network-link-registry-class.md)  

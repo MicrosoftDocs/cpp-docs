@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+dev_langs: ["C++"]
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Diagnostic Messages
 The Microsoft ARM assembler (*armasm*) emits diagnostic warnings and errors when it encounters them. This article describes the most commonly-encountered messages.  
@@ -44,7 +29,7 @@ filename(lineno) : [error|warning] Anum: message
   
 ### Errors  
  A2193: this instruction generates unpredictable behavior  
- The ARM architecture cannot guarantee what happens when this instruction is executed.  For details about the well-defined forms of this instruction, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/?LinkId=246464).  
+ The ARM architecture cannot guarantee what happens when this instruction is executed.  For details about the well-defined forms of this instruction, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).  
   
 ```  
   
@@ -126,7 +111,7 @@ ANDS r0, r0, #4, #2            ; A4508: Use of this rotated constant is deprecat
 ```  
   
  A4509: This form of conditional instruction is deprecated  
- This form of conditional instruction has been deprecated by ARM in the ARMv8 architecture. We recommend that you change the code to use conditional branches. To see which conditional instructions are still supported, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/?LinkId=246464).  
+ This form of conditional instruction has been deprecated by ARM in the ARMv8 architecture. We recommend that you change the code to use conditional branches. To see which conditional instructions are still supported, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).  
   
  This warning is not emitted when the `-oldit` command-line switch is used.  
   

@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "GetThisClass"
-  - "CMFCRibbonCustomizeDialog"
-  - "~CMFCRibbonCustomizeDialog"
-  - "CMFCRibbonCustomizeDialog::GetThisClass"
-  - "CMFCRibbonCustomizeDialog.~CMFCRibbonCustomizeDialog"
-  - "CMFCRibbonCustomizeDialog.GetThisClass"
-  - "CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonCustomizeDialog class"
-  - "CMFCRibbonCustomizeDialog class, destructor"
-  - "~CMFCRibbonCustomizeDialog destructor"
-  - "GetThisClass method"
+f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog"]
 ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizeDialog Class
 Displays the ribbon **Customize** page.  

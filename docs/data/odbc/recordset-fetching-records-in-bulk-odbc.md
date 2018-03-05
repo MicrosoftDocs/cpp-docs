@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bulk row fetching, implementing"
-  - "ODBC recordsets, bulk row fetching"
-  - "bulk record field exchange"
-  - "bulk row fetching"
-  - "bulk RFX functions"
-  - "recordsets, bulk row fetching"
-  - "DoBulkFieldExchange method"
-  - "fetching ODBC records in bulk"
-  - "RFX (ODBC), bulk"
-  - "rowsets, bulk row fetching"
-  - "RFX (ODBC), bulk row fetching"
+dev_langs: ["C++"]
+helpviewer_keywords: ["bulk row fetching, implementing", "ODBC recordsets, bulk row fetching", "bulk record field exchange", "bulk row fetching", "bulk RFX functions", "recordsets, bulk row fetching", "DoBulkFieldExchange method", "fetching ODBC records in bulk", "RFX (ODBC), bulk", "rowsets, bulk row fetching", "RFX (ODBC), bulk row fetching"]
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Fetching Records in Bulk (ODBC)
 This topic applies to the MFC ODBC classes.  

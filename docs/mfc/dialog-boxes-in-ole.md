@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC dialog boxes, OLE dialog boxes"
-  - "OLE dialog boxes"
-  - "dialog boxes"
-  - "OLE dialog boxes, about OLE dialog boxes"
-  - "dialog boxes, about dialog boxes"
-  - "dialog boxes, OLE"
-  - "Insert object"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dialog Boxes in OLE
 While a user runs an OLE-enabled application, there are times when the application needs information from the user in order to carry out the operation. The MFC OLE classes provide a number of dialog boxes to gather the required information. This topic lists the tasks handled by the OLE dialog boxes and the classes needed to display those dialog boxes. For details on OLE dialog boxes and the structures used to customize their behavior, see [MFC Reference](../mfc/mfc-desktop-applications.md).  

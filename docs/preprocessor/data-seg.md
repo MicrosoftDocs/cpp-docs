@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "data_seg_CPP"
-  - "vc-pragma.data_seg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data_seg pragma"
-  - "pragmas, data_seg"
+ms.topic: "reference"
+f1_keywords: ["data_seg_CPP", "vc-pragma.data_seg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["data_seg pragma", "pragmas, data_seg"]
 ms.assetid: 65c66466-4c98-494f-93af-106beb4caf78
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # data_seg
 Specifies the data segment where initialized variables are stored in the .obj file.  
@@ -65,7 +46,7 @@ Specifies the data segment where initialized variables are stored in the .obj fi
  *identifier* enables multiple records to be popped with a single **pop** command.  
   
  *"segment-name"*(optional)  
- The name of a segment*.* When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
+ The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
  *"segment-class"* (optional)  
  Included for compatibility with C++ prior to version 2.0. It is ignored.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDispatchException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDispatchException class"
-  - "Automation, exceptions"
-  - "exceptions, OLE"
-  - "OLE exceptions, to IDispatch interface"
+f1_keywords: ["COleDispatchException", "AFXDISP/COleDispatchException", "AFXDISP/COleDispatchException::m_dwHelpContext", "AFXDISP/COleDispatchException::m_strDescription", "AFXDISP/COleDispatchException::m_strHelpFile", "AFXDISP/COleDispatchException::m_strSource", "AFXDISP/COleDispatchException::m_wCode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDispatchException [MFC], m_dwHelpContext", "COleDispatchException [MFC], m_strDescription", "COleDispatchException [MFC], m_strHelpFile", "COleDispatchException [MFC], m_strSource", "COleDispatchException [MFC], m_wCode"]
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDispatchException Class
 Handles exceptions specific to the OLE `IDispatch` interface, which is a key part of OLE automation.  

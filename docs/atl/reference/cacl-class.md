@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAcl"
-  - "ATL::CAcl"
-  - "ATLSECURITY/CAcl"
-  - "ATL.CAcl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAcl class"
+f1_keywords: ["CAcl", "ATLSECURITY/ATL::CAcl", "ATLSECURITY/ATL::CAcl::CAccessMaskArray", "ATLSECURITY/ATL::CAcl::CAceFlagArray", "ATLSECURITY/ATL::CAcl::CAceTypeArray", "ATLSECURITY/ATL::CAcl::CAcl", "ATLSECURITY/ATL::CAcl::GetAceCount", "ATLSECURITY/ATL::CAcl::GetAclEntries", "ATLSECURITY/ATL::CAcl::GetAclEntry", "ATLSECURITY/ATL::CAcl::GetLength", "ATLSECURITY/ATL::CAcl::GetPACL", "ATLSECURITY/ATL::CAcl::IsEmpty", "ATLSECURITY/ATL::CAcl::IsNull", "ATLSECURITY/ATL::CAcl::RemoveAce", "ATLSECURITY/ATL::CAcl::RemoveAces", "ATLSECURITY/ATL::CAcl::SetEmpty", "ATLSECURITY/ATL::CAcl::SetNull"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAcl class"]
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAcl Class
 This class is a wrapper for an `ACL` (access-control list) structure.  
@@ -102,9 +82,9 @@ class CAcl
   
  An object can also have system-level security information associated with it, in the form of a system ACL controlled by a system administrator. A system ACL can allow the system administrator to audit any attempts to gain access to an object.  
   
- For more details, see the [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872) discussion in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more details, see the [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872) discussion in the Windows SDK.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  

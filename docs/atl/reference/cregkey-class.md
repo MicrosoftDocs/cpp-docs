@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRegKey"
-  - "ATL::CRegKey"
-  - "ATL.CRegKey"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRegKey class"
-  - "ATL, registry"
-  - "registry, deleting values"
-  - "registry, writing to"
-  - "registry, deleting keys"
+f1_keywords: ["CRegKey", "ATLBASE/ATL::CRegKey", "ATLBASE/ATL::CRegKey::CRegKey", "ATLBASE/ATL::CRegKey::Attach", "ATLBASE/ATL::CRegKey::Close", "ATLBASE/ATL::CRegKey::Create", "ATLBASE/ATL::CRegKey::DeleteSubKey", "ATLBASE/ATL::CRegKey::DeleteValue", "ATLBASE/ATL::CRegKey::Detach", "ATLBASE/ATL::CRegKey::EnumKey", "ATLBASE/ATL::CRegKey::Flush", "ATLBASE/ATL::CRegKey::GetKeySecurity", "ATLBASE/ATL::CRegKey::NotifyChangeKeyValue", "ATLBASE/ATL::CRegKey::Open", "ATLBASE/ATL::CRegKey::QueryBinaryValue", "ATLBASE/ATL::CRegKey::QueryDWORDValue", "ATLBASE/ATL::CRegKey::QueryGUIDValue", "ATLBASE/ATL::CRegKey::QueryMultiStringValue", "ATLBASE/ATL::CRegKey::QueryQWORDValue", "ATLBASE/ATL::CRegKey::QueryStringValue", "ATLBASE/ATL::CRegKey::QueryValue", "ATLBASE/ATL::CRegKey::RecurseDeleteKey", "ATLBASE/ATL::CRegKey::SetBinaryValue", "ATLBASE/ATL::CRegKey::SetDWORDValue", "ATLBASE/ATL::CRegKey::SetGUIDValue", "ATLBASE/ATL::CRegKey::SetKeySecurity", "ATLBASE/ATL::CRegKey::SetKeyValue", "ATLBASE/ATL::CRegKey::SetMultiStringValue", "ATLBASE/ATL::CRegKey::SetQWORDValue", "ATLBASE/ATL::CRegKey::SetStringValue", "ATLBASE/ATL::CRegKey::SetValue", "ATLBASE/ATL::CRegKey::m_hKey", "ATLBASE/ATL::CRegKey::m_pTM"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRegKey class", "ATL, registry", "registry, deleting values", "registry, writing to", "registry, deleting keys"]
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRegKey Class
 This class provides methods for manipulating entries in the system registry.  
@@ -170,7 +147,7 @@ LONG Create(
  Specifies the class of the key to be created or opened. The default value is REG_NONE.  
   
  `dwOptions`  
- Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
  `samDesired`  
  The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see **RegCreateKeyEx**.  
@@ -289,7 +266,7 @@ LONG EnumKey(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) in the Windows SDK.  
   
 ##  <a name="flush"></a>  CRegKey::Flush  
  Call this method to write all of the attributes of the open registry key into the registry.  
@@ -302,7 +279,7 @@ LONG Flush() throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- For more information, see [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) in the Windows SDK.  
   
 ##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity  
  Call this method to retrieve a copy of the security descriptor protecting the open registry key.  
@@ -405,7 +382,7 @@ LONG Open(
  Specifies the name of a key to be created or opened. This name must be a subkey of `hKeyParent`.  
   
  `samDesired`  
- The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined in WINERROR.H.  

@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "try_cpp"
-  - "try"
-  - "finally"
-  - "finally_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "try-catch keyword [C], try-finally keyword [C]"
-  - "__finally keyword [C], try-finally statement syntax"
-  - "try-finally keyword [C]"
-  - "__finally keyword [C]"
-  - "try-catch keyword [C]"
-  - "structured exception handling, try-finally"
+dev_langs: ["C++"]
+helpviewer_keywords: ["try-finally keyword [C]", "__finally keyword [C], try-finally statement syntax", "__finally keyword [C]", "structured exception handling, try-finally"]
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # try-finally Statement (C)
 **Microsoft Specific**  

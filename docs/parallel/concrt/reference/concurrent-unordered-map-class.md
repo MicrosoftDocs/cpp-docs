@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concurrent_unordered_map/concurrency::concurrent_unordered_map"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_unordered_map class"
+ms.topic: "reference"
+f1_keywords: ["concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::at", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::unsafe_erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_unordered_map class"]
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_map Class
 The `concurrent_unordered_map` class is a concurrency-safe container that controls a varying-length sequence of elements of type `std::pair<const K, _Element_type>`. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access, and iterator traversal operations.  
@@ -66,13 +49,13 @@ template <typename K,
  The mapped type.  
   
  `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::hash<``K``>`.  
+ The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
   
  `key_equality`  
- The equality comparison function object type. This argument is optional and the default value is `std::equal_to<``K``>`.  
+ The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
   
  `_Allocator_type`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered map. This argument is optional and the default value is `std::allocator<std::pair<``K`, `_Element_type``>>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered map. This argument is optional and the default value is `std::allocator<std::pair<K`, `_Element_type>>`.  
   
 ## Members  
   
@@ -101,25 +84,25 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_map Constructor](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
+|[concurrent_unordered_map](#ctor)|Overloaded. Constructs a concurrent unordered map.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[at Method](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
-|[hash_function Method](#hash_function)|Gets the stored hash function object.|  
-|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
-|[key_eq Method](#key_eq)|Gets the stored equality comparison function object.|  
-|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
-|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
+|[at](#at)|Overloaded. Finds an element in a `concurrent_unordered_map` with a specified key value.. This method is concurrency-safe.|  
+|[hash_function](#hash_function)|Gets the stored hash function object.|  
+|[insert](#insert)|Overloaded. Adds elements to the `concurrent_unordered_map` object.|  
+|[key_eq](#key_eq)|Gets the stored equality comparison function object.|  
+|[swap](#swap)|Swaps the contents of two `concurrent_unordered_map` objects. This method is not concurrency-safe.|  
+|[unsafe_erase](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_map` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator[] Operator](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
-|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
+|[operator[]](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|  
+|[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_map` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

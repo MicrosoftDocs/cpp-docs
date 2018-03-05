@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3490"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3490"
+f1_keywords: ["C3490"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3490"]
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3490
 'var' cannot be modified because it is being accessed through a const object  
@@ -45,7 +27,7 @@ translation.priority.mt:
 -   Remove the `const` modifier from your method declaration.  
   
 ## Example  
- The following example generates C3490 because it modifies the member variable`_i` in a `const` method:  
+ The following example generates C3490 because it modifies the member variable `_i` in a `const` method:  
   
 ```  
 // C3490a.cpp  

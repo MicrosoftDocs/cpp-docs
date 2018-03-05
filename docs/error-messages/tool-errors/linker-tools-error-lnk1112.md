@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK1112"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK1112"
+f1_keywords: ["LNK1112"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK1112"]
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1112
 module machine type 'type1' conflicts with target machine type 'type2'  

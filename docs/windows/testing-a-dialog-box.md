@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Test Dialog command"
-  - "testing, dialog boxes"
-  - "dialog boxes, testing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Test Dialog command", "testing, dialog boxes", "dialog boxes, testing"]
 ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Testing a Dialog Box
 When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:  
@@ -57,7 +38,7 @@ When you're designing a dialog box, you can simulate and test its run-time behav
   
 2.  To end the simulation, press Esc, or just choose the **Close** button in the dialog box you are testing.  
   
- For information about how to add resources to managed projects, see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890).  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index).  
   
  Requirements  
   

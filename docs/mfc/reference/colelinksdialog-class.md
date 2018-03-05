@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleLinksDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Edit Links dialog box"
-  - "COleLinksDialog class"
-  - "dialog boxes, OLE"
-  - "OLE Edit Links dialog box"
+f1_keywords: ["COleLinksDialog", "AFXODLGS/COleLinksDialog", "AFXODLGS/COleLinksDialog::COleLinksDialog", "AFXODLGS/COleLinksDialog::DoModal", "AFXODLGS/COleLinksDialog::m_el"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleLinksDialog [MFC], COleLinksDialog", "COleLinksDialog [MFC], DoModal", "COleLinksDialog [MFC], m_el"]
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleLinksDialog Class
 Used for the OLE Edit Links dialog box.  
@@ -72,7 +52,7 @@ class COleLinksDialog : public COleDialog
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
   
- For more information, see the [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) structure in the Windows SDK.  
   
  For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -108,7 +88,7 @@ virtual INT_PTR DoModal();
   
 - **IDCANCEL** if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_el](#m_el) structure, you should do it before calling `DoModal`, but after the dialog object is constructed.  
@@ -150,7 +130,7 @@ OLEUIEDITLINKS m_el;
 ### Remarks  
  Members of this structure can be modified either directly or through member functions.  
   
- For more information, see the [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIEDITLINKS](http://msdn.microsoft.com/library/windows/desktop/ms678492) structure in the Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

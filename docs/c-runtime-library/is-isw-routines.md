@@ -4,45 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcr110.dll"
-  - "msvcr120.dll"
+apilocation: ["msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "isw"
-  - "is"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is routines"
-  - "isw routines"
+f1_keywords: ["isw", "is"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is routines", "isw routines"]
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is, isw Routines
 |||  
@@ -59,31 +34,31 @@ translation.priority.ht:
 ## Remarks  
  These routines test characters for specified conditions.  
   
- The **is** routines produce meaningful results for any integer argument from –1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is `int`.  
+ The **is** routines produce meaningful results for any integer argument from -1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is `int`.  
   
 > [!CAUTION]
 >  For the **is** routines, passing an argument of type `char` may yield unpredictable results. An SBCS or MBCS single-byte character of type `char` with a value greater than 0x7F is negative. If a `char` is passed, the compiler may convert the value to a signed `int` or a signed **long**. This value may be sign-extended by the compiler, with unexpected results.  
   
- The **isw** routines produce meaningful results for any integer value from – 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **unsigned short**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.  
+ The **isw** routines produce meaningful results for any integer value from - 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **unsigned short**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.  
   
  In the "C" locale, the test conditions for the **is** routines are as follows:  
   
  `isalnum`  
- Alphanumeric (A – Z, a – z, or 0 – 9).  
+ Alphanumeric (A - Z, a - z, or 0 - 9).  
   
  `isalpha`  
- Alphabetic (A – Z or a – z).  
+ Alphabetic (A - Z or a - z).  
   
  `__isascii`  
- ASCII character (0x00 – 0x7F).  
+ ASCII character (0x00 - 0x7F).  
   
  `isblank`  
  Horizontal tab or space character (0x09 or 0x20).  
   
  `iscntrl`  
- Control character (0x00 – 0x1F or 0x7F).  
+ Control character (0x00 - 0x1F or 0x7F).  
   
  `__iscsym`  
  Letter, underscore, or digit.  
@@ -92,28 +67,28 @@ translation.priority.ht:
  Letter or underscore.  
   
  **isdigit**  
- Decimal digit (0 – 9).  
+ Decimal digit (0 - 9).  
   
  `isgraph`  
  Printable character except space ( ).  
   
  `islower`  
- Lowercase letter (a – z).  
+ Lowercase letter (a - z).  
   
  `isprint`  
- Printable character including space (0x20 – 0x7E).  
+ Printable character including space (0x20 - 0x7E).  
   
  `ispunct`  
  Punctuation character.  
   
  `isspace`  
- White-space character (0x09 – 0x0D or 0x20).  
+ White-space character (0x09 - 0x0D or 0x20).  
   
  `isupper`  
- Uppercase letter (A – Z).  
+ Uppercase letter (A - Z).  
   
  `isxdigit`  
- Hexadecimal digit (A – F, a – f, or 0 – 9).  
+ Hexadecimal digit (A - F, a - f, or 0 - 9).  
   
  For the **isw** routines, the result of the test for the specified condition is independent of locale. The test conditions for the **isw** functions are as follows:  
   
@@ -124,7 +99,7 @@ translation.priority.ht:
  Any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswalpha` returns nonzero only for wide characters for which `iswupper` or `iswlower` is nonzero.  
   
  `iswascii`  
- Wide-character representation of ASCII character (0x0000 – 0x007F).  
+ Wide-character representation of ASCII character (0x0000 - 0x007F).  
   
  `iswblank`  
  Wide character that corresponds to the standard space character or is one of an implementation-defined set of wide characters for which `iswalnum` is false. Standard blank characters are space (L' ') and horizontal tab (L'\t').  

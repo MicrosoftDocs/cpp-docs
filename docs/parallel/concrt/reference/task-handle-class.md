@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::task_handle"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task_handle class"
+ms.topic: "reference"
+f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_handle class"]
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # task_handle Class
 The `task_handle` class represents an individual parallel work item. It encapsulates the instructions and the data required to execute a piece of work.  
@@ -56,14 +39,14 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task_handle Constructor](#ctor)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|  
+|[task_handle](#ctor)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|  
 |[~task_handle Destructor](#dtor)|Destroys the `task_handle` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator() Operator](#task_handle__operator_call)|The function call operator that the runtime invokes to perform the work of the task handle.|  
+|[operator()](#task_handle__operator_call)|The function call operator that the runtime invokes to perform the work of the task handle.|  
   
 ## Remarks  
  `task_handle` objects can be used in conjunction with a `structured_task_group` or a more general `task_group` object, to decompose work into parallel tasks. For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  

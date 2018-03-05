@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoRecordView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDaoRecordView class"
-  - "data-bound controls [C++], DAO controls"
-  - "data binding [C++], DAO views"
-  - "bound controls [C++], displaying database data"
-  - "application wizards [C++], creating record views"
-  - "controls [MFC], data binding"
+f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoRecordView [MFC], CDaoRecordView", "CDaoRecordView [MFC], IsOnFirstRecord", "CDaoRecordView [MFC], IsOnLastRecord", "CDaoRecordView [MFC], OnGetRecordset", "CDaoRecordView [MFC], OnMove"]
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoRecordView Class
 A view that displays database records in controls.  

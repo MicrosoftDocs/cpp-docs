@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [C++], walkthroughs"
-  - "setup projects [C++]"
-  - "program deployments [C++]"
-  - "projects [C++], setup"
-  - "projects [C++], deploying programs"
-  - "application deployment [C++], walkthroughs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deploying applications [C++], walkthroughs", "setup projects [C++]", "program deployments [C++]", "projects [C++], setup", "projects [C++], deploying programs", "application deployment [C++], walkthroughs"]
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying Your Program (C++)
 Now that you've created your application by completing the earlier related walkthroughs, which are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), the last step is to create an installer so that other users can install the program on their computers. To do this, you'll add a new project to your existing solution. The output of this new project is a setup.exe file that will install your app on another computer.  
@@ -107,5 +85,6 @@ Now that you've created your application by completing the earlier related walkt
  **Previous:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

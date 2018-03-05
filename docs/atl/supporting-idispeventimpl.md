@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDispEventImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event sink maps, declaring"
-  - "IDispEventImpl class, advising and unadvising"
-  - "SINK_ENTRY macro"
-  - "type libraries, importing"
-  - "ATL, IDispEventImpl support in COM objects"
-  - "BEGIN_SINK_MAP macro"
-  - "IDispEventImpl class, declaring"
+f1_keywords: ["IDispEventImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event sink maps, declaring", "IDispEventImpl class, advising and unadvising", "SINK_ENTRY macro", "type libraries, importing", "ATL, IDispEventImpl support in COM objects", "BEGIN_SINK_MAP macro", "IDispEventImpl class, declaring"]
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Supporting IDispEventImpl
 The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) can be used to provide support for connection point sinks in your ATL class. A connection point sink allows your class to handle events fired from external COM objects. These connection point sinks are mapped with an event sink map, provided by your class.  
@@ -75,7 +52,7 @@ The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ca
 ## Declaring an Event Sink Map  
  In order for the event notifications to be handled by the proper function, your class must route each event to its correct handler. This is achieved by declaring an event sink map.  
   
- ATL provides several macros, [BEGIN_SINK_MAP](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f), [END_SINK_MAP](http://msdn.microsoft.com/library/c8bb87a0-b224-46e5-9edc-fc4d7f1129b4), and [SINK_ENTRY_EX](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5), that make this mapping easier. The standard format is as follows:  
+ ATL provides several macros, [BEGIN_SINK_MAP](reference/composite-control-macros.md#begin_sink_map), [END_SINK_MAP](reference/composite-control-macros.md#end_sink_map), and [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex), that make this mapping easier. The standard format is as follows:  
   
  `BEGIN_SINK_MAP(comClass)`  
   

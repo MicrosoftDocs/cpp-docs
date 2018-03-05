@@ -4,74 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbscat"
-  - "wcscat"
-  - "strcat"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbscat", "wcscat", "strcat"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbscat"
-  - "_ftcscat"
-  - "_tcscat"
-  - "strcat"
-  - "wcscat"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concatenating strings"
-  - "mbscat function"
-  - "_ftcscat function"
-  - "_tcscat function"
-  - "ftcscat function"
-  - "strcat function"
-  - "strings [C++], appending"
-  - "_mbscat function"
-  - "tcscat function"
-  - "strings [C++], concatenating"
-  - "appending strings"
-  - "wcscat function"
+f1_keywords: ["_mbscat", "_ftcscat", "_tcscat", "strcat", "wcscat"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concatenating strings", "mbscat function", "_ftcscat function", "_tcscat function", "ftcscat function", "strcat function", "strings [C++], appending", "_mbscat function", "tcscat function", "strings [C++], concatenating", "appending strings", "wcscat function"]
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strcat, wcscat, _mbscat
 Appends a string. More secure versions of these functions are available; see [strcat_s, wcscat_s, _mbscat_s](../../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md).  
   
 > [!IMPORTANT]
->  `_mbscat_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscat_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -143,9 +96,6 @@ unsigned char *_mbscat(
   
 ## Example  
  See the example for [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Concat](https://msdn.microsoft.com/en-us/library/system.string.concat.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

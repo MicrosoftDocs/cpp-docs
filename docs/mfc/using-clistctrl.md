@@ -4,45 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CListCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CListCtrl class, using"
+f1_keywords: ["CListCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CListCtrl class [MFC], using"]
 ms.assetid: 20d6a5d6-8f07-4ddf-975f-ea2dfebcc835
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using CListCtrl
 Use a list control to display any arrangement of icons with labels, as in File Explorer, or columnar lists of text, with or without icons. For a description of the four possible "views" (not to be confused with MFC views) you can have in a list control — icon view, small icon view, list view, and report view — see Views in the [CListCtrl](../mfc/reference/clistctrl-class.md) class overview.  
   
  In some views, users can drag icons to different positions or edit icon labels. For example, see the right-hand pane in File Explorer, which uses a list control in a nondialog window. You can experiment with the available views in Explorer's View menu.  
   
- For related information, see [About List-View Controls](http://msdn.microsoft.com/library/windows/desktop/bb774735) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For related information, see [About List-View Controls](http://msdn.microsoft.com/library/windows/desktop/bb774735) in the Windows SDK.  
   
 > [!NOTE]
->  The [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] refers to list controls as "list view controls." This usage of "view" does not refer to MFC view classes, particularly `CListView`. For more information, see [List Control and List View](../mfc/list-control-and-list-view.md).  
+>  The Windows SDK refers to list controls as "list view controls." This usage of "view" does not refer to MFC view classes, particularly `CListView`. For more information, see [List Control and List View](../mfc/list-control-and-list-view.md).  
   
 ## What do you want to know more about  
   

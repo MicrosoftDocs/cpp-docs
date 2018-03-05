@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "constructors [C++]"
-  - "objects [C++], creating"
-  - "instance constructors"
+dev_langs: ["C++"]
+helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Constructors (C++)
 A constructor is a kind of member function that initializes an instance of its class. A constructor has the same name as the class and no return value. A constructor can have any number of parameters and a class may have any number of overloaded constructors. Constructors may have any accessibility, public, protected or private. If you don't define any constructors, the compiler will generate a default constructor that takes no parameters; you can override this behavior by declaring a default constructor as deleted.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], status information"
-  - "examples [MFC], file status"
-  - "files [C++], accessing"
-  - "file status [C++]"
-  - "status of files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [MFC], status information", "examples [MFC], file status", "files [MFC], accessing", "file status [MFC]", "status of files [MFC]"]
 ms.assetid: 1b8891d6-eb0f-4037-a837-4928fe595222
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Accessing File Status
 `CFile` also supports getting file status, including whether the file exists, creation and modification dates and times, logical size, and path.  

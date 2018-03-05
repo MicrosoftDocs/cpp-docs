@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_getws_s"
-  - "gets_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_getws_s", "gets_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getws_s"
-  - "gets_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "getws_s function"
-  - "_getws_s function"
-  - "lines, getting"
-  - "streams, getting lines"
-  - "buffers, avoiding overruns"
-  - "buffer overruns"
-  - "buffers, buffer overruns"
-  - "gets_s function"
-  - "standard input, reading from"
+f1_keywords: ["_getws_s", "gets_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["getws_s function", "_getws_s function", "lines, getting", "streams, getting lines", "buffers, avoiding overruns", "buffer overruns", "buffers, buffer overruns", "gets_s function", "standard input, reading from"]
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # gets_s, _getws_s
 Gets a line from the `stdin` stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -117,7 +78,7 @@ wchar_t *_getws_s(
 |`gets_s`|\<stdio.h>|  
 |`_getws`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -140,9 +101,6 @@ int main( void )
   
 Hello there!The line entered was: Hello there!  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

@@ -1,20 +1,20 @@
 ---
-title: "Partial classes (C++-CX) | Microsoft Docs"
+title: "Partial classes (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
 caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
-# Partial classes (C++-CX)
+# Partial classes (C++/CX)
 A partial class is a construct that supports scenarios in which you are modifying one part of a class definition, and automatic code-generating software—for example, the XAML designer—is also modifying code in the same class. By using a partial class, you can prevent the designer from overwriting your code. In a Visual Studio project, the `partial` modifier is applied automatically to the generated file.  
   
 ## Syntax  
@@ -61,7 +61,7 @@ A partial class is a construct that supports scenarios in which you are modifyin
   
  Every partial class definition of a class  must lexically precede the one full definition of that class, but doesn't have to precede forward declarations of the class. If there's no full definition of the class, then the partial class declarations can only be forward declarations.  
   
- All class-keys such as `class` and `struct` must match. For example, it's an error to code `partial class` *X*`{};``struct` *X*`{};`.  
+ All class-keys such as `class` and `struct` must match. For example, it's an error to code `partial class X {}; struct X {};`.  
   
  The following example demonstrates number and ordering. The last partial declaration fails because the class is already defined.  
   
@@ -84,7 +84,7 @@ A partial class is a construct that supports scenarios in which you are modifyin
   
  The `partial` keyword is supported only in combination with the `ref class` keyword or the `value class` keyword.  
   
-## Examples  
+### Examples  
  The following example defines the `Address` class across two code files. The designer modifies `Address.details.h` and you modify `Address.h`. Only the class definition in the first file uses the `partial` keyword.  
   
  [!code-cpp[cx_partial#07](../cppcx/codesnippet/CPP/partialclassexample/address.details.h#07)]  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlTemporaryFile"
-  - "ATL.CAtlTemporaryFile"
-  - "ATL::CAtlTemporaryFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlTemporaryFile class"
+f1_keywords: ["CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::Close", "ATLFILE/ATL::CAtlTemporaryFile::Create", "ATLFILE/ATL::CAtlTemporaryFile::Flush", "ATLFILE/ATL::CAtlTemporaryFile::GetPosition", "ATLFILE/ATL::CAtlTemporaryFile::GetSize", "ATLFILE/ATL::CAtlTemporaryFile::HandsOff", "ATLFILE/ATL::CAtlTemporaryFile::HandsOn", "ATLFILE/ATL::CAtlTemporaryFile::LockRange", "ATLFILE/ATL::CAtlTemporaryFile::Read", "ATLFILE/ATL::CAtlTemporaryFile::Seek", "ATLFILE/ATL::CAtlTemporaryFile::SetSize", "ATLFILE/ATL::CAtlTemporaryFile::TempFileName", "ATLFILE/ATL::CAtlTemporaryFile::UnlockRange", "ATLFILE/ATL::CAtlTemporaryFile::Write"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlTemporaryFile class"]
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlTemporaryFile Class
 This class provides methods for the creation and use of a temporary file.  
@@ -143,7 +124,7 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
  The path for the temporary file. If this is NULL, [GetTempPath](http://msdn.microsoft.com/library/windows/desktop/aa364992) will be called to assign a path.  
   
  `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -331,7 +312,7 @@ LPCTSTR TempFileName() throw();
  Returns the `LPCTSTR` pointing to the file name.  
   
 ### Remarks  
- The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)[!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] function. The file extension will always be "TFR" for the temporary file.  
+ The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)Windows SDK function. The file extension will always be "TFR" for the temporary file.  
   
 ##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange  
  Call this method to unlock a region of the temporary file.  

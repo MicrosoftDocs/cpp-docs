@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.WINMDKEYCONTAINER"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCLinkerTool.WINMDKEYCONTAINER"]
+dev_langs: ["C++"]
 ms.assetid: c2fc44dc-7cb5-42b9-897f-1b124928f2f7
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /WINMDKEYCONTAINER (Specify Key Container)
 Specifies a key container to sign a Windows Metadata (.winmd) file.  

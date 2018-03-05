@@ -4,58 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "m_szTableSchema"
-  - "m_bCheckOption"
-  - "CViews"
-  - "CHECK_OPTION"
-  - "CViewInfo"
-  - "m_szTableCatalog"
-  - "IS_UPDATABLE"
-  - "m_szDefinition"
-  - "m_szTableName"
-  - "m_bIsUpdatable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DESCRIPTION class data member"
-  - "CHECK_OPTION"
-  - "m_szTableSchema"
-  - "TABLE_CATALOG"
-  - "TABLE_NAME"
-  - "m_bCheckOption"
-  - "TABLE_SCHEMA"
-  - "m_szTableCatalog"
-  - "m_szDescription"
-  - "m_szDefinition"
-  - "m_szTableName"
-  - "CViewInfo parameter class"
-  - "m_bIsUpdatable"
-  - "IS_UPDATABLE"
-  - "CViews typedef class"
+ms.topic: "reference"
+f1_keywords: ["m_szTableSchema", "m_bCheckOption", "CViews", "CHECK_OPTION", "CViewInfo", "m_szTableCatalog", "IS_UPDATABLE", "m_szDefinition", "m_szTableName", "m_bIsUpdatable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DESCRIPTION class data member", "CHECK_OPTION", "m_szTableSchema", "TABLE_CATALOG", "TABLE_NAME", "m_bCheckOption", "TABLE_SCHEMA", "m_szTableCatalog", "m_szDescription", "m_szDefinition", "m_szTableName", "CViewInfo parameter class", "m_bIsUpdatable", "IS_UPDATABLE", "CViews typedef class"]
 ms.assetid: ad864181-4fab-4919-b0fd-45df5da230d9
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CViews, CViewInfo
 Call the typedef class **CViews** to implement its parameter class **CViewInfo**.  

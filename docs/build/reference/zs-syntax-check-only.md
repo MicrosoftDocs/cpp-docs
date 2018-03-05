@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/zs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zs compiler option [C++]"
-  - "Syntax Check Only compiler option"
-  - "Zs compiler option"
-  - "/Zs compiler option [C++]"
+f1_keywords: ["/zs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zs compiler option [C++]", "Syntax Check Only compiler option", "Zs compiler option", "/Zs compiler option [C++]"]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Zs (Syntax Check Only)
 Tells the compiler to check only the syntax of the source files on the command line.  

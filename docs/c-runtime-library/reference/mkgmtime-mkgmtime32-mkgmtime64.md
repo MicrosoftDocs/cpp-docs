@@ -4,68 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mkgmtime32"
-  - "_mkgmtime64"
-  - "_mkgmtime"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mkgmtime32", "_mkgmtime64", "_mkgmtime"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mkgmtime64"
-  - "mkgmtime32"
-  - "_mkgmtime32"
-  - "mkgmtime"
-  - "mkgmtime64"
-  - "_mkgmtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mkgmtime32 function"
-  - "time functions"
-  - "mkgmtime function"
-  - "_mkgmtime function"
-  - "converting times"
-  - "mkgmtime64 function"
-  - "_mkgmtime64 function"
-  - "_mkgmtime32 function"
-  - "time, converting"
+f1_keywords: ["_mkgmtime64", "mkgmtime32", "_mkgmtime32", "mkgmtime", "mkgmtime64", "_mkgmtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mkgmtime32 function", "time functions", "mkgmtime function", "_mkgmtime function", "converting times", "mkgmtime64 function", "_mkgmtime64 function", "_mkgmtime32 function", "time, converting"]
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
-Converts a UTC time represented by a `tm``struct` to a UTC time represented by a `time_t` type.  
+Converts a UTC time represented by a `tm struct` to a UTC time represented by a `time_t` type.  
   
 ## Syntax  
   
@@ -84,15 +40,15 @@ __time64_t _mkgmtime64(
   
 #### Parameters  
  `timeptr`  
- A pointer to the UTC time as a `struct``tm` to convert.  
+ A pointer to the UTC time as a `struct tm` to convert.  
   
 ## Return Value  
- A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is –1.  
+ A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is -1.  
   
 ## Remarks  
  The `_mkgmtime32` and `_mkgmtime64` functions convert a UTC time to a `__time32_t` or `__time64_t` type representing the time in UTC. To convert a local time to UTC time, use `mktime`, `_mktime32`, and `_mktime64` instead.  
   
- `_mkgmtime` is an inline function that evaluates to `_mkgmtime64`, and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t`as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This is not recommended because your application might fail after January 18, 2038 (the maximum range of a 32-bit `time_t`), and it is not allowed at all on 64-bit platforms.  
+ `_mkgmtime` is an inline function that evaluates to `_mkgmtime64`, and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This is not recommended because your application might fail after January 18, 2038 (the maximum range of a 32-bit `time_t`), and it is not allowed at all on 64-bit platforms.  
   
  The time structure passed in will be changed as follows, in the same way as they are changed with the `_mktime` functions: the `tm_wday` and `tm_yday` fields are set to new values based on the values of `tm_mday` and `tm_year`. When specifying a `tm` structure time, set the `tm_isdst` field to:  
   
@@ -104,7 +60,7 @@ __time64_t _mkgmtime64(
   
  The C run-time library uses the TZ environment variable to determine the correct daylight savings time. If TZ is not set, the operating system is queried to get the correct regional daylight savings time behavior. `tm_isdst` is a required field. If not set, its value is undefined and the return value from `mktime` is unpredictable.  
   
- The range of the `_mkgmtime32` function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of `_mkgmtime64` is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of –1. The range of `_mkgmtime` depends on whether `_USE_32BIT_TIME_T` is defined. If not defined (the default) the range is that of `_mkgmtime64`; otherwise, the range is limited to the 32-bit range of `_mkgmtime32`.  
+ The range of the `_mkgmtime32` function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of `_mkgmtime64` is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of `_mkgmtime` depends on whether `_USE_32BIT_TIME_T` is defined. If not defined (the default) the range is that of `_mkgmtime64`; otherwise, the range is limited to the 32-bit range of `_mkgmtime32`.  
   
  Note that `gmtime` and `localtime` use a single statically allocated buffer for the conversion. If you supply this buffer to `mkgmtime`, the previous contents are destroyed.  
   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4743"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4743"
+f1_keywords: ["C4743"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4743"]
 ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4743
 '*type*' has different size in '*file1*' and '*file2*': *number* and *number* bytes  

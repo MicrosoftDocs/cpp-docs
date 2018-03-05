@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.classes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DestructElements function"
-  - "ConstructElements function"
-  - "SerializeElements function"
-  - "collection classes, helper functions"
-  - "helper functions collection class"
+f1_keywords: ["vc.mfc.macros.classes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DestructElements function", "ConstructElements function", "SerializeElements function", "collection classes [MFC], helper functions", "helper functions collection class [MFC]"]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Collection Class Helpers
 The collection classes `CMap`, `CList`, and `CArray` use templated global helper functions for such purposes as comparing, copying, and serializing elements. As part of your implementation of classes based on `CMap`, `CList`, and `CArray`, you must override these functions as necessary with versions tailored to the type of data stored in your map, list, or array. For information on overriding helper functions such as `SerializeElements`, see the article [Collections: How to Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md). Note that **ConstructElements** and **DestructElements** have been deprecated.  

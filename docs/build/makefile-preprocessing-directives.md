@@ -4,79 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "!UNDEF"
-  - "!INCLUDE"
-  - "!IFNDEF"
-  - "!MESSAGE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ERROR directive"
-  - "!MESSAGE directive"
-  - "IF directive"
-  - "!UNDEF directive"
-  - "IFDEF directive"
-  - "!ELSEIF directive"
-  - "!IFDEF directive"
-  - "!IF directive"
-  - "UNDEF directive"
-  - "!CMDSWITCHES directive"
-  - "ENDIF directive"
-  - "directives, makefile preprocessing"
-  - "INCLUDE directive"
-  - "IFNDEF directive"
-  - "preprocessing directives, makefiles"
-  - "!IFNDEF directive"
-  - "ELSEIFNDEF directive"
-  - "NMAKE program, expressions"
-  - "ELSEIF directive"
-  - "!ERROR directive"
-  - "!ENDIF directive"
-  - "MESSAGE directive"
-  - "!INCLUDE directive"
-  - "!ELSEIFNDEF directive"
-  - "CMDSWITCHES directive"
-  - "!ELSEIFDEF directive"
-  - "!ELSE directive"
-  - "NMAKE program, preprocessor directives"
-  - "makefiles, preprocessing directives"
-  - "ELSE directive"
-  - "ELSEIFDEF directive"
+f1_keywords: ["!UNDEF", "!INCLUDE", "!IFNDEF", "!MESSAGE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ERROR directive", "!MESSAGE directive", "IF directive", "!UNDEF directive", "IFDEF directive", "!ELSEIF directive", "!IFDEF directive", "!IF directive", "UNDEF directive", "!CMDSWITCHES directive", "ENDIF directive", "directives, makefile preprocessing", "INCLUDE directive", "IFNDEF directive", "preprocessing directives, makefiles", "!IFNDEF directive", "ELSEIFNDEF directive", "NMAKE program, expressions", "ELSEIF directive", "!ERROR directive", "!ENDIF directive", "MESSAGE directive", "!INCLUDE directive", "!ELSEIFNDEF directive", "CMDSWITCHES directive", "!ELSEIFDEF directive", "!ELSE directive", "NMAKE program, preprocessor directives", "makefiles, preprocessing directives", "ELSE directive", "ELSEIFDEF directive"]
 ms.assetid: bcedeccb-d981-469d-b9e8-ab5d097fd8c2
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Makefile Preprocessing Directives
 Preprocessing directives are not case sensitive. The initial exclamation point (!) must appear at the beginning of the line. Zero or more spaces or tabs can appear after the exclamation point, for indentation.  
   
  **!CMDSWITCHES**  
- {**+**&#124; **–**}*option*... Turns each *option* listed on or off. Spaces or tabs must appear before the + or – operator; none can appear between the operator and the [option letters](../build/nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.  
+ {**+**&#124; **-**}*option*... Turns each *option* listed on or off. Spaces or tabs must appear before the + or - operator; none can appear between the operator and the [option letters](../build/nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.  
   
  Only /D, /I, /N, and /S can be used in a makefile. In Tools.ini, all options are allowed except /F, /HELP, /NOLOGO, /X, and /?. Changes specified in a description block do not take effect until the next description block. This directive updates **MAKEFLAGS**; changes are inherited during recursion if **MAKEFLAGS** is specified.  
   
  **!ERROR**  *text*  
- Displays *text* in error U1050, then halts NMAKE, even if /K, /I, **.IGNORE**, **!CMDSWITCHES**, or the dash (–) command modifier is used. Spaces or tabs before *text* are ignored.  
+ Displays *text* in error U1050, then halts NMAKE, even if /K, /I, **.IGNORE**, **!CMDSWITCHES**, or the dash (-) command modifier is used. Spaces or tabs before *text* are ignored.  
   
  **!MESSAGE**  *text*  
  Displays *text* to standard output. Spaces or tabs before *text* are ignored.  

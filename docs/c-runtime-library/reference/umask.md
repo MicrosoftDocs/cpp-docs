@@ -4,55 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_umask"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_umask"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_umask"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "masks, file-permission-setting"
-  - "_umask function"
-  - "masks"
-  - "umask function"
-  - "file permissions [C++]"
-  - "files [C++], permission settings for"
+f1_keywords: ["_umask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["masks, file-permission-setting", "_umask function", "masks", "umask function", "file permissions [C++]", "files [C++], permission settings for"]
 ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _umask
 Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](../../c-runtime-library/reference/umask-s.md).  
@@ -73,7 +39,7 @@ int _umask(
  `_umask` returns the previous value of `pmode`. There is no error return.  
   
 ## Remarks  
- The `_umask` function sets the file-permission mask of the current process to the mode specified by `pmode`*.* The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
+ The `_umask` function sets the file-permission mask of the current process to the mode specified by `pmode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
   
  The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:  
   
@@ -129,9 +95,6 @@ int main( void )
 ```Output  
 Oldmask = 0x0000  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::File::SetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.setattributes.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

@@ -4,46 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__except"
-  - "try"
-  - "__try"
-  - "except"
-  - "__except_cpp"
-  - "__try_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "try-except keyword [C]"
-  - "structured exception handling, try-except"
-  - "try-catch keyword [C]"
-  - "__try keyword [C]"
-  - "__except keyword [C]"
-  - "__except keyword [C], in try-except"
-  - "try-catch keyword [C], try-except keyword [C]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["try-except keyword [C]", "structured exception handling, try-except", "try-catch keyword [C]", "__try keyword [C]", "__except keyword [C]", "__except keyword [C], in try-except", "try-catch keyword [C], try-except keyword [C]"]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # try-except Statement (C)
 **Microsoft Specific**  
@@ -64,7 +35,7 @@ translation.priority.ht:
   
 2.  If no exception occurs during execution of the guarded section, execution continues at the statement after the `__except` clause.  
   
-3.  If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the`__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:  
+3.  If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` expression is evaluated and the value returned determines how the exception is handled. There are three values:  
   
      `EXCEPTION_CONTINUE_SEARCH` Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.  
   

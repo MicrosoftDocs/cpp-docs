@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComboBoxEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extended combo boxes, CComboBoxEx class"
-  - "Windows common controls [C++], extended combo boxes"
-  - "common controls [C++], extended combo boxes"
-  - "combo boxes [C++], CComboBoxEx class"
-  - "Internet Explorer 4.0 common controls"
-  - "CComboBoxEx class"
+f1_keywords: ["CComboBoxEx", "AFXCMN/CComboBoxEx", "AFXCMN/CComboBoxEx::CComboBoxEx", "AFXCMN/CComboBoxEx::Create", "AFXCMN/CComboBoxEx::CreateEx", "AFXCMN/CComboBoxEx::DeleteItem", "AFXCMN/CComboBoxEx::GetComboBoxCtrl", "AFXCMN/CComboBoxEx::GetEditCtrl", "AFXCMN/CComboBoxEx::GetExtendedStyle", "AFXCMN/CComboBoxEx::GetImageList", "AFXCMN/CComboBoxEx::GetItem", "AFXCMN/CComboBoxEx::HasEditChanged", "AFXCMN/CComboBoxEx::InsertItem", "AFXCMN/CComboBoxEx::SetExtendedStyle", "AFXCMN/CComboBoxEx::SetImageList", "AFXCMN/CComboBoxEx::SetItem", "AFXCMN/CComboBoxEx::SetWindowTheme"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComboBoxEx [MFC], CComboBoxEx", "CComboBoxEx [MFC], Create", "CComboBoxEx [MFC], CreateEx", "CComboBoxEx [MFC], DeleteItem", "CComboBoxEx [MFC], GetComboBoxCtrl", "CComboBoxEx [MFC], GetEditCtrl", "CComboBoxEx [MFC], GetExtendedStyle", "CComboBoxEx [MFC], GetImageList", "CComboBoxEx [MFC], GetItem", "CComboBoxEx [MFC], HasEditChanged", "CComboBoxEx [MFC], InsertItem", "CComboBoxEx [MFC], SetExtendedStyle", "CComboBoxEx [MFC], SetImageList", "CComboBoxEx [MFC], SetItem", "CComboBoxEx [MFC], SetWindowTheme"]
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComboBoxEx Class
 Extends the combo box control by providing support for image lists.  
@@ -95,7 +73,7 @@ class CComboBoxEx : public CComboBox
  These style flags are described further in [Using CComboBoxEx](../../mfc/using-ccomboboxex.md).  
   
 ## Item Retention and Callback Item Attributes  
- Item information, such as indexes for items and images, indentation values, and text strings, is stored in the Win32 structure [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The structure also contains members that correspond to callback flags.  
+ Item information, such as indexes for items and images, indentation values, and text strings, is stored in the Win32 structure [COMBOBOXEXITEM](http://msdn.microsoft.com/library/windows/desktop/bb775746), as described in the Windows SDK. The structure also contains members that correspond to callback flags.  
   
  For a detailed, conceptual discussion, see [Using CComboBoxEx](../../mfc/using-ccomboboxex.md).  
   
@@ -168,7 +146,7 @@ virtual BOOL Create(
   
 - **WS_CHILD**  
   
- All other styles passed when you create the window are ignored. The **ComboBoxEx** control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb775742), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Set these styles by calling [SetExtendedStyle](#setextendedstyle).  
+ All other styles passed when you create the window are ignored. The **ComboBoxEx** control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](http://msdn.microsoft.com/library/windows/desktop/bb775742), in the Windows SDK. Set these styles by calling [SetExtendedStyle](#setextendedstyle).  
   
  If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of **Create**.  
   
@@ -186,7 +164,7 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
  The combo box control's style. See [Create](#create) for a list of styles.  
@@ -206,7 +184,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  Use `CreateEx` instead of **Create** to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.  
   
- `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `CreateEx` creates the control with the extended Windows styles specified by `dwExStyle`. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **CBES_EX_CASESENSITIVE**. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the Windows SDK.  
   
 ##  <a name="deleteitem"></a>  CComboBoxEx::DeleteItem  
  Removes an item from a **ComboBoxEx** control.  
@@ -223,7 +201,7 @@ int DeleteItem(int iIndex);
  The number of items remaining in the control. If `iIndex` is invalid, the function returns **CB_ERR**.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When you call DeleteItem, a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message with **CBEN_DELETEITEM** notification will be sent to the parent window.  
+ This member function implements the functionality of the message [CBEM_DELETEITEM](http://msdn.microsoft.com/library/windows/desktop/bb775768), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583) message with **CBEN_DELETEITEM** notification will be sent to the parent window.  
   
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl  
  Call this member function to get a pointer to a combo box control within a `CComboBoxEx` object.  
@@ -266,7 +244,7 @@ DWORD GetExtendedStyle() const;
  The `DWORD` value that contains the extended styles that are used for the combo box control.  
   
 ### Remarks  
- See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about these styles.  
+ See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the Windows SDK for more information about these styles.  
   
 ##  <a name="getimagelist"></a>  CComboBoxEx::GetImageList  
  Call this member function to get a pointer to the image list used by a `CComboBoxEx` control.  
@@ -296,7 +274,7 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
  Nonzero if the operation was successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775779), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the functionality of the message [CBEM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775779), as described in the Windows SDK.  
   
 ##  <a name="haseditchanged"></a>  CComboBoxEx::HasEditChanged  
  Determines if the user has changed the contents of the **ComboBoxEx** edit control by typing.  
@@ -309,7 +287,7 @@ BOOL HasEditChanged();
  Nonzero if the user has typed in the control's edit box; otherwise 0.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_HASEDITCHANGED](http://msdn.microsoft.com/library/windows/desktop/bb775782), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the functionality of the message [CBEM_HASEDITCHANGED](http://msdn.microsoft.com/library/windows/desktop/bb775782), as described in the Windows SDK.  
   
 ##  <a name="insertitem"></a>  CComboBoxEx::InsertItem  
  Inserts a new item in a **ComboBoxEx** control.  
@@ -348,7 +326,7 @@ DWORD SetExtendedStyle(
  A `DWORD` value that contains the extended styles previously used for the control.  
   
 ### Remarks  
- See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about these styles.  
+ See [ComboBoxEx Control Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb775742) in the Windows SDK for more information about these styles.  
   
  To create a combo box extended control with extended windows styles, use [CreateEx](#createex).  
   
@@ -367,7 +345,7 @@ CImageList* SetImageList(CImageList* pImageList);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object containing the images previously used by the `CComboBoxEx` control. **NULL** if no image list was previously set.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775787), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If you change the height of the default edit control, call the Win32 function [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) to resize your control after you call `SetImageList`, or it will not display properly.  
+ This member function implements the functionality of the message [CBEM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775787), as described in the Windows SDK. If you change the height of the default edit control, call the Win32 function [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) to resize your control after you call `SetImageList`, or it will not display properly.  
   
  The `CImageList` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   
@@ -386,7 +364,7 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
  Nonzero if the operation was successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775788), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the functionality of the message [CBEM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb775788), as described in the Windows SDK.  
   
 ##  <a name="setwindowtheme"></a>  CComboBoxEx::SetWindowTheme  
  Sets the visual style of the extended combo box control.  
@@ -403,7 +381,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  The return value is not used.  
   
 ### Remarks  
- This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb775790) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb775790) message, as described in the Windows SDK.  
   
 ## See Also  
  [MFC Sample MFCIE](../../visual-cpp-samples.md)   

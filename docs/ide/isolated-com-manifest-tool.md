@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCManifestTool.RegistrarScriptFile"
-  - "VC.Project.VCManifestTool.ComponentFileName"
-  - "VC.Project.VCManifestTool.TypeLibraryFile"
-  - "VC.Project.VCManifestTool.ReplacementsFile"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCManifestTool.RegistrarScriptFile", "VC.Project.VCManifestTool.ComponentFileName", "VC.Project.VCManifestTool.TypeLibraryFile", "VC.Project.VCManifestTool.ReplacementsFile"]
+dev_langs: ["C++"]
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Isolated COM, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 Use this dialog box to specify **Isolated COM** options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  

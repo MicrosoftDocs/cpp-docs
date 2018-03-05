@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CElementTraits<T>"
-  - "ATL::CElementTraits"
-  - "ATL.CElementTraits"
-  - "ATL::CElementTraits<T>"
-  - "CElementTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CElementTraits class"
+f1_keywords: ["CElementTraits", "atlcoll/ATL::CElementTraits"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CElementTraits class"]
 ms.assetid: 496528e5-7f80-4b45-be0c-6f646feb43c5
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CElementTraits Class
 This class is used by collection classes to provide methods and functions for moving, copying, comparison, and hashing operations.  

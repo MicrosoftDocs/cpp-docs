@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CImageList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CImageList"
-  - "image lists [C++], CImageList class"
-  - "CImageList class"
+f1_keywords: ["CImageList", "AFXCMN/CImageList", "AFXCMN/CImageList::CImageList", "AFXCMN/CImageList::Add", "AFXCMN/CImageList::Attach", "AFXCMN/CImageList::BeginDrag", "AFXCMN/CImageList::Copy", "AFXCMN/CImageList::Create", "AFXCMN/CImageList::DeleteImageList", "AFXCMN/CImageList::DeleteTempMap", "AFXCMN/CImageList::Detach", "AFXCMN/CImageList::DragEnter", "AFXCMN/CImageList::DragLeave", "AFXCMN/CImageList::DragMove", "AFXCMN/CImageList::DragShowNolock", "AFXCMN/CImageList::Draw", "AFXCMN/CImageList::DrawEx", "AFXCMN/CImageList::DrawIndirect", "AFXCMN/CImageList::EndDrag", "AFXCMN/CImageList::ExtractIcon", "AFXCMN/CImageList::FromHandle", "AFXCMN/CImageList::FromHandlePermanent", "AFXCMN/CImageList::GetBkColor", "AFXCMN/CImageList::GetDragImage", "AFXCMN/CImageList::GetImageCount", "AFXCMN/CImageList::GetImageInfo", "AFXCMN/CImageList::GetSafeHandle", "AFXCMN/CImageList::Read", "AFXCMN/CImageList::Remove", "AFXCMN/CImageList::Replace", "AFXCMN/CImageList::SetBkColor", "AFXCMN/CImageList::SetDragCursorImage", "AFXCMN/CImageList::SetImageCount", "AFXCMN/CImageList::SetOverlayImage", "AFXCMN/CImageList::Write", "AFXCMN/CImageList::m_hImageList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CImageList [MFC], CImageList", "CImageList [MFC], Add", "CImageList [MFC], Attach", "CImageList [MFC], BeginDrag", "CImageList [MFC], Copy", "CImageList [MFC], Create", "CImageList [MFC], DeleteImageList", "CImageList [MFC], DeleteTempMap", "CImageList [MFC], Detach", "CImageList [MFC], DragEnter", "CImageList [MFC], DragLeave", "CImageList [MFC], DragMove", "CImageList [MFC], DragShowNolock", "CImageList [MFC], Draw", "CImageList [MFC], DrawEx", "CImageList [MFC], DrawIndirect", "CImageList [MFC], EndDrag", "CImageList [MFC], ExtractIcon", "CImageList [MFC], FromHandle", "CImageList [MFC], FromHandlePermanent", "CImageList [MFC], GetBkColor", "CImageList [MFC], GetDragImage", "CImageList [MFC], GetImageCount", "CImageList [MFC], GetImageInfo", "CImageList [MFC], GetSafeHandle", "CImageList [MFC], Read", "CImageList [MFC], Remove", "CImageList [MFC], Replace", "CImageList [MFC], SetBkColor", "CImageList [MFC], SetDragCursorImage", "CImageList [MFC], SetImageCount", "CImageList [MFC], SetOverlayImage", "CImageList [MFC], Write", "CImageList [MFC], m_hImageList"]
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CImageList Class
 Provides the functionality of the Windows common image list control.  
@@ -147,7 +128,7 @@ int Add(HICON hIcon);
  Handle of the icon that contains the bitmap and mask for the new image.  
   
 ### Return Value  
- Zero-based index of the first new image if successful; otherwise – 1.  
+ Zero-based index of the first new image if successful; otherwise - 1.  
   
 ### Remarks  
  You are responsible for releasing the icon handle when you are done with it.  
@@ -205,7 +186,7 @@ CImageList();
 ```  
   
 ##  <a name="copy"></a>  CImageList::Copy  
- This member function implements the behavior of the Win32 function [ImageList_Copy](http://msdn.microsoft.com/library/windows/desktop/bb761520), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 function [ImageList_Copy](http://msdn.microsoft.com/library/windows/desktop/bb761520), as described in the Windows SDK.  
   
 ```  
 BOOL Copy(
@@ -343,7 +324,7 @@ BOOL Create(CImageList* pImageList);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- You construct a `CImageList` in two steps. First, call the constructor and then call `Create`, which creates the image list and attaches it to the `CImageList`object.  
+ You construct a `CImageList` in two steps. First, call the constructor and then call `Create`, which creates the image list and attaches it to the `CImageList` object.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CImageList#7](../../mfc/reference/codesnippet/cpp/cimagelist-class_5.cpp)]  
@@ -533,16 +514,16 @@ BOOL DrawEx(
  Location at which to draw within the specified device context.  
   
  `sz`  
- Size of the portion of the image to draw relative to the upper-left corner of the image. See `dx` and *dy* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ Size of the portion of the image to draw relative to the upper-left corner of the image. See `dx` and *dy* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
  *clrBk*  
- Background color of the image. See *rgbBk* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ Background color of the image. See *rgbBk* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
  *clrFg*  
- Foreground color of the image. See *rgbFg* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ Foreground color of the image. See *rgbFg* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
  `nStyle`  
- Flag specifying the drawing style. See *fStyle* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ Flag specifying the drawing style. See *fStyle* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -586,13 +567,13 @@ BOOL DrawIndirect(
  The zero-based index of the image to be drawn.  
   
  `pt`  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x– and y– coordinates where the image will be drawn.  
+ A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.  
   
  `sz`  
  A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.  
   
  *ptOrigin*  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x– and y–coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x–coordinate and above the y–coordinate are not drawn.  
+ A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.  
   
  `fStyle`  
  Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, `ILD_NORMAL`, draws the image using the background color for the image list. If the background color is the `CLR_NONE` value, the image is drawn transparently using a mask.  
@@ -894,7 +875,7 @@ int Replace(
 ### Return Value  
  The version returning **BOOL** returns nonzero if successful; otherwise 0.  
   
- The version returning `int` returns the zero-based index of the image if successful; otherwise – 1.  
+ The version returning `int` returns the zero-based index of the image if successful; otherwise - 1.  
   
 ### Remarks  
  Call this member function after calling [SetImageCount](#setimagecount) to assign the new, valid images to the placeholder image index numbers.  

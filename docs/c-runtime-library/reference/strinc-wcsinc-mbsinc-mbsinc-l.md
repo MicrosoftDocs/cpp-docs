@@ -4,75 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsinc"
-  - "_wcsinc"
-  - "_mbsinc_l"
-  - "_strinc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsinc", "_wcsinc", "_mbsinc_l", "_strinc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsinc_l"
-  - "_strinc"
-  - "strinc"
-  - "_mbsinc"
-  - "_wcsinc"
-  - "wcsinc"
-  - "mbsinc"
-  - "_mbsinc_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsinc function"
-  - "wcsinc function"
-  - "mbsinc_l function"
-  - "_strinc function"
-  - "strinc function"
-  - "_mbsinc_l function"
-  - "mbsinc function"
-  - "_wcsinc function"
-  - "_tcsinc function"
-  - "tcsinc function"
+f1_keywords: ["mbsinc_l", "_strinc", "strinc", "_mbsinc", "_wcsinc", "wcsinc", "mbsinc", "_mbsinc_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsinc function", "wcsinc function", "mbsinc_l function", "_strinc function", "strinc function", "_mbsinc_l function", "mbsinc function", "_wcsinc function", "_tcsinc function", "tcsinc function"]
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strinc, _wcsinc, _mbsinc, _mbsinc_l
 Advances a string pointer by one character.  
   
 > [!IMPORTANT]
->  `_mbsinc` and `_mbsinc_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsinc` and `_mbsinc_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -125,9 +77,6 @@ unsigned char *_mbsinc_l(
 |`_wcsinc`|\<tchar.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

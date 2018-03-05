@@ -4,49 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "blittable types [C++]"
-  - "platform invoke [C++], implicit"
-  - "interop [C++], features"
-  - "data marshaling [C++], C++ Interop features"
-  - "porting [C++], C++ native to .NET"
-  - "COM interfaces [C++]"
-  - "implicit platform invoke"
-  - "examples [C++], interoperability"
-  - "types [C++], blittable"
-  - "marshaling [C++], C++ Interop features"
-  - "platform invoke [C++], examples"
-  - "interoperability [C++]"
-  - "C++ Interop"
-  - "interoperability [C++], Implicit PInvoke"
-  - "C++, interop"
-  - "C++ COM Interop"
-  - ".NET [C++], porting C++ native to"
+dev_langs: ["C++"]
+helpviewer_keywords: ["blittable types [C++]", "platform invoke [C++], implicit", "interop [C++], features", "data marshaling [C++], C++ Interop features", "porting [C++], C++ native to .NET", "COM interfaces [C++]", "implicit platform invoke", "examples [C++], interoperability", "types [C++], blittable", "marshaling [C++], C++ Interop features", "platform invoke [C++], examples", "interoperability [C++]", "C++ Interop", "interoperability [C++], Implicit PInvoke", "C++, interop", "C++ COM Interop", ".NET [C++], porting C++ native to"]
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using C++ Interop (Implicit PInvoke)
 Unlike other .NET languages, Visual C++ has interoperability support that allows managed and unmanaged code to exist in the same application and even in the same file (with the [managed, unmanaged](../preprocessor/managed-unmanaged.md) pragmas). This allows Visual C++ developers to integrate .NET functionality into existing Visual C++ applications without disturbing the rest of the application.  
@@ -62,10 +30,10 @@ Unlike other .NET languages, Visual C++ has interoperability support that allows
  Explicit PInvoke is supported by the .NET Framework and is available in most .NET languages. But as its name implies, C++ Interop is specific to Visual C++.  
   
 ## C++ Interop  
- C++ Interop is recommended over explicit PInvoke because it provides better type safety, is typically less tedious to implement, is more forgiving if the unmanaged API is modified, and makes performance enhancements possible that are not possible with explicit PInvoke. However, C++ Interop is not possible if the unmanaged source code is not available or when compiling with **/clr:safe**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. For information, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ C++ Interop is recommended over explicit PInvoke because it provides better type safety, is typically less tedious to implement, is more forgiving if the unmanaged API is modified, and makes performance enhancements possible that are not possible with explicit PInvoke. However, C++ Interop is not possible if the unmanaged source code is not available.  
   
 ## C++ COM Interop  
- The interoperability features supported by Visual C++ offer a particular advantage over other .NET languages when it comes to interoperating with COM components. Instead of being limited to the restrictions of the .NET Framework [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/Library/ec0a8d63-11b3-4acd-b398-da1e37e97382), such as limited support for data types and the mandatory exposure of every member of every COM interface, C++ Interop allows COM components to be accessed at will and does not require separate interop assemblies. For more information, see [Using COM from .NET](http://msdn.microsoft.com/en-us/03976661-6278-4227-a6c1-3b3315502c15).  
+ The interoperability features supported by Visual C++ offer a particular advantage over other .NET languages when it comes to interoperating with COM components. Instead of being limited to the restrictions of the .NET Framework [Tlbimp.exe (Type Library Importer)](/dotnet/framework/tools/tlbimp-exe-type-library-importer), such as limited support for data types and the mandatory exposure of every member of every COM interface, C++ Interop allows COM components to be accessed at will and does not require separate interop assemblies. For more information, see [Using COM from .NET](http://msdn.microsoft.com/en-us/03976661-6278-4227-a6c1-3b3315502c15).  
   
 ## Blittable Types  
  For unmanaged APIs that use simple, intrinsic types (see [Blittable and Non-Blittable Types](http://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), no special coding is required because these data types have the same representation in memory, but more complex data types require explicit data marshaling. For an example, see [How to: Call Native DLLs from Managed Code Using PInvoke](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md).  

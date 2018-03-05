@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_rotr16"
-  - "_rotr8"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_rotr8 intrinsic"
-  - "_rotr16 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_rotr16", "_rotr8"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _rotr8, _rotr16
 **Microsoft Specific**  
@@ -116,7 +97,7 @@ Rotating 0x41 right by 7 bits gives 0x82
 Rotating unsigned short 0x12 right by 10 bits gives 0x480  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)   

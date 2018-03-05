@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IUMSScheduler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSScheduler structure"
+ms.topic: "reference"
+f1_keywords: ["IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSScheduler structure"]
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IUMSScheduler Structure
 An interface to an abstraction of a work scheduler that wants the Concurrency Runtime's Resource Manager to hand it user-mode schedulable (UMS) threads. The Resource Manager uses this interface to communicate with UMS thread schedulers. The `IUMSScheduler` interface inherits from the `IScheduler` interface.  
@@ -49,7 +32,7 @@ struct IUMSScheduler : public IScheduler;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSScheduler::SetCompletionList Method](#setcompletionlist)|Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.|  
+|[IUMSScheduler::SetCompletionList](#setcompletionlist)|Assigns an `IUMSCompletionList` interface to a UMS thread scheduler.|  
   
 ## Remarks  
  If you are implementing a custom scheduler that communicates with the Resource Manager, and you want UMS threads to be handed to your scheduler instead of ordinary Win32 threads, you should provide an implementation of the `IUMSScheduler` interface. In addition, you should set the policy value for the scheduler policy key `SchedulerKind` to be `UmsThreadDefault`. If the policy specifies UMS thread, the `IScheduler` interface that is passed as a parameter to the [IResourceManager::RegisterScheduler](iresourcemanager-structure.md#registerscheduler) method must be an `IUMSScheduler` interface.  
@@ -84,7 +67,7 @@ virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   
- [PolicyElementKey Enumeration](concurrency-namespace-enums.md)   
+ [PolicyElementKey](concurrency-namespace-enums.md)   
  [IScheduler Structure](ischeduler-structure.md)   
  [IUMSCompletionList Structure](iumscompletionlist-structure.md)   
  [IResourceManager Structure](iresourcemanager-structure.md)

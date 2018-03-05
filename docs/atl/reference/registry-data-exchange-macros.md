@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RegistryDataExchange function, macros"
+f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RegistryDataExchange function, macros"]
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Registry Data Exchange Macros
 These macros perform Registry Data Exchange operations.  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message handlers"
-  - "command handling, message handlers"
-  - "handlers"
-  - "message handling, message handler functions"
-  - "handlers, command"
-  - "handlers, message"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message handlers [MFC]", "command handling [MFC], message handlers", "handlers [MFC]", "message handling [MFC], message handler functions", "handlers [MFC], command", "handlers [MFC], message"]
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Message Handlers
 In MFC, a dedicated *handler* function processes each separate message. Message-handler functions are member functions of a class. This documentation uses the terms *message-handler member function*, *message-handler function*, *message handler*, and *handler* interchangeably. Some kinds of message handlers are also called "command handlers."  

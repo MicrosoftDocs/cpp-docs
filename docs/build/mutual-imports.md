@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mutual DLL imports [C++]"
-  - "AFX_DATA"
-  - "importing DLLs [C++], mutual imports"
-  - "mutually importing executable files [C++]"
-  - "AFX_EXT_CLASS macro"
-  - "circular imports"
-  - "_AFXEXT preprocessor symbol"
-  - "DLLs [C++], importing"
-  - "executable files [C++], importing"
-  - "extension DLLs [C++], mutual imports"
-  - "exporting DLLs [C++], mutual imports"
+dev_langs: ["C++"]
+helpviewer_keywords: ["mutual DLL imports [C++]", "AFX_DATA", "importing DLLs [C++], mutual imports", "mutually importing executable files [C++]", "AFX_EXT_CLASS macro", "circular imports", "_AFXEXT preprocessor symbol", "DLLs [C++], importing", "executable files [C++], importing", "extension DLLs [C++], mutual imports", "exporting DLLs [C++], mutual imports"]
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Mutual Imports
 Exporting or importing to another executable file presents complications when the imports are mutual (or circular). For example, two DLLs import symbols from each other, similar to mutually recursive functions.  
@@ -65,11 +39,11 @@ Exporting or importing to another executable file presents complications when th
 Linking Two DLLs with Mutual Imports  
   
 ## Limitations of _AFXEXT  
- You can use the `_AFXEXT` preprocessor symbol for your extension DLLs as long as you do not have multiple layers of extension DLLs. If you have extension DLLs that call or derive from classes in your own extension DLLs, which then derive from the MFC classes, you must use your own preprocessor symbol to avoid ambiguity.  
+ You can use the `_AFXEXT` preprocessor symbol for your MFC extension DLLs as long as you do not have multiple layers of MFC extension DLLs. If you have MFC extension DLLs that call or derive from classes in your own MFC extension DLLs, which then derive from the MFC classes, you must use your own preprocessor symbol to avoid ambiguity.  
   
  The problem is that in Win32, you must explicitly declare any data as **__declspec(dllexport)** if it is to be exported from a DLL, and **__declspec(dllimport)** if it is to be imported from a DLL. When you define `_AFXEXT`, the MFC headers make sure that **AFX_EXT_CLASS** is defined correctly.  
   
- When you have multiple layers, one symbol such as **AFX_EXT_CLASS** is not sufficient, because an extension DLL might be exporting new classes as well as importing other classes from another extension DLL. To solve this problem, use a special preprocessor symbol that indicates that you are building the DLL itself versus using the DLL. For example, imagine two extension DLLs, A.dll and B.dll. They each export some classes in A.h and B.h, respectively. B.dll uses the classes from A.dll. The header files would look something like this:  
+ When you have multiple layers, one symbol such as **AFX_EXT_CLASS** is not sufficient, because an MFC extension DLL might be exporting new classes as well as importing other classes from another MFC extension DLL. To solve this problem, use a special preprocessor symbol that indicates that you are building the DLL itself versus using the DLL. For example, imagine two MFC extension DLLs, A.dll and B.dll. They each export some classes in A.h and B.h, respectively. B.dll uses the classes from A.dll. The header files would look something like this:  
   
 ```  
 /* A.H */  
@@ -96,7 +70,7 @@ class CLASS_DECL_B CExampleB : public CExampleA
   
  When A.dll is built, it is built with `/D A_IMPL` and when B.dll is built, it is built with `/D B_IMPL`. By using separate symbols for each DLL, `CExampleB` is exported and `CExampleA` is imported when building B.dll. `CExampleA` is exported when building A.dll and imported when used by B.dll (or some other client).  
   
- This type of layering cannot be done when using the built-in **AFX_EXT_CLASS** and `_AFXEXT` preprocessor symbols. The technique described above solves this problem in a manner not unlike the mechanism MFC itself uses when building its Active technologies, Database, and Network extension DLLs.  
+ This type of layering cannot be done when using the built-in **AFX_EXT_CLASS** and `_AFXEXT` preprocessor symbols. The technique described above solves this problem in a manner not unlike the mechanism MFC itself uses when building its Active technologies, Database, and Network MFC extension DLLs.  
   
 ## Not Exporting the Entire Class  
  When you are not exporting an entire class, you have to ensure that the necessary data items created by the MFC macros are exported correctly. This can be done by redefining `AFX_DATA` to your specific class's macro. This should be done any time you are not exporting the entire class.  

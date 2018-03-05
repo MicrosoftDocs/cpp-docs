@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_getws"
-  - "gets"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcrt.dll"
-  - "msvcr100.dll"
+apiname: ["_getws", "gets"]
+apilocation: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getts"
-  - "gets"
-  - "_getws"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "getws function"
-  - "getts function"
-  - "_getws function"
-  - "lines, getting"
-  - "streams, getting lines"
-  - "_getts function"
-  - "gets function"
-  - "standard input, reading from"
+f1_keywords: ["_getts", "gets", "_getws"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["getws function", "getts function", "_getws function", "lines, getting", "streams, getting lines", "_getts function", "gets function", "standard input, reading from"]
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # gets, _getws
 Gets a line from the `stdin` stream. More secure versions of these functions are available; see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  
@@ -63,7 +27,7 @@ Gets a line from the `stdin` stream. More secure versions of these functions are
 >  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT. The secure versions of these functions,  gets_s and _getws_s, are still available. For information on these alternative functions, see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -138,9 +102,6 @@ int main( void )
   
 Hello there!The line entered was: Hello there!  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
   
 ## See Also  
  [Stream I/O](../c-runtime-library/stream-i-o.md)   

@@ -4,74 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "__swprintf_l"
-  - "sprintf"
-  - "_sprintf_l"
-  - "_swprintf_l"
-  - "swprintf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_stprintf_l"
-  - "__swprintf_l"
-  - "sprintf_l"
-  - "swprintf"
-  - "_sprintf_l"
-  - "sprintf"
-  - "_stprintf"
-  - "stprintf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_swprintf_l function"
-  - "_stprintf function"
-  - "__swprintf_l function"
-  - "stprintf function"
-  - "sprintf function"
-  - "_sprintf_l function"
-  - "_stprintf_l function"
-  - "swprintf function"
-  - "strings [C++], writing to"
-  - "_CRT_NON_CONFORMING_SWPRINTFS"
-  - "swprintf_l function"
-  - "stprintf_l function"
-  - "sprintf_l function"
-  - "formatted text [C++]"
+f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
 caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of `swprintf` and `_swprintf_l` do not take a `count` parameter.  
@@ -144,9 +91,9 @@ int _sprintf_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or –1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
+ The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
   
- `sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf`returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
+ `sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
 ## Remarks  
  The `sprintf` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.  
@@ -236,9 +183,6 @@ int main( void )
 wrote 11 characters  
 wrote -1 characters  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_access"
-  - "_waccess"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_access", "_waccess"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_waccess"
-  - "_access"
-  - "taccess"
-  - "waccess"
-  - "_taccess"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "access function"
-  - "_taccess function"
-  - "waccess function"
-  - "_access function"
-  - "_waccess function"
-  - "taccess function"
+f1_keywords: ["_waccess", "_access", "taccess", "waccess", "_taccess"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["access function", "_taccess function", "waccess function", "_access function", "_waccess function", "taccess function"]
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _access, _waccess
 Determines if a file is read-only or not. More secure versions are available; see [_access_s, _waccess_s](../../c-runtime-library/reference/access-s-waccess-s.md).  
@@ -83,7 +44,7 @@ int _waccess(
  Read/write attribute.  
   
 ## Return Value  
- Each function returns 0 if the file has the given mode. The function returns –1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
+ Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
   
  `EACCES`  
  Access denied: the file's permission setting does not allow specified access.  
@@ -157,9 +118,6 @@ int main( void )
 File crt_ACCESS.C exists.  
 File crt_ACCESS.C does not have write permission.  
 ```  
-  
-## .NET Framework Equivalent  
- <xref:System.IO.FileAccess?displayProperty=fullName>  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

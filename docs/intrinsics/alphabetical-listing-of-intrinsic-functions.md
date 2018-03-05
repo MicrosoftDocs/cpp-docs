@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cl.exe compiler intrinsics"
-  - "intrinsics, alphabetical list"
-  - "intrinsics"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Alphabetical Listing of Intrinsic Functions
 The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Other supported intrinsics are documented by processor manufacturers, either in the header files or on their websites. See the [ARM intrinsics](../intrinsics/arm-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md) sections for links to manufacturer documentation. C Run-time Library (CRT) functions that have intrinsics implemented for them are not documented here; these functions are documented in the [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md).  

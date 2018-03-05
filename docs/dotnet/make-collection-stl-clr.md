@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::make_collection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "make_collection function [STL/CLR]"
+f1_keywords: ["cliext::make_collection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["make_collection function [STL/CLR]"]
 ms.assetid: c25fb0cb-ebd8-4198-a565-bad28d32ee19
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # make_collection (STL/CLR)
 Make a `range_adapter` from an iterator pair.  
@@ -45,21 +28,21 @@ template<typename Iter>
 ```  
   
 #### Parameters  
- Iter  
+ `Iter`  
  The type of the wrapped iterators.  
   
- first  
+ `first`  
  First iterator to wrap.  
   
- last  
+ `last`  
  Second iterator to wrap.  
   
 ## Remarks  
- The template function returns `gcnew range_adapter<Iter>(``first``,` `last``)`. You use it to construct a `range_adapter``<Iter>` object from a pair of iterators.  
+ The template function returns `gcnew range_adapter<Iter>(first, last)`. You use it to construct a `range_adapter<Iter>` object from a pair of iterators.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_make_collection.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   

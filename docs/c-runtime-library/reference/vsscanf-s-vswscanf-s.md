@@ -4,50 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "vswscanf_s"
-  - "vsscanf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["vswscanf_s", "vsscanf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vsscanf_s"
-  - "vswscanf_s"
-  - "_vstscanf_s"
-dev_langs: 
-  - "C++"
+f1_keywords: ["vsscanf_s", "vswscanf_s", "_vstscanf_s"]
+dev_langs: ["C++"]
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vsscanf_s, vswscanf_s
 Reads formatted data from a string. These versions of [vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -164,9 +134,6 @@ Character = 1
 Integer:  = 15  
 Real:     = 15.000000  
 ```  
-  
-## .NET Framework Equivalent  
- See `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

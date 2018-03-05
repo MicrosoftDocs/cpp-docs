@@ -4,38 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "casting"
-  - "C-style casts and /clr, motivation for new cast notation"
-  - "safe_cast keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["casting", "C-style casts and /clr, motivation for new cast notation", "safe_cast keyword [C++]"]
 ms.assetid: 4eb1d000-3b93-4394-a37b-8b8563f8dc4d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Cast Notation and Introduction of safe_cast&lt;&gt;
-The cast notation has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The cast notation has changed from Managed Extensions for C++ to Visual C++.  
   
  Modifying an existing structure is a different and more difficult experience than crafting the initial structure. There are fewer degrees of freedom, and the solution tends towards a compromise between an ideal restructuring and what is practicable given the existing structural dependencies.  
   
@@ -63,7 +45,7 @@ The cast notation has changed from Managed Extensions for C++ to [!INCLUDE[cpp_c
   
 -   Each virtual function has an associated fixed slot in the table, and the actual instance to invoke is represented by the address stored within the table. For example, the virtual `Light` destructor might be associated with slot 0, `Color` with slot 1, and so on. This is an efficient if inflexible strategy because it is set up at compile-time and represents a minimal overhead.  
   
- The problem, then, is how to make the type information available to the pointer without changing the size of C++ pointers, either by adding a second address or by directly adding some sort of type encoding. This would not be acceptable to those programmers (and programs) that decide not to use the object-oriented paradigm – which was still the predominant user community. Another possibility was to introduce a special pointer for polymorphic class types, but this would be confusing, and make it difficult to inter-mix the two, particularly with issues of pointer arithmetic. It would also not be acceptable to maintain a run-time table that associates each pointer with its currently associated type, and dynamically updating it.  
+ The problem, then, is how to make the type information available to the pointer without changing the size of C++ pointers, either by adding a second address or by directly adding some sort of type encoding. This would not be acceptable to those programmers (and programs) that decide not to use the object-oriented paradigm - which was still the predominant user community. Another possibility was to introduce a special pointer for polymorphic class types, but this would be confusing, and make it difficult to inter-mix the two, particularly with issues of pointer arithmetic. It would also not be acceptable to maintain a run-time table that associates each pointer with its currently associated type, and dynamically updating it.  
   
  The problem then is a pair of user communities which have different but legitimate programming aspirations. The solution has to be a compromise between the two communities, allowing each not only their aspiration but the ability to interoperate. This means that the solutions offered by either side are likely to be infeasible and the solution implemented finally to be less than perfect. The actual resolution revolves around the definition of a polymorphic class: a polymorphic class is one that contains a virtual function. A polymorphic class supports a dynamic type-safe downcast. This solves the maintain-the-pointer-as-address problem because all polymorphic classes contain that additional pointer member to their associated virtual table. The associated type information, therefore, can be stored in an expanded virtual table structure. The cost of the type-safe downcast is (almost) localized to users of the facility.  
   
@@ -82,7 +64,7 @@ spot = ( SpotLight* ) plight;
 X x = X::X( 10 );  
 ```  
   
- So the proposal was taken back for further consideration, and several alternative notations were considered, and the one brought back to the committee was of the form (`?type`), which indicated its undetermined – that is, dynamic nature. This gave the user the ability to toggle between the two forms – static or dynamic – but no one was too pleased with it. So it was back to the drawing board. The third and successful notation is the now standard `dynamic_cast<type>`, which was generalized to a set of four new-style cast notations.  
+ So the proposal was taken back for further consideration, and several alternative notations were considered, and the one brought back to the committee was of the form (`?type`), which indicated its undetermined - that is, dynamic nature. This gave the user the ability to toggle between the two forms - static or dynamic - but no one was too pleased with it. So it was back to the drawing board. The third and successful notation is the now standard `dynamic_cast<type>`, which was generalized to a set of four new-style cast notations.  
   
  In ISO-C++, `dynamic_cast` returns `0` when applied to an inappropriate pointer type, and throws a `std::bad_cast` exception when applied to a reference type. In Managed Extensions for C++, applying `dynamic_cast` to a managed reference type (because of its pointer representation) always returned `0`. `__try_cast<type>` was introduced as an analog to the exception throwing variant of the `dynamic_cast`, except that it throws `System::InvalidCastException` if the cast fails.  
   
@@ -128,7 +110,7 @@ static_cast< array<ItemVerb^>^>(verbList->ToArray(ItemVerb::typeid));
   
  The problem is that there is no way to guarantee that the programmer doing the `static_cast` is correct and well-intentioned; that is, there is no way to force managed code to be verifiable. This is a more urgent concern under the dynamic program paradigm than under native, but is not sufficient within a system programming language to disallow the user the ability to toggle between a static and run-time cast.  
   
- There is a performance trap and pitfall in the new syntax, however. In native programming, there is no difference in performance between the old-style cast notation and the new-style `static_cast` notation. But in the new syntax, the old-style cast notation is significantly more expensive than the use of the new-style `static_cast` notation. The reason is that the compiler internally transforms the use of the old-style notation into a run-time check that throws an exception. Moreover, it also changes the execution profile of the code because it causes an uncaught exception bringing down the application – perhaps wisely, but the same error would not cause that exception if the `static_cast` notation were used. One might argue this will help prod users into using the new-style notation. But only when it fails; otherwise, it will cause programs that use the old-style notation to run significantly slower without a visible understanding of why, similar to the following C programmer pitfalls:  
+ There is a performance trap and pitfall in the new syntax, however. In native programming, there is no difference in performance between the old-style cast notation and the new-style `static_cast` notation. But in the new syntax, the old-style cast notation is significantly more expensive than the use of the new-style `static_cast` notation. The reason is that the compiler internally transforms the use of the old-style notation into a run-time check that throws an exception. Moreover, it also changes the execution profile of the code because it causes an uncaught exception bringing down the application - perhaps wisely, but the same error would not cause that exception if the `static_cast` notation were used. One might argue this will help prod users into using the new-style notation. But only when it fails; otherwise, it will cause programs that use the old-style notation to run significantly slower without a visible understanding of why, similar to the following C programmer pitfalls:  
   
 ```  
 // pitfall # 1:   

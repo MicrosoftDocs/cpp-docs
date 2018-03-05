@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::collection_adapter"
-  - "cliext::collection_adapter::collection_adapter"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "collection_adapter member [STL/CLR]"
+f1_keywords: ["cliext::collection_adapter", "cliext::collection_adapter::collection_adapter"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["collection_adapter member [STL/CLR]"]
 ms.assetid: 7e2bb75b-d735-4135-9523-719683e06fe9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter::collection_adapter (STL/CLR)
 Constructs an adapter object.  
@@ -65,13 +47,13 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(collection_adapter<Coll>% right);`  
   
- initializes the stored handle with `right``.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   
  `collection_adapter(collection_adapter<Coll>^ right);`  
   
- initializes the stored handle with `right``->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   

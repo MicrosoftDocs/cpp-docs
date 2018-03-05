@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "array-element initializers"
-  - "initializing arrays, initializers"
-  - "arrays [C++], array-element initializers"
-  - "declarators, as initializers"
-  - "initializers, array element"
+dev_langs: ["C++"]
+helpviewer_keywords: ["array-element initializers", "initializing arrays [C++], initializers", "arrays [C++], array-element initializers", "declarators, as initializers", "initializers, array element"]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Initializers
 An initializer specifies the initial value of a variable. You can initialize variables in these contexts:  
@@ -102,7 +82,7 @@ An initializer specifies the initial value of a variable. You can initialize var
   
 -   Numeric variables are initialized to 0 (or 0.0, or 0.0000000000, etc.).  
   
--   Char variables are initialized to ‘\0’.  
+-   Char variables are initialized to `'\0'`.  
   
 -   Pointers are initialized to `nullptr`.  
   
@@ -388,7 +368,8 @@ int main() {
   
 -   no virtual member functions  
   
--   no brace-or-equal initializers for non-static members  
+> [!NOTE]
+>  <!--conformance note-->In Visual Studio 2015 and earlier, an aggregate is not allowed to have  brace-or-equal initializers for non-static members. This restriction was removed in the C++14 standard and implemented in Visual Studio 2017. 
   
  Aggregate initializers consist of a braced initialization list, with or without an equals sign, as in the following example:  
   
@@ -435,7 +416,7 @@ myArr3: 8 9 10 0 0
 ```  
   
 > [!IMPORTANT]
->  Array members that declared but not explicitly initialized during aggregate initialization are zero-initialized, as in `myArr3` above.  
+>  Array members that are declared but not explicitly initialized during aggregate initialization are zero-initialized, as in `myArr3` above.  
   
 #### Initializing unions and structs  
  If a union does not have a constructor, you can initialize it with a single value (or with another instance of a union). The value is used to initialize the first non-static field. This is different from struct initialization, in which the first value in the initializer is used to initialize the first field, the second to initialize the second field, and so on. Compare the initialization of unions and structs in the following example:  
@@ -542,5 +523,5 @@ Decision Graph for Initialization of Reference Types
  References that are not qualified with either the **const** or `volatile` keyword can be initialized only with objects declared as neither **const** nor `volatile`.  
   
 ### Initialization of external variables  
- Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
+ Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
   

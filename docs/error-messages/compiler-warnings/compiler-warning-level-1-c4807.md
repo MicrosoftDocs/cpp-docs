@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4807"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4807"
+f1_keywords: ["C4807"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4807"]
 ms.assetid: 089c9f87-fd81-402e-9826-66a8ef1ef1fe
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4807
 'operation' : unsafe mix of type 'type' and signed bitfield of type 'type'  

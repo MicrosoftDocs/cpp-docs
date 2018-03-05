@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "tuple_element"
-  - "std::tuple_element"
-  - "utility/std::tuple_element"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tuple_element Class"
+ms.topic: "reference"
+f1_keywords: ["utility/std::tuple_element"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::tuple_element"]
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # tuple_element Class
 Wraps a `tuple` element. Specializations wrap `array` elements and `pair` elements.  
@@ -104,7 +85,7 @@ The template class specialization for arrays provides an interface to an `array`
   
 The template specializations for `pair` types each provide a single member typedef, `type`, which is a synonym for the type of the element at the specified position in the pair, with any const and/or volatile qualifications preserved. The typedef `tuple_element_t` is a convenient alias for `tuple_element<N, pair<T1, T2>>::type`.  
   
-Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position, or (in C++14 / Visual Studio 2015) of a specified type. 
+Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position, or of a specified type. 
   
 ## Example  
   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IEnumOnSTLImpl"
-  - "ATL.IEnumOnSTLImpl"
-  - "ATL::IEnumOnSTLImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IEnumOnSTLImpl class"
+f1_keywords: ["IEnumOnSTLImpl", "ATLCOM/ATL::IEnumOnSTLImpl", "ATLCOM/ATL::IEnumOnSTLImpl::Clone", "ATLCOM/ATL::IEnumOnSTLImpl::Init", "ATLCOM/ATL::IEnumOnSTLImpl::Next", "ATLCOM/ATL::IEnumOnSTLImpl::Reset", "ATLCOM/ATL::IEnumOnSTLImpl::Skip", "ATLCOM/ATL::IEnumOnSTLImpl::m_iter", "ATLCOM/ATL::IEnumOnSTLImpl::m_pcollection", "ATLCOM/ATL::IEnumOnSTLImpl::m_spUnk"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IEnumOnSTLImpl class"]
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IEnumOnSTLImpl Class
 This class defines an enumerator interface based on a C++ Standard Library collection.  

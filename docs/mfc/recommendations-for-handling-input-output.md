@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "I/O [MFC], about I/O"
-  - "file-based I/O options"
-  - "I/O [C++]"
-  - "I/O [C++], options"
-  - "I/O [C++], file-based options"
+dev_langs: ["C++"]
+helpviewer_keywords: ["I/O [MFC], about I/O", "file-based I/O options", "I/O [MFC]", "I/O [MFC], options", "I/O [MFC], file-based options"]
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Recommendations for Handling Input/Output
 Whether you use file-based I/O or not depends on how you respond to the questions in the following decision tree:  
@@ -55,7 +35,7 @@ Whether you use file-based I/O or not depends on how you respond to the question
   
     -   Yes, the data resides in an ODBC data source:  
   
-         Use MFC's database support. The standard MFC implementation for this case includes a **CDocument** object that stores a `CDatabase` object, as discussed in the article [What Is the MFC Database Programming Model](../data/what-is-the-mfc-database-programming-model-q.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
+         Use MFC's database support. The standard MFC implementation for this case includes a `CDatabase` object, as discussed in the article [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md). The application might also read and write an auxiliary file — the purpose of the application wizard "both a database view and file support" option. In this case, you'd use serialization for the auxiliary file.  
   
     -   No, the data doesn't reside in an ODBC data source.  
   

@@ -4,31 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["texture_view", "AMP_GRAPHICS/texture_view", "AMP_GRAPHICS/Concurrency::graphics::texture_view::texture_view", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_alpha", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_blue", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_green", "AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_red", "AMP_GRAPHICS/Concurrency::graphics::texture_view::get", "AMP_GRAPHICS/Concurrency::graphics::texture_view::sample", "AMP_GRAPHICS/Concurrency::graphics::texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type"]
+dev_langs: ["C++"]
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # texture_view Class
 Provides read access and write access to a texture. `texture_view` can only be used to read textures whose value type is `int`, `unsigned int`, or `float` that have default 32-bit bpse. To read other texture formats, use `texture_view<const value_type, _Rank>`.  
@@ -36,23 +22,16 @@ Provides read access and write access to a texture. `texture_view` can only be u
 ## Syntax  
   
 ```  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template<typename value_type,int _Rank>  
 class texture_view;  
  
-template <
-    typename value_type,  
-    int _Rank  
->  
-class texture_view : public details::_Texture_base<value_type, _Rank>;  
+template<typename value_type, int _Rank>  
+class texture_view 
+   : public details::_Texture_base<value_type, _Rank>;  
  
-template <
-    typename value_type,  
-    int _Rank  
->  
-class texture_view<const value_type, _Rank> : public details::_Texture_base<value_type, _Rank>;  
+template<typename value_type, int _Rank>  
+class texture_view<const value_type, _Rank> 
+   : public details::_Texture_base<value_type, _Rank>;  
 ```  
   
 #### Parameters  
@@ -83,27 +62,27 @@ class texture_view<const value_type, _Rank> : public details::_Texture_base<valu
   
 |Name|Description|  
 |----------|-----------------|  
-|[gather_alpha Method](#gather_alpha)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.|  
-|[gather_blue Method](#gather_blue)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.|  
-|[gather_green Method](#gather_green)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.|  
-|[gather_red Method](#gather_red)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.|  
-|[get Method](#get)|Overloaded. Gets the element value by index.|  
-|[sample Method](#sample)|Overloaded. Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.|  
-|[set Method](#set)|Sets the value of an element by index.|  
+|[gather_alpha](#gather_alpha)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the alpha (w) components of the four sampled texels.|  
+|[gather_blue](#gather_blue)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the blue (z) components of the four sampled texels.|  
+|[gather_green](#gather_green)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the green (y) components of the four sampled texels.|  
+|[gather_red](#gather_red)|Overloaded. Samples the texture at the specified coordinates by using the specified sampling configuration and returns the red (x) components of the four sampled texels.|  
+|[get](#get)|Overloaded. Gets the element value by index.|  
+|[sample](#sample)|Overloaded. Samples the texture at the specified coordinates and level of detail by using the specified sampling configuration.|  
+|[set](#set)|Sets the value of an element by index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator() Operator](#operator__)|Overloaded. Gets the element value by index.|  
-|[operator[] Operator](#operator_at)|Overloaded. Gets the element value by index.|  
-|[operator= Operator](#operator_eq)|Overloaded. Assignment operator.|  
+|[operator()](#operator_call)|Overloaded. Gets the element value by index.|  
+|[operator[]](#operator_at)|Overloaded. Gets the element value by index.|  
+|[operator=](#operator_eq)|Overloaded. Assignment operator.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[value_type Data Member](#value_type)|The value type of the elements of the `texture_view`.|  
+|[value_type](#value_type)|The value type of the elements of the `texture_view`.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  
@@ -384,7 +363,7 @@ value_type operator[] (int _I0) const restrict(amp);
 ### Return Value  
  The element value indexed by `_Index`.  
   
-##  <a name="operator__"></a> operator() 
+##  <a name="operator_call"></a> operator() 
 
  Returns the element value by index.  
   

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/NOASSEMBLY"
-  - "VC.Project.VCLinkerTool.TurnOffAssemblyGeneration"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "assemblies [C++]"
-  - "-NOASSEMBLY linker option"
-  - "/NOASSEMBLY linker option"
-  - "NOASSEMBLY linker option"
-  - "assemblies [C++], not creating an assembly"
+f1_keywords: ["/NOASSEMBLY", "VC.Project.VCLinkerTool.TurnOffAssemblyGeneration"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["assemblies [C++]", "-NOASSEMBLY linker option", "/NOASSEMBLY linker option", "NOASSEMBLY linker option", "assemblies [C++], not creating an assembly"]
 ms.assetid: 3cea4e70-f451-4395-a626-1930b1b127fe
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /NOASSEMBLY (Create a MSIL Module)
 ```  

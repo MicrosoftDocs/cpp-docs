@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "noreturn_cpp"
-  - "noreturn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword [C++], noreturn"
-  - "noreturn __declspec keyword"
+f1_keywords: ["noreturn_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec keyword [C++], noreturn", "noreturn __declspec keyword"]
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # noreturn
 ## Microsoft Specific  

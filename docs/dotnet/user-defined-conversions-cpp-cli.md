@@ -1,36 +1,20 @@
 ---
-title: "User-Defined Conversions (C++-CLI) | Microsoft Docs"
+title: "User-Defined Conversions (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user-defined conversions [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["user-defined conversions [C++]"]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # User-Defined Conversions (C++/CLI)
 This section discusses user-defined conversions (UDC) when one of the types in the conversion is a reference or instance of a value type or reference type.  

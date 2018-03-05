@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IConnectionPointContainerImpl"
-  - "ATL.IConnectionPointContainerImpl"
-  - "ATL.IConnectionPointContainerImpl<T>"
-  - "IConnectionPointContainerImpl"
-  - "ATL::IConnectionPointContainerImpl<T>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connectable objects"
-  - "connection points [C++], container"
-  - "IConnectionPointContainerImpl class"
+f1_keywords: ["IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints", "ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connectable objects", "connection points [C++], container", "IConnectionPointContainerImpl class"]
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IConnectionPointContainerImpl Class
 This class implements a connection point container to manage a collection of [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md) objects.  
@@ -89,7 +66,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```  
   
 ### Remarks  
- See [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) in the Windows SDK.  
   
 ##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  Retrieves an interface pointer to the connection point that supports the specified IID.  
@@ -99,7 +76,7 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### Remarks  
- See [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) in the Windows SDK.  
   
 ## See Also  
  [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)   

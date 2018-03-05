@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "regex_token_iterator"
-  - "std::regex_token_iterator"
-  - "regex/std::regex_token_iterator"
-  - "std::regex_token_iterator::regex_type"
-  - "regex/std::regex_token_iterator::regex_type"
-  - "std::regex_token_iterator::value_type"
-  - "regex/std::regex_token_iterator::value_type"
-  - "std::regex_token_iterator::iterator_category"
-  - "regex/std::regex_token_iterator::iterator_category"
-  - "std::regex_token_iterator::difference_type"
-  - "regex/std::regex_token_iterator::difference_type"
-  - "std::regex_token_iterator::pointer"
-  - "regex/std::regex_token_iterator::pointer"
-  - "std::regex_token_iterator::reference"
-  - "regex/std::regex_token_iterator::reference"
-  - "std::regex_token_iterator::operator=="
-  - "regex/std::regex_token_iterator::operator=="
-  - "std::regex_token_iterator::operator!="
-  - "regex/std::regex_token_iterator::operator!="
-  - "std::regex_token_iterator::operator*"
-  - "regex/std::regex_token_iterator::operator*"
-  - "std::regex_token_iterator::operator->"
-  - "regex/std::regex_token_iterator::operator->"
-  - "std::regex_token_iterator::operator++"
-  - "regex/std::regex_token_iterator::operator++"
-  - "std::regex_token_iterator::operator!="
-  - "regex/std::regex_token_iterator::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regex_token_iterator class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::regex_token_iterator", "regex/std::regex_token_iterator::regex_type", "regex/std::regex_token_iterator::value_type", "regex/std::regex_token_iterator::iterator_category", "regex/std::regex_token_iterator::difference_type", "regex/std::regex_token_iterator::pointer", "regex/std::regex_token_iterator::reference", "regex/std::regex_token_iterator::operator==", "regex/std::regex_token_iterator::operator!=", "regex/std::regex_token_iterator::operator*", "regex/std::regex_token_iterator::operator->", "regex/std::regex_token_iterator::operator++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::regex_token_iterator [C++]", "std::regex_token_iterator [C++], regex_type", "std::regex_token_iterator [C++], value_type", "std::regex_token_iterator [C++], iterator_category", "std::regex_token_iterator [C++], difference_type", "std::regex_token_iterator [C++], pointer", "std::regex_token_iterator [C++], reference"]
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # regex_token_iterator Class
 Iterator class for submatches.  
@@ -122,7 +79,7 @@ private:
   
  **Namespace:** std  
   
-##  <a name="regex_token_iterator__difference_type"></a>  regex_token_iterator::difference_type  
+##  <a name="difference_type"></a>  regex_token_iterator::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -228,7 +185,7 @@ match == aa
 match == z  
 ```  
   
-##  <a name="regex_token_iterator__iterator_category"></a>  regex_token_iterator::iterator_category  
+##  <a name="iterator_category"></a>  regex_token_iterator::iterator_category  
  The type of the iterator category.  
   
 ```  
@@ -338,7 +295,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_neq"></a>  regex_token_iterator::operator!=  
+##  <a name="op_neq"></a>  regex_token_iterator::operator!=  
  Compares iterators for inequality.  
   
 ```  
@@ -452,7 +409,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_star"></a>  regex_token_iterator::operator*  
+##  <a name="op_star"></a>  regex_token_iterator::operator*  
  Accesses the designated submatch.  
   
 ```  
@@ -562,7 +519,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_add_add"></a>  regex_token_iterator::operator++  
+##  <a name="op_add_add"></a>  regex_token_iterator::operator++  
  Increments the iterator.  
   
 ```  
@@ -676,7 +633,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_eq_eq"></a>  regex_token_iterator::operator==  
+##  <a name="op_eq_eq"></a>  regex_token_iterator::operator==  
  Compares iterators for equality.  
   
 ```  
@@ -790,7 +747,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator-_gt_"></a>  regex_token_iterator::operator-&gt;  
+##  <a name="regex_token_iterator__operator-_gt"></a>  regex_token_iterator::operator-&gt;  
  Accesses the designated submatch.  
   
 ```  
@@ -900,7 +857,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__pointer"></a>  regex_token_iterator::pointer  
+##  <a name="pointer"></a>  regex_token_iterator::pointer  
  The type of a pointer to a match.  
   
 ```  
@@ -1010,7 +967,7 @@ match == z
 ### Remarks  
  The type is a synonym for `sub_match<BidIt>*`, where `BidIt` is the template parameter.  
   
-##  <a name="regex_token_iterator__reference"></a>  regex_token_iterator::reference  
+##  <a name="reference"></a>  regex_token_iterator::reference  
  The type of a reference to a submatch.  
   
 ```  
@@ -1120,7 +1077,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__regex_token_iterator"></a>  regex_token_iterator::regex_token_iterator  
+##  <a name="regex_token_iterator"></a>  regex_token_iterator::regex_token_iterator  
  Constructs the iterator.  
   
 ```  
@@ -1262,7 +1219,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__regex_type"></a>  regex_token_iterator::regex_type  
+##  <a name="regex_type"></a>  regex_token_iterator::regex_type  
  The type of the regular expression to match.  
   
 ```  
@@ -1372,7 +1329,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__value_type"></a>  regex_token_iterator::value_type  
+##  <a name="value_type"></a>  regex_token_iterator::value_type  
  The type of a submatch.  
   
 ```  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CListBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CListBox class"
-  - "list boxes"
+f1_keywords: ["CListBox", "AFXWIN/CListBox", "AFXWIN/CListBox::CListBox", "AFXWIN/CListBox::AddString", "AFXWIN/CListBox::CharToItem", "AFXWIN/CListBox::CompareItem", "AFXWIN/CListBox::Create", "AFXWIN/CListBox::DeleteItem", "AFXWIN/CListBox::DeleteString", "AFXWIN/CListBox::Dir", "AFXWIN/CListBox::DrawItem", "AFXWIN/CListBox::FindString", "AFXWIN/CListBox::FindStringExact", "AFXWIN/CListBox::GetAnchorIndex", "AFXWIN/CListBox::GetCaretIndex", "AFXWIN/CListBox::GetCount", "AFXWIN/CListBox::GetCurSel", "AFXWIN/CListBox::GetHorizontalExtent", "AFXWIN/CListBox::GetItemData", "AFXWIN/CListBox::GetItemDataPtr", "AFXWIN/CListBox::GetItemHeight", "AFXWIN/CListBox::GetItemRect", "AFXWIN/CListBox::GetListBoxInfo", "AFXWIN/CListBox::GetLocale", "AFXWIN/CListBox::GetSel", "AFXWIN/CListBox::GetSelCount", "AFXWIN/CListBox::GetSelItems", "AFXWIN/CListBox::GetText", "AFXWIN/CListBox::GetTextLen", "AFXWIN/CListBox::GetTopIndex", "AFXWIN/CListBox::InitStorage", "AFXWIN/CListBox::InsertString", "AFXWIN/CListBox::ItemFromPoint", "AFXWIN/CListBox::MeasureItem", "AFXWIN/CListBox::ResetContent", "AFXWIN/CListBox::SelectString", "AFXWIN/CListBox::SelItemRange", "AFXWIN/CListBox::SetAnchorIndex", "AFXWIN/CListBox::SetCaretIndex", "AFXWIN/CListBox::SetColumnWidth", "AFXWIN/CListBox::SetCurSel", "AFXWIN/CListBox::SetHorizontalExtent", "AFXWIN/CListBox::SetItemData", "AFXWIN/CListBox::SetItemDataPtr", "AFXWIN/CListBox::SetItemHeight", "AFXWIN/CListBox::SetLocale", "AFXWIN/CListBox::SetSel", "AFXWIN/CListBox::SetTabStops", "AFXWIN/CListBox::SetTopIndex", "AFXWIN/CListBox::VKeyToItem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CListBox [MFC], CListBox", "CListBox [MFC], AddString", "CListBox [MFC], CharToItem", "CListBox [MFC], CompareItem", "CListBox [MFC], Create", "CListBox [MFC], DeleteItem", "CListBox [MFC], DeleteString", "CListBox [MFC], Dir", "CListBox [MFC], DrawItem", "CListBox [MFC], FindString", "CListBox [MFC], FindStringExact", "CListBox [MFC], GetAnchorIndex", "CListBox [MFC], GetCaretIndex", "CListBox [MFC], GetCount", "CListBox [MFC], GetCurSel", "CListBox [MFC], GetHorizontalExtent", "CListBox [MFC], GetItemData", "CListBox [MFC], GetItemDataPtr", "CListBox [MFC], GetItemHeight", "CListBox [MFC], GetItemRect", "CListBox [MFC], GetListBoxInfo", "CListBox [MFC], GetLocale", "CListBox [MFC], GetSel", "CListBox [MFC], GetSelCount", "CListBox [MFC], GetSelItems", "CListBox [MFC], GetText", "CListBox [MFC], GetTextLen", "CListBox [MFC], GetTopIndex", "CListBox [MFC], InitStorage", "CListBox [MFC], InsertString", "CListBox [MFC], ItemFromPoint", "CListBox [MFC], MeasureItem", "CListBox [MFC], ResetContent", "CListBox [MFC], SelectString", "CListBox [MFC], SelItemRange", "CListBox [MFC], SetAnchorIndex", "CListBox [MFC], SetCaretIndex", "CListBox [MFC], SetColumnWidth", "CListBox [MFC], SetCurSel", "CListBox [MFC], SetHorizontalExtent", "CListBox [MFC], SetItemData", "CListBox [MFC], SetItemDataPtr", "CListBox [MFC], SetItemHeight", "CListBox [MFC], SetLocale", "CListBox [MFC], SetSel", "CListBox [MFC], SetTabStops", "CListBox [MFC], SetTopIndex", "CListBox [MFC], VKeyToItem"]
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CListBox Class
 Provides the functionality of a Windows list box.  
@@ -127,7 +109,7 @@ class CListBox : public CWnd
   
  Following is a list of potential message-map entries and a description of the cases in which they would be sent to the parent:  
   
-- **ON_LBN_DBLCLK** The user double-clicks a string in a list box. Only a list box that has the [LBS_NOTIFY](../../mfc/reference/list-box-styles.md) style will send this notification message.  
+- **ON_LBN_DBLCLK** The user double-clicks a string in a list box. Only a list box that has the [LBS_NOTIFY](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style will send this notification message.  
   
 - **ON_LBN_ERRSPACE** The list box cannot allocate enough memory to meet the request.  
   
@@ -176,7 +158,7 @@ int AddString(LPCTSTR lpszItem);
  The zero-based index to the string in the list box. The return value is **LB_ERR** if an error occurs; the return value is **LB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- If the list box was not created with the [LBS_SORT](../../mfc/reference/list-box-styles.md) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted. If the list box was created with the **LBS_SORT** style but not the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style, the framework sorts the list by one or more calls to the `CompareItem` member function.  
+ If the list box was not created with the [LBS_SORT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted. If the list box was created with the **LBS_SORT** style but not the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the framework sorts the list by one or more calls to the `CompareItem` member function.  
   
  Use [InsertString](#insertstring) to insert a string into a specific location within the list box.  
   
@@ -200,20 +182,20 @@ virtual int CharToItem(
  The current position of the list-box caret.  
   
 ### Return Value  
- Returns – 1 or – 2 for no further action or a nonnegative number to specify an index of a list-box item on which to perform the default action for the keystroke. The default implementation returns – 1.  
+ Returns - 1 or - 2 for no further action or a nonnegative number to specify an index of a list-box item on which to perform the default action for the keystroke. The default implementation returns - 1.  
   
 ### Remarks  
  The `WM_CHARTOITEM` message is sent by the list box when it receives a `WM_CHAR` message, but only if the list box meets all of these criteria:  
   
 -   Is an owner-draw list box.  
   
--   Does not have the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style set.  
+-   Does not have the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style set.  
   
 -   Has at least one item.  
   
  You should never call this function yourself. Override this function to provide your own custom handling of keyboard messages.  
   
- In your override, you must return a value to tell the framework what action you performed. A return value of – 1 or – 2 indicates that you handled all aspects of selecting the item and requires no further action by the list box. Before returning – 1 or – 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
+ In your override, you must return a value to tell the framework what action you performed. A return value of - 1 or - 2 indicates that you handled all aspects of selecting the item and requires no further action by the list box. Before returning - 1 or - 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
   
  A return value of 0 or greater specifies the index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
@@ -249,7 +231,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
   
 |Value|Meaning|  
 |-----------|-------------|  
-|–1|Item 1 sorts before item 2.|  
+|-1|Item 1 sorts before item 2.|  
 |0|Item 1 and item 2 sort the same.|  
 |1|Item 1 sorts after item 2.|  
   
@@ -274,7 +256,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the style of the list box. Apply any combination of [list-box styles](../../mfc/reference/list-box-styles.md) to the box.  
+ Specifies the style of the list box. Apply any combination of [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) to the box.  
   
  `rect`  
  Specifies the list-box size and position. Can be either a `CRect` object or a `RECT` structure.  
@@ -295,7 +277,7 @@ virtual BOOL Create(
   
  These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CListBox`, add a message map to the new class, and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a list-box control.  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a list-box control.  
   
 - **WS_CHILD** Always  
   
@@ -418,7 +400,7 @@ int FindString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is -1, the entire list box is searched from the beginning.  
   
  `lpszItem`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string may contain any combination of uppercase and lowercase letters.  
@@ -443,7 +425,7 @@ int FindStringExact(
   
 ### Parameters  
  `nIndexStart`  
- Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is –1, the entire list box is searched from the beginning.  
+ Specifies the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nIndexStart`. If `nIndexStart` is -1, the entire list box is searched from the beginning.  
   
  `lpszFind`  
  Points to the null-terminated string to search for. This string can contain a complete filename, including the extension. The search is not case sensitive, so the string can contain any combination of uppercase and lowercase letters.  
@@ -452,7 +434,7 @@ int FindStringExact(
  The index of the matching item, or **LB_ERR** if the search was unsuccessful.  
   
 ### Remarks  
- If the list box was created with an owner-draw style but without the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style, the `FindStringExact` member function attempts to match the doubleword value against the value of `lpszFind`.  
+ If the list box was created with an owner-draw style but without the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the `FindStringExact` member function attempts to match the doubleword value against the value of `lpszFind`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#11](../../mfc/codesnippet/cpp/clistbox-class_11.cpp)]  
@@ -571,7 +553,7 @@ void* GetItemDataPtr(int nIndex) const;
  Specifies the zero-based index of the item in the list box.  
   
 ### Return Value  
- Retrieves a pointer, or –1 if an error occurs.  
+ Retrieves a pointer, or -1 if an error occurs.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#16](../../mfc/codesnippet/cpp/clistbox-class_16.cpp)]  
@@ -588,7 +570,7 @@ int GetItemHeight(int nIndex) const;
  Specifies the zero-based index of the item in the list box. This parameter is used only if the list box has the **LBS_OWNERDRAWVARIABLE** style; otherwise, it should be set to 0.  
   
 ### Return Value  
- The height, in pixels, of the items in the list box. If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the return value is the height of the item specified by `nIndex`. If an error occurs, the return value is **LB_ERR**.  
+ The height, in pixels, of the items in the list box. If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the return value is the height of the item specified by `nIndex`. If an error occurs, the return value is **LB_ERR**.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#17](../../mfc/codesnippet/cpp/clistbox-class_17.cpp)]  
@@ -626,7 +608,7 @@ DWORD GetListBoxInfo() const;
  Number of items per column of the `CListBox` object.  
   
 ### Remarks  
- This member function emulates the functionality of the [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) message, as described in the Windows SDK.  
   
 ##  <a name="getlocale"></a>  CListBox::GetLocale  
  Retrieves the locale used by the list box.  
@@ -806,7 +788,7 @@ int InsertString(
   
 ### Parameters  
  `nIndex`  
- Specifies the zero-based index of the position to insert the string. If this parameter is –1, the string is added to the end of the list.  
+ Specifies the zero-based index of the position to insert the string. If this parameter is -1, the string is added to the end of the list.  
   
  `lpszItem`  
  Points to the null-terminated string that is to be inserted.  
@@ -815,7 +797,7 @@ int InsertString(
  The zero-based index of the position at which the string was inserted. The return value is **LB_ERR** if an error occurs; the return value is **LB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- Unlike the [AddString](#addstring) member function, `InsertString` does not cause a list with the [LBS_SORT](../../mfc/reference/list-box-styles.md) style to be sorted.  
+ Unlike the [AddString](#addstring) member function, `InsertString` does not cause a list with the [LBS_SORT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style to be sorted.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#24](../../mfc/codesnippet/cpp/clistbox-class_24.cpp)]  
@@ -857,9 +839,9 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.  
   
 ### Remarks  
- By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the list-box dimensions. If the list box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
+ By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the list-box dimensions. If the list box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
   
- For further information about using the [LBS_OWNERDRAWFIXED](../../mfc/reference/list-box-styles.md) style in an owner-draw list box created with the `SubclassDlgItem` member function of `CWnd`, see the discussion in [Technical Note 14](../../mfc/tn014-custom-controls.md).  
+ For further information about using the [LBS_OWNERDRAWFIXED](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style in an owner-draw list box created with the `SubclassDlgItem` member function of `CWnd`, see the discussion in [Technical Note 14](../../mfc/tn014-custom-controls.md).  
   
  See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a description of the `MEASUREITEMSTRUCT` structure **.**  
   
@@ -887,7 +869,7 @@ int SelectString(
   
 ### Parameters  
  `nStartAfter`  
- Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is –1, the entire list box is searched from the beginning.  
+ Contains the zero-based index of the item before the first item to be searched. When the search reaches the bottom of the list box, it continues from the top of the list box back to the item specified by `nStartAfter`. If `nStartAfter` is -1, the entire list box is searched from the beginning.  
   
  `lpszItem`  
  Points to the null-terminated string that contains the prefix to search for. The search is case independent, so this string may contain any combination of uppercase and lowercase letters.  
@@ -898,7 +880,7 @@ int SelectString(
 ### Remarks  
  The list box is scrolled, if necessary, to bring the selected item into view.  
   
- This member function cannot be used with a list box that has the [LBS_MULTIPLESEL](../../mfc/reference/list-box-styles.md) style.  
+ This member function cannot be used with a list box that has the [LBS_MULTIPLESEL](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.  
   
  An item is selected only if its initial characters (from the starting point) match the characters in the string specified by `lpszItem`.  
   
@@ -979,7 +961,7 @@ int SetCaretIndex(
  [!code-cpp[NVC_MFC_CListBox#30](../../mfc/codesnippet/cpp/clistbox-class_30.cpp)]  
   
 ##  <a name="setcolumnwidth"></a>  CListBox::SetColumnWidth  
- Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/list-box-styles.md) style).  
+ Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style).  
   
 ```  
 void SetColumnWidth(int cxWidth);
@@ -1001,7 +983,7 @@ int SetCurSel(int nSelect);
   
 ### Parameters  
  `nSelect`  
- Specifies the zero-based index of the string to be selected. If `nSelect` is –1, the list box is set to have no selection.  
+ Specifies the zero-based index of the string to be selected. If `nSelect` is -1, the list box is set to have no selection.  
   
 ### Return Value  
  `LB_ERR` if an error occurs.  
@@ -1030,7 +1012,7 @@ void SetHorizontalExtent(int cxExtent);
 ### Remarks  
  If the size of the list box is smaller than this value, the horizontal scroll bar will horizontally scroll items in the list box. If the list box is as large or larger than this value, the horizontal scroll bar is hidden.  
   
- To respond to a call to `SetHorizontalExtent`, the list box must have been defined with the [WS_HSCROLL](../../mfc/reference/window-styles.md) style.  
+ To respond to a call to `SetHorizontalExtent`, the list box must have been defined with the [WS_HSCROLL](../../mfc/reference/styles-used-by-mfc.md#window-styles) style.  
   
  This member function is not useful for multicolumn list boxes. For multicolumn list boxes, call the `SetColumnWidth` member function.  
   
@@ -1104,7 +1086,7 @@ int SetItemHeight(
  **LB_ERR** if the index or height is invalid.  
   
 ### Remarks  
- If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, this function sets the height of the item specified by `nIndex`. Otherwise, this function sets the height of all items in the list box.  
+ If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, this function sets the height of the item specified by `nIndex`. Otherwise, this function sets the height of all items in the list box.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#36](../../mfc/codesnippet/cpp/clistbox-class_36.cpp)]  
@@ -1140,7 +1122,7 @@ int SetSel(
   
 ### Parameters  
  `nIndex`  
- Contains the zero-based index of the string to be set. If –1, the selection is added to or removed from all strings, depending on the value of `bSelect`.  
+ Contains the zero-based index of the string to be set. If -1, the selection is added to or removed from all strings, depending on the value of `bSelect`.  
   
  `bSelect`  
  Specifies how to set the selection. If `bSelect` is `TRUE`, the string is selected and highlighted; if `FALSE`, the highlight is removed and the string is no longer selected. The specified string is selected and highlighted by default.  
@@ -1163,7 +1145,8 @@ int SetSel(
 void SetTabStops();  
 BOOL SetTabStops(const int& cxEachStop);
 
- BOOL SetTabStops(
+ 
+BOOL SetTabStops(
     int nTabStops,  
     LPINT rgTabStops);
 ```  
@@ -1186,7 +1169,7 @@ BOOL SetTabStops(const int& cxEachStop);
   
  To set tab stops to an array of sizes, use the version with the `rgTabStops` and `nTabStops` arguments. A tab stop will be set for each value in `rgTabStops`, up to the number specified by `nTabStops`.  
   
- To respond to a call to the `SetTabStops` member function, the list box must have been created with the [LBS_USETABSTOPS](../../mfc/reference/list-box-styles.md) style.  
+ To respond to a call to the `SetTabStops` member function, the list box must have been created with the [LBS_USETABSTOPS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#39](../../mfc/codesnippet/cpp/clistbox-class_39.cpp)]  
@@ -1228,20 +1211,20 @@ virtual int VKeyToItem(
  The current position of the list-box caret.  
   
 ### Return Value  
- Returns – 2 for no further action, – 1 for default action, or a nonnegative number to specify an index of a list box item on which to perform the default action for the keystroke.  
+ Returns - 2 for no further action, - 1 for default action, or a nonnegative number to specify an index of a list box item on which to perform the default action for the keystroke.  
   
 ### Remarks  
  The `WM_VKEYTOITEM` message is sent by the list box when it receives a `WM_KEYDOWN` message, but only if the list box meets both of the following:  
   
--   Has the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/list-box-styles.md) style set.  
+-   Has the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style set.  
   
 -   Has at least one item.  
   
  You should never call this function yourself. Override this function to provide your own custom handling of keyboard messages.  
   
- You must return a value to tell the framework what action your override performed. A return value of – 2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. Before returning – 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
+ You must return a value to tell the framework what action your override performed. A return value of - 2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. Before returning - 2, you could set the selection or move the caret or both. To set the selection, use [SetCurSel](#setcursel) or [SetSel](#setsel). To move the caret, use [SetCaretIndex](#setcaretindex).  
   
- A return value of – 1 indicates that the list box should perform the default action in response to the keystroke.The default implementation returns – 1.  
+ A return value of - 1 indicates that the list box should perform the default action in response to the keystroke.The default implementation returns - 1.  
   
  A return value of 0 or greater specifies the index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStatusBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "indicators, status bar"
-  - "CStatusBar class"
-  - "status bars"
-  - "indicators"
-  - "status indicators"
+f1_keywords: ["CStatusBar", "AFXEXT/CStatusBar", "AFXEXT/CStatusBar::CStatusBar", "AFXEXT/CStatusBar::CommandToIndex", "AFXEXT/CStatusBar::Create", "AFXEXT/CStatusBar::CreateEx", "AFXEXT/CStatusBar::DrawItem", "AFXEXT/CStatusBar::GetItemID", "AFXEXT/CStatusBar::GetItemRect", "AFXEXT/CStatusBar::GetPaneInfo", "AFXEXT/CStatusBar::GetPaneStyle", "AFXEXT/CStatusBar::GetPaneText", "AFXEXT/CStatusBar::GetStatusBarCtrl", "AFXEXT/CStatusBar::SetIndicators", "AFXEXT/CStatusBar::SetPaneInfo", "AFXEXT/CStatusBar::SetPaneStyle", "AFXEXT/CStatusBar::SetPaneText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatusBar [MFC], CStatusBar", "CStatusBar [MFC], CommandToIndex", "CStatusBar [MFC], Create", "CStatusBar [MFC], CreateEx", "CStatusBar [MFC], DrawItem", "CStatusBar [MFC], GetItemID", "CStatusBar [MFC], GetItemRect", "CStatusBar [MFC], GetPaneInfo", "CStatusBar [MFC], GetPaneStyle", "CStatusBar [MFC], GetPaneText", "CStatusBar [MFC], GetStatusBarCtrl", "CStatusBar [MFC], SetIndicators", "CStatusBar [MFC], SetPaneInfo", "CStatusBar [MFC], SetPaneStyle", "CStatusBar [MFC], SetPaneText"]
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStatusBar Class
 A control bar with a row of text output panes, or "indicators."  
@@ -77,7 +56,7 @@ class CStatusBar : public CControlBar
 ## Remarks  
  The output panes commonly are used as message lines and as status indicators. Examples include the menu help-message lines that briefly explain the selected menu command and the indicators that show the status of the SCROLL LOCK, NUM LOCK, and other keys.  
   
- [CStatusBar::GetStatusBarCtrl](#getstatusbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for status bar customization and additional functionality. `CStatusBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetStatusBarCtrl`, you can give your status bars even more of the characteristics of a Windows 95/98 status bar. When you call `GetStatusBarCtrl`, it will return a reference to a `CStatusBarCtrl` object. See [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [CStatusBar::GetStatusBarCtrl](#getstatusbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for status bar customization and additional functionality. `CStatusBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetStatusBarCtrl`, you can give your status bars even more of the characteristics of a Windows 95/98 status bar. When you call `GetStatusBarCtrl`, it will return a reference to a `CStatusBarCtrl` object. See [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
   
  The framework stores indicator information in an array with the leftmost indicator at position 0. When you create a status bar, you use an array of string IDs that the framework associates with the corresponding indicators. You can then use either a string ID or an index to access an indicator.  
   
@@ -129,7 +108,7 @@ int CommandToIndex(UINT nIDFind) const;
  String ID of the indicator whose index is to be retrieved.  
   
 ### Return Value  
- The index of the indicator if successful; –1 if not successful.  
+ The index of the indicator if successful; -1 if not successful.  
   
 ### Remarks  
  The index of the first indicator is 0.  
@@ -149,7 +128,7 @@ virtual BOOL Create(
  Pointer to the [CWnd](../../mfc/reference/cwnd-class.md) object whose Windows window is the parent of the status bar.  
   
  `dwStyle`  
- The status-bar style. In addition to the standard Windows [styles](../../mfc/reference/window-styles.md), these styles are supported.  
+ The status-bar style. In addition to the standard Windows [styles](../../mfc/reference/styles-used-by-mfc.md#window-styles), these styles are supported.  
   
 - `CBRS_TOP` Control bar is at top of frame window.  
   
@@ -191,7 +170,7 @@ virtual BOOL CreateEx(
  For details on these styles, see [Settings for the CStatusBarCtrl](../../mfc/settings-for-the-cstatusbarctrl.md).  
   
  `dwStyle`  
- The status bar style. The default specifies that a visible status bar be created at the bottom of the frame window. Apply any combination of status bar control styles listed in [Window Styles](../../mfc/reference/window-styles.md) and [CDialogBar::Create](../../mfc/reference/cdialogbar-class.md#create). However, this parameter should always include the WS_CHILD and WS_VISIBLE styles.  
+ The status bar style. The default specifies that a visible status bar be created at the bottom of the frame window. Apply any combination of status bar control styles listed in [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [CDialogBar::Create](../../mfc/reference/cdialogbar-class.md#create). However, this parameter should always include the WS_CHILD and WS_VISIBLE styles.  
   
  `nID`  
  The status bar's child-window ID.  
@@ -305,7 +284,8 @@ UINT GetPaneStyle(int nIndex) const;
  Call this member function to retrieve the text that appears in a status-bar pane.  
   
 ```  
-CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  ```  
+CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rString) const;  
+```  
   
 ### Parameters  
  `nIndex`  
@@ -333,7 +313,7 @@ CStatusBarCtrl& GetStatusBarCtrl() const;
 ### Remarks  
  Use `GetStatusBarCtrl` to take advantage of the functionality of the Windows status-bar common control, and to take advantage of the support [CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) provides for status-bar customization. For example, by using the common control, you can specify a style that includes a sizing grip on the status bar, or you can specify a style to have the status bar appear at the top of the parent window's client area.  
   
- For more general information about common controls, See [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more general information about common controls, See [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
   
 ##  <a name="setindicators"></a>  CStatusBar::SetIndicators  
  Sets each indicator's ID to the value specified by the corresponding element of the array `lpIDArray`, loads the string resource specified by each ID, and sets the indicator's text to the string.  

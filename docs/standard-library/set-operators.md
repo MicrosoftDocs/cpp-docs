@@ -5,20 +5,23 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["set/std::operator!=", "set/std::operator&gt;", "set/std::operator&gt;=", "set/std::operator&lt;", "set/std::operator&lt;=", "set/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: b4256ebc-c449-4688-95db-fced42d20d4d
 caps.latest.revision: 8
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (set)", "std::operator&gt; (set)", "std::operator&gt;= (set)", "std::operator&lt; (set)", "std::operator&lt;= (set)", "std::operator== (set)"]
 ---
 # &lt;set&gt; operators
 ||||  
 |-|-|-|  
-|[operator!= (set)](#operator_neq)|[operator&gt; (set)](#operator_gt_)|[operator&gt;= (set)](#operator_gt__eq)|  
-|[operator&lt; (set)](#operator_lt_)|[operator&lt;= (set)](#operator_lt__eq)|[operator== (set)](#operator_eq_eq)|  
-|[operator!= (multiset)](#operator_neq_multiset)|[operator&gt; (multiset)](#operator_gt_multiset)|[operator&gt;= (multiset)](#operator_gt__eq_multiset)|  
-|[operator&lt; (multiset)](#operator_lt_multiset)|[operator&lt;= (multiset)](#operator_lt__eq_multiset)|[operator== (multiset)](#operator_eq_eq_multiset)|  
+|[operator!= (set)](#op_neq)|[operator&gt; (set)](#op_gt)|[operator&gt;= (set)](#eq)|  
+|[operator&lt; (set)](#op_lt)|[operator&lt;= (set)](#eq)|[operator== (set)](#op_eq_eq)|  
+|[operator!= (multiset)](#op_neq_multiset)|[operator&gt; (multiset)](#op_gt_multiset)|[operator&gt;= (multiset)](#op_gt_eq_multiset)|  
+|[operator&lt; (multiset)](#op_lt_multiset)|[operator&lt;= (multiset)](#op_lt_eq_multiset)|[operator== (multiset)](#op_eq_eq_multiset)|  
   
-##  <a name="operator_neq"></a>  operator!= (set)  
+##  <a name="op_neq"></a>  operator!= (set)  
  Tests if the set object on the left side of the operator is not equal to the set object on the right side.  
   
 ```
@@ -75,7 +78,7 @@ The sets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt; (set)  
+##  <a name="op_lt"></a>  operator&lt; (set)  
  Tests if the set object on the left side of the operator is less than the set object on the right side.  
   
 ```
@@ -132,7 +135,7 @@ The set s1 is not less than the set s3.
 *\  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;= (set)  
+##  <a name="op_lt_eq"></a>  operator&lt;= (set)  
  Tests if the set object on the left side of the operator is less than or equal to the set object on the right side.  
   
 ```
@@ -196,7 +199,7 @@ Set s1 is less than or equal to the set s4.
 *\  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator== (set)  
+##  <a name="op_eq_eq"></a>  operator== (set)  
  Tests if the set object on the left side of the operator is equal to the set object on the right side.  
   
 ```
@@ -253,7 +256,7 @@ The sets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt; (set)  
+##  <a name="op_gt"></a>  operator&gt; (set)  
  Tests if the set object on the left side of the operator is greater than the set object on the right side.  
   
 ```
@@ -310,7 +313,7 @@ The set s1 is greater than the set s3.
 *\  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;= (set)  
+##  <a name="op_gt_eq"></a>  operator&gt;= (set)  
  Tests if the set object on the left side of the operator is greater than or equal to the set object on the right side.  
   
 ```
@@ -374,7 +377,7 @@ Set s1 is greater than or equal to set s4.
 *\  
 ```  
   
-##  <a name="operator_neq_multiset"></a>  operator!= (multiset)  
+##  <a name="op_neq_multiset"></a>  operator!= (multiset)  
  Tests if the multiset object on the left side of the operator is not equal to the multiset object on the right side.  
   
 ```
@@ -431,7 +434,7 @@ The multisets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="operator_lt_multiset"></a>  operator&lt; (multiset)  
+##  <a name="op_lt_multiset"></a>  operator&lt; (multiset)  
  Tests if the multiset object on the left side of the operator is less than the multiset object on the right side.  
   
 ```
@@ -492,7 +495,7 @@ The multiset s1 is not less than the multiset s3.
 *\  
 ```  
   
-##  <a name="operator_lt__eq_multiset"></a>  operator&lt;= (multiset)  
+##  <a name="op_lt_eq_multiset"></a>  operator&lt;= (multiset)  
  Tests if the multiset object on the left side of the operator is less than or equal to the multiset object on the right side.  
   
 ```
@@ -562,7 +565,7 @@ The multiset s1 is less than or equal to the multiset s4.
 *\  
 ```  
   
-##  <a name="operator_eq_eq_multiset"></a>  operator== (multiset)  
+##  <a name="op_eq_eq_multiset"></a>  operator== (multiset)  
  Tests if the multiset object on the left side of the operator is equal to the multiset object on the right side.  
   
 ```
@@ -619,7 +622,7 @@ The multisets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="operator_gt_multiset"></a>  operator&gt; (multiset)  
+##  <a name="op_gt_multiset"></a>  operator&gt; (multiset)  
  Tests if the multiset object on the left side of the operator is greater than the multiset object on the right side.  
   
 ```
@@ -680,7 +683,7 @@ The multiset s1 is greater than the multiset s3.
 *\  
 ```  
   
-##  <a name="operator_gt__eq_multiset"></a>  operator&gt;= (multiset)  
+##  <a name="op_gt_eq_multiset"></a>  operator&gt;= (multiset)  
  Tests if the multiset object on the left side of the operator is greater than or equal to the multiset object on the right side.  
   
 ```

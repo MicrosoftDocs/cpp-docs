@@ -4,43 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IAxWinAmbientDispatchEx"
-  - "IAxWinAmbientDispatchEx"
-  - "ATL::IAxWinAmbientDispatchEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAxWinAmbientDispatchEx interface"
+f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAxWinAmbientDispatchEx interface"]
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatchEx Interface
 This interface implements supplemental ambient properties for a hosted control.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   

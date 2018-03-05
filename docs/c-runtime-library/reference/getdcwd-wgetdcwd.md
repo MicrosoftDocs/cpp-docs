@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_getdcwd"
-  - "_wgetdcwd"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_getdcwd", "_wgetdcwd"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wgetdcwd"
-  - "getdcwd"
-  - "_getdcwd"
-  - "tgetdcwd"
-  - "_wgetdcwd"
-  - "_tgetdcwd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wgetdcwd function"
-  - "working directory"
-  - "getdcwd function"
-  - "_getdcwd function"
-  - "_wgetdcwd function"
-  - "current working directory"
-  - "directories [C++], current working"
+f1_keywords: ["wgetdcwd", "getdcwd", "_getdcwd", "tgetdcwd", "_wgetdcwd", "_tgetdcwd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wgetdcwd function", "working directory", "getdcwd function", "_getdcwd function", "_wgetdcwd function", "current working directory", "directories [C++], current working"]
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getdcwd, _wgetdcwd
 Gets the full path of the current working directory on the specified drive.  
@@ -105,7 +64,7 @@ wchar_t *_wgetdcwd(
   
  `_wgetdcwd` is a wide-character version of `_getdcwd`, and its `buffer` parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.  
   
- This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/?LinkID=150542) and then search for **GetFullPathName**.  
+ This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.  
   
  The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](../../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md).  
   
@@ -128,9 +87,6 @@ wchar_t *_wgetdcwd(
   
 ## Example  
  See the example in [_getdrive](../../c-runtime-library/reference/getdrive.md).  
-  
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "greater"
-  - "xfunctional/std::greater"
-  - "std.greater"
-  - "std::greater"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "greater struct"
-  - "greater function"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::greater"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["greater struct", "greater function"]
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # greater Struct
 A binary predicate that performs the greater-than operation ( `operator>`) on its arguments.  
@@ -75,7 +53,7 @@ struct greater<void>
  The right operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``>``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator>`.  
+ The result of `Left > Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator>`.  
   
 ## Remarks  
  The binary predicate `greater`< `Type`> provides a strict weak ordering of a set of element values of type `Type` into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.  

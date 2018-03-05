@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_bittestandreset64_cpp"
-  - "_bittestandreset"
-  - "_bittestandreset_cpp"
-  - "_bittestandreset64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "btr instruction"
-  - "_bittestandreset intrinsic"
-  - "_bittestandreset64 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_bittestandreset64_cpp", "_bittestandreset", "_bittestandreset_cpp", "_bittestandreset64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["btr instruction", "_bittestandreset intrinsic", "_bittestandreset64 intrinsic"]
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _bittestandreset, _bittestandreset64
 **Microsoft Specific**  
@@ -116,7 +94,7 @@ int main()
 The number was negative.  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

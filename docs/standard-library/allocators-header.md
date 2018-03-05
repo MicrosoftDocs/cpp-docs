@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext::<allocators>"
-  - "allocators/stdext::allocators"
-  - "<allocators>"
-  - "stdext.<allocators>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "allocators header"
+ms.topic: "reference"
+f1_keywords: ["<allocators>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["allocators header"]
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;allocators&gt;
 Defines several templates that help allocate and free memory blocks for node-based containers.  
@@ -153,8 +133,8 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
 |||  
 |-|-|  
-|[operator!= (\<allocators>)](../standard-library/allocators-operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
-|[operator== (\<allocators>)](../standard-library/allocators-operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
+|[operator!= (\<allocators>)](../standard-library/allocators-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|  
+|[operator== (\<allocators>)](../standard-library/allocators-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|  
   
 ### Classes  
   

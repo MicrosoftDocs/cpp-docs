@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Key property"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Key property"]
 ms.assetid: d1570cd9-b414-4cd6-96bd-47c38281eaca
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Key Property
 The following are legal entries for the Key property in the accelerator table:  
@@ -45,9 +29,9 @@ The following are legal entries for the Key property in the accelerator table:
   
     -   Values from 033 through 255, whether preceded by 0's or not are interpreted as ANSI values.  
   
--   A single keyboard character. Uppercase A – Z or the numbers 0 – 9 can be either ASCII or virtual key values; any other character is ASCII only.  
+-   A single keyboard character. Uppercase A - Z or the numbers 0 - 9 can be either ASCII or virtual key values; any other character is ASCII only.  
   
--   A single keyboard character in the range A – Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the CTRL key held down.  
+-   A single keyboard character in the range A - Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the CTRL key held down.  
   
     > [!NOTE]
     >  When entering an ASCII value, the modifier property options are limited. The only control key available for use is the ALT key.  

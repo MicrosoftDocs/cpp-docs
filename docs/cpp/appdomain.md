@@ -4,44 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "appdomain_cpp"
-  - "appdomain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "appdomain __declspec keyword"
-  - "__declspec keyword [C++], appdomain"
+f1_keywords: ["appdomain_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["appdomain __declspec keyword", "__declspec keyword [C++], appdomain"]
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # appdomain
 Specifies that each application domain of your managed application should have its own copy of a particular global variable or static member variable. See [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md) for more information.  
   
  Every application domain has its own copy of a per-appdomain variable. A constructor of an appdomain variable is executed when an assembly is loaded into an application domain, and the destructor is executed when the application domain is unloaded.  
   
- If you want all application domains within a process in the common language runtime to share a global variable, use the `__declspec(process)` modifier. `__declspec(process)` is in effect by default under [/clr](../build/reference/clr-common-language-runtime-compilation.md) and `__declspec(appdomain)` is in effect by default under **/clr:pure**. `__declspec(appdomain)` is enforced under **/clr:safe**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ If you want all application domains within a process in the common language runtime to share a global variable, use the `__declspec(process)` modifier. `__declspec(process)` is in effect by default under [/clr](../build/reference/clr-common-language-runtime-compilation.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  `__declspec(appdomain)` is only valid when one of the **/clr** compiler options is used. Only a global variable, static member variable, or a static local variable can be marked with `__declspec(appdomain)`. It is an error to apply `__declspec(appdomain)` to static members of managed types because they always have this behavior.  
   

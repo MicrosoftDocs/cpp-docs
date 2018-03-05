@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonStatusBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonStatusBar class"
+f1_keywords: ["CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddDynamicElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddSeparator", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::Create", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::CreateEx", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindByID", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExtendedArea", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetSpace", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsBottomFrame", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsInformationMode", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RecalcLayout", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveAll", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::SetInformation", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::OnDrawInformation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonStatusBar [MFC], AddDynamicElement", "CMFCRibbonStatusBar [MFC], AddElement", "CMFCRibbonStatusBar [MFC], AddExtendedElement", "CMFCRibbonStatusBar [MFC], AddSeparator", "CMFCRibbonStatusBar [MFC], Create", "CMFCRibbonStatusBar [MFC], CreateEx", "CMFCRibbonStatusBar [MFC], FindByID", "CMFCRibbonStatusBar [MFC], FindElement", "CMFCRibbonStatusBar [MFC], GetCount", "CMFCRibbonStatusBar [MFC], GetElement", "CMFCRibbonStatusBar [MFC], GetExCount", "CMFCRibbonStatusBar [MFC], GetExElement", "CMFCRibbonStatusBar [MFC], GetExtendedArea", "CMFCRibbonStatusBar [MFC], GetSpace", "CMFCRibbonStatusBar [MFC], IsBottomFrame", "CMFCRibbonStatusBar [MFC], IsExtendedElement", "CMFCRibbonStatusBar [MFC], IsInformationMode", "CMFCRibbonStatusBar [MFC], RecalcLayout", "CMFCRibbonStatusBar [MFC], RemoveAll", "CMFCRibbonStatusBar [MFC], RemoveElement", "CMFCRibbonStatusBar [MFC], SetInformation", "CMFCRibbonStatusBar [MFC], OnDrawInformation"]
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBar Class
 The `CMFCRibbonStatusBar` class implements a status bar control that can display ribbon elements.  

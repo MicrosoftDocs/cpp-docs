@@ -4,98 +4,62 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::CDataSource::Open"
-  - "ATL.CDataSource.Open"
-  - "CDataSource::Open"
-  - "CDataSource.Open"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Open method"
+ms.topic: "reference"
+f1_keywords: ["ATL::CDataSource::Open", "ATL.CDataSource.Open", "CDataSource::Open", "CDataSource.Open"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Open method"]
 ms.assetid: a6d28bd1-799a-48ed-8993-5f82d1705b77
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::Open
 Opens a connection to a data source using a **CLSID**, **ProgID**, or `CEnumerator` moniker or prompts the user with a locator dialog box.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CLSID& clsid,  
+```cpp
+HRESULT Open(const CLSID& clsid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CLSID& clsid,  
+   ULONG nPropertySets = 1) throw();  
+
+
+HRESULT Open(const CLSID& clsid,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   long nInitMode = 0) throw();HRESULT Open(LPCTSTR szProgID,  
+  DBPROPSET* pPropSet = NULL,  
+   ULONG nPropertySets = 1) throw();HRESULT Open(LPCTSTR szProgID,  
+   LPCTSTR pName,  LPCTSTR pUserName = NULL,  
+   LPCTSTR pPassword = NULL,  
+   long nInitMode = 0) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   ULONG nPropertySets = 1) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   LPCTSTR pName,  
-   LPCTSTR pUserName = NULL,  
-   LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   HWND hWnd = GetActiveWindow( ),  
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET   
-) throw( );  
-HRESULT Open(   
-   LPCWSTR szProgID,   
-   DBPROPSET* pPropSet = NULL,   
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(   
-   LPCSTR szProgID,   
-   LPCTSTR pName,   
-   LPCTSTR pUserName = NULL,   
+   long nInitMode = 0) throw();  
+
+HRESULT Open(HWND hWnd = GetActiveWindow(),  
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
+
+HRESULT Open(LPCWSTR szProgID,   
+  DBPROPSET* pPropSet = NULL,   
+   ULONG nPropertySets = 1) throw();
+
+HRESULT Open(LPCSTR szProgID,   
+   LPCTSTR pName,LPCTSTR pUserName = NULL,   
    LPCTSTR pPassword = NULL,   
-   long nInitMode = 0   
-) throw( );  
+   long nInitMode = 0) throw();  
 ```  
   
 #### Parameters  
@@ -103,7 +67,7 @@ HRESULT Open( 
  [in] The **CLSID** of the data provider.  
   
  *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  *nPropertySets*  
  [in] The number of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures passed in the *pPropSet* argument.  
@@ -118,7 +82,7 @@ HRESULT Open( 
  [in] The user's password.  
   
  `nInitMode`  
- [in] Database initialization mode. See [Initialization Properties](https://msdn.microsoft.com/en-us/library/ms723127.aspx)in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of valid initialization modes. If `nInitMode` is zero, no initialization mode is included in the property set used to open the connection.  
+ [in] Database initialization mode. See [Initialization Properties](https://msdn.microsoft.com/en-us/library/ms723127.aspx)in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If `nInitMode` is zero, no initialization mode is included in the property set used to open the connection.  
   
  `szProgID`  
  [in] A program identifier.  

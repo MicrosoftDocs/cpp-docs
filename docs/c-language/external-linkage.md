@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linkage [C++], external"
-  - "external linkage, about external linkage"
-  - "external linkage"
+dev_langs: ["C++"]
+helpviewer_keywords: ["linkage [C++], external", "external linkage, about external linkage", "external linkage"]
 ms.assetid: a6f8ea69-b405-4cdd-bf12-ad5462b73183
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # External Linkage
 If the first declaration at file-scope level for an identifier does not use the **static** storage-class specifier, the object has external linkage.  

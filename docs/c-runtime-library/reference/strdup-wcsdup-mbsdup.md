@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strdup"
-  - "_mbsdup"
-  - "_wcsdup"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_strdup", "_mbsdup", "_wcsdup"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsdup"
-  - "mbsdup"
-  - "_mbsdup"
-  - "_strdup"
-  - "_ftcsdup"
-  - "_wcsdup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wcsdup function"
-  - "ftcsdup function"
-  - "_ftcsdup function"
-  - "mbsdup function"
-  - "strdup function"
-  - "_strdup function"
-  - "_wcsdup function"
-  - "copying strings"
-  - "duplicating strings"
-  - "strings [C++], copying"
-  - "_mbsdup function"
-  - "strings [C++], duplicating"
-  - "tcsdup function"
-  - "_tcsdup function"
+f1_keywords: ["_tcsdup", "mbsdup", "_mbsdup", "_strdup", "_ftcsdup", "_wcsdup"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wcsdup function", "ftcsdup function", "_ftcsdup function", "mbsdup function", "strdup function", "_strdup function", "_wcsdup function", "copying strings", "duplicating strings", "strings [C++], copying", "_mbsdup function", "strings [C++], duplicating", "tcsdup function", "_tcsdup function"]
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strdup, _wcsdup, _mbsdup
 Duplicates strings.  
   
 > [!IMPORTANT]
->  `_mbsdup` cannot be used in applications that execute in the                  [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see                  [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsdup` cannot be used in applications that execute in the                  Windows Runtime. For more information, see                  [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -145,9 +95,6 @@ int main( void )
 Original: This is the buffer text  
 Copy:     This is the buffer text  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Clone](https://msdn.microsoft.com/en-us/library/system.string.clone.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

@@ -4,48 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDataSource*"
-  - "CDataConnection::operatorCDataSource*"
-  - "CDataConnection.operatorCDataSource*"
-  - "operatorCDataSource*"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDataSource* operator"
-  - "operator * (CDataSource)"
+ms.topic: "reference"
+f1_keywords: ["CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDataSource* operator", "operator * (CDataSource)"]
 ms.assetid: 9118e324-e68d-45c5-a791-03f041d420ed
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::operator CDataSource*
 Returns a pointer to the contained `CDataSource` object.  
   
 ## Syntax  
   
-```  
-  
-operator const CDataSource*() throw( );  
+```cpp
+operator const CDataSource*() throw();  
   
 ```  
   

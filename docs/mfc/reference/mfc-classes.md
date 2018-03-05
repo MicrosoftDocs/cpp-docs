@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, classes"
-  - "classes [C++], MFC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # MFC Classes
 The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.  
@@ -41,7 +23,7 @@ The classes in the following list are included in the Microsoft Foundation Class
 >  For information about [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).  
   
 > [!IMPORTANT]
->  The MFC classes and their members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The MFC classes and their members cannot be used in applications that execute in the Windows Runtime.  
   
 ## In This Section  
  [CAccelerateDecelerateTransition Class](../../mfc/reference/cacceleratedeceleratetransition-class1.md)  
@@ -942,7 +924,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides support for custom client-side control interfaces.  
   
  [COleConvertDialog Class](../../mfc/reference/coleconvertdialog-class.md)  
- For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the Windows SDK.  
   
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)  
  Encapsulates the `CURRENCY` data type of OLE automation.  
@@ -1080,7 +1062,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Encapsulates the services provided by the Windows common dialog box for printing.  
   
  [CPrintDialogEx Class](../../mfc/reference/cprintdialogex-class.md)  
- Encapsulates the services provided by the Windows 2000 Print property sheet.  
+ Encapsulates the services provided by the Windows Print property sheet.  
   
  [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)  
  Provides the functionality of the Windows common progress bar control.  

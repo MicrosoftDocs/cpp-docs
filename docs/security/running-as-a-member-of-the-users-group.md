@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PRJ0050"
-  - "VCD0047"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Users Group [C++]"
-  - "security [C++], Users Group"
-  - "Windows accounts [C++]"
-  - "non administrator users [C++]"
-  - "user accounts [C++]"
-  - "administrator (not running as) [C++]"
+f1_keywords: ["PRJ0050", "VCD0047"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Users Group [C++]", "security [C++], Users Group", "Windows accounts [C++]", "non administrator users [C++]", "user accounts [C++]", "administrator (not running as) [C++]"]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Running as a Member of the Users Group
 This topic explains how configuring Windows user accounts as a member of the Users Group (as opposed to the Administrators Group) increases security by reducing the chances of being infected with malicious code.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__if_exists_cpp"
-  - "__if_exists"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "identifiers, testing for existence"
-  - "symbols, testing for existence"
-  - "__if_exists keyword [C++]"
+f1_keywords: ["__if_exists_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["identifiers, testing for existence", "symbols, testing for existence", "__if_exists keyword [C++]"]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __if_exists Statement
 The `__if_exists` statement tests whether the specified identifier exists. If the identifier exists, the specified statement block is executed.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "12/13/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "referenceBinding"
-  - "/Zc:referenceBinding"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc compiler options (C++)"
-  - "referenceBinding"
-  - "Enforce reference binding rules"
-  - "/Zc compiler options (C++)"
-  - "Zc compiler options (C++)"
+f1_keywords: ["referenceBinding", "/Zc:referenceBinding"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc compiler options (C++)", "referenceBinding", "Enforce reference binding rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:referenceBinding (Enforce reference binding rules)
 When the **/Zc:referenceBinding** option is specified, the compiler does not allow a non-const lvalue reference to bind to a temporary.  

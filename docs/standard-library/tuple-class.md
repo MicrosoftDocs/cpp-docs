@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "tuple"
-  - "std::tuple"
-  - "tuple/std::tuple"
-  - "tuple/std::tuple::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tuple class"
+ms.topic: "reference"
+f1_keywords: ["tuple/std::tuple", "tuple/std::tuple::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tuple class"]
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # tuple Class
 Wraps a fixed-length sequence of elements.  
@@ -140,7 +120,7 @@ The tuples in the vector are
   
  **Namespace:** std  
   
-##  <a name="tuple__operator_eq"></a>  tuple::operator=  
+##  <a name="op_eq"></a>  tuple::operator=  
  Assigns a `tuple` object.  
   
 ```  
@@ -238,7 +218,7 @@ template <class... Types>
 ### Remarks  
  The function executes `left.swap(right)`.  
   
-##  <a name="tuple__tuple"></a>  tuple::tuple  
+##  <a name="tuple"></a>  tuple::tuple  
  Constructs a `tuple` object.  
   
 ```  
@@ -351,5 +331,5 @@ int main()
   
 ## See Also  
  [\<tuple>](../standard-library/tuple.md)   
- [make_tuple Function](../standard-library/tuple-functions.md#make_tuple_function)
+ [make_tuple](../standard-library/tuple-functions.md#make_tuple)
 

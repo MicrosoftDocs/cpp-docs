@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::direct3d_abort"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "runtime_exception class"
+ms.topic: "reference"
+f1_keywords: ["runtime_exception", "AMPRT/runtime_exception", "AMPRT/Concurrency::runtime_exception", "AMPRT/Concurrency::runtime_exception::get_error_code"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["runtime_exception class"]
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # runtime_exception Class
 The base type for exceptions in the C++ Accelerated Massive Parallelism (AMP) library.  
@@ -57,14 +39,14 @@ class runtime_exception : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_error_code Method](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
+|[get_error_code](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|  
 
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `runtime_exception` object into this one.|  
   
 ## Inheritance Hierarchy  
  `exception`  

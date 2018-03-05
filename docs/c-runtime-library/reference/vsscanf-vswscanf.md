@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "vsscanf"
-  - "vswscanf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["vsscanf", "vswscanf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_vstscanf"
-  - "vsscanf"
-  - "vswscanf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vswscanf function"
-  - "vsscanf function"
+f1_keywords: ["_vstscanf", "vsscanf", "vswscanf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vswscanf function", "vsscanf function"]
 ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vsscanf, vswscanf
 Reads formatted data from a string. More secure versions of these functions are available; see [vsscanf_s, vswscanf_s](../../c-runtime-library/reference/vsscanf-s-vswscanf-s.md).  
@@ -160,9 +128,6 @@ Character = 1
 Integer:  = 15  
 Real:     = 15.000000  
 ```  
-  
-## .NET Framework Equivalent  
- See `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

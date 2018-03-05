@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComBSTR class, programming with"
-  - "Unicode, using CComBSTR [ATL]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Programming with CComBSTR (ATL)
 The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper around the `BSTR` data type. While `CComBSTR` is a useful tool, there are several situations that require caution.  
@@ -47,7 +30,7 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
 -   [Memory Leak Issues](#programmingwithccombstr_memoryleaks)  
   
 ##  <a name="programmingwithccombstr_conversionissues"></a> Conversion Issues  
- Although several `CComBSTR` methods will automatically convert an ANSI string argument into Unicode, the methods will always return Unicode format strings. To convert the output string back to ANSI, use an ATL conversion class. For more information on the ATL conversion classes, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ Although several `CComBSTR` methods will automatically convert an ANSI string argument into Unicode, the methods will always return Unicode format strings. To convert the output string back to ANSI, use an ATL conversion class. For more information on the ATL conversion classes, see [ATL and MFC String Conversion Macros](reference/string-conversion-macros.md).  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#114](../atl/codesnippet/cpp/programming-with-ccombstr-atl_1.cpp)]  
@@ -89,6 +72,6 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
 ## See Also  
  [Concepts](../atl/active-template-library-atl-concepts.md)   
  [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)   
- [wstring](http://msdn.microsoft.com/library/77953dd7-ee2f-4f6c-90e7-27da549ca631)   
+ [wstring](../standard-library/basic-string-class.md)   
  [String Conversion Macros](../atl/reference/string-conversion-macros.md)
 

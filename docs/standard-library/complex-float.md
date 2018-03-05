@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::complex<float>"
-  - "std.complex<float>"
-  - "complex<float>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "complex<float> function"
+ms.topic: "reference"
+f1_keywords: ["complex/std::complex<float>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["complex<float> function"]
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # complex&lt;float&gt;
 Describes an object that stores an ordered pair of objects both of type **float***,* the first representing the real part of a complex number and the second representing the imaginary part.  
@@ -68,7 +49,7 @@ constexpr complex(
  `_ImagVal`  
  The value of type **float** for the imaginary part of the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number of type **double** or of type `long double` whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.  
   
 ## Return Value  

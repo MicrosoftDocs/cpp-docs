@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CSimpleDialog"
-  - "CSimpleDialgo"
-  - "CSimpleDialog"
-  - "ATL.CSimpleDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleDialog class"
-  - "CSimpleDialog class, modal dialog boxes in ATL"
-  - "dialog boxes, modal"
-  - "modal dialog boxes, ATL"
+f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleDialog Class
 This class implements a basic modal dialog box.  
@@ -95,7 +72,7 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 ### Return Value  
  If successful, the return value is the resource ID of the control that dismissed the dialog box.  
   
- If the function fails, the return value is –1. To get extended error information, call `GetLastError`.  
+ If the function fails, the return value is -1. To get extended error information, call `GetLastError`.  
   
 ### Remarks  
  This method handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.  

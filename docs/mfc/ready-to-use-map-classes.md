@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.map"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "collection classes, maps"
-  - "classes [C++], map"
-  - "map classes"
+f1_keywords: ["vc.classes.map"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["collection classes [MFC], maps", "classes [MFC], map", "map classes [MFC]"]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Map Classes
 The following classes are ready-to-use map classes.  

@@ -1,34 +1,19 @@
 ---
-title: "Interoperability with Other .NET Languages (C++-CLI) | Microsoft Docs"
+title: "Interoperability with Other .NET Languages (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Interoperability with Other .NET Languages (C++/CLI)
 The topics in this section show how to create assemblies in Visual C++ that consume from or provide functionality to assemblies written in C# or Visual Basic.  

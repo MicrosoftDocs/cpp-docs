@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAxDialogImpl"
-  - "ATL.CAxDialogImpl"
-  - "CAxDialogImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAxDialogImpl class"
-  - "ATL, dialog boxes"
+f1_keywords: ["CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap", "ATLWIN/ATL::CAxDialogImpl::Create", "ATLWIN/ATL::CAxDialogImpl::DestroyWindow", "ATLWIN/ATL::CAxDialogImpl::DoModal", "ATLWIN/ATL::CAxDialogImpl::EndDialog", "ATLWIN/ATL::CAxDialogImpl::GetDialogProc", "ATLWIN/ATL::CAxDialogImpl::GetIDD", "ATLWIN/ATL::CAxDialogImpl::IsDialogMessage", "ATLWIN/ATL::CAxDialogImpl::m_bModal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAxDialogImpl class", "ATL, dialog boxes"]
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAxDialogImpl Class
 This class implements a dialog box (modal or modeless) that hosts ActiveX controls.  

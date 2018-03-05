@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CScrollBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CScrollBar class"
-  - "SCROLLBAR window class"
-  - "scroll bars"
-  - "Windows common controls [C++], CScrollBar"
-  - "controls [MFC], scroll bar"
+f1_keywords: ["CScrollBar", "AFXWIN/CScrollBar", "AFXWIN/CScrollBar::CScrollBar", "AFXWIN/CScrollBar::Create", "AFXWIN/CScrollBar::EnableScrollBar", "AFXWIN/CScrollBar::GetScrollBarInfo", "AFXWIN/CScrollBar::GetScrollInfo", "AFXWIN/CScrollBar::GetScrollLimit", "AFXWIN/CScrollBar::GetScrollPos", "AFXWIN/CScrollBar::GetScrollRange", "AFXWIN/CScrollBar::SetScrollInfo", "AFXWIN/CScrollBar::SetScrollPos", "AFXWIN/CScrollBar::SetScrollRange", "AFXWIN/CScrollBar::ShowScrollBar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CScrollBar [MFC], CScrollBar", "CScrollBar [MFC], Create", "CScrollBar [MFC], EnableScrollBar", "CScrollBar [MFC], GetScrollBarInfo", "CScrollBar [MFC], GetScrollInfo", "CScrollBar [MFC], GetScrollLimit", "CScrollBar [MFC], GetScrollPos", "CScrollBar [MFC], GetScrollRange", "CScrollBar [MFC], SetScrollInfo", "CScrollBar [MFC], SetScrollPos", "CScrollBar [MFC], SetScrollRange", "CScrollBar [MFC], ShowScrollBar"]
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CScrollBar Class
 Provides the functionality of a Windows scroll-bar control.  
@@ -109,7 +88,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the scroll bar's style. Apply any combination of [scroll-bar styles](../../mfc/reference/scroll-bar-styles.md) to the scroll bar.  
+ Specifies the scroll bar's style. Apply any combination of [scroll-bar styles](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles) to the scroll bar.  
   
  `rect`  
  Specifies the scroll bar's size and position. Can be either a `RECT` structure or a `CRect` object.  
@@ -126,7 +105,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CScrollBar` object in two steps. First, call the constructor, which constructs the `CScrollBar` object; then call **Create**, which creates and initializes the associated Windows scroll bar and attaches it to the `CScrollBar` object.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a scroll bar:  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a scroll bar:  
   
 - **WS_CHILD** Always  
   
@@ -192,7 +171,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- This member function emulates the functionality of the [SBM_SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787545) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [SBM_SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787545) message, as described in the Windows SDK.  
   
 ##  <a name="getscrollinfo"></a>  CScrollBar::GetScrollInfo  
  Retrieves the information that the `SCROLLINFO` structure maintains about a scroll bar.  
@@ -205,7 +184,7 @@ BOOL GetScrollInfo(
   
 ### Parameters  
  `lpScrollInfo`  
- A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about this structure.  
+ A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the Windows SDK for more information about this structure.  
   
  `nMask`  
  Specifies the scroll bar parameters to retrieve. Typical usage, SIF_ALL, specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the nMask values.  
@@ -216,7 +195,7 @@ BOOL GetScrollInfo(
 ### Remarks  
  `GetScrollInfo` enables applications to use 32-bit scroll positions.  
   
- The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
+ The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.  
   
  The MFC Windows message handlers that indicate scroll bar position, [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) and [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll bar position data.  
   
@@ -296,7 +275,7 @@ BOOL SetScrollInfo(
 ### Remarks  
  You must provide the values required by the `SCROLLINFO` structure parameters, including the flag values.  
   
- The `SCROLLINFO` structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
+ The `SCROLLINFO` structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure topic in the Windows SDK for more information about changing the structure defaults.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]  

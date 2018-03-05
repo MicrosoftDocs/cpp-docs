@@ -4,56 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcstold"
-  - "strtold"
-  - "_strtold_l"
-  - "_wcstold_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcstold", "strtold", "_strtold_l", "_wcstold_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcstold_l"
-  - "_wcstold_l"
-  - "_tcstold"
-  - "strtold"
-  - "_strtold_l"
-  - "wcstold"
-dev_langs: 
-  - "C++"
+f1_keywords: ["_tcstold_l", "_wcstold_l", "_tcstold", "strtold", "_strtold_l", "wcstold"]
+dev_langs: ["C++"]
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strtold, _strtold_l, wcstold, _wcstold_l
 Converts strings to a long double-precision floating-point value.  
@@ -92,7 +56,7 @@ long double wcstold_l(
  The locale to use.  
   
 ## Return Value  
- `strtold` returns the value of the floating-point number as a `long double`, except when the representation would cause an overflow—in that case, the function returns +/–`HUGE_VALL`. The sign of `HUGE_VALL` matches the sign of the value that cannot be represented. `strtold` returns 0 if no conversion can be performed or an underflow occurs.  
+ `strtold` returns the value of the floating-point number as a `long double`, except when the representation would cause an overflow—in that case, the function returns +/-`HUGE_VALL`. The sign of `HUGE_VALL` matches the sign of the value that cannot be represented. `strtold` returns 0 if no conversion can be performed or an underflow occurs.  
   
  `wcstold` returns values analogously to `strtold`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
@@ -116,7 +80,7 @@ long double wcstold_l(
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`d` &#124; `D` &#124; `e` &#124; `E`}[`sign`]`digits`]  
   
- A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`–`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`d`, `D`, `e`, or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
+ A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`-`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`d`, `D`, `e`, or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
   
 ## Requirements  
   
@@ -158,9 +122,6 @@ string = 3.1415926535898This stopped it
    Stopped scan at: This stopped it  
   
 ```  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToDouble](https://msdn.microsoft.com/en-us/library/system.convert.todouble.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

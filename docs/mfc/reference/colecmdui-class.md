@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleCmdUI"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document object server"
-  - "COleCmdUI class"
-  - "servers [C++], ActiveX documents"
-  - "docobject server"
-  - "servers [C++], doc objects"
-  - "ActiveX documents [C++], document server"
+f1_keywords: ["COleCmdUI", "AFXDOCOBJ/COleCmdUI", "AFXDOCOBJ/COleCmdUI::COleCmdUI", "AFXDOCOBJ/COleCmdUI::Enable", "AFXDOCOBJ/COleCmdUI::SetCheck", "AFXDOCOBJ/COleCmdUI::SetText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleCmdUI [MFC], COleCmdUI", "COleCmdUI [MFC], Enable", "COleCmdUI [MFC], SetCheck", "COleCmdUI [MFC], SetText"]
 ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleCmdUI Class
 Implements a method for MFC to update the state of user-interface objects related to the `IOleCommandTarget`-driven features of your application.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "xfunctional/std::divides"
-  - "std::divides"
-  - "std.divides"
-  - "divides"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "divides struct"
-  - "divides class"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::divides"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["divides struct", "divides class"]
 ms.assetid: b9cf8e9c-6981-43a6-a6a3-8f761987dd7a
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # divides Struct
 A predefined function object that performs the division operation ( `operator/`) on its arguments.  
@@ -72,7 +50,7 @@ struct divides<void>
  The right operand of the division operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``/``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator/`.  
+ The result of `Left / Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator/`.  
   
 ## Example  
   

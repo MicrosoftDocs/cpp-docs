@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_final"
-  - "std.is_final"
-  - "std::is_final"
-  - "type_traits/std::is_final"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_final"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_final"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_final"]
 ms.assetid: 9dbad82f-6685-4909-94e8-98e4a93994b9
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_final Class
 Tests whether the type is a class type marked `final`.  

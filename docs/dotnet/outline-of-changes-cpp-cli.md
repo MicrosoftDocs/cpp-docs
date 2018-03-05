@@ -1,37 +1,22 @@
 ---
-title: "Outline of Changes (C++-CLI) | Microsoft Docs"
+title: "Outline of Changes (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: c0bbbd6b-c5c4-44cf-a6ca-c1010c377e9d
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Outline of Changes (C++/CLI)
-This outline shows you examples of some of the changes in the language from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. Follow the link that accompanies each item for more information.  
+This outline shows you examples of some of the changes in the language from Managed Extensions for C++ to Visual C++. Follow the link that accompanies each item for more information.  
   
 ## No Double Underscore Keywords  
  The double underscore in front of all keywords has been removed, with one exception. Thus, `__value` becomes `value`, and `__interface` becomes `interface`, and so on. To prevent name clashes between keywords and identifiers in user code, keywords are primarily treated as contextual.  
@@ -136,7 +121,7 @@ Object ^ obj2 = 1;
  See [Declaration of a CLR Reference Class Object](../dotnet/declaration-of-a-clr-reference-class-object.md) for more information.  
   
 ## Array Declaration  
- The CLR array has been redesigned. It is similar to the stl `vector` template collection, but maps to the underlying `System::Array` class – that is, it is not a template implementation.  
+ The CLR array has been redesigned. It is similar to the stl `vector` template collection, but maps to the underlying `System::Array` class - that is, it is not a template implementation.  
   
  See [Declaration of a CLR Array](../dotnet/declaration-of-a-clr-array.md) for more information.  
   
@@ -242,7 +227,7 @@ public:
    {  
       double get()             { return _x; }  
       void   set( double newx ){ _x = newx; }  
-   } // Note: no semi-colon …  
+   } // Note: no semi-colon  
 };  
 ```  
   
@@ -465,7 +450,7 @@ public enum class e2 : unsigned short {
   
 -   A forward declaration of a CLR enum is no longer supported.  
   
--   The overload resolution between the built-in arithmetic types and the Object class hierarchy has reversed between Managed Extensions and [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. As a side-effect, CLR enums are no longer implicitly converted to arithmetic types.  
+-   The overload resolution between the built-in arithmetic types and the Object class hierarchy has reversed between Managed Extensions and Visual C++. As a side-effect, CLR enums are no longer implicitly converted to arithmetic types.  
   
 -   In the new syntax, a CLR enum maintains its own scope, which is not the case in Managed Extensions. Previously, enumerators were visible within the containing scope of the enum; now, enumerators are encapsulated within the scope of the enum.  
   
@@ -530,5 +515,6 @@ Array^ myIntArray =
   
 ## See Also  
  [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)   
- [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada)   
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+
+

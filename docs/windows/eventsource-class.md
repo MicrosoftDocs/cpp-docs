@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "event/Microsoft::WRL::EventSource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EventSource class"
+f1_keywords: ["event/Microsoft::WRL::EventSource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EventSource class"]
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource Class
 Represents an event. EventSource member functions add, remove, and invoke event handlers.  

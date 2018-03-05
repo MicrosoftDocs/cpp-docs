@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.defaultbind"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "defaultbind attribute"
+f1_keywords: ["vc-attr.defaultbind"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["defaultbind attribute"]
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultbind
 Indicates the single, bindable property that best represents the object.  
@@ -70,5 +53,4 @@ Indicates the single, bindable property that best represents the object.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [displaybind](../windows/displaybind.md)   
  [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [requestedit](../windows/requestedit.md)   

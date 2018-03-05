@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [MFC], using as child windows"
-  - "windows [C++], common controls as"
-  - "child windows, common controls as"
-  - "common controls [C++], child windows"
-  - "Windows common controls [C++], child windows"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [MFC], using as child windows", "windows [MFC], common controls as", "child windows [MFC], common controls as", "common controls [MFC], child windows", "Windows common controls [MFC], child windows"]
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using a Common Control as a Child Window
 Any of the Windows common controls can be used as a child window of any other window. The following procedure describes how to create a common control dynamically and then work with it.  

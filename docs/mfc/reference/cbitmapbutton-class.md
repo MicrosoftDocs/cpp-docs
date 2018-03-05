@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CBitmapButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "buttons, bitmap"
-  - "CBitmapButton class"
-  - "bitmaps, button controls"
+f1_keywords: ["CBitmapButton", "AFXEXT/CBitmapButton", "AFXEXT/CBitmapButton::CBitmapButton", "AFXEXT/CBitmapButton::AutoLoad", "AFXEXT/CBitmapButton::LoadBitmaps", "AFXEXT/CBitmapButton::SizeToContent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CBitmapButton [MFC], CBitmapButton", "CBitmapButton [MFC], AutoLoad", "CBitmapButton [MFC], LoadBitmaps", "CBitmapButton [MFC], SizeToContent"]
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CBitmapButton Class
 Creates pushbutton controls labeled with bitmapped images instead of text.  

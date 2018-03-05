@@ -4,41 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4350"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4350"
+f1_keywords: ["C4350"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4350"]
 ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4350
 behavior change: 'member1' called instead of 'member2'  
   
- An rvalue cannot be bound to a non-const reference. In previous versions of Visual C++, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.  
+ An rvalue cannot be bound to a non-const reference. In versions of Visual C++ before Visual Studio 2003, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.  
   
  For backward compatibility, it is still possible to bind rvalues to non-const references, but standard conversions are preferred wherever possible.  
   
@@ -50,7 +32,7 @@ behavior change: 'member1' called instead of 'member2'
   
  The following sample generates C4350:  
   
-```  
+```cpp  
 // C4350.cpp  
 // compile with: /W1  
 #pragma warning (default : 4350)  
@@ -60,7 +42,7 @@ class B
 {  
 public:  
    B(B&){}  
-   // try the following instead  
+   // try the following instead:  
    // B(const B&){}  
   
    B(A){}  

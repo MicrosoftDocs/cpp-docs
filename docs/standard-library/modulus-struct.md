@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "modulus"
-  - "std::modulus"
-  - "xfunctional/std::modulus"
-  - "std.modulus"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "modulus class"
-  - "modulus struct"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::modulus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["modulus class", "modulus struct"]
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # modulus Struct
 A predefined function object that performs the modulus division operation ( `operator%`) on its arguments.  
@@ -72,7 +50,7 @@ struct modulus<void>
  The right operand of the modulus operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``%``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator%`.  
+ The result of `Left % Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator%`.  
   
 ## Remarks  
  The `modulus` functor is restricted to integral types for the basic data types, or to user-defined types that implement `operator%`.  

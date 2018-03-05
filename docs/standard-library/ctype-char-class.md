@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ctype<char>"
-  - "locale/std::ctype<char>"
-  - "std::ctype<char>"
-  - "std.ctype<char>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ctype<char> class"
+ms.topic: "reference"
+f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ctype<char> class"]
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ctype&lt;char&gt; Class
 The class is an explicit specialization of template class **ctype\<CharType**> to type `char`, describing an object that can serve as a locale facet to characterize various properties of a character of type `char`.  
@@ -153,9 +133,9 @@ protected:
   
 -   The protected static member function **classic_table**( returns the ctype mask table appropriate to the "C" locale.  
   
--   There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#ctype__do_is), [do_scan_is](../standard-library/ctype-class.md#ctype__do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#ctype__do_scan_not). The corresponding public member functions perform the equivalent operations themselves.  
+-   There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#do_scan_not). The corresponding public member functions perform the equivalent operations themselves.  
   
- The member functions [do_narrow](../standard-library/ctype-class.md#ctype__do_narrow) and [do_widen](../standard-library/ctype-class.md#ctype__do_widen) copy elements unaltered.  
+ The member functions [do_narrow](../standard-library/ctype-class.md#do_narrow) and [do_widen](../standard-library/ctype-class.md#do_widen) copy elements unaltered.  
   
 ## Requirements  
  **Header:** \<locale>  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAxWindowT"
-  - "CAxWindow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAxWindow class"
-  - "ATL, hosting ActiveX controls"
+f1_keywords: ["CAxWindow", "ATLWIN/ATL::CAxWindow", "ATLWIN/ATL::AttachControl", "ATLWIN/ATL::CreateControl", "ATLWIN/ATL::CreateControlEx", "ATLWIN/ATL::GetWndClassName", "ATLWIN/ATL::QueryControl", "ATLWIN/ATL::QueryHost", "ATLWIN/ATL::SetExternalDispatch", "ATLWIN/ATL::SetExternalUIHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAxWindow class", "ATL, hosting ActiveX controls"]
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAxWindow Class
 This class provides methods for manipulating a window hosting an ActiveX control.  

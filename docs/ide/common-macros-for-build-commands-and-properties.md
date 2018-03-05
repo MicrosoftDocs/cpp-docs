@@ -4,122 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles"
-  - "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "$(FrameworkSDKDir) macro"
-  - "ProjectName macro $(ProjectName)"
-  - "DevEnvDir macro $(DevEnvDir)"
-  - "$(DevEnvDir) macro"
-  - "TargetPath macro $(TargetPath)"
-  - "VSInstallDir macro $(VSInstallDir)"
-  - "$(InputFileName) macro"
-  - "$(SolutionFileName) macro"
-  - "macros [C++], build macros"
-  - "InputFileName macro $(InputFileName)"
-  - "$(VCInstallDir) macro"
-  - "$(IntDir) macro"
-  - "$(ConfigurationName) macro"
-  - "SolutionDir macro $(SolutionDir)"
-  - "$(TargetPath) macro"
-  - "$(Inherit) macro"
-  - "$(SolutionPath) macro"
-  - "WebDeployRoot macro $(WebDeployRoot)"
-  - "WebDeployPath macro $(WebDeployPath)"
-  - "StopEvaluating macro $(StopEvaluating)"
-  - "$(RootNamespace) macro"
-  - "$(WebDeployRoot) macro"
-  - "ProjectPath macro $(ProjectPath)"
-  - "$(ProjectPath) macro"
-  - "$(InputDir) macro"
-  - "SolutionName macro $(SolutionName)"
-  - "ProjectExt macro $(ProjectExt)"
-  - "$(TargetExt) macro"
-  - "$(ProjectFileName) macro"
-  - "TargetName macro $(TargetName)"
-  - "$(References) macro"
-  - "References macro $(References)"
-  - "TargetExt macro $(TargetExt)"
-  - "ProjectDir macro $(ProjectDir)"
-  - "$(TargetDir) macro"
-  - "SolutionExt macro $(SolutionExt)"
-  - "$(SolutionDir) macro"
-  - "ProjectFileName macro $(ProjectFileName)"
-  - "VCInstallDir macro $(VCInstallDir)"
-  - "$(InputExt) macro"
-  - "$(TargetFileName) macro"
-  - "$(SolutionExt) macro"
-  - "PlatformName macro $(PlatformName)"
-  - "IntDir macro $(IntDir)"
-  - "$(FrameworkVersion) macro"
-  - "$(ProjectDir) macro"
-  - "build macros [C++]"
-  - "InputPath macro $(InputPath)"
-  - "$(VSInstallDir) macro"
-  - "$(WebDeployPath) macro"
-  - "TargetFileName macro $(TargetFileName)"
-  - "NoInherit macro $(NoInherit)"
-  - "ConfigurationName macro $(ConfigurationName)"
-  - "$(ProjectExt) macro"
-  - "TargetDir macro $(TargetDir)"
-  - "InputName macro $(InputName)"
-  - "$(ProjectName) macro"
-  - "FrameworkSDKDir macro $(FrameworkSDKDir)"
-  - "$(ParentName) macro"
-  - "InputExt macro $(InputExt)"
-  - "$(SafeRootNamespace) macro"
-  - "InputDir macro $(InputDir)"
-  - "$(FxCopDir) macro"
-  - "$(RemoteMachine) macro"
-  - "Inherit macro $(Inherit)"
-  - "FrameworkVersion macro $(FrameworkVersion)"
-  - "$(StopEvaluating) macro"
-  - "$(OutDir) macro"
-  - "FrameworkDir macro $(FrameworkDir)"
-  - "SolutionFileName macro $(SolutionFileName)"
-  - "$(NoInherit) macro"
-  - "RemoteMachine macro $(RemoteMachine)"
-  - "properties [C++], build property macros"
-  - "$(TargetName) macro"
-  - "$(SolutionName) macro"
-  - "$(InputPath) macro"
-  - "ParentName macro $(ParentName)"
-  - "OutDir macro $(OutDir)"
-  - "SafeRootNamespace macro $(SafeRootNamespace)"
-  - "FxCopDir macro $(FxCopDir)"
-  - "$(InputName) macro"
-  - "RootNamespace macro $(RootNamespace)"
-  - "builds [C++], macros"
-  - "$(FrameworkDir) macro"
-  - "$(PlatformName) macro"
-  - "SolutionPath macro $(SolutionPath)"
+f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["$(FrameworkSDKDir) macro", "ProjectName macro $(ProjectName)", "DevEnvDir macro $(DevEnvDir)", "$(DevEnvDir) macro", "TargetPath macro $(TargetPath)", "VSInstallDir macro $(VSInstallDir)", "$(InputFileName) macro", "$(SolutionFileName) macro", "macros [C++], build macros", "InputFileName macro $(InputFileName)", "$(VCInstallDir) macro", "$(IntDir) macro", "$(ConfigurationName) macro", "SolutionDir macro $(SolutionDir)", "$(TargetPath) macro", "$(Inherit) macro", "$(SolutionPath) macro", "WebDeployRoot macro $(WebDeployRoot)", "WebDeployPath macro $(WebDeployPath)", "StopEvaluating macro $(StopEvaluating)", "$(RootNamespace) macro", "$(WebDeployRoot) macro", "ProjectPath macro $(ProjectPath)", "$(ProjectPath) macro", "$(InputDir) macro", "SolutionName macro $(SolutionName)", "ProjectExt macro $(ProjectExt)", "$(TargetExt) macro", "$(ProjectFileName) macro", "TargetName macro $(TargetName)", "$(References) macro", "References macro $(References)", "TargetExt macro $(TargetExt)", "ProjectDir macro $(ProjectDir)", "$(TargetDir) macro", "SolutionExt macro $(SolutionExt)", "$(SolutionDir) macro", "ProjectFileName macro $(ProjectFileName)", "VCInstallDir macro $(VCInstallDir)", "$(InputExt) macro", "$(TargetFileName) macro", "$(SolutionExt) macro", "PlatformName macro $(PlatformName)", "IntDir macro $(IntDir)", "$(FrameworkVersion) macro", "$(ProjectDir) macro", "build macros [C++]", "InputPath macro $(InputPath)", "$(VSInstallDir) macro", "$(WebDeployPath) macro", "TargetFileName macro $(TargetFileName)", "NoInherit macro $(NoInherit)", "ConfigurationName macro $(ConfigurationName)", "$(ProjectExt) macro", "TargetDir macro $(TargetDir)", "InputName macro $(InputName)", "$(ProjectName) macro", "FrameworkSDKDir macro $(FrameworkSDKDir)", "$(ParentName) macro", "InputExt macro $(InputExt)", "$(SafeRootNamespace) macro", "InputDir macro $(InputDir)", "$(FxCopDir) macro", "$(RemoteMachine) macro", "Inherit macro $(Inherit)", "FrameworkVersion macro $(FrameworkVersion)", "$(StopEvaluating) macro", "$(OutDir) macro", "FrameworkDir macro $(FrameworkDir)", "SolutionFileName macro $(SolutionFileName)", "$(NoInherit) macro", "RemoteMachine macro $(RemoteMachine)", "properties [C++], build property macros", "$(TargetName) macro", "$(SolutionName) macro", "$(InputPath) macro", "ParentName macro $(ParentName)", "OutDir macro $(OutDir)", "SafeRootNamespace macro $(SafeRootNamespace)", "FxCopDir macro $(FxCopDir)", "$(InputName) macro", "RootNamespace macro $(RootNamespace)", "builds [C++], macros", "$(FrameworkDir) macro", "$(PlatformName) macro", "SolutionPath macro $(SolutionPath)"]
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Common Macros for Build Commands and Properties
 Depending on your installation options, Visual Studio can make hundreds of macros available to you. These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.  
@@ -150,11 +46,11 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(ProjectName)**|The base name of the project.|  
 |**$(ProjectFileName)**|The file name of the project (defined as base name + file extension).|  
 |**$(ProjectExt)**|The file extension of the project. It includes the '.' before the file extension.|  
-|**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'.|  
-|**$(SolutionPath)**|The absolute path name of the solution (defined as drive + path + base name + file extension).|  
-|**$(SolutionName)**|The base name of the solution.|  
-|**$(SolutionFileName)**|The file name of the solution (defined as base name + file extension).|  
-|**$(SolutionExt)**|The file extension of the solution. It includes the '.' before the file extension.|  
+|**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'. Defined only when building a solution in the IDE.|  
+|**$(SolutionPath)**|The absolute path name of the solution (defined as drive + path + base name + file extension). Defined only when building a solution in the IDE.|  
+|**$(SolutionName)**|The base name of the solution. Defined only when building a solution in the IDE.|  
+|**$(SolutionFileName)**|The file name of the solution (defined as base name + file extension). Defined only when building a solution in the IDE.|  
+|**$(SolutionExt)**|The file extension of the solution. It includes the '.' before the file extension. Defined only when building a solution in the IDE.|  
 |**$(TargetDir)**|The directory of the primary output file for the build (defined as drive + path); includes the trailing backslash '\\'.|  
 |**$(TargetPath)**|The absolute path name of the primary output file for the build (defined as drive + path + base name + file extension).|  
 |**$(TargetName)**|The base name of the primary output file for the build.|  

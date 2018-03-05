@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCAutoHideBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCAutoHideToolBar class"
+f1_keywords: ["CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AddAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AllowShowOnPaneMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CalcFixedLayout", "AFXAUTOHIDEBAR/CMFCAutoHideBar::Create", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetFirstAHWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetVisibleCount", "AFXAUTOHIDEBAR/CMFCAutoHideBar::OnShowControlBarMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::RemoveAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetActiveInGroup", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetRecentVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::ShowAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::StretchPane", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCAutoHideBar [MFC], CMFCAutoHideBar", "CMFCAutoHideBar [MFC], AddAutoHideWindow", "CMFCAutoHideBar [MFC], AllowShowOnPaneMenu", "CMFCAutoHideBar [MFC], CalcFixedLayout", "CMFCAutoHideBar [MFC], Create", "CMFCAutoHideBar [MFC], GetFirstAHWindow", "CMFCAutoHideBar [MFC], GetVisibleCount", "CMFCAutoHideBar [MFC], OnShowControlBarMenu", "CMFCAutoHideBar [MFC], RemoveAutoHideWindow", "CMFCAutoHideBar [MFC], SetActiveInGroup", "CMFCAutoHideBar [MFC], SetRecentVisibleState", "CMFCAutoHideBar [MFC], ShowAutoHideWindow", "CMFCAutoHideBar [MFC], StretchPane", "CMFCAutoHideBar [MFC], UnSetAutoHideMode", "CMFCAutoHideBar [MFC], UpdateVisibleState", "CMFCAutoHideBar [MFC], m_nShowAHWndDelay"]
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCAutoHideBar Class
 The `CMFCAutoHideBar` class is a special toolbar class that implements the auto-hide feature.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -134,7 +118,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
 - `CBRS_ALIGN_BOTTOM`  
   
 ##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL AllowShowOnPaneMenu() const;  
@@ -145,7 +129,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 ### Remarks  
   
 ##  <a name="calcfixedlayout"></a>  CMFCAutoHideBar::CalcFixedLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize CalcFixedLayout(
@@ -171,7 +155,7 @@ CMFCAutoHideBar();
 ### Remarks  
   
 ##  <a name="create"></a>  CMFCAutoHideBar::Create  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL Create(
@@ -232,7 +216,7 @@ int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
  When the user places the mouse cursor over a `CMFCAutoHideButton`, there is a slight delay before the framework displays the associated window. This parameter determines the length of that delay in milliseconds.  
   
 ##  <a name="onshowcontrolbarmenu"></a>  CMFCAutoHideBar::OnShowControlBarMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -276,7 +260,7 @@ virtual void SetActiveInGroup(BOOL bActive);
  See [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).  
   
 ##  <a name="setrecentvisiblestate"></a>  CMFCAutoHideBar::SetRecentVisibleState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetRecentVisibleState(BOOL bState);

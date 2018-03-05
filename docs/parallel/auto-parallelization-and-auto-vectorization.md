@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Auto-Parallelization and Auto-Vectorization
 Auto-Parallelizer and Auto-Vectorizer are designed to provide automatic performance gains for loops in your code.  
@@ -128,7 +113,7 @@ for (int i = 0; i < 1000; ++i)
   
 ## See Also  
  [loop](../preprocessor/loop.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?linkid=263662)   
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)   
  [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
  [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   

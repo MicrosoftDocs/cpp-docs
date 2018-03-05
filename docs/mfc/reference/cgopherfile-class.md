@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGopherFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gopher protocol files"
-  - "Internet, gopher"
-  - "CGopherFile class"
+f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGopherFile [MFC], CGopherFile"]
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CGopherFile Class
 Provides the functionality to find and read files on a gopher server.  
@@ -107,7 +88,7 @@ CGopherFile(
  A handle to the current Internet session.  
   
  `pstrLocator`  
- A pointer to a string used to locate the gopher server. See [Gopher Sessions](https://msdn.microsoft.com/library/24wz8xze.aspx) for more information about gopher locators.  
+ A pointer to a string used to locate the gopher server. See [Gopher Sessions](cgopherlocator-class.md) for more information about gopher locators.  
   
  *dwLocLen*  
  A DWORD containing the number of bytes in `pstrLocator`.  

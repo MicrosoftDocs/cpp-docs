@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "file translation [C++], about file translation"
-  - "translation [C++]"
-  - "translation phases"
-  - "files [C++], translation"
-  - "programs [C++], lexical conventions of"
-  - "preprocessing translation phase"
+dev_langs: ["C++"]
+helpviewer_keywords: ["file translation [C++], about file translation", "translation [C++]", "translation phases", "files [C++], translation", "programs [C++], lexical conventions of", "preprocessing translation phase"]
 ms.assetid: 5036c7b7-ccff-4e2c-b052-a9ea6c71af87
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Overview of File Translation
 C++ programs, like C programs, consist of one or more files. Each of these files is translated in the following conceptual order (the actual order follows the "as if" rule: translation must occur as if these steps had been followed):  
@@ -65,7 +44,7 @@ C++ programs, like C programs, consist of one or more files. Each of these files
   
 -   One predefined macro, **__cplusplus**, is defined only for C++. See [Predefined Macros](../preprocessor/predefined-macros.md) in the *Preprocessor Reference* for more information.  
   
--   The C preprocessor does not recognize the C++ operators: **.\***, **–>\***, and `::`. See [Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md) and [Expressions](../cpp/expressions-cpp.md), for more information about operators.  
+-   The C preprocessor does not recognize the C++ operators: **.\***, **->\***, and `::`. See [Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md) and [Expressions](../cpp/expressions-cpp.md), for more information about operators.  
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

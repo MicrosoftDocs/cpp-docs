@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cauchy_distribution"
-  - "std::cauchy_distribution"
-  - "random/std::cauchy_distribution"
-  - "std::cauchy_distribution::reset"
-  - "random/std::cauchy_distribution::reset"
-  - "std::cauchy_distribution::a"
-  - "random/std::cauchy_distribution::a"
-  - "std::cauchy_distribution::b"
-  - "random/std::cauchy_distribution::b"
-  - "std::cauchy_distribution::param"
-  - "random/std::cauchy_distribution::param"
-  - "std::cauchy_distribution::min"
-  - "random/std::cauchy_distribution::min"
-  - "std::cauchy_distribution::max"
-  - "random/std::cauchy_distribution::max"
-  - "std::cauchy_distribution::operator()"
-  - "random/std::cauchy_distribution::operator()"
-  - "std::cauchy_distribution::param_type"
-  - "random/std::cauchy_distribution::param_type"
-  - "std::cauchy_distribution::param_type::a"
-  - "random/std::cauchy_distribution::param_type::a"
-  - "std::cauchy_distribution::param_type::b"
-  - "random/std::cauchy_distribution::param_type::b"
-  - "std::cauchy_distribution::param_type::operator=="
-  - "random/std::cauchy_distribution::param_type::operator=="
-  - "std::cauchy_distribution::param_type::operator!="
-  - "random/std::cauchy_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cauchy_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::cauchy_distribution", "random/std::cauchy_distribution::reset", "random/std::cauchy_distribution::a", "random/std::cauchy_distribution::b", "random/std::cauchy_distribution::param", "random/std::cauchy_distribution::min", "random/std::cauchy_distribution::max", "random/std::cauchy_distribution::operator()", "random/std::cauchy_distribution::param_type", "random/std::cauchy_distribution::param_type::a", "random/std::cauchy_distribution::param_type::b", "random/std::cauchy_distribution::param_type::operator==", "random/std::cauchy_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::cauchy_distribution [C++]", "std::cauchy_distribution [C++], reset", "std::cauchy_distribution [C++], a", "std::cauchy_distribution [C++], b", "std::cauchy_distribution [C++], param", "std::cauchy_distribution [C++], min", "std::cauchy_distribution [C++], max", "std::cauchy_distribution [C++], param_type", "std::cauchy_distribution [C++], param_type"]
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # cauchy_distribution Class
 Generates a Cauchy distribution.  
@@ -106,8 +63,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[cauchy_distribution::cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
-|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[cauchy_distribution::param_type](#cauchy_distribution__param_type)|  
+|[cauchy_distribution](#cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
+|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   
@@ -121,7 +78,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/LinkId=400523).  
+For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/p/?linkid=400523).  
   
 ## Example  
   
@@ -263,7 +220,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="cauchy_distribution__cauchy_distribution"></a>  cauchy_distribution::cauchy_distribution  
+##  <a name="cauchy_distribution"></a>  cauchy_distribution::cauchy_distribution  
 Constructs the distribution.  
   
 ```  
@@ -288,7 +245,7 @@ The first constructor constructs an object whose stored `a` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="cauchy_distribution__param_type"></a>  cauchy_distribution::param_type  
+##  <a name="param_type"></a>  cauchy_distribution::param_type  
 Stores all the parameters of the distribution.  
   
 ```cpp    

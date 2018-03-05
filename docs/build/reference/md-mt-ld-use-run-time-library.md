@@ -4,64 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/ld"
-  - "/mt"
-  - "VC.Project.VCCLWCECompilerTool.RuntimeLibrary"
-  - "VC.Project.VCCLCompilerTool.RuntimeLibrary"
-  - "/md"
-  - "/ml"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/MT compiler option [C++]"
-  - "-MD compiler option [C++]"
-  - "threading [C++], multithread compiler option"
-  - "MSVCRTD.lib"
-  - "MSVCRT.lib"
-  - "LIBCMT.lib"
-  - "MD compiler option [C++]"
-  - "/MD compiler option [C++]"
-  - "MT compiler option [C++]"
-  - "LD compiler option [C++]"
-  - "MDd compiler option [C++]"
-  - "-MDd compiler option [C++]"
-  - "LIBCD.lib"
-  - "-MTd compiler option [C++]"
-  - "MTd compiler option [C++]"
-  - "/MTd compiler option [C++]"
-  - "-LD compiler option [C++]"
-  - "/MDd compiler option [C++]"
-  - "multithread compiler option"
-  - "_STATIC_CPPLIB symbol"
-  - "LIBC.lib"
-  - "/LD compiler option [C++]"
-  - "DLLs [C++], compiler options"
-  - "LIBCMTD.lib"
-  - "-MT compiler option [C++]"
+f1_keywords: ["/ld", "/mt", "VC.Project.VCCLWCECompilerTool.RuntimeLibrary", "VC.Project.VCCLCompilerTool.RuntimeLibrary", "/md", "/ml"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/MT compiler option [C++]", "-MD compiler option [C++]", "threading [C++], multithread compiler option", "MSVCRTD.lib", "MSVCRT.lib", "LIBCMT.lib", "MD compiler option [C++]", "/MD compiler option [C++]", "MT compiler option [C++]", "LD compiler option [C++]", "MDd compiler option [C++]", "-MDd compiler option [C++]", "LIBCD.lib", "-MTd compiler option [C++]", "MTd compiler option [C++]", "/MTd compiler option [C++]", "-LD compiler option [C++]", "/MDd compiler option [C++]", "multithread compiler option", "_STATIC_CPPLIB symbol", "LIBC.lib", "/LD compiler option [C++]", "DLLs [C++], compiler options", "LIBCMTD.lib", "-MT compiler option [C++]"]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /MD, /MT, /LD (Use Run-Time Library)
 Indicates whether a multithreaded module is a DLL and specifies retail or debug versions of the run-time library.  

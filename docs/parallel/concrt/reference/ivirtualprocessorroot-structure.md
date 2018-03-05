@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IVirtualProcessorRoot"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IVirtualProcessorRoot structure"
+ms.topic: "reference"
+f1_keywords: ["IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IVirtualProcessorRoot structure"]
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IVirtualProcessorRoot Structure
 An abstraction for a hardware thread on which a thread proxy can execute.  
@@ -49,10 +32,10 @@ struct IVirtualProcessorRoot : public IExecutionResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IVirtualProcessorRoot::Activate Method](#activate)|Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.|  
-|[IVirtualProcessorRoot::Deactivate Method](#deactivate)|Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.|  
-|[IVirtualProcessorRoot::EnsureAllTasksVisible Method](#ensurealltasksvisible)|Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.|  
-|[IVirtualProcessorRoot::GetId Method](#getid)|Returns a unique identifier for the virtual processor root.|  
+|[IVirtualProcessorRoot::Activate](#activate)|Causes the thread proxy associated with the execution context interface `pContext` to start executing on this virtual processor root.|  
+|[IVirtualProcessorRoot::Deactivate](#deactivate)|Causes the thread proxy currently executing on this virtual processor root to stop dispatching the execution context. The thread proxy will resume executing on a call to the `Activate` method.|  
+|[IVirtualProcessorRoot::EnsureAllTasksVisible](#ensurealltasksvisible)|Causes data stored in the memory hierarchy of individual processors to become visible to all processors on the system. It ensures that a full memory fence has been executed on all processors before the method returns.|  
+|[IVirtualProcessorRoot::GetId](#getid)|Returns a unique identifier for the virtual processor root.|  
   
 ## Remarks  
  Every virtual processor root has an associated execution resource. The `IVirtualProcessorRoot` interface inherits from the [IExecutionResource](iexecutionresource-structure.md) interface. Multiple virtual processor roots may correspond to the same underlying hardware thread.  

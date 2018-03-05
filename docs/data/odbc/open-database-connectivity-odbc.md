@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC [C++]"
-  - "databases [C++], ODBC"
-  - "data access [C++], ODBC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC [C++]", "databases [C++], ODBC", "data access [C++], ODBC"]
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Open Database Connectivity (ODBC)
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.
@@ -47,8 +29,6 @@ The Microsoft Foundation Classes (MFC) library supplies classes for programming 
 -   [What MFC Support Is Supplied](odbc-and-mfc.md) for ODBC programming  
   
 -   [What ODBC Drivers Are Available](odbc-driver-list.md)  
-  
--   [Installing MFC ODBC Support](../data/installing-mfc-database-support.md)    
   
 -   [Connecting to ODBC Data Sources](data-source-managing-connections-odbc.md)  
   

@@ -4,44 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__gc types"
-  - "classes [C++], managed"
-  - "class keyword [C++], CLR"
-  - "__value keyword"
-  - "value types, declaring"
-  - "value keyword [C++]"
-  - "managed classes"
-  - "interface class keyword"
-  - "ref keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__gc types", "classes [C++], managed", "class keyword [C++], CLR", "__value keyword", "value types, declaring", "value keyword [C++]", "managed classes", "interface class keyword", "ref keyword [C++]"]
 ms.assetid: 16de9c94-91d7-492f-8ac7-f0729cc627e9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a Managed Class Type
-The way to declare a reference class type changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way to declare a reference class type changed from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, a reference class type is prefaced with the `__gc` keyword. In the new syntax, the `__gc` keyword is replaced by one of two spaced keywords: `ref class` or `ref struct`. The choice of `struct` or `class` indicates the public (for `struct`) or private (for `class`) default access level of its members declared in an initial unlabeled section of the body of the type.  
   
@@ -97,7 +73,7 @@ public __gc __sealed class String {};
 public ref class String sealed {};  
 ```  
   
- One can also specify a class as both abstract and sealed – this is a special condition that indicates a static class. This is described in the CLR documentation as follows:  
+ One can also specify a class as both abstract and sealed - this is a special condition that indicates a static class. This is described in the CLR documentation as follows:  
   
  "A type that is both `abstract` and `sealed` should have only static members, and serves as what some languages call a namespace."  
   

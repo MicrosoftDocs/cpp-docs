@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, OLE DB data architecture"
-  - "OLE DB providers"
-  - "OLE DB consumers, OLE DB data architecture"
-  - "OLE DB consumers"
-  - "OLE DB, data model"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, OLE DB data architecture", "OLE DB providers", "OLE DB consumers, OLE DB data architecture", "OLE DB consumers", "OLE DB, data model"]
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumers and Providers
 The OLE DB architecture uses the model of consumers and providers. A consumer makes requests for data. A provider responds to these requests by placing data in a tabular format and returning it to the consumer. Any call that the consumer can make must be implemented in the provider.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/CLRHEADER"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-CLRHEADER dumpbin option"
-  - "/CLRHEADER dumpbin option"
-  - "CLRHEADER dumpbin option"
+f1_keywords: ["/CLRHEADER"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-CLRHEADER dumpbin option", "/CLRHEADER dumpbin option", "CLRHEADER dumpbin option"]
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /CLRHEADER
 ```  
@@ -56,13 +37,9 @@ translation.priority.ht:
   
 -   0  -- /clr (image may contain native code).  
   
--   1 -- /clr:safe (image is MSIL only, able to run on any CLR platform, and possibly verifiable).  
-  
--   3 -- /clr:pure (image is MSIL only, but only able to run on x86 platforms).  
-  
  You can also programmatically check if an image was built for the common language runtime.  For more information, see [How to: Determine if an Image is Native or CLR](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).  
   
- The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and will be removed in a future version of the compiler. Code that must be "pure" or "safe" should be ported to C#. 
   
 ## See Also  
  [DUMPBIN Options](../../build/reference/dumpbin-options.md)

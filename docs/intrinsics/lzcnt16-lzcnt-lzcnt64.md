@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__lzcnt64"
-  - "__lzcnt16"
-  - "__lzcnt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__lzcnt intrinsic"
-  - "lzcnt instruction"
-  - "lzcnt16 intrinsic"
-  - "lzcnt intrinsic"
-  - "__lzcnt16 intrinsic"
-  - "lzcnt64 intrinsic"
-  - "__lzcnt64 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__lzcnt64", "__lzcnt16", "__lzcnt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__lzcnt intrinsic", "lzcnt instruction", "lzcnt16 intrinsic", "lzcnt intrinsic", "__lzcnt16 intrinsic", "lzcnt64 intrinsic", "__lzcnt64 intrinsic"]
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __lzcnt16, __lzcnt, __lzcnt64
 **Microsoft Specific**  
@@ -124,7 +98,7 @@ __lzcnt(0xffff) = 16
 __lzcnt(0xffffffff) = 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Portions of this content are Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

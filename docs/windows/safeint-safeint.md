@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "SafeInt::SafeInt"
-  - "SafeInt"
-  - "SafeInt.SafeInt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SafeInt class, constructor"
+f1_keywords: ["SafeInt::SafeInt", "SafeInt", "SafeInt.SafeInt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SafeInt class, constructor"]
 ms.assetid: 39e6f632-a396-40e6-9ece-cc3d4c5a78ef
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt::SafeInt
 Constructs a `SafeInt` object.  

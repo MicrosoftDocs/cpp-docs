@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRuntimeClass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRuntimeClass structure"
-  - "dynamic class information"
-  - "runtime, class information"
-  - "run-time class, CRuntimeClass structure"
+f1_keywords: ["CRuntimeClass"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRuntimeClass structure [MFC]", "dynamic class information [MFC]", "runtime [MFC], class information", "run-time class [MFC], CRuntimeClass structure"]
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRuntimeClass Structure
 Each class derived from `CObject` is associated with a `CRuntimeClass` structure that you can use to obtain information about an object or its base class at run time.  

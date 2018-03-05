@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], worker threads"
-  - "background tasks [C++]"
-  - "threading [C++], worker threads"
-  - "worker threads [C++]"
-  - "threading [C++], creating threads"
-  - "threading [MFC], worker threads"
-  - "threading [C++], user input not required"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating Worker Threads
 A worker thread is commonly used to handle background tasks that the user should not have to wait for to continue using your application. Tasks such as recalculation and background printing are good examples of worker threads. This topic details the steps necessary to create a worker thread. Topics include:  
@@ -50,7 +28,7 @@ A worker thread is commonly used to handle background tasks that the user should
  Creating a worker thread is a relatively simple task. Only two steps are required to get your thread running: implementing the controlling function and starting the thread. It is not necessary to derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You can derive a class if you need a special version of `CWinThread`, but it is not required for most simple worker threads. You can use `CWinThread` without modification.  
   
 ##  <a name="_core_starting_the_thread"></a> Starting the Thread  
- There are two overloaded versions of `AfxBeginThread`: one that can only create worker threads, and one that can create both user-interface threads and worker threads. To begin execution of your worker thread using the first overload, call [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), providing the following information:  
+ There are two overloaded versions of `AfxBeginThread`: one that can only create worker threads, and one that can create both user-interface threads and worker threads. To begin execution of your worker thread using the first overload, call [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), providing the following information:  
   
 -   The address of the controlling function.  
   

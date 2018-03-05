@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.importlib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "importlib attribute"
+f1_keywords: ["vc-attr.importlib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["importlib attribute"]
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # importlib
 Makes types that have already been compiled into another type library available to the type library being created.  

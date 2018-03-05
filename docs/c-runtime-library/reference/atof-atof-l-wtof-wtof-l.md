@@ -4,76 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wtof_l"
-  - "atof"
-  - "_atof_l"
-  - "_wtof"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wtof_l", "atof", "_atof_l", "_wtof"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tstof"
-  - "_ttof"
-  - "atof"
-  - "stdlib/atof"
-  - "math/atof"
-  - "_atof_l"
-  - "stdlib/_atof_l"
-  - "math/_atof_l"
-  - "_wtof"
-  - "corecrt_wstdlib/_wtof"
-  - "_wtof_l"
-  - "corecrt_wstdlib/_wtof_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tstof function"
-  - "atof_l function"
-  - "_atof_l function"
-  - "atof function"
-  - "_tstof function"
-  - "_ttof function"
-  - "wtof function"
-  - "_wtof_l function"
-  - "ttof function"
-  - "wtof_l function"
-  - "_wtof function"
-  - "string conversion, to floating point values"
+f1_keywords: ["_tstof", "_ttof", "atof", "stdlib/atof", "math/atof", "_atof_l", "stdlib/_atof_l", "math/_atof_l", "_wtof", "corecrt_wstdlib/_wtof", "_wtof_l", "corecrt_wstdlib/_wtof_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tstof function", "atof_l function", "_atof_l function", "atof function", "_tstof function", "_ttof function", "wtof function", "_wtof_l function", "ttof function", "wtof_l function", "_wtof function", "string conversion, to floating point values"]
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # atof, _atof_l, _wtof, _wtof_l
 Convert a string to double.  
@@ -118,7 +63,7 @@ double _wtof_l(
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`e` &#124; `E` }[`sign`]`digits`]  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more decimal digits. If no digits appear before the decimal point, at least one must appear after the decimal point. The decimal digits may be followed by an exponent, which consists of an introductory letter (`e`, or `E`) and an optionally signed decimal integer.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more decimal digits. If no digits appear before the decimal point, at least one must appear after the decimal point. The decimal digits may be followed by an exponent, which consists of an introductory letter (`e`, or `E`) and an optionally signed decimal integer.  
  
  The UCRT versions of these functions do not support conversion of Fortran-style (`d` or `D`) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.  
   

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aggregate types [C++]"
-  - "union keyword [C], declarations"
-  - "types [C], initializing"
-  - "union keyword [C]"
-  - "aggregates [C++], initializing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["aggregate types [C++]", "union keyword [C], declarations", "types [C], initializing", "union keyword [C]", "aggregates [C++], initializing"]
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Initializing Aggregate Types
 An "aggregate" type is a structure, union, or array type. If an aggregate type contains members of aggregate types, the initialization rules apply recursively.  

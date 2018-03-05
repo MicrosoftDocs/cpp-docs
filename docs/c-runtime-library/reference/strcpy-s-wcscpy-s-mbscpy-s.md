@@ -4,68 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcscpy_s"
-  - "_mbscpy_s"
-  - "strcpy_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcscpy_s", "_mbscpy_s", "strcpy_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strcpy_s"
-  - "_mbscpy_s"
-  - "_tcscpy_s"
-  - "wcscpy_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strcpy_s function"
-  - "_tcscpy_s function"
-  - "_mbscpy_s function"
-  - "copying strings"
-  - "strings [C++], copying"
-  - "tcscpy_s function"
-  - "wcscpy_s function"
+f1_keywords: ["strcpy_s", "_mbscpy_s", "_tcscpy_s", "wcscpy_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s function", "copying strings", "strings [C++], copying", "tcscpy_s function", "wcscpy_s function"]
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
 caps.latest.revision: 41
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strcpy_s, wcscpy_s, _mbscpy_s
 Copies a string. These versions of [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  `_mbscpy_s` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscpy_s` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -182,9 +141,6 @@ int main( void )
 ```Output  
 String = Hello world from strcpy_s and strcat_s!  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Copy](https://msdn.microsoft.com/en-us/library/system.string.copy.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

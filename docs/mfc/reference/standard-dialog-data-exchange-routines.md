@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "standard dialog, data exchange routines"
+dev_langs: ["C++"]
+helpviewer_keywords: ["standard dialog, data exchange routines"]
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Exchange Routines
 This topic lists the standard dialog data exchange (DDX) routines used for common MFC dialog controls.  
@@ -51,7 +35,8 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 |[DDX_IPAddress](#ddx_ipaddress)|Initializes or retrieves the current value of an IP address control.|  
 |[DDX_LBIndex](#ddx_lbindex)|Initializes or retrieves the index of the current selection of a list box control.|  
 |[DDX_LBString](#ddx_lbstring)|Initializes or retrieves the current selection within a list box control.|  
-|[DDX_LBStringExact](#ddx_lbstringexact)|Initializes or retrieves the current selection within a list box control.|  
+|[DDX_LBStringExact](#ddx_lbstringexact)|Initializes or retrieves the current selection within a list box control.|
+|[DDX_ManagedControl](#ddx_managedcontrol)|Creates a .NET control matching the control's resource ID.|  
 |[DDX_MonthCalCtrl](#ddx_monthcalctrl)|Initializes or retrieves the current value of a month calendar control.|  
 |[DDX_Radio](#ddx_radio)|Initializes or retrieves the 0-based index of the radio control that is currently checked within a radio control group.|  
 |[DDX_Scroll](#ddx_scroll)|Initializes or retrieves the current position of a scroll control's thumb.|  
@@ -169,7 +154,7 @@ void AFXAPI DDX_Check(
  A reference to a member variable of the dialog box, form view, or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -243,6 +228,44 @@ void AFXAPI DDX_DateTimeCtrl(
   
 ### Requirements  
   **Header** afxdd_.h  
+
+   
+
+ 
+## <a name="ddx_managedcontrol"></a>  DDX_ManagedControl
+Creates a .NET control matching the control's resource ID.  
+   
+### Syntax  
+  ```  
+template <typename T>  
+void DDX_ManagedControl(  
+     CDataExchange* pDX,   
+     int nIDC,   
+     CWinFormsControl<T>& control );  
+```
+### Parameters  
+ `pDX`  
+ A pointer to a [CDataExchange Class](cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ `nIDC`  
+ The resource ID of the control associated with the control property.  
+  
+ `control`  
+ A reference to a [CWinFormsControl Class](cwinformscontrol-class.md) object.  
+   
+### Remarks  
+ `DDX_ManagedControl` calls [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. Use `DDX_ManagedControl` to create controls from resource IDs in [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls.  
+  
+ For more information, see [How to: Do DDX/DDV Data Binding with Windows Forms](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
+   
+### Requirements  
+ **Header:** afxwinforms.h  
+   
+### See Also  
+ [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)   
+ [CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
+ 
+
   
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress  
  The `DDX_IPAddress` function manages the transfer of data between an IP Address control and a data member of the control view object.  
@@ -271,7 +294,7 @@ void AFXAPI DDX_IPAddress(
 |1|16 through 23|  
 |0|24 through 31|  
   
- Use the Win32 [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) to read the value, or use [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) to fill the value. These messages are described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Use the Win32 [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) to read the value, or use [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) to fill the value. These messages are described in the Windows SDK.  
   
 ### Remarks  
  When `DDX_IPAddress` is called, *value* is either read from the IP Address control, or *value* is written to the control, depending on the direction of the exchange.  
@@ -463,7 +486,7 @@ void AFXAPI DDX_Scroll(
  A reference to a member variable of the dialog box, form view or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   

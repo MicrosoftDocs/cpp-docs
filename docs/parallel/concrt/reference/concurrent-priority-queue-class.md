@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concurrent_priority_queue/concurrency::concurrent_priority_queue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_priority_queue class"
+ms.topic: "reference"
+f1_keywords: ["concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::clear", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::empty", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::get_allocator", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::push", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_priority_queue class"]
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_priority_queue Class
 The `concurrent_priority_queue` class is a container that allows multiple threads to concurrently push and pop items. Items are popped in priority order where priority is determined by a functor supplied as a template argument.  
@@ -52,10 +35,10 @@ template <typename T,
  The data type of the elements to be stored in the priority queue.  
   
  `_Compare`  
- The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<``T``>` is the default value.  
+ The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<T>` is the default value.  
   
  `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<``T``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   
@@ -73,25 +56,25 @@ template <typename T,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_priority_queue Constructor](#ctor)|Overloaded. Constructs a concurrent priority queue.|  
+|[concurrent_priority_queue](#ctor)|Overloaded. Constructs a concurrent priority queue.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[clear Method](#clear)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
-|[empty Method](#empty)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
-|[get_allocator Method](#get_allocator)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
-|[push Method](#push)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
-|[size Method](#size)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
-|[swap Method](#swap)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
-|[try_pop Method](#try_pop)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
+|[clear](#clear)|Erases all elements in the concurrent priority. This method is not concurrency-safe.|  
+|[empty](#empty)|Tests if the concurrent priority queue is empty at the time this method is called. This method is concurrency-safe.|  
+|[get_allocator](#get_allocator)|Returns a copy of the allocator used to construct the concurrent priority queue. This method is concurrency-safe.|  
+|[push](#push)|Overloaded. Adds an element to the concurrent priority queue. This method is concurrency-safe.|  
+|[size](#size)|Returns the number of elements in the concurrent priority queue. This method is concurrency-safe.|  
+|[swap](#swap)|Swaps the contents of two concurrent priority queues. This method is not concurrency-safe.|  
+|[try_pop](#try_pop)|Removes and returns the highest priority element from the queue if the queue is non-empty. This method is concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
+|[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_priority_queue` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_priority_queue` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  

@@ -4,39 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCBaseTabCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCBaseTabCtrl class"
+f1_keywords: ["CMFCBaseTabCtrl", "AFXBASETABCTRL/CMFCBaseTabCtrl", "AFXBASETABCTRL/CMFCBaseTabCtrl::AddIcon", "AFXBASETABCTRL/CMFCBaseTabCtrl::AddTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::ApplyRestoredTabInfo", "AFXBASETABCTRL/CMFCBaseTabCtrl::AutoDestroyWindow", "AFXBASETABCTRL/CMFCBaseTabCtrl::CalcRectEdit", "AFXBASETABCTRL/CMFCBaseTabCtrl::CleanUp", "AFXBASETABCTRL/CMFCBaseTabCtrl::ClearImageList", "AFXBASETABCTRL/CMFCBaseTabCtrl::DetachTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableActivateLastActive", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableAutoColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableCustomToolTips", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableInPlaceEdit", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableTabDetach", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnableTabSwap", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnsureVisible", "AFXBASETABCTRL/CMFCBaseTabCtrl::EnterDragMode", "AFXBASETABCTRL/CMFCBaseTabCtrl::FindTargetWnd", "AFXBASETABCTRL/CMFCBaseTabCtrl::FireChangeActiveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::FireChangingActiveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetActiveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetActiveTabColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetActiveTabTextColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetActiveWnd", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetAutoColors", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetFirstVisibleTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetFirstVisibleTabNum", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetHighlightedTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetImageList", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetImageSize", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetLastVisibleTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetLocation", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetMaxWindowSize", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabArea", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabBkColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabBorderSize", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabByID", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabCloseButton", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabFromHwnd", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabFromPoint", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabFullWidth", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabHicon", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabID", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabIcon", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabLabel", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabRect", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabsHeight", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabsRect", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabTextColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabWnd", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabWndNoWrapper", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetTabsNum", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetToolTipCtrl", "AFXBASETABCTRL/CMFCBaseTabCtrl::GetVisibleTabsNum", "AFXBASETABCTRL/CMFCBaseTabCtrl::HasImage", "AFXBASETABCTRL/CMFCBaseTabCtrl::HideSingleTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::InsertTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::InvalidateTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsActiveTabCloseButton", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsAutoColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsAutoDestroyWindow", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsColored", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsDialogControl", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsDrawNoPrefix", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsFlatFrame", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsFlatTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsHideSingleTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsIconAdded", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsInPlaceEdit", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsLeftRightRounded", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsMDITab", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsOneNoteStyle", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsPtInTabArea", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabCloseButtonHighlighted", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabCloseButtonPressed", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabDetachable", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabIconOnly", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabSwapEnabled", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsTabVisible", "AFXBASETABCTRL/CMFCBaseTabCtrl::IsVS2005Style", "AFXBASETABCTRL/CMFCBaseTabCtrl::MoveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnChangeTabs", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnDragEnter", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnDragLeave", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnDragOver", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnDrop", "AFXBASETABCTRL/CMFCBaseTabCtrl::OnRenameTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::PreTranslateMessage", "AFXBASETABCTRL/CMFCBaseTabCtrl::RecalcLayout", "AFXBASETABCTRL/CMFCBaseTabCtrl::RemoveAllTabs", "AFXBASETABCTRL/CMFCBaseTabCtrl::RemoveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::RenameTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::ResetImageList", "AFXBASETABCTRL/CMFCBaseTabCtrl::Serialize", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetActiveTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetActiveTabColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetActiveTabTextColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetAutoColors", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetDockingBarWrapperRTC", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetDrawNoPrefix", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetImageList", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetLocation", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabBkColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabBorderSize", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabHicon", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabIcon", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabIconOnly", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabLabel", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabsHeight", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabTextColor", "AFXBASETABCTRL/CMFCBaseTabCtrl::SetTabsOrder", "AFXBASETABCTRL/CMFCBaseTabCtrl::ShowTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::StartRenameTab", "AFXBASETABCTRL/CMFCBaseTabCtrl::SwapTabs", "AFXBASETABCTRL/CMFCBaseTabCtrl::CreateWrapper", "AFXBASETABCTRL/CMFCBaseTabCtrl::m_bActivateTabOnRightClick", "AFXBASETABCTRL/CMFCBaseTabCtrl::m_bAutoDestroyWindow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCBaseTabCtrl [MFC], AddIcon", "CMFCBaseTabCtrl [MFC], AddTab", "CMFCBaseTabCtrl [MFC], ApplyRestoredTabInfo", "CMFCBaseTabCtrl [MFC], AutoDestroyWindow", "CMFCBaseTabCtrl [MFC], CalcRectEdit", "CMFCBaseTabCtrl [MFC], CleanUp", "CMFCBaseTabCtrl [MFC], ClearImageList", "CMFCBaseTabCtrl [MFC], DetachTab", "CMFCBaseTabCtrl [MFC], EnableActivateLastActive", "CMFCBaseTabCtrl [MFC], EnableAutoColor", "CMFCBaseTabCtrl [MFC], EnableCustomToolTips", "CMFCBaseTabCtrl [MFC], EnableInPlaceEdit", "CMFCBaseTabCtrl [MFC], EnableTabDetach", "CMFCBaseTabCtrl [MFC], EnableTabSwap", "CMFCBaseTabCtrl [MFC], EnsureVisible", "CMFCBaseTabCtrl [MFC], EnterDragMode", "CMFCBaseTabCtrl [MFC], FindTargetWnd", "CMFCBaseTabCtrl [MFC], FireChangeActiveTab", "CMFCBaseTabCtrl [MFC], FireChangingActiveTab", "CMFCBaseTabCtrl [MFC], GetActiveTab", "CMFCBaseTabCtrl [MFC], GetActiveTabColor", "CMFCBaseTabCtrl [MFC], GetActiveTabTextColor", "CMFCBaseTabCtrl [MFC], GetActiveWnd", "CMFCBaseTabCtrl [MFC], GetAutoColors", "CMFCBaseTabCtrl [MFC], GetFirstVisibleTab", "CMFCBaseTabCtrl [MFC], GetFirstVisibleTabNum", "CMFCBaseTabCtrl [MFC], GetHighlightedTab", "CMFCBaseTabCtrl [MFC], GetImageList", "CMFCBaseTabCtrl [MFC], GetImageSize", "CMFCBaseTabCtrl [MFC], GetLastVisibleTab", "CMFCBaseTabCtrl [MFC], GetLocation", "CMFCBaseTabCtrl [MFC], GetMaxWindowSize", "CMFCBaseTabCtrl [MFC], GetTabArea", "CMFCBaseTabCtrl [MFC], GetTabBkColor", "CMFCBaseTabCtrl [MFC], GetTabBorderSize", "CMFCBaseTabCtrl [MFC], GetTabByID", "CMFCBaseTabCtrl [MFC], GetTabCloseButton", "CMFCBaseTabCtrl [MFC], GetTabFromHwnd", "CMFCBaseTabCtrl [MFC], GetTabFromPoint", "CMFCBaseTabCtrl [MFC], GetTabFullWidth", "CMFCBaseTabCtrl [MFC], GetTabHicon", "CMFCBaseTabCtrl [MFC], GetTabID", "CMFCBaseTabCtrl [MFC], GetTabIcon", "CMFCBaseTabCtrl [MFC], GetTabLabel", "CMFCBaseTabCtrl [MFC], GetTabRect", "CMFCBaseTabCtrl [MFC], GetTabsHeight", "CMFCBaseTabCtrl [MFC], GetTabsRect", "CMFCBaseTabCtrl [MFC], GetTabTextColor", "CMFCBaseTabCtrl [MFC], GetTabWnd", "CMFCBaseTabCtrl [MFC], GetTabWndNoWrapper", "CMFCBaseTabCtrl [MFC], GetTabsNum", "CMFCBaseTabCtrl [MFC], GetToolTipCtrl", "CMFCBaseTabCtrl [MFC], GetVisibleTabsNum", "CMFCBaseTabCtrl [MFC], HasImage", "CMFCBaseTabCtrl [MFC], HideSingleTab", "CMFCBaseTabCtrl [MFC], InsertTab", "CMFCBaseTabCtrl [MFC], InvalidateTab", "CMFCBaseTabCtrl [MFC], IsActiveTabCloseButton", "CMFCBaseTabCtrl [MFC], IsAutoColor", "CMFCBaseTabCtrl [MFC], IsAutoDestroyWindow", "CMFCBaseTabCtrl [MFC], IsColored", "CMFCBaseTabCtrl [MFC], IsDialogControl", "CMFCBaseTabCtrl [MFC], IsDrawNoPrefix", "CMFCBaseTabCtrl [MFC], IsFlatFrame", "CMFCBaseTabCtrl [MFC], IsFlatTab", "CMFCBaseTabCtrl [MFC], IsHideSingleTab", "CMFCBaseTabCtrl [MFC], IsIconAdded", "CMFCBaseTabCtrl [MFC], IsInPlaceEdit", "CMFCBaseTabCtrl [MFC], IsLeftRightRounded", "CMFCBaseTabCtrl [MFC], IsMDITab", "CMFCBaseTabCtrl [MFC], IsOneNoteStyle", "CMFCBaseTabCtrl [MFC], IsPtInTabArea", "CMFCBaseTabCtrl [MFC], IsTabCloseButtonHighlighted", "CMFCBaseTabCtrl [MFC], IsTabCloseButtonPressed", "CMFCBaseTabCtrl [MFC], IsTabDetachable", "CMFCBaseTabCtrl [MFC], IsTabIconOnly", "CMFCBaseTabCtrl [MFC], IsTabSwapEnabled", "CMFCBaseTabCtrl [MFC], IsTabVisible", "CMFCBaseTabCtrl [MFC], IsVS2005Style", "CMFCBaseTabCtrl [MFC], MoveTab", "CMFCBaseTabCtrl [MFC], OnChangeTabs", "CMFCBaseTabCtrl [MFC], OnDragEnter", "CMFCBaseTabCtrl [MFC], OnDragLeave", "CMFCBaseTabCtrl [MFC], OnDragOver", "CMFCBaseTabCtrl [MFC], OnDrop", "CMFCBaseTabCtrl [MFC], OnRenameTab", "CMFCBaseTabCtrl [MFC], PreTranslateMessage", "CMFCBaseTabCtrl [MFC], RecalcLayout", "CMFCBaseTabCtrl [MFC], RemoveAllTabs", "CMFCBaseTabCtrl [MFC], RemoveTab", "CMFCBaseTabCtrl [MFC], RenameTab", "CMFCBaseTabCtrl [MFC], ResetImageList", "CMFCBaseTabCtrl [MFC], Serialize", "CMFCBaseTabCtrl [MFC], SetActiveTab", "CMFCBaseTabCtrl [MFC], SetActiveTabColor", "CMFCBaseTabCtrl [MFC], SetActiveTabTextColor", "CMFCBaseTabCtrl [MFC], SetAutoColors", "CMFCBaseTabCtrl [MFC], SetDockingBarWrapperRTC", "CMFCBaseTabCtrl [MFC], SetDrawNoPrefix", "CMFCBaseTabCtrl [MFC], SetImageList", "CMFCBaseTabCtrl [MFC], SetLocation", "CMFCBaseTabCtrl [MFC], SetTabBkColor", "CMFCBaseTabCtrl [MFC], SetTabBorderSize", "CMFCBaseTabCtrl [MFC], SetTabHicon", "CMFCBaseTabCtrl [MFC], SetTabIcon", "CMFCBaseTabCtrl [MFC], SetTabIconOnly", "CMFCBaseTabCtrl [MFC], SetTabLabel", "CMFCBaseTabCtrl [MFC], SetTabsHeight", "CMFCBaseTabCtrl [MFC], SetTabTextColor", "CMFCBaseTabCtrl [MFC], SetTabsOrder", "CMFCBaseTabCtrl [MFC], ShowTab", "CMFCBaseTabCtrl [MFC], StartRenameTab", "CMFCBaseTabCtrl [MFC], SwapTabs", "CMFCBaseTabCtrl [MFC], CreateWrapper", "CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick", "CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow"]
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
 caps.latest.revision: 41
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CMFCBaseTabCtrl Class
 Implements the base functionality for tabbed windows.  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -206,7 +189,7 @@ class CMFCBaseTabCtrl : public CWnd
  **Header:** afxbasetabctrl.h  
   
 ##  <a name="addicon"></a>  CMFCBaseTabCtrl::AddIcon  
- Adds an icon to the list of icons in the protected `CMap``m_mapAddedIcons` member.  
+ Adds an icon to the list of icons in the protected `CMap m_mapAddedIcons` member.  
   
 ```  
 void AddIcon(
@@ -219,7 +202,7 @@ void AddIcon(
  A handle to the icon to be added.  
   
  [in] `iIcon`  
- Zero-based index of the icon in the protected `CImageList``m_Images` member.  
+ Zero-based index of the icon in the protected `CImageList m_Images` member.  
   
 ### Remarks  
   
@@ -261,7 +244,7 @@ virtual void AddTab(
  If `pTabWnd` points to an object that is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if `bDetachable` is `TRUE`, the framework automatically creates a wrapper for the `pTabWnd` object. The wrapper makes the `pTabWnd` object detachable. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). If the functionality offered by the default wrapper is unacceptable, use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to specify a different wrapper.  
   
 ##  <a name="applyrestoredtabinfo"></a>  CMFCBaseTabCtrl::ApplyRestoredTabInfo  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
@@ -273,7 +256,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ### Remarks  
   
 ##  <a name="autodestroywindow"></a>  CMFCBaseTabCtrl::AutoDestroyWindow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
@@ -285,7 +268,7 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 ### Remarks  
   
 ##  <a name="calcrectedit"></a>  CMFCBaseTabCtrl::CalcRectEdit  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CalcRectEdit(CRect& rectEdit);
@@ -297,7 +280,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ### Remarks  
   
 ##  <a name="cleanup"></a>  CMFCBaseTabCtrl::CleanUp  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CleanUp();
@@ -306,7 +289,7 @@ virtual void CleanUp();
 ### Remarks  
   
 ##  <a name="clearimagelist"></a>  CMFCBaseTabCtrl::ClearImageList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ClearImageList();
@@ -371,7 +354,7 @@ virtual BOOL DetachTab(
  If the tab specified by `nTabNum` is non-detachable, this function fails and returns `FALSE`.  
   
 ##  <a name="enableactivatelastactive"></a>  CMFCBaseTabCtrl::EnableActivateLastActive  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableActivateLastActive(BOOL bLastActive = TRUE);
@@ -486,7 +469,7 @@ virtual BOOL EnsureVisible(int iTab);
  By default, this method is not supported by the `CMFCBaseTabCtrl Class`. You should implement this function in a custom class derived from `CMFCBaseTabCtrl` if that custom tab control supports tab scrolling. This method is supported by the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md).  
   
 ##  <a name="enterdragmode"></a>  CMFCBaseTabCtrl::EnterDragMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnterDragMode();
@@ -512,7 +495,7 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
  In the `CMFCBaseTabCtrl` class, this method is a pure virtual function: you must implement it if you derive a class from `CMFCBaseTabCtrl`.  
   
 ##  <a name="firechangeactivetab"></a>  CMFCBaseTabCtrl::FireChangeActiveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void FireChangeActiveTab(int nNewTab);
@@ -524,7 +507,7 @@ virtual void FireChangeActiveTab(int nNewTab);
 ### Remarks  
   
 ##  <a name="firechangingactivetab"></a>  CMFCBaseTabCtrl::FireChangingActiveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL FireChangingActiveTab(int nNewTab);
@@ -624,7 +607,7 @@ virtual CWnd* GetFirstVisibleTab(
  If `iStartFrom` is larger than or equal to the number of tabs in the tab control, `GetFirstVisibleTab` automatically fails.  
   
 ##  <a name="getfirstvisibletabnum"></a>  CMFCBaseTabCtrl::GetFirstVisibleTabNum  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetFirstVisibleTabNum() const;  
@@ -645,7 +628,7 @@ int GetHighlightedTab() const;
  The zero-based index of the highlighted tab.  
   
 ##  <a name="getimagelist"></a>  CMFCBaseTabCtrl::GetImageList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual const CImageList* GetImageList() const;  
@@ -656,7 +639,7 @@ virtual const CImageList* GetImageList() const;
 ### Remarks  
   
 ##  <a name="getimagesize"></a>  CMFCBaseTabCtrl::GetImageSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetImageSize() const;  
@@ -667,7 +650,7 @@ virtual CSize GetImageSize() const;
 ### Remarks  
   
 ##  <a name="getlastvisibletab"></a>  CMFCBaseTabCtrl::GetLastVisibleTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CWnd* GetLastVisibleTab(int& iTabNum);
@@ -694,7 +677,7 @@ Location GetLocation() const;
  Possible tab area location values are `LOCATION_BOTTOM` and `LOCATION_TOP`.  
   
 ##  <a name="getmaxwindowsize"></a>  CMFCBaseTabCtrl::GetMaxWindowSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetMaxWindowSize() const;  
@@ -770,7 +753,7 @@ virtual int GetTabByID(int id) const;
  The tab IDs are assigned automatically when tabs are added to a tab control.  
   
 ##  <a name="gettabclosebutton"></a>  CMFCBaseTabCtrl::GetTabCloseButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetTabCloseButton() const;  
@@ -809,7 +792,7 @@ virtual int GetTabFromPoint(CPoint& pt) const;
  The index of the tab that contains `pt`; -1 if no tab contains `pt`.  
   
 ##  <a name="gettabfullwidth"></a>  CMFCBaseTabCtrl::GetTabFullWidth  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetTabFullWidth(int iTab) const;  
@@ -911,7 +894,7 @@ virtual BOOL GetTabRect(
  `TRUE` if successful; `FALSE` if the tab index is invalid.  
   
 ##  <a name="gettabsheight"></a>  CMFCBaseTabCtrl::GetTabsHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetTabsHeight() const;  
@@ -932,7 +915,7 @@ virtual int GetTabsNum() const;
  The number of tabs in the tab control.  
   
 ##  <a name="gettabsrect"></a>  CMFCBaseTabCtrl::GetTabsRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void GetTabsRect(CRect& rect) const;  
@@ -1016,7 +999,7 @@ virtual int GetVisibleTabsNum() const;
  The number of visible tabs.  
   
 ##  <a name="hasimage"></a>  CMFCBaseTabCtrl::HasImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasImage(int iTab) const;  
@@ -1086,7 +1069,7 @@ virtual void InsertTab(
  If the object indicated by `pNewWnd` is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if the `bDetachable` parameter is `TRUE`, the framework creates a special wrapper for the new tab. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). Use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to create a different wrapper class. Any custom wrapper class needs to be derived from `CDockablePaneAdapter`.  
   
 ##  <a name="invalidatetab"></a>  CMFCBaseTabCtrl::InvalidateTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void InvalidateTab(int iTab);
@@ -1098,7 +1081,7 @@ void InvalidateTab(int iTab);
 ### Remarks  
   
 ##  <a name="isactivetabclosebutton"></a>  CMFCBaseTabCtrl::IsActiveTabCloseButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsActiveTabCloseButton() const;  
@@ -1122,7 +1105,7 @@ BOOL IsAutoColor() const;
  You can enable or disable the autocolor mode by using the [CMFCBaseTabCtrl::EnableAutoColor](#enableautocolor) method.  
   
 ##  <a name="isautodestroywindow"></a>  CMFCBaseTabCtrl::IsAutoDestroyWindow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsAutoDestroyWindow() const;  
@@ -1133,7 +1116,7 @@ BOOL IsAutoDestroyWindow() const;
 ### Remarks  
   
 ##  <a name="iscolored"></a>  CMFCBaseTabCtrl::IsColored  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsColored() const;  
@@ -1144,7 +1127,7 @@ virtual BOOL IsColored() const;
 ### Remarks  
   
 ##  <a name="isdialogcontrol"></a>  CMFCBaseTabCtrl::IsDialogControl  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsDialogControl() const;  
@@ -1155,7 +1138,7 @@ BOOL IsDialogControl() const;
 ### Remarks  
   
 ##  <a name="isdrawnoprefix"></a>  CMFCBaseTabCtrl::IsDrawNoPrefix  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsDrawNoPrefix() const;  
@@ -1181,7 +1164,7 @@ virtual BOOL IsFlatFrame() const;
  Tab controls that use the Outlook style cannot be rendered with flat frames. This includes the [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md) and any classes derived from that class.  
   
 ##  <a name="isflattab"></a>  CMFCBaseTabCtrl::IsFlatTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsFlatTab() const;  
@@ -1205,7 +1188,7 @@ virtual BOOL IsHideSingleTab() const;
  Use the method [CMFCBaseTabCtrl::HideSingleTab](#hidesingletab) to enable hiding the tab label when there is only one tab.  
   
 ##  <a name="isiconadded"></a>  CMFCBaseTabCtrl::IsIconAdded  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsIconAdded(
@@ -1235,7 +1218,7 @@ virtual BOOL IsInPlaceEdit() const;
  You can enable or disable in-place editing by calling the method [CMFCBaseTabCtrl::EnableInPlaceEdit](#enableinplaceedit).  
   
 ##  <a name="isleftrightrounded"></a>  CMFCBaseTabCtrl::IsLeftRightRounded  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsLeftRightRounded() const;  
@@ -1246,7 +1229,7 @@ virtual BOOL IsLeftRightRounded() const;
 ### Remarks  
   
 ##  <a name="ismditab"></a>  CMFCBaseTabCtrl::IsMDITab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMDITab() const;  
@@ -1289,7 +1272,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
  In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="istabclosebuttonhighlighted"></a>  CMFCBaseTabCtrl::IsTabCloseButtonHighlighted  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTabCloseButtonHighlighted() const;  
@@ -1300,7 +1283,7 @@ BOOL IsTabCloseButtonHighlighted() const;
 ### Remarks  
   
 ##  <a name="istabclosebuttonpressed"></a>  CMFCBaseTabCtrl::IsTabCloseButtonPressed  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTabCloseButtonPressed() const;  
@@ -1372,7 +1355,7 @@ virtual BOOL IsTabVisible(int iTab) const;
  Nonzero if the specified tab is visible; otherwise 0.  
   
 ##  <a name="isvs2005style"></a>  CMFCBaseTabCtrl::IsVS2005Style  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsVS2005Style() const;  
@@ -1403,7 +1386,7 @@ BOOL m_bAutoDestroyWindow;
  By default, this member is `FALSE`.  
   
 ##  <a name="movetab"></a>  CMFCBaseTabCtrl::MoveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void MoveTab(
@@ -1428,7 +1411,7 @@ virtual void OnChangeTabs();
  By default, this method does nothing. Override this method to execute custom code when the number of tabs on the tab control changes.  
   
 ##  <a name="ondrop"></a>  CMFCBaseTabCtrl::OnDrop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnDrop(
@@ -1447,7 +1430,7 @@ virtual BOOL OnDrop(
 ### Remarks  
   
 ##  <a name="ondragover"></a>  CMFCBaseTabCtrl::OnDragOver  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual DROPEFFECT OnDragOver(
@@ -1466,7 +1449,7 @@ virtual DROPEFFECT OnDragOver(
 ### Remarks  
   
 ##  <a name="ondragleave"></a>  CMFCBaseTabCtrl::OnDragLeave  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDragLeave();
@@ -1475,7 +1458,7 @@ virtual void OnDragLeave();
 ### Remarks  
   
 ##  <a name="ondragenter"></a>  CMFCBaseTabCtrl::OnDragEnter  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual DROPEFFECT OnDragEnter(
@@ -1494,7 +1477,7 @@ virtual DROPEFFECT OnDragEnter(
 ### Remarks  
   
 ##  <a name="onrenametab"></a>  CMFCBaseTabCtrl::OnRenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnRenameTab(int, CString&);
@@ -1509,7 +1492,7 @@ virtual BOOL OnRenameTab(int, CString&);
 ### Remarks  
   
 ##  <a name="pretranslatemessage"></a>  CMFCBaseTabCtrl::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1565,7 +1548,7 @@ virtual BOOL RemoveTab(
  If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is `TRUE`, `RemoveTab` destroys the [CWnd](../../mfc/reference/cwnd-class.md) object associated with the specified tab.  
   
 ##  <a name="renametab"></a>  CMFCBaseTabCtrl::RenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL RenameTab();
@@ -1583,7 +1566,7 @@ void ResetImageList();
 ```  
   
 ##  <a name="serialize"></a>  CMFCBaseTabCtrl::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void Serialize(CArchive& ar);
@@ -1724,7 +1707,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  This method recalculates the height of the tab according to the image and text sizes.  
   
 ##  <a name="setlocation"></a>  CMFCBaseTabCtrl::SetLocation  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetLocation(Location location);
@@ -1854,7 +1837,7 @@ virtual BOOL SetTabLabel(
  Nonzero if successful; 0 otherwise.  
   
 ##  <a name="settabsheight"></a>  CMFCBaseTabCtrl::SetTabsHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetTabsHeight();
@@ -1929,7 +1912,7 @@ virtual BOOL ShowTab(
  The parameter `bActivate` only applies if `bShow` is `TRUE`. If `bActivate` is `TRUE` and if `ShowTab` is successful, `ShowTab` will send the message AFX_WM_CHANGE_ACTIVE_TAB to the parent of the tab window.  
   
 ##  <a name="startrenametab"></a>  CMFCBaseTabCtrl::StartRenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL StartRenameTab(int iTab);
@@ -1943,7 +1926,7 @@ virtual BOOL StartRenameTab(int iTab);
 ### Remarks  
   
 ##  <a name="swaptabs"></a>  CMFCBaseTabCtrl::SwapTabs  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SwapTabs(

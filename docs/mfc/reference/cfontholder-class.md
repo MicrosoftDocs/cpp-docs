@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFontHolder"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "custom fonts"
-  - "CFontHolder class"
-  - "fonts, ActiveX controls"
+f1_keywords: ["CFontHolder", "AFXCTL/CFontHolder", "AFXCTL/CFontHolder::CFontHolder", "AFXCTL/CFontHolder::GetDisplayString", "AFXCTL/CFontHolder::GetFontDispatch", "AFXCTL/CFontHolder::GetFontHandle", "AFXCTL/CFontHolder::InitializeFont", "AFXCTL/CFontHolder::QueryTextMetrics", "AFXCTL/CFontHolder::ReleaseFont", "AFXCTL/CFontHolder::Select", "AFXCTL/CFontHolder::SetFont", "AFXCTL/CFontHolder::m_pFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFontHolder [MFC], CFontHolder", "CFontHolder [MFC], GetDisplayString", "CFontHolder [MFC], GetFontDispatch", "CFontHolder [MFC], GetFontHandle", "CFontHolder [MFC], InitializeFont", "CFontHolder [MFC], QueryTextMetrics", "CFontHolder [MFC], ReleaseFont", "CFontHolder [MFC], Select", "CFontHolder [MFC], SetFont", "CFontHolder [MFC], m_pFont"]
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFontHolder Class
 Implements the stock Font property and encapsulates the functionality of a Windows font object and the `IFont` interface.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoRecordset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "recordsets, types"
-  - "CDaoRecordset class"
-  - "records, CDaoRecordSet"
+f1_keywords: ["CDaoRecordset", "AFXDAO/CDaoRecordset", "AFXDAO/CDaoRecordset::CDaoRecordset", "AFXDAO/CDaoRecordset::AddNew", "AFXDAO/CDaoRecordset::CanAppend", "AFXDAO/CDaoRecordset::CanBookmark", "AFXDAO/CDaoRecordset::CancelUpdate", "AFXDAO/CDaoRecordset::CanRestart", "AFXDAO/CDaoRecordset::CanScroll", "AFXDAO/CDaoRecordset::CanTransact", "AFXDAO/CDaoRecordset::CanUpdate", "AFXDAO/CDaoRecordset::Close", "AFXDAO/CDaoRecordset::Delete", "AFXDAO/CDaoRecordset::DoFieldExchange", "AFXDAO/CDaoRecordset::Edit", "AFXDAO/CDaoRecordset::FillCache", "AFXDAO/CDaoRecordset::Find", "AFXDAO/CDaoRecordset::FindFirst", "AFXDAO/CDaoRecordset::FindLast", "AFXDAO/CDaoRecordset::FindNext", "AFXDAO/CDaoRecordset::FindPrev", "AFXDAO/CDaoRecordset::GetAbsolutePosition", "AFXDAO/CDaoRecordset::GetBookmark", "AFXDAO/CDaoRecordset::GetCacheSize", "AFXDAO/CDaoRecordset::GetCacheStart", "AFXDAO/CDaoRecordset::GetCurrentIndex", "AFXDAO/CDaoRecordset::GetDateCreated", "AFXDAO/CDaoRecordset::GetDateLastUpdated", "AFXDAO/CDaoRecordset::GetDefaultDBName", "AFXDAO/CDaoRecordset::GetDefaultSQL", "AFXDAO/CDaoRecordset::GetEditMode", "AFXDAO/CDaoRecordset::GetFieldCount", "AFXDAO/CDaoRecordset::GetFieldInfo", "AFXDAO/CDaoRecordset::GetFieldValue", "AFXDAO/CDaoRecordset::GetIndexCount", "AFXDAO/CDaoRecordset::GetIndexInfo", "AFXDAO/CDaoRecordset::GetLastModifiedBookmark", "AFXDAO/CDaoRecordset::GetLockingMode", "AFXDAO/CDaoRecordset::GetName", "AFXDAO/CDaoRecordset::GetParamValue", "AFXDAO/CDaoRecordset::GetPercentPosition", "AFXDAO/CDaoRecordset::GetRecordCount", "AFXDAO/CDaoRecordset::GetSQL", "AFXDAO/CDaoRecordset::GetType", "AFXDAO/CDaoRecordset::GetValidationRule", "AFXDAO/CDaoRecordset::GetValidationText", "AFXDAO/CDaoRecordset::IsBOF", "AFXDAO/CDaoRecordset::IsDeleted", "AFXDAO/CDaoRecordset::IsEOF", "AFXDAO/CDaoRecordset::IsFieldDirty", "AFXDAO/CDaoRecordset::IsFieldNull", "AFXDAO/CDaoRecordset::IsFieldNullable", "AFXDAO/CDaoRecordset::IsOpen", "AFXDAO/CDaoRecordset::Move", "AFXDAO/CDaoRecordset::MoveFirst", "AFXDAO/CDaoRecordset::MoveLast", "AFXDAO/CDaoRecordset::MoveNext", "AFXDAO/CDaoRecordset::MovePrev", "AFXDAO/CDaoRecordset::Open", "AFXDAO/CDaoRecordset::Requery", "AFXDAO/CDaoRecordset::Seek", "AFXDAO/CDaoRecordset::SetAbsolutePosition", "AFXDAO/CDaoRecordset::SetBookmark", "AFXDAO/CDaoRecordset::SetCacheSize", "AFXDAO/CDaoRecordset::SetCacheStart", "AFXDAO/CDaoRecordset::SetCurrentIndex", "AFXDAO/CDaoRecordset::SetFieldDirty", "AFXDAO/CDaoRecordset::SetFieldNull", "AFXDAO/CDaoRecordset::SetFieldValue", "AFXDAO/CDaoRecordset::SetFieldValueNull", "AFXDAO/CDaoRecordset::SetLockingMode", "AFXDAO/CDaoRecordset::SetParamValue", "AFXDAO/CDaoRecordset::SetParamValueNull", "AFXDAO/CDaoRecordset::SetPercentPosition", "AFXDAO/CDaoRecordset::Update", "AFXDAO/CDaoRecordset::m_bCheckCacheForDirtyFields", "AFXDAO/CDaoRecordset::m_nFields", "AFXDAO/CDaoRecordset::m_nParams", "AFXDAO/CDaoRecordset::m_pDAORecordset", "AFXDAO/CDaoRecordset::m_pDatabase", "AFXDAO/CDaoRecordset::m_strFilter", "AFXDAO/CDaoRecordset::m_strSort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoRecordset [MFC], CDaoRecordset", "CDaoRecordset [MFC], AddNew", "CDaoRecordset [MFC], CanAppend", "CDaoRecordset [MFC], CanBookmark", "CDaoRecordset [MFC], CancelUpdate", "CDaoRecordset [MFC], CanRestart", "CDaoRecordset [MFC], CanScroll", "CDaoRecordset [MFC], CanTransact", "CDaoRecordset [MFC], CanUpdate", "CDaoRecordset [MFC], Close", "CDaoRecordset [MFC], Delete", "CDaoRecordset [MFC], DoFieldExchange", "CDaoRecordset [MFC], Edit", "CDaoRecordset [MFC], FillCache", "CDaoRecordset [MFC], Find", "CDaoRecordset [MFC], FindFirst", "CDaoRecordset [MFC], FindLast", "CDaoRecordset [MFC], FindNext", "CDaoRecordset [MFC], FindPrev", "CDaoRecordset [MFC], GetAbsolutePosition", "CDaoRecordset [MFC], GetBookmark", "CDaoRecordset [MFC], GetCacheSize", "CDaoRecordset [MFC], GetCacheStart", "CDaoRecordset [MFC], GetCurrentIndex", "CDaoRecordset [MFC], GetDateCreated", "CDaoRecordset [MFC], GetDateLastUpdated", "CDaoRecordset [MFC], GetDefaultDBName", "CDaoRecordset [MFC], GetDefaultSQL", "CDaoRecordset [MFC], GetEditMode", "CDaoRecordset [MFC], GetFieldCount", "CDaoRecordset [MFC], GetFieldInfo", "CDaoRecordset [MFC], GetFieldValue", "CDaoRecordset [MFC], GetIndexCount", "CDaoRecordset [MFC], GetIndexInfo", "CDaoRecordset [MFC], GetLastModifiedBookmark", "CDaoRecordset [MFC], GetLockingMode", "CDaoRecordset [MFC], GetName", "CDaoRecordset [MFC], GetParamValue", "CDaoRecordset [MFC], GetPercentPosition", "CDaoRecordset [MFC], GetRecordCount", "CDaoRecordset [MFC], GetSQL", "CDaoRecordset [MFC], GetType", "CDaoRecordset [MFC], GetValidationRule", "CDaoRecordset [MFC], GetValidationText", "CDaoRecordset [MFC], IsBOF", "CDaoRecordset [MFC], IsDeleted", "CDaoRecordset [MFC], IsEOF", "CDaoRecordset [MFC], IsFieldDirty", "CDaoRecordset [MFC], IsFieldNull", "CDaoRecordset [MFC], IsFieldNullable", "CDaoRecordset [MFC], IsOpen", "CDaoRecordset [MFC], Move", "CDaoRecordset [MFC], MoveFirst", "CDaoRecordset [MFC], MoveLast", "CDaoRecordset [MFC], MoveNext", "CDaoRecordset [MFC], MovePrev", "CDaoRecordset [MFC], Open", "CDaoRecordset [MFC], Requery", "CDaoRecordset [MFC], Seek", "CDaoRecordset [MFC], SetAbsolutePosition", "CDaoRecordset [MFC], SetBookmark", "CDaoRecordset [MFC], SetCacheSize", "CDaoRecordset [MFC], SetCacheStart", "CDaoRecordset [MFC], SetCurrentIndex", "CDaoRecordset [MFC], SetFieldDirty", "CDaoRecordset [MFC], SetFieldNull", "CDaoRecordset [MFC], SetFieldValue", "CDaoRecordset [MFC], SetFieldValueNull", "CDaoRecordset [MFC], SetLockingMode", "CDaoRecordset [MFC], SetParamValue", "CDaoRecordset [MFC], SetParamValueNull", "CDaoRecordset [MFC], SetPercentPosition", "CDaoRecordset [MFC], Update", "CDaoRecordset [MFC], m_bCheckCacheForDirtyFields", "CDaoRecordset [MFC], m_nFields", "CDaoRecordset [MFC], m_nParams", "CDaoRecordset [MFC], m_pDAORecordset", "CDaoRecordset [MFC], m_pDatabase", "CDaoRecordset [MFC], m_strFilter", "CDaoRecordset [MFC], m_strSort"]
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoRecordset Class
 Represents a set of records selected from a data source.  
@@ -692,7 +673,7 @@ long GetAbsolutePosition();
 ### Remarks  
  The AbsolutePosition property value of the underlying DAO object is zero-based; a setting of 0 refers to the first record in the recordset. You can determine the number of populated records in the recordset by calling [GetRecordCount](#getrecordcount). Calling `GetRecordCount` may take some time because it must access all records to determine the count.  
   
- If there is no current record, as when there are no records in the recordset, – 1 is returned. If the current record is deleted, the AbsolutePosition property value is not defined, and MFC throws an exception if it is referenced. For dynaset-type recordsets, new records are added to the end of the sequence.  
+ If there is no current record, as when there are no records in the recordset, - 1 is returned. If the current record is deleted, the AbsolutePosition property value is not defined, and MFC throws an exception if it is referenced. For dynaset-type recordsets, new records are added to the end of the sequence.  
   
 > [!NOTE]
 >  This property is not intended to be used as a surrogate record number. Bookmarks are still the recommended way of retaining and returning to a given position and are the only way to position the current record across all types of recordset objects. In particular, the position of a given record changes when record(s) preceding it are deleted. There is also no assurance that a given record will have the same absolute position if the recordset is re-created again because the order of individual records within a recordset is not guaranteed unless it is created with a SQL statement using an **ORDERBY** clause.  
@@ -1068,7 +1049,8 @@ CString GetName();
   
 ```  
 virtual COleVariant GetParamValue(int nIndex);  
-virtual COleVariant GetParamValue(LPCTSTR lpszName);```  
+virtual COleVariant GetParamValue(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  
@@ -1123,7 +1105,7 @@ long GetRecordCount();
   
  The value of `GetRecordCount` from a table-type recordset reflects the approximate number of records in the table and is affected immediately as table records are added and deleted.  
   
- A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns – 1. Calling the **Requery** member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
+ A recordset with no records returns a value of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns - 1. Calling the **Requery** member function on a recordset resets the value of `GetRecordCount` just as if the query were re-executed.  
   
  For related information, see the topic "RecordCount Property" in DAO Help.  
   
@@ -1861,7 +1843,7 @@ void SetCacheSize(long lSize);
 ### Remarks  
  A cache is a space in local memory that holds the data most recently retrieved from the server in the event that the data will be requested again while the application is running. Data caching improves the performance of an application that retrieves data from a remote server through dynaset-type recordset objects. When data is requested, the Microsoft Jet database engine checks the cache for the requested data first rather than retrieving it from the server, which takes more time. Data that does not come from an ODBC data source is not saved in the cache.  
   
- Any ODBC data source, such as an attached table, can have a local cache. To create the cache, open a recordset object from the remote data source, call the `SetCacheSize` and `SetCacheStart` member functions, and then call the `FillCache` member function or step through the records by using one of the Move operations. The `lSize` parameter of the `SetCacheSize` member function can be based on the number of records your application can work with at one time. For example, if you are using a recordset as the source of the data to be displayed on screen, you could pass the `SetCacheSize``lSize` parameter as 20 to display 20 records at one time.  
+ Any ODBC data source, such as an attached table, can have a local cache. To create the cache, open a recordset object from the remote data source, call the `SetCacheSize` and `SetCacheStart` member functions, and then call the `FillCache` member function or step through the records by using one of the Move operations. The `lSize` parameter of the `SetCacheSize` member function can be based on the number of records your application can work with at one time. For example, if you are using a recordset as the source of the data to be displayed on screen, you could pass the `SetCacheSize` `lSize` parameter as 20 to display 20 records at one time.  
   
  For related information, see the topic "CacheSize, CacheStart Properties" in DAO Help.  
   
@@ -2034,7 +2016,8 @@ void SetFieldValue(
   
 ```  
 void SetFieldValueNull(int nIndex);  
-void SetFieldValueNull(LPCTSTR lpszName);```  
+void SetFieldValueNull(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  
@@ -2104,7 +2087,8 @@ virtual void SetParamValue(
   
 ```  
 void SetParamValueNull(int nIndex);  
-void SetParamValueNull(LPCTSTR lpszName);```  
+void SetParamValueNull(LPCTSTR lpszName);
+```  
   
 ### Parameters  
  `nIndex`  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4398"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4398"
+f1_keywords: ["C4398"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4398"]
 ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4398
 'variable' : per-process global object might not work correctly with multiple appdomains; consider using __declspec(appdomain)  

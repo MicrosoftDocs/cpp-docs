@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enabling tool tips"
-  - "TOOLTIPTEXT structure"
-  - "Help, tool tips for controls"
-  - "TTN_NEEDTEXT message"
-  - "controls [MFC], tool tips"
-  - "handler functions, tool tips"
+dev_langs: ["C++"]
+helpviewer_keywords: ["enabling tool tips [MFC]", "TOOLTIPTEXT structure [MFC]", "Help [MFC], tool tips for controls", "TTN_NEEDTEXT message [MFC]", "controls [MFC], tool tips", "handler functions [MFC], tool tips"]
 ms.assetid: cad5ef0f-02e3-4151-ad0d-3d42e6932b0e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Tool Tips in Windows Not Derived from CFrameWnd
 This article family covers enabling tool tips for controls contained in a window that is not derived from [CFrameWnd](../mfc/reference/cframewnd-class.md). The article [Toolbars Tool Tips](../mfc/toolbar-tool-tips.md) provides information about tool tips for controls in a `CFrameWnd`.  

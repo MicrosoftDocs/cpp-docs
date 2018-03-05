@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::regex_traits<wchar_t>"
-  - "regex/std::regex_traits<wchar_t>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regex_traits<wchar_t> class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::regex_traits<wchar_t>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["regex_traits<wchar_t> class"]
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;wchar_t&gt; Class
 Specialization of regex_traits for wchar_t.  

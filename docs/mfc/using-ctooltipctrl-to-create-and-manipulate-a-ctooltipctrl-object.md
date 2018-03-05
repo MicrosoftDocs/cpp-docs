@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CToolTipCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tool tips [C++], creating"
-  - "CToolTipCtrl class, using"
+f1_keywords: ["CToolTipCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tool tips [MFC], creating", "CToolTipCtrl class [MFC], using"]
 ms.assetid: 0a34583f-f66d-46a1-a239-31b80ea395ad
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object
 Here is an example of [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) usage:  

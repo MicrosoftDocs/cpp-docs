@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "selecting among completed tasks [Concurrency Runtime]"
-  - "completed tasks, selecting among [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["selecting among completed tasks [Concurrency Runtime]", "completed tasks, selecting among [Concurrency Runtime]"]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How to: Select Among Completed Tasks
 This example shows how to use the [concurrency::choice](../../parallel/concrt/reference/choice-class.md) and [concurrency::join](../../parallel/concrt/reference/join-class.md) classes to select the first task to complete a search algorithm.  

@@ -4,46 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], interoperability"
-  - "ATL [C++], interoperability"
-  - "mixed assemblies [C++], MFC code"
-  - "mixed assemblies [C++], ATL code"
-  - "/clr compiler option [C++], compiling ATL and MFC code"
-  - "interoperability [C++], /clr compiler option"
-  - "regular DLLs [D++], /clr compiler option"
-  - "interop [C++], /clr compiler option"
-  - "extension DLLs [C++], /clr compiler option"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], interoperability", "ATL [C++], interoperability", "mixed assemblies [C++], MFC code", "mixed assemblies [C++], ATL code", "/clr compiler option [C++], compiling ATL and MFC code", "interoperability [C++], /clr compiler option", "regular MFC DLLs [C++], /clr compiler option", "interop [C++], /clr compiler option", "extension DLLs [C++], /clr compiler option"]
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Compile MFC and ATL Code By Using /clr
 This topic discusses how to compile existing MFC and ATL programs to target the Common Language Runtime.  
   
-### To compile an MFC executable or regular DLL by using /clr  
+### To compile an MFC executable or regular MFC DLL by using /clr  
   
 1.  Right-click the project in **Solution Explorer** and then click **Properties**.  
   
@@ -65,7 +41,7 @@ This topic discusses how to compile existing MFC and ATL programs to target the 
   
 ### To compile an MFC extension DLL by using /clr  
   
-1.  Follow the steps in "To compile an MFC executable or regular DLL by using /clr".  
+1.  Follow the steps in "To compile an MFC executable or regular MFC DLL by using /clr".  
   
 2.  Under **Configuration Properties**, expand the node next to **C/C++** and select **Precompiled Headers**. Set **Create/Use Precompiled Header** to **Not using Precompiled Headers**.  
   

@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_fcvt_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_fcvt_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fcvt_s"
-  - "_fcvt_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fcvt_s function"
-  - "converting floating point, to strings"
-  - "floating-point functions, converting number to string"
-  - "_fcvt_s function"
+f1_keywords: ["fcvt_s", "_fcvt_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fcvt_s function", "converting floating point, to strings", "floating-point functions, converting number to string", "_fcvt_s function"]
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _fcvt_s
 Converts a floating-point number to a string. This is a version of [_fcvt](../../c-runtime-library/reference/fcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -121,7 +88,7 @@ errno_t _fcvt_s(
   
  A buffer of length `_CVTBUFSIZE` is sufficient for any floating point value.  
   
- The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `count` parameter. `_ecvt_s` interprets `count` as the total number of digits in the output string, and `_fcvt_s` interprets c`ount` as the number of digits after the decimal point.  
+ The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `count` parameter. `_ecvt_s` interprets `count` as the total number of digits in the output string, and `_fcvt_s` interprets `count` as the number of digits after the decimal point.  
   
  In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -169,9 +136,6 @@ int main()
 ```Output  
 Converted value: 120000  
 ```  
-  
-## .NET Framework Equivalent  
- <xref:System.Convert.ToString%2A>  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

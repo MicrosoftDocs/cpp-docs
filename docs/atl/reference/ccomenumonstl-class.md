@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComEnumOnSTL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComEnumOnSTL class"
+f1_keywords: ["CComEnumOnSTL", "atlcom/ATL::CComEnumOnSTL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComEnumOnSTL class"]
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComEnumOnSTL Class
 This class defines a COM enumerator object based on a C++ Standard Library collection.  

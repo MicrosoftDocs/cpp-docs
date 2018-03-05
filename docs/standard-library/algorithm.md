@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<algorithm>"
-  - "std::<algorithm>"
-  - "algorithm/std::<algorithm>"
-  - "std.<algorithm>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "algorithm header [C++]"
-  - "C++ Standard Library, algorithms"
-  - "<algorithm> header"
+ms.topic: "reference"
+f1_keywords: ["<algorithm>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["algorithm header [C++]", "C++ Standard Library, algorithms", "<algorithm> header"]
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;algorithm&gt;
 Defines C++ Standard Library container template functions that perform algorithms.  
@@ -59,7 +37,7 @@ Defines C++ Standard Library container template functions that perform algorithm
   
 -   The _copy suffix indicates that the algorithm not only manipulates the values of the elements but also copies the modified values into a destination range. The `reverse` algorithm reverses the order of the elements within a range, and the `reverse_copy` algorithm also copies the result into a destination range.  
   
- C++ Standard Library algorithms are often classified into groups that indicate something about their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that do not. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on algorithms whose elements have been sorted in a particular way.  
+ C++ Standard Library algorithms are often classified into groups that indicate something about their purpose or requirements. These include modifying algorithms that change the value of elements as compared with non-modifying algorithms that do not. Mutating algorithms change the order of elements, but not the values of their elements. Removing algorithms can eliminate elements from a range or a copy of a range. Sorting algorithms reorder the elements in a range in various ways and sorted range algorithms only act on ranges whose elements have been sorted in a particular way.  
   
  The C++ Standard Library numeric algorithms that are provided for numerical processing have their own header file [\<numeric>](../standard-library/numeric.md), and function objects and adaptors are defined in the header [\<functional>](../standard-library/functional.md) Function objects that return Boolean values are known as predicates. The default binary predicate is the comparison `operator<`. In general, the elements being ordered need to be less than comparable so that, given any two elements, it can be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering among the nonequivalent elements.  
   
@@ -142,7 +120,7 @@ Defines C++ Standard Library container template functions that perform algorithm
 |[set_symmetric_difference](../standard-library/algorithm-functions.md#set_symmetric_difference)|Unites all of the elements that belong to one, but not both, of the sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.|  
 |[set_union](../standard-library/algorithm-functions.md#set_union)|Unites all of the elements that belong to at least one of two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.|  
 |[sort](../standard-library/algorithm-functions.md#sort)|Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate.|  
-|[shuffle](../standard-library/algorithm-functions.md#std__shuffle)|Shuffles (rearranges) elements for a given range using a random number generator.|  
+|[shuffle](../standard-library/algorithm-functions.md#shuffle)|Shuffles (rearranges) elements for a given range using a random number generator.|  
 |[sort_heap](../standard-library/algorithm-functions.md#sort_heap)|Converts a heap into a sorted range.|  
 |[stable_partition](../standard-library/algorithm-functions.md#stable_partition)|Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it, preserving the relative order of equivalent elements.|  
 |[stable_sort](../standard-library/algorithm-functions.md#stable_sort)|Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate and preserves the relative ordering of equivalent elements.|  

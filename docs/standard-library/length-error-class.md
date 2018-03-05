@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdexcept/std::length_error"
-  - "length_error"
-  - "std::length_error"
-  - "std.length_error"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "length_error class"
+ms.topic: "reference"
+f1_keywords: ["stdexcept/std::length_error"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["length_error class"]
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # length_error Class
 The class serves as the base class for all exceptions thrown to report an attempt to generate an object too long to be specified.  
@@ -53,7 +33,7 @@ public:
 ```  
   
 ## Remarks  
- The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
+ The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).  
   
 ## Example  
   

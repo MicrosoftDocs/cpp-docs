@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComTearOffObject<Base>"
-  - "ATL::CComTearOffObject"
-  - "ATL.CComTearOffObject"
-  - "ATL.CComTearOffObject<Base>"
-  - "CComTearOffObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tear-off interfaces, ATL"
-  - "tear-off interfaces"
-  - "CComTearOffObject class"
+f1_keywords: ["CComTearOffObject", "ATLCOM/ATL::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::AddRef", "ATLCOM/ATL::CComTearOffObject::QueryInterface", "ATLCOM/ATL::CComTearOffObject::Release", "ATLCOM/ATL::CComTearOffObjectBase", "ATLCOM/ATL::m_pOwner"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tear-off interfaces, ATL", "tear-off interfaces", "CComTearOffObject class"]
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComTearOffObject Class
 This class implements a tear-off interface.  

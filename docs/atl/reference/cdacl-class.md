@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CDacl"
-  - "CDacl"
-  - "ATL.CDacl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDacl class"
+f1_keywords: ["CDacl", "ATLSECURITY/ATL::CDacl", "ATLSECURITY/ATL::CDacl::CDacl", "ATLSECURITY/ATL::CDacl::AddAllowedAce", "ATLSECURITY/ATL::CDacl::AddDeniedAce", "ATLSECURITY/ATL::CDacl::GetAceCount", "ATLSECURITY/ATL::CDacl::RemoveAce", "ATLSECURITY/ATL::CDacl::RemoveAllAces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDacl class"]
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDacl Class
 This class is a wrapper for a DACL (discretionary access-control list) structure.  
@@ -78,9 +59,9 @@ class CDacl : public CAcl
   
  To retrieve an object's DACL, you must be the object's owner or have READ_CONTROL access to the object. To change an object's DACL, you must have WRITE_DAC access to the object.  
   
- Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](http://msdn.microsoft.com/library/a0973648-0d46-4c1a-914f-bda861fe5d19) and [AtlSetDacl](http://msdn.microsoft.com/library/eb88ccb6-1f1b-444d-b0c9-8d5cd0dd6c0b).  
+ Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](security-global-functions.md#atlgetdacl) and [AtlSetDacl](security-global-functions.md#atlsetdacl).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -129,9 +110,6 @@ bool AddAllowedAce(
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.  
   
-> [!NOTE]
->  The second form of `AddAllowedAce` is only available on Windows 2000 and later.  
-  
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
@@ -172,9 +150,6 @@ bool AddDeniedAce(
   
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.  
-  
-> [!NOTE]
->  The second form of `AddDeniedAce` is only available on Windows 2000 and later.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   

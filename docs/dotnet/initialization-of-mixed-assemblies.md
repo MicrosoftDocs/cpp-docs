@@ -4,43 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mixed assemblies [C++], loader lock"
-  - "loader lock [C++]"
-  - "initializing mixed assemblies"
-  - "deadlocks [C++]"
-  - ".cctor [C++]"
-  - "custom locales [C++]"
-  - "mixed assemblies [C++], initilizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["mixed assemblies [C++], loader lock", "loader lock [C++]", "initializing mixed assemblies", "deadlocks [C++]", ".cctor [C++]", "custom locales [C++]", "mixed assemblies [C++], initilizing"]
 ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Initialization of Mixed Assemblies
-In Visual C++ .NET and Visual C++ 2003, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur. For more information about this issue, see "Mixed DLL Loading Problem" in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556).  
+Prior to Visual Studio 2005, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur.
   
  Code within [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.  
   
@@ -136,7 +113,7 @@ CObject* op = new CObject(arg1, arg2);
 ### Implementation in Headers  
  In select cases, function implementations inside header files can complicate diagnosis. Inline functions and template code both require that functions be specified in a header file.  The C++ language specifies the One Definition Rule, which forces all implementations of functions with the same name to be semantically equivalent. Consequently, the C++ linker need not make any special considerations when merging object files that have duplicate implementations of a given function.  
   
- In Visual C++ .NET and Visual C++ .NET 2003, the linker simply chooses the largest of these semantically equivalent definitions, to accommodate forward declarations and scenarios when different optimization options are used for different source files. This creates a problem for mixed native/.NET DLLs.  
+ Prior to Visual Studio 2005, the linker simply chooses the largest of these semantically equivalent definitions, to accommodate forward declarations and scenarios when different optimization options are used for different source files. This creates a problem for mixed native/.NET DLLs.  
   
  Because the same header may be included both by a CPP files with **/clr** enabled and disabled, or a #include can be wrapped inside a #pragma `unmanaged` block, it is possible to have both MSIL and native versions of functions that provide implementations in headers. MSIL and native implementations have different semantics with respect to initialization under the loader lock, which effectively violates the one definition rule. Consequently, when the linker chooses the largest implementation, it may choose the MSIL version of a function, even if it was explicitly compiled to native code elsewhere using the #pragma unmanaged directive. To ensure that an MSIL version of a template or inline function is never called under loader lock, every definition of every such function called under loader lock must be modified with the #pragma `unmanaged` directive. If the header file is from a third party, the easiest way to achieve this is to push and pop the #pragma unmanaged directive around the #include directive for the offending header file. (See [managed, unmanaged](../preprocessor/managed-unmanaged.md) for an example.) However, this strategy will not work for headers that contain other code that must directly call .NET APIs.  
   

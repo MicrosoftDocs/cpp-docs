@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.alloc_text"
-  - "alloc_text_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "alloc_text pragma"
-  - "pragmas, alloc_text"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.alloc_text", "alloc_text_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["alloc_text pragma", "pragmas, alloc_text"]
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # alloc_text
 Names the code section where the specified function definitions are to reside. The pragma must occur between a function declarator and the function definition for the named functions.  

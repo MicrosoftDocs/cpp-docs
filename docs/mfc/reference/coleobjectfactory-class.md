@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleObjectFactory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE, class factory"
-  - "OLE class factory"
-  - "COleObjectFactory class"
-  - "objects [C++], creating OLE"
-  - "OLE objects"
-  - "object creation, OLE objects"
-  - "class factories, COleObjectFactory class"
-  - "OLE objects, creating"
+f1_keywords: ["COleObjectFactory", "AFXDISP/COleObjectFactory", "AFXDISP/COleObjectFactory::COleObjectFactory", "AFXDISP/COleObjectFactory::GetClassID", "AFXDISP/COleObjectFactory::IsLicenseValid", "AFXDISP/COleObjectFactory::IsRegistered", "AFXDISP/COleObjectFactory::Register", "AFXDISP/COleObjectFactory::RegisterAll", "AFXDISP/COleObjectFactory::Revoke", "AFXDISP/COleObjectFactory::RevokeAll", "AFXDISP/COleObjectFactory::UnregisterAll", "AFXDISP/COleObjectFactory::UpdateRegistry", "AFXDISP/COleObjectFactory::UpdateRegistryAll", "AFXDISP/COleObjectFactory::GetLicenseKey", "AFXDISP/COleObjectFactory::OnCreateObject", "AFXDISP/COleObjectFactory::VerifyLicenseKey", "AFXDISP/COleObjectFactory::VerifyUserLicense"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleObjectFactory [MFC], COleObjectFactory", "COleObjectFactory [MFC], GetClassID", "COleObjectFactory [MFC], IsLicenseValid", "COleObjectFactory [MFC], IsRegistered", "COleObjectFactory [MFC], Register", "COleObjectFactory [MFC], RegisterAll", "COleObjectFactory [MFC], Revoke", "COleObjectFactory [MFC], RevokeAll", "COleObjectFactory [MFC], UnregisterAll", "COleObjectFactory [MFC], UpdateRegistry", "COleObjectFactory [MFC], UpdateRegistryAll", "COleObjectFactory [MFC], GetLicenseKey", "COleObjectFactory [MFC], OnCreateObject", "COleObjectFactory [MFC], VerifyLicenseKey", "COleObjectFactory [MFC], VerifyUserLicense"]
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleObjectFactory Class
 Implements the OLE class factory, which creates OLE objects such as servers, automation objects, and documents.  
@@ -145,7 +121,7 @@ COleObjectFactory(
   
 - **afxRegFreeThreading** Sets the threading model in the registry to ThreadingModel=Free.  
   
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on threading model registration.  
+     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.  
   
  `lpszProgID`  
  Pointer to a string containing a verbal program identifier, such as "Microsoft Excel."  
@@ -153,7 +129,7 @@ COleObjectFactory(
 ### Remarks  
  To use the object, however, you must register it.  
   
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
   
 ##  <a name="getclassid"></a>  COleObjectFactory::GetClassID  
  Returns a reference to the OLE class ID this factory represents.  
@@ -166,7 +142,7 @@ REFCLSID GetClassID() const;
  Reference to the OLE class ID this factory represents.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
  Requests a unique license key from the control's DLL and stores it in the `BSTR` pointed to by `pbstrKey`.  

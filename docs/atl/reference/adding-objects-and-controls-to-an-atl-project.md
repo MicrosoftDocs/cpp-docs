@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.appwiz.ATL.controls"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, adding objects"
-  - "wizards [C++], ATL projects"
-  - "ATL projects, adding controls"
-  - "controls [ATL], adding to projects"
-  - "objects [C++], adding to ATL projects"
-  - "ATL Control Wizard"
+f1_keywords: ["vc.appwiz.ATL.controls"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, adding objects", "wizards [C++], ATL projects", "ATL projects, adding controls", "controls [ATL], adding to projects", "objects [C++], adding to ATL projects", "ATL Control Wizard"]
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Adding Objects and Controls to an ATL Project
 You can use one of the ATL code wizards to add an object or a control to your ATL- or MFC-based projects. For each COM object or control you add, the wizard generates .cpp and .h files, as well as an .rgs file for script-based registry support. The following ATL code wizards are available in Visual Studio:  

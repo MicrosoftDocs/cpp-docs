@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TBSTYLE_"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "flat toolbars"
-  - "CToolBar class, styles"
-  - "transparent toolbars"
-  - "TBSTYLE_ styles"
-  - "CToolBarCtrl class, object styles"
-  - "toolbar controls [MFC], style"
+f1_keywords: ["TBSTYLE_"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["flat toolbars", "CToolBar class [MFC], styles", "transparent toolbars", "TBSTYLE_ styles [MFC]", "CToolBarCtrl class [MFC], object styles", "toolbar controls [MFC], style"]
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Customizing the Appearance of a Toolbar Control
 Class `CToolBarCtrl` provides many styles that affect the appearance (and, occasionally, the behavior) of the toolbar object. Modify the toolbar object by setting the `dwCtrlStyle` parameter of the `CToolBarCtrl::Create` (or `CToolBar::CreateEx`) member function, when you first create the toolbar control.  
@@ -70,7 +48,7 @@ Class `CToolBarCtrl` provides many styles that affect the appearance (and, occas
   
 -   `TBSTYLE_TOOLTIPS` Creates a tool tip control that an application can use to display descriptive text for the buttons in the toolbar.  
   
- For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) and [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) and [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the Windows SDK.  
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATLSECURITY/CAccessToken"
-  - "ATL.CAccessToken"
-  - "CAccessToken"
-  - "ATL::CAccessToken"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAccessToken class"
+f1_keywords: ["CAccessToken", "ATLSECURITY/ATL::CAccessToken", "ATLSECURITY/ATL::CAccessToken::Attach", "ATLSECURITY/ATL::CAccessToken::CheckTokenMembership", "ATLSECURITY/ATL::CAccessToken::CreateImpersonationToken", "ATLSECURITY/ATL::CAccessToken::CreatePrimaryToken", "ATLSECURITY/ATL::CAccessToken::CreateProcessAsUser", "ATLSECURITY/ATL::CAccessToken::CreateRestrictedToken", "ATLSECURITY/ATL::CAccessToken::Detach", "ATLSECURITY/ATL::CAccessToken::DisablePrivilege", "ATLSECURITY/ATL::CAccessToken::DisablePrivileges", "ATLSECURITY/ATL::CAccessToken::EnablePrivilege", "ATLSECURITY/ATL::CAccessToken::EnablePrivileges", "ATLSECURITY/ATL::CAccessToken::GetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::GetEffectiveToken", "ATLSECURITY/ATL::CAccessToken::GetGroups", "ATLSECURITY/ATL::CAccessToken::GetHandle", "ATLSECURITY/ATL::CAccessToken::GetImpersonationLevel", "ATLSECURITY/ATL::CAccessToken::GetLogonSessionId", "ATLSECURITY/ATL::CAccessToken::GetLogonSid", "ATLSECURITY/ATL::CAccessToken::GetOwner", "ATLSECURITY/ATL::CAccessToken::GetPrimaryGroup", "ATLSECURITY/ATL::CAccessToken::GetPrivileges", "ATLSECURITY/ATL::CAccessToken::GetProcessToken", "ATLSECURITY/ATL::CAccessToken::GetProfile", "ATLSECURITY/ATL::CAccessToken::GetSource", "ATLSECURITY/ATL::CAccessToken::GetStatistics", "ATLSECURITY/ATL::CAccessToken::GetTerminalServicesSessionId", "ATLSECURITY/ATL::CAccessToken::GetThreadToken", "ATLSECURITY/ATL::CAccessToken::GetTokenId", "ATLSECURITY/ATL::CAccessToken::GetType", "ATLSECURITY/ATL::CAccessToken::GetUser", "ATLSECURITY/ATL::CAccessToken::HKeyCurrentUser", "ATLSECURITY/ATL::CAccessToken::Impersonate", "ATLSECURITY/ATL::CAccessToken::ImpersonateLoggedOnUser", "ATLSECURITY/ATL::CAccessToken::IsTokenRestricted", "ATLSECURITY/ATL::CAccessToken::LoadUserProfile", "ATLSECURITY/ATL::CAccessToken::LogonUser", "ATLSECURITY/ATL::CAccessToken::OpenCOMClientToken", "ATLSECURITY/ATL::CAccessToken::OpenNamedPipeClientToken", "ATLSECURITY/ATL::CAccessToken::OpenRPCClientToken", "ATLSECURITY/ATL::CAccessToken::OpenThreadToken", "ATLSECURITY/ATL::CAccessToken::PrivilegeCheck", "ATLSECURITY/ATL::CAccessToken::Revert", "ATLSECURITY/ATL::CAccessToken::SetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::SetOwner", "ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAccessToken class"]
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAccessToken Class
 This class is a wrapper for an access token.  
@@ -108,9 +88,9 @@ class CAccessToken
 |[CAccessToken::SetPrimaryGroup](#setprimarygroup)|Call this method to set the primary group of the `CAccessToken` object.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
+ An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -299,9 +279,6 @@ bool CreateRestrictedToken(
   
 ### Remarks  
  `CreateRestrictedToken` uses the [CreateRestrictedToken](http://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 function to create a new `CAccessToken` object, with restrictions.  
-  
-> [!NOTE]
->  This method is only available on Windows 2000 or later.  
   
 > [!IMPORTANT]
 >  When using `CreateRestrictedToken`, ensure the following: the existing token is valid (and not entered by the user) and `SidsToDisable` and `PrivilegesToDelete` are both valid (and not entered by the user). If the method returns false, deny functionality.  

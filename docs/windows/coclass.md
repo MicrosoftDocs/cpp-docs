@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.coclass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "coclass attribute"
+f1_keywords: ["vc-attr.coclass"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["coclass attribute"]
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # coclass
 Creates a COM object, which can implement a COM interface.  
@@ -88,7 +71,7 @@ Creates a COM object, which can implement a COM interface.
   
 -   A COM map is added with entries for all interfaces the target class derives from and all entries specified by the [COM Interface Entry Points](../mfc/com-interface-entry-points.md) attribute or those required by the [aggregates](../windows/aggregates.md) attribute.  
   
--   An [OBJECT_ENTRY_AUTO](http://msdn.microsoft.com/Library/5a0f4fa5-0905-43d2-b337-e22f979c9e4c) macro is inserted into the COM map. This macro is similar to [OBJECT_ENTRY](http://msdn.microsoft.com/en-us/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) in terms of functionality but does not need to be part of the COM map of the target class.  
+-   An [OBJECT_ENTRY_AUTO](../atl/reference/object-map-macros.md#object_entry_auto) macro is inserted into the COM map.
   
  The name of the coclass generated in the .idl file for the class will have the same name as the class.  For example, and referring to the following sample, to access the class ID for a coclass CMyClass, in a client through the MIDL-generated header file, use CLSID_CMyClass.  
   

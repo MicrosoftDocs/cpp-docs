@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "memmove"
-  - "wmemmove"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["memmove", "wmemmove"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "memmove"
-  - "wmemmove"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wmemmove function"
-  - "memmove function"
+f1_keywords: ["memmove", "wmemmove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wmemmove function", "memmove function"]
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # memmove, wmemmove
 Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](../../c-runtime-library/reference/memmove-s-wmemmove-s.md).  
@@ -81,10 +49,10 @@ wchar_t *wmemmove(
  Number of bytes (`memmove`) or characters (`wmemmove`) to copy.  
   
 ## Return Value  
- The value of `dest`*.*  
+ The value of `dest`.  
   
 ## Remarks  
- Copies `count` bytes (`memmove`) or characters (`wmemmove`) from `src` to `dest`*.* If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.  
+ Copies `count` bytes (`memmove`) or characters (`wmemmove`) from `src` to `dest`. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.  
   
  **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -142,9 +110,6 @@ New string: aaaabb
 The string: aabbcc  
 New string: aaaabb  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Buffer::BlockCopy](https://msdn.microsoft.com/en-us/library/system.buffer.blockcopy.aspx)  
   
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   

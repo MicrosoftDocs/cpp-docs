@@ -4,40 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "usual arithmetic conversions"
-  - "operators [C], addition"
-  - "+ operator, additive operators"
-  - "additive operators"
-  - "arithmetic operators [C++], additive operators"
+dev_langs: ["C++"]
+helpviewer_keywords: ["usual arithmetic conversions", "operators [C], addition", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators"]
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C Additive Operators
-The additive operators perform addition (**+**) and subtraction (**–**).  
+The additive operators perform addition (**+**) and subtraction (**-**).  
   
 ## Syntax  
  *additive-expression*:  
@@ -45,7 +25,7 @@ The additive operators perform addition (**+**) and subtraction (**–**).
   
  *additive-expression*  **+**  *multiplicative-expression*  
   
- *additive-expression*  **–**  *multiplicative-expression*  
+ *additive-expression*  **-**  *multiplicative-expression*  
   
 > [!NOTE]
 >  Although the syntax for *additive-expression* includes *multiplicative-expression*, this does not imply that expressions using multiplication are required. See the syntax in [C Language Syntax Summary](../c-language/c-language-syntax-summary.md), for *multiplicative-expression*, *cast-expression*, and *unary-expression*.  

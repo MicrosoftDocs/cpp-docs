@@ -1,38 +1,21 @@
 ---
 title: "Compiler Error C2440 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2440"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2440"
+f1_keywords: ["C2440"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2440"]
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2440
 'conversion' : cannot convert from 'type1' to 'type2'  
@@ -251,3 +234,58 @@ int main()
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
 
 ```
+
+## Example  
+### Copy-list-initialization
+
+Visual Studio 2017 and later correctly raise compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. In C++17 copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen.
+
+The following example compiles in Visual Studio 2015 but not in Visual Studio 2017.
+
+```cpp  
+// C2440j.cpp  
+struct A
+{
+    explicit A(int) {} 
+    A(double) {}
+};
+
+int main()
+{
+    const A& a2 = { 1 }; // error C2440: 'initializing': cannot 
+                         // convert from 'int' to 'const A &'
+}
+```  
+  
+To correct the error, use direct initialization:  
+  
+```cpp  
+// C2440k.cpp  
+struct A
+{
+    explicit A(int) {} 
+    A(double) {}
+};
+
+int main()
+{
+    const A& a2{ 1 };
+}  
+```  
+
+## Example
+### cv-qualifiers in class construction
+
+In Visual Studio 2015, the compiler sometimes incorrectly ignores the cv-qualifier when generating a class object via a constructor call. This can potentially cause a crash or unexpected runtime behavior. The following example compiles in Visual Studio 2015 but raises a compiler error in Visual Studio 2017 and later:
+
+```cpp
+struct S 
+{
+    S(int);
+    operator int();
+};
+
+int i = (const S)0; // error C2440
+```
+
+To correct the error, declare operator int() as const.

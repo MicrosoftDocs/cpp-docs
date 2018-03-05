@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ismbclegal_l"
-  - "_ismbclegal"
-  - "_ismbcsymbol"
-  - "_ismbcsymbol_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ismbcsymbol_l"
-  - "_ismbcsymbol_l"
-  - "_ismbcsymbol"
-  - "_ismbclegal_l"
-  - "_ismbclegal"
-  - "ismbclegal_l"
-  - "ismbcsymbol"
-  - "ismbclegal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ismbcsymbol function"
-  - "ismbclegal_l function"
-  - "_istlegal_l function"
-  - "istlegal function"
-  - "_istlegal function"
-  - "_ismbcsymbol function"
-  - "_ismbclegal_l function"
-  - "ismbclegal function"
-  - "ismbcsymbol_l function"
-  - "_ismbclegal function"
-  - "_ismbcsymbol_l function"
-  - "istlegal_l function"
+f1_keywords: ["ismbcsymbol_l", "_ismbcsymbol_l", "_ismbcsymbol", "_ismbclegal_l", "_ismbclegal", "ismbclegal_l", "ismbcsymbol", "ismbclegal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ismbcsymbol function", "ismbclegal_l function", "_istlegal_l function", "istlegal function", "_istlegal function", "_ismbcsymbol function", "_ismbclegal_l function", "ismbclegal function", "ismbcsymbol_l function", "_ismbclegal function", "_ismbcsymbol_l function", "istlegal_l function"]
 ms.assetid: 31bf1ea5-b56f-4e28-b21e-b49a2cf93ffc
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 Checks whether a multibyte character is a legal or symbol character.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -112,7 +62,7 @@ int _ismbcsymbol_l(
   
 |Routine|Test condition|Code page 932 example|  
 |-------------|--------------------|---------------------------|  
-|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 – 0x9F or 0xE0 – 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
+|`_ismbclegal`|Valid multibyte|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|  
 |`_ismbcsymbol`|Multibyte symbol|Returns nonzero if and only if 0x8141<=`c`<=0x81AC.|  
   
 ### Generic-Text Routine Mappings  
@@ -130,9 +80,6 @@ int _ismbcsymbol_l(
 |`_ismbcsymbol,_ismbcsymbol_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Character Classification](../../c-runtime-library/character-classification.md)   

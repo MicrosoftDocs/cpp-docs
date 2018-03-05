@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: dff95d5d-7589-4432-82db-64b459c24352
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # FpCsr
 The register state also includes the x87 FPU control word. The calling convention dictates this register to be nonvolatile.  
@@ -37,10 +22,10 @@ The register state also includes the x87 FPU control word. The calling conventio
   
 ```  
 FPCSR[0:6]: Exception masks all 1's (all exceptions masked)  
-FPCSR[7]: Reserved – 0  
-FPCSR[8:9]: Precision Control – 10B (double precision)  
+FPCSR[7]: Reserved - 0  
+FPCSR[8:9]: Precision Control - 10B (double precision)  
 FPCSR[10:11]: Rounding  control - 0 (round to nearest)  
-FPCSR[12]: Infinity control – 0 (not used)  
+FPCSR[12]: Infinity control - 0 (not used)  
 ```  
   
  A callee that modifies any of the fields within FPCSR must restore them before returning to its caller. Furthermore, a caller that has modified any of these fields must restore them to their standard values before invoking a callee unless by agreement the callee expects the modified values.  

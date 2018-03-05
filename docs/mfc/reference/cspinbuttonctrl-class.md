@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSpinButtonCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CSpinButtonCtrl"
-  - "CSpinButtonCtrl class"
-  - "CSpinButtonCtrl class, common controls"
-  - "up-down controls, spin button control"
-  - "spin button control"
+f1_keywords: ["CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::Create", "AFXCMN/CSpinButtonCtrl::CreateEx", "AFXCMN/CSpinButtonCtrl::GetAccel", "AFXCMN/CSpinButtonCtrl::GetBase", "AFXCMN/CSpinButtonCtrl::GetBuddy", "AFXCMN/CSpinButtonCtrl::GetPos", "AFXCMN/CSpinButtonCtrl::GetRange", "AFXCMN/CSpinButtonCtrl::SetAccel", "AFXCMN/CSpinButtonCtrl::SetBase", "AFXCMN/CSpinButtonCtrl::SetBuddy", "AFXCMN/CSpinButtonCtrl::SetPos", "AFXCMN/CSpinButtonCtrl::SetRange"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSpinButtonCtrl [MFC], CSpinButtonCtrl", "CSpinButtonCtrl [MFC], Create", "CSpinButtonCtrl [MFC], CreateEx", "CSpinButtonCtrl [MFC], GetAccel", "CSpinButtonCtrl [MFC], GetBase", "CSpinButtonCtrl [MFC], GetBuddy", "CSpinButtonCtrl [MFC], GetPos", "CSpinButtonCtrl [MFC], GetRange", "CSpinButtonCtrl [MFC], SetAccel", "CSpinButtonCtrl [MFC], SetBase", "CSpinButtonCtrl [MFC], SetBuddy", "CSpinButtonCtrl [MFC], SetPos", "CSpinButtonCtrl [MFC], SetRange"]
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSpinButtonCtrl Class
 Provides the functionality of the Windows common spin button control.  
@@ -110,7 +89,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
   
  `rect`  
  Specifies the spin button control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure  
@@ -143,10 +122,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb759885) in the Windows SDK.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -213,7 +192,8 @@ CWnd* GetBuddy() const;
  Retrieves the current position of a spin button control.  
   
 ```  
-int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;  ```  
+int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;  
+```  
   
 ### Parameters  
  *lpbError*  
@@ -313,7 +293,8 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
   
 ```  
 int SetPos(int nPos);  
-int SetPos32(int nPos);```  
+int SetPos32(int nPos);
+```  
   
 ### Parameters  
  `nPos`  
@@ -340,7 +321,7 @@ void SetRange32(
 ```  
   
 ### Parameters  
- `nLower`and `nUpper`  
+ `nLower` and `nUpper`  
  Upper and lower limits for the control. For `SetRange`, neither limit can be greater than **UD_MAXVAL** or less than **UD_MINVAL**; in addition, the difference between the two limits cannot exceed **UD_MAXVAL**. `SetRange32` places no restrictions on the limits; use any integers.  
   
 ### Remarks  

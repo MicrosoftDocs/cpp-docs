@@ -1,39 +1,23 @@
 ---
-title: "How to: Use Tracking References in C++-CLI | Microsoft Docs"
+title: "How to: Use Tracking References in C++/CLI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLR types, passing by reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLR types, passing by reference"]
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Tracking References in C++/CLI
-This article shows how to use a tracking reference (%) in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] to pass common language runtime (CLR) types by reference.  
+This article shows how to use a tracking reference (%) in C++/CLI to pass common language runtime (CLR) types by reference.  
   
 ## To pass CLR types by reference  
  The following sample shows how to use a tracking reference to pass CLR types by reference.  

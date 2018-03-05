@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".bsc files, about .bsc files"
-  - "bsc files, about bsc files"
-  - "browse information files (.bsc)"
-  - "browse information files (.bsc), creating"
+dev_langs: ["C++"]
+helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Building Browse Information Files: Overview
 To create browse information for symbol browsing, the compiler creates an .sbr file for each source file in your project, then BSCMAKE.EXE concatenates the .sbr files into one .bsc file.  

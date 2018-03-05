@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "bsearch"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["bsearch"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "bsearch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [CRT], binary search"
-  - "bsearch function"
+f1_keywords: ["bsearch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["arrays [CRT], binary search", "bsearch function"]
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # bsearch
 Performs a binary search of a sorted array. A more secure version of this function is available; see [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).  
@@ -147,9 +116,6 @@ int main( void )
 cat cow dog goat horse human pig rat  
 cat found at 002F0F04  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Collections::ArrayList::BinarySearch](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.binarysearch.aspx)  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

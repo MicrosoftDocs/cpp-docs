@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "afx_msg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows messages [C++], handlers"
-  - "message handling [C++], Windows message handlers"
-  - "handler functions, standard Windows messages"
-  - "functions [C++], handler"
-  - "messages [C++], Windows"
+f1_keywords: ["afx_msg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows messages [MFC], handlers", "message handling [MFC], Windows message handlers", "handler functions, standard Windows messages", "functions [MFC], handler", "messages [MFC], Windows"]
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Handlers for Standard Windows Messages
 Default handlers for standard Windows messages (**WM_**) are predefined in class `CWnd`. The class library bases names for these handlers on the message name. For example, the handler for the `WM_PAINT` message is declared in `CWnd` as:  
@@ -52,7 +31,7 @@ Default handlers for standard Windows messages (**WM_**) are predefined in class
 > [!CAUTION]
 >  It is not safe to modify the arguments passed into a handler if you intend to pass them to a base-class handler. For example, you might be tempted to modify the `nChar` argument of the `OnChar` handler (to convert to uppercase, for example). This behavior is fairly obscure, but if you need to accomplish this effect, use the `CWnd` member function **SendMessage** instead.  
   
- How do you determine the proper way to override a given message When the Properties window writes the skeleton of the handler function for a given message — an `OnCreate` handler for `WM_CREATE`, for example — it sketches in the form of the recommended overridden member function. The following example recommends that the handler first call the base-class handler and proceed only on condition that it does not return –1.  
+ How do you determine the proper way to override a given message When the Properties window writes the skeleton of the handler function for a given message — an `OnCreate` handler for `WM_CREATE`, for example — it sketches in the form of the recommended overridden member function. The following example recommends that the handler first call the base-class handler and proceed only on condition that it does not return -1.  
   
  [!code-cpp[NVC_MFCMessageHandling#3](../mfc/codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]  
   

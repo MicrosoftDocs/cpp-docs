@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "student_t_distribution"
-  - "std::student_t_distribution"
-  - "random/std::student_t_distribution"
-  - "random/std::student_t_distribution::result_type"
-  - "random/std::student_t_distribution::reset"
-  - "random/std::student_t_distribution::operator()"
-  - "random/std::student_t_distribution::n"
-  - "random/std::student_t_distribution::param"
-  - "random/std::student_t_distribution::min"
-  - "random/std::student_t_distribution::max"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "student_t_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::student_t_distribution", "random/std::student_t_distribution::result_type", "random/std::student_t_distribution::reset", "random/std::student_t_distribution::operator()", "random/std::student_t_distribution::n", "random/std::student_t_distribution::param", "random/std::student_t_distribution::min", "random/std::student_t_distribution::max", "random/std::student_t_distribution::param_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::student_t_distribution [C++]", "std::student_t_distribution [C++], result_type", "std::student_t_distribution [C++], reset", "std::student_t_distribution [C++], n", "std::student_t_distribution [C++], param", "std::student_t_distribution [C++], min", "std::student_t_distribution [C++], max", "std::student_t_distribution [C++], param_type"]
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # student_t_distribution Class
 Generates a Student's *t*-distribution.  
@@ -83,14 +57,14 @@ public:
   
 ||||  
 |-|-|-|  
-|[student_t_distribution::student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
-|`student_t_distribution::operator()`||[student_t_distribution::param_type](#student_t_distribution__param_type)|  
+|[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
+|`student_t_distribution::operator()`||[param_type](#param_type)|  
   
  The property function `n()` returns the value for the stored distribution parameter `n`.  
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/LinkId=401094).  
+ For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/p/?linkid=401094).  
   
 ## Example  
   
@@ -172,7 +146,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="student_t_distribution__student_t_distribution"></a>  student_t_distribution::student_t_distribution  
+##  <a name="student_t_distribution"></a>  student_t_distribution::student_t_distribution  
  Constructs the distribution.  
   
 ```  
@@ -194,7 +168,7 @@ explicit student_t_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="student_t_distribution__param_type"></a>  student_t_distribution::param_type  
+##  <a name="param_type"></a>  student_t_distribution::param_type  
  Stores all the parameters of the distribution.  
 ```cpp    
 struct param_type {  

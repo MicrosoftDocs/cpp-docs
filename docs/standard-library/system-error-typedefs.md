@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["system_error/std::generic_errno"]
 ms.assetid: 28cf9f7d-9c28-4baa-a297-67c8260b07fb
 caps.latest.revision: 11
 manager: "ghogen"
@@ -23,7 +24,7 @@ typedef errc generic_error;
 ```  
   
 ### Remarks  
- The type is a synonym for [errc](../standard-library/system-error-enums.md#errc_enumeration).  
+ The type is a synonym for [errc](../standard-library/system-error-enums.md#errc).  
   
 ## See Also  
  [<system_error>](../standard-library/system-error.md)

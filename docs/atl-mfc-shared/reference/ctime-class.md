@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CTime"
-  - "CTime"
-  - "ATL::CTime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTime class"
-  - "shared classes, CTime"
+f1_keywords: ["CTime", "ATLTIME/ATL::CTime", "ATLTIME/ATL::CTime::CTime", "ATLTIME/ATL::CTime::Format", "ATLTIME/ATL::CTime::FormatGmt", "ATLTIME/ATL::CTime::GetAsDBTIMESTAMP", "ATLTIME/ATL::CTime::GetAsSystemTime", "ATLTIME/ATL::CTime::GetCurrentTime", "ATLTIME/ATL::CTime::GetDay", "ATLTIME/ATL::CTime::GetDayOfWeek", "ATLTIME/ATL::CTime::GetGmtTm", "ATLTIME/ATL::CTime::GetHour", "ATLTIME/ATL::CTime::GetLocalTm", "ATLTIME/ATL::CTime::GetMinute", "ATLTIME/ATL::CTime::GetMonth", "ATLTIME/ATL::CTime::GetSecond", "ATLTIME/ATL::CTime::GetTime", "ATLTIME/ATL::CTime::GetYear", "ATLTIME/ATL::CTime::Serialize64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTime class", "shared classes, CTime"]
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTime Class
 Represents an absolute time and date.  
@@ -79,8 +59,8 @@ class CTime
   
 |||  
 |-|-|  
-|[operator + –](#operator_add_-)|These operators add and subtract `CTimeSpan` and `CTime` objects.|  
-|[operator +=, –=](#operator_add_eq_-_eq)|These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.|  
+|[operator + -](#operator_add_-)|These operators add and subtract `CTimeSpan` and `CTime` objects.|  
+|[operator +=, -=](#operator_add_eq_-_eq)|These operators add and subtract a `CTimeSpan` object to and from this `CTime` object.|  
 |[operator =](#operator_eq)|The assignment operator.|  
 |[operator ==, < , etc.](#ctime_comparison_operators)|Comparison operators.|  
   
@@ -148,8 +128,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
   
  `time`  
  A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
-  
- In Visual C++ versions 6.0 and earlier, `time` was a value of `time_t`. Visual C++ .NET and later converts a `time_t` parameter to **__time64_t**.  
+
   
  `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
  Indicates the date and time values to be copied into the new `CTime` object.  
@@ -188,9 +167,9 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
   
     |Component|Range|  
     |---------------|-----------|  
-    |`nYear`|1970–3000|  
-    |`nMonth`|1–12|  
-    |`nDay`|1–31|  
+    |`nYear`|1970-3000|  
+    |`nMonth`|1-12|  
+    |`nDay`|1-31|  
     |`nHour`|0-23|  
     |`nMin`|0-59|  
     |`nSec`|0-59|  
@@ -206,7 +185,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
     > [!NOTE]
     >  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the Windows SDK. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
@@ -264,7 +243,7 @@ CString FormatGmt(UINT nFormatID) const;
  See the example for [CTime::Format](#format).  
   
 ##  <a name="getasdbtimestamp"></a>  CTime::GetAsDBTIMESTAMP  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible DBTIMESTAMP structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.  
   
 ```  
 bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
@@ -284,7 +263,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
- Call this member function to convert the time information stored in the `CTime` object to a Win32–compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
   
 ```  
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, messages"
-  - "message handling"
-  - "message maps"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, messages", "message handling [MFC]", "message maps [MFC]"]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Message Handling and Mapping
 This article family describes how messages and commands are processed by the MFC framework and how you connect them to their handler functions.  
@@ -43,7 +25,7 @@ This article family describes how messages and commands are processed by the MFC
   
  Message maps also supply a way to update user-interface objects (such as menus and toolbar buttons), enabling or disabling them to suit the current context.  
   
- For general information about messages and message queues in Windows, see [Messages and Message Queues](http://msdn.microsoft.com/library/windows/desktop/ms632590) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For general information about messages and message queues in Windows, see [Messages and Message Queues](http://msdn.microsoft.com/library/windows/desktop/ms632590) in the Windows SDK.  
   
 ## What do you want to know more about  
   

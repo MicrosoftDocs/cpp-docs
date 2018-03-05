@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_graphics/Concurrency::graphics"
-  - "amp_short_vectors/Concurrency::graphics"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["AMP_GRAPHICS/Concurrency"]
+dev_langs: ["C++"]
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics Namespace
 The graphics namespace provides types and functions that are designed for graphics programming.  
@@ -96,8 +79,8 @@ namespace graphics;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy Function](concurrency-graphics-namespace-functions.md#copy)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
-|[copy_async Function](concurrency-graphics-namespace-functions.md#copy_async)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
+|[copy](concurrency-graphics-namespace-functions.md#copy)|Overloaded. Copies the contents of the source texture into the destination host buffer.|  
+|[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|Overloaded. Asynchronously copies the contents of the source texture into the destination host buffer.|  
   
 ## Requirements  
  **Header:** amp_graphics.h  

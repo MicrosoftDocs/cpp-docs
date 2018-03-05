@@ -4,76 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_atoi64_l"
-  - "_wtoi64"
-  - "_atoi64"
-  - "_wtoi64_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_atoi64_l", "_wtoi64", "_atoi64", "_wtoi64_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_atoi64"
-  - "_tstoi64"
-  - "_ttoi64"
-  - "wtoi64"
-  - "_tstoi64_l"
-  - "atoi64"
-  - "_wtoi64_l"
-  - "_wtoi64"
-  - "wtoi64_l"
-  - "_atoi64_l"
-  - "atoi64_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tstoi64 function"
-  - "wtoi64 function"
-  - "atoi64_l function"
-  - "_ttoi64 function"
-  - "string conversion, to integers"
-  - "wtoi64_l function"
-  - "atoi64 function"
-  - "_tstoi64 function"
-  - "_atoi64_l function"
-  - "_wtoi64_l function"
-  - "ttoi64 function"
-  - "_wtoi64 function"
-  - "_atoi64 function"
+f1_keywords: ["_atoi64", "_tstoi64", "_ttoi64", "wtoi64", "_tstoi64_l", "atoi64", "_wtoi64_l", "_wtoi64", "wtoi64_l", "_atoi64_l", "atoi64_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tstoi64 function", "wtoi64 function", "atoi64_l function", "_ttoi64 function", "string conversion, to integers", "wtoi64_l function", "atoi64 function", "_tstoi64 function", "_atoi64_l function", "_wtoi64_l function", "ttoi64 function", "_wtoi64 function", "_atoi64 function"]
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 Converts a string to a 64-bit integer.  
@@ -122,7 +67,7 @@ __int64 _wtoi64_l(
 [whitespace] [sign] [digits]]  
 ```  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  `_wtoi64` is identical to `_atoi64` except that it takes a wide character string as a parameter.  
   
@@ -189,12 +134,6 @@ Function: _atoi64( "314127.64" ) = 314127
 Function: _atoi64( "3336402735171707160320" ) = -1  
 Overflow condition occurred.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt64](https://msdn.microsoft.com/en-us/library/system.convert.toint64.aspx)  
-  
--   [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint64.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

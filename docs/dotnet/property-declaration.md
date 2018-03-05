@@ -4,38 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__property keyword"
-  - "declaring properties, C++"
-  - "property keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__property keyword", "declaring properties, C++", "property keyword [C++]"]
 ms.assetid: de169378-a8b8-49f4-a586-76bffc9b5c9f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Property Declaration
-The way to declare a property in a managed class has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way to declare a property in a managed class has changed from Managed Extensions for C++ to Visual C++.  
   
  In the Managed Extensions design, each `set` or `get` property accessor is specified as an independent method. The declaration of each method is prefixed with the `__property` keyword. The method name begins with either `set_` or `get_` followed by the actual name of the property (as visible to the user). Thus, a `Vector` providing an `x` coordinate `get` property would name it `get_x` and the user would invoke it as `x`. This naming convention and separate specification of methods actually reflects the underlying runtime implementation of the property. For example, here is our `Vector` with a set of coordinate properties:  
   
@@ -69,7 +51,7 @@ public:
 };  
 ```  
   
- If the access methods of the property reflect distinct access levels – such as a `public``get` and a `private` or `protected``set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
+ If the access methods of the property reflect distinct access levels - such as a `public get` and a `private` or `protected set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
   
 ```  
 public ref class Vector sealed {   
@@ -84,7 +66,7 @@ public:
          _x = newx;  
       }  
   
-   } // note: extent of private culminates here …  
+   } // note: extent of private culminates here  
   
 // note: dot is a public method of Vector  
 double dot( const Vector^ wv );  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridColorProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridColorProperty class"
-  - "CMFCPropertyGridColorProperty::OnClickButton method"
-  - "CMFCPropertyGridColorProperty::FormatProperty method"
-  - "CMFCPropertyGridColorProperty::OnDrawValue method"
-  - "CMFCPropertyGridColorProperty::OnUpdateValue method"
-  - "CMFCPropertyGridColorProperty::OnEdit method"
+f1_keywords: ["CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty", "CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton", "CMFCPropertyGridColorProperty [MFC], EnableOtherButton", "CMFCPropertyGridColorProperty [MFC], GetColor", "CMFCPropertyGridColorProperty [MFC], SetColor", "CMFCPropertyGridColorProperty [MFC], SetColumnsNumber", "CMFCPropertyGridColorProperty [MFC], SetOriginalValue"]
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridColorProperty Class
 The `CMFCPropertyGridColorProperty` class supports a property list control item that opens a color selection dialog box.  
@@ -62,7 +40,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 |Name|Description|  
 |----------|-----------------|  
 |[CMFCPropertyGridColorProperty::EnableAutomaticButton](#enableautomaticbutton)|Enables the *automatic* button on the color selection dialog box. (The standard automatic button is labeled **Automatic**.)|  
-|[CMFCPropertyGridColorProperty::EnableOtherButton](#enableotherbutton)|Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors…**.)|  
+|[CMFCPropertyGridColorProperty::EnableOtherButton](#enableotherbutton)|Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors**.)|  
 |`CMFCPropertyGridColorProperty::FormatProperty`|Formats the text representation of a property value. (Overrides [CMFCPropertyGridProperty::FormatProperty](../../mfc/reference/cmfcpropertygridproperty-class.md#formatproperty).)|  
 |[CMFCPropertyGridColorProperty::GetColor](#getcolor)|Gets the current color of the property.|  
 |`CMFCPropertyGridColorProperty::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|  
@@ -143,7 +121,7 @@ void EnableAutomaticButton(
 ### Remarks  
   
 ##  <a name="enableotherbutton"></a>  CMFCPropertyGridColorProperty::EnableOtherButton  
- Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors…**.)  
+ Enables the *other* button on the color selection dialog box. (The standard other button is labeled **More Colors**.)  
   
 ```  
 void EnableOtherButton(

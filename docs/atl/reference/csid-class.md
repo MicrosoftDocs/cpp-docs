@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSid"
-  - "ATL::CSid"
-  - "ATL.CSid"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSid class"
+f1_keywords: ["CSid", "ATLSECURITY/ATL::CSid", "ATLSECURITY/ATL::CSid::CSidArray", "ATLSECURITY/ATL::CSid::CSid", "ATLSECURITY/ATL::CSid::AccountName", "ATLSECURITY/ATL::CSid::Domain", "ATLSECURITY/ATL::CSid::EqualPrefix", "ATLSECURITY/ATL::CSid::GetLength", "ATLSECURITY/ATL::CSid::GetPSID", "ATLSECURITY/ATL::CSid::GetPSID_IDENTIFIER_AUTHORITY", "ATLSECURITY/ATL::CSid::GetSubAuthority", "ATLSECURITY/ATL::CSid::GetSubAuthorityCount", "ATLSECURITY/ATL::CSid::IsValid", "ATLSECURITY/ATL::CSid::LoadAccount", "ATLSECURITY/ATL::CSid::Sid", "ATLSECURITY/ATL::CSid::SidNameUse"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSid class"]
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSid Class
 This class is a wrapper for a `SID` (security identifier) structure.  
@@ -101,9 +82,9 @@ class CSid
 ## Remarks  
  The `SID` structure is a variable-length structure used to uniquely identify users or groups.  
   
- Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](http://msdn.microsoft.com/library/0e3a2606-74b8-4412-9803-bb437e22da85), [AtlSetGroupSid](http://msdn.microsoft.com/library/83531d32-11ab-4a68-a3c6-1bfa54ab8dfa), [AtlGetGroupSid](http://msdn.microsoft.com/library/8e7ec6b9-15c8-4a8a-977e-1e4c853d0be7), and [AtlSetOwnerSid](http://msdn.microsoft.com/library/3a8abb76-1d2c-465d-a5e8-62a12a3c37f3).  
+ Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), and [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -220,7 +201,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
  Returns **true** on success, **false** on failure.  
   
 ### Remarks  
- See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more details.  
+ See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.  
   
 ##  <a name="getlength"></a>  CSid::GetLength  
  Returns the length of the `CSid` object.  
@@ -485,7 +466,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### Return Value  
- Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399), although this function is only available on Windows 2000 or later and so is emulated for earlier operating systems.  
+ Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
   
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  Returns a description of the state of the `CSid` object.  

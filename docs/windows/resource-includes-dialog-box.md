@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.resourceincludes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Resource Includes dialog box"
-  - "rc files, changing storage"
-  - "symbol header files, changing"
-  - "compiling source code, including resources"
-  - ".rc files, changing storage"
-  - "symbol header files, read-only"
-  - "symbols, symbol header files"
+f1_keywords: ["vc.editors.resourceincludes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Resource Includes dialog box", "rc files, changing storage", "symbol header files, changing", "compiling source code, including resources", ".rc files, changing storage", "symbol header files, read-only", "symbols, symbol header files"]
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Includes Dialog Box
 You can use the **Resource Includes** dialog box to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in Resource.h.  
@@ -59,7 +36,7 @@ You can use the **Resource Includes** dialog box to modify the environment's nor
   
  Once you have made changes to your resource file using the **Resource Includes** dialog box, you need to close the .rc file and then reopen it for the changes to take effect. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+
   
 ## Requirements  
  Win32  

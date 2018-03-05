@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "protected"
-  - "protected_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "protected keyword [C++], member access"
-  - "protected keyword [C++]"
+f1_keywords: ["protected_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["protected keyword [C++], member access", "protected keyword [C++]"]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # protected (C++)
 ## Syntax  

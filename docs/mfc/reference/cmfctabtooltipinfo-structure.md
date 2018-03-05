@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCTabToolTipInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTabToolTipInfo struct"
+f1_keywords: ["CMFCTabToolTipInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTabToolTipInfo struct"]
 ms.assetid: 9c3b3fb9-1497-4d59-932b-0da9348dd5e2
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCTabToolTipInfo Structure
 This structure provides information about the MDI tab that the user is hovering over.  

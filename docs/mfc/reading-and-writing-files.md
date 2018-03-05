@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFile class, objects"
-  - "examples [MFC], reading files"
-  - "files [C++], writing to"
-  - "examples [MFC], writing to files"
-  - "files [C++], reading"
-  - "MFC [C++], file operations"
-  - "CFile class, reading and writing CFile objects"
-  - "reading files"
-  - "writing to files [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFile class [MFC], objects", "examples [MFC], reading files", "files [MFC], writing to", "examples [MFC], writing to files", "files [MFC], reading", "MFC, file operations", "CFile class [MFC], reading and writing CFile objects", "reading files", "writing to files [MFC]"]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Reading and Writing Files
 If you've used the C run-time library file-handling functions, MFC reading and writing operations will appear familiar. This article describes reading directly from and writing directly to a `CFile` object. You can also do buffered file I/O with the [CArchive](../mfc/reference/carchive-class.md) class.  

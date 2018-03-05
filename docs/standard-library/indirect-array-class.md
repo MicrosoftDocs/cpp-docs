@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std.indirect_array"
-  - "valarray/std::indirect_array"
-  - "std::indirect_array"
-  - "indirect_array"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "indirect_array class"
+ms.topic: "reference"
+f1_keywords: ["valarray/std::indirect_array"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["indirect_array class"]
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # indirect_array Class
 An internal, auxiliary template class that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.  
@@ -49,7 +29,7 @@ An internal, auxiliary template class that supports objects that are subsets of 
   
  You construct an **indirect_array\<Type>** object only by writing an expression of the form **va[xa]**. The member functions of class indirect_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.  
   
- The sequence consists of **xa.**[size](../standard-library/valarray-class.md#valarray__size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
+ The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
   
 ## Example:  
   

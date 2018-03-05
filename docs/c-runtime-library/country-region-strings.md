@@ -4,38 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.strings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "country/region strings"
+f1_keywords: ["c.strings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["country/region strings"]
 ms.assetid: 5baf0ccf-0d9b-40dc-83bd-323705287930
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Country/Region Strings
-Country and region strings can be combined with a language string to create a locale specification for the `setlocale`, `_wsetlocale`, `_create_locale`, and `_wcreate_locale` functions. For lists of country/region names that are supported by various Windows operating system versions, see the [National Language Support (NLS) API Reference](http://msdn.microsoft.com/goglobal/bb896001.aspx).In the lists, the country/region string can be any of the country values in the **Locale – Language Country/Region** column, or any of the abbreviations in the **Country or Region name abbreviation** column.  
+Country and region strings can be combined with a language string to create a locale specification for the `setlocale`, `_wsetlocale`, `_create_locale`, and `_wcreate_locale` functions. For lists of country/region names that are supported by various Windows operating system versions, see [National Language Support (NLS) API Reference](https://www.microsoft.com/resources/msdn/goglobal/default.mspx). In the lists, the country/region string can be any of the country values in the **Locale - Language Country/Region** column, or any of the abbreviations in the **Country or Region name abbreviation** column. For additional language support information in Windows operating systems by version, see [Appendix A: Product Behavior](http://msdn.microsoft.com/goglobal/bb896001.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference.  
   
  The C run-time library implementation also supports the following additional country/region strings and abbreviations:  
   

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interpreting user input through views"
-  - "views, user interface and input"
-  - "input, view class"
-  - "CView class, interpreting user input"
-  - "user input, interpreting through view class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interpreting user input through views [MFC]", "views [MFC], user interface and input", "input [MFC], view class [MFC]", "CView class [MFC], interpreting user input", "user input [MFC], interpreting through view class [MFC]"]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Interpreting User Input Through a View
 Other member functions of the view handle and interpret all user input. You will usually define message-handler member functions in your view class to process:  

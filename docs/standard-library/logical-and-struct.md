@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::logical_and"
-  - "xfunctional/std::logical_and"
-  - "std.logical_and"
-  - "logical_and"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical_and class"
-  - "logical_and struct"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::logical_and"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical_and class", "logical_and struct"]
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # logical_and Struct
 A predefined function object that performs the logical conjunction operation ( `operator&&`) on its arguments.  
@@ -72,7 +50,7 @@ struct logical_and<void>
  The right operand of the logical conjunction operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``&&``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator&&`.  
+ The result of `Left && Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator&&`.  
   
 ## Remarks  
  For user-defined types, there is no short-circuiting of operand evaluation. Both arguments are evaluated by `operator&&`.  

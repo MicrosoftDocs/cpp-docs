@@ -4,57 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "bernoulli_distribution"
-  - "std::bernoulli_distribution"
-  - "random/std::bernoulli_distribution"
-  - "std::bernoulli_distribution::reset"
-  - "random/std::bernoulli_distribution::reset"
-  - "std::bernoulli_distribution::p"
-  - "random/std::bernoulli_distribution::p"
-  - "std::bernoulli_distribution::param"
-  - "random/std::bernoulli_distribution::param"
-  - "std::bernoulli_distribution::min"
-  - "random/std::bernoulli_distribution::min"
-  - "std::bernoulli_distribution::max"
-  - "random/std::bernoulli_distribution::max"
-  - "std::bernoulli_distribution::operator()"
-  - "random/std::bernoulli_distribution::operator()"
-  - "std::bernoulli_distribution::param_type"
-  - "random/std::bernoulli_distribution::param_type"
-  - "std::bernoulli_distribution::param_type::p"
-  - "random/std::bernoulli_distribution::param_type::p"
-  - "std::bernoulli_distribution::param_type::operator=="
-  - "random/std::bernoulli_distribution::param_type::operator=="
-  - "std::bernoulli_distribution::param_type::operator!="
-  - "random/std::bernoulli_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bernoulli_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::bernoulli_distribution", "random/std::bernoulli_distribution::reset", "random/std::bernoulli_distribution::p", "random/std::bernoulli_distribution::param", "random/std::bernoulli_distribution::min", "random/std::bernoulli_distribution::max", "random/std::bernoulli_distribution::operator()", "random/std::bernoulli_distribution::param_type", "random/std::bernoulli_distribution::param_type::p", "random/std::bernoulli_distribution::param_type::operator==", "random/std::bernoulli_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::bernoulli_distribution [C++]", "std::bernoulli_distribution [C++], reset", "std::bernoulli_distribution [C++], p", "std::bernoulli_distribution [C++], param", "std::bernoulli_distribution [C++], min", "std::bernoulli_distribution [C++], max", "std::bernoulli_distribution [C++], param_type", "std::bernoulli_distribution [C++], param_type"]
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # bernoulli_distribution Class
 Generates a Bernoulli distribution.  
@@ -99,8 +60,8 @@ The class describes a distribution that produces values of type `bool`, distribu
   
 ||||  
 |-|-|-|  
-|[bernoulli_distribution::bernoulli_distribution](#bernoulli_distribution__bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
-|`bernoulli_distribution::operator()`||[bernoulli_distribution::param_type](#bernoulli_distribution__param_type)|  
+|[bernoulli_distribution](#bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
+|`bernoulli_distribution::operator()`||[param_type](#param_type)|  
   
 The property member `p()` returns the currently stored distribution parameter value `p`.  
   
@@ -114,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/LinkId=398467).  
+For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/p/?linkid=398467).  
   
 ## Example  
   
@@ -181,7 +142,7 @@ false :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   
 **Namespace:** std  
   
-##  <a name="bernoulli_distribution__bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution  
+##  <a name="bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution  
 Constructs the distribution.  
   
 ```  
@@ -203,7 +164,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="bernoulli_distribution__param_type"></a>  bernoulli_distribution::param_type  
+##  <a name="param_type"></a>  bernoulli_distribution::param_type  
 Contains the parameters of the distribution.  
   
 struct param_type {  

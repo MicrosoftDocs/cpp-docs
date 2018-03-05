@@ -4,51 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CRowsetImpl"
-  - "ATL.CRowsetImpl"
-  - "ATL::CRowsetImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRowsetImpl class"
+ms.topic: "reference"
+f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRowsetImpl class"]
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl Class
 Provides a standard OLE DB rowset implementation without requiring multiple inheritance of many implementation interfaces.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,  
    class Storage,  
    class CreatorClass,  
    class ArrayType = CAtlArray<Storage>,   
    class RowClass = CSimpleRow,   
-   class RowsetInterface = IRowsetImpl < T, IRowset >   
+   class RowsetInterface = IRowsetImpl <T, IRowset>   
 >  
 class CRowsetImpl :    
    public CComObjectRootEx<CreatorClass::_ThreadModel>,   

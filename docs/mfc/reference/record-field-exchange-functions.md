@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO (Data Access Objects), record field exchange (DFX)"
-  - "ODBC, bulk RFX data exchange functions"
-  - "RFX (record field exchange), ODBC classes"
-  - "DFX (DAO record field exchange), data exchange functions"
-  - "DFX functions"
-  - "bulk RFX functions"
-  - "DFX (DAO record field exchange)"
-  - "RFX (record field exchange), DAO classes"
-  - "ODBC, RFX"
-  - "RFX (record field exchange), data exchange functions"
-  - "RFX (record field exchange)"
+f1_keywords: ["AFXDB/RFX_Binary", "AFXDB/RFX_Bool", "AFXDB/RFX_Byte", "AFXDB/RFX_Date", "AFXDB/RFX_Double", "AFXDB/RFX_Int", "AFXDB/RFX_Long", "AFXDB/RFX_LongBinary", "AFXDB/RFX_Single", "AFXDB/RFX_Text", "AFXDB/RFX_Binary_Bulk", "AFXDB/RFX_Bool_Bulk", "AFXDB/RFX_Byte_Bulk", "AFXDB/RFX_Date_Bulk", "AFXDB/RFX_Double_Bulk", "AFXDB/RFX_Int_Bulk", "AFXDB/RFX_Long_Bulk", "AFXDB/RFX_Single_Bulk", "AFXDB/RFX_Text_Bulk", "AFXDB/DFX_Binary", "AFXDB/DFX_Bool", "AFXDB/DFX_Byte", "AFXDB/DFX_Currency", "AFXDB/DFX_DateTime", "AFXDB/DFX_Double", "AFXDB/DFX_Long", "AFXDB/DFX_LongBinary", "AFXDB/DFX_Short", "AFXDB/DFX_Single", "AFXDB/DFX_Text"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DAO (Data Access Objects), record field exchange (DFX)", "ODBC, bulk RFX data exchange functions [MFC]", "RFX (record field exchange), ODBC classes", "DFX (DAO record field exchange), data exchange functions [MFC]", "DFX functions [MFC]", "bulk RFX functions [MFC]", "DFX (DAO record field exchange)", "RFX (record field exchange), DAO classes", "ODBC, RFX", "RFX (record field exchange), data exchange functions [MFC]", "RFX (record field exchange)"]
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Record Field Exchange Functions
 This topic lists the Record Field Exchange (RFX, Bulk RFX, and DFX) functions used to automate the transfer of data between a recordset object and its data source and to perform other operations on the data.  
@@ -271,7 +243,7 @@ void RFX_Double(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="RFX_Int"></a>  RFX_Int
+## <a name="rfx_int"></a>  RFX_Int
 Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_SMALLINT**.  
   
 ### Syntax  
@@ -299,7 +271,7 @@ void RFX_Int(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="RFX_Long"></a>  RFX_Long
+## <a name="rfx_long"></a>  RFX_Long
 Transfers long integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_INTEGER**.  
   
 ### Syntax  
@@ -328,7 +300,7 @@ value );
 ### Requirements  
  **Header:** afxdb.h  
   
-## <a name="RFX_LongBinary"></a>  RFX_LongBinary
+## <a name="rfx_longbinary"></a>  RFX_LongBinary
 Transfers binary large object (BLOB) data using class [CLongBinary](clongbinary-class.md) between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_LONGVARBINARY** or **SQL_LONGVARCHAR**.  
   
 ### Syntax  
@@ -447,7 +419,7 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
  **Header:** afxdb.h  
 
 
-## <a name="rfx_binary_Bulk"></a>  RFX_Binary_Bulk
+## <a name="rfx_binary_bulk"></a>  RFX_Binary_Bulk
 Transfers multiple rows of byte data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -493,7 +465,7 @@ void RFX_Binary_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="rfx_bool_Bulk"></a>  RFX_Bool_Bulk
+## <a name="rfx_bool_bulk"></a>  RFX_Bool_Bulk
 Transfers multiple rows of Boolean data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -535,7 +507,7 @@ void RFX_Bool_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="rfx_byte_Bulk"></a>  RFX_Byte_Bulk
+## <a name="rfx_byte_bulk"></a>  RFX_Byte_Bulk
 Transfers multiple rows of single bytes from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -577,7 +549,7 @@ void RFX_Byte_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
   
-## <a name="rfx_date_Bulk"></a>  RFX_Date_Bulk
+## <a name="rfx_date_bulk"></a>  RFX_Date_Bulk
 Transfers multiple rows of **TIMESTAMP_STRUCT** data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -619,7 +591,7 @@ void RFX_Date_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="rfx_double_Bulk"></a>  RFX_Double_Bulk
+## <a name="rfx_double_bulk"></a>  RFX_Double_Bulk
 Transfers multiple rows of double-precision, floating-point data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -661,7 +633,7 @@ void RFX_Double_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="RFX_Int_Bulk"></a>  RFX_Int_Bulk
+## <a name="rfx_int_bulk"></a>  RFX_Int_Bulk
 Transfers integer data between the field data members of a `CRecordset` object and the columns of a record on the data source of ODBC type **SQL_SMALLINT**.  
   
 ### Syntax  
@@ -689,7 +661,7 @@ void RFX_Int(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="RFX_Long_Bulk"></a>  RFX_Long_Bulk
+## <a name="rfx_long_bulk"></a>  RFX_Long_Bulk
 Transfers multiple rows of long integer data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -731,7 +703,7 @@ void RFX_Long_Bulk(
 ### Requirements  
  **Header:** afxdb.h  
 
-## <a name="rfx_single_Bulk"></a>  RFX_Single_Bulk
+## <a name="rfx_single_bulk"></a>  RFX_Single_Bulk
 Transfers multiple rows of floating-point data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  
@@ -774,7 +746,7 @@ void RFX_Single_Bulk(
  **Header:** afxdb.h  
   
 
-## <a name="rfx_text_Bulk"></a>  RFX_Text_Bulk
+## <a name="rfx_text_bulk"></a>  RFX_Text_Bulk
 Transfers multiple rows of character data from a column of an ODBC data source to a corresponding array in a `CRecordset`-derived object.  
   
 ### Syntax  

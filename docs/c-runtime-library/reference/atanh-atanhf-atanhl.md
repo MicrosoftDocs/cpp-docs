@@ -4,56 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "atanhl"
-  - "atanhf"
-  - "atanh"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["atanhl", "atanhf", "atanh"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "atanhl"
-  - "atanhf"
-  - "atanh"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "atanhf function"
-  - "atanhl function"
-  - "atanh funciton"
+f1_keywords: ["atanhl", "atanhf", "atanh"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["atanhf function", "atanhl function", "atanh funciton"]
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # atanh, atanhf, atanhl
 Calculates the inverse hyperbolic tangent.  
@@ -83,7 +48,7 @@ long double atanhl(
  Floating-point value.  
   
 ## Return Value  
- The `atanh` functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of `x`. If `x` is greater than 1, or less than –1, `errno` is set to `EDOM` and the result is a quiet NaN. If `x` is equal to 1 or -1, a positive or negative infinity is returned, respectively, and `errno` is set to `ERANGE`.  
+ The `atanh` functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of `x`. If `x` is greater than 1, or less than -1, `errno` is set to `EDOM` and the result is a quiet NaN. If `x` is equal to 1 or -1, a positive or negative infinity is returned, respectively, and `errno` is set to `ERANGE`.  
   
 |Input|SEH Exception|`Matherr` Exception|  
 |-----------|-------------------|-------------------------|  
@@ -128,9 +93,6 @@ int main( void )
 tanh( 0.785398 ) = 0.655794  
 atanh( 0.655794 ) = 0.785398  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

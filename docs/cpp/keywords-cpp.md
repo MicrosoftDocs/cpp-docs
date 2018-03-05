@@ -4,83 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-f1_keywords: 
-  - "_raise"
-  - "_value"
-  - "_interface"
-  - "_assume"
-  - "_declspec"
-  - "_if_exists"
-  - "cdecl"
-  - "_sealed"
-  - "_box"
-  - "_nogc"
-  - "_ptr64"
-  - "_fastcall"
-  - "_alignof"
-  - "_stdcall"
-  - "_single_inheritance"
-  - "_event"
-  - "_noop"
-  - "_based"
-  - "_cdecl"
-  - "_m64"
-  - "_virtual_inheritance"
-  - "_inline"
-  - "_delegate"
-  - "_int64"
-  - "_multiple_inheritance"
-  - "_m128d"
-  - "_try_cast"
-  - "_asm"
-  - "_int16"
-  - "_hook"
-  - "_int32"
-  - "_property"
-  - "_m128"
-  - "_m128i"
-  - "_int8"
-  - "_identifier"
-  - "_forceinline"
-  - "_gc"
-  - "_unaligned"
-  - "_uuidof"
-  - "_if_not_exists"
-  - "_unhook"
-  - "_pin"
-  - "_super"
-  - "_abstract"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, keywords"
-  - "keywords [C++]"
-  - "__identifer keyword [C++], naming"
-  - "Microsoft-specific keywords"
-  - "__identifer keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, keywords", "keywords [C++]", "__identifer keyword [C++], naming", "Microsoft-specific keywords", "__identifer keyword [C++]"]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Keywords (C++)
 Keywords are predefined reserved identifiers that have special meanings. They cannot be used as identifiers in your program. The following keywords are reserved for Microsoft C++. Names with leading underscores are Microsoft extensions.  
@@ -125,7 +59,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[nothrow](../cpp/nothrow-cpp.md) <sup>1</sup>|[novtable](../cpp/novtable.md) <sup>1</sup>|[nullptr](../cpp/nullptr.md)|  
 |[operator](../cpp/operator-overloading.md)|[private](../cpp/private-cpp.md)|[property](../windows/property-cpp-component-extensions.md)|  
 |[property](../cpp/property-cpp.md) <sup>1</sup>|[protected](../cpp/protected-cpp.md)|[public](../cpp/public-cpp.md)|  
-|[ref class](../windows/classes-and-structs-cpp-component-extensions.md)|[ref struct](../windows/classes-and-structs-cpp-component-extensions.md)|[register](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)|  
+|[ref class](../windows/classes-and-structs-cpp-component-extensions.md)|[ref struct](../windows/classes-and-structs-cpp-component-extensions.md)|[register](../cpp/storage-classes-cpp.md#register)|  
 |[reinterpret_cast](../cpp/reinterpret-cast-operator.md)|[return](../cpp/return-statement-cpp.md)|[safecast](../windows/safe-cast-cpp-component-extensions.md)|  
 |[sealed](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[short](../cpp/fundamental-types-cpp.md)|  
 |[signed](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](storage-classes-cpp.md)|  
@@ -157,7 +91,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
  The `__based` keyword has limited uses for 32-bit and 64-bit target compilations.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   

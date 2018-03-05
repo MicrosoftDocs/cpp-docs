@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.StringPooling"
-  - "VC.Project.VCCLWCECompilerTool.StringPooling"
-  - "/gf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "duplicate strings"
-  - "Eliminate Duplicate Strings compiler option [C++]"
-  - "pooling strings compiler option [C++]"
-  - "-GF compiler option [C++]"
-  - "/GF compiler option [C++]"
-  - "GF compiler option [C++]"
-  - "strings [C++], pooling"
+f1_keywords: ["VC.Project.VCCLCompilerTool.StringPooling", "VC.Project.VCCLWCECompilerTool.StringPooling", "/gf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["duplicate strings", "Eliminate Duplicate Strings compiler option [C++]", "pooling strings compiler option [C++]", "-GF compiler option [C++]", "/GF compiler option [C++]", "GF compiler option [C++]", "strings [C++], pooling"]
 ms.assetid: bb7b5d1c-8e1f-453b-9298-8fcebf37d16c
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /GF (Eliminate Duplicate Strings)
 Enables the compiler to create a single copy of identical strings in the program image and in memory during execution. This is an optimization called *string pooling* that can create smaller programs.  

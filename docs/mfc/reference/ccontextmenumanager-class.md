@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CContextMenuManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CContextMenuManager class"
+f1_keywords: ["CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames", "AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CContextMenuManager [MFC], CContextMenuManager", "CContextMenuManager [MFC], AddMenu", "CContextMenuManager [MFC], GetMenuById", "CContextMenuManager [MFC], GetMenuByName", "CContextMenuManager [MFC], GetMenuNames", "CContextMenuManager [MFC], LoadState", "CContextMenuManager [MFC], ResetState", "CContextMenuManager [MFC], SaveState", "CContextMenuManager [MFC], SetDontCloseActiveMenu", "CContextMenuManager [MFC], ShowPopupMenu", "CContextMenuManager [MFC], TrackPopupMenu"]
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CContextMenuManager Class
 The `CContextMenuManager` object manages shortcut menus, also known as context menus.  

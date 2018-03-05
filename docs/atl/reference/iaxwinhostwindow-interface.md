@@ -4,41 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAxWinHostWindow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAxWinHostWindow interface"
+f1_keywords: ["IAxWinHostWindow", "ATLIFACE/ATL::IAxWinHostWindow", "ATLIFACE/ATL::AttachControl", "ATLIFACE/ATL::CreateControl", "ATLIFACE/ATL::CreateControlEx", "ATLIFACE/ATL::QueryControl", "ATLIFACE/ATL::SetExternalDispatch", "ATLIFACE/ATL::SetExternalUIHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAxWinHostWindow interface"]
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinHostWindow Interface
 This interface provides methods for manipulating a control and its host object.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -210,7 +193,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 ## See Also  
  [IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)   
  [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
- [AtlAxGetHost](http://msdn.microsoft.com/library/ad1f4f16-608d-4e96-8d30-04d4ca906a7b)
+ [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 
 
 

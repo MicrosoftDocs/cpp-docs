@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset::hash_multiset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hash_multiset member [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset::hash_multiset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hash_multiset member [STL/CLR]"]
 ms.assetid: 1b224c60-b714-4ed5-9234-79b61b92a953
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::hash_multiset (STL/CLR)
 Constructs a container object.  
@@ -99,41 +82,31 @@ hash_multiset(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `hash_multiset(hash_multiset<Key>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[hash_multiset::begin (STL/CLR)](../dotnet/hash-multiset-begin-stl-clr.md)`(),` `right``.`[hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_multiset(hash_multiset<Key>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[hash_multiset::begin (STL/CLR)](../dotnet/hash-multiset-begin-stl-clr.md)`(),` `right``->`[hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_multiset(InIter first, InIter last);`  
   
- `hash_multiset(InIter first, InIter last);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_multiset(InIter first, InIter last, key_compare^ pred);`  
   
- `hash_multiset(InIter first, InIter last,`  
-  
- `key_compare^ pred);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_multiset(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
- `hash_multiset(InIter first, InIter last,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
   
  The constructor:  
   
@@ -143,23 +116,19 @@ hash_multiset(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred);`  
+ `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.  
   
  The constructor:  
   
- `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
+ `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_hash_multiset_construct.cpp   
 // compile with: /clr   
 #include <cliext/hash_set>   

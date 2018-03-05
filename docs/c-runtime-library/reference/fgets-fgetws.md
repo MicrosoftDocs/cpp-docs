@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fgets"
-  - "fgetws"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["fgets", "fgetws"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fgetts"
-  - "fgetws"
-  - "fgets"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fgetts function"
-  - "streams, getting strings from"
-  - "streams, reading from"
-  - "fgets function"
-  - "fgetws function"
-  - "fgetts function"
+f1_keywords: ["_fgetts", "fgetws", "fgets"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fgetts function", "streams, getting strings from", "streams, reading from", "fgets function", "fgetws function", "fgetts function"]
 ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fgets, fgetws
 Get a string from a stream.  
@@ -91,7 +54,7 @@ wchar_t *fgetws(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `fgets` function reads a string from the input `stream` argument and stores it in `str`. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` – 1, whichever comes first. The result stored in `str` is appended with a null character. The newline character, if read, is included in the string.  
+ The `fgets` function reads a string from the input `stream` argument and stores it in `str`. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` - 1, whichever comes first. The result stored in `str` is appended with a null character. The newline character, if read, is included in the string.  
   
  `fgetws` is a wide-character version of `fgets`.  
   
@@ -150,12 +113,6 @@ Line two.
 ```  
 Line one.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::ReadLine](https://msdn.microsoft.com/en-us/library/system.io.streamreader.readline.aspx)  
-  
--   [System::IO::TextReader::ReadBlock](https://msdn.microsoft.com/en-us/library/system.io.textreader.readblock.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

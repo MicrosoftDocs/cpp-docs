@@ -5,21 +5,24 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["CONCRT/concurrency::Agents_EventType", "CONCRT/concurrency::Concrt_TraceFlags", "CONCRT/concurrency::CriticalRegionType", "CONCRT/concurrency::PolicyElementKey", "CONCRT/concurrency::SchedulerType", "CONCRT/concurrency::SwitchingProxyState", "CONCRT/concurrency::WinRTInitializationType", "CONCRT/concurrency::join_type", "CONCRT/concurrency::message_status Enumeration"]
+dev_langs: ["C++"]
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # concurrency namespace enums
 ||||  
 |-|-|-|  
-|[Agents_EventType Enumeration](#agents_eventtype)|[ConcRT_EventType Enumeration](#concrt_eventtype)|[Concrt_TraceFlags Enumeration](#concrt_traceflags)|  
-|[CriticalRegionType Enumeration](#criticalregiontype)|[DynamicProgressFeedbackType Enumeration](#dynamicprogressfeedbacktype)|[PolicyElementKey Enumeration](#policyelementkey)|  
-|[SchedulerType Enumeration](#schedulertype)|[SchedulingProtocolType Enumeration](#schedulingprotocoltype)|[SwitchingProxyState Enumeration](#switchingproxystate)|  
-|[WinRTInitializationType Enumeration](#winrtinitializationtype)|[agent_status Enumeration](#agent_status)|[join_type Enumeration](#join_type)|  
-|[message_status Enumeration](#message_status)|[task_group_status Enumeration](#task_group_status)|  
+|[Agents_EventType](#agents_eventtype)|[ConcRT_EventType](#concrt_eventtype)|[Concrt_TraceFlags](#concrt_traceflags)|  
+|[CriticalRegionType](#criticalregiontype)|[DynamicProgressFeedbackType](#dynamicprogressfeedbacktype)|[PolicyElementKey](#policyelementkey)|  
+|[SchedulerType](#schedulertype)|[SchedulingProtocolType](#schedulingprotocoltype)|[SwitchingProxyState](#switchingproxystate)|  
+|[WinRTInitializationType](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|  
+|[message_status](#message_status)|[task_group_status](#task_group_status)|  
   
 ##  <a name="agent_status"></a>  agent_status Enumeration  
  The valid states for an `agent`.  
@@ -88,6 +91,7 @@ enum ConcRT_EventType;
   
 ### Requirements  
  **Header:** concrt.h
+ **Namespace:** concurrency
 
 ##  <a name="concrt_traceflags"></a>  Concrt_TraceFlags Enumeration  
  Trace flags for the event types  
@@ -128,7 +132,7 @@ enum CriticalRegionType;
  **Header:** concrtrm.h 
 
 ##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType Enumeration  
- Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
+ Used by the `DynamicProgressFeedback` policy to describe whether resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on virtual processors going in and out of the idle state through calls to the `Activate` and `Deactivate` methods on the `IVirtualProcessorRoot` interface. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
 enum DynamicProgressFeedbackType;
@@ -185,13 +189,13 @@ enum PolicyElementKey;
 |----------|-----------------|  
 |`ContextPriority`|The operating system thread priority of each context in the scheduler. If this key is set to the value `INHERIT_THREAD_PRIORITY` the contexts in the scheduler will inherit the priority of the thread that created the scheduler.<br /><br /> Valid values : Any of the valid values for the Windows `SetThreadPriority` function and the special value `INHERIT_THREAD_PRIORITY`<br /><br /> Default value : `THREAD_PRIORITY_NORMAL`|  
 |`ContextStackSize`|The reserved stack size of each context in the scheduler in kilobytes.<br /><br /> Valid values : Positive integers<br /><br /> Default value : `0`, indicating that the process' default value for stack size be used.|  
-|`DynamicProgressFeedback`|Determines whether the resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on the subscription level of underlying hardware threads. For more information, see [DynamicProgressFeedbackType Enumeration](#dynamicprogressfeedbacktype).<br /><br /> Valid values : A member of the `DynamicProgressFeedbackType` enumeration, either `ProgressFeedbackEnabled` or `ProgressFeedbackDisabled`<br /><br /> Default value : `ProgressFeedbackEnabled`|  
+|`DynamicProgressFeedback`|Determines whether the resources for the scheduler will be rebalanced according to statistical information gathered from the scheduler or only based on the subscription level of underlying hardware threads. For more information, see [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype).<br /><br /> Valid values : A member of the `DynamicProgressFeedbackType` enumeration, either `ProgressFeedbackEnabled` or `ProgressFeedbackDisabled`<br /><br /> Default value : `ProgressFeedbackEnabled`|  
 |`LocalContextCacheSize`|When the `SchedulingProtocol` policy key is set to the value `EnhanceScheduleGroupLocality`, this specifies the maximum number of runnable contexts allowed to be cached in per virtual processor local queues. Such contexts will typically run in last-in-first-out (LIFO) order on the virtual processor that caused them to become runnable. Note that this policy key has no meaning when the `SchedulingProtocol` key is set to the value `EnhanceForwardProgress`.<br /><br /> Valid values : Non-negative integers<br /><br /> Default value : `8`|  
 |`MaxConcurrency`|The maximum concurrency level desired by the scheduler. The resource manager will try to initially allocate this many virtual processors. The special value [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) indicates that the desired concurrency level is same as the number of hardware threads on the machine. If the value specified for `MinConcurrency` is greater than the number of hardware threads on the machine and `MaxConcurrency` is specified as `MaxExecutionResources`, the value for `MaxConcurrency` is raised to match what is set for `MinConcurrency`.<br /><br /> Valid values : Positive integers and the special value `MaxExecutionResources`<br /><br /> Default value : `MaxExecutionResources`|  
 |`MaxPolicyElementKey`|The maximum policy element key. Not a valid element key.|  
 |`MinConcurrency`|The minimum concurrency level that must be provided to the scheduler by the resource manager. The number of virtual processors assigned to a scheduler will never go below the minimum. The special value [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) indicates that the minimum concurrency level is same as the number of hardware threads on the machine. If the value specified for `MaxConcurrency` is less than the number of hardware threads on the machine and `MinConcurrency` is specified as `MaxExecutionResources`, the value for `MinConcurrency` is lowered to match what is set for `MaxConcurrency`.<br /><br /> Valid values : Non-negative integers and the special value `MaxExecutionResources`. Note that for scheduler policies used for the construction of Concurrency Runtime schedulers, the value `0` is invalid.<br /><br /> Default value : `1`|  
-|`SchedulerKind`|The type of threads that the scheduler will utilize for underlying execution contexts. For more information, see [SchedulerType Enumeration](#schedulertype).<br /><br /> Valid values : A member of the `SchedulerType` enumeration, for example, `ThreadScheduler`<br /><br /> Default value : `ThreadScheduler`. This translates to Win32 threads on all operating systems.|  
-|`SchedulingProtocol`|Describes which scheduling algorithm will be used by the scheduler. For more information, see [SchedulingProtocolType Enumeration](#schedulingprotocoltype).<br /><br /> Valid values : A member of the `SchedulingProtocolType` enumeration, either `EnhanceScheduleGroupLocality` or `EnhanceForwardProgress`<br /><br /> Default value : `EnhanceScheduleGroupLocality`|  
+|`SchedulerKind`|The type of threads that the scheduler will utilize for underlying execution contexts. For more information, see [SchedulerType](#schedulertype).<br /><br /> Valid values : A member of the `SchedulerType` enumeration, for example, `ThreadScheduler`<br /><br /> Default value : `ThreadScheduler`. This translates to Win32 threads on all operating systems.|  
+|`SchedulingProtocol`|Describes which scheduling algorithm will be used by the scheduler. For more information, see [SchedulingProtocolType](#schedulingprotocoltype).<br /><br /> Valid values : A member of the `SchedulingProtocolType` enumeration, either `EnhanceScheduleGroupLocality` or `EnhanceForwardProgress`<br /><br /> Default value : `EnhanceScheduleGroupLocality`|  
 |`TargetOversubscriptionFactor`|Tentative number of virtual processors per hardware thread. The target oversubscription factor can be increased by the Resource Manager, if necessary, to satisfy `MaxConcurrency` with the hardware threads on the machine.<br /><br /> Valid values : Positive integers<br /><br /> Default value : `1`|  
 |`WinRTInitialization`||  
   
@@ -199,7 +203,7 @@ enum PolicyElementKey;
  **Header:** concrt.h  
 
 ##  <a name="schedulertype"></a>  SchedulerType Enumeration  
- Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
+ Used by the `SchedulerKind` policy to describe the type of threads that the scheduler should utilize for underlying execution contexts. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
 enum SchedulerType;
@@ -216,7 +220,7 @@ enum SchedulerType;
  **Header:** concrt.h  
   
 ##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType Enumeration  
- Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
+ Used by the `SchedulingProtocol` policy to describe which scheduling algorithm will be utilized for the scheduler. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
 enum SchedulingProtocolType;
@@ -268,7 +272,7 @@ enum task_group_status;
  **Header:** pplinterface.h  
 
 ##  <a name="winrtinitializationtype"></a>  WinRTInitializationType Enumeration  
- Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey Enumeration](concurrency-namespace-enums.md).  
+ Used by the `WinRTInitialization` policy to describe whether and how the Windows Runtime will be initialized on scheduler threads for an application which runs on operating systems with version Windows 8 or higher. For more information on available scheduler policies, see [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
 enum WinRTInitializationType;

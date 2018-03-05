@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "quotation marks, command-line arguments"
-  - "double quotation marks"
-  - "command line, parsing"
-  - "parsing, command-line arguments"
-  - "startup code, parsing command-line arguments"
+dev_langs: ["C++"]
+helpviewer_keywords: ["quotation marks, command-line arguments", "double quotation marks", "command line [C++], parsing", "parsing, command-line arguments", "startup code, parsing command-line arguments"]
 ms.assetid: e634e733-ac2f-4298-abe2-7e9288c94951
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Parsing C++ Command-Line Arguments
 **Microsoft Specific**  
@@ -90,7 +69,7 @@ int main( int argc,      // Number of strings in array argv
 |`a\\\"b c d`|`a\"b`|`c`|`d`|  
 |`a\\\\"b c" d e`|`a\\b c`|`d`|`e`|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [main: Program Startup](../cpp/main-program-startup.md)

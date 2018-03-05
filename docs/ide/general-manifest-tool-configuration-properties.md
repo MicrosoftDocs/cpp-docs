@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCManifestTool.MergeRulesFile"
-  - "VC.Project.VCManifestTool.UseUnicodeResponseFiles"
-  - "VC.Project.VCManifestTool.SuppressStartupBanner"
-  - "VC.Project.VCManifestTool.UseFAT32Workaround"
-  - "VC.Project.VCManifestTool.VerboseOutput"
-  - "VC.Project.VCManifestTool.AssemblyIdentity"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
+dev_langs: ["C++"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # General, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 Use this dialog box to specify general options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
@@ -50,7 +29,7 @@ Use this dialog box to specify general options for [Mt.exe](http://msdn.microsof
  **Yes (/verbose)** specifies that additional build information will be displayed during manifest generation.  
   
  **Assembly Identity**  
- Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](http://msdn.microsoft.com/Library/f48e9531-efac-4d11-8166-f63a5ece1ac5). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
+ Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](/visualstudio/deployment/assemblyidentity-element-clickonce-application). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
   
  The following is an example identity string:  
   

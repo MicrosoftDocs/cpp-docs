@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX control containers [C++], accessing ActiveX controls"
-  - "ActiveX controls [C++], member variables of project"
-  - "connecting ActiveX controls to container member variables"
-  - "ActiveX controls [C++], accessing"
-  - "member variables [C++], ActiveX controls in project"
-  - "ActiveX control containers [C++], ActiveX controls as member variables"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "ActiveX controls [MFC], member variables of project", "connecting ActiveX controls to container member variables", "ActiveX controls [MFC], accessing", "member variables [MFC], ActiveX controls in project", "ActiveX control containers [MFC], ActiveX controls as member variables"]
 ms.assetid: 7898a336-440d-4a60-be43-cb062b807aee
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable
 The easiest way to access an ActiveX control from within its control container application is to associate the ActiveX control with a member variable of the dialog class that will contain the control.  

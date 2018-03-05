@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__fastcall"
-  - "__fastcall_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__fastcall keyword [C++]"
+f1_keywords: ["__fastcall_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__fastcall keyword [C++]"]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __fastcall
 **Microsoft Specific**  
@@ -86,7 +68,7 @@ void FASTCALL DeleteAggrWrapper(void* pWrapper);
 typedef BOOL (__fastcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)   

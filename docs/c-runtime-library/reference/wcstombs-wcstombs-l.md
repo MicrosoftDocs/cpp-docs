@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcstombs"
-  - "_wcstombs_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcstombs", "_wcstombs_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcstombs"
-  - "_wcstombs_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wcstombs_l function"
-  - "wcstombs function"
-  - "string conversion, wide characters"
-  - "wide characters, converting"
-  - "wcstombs_l function"
-  - "characters, converting"
-  - "string conversion, multibyte character strings"
+f1_keywords: ["wcstombs", "_wcstombs_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wcstombs_l function", "wcstombs function", "string conversion, wide characters", "wide characters, converting", "wcstombs_l function", "characters, converting", "string conversion, multibyte character strings"]
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # wcstombs, _wcstombs_l
 Converts a sequence of wide characters to a corresponding sequence of multibyte characters. More secure versions of these functions are available; see [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md).  
@@ -103,7 +66,7 @@ size_t _wcstombs_l(
  The locale to use.  
   
 ## Return Value  
- If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns –1 cast to type `size_t` and sets `errno` to `EILSEQ`.  
+ If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type `size_t` and sets `errno` to `EILSEQ`.  
   
 ## Remarks  
  The `wcstombs` function converts the wide-character string pointed to by `wcstr` to the corresponding multibyte characters and stores the results in the `mbstr` array. The `count` parameter indicates the maximum number of bytes that can be stored in the multibyte output string (that is, the size of `mbstr`). In general, it is not known how many bytes will be required when converting a wide-character string. Some wide characters will require only one byte in the output string; others require two. If there are two bytes in the multibyte output string for every wide character in the input string (including the wide character `NULL`), the result is guaranteed to fit.  
@@ -112,7 +75,7 @@ size_t _wcstombs_l(
   
  If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string.  
   
- `wcstombs` validates its parameters. If `wcstr` is `NULL`, or if `count` is greater than`INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.  
+ `wcstombs` validates its parameters. If `wcstr` is `NULL`, or if `count` is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.  
   
  `wcstombs` uses the current locale for any locale-dependent behavior; `_wcstombs_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -167,9 +130,6 @@ Convert wide-character string:
    Characters converted: 13  
     Multibyte character: Hello, world.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

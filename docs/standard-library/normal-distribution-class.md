@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "normal_distribution"
-  - "std::normal_distribution"
-  - "random/std::normal_distribution"
-  - "std::normal_distribution::reset"
-  - "random/std::normal_distribution::reset"
-  - "std::normal_distribution::mean"
-  - "random/std::normal_distribution::mean"
-  - "std::normal_distribution::stddev"
-  - "random/std::normal_distribution::stddev"
-  - "std::normal_distribution::param"
-  - "random/std::normal_distribution::param"
-  - "std::normal_distribution::min"
-  - "random/std::normal_distribution::min"
-  - "std::normal_distribution::max"
-  - "random/std::normal_distribution::max"
-  - "std::normal_distribution::operator()"
-  - "random/std::normal_distribution::operator()"
-  - "std::normal_distribution::param_type"
-  - "random/std::normal_distribution::param_type"
-  - "std::normal_distribution::param_type::mean"
-  - "random/std::normal_distribution::param_type::mean"
-  - "std::normal_distribution::param_type::stddev"
-  - "random/std::normal_distribution::param_type::stddev"
-  - "std::normal_distribution::param_type::operator=="
-  - "random/std::normal_distribution::param_type::operator=="
-  - "std::normal_distribution::param_type::operator!="
-  - "random/std::normal_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "normal_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::normal_distribution", "random/std::normal_distribution::reset", "random/std::normal_distribution::mean", "random/std::normal_distribution::stddev", "random/std::normal_distribution::param", "random/std::normal_distribution::min", "random/std::normal_distribution::max", "random/std::normal_distribution::operator()", "random/std::normal_distribution::param_type", "random/std::normal_distribution::param_type::mean", "random/std::normal_distribution::param_type::stddev", "random/std::normal_distribution::param_type::operator==", "random/std::normal_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::normal_distribution [C++]", "std::normal_distribution [C++], reset", "std::normal_distribution [C++], mean", "std::normal_distribution [C++], stddev", "std::normal_distribution [C++], param", "std::normal_distribution [C++], min", "std::normal_distribution [C++], max", "std::normal_distribution [C++], param_type", "std::normal_distribution [C++], param_type"]
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # normal_distribution Class
 Generates a normal distribution.  
@@ -103,8 +60,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[normal_distribution::normal_distribution](#normal_distribution__normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|  
-|`normal_distribution::operator()`|`normal_distribution::stddev`|[normal_distribution::param_type](#normal_distribution__param_type)|  
+|[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|  
+|`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|  
   
 The property functions `mean()` and `stddev()` return the values for the stored distribution parameters `mean` and `stddev` respectively.  
   
@@ -118,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/LinkId=400924).  
+For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/p/?linkid=400924).  
   
 ## Example  
   
@@ -210,7 +167,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="normal_distribution__normal_distribution"></a>  normal_distribution::normal_distribution  
+##  <a name="normal_distribution"></a>  normal_distribution::normal_distribution  
 Constructs the distribution.  
   
 ```  
@@ -235,7 +192,7 @@ The first constructor constructs an object whose stored `mean` value holds the v
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="normal_distribution__param_type"></a>  normal_distribution::param_type  
+##  <a name="param_type"></a>  normal_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp  

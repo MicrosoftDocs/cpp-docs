@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - ".PUSHREG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".PUSHREG directive"
+ms.topic: "reference"
+f1_keywords: [".PUSHREG"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".PUSHREG directive"]
 ms.assetid: e0c83758-dfed-40ea-afe6-cb833c8d2d30
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # .PUSHREG
 Generates a `UWOP_PUSH_NONVOL` unwind code entry for the specified register number using the current offset in the prologue.  

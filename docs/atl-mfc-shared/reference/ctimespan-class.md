@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CTimeSpan"
-  - "CTimeSpan"
-  - "timespan"
-  - "ATL::CTimeSpan"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "elapsed time, CTimeSpan object"
-  - "timespan"
-  - "time span"
-  - "CTimeSpan class"
-  - "shared classes, CTimeSpan"
-  - "time, elapsed"
+f1_keywords: ["CTimeSpan", "ATLTIME/ATL::CTimeSpan", "ATLTIME/ATL::CTimeSpan::CTimeSpan", "ATLTIME/ATL::CTimeSpan::Format", "ATLTIME/ATL::CTimeSpan::GetDays", "ATLTIME/ATL::CTimeSpan::GetHours", "ATLTIME/ATL::CTimeSpan::GetMinutes", "ATLTIME/ATL::CTimeSpan::GetSeconds", "ATLTIME/ATL::CTimeSpan::GetTimeSpan", "ATLTIME/ATL::CTimeSpan::GetTotalHours", "ATLTIME/ATL::CTimeSpan::GetTotalMinutes", "ATLTIME/ATL::CTimeSpan::GetTotalSeconds", "ATLTIME/ATL::CTimeSpan::Serialize64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["elapsed time, CTimeSpan object", "timespan", "time span", "CTimeSpan class", "shared classes, CTimeSpan", "time, elapsed"]
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTimeSpan Class
 An amount of time, which is internally stored as the number of seconds in the time span.  
@@ -65,9 +40,9 @@ class CTimeSpan
 |----------|-----------------|  
 |[CTimeSpan::Format](#format)|Converts a `CTimeSpan` into a formatted string.|  
 |[CTimeSpan::GetDays](#getdays)|Returns a value that represents the number of complete days in this `CTimeSpan`.|  
-|[CTimeSpan::GetHours](#gethours)|Returns a value that represents the number of hours in the current day (–23 through 23).|  
-|[CTimeSpan::GetMinutes](#getminutes)|Returns a value that represents the number of minutes in the current hour (–59 through 59).|  
-|[CTimeSpan::GetSeconds](#getseconds)|Returns a value that represents the number of seconds in the current minute (–59 through 59).|  
+|[CTimeSpan::GetHours](#gethours)|Returns a value that represents the number of hours in the current day (-23 through 23).|  
+|[CTimeSpan::GetMinutes](#getminutes)|Returns a value that represents the number of minutes in the current hour (-59 through 59).|  
+|[CTimeSpan::GetSeconds](#getseconds)|Returns a value that represents the number of seconds in the current minute (-59 through 59).|  
 |[CTimeSpan::GetTimeSpan](#gettimespan)|Returns the value of the `CTimeSpan` object.|  
 |[CTimeSpan::GetTotalHours](#gettotalhours)|Returns a value that represents the total number of complete hours in this `CTimeSpan`.|  
 |[CTimeSpan::GetTotalMinutes](#gettotalminutes)|Returns a value that represents the total number of complete minutes in this `CTimeSpan`.|  
@@ -78,8 +53,8 @@ class CTimeSpan
   
 |||  
 |-|-|  
-|[operator + –](#operator_add_-)|Adds and subtracts `CTimeSpan` objects.|  
-|[operator += –=](#operator_add_eq_-_eq)|Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.|  
+|[operator + -](#operator_add_-)|Adds and subtracts `CTimeSpan` objects.|  
+|[operator += -=](#operator_add_eq_-_eq)|Adds and subtracts a `CTimeSpan` object to and from this `CTimeSpan`.|  
 |[operator == < etc.](#ctimespan_comparison_operators)|Compares two relative time values.|  
   
 ## Remarks  
@@ -140,7 +115,7 @@ CTimeSpan(
  A `CTimeSpan` object that already exists.  
   
  `time`  
- A **__time64_t** time value, which is the number of seconds in the time span. In Visual C++ versions 6.0 and earlier, `time` was a value of `time_t`. Visual C++ .NET or later silently converts a `time_t` parameter to **__time64_t**.  
+ A **__time64_t** time value, which is the number of seconds in the time span.  
   
  `lDays`, `nHours`, `nMins`, `nSecs`  
  Days, hours, minutes, and seconds, respectively.  
@@ -158,10 +133,10 @@ CTimeSpan(
   
     |Component|Range|  
     |---------------|-----------|  
-    |`lDays`|0–25,000 (approximately)|  
-    |`nHours`|0–23|  
-    |`nMins`|0–59|  
-    |`nSecs`|0–59|  
+    |`lDays`|0-25,000 (approximately)|  
+    |`nHours`|0-23|  
+    |`nMins`|0-59|  
+    |`nSecs`|0-59|  
   
  Note that the Debug version of the Microsoft Foundation Class Library asserts if one or more of the time-day components is out of range. It is your responsibility to validate the arguments prior to calling.  
   
@@ -220,40 +195,40 @@ LONGLONG GetDays() const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]  
   
 ##  <a name="gethours"></a>  CTimeSpan::GetHours  
- Returns a value that represents the number of hours in the current day (–23 through 23).  
+ Returns a value that represents the number of hours in the current day (-23 through 23).  
   
 ```
 LONG GetHours() const throw();
 ```  
   
 ### Return Value  
- Returns the number of hours in the current day. The range is –23 through 23.  
+ Returns the number of hours in the current day. The range is -23 through 23.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_5.cpp)]  
   
 ##  <a name="getminutes"></a>  CTimeSpan::GetMinutes  
- Returns a value that represents the number of minutes in the current hour (–59 through 59).  
+ Returns a value that represents the number of minutes in the current hour (-59 through 59).  
   
 ```
 LONG GetMinutes() const throw();
 ```  
   
 ### Return Value  
- Returns the number of minutes in the current hour. The range is –59 through 59.  
+ Returns the number of minutes in the current hour. The range is -59 through 59.  
   
 ### Example  
  See the example for [GetHours](#gethours).  
   
 ##  <a name="getseconds"></a>  CTimeSpan::GetSeconds  
- Returns a value that represents the number of seconds in the current minute (–59 through 59).  
+ Returns a value that represents the number of seconds in the current minute (-59 through 59).  
   
 ```
 LONG GetSeconds() const throw();
 ```  
   
 ### Return Value  
- Returns the number of seconds in the current minute. The range is –59 through 59.  
+ Returns the number of seconds in the current minute. The range is -59 through 59.  
   
 ### Example  
  See the example for [GetHours](#gethours).  

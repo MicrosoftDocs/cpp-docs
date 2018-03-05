@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3206"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3206"
+f1_keywords: ["C3206"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3206"]
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3206
 'function' : invalid type argument for 'param', missing type argument list on class type 'typename'  
@@ -105,11 +87,8 @@ int main() {
 }  
 ```  
   
- This error can also be generated as a result of compiler conformance work for Visual C++ .NET 2003, where class templates are not allowed as template type argument.  
-  
- A class template is not allowed as a template type argument. This worked in Visual C++ .NET 2003, but it is invalid C++.  
-  
- The following sample compiles in Visual C++ .NET 2002 but will fail in Visual C++ .NET 2003:  
+ 
+ A class template is not allowed as a template type argument. The following sample raises C3206:  
   
 ```  
 // C3206e.cpp  
@@ -143,7 +122,7 @@ int main() {
 }  
 ```  
   
- If a template template parameter is necessary, then the resolution for the error that is valid in both the Visual C++ .NET 2003 and Visual C++ .NET 2002 versions require you to wrap the function in a template class that takes a template template parameter:  
+ If a template template parameter is necessary, then you have to wrap the function in a template class that takes a template template parameter:  
   
 ```  
 // C3206g.cpp  

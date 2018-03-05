@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "upgrading Visual C++ applications, /clr compiler option"
-  - "compiling native code [C++]"
-  - "interoperability [C++], /clr compiler option"
-  - "interop [C++], /clr compiler option"
-  - "migration [C++], /clr compiler option"
-  - "/clr compiler option [C++], porting to"
+dev_langs: ["C++"]
+helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Migrate to /clr
 This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows Visual C++ modules to invoke and be invoked from .NET assemblies while retaining compatibility with unmanaged modules. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.  
@@ -46,7 +25,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
 -   Your code may query types at runtime with [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#fromname). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to `FromName` may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
   
     ```  
-    // Extension DLL Header file:  
+    // MFC extension DLL Header file:  
     __declspec( dllexport ) void EnsureManagedInitialization () {  
        // managed code that won't be optimized away  
        System::GC::KeepAlive(System::Int32::MaxValue);  
@@ -65,7 +44,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
  Projects previous built with Visual C++ 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.  
   
 ### Upgrading from Managed Extensions for C++  
- Projects built with Visual C++ .NET or Visual C++ 2003 that used Managed Extensions for C++ must be rewritten to use the new syntax, as these extensions are no longer supported. Code written with Managed Extensions for C++ won't compile under **/clr**.  
+ Starting in Visual Studio 2005, code written with Managed Extensions for C++ won't compile under **/clr**.  
   
 ## Convert C Code to C++  
  Although Visual Studio will compile C files, it is necessary to convert them to C++ for a **/clr** compilation. The actual filename doesn't have to be changed; you can use **/Tp** (see [/Tc, /Tp, /TC, /TP (Specify Source File Type)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) Note that although C++ source code files are required for **/clr**, it is not necessary to re-factor your code to use object-oriented paradigms.  
@@ -128,13 +107,13 @@ COMObj2->Method(args);  // C++ equivalent
  Differing versions of data types can cause the linker to fail because the metadata generated for the two types doesn't match. (This is usually caused when members of a type are conditionally defined, but the conditions are not the same for all CPP files that use the type.) In this case the linker fails, reporting only the symbol name and the name of the second OBJ file where the type was defined. It is often useful to rotate the order that OBJ files are sent to the linker to discover the location of the other version of the data type.  
   
 ### Loader Lock Deadlock  
- In Visual C++ .NET and Visual C++ 2003, initialization under **/clr** was susceptible to non-deterministic deadlock. This issue is known as "loader lock deadlock". In Visual Studio 2010, this deadlock is easier to avoid, it is detected and reported at runtime, and is no longer non-deterministic. Encountering the loader lock problem is still possible, but now it's much easier to avoid and fix. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
+ In Visual Studio 2010 and later, the "loader lock deadlock" can still occur as in earlier versions, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
   
 ### Data Exports  
  Exporting DLL data is error-prone, and not recommended. This is because the data section of a DLL is not guaranteed to be initialized until some managed portion of the DLL has been executed. Reference metadata with [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
   
 ### Type Visibility  
- Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
+ Native types are private by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
   
 ### Floating Point and Alignment Issues  
  `__controlfp` is not supported on the common language runtime (see [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) for more information). The CLR will also not respect [align](../cpp/align-cpp.md).  
@@ -155,7 +134,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  
   
- If you used Managed Extensions for C++, you can convert your code to use the new syntax. For a summary of syntactical differences, see the [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada). For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
+ If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
   
  For information on .NET programming in Visual C++ see:  
   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFileDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFileDialog class"
-  - "common file dialog boxes"
-  - "dialog boxes, common"
+f1_keywords: ["CFileDialog", "AFXDLGS/CFileDialog", "AFXDLGS/CFileDialog::CFileDialog", "AFXDLGS/CFileDialog::AddCheckButton", "AFXDLGS/CFileDialog::AddComboBox", "AFXDLGS/CFileDialog::AddControlItem", "AFXDLGS/CFileDialog::AddEditBox", "AFXDLGS/CFileDialog::AddMenu", "AFXDLGS/CFileDialog::AddPlace", "AFXDLGS/CFileDialog::AddPushButton", "AFXDLGS/CFileDialog::AddRadioButtonList", "AFXDLGS/CFileDialog::AddSeparator", "AFXDLGS/CFileDialog::AddText", "AFXDLGS/CFileDialog::ApplyOFNToShellDialog", "AFXDLGS/CFileDialog::DoModal", "AFXDLGS/CFileDialog::EnableOpenDropDown", "AFXDLGS/CFileDialog::EndVisualGroup", "AFXDLGS/CFileDialog::GetCheckButtonState", "AFXDLGS/CFileDialog::GetControlItemState", "AFXDLGS/CFileDialog::GetControlState", "AFXDLGS/CFileDialog::GetEditBoxText", "AFXDLGS/CFileDialog::GetFileExt", "AFXDLGS/CFileDialog::GetFileName", "AFXDLGS/CFileDialog::GetFileTitle", "AFXDLGS/CFileDialog::GetFolderPath", "AFXDLGS/CFileDialog::GetIFileDialogCustomize", "AFXDLGS/CFileDialog::GetIFileOpenDialog", "AFXDLGS/CFileDialog::GetIFileSaveDialog", "AFXDLGS/CFileDialog::GetNextPathName", "AFXDLGS/CFileDialog::GetOFN", "AFXDLGS/CFileDialog::GetPathName", "AFXDLGS/CFileDialog::GetReadOnlyPref", "AFXDLGS/CFileDialog::GetResult", "AFXDLGS/CFileDialog::GetResults", "AFXDLGS/CFileDialog::GetSelectedControlItem", "AFXDLGS/CFileDialog::GetStartPosition", "AFXDLGS/CFileDialog::HideControl", "AFXDLGS/CFileDialog::IsPickFoldersMode", "AFXDLGS/CFileDialog::MakeProminent", "AFXDLGS/CFileDialog::RemoveControlItem", "AFXDLGS/CFileDialog::SetCheckButtonState", "AFXDLGS/CFileDialog::SetControlItemState", "AFXDLGS/CFileDialog::SetControlItemText", "AFXDLGS/CFileDialog::SetControlLabel", "AFXDLGS/CFileDialog::SetControlState", "AFXDLGS/CFileDialog::SetControlText", "AFXDLGS/CFileDialog::SetDefExt", "AFXDLGS/CFileDialog::SetEditBoxText", "AFXDLGS/CFileDialog::SetProperties", "AFXDLGS/CFileDialog::SetSelectedControlItem", "AFXDLGS/CFileDialog::SetTemplate", "AFXDLGS/CFileDialog::StartVisualGroup", "AFXDLGS/CFileDialog::UpdateOFNFromShellDialog", "AFXDLGS/CFileDialog::OnButtonClicked", "AFXDLGS/CFileDialog::OnCheckButtonToggled", "AFXDLGS/CFileDialog::OnControlActivating", "AFXDLGS/CFileDialog::OnFileNameChange", "AFXDLGS/CFileDialog::OnFileNameOK", "AFXDLGS/CFileDialog::OnFolderChange", "AFXDLGS/CFileDialog::OnInitDone", "AFXDLGS/CFileDialog::OnItemSelected", "AFXDLGS/CFileDialog::OnLBSelChangedNotify", "AFXDLGS/CFileDialog::OnShareViolation", "AFXDLGS/CFileDialog::OnTypeChange", "AFXDLGS/CFileDialog::m_ofn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFileDialog [MFC], CFileDialog", "CFileDialog [MFC], AddCheckButton", "CFileDialog [MFC], AddComboBox", "CFileDialog [MFC], AddControlItem", "CFileDialog [MFC], AddEditBox", "CFileDialog [MFC], AddMenu", "CFileDialog [MFC], AddPlace", "CFileDialog [MFC], AddPushButton", "CFileDialog [MFC], AddRadioButtonList", "CFileDialog [MFC], AddSeparator", "CFileDialog [MFC], AddText", "CFileDialog [MFC], ApplyOFNToShellDialog", "CFileDialog [MFC], DoModal", "CFileDialog [MFC], EnableOpenDropDown", "CFileDialog [MFC], EndVisualGroup", "CFileDialog [MFC], GetCheckButtonState", "CFileDialog [MFC], GetControlItemState", "CFileDialog [MFC], GetControlState", "CFileDialog [MFC], GetEditBoxText", "CFileDialog [MFC], GetFileExt", "CFileDialog [MFC], GetFileName", "CFileDialog [MFC], GetFileTitle", "CFileDialog [MFC], GetFolderPath", "CFileDialog [MFC], GetIFileDialogCustomize", "CFileDialog [MFC], GetIFileOpenDialog", "CFileDialog [MFC], GetIFileSaveDialog", "CFileDialog [MFC], GetNextPathName", "CFileDialog [MFC], GetOFN", "CFileDialog [MFC], GetPathName", "CFileDialog [MFC], GetReadOnlyPref", "CFileDialog [MFC], GetResult", "CFileDialog [MFC], GetResults", "CFileDialog [MFC], GetSelectedControlItem", "CFileDialog [MFC], GetStartPosition", "CFileDialog [MFC], HideControl", "CFileDialog [MFC], IsPickFoldersMode", "CFileDialog [MFC], MakeProminent", "CFileDialog [MFC], RemoveControlItem", "CFileDialog [MFC], SetCheckButtonState", "CFileDialog [MFC], SetControlItemState", "CFileDialog [MFC], SetControlItemText", "CFileDialog [MFC], SetControlLabel", "CFileDialog [MFC], SetControlState", "CFileDialog [MFC], SetControlText", "CFileDialog [MFC], SetDefExt", "CFileDialog [MFC], SetEditBoxText", "CFileDialog [MFC], SetProperties", "CFileDialog [MFC], SetSelectedControlItem", "CFileDialog [MFC], SetTemplate", "CFileDialog [MFC], StartVisualGroup", "CFileDialog [MFC], UpdateOFNFromShellDialog", "CFileDialog [MFC], OnButtonClicked", "CFileDialog [MFC], OnCheckButtonToggled", "CFileDialog [MFC], OnControlActivating", "CFileDialog [MFC], OnFileNameChange", "CFileDialog [MFC], OnFileNameOK", "CFileDialog [MFC], OnFolderChange", "CFileDialog [MFC], OnInitDone", "CFileDialog [MFC], OnItemSelected", "CFileDialog [MFC], OnLBSelChangedNotify", "CFileDialog [MFC], OnShareViolation", "CFileDialog [MFC], OnTypeChange", "CFileDialog [MFC], m_ofn"]
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
 caps.latest.revision: 47
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFileDialog Class
 Encapsulates the common dialog box that is used for file open or file save operations.  
@@ -148,12 +129,12 @@ class CFileDialog : public CCommonDialog
   
  The windows messages for the `CFileDialog` class vary based on what operating system you are using. For example, Windows XP does not support [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) and [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) for the `CFileDialog` class. However, [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] does support them. For more information about the different messages that are generated and the order in which they are received, see [CFileDialog Sample: Logging Event Order](../../visual-cpp-samples.md).  
   
- To use a `CFileDialog` object, first create the object by using the `CFileDialog` constructor. After the dialog box has been constructed, you can set or modify any values in the [CFileDialog::m_ofn](#m_ofn) structure to initialize the values or states of the dialog box controls. The `m_ofn` structure is of type `OPENFILENAME`. For more information, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To use a `CFileDialog` object, first create the object by using the `CFileDialog` constructor. After the dialog box has been constructed, you can set or modify any values in the [CFileDialog::m_ofn](#m_ofn) structure to initialize the values or states of the dialog box controls. The `m_ofn` structure is of type `OPENFILENAME`. For more information, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK.  
   
  After you initialize the dialog box controls, call the [CFileDialog::DoModal](#domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.  
   
 > [!NOTE]
->  Under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return `E_UNEXPECTED` in [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c).  
+>  Under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)], multiple calls to [IFileDialog::SetFileTypes](http://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return `E_UNEXPECTED` in [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).  
   
  `CFileDialog` includes several protected members that let you do custom handling of share violations, file name validation, and list-box change notification. These protected members are callback functions that most applications do not have to use because default handling is performed automatically. Message-map entries for these functions are not required because they are standard virtual functions.  
   
@@ -419,7 +400,7 @@ explicit CFileDialog(
  The initial file name that appears in the Filename box. If `NULL`, no initial file name appears.  
   
  [in] `dwFlags`  
- A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
+ A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
   
  [in] `lpszFilter`  
  A series of string pairs that specify filters you can apply to the file. If you specify file filters, only files that match filter criteria will appear in the Files list. See the Remarks section for more information about how to work with file filters.  
@@ -454,7 +435,7 @@ explicit CFileDialog(
   
  However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').  
   
- The `bVistaStyle` parameter is applicable only when running under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Under earlier versions of Windows, this parameter is ignored. If `bVistaStyle` is set to `TRUE`, when you compile a program with [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)] or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
+ The `bVistaStyle` parameter is applicable only when running under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Under earlier versions of Windows, this parameter is ignored. If `bVistaStyle` is set to `TRUE`, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
   
  Dialog templates are not supported on dialogs based on `bVistaStyle`  
   
@@ -734,7 +715,8 @@ CString GetNextPathName(POSITION& pos) const;
 ```  
 const OPENFILENAME& GetOFN() const;  
   
-OPENFILENAME& GetOFN();```  
+OPENFILENAME& GetOFN();
+```  
   
 ### Return Value  
  An [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure.  
@@ -902,7 +884,7 @@ BOOL IsPickFoldersMode() const;
   
 -   OFN_SHOWHELP  
   
- For more information about this structure, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about this structure, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK.  
   
 ##  <a name="makeprominent"></a>  CFileDialog::MakeProminent  
  Places a control in the dialog so that it stands out compared to other controls.  
@@ -961,8 +943,8 @@ virtual void OnControlActivating(DWORD dwIDCtl);
   
 ### Remarks  
   
-##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange  
- Override this method if you want to handle the `WM_NOTIFY``CDN_SELCHANGE` message.  
+##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNY` `Change  
+ Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
   
 ```  
 virtual void OnFileNameChange();
@@ -1001,7 +983,7 @@ virtual void OnFolderChange();
  Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms646859). For information about the OFN_EXPLORER style, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure and [Open and Save As Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms646960).  
   
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone  
- Override this function to handle the `WM_NOTIFY``CDN_INITDONE` message.  
+ Override this function to handle the `WM_NOTIFY` `CDN_INITDONE` message.  
   
 ```  
 virtual void OnInitDone();

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAtlComModule"
-  - "CAtlComModule"
-  - "ATL::CAtlComModule"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlComModule class"
+f1_keywords: ["CAtlComModule", "ATLBASE/ATL::CAtlComModule", "ATLBASE/ATL::CAtlComModule::CAtlComModule", "ATLBASE/ATL::CAtlComModule::RegisterServer", "ATLBASE/ATL::CAtlComModule::RegisterTypeLib", "ATLBASE/ATL::CAtlComModule::UnregisterServer", "ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlComModule class"]
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlComModule Class
 This class implements a COM server module.  
@@ -114,7 +95,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls the global function [AtlComModuleRegisterServer](http://msdn.microsoft.com/library/d11a0c91-0c56-4b1b-a5f5-1287970f798b).  
+ Calls the global function [AtlComModuleRegisterServer](server-registration-global-functions.md#atlcommoduleregisterserver).  
   
 ##  <a name="registertypelib"></a>  CAtlComModule::RegisterTypeLib  
  Call this method to register a type library.  
@@ -154,7 +135,7 @@ HRESULT UnregisterServer(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls the global function [AtlComModuleUnregisterServer](http://msdn.microsoft.com/library/c4ef3da4-def7-4aaf-b005-573a02e389d5).  
+ Calls the global function [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).  
   
 ##  <a name="unregistertypelib"></a>  CAtlComModule::UnRegisterTypeLib  
  Call this method to unregister a type library.  

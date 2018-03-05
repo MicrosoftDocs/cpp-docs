@@ -4,80 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ctime64_s"
-  - "_wctime32_s"
-  - "ctime_s"
-  - "_wctime64_s"
-  - "_ctime32_s"
-  - "_wctime_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ctime64_s"
-  - "_ctime32_s"
-  - "_tctime32_s"
-  - "_ctime64_s"
-  - "_wctime_s"
-  - "_tctime_s"
-  - "_tctime64_s"
-  - "ctime_s"
-  - "ctime32_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wctime32_s function"
-  - "ctime64_s function"
-  - "_tctime64_s function"
-  - "_wctime_s function"
-  - "tctime_s function"
-  - "_wctime64_s function"
-  - "ctime_s function"
-  - "ctime32_s function"
-  - "_ctime64_s function"
-  - "tctime64_s function"
-  - "wctime64_s function"
-  - "wctime_s function"
-  - "_tctime_s function"
-  - "tctime32_s function"
-  - "wctime32_s function"
-  - "time, converting"
-  - "_ctime32_s function"
-  - "_tctime32_s function"
+f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s", "_tctime_s", "_tctime64_s", "ctime_s", "ctime32_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -139,7 +80,7 @@ errno_t _wctime64_s(
   
 #### Parameters  
  [out] `buffer`  
- Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL`if:  
+ Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL` if:  
   
 -   `time` represents a date before midnight, January 1, 1970, UTC.  
   
@@ -152,7 +93,7 @@ errno_t _wctime64_s(
  [in] `numberOfElements`  
  The size of the buffer.  
   
- [in] t`ime`  
+ [in] `time`  
  Pointer to stored time.  
   
 ## Return Value  
@@ -197,8 +138,8 @@ Wed Jan 02 02:03:55 1980\n\0
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`ctime_s,`<br /><br /> `_ctime32_s,`<br /><br /> `_ctime64_s`|\<time.h>|  
-|`_wctime_s,`<br /><br /> `_wctime32_s,`<br /><br /> `_wctime64_s`|\<time.h> or \<wchar.h>|  
+|`ctime_s`, `_ctime32_s`, `_ctime64_s`|\<time.h>|  
+|`_wctime_s`, `_wctime32_s`, `_wctime64_s`|\<time.h> or \<wchar.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
@@ -241,16 +182,6 @@ int main( void )
 ```  
 The time is Fri Apr 25 13:03:39 2003  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::GetDateTimeFormats](https://msdn.microsoft.com/en-us/library/system.datetime.getdatetimeformats.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

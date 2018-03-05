@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CStatusBarCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tool tips [C++], using in status bars"
-  - "status bars, tool tips"
-  - "CStatusBarCtrl class, tool tips"
+f1_keywords: ["CStatusBarCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tool tips [MFC], using in status bars", "status bars [MFC], tool tips", "CStatusBarCtrl class [MFC], tool tips"]
 ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using Tooltips in a CStatusBarCtrl Object
 To enable tooltips for a status bar control, create the `CStatusBarCtrl` object with the **SBT_TOOLTIPS** style.  

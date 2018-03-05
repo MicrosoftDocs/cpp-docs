@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, getting started"
-  - "ConcRT (see Concurrency Runtime)"
-  - "Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, getting started", "ConcRT (see Concurrency Runtime)", "Concurrency Runtime"]
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
 caps.latest.revision: 40
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime
 The Concurrency Runtime for C++ helps you write robust, scalable, and responsive parallel applications. It raises the level of abstraction so that you do not have to manage the infrastructure details that are related to concurrency. You can also use it to specify scheduling policies that meet the quality of service demands of your applications. Use these resources to help you start working with the Concurrency Runtime.  
@@ -47,7 +28,7 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Overview](../../parallel/concrt/asynchronous-message-blocks.md#overview)|Teaches why the Concurrency Runtime is important and describes its key features.|  
+|[Overview](../../parallel/concrt/overview-of-the-concurrency-runtime.md)|Teaches why the Concurrency Runtime is important and describes its key features.|  
 |[Comparing to Other Concurrency Models](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|Shows how the Concurrency Runtime compares to other concurrency models, such as the Windows thread pool and OpenMP, so that you can use the concurrency model that best fits your application requirements.|  
 |[Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)|Compares OpenMP to the Concurrency Runtime and provides examples about how to migrate existing OpenMP code to use the Concurrency Runtime.|  
 |[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Introduces you to the PPL, which provides parallel loops, tasks, and parallel containers.|  
@@ -78,13 +59,13 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
 |[Cancellation in the PPL](cancellation-in-the-ppl.md)|Describes the role of cancellation in the PPL, including how to initiate and respond to cancellation requests.|  
 |[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Demonstrates two ways to cancel data-parallel work.|  
   
-## Windows Store Apps  
+## Universal Windows Platform apps  
   
 |||  
 |-|-|  
-|[Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Describes some of the key points to keep in mind when you use the Concurrency Runtime to produce asynchronous operations in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.|  
-|[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|Shows how to combine PPL tasks with the `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` interfaces to send HTTP GET and POST requests to a web service in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.|  
-|[Windows Store app samples](http://code.msdn.microsoft.com/windowsapps)|Contains downloadable code samples and demo apps for [!INCLUDE[win8](../../build/reference/includes/win8_md.md)]. The C++ samples use Concurrency Runtime features such as PPL tasks to process data in the background to keep the UX responsive.|  
+|[Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Describes some of the key points to keep in mind when you use the Concurrency Runtime to produce asynchronous operations in a UWP app.|  
+|[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|Shows how to combine PPL tasks with the `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` interfaces to send HTTP GET and POST requests to a web service in a UWP app.|  
+|[Windows Runtime app samples](http://code.msdn.microsoft.com/windowsapps)|Contains downloadable code samples and demo apps for Windows 8.x. The C++ samples use Concurrency Runtime features such as PPL tasks to process data in the background to keep the UX responsive.|  
   
 ## Dataflow Programming in the Asynchronous Agents Library  
   
@@ -119,11 +100,11 @@ The Concurrency Runtime for C++ helps you write robust, scalable, and responsive
   
 |||  
 |-|-|  
-|[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.|  
-|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/linkid=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
-|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
-|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
-|[Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
+|[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a Windows Runtime app using C++ and XAML.|  
+|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|  
+|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/p/?linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|  
+|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/p/?linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|  
+|[Parallel Programming](/dotnet/standard/parallel-programming/index)|Teaches you about the parallel programming model that is available in the [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
   
 ## See Also  
  [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)

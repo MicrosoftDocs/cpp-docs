@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSnapInPropertyPageImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "snap-ins, property pages"
-  - "snap-ins"
-  - "property pages, ATL"
-  - "CSnapInPropertyPageImpl class"
+f1_keywords: ["CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CancelToClose", "ATLSNAP/ATL::CSnapInPropertyPageImpl::Create", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnApply", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnHelp", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnKillActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnQueryCancel", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnReset", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnSetActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardBack", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardFinish", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardNext", "ATLSNAP/ATL::CSnapInPropertyPageImpl::QuerySiblings", "ATLSNAP/ATL::CSnapInPropertyPageImpl::SetModified", "ATLSNAP/ATL::CSnapInPropertyPageImpl::m_psp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["snap-ins, property pages", "snap-ins", "property pages, ATL", "CSnapInPropertyPageImpl class"]
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSnapInPropertyPageImpl Class
 This class provides methods for implementing a snap-in property page object.  
@@ -141,7 +121,7 @@ PROPSHEETPAGE m_psp;
 ### Remarks  
  Use this structure to initialize the appearance of a property page after it is constructed.  
   
- For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) in the Windows SDK.  
   
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply  
  This member function is called when the user clicks the **OK** or the **Apply Now** button.  
@@ -236,7 +216,7 @@ BOOL OnWizardBack();
   
 -   0 to automatically advance to the previous page.  
   
--   –1 to prevent the page from changing.  
+-   -1 to prevent the page from changing.  
   
  To jump to a page other than the next one, return the identifier of the dialog box to be displayed.  
   
@@ -267,7 +247,7 @@ BOOL OnWizardNext();
   
 -   0 to automatically advance to the next page.  
   
--   –1 to prevent the page from changing.  
+-   -1 to prevent the page from changing.  
   
  To jump to a page other than the next one, return the identifier of the dialog box to be displayed.  
   

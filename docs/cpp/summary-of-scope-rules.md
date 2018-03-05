@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "class scope [C++], rules"
-  - "classes [C++], scope"
-  - "class names [C++], scope rules"
-  - "names [C++], class"
-  - "scope [C++], class names"
+dev_langs: ["C++"]
+helpviewer_keywords: ["class scope [C++], rules", "classes [C++], scope", "class names [C++], scope rules", "names [C++], class", "scope [C++], class names"]
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Summary of Scope Rules
 The use of a name must be unambiguous within its scope (up to the point where overloading is determined). If the name denotes a function, the function must be unambiguous with respect to number and type of parameters. If the name remains unambiguous, [member-access](../cpp/member-access-control-cpp.md) rules are applied.  
@@ -49,12 +29,12 @@ The use of a name must be unambiguous within its scope (up to the point where ov
   
 -   Member-selection for objects and references (**.**)  
   
--   Member-selection for pointers (**–>**)  
+-   Member-selection for pointers (**->**)  
   
 ## Qualified names  
  Names used with the binary scope-resolution operator (`::`) are called "qualified names." The name specified after the binary scope-resolution operator must be a member of the class specified on the left of the operator or a member of its base class(es).  
   
- Names specified after the member-selection operator (**.** or **–>**) must be members of the class type of the object specified on the left of the operator or members of its base class(es). Names specified on the right of the member-selection operator (**–>**) can also be objects of another class type, provided that the left-hand side of **–>** is a class object and that the class defines an overloaded member-selection operator (**–>**) that evaluates to a pointer to some other class type. (This provision is discussed in more detail in [Class Member Access](../cpp/member-access.md).)  
+ Names specified after the member-selection operator (**.** or **->**) must be members of the class type of the object specified on the left of the operator or members of its base class(es). Names specified on the right of the member-selection operator (**->**) can also be objects of another class type, provided that the left-hand side of **->** is a class object and that the class defines an overloaded member-selection operator (**->**) that evaluates to a pointer to some other class type. (This provision is discussed in more detail in [Class Member Access](../cpp/member-access.md).)  
   
  The compiler searches for names in the following order, stopping when the name is found:  
   

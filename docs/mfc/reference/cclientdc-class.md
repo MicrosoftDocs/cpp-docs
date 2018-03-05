@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CClientDC"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CClientDC class"
-  - "device contexts, client area"
-  - "client-area device context"
-  - "CDC class, device contexts for client areas"
+f1_keywords: ["CClientDC", "AFXWIN/CClientDC", "AFXWIN/CClientDC::CClientDC", "AFXWIN/CClientDC::m_hWnd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CClientDC [MFC], CClientDC", "CClientDC [MFC], m_hWnd"]
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CClientDC Class
 Takes care of calling the Windows functions [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) at destruction time.  

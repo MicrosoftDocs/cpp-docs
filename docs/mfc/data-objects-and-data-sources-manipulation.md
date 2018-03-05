@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data objects [C++], manipulating"
-  - "data sources [C++], data operations"
-  - "data sources [C++], inserting data"
-  - "Clipboard [C++], determining available formats"
-  - "OLE [C++], data objects"
-  - "Clipboard [C++], passing format information"
-  - "data sources [C++], determining available formats"
-  - "delayed rendering [C++]"
-  - "OLE [C++], data sources"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data objects [MFC], manipulating", "data sources [MFC], data operations", "data sources [MFC], inserting data", "Clipboard [MFC], determining available formats", "OLE [MFC], data objects", "Clipboard [MFC], passing format information", "data sources [MFC], determining available formats", "delayed rendering [MFC]", "OLE [MFC], data sources"]
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources: Manipulation
 After a data object or data source has been created, you can perform a number of common operations on the data, such as inserting and removing data, enumerating the formats the data is in, and more. This article describes the techniques necessary to complete the most common operations. Topics include:  

@@ -4,48 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cursors [C++], screen regions"
-  - "inverse colors, device images"
-  - "transparent regions, device images"
-  - "transparency, device images"
-  - "Image editor [C++], device images"
-  - "inverse regions, device images"
-  - "cursors [C++], transparent regions"
-  - "screen colors"
-  - "regions, transparent"
-  - "icons [C++], transparent regions"
-  - "display devices, transparent and screen regions"
-  - "transparent regions in devices"
-  - "regions, inverse"
-  - "colors [C++], Image editor"
-  - "device projects, transparent images"
-  - "icons [C++], screen regions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["cursors [C++], screen regions", "inverse colors, device images", "transparent regions, device images", "transparency, device images", "Image editor [C++], device images", "inverse regions, device images", "cursors [C++], transparent regions", "screen colors", "regions, transparent", "icons [C++], transparent regions", "display devices, transparent and screen regions", "transparent regions in devices", "regions, inverse", "colors [C++], Image editor", "device projects, transparent images", "icons [C++], screen regions"]
 ms.assetid: a994954b-b039-4391-a535-58d1fa10fc3b
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating Transparent or Inverse Regions in Device Images (Image Editor for Icons)
 In the [Image editor](../windows/image-editor-for-icons.md), the initial icon or cursor image has a transparent attribute. Although icon and cursor images are rectangular, many do not appear so because parts of the image are transparent; the underlying image on the screen shows through the icon or cursor. When you drag an icon, parts of the image may appear in an inverted color. You create this effect by setting the screen color and inverse color in the [Colors window](../windows/colors-window-image-editor-for-icons.md).  
@@ -72,7 +41,7 @@ In the [Image editor](../windows/image-editor-for-icons.md), the initial icon or
     > [!TIP]
     >  If you double-click the Screen-Color or Inverse-Color selector, the [Custom Color Selector dialog box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md) appears.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
  Requirements  
   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.ctl.names"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX Control Wizard, control names"
+f1_keywords: ["vc.appwiz.mfc.ctl.names"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX Control Wizard, control names"]
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Control Names, MFC ActiveX Control Wizard
 Specify the names for the control class and property page class, the type names, and type identifiers for your control. With the exception of **Short name**, all other fields can be edited independently. If you change the text for **Short name**, the change is reflected in the names of all other fields in this page. This naming behavior is designed to make all the names easily identifiable for you as you develop your control.  
@@ -59,11 +42,11 @@ Specify the names for the control class and property page class, the type names,
   
  By default, the control type ID appears as follows:  
   
- *ProjectName*.*ShortName*Ctrl.1  
+ *ProjectName.ShortName*Ctrl.1  
   
  If you change the short name in this dialog box, the control type ID appears as follows:  
   
- *ProjectName*.*NewShortName*Ctrl.1  
+ *ProjectName.NewShortName*Ctrl.1  
   
  **PropPage class name**  
  By default, the name of the property page class is based on the short name, with `C` as a prefix and `PropPage` as a suffix. For example, if your control's short name is `Price`, the property page class name is `CPricePropPage`. This name should match the control class name, appended with `PropPage`.  
@@ -84,11 +67,11 @@ Specify the names for the control class and property page class, the type names,
   
  By default, the property page type ID appears as follows:  
   
- *ProjectName*.*ShortName*PropPage.1  
+ *ProjectName.ShortName*PropPage.1  
   
  If you change the short name in this dialog box, the property page type ID appears as follows:  
   
- *ProjectName*.*NewShortName*PropPage.1  
+ *ProjectName.NewShortName*PropPage.1  
   
 ## See Also  
  [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)   

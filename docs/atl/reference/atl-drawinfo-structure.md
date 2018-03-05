@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::ATL_DRAWINFO"
-  - "ATL_DRAWINFO"
-  - "ATL.ATL_DRAWINFO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL_DRAWINFO structure"
+ms.topic: "reference"
+f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL_DRAWINFO structure"]
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL_DRAWINFO Structure
 Contains information used for rendering to various targets, such as a printer, metafile, or ActiveX control.  
@@ -82,7 +63,7 @@ struct ATL_DRAWINFO {
  Pointer to a [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle on **hdcDraw** and in which the object should be drawn. This member controls the positioning and stretching of the object. This member should be **NULL** to draw a windowless in-place active object. In every other situation, **NULL** is not a legal value and should result in an `E_INVALIDARG` error code. If the container passes a non-**NULL** value to a windowless object, the object should render the requested aspect into the specified device context and rectangle. A container can request this from a windowless object to render a second, non-active view of the object or to print the object.  
   
  **prcWBounds**  
- If **hdcDraw** is a metafile device context (see [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]), this is a pointer to a **RECTL** structure specifying the bounding rectangle in the underlying metafile. The rectangle structure contains the window extent and window origin. These values are useful for drawing metafiles. The rectangle indicated by **prcBounds** is nested inside this **prcWBounds** rectangle; they are in the same coordinate space.  
+ If **hdcDraw** is a metafile device context (see [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK), this is a pointer to a **RECTL** structure specifying the bounding rectangle in the underlying metafile. The rectangle structure contains the window extent and window origin. These values are useful for drawing metafiles. The rectangle indicated by **prcBounds** is nested inside this **prcWBounds** rectangle; they are in the same coordinate space.  
   
  **bOptimize**  
  Nonzero if the drawing of the control is to be optimized, otherwise 0. If the drawing is optimized, the state of the device context is automatically restored when you are finished rendering.  

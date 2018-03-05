@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "internal/Microsoft::WRL::Details::Swap"
-dev_langs: 
-  - "C++"
+f1_keywords: ["internal/Microsoft::WRL::Details::Swap"]
+dev_langs: ["C++"]
 ms.assetid: ed134a08-ceb7-4279-aa02-a183c3a426ea
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Swap Function (Windows Runtime C++ Template Library)
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

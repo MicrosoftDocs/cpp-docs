@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDropSource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag operations"
-  - "drop target, dragging data to"
-  - "COleDropSource class"
-  - "drag and drop, drop source"
+f1_keywords: ["COleDropSource", "AFXOLE/COleDropSource", "AFXOLE/COleDropSource::COleDropSource", "AFXOLE/COleDropSource::GiveFeedback", "AFXOLE/COleDropSource::OnBeginDrag", "AFXOLE/COleDropSource::QueryContinueDrag"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDropSource [MFC], COleDropSource", "COleDropSource [MFC], GiveFeedback", "COleDropSource [MFC], OnBeginDrag", "COleDropSource [MFC], QueryContinueDrag"]
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDropSource Class
 Allows data to be dragged to a drop target.  
@@ -69,7 +49,7 @@ class COleDropSource : public CCmdTarget
   
  For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -115,7 +95,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ### Remarks  
  Override this function to provide feedback to the user about what would happen if a drop occurred at this point. The default implementation uses the OLE default cursors. For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the Windows SDK.  
   
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.  

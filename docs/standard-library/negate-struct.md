@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "negate"
-  - "std.negate"
-  - "std::negate"
-  - "xfunctional/std::negate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "negate struct"
-  - "negate class"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::negate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["negate struct", "negate class"]
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # negate Struct
 A predefined function object that performs the arithmetic negation operation (unary `operator-`) on its argument.  
@@ -69,7 +47,7 @@ struct negate<void>
  The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `Type`.  
   
 ## Return Value  
- The result of `-``Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
+ The result of `-Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
   
 ## Example  
   

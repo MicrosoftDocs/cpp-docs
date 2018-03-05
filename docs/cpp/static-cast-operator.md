@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "static_cast"
-  - "static_cast_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "static_cast keyword [C++]"
+f1_keywords: ["static_cast_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["static_cast keyword [C++]"]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # static_cast Operator
 Converts an *expression* to the type of *type-id,* based only on the types that are present in the expression.  
@@ -45,7 +27,7 @@ static_cast <type-id> ( expression )
 ```  
   
 ## Remarks  
- In standard C++, no run-time type check is made to help ensure the safety of the conversion. In C++/CX, a compile time and runtime check are performed. For more information, see [Casting](http://msdn.microsoft.com/Library/5247f6c7-6a0a-4021-97c9-21c868bd9455).  
+ In standard C++, no run-time type check is made to help ensure the safety of the conversion. In C++/CX, a compile time and runtime check are performed. For more information, see [Casting](casting.md).  
   
  The `static_cast` operator can be used for operations such as converting a pointer to a base class to a pointer to a derived class. Such conversions are not always safe.  
   
@@ -94,7 +76,7 @@ void f(B* pb) {
   
  Consequently, `static_cast` can do the inverse of implicit conversions, in which case the results are undefined. It is left to the programmer to verify that the results of a `static_cast` conversion are safe.  
   
- This behavior also applies to types other than class types. For instance, `static_cast` can be used to convert from an int to a `char`. However, the resulting `char` may not have enough bits to hold the entire `int` value. Again, it is left to the programmer to verify that the results of a`static_cast` conversion are safe.  
+ This behavior also applies to types other than class types. For instance, `static_cast` can be used to convert from an int to a `char`. However, the resulting `char` may not have enough bits to hold the entire `int` value. Again, it is left to the programmer to verify that the results of a `static_cast` conversion are safe.  
   
  The `static_cast` operator can also be used to perform any implicit conversion, including standard conversions and user-defined conversions. For example:  
   

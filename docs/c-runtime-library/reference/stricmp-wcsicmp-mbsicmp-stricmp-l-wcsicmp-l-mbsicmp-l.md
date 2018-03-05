@@ -4,91 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_stricmp_l"
-  - "_mbsicmp"
-  - "_wcsicmp"
-  - "_mbsicmp_l"
-  - "_stricmp"
-  - "_wcsicmp_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntoskrnl.exe"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_stricmp_l", "_mbsicmp", "_wcsicmp", "_mbsicmp_l", "_stricmp", "_wcsicmp_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ftcsicmp"
-  - "_stricmp"
-  - "wcsicmp_l"
-  - "_wcsicmp"
-  - "_tcsicmp"
-  - "_strcmpi"
-  - "stricmp_l"
-  - "_mbsicmp"
-  - "_fstricmp"
-  - "mbsicmp_l"
-  - "mbsicmp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wcsicmp function"
-  - "_stricmp_l function"
-  - "fstricmp function"
-  - "_tcsicmp function"
-  - "ftcsicmp function"
-  - "string comparison [C++], lowercase"
-  - "_wcsicmp_l function"
-  - "_fstricmp function"
-  - "strings [C++], comparing"
-  - "mbsicmp function"
-  - "_ftcsicmp function"
-  - "_mbsicmp_l function"
-  - "wcsicmp_l function"
-  - "_stricmp function"
-  - "_mbsicmp function"
-  - "tcsicmp function"
-  - "stricmp_l function"
-  - "mbsicmp_l function"
-  - "_strcmpi function"
+f1_keywords: ["_ftcsicmp", "_stricmp", "wcsicmp_l", "_wcsicmp", "_tcsicmp", "_strcmpi", "stricmp_l", "_mbsicmp", "_fstricmp", "mbsicmp_l", "mbsicmp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wcsicmp function", "_stricmp_l function", "fstricmp function", "_tcsicmp function", "ftcsicmp function", "string comparison [C++], lowercase", "_wcsicmp_l function", "_fstricmp function", "strings [C++], comparing", "mbsicmp function", "_ftcsicmp function", "_mbsicmp_l function", "wcsicmp_l function", "_stricmp function", "_mbsicmp function", "tcsicmp function", "stricmp_l function", "mbsicmp_l function", "_strcmpi function"]
 ms.assetid: 0e1ee515-0d75-435a-a445-8875d4669b50
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
 Performs a case-insensitive comparison of strings.  
   
 > [!IMPORTANT]
->  `_mbsicmp` and `_mbsicmp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsicmp` and `_mbsicmp_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -242,9 +178,6 @@ Compare strings:
    strcmp:   String 1 is greater than string 2  
    _stricmp:  String 1 is equal to string 2  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

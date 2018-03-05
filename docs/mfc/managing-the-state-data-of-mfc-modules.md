@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "global state [C++]"
-  - "data management [C++], MFC modules"
-  - "window procedure entry points [C++]"
-  - "exported interfaces and global state [C++]"
-  - "module states, saving and restoring"
-  - "data management [C++]"
-  - "MFC [C++], managing state data"
-  - "multiple modules"
-  - "module state restored"
+dev_langs: ["C++"]
+helpviewer_keywords: ["global state [MFC]", "data management [MFC], MFC modules", "window procedure entry points [MFC]", "exported interfaces and global state [MFC]", "module states [MFC], saving and restoring", "data management [MFC]", "MFC, managing state data", "multiple modules [MFC]", "module state restored [MFC]"]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Managing the State Data of MFC Modules
 This article discusses the state data of MFC modules and how this state is updated when the flow of execution (the path code takes through an application when executing) enters and leaves a module. Switching module states with the `AFX_MANAGE_STATE` and `METHOD_PROLOGUE` macros is also discussed.  

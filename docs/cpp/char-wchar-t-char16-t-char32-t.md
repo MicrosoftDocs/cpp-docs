@@ -1,52 +1,40 @@
 ---
 title: "char, wchar_t, char16_t, char32_t | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "02/14/2018"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "char_cpp"
-  - "char16_t_cpp"
-  - "whchar_t_cpp"
-  - "char32_t_cpp"
-dev_langs: 
-  - "C++"
+f1_keywords: ["char_cpp", "char16_t_cpp", "wchar_t_cpp", "char32_t_cpp"]
+dev_langs: ["C++"]
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b
 caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # char, wchar_t, char16_t, char32_t
-The types char, wchar_t, char16_t and char32_t are built in types that represent alphanumeric characters as well as non-alphanumeric glyphs and non-printing characters. char is eight bits in size, wchar_t and char16_t are 16 bits in size, and char32_t is 32 bits.  
-  
-## Syntax  
-  
+The types **char**, **wchar_t**, **char16_t** and **char32_t** are built-in types that represent alphanumeric characters as well as non-alphanumeric glyphs and non-printing characters.
+
+## Syntax
+
 ```cpp  
-char     ch1{ 'a' };    wchar_t  ch2{ 'a' }; // or {L'a'}    char16_t ch3{ L'a' };// or {L'a'}    char32_t ch4{ L'a' };// or {L'a'}  
+char     ch1{ 'a' };  // or { u8'a' }   
+wchar_t  ch2{ L'a' };    
+char16_t ch3{ u'a' };    
+char32_t ch4{ U'a' };  
 ```  
   
-## Remarks  
- The `char` type was the original character type in C and C++. It can be used to store characters from the ASCII character set or any of the ISO-8859 character sets, or the UTF-8 character set. The type `unsigned char` is often used to represent a *byte* which is not a built-in type in C++. The char type is not suitable for text in many languages. In general, modern programs should use one of the wide character types to represent text. Unicode is the  
+## Remarks
+
+The **char** type was the original character type in C and C++. The type **unsigned char** is often used to represent a *byte*, which is not a built-in type in C++. The **char** type can be used to store characters from the ASCII character set or any of the ISO-8859 character sets, and individual bytes of multi-byte characters such as Shift-JIS or the UTF-8 encoding of the Unicode character set. Strings of **char** type are referred to as *narrow* strings, even when used to encode multi-byte characters. In the Microsoft compiler, **char** is an 8-bit type.
+
+The **wchar_t** type is an implementation-defined wide character type. In the Microsoft compiler, it represents a 16-bit wide character used to store Unicode encoded as UTF-16LE, the native character type on Windows operating systems. The wide character versions of the Universal C Runtime (UCRT) library functions use **wchar_t** and its pointer and array types as parameters and return values, as do the wide character versions of the native Windows API.
+
+The **char16_t** and **char32_t** types represent 16-bit and 32-bit wide characters, respectively. Unicode encoded as UTF-16 can be stored in the **char16_t** type, and Unicode encoded as UTF-32 can be stored in the **char32_t** type. Strings of these types and **wchar_t** are all referred to as *wide* strings, though the term often refers specifically to strings of **wchar_t** type.
+
+In the C++ standard library, the `basic_string` type is specialized for both narrow and wide strings. Use `std::string` when the characters are of type **char**, `std::u16string` when the characters are of type **char16_t**, `std::u32string` when the characters are of type **char32_t**, and `std::wstring` when the characters are of type **wchar_t**. Other types that represent text, including `std::stringstream` and `std::cout` have specializations for narrow and wide strings.  
   
- In the C++ standard library, the basic_string type is specialized for both narrow and wide strings. Use std::string when the characters are of type char, and std::wstring when the characters are of type wchar_t. Other types that represent text, including std::stringstream and std::cout have specializations for narrow and wide strings.  
-  
-## Requirements

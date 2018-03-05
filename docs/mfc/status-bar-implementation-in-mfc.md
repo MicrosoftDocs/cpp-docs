@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "COldStatusBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "status bars, implementing in MFC"
-  - "CStatusBarCtrl class, and MFC status bars"
-  - "CStatusBar class, and CStatusBarCtrl class"
-  - "CStatusBarCtrl class, and CStatusBar class"
-  - "status bars, backward compatibility"
-  - "status bars, old with COldStatusBar class"
-  - "COldStatusBar class"
-  - "status bars, and CStatusBarCtrl class"
-  - "CStatusBar class, and MFC status bars"
-  - "status indicators"
-  - "status bars, Windows 95 implementation"
+f1_keywords: ["COldStatusBar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["status bars [MFC], implementing in MFC", "CStatusBarCtrl class [MFC], and MFC status bars", "CStatusBar class [MFC], and CStatusBarCtrl class [MFC]", "CStatusBarCtrl class [MFC], and CStatusBar class [MFC]", "status bars [MFC], backward compatibility", "status bars [MFC], old with COldStatusBar class [MFC]", "COldStatusBar class [MFC]", "status bars [MFC], and CStatusBarCtrl class", "CStatusBar class [MFC], and MFC status bars", "status indicators", "status bars [MFC], Windows 95 implementation"]
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Status Bar Implementation in MFC
 A [CStatusBar](../mfc/reference/cstatusbar-class.md) object is a control bar with a row of text output panes. The output panes are commonly used as message lines and as status indicators. Examples include the menu help-message lines that briefly explain the selected menu command and the indicators that show the status of the SCROLL LOCK, NUM LOCK, and other keys.  

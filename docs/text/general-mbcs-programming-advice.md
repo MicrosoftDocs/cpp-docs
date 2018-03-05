@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MBCS [C++], dialog box fonts"
-  - "MS Shell Dlg"
-  - "MBCS [C++], programming"
-  - "dialog boxes [C++], fonts"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MBCS [C++], dialog box fonts", "MS Shell Dlg", "MBCS [C++], programming", "dialog boxes [C++], fonts"]
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # General MBCS Programming Advice
 Use the following tips:  
@@ -50,7 +30,7 @@ Use the following tips:
   
 -   When designing dialog boxes, allow approximately 30% extra space at the end of static text controls for MBCS translation.  
   
--   Be careful when selecting fonts for your application, because some fonts are not available on all systems. For example, the Japanese version of Windows 2000 does not support the Helvetica font.  
+-   Be careful when selecting fonts for your application, because some fonts are not available on all systems.  
   
 -   When selecting the font for dialog boxes, use [MS Shell Dlg](http://msdn.microsoft.com/library/windows/desktop/dd374112) instead of MS Sans Serif or Helvetica. MS Shell Dlg is replaced with the correct font by the system before creating the dialog box. Using MS Shell Dlg ensures that any changes in the operating system to deal with this font will automatically be available. (MFC replaces MS Shell Dlg with the DEFAULT_GUI_FONT or the System font on Windows 95, Windows 98, and Windows NT 4 because those systems do not handle MS Shell Dlg correctly.)  
   

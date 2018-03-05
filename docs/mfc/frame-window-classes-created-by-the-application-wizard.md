@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CMainFrame"
-  - "CMainFrame::PreCreateWindow"
-  - "CMainFrame.PreCreateWindow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application wizards [C++], frame window classes created by"
-  - "window classes"
-  - "classes [C++], frame-window"
-  - "CMDIFrameWnd class, frame windows"
-  - "window classes, frame"
-  - "CFrameWnd class, frame windows"
-  - "CMDIChildWnd class, frame windows"
-  - "frame window classes, created by application wizards"
-  - "CMainFrame class"
+f1_keywords: ["CMainFrame"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application wizards [MFC], frame window classes created by", "window classes [MFC]", "classes [MFC], frame-window", "CMDIFrameWnd class [MFC], frame windows", "window classes [MFC], frame", "CFrameWnd class [MFC], frame windows", "CMDIChildWnd class [MFC], frame windows", "frame window classes [MFC], created by application wizards", "CMainFrame class [MFC]"]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Frame-Window Classes Created by the Application Wizard
 When you use the [Application Wizard](../ide/creating-desktop-projects-by-using-application-wizards.md) to create a skeleton application, in addition to application, document, and view classes, the Application Wizard creates a derived frame-window class for your application's main frame window. The class is called `CMainFrame` by default, and the files that contain it are named MAINFRM.H and MAINFRM.CPP.  

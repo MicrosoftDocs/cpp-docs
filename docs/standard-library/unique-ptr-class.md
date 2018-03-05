@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "unique_ptr"
-  - "std.unique_ptr"
-  - "std::unique_ptr"
-  - "memory/std::unique_ptr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unique_ptr class"
+ms.topic: "reference"
+f1_keywords: ["memory/std::unique_ptr", "memory/std::unique_ptr::deleter_type", "memory/std::unique_ptr::element_type", "memory/std::unique_ptr::pointer", "memory/std::unique_ptr::get", "memory/std::unique_ptr::get_deleter", "memory/std::unique_ptr::release", "memory/std::unique_ptr::reset", "memory/std::unique_ptr::swap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::unique_ptr [C++]", "std::unique_ptr [C++], deleter_type", "std::unique_ptr [C++], element_type", "std::unique_ptr [C++], pointer", "std::unique_ptr [C++], get", "std::unique_ptr [C++], get_deleter", "std::unique_ptr [C++], release", "std::unique_ptr [C++], reset", "std::unique_ptr [C++], swap"]
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # unique_ptr Class
 Stores a pointer to an owned object or array. The object/array is owned by no other `unique_ptr`. The object/array is destroyed when the `unique_ptr` is destroyed.  
@@ -121,7 +101,7 @@ public:
   
  `unique_ptr` uniquely manages a resource. Each `unique_ptr` object stores a pointer to the object that it owns or stores a null pointer. A resource can be owned by no more than one `unique_ptr` object;  when a `unique_ptr` object that owns a particular resource is destroyed, the resource is freed. A `unique_ptr` object may be moved, but not copied;  for more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter``default_delete``<T>` assumes that the resource pointed to by ` ptr` is allocated with `new`, and that it can be freed by calling `delete _``Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter``default_delete<T[]>`, specialized to call delete[] ` ptr`.)  
+ The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter` `default_delete<T>` assumes that the resource pointed to by `ptr` is allocated with `new`, and that it can be freed by calling `delete _Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter` `default_delete<T[]>`, specialized to call delete[] `ptr`.)  
   
  The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.  
   
@@ -131,33 +111,33 @@ public:
   
 |||  
 |-|-|  
-|[unique_ptr::unique_ptr](#unique_ptr__unique_ptr)|There are seven constructors for `unique_ptr`.|  
+|[unique_ptr](#unique_ptr)|There are seven constructors for `unique_ptr`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
 |[deleter_type](#deleter_type)|A synonym for the template parameter `Del`.|  
-|[element_type](#element_type)|A synonym for the template parameter `T``.`|  
+|[element_type](#element_type)|A synonym for the template parameter `T`.|  
 |[pointer](#pointer)|A synonym for `Del::pointer` if defined, otherwise `T *`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[unique_ptr::get](#unique_ptr__get)|Returns `stored_ptr`.|  
-|[unique_ptr::get_deleter](#unique_ptr__get_deleter)|Returns a reference to `stored_deleter`.|  
-|[unique_ptr::release](#unique_ptr__release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
-|[unique_ptr::reset](#unique_ptr__reset)|Releases the currently owned resource and accepts a new resource.|  
-|[unique_ptr::swap](#unique_ptr__swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
+|[get](#get)|Returns `stored_ptr`.|  
+|[get_deleter](#get_deleter)|Returns a reference to `stored_deleter`.|  
+|[release](#release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
+|[reset](#reset)|Releases the currently owned resource and accepts a new resource.|  
+|[swap](#swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
 |`operator bool`|The operator returns a value of a type that is convertible to `bool`. The result of the conversion to `bool` is `true` when `get() != pointer()`, otherwise `false`.|  
-|`operator->`|The member function returns `stored_ptr``.`|  
-|`operator*`|The member function returns* `stored_ptr``.`|  
+|`operator->`|The member function returns `stored_ptr`.|  
+|`operator*`|The member function returns `*stored_ptr`.|  
 |[unique_ptr operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|  
   
 ## Requirements  
@@ -185,7 +165,7 @@ typedef Type element_type;
 ### Remarks  
  The type is a synonym for the template parameter `Ty`.  
   
-##  <a name="unique_ptr__get"></a>  unique_ptr::get  
+##  <a name="get"></a>  unique_ptr::get  
  Returns `stored_ptr`.  
   
 ```  
@@ -195,7 +175,7 @@ pointer get() const;
 ### Remarks  
  The member function returns `stored_ptr`.  
   
-##  <a name="unique_ptr__get_deleter"></a>  unique_ptr::get_deleter  
+##  <a name="get_deleter"></a>  unique_ptr::get_deleter  
  Returns a reference to `stored_deleter`.  
   
 ```  
@@ -221,7 +201,7 @@ unique_ptr& operator=(pointer-type);
  A `unique_ptr` reference used to assign the value of to the current `unique_ptr`.  
   
 ### Remarks  
- The member functions call `reset(`` right``.release())` and move ` right``.stored_deleter` to `stored_deleter`, then return `*this`.  
+ The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return `*this`.  
   
 ##  <a name="pointer"></a>  pointer  
  A synonym for `Del::pointer` if defined, otherwise `Type *`.  
@@ -233,7 +213,7 @@ typedef T1 pointer;
 ### Remarks  
  The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.  
   
-##  <a name="unique_ptr__release"></a>  unique_ptr::release  
+##  <a name="release"></a>  unique_ptr::release  
  Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to `nullptr`.  
   
 ```  
@@ -293,7 +273,7 @@ Deleting Sample(3)
   
 ```  
   
-##  <a name="unique_ptr__reset"></a>  unique_ptr::reset  
+##  <a name="reset"></a>  unique_ptr::reset  
  Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to `nullptr`.  
   
 ```  
@@ -308,11 +288,11 @@ void reset(nullptr_t ptr);
 |`ptr`|A pointer to the resource to take ownership of.|  
   
 ### Remarks  
- Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to `ptr` and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#unique_ptr__get_deleter) on the original stored pointer.  
+ Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to `ptr` and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#get_deleter) on the original stored pointer.  
   
  Because `reset` first stores the new pointer `ptr`, and then deletes the original stored pointer, it's possible for `reset` to immediately delete `ptr` if it is the same as the original stored pointer.  
   
-##  <a name="unique_ptr__swap"></a>  unique_ptr::swap  
+##  <a name="swap"></a>  unique_ptr::swap  
  Exchanges pointers between two `unique_ptr` objects.  
   
 ```  
@@ -320,13 +300,13 @@ void swap(unique_ptr& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  A `unique_ptr` used to swap pointers.  
   
 ### Remarks  
  The member function swaps `stored_ptr` with `right.stored_ptr` and `stored_deleter` with `right.stored_deleter`.  
   
-##  <a name="unique_ptr__unique_ptr"></a>  unique_ptr::unique_ptr  
+##  <a name="unique_ptr"></a>  unique_ptr::unique_ptr  
  There are seven constructors for `unique_ptr`.  
   
 ```  
@@ -352,16 +332,16 @@ unique_ptr(unique_ptr<Ty2, Del2>&& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` ptr`|A pointer to the resource to be assigned to a `unique_ptr.`|  
+|`ptr`|A pointer to the resource to be assigned to a `unique_ptr.`|  
 |`_Deleter`|A `deleter` to be assigned to a `unique_ptr`.|  
-|` right`|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|  
+|`right`|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|  
   
 ### Remarks  
  The first two constructors construct an object that manages no resource. The third constructor stores `ptr` in `stored_ptr`. The fourth constructor stores `ptr` in `stored_ptr` and `deleter` in `stored_deleter`.  
   
- The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.reset()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
+ The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.release()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
   
-##  <a name="unique_ptr__dtorunique_ptr"></a>  unique_ptr ~unique_ptr  
+##  <a name="dtorunique_ptr"></a>  unique_ptr ~unique_ptr  
  The destructor for `unique_ptr`, destroys a `unique_ptr` object.  
   
 ```  

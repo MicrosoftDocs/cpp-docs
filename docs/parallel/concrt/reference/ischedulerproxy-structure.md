@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::ISchedulerProxy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISchedulerProxy structure"
+ms.topic: "reference"
+f1_keywords: ["ISchedulerProxy", "CONCRTRM/concurrency::ISchedulerProxy", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::BindContext", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::CreateOversubscriber", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::RequestInitialVirtualProcessors", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::Shutdown", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::SubscribeCurrentThread", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::UnbindContext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISchedulerProxy structure"]
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ISchedulerProxy Structure
 The interface by which schedulers communicate with the Concurrency Runtime's Resource Manager to negotiate resource allocation.  
@@ -49,12 +32,12 @@ struct ISchedulerProxy;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISchedulerProxy::BindContext Method](#bindcontext)|Associates an execution context with a thread proxy, if it is not already associated with one.|  
-|[ISchedulerProxy::CreateOversubscriber Method](#createoversubscriber)|Creates a new virtual processor root on the hardware thread associated with an existing execution resource.|  
-|[ISchedulerProxy::RequestInitialVirtualProcessors Method](#requestinitialvirtualprocessors)|Requests an initial allocation of virtual processor roots. Every virtual processor root represents the ability to execute one thread that can perform work for the scheduler.|  
-|[ISchedulerProxy::Shutdown Method](#shutdown)|Notifies the Resource Manager that the scheduler is shutting down. This will cause the Resource Manager to immediately reclaim all resources granted to the scheduler.|  
-|[ISchedulerProxy::SubscribeCurrentThread Method](#subscribecurrentthread)|Registers the current thread with the Resource Manager, associating it with this scheduler.|  
-|[ISchedulerProxy::UnbindContext Method](#unbindcontext)|Disassociates a thread proxy from the execution context specified by the `pContext` parameter and returns it to the thread proxy factory's free pool. This method may only be called on an execution context which was bound via the [ISchedulerProxy::BindContext](#bindcontext) method and has not yet been started via being the `pContext` parameter of an [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) method call.|  
+|[ISchedulerProxy::BindContext](#bindcontext)|Associates an execution context with a thread proxy, if it is not already associated with one.|  
+|[ISchedulerProxy::CreateOversubscriber](#createoversubscriber)|Creates a new virtual processor root on the hardware thread associated with an existing execution resource.|  
+|[ISchedulerProxy::RequestInitialVirtualProcessors](#requestinitialvirtualprocessors)|Requests an initial allocation of virtual processor roots. Every virtual processor root represents the ability to execute one thread that can perform work for the scheduler.|  
+|[ISchedulerProxy::Shutdown](#shutdown)|Notifies the Resource Manager that the scheduler is shutting down. This will cause the Resource Manager to immediately reclaim all resources granted to the scheduler.|  
+|[ISchedulerProxy::SubscribeCurrentThread](#subscribecurrentthread)|Registers the current thread with the Resource Manager, associating it with this scheduler.|  
+|[ISchedulerProxy::UnbindContext](#unbindcontext)|Disassociates a thread proxy from the execution context specified by the `pContext` parameter and returns it to the thread proxy factory's free pool. This method may only be called on an execution context which was bound via the [ISchedulerProxy::BindContext](#bindcontext) method and has not yet been started via being the `pContext` parameter of an [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) method call.|  
   
 ## Remarks  
  The Resource Manager hands an `ISchedulerProxy` interface to every scheduler that registers with it using the [IResourceManager::RegisterScheduler](iresourcemanager-structure.md#registerscheduler) method.  

@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAdapt"
-  - "ATL.CAdapt<T>"
-  - "ATL::CAdapt"
-  - "ATL::CAdapt<T>"
-  - "CAdapt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "address-of operator"
-  - "adapter objects"
-  - "& operator, address-of operator"
-  - "CAdapt class"
+f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["address-of operator", "adapter objects", "& operator, address-of operator", "CAdapt class"]
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CAdapt Class
 This template is used to wrap classes that redefine the address-of operator to return something other than the address of the object.  
@@ -87,7 +62,7 @@ class CAdapt
   
  The adapter class `CAdapt` is useful because some container-style classes expect to be able to obtain the addresses of their contained objects using the address-of operator. The redefinition of the address-of operator can confound this requirement, typically causing compilation errors and preventing the use of the non-adapted type with classes that expect it to "just work". `CAdapt` provides a way around those problems.  
   
- Typically, you will use `CAdapt` when you want to store `CComBSTR`, `CComPtr`, `CComQIPtr`, or `_com_ptr_t` objects in a container-style class. This was most commonly necessary for C++ Standard Library containers prior to support for the C++11 Standard, but C++11 Standard Library containers automatically work with types that have overloaded `operator&()`. The Standard Library achieves this by internally using [std::addressof()](http://msdn.microsoft.com/library/6243ddc8-486a-4961-8b0c-33e9dc2e0648) to get the true addresses of objects.  
+ Typically, you will use `CAdapt` when you want to store `CComBSTR`, `CComPtr`, `CComQIPtr`, or `_com_ptr_t` objects in a container-style class. This was most commonly necessary for C++ Standard Library containers prior to support for the C++11 Standard, but C++11 Standard Library containers automatically work with types that have overloaded `operator&()`. The Standard Library achieves this by internally using [std::addressof](../../standard-library/memory-functions.md#addressof) to get the true addresses of objects.  
   
 ## Requirements  
  **Header:** atlcomcli.h  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "iterator conventions"
-  - "C++ Standard Library, iterator conventions"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["iterator conventions", "C++ Standard Library, iterator conventions"]
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Iterators
 An iterator is an object that can iterate over elements in a C++ Standard Library container and provide access to individual elements. The C++ Standard Library containers all provide iterators so that algorithms can access their elements in a standard way without having to be concerned with the type of container the elements are stored in.  
@@ -115,7 +98,7 @@ forward iterator
 > [!NOTE]
 >  You can avoid using iterators explicitly by using range-for loops. For more information, see [Loops (Modern C++)](http://msdn.microsoft.com/en-us/b1b2779c-750e-4576-a514-a84178eae9da).  
   
- [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
+ Visual C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
   
 ## See Also  
  [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   

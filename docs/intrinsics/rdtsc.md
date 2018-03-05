@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__rdtsc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__rdtsc intrinsic"
-  - "rdtsc instruction"
-  - "Read Time Stamp Counter instruction"
+ms.topic: "reference"
+f1_keywords: ["__rdtsc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__rdtsc intrinsic", "rdtsc instruction", "Read Time Stamp Counter instruction"]
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __rdtsc
 **Microsoft Specific**  
@@ -86,7 +66,7 @@ int main()
 3363423610155519 ticks  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

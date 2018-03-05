@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3767"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3767"
+f1_keywords: ["C3767"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3767"]
 ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3767
 'function' candidate function(s) not accessible  
@@ -96,42 +78,4 @@ ref class Der : public Base {
 };  
 ```  
   
- In Visual C++ .NET 2002, the compiler changed the way it looked up symbols. In some cases, it would have automatically looked for symbols in a specified namespace. Now, it uses argument-dependent lookup.  
-  
- The following sample generates C3767:  
-  
-```  
-// C3767e.cpp  
-namespace N {  
-   class C {  
-      friend void FriendFunc() {}  
-      friend void AnotherFriendFunc(C* c) {}  
-   };  
-}  
-  
-int main() {  
-   using namespace N;  
-   FriendFunc();   // C3767 error  
-   C* pC = new C();  
-   AnotherFriendFunc(pC);   // found via argument-dependent lookup  
-}  
-```  
-  
- For code that is valid in Visual C++ .NET 2003 and Visual C++ .NET 2002, declare the friend in class scope and define it in namespace scope:  
-  
-```  
-// C3767f.cpp  
-class MyClass {  
-   int m_private;  
-   friend void func();  
-};  
-  
-void func() {  
-   MyClass s;  
-   s.m_private = 0;  
-}  
-  
-int main() {  
-   func();  
-}  
-```
+ 

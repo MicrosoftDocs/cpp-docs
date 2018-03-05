@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_localtime64_s"
-  - "_localtime32_s"
-  - "localtime_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_localtime64_s", "_localtime32_s", "localtime_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_localtime32_s"
-  - "localtime32_s"
-  - "localtime_s"
-  - "localtime64_s"
-  - "_localtime64_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_localtime64_s function"
-  - "localtime32_s function"
-  - "_localtime32_s function"
-  - "localtime64_s function"
-  - "time, converting values"
-  - "localtime_s function"
+f1_keywords: ["_localtime32_s", "localtime32_s", "localtime_s", "localtime64_s", "_localtime64_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_localtime64_s function", "localtime32_s function", "_localtime32_s function", "localtime64_s function", "time, converting values", "localtime_s function"]
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # localtime_s, _localtime32_s, _localtime64_s
 Converts a time value and corrects for the local time zone. These are versions of [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -115,28 +75,28 @@ errno_t _localtime64_s(
  The fields of the structure type [tm](../../c-runtime-library/standard-types.md) store the following values, each of which is an `int`.  
   
  `tm_sec`  
- Seconds after minute (0 – 59).  
+ Seconds after minute (0 - 59).  
   
  `tm_min`  
- Minutes after hour (0 – 59).  
+ Minutes after hour (0 - 59).  
   
  `tm_hour`  
- Hours after midnight (0 – 23).  
+ Hours after midnight (0 - 23).  
   
  `tm_mday`  
- Day of month (1 – 31).  
+ Day of month (1 - 31).  
   
  `tm_mon`  
- Month (0 – 11; January = 0).  
+ Month (0 - 11; January = 0).  
   
  `tm_year`  
  Year (current year minus 1900).  
   
  `tm_wday`  
- Day of week (0 – 6; Sunday = 0).  
+ Day of week (0 - 6; Sunday = 0).  
   
  `tm_yday`  
- Day of year (0 – 365; January 1 = 0).  
+ Day of year (0 - 365; January 1 = 0).  
   
  `tm_isdst`  
  Positive value if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative value if status of daylight saving time is unknown. If the `TZ` environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight saving time (DST).  
@@ -206,9 +166,6 @@ int main( void )
 ```  
 Fri Apr 25 01:19:27 PM  
 ```  
-  
-## .NET Framework Equivalent  
- [System::DateTime::ToLocalTime](https://msdn.microsoft.com/en-us/library/system.datetime.tolocaltime.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "&&"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "&& rvalue reference declarator"
+f1_keywords: ["&&"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["&& rvalue reference declarator"]
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Rvalue Reference Declarator: &amp;&amp;
 Holds a reference to an rvalue expression.  
@@ -54,7 +37,7 @@ type-id && cast-expression
   
  To implement move semantics, you typically provide a *move constructor,* and optionally a move assignment operator (`operator=`), to your class. Copy and assignment operations whose sources are rvalues then automatically take advantage of move semantics. Unlike the default copy constructor, the compiler does not provide a default move constructor. For more information about how to write a move constructor and how to use it in your application, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
- You can also overload ordinary functions and operators to take advantage of move semantics. [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)] introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
+ You can also overload ordinary functions and operators to take advantage of move semantics. Visual C++ 2010 introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
   
 ```  
 // string_concatenation.cpp  
@@ -70,15 +53,15 @@ int main()
 }  
 ```  
   
- Before [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], each call to `operator+` allocates and returns a new temporary `string` object (an rvalue). `operator+` cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, `operator+` can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, `operator+` can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).  
+ Before Visual C++ 2010, each call to `operator+` allocates and returns a new temporary `string` object (an rvalue). `operator+` cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, `operator+` can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, `operator+` can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).  
   
- Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual C++ 2005](http://go.microsoft.com/fwlink/?LinkId=131571).  
+ Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual C++ 2005](http://go.microsoft.com/fwlink/p/?linkid=131571).  
   
  To better understand move semantics, consider the example of inserting an element into a `vector` object. If the capacity of the `vector` object is exceeded, the `vector` object must reallocate memory for its elements and then copy each element to another memory location to make room for the inserted element. When an insertion operation copies an element, it creates a new element, calls the copy constructor to copy the data from the previous element to the new element, and then destroys the previous element. Move semantics enables you to move objects directly without having to perform expensive memory allocation and copy operations.  
   
  To take advantage of move semantics in the `vector` example, you can write a move constructor to move data from one object to another.  
   
- For more information about the introduction of move semantics into the C++ Standard Library in [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).  
+ For more information about the introduction of move semantics into the C++ Standard Library in Visual C++ 2010, see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).  
   
 ## Perfect Forwarding  
  Perfect forwarding reduces the need for overloaded functions and helps avoid the forwarding problem. The *forwarding problem* can occur when you write a generic function that takes references as its parameters and it passes (or *forwards*) these parameters to another function. For example, if the generic function takes a parameter of type `const T&`, then the called function cannot modify the value of that parameter. If the generic function takes a parameter of type `T&`, then the function cannot be called by using an rvalue (such as a temporary object or integer literal).  

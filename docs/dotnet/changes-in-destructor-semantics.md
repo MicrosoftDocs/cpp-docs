@@ -4,37 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "finalizers [C++]"
-  - "destructors, C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["finalizers [C++]", "destructors, C++"]
 ms.assetid: f1869944-a407-452f-b99a-04d8c209f0dc
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Changes in Destructor Semantics
-Semantics for class destructors have changed significantly from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Semantics for class destructors have changed significantly from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, a class destructor was permitted within a reference class but not within a value class. This has not changed in the new syntax. However, the semantics of the class destructor have changed. This topic focuses on the reasons of that change and discusses how it affects the translation of existing CLR code. It is probably the most important programmer-level change between the two versions of the language.  
   
@@ -102,10 +85,10 @@ public:
 };  
 ```  
   
- While this implementation allows the user to explicitly invoke the class `Finalize` method now rather than at a time you have no control over, it does not really tie in with the `Dispose` method solution. This is changed in [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+ While this implementation allows the user to explicitly invoke the class `Finalize` method now rather than at a time you have no control over, it does not really tie in with the `Dispose` method solution. This is changed in Visual C++.  
   
 ## Destructors in New Syntax  
- In the new syntax, the destructor is renamed internally to the `Dispose` method and the reference class is automatically extended to implement the `IDispose` interface. That is, under [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], our pair of classes is transformed as follows:  
+ In the new syntax, the destructor is renamed internally to the `Dispose` method and the reference class is automatically extended to implement the `IDispose` interface. That is, under Visual C++, our pair of classes is transformed as follows:  
   
 ```  
 // internal transformation of destructor under the new syntax  
@@ -132,7 +115,7 @@ public:
  But this does not get us all the way to deterministic finalization. In order to reach that, we need the additional support of local reference objects. (This has no analogous support within Managed Extensions, and so it is not a translation issue.)  
   
 ## Declaring a Reference Object  
- [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] supports the declaration of an object of a reference class on the local stack or as a member of a class as if it were directly accessible. When combined with the association of the destructor with the `Dispose` method, the result is the automated invocation of finalization semantics on reference types.  
+ Visual C++ supports the declaration of an object of a reference class on the local stack or as a member of a class as if it were directly accessible. When combined with the association of the destructor with the `Dispose` method, the result is the automated invocation of finalization semantics on reference types.  
   
  First, we define our reference class such that object creation functions as the acquisition of a resource through its class constructor. Secondly, within the class destructor, we release the resource acquired when the object was created.  
   
@@ -142,7 +125,7 @@ public:
    R() { /* acquire expensive resource */ }  
    ~R() { /* release expensive resource */ }  
   
-   // … everything else …  
+   // everything else...  
 };  
 ```  
   
@@ -153,7 +136,7 @@ void f() {
    R r;   
    r.methodCall();  
   
-   // r is automatically destructed here –  
+   // r is automatically destructed here -  
    // that is, r.Dispose() is invoked  
 }  
 ```  
@@ -183,7 +166,7 @@ public:
 };  
 ```  
   
- The `!` prefix is analogous to tilde (`~`) that introduces a class destructor – that is, both post-lifetime methods have a token prefixing the name of the class. If the synthesized `Finalize` method occurs within a derived class, an invocation of the base class `Finalize` method is inserted at its end. If the destructor is explicitly invoked, the finalizer is suppressed. Here is what the transformation might look like:  
+ The `!` prefix is analogous to tilde (`~`) that introduces a class destructor - that is, both post-lifetime methods have a token prefixing the name of the class. If the synthesized `Finalize` method occurs within a derived class, an invocation of the base class `Finalize` method is inserted at its end. If the destructor is explicitly invoked, the finalizer is suppressed. Here is what the transformation might look like:  
   
 ```  
 // internal transformation under new syntax  
@@ -196,7 +179,7 @@ public:
 ```  
   
 ## Moving from Managed Extensions for C++ to Visual C++ 2010  
- The runtime behavior of a Managed Extensions for C++ program is  changed when it is compiled under [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] whenever a reference class contains a non-trivial destructor. The required translation algorithm is similar to the following:  
+ The runtime behavior of a Managed Extensions for C++ program is  changed when it is compiled under Visual C++ whenever a reference class contains a non-trivial destructor. The required translation algorithm is similar to the following:  
   
 1.  If a destructor is present, rewrite that to be the class finalizer.  
   

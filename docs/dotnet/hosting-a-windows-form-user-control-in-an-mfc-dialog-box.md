@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "hosting Windows Forms control [C++]"
-  - "Windows Forms [C++], MFC support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], Windows Forms support", "hosting Windows Forms control [C++]", "Windows Forms [C++], MFC support"]
 ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Hosting a Windows Form User Control in an MFC Dialog Box
 MFC hosts a Windows Forms control as a special kind of ActiveX control and communicates with the control by using ActiveX interfaces, and properties and methods of the <xref:System.Windows.Forms.Control> class. We recommend that you use .NET Framework properties and methods to operate on the control.  

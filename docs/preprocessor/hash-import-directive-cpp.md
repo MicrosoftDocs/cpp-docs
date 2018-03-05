@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "#import"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".tlh files"
-  - "#import directive"
-  - "import directive (#import)"
-  - "tlh files"
-  - "tlbid switch"
-  - "preprocessor, directives"
-  - "COM, type library header file"
+ms.topic: "reference"
+f1_keywords: ["#import"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".tlh files", "#import directive", "import directive (#import)", "tlh files", "tlbid switch", "preprocessor, directives", "COM, type library header file"]
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # #import Directive (C++)
 **C++ Specific**  
@@ -194,7 +171,7 @@ using namespace MyLib;
   
  You must determine which of the dependency comments are not otherwise provided for by system headers and then provide an `#import` directive at some point before the `#import` directive of the dependent type library to resolve the errors.  
   
- For more information, see the Knowledge Base article "#import Wrapper Methods May Cause Access Violation" (Q242527) or "Compiler Errors When You Use #import with XML" (Q269194). You can find Knowledge Base articles on the MSDN Library media or at [http://support.microsoft.com/support/](http://support.microsoft.com/support/).  
+ For more information, see the Knowledge Base article "#import Wrapper Methods May Cause Access Violation" (Q242527) or "Compiler Errors When You Use #import with XML" (Q269194). You can find Knowledge Base articles on the MSDN Library media or at [Microsoft Support](https://support.microsoft.com/).  
   
 ##  <a name="_predir_the_23import_directive_import_attributes"></a> #import Attributes  
  `#import` can optionally include one or more attributes. These attributes tell the compiler to modify the contents of the type-library headers. A backslash (**\\**) symbol can be used to include additional lines in a single `#import` statement. For example:  

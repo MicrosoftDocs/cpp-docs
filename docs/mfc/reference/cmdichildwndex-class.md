@@ -4,57 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMDIChildWndEx"
-  - "GetThisClass"
-  - "CMDIChildWndEx::PreTranslateMessage"
-  - "CMDIChildWndEx::ActivateFrame"
-  - "CMDIChildWndEx.GetThisClass"
-  - "CMDIChildWndEx::AddDockSite"
-  - "CMDIChildWndEx.CreateObject"
-  - "CMDIChildWndEx::CreateObject"
-  - "CMDIChildWndEx.ActivateFrame"
-  - "CMDIChildWndEx::GetThisClass"
-  - "CMDIChildWndEx.PreTranslateMessage"
-  - "PreTranslateMessage"
-  - "ActivateFrame"
-  - "CreateObject"
-  - "CMDIChildWndEx.AddDockSite"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMDIChildWndEx class"
-  - "ActivateFrame method"
-  - "PreTranslateMessage method"
-  - "GetThisClass method"
-  - "CreateObject method"
+f1_keywords: ["CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx::ActivateTopLevelFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AdjustDockingLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnMDITabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnTaskBarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnWindowsList", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPaneLeftOf", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableAutoHidePanes", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableDocking", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDockingManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDocumentName", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameIcon", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameText", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabProxyWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarPreviewWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetToolbarButtonToolTipText", "AFXMDICHILDWNDEX/CMDIChildWndEx::InsertPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::InvalidateIconicBitmaps", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsPointNearDockSite", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsReadOnly", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsRegisteredWithTaskbarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarTabsSupportEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicLivePreviewBitmap", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicThumbnail", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnMoveMiniFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnPressTaskbarThmbnailCloseButton", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnSetPreviewMode", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailMouseActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailStretch", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnUpdateFrameTitle", "AFXMDICHILDWNDEX/CMDIChildWndEx::PaneFromPoint", "AFXMDICHILDWNDEX/CMDIChildWndEx::RecalcLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::RegisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::RemovePaneFromDockManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabActive", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabOrder", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabProperties", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::ShowPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::UnregisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::UpdateTaskbarTabIcon"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMDIChildWndEx [MFC], ActivateTopLevelFrame", "CMDIChildWndEx [MFC], AddPane", "CMDIChildWndEx [MFC], AddTabbedPane", "CMDIChildWndEx [MFC], AdjustDockingLayout", "CMDIChildWndEx [MFC], CanShowOnMDITabs", "CMDIChildWndEx [MFC], CanShowOnTaskBarTabs", "CMDIChildWndEx [MFC], CanShowOnWindowsList", "CMDIChildWndEx [MFC], DockPane", "CMDIChildWndEx [MFC], DockPaneLeftOf", "CMDIChildWndEx [MFC], EnableAutoHidePanes", "CMDIChildWndEx [MFC], EnableDocking", "CMDIChildWndEx [MFC], EnableTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], GetDockingManager", "CMDIChildWndEx [MFC], GetDocumentName", "CMDIChildWndEx [MFC], GetFrameIcon", "CMDIChildWndEx [MFC], GetFrameText", "CMDIChildWndEx [MFC], GetPane", "CMDIChildWndEx [MFC], GetRelatedTabGroup", "CMDIChildWndEx [MFC], GetTabbedPane", "CMDIChildWndEx [MFC], GetTabProxyWnd", "CMDIChildWndEx [MFC], GetTaskbarPreviewWnd", "CMDIChildWndEx [MFC], GetTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], GetToolbarButtonToolTipText", "CMDIChildWndEx [MFC], InsertPane", "CMDIChildWndEx [MFC], InvalidateIconicBitmaps", "CMDIChildWndEx [MFC], IsPointNearDockSite", "CMDIChildWndEx [MFC], IsReadOnly", "CMDIChildWndEx [MFC], IsRegisteredWithTaskbarTabs", "CMDIChildWndEx [MFC], IsTabbedPane", "CMDIChildWndEx [MFC], IsTaskbarTabsSupportEnabled", "CMDIChildWndEx [MFC], IsTaskbarThumbnailClipRectEnabled", "CMDIChildWndEx [MFC], m_dwDefaultTaskbarTabPropertyFlags", "CMDIChildWndEx [MFC], OnGetIconicLivePreviewBitmap", "CMDIChildWndEx [MFC], OnGetIconicThumbnail", "CMDIChildWndEx [MFC], OnMoveMiniFrame", "CMDIChildWndEx [MFC], OnPressTaskbarThmbnailCloseButton", "CMDIChildWndEx [MFC], OnSetPreviewMode", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailActivate", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailMouseActivate", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailStretch", "CMDIChildWndEx [MFC], OnUpdateFrameTitle", "CMDIChildWndEx [MFC], PaneFromPoint", "CMDIChildWndEx [MFC], RecalcLayout", "CMDIChildWndEx [MFC], RegisterTaskbarTab", "CMDIChildWndEx [MFC], RemovePaneFromDockManager", "CMDIChildWndEx [MFC], SetRelatedTabGroup", "CMDIChildWndEx [MFC], SetTaskbarTabActive", "CMDIChildWndEx [MFC], SetTaskbarTabOrder", "CMDIChildWndEx [MFC], SetTaskbarTabProperties", "CMDIChildWndEx [MFC], SetTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], ShowPane", "CMDIChildWndEx [MFC], UnregisterTaskbarTab", "CMDIChildWndEx [MFC], UpdateTaskbarTabIcon"]
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CMDIChildWndEx Class
 The `CMDIChildWndEx` class provides the functionality of a Windows multiple document interface (MDI) child window. It extends the functionality of [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md). The framework requires this class when an MDI application uses certain MFC classes.  
+ 
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ## Syntax  
   
@@ -192,7 +159,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
  Handle to a deferred window position structure.  
   
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL CanShowOnMDITabs();
@@ -302,7 +269,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
  Call this method to enable docking alignment to the main frame. You can pass a combination of CBRS_ALIGN_ flags (for more information, see [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)).  
   
 ##  <a name="getdockingmanager"></a>  CMDIChildWndEx::GetDockingManager  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CDockingManager* GetDockingManager();
@@ -381,7 +348,7 @@ CBasePane* GetPane(UINT nID);
  A pointer to the pane if found, otherwise `NULL`.  
   
 ##  <a name="getrelatedtabgroup"></a>  CMDIChildWndEx::GetRelatedTabGroup  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCTabCtrl* GetRelatedTabGroup();
@@ -615,7 +582,7 @@ void RemovePaneFromDockManager(
  A pointer to a pane that replaces the removed pane.  
   
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetRelatedTabGroup(CMFCTabCtrl* p);
@@ -627,7 +594,7 @@ void SetRelatedTabGroup(CMFCTabCtrl* p);
 ### Remarks  
   
 ##  <a name="showpane"></a>  CMDIChildWndEx::ShowPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ShowPane(

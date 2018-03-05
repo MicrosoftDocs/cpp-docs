@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "syntax, CL compiler command line"
-  - "cl.exe compiler, command-line syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Command-Line Syntax
 The CL command line uses the following syntax:  
@@ -44,7 +27,7 @@ CL [option...] file... [option | file]... [lib...] [@command-file] [/link link-o
   
 |Entry|Meaning|  
 |-----------|-------------|  
-|*option*|One or more [CL options](../../build/reference/compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (–). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](../../build/reference/order-of-cl-options.md) for more information.|  
+|*option*|One or more [CL options](../../build/reference/compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](../../build/reference/order-of-cl-options.md) for more information.|  
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. See [CL Filename Syntax](../../build/reference/cl-filename-syntax.md) for more information.|  
 |*lib*|One or more library names. CL passes these names to the linker.|  
 |*command-file*|A file that contains multiple options and filenames. See [CL Command Files](../../build/reference/cl-command-files.md) for more information.|  

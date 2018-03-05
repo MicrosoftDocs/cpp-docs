@@ -2,23 +2,20 @@
 title: "Platform::ValueType Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::ValueType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::ValueType Class"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::ValueType::ToString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::ValueType Class"]
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::ValueType Class
 The base class for instances of value types.  
@@ -33,19 +30,31 @@ public ref class ValueType : Object
   
 |||  
 |-|-|  
-|[ValueType::ToString Method](../cppcx/valuetype-tostring-method.md)|Returns a string representation of the object. Inherited from [Platform::Object.](../cppcx/platform-object-class.md)|  
+|[ValueType::ToString](#tostring)|Returns a string representation of the object. Inherited from [Platform::Object](../cppcx/platform-object-class.md).|  
   
-## Remarks  
+### Remarks  
  The ValueType class is used to construct value types. ValueType is derived from Object, which has basic members. However, the compiler detaches those basic members from value types that are derived from the ValueType class. The compiler reattaches those basic members when a value type is boxed.  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   
  **Metadata:** platform.winmd  
+
+## <a name="tostring"></a> ValueType::ToString Method
+Returns a string representation of the object.  
   
+### Syntax  
+  
+```cpp  
+Platform::String ToString();  
+```  
+  
+### Return Value  
+ A Platform::String that represents the value.  
+    
 ## See Also  
  [Platform namespace](../cppcx/platform-namespace-c-cx.md)

@@ -4,45 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CREATE_SUSPENDED"
-  - "SECURITY_ATTRIBUTES"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], user interface threads"
-  - "threading [C++], creating threads"
-  - "threading [C++], user interface threads"
-  - "user interface threads [C++]"
-  - "threading [MFC], user interface threads"
+f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], user interface threads", "threading [C++], creating threads", "threading [C++], user interface threads", "user interface threads [C++]", "threading [MFC], user interface threads"]
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating User-Interface Threads
 A user-interface thread is commonly used to handle user input and respond to user events independently of threads executing other portions of the application. The main application thread (provided in your `CWinApp`-derived class) is already created and started for you. This topic describes the steps necessary to create additional user-interface threads.  
   
- The first thing you must do when creating a user-interface thread is derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You must declare and implement this class, using the [DECLARE_DYNCREATE](http://msdn.microsoft.com/library/f550e757-9dec-4875-b13f-841a982f5314) and [IMPLEMENT_DYNCREATE](http://msdn.microsoft.com/library/89ebcfa1-cc4d-49eb-a09b-8618f44f5e98) macros. This class must override some functions and can override others. These functions and what they should do are presented in the following table.  
+ The first thing you must do when creating a user-interface thread is derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You must declare and implement this class, using the [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) and [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) macros. This class must override some functions and can override others. These functions and what they should do are presented in the following table.  
   
 ### Functions to Override When Creating a User-Interface Thread  
   
@@ -57,9 +35,9 @@ A user-interface thread is commonly used to handle user input and respond to use
 |[Run](../mfc/reference/cwinthread-class.md#run)|Controlling function for the thread. Contains the message pump. Rarely overridden.|  
 
   
- MFC provides two versions of `AfxBeginThread` through parameter overloading: one that can only create worker threads and one that can create user-interface threads or worker threads. To start your user-interface thread, call the second overload of [AfxBeginThread](http://msdn.microsoft.com/library/e9e8684d-24f7-4599-8fdf-1f4f560a753b), providing the following information:  
+ MFC provides two versions of `AfxBeginThread` through parameter overloading: one that can only create worker threads and one that can create user-interface threads or worker threads. To start your user-interface thread, call the second overload of [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), providing the following information:  
   
--   The [RUNTIME_CLASS](http://msdn.microsoft.com/library/98cbea2a-a210-44f3-8bc0-0bed990d7014) of the class you derived from `CWinThread`.  
+-   The [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) of the class you derived from `CWinThread`.  
   
 -   (Optional) The desired priority level. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   

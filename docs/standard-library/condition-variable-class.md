@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "condition_variable/std::condition_variable"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["condition_variable/std::condition", "condition_variable/std::condition_variable::condition_variable", "condition_variable/std::condition_variable::native_handle", "condition_variable/std::condition_variable::notify_all", "condition_variable/std::condition_variable::notify_one", "condition_variable/std::condition_variable::wait", "condition_variable/std::condition_variable::wait_for", "condition_variable/std::condition_variable::wait_until"]
+dev_langs: ["C++"]
 ms.assetid: 80b1295c-b73d-4d46-b664-6e183f2eec1b
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+helpviewer_keywords: ["std::condition", "std::condition_variable::condition_variable", "std::condition_variable::native_handle", "std::condition_variable::notify_all", "std::condition_variable::notify_one", "std::condition_variable::wait", "std::condition_variable::wait_for", "std::condition_variable::wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # condition_variable Class
 Use the `condition_variable` class to wait for an event when you have a `mutex` of type `unique_lock<mutex>`. Objects of this type may have better performance than objects of type [condition_variable_any<unique_lock\<mutex>>](../standard-library/condition-variable-any-class.md).  
@@ -47,25 +32,25 @@ class condition_variable;
   
 |Name|Description|  
 |----------|-----------------|  
-|[condition_variable::condition_variable Constructor](#condition_variable__condition_variable_constructor)|Constructs a `condition_variable` object.|  
+|[condition_variable](#condition_variable)|Constructs a `condition_variable` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[condition_variable::native_handle Method](#condition_variable__native_handle_method)|Returns the implementation-specific type representing the condition_variable handle.|  
-|[condition_variable::notify_all](#condition_variable__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable` object.|  
-|[condition_variable::notify_one](#condition_variable__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable` object.|  
-|[condition_variable::wait](#condition_variable__wait_method)|Blocks a thread.|  
-|[condition_variable::wait_for](#condition_variable__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
-|[condition_variable::wait_until](#condition_variable__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
+|[native_handle](#native_handle)|Returns the implementation-specific type representing the condition_variable handle.|  
+|[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable` object.|  
+|[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable` object.|  
+|[wait](#wait)|Blocks a thread.|  
+|[wait_for](#wait_for)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
+|[wait_until](#wait_until)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
   
 ## Requirements  
- **Header:** condition_variable  
+ **Header:** \<condition_variable>  
   
  **Namespace:** std  
   
-##  <a name="condition_variable__condition_variable_constructor"></a>  condition_variable::condition_variable Constructor  
+##  <a name="condition_variable"></a>  condition_variable::condition_variable Constructor  
  Constructs a `condition_variable` object.  
   
 ```
@@ -75,7 +60,7 @@ condition_variable();
 ### Remarks  
  If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.  
   
-##  <a name="condition_variable__native_handle_method"></a>  condition_variable::native_handle  
+##  <a name="native_handle"></a>  condition_variable::native_handle  
  Returns the implementation-specific type that represents the condition_variable handle.  
   
 ```
@@ -85,21 +70,21 @@ native_handle_type native_handle();
 ### Return Value  
  `native_handle_type` is defined as a pointer to Concurrency Runtime internal data structures.  
   
-##  <a name="condition_variable__notify_all_method"></a>  condition_variable::notify_all  
+##  <a name="notify_all"></a>  condition_variable::notify_all  
  Unblocks all threads that are waiting for the `condition_variable` object.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="condition_variable__notify_one_method"></a>  condition_variable::notify_one  
+##  <a name="notify_one"></a>  condition_variable::notify_one  
  Unblocks one of the threads that are waiting on the `condition_variable` object.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="condition_variable__wait_method"></a>  condition_variable::wait  
+##  <a name="wait"></a>  condition_variable::wait  
  Blocks a thread.  
   
 ```
@@ -117,7 +102,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
  Any expression that returns `true` or `false`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#condition_variable__notify_one_method) or [notify_all](#condition_variable__notify_all_method). It can also wake up spuriously.  
+ The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#notify_one) or [notify_all](#notify_all). It can also wake up spuriously.  
   
  In effect, the second method executes the following code.  
   
@@ -126,7 +111,7 @@ while(!Pred())
     wait(Lck);
 ```    
   
-##  <a name="condition_variable__wait_for_method"></a>  condition_variable::wait_for  
+##  <a name="wait_for"></a>  condition_variable::wait_for  
  Blocks a thread, and sets a time interval after which the thread unblocks.  
   
 ```
@@ -158,7 +143,7 @@ bool wait_for(
  The second method returns the value of `Pred`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#condition_variable__notify_one_method) or [notify_all](#condition_variable__notify_all_method) or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.  
+ The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#notify_one) or [notify_all](#notify_all) or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.  
   
  In effect, the second method executes the following code.  
   
@@ -170,7 +155,7 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="condition_variable__wait_until_method"></a>  condition_variable::wait_until  
+##  <a name="wait_until"></a>  condition_variable::wait_until  
  Blocks a thread, and sets a maximum point in time at which the thread unblocks.  
   
 ```
@@ -212,7 +197,7 @@ bool wait_until(
  Methods that return a `bool` return the value of `Pred`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#condition_variable__notify_one_method) or [notify_all](#condition_variable__notify_all_method) or until `Abs_time`. It can also wake up spuriously.  
+ The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](#notify_one) or [notify_all](#notify_all) or until `Abs_time`. It can also wake up spuriously.  
   
  In effect, the second method executes the following code  
   

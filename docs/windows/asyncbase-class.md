@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "async/Microsoft::WRL::AsyncBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AsyncBase class"
+f1_keywords: ["async/Microsoft::WRL::AsyncBase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AsyncBase class"]
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase Class
 Implements the Windows Runtime asynchronous state machine.  

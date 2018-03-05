@@ -1,39 +1,20 @@
 ---
-title: "Windows Operations (C++-CLI) | Microsoft Docs"
+title: "Windows Operations (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows [C++], Windows-specific tasks"
-  - ".NET Framework [C++], Windows operations"
-  - "Visual C++, Windows operations"
-  - "Windows operations [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows [C++], Windows-specific tasks", ".NET Framework [C++], Windows operations", "Visual C++, Windows operations", "Windows operations [C++]"]
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Operations (C++/CLI)
 Demonstrates various Windows-specific tasks using the [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  

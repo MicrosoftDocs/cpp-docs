@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::priority_queue::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator= member [STL/CLR]"
+f1_keywords: ["cliext::priority_queue::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator= member [STL/CLR]"]
 ms.assetid: 796b4ad2-3e40-49e8-8462-87460d086fe4
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # priority_queue::operator= (STL/CLR)
 Replaces the controlled sequence.  

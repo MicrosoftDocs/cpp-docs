@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE dialog boxes, base class"
-  - "dialog boxes, OLE"
-  - "COleDialog class"
+f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDialog Class
 Provides functionality common to dialog boxes for OLE.  

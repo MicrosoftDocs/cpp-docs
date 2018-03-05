@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_gmtime32"
-  - "gmtime"
-  - "_gmtime64"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_gmtime32", "gmtime", "_gmtime64"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "gmtime"
-  - "_gmtime32"
-  - "_gmtime64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gmtime32 function"
-  - "_gmtime64 function"
-  - "gmtime function"
-  - "time functions"
-  - "_gmtime32 function"
-  - "gmtime64 function"
-  - "time structure conversion"
+f1_keywords: ["gmtime", "_gmtime32", "_gmtime64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["gmtime32 function", "_gmtime64 function", "gmtime function", "time functions", "_gmtime32 function", "gmtime64 function", "time structure conversion"]
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # gmtime, _gmtime32, _gmtime64
 Converts a time value to a structure. More secure versions of these functions are available; see [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).  
@@ -84,28 +45,28 @@ struct tm *_gmtime64(
  A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:  
   
  `tm_sec`  
- Seconds after minute (0 – 59).  
+ Seconds after minute (0 - 59).  
   
  `tm_min`  
- Minutes after hour (0 – 59).  
+ Minutes after hour (0 - 59).  
   
  `tm_hour`  
- Hours since midnight (0 – 23).  
+ Hours since midnight (0 - 23).  
   
  `tm_mday`  
- Day of month (1 – 31).  
+ Day of month (1 - 31).  
   
  `tm_mon`  
- Month (0 – 11; January = 0).  
+ Month (0 - 11; January = 0).  
   
  `tm_year`  
  Year (current year minus 1900).  
   
  `tm_wday`  
- Day of week (0 – 6; Sunday = 0).  
+ Day of week (0 - 6; Sunday = 0).  
   
  `tm_yday`  
- Day of year (0 – 365; January 1 = 0).  
+ Day of year (0 - 365; January 1 = 0).  
   
  `tm_isdst`  
  Always 0 for `gmtime`.  

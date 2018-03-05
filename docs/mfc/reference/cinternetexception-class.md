@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CInternetException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exception handling, Internet operations"
-  - "exceptions, Internet"
-  - "CInternetException class"
+f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInternetException [MFC], CInternetException", "CInternetException [MFC], m_dwContext", "CInternetException [MFC], m_dwError"]
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CInternetException Class
 Represents an exception condition related to an Internet operation.  
@@ -87,7 +68,7 @@ CInternetException(DWORD dwError);
  The error that caused the exception.  
   
 ### Remarks  
- To throw a CInternetException, call the MFC global function [AfxThrowInternetException](http://msdn.microsoft.com/library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
+ To throw a CInternetException, call the MFC global function [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception).  
   
 ##  <a name="m_dwcontext"></a>  CInternetException::m_dwContext  
  The context value associated with the related Internet operation.  
@@ -109,7 +90,7 @@ DWORD m_dwError;
 ### Remarks  
  This error value may be a system error code, found in WINERROR.H, or an error value from WININET.H.  
   
- For a list of Win32 error codes, see [Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms681381). For a list of Internet-specific error messages, see  . Both topics are in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a list of Win32 error codes, see [Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms681381). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.  
   
 ## See Also  
  [CException Class](../../mfc/reference/cexception-class.md)   

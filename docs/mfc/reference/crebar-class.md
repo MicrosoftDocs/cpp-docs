@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CReBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rebar controls, control bar"
-  - "CReBar class"
-  - "Internet Explorer 4.0 common controls"
+f1_keywords: ["CReBar", "AFXEXT/CReBar", "AFXEXT/CReBar::AddBar", "AFXEXT/CReBar::Create", "AFXEXT/CReBar::GetReBarCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CReBar [MFC], AddBar", "CReBar [MFC], Create", "CReBar [MFC], GetReBarCtrl"]
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CReBar Class
 A control bar that provides layout, persistence, and state information for rebar controls.  
@@ -142,7 +123,7 @@ virtual BOOL Create(
  Pointer to the `CWnd` object whose Windows window is the parent of the status bar. Normally your frame window.  
   
  `dwCtrlStyle`  
- The rebar control style. By default, **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of styles.  
+ The rebar control style. By default, **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
   
  `dwStyle`  
  The rebar window styles.  

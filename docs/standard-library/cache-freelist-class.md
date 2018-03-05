@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext.cache_freelist"
-  - "allocators/stdext::cache_freelist"
-  - "stdext::cache_freelist"
-  - "cache_freelist"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cache_freelist class"
+ms.topic: "reference"
+f1_keywords: ["allocators/stdext::cache_freelist", "allocators/stdext::cache_freelist::allocate", "allocators/stdext::cache_freelist::deallocate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::cache_freelist", "stdext::cache_freelist [C++], allocate", "stdext::cache_freelist [C++], deallocate"]
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # cache_freelist Class
 Defines a [block allocator](../standard-library/allocators-header.md) that allocates and deallocates memory blocks of a single size.  
@@ -63,21 +43,21 @@ class cache_freelist
   
 |||  
 |-|-|  
-|[cache_freelist](#cache_freelist__cache_freelist)|Constructs an object of type `cache_freelist`.|  
+|[cache_freelist](#cache_freelist)|Constructs an object of type `cache_freelist`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[allocate](#cache_freelist__allocate)|Allocates a block of memory.|  
-|[deallocate](#cache_freelist__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="cache_freelist__allocate"></a>  cache_freelist::allocate  
+##  <a name="allocate"></a>  cache_freelist::allocate  
  Allocates a block of memory.  
   
 ```
@@ -95,7 +75,7 @@ void *allocate(std::size_t count);
   
 ### Remarks  
   
-##  <a name="cache_freelist__cache_freelist"></a>  cache_freelist::cache_freelist  
+##  <a name="cache_freelist"></a>  cache_freelist::cache_freelist  
  Constructs an object of type `cache_freelist`.  
   
 ```
@@ -104,7 +84,7 @@ cache_freelist();
   
 ### Remarks  
   
-##  <a name="cache_freelist__deallocate"></a>  cache_freelist::deallocate  
+##  <a name="deallocate"></a>  cache_freelist::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```

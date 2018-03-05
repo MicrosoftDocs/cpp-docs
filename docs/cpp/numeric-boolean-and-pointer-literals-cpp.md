@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "literals, C++"
-  - "constants, literals"
-  - "literals"
+dev_langs: ["C++"]
+helpviewer_keywords: ["literals, C++", "constants, literals", "literals [C++]"]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Numeric, Boolean and Pointer Literals  (C++)
 A literal is a program element that directly represents a value. This article covers literals of type integer, floating-point, boolean and pointer. For information about string and character literals, see [String and Character Literals  (C++)](../cpp/string-and-character-literals-cpp.md). You can also define your own literals based on any of these categories; for more information see [User-Defined Literals  (C++)](../cpp/user-defined-literals-cpp.md)  
@@ -158,8 +140,5 @@ if (num < 100)
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
- [C++ Integer Constants](http://msdn.microsoft.com/en-us/1f3b58a4-8346-4533-ba6e-df26d76f8dcf)   
- [C++ Character Literals](http://msdn.microsoft.com/en-us/a7901c61-524d-47c6-beb6-d9dacc2e72ed)   
- [C++ Floating-Point Constants](http://msdn.microsoft.com/en-us/f6273f24-a876-4484-a7a2-e82275692ad3)   
  [C++ String Literals](../cpp/string-and-character-literals-cpp.md)   
  [C++ User-Defined Literals](../cpp/user-defined-literals-cpp.md)

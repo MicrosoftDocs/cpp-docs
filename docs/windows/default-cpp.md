@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.default"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "default attribute"
-  - "attributes [C#], default attribute"
-  - "defaults, default attribute"
+f1_keywords: ["vc-attr.default"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["default attribute", "attributes [C#], default attribute", "defaults, default attribute"]
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # default (C++)
 Indicates that the custom or dispinterface defined within a coclass represents the default programmability interface.  
@@ -134,5 +114,4 @@ int main() {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [coclass](../windows/coclass.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [coclass](../windows/coclass.md)   

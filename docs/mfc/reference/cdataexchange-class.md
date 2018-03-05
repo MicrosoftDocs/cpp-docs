@@ -4,47 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDataExchange"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DDX/DDV, Technical Note 26"
-  - "DDX/DDV, CDataExchange class"
-  - "DDX (dialog data exchange), direction of exchange"
-  - "DDX (dialog data exchange), between dialog and CDialog"
-  - "DDX (dialog data exchange), custom DDX routines"
-  - "DDV (dialog data validation)"
-  - "m_bSaveAndValidate"
-  - "CDataExchange class"
-  - "exchanging data between dialogs and CDialogs"
-  - "DDV (dialog data validation), custom DDV routines"
-  - "DDX/DDV"
-  - "DDX (dialog data exchange)"
-  - "validating data, dialog box data entry"
+f1_keywords: ["CDataExchange", "AFXWIN/CDataExchange", "AFXWIN/CDataExchange::CDataExchange", "AFXWIN/CDataExchange::Fail", "AFXWIN/CDataExchange::PrepareCtrl", "AFXWIN/CDataExchange::PrepareEditCtrl", "AFXWIN/CDataExchange::PrepareOleCtrl", "AFXWIN/CDataExchange::m_bSaveAndValidate", "AFXWIN/CDataExchange::m_pDlgWnd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDataExchange [MFC], CDataExchange", "CDataExchange [MFC], Fail", "CDataExchange [MFC], PrepareCtrl", "CDataExchange [MFC], PrepareEditCtrl", "CDataExchange [MFC], PrepareOleCtrl", "CDataExchange [MFC], m_bSaveAndValidate", "CDataExchange [MFC], m_pDlgWnd"]
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDataExchange Class
 Supports the dialog data exchange (DDX) and dialog data validation (DDV) routines used by the Microsoft Foundation classes.  

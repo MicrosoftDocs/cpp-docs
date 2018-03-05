@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::splice"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "splice member [STL/CLR]"
+f1_keywords: ["cliext::list::splice"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["splice member [STL/CLR]"]
 ms.assetid: ebc424b9-8341-4a88-b101-86d56324f5ac
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::splice (STL/CLR)
 Restitch links between nodes.  
@@ -61,11 +44,11 @@ void splice(iterator where, list<Value>% right,
  Where in container to splice before.  
   
 ## Remarks  
- The first member function inserts the sequence controlled by `right` before the element in the controlled sequence pointed to by `where`. It also removes all elements from `right`. (`%``right` must not equal `this`.) You use it to splice all of one list into another.  
+ The first member function inserts the sequence controlled by `right` before the element in the controlled sequence pointed to by `where`. It also removes all elements from `right`. (`%right` must not equal `this`.) You use it to splice all of one list into another.  
   
- The second member function removes the element pointed to by `first` in the sequence controlled by `right` and inserts it before the element in the controlled sequence pointed to by `where`. (If `where` `==` `first` `||` `where` `== ++``first`, no change occurs.) You use it to splice a single element of one list into another.  
+ The second member function removes the element pointed to by `first` in the sequence controlled by `right` and inserts it before the element in the controlled sequence pointed to by `where`. (If `where` `==` `first` `||` `where` `== ++first`, no change occurs.) You use it to splice a single element of one list into another.  
   
- The third member function inserts the subrange designated by `[``first``,` `last``)` from the sequence controlled by `right` before the element in the controlled sequence pointed to by `where`. It also removes the original subrange from the sequence controlled by `right`. (If `right` `==` `this`, the range `[``first``,` `last``)` must not include the element pointed to by `where`.) You use it to splice a subsequence of zero or more elements from one list into another.  
+ The third member function inserts the subrange designated by [`first`, `last`) from the sequence controlled by `right` before the element in the controlled sequence pointed to by `where`. It also removes the original subrange from the sequence controlled by `right`. (If `right` `==` `this`, the range [`first`, `last`) must not include the element pointed to by `where`.) You use it to splice a subsequence of zero or more elements from one list into another.  
   
 ## Example  
   

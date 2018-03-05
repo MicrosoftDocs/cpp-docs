@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "locales [C++], about locales"
-  - "locale IDs [C++]"
-  - "locales [C++]"
-  - "code pages [C++]"
-  - "code pages [C++], dynamically changing"
-  - "character sets [C++], code pages"
-  - "multibyte code pages [C++]"
-  - "character sets [C++], locales"
-  - "localization [C++], code pages"
-  - "localization [C++], locales"
-  - "code pages [C++], locales"
-  - "conventions [C++], international character support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["locales [C++], about locales", "locale IDs [C++]", "locales [C++]", "code pages [C++]", "code pages [C++], dynamically changing", "character sets [C++], code pages", "multibyte code pages [C++]", "character sets [C++], locales", "localization [C++], code pages", "localization [C++], locales", "code pages [C++], locales", "conventions [C++], international character support"]
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Locales and Code Pages
 A locale ID reflects the local conventions and language for a particular geographical region. A given language might be spoken in more than one country/region; for example, Portuguese is spoken in Brazil as well as in Portugal. Conversely, a country/region might have more than one official language. For example, Canada has two languages: English and French. Thus, Canada has two distinct locales: Canadian-English and Canadian-French. Some locale-dependent categories include the formatting of dates and the display format for monetary values.  
@@ -54,7 +27,7 @@ A locale ID reflects the local conventions and language for a particular geograp
   
  For more information about code pages, see [Code Pages](../c-runtime-library/code-pages.md).  
   
- The C run-time library has two types of internal code pages: locale and multibyte. You can change the current code page during program execution (see the documentation for the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md) functions). Also, the run-time library might obtain and use the value of the operating system code page. In Windows 2000, the operating system code page is the "system default ANSI" code page. This code page is constant for the duration of the program's execution.  
+ The C run-time library has two types of internal code pages: locale and multibyte. You can change the current code page during program execution (see the documentation for the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md) functions). Also, the run-time library might obtain and use the value of the operating system code page, which is constant for the duration of the program's execution.  
   
  When the locale code page changes, the behavior of the locale-dependent set of functions changes to that dictated by the chosen code page. By default, all locale-dependent functions begin execution with a locale code page unique to the "C" locale. You can change the internal locale code page (as well as other locale-specific properties) by calling the `setlocale` function. A call to `setlocale`(LC_ALL, "") sets the locale to that indicated by the operating system user locale.  
   

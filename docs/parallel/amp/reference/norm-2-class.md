@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::norm_2::set_x"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::set_xy"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::g"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::get_yx"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::set_yx"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator-="
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator/="
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator*="
-  - "amp_short_vectors/Concurrency::graphics::norm_2::yx"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::y"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::xy"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator++"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator-"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::rg"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator="
-  - "amp_short_vectors/Concurrency::graphics::norm_2::get_y"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::r"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::get_x"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::get_xy"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::gr"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::set_y"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::x"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator+="
-  - "amp_short_vectors/Concurrency::graphics::norm_2"
-  - "amp_short_vectors/Concurrency::graphics::norm_2::operator--"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["amp_short_vectors/Concurrency::graphics::norm_2::set_x", "amp_short_vectors/Concurrency::graphics::norm_2::set_xy", "amp_short_vectors/Concurrency::graphics::norm_2::g", "amp_short_vectors/Concurrency::graphics::norm_2::get_yx", "amp_short_vectors/Concurrency::graphics::norm_2::set_yx", "amp_short_vectors/Concurrency::graphics::norm_2::operator-=", "amp_short_vectors/Concurrency::graphics::norm_2::operator/=", "amp_short_vectors/Concurrency::graphics::norm_2::operator*=", "amp_short_vectors/Concurrency::graphics::norm_2::yx", "amp_short_vectors/Concurrency::graphics::norm_2::y", "amp_short_vectors/Concurrency::graphics::norm_2::xy", "amp_short_vectors/Concurrency::graphics::norm_2::operator++", "amp_short_vectors/Concurrency::graphics::norm_2::operator-", "amp_short_vectors/Concurrency::graphics::norm_2::rg", "amp_short_vectors/Concurrency::graphics::norm_2::operator=", "amp_short_vectors/Concurrency::graphics::norm_2::get_y", "amp_short_vectors/Concurrency::graphics::norm_2::r", "amp_short_vectors/Concurrency::graphics::norm_2::get_x", "amp_short_vectors/Concurrency::graphics::norm_2::get_xy", "amp_short_vectors/Concurrency::graphics::norm_2::gr", "amp_short_vectors/Concurrency::graphics::norm_2::set_y", "amp_short_vectors/Concurrency::graphics::norm_2::x", "amp_short_vectors/Concurrency::graphics::norm_2::operator+=", "amp_short_vectors/Concurrency::graphics::norm_2", "amp_short_vectors/Concurrency::graphics::norm_2::operator--"]
+dev_langs: ["C++"]
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # norm_2 Class
 Represents a short vector of two normal numbers.  
@@ -83,31 +43,31 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::get_x Method||  
-|norm_2::get_xy Method||  
-|norm_2::get_y Method||  
-|norm_2::get_yx Method||  
-|norm_2::ref_g Method||  
-|norm_2::ref_r Method||  
-|norm_2::ref_x Method||  
-|norm_2::ref_y Method||  
-|norm_2::set_x Method||  
-|norm_2::set_xy Method||  
-|norm_2::set_y Method||  
-|norm_2::set_yx Method||  
+|norm_2::get_x||  
+|norm_2::get_xy||  
+|norm_2::get_y||  
+|norm_2::get_yx||  
+|norm_2::ref_g||  
+|norm_2::ref_r||  
+|norm_2::ref_x||  
+|norm_2::ref_y||  
+|norm_2::set_x||  
+|norm_2::set_xy||  
+|norm_2::set_y||  
+|norm_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::operator- Operator||  
-|norm_2::operator-- Operator||  
-|norm_2::operator*= Operator||  
-|norm_2::operator/= Operator||  
-|norm_2::operator++ Operator||  
-|norm_2::operator+= Operator||  
-|norm_2::operator= Operator||  
-|norm_2::operator-= Operator||  
+|norm_2::operator-||  
+|norm_2::operator--||  
+|norm_2::operator*=||  
+|norm_2::operator/=||  
+|norm_2::operator++||  
+|norm_2::operator+=||  
+|norm_2::operator=||  
+|norm_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +79,14 @@ class norm_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|norm_2::g Data Member||  
-|norm_2::gr Data Member||  
-|norm_2::r Data Member||  
-|norm_2::rg Data Member||  
-|norm_2::x Data Member||  
-|norm_2::xy Data Member||  
-|norm_2::y Data Member||  
-|norm_2::yx Data Member||  
+|norm_2::g||  
+|norm_2::gr||  
+|norm_2::r||  
+|norm_2::rg||  
+|norm_2::x||  
+|norm_2::xy||  
+|norm_2::y||  
+|norm_2::yx||  
   
 ## Inheritance Hierarchy  
  `norm_2`  

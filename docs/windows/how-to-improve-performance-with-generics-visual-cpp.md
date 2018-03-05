@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "performance, C++"
-  - "Visual C++, performance"
-  - "Visual C++, generics"
-  - "generics [C++], performance"
+dev_langs: ["C++"]
+helpviewer_keywords: ["performance, C++", "Visual C++, performance", "Visual C++, generics", "generics [C++], performance"]
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Improve Performance with Generics (Visual C++)
 With generics, you can create reusable code based on a type parameter. The actual type of the type parameter is deferred until called by client code. For more information on generics, see [Generics](../windows/generics-cpp-component-extensions.md).  

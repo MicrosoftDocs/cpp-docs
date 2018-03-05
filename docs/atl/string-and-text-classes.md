@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "string conversion, ATL"
-  - "string classes [ATL]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["string conversion, ATL", "string classes [ATL]"]
 ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # String and Text Classes
 These classes provide support for strings and text string conversions.  
@@ -54,5 +37,5 @@ These classes provide support for strings and text string conversions.
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)   
- [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)
+ [ATL and MFC String Conversion Macros](reference/string-conversion-macros.md)
 

@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL::Details Namespace
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
@@ -65,7 +49,7 @@ namespace Microsoft::WRL::Details;
 |[CreatorMap Structure](../windows/creatormap-structure.md)|Contains information about how to initialize, register, and unregister objects.|  
 |[DerefHelper Structure](../windows/derefhelper-structure.md)|Represent a dereferenced pointer to the `T*` template parameter.|  
 |[EnableIf Structure](../windows/enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to `true`.|  
-|[FactoryCache Structure](../windows/factorycache-structure.md)|Contains the location of a class factory and a value that identifies a registered [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class object.|  
+|[FactoryCache Structure](../windows/factorycache-structure.md)|Contains the location of a class factory and a value that identifies a registered Windows Runtime or COM class object.|  
 |[ImplementsBase Structure](../windows/implementsbase-structure.md)|Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).|  
 |[ImplementsHelper Structure](../windows/implementshelper-structure.md)|Helps implement the [Implements](../windows/implements-structure.md) structure.|  
 |[InterfaceList Structure](../windows/interfacelist-structure.md)|Used to create a recursive list of interfaces.|  

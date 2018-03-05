@@ -4,44 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "valarray/std::slice"
-  - "std.slice"
-  - "slice"
-  - "std::slice"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "slice class"
+ms.topic: "reference"
+f1_keywords: ["valarray/std::slice", "valarray/std::slice::size", "valarray/std::slice::start", "valarray/std::slice::stride"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::slice [C++]", "std::slice [C++], size", "std::slice [C++], start", "std::slice [C++], stride"]
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # slice Class
 A utility class to valarray that is used to define one-dimensional subsets of a parent valarray. If a valarray is regarded as a two-dimensional matrix with all elements in an array, then the slice extracts a vector in one dimension out of the two-dimensional array.  
   
 ## Remarks  
- The class stores the parameters that characterize an object of type [slice_array](../standard-library/slice-array-class.md) The subset of a valarray is indirectly constructed when an object of class slice appears as an argument for an object of class [valarray](../standard-library/valarray-class.md#valarray__operator_at)**\<Type>**. The stored values that specify the subset selected from the parent valarray include:  
+ The class stores the parameters that characterize an object of type [slice_array](../standard-library/slice-array-class.md) The subset of a valarray is indirectly constructed when an object of class slice appears as an argument for an object of class [valarray](../standard-library/valarray-class.md#op_at)**\<Type>**. The stored values that specify the subset selected from the parent valarray include:  
   
 -   A starting index in the valarray.  
   
@@ -57,22 +37,22 @@ A utility class to valarray that is used to define one-dimensional subsets of a 
   
 |||  
 |-|-|  
-|[slice](#slice__slice)|Defines a subset of a `valarray` that consists of a number of elements that are an equal distance apart and that start at a specified element.|  
+|[slice](#slice)|Defines a subset of a `valarray` that consists of a number of elements that are an equal distance apart and that start at a specified element.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[size](#slice__size)|Finds the number of elements in a slice of a `valarray`.|  
-|[start](#slice__start)|Finds the starting index of a slice of a `valarray`.|  
-|[stride](#slice__stride)|Finds the distance between elements in a slice of a `valarray`.|  
+|[size](#size)|Finds the number of elements in a slice of a `valarray`.|  
+|[start](#start)|Finds the starting index of a slice of a `valarray`.|  
+|[stride](#stride)|Finds the distance between elements in a slice of a `valarray`.|  
   
 ## Requirements  
  **Header:** \<valarray>  
   
  **Namespace:** std  
   
-##  <a name="slice__size"></a>  slice::size  
+##  <a name="size"></a>  slice::size  
  Finds the number of elements in a slice of a valarray.  
   
 ```  
@@ -134,7 +114,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The size of slice vaSlice is: 6.  
 ```  
   
-##  <a name="slice__slice"></a>  slice::slice  
+##  <a name="slice"></a>  slice::slice  
  Defines a subset of a valarray that consists of a number of elements that are an equal distance apart and that start at a specified element.  
   
 ```  
@@ -153,11 +133,11 @@ slice(
  `_Len`  
  The number of elements in the subset.  
   
- ` stride`  
+ `stride`  
  The distance between elements in the subset.  
   
 ### Return Value  
- The default constructor stores zeros for the starting index, total length, and stride. The second constructor stores `_StartIndex` for the starting index, `_Len` for the total length, and ` stride` for the stride.  
+ The default constructor stores zeros for the starting index, total length, and stride. The second constructor stores `_StartIndex` for the starting index, `_Len` for the total length, and `stride` for the stride.  
   
 ### Remarks  
  The stride may be negative.  
@@ -203,7 +183,7 @@ The slice of valarray va is vaResult:
 va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).  
 ```  
   
-##  <a name="slice__start"></a>  slice::start  
+##  <a name="start"></a>  slice::start  
  Finds the starting index of a slice of a valarray.  
   
 ```  
@@ -259,7 +239,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The start index of slice vaSlice is: 3.  
 ```  
   
-##  <a name="slice__stride"></a>  slice::stride  
+##  <a name="stride"></a>  slice::stride  
  Finds the distance between elements in a slice of a valarray.  
   
 ```  

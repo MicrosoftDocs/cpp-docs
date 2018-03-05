@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAsyncMonikerFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], asynchronous"
-  - "OLE controls [C++], asynchronous"
-  - "monikers [C++], MFC"
-  - "asynchronous controls [C++]"
-  - "CAsyncMonikerFile class"
-  - "IMoniker interface, binding"
+f1_keywords: ["CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::Close", "AFXOLE/CAsyncMonikerFile::GetBinding", "AFXOLE/CAsyncMonikerFile::GetFormatEtc", "AFXOLE/CAsyncMonikerFile::Open", "AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback", "AFXOLE/CAsyncMonikerFile::GetBindInfo", "AFXOLE/CAsyncMonikerFile::GetPriority", "AFXOLE/CAsyncMonikerFile::OnDataAvailable", "AFXOLE/CAsyncMonikerFile::OnLowResource", "AFXOLE/CAsyncMonikerFile::OnProgress", "AFXOLE/CAsyncMonikerFile::OnStartBinding", "AFXOLE/CAsyncMonikerFile::OnStopBinding"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAsyncMonikerFile [MFC], CAsyncMonikerFile", "CAsyncMonikerFile [MFC], Close", "CAsyncMonikerFile [MFC], GetBinding", "CAsyncMonikerFile [MFC], GetFormatEtc", "CAsyncMonikerFile [MFC], Open", "CAsyncMonikerFile [MFC], CreateBindStatusCallback", "CAsyncMonikerFile [MFC], GetBindInfo", "CAsyncMonikerFile [MFC], GetPriority", "CAsyncMonikerFile [MFC], OnDataAvailable", "CAsyncMonikerFile [MFC], OnLowResource", "CAsyncMonikerFile [MFC], OnProgress", "CAsyncMonikerFile [MFC], OnStartBinding", "CAsyncMonikerFile [MFC], OnStopBinding"]
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAsyncMonikerFile Class
 Provides functionality for the use of asynchronous monikers in ActiveX controls (formerly OLE controls).  
@@ -113,7 +91,7 @@ CAsyncMonikerFile();
 ### Remarks  
  It does not create the `IBindHost` interface. `IBindHost` is used only if you provide it in the **Open** member function.  
   
- For a description of the `IBindHost` interface, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a description of the `IBindHost` interface, see the Windows SDK.  
   
 ##  <a name="close"></a>  CAsyncMonikerFile::Close  
  Call this function to close and release all resources.  
@@ -146,7 +124,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
  [CAsyncMonikerFile::Open](#open) calls `CreateBindStatusCallback`.  
   
- For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](http://msdn.microsoft.com/library/windows/desktop/aa379152). For a discussion of aggregation, see [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558). All three topics are in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](http://msdn.microsoft.com/library/windows/desktop/aa379152). For a discussion of aggregation, see [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558). All three topics are in the Windows SDK.  
   
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo  
  Called from the client of an asynchronous moniker to tell the asynchronous moniker how it wants to bind.  
@@ -156,7 +134,7 @@ virtual DWORD GetBindInfo() const;
 ```  
   
 ### Return Value  
- Retrieves the settings for **IBindStatusCallBack**. For a description of the `IBindStatusCallback` interface, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Retrieves the settings for **IBindStatusCallBack**. For a description of the `IBindStatusCallback` interface, see the Windows SDK.  
   
 ### Remarks  
  The default implementation sets the binding to be asynchronous, to use a storage medium (a stream), and to use the data-push model. Override this function if you want to change the behavior of the binding.  
@@ -176,7 +154,7 @@ IBinding* GetBinding() const;
 ### Remarks  
  This allows you to control the data transfer process through the `IBinding` interface, for example, with **IBinding::Abort**, **IBinding::Pause**, and **IBinding::Resume**.  
   
- For a description of the `IBinding` interface, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a description of the `IBinding` interface, see the Windows SDK.  
   
 ##  <a name="getformatetc"></a>  CAsyncMonikerFile::GetFormatEtc  
  Call this function to retrieve the format of the data in the stream.  
@@ -318,7 +296,7 @@ virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
 ### Remarks  
  Override this function to perform actions when the transfer is stopped. By default, the function releases `IBinding`.  
   
- For a description of the `IBinding` interface, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a description of the `IBinding` interface, see the Windows SDK.  
   
 ##  <a name="open"></a>  CAsyncMonikerFile::Open  
  Call this member function to open a file asynchronously.  
@@ -374,7 +352,7 @@ virtual BOOL Open(
  A pointer to the asynchronous moniker interface `IMoniker`, a precise moniker that is the combination of the document's own moniker, which you can retrieve with **IOleClientSite::GetMoniker(** *OLEWHICHMK_CONTAINER* **)**, and a moniker created from the path name. The control can use this moniker to bind, but this is not the moniker the control should save.  
   
  *pBindHost*  
- A pointer to the `IBindHost` interface that will be used to create the moniker from a potentially relative pathname. If the bind host is invalid or does not provide a moniker, the call defaults to **Open(** `lpszFileName`**,**`pError`**)**. For a description of the `IBindHost` interface, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A pointer to the `IBindHost` interface that will be used to create the moniker from a potentially relative pathname. If the bind host is invalid or does not provide a moniker, the call defaults to **Open(** `lpszFileName`**,**`pError`**)**. For a description of the `IBindHost` interface, see the Windows SDK.  
   
  `pServiceProvider`  
  A pointer to the `IServiceProvider` interface. If the service provider is invalid or fails to provide the service for `IBindHost`, the call defaults to **Open(** `lpszFileName`**,**`pError`**)**.  
@@ -392,7 +370,7 @@ virtual BOOL Open(
   
  [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/casyncmonikerfile-class_2.cpp)]  
   
- – or –  
+ - or -  
   
  [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]  
   

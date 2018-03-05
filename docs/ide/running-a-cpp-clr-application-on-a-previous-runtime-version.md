@@ -4,43 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "applications [C++], runtime version specified"
-  - "versions [C++]"
-  - "app.config files, runtime version specified"
-  - "compatibility [C++], runtime version specified"
-  - "backward compatibility [C++], runtime version specified"
-  - "application deployment [C++], runtime version specified"
-  - "common language runtime [C++], version specified"
-  - "deploying applications [C++], runtime version specified"
+dev_langs: ["C++"]
+helpviewer_keywords: ["applications [C++], runtime version specified", "versions [C++]", "app.config files, runtime version specified", "compatibility [C++], runtime version specified", "backward compatibility [C++], runtime version specified", "application deployment [C++], runtime version specified", "common language runtime [C++], version specified", "deploying applications [C++], runtime version specified"]
 ms.assetid: 940171b7-6937-4b14-8e87-c199e23f4f2e
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Running a C++ /clr Application on a Previous Runtime Version
-Unless otherwise specified, a Visual C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.  
+Unless otherwise specified, a C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.  
   
  To accomplish this, provide an app.config file that contains runtime version information in the `supportedRuntime` tag.  
   

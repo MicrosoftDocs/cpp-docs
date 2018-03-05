@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "pplcancellation_token/concurrency::cancellation_token"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cancellation_token class"
+ms.topic: "reference"
+f1_keywords: ["cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::deregister_callback", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_cancelable", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_canceled", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::none", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::register_callback"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cancellation_token class"]
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # cancellation_token Class
 The `cancellation_token` class represents the ability to determine whether some operation has been requested to cancel. A given token can be associated with a `task_group`, `structured_task_group`, or `task` to provide implicit cancellation. It can also be polled for cancellation or have a callback registered for if and when the associated `cancellation_token_source` is canceled.  
@@ -49,26 +32,26 @@ class cancellation_token;
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancellation_token Constructor](#ctor)||  
+|[cancellation_token](#ctor)||  
 |[~cancellation_token Destructor](#dtor)||  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[deregister_callback Method](#deregister_callback)|Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.|  
-|[is_cancelable Method](#is_cancelable)|Returns an indication of whether this token can be canceled or not.|  
-|[is_canceled Method](#is_canceled)|Returns `true` if the token has been canceled.|  
-|[none Method](#none)|Returns a cancellation token which can never be subject to cancellation.|  
-|[register_callback Method](#register_callback)|Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.|  
+|[deregister_callback](#deregister_callback)|Removes a callback previously registered via the `register` method based on the `cancellation_token_registration` object returned at the time of registration.|  
+|[is_cancelable](#is_cancelable)|Returns an indication of whether this token can be canceled or not.|  
+|[is_canceled](#is_canceled)|Returns `true` if the token has been canceled.|  
+|[none](#none)|Returns a cancellation token which can never be subject to cancellation.|  
+|[register_callback](#register_callback)|Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)||  
-|[operator= Operator](#operator_eq)||  
-|[operator== Operator](#operator_eq_eq)||  
+|[operator!=](#operator_neq)||  
+|[operator=](#operator_eq)||  
+|[operator==](#operator_eq_eq)||  
   
 ## Inheritance Hierarchy  
  `cancellation_token`  

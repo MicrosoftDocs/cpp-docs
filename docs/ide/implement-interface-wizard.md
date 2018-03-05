@@ -4,40 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.impl.interface.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Implement Interface Wizard [C++]"
+f1_keywords: ["vc.codewiz.impl.interface.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Implement Interface Wizard [C++]"]
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Implement Interface Wizard
 This wizard implements an interface for a COM object. Implementations of many interfaces are included in the COM libraries available with Visual Studio and Windows. An interface implementation is associated with an object when an instance of that object is created, and it provides the services that the object offers.  
   
- For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](http://msdn.microsoft.com/library/windows/desktop/ms694356) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](http://msdn.microsoft.com/library/windows/desktop/ms694356) in the Windows SDK.  
   
  **Implement interface from**  
  Specifies the location of the type library, from which the interface is created.  
@@ -71,7 +54,7 @@ This wizard implements an interface for a COM object. Implementations of many in
  Displays the names of the interfaces that you have selected to implement on your object.  
   
 > [!NOTE]
->  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](http://msdn.microsoft.com/Library/3d48c53b-827b-42cc-9e22-594f7ea2bf0b) for more information.  
+>  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2) for more information.  
   
 ## See Also  
  [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md)

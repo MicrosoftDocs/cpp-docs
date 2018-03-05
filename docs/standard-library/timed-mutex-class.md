@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::timed_mutex"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["mutex/std::timed_mutex", "mutex/std::timed_mutex::timed_mutex", "mutex/std::timed_mutex::lock", "mutex/std::timed_mutex::try_lock", "mutex/std::timed_mutex::try_lock_for", "mutex/std::timed_mutex::try_lock_until", "mutex/std::timed_mutex::unlock"]
+dev_langs: ["C++"]
 ms.assetid: cd198081-6f38-447a-9dba-e06dfbfafe59
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+helpviewer_keywords: ["std::timed_mutex [C++]", "std::timed_mutex [C++], timed_mutex", "std::timed_mutex [C++], lock", "std::timed_mutex [C++], try_lock", "std::timed_mutex [C++], try_lock_for", "std::timed_mutex [C++], try_lock_until", "std::timed_mutex [C++], unlock"]
+ms.workload: ["cplusplus"]
 ---
 # timed_mutex Class
 Represents a *timed mutex type*. Objects of this type are used to enforce mutual exclusion through time-limited blocking within a program.  
@@ -47,25 +32,25 @@ class timed_mutex;
   
 |Name|Description|  
 |----------|-----------------|  
-|[timed_mutex::timed_mutex Constructor](#timed_mutex__timed_mutex_constructor)|Constructs a `timed_mutex` object that's not locked.|  
-|[timed_mutex::~timed_mutex Destructor](#timed_mutex___dtortimed_mutex_destructor)|Releases any resources that are used by the `timed_mutex` object.|  
+|[timed_mutex](#timed_mutex)|Constructs a `timed_mutex` object that's not locked.|  
+|[timed_mutex::~timed_mutex Destructor](#dtortimed_mutex_destructor)|Releases any resources that are used by the `timed_mutex` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[timed_mutex::lock Method](#timed_mutex__lock_method)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
-|[timed_mutex::try_lock Method](#timed_mutex__try_lock_method)|Attempts to obtain ownership of the `mutex` without blocking.|  
-|[timed_mutex::try_lock_for Method](#timed_mutex__try_lock_for_method)|Attempts to obtain ownership of the `mutex` for a specified time interval.|  
-|[timed_mutex::try_lock_until Method](#timed_mutex__try_lock_until_method)|Attempts to obtain ownership of the `mutex` until a specified time.|  
-|[timed_mutex::unlock Method](#timed_mutex__unlock_method)|Releases ownership of the `mutex`.|  
+|[lock](#lock)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
+|[try_lock](#try_lock)|Attempts to obtain ownership of the `mutex` without blocking.|  
+|[try_lock_for](#try_lock_for)|Attempts to obtain ownership of the `mutex` for a specified time interval.|  
+|[try_lock_until](#try_lock_until)|Attempts to obtain ownership of the `mutex` until a specified time.|  
+|[unlock](#unlock)|Releases ownership of the `mutex`.|  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   
-##  <a name="timed_mutex__lock_method"></a>  timed_mutex::lock Method  
+##  <a name="lock"></a>  timed_mutex::lock
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
 ```cpp  
@@ -75,14 +60,14 @@ void lock();
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="timed_mutex__timed_mutex_constructor"></a>  timed_mutex::timed_mutex Constructor  
+##  <a name="timed_mutex"></a>  timed_mutex::timed_mutex Constructor  
  Constructs a `timed_mutex` object that is not locked.  
   
 ```cpp  
 timed_mutex();
 ```  
   
-##  <a name="timed_mutex___dtortimed_mutex_destructor"></a>  timed_mutex::~timed_mutex Destructor  
+##  <a name="dtortimed_mutex_destructor"></a>  timed_mutex::~timed_mutex Destructor  
  Releases any resources that are used by the `mutex` object.  
   
 ```cpp  
@@ -92,7 +77,7 @@ timed_mutex();
 ### Remarks  
  If the object is locked when the destructor runs, the behavior is undefined.  
   
-##  <a name="timed_mutex__try_lock_method"></a>  timed_mutex::try_lock Method  
+##  <a name="try_lock"></a>  timed_mutex::try_lock
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp  
@@ -105,7 +90,7 @@ bool try_lock();
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="timed_mutex__try_lock_for_method"></a>  timed_mutex::try_lock_for Method  
+##  <a name="try_lock_for"></a>  timed_mutex::try_lock_for
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp  
@@ -123,7 +108,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="timed_mutex__try_lock_until_method"></a>  timed_mutex::try_lock_until Method  
+##  <a name="try_lock_until"></a>  timed_mutex::try_lock_until
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp  
@@ -143,7 +128,7 @@ bool try_lock_until(const xtime* Abs_time);
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="timed_mutex__unlock_method"></a>  timed_mutex::unlock Method  
+##  <a name="unlock"></a>  timed_mutex::unlock
  Releases ownership of the `mutex`.  
   
 ```cpp  

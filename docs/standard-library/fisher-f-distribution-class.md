@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "fisher_f_distribution"
-  - "std::fisher_f_distribution"
-  - "random/std::fisher_f_distribution"
-  - "std::fisher_f_distribution::reset"
-  - "random/std::fisher_f_distribution::reset"
-  - "std::fisher_f_distribution::m"
-  - "random/std::fisher_f_distribution::m"
-  - "std::fisher_f_distribution::n"
-  - "random/std::fisher_f_distribution::n"
-  - "std::fisher_f_distribution::param"
-  - "random/std::fisher_f_distribution::param"
-  - "std::fisher_f_distribution::min"
-  - "random/std::fisher_f_distribution::min"
-  - "std::fisher_f_distribution::max"
-  - "random/std::fisher_f_distribution::max"
-  - "std::fisher_f_distribution::operator()"
-  - "random/std::fisher_f_distribution::operator()"
-  - "std::fisher_f_distribution::param_type"
-  - "random/std::fisher_f_distribution::param_type"
-  - "std::fisher_f_distribution::param_type::m"
-  - "random/std::fisher_f_distribution::param_type::m"
-  - "std::fisher_f_distribution::param_type::n"
-  - "random/std::fisher_f_distribution::param_type::n"
-  - "std::fisher_f_distribution::param_type::operator=="
-  - "random/std::fisher_f_distribution::param_type::operator=="
-  - "std::fisher_f_distribution::param_type::operator!="
-  - "random/std::fisher_f_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fisher_f_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::fisher_f_distribution", "random/std::fisher_f_distribution::reset", "random/std::fisher_f_distribution::m", "random/std::fisher_f_distribution::n", "random/std::fisher_f_distribution::param", "random/std::fisher_f_distribution::min", "random/std::fisher_f_distribution::max", "random/std::fisher_f_distribution::operator()", "random/std::fisher_f_distribution::param_type", "random/std::fisher_f_distribution::param_type::m", "random/std::fisher_f_distribution::param_type::n", "random/std::fisher_f_distribution::param_type::operator==", "random/std::fisher_f_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::fisher_f_distribution [C++]", "std::fisher_f_distribution [C++], reset", "std::fisher_f_distribution [C++], m", "std::fisher_f_distribution [C++], n", "std::fisher_f_distribution [C++], param", "std::fisher_f_distribution [C++], min", "std::fisher_f_distribution [C++], max", "std::fisher_f_distribution [C++], param_type", "std::fisher_f_distribution [C++], param_type"]
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fisher_f_distribution Class
 Generates a Fisher F distribution.  
@@ -103,8 +60,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
   
 ||||  
 |-|-|-|  
-|[fisher_f_distribution::fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[fisher_f_distribution::param_type](#fisher_f_distribution__param_type)|  
+|[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
+|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|  
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   
@@ -118,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the F-distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/LinkId=400899).  
+ For detailed information about the F-distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/p/?linkid=400899).  
   
 ## Example  
   
@@ -258,7 +215,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="fisher_f_distribution__fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution  
+##  <a name="fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution  
  Constructs the distribution.  
   
 ```  
@@ -283,7 +240,7 @@ explicit fisher_f_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="fisher_f_distribution__param_type"></a>  fisher_f_distribution::param_type  
+##  <a name="param_type"></a>  fisher_f_distribution::param_type  
  Stores the parameters of the distribution.  
   
 ```cpp  

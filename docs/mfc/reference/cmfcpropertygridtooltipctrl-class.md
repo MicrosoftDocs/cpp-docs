@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridToolTipCtrl::PreTranslateMessage"
-  - "~CMFCPropertyGridToolTipCtrl"
-  - "PreTranslateMessage"
-  - "CMFCPropertyGridToolTipCtrl.~CMFCPropertyGridToolTipCtrl"
-  - "CMFCPropertyGridToolTipCtrl"
-  - "CMFCPropertyGridToolTipCtrl.PreTranslateMessage"
-  - "CMFCPropertyGridToolTipCtrl::~CMFCPropertyGridToolTipCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridToolTipCtrl class"
-  - "CMFCPropertyGridToolTipCtrl class, destructor"
-  - "PreTranslateMessage method"
-  - "~CMFCPropertyGridToolTipCtrl destructor"
+f1_keywords: ["CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridToolTipCtrl [MFC], CMFCPropertyGridToolTipCtrl", "CMFCPropertyGridToolTipCtrl [MFC], Create", "CMFCPropertyGridToolTipCtrl [MFC], Deactivate", "CMFCPropertyGridToolTipCtrl [MFC], GetLastRect", "CMFCPropertyGridToolTipCtrl [MFC], Hide", "CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin", "CMFCPropertyGridToolTipCtrl [MFC], Track"]
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridToolTipCtrl Class
 Implements a tooltip control that the [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md) uses to display tooltips.  

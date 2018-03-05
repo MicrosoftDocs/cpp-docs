@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "marshaling [C++], arrays"
-  - "platform invoke [C++], arrays"
-  - "interop [C++], arrays"
-  - "data marshaling [C++], arrays"
+dev_langs: ["C++"]
+helpviewer_keywords: ["marshaling [C++], arrays", "platform invoke [C++], arrays", "interop [C++], arrays", "data marshaling [C++], arrays"]
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Arrays Using PInvoke
 This topic explains how native functions that accept C-style strings can be called using the CLR string type <xref:System.String> using .NET Framework Platform Invoke support. Visual C++ programmers are encouraged to use the C++ Interop features instead (when possible) because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option (otherwise, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).  
@@ -45,7 +26,7 @@ This topic explains how native functions that accept C-style strings can be call
   
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts an array of integers. The second module is a managed command-line application that imports this function, but defines it in terms of a managed array, and uses the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify that the array should be converted to a native array when called.  
   
- The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ The managed module is compiled with /clr.  
   
 ```cpp  
 // TraditionalDll4.cpp  

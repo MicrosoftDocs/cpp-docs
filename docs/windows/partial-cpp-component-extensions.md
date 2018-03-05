@@ -4,45 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "partial_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "partial"
-  - "C++/CX,partial"
+f1_keywords: ["partial_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["partial", "C++/CX, partial"]
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # partial  (C++ Component Extensions)
 The `partial` keyword enables different parts of the same ref class to be authored independently and in different files.  
   
 ## All Runtimes  
- (This language feature applies only to the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].)  
+ (This language feature applies only to the Windows Runtime.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  For a ref class that has two partial definitions, the `partial` keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn’t use the keyword very often. For all subsequent partial definitions of the class, omit the `partial` modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no `partial` keyword, it internally combines all of the parts of the ref class definition into one definition.  
   
 ### Syntax  
@@ -61,7 +42,7 @@ class-key identifier {
   
 ### Parameters  
  *class-key*  
- A keyword that declares a class or struct that is supported by the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]. Either `ref class`, `value class`, `ref struct`, or `value struct`.  
+ A keyword that declares a class or struct that is supported by the Windows Runtime. Either `ref class`, `value class`, `ref struct`, or `value struct`.  
   
  *identifier*  
  The name of the defined type.  
@@ -69,7 +50,7 @@ class-key identifier {
 ### Remarks  
  A partial class supports scenarios where you modify one part of a class definition in one file, and automatic code-generating software—for example, the XAML designer—modifies code in the same class in another file. By using a partial class, you can prevent the automatic code generator from overwriting your code. In a Visual Studio project, the `partial` modifier is applied automatically to the generated file.  
   
- Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the `partial` keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X {…};`),  or a `declspec`.  
+ Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the `partial` keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X { ... };`),  or a `declspec`.  
   
  Access specifiers used in a partial class definition for *identifier* do not affect the default accessibility in a subsequent partial or full class definition for *identifier*. Inline definitions of static data members are allowed.  
   

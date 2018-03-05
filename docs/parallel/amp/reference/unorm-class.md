@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::unorm"
-  - "amp/Concurrency::graphics::unorm"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["unorm", "AMP_SHORT_VECTORS/unorm", "AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor"]
+dev_langs: ["C++"]
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # unorm Class
 Represent a unorm number. Each element is a floating point number in the range of [0.0f, 1.0f].  
@@ -55,14 +37,14 @@ class unorm;
   
 |Name|Description|  
 |----------|-----------------|  
-|unorm::operator-- Operator||  
-|unorm::operator float Operator|Conversion operator. Convert the unorm number to a floating point value.|  
-|unorm::operator*= Operator||  
-|unorm::operator/= Operator||  
-|unorm::operator++ Operator||  
-|unorm::operator+= Operator||  
-|unorm::operator= Operator||  
-|unorm::operator-= Operator||  
+|unorm::operator--||  
+|unorm::operator float|Conversion operator. Convert the unorm number to a floating point value.|  
+|unorm::operator*=||  
+|unorm::operator/=||  
+|unorm::operator++||  
+|unorm::operator+=||  
+|unorm::operator=||  
+|unorm::operator-=||  
   
 ## Inheritance Hierarchy  
  `unorm`  

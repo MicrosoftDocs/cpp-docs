@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCVisualManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCVisualManager class"
+f1_keywords: ["CMFCVisualManager", "AFXVISUALMANAGER/CMFCVisualManager", "AFXVISUALMANAGER/CMFCVisualManager::AdjustFrames", "AFXVISUALMANAGER/CMFCVisualManager::AdjustToolbars", "AFXVISUALMANAGER/CMFCVisualManager::AlwaysHighlight3DTabs", "AFXVISUALMANAGER/CMFCVisualManager::DestroyInstance", "AFXVISUALMANAGER/CMFCVisualManager::DoDrawHeaderSortArrow", "AFXVISUALMANAGER/CMFCVisualManager::DrawComboDropButtonWinXP", "AFXVISUALMANAGER/CMFCVisualManager::DrawPushButtonWinXP", "AFXVISUALMANAGER/CMFCVisualManager::DrawTextOnGlass", "AFXVISUALMANAGER/CMFCVisualManager::GetAutoHideButtonTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetButtonExtraBorder", "AFXVISUALMANAGER/CMFCVisualManager::GetCaptionBarTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetDockingTabsBordersSize", "AFXVISUALMANAGER/CMFCVisualManager::GetHighlightedMenuItemTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetInstance", "AFXVISUALMANAGER/CMFCVisualManager::GetMDITabsBordersSize", "AFXVISUALMANAGER/CMFCVisualManager::GetMenuItemTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetMenuShadowDepth", "AFXVISUALMANAGER/CMFCVisualManager::GetNcBtnSize", "AFXVISUALMANAGER/CMFCVisualManager::GetPopupMenuBorderSize", "AFXVISUALMANAGER/CMFCVisualManager::GetPropertyGridGroupColor", "AFXVISUALMANAGER/CMFCVisualManager::GetPropertyGridGroupTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonHyperlinkTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonPopupBorderSize", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonQuickAccessToolBarTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonSliderColors", "AFXVISUALMANAGER/CMFCVisualManager::GetShowAllMenuItemsHeight", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingBaseGuideColors", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingHighlightToneColor", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingTheme", "AFXVISUALMANAGER/CMFCVisualManager::GetStatusBarPaneTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetTabFrameColors", "AFXVISUALMANAGER/CMFCVisualManager::GetTabTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarButtonTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarDisabledTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarHighlightColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolTipInfo", "AFXVISUALMANAGER/CMFCVisualManager::HasOverlappedAutoHideButtons", "AFXVISUALMANAGER/CMFCVisualManager::IsDockingTabHasBorder", "AFXVISUALMANAGER/CMFCVisualManager::IsEmbossDisabledImage", "AFXVISUALMANAGER/CMFCVisualManager::IsFadeInactiveImage", "AFXVISUALMANAGER/CMFCVisualManager::IsMenuFlatLook", "AFXVISUALMANAGER/CMFCVisualManager::IsOfficeXPStyleMenus", "AFXVISUALMANAGER/CMFCVisualManager::IsOwnerDrawCaption", "AFXVISUALMANAGER/CMFCVisualManager::IsShadowHighlightedImage", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawAutoHideButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawBarGripper", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawBrowseButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawButtonSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarInfoArea", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCheckBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCheckBoxEx", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawComboBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawComboDropButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawControlBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawDefaultRibbonImage", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawEditBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawExpandingBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawFloatingToolbarBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawHeaderCtrlBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawHeaderCtrlSortArrow", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuArrowOnCustomizeList", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuCheck", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuItemButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuLabel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuResizeBar", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuScrollButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuShadow", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuSystemButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMiniFrameBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawOutlookBarSplitter", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawOutlookPageButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneDivider", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonApplicationButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonButtonsGroup", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCaptionButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategory", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryScroll", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryTab", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCheckBoxOnList", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonColorPaletteBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButtonContext", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButtonIndicator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonGalleryBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonGalleryButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonKeyTip", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonLabel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMainPanelButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMainPanelFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMenuCheckFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonPanel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonPanelCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonProgressBar", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonQuickAccessToolBarSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonRecentFilesFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderChannel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderThumb", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderZoomButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonStatusBarPane", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonTabsFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawScrollButtons", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawShowAllMenuItems", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSpinButtons", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSplitterBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSplitterBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarPaneBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarProgress", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarSizeBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTab", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabCloseButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabContent", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabsButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTask", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupAreaBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupIcon", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTearOffCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawToolBoxFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseMDIClientArea", "AFXVISUALMANAGER/CMFCVisualManager::OnErasePopupWindowButton", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsArea", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsButton", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnFillAutoHideButtonBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillBarBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillButtonInterior", "AFXVISUALMANAGER/CMFCVisualManager::OnFillCaptionBarButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillCommandsListBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillHeaderCtrlBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillMiniFrameCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnFillOutlookBarCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnFillOutlookPageButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillPopupWindowBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonEdit", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonMainPanelButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonMenuFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup", "AFXVISUALMANAGER/CMFCVisualManager::OnFillSplitterBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTab", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTasksGroupInterior", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTasksPaneBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnHighlightMenuItem", "AFXVISUALMANAGER/CMFCVisualManager::OnHighlightRarelyUsedMenuItems", "AFXVISUALMANAGER/CMFCVisualManager::OnNcPaint", "AFXVISUALMANAGER/CMFCVisualManager::OnSetWindowRegion", "AFXVISUALMANAGER/CMFCVisualManager::OnUpdateSystemColors", "AFXVISUALMANAGER/CMFCVisualManager::RedrawAll", "AFXVISUALMANAGER/CMFCVisualManager::RibbonCategoryColorToRGB", "AFXVISUALMANAGER/CMFCVisualManager::SetDefaultManager", "AFXVISUALMANAGER/CMFCVisualManager::SetEmbossDisabledImage", "AFXVISUALMANAGER/CMFCVisualManager::SetFadeInactiveImage", "AFXVISUALMANAGER/CMFCVisualManager::SetMenuFlatLook", "AFXVISUALMANAGER/CMFCVisualManager::SetMenuShadowDepth", "AFXVISUALMANAGER/CMFCVisualManager::SetShadowHighlightedImage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCVisualManager [MFC], AdjustFrames", "CMFCVisualManager [MFC], AdjustToolbars", "CMFCVisualManager [MFC], AlwaysHighlight3DTabs", "CMFCVisualManager [MFC], DestroyInstance", "CMFCVisualManager [MFC], DoDrawHeaderSortArrow", "CMFCVisualManager [MFC], DrawComboDropButtonWinXP", "CMFCVisualManager [MFC], DrawPushButtonWinXP", "CMFCVisualManager [MFC], DrawTextOnGlass", "CMFCVisualManager [MFC], GetAutoHideButtonTextColor", "CMFCVisualManager [MFC], GetButtonExtraBorder", "CMFCVisualManager [MFC], GetCaptionBarTextColor", "CMFCVisualManager [MFC], GetDockingTabsBordersSize", "CMFCVisualManager [MFC], GetHighlightedMenuItemTextColor", "CMFCVisualManager [MFC], GetInstance", "CMFCVisualManager [MFC], GetMDITabsBordersSize", "CMFCVisualManager [MFC], GetMenuItemTextColor", "CMFCVisualManager [MFC], GetMenuShadowDepth", "CMFCVisualManager [MFC], GetNcBtnSize", "CMFCVisualManager [MFC], GetPopupMenuBorderSize", "CMFCVisualManager [MFC], GetPropertyGridGroupColor", "CMFCVisualManager [MFC], GetPropertyGridGroupTextColor", "CMFCVisualManager [MFC], GetRibbonHyperlinkTextColor", "CMFCVisualManager [MFC], GetRibbonPopupBorderSize", "CMFCVisualManager [MFC], GetRibbonQuickAccessToolBarTextColor", "CMFCVisualManager [MFC], GetRibbonSliderColors", "CMFCVisualManager [MFC], GetShowAllMenuItemsHeight", "CMFCVisualManager [MFC], GetSmartDockingBaseGuideColors", "CMFCVisualManager [MFC], GetSmartDockingHighlightToneColor", "CMFCVisualManager [MFC], GetSmartDockingTheme", "CMFCVisualManager [MFC], GetStatusBarPaneTextColor", "CMFCVisualManager [MFC], GetTabFrameColors", "CMFCVisualManager [MFC], GetTabTextColor", "CMFCVisualManager [MFC], GetToolbarButtonTextColor", "CMFCVisualManager [MFC], GetToolbarDisabledTextColor", "CMFCVisualManager [MFC], GetToolbarHighlightColor", "CMFCVisualManager [MFC], GetToolTipInfo", "CMFCVisualManager [MFC], HasOverlappedAutoHideButtons", "CMFCVisualManager [MFC], IsDockingTabHasBorder", "CMFCVisualManager [MFC], IsEmbossDisabledImage", "CMFCVisualManager [MFC], IsFadeInactiveImage", "CMFCVisualManager [MFC], IsMenuFlatLook", "CMFCVisualManager [MFC], IsOfficeXPStyleMenus", "CMFCVisualManager [MFC], IsOwnerDrawCaption", "CMFCVisualManager [MFC], IsShadowHighlightedImage", "CMFCVisualManager [MFC], OnDrawAutoHideButtonBorder", "CMFCVisualManager [MFC], OnDrawBarGripper", "CMFCVisualManager [MFC], OnDrawBrowseButton", "CMFCVisualManager [MFC], OnDrawButtonBorder", "CMFCVisualManager [MFC], OnDrawButtonSeparator", "CMFCVisualManager [MFC], OnDrawCaptionBarBorder", "CMFCVisualManager [MFC], OnDrawCaptionBarButtonBorder", "CMFCVisualManager [MFC], OnDrawCaptionBarInfoArea", "CMFCVisualManager [MFC], OnDrawCaptionButton", "CMFCVisualManager [MFC], OnDrawCheckBox", "CMFCVisualManager [MFC], OnDrawCheckBoxEx", "CMFCVisualManager [MFC], OnDrawComboBorder", "CMFCVisualManager [MFC], OnDrawComboDropButton", "CMFCVisualManager [MFC], OnDrawControlBorder", "CMFCVisualManager [MFC], OnDrawDefaultRibbonImage", "CMFCVisualManager [MFC], OnDrawEditBorder", "CMFCVisualManager [MFC], OnDrawExpandingBox", "CMFCVisualManager [MFC], OnDrawFloatingToolbarBorder", "CMFCVisualManager [MFC], OnDrawHeaderCtrlBorder", "CMFCVisualManager [MFC], OnDrawHeaderCtrlSortArrow", "CMFCVisualManager [MFC], OnDrawMenuArrowOnCustomizeList", "CMFCVisualManager [MFC], OnDrawMenuBorder", "CMFCVisualManager [MFC], OnDrawMenuCheck", "CMFCVisualManager [MFC], OnDrawMenuItemButton", "CMFCVisualManager [MFC], OnDrawMenuLabel", "CMFCVisualManager [MFC], OnDrawMenuResizeBar", "CMFCVisualManager [MFC], OnDrawMenuScrollButton", "CMFCVisualManager [MFC], OnDrawMenuShadow", "CMFCVisualManager [MFC], OnDrawMenuSystemButton", "CMFCVisualManager [MFC], OnDrawMiniFrameBorder", "CMFCVisualManager [MFC], OnDrawOutlookBarSplitter", "CMFCVisualManager [MFC], OnDrawOutlookPageButtonBorder", "CMFCVisualManager [MFC], OnDrawPaneBorder", "CMFCVisualManager [MFC], OnDrawPaneCaption", "CMFCVisualManager [MFC], OnDrawPaneDivider", "CMFCVisualManager [MFC], OnDrawPopupWindowBorder", "CMFCVisualManager [MFC], OnDrawPopupWindowButtonBorder", "CMFCVisualManager [MFC], OnDrawPopupWindowCaption", "CMFCVisualManager [MFC], OnDrawRibbonApplicationButton", "CMFCVisualManager [MFC], OnDrawRibbonButtonBorder", "CMFCVisualManager [MFC], OnDrawRibbonButtonsGroup", "CMFCVisualManager [MFC], OnDrawRibbonCaption", "CMFCVisualManager [MFC], OnDrawRibbonCaptionButton", "CMFCVisualManager [MFC], OnDrawRibbonCategory", "CMFCVisualManager [MFC], OnDrawRibbonCategoryCaption", "CMFCVisualManager [MFC], OnDrawRibbonCategoryScroll", "CMFCVisualManager [MFC], OnDrawRibbonCategoryTab", "CMFCVisualManager [MFC], OnDrawRibbonCheckBoxOnList", "CMFCVisualManager [MFC], OnDrawRibbonColorPaletteBox", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButtonContext", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButton", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButtonIndicator", "CMFCVisualManager [MFC], OnDrawRibbonGalleryBorder", "CMFCVisualManager [MFC], OnDrawRibbonGalleryButton", "CMFCVisualManager [MFC], OnDrawRibbonKeyTip", "CMFCVisualManager [MFC], OnDrawRibbonLabel", "CMFCVisualManager [MFC], OnDrawRibbonMainPanelButtonBorder", "CMFCVisualManager [MFC], OnDrawRibbonMainPanelFrame", "CMFCVisualManager [MFC], OnDrawRibbonMenuCheckFrame", "CMFCVisualManager [MFC], OnDrawRibbonPanel", "CMFCVisualManager [MFC], OnDrawRibbonPanelCaption", "CMFCVisualManager [MFC], OnDrawRibbonProgressBar", "CMFCVisualManager [MFC], OnDrawRibbonQuickAccessToolBarSeparator", "CMFCVisualManager [MFC], OnDrawRibbonRecentFilesFrame", "CMFCVisualManager [MFC], OnDrawRibbonSliderChannel", "CMFCVisualManager [MFC], OnDrawRibbonSliderThumb", "CMFCVisualManager [MFC], OnDrawRibbonSliderZoomButton", "CMFCVisualManager [MFC], OnDrawRibbonStatusBarPane", "CMFCVisualManager [MFC], OnDrawRibbonTabsFrame", "CMFCVisualManager [MFC], OnDrawScrollButtons", "CMFCVisualManager [MFC], OnDrawSeparator", "CMFCVisualManager [MFC], OnDrawShowAllMenuItems", "CMFCVisualManager [MFC], OnDrawSpinButtons", "CMFCVisualManager [MFC], OnDrawSplitterBorder", "CMFCVisualManager [MFC], OnDrawSplitterBox", "CMFCVisualManager [MFC], OnDrawStatusBarPaneBorder", "CMFCVisualManager [MFC], OnDrawStatusBarProgress", "CMFCVisualManager [MFC], OnDrawStatusBarSizeBox", "CMFCVisualManager [MFC], OnDrawTab", "CMFCVisualManager [MFC], OnDrawTabCloseButton", "CMFCVisualManager [MFC], OnDrawTabContent", "CMFCVisualManager [MFC], OnDrawTabsButtonBorder", "CMFCVisualManager [MFC], OnDrawTask", "CMFCVisualManager [MFC], OnDrawTasksGroupAreaBorder", "CMFCVisualManager [MFC], OnDrawTasksGroupCaption", "CMFCVisualManager [MFC], OnDrawTasksGroupIcon", "CMFCVisualManager [MFC], OnDrawTearOffCaption", "CMFCVisualManager [MFC], OnDrawToolBoxFrame", "CMFCVisualManager [MFC], OnEraseMDIClientArea", "CMFCVisualManager [MFC], OnErasePopupWindowButton", "CMFCVisualManager [MFC], OnEraseTabsArea", "CMFCVisualManager [MFC], OnEraseTabsButton", "CMFCVisualManager [MFC], OnEraseTabsFrame", "CMFCVisualManager [MFC], OnFillAutoHideButtonBackground", "CMFCVisualManager [MFC], OnFillBarBackground", "CMFCVisualManager [MFC], OnFillButtonInterior", "CMFCVisualManager [MFC], OnFillCaptionBarButton", "CMFCVisualManager [MFC], OnFillCommandsListBackground", "CMFCVisualManager [MFC], OnFillHeaderCtrlBackground", "CMFCVisualManager [MFC], OnFillMiniFrameCaption", "CMFCVisualManager [MFC], OnFillOutlookBarCaption", "CMFCVisualManager [MFC], OnFillOutlookPageButton", "CMFCVisualManager [MFC], OnFillPopupWindowBackground", "CMFCVisualManager [MFC], OnFillRibbonButton", "CMFCVisualManager [MFC], OnFillRibbonEdit", "CMFCVisualManager [MFC], OnFillRibbonMainPanelButton", "CMFCVisualManager [MFC], OnFillRibbonMenuFrame", "CMFCVisualManager [MFC], OnFillRibbonQuickAccessToolBarPopup", "CMFCVisualManager [MFC], OnFillSplitterBackground", "CMFCVisualManager [MFC], OnFillTab", "CMFCVisualManager [MFC], OnFillTasksGroupInterior", "CMFCVisualManager [MFC], OnFillTasksPaneBackground", "CMFCVisualManager [MFC], OnHighlightMenuItem", "CMFCVisualManager [MFC], OnHighlightRarelyUsedMenuItems", "CMFCVisualManager [MFC], OnNcPaint", "CMFCVisualManager [MFC], OnSetWindowRegion", "CMFCVisualManager [MFC], OnUpdateSystemColors", "CMFCVisualManager [MFC], RedrawAll", "CMFCVisualManager [MFC], RibbonCategoryColorToRGB", "CMFCVisualManager [MFC], SetDefaultManager", "CMFCVisualManager [MFC], SetEmbossDisabledImage", "CMFCVisualManager [MFC], SetFadeInactiveImage", "CMFCVisualManager [MFC], SetMenuFlatLook", "CMFCVisualManager [MFC], SetMenuShadowDepth", "CMFCVisualManager [MFC], SetShadowHighlightedImage"]
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
 caps.latest.revision: 58
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManager Class
 Provides support for changing the appearance of your application at a global level. The `CMFCVisualManager` class works together with a class that provides instructions to draw the GUI controls of your application using a consistent style. These other classes are referred to as visual managers and they inherit from `CMFCBaseVisualManager`.  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -283,7 +268,7 @@ CMFCVisualManager::GetInstance ()->RedrawAll ();
  **Header:** afxvisualmanager.h  
   
 ##  <a name="adjustframes"></a>  CMFCVisualManager::AdjustFrames  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static void __stdcall AdjustFrames();
@@ -292,7 +277,7 @@ static void __stdcall AdjustFrames();
 ### Remarks  
   
 ##  <a name="adjusttoolbars"></a>  CMFCVisualManager::AdjustToolbars  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static void __stdcall AdjustToolbars();
@@ -314,7 +299,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
  Override this function in a derived visual manager and return `TRUE` if 3D tabs should always be highlighted. The default implementation of this method returns `FALSE`.  
   
 ##  <a name="cmfcvisualmanager"></a>  CMFCVisualManager::CMFCVisualManager  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCVisualManager(BOOL bTemporary = FALSE);
@@ -326,7 +311,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 ### Remarks  
   
 ##  <a name="destroyinstance"></a>  CMFCVisualManager::DestroyInstance  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
@@ -338,7 +323,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ### Remarks  
   
 ##  <a name="dodrawheadersortarrow"></a>  CMFCVisualManager::DoDrawHeaderSortArrow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void DoDrawHeaderSortArrow(
@@ -357,7 +342,7 @@ void DoDrawHeaderSortArrow(
 ### Remarks  
   
 ##  <a name="drawcomboborderwinxp"></a>  CMFCVisualManager::DrawComboBorderWinXP  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DrawComboBorderWinXP(CDC*,
@@ -377,7 +362,7 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 ### Remarks  
   
 ##  <a name="drawcombodropbuttonwinxp"></a>  CMFCVisualManager::DrawComboDropButtonWinXP  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DrawComboDropButtonWinXP(CDC*,
@@ -397,7 +382,7 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 ### Remarks  
   
 ##  <a name="drawpushbuttonwinxp"></a>  CMFCVisualManager::DrawPushButtonWinXP  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DrawPushButtonWinXP(CDC*,
@@ -417,7 +402,7 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 ### Remarks  
   
 ##  <a name="drawtextonglass"></a>  CMFCVisualManager::DrawTextOnGlass  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DrawTextOnGlass(
@@ -442,7 +427,7 @@ virtual BOOL DrawTextOnGlass(
 ### Remarks  
   
 ##  <a name="enabletoolbarbuttonfill"></a>  CMFCVisualManager::EnableToolbarButtonFill  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableToolbarButtonFill(BOOL bEnable = TRUE);
@@ -501,7 +486,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
  Override this method in your derived class to customize the text color for a caption bar. In your overridden method, return the desired color.  
   
 ##  <a name="getcaptionbuttonextraborder"></a>  CMFCVisualManager::GetCaptionButtonExtraBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetCaptionButtonExtraBorder() const;  
@@ -512,7 +497,7 @@ virtual CSize GetCaptionButtonExtraBorder() const;
 ### Remarks  
   
 ##  <a name="getdockingpanecaptionextraheight"></a>  CMFCVisualManager::GetDockingPaneCaptionExtraHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetDockingPaneCaptionExtraHeight() const;  
@@ -538,7 +523,7 @@ virtual int GetDockingTabsBordersSize();
  Override this method in a custom visual manager to change the border size of docked tabbed control bars. The default implementation returns -1.  
   
 ##  <a name="gethighlightedmenuitemtextcolor"></a>  CMFCVisualManager::GetHighlightedMenuItemTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton);
@@ -578,7 +563,7 @@ virtual int GetMDITabsBordersSize();
  Override this function in a derived class to customize the border size of the MDITabs window.  
   
 ##  <a name="getmenuimagemargin"></a>  CMFCVisualManager::GetMenuImageMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetMenuImageMargin() const;  
@@ -589,7 +574,7 @@ virtual int GetMenuImageMargin() const;
 ### Remarks  
   
 ##  <a name="getmenuitemtextcolor"></a>  CMFCVisualManager::GetMenuItemTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetMenuItemTextColor(
@@ -651,7 +636,7 @@ virtual int GetPopupMenuBorderSize() const;
  Override this method to customize the border size of pop-up menus in your application.  
   
 ##  <a name="getpopupmenugap"></a>  CMFCVisualManager::GetPopupMenuGap  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetPopupMenuGap() const;  
@@ -696,7 +681,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
  Override this function to customize the text color of a property list in your application.  
   
 ##  <a name="getribbonhyperlinktextcolor"></a>  CMFCVisualManager::GetRibbonHyperlinkTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
@@ -710,7 +695,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ### Remarks  
   
 ##  <a name="getribbonpopupbordersize"></a>  CMFCVisualManager::GetRibbonPopupBorderSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;  
@@ -724,7 +709,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 ### Remarks  
   
 ##  <a name="getribbonquickaccesstoolbarchevronoffset"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetRibbonQuickAccessToolBarChevronOffset();
@@ -735,7 +720,7 @@ virtual int GetRibbonQuickAccessToolBarChevronOffset();
 ### Remarks  
   
 ##  <a name="getribbonquickaccesstoolbarrightmargin"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarRightMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetRibbonQuickAccessToolBarRightMargin();
@@ -746,7 +731,7 @@ virtual int GetRibbonQuickAccessToolBarRightMargin();
 ### Remarks  
   
 ##  <a name="getribbonquickaccesstoolbartextcolor"></a>  CMFCVisualManager::GetRibbonQuickAccessToolBarTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
@@ -760,7 +745,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 ### Remarks  
   
 ##  <a name="getribbonslidercolors"></a>  CMFCVisualManager::GetRibbonSliderColors  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void GetRibbonSliderColors(
@@ -783,7 +768,7 @@ virtual void GetRibbonSliderColors(
 ### Remarks  
   
 ##  <a name="getribbonstatusbartextcolor"></a>  CMFCVisualManager::GetRibbonStatusBarTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
@@ -797,7 +782,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ### Remarks  
   
 ##  <a name="getshowallmenuitemsheight"></a>  CMFCVisualManager::GetShowAllMenuItemsHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetShowAllMenuItemsHeight(
@@ -814,7 +799,7 @@ virtual int GetShowAllMenuItemsHeight(
 ### Remarks  
   
 ##  <a name="getsmartdockingbaseguidecolors"></a>  CMFCVisualManager::GetSmartDockingBaseGuideColors  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void GetSmartDockingBaseGuideColors(
@@ -829,7 +814,7 @@ virtual void GetSmartDockingBaseGuideColors(
 ### Remarks  
   
 ##  <a name="getsmartdockinghighlighttonecolor"></a>  CMFCVisualManager::GetSmartDockingHighlightToneColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetSmartDockingHighlightToneColor();
@@ -852,7 +837,7 @@ virtual AFX_SMARTDOCK_THEME GetSmartDockingTheme();
 ### Remarks  
   
 ##  <a name="getstatusbarpanetextcolor"></a>  CMFCVisualManager::GetStatusBarPaneTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetStatusBarPaneTextColor(
@@ -916,7 +901,7 @@ virtual void GetTabFrameColors(
  Override this function in a derived class if you want to customize the set of colors that the framework uses when it draws a tab window.  
   
 ##  <a name="gettabhorzmargin"></a>  CMFCVisualManager::GetTabHorzMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
@@ -930,7 +915,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ### Remarks  
   
 ##  <a name="gettabtextcolor"></a>  CMFCVisualManager::GetTabTextColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetTabTextColor(
@@ -949,7 +934,7 @@ virtual COLORREF GetTabTextColor(
 ### Remarks  
   
 ##  <a name="gettaskspanegroupcaptionheight"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneGroupCaptionHeight() const;  
@@ -960,7 +945,7 @@ int GetTasksPaneGroupCaptionHeight() const;
 ### Remarks  
   
 ##  <a name="gettaskspanegroupcaptionhorzoffset"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneGroupCaptionHorzOffset() const;  
@@ -971,7 +956,7 @@ int GetTasksPaneGroupCaptionHorzOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspanegroupcaptionvertoffset"></a>  CMFCVisualManager::GetTasksPaneGroupCaptionVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneGroupCaptionVertOffset() const;  
@@ -982,7 +967,7 @@ int GetTasksPaneGroupCaptionVertOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspanegroupvertoffset"></a>  CMFCVisualManager::GetTasksPaneGroupVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneGroupVertOffset() const;  
@@ -993,7 +978,7 @@ int GetTasksPaneGroupVertOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspanehorzmargin"></a>  CMFCVisualManager::GetTasksPaneHorzMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneHorzMargin() const;  
@@ -1004,7 +989,7 @@ int GetTasksPaneHorzMargin() const;
 ### Remarks  
   
 ##  <a name="gettaskspaneiconhorzoffset"></a>  CMFCVisualManager::GetTasksPaneIconHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneIconHorzOffset() const;  
@@ -1015,7 +1000,7 @@ int GetTasksPaneIconHorzOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspaneiconvertoffset"></a>  CMFCVisualManager::GetTasksPaneIconVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneIconVertOffset() const;  
@@ -1026,7 +1011,7 @@ int GetTasksPaneIconVertOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspanetaskhorzoffset"></a>  CMFCVisualManager::GetTasksPaneTaskHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneTaskHorzOffset() const;  
@@ -1037,7 +1022,7 @@ int GetTasksPaneTaskHorzOffset() const;
 ### Remarks  
   
 ##  <a name="gettaskspanevertmargin"></a>  CMFCVisualManager::GetTasksPaneVertMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksPaneVertMargin() const;  
@@ -1072,7 +1057,7 @@ virtual COLORREF GetToolbarButtonTextColor(
  Override this function to customize the text color of a toolbar button in your application.  
   
 ##  <a name="gettoolbarcustomizebuttonmargin"></a>  CMFCVisualManager::GetToolBarCustomizeButtonMargin  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetToolBarCustomizeButtonMargin() const;  
@@ -1083,7 +1068,7 @@ virtual int GetToolBarCustomizeButtonMargin() const;
 ### Remarks  
   
 ##  <a name="gettoolbardisabledcolor"></a>  CMFCVisualManager::GetToolbarDisabledColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetToolbarDisabledColor() const;  
@@ -1107,7 +1092,7 @@ virtual COLORREF GetToolbarDisabledTextColor();
  Override this method in a custom visual manager to set the text color of toolbar buttons that are unavailable .  
   
 ##  <a name="gettoolbarhighlightcolor"></a>  CMFCVisualManager::GetToolbarHighlightColor  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF GetToolbarHighlightColor();
@@ -1118,7 +1103,7 @@ virtual COLORREF GetToolbarHighlightColor();
 ### Remarks  
   
 ##  <a name="gettooltipinfo"></a>  CMFCVisualManager::GetToolTipInfo  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL GetToolTipInfo(
@@ -1145,7 +1130,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
  `TRUE` if auto-hide buttons overlap; `FALSE` if they do not.  
   
 ##  <a name="isautodestroy"></a>  CMFCVisualManager::IsAutoDestroy  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsAutoDestroy() const;  
@@ -1156,7 +1141,7 @@ BOOL IsAutoDestroy() const;
 ### Remarks  
   
 ##  <a name="isdefaultwinxppopupbutton"></a>  CMFCVisualManager::IsDefaultWinXPPopupButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;  
@@ -1209,7 +1194,7 @@ BOOL IsFadeInactiveImage() const;
  You can activate or deactivate the lighting effect by calling [CMFCVisualManager::SetFadeInactiveImage](#setfadeinactiveimage). The lighting effect is what makes unavailable images appear faded.  
   
 ##  <a name="isframemenucheckeditems"></a>  CMFCVisualManager::IsFrameMenuCheckedItems  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsFrameMenuCheckedItems() const;  
@@ -1220,7 +1205,7 @@ BOOL IsFrameMenuCheckedItems() const;
 ### Remarks  
   
 ##  <a name="ishighlightonenotetabs"></a>  CMFCVisualManager::IsHighlightOneNoteTabs  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsHighlightOneNoteTabs() const;  
@@ -1231,7 +1216,7 @@ virtual BOOL IsHighlightOneNoteTabs() const;
 ### Remarks  
   
 ##  <a name="ishighlightwholemenuitem"></a>  CMFCVisualManager::IsHighlightWholeMenuItem  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsHighlightWholeMenuItem();
@@ -1242,7 +1227,7 @@ virtual BOOL IsHighlightWholeMenuItem();
 ### Remarks  
   
 ##  <a name="islayeredribbonkeytip"></a>  CMFCVisualManager::IsLayeredRibbonKeyTip  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsLayeredRibbonKeyTip() const;  
@@ -1279,7 +1264,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
  The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this method when it has to draw the menu and shadow. By default, this method returns `FALSE`. If you want to use pop-up menus similar to the pop-up menus in Office XP, override this method in a custom visual manager and return `TRUE`.  
   
 ##  <a name="isoffsetpressedbutton"></a>  CMFCVisualManager::IsOffsetPressedButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsOffsetPressedButton() const;  
@@ -1300,7 +1285,7 @@ virtual BOOL IsOwnerDrawCaption();
  `TRUE` if all the frame windows in the application have owner-draw captions; `FALSE` otherwise.  
   
 ##  <a name="isownerdrawmenucheck"></a>  CMFCVisualManager::IsOwnerDrawMenuCheck  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsOwnerDrawMenuCheck();
@@ -1321,7 +1306,7 @@ BOOL IsShadowHighlightedImage() const;
  Nonzero when the visual manager displays shadows under highlighted images; 0 otherwise.  
   
 ##  <a name="istoolbarbuttonfillenabled"></a>  CMFCVisualManager::IsToolbarButtonFillEnabled  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsToolbarButtonFillEnabled() const;  
@@ -1332,7 +1317,7 @@ BOOL IsToolbarButtonFillEnabled() const;
 ### Remarks  
   
 ##  <a name="istoolbarroundshape"></a>  CMFCVisualManager::IsToolbarRoundShape  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
@@ -1346,7 +1331,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 ### Remarks  
   
 ##  <a name="iswindowsthemingsupported"></a>  CMFCVisualManager::IsWindowsThemingSupported  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsWindowsThemingSupported() const;  
@@ -1357,7 +1342,7 @@ virtual BOOL IsWindowsThemingSupported() const;
 ### Remarks  
   
 ##  <a name="onactivateapp"></a>  CMFCVisualManager::OnActivateApp  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnActivateApp(
@@ -1491,7 +1476,7 @@ virtual void OnDrawButtonBorder(
  The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPressed`, or `ButtonsIsHighlighted`.  
   
 ##  <a name="ondrawbuttonseparator"></a>  CMFCVisualManager::OnDrawButtonSeparator  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawButtonSeparator(
@@ -1543,7 +1528,7 @@ virtual void OnDrawCaptionBarBorder(
  Override this method in a derived class to customize the appearance of the border of a caption bar.  
   
 ##  <a name="ondrawcaptionbarbuttonborder"></a>  CMFCVisualManager::OnDrawCaptionBarButtonBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawCaptionBarButtonBorder(
@@ -1570,7 +1555,7 @@ virtual void OnDrawCaptionBarButtonBorder(
 ### Remarks  
   
 ##  <a name="ondrawcaptionbarinfoarea"></a>  CMFCVisualManager::OnDrawCaptionBarInfoArea  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawCaptionBarInfoArea(
@@ -1628,7 +1613,7 @@ virtual void OnDrawCaptionButton (
  Override this method in a derived class to customize the appearance of caption buttons.  
   
 ##  <a name="ondrawcheckbox"></a>  CMFCVisualManager::OnDrawCheckBox  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawCheckBox(
@@ -1649,7 +1634,7 @@ virtual void OnDrawCheckBox(
 ### Remarks  
   
 ##  <a name="ondrawcheckboxex"></a>  CMFCVisualManager::OnDrawCheckBoxEx  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawCheckBoxEx(
@@ -1742,7 +1727,7 @@ virtual void OnDrawComboDropButton(
  Override this method in your derived visual manager to customize the appearance of the drop button of a combo box button.  
   
 ##  <a name="ondrawcontrolborder"></a>  CMFCVisualManager::OnDrawControlBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawControlBorder(CWnd* pWndCtrl);
@@ -1816,7 +1801,7 @@ virtual void OnDrawEditBorder(
  Override this method in a derived visual manager to customize the border of a `CMFCToolBarEditBoxButton` object.  
   
 ##  <a name="ondrawexpandingbox"></a>  CMFCVisualManager::OnDrawExpandingBox  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawExpandingBox(
@@ -1924,7 +1909,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
  If `bIsUp` is `TRUE`, the visual manager draws an up sort arrow. If it is `FALSE`, the visual manager draws a down sort arrow. Override `OnDrawHeaderCtrlSortArrow` in a derived class to customize the appearance of the sort button.  
   
 ##  <a name="ondrawmenuarrowoncustomizelist"></a>  CMFCVisualManager::OnDrawMenuArrowOnCustomizeList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMenuArrowOnCustomizeList(
@@ -1964,7 +1949,7 @@ virtual void OnDrawMenuBorder(
  The default implementation of this method displays the standard menu border. Override this method in a derived visual manager to customize the appearance of the menu border.  
   
 ##  <a name="ondrawmenucheck"></a>  CMFCVisualManager::OnDrawMenuCheck  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMenuCheck(
@@ -1985,7 +1970,7 @@ virtual void OnDrawMenuCheck(
 ### Remarks  
   
 ##  <a name="ondrawmenuitembutton"></a>  CMFCVisualManager::OnDrawMenuItemButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMenuItemButton(
@@ -2006,7 +1991,7 @@ virtual void OnDrawMenuItemButton(
 ### Remarks  
   
 ##  <a name="ondrawmenulabel"></a>  CMFCVisualManager::OnDrawMenuLabel  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF OnDrawMenuLabel(
@@ -2023,7 +2008,7 @@ virtual COLORREF OnDrawMenuLabel(
 ### Remarks  
   
 ##  <a name="ondrawmenuresizebar"></a>  CMFCVisualManager::OnDrawMenuResizeBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMenuResizeBar(
@@ -2075,7 +2060,7 @@ virtual void OnDrawMenuScrollButton(
  Override this method in a derived visual manager to customize the appearance of menu scroll buttons. Menu scroll buttons appear on the edge of pop-up menus when the total height of the menu items exceeds the height of the pop-up menu.  
   
 ##  <a name="ondrawmenushadow"></a>  CMFCVisualManager::OnDrawMenuShadow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMenuShadow(
@@ -2137,7 +2122,7 @@ virtual void OnDrawMenuSystemButton(
  The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the `DFC_CAPTION` type. Override this method in your derived visual manager class to customize the appearance of system buttons.  
   
 ##  <a name="ondrawminiframeborder"></a>  CMFCVisualManager::OnDrawMiniFrameBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawMiniFrameBorder(
@@ -2259,7 +2244,7 @@ virtual COLORREF OnDrawPaneCaption(
  Override this method in a derived visual manager to customize the appearance of pane captions.  
   
 ##  <a name="ondrawpanedivider"></a>  CMFCVisualManager::OnDrawPaneDivider  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawPaneDivider(
@@ -2278,7 +2263,7 @@ virtual void OnDrawPaneDivider(
 ### Remarks  
   
 ##  <a name="ondrawpopupwindowborder"></a>  CMFCVisualManager::OnDrawPopupWindowBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawPopupWindowBorder(
@@ -2293,7 +2278,7 @@ virtual void OnDrawPopupWindowBorder(
 ### Remarks  
   
 ##  <a name="ondrawpopupwindowbuttonborder"></a>  CMFCVisualManager::OnDrawPopupWindowButtonBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawPopupWindowButtonBorder(
@@ -2310,7 +2295,7 @@ virtual void OnDrawPopupWindowButtonBorder(
 ### Remarks  
   
 ##  <a name="ondrawpopupwindowcaption"></a>  CMFCVisualManager::OnDrawPopupWindowCaption  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF OnDrawPopupWindowCaption(
@@ -2486,7 +2471,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  Override this method in a derived class to customize the appearance of the caption bar for a ribbon category. For more information about the caption bar, see [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
   
 ##  <a name="ondrawribboncategoryscroll"></a>  CMFCVisualManager::OnDrawRibbonCategoryScroll  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonCategoryScroll(
@@ -2527,7 +2512,7 @@ virtual COLORREF OnDrawRibbonCategoryTab(
  Override this method in a derived visual manager to customize the appearance of a ribbon category tab. For more information about ribbon categories, see [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md).  
   
 ##  <a name="ondrawribboncheckboxonlist"></a>  CMFCVisualManager::OnDrawRibbonCheckBoxOnList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonCheckBoxOnList(
@@ -2548,7 +2533,7 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ### Remarks  
   
 ##  <a name="ondrawribboncolorpalettebox"></a>  CMFCVisualManager::OnDrawRibbonColorPaletteBox  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonColorPaletteBox(
@@ -2600,7 +2585,7 @@ virtual void OnDrawRibbonDefaultPaneButton(
  Override this method in a derived visual manager to customize the appearance of the default button.  
   
 ##  <a name="ondrawribbondefaultpanebuttoncontext"></a>  CMFCVisualManager::OnDrawRibbonDefaultPaneButtonContext  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonDefaultPaneButtonContext(
@@ -2615,7 +2600,7 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 ### Remarks  
   
 ##  <a name="ondrawribbondefaultpanebuttonindicator"></a>  CMFCVisualManager::OnDrawRibbonDefaultPaneButtonIndicator  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonDefaultPaneButtonIndicator(
@@ -2636,7 +2621,7 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ### Remarks  
   
 ##  <a name="ondrawribbongalleryborder"></a>  CMFCVisualManager::OnDrawRibbonGalleryBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonGalleryBorder(
@@ -2653,7 +2638,7 @@ virtual void OnDrawRibbonGalleryBorder(
 ### Remarks  
   
 ##  <a name="ondrawribbongallerybutton"></a>  CMFCVisualManager::OnDrawRibbonGalleryButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonGalleryButton(
@@ -2668,7 +2653,7 @@ virtual void OnDrawRibbonGalleryButton(
 ### Remarks  
   
 ##  <a name="ondrawribbonkeytip"></a>  CMFCVisualManager::OnDrawRibbonKeyTip  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonKeyTip(
@@ -2752,7 +2737,7 @@ virtual void OnDrawRibbonMainPanelFrame(
  Override this method in a derived visual manager to customize the appearance of the frame for the `CMFCRibbonMainPanel`.  
   
 ##  <a name="ondrawribbonmenucheckframe"></a>  CMFCVisualManager::OnDrawRibbonMenuCheckFrame  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawRibbonMenuCheckFrame(
@@ -3048,7 +3033,7 @@ virtual COLORREF OnDrawRibbonTabsFrame(
  Override this method in a derived visual manager to customize the frame around a set of tabs on the ribbon.  
   
 ##  <a name="ondrawscrollbuttons"></a>  CMFCVisualManager::OnDrawScrollButtons  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawScrollButtons(
@@ -3096,7 +3081,7 @@ virtual void OnDrawSeparator(
  Separators are used on control bars to separate groups of related icons. The default implementation for this method displays the standard separator. Override this method in a derived visual manager to customize the appearance of the separator.  
   
 ##  <a name="ondrawshowallmenuitems"></a>  CMFCVisualManager::OnDrawShowAllMenuItems  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawShowAllMenuItems(
@@ -3530,7 +3515,7 @@ virtual void OnDrawTasksGroupCaption(
  Override this method in a derived class to customize the caption for a `CMFCTasksPaneTaskGroup`.  
   
 ##  <a name="ondrawtasksgroupicon"></a>  CMFCVisualManager::OnDrawTasksGroupIcon  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawTasksGroupIcon(
@@ -3578,7 +3563,7 @@ virtual void OnDrawTearOffCaption(
  Override this method in a derived class to customize the look of captions for tear-off bars.  
   
 ##  <a name="ondrawtoolboxframe"></a>  CMFCVisualManager::OnDrawToolBoxFrame  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawToolBoxFrame(
@@ -3615,7 +3600,7 @@ virtual BOOL OnEraseMDIClientArea(
  Override this method to execute custom code when the visual manager erases the MDI client area.  
   
 ##  <a name="onerasepopupwindowbutton"></a>  CMFCVisualManager::OnErasePopupWindowButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnErasePopupWindowButton(
@@ -3800,7 +3785,7 @@ virtual void OnFillButtonInterior(
  The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPressed`, or `ButtonsIsHighlighted`.  
   
 ##  <a name="onfillcaptionbarbutton"></a>  CMFCVisualManager::OnFillCaptionBarButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF OnFillCaptionBarButton(
@@ -4097,7 +4082,7 @@ virtual void OnFillRibbonMenuFrame(
  Override this method in a derived visual manager to customize the appearance of the menu bar for the `CMFCRibbonMainPanel`.  
   
 ##  <a name="onfillribbonquickaccesstoolbarpopup"></a>  CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnFillRibbonQuickAccessToolBarPopup(
@@ -4262,7 +4247,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
  Override this method in a derived visual manager to customize the appearance of highlighted menu commands.  
   
 ##  <a name="onncactivate"></a>  CMFCVisualManager::OnNcActivate  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnNcActivate(
@@ -4344,7 +4329,7 @@ static void RedrawAll();
 ```  
   
 ##  <a name="ribboncategorycolortorgb"></a>  CMFCVisualManager::RibbonCategoryColorToRGB  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);

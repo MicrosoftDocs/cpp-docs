@@ -4,36 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::Details::MakeAndInitialize"
-dev_langs: 
-  - "C++"
+f1_keywords: ["implements/Microsoft::WRL::Details::MakeAndInitialize"]
+dev_langs: ["C++"]
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAndInitialize Function
-Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
+Initializes the specified Windows Runtime class. Use this function to instantiate a component that is defined in the same module.  
   
 ## Syntax  
   

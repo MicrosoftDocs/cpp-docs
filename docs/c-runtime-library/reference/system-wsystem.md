@@ -4,64 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "system"
-  - "_wsystem"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["system", "_wsystem"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tsystem"
-  - "_wsystem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wsystem function"
-  - "wsystem function"
-  - "tsystem function"
-  - "_tsystem function"
-  - "system function"
-  - "commands, executing"
-  - "command interpreter"
+f1_keywords: ["_tsystem", "_wsystem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wsystem function", "wsystem function", "tsystem function", "_tsystem function", "system function", "commands, executing", "command interpreter"]
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # system, _wsystem
 Executes a command.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -79,7 +42,7 @@ int _wsystem(
  The command to be executed.  
   
 ## Return Value  
- If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of – 1 indicates an error, and `errno` is set to one of the following values:  
+ If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and `errno` is set to one of the following values:  
   
  `E2BIG`  
  The argument list (which is system-dependent) is too big.  
@@ -144,12 +107,6 @@ Line two.
 Line one.  
 Line two.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

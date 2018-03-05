@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/c"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "suppress link"
-  - "cl.exe compiler, compiling without linking"
-  - "-c compiler option [C++]"
-  - "c compiler option [C++]"
-  - "/c compiler option [C++]"
+f1_keywords: ["/c"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["suppress link", "cl.exe compiler, compiling without linking", "-c compiler option [C++]", "c compiler option [C++]", "/c compiler option [C++]"]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /c (Compile Without Linking)
 Prevents the automatic call to LINK.  

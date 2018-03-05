@@ -4,44 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CSimpleRow"
-  - "ATL::CSimpleRow"
-  - "ATL.CSimpleRow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleRow class"
+ms.topic: "reference"
+f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleRow class"]
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSimpleRow Class
 Provides a default implementation for the row handle, which is used in the [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) class.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CSimpleRow  
 ```  
   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.array"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [C++], classes"
-  - "collection classes, arrays"
-  - "classes [C++], array"
+f1_keywords: ["vc.classes.array"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["arrays [MFC], classes", "collection classes [MFC], arrays", "classes [MFC], array"]
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Array Classes
 The following classes are ready-to-use array classes.  

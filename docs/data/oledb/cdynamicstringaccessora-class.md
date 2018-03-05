@@ -4,42 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDynamicStringAccessorA"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDynamicStringAccessorA class"
+ms.topic: "reference"
+f1_keywords: ["CDynamicStringAccessorA"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDynamicStringAccessorA class"]
 ms.assetid: ed0d9821-a655-41f1-a902-43c3042ac49c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessorA Class
 Allows you to access a data source when you have no knowledge of the database schema (underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 typedef CDynamicStringAccessorT<CHAR, DBTYPE_STR> CDynamicStringAccessorA;  
 ```  
   

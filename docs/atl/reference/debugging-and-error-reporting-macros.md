@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, error reporting"
+f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros, error reporting"]
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Debugging and Error Reporting Macros
 These macros provide useful debugging and trace facilities.  
@@ -42,7 +27,7 @@ These macros provide useful debugging and trace facilities.
 |[ATLASSERT](#atlassert)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|  
 |[ATLENSURE](#atlensure)|Performs parameters validation. Call `AtlThrow` if needed|  
 |[ATLTRACENOTIMPL](#atltracenotimpl)|Sends a message to the dump device that the specified function is not implemented.|  
-|[ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
+|[ATLTRACE](#alttrace)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|  
 |[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|  
   
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES  
@@ -155,7 +140,7 @@ ATLTRACENOTIMPL(funcname);
 ## Requirements  
  **Header:** atltrace.h 
 
-##  <a name="atl_"></a>  ATLTRACE
+##  <a name="atltrace"></a>  ATLTRACE
  Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.  
   
 ```

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CComPolyObject"
-  - "CComAggObject"
-  - "CComObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComPolyObject class, implementing"
-  - "CreateInstance method"
-  - "CComAggObject class"
-  - "CComObject class, implementing"
+f1_keywords: ["CComPolyObject", "CComAggObject", "CComObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComPolyObject class, implementing", "CreateInstance method", "CComAggObject class", "CComObject class, implementing"]
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Implementing CComObject, CComAggObject, and CComPolyObject
 The template classes [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), and [CComPolyObject](../atl/reference/ccompolyobject-class.md) are always the most derived classes in the inheritance chain. It is their responsibility to handle all of the methods in **IUnknown**: `QueryInterface`, `AddRef`, and **Release**. In addition, `CComAggObject` and `CComPolyObject` (when used for aggregated objects) provide the special reference counting and `QueryInterface` semantics required for the inner unknown.  

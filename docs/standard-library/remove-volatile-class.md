@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "remove_volatile"
-  - "std::remove_volatile"
-  - "type_traits/std::remove_volatile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove_volatile class"
-  - "remove_volatile"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::remove_volatile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove_volatile class", "remove_volatile"]
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # remove_volatile Class
 Makes non volatile type from type.  

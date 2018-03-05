@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: ff4a5bec-f795-4705-a2c0-53788fd57609
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # User-Defined Literals  (C++)
 There are five major categories of literals:  integer,  character,  floating-point,  string, boolean and pointer.  Starting in C++ 11 you can define your own literals based on these categories to provide syntactic shortcuts for common idioms and increase type safety. For example, let's say you have a Distance class. You could define a literal for kilometers and another one for miles, and encourage the user to be explicit about the units of measure by simply writing: auto d = 42.0_km or auto d = 42.0_mi. There is no performance advantage or disadvantage to user-defined literals; they are primarily for convenience or for compile-time type deduction. The Standard Library has user-defined literals for std:string, for std::complex, and for units in time and duration operations in the \<chrono> header:  

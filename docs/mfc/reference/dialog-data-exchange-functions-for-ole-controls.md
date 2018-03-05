@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.data"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE controls, DDX functions"
-  - "DDX (dialog data exchange), OLE support"
+f1_keywords: ["AFXDISP/DDX_OCBool", "AFXDISP/DDX_OCBoolRO", "AFXDISP/DDX_OCColor", "AFXDISP/DDX_OCColorRO", "AFXDISP/DDX_OCFloat", "AFXDISP/DDX_OCFloatRO", "AFXDISP/DDX_OCInt", "AFXDISP/DDX_OCIntRO", "AFXDISP/DDX_OCShort", "AFXDISP/DDX_OCShortRO", "AFXDISP/DDX_OCText", "AFXDISP/DDX_OCTextRO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE controls [MFC], DDX functions", "DDX (dialog data exchange), OLE support"]
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange Functions for OLE Controls
 This topic lists the DDX_OC functions used to exchange data between a property of an OLE control in a dialog box, form view, or control view object and a data member of the dialog box, form view, or control view object.  
@@ -83,7 +65,7 @@ void AFXAPI DDX_OCBool(
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### Requirements  
-  **Header** afxdisp.h  
+  **Header:** afxdisp.h  
   
 ##  <a name="ddx_ocboolro"></a>  DDX_OCBoolRO  
  The `DDX_OCBoolRO` function manages the transfer of **BOOL** data between a read-only property of an OLE control in a dialog box, form view, or control view object and a **BOOL** data member of the dialog box, form view, or control view object.  

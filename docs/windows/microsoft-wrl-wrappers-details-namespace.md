@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::Details"
-  - "internal/Microsoft::WRL::Details"
-  - "async/Microsoft::WRL::Details"
-  - "corewrappers/Microsoft::WRL::Wrappers::Details"
-  - "client/Microsoft::WRL::Details"
-  - "module/Microsoft::WRL::Details"
-  - "event/Microsoft::WRL::Details"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Details namespace"
+f1_keywords: ["implements/Microsoft::WRL::Details", "internal/Microsoft::WRL::Details", "async/Microsoft::WRL::Details", "corewrappers/Microsoft::WRL::Wrappers::Details", "client/Microsoft::WRL::Details", "module/Microsoft::WRL::Details", "event/Microsoft::WRL::Details"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Details namespace"]
 ms.assetid: 6d3f04ac-9b53-4a82-a188-a85309ec34a4
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL::Wrappers::Details Namespace
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

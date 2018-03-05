@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ppltasks/concurrency::task"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task class"
+ms.topic: "reference"
+f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["task class"]
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # task Class (Concurrency Runtime)
 The Parallel Patterns Library (PPL) `task` class. A `task` object represents work that can be executed asynchronously, and concurrently with other tasks and parallel work produced by parallel algorithms in the Concurrency Runtime. It produces a result of type `_ResultType` on successful completion. Tasks of type `task<void>` produce no result. A task can be waited upon and canceled independently of other tasks. It can also be composed with other tasks using continuations( `then`), and join( `when_all`) and choice( `when_any`) patterns.  
@@ -68,26 +51,26 @@ class task;
   
 |Name|Description|  
 |----------|-----------------|  
-|[task Constructor](#ctor)|Overloaded. Constructs a `task` object.|  
+|[task](#ctor)|Overloaded. Constructs a `task` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[get Method](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
-|[is_apartment_aware Method](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
-|[is_done Method](#is_done)|Determines if the task is completed.|  
-|[scheduler Method](#scheduler)|Returns the scheduler for this task|  
-|[then Method](#then)|Overloaded. Adds a continuation task to this task.|  
-|[wait Method](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
+|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|  
+|[is_apartment_aware](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|  
+|[is_done](#is_done)|Determines if the task is completed.|  
+|[scheduler](#scheduler)|Returns the scheduler for this task|  
+|[then](#then)|Overloaded. Adds a continuation task to this task.|  
+|[wait](#wait)|Waits for this task to reach a terminal state. It is possible for `wait` to execute the task inline, if all of the tasks dependencies are satisfied, and it has not already been picked up for execution by a background worker.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator!= Operator](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
-|[operator= Operator](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
-|[operator== Operator](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
+|[operator!=](#operator_neq)|Overloaded. Determines whether two `task` objects represent different internal tasks.|  
+|[operator=](#operator_eq)|Overloaded. Replaces the contents of one `task` object with another.|  
+|[operator==](#operator_eq_eq)|Overloaded. Determines whether two `task` objects represent the same internal task.|  
   
 ## Remarks  
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
@@ -117,7 +100,7 @@ void get() const;
  If the task is canceled, a call to `get` will throw a [task_canceled](task-canceled-class.md) exception. If the task encountered an different exception or an exception was propagated to it from an antecedent task, a call to `get` will throw that exception.  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.  
+>  In a Universal Windows Platform (UWP) app, do not call [concurrency::task::wait](#wait) or `get` ( `wait` calls `get`) in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because these methods block the current thread and can cause the app to become unresponsive. However, you can call the `get` method to receive the result of the antecedent task in a task-based continuation because the result is immediately available.  
   
 ##  <a name="is_apartment_aware"></a> is_apartment_aware 
 
@@ -231,7 +214,7 @@ task(
  The type of the parameter from which the task is to be constructed.  
   
  `_Param`  
- The parameter from which the task is to be constructed. This could be a lambda, a function object, a `task_completion_event<result_type>` object, or a Windows::Foundation::IAsyncInfo if you are using tasks in your Windows Store app. The lambda or function object should be a type equivalent to `std::function<X(void)>`, where X can be a variable of type `result_type`, `task<result_type>`, or a Windows::Foundation::IAsyncInfo in Windows Store apps.  
+ The parameter from which the task is to be constructed. This could be a lambda, a function object, a `task_completion_event<result_type>` object, or a Windows::Foundation::IAsyncInfo if you are using tasks in your Windows Runtime app. The lambda or function object should be a type equivalent to `std::function<X(void)>`, where X can be a variable of type `result_type`, `task<result_type>`, or a Windows::Foundation::IAsyncInfo in Windows Runtime apps.  
   
  `_TaskOptions`  
  The task options include cancellation token, scheduler etc  
@@ -250,7 +233,7 @@ task(
   
  `task` behaves like a smart pointer and is safe to pass around by value. It can be accessed by multiple threads without the need for locks.  
   
- The constructor overloads that take a Windows::Foundation::IAsyncInfo interface or a lambda returning such an interface, are only available to Windows Store apps.  
+ The constructor overloads that take a Windows::Foundation::IAsyncInfo interface or a lambda returning such an interface, are only available to Windows Runtime apps.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
@@ -305,13 +288,13 @@ __declspec(
  The cancellation token to associate with the continuation task. A continuation task that is created without a cancellation token will inherit the token of its antecedent task.  
   
  `_ContinuationContext`  
- A variable that specifies where the continuation should execute. This variable is only useful when used in a Windows Store style app. For more information, see [task_continuation_context](task-continuation-context-class.md)  
+ A variable that specifies where the continuation should execute. This variable is only useful when used in a UWP app. For more information, see [task_continuation_context](task-continuation-context-class.md)  
   
 ### Return Value  
  The newly created continuation task. The result type of the returned task is determined by what `_Func` returns.  
   
 ### Remarks  
- The overloads of `then` that take a lambda or functor that returns a Windows::Foundation::IAsyncInfo interface, are only available to Windows Store apps.  
+ The overloads of `then` that take a lambda or functor that returns a Windows::Foundation::IAsyncInfo interface, are only available to Windows Runtime apps.  
   
  For more information on how to use task continuations to compose asynchronous work, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
@@ -329,7 +312,7 @@ task_status wait() const;
 ### Remarks  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait` in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.  
+>  In a Universal Windows Platform (UWP) app, do not call `wait` in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

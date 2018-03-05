@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "attributes [C++], database"
-  - "attributes [C++], data access"
-  - "databases [C++], attributes"
-  - "OLE DB consumers [C++], attributes"
-  - "database attributes [C++]"
-  - "attributes [C++], OLE DB consumer"
+dev_langs: ["C++"]
+helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "OLE DB consumers [C++], attributes", "database attributes [C++]", "attributes [C++], OLE DB consumer"]
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # OLE DB Consumer Attributes
 The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templates](../data/oledb/ole-db-consumer-templates-reference.md), to create a working OLE DB consumer that performs tasks such as opening tables, executing commands, and accessing data.  

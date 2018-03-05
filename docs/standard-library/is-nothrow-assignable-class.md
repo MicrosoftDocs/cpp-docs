@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "is_nothrow_assignable"
-  - "std.is_nothrow_assignable"
-  - "std::is_nothrow_assignable"
-  - "type_traits/std::is_nothrow_assignable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_nothrow_assignable"
+f1_keywords: ["type_traits/std::is_nothrow_assignable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_nothrow_assignable"]
 ms.assetid: aa3aca92-308b-4b1d-b3f3-c54216c48fe7
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_nothrow_assignable Class
 Tests whether a value of `From` type can be assigned to `To` type and the assignment is known not to throw.  

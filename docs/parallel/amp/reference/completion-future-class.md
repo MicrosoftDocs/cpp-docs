@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amprt/Concurrency::completion_future"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["completion_future", "AMPRT/completion_future", "AMPRT/Concurrency::completion_future::completion_future", "AMPRT/Concurrency::completion_future::get", "AMPRT/Concurrency::completion_future::then", "AMPRT/Concurrency::completion_future::to_task", "AMPRT/Concurrency::completion_future::valid", "AMPRT/Concurrency::completion_future::wait", "AMPRT/Concurrency::completion_future::wait_for", "AMPRT/Concurrency::completion_future::wait_until"]
+dev_langs: ["C++"]
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # completion_future Class
 Represents a future corresponding to a C++ AMP asynchronous operation.  
@@ -54,20 +38,20 @@ class completion_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get Method](#get)|Waits until the associated asynchronous operation completes.|  
-|[then Method](#then)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
-|[to_task Method](#to_task)|Returns a `task` object corresponding to the associated asynchronous operation.|  
-|[valid Method](#valid)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
-|[wait Method](#wait)|Blocks until the associated asynchronous operation completes.|  
-|[wait_for Method](#wait_for)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
-|[wait_until Method](#wait_until)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
+|[get](#get)|Waits until the associated asynchronous operation completes.|  
+|[then](#then)|Chains a callback function object to the `completion_future` object to be executed when the associated asynchronous operation finishes execution.|  
+|[to_task](#to_task)|Returns a `task` object corresponding to the associated asynchronous operation.|  
+|[valid](#valid)|Gets a Boolean value that indicates whether the object is associated with an asynchronous operation.|  
+|[wait](#wait)|Blocks until the associated asynchronous operation completes.|  
+|[wait_for](#wait_for)|Blocks until the associated asynchronous operation completes or the time specified by `_Rel_time` has elapsed.|  
+|[wait_until](#wait_until)|Blocks until the associated asynchronous operation completes or until the current time exceeds the value specified by `_Abs_time`.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator std::shared_future\<void> Operator](#operator_shared_future)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
-|[operator= Operator](#operator_eq)|Copies the contents of the specified `completion_future` object into this one.|  
+|[operator std::shared_future\<void>](#operator_shared_future)|Implicitly converts the `completion_future` object to an `std::shared_future` object.|  
+|[operator=](#operator_eq)|Copies the contents of the specified `completion_future` object into this one.|  
   
 ## Inheritance Hierarchy  
  `completion_future`  

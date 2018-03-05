@@ -4,54 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.CRowset<TAccessor>.Insert"
-  - "CRowset.Insert"
-  - "CRowset<TAccessor>.Insert"
-  - "CRowset<TAccessor>::Insert"
-  - "ATL::CRowset<TAccessor>::Insert"
-  - "ATL.CRowset.Insert"
-  - "CRowset::Insert"
-  - "ATL::CRowset::Insert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Insert method"
+ms.topic: "reference"
+f1_keywords: ["ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Insert method"]
 ms.assetid: 6a64a1c3-10ac-4296-8685-0fd6fe63a13b
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::Insert
 Creates and initializes a new row using data from the accessor.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Insert(   
-   int nAccessor = 0,   
-   bool bGetHRow = false    
-) throw( );  
+```cpp
+HRESULT Insert(int nAccessor = 0,   
+   bool bGetHRow = false) throw();  
 ```  
   
 #### Parameters  

@@ -4,46 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "delete_cpp"
-  - "new_cpp"
-  - "new"
-  - "delete"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "new keyword [C++], dynamic allocation of objects"
-  - "nothrownew.obj"
-  - "delete keyword [C++], syntax"
+f1_keywords: ["delete_cpp", "new"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["new keyword [C++], dynamic allocation of objects", "nothrownew.obj", "delete keyword [C++], syntax"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # new and delete Operators
 
 C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the `delete` operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).  
   
- In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] .NET 2002, the `new` function in the C++ Standard Library will support the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the C++ Standard Library no longer functions.  
+ The `new` function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the C++ Standard Library no longer functions.  
   
  For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
@@ -68,7 +46,7 @@ The two scopes for `operator new` functions are described in the following table
 |**::operator new**|Global|  
 |*class-name* **::operator new**|Class|  
   
- The first argument to **operator new** must be of type **size_t** (a type defined in STDDEF.H), and the return type is always **void \***.  
+ The first argument to **operator new** must be of type **size_t** (a type defined in \<stddef.h>), and the return type is always **void \***.  
   
  The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.  
   

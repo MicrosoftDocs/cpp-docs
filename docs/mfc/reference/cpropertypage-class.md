@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPropertyPage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, CPropertyPage class"
-  - "dialog boxes, tabs"
-  - "CPropertyPage class"
-  - "tab dialog boxes"
+f1_keywords: ["CPropertyPage", "AFXDLGS/CPropertyPage", "AFXDLGS/CPropertyPage::CPropertyPage", "AFXDLGS/CPropertyPage::CancelToClose", "AFXDLGS/CPropertyPage::Construct", "AFXDLGS/CPropertyPage::GetPSP", "AFXDLGS/CPropertyPage::OnApply", "AFXDLGS/CPropertyPage::OnCancel", "AFXDLGS/CPropertyPage::OnKillActive", "AFXDLGS/CPropertyPage::OnOK", "AFXDLGS/CPropertyPage::OnQueryCancel", "AFXDLGS/CPropertyPage::OnReset", "AFXDLGS/CPropertyPage::OnSetActive", "AFXDLGS/CPropertyPage::OnWizardBack", "AFXDLGS/CPropertyPage::OnWizardFinish", "AFXDLGS/CPropertyPage::OnWizardNext", "AFXDLGS/CPropertyPage::QuerySiblings", "AFXDLGS/CPropertyPage::SetModified", "AFXDLGS/CPropertyPage::m_psp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPropertyPage [MFC], CPropertyPage", "CPropertyPage [MFC], CancelToClose", "CPropertyPage [MFC], Construct", "CPropertyPage [MFC], GetPSP", "CPropertyPage [MFC], OnApply", "CPropertyPage [MFC], OnCancel", "CPropertyPage [MFC], OnKillActive", "CPropertyPage [MFC], OnOK", "CPropertyPage [MFC], OnQueryCancel", "CPropertyPage [MFC], OnReset", "CPropertyPage [MFC], OnSetActive", "CPropertyPage [MFC], OnWizardBack", "CPropertyPage [MFC], OnWizardFinish", "CPropertyPage [MFC], OnWizardNext", "CPropertyPage [MFC], QuerySiblings", "CPropertyPage [MFC], SetModified", "CPropertyPage [MFC], m_psp"]
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPropertyPage Class
 Represents individual pages of a property sheet, otherwise known as a tab dialog box.  
@@ -248,7 +228,8 @@ CPropertyPage(
 ```  
 const PROPSHEETPAGE& GetPSP() const;  
   
-PROPSHEETPAGE& GetPSP();```  
+PROPSHEETPAGE& GetPSP();
+```  
   
 ### Return Value  
  A reference to the **PROPSHEETPAGE** structure.  
@@ -263,7 +244,7 @@ PROPSHEETPAGE m_psp;
 ### Remarks  
  Use this structure to initialize the appearance of a property page after it is constructed.  
   
- For more information on this structure, including a listing of its members, see **PROPSHEETPAGE** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on this structure, including a listing of its members, see **PROPSHEETPAGE** in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/cpp/cpropertypage-class_3.cpp)]  
@@ -285,7 +266,7 @@ virtual BOOL OnApply();
   
  The default implementation of `OnApply` calls `OnOK`.  
   
- For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) in the Windows SDK.  
   
 ### Example  
   See the example for [CPropertyPage::OnOK](#onok).  
@@ -401,7 +382,7 @@ virtual LRESULT OnWizardBack();
 ```  
   
 ### Return Value  
- 0 to automatically advance to the next page; –1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
+ 0 to automatically advance to the next page; -1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
   
 ### Remarks  
  Override this member function to specify some action the user must take when the Back button is pressed.  
@@ -426,7 +407,7 @@ virtual BOOL OnWizardFinish();
   
  You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return **FALSE** to prevent the property sheet from being destroyed.  
   
- For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](http://msdn.microsoft.com/library/windows/desktop/bb774571) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](http://msdn.microsoft.com/library/windows/desktop/bb774571) in the Windows SDK.  
   
  For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).  
   
@@ -447,7 +428,7 @@ virtual LRESULT OnWizardNext();
 ```  
   
 ### Return Value  
- 0 to automatically advance to the next page; –1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
+ 0 to automatically advance to the next page; -1 to prevent the page from changing. To jump to a page other than the next one, return the identifier of the dialog to be displayed.  
   
 ### Remarks  
  Override this member function to specify some action the user must take when the Next button is pressed.  

@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wctomb_s_l"
-  - "wctomb_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wctomb_s_l", "wctomb_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wctomb_s"
-  - "_wctomb_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wctomb_s function"
-  - "wctomb_s_l function"
-  - "string conversion, wide characters"
-  - "wide characters, converting"
-  - "_wctomb_s_l function"
-  - "characters, converting"
-  - "string conversion, multibyte character strings"
+f1_keywords: ["wctomb_s", "_wctomb_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wctomb_s function", "wctomb_s_l function", "string conversion, wide characters", "wide characters, converting", "_wctomb_s_l function", "characters, converting", "string conversion, multibyte character strings"]
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # wctomb_s, _wctomb_s_l
 Converts a wide character to the corresponding multibyte character. A version of [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -110,7 +73,7 @@ errno_t _wctomb_s_l(
 ## Remarks  
  The `wctomb_s` function converts its `wchar` argument to the corresponding multibyte character and stores the result at `mbchar`. You can call the function from any point in any program.  
   
- If `wctomb_s` converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character into the integer pointed to by `pRetValue`. If `wchar` is the wide-character null character (L'\0'), `wctomb_s` fills `pRetValue` with 1. If the target pointer `mbchar` is NULL, `wctomb_s` puts 0 in `pRetValue`. If the conversion is not possible in the current locale, `wctomb_s` puts –1 in `pRetValue`.  
+ If `wctomb_s` converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character into the integer pointed to by `pRetValue`. If `wchar` is the wide-character null character (L'\0'), `wctomb_s` fills `pRetValue` with 1. If the target pointer `mbchar` is NULL, `wctomb_s` puts 0 in `pRetValue`. If the conversion is not possible in the current locale, `wctomb_s` puts -1 in `pRetValue`.  
   
  `wctomb_s` uses the current locale for locale-dependent information; `_wctomb_s_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -149,9 +112,6 @@ Convert a wide character:
    Characters converted: 1  
    Multibyte character: a  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

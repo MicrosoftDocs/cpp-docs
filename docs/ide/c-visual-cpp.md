@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<c>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<c> C++ XML tag"
-  - "c C++ XML tag"
+f1_keywords: ["<c>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<c> C++ XML tag", "c C++ XML tag"]
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;c&gt; (Visual C++)
 The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](../ide/code-visual-cpp.md) to indicate multiple lines as code.  

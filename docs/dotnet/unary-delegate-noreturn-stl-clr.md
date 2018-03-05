@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::unary_delegate_noreturn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unary_delegate_noreturn function [STL/CLR]"
+f1_keywords: ["cliext::unary_delegate_noreturn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unary_delegate_noreturn function [STL/CLR]"]
 ms.assetid: 3c3fb143-f60f-4e28-a66b-690e3a7b2f9b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # unary_delegate_noreturn (STL/CLR)
 The genereic class describes a one-argument delegate that returns `void`. You use it specify a delegate in terms of its argument type.  

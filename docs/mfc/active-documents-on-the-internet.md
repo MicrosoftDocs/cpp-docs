@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "active documents [C++], creating"
-  - "application wizards [C++], active documents"
-  - "active documents [C++], programming steps"
-  - "application wizards [C++]"
-  - "active documents [C++], using application wizards"
+dev_langs: ["C++"]
+helpviewer_keywords: ["active documents [MFC], creating", "application wizards [MFC], active documents", "active documents [MFC], programming steps", "application wizards [MFC]", "active documents [MFC], using application wizards"]
 ms.assetid: a46bd8a0-e27a-4116-b1bf-dacdb7ae78d1
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Active Documents on the Internet
 Active documents provide an extension to traditional embedded objects. The Active documents may be multipage and are displayed in the entire client area. They do traditional menu negotiation, and can be edited in-place as well as in an open window in the server application. Instead of displaying as a small rectangle surrounded by a hatched border, Active documents are full frame and always in-place active.  

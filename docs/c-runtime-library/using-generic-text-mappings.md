@@ -4,56 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_UNICODE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_TXCHAR type"
-  - "TINT type"
-  - "_TCHAR type"
-  - "TSCHAR type"
-  - "TEXT type"
-  - "TCHAR type"
-  - "TCHAR.H data types, mappings defined in"
-  - "generic-text data types"
-  - "_TINT type"
-  - "TUCHAR type"
-  - "_UNICODE constant"
-  - "TXCHAR type"
-  - "generic-text mappings"
-  - "_TSCHAR type"
-  - "T type"
-  - "mappings, generic-text"
-  - "_TUCHAR type"
-  - "MBCS data type"
-  - "_MBCS data type"
-  - "_TEXT type"
-  - "UNICODE constant"
-  - "_T type"
+f1_keywords: ["_UNICODE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "_UNICODE constant", "TXCHAR type", "generic-text mappings", "_TSCHAR type", "T type", "mappings, generic-text", "_TUCHAR type", "MBCS data type", "_MBCS data type", "_TEXT type", "UNICODE constant", "_T type"]
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using Generic-Text Mappings
 **Microsoft Specific**  

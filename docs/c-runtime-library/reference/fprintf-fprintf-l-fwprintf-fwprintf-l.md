@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fwprintf"
-  - "fprintf"
-  - "_fprintf_l"
-  - "_fwprintf_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fprintf"
-  - "fwprintf"
-  - "_ftprintf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fwprintf_l function"
-  - "fprintf function"
-  - "fprintf_l function"
-  - "_fprintf_l function"
-  - "_ftprintf function"
-  - "fwprintf function"
-  - "ftprintf_l function"
-  - "ftprintf function"
-  - "_ftprintf_l function"
-  - "print formatted data to streams"
-  - "fwprintf_l function"
+f1_keywords: ["fprintf", "fwprintf", "_ftprintf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_ftprintf_l function", "print formatted data to streams", "fwprintf_l function"]
 ms.assetid: 34a87e1c-6e4d-4d48-a611-58314dd4dc4b
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # fprintf, _fprintf_l, fwprintf, _fwprintf_l
 Print formatted data to a stream. More secure versions of these functions are available; see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
@@ -113,7 +69,7 @@ int _fwprintf_l(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- `fprintf` formats and prints a series of characters and values to the output `stream`*.* Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`*.* For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
+ `fprintf` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
   
  `fwprintf` is a wide-character version of `fprintf`; in `fwprintf`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf` does not currently support output into a UNICODE stream.  
   
@@ -176,9 +132,6 @@ this is a string
 10  
 1.500000  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::StreamWriter::Write](https://msdn.microsoft.com/en-us/library/system.io.streamwriter.write.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

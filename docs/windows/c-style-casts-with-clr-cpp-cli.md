@@ -1,36 +1,20 @@
 ---
-title: "C-Style Casts with -clr (C++-CLI) | Microsoft Docs"
+title: "C-Style Casts with -clr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C-style casts and /clr"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C-style casts and /clr"]
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # C-Style Casts with /clr (C++/CLI)
 The following topic applies only to the Common Language Runtime.  

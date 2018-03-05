@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtSetDebugFillThreshold"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtSetDebugFillThreshold"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtSetDebugFillThreshold"
-  - "CrtSetDebugFillThreshold"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debug, buffer-filling behavior"
-  - "CrtSetDebugFillThreshold function"
-  - "_CrtSetDebugFillThreshold function"
-  - "buffer-filling behavior"
-  - "0xFD"
+f1_keywords: ["_CrtSetDebugFillThreshold", "CrtSetDebugFillThreshold"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["debug, buffer-filling behavior", "CrtSetDebugFillThreshold function", "_CrtSetDebugFillThreshold function", "buffer-filling behavior", "0xFD"]
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDebugFillThreshold
 Retrieves or modifies the threshold controlling buffer-filling behavior in debug functions.  
@@ -72,7 +39,7 @@ size_t _CrtSetDebugFillThreshold(
  The previous threshold.  
   
 ## Remarks  
- The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFD). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use `_CrtSetDebugFillThreshold` to disable buffer-filling for buffers larger than the threshold. A threshold of 0 will disable it for all buffers.  
+ The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use `_CrtSetDebugFillThreshold` to disable buffer-filling for buffers larger than the threshold. A threshold of 0 will disable it for all buffers.  
   
  The default threshold is `SIZE_T_MAX`.  
   
@@ -127,9 +94,9 @@ size_t _CrtSetDebugFillThreshold(
   
 ## Example  
   
-```  
-// crt_crtsetdebugfillthreshold.cpp  
-// compile with: /MTd  
+```C  
+// crt_crtsetdebugfillthreshold.c  
+// compile with: cl /MTd crt_crtsetdebugfillthreshold.c  
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <string.h>  
@@ -164,7 +131,7 @@ int main( void )
 }  
 ```  
   
-```  
+```Output  
 With buffer-filling on:  
 68  h  
 6f  o  
@@ -172,10 +139,10 @@ With buffer-filling on:
 64  d  
 79  y  
 00  
-fd  ²  
-fd  ²  
-fd  ²  
-fd  ²  
+fe  ■  
+fe  ■  
+fe  ■  
+fe  ■  
 With buffer-filling off:  
 68  h  
 6f  o  
@@ -188,9 +155,6 @@ With buffer-filling off:
 00  
 00  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

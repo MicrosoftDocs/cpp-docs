@@ -5,18 +5,21 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
 caps.latest.revision: 13
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (utility)", "std::operator&gt; (utility)", "std::operator&gt;= (utility)", "std::operator&lt; (utility)", "std::operator&lt;= (utility)", "std::operator== (utility)"]
 ---
 # &lt;utility&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.  
   
 ```  
@@ -28,10 +31,10 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **pair.**  
   
- ` right`  
+ `right`  
  An object of type `pair`.  
   
 ### Return Value  
@@ -87,7 +90,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if the pair object on the left side of the operator is equal to the pair object on the right side.  
   
 ```  
@@ -96,17 +99,17 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **pair.**  
   
- ` right`  
+ `right`  
  An object of type `pair`.  
   
 ### Return Value  
  **true** if the pairs are equal; **false** if the `pair`s are not equal.  
   
 ### Remarks  
- One pair is equal to another pair if each of their respective elements is equal. The function returns ` left`. **first** == ` right`. **first** && ` left`. **second** == ` right`. **second**. Two pairs are unequal if either the first or the second element of one is not equal to the corresponding element of the other pair.  
+ One pair is equal to another pair if each of their respective elements is equal. The function returns `left`. **first** == `right`. **first** && `left`. **second** == `right`. **second**. Two pairs are unequal if either the first or the second element of one is not equal to the corresponding element of the other pair.  
   
 ### Example  
   
@@ -146,7 +149,7 @@ int main( )
 }  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests if the pair object on the left side of the operator is less than the pair object on the right side.  
   
 ```  
@@ -155,17 +158,17 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
  **true** if the `pair` on the left side of the operator is strictly less than the `pair` on the right side of the operator; otherwise **false**.  
   
 ### Remarks  
- The ` left``pair` object is said to be strictly less than the ` right``pair` object if ` left` is less than and not equal ` right.`  
+ The `left` `pair` object is said to be strictly less than the `right` `pair` object if `left` is less than and not equal to `right`.  
   
  In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.  
   
@@ -216,7 +219,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the pair object on the left side of the operator is less than or equal to the pair object on the right side.  
   
 ```  
@@ -228,10 +231,10 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
@@ -297,7 +300,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests if the pair object on the left side of the operator is greater than the pair object on the right side.  
   
 ```  
@@ -309,17 +312,17 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
  **true** if the `pair` on the left side of the operator is strictly greater than the `pair` on the right side of the operator; otherwise **false**.  
   
 ### Remarks  
- The ` left``pair` object is said to be strictly greater than the ` right``pair` object if ` left` is greater than and not equal ` right.`  
+ The `left` `pair` object is said to be strictly greater than the `right` `pair` object if `left` is greater than and not equal to `right`.  
   
  In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.  
   
@@ -380,7 +383,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the pair object on the left side of the operator is greater than or equal to the pair object on the right side.  
   
 ```  
@@ -392,10 +395,10 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  

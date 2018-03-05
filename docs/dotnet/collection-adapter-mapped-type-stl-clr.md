@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::collection_adapter::mapped_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapped_type member [STL/CLR]"
+f1_keywords: ["cliext::collection_adapter::mapped_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapped_type member [STL/CLR]"]
 ms.assetid: eece6a47-611a-47d4-8dfc-cfbbc4aeb67b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter::mapped_type (STL/CLR)
 The type of a dictionary value.  

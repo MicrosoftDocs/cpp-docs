@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "extreme_value_distribution"
-  - "std::extreme_value_distribution"
-  - "random/std::extreme_value_distribution"
-  - "std::extreme_value_distribution::reset"
-  - "random/std::extreme_value_distribution::reset"
-  - "std::extreme_value_distribution::a"
-  - "random/std::extreme_value_distribution::a"
-  - "std::extreme_value_distribution::b"
-  - "random/std::extreme_value_distribution::b"
-  - "std::extreme_value_distribution::param"
-  - "random/std::extreme_value_distribution::param"
-  - "std::extreme_value_distribution::min"
-  - "random/std::extreme_value_distribution::min"
-  - "std::extreme_value_distribution::max"
-  - "random/std::extreme_value_distribution::max"
-  - "std::extreme_value_distribution::operator()"
-  - "random/std::extreme_value_distribution::operator()"
-  - "std::extreme_value_distribution::param_type"
-  - "random/std::extreme_value_distribution::param_type"
-  - "std::extreme_value_distribution::param_type::a"
-  - "random/std::extreme_value_distribution::param_type::a"
-  - "std::extreme_value_distribution::param_type::b"
-  - "random/std::extreme_value_distribution::param_type::b"
-  - "std::extreme_value_distribution::param_type::operator=="
-  - "random/std::extreme_value_distribution::param_type::operator=="
-  - "std::extreme_value_distribution::param_type::operator!="
-  - "random/std::extreme_value_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extreme_value_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::extreme_value_distribution [C++]", "std::extreme_value_distribution [C++], reset", "std::extreme_value_distribution [C++], a", "std::extreme_value_distribution [C++], b", "std::extreme_value_distribution [C++], param", "std::extreme_value_distribution [C++], min", "std::extreme_value_distribution [C++], max", "std::extreme_value_distribution [C++], param_type", "std::extreme_value_distribution [C++], param_type"]
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # extreme_value_distribution Class
 Generates an extreme value distribution.  
@@ -105,14 +62,14 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[extreme_value_distribution::extreme_value_distribution](#extreme_value_distribution__extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[extreme_value_distribution::param_type](#extreme_value_distribution__param_type)|  
+|[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
+|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|  
   
  The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/LinkId=401110).  
+ For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/p/?linkid=401110).  
   
 ## Example  
   
@@ -202,7 +159,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="extreme_value_distribution__extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution  
+##  <a name="extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution  
  Constructs the distribution.  
   
 ```  
@@ -227,7 +184,7 @@ explicit extreme_value_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="extreme_value_distribution__param_type"></a>  extreme_value_distribution::param_type  
+##  <a name="param_type"></a>  extreme_value_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp  

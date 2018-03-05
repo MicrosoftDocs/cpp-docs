@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC dialog boxes, creating"
-  - "dialog classes, dialog box components"
-  - "MFC dialog boxes, about MFC dialog boxes"
-  - "dialog templates, MFC framework"
-  - "MFC dialog boxes, dialog resource"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC dialog boxes [MFC], creating", "dialog classes [MFC], dialog box components", "MFC dialog boxes [MFC], about MFC dialog boxes", "dialog templates [MFC], MFC framework", "MFC dialog boxes [MFC], dialog resource"]
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dialog-Box Components in the Framework
 In the MFC framework, a dialog box has two components:  

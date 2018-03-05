@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.IConnectionPointImpl"
-  - "IConnectionPointImpl"
-  - "ATL::IConnectionPointImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], implementing"
-  - "IConnectionPointImpl class"
+f1_keywords: ["IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl::Advise", "ATLCOM/ATL::IConnectionPointImpl::EnumConnections", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer", "ATLCOM/ATL::IConnectionPointImpl::Unadvise", "ATLCOM/ATL::IConnectionPointImpl::m_vec"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], implementing", "IConnectionPointImpl class"]
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IConnectionPointImpl Class
 This class implements a connection point.  
@@ -102,7 +82,7 @@ STDMETHOD(Advise)(
 ### Remarks  
  Use [Unadvise](#unadvise) to terminate the connection call.  
   
- See [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) in the Windows SDK.  
   
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
  Creates an enumerator to iterate through the connections for the connection point.  
@@ -112,7 +92,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) in the Windows SDK.  
   
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
  Retrieves the IID of the interface represented by the connection point.  
@@ -122,7 +102,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) in the Windows SDK.  
   
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
  Retrieves an interface pointer to the connectable object.  
@@ -132,7 +112,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) in the Windows SDK.  
   
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  Manages the connections between the connection point object and a sink.  
@@ -152,7 +132,7 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) in the Windows SDK.  
   
 ## See Also  
  [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   

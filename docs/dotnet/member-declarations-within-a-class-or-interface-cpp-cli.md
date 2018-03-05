@@ -1,40 +1,23 @@
 ---
-title: "Member Declarations within a Class or Interface (C++-CLI) | Microsoft Docs"
+title: "Member Declarations within a Class or Interface (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "members, declaration syntax"
-  - "class members, declaration syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["members, declaration syntax", "class members, declaration syntax"]
 ms.assetid: 95d312a4-198b-46f0-b8f5-15253807c55e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Member Declarations within a Class or Interface (C++/CLI)
-The declaration of properties and operators has been extensively reworked from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], hiding the underlying implementation details that were exposed in the Managed Extensions design. Event declarations have been modified as well.  
+The declaration of properties and operators has been extensively reworked from Managed Extensions for C++ to Visual C++, hiding the underlying implementation details that were exposed in the Managed Extensions design. Event declarations have been modified as well.  
   
  Under the category of changes that have no Managed Extensions support, static constructors can now be defined out-of-line (they were required to be defined inline within Managed Extensions), and the notion of a delegating constructor has been introduced.  
   

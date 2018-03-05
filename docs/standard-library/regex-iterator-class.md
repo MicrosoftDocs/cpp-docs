@@ -4,47 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "regex_iterator"
-  - "std::regex_iterator"
-  - "regex/std::regex_iterator"
-  - "std::regex_iterator::operator=="
-  - "regex/std::regex_iterator::operator=="
-  - "std::regex_iterator::operator!="
-  - "regex/std::regex_iterator::operator!="
-  - "std::regex_iterator::operator*"
-  - "regex/std::regex_iterator::operator*"
-  - "std::regex_iterator::operator->"
-  - "regex/std::regex_iterator::operator->"
-  - "std::regex_iterator::operator++"
-  - "regex/std::regex_iterator::operator++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regex_iterator class"
+ms.topic: "reference"
+f1_keywords: ["regex/std::regex_iterator", "regex/std::regex_iterator::operator==", "regex/std::regex_iterator::operator!=", "regex/std::regex_iterator::operator*", "regex/std::regex_iterator::operator->", "regex/std::regex_iterator::operator++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::regex_iterator", "std::regex_iterator::operator==", "std::regex_iterator::operator!=", "std::regex_iterator::operator*", "std::regex_iterator::operator->", "std::regex_iterator::operator++"]
 ms.assetid: 0cfd8fd0-5a95-4f3c-bf8e-6ef028c423d3
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # regex_iterator Class
 Iterator class for matches.  
@@ -100,20 +71,20 @@ private:
 ## Examples  
  See the following topics for examples on regular expressions:  
   
-- [regex_match Function](../standard-library/regex-functions.md#regex_match_function)  
+- [regex_match](../standard-library/regex-functions.md#regex_match)  
   
-- [regex_replace Function](../standard-library/regex-functions.md#regex_replace_function)  
+- [regex_replace](../standard-library/regex-functions.md#regex_replace)  
   
-- [regex_search Function](../standard-library/regex-functions.md#regex_search_function)  
+- [regex_search](../standard-library/regex-functions.md#regex_search)  
   
-- [swap Function](../standard-library/regex-functions.md#swap_function)  
+- [swap](../standard-library/regex-functions.md#swap)  
   
 ## Requirements  
  **Header:** \<regex>  
   
  **Namespace:** std  
   
-##  <a name="regex_iterator__difference_type"></a>  regex_iterator::difference_type  
+##  <a name="difference_type"></a>  regex_iterator::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -166,7 +137,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__iterator_category"></a>  regex_iterator::iterator_category  
+##  <a name="iterator_category"></a>  regex_iterator::iterator_category  
  The type of the iterator category.  
   
 ```  
@@ -219,7 +190,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__operator_neq"></a>  regex_iterator::operator!=  
+##  <a name="op_neq"></a>  regex_iterator::operator!=  
  Compares iterators for inequality.  
   
 ```  
@@ -276,7 +247,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__operator_star"></a>  regex_iterator::operator*  
+##  <a name="op_star"></a>  regex_iterator::operator*  
  Accesses the designated match.  
   
 ```  
@@ -329,7 +300,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__operator_add_add"></a>  regex_iterator::operator++  
+##  <a name="op_add_add"></a>  regex_iterator::operator++  
  Increments the iterator.  
   
 ```  
@@ -385,7 +356,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__operator_eq"></a>  regex_iterator::operator=  
+##  <a name="op_eq"></a>  regex_iterator::operator=  
  Compares iterators for equality.  
   
 ```  
@@ -442,7 +413,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__operator-_gt_"></a>  regex_iterator::operator-&gt;  
+##  <a name="regex_iterator__operator-_gt"></a>  regex_iterator::operator-&gt;  
  Accesses the designated match.  
   
 ```  
@@ -495,7 +466,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__pointer"></a>  regex_iterator::pointer  
+##  <a name="pointer"></a>  regex_iterator::pointer  
  The type of a pointer to a match.  
   
 ```  
@@ -548,7 +519,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__reference"></a>  regex_iterator::reference  
+##  <a name="reference"></a>  regex_iterator::reference  
  The type of a reference to a match.  
   
 ```  
@@ -602,7 +573,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__regex_iterator"></a>  regex_iterator::regex_iterator  
+##  <a name="regex_iterator"></a>  regex_iterator::regex_iterator  
  Constructs the iterator.  
   
 ```  
@@ -674,7 +645,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__regex_type"></a>  regex_iterator::regex_type  
+##  <a name="regex_type"></a>  regex_iterator::regex_type  
  The type of the regular expression to match.  
   
 ```  
@@ -728,7 +699,7 @@ match == a
 match == a  
 ```  
   
-##  <a name="regex_iterator__value_type"></a>  regex_iterator::value_type  
+##  <a name="value_type"></a>  regex_iterator::value_type  
  The type of a match.  
   
 ```  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr.com.ptr.operator->"
-  - "ptr.operator->"
-  - "ptr::operator->"
-  - "msclr::com::ptr::operator->"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ptr::operator->"
+f1_keywords: ["msclr.com.ptr.operator->", "ptr.operator->", "ptr::operator->", "msclr::com::ptr::operator->"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ptr::operator->"]
 ms.assetid: e752b549-74ed-430d-9a60-6c8e0e441998
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::operator-&gt;
 Member access operator, used to call methods on the owned COM object.  

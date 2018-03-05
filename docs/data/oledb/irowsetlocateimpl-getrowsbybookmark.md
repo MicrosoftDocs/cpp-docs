@@ -4,53 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IRowsetLocateImpl::GetRowsByBookmark"
-  - "IRowsetLocateImpl.GetRowsByBookmark"
-  - "GetRowsByBookmark"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetRowsByBookmark method"
+ms.topic: "reference"
+f1_keywords: ["IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetRowsByBookmark method"]
 ms.assetid: 07906e42-3582-427e-812a-aa19791e3c56
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl::GetRowsByBookmark
 Fetches one or more rows that match the specified bookmarks.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowsByBookmark )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const DBBKMARK rgcbBookmarks[],  
    const BYTE* rgpBookmarks,  
    HROW rghRows[],  
-   DBROWSTATUS* rgRowStatus[]   
-);  
+   DBROWSTATUS* rgRowStatus[]);  
 ```  
   
 #### Parameters  

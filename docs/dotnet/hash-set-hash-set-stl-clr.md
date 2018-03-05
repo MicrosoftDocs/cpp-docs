@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set::hash_set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hash_set member [STL/CLR]"
+f1_keywords: ["cliext::hash_set::hash_set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hash_set member [STL/CLR]"]
 ms.assetid: 006414ed-db5a-4c08-ac81-4a8ae57d0aad
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::hash_set (STL/CLR)
 Constructs a container object.  
@@ -99,41 +82,31 @@ hash_set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `hash_set(hash_set<Key>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[hash_set::begin (STL/CLR)](../dotnet/hash-set-begin-stl-clr.md)`(),` `right``.`[hash_set::end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_set object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_set object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_set(hash_set<Key>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[hash_set::begin (STL/CLR)](../dotnet/hash-set-begin-stl-clr.md)`(),` `right``->`[hash_set::end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_set object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_set object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_set(InIter first, InIter last);`  
   
- `hash_set(InIter first, InIter last);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_set(InIter first, InIter last, key_compare^ pred);`  
   
- `hash_set(InIter first, InIter last,`  
-  
- `key_compare^ pred);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> hash_set(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
- `hash_set(InIter first, InIter last,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
   
  The constructor:  
   
@@ -143,17 +116,13 @@ hash_set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `hash_set(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred);`  
+ `hash_set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.  
   
  The constructor:  
   
- `hash_set(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred, hasher^ hashfn);`  
+ `hash_set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.  
   

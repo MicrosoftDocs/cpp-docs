@@ -5,20 +5,24 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d::get_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_texture"]
+dev_langs: ["C++"]
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics::direct3d namespace functions
 ||||  
 |-|-|-|  
-|[get_sampler Function](#get_sampler)|[get_texture Function](#get_texture)|[make_sampler Function](#make_sampler)|  
-|[make_texture Function](#make_texture)|[msad4 Function](#msad4)|  
-  
-##  <a name="get_sampler"></a>  get_sampler Function  
+|[get_sampler](#get_sampler)|[get_texture](#get_texture)|[make_sampler](#make_sampler)|  
+|[make_texture](#make_texture)|[msad4](#msad4)|  
+
+ 
+##  <a name="get_sampler"></a>  get_sampler  
  Get the D3D sampler state interface on the given accelerator view that represents the specified sampler object.  
   
 ```  
@@ -37,7 +41,7 @@ IUnknown* get_sampler(
 ### Return Value  
  The IUnknown interface pointer corresponding to the D3D sampler state that represents the given sampler.  
   
-##  <a name="get_texture"></a>  get_texture Function  
+##  <a name="get_texture"></a>  get_texture  
  Gets the Direct3D texture interface underlying the specified [texture](texture-class.md) object.  
   
 ```  
@@ -80,7 +84,7 @@ _Ret_ IUnknown *get_texture(
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D texture underlying the texture.  
   
-##  <a name="make_sampler"></a>  make_sampler Function  
+##  <a name="make_sampler"></a>  make_sampler  
  Create a sampler from a D3D sampler state interface pointer.  
   
 ```  
@@ -94,7 +98,7 @@ sampler make_sampler(_In_ IUnknown* _D3D_sampler) restrict(amp);
 ### Return Value  
  A sampler represents the provided D3D sampler state.  
   
-##  <a name="make_texture"></a>  make_texture Function  
+##  <a name="make_texture"></a>  make_texture  
  Creates a [texture](texture-class.md) object by using the specified parameters.  
   
 ```  
@@ -127,7 +131,7 @@ texture<value_type, _Rank> make_texture(
 ### Return Value  
  A texture using the provided D3D texture.  
   
-##  <a name="msad4"></a>  msad4 Function  
+##  <a name="msad4"></a>  msad4  
  Compares a 4-byte reference value and an 8-byte source value and accumulates a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.  
   
 ```  
@@ -149,6 +153,11 @@ inline uint4 msad4(
   
 ### Return Value  
  Returns a vector of 4 sums. Each sum corresponds to the masked sum of absolute differences of different byte alignments between the reference value and the source value.  
+
+## Requirements  
+ **Header:** amp_graphics.h  
   
+ **Namespace:** Concurrency::graphics::direct3d 
+
 ## See Also  
  [Concurrency::graphics::direct3d Namespace](concurrency-graphics-direct3d-namespace.md)

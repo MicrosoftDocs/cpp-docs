@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.control.options"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL Control Wizard, options"
+f1_keywords: ["vc.codewiz.class.atl.control.options"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL Control Wizard, options"]
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Options, ATL Control Wizard
 Insert "Search Results" summary here.  
@@ -89,7 +72,7 @@ Insert "Search Results" summary here.
   
 -   **Custom**: Creates an interface that exposes methods directly through a VTBL.  
   
-     If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](http://msdn.microsoft.com/library/windows/desktop/ms692621) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] for more information.  
+     If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](http://msdn.microsoft.com/library/windows/desktop/ms692621) in the Windows SDK for more information.  
   
      Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be **VARIANT** compatible.  
   

@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # D. Using the schedule Clause
 A parallel region has at least one barrier, at its end, and may have additional barriers within it. At each barrier, the other members of the team must wait for the last thread to arrive. To minimize this wait time, shared work should be distributed so that all threads arrive at the barrier at about the same time. If some of that shared work is contained in **for** constructs, the `schedule` clause can be used for this purpose.  
@@ -60,7 +45,7 @@ for(i=0; i<n; i++) {
   
  The **static** schedule is characterized by the properties that each thread gets approximately the same number of iterations as any other thread, and each thread can independently determine the iterations assigned to it. Thus no synchronization is required to distribute the work, and, under the assumption that each iteration requires the same amount of work, all threads should finish at about the same time.  
   
- For a team of `p` threads, let *ceiling(n/p)* be the integer *q*, which satisfies *n = p\*q - r* with *0 <= r < p*. One implementation of the **static** schedule for this example would assign *q* iterations to the first *p–1* threads, and *q-r* iterations to the last thread.  Another acceptable implementation would assign *q* iterations to the first *p-r* threads, and *q-1* iterations to the remaining *r* threads. This illustrates why a program should not rely on the details of a particular implementation.  
+ For a team of `p` threads, let *ceiling(n/p)* be the integer *q*, which satisfies *n = p\*q - r* with *0 <= r < p*. One implementation of the **static** schedule for this example would assign *q* iterations to the first *p-1* threads, and *q-r* iterations to the last thread.  Another acceptable implementation would assign *q* iterations to the first *p-r* threads, and *q-1* iterations to the remaining *r* threads. This illustrates why a program should not rely on the details of a particular implementation.  
   
  The **dynamic** schedule is appropriate for the case of a **for** construct with the iterations requiring varying, or even unpredictable, amounts of work.  
   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CAnimateCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "animation controls [C++], CAnimateCtrl class"
-  - "controls [MFC], animation"
-  - "CAnimateCtrl class, about CAnimateCtrl class"
+f1_keywords: ["CAnimateCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["animation controls [MFC], CAnimateCtrl class", "controls [MFC], animation", "CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]"]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using CAnimateCtrl
 An animation control, represented by the class [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), is a window that displays a clip in Audio Video Interleaved (AVI) format — the standard Windows video/audio format. An AVI clip is a series of bitmap frames, like a movie.  

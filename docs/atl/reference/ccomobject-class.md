@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObject<Base>"
-  - "ATL::CComObject"
-  - "ATL::CComObject<Base>"
-  - "ATL.CComObject"
-  - "CComObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComObject class"
+f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComObject class"]
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComObject Class
 This class implements **IUnknown** for a nonaggregated object.  
@@ -179,6 +158,6 @@ STDMETHOD_(ULONG, Release)();
 ## See Also  
  [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)   
  [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)   
- [DECLARE_AGGREGATABLE](http://msdn.microsoft.com/library/e7e568d7-04e0-4226-b5dc-224deed229ab)   
- [DECLARE_NOT_AGGREGATABLE](http://msdn.microsoft.com/library/2a116c7c-bab8-4f2a-a9ad-03d7aba0f762)   
+ [DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
+ [DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
  [Class Overview](../../atl/atl-class-overview.md)

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BEGIN_ACCESSOR macro"
-  - "BEGIN_ACCESSOR macro, multiple accessors"
-  - "rowsets [C++], multiple accessors"
-  - "accessors [C++], rowsets"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR macro, multiple accessors", "rowsets [C++], multiple accessors", "accessors [C++], rowsets"]
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Accessors on a Rowset
 There are three basic scenarios in which you need to use multiple accessors:  
@@ -125,7 +106,7 @@ int main(int argc, char* argv[])
         if (hr == S_OK)  
         {  
             // Ready to fetch/access data  
-            CTable<CAccessor<CJobs> > jobs;  
+            CTable<CAccessor<CJobs>> jobs;  
   
             // Set properties for making the rowset a read/write cursor  
             CDBPropSet dbRowset(DBPROPSET_ROWSET);  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMiniFrameWnd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMiniFrameWnd class"
-  - "mini-frame windows"
-  - "toolbars [C++]"
+f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMiniFrameWnd [MFC], CMiniFrameWnd", "CMiniFrameWnd [MFC], Create", "CMiniFrameWnd [MFC], CreateEx"]
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMiniFrameWnd Class
 Represents a half-height frame window typically seen around floating toolbars.  
@@ -169,16 +150,16 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the `CMiniFrameWnd` being created. Apply any of the [extended window styles](../../mfc/reference/extended-window-styles.md) to the window.  
+ Specifies the extended style of the `CMiniFrameWnd` being created. Apply any of the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) to the window.  
   
  `lpClassName`  
- Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](http://msdn.microsoft.com/library/62c7d4b1-7a29-4abb-86f7-dec541659db0) function or any of the predefined control-class names. It must not be **NULL**.  
+ Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function or any of the predefined control-class names. It must not be **NULL**.  
   
  `lpWindowName`  
  Points to a null-terminated character string that contains the window name.  
   
  `dwStyle`  
- Specifies the window style attributes. See [Window Styles](../../mfc/reference/window-styles.md) and [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of the possible values.  
+ Specifies the window style attributes. See [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [CWnd::Create](../../mfc/reference/cwnd-class.md#create) for a description of the possible values.  
   
  `rect`  
  The size and position of the window, in client coordinates of `pParentWnd`.  
@@ -203,9 +184,9 @@ virtual BOOL CreateEx(
   
  If the **WS_VISIBLE** style is given, Windows sends the window all the messages required to activate and show the window. If the window style specifies a title bar, the window title pointed to by the `lpszWindowName` parameter is displayed in the title bar.  
   
- The `dwStyle` parameter can be any combination of [window styles](../../mfc/reference/window-styles.md).  
+ The `dwStyle` parameter can be any combination of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- The old style Palette toolbox windows are no longer supported. The old style, which did not have an "X" Close button, was supported when running an MFC application on previous versions of Windows, but is no longer supported in Visual C++.NET. Only the new `WS_EX_TOOLWINDOW` style is now supported; for a description of this style, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md).  
+ The old style Palette toolbox windows are no longer supported. The old style, which did not have an "X" Close button, was supported when running an MFC application on previous versions of Windows, but is no longer supported in Visual C++.NET. Only the new `WS_EX_TOOLWINDOW` style is now supported; for a description of this style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
 ## See Also  
  [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)   

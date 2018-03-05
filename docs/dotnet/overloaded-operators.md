@@ -4,39 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator overloading, in a CLR class"
-  - "operators [C++], overloading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator overloading, in a CLR class", "operators [C++], overloading"]
 ms.assetid: 30391426-afe7-4497-bf22-e4816c1e48c8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overloaded Operators
-Operator overloading has changed significantly from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Operator overloading has changed significantly from Managed Extensions for C++ to Visual C++.  
   
- In the declaration of a reference type, for example, rather than using the native `operator+` syntax, you explicitly write out the underlying internal name of the operator – in this case, `op_Addition`. In addition, the invocation of an operator has to be explicitly invoked through that name, thus precluding the two primary benefits of operator overloading: (a) the intuitive syntax, and (b) the ability to intermix new types with existing types. For example:  
+ In the declaration of a reference type, for example, rather than using the native `operator+` syntax, you explicitly write out the underlying internal name of the operator - in this case, `op_Addition`. In addition, the invocation of an operator has to be explicitly invoked through that name, thus precluding the two primary benefits of operator overloading: (a) the intuitive syntax, and (b) the ability to intermix new types with existing types. For example:  
   
 ```  
 public __gc __sealed class Vector {  

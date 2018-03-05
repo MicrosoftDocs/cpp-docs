@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtDoForAllClientObjects"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtDoForAllClientObjects"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtDoForAllClientObjects"
-  - "CrtDoForAllClientObjects"
-  - "crtdbg/_CrdDoForAllClientObjects"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtDoForAllClientObjects function"
-  - "CrtDoForAllClientObjects function"
+f1_keywords: ["_CrtDoForAllClientObjects", "CrtDoForAllClientObjects", "crtdbg/_CrdDoForAllClientObjects"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CrtDoForAllClientObjects function", "CrtDoForAllClientObjects function"]
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDoForAllClientObjects
 Calls an application-supplied function for all `_CLIENT_BLOCK` types in the heap (debug version only).  
@@ -88,9 +57,6 @@ void _CrtDoForAllClientObjects(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
  **Libraries:** Debug versions of  universal C run-time libraries only.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

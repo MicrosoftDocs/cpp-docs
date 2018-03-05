@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DTN_FORMATQUERY"
-  - "DTN_FORMAT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DateTimePicker control [MFC], callback fields"
-  - "callback fields in CDateTimeCtrl class"
-  - "CDateTimeCtrl class, callback fields"
-  - "CDateTimeCtrl class, handling DTN_FORMAT and DTN_FORMATQ"
-  - "DTN_FORMATQUERY notification"
-  - "DTN_FORMAT notification"
-  - "DateTimePicker control [MFC]"
+f1_keywords: ["DTN_FORMATQUERY", "DTN_FORMAT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DateTimePicker control [MFC], callback fields", "callback fields in CDateTimeCtrl class [MFC]", "CDateTimeCtrl class [MFC], callback fields", "CDateTimeCtrl class [MFC], handling DTN_FORMAT and DTN_FORMATQ", "DTN_FORMATQUERY notification [MFC]", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
 ms.assetid: 404f4ba9-cba7-4718-9faa-bc6b274a723f
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using Callback Fields in a Date and Time Picker Control
 In addition to the standard format characters that define date and time picker fields, you can customize your output by specifying certain parts of a custom format string as callback fields. To declare a callback field, include one or more "X" characters (ASCII Code 88) anywhere in the body of the format string. For example, the following string "'Today is: 'yy'/'MM'/'dd' (Day 'X')'"causes the date and time picker control to display the current value as the year followed by the month, date, and finally the day of the year.  

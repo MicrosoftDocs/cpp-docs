@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__FUnloadDelayLoadedDLL2"
-  - "delayed loading of DLLs, unloading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Unloading a Delay-Loaded DLL
 The default-supplied delay-load helper checks to see if the delay-load descriptors have a pointer and a copy of the original import address table (IAT) in the pUnloadIAT field. If so, it will save a pointer in a list to the import delay descriptor. This enables the helper function to find the DLL by name to support unloading that DLL explicitly.  
@@ -80,4 +63,4 @@ __FUnloadDelayLoadedDLL2("User32.DLL");.
 ```  
   
 ## See Also  
- [Understanding the Helper Function](http://msdn.microsoft.com/en-us/6279c12c-d908-4967-b0b3-cabfc3e91d3d)
+ [Understanding the Helper Function](understanding-the-helper-function.md)

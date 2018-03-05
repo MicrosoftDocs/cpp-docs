@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/LN"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-LN compiler option [C++]"
-  - "/LN compiler option [C++]"
+f1_keywords: ["/LN"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-LN compiler option [C++]", "/LN compiler option [C++]"]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /LN (Create MSIL Module)
 Specifies that an assembly manifest should not be inserted into the output file.  
@@ -51,7 +33,7 @@ Specifies that an assembly manifest should not be inserted into the output file.
   
  A managed program that does not have an assembly metadata in the manifest is called a module. If you compile with [/c (Compile Without Linking)](../../build/reference/c-compile-without-linking.md) and **/LN**, specify [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md) in the linker phase to create the output file.  
   
- You may want to create modules if you want to take a component-based approach to building assemblies.  That is, you can author types and compile them into modules.  Then, you can generate an assembly from one or more modules.  For more information on creating assemblies from modules, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md) or [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).  
+ You may want to create modules if you want to take a component-based approach to building assemblies.  That is, you can author types and compile them into modules.  Then, you can generate an assembly from one or more modules.  For more information on creating assemblies from modules, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md) or [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
   
  The default file extension for a module is .netmodule.  
   

@@ -4,41 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfcweb.project"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, Web applications"
-  - "Web browsers, creating from MFC architecture"
-  - "Web browsers"
-  - "Web applications, creating"
+f1_keywords: ["vc.appwiz.mfcweb.project"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, Web applications", "Web browsers, creating from MFC architecture", "Web browsers", "Web applications [MFC], creating"]
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating a Web Browser-Style MFC Application
-A Web browser–style application can access information from the Internet (such as HTML or active documents) or an intranet, as well as folders in the local file system and on a network. By deriving the application's view class from [CHtmlView](../../mfc/reference/chtmlview-class.md), effectively you make the application a Web browser by providing the view with the WebBrowser control.  
+A Web browser-style application can access information from the Internet (such as HTML or active documents) or an intranet, as well as folders in the local file system and on a network. By deriving the application's view class from [CHtmlView](../../mfc/reference/chtmlview-class.md), effectively you make the application a Web browser by providing the view with the WebBrowser control.  
   
 ### To create a Web browser application based on the MFC document/view architecture  
   

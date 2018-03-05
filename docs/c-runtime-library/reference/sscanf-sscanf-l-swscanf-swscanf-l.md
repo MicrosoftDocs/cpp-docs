@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "swscanf"
-  - "sscanf"
-  - "_sscanf_l"
-  - "_swscanf_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["swscanf", "sscanf", "_sscanf_l", "_swscanf_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_sscanf_l"
-  - "_stscanf"
-  - "swscanf"
-  - "_stscanf_l"
-  - "sscanf"
-  - "_swscanf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "swscanf function"
-  - "_stscanf function"
-  - "sscanf function"
-  - "_stscanf_l function"
-  - "_sscanf_l function"
-  - "_swscanf_l function"
-  - "swscanf_l function"
-  - "strings [C++], reading data from"
-  - "stscanf function"
-  - "reading data, strings"
-  - "strings [C++], reading"
-  - "sscanf_l function"
-  - "stscanf_l function"
+f1_keywords: ["_sscanf_l", "_stscanf", "swscanf", "_stscanf_l", "sscanf", "_swscanf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["swscanf function", "_stscanf function", "sscanf function", "_stscanf_l function", "_sscanf_l function", "_swscanf_l function", "swscanf_l function", "strings [C++], reading data from", "stscanf function", "reading data, strings", "strings [C++], reading", "sscanf_l function", "stscanf_l function"]
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # sscanf, _sscanf_l, swscanf, _swscanf_l
 Read formatted data from a string. More secure versions of these functions are available; see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
@@ -124,7 +76,7 @@ int _swscanf_l(
 > [!IMPORTANT]
 >  When reading a string with `sscanf`, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, improperly formatted input can easily cause a buffer overrun.  
   
- `swscanf` is a wide-character version of `sscanf`; the arguments to `swscanf` are wide-character strings. `sscanf`does not handle multibyte hexadecimal characters. `swscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `swscanf` and `sscanf` behave identically.  
+ `swscanf` is a wide-character version of `sscanf`; the arguments to `swscanf` are wide-character strings. `sscanf` does not handle multibyte hexadecimal characters. `swscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `swscanf` and `sscanf` behave identically.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   
@@ -184,9 +136,6 @@ Character = 1
 Integer:  = 15  
 Real:     = 15.000000  
 ```  
-  
-## .NET Framework Equivalent  
- See `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

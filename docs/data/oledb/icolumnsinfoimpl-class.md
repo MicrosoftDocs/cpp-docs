@@ -4,46 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.IColumnsInfoImpl<T>"
-  - "ATL::IColumnsInfoImpl"
-  - "IColumnsInfoImpl"
-  - "ATL.IColumnsInfoImpl"
-  - "ATL::IColumnsInfoImpl<T>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IColumnsInfoImpl class"
+ms.topic: "reference"
+f1_keywords: ["ATL.IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl", "IColumnsInfoImpl", "ATL.IColumnsInfoImpl", "ATL::IColumnsInfoImpl<T>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IColumnsInfoImpl class"]
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl Class
 Provides an implementation of the [IColumnsInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IColumnsInfoImpl :   
    public IColumnsInfo,    

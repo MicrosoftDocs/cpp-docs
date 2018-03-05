@@ -4,67 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strtof_l"
-  - "wcstof"
-  - "strtof"
-  - "_wcstof_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_strtof_l", "wcstof", "strtof", "_wcstof_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcstof"
-  - "_tcstof_l"
-  - "stdlib/strtof"
-  - "strtof"
-  - "stdlib/_strtof_l"
-  - "_strtof_l"
-  - "corecrt_wstdlib/wcstof"
-  - "wcstof"
-  - "corecrt_wstdlib/_wcstof_l"
-  - "_wcstof_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strtof_l function"
-  - "_tcstof function"
-  - "_wcstof_l function"
-  - "wcstof function"
-  - "_tcstof_l function"
-  - "strtof function"
+f1_keywords: ["_tcstof", "_tcstof_l", "stdlib/strtof", "strtof", "stdlib/_strtof_l", "_strtof_l", "corecrt_wstdlib/wcstof", "wcstof", "corecrt_wstdlib/_wcstof_l", "_wcstof_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strtof_l function", "_tcstof function", "_wcstof_l function", "wcstof function", "_tcstof_l function", "strtof function"]
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strtof, _strtof_l, wcstof, _wcstof_l
 Converts strings to a single-precision floating-point value.  
@@ -103,7 +57,7 @@ float wcstof_l(
  The locale to use.  
   
 ## Return Value  
- `strtof` returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/–`HUGE_VALF`. The sign of `HUGE_VALF` matches the sign of the value that cannot be represented. `strtof` returns 0 if no conversion can be performed or an underflow occurs.  
+ `strtof` returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VALF`. The sign of `HUGE_VALF` matches the sign of the value that cannot be represented. `strtof` returns 0 if no conversion can be performed or an underflow occurs.  
   
  `wcstof` returns values analogously to `strtof`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
@@ -127,7 +81,7 @@ float wcstof_l(
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`e` &#124; `E`}[`sign`]`digits`]  
   
- A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`–`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`e` or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
+ A `whitespace` may consist of space and tab characters, which are ignored; `sign` is either plus (`+`) or minus (`-`); and `digits` are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (`e` or `E`) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.  
  
  The UCRT versions of these functions do not support conversion of Fortran-style (`d` or `D`) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.
   

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleException class"
-  - "exceptions, OLE"
+f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleException [MFC], Process", "COleException [MFC], m_sc"]
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleException Class
 Represents an exception condition related to an OLE operation.  
@@ -85,7 +67,7 @@ SCODE m_sc;
 ### Remarks  
  This variable's value is set by [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
- For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
@@ -109,7 +91,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 > [!NOTE]
 >  This function is **static**.  
   
- For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Example  
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  

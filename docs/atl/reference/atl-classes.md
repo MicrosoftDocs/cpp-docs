@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "classes [C++], ATL"
-  - "ATL, classes"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["classes [C++], ATL", "ATL, classes"]
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL Classes
 The Active Template Library (ATL) includes the following classes. To find a particular class by category, see the [ATL Class Overview](../../atl/atl-class-overview.md).  

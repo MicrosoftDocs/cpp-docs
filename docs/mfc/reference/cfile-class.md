@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFile class"
-  - "CArchive class, using with CFile"
-  - "files [C++], classes for"
+f1_keywords: ["CFile", "AFX/CFile", "AFX/CFile::CFile", "AFX/CFile::Abort", "AFX/CFile::Close", "AFX/CFile::Duplicate", "AFX/CFile::Flush", "AFX/CFile::GetFileName", "AFX/CFile::GetFilePath", "AFX/CFile::GetFileTitle", "AFX/CFile::GetLength", "AFX/CFile::GetPosition", "AFX/CFile::GetStatus", "AFX/CFile::LockRange", "AFX/CFile::Open", "AFX/CFile::Read", "AFX/CFile::Remove", "AFX/CFile::Rename", "AFX/CFile::Seek", "AFX/CFile::SeekToBegin", "AFX/CFile::SeekToEnd", "AFX/CFile::SetFilePath", "AFX/CFile::SetLength", "AFX/CFile::SetStatus", "AFX/CFile::UnlockRange", "AFX/CFile::Write", "AFX/CFile::hFileNull", "AFX/CFile::m_hFile", "AFX/CFile::m_pTM"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFile [MFC], CFile", "CFile [MFC], Abort", "CFile [MFC], Close", "CFile [MFC], Duplicate", "CFile [MFC], Flush", "CFile [MFC], GetFileName", "CFile [MFC], GetFilePath", "CFile [MFC], GetFileTitle", "CFile [MFC], GetLength", "CFile [MFC], GetPosition", "CFile [MFC], GetStatus", "CFile [MFC], LockRange", "CFile [MFC], Open", "CFile [MFC], Read", "CFile [MFC], Remove", "CFile [MFC], Rename", "CFile [MFC], Seek", "CFile [MFC], SeekToBegin", "CFile [MFC], SeekToEnd", "CFile [MFC], SetFilePath", "CFile [MFC], SetLength", "CFile [MFC], SetStatus", "CFile [MFC], UnlockRange", "CFile [MFC], Write", "CFile [MFC], hFileNull", "CFile [MFC], m_hFile", "CFile [MFC], m_pTM"]
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFile Class
 The base class for Microsoft Foundation Class file classes.  
@@ -142,7 +123,7 @@ virtual void Abort();
 ```  
 CFile();  
 CFile(CAtlTransactionManager* pTM);  
-  CFile(HANDLE hFile);
+CFile(HANDLE hFile);
 
  
 CFile(
@@ -185,7 +166,7 @@ CAtlTransactionManager* pTM);
 |Value|Description|  
 |-----------|-----------------|  
 |`CFile::typeBinary`|Sets binary mode (used in derived classes only).|  
-|`CFile::typeText`|Sets text mode with special processing for carriage return–linefeed pairs (used in derived classes only).|  
+|`CFile::typeText`|Sets text mode with special processing for carriage return-linefeed pairs (used in derived classes only).|  
 |`CFile::typeUnicode`|Sets Unicode mode (used in derived classes only). Text is written to the file in Unicode format when the application is built in a Unicode configuration. No BOM is written to the file.|  
   
  Choose only one of the following file share mode options. The default file share mode is `CFile::shareExclusive`, which is exclusive.  
@@ -322,7 +303,7 @@ virtual CString GetFileTitle() const;
  The title of the underlying file.  
   
 ### Remarks  
- This method calls [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) to retrieve the file name (including the file extension) of the underlying file. Therefore, the file extension will not always be included in the returned file title string. For more information, see [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) and [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method calls [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) to retrieve the file name (including the file extension) of the underlying file. Therefore, the file extension will not always be included in the returned file title string. For more information, see [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) and [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) in the Windows SDK.  
   
  To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return just the name of the file, call [GetFileName](#getfilename).  
   
@@ -397,23 +378,17 @@ static BOOL PASCAL GetStatus(
   
  The **m_attribute** member of the **CFileStatus** structure refers to the file attribute set. The `CFile` class provides the **Attribute** enumeration type so file attributes can be specified symbolically:  
   
- `enum Attribute {`  
-  
- `normal =    0x00,`  
-  
- `readOnly =  0x01,`  
-  
- `hidden =    0x02,`  
-  
- `system =    0x04,`  
-  
- `volume =    0x08,`  
-  
- `directory = 0x10,`  
-  
- `archive =   0x20`  
-  
- `};`  
+```  
+enum Attribute {
+    normal =    0x00,
+    readOnly =  0x01,
+    hidden =    0x02,
+    system =    0x04,
+    volume =    0x08,
+    directory = 0x10,
+    archive =   0x20
+    };
+```    
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]  
@@ -553,7 +528,7 @@ virtual UINT Read(
  Pointer to the user-supplied buffer that is to receive the data read from the file.  
   
  `nCount`  
- The maximum number of bytes to be read from the file. For text-mode files, carriage return–linefeed pairs are counted as single characters.  
+ The maximum number of bytes to be read from the file. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Return Value  
  The number of bytes transferred to the buffer. Note that for all `CFile` classes, the return value may be less than `nCount` if the end of file was reached.  
@@ -784,7 +759,7 @@ virtual void Write(
  A pointer to the user-supplied buffer that contains the data to be written to the file.  
   
  `nCount`  
- The number of bytes to be transferred from the buffer. For text-mode files, carriage return–linefeed pairs are counted as single characters.  
+ The number of bytes to be transferred from the buffer. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Remarks  
  **Write** throws an exception in response to several conditions, including the disk-full condition.  

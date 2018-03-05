@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "projects [C++], debugging"
-  - "project debugging [C++]"
-  - "debugging projects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["projects [C++], debugging", "project debugging [C++]", "debugging projects"]
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a Project (C++)
 In this walkthrough, you modify the program to fix the problem that you discovered when you tested the project.  
@@ -75,5 +57,5 @@ In this walkthrough, you modify the program to fix the problem that you discover
  **Previous:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md) &#124; **Next:**[Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
- [DELETE_PENDING_Building and Debugging](http://msdn.microsoft.com/en-us/9f6ba537-5ea0-46fb-b6ba-b63d657d84f1)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)

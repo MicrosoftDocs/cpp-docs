@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.db_command"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "db_command attribute"
+f1_keywords: ["vc-attr.db_command"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["db_command attribute"]
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # db_command
 Creates an OLE DB command.  
@@ -151,7 +133,7 @@ TCHAR m_state[3] = 'CA';
   
  **db_command** can be used to execute commands that do not return a result set.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../data/oledb/crowset-movenext.md).  
@@ -282,4 +264,3 @@ int main() {
 ## See Also  
  [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

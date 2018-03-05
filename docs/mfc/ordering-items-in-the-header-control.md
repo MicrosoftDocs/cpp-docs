@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DS_DRAGDROP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sequence"
-  - "sequence, header control items"
-  - "OrderToIndex method"
-  - "DS_DRAGDROP notification"
-  - "GetOrderArray method"
-  - "SetOrderArray method"
-  - "header controls, ordering items"
+f1_keywords: ["DS_DRAGDROP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sequence [MFC]", "sequence [MFC], header control items", "OrderToIndex method [MFC]", "DS_DRAGDROP notification [MFC]", "GetOrderArray method [MFC]", "SetOrderArray method [MFC]", "header controls [MFC], ordering items"]
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Ordering Items in the Header Control
 Once you've [added items to a header control](../mfc/adding-items-to-the-header-control.md), you can manipulate or get information about their order with the following functions:  

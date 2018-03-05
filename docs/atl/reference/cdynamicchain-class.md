@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CDynamicChain"
-  - "ATL.CDynamicChain"
-  - "CDynamicChain"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message maps, chaining"
-  - "chaining message maps"
-  - "CDynamicChain class"
+f1_keywords: ["CDynamicChain", "ATLWIN/ATL::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CallChain", "ATLWIN/ATL::CDynamicChain::RemoveChainEntry", "ATLWIN/ATL::CDynamicChain::SetChainEntry"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["message maps, chaining", "chaining message maps", "CDynamicChain class"]
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDynamicChain Class
 This class provides methods supporting the dynamic chaining of message maps.  
@@ -72,7 +51,7 @@ class CDynamicChain
   
  To add support for dynamic chaining of message maps, do the following:  
   
--   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro to chain to another object's default message map.  
+-   Derive your class from `CDynamicChain`. In the message map, specify the [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) macro to chain to another object's default message map.  
   
 -   Derive every class you want to chain to from [CMessageMap](../../atl/reference/cmessagemap-class.md). `CMessageMap` allows an object to expose its message maps to other objects.  
   
@@ -129,7 +108,7 @@ BOOL CallChain(
  **TRUE** if the message is fully processed; otherwise, **FALSE**.  
   
 ### Remarks  
- For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](http://msdn.microsoft.com/library/7e5c72b7-cb31-4f3b-8a1b-6293804af220) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
+ For the window procedure to invoke `CallChain`, you must specify the [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) macro in your message map. For an example, see the [CDynamicChain](../../atl/reference/cdynamicchain-class.md) overview.  
   
  `CallChain` requires a previous call to [SetChainEntry](#setchainentry) to associate the `dwChainID` value with an object and its message map.  
   
@@ -182,7 +161,7 @@ BOOL SetChainEntry(
  [in] A pointer to the chained object declaring the message map. This object must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
  `dwMsgMapID`  
- [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), pass `msgMapID`.  
+ [in] The identifier of the message map in the chained object. The default value is 0, which identifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To specify an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message map is successfully added to the collection. Otherwise, **FALSE**.  

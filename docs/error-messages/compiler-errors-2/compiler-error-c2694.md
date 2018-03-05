@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2694"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2694"
+f1_keywords: ["C2694"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2694"]
 ms.assetid: 8dc2cec2-67ae-4e16-8c0c-374425aca8bc
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2694
 'override': overriding virtual function has less restrictive exception specification than base class virtual member function 'base'  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CAtlFileMappingBase"
-  - "ATL::CAtlFileMappingBase"
-  - "CAtlFileMappingBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlFileMappingBase class"
+f1_keywords: ["CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CopyFrom", "ATLFILE/ATL::CAtlFileMappingBase::GetData", "ATLFILE/ATL::CAtlFileMappingBase::GetHandle", "ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize", "ATLFILE/ATL::CAtlFileMappingBase::MapFile", "ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem", "ATLFILE/ATL::CAtlFileMappingBase::OpenMapping", "ATLFILE/ATL::CAtlFileMappingBase::Unmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlFileMappingBase class"]
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlFileMappingBase Class
 This class represents a memory-mapped file.  
@@ -79,7 +60,7 @@ class CAtlFileMappingBase
 ## Remarks  
  File mapping is the association of a file's contents with a portion of the virtual address space of a process. This class provides methods for creating file-mapping objects that permit programs to easily access and share data.  
   
- For more information, see [File Mapping](http://msdn.microsoft.com/library/windows/desktop/aa366556) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [File Mapping](http://msdn.microsoft.com/library/windows/desktop/aa366556) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlfile.h  
@@ -182,16 +163,16 @@ HRESULT MapFile(
  The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.  
   
  `dwMappingProtection`  
- The protection desired for the file view when the file is mapped. See `flProtect` in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The protection desired for the file view when the file is mapped. See `flProtect` in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
   
  `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Remarks  
- After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) and [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) and [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Example  
  See the example for [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
@@ -220,13 +201,13 @@ HRESULT MapSharedMem(
  Points to a BOOL value that is set to TRUE if the mapping object already existed.  
   
  `lpsa`  
- The pointer to a **SECURITY_ATTRIBUTES** structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The pointer to a **SECURITY_ATTRIBUTES** structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) in the Windows SDK.  
   
  `dwMappingProtection`  
- The protection desired for the file view, when the file is mapped. See `flProtect` in **CreateFileMapping** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The protection desired for the file view, when the file is mapped. See `flProtect` in **CreateFileMapping** in the Windows SDK.  
   
  `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -256,7 +237,7 @@ HRESULT OpenMapping(
  The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.  
   
  `dwViewDesiredAccess`  
- Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See `dwDesiredAccess` in [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -289,7 +270,7 @@ HRESULT Unmap() throw();
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
   
 ### Remarks  
- See [UnmapViewOfFile](http://msdn.microsoft.com/library/windows/desktop/aa366882) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more details.  
+ See [UnmapViewOfFile](http://msdn.microsoft.com/library/windows/desktop/aa366882) in the Windows SDK for more details.  
   
 ## See Also  
  [CAtlFileMapping Class](../../atl/reference/catlfilemapping-class.md)   

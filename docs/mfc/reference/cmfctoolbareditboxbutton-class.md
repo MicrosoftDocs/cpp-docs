@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "OnDrawOnCustomizeList"
-  - "OnDraw"
-  - "CMFCToolBarEditBoxButton::OnDrawOnCustomizeList"
-  - "CMFCToolBarEditBoxButton.SetACCData"
-  - "CMFCToolBarEditBoxButton::OnDraw"
-  - "OnCalculateSize"
-  - "SetACCData"
-  - "CMFCToolBarEditBoxButton"
-  - "CMFCToolBarEditBoxButton::SetACCData"
-  - "CMFCToolBarEditBoxButton::Serialize"
-  - "CMFCToolBarEditBoxButton.OnDraw"
-  - "CMFCToolBarEditBoxButton.OnDrawOnCustomizeList"
-  - "CMFCToolBarEditBoxButton::OnCalculateSize"
-  - "Serialize"
-  - "CMFCToolBarEditBoxButton.Serialize"
-  - "CMFCToolBarEditBoxButton.OnCalculateSize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolBarEditBoxButton class"
-  - "SetACCData method"
-  - "OnCalculateSize method"
-  - "OnDraw method"
-  - "OnDrawOnCustomizeList method"
-  - "Serialize method"
+f1_keywords: ["CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CanBeStretched", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CopyFrom", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetByCmd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContentsAll", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetEditBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetHwnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetInvalidateRect", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::HaveHotBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::IsFlatMode", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::NotifyCommand", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnAddToCustomizePage", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnChangeParentWnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnClick", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnCtlColor", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnGlobalFontsChanged", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnMove", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnShow", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnSize", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnUpdateToolTip", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetFlatMode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBarEditBoxButton [MFC], CMFCToolBarEditBoxButton", "CMFCToolBarEditBoxButton [MFC], CanBeStretched", "CMFCToolBarEditBoxButton [MFC], CopyFrom", "CMFCToolBarEditBoxButton [MFC], GetByCmd", "CMFCToolBarEditBoxButton [MFC], GetContentsAll", "CMFCToolBarEditBoxButton [MFC], GetContextMenuID", "CMFCToolBarEditBoxButton [MFC], GetEditBorder", "CMFCToolBarEditBoxButton [MFC], GetHwnd", "CMFCToolBarEditBoxButton [MFC], GetInvalidateRect", "CMFCToolBarEditBoxButton [MFC], HaveHotBorder", "CMFCToolBarEditBoxButton [MFC], IsFlatMode", "CMFCToolBarEditBoxButton [MFC], NotifyCommand", "CMFCToolBarEditBoxButton [MFC], OnAddToCustomizePage", "CMFCToolBarEditBoxButton [MFC], OnChangeParentWnd", "CMFCToolBarEditBoxButton [MFC], OnClick", "CMFCToolBarEditBoxButton [MFC], OnCtlColor", "CMFCToolBarEditBoxButton [MFC], OnGlobalFontsChanged", "CMFCToolBarEditBoxButton [MFC], OnMove", "CMFCToolBarEditBoxButton [MFC], OnShow", "CMFCToolBarEditBoxButton [MFC], OnSize", "CMFCToolBarEditBoxButton [MFC], OnUpdateToolTip", "CMFCToolBarEditBoxButton [MFC], SetContextMenuID", "CMFCToolBarEditBoxButton [MFC], SetFlatMode"]
 ms.assetid: b21d9b67-6bf7-4ca9-bd62-b237756e0ab3
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarEditBoxButton Class
 A toolbar button that contains an edit control ( [CEdit Class](../../mfc/reference/cedit-class.md)).  
@@ -215,7 +178,7 @@ virtual CEdit* CreateEdit(
  A pointer to the newly created edit control; it is `NULL` if the control's creation and attachment fail.  
   
 ### Remarks  
- You construct a `CMFCToolBarEditBoxButton`object in two steps. First call the constructor, and then call `CreateEdit,` which creates the Windows edit control and attaches it to the `CMFCToolBarEditBoxButton` object.  
+ You construct a `CMFCToolBarEditBoxButton` object in two steps. First call the constructor, and then call `CreateEdit`, which creates the Windows edit control and attaches it to the `CMFCToolBarEditBoxButton` object.  
   
 ##  <a name="getbycmd"></a>  CMFCToolBarEditBoxButton::GetByCmd  
  Retrieves the first `CMFCToolBarEditBoxButton` object in the application that has the specified command ID.  

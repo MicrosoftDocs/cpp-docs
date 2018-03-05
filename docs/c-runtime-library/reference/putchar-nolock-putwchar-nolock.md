@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_putchar_nolock"
-  - "_putwchar_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_putchar_nolock", "_putwchar_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "putwchar_nolock"
-  - "_puttchar_nolock"
-  - "_putchar_nolock"
-  - "_putwchar_nolock"
-  - "putchar_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_puttchar_nolock function"
-  - "putchar_nolock function"
-  - "characters, writing"
-  - "standard output, writing to"
-  - "putwchar_nolock function"
-  - "_putchar_nolock function"
-  - "_putwchar_nolock function"
-  - "puttchar_nolock function"
+f1_keywords: ["putwchar_nolock", "_puttchar_nolock", "_putchar_nolock", "_putwchar_nolock", "putchar_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_puttchar_nolock function", "putchar_nolock function", "characters, writing", "standard output, writing to", "putwchar_nolock function", "_putchar_nolock function", "_putwchar_nolock function", "puttchar_nolock function"]
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _putchar_nolock, _putwchar_nolock
 Writes a character to **stdout** without locking the thread.  
@@ -100,7 +59,7 @@ wint_t _putwchar_nolock(
 |`_putchar_nolock`|\<stdio.h>|  
 |`_putwchar_nolock`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Libraries  
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
@@ -134,12 +93,6 @@ int main( void )
 ```  
 This is the line of output  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamWriter::Write](https://msdn.microsoft.com/en-us/library/system.io.streamwriter.write.aspx)  
-  
--   [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

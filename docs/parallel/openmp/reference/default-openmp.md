@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "default"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "default OpenMP clause"
-  - "defaults, OpenMP clause"
+ms.topic: "reference"
+f1_keywords: ["default"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["default OpenMP clause", "defaults, OpenMP clause"]
 ms.assetid: 96055106-a8f0-40b3-8319-e412b6e07bf8
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # default (OpenMP)
 Specifies the behavior of unscoped variables in a parallel region.  

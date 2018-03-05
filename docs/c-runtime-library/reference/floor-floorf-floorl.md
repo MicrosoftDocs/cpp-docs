@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "floorf"
-  - "floorl"
-  - "floor"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["floorf", "floorl", "floor"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "floor"
-  - "floorl"
-  - "_floorl"
-  - "floorf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "floor function"
-  - "floorf function"
-  - "calculating floors of values"
-  - "floorl function"
+f1_keywords: ["floor", "floorl", "_floorl", "floorf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["floor function", "floorf function", "calculating floors of values", "floorl function"]
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # floor, floorf, floorl
 Calculates the floor of a value.  
@@ -138,9 +101,6 @@ The floor of -2.8 is -3.000000
 The ceil of 2.8 is 3.000000  
 The ceil of -2.8 is -2.000000  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Floor](https://msdn.microsoft.com/en-us/library/system.math.floor.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

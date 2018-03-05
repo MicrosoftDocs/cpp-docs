@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.atl.properties"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, classes"
-  - "properties [ATL], classes"
-  - "properties [ATL]"
+ms.topic: "reference"
+f1_keywords: ["vc.atl.properties"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages, classes", "properties [ATL], classes", "properties [ATL]"]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Properties and Property Pages Classes
 The following classes support properties and property pages:  

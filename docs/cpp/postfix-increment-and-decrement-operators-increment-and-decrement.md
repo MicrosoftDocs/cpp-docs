@@ -4,50 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "--"
-  - "++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "increment operators, syntax"
-  - "member-selection operators"
-  - "-- operator, postfix decrement operators"
-  - "postfix operators"
-  - "++ operator, postfix increment operators"
-  - "decrement operators, syntax"
-  - "operators [C++], postfix"
-  - "decrement operators"
+f1_keywords: ["--", "++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["increment operators [C++], syntax", "member-selection operators [C++]", "-- operator [C++], postfix decrement operators", "postfix operators [C++]", "++ operator [C++], postfix increment operators", "decrement operators [C++], syntax", "operators [C++], postfix", "decrement operators [C++]"]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Postfix Increment and Decrement Operators: ++ and --
 ## Syntax  
   
 ```  
 postfix-expression ++  
-postfix-expression ––  
+postfix-expression --  
 ```  
   
 ## Remarks  
@@ -57,7 +32,7 @@ postfix-expression ––
 i++;  
 ```  
   
- The effect of applying the postfix increment operator (`++`) is that the operand's value is increased by one unit of the appropriate type. Similarly, the effect of applying the postfix decrement operator (**––**) is that the operand's value is decreased by one unit of the appropriate type.  
+ The effect of applying the postfix increment operator (`++`) is that the operand's value is increased by one unit of the appropriate type. Similarly, the effect of applying the postfix decrement operator (**--**) is that the operand's value is decreased by one unit of the appropriate type.  
   
  It is important to note that a postfix increment or decrement expression evaluates to the value of the expression **prior to** application of the respective operator. The increment or decrement operation occurs **after** the operand is evaluated. This issue arises only when the postfix increment or decrement operation occurs in the context of a larger expression.  
   
@@ -67,7 +42,7 @@ i++;
   
  The operands to postfix increment and postfix decrement operators must be modifiable (not **const**) l-values of arithmetic or pointer type. The type of the result is the same as that of the *postfix-expression*, but it is no longer an l-value.  
   
- The operand of a postfix increment operator may also be of type `bool`, in which case the operand is evaluated and then set to **true**. The operand of a postfix decrement operator cannot be of type `bool`.  
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of a postfix increment  or decrement operator may not be of type `bool`.
   
  The following code illustrates the postfix increment operator:  
   

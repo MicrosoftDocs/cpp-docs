@@ -4,51 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message handlers"
-  - "handlers, message-map ranges"
-  - "message maps, message handler functions"
-  - "message maps, ranges"
-  - "control-notification messages"
-  - "command IDs, message mapping"
-  - "message-map ranges"
-  - "handlers"
-  - "message handling, message handler functions"
-  - "mappings, message ranges"
-  - "command handling, command update handlers"
-  - "controls [MFC], notifications"
-  - "handler functions, message-map ranges"
-  - "handler functions"
-  - "command update handlers"
-  - "command routing, command update handlers"
-  - "message ranges"
-  - "handler functions, declaring"
-  - "message ranges, mapping"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message handlers [MFC]", "handlers [MFC], message-map ranges", "message maps [MFC], message handler functions", "message maps [MFC], ranges", "control-notification messages [MFC]", "command IDs [MFC], message mapping", "message-map ranges [MFC]", "handlers [MFC]", "message handling [MFC], message handler functions", "mappings [MFC], message ranges", "command handling [MFC], command update handlers", "controls [MFC], notifications", "handler functions [MFC], message-map ranges", "handler functions [MFC]", "command update handlers [MFC]", "command routing [MFC], command update handlers", "message ranges [MFC]", "handler functions [MFC], declaring", "message ranges [MFC], mapping"]
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Handlers for Message-Map Ranges
 This article explains how to map a range of messages to a single message handler function (instead of mapping one message to only one function).  
@@ -82,11 +48,11 @@ This article explains how to map a range of messages to a single message handler
   
 -   The message-map range macro:  
   
-    -   [ON_COMMAND_RANGE](http://msdn.microsoft.com/library/c52719fc-dd6e-48c9-af79-383f48d608e0)  
+    -   [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)  
   
-    -   [ON_UPDATE_COMMAND_UI_RANGE](http://msdn.microsoft.com/library/b7105bf1-44ad-4b00-b947-31478f964729)  
+    -   [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)  
   
-    -   [ON_CONTROL_RANGE](http://msdn.microsoft.com/library/46f0e1bb-569b-4b8b-9b80-89701d1cd7fd)  
+    -   [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)  
   
 -   Parameters to the macro:  
   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::map"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "map member [STL/CLR]"
+f1_keywords: ["cliext::map::map"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["map member [STL/CLR]"]
 ms.assetid: c91f699a-4742-4859-b2b3-c2a01a750bea
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::map (STL/CLR)
 Constructs a container object.  
@@ -84,31 +67,25 @@ map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `map(map<Key, Mapped>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[map::begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)`(),` `right``.`[map::end (STL/CLR)](../dotnet/map-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `map(map<Key, Mapped>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[map::begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)`(),` `right``->`[map::end (STL/CLR)](../dotnet/map-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> map(InIter first, InIter last);`  
   
- `map(InIter first, InIter last);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> map(InIter first, InIter last, key_compare^ pred);`  
   
- `map(InIter first, InIter last,`  
-  
- `key_compare^ pred);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
   
  The constructor:  
   
@@ -118,15 +95,13 @@ map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `map(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred);`  
+ `map(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_map_construct.cpp   
 // compile with: /clr   
 #include <cliext/map>   

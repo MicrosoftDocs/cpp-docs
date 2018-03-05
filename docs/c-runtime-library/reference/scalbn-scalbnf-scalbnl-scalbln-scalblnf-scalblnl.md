@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "scalblnl"
-  - "scalbnl"
-  - "scalbnf"
-  - "scalblnf"
-  - "scalbn"
-  - "scalbln"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "scalblnf"
-  - "scalbnl"
-  - "scalblnl"
-  - "scalbln"
-  - "scalbn"
-  - "scalbnf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scalbn function"
-  - "scalbln function"
-  - "scalblnl function"
-  - "scalbnl function"
-  - "scalbnf function"
-  - "scalblnf function"
+f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["scalbn function", "scalbln function", "scalblnl function", "scalbnl function", "scalbnf function", "scalblnf function"]
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 Multiplies a floating-point number by an integral power of FLT_RADIX.  
@@ -120,7 +76,7 @@ long double scalblnl(
  Integer exponent.  
   
 ## Return Value  
- The `scalbn` functions return the value of `x` * `FLT_RADIX`<sup>exp</sup> when successful. On overflow (depending on the sign of `x`), `scalbn` returns +/– `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
+ The `scalbn` functions return the value of `x` * `FLT_RADIX`<sup>exp</sup> when successful. On overflow (depending on the sign of `x`), `scalbn` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
   
  For more information about `errno` and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -160,9 +116,6 @@ int main( void )
 ```  
 6.4 times FLT_RADIX to the power of 3 is 51.2  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Math::Pow](https://msdn.microsoft.com/en-us/library/system.math.pow.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

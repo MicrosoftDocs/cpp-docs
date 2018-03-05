@@ -26,11 +26,11 @@ bool count_primes(unsigned int max_value, unsigned int timeout)
         {
             // Respond if the overall task is cancelled by canceling 
             // the current task.
-            if (is_task_cancellation_requested())
+            if (cts.get_token().is_canceled())
             {
                 cancel_current_task();
             }
-            // NOTE: You can replace the calls to is_task_cancellation_requested
+            // NOTE: You can replace the calls to is_canceled
             // and cancel_current_task with a call to interruption_point.
             // interruption_point();
 

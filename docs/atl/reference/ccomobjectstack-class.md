@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CComObjectStack"
-  - "ATL.CComObjectStack"
-  - "ATL::CComObjectStack<Base>"
-  - "ATL.CComObjectStack<Base>"
-  - "CComObjectStack"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComObjectStack class"
+f1_keywords: ["CComObjectStack", "ATLCOM/ATL::CComObjectStack", "ATLCOM/ATL::CComObjectStack::CComObjectStack", "ATLCOM/ATL::CComObjectStack::AddRef", "ATLCOM/ATL::CComObjectStack::QueryInterface", "ATLCOM/ATL::CComObjectStack::Release", "ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComObjectStack class"]
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectStack Class
 This class creates a temporary COM object and provides it with a skeletal implementation of **IUnknown**.  

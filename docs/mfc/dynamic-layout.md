@@ -4,34 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dynamic Layout
-With MFC in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can create dialogs that the user can resize, and you can control the way the layout adjusts to the change in size. For example, you can attach buttons at the bottom of a dialog to the bottom edge so they always stay at the bottom. You can also set up certain controls such as listboxes, editboxes, and text fields to expand as the user expands the dialog.  
+With MFC in Visual Studio 2015, you can create dialogs that the user can resize, and you can control the way the layout adjusts to the change in size. For example, you can attach buttons at the bottom of a dialog to the bottom edge so they always stay at the bottom. You can also set up certain controls such as listboxes, editboxes, and text fields to expand as the user expands the dialog.  
   
 ## Specifying dynamic layout settings for an MFC dialog box  
  When the user resizes a dialog, the controls in the dialog can resize or move in the X and Y directions. The change in size or position of a control when the user resizes a dialog is called dynamic layout. For example, the following is a dialog before being resized:  

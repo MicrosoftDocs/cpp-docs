@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleControlSite"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleControlSite class"
+f1_keywords: ["COleControlSite", "AFXOCC/COleControlSite", "AFXOCC/COleControlSite::COleControlSite", "AFXOCC/COleControlSite::BindDefaultProperty", "AFXOCC/COleControlSite::BindProperty", "AFXOCC/COleControlSite::CreateControl", "AFXOCC/COleControlSite::DestroyControl", "AFXOCC/COleControlSite::DoVerb", "AFXOCC/COleControlSite::EnableDSC", "AFXOCC/COleControlSite::EnableWindow", "AFXOCC/COleControlSite::FreezeEvents", "AFXOCC/COleControlSite::GetDefBtnCode", "AFXOCC/COleControlSite::GetDlgCtrlID", "AFXOCC/COleControlSite::GetEventIID", "AFXOCC/COleControlSite::GetExStyle", "AFXOCC/COleControlSite::GetProperty", "AFXOCC/COleControlSite::GetStyle", "AFXOCC/COleControlSite::GetWindowText", "AFXOCC/COleControlSite::InvokeHelper", "AFXOCC/COleControlSite::InvokeHelperV", "AFXOCC/COleControlSite::IsDefaultButton", "AFXOCC/COleControlSite::IsWindowEnabled", "AFXOCC/COleControlSite::ModifyStyle", "AFXOCC/COleControlSite::ModifyStyleEx", "AFXOCC/COleControlSite::MoveWindow", "AFXOCC/COleControlSite::QuickActivate", "AFXOCC/COleControlSite::SafeSetProperty", "AFXOCC/COleControlSite::SetDefaultButton", "AFXOCC/COleControlSite::SetDlgCtrlID", "AFXOCC/COleControlSite::SetFocus", "AFXOCC/COleControlSite::SetProperty", "AFXOCC/COleControlSite::SetPropertyV", "AFXOCC/COleControlSite::SetWindowPos", "AFXOCC/COleControlSite::SetWindowText", "AFXOCC/COleControlSite::ShowWindow", "AFXOCC/COleControlSite::GetControlInfo", "AFXOCC/COleControlSite::m_bIsWindowless", "AFXOCC/COleControlSite::m_ctlInfo", "AFXOCC/COleControlSite::m_dwEventSink", "AFXOCC/COleControlSite::m_dwMiscStatus", "AFXOCC/COleControlSite::m_dwPropNotifySink", "AFXOCC/COleControlSite::m_dwStyle", "AFXOCC/COleControlSite::m_hWnd", "AFXOCC/COleControlSite::m_iidEvents", "AFXOCC/COleControlSite::m_nID", "AFXOCC/COleControlSite::m_pActiveObject", "AFXOCC/COleControlSite::m_pCtrlCont", "AFXOCC/COleControlSite::m_pInPlaceObject", "AFXOCC/COleControlSite::m_pObject", "AFXOCC/COleControlSite::m_pWindowlessObject", "AFXOCC/COleControlSite::m_pWndCtrl", "AFXOCC/COleControlSite::m_rect"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleControlSite [MFC], COleControlSite", "COleControlSite [MFC], BindDefaultProperty", "COleControlSite [MFC], BindProperty", "COleControlSite [MFC], CreateControl", "COleControlSite [MFC], DestroyControl", "COleControlSite [MFC], DoVerb", "COleControlSite [MFC], EnableDSC", "COleControlSite [MFC], EnableWindow", "COleControlSite [MFC], FreezeEvents", "COleControlSite [MFC], GetDefBtnCode", "COleControlSite [MFC], GetDlgCtrlID", "COleControlSite [MFC], GetEventIID", "COleControlSite [MFC], GetExStyle", "COleControlSite [MFC], GetProperty", "COleControlSite [MFC], GetStyle", "COleControlSite [MFC], GetWindowText", "COleControlSite [MFC], InvokeHelper", "COleControlSite [MFC], InvokeHelperV", "COleControlSite [MFC], IsDefaultButton", "COleControlSite [MFC], IsWindowEnabled", "COleControlSite [MFC], ModifyStyle", "COleControlSite [MFC], ModifyStyleEx", "COleControlSite [MFC], MoveWindow", "COleControlSite [MFC], QuickActivate", "COleControlSite [MFC], SafeSetProperty", "COleControlSite [MFC], SetDefaultButton", "COleControlSite [MFC], SetDlgCtrlID", "COleControlSite [MFC], SetFocus", "COleControlSite [MFC], SetProperty", "COleControlSite [MFC], SetPropertyV", "COleControlSite [MFC], SetWindowPos", "COleControlSite [MFC], SetWindowText", "COleControlSite [MFC], ShowWindow", "COleControlSite [MFC], GetControlInfo", "COleControlSite [MFC], m_bIsWindowless", "COleControlSite [MFC], m_ctlInfo", "COleControlSite [MFC], m_dwEventSink", "COleControlSite [MFC], m_dwMiscStatus", "COleControlSite [MFC], m_dwPropNotifySink", "COleControlSite [MFC], m_dwStyle", "COleControlSite [MFC], m_hWnd", "COleControlSite [MFC], m_iidEvents", "COleControlSite [MFC], m_nID", "COleControlSite [MFC], m_pActiveObject", "COleControlSite [MFC], m_pCtrlCont", "COleControlSite [MFC], m_pInPlaceObject", "COleControlSite [MFC], m_pObject", "COleControlSite [MFC], m_pWindowlessObject", "COleControlSite [MFC], m_pWndCtrl", "COleControlSite [MFC], m_rect"]
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleControlSite Class
 Provides support for custom client-side control interfaces.  
@@ -317,7 +300,7 @@ virtual HRESULT DoVerb(
 ### Remarks  
  This function directly calls through the control's `IOleObject` interface to execute the specified verb. If an exception is thrown as a result of this function call, an `HRESULT` error code is returned.  
   
- For more information, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
 ##  <a name="enabledsc"></a>  COleControlSite::EnableDSC  
  Enables data sourcing for the control site.  
@@ -457,7 +440,7 @@ virtual DWORD GetStyle() const;
  The window's styles.  
   
 ### Remarks  
- For a list of possible values, see [Windows Styles](../../mfc/reference/window-styles.md). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#getexstyle).  
+ For a list of possible values, see [Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#getexstyle).  
   
 ##  <a name="getwindowtext"></a>  COleControlSite::GetWindowText  
  Retrieves the current text of the control.  
@@ -490,7 +473,7 @@ virtual void AFX_CDECL InvokeHelper(
  Identifies the dispatch ID of the property or method, found on the control's `IDispatch` interface, to be invoked.  
   
  `wFlags`  
- Flags describing the context of the call to IDispatch::Invoke. For possible `wFlags` values, see `IDispatch::Invoke` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Flags describing the context of the call to IDispatch::Invoke. For possible `wFlags` values, see `IDispatch::Invoke` in the Windows SDK.  
   
  `vtRet`  
  Specifies the type of the return value. For possible values, see the Remarks section for [COleDispatchDriver::InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).  
@@ -604,7 +587,7 @@ DWORD m_dwMiscStatus;
 ```  
   
 ### Remarks  
- For more information, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497)in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497)in the Windows SDK.  
   
 ##  <a name="m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink  
  Contains the [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) cookie.  
@@ -708,7 +691,7 @@ virtual BOOL ModifyStyle(
  The styles to be added from the current window styles.  
   
  `nFlags`  
- Window positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Window positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the styles are changed, otherwise zero.  
@@ -716,7 +699,7 @@ virtual BOOL ModifyStyle(
 ### Remarks  
  The control's stock Enabled property will be modified to match the setting for **WS_DISABLED**. The control's stock Border Style property will be modified to match the requested setting for `WS_BORDER`. All other styles are applied directly to the control's window handle, if one is present.  
   
- Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about the available window styles.  
+ Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) function in the Windows SDK for information about the available window styles.  
   
  If `nFlags` is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining `nFlags` with the following four flags:  
   
@@ -748,7 +731,7 @@ virtual BOOL ModifyStyleEx(
  The extended styles to be added from the current window styles.  
   
  `nFlags`  
- Window positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Window positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the styles are changed, otherwise zero.  
@@ -756,7 +739,7 @@ virtual BOOL ModifyStyleEx(
 ### Remarks  
  The control's stock Appearance property will be modified to match the setting for **WS_EX_CLIENTEDGE**. All other extended window styles are applied directly to the control's window handle, if one is present.  
   
- Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about the available window styles.  
+ Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) function in the Windows SDK for information about the available window styles.  
   
  If `nFlags` is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining `nFlags` with the following four flags:  
   
@@ -873,7 +856,8 @@ virtual int SetDlgCtrlID(int nID);
   
 ```  
 virtual CWnd* SetFocus();  
-virtual CWnd* SetFocus(LPMSG lpmsg);```  
+virtual CWnd* SetFocus(LPMSG lpmsg);
+```  
   
 ### Parameters  
  *lpmsg*  
@@ -961,7 +945,7 @@ virtual BOOL SetWindowPos(
  The new height of the window.  
   
  `nFlags`  
- Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful, otherwise zero.  

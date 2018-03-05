@@ -1,20 +1,20 @@
 ---
-title: "Interfaces (C++-CX) | Microsoft Docs"
+title: "Interfaces (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
 caps.latest.revision: 20
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
-# Interfaces (C++-CX)
+# Interfaces (C++/CX)
 Although a ref class can inherit from at most one concrete base class, it can implement any number of interface classes. An interface class (or interface struct) itself can inherit (or require) multiple interface classes, can overload its member functions, and can have type parameters.  
   
 ## Characteristics  
@@ -28,7 +28,7 @@ Although a ref class can inherit from at most one concrete base class, it can im
   
 -   Fields and static members are not permitted.  
   
--   Types that are used as properties, method parameters, or return values can only be [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types; this includes the fundamental types and enum class types.  
+-   Types that are used as properties, method parameters, or return values can only be Windows Runtime types; this includes the fundamental types and enum class types.  
   
 ## Declaration and usage  
  The following example shows how to declare an interface. Notice that an interface can be declared as either a class or struct type.  
@@ -61,9 +61,9 @@ Although a ref class can inherit from at most one concrete base class, it can im
  [!code-cpp[cx_interfaces#06](../cppcx/codesnippet/CPP/interfacestest/class1.h#06)]  
   
 ## Generic interfaces  
- In [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)], the `generic` keyword is used to represent a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines some generic interfaces—for example,  [Windows::Foundation::Collections::IVector\<T>](Windows::Foundation::Collections::IVector)—but it doesn't support the creation of public user-defined generic interfaces in [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]. However, you can create private generic interfaces.  
+ In C++/CX, the `generic` keyword is used to represent a Windows Runtime parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The Windows Runtime defines some generic interfaces—for example,  [Windows::Foundation::Collections::IVector\<T>](Windows::Foundation::Collections::IVector)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.  
   
- Here's how [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types can be used to author a generic interface:  
+ Here's how Windows Runtime types can be used to author a generic interface:  
   
 -   A generic user-defined `interface class` in a component is not allowed to be emitted into its Windows metadata file; therefore, it can't have public accessibility, and client code in other .winmd files can't implement it. It can be implemented by non-public ref classes in the same component. A public ref class can have a generic interface type as a private member.  
   
@@ -75,7 +75,7 @@ Although a ref class can inherit from at most one concrete base class, it can im
   
 -   A generic interface can take one or more generic type parameters that are preceded by `typename` or `class`. Non-type parameters are not supported.  
   
--   A type parameter can be any [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type. That is, the type parameter can be a reference type, a value type, an interface class, a delegate, a fundamental type, or a public enum class.  
+-   A type parameter can be any Windows Runtime type. That is, the type parameter can be a reference type, a value type, an interface class, a delegate, a fundamental type, or a public enum class.  
   
 -   A *closed generic interface* is an interface that inherits from a generic interface and specifies concrete type arguments for all type parameters. It can be used anywhere that a non-generic private interface can be used.  
   

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.readonly"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "readonly attribute"
+f1_keywords: ["vc-attr.readonly"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["readonly attribute"]
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # readonly (C++)
 Prohibits assignment to a data member.  
@@ -83,5 +65,4 @@ __interface IFireTabCtrl
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Data Member Attributes](../windows/data-member-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Data Member Attributes](../windows/data-member-attributes.md)   

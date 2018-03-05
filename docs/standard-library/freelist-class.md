@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext::freelist"
-  - "freelist"
-  - "stdext.freelist"
-  - "allocators/stdext::freelist"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "freelist class"
+ms.topic: "reference"
+f1_keywords: ["allocators/stdext::freelist", "allocators/stdext::freelist::pop", "allocators/stdext::freelist::push"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::freelist", "stdext::freelist [C++], pop", "stdext::freelist [C++], push"]
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # freelist Class
 Manages a list of memory blocks.  
@@ -62,21 +42,21 @@ class freelist
   
 |||  
 |-|-|  
-|[freelist](#freelist__freelist)|Constructs an object of type `freelist`.|  
+|[freelist](#freelist)|Constructs an object of type `freelist`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[pop](#freelist__pop)|Removes the first memory block from the free list.|  
-|[push](#freelist__push)|Adds a memory block to the list.|  
+|[pop](#pop)|Removes the first memory block from the free list.|  
+|[push](#push)|Adds a memory block to the list.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="freelist__freelist"></a>  freelist::freelist  
+##  <a name="freelist"></a>  freelist::freelist  
  Constructs an object of type `freelist`.  
   
 ```
@@ -85,7 +65,7 @@ freelist();
   
 ### Remarks  
   
-##  <a name="freelist__pop"></a>  freelist::pop  
+##  <a name="pop"></a>  freelist::pop  
  Removes the first memory block from the free list.  
   
 ```
@@ -98,7 +78,7 @@ void *pop();
 ### Remarks  
  The member function returns `NULL` if the list is empty. Otherwise, it removes the first memory block from the list.  
   
-##  <a name="freelist__push"></a>  freelist::push  
+##  <a name="push"></a>  freelist::push  
  Adds a memory block to the list.  
   
 ```

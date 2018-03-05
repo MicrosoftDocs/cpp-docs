@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleMessageFilter"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleMessageFilter class"
-  - "OLE [C++], managing concurrency"
-  - "message filters [C++]"
-  - "OLE applications [C++], managing interactions"
-  - "OLE messages"
-  - "applications [OLE], managing interactions"
-  - "messages [C++], OLE"
+f1_keywords: ["COleMessageFilter", "AFXOLE/COleMessageFilter", "AFXOLE/COleMessageFilter::COleMessageFilter", "AFXOLE/COleMessageFilter::BeginBusyState", "AFXOLE/COleMessageFilter::EnableBusyDialog", "AFXOLE/COleMessageFilter::EnableNotRespondingDialog", "AFXOLE/COleMessageFilter::EndBusyState", "AFXOLE/COleMessageFilter::OnMessagePending", "AFXOLE/COleMessageFilter::Register", "AFXOLE/COleMessageFilter::Revoke", "AFXOLE/COleMessageFilter::SetBusyReply", "AFXOLE/COleMessageFilter::SetMessagePendingDelay", "AFXOLE/COleMessageFilter::SetRetryReply"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleMessageFilter [MFC], COleMessageFilter", "COleMessageFilter [MFC], BeginBusyState", "COleMessageFilter [MFC], EnableBusyDialog", "COleMessageFilter [MFC], EnableNotRespondingDialog", "COleMessageFilter [MFC], EndBusyState", "COleMessageFilter [MFC], OnMessagePending", "COleMessageFilter [MFC], Register", "COleMessageFilter [MFC], Revoke", "COleMessageFilter [MFC], SetBusyReply", "COleMessageFilter [MFC], SetMessagePendingDelay", "COleMessageFilter [MFC], SetRetryReply"]
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleMessageFilter Class
 Manages the concurrency required by the interaction of OLE applications.  
@@ -250,7 +227,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
   
  The caller's response is controlled by the functions `SetRetryReply` and [SetMessagePendingDelay](#setmessagependingdelay). `SetRetryReply` determines how long the calling application should wait between retries for a given call. `SetMessagePendingDelay` determines how long the calling application waits for a response from the server before taking further action.  
   
- Usually the defaults are acceptable and do not need to be changed. The framework retries the call every `nRetryReply` milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for `nRetryReply` specifies an immediate retry, and – 1 specifies cancellation of the call.  
+ Usually the defaults are acceptable and do not need to be changed. The framework retries the call every `nRetryReply` milliseconds until the call goes through or the message-pending delay has expired. A value of 0 for `nRetryReply` specifies an immediate retry, and - 1 specifies cancellation of the call.  
   
  When the message-pending delay has expired, the OLE "busy dialog box" (see [COleBusyDialog](../../mfc/reference/colebusydialog-class.md)) is displayed so that the user can choose to cancel or retry the call. Call [EnableBusyDialog](#enablebusydialog) to enable or disable this dialog box.  
   

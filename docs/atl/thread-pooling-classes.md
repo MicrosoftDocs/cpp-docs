@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.atl.threads.pooling"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "thread pooling, classes"
-  - "threading [ATL], pooling"
-  - "pooling worker threads"
+ms.topic: "reference"
+f1_keywords: ["vc.atl.threads.pooling"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["thread pooling, classes", "threading [ATL], pooling", "pooling worker threads"]
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Thread Pooling Classes
 The following classes support thread pooling:  

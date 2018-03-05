@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "custom attributes, targets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["custom attributes, targets"]
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Targets (C++ Component Extensions)
 Attribute usage specifiers let you specify attribute targets.  Each attribute is defined to apply to certain language elements. For example, an attribute might be defined to apply only to classes and structs.  The following list shows the possible syntactic elements on which a custom attribute can be used. Combinations of these values (using logical or) may be used.  

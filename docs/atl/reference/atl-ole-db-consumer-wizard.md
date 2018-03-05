@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.consumer.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, adding ATL OLE DB consumers"
-  - "connection strings [C++], OLE DB consumers"
-  - "ATL OLE DB Consumer Wizard"
+f1_keywords: ["vc.codewiz.class.atl.consumer.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers", "connection strings [C++], OLE DB consumers", "ATL OLE DB Consumer Wizard"]
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL OLE DB Consumer Wizard
 This wizard sets up an OLE DB consumer class with the data bindings necessary to access the specified data source through the specified OLE DB provider.  
@@ -44,7 +25,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 ## UIElement List  
  **Data Source**  
- The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] documentation.  
+ The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the Windows SDK documentation.  
   
 > [!NOTE]
 >  In previous releases, Shift-clicking the **Data Source** button opened a File Open dialog to allow you to select a Data Link (.udl) file. This functionality is no longer supported.  

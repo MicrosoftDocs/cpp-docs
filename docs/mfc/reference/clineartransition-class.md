@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CLinearTransition"
-  - "afxanimationcontroller/CLinearTransition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLinearTransition class"
+f1_keywords: ["CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::Create", "AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransition::m_duration"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLinearTransition [MFC], CLinearTransition", "CLinearTransition [MFC], Create", "CLinearTransition [MFC], m_dblFinalValue", "CLinearTransition [MFC], m_duration"]
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CLinearTransition Class
 Encapsulates a linear transition.  

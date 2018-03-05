@@ -4,46 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UAC [C++]"
-  - "security [C++], User Account Control"
-  - "user accounts [C++]"
-  - "User Account Control [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How User Account Control (UAC) Affects Your Application
 User Account Control (UAC) is a feature of Windows Vista in which user accounts have limited privileges. You can find detailed information about UAC at these sites:  
   
--   [Windows Vista User Account Control Step by Step Guide](http://go.microsoft.com/fwlink/?linkid=53781)  
+-   [Windows Vista User Account Control Step by Step Guide](http://go.microsoft.com/fwlink/p/?linkid=53781)  
   
--   [Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](http://go.microsoft.com/fwlink/?linkid=82444)  
+-   [Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](http://go.microsoft.com/fwlink/p/?linkid=82444)  
   
--   [Understanding and Configuring User Account Control in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=82445)  
+-   [Understanding and Configuring User Account Control in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=82445)  
   
 ## Building Projects after Enabling UAC  
  If you build a Visual C++ project on Windows Vista with UAC disabled, and you later enable UAC, you must clean and rebuild the project for it to work correctly.  

@@ -4,47 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IPersistStreamInitImpl"
-  - "ATL::IPersistStreamInitImpl<T>"
-  - "ATL.IPersistStreamInitImpl<T>"
-  - "IPersistStreamInitImpl"
-  - "ATL.IPersistStreamInitImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPersistStreamInit ATL implementation"
-  - "IPersistStreamInitImpl class"
-  - "streams, ATL"
+f1_keywords: ["IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl::GetClassID", "ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax", "ATLCOM/ATL::IPersistStreamInitImpl::InitNew", "ATLCOM/ATL::IPersistStreamInitImpl::IsDirty", "ATLCOM/ATL::IPersistStreamInitImpl::Load", "ATLCOM/ATL::IPersistStreamInitImpl::Save"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPersistStreamInit ATL implementation", "IPersistStreamInitImpl class", "streams, ATL"]
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IPersistStreamInitImpl Class
 This class implements **IUnknown** and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -92,7 +69,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
   
 ##  <a name="getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax  
  Retrieves the size of the stream needed to save the object's data.  
@@ -105,7 +82,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPersistStreamInit::GetSizeMax](http://msdn.microsoft.com/library/windows/desktop/ms687287) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStreamInit::GetSizeMax](http://msdn.microsoft.com/library/windows/desktop/ms687287) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistStreamInitImpl::InitNew  
  Initializes a newly created object.  
@@ -115,7 +92,7 @@ STDMETHOD(InitNew)();
 ```  
   
 ### Remarks  
- See [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) in the Windows SDK.  
   
 ##  <a name="isdirty"></a>  IPersistStreamInitImpl::IsDirty  
  Checks whether the object's data has changed since it was last saved.  
@@ -125,7 +102,7 @@ STDMETHOD(IsDirty)();
 ```  
   
 ### Remarks  
- See [IPersistStreamInit::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms680092) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStreamInit::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms680092) in the Windows SDK.  
   
 ##  <a name="load"></a>  IPersistStreamInitImpl::Load  
  Loads the object's properties from the specified stream.  
@@ -137,7 +114,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
 ### Remarks  
  ATL uses the object's property map to retrieve this information.  
   
- See [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) in the Windows SDK.  
   
 ##  <a name="save"></a>  IPersistStreamInitImpl::Save  
  Saves the object's properties to the specified stream.  
@@ -149,7 +126,7 @@ STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ### Remarks  
  ATL uses the object's property map to store this information.  
   
- See [IPersistStreamInit::Save](http://msdn.microsoft.com/library/windows/desktop/ms694439) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistStreamInit::Save](http://msdn.microsoft.com/library/windows/desktop/ms694439) in the Windows SDK.  
   
 ## See Also  
  [Storages and Streams](http://msdn.microsoft.com/library/windows/desktop/aa380352)   

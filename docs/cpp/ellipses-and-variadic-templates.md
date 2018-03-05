@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Ellipses and Variadic Templates
 This article shows how to use the ellipsis (`...`) with C++ variadic templates. The ellipsis has had many uses in C and C++. These include variable argument lists for functions. The `printf()` function from the C Runtime Library is one of the most well-known examples.  
@@ -114,7 +98,7 @@ template <typename First, typename... Rest> returntype functionname(const First&
 template<typename... Arguments>  
 void tfunc(const Arguments&... args)  
 {  
-    const unsigned numargs = sizeof...(Arguments);  
+    constexpr auto numargs{ sizeof...(Arguments) };  
   
     X xobj[numargs]; // array of some previously defined type X  
   

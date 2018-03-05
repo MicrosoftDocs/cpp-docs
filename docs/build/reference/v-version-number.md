@@ -4,42 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/v"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "embedding version strings"
-  - "/V compiler option [C++]"
-  - "version numbers, specifying for .obj"
-  - "V compiler option [C++]"
-  - "-V compiler option [C++]"
+f1_keywords: ["/v"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["embedding version strings", "/V compiler option [C++]", "version numbers, specifying for .obj", "V compiler option [C++]", "-V compiler option [C++]"]
 ms.assetid: 3e93fb7a-5dfd-49a6-bd49-3dca8052e0f3
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /V (Version Number)
-Embeds a text stringin the .obj file. Deprecated.  
+Deprecated. Embeds a text string in the .obj file.  
   
 ## Syntax  
   
@@ -56,7 +35,7 @@ Embeds a text stringin the .obj file. Deprecated.
   
  You can also use [comment (C/C++)](../../preprocessor/comment-c-cpp.md) with the compiler comment-type argument to place the name and version number of the compiler in the .obj file.  
   
- **/V** is deprecated; **/V** was primarily used to support building virtual device drivers (VxDs), and building VxDs is no longer supported by the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] toolset. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/V** option is deprecated beginning in Visual Studio 2005; **/V** was primarily used to support building virtual device drivers (VxDs), and building VxDs is no longer supported by the Visual C++ toolset. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

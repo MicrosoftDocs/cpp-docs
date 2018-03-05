@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRgn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HRGN"
-  - "CRgn class"
-  - "regions, MFC"
+f1_keywords: ["CRgn", "AFXWIN/CRgn", "AFXWIN/CRgn::CRgn", "AFXWIN/CRgn::CombineRgn", "AFXWIN/CRgn::CopyRgn", "AFXWIN/CRgn::CreateEllipticRgn", "AFXWIN/CRgn::CreateEllipticRgnIndirect", "AFXWIN/CRgn::CreateFromData", "AFXWIN/CRgn::CreateFromPath", "AFXWIN/CRgn::CreatePolygonRgn", "AFXWIN/CRgn::CreatePolyPolygonRgn", "AFXWIN/CRgn::CreateRectRgn", "AFXWIN/CRgn::CreateRectRgnIndirect", "AFXWIN/CRgn::CreateRoundRectRgn", "AFXWIN/CRgn::EqualRgn", "AFXWIN/CRgn::FromHandle", "AFXWIN/CRgn::GetRegionData", "AFXWIN/CRgn::GetRgnBox", "AFXWIN/CRgn::OffsetRgn", "AFXWIN/CRgn::PtInRegion", "AFXWIN/CRgn::RectInRegion", "AFXWIN/CRgn::SetRectRgn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRgn [MFC], CRgn", "CRgn [MFC], CombineRgn", "CRgn [MFC], CopyRgn", "CRgn [MFC], CreateEllipticRgn", "CRgn [MFC], CreateEllipticRgnIndirect", "CRgn [MFC], CreateFromData", "CRgn [MFC], CreateFromPath", "CRgn [MFC], CreatePolygonRgn", "CRgn [MFC], CreatePolyPolygonRgn", "CRgn [MFC], CreateRectRgn", "CRgn [MFC], CreateRectRgnIndirect", "CRgn [MFC], CreateRoundRectRgn", "CRgn [MFC], EqualRgn", "CRgn [MFC], FromHandle", "CRgn [MFC], GetRegionData", "CRgn [MFC], GetRgnBox", "CRgn [MFC], OffsetRgn", "CRgn [MFC], PtInRegion", "CRgn [MFC], RectInRegion", "CRgn [MFC], SetRectRgn"]
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRgn Class
 Encapsulates a Windows graphics device interface (GDI) region.  
@@ -633,7 +614,7 @@ int OffsetRgn(POINT point);
 ### Remarks  
  The function moves the region *x* units along the x-axis and *y* units along the y-axis.  
   
- The coordinate values of a region must be less than or equal to 32,767 and greater than or equal to –32,768. The *x* and *y* parameters must be carefully chosen to prevent invalid region coordinates.  
+ The coordinate values of a region must be less than or equal to 32,767 and greater than or equal to -32,768. The *x* and *y* parameters must be carefully chosen to prevent invalid region coordinates.  
   
 ### Example  
   See the example for [CRgn::CreateEllipticRgn](#createellipticrgn).  
@@ -651,7 +632,7 @@ operator HRGN() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an **HRGN** object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ##  <a name="ptinregion"></a>  CRgn::PtInRegion  
  Checks whether the point given by *x* and *y* is in the region stored in the `CRgn` object.  

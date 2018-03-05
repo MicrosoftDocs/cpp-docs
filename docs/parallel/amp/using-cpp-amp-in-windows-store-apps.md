@@ -1,40 +1,25 @@
 ---
-title: "Using C++ AMP in Windows Store Apps | Microsoft Docs"
+title: "Using C++ AMP in UWP Apps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
-# Using C++ AMP in Windows Store Apps
-You can use C++ AMP (C++ Accelerated Massive Parallelism) in your [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app to perform calculations on the GPU (Graphics Processing Unit) or other computational accelerators. However, C++ AMP doesn't provide APIs for working directly with Windows Runtime types, and the Windows Runtime doesn't provide a wrapper for C++ AMP. When you use Windows Runtime types in your code—including those that you've created yourself—you must convert them to types that are compatible with C++ AMP.  
+# Using C++ AMP in UWP Apps
+You can use C++ AMP (C++ Accelerated Massive Parallelism) in your Universal Windows Platform (UWP) app to perform calculations on the GPU (Graphics Processing Unit) or other computational accelerators. However, C++ AMP doesn't provide APIs for working directly with Windows Runtime types, and the Windows Runtime doesn't provide a wrapper for C++ AMP. When you use Windows Runtime types in your code—including those that you've created yourself—you must convert them to types that are compatible with C++ AMP.  
   
 ## Performance considerations  
- If you're using [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) to create your [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, we recommend that you use plain-old-data (POD) types together with contiguous storage—for example, `std::vector` or C-style arrays—for data that will be used with C++ AMP. This can help you achieve higher performance than by using non-POD types or Windows RT containers because no marshaling has to occur.  
+ If you're using [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) to create your Universal Windows Platform (UWP) app, we recommend that you use plain-old-data (POD) types together with contiguous storage—for example, `std::vector` or C-style arrays—for data that will be used with C++ AMP. This can help you achieve higher performance than by using non-POD types or Windows RT containers because no marshaling has to occur.  
   
  In a C++ AMP kernel, to access data that’s stored in this way, just wrap the `std::vector` or array storage in a `concurrency::array_view` and then use the array view in a `concurrency::parallel_for_each` loop:  
   
@@ -130,8 +115,6 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## See Also  
- [Create your first Windows Store app using C++](http://go.microsoft.com/fwlink/p/linkid=249073)   
- [Creating Windows Runtime Components in C++](http://go.microsoft.com/fwlink/p/linkid=249076)
-
-
+ [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
+ [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
 

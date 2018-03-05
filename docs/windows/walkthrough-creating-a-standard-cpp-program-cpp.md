@@ -4,44 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-f1_keywords: 
-  - "vcfirstapp"
-  - "vccreatefirst"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "command-line applications [C++], standard"
-  - "standard applications [C++]"
+f1_keywords: ["vcfirstapp", "vccreatefirst"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Standard C++ Program (C++)
 You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
  You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.  
   
- [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
+ Visual C++ complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, Visual C++ supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
   
 > [!NOTE]
 >  If compliance with the standard is required, use the **/Za** compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  

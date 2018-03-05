@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "gcnew"
-  - "ref new"
-  - "gcnew_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ref new keyword (C++)"
-  - "gcnew keyword [C++]"
+f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ref new, gcnew  (C++ Component Extensions)
 The `ref new` aggregate keyword allocates an instance of a type that is garbage collected when the object becomes inaccessible, and that returns a handle ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) to the allocated object.  
@@ -47,13 +27,13 @@ The `ref new` aggregate keyword allocates an instance of a type that is garbage 
   
  For more information about how memory for native C++ types is allocated and deallocated, see [the new and delete operators](../cpp/new-and-delete-operators.md).  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  Use `ref new` to allocate memory for Windows Runtime objects whose lifetime you want to administer automatically. The object is automatically deallocated when its reference count goes to zero, which occurs after the last copy of the reference has gone out of scope. For more information, see [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  Memory for a managed type (reference or value type) is allocated by `gcnew`, and deallocated by using garbage collection.  
   
 ### Requirements  

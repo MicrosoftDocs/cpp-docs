@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.technotes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, technical notes"
-  - "technical notes, MFC"
-  - "technical notes"
+f1_keywords: ["vc.mfc.technotes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC Technical Notes
 A technical note is a document written for programmers by programmers.  
@@ -48,6 +29,6 @@ A technical note is a document written for programmers by programmers.
 -   [Technical Notes By Category](../mfc/technical-notes-by-category.md)  
   
 ## See Also  
- [Visual C++ Libraries Reference](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)   
+
  [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
 

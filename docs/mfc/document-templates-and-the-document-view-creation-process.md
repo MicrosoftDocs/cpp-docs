@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "icons, for multiple document templates"
-  - "document templates, and views"
-  - "document/view architecture, creating document/view"
-  - "single document template"
-  - "MFC, document templates"
-  - "multiple document template"
-  - "CDocTemplate class"
-  - "templates, document templates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["icons, for multiple document templates", "document templates [MFC], and views", "document/view architecture [MFC], creating document/view", "single document template", "MFC, document templates", "multiple document template", "CDocTemplate class [MFC]", "templates [MFC], document templates"]
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Document Templates and the Document/View Creation Process
 To manage the complex process of creating documents with their associated views and frame windows, the framework uses two document template classes: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) for SDI applications and [CMultiDocTemplate](../mfc/reference/cmultidoctemplate-class.md) for MDI applications. A `CSingleDocTemplate` can create and store one document of one type at a time. A `CMultiDocTemplate` keeps a list of many open documents of one type.  

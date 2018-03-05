@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lambda expressions [C++], examples"
+dev_langs: ["C++"]
+helpviewer_keywords: ["lambda expressions [C++], examples"]
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Examples of Lambda Expressions
 This article shows how to use lambda expressions in your programs. For an overview of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md). For more information about the structure of a lambda expression, see [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md).  
@@ -188,7 +172,7 @@ The first even number in the list is 42.
 ```  
   
 ### Remarks  
- For more information about the `find_if` function, see [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a). For more information about the C++ Standard Library functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
+ For more information about the `find_if` function, see [find_if](../standard-library/algorithm-functions.md#find_if). For more information about the C++ Standard Library functions that perform common algorithms, see [\<algorithm>](../standard-library/algorithm.md).  
   
  [[In This Article](#top)]  
   
@@ -282,15 +266,26 @@ int main()
   
 ### Example  
  You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the `this` pointer to provide access to functions and data members of the enclosing class.  
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Capture `this` by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
   
  You can use the `this` pointer explicitly in a function, as shown here:  
   
 ```cpp  
+
+// capture "this" by reference
 void ApplyScale(const vector<int>& v) const  
 {  
    for_each(v.begin(), v.end(),   
       [this](int n) { cout << n * _scale << endl; });  
 }  
+
+// capture "this" by value (Visual Studio 2017 version 15.3 and later)
+void ApplyScale2(const vector<int>& v) const  
+{  
+   for_each(v.begin(), v.end(),   
+      [*this](int n) { cout << n * _scale << endl; });  
+}  
+
 ```  
   
  You can also capture the `this` pointer implicitly:  
@@ -524,7 +519,7 @@ Hello!
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
  [auto](../cpp/auto-cpp.md)   
  [function Class](../standard-library/function-class.md)   
- [find_if](http://msdn.microsoft.com/Library/aa8ff698-e47e-4ff8-8c88-cbda4b102a4a)   
+ [find_if](../standard-library/algorithm-functions.md#find_if)   
  [\<algorithm>](../standard-library/algorithm.md)   
  [Function Call](../cpp/function-call-cpp.md)   
  [Templates](../cpp/templates-cpp.md)   

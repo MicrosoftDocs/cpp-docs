@@ -4,49 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CUtlProps::IsValidValue"
-  - "CUtlProps.IsValidValue"
-  - "IsValidValue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsValidValue method"
+ms.topic: "reference"
+f1_keywords: ["CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsValidValue method"]
 ms.assetid: 1164556e-8d98-429c-a396-fc9a699e0e97
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::IsValidValue
 Used to validate a value before setting a property.  
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::IsValidValue(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### Parameters  

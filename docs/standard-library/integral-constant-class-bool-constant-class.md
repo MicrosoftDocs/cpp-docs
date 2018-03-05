@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "integral_constant"
-  - "std::integral_constant"
-  - "type_traits/std::integral_constant"
-  - "XTR1COMMON/std::integral_constant"
-  - "bool_constant"
-  - "std::bool_constant"
-  - "type_traits/std::bool_constant"
-  - "XTR1COMMON/std::bool_constant"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "integral_constant class"
-  - "integral_constant"
-  - "bool_constant"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::integral_constant", "XTR1COMMON/std::integral_constant", "type_traits/std::bool_constant", "XTR1COMMON/std::bool_constant"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::integral_constant [C++]", "std::bool_constant [C++]"]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # integral_constant Class, bool_constant Class
 Makes an integral constant from a type and value.  
@@ -104,6 +78,6 @@ integral_constant<bool, false> == false
   
 ## See Also  
  [<type_traits>](../standard-library/type-traits.md)   
- [false_type Typedef](../standard-library/type-traits-typedefs.md#false_type_typedef)   
- [true_type Typedef](../standard-library/type-traits-typedefs.md#true_type_typedef)
+ [false_type](../standard-library/type-traits-typedefs.md#false_type)   
+ [true_type](../standard-library/type-traits-typedefs.md#true_type)
 

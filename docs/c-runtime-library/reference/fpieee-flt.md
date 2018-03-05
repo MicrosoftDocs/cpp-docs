@@ -4,55 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_fpieee_flt"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_fpieee_flt"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fpieee_flt"
-  - "_fpieee_flt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fpieee_flt function"
-  - "exception handling, floating-point"
-  - "floating-point exception handling"
-  - "fpieee_flt function"
+f1_keywords: ["fpieee_flt", "_fpieee_flt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fpieee_flt function", "exception handling, floating-point", "floating-point exception handling", "fpieee_flt function"]
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _fpieee_flt
 Invokes a user-defined trap handler for IEEE floating-point exceptions.  
@@ -168,9 +134,6 @@ int main( void )
    // ...  
 }  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

@@ -4,55 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDynamicStringAccessor::SetString"
-  - "CDynamicStringAccessor.SetString"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetString method"
+ms.topic: "reference"
+f1_keywords: ["CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetString method"]
 ms.assetid: 94846d8b-4c1b-47fe-acdc-1752981cee25
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor::SetString
 Sets the specified column data as a string.  
   
 ## Syntax  
   
-```  
-HRESULT SetString(  
-   DBORDINAL nColumn,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const CHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const WCHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
+```
+HRESULT SetString(DBORDINAL nColumn,  
+  BaseType* data) throw();  
+
+
+HRESULT SetString(const CHAR* pColumnName,  
+   BaseType* data) throw();  
+
+
+HRESULT SetString(const WCHAR* pColumnName,  
+   BaseType* data) throw();  
 ```  
   
 #### Parameters  

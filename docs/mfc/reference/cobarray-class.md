@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CObArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [C++], pointers"
-  - "CObArray class"
-  - "arrays [C++], Object type"
-  - "object arrays, CObArray class"
+f1_keywords: ["CObArray", "AFXCOLL/CObArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CObArray Class
 Supports arrays of `CObject` pointers.  
@@ -368,7 +348,8 @@ INT_PTR GetCount() const;
 ```  
 const CObject** GetData() const;  
   
-CObject** GetData();```  
+CObject** GetData();
+```  
   
 ### Return Value  
  A pointer to the array of `CObject` pointers.  
@@ -433,7 +414,7 @@ INT_PTR GetUpperBound() const;
 ### Remarks  
  Because array indexes are zero-based, this function returns a value 1 less than `GetSize`.  
   
- The condition **GetUpperBound( )** = –1 indicates that the array contains no elements.  
+ The condition **GetUpperBound( )** = -1 indicates that the array contains no elements.  
   
  The following table shows other member functions that are similar to `CObArray::GetUpperBound`.  
   

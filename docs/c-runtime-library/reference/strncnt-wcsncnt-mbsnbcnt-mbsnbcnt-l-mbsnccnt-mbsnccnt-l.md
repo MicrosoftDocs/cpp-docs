@@ -4,85 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnbcnt_l"
-  - "_mbsnccnt"
-  - "_wcsncnt"
-  - "_strncnt"
-  - "_mbsnccnt_l"
-  - "_mbsnbcnt"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbsnbcnt"
-  - "wcsncnt"
-  - "_tcsnbcnt"
-  - "_mbsnccnt"
-  - "_ftcsnbcnt"
-  - "mbsnbcnt"
-  - "strncnt"
-  - "mbsnbcnt_l"
-  - "mbsnccnt_l"
-  - "mbsnccnt"
-  - "_strncnt"
-  - "_wcsncnt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strncnt function"
-  - "_mbsnbcnt function"
-  - "_mbsnbcnt_l function"
-  - "_mbsnccnt_l function"
-  - "mbsnbcnt_l function"
-  - "mbsnbcnt function"
-  - "tcsnbcnt function"
-  - "mbsnccnt_l function"
-  - "strncnt function"
-  - "_tcsnbcnt function"
-  - "mbsnccnt function"
-  - "wcsncnt function"
-  - "_mbsnccnt function"
-  - "_wcsncnt function"
+f1_keywords: ["_mbsnbcnt", "wcsncnt", "_tcsnbcnt", "_mbsnccnt", "_ftcsnbcnt", "mbsnbcnt", "strncnt", "mbsnbcnt_l", "mbsnccnt_l", "mbsnccnt", "_strncnt", "_wcsncnt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strncnt function", "_mbsnbcnt function", "_mbsnbcnt_l function", "_mbsnccnt_l function", "mbsnbcnt_l function", "mbsnbcnt function", "tcsnbcnt function", "mbsnccnt_l function", "strncnt function", "_tcsnbcnt function", "mbsnccnt function", "wcsncnt function", "_mbsnccnt function", "_wcsncnt function"]
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 Returns the number of characters or bytes within a specified count.  
   
 > [!IMPORTANT]
->  `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, and `_mbsnccnt_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, and `_mbsnccnt_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -189,9 +131,6 @@ int main( void )
 ```  
 The first 10 characters are single-byte.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

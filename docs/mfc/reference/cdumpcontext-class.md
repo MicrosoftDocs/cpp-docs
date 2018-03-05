@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDumpContext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDumpContext class"
-  - "AfxDump object"
-  - "diagnostics, diagnostic classes"
-  - "diagnostic classes"
-  - "diagnosis, diagnostic classes"
+f1_keywords: ["CDumpContext", "AFX/CDumpContext", "AFX/CDumpContext::CDumpContext", "AFX/CDumpContext::DumpAsHex", "AFX/CDumpContext::Flush", "AFX/CDumpContext::GetDepth", "AFX/CDumpContext::HexDump", "AFX/CDumpContext::SetDepth"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDumpContext [MFC], CDumpContext", "CDumpContext [MFC], DumpAsHex", "CDumpContext [MFC], Flush", "CDumpContext [MFC], GetDepth", "CDumpContext [MFC], HexDump", "CDumpContext [MFC], SetDepth"]
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDumpContext Class
 Supports stream-oriented diagnostic output in the form of human-readable text.  
@@ -74,7 +53,7 @@ class CDumpContext
 ## Remarks  
  `CDumpContext` does not have a base class.  
   
- You can use [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
+ You can use [afxDump](diagnostic-services.md#afxdump), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
   
  Several of the memory [diagnostic services](../../mfc/reference/diagnostic-services.md) use `afxDump` for their output.  
   

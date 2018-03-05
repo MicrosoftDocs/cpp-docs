@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDBRecordView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, OLE DB"
-  - "COleDBRecordView class"
+f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDBRecordView Class
 A view that displays database records in controls.  
@@ -67,7 +49,7 @@ class COleDBRecordView : public CFormView
 > [!NOTE]
 >  If you are working with the Data Access Objects (DAO) classes rather than the OLE DB Consumer Template classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).  
   
- `COleDBRecordView` keeps track of the user's position in the rowset so that the record view can update the user interface. When the user moves to either end of the rowset, the record view disables user interface objects â€” such as menu items or toolbar buttons â€” for moving further in the same direction.  
+ `COleDBRecordView` keeps track of the user's position in the rowset so that the record view can update the user interface. When the user moves to either end of the rowset, the record view disables user interface objects — such as menu items or toolbar buttons — for moving further in the same direction.  
   
  For more information about rowset classes, see the [Using OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md) article.  
   
@@ -114,7 +96,7 @@ COleDBRecordView(UINT nIDTemplate);
  Returns a handle for the **CRowset<>** object associated with the record view.  
   
 ```  
-virtual CRowset<>* OnGetRowset(Â) = 0;  
+virtual CRowset<>* OnGetRowset() = 0;  
  
 ```  
   
@@ -143,13 +125,13 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  `nIDMoveCommand`  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST`Â Â Â Move to the first record in the recordset.  
+- `ID_RECORD_FIRST` — Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST`Â Â Â Move to the last record in the recordset.  
+- `ID_RECORD_LAST` — Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT`Â Â Â Move to the next record in the recordset.  
+- `ID_RECORD_NEXT` — Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV`Â Â Â Move to the previous record in the recordset.  
+- `ID_RECORD_PREV` — Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  

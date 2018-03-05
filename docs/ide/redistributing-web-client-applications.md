@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Web applications [C++], redistributing"
-  - "deploying applications [C++], Web applications"
-  - "Internet applications [C++], redistributing"
-  - "application deployment [C++], Web applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Web applications [C++], redistributing", "deploying applications [C++], Web applications", "Internet applications [C++], redistributing", "application deployment [C++], Web applications"]
 ms.assetid: fe05988b-dee8-4a46-b381-016b5103a6bf
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing Web Client Applications
 If your application uses the MFC classes implementing the WebBrowser control (for example, `CHtmlView` or `CHtmlEditView`), Microsoft Internet Explorer 4.0 or later must at least be minimally installed on the target computer.  

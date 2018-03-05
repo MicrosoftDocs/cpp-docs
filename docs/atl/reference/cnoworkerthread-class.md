@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CNoWorkerThread"
-  - "ATL.CNoWorkerThread"
-  - "CNoWorkerThread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CNoWorkerThread class"
+f1_keywords: ["CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread", "ATLUTIL/ATL::CNoWorkerThread::AddHandle", "ATLUTIL/ATL::CNoWorkerThread::AddTimer", "ATLUTIL/ATL::CNoWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CNoWorkerThread::GetThreadId", "ATLUTIL/ATL::CNoWorkerThread::Initialize", "ATLUTIL/ATL::CNoWorkerThread::RemoveHandle", "ATLUTIL/ATL::CNoWorkerThread::Shutdown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CNoWorkerThread class"]
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CNoWorkerThread Class
 Use this class as the argument for the `MonitorClass` template parameter to cache classes if you want to disable dynamic cache maintenance.  

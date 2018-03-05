@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CScrollView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CScrollView class"
-  - "views, scrolling"
-  - "scrolling views"
+f1_keywords: ["CScrollView", "AFXWIN/CScrollView", "AFXWIN/CScrollView::CScrollView", "AFXWIN/CScrollView::CheckScrollBars", "AFXWIN/CScrollView::FillOutsideRect", "AFXWIN/CScrollView::GetDeviceScrollPosition", "AFXWIN/CScrollView::GetDeviceScrollSizes", "AFXWIN/CScrollView::GetScrollPosition", "AFXWIN/CScrollView::GetTotalSize", "AFXWIN/CScrollView::ResizeParentToFit", "AFXWIN/CScrollView::ScrollToPosition", "AFXWIN/CScrollView::SetScaleToFitSize", "AFXWIN/CScrollView::SetScrollSizes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CScrollView [MFC], CScrollView", "CScrollView [MFC], CheckScrollBars", "CScrollView [MFC], FillOutsideRect", "CScrollView [MFC], GetDeviceScrollPosition", "CScrollView [MFC], GetDeviceScrollSizes", "CScrollView [MFC], GetScrollPosition", "CScrollView [MFC], GetTotalSize", "CScrollView [MFC], ResizeParentToFit", "CScrollView [MFC], ScrollToPosition", "CScrollView [MFC], SetScaleToFitSize", "CScrollView [MFC], SetScrollSizes"]
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CScrollView Class
 A [CView](../../mfc/reference/cview-class.md) with scrolling capabilities.  
@@ -95,7 +76,7 @@ class CScrollView : public CView
   
  Scroll bars can appear in three places relative to a view, as shown in the following cases:  
   
--   Standard window-style scroll bars can be set for the view using the **WS_HSCROLL** and **WS_VSCROLL**[Windows Styles](../../mfc/reference/window-styles.md).  
+-   Standard window-style scroll bars can be set for the view using the **WS_HSCROLL** and **WS_VSCROLL**[Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
 -   Scroll-bar controls can also be added to the frame containing the view, in which case the framework forwards `WM_HSCROLL` and `WM_VSCROLL` messages from the frame window to the currently active view.  
   

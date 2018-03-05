@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::equal_to"
-  - "equal_to"
-  - "xfunctional/std::equal_to"
-  - "std.equal_to"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "equal_to function"
-  - "equal_to struct"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::equal_to"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["equal_to function", "equal_to struct"]
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # equal_to Struct
 A binary predicate that performs the equality operation ( `operator==`) on its arguments.  
@@ -62,17 +40,17 @@ struct equal_to<void>
 ```  
   
 #### Parameters  
- `Type`, ` T`, ` U`  
+ `Type`, `T`, `U`  
  Any type that supports an `operator==` that takes operands of the specified or inferred types.  
   
  `Left`  
- The left operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` T`.  
+ The left operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.  
   
  `Right`  
- The right operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` U`.  
+ The right operand of the equality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``==``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator==`.  
+ The result of `Left == Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator==`.  
   
 ## Remarks  
  The objects of type `Type` must be equality-comparable. This requires that the `operator==` defined on the set of objects satisfies the mathematical properties of an equivalence relation. All of the built-in numeric and pointer types satisfy this requirement.  

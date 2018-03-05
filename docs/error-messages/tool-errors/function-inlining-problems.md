@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Ob1 C++ compiler option"
-  - "inline functions, problems"
-  - "-Ob1 C++ compiler option"
-  - "/Ob2 C++ compiler option"
-  - "-Ob2 C++ compiler option"
-  - "function inlining problems"
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Ob1 C++ compiler option", "inline functions, problems", "-Ob1 C++ compiler option", "/Ob2 C++ compiler option", "-Ob2 C++ compiler option", "function inlining problems"]
 ms.assetid: 65d59943-4b3c-4a43-aeb6-dccbf7686740
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Function Inlining Problems
 If you are using function inlining, you must:  

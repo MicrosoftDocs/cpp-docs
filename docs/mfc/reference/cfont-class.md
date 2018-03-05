@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFont"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFont class"
-  - "GDI, font classes"
-  - "fonts, MFC classes"
+f1_keywords: ["CFont", "AFXWIN/CFont", "AFXWIN/CFont::CFont", "AFXWIN/CFont::CreateFont", "AFXWIN/CFont::CreateFontIndirect", "AFXWIN/CFont::CreatePointFont", "AFXWIN/CFont::CreatePointFontIndirect", "AFXWIN/CFont::FromHandle", "AFXWIN/CFont::GetLogFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFont [MFC], CFont", "CFont [MFC], CreateFont", "CFont [MFC], CreateFontIndirect", "CFont [MFC], CreatePointFont", "CFont [MFC], CreatePointFontIndirect", "CFont [MFC], FromHandle", "CFont [MFC], GetLogFont"]
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFont Class
 Encapsulates a Windows graphics device interface (GDI) font and provides member functions for manipulating the font.  
@@ -123,19 +104,19 @@ BOOL CreateFont(
   
 ### Parameters  
  `nHeight`  
- Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description. The absolute value of `nHeight` must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
+ Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)structure in the Windows SDK for a description. The absolute value of `nHeight` must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.  
   
  `nWidth`  
  Specifies the average width (in logical units) of characters in the font. If `nWidth` is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.  
   
  `nEscapement`  
- Specifies the angle (in 0.1-degree units) between the escapement vector and the x-axis of the display surface. The escapement vector is the line through the origins of the first and last characters on a line. The angle is measured counterclockwise from the x-axis. See the `lfEscapement` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Specifies the angle (in 0.1-degree units) between the escapement vector and the x-axis of the display surface. The escapement vector is the line through the origins of the first and last characters on a line. The angle is measured counterclockwise from the x-axis. See the `lfEscapement` member in the `LOGFONT` structure in the Windows SDK for more information.  
   
  `nOrientation`  
  Specifies the angle (in 0.1-degree units) between the baseline of a character and the x-axis. The angle is measured counterclockwise from the x-axis for coordinate systems in which the y-direction is down and clockwise from the x-axis for coordinate systems in which the y-direction is up.  
   
  `nWeight`  
- Specifies the font weight (in inked pixels per 1000). See the `lfWeight` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information. The described values are approximate; the actual appearance depends on the typeface. Some fonts have only `FW_NORMAL`, `FW_REGULAR`, and `FW_BOLD` weights. If `FW_DONTCARE` is specified, a default weight is used.  
+ Specifies the font weight (in inked pixels per 1000). See the `lfWeight` member in the `LOGFONT` structure in the Windows SDK for more information. The described values are approximate; the actual appearance depends on the typeface. Some fonts have only `FW_NORMAL`, `FW_REGULAR`, and `FW_BOLD` weights. If `FW_DONTCARE` is specified, a default weight is used.  
   
  `bItalic`  
  Specifies whether the font is italic.  
@@ -147,7 +128,7 @@ BOOL CreateFont(
  Specifies whether characters in the font are struck out. Specifies a strikeout font if set to a nonzero value.  
   
  `nCharSet`  
- Specifies the font's character setSee the `lfCharSet` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Specifies the font's character setSee the `lfCharSet` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
  The OEM character set is system-dependent.  
   
@@ -156,20 +137,20 @@ BOOL CreateFont(
  The font mapper does not use the `DEFAULT_CHARSET` value. An application can use this value to allow the name and size of a font to fully describe the logical font. If a font with the specified name does not exist, a font from any character set can be substituted for the specified font. To avoid unexpected results, applications should use the `DEFAULT_CHARSET` value sparingly.  
   
  `nOutPrecision`  
- Specifies the desired output precision. The output precision defines how closely the output must match the requested font's height, width, character orientation, escapement, and pitch. See the `lfOutPrecision` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values and more information.  
+ Specifies the desired output precision. The output precision defines how closely the output must match the requested font's height, width, character orientation, escapement, and pitch. See the `lfOutPrecision` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.  
   
  `nClipPrecision`  
- Specifies the desired clipping precision. The clipping precision defines how to clip characters that are partially outside the clipping region. See the `lfClipPrecision` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Specifies the desired clipping precision. The clipping precision defines how to clip characters that are partially outside the clipping region. See the `lfClipPrecision` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
  To use an embedded read-only font, an application must specify `CLIP_ENCAPSULATE`.  
   
  To achieve consistent rotation of device, TrueType, and vector fonts, an application can use the OR operator to combine the `CLIP_LH_ANGLES` value with any of the other `nClipPrecision` values. If the `CLIP_LH_ANGLES` bit is set, the rotation for all fonts depends on whether the orientation of the coordinate system is left-handed or right-handed. (For more information about the orientation of coordinate systems, see the description of the `nOrientation` parameter.) If `CLIP_LH_ANGLES` is not set, device fonts always rotate counterclockwise, but the rotation of other fonts is dependent on the orientation of the coordinate system.  
   
  `nQuality`  
- Specifies the font's output quality, which defines how carefully the GDI must attempt to match the logical-font attributes to those of an actual physical font. See the `lfQuality` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Specifies the font's output quality, which defines how carefully the GDI must attempt to match the logical-font attributes to those of an actual physical font. See the `lfQuality` member in the `LOGFONT` structure in the Windows SDK for a list of values.  
   
  `nPitchAndFamily`  
- Specifies the pitch and family of the font. See the `lfPitchAndFamily` member in the `LOGFONT` structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values and more information.  
+ Specifies the pitch and family of the font. See the `lfPitchAndFamily` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.  
   
  `lpszFacename`  
  A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](http://msdn.microsoft.com/library/windows/desktop/dd162619) function can be used to enumerate all currently available fonts. If `lpszFacename` is `NULL`, the GDI uses a device-independent typeface.  
@@ -321,7 +302,7 @@ operator HFONT() const;
 ### Remarks  
  Since this operator is automatically used for conversions from `CFont` to [Fonts and Text](http://msdn.microsoft.com/library/windows/desktop/dd144819), you can pass `CFont` objects to functions that expect **HFONT**s.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]  

@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFixedStringT class, using a custom string manager"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFixedStringT class, using a custom string manager"]
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFixedStringT: Example of a Custom String Manager
 The ATL library implements one example of a custom string manager used by class [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md), called **CFixedStringMgr**. `CFixedStringT` is derived from [CStringT](../atl-mfc-shared/reference/cstringt-class.md) and implements a string that allocates its character data as part of the `CFixedStringT` object itself as long as the string is less than the length specified by the **t_nChars** template parameter of `CFixedStringT`. With this approach, the string does not need the heap at all, unless the length of the string grows beyond the size of the fixed buffer. Because `CFixedStringT` does not always use a heap to allocate its string data, it cannot use **CAtlStringMgr** as its string manager. It uses a custom string manager (**CFixedStringMgr**), implementing the [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) interface. This interface is discussed in [Implementation of a Custom String Manager (Advanced Method)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).  
@@ -43,7 +27,7 @@ The ATL library implements one example of a custom string manager used by class 
   
 -   **pMgr:** A pointer to the `IAtlStringMgr` interface of a "backup string manager."  
   
- The constructor stores the values of `pData` and **pMgr** in their respective member variables (`m_pData` and **m_pMgr**). It then sets the length of the buffer to zero, the available length equal to the maximum size of the fixed buffer, and the reference count to –1. The reference count value indicates the buffer is locked and to use this instance of **CFixedStringMgr** as the string manager.  
+ The constructor stores the values of `pData` and **pMgr** in their respective member variables (`m_pData` and **m_pMgr**). It then sets the length of the buffer to zero, the available length equal to the maximum size of the fixed buffer, and the reference count to -1. The reference count value indicates the buffer is locked and to use this instance of **CFixedStringMgr** as the string manager.  
   
  Marking the buffer as locked prevents other `CStringT` instances from holding a shared reference to the buffer. If other `CStringT` instances were allowed to share the buffer it would be possible for the buffer contained by `CFixedStringT` to be deleted while other strings were still using the buffer.  
   

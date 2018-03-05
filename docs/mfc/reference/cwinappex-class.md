@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinAppEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWinAppEx class"
+f1_keywords: ["CWinAppEx", "AFXWINAPPEX/CWinAppEx", "AFXWINAPPEX/CWinAppEx::CWinAppEx", "AFXWINAPPEX/CWinAppEx::CleanState", "AFXWINAPPEX/CWinAppEx::EnableLoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::EnableTearOffMenus", "AFXWINAPPEX/CWinAppEx::EnableUserTools", "AFXWINAPPEX/CWinAppEx::ExitInstance", "AFXWINAPPEX/CWinAppEx::GetBinary", "AFXWINAPPEX/CWinAppEx::GetContextMenuManager", "AFXWINAPPEX/CWinAppEx::GetDataVersion", "AFXWINAPPEX/CWinAppEx::GetDataVersionMajor", "AFXWINAPPEX/CWinAppEx::GetDataVersionMinor", "AFXWINAPPEX/CWinAppEx::GetInt", "AFXWINAPPEX/CWinAppEx::GetKeyboardManager", "AFXWINAPPEX/CWinAppEx::GetMouseManager", "AFXWINAPPEX/CWinAppEx::GetObject", "AFXWINAPPEX/CWinAppEx::GetRegSectionPath", "AFXWINAPPEX/CWinAppEx::GetRegistryBase", "AFXWINAPPEX/CWinAppEx::GetSectionBinary", "AFXWINAPPEX/CWinAppEx::GetSectionInt", "AFXWINAPPEX/CWinAppEx::GetSectionObject", "AFXWINAPPEX/CWinAppEx::GetSectionString", "AFXWINAPPEX/CWinAppEx::GetShellManager", "AFXWINAPPEX/CWinAppEx::GetString", "AFXWINAPPEX/CWinAppEx::GetTooltipManager", "AFXWINAPPEX/CWinAppEx::GetUserToolsManager", "AFXWINAPPEX/CWinAppEx::InitContextMenuManager", "AFXWINAPPEX/CWinAppEx::InitKeyboardManager", "AFXWINAPPEX/CWinAppEx::InitMouseManager", "AFXWINAPPEX/CWinAppEx::InitShellManager", "AFXWINAPPEX/CWinAppEx::InitTooltipManager", "AFXWINAPPEX/CWinAppEx::IsResourceSmartUpdate", "AFXWINAPPEX/CWinAppEx::IsStateExists", "AFXWINAPPEX/CWinAppEx::LoadState", "AFXWINAPPEX/CWinAppEx::OnAppContextHelp", "AFXWINAPPEX/CWinAppEx::OnViewDoubleClick", "AFXWINAPPEX/CWinAppEx::OnWorkspaceIdle", "AFXWINAPPEX/CWinAppEx::SaveState", "AFXWINAPPEX/CWinAppEx::SetRegistryBase", "AFXWINAPPEX/CWinAppEx::ShowPopupMenu", "AFXWINAPPEX/CWinAppEx::WriteBinary", "AFXWINAPPEX/CWinAppEx::WriteInt", "AFXWINAPPEX/CWinAppEx::WriteObject", "AFXWINAPPEX/CWinAppEx::WriteSectionBinary", "AFXWINAPPEX/CWinAppEx::WriteSectionInt", "AFXWINAPPEX/CWinAppEx::WriteSectionObject", "AFXWINAPPEX/CWinAppEx::WriteSectionString", "AFXWINAPPEX/CWinAppEx::WriteString", "AFXWINAPPEX/CWinAppEx::LoadCustomState", "AFXWINAPPEX/CWinAppEx::LoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::OnClosingMainFrame", "AFXWINAPPEX/CWinAppEx::PreLoadState", "AFXWINAPPEX/CWinAppEx::PreSaveState", "AFXWINAPPEX/CWinAppEx::ReloadWindowPlacement", "AFXWINAPPEX/CWinAppEx::SaveCustomState", "AFXWINAPPEX/CWinAppEx::StoreWindowPlacement", "AFXWINAPPEX/CWinAppEx::m_bForceImageReset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinAppEx [MFC], CWinAppEx", "CWinAppEx [MFC], CleanState", "CWinAppEx [MFC], EnableLoadWindowPlacement", "CWinAppEx [MFC], EnableTearOffMenus", "CWinAppEx [MFC], EnableUserTools", "CWinAppEx [MFC], ExitInstance", "CWinAppEx [MFC], GetBinary", "CWinAppEx [MFC], GetContextMenuManager", "CWinAppEx [MFC], GetDataVersion", "CWinAppEx [MFC], GetDataVersionMajor", "CWinAppEx [MFC], GetDataVersionMinor", "CWinAppEx [MFC], GetInt", "CWinAppEx [MFC], GetKeyboardManager", "CWinAppEx [MFC], GetMouseManager", "CWinAppEx [MFC], GetObject", "CWinAppEx [MFC], GetRegSectionPath", "CWinAppEx [MFC], GetRegistryBase", "CWinAppEx [MFC], GetSectionBinary", "CWinAppEx [MFC], GetSectionInt", "CWinAppEx [MFC], GetSectionObject", "CWinAppEx [MFC], GetSectionString", "CWinAppEx [MFC], GetShellManager", "CWinAppEx [MFC], GetString", "CWinAppEx [MFC], GetTooltipManager", "CWinAppEx [MFC], GetUserToolsManager", "CWinAppEx [MFC], InitContextMenuManager", "CWinAppEx [MFC], InitKeyboardManager", "CWinAppEx [MFC], InitMouseManager", "CWinAppEx [MFC], InitShellManager", "CWinAppEx [MFC], InitTooltipManager", "CWinAppEx [MFC], IsResourceSmartUpdate", "CWinAppEx [MFC], IsStateExists", "CWinAppEx [MFC], LoadState", "CWinAppEx [MFC], OnAppContextHelp", "CWinAppEx [MFC], OnViewDoubleClick", "CWinAppEx [MFC], OnWorkspaceIdle", "CWinAppEx [MFC], SaveState", "CWinAppEx [MFC], SetRegistryBase", "CWinAppEx [MFC], ShowPopupMenu", "CWinAppEx [MFC], WriteBinary", "CWinAppEx [MFC], WriteInt", "CWinAppEx [MFC], WriteObject", "CWinAppEx [MFC], WriteSectionBinary", "CWinAppEx [MFC], WriteSectionInt", "CWinAppEx [MFC], WriteSectionObject", "CWinAppEx [MFC], WriteSectionString", "CWinAppEx [MFC], WriteString", "CWinAppEx [MFC], LoadCustomState", "CWinAppEx [MFC], LoadWindowPlacement", "CWinAppEx [MFC], OnClosingMainFrame", "CWinAppEx [MFC], PreLoadState", "CWinAppEx [MFC], PreSaveState", "CWinAppEx [MFC], ReloadWindowPlacement", "CWinAppEx [MFC], SaveCustomState", "CWinAppEx [MFC], StoreWindowPlacement", "CWinAppEx [MFC], m_bForceImageReset"]
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWinAppEx Class
 `CWinAppEx` handles the application state, saves the state to the registry, loads the state from the registry, initializes application managers, and provides links to those same application managers.  
   
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
 ## Syntax  
   
 ```  
@@ -258,7 +242,7 @@ BOOL EnableUserTools(
  For more information about user tools and how to incorporate them into your application, see [User-defined Tools](../../mfc/user-defined-tools.md).  
   
 ##  <a name="exitinstance"></a>  CWinAppEx::ExitInstance  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int ExitInstance();
@@ -310,7 +294,7 @@ CContextMenuManager* GetContextMenuManager();
  If the CContextMenuManager object is not initialized, this function calls [CWinAppEx::InitContextMenuManager](#initcontextmenumanager) before it returns a pointer.  
   
 ##  <a name="getdataversion"></a>  CWinAppEx::GetDataVersion  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetDataVersion() const;  
@@ -636,7 +620,7 @@ BOOL InitContextMenuManager();
 ### Remarks  
  If you call [CWinAppEx::GetContextMenuManager](#getcontextmenumanager), the default implementation of that method calls `InitContextMenuManager`.  
   
- If your application already has a context menu manager and you call `InitContextMenuManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitContextMenuManager` if you create a `CContextMenuManager` object directly. If you are not using a custom `CContextMenuManager`, you should use `GetContextMenuManager` to create a `CContextMenuManager` object.  
+ If your application already has a context menu manager and you call `InitContextMenuManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitContextMenuManager` if you create a `CContextMenuManager` object directly. If you are not using a custom `CContextMenuManager`, you should use `GetContextMenuManager` to create a `CContextMenuManager` object.  
   
 ##  <a name="initkeyboardmanager"></a>  CWinAppEx::InitKeyboardManager  
  Initializes the [CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md) object.  
@@ -651,7 +635,7 @@ BOOL InitKeyboardManager();
 ### Remarks  
  If you call [CWinAppEx::GetKeyboardManager](#getkeyboardmanager), the default implementation of that method calls `InitKeyboardManager`.  
   
- If your application already has a keyboard manager and you call `InitKeyboardManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitKeyboardManager` if you create a `CKeyboardManager` object directly. If you are not using a custom `CKeyboardManager`, you should use `GetKeyboardManager` to create a `CKeyboardManager` object.  
+ If your application already has a keyboard manager and you call `InitKeyboardManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitKeyboardManager` if you create a `CKeyboardManager` object directly. If you are not using a custom `CKeyboardManager`, you should use `GetKeyboardManager` to create a `CKeyboardManager` object.  
   
 ##  <a name="initmousemanager"></a>  CWinAppEx::InitMouseManager  
  Initializes the [CMouseManager](../../mfc/reference/cmousemanager-class.md) object.  
@@ -666,7 +650,7 @@ BOOL InitMouseManager();
 ### Remarks  
  If you call [CWinAppEx::GetMouseManager](#getmousemanager), the default implementation of that method calls `InitMouseManager`.  
   
- If your application already has a mouse manager and you call `InitMouseManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore you should not call `InitMouseManager` if you create a `CMouseManager` object directly. If you are not using a custom `CMouseManager`, you should use `GetMouseManager` to create a `CMouseManager` object.  
+ If your application already has a mouse manager and you call `InitMouseManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore you should not call `InitMouseManager` if you create a `CMouseManager` object directly. If you are not using a custom `CMouseManager`, you should use `GetMouseManager` to create a `CMouseManager` object.  
   
 ##  <a name="initshellmanager"></a>  CWinAppEx::InitShellManager  
  Initializes the [CShellManager](../../mfc/reference/cshellmanager-class.md) object.  
@@ -681,7 +665,7 @@ BOOL InitShellManager();
 ### Remarks  
  If you call [CWinAppEx::GetShellManager](#getshellmanager), the default implementation of that method calls `InitShellManager`.  
   
- If your application already has a shell manager and you call `InitShellManager`, your application raises an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, do not call `InitShellManager` if you create a `CShellManager` object directly. If you are not using a custom `CShellManager`, use `GetShellManager` to create a `CShellManager` object.  
+ If your application already has a shell manager and you call `InitShellManager`, your application raises an [ASSERT](diagnostic-services.md#assert) failure. Therefore, do not call `InitShellManager` if you create a `CShellManager` object directly. If you are not using a custom `CShellManager`, use `GetShellManager` to create a `CShellManager` object.  
   
 ##  <a name="inittooltipmanager"></a>  CWinAppEx::InitTooltipManager  
  Initializes the [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) object.  
@@ -696,10 +680,10 @@ BOOL InitTooltipManager();
 ### Remarks  
  If you call [CWinAppEx::GetTooltipManager](#gettooltipmanager), the default implementation of that method calls `InitTooltipManager`.  
   
- If your application already has a tooltip manager and you call `InitTooltipManager`, your application will have an [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) failure. Therefore, you should not call `InitTooltipManager` if you create a `CTooltipManager` object directly. If you are not using a custom `CTooltipManager`, you should use `GetTooltipManager` to create a `CTooltipManager` object.  
+ If your application already has a tooltip manager and you call `InitTooltipManager`, your application will have an [ASSERT](diagnostic-services.md#assert) failure. Therefore, you should not call `InitTooltipManager` if you create a `CTooltipManager` object directly. If you are not using a custom `CTooltipManager`, you should use `GetTooltipManager` to create a `CTooltipManager` object.  
   
 ##  <a name="isresourcesmartupdate"></a>  CWinAppEx::IsResourceSmartUpdate  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsResourceSmartUpdate() const;  
@@ -873,7 +857,7 @@ virtual BOOL OnViewDoubleClick(
  In order to support custom mouse behavior, you must call this function when you process the `WM_LBUTTONDBLCLK` message. This method will execute the command associated with the view ID supplied by `iViewId`. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md).  
   
 ##  <a name="onworkspaceidle"></a>  CWinAppEx::OnWorkspaceIdle  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnWorkspaceIdle(CWnd*);

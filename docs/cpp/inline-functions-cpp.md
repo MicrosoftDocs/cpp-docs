@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__forceinline_cpp"
-  - "__inline_cpp"
-  - "inline_cpp"
-  - "__forceinline"
-  - "__inline"
-  - "inline"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "inline functions, class members"
+f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Inline Functions (C++)
 A function defined in the body of a class declaration is an inline function.  
@@ -170,7 +148,7 @@ private:
   
  Recursive functions can be substituted inline to a depth specified by the [inline_depth](../preprocessor/inline-depth.md) pragma, up to a maximum of 16 calls. After that depth, recursive function calls are treated as calls to an instance of the function.  The depth to which recursive functions are examined by the inline heuristic cannot exceed 16. The [inline_recursion](../preprocessor/inline-recursion.md) pragma controls the inline expansion of a function currently under expansion. See the [Inline-Function Expansion](../build/reference/ob-inline-function-expansion.md) (/Ob) compiler option for related information.  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
  For more information on using the **inline** specifier, see:  
   
 -   [Inline Class Member Functions](../cpp/inline-functions-cpp.md)  

@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.FXCompilerTool.AdditionalOptionsPage"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.FXCompilerTool.AdditionalOptionsPage"]
+dev_langs: ["C++"]
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
 caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages
 You can use the HLSL compiler (fxc.exe) property pages to configure how individual HLSL shader files are built. The properties are divided into three categories:  

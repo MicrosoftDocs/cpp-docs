@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IOleCommandTarget"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "TN071"
-  - "IOleCommandTarget interface"
+f1_keywords: ["IOleCommandTarget"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["TN071 [MFC]", "IOleCommandTarget interface [MFC]"]
 ms.assetid: 3eef571e-6357-444d-adbb-6f734a0c3161
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN071: MFC IOleCommandTarget Implementation
 > [!NOTE]
@@ -135,7 +117,7 @@ DECLARE_DYNCREATE(CMyServerView)
     END_OLECMD_MAP() 
  ```  
   
-3.  To handle the standard OLE print command, add an [ON_OLECMD](http://msdn.microsoft.com/library/6c86327c-3d48-42ac-9dae-e0ccd3a81793) macro to the command map specifying the OLE command ID for the standard print command and **ID_FILE_PRINT** for the **WM_COMMAND** ID. **ID_FILE_PRINT** is the standard print command ID used by AppWizard-generated MFC applications:  
+3.  To handle the standard OLE print command, add an [ON_OLECMD](reference/message-map-macros-mfc.md#on_olecmd) macro to the command map specifying the OLE command ID for the standard print command and **ID_FILE_PRINT** for the **WM_COMMAND** ID. **ID_FILE_PRINT** is the standard print command ID used by AppWizard-generated MFC applications:  
   
  ```  
     BEGIN_OLECMD_MAP(CMyServerView,

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObjectRootEx"
-  - "ATL::CComObjectRootEx<ThreadModel>"
-  - "CComObjectRootEx"
-  - "ATL::CComObjectRootEx"
-  - "ATL.CComObjectRootEx<ThreadModel>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference counting"
+f1_keywords: ["CComObjectRootEx", "ATLCOM/ATL::CComObjectRootEx", "ATLCOM/ATL::InternalAddRef", "ATLCOM/ATL::InternalRelease", "ATLCOM/ATL::Lock", "ATLCOM/ATL::Unlock", "ATLCOM/ATL::FinalConstruct", "ATLCOM/ATL::FinalRelease", "ATLCOM/ATL::OuterAddRef", "ATLCOM/ATL::OuterQueryInterface", "ATLCOM/ATL::OuterRelease", "ATLCOM/ATL::InternalQueryInterface", "ATLCOM/ATL::ObjectMain", "ATLCOM/ATL::m_dwRef", "ATLCOM/ATL::m_pOuterUnknown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reference counting"]
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectRootEx Class
 This class provides methods to handle object reference count management for both nonaggregated and aggregated objects.  
@@ -94,7 +73,7 @@ class CComObjectRootEx : public CComObjectRootBase
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](http://msdn.microsoft.com/library/7569e738-cfbc-4404-ba1d-78dcefa3bdb3) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
   
  If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
   
@@ -142,7 +121,7 @@ HRESULT FinalConstruct();
   
  [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]  
   
- If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](http://msdn.microsoft.com/library/2d2e5ddc-057a-43ca-87c8-d3477a8193a0) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
+ If the construction fails, you can return an error. You can also use the macro [DECLARE_PROTECT_FINAL_CONSTRUCT](aggregation-and-class-factory-macros.md#declare_protect_final_construct) to protect your outer object from being deleted if, during creation, the internal aggregated object increments the reference count then decrements the count to 0.  
   
  Here is a typical way to create an aggregate:  
   
@@ -150,7 +129,7 @@ HRESULT FinalConstruct();
   
 -   Override `FinalConstruct` to create the aggregate.  
   
--   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](http://msdn.microsoft.com/library/c671fa40-a57b-4797-ae88-c9762dabd4dc) macro.  
+-   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](com-interface-entry-macros.md#com_interface_entry_aggregate) macro.  
   
 -   Override `FinalRelease` to release the **IUnknown** pointer.  
   
@@ -207,7 +186,7 @@ static HRESULT InternalQueryInterface(
  One of the standard `HRESULT` values.  
   
 ### Remarks  
- `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](http://msdn.microsoft.com/library/19dcb768-2e1f-4b8d-a618-453a01a4bd00) or one of its variants.  
+ `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) or one of its variants.  
   
 ##  <a name="internalrelease"></a>  CComObjectRootEx::InternalRelease  
  Decrements the reference count of a nonaggregated object by 1.  
@@ -293,7 +272,7 @@ static void WINAPI ObjectMain(bool bStarting);
 ### Remarks  
  The value of the `bStarting` parameter indicates whether the module is being initialized or terminated. The default implementation of `ObjectMain` does nothing, but you can override this function in your class to initialize or clean up resources that you want to allocate for the class. Note that `ObjectMain` is called before any instances of the class are requested.  
   
- `ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [Run-Time Library Behavior](../../build/run-time-library-behavior.md) and [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
+ `ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) and [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
   
 ### Example  
  [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]  

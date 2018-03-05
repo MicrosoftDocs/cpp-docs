@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "#include"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "preprocessor, directives"
-  - "#include directive"
-  - "include directive (#include)"
+ms.topic: "reference"
+f1_keywords: ["#include"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["preprocessor, directives", "#include directive", "include directive (#include)"]
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # #include Directive (C/C++)
 Tells the preprocessor to treat the contents of a specified file as if they appear in the source program at the point where the directive appears.  

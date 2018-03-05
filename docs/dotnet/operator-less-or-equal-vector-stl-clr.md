@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::operator<="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator<= member [STL/CLR]"
+f1_keywords: ["cliext::vector::operator<="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: d4f9d0ba-1fa3-4895-aef4-c9f9a06dbe05
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (vector) (STL/CLR)
 Vector less than or equal comparison.  
@@ -53,7 +36,7 @@ template<typename Value>
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``right` `<` `left``)`. You use it to test whether `left` is not ordered after `right` when the two vectors are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two vectors are compared element by element.  
   
 ## Example  
   

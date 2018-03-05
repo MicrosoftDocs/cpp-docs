@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdexcept/std::underflow_error"
-  - "underflow_error"
-  - "std.underflow_error"
-  - "std::underflow_error"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "underflow_error class"
+ms.topic: "reference"
+f1_keywords: ["stdexcept/std::underflow_error"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["underflow_error class"]
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # underflow_error Class
 The class serves as the base class for all exceptions thrown to report an arithmetic underflow.  
@@ -53,7 +33,7 @@ public:
 ```  
   
 ## Remarks  
- The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#basic_string__data).  
+ The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).  
   
 ## Example  
   

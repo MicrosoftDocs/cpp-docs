@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "header files [C++], Visual C++ projects"
-  - "ActiveX controls [C++], Help files"
-  - "def files"
-  - "project items [C++], files"
-  - "Visual C++ projects, files and directories"
-  - "resource files, created by wizard"
-  - "files [C++], extensions"
-  - "Help files, for ActiveX controls"
-  - "Web projects [C++], adding items"
-  - ".def files"
-  - "licensing ActiveX controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["header files [C++], Visual C++ projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # File Types Created for Visual C++ Projects
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.  
@@ -85,7 +58,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.HxC|Project|Help project file.|  
 |.ico|Resource|Icon bitmap graphic file.|  
 |.idb|Compiling|The state file, containing dependency information between source files and class definitions, which can be used by the compiler during minimal rebuild and incremental compilation. Use the [/Fd](../build/reference/fd-program-database-file-name.md) compiler option to specify the name of the .idb file. See [/Gm (Enable Minimal Rebuild)](../build/reference/gm-enable-minimal-rebuild.md) for more information.|  
-|.idl|Compiling|An interface definition language file. See [Interface Definition (IDL) File](http://msdn.microsoft.com/library/windows/desktop/aa378712) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] for more information.|  
+|.idl|Compiling|An interface definition language file. See [Interface Definition (IDL) File](http://msdn.microsoft.com/library/windows/desktop/aa378712) in the Windows SDK for more information.|  
 |.ilk|Linking|Incremental link file. See [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) for more information.|  
 |.map|Linking|A text file containing linker information. Use the [/Fm](../build/reference/fm-name-mapfile.md) compiler option to name the map file. See [/MAP](../build/reference/map-generate-mapfile.md) for more information.|  
 |.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md).|  

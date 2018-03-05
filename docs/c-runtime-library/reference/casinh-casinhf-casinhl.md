@@ -4,63 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "casinh"
-  - "casinhl"
-  - "casinhf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["casinh", "casinhl", "casinhf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "casinh"
-  - "casinhf"
-  - "casinhl"
-  - "complex/casinh"
-  - "complex/casinhf"
-  - "complex/casinhl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "casinh function"
-  - "casinhf function"
-  - "casinhl function"
+f1_keywords: ["casinh", "casinhf", "casinhl", "complex/casinh", "complex/casinhf", "complex/casinhl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["casinh function", "casinhf function", "casinhl function"]
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # casinh, casinhf, casinhl
-Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [−i, +i] along the imaginary axis.  
+Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [-i, +i] along the imaginary axis.  
   
 ## Syntax  
   
@@ -87,7 +48,7 @@ _Lcomplex casinhl(
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The inverse hyperbolic sine of `z`, in radians. The result is unbound along the real axis, and in the interval [−iπ/2, +iπ/2] along the imaginary axis.  
+ The inverse hyperbolic sine of `z`, in radians. The result is unbound along the real axis, and in the interval [-iπ/2, +iπ/2] along the imaginary axis.  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `casinh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `casinh` always takes and returns a `_Dcomplex` value.  

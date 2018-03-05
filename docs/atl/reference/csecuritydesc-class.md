@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CSecurityDesc"
-  - "ATL.CSecurityDesc"
-  - "CSecurityDesc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSecurityDesc class"
+f1_keywords: ["CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::FromString", "ATLSECURITY/ATL::CSecurityDesc::GetControl", "ATLSECURITY/ATL::CSecurityDesc::GetDacl", "ATLSECURITY/ATL::CSecurityDesc::GetGroup", "ATLSECURITY/ATL::CSecurityDesc::GetOwner", "ATLSECURITY/ATL::CSecurityDesc::GetPSECURITY_DESCRIPTOR", "ATLSECURITY/ATL::CSecurityDesc::GetSacl", "ATLSECURITY/ATL::CSecurityDesc::IsDaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsDaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsDaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsDaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsGroupDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsOwnerDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsSaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsSaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::MakeAbsolute", "ATLSECURITY/ATL::CSecurityDesc::MakeSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::SetControl", "ATLSECURITY/ATL::CSecurityDesc::SetDacl", "ATLSECURITY/ATL::CSecurityDesc::SetGroup", "ATLSECURITY/ATL::CSecurityDesc::SetOwner", "ATLSECURITY/ATL::CSecurityDesc::SetSacl", "ATLSECURITY/ATL::CSecurityDesc::ToString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSecurityDesc class"]
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSecurityDesc Class
 This class is a wrapper for the **SECURITY_DESCRIPTOR** structure.  
@@ -96,11 +77,11 @@ class CSecurityDesc
 |[CSecurityDesc::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](http://msdn.microsoft.com/library/233578b8-dcc5-4f51-8e62-7cdcc2ff6b11).  
+ The **SECURITY_DESCRIPTOR** structure contains the security information associated with an object. Applications use this structure to set and query an object's security status. See also [AtlGetSecurityDescriptor](security-global-functions.md#atlgetsecuritydescriptor).  
   
  Applications should not modify the **SECURITY_DESCRIPTOR** structure directly, and instead should use the class methods provided.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -148,7 +129,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### Remarks  
  The string can be created by using [CSecurityDesc::ToString](#tostring). Converting the security descriptor into a string makes it easier to store and transmit.  
   
- This method is only available with Windows 2000 and later because it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  Retrieves control information from the security descriptor.  
@@ -165,7 +146,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
  Returns true if the method succeeds, false if it fails.  
   
 ### Remarks  
- This method is only meaningful when using Windows 2000 or later, as it calls [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
+ This method calls [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
   
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl  
  Retrieves discretionary access-control list (DACL) information from the security descriptor.  
@@ -321,7 +302,7 @@ bool IsDaclProtected() const throw();
 ### Remarks  
  To set this flag, use the [CSecurityDesc::SetDacl](#setdacl) method.  
   
- This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
+ This method supports automatic propagation of inheritable ACEs.  
   
 ##  <a name="isgroupdefaulted"></a>  CSecurityDesc::IsGroupDefaulted  
  Determines if the security descriptor's group security identifier (SID) was set by default.  
@@ -403,7 +384,7 @@ bool IsSaclProtected() const throw();
 ### Remarks  
  To set this flag, use the [CSecurityDesc::SetSacl](#setsacl) method.  
   
- This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
+ This method supports automatic propagation of inheritable ACEs.  
   
 ##  <a name="isselfrelative"></a>  CSecurityDesc::IsSelfRelative  
  Determines if the security descriptor is in self-relative format.  
@@ -476,14 +457,14 @@ bool SetControl(
  `ControlBitsOfInterest`  
  A **SECURITY_DESCRIPTOR_CONTROL** mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
- `ControlBitsToSe`t  
+ `ControlBitsToSet`  
  A `SECURITY_DESCRIPTOR_CONTROL` mask that indicates the new values for the control bits specified by the `ControlBitsOfInterest` mask. This parameter can be a combination of the flags listed for the `ControlBitsOfInterest` parameter.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- This method is available only on Windows 2000 and later, as it calls [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
+ This method calls [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl  
  Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.  
@@ -601,7 +582,7 @@ bool ToString(
   
  If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input security descriptor, the resulting security descriptor string does not have a D: component. See [Security Descriptor String Format](http://msdn.microsoft.com/library/windows/desktop/aa379570) for more details.  
   
- This method is only available with Windows 2000 and later, as it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   

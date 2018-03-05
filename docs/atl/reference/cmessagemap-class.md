@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMessageMap"
-  - "ATL.CMessageMap"
-  - "ATL::CMessageMap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMessageMap class"
-  - "message maps, ATL"
-  - "ATL, message handlers"
+f1_keywords: ["CMessageMap", "ATLWIN/ATL::CMessageMap", "ATLWIN/ATL::CMessageMap::ProcessWindowMessage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMessageMap class", "message maps, ATL", "ATL, message handlers"]
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMessageMap Class
 This class allows an object's message maps to be access by another object.  
@@ -102,7 +81,7 @@ virtual BOOL ProcessWindowMessage(
  [out] The result of the message processing.  
   
  `dwMsgMapID`  
- [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8), is identified by `msgMapID`.  
+ [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), is identified by `msgMapID`.  
   
 ### Return Value  
  **TRUE** if the message is fully handled; otherwise, **FALSE**.  
@@ -112,6 +91,6 @@ virtual BOOL ProcessWindowMessage(
   
 ## See Also  
  [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)   
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
- [ALT_MSG_MAP](http://msdn.microsoft.com/library/2c8871bf-abc0-4d52-bcf7-6b2ab9eb5af8)   
+ [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+ [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
  [Class Overview](../../atl/atl-class-overview.md)

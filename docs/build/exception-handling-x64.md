@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ exception handling, x64"
-  - "exception handling, x64"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ exception handling, x64", "exception handling, x64"]
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling (x64)
 This section discusses structured exception handling and C++ exception handling behavior on the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  

@@ -2,24 +2,21 @@
 title: "default namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "default_CPP"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
 caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # default namespace
-The `default` namespace scopes the built-in types that are supported by [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] ([!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)]).  
+The `default` namespace scopes the built-in types that are supported by C++/CX.  
   
 ## Syntax  
   
@@ -27,15 +24,15 @@ The `default` namespace scopes the built-in types that are supported by [!INCLUD
 namespace default;  
 ```  
   
-## Members  
+### Members  
  All built-in types inherit the following members.  
   
 |||  
 |-|-|  
-|[default::(type_name)::Equals Method](../cppcx/default-type-name-equals-method.md)|Determines whether the specified object is equal to the current object.|  
-|[default::(type_name)::GetHashCode Method](../cppcx/default-type-name-gethashcode-method.md)|Returns the hash code for this instance.|  
-|[default::(type_name)::GetType Method](../cppcx/default-type-name-gettype-method.md)|Returns a string that represents the current type.|  
-|[default::(type_name)::ToString Method](../cppcx/default-type-name-tostring-method.md)|Returns a string that represents the current type.|  
+|[default::(type_name)::Equals](../cppcx/default-type-name-equals-method.md)|Determines whether the specified object is equal to the current object.|  
+|[default::(type_name)::GetHashCode](../cppcx/default-type-name-gethashcode-method.md)|Returns the hash code for this instance.|  
+|[default::(type_name)::GetType](../cppcx/default-type-name-gettype-method.md)|Returns a string that represents the current type.|  
+|[default::(type_name)::ToString](../cppcx/default-type-name-tostring-method.md)|Returns a string that represents the current type.|  
   
 ### Built-in types  
   
@@ -53,7 +50,7 @@ namespace default;
 |`uint64`|A 64-bit unsigned integer.|  
 |`uint8`|An 8-bit unsigned numeric value.|  
   
-## Requirements  
+### Requirements  
  **Header:** vccorlib.h  
   
 ## See Also  

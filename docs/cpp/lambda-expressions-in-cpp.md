@@ -1,42 +1,29 @@
 ---
 title: "Lambda Expressions in C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/19/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lambda expressions [C++]"
-  - "lambda expressions [C++], overview"
-  - "lambda expressions [C++], vs. function objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Lambda Expressions in C++
-In C++11, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
-  
+In C++11 and later, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object (a *closure*) right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
+
+## Related Topics
+- [Lambda expressions vs. function objects](lambda-expression-syntax.md)
+- [Working with lambda expressions](examples-of-lambda-expressions.md)
+- [constexpr lambda expressions](lambda-expressions-constexpr.md)
+
 ## Parts of a Lambda Expression  
  The ISO C++ Standard shows a simple lambda that is passed as the third argument to the `std::sort()` function:  
   
@@ -72,11 +59,11 @@ void abssort(float* x, unsigned n) {
 6.  *lambda body*)  
   
 ### Capture Clause  
- A lambda can introduce new variables in its body (in **C++14**), and it can also access—or *capture*--variables from the surrounding scope. A lambda begins with the capture clause (*lambda-introducer* in the Standard syntax), which specifies which variables are captured, and whether the capture is by value or by reference. Variables that have the ampersand (`&`) prefix are accessed by reference and variables that do not have it are accessed by value.  
+ A lambda can introduce new variables in its body (in **C++14**), and it can also access, or *capture*, variables from the surrounding scope. A lambda begins with the capture clause (*lambda-introducer* in the Standard syntax), which specifies which variables are captured, and whether the capture is by value or by reference. Variables that have the ampersand (`&`) prefix are accessed by reference and variables that do not have it are accessed by value.  
   
  An empty capture clause, `[ ]`, indicates that the body of the lambda expression accesses no variables in the enclosing scope.  
   
- You can use the default capture mode (`capture-default` in the Standard syntax) to indicate how to capture any outside variables that are referenced in the lambda: [&] means all variables that you refer to are captured by reference, and [=] means they are captured by value. You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, if a lambda body accesses the external variable `total` by reference and the external variable `factor` by value, then the following capture clauses are equivalent:  
+ You can use the default capture mode (*capture-default* in the Standard syntax) to indicate how to capture any outside variables that are referenced in the lambda: `[&]` means all variables that you refer to are captured by reference, and `[=]` means they are captured by value. You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, if a lambda body accesses the external variable `total` by reference and the external variable `factor` by value, then the following capture clauses are equivalent:  
   
 ```cpp  
 [&total, factor]  
@@ -87,22 +74,23 @@ void abssort(float* x, unsigned n) {
 [&total, =]  
 ```  
   
- Only variables that are mentioned in the lambda are captured when a `capture-default` is used.  
+ Only variables that are mentioned in the lambda are captured when a capture-default is used.  
   
- If a capture clause includes a `capture-default``&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a `capture-default``=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or `this` cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
+ If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or `this` cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
   
 ```cpp  
 struct S { void f(int i); };  
   
 void S::f(int i) {  
-    [&, i]{};    // OK  
-    [&, &i]{};   // ERROR: i preceded by & when & is the default  
-    [=, this]{}; // ERROR: this when = is the default  
-    [i, i]{};    // ERROR: i repeated  
+    [&, i]{};      // OK  
+    [&, &i]{};     // ERROR: i preceded by & when & is the default  
+    [=, this]{};   // ERROR: this when = is the default  
+    [=, *this]{ }; // OK: captures this by value. See below.
+    [i, i]{};      // ERROR: i repeated  
 }  
 ```  
   
- A `capture` followed by an ellipsis is a pack expansion, as shown in this [variadic template](../cpp/ellipses-and-variadic-templates.md) example:  
+ A capture followed by an ellipsis is a pack expansion, as shown in this [variadic template](../cpp/ellipses-and-variadic-templates.md) example:  
   
 ```cpp  
 template<class... Args>  
@@ -112,7 +100,11 @@ void f(Args... args) {
 }  
 ```  
   
- To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
+ To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. 
+ 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The `this` pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA. 
+
+For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
  When you use the capture clause, we recommend that you keep these points in mind, particularly when you use lambdas with multithreading:  
   
@@ -122,11 +114,11 @@ void f(Args... args) {
   
 -   Reference captures introduce a lifetime dependency, but value captures have no lifetime dependencies. This is especially important when the lambda runs asynchronously. If you capture a local by reference in an async lambda, that local will very possibly be gone by the time the lambda runs, resulting in an access violation at run time.  
   
- **Generalized capture (C++ 14)**  
+### Generalized capture (C++ 14)  
   
  In C++14, you can introduce and initialize new variables in the capture clause, without the need to have those variables exist in the lambda function’s enclosing scope. The initialization can be expressed as any arbitrary expression; the type of the new variable is deduced from the type produced by the expression. One benefit of this feature is that in C++14 you can capture move-only variables (such as std::unique_ptr) from the surrounding scope and use them in a lambda.  
   
-```  
+```cpp  
 pNums = make_unique<vector<int>>(nums);  
 //...  
       auto a = [ptr = move(pNums)]()  
@@ -138,8 +130,8 @@ pNums = make_unique<vector<int>>(nums);
 ### Parameter List  
  In addition to capturing variables, a lambda can accept input parameters. A parameter list (*lambda declarator* in the Standard syntax) is optional and in most aspects resembles the parameter list for a function.  
   
-```  
-int y = [] (int first, int second)  
+```cpp  
+auto y = [] (int first, int second)  
 {  
     return first + second;  
 };  
@@ -148,7 +140,7 @@ int y = [] (int first, int second)
   
  In **C++ 14**, if the parameter type is generic, you can use the auto keyword as the type specifier. This tells the compiler to create the function call operator as a template. Each instance of auto in a parameter list is equivalent to a distinct type parameter.  
   
-```  
+```cpp  
 auto y = [] (auto first, auto second)  
 {  
     return first + second;  
@@ -157,20 +149,20 @@ auto y = [] (auto first, auto second)
   
  A lambda expression can take another lambda expression as its argument. For more information, see "Higher-Order Lambda Expressions" in the topic [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
- Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its `lambda-declarator:` does not contain *exception-specification*, *trailing-return-type*, or `mutable`.  
+ Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its lambda-declarator does not contain *exception-specification*, *trailing-return-type*, or `mutable`.  
   
 ### Mutable Specification  
  Typically, a lambda's function call operator is const-by-value, but use of the `mutable` keyword cancels this out. It does not produce mutable data members. The mutable specification enables the body of a lambda expression to modify variables that are captured by value. Some of the examples later in this article show how to use `mutable`.  
   
 ### Exception Specification  
- You can use the `throw()` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `throw()` exception specification and the lambda body throws an exception, as shown here:  
+ You can use the `noexcept` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `noexcept` exception specification and the lambda body throws an exception, as shown here:  
   
 ```cpp  
 // throw_lambda_expression.cpp  
 // compile with: /W4 /EHsc   
 int main() // C4297 expected  
 {  
-   []() throw() { throw 5; }();  
+   []() noexcept { throw 5; }();  
 }  
 ```  
   
@@ -185,7 +177,6 @@ int main() // C4297 expected
 auto x1 = [](int i){ return i; }; // OK: return type is int  
 auto x2 = []{ return{ 1, 2 }; };  // ERROR: return type is void, deducing   
                                   // return type from braced-init-list is not valid  
-  
 ```  
   
  A lambda expression can produce another lambda expression as its return value. For more information, see "Higher-Order Lambda Expressions" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
@@ -220,12 +211,9 @@ int main()
 }  
 ```  
   
- **Output:**  
-  
 ```Output  
 5  
 0  
-  
 ```  
   
  Because the variable `n` is captured by value, its value remains `0` after the call to the lambda expression. The `mutable` specification allows `n` to be modified within the lambda.  
@@ -246,7 +234,7 @@ void fillVector(vector<int>& v)
 }  
 ```  
   
- For more information, see [generate](http://msdn.microsoft.com/Library/0353f358-9651-4e00-b0c9-5bca720539a3).  
+ For more information, see [generate](../standard-library/algorithm-functions.md#generate).  
   
  The following code example uses the function from the previous example, and adds an example of a lambda expression that uses the C++ Standard Library algorithm `generate_n`. This lambda expression assigns an element of a `vector` object to the sum of the previous two elements. The `mutable` keyword is used so that the body of the lambda expression can modify its copies of the external variables `x` and `y`, which the lambda expression captures by value. Because the lambda expression captures the original variables `x` and `y` by value, their values remain `1` after the lambda executes.  
   
@@ -319,20 +307,53 @@ int main()
     fillVector(v);  
     print("vector v after 2nd call to fillVector(): ", v);  
 }  
-  
 ```  
-  
- **Output:**  
   
 ```Output  
 vector v after call to generate_n() with lambda: 1 1 2 3 5 8 13 21 34  
 x: 1 y: 1  
 vector v after 1st call to fillVector(): 1 2 3 4 5 6 7 8 9  
 vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18  
-  
 ```  
   
- For more information, see [generate_n](http://msdn.microsoft.com/Library/377e5b0f-1bb8-4b77-9449-fbebf57f6e5e).  
+ For more information, see [generate_n](../standard-library/algorithm-functions.md#generate_n).  
+
+## constexpr lambda expressions
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): A lambda expression may be declared as `constexpr` or used in a constant expression when the initialization of each data member that it captures or introduces is allowed within a constant expression.  
+
+```cpp
+    int y = 32;
+	auto answer = [y]() constexpr 
+	{
+		int x = 10;
+		return y + x; 
+	};
+
+    constexpr int Increment(int n) 
+    {
+	    return [n] { return n + 1; }();
+    }
+
+``` 
+A lambda is implicitly `constexpr` if its result satisfies the requirements of a `constexpr` function:
+```cpp
+	auto answer = [](int n) 
+	{
+		return 32 + n; 
+	};
+
+	constexpr int response = answer(10);
+``` 
+If a lambda is implicitly or explicitly `constexpr`, conversion to a function pointer produces a `constexpr` function:
+
+```cpp
+	auto Increment = [](int n)
+	{
+		return n + 1;
+	};
+
+	constexpr int(*inc)(int) = Increment;
+```
   
 ## Microsoft-Specific  
  Lambdas are not supported in the following common language runtime (CLR) managed entities: `ref class`, `ref struct`, `value class`, or `value struct`.  
@@ -341,25 +362,14 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
   
 ```cpp  
 auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };  
-  
 ```  
   
  To determine whether a modifier is supported by lambdas, see the article about it in the [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md) section of the documentation.  
   
- Visual Studio supports C++11 Standard lambda expression syntax and functionality, with these exceptions:  
-  
--   Like all other classes, lambdas don't get automatically generated move constructors and move assignment operators. For more information about support for rvalue reference behaviors, see the "Rvalue References" section in [Support For C++11/14/17 Features (Modern C++)](../cpp/support-for-cpp11-14-17-features-modern-cpp.md).  
-  
--   The optional *attribute-specifier-seq* is not supported in this version.  
-  
- Visual Studio includes these features in addition to C++11 Standard lambda functionality:  
-  
--   Stateless lambdas, which are omni-convertible to function pointers that use arbitrary calling conventions.  
-  
--   Automatically deduced return types for lambda bodies that are more complicated than `{ return expression; }`, as long as all return statements have the same type. (This functionality is part of the proposed C++14 Standard.)  
+ In addition to C++11 Standard lambda functionality, Visual Studio supports stateless lambdas, which are omni-convertible to function pointers that use arbitrary calling conventions.  
   
 ## See Also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Function Objects in the C++ Standard Library](../standard-library/function-objects-in-the-stl.md)   
  [Function Call](../cpp/function-call-cpp.md)   
- [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33)
+ [for_each](../standard-library/algorithm-functions.md#for_each)

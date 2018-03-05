@@ -4,47 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SCHEMA_ENTRY"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SCHEMA_ENTRY macro"
+ms.topic: "reference"
+f1_keywords: ["SCHEMA_ENTRY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SCHEMA_ENTRY macro"]
 ms.assetid: e8bee479-80f3-417e-8f41-cdaddd49690c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # SCHEMA_ENTRY
 Associates a GUID with a class.  
   
 ## Syntax  
   
-```  
-  
-      SCHEMA_ENTRY(  
-   guid,  
-   rowsetClass   
-);   
+```cpp
+      SCHEMA_ENTRY(guid,  
+   rowsetClass);   
 ```  
   
 #### Parameters  
@@ -57,9 +37,11 @@ Associates a GUID with a class.
 ## Remarks  
  [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) can then query the map for a list of GUIDs, or it can create a rowset if it is given a GUID. The schema rowset `IDBSchemaRowsetImpl` creates is similar to a standard `CRowsetImpl`-derived class, except it must provide an **Execute** method that has the following signature:  
   
- `HRESULT Execute (LONG* pcRowsAffected, ULONG cRestrictions,`  
-  
- `const VARIANT* rgRestrictions)`  
+```  
+HRESULT Execute (LONG* pcRowsAffected,  
+    ULONG cRestrictions,  
+    const VARIANT* rgRestrictions);  
+```  
   
  This **Execute** function populates the rowset's data. The ATL Project Wizard creates, as described in [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference*, three initial schema rowsets in the project for each of the three mandatory OLE DB schemas:  
   

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::insert_iterator"
-  - "iterator/std::insert_iterator"
-  - "std.insert_iterator"
-  - "insert_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert_iterator class"
-  - "insert_iterator class, syntax"
+ms.topic: "reference"
+f1_keywords: ["iterator/std::insert_iterator", "iterator/std::insert_iterator::container_type", "iterator/std::insert_iterator::reference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::insert_iterator [C++]", "std::insert_iterator [C++], container_type", "std::insert_iterator [C++], reference"]
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence and associative containers. The `insert_iterator` class is templatized on the type of container being adapted.  
@@ -59,29 +38,29 @@ class insert_iterator;
   
 |||  
 |-|-|  
-|[insert_iterator](#insert_iterator__insert_iterator)|Constructs an `insert_iterator` that inserts an element into a specified position in a container.|  
+|[insert_iterator](#insert_iterator)|Constructs an `insert_iterator` that inserts an element into a specified position in a container.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#insert_iterator__container_type)|A type that represents the container into which a general insertion is to be made.|  
-|[reference](#insert_iterator__reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|  
+|[container_type](#container_type)|A type that represents the container into which a general insertion is to be made.|  
+|[reference](#reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#insert_iterator__operator_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a general insertion.|  
-|[operator++](#insert_iterator__operator_add_add)|Increments the `insert_iterator` to the next location into which a value may be stored.|  
-|[operator=](#insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a general insertion.|  
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a general insertion.|  
+|[operator++](#op_add_add)|Increments the `insert_iterator` to the next location into which a value may be stored.|  
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a general insertion.|  
   
 ## Requirements  
  **Header**: \<iterator>  
   
  **Namespace:** std  
   
-##  <a name="insert_iterator__container_type"></a>  insert_iterator::container_type  
+##  <a name="container_type"></a>  insert_iterator::container_type  
  A type that represents the container into which a general insertion is to be made.  
   
 ```
@@ -121,7 +100,7 @@ The list L2 is: ( 40 20 10 ).
 *\  
 ```  
   
-##  <a name="insert_iterator__insert_iterator"></a>  insert_iterator::insert_iterator  
+##  <a name="insert_iterator"></a>  insert_iterator::insert_iterator  
  Constructs an `insert_iterator` that inserts an element into a specified position in a container.  
   
 ```
@@ -184,7 +163,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="insert_iterator__operator_star"></a>  insert_iterator::operator*  
+##  <a name="op_star"></a>  insert_iterator::operator*  
  Dereferences the insert iterator returning the element is addresses.  
   
 ```
@@ -241,7 +220,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="insert_iterator__operator_add_add"></a>  insert_iterator::operator++  
+##  <a name="op_add_add"></a>  insert_iterator::operator++  
  Increments the **insert_iterator** to the next location into which a value may be stored.  
   
 ```
@@ -302,7 +281,7 @@ After the insertions, the vector vec becomes:
 *\  
 ```  
   
-##  <a name="insert_iterator__operator_eq"></a>  insert_iterator::operator=  
+##  <a name="op_eq"></a>  insert_iterator::operator=  
  Inserts a value into the container and returns the iterator updated to point to the new element.  
   
 ```
@@ -381,7 +360,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="insert_iterator__reference"></a>  insert_iterator::reference  
+##  <a name="reference"></a>  insert_iterator::reference  
  A type that provides a reference to an element in a sequence controlled by the associated container.  
   
 ```

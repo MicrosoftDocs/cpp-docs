@@ -4,46 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.BufferSecurityCheck"
-  - "VC.Project.VCCLCompilerTool.BufferSecurityCheck"
-  - "/GS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "buffers [C++], buffer overruns"
-  - "buffer overruns, compiler /GS switch"
-  - "GS compiler option [C++]"
-  - "/GS compiler option [C++]"
-  - "security check compiler option [C++]"
-  - "-GS compiler option [C++]"
-  - "buffers [C++], avoiding overruns"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck", "/GS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["buffers [C++], buffer overruns", "buffer overruns, compiler /GS switch", "GS compiler option [C++]", "/GS compiler option [C++]", "security check compiler option [C++]", "-GS compiler option [C++]", "buffers [C++], avoiding overruns"]
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
 caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
-# /GS (Buffer Security Check)
+# /GS (Buffer Security Check)  
+  
 Detects some buffer overruns that overwrite a function's return address, exception handler address, or certain types of parameters. Causing a buffer overrun is a technique used by hackers to exploit code that does not enforce buffer size restrictions.  
   
 ## Syntax  
@@ -53,13 +28,16 @@ Detects some buffer overruns that overwrite a function's return address, excepti
 ```  
   
 ## Remarks  
- **/GS** is on by default. If you expect your application to have no security exposure, use **/GS-**. For more information about **/GS**, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260). For more information about suppressing buffer overrun detection, see [safebuffers](../../cpp/safebuffers.md).  
+  
+**/GS** is on by default. If you expect your application to have no security exposure, use **/GS-**. For more information about **/GS**, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260). For more information about suppressing buffer overrun detection, see [safebuffers](../../cpp/safebuffers.md).  
   
 ## Security Checks  
- On functions that the compiler recognizes as subject to buffer overrun problems, the compiler allocates space on the stack before the return address. On function entry, the allocated space is loaded with a *security cookie* that is computed once at module load. On function exit, and during frame unwinding on 64-bit operating systems, a helper function is called to make sure that the value of the cookie is still the same. A different value indicates that an overwrite of the stack may have occurred. If a different value is detected, the process is terminated.  
+  
+On functions that the compiler recognizes as subject to buffer overrun problems, the compiler allocates space on the stack before the return address. On function entry, the allocated space is loaded with a *security cookie* that is computed once at module load. On function exit, and during frame unwinding on 64-bit operating systems, a helper function is called to make sure that the value of the cookie is still the same. A different value indicates that an overwrite of the stack may have occurred. If a different value is detected, the process is terminated.  
   
 ## GS Buffers  
- A buffer overrun security check is performed on a *GS buffer*. A GS buffer can be one of these:  
+  
+A buffer overrun security check is performed on a *GS buffer*. A GS buffer can be one of these:  
   
 -   An array that is larger than 4 bytes, has more than two elements, and has an element type that is not a pointer type.  
   
@@ -69,18 +47,18 @@ Detects some buffer overruns that overwrite a function's return address, excepti
   
 -   Any class or structure that contains a GS buffer.  
   
- For example, the following statements declare GS buffers.  
+For example, the following statements declare GS buffers.  
   
-```  
+```cpp  
 char buffer[20];  
 int buffer[20];  
 struct { int a; int b; int c; int d; } myStruct;  
 struct { int a; char buf[20]; };  
 ```  
   
- However, the following statements do not declare GS buffers. The first two declarations contain elements of pointer type. The third and fourth statements declare arrays whose size is too small. The fifth statement declares a structure whose size on an x86 platform is not more than 8 bytes.  
+However, the following statements do not declare GS buffers. The first two declarations contain elements of pointer type. The third and fourth statements declare arrays whose size is too small. The fifth statement declares a structure whose size on an x86 platform is not more than 8 bytes.  
   
-```  
+```cpp  
 char *pBuf[20];  
 void *pv[20];  
 char buf[4];  
@@ -89,10 +67,12 @@ struct { int a; int b; };
 ```  
   
 ## Initialize the Security Cookie  
- The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized on entry to an EXE or DLL. This is done automatically if you use the default CRT entry points (mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, or _DllMainCRTStartup). If you use an alternate entry point, you must manually initialize the security cookie by calling [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).  
+  
+The **/GS** compiler option requires that the security cookie be initialized before any function that uses the cookie is run. The security cookie must be initialized immediately on entry to an EXE or DLL. This is done automatically if you use the default VCRuntime entry points: mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, or _DllMainCRTStartup. If you use an alternate entry point, you must manually initialize the security cookie by calling [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).  
   
 ## What Is Protected  
- The **/GS** compiler option protects the following items:  
+  
+The **/GS** compiler option protects the following items:  
   
 -   The return address of a function call.  
   
@@ -100,15 +80,15 @@ struct { int a; int b; };
   
 -   Vulnerable function parameters.  
   
- On all platforms, **/GS** attempts to detect buffer overruns into the return address. Buffer overruns are more easily exploited on platforms such as x86 and x64, which use calling conventions that store the return address of a function call on the stack.  
+On all platforms, **/GS** attempts to detect buffer overruns into the return address. Buffer overruns are more easily exploited on platforms such as x86 and x64, which use calling conventions that store the return address of a function call on the stack.  
   
- On x86, if a function uses an exception handler, the compiler injects a security cookie to protect the address of the exception handler. The cookie is checked during frame unwinding.  
+On x86, if a function uses an exception handler, the compiler injects a security cookie to protect the address of the exception handler. The cookie is checked during frame unwinding.  
   
- **/GS** protects *vulnerable parameters* that are passed into a function. A vulnerable parameter is a pointer, a C++ reference, a C-structure (C++ POD type) that contains a pointer, or a GS buffer.  
+**/GS** protects *vulnerable parameters* that are passed into a function. A vulnerable parameter is a pointer, a C++ reference, a C-structure (C++ POD type) that contains a pointer, or a GS buffer.  
   
- A vulnerable parameter is allocated before the cookie and local variables. A buffer overrun can overwrite these parameters. And code in the function that uses these parameters could cause an attack before the function returns and the security check is performed. To minimize this danger, the compiler makes a copy of the vulnerable parameters during the function prolog and puts them below the storage area for any buffers.  
+A vulnerable parameter is allocated before the cookie and local variables. A buffer overrun can overwrite these parameters. And code in the function that uses these parameters could cause an attack before the function returns and the security check is performed. To minimize this danger, the compiler makes a copy of the vulnerable parameters during the function prolog and puts them below the storage area for any buffers.  
   
- The compiler does not make copies of vulnerable parameters in the following situations:  
+The compiler does not make copies of vulnerable parameters in the following situations:  
   
 -   Functions that do not contain a GS buffer.  
   
@@ -123,11 +103,12 @@ struct { int a; int b; };
 -   A parameter is used only in ways that are less likely to be exploitable in the event of a buffer overrun.  
   
 ## What Is Not Protected  
- The **/GS** compiler option does not protect against all buffer overrun security attacks. For example, if you have a buffer and a vtable in an object, a buffer overrun could corrupt the vtable.  
   
- Even if you use **/GS**, always try to write secure code that has no buffer overruns.  
+The **/GS** compiler option does not protect against all buffer overrun security attacks. For example, if you have a buffer and a vtable in an object, a buffer overrun could corrupt the vtable.  
   
-#### To set this compiler option in Visual Studio  
+Even if you use **/GS**, always try to write secure code that has no buffer overruns.  
+  
+### To set this compiler option in Visual Studio  
   
 1.  In **Solution Explorer**, right-click the project and then click **Properties**.  
   
@@ -139,14 +120,15 @@ struct { int a; int b; };
   
 4.  Modify the **Buffer Security Check** property.  
   
-#### To set this compiler option programmatically  
+### To set this compiler option programmatically  
   
 -   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BufferSecurityCheck%2A>.  
   
 ## Example  
- This sample overruns a buffer. This causes the application to fail at runtime.  
   
-```  
+This sample overruns a buffer. This causes the application to fail at runtime.  
+  
+```C  
 // compile with: /c /W1  
 #include <cstring>  
 #include <stdlib.h>  
@@ -170,5 +152,6 @@ int main() {
 ```  
   
 ## See Also  
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+  
+[Compiler Options](../../build/reference/compiler-options.md)   
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)

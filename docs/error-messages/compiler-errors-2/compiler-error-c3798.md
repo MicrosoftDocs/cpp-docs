@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3798"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3798"
+f1_keywords: ["C3798"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3798"]
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3798
 'specifier': property declaration cannot have override specifier (should be placed on property get/set methods instead)  

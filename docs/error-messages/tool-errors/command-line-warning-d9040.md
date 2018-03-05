@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "D9040"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "D9040"
+f1_keywords: ["D9040"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["D9040"]
 ms.assetid: 415e7f04-c1bd-4ac1-924a-03efa4645140
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9040
 ignoring option '/analyze'; Code Analysis warnings are not available in this edition of the compiler  

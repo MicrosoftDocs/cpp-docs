@@ -4,55 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "___mb_cur_max_l_func"
-  - "__p___mb_cur_max"
-  - "___mb_cur_max_func"
-  - "__mb_cur_max"
-apilocation: 
-  - "msvcr110_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcrt.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
+apiname: ["___mb_cur_max_l_func", "__p___mb_cur_max", "___mb_cur_max_func", "__mb_cur_max"]
+apilocation: ["msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "___mb_cur_max_func"
-  - "___mb_cur_max_l_func"
-  - "__p___mb_cur_max"
-  - "__mb_cur_max"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__mb_cur_max"
-  - "___mb_cur_max_func"
-  - "___mb_cur_max_l_func"
-  - "__p___mb_cur_max"
+f1_keywords: ["___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max", "__mb_cur_max"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__mb_cur_max", "___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max"]
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 Internal CRT function. Retrieves the maximum number of bytes in a multibyte character for the current or specified locale.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "troubleshooting side-by-side assemblies"
-  - "troubleshooting isolated applications"
-  - "troubleshooting Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies
 Loading a C/C++ application can fail if dependent libraries cannot be found. This article describes some common reasons why a C/C++ application fails to load, and suggests steps to resolve the problems.  
@@ -67,7 +49,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
 6.  Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](http://msdn.microsoft.com/library/aa374224). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.  
   
 ## Example  
- Assume we have an application, appl.exe, that's built by using [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:  
+ Assume we have an application, appl.exe, that's built by using Visual C++. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:  
   
 ```  
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  

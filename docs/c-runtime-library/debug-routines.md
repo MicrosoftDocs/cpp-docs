@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.debug"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging [CRT], using macros"
-  - "macros, debugging with"
-  - "debug routines"
-  - "debug macros"
-  - "debugging [CRT], run-time routines"
+f1_keywords: ["c.debug"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging [CRT], using macros", "macros, debugging with", "debug routines", "debug macros", "debugging [CRT], run-time routines"]
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Debug Routines
 The debug version of the C run-time library supplies many diagnostic services that make debugging programs easier and allow developers to:  
@@ -54,43 +32,43 @@ The debug version of the C run-time library supplies many diagnostic services th
   
 ### Debug Versions of the C Run-Time Library Routines  
   
-|Routine|Use|.NET Framework equivalent|  
-|-------------|---------|-------------------------------|  
-|[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Evaluate an expression and generates a debug report when the result is FALSE|[System::Diagnostics::Debug::Assert](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.assert.aspx)|  
-|[_ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Similar to `_ASSERT`, but includes the failed expression in the generated report|[System::Diagnostics::Debug::Assert](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.assert.aspx)|  
-|[_CrtCheckMemory](../c-runtime-library/reference/crtcheckmemory.md)|Confirm the integrity of the memory blocks allocated on the debug heap|[System::Diagnostics::PerformanceCounter](https://msdn.microsoft.com/en-us/library/system.diagnostics.performancecounter.aspx)|  
-|[_CrtDbgBreak](../c-runtime-library/reference/crtdbgbreak.md)|Sets a break point.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtDbgReport, _CrtDbgReportW](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)|Generate a debug report with a user message and send the report to three possible destinations|[System::Diagnostics::Debug::Write](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.write.aspx), [System::Diagnostics::Debug::Writeline](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeline.aspx), [System::Diagnostics::Debug::WriteIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writeif.aspx), [System::Diagnostics::Debug::WriteLineIf](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.writelineif.aspx)|  
-|[_CrtDoForAllClientObjects](../c-runtime-library/reference/crtdoforallclientobjects.md)|Call an application-supplied function for all `_CLIENT_BLOCK` types on the heap|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md)|Dump all of the memory blocks on the debug heap when a significant memory leak has occurred|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtIsMemoryBlock](../c-runtime-library/reference/crtismemoryblock.md)|Verify that a specified memory block is located within the local heap and that it has a valid debug heap block type identifier|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtIsValidHeapPointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Verifies that a specified pointer is in the local heap|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtIsValidPointer](../c-runtime-library/reference/crtisvalidpointer.md)|Verify that a specified memory range is valid for reading and writing|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtMemCheckpoint](../c-runtime-library/reference/crtmemcheckpoint.md)|Obtain the current state of the debug heap and store it in an application-supplied `_CrtMemState` structure|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtMemDifference](../c-runtime-library/reference/crtmemdifference.md)|Compare two memory states for significant differences and return the results|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtMemDumpAllObjectsSince](../c-runtime-library/reference/crtmemdumpallobjectssince.md)|Dump information about objects on the heap since a specified checkpoint was taken or from the start of program execution|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtMemDumpStatistics](../c-runtime-library/reference/crtmemdumpstatistics.md)|Dump the debug header information for a specified memory state in a user-readable form|[System::Diagnostics::PerformanceCounter](https://msdn.microsoft.com/en-us/library/system.diagnostics.performancecounter.aspx)|  
-|[_CrtReportBlockType](../c-runtime-library/reference/crtreportblocktype.md)|Returns the block type/subtype associated with a given debug heap block pointer.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetAllocHook](../c-runtime-library/reference/crtsetallochook.md)|Install a client-defined allocation function by hooking it into the C run-time debug memory allocation process|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetBreakAlloc](../c-runtime-library/reference/crtsetbreakalloc.md)|Set a breakpoint on a specified object allocation order number|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md)|Retrieve or modify the state of the `_crtDbgFlag` flag to control the allocation behavior of the debug heap manager|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetDumpClient](../c-runtime-library/reference/crtsetdumpclient.md)|Install an application-defined function that is called every time a debug dump function is called to dump `_CLIENT_BLOCK` type memory blocks|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetReportFile](../c-runtime-library/reference/crtsetreportfile.md)|Identify the file or stream to be used as a destination for a specific report type by `_CrtDbgReport`|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetReportHook](../c-runtime-library/reference/crtsetreporthook.md)|Install a client-defined reporting function by hooking it into the C run-time debug reporting process|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetReportHook2, _CrtSetReportHookW2](../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md)|Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_CrtSetReportMode](../c-runtime-library/reference/crtsetreportmode.md)|Specify the general destination(s) for a specific report type generated by `_CrtDbgReport`|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_RPT&#91;0,1,2,3,4&#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Track the application's progress by generating a debug report by calling `_CrtDbgReport` with a format string and a variable number of arguments. Provides no source file and line number information.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_RPTF&#91;0,1,2,3,4&#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Similar to the `_RPTn` macros, but provides the source file name and line number where the report request originated|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Allocate a specified number of memory blocks on the heap with additional space for a debugging header and overwrite buffers|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Resize a specified block of memory on the heap by expanding or contracting the block|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Free a block of memory on the heap|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
+|Routine|Use|  
+|-------------|---------|  
+|[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Evaluate an expression and generates a debug report when the result is FALSE|  
+|[_ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Similar to `_ASSERT`, but includes the failed expression in the generated report|  
+|[_CrtCheckMemory](../c-runtime-library/reference/crtcheckmemory.md)|Confirm the integrity of the memory blocks allocated on the debug heap|  
+|[_CrtDbgBreak](../c-runtime-library/reference/crtdbgbreak.md)|Sets a break point.|  
+|[_CrtDbgReport, _CrtDbgReportW](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)|Generate a debug report with a user message and send the report to three possible destinations|  
+|[_CrtDoForAllClientObjects](../c-runtime-library/reference/crtdoforallclientobjects.md)|Call an application-supplied function for all `_CLIENT_BLOCK` types on the heap|  
+|[_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md)|Dump all of the memory blocks on the debug heap when a significant memory leak has occurred|  
+|[_CrtIsMemoryBlock](../c-runtime-library/reference/crtismemoryblock.md)|Verify that a specified memory block is located within the local heap and that it has a valid debug heap block type identifier|  
+|[_CrtIsValidHeapPointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Verifies that a specified pointer is in the local heap|  
+|[_CrtIsValidPointer](../c-runtime-library/reference/crtisvalidpointer.md)|Verify that a specified memory range is valid for reading and writing|  
+|[_CrtMemCheckpoint](../c-runtime-library/reference/crtmemcheckpoint.md)|Obtain the current state of the debug heap and store it in an application-supplied `_CrtMemState` structure|  
+|[_CrtMemDifference](../c-runtime-library/reference/crtmemdifference.md)|Compare two memory states for significant differences and return the results|  
+|[_CrtMemDumpAllObjectsSince](../c-runtime-library/reference/crtmemdumpallobjectssince.md)|Dump information about objects on the heap since a specified checkpoint was taken or from the start of program execution|  
+|[_CrtMemDumpStatistics](../c-runtime-library/reference/crtmemdumpstatistics.md)|Dump the debug header information for a specified memory state in a user-readable form|  
+|[_CrtReportBlockType](../c-runtime-library/reference/crtreportblocktype.md)|Returns the block type/subtype associated with a given debug heap block pointer.|  
+|[_CrtSetAllocHook](../c-runtime-library/reference/crtsetallochook.md)|Install a client-defined allocation function by hooking it into the C run-time debug memory allocation process|  
+|[_CrtSetBreakAlloc](../c-runtime-library/reference/crtsetbreakalloc.md)|Set a breakpoint on a specified object allocation order number|  
+|[_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md)|Retrieve or modify the state of the `_crtDbgFlag` flag to control the allocation behavior of the debug heap manager|  
+|[_CrtSetDumpClient](../c-runtime-library/reference/crtsetdumpclient.md)|Install an application-defined function that is called every time a debug dump function is called to dump `_CLIENT_BLOCK` type memory blocks|  
+|[_CrtSetReportFile](../c-runtime-library/reference/crtsetreportfile.md)|Identify the file or stream to be used as a destination for a specific report type by `_CrtDbgReport`|  
+|[_CrtSetReportHook](../c-runtime-library/reference/crtsetreporthook.md)|Install a client-defined reporting function by hooking it into the C run-time debug reporting process|  
+|[_CrtSetReportHook2, _CrtSetReportHookW2](../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md)|Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process.|  
+|[_CrtSetReportMode](../c-runtime-library/reference/crtsetreportmode.md)|Specify the general destination(s) for a specific report type generated by `_CrtDbgReport`|  
+|[_RPT&#91;0,1,2,3,4&#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Track the application's progress by generating a debug report by calling `_CrtDbgReport` with a format string and a variable number of arguments. Provides no source file and line number information.|  
+|[_RPTF&#91;0,1,2,3,4&#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Similar to the `_RPTn` macros, but provides the source file name and line number where the report request originated|  
+|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Allocate a specified number of memory blocks on the heap with additional space for a debugging header and overwrite buffers|  
+|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Resize a specified block of memory on the heap by expanding or contracting the block|  
+|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Free a block of memory on the heap|  
 |[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Create an absolute or full path name for the specified relative path name, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|[System::IO::File::Create](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)|  
-|[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Get the current working directory, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Allocate a block of memory on the heap with additional space for a debugging header and overwrite buffers|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Calculate the size of a block of memory on the heap|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Reallocate a specified block of memory on the heap by moving and/or resizing the block|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
-|[_strdup_dbg, _wcsdup_dbg](../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md)|Duplicates a string, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|[System::String::Clone](https://msdn.microsoft.com/en-us/library/system.string.clone.aspx)|  
-|[_tempnam_dbg, _wtempnam_dbg](../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md)|Generate names you can use to create temporary files, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).|  
+|[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Get the current working directory, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|  
+|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Allocate a block of memory on the heap with additional space for a debugging header and overwrite buffers|  
+|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Calculate the size of a block of memory on the heap|  
+|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Reallocate a specified block of memory on the heap by moving and/or resizing the block|  
+|[_strdup_dbg, _wcsdup_dbg](../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md)|Duplicates a string, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|  
+|[_tempnam_dbg, _wtempnam_dbg](../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md)|Generate names you can use to create temporary files, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|  
   
  The debug routines can be used to step through the source code for most of the other C run-time routines during the debugging process. However, Microsoft considers some technology to be proprietary and, therefore, does not provide the source code for these routines. Most of these routines belong to either the exception handling or floating-point processing groups, but a few others are included as well. The following table lists these routines.  
   

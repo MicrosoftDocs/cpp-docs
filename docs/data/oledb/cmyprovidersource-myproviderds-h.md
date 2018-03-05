@@ -4,42 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "myproviderds.h"
-  - "cmyprovidersource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, wizard-generated files"
-  - "CMyProviderSource class in MyProviderDS.H"
+ms.topic: "reference"
+f1_keywords: ["myproviderds.h", "cmyprovidersource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H"]
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderSource (MyProviderDS.H)
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CMyProviderSource  
 class ATL_NO_VTABLE CMyProviderSource :   
@@ -169,7 +150,7 @@ struct UPROPINFO
  If you want to define your own property set, you can add one by making an additional BEGIN_PROPSET_MAP/END_PROPSET_MAP combination. You need to define a GUID for the property set and then define your own properties. If you have provider-specific properties, add them to a new property set instead of using an existing one. This avoids problems in later versions of OLE DB.  
   
 ## User-Defined Property Sets  
- Visual C++ .NET supports user-defined property sets. You no longer have to override **GetProperties** or `GetPropertyInfo`. Instead, the templates detect any user-defined property set and add it to the appropriate object.  
+ Visual C++ supports user-defined property sets. You do not have to override **GetProperties** or `GetPropertyInfo`. Instead, the templates detect any user-defined property set and add it to the appropriate object.  
   
  If you have a user-defined property set that needs to be available at initialization time (that is, before the consumer calls **IDBInitialize::Initialize**), you can specify this by using the **UPROPSET_USERINIT** flag in conjunction with the BEGIN_PROPERTY_SET_EX macro. The property set must be in the data source object for this to work (as the OLE DB specification requires). For example:  
   

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::tiled_index"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tiled_index class"
+ms.topic: "reference"
+f1_keywords: ["tiled_index", "AMP/tiled_index", "AMP/Concurrency::tiled_index::tiled_index", "AMP/Concurrency::tiled_index::get_tile_extent", "AMP/Concurrency::tiled_index::barrier", "AMP/Concurrency::tiled_index::global", "AMP/Concurrency::tiled_index::local", "AMP/Concurrency::tiled_index::rank", "AMP/Concurrency::tiled_index::tile", "AMP/Concurrency::tiled_index::tile_dim0", "AMP/Concurrency::tiled_index::tile_dim1", "AMP/Concurrency::tiled_index::tile_dim2", "AMP/Concurrency::tiled_index::tile_origin", "AMP/Concurrency::tiled_index::tile_extent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tiled_index class"]
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # tiled_index Class
 Provides an index into a [tiled_extent](tiled-extent-class.md) object. This class has properties to access elements relative to the local tile origin and relative to the global origin. For more information about tiled spaces, see [Using Tiles](../../../parallel/amp/using-tiles.md).  
@@ -82,7 +65,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_tile_extent Method](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[get_tile_extent](#tiled_index__get_tile_extent)|Returns an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
 
   
@@ -106,7 +89,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[tile_extent Data Member](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
+|[tile_extent](#tile_extent)|Gets an [extent](extent-class.md) object that has the values of the `tiled_index` template arguments `tiled_index` template arguments `_Dim0`, `_Dim1`, and `_Dim2`.|  
 
   
 ## Inheritance Hierarchy  

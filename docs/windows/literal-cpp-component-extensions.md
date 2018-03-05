@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "literal"
-  - "literal_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "literal keyword [C++]"
+f1_keywords: ["literal", "literal_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["literal keyword [C++]"]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # literal (C++ Component Extensions)
 A variable (data member) marked as `literal` in a **/clr** compilation is the native equivalent of a `static const` variable.  
@@ -43,7 +25,7 @@ A variable (data member) marked as `literal` in a **/clr** compilation is the na
   
  (There are no remarks for this language feature that apply to all runtimes.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
@@ -54,7 +36,7 @@ A variable (data member) marked as `literal` in a **/clr** compilation is the na
 ## Common Language Runtime  
   
 ## Remarks  
- A data member marked as `literal`must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
+ A data member marked as `literal` must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
   
  No memory is allocated for the literal field at runtime; the compiler only inserts its value in the metadata for the class.  
   

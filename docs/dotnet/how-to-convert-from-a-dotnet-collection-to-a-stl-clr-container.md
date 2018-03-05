@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "STL/CLR, converting from .NET collections"
-  - "STL/CLR Containers [STL/CLR]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["STL/CLR, converting from .NET collections", "STL/CLR Containers [STL/CLR]"]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert from a .NET Collection to a STL/CLR Container
 This topic shows how to convert .NET collections to their equivalent STL/CLR containers. As an example we show how to convert a .NET <xref:System.Collections.Generic.List%601> to a STL/CLR [vector](../dotnet/vector-stl-clr.md) and how to convert a .NET <xref:System.Collections.Generic.Dictionary%602> to a STL/CLR [map](../dotnet/map-stl-clr.md), but the procedure is similar for all collections and containers.  

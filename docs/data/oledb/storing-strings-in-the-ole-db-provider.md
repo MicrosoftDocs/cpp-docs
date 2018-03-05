@@ -4,38 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user records, editing"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["user records, editing"]
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Storing Strings in the OLE DB Provider
 In MyProviderRS.h, the ATL OLE DB Provider Wizard creates a default user record called `CWindowsFile`. To handle the two strings, either modify `CWindowsFile` or add your own user record as shown in the following code:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 class CAgentMan:   
    public WIN32_FIND_DATA  

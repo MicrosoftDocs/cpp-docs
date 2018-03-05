@@ -4,44 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDataObjectImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data transfer [C++]"
-  - "data transfer [C++], Uniform Data Transfer"
-  - "IDataObjectImpl class"
-  - "IDataObject, ATL implementation"
+f1_keywords: ["IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl::DAdvise", "ATLCTL/ATL::IDataObjectImpl::DUnadvise", "ATLCTL/ATL::IDataObjectImpl::EnumDAdvise", "ATLCTL/ATL::IDataObjectImpl::EnumFormatEtc", "ATLCTL/ATL::IDataObjectImpl::FireDataChange", "ATLCTL/ATL::IDataObjectImpl::GetCanonicalFormatEtc", "ATLCTL/ATL::IDataObjectImpl::GetData", "ATLCTL/ATL::IDataObjectImpl::GetDataHere", "ATLCTL/ATL::IDataObjectImpl::QueryGetData", "ATLCTL/ATL::IDataObjectImpl::SetData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["data transfer [C++]", "data transfer [C++], Uniform Data Transfer", "IDataObjectImpl class", "IDataObject, ATL implementation"]
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IDataObjectImpl Class
 This class provides methods for supporting Uniform Data Transfer and managing connections.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -104,7 +84,7 @@ HRESULT DAdvise(
   
  To terminate the connection, call [DUnadvise](#dunadvise).  
   
- See [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) in the Windows SDK.  
   
 ##  <a name="dunadvise"></a>  IDataObjectImpl::DUnadvise  
  Terminates a connection previously established through [DAdvise](#dadvise).  
@@ -114,7 +94,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 ```  
   
 ### Remarks  
- See [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) in the Windows SDK.  
   
 ##  <a name="enumdadvise"></a>  IDataObjectImpl::EnumDAdvise  
  Creates an enumerator to iterate through the current advisory connections.  
@@ -128,7 +108,7 @@ HRESULT DAdvise(
 ```  
   
 ### Remarks  
- See [IDataObject::EnumDAdvise](http://msdn.microsoft.com/library/windows/desktop/ms680127) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::EnumDAdvise](http://msdn.microsoft.com/library/windows/desktop/ms680127) in the Windows SDK.  
   
 ##  <a name="enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc  
  Creates an enumerator to iterate through the **FORMATETC** structures supported by the data object.  
@@ -140,7 +120,7 @@ HRESULT EnumFormatEtc(
 ```  
   
 ### Remarks  
- See [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
@@ -166,7 +146,7 @@ HRESULT GetCanonicalFormatEtc(FORMATETC* pformatetcIn, FORMATETC* pformatetcOut)
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IDataObject::GetCanonicalFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms680685) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::GetCanonicalFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms680685) in the Windows SDK.  
   
 ##  <a name="getdata"></a>  IDataObjectImpl::GetData  
  Transfers data from the data object to the client.  
@@ -180,7 +160,7 @@ HRESULT GetData(
 ### Remarks  
  The *pformatetcIn* parameter must specify a storage medium type of **TYMED_MFPICT**.  
   
- See [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
   
 ##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere  
  Similar to `GetData`, except the client must allocate the **STGMEDIUM** structure.  
@@ -195,7 +175,7 @@ HRESULT GetDataHere(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IDataObject::GetDataHere](http://msdn.microsoft.com/library/windows/desktop/ms687266) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::GetDataHere](http://msdn.microsoft.com/library/windows/desktop/ms687266) in the Windows SDK.  
   
 ##  <a name="querygetdata"></a>  IDataObjectImpl::QueryGetData  
  Determines whether the data object supports a particular **FORMATETC** structure for transferring data.  
@@ -208,7 +188,7 @@ HRESULT QueryGetData(FORMATETC* pformatetc);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) in the Windows SDK.  
   
 ##  <a name="setdata"></a>  IDataObjectImpl::SetData  
  Transfers data from the client to the data object.  
@@ -224,7 +204,7 @@ HRESULT SetData(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IDataObject::SetData](http://msdn.microsoft.com/library/windows/desktop/ms686626) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDataObject::SetData](http://msdn.microsoft.com/library/windows/desktop/ms686626) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dual interfaces, OLE Automation"
-  - "TN065"
-  - "ACDUAL sample [MFC]"
-  - "Automation servers, dual-interface support"
+f1_keywords: ["vc.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dual interfaces [MFC], OLE Automation", "TN065 [MFC]", "ACDUAL sample [MFC]", "Automation servers [MFC], dual-interface support"]
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN065: Dual-Interface Support for OLE Automation Servers
 > [!NOTE]
@@ -376,7 +356,7 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
   
  `CATCH_ALL_DUAL` takes care of returning the correct error code when an exception occurs. `CATCH_ALL_DUAL` converts an MFC exception into OLE Automation error-handling information using the **ICreateErrorInfo** interface. (An example `CATCH_ALL_DUAL` macro is in the file MFCDUAL.H in the [ACDUAL](../visual-cpp-samples.md) sample. The function it calls to handle exceptions, `DualHandleException`, is in the file MFCDUAL.CPP.) `CATCH_ALL_DUAL` determines the error code to return based on the type of exception that occurred:  
   
-- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) – In this case, `HRESULT` is constructed using the following code:  
+- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) - In this case, `HRESULT` is constructed using the following code:  
   
  ```  
     hr = MAKE_HRESULT(SEVERITY_ERROR,
@@ -387,9 +367,9 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
   
      This creates an `HRESULT` specific to the interface that caused the exception. The error code is offset by 0x200 to avoid any conflicts with system-defined `HRESULT`s for standard OLE interfaces.  
   
-- [CMemoryException](../mfc/reference/cmemoryexception-class.md) – In this case, `E_OUTOFMEMORY` is returned.  
+- [CMemoryException](../mfc/reference/cmemoryexception-class.md) - In this case, `E_OUTOFMEMORY` is returned.  
   
--   Any other exception – In this case, `E_UNEXPECTED` is returned.  
+-   Any other exception - In this case, `E_UNEXPECTED` is returned.  
   
  To indicate that the OLE Automation error handler is used, you should also implement the **ISupportErrorInfo** interface.  
   

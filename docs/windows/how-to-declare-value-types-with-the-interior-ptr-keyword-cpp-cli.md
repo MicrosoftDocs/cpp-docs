@@ -1,37 +1,20 @@
 ---
-title: "How to: Declare Value Types with the interior_ptr Keyword (C++-CLI) | Microsoft Docs"
+title: "How to: Declare Value Types with the interior_ptr Keyword (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ptr keyword"
-  - "value types, declaring"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ptr keyword", "value types, declaring"]
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)
 An `interior_ptr` can be used with a value type.  
@@ -42,7 +25,7 @@ An `interior_ptr` can be used with a value type.
 ## Example  
   
 ### Description  
- The following [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] sample shows how to use an `interior_ptr` with a value type.  
+ The following C++/CLI sample shows how to use an `interior_ptr` with a value type.  
   
 ### Code  
   

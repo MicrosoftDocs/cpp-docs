@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDropTarget"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDropTarget class"
-  - "drag and drop, drop target"
-  - "drop commands, accepting"
-  - "drop commands"
+f1_keywords: ["COleDropTarget", "AFXOLE/COleDropTarget", "AFXOLE/COleDropTarget::COleDropTarget", "AFXOLE/COleDropTarget::OnDragEnter", "AFXOLE/COleDropTarget::OnDragLeave", "AFXOLE/COleDropTarget::OnDragOver", "AFXOLE/COleDropTarget::OnDragScroll", "AFXOLE/COleDropTarget::OnDrop", "AFXOLE/COleDropTarget::OnDropEx", "AFXOLE/COleDropTarget::Register", "AFXOLE/COleDropTarget::Revoke"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDropTarget [MFC], COleDropTarget", "COleDropTarget [MFC], OnDragEnter", "COleDropTarget [MFC], OnDragLeave", "COleDropTarget [MFC], OnDragOver", "COleDropTarget [MFC], OnDragScroll", "COleDropTarget [MFC], OnDrop", "COleDropTarget [MFC], OnDropEx", "COleDropTarget [MFC], Register", "COleDropTarget [MFC], Revoke"]
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDropTarget Class
 Provides the communication mechanism between a window and the OLE libraries.  
@@ -134,7 +114,7 @@ virtual DROPEFFECT OnDragEnter(
 ### Remarks  
  Override this function to allow drop operations to occur in the window. The default implementation calls [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), which simply returns `DROPEFFECT_NONE` by default.  
   
- For more information, see [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the Windows SDK.  
   
 ##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave  
  Called by the framework when the cursor leaves the window while a dragging operation is in effect.  
@@ -150,7 +130,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 ### Remarks  
  Override this function if you want special behavior when the drag operation leaves the specified window. The default implementation of this function calls [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave).  
   
- For more information, see [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) in the Windows SDK.  
   
 ##  <a name="ondragover"></a>  COleDropTarget::OnDragOver  
  Called by the framework when the cursor is dragged over the window.  
@@ -192,7 +172,7 @@ virtual DROPEFFECT OnDragOver(
 ### Remarks  
  This function should be overridden to allow drop operations to occur in the window. The default implementation of this function calls [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), which returns `DROPEFFECT_NONE` by default. Because this function is called frequently during a drag-and-drop operation, it should be optimized as much as possible.  
   
- For more information, see [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
@@ -271,7 +251,7 @@ virtual BOOL OnDrop(
   
  The default implementation of `COleDropTarget::OnDrop` calls [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), which simply returns **FALSE** by default.  
   
- For more information, see [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) in the Windows SDK.  
   
 ##  <a name="ondropex"></a>  COleDropTarget::OnDropEx  
  Called by the framework when a drop operation is to occur.  
@@ -321,7 +301,7 @@ virtual DROPEFFECT OnDropEx(
   
 - `DROPEFFECT_SCROLL` Indicates that a drag scroll operation is about to occur or is occurring in the target.  
   
- For more information, see [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) in the Windows SDK.  
   
 ##  <a name="register"></a>  COleDropTarget::Register  
  Call this function to register your window with the OLE DLLs as a valid drop target.  
@@ -340,7 +320,7 @@ BOOL Register(CWnd* pWnd);
 ### Remarks  
  This function must be called for drop operations to be accepted.  
   
- For more information, see [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) in the Windows SDK.  
   
 ##  <a name="revoke"></a>  COleDropTarget::Revoke  
  Call this function before destroying any window that has been registered as a drop target through a call to [Register](#register) to remove it from the list of drop targets.  
@@ -352,7 +332,7 @@ virtual void Revoke();
 ### Remarks  
  This function is called automatically from the [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) handler for the window that was registered, so it is usually not necessary to call this function explicitly.  
   
- For more information, see [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample HIERSVR](../../visual-cpp-samples.md)   

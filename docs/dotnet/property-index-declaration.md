@@ -4,41 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "indexers"
-  - "default indexers"
-  - "defaults, indexers"
-  - "indexed properties, C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["indexers", "default indexers", "defaults, indexers", "indexed properties, C++"]
 ms.assetid: d898fdbc-2106-4b6a-8c5c-9f511d80fc2f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Property Index Declaration
-The syntax for declaring an indexed property has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for declaring an indexed property has changed from Managed Extensions for C++ to Visual C++.  
   
- The two primary shortcoming of the Managed Extensions language support of indexed properties is the inability to provide class-level subscripting; that is, all indexed properties are required to be given a name, and thus there is no way, for example, to provide a managed subscript operator that can be directly applied to a `Vector` or `Matrix` class object. A second less significant shortcoming is that it is visually difficult to distinguish a property from an indexed property – the number of parameters is the only indication. Finally, indexed properties suffer from the same problems as those of non-indexed properties – the accessors are not treated as an atomic unit, but separated into individual methods.  For example:  
+ The two primary shortcoming of the Managed Extensions language support of indexed properties is the inability to provide class-level subscripting; that is, all indexed properties are required to be given a name, and thus there is no way, for example, to provide a managed subscript operator that can be directly applied to a `Vector` or `Matrix` class object. A second less significant shortcoming is that it is visually difficult to distinguish a property from an indexed property - the number of parameters is the only indication. Finally, indexed properties suffer from the same problems as those of non-indexed properties - the accessors are not treated as an atomic unit, but separated into individual methods.  For example:  
   
 ```  
 public __gc class Vector;  
@@ -85,10 +66,10 @@ private:
 public:  
    // ok: class level indexer now  
    //  
-   //     Matrix mat …  
+   //     Matrix mat;  
    //     mat[ 0, 0 ] = 1;   
    //  
-   // invokes the set accessor of the default indexer …  
+   // invokes the set accessor of the default indexer  
   
    property float default [int,int] {  
       float get( int r, int c );  

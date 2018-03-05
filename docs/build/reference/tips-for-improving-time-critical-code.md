@@ -4,59 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_lsearch function"
-  - "qsort function"
-  - "background tasks"
-  - "standard sort routines"
-  - "clock cycle losses"
-  - "code, time-critical"
-  - "memory [C++], monitoring usage"
-  - "execution, speed improvements"
-  - "local heap performance"
-  - "optimization [C++], time-critical code"
-  - "performance [C++], time-critical code"
-  - "threading [C++], performance"
-  - "cache [C++], hits and misses"
-  - "linear search performance"
-  - "page faults"
-  - "best practices, time-critical code"
-  - "searching [C++], improving performance"
-  - "sorting data, improving performance"
-  - "threading [C++], best practices"
-  - "threading [C++], background tasks"
-  - "lists, sorting"
-  - "bsearch function"
-  - "MFC [C++], performance"
-  - "sort routines"
-  - "programs [C++], performance"
-  - "_lfind function"
-  - "heap allocation, time-critical code performance"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_lsearch function", "qsort function", "background tasks", "standard sort routines", "clock cycle losses", "code, time-critical", "memory [C++], monitoring usage", "execution, speed improvements", "local heap performance", "optimization [C++], time-critical code", "performance [C++], time-critical code", "threading [C++], performance", "cache [C++], hits and misses", "linear search performance", "page faults", "best practices, time-critical code", "searching [C++], improving performance", "sorting data, improving performance", "threading [C++], best practices", "threading [C++], background tasks", "lists, sorting", "bsearch function", "MFC [C++], performance", "sort routines", "programs [C++], performance", "_lfind function", "heap allocation, time-critical code performance"]
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Tips for Improving Time-Critical Code
 Writing fast code requires understanding all aspects of your application and how it interacts with the system. This topic suggests alternatives to some of the more obvious coding techniques to help you ensure that the time-critical portions of your code perform satisfactorily.  
@@ -92,7 +50,7 @@ Writing fast code requires understanding all aspects of your application and how
 ##  <a name="_core_cache_hits_and_page_faults"></a> Cache Misses and Page Faults  
  Missed cache hits, on both the internal and external cache, as well as page faults (going to secondary storage for program instructions and data) slow the performance of a program.  
   
- A CPU cache hit can cost your program 10–20 clock cycles. An external cache hit can cost 20–40 clock cycles. A page fault can cost one million clock cycles (assuming a processor that handles 500 million instructions/second and a time of 2 millisecond for a page fault). Therefore, it is in the best interest of program execution to write code that will reduce the number of missed cache hits and page faults.  
+ A CPU cache hit can cost your program 10-20 clock cycles. An external cache hit can cost 20-40 clock cycles. A page fault can cost one million clock cycles (assuming a processor that handles 500 million instructions/second and a time of 2 millisecond for a page fault). Therefore, it is in the best interest of program execution to write code that will reduce the number of missed cache hits and page faults.  
   
  One reason for slow programs is that they take more page faults or miss the cache more often than necessary. To avoid this, it's important to use data structures with good locality of reference, which means keeping related things together. Sometimes a data structure that looks great turns out to be horrible because of poor locality of reference, and sometimes the reverse is true. Here are two examples:  
   
@@ -103,9 +61,9 @@ Writing fast code requires understanding all aspects of your application and how
 ##  <a name="_core_sorting_and_searching"></a> Sorting and Searching  
  Sorting is inherently time consuming compared to many typical operations. The best way to avoid unnecessary slowdown is to avoid sorting at critical times. You may be able to:  
   
--   Defer sorting until a non-performance–critical time.  
+-   Defer sorting until a non-performance-critical time.  
   
--   Sort the data at an earlier, non-performance–critical time.  
+-   Sort the data at an earlier, non-performance-critical time.  
   
 -   Sort only the part of the data that truly needs sorting.  
   

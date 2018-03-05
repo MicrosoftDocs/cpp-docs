@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "valarray<bool>"
-  - "valarray/std::valarray<bool>"
-  - "std::valarray<bool>"
-  - "std.valarray<bool>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "valarray<bool> class"
+ms.topic: "reference"
+f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["valarray<bool> class"]
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # valarray&lt;bool&gt; Class
 A specialized version of the template class **valarray\<Type>** to elements of type `bool`.  

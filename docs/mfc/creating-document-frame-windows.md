@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "frame windows [C++], creating"
-  - "document templates, and document frame windows"
-  - "windows [C++], creating"
-  - "runtime, class information"
-  - "run-time class, and document frame window creation"
-  - "document frame windows, creating"
-  - "MFC [C++], frame windows"
+dev_langs: ["C++"]
+helpviewer_keywords: ["frame windows [MFC], creating", "document templates [MFC], and document frame windows", "windows [MFC], creating", "runtime, class information", "run-time class [MFC], and document frame window creation", "document frame windows [MFC], creating", "MFC, frame windows"]
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating Document Frame Windows
 [Document/View Creation](../mfc/document-view-creation.md) shows how the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) object orchestrates creating the frame window, document, and view and connecting them all together. Three [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) arguments to the `CDocTemplate` constructor specify the frame window, document, and view classes that the document template creates dynamically in response to user commands such as the New command on the File menu or the New Window command on an MDI Window menu. The document template stores this information for later use when it creates a frame window for a view and document.  

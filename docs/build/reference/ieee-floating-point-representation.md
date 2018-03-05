@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "float keyword"
-  - "real*8 value"
-  - "floating-point numbers, IEEE representation"
-  - "double data type, floating-point representation"
-  - "IEEE floating point representation"
-  - "real*10 value"
-  - "long double"
-  - "real*4 value"
+dev_langs: ["C++"]
+helpviewer_keywords: ["float keyword", "real*8 value", "floating-point numbers, IEEE representation", "double data type, floating-point representation", "IEEE floating point representation", "real*10 value", "long double", "real*4 value"]
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IEEE Floating-Point Representation
 Microsoft Visual C++ is consistent with the IEEE numeric standards. There are three internal varieties of real numbers. Real\*4 and real\*8 are used in Visual C++. Real\*4 is declared using the word **float**. Real\*8 is declared using the word **double**. In Windows 32-bit programming, the `long double` data type maps to **double**. There is, however, assembly language support for computations using the real*10 data type.  
@@ -124,7 +101,7 @@ Microsoft Visual C++ is consistent with the IEEE numeric standards. There are th
     2.5 = 1.25 * 2**1 = 0100 0000 0010 0000 ... 0000 0000 = 4020 0000  
     ```  
   
--   1/10 is a repeating fraction in binary. The mantissa is just shy of 1.6, and the biased exponent says that 1.6 is to be divided by 16 (it is 011 1101 1 in binary, which is 123 in decimal). The true exponent is 123 – 127 = –4, which means that the factor by which to multiply is 2**–4 = 1/16. Note that the stored mantissa is rounded up in the last bit — an attempt to represent the unrepresentable number as accurately as possible. (The reason that 1/10 and 1/100 are not exactly representable in binary is similar to the reason that 1/3 is not exactly representable in decimal.)  
+-   1/10 is a repeating fraction in binary. The mantissa is just shy of 1.6, and the biased exponent says that 1.6 is to be divided by 16 (it is 011 1101 1 in binary, which is 123 in decimal). The true exponent is 123 - 127 = -4, which means that the factor by which to multiply is 2**-4 = 1/16. Note that the stored mantissa is rounded up in the last bit — an attempt to represent the unrepresentable number as accurately as possible. (The reason that 1/10 and 1/100 are not exactly representable in binary is similar to the reason that 1/3 is not exactly representable in decimal.)  
   
     ```  
     0.1 = 1.6 * 2**-4 = 0011 1101 1100 1100 ... 1100 1101 = 3DCC CCCD  

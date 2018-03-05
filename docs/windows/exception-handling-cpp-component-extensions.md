@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structured exception handling, managed exceptions"
-  - "Exception class, managed applications"
-  - "exception handling"
-  - "C++ exception handling"
-  - "exception handling, types of"
-  - "managed exceptions"
-  - "System::Exception class in managed applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["structured exception handling, managed exceptions", "Exception class, managed applications", "exception handling", "C++ exception handling", "exception handling, types of", "managed exceptions", "System::Exception class in managed applications"]
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Exception Handling  (C++ Component Extensions)
 Applications compiled with the **/ZW** compiler option or **/clr** compiler option both use *exceptions* to handle unexpected errors during program execution. The following topics discuss exception handling in either C++/CX or C++/CLI applications.  

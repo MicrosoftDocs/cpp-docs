@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+dev_langs: ["C++"]
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Intrinsics and Assembly Language
 This section of the documentation contains information about compiler intrinsics and the assembly language.  
@@ -41,4 +26,4 @@ This section of the documentation contains information about compiler intrinsics
 |[Inline Assembler](../assembler/inline/inline-assembler.md)|Explains how to use the Visual C/C++ inline assembler with x86 processors.|  
 |[ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)|Provides reference material for the Microsoft ARM assembler (armasm) and related tools.|  
 |[Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)|Provides reference material for the Microsoft Macro assembler (masm).|  
-|[Visual C++](../top/visual-cpp-in-visual-studio.md)|The top-level article for Visual C++ documentation.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|The top-level article for Visual C++ documentation.|

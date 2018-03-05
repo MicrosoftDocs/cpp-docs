@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.aggregates"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aggregates attribute"
-  - "aggregation [C++]"
-  - "aggregate objects [C++], aggregates attribute"
-  - "aggregates [C++]"
+f1_keywords: ["vc-attr.aggregates"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["aggregates attribute", "aggregation [C++]", "aggregate objects [C++], aggregates attribute", "aggregates [C++]"]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # aggregates
 Indicates that the object aggregates the object specified by the CLSID.  
@@ -71,7 +50,7 @@ Indicates that the object aggregates the object specified by the CLSID.
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)  
 ```  
   
- Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](http://msdn.microsoft.com/Library/82b0199a-a9d5-4f95-a711-fa1ae18e1f77) macro is also added.  
+ Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](../atl/reference/aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) macro is also added.  
   
 ## Example  
   
@@ -119,5 +98,5 @@ struct CObject : IObject
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
  [Aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721)   
- [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](http://msdn.microsoft.com/Library/4e867f24-0a4f-465e-ad17-06939fcf9c1c)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)   
+ 

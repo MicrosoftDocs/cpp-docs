@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "grammar, expressions"
-  - "expressions [C++], semantics"
-  - "expression evaluation"
-  - "expression evaluation, about expression evaluation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["grammar, expressions", "expressions [C++], semantics", "expression evaluation", "expression evaluation, about expression evaluation"]
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Semantics of Expressions
 Expressions are evaluated according to the precedence and grouping of their operators. ([Operator Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md) in [Lexical Conventions](../cpp/lexical-conventions.md), shows the relationships the C++ operators impose on expressions.)  
@@ -41,8 +22,8 @@ Expressions are evaluated according to the precedence and grouping of their oper
 ## Order of evaluation  
  Consider this example:  
   
-```  
-// expre_pluslang__pluslang_Order_of_Evaluation.cpp  
+```cpp  
+// Order_of_Evaluation.cpp  
 // compile with: /EHsc  
 #include <iostream>  
 using namespace std;  
@@ -54,7 +35,9 @@ int main()
     cout << a + (b * c) << "\n";  
     cout << (a + b) * c << "\n";  
 }  
-//Output:  
+```  
+  
+```Output  
 38  
 38  
 54  
@@ -79,16 +62,16 @@ Expression-Evaluation Order with Parentheses
  Expressions such as those in the above figure are evaluated purely for their side effects — in this case, to transfer information to the standard output device.  
   
 ## Notation in expressions  
- The C++ language specifies certain compatibilities when specifying operands. The following table shows the types of operands acceptable to operators that require operands of type `type`.  
+ The C++ language specifies certain compatibilities when specifying operands. The following table shows the types of operands acceptable to operators that require operands of type *type*.  
   
 ### Operand Types Acceptable to Operators  
   
 |Type expected|Types allowed|  
 |-------------------|-------------------|  
-|`type`|**const** *type*<br /><br /> `volatile` *type*<br /><br /> `type`&<br /><br /> **const** `type`&<br /><br /> `volatile` `type`&<br /><br /> **volatile const** *type*<br /><br /> **volatile const** `type`&|  
-|*type\**|`type`\* **const**`type`\* `volatile``type`\* **volatile const**|  
-|**const** `type`|`type` **const** `type`**const** `type`&|  
-|`volatile` `type`|`type` `volatile` `type``volatile` `type`&|  
+|*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|  
+|*type*\*|*type*\*<br /> `const` *type*\*<br /> `volatile` *type*\*<br /> `volatile const` *type*\*|  
+|`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|  
+|`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|  
   
  Because the preceding rules can always be used in combination, a const pointer to a volatile object can be supplied where a pointer is expected.  
   

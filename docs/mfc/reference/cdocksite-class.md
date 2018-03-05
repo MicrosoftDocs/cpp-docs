@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDockSite"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDockSite class"
+f1_keywords: ["CDockSite", "AFXDOCKSITE/CDockSite", "AFXDOCKSITE/CDockSite::AddRow", "AFXDOCKSITE/CDockSite::AdjustDockingLayout", "AFXDOCKSITE/CDockSite::AdjustLayout", "AFXDOCKSITE/CDockSite::AlignDockSite", "AFXDOCKSITE/CDockSite::CalcFixedLayout", "AFXDOCKSITE/CDockSite::CanAcceptPane", "AFXDOCKSITE/CDockSite::CreateEx", "AFXDOCKSITE/CDockSite::CreateRow", "AFXDOCKSITE/CDockSite::DockPane", "AFXDOCKSITE/CDockSite::DoesAllowDynInsertBefore", "AFXDOCKSITE/CDockSite::FindRowIndex", "AFXDOCKSITE/CDockSite::FixupVirtualRects", "AFXDOCKSITE/CDockSite::GetDockSiteID", "AFXDOCKSITE/CDockSite::GetDockSiteRowsList", "AFXDOCKSITE/CDockSite::IsAccessibilityCompatible", "AFXDOCKSITE/CDockSite::IsDragMode", "AFXDOCKSITE/CDockSite::IsLastRow", "AFXDOCKSITE/CDockSite::IsRectWithinDockSite", "AFXDOCKSITE/CDockSite::IsResizable", "AFXDOCKSITE/CDockSite::MovePane", "AFXDOCKSITE/CDockSite::OnInsertRow", "AFXDOCKSITE/CDockSite::OnRemoveRow", "AFXDOCKSITE/CDockSite::OnResizeRow", "AFXDOCKSITE/CDockSite::OnSetWindowPos", "AFXDOCKSITE/CDockSite::OnShowRow", "AFXDOCKSITE/CDockSite::OnSizeParent", "AFXDOCKSITE/CDockSite::PaneFromPoint", "AFXDOCKSITE/CDockSite::DockPaneLeftOf", "AFXDOCKSITE/CDockSite::FindPaneByID", "AFXDOCKSITE/CDockSite::GetPaneList", "AFXDOCKSITE/CDockSite::RectSideFromPoint", "AFXDOCKSITE/CDockSite::RemovePane", "AFXDOCKSITE/CDockSite::RemoveRow", "AFXDOCKSITE/CDockSite::ReplacePane", "AFXDOCKSITE/CDockSite::RepositionPanes", "AFXDOCKSITE/CDockSite::ResizeDockSite", "AFXDOCKSITE/CDockSite::ResizeRow", "AFXDOCKSITE/CDockSite::ShowPane", "AFXDOCKSITE/CDockSite::ShowRow", "AFXDOCKSITE/CDockSite::SwapRows"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDockSite [MFC], AddRow", "CDockSite [MFC], AdjustDockingLayout", "CDockSite [MFC], AdjustLayout", "CDockSite [MFC], AlignDockSite", "CDockSite [MFC], CalcFixedLayout", "CDockSite [MFC], CanAcceptPane", "CDockSite [MFC], CreateEx", "CDockSite [MFC], CreateRow", "CDockSite [MFC], DockPane", "CDockSite [MFC], DoesAllowDynInsertBefore", "CDockSite [MFC], FindRowIndex", "CDockSite [MFC], FixupVirtualRects", "CDockSite [MFC], GetDockSiteID", "CDockSite [MFC], GetDockSiteRowsList", "CDockSite [MFC], IsAccessibilityCompatible", "CDockSite [MFC], IsDragMode", "CDockSite [MFC], IsLastRow", "CDockSite [MFC], IsRectWithinDockSite", "CDockSite [MFC], IsResizable", "CDockSite [MFC], MovePane", "CDockSite [MFC], OnInsertRow", "CDockSite [MFC], OnRemoveRow", "CDockSite [MFC], OnResizeRow", "CDockSite [MFC], OnSetWindowPos", "CDockSite [MFC], OnShowRow", "CDockSite [MFC], OnSizeParent", "CDockSite [MFC], PaneFromPoint", "CDockSite [MFC], DockPaneLeftOf", "CDockSite [MFC], FindPaneByID", "CDockSite [MFC], GetPaneList", "CDockSite [MFC], RectSideFromPoint", "CDockSite [MFC], RemovePane", "CDockSite [MFC], RemoveRow", "CDockSite [MFC], ReplacePane", "CDockSite [MFC], RepositionPanes", "CDockSite [MFC], ResizeDockSite", "CDockSite [MFC], ResizeRow", "CDockSite [MFC], ShowPane", "CDockSite [MFC], ShowRow", "CDockSite [MFC], SwapRows"]
 ms.assetid: 0fcfff79-5f50-4281-b2de-a55653bbea40
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDockSite Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -111,7 +94,7 @@ class CDockSite: public CBasePane
  **Header:** afxDockSite.h  
   
 ##  <a name="addrow"></a>  CDockSite::AddRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CDockingPanesRow* AddRow(
@@ -128,7 +111,7 @@ CDockingPanesRow* AddRow(
 ### Remarks  
   
 ##  <a name="adjustdockinglayout"></a>  CDockSite::AdjustDockingLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void AdjustDockingLayout();
@@ -137,7 +120,7 @@ virtual void AdjustDockingLayout();
 ### Remarks  
   
 ##  <a name="adjustlayout"></a>  CDockSite::AdjustLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void AdjustLayout();
@@ -146,7 +129,7 @@ virtual void AdjustLayout();
 ### Remarks  
   
 ##  <a name="aligndocksite"></a>  CDockSite::AlignDockSite  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void AlignDockSite(
@@ -163,7 +146,7 @@ void AlignDockSite(
 ### Remarks  
   
 ##  <a name="calcfixedlayout"></a>  CDockSite::CalcFixedLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize CalcFixedLayout(
@@ -180,7 +163,7 @@ virtual CSize CalcFixedLayout(
 ### Remarks  
   
 ##  <a name="canacceptpane"></a>  CDockSite::CanAcceptPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;  
@@ -194,7 +177,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ### Remarks  
   
 ##  <a name="createex"></a>  CDockSite::CreateEx  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL CreateEx(
@@ -219,7 +202,7 @@ virtual BOOL CreateEx(
 ### Remarks  
   
 ##  <a name="createrow"></a>  CDockSite::CreateRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CDockingPanesRow* CreateRow(
@@ -238,7 +221,7 @@ virtual CDockingPanesRow* CreateRow(
 ### Remarks  
   
 ##  <a name="dockpane"></a>  CDockSite::DockPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void DockPane(
@@ -276,7 +259,7 @@ virtual BOOL DockPaneLeftOf(
 ### Remarks  
   
 ##  <a name="doesallowdyninsertbefore"></a>  CDockSite::DoesAllowDynInsertBefore  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DoesAllowDynInsertBefore() const;  
@@ -303,7 +286,7 @@ CPane* FindPaneByID(UINT nID);
 ### Remarks  
   
 ##  <a name="findrowindex"></a>  CDockSite::FindRowIndex  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int FindRowIndex(CDockingPanesRow* pRow);
@@ -317,7 +300,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 ### Remarks  
   
 ##  <a name="fixupvirtualrects"></a>  CDockSite::FixupVirtualRects  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void FixupVirtualRects();
@@ -326,7 +309,7 @@ virtual void FixupVirtualRects();
 ### Remarks  
   
 ##  <a name="getdocksiteid"></a>  CDockSite::GetDockSiteID  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual UINT GetDockSiteID() const;  
@@ -337,7 +320,7 @@ virtual UINT GetDockSiteID() const;
 ### Remarks  
   
 ##  <a name="getdocksiterowslist"></a>  CDockSite::GetDockSiteRowsList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 const CObList& GetDockSiteRowsList() const;  
@@ -358,7 +341,7 @@ const CObList& GetPaneList() const;
  A read-only reference to the list of panes currently docked in the docking bar.  
   
 ##  <a name="isaccessibilitycompatible"></a>  CDockSite::IsAccessibilityCompatible  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAccessibilityCompatible();
@@ -369,7 +352,7 @@ virtual BOOL IsAccessibilityCompatible();
 ### Remarks  
   
 ##  <a name="isdragmode"></a>  CDockSite::IsDragMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsDragMode() const;  
@@ -380,7 +363,7 @@ virtual BOOL IsDragMode() const;
 ### Remarks  
   
 ##  <a name="islastrow"></a>  CDockSite::IsLastRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 bool IsLastRow(CDockingPanesRow* pRow) const;  
@@ -394,7 +377,7 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 ### Remarks  
   
 ##  <a name="isrectwithindocksite"></a>  CDockSite::IsRectWithinDockSite  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsRectWithinDockSite(
@@ -411,7 +394,7 @@ BOOL IsRectWithinDockSite(
 ### Remarks  
   
 ##  <a name="isresizable"></a>  CDockSite::IsResizable  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsResizable() const;  
@@ -422,7 +405,7 @@ virtual BOOL IsResizable() const;
 ### Remarks  
   
 ##  <a name="movepane"></a>  CDockSite::MovePane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL MovePane(
@@ -441,7 +424,7 @@ virtual BOOL MovePane(
 ### Remarks  
   
 ##  <a name="oninsertrow"></a>  CDockSite::OnInsertRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnInsertRow(POSITION pos);
@@ -453,7 +436,7 @@ virtual void OnInsertRow(POSITION pos);
 ### Remarks  
   
 ##  <a name="onremoverow"></a>  CDockSite::OnRemoveRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnRemoveRow(
@@ -468,7 +451,7 @@ virtual void OnRemoveRow(
 ### Remarks  
   
 ##  <a name="onresizerow"></a>  CDockSite::OnResizeRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int OnResizeRow(
@@ -485,7 +468,7 @@ virtual int OnResizeRow(
 ### Remarks  
   
 ##  <a name="onsizeparent"></a>  CDockSite::OnSizeParent  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnSizeParent(
@@ -504,7 +487,7 @@ virtual void OnSizeParent(
 ### Remarks  
   
 ##  <a name="onsetwindowpos"></a>  CDockSite::OnSetWindowPos  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSetWindowPos(
@@ -523,7 +506,7 @@ virtual BOOL OnSetWindowPos(
 ### Remarks  
   
 ##  <a name="onshowrow"></a>  CDockSite::OnShowRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnShowRow(
@@ -554,7 +537,7 @@ virtual CPane* PaneFromPoint(CPoint pt);
 ### Remarks  
   
 ##  <a name="rectsidefrompoint"></a>  CDockSite::RectSideFromPoint  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static int __stdcall RectSideFromPoint(
@@ -571,7 +554,7 @@ static int __stdcall RectSideFromPoint(
 ### Remarks  
   
 ##  <a name="removepane"></a>  CDockSite::RemovePane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void RemovePane(
@@ -586,7 +569,7 @@ virtual void RemovePane(
 ### Remarks  
   
 ##  <a name="removerow"></a>  CDockSite::RemoveRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void RemoveRow(CDockingPanesRow* pRow);
@@ -598,7 +581,7 @@ void RemoveRow(CDockingPanesRow* pRow);
 ### Remarks  
   
 ##  <a name="replacepane"></a>  CDockSite::ReplacePane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL ReplacePane(
@@ -615,7 +598,7 @@ BOOL ReplacePane(
 ### Remarks  
   
 ##  <a name="repositionpanes"></a>  CDockSite::RepositionPanes  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void RepositionPanes(CRect& rectNewClientArea);
@@ -627,7 +610,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 ### Remarks  
   
 ##  <a name="resizedocksite"></a>  CDockSite::ResizeDockSite  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ResizeDockSite(
@@ -642,7 +625,7 @@ void ResizeDockSite(
 ### Remarks  
   
 ##  <a name="resizerow"></a>  CDockSite::ResizeRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int ResizeRow(
@@ -691,7 +674,7 @@ virtual BOOL ShowPane(
  Call this method to show or hide docked panes. Normally, you do not have to call `CDockSite::ShowPane` directly, because it is called by the parent frame window or by the base pane.  
   
 ##  <a name="showrow"></a>  CDockSite::ShowRow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ShowRow(
@@ -708,7 +691,7 @@ void ShowRow(
 ### Remarks  
   
 ##  <a name="swaprows"></a>  CDockSite::SwapRows  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SwapRows(

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.class.axcontrol"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX Control Wizard"
-  - "Add Class from ActiveX Control Wizard [C++]"
+f1_keywords: ["vc.codewiz.class.axcontrol"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX Control Wizard", "Add Class from ActiveX Control Wizard [C++]"]
 ms.assetid: 668d801c-5fb6-4176-9191-5c38995a4713
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Add Class From ActiveX Control Wizard
 Use this wizard to add an MFC class from an available ActiveX control. The wizard creates a class for each interface you add from the selected ActiveX control.  

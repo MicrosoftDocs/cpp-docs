@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "utility/std::pair"
-  - "pair"
-  - "std::pair"
-  - "std.pair"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pair class"
+ms.topic: "reference"
+f1_keywords: ["utility/std::pair"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pair class"]
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # pair Structure
 A struct that provides for the ability to treat two objects as a single object.  

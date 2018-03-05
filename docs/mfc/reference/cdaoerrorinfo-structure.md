@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDaoErrorInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDaoErrorInfo structure"
-  - "DAO (Data Access Objects), Errors collection"
+f1_keywords: ["CDaoErrorInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoErrorInfo structure [MFC]", "DAO (Data Access Objects), Errors collection"]
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoErrorInfo Structure
 The `CDaoErrorInfo` structure contains information about an error object defined for data access objects (DAO).  

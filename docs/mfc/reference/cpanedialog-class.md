@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPaneDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPaneDialog::OnLButtonDblClk method"
-  - "CPaneDialog::OnLButtonDown method"
-  - "CPaneDialog::CreateObject method"
-  - "CPaneDialog::OnUpdateCmdUI method"
-  - "CPaneDialog constructor"
-  - "CPaneDialog::OnEraseBkgnd method"
-  - "CPaneDialog class"
-  - "CPaneDialog::OnWindowPosChanging method"
+f1_keywords: ["CPaneDialog", "AFXPANEDIALOG/CPaneDialog", "AFXPANEDIALOG/CPaneDialog::Create", "AFXPANEDIALOG/CPaneDialog::HandleInitDialog", "AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPaneDialog [MFC], Create", "CPaneDialog [MFC], HandleInitDialog", "CPaneDialog [MFC], SetOccDialogInfo"]
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPaneDialog Class
 The `CPaneDialog` class supports a modeless, dockable dialog box.  
@@ -75,7 +51,7 @@ class CPaneDialog : public CDockablePane
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|Specifies the template for a dialog box that is an OLE control container.|  
   
 ## Remarks  
- Construct a `CPaneDialog` object in two steps. First, construct the object in your code. Second, call [CPaneDialog::Create](#create). You must specify a valid resource template name or template ID and pass a pointer to the parent window. Otherwise, the creation process fails. The dialog box must specify the WS_CHILD and WS_VISIBLE style. We recommend that you also specify the WS_CLIPCHILDREN and WS_CLIPSIBLINGS styles. For more information, see [Window Styles](window-styles.md).  
+ Construct a `CPaneDialog` object in two steps. First, construct the object in your code. Second, call [CPaneDialog::Create](#create). You must specify a valid resource template name or template ID and pass a pointer to the parent window. Otherwise, the creation process fails. The dialog box must specify the WS_CHILD and WS_VISIBLE style. We recommend that you also specify the WS_CLIPCHILDREN and WS_CLIPSIBLINGS styles. For more information, see [Window Styles](styles-used-by-mfc.md#window-styles).  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -215,7 +191,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [Classes](../../mfc/reference/mfc-classes.md)   
  [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)   
- [Window Styles](../../mfc/reference/window-styles.md)
+ [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)
 
 
 

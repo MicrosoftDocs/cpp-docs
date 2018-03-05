@@ -4,41 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exception handling, filters"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exception handling [C++], filters"]
 ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Writing an Exception Filter
-You can handle an exception either by jumping to the level of the exception handler or by continuing execution. Instead of using the exception handler code to handle the exception and falling through, you can use *filter* to clean up the problem and then, by returning –1, resume normal flow without clearing the stack.  
+You can handle an exception either by jumping to the level of the exception handler or by continuing execution. Instead of using the exception handler code to handle the exception and falling through, you can use *filter* to clean up the problem and then, by returning -1, resume normal flow without clearing the stack.  
   
 > [!NOTE]
->  Some exceptions cannot be continued. If *filter* evaluates to –1 for such an exception, the system raises a new exception. When you call [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), you determine whether the exception will continue.  
+>  Some exceptions cannot be continued. If *filter* evaluates to -1 for such an exception, the system raises a new exception. When you call [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), you determine whether the exception will continue.  
   
- For example, the following code uses a function call in the *filter* expression: this function handles the problem and then returns –1 to resume normal flow of control:  
+ For example, the following code uses a function call in the *filter* expression: this function handles the problem and then returns -1 to resume normal flow of control:  
   
 ```  
 // exceptions_Writing_an_Exception_Filter.cpp  
@@ -89,7 +73,7 @@ __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {  
 ```  
   
- The conditional operator is more useful in situations where you might want the filter to evaluate to –1, EXCEPTION_CONTINUE_EXECUTION.  
+ The conditional operator is more useful in situations where you might want the filter to evaluate to -1, EXCEPTION_CONTINUE_EXECUTION.  
   
  The comma operator enables you to perform multiple, independent operations inside a single expression. The effect is roughly that of executing multiple statements and then returning the value of the last expression. For example, the following code stores the exception code in a variable and then tests it:  
   

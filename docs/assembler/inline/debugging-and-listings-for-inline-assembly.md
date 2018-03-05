@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "source level debugger"
-  - "__asm keyword [C++], debugging"
-  - "inline assembly, listings"
-  - "bugs, __asm blocks"
-  - "debugging [C++], inline assembly code"
-  - "inline assembly, debugging"
+dev_langs: ["C++"]
+helpviewer_keywords: ["source level debugger", "__asm keyword [C++], debugging", "inline assembly, listings", "bugs, __asm blocks", "debugging [C++], inline assembly code", "inline assembly, debugging"]
 ms.assetid: 69266930-6f9a-433d-b704-f4f44e7b2583
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Debugging and Listings for Inline Assembly
 ## Microsoft Specific  

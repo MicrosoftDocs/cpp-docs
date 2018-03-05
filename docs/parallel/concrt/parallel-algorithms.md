@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parallel algorithms [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["parallel algorithms [Concurrency Runtime]"]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Parallel Algorithms
 The Parallel Patterns Library (PPL) provides algorithms that concurrently perform work on collections of data. These algorithms resemble those provided by the C++ Standard Library.  
@@ -108,7 +91,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
 
  The [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm performs tasks on an iterative container, such as those provided by the C++ Standard Library, in parallel. It uses the same partitioning logic that the `parallel_for` algorithm uses.  
   
- The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](http://msdn.microsoft.com/library/8cb2ae72-bef6-488b-b011-0475c0787e33) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently. Like other parallel algorithms, `parallel_for_each` does not execute the tasks in a specific order.  
+ The `parallel_for_each` algorithm resembles the C++ Standard Library [std::for_each](../../standard-library/algorithm-functions.md#for_each) algorithm, except that the `parallel_for_each` algorithm executes the tasks concurrently. Like other parallel algorithms, `parallel_for_each` does not execute the tasks in a specific order.  
   
  Although the `parallel_for_each` algorithm works on both forward iterators and random access iterators, it performs better with random access iterators.  
   
@@ -201,7 +184,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
 ###  <a name="map_reduce_example"></a> Example: Performing Map and Reduce in Parallel  
 
- A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the C++ Standard Library [std::transform](../../standard-library/algorithm-functions.md#transform)[std::accumulate](../../standard-library/numeric-functions.md#accumulate) classes to perform map and reduce operations. However, for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm perform the reduce operation in parallel.  
+ A *map* operation applies a function to each value in a sequence. A *reduce* operation combines the elements of a sequence into one value. You can use the C++ Standard Library [std::transform](../../standard-library/algorithm-functions.md#transform) and [std::accumulate](../../standard-library/numeric-functions.md#accumulate) functions to perform map and reduce operations. However, for many problems, you can use the `parallel_transform` algorithm to perform the map operation in parallel and the `parallel_reduce` algorithm perform the reduce operation in parallel.  
 
   
  The following example compares the time that it takes to compute the sum of prime numbers serially and in parallel. The map phase transforms non-prime values to 0 and the reduce phase sums the values.  
@@ -277,7 +260,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
  [!code-cpp[concrt-basic-parallel-sort#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_10.cpp)]  
   
- This example shows how to provide a custom compare function. It uses the [std::complex::real](../../standard-library/complex-class.md#complex__real) method to sort [std::complex\<double>](../../standard-library/complex-double.md) values in ascending order.  
+ This example shows how to provide a custom compare function. It uses the [std::complex::real](../../standard-library/complex-class.md#real) method to sort [std::complex\<double>](../../standard-library/complex-double.md) values in ascending order.  
   
  [!code-cpp[concrt-basic-parallel-sort#2](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_11.cpp)]  
   
@@ -308,7 +291,7 @@ The Parallel Patterns Library (PPL) provides algorithms that concurrently perfor
   
 -   The chunk size. The optional `_Chunk_size` argument specifies when the algorithm switches from a parallel to a serial sort implementation as it subdivides the overall sort into smaller units of work. For example, if you provide 512, the algorithm switches to serial implementation when a unit of work contains 512 or fewer elements. A serial implementation can improve overall performance because it eliminates the overhead that is required to process data in parallel.  
   
- It might not be worthwhile to sort a small dataset in parallel, even when you have a large number of available computing resources or your compare function or hash function performs a relatively large amount of work. You can use [std::sort](http://msdn.microsoft.com/library/9b0a4fc1-5131-4c73-9c2e-d72211f2d0ae) function to sort small datasets. (`parallel_sort` and `parallel_buffered_sort` call `sort` when you specify a chunk size that is larger than the dataset; however, `parallel_buffered_sort` would have to allocate O(N) space, which could take additional time due to lock contention or memory allocation.)  
+ It might not be worthwhile to sort a small dataset in parallel, even when you have a large number of available computing resources or your compare function or hash function performs a relatively large amount of work. You can use [std::sort](../../standard-library/algorithm-functions.md#sort) function to sort small datasets. (`parallel_sort` and `parallel_buffered_sort` call `sort` when you specify a chunk size that is larger than the dataset; however, `parallel_buffered_sort` would have to allocate O(N) space, which could take additional time due to lock contention or memory allocation.)  
   
  If you must conserve memory or your memory allocator is subject to lock contention, use `parallel_sort` to sort a medium-sized dataset. `parallel_sort` requires no additional space; the other algorithms require O(N) space.  
   

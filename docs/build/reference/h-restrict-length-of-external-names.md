@@ -4,42 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "public name length"
-  - "/H compiler option [C++]"
-  - "H compiler option [C++]"
-  - "external names"
-  - "-H compiler option [C++]"
+f1_keywords: ["/h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["public name length", "/H compiler option [C++]", "H compiler option [C++]", "external names", "-H compiler option [C++]"]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /H (Restrict Length of External Names)
-Restricts the length of external names.  
+Deprecated. Restricts the length of external names.  
   
 ## Syntax  
   
@@ -72,7 +51,7 @@ Restricts the length of external names.
   
  The following example shows how using **/H** can actually introduce errors if identifier lengths are limited too much:  
   
-```  
+```cpp  
 // compiler_option_H.cpp  
 // compile with: /H5  
 // processor: x86  
@@ -90,7 +69,7 @@ void func2(void) {}
   
  Use of **/H** is incompatible with [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md).  
   
- **/H** is deprecated; the maximum length limits have been increased and **/H** is no longer needed.  For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/H** option is deprecated since Visual Studio 2005; the maximum length limits have been increased and **/H** is no longer needed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

@@ -5,21 +5,23 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "unordered_map/std::swap"
+ms.topic: "reference"
+f1_keywords: ["unordered_map/std::swap", "unordered_map/std::swap (unordered_map)", "unordered_map/std::swap (unordered_multimap)"]
+dev_langs: ["C++"]
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_map&gt; functions
 |||  
 |-|-|  
-|[swap (unordered_map)](#swap_function)|[swap (unordered_multimap)](#swap_function_multimap)|  
+|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|  
   
-##  <a name="swap_function"></a>  swap (unordered_map)  
+##  <a name="swap"></a>  swap (unordered_map)  
  Swaps the contents of two containers.  
   
 ```  
@@ -52,7 +54,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_map::swap](../standard-library/unordered-map-class.md#unordered_map__swap)`(right)`.  
+ The template function executes `left.`[unordered_map::swap](../standard-library/unordered-map-class.md#swap)`(right)`.  
   
 ### Example  
   
@@ -143,7 +145,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_multimap::swap](../standard-library/unordered-multimap-class.md#unordered_multimap__swap)`(right)`.  
+ The template function executes `left.`[unordered_multimap::swap](../standard-library/unordered-multimap-class.md#swap)`(right)`.  
   
 ### Example  
   

@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["iosfwd/std::ostream", "iosfwd/std::wostream"]
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 caps.latest.revision: 11
 manager: "ghogen"

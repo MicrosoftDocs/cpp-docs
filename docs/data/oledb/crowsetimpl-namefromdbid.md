@@ -4,49 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CRowsetImpl.NameFromDBID"
-  - "CRowsetImpl::NameFromDBID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NameFromDBID method"
+ms.topic: "reference"
+f1_keywords: ["CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["NameFromDBID method"]
 ms.assetid: 6aa5b074-90c7-4434-adfd-c64c13e76c78
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::NameFromDBID
 Extracts a string from a **DBID** and copies it to the `bstr` passed in.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::NameFromDBID(  
-   DBID* pDBID,  
+```cpp
+HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,  
    CComBSTR& bstr,  
-   bool bIndex   
-);  
+   bool bIndex);  
 ```  
   
 #### Parameters  

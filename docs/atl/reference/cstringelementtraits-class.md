@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CStringElementTraits<T>"
-  - "ATL::CStringElementTraits<T>"
-  - "CStringElementTraits"
-  - "ATL.CStringElementTraits"
-  - "ATL::CStringElementTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStringElementTraits class"
+f1_keywords: ["CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits::INARGTYPE", "CSTRINGT/ATL::CStringElementTraits::OUTARGTYPE", "CSTRINGT/ATL::CStringElementTraits::CompareElements", "CSTRINGT/ATL::CStringElementTraits::CompareElementsOrdered", "CSTRINGT/ATL::CStringElementTraits::CopyElements", "CSTRINGT/ATL::CStringElementTraits::Hash", "CSTRINGT/ATL::CStringElementTraits::RelocateElements"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStringElementTraits class"]
 ms.assetid: 74d7134b-099d-4455-bf91-3e68ccbf95bc
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStringElementTraits Class
 This class provides static functions used by collection classes storing `CString` objects.  

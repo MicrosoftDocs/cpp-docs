@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "intrinsic_CPP"
-  - "vc-pragma.intrinsic"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "intrinsic pragma"
-  - "pragmas, intrinsic"
+ms.topic: "reference"
+f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # intrinsic
 Specifies that calls to functions specified in the pragma's argument list are intrinsic.  

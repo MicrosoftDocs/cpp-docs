@@ -4,47 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::ISupportErrorInfoImpl<piid>"
-  - "ATL::ISupportErrorInfoImpl"
-  - "ISupportErrorInfoImpl"
-  - "ATL.ISupportErrorInfoImpl<piid>"
-  - "ATL.ISupportErrorInfoImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISupportErrorInfo ATL implementation"
-  - "ISupportErrorInfoImpl class"
-  - "error information, ATL"
+f1_keywords: ["ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISupportErrorInfo ATL implementation", "ISupportErrorInfoImpl class", "error information, ATL"]
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ISupportErrorInfoImpl Class
 This class provides a default implementation of the [ISupportErrorInfo Interface](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) and can be used when only a single interface generates errors on an object.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -89,7 +66,7 @@ STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 ```  
   
 ### Remarks  
- See [ISupportErrorInfo::InterfaceSupportsErrorInfo](http://msdn.microsoft.com/en-us/a54ef18d-ee3f-4483-ac4a-99d758f0960a) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [ISupportErrorInfo::InterfaceSupportsErrorInfo](http://msdn.microsoft.com/en-us/a54ef18d-ee3f-4483-ac4a-99d758f0960a) in the Windows SDK.  
   
 ##  <a name="getsize"></a>  IThreadPoolConfig::GetSize  
  Call this method to get the number of threads in the pool.  

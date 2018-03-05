@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C2268"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2268"
+f1_keywords: ["C2268"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2268"]
 ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2268
 'function' is a compiler predefined library helper. Library helpers are not supported with /GL; compile object file 'file' without /GL.  

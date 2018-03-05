@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL::_ATL_COM_MODULE70"
-  - "ATL._ATL_COM_MODULE70"
-  - "_ATL_COM_MODULE70"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ATL_COM_MODULE70 structure"
-  - "ATL_COM_MODULE70 structure"
+ms.topic: "reference"
+f1_keywords: ["ATL::_ATL_COM_MODULE70", "ATL._ATL_COM_MODULE70", "_ATL_COM_MODULE70"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ATL_COM_MODULE70 structure", "ATL_COM_MODULE70 structure"]
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_COM_MODULE70 Structure
 Used by COM-related code in ATL.  

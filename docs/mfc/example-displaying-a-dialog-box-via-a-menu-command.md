@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC dialog boxes, examples"
-  - "MFC dialog boxes, displaying"
-  - "modeless dialog boxes, displaying"
-  - "dialog boxes, MFC"
-  - "modal dialog boxes, displaying"
-  - "examples [MFC], dialog boxes"
-  - "menu items, examples"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Example: Displaying a Dialog Box via a Menu Command
 This topic contains procedures to:  

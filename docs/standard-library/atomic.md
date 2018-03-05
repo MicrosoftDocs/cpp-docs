@@ -4,77 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<atomic>"
-  - "atomic/std::atomic_int_least32_t"
-  - "atomic/std::atomic_ullong"
-  - "atomic/std::atomic_ptrdiff_t"
-  - "atomic/std::atomic_char16_t"
-  - "atomic/std::atomic_schar"
-  - "atomic/std::atomic_ulong"
-  - "atomic/std::atomic_uint_fast32_t"
-  - "atomic/std::atomic_uint8_t"
-  - "atomic/std::atomic_int32_t"
-  - "atomic/std::atomic_uint_fast64_t"
-  - "atomic/std::atomic_uint32_t"
-  - "atomic/std::atomic_int16_t"
-  - "atomic/std::atomic_uintmax_t"
-  - "atomic/std::atomic_intmax_t"
-  - "atomic/std::atomic_long"
-  - "atomic/std::atomic_int"
-  - "atomic/std::atomic_uint_least8_t"
-  - "atomic/std::atomic_size_t"
-  - "atomic/std::atomic_uint_fast16_t"
-  - "atomic/std::atomic_wchar_t"
-  - "atomic/std::atomic_int_fast64_t"
-  - "atomic/std::atomic_uint_fast8_t"
-  - "atomic/std::atomic_int_fast8_t"
-  - "atomic/std::atomic_intptr_t"
-  - "atomic/std::atomic_uint"
-  - "atomic/std::atomic_uint16_t"
-  - "atomic/std::atomic_char32_t"
-  - "atomic/std::atomic_uint64_t"
-  - "atomic/std::atomic_ushort"
-  - "atomic/std::atomic_int_least16_t"
-  - "atomic/std::atomic_char"
-  - "atomic/std::atomic_uint_least32_t"
-  - "atomic/std::atomic_uintptr_t"
-  - "atomic/std::atomic_short"
-  - "atomic/std::atomic_llong"
-  - "atomic/std::atomic_uint_least16_t"
-  - "atomic/std::atomic_int_fast16_t"
-  - "atomic/std::atomic_int_least8_t"
-  - "atomic/std::atomic_int_least64_t"
-  - "atomic/std::atomic_int_fast32_t"
-  - "atomic/std::atomic_uchar"
-  - "atomic/std::atomic_int8_t"
-  - "atomic/std::atomic_int64_t"
-  - "atomic/std::atomic_uint_least64_t"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["<atomic>", "atomic/std::atomic_int_least32_t", "atomic/std::atomic_ullong", "atomic/std::atomic_ptrdiff_t", "atomic/std::atomic_char16_t", "atomic/std::atomic_schar", "atomic/std::atomic_ulong", "atomic/std::atomic_uint_fast32_t", "atomic/std::atomic_uint8_t", "atomic/std::atomic_int32_t", "atomic/std::atomic_uint_fast64_t", "atomic/std::atomic_uint32_t", "atomic/std::atomic_int16_t", "atomic/std::atomic_uintmax_t", "atomic/std::atomic_intmax_t", "atomic/std::atomic_long", "atomic/std::atomic_int", "atomic/std::atomic_uint_least8_t", "atomic/std::atomic_size_t", "atomic/std::atomic_uint_fast16_t", "atomic/std::atomic_wchar_t", "atomic/std::atomic_int_fast64_t", "atomic/std::atomic_uint_fast8_t", "atomic/std::atomic_int_fast8_t", "atomic/std::atomic_intptr_t", "atomic/std::atomic_uint", "atomic/std::atomic_uint16_t", "atomic/std::atomic_char32_t", "atomic/std::atomic_uint64_t", "atomic/std::atomic_ushort", "atomic/std::atomic_int_least16_t", "atomic/std::atomic_char", "atomic/std::atomic_uint_least32_t", "atomic/std::atomic_uintptr_t", "atomic/std::atomic_short", "atomic/std::atomic_llong", "atomic/std::atomic_uint_least16_t", "atomic/std::atomic_int_fast16_t", "atomic/std::atomic_int_least8_t", "atomic/std::atomic_int_least64_t", "atomic/std::atomic_int_fast32_t", "atomic/std::atomic_uchar", "atomic/std::atomic_int8_t", "atomic/std::atomic_int64_t", "atomic/std::atomic_uint_least64_t"]
+dev_langs: ["C++"]
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;atomic&gt;
 Defines classes and template classes to use to create types that support atomic operations.  
@@ -186,35 +126,35 @@ Defines classes and template classes to use to create types that support atomic 
   
 |Name|Description|  
 |----------|-----------------|  
-|[atomic_compare_exchange_strong Function](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_function)|Performs an *atomic compare and exchange* operation.|  
-|[atomic_compare_exchange_strong_explicit Function](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit_function)|Performs an *atomic compare and exchange* operation.|  
-|[atomic_compare_exchange_weak Function](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_function)|Performs a *weak atomic compare and exchange* operation.|  
-|[atomic_compare_exchange_weak_explicit Function](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit_function)|Performs a *weak atomic compare and exchange* operation.|  
-|[atomic_exchange Function](../standard-library/atomic-functions.md#atomic_exchange_function)|Replaces a stored value.|  
-|[atomic_exchange_explicit Function](../standard-library/atomic-functions.md#atomic_exchange_explicit_function)|Replaces a stored value.|  
-|[atomic_fetch_add Function](../standard-library/atomic-functions.md#atomic_fetch_add_function)|Adds a specified value to an existing stored value.|  
-|[atomic_fetch_add_explicit Function](../standard-library/atomic-functions.md#atomic_fetch_add_explicit_function)|Adds a specified value to an existing stored value.|  
-|[atomic_fetch_and Function](../standard-library/atomic-functions.md#atomic_fetch_and_function)|Performs a bitwise `and` on a specified value and an existing stored value.|  
-|[atomic_fetch_and_explicit Function](../standard-library/atomic-functions.md#atomic_fetch_and_explicit_function)|Performs a bitwise `and` on a specified value and an existing stored value.|  
-|[atomic_fetch_or Function](../standard-library/atomic-functions.md#atomic_fetch_or_function)|Performs a bitwise `or` on a specified value and an existing stored value.|  
-|[atomic_fetch_or_explicit Function](../standard-library/atomic-functions.md#atomic_fetch_or_explicit_function)|Performs a bitwise `or` on a specified value and an existing stored value.|  
-|[atomic_fetch_sub Function](../standard-library/atomic-functions.md#atomic_fetch_sub_function)|Subtracts a specified value from an existing stored value.|  
-|[atomic_fetch_sub_explicit Function](../standard-library/atomic-functions.md#atomic_fetch_sub_explicit_function)|Subtracts a specified value from an existing stored value.|  
-|[atomic_fetch_xor Function](../standard-library/atomic-functions.md#atomic_fetch_xor_function)|Performs a bitwise `exclusive or` on a specified value and an existing stored value.|  
-|[atomic_fetch_xor_explicit Function](../standard-library/atomic-functions.md#atomic_fetch_xor_explicit_function)|Performs a bitwise `exclusive or` on a specified value and an existing stored value.|  
-|[atomic_flag_clear Function](../standard-library/atomic-functions.md#atomic_flag_clear_function)|Sets the flag in an `atomic_flag` object to `false`.|  
-|[atomic_flag_clear_explicit Function](../standard-library/atomic-functions.md#atomic_flag_clear_explicit_function)|Sets the flag in an `atomic_flag` object to `false`.|  
-|[atomic_flag_test_and_set Function](../standard-library/atomic-functions.md#atomic_flag_test_and_set_function)|Sets the flag in an `atomic_flag` object to `true`.|  
-|[atomic_flag_test_and_set_explicit Function](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit_function)|Sets the flag in an `atomic_flag` object to `true`.|  
-|[atomic_init Function](../standard-library/atomic-functions.md#atomic_init_function)|Sets the stored value in an `atomic` object.|  
-|[atomic_is_lock_free Function](../standard-library/atomic-functions.md#atomic_is_lock_free_function)|Specifies whether atomic operations on a specified object are lock-free.|  
-|[atomic_load Function](../standard-library/atomic-functions.md#atomic_load_function)|Atomically retrieves a value.|  
-|[atomic_load_explicit Function](../standard-library/atomic-functions.md#atomic_load_explicit_function)|Atomically retrieves a value.|  
-|[atomic_signal_fence Function](../standard-library/atomic-functions.md#atomic_signal_fence_function)|Acts as a *fence* that establishes memory ordering requirements between fences in a calling thread that has signal handlers executed in the same thread.|  
-|[atomic_store Function](../standard-library/atomic-functions.md#atomic_store_function)|Atomically stores a value.|  
-|[atomic_store_explicit Function](../standard-library/atomic-functions.md#atomic_store_explicit_function)|Atomically stores a value.|  
-|[atomic_thread_fence Function](../standard-library/atomic-functions.md#atomic_thread_fence_function)|Acts as a *fence* that establishes memory ordering requirements with respect to other fences.|  
-|[kill_dependency Function](../standard-library/atomic-functions.md#kill_dependency_function)|Breaks a possible dependency chain.|  
+|[atomic_compare_exchange_strong](../standard-library/atomic-functions.md#atomic_compare_exchange_strong)|Performs an *atomic compare and exchange* operation.|  
+|[atomic_compare_exchange_strong_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit)|Performs an *atomic compare and exchange* operation.|  
+|[atomic_compare_exchange_weak](../standard-library/atomic-functions.md#atomic_compare_exchange_weak)|Performs a *weak atomic compare and exchange* operation.|  
+|[atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit)|Performs a *weak atomic compare and exchange* operation.|  
+|[atomic_exchange](../standard-library/atomic-functions.md#atomic_exchange)|Replaces a stored value.|  
+|[atomic_exchange_explicit](../standard-library/atomic-functions.md#atomic_exchange_explicit)|Replaces a stored value.|  
+|[atomic_fetch_add](../standard-library/atomic-functions.md#atomic_fetch_add)|Adds a specified value to an existing stored value.|  
+|[atomic_fetch_add_explicit](../standard-library/atomic-functions.md#atomic_fetch_add_explicit)|Adds a specified value to an existing stored value.|  
+|[atomic_fetch_and](../standard-library/atomic-functions.md#atomic_fetch_and)|Performs a bitwise `and` on a specified value and an existing stored value.|  
+|[atomic_fetch_and_explicit](../standard-library/atomic-functions.md#atomic_fetch_and_explicit)|Performs a bitwise `and` on a specified value and an existing stored value.|  
+|[atomic_fetch_or](../standard-library/atomic-functions.md#atomic_fetch_or)|Performs a bitwise `or` on a specified value and an existing stored value.|  
+|[atomic_fetch_or_explicit](../standard-library/atomic-functions.md#atomic_fetch_or_explicit)|Performs a bitwise `or` on a specified value and an existing stored value.|  
+|[atomic_fetch_sub](../standard-library/atomic-functions.md#atomic_fetch_sub)|Subtracts a specified value from an existing stored value.|  
+|[atomic_fetch_sub_explicit](../standard-library/atomic-functions.md#atomic_fetch_sub_explicit)|Subtracts a specified value from an existing stored value.|  
+|[atomic_fetch_xor](../standard-library/atomic-functions.md#atomic_fetch_xor)|Performs a bitwise `exclusive or` on a specified value and an existing stored value.|  
+|[atomic_fetch_xor_explicit](../standard-library/atomic-functions.md#atomic_fetch_xor_explicit)|Performs a bitwise `exclusive or` on a specified value and an existing stored value.|  
+|[atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear)|Sets the flag in an `atomic_flag` object to `false`.|  
+|[atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit)|Sets the flag in an `atomic_flag` object to `false`.|  
+|[atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set)|Sets the flag in an `atomic_flag` object to `true`.|  
+|[atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit)|Sets the flag in an `atomic_flag` object to `true`.|  
+|[atomic_init](../standard-library/atomic-functions.md#atomic_init)|Sets the stored value in an `atomic` object.|  
+|[atomic_is_lock_free](../standard-library/atomic-functions.md#atomic_is_lock_free)|Specifies whether atomic operations on a specified object are lock-free.|  
+|[atomic_load](../standard-library/atomic-functions.md#atomic_load)|Atomically retrieves a value.|  
+|[atomic_load_explicit](../standard-library/atomic-functions.md#atomic_load_explicit)|Atomically retrieves a value.|  
+|[atomic_signal_fence](../standard-library/atomic-functions.md#atomic_signal_fence)|Acts as a *fence* that establishes memory ordering requirements between fences in a calling thread that has signal handlers executed in the same thread.|  
+|[atomic_store](../standard-library/atomic-functions.md#atomic_store)|Atomically stores a value.|  
+|[atomic_store_explicit](../standard-library/atomic-functions.md#atomic_store_explicit)|Atomically stores a value.|  
+|[atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence)|Acts as a *fence* that establishes memory ordering requirements with respect to other fences.|  
+|[kill_dependency](../standard-library/atomic-functions.md#kill_dependency)|Breaks a possible dependency chain.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

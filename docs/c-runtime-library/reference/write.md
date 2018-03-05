@@ -4,51 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_write"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_write"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_write"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_write function"
-  - "write function"
-  - "files [C++], writing to"
+f1_keywords: ["_write"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_write function", "write function", "files [C++], writing to"]
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _write
 Writes data to a file.  
@@ -74,11 +44,11 @@ int _write(
  Number of bytes.  
   
 ## Return Value  
- If successful, `_write` returns the number of bytes actually written. If the actual space remaining on the disk is less than the size of the buffer the function is trying to write to the disk, `_write` fails and does not flush any of the buffer's contents to the disk. A return value of –1 indicates an error. If invalid parameters are passed, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to one of three values: `EBADF`, which means the file descriptor is invalid or the file is not opened for writing; `ENOSPC`, which means there is not enough space left on the device for the operation; or `EINVAL`, which means that `buffer` was a null pointer or that an odd `count` of bytes was passed to be written to a file in Unicode mode.  
+ If successful, `_write` returns the number of bytes actually written. If the actual space remaining on the disk is less than the size of the buffer the function is trying to write to the disk, `_write` fails and does not flush any of the buffer's contents to the disk. A return value of -1 indicates an error. If invalid parameters are passed, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to one of three values: `EBADF`, which means the file descriptor is invalid or the file is not opened for writing; `ENOSPC`, which means there is not enough space left on the device for the operation; or `EINVAL`, which means that `buffer` was a null pointer or that an odd `count` of bytes was passed to be written to a file in Unicode mode.  
   
  For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- If the file is opened in text mode, each linefeed character is replaced with a carriage return – linefeed pair in the output. The replacement does not affect the return value.  
+ If the file is opened in text mode, each linefeed character is replaced with a carriage return - linefeed pair in the output. The replacement does not affect the return value.  
   
  When the file is opened in Unicode translation mode—for example, if `fd` is opened by using `_open` or `_sopen` and a mode parameter that includes `_O_WTEXT`, `_O_U16TEXT`, or `_O_U8TEXT`, or if it is opened by using `fopen` and a mode parameter that includes `ccs=UNICODE`, `ccs=UTF-16LE`, or `ccs=UTF-8`, or if the mode is changed to a Unicode translation mode by using `_setmode`—`buffer` is interpreted as a pointer to an array of `wchar_t` that contains **UTF-16** data. An attempt to write an odd number of bytes in this mode causes a parameter validation error.  
   

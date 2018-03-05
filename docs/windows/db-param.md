@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.db_param"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "db_param attribute"
+f1_keywords: ["vc-attr.db_param"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["db_param attribute"]
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # db_param
 Associates the specified member variable with an input or output parameter and delimits the variable.  
@@ -87,7 +70,7 @@ Associates the specified member variable with an input or output parameter and d
   
  **db_param** is used in conjunction with either the [db_table](../windows/db-table.md) or [db_command](../windows/db-command.md) attributes.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  The following example creates a command class based on the SalesbyYear stored procedure in the Northwind database. It associates the first parameter in the stored procedure with the `m_RETURN_VALUE` variable, and defines it as an output parameter. It associates the last two (input) parameters with `m_Beginning_Date` and `m_Ending_Date`.  
@@ -143,4 +126,3 @@ struct CSalesbyYear {
   
 ## See Also  
  [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

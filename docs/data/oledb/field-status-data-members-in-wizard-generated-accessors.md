@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB consumer templates, field status"
-  - "field status in OLE DB templates"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB consumer templates, field status", "field status in OLE DB templates"]
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Field Status Data Members in Wizard-Generated Accessors
 When you use the ATL OLE DB Consumer Wizard to create a consumer, the wizard generates a data member in the user record class for each field that you specify in your column map. Each data member is of type `DWORD` and contains a status value corresponding to its respective field.  
@@ -95,7 +78,7 @@ END_COLUMN_MAP()
   
  You can also use the status values to set a NULL value for a particular field. Doing so helps you in cases in which you want to distinguish a field value as NULL rather than zero. It is up to you to decide whether NULL is a valid value or a special value and decide how your application should handle it. OLE DB defines **DBSTATUS_S_ISNULL** as the correct means of specifying a generic NULL value. If the consumer reads data and the value is null, the status field is set to **DBSTATUS_S_ISNULL**. If the consumer wants to set a NULL value, the consumer sets the status value to **DBSTATUS_S_ISNULL** before calling the provider.  
   
- Next, open Oledb.h and search for **DBSTATUSENUM**. You can then match the numerical value of the nonzero status against the **DBSTATUSENUM** enumeration values. If the enumeration name is not sufficient to tell you what is wrong, see the "Status" topic in the "Binding Data Values" section of the [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/?linkid=121548). This topic contains tables of status values used when getting or setting data. For information about length values, see the "Length" topic in the same section.  
+ Next, open Oledb.h and search for **DBSTATUSENUM**. You can then match the numerical value of the nonzero status against the **DBSTATUSENUM** enumeration values. If the enumeration name is not sufficient to tell you what is wrong, see the "Status" topic in the "Binding Data Values" section of the [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/p/?linkid=121548). This topic contains tables of status values used when getting or setting data. For information about length values, see the "Length" topic in the same section.  
   
 ## Retrieving the Length or Status of a Column  
  You can retrieve the length of a variable-length column or the status of a column (to check for **DBSTATUS_S_ISNULL**, for example):  
@@ -121,9 +104,10 @@ BEGIN_COLUMN_MAP(CProducts)
 END_COLUMN_MAP()  
 };  
   
-CTable<CAccessor<CProducts > > product;  
+CTable<CAccessor<CProducts >> product;  
   
 product.Open(session, "Product");  
+
 while (product.MoveNext() == S_OK)  
 {  
    // Check the product name isn't NULL before tracing it  

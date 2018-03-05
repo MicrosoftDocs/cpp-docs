@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.emitidl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "emitidl attribute"
+f1_keywords: ["vc-attr.emitidl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["emitidl attribute"]
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # emitidl
 Specifies whether all subsequent IDL attributes are processed and placed in the generated .idl file.  

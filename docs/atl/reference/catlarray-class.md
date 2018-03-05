@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAtlArray"
-  - "ATL.CAtlArray"
-  - "CAtlArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlArray class"
+f1_keywords: ["CAtlArray", "ATLCOLL/ATL::CAtlArray", "ATLCOLL/ATL::Add", "ATLCOLL/ATL::Append", "ATLCOLL/ATL::AssertValid", "ATLCOLL/ATL::Copy", "ATLCOLL/ATL::FreeExtra", "ATLCOLL/ATL::GetAt", "ATLCOLL/ATL::GetCount", "ATLCOLL/ATL::GetData", "ATLCOLL/ATL::InsertArrayAt", "ATLCOLL/ATL::InsertAt", "ATLCOLL/ATL::IsEmpty", "ATLCOLL/ATL::RemoveAll", "ATLCOLL/ATL::RemoveAt", "ATLCOLL/ATL::SetAt", "ATLCOLL/ATL::SetAtGrow", "ATLCOLL/ATL::SetCount", "ATLCOLL/ATL::INARGTYPE", "ATLCOLL/ATL::OUTARGTYPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlArray class"]
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlArray Class
 This class implements an array object.  
@@ -120,7 +101,7 @@ size_t Add();
  Returns the index of the added element.  
   
 ### Remarks  
- The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7) is called with the argument E_OUTOFMEMORY.  
+ The new element is added to the end of the array. If no element is provided, an empty element is added; that is, the array is increased in size as though a real element has been added. If the operation fails, [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow) is called with the argument E_OUTOFMEMORY.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#1](../../atl/codesnippet/cpp/catlarray-class_1.cpp)]  

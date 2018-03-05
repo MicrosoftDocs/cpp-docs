@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.OptimizeReferences"
-  - "/opt"
-  - "VC.Project.VCLinkerTool.OptimizeForWindows98"
-  - "VC.Project.VCLinkerTool.EnableCOMDATFolding"
-  - "VC.Project.VCLinkerTool.OptimizeFolding"
-  - "VC.Project.VCLinkerTool.FoldingIterations"
-  - "VC.Project.VCLinkerTool.OptimizeFoldingIterations"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LINK tool [C++], controlling optimizations"
-  - "-OPT linker option"
-  - "linker [C++], optimizations"
-  - "OPT linker option"
-  - "optimization, linker"
-  - "/OPT linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LINK tool [C++], controlling optimizations", "-OPT linker option", "linker [C++], optimizations", "OPT linker option", "optimization, linker", "/OPT linker option"]
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /OPT (Optimizations)
 Controls the optimizations that LINK performs during a build.  

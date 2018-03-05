@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, COM support"
-  - "IDispatch interface"
-  - "MFC, OLE DB and"
-  - "TN039"
-  - "Automation, MFC COM interface entry points"
+f1_keywords: ["vc.mfc.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, COM support", "IDispatch interface", "MFC, OLE DB and", "TN039", "Automation, MFC COM interface entry points"]
 ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN039: MFC/OLE Automation Implementation
 > [!NOTE]

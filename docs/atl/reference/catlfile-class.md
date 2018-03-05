@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlFile"
-  - "ATL::CAtlFile"
-  - "ATL.CAtlFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlFile class"
+f1_keywords: ["CAtlFile", "ATLFILE/ATL::CAtlFile", "ATLFILE/ATL::CAtlFile::CAtlFile", "ATLFILE/ATL::CAtlFile::Create", "ATLFILE/ATL::CAtlFile::Flush", "ATLFILE/ATL::CAtlFile::GetOverlappedResult", "ATLFILE/ATL::CAtlFile::GetPosition", "ATLFILE/ATL::CAtlFile::GetSize", "ATLFILE/ATL::CAtlFile::LockRange", "ATLFILE/ATL::CAtlFile::Read", "ATLFILE/ATL::CAtlFile::Seek", "ATLFILE/ATL::CAtlFile::SetSize", "ATLFILE/ATL::CAtlFile::UnlockRange", "ATLFILE/ATL::CAtlFile::Write", "ATLFILE/ATL::CAtlFile::m_pTM"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlFile class"]
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlFile Class
 This class provides a thin wrapper around the Windows file-handling API.  
@@ -131,7 +112,7 @@ HRESULT Create(
  The file name.  
   
  `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
  `dwShareMode`  
  The share mode. See `dwShareMode` in **CreateFile**.  
@@ -179,7 +160,7 @@ HRESULT GetOverlappedResult(
   
 ### Parameters  
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the Windows SDK.  
   
  *dwBytesTransferred*  
  The bytes transferred. See *lpNumberOfBytesTransferred* in `GetOverlappedResult`.  
@@ -292,10 +273,10 @@ HRESULT Read(
  The number of bytes read.  
   
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the Windows SDK.  
   
  `pfnCompletionRoutine`  
- The completion routine. See *lpCompletionRoutine* in [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The completion routine. See *lpCompletionRoutine* in [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -391,10 +372,10 @@ HRESULT Write(
  The number of bytes to be transferred from the buffer.  
   
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the Windows SDK.  
   
  `pfnCompletionRoutine`  
- The completion routine. See *lpCompletionRoutine* in [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The completion routine. See *lpCompletionRoutine* in [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) in the Windows SDK.  
   
  `pnBytesWritten`  
  The bytes written.  

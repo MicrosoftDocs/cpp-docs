@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CURRENCY"
-  - "COleCurrency"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fixed-point numbers"
-  - "numbers, fixed-point"
-  - "CURRENCY"
-  - "COleCurrency class"
+f1_keywords: ["COleCurrency", "AFXDISP/COleCurrency", "AFXDISP/COleCurrency::COleCurrency", "AFXDISP/COleCurrency::Format", "AFXDISP/COleCurrency::GetStatus", "AFXDISP/COleCurrency::ParseCurrency", "AFXDISP/COleCurrency::SetCurrency", "AFXDISP/COleCurrency::SetStatus", "AFXDISP/COleCurrency::m_cur", "AFXDISP/COleCurrency::m_status"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleCurrency [MFC], COleCurrency", "COleCurrency [MFC], Format", "COleCurrency [MFC], GetStatus", "COleCurrency [MFC], ParseCurrency", "COleCurrency [MFC], SetCurrency", "COleCurrency [MFC], SetStatus", "COleCurrency [MFC], m_cur", "COleCurrency [MFC], m_status"]
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleCurrency Class
 Encapsulates the `CURRENCY` data type of OLE automation.  
@@ -140,7 +119,7 @@ COleCurrency(
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a **COleCurrency** object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the Windows SDK.  
   
 ### Example  
  The following examples show the effects of the zero-parameter and two-parameter constructors:  
@@ -185,15 +164,13 @@ CurrencyStatus GetStatus() const;
 ### Remarks  
  The return value is defined by the `CurrencyStatus` enumerated type that is defined within the **COleCurrency** class.  
   
- `enum CurrencyStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum CurrencyStatus {
+    valid = 0,
+    invalid = 1,
+    null = 2
+    };  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -238,7 +215,7 @@ CurrencyStatus GetStatus() const;
 > [!CAUTION]
 >  Changing the value in the **CURRENCY** structure accessed by the pointer returned by this function will change the value of this **COleCurrency** object. It does not change the status of this **COleCurrency** object.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) entry in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) entry in the Windows SDK.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  The type of this data member is the enumerated type `CurrencyStatus`, which is defined within the **COleCurrency** class.  
@@ -305,7 +282,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this **COleCurrency** object and its status is set to valid. If the conversion is not successful, the value of the **COleCurrency** object is set to 0 and its status to invalid.  
   
- For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entries in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  
@@ -517,15 +494,13 @@ void SetStatus(CurrencyStatus  status  );
 ### Remarks  
  The *status* parameter value is defined by the `CurrencyStatus` enumerated type, which is defined within the **COleCurrency** class.  
   
- `enum CurrencyStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum CurrencyStatus {
+    valid = 0,
+    invalid = 1,
+    null = 2
+    };  
+```  
   
  For a brief description of these status values, see the following list:  
   

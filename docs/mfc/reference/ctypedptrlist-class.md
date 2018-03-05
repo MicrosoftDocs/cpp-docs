@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTypedPtrList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTypedPtrList class"
-  - "type-safe collections"
-  - "lists [C++]"
-  - "template classes, CTypedPtrList class"
-  - "linked lists [C++]"
-  - "pointer lists"
+f1_keywords: ["CTypedPtrList", "AFXTEMPL/CTypedPtrList", "AFXTEMPL/CTypedPtrList::AddHead", "AFXTEMPL/CTypedPtrList::AddTail", "AFXTEMPL/CTypedPtrList::GetAt", "AFXTEMPL/CTypedPtrList::GetHead", "AFXTEMPL/CTypedPtrList::GetNext", "AFXTEMPL/CTypedPtrList::GetPrev", "AFXTEMPL/CTypedPtrList::GetTail", "AFXTEMPL/CTypedPtrList::RemoveHead", "AFXTEMPL/CTypedPtrList::RemoveTail", "AFXTEMPL/CTypedPtrList::SetAt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTypedPtrList [MFC], AddHead", "CTypedPtrList [MFC], AddTail", "CTypedPtrList [MFC], GetAt", "CTypedPtrList [MFC], GetHead", "CTypedPtrList [MFC], GetNext", "CTypedPtrList [MFC], GetPrev", "CTypedPtrList [MFC], GetTail", "CTypedPtrList [MFC], RemoveHead", "CTypedPtrList [MFC], RemoveTail", "CTypedPtrList [MFC], SetAt"]
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTypedPtrList Class
 Provides a type-safe "wrapper" for objects of class `CPtrList`.  

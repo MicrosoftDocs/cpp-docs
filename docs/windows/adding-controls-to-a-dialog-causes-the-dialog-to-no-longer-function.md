@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], troubleshooting"
-  - "common controls, troubleshooting"
-  - "troubleshooting controls"
-  - "dialog boxes, troubleshooting"
-  - "dialog box controls, troubleshooting"
-  - "InitCommonControls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], troubleshooting", "common controls, troubleshooting", "troubleshooting controls", "dialog boxes, troubleshooting", "dialog box controls, troubleshooting", "InitCommonControls"]
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Controls to a Dialog Causes the Dialog to No Longer Function
 After adding a common control or rich edit control to a dialog box, it will not appear when you test the dialog box or the dialog itself will not appear.  

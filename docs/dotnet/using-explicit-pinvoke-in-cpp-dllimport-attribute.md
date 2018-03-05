@@ -4,44 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "marshaling [C++], platform invoke"
-  - "C++ Interop, platform invoke"
-  - "interop [C++], platform invoke"
-  - "platform invoke [C++], marshaling in C++"
-  - "data marshaling [C++], platform invoke"
+dev_langs: ["C++"]
+helpviewer_keywords: ["marshaling [C++], platform invoke", "C++ Interop, platform invoke", "interop [C++], platform invoke", "platform invoke [C++], marshaling in C++", "data marshaling [C++], platform invoke"]
 ms.assetid: 18e5218c-6916-48a1-a127-f66e22ef15fc
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Explicit PInvoke in C++ (DllImport Attribute)
 The .NET Framework provides explicit Platform Invoke (or PInvoke) features with the `Dllimport` attribute to allow managed applications to call unmanaged functions packaged inside DLLs. Explicit PInvoke is required for situations where unmanaged APIs are packaged as DLLs and the source code is not available. Calling Win32 functions, for example, requires PInvoke. Otherwise, use implicit P{Invoke; see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) for more information.  
   
  PInvoke works by using <xref:System.Runtime.InteropServices.DllImportAttribute>. This attribute, which takes the name of the DLL as its first argument, is placed before a function declaration for each DLL entry point that will be used. The signature of the function must match the name of a function exported by the DLL (but some type conversion can be performed implicitly by defining the `DllImport` declarations in terms of managed types.)  
   
- The result is a managed entry point for each native DLL function that contains the necessary transition code (or thunk) and simple data conversions. Managed functions can then call into the DLL through these entry points. The code inserted into a module as the result of PInvoke is entirely managed and explicit PInvoke is supported for **/clr**, **/clr:pure**, and **/clr:safe** compilations. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. For more information, see [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ The result is a managed entry point for each native DLL function that contains the necessary transition code (or thunk) and simple data conversions. Managed functions can then call into the DLL through these entry points. The code inserted into a module as the result of PInvoke is entirely managed.  
   
 ## In This Section  
   

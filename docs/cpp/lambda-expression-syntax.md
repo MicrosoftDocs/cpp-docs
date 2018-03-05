@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCF1 Lambda_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lambda expressions [C++], syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["lambda expressions [C++], syntax"]
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Lambda Expression Syntax
 This article demonstrates the syntax and structural elements of lambda expressions. For a description of lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).  
@@ -106,7 +88,7 @@ There are 4 even numbers in the vector.
 ## Example 2: Using a Function Object  
  Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the `for_each` function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, `operator()`. The Visual C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.  
   
- For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the `for_each` function, see [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33).  
+ For more information about the `operator()`, see [Function Call](../cpp/function-call-cpp.md). For more information about the `for_each` function, see [for_each](../standard-library/algorithm-functions.md#for_each).  
   
 ### Code  
   
@@ -185,9 +167,9 @@ There are 4 even numbers in the vector.
 ## See Also  
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)   
- [generate](http://msdn.microsoft.com/Library/0353f358-9651-4e00-b0c9-5bca720539a3)   
- [generate_n](http://msdn.microsoft.com/Library/377e5b0f-1bb8-4b77-9449-fbebf57f6e5e)   
- [for_each](http://msdn.microsoft.com/Library/8cb2ae72-bef6-488b-b011-0475c0787e33)   
+ [generate](../standard-library/algorithm-functions.md#generate)   
+ [generate_n](../standard-library/algorithm-functions.md#generate_n)   
+ [for_each](../standard-library/algorithm-functions.md#for_each)   
  [Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md)   
  [Compiler Warning (level 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)   
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

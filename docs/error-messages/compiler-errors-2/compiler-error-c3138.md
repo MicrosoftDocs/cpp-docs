@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3138"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3138"
+f1_keywords: ["C3138"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3138"]
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3138
 'interface' : a 'attribute' interface must inherit from IDispatch, or from an interface that inherits from IDispatch  

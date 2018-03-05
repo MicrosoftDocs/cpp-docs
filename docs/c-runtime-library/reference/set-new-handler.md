@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_set_new_handler"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_set_new_handler"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_set_new_handler"
-  - "set_new_handler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_set_new_handler function"
-  - "set_new_handler function"
-  - "error handling"
-  - "transferring control to error handler"
+f1_keywords: ["_set_new_handler", "set_new_handler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_set_new_handler function", "set_new_handler function", "error handling", "transferring control to error handler"]
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _set_new_handler
 Transfers control to your error-handling mechanism if the `new` operator fails to allocate memory.  
@@ -110,7 +77,7 @@ _set_new_mode(1)
   
  early in your program or link with Newmode.obj.  
   
- If a user-defined `operator new`is provided, the new handler functions are not automatically called on failure.  
+ If a user-defined `operator new` is provided, the new handler functions are not automatically called on failure.  
   
  For more information, see [new](../../cpp/new-operator-cpp.md) and [delete](../../cpp/delete-operator-cpp.md) in the *C++ Language Reference*.  
   
@@ -172,9 +139,6 @@ Allocation failed. Coalescing heap.
 This application has requested the Runtime to terminate it in an unusual way.  
 Please contact the application's support team for more information.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Memory Allocation](../../c-runtime-library/memory-allocation.md)   

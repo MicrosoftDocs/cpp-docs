@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["chrono/std::operator modulo"]
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
 caps.latest.revision: 8
 manager: "ghogen"
@@ -13,10 +14,10 @@ manager: "ghogen"
 # &lt;chrono&gt; operators
 ||||  
 |-|-|-|  
-|[operator modulo](#operator_modulo)|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|  
-|[operator&gt;=](#operator_gt__eq)|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|  
-|[operator*](#operator_star)|[operator+](#operator_add)|[operator-](#operator-)|  
-|[operator/](#operator_)|[operator==](#operator_eq_eq)|  
+|[operator modulo](#op_modulo)|[operator!=](#op_neq)|[operator&gt;](#op_gt)|  
+|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|  
+|[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|  
+|[operator/](#op_div)|[operator==](#op_eq_eq)|  
   
 ##  <a name="operator-"></a>  operator-  
  Operator for subtraction or negation of [duration](../standard-library/duration-class.md) and [time_point](../standard-library/time-point-class.md) objects.  
@@ -62,7 +63,7 @@ constexpr typename common_type<Duration1, Duration2>::type
   
  The third function returns a `duration` object that represents the time interval between `Left` and `Right`.  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Inequality operator for [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) objects.  
   
 ```  
@@ -88,8 +89,8 @@ constexpr bool operator!=(
 ### Return Value  
  Each function returns `!(Left == Right)`.  
   
-##  <a name="operator_star"></a>  operator*  
- Multiplication operator for [duration](../standard-library/chrono-operators.md#operator_star) objects.  
+##  <a name="op_star"></a>  operator*  
+ Multiplication operator for [duration](../standard-library/chrono-operators.md#op_star) objects.  
   
 ```  
 template <class Rep1, class Period1, class Rep2>  
@@ -121,8 +122,8 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
   
  Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds true*, the second function does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).  
   
-##  <a name="operator_"></a>  operator/  
- Division operator for [duration](../standard-library/chrono-operators.md#operator_star) objects.  
+##  <a name="op_div"></a>  operator/  
+ Division operator for [duration](../standard-library/chrono-operators.md#op_star) objects.  
   
 ```  
 template <class Rep1, class Period1, class Rep2>  
@@ -159,7 +160,7 @@ constexpr typename common_type<Rep1, Rep2>::type
   
  Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds true*, and `Rep2` is not an instantiation of `duration`, the first operator does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).  
   
-##  <a name="operator_add"></a>  operator+  
+##  <a name="op_add"></a>  operator+  
  Adds [duration](../standard-library/duration-class.md) and [time_point](../standard-library/time-point-class.md) objects.  
   
 ```  
@@ -202,7 +203,7 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
   
  The second and third functions return a `time_point` object that represents a point in time that is displaced, by the interval `Dur`, from the point in time `Time`.  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is less than another `duration` or `time_point` object.  
   
 ```  
@@ -230,7 +231,7 @@ constexpr bool operator<(
   
  The second function returns `true` if `Left` precedes `Right`. Otherwise, the function returns `false`.  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is less than or equal to another `duration` or `time_point` object.  
   
 ```  
@@ -255,7 +256,7 @@ constexpr bool operator<=(
 ### Return Value  
  Each function returns `!(Right < Left)`.  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Determines whether two `duration` objects represent time intervals that have the same length, or whether two `time_point` objects represent the same point in time.  
   
 ```  
@@ -282,7 +283,7 @@ constexpr bool operator==(
   
  The second function returns `true` if `Left` and `Right` represent the same point in time. Otherwise, the function returns `false`.  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is greater than another `duration` or `time_point` object.  
   
 ```  
@@ -307,7 +308,7 @@ constexpr bool operator>(
 ### Return Value  
  Each function returns `Right < Left`.  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is greater than or equal to another `duration` or `time_point` object.  
   
 ```  
@@ -332,7 +333,7 @@ constexpr bool operator>=(
 ### Return Value  
  Each function returns `!(Left < Right)`.  
   
-##  <a name="operator_modulo"></a>  operator modulo  
+##  <a name="op_modulo"></a>  operator modulo  
  Operator for modulo operations on [duration](../standard-library/duration-class.md) objects.  
   
 ```  

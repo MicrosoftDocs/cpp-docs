@@ -4,48 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCColorDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCColorDialog::m_CurrentColor data member"
-  - "CMFCColorDialog::m_pPropSheet data member"
-  - "CMFCColorDialog::m_btnColorSelect data member"
-  - "CMFCColorDialog class"
-  - "CMFCColorDialog::m_wndColors data member"
-  - "CMFCColorDialog::m_bIsMyPalette data member"
-  - "CMFCColorDialog::m_pColourSheetTwo data member"
-  - "CMFCColorDialog::m_NewColor data member"
-  - "CMFCColorDialog::m_pPalette data member"
-  - "CMFCColorDialog::m_wndStaticPlaceHolder data member"
-  - "CMFCColorDialog::m_pColourSheetOne data member"
-  - "CMFCColorDialog::m_hcurPicker data member"
-  - "CMFCColorDialog::PreTranslateMessage method"
-  - "CMFCColorDialog::m_bPickerMode data member"
+f1_keywords: ["CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::GetColor", "AFXCOLORDIALOG/CMFCColorDialog::GetPalette", "AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette", "AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor", "AFXCOLORDIALOG/CMFCColorDialog::SetNewColor", "AFXCOLORDIALOG/CMFCColorDialog::SetPageOne", "AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCColorDialog [MFC], CMFCColorDialog", "CMFCColorDialog [MFC], GetColor", "CMFCColorDialog [MFC], GetPalette", "CMFCColorDialog [MFC], RebuildPalette", "CMFCColorDialog [MFC], SetCurrentColor", "CMFCColorDialog [MFC], SetNewColor", "CMFCColorDialog [MFC], SetPageOne", "CMFCColorDialog [MFC], SetPageTwo"]
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorDialog Class
 The `CMFCColorDialog` class represents a color selection dialog box.  

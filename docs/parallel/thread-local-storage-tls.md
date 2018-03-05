@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], Thread Local Storage"
-  - "TLS [C++]"
-  - "threading [C++], Thread Local Storage"
-  - "storing thread-specific data"
-  - "thread attribute"
-  - "Thread Local Storage [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Thread Local Storage (TLS)
 Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686801),  [TlsGetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686812),  [TlsSetValue](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686818), and [TlsFree](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686804)). For more information about how thread local storage is implemented on Windows, see [Thread Local Storage (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms686749\(v=vs.85\).aspx).  Win32 and the Visual C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CThreadPool"
-  - "ATL::CThreadPool"
-  - "CThreadPool"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CThreadPool class"
+f1_keywords: ["CThreadPool", "ATLUTIL/ATL::CThreadPool", "ATLUTIL/ATL::CThreadPool::CThreadPool", "ATLUTIL/ATL::CThreadPool::AddRef", "ATLUTIL/ATL::CThreadPool::GetNumThreads", "ATLUTIL/ATL::CThreadPool::GetQueueHandle", "ATLUTIL/ATL::CThreadPool::GetSize", "ATLUTIL/ATL::CThreadPool::GetTimeout", "ATLUTIL/ATL::CThreadPool::Initialize", "ATLUTIL/ATL::CThreadPool::QueryInterface", "ATLUTIL/ATL::CThreadPool::QueueRequest", "ATLUTIL/ATL::CThreadPool::Release", "ATLUTIL/ATL::CThreadPool::SetSize", "ATLUTIL/ATL::CThreadPool::SetTimeout", "ATLUTIL/ATL::CThreadPool::Shutdown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CThreadPool class"]
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CThreadPool Class
 This class provides a pool of worker threads that process a queue of work items.  
@@ -121,7 +102,7 @@ CThreadPool() throw();
 ```  
   
 ### Remarks  
- Initializes the timeout value to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/library/c1e660a7-d490-42af-bbe1-ded76e80cc10).  
+ Initializes the timeout value to `ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT`. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.  
   
 ##  <a name="dtor"></a>  CThreadPool::~CThreadPool  
  The destructor for the thread pool.  
@@ -204,7 +185,7 @@ HRESULT Initialize(
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, `ATLS_DEFAULT_THREADSPERPROC` will be multiplied by the number of processors in the machine to get the total number of threads.  The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
   
  `dwStackSize`  
  The stack size for each thread in the pool.  
@@ -268,7 +249,7 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
   
  If `nNumThreads` is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If `nNumThreads` is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If `nNumThreads` is zero, `ATLS_DEFAULT_THREADSPERPROC` will be multiplied by the number of processors in the machine to get the total number of threads. The default is 2 threads per processor. If necessary, you can define your own positive integer value for this symbol before including atlutil.h.
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -291,7 +272,7 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The timeout is initialized to [ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT](http://msdn.microsoft.com/library/c1e660a7-d490-42af-bbe1-ded76e80cc10) in the constructor.  
+ The timeout is initialized to `ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT`. The default time is 36 seconds. If necessary, you can define your own positive integer value for this symbol before including atlutil.h. 
   
  Note that `dwMaxWait` is the time that the pool will wait for a single thread to shut down. The maximum time that could be taken to remove multiple threads from the pool could be slightly less than `dwMaxWait` multiplied by the number of threads.  
   

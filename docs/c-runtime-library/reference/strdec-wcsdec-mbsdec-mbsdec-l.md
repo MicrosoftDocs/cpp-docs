@@ -4,75 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wcsdec"
-  - "_strdec"
-  - "_mbsdec"
-  - "_mbsdec_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wcsdec", "_strdec", "_mbsdec", "_mbsdec_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strdec"
-  - "mbsdec_l"
-  - "strdec"
-  - "_mbsdec"
-  - "_mbsdec_l"
-  - "mbsdec"
-  - "wcsdec"
-  - "_wcsdec"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbsdec_l function"
-  - "mbsdec function"
-  - "tcsdec function"
-  - "_tcsdec function"
-  - "_strdec function"
-  - "_wcsdec function"
-  - "_mbsdec_l function"
-  - "strdec function"
-  - "wcsdec function"
-  - "_mbsdec function"
+f1_keywords: ["_strdec", "mbsdec_l", "strdec", "_mbsdec", "_mbsdec_l", "mbsdec", "wcsdec", "_wcsdec"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbsdec_l function", "mbsdec function", "tcsdec function", "_tcsdec function", "_strdec function", "_wcsdec function", "_mbsdec_l function", "strdec function", "wcsdec function", "_mbsdec function"]
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strdec, _wcsdec, _mbsdec, _mbsdec_l
 Moves a string pointer back one character.  
   
 > [!IMPORTANT]
->  `mbsdec` and `mbsdec_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `mbsdec` and `mbsdec_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -98,16 +50,16 @@ unsigned char *_mbsdec_l(
   
 #### Parameters  
  `start`  
- Pointer to any character (or for `_mbsdec` and _`mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.  
+ Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.  
   
  `current`  
- Pointer to any character (or for `_mbsdec` and _`mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.  
+ Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- `_mbsdec`, _`mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
+ `_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
   
 ## Remarks  
  The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes `current` in the string that contains `start`.  
@@ -192,9 +144,6 @@ int main()
 }  
   
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

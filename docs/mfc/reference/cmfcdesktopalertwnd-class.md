@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDesktopAlertWnd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDesktopAlertWnd class"
+f1_keywords: ["CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::Create", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetCaptionHeight", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetDialogSize", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetLastPos", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetTransparency", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::HasSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnBeforeShow", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnClickLinkButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnDraw", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::ProcessCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDesktopAlertWnd [MFC], Create", "CMFCDesktopAlertWnd [MFC], GetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], GetAnimationType", "CMFCDesktopAlertWnd [MFC], GetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], GetCaptionHeight", "CMFCDesktopAlertWnd [MFC], GetDialogSize", "CMFCDesktopAlertWnd [MFC], GetLastPos", "CMFCDesktopAlertWnd [MFC], GetTransparency", "CMFCDesktopAlertWnd [MFC], HasSmallCaption", "CMFCDesktopAlertWnd [MFC], OnBeforeShow", "CMFCDesktopAlertWnd [MFC], OnClickLinkButton", "CMFCDesktopAlertWnd [MFC], OnCommand", "CMFCDesktopAlertWnd [MFC], OnDraw", "CMFCDesktopAlertWnd [MFC], ProcessCommand", "CMFCDesktopAlertWnd [MFC], SetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], SetAnimationType", "CMFCDesktopAlertWnd [MFC], SetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], SetSmallCaption", "CMFCDesktopAlertWnd [MFC], SetTransparency"]
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWnd Class
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -262,7 +246,7 @@ BOOL HasSmallCaption() const;
  Use this method to determine whether the popup window has a small caption or a regular-size caption. By default, the small caption is 7 pixels high. You can obtain the height of the regular-size caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
   
 ##  <a name="onbeforeshow"></a>  CMFCDesktopAlertWnd::OnBeforeShow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnBeforeShow(CPoint&);
@@ -293,7 +277,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
  Override this method in a derived class if you want to be notified when a user clicks the link on the alert window.  
   
 ##  <a name="oncommand"></a>  CMFCDesktopAlertWnd::OnCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnCommand(
@@ -310,7 +294,7 @@ virtual BOOL OnCommand(
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCDesktopAlertWnd::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -322,7 +306,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ##  <a name="processcommand"></a>  CMFCDesktopAlertWnd::ProcessCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL ProcessCommand(HWND hwnd);
@@ -416,7 +400,7 @@ void SetTransparency(BYTE nTransparency);
  Call this function to set the transparency level of the popup window.  
   
 ##  <a name="getdialogsize"></a>  CMFCDesktopAlertWnd::GetDialogSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetDialogSize();

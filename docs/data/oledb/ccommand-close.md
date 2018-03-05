@@ -4,44 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CCommand.Close"
-  - "CCommand::Close"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Close method"
+ms.topic: "reference"
+f1_keywords: ["CCommand.Close", "CCommand::Close"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Close method"]
 ms.assetid: 4da9c02c-7082-4e47-a0fa-78b546f0f7d2
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand::Close
 Releases the accessor rowset associated with the command.  
   
-## Syntax  
-  
-```  
-void Close( );  
+## Syntax
+
+```cpp
+void Close();  
 ```  
   
 ## Remarks  

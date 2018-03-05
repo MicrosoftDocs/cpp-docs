@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fscanf"
-  - "_fwscanf_l"
-  - "_fscanf_l"
-  - "fwscanf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["fscanf", "_fwscanf_l", "_fscanf_l", "fwscanf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fscanf"
-  - "fwscanf"
-  - "_ftscanf_l"
-  - "_fwscanf_l"
-  - "_ftscanf"
-  - "_fscanf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fscanf function"
-  - "fwscanf function"
-  - "formatted data [C++], reading from streams"
-  - "ftscanf_l function"
-  - "_ftscanf_l function"
-  - "_fwscanf_l function"
-  - "data [CRT], reading from streams"
-  - "_fscanf_l function"
-  - "ftscanf function"
-  - "fscanf_l function"
-  - "streams [C++], reading formatted data from"
-  - "_ftscanf function"
-  - "fwscanf_l function"
+f1_keywords: ["fscanf", "fwscanf", "_ftscanf_l", "_fwscanf_l", "_ftscanf", "_fscanf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fscanf function", "fwscanf function", "formatted data [C++], reading from streams", "ftscanf_l function", "_ftscanf_l function", "_fwscanf_l function", "data [CRT], reading from streams", "_fscanf_l function", "ftscanf function", "fscanf_l function", "streams [C++], reading formatted data from", "_ftscanf function", "fwscanf_l function"]
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fscanf, _fscanf_l, fwscanf, _fwscanf_l
 Read formatted data from a stream. More secure versions of these functions are available; see [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md).  
@@ -117,7 +69,7 @@ int _fwscanf_l(
  These functions validate their parameters. If `stream` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.  
   
 ## Remarks  
- The `fscanf` function reads data from the current position of `stream` into the locations given by `argument` (if any). Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. `format` controls the interpretation of the input fields and has the same form and function as the `format` argument for `scanf`; see [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) for a description of `format`*.*  
+ The `fscanf` function reads data from the current position of `stream` into the locations given by `argument` (if any). Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. `format` controls the interpretation of the input fields and has the same form and function as the `format` argument for `scanf`; see [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) for a description of `format`.  
   
  `fwscanf` is a wide-character version of `fscanf`; the format argument to `fwscanf` is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. `fscanf` doesn't currently support input from a UNICODE stream.  
   
@@ -130,7 +82,7 @@ int _fwscanf_l(
 |`_ftscanf`|`fscanf`|`fscanf`|`fwscanf`|  
 |`_ftscanf_l`|`_fscanf_l`|`_fscanf_l`|`_fwscanf_l`|  
   
- For more information, see [Format Specification Fields – scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
+ For more information, see [Format Specification Fields - scanf functions and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).  
   
 ## Requirements  
   
@@ -199,9 +151,6 @@ a-string
 3.141590  
 x  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::StreamReader::ReadLine](https://msdn.microsoft.com/en-us/library/system.io.streamreader.readline.aspx). See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

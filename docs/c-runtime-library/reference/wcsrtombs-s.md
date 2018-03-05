@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcsrtombs_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcsrtombs_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcsrtombs_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "string conversion, wide characters"
-  - "wcsrtombs_s function"
-  - "wide characters, strings"
+f1_keywords: ["wcsrtombs_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["string conversion, wide characters", "wcsrtombs_s function", "wide characters, strings"]
 ms.assetid: 9dccb766-113c-44bb-9b04-07a634dddec8
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # wcsrtombs_s
 Convert a wide character string to its multibyte character string representation. A version of [wcsrtombs](../../c-runtime-library/reference/wcsrtombs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -118,9 +87,9 @@ errno_t wcsrtombs_s(
   
  If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `wcsrtombs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.  
   
- If `wcsrtombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*``pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `mbstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `mbstr` is `NULL`, `count` is ignored.  
+ If `wcsrtombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `mbstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `mbstr` is `NULL`, `count` is ignored.  
   
- If `wcsrtombs_s` encounters a wide character it cannot convert to a multibyte character, it puts -1 in `*``pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
+ If `wcsrtombs_s` encounters a wide character it cannot convert to a multibyte character, it puts -1 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
   
  If the sequences pointed to by `wcstr` and `mbstr` overlap, the behavior of `wcsrtombs_s` is undefined. `wcsrtombs_s` is affected by the LC_TYPE category of the current locale.  
   
@@ -180,9 +149,6 @@ void main()
 ```Output  
 The string was successfully converted.  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## Requirements  
   

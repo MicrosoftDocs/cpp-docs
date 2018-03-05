@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ISpecifyPropertyPages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISpecifyPropertyPages method"
-  - "property pages, specifying"
+f1_keywords: ["ISpecifyPropertyPages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Specifying Property Pages
 When you create an ActiveX control, you will often want to associate it with property pages that can be used to set the properties of your control. Control containers use the **ISpecifyPropertyPages** interface to find out which property pages can be used to set your control's properties. You will need to implement this interface on your control.  
@@ -44,7 +26,7 @@ When you create an ActiveX control, you will often want to associate it with pro
   
 2.  Add an entry for **ISpecifyPropertyPages** to your class's COM map.  
   
-3.  Add a [PROP_PAGE](http://msdn.microsoft.com/library/2155973e-b96c-4385-bf85-5d6112c969b8) entry to the property map for each page associated with your control.  
+3.  Add a [PROP_PAGE](reference/property-map-macros.md#prop_page) entry to the property map for each page associated with your control.  
   
 > [!NOTE]
 >  When generating a standard control using the [ATL Control Wizard](../atl/reference/atl-control-wizard.md), you will only have to add the `PROP_PAGE` entries to the property map. The wizard generates the necessary code for the other steps.  

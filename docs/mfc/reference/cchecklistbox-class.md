@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CCheckListBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCheckListBox class"
-  - "checklist boxes"
+f1_keywords: ["CCheckListBox", "AFXWIN/CCheckListBox", "AFXWIN/CCheckListBox::CCheckListBox", "AFXWIN/CCheckListBox::Create", "AFXWIN/CCheckListBox::DrawItem", "AFXWIN/CCheckListBox::Enable", "AFXWIN/CCheckListBox::GetCheck", "AFXWIN/CCheckListBox::GetCheckStyle", "AFXWIN/CCheckListBox::IsEnabled", "AFXWIN/CCheckListBox::MeasureItem", "AFXWIN/CCheckListBox::OnGetCheckPosition", "AFXWIN/CCheckListBox::SetCheck", "AFXWIN/CCheckListBox::SetCheckStyle"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCheckListBox [MFC], CCheckListBox", "CCheckListBox [MFC], Create", "CCheckListBox [MFC], DrawItem", "CCheckListBox [MFC], Enable", "CCheckListBox [MFC], GetCheck", "CCheckListBox [MFC], GetCheckStyle", "CCheckListBox [MFC], IsEnabled", "CCheckListBox [MFC], MeasureItem", "CCheckListBox [MFC], OnGetCheckPosition", "CCheckListBox [MFC], SetCheck", "CCheckListBox [MFC], SetCheckStyle"]
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CCheckListBox Class
 Provides the functionality of a Windows checklist box.  
@@ -134,7 +116,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the style of the checklist box. The style must be **LBS_HASSTRINGS** and either **LBS_OWNERDRAWFIXED** (all items in the list are the same height) or **LBS_OWNERDRAWVARIABLE** (items in the list are of varying heights). This style can be combined with other [list-box styles](../../mfc/reference/list-box-styles.md) except **LBS_USETABSTOPS**.  
+ Specifies the style of the checklist box. The style must be **LBS_HASSTRINGS** and either **LBS_OWNERDRAWFIXED** (all items in the list are the same height) or **LBS_OWNERDRAWVARIABLE** (items in the list are of varying heights). This style can be combined with other [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) except **LBS_USETABSTOPS**.  
   
  `rect`  
  Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
@@ -155,7 +137,7 @@ virtual BOOL Create(
   
  These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, add a message map to the your derived class and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a checklist-box control:  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a checklist-box control:  
   
 - **WS_CHILD** Always  
   
@@ -266,7 +248,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.  
   
 ### Remarks  
- By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the dimensions of checklist-box items. If the checklist box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
+ By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the dimensions of checklist-box items. If the checklist box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
   
 ##  <a name="ongetcheckposition"></a>  CCheckListBox::OnGetCheckPosition  
  The framework calls this function to get the position and size of the check box in an item.  
@@ -313,7 +295,7 @@ void SetCheck(
 |-----------|-----------------|  
 |**BST_CHECKED**|Select the specified check box.|  
 |**BST_UNCHECKED**|Clear the specified check box.|  
-|**BST_INDETERMINATE**|Set the specified check box state to indeterminate.<br /><br /> This state is only available if the check box style is `BS_AUTO3STATE` or `BS_3STATE`. For more information, see [Button Styles](../../mfc/reference/button-styles.md).|  
+|**BST_INDETERMINATE**|Set the specified check box state to indeterminate.<br /><br /> This state is only available if the check box style is `BS_AUTO3STATE` or `BS_3STATE`. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
   
 ##  <a name="setcheckstyle"></a>  CCheckListBox::SetCheckStyle  
  Call this function to set the style of check boxes in the checklist box.  
@@ -337,7 +319,7 @@ void SetCheckStyle(UINT nStyle);
   
 - **BS_3STATE**  
   
- For information on these styles, see [Button Styles](../../mfc/reference/button-styles.md).  
+ For information on these styles, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).  
   
 ## See Also  
  [MFC Sample TSTCON](../../visual-cpp-samples.md)   

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, requirements"
-  - "Concurrency Runtime, architecture"
-  - "Concurrency Runtime, overview"
-  - "Concurrency Runtime, lambda expressions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Overview of the Concurrency Runtime
 This document provides an overview of the Concurrency Runtime. It describes the benefits of the Concurrency Runtime, when to use it, and how its components interact with each other and with the operating system and applications.  
@@ -69,7 +50,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
  ![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")  
   
 > [!IMPORTANT]
->  The Task Scheduler and Resource Manager components are not available from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app or when you use the task class or other types in ppltasks.h.  
+>  The Task Scheduler and Resource Manager components are not available from a Universal Windows Platform (UWP) app or when you use the task class or other types in ppltasks.h.  
   
  The Concurrency Runtime is highly *composable*, that is, you can combine existing functionality to do more. The Concurrency Runtime composes many features, such as parallel algorithms, from lower-level components.  
   

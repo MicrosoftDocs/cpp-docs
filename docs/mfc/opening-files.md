@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Open member functions"
-  - "CFile class, variable"
-  - "opening files, in MFC"
-  - "Open calls"
-  - "Open method, CFile class"
-  - "examples [MFC], opening files"
-  - "opening files, handling exceptions"
-  - "exception handling [C++], when opening files"
-  - "files [C++], opening"
-  - "file objects [C++]"
-  - "MFC [C++], file operations"
-  - "opening files"
-  - "exception handling [C++], opening files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Open member functions [MFC]", "CFile class [MFC], variable", "opening files, in MFC", "Open calls [MFC]", "Open method, CFile class [MFC]", "examples [MFC], opening files", "opening files, handling exceptions", "exception handling [MFC], when opening files", "files [MFC], opening", "file objects [MFC]", "MFC, file operations", "opening files [MFC]", "exception handling [MFC], opening files"]
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Opening Files
 In MFC, the most common way to open a file is a two-stage process.  

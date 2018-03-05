@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.module"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "module attributes"
+f1_keywords: ["vc-attr.module"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["module attributes"]
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # module (C++)
 Defines the library block in the .idl file.  
@@ -204,5 +186,4 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
  [helpcontext](../windows/helpcontext.md)   
  [helpstring](../windows/helpstring.md)   
  [helpfile](../windows/helpfile.md)   
- [version](../windows/version-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [version](../windows/version-cpp.md)   

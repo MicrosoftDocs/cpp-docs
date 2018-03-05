@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "m_szCatalog"
-  - "m_szSourceCatalog"
-  - "m_szTargetSchema"
-  - "m_szTargetCatalog"
-  - "m_szTargetName"
-  - "CTranslationInfo"
-  - "m_szSourceName"
-  - "m_szSchema"
-  - "CTranslations"
-  - "m_szName"
-  - "m_szSourceSchema"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "m_szSourceSchema"
-  - "m_szSourceCatalog"
-  - "m_szSchema"
-  - "m_szTargetName"
-  - "m_szSourceName"
-  - "CTranslations typedef class"
-  - "m_szCatalog"
-  - "m_szTargetCatalog"
-  - "m_szName"
-  - "CTranslationInfo parameter class"
-  - "m_szTargetSchema"
+ms.topic: "reference"
+f1_keywords: ["m_szCatalog", "m_szSourceCatalog", "m_szTargetSchema", "m_szTargetCatalog", "m_szTargetName", "CTranslationInfo", "m_szSourceName", "m_szSchema", "CTranslations", "m_szName", "m_szSourceSchema"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["m_szSourceSchema", "m_szSourceCatalog", "m_szSchema", "m_szTargetName", "m_szSourceName", "CTranslations typedef class", "m_szCatalog", "m_szTargetCatalog", "m_szName", "CTranslationInfo parameter class", "m_szTargetSchema"]
 ms.assetid: 19a64828-2d4c-42a0-8bfb-b010e334a9b3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTranslations, CTranslationInfo
 Call the typedef class **CTranslations** to implement its parameter class **CTranslationInfo**.  

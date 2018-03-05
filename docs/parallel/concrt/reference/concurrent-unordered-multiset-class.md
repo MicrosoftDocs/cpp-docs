@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concurrent_unordered_set/concurrency::concurrent_unordered_multiset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_unordered_multiset class"
+ms.topic: "reference"
+f1_keywords: ["concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_unordered_multiset class"]
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_multiset Class
 The `concurrent_unordered_multiset` class is an concurrency-safe container that controls a varying-length sequence of elements of type K. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations.  
@@ -59,13 +42,13 @@ template <typename K,
  The key type.  
   
  `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::hash<``K``>`.  
+ The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
   
  `key_equality`  
- The equality comparison function object type. This argument is optional and the default value is `std::equal_to<``K``>`.  
+ The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
   
  `_Allocator_type`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `std::allocator<``K``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `std::allocator<K>`.  
   
 ## Members  
   
@@ -93,23 +76,23 @@ template <typename K,
   
 |Name|Description|  
 |----------|-----------------|  
-|[concurrent_unordered_multiset Constructor](#ctor)|Overloaded. Constructs a concurrent unordered multiset.|  
+|[concurrent_unordered_multiset](#ctor)|Overloaded. Constructs a concurrent unordered multiset.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[hash_function Method](#hash_function)|Returns the stored hash function object.|  
-|[insert Method](#insert)|Overloaded. Adds elements to the `concurrent_unordered_multiset` object.|  
-|[key_eq Method](#key_eq)|The stored equality comparison function object.|  
-|[swap Method](#swap)|Swaps the contents of two `concurrent_unordered_multiset` objects. This method is not concurrency-safe.|  
-|[unsafe_erase Method](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_multiset` at specified positions. This method is not concurrency-safe.|  
+|[hash_function](#hash_function)|Returns the stored hash function object.|  
+|[insert](#insert)|Overloaded. Adds elements to the `concurrent_unordered_multiset` object.|  
+|[key_eq](#key_eq)|The stored equality comparison function object.|  
+|[swap](#swap)|Swaps the contents of two `concurrent_unordered_multiset` objects. This method is not concurrency-safe.|  
+|[unsafe_erase](#unsafe_erase)|Overloaded. Removes elements from the `concurrent_unordered_multiset` at specified positions. This method is not concurrency-safe.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_multiset` object to this one. This method is not concurrency-safe.|  
+|[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_multiset` object to this one. This method is not concurrency-safe.|  
   
 ## Remarks  
  For detailed information on the `concurrent_unordered_multiset` class, see [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -646,12 +629,12 @@ size_type unsafe_erase(
  The key value to erase.  
   
 ### Return Value  
- The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [end Method](#end)() if no such element exists. The third member function returns the number of elements it removes.  
+ The first two member functions return an iterator that designates the first element remaining beyond any elements removed, or [end](#end)() if no such element exists. The third member function returns the number of elements it removes.  
   
 ### Remarks  
  The first member function removes the element pointed to by `_Where`. The second member function removes the elements in the range [ `_Begin`, `_End`).  
   
- The third member function removes the elements in the range delimited by [equal_range Method](#equal_range)(KVal).  
+ The third member function removes the elements in the range delimited by [equal_range](#equal_range)(KVal).  
   
 ##  <a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count 
 

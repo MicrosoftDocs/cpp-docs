@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "linear_congruential_engine"
-  - "std::linear_congruential_engine"
-  - "random/std::linear_congruential_engine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linear_congruential_engine class"
+ms.topic: "reference"
+f1_keywords: ["random/std::linear_congruential_engine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["linear_congruential_engine class"]
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # linear_congruential_engine Class
 Generates a random sequence by the linear congruential algorithm.  
@@ -110,7 +91,7 @@ typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_ra
 typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;  
 ```  
   
- For detailed information about the linear congruential engine algorithm, see the Wikipedia article [Linear congruential generator](http://go.microsoft.com/fwlink/LinkId=402446).  
+ For detailed information about the linear congruential engine algorithm, see the Wikipedia article [Linear congruential generator](http://go.microsoft.com/fwlink/p/?linkid=402446).  
   
 ## Requirements  
  **Header:** \<random>  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, accessing ambient properties"
-  - "properties [MFC], accessing ambient"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], accessing ambient properties", "properties [MFC], accessing ambient"]
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Accessing Ambient Properties
 This article discusses how an ActiveX control can access the ambient properties of its control container.  

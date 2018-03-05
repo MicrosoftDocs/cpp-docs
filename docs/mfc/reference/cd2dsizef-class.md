@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DSizeF"
-  - "CD2DSizeF"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DSizeF class"
+f1_keywords: ["CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::IsNull"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DSizeF [MFC], CD2DSizeF", "CD2DSizeF [MFC], IsNull"]
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DSizeF Class
 A wrapper for D2D1_SIZE_F.  

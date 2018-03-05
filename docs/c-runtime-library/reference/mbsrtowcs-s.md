@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "mbsrtowcs_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["mbsrtowcs_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsrtowcs_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbsrtowcs_s function"
+f1_keywords: ["mbsrtowcs_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbsrtowcs_s function"]
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs_s
 Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -117,13 +88,13 @@ errno_t mbsrtowcs_s(
   
  If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), `mbsrtowcs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.  
   
- If `mbsrtowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string and the null terminator into `*``pReturnValue`, provided `pReturnValue` is not a null pointer. This occurs even if the `wcstr` argument is a null pointer and lets you determine the required buffer size. Note that if `wcstr` is a null pointer, `count` is ignored.  
+ If `mbsrtowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string and the null terminator into `*pReturnValue`, provided `pReturnValue` is not a null pointer. This occurs even if the `wcstr` argument is a null pointer and lets you determine the required buffer size. Note that if `wcstr` is a null pointer, `count` is ignored.  
   
  If `wcstr` is not a null pointer, the pointer object pointed to by `mbstr` is assigned a null pointer if conversion stopped because a terminating null character was reached. Otherwise, it is assigned the address just past the last multibyte character converted, if any. This allows a subsequent function call to restart conversion where this call stopped.  
   
  If `mbstate` is a null pointer, the library internal `mbstate_t` conversion state static object is used. Because this internal static object is not thread-safe, we recommend that you pass your own `mbstate` value.  
   
- If `mbsrtowcs_s` encounters a multibyte character that is not valid in the current locale, it puts -1 in `*``pReturnValue`, sets the destination buffer `wcstr` to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
+ If `mbsrtowcs_s` encounters a multibyte character that is not valid in the current locale, it puts -1 in `*pReturnValue`, sets the destination buffer `wcstr` to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
   
  If the sequences pointed to by `mbstr` and `wcstr` overlap, the behavior of `mbsrtowcs_s` is undefined. `mbsrtowcs_s` is affected by the LC_TYPE category of the current locale.  
   
@@ -136,9 +107,6 @@ errno_t mbsrtowcs_s(
   
 ## Exceptions  
  The `mbsrtowcs_s` function is multithread safe if no function in the current thread calls `setlocale` as long as this function is executing and the `mbstate` argument is not a null pointer.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## Requirements  
   

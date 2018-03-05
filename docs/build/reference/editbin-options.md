@@ -4,41 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "editbin"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EDITBIN program, options"
+f1_keywords: ["editbin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EDITBIN program, options"]
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # EDITBIN Options
 You can use EDITBIN to modify object files, executable files, and dynamic-link libraries (DLLs). Options specify the changes that EDITBIN makes.  
   
- An option consists of an option specifier, which is either a dash ( – ) or a forward slash ( / ), followed by the name of the option. Option names cannot be abbreviated. Some options take arguments that are specified after a colon ( : ). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword arguments or file name arguments are not case-sensitive. For example, -bind and /BIND mean the same thing.  
+ An option consists of an option specifier, which is either a dash ( - ) or a forward slash ( / ), followed by the name of the option. Option names cannot be abbreviated. Some options take arguments that are specified after a colon ( : ). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword arguments or file name arguments are not case-sensitive. For example, -bind and /BIND mean the same thing.  
   
  EDITBIN has the following options:  
   
@@ -46,7 +28,7 @@ You can use EDITBIN to modify object files, executable files, and dynamic-link l
 |------------|-------------|  
 |[/ALLOWBIND](../../build/reference/allowbind.md)|Specifies whether a DLL can be bound.|  
 |[/ALLOWISOLATION](../../build/reference/allowisolation.md)|Specifies DLL or executable file manifest lookup behavior.|  
-|[/APPCONTAINER](../../build/reference/appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.|  
+|[/APPCONTAINER](../../build/reference/appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a UWP app.|  
 |[/BIND](../../build/reference/bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|  
 |[/DYNAMICBASE](../../build/reference/dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|  
 |[/ERRORREPORT](../../build/reference/errorreport-editbin-exe.md)|Reports internal errors to Microsoft.|  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoTableDef"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "database classes [C++], DAO"
-  - "tabledefs [C++]"
-  - "CDaoTableDef class"
-  - "database tables [C++], attached table definition"
-  - "database tables [C++], base table definition"
+f1_keywords: ["CDaoTableDef", "AFXDAO/CDaoTableDef", "AFXDAO/CDaoTableDef::CDaoTableDef", "AFXDAO/CDaoTableDef::Append", "AFXDAO/CDaoTableDef::CanUpdate", "AFXDAO/CDaoTableDef::Close", "AFXDAO/CDaoTableDef::Create", "AFXDAO/CDaoTableDef::CreateField", "AFXDAO/CDaoTableDef::CreateIndex", "AFXDAO/CDaoTableDef::DeleteField", "AFXDAO/CDaoTableDef::DeleteIndex", "AFXDAO/CDaoTableDef::GetAttributes", "AFXDAO/CDaoTableDef::GetConnect", "AFXDAO/CDaoTableDef::GetDateCreated", "AFXDAO/CDaoTableDef::GetDateLastUpdated", "AFXDAO/CDaoTableDef::GetFieldCount", "AFXDAO/CDaoTableDef::GetFieldInfo", "AFXDAO/CDaoTableDef::GetIndexCount", "AFXDAO/CDaoTableDef::GetIndexInfo", "AFXDAO/CDaoTableDef::GetName", "AFXDAO/CDaoTableDef::GetRecordCount", "AFXDAO/CDaoTableDef::GetSourceTableName", "AFXDAO/CDaoTableDef::GetValidationRule", "AFXDAO/CDaoTableDef::GetValidationText", "AFXDAO/CDaoTableDef::IsOpen", "AFXDAO/CDaoTableDef::Open", "AFXDAO/CDaoTableDef::RefreshLink", "AFXDAO/CDaoTableDef::SetAttributes", "AFXDAO/CDaoTableDef::SetConnect", "AFXDAO/CDaoTableDef::SetName", "AFXDAO/CDaoTableDef::SetSourceTableName", "AFXDAO/CDaoTableDef::SetValidationRule", "AFXDAO/CDaoTableDef::SetValidationText", "AFXDAO/CDaoTableDef::m_pDAOTableDef", "AFXDAO/CDaoTableDef::m_pDatabase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoTableDef [MFC], CDaoTableDef", "CDaoTableDef [MFC], Append", "CDaoTableDef [MFC], CanUpdate", "CDaoTableDef [MFC], Close", "CDaoTableDef [MFC], Create", "CDaoTableDef [MFC], CreateField", "CDaoTableDef [MFC], CreateIndex", "CDaoTableDef [MFC], DeleteField", "CDaoTableDef [MFC], DeleteIndex", "CDaoTableDef [MFC], GetAttributes", "CDaoTableDef [MFC], GetConnect", "CDaoTableDef [MFC], GetDateCreated", "CDaoTableDef [MFC], GetDateLastUpdated", "CDaoTableDef [MFC], GetFieldCount", "CDaoTableDef [MFC], GetFieldInfo", "CDaoTableDef [MFC], GetIndexCount", "CDaoTableDef [MFC], GetIndexInfo", "CDaoTableDef [MFC], GetName", "CDaoTableDef [MFC], GetRecordCount", "CDaoTableDef [MFC], GetSourceTableName", "CDaoTableDef [MFC], GetValidationRule", "CDaoTableDef [MFC], GetValidationText", "CDaoTableDef [MFC], IsOpen", "CDaoTableDef [MFC], Open", "CDaoTableDef [MFC], RefreshLink", "CDaoTableDef [MFC], SetAttributes", "CDaoTableDef [MFC], SetConnect", "CDaoTableDef [MFC], SetName", "CDaoTableDef [MFC], SetSourceTableName", "CDaoTableDef [MFC], SetValidationRule", "CDaoTableDef [MFC], SetValidationText", "CDaoTableDef [MFC], m_pDAOTableDef", "CDaoTableDef [MFC], m_pDatabase"]
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoTableDef Class
 Represents the stored definition of a base table or an attached table.  
@@ -268,7 +247,7 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 |**dbSingle**|4|float|  
 |**dbDouble**|8|double|  
 |**dbDate**|8|Date/Time ( [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md))|  
-|**dbText**|1 – 255|Text ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
+|**dbText**|1 - 255|Text ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
 |**dbLongBinary**|0|Long Binary (OLE Object), [CLongBinary](../../mfc/reference/clongbinary-class.md) or [CByteArray](../../mfc/reference/cbytearray-class.md)|  
 |**dbMemo**|0|Memo ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
   
@@ -284,7 +263,7 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 |**dbVariableField**|The field size is variable (Text fields only).|  
 |**dbAutoIncrField**|The field value for new records is automatically incremented to a unique long integer that cannot be changed. Only supported for Microsoft Jet database tables.|  
 |**dbUpdatableField**|The field value can be changed.|  
-|**dbDescending**|The field is sorted in descending (Z – A or 100 – 0) order (applies only to a Field object in a Fields collection of an Index object). If you omit this constant, the field is sorted in ascending (A – Z or 0 – 100) order (default).|  
+|**dbDescending**|The field is sorted in descending (Z - A or 100 - 0) order (applies only to a Field object in a Fields collection of an Index object). If you omit this constant, the field is sorted in ascending (A - Z or 0 - 100) order (default).|  
   
  `fieldinfo`  
  A reference to a [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure.  
@@ -339,7 +318,8 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
   
 ```  
 void DeleteField(LPCTSTR lpszName);  
-void DeleteField(int nIndex);```  
+void DeleteField(int nIndex);
+```  
   
 ### Parameters  
  `lpszName`  
@@ -358,7 +338,8 @@ void DeleteField(int nIndex);```
   
 ```  
 void DeleteIndex(LPCTSTR lpszName);  
-void DeleteIndex(int nIndex);```  
+void DeleteIndex(int nIndex);
+```  
   
 ### Parameters  
  `lpszName`  
@@ -592,7 +573,7 @@ long GetRecordCount();
  The number of records accessed in a tabledef object.  
   
 ### Remarks  
- Calling `GetRecordCount` for a table-type `CDaoTableDef` object reflects the approximate number of records in the table and is affected immediately as table records are added and deleted. Rolled back transactions will appear as part of the record count until you call [CDaoWorkSpace::CompactDatabase](../../mfc/reference/cdaoworkspace-class.md#compactdatabase). A `CDaoTableDef` object with no records has a record count property setting of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns –1.  
+ Calling `GetRecordCount` for a table-type `CDaoTableDef` object reflects the approximate number of records in the table and is affected immediately as table records are added and deleted. Rolled back transactions will appear as part of the record count until you call [CDaoWorkSpace::CompactDatabase](../../mfc/reference/cdaoworkspace-class.md#compactdatabase). A `CDaoTableDef` object with no records has a record count property setting of 0. When working with attached tables or ODBC databases, `GetRecordCount` always returns -1.  
   
  For related information, see the topic "RecordCount Property" in DAO Help.  
   

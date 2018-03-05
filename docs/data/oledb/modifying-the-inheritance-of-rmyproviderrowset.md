@@ -4,47 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RMyProviderRowset"
-  - "inheritance [C++]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["RMyProviderRowset", "inheritance [C++]"]
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RMyProviderRowset
 To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of **RMyProviderRowset**. Initially, **RMyProviderRowset** inherits from `CRowsetImpl`. You need to modify it to inherit from **CRowsetBaseImpl**.  
   
  To do this, create a new class, `CMyRowsetImpl`, in MyProviderRS.h:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
-template <class T, class Storage, class CreatorClass, class ArrayType = CAtlArray<Storage> >  
+template <class T, class Storage, class CreatorClass, class ArrayType = CAtlArray<Storage>>  
 class CMyRowsetImpl:  
-   public CRowsetImpl<T, Storage, CreatorClass, ArrayType, CSimpleRow, IRowsetLocateImpl< T, IRowsetLocate > >  
+   public CRowsetImpl<T, Storage, CreatorClass, ArrayType, CSimpleRow, IRowsetLocateImpl< T, IRowsetLocate >>  
 {  
 ...  
 };  

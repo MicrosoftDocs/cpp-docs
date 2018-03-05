@@ -4,80 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbstok_l"
-  - "_mbstok"
-  - "wcstok"
-  - "_mbstok"
-  - "strtok"
-  - "_wcstok_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbstok"
-  - "strtok"
-  - "_tcstok"
-  - "wcstok"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbstok_l function"
-  - "strings [C++], searching"
-  - "tcstok function"
-  - "_tcstok function"
-  - "_strtok_l function"
-  - "strtok function"
-  - "mbstok function"
-  - "wcstok_l function"
-  - "_mbstok function"
-  - "tcstok_l function"
-  - "tokens, finding in strings"
-  - "_mbstok_l function"
-  - "wcstok function"
-  - "_wcstok_l function"
-  - "_tcstok_l function"
-  - "strtok_l function"
+f1_keywords: ["_mbstok", "strtok", "_tcstok", "wcstok"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbstok_l function", "strings [C++], searching", "tcstok function", "_tcstok function", "_strtok_l function", "strtok function", "mbstok function", "wcstok_l function", "_mbstok function", "tcstok_l function", "tokens, finding in strings", "_mbstok_l function", "wcstok function", "_wcstok_l function", "_tcstok_l function", "strtok_l function"]
 ms.assetid: 904cb734-f0d7-4d77-ba81-4791ddf461ae
 caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 Finds the next token in a string, by using the current locale or a specified locale that's passed in. More secure versions of these functions are available; see [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](../../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbstok` and `_mbstok_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbstok` and `_mbstok_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -120,7 +67,7 @@ unsigned char *_mbstok(
 > [!IMPORTANT]
 >  These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
- On the first call to `strtok`, the function skips leading delimiters and returns a pointer to the first token in `strToken`, terminating the token with a null character. More tokens can be broken out of the remainder of `strToken` by a series of calls to `strtok`. Each call to `strtok`modifies `strToken` by inserting a null character after the `token` returned by that call. To read the next token from `strToken`, call `strtok` with a `NULL` value for the `strToken` argument. The `NULL` `strToken` argument causes `strtok` to search for the next token in the modified `strToken`. The `strDelimit` argument can take any value from one call to the next so that the set of delimiters may vary.  
+ On the first call to `strtok`, the function skips leading delimiters and returns a pointer to the first token in `strToken`, terminating the token with a null character. More tokens can be broken out of the remainder of `strToken` by a series of calls to `strtok`. Each call to `strtok` modifies `strToken` by inserting a null character after the `token` returned by that call. To read the next token from `strToken`, call `strtok` with a `NULL` value for the `strToken` argument. The `NULL` `strToken` argument causes `strtok` to search for the next token in the modified `strToken`. The `strDelimit` argument can take any value from one call to the next so that the set of delimiters may vary.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -189,9 +136,6 @@ Tokens:
  more  
  tokens  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

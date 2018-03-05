@@ -5,20 +5,24 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
+dev_langs: ["C++"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt; operators
 ||||  
 |-|-|-|  
-|[operator&amp;](#operator_amp_)|[operator&gt;&gt;](#operator_gt__gt_)|[operator&lt;&lt;](#operator_lt__lt_)|  
-|[operator_xor](#operator_xor)|[operator_or](#operator_or)|  
+|[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|  
+|[operator^](#op_xor)|[operator|](#op_or)|  
   
-##  <a name="operator_amp_"></a>  operator&amp;  
+##  <a name="op_amp"></a>  operator&amp;  
  Performs a bitwise `AND` between two bitsets.  
   
 ```  
@@ -30,14 +34,14 @@ operator&(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `AND` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   
@@ -67,7 +71,7 @@ bitset 2: 0011
 bitset 3: 0001  
 ```  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Inserts a text representation of the bit sequence into the output stream.  
   
 ```  
@@ -75,12 +79,11 @@ bitset 3: 0001
 template <class CharType, class Traits, size_t N>  
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,  
-    const bitset<N>& 
-    right);
+    const bitset<N>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An object of type **bitset\<N>** that is to be inserted into the output stream as a string.  
   
 ### Return Value  
@@ -89,7 +92,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ### Remarks  
  The template function overloads **operator<<**, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:  
   
- **ostr** << _ *Right*. [to_string](https://msdn.microsoft.com/library/2f93c55z.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
+ **ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
   
 ### Example  
   
@@ -122,7 +125,7 @@ int main( )
 }  
 ```  
   
-##  <a name="operator_gt__gt_"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  Reads a string of bit characters into a bitset.  
   
 ```  
@@ -139,14 +142,14 @@ _Istr,
  `_Istr`  
  The string that is entered into the input stream to be inserted into the bitset.  
   
- ` right`  
+ `right`  
  The bitset that is receiving the bits from the input stream.  
   
 ### Return Value  
  The template function returns the string `_Istr`.  
   
 ### Remarks  
- The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](https://msdn.microsoft.com/library/syxtdd4f.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
+ The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
   
  The template function extracts elements from `_Istr` and inserts them into the bitset until:  
   
@@ -205,7 +208,7 @@ int main()
 }  
 ```  
   
-##  <a name="operator_xor"></a>  operator_xor  
+##  <a name="op_xor"></a>  operator^  
  Performs a bitwise `EXCLUSIVE-OR` between two bitsets.  
   
 ```  
@@ -217,14 +220,14 @@ operator^(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `EXCLUSIVE-OR` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   
@@ -254,7 +257,7 @@ bitset 2: 0011
 bitset 3: 0110  
 ```  
   
-##  <a name="operator_or"></a>  operator_or  
+##  <a name="op_or"></a>  operator|  
  Performs a bitwise `OR` between two bitsets.  
   
 ```  
@@ -266,14 +269,14 @@ operator|(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.  
   
- ` right`  
+ `right`  
  The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.  
   
 ### Return Value  
- A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of ` left` and ` right`.  
+ A bitset whose elements are the result of performing the `OR` operation on the corresponding elements of `left` and `right`.  
   
 ### Example  
   

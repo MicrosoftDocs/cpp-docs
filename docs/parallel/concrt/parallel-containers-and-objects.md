@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parallel objects"
-  - "parallel containers"
-  - "concurrent containers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Parallel Containers and Objects
 The Parallel Patterns Library (PPL) includes several containers and objects that provide thread-safe access to their elements.  

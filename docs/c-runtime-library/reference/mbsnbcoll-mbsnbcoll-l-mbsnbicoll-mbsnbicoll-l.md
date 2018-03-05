@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnbicoll_l"
-  - "_mbsnbcoll_l"
-  - "_mbsnbcoll"
-  - "_mbsnbicoll"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnbicoll_l", "_mbsnbcoll_l", "_mbsnbcoll", "_mbsnbicoll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbicoll"
-  - "mbsnbcoll"
-  - "mbsnbicoll_l"
-  - "_mbsnbcoll"
-  - "_mbsnbicoll"
-  - "_ftcsnicoll"
-  - "_ftcsncoll"
-  - "mbsnbcoll_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsnbcoll_l function"
-  - "mbsnbcoll_l function"
-  - "_mbsnbcoll function"
-  - "_tcsnicoll function"
-  - "mbsnbcoll function"
-  - "mbsnbicoll_l function"
-  - "mbsnbicoll function"
-  - "_tcsncoll function"
-  - "_mbsnbicoll function"
-  - "_mbsnbicoll_l function"
-  - "tcsncoll function"
-  - "tcsnicoll function"
+f1_keywords: ["mbsnbicoll", "mbsnbcoll", "mbsnbicoll_l", "_mbsnbcoll", "_mbsnbicoll", "_ftcsnicoll", "_ftcsncoll", "mbsnbcoll_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsnbcoll_l function", "mbsnbcoll_l function", "_mbsnbcoll function", "_tcsnicoll function", "mbsnbcoll function", "mbsnbicoll_l function", "mbsnbicoll function", "_tcsncoll function", "_mbsnbicoll function", "_mbsnbicoll_l function", "tcsncoll function", "tcsnicoll function"]
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 Compares `n` bytes of two multibyte-character strings by using multibyte code-page information.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

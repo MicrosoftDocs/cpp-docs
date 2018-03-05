@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.db_accessor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "db_accessor attribute"
+f1_keywords: ["vc-attr.db_accessor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["db_accessor attribute"]
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # db_accessor
 Groups **db_column** attributes that participate in `IAccessor`-based binding.  
@@ -61,7 +44,7 @@ Groups **db_column** attributes that participate in `IAccessor`-based binding.
   
  **db_accessor** groups database column bindings into one or more accessors. For a discussion of the scenarios in which you need to use multiple accessors, see [Using Multiple Accessors on a Rowset](../data/oledb/using-multiple-accessors-on-a-rowset.md). Also see "User Record Support for Multiple Accessors" in [User Records](../data/oledb/user-records.md).  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  The following example uses **db_accessor** to group columns in the Orders table from the Northwind database into two accessors. Accessor 0 is an automatic accessor, and accessor 1 is not.  
@@ -101,4 +84,3 @@ public:
   
 ## See Also  
  [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

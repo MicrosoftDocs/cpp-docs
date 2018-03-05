@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.float_control"
-  - "float_control_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "float_control pragma"
-  - "pragmas, float_control"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["float_control pragma", "pragmas, float_control"]
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # float_control
 Specifies floating-point behavior for a function.  
@@ -46,7 +27,7 @@ float_control( value,setting [push] | push | pop )
 ```  
   
 ## Flags  
- `value` *,* `setting` **[push]**  
+ `value`, `setting` **[push]**  
  Specifies floating-point behavior. `value` can be **precise** or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). `setting` can either be **on** or **off**.  
   
  If `value` is **precise**, the settings for **precise** and **except** are being specified. **except** can only be set to **on** when **precise** is also set to **on**.  
@@ -57,7 +38,7 @@ float_control( value,setting [push] | push | pop )
  Push the current `float_control` setting on to the internal compiler stack  
   
  **pop**  
- Removes the`float_control` setting from the top of the internal compiler stack and makes that the new `float_control` setting.  
+ Removes the `float_control` setting from the top of the internal compiler stack and makes that the new `float_control` setting.  
   
 ## Remarks  
  You cannot turn `float_control precise` off when **except** is on. Similarly, **precise** cannot be turned off when `fenv_access` is on. To go from strict model to a fast model with the `float_control` pragma, use the following code:  

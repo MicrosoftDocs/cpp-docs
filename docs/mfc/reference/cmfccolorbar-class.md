@@ -4,62 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCColorBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCColorBar class"
-  - "CMFCColorBar::m_ColorAutomatic data member"
-  - "CMFCColorBar::m_bInternal data member"
-  - "CMFCColorBar::m_bIsEnabled data member"
-  - "CMFCColorBar::m_nNumColumnsVert data member"
-  - "CMFCColorBar::m_nVertMargin data member"
-  - "CMFCColorBar::m_strDocColors data member"
-  - "CMFCColorBar::m_BoxSize data member"
-  - "CMFCColorBar::m_pParentBtn data member"
-  - "CMFCColorBar::m_bIsTearOff data member"
-  - "CMFCColorBar::m_nHorzOffset data member"
-  - "CMFCColorBar::m_pParentRibbonBtn data member"
-  - "CMFCColorBar::m_nNumRowsHorz data member"
-  - "CMFCColorBar::m_bStdColorDlg data member"
-  - "CMFCColorBar::m_strAutoColor data member"
-  - "CMFCColorBar::m_ColorNames data member"
-  - "CMFCColorBar::m_strOtherColor data member"
-  - "CMFCColorBar::m_lstDocColors data member"
-  - "CMFCColorBar::m_pWndPropList data member"
-  - "CMFCColorBar::m_ColorSelected data member"
-  - "CMFCColorBar::m_nCommandID data member"
-  - "CMFCColorBar::m_nHorzMargin data member"
-  - "CMFCColorBar::m_nRowHeight data member"
-  - "CMFCColorBar::m_Palette data member"
-  - "CMFCColorBar::m_colors data member"
-  - "CMFCColorBar::m_nVertOffset data member"
-  - "CMFCColorBar::m_nNumColumns data member"
-  - "CMFCColorBar::m_bShowDocColorsWhenDocked data member"
+f1_keywords: ["CMFCColorBar", "AFXCOLORBAR/CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::ContextToSize", "AFXCOLORBAR/CMFCColorBar::CreateControl", "AFXCOLORBAR/CMFCColorBar::Create", "AFXCOLORBAR/CMFCColorBar::EnableAutomaticButton", "AFXCOLORBAR/CMFCColorBar::EnableOtherButton", "AFXCOLORBAR/CMFCColorBar::GetColor", "AFXCOLORBAR/CMFCColorBar::GetCommandID", "AFXCOLORBAR/CMFCColorBar::GetHighlightedColor", "AFXCOLORBAR/CMFCColorBar::GetHorzMargin", "AFXCOLORBAR/CMFCColorBar::GetVertMargin", "AFXCOLORBAR/CMFCColorBar::IsTearOff", "AFXCOLORBAR/CMFCColorBar::SetColor", "AFXCOLORBAR/CMFCColorBar::SetColorName", "AFXCOLORBAR/CMFCColorBar::SetCommandID", "AFXCOLORBAR/CMFCColorBar::SetDocumentColors", "AFXCOLORBAR/CMFCColorBar::SetHorzMargin", "AFXCOLORBAR/CMFCColorBar::SetVertMargin", "AFXCOLORBAR/CMFCColorBar::AdjustLocations", "AFXCOLORBAR/CMFCColorBar::AllowChangeTextLabels", "AFXCOLORBAR/CMFCColorBar::AllowShowOnList", "AFXCOLORBAR/CMFCColorBar::CalcSize", "AFXCOLORBAR/CMFCColorBar::CreatePalette", "AFXCOLORBAR/CMFCColorBar::GetColorGridSize", "AFXCOLORBAR/CMFCColorBar::GetExtraHeight", "AFXCOLORBAR/CMFCColorBar::InitColors", "AFXCOLORBAR/CMFCColorBar::OnKey", "AFXCOLORBAR/CMFCColorBar::OnSendCommand", "AFXCOLORBAR/CMFCColorBar::OnUpdateCmdUI", "AFXCOLORBAR/CMFCColorBar::OpenColorDialog", "AFXCOLORBAR/CMFCColorBar::Rebuild", "AFXCOLORBAR/CMFCColorBar::SelectPalette", "AFXCOLORBAR/CMFCColorBar::SetPropList", "AFXCOLORBAR/CMFCColorBar::ShowCommandMessageString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCColorBar [MFC], CMFCColorBar", "CMFCColorBar [MFC], ContextToSize", "CMFCColorBar [MFC], CreateControl", "CMFCColorBar [MFC], Create", "CMFCColorBar [MFC], EnableAutomaticButton", "CMFCColorBar [MFC], EnableOtherButton", "CMFCColorBar [MFC], GetColor", "CMFCColorBar [MFC], GetCommandID", "CMFCColorBar [MFC], GetHighlightedColor", "CMFCColorBar [MFC], GetHorzMargin", "CMFCColorBar [MFC], GetVertMargin", "CMFCColorBar [MFC], IsTearOff", "CMFCColorBar [MFC], SetColor", "CMFCColorBar [MFC], SetColorName", "CMFCColorBar [MFC], SetCommandID", "CMFCColorBar [MFC], SetDocumentColors", "CMFCColorBar [MFC], SetHorzMargin", "CMFCColorBar [MFC], SetVertMargin", "CMFCColorBar [MFC], AdjustLocations", "CMFCColorBar [MFC], AllowChangeTextLabels", "CMFCColorBar [MFC], AllowShowOnList", "CMFCColorBar [MFC], CalcSize", "CMFCColorBar [MFC], CreatePalette", "CMFCColorBar [MFC], GetColorGridSize", "CMFCColorBar [MFC], GetExtraHeight", "CMFCColorBar [MFC], InitColors", "CMFCColorBar [MFC], OnKey", "CMFCColorBar [MFC], OnSendCommand", "CMFCColorBar [MFC], OnUpdateCmdUI", "CMFCColorBar [MFC], OpenColorDialog", "CMFCColorBar [MFC], Rebuild", "CMFCColorBar [MFC], SelectPalette", "CMFCColorBar [MFC], SetPropList", "CMFCColorBar [MFC], ShowCommandMessageString"]
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorBar Class
 The `CMFCColorBar` class represents a docking control bar that can select colors in a document or application.  
@@ -377,7 +333,7 @@ virtual BOOL Create(
  Pointer to the parent window.  
   
  [in] `dwStyle`  
- A bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md).  
+ A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `nID`  
  The command ID.  

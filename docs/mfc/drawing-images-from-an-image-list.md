@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CImageList class, drawing images from"
-  - "drawing, images from image lists"
-  - "image lists [C++], drawing images from"
-  - "images [C++], drawing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CImageList class [MFC], drawing images from", "drawing [MFC], images from image lists", "image lists [MFC], drawing images from", "images [MFC], drawing"]
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Drawing Images from an Image List
 To draw an image, use the [CImageList::Draw](../mfc/reference/cimagelist-class.md#draw) member function. You'll specify a pointer to a device context object, the index of the image to draw, the location in the device context at which to draw the image, and a set of flags to indicate the drawing style.  
@@ -48,7 +29,7 @@ To draw an image, use the [CImageList::Draw](../mfc/reference/cimagelist-class.m
   
  A nonmasked image is copied to the destination device context using the **SRCCOPY** raster operation. The colors in the image appear the same regardless of the background color of the device context. The drawing styles specified in **Draw** also have no effect on the appearance of a nonmasked image.  
   
- In addition to the Draw member function, another function, [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), extends the ability to render an image. `DrawIndirect` takes, as a parameter, an [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure. This structure can be used to customize the rendering of the current image, including the use of raster operation (ROP) codes. For more information on ROP codes, see [Raster Operation Codes](http://msdn.microsoft.com/library/windows/desktop/dd162892) and [Bitmaps as Brushes](http://msdn.microsoft.com/library/windows/desktop/dd183378) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ In addition to the Draw member function, another function, [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), extends the ability to render an image. `DrawIndirect` takes, as a parameter, an [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure. This structure can be used to customize the rendering of the current image, including the use of raster operation (ROP) codes. For more information on ROP codes, see [Raster Operation Codes](http://msdn.microsoft.com/library/windows/desktop/dd162892) and [Bitmaps as Brushes](http://msdn.microsoft.com/library/windows/desktop/dd183378) in the Windows SDK.  
   
 ## See Also  
  [Using CImageList](../mfc/using-cimagelist.md)   

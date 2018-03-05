@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CInterpolatorBase"
-  - "CInterpolatorBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CInterpolatorBase class"
+f1_keywords: ["CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CreateInstance", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDependencies", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetFinalValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateVelocity", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetCustomInterpolator", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetInitialValueAndVelocity"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInterpolatorBase [MFC], CInterpolatorBase", "CInterpolatorBase [MFC], CreateInstance", "CInterpolatorBase [MFC], GetDependencies", "CInterpolatorBase [MFC], GetDuration", "CInterpolatorBase [MFC], GetFinalValue", "CInterpolatorBase [MFC], InterpolateValue", "CInterpolatorBase [MFC], InterpolateVelocity", "CInterpolatorBase [MFC], SetCustomInterpolator", "CInterpolatorBase [MFC], SetDuration", "CInterpolatorBase [MFC], SetInitialValueAndVelocity"]
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CInterpolatorBase Class
 Implements a callback, which is called by the Animation API when it has to calculate a new value of an animation variable.  

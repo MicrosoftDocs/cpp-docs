@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<future>"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["<future>"]
+dev_langs: ["C++"]
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # &lt;future&gt;
 Include the standard header \<future> to define template classes and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.  
@@ -86,19 +69,19 @@ Include the standard header \<future> to define template classes and supporting 
   
 |Name|Description|  
 |----------|-----------------|  
-|[async Function](../standard-library/future-functions.md#async_function)|Represents an asynchronous provider.|  
-|[future_category Function](../standard-library/future-functions.md#future_category_function)|Returns a reference to the `error_category` object that characterizes errors that are associated with `future` objects.|  
-|[make_error_code Function](../standard-library/future-functions.md#make_error_code_function)|Creates an `error_code` that has the `error_category` object that characterizes `future` errors.|  
-|[make_error_condition Function](../standard-library/future-functions.md#make_error_condition_function)|Creates an `error_condition` that has the `error_category` object that characterizes `future` errors.|  
-|[swap Function](../standard-library/future-functions.md#swap_function)|Exchanges the associated asynchronous state of one `promise` object with that of another.|  
+|[async](../standard-library/future-functions.md#async)|Represents an asynchronous provider.|  
+|[future_category](../standard-library/future-functions.md#future_category)|Returns a reference to the `error_category` object that characterizes errors that are associated with `future` objects.|  
+|[make_error_code](../standard-library/future-functions.md#make_error_code)|Creates an `error_code` that has the `error_category` object that characterizes `future` errors.|  
+|[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Creates an `error_condition` that has the `error_category` object that characterizes `future` errors.|  
+|[swap](../standard-library/future-functions.md#swap)|Exchanges the associated asynchronous state of one `promise` object with that of another.|  
   
 ### Enumerations  
   
 |Name|Description|  
 |----------|-----------------|  
-|[future_errc Enumeration](../standard-library/future-enums.md#future_errc_enumeration)|Supplies symbolic names for the errors that are reported by the `future_error` class.|  
-|[future_status Enumeration](../standard-library/future-enums.md#future_status_enumeration)|Supplies symbolic names for the reasons that a timed wait function can return.|  
-|[launch Enumeration](../standard-library/future-enums.md#launch_enumeration)|Represents a bitmask type that describes the possible modes for the template function `async`.|  
+|[future_errc](../standard-library/future-enums.md#future_errc)|Supplies symbolic names for the errors that are reported by the `future_error` class.|  
+|[future_status](../standard-library/future-enums.md#future_status)|Supplies symbolic names for the reasons that a timed wait function can return.|  
+|[launch](../standard-library/future-enums.md#launch)|Represents a bitmask type that describes the possible modes for the template function `async`.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

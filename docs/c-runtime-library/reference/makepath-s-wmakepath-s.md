@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wmakepath_s"
-  - "_makepath_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wmakepath_s", "_makepath_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wmakepath_s"
-  - "makepath_s"
-  - "_makepath_s"
-  - "wmakepath_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_makepath_s function"
-  - "wmakepath_s function"
-  - "paths"
-  - "_wmakepath_s function"
-  - "makepath_s function"
+f1_keywords: ["_wmakepath_s", "makepath_s", "_makepath_s", "wmakepath_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_makepath_s function", "wmakepath_s function", "paths", "_wmakepath_s function", "makepath_s function"]
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _makepath_s, _wmakepath_s
 Creates a path name from components. These are versions of [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -130,7 +92,7 @@ errno_t _wmakepath_s(
 |`NULL`|any|`EINVAL`|not modified|  
 |any|<= 0|`EINVAL`|not modified|  
   
- If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to`EINVAL` and the functions returns`EINVAL`**.** `NULL` is allowed for the parameters `drive`, `fname`, and `ext`. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.  
+ If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`. `NULL` is allowed for the parameters `drive`, `fname`, and `ext`. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.  
   
 ## Remarks  
  The `_makepath_s` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, file name, and file name extension. `_wmakepath_s` is a wide-character version of `_makepath_s`; the arguments to `_wmakepath_s` are wide-character strings. `_wmakepath_s` and `_makepath_s` behave identically otherwise.  
@@ -209,9 +171,6 @@ Path extracted with _splitpath_s:
   Filename: crt_makepath_s  
   Ext: .c  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::File::Create](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

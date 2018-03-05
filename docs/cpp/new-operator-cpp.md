@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "new keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["new keyword [C++]"]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  
@@ -201,8 +185,6 @@ int main()
   
 -   The class has a default constructor (a constructor that can be called with no arguments).  
   
- Access control and ambiguity control are performed on `operator new` and on the constructors according to the rules set forth in [Ambiguity](http://msdn.microsoft.com/en-us/0b399cab-40a7-4e79-9278-05f40139a0e1) and [Initialization Using Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca).  
-  
  No explicit per-element initialization can be done when allocating arrays using the **new** operator; only the default constructor, if present, is called. See [Default Arguments](../cpp/default-arguments.md) for more information.  
   
  If the memory allocation fails (`operator new` returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
@@ -251,7 +233,7 @@ int main()
  When the compiler encounters the **new** operator to allocate an object of type `type`, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined `operator new` is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
   
 > [!NOTE]
->  The argument to `operator new` is of type **size_t**. This type is defined in DIRECT.H, MALLOC.H, MEMORY.H, SEARCH.H, STDDEF.H, STDIO.H, STDLIB.H, STRING.H, and TIME.H.  
+>  The argument to `operator new` is of type **size_t**. This type is defined in \<direct.h>, \<malloc.h>, \<memory.h>, \<search.h>, \<stddef.h>, \<stdio.h>, \<stdlib.h>, \<string.h>, and \<time.h>.  
   
  An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of `operator new`; it allows extra information to be passed to `operator new`. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
   

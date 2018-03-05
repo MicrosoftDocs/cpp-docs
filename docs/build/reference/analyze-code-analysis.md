@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.EnablePREfast"
-  - "/analyze"
-  - "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions"
-  - "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/analyze compiler option [C++]"
-  - "-analyze compiler option [C++]"
-  - "analyze compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /analyze (Code Analysis)
 Enables code analysis and control options.  

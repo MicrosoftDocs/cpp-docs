@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLibrarianTool.TargetMachine"
-  - "Lib"
-  - "VC.Project.VCLibrarianTool.PrintProgress"
-  - "VC.Project.VCLibrarianTool.SuppressStartupBanner"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-MACHINE target platform option"
-  - "command files, LIB"
-  - "MACHINE target platform option"
-  - "colon command files"
-  - "VERBOSE library manager option"
-  - "/NOLOGO library manager option"
-  - "dash option specifier"
-  - "/MACHINE target platform option"
-  - "forward slash option specifier"
-  - "-NOLOGO library manager option"
-  - "LIB [C++], running LIB"
-  - "-VERBOSE library manager option"
-  - "/VERBOSE library manager option"
-  - "command files"
-  - "NOLOGO library manager option"
-  - "slash (/)"
-  - "semicolon, command files"
-  - "/ command files"
+f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Running LIB
 Various command-line options can be used to control LIB.  
@@ -77,7 +40,7 @@ LIB @commandfile
  You can specify either all or part of the command line in a command file, and you can use more than one command file in a LIB command. LIB accepts the command-file input as if it were specified in that location on the command line. Command files cannot be nested. LIB echoes the contents of command files unless the /NOLOGO option is used.  
   
 ## Using LIB Options  
- An option consists of an option specifier, which is either a dash ( – ) or a forward slash ( / ), followed by the name of the option. Option names cannot be abbreviated. Some options take an argument, specified after a colon (:). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive, but identifiers used as arguments are case sensitive. LIB processes options in the order specified on the command line and in command files. If an option is repeated with different arguments, the last one to be processed takes precedence.  
+ An option consists of an option specifier, which is either a dash ( - ) or a forward slash ( / ), followed by the name of the option. Option names cannot be abbreviated. Some options take an argument, specified after a colon (:). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive, but identifiers used as arguments are case sensitive. LIB processes options in the order specified on the command line and in command files. If an option is repeated with different arguments, the last one to be processed takes precedence.  
   
  The following options apply to all modes of LIB:  
   

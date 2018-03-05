@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exception handling, macros"
-  - "C++ exception handling, macros"
+f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["exception handling, macros", "C++ exception handling, macros"]
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling Macros
 These macros provide support for exception handling.  
@@ -42,6 +26,9 @@ These macros provide support for exception handling.
 |[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
 |[_ATLTRY](#_atltry)|Marks a guarded code section where an error could possibly occur.|  
   
+## Requirements:
+**Header:** atldef.h
+
 ##  <a name="_atlcatch"></a>  _ATLCATCH  
  Statement(s) to handle errors occurring in the associated `_ATLTRY`.  
   

@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_RTC_SetErrorFuncW"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_RTC_SetErrorFuncW"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_RTC_SetErrorFuncW"
-  - "RTC_SetErrorFuncW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "run-time errors"
-  - "RTC_SetErrorFuncW function"
-  - "_RTC_error_fnW typedef"
-  - "_RTC_SetErrorFuncW function"
-  - "RTC_error_fnW typedef"
+f1_keywords: ["_RTC_SetErrorFuncW", "RTC_SetErrorFuncW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["run-time errors", "RTC_SetErrorFuncW function", "_RTC_error_fnW typedef", "_RTC_SetErrorFuncW function", "RTC_error_fnW typedef"]
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorFuncW
 Designates a function as the handler for the reporting of run-time error checks (RTCs).  
@@ -79,7 +46,7 @@ Designates a function as the handler for the reporting of run-time error checks 
   
  Make sure that the address that you pass to `_RTC_SetErrorFuncW` is that of a valid error handling function.  
   
- If an error has been assigned a type of –1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.  
+ If an error has been assigned a type of -1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.  
   
  Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using Run-Time Checks Without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).  
   
@@ -116,9 +83,6 @@ Designates a function as the handler for the reporting of run-time error checks 
   
 ## Libraries  
  All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)   

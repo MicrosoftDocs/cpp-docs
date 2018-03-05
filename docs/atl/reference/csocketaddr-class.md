@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSocketAddr"
-  - "ATL.CSocketAddr"
-  - "ATL::CSocketAddr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSocketAddr class"
+f1_keywords: ["CSocketAddr", "ATLSOCKET/ATL::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::FindAddr", "ATLSOCKET/ATL::CSocketAddr::FindINET4Addr", "ATLSOCKET/ATL::CSocketAddr::FindINET6Addr", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfo", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSocketAddr class"]
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSocketAddr Class
 This class provides methods for converting host names to host addresses, supporting both IPv4 and IPV6 formats.  
@@ -214,7 +195,7 @@ addrinfo* const GetAddrInfoList() const;
 ```  
   
 ### Return Value  
- Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information about the `addrinfo` structure, see the "addrinfo" article in the [MSDN Library](http://go.microsoft.com/fwlink/linkid=556)  
+ Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](https://msdn.microsoft.com/library/windows/desktop/ms737530).
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

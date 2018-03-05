@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "ceilf"
-  - "ceil"
-  - "ceill"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["ceilf", "ceil", "ceill"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntdll.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ceil"
-  - "ceilf"
-  - "ceill"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "calculating value ceilings"
-  - "ceill function"
-  - "ceil function"
-  - "ceilf function"
+f1_keywords: ["ceil", "ceilf", "ceill"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["calculating value ceilings", "ceill function", "ceil function", "ceilf function"]
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ceil, ceilf, ceill
 Calculates the ceiling of a value.  
@@ -105,9 +69,6 @@ long double ceill(
   
 ## Example  
  See the example for [floor](../../c-runtime-library/reference/floor-floorf-floorl.md).  
-  
-## .NET Framework Equivalent  
- [System::Math::Ceiling](https://msdn.microsoft.com/en-us/library/system.math.ceiling.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

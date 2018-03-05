@@ -4,78 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsstr"
-  - "wcsstr"
-  - "_mbsstr_l"
-  - "strstr"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fstrstr"
-  - "_ftcsstr"
-  - "strstr"
-  - "wcsstr"
-  - "_mbsstr"
-  - "_tcsstr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], searching"
-  - "mbsstr function"
-  - "_ftcsstr function"
-  - "ftcsstr function"
-  - "fstrstr function"
-  - "_tcsstr function"
-  - "substrings, finding"
-  - "mbsstr_l function"
-  - "tcsstr function"
-  - "_mbsstr function"
-  - "wcsstr function"
-  - "_fstrstr function"
-  - "_mbsstr_l function"
-  - "strstr function"
+f1_keywords: ["_fstrstr", "_ftcsstr", "strstr", "wcsstr", "_mbsstr", "_tcsstr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], searching", "mbsstr function", "_ftcsstr function", "ftcsstr function", "fstrstr function", "_tcsstr function", "substrings, finding", "mbsstr_l function", "tcsstr function", "_mbsstr function", "wcsstr function", "_fstrstr function", "_mbsstr_l function", "strstr function"]
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strstr, wcsstr, _mbsstr, _mbsstr_l
 Returns a pointer to the first occurrence of a search string in a string.  
   
 > [!IMPORTANT]
->  `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -152,7 +101,7 @@ const unsigned char *_mbsstr_l(
 > [!IMPORTANT]
 >  These functions might incur a threat from a buffer overrun problem. Buffer overrun problems can be used to attack a system because they can allow the execution of arbitrary code, which can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
- In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro _CONST_CORRECT_OVERLOADS is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol _CONST_RETURN.  
+ In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol `_CONST_RETURN`.  
   
  The output value is affected by the locale-category setting of `LC_CTYPE`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions that do not have the `_l` suffix use the current locale for this locale-dependent behavior; the versions that have the `_l` suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -219,4 +168,4 @@ lazy found at position 36
  [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](../../c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)   
  [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)   
  [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)   
- [basic_string::find](http://msdn.microsoft.com/Library/e8254589-ae65-4414-b28f-54ba8f544656)
+ [basic_string::find](../../standard-library/basic-string-class.md#find)  

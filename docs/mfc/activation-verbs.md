@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "verbs"
-  - "OLE [C++], activation"
-  - "edit verb"
-  - "activation [C++], verbs"
-  - "OLE [C++], editing"
-  - "Primary verb"
-  - "OLE activation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]", "activation [MFC], verbs", "OLE [MFC], editing", "Primary verb [MFC]", "OLE activation {MFC]"]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Activation: Verbs
 This article explains the role primary and secondary verbs play in OLE [activation](../mfc/activation-cpp.md).  

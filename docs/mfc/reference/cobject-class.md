@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "base classes, MFC objects"
-  - "objects [C++], base class for MFC"
-  - "object classes"
-  - "CObject class"
+f1_keywords: ["CObject", "AFX/CObject", "AFX/CObject::CObject", "AFX/CObject::AssertValid", "AFX/CObject::Dump", "AFX/CObject::GetRuntimeClass", "AFX/CObject::IsKindOf", "AFX/CObject::IsSerializable", "AFX/CObject::Serialize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObject [MFC], CObject", "CObject [MFC], AssertValid", "CObject [MFC], Dump", "CObject [MFC], GetRuntimeClass", "CObject [MFC], IsKindOf", "CObject [MFC], IsSerializable", "CObject [MFC], Serialize"]
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CObject Class
 The principal base class for the Microsoft Foundation Class Library.  
@@ -127,7 +107,8 @@ virtual void AssertValid() const;
   
 ```  
 CObject();  
-CObject(const CObject& objectSrc);```  
+CObject(const CObject& objectSrc);
+```  
   
 ### Parameters  
  *objectSrc*  
@@ -192,7 +173,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
   
 - **int m_nObjectSize** The size of the object, in bytes. If the object has data members that point to allocated memory, the size of that memory is not included.  
   
-- **UINT m_wSchema** The schema number ( – 1 for nonserializable classes). See the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro for a description of schema number.  
+- **UINT m_wSchema** The schema number ( - 1 for nonserializable classes). See the [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) macro for a description of schema number.  
   
 - **CObject\* ( PASCAL\* m_pfnCreateObject )( )** A function pointer to the default constructor that creates an object of your class (valid only if the class supports dynamic creation; otherwise, returns **NULL**).  
   
@@ -295,7 +276,8 @@ void PASCAL operator delete(
 void* PASCAL operator new(size_t nSize);  
 void* PASCAL operator new(size_t, void* p);
 
- void* PASCAL operator new(
+ 
+void* PASCAL operator new(
     size_t nSize,  
     LPCSTR lpszFileName,  
     int nLine);

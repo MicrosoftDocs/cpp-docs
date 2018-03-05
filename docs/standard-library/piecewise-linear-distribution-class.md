@@ -4,61 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "piecewise_linear_distribution"
-  - "std::piecewise_linear_distribution"
-  - "random/std::piecewise_linear_distribution"
-  - "std::piecewise_linear_distribution::reset"
-  - "random/std::piecewise_linear_distribution::reset"
-  - "std::piecewise_linear_distribution::intervals"
-  - "random/std::piecewise_linear_distribution::intervals"
-  - "std::piecewise_linear_distribution::densities"
-  - "random/std::piecewise_linear_distribution::densities"
-  - "std::piecewise_linear_distribution::param"
-  - "random/std::piecewise_linear_distribution::param"
-  - "std::piecewise_linear_distribution::min"
-  - "random/std::piecewise_linear_distribution::min"
-  - "std::piecewise_linear_distribution::max"
-  - "random/std::piecewise_linear_distribution::max"
-  - "std::piecewise_linear_distribution::operator()"
-  - "random/std::piecewise_linear_distribution::operator()"
-  - "std::piecewise_linear_distribution::param_type"
-  - "random/std::piecewise_linear_distribution::param_type"
-  - "std::piecewise_linear_distribution::param_type::intervals"
-  - "random/std::piecewise_linear_distribution::param_type::intervals"
-  - "std::piecewise_linear_distribution::param_type::densities"
-  - "random/std::piecewise_linear_distribution::param_type::densities"
-  - "std::piecewise_linear_distribution::param_type::operator=="
-  - "random/std::piecewise_linear_distribution::param_type::operator=="
-  - "std::piecewise_linear_distribution::param_type::operator!="
-  - "random/std::piecewise_linear_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "piecewise_linear_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::piecewise_linear_distribution", "random/std::piecewise_linear_distribution::reset", "random/std::piecewise_linear_distribution::intervals", "random/std::piecewise_linear_distribution::densities", "random/std::piecewise_linear_distribution::param", "random/std::piecewise_linear_distribution::min", "random/std::piecewise_linear_distribution::max", "random/std::piecewise_linear_distribution::operator()", "random/std::piecewise_linear_distribution::param_type", "random/std::piecewise_linear_distribution::param_type::intervals", "random/std::piecewise_linear_distribution::param_type::densities", "random/std::piecewise_linear_distribution::param_type::operator==", "random/std::piecewise_linear_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::piecewise_linear_distribution [C++]", "std::piecewise_linear_distribution [C++], reset", "std::piecewise_linear_distribution [C++], intervals", "std::piecewise_linear_distribution [C++], densities", "std::piecewise_linear_distribution [C++], param", "std::piecewise_linear_distribution [C++], min", "std::piecewise_linear_distribution [C++], max", "std::piecewise_linear_distribution [C++], param_type", "std::piecewise_linear_distribution [C++], param_type"]
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # piecewise_linear_distribution Class
 Generates a piecewise linear distribution that has varying-width intervals with linearly varying probability in each interval.  
@@ -113,8 +70,8 @@ public:
   
 ||||  
 |-|-|-|  
-|[piecewise_linear_distribution::piecewise_linear_distribution](#piecewise_linear_distribution__piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|  
-|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[piecewise_linear_distribution::param_type](#piecewise_linear_distribution__param_type)|  
+|[piecewise_linear_distribution](#piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|  
+|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[param_type](#param_type)|  
   
 The property function `intervals()` returns a `vector<result_type>` with the set of stored intervals of the distribution.  
   
@@ -240,7 +197,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="piecewise_linear_distribution__piecewise_linear_distribution"></a>  piecewise_linear_distribution::piecewise_linear_distribution  
+##  <a name="piecewise_linear_distribution"></a>  piecewise_linear_distribution::piecewise_linear_distribution  
  Constructs the distribution.  
   
 ```  
@@ -345,7 +302,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 ```  
 constructs a distribution object using `parm` as the stored parameter structure.  
   
-##  <a name="piecewise_linear_distribution__param_type"></a>  piecewise_linear_distribution::param_type  
+##  <a name="param_type"></a>  piecewise_linear_distribution::param_type  
 Stores all the parameters of the distribution.  
   
 ```  
@@ -367,7 +324,7 @@ struct param_type {
 ```  
 
 ### Parameters  
-See constructor parameters for [piecewise_linear_distribution](#piecewise_linear_distribution__piecewise_linear_distribution).  
+See constructor parameters for [piecewise_linear_distribution](#piecewise_linear_distribution).  
   
 ### Remarks  
  **Precondition:** `xmin < xmax`  

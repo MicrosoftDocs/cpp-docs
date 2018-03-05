@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "volatile_cpp"
-  - "volatile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interrupt handlers and volatile keyword"
-  - "volatile keyword [C++]"
-  - "volatile objects"
-  - "objects [C++], volatile"
+f1_keywords: ["volatile_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interrupt handlers and volatile keyword [C++]", "volatile keyword [C++]", "volatile objects", "objects [C++], volatile"]
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
 caps.latest.revision: 43
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # volatile (C++)
 A type qualifier that you can use to declare that an object can be modified in the program by the hardware.  
@@ -86,7 +65,7 @@ volatile declarator ;
 > [!NOTE]
 >  When it relies on the enhanced guarantee that's provided when the **/volatile:ms** compiler option is used, the code is non-portable.  
   
-## End Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

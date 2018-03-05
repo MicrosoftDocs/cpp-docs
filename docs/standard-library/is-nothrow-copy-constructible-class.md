@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_nothrow_copy_constructible"
-  - "std.is_nothrow_copy_constructible"
-  - "std::is_nothrow_copy_constructible"
-  - "type_traits/std::is_nothrow_copy_constructible"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_nothrow_copy_constructible"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_nothrow_copy_constructible"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_nothrow_copy_constructible"]
 ms.assetid: f13a0bea-63b1-492a-9a45-d445df35c282
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_nothrow_copy_constructible Class
 Tests whether type has a **nothrow** copy constructor.  

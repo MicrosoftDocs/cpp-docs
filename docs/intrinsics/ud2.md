@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__ud2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UD2 instruction"
-  - "__ud2 intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__ud2"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UD2 instruction", "__ud2 intrinsic"]
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __ud2
 **Microsoft Specific**  
@@ -50,7 +31,7 @@ void __ud2();
 ## Remarks  
  The processor raises an invalid opcode exception if you execute an undefined instruction.  
   
- The `__ud2` function is equivalent to the `UD2` machine instruction, and is available only in kernel mode. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](http://go.microsoft.com/fwlink/?LinkId=127) site.  
+ The `__ud2` function is equivalent to the `UD2` machine instruction, and is available only in kernel mode. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
   
 ## Requirements  
   
@@ -60,7 +41,7 @@ void __ud2();
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Example  
  The following example executes an undefined instruction, which raises an exception. The exception handler then changes the return code from zero to one.  

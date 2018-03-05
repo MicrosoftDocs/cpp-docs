@@ -4,50 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Automation servers, about Automation servers"
-  - "clients, Automation"
-  - "programmatic control [C++]"
-  - "properties [MFC], Automation"
-  - "MFC [C++], COM support"
-  - "OLE Automation"
-  - "Automation"
-  - "servers [C++], Automation"
-  - "Automation clients"
-  - "sample applications [MFC], Automation"
-  - "methods [MFC]"
-  - "passing parameters, Automation"
-  - "Automation method"
-  - "Automation, passing parameters"
-  - "Automation property"
-  - "MFC COM, Automation"
-  - "methods [MFC], Automation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Automation servers, about Automation servers", "clients, Automation", "programmatic control [MFC]", "properties [MFC], Automation", "MFC, COM support", "OLE Automation", "Automation", "servers [MFC], Automation", "Automation clients", "sample applications [MFC], Automation", "methods [MFC]", "passing parameters, Automation", "Automation method [MFC]", "Automation, passing parameters", "Automation property [MFC]", "MFC COM, Automation", "methods [MFC], Automation"]
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Automation
 Automation (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to expose objects so they can be manipulated.  
@@ -58,7 +25,7 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
 -   Automation (local).  
   
--   [Remote Automation](../mfc/remote-automation.md) (over a network, using Distributed COM, or DCOM).  
+-   Remote Automation (over a network, using Distributed COM, or DCOM).  
   
  Exposing objects is beneficial when applications provide functionality useful to other applications. For example, an ActiveX control is a type of Automation server; the application hosting the ActiveX control is the automation client of that control.  
   
@@ -92,8 +59,6 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
 -   [Automation Clients](../mfc/automation-clients.md)  
   
 -   [Automation Servers](../mfc/automation-servers.md)  
-  
--   [Remote Automation](../mfc/remote-automation.md)  
   
 -   [OLE](../mfc/ole-in-mfc.md)  
   

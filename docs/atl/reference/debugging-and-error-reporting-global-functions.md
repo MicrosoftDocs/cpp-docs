@@ -4,44 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functions [ATL], error reporting"
+f1_keywords: ["atlcomcli/ATL::AtlHresultFromLastError", "atlcom/ATL::AtlReportError", "atldef/ATL::AtlThrow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["functions [ATL], error reporting"]
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Debugging and Error Reporting Global Functions
 These functions provide useful debugging and trace facilities.  
   
 |||  
 |-|-|  
-|[AtlHresultFromLastError](http://msdn.microsoft.com/library/74530d7d-3c91-484c-acf3-aff755715d66)|Returns a `GetLastError` error code in the form of an HRESULT.|  
-|[AtlHresultFromWin32](http://msdn.microsoft.com/library/63add2dd-274c-4e72-a98c-040b93413a2f)|Converts a Win32 error code into an HRESULT.|  
-|[AtlReportError](http://msdn.microsoft.com/library/86b046a5-ea18-4ecf-9aab-40fc1eab847c)|Sets up **IErrorInfo** to provide error details to a client.|  
-|[AtlThrow](http://msdn.microsoft.com/library/2bd111da-8170-488d-914a-c9bf6b6765f7)|Throws a `CAtlException`.|  
-|[AtlThrowLastWin32](http://msdn.microsoft.com/library/8bce8e56-c7cd-4ebb-8c62-80ebc63a3d07)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
+|[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Returns a `GetLastError` error code in the form of an HRESULT.|  
+|[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Converts a Win32 error code into an HRESULT.|  
+|[AtlReportError](debugging-and-error-reporting-global-functions.md#atlreporterror)|Sets up **IErrorInfo** to provide error details to a client.|  
+|[AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)|Throws a `CAtlException`.|  
+|[AtlThrowLastWin32](debugging-and-error-reporting-global-functions.md#atlthrowlastwin32)|Call this function to signal an error based on the result of the Windows function `GetLastError`.|  
   
 ##  <a name="atlhresultfromlasterror"></a>  AtlHresultFromLastError  
  Returns the calling thread's last-error code value in the form of an HRESULT.  
@@ -71,7 +56,7 @@ AtlHresultFromWin32(DWORD error);
  Converts a Win32 error code into an HRESULT, using the macro **HRESULT_FROM_WIN32**.  
   
 > [!NOTE]
->  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](http://msdn.microsoft.com/library/74530d7d-3c91-484c-acf3-aff755715d66).  
+>  Instead of using **HRESULT_FROM_WIN32(GetLastError())**, use the function [AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror).  
 
 ### Requirements  
  **Header:** atlcomcli.h  

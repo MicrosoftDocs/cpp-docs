@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "execution-charset"
-  - "/execution-charset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/execution-charset compiler option"
-  - "-execution-charset compiler option"
+f1_keywords: ["execution-charset", "/execution-charset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/execution-charset compiler option", "-execution-charset compiler option"]
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /execution-charset (Set Execution Character Set)
 Lets you specify the execution character set for your executable.  
@@ -45,7 +34,7 @@ Lets you specify the execution character set for your executable.
  The code page identifier.  
   
 ## Remarks  
- You can use the **/execution-charset** option to specify an execution character set. The execution character set is the encoding used for the text of your program that is input to the compilation phase after all preprocessing steps. This character set is used for the internal representation of any string or character literals in the compiled code. Set this option to specify the extended execution character set to use when your source files include characters that are not representable in the basic execution character set. You can use either the IANA or ISO character set name, or a dot (.) followed by a 3 to 5 digit decimal code page identifier to specify the character set to use. For a list of supported code page identifiers and character set names, see [Code Page Identifiers](http://msdn.microsoft.com/en-us/5d6fc86a-f205-4d14-bb7c-ecd71682e0fe).  
+ You can use the **/execution-charset** option to specify an execution character set. The execution character set is the encoding used for the text of your program that is input to the compilation phase after all preprocessing steps. This character set is used for the internal representation of any string or character literals in the compiled code. Set this option to specify the extended execution character set to use when your source files include characters that are not representable in the basic execution character set. You can use either the IANA or ISO character set name, or a dot (.) followed by a 3 to 5 digit decimal code page identifier to specify the character set to use. For a list of supported code page identifiers and character set names, see [Code Page Identifiers](http://msdn.microsoft.com/library/windows/desktop/dd317756).  
   
  By default, Visual Studio detects a byte-order mark to determine if the source file is in an encoded Unicode format, for example, UTF-16 or UTF-8. If no byte-order mark is found, it assumes the source file is encoded using the current user code page, unless you have specified a character set name or code page by using the **/source-charset** option or the **/utf-8** option. Visual Studio allows you to save your C++ source code by using any of several character encodings. For information about source and execution character sets, see [Character Sets](../../cpp/character-sets2.md) in the language documentation.  
   

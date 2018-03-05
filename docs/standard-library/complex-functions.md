@@ -5,10 +5,12 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
 caps.latest.revision: 14
 manager: "ghogen"
+helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::imag [C++]", "std::log [C++]", "std::log10", "std::norm [C++]", "std::polar [C++]", "std::pow [C++]", "std::real [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
 # &lt;complex&gt; functions
 ||||  
@@ -29,7 +31,7 @@ Type abs(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose modulus is to be determined.  
   
 ### Return Value  
@@ -112,14 +114,14 @@ Type arg(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose argument is to be determined.  
   
 ### Return Value  
  The argument of the complex number.  
   
 ### Remarks  
- The argument is the angle that the complex vector makes with the positive real axis in the complex plane. For a complex number *a + bi*, the argument is equal to arctan( *b/a*) *.* The angle has a positive sense when measured in a counterclockwise direction from the positive real axis and a negative sense when measured in a clockwise direction. The principal values are greater than –pi and less than or equal to +pi.  
+ The *argument* is the angle that the complex vector makes with the positive real axis in the complex plane. For a complex number *a + bi*, the argument is equal to arctan(*b/a*). The angle has a positive sense when measured in a counterclockwise direction from the positive real axis and a negative sense when measured in a clockwise direction. The principal values are greater than -pi and less than or equal to +pi.  
   
 ### Example  
   
@@ -195,14 +197,14 @@ complex<Type> conj(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose complex conjugate is being returned.  
   
 ### Return Value  
  The complex conjugate of the input complex number.  
   
 ### Remarks  
- The complex conjugate of a complex number *a + bi* is *a – bi*. The product of a complex number and its conjugate is the norm of the number *a*2 + *b*2.  
+ The complex conjugate of a complex number *a + bi* is *a - bi*. The product of a complex number and its conjugate is the norm of the number *a*2 + *b*2.  
   
 ### Example  
   
@@ -266,7 +268,7 @@ complex<Type> cos(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose cosine is being determined.  
   
 ### Return Value  
@@ -353,7 +355,7 @@ complex<Type> cosh(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose hyperbolic cosine is being determined.  
   
 ### Return Value  
@@ -440,7 +442,7 @@ complex<Type> exp(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose exponential is being determined.  
   
 ### Return Value  
@@ -508,7 +510,7 @@ Type imag(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose real part is to be extracted.  
   
 ### Return Value  
@@ -556,7 +558,7 @@ complex<Type> log(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose natural logarithm is being determined.  
   
 ### Return Value  
@@ -622,7 +624,7 @@ complex<Type> log10(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose base 10 logarithm is being determined.  
   
 ### Return Value  
@@ -688,7 +690,7 @@ Type norm(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose norm is to be determined.  
   
 ### Return Value  
@@ -777,7 +779,7 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
  Cartesian form of the complex number specified in polar form.  
   
 ### Remarks  
- The polar form of a complex number provides the modulus *r* and the argument , where these parameters are related to the real and imaginary Cartesian components *a* and *b* by the equations *a* = r \* cos (  ) and b = *r* \* sin () *.*  
+ The polar form of a complex number provides the modulus *r* and the argument *p*, where these parameters are related to the real and imaginary Cartesian components *a* and *b* by the equations *a* = r \* cos *p* and *b* = *r* \* sin *p*.  
   
 ### Example  
   
@@ -981,7 +983,7 @@ Type real(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose real part is to be extracted.  
   
 ### Return Value  
@@ -1029,7 +1031,7 @@ complex<Type> sin(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose sine is being determined.  
   
 ### Return Value  
@@ -1038,7 +1040,7 @@ complex<Type> sin(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex sines:  
   
- sin ( *z*) = (1/2 *i*)\*( exp ( *iz*) – exp (- *iz*) )  
+ sin ( *z*) = (1/2 *i*)\*( exp ( *iz*) - exp (- *iz*) )  
   
  sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)  
   
@@ -1116,7 +1118,7 @@ complex<Type> sinh(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose hyperbolic sine is being determined.  
   
 ### Return Value  
@@ -1125,7 +1127,7 @@ complex<Type> sinh(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex hyperbolic sines:  
   
- sinh ( *z*) = (1/2)\*( exp ( *z*) – exp (- *z*) )  
+ sinh ( *z*) = (1/2)\*( exp ( *z*) - exp (- *z*) )  
   
  sinh ( *z*) = sinh ( *a + bi*) = sinh ( *a*) cos ( *b*) + *i*cosh ( *a*) sin ( *b*)  
   
@@ -1203,7 +1205,7 @@ complex<Type> sqrt(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose square root is to be found.  
   
 ### Return Value  
@@ -1276,7 +1278,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose tangent is being determined.  
   
 ### Return Value  
@@ -1285,7 +1287,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex cotangent:  
   
- tan ( *z*) = sin ( *z*) / cos ( *z*) = ( exp ( *iz*) – exp (- *iz*) ) / *i*( exp ( *iz*) + exp (- *iz*) )  
+ tan ( *z*) = sin ( *z*) / cos ( *z*) = ( exp ( *iz*) - exp (- *iz*) ) / *i*( exp ( *iz*) + exp (- *iz*) )  
   
 ### Example  
   
@@ -1361,7 +1363,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 ```  
   
 ### Parameters  
- ` complexNum`  
+ `complexNum`  
  The complex number whose hyperbolic tangent is being determined.  
   
 ### Return Value  
@@ -1370,7 +1372,7 @@ complex<Type> tanh(const complex<Type>& complexNum);
 ### Remarks  
  Identities defining the complex hyperbolic cotangent:  
   
- tanh ( *z*) = sinh ( *z*) / cosh ( *z*) = ( exp ( *z*) – exp (- *z*) ) / ( exp ( *z*) + exp (- *z*) )  
+ tanh ( *z*) = sinh ( *z*) / cosh ( *z*) = ( exp ( *z*) - exp (- *z*) ) / ( exp ( *z*) + exp (- *z*) )  
   
 ### Example  
   

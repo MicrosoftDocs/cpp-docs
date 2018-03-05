@@ -4,62 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_execvp"
-  - "_wexecvp"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-process-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_execvp", "_wexecvp"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_execvp"
-  - "wexecvp"
-  - "_wexecvp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_execvp function"
-  - "_wexecvp function"
-  - "wexecvp function"
-  - "execvp function"
+f1_keywords: ["_execvp", "wexecvp", "_wexecvp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_execvp function", "_wexecvp function", "wexecvp function", "execvp function"]
 ms.assetid: a4db15df-b204-4987-be7c-de84c3414380
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _execvp, _wexecvp
 Loads and executes new child processes.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -82,7 +47,7 @@ intptr_t _wexecvp(
  Array of pointers to parameters.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of –1 indicates an error, in which case the `errno` global variable is set.  
+ If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |`errno` value|Description|  
 |-------------------|-----------------|  
@@ -112,12 +77,6 @@ intptr_t _wexecvp(
   
 ## Example  
  See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
-  
-## .NET Framework Equivalent  
-  
--   [System::Diagnostics::Process Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.aspx)  
-  
--   [System::Diagnostics::ProcessStartInfo Class](https://msdn.microsoft.com/en-us/library/system.diagnostics.processstartinfo.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

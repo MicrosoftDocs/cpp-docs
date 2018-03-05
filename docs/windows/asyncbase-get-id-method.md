@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "async/Microsoft::WRL::AsyncBase::get_Id"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "get_Id method"
+f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_Id"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["get_Id method"]
 ms.assetid: 591d8366-ea76-4deb-9278-9d3bc394a42b
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::get_Id Method
 Retrieves the handle of the asynchronous operation.  

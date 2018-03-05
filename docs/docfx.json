@@ -39,10 +39,9 @@
             "ms.topic": "article",
             "audience": "developer",
             "ms.reviewer": "",
-            "ms.prod": "visual-studio-dev15",
-            "ms.technology": "devlang-cpp",
+            "ms.prod": "visual-cpp-dev15",
             "ms.tgt_pltfrm": "",
-            "scopedSearch": ["C++"]
+            "searchScope": ["C++"]
     },
     "fileMetadata": {},
     "template": [],

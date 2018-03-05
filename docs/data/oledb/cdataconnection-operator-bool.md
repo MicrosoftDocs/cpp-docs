@@ -4,48 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDataConnection::operatorBOOL"
-  - "ATL::CDataConnection::operatorBOOL"
-  - "CDataConnection.operatorBOOL"
-  - "ATL.CDataConnection.operatorBOOL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BOOL operator"
-  - "operator bool"
+ms.topic: "reference"
+f1_keywords: ["CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BOOL operator", "operator bool"]
 ms.assetid: ad0bea7f-61ff-47f7-8127-32a31e3e9b9d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::operator BOOL
 Determines whether the current session is open or not.  
   
 ## Syntax  
   
-```  
-  
-operator BOOL( ) throw( );  
+```cpp
+operator BOOL() throw();  
   
 ```  
   

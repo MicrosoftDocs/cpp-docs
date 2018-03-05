@@ -38,7 +38,7 @@ namespace InterfacesTest
         virtual property PlayState CurrentState;
         virtual void Play()
         {
-            // …
+            // ...
             auto args = ref new MediaPlayerEventArgs(); 
             args->newState = PlayState::Playing;
             args->oldState = PlayState::Stopped;

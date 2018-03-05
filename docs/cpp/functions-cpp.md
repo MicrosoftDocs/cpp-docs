@@ -1,40 +1,20 @@
 ---
 title: "Functions (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "01/25/2018"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "defaults, arguments"
-  - "function definitions"
-  - "function definitions, about function definitions"
-  - "default arguments"
-  - "declarators, functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Functions (C++)
 A function is a block of code that performs some operation. A function can optionally define input parameters that enable callers to pass arguments into the function. A function can optionally return a value as output. Functions are useful for encapsulating common operations in a single reusable block, ideally with a name that clearly describes what the function does. The following function accepts two integers from a caller and returns their sum; `a` and `b` are *parameters* of type `int`.  
@@ -46,7 +26,7 @@ int sum(int a, int b)
 }  
 ```  
   
- The function can invoked, or *called*, from any number of places in the program. The values that are passed to the function are the *arguments*, whose types must be compatible with the parameter types in the function definition.  
+ The function can be `invoked, or *called*, from any number of places in the program. The values that are passed to the function are the *arguments*, whose types must be compatible with the parameter types in the function definition.  
   
 ```  
 int main()  
@@ -60,25 +40,40 @@ int main()
  There is no practical limit to function length, but good design aims for functions that perform a single well-defined task. Complex algorithms should be broken up into easy-to-understand simpler functions whenever possible.  
   
  Functions that are defined at class scope are called member functions. In C++, unlike other languages, a function can also be defined at namespace scope (including the implicit global namespace). Such functions are called *free functions* or *non-member functions*; they are used extensively in the Standard Library.  
+
+Functions may be *overloaded*, which means different versions of a function may share the same name if they differ by the number and/or type of formal parameters. For more information, see [Function Overloading](../cpp/function-overloading.md).
   
 ## Parts of a function declaration  
- A minimal function *declaration* consists of the return type, function name, and parameter list (which may be empty), along with optional keywords that provide additional instructions to the compiler. A function definition consists of a declaration, plus the *body*, which is all the code between the curly braces. A function declaration followed by a semicolon may appear in multiple places in a program. It must appear prior to any calls to that function in each translation unit. The function definition must appear only once in the program, according to the One Definition Rule (ODR).  
+ A minimal function *declaration* consists of the return type, function name, and parameter list (which may be empty), along with optional keywords that provide additional instructions to the compiler. The following example is a function declaration:
+
+ ```cpp
+ int sum(int a, int b);
+ ```
+
+ A function definition consists of a declaration, plus the *body*, which is all the code between the curly braces:
+ 
+ ```cpp
+int sum(int a, int b)  
+{  
+    return a + b;  
+}  
+```
+ A function declaration followed by a semicolon may appear in multiple places in a program. It must appear prior to any calls to that function in each translation unit. The function definition must appear only once in the program, according to the One Definition Rule (ODR).  
   
  The required parts of a function declaration are:  
   
-1.  The return type, which specifies the type of the value that the function returns, or  `void` if no value is returned. In C++11, auto is a valid return type that instructs the compiler to infer the type from the return statement. In C++14, decltype(auto) is also allowed. For more information, see Type Deduction in Return Types below.  
+1.  The return type, which specifies the type of the value that the function returns, or  `void` if no value is returned. In C++11, `auto` is a valid return type that instructs the compiler to infer the type from the return statement. In C++14, decltype(auto) is also allowed. For more information, see Type Deduction in Return Types below.  
   
-2.  The function name, which must begin with a letter or underscore and cannot contain spaces. In general, leading underscores in the Standard Library function names indicate private member functions, or non-member functions that are not intended for use by your code.  
+2.  The function name, which must begin with a letter or underscore and cannot contain spaces. In general, leading underscores in the Standard Library function names indicate private member functions, or non-member functions that are not intended for use by your code. 
   
-3.  The parameter list, a brace delimited, comma-separated set of zero or more parameters that specify the type and optionally a local name by which the values may be accessed inside the function body.  
+3.  The parameter list, a brace delimited, comma-separated set of zero or more parameters that specify the type and optionally a local name by which the values may be accessed inside the function body. 
   
  Optional parts of a function declaration are:  
   
 1.  `constexpr`, which indicates that the return value of the function is a constant value can be computed at compile time.  
   
     ```  
-  
-              constexpr float exp(float x, int n)  
+    constexpr float exp(float x, int n)  
     {  
         return n == 0 ? 1 :  
             n % 2 == 0 ? exp(x * x, n / 2) :  
@@ -107,7 +102,7 @@ int main()
   
      For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).  
   
-4.  `noexcept`, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to `true`.  
+4.  A `noexcept` expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to `true`.  
   
     ```  
     #include <type_traits>  
@@ -124,7 +119,7 @@ int main()
   
 7.  (member functions only) `static` applied to a member function means that the function is not associated with any object instances of the class.  
   
-8.  (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (*this) is an rvalue reference vs. an lvalue reference.  
+8.  (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (*this) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers). 
   
  The following figure shows the parts of a function definition. The shaded area is the function body.  
   
@@ -220,6 +215,15 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 ```  
   
  When `auto` is used in conjunction with a trailing return type, it just serves as a placeholder for whatever the decltype expression produces, and does not itself perform type deduction.  
+
+   
+## Function local variables  
+ A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.  
+  
+ Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.  
+  
+### Static local variables  
+ In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function.  
   
 ###  <a name="type_deduction"></a> Type deduction in return types (C++14)  
  In C++14, you can use `auto` to instruct the compiler to infer the return type from the function body without having to provide a trailing return type. Note that `auto` always deduces to a return-by-value. Use `auto&&` to instruct the compiler to deduce a reference.  
@@ -234,7 +238,7 @@ auto Add2(const Lhs& lhs, const Rhs& rhs)
 }  
 ```  
   
- Note that `auto` also does not preserve the const-ness of the type it deduces. For forwarding functions whose return value needs to preserve the const-ness or ref-ness of its arguments, you can use the `decltype(auto)` keyword, which uses the `decltype` type inference rules and preserves all the type information. `decltype(auto)` may be used as an ordinary return value on the left side, or as a trailing return value.  
+ Note that `auto` does not preserve the const-ness of the type it deduces. For forwarding functions whose return value needs to preserve the const-ness or ref-ness of its arguments, you can use the `decltype(auto)` keyword, which uses the `decltype` type inference rules and preserves all the type information. `decltype(auto)` may be used as an ordinary return value on the left side, or as a trailing return value.  
   
  The following example (based on code from [N3493](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3493.html)), shows `decltype(auto)` being used to enable perfect forwarding of function arguments in a return type that isn't known until the template is instantiated.  
   
@@ -254,14 +258,114 @@ template<typename F, typename Tuple = tuple<T...>,
 }  
 }  
 ```  
-  
-## Function local variables  
- A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.  
-  
- Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.  
-  
-### Static local variables  
- In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function.  
+## Returning multiple values from a function
+There are various ways to return more than one value from a function:
+
+1. Encapsulate the values in a named class or struct object. Requires the class or struct definition to be visible to the caller:
+
+```cpp
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+struct S
+{
+    string name;
+    int num;
+};
+
+S g()
+{
+    string t{ "hello" };
+    int u{ 42 };
+    return { t, u };
+}
+
+int main()
+{
+    S s = g();
+    cout << s.name << " " << s.num << endl;
+    return 0;
+}
+```
+
+2. Return a std::tuple or std::pair object:
+
+```cpp
+#include <tuple>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+
+tuple<int, string, double> f()
+{
+    int i{ 108 };
+    string s{ "Some text" };
+    double d{ .01 };
+    return { i,s,d };
+}
+
+int main()
+{
+    auto t = f();
+    cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
+    
+    // --or--
+
+    int myval;
+    string myname;
+    double mydecimal;
+    tie(myval, myname, mydecimal) = f();
+    cout << myval << " " << myname << " " << mydecimal << endl;
+
+    return 0;
+}
+```
+
+3. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.  
+
+```cpp
+#include <tuple>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+tuple<int, string, double> f()
+{
+    int i{ 108 };
+    string s{ "Some text" };
+    double d{ .01 };
+    return { i,s,d };
+}
+struct S
+{
+    string name;
+    int num;
+};
+
+S g()
+{
+    string t{ "hello" };
+    int u{ 42 };
+    return { t, u };
+}
+
+int main()
+{
+    auto[x, y, z] = f(); // init from tuple
+    cout << x << " " << y << " " << z << endl;
+
+    auto[a, b] = g(); // init from POD struct
+    cout << a << " " << b << endl;
+    return 0;
+}
+```
+
+4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).  
   
 ## Function pointers  
  C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  

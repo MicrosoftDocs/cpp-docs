@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonStatusBarPane"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonStatusBarPane class"
+f1_keywords: ["CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsExtended", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnDrawBorder", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFillBackground", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAnimationList", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StartAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StopAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFinishAnimation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonStatusBarPane [MFC], CMFCRibbonStatusBarPane", "CMFCRibbonStatusBarPane [MFC], GetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], GetTextAlign", "CMFCRibbonStatusBarPane [MFC], IsAnimation", "CMFCRibbonStatusBarPane [MFC], IsExtended", "CMFCRibbonStatusBarPane [MFC], OnDrawBorder", "CMFCRibbonStatusBarPane [MFC], OnFillBackground", "CMFCRibbonStatusBarPane [MFC], SetAlmostLargeText", "CMFCRibbonStatusBarPane [MFC], SetAnimationList", "CMFCRibbonStatusBarPane [MFC], SetTextAlign", "CMFCRibbonStatusBarPane [MFC], StartAnimation", "CMFCRibbonStatusBarPane [MFC], StopAnimation", "CMFCRibbonStatusBarPane [MFC], OnFinishAnimation"]
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBarPane Class
 The `CMFCRibbonStatusBarPane` class implements a ribbon element that you can add to a ribbon status bar.  

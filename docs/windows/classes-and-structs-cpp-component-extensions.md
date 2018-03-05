@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "public"
-  - "ref struct"
-  - "value_CPP"
-  - "ref class"
-  - "value struct"
-  - "ref struct_cpp"
-  - "ref class_cpp"
-  - "value class_cpp"
-  - "value struct_cpp"
-  - "value class"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ref class keyword [C++]"
-  - "value class keyword [C++]"
-  - "value struct keyword [C++]"
-  - "ref struct keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Classes and Structs  (C++ Component Extensions)
 Declares a class or struct whose *object lifetime* is administered automatically. When the object is no longer accessible or goes out of scope, Visual C++ automatically discards the memory that is allocated to the object.  
@@ -81,7 +51,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  *base_type* (optional)  
  A base type. However, a value type cannot act as a base type.  
   
- For more information, see the language-specific descriptions of this parameter in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)] sections.  
+ For more information, see the language-specific descriptions of this parameter in the Windows Runtime and Common Language Runtimesections.  
   
  **Remarks**  
   
@@ -89,7 +59,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
  When a reference type inherits from another reference type, virtual functions in the base class must explicitly be overridden (with [override](../windows/override-cpp-component-extensions.md)) or hidden (with [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)). The derived class functions must also be explicitly marked as `virtual`.  
   
- To detect at compile time whether a type is a `ref class` or `ref struct`, or a `value class` or `value struct`, use `__is_ref_class (``type``)`, `__is_value_class (``type``)`, or `__is_simple_value_class (``type``)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ To detect at compile time whether a type is a `ref class` or `ref struct`, or a `value class` or `value struct`, use `__is_ref_class (type)`, `__is_value_class (type)`, or `__is_simple_value_class (type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  For more information on classes and structs, see  
   
@@ -111,7 +81,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 -   [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx) and [Value classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
@@ -128,7 +98,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  The following table lists differences from the syntax shown in the **All Runtimes** section that are specific to C++/CLI.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data marshaling [C++], structures"
-  - "platform invoke [C++], structures"
-  - "interop [C++], structures"
-  - "marshaling [C++], structures"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data marshaling [C++], structures", "platform invoke [C++], structures", "interop [C++], structures", "marshaling [C++], structures"]
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Structures Using PInvoke
 This document explains how native functions that accept C-style strings can be called from managed functions that provide an instance of <xref:System.String> by using P/Invoke. Although we recommend that you use the C++ Interop features instead of P/Invoke because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement, if the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option. Otherwise, see the following documents:  
@@ -56,8 +37,6 @@ This document explains how native functions that accept C-style strings can be c
   
 ## Example  
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a structure called Location and a function called GetDistance that accepts two instances of the Location structure. The second module is a managed command-line application that imports the GetDistance function, but defines it in terms of a managed equivalent of the Location structure, MLocation. In practice the same name would probably be used for both versions of the structure; however, a different name is used here to demonstrate that the DllImport prototype is defined in terms of the managed version.  
-  
- The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  Note that no portion of the DLL is exposed to the managed code using the traditional #include directive. In fact, the DLL is accessed at run time only, so problems with functions imported with DllImport will not be detected at compile time.  
   

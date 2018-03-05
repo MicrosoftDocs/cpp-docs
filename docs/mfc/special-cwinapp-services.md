@@ -4,59 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "LoadStdProfileSettings"
-  - "EnableShellOpen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], most recently used"
-  - "DragAcceptFiles method"
-  - "MRU lists"
-  - "GDI+, initializing for MFC"
-  - "GDI+, suppressing background thread [MFC]"
-  - "CWinApp class, shell registration"
-  - "application objects [C++], services"
-  - "CWinApp class, initializing GDI+"
-  - "MFC [C++], shell registration"
-  - "CWinApp class, File Manager drag and drop"
-  - "LoadStdProfileSettings method"
-  - "MFC [C++], most-recently-used file list"
-  - "RegisterShellFileTypes method"
-  - "drag and drop [C++], files"
-  - "registering file types"
-  - "Shell, registering file types"
-  - "services, provided by CWinApp"
-  - "CWinApp class, recently used documents"
-  - "CWinApp class, services"
-  - "files [C++], drag and drop"
-  - "EnableShellOpen method"
-  - "registry [C++], most recently used files"
-  - "MFC [C++], file operations"
-  - "registration [C++], shell"
+f1_keywords: ["LoadStdProfileSettings", "EnableShellOpen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [MFC], most recently used", "DragAcceptFiles method [MFC]", "MRU lists", "GDI+, initializing for MFC", "GDI+, suppressing background thread [MFC]", "CWinApp class [MFC], shell registration", "application objects [MFC], services", "CWinApp class [MFC], initializing GDI+", "MFC, shell registration", "CWinApp class [MFC], File Manager drag and drop", "LoadStdProfileSettings method [MFC]", "MFC, most-recently-used file list", "RegisterShellFileTypes method [MFC]", "drag and drop [MFC], files", "registering file types", "Shell, registering file types", "services, provided by CWinApp", "CWinApp class [MFC], recently used documents", "CWinApp class [MFC], services", "files [MFC], drag and drop", "EnableShellOpen method [MFC]", "registry [MFC], most recently used files", "MFC, file operations", "registration [MFC], shell"]
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Special CWinApp Services
 Besides running the message loop and giving you an opportunity to initialize the application and clean up after it, [CWinApp](../mfc/reference/cwinapp-class.md) provides several other services.  
@@ -70,9 +29,9 @@ Besides running the message loop and giving you an opportunity to initialize the
   
  This automatic registration support in `CWinApp` eliminates the need to ship a .reg file with your application or to do special installation work.  
   
- If you want to initialize GDI+ for your application (by calling [GdiplusStartup]--brokenlink--(_gdiplus_FUNC_GdiplusStartup_token_input_output_) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.  
+ If you want to initialize GDI+ for your application (by calling [GdiplusStartup](https://msdn.microsoft.com/library/ms534077) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.  
   
- You can do this by setting the **SuppressBackgroundThread** member of the [GdiplusStartupInput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupInput) structure to **TRUE**. When suppressing the GDI+ background thread, the **NotificationHook** and **NotificationUnhook** calls (see [GdiplusStartupOutput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupOutput)) should be made just prior to entering and exiting the application's message loop. Therefore, a good place to call **GdiplusStartup** and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
+ You can do this by setting the **SuppressBackgroundThread** member of the [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) structure to **TRUE**. When suppressing the GDI+ background thread, the **NotificationHook** and **NotificationUnhook** calls should be made just prior to entering and exiting the application's message loop. For more information on these calls, see [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Therefore, a good place to call **GdiplusStartup** and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
   
  [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]  
   

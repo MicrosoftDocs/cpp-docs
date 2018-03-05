@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::insert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert member [STL/CLR]"
+f1_keywords: ["cliext::deque::insert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: a3b86c46-e6a8-42d0-b642-5a8f05ddd68c
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::insert (STL/CLR)
 Adds elements at a specified position.  
@@ -49,22 +32,22 @@ void insert(iterator where,
 ```  
   
 #### Parameters  
- count  
+ `count`  
  Number of elements to insert.  
   
- first  
+ `first`  
  Beginning of range to insert.  
   
- last  
+ `last`  
  End of range to insert.  
   
- right  
+ `right`  
  Enumeration to insert.  
   
- val  
+ `val`  
  Value of the element to insert.  
   
- where  
+ `where`  
  Where in container to insert before.  
   
 ## Remarks  
@@ -74,7 +57,7 @@ void insert(iterator where,
   
  The second member function inserts a repetition of `count` elements of value `val`. You use it to insert zero or more contiguous elements which are all copies of the same value.  
   
- If `InIt` is an integer type, the third member function behaves the same as `insert(``where``, (size_type)``first``, (value_type)``last``)`. Otherwise, it inserts the sequence `[``first``,` `last``)`. You use it to insert zero or more contiguous elements copied from another sequence.  
+ If `InIt` is an integer type, the third member function behaves the same as `insert(where, (size_type)first, (value_type)last)`. Otherwise, it inserts the sequence [`first`, `last`). You use it to insert zero or more contiguous elements copied from another sequence.  
   
  The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
   
@@ -82,7 +65,7 @@ void insert(iterator where,
   
 ## Example  
   
-```  
+```cpp  
 // cliext_deque_insert.cpp   
 // compile with: /clr   
 #include <cliext/deque>   

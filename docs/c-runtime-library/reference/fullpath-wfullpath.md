@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_fullpath"
-  - "_wfullpath"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_fullpath", "_wfullpath"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wfullpath"
-  - "fullpath"
-  - "_wfullpath"
-  - "_fullpath"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wfullpath function"
-  - "relative file paths"
-  - "absolute paths"
-  - "wfullpath function"
-  - "_fullpath function"
-  - "fullpath function"
+f1_keywords: ["wfullpath", "fullpath", "_wfullpath", "_fullpath"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wfullpath function", "relative file paths", "absolute paths", "wfullpath function", "_fullpath function", "fullpath function"]
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _fullpath, _wfullpath
 Creates an absolute or full path name for the specified relative path name.  
@@ -90,7 +52,7 @@ wchar_t *_wfullpath(
  Each of these functions returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`), the function returns `NULL`.  
   
 ## Remarks  
- The `_fullpath` function expands the relative path name in `relPath` to its fully qualified or absolute path and stores this name in `absPath`*.* If `absPath` is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (`relPath`) that include "./" or "../" in their names.  
+ The `_fullpath` function expands the relative path name in `relPath` to its fully qualified or absolute path and stores this name in `absPath`. If `absPath` is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (`relPath`) that include "./" or "../" in their names.  
   
  For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):  
   
@@ -161,9 +123,6 @@ Full path is: C:\Documents and Settings\user\My Documents\test
 Full path is: C:\test  
 Full path is: C:\Documents and Settings\user\test  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::File::Create](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

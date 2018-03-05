@@ -4,39 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridProperty class"
+f1_keywords: ["CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustButtonRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustInPlaceEditRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateInPlaceEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Enable", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::EnableSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Expand", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::FormatProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetExpandedSubItems", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetHierarchyLevel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetNameTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOptionCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetParent", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItemsCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValueTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsAllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsEnabled", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsGroup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsInPlaceEditing", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsModified", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsParentExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSelected", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCloseCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDblClk", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawExpandBox", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEndEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnPosSizeChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetCursor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnUpdateValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::PushChar", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Redraw", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveAllOptions", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::ResetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Show", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HasButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsValueChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCtlColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDestroyWindow", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatDouble", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatFloat", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatLong", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatShort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridProperty [MFC], CMFCPropertyGridProperty", "CMFCPropertyGridProperty [MFC], AddOption", "CMFCPropertyGridProperty [MFC], AddSubItem", "CMFCPropertyGridProperty [MFC], AdjustButtonRect", "CMFCPropertyGridProperty [MFC], AdjustInPlaceEditRect", "CMFCPropertyGridProperty [MFC], AllowEdit", "CMFCPropertyGridProperty [MFC], CreateInPlaceEdit", "CMFCPropertyGridProperty [MFC], CreateSpinControl", "CMFCPropertyGridProperty [MFC], Enable", "CMFCPropertyGridProperty [MFC], EnableSpinControl", "CMFCPropertyGridProperty [MFC], Expand", "CMFCPropertyGridProperty [MFC], FormatProperty", "CMFCPropertyGridProperty [MFC], GetData", "CMFCPropertyGridProperty [MFC], GetDescription", "CMFCPropertyGridProperty [MFC], GetExpandedSubItems", "CMFCPropertyGridProperty [MFC], GetHierarchyLevel", "CMFCPropertyGridProperty [MFC], GetName", "CMFCPropertyGridProperty [MFC], GetNameTooltip", "CMFCPropertyGridProperty [MFC], GetOption", "CMFCPropertyGridProperty [MFC], GetOptionCount", "CMFCPropertyGridProperty [MFC], GetOriginalValue", "CMFCPropertyGridProperty [MFC], GetParent", "CMFCPropertyGridProperty [MFC], GetRect", "CMFCPropertyGridProperty [MFC], GetSubItem", "CMFCPropertyGridProperty [MFC], GetSubItemsCount", "CMFCPropertyGridProperty [MFC], GetValue", "CMFCPropertyGridProperty [MFC], GetValueTooltip", "CMFCPropertyGridProperty [MFC], HitTest", "CMFCPropertyGridProperty [MFC], IsAllowEdit", "CMFCPropertyGridProperty [MFC], IsEnabled", "CMFCPropertyGridProperty [MFC], IsExpanded", "CMFCPropertyGridProperty [MFC], IsGroup", "CMFCPropertyGridProperty [MFC], IsInPlaceEditing", "CMFCPropertyGridProperty [MFC], IsModified", "CMFCPropertyGridProperty [MFC], IsParentExpanded", "CMFCPropertyGridProperty [MFC], IsSelected", "CMFCPropertyGridProperty [MFC], IsVisible", "CMFCPropertyGridProperty [MFC], OnClickButton", "CMFCPropertyGridProperty [MFC], OnClickName", "CMFCPropertyGridProperty [MFC], OnClickValue", "CMFCPropertyGridProperty [MFC], OnCloseCombo", "CMFCPropertyGridProperty [MFC], OnDblClk", "CMFCPropertyGridProperty [MFC], OnDrawButton", "CMFCPropertyGridProperty [MFC], OnDrawDescription", "CMFCPropertyGridProperty [MFC], OnDrawExpandBox", "CMFCPropertyGridProperty [MFC], OnDrawName", "CMFCPropertyGridProperty [MFC], OnDrawValue", "CMFCPropertyGridProperty [MFC], OnEdit", "CMFCPropertyGridProperty [MFC], OnEndEdit", "CMFCPropertyGridProperty [MFC], OnKillSelection", "CMFCPropertyGridProperty [MFC], OnPosSizeChanged", "CMFCPropertyGridProperty [MFC], OnRClickName", "CMFCPropertyGridProperty [MFC], OnRClickValue", "CMFCPropertyGridProperty [MFC], OnSelectCombo", "CMFCPropertyGridProperty [MFC], OnSetCursor", "CMFCPropertyGridProperty [MFC], OnSetSelection", "CMFCPropertyGridProperty [MFC], OnUpdateValue", "CMFCPropertyGridProperty [MFC], PushChar", "CMFCPropertyGridProperty [MFC], Redraw", "CMFCPropertyGridProperty [MFC], RemoveAllOptions", "CMFCPropertyGridProperty [MFC], RemoveSubItem", "CMFCPropertyGridProperty [MFC], ResetOriginalValue", "CMFCPropertyGridProperty [MFC], SetData", "CMFCPropertyGridProperty [MFC], SetDescription", "CMFCPropertyGridProperty [MFC], SetName", "CMFCPropertyGridProperty [MFC], SetOriginalValue", "CMFCPropertyGridProperty [MFC], SetValue", "CMFCPropertyGridProperty [MFC], Show", "CMFCPropertyGridProperty [MFC], CreateCombo", "CMFCPropertyGridProperty [MFC], HasButton", "CMFCPropertyGridProperty [MFC], Init", "CMFCPropertyGridProperty [MFC], IsSubItem", "CMFCPropertyGridProperty [MFC], IsValueChanged", "CMFCPropertyGridProperty [MFC], OnCtlColor", "CMFCPropertyGridProperty [MFC], OnDestroyWindow", "CMFCPropertyGridProperty [MFC], OnKillFocus", "CMFCPropertyGridProperty [MFC], m_strFormatDouble", "CMFCPropertyGridProperty [MFC], m_strFormatFloat", "CMFCPropertyGridProperty [MFC], m_strFormatLong", "CMFCPropertyGridProperty [MFC], m_strFormatShort"]
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridProperty Class
 A `CMFCPropertyGridProperty` object represents a list item in a property list control.  
   
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -1116,7 +1101,7 @@ virtual BOOL OnKillFocus(CWnd*);
  By default, this method does nothing and then returns `TRUE`. If you override this method, return `TRUE` if the framework can end the edit operation when the property loses the input focus.  
   
 ##  <a name="onkillselection"></a>  CMFCPropertyGridProperty::OnKillSelection  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnKillSelection(CMFCPropertyGridProperty*);
@@ -1129,7 +1114,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
  By default, this method does nothing.  
   
 ##  <a name="onpossizechanged"></a>  CMFCPropertyGridProperty::OnPosSizeChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnPosSizeChanged(CRect);
@@ -1200,7 +1185,7 @@ virtual BOOL OnSetCursor() const;
  This method supports the following variant types: `VT_INT`, `VT_I2`, `VT_I4`, `VT_UINT`, `VT_UI1`, `VT_UI2`, `VT_UI4`, `VT_R4`, `VT_R8`, and `VT_BSTR`.  
   
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnSetSelection(CMFCPropertyGridProperty*);

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::scheduler_resource_allocation_error"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scheduler_resource_allocation_error class"
+ms.topic: "reference"
+f1_keywords: ["scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["scheduler_resource_allocation_error class"]
 ms.assetid: 8b40449a-7abb-4d0a-bb85-c0e9a495ae97
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_resource_allocation_error Class
 This class describes an exception thrown because of a failure to acquire a critical resource in the Concurrency Runtime.  
@@ -49,13 +32,13 @@ class scheduler_resource_allocation_error : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[scheduler_resource_allocation_error Constructor](#ctor)|Overloaded. Constructs a `scheduler_resource_allocation_error` object.|  
+|[scheduler_resource_allocation_error](#ctor)|Overloaded. Constructs a `scheduler_resource_allocation_error` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_error_code Method](#get_error_code)|Returns the error code that caused the exception.|  
+|[get_error_code](#get_error_code)|Returns the error code that caused the exception.|  
   
 ## Remarks  
  This exception is typically thrown when a call to the operating system from within the Concurrency Runtime fails. The error code which would normally be returned from a call to the Win32 method `GetLastError` is converted to a value of type `HRESULT` and can be retrieved using the `get_error_code` method.  

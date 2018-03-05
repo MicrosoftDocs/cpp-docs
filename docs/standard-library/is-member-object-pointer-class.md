@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_member_object_pointer"
-  - "std::is_member_object_pointer"
-  - "type_traits/std::is_member_object_pointer"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_member_object_pointer class"
-  - "is_member_object_pointer"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_member_object_pointer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_member_object_pointer class", "is_member_object_pointer"]
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_member_object_pointer Class
 Tests if type is a pointer to member object.  

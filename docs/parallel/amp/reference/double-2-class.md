@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::double_2::set_x"
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator+="
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator="
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator/="
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator*="
-  - "amp_short_vectors/Concurrency::graphics::double_2::yx"
-  - "amp_short_vectors/Concurrency::graphics::double_2::y"
-  - "amp_short_vectors/Concurrency::graphics::double_2::xy"
-  - "amp_short_vectors/Concurrency::graphics::double_2::set_xy"
-  - "amp_short_vectors/Concurrency::graphics::double_2::get_yx"
-  - "amp_short_vectors/Concurrency::graphics::double_2::set_yx"
-  - "amp_short_vectors/Concurrency::graphics::double_2::get_xy"
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator++"
-  - "amp_short_vectors/Concurrency::graphics::double_2::get_x"
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator-="
-  - "amp_short_vectors/Concurrency::graphics::double_2::rg"
-  - "amp_short_vectors/Concurrency::graphics::double_2::gr"
-  - "amp_short_vectors/Concurrency::graphics::double_2::get_y"
-  - "amp_short_vectors/Concurrency::graphics::double_2::x"
-  - "amp_short_vectors/Concurrency::graphics::double_2::r"
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator--"
-  - "amp_short_vectors/Concurrency::graphics::double_2"
-  - "amp_short_vectors/Concurrency::graphics::double_2::operator-"
-  - "amp_short_vectors/Concurrency::graphics::double_2::g"
-  - "amp_short_vectors/Concurrency::graphics::double_2::set_y"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["amp_short_vectors/Concurrency::graphics::double_2::set_x", "amp_short_vectors/Concurrency::graphics::double_2::operator+=", "amp_short_vectors/Concurrency::graphics::double_2::operator=", "amp_short_vectors/Concurrency::graphics::double_2::operator/=", "amp_short_vectors/Concurrency::graphics::double_2::operator*=", "amp_short_vectors/Concurrency::graphics::double_2::yx", "amp_short_vectors/Concurrency::graphics::double_2::y", "amp_short_vectors/Concurrency::graphics::double_2::xy", "amp_short_vectors/Concurrency::graphics::double_2::set_xy", "amp_short_vectors/Concurrency::graphics::double_2::get_yx", "amp_short_vectors/Concurrency::graphics::double_2::set_yx", "amp_short_vectors/Concurrency::graphics::double_2::get_xy", "amp_short_vectors/Concurrency::graphics::double_2::operator++", "amp_short_vectors/Concurrency::graphics::double_2::get_x", "amp_short_vectors/Concurrency::graphics::double_2::operator-=", "amp_short_vectors/Concurrency::graphics::double_2::rg", "amp_short_vectors/Concurrency::graphics::double_2::gr", "amp_short_vectors/Concurrency::graphics::double_2::get_y", "amp_short_vectors/Concurrency::graphics::double_2::x", "amp_short_vectors/Concurrency::graphics::double_2::r", "amp_short_vectors/Concurrency::graphics::double_2::operator--", "amp_short_vectors/Concurrency::graphics::double_2", "amp_short_vectors/Concurrency::graphics::double_2::operator-", "amp_short_vectors/Concurrency::graphics::double_2::g", "amp_short_vectors/Concurrency::graphics::double_2::set_y"]
+dev_langs: ["C++"]
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # double_2 Class
 Represent a short vector of 2 double's.  
@@ -83,31 +43,31 @@ class double_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::get_x Method||  
-|double_2::get_xy Method||  
-|double_2::get_y Method||  
-|double_2::get_yx Method||  
-|double_2::ref_g Method||  
-|double_2::ref_r Method||  
-|double_2::ref_x Method||  
-|double_2::ref_y Method||  
-|double_2::set_x Method||  
-|double_2::set_xy Method||  
-|double_2::set_y Method||  
-|double_2::set_yx Method||  
+|double_2::get_x||  
+|double_2::get_xy||  
+|double_2::get_y||  
+|double_2::get_yx||  
+|double_2::ref_g||  
+|double_2::ref_r||  
+|double_2::ref_x||  
+|double_2::ref_y||  
+|double_2::set_x||  
+|double_2::set_xy||  
+|double_2::set_y||  
+|double_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::operator- Operator||  
-|double_2::operator-- Operator||  
-|double_2::operator*= Operator||  
-|double_2::operator/= Operator||  
-|double_2::operator++ Operator||  
-|double_2::operator+= Operator||  
-|double_2::operator= Operator||  
-|double_2::operator-= Operator||  
+|double_2::operator-||  
+|double_2::operator--||  
+|double_2::operator*=||  
+|double_2::operator/=||  
+|double_2::operator++||  
+|double_2::operator+=||  
+|double_2::operator=||  
+|double_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +79,14 @@ class double_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|double_2::g Data Member||  
-|double_2::gr Data Member||  
-|double_2::r Data Member||  
-|double_2::rg Data Member||  
-|double_2::x Data Member||  
-|double_2::xy Data Member||  
-|double_2::y Data Member||  
-|double_2::yx Data Member||  
+|double_2::g||  
+|double_2::gr||  
+|double_2::r||  
+|double_2::rg||  
+|double_2::x||  
+|double_2::xy||  
+|double_2::y||  
+|double_2::yx||  
   
 ## Inheritance Hierarchy  
  `double_2`  

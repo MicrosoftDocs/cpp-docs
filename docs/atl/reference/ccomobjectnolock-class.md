@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComObjectNoLock"
-  - "ATL::CComObjectNoLock"
-  - "ATL.CComObjectNoLock<Base>"
-  - "CComObjectNoLock"
-  - "ATL::CComObjectNoLock<Base>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComObjectNoLock class"
+f1_keywords: ["CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::AddRef", "ATLCOM/ATL::CComObjectNoLock::QueryInterface", "ATLCOM/ATL::CComObjectNoLock::Release"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComObjectNoLock class"]
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectNoLock Class
 This class implements **IUnknown** for a nonaggregated object, but does not increment the module lock count in the constructor.  

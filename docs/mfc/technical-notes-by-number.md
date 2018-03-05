@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.tables.mfc.technotes"
-dev_langs: 
-  - "C++"
+f1_keywords: ["vc.tables.mfc.technotes"]
+dev_langs: ["C++"]
 ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Number
 The technical notes below are listed numerically, with the most recently written technical note first. For a listing by category, see [Technical Notes by Category](../mfc/technical-notes-by-category.md).  
@@ -43,7 +27,7 @@ The technical notes below are listed numerically, with the most recently written
 |66|[Common MFC 3.x to 4.0 Porting Issues](../mfc/tn066-common-mfc-3-x-to-4-0-porting-issues.md)|  
 |65|[Dual-Interface Support for OLE Automation Servers](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)|  
 |64|[Apartment-Model Threading in OLE Controls](../mfc/tn064-apartment-model-threading-in-activex-controls.md)|  
-|63|[Debugging Internet Extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|  
+|63|[Debugging Internet MFC extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|  
 |62|[Message Reflection for Windows Controls](../mfc/tn062-message-reflection-for-windows-controls.md)|  
 |61|[ON_NOTIFY and WM_NOTIFY Messages](../mfc/tn061-on-notify-and-wm-notify-messages.md)|  
 |60|[Windows Common Controls](../mfc/tn060-the-new-windows-common-controls.md)|  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDispatchDriver"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDispatchDriver class"
-  - "Automation clients, implementing Automation"
-  - "OLE dispatch interface"
+f1_keywords: ["COleDispatchDriver", "AFXDISP/COleDispatchDriver", "AFXDISP/COleDispatchDriver::COleDispatchDriver", "AFXDISP/COleDispatchDriver::AttachDispatch", "AFXDISP/COleDispatchDriver::CreateDispatch", "AFXDISP/COleDispatchDriver::DetachDispatch", "AFXDISP/COleDispatchDriver::GetProperty", "AFXDISP/COleDispatchDriver::InvokeHelper", "AFXDISP/COleDispatchDriver::ReleaseDispatch", "AFXDISP/COleDispatchDriver::SetProperty", "AFXDISP/COleDispatchDriver::m_bAutoRelease", "AFXDISP/COleDispatchDriver::m_lpDispatch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDispatchDriver [MFC], COleDispatchDriver", "COleDispatchDriver [MFC], AttachDispatch", "COleDispatchDriver [MFC], CreateDispatch", "COleDispatchDriver [MFC], DetachDispatch", "COleDispatchDriver [MFC], GetProperty", "COleDispatchDriver [MFC], InvokeHelper", "COleDispatchDriver [MFC], ReleaseDispatch", "COleDispatchDriver [MFC], SetProperty", "COleDispatchDriver [MFC], m_bAutoRelease", "COleDispatchDriver [MFC], m_lpDispatch"]
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDispatchDriver Class
 Implements the client side of OLE automation.  
@@ -140,7 +121,7 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
  Reference to an existing `COleDispatchDriver` object.  
   
 ### Remarks  
- The form `COleDispatchDriver`( `LPDISPATCH``lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) connects the [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) interface.  
+ The form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) connects the [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) interface.  
   
  The form `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) copies an existing `COleDispatchDriver` object and increments the reference count.  
   
@@ -192,7 +173,7 @@ LPDISPATCH DetachDispatch();
 ### Remarks  
  The `IDispatch` is not released.  
   
- For more information about the `LPDISPATCH` type, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about the `LPDISPATCH` type, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]  
@@ -237,7 +218,7 @@ void AFX_CDECL InvokeHelper(
  Identifies the method or property to be invoked.  
   
  `wFlags`  
- Flags describing the context of the call to **IDispatch::Invoke**. . For a list of possible values, see the `wFlags` parameter in [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Flags describing the context of the call to **IDispatch::Invoke**. . For a list of possible values, see the `wFlags` parameter in [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) in the Windows SDK.  
   
  `vtRet`  
  Specifies the type of the return value. For possible values, see the Remarks section.  
@@ -276,7 +257,7 @@ void AFX_CDECL InvokeHelper(
   
  This function converts the parameters to **VARIANTARG** values, then invokes the [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx) method. If the call to `Invoke` fails, this function will throw an exception. If the `SCODE` (status code) returned by **IDispatch::Invoke** is `DISP_E_EXCEPTION`, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
- For more information, see [VARIANTARG](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [Implementing the IDispatch Interface](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx), [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), and [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [VARIANTARG](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [Implementing the IDispatch Interface](http://msdn.microsoft.com/library/windows/desktop/ms221037\(v=vs.85\).aspx), [IDispatch::Invoke](http://msdn.microsoft.com/library/windows/desktop/ms221479\(v=vs.85\).aspx), and [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Example  
   See the example for [COleDispatchDriver::CreateDispatch](#createdispatch).  
@@ -291,7 +272,7 @@ BOOL m_bAutoRelease;
 ### Remarks  
  By default, `m_bAutoRelease` is set to **TRUE** in the constructor.  
   
- For more information on releasing COM objects, see [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) and [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on releasing COM objects, see [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) and [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/cpp/coledispatchdriver-class_5.cpp)]  
@@ -306,7 +287,7 @@ LPDISPATCH m_lpDispatch;
 ### Remarks  
  The `m_lpDispatch` data member is a public variable of type `LPDISPATCH`.  
   
- For more information, see [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) in the Windows SDK.  
   
 ### Example  
   See the example for [COleDispatchDriver::AttachDispatch](#attachdispatch).  

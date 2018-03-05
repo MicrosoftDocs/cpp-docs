@@ -4,54 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.IRowsetUpdateImpl.Undo"
-  - "ATL::IRowsetUpdateImpl::Undo"
-  - "IRowsetUpdateImpl::Undo"
-  - "IRowsetUpdateImpl.Undo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Undo method"
+ms.topic: "reference"
+f1_keywords: ["ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Undo method"]
 ms.assetid: f3dc7764-050c-4322-9b2f-9ca772a0fb88
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::Undo
 Undoes any changes to the row since the last fetch or update.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Undo )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[ ],  
    DBCOUNTITEM* pcRowsUndone,  
    HROW** prgRowsUndone,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### Parameters  

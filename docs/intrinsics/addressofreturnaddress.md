@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_AddressOfReturnAddress_cpp"
-  - "_AddressOfReturnAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_AddressOfReturnAddress intrinsic"
-  - "AddressOfReturnAddress intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_AddressOfReturnAddress intrinsic", "AddressOfReturnAddress intrinsic"]
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _AddressOfReturnAddress
 **Microsoft Specific**  
@@ -93,7 +73,7 @@ int main() {
 00401058  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

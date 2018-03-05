@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::<iterator>"
-  - "std.<iterator>"
-  - "<iterator>"
-  - "iterator/std::<iterator>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "iterator header"
+ms.topic: "reference"
+f1_keywords: ["<iterator>", "iterator/std::<iterator>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["iterator header"]
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;iterator&gt;
 Defines the iterator primitives, predefined iterators and stream iterators, as well as several supporting templates. The predefined iterators include insert and reverse adaptors. There are three classes of insert iterator adaptors: front, back, and general. They provide insert semantics rather than the overwrite semantics that the container member function iterators provide.  
@@ -87,13 +67,13 @@ Defines the iterator primitives, predefined iterators and stream iterators, as w
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/iterator-operators.md#operator_neq)|Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.|  
-|[operator==](../standard-library/iterator-operators.md#operator_eq_eq)|Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.|  
-|[operator<](../standard-library/iterator-operators.md#operator_lt_)|Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.|  
-|[operator\<=](../standard-library/iterator-operators.md#operator_lt__eq)|Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.|  
-|[operator>](../standard-library/iterator-operators.md#operator_gt_)|Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.|  
-|[operator>=](../standard-library/iterator-operators.md#operator_gt__eq)|Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.|  
-|[operator+](../standard-library/iterator-operators.md#operator_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|  
+|[operator!=](../standard-library/iterator-operators.md#op_neq)|Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.|  
+|[operator==](../standard-library/iterator-operators.md#op_eq_eq)|Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.|  
+|[operator<](../standard-library/iterator-operators.md#op_lt)|Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.|  
+|[operator\<=](../standard-library/iterator-operators.md#op_gt_eq)|Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.|  
+|[operator>](../standard-library/iterator-operators.md#op_gt)|Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.|  
+|[operator>=](../standard-library/iterator-operators.md#op_gt_eq)|Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.|  
+|[operator+](../standard-library/iterator-operators.md#op_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|  
 |[operator-](../standard-library/iterator-operators.md#operator-)|Subtracts one iterator from another and returns the difference.|  
   
 ### Classes  

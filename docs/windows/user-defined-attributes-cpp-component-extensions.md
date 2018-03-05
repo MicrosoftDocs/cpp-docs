@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "metadata, extending"
-  - "custom attributes, extending metadata"
+dev_langs: ["C++"]
+helpviewer_keywords: ["metadata, extending", "custom attributes, extending metadata"]
 ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # User-Defined Attributes  (C++ Component Extensions)
 Custom attributes enable you to extend the metadata of an interface, class or structure, method, parameter, or enumeration.  
@@ -48,7 +31,7 @@ Custom attributes enable you to extend the metadata of an interface, class or st
  Compiler option: **/ZW**  
   
 ## Common Language Runtime  
- Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](http://msdn.microsoft.com/Library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](/dotnet/standard/attributes/index).  
   
 ### Remarks  
  The information and syntax presented in this topic is meant to supersede the information presented in [attribute](../windows/attribute.md).  

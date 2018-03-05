@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Ansi"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "underscores, leading"
-  - "compatibility [C++], ANSI C"
-  - "compliance with ANSI C"
-  - "conventions [C++], Microsoft extensions"
-  - "underscores"
-  - "naming conventions [C++], Microsoft library"
-  - "ANSI [C++], C standard"
-  - "Microsoft extensions naming conventions"
+f1_keywords: ["Ansi"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["underscores, leading", "compatibility [C++], ANSI C", "compliance with ANSI C", "conventions [C++], Microsoft extensions", "underscores", "naming conventions [C++], Microsoft library", "ANSI [C++], C standard", "Microsoft extensions naming conventions"]
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ANSI C Compliance
 The naming convention for all Microsoft-specific identifiers in the run-time system (such as functions, macros, constants, variables, and type definitions) is ANSI-compliant. In this documentation, any run-time function that follows the ANSI/ISO C standards is noted as being ANSI compatible. ANSI-compliant applications should only use these ANSI compatible functions.  

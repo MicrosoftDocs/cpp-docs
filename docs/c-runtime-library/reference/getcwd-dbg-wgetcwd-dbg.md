@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wgetcwd_dbg"
-  - "_getcwd_dbg"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-environment-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wgetcwd_dbg", "_getcwd_dbg"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getcwd_dbg"
-  - "_wgetcwd_dbg"
-  - "getcwd_dbg"
-  - "wgetcwd_dbg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wgetcwd_dbg function"
-  - "working directory"
-  - "_getcwd_dbg function"
-  - "getcwd_dbg function"
-  - "current working directory"
-  - "_wgetcwd_dbg function"
-  - "directories [C++], current working"
+f1_keywords: ["_getcwd_dbg", "_wgetcwd_dbg", "getcwd_dbg", "wgetcwd_dbg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wgetcwd_dbg function", "working directory", "_getcwd_dbg function", "getcwd_dbg function", "current working directory", "_wgetcwd_dbg function", "directories [C++], current working"]
 ms.assetid: 8d5d151f-d844-4aa6-a28c-1c11a22dc00d
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getcwd_dbg, _wgetcwd_dbg
 Debug versions of the [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) functions (only available during debug).  
@@ -103,9 +64,9 @@ wchar_t *_wgetcwd_dbg(
  For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_getcwd_dbg` and `_wgetcwd_dbg` functions are identical to `_getcwd` and `_wgetcwd` except that, when _`DEBUG` is defined, these functions use the debug version of `malloc` and `_malloc_dbg` to allocate memory if `NULL` is passed as the first parameter. For more information, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
+ The `_getcwd_dbg` and `_wgetcwd_dbg` functions are identical to `_getcwd` and `_wgetcwd` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc` and `_malloc_dbg` to allocate memory if `NULL` is passed as the first parameter. For more information, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
- You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_getcwd`and `_wgetcwd`are remapped to `_getcwd_dbg`and `_wgetcwd_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).  
+ You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_getcwd` and `_wgetcwd` are remapped to `_getcwd_dbg` and `_wgetcwd_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).  
   
 ## Generic-Text Routine Mappings  
   
@@ -121,9 +82,6 @@ wchar_t *_wgetcwd_dbg(
 |`_wgetcwd_dbg`|\<crtdbg.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- <xref:System.Environment.CurrentDirectory%2A>  
   
 ## See Also  
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   

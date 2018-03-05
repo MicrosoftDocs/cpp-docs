@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "games [C++]"
-  - "Windows applications [C++], games"
-  - "DirectX [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["games [C++]", "Windows applications [C++], games", "DirectX [C++]"]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
 caps.latest.revision: 14
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Resources for Creating a Game Using DirectX
 To create the best desktop games, use Visual C++ and DirectX together.  
@@ -48,4 +30,4 @@ To create the best desktop games, use Visual C++ and DirectX together.
   
  [Win32 Windows Applications](../windows/windows-desktop-applications-cpp.md) contains articles that describe how to create a basic Windows desktop app.  
   
- [Developing Games](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) discusses [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] game development, but many of the concepts also apply to desktop games.
+ [Developing Games](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) discusses Universal Windows Platform game development, but many of the concepts also apply to desktop games.

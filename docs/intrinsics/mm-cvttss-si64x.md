@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_mm_cvttss_si64x"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mm_cvttss_si64x intrinsic"
-  - "cvttss2si instruction"
+ms.topic: "reference"
+f1_keywords: ["_mm_cvttss_si64x"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mm_cvttss_si64x intrinsic", "cvttss2si instruction"]
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _mm_cvttss_si64x
 **Microsoft Specific**  
@@ -103,7 +84,7 @@ int main()
 101  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__m128](../cpp/m128.md)   

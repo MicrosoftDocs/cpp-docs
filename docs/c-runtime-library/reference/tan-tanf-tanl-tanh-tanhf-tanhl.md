@@ -4,74 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "tanhf"
-  - "tanh"
-  - "tan"
-  - "tanhl"
-  - "tanf"
-  - "tanl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["tanhf", "tanh", "tan", "tanhl", "tanf", "tanl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tanh"
-  - "tan"
-  - "_tanl"
-  - "tanl"
-  - "_tanhl"
-  - "tanf"
-  - "tanhf"
-  - "tanhl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tanl function"
-  - "tanhl function"
-  - "_tanl function"
-  - "_tanhl function"
-  - "tan function"
-  - "calculating tangents"
-  - "tangent"
-  - "tanh function"
-  - "tanhf function"
-  - "tanf function"
-  - "trigonometric functions"
-  - "hyperbolic functions"
+f1_keywords: ["tanh", "tan", "_tanl", "tanl", "_tanhl", "tanf", "tanhf", "tanhl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tanl function", "tanhl function", "_tanl function", "_tanhl function", "tan function", "calculating tangents", "tangent", "tanh function", "tanhf function", "tanf function", "trigonometric functions", "hyperbolic functions"]
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # tan, tanf, tanl, tanh, tanhf, tanhl
 Calculates the tangent (`tan`, `tanf`, or `tanl`), or hyperbolic tangent (`tanh`, `tanhf`, or `tanhl`).  
@@ -116,7 +63,7 @@ long double tanhl(
  Angle in radians.  
   
 ## Return Value  
- The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to –263, a loss of significance in the result occurs.  
+ The `tan` functions return the tangent of `x`. If `x` is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.  
   
  The `tanh` functions return the hyperbolic tangent of `x`. There is no error return.  
   
@@ -163,12 +110,6 @@ int main( void )
 tan( 0.785398 ) = 1.000000  
 tanh( 1.000000 ) = 0.761594  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Math::Tan](https://msdn.microsoft.com/en-us/library/system.math.tan.aspx)  
-  
--   [System::Math::Tanh](https://msdn.microsoft.com/en-us/library/system.math.tanh.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

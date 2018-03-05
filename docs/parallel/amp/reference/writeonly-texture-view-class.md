@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_graphics/Concurrency::graphics::writeonly_texture_view"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["writeonly_texture_view", "AMP_GRAPHICS/writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::rank Constant"]
+dev_langs: ["C++"]
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # writeonly_texture_view Class
 Provides writeonly access to a texture.  
@@ -78,13 +62,13 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Name|Description|  
 |----------|-----------------|  
-|[set Method](#set)|Sets the value of the element at the specified index.|  
+|[set](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator= Operator](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
+|[operator=](#operator_eq)|Copies the specified `writeonly_texture_view` object to this one.|  
   
 ### Public Constants  
   

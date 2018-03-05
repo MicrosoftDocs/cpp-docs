@@ -4,39 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module::RegisterWinRTObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RegisterWinRTObject method"
+f1_keywords: ["module/Microsoft::WRL::Module::RegisterWinRTObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RegisterWinRTObject method"]
 ms.assetid: a2782c9c-b9c5-4e4b-9c8d-ef513aea20c5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::RegisterWinRTObject Method
-Registers one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.  
+Registers one or more Windows Runtime objects so other applications can connect to them.  
   
 ## Syntax  
   

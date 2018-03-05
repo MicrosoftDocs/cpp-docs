@@ -4,31 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::operator!="
-  - "functional/std::operator!="
-  - "std::operator=="
-  - "functional/std::operator=="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functional operators"
+ms.topic: "reference"
+f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;functional&gt; operators
 |||  
 |-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if callable object is empty.  
   
 ```  
@@ -85,7 +79,7 @@ empty == true
 empty == false  
 ```  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if callable object is not empty.  
   
 ```  

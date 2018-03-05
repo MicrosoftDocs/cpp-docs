@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "menus, updating as context changes"
-  - "user interface objects, updating"
-  - "user interface objects"
-  - "update handlers"
-  - "enabling UI elements"
-  - "disabling menus"
-  - "updating user-interface objects"
-  - "disabling UI elements"
-  - "commands, updating UI"
-  - "enabling menus"
+dev_langs: ["C++"]
+helpviewer_keywords: ["menus [MFC], updating as context changes", "user interface objects [MFC], updating", "user interface objects [MFC]", "update handlers [MFC]", "enabling UI elements [MFC]", "disabling menus [MFC]", "updating user-interface objects [MFC]", "disabling UI elements [MFC]", "commands [MFC], updating UI", "enabling menus [MFC]"]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How to: Update User-Interface Objects
 Typically, menu items and toolbar buttons have more than one state. For example, a menu item is grayed (dimmed) if it is unavailable in the present context. Menu items can also be checked or unchecked. A toolbar button can also be disabled if unavailable, or it can be checked.  

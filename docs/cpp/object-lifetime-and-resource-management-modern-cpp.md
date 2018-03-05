@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Object Lifetime And Resource Management (Modern C++)
 Unlike managed languages, C++ doesn’t have garbage collection (GC), which automatically releases no-longer-used memory resources as a program runs. In C++, resource management is directly related to object lifetime. This document describes the factors that affect object lifetime in C++ and how to manage it.  
@@ -83,21 +68,20 @@ node::node() : parent(...) { children.emplace_back(new node(...) ); }
 ```cpp  
 class widget {  
 private:  
-  gadget g;   // lifetime automatically tied to enclosing object  
+    gadget g;   // lifetime automatically tied to enclosing object  
 public:  
-  void draw();  
+    void draw();  
 };  
   
 void functionUsingWidget () {  
-  widget w;   // lifetime automatically tied to enclosing scope  
-              // constructs w, including the w.g gadget member  
-  …  
-  w.draw();  
-  …  
+    widget w;   // lifetime automatically tied to enclosing scope  
+                // constructs w, including the w.g gadget member  
+    // ...
+    w.draw();  
+    // ...
 } // automatic destruction and deallocation for w and w.g  
   // automatic exception safety,   
   // as if "finally { w.dispose(); w.g.dispose(); }"  
-  
 ```  
   
  Use static lifetime sparingly (global static, function local static) because problems can arise. What happens when the constructor of a global object throws an exception? Typically, the app faults in a way that can be difficult to debug. Construction order is problematic for static lifetime objects, and is not concurrency-safe. Not only is object construction a problem, destruction order can be complex, especially where polymorphism is involved. Even if your object or variable isn’t polymorphic and doesn't have complex construction/destruction ordering, there’s still the issue of thread-safe concurrency. A multithreaded app can’t safely modify the data in static objects without having thread-local storage, resource locks, and other special precautions.  

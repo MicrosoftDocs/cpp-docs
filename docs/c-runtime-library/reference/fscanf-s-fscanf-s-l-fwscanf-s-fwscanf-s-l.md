@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "fwscanf_s"
-  - "_fscanf_s_l"
-  - "_fwscanf_s_l"
-  - "fscanf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["fwscanf_s", "_fscanf_s_l", "_fwscanf_s_l", "fscanf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fwscanf_s_l"
-  - "_fscanf_s_l"
-  - "fscanf_s"
-  - "_ftscanf_s_l"
-  - "_ftscanf_s"
-  - "fwscanf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "formatted data [C++], reading from streams"
-  - "_ftscanf_s_l function"
-  - "_fscanf_s_l function"
-  - "ftscanf_s function"
-  - "fwscanf_s function"
-  - "_ftscanf_s function"
-  - "data [CRT], reading from streams"
-  - "_fwscanf_s_l function"
-  - "fscanf_s function"
-  - "fwscanf_s_l function"
-  - "ftscanf_s_l function"
-  - "streams [C++], reading formatted data from"
-  - "fscanf_s_l function"
+f1_keywords: ["_fwscanf_s_l", "_fscanf_s_l", "fscanf_s", "_ftscanf_s_l", "_ftscanf_s", "fwscanf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["formatted data [C++], reading from streams", "_ftscanf_s_l function", "_fscanf_s_l function", "ftscanf_s function", "fwscanf_s function", "_ftscanf_s function", "data [CRT], reading from streams", "_fwscanf_s_l function", "fscanf_s function", "fwscanf_s_l function", "ftscanf_s_l function", "streams [C++], reading formatted data from", "fscanf_s_l function"]
 ms.assetid: b6e88194-714b-4322-be82-1cc0b343fe01
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l
 Reads formatted data from a stream. These versions of [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -196,9 +148,6 @@ a-string
 3.141590  
 x  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::StreamReader::ReadLine](https://msdn.microsoft.com/en-us/library/system.io.streamreader.readline.aspx). See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

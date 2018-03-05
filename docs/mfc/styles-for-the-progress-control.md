@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PBS_SMOOTH style"
-  - "progress controls [C++], styles"
-  - "PBS_VERTICAL style"
-  - "CProgressCtrl class, styles"
+dev_langs: ["C++"]
+helpviewer_keywords: ["PBS_SMOOTH style", "progress controls [MFC], styles", "PBS_VERTICAL style", "CProgressCtrl class [MFC], styles"]
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Styles for the Progress Control
 When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  
@@ -60,7 +41,7 @@ When you initially create the progress control ([CProgressCtrl::Create](../mfc/r
   
  ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4ruw2")  
   
- For more information, see [Window Styles](../mfc/reference/frame-window-styles-mfc.md) in the *MFC Reference*.  
+ For more information, see [Window Styles](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) in the *MFC Reference*.  
   
 ## See Also  
  [Using CProgressCtrl](../mfc/using-cprogressctrl.md)

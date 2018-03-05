@@ -4,56 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "expm1l"
-  - "expm1"
-  - "expm1f"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["expm1l", "expm1", "expm1f"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "expm1l"
-  - "expm1"
-  - "expm1f"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "expm1f function"
-  - "expm1l function"
-  - "expm1 function"
+f1_keywords: ["expm1l", "expm1", "expm1f"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["expm1f function", "expm1l function", "expm1 function"]
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # expm1, expm1f, expm1l
 Computes the base-e exponential of a value, minus one.  
@@ -83,7 +48,7 @@ long double expm1l(
  The floating-point exponential value.  
   
 ## Return Value  
- The `expm1` functions return a floating-point value that represents e<sup>x</sup> – 1, if successful. On overflow, `expm1` returns `HUGE_VAL`, `expm1f` returns `HUGE_VALF`, `expm1l` returns `HUGE_VALL`, and `errno` is set to `ERANGE`. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ The `expm1` functions return a floating-point value that represents e<sup>x</sup> - 1, if successful. On overflow, `expm1` returns `HUGE_VAL`, `expm1f` returns `HUGE_VALF`, `expm1l` returns `HUGE_VALL`, and `errno` is set to `ERANGE`. For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
  Because C++ allows overloading, you can call overloads of `expm1` that take and return `float` and `long double` values. In a C program, `expm1` always takes and returns a `double`.  
@@ -96,10 +61,7 @@ long double expm1l(
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
-  
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [exp2, exp2f, exp2l](http://msdn.microsoft.com/en-us/a7974629-be1e-4196-a562-6624a0732003)   
+ [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)   
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)

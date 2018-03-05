@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CAxWindow2T<TBase>"
-  - "ATL::CAxWindow2T"
-  - "CAxWindow2T"
-  - "ATL.CAxWindow2T<TBase>"
-  - "ATL.CAxWindow2T"
-  - "CAxWindow2"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAxWindow2 class"
+f1_keywords: ["CAxWindow2T", "ATLWIN/ATL::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::Create", "ATLWIN/ATL::CAxWindow2T::CreateControlLic", "ATLWIN/ATL::CAxWindow2T::CreateControlLicEx", "ATLWIN/ATL::CAxWindow2T::GetWndClassName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAxWindow2 class"]
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAxWindow2T Class
 This class provides methods for manipulating a window that hosts an ActiveX control, and also has support for hosting licensed ActiveX controls.  

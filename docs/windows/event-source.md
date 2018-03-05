@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.event_source"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event handling, attributes"
-  - "event logs, event source"
-  - "event sources, creating"
-  - "event_source attribute"
-  - "event sources"
-  - "event handling, creating event source"
+f1_keywords: ["vc-attr.event_source"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event handling, attributes", "event logs, event source", "event sources, creating", "event_source attribute", "event sources", "event handling, creating event source"]
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # event_source
 Creates an event source.  
@@ -101,5 +78,4 @@ Creates an event source.
  [__event](../cpp/event.md)   
  [__hook](../cpp/hook.md)   
  [__unhook](../cpp/unhook.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Class Attributes](../windows/class-attributes.md)   

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "int data type"
-  - "type int"
-  - "portability [C++], type int"
-  - "signed integers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["int data type", "type int", "portability [C++], type int", "signed integers"]
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Type int
 The size of a signed or unsigned `int` item is the standard size of an integer on a particular machine. For example, in 16-bit operating systems, the `int` type is usually 16 bits, or 2 bytes. In 32-bit operating systems, the `int` type is usually 32 bits, or 4 bytes. Thus, the `int` type is equivalent to either the `short int` or the **long int** type, and the `unsigned int` type is equivalent to either the **unsigned short** or the `unsigned long` type, depending on the target environment. The `int` types all represent signed values unless specified otherwise.  

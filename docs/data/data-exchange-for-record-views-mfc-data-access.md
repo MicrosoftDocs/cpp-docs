@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RFX (record field exchange), data exchange mechanism"
-  - "RFX (record field exchange), record views"
-  - "record views, data exchange"
-  - "DDX (dialog data exchange), record views"
-  - "RFX (record field exchange)"
+dev_langs: ["C++"]
+helpviewer_keywords: ["RFX (record field exchange), data exchange mechanism", "RFX (record field exchange), record views", "record views, data exchange", "DDX (dialog data exchange), record views", "RFX (record field exchange)"]
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Exchange for Record Views   (MFC Data Access)
 When you use [Add Class](../mfc/reference/adding-an-mfc-odbc-consumer.md) to map the controls in a record view's dialog template resource to the fields of a recordset, the framework manages data exchange in both directions — from recordset to controls and from controls to recordset. Using the DDX mechanism means that you do not have to write the code to transfer data back and forth yourself.  

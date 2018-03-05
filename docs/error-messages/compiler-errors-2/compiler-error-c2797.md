@@ -4,40 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2797"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2797"
+f1_keywords: ["C2797"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2797"]
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2797
-List initialization inside member initializer list or non-static data member initializer is not implemented.  
+(Obsolete) List initialization inside member initializer list or non-static data member initializer is not implemented.  
   
- The C++ compiler in Visual Studio does not implement list initialization inside either a member initializer list or a non-static data member initializer. Before Visual Studio 2013 Update 3, this was silently converted to a function call, which could lead to bad code generation. Visual Studio 2013 Update 3 reports this as an error.  
+ This warning is obsolete in Visual Studio 2015. In Visual Studio 2013 and earlier versions, the Visual C++ compiler does not implement list initialization inside either a member initializer list or a non-static data member initializer. Before Visual Studio 2013 Update 3, this was silently converted to a function call, which could lead to bad code generation. Visual Studio 2013 Update 3 reports this as an error.  
   
  This example generates C2797:  
   

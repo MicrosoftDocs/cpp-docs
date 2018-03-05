@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::merge"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "merge function [STL/CLR]"
+f1_keywords: ["cliext::merge"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["merge function [STL/CLR]"]
 ms.assetid: e42d3396-63a4-438a-964d-83e90405102e
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # merge (STL/CLR)
 Combines all the elements from two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.  
@@ -49,7 +32,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `merge`. For more information, see [merge](http://msdn.microsoft.com/Library/f5181f62-4d2f-485f-90c6-6ae92e7bf4d7).  
+ This function behaves the same as the C++ Standard Library function `merge`. For more information, see [merge](../standard-library/algorithm-functions.md#merge).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

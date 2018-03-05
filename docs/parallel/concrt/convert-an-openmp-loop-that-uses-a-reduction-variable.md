@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting from OpenMP to the Concurrency Runtime, reduction variables"
-  - "reduction variables, converting from OpenMP to the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, reduction variables", "reduction variables, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime
 This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that uses the [reduction](../../parallel/openmp/reference/reduction.md) clause to use the Concurrency Runtime.  

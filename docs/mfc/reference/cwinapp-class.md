@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWinApp"
-  - "hInstance"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWinApp class"
-  - "application objects [C++]"
-  - "HINSTANCE"
-  - "main object"
+f1_keywords: ["CWinApp", "AFXWIN/CWinApp", "AFXWIN/CWinApp::CWinApp", "AFXWIN/CWinApp::AddDocTemplate", "AFXWIN/CWinApp::AddToRecentFileList", "AFXWIN/CWinApp::ApplicationRecoveryCallback", "AFXWIN/CWinApp::CloseAllDocuments", "AFXWIN/CWinApp::CreatePrinterDC", "AFXWIN/CWinApp::DelRegTree", "AFXWIN/CWinApp::DoMessageBox", "AFXWIN/CWinApp::DoWaitCursor", "AFXWIN/CWinApp::EnableD2DSupport", "AFXWIN/CWinApp::EnableHtmlHelp", "AFXWIN/CWinApp::EnableTaskbarInteraction", "AFXWIN/CWinApp::ExitInstance", "AFXWIN/CWinApp::GetApplicationRecoveryParameter", "AFXWIN/CWinApp::GetApplicationRecoveryPingInterval", "AFXWIN/CWinApp::GetApplicationRestartFlags", "AFXWIN/CWinApp::GetAppRegistryKey", "AFXWIN/CWinApp::GetDataRecoveryHandler", "AFXWIN/CWinApp::GetFirstDocTemplatePosition", "AFXWIN/CWinApp::GetHelpMode", "AFXWIN/CWinApp::GetNextDocTemplate", "AFXWIN/CWinApp::GetPrinterDeviceDefaults", "AFXWIN/CWinApp::GetProfileBinary", "AFXWIN/CWinApp::GetProfileInt", "AFXWIN/CWinApp::GetProfileString", "AFXWIN/CWinApp::GetSectionKey", "AFXWIN/CWinApp::HideApplication", "AFXWIN/CWinApp::HtmlHelp", "AFXWIN/CWinApp::InitInstance", "AFXWIN/CWinApp::IsTaskbarInteractionEnabled", "AFXWIN/CWinApp::LoadCursor", "AFXWIN/CWinApp::LoadIcon", "AFXWIN/CWinApp::LoadOEMCursor", "AFXWIN/CWinApp::LoadOEMIcon", "AFXWIN/CWinApp::LoadStandardCursor", "AFXWIN/CWinApp::LoadStandardIcon", "AFXWIN/CWinApp::OnDDECommand", "AFXWIN/CWinApp::OnIdle", "AFXWIN/CWinApp::OpenDocumentFile", "AFXWIN/CWinApp::ParseCommandLine", "AFXWIN/CWinApp::PreTranslateMessage", "AFXWIN/CWinApp::ProcessMessageFilter", "AFXWIN/CWinApp::ProcessShellCommand", "AFXWIN/CWinApp::ProcessWndProcException", "AFXWIN/CWinApp::Register", "AFXWIN/CWinApp::RegisterWithRestartManager", "AFXWIN/CWinApp::ReopenPreviousFilesAtRestart", "AFXWIN/CWinApp::RestartInstance", "AFXWIN/CWinApp::RestoreAutosavedFilesAtRestart", "AFXWIN/CWinApp::Run", "AFXWIN/CWinApp::RunAutomated", "AFXWIN/CWinApp::RunEmbedded", "AFXWIN/CWinApp::SaveAllModified", "AFXWIN/CWinApp::SelectPrinter", "AFXWIN/CWinApp::SetHelpMode", "AFXWIN/CWinApp::SupportsApplicationRecovery", "AFXWIN/CWinApp::SupportsAutosaveAtInterval", "AFXWIN/CWinApp::SupportsAutosaveAtRestart", "AFXWIN/CWinApp::SupportsRestartManager", "AFXWIN/CWinApp::Unregister", "AFXWIN/CWinApp::WinHelp", "AFXWIN/CWinApp::WriteProfileBinary", "AFXWIN/CWinApp::WriteProfileInt", "AFXWIN/CWinApp::WriteProfileString", "AFXWIN/CWinApp::EnableShellOpen", "AFXWIN/CWinApp::LoadStdProfileSettings", "AFXWIN/CWinApp::OnContextHelp", "AFXWIN/CWinApp::OnFileNew", "AFXWIN/CWinApp::OnFileOpen", "AFXWIN/CWinApp::OnFilePrintSetup", "AFXWIN/CWinApp::OnHelp", "AFXWIN/CWinApp::OnHelpFinder", "AFXWIN/CWinApp::OnHelpIndex", "AFXWIN/CWinApp::OnHelpUsing", "AFXWIN/CWinApp::RegisterShellFileTypes", "AFXWIN/CWinApp::SetAppID", "AFXWIN/CWinApp::SetRegistryKey", "AFXWIN/CWinApp::UnregisterShellFileTypes", "AFXWIN/CWinApp::m_bHelpMode", "AFXWIN/CWinApp::m_eHelpType", "AFXWIN/CWinApp::m_hInstance", "AFXWIN/CWinApp::m_lpCmdLine", "AFXWIN/CWinApp::m_nCmdShow", "AFXWIN/CWinApp::m_pActiveWnd", "AFXWIN/CWinApp::m_pszAppID", "AFXWIN/CWinApp::m_pszAppName", "AFXWIN/CWinApp::m_pszExeName", "AFXWIN/CWinApp::m_pszHelpFilePath", "AFXWIN/CWinApp::m_pszProfileName", "AFXWIN/CWinApp::m_pszRegistryKey", "AFXWIN/CWinApp::m_dwRestartManagerSupportFlags", "AFXWIN/CWinApp::m_nAutosaveInterval", "AFXWIN/CWinApp::m_pDataRecoveryHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinApp [MFC], CWinApp", "CWinApp [MFC], AddDocTemplate", "CWinApp [MFC], AddToRecentFileList", "CWinApp [MFC], ApplicationRecoveryCallback", "CWinApp [MFC], CloseAllDocuments", "CWinApp [MFC], CreatePrinterDC", "CWinApp [MFC], DelRegTree", "CWinApp [MFC], DoMessageBox", "CWinApp [MFC], DoWaitCursor", "CWinApp [MFC], EnableD2DSupport", "CWinApp [MFC], EnableHtmlHelp", "CWinApp [MFC], EnableTaskbarInteraction", "CWinApp [MFC], ExitInstance", "CWinApp [MFC], GetApplicationRecoveryParameter", "CWinApp [MFC], GetApplicationRecoveryPingInterval", "CWinApp [MFC], GetApplicationRestartFlags", "CWinApp [MFC], GetAppRegistryKey", "CWinApp [MFC], GetDataRecoveryHandler", "CWinApp [MFC], GetFirstDocTemplatePosition", "CWinApp [MFC], GetHelpMode", "CWinApp [MFC], GetNextDocTemplate", "CWinApp [MFC], GetPrinterDeviceDefaults", "CWinApp [MFC], GetProfileBinary", "CWinApp [MFC], GetProfileInt", "CWinApp [MFC], GetProfileString", "CWinApp [MFC], GetSectionKey", "CWinApp [MFC], HideApplication", "CWinApp [MFC], HtmlHelp", "CWinApp [MFC], InitInstance", "CWinApp [MFC], IsTaskbarInteractionEnabled", "CWinApp [MFC], LoadCursor", "CWinApp [MFC], LoadIcon", "CWinApp [MFC], LoadOEMCursor", "CWinApp [MFC], LoadOEMIcon", "CWinApp [MFC], LoadStandardCursor", "CWinApp [MFC], LoadStandardIcon", "CWinApp [MFC], OnDDECommand", "CWinApp [MFC], OnIdle", "CWinApp [MFC], OpenDocumentFile", "CWinApp [MFC], ParseCommandLine", "CWinApp [MFC], PreTranslateMessage", "CWinApp [MFC], ProcessMessageFilter", "CWinApp [MFC], ProcessShellCommand", "CWinApp [MFC], ProcessWndProcException", "CWinApp [MFC], Register", "CWinApp [MFC], RegisterWithRestartManager", "CWinApp [MFC], ReopenPreviousFilesAtRestart", "CWinApp [MFC], RestartInstance", "CWinApp [MFC], RestoreAutosavedFilesAtRestart", "CWinApp [MFC], Run", "CWinApp [MFC], RunAutomated", "CWinApp [MFC], RunEmbedded", "CWinApp [MFC], SaveAllModified", "CWinApp [MFC], SelectPrinter", "CWinApp [MFC], SetHelpMode", "CWinApp [MFC], SupportsApplicationRecovery", "CWinApp [MFC], SupportsAutosaveAtInterval", "CWinApp [MFC], SupportsAutosaveAtRestart", "CWinApp [MFC], SupportsRestartManager", "CWinApp [MFC], Unregister", "CWinApp [MFC], WinHelp", "CWinApp [MFC], WriteProfileBinary", "CWinApp [MFC], WriteProfileInt", "CWinApp [MFC], WriteProfileString", "CWinApp [MFC], EnableShellOpen", "CWinApp [MFC], LoadStdProfileSettings", "CWinApp [MFC], OnContextHelp", "CWinApp [MFC], OnFileNew", "CWinApp [MFC], OnFileOpen", "CWinApp [MFC], OnFilePrintSetup", "CWinApp [MFC], OnHelp", "CWinApp [MFC], OnHelpFinder", "CWinApp [MFC], OnHelpIndex", "CWinApp [MFC], OnHelpUsing", "CWinApp [MFC], RegisterShellFileTypes", "CWinApp [MFC], SetAppID", "CWinApp [MFC], SetRegistryKey", "CWinApp [MFC], UnregisterShellFileTypes", "CWinApp [MFC], m_bHelpMode", "CWinApp [MFC], m_eHelpType", "CWinApp [MFC], m_hInstance", "CWinApp [MFC], m_lpCmdLine", "CWinApp [MFC], m_nCmdShow", "CWinApp [MFC], m_pActiveWnd", "CWinApp [MFC], m_pszAppID", "CWinApp [MFC], m_pszAppName", "CWinApp [MFC], m_pszExeName", "CWinApp [MFC], m_pszHelpFilePath", "CWinApp [MFC], m_pszProfileName", "CWinApp [MFC], m_pszRegistryKey", "CWinApp [MFC], m_dwRestartManagerSupportFlags", "CWinApp [MFC], m_nAutosaveInterval", "CWinApp [MFC], m_pDataRecoveryHandler"]
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWinApp Class
 The base class from which you derive a Windows application object.  
@@ -358,7 +337,7 @@ virtual int DoMessageBox(
  Address of text in the message box.  
   
  `nType`  
- The message box [style](../../mfc/reference/message-box-styles.md).  
+ The message box [style](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).  
   
  `nIDPrompt`  
  An index to a Help context string.  
@@ -380,7 +359,7 @@ virtual void DoWaitCursor(int nCode);
   
 ### Parameters  
  `nCode`  
- If this parameter is 1, a wait cursor appears. If 0, the wait cursor is restored without incrementing the reference count. If –1, the wait cursor ends.  
+ If this parameter is 1, a wait cursor appears. If 0, the wait cursor is restored without incrementing the reference count. If -1, the wait cursor ends.  
   
 ### Remarks  
  The default implements an hourglass cursor. `DoWaitCursor` maintains a reference count. When positive, the hourglass cursor is displayed.  
@@ -774,7 +753,7 @@ virtual void HtmlHelp(
  Specifies additional data. The value used depends on the value of the `nCmd` parameter.  
   
  `nCmd`  
- Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in About the HTMLHelp API Function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in About the HTMLHelp API Function in the Windows SDK.  
   
 ### Remarks  
  The framework also calls this function to invoke the HTMLHelp application.  
@@ -819,14 +798,15 @@ virtual BOOL IsTaskbarInteractionEnabled();
  Loads the cursor resource named by `lpszResourceName` or specified by `nIDResource` from the current executable file.  
   
 ```  
-HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  ```  
+HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nIDResource) const;  
+```  
   
 ### Parameters  
  `lpszResourceName`  
  Points to a null-terminated string that contains the name of the cursor resource. You can use a `CString` for this argument.  
   
  `nIDResource`  
- ID of the cursor resource. For a list of resources, see [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ ID of the cursor resource. For a list of resources, see [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) in the Windows SDK.  
   
 ### Return Value  
  A handle to a cursor if successful; otherwise **NULL**.  
@@ -843,7 +823,8 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
  Loads the icon resource named by `lpszResourceName` or specified by `nIDResource` from the executable file.  
   
 ```  
-HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  ```  
+HICON LoadIcon(LPCTSTR lpszResourceName) const;  HICON LoadIcon(UINT nIDResource) const;  
+```  
   
 ### Parameters  
  `lpszResourceName`  
@@ -955,7 +936,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
   
 ### Parameters  
  `lpszIconName`  
- A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) in the Windows SDK.  
   
 ### Return Value  
  A handle to an icon if successful; otherwise **NULL**.  
@@ -1021,15 +1002,12 @@ AFX_HELP_TYPE m_eHelpType;
 ### Remarks  
  The **AFX_HELP_TYPE** enumeration is defined as follows:  
   
- `enum AFX_HELP_TYPE`  
-  
- `{`  
-  
- `afxWinHelp = 0,`  
-  
- `afxHTMLHelp = 1`  
-  
- `};`  
+```  
+enum AFX_HELP_TYPE {  
+    afxWinHelp = 0,
+    afxHTMLHelp = 1
+    };  
+```  
   
 -   To set the application's help to HTML Help, call [SetHelpMode](#sethelpmode) and specify **afxHTMLHelp**.  
   
@@ -1478,19 +1456,15 @@ BOOL ProcessShellCommand(CCommandLineInfo& rCmdInfo);
   
  The data members of the `CCommandLineInfo` object, identified by [CCommandLineInfo::m_nShellCommand](../../mfc/reference/ccommandlineinfo-class.md#m_nshellcommand), are of the following enumerated type, which is defined within the `CCommandLineInfo` class.  
   
- `enum {`  
-  
- `FileNew,`  
-  
- `FileOpen,`  
-  
- `FilePrint,`  
-  
- `FilePrintTo,`  
-  
- `FileDDE,`  
-  
- `};`  
+```  
+enum {
+    FileNew,
+    FileOpen,
+    FilePrint,
+    FilePrintTo,
+    FileDDE
+    };  
+```
   
  For a brief description of each of these values, see `CCommandLineInfo::m_nShellCommand`.  
   
@@ -1741,7 +1715,8 @@ void SetHelpMode(AFX_HELP_TYPE eHelpType);
   
 ```  
 void SetRegistryKey(LPCTSTR lpszRegistryKey);  
-void SetRegistryKey(UINT nIDRegistryKey);```  
+void SetRegistryKey(UINT nIDRegistryKey);
+```  
   
 ### Parameters  
  *lpszRegistryKey*  

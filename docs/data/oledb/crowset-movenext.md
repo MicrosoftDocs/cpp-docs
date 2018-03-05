@@ -4,55 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.CRowset<TAccessor>.MoveNext"
-  - "ATL.CRowset.MoveNext"
-  - "ATL::CRowset<TAccessor>::MoveNext"
-  - "CRowset<TAccessor>.MoveNext"
-  - "CRowset.MoveNext"
-  - "CRowset<TAccessor>::MoveNext"
-  - "CRowset::MoveNext"
-  - "ATL::CRowset::MoveNext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MoveNext method"
+ms.topic: "reference"
+f1_keywords: ["ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MoveNext method"]
 ms.assetid: 0df3288c-2bce-494f-99c0-6344b54a4adf
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::MoveNext
 Moves the cursor to the next record.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveNext( ) throw( );   
-HRESULT MoveNext(   
-   LONG lSkip,   
-   bool bForward = true    
-) throw( );  
+```cpp
+HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip,   
+   bool bForward= true) throw();  
 ```  
   
 #### Parameters  

@@ -4,79 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_ungetch_nolock"
-  - "_ungetwch_nolock"
-  - "_ungetwch"
-  - "_ungetch"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-conio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ungetch_nolock"
-  - "ungetwch"
-  - "ungetch_nolock"
-  - "_ungetwch"
-  - "ungetch"
-  - "ungetwch_nolock"
-  - "_ungetch"
-  - "_ungettch_nolock"
-  - "_ungettch"
-  - "_ungetwch_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ungetch function"
-  - "ungetwch function"
-  - "characters, pushing back to console"
-  - "_ungettch_nolock function"
-  - "ungettch function"
-  - "_ungettch function"
-  - "ungetch_nolock function"
-  - "ungettch_nolock function"
-  - "_ungetwch_nolock function"
-  - "_ungetch_nolock function"
-  - "ungetwch_nolock function"
-  - "_ungetwch function"
+f1_keywords: ["_ungetch_nolock", "ungetwch", "ungetch_nolock", "_ungetwch", "ungetch", "ungetwch_nolock", "_ungetch", "_ungettch_nolock", "_ungettch", "_ungetwch_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ungetch function", "ungetwch function", "characters, pushing back to console", "_ungettch_nolock function", "ungettch function", "_ungettch function", "ungetch_nolock function", "ungettch_nolock function", "_ungetwch_nolock function", "_ungetch_nolock function", "ungetwch_nolock function", "_ungetwch function"]
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 Pushes back the last character that's read from the console.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -100,10 +48,10 @@ wint_t _ungetwch_nolock(
  Character to be pushed.  
   
 ## Return Value  
- Both functions return the character `c` if successful. If there is an error, `_ungetch` returns a value of `EOF` and `_ungetwch`returns`WEOF`.  
+ Both functions return the character `c` if successful. If there is an error, `_ungetch` returns a value of `EOF` and `_ungetwch` returns `WEOF`.  
   
 ## Remarks  
- These functions push the character `c` back to the console, causing `c` to be the next character read by `_getch` or `_getche` (or`_getwch` or`_getwche`). `_ungetch` and `_ungetwch` fail if they are called more than once before the next read. The `c` argument may not be `EOF` (or `WEOF`).  
+ These functions push the character `c` back to the console, causing `c` to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). `_ungetch` and `_ungetwch` fail if they are called more than once before the next read. The `c` argument may not be `EOF` (or `WEOF`).  
   
  The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   

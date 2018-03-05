@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wasctime"
-  - "asctime"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wasctime", "asctime"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tasctime"
-  - "asctime"
-  - "_wasctime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "asctime function"
-  - "tasctime function"
-  - "wasctime function"
-  - "_tasctime function"
-  - "_wasctime function"
-  - "time structure conversion"
-  - "time, converting"
+f1_keywords: ["_tasctime", "asctime", "_wasctime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["asctime function", "tasctime function", "wasctime function", "_tasctime function", "_wasctime function", "time structure conversion", "time, converting"]
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # asctime, _wasctime
 Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).  
@@ -86,14 +48,14 @@ wchar_t *_wasctime(
   
 |timeptr member|Value|  
 |--------------------|-----------|  
-|`tm_hour`|Hours since midnight (0–23)|  
+|`tm_hour`|Hours since midnight (0-23)|  
 |`tm_isdst`|Positive if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative if status of daylight saving time is unknown. The C run-time library assumes the United States' rules for implementing the calculation of Daylight Saving Time (DST).|  
-|`tm_mday`|Day of month (1–31)|  
-|`tm_min`|Minutes after hour (0–59)|  
-|`tm_mon`|Month (0–11; January = 0)|  
-|`tm_sec`|Seconds after minute (0–59)|  
-|`tm_wday`|Day of week (0–6; Sunday = 0)|  
-|`tm_yday`|Day of year (0–365; January 1 = 0)|  
+|`tm_mday`|Day of month (1-31)|  
+|`tm_min`|Minutes after hour (0-59)|  
+|`tm_mon`|Month (0-11; January = 0)|  
+|`tm_sec`|Seconds after minute (0-59)|  
+|`tm_wday`|Day of week (0-6; Sunday = 0)|  
+|`tm_yday`|Day of year (0-365; January 1 = 0)|  
 |`tm_year`|Year (current year minus 1900)|  
   
  The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](../../c-runtime-library/reference/time-time32-time64.md), [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions and the [_tzset](../../c-runtime-library/reference/tzset.md) function for information about defining the time zone environment and global variables.  
@@ -147,18 +109,6 @@ int main( void )
 ```Output  
 Current date and time: Sun Feb 03 11:38:58 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::ToLongDateString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongdatestring.aspx)  
-  
--   [System::DateTime::ToLongTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.tolongtimestring.aspx)  
-  
--   [System::DateTime::ToShortDateString](https://msdn.microsoft.com/en-us/library/system.datetime.toshortdatestring.aspx)  
-  
--   [System::DateTime::ToShortTimeString](https://msdn.microsoft.com/en-us/library/system.datetime.toshorttimestring.aspx)  
-  
--   [System::DateTime::ToString](https://msdn.microsoft.com/en-us/library/system.datetime.tostring.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

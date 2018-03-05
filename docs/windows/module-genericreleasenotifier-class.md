@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module::GenericReleaseNotifier"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GenericReleaseNotifier class"
+f1_keywords: ["module/Microsoft::WRL::Module::GenericReleaseNotifier"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GenericReleaseNotifier class"]
 ms.assetid: 244a8fbe-f89b-409b-aa65-db3e37f9b125
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier Class
 Invokes an event handler when the last object in the current module is released. The event handler is specified by on a lambda, functor, or pointer-to-function.  

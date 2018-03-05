@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std.logical_or"
-  - "std::logical_or"
-  - "logical_or"
-  - "xfunctional/std::logical_or"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical_or class"
-  - "logical_or struct"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::logical_or"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical_or class", "logical_or struct"]
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # logical_or Struct
 A predefined function object that performs the logical disjunction operation ( `operator||`) on its arguments.  
@@ -72,7 +50,7 @@ struct logical_or<void>
  The right operand of the logical disjunction operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``||``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator||`.  
+ The result of `Left || Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator||`.  
   
 ## Remarks  
  For user-defined types, there is no short-circuiting of operand evaluation. Both arguments are evaluated by `operator||`.  

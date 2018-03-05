@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "object references, in native functions"
-  - "objects [C++], reference in native functions"
-  - "references, to objects in native functions"
-  - "gcroot keyword [C++], object reference in native function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["object references, in native functions", "objects [C++], reference in native functions", "references, to objects in native functions", "gcroot keyword [C++], object reference in native function"]
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Hold Object Reference in Unmanaged Memory
 You can use gcroot.h, which wraps <xref:System.Runtime.InteropServices.GCHandle>, to hold a CLR object reference in unmanaged memory. Alternatively, you can use `GCHandle` directly.  

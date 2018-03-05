@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.com_interface_entry"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "com_interface_entry attribute"
+f1_keywords: ["vc-attr.com_interface_entry"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["com_interface_entry attribute"]
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # com_interface_entry (C++)
 Adds an interface entry into the COM map of the target class.  
@@ -48,7 +31,7 @@ Adds an interface entry into the COM map of the target class.
   
 #### Parameters  
  *com_interface_entry*  
- A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](http://msdn.microsoft.com/Library/19dcb768-2e1f-4b8d-a618-453a01a4bd00).  
+ A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](../atl/reference/com-interface-entry-macros.md).  
   
 ## Remarks  
  The `com_interface_entry` C++ attribute inserts the unabridged contents of a character string into the COM interface map of the target object. If the attribute is applied once to the target object, the entry is inserted into the beginning of the existing interface map. If the attribute is applied repeatedly to the same target object, the entries are inserted at the beginning of the interface map in the order they are received.  
@@ -138,5 +121,4 @@ END_COM_MAP()
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vwprintf_s_l"
-  - "vwprintf_s"
-  - "_vprintf_s_l"
-  - "vprintf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vwprintf_s_l", "vwprintf_s", "_vprintf_s_l", "vprintf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vprintf_s"
-  - "vwprintf_s"
-  - "_vtprintf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vwprintf_s_l function"
-  - "_vwprintf_s_l function"
-  - "vwprintf_s function"
-  - "_vtprintf_s_l function"
-  - "vprintf_s_l function"
-  - "vtprintf_s_l function"
-  - "_vtprintf_s function"
-  - "vtprintf_s function"
-  - "_vprintf_s_l function"
-  - "formatted text [C++]"
-  - "vprintf_s function"
+f1_keywords: ["vprintf_s", "vwprintf_s", "_vtprintf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vwprintf_s_l function", "_vwprintf_s_l function", "vwprintf_s function", "_vtprintf_s_l function", "vprintf_s_l function", "vtprintf_s_l function", "_vtprintf_s function", "vtprintf_s function", "_vprintf_s_l function", "formatted text [C++]", "vprintf_s function"]
 ms.assetid: cf864996-a530-4b40-9c30-54c4cef439c8
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 Writes formatted output by using a pointer to a list of arguments. These versions of [vprintf, _vprintf_l, vwprintf, _vwprintf_l](../../c-runtime-library/reference/vprintf-vprintf-l-vwprintf-vwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -134,10 +91,7 @@ int _vwprintf_s_l(
   
  \* Required for UNIX V compatibility.  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAnimateCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "animation controls [C++], CAnimateCtrl class"
-  - "Windows common controls [C++], CAnimateCtrl class"
-  - "CAnimateCtrl class"
+f1_keywords: ["CAnimateCtrl", "AFXCMN/CAnimateCtrl", "AFXCMN/CAnimateCtrl::CAnimateCtrl", "AFXCMN/CAnimateCtrl::Close", "AFXCMN/CAnimateCtrl::Create", "AFXCMN/CAnimateCtrl::CreateEx", "AFXCMN/CAnimateCtrl::IsPlaying", "AFXCMN/CAnimateCtrl::Open", "AFXCMN/CAnimateCtrl::Play", "AFXCMN/CAnimateCtrl::Seek", "AFXCMN/CAnimateCtrl::Stop"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimateCtrl [MFC], CAnimateCtrl", "CAnimateCtrl [MFC], Close", "CAnimateCtrl [MFC], Create", "CAnimateCtrl [MFC], CreateEx", "CAnimateCtrl [MFC], IsPlaying", "CAnimateCtrl [MFC], Open", "CAnimateCtrl [MFC], Play", "CAnimateCtrl [MFC], Seek", "CAnimateCtrl [MFC], Stop"]
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAnimateCtrl Class
 Provides the functionality of the Windows common animation control.  
@@ -142,7 +123,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the Windows SDK.  
   
  `rect`  
  Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
@@ -159,7 +140,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CAnimateCtrl` in two steps. First, call the constructor, and then call **Create**, which creates the animation control and attaches it to the `CAnimateCtrl` object.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to an animation control.  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to an animation control.  
   
 - **WS_CHILD** Always  
   
@@ -169,7 +150,7 @@ virtual BOOL Create(
   
  If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of **Create**.  
   
- In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on [animation control styles](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
+ In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the Windows SDK for more information on [animation control styles](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
   
 ### Example  
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
@@ -188,10 +169,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb761886) in the Windows SDK.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -219,7 +200,7 @@ BOOL IsPlaying() const;
  `true` if an AVI clip is playing; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) message, which is described in the Windows SDK.  
   
 ##  <a name="open"></a>  CAnimateCtrl::Open  
  Call this function to open an AVI clip and display its first frame.  
@@ -268,10 +249,10 @@ BOOL Play(
  Zero-based index of the frame where playing begins. Value must be less than 65,536. A value of 0 means begin with the first frame in the AVI clip.  
   
  `nTo`  
- Zero-based index of the frame where playing ends. Value must be less than 65,536. A value of – 1 means end with the last frame in the AVI clip.  
+ Zero-based index of the frame where playing ends. Value must be less than 65,536. A value of - 1 means end with the last frame in the AVI clip.  
   
  *nRep*  
- Number of times to replay the AVI clip. A value of – 1 means replay the file indefinitely.  
+ Number of times to replay the AVI clip. A value of - 1 means replay the file indefinitely.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -291,7 +272,7 @@ BOOL Seek(UINT nTo);
   
 ### Parameters  
  `nTo`  
- Zero-based index of the frame to display. Value must be less than 65,536. A value of 0 means display the first frame in the AVI clip. A value of –1 means display the last frame in the AVI clip.  
+ Zero-based index of the frame to display. Value must be less than 65,536. A value of 0 means display the first frame in the AVI clip. A value of -1 means display the last frame in the AVI clip.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -319,5 +300,5 @@ BOOL Stop();
  [CWnd Class](../../mfc/reference/cwnd-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [CAnimateCtrl::Create](#create)   
- [ON_CONTROL](http://msdn.microsoft.com/library/2cb7ebdf-296b-4606-b191-3449835003db)
+ [ON_CONTROL](message-map-macros-mfc.md#on_control)
 

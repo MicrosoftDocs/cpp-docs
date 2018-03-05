@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::count"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "count member [STL/CLR]"
+f1_keywords: ["cliext::multiset::count"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["count member [STL/CLR]"]
 ms.assetid: 6c668667-0047-4101-8dfc-0f538655b3d1
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::count (STL/CLR)
 Finds the number of elements matching a specified key.  

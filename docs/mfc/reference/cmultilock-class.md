@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMultiLock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMultiLock class"
-  - "synchronization objects, access control"
+f1_keywords: ["CMultiLock", "AFXMT/CMultiLock", "AFXMT/CMultiLock::CMultiLock", "AFXMT/CMultiLock::IsLocked", "AFXMT/CMultiLock::Lock", "AFXMT/CMultiLock::Unlock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMultiLock [MFC], CMultiLock", "CMultiLock [MFC], IsLocked", "CMultiLock [MFC], Lock", "CMultiLock [MFC], Unlock"]
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMultiLock Class
 Represents the access-control mechanism used in controlling access to resources in a multithreaded program.  
@@ -132,22 +114,22 @@ DWORD Lock(
  Specifies whether all objects waited on must become signaled at the same time before returning. If **FALSE**, `Lock` will return when any one of the objects waited on is signaled.  
   
  `dwWakeMask`  
- Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) in the Windows SDK.  
   
 ### Return Value  
- If `Lock` fails, it returns – 1. If successful, it returns one of the following values:  
+ If `Lock` fails, it returns - 1. If successful, it returns one of the following values:  
   
--   Between **WAIT_OBJECT_0** and **WAIT_OBJECT_0** + (number of objects – 1)  
+-   Between **WAIT_OBJECT_0** and **WAIT_OBJECT_0** + (number of objects - 1)  
   
-     If `bWaitForAll` is **TRUE**, all objects are signaled (available). If `bWaitForAll` is **FALSE**, the return value – **WAIT_OBJECT_0** is the index in the array of objects of the object that is signaled (available).  
+     If `bWaitForAll` is **TRUE**, all objects are signaled (available). If `bWaitForAll` is **FALSE**, the return value - **WAIT_OBJECT_0** is the index in the array of objects of the object that is signaled (available).  
   
 - **WAIT_OBJECT_0** + (number of objects)  
   
      An event specified in `dwWakeMask` is available in the thread's input queue.  
   
--   Between **WAIT_ABANDONED_0** and **WAIT_ABANDONED_0** + (number of objects – 1)  
+-   Between **WAIT_ABANDONED_0** and **WAIT_ABANDONED_0** + (number of objects - 1)  
   
-     If `bWaitForAll` is **TRUE**, all objects are signaled, and at least one of the objects is an abandoned mutex object. If `bWaitForAll` is **FALSE**, the return value – **WAIT_ABANDONED_0** is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
+     If `bWaitForAll` is **TRUE**, all objects are signaled, and at least one of the objects is an abandoned mutex object. If `bWaitForAll` is **FALSE**, the return value - **WAIT_ABANDONED_0** is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
   
 - **WAIT_TIMEOUT**  
   

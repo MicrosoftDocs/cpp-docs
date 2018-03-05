@@ -4,67 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnbset_s_l"
-  - "_mbsnbset_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnbset_s_l", "_mbsnbset_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbset_s"
-  - "_mbsnbset_s_l"
-  - "_mbsnbset_s"
-  - "mbsnbset_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsnset_s function"
-  - "mbsnbset_s function"
-  - "mbsnbset_s_l function"
-  - "_mbsnbset_s_l function"
-  - "_tcsnset_s_l function"
-  - "_mbsnbset_s function"
-  - "_tcsnset_s function"
-  - "tcsnset_s_l function"
+f1_keywords: ["mbsnbset_s", "_mbsnbset_s_l", "_mbsnbset_s", "mbsnbset_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsnset_s function", "mbsnbset_s function", "mbsnbset_s_l function", "_mbsnbset_s_l function", "_tcsnset_s_l function", "_mbsnbset_s function", "_tcsnset_s function", "tcsnset_s_l function"]
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbset_s, _mbsnbset_s_l
 Sets the first `n` bytes of a multibyte-character string to a specified character. These versions of [_mbsnbset, _mbsnbset_l](../../c-runtime-library/reference/mbsnbset-mbsnbset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -168,9 +128,6 @@ int main( void )
 Before: This is a test  
 After:  **** is a test  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

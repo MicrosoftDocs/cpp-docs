@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::Count"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "count member [STL/CLR]"
+f1_keywords: ["cliext::map::Count"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["count member [STL/CLR]"]
 ms.assetid: 835f5b11-cb15-4a0b-8808-cd9b36c83e0b
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::count (STL/CLR)
 Finds the number of elements matching a specified key.  

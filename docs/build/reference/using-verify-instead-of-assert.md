@@ -4,47 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "assert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ASSERT statements"
-  - "debugging [MFC], ASSERT statements"
-  - "VERIFY macro"
-  - "assertions, troubleshooting ASSERT statements"
-  - "debugging assertions"
-  - "assertions, debugging"
+f1_keywords: ["assert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ASSERT statements", "debugging [MFC], ASSERT statements", "VERIFY macro", "assertions, troubleshooting ASSERT statements", "debugging assertions", "assertions, debugging"]
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using VERIFY Instead of ASSERT
 Suppose that when you run the debug version of your MFC application, there are no problems. However, the release version of the same application crashes, returns incorrect results, and/or exhibits some other abnormal behavior.  
   
  This problem can be caused when you place important code in an ASSERT statement to verify that it performs correctly. Because ASSERT statements are commented out in a release build of an MFC program, the code does not run in a release build.  
   
- If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.  
+ If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](../../mfc/reference/diagnostic-services.md#verify) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.  
   
  Another preferred technique is to assign the function's return value to a temporary variable and then test the variable in an ASSERT statement.  
   

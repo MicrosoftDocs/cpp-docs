@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "manifests [C++]"
-  - "embedding manifests"
-  - "makefiles, updating to embed manifest"
+dev_langs: ["C++"]
+helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How to: Embed a Manifest Inside a C/C++ Application
 It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](../build/manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.  
@@ -42,11 +24,11 @@ It is recommended that a C/C++ application (or library) have its manifest embedd
   
 -   If you are not doing an incremental build you can directly embed the manifest using a command line similar to the following as a post-build step:  
   
-     **mt.exe –manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**  
+     **mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**  
   
      or  
   
-     **mt.exe –manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**  
+     **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**  
   
      (1 for an EXE, 2 for a DLL.)  
   

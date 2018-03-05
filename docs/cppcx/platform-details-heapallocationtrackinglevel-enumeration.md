@@ -2,23 +2,20 @@
 title: "Platform::Details::HeapAllocationTrackingLevel Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Details::HeapAllocationTrackingLevel"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Details::HeapAllocationTrackingLevel Enumeration"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Details::HeapAllocationTrackingLevel"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Details::HeapAllocationTrackingLevel Enumeration"]
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Details::HeapAllocationTrackingLevel Enumeration
 This enumeration is intended for internal use only, and is not intended to be used for development.  
@@ -30,13 +27,13 @@ This enumeration is intended for internal use only, and is not intended to be us
 enumm class HeapAllocationTrackingLevel;  
 ```  
   
-## Remarks  
+### Remarks  
  This enumeration is provided solely for completeness because it can be inspected with browsers.  
   
 ## Inheritance Hierarchy  
  `Platform`  
   
-## Requirements  
+### Requirements  
  **Metadata:** platform.winmd  
   
  **Namespace:** Platform::Details  

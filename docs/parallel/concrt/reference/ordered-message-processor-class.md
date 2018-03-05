@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::ordered_message_processor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ordered_message_processor class"
+ms.topic: "reference"
+f1_keywords: ["ordered_message_processor", "AGENTS/concurrency::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::async_send", "AGENTS/concurrency::ordered_message_processor::initialize", "AGENTS/concurrency::ordered_message_processor::initialize_batched_processing", "AGENTS/concurrency::ordered_message_processor::sync_send", "AGENTS/concurrency::ordered_message_processor::wait", "AGENTS/concurrency::ordered_message_processor::process_incoming_message"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ordered_message_processor class"]
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ordered_message_processor Class
 An `ordered_message_processor` is a `message_processor` that allows message blocks to process messages in the order they were received.  
@@ -60,24 +43,24 @@ class ordered_message_processor : public message_processor<T>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ordered_message_processor Constructor](#ctor)|Constructs an `ordered_message_processor` object.|  
+|[ordered_message_processor](#ctor)|Constructs an `ordered_message_processor` object.|  
 |[~ordered_message_processor Destructor](#dtor)|Destroys the `ordered_message_processor` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[async_send Method](#async_send)|Asynchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::async_send](message-processor-class.md#async_send).)|  
-|[initialize Method](#initialize)|Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.|  
-|[initialize_batched_processing Method](#initialize_batched_processing)|Initialize batched message processing|  
-|[sync_send Method](#sync_send)|Synchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::sync_send](message-processor-class.md#sync_send).)|  
-|[wait Method](#wait)|A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block. (Overrides [message_processor::wait](message-processor-class.md#wait).)|  
+|[async_send](#async_send)|Asynchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::async_send](message-processor-class.md#async_send).)|  
+|[initialize](#initialize)|Initializes the `ordered_message_processor` object with the appropriate callback function, scheduler and schedule group.|  
+|[initialize_batched_processing](#initialize_batched_processing)|Initialize batched message processing|  
+|[sync_send](#sync_send)|Synchronously queues up messages and starts a processing task, if this has not been done already. (Overrides [message_processor::sync_send](message-processor-class.md#sync_send).)|  
+|[wait](#wait)|A processor-specific spin wait used in destructors of message blocks to make sure that all asynchronous processing tasks have time to finish before destroying the block. (Overrides [message_processor::wait](message-processor-class.md#wait).)|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[process_incoming_message Method](#process_incoming_message)|The processing function that is called asynchronously. It dequeues messages and begins processing them. (Overrides [message_processor::process_incoming_message](message-processor-class.md#process_incoming_message).)|  
+|[process_incoming_message](#process_incoming_message)|The processing function that is called asynchronously. It dequeues messages and begins processing them. (Overrides [message_processor::process_incoming_message](message-processor-class.md#process_incoming_message).)|  
   
 ## Inheritance Hierarchy  
  [message_processor](message-processor-class.md)  

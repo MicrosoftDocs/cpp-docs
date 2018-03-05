@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.method.idlattrib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add Method Wizard [C++]"
-  - "IDL attributes, Add Method Wizard"
+f1_keywords: ["vc.codewiz.method.idlattrib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add Method Wizard [C++]", "IDL attributes, Add Method Wizard"]
 ms.assetid: f80c3bc1-b515-4d6c-83ee-98c2c21ba902
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IDL Attributes, Add Method Wizard
 Use this page of the Add Method Wizard to specify any interface definition language (IDL) settings for the method.  

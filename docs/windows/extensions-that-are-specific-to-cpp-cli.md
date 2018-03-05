@@ -1,37 +1,22 @@
 ---
-title: "Extensions That Are Specific to C++-CLI | Microsoft Docs"
+title: "Extensions That Are Specific to C++/CLI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 81e3fd32-6c8f-490b-9190-a6dc291545c8
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Extensions That Are Specific to C++/CLI
-The following language features, which are explained in this section of the documentation, apply only to [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+The following language features, which are explained in this section of the documentation, apply only to C++/CLI.  
   
  [__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)  
   

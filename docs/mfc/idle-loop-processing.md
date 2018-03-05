@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, background processing"
-  - "PeekMessage method, elsewhere than message loop"
-  - "PeekMessage method"
-  - "MFC, messages"
-  - "messages, loops"
-  - "OnIdle method"
-  - "processing, background"
-  - "idle loop processing"
-  - "idle processing"
-  - "threading [MFC], alternatives to multithreading"
-  - "processing, during idle loop"
-  - "processing"
-  - "background processing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, background processing", "PeekMessage method [MFC], elsewhere than message loop", "PeekMessage method [MFC]", "MFC, messages", "messages [MFC], loops", "OnIdle method [MFC]", "processing [MFC], background", "idle loop processing [MFC]", "idle processing [MFC]", "threading [MFC], alternatives to multithreading", "processing, during idle loop", "processing [MFC]", "background processing [MFC]"]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Idle Loop Processing
 Many applications perform lengthy processing "in the background." Sometimes performance considerations dictate using multithreading for such work. Threads involve extra development overhead, so they are not recommended for simple tasks like the idle-time work that MFC does in the [OnIdle](../mfc/reference/cwinthread-class.md#onidle) function. This article focuses on idle processing. For more information about multithreading, see [Multithreading Topics](../parallel/multithreading-support-for-older-code-visual-cpp.md).  

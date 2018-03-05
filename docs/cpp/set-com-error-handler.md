@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_set_com_error_handler function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_set_com_error_handler function"]
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _set_com_error_handler
 **Microsoft Specific**  
@@ -105,9 +89,9 @@ Exception raised: Unable to establish the connection!
 ```  
   
 ## Requirements  
- **Header:** comdef.h  
+ **Header:** \<comdef.h>  
   
- **Lib:** If the “wchar_t is Native Type” compiler option is on, use comsuppw.lib or comsuppwd.lib. If “wchar_t is Native Type” is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
+ **Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
 ## See Also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

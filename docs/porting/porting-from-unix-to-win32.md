@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "APIs [C++], porting to Win32"
-  - "Windows API [C++], migrating from UNIX"
-  - "migration [C++]"
-  - "UNIX [C++], porting to Win32"
-  - "porting to Win32 [C++], from UNIX"
-  - "porting to Win32 [C++]"
-  - "Win32 applications [C++], migrating from UNIX"
+dev_langs: ["C++"]
+helpviewer_keywords: ["APIs [C++], porting to Win32", "Windows API [C++], migrating from UNIX", "migration [C++]", "UNIX [C++], porting to Win32", "porting to Win32 [C++], from UNIX", "porting to Win32 [C++]", "Win32 applications [C++], migrating from UNIX"]
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Porting from UNIX to Win32
 When migrating applications from UNIX to Windows, you have several options:  
@@ -55,11 +33,11 @@ When migrating applications from UNIX to Windows, you have several options:
 ### UNIX Migration Guides  
  The UNIX Custom Application Migration Guide provides technical help on code migration from UNIX to the Win32 environment.  
   
- [http://go.microsoft.com/fwlink/?LinkId=95428](http://go.microsoft.com/fwlink/?LinkId=95428)  
+ [http://go.microsoft.com/fwlink/p/?linkid=95428](http://go.microsoft.com/fwlink/p/?linkid=95428)  
   
  The Unix Migration Project Guide supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration. The Guide may be downloaded from:  
   
- [http://go.microsoft.com/fwlink/?linkid=20012](http://go.microsoft.com/fwlink/?linkid=20012)  
+ [http://go.microsoft.com/fwlink/p/?linkid=20012](http://go.microsoft.com/fwlink/p/?linkid=20012)  
   
 ### Microsoft Windows Services for UNIX (SFU)  
  Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.  

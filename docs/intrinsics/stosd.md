@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__stosd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stosd instruction"
-  - "rep stosd instruction"
-  - "__stosd intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__stosd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stosd instruction", "rep stosd instruction", "__stosd intrinsic"]
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __stosd
 **Microsoft Specific**  
@@ -104,7 +84,7 @@ printf_s( "%u %u %u %u",
 0 99999 99999 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_NOTIFY"
-  - "WM_NOTIFY"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_NOTIFY_EX message"
-  - "TN061"
-  - "ON_NOTIFY message"
-  - "ON_NOTIFY_EX_RANGE message"
-  - "ON_NOTIFY_RANGE message"
-  - "notification messages"
-  - "WM_NOTIFY message"
+f1_keywords: ["ON_NOTIFY", "WM_NOTIFY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_NOTIFY_EX message [MFC]", "TN061", "ON_NOTIFY message [MFC]", "ON_NOTIFY_EX_RANGE message [MFC]", "ON_NOTIFY_RANGE message [MFC]", "notification messages", "WM_NOTIFY message"]
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # TN061: ON_NOTIFY and WM_NOTIFY Messages
 > [!NOTE]

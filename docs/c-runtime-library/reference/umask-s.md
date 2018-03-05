@@ -4,56 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_umask_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_umask_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "unmask_s"
-  - "_umask_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "masks, file-permission-setting"
-  - "_umask_s function"
-  - "masks"
-  - "file permissions [C++]"
-  - "umask_s function"
-  - "files [C++], permission settings for"
+f1_keywords: ["unmask_s", "_umask_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["masks, file-permission-setting", "_umask_s function", "masks", "file permissions [C++]", "umask_s function", "files [C++], permission settings for"]
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _umask_s
 Sets the default file-permission mask. A version of [_umask](../../c-runtime-library/reference/umask.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -87,7 +52,7 @@ errno_t _umask_s(
  If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_umask_s` returns `EINVAL` and sets `errno` to `EINVAL`.  
   
 ## Remarks  
- The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`*.* The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
+ The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
   
  The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:  
   
@@ -145,9 +110,6 @@ int main( void )
 ```Output  
 Oldmask = 0x0000  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::File::SetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.setattributes.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

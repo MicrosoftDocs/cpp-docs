@@ -2,23 +2,20 @@
 title: "Platform::IDisposable Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::IDisposable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::IDisposable Interface"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::IDisposable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::IDisposable Interface"]
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::IDisposable Interface
 Used to release unmanaged resources.  
@@ -34,7 +31,7 @@ public interface class IDisposable
   
  **VersionAttribute**(NTDDI_WIN8)  
   
-## Members  
+### Members  
  The IDisposable interface inherits from the IUnknown interface. IDisposable also has the following types of members:  
   
  **Methods**  
@@ -45,9 +42,9 @@ public interface class IDisposable
 |------------|-----------------|  
 |Dispose|Used to release unmanaged resources.|  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform

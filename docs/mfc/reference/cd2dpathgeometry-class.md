@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxrendertarget/CD2DPathGeometry"
-  - "CD2DPathGeometry"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DPathGeometry class"
+f1_keywords: ["CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::Attach", "AFXRENDERTARGET/CD2DPathGeometry::Create", "AFXRENDERTARGET/CD2DPathGeometry::Destroy", "AFXRENDERTARGET/CD2DPathGeometry::Detach", "AFXRENDERTARGET/CD2DPathGeometry::GetFigureCount", "AFXRENDERTARGET/CD2DPathGeometry::GetSegmentCount", "AFXRENDERTARGET/CD2DPathGeometry::Open", "AFXRENDERTARGET/CD2DPathGeometry::Stream", "AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DPathGeometry [MFC], CD2DPathGeometry", "CD2DPathGeometry [MFC], Attach", "CD2DPathGeometry [MFC], Create", "CD2DPathGeometry [MFC], Destroy", "CD2DPathGeometry [MFC], Detach", "CD2DPathGeometry [MFC], GetFigureCount", "CD2DPathGeometry [MFC], GetSegmentCount", "CD2DPathGeometry [MFC], Open", "CD2DPathGeometry [MFC], Stream", "CD2DPathGeometry [MFC], m_pPathGeometry"]
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CD2DPathGeometry Class
 A wrapper for ID2D1PathGeometry.  

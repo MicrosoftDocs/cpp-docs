@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "PRJ0029"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PRJ0029"
+f1_keywords: ["PRJ0029"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PRJ0029"]
 ms.assetid: f02c09c6-09f3-4d44-8cd4-9a25336be1ea
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0029
 The 'Outputs' property for the project-level custom build step is not set. The custom build step will be skipped.  

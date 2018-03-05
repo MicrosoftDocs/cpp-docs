@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/ge"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Ge compiler option [C++]"
-  - "enable stack probes"
-  - "/Ge compiler option [C++]"
-  - "stack, stack probes"
-  - "stack probes"
-  - "stack checking calls"
-  - "Ge compiler option [C++]"
+f1_keywords: ["/ge"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Ge compiler option [C++]", "enable stack probes", "/Ge compiler option [C++]", "stack, stack probes", "stack probes", "stack checking calls", "Ge compiler option [C++]"]
 ms.assetid: 4b54deae-4e3c-4bfa-95f3-ba23590f7258
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Ge (Enable Stack Probes)
 Activates stack probes for every function call that requires storage for local variables.  
@@ -54,7 +31,7 @@ Activates stack probes for every function call that requires storage for local v
   
  [/Gs (Control Stack Checking Calls)](../../build/reference/gs-control-stack-checking-calls.md) has the same effect.  
   
- **/Ge** is deprecated; the compiler will generate stack checking. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ **/Ge** is deprecated; beginning in Visual Studio 2005, the compiler automatically generates stack checking. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

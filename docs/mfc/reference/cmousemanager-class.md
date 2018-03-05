@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMouseManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMouseManager class"
+f1_keywords: ["CMouseManager", "AFXMOUSEMANAGER/CMouseManager", "AFXMOUSEMANAGER/CMouseManager::AddView", "AFXMOUSEMANAGER/CMouseManager::GetViewDblClickCommand", "AFXMOUSEMANAGER/CMouseManager::GetViewIconId", "AFXMOUSEMANAGER/CMouseManager::GetViewIdByName", "AFXMOUSEMANAGER/CMouseManager::GetViewNames", "AFXMOUSEMANAGER/CMouseManager::LoadState", "AFXMOUSEMANAGER/CMouseManager::SaveState", "AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMouseManager [MFC], AddView", "CMouseManager [MFC], GetViewDblClickCommand", "CMouseManager [MFC], GetViewIconId", "CMouseManager [MFC], GetViewIdByName", "CMouseManager [MFC], GetViewNames", "CMouseManager [MFC], LoadState", "CMouseManager [MFC], SaveState", "CMouseManager [MFC], SetCommandForDblClk"]
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMouseManager Class
 Allows a user to associate different commands with a particular [CView](../../mfc/reference/cview-class.md) object when the user double-clicks inside that view.  
@@ -235,7 +218,7 @@ void SetCommandForDblClk(
  The command identifier.  
   
 ### Remarks  
- In order to associate a custom command with a view, you must first register the view by using [CMouseManager::AddView](#addview). The `AddView` method requires a view identifier as an input parameter. Once you register a view, you can call `CMouseManager::SetCommandForDblClk` with the same view identifier input parameter that you supplied to `AddView`. Thereafter, when the user double-clicks the mouse in the registered view, the application will execute the command indicated by `uiCmd.` To support the custom mouse behavior, you will also need to customize the view registered with the mouse manager. For more information about custom mouse behavior, see [Keyboard and Mouse Customization]--brokenlink--(../mouse-and-keyboard-customization.md).  
+ In order to associate a custom command with a view, you must first register the view by using [CMouseManager::AddView](#addview). The `AddView` method requires a view identifier as an input parameter. Once you register a view, you can call `CMouseManager::SetCommandForDblClk` with the same view identifier input parameter that you supplied to `AddView`. Thereafter, when the user double-clicks the mouse in the registered view, the application will execute the command indicated by `uiCmd.` To support the custom mouse behavior, you will also need to customize the view registered with the mouse manager. For more information about custom mouse behavior, see [Keyboard and Mouse Customization](../keyboard-and-mouse-customization.md).  
   
  If `uiCmd` is set to 0, the specified view is no longer associated with a command.  
   

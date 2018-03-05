@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std.binder2nd"
-  - "binder2nd"
-  - "xfunctional/std::binder2nd"
-  - "std::binder2nd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binder2nd class"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::binder2nd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binder2nd class"]
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # binder2nd Class
 A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.  
@@ -80,7 +60,7 @@ protected:
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func* in **op**, and a copy of `right` in **value**. It defines its member function `operator()` as returning **op**( `left`, **value**).  
   
- If `Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd_function) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   

@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_printf_s_l"
-  - "wprintf_s"
-  - "_wprintf_s_l"
-  - "printf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_printf_s_l", "wprintf_s", "_wprintf_s_l", "printf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wprintf_s"
-  - "printf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wprintf_s function"
-  - "tprintf_s function"
-  - "_tprintf_s function"
-  - "printf_s_l function"
-  - "printf_s function"
-  - "_printf_s_l function"
-  - "printf function, format specification fields"
-  - "printf function, using"
-  - "_tprintf_s_l function"
-  - "wprintf_s_l function"
-  - "formatted text [C++]"
-  - "tprintf_s_l function"
-  - "_wprintf_s_l function"
+f1_keywords: ["wprintf_s", "printf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wprintf_s function", "tprintf_s function", "_tprintf_s function", "printf_s_l function", "printf_s function", "_printf_s_l function", "printf function, format specification fields", "printf function, using", "_tprintf_s_l function", "wprintf_s_l function", "formatted text [C++]", "tprintf_s_l function", "_wprintf_s_l function"]
 ms.assetid: 044ebb2e-5cc1-445d-bb4c-f084b405615b
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 Prints formatted output to the standard output stream. These versions of [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -110,7 +66,7 @@ int _wprintf_s_l(
   
  For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- `printf_s` and`fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
+ `printf_s` and `fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
   
  `wprintf_s` is a wide-character version of `printf_s`; `format` is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.  
   
@@ -148,7 +104,7 @@ Line one
 |`printf_s`, `_printf_s_l`|\<stdio.h>|  
 |`wprintf_s`, `_wprintf_s_l`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -227,12 +183,6 @@ Real numbers:
 Address as:   0012FF78  
   
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Console::Write](https://msdn.microsoft.com/en-us/library/system.console.write.aspx)  
-  
--   [System::Console::WriteLine](https://msdn.microsoft.com/en-us/library/system.console.writeline.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

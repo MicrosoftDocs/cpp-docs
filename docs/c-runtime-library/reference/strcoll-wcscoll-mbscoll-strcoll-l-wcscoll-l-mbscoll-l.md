@@ -4,79 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcscoll"
-  - "_mbscoll"
-  - "_mbscoll_l"
-  - "strcoll"
-  - "_strcoll_l"
-  - "_wcscoll_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcscoll", "_mbscoll", "_mbscoll_l", "strcoll", "_strcoll_l", "_wcscoll_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcscoll"
-  - "_mbscoll"
-  - "_tcscoll"
-  - "_ftcscoll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "code pages, using for string comparisons"
-  - "mbscoll function"
-  - "wcscoll_l function"
-  - "ftcscoll function"
-  - "wcscoll function"
-  - "_strcoll_l function"
-  - "tcscoll function"
-  - "_ftcscoll function"
-  - "_tcscoll function"
-  - "_wcscoll_l function"
-  - "_mbscoll function"
-  - "strcoll_l function"
-  - "strcoll functions"
-  - "strings [C++], comparing by code page"
+f1_keywords: ["wcscoll", "_mbscoll", "_tcscoll", "_ftcscoll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["code pages, using for string comparisons", "mbscoll function", "wcscoll_l function", "ftcscoll function", "wcscoll function", "_strcoll_l function", "tcscoll function", "_ftcscoll function", "_tcscoll function", "_wcscoll_l function", "_mbscoll function", "strcoll_l function", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 Compares strings by using the current locale or a specified LC_COLLATE conversion-state category.  
   
 > [!IMPORTANT]
->  `_mbscoll` and `_mbscoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscoll` and `_mbscoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -118,7 +66,7 @@ int _mbscoll_l(
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of `string1` to `string2`*,* as follows.  
+ Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  
@@ -152,9 +100,6 @@ int _mbscoll_l(
 |`_wcscoll_l`|\<wchar.h>, \<string.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
   
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   

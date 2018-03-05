@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::fill"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fill function"
+f1_keywords: ["cliext::fill"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fill function"]
 ms.assetid: eb67241c-9bb3-497e-bec6-639900c60758
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # fill (STL/CLR)
 Assigns the same new value to every element in a specified range.  
@@ -45,7 +28,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `fill`. For more information, see [fill](http://msdn.microsoft.com/Library/b1f09e99-a9d2-4e4c-97f8-aaccc20b4420).  
+ This function behaves the same as the C++ Standard Library function `fill`. For more information, see [fill](../standard-library/algorithm-functions.md#fill).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

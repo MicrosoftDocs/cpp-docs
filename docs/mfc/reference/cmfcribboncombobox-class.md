@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonComboBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonComboBox class"
+f1_keywords: ["CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::AddItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::DeleteItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::EnableDropDownListResize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::FindItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCount", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCurSel", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetDropDownHeight", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetIntermediateSize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItemData", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::HasEditBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::IsResizeDropDownList", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::OnSelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::RemoveAllItems", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SetDropDownHeight"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonComboBox [MFC], CMFCRibbonComboBox", "CMFCRibbonComboBox [MFC], AddItem", "CMFCRibbonComboBox [MFC], DeleteItem", "CMFCRibbonComboBox [MFC], EnableDropDownListResize", "CMFCRibbonComboBox [MFC], FindItem", "CMFCRibbonComboBox [MFC], GetCount", "CMFCRibbonComboBox [MFC], GetCurSel", "CMFCRibbonComboBox [MFC], GetDropDownHeight", "CMFCRibbonComboBox [MFC], GetIntermediateSize", "CMFCRibbonComboBox [MFC], GetItem", "CMFCRibbonComboBox [MFC], GetItemData", "CMFCRibbonComboBox [MFC], HasEditBox", "CMFCRibbonComboBox [MFC], IsResizeDropDownList", "CMFCRibbonComboBox [MFC], OnSelectItem", "CMFCRibbonComboBox [MFC], RemoveAllItems", "CMFCRibbonComboBox [MFC], SelectItem", "CMFCRibbonComboBox [MFC], SetDropDownHeight"]
 ms.assetid: 9b29a6a4-cf17-4152-9b13-0bf90784b30d
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonComboBox Class
 The `CMFCRibbonComboBox` class implements a combo box control that you can add to a ribbon bar, a ribbon panel, or a ribbon popup menu.  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows messages [C++], handling in MFC"
-  - "control-notification messages"
-  - "messages [C++], receiving"
-  - "messages [C++], MFC"
-  - "MFC [C++], messages"
-  - "messages [C++], sending"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Message Sending and Receiving
 Consider the sending part of the process and how the framework responds.  

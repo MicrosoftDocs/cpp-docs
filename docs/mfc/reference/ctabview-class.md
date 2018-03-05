@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTabView class"
+f1_keywords: ["CTabView", "AFXTABVIEW/CTabView", "AFXTABVIEW/CTabView::AddView", "AFXTABVIEW/CTabView::FindTab", "AFXTABVIEW/CTabView::GetActiveView", "AFXTABVIEW/CTabView::GetTabControl", "AFXTABVIEW/CTabView::RemoveView", "AFXTABVIEW/CTabView::SetActiveView", "AFXTABVIEW/CTabView::IsScrollBar", "AFXTABVIEW/CTabView::OnActivateView"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTabView [MFC], AddView", "CTabView [MFC], FindTab", "CTabView [MFC], GetActiveView", "CTabView [MFC], GetTabControl", "CTabView [MFC], RemoveView", "CTabView [MFC], SetActiveView", "CTabView [MFC], IsScrollBar", "CTabView [MFC], OnActivateView"]
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTabView Class
 The `CTabView` class simplifies the use of the tab control class ( [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)) in applications that use MFC's document/view architecture.  

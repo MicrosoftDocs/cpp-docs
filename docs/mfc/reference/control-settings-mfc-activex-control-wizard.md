@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.ctl.settings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX Control Wizard, control settings"
+f1_keywords: ["vc.appwiz.mfc.ctl.settings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX Control Wizard, control settings"]
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Control Settings, MFC ActiveX Control Wizard
 Use this page of the wizard to specify how you want the control to behave. For example, you can base the control on standard Windows control types, optimize its behavior and appearance, or indicate that the control can act as a container for other controls.  
@@ -72,7 +55,7 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Specifies that the control has the standard Windows **About** dialog box, which displays version number and copyright information.  
   
 > [!NOTE]
->  How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help. For more information about how to integrate help, on the [MSDN Library](http://go.microsoft.com/fwlink/linkid=150542) website, search for "Adding Context-Sensitive Help to an MFC ActiveX Control".  
+>  How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help. For more information about how to integrate help, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Adding Context-Sensitive Help to an MFC ActiveX Control".  
   
  When you select this option, it inserts the `AboutBox` control method in the project control class (C*ProjName*Ctrl.cpp) and adds AboutBox to the project dispatch map. By default, this option is selected.  
   
@@ -95,7 +78,7 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Enables the control to process mouse pointer notifications, whether control is active or not. When you select this option, the `pointerInactive` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). For more information about how to use this option, see [Providing Mouse Interaction While Inactive](../../mfc/providing-mouse-interaction-while-inactive.md).  
   
  **Acts as a simple frame control**  
- Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/linkid=150542) website, search for "Simple Frame Site Containment".  
+ Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".  
   
  **Loads properties asynchronously**  
  Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSocketFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "networks [C++], archive"
-  - "serialization [C++], network"
-  - "networks [C++], serializing to"
-  - "CSocketFile class"
-  - "archives [C++], network"
-  - "SOCKET handle"
+f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSocketFile [MFC], CSocketFile"]
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSocketFile Class
 A `CFile` object used for sending and receiving data across a network via Windows Sockets.  

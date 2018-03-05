@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__stosw"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stosw instruction"
-  - "__stosw intrinsic"
-  - "rep stosw instruction"
+ms.topic: "reference"
+f1_keywords: ["__stosw"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stosw instruction", "__stosw intrinsic", "rep stosw instruction"]
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __stosw
 **Microsoft Specific**  
@@ -99,7 +79,7 @@ int main()
 0 128 128 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

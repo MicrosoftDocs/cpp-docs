@@ -4,50 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MkTypLib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clients, Automation"
-  - "dispatch class"
-  - "Automation clients, type libraries"
-  - "type libraries, Automation clients"
-  - "ODL (Object Description Language)"
-  - "ODL files"
-  - "classes [C++], dispatch"
-  - "MkTypLib tool"
-  - ".odl files"
+f1_keywords: ["MkTypLib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clients, Automation", "dispatch class [MFC]", "Automation clients, type libraries", "type libraries, Automation clients", "ODL (Object Description Language)", "ODL files", "classes [MFC], dispatch", "MkTypLib tool", ".odl files"]
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Automation Clients: Using Type Libraries
 Automation clients must have information about server objects' properties and methods if the clients are to manipulate the servers' objects. Properties have data types; methods often return values and accept parameters. The client requires information about the data types of all of these in order to statically bind to the server object type.  
   
  This type information can be made known in several ways. The recommended way is to create a type library.  
   
- For information on [MkTypLib](http://msdn.microsoft.com/library/windows/desktop/aa366797), see the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For information on [MkTypLib](http://msdn.microsoft.com/library/windows/desktop/aa366797), see the Windows SDK.  
   
  Visual C++ can read a type-library file and create a dispatch class derived from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md). An object of that class has properties and operations duplicating those of the server object. Your application calls this object's properties and operations, and functionality inherited from `COleDispatchDriver` routes these calls to the OLE system, which in turn routes them to the server object.  
   

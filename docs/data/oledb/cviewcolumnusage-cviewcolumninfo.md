@@ -4,63 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "m_szTableSchema"
-  - "m_szCatalog"
-  - "m_nColumnPropID"
-  - "COLUMN_GUID"
-  - "m_szColumnName"
-  - "m_szTableCatalog"
-  - "CViewColumnInfo"
-  - "m_szSchema"
-  - "CViewColumnUsage"
-  - "COLUMN_PROPID"
-  - "m_guidColumn"
-  - "m_szTableName"
-  - "m_szName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_PROPID"
-  - "m_szSchema"
-  - "m_szTableSchema"
-  - "TABLE_CATALOG"
-  - "m_szCatalog"
-  - "TABLE_NAME"
-  - "m_nColumnPropID"
-  - "CViewColumnInfo parameter class"
-  - "TABLE_SCHEMA"
-  - "m_szColumnName"
-  - "COLUMN_NAME"
-  - "m_szName"
-  - "m_szTableCatalog"
-  - "CViewColumnUsage typedef class"
-  - "m_szTableName"
-  - "COLUMN_GUID"
-  - "m_guidColumn"
+ms.topic: "reference"
+f1_keywords: ["m_szTableSchema", "m_szCatalog", "m_nColumnPropID", "COLUMN_GUID", "m_szColumnName", "m_szTableCatalog", "CViewColumnInfo", "m_szSchema", "CViewColumnUsage", "COLUMN_PROPID", "m_guidColumn", "m_szTableName", "m_szName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_PROPID", "m_szSchema", "m_szTableSchema", "TABLE_CATALOG", "m_szCatalog", "TABLE_NAME", "m_nColumnPropID", "CViewColumnInfo parameter class", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szName", "m_szTableCatalog", "CViewColumnUsage typedef class", "m_szTableName", "COLUMN_GUID", "m_guidColumn"]
 ms.assetid: 4af14d6b-b224-4d72-b035-9d3aaacde32f
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CViewColumnUsage, CViewColumnInfo
 Call the typedef class **CViewColumnUsage** to implement its parameter class **CViewColumnInfo**.  

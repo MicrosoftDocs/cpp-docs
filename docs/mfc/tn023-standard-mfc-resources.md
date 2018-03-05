@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.resources"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [MFC]"
-  - "TN023"
-  - "standard resources"
+f1_keywords: ["vc.mfc.resources"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN023: Standard MFC Resources
 This note describes the standard resources provided with and needed by the MFC library.  

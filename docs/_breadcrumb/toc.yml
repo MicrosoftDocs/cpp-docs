@@ -21,14 +21,14 @@
         topicHref: /cpp/c-cpp-preprocessor-reference
       - name: C Runtime Library
         tocHref: /cpp/c-runtime-library/
-        topicHref: /cpp/c-runtime-library/c-runtime-library-reference
+        topicHref: /cpp/c-runtime-library/c-run-time-library-reference
         items:
         - name: Reference
           tocHref: /cpp/c-runtime-library/reference/
-          topicHref: /cpp/c-runtime-library/reference/alphabetical-function-reference
+          topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
       - name: C++ Standard Library
         tocHref: /cpp/standard-library/
-        topicHref: /cpp/standard-library/cpp-standard-library 
+        topicHref: /cpp/standard-library/cpp-standard-library-reference 
       - name: Windows
         tocHref: /cpp/windows/
         topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
@@ -53,7 +53,7 @@
           items:
           - name: Reference
             tocHref: /cpp/atl-mfc-shared/reference/
-            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-atl-and-mfc
+            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-mfc-and-atl
         - name: C++/CX
           tocHref: /cpp/cppcx/
           topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
@@ -62,13 +62,13 @@
         topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
       - name: .NET
         tocHref: /cpp/dotnet/
-        topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli
+        topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
       - name: Parallel Programming
         tocHref: /cpp/parallel/
         topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
       - name: Data Access
         tocHref: /cpp/data/
-        topicHref: /cpp/data/data-access
+        topicHref: /cpp/data/
         items:
         - name: OLEDB
           tocHref: /cpp/data/oledb/
@@ -76,9 +76,6 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-        - name: ADO and RDO
-          tocHref: /cpp/data/ado-rdo/
-          topicHref: /cpp/data/ado-rdo/data-bound-controls-ado-and-rdo
       - name: IDE and Tools
         tocHref: /cpp/ide/
         topicHref: /cpp/ide/ide-and-tools-for-visual-cpp-development
@@ -89,19 +86,7 @@
         - name: Building
           tocHref: /cpp/build/
           tocHref: /cpp/build/building-c-cpp-programs
-        - name: Compiler Intrinsics and Assembly Language
-          tocHref: /cpp/intrinsics/
-          topicHref: /cpp/intrinsics/c-cpp-intrinsics
           items:
-          - name: ARM
-            tocHref: /cpp/assembler/arm/
-            topicHref: /cpp/assembler/arm/arm-assembler-reference
-          - name: Inline assembler
-            tocHref: /cpp/assembler/inline/
-            topicHref: /cpp/assembler/inline-assembler-reference
-          - name: MASM
-            tocHref: /cpp/assembler/masm/
-            topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
           - name: Build Reference
             tocHref: /cpp/build/reference/
             topicHref: /cpp/build/reference/c-cpp-building-reference
@@ -115,12 +100,25 @@
             - name: Other Tools
               tocHref: /cpp/error-messages/tool-errors/
               topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
+        - name: Compiler Intrinsics and Assembly Language
+          tocHref: /cpp/intrinsics/
+          topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
+          items:
+          - name: ARM
+            tocHref: /cpp/assembler/arm/
+            topicHref: /cpp/assembler/arm/arm-assembler-reference
+          - name: Inline assembler
+            tocHref: /cpp/assembler/inline/
+            topicHref: /cpp/assembler/inline-assembler
+          - name: MASM
+            tocHref: /cpp/assembler/masm/
+            topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
       - name: Porting and Upgrading
         tocHref: /cpp/porting/
         topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
       - name: Text and Strings
         tocHref: /cpp/text/
-        topicHref: /cpp/text/text-and-strings
+        topicHref: /cpp/text/text-and-strings-in-visual-cpp
       - name: Security
         tocHref: /cpp/security
         topicHref: /cpp/security/security-best-practices-for-cpp

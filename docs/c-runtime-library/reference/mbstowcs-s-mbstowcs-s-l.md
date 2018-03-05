@@ -4,55 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbstowcs_s_l"
-  - "mbstowcs_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbstowcs_s_l", "mbstowcs_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbstowcs_s_l"
-  - "mbstowcs_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbstowcs_s_l function"
-  - "mbstowcs_s function"
-  - "mbstowcs_s_l function"
+f1_keywords: ["_mbstowcs_s_l", "mbstowcs_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbstowcs_s_l function", "mbstowcs_s function", "mbstowcs_s_l function"]
 ms.assetid: 2fbda953-6918-498f-b440-3e7b21ed65a4
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # mbstowcs_s, _mbstowcs_s_l
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. Versions of [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -136,9 +102,9 @@ errno_t _mbstowcs_s_l(
   
  If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `mbstowcs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.  
   
- If `mbstowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*``pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `wcstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `wcstr` is `NULL`, `count` is ignored, and `sizeInWords` must be 0.  
+ If `mbstowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `wcstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `wcstr` is `NULL`, `count` is ignored, and `sizeInWords` must be 0.  
   
- If `mbstowcs_s` encounters an invalid multibyte character, it puts 0 in `*``pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
+ If `mbstowcs_s` encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
   
  If the sequences pointed to by `mbstr` and `wcstr` overlap, the behavior of `mbstowcs_s` is undefined.  
   
@@ -157,9 +123,6 @@ errno_t _mbstowcs_s_l(
 |`_mbstowcs_s_l`|\<stdlib.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

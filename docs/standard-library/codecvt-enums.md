@@ -5,14 +5,16 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["codecvt/std::codecvt_mode"]
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
+helpviewer_keywords: ["std::codecvt_mode"]
 caps.latest.revision: 10
 manager: "ghogen"
 ---
 # &lt;codecvt&gt; enums
   
-##  <a name="codecvt_mode_enumeration"></a>  codecvt_mode Enumeration  
+##  <a name="codecvt_mode"></a>  codecvt_mode Enumeration  
  Specifies configuration information for [locale](../standard-library/locale-class.md) facets.  
   
 ```  

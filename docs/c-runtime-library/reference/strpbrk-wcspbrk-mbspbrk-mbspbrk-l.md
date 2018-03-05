@@ -4,79 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbspbrk"
-  - "wcspbrk"
-  - "_mbspbrk_l"
-  - "strpbrk"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbspbrk", "wcspbrk", "_mbspbrk_l", "strpbrk"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fstrpbrk"
-  - "_mbspbrk"
-  - "strpbrk"
-  - "_tcspbrk"
-  - "_ftcspbrk"
-  - "wcspbrk"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fstrpbrk function"
-  - "_ftcspbrk function"
-  - "_mbspbrk_l function"
-  - "strpbrk function"
-  - "_fstrpbrk function"
-  - "mbspbrk function"
-  - "characters [C++], scanning strings"
-  - "_tcspbrk function"
-  - "wcspbrk function"
-  - "ftcspbrk function"
-  - "character sets [C++], scanning strings for characters"
-  - "strings [C++], scanning"
-  - "tcspbrk function"
-  - "_mbspbrk function"
-  - "mbspbrk_l function"
+f1_keywords: ["_fstrpbrk", "_mbspbrk", "strpbrk", "_tcspbrk", "_ftcspbrk", "wcspbrk"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fstrpbrk function", "_ftcspbrk function", "_mbspbrk_l function", "strpbrk function", "_fstrpbrk function", "mbspbrk function", "characters [C++], scanning strings", "_tcspbrk function", "wcspbrk function", "ftcspbrk function", "character sets [C++], scanning strings for characters", "strings [C++], scanning", "tcspbrk function", "_mbspbrk function", "mbspbrk_l function"]
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 Scans strings for characters in specified character sets.  
   
 > [!IMPORTANT]
->  `_mbspbrk` and `_mbspbrk_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbspbrk` and `_mbspbrk_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -156,7 +104,7 @@ const unsigned char *_mbspbrk_l(
   
  `_mbspbrk` is similar to `_mbscspn` except that `_mbspbrk` returns a pointer rather than a value of type [size_t](../../c-runtime-library/standard-types.md).  
   
- In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro _CONST_CORRECT_OVERLOADS is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol _CONST_RETURN.  
+ In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol `_CONST_RETURN`.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the version with the `_l` suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -210,9 +158,6 @@ int main( void )
   
 4: 5 pigs  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::IndexOfAny](https://msdn.microsoft.com/en-us/library/system.string.indexofany.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

@@ -4,89 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsnset_s_l"
-  - "_strnset_s"
-  - "_mbsnset_s"
-  - "_strnset_s_l"
-  - "_wcsnset_s_l"
-  - "_wcsnset_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsnset_s_l", "_strnset_s", "_mbsnset_s", "_strnset_s_l", "_wcsnset_s_l", "_wcsnset_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbsnset_s_l"
-  - "wcsnset_s"
-  - "_tcsnset_s_l"
-  - "_wcsnset_s"
-  - "_mbsnset_s"
-  - "_wcsnset_s_l"
-  - "_strnset_s_l"
-  - "strnset_s_l"
-  - "_tcsnset_s"
-  - "_strnset_s"
-  - "strnset_s"
-  - "mbsnset_s_l"
-  - "mbsnset_s"
-  - "wcsnset_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsnset_s function"
-  - "mbsnset_s_l function"
-  - "initializing characters"
-  - "wcsnset_s function"
-  - "mbsnset_s function"
-  - "_tcsnset_s_l function"
-  - "_strnset_s_l function"
-  - "_mbsnset_s function"
-  - "strnset_s_l function"
-  - "_tcsnset_s function"
-  - "_strnset_s function"
-  - "tcsnset_s_l function"
-  - "_mbsnset_s_l function"
-  - "strnset_s function"
-  - "_wcsnset_s function"
+f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_tcsnset_s", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsnset_s function", "mbsnset_s_l function", "initializing characters", "wcsnset_s function", "mbsnset_s function", "_tcsnset_s_l function", "_strnset_s_l function", "_mbsnset_s function", "strnset_s_l function", "_tcsnset_s function", "_strnset_s function", "tcsnset_s_l function", "_mbsnset_s_l function", "strnset_s function", "_wcsnset_s function"]
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 Initializes characters of a string to a given character. These versions of [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  `_mbsnset_s` and `_mbsnset_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnset_s` and `_mbsnset_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -158,7 +96,7 @@ errno_t _mbsnset_s_l(
   
  `_wcsnset_s` and `_mbsnset_s` are wide-character and multibyte-character versions of `_strnset_s`. The string argument of `_wcsnset_s` is a wide-character string; that of `_mbsnset_s` is amultibyte-character string. These three functions behave identically otherwise.  
   
- The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the`_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).  
   
@@ -202,9 +140,6 @@ int main( void )
 Before: This is a test  
 After:  **** is a test  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Replace](https://msdn.microsoft.com/en-us/library/system.string.replace.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

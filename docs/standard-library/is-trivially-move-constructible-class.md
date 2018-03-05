@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_trivially_move_constructible"
-  - "std.is_trivially_move_constructible"
-  - "std::is_trivially_move_constructible"
-  - "type_traits/std::is_trivially_move_constructible"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_trivially_move_constructible"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_trivially_move_constructible"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_trivially_move_constructible"]
 ms.assetid: 740bdec7-65e5-47b3-b94f-a2479ceac3ec
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_trivially_move_constructible Class
 Tests if type has trivial move constructor.  

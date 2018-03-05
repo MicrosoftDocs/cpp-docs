@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Parallel Patterns Library, practices to avoid"
-  - "practices to avoid, Parallel Patterns Library"
-  - "best practices, Parallel Patterns Library"
-  - "Parallel Patterns Library, best practices"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Parallel Patterns Library, practices to avoid", "practices to avoid, Parallel Patterns Library", "best practices, Parallel Patterns Library", "Parallel Patterns Library, best practices"]
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Best Practices in the Parallel Patterns Library
 This document describes how best to make effective use of the Parallel Patterns Library (PPL). The PPL provides general-purpose containers, objects, and algorithms for performing fine-grained parallelism.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IProvideClassInfo2"
-  - "ATL.IProvideClassInfo2Impl"
-  - "IProvideClassInfo2Impl"
-  - "ATL::IProvideClassInfo2Impl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IProvideClassInfo2Impl class"
-  - "IProvideClassInfo2 ATL implementation"
-  - "class information, ATL"
+f1_keywords: ["IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo", "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID", "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IProvideClassInfo2Impl class", "IProvideClassInfo2 ATL implementation", "class information, ATL"]
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IProvideClassInfo2Impl Class
 This class provides a default implementation of the [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) and [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) methods.  
@@ -114,7 +92,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ```  
   
 ### Remarks  
- See [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) in the Windows SDK.  
   
 ##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  Retrieves the GUID for the object's outgoing dispinterface.  
@@ -126,7 +104,7 @@ STDMETHOD(GetGUID)(
 ```  
   
 ### Remarks  
- See [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) in the Windows SDK.  
   
 ##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  The constructor.  

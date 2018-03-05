@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ReleaseAndGetAddressOf method"
+f1_keywords: ["client/Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ReleaseAndGetAddressOf method"]
 ms.assetid: 3751dcb4-d50e-432c-89e4-e736be34d434
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ReleaseAndGetAddressOf Method
 Releases the interface associated with this ComPtr and then retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface that was released.  

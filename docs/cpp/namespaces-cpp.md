@@ -1,42 +1,21 @@
 ---
 title: "Namespaces (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "namespace_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "namespaces [C++], C++"
-  - "namespaces [C++]"
-  - "namespaces [C++], global"
-  - "global namespace"
-  - "Visual C++, namespaces"
+f1_keywords: ["namespace_CPP", "using_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["namespaces [C++], C++", "namespaces [C++]", "namespaces [C++], global", "global namespace", "Visual C++, namespaces"]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Namespaces (C++)
 A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries. All identifiers at namespace scope are visible to one another without qualification. Identifiers outside the namespace can access the members by using the fully qualified name for each identifier, for example `std::vector<std::string> vec;`, or else by a [using Declaration](../cpp/using-declaration.md) for a single identifier (`using std::string`), or a [using Directive](../cpp/namespaces-cpp.md#using_directives) for all the identifiers in the namespace (`using namespace std;`). Code in header files should always use the fully qualified namespace name.  
@@ -66,7 +45,7 @@ ContosoData::Func(mgr);
  Use a using declaration to bring one identifier into scope:  
   
 ```cpp  
-using WidgetsUnlimited::ObjectManager;  
+using ContosoData::ObjectManager;  
 ObjectManager mgr;  
 mgr.DoSomething();  
   
@@ -75,7 +54,8 @@ mgr.DoSomething();
  Use a using directive to bring everything in the namespace into scope:  
   
 ```cpp  
-using namespace WidgetsUnlimited;  
+using namespace ContosoData;
+  
 ObjectManager mgr;  
 mgr.DoSomething();  
 Func(mgr);  
@@ -104,15 +84,15 @@ namespace ContosoDataServer
 }  
 ```  
   
- Function implementations in contosodata.cpp should use the fully qualified name, even if you place a using directive at the top of the file:  
+ Function implementations in contosodata.cpp should use the fully qualified name, even if you place a `using` directive at the top of the file:  
   
 ```cpp  
 #include "contosodata.h"  
 using namespace ContosoDataServer;   
   
-void ContosoDataServer::Foo()  
+void ContosoDataServer::Foo() // use fully-qualified name here  
 {  
-   //no qualification because using directive above  
+   // no qualification needed for Bar()  
    Bar();   
 }  
   

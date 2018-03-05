@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_variant_t.operator="
-  - "_variant_t::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator=, variant"
-  - "operator =, variant"
-  - "= operator, with specific Visual C++ objects"
+f1_keywords: ["_variant_t::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator= [C++], variant", "operator = [C++], variant", "= operator [C++], with specific Visual C++ objects"]
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _variant_t::operator =
 **Microsoft Specific**  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CW2CWEX"
-  - "ATL::CW2CWEX"
-  - "ATL.CW2CWEX"
-  - "ATL.CW2CWEX<t_nBufferLength>"
-  - "ATL::CW2CWEX<t_nBufferLength>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CW2CWEX class"
+f1_keywords: ["CW2CWEX", "ATLCONV/ATL::CW2CWEX", "ATLCONV/ATL::CW2CWEX::CW2CWEX", "ATLCONV/ATL::CW2CWEX::m_psz"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CW2CWEX class"]
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CW2CWEX Class
 This class is used by the string conversion macros `CW2CTEX` and `CT2CWEX`, and the typedef `CW2W`.  
@@ -91,10 +70,10 @@ class CW2CWEX
   
 - `CW2W`  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "build events [C++], troubleshooting"
-  - "builds [C++], build events"
-  - "troubleshooting [C++], builds"
-  - "build steps [C++], troubleshooting"
-  - "events [C++], build"
-  - "builds [C++], troubleshooting"
-  - "custom build steps [C++], troubleshooting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["build events [C++], troubleshooting", "builds [C++], build events", "troubleshooting [C++], builds", "build steps [C++], troubleshooting", "events [C++], build", "builds [C++], troubleshooting", "custom build steps [C++], troubleshooting"]
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Troubleshooting Build Customizations
 If your custom build steps or events are not behaving as you expect, there are several things you can do to try to understand what is going wrong.  

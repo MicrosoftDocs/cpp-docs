@@ -4,51 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDBSchemaRowsetImpl::SetRestrictions"
-  - "SetRestrictions"
-  - "IDBSchemaRowsetImpl.SetRestrictions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetRestrictions method"
+ms.topic: "reference"
+f1_keywords: ["IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetRestrictions method"]
 ms.assetid: 707d5065-b853-4d38-9b67-3066b4d3b279
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::SetRestrictions
 Specifies which restrictions you support on a particular schema rowset.  
   
 ## Syntax  
   
-```  
-  
-      void SetRestrictions(  
-   ULONG cRestrictions,  
-   GUID* /* rguidSchema */,  
-   ULONG* rgRestrictions   
-);  
+```
+void SetRestrictions(ULONG cRestrictions,  
+  GUID* /* rguidSchema */,  
+   ULONG* rgRestrictions);  
 ```  
   
 #### Parameters  
@@ -59,7 +36,7 @@ Specifies which restrictions you support on a particular schema rowset.
  [in] An array of the GUIDs of the schema rowsets for which to fetch restrictions. Each array element contains the GUID of one schema rowset (for example, `DBSCHEMA_TABLES`).  
   
  `rgRestrictions`  
- [in] An array of length `cRestrictions` of restriction values to be set. Each element corresponds to the restrictions on the schema rowset identified by the GUID. If a schema rowset is not supported by the provider, the element is set to zero. Otherwise, the **ULONG** value contains a bit mask that represents the restrictions supported on that schema rowset. For more information on which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] An array of length `cRestrictions` of restriction values to be set. Each element corresponds to the restrictions on the schema rowset identified by the GUID. If a schema rowset is not supported by the provider, the element is set to zero. Otherwise, the **ULONG** value contains a bit mask that represents the restrictions supported on that schema rowset. For more information on which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ## Remarks  
  The **IDBSchemaRowset** object calls `SetRestrictions` to determine which restrictions you support on a particular schema rowset (it is called by [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) through an upcasted pointer). Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned.  
@@ -70,7 +47,7 @@ Specifies which restrictions you support on a particular schema rowset.
   
  For an example of an provider that supports schema rowsets, see the [UpdatePV](../../visual-cpp-samples.md) sample.  
   
- For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ## Requirements  
  **Header:** atldb.h  

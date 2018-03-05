@@ -1,21 +1,21 @@
 ---
-title: "Compiler and Linker options (C++-CX) | Microsoft Docs"
+title: "Compiler and Linker options (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
 caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
-# Compiler and Linker options (C++-CX)
-An environment variable, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-md.md)] compiler options, and linker options support the building of apps for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+# Compiler and Linker options (C++/CX)
+An environment variable, C++/CX compiler options, and linker options support the building of apps for the Windows Runtime.  
   
 ## Library path  
  The %LIBPATH% environment variable specifies the default path to search for .winmd files.  
@@ -24,10 +24,10 @@ An environment variable, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-
   
 |Option|Description|  
 |------------|-----------------|  
-|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Enables [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] language extensions.<br /><br /> The `nostdlib` parameter prevents the compiler from using the standard, predefined search path to find assembly and .winmd files.<br /><br /> The **/ZW** compiler option implicitly specifies the following compiler options:<br /><br /> -   [/FI](../build/reference/fi-name-atlde.md) vccorlib.h, which forces inclusion of the vccorlib.h header file that defines many types that are required by the compiler.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd, which forces inclusion of the Windows.winmd metadata file that's provided by the operating system and defines many types in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].<br />-   **/FU** Platform.winmd, which forces inclusion of the Platform.winmd metadata file that's provided by the compiler and defines most types in the Platform family of namespaces.|  
+|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Enables Windows Runtime language extensions.<br /><br /> The `nostdlib` parameter prevents the compiler from using the standard, predefined search path to find assembly and .winmd files.<br /><br /> The **/ZW** compiler option implicitly specifies the following compiler options:<br /><br /> -   **/FI** vccorlib.h, which forces inclusion of the vccorlib.h header file that defines many types that are required by the compiler.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd, which forces inclusion of the Windows.winmd metadata file that's provided by the operating system and defines many types in the Windows Runtime.<br />-   **/FU** Platform.winmd, which forces inclusion of the Platform.winmd metadata file that's provided by the compiler and defines most types in the Platform family of namespaces.|  
 |[/AI](../build/reference/ai-specify-metadata-directories.md) *dir*|Adds a directory, which is specified by the *dir* parameter, to the search path that the compiler uses to find assembly and .winmd files.|  
 |**/FU**  *file*|Forces the inclusion of the specified module, or .winmd file. That is, you don't have to specify `#using`*file* in your source code. The compiler automatically forces the inclusion of its own Windows metadata file, Platform.winmd.|  
-|/D "WINAPI_FAMILY=2"|Creates a definition that enables the use of a subset of the Win32 SDK that's compatible with the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].|  
+|/D "WINAPI_FAMILY=2"|Creates a definition that enables the use of a subset of the Win32 SDK that's compatible with the Windows Runtime.|  
   
 ## Linker options  
   
@@ -40,8 +40,8 @@ An environment variable, [!INCLUDE[cppwrt_short](../cppcx/includes/cppwrt-short-
 |/WINMDKEYCONTAINER:*name*|Specifies a key container to sign an assembly. The *name* parameter corresponds to the key container that's used to sign the metadata file.|  
 |/WINMDKEYFILE:*filename*|Specifies a key or a key pair to sign the assembly. The *filename* parameter corresponds to the key that's used to sign the metadata file.|  
   
-## Remarks  
- When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a [!INCLUDE[win8_appname_long](../cppcx/includes/win8-appname-long-md.md)] app will cause a compile-time error.  
+### Remarks  
+ When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a Universal Windows Platform app will cause a compile-time error.  
   
 ## See Also  
  [Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)

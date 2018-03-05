@@ -4,53 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.AssemblerListingLocation"
-  - "VC.Project.VCCLCompilerTool.ConfigureASMListing"
-  - "VC.Project.VCCLWCECompilerTool.AssemblerOutput"
-  - "VC.Project.VCCLCompilerTool.AssemblerListingLocation"
-  - "/fa"
-  - "VC.Project.VCCLCompilerTool.AssemblerOutput"
-  - "VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FA compiler option [C++]"
-  - "/FA compiler option [C++]"
-  - "-FA compiler option [C++]"
-  - "listing file type"
-  - "assembly-only listing"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.AssemblerListingLocation", "VC.Project.VCCLCompilerTool.ConfigureASMListing", "VC.Project.VCCLWCECompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.AssemblerListingLocation", "/fa", "VC.Project.VCCLCompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FA compiler option [C++]", "/FA compiler option [C++]", "-FA compiler option [C++]", "listing file type", "assembly-only listing"]
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /FA, /Fa (Listing File)
 Creates a listing file containing assembler code.  
   
 ## Syntax  
   
-`/FA`[`c`\][`s`\][`u`]  
-`/Fa`_pathname_  
+> **/FA**[**c**\][**s**\][**u**]  
+> **/Fa**_pathname_  
   
 ## Remarks  
 The `/FA` compiler option generates an assembler listing file for each translation unit in the compilation, which generally corresponds to a C or C++ source file. By default, only assembler is included in the listing file, which is encoded as ANSI. The optional `c`, `s`, and `u` arguments to `/FA` control whether machine code or source code are output together with the assembler listing, and whether the listing is encoded as UTF-8.  

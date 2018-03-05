@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4486"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4486"
+f1_keywords: ["C4486"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4486"]
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4486
 'function' : a private virtual method of a ref class or value class should be marked 'sealed'  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDragListBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag list box [C++]"
-  - "dragging list items"
-  - "CDragListBox class"
-  - "Windows [C++], list boxes"
-  - "list boxes"
+f1_keywords: ["CDragListBox", "AFXCMN/CDragListBox", "AFXCMN/CDragListBox::CDragListBox", "AFXCMN/CDragListBox::BeginDrag", "AFXCMN/CDragListBox::CancelDrag", "AFXCMN/CDragListBox::Dragging", "AFXCMN/CDragListBox::DrawInsert", "AFXCMN/CDragListBox::Dropped", "AFXCMN/CDragListBox::ItemFromPt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDragListBox [MFC], CDragListBox", "CDragListBox [MFC], BeginDrag", "CDragListBox [MFC], CancelDrag", "CDragListBox [MFC], Dragging", "CDragListBox [MFC], DrawInsert", "CDragListBox [MFC], Dropped", "CDragListBox [MFC], ItemFromPt"]
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDragListBox Class
 In addition to providing the functionality of a Windows list box, the `CDragListBox` class allows the user to move list box items, such as filenames, within the list box.  
@@ -69,7 +48,7 @@ class CDragListBox : public CListBox
 ## Remarks  
  List boxes with this capability allow users to order the items in a list in whatever manner is most useful to them. By default, the list box will move the item to the new location in the list. However, `CDragListBox` objects can be customized to copy items instead of moving them.  
   
- The list box control associated with the `CDragListBox` class must not have the **LBS_SORT** or the **LBS_MULTIPLESELECT** style. For a description of list box styles, see [List-Box Styles](../../mfc/reference/list-box-styles.md).  
+ The list box control associated with the `CDragListBox` class must not have the **LBS_SORT** or the **LBS_MULTIPLESELECT** style. For a description of list box styles, see [List-Box Styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles).  
   
  To use a drag list box in an existing dialog box of your application, add a list box control to your dialog template using the dialog editor and then assign a member variable (of Category `Control` and Variable Type `CDragListBox`) corresponding to the list box control in your dialog template.  
   

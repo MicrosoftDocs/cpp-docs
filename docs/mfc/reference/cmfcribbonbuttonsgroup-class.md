@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonButtonsGroup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonButtonsGroup class"
+f1_keywords: ["CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButtons", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetCount", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetImageSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetRegularSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::HasImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::OnDrawImage", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonButtonsGroup [MFC], CMFCRibbonButtonsGroup", "CMFCRibbonButtonsGroup [MFC], AddButton", "CMFCRibbonButtonsGroup [MFC], AddButtons", "CMFCRibbonButtonsGroup [MFC], GetButton", "CMFCRibbonButtonsGroup [MFC], GetCount", "CMFCRibbonButtonsGroup [MFC], GetImageSize", "CMFCRibbonButtonsGroup [MFC], GetRegularSize", "CMFCRibbonButtonsGroup [MFC], HasImages", "CMFCRibbonButtonsGroup [MFC], OnDrawImage", "CMFCRibbonButtonsGroup [MFC], RemoveAll", "CMFCRibbonButtonsGroup [MFC], SetImages", "CMFCRibbonButtonsGroup [MFC], SetParentCategory"]
 ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonButtonsGroup Class
 The `CMFCRibbonButtonsGroup` class allows you to organize a set of ribbon buttons into a group. All buttons in the group are directly adjacent to each other horizontally and enclosed in a border.  

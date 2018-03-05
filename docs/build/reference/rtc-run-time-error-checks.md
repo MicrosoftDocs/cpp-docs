@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/rtc"
-  - "VC.Project.VCCLCompilerTool.SmallerTypeCheck"
-  - "VC.Project.VCCLCompilerTool.UninitializedVariableCheck"
-  - "VC.Project.VCCLCompilerTool.StackFrameCheck"
-  - "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/RTCs compiler option [C++]"
-  - "-RTC1 compiler option [C++]"
-  - "run-time errors, error checks"
-  - "-RTCu compiler option [C++]"
-  - "/RTC1 compiler option [C++]"
-  - "/RTCc compiler option [C++]"
-  - "/RTCu compiler option [C++]"
-  - "__MSVC_RUNTIME_CHECKS macro"
-  - "-RTCs compiler option [C++]"
-  - "RTCs compiler option"
-  - "RTC1 compiler option"
-  - "run-time errors, run-time checks"
-  - "run-time checks, /RTC option"
-  - "RTCu compiler option"
-  - "RTCc compiler option"
-  - "-RTCc compiler option [C++]"
+f1_keywords: ["/rtc", "VC.Project.VCCLCompilerTool.SmallerTypeCheck", "VC.Project.VCCLCompilerTool.UninitializedVariableCheck", "VC.Project.VCCLCompilerTool.StackFrameCheck", "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/RTCs compiler option [C++]", "-RTC1 compiler option [C++]", "run-time errors, error checks", "-RTCu compiler option [C++]", "/RTC1 compiler option [C++]", "/RTCc compiler option [C++]", "/RTCu compiler option [C++]", "__MSVC_RUNTIME_CHECKS macro", "-RTCs compiler option [C++]", "RTCs compiler option", "RTC1 compiler option", "run-time errors, run-time checks", "run-time checks, /RTC option", "RTCu compiler option", "RTCc compiler option", "-RTCc compiler option [C++]"]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /RTC (Run-Time Error Checks)
 Used to enable and disable the run-time error checks feature, in conjunction with the [runtime_checks](../../preprocessor/runtime-checks.md) pragma.  
@@ -104,7 +67,7 @@ int main() {
   
  However, consider the following code fragment:  
   
-```  
+```cpp  
 int a, *b, c;  
 if ( 1 )  
 b = &a;  
@@ -114,7 +77,7 @@ c = a;  // No run-time error with /RTCu
  If a variable could have been initialized, it will not be reported at run time by **/RTC**`u`. For example, after a variable is aliased through a pointer, the compiler will not track the variable and report uninitialized uses. In effect, you can initialize a variable by taking its address. The & operator works like an assignment operator in this situation.  
   
 ## Remarks  
- Run-time error checks are a way for you to find problems in your running code; for more information, see [How to: Use Native Run-Time Checks](http://msdn.microsoft.com/Library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1).  
+ Run-time error checks are a way for you to find problems in your running code; for more information, see [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks).  
   
  If you compile your program at the command line using any of the **/RTC** compiler options, any pragma [optimize](../../preprocessor/optimize.md) instructions in your code will silently fail. This is because run-time error checks are not valid in a release (optimized) build.  
   
@@ -139,4 +102,4 @@ c = a;  // No run-time error with /RTCu
 ## See Also  
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [How to: Use Native Run-Time Checks](http://msdn.microsoft.com/Library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1)
+ [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)

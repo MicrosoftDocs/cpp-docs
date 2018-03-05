@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStdioFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStdioFile class"
-  - "I/O [MFC], stream"
-  - "stream I/O"
+f1_keywords: ["CStdioFile", "AFX/CStdioFile", "AFX/CStdioFile::CStdioFile", "AFX/CStdioFile::Open", "AFX/CStdioFile::ReadString", "AFX/CStdioFile::Seek", "AFX/CStdioFile::WriteString", "AFX/CStdioFile::m_pStream"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStdioFile [MFC], CStdioFile", "CStdioFile [MFC], Open", "CStdioFile [MFC], ReadString", "CStdioFile [MFC], Seek", "CStdioFile [MFC], WriteString", "CStdioFile [MFC], m_pStream"]
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStdioFile Class
 Represents a C run-time stream file as opened by the run-time function [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
@@ -71,7 +52,7 @@ class CStdioFile : public CFile
 ## Remarks  
  Stream files are buffered and can be opened in either text mode (the default) or binary mode.  
   
- Text mode provides special processing for carriage return–linefeed pairs. When you write a newline character (0x0A) to a text-mode `CStdioFile` object, the byte pair (0x0D, 0x0A) is sent to the file. When you read, the byte pair (0x0D, 0x0A) is translated to a single 0x0A byte.  
+ Text mode provides special processing for carriage return-linefeed pairs. When you write a newline character (0x0A) to a text-mode `CStdioFile` object, the byte pair (0x0D, 0x0A) is sent to the file. When you read, the byte pair (0x0D, 0x0A) is translated to a single 0x0A byte.  
   
  The [CFile](../../mfc/reference/cfile-class.md) functions [Duplicate](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) are not supported for `CStdioFile`.  
   
@@ -184,7 +165,7 @@ virtual BOOL Open(
 ### Remarks  
   
 ##  <a name="readstring"></a>  CStdioFile::ReadString  
- Reads text data into a buffer, up to a limit of `nMax`–1 characters, from the file associated with the `CStdioFile` object.  
+ Reads text data into a buffer, up to a limit of `nMax`-1 characters, from the file associated with the `CStdioFile` object.  
   
 ```  
 virtual LPTSTR ReadString(
@@ -208,9 +189,9 @@ virtual BOOL ReadString(CString& rString);
  A pointer to the buffer containing the text data. **NULL** if end-of-file was reached without reading any data; or if boolean, **FALSE** if end-of-file was reached without reading any data.  
   
 ### Remarks  
- Reading is stopped by the first newline character. If, in that case, fewer than `nMax`–1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.  
+ Reading is stopped by the first newline character. If, in that case, fewer than `nMax`-1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.  
   
- [CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return–linefeed pair.  
+ [CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return-linefeed pair.  
   
 > [!NOTE]
 >  The `CString` version of this function removes the `'\n'` if present; the `LPTSTR` version does not.  

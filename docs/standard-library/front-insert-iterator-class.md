@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "iterator/std::front_insert_iterator"
-  - "std::front_insert_iterator"
-  - "std.front_insert_iterator"
-  - "front_insert_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "front_insert_iterator class"
+ms.topic: "reference"
+f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::front_insert_iterator [C++]", "std::front_insert_iterator [C++], container_type", "std::front_insert_iterator [C++], reference"]
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # front_insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the front of a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `front_insert_iterator` class is templatized on the type of container.  
@@ -58,29 +38,29 @@ class front_insert_iterator;
   
 |||  
 |-|-|  
-|[front_insert_iterator](#front_insert_iterator__front_insert_iterator)|Creates an iterator that can insert elements at the front of a specified container object.|  
+|[front_insert_iterator](#front_insert_iterator)|Creates an iterator that can insert elements at the front of a specified container object.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#front_insert_iterator__container_type)|A type that represents the container into which a front insertion is to be made.|  
-|[reference](#front_insert_iterator__reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|  
+|[container_type](#container_type)|A type that represents the container into which a front insertion is to be made.|  
+|[reference](#reference)|A type that provides a reference to an element in a sequence controlled by the associated container.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#front_insert_iterator__operator_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a front insertion.|  
-|[operator++](#front_insert_iterator__operator_add_add)|Increments the `front_insert_iterator` to the next location into which a value may be stored.|  
-|[operator=](#front_insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a front insertion.|  
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a front insertion.|  
+|[operator++](#op_add_add)|Increments the `front_insert_iterator` to the next location into which a value may be stored.|  
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a front insertion.|  
   
 ## Requirements  
  **Header**: \<iterator>  
   
  **Namespace:** std  
   
-##  <a name="front_insert_iterator__container_type"></a>  front_insert_iterator::container_type  
+##  <a name="container_type"></a>  front_insert_iterator::container_type  
  A type that represents the container into which a front insertion is to be made.  
   
 ```  
@@ -120,7 +100,7 @@ The list L2 is: ( 40 10 20 ).
 *\  
 ```  
   
-##  <a name="front_insert_iterator__front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator  
+##  <a name="front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator  
  Creates an iterator that can insert elements at the front of a specified container object.  
   
 ```  
@@ -180,7 +160,7 @@ After the front insertions, the list L is:
 *\  
 ```  
   
-##  <a name="front_insert_iterator__operator_star"></a>  front_insert_iterator::operator*  
+##  <a name="op_star"></a>  front_insert_iterator::operator*  
  Dereferences the insert iterator returning the element it addresses.  
   
 ```  
@@ -238,7 +218,7 @@ After the front insertions, the list L is:
 *\  
 ```  
   
-##  <a name="front_insert_iterator__operator_add_add"></a>  front_insert_iterator::operator++  
+##  <a name="op_add_add"></a>  front_insert_iterator::operator++  
  Increments the `back_insert_iterator` to the next location into which a value may be stored.  
   
 ```  
@@ -286,7 +266,7 @@ The list L1 is: ( 30 20 10 ).
 *\  
 ```  
   
-##  <a name="front_insert_iterator__operator_eq"></a>  front_insert_iterator::operator=  
+##  <a name="op_eq"></a>  front_insert_iterator::operator=  
  Appends (pushes) a value onto the front of the container.  
   
 ```  
@@ -296,7 +276,7 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The value to be assigned to the container.  
   
 ### Return Value  
@@ -344,7 +324,7 @@ The list L1 is: ( 30 20 10 ).
 *\  
 ```  
   
-##  <a name="front_insert_iterator__reference"></a>  front_insert_iterator::reference  
+##  <a name="reference"></a>  front_insert_iterator::reference  
  A type that provides a reference to an element in a sequence controlled by the associated container.  
   
 ```  

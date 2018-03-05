@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.exceptions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, exception handling"
-  - "DAO (Data Access Objects), exceptions"
-  - "OLE exceptions, MFC functions"
-  - "exceptions, processing"
-  - "exception macros"
-  - "termination functions, MFC"
-  - "MFC, exceptions"
-  - "exceptions, MFC throwing functions"
+f1_keywords: ["vc.mfc.macros.exceptions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Exception Processing
 When a program executes, a number of abnormal conditions and errors called "exceptions" can occur. These may include running out of memory, resource allocation errors, and failure to find files.  
@@ -76,6 +52,7 @@ When a program executes, a number of abnormal conditions and errors called "exce
 |-|-|  
 |[AfxThrowArchiveException](#afxthrowarchiveexception)|Throws an archive exception.|  
 |[AfxThrowFileException](#afxthrowfileexception)|Throws a file exception.|  
+|[AfxThrowInvalidArgException](#afxthrowinvalidargexception)|Throws an invalid argument exception.|
 |[AfxThrowMemoryException](#afxthrowmemoryexception)|Throws a memory exception.|  
 |[AfxThrowNotSupportedException](#afxthrownotsupportedexception)|Throws a not-supported exception.|  
 |[AfxThrowResourceException](#afxthrowresourceexception)|Throws a Windows resource-not-found exception.|  
@@ -331,6 +308,26 @@ void AfxThrowFileException(
   
 ### Requirements  
   **Header** afx.h  
+
+## <a name="afxthrowinvalidargexception"></a>  AfxThrowInvalidArgException
+Throws an invalid argument exception.  
+   
+### Syntax    
+```
+void AfxThrowInvalidArgException( );  
+```  
+   
+### Remarks  
+ This function is called when invalid arguments are used.  
+   
+### Requirements  
+ **Header:** afx.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [CInvalidArgException Class](cinvalidargexception-class.md)   
+ [THROW](#throw)
+  
   
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException  
  Throws a memory exception.  
@@ -434,7 +431,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
  Handle to a result code that indicates the reason for the exception.  
   
 ### Remarks  
- The version that takes an `HRESULT` as an argument converts that result code into the corresponding `SCODE`. For more information on `HRESULT` and `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The version that takes an `HRESULT` as an argument converts that result code into the corresponding `SCODE`. For more information on `HRESULT` and `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Requirements  
   **Header** afxdao.h  
@@ -486,7 +483,7 @@ void AfxThrowDBException(
 ### Remarks  
  The framework calls `AfxThrowDBException` when it receives an ODBC **RETCODE** from a call to an ODBC API function and interprets the **RETCODE** as an exceptional condition rather than an expectable error. For example, a data access operation might fail because of a disk read error.  
   
- For information about the **RETCODE** values defined by ODBC, see Chapter 8, "Retrieving Status and Error Information," in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For information about MFC extensions to these codes, see class [CDBException](../../mfc/reference/cdbexception-class.md).  
+ For information about the **RETCODE** values defined by ODBC, see Chapter 8, "Retrieving Status and Error Information," in the Windows SDK. For information about MFC extensions to these codes, see class [CDBException](../../mfc/reference/cdbexception-class.md).  
   
 ### Requirements  
   **Header** afx.h  

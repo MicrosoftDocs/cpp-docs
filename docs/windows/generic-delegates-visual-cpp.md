@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generic delegates"
-  - "delegates, generic [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["generic delegates", "delegates, generic [C++]"]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Delegates (Visual C++)
 You can use generic type parameters with delegates. For more information on delegates, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).  

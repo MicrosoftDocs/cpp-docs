@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::pair::first"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "first member [STL/CLR]"
+f1_keywords: ["cliext::pair::first"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["first member [STL/CLR]"]
 ms.assetid: 0dd2278f-adf9-46df-8ac8-7e8e1a2ef52e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # pair::first (STL/CLR)
 The first wrapped value.  

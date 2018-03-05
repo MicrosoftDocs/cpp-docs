@@ -4,75 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbsspn_l"
-  - "wcsspn"
-  - "strspn"
-  - "_mbsspn"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbsspn_l", "wcsspn", "strspn", "_mbsspn"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ftcsspn"
-  - "wcsspn"
-  - "_mbsspn"
-  - "_tcsspn"
-  - "strspn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wcsspn function"
-  - "strings [C++], searching"
-  - "mbsspn function"
-  - "tcsspn function"
-  - "strspn function"
-  - "substrings, finding"
-  - "_mbsspn_l function"
-  - "ftcsspn function"
-  - "_mbsspn function"
-  - "_ftcsspn function"
-  - "mbsspn_l function"
-  - "_tcsspn function"
+f1_keywords: ["_ftcsspn", "wcsspn", "_mbsspn", "_tcsspn", "strspn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wcsspn function", "strings [C++], searching", "mbsspn function", "tcsspn function", "strspn function", "substrings, finding", "_mbsspn_l function", "ftcsspn function", "_mbsspn function", "_ftcsspn function", "mbsspn_l function", "_tcsspn function"]
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strspn, wcsspn, _mbsspn, _mbsspn_l
 Returns the index of the first character, in a string, that does not belong to a set of characters.  
   
 > [!IMPORTANT]
->  `_mbsspn` and `_mbsspn_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsspn` and `_mbsspn_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -107,12 +59,12 @@ size_t _mbsspn_l(
  Locale to use.  
   
 ## Return Value  
- Returns an integer value specifying the length of the substring in `str` that consists entirely of characters in `strCharSet`*.* If `str` begins with a character not in `strCharSet`*,* the function returns 0.  
+ Returns an integer value specifying the length of the substring in `str` that consists entirely of characters in `strCharSet`. If `str` begins with a character not in `strCharSet`, the function returns 0.  
   
 ## Remarks  
  The `strspn` function returns the index of the first character in `str` that does not belong to the set of characters in `strCharSet`. The search does not include terminating null characters.  
   
- `wcsspn` and `_mbsspn` are wide-character and multibyte-character versions of `strspn`**.** The arguments of `wcsspn` are wide-character strings; those of `_mbsspn` are multibyte-character strings. `_mbsspn` validates its parameters. If `str` or `strCharSet` is`NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbspn` sets `errno` to `EINVAL` and returns 0. `strspn` and `wcsspn` do not validate their parameters. These three functions behave identically otherwise.  
+ `wcsspn` and `_mbsspn` are wide-character and multibyte-character versions of `strspn`. The arguments of `wcsspn` are wide-character strings; those of `_mbsspn` are multibyte-character strings. `_mbsspn` validates its parameters. If `str` or `strCharSet` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbspn` sets `errno` to `EINVAL` and returns 0. `strspn` and `wcsspn` do not validate their parameters. These three functions behave identically otherwise.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -159,9 +111,6 @@ int main( void )
 ```Output  
 The portion of 'cabbage' containing only a, b, or c is 5 bytes long  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Substring](https://msdn.microsoft.com/en-us/library/system.string.substring.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

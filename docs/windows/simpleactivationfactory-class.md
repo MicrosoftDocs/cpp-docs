@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::SimpleActivationFactory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SimpleActivationFactory class"
+f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SimpleActivationFactory class"]
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory Class
 Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.  

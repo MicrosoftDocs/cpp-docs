@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.resource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource script files, opening in text format"
-  - ".rc files, opening in text format"
-  - "rc files, opening in text format"
+f1_keywords: ["vc.editors.resource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resource script files, opening in text format", ".rc files, opening in text format", "rc files, opening in text format"]
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Resource Script File in Text Format
 There may be times when you want to view the contents of your project's resource script (.rc) file without opening a resource, such as a dialog box, inside its specific resource editor. For example, you may want to search for a string across all dialog boxes in the resource file without having to open each one separately.  
@@ -69,7 +50,7 @@ There may be times when you want to view the contents of your project's resource
   
 2.  From the shortcut menu, choose **Open with...**, then select **Source Code (Text) Editor**.  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+
   
  Requirements  
   

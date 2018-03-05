@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dictionary mapping class"
-  - "collection classes, dictionary mapping"
-  - "CMap class"
+f1_keywords: ["CMap", "AFXTEMPL/CMap", "AFXTEMPL/CMap::CPair", "AFXTEMPL/CMap::CMap", "AFXTEMPL/CMap::GetCount", "AFXTEMPL/CMap::GetHashTableSize", "AFXTEMPL/CMap::GetNextAssoc", "AFXTEMPL/CMap::GetSize", "AFXTEMPL/CMap::GetStartPosition", "AFXTEMPL/CMap::InitHashTable", "AFXTEMPL/CMap::IsEmpty", "AFXTEMPL/CMap::Lookup", "AFXTEMPL/CMap::PGetFirstAssoc", "AFXTEMPL/CMap::PGetNextAssoc", "AFXTEMPL/CMap::PLookup", "AFXTEMPL/CMap::RemoveAll", "AFXTEMPL/CMap::RemoveKey", "AFXTEMPL/CMap::SetAt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMap [MFC], CPair", "CMap [MFC], CMap", "CMap [MFC], GetCount", "CMap [MFC], GetHashTableSize", "CMap [MFC], GetNextAssoc", "CMap [MFC], GetSize", "CMap [MFC], GetStartPosition", "CMap [MFC], InitHashTable", "CMap [MFC], IsEmpty", "CMap [MFC], Lookup", "CMap [MFC], PGetFirstAssoc", "CMap [MFC], PGetNextAssoc", "CMap [MFC], PLookup", "CMap [MFC], RemoveAll", "CMap [MFC], RemoveKey", "CMap [MFC], SetAt"]
 ms.assetid: 640a45ab-0993-4def-97ec-42cc78eb10b9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMap Class
 A dictionary collection class that maps unique keys to values.  
@@ -95,14 +76,14 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map â€” operator substitution for `SetAt`.|  
+|[CMap::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|  
   
 ## Remarks  
  Once you have inserted a key-value pair (element) into the map, you can efficiently retrieve or delete the pair using the key to access it. You can also iterate over all the elements in the map.  
   
  A variable of type **POSITION** is used for alternate access to entries. You can use a **POSITION** to "remember" an entry and to iterate through the map. You might think that this iteration is sequential by key value; it is not. The sequence of retrieved elements is indeterminate.  
   
- Certain member functions of this class call global helper functions that must be customized for most uses of the `CMap` class. See [Collection Class Helpers](../../mfc/reference/collection-class-helpers.md) in the Macros and Globals section of the `MFC``Reference`.  
+ Certain member functions of this class call global helper functions that must be customized for most uses of the `CMap` class. See [Collection Class Helpers](../../mfc/reference/collection-class-helpers.md) in the Macros and Globals section of the `MFC Reference`.  
   
  `CMap` overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) to support serialization and dumping of its elements. If a map is stored to an archive using `Serialize`, each map element is serialized in turn. The default implementation of the `SerializeElements` helper function does a bitwise write. For information about serialization of pointer collection items derived from `CObject` or other user defined types, see [How to: Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md).  
   
@@ -145,9 +126,9 @@ CMap(INT_PTR nBlockSize = 10);
   
  The structure is composed of two fields:  
   
-- **keyÂ Â Â** The actual value of the key type.  
+- **key** The actual value of the key type.  
   
-- **valueÂ Â Â** The value of the associated object.  
+- **value** The value of the associated object.  
   
  It is used to store the return values from [CMap::PLookup](#plookup), [CMap::PGetFirstAssoc](#pgetfirstassoc), and [CMap::PGetNextAssoc](#pgetnextassoc).  
   
@@ -250,7 +231,7 @@ POSITION GetStartPosition() const;
  Initializes the hash table.  
   
 ```  
-void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUEÂ);  
+void InitHashTable(UINT hashSize, BOOL  bAllocNow = TRUE);  
 ```  
   
 ### Parameters  
@@ -337,7 +318,8 @@ VALUE& operator[](arg_key key);
  Returns the first entry of the map object.  
   
 ```  
-const CPair* PGetFirstAssoc() const;Â CPair* PGetFirstAssoc();  
+const CPair* PGetFirstAssoc() const; 
+CPair* PGetFirstAssoc();  
 ```  
   
 ### Return Value  
@@ -375,8 +357,9 @@ CPair *PGetNextAssoc(const CPair* pAssocRet);
  Finds the value mapped to a given key.  
   
 ```  
-const CPair* PLookup(ARG_KEY  key) const;
-CPair* PLookup(Â    ARG_KEY  keyÂ);  ```  
+const CPair* PLookup(ARG_KEY key) const;
+CPair* PLookup(ARG_KEY key);  
+```  
   
 ### Parameters  
  `key`  

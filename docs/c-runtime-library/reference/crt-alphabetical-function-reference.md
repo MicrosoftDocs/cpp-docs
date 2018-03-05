@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.tables.runtime"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["vc.tables.runtime"]
+dev_langs: ["C++"]
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRT Alphabetical Function Reference
 The C Run-Time (CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Run-Time Routines by Category](../../c-runtime-library/run-time-routines-by-category.md).  
@@ -1010,6 +994,8 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_get_errno](../../c-runtime-library/reference/get-errno.md)  
   
+ [_get_FMA3_enable](../../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)  
+  
  [_get_fmode](../../c-runtime-library/reference/get-fmode.md)  
   
  [_get_heap_handle](../../c-runtime-library/reference/get-heap-handle.md)  
@@ -1232,9 +1218,9 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_ismbbalnum_l](../../c-runtime-library/reference/ismbbalnum-ismbbalnum-l.md)  
   
- [_ismbbalpha](http://msdn.microsoft.com/en-us/8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0)  
+ [_ismbbalpha](ismbbalpha-ismbbalpha-l.md)  
   
- [_ismbbalpha_l](http://msdn.microsoft.com/en-us/8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0)  
+ [_ismbbalpha_l](ismbbalpha-ismbbalpha-l.md)  
   
  [_ismbbblank](../../c-runtime-library/reference/ismbbblank-ismbbblank-l.md)  
   
@@ -2241,6 +2227,8 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
  [_set_errno](../../c-runtime-library/reference/set-errno.md)  
   
  [_set_error_mode](../../c-runtime-library/reference/set-error-mode.md)  
+  
+ [_set_FMA3_enable](../../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)  
   
  [_set_fmode](../../c-runtime-library/reference/set-fmode.md)  
   

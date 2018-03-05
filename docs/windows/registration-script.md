@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.registration_script"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "registration_script attribute"
+f1_keywords: ["vc-attr.registration_script"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["registration_script attribute"]
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # registration_script
 Executes the specified custom registration script.  
@@ -93,5 +76,4 @@ class CMyClass:public IFace {};
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [rdx](../windows/rdx.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [rdx](../windows/rdx.md)   

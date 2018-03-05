@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfcexplorer.project"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "browsers, Explorer-style applications"
-  - "MFC applications, Windows Explorer-style"
-  - "Explorer-style applications, creating"
+f1_keywords: ["vc.appwiz.mfcexplorer.project"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["browsers [MFC], Explorer-style applications", "MFC applications [MFC], Windows Explorer-style", "Explorer-style applications [MFC], creating"]
 ms.assetid: f843ab5d-2d5d-41ca-88a4-badc0d2f8052
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating a File Explorer-Style MFC Application
 Many Windows system applications use the user interface (UI) for File Explorer. When you start File Explorer, for example, you see an application with a vertical splitter bar dividing the client area. The left side of the client area provides navigation and browsing features, and the right side of the client area shows details pertinent to the selection in the left pane. When a user clicks an item in the left pane, the application repopulates the right pane. In an MDI application, you can use commands on the **View** menu to change the amount of detail shown in the right pane. (In an SDI or multiple top-level document application, you can change the detail using the toolbar buttons only.)  

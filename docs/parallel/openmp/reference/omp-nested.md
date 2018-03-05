@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OMP_NESTED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OMP_NESTED OpenMP environment variable"
+ms.topic: "reference"
+f1_keywords: ["OMP_NESTED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OMP_NESTED OpenMP environment variable"]
 ms.assetid: c43f5287-a548-40d0-bd54-0c6b2b9f9a53
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # OMP_NESTED
 Specifies whether nested parallelism is enabled, unless nested parallelism is enabled or disabled with `omp_set_nested`.  

@@ -1,43 +1,27 @@
 ---
 title: "Function Overloading | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "1/25/2018"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function overloading, about function overloading"
-  - "function overloading"
-  - "declaring functions, overloading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Function Overloading
-C++ allows specification of more than one function of the same name in the same scope. These are called overloaded functions and are described in detail in Overloading. Overloaded functions enable programmers to supply different semantics for a function, depending on the types and number of arguments.  
+C++ allows specification of more than one function of the same name in the same scope. These are called *overloaded* functions. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of arguments. 
   
- For example, a **print** function that takes a string (or **char \***) argument performs very different tasks than one that takes an argument of type **double**. Overloading permits uniform naming and prevents programmers from having to invent names such as `print_sz` or `print_d`. The following table shows what parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.  
+ For example, a **print** function that takes a **std::string**  argument might perform very different tasks than one that takes an argument of type **double**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the type of arguments passed in by the caller.  If you call **print(42.0)** then the **void print(double d)** function will be invoked. If you call **print("hello world")** then the **void print(std::string)** overload will be invoked.
+
+You can overload both member functions and non-member functions. The following table shows what parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.  
   
 ### Overloading Considerations  
   
@@ -49,9 +33,8 @@ C++ allows specification of more than one function of the same name in the same 
 |Presence or absence of ellipsis|Yes|  
 |Use of `typedef` names|No|  
 |Unspecified array bounds|No|  
-|**const** or `volatile` (see below)|Yes|  
-  
- Although functions can be distinguished on the basis of return type, they cannot be overloaded on this basis.  `Const` or `volatile` are only used as a basis for overloading if they are used in a class to apply to the **this** pointer for the class, not the function's return type.  In other words, overloading applies only if the **const** or `volatile` keyword follows the function's argument list in the declaration.  
+|**const** or `volatile`|Yes, when applied to entire function|
+|[ref-qualifier](#ref-qualifier)|Yes|  
   
 ## Example  
  The following example illustrates how overloading can be used.  
@@ -61,68 +44,71 @@ C++ allows specification of more than one function of the same name in the same 
 // compile with: /EHsc  
 #include <iostream>  
 #include <math.h>  
-  
+#include <string>
+
 // Prototype three print functions.  
-int print( char *s );                  // Print a string.  
-int print( double dvalue );            // Print a double.  
-int print( double dvalue, int prec );  // Print a double with a  
-//  given precision.  
-using namespace std;  
-int main( int argc, char *argv[] )  
-{  
-const double d = 893094.2987;  
-if( argc < 2 )  
-    {  
-// These calls to print invoke print( char *s ).  
-print( "This program requires one argument." );  
-print( "The argument specifies the number of" );  
-print( "digits precision for the second number" );  
-print( "printed." );  
-exit(0);  
-    }  
-  
-// Invoke print( double dvalue ).  
-print( d );  
-  
-// Invoke print( double dvalue, int prec ).  
-print( d, atoi( argv[1] ) );  
-}  
-  
+int print(std::string s);             // Print a string.  
+int print(double dvalue);            // Print a double.  
+int print(double dvalue, int prec);  // Print a double with a  
+                                     //  given precision.  
+using namespace std;
+int main(int argc, char *argv[])
+{
+    const double d = 893094.2987;
+    if (argc < 2)
+    {
+        // These calls to print invoke print( char *s ).  
+        print("This program requires one argument.");
+        print("The argument specifies the number of");
+        print("digits precision for the second number");
+        print("printed.");
+        exit(0);
+    }
+
+    // Invoke print( double dvalue ).  
+    print(d);
+
+    // Invoke print( double dvalue, int prec ).  
+    print(d, atoi(argv[1]));
+}
+
 // Print a string.  
-int print( char *s )  
-{  
-cout << s << endl;  
-return cout.good();  
-}  
-  
+int print(string s)
+{
+    cout << s << endl;
+    return cout.good();
+}
+
 // Print a double in default precision.  
-int print( double dvalue )  
-{  
-cout << dvalue << endl;  
-return cout.good();  
-}  
-  
-// Print a double in specified precision.  
+int print(double dvalue)
+{
+    cout << dvalue << endl;
+    return cout.good();
+}
+
+//  Print a double in specified precision.  
 //  Positive numbers for precision indicate how many digits  
 //  precision after the decimal point to show. Negative  
 //  numbers for precision indicate where to round the number  
 //  to the left of the decimal point.  
-int print( double dvalue, int prec )  
-{  
-// Use table-lookup for rounding/truncation.  
-static const double rgPow10[] = {   
-10E-7, 10E-6, 10E-5, 10E-4, 10E-3, 10E-2, 10E-1, 10E0,  
-10E1,  10E2,  10E3,  10E4, 10E5,  10E6  
-    };  
-const int iPowZero = 6;  
-// If precision out of range, just print the number.  
-if( prec < -6 || prec > 7 )  
-return print( dvalue );  
-// Scale, truncate, then rescale.  
-dvalue = floor( dvalue / rgPow10[iPowZero - prec] ) *  
-rgPow10[iPowZero - prec];  
-cout << dvalue << endl;  
-return cout.good();  
+int print(double dvalue, int prec)
+{
+    // Use table-lookup for rounding/truncation.  
+    static const double rgPow10[] = {
+        10E-7, 10E-6, 10E-5, 10E-4, 10E-3, 10E-2, 10E-1, 
+        10E0, 10E1,  10E2,  10E3,  10E4, 10E5,  10E6 };
+    const int iPowZero = 6;
+
+    // If precision out of range, just print the number.  
+	if (prec < -6 || prec > 7)
+	{
+		return print(dvalue);
+	}
+    // Scale, truncate, then rescale.  
+    dvalue = floor(dvalue / rgPow10[iPowZero - prec]) *
+        rgPow10[iPowZero - prec];
+    cout << dvalue << endl;
+    return cout.good();
 }  
 ```  
   
@@ -250,7 +236,7 @@ volatile Over&
   
 -   Sequences of conversions that can be shortened by removing intermediate conversions are not considered.  
   
- The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type `int` to type `unsigned long`using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):  
+ The resultant sequence of conversions, if any, is called the best matching sequence. There are several ways to convert an object of type `int` to type `unsigned long` using standard conversions (described in [Standard Conversions](../cpp/standard-conversions.md)):  
   
 -   Convert from `int` to `long` and then from `long` to `unsigned long`.  
   
@@ -396,7 +382,7 @@ int main()
   
  Unlike other arguments in overloaded functions, no temporary objects are introduced and no conversions are attempted when trying to match the `this` pointer argument.  
   
- When the `– >` member-selection operator is used to access a member function, the `this` pointer argument has a type of `class-name` `* const`. If the members are declared as `const` or `volatile`, the types are `const` `class-name``* const` and `volatile` `class-name` `* const`, respectively.  
+ When the `->` member-selection operator is used to access a member function of class `class_name`, the `this` pointer argument has a type of `class_name * const`. If the members are declared as `const` or `volatile`, the types are `const class_name * const` and `volatile class_name * const`, respectively.  
   
  The `.` member-selection operator works exactly the same way, except that an implicit `&` (address-of) operator is prefixed to the object name. The following example shows how this works:  
   
@@ -408,9 +394,48 @@ obj.name
 (&obj)->name  
 ```  
   
- The left operand of the `–>*` and `.*` (pointer to member) operators are treated the same way as the `.` and `–>` (member-selection) operators with respect to argument matching.  
+ The left operand of the `->*` and `.*` (pointer to member) operators are treated the same way as the `.` and `->` (member-selection) operators with respect to argument matching.  
+
+## <a name="ref-qualifiers"></a> Ref-qualifiers on member functions  
+Ref qualifiers make it possible to overload a member function on the basis of whether the object pointed to by `this` is an rvalue or an lvalue.  This feature can be used to avoid unnecessary copy operations in scenarios where you choose not to provide pointer access to the data. For example, assume class **C** initializes some data in its constructor, and returns a copy of that data in member function **get_data()**. If an object of type **C** is an rvalue that is about to be destroyed, then the compiler will choose the **get_data() &&** overload, which moves the data rather than copy it. 
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class C
+{
+
+public:
+    C() {/*expensive initialization*/}
+    vector<unsigned> get_data() & 
+    { 
+        cout << "lvalue\n";
+        return _data;
+    }
+    vector<unsigned> get_data() && 
+    {
+        cout << "rvalue\n";
+        return std::move(_data);
+    }
+    
+private:
+    vector<unsigned> _data;
+};
+
+int main()
+{
+    C c;
+    auto v = c.get_data(); // get a copy. prints "lvalue".
+    auto v2 = C().get_data(); // get the original. prints "rvalue"
+    return 0;
+}
+
+```
   
-## Restrictions  
+## Restrictions on overloading  
  Several restrictions govern an acceptable set of overloaded functions:  
   
 -   Any two functions in a set of overloaded functions must have different argument lists.  
@@ -421,7 +446,7 @@ obj.name
   
  You can overload **operator new** solely on the basis of return type — specifically, on the basis of the memory-model modifier specified.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 -   Member functions cannot be overloaded solely on the basis of one being static and the other nonstatic.  
   
@@ -453,10 +478,13 @@ obj.name
     void Print( char szToPrint[][9][42] );  
     ```  
   
-## Declaration matching  
+## Overloading, overriding, and hiding
+  
  Any two function declarations of the same name in the same scope can refer to the same function, or to two discrete functions that are overloaded. If the argument lists of the declarations contain arguments of equivalent types (as described in the previous section), the function declarations refer to the same function. Otherwise, they refer to two different functions that are selected using overloading.  
   
- Class scope is strictly observed; therefore, a function declared in a base class is not in the same scope as a function declared in a derived class. If a function in a derived class is declared with the same name as a function in the base class, the derived-class function hides the base-class function instead of causing overloading.  
+ Class scope is strictly observed; therefore, a function declared in a base class is not in the same scope as a function declared in a derived class. If a function in a derived class is declared with the same name as a virtual function in the base class, the derived-class function *overrides* the base-class function. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
+
+If the base class function is not declared as 'virtual', then the derived class function is said to *hide* it. Both overriding and hiding are distinct from overloading.  
   
  Block scope is strictly observed; therefore, a function declared in file scope is not in the same scope as a function declared locally. If a locally declared function has the same name as a function declared in file scope, the locally declared function hides the file-scoped function instead of causing overloading. For example:  
   
@@ -536,7 +564,10 @@ double Account::Deposit( double dAmount, char *szPassword )
    else  
       return 0.0;  
 }  
-```  
+```
+
+
+
   
 ## See Also  
  [Functions (C++)](../cpp/functions-cpp.md)

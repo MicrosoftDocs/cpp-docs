@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__addfsbyte_cpp"
-  - "__addfsdword"
-  - "__addfsword_cpp"
-  - "__addfsbyte"
-  - "__addfsword"
-  - "__addfsdword_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__addfsdword intrinsic"
-  - "__addfsword intrinsic"
-  - "__addfsbyte intrinsic"
+ms.topic: "reference"
+f1_keywords: ["__addfsbyte_cpp", "__addfsdword", "__addfsword_cpp", "__addfsbyte", "__addfsword", "__addfsdword_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__addfsdword intrinsic", "__addfsword intrinsic", "__addfsbyte intrinsic"]
 ms.assetid: 706c70df-6b52-4401-9268-2977ed8ad715
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __addfsbyte, __addfsword, __addfsdword
 **Microsoft Specific**  
@@ -82,7 +57,7 @@ void __addfsdword( 
 ## Remarks  
  These routines are available only as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)   

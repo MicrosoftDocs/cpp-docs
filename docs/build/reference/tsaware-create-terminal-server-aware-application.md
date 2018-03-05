@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/tsaware"
-  - "VC.Project.VCLinkerTool.TerminalServerAware"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Terminal Server"
-  - "/TSAWARE linker option"
-  - "Terminal Server, Terminal Server-aware applications"
-  - "-TSAWARE linker option"
-  - "TSAWARE linker option"
+f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Terminal Server", "/TSAWARE linker option", "Terminal Server, Terminal Server-aware applications", "-TSAWARE linker option", "TSAWARE linker option"]
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /TSAWARE (Create Terminal Server Aware Application)
 ```  
@@ -53,7 +31,7 @@ translation.priority.ht:
   
  If you use /TSAWARE and your application still uses INI files, the files will be shared by all users of the system. If that is acceptable, you can still link your application with /TSAWARE; otherwise you need to use /TSAWARE:NO.  
   
- The /TSAWARE option is enabled by default for Windows 2000 and later, for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
+ The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
   
  /TSAWARE is not valid for drivers, VxDs, or DLLs.  
   

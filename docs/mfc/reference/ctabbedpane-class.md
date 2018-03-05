@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTabbedPane"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTabbedPane class"
+f1_keywords: ["CTabbedPane", "AFXTABBEDPANE/CTabbedPane", "AFXTABBEDPANE/CTabbedPane::DetachPane", "AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor", "AFXTABBEDPANE/CTabbedPane::FloatTab", "AFXTABBEDPANE/CTabbedPane::GetTabArea", "AFXTABBEDPANE/CTabbedPane::GetTabWnd", "AFXTABBEDPANE/CTabbedPane::HasAutoHideMode", "AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom", "AFXTABBEDPANE/CTabbedPane::ResetTabs", "AFXTABBEDPANE/CTabbedPane::SetTabAutoColors", "AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop", "AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTabbedPane [MFC], DetachPane", "CTabbedPane [MFC], EnableTabAutoColor", "CTabbedPane [MFC], FloatTab", "CTabbedPane [MFC], GetTabArea", "CTabbedPane [MFC], GetTabWnd", "CTabbedPane [MFC], HasAutoHideMode", "CTabbedPane [MFC], IsTabLocationBottom", "CTabbedPane [MFC], ResetTabs", "CTabbedPane [MFC], SetTabAutoColors", "CTabbedPane [MFC], m_bTabsAlwaysTop", "CTabbedPane [MFC], m_pTabWndRTC"]
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTabbedPane Class
 Implements the functionality of a pane with detachable tabs.  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -104,9 +89,11 @@ if (!pTabbededBar->Create (_T(""),
  
 pTabbededBar->AddTab (&m_wndClassView);
 pTabbededBar->AddTab (&m_wndResourceView);
-pTabbededBar->AddTab (&m_wndFileView);
+
+pTabbededBar->AddTab (&m_wndFileView);
 pTabbededBar->EnableDocking(CBRS_ALIGN_ANY);
-DockPane(pTabbededBar);
+
+DockPane(pTabbededBar);
 ```  
   
 ## Example  
@@ -153,7 +140,7 @@ pTabbedBar->GetUnderlyingWindow ()->EnableTabDetach (1,
  **Header:** afxTabbedPane.h  
   
 ##  <a name="detachpane"></a>  CTabbedPane::DetachPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DetachPane(
@@ -188,7 +175,7 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
  By default, this option is disabled.  
   
 ##  <a name="floattab"></a>  CTabbedPane::FloatTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL FloatTab(
@@ -230,7 +217,7 @@ virtual void GetTabArea(
  Override this method in a `CTabbedPane`-derived class to change this behavior.  
   
 ##  <a name="gettabwnd"></a>  CTabbedPane::GetTabWnd  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCTabCtrl* GetTabWnd() const;  
@@ -241,7 +228,7 @@ CMFCTabCtrl* GetTabWnd() const;
 ### Remarks  
   
 ##  <a name="hasautohidemode"></a>  CTabbedPane::HasAutoHideMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasAutoHideMode() const;  

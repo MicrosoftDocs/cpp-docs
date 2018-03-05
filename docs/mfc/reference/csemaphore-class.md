@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSemaphore"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronization objects, semaphores"
-  - "CSemaphore class"
-  - "semaphores"
+f1_keywords: ["CSemaphore", "AFXMT/CSemaphore", "AFXMT/CSemaphore::CSemaphore"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSemaphore [MFC], CSemaphore"]
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSemaphore Class
 An object of class `CSemaphore` represents a "semaphore" — a synchronization object that allows a limited number of threads in one or more processes to access a Maintains a count of the number of threads currently accessing a specified resource.  
@@ -95,10 +76,10 @@ CSemaphore(
  The maximum usage count for the semaphore. Must be greater than 0.  
   
  `pstrName`  
- The name of the semaphore. Must be supplied if the semaphore will be accessed across process boundaries. If `NULL,` the object will be unnamed. If the name matches an existing semaphore, the constructor builds a new `CSemaphore` object which references the semaphore of that name. If the name matches an existing synchronization object that is not a semaphore, the construction will fail.  
+ The name of the semaphore. Must be supplied if the semaphore will be accessed across process boundaries. If `NULL`, the object will be unnamed. If the name matches an existing semaphore, the constructor builds a new `CSemaphore` object which references the semaphore of that name. If the name matches an existing synchronization object that is not a semaphore, the construction will fail.  
   
  *lpsaAttributes*  
- Security attributes for the semaphore object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Security attributes for the semaphore object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.  
   
 ### Remarks  
  To access or release a `CSemaphore` object, create a [CMultiLock](../../mfc/reference/cmultilock-class.md) or [CSingleLock](../../mfc/reference/csinglelock-class.md) object and call its [Lock](../../mfc/reference/csinglelock-class.md#lock) and [Unlock](../../mfc/reference/csinglelock-class.md#unlock) member functions.  

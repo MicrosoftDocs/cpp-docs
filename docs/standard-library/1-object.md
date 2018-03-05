@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_1"
-  - "std::_1"
-  - "functional/std::_1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_1 object"
+ms.topic: "reference"
+f1_keywords: ["_1", "std::_1", "functional/std::_1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_1 object"]
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _1 Object
 Placeholders for replaceable arguments.  
@@ -49,7 +30,7 @@ namespace placeholders {
 ```  
   
 ## Remarks  
- The objects `_1, _2, ... _M` are placeholders designating the first, second, ..., Mth argument, respectively in a function call to an object returned by [bind Function](../standard-library/functional-functions.md#bind_function). You use `_N` to specify where the Nth argument should be inserted when the bind expression is evaluated.  
+ The objects `_1, _2, ... _M` are placeholders designating the first, second, ..., Mth argument, respectively in a function call to an object returned by [bind](../standard-library/functional-functions.md#bind). You use `_N` to specify where the Nth argument should be inserted when the bind expression is evaluated.  
   
  In this implementation the value of `M` is 20.  
   
@@ -111,5 +92,5 @@ int main()
  **Namespace:** std  
   
 ## See Also  
- [bind Function](../standard-library/functional-functions.md#bind_function)   
+ [bind](../standard-library/functional-functions.md#bind)   
  [is_placeholder Class](../standard-library/is-placeholder-class.md)

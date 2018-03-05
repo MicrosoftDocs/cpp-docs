@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "result_of"
-  - "std::result_of"
-  - "type_traits/std::result_of"
-  - "std::result_of_t"
-  - "type_traits/std::result_of_t"
-  - "std::result_of::type"
-  - "type_traits/std::result_of::type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "result_of"
+f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::result_of", "std::result_of_t", "std::result_of::type"]
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # result_of Class
 Determines the return type of the callable type that takes the specified argument types.  

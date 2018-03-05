@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "ungetwc"
-  - "ungetc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["ungetwc", "ungetc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ungettc"
-  - "ungetwc"
-  - "ungetc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ungetwc function"
-  - "ungettc function"
-  - "characters, pushing back onto stream"
-  - "_ungettc function"
-  - "ungetc function"
+f1_keywords: ["_ungettc", "ungetwc", "ungetc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ungetwc function", "ungettc function", "characters, pushing back onto stream", "_ungettc function", "ungetc function"]
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ungetc, ungetwc
 Pushes a character back onto the stream.  
@@ -80,12 +44,12 @@ wint_t ungetwc(
  Pointer to `FILE` structure.  
   
 ## Return Value  
- If successful, each of these functions returns the character argument `c`*.* If `c` cannot be pushed back or if no character has been read, the input stream is unchanged and `ungetc` returns `EOF`; `ungetwc` returns `WEOF`. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `EOF` or `WEOF` is returned and `errno` is set to `EINVAL`.  
+ If successful, each of these functions returns the character argument `c`. If `c` cannot be pushed back or if no character has been read, the input stream is unchanged and `ungetc` returns `EOF`; `ungetwc` returns `WEOF`. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `EOF` or `WEOF` is returned and `errno` is set to `EINVAL`.  
   
  For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `ungetc` function pushes the character `c` back onto `stream` and clears the end-of-file indicator. The stream must be open for reading. A subsequent read operation on `stream` starts with `c`*.* An attempt to push `EOF` onto the stream using `ungetc` is ignored.  
+ The `ungetc` function pushes the character `c` back onto `stream` and clears the end-of-file indicator. The stream must be open for reading. A subsequent read operation on `stream` starts with `c`. An attempt to push `EOF` onto the stream using `ungetc` is ignored.  
   
  Characters placed on the stream by `ungetc` may be erased if `fflush`, `fseek`, `fsetpos`, or `rewind` is called before the character is read from the stream. The file-position indicator will have the value it had before the characters were pushed back. The external storage corresponding to the stream is unchanged. On a successful `ungetc` call against a text stream, the file-position indicator is unspecified until all the pushed-back characters are read or discarded. On each successful `ungetc` call against a binary stream, the file-position indicator is decremented; if its value was 0 before a call, the value is undefined after the call.  
   
@@ -108,7 +72,7 @@ wint_t ungetwc(
 |`ungetc`|\<stdio.h>|  
 |`ungetwc`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -143,9 +107,6 @@ int main( void )
       521aNumber = 521  
 Next character in stream = 'a'  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

@@ -4,58 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_tzset"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_tzset"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tzset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tzset function"
-  - "time environment variables"
-  - "environment variables, setting time"
+f1_keywords: ["_tzset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tzset function", "time environment variables", "environment variables, setting time"]
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _tzset
 Sets time environment variables.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see                  [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see                  [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -66,7 +35,7 @@ void _tzset( void );
 ## Remarks  
  The `_tzset` function uses the current setting of the environment variable `TZ` to assign values to three global variables: `_daylight`, `_timezone`, and `_tzname`. These variables are used by the [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md) and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the `time` function to compute UTC from system time. Use the following syntax to set the `TZ` environment variable:  
   
- `set` `TZ`=`tzn`[+ &#124; –]`hh`[`:``mm`[`:``ss`] ][`dzn`]  
+ `set` `TZ`=`tzn`[+ &#124; -]`hh`[`:mm`[`:ss`] ][`dzn`]  
   
  `tzn`  
  Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.  
@@ -94,7 +63,7 @@ set TZ=GST-1GDT
   
  This command uses GST to indicate German standard time, assumes that UTC is one hour behind Germany (or in other words, that Germany is one hour ahead of UTC), and assumes that Germany observes daylight-saving time.  
   
- If the `TZ` value is not set, _`tzset` attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If `_tzset` cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.  
+ If the `TZ` value is not set, `_tzset` attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If `_tzset` cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.  
   
  Based on the `TZ` environment variable value, the following values are assigned to the global variables `_daylight`, `_timezone`, and `_tzname` when `_tzset` is called:  
   
@@ -149,9 +118,6 @@ _daylight = 1
 _timezone = 28800  
 _tzname[0] = Pacific Standard Time  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

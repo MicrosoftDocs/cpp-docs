@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.adding.atl.mfc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, ATL support"
-  - "ATL, MFC projects"
+f1_keywords: ["vc.codewiz.adding.atl.mfc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, ATL support", "ATL, MFC projects"]
 ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Adding ATL Support to Your MFC Project
 If you have already created an MFC-based application, then you can add support for the Active Template Library (ATL) easily by running the Add ATL Support to MFC Project Wizard.  

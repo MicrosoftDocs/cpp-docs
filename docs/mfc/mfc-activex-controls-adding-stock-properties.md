@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BackColor property"
-  - "properties [MFC], adding stock"
-  - "ForeColor property"
-  - "MFC ActiveX controls, properties"
-  - "foreground colors, ActiveX controls"
-  - "foreground colors"
+dev_langs: ["C++"]
+helpviewer_keywords: ["BackColor property [MFC]", "properties [MFC], adding stock", "ForeColor property [MFC]", "MFC ActiveX controls [MFC], properties", "foreground colors, ActiveX controls", "foreground colors [MFC]"]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Properties
 Stock properties differ from custom properties in that they are already implemented by the class `COleControl`. `COleControl` contains predefined member functions that support common properties for the control. Some common properties include the control's caption and the foreground and background colors. For information on other stock properties, see [Stock Properties Supported by the Add Property Wizard](#_core_stock_properties_supported_by_classwizard) later in this article. The dispatch map entries for stock properties are always prefixed by **DISP_STOCKPROP**.  

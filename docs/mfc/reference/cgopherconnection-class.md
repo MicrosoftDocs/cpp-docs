@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CGopherConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "servers, connecting to"
-  - "Internet server, gopher"
-  - "connecting to servers, gopher servers"
-  - "protocols, gopher"
-  - "services, gopher"
-  - "CGopherConnection class"
-  - "gopher protocol"
-  - "gopher server"
-  - "connecting to servers"
-  - "Internet connections, gopher"
+f1_keywords: ["CGopherConnection", "AFXINET/CGopherConnection", "AFXINET/CGopherConnection::CGopherConnection", "AFXINET/CGopherConnection::CreateLocator", "AFXINET/CGopherConnection::GetAttribute", "AFXINET/CGopherConnection::OpenFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGopherConnection [MFC], CGopherConnection", "CGopherConnection [MFC], CreateLocator", "CGopherConnection [MFC], GetAttribute", "CGopherConnection [MFC], OpenFile"]
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CGopherConnection Class
 Manages your connection to a gopher Internet server.  
@@ -170,7 +144,7 @@ static CGopherLocator CreateLocator(
  A pointer to the selector string to be sent to the gopher server in order to retrieve an item. `pstrSelectorString` can be **NULL**.  
   
  *dwGopherType*  
- This specifies whether `pstrSelectorString` refers to a directory or document, and whether the request is gopher or gopher+. See the attributes for the structure [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This specifies whether `pstrSelectorString` refers to a directory or document, and whether the request is gopher or gopher+. See the attributes for the structure [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) in the Windows SDK.  
   
  `pstrLocator`  
  A pointer to a string identifying the file to open. Generally, this string is returned from a call to [CGopherFileFind::GetLocator](../../mfc/reference/cgopherfilefind-class.md#getlocator).  

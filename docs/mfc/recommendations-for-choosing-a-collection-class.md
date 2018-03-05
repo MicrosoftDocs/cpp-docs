@@ -4,46 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "type safety of collection classes [C++]"
-  - "collection classes, serialization"
-  - "collection classes, speed"
-  - "collection classes, type safety"
-  - "collection classes, choosing"
-  - "collection classes, functionality"
-  - "shapes, collection"
-  - "collection classes, template-based"
-  - "MFC collection classes, characteristics"
-  - "collection classes, about collection classes"
-  - "serialization [C++], collection classes"
-  - "collection classes, duplicates allowed"
-  - "collection classes, shapes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["type safety of collection classes [MFC]", "collection classes [MFC], serialization", "collection classes [MFC], speed", "collection classes [MFC], type safety", "collection classes [MFC], choosing", "collection classes [MFC], functionality", "shapes, collection", "collection classes [MFC], template-based", "MFC collection classes [MFC], characteristics", "collection classes [MFC], about collection classes [MFC]", "serialization [MFC], collection classes", "collection classes [MFC], duplicates allowed", "collection classes [MFC], shapes"]
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing a Collection Class
 This article contains detailed information designed to help you choose a collection class for your particular application needs.  

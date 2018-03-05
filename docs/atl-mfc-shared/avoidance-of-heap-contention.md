@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "heap contention"
+dev_langs: ["C++"]
+helpviewer_keywords: ["heap contention"]
 ms.assetid: 797129d7-5f8c-4b0e-8974-bb93217e9ab5
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Avoidance of Heap Contention
 The default string managers provided by MFC and ATL are simple wrappers on top of a global heap. This global heap is fully thread-safe, meaning that multiple threads can allocate and free memory from it simultaneously without corrupting the heap. To help provide thread safety, the heap has to serialize access to itself. This is usually accomplished with a critical section or similar locking mechanism. Whenever two threads try to access the heap simultaneously, one thread is blocked until the other thread's request is finished. For many applications, this situation rarely occurs and the performance impact of the heap's locking mechanism is negligible. However, for applications that frequently access the heap from multiple threads contention for the heap's lock can cause the application to run slower than if it were single-threaded (even on machines with multiple CPUs).  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPtrList"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lists, generic"
-  - "CPtrList class"
-  - "generic lists"
+f1_keywords: ["CPtrList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lists, generic", "CPtrList class [MFC]", "generic lists"]
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPtrList Class
 Supports lists of void pointers.  

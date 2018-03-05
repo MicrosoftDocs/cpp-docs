@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "boxing, Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["boxing, Visual C++"]
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Boxing  (C++ Component Extensions)
 The Visual C++ compiler can convert value types to objects in a process called *boxing*, and convert objects to value types in a process called *unboxing*.  
@@ -39,7 +23,7 @@ The Visual C++ compiler can convert value types to objects in a process called *
  (There are no remarks for this language feature that apply to all runtimes.)  
   
 ## Windows Runtime  
- [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)] supports a shorthand syntax for boxing value types and unboxing reference types. A value type is boxed when it is assigned to a variable of type `Object`. An `Object` variable is unboxed when it is assigned to a value type variable and the unboxed type is specified in parentheses; that is, when the object variable is cast to a value type.  
+ C++/CX supports a shorthand syntax for boxing value types and unboxing reference types. A value type is boxed when it is assigned to a variable of type `Object`. An `Object` variable is unboxed when it is assigned to a value type variable and the unboxed type is specified in parentheses; that is, when the object variable is cast to a value type.  
   
 ```  
   

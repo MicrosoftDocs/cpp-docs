@@ -4,41 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAxWinAmbientDispatch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAxWinAmbientDispatch interface"
+f1_keywords: ["IAxWinAmbientDispatch", "ATLIFACE/ATL::IAxWinAmbientDispatch", "ATLIFACE/ATL::get_AllowContextMenu", "ATLIFACE/ATL::get_AllowShowUI", "ATLIFACE/ATL::get_AllowWindowlessActivation", "ATLIFACE/ATL::get_BackColor", "ATLIFACE/ATL::get_DisplayAsDefault", "ATLIFACE/ATL::get_DocHostDoubleClickFlags", "ATLIFACE/ATL::get_DocHostFlags", "ATLIFACE/ATL::get_Font", "ATLIFACE/ATL::get_ForeColor", "ATLIFACE/ATL::get_LocaleID", "ATLIFACE/ATL::get_MessageReflect", "ATLIFACE/ATL::get_OptionKeyPath", "ATLIFACE/ATL::get_ShowGrabHandles", "ATLIFACE/ATL::get_ShowHatching", "ATLIFACE/ATL::get_UserMode", "ATLIFACE/ATL::put_AllowContextMenu", "ATLIFACE/ATL::put_AllowShowUI", "ATLIFACE/ATL::put_AllowWindowlessActivation", "ATLIFACE/ATL::put_BackColor", "ATLIFACE/ATL::put_DisplayAsDefault", "ATLIFACE/ATL::put_DocHostDoubleClickFlags", "ATLIFACE/ATL::put_DocHostFlags", "ATLIFACE/ATL::put_Font", "ATLIFACE/ATL::put_ForeColor", "ATLIFACE/ATL::put_LocaleID", "ATLIFACE/ATL::put_MessageReflect", "ATLIFACE/ATL::put_OptionKeyPath", "ATLIFACE/ATL::put_UserMode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAxWinAmbientDispatch interface"]
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatch Interface
 This interface provides methods for specifying characteristics of the hosted control or container.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -575,7 +558,7 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
  [IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)   
  [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)   
  [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)   
- [AtlAxGetHost](http://msdn.microsoft.com/library/ad1f4f16-608d-4e96-8d30-04d4ca906a7b)
+ [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
 
 
 

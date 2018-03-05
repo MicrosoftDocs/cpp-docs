@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "compiling source code [C++], additional information"
-  - "cl.exe compiler [C++], building programs"
-  - "linker [C++], building reference"
-  - "builds [C++], additional information"
+dev_langs: ["C++"]
+helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C/C++ Building Reference
 Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../../ide/building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../../build/building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.  

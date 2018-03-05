@@ -4,56 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CRowset::UpdateAll"
-  - "ATL.CRowset.UpdateAll"
-  - "CRowset<TAccessor>.UpdateAll"
-  - "ATL.CRowset<TAccessor>.UpdateAll"
-  - "UpdateAll"
-  - "CRowset.UpdateAll"
-  - "ATL::CRowset<TAccessor>::UpdateAll"
-  - "CRowset<TAccessor>::UpdateAll"
-  - "ATL::CRowset::UpdateAll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UpdateAll method"
+ms.topic: "reference"
+f1_keywords: ["CRowset::UpdateAll", "ATL.CRowset.UpdateAll", "CRowset<TAccessor>.UpdateAll", "ATL.CRowset<TAccessor>.UpdateAll", "UpdateAll", "CRowset.UpdateAll", "ATL::CRowset<TAccessor>::UpdateAll", "CRowset<TAccessor>::UpdateAll", "ATL::CRowset::UpdateAll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UpdateAll method"]
 ms.assetid: e5b26c0a-40fc-4c91-a293-5084951788e6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::UpdateAll
 Transmits any pending changes made to all rows since the last fetch or **Update** call on it.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT UpdateAll(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,   
    HROW** pphRow = NULL,   
-   DBROWSTATUS** ppStatus = NULL    
-) throw( );  
+   DBROWSTATUS** ppStatus = NULL) throw();  
 ```  
   
 #### Parameters  

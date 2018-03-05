@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__movsd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rep movsd instruction"
-  - "__movsd intrinsic"
-  - "movsd instruction"
+ms.topic: "reference"
+f1_keywords: ["__movsd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rep movsd instruction", "__movsd intrinsic", "movsd instruction"]
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __movsd
 **Microsoft Specific**  
@@ -102,7 +82,7 @@ int main()
 950 850 750 650 550 450 350 250 150 50   
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

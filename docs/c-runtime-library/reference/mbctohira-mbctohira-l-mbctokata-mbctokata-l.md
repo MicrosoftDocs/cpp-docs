@@ -4,73 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_mbctohira"
-  - "_mbctohira_l"
-  - "_mbctokata"
-  - "_mbctokata_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbctokata"
-  - "mbctohira"
-  - "_mbctohira"
-  - "_mbctohira_l"
-  - "mbctokata"
-  - "mbctokata_l"
-  - "mbctohira_l"
-  - "_mbctokata_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbctokata function"
-  - "_mbctokata_l function"
-  - "_mbctohira_l function"
-  - "mbctohira_l function"
-  - "mbctohira function"
-  - "mbctokata_l function"
-  - "_mbctohira function"
-  - "mbctokata function"
+f1_keywords: ["_mbctokata", "mbctohira", "_mbctohira", "_mbctohira_l", "mbctokata", "mbctokata_l", "mbctohira_l", "_mbctokata_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbctokata function", "_mbctokata_l function", "_mbctohira_l function", "mbctohira_l function", "mbctohira function", "mbctokata_l function", "_mbctohira function", "mbctokata function"]
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 Converts between hiragana and katakana characters.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -123,9 +77,6 @@ unsigned int _mbctokata_l(
 |`_mbctokata_l`|\<mbstring.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

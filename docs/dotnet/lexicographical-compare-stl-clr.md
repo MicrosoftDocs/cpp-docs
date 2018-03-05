@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::lexicographical_compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lexicographical_compare function [STL/CLR]"
+f1_keywords: ["cliext::lexicographical_compare"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lexicographical_compare function [STL/CLR]"]
 ms.assetid: 9ec217f3-5523-4f90-a0cc-8fb7dbe4946b
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lexicographical_compare (STL/CLR)
 Compares element by element between two sequences to determine which is lesser of the two.  
@@ -49,7 +32,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `lexicographical_compare`. For more information, see [lexicographical_compare](http://msdn.microsoft.com/Library/403f8526-50a4-4c1c-865e-391b1095fc32).  
+ This function behaves the same as the C++ Standard Library function `lexicographical_compare`. For more information, see [lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

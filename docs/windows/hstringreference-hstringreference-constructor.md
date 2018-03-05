@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference"
-dev_langs: 
-  - "C++"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference"]
+dev_langs: ["C++"]
 ms.assetid: 29f5fe11-3928-4f60-9861-f0894247bfcb
 caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::HStringReference Constructor
 Initializes a new instance of the HStringReference class.  
@@ -67,7 +50,7 @@ HStringReference(HStringReference&& other) throw();
   
  The second constructor initializes a new HStringReference object that the size specifeid by parameter `len`.  
   
- The third constructor initializes a new HStringReference object to the value of the `other`parameter, and then destroys the `other` parameter.  
+ The third constructor initializes a new HStringReference object to the value of the `other` parameter, and then destroys the `other` parameter.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ICommandSource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ICommandSource interface"
+f1_keywords: ["ICommandSource", "AFXWINFORMS/ICommandSource", "AFXWINFORMS/ICommandSource::AddCommandHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::AddCommandUIHandler", "AFXWINFORMS/ICommandSource::PostCommand", "AFXWINFORMS/ICommandSource::RemoveCommandHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::RemoveCommandUIHandler", "AFXWINFORMS/ICommandSource::SendCommand"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ICommandSource interface [MFC]"]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ICommandSource Interface
 Manages commands sent from a command source object to a user control.  
@@ -86,7 +69,7 @@ A handle to the command handler method.
 
 ### Remarks
 This method adds the command handler cmdHandler to the command source object and maps the handler to cmdID.
-See [How to: Add Command Routing to the Windows Forms Control](https://msdn.microsoft.com/library/y33d8624.aspx) for an example of how to use AddCommandHandler.
+See [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) for an example of how to use AddCommandHandler.
 
 ## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "declaring arrays, about declaring arrays"
-  - "multidimensional arrays"
-  - "arrays [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Arrays (C++)
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:  
@@ -188,4 +170,4 @@ The minimum cost to Market 3 is: 17.29
  The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.  
   
 ## See Also  
- [C++ Abstract Declarators](http://msdn.microsoft.com/en-us/e7e18c18-0cad-4450-942b-d27e1d4dd088)
+ 

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CPrivateObjectSecurityDesc"
-  - "ATL::CPrivateObjectSecurityDesc"
-  - "CPrivateObjectSecurityDesc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPrivateObjectSecurityDesc class"
+f1_keywords: ["CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPrivateObjectSecurityDesc class"]
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CPrivateObjectSecurityDesc Class
 This class represents a private object security descriptor object.  
@@ -72,7 +53,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CSecurityDesc](../../atl/reference/csecuritydesc-class.md)  
@@ -184,7 +165,7 @@ bool Create(
 ### Remarks  
  This method calls [CreatePrivateObjectSercurity](http://msdn.microsoft.com/library/windows/desktop/aa376405) or [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581).  
   
- The second method, which permits specifying the object type GUID of the new object or controlling how ACEs are inherited, is only available on systems running Windows 2000 and later.  
+ The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.  
   
 > [!NOTE]
 >  A self-relative security descriptor is a security descriptor that stores all of its security information in a contiguous block of memory.  
@@ -263,7 +244,7 @@ bool Set(
  Returns true on success, false on failure.  
   
 ### Remarks  
- The second method, which permits specifying the object type GUID of the object or controlling how ACEs are inherited, is only available on systems running Windows 2000 and later.  
+ The second method permits specifying the object type GUID of the object or controlling how ACEs are inherited.  
   
 ## See Also  
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   

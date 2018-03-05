@@ -5,12 +5,14 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["istream/std::swap", "istream/std::ws"]
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;istream&gt; functions
 |||  
@@ -33,10 +35,10 @@ void swap(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A stream.  
   
- ` right`  
+ `right`  
  A stream.  
   
 ##  <a name="ws"></a>  ws  
@@ -54,12 +56,12 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
  The stream.  
   
 ### Remarks  
- The manipulator extracts and discards any elements `ch` for which [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)< **ctype**\< **Elem**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). **is**( **ctype**\< **Elem**>:: **space**, **ch**) is true.  
+ The manipulator extracts and discards any elements `ch` for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **Elem**> >( [getloc](../standard-library/ios-base-class.md#getloc)). **is**( **ctype**\< **Elem**>:: **space**, **ch**) is true.  
   
- The function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.  
+ The function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.  
   
 ### Example  
-  See [operator>>](../standard-library/istream-operators.md#operator_gt__gt_) for an example of using `ws`.  
+  See [operator>>](../standard-library/istream-operators.md#op_gt_gt) for an example of using `ws`.  
   
 ## See Also  
  [\<istream>](../standard-library/istream.md)

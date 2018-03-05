@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CTokenGroups"
-  - "ATL.CTokenGroups"
-  - "CTokenGroups"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTokenGroups class"
+f1_keywords: ["CTokenGroups", "ATLSECURITY/ATL::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::Add", "ATLSECURITY/ATL::CTokenGroups::Delete", "ATLSECURITY/ATL::CTokenGroups::DeleteAll", "ATLSECURITY/ATL::CTokenGroups::GetCount", "ATLSECURITY/ATL::CTokenGroups::GetLength", "ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS", "ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes", "ATLSECURITY/ATL::CTokenGroups::LookupSid"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTokenGroups class"]
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTokenGroups Class
 This class is a wrapper for the **TOKEN_GROUPS** structure.  
@@ -78,11 +59,11 @@ class CTokenGroups
 |[CTokenGroups::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
+ An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
  The **CTokenGroups** class is a wrapper for the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure, containing information about the group security identifiers (SIDs) in an access token.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -224,7 +205,7 @@ bool LookupSid(
  Returns true if the `CSid` is found, false otherwise.  
   
 ### Remarks  
- Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights as incorrect results may occur under Windows 2000. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) method.  
+ Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) method.  
   
 ##  <a name="operator_eq"></a>  CTokenGroups::operator =  
  Assignment operator.  

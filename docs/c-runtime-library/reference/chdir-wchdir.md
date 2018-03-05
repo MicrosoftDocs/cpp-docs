@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wchdir"
-  - "_chdir"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wchdir", "_chdir"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tchdir"
-  - "_chdir"
-  - "_wchdir"
-  - "_tchdir"
-  - "wchdir"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tchdir function"
-  - "_chdir function"
-  - "_wchdir function"
-  - "tchdir function"
-  - "wchdir function"
-  - "chdir function"
-  - "directories [C++], changing"
+f1_keywords: ["tchdir", "_chdir", "_wchdir", "_tchdir", "wchdir"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tchdir function", "_chdir function", "_wchdir function", "tchdir function", "wchdir function", "chdir function", "directories [C++], changing"]
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _chdir, _wchdir
 Changes the current working directory.  
@@ -79,7 +39,7 @@ int _wchdir(
  Path of new working directory.  
   
 ## Return Value  
- These functions return a value of 0 if successful. A return value of –1 indicates failure. If the specified path could not be found, `errno` is set to `ENOENT`. If `dirname` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.  
+ These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path could not be found, `errno` is set to `ENOENT`. If `dirname` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.  
   
 ## Remarks  
  The `_chdir` function changes the current working directory to the directory specified by `dirname`. The `dirname` parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in `dirname`, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:  
@@ -165,9 +125,6 @@ Volume in drive C has no label.
               13 File(s)      2,249,184 bytes  
                0 Dir(s)  67,326,029,824 bytes free  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Environment::CurrentDirectory](https://msdn.microsoft.com/en-us/library/system.environment.currentdirectory.aspx)  
   
 ## See Also  
  [Directory Control](../../c-runtime-library/directory-control.md)   

@@ -4,46 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OpenAll method"
-  - "attribute-injected classes and methods"
-  - "wizard-generated classes and methods"
-  - "OLE DB consumers, wizard-generated classes and methods"
-  - "methods [C++], OLE DB Consumer Wizard-generated"
-  - "CloseDataSource method"
-  - "consumer wizard-generated classes and methods"
-  - "OpenDataSource method"
-  - "CloseAll method"
-  - "OpenRowset method"
-  - "GetRowsetProperties method"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OpenAll method", "attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "methods [C++], OLE DB Consumer Wizard-generated", "CloseDataSource method", "consumer wizard-generated classes and methods", "OpenDataSource method", "CloseAll method", "OpenRowset method", "GetRowsetProperties method"]
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Methods
-The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
+The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  
   
 -   `OpenAll` opens the data source, rowsets, and turns on bookmarks if they are available.  
   
@@ -61,6 +35,7 @@ The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain f
   
 ```  
 HRESULT OpenAll();   
+
 void CloseAll();  
 ```  
   
@@ -168,6 +143,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
   
 ```  
 HRESULT OpenDataSource();   
+
 void CloseDataSource();  
 ```  
   

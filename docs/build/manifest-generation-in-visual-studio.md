@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "manifests [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Manifest Generation in Visual Studio
 Generation of a manifest file for a particular project can be controlled in the project **Property Pages** dialog. On the **Configuration Properties** tab, click **Linker**, then **Manifest File**, then **Generate Manifest**. By default the project properties of new projects are set to generate a manifest file. However it is possible to disable generation of the manifest for a project using the **Generate Manifest** property of the project. When this property is set to **Yes**, the manifest for this project is generated. Otherwise the linker ignores assembly information when resolving dependencies of the application code, and does not generate the manifest.  

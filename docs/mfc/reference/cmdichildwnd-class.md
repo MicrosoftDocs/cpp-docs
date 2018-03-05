@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMDIChildWnd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDI [C++], child windows"
-  - "windows [C++], MDI"
-  - "CMDIChildWnd class"
-  - "child windows, CMDIChildWnd class"
+f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMDIChildWnd [MFC], CMDIChildWnd", "CMDIChildWnd [MFC], Create", "CMDIChildWnd [MFC], GetMDIFrame", "CMDIChildWnd [MFC], MDIActivate", "CMDIChildWnd [MFC], MDIDestroy", "CMDIChildWnd [MFC], MDIMaximize", "CMDIChildWnd [MFC], MDIRestore", "CMDIChildWnd [MFC], SetHandles"]
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMDIChildWnd Class
 Provides the functionality of a Windows multiple document interface (MDI) child window, along with members for managing the window.  
@@ -141,13 +121,13 @@ virtual BOOL Create(
   
 ### Parameters  
  `lpszClassName`  
- Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](http://msdn.microsoft.com/library/62c7d4b1-7a29-4abb-86f7-dec541659db0) global function. Should be **NULL** for a standard `CMDIChildWnd`.  
+ Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be **NULL** for a standard `CMDIChildWnd`.  
   
  `lpszWindowName`  
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
  `dwStyle`  
- Specifies the window [style](../../mfc/reference/window-styles.md) attributes. The **WS_CHILD** style is required.  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. The **WS_CHILD** style is required.  
   
  `rect`  
  Contains the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new `CMDIChildWnd`.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHtmlEditView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CHtmlEditView class"
+f1_keywords: ["CHtmlEditView", "AFXHTML/CHtmlEditView", "AFXHTML/CHtmlEditView::CHtmlEditView", "AFXHTML/CHtmlEditView::Create", "AFXHTML/CHtmlEditView::GetDHtmlDocument", "AFXHTML/CHtmlEditView::GetStartDocument"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHtmlEditView [MFC], CHtmlEditView", "CHtmlEditView [MFC], Create", "CHtmlEditView [MFC], GetDHtmlDocument", "CHtmlEditView [MFC], GetStartDocument"]
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CHtmlEditView Class
 Provides the functionality of the WebBrowser editing platform within the context of MFC's document/view architecture.  

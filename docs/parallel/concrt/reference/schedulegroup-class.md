@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::ScheduleGroup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ScheduleGroup class"
+ms.topic: "reference"
+f1_keywords: ["ScheduleGroup", "CONCRT/concurrency::ScheduleGroup", "CONCRT/concurrency::ScheduleGroup::Id", "CONCRT/concurrency::ScheduleGroup::Reference", "CONCRT/concurrency::ScheduleGroup::Release", "CONCRT/concurrency::ScheduleGroup::ScheduleTask"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ScheduleGroup class"]
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ScheduleGroup Class
 Represents an abstraction for a schedule group. Schedule groups organize a set of related work that benefits from being scheduled close together either temporally, by executing another task in the same group before moving to another group, or spatially, by executing multiple items within the same group on the same NUMA node or physical socket.  
@@ -55,10 +38,10 @@ class ScheduleGroup;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Id Method](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
-|[Reference Method](#reference)|Increments the schedule group reference count.|  
-|[Release Method](#release)|Decrements the scheduler group reference count.|  
-|[ScheduleTask Method](#scheduletask)|Schedules a light-weight task within the schedule group.|  
+|[Id](#id)|Returns an identifier for the schedule group that is unique within the scheduler to which the group belongs.|  
+|[Reference](#reference)|Increments the schedule group reference count.|  
+|[Release](#release)|Decrements the scheduler group reference count.|  
+|[ScheduleTask](#scheduletask)|Schedules a light-weight task within the schedule group.|  
   
 ## Inheritance Hierarchy  
  `ScheduleGroup`  

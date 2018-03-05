@@ -4,40 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/clr compiler option [C++], restrictions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["/clr compiler option [C++], restrictions"]
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /clr Restrictions
 Note the following restrictions on the use of **/clr**:  
   
 -   In a structured exception handler, there are restrictions on using `_alloca` when compiling with **/clr**. For more information, see [_alloca](../../c-runtime-library/reference/alloca.md).  
   
--   The use of run-time error checks is not valid with **/clr**. For more information, see [Run-Time Error Checks](http://msdn.microsoft.com/Library/dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1).  
+-   The use of run-time error checks is not valid with **/clr**. For more information, see [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks).  
   
 -   When **/clr** is used to compile a program that only uses standard C++ syntax, the following guidelines apply to the use of inline assembly:  
   
@@ -71,11 +55,7 @@ Note the following restrictions on the use of **/clr**:
   
     -   **/ZI**  
   
--   The combination of the `_STATIC_CPPLIB` preprocessor definition (`/D_STATIC_CPPLIB`) and the **/clr** or **/clr:pure** compiler option is not supported. This is so because the definition would cause your application to link with the static multithreaded C++ Standard Library, which is not supported. For more information, see the [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md) topic.  
-  
--   [/J](../../build/reference/j-default-char-type-is-unsigned.md) is not supported with **/clr:safe** or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
-  
--   The ATL and MFC libraries are not supported by pure mode compilation (**/clr:pure**). You can use **/clr:pure** with the C++ Standard Library and the CRT if you also compile with **/MD** or **/MDd**.  
+-   The combination of the `_STATIC_CPPLIB` preprocessor definition (`/D_STATIC_CPPLIB`) and the **/clr** compiler option is not supported. This is so because the definition would cause your application to link with the static multithreaded C++ Standard Library, which is not supported. For more information, see the [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md) topic.  
   
 -   When using **/Zi** with **/clr**, there are performance implications. For more information, see [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md).  
   
@@ -96,8 +76,6 @@ Note the following restrictions on the use of **/clr**:
   
 -   When using the va_arg macro, you may get unexpected results when compiling with **/clr:pure**.  For more information, see [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md).  
   
--   If your application passes an argument of type [va_list](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) to a function declared to take a variable number of arguments, and your application is compiled with **/clr:pure**, the CLR throws <xref:System.NotSupportedException>. If **/clr**  is used instead, the affected functions are compiled to native code and execute properly. If **/clr:safe** is used, an error diagnostic is emitted.  
-  
 -   You should not call, from managed code, any functions that walk the stack to get parameter information (function arguments); the P/Invoke layer causes that information to be further down the stack.  For example, do not compile proxy/stub with **/clr**.  
   
 -   Functions will be compiled to managed code whenever possible, but not all C++ constructs can be translated to managed code.  This determination is made on a function-by-function basis. If any part of a function cannot be converted to managed code, the entire function will be converted to native code instead. The following cases prevent the compiler from generating managed code.  
@@ -111,8 +89,6 @@ Note the following restrictions on the use of **/clr**:
     -   Functions that follow the `#pragma unmanaged` directive. (Note that the inverse, `#pragma managed`, is also supported.)  
   
     -   A function that contains references to aligned types, that is, types declared using `__declspec(align(...))`.  
-  
--   You cannot use the [Compiler COM Support](../../cpp/compiler-com-support.md) classes with **/clr:pure** or **/clr:safe**.  
   
 ## See Also  
  [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)

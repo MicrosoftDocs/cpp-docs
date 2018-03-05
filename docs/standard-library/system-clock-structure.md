@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::chrono::system_clock"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_monotonic Constant", "chrono/std::chrono::system_clock::is_steady Constant"]
+dev_langs: ["C++"]
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # system_clock Structure
 Represents a *clock type* that is based on the real-time clock of the system.  
@@ -65,23 +49,23 @@ struct system_clock;
   
 |Name|Description|  
 |----------|-----------------|  
-|[system_clock::from_time_t Method](#system_clock__from_time_t_method)|Static. Returns a `time_point` that most closely approximates a specified time.|  
-|[system_clock::now Method](#system_clock__now_method)|Static. Returns the current time.|  
-|[system_clock::to_time_t Method](#system_clock__to_time_t_method)|Static. Returns a `time_t` object that most closely approximates a specified `time_point`.|  
+|[from_time_t](#from_time_t)|Static. Returns a `time_point` that most closely approximates a specified time.|  
+|[now](#now)|Static. Returns the current time.|  
+|[to_time_t](#to_time_t)|Static. Returns a `time_t` object that most closely approximates a specified `time_point`.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[system_clock::is_monotonic Constant](#system_clock__is_monotonic_constant)|Specifies whether the clock type is monotonic.|  
-|[system_clock::is_steady Constant](#system_clock__is_steady_constant)|Specifies whether the clock type is steady.|  
+|[system_clock::is_monotonic Constant](#is_monotonic_constant)|Specifies whether the clock type is monotonic.|  
+|[system_clock::is_steady Constant](#is_steady_constant)|Specifies whether the clock type is steady.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   
-##  <a name="system_clock__from_time_t_method"></a>  system_clock::from_time_t Method  
+##  <a name="from_time_t"></a>  system_clock::from_time_t
  Static method that returns a [time_point](../standard-library/time-point-class.md) that most closely approximates the time that is represented by `Tm`.  
   
 ```  
@@ -92,7 +76,7 @@ static time_point from_time_t(time_t Tm) noexcept;
  `Tm`  
  A [time_t](../c-runtime-library/standard-types.md) object.  
   
-##  <a name="system_clock__is_monotonic_constant"></a>  system_clock::is_monotonic Constant  
+##  <a name="is_monotonic_constant"></a>  system_clock::is_monotonic Constant  
  Static value that specifies whether the clock type is monotonic.  
   
 ```  
@@ -105,7 +89,7 @@ static const bool is_monotonic = false;
 ### Remarks  
  A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.  
   
-##  <a name="system_clock__is_steady_constant"></a>  system_clock::is_steady Constant  
+##  <a name="is_steady_constant"></a>  system_clock::is_steady Constant  
  Static value that specifies whether the clock type is *steady*.  
   
 ```  
@@ -116,9 +100,9 @@ static const bool is_steady = false;
  In this implementation, `system_clock::is_steady` always returns `false`.  
   
 ### Remarks  
- A clock is *steady* if it is [monotonic](#system_clock__is_monotonic_constant) and if the time between clock ticks is constant.  
+ A clock is *steady* if it is [monotonic](#is_monotonic_constant) and if the time between clock ticks is constant.  
   
-##  <a name="system_clock__now_method"></a>  system_clock::now Method  
+##  <a name="now"></a>  system_clock::now
  Static method that returns the current time.  
   
 ```  
@@ -128,7 +112,7 @@ static time_point now() noexcept;
 ### Return Value  
  A [time_point](../standard-library/time-point-class.md) object that represents the current time.  
   
-##  <a name="system_clock__to_time_t_method"></a>  system_clock::to_time_t Method  
+##  <a name="to_time_t"></a>  system_clock::to_time_t
  Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by `Time`.  
   
 ```  

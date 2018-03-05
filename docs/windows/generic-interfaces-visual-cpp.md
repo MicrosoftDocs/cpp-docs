@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generic interfaces"
-  - "interfaces, generic [C++}"
+dev_langs: ["C++"]
+helpviewer_keywords: ["generic interfaces", "interfaces, generic [C++}"]
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Interfaces (Visual C++)
 The restrictions that apply to type parameters on classes are the same as those that apply to type parameters on interfaces (see [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)).  

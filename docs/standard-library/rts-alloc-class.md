@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "stdext::rts_alloc"
-  - "allocators/stdext::rts_alloc"
-  - "rts_alloc"
-  - "stdext.rts_alloc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rts_alloc class"
+ms.topic: "reference"
+f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::rts_alloc", "stdext::rts_alloc [C++], allocate", "stdext::rts_alloc [C++], deallocate", "stdext::rts_alloc [C++], equals"]
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # rts_alloc Class
 The rts_alloc template class describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.  
@@ -60,16 +40,16 @@ class rts_alloc
   
 |||  
 |-|-|  
-|[allocate](#rts_alloc__allocate)|Allocates a block of memory.|  
-|[deallocate](#rts_alloc__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
-|[equals](#rts_alloc__equals)|Compares two caches for equality.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="rts_alloc__allocate"></a>  rts_alloc::allocate  
+##  <a name="allocate"></a>  rts_alloc::allocate  
  Allocates a block of memory.  
   
 ```
@@ -88,7 +68,7 @@ void *allocate(std::size_t count);
 ### Remarks  
  The member function returns `caches[_IDX].allocate(count)`, where the index `_IDX` is determined by the requested block size `count`, or, if `count` is too large, it returns `operator new(count)`. `cache`, which represents the cache object.  
   
-##  <a name="rts_alloc__deallocate"></a>  rts_alloc::deallocate  
+##  <a name="deallocate"></a>  rts_alloc::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```
@@ -105,7 +85,7 @@ void deallocate(void* ptr, std::size_t count);
 ### Remarks  
  The member function calls `caches[_IDX].deallocate(ptr, count)`, where the index `_IDX` is determined by the requested block size `count`, or, if `count` is too large, it returns `operator delete(ptr)`.  
   
-##  <a name="rts_alloc__equals"></a>  rts_alloc::equals  
+##  <a name="equals"></a>  rts_alloc::equals  
  Compares two caches for equality.  
   
 ```

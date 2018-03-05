@@ -4,42 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr120.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
+apilocation: ["msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_printf_p function, positional parameters"
-  - "printf_p function, positional parameters"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_printf_p function, positional parameters", "printf_p function, positional parameters"]
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # printf_p Positional Parameters
 Positional parameters provide the ability to specify by number which of the arguments is to be substituted into a field in a format string. The following positional parameter `printf` functions are available:  
@@ -164,6 +141,4 @@ ghi abc def
 ```  
   
 ## See Also  
- [printf Type Field Characters](../c-runtime-library/printf-type-field-characters.md)   
- [printf Width Specification](../c-runtime-library/printf-width-specification.md)   
- [Precision Specification](../c-runtime-library/precision-specification.md)
+ [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)

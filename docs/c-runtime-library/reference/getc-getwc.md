@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "getwc"
-  - "getc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["getwc", "getc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_gettc"
-  - "getwc"
-  - "_gettchar"
-  - "getc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "characters, reading"
-  - "_gettc function"
-  - "getwchar function"
-  - "streams, reading characters from"
-  - "reading characters from streams"
-  - "getc function"
-  - "getwc function"
-  - "gettc function"
+f1_keywords: ["_gettc", "getwc", "_gettchar", "getc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["characters, reading", "_gettc function", "getwchar function", "streams, reading characters from", "reading characters from streams", "getc function", "getwc function", "gettc function"]
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # getc, getwc
 Read a character from a stream.  
@@ -79,7 +39,7 @@ wint_t getwc(
  Input stream.  
   
 ## Return Value  
- Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for`getwc`) and set `errno` to `EINVAL`.  
+ Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for `getwc`) and set `errno` to `EINVAL`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
@@ -159,12 +119,6 @@ Line two.
 ```  
 Input was: Line one.  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::StreamReader::Read](https://msdn.microsoft.com/en-us/library/system.io.streamreader.read.aspx)  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

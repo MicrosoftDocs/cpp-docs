@@ -4,41 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "partially trusted applications [C++]"
-  - "mixed assemblies [C++], partially trusted applications"
-  - "msvcm90[d].dll"
-  - "interoperability [C++], partially trusted applications"
-  - "interop [C++], partially trusted applications"
-  - "/clr compiler option [C++], partially trusted applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["partially trusted applications [C++]", "mixed assemblies [C++], partially trusted applications", "msvcm90[d].dll", "interoperability [C++], partially trusted applications", "interop [C++], partially trusted applications", "/clr compiler option [C++], partially trusted applications"]
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL
-This topic discusses how to create a partially trusted Common Language Runtime application using [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] by removing dependency on msvcm90.dll.  
+This topic discusses how to create a partially trusted Common Language Runtime application using Visual C++ by removing dependency on msvcm90.dll.  
   
  A Visual C++ application built with **/clr** will have a dependency on msvcm90.dll, which is part of the C-Runtime Library. When you want your application to be used in a partial trust environment, the CLR will enforce certain code access security rules on your DLL. Therefore, it will be necessary to remove this dependency because msvcm90.dll contains native code and code access security policy cannot be enforced on it.  
   
@@ -58,4 +37,3 @@ This topic discusses how to create a partially trusted Common Language Runtime a
  [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md)   
  [Library Support for Mixed Assemblies](../dotnet/library-support-for-mixed-assemblies.md)   
  [/link (Pass Options to Linker)](../build/reference/link-pass-options-to-linker.md)   
- [PAVE Security in Native and .NET Framework Code](http://msdn.microsoft.com/en-us/bd61be84-c143-409a-a75a-44253724f784)

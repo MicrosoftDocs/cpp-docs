@@ -4,95 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strncoll"
-  - "_mbsncoll_l"
-  - "_wcsncoll"
-  - "_wcsncoll_l"
-  - "_mbsncoll"
-  - "_strncoll_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_strncoll", "_mbsncoll_l", "_wcsncoll", "_wcsncoll_l", "_mbsncoll", "_strncoll_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsncoll_l"
-  - "strncoll"
-  - "_wcsncoll"
-  - "_tcsnccoll"
-  - "_ftcsnccoll"
-  - "wcsncoll"
-  - "_mbsncoll"
-  - "wcsncoll_l"
-  - "strncoll_l"
-  - "_ftcsncoll"
-  - "_strncoll"
-  - "_tcsncoll"
-  - "mbsncoll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strncoll_l function"
-  - "code pages, using for string comparisons"
-  - "_strncoll function"
-  - "_mbsncoll function"
-  - "ftcsncoll function"
-  - "strncoll function"
-  - "_ftcsncoll function"
-  - "strncoll_l function"
-  - "wcsncoll function"
-  - "mbsncoll function"
-  - "_tcsncoll function"
-  - "_tcsnccoll function"
-  - "wcsncoll_l function"
-  - "tcsnccoll function"
-  - "mbsncoll_l function"
-  - "_mbsncoll_l function"
-  - "tcsncoll function"
-  - "_wcsncoll function"
-  - "strings [C++], comparing by code page"
-  - "_ftcsnccoll function"
-  - "ftcsnccoll function"
-  - "_wcsncoll_l function"
+f1_keywords: ["mbsncoll_l", "strncoll", "_wcsncoll", "_tcsnccoll", "_ftcsnccoll", "wcsncoll", "_mbsncoll", "wcsncoll_l", "strncoll_l", "_ftcsncoll", "_strncoll", "_tcsncoll", "mbsncoll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strncoll_l function", "code pages, using for string comparisons", "_strncoll function", "_mbsncoll function", "ftcsncoll function", "strncoll function", "_ftcsncoll function", "strncoll_l function", "wcsncoll function", "mbsncoll function", "_tcsncoll function", "_tcsnccoll function", "wcsncoll_l function", "tcsnccoll function", "mbsncoll_l function", "_mbsncoll_l function", "tcsncoll function", "_wcsncoll function", "strings [C++], comparing by code page", "_ftcsnccoll function", "ftcsnccoll function", "_wcsncoll_l function"]
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 Compares strings by using locale-specific information.  
   
 > [!IMPORTANT]
->  `_mbsncoll` and `_mbsncoll_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncoll` and `_mbsncoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -174,9 +106,6 @@ int _mbsncoll_l(
 |`_mbsncoll`, `_mbsncoll_l`|\<mbstring.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## .NET Framework Equivalent  
- [System::String::Compare](https://msdn.microsoft.com/en-us/library/system.string.compare.aspx)  
   
 ## See Also  
  [Locale](../../c-runtime-library/locale.md)   

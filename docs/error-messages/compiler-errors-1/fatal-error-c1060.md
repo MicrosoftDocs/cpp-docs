@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C1060"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1060"
+f1_keywords: ["C1060"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1060"]
 ms.assetid: feaf305c-c84c-4160-b974-50e283412849
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1060
 compiler is out of heap space  
@@ -47,7 +30,7 @@ compiler is out of heap space
   
 2.  If you are compiling on a 64-bit platform, use the 64-bit compiler toolset. For information, see [How to: Enable a 64-Bit Visual C++ Toolset on the Command Line](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md).  
   
-3.  On 32-bit Windows, try using the [/3GB](http://go.microsoft.com/fwlink/?LinkId=177831) boot.ini switch.  
+3.  On 32-bit Windows, try using the [/3GB](http://go.microsoft.com/fwlink/p/?linkid=177831) boot.ini switch.  
   
 4.  Increase the size of the Windows swap-file.  
   

@@ -4,51 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CheckRestrictions"
-  - "IDBSchemaRowsetImpl::CheckRestrictions"
-  - "IDBSchemaRowsetImpl.CheckRestrictions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CheckRestrictions method"
+ms.topic: "reference"
+f1_keywords: ["CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CheckRestrictions method"]
 ms.assetid: 3c9d77d2-0e4b-48fa-80db-d735da19f1cf
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::CheckRestrictions
 Checks the validity of restrictions against a schema rowset.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CheckRestrictions(  
-   REFGUID rguidSchema,  
-   ULONG cRestrictions,  
-   const VARIANT rgRestrictions[]  
-);  
+```
+HRESULT CheckRestrictions(REFGUID rguidSchema,  
+   ULONG cRestrictions,  const VARIANT rgRestrictions[]);  
 ```  
   
 #### Parameters  
@@ -66,7 +42,7 @@ Checks the validity of restrictions against a schema rowset.
   
  `CheckRestrictions` determines if the consumer is calling [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) with the correct restriction and the correct restriction type (for example, a `VT_BSTR` for a string) that the provider supports. It also determines if the correct number of restrictions are supported. By default, `CheckRestrictions` will ask the provider, through the [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) call, which restrictions it supports on a given rowset. It then compares the restrictions from the consumer against those supported by the provider and either succeeds or fails.  
   
- For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ## Requirements  
  **Header:** atldb.h  

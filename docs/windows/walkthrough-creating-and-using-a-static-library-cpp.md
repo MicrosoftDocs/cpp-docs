@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "libraries [C++], static"
-  - "static libraries [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["libraries [C++], static", "static libraries [C++]"]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 caps.latest.revision: 38
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating and Using a Static Library (C++)
 This step-by-step walkthrough shows how to create a static library (.lib file) for use with C++ apps. Using a static library is a great way to reuse code. Rather than re-implementing the same routines in every app that requires the functionality, you write them one time in a static library and then reference it from the apps. Code linked from a static library becomes part of your app—you don’t have to install another file to use the code.  
@@ -125,7 +107,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 4.  To reference the **MathFuncsLib.h** header file, you must modify the included directories path. In the **Property Pages** dialog box for **MyExecRefsLib**, expand the **Configuration Properties** node, expand the **C/C++** node, and then select **General**. Next to **Additional Include Directories**, specify the path of the **MathFuncsLib** directory or browse for it.  
   
-     To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**…**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.  
+     To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**...**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.  
   
 5.  You can now use the **MyMathFuncs** class in this app. To do this, replace the contents of **MyExecRefsLib.cpp** with this code:  
   
@@ -149,6 +131,5 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
     ```  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)   
  [Desktop Applications (Visual C++)](../windows/desktop-applications-visual-cpp.md)

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonUndoButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonUndoButton class"
+f1_keywords: ["CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::AddUndoAction", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CleanUpUndoList", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::GetActionNumber", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::HasMenu"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonUndoButton [MFC], CMFCRibbonUndoButton", "CMFCRibbonUndoButton [MFC], AddUndoAction", "CMFCRibbonUndoButton [MFC], CleanUpUndoList", "CMFCRibbonUndoButton [MFC], GetActionNumber", "CMFCRibbonUndoButton [MFC], HasMenu"]
 ms.assetid: 5c42adf7-871d-4239-901e-47ae7fb816fc
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonUndoButton Class
 The `CMFCRibbonUndoButton` class implements a drop-down list button that contains the most recent user commands. Users can select one or more of the most recent commands from the drop-down list to either redo or undo them.  

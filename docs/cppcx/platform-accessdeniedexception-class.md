@@ -2,24 +2,20 @@
 title: "Platform::AccessDeniedException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::AccessDeniedException"
-  - "Platform/Platform::AccessDeniedException::AccessDeniedException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::AccessDeniedException"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::AccessDeniedException", "VCCORLIB/Platform::AccessDeniedException::AccessDeniedException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::AccessDeniedException"]
 ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::AccessDeniedException Class
 Thrown when access to a resource or feature is denied.  
@@ -30,13 +26,13 @@ Thrown when access to a resource or feature is denied.
 public ref class AccessDeniedException : COMException,    IException,    IPrintable,   IEquatable  
 ```  
   
-## Remarks  
+### Remarks  
  If you hit this exception, ensure that you have requested the appropriate capability and made the required declarations in the package manifest of your app. For more information, see [COMException](../cppcx/platform-comexception-class.md) class.  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

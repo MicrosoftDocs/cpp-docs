@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "R"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "L constant"
-  - "escape sequences"
-  - "Null strings, null-terminated strings"
-  - "literal strings, C++"
-  - "Null strings"
-  - "string literals, syntax"
-  - "string literals"
-  - "literal strings"
-  - "strings [C++], string literals"
-  - "NULL, character constant"
-  - "wide characters, strings"
+f1_keywords: ["R"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["L constant", "escape sequences", "Null strings, null-terminated strings", "literal strings, C++", "Null strings", "string literals, syntax", "string literals", "literal strings", "strings [C++], string literals", "NULL, character constant", "wide characters, strings"]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # String and Character Literals  (C++)
 C++ supports various string and character types, and provides ways to express literal values of each of these types. In your source code, you express the content of your character and string literals using a character set. Universal character names and escape characters allow you to express any string using only the basic source character set. A raw string literal enables you to avoid using escape characters, and can be used to express all types of string literals. You can also create std::string literals without having to perform extra construction or conversion steps.  
@@ -224,7 +196,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
  A string literal represents a sequence of characters that together form a null-terminated string. The characters must be enclosed between double quotation marks. There are the following kinds of string literals:  
   
 ### Narrow String Literals  
- A narrow string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const` `char`[`n`], where n is the length of the array in bytes. A narrow string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A narrow string literal may also contain the escape sequences listed above, and universal character names that fit in a byte.  
+ A narrow string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where n is the length of the array in bytes. A narrow string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A narrow string literal may also contain the escape sequences listed above, and universal character names that fit in a byte.  
   
 ```cpp  
 const char *narrow = "abcd";  
@@ -233,9 +205,9 @@ const char *narrow = "abcd";
 const char *escaped = "yes\\no";  
 ```  
   
- **UTF-8 encoded strings**  
+#### UTF-8 encoded strings  
   
- A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type  `const``char`[`n`], where n is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.  
+ A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type  `const char[n]`, where n is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.  
   
 ```cpp  
 const char* str1 = u8"Hello World";  
@@ -250,7 +222,7 @@ const wchar_t* wide = L"zyxw";
 const wchar_t* newline = L"hello\ngoodbye";  
 ```  
   
- **char16_t and char32_t (C++11)**  
+#### char16_t and char32_t (C++11)  
   
  C++11 introduces the portable `char16_t` (16-bit Unicode) and `char32_t` (32-bit Unicode) character types:  
   
@@ -260,7 +232,7 @@ auto s4 = U"hello"; // const char32_t*
 ```  
   
 ### Raw String Literals (C++11)  
- A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark ("), backslash (\\), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](http://go.microsoft.com/fwlink/?LinkId=401172).  
+ A raw string literal is a null-terminated array—of any character type—that contains any graphic character, including the double quotation mark ("), backslash (\\), or newline character. Raw string literals are often used in regular expressions that use character classes, and in HTML strings and XML strings. For examples, see the following article: [Bjarne Stroustrup's FAQ on C++11](http://go.microsoft.com/fwlink/p/?linkid=401172).  
   
 ```cpp  
 // represents the string: An unescaped \ character  
@@ -274,7 +246,7 @@ const char32_t* raw_utf32 = UR"(An unescaped \ character)";
  A delimiter is a user-defined sequence of up to 16 characters that immediately precedes the opening parenthesis of a raw string literal and immediately follows its closing parenthesis.  For example, in `R"abc(Hello"\()abc"` the delimiter sequence is `abc` and the string content is `Hello"\(`. You can use a delimiter to disambiguate raw strings that contain both double quotation marks and parentheses. This causes a compiler error:  
   
 ```cpp  
-// meant to represent the string: )”  
+// meant to represent the string: )"  
 const char* bad_parens = R"()")";  // error C2059  
 ```  
   
@@ -294,7 +266,7 @@ goodbye)";
 ```  
   
 ### std::string Literals (C++14)  
- std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](http://msdn.microsoft.com/Library/5e1dcd3a-b1e4-4ee0-8389-629f7c2061c1), and U"xyz"s produces a [std::u32string](http://msdn.microsoft.com/Library/fd3970a3-a8b2-42ff-aadd-1cc99045f88a).  
+ std::string literals are Standard Library implementations of user-defined literals (see below) that are represented as "xyx"s (with a `s` suffix). This kind of string literal produces a temporary object of type std::string, std::wstring, std::u32string or std::u16string depending on the prefix that is specified. When no prefix is used, as above, a std::string is produced. L"xyz"s produces a std::wstring. u"xyz"s produces a [std::u16string](../standard-library/string-typedefs.md#u16string), and U"xyz"s produces a [std::u32string](../standard-library/string-typedefs.md#u32string).  
   
 ```cpp  
 //#include <string>  

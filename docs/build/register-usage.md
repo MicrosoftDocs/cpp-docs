@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: ce58e2cf-afd3-4068-980e-28a209298265
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Register Usage
 The [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] architecture provides for 16 general-purpose registers (hereafter referred to as integer registers) as well as 16 XMM/YMM registers available for floating-point use. Volatile registers are scratch registers presumed by the caller to be destroyed across a call. Nonvolatile registers are required to retain their values across a function call and must be saved by the callee if used.  
@@ -56,7 +41,7 @@ The [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] architecture
 |XMM3, YMM3|Volatile|Fourth FP argument; fourth vector-type argument when `__vectorcall` is used|  
 |XMM4, YMM4|Volatile|Must be preserved as needed by caller; fifth vector-type argument when `__vectorcall` is used|  
 |XMM5, YMM5|Volatile|Must be preserved as needed by caller; sixth vector-type argument when `__vectorcall` is used|  
-|XMM6:XMM15, YMM6:YMM15|Nonvolatile (XMM), Volatile (upper half of YMM)|Must be preserved as needed by callee. YMM registers must be preserved as needed by caller.|  
+|XMM6:XMM15, YMM6:YMM15|Nonvolatile (XMM), Volatile (upper half of YMM)|Must be preserved by callee. YMM registers must be preserved as needed by caller.|  
   
 ## See Also  
  [x64 Software Conventions](../build/x64-software-conventions.md)   

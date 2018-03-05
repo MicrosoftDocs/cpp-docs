@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combinable class, example"
-  - "combining sets with combinable [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["combinable class, example", "combining sets with combinable [Concurrency Runtime]"]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use combinable to Combine Sets
 This topic shows how to use the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class to compute the set of prime numbers.  

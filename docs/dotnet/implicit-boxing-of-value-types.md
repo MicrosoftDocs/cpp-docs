@@ -4,40 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "boxing, Visual C++"
-  - "__box keyword"
-  - "boxing"
-  - "boxing, __box keyword"
-  - "value types, boxed"
+dev_langs: ["C++"]
+helpviewer_keywords: ["boxing, Visual C++", "__box keyword", "boxing", "boxing, __box keyword", "value types, boxed"]
 ms.assetid: 9597c92f-a3fe-44af-ad80-f9d656847a35
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Implicit Boxing of Value Types
-The boxing of value types has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The boxing of value types has changed from Managed Extensions for C++ to Visual C++.  
   
  In language design, we imposed a philosophical position in lieu of practical experience with the feature and, in practice, it was a mistake. As an analogy, in the original multiple inheritance language design, Stroustrup decided that a virtual base class sub-object could not be initialized within a derived class constructor, and therefore the language required that any class serving as a virtual base class must define a default constructor. It is that default constructor that would be invoked by any subsequent virtual derivation.  
   
@@ -49,7 +29,7 @@ The boxing of value types has changed from Managed Extensions for C++ to [!INCLU
   
  This provides the flexibility required by language developers, but at the cost of a complicated semantics. This burden of complication is stripped away if we restrict a virtual base class to be without state and simply allow it to specify an interface. This is a recommended design idiom within C++. Within CLR programming, it is raised to policy with the Interface type.  
   
- Here is a simple code sample– and in this case, the explicit boxing is unnecessary:  
+ Here is a simple code sample- and in this case, the explicit boxing is unnecessary:  
   
 ```  
 // Managed Extensions for C++ requires explicit __box operation  
@@ -63,7 +43,7 @@ Console::WriteLine( "{0}\t{1}\t{2}", __box(0),
    __box(my1DIntArray->GetUpperBound(0)) );  
 ```  
   
- As you can see, there is a whole lot of boxing going on. Under [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], value type boxing is implicit:  
+ As you can see, there is a whole lot of boxing going on. Under Visual C++, value type boxing is implicit:  
   
 ```  
 // new syntax makes boxing implicit  

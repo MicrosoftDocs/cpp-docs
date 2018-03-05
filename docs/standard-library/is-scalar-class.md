@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_scalar"
-  - "std::is_scalar"
-  - "type_traits/std::is_scalar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_scalar class"
-  - "is_scalar"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_scalar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_scalar class", "is_scalar"]
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_scalar Class
 Tests if type is scalar.  

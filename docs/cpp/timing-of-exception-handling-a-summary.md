@@ -4,46 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sequence"
-  - "sequence, of handlers"
-  - "exception handling, timing"
-  - "SETJMPEX.H"
-  - "termination handlers, timing"
-  - "SETJMP.H"
-  - "handlers, order of exception"
-  - "structured exception handling, timing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sequence [C++]", "sequence, of handlers", "exception handling [C++], timing", "setjmpex.h", "termination handlers [C++], timing", "setjmp.h", "handlers [C++], order of exception", "structured exception handling [C++], timing"]
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Timing of Exception Handling: A Summary
 A termination handler is executed no matter how the `__try` statement block is terminated. Causes include jumping out of the `__try` block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.  
   
 > [!NOTE]
->  Visual C++ supports two forms of the `setjmp` and `longjmp` statements. The fast version bypasses termination handling but is more efficient. To use this version, include the file SETJMP.H. The other version supports termination handling as described in the previous paragraph. To use this version, include the file SETJMPEX.H. The increase in performance of the fast version depends on hardware configuration.  
+>  Visual C++ supports two forms of the `setjmp` and `longjmp` statements. The fast version bypasses termination handling but is more efficient. To use this version, include the file \<setjmp.h>. The other version supports termination handling as described in the previous paragraph. To use this version, include the file \<setjmpex.h>. The increase in performance of the fast version depends on hardware configuration.  
   
  The operating system executes all termination handlers in the proper order before any other code can be executed, including the body of an exception handler.  
   
@@ -55,7 +32,7 @@ A termination handler is executed no matter how the `__try` statement block is t
   
 3.  If this filter passes control (returns 0), the process continues until a filter is found that does not pass control.  
   
-4.  If this filter returns –1, execution continues where the exception was raised, and no termination takes place.  
+4.  If this filter returns -1, execution continues where the exception was raised, and no termination takes place.  
   
 5.  If the filter returns 1, the following events occur:  
   

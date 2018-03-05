@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wmemmove_s"
-  - "memmove_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wmemmove_s", "memmove_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wmemmove_s"
-  - "memmove_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wmemmove_s function"
-  - "memmove_s function"
+f1_keywords: ["wmemmove_s", "memmove_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wmemmove_s function", "memmove_s function"]
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # memmove_s, wmemmove_s
 Moves one buffer to another. These are versions of [memmove, wmemmove](../../c-runtime-library/reference/memmove-wmemmove.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -98,7 +66,7 @@ errno_t wmemmove_s(
 |any|< `count`|any|`ERANGE`|not modified|  
   
 ## Remarks  
- Copies `count` bytes of characters from `src` to `dest`*.* If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
+ Copies `count` bytes of characters from `src` to `dest`. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
   
  If `dest` or if `src` is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.  
   
@@ -146,9 +114,6 @@ int main()
 Before: 0123456789  
  After: 0012345789  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Buffer::BlockCopy](https://msdn.microsoft.com/en-us/library/system.buffer.blockcopy.aspx)  
   
 ## See Also  
  [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   

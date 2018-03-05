@@ -4,135 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wstat64"
-  - "_stati64"
-  - "_stat32"
-  - "_stat32i64"
-  - "_stat"
-  - "_wstati64"
-  - "_wstat32"
-  - "_wstat64i32"
-  - "_wstat"
-  - "_stat64"
-  - "_stat64i32"
-  - "_wstat32i64"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tstat32"
-  - "tstat"
-  - "_tstat64i32"
-  - "tstati64"
-  - "_wstat64"
-  - "_wstat32"
-  - "wstati64"
-  - "tstat64"
-  - "_stati64"
-  - "_wstat"
-  - "wstat64i32"
-  - "stat32i64"
-  - "tstat32i64"
-  - "_tstat"
-  - "_wstati64"
-  - "_tstati64"
-  - "_wstat32i64"
-  - "wstat32"
-  - "_wstat64i32"
-  - "_stat"
-  - "_tstat32"
-  - "stat64i32"
-  - "wstat64"
-  - "stat"
-  - "_stat32i64"
-  - "_stat32"
-  - "stati64"
-  - "wstat"
-  - "_stat64i32"
-  - "stat32"
-  - "_tstat32i64"
-  - "tstat64i32"
-  - "_tstat64"
-  - "_stat64"
-  - "stat/_stat"
-  - "stat/_stat32"
-  - "stat/_stat64"
-  - "stat/_stati64"
-  - "stat/_stat32i64"
-  - "stat/_stat64i32"
-  - "stat/_wstat"
-  - "stat/_wstat32"
-  - "stat/_wstat64"
-  - "stat/_wstati64"
-  - "stat/_wstat32i64"
-  - "stat/_wstat64i32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], status information"
-  - "_stat function"
-  - "_wstat function"
-  - "_stat64i32 function"
-  - "tstat function"
-  - "_tstat64i32 function"
-  - "_stati64 function"
-  - "_stat64 function"
-  - "tstati64 function"
-  - "wstati64 function"
-  - "wstat64 function"
-  - "_wstat64i32 function"
-  - "_tstat32i64 function"
-  - "_stat32i64 function"
-  - "stat function"
-  - "status of files"
-  - "_tstat32 function"
-  - "tstat64 function"
-  - "_wstat64 function"
-  - "_tstat function"
-  - "_stat32 function"
-  - "wstat function"
-  - "_wstat32i64 function"
-  - "_tstati64 function"
-  - "_wstat32 function"
-  - "stat64 function"
-  - "stati64 function"
-  - "_wstati64 function"
-  - "_tstat64 function"
-  - "files [C++], getting status information"
+f1_keywords: ["tstat32", "tstat", "_tstat64i32", "tstati64", "_wstat64", "_wstat32", "wstati64", "tstat64", "_stati64", "_wstat", "wstat64i32", "stat32i64", "tstat32i64", "_tstat", "_wstati64", "_tstati64", "_wstat32i64", "wstat32", "_wstat64i32", "_stat", "_tstat32", "stat64i32", "wstat64", "stat", "_stat32i64", "_stat32", "stati64", "wstat", "_stat64i32", "stat32", "_tstat32i64", "tstat64i32", "_tstat64", "_stat64", "stat/_stat", "stat/_stat32", "stat/_stat64", "stat/_stati64", "stat/_stat32i64", "stat/_stat64i32", "stat/_wstat", "stat/_wstat32", "stat/_wstat64", "stat/_wstati64", "stat/_wstat32i64", "stat/_wstat64i32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++], status information", "_stat function", "_wstat function", "_stat64i32 function", "tstat function", "_tstat64i32 function", "_stati64 function", "_stat64 function", "tstati64 function", "wstati64 function", "wstat64 function", "_wstat64i32 function", "_tstat32i64 function", "_stat32i64 function", "stat function", "status of files", "_tstat32 function", "tstat64 function", "_wstat64 function", "_tstat function", "_stat32 function", "wstat function", "_wstat32i64 function", "_tstati64 function", "_wstat32 function", "stat64 function", "stati64 function", "_wstati64 function", "_tstat64 function", "files [C++], getting status information"]
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 Get status information on a file.  
@@ -198,7 +84,7 @@ int _wstat64i32(
  Pointer to structure that stores results.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-status information is obtained. A return value of –1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
+ Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   
@@ -211,7 +97,7 @@ int _wstat64i32(
   
  Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (`32` or `64`) indicates the size of the time type used; the second suffix is either `i32` or `i64`, indicating whether the file size is represented as a 32-bit or 64-bit integer.  
   
- `_stat` is equivalent to `_stat64i32`, and `struct``_stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct``_stat` contains a 32-bit time. The same is true for `_stati64`.  
+ `_stat` is equivalent to `_stat64i32`, and `struct _stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct _stat` contains a 32-bit time. The same is true for `_stati64`.  
   
 > [!NOTE]
 >  `_wstat` does not work with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.  
@@ -349,16 +235,6 @@ File size     : 732
 Drive         : C:  
 Time modified : Thu Feb 07 14:39:36 2002  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::IO::File::GetAttributes](https://msdn.microsoft.com/en-us/library/system.io.file.getattributes.aspx)  
-  
--   [System::IO::File::GetCreationTime](https://msdn.microsoft.com/en-us/library/system.io.file.getcreationtime.aspx)  
-  
--   [System::IO::File::GetLastAccessTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastaccesstime.aspx)  
-  
--   [System::IO::File::GetLastWriteTime](https://msdn.microsoft.com/en-us/library/system.io.file.getlastwritetime.aspx)  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

@@ -4,51 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtMemDumpStatistics"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtMemDumpStatistics"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CrtMemDumpStatistics"
-  - "_CrtMemDumpStatistics"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtMemDumpStatistics function"
-  - "CrtMemDumpStatistics function"
+f1_keywords: ["CrtMemDumpStatistics", "_CrtMemDumpStatistics"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CrtMemDumpStatistics function", "CrtMemDumpStatistics function"]
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _CrtMemDumpStatistics
 Dumps the debug header information for a specified heap state in a user-readable form (debug version only).  
@@ -81,9 +51,6 @@ void _CrtMemDumpStatistics(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
  **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.  
-  
-## .NET Framework Equivalent  
- <xref:System.Diagnostics.PerformanceCounter?displayProperty=fullName>  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)

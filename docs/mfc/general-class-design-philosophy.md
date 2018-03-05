@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.mfc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "designing classes"
-  - "MFC [C++], Windows API"
-  - "Visual C, Windows API calls"
-  - "classes [C++], MFC class design"
-  - "Windows API [C++], and MFC"
+f1_keywords: ["vc.classes.mfc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["designing classes [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "classes [MFC], MFC class design", "Windows API [MFC], and MFC"]
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # General Class Design Philosophy
 Microsoft Windows was designed long before the C++ language became popular. Because thousands of applications use the C-language Windows application programming interface (API), that interface will be maintained for the foreseeable future. Any C++ Windows interface must therefore be built on top of the procedural C-language API. This guarantees that C++ applications will be able to coexist with C applications.  

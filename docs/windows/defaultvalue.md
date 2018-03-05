@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.defaultvalue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "defaultvalue attribute"
+f1_keywords: ["vc-attr.defaultvalue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["defaultvalue attribute"]
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultvalue
 Allows specification of a default value for a typed optional parameter.  
@@ -96,5 +79,4 @@ __interface IFireTabCtrl : IDispatch {
  [retval](../windows/retval.md)   
  [in](../windows/in-cpp.md)   
  [pointer_default](../windows/pointer-default.md)   
- [unique](../windows/unique-cpp.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [unique](../windows/unique-cpp.md)   

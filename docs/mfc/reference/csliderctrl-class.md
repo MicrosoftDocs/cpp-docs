@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSliderCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CSliderCtrl"
-  - "slider controls, CSliderCtrl class"
-  - "CSliderCtrl class, common controls"
-  - "CSliderCtrl class"
+f1_keywords: ["CSliderCtrl", "AFXCMN/CSliderCtrl", "AFXCMN/CSliderCtrl::CSliderCtrl", "AFXCMN/CSliderCtrl::ClearSel", "AFXCMN/CSliderCtrl::ClearTics", "AFXCMN/CSliderCtrl::Create", "AFXCMN/CSliderCtrl::CreateEx", "AFXCMN/CSliderCtrl::GetBuddy", "AFXCMN/CSliderCtrl::GetChannelRect", "AFXCMN/CSliderCtrl::GetLineSize", "AFXCMN/CSliderCtrl::GetNumTics", "AFXCMN/CSliderCtrl::GetPageSize", "AFXCMN/CSliderCtrl::GetPos", "AFXCMN/CSliderCtrl::GetRange", "AFXCMN/CSliderCtrl::GetRangeMax", "AFXCMN/CSliderCtrl::GetRangeMin", "AFXCMN/CSliderCtrl::GetSelection", "AFXCMN/CSliderCtrl::GetThumbLength", "AFXCMN/CSliderCtrl::GetThumbRect", "AFXCMN/CSliderCtrl::GetTic", "AFXCMN/CSliderCtrl::GetTicArray", "AFXCMN/CSliderCtrl::GetTicPos", "AFXCMN/CSliderCtrl::GetToolTips", "AFXCMN/CSliderCtrl::SetBuddy", "AFXCMN/CSliderCtrl::SetLineSize", "AFXCMN/CSliderCtrl::SetPageSize", "AFXCMN/CSliderCtrl::SetPos", "AFXCMN/CSliderCtrl::SetRange", "AFXCMN/CSliderCtrl::SetRangeMax", "AFXCMN/CSliderCtrl::SetRangeMin", "AFXCMN/CSliderCtrl::SetSelection", "AFXCMN/CSliderCtrl::SetThumbLength", "AFXCMN/CSliderCtrl::SetTic", "AFXCMN/CSliderCtrl::SetTicFreq", "AFXCMN/CSliderCtrl::SetTipSide", "AFXCMN/CSliderCtrl::SetToolTips"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSliderCtrl [MFC], CSliderCtrl", "CSliderCtrl [MFC], ClearSel", "CSliderCtrl [MFC], ClearTics", "CSliderCtrl [MFC], Create", "CSliderCtrl [MFC], CreateEx", "CSliderCtrl [MFC], GetBuddy", "CSliderCtrl [MFC], GetChannelRect", "CSliderCtrl [MFC], GetLineSize", "CSliderCtrl [MFC], GetNumTics", "CSliderCtrl [MFC], GetPageSize", "CSliderCtrl [MFC], GetPos", "CSliderCtrl [MFC], GetRange", "CSliderCtrl [MFC], GetRangeMax", "CSliderCtrl [MFC], GetRangeMin", "CSliderCtrl [MFC], GetSelection", "CSliderCtrl [MFC], GetThumbLength", "CSliderCtrl [MFC], GetThumbRect", "CSliderCtrl [MFC], GetTic", "CSliderCtrl [MFC], GetTicArray", "CSliderCtrl [MFC], GetTicPos", "CSliderCtrl [MFC], GetToolTips", "CSliderCtrl [MFC], SetBuddy", "CSliderCtrl [MFC], SetLineSize", "CSliderCtrl [MFC], SetPageSize", "CSliderCtrl [MFC], SetPos", "CSliderCtrl [MFC], SetRange", "CSliderCtrl [MFC], SetRangeMax", "CSliderCtrl [MFC], SetRangeMin", "CSliderCtrl [MFC], SetSelection", "CSliderCtrl [MFC], SetThumbLength", "CSliderCtrl [MFC], SetTic", "CSliderCtrl [MFC], SetTicFreq", "CSliderCtrl [MFC], SetTipSide", "CSliderCtrl [MFC], SetToolTips"]
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSliderCtrl Class
 Provides the functionality of the Windows common slider control.  
@@ -152,7 +132,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], to the control.  
+ Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the Windows SDK, to the control.  
   
  `rect`  
  Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -187,10 +167,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], to the control.  
+ Specifies the slider control's style. Apply any combination of [slider control styles](http://msdn.microsoft.com/library/windows/desktop/bb760147), described in the Windows SDK, to the control.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -233,7 +213,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
  A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the buddy window at the location specified by `fLocation`, or **NULL** if no buddy window exists at that location.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TBM_GETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760178), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TBM_GETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760178), as described in the Windows SDK. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect  
  Retrieves the size and position of the bounding rectangle for a slider control's channel.  
@@ -361,7 +341,7 @@ int GetThumbLength() const;
  The length of the slider, in pixels.  
   
 ### Remarks  
- This method sends the [TBM_GETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760201) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TBM_GETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760201) message, which is described in the Windows SDK.  
   
 ##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect  
  Retrieves the size and position of the bounding rectangle for the slider (thumb) in a slider control.  
@@ -386,7 +366,7 @@ int GetTic(int nTic) const;
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The position of the specified tick mark or – 1 if `nTic` does not specify a valid index.  
+ The position of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
   
 ##  <a name="getticarray"></a>  CSliderCtrl::GetTicArray  
  Retrieves the address of the array containing the positions of tick marks for a slider control.  
@@ -410,7 +390,7 @@ int GetTicPos(int nTic) const;
  Zero-based index identifying a tick mark.  
   
 ### Return Value  
- The physical position, in client coordinates, of the specified tick mark or – 1 if `nTic` does not specify a valid index.  
+ The physical position, in client coordinates, of the specified tick mark or - 1 if `nTic` does not specify a valid index.  
   
 ##  <a name="gettooltips"></a>  CSliderCtrl::GetToolTips  
  Retrieves the handle to the tooltip control assigned to the slider control, if any.  
@@ -423,9 +403,9 @@ CToolTipCtrl* GetToolTips() const;
  A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object, or **NULL** if tooltips are not in use. If the slider control does not use the **TBS_TOOLTIPS** style, the return value is **NULL**.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TBM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760209), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Note that this member function returns a `CToolTipCtrl` object instead of a handle to a control.  
+ This member function implements the behavior of the Win32 message [TBM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760209), as described in the Windows SDK. Note that this member function returns a `CToolTipCtrl` object instead of a handle to a control.  
   
- For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy  
  Assigns a window as the buddy window for a slider control.  
@@ -451,9 +431,9 @@ CWnd* SetBuddy(
  A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that was previously assigned to the slider control at that location.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TBM_SETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760213), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Note that this member function uses pointers to `CWnd` objects, rather than window handles for both its return value and parameter.  
+ This member function implements the behavior of the Win32 message [TBM_SETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760213), as described in the Windows SDK. Note that this member function uses pointers to `CWnd` objects, rather than window handles for both its return value and parameter.  
   
- For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize  
  Sets the size of the line for a slider control.  
@@ -584,7 +564,7 @@ void SetThumbLength(int nLength);
 ### Remarks  
  This method requires that the trackbar control be set to [TBS_FIXEDLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760147) style.  
   
- This method sends the [TBM_SETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760234) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TBM_SETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760234) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_sliderCtrl`, that is used to access the current trackbar control. The example also defines a variable, `thumbLength`, that is used to store the default length of the trackbar control's thumb component. These variables are used in the next example.  
@@ -635,13 +615,13 @@ int SetTipSide(int nLocation);
   
 ### Parameters  
  `nLocation`  
- Value representing the location at which to display the tooltip control. For a list of possible values, see the Win32 message [TBM_SETTIPSIDE](http://msdn.microsoft.com/library/windows/desktop/bb760240), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Value representing the location at which to display the tooltip control. For a list of possible values, see the Win32 message [TBM_SETTIPSIDE](http://msdn.microsoft.com/library/windows/desktop/bb760240), as described in the Windows SDK.  
   
 ### Return Value  
  A value that represents the tooltip control's previous location. The return value equals one of the possible values for `nLocation`.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message **TBM_SETTIPSIDE**, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Slider controls that use the **TBS_TOOLTIPS** style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ This member function implements the behavior of the Win32 message **TBM_SETTIPSIDE**, as described in the Windows SDK. Slider controls that use the **TBS_TOOLTIPS** style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips  
  Assigns a tooltip control to a slider control.  
@@ -655,7 +635,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object containing the tooltips to use with the slider control.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When a slider control is created with the **TBS_TOOLTIPS** style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242), as described in the Windows SDK. When a slider control is created with the **TBS_TOOLTIPS** style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb760147) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)   

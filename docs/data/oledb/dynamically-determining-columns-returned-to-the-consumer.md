@@ -4,41 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bookmarks [C++], dynamically determining columns"
-  - "dynamically determining columns [C++]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["bookmarks [C++], dynamically determining columns", "dynamically determining columns [C++]"]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Determining Columns Returned to the Consumer
 The PROVIDER_COLUMN_ENTRY macros normally handle the **IColumnsInfo::GetColumnsInfo** call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.  
   
  To handle the **IColumnsInfo::GetColumnsInfo** call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in MyProviderRS.h and replace it with the definition for your own `GetColumnInfo` function:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
 class CAgentMan  
@@ -65,7 +48,7 @@ public:
   
  To check for the **DBPROP_BOOKMARKS** property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can obtain by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////  
 // MyProviderRS.cpp  
 ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
@@ -126,12 +109,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
   
  This example uses a static array to contain the column information. If the consumer does not want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, `flags`, that is needed if you designate a bookmark column.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
-#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision,   
-scale, guid, dataClass, member) \  
+#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
@@ -142,8 +124,7 @@ scale, guid, dataClass, member) \
    _rgColumns[ulCols].bScale = (BYTE)scale; \  
    _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);  
   
-#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type,   
-precision, scale, guid, dataClass, member, flags) \  
+#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  

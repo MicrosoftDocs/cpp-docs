@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CWorkerThread<ThreadTraits>"
-  - "ATL::CWorkerThread"
-  - "ATL.CWorkerThread"
-  - "ATL.CWorkerThread<ThreadTraits>"
-  - "CWorkerThread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWorkerThread class"
+f1_keywords: ["CWorkerThread", "ATLUTIL/ATL::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::AddHandle", "ATLUTIL/ATL::CWorkerThread::AddTimer", "ATLUTIL/ATL::CWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CWorkerThread::GetThreadId", "ATLUTIL/ATL::CWorkerThread::Initialize", "ATLUTIL/ATL::CWorkerThread::RemoveHandle", "ATLUTIL/ATL::CWorkerThread::Shutdown"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWorkerThread class"]
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWorkerThread Class
 This class creates a worker thread or uses an existing one, waits on one or more kernel object handles, and executes a specified client function when one of the handles is signaled.  
@@ -92,7 +71,7 @@ class CWorkerThread
   
 3.  Call [CWorkerThread::AddHandle](#addhandle) with the handle of a kernel object and a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).  
   
-     – or –  
+     - or -  
   
      Call [CWorkerThread::AddTimer](#addtimer) with a pointer to an implementation of [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md).  
   
@@ -249,7 +228,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
   
 ### Parameters  
  `dwWait`  
- The time in milliseconds to wait for the worker thread to shut down.  
+ The time in milliseconds to wait for the worker thread to shut down. ATL_WORKER_THREAD_WAIT defaults to 10 seconds. If necessary, you can define your own value for this symbol before including atlutil.h. 
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure, such as if the timeout value, `dwWait`, is exceeded.  

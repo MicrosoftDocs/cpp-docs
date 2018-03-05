@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationTimerEventHandler"
-  - "CAnimationTimerEventHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationTimerEventHandler class"
+f1_keywords: ["CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::SetAnimationController"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationTimerEventHandler [MFC], CreateInstance", "CAnimationTimerEventHandler [MFC], OnPostUpdate", "CAnimationTimerEventHandler [MFC], OnPreUpdate", "CAnimationTimerEventHandler [MFC], OnRenderingTooSlow", "CAnimationTimerEventHandler [MFC], SetAnimationController"]
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationTimerEventHandler Class
 Implements a callback, which is called by the Animation API when timing events occur.  

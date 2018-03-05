@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.importwiz.appsettings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Create New Project From Existing Code Files Wizard, project settings"
+f1_keywords: ["vc.appwiz.importwiz.appsettings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Create New Project From Existing Code Files Wizard, project settings"]
 ms.assetid: 9b8860c9-d35f-4f18-9565-2934d3d7f569
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Specify Project Settings, Create New Project From Existing Code Files Wizard
 Use this page of the Create New Project From Existing Code Files wizard to specify:  

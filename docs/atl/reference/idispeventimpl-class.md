@@ -4,41 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDispEventImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDispEventImpl class"
+f1_keywords: ["IDispEventImpl", "ATLCOM/ATL::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId", "ATLCOM/ATL::IDispEventImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventImpl::GetUserDefinedType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDispEventImpl class"]
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IDispEventImpl Class
 This class provides implementations of the `IDispatch` methods.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -101,10 +84,10 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 ## Remarks  
  `IDispEventImpl` provides a way of implementing an event dispinterface without requiring you to supply implementation code for every method/event on that interface. `IDispEventImpl` provides implementations of the `IDispatch` methods. You only need to supply implementations for the events that you are interested in handling.  
   
- `IDispEventImpl` works in conjunction with the [event sink map](http://msdn.microsoft.com/library/32542b3d-ac43-4139-8ac4-41c48481744f) in your class to route events to the appropriate handler function. To use this class:  
+ `IDispEventImpl` works in conjunction with the event sink map in your class to route events to the appropriate handler function. To use this class:  
   
 
- Add a [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5) or [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](http://msdn.microsoft.com/library/0757a6af-3de3-4179-8b4f-ccd137d919b4) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
+ Add a [SINK_ENTRY](composite-control-macros.md#sink_entry) or [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex) macro to the event sink map for each event on each object that you want to handle. When using `IDispEventImpl` as a base class of a composite control, you can call [AtlAdviseSinkMap](connection-point-global-functions.md#atladvisesinkmap) to establish and break the connection with the event sources for all entries in the event sink map. In other cases, or for greater control, call [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) to establish the connection between the source object and the base class. Call [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  
 
   
  You must derive from `IDispEventImpl` (using a unique value for `nID`) for each object for which you need to handle events. You can reuse the base class by unadvising against one source object then advising against a different source object, but the maximum number of source objects that can be handled by a single object at one time is limited by the number of `IDispEventImpl` base classes.  
@@ -170,7 +153,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo  
  Retrieves the type information for an object, which can then be used to get the type information for an interface.  
@@ -192,7 +175,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
   
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType  
  Retrieves the basic type of a user-defined type.  
@@ -237,7 +220,7 @@ typedef tihclass _tihclass;
  [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)   
  [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)   
  [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)   
- [SINK_ENTRY](http://msdn.microsoft.com/library/33a5fff6-5248-47c0-8cf4-8bdf760e86e5)   
- [SINK_ENTRY_EX](http://msdn.microsoft.com/library/e1d14342-838f-4791-ac2f-5dae2801c1ac)   
- [SINK_ENTRY_INFO](http://msdn.microsoft.com/library/1a0ae260-2c82-4926-a537-db01e5f206a7)   
+ [SINK_ENTRY](composite-control-macros.md#sink_entry)   
+ [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)   
+ [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)   
  [Class Overview](../../atl/atl-class-overview.md)

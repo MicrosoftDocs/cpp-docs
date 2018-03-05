@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "is_locked"
-  - "msclr::lock::is_locked"
-  - "lock::is_locked"
-  - "msclr::lock.is_locked"
-  - "lock.is_locked"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lock::is_locked"
+f1_keywords: ["is_locked", "msclr::lock::is_locked", "lock::is_locked", "msclr::lock.is_locked", "lock.is_locked"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lock::is_locked"]
 ms.assetid: d888827c-8052-47c6-87a2-8c42f60a688d
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::is_locked
 Indicates whether a lock is being held.  

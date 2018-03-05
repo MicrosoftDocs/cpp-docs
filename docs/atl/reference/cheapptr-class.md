@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CHeapPtr"
-  - "CHeapPtr"
-  - "ATL.CHeapPtr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CHeapPtr class"
+f1_keywords: ["CHeapPtr", "ATLCORE/ATL::CHeapPtr", "ATLCORE/ATL::CHeapPtr::CHeapPtr", "ATLCORE/ATL::CHeapPtr::Allocate", "ATLCORE/ATL::CHeapPtr::Reallocate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHeapPtr class"]
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CHeapPtr Class
 A smart pointer class for managing heap pointers.  

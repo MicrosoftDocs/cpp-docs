@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::WeakRef::CopyTo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CopyTo method"
+f1_keywords: ["client/Microsoft::WRL::WeakRef::CopyTo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CopyTo method"]
 ms.assetid: f83de6da-b3d4-41a6-9845-cd725ecf3b75
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::CopyTo Method
 Assigns a pointer to an interface, if available, to the specified pointer variable.  

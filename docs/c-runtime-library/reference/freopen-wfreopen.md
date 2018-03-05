@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "freopen"
-  - "_wfreopen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["freopen", "_wfreopen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wfreopen"
-  - "_tfreopen"
-  - "freopen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wfreopen function"
-  - "file pointers [C++], reassigning"
-  - "_tfreopen function"
-  - "freopen function"
-  - "tfreopen function"
-  - "wfreopen function"
+f1_keywords: ["_wfreopen", "_tfreopen", "freopen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wfreopen function", "file pointers [C++], reassigning", "_tfreopen function", "freopen function", "tfreopen function", "wfreopen function"]
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # freopen, _wfreopen
 Reassigns a file pointer. More secure versions of these functions are available; see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
@@ -93,7 +56,7 @@ FILE *_wfreopen(
 ## Remarks  
  More secure versions of these functions exist, see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
   
- The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`*.* `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.  
+ The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`. `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -101,7 +64,7 @@ FILE *_wfreopen(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tfreopen`|`freopen`|`freopen`|`_wfreopen`|  
   
- `freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with `stream` is opened with `mode`*,* which is a character string specifying the type of access requested for the file, as follows:  
+ `freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with `stream` is opened with `mode`, which is a character string specifying the type of access requested for the file, as follows:  
   
  `"r"`  
  Opens for reading. If the file does not exist or cannot be found, the `freopen` call fails.  
@@ -130,7 +93,7 @@ FILE *_wfreopen(
  When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters may be included in the `mode` string to specify the translation mode for new lines.  
   
  `t`  
- Open in text (translated) mode; carriage return–linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with `"a+"`, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file may cause `fseek` to behave improperly near the end of the file. The `t` option is a Microsoft extension that should not be used where ANSI portability is desired.  
+ Open in text (translated) mode; carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with `"a+"`, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file may cause `fseek` to behave improperly near the end of the file. The `t` option is a Microsoft extension that should not be used where ANSI portability is desired.  
   
  `b`  
  Open in binary (untranslated) mode; the above translations are suppressed.  
@@ -146,7 +109,7 @@ FILE *_wfreopen(
 |`freopen`|\<stdio.h>|  
 |`_wfreopen`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+ The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   
@@ -182,12 +145,6 @@ int main( void )
 successfully reassigned  
 This will go to the file 'freopen.out'  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   <xref:System.IO.File.Open%2A>  
-  
--   <xref:System.IO.FileStream.%23ctor%2A>  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

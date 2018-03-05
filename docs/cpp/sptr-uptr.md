@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__uptr_cpp"
-  - "__sptr"
-  - "__uptr"
-  - "__sptr_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__sptr modifier"
-  - "__uptr modifier"
+f1_keywords: ["__uptr_cpp", "__sptr_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__sptr modifier", "__uptr modifier"]
 ms.assetid: c7f5f3b2-9106-4a0b-a6de-d1588ab153ed
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # __sptr, __uptr
 ## Microsoft Specific  
@@ -106,7 +85,7 @@ p32s: p64 = FFFFFFFF87654321
 p32u: p64 = 0000000087654321  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

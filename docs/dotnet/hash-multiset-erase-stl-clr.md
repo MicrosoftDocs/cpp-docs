@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset::erase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "erase member [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset::erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: bddd329d-aece-4b93-8355-005351c3aa45
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::erase (STL/CLR)
 Removes elements at specified positions.  
@@ -61,7 +44,7 @@ bool erase(key_type key)
 ## Remarks  
  The first member function removes the element of the controlled sequence pointed to by `where`, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.  
   
- The second member function removes the elements of the controlled sequence in the range `[``first``,` `last``)`, and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.  
+ The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.  
   
  The third member function removes any element of the controlled sequence whose key has equivalent ordering to `key`, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.  
   

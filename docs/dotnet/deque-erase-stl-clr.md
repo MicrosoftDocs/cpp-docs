@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::erase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "erase member [STL/CLR]"
+f1_keywords: ["cliext::deque::erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 831fbc2b-604f-446b-88bc-b37531304c33
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::erase (STL/CLR)
 Removes elements at specified positions.  
@@ -45,19 +28,19 @@ iterator erase(iterator first, iterator last);
 ```  
   
 #### Parameters  
- first  
+ `first`  
  Beginning of range to erase.  
   
- last  
+ `last`  
  End of range to erase.  
   
- where  
+ `where`  
  Element to erase.  
   
 ## Remarks  
  The first member function removes the element of the controlled sequence pointed to by `where`. You use it to remove a single element.  
   
- The second member function removes the elements of the controlled sequence in the range `[``first``,` `last``)`. You use it to remove zero or more contiguous elements.  
+ The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.  
   
  Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)`()` if no such element exists.  
   
@@ -65,7 +48,7 @@ iterator erase(iterator first, iterator last);
   
 ## Example  
   
-```  
+```cpp  
 // cliext_deque_erase.cpp   
 // compile with: /clr   
 #include <cliext/deque>   

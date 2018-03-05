@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "compiler options, macros"
+dev_langs: ["C++"]
+f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
+helpviewer_keywords: ["compiler options, macros"]
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Options Macros
 These macros control specific compiler features.  
@@ -81,7 +66,7 @@ These macros control specific compiler features.
   
  If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).  
   
- New projects generated with Visual C++ .NET 2002 will have this `#define` set in stdafx.h by default.  
+ New projects have this `#define` set in stdafx.h by default.  
   
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED  
  Define if one or more of your objects use apartment threading.  

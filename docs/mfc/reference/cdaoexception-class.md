@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDaoException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "errors [C++], DAO"
-  - "CDaoException class"
-  - "DAO (Data Access Objects), exceptions"
-  - "exceptions, in MFC DAO classes"
-  - "Errors collection, DAO"
-  - "collections, DAO errors"
+f1_keywords: ["CDaoException", "AFXDAO/CDaoException", "AFXDAO/CDaoException::CDaoException", "AFXDAO/CDaoException::GetErrorCount", "AFXDAO/CDaoException::GetErrorInfo", "AFXDAO/CDaoException::m_nAfxDaoError", "AFXDAO/CDaoException::m_pErrorInfo", "AFXDAO/CDaoException::m_scode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoException [MFC], CDaoException", "CDaoException [MFC], GetErrorCount", "CDaoException [MFC], GetErrorInfo", "CDaoException [MFC], m_nAfxDaoError", "CDaoException [MFC], m_pErrorInfo", "CDaoException [MFC], m_scode"]
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDaoException Class
 Represents an exception condition arising from the MFC database classes based on data access objects (DAO).  
@@ -205,7 +183,7 @@ void GetErrorInfo(int nIndex);
 ### Remarks  
  This is an OLE code. You will seldom need to use this value because, in almost all cases, more specific MFC or DAO error information is available in the other `CDaoException` data members.  
   
- For information about `SCODE`, see the topic [Structure of OLE Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The `SCODE` data type maps to the `HRESULT` data type.  
+ For information about `SCODE`, see the topic [Structure of OLE Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK. The `SCODE` data type maps to the `HRESULT` data type.  
   
 ## See Also  
  [CException Class](../../mfc/reference/cexception-class.md)   

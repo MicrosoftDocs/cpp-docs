@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB consumer templates [C++], transaction support"
-  - "transactions [C++], OLE DB support for"
-  - "nested transactions [C++]"
-  - "OLE DB [C++], transaction support"
-  - "databases [C++], transactions"
-  - "distributed transactions [C++]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB consumer templates [C++], transaction support", "transactions [C++], OLE DB support for", "nested transactions [C++]", "OLE DB [C++], transaction support", "databases [C++], transactions", "distributed transactions [C++]"]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Transactions in OLE DB
 A [transaction](../../data/transactions-mfc-data-access.md) is a way to group, or batch, a series of updates to a data source so that either all succeed and are committed at once or (if any one of them fails) none are committed and the entire transaction is rolled back. This process ensures the integrity of the result on the data source.  

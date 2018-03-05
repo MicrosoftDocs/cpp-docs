@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CW2WEX"
-  - "ATL.CW2WEX<t_nBufferLength>"
-  - "ATL::CW2WEX"
-  - "ATL.CW2WEX"
-  - "ATL::CW2WEX<t_nBufferLength>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CW2WEX class"
+f1_keywords: ["CW2WEX", "ATLCONV/ATL::CW2WEX", "ATLCONV/ATL::CW2WEX::CW2WEX", "ATLCONV/ATL::CW2WEX::m_psz", "ATLCONV/ATL::CW2WEX::m_szBuffer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CW2WEX class"]
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CW2WEX Class
 This class is used by the string conversion macros `CW2TEX` and `CT2WEX`, and the typedef `CW2W`.  
@@ -96,10 +75,10 @@ class CW2WEX
   
 - `CW2W`  
   
- For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863).  
+ For a discussion of these text conversion macros, see [ATL and MFC String Conversion Macros](string-conversion-macros.md).  
   
 ## Example  
- See [ATL and MFC String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863) for an example of using these string conversion macros.  
+ See [ATL and MFC String Conversion Macros](string-conversion-macros.md) for an example of using these string conversion macros.  
   
 ## Requirements  
  **Header:** atlconv.h  

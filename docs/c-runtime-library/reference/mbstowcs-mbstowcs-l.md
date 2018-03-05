@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "mbstowcs"
-  - "_mbstowcs_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["mbstowcs", "_mbstowcs_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbstowcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbstowcs_l function"
-  - "mbstowcs_l function"
-  - "mbstowcs function"
+f1_keywords: ["mbstowcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbstowcs_l function", "mbstowcs_l function", "mbstowcs function"]
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # mbstowcs, _mbstowcs_l
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md).  
@@ -98,13 +66,13 @@ size_t _mbstowcs_l(
  The locale to use.  
   
 ## Return Value  
- If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns –1. If the return value is `count`, the wide-character string is not null-terminated.  
+ If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the `wcstr` argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns -1. If the return value is `count`, the wide-character string is not null-terminated.  
   
 > [!IMPORTANT]
 >  Ensure that `wcstr` and `mbstr` do not overlap, and that `count` correctly reflects the number of multibyte characters to convert.  
   
 ## Remarks  
- The `mbstowcs` function converts up to a maximum number of `count` multibyte characters pointed to by `mbstr` to a string of corresponding wide characters that are determined by the current locale. It stores the resulting wide-character string at the address represented by `wcstr`*.* The result is similar to a series of calls to `mbtowc`. If `mbstowcs` encounters the single-byte null character ('\0') either before or when `count` occurs, it converts the null character to a wide-character null character (L'\0') and stops. Thus the wide-character string at `wcstr` is null-terminated only if a null character is encountered during conversion. If the sequences pointed to by `wcstr` and `mbstr` overlap, the behavior is undefined.  
+ The `mbstowcs` function converts up to a maximum number of `count` multibyte characters pointed to by `mbstr` to a string of corresponding wide characters that are determined by the current locale. It stores the resulting wide-character string at the address represented by `wcstr`. The result is similar to a series of calls to `mbtowc`. If `mbstowcs` encounters the single-byte null character ('\0') either before or when `count` occurs, it converts the null character to a wide-character null character (L'\0') and stops. Thus the wide-character string at `wcstr` is null-terminated only if a null character is encountered during conversion. If the sequences pointed to by `wcstr` and `mbstr` overlap, the behavior is undefined.  
   
  If the `wcstr` argument is `NULL`, `mbstowcs` returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.  
   
@@ -217,9 +185,6 @@ Convert back to wide-character string:
   Characters converted: 2  
   Hex value of first 2 wide characters: 0x3042 0x3043  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

@@ -4,79 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_CrtSetDbgFlag"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_CrtSetDbgFlag"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CRTDBG_REPORT_FLAG"
-  - "_CRTDBG_CHECK_EVERY_16_DF"
-  - "_CRTDBG_CHECK_DEFAULT_DF"
-  - "CRTDBG_CHECK_DEFAULT_DF"
-  - "CRTDBG_CHECK_EVERY_128_DF"
-  - "CRTDBG_CHECK_EVERY_1024_DF"
-  - "_CRTDBG_CHECK_EVERY_128_DF"
-  - "CrtSetDbgFlag"
-  - "CRTDBG_CHECK_EVERY_16_DF"
-  - "_CRTDBG_CHECK_EVERY_1024_DF"
-  - "_CrtSetDbgFlag"
-  - "CRTDBG_REPORT_FLAG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CRTDBG_CHECK_EVERY_16_DF macro"
-  - "CRTDBG_CHECK_EVERY_16_DF macro"
-  - "_CRTDBG_CHECK_ALWAYS_DF macro"
-  - "_CRTDBG_CHECK_DEFAULT_DF macro"
-  - "CRTDBG_ALLOC_MEM_DF macro"
-  - "CRTDBG_CHECK_ALWAYS_DF macro"
-  - "_CRTDBG_ALLOC_MEM_DF macro"
-  - "_CRTDBG_REPORT_FLAG macro"
-  - "_CRTDBG_CHECK_EVERY_128_DF macro"
-  - "CRTDBG_REPORT_FLAG macro"
-  - "_CRTDBG_CHECK_EVERY_1024_DF macro"
-  - "CRTDBG_CHECK_DEFAULT_DF macro"
-  - "CRTDBG_CHECK_EVERY_1024_DF macro"
-  - "_CrtSetDbgFlag function"
-  - "CrtSetDbgFlag function"
-  - "_CRTDBG_DELAY_FREE_MEM_DF macro"
-  - "CRTDBG_CHECK_EVERY_128_DF macro"
-  - "CRTDBG_DELAY_FREE_MEM_DF macro"
-  - "CRTDBG_CHECK_CRT_DF macro"
-  - "_CRTDBG_CHECK_CRT_DF macro"
+f1_keywords: ["_CRTDBG_REPORT_FLAG", "_CRTDBG_CHECK_EVERY_16_DF", "_CRTDBG_CHECK_DEFAULT_DF", "CRTDBG_CHECK_DEFAULT_DF", "CRTDBG_CHECK_EVERY_128_DF", "CRTDBG_CHECK_EVERY_1024_DF", "_CRTDBG_CHECK_EVERY_128_DF", "CrtSetDbgFlag", "CRTDBG_CHECK_EVERY_16_DF", "_CRTDBG_CHECK_EVERY_1024_DF", "_CrtSetDbgFlag", "CRTDBG_REPORT_FLAG"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CRTDBG_CHECK_EVERY_16_DF macro", "CRTDBG_CHECK_EVERY_16_DF macro", "_CRTDBG_CHECK_ALWAYS_DF macro", "_CRTDBG_CHECK_DEFAULT_DF macro", "CRTDBG_ALLOC_MEM_DF macro", "CRTDBG_CHECK_ALWAYS_DF macro", "_CRTDBG_ALLOC_MEM_DF macro", "_CRTDBG_REPORT_FLAG macro", "_CRTDBG_CHECK_EVERY_128_DF macro", "CRTDBG_REPORT_FLAG macro", "_CRTDBG_CHECK_EVERY_1024_DF macro", "CRTDBG_CHECK_DEFAULT_DF macro", "CRTDBG_CHECK_EVERY_1024_DF macro", "_CrtSetDbgFlag function", "CrtSetDbgFlag function", "_CRTDBG_DELAY_FREE_MEM_DF macro", "CRTDBG_CHECK_EVERY_128_DF macro", "CRTDBG_DELAY_FREE_MEM_DF macro", "CRTDBG_CHECK_CRT_DF macro", "_CRTDBG_CHECK_CRT_DF macro"]
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDbgFlag
 Retrieves or modifies the state of the **_crtDbgFlag** flag to control the allocation behavior of the debug heap manager (debug version only).  
@@ -271,9 +213,6 @@ int main( )
         p1 = malloc( 10 );  
 }  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

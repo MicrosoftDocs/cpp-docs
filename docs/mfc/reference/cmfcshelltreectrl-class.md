@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCShellTreeCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCShellTreeCtrl class"
+f1_keywords: ["CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCShellTreeCtrl [MFC], EnableShellContextMenu", "CMFCShellTreeCtrl [MFC], GetFlags", "CMFCShellTreeCtrl [MFC], GetItemPath", "CMFCShellTreeCtrl [MFC], GetRelatedList", "CMFCShellTreeCtrl [MFC], OnChildNotify", "CMFCShellTreeCtrl [MFC], OnGetItemIcon", "CMFCShellTreeCtrl [MFC], OnGetItemText", "CMFCShellTreeCtrl [MFC], Refresh", "CMFCShellTreeCtrl [MFC], SelectPath", "CMFCShellTreeCtrl [MFC], SetFlags", "CMFCShellTreeCtrl [MFC], SetRelatedList"]
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCShellTreeCtrl Class
 The `CMFCShellTreeCtrl` class extends [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md) functionality by displaying a hierarchy of Shell items.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -146,7 +130,7 @@ CMFCShellListCtrl* GetRelatedList() const;
  By using a `CMFCShellListCtrl` object together with a `CMFCShellTreeCtrl` object, you can create an Explorer-like window. Use the method [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) to associate the two classes. After they are associated, the framework automatically updates the `CMFCShellListCtrl` if the selection in the `CMFCShellTreeCtrl` changes.  
   
 ##  <a name="onchildnotify"></a>  CMFCShellTreeCtrl::OnChildNotify  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnChildNotify(
@@ -167,7 +151,7 @@ virtual BOOL OnChildNotify(
 ### Remarks  
   
 ##  <a name="ongetitemicon"></a>  CMFCShellTreeCtrl::OnGetItemIcon  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int OnGetItemIcon(
@@ -184,7 +168,7 @@ virtual int OnGetItemIcon(
 ### Remarks  
   
 ##  <a name="ongetitemtext"></a>  CMFCShellTreeCtrl::OnGetItemText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
@@ -212,7 +196,8 @@ void Refresh();
   
 ```  
 BOOL SelectPath(LPCTSTR lpszPath);
-BOOL SelectPath(LPCITEMIDLIST lpidl);```  
+BOOL SelectPath(LPCITEMIDLIST lpidl);
+```  
   
 ### Parameters  
  [in] `lpszPath`  

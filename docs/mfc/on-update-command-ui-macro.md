@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_UPDATE_COMMAND_UI"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_UPDATE_COMMAND_UI macro"
-  - "update handlers"
-  - "command-handler macros"
-  - "updating user-interface objects"
+f1_keywords: ["ON_UPDATE_COMMAND_UI"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "update handlers [MFC]", "command-handler macros", "updating user-interface objects [MFC]"]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ON_UPDATE_COMMAND_UI Macro
 Use the **Properties** window to connect a user-interface object to a command-update handler in a command-target object. It will automatically connect the user-interface object's ID to the `ON_UPDATE_COMMAND_UI` macro and create a handler in the object that will handle the update. See [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md) for more information.  

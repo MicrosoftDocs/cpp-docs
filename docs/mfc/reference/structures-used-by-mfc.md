@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.structures"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structures"
-  - "structures, MFC"
+f1_keywords: ["vc.mfc.structures"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["structures", "structures, MFC"]
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Structures Used by MFC
 The following table lists structures that are called from various member functions. For further information on individual structure usage, refer to the classes and member functions noted in the See Also list for each structure.  

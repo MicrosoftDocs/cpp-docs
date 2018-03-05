@@ -4,48 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], about resources"
-  - "resources [C++], about resource files"
-  - "resource files, about resource files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], about resources", "resources [C++], about resource files", "resource files, about resource files"]
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Working with Resource Files
 > [!WARNING]
->  This section applies to Windows desktop applications written in C++. For information about resources in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
->  For information on adding resources to C++/CLI  projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
+>  For information on adding resources to C++/CLI  projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  Resources can be composed of a wide range of elements, including interface elements that provide information to the user (for example a bitmap, icon, or cursor); custom resources that contain data an application needs; version resources that are used by setup APIs; and menu and dialog box resources.  
   
  You can add new resources to your project and modify those resources using the appropriate resource editor. Most Visual C++ wizards will automatically generate an .rc file for your project.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## In This Section  
  [Resource Files](../windows/resource-files-visual-studio.md)  

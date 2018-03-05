@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::operator<="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator<= member [STL/CLR]"
+f1_keywords: ["cliext::multimap::operator<="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: f23cdacd-fb1b-4e87-8e32-497226841871
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (multimap) (STL/CLR)
 List less than or equal comparison.  
@@ -54,7 +37,7 @@ template<typename Key,
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``right` `<` `left``)`. You use it to test whether `left` is not ordered after `right` when the two multimaps are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two multimaps are compared element by element.  
   
 ## Example  
   

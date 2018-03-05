@@ -4,80 +4,62 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<complex>"
-  - "std.<complex>"
-  - "std::<complex>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "complex header"
+ms.topic: "reference"
+f1_keywords: ["<complex>", "std::<complex>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["complex header"]
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;complex&gt;
-Defines the container template class complex and its supporting templates.  
+Defines the container template class **complex** and its supporting templates.  
   
 ## Syntax  
   
 ```  
 #include <complex>  
-  
 ```  
   
 ## Remarks  
  A complex number is an ordered pair of real numbers. In purely geometrical terms, the complex plane is the real, two-dimensional plane. The special qualities of the complex plane that distinguish it from the real plane are due to its having an additional algebraic structure. This algebraic structure has two fundamental operations:  
   
--   Addition defined as (*a, b*) + (*c, d*) = (*a + c, b + d)*  
+-   Addition defined as (*a*, *b*) + (*c*, *d*) = (*a* + *c*, *b* + *d*)  
   
--   Multiplication defined as (*a, b*) \* (*c, d*) = (*ac - bd, ad + bc*)  
+-   Multiplication defined as (*a*, *b*) \* (*c*, *d*) = (*ac* - *bd*, *ad* + *bc*)  
   
  The set of complex numbers with the operations of complex addition and complex multiplication are a field in the standard algebraic sense:  
   
 -   The operations of addition and multiplication are commutative and associative and multiplication distributes over addition exactly as it does with real addition and multiplication on the field of real numbers.  
   
--   The complex number (*0, 0*) is the additive identity and (*1, 0*) is the multiplicative identity.  
+-   The complex number (0, 0) is the additive identity and (1, 0) is the multiplicative identity.  
   
--   The additive inverse for a complex number (*a, b*) is (*-a, -b*), and the multiplicative inverse for all such complex numbers except (*0, 0*) is  
+-   The additive inverse for a complex number (*a*, *b*) is (-*a*, -*b*), and the multiplicative inverse for all such complex numbers except (0, 0) is  
   
-     (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>)  
+     (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>))  
   
- By representing a complex number *z = (a, b)* in the form *z = a + bi*, where *i*<sup>2</sup> *=* -1, the rules for the algebra of the set of real numbers can be applied to the set of complex numbers and to their components. For example:  
+ By representing a complex number *z* = (*a*, *b*) in the form *z* = *a* + *bi*, where *i*<sup>2</sup> = -1, the rules for the algebra of the set of real numbers can be applied to the set of complex numbers and to their components. For example:  
   
- (1 + 2*i*) \* (2 + 3*i*)    = 1\*(2 + 3*i*) + 2*i*\*(2 + 3*i*) = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)  
+  (1 + 2*i*) \* (2 + 3*i*)  
+  = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*)  
+  = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)  
+  = (2 - 6) + (3 + 4)*i*  
+  = -4 + 7*i*  
   
- = (2 –6) + (3 + 4)*i* = -4 + 7*i*  
-  
- The system of complex numbers is a field, but it is not an ordered field. There is no ordering of the complex numbers as there is for the field or real numbers and its subsets, so inequalities cannot be applied to complex numbers as they are to real numbers which is an ordered field.  
+ The system of complex numbers is a field, but it is not an ordered field. There is no ordering of the complex numbers as there is for the field of real numbers and its subsets, so inequalities cannot be applied to complex numbers as they are to real numbers.  
   
  There are three common forms of representing a complex number *z*:  
   
--   Cartesian: *z = a + bi*  
+-   Cartesian: *z* = *a* + *bi*  
   
--   Polar: *z = r* (cos *+ i*sin)  
+-   Polar: *z* = *r* (cos *p* + *i* sin *p*)  
   
--   Exponential: *z = r \** exp()  
+-   Exponential: *z* = *r* \* *e*<sup>*ip*</sup>  
   
  The terms used in these standard representations of a complex number are referred to as follows:  
   
@@ -85,11 +67,11 @@ Defines the container template class complex and its supporting templates.
   
 -   The imaginary Cartesian component or imaginary part *b*.  
   
--   The modulus or absolute value of a complex number Ρ.  
+-   The modulus or absolute value of a complex number *r*.  
   
--   The argument or phase angle .  
+-   The argument or phase angle *p* in radians.  
   
- Unless otherwise specified, functions that can return multiple values are required to return a principal value for their arguments greater than –pi and less than or equal to +pi to keep them single valued. All angles need to be expressed in radians, where there are 2 pi radians (360 degrees) in a circle.  
+ Unless otherwise specified, functions that can return multiple values are required to return a principal value for their arguments greater than -π and less than or equal to +π to keep them single valued. All angles must be expressed in radians, where there are 2π radians (360 degrees) in a circle.  
   
 ### Functions  
   
@@ -118,22 +100,22 @@ Defines the container template class complex and its supporting templates.
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/complex-operators.md#operator_neq)|Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
-|[operator*](../standard-library/complex-operators.md#operator_star)|Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
-|[operator+](../standard-library/complex-operators.md#operator_add)|Adds two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
+|[operator!=](../standard-library/complex-operators.md#op_neq)|Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
+|[operator*](../standard-library/complex-operators.md#op_star)|Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
+|[operator+](../standard-library/complex-operators.md#op_add)|Adds two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
 |[operator-](../standard-library/complex-operators.md#operator-)|Subtracts two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
-|[operator/](../standard-library/complex-operators.md#operator_)|Divides two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
-|[operator<\<](../standard-library/complex-operators.md#operator_lt__lt_)|A template function that inserts a complex number into the output stream.|  
-|[operator==](../standard-library/complex-operators.md#operator_eq_eq)|Tests for equality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
-|[operator>>](../standard-library/complex-operators.md#operator_gt__gt_)|A template function that extracts a complex value from the input stream.|  
+|[operator/](../standard-library/complex-operators.md#op_div)|Divides two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
+|[operator<\<](../standard-library/complex-operators.md#op_lt_lt)|A template function that inserts a complex number into the output stream.|  
+|[operator==](../standard-library/complex-operators.md#op_eq_eq)|Tests for equality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|  
+|[operator>>](../standard-library/complex-operators.md#op_gt_gt)|A template function that extracts a complex value from the input stream.|  
   
 ### Classes  
   
 |||  
 |-|-|  
-|[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **double***,* first representing the real part of a complex number and the second representing the imaginary part.|  
-|[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type **float***,* first representing the real part of a complex number and the second representing the imaginary part.|  
-|[complex\<long double>](../standard-library/complex-long-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects both of type `long double`*,* first representing the real part of a complex number and the second representing the imaginary part.|  
+|[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **double**, where the first represents the real part of a complex number and the second represents the imaginary part.|  
+|[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **float**, where the first represents the real part of a complex number and the second represents the imaginary part.|  
+|[complex\<long double>](../standard-library/complex-long-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **long double**, where the first represents the real part of a complex number and the second represents the imaginary part.|  
 |[complex](../standard-library/complex-class.md)|The template class describes an object used to represent the complex number system and perform complex arithmetic operations.|  
   
 ### Literals  
@@ -141,7 +123,7 @@ Defines the container template class complex and its supporting templates.
   
 |||  
 |-|-|  
-|`constexpr complex<long double> operator""il(long double d)il(long double d)`<br /><br /> `constexpr complex<long double> operator""il(unsigned long long d)`|Returns `complex<long double>{0.0L, static_cast<long double>(d)}`|  
+|`constexpr complex<long double> operator""il(long double d)`<br /><br /> `constexpr complex<long double> operator""il(unsigned long long d)`|Returns: `complex<long double>{0.0L, static_cast<long double>(d)}`|  
 |`constexpr complex<double> operator""i(long double d)`<br /><br /> `constexpr complex<double> operator""i(unsigned long long d)`|Returns: `complex<double>{0.0, static_cast<double>(d)}`.|  
 |`constexpr complex<float> operator""if(long double d)`<br /><br /> `constexpr complex<float> operator""if(unsigned long long d)`|Returns: `complex<float>{0.0f, static_cast<float>(d)}`.|  
   

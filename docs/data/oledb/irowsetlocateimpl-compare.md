@@ -4,54 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATL.IRowsetLocateImpl.Compare"
-  - "IRowsetLocateImpl::Compare"
-  - "IRowsetLocateImpl.Compare"
-  - "ATL::IRowsetLocateImpl::Compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Compare method"
+ms.topic: "reference"
+f1_keywords: ["ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Compare method"]
 ms.assetid: 6f84052c-c68c-480a-982f-03748faa7d5d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl::Compare
 Compares two bookmarks.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Compare )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Compare )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmark1,  
    const BYTE* pBookmark1,  
    DBBKMARK cbBookmark2,  
    const BYTE* pBookmark2,  
-   DBCOMPARE* pComparison   
-);  
+   DBCOMPARE* pComparison);  
 ```  
   
 #### Parameters  

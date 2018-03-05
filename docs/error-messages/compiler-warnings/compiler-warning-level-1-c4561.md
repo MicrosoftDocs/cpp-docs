@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4561"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4561"
+f1_keywords: ["C4561"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4561"]
 ms.assetid: 3a10c12c-601b-4b6c-9861-331fd022e021
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4561
 '__fastcall' incompatible with the '/clr' option: converting to '\__stdcall'  

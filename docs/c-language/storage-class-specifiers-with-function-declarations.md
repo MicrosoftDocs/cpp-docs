@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function specifiers, storage class"
-  - "declaring functions, specifiers"
-  - "external declarations"
-  - "specifiers, function"
-  - "external linkage, function declarations"
-  - "external linkage, storage-class specifiers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function specifiers, storage class", "declaring functions, specifiers", "external declarations", "specifiers, function", "external linkage, function declarations", "external linkage, storage-class specifiers"]
 ms.assetid: 801d7df2-efa9-4924-a725-274a5654cfd4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Storage-Class Specifiers with Function Declarations
 You can use either the **static** or the `extern` storage-class specifier in function declarations. Functions always have global lifetimes.  

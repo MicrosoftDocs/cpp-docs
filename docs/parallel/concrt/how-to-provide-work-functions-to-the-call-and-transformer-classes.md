@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "call class, example"
-  - "using the transformer class [Concurrency Runtime]"
-  - "using the call class [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["call class, example", "using the transformer class [Concurrency Runtime]", "using the call class [Concurrency Runtime]"]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # How to: Provide Work Functions to the call and transformer Classes
 This topic illustrates several ways to provide work functions to the [concurrency::call](../../parallel/concrt/reference/call-class.md) and [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) classes.  
@@ -60,7 +41,7 @@ This topic illustrates several ways to provide work functions to the [concurrenc
   
 ## Example  
 
- The following example resembles the previous one, except that it uses the [std::bind1st](../../standard-library/functional-functions.md#bind1st_function) and [std::mem_fun](../../standard-library/functional-functions.md#mem_fun_function) functions to bind a `call` object to a class method.  
+ The following example resembles the previous one, except that it uses the [std::bind1st](../../standard-library/functional-functions.md#bind1st) and [std::mem_fun](../../standard-library/functional-functions.md#mem_fun) functions to bind a `call` object to a class method.  
 
   
  Use this technique if you have to bind a `call` or `transformer` object to a specific class method instead of the function call operator, `operator()`.  

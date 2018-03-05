@@ -5,272 +5,16 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "algorithm/std::adjacent_find"
-  - "std::adjacent_find"
-  - "adjacent_find"
-  - "algorithm/std::all_of"
-  - "std::all_of"
-  - "all_of"
-  - "algorithm/std::any_of"
-  - "std::any_of"
-  - "any_of"
-  - "algorithm/std::binary_search"
-  - "std::binary_search"
-  - "binary_search"
-  - "algorithm/std::copy"
-  - "std::copy"
-  - "copy"
-  - "algorithm/std::copy_backward"
-  - "std::copy_backward"
-  - "copy_backward"
-  - "algorithm/std::copy_if"
-  - "std::copy_if"
-  - "copy_if"
-  - "algorithm/std::copy_n"
-  - "std::copy_n"
-  - "copy_n"
-  - "algorithm/std::equal"
-  - "std::equal"
-  - "equal"
-  - "algorithm/std::equal_range"
-  - "std::equal_range"
-  - "equal_range"
-  - "algorithm/std::fill"
-  - "std::fill"
-  - "fill"
-  - "algorithm/std::fill_n"
-  - "std::fill_n"
-  - "fill_n"
-  - "algorithm/std::find"
-  - "std::find"
-  - "find"
-  - "algorithm/std::find_end"
-  - "std::find_end"
-  - "find_end"
-  - "algorithm/std::find_first_of"
-  - "std::find_first_of"
-  - "find_first_of"
-  - "algorithm/std::find_if"
-  - "std::find_if"
-  - "find_if"
-  - "algorithm/std::find_if_not"
-  - "std::find_if_not"
-  - "find_if_not"
-  - "algorithm/std::for_each"
-  - "std::for_each"
-  - "for_each"
-  - "algorithm/std::generate"
-  - "std::generate"
-  - "generate"
-  - "algorithm/std::generate_n"
-  - "std::generate_n"
-  - "generate_n"
-  - "algorithm/std::includes"
-  - "std::includes"
-  - "includes"
-  - "algorithm/std::inplace_merge"
-  - "std::inplace_merge"
-  - "inplace_merge"
-  - "algorithm/std::is_heap"
-  - "std::is_heap"
-  - "is_heap"
-  - "algorithm/std::is_heap_until"
-  - "std::is_heap_until"
-  - "is_heap_until"
-  - "algorithm/std::is_partitioned"
-  - "std::is_partitioned"
-  - "is_partitioned"
-  - "algorithm/std::is_permutation"
-  - "std::is_permutation"
-  - "is_permutation"
-  - "algorithm/std::is_sorted"
-  - "std::is_sorted"
-  - "is_sorted"
-  - "algorithm/std::is_sorted_until"
-  - "std::is_sorted_until"
-  - "is_sorted_until"
-  - "algorithm/std::iter_swap"
-  - "std::iter_swap"
-  - "iter_swap"
-  - "algorithm/std::lexicographical_compare"
-  - "std::lexicographical_compare"
-  - "lexicographical_compare"
-  - "algorithm/std::lower_bound"
-  - "std::lower_bound"
-  - "lower_bound"
-  - "algorithm/std::make_heap"
-  - "std::make_heap"
-  - "make_heap"
-  - "algorithm/std::max"
-  - "std::max"
-  - "max"
-  - "algorithm/std::max_element"
-  - "std::max_element"
-  - "max_element"
-  - "algorithm/std::merge"
-  - "std::merge"
-  - "merge"
-  - "algorithm/std::min"
-  - "std::min"
-  - "min"
-  - "algorithm/std::minmax"
-  - "std::minmax"
-  - "minmax"
-  - "algorithm/std::minmax_element"
-  - "std::minmax_element"
-  - "minmax_element"
-  - "algorithm/std::min_element"
-  - "std::min_element"
-  - "min_element"
-  - "algorithm/std::mismatch"
-  - "std::mismatch"
-  - "mismatch"
-  - "algorithm/std::move"
-  - "std::move"
-  - "move"
-  - "algorithm/std::move_backward"
-  - "std::move_backward"
-  - "move_backward"
-  - "algorithm/std::next_permutation"
-  - "std::next_permutation"
-  - "next_permutation"
-  - "algorithm/std::none_of"
-  - "std::none_of"
-  - "none_of"
-  - "algorithm/std::nth_element"
-  - "std::nth_element"
-  - "nth_element"
-  - "algorithm/std::partial_sort"
-  - "std::partial_sort"
-  - "partial_sort"
-  - "algorithm/std::partial_sort_copy"
-  - "std::partial_sort_copy"
-  - "partial_sort_copy"
-  - "algorithm/std::partition"
-  - "std::partition"
-  - "partition"
-  - "algorithm/std::partition_point"
-  - "std::partition_point"
-  - "partition_point"
-  - "algorithm/std::pop_heap"
-  - "std::pop_heap"
-  - "pop_heap"
-  - "algorithm/std::prev_permutation"
-  - "std::prev_permutation"
-  - "prev_permutation"
-  - "algorithm/std::push_heap"
-  - "std::push_heap"
-  - "push_heap"
-  - "algorithm/std::random_shuffle"
-  - "std::random_shuffle"
-  - "random_shuffle"
-  - "algorithm/std::remove"
-  - "std::remove"
-  - "remove"
-  - "algorithm/std::remove_copy"
-  - "std::remove_copy"
-  - "remove_copy"
-  - "algorithm/std::remove_copy_if"
-  - "std::remove_copy_if"
-  - "remove_copy_if"
-  - "algorithm/std::remove_if"
-  - "std::remove_if"
-  - "remove_if"
-  - "algorithm/std::replace"
-  - "std::replace"
-  - "replace"
-  - "algorithm/std::replace_copy"
-  - "std::replace_copy"
-  - "replace_copy"
-  - "algorithm/std::replace_copy_if"
-  - "std::replace_copy_if"
-  - "replace_copy_if"
-  - "algorithm/std::replace_if"
-  - "std::replace_if"
-  - "replace_if"
-  - "algorithm/std::reverse"
-  - "std::reverse"
-  - "reverse"
-  - "algorithm/std::reverse_copy"
-  - "std::reverse_copy"
-  - "reverse_copy"
-  - "algorithm/std::rotate"
-  - "std::rotate"
-  - "rotate"
-  - "algorithm/std::rotate_copy"
-  - "std::rotate_copy"
-  - "rotate_copy"
-  - "algorithm/std::search"
-  - "std::search"
-  - "search"
-  - "algorithm/std::search_n"
-  - "std::search_n"
-  - "search_n"
-  - "algorithm/std::set_difference"
-  - "std::set_difference"
-  - "set_difference"
-  - "algorithm/std::set_intersection"
-  - "std::set_intersection"
-  - "set_intersection"
-  - "algorithm/std::set_symmetric_difference"
-  - "std::set_symmetric_difference"
-  - "set_symmetric_difference"
-  - "algorithm/std::set_union"
-  - "std::set_union"
-  - "set_union"
-  - "algorithm/std::shuffle"
-  - "std::shuffle"
-  - "shuffle"
-  - "algorithm/std::sort"
-  - "std::sort"
-  - "sort"
-  - "algorithm/std::sort_heap"
-  - "std::sort_heap"
-  - "sort_heap"
-  - "algorithm/std::stable_partition"
-  - "std::stable_partition"
-  - "stable_partition"
-  - "algorithm/std::stable_sort"
-  - "std::stable_sort"
-  - "stable_sort"
-  - "algorithm/std::swap_ranges"
-  - "std::swap_ranges"
-  - "swap_ranges"
-  - "algorithm/std::transform"
-  - "std::transform"
-  - "transform"
-  - "algorithm/std::unique"
-  - "std::unique"
-  - "unique"
-  - "algorithm/std::unique_copy"
-  - "std::unique_copy"
-  - "unique_copy"
-  - "algorithm/std::upper_bound"
-  - "std::upper_bound"
-  - "upper_bound"
-  - "xutility/std::copy"
-  - "xutility/std::copy_backward"
-  - "xutility/std::copy_n"
-  - "xutility/std::count"
-  - "std::count"
-  - "count"
-  - "xutility/std::equal"
-  - "xutility/std::fill"
-  - "xutility/std::fill_n"
-  - "xutility/std::find"
-  - "xutility/std::is_permutation"
-  - "xutility/std::lexicographical_compare"
-  - "xutility/std::move"
-  - "xutility/std::move_backward"
-  - "xutility/std::reverse"
-  - "xutility/std::rotate"
+ms.topic: "reference"
+f1_keywords: ["algorithm/std::adjacent_find", "algorithm/std::all_of", "algorithm/std::any_of", "algorithm/std::binary_search", "algorithm/std::copy", "algorithm/std::copy_backward", "algorithm/std::copy_if", "algorithm/std::copy_n", "algorithm/std::equal", "algorithm/std::equal_range", "algorithm/std::fill", "algorithm/std::fill_n", "algorithm/std::find", "algorithm/std::find_end", "algorithm/std::find_first_of", "algorithm/std::find_if", "algorithm/std::find_if_not", "algorithm/std::for_each", "algorithm/std::generate", "algorithm/std::generate_n", "algorithm/std::includes", "algorithm/std::inplace_merge", "algorithm/std::is_heap", "algorithm/std::is_heap_until", "algorithm/std::is_partitioned", "algorithm/std::is_permutation", "algorithm/std::is_sorted", "algorithm/std::is_sorted_until", "algorithm/std::iter_swap", "algorithm/std::lexicographical_compare", "algorithm/std::lower_bound", "algorithm/std::make_heap", "algorithm/std::max", "algorithm/std::max_element", "algorithm/std::merge", "algorithm/std::min", "algorithm/std::minmax", "algorithm/std::minmax_element", "algorithm/std::min_element", "algorithm/std::mismatch", "algorithm/std::move", "algorithm/std::move_backward", "algorithm/std::next_permutation", "algorithm/std::none_of", "algorithm/std::nth_element", "algorithm/std::partial_sort", "algorithm/std::partial_sort_copy", "algorithm/std::partition", "algorithm/std::partition_point", "algorithm/std::pop_heap", "algorithm/std::prev_permutation", "algorithm/std::push_heap", "algorithm/std::random_shuffle", "algorithm/std::remove", "algorithm/std::remove_copy", "algorithm/std::remove_copy_if", "algorithm/std::remove_if", "algorithm/std::replace", "algorithm/std::replace_copy", "algorithm/std::replace_copy_if", "algorithm/std::replace_if", "algorithm/std::reverse", "algorithm/std::reverse_copy", "algorithm/std::rotate", "algorithm/std::rotate_copy", "algorithm/std::search", "algorithm/std::search_n", "algorithm/std::set_difference", "algorithm/std::set_intersection", "algorithm/std::set_symmetric_difference", "algorithm/std::set_union", "algorithm/std::shuffle", "algorithm/std::sort", "algorithm/std::sort_heap", "algorithm/std::stable_partition", "algorithm/std::stable_sort", "algorithm/std::swap_ranges", "algorithm/std::transform", "algorithm/std::unique", "algorithm/std::unique_copy", "algorithm/std::upper_bound", "xutility/std::copy", "xutility/std::copy_backward", "xutility/std::copy_n", "xutility/std::count", "xutility/std::equal", "xutility/std::fill", "xutility/std::fill_n", "xutility/std::find", "xutility/std::is_permutation", "xutility/std::lexicographical_compare", "xutility/std::move", "xutility/std::move_backward", "xutility/std::reverse", "xutility/std::rotate", "algorithm/std::count_if", "algorithm/std::partition_copy", "algorithm/std::swap"]
+dev_langs: ["C++"]
 ms.assetid: c10b0c65-410c-4c83-abf8-8b7f61bba8d0
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any_of [C++]", "std::binary_search [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_if [C++]", "std::copy_n [C++]", "std::equal [C++]", "std::equal_range [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::find_end [C++]", "std::find_first_of [C++]", "std::find_if [C++]", "std::find_if_not [C++]", "std::for_each [C++]", "std::generate [C++]", "std::generate_n [C++]", "std::includes [C++]", "std::inplace_merge [C++]", "std::is_heap [C++]", "std::is_heap_until [C++]", "std::is_partitioned [C++]", "std::is_permutation [C++]", "std::is_sorted [C++]", "std::is_sorted_until [C++]", "std::iter_swap [C++]", "std::lexicographical_compare [C++]", "std::lower_bound [C++]", "std::make_heap [C++]", "std::max [C++]", "std::max_element [C++]", "std::merge [C++]", "std::min [C++]", "std::minmax [C++]", "std::minmax_element [C++]", "std::min_element [C++]", "std::mismatch [C++]", "std::move [C++]", "std::move_backward [C++]", "std::next_permutation [C++]", "std::none_of [C++]", "std::nth_element [C++]", "std::partial_sort [C++]", "std::partial_sort_copy [C++]", "std::partition [C++]", "std::partition_point [C++]", "std::pop_heap [C++]", "std::prev_permutation [C++]", "std::push_heap [C++]", "std::random_shuffle [C++]", "std::remove [C++]", "std::remove_copy [C++]", "std::remove_copy_if [C++]", "std::remove_if [C++]", "std::replace [C++]", "std::replace_copy [C++]", "std::replace_copy_if [C++]", "std::replace_if [C++]", "std::reverse [C++]", "std::reverse_copy [C++]", "std::rotate [C++]", "std::rotate_copy [C++]", "std::search [C++]", "std::search_n [C++]", "std::set_difference [C++]", "std::set_intersection [C++]", "std::set_symmetric_difference [C++]", "std::set_union [C++]", "std::shuffle [C++]", "std::sort [C++]", "std::sort_heap [C++]", "std::stable_partition [C++]", "std::stable_sort [C++]", "std::swap_ranges [C++]", "std::transform [C++]", "std::unique [C++]", "std::unique_copy [C++]", "std::upper_bound [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_n [C++]", "std::count [C++]", "std::equal [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::is_permutation [C++]", "std::lexicographical_compare [C++]", "std::move [C++]", "std::move_backward [C++]", "std::reverse [C++]", "std::rotate [C++]", "std::count_if [C++]", "std::partition_copy [C++]", "std::swap [C++]"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;algorithm&gt; functions
 ||||  
@@ -301,7 +45,7 @@ manager: "ghogen"
 |[search_n](#search_n)|[set_difference](#set_difference)|[set_intersection](#set_intersection)|  
 |[set_symmetric_difference](#set_symmetric_difference)|[set_union](#set_union)|[sort](#sort)|  
 |[sort_heap](#sort_heap)|[stable_partition](#stable_partition)|[stable_sort](#stable_sort)|  
-|[std::shuffle](#std__shuffle)|[swap](#swap)|[swap_ranges](#swap_ranges)|  
+|[shuffle](#shuffle)|[swap](#swap)|[swap_ranges](#swap_ranges)|  
 |[transform](#transform)|[unique](#unique)|[unique_copy](#unique_copy)|  
 |[upper_bound](#upper_bound)|  
   
@@ -455,7 +199,7 @@ template<class InputIterator, class UnaryPredicate>
 ### Remarks  
  The template function returns `true` only if, for some `N` in the range  
   
- `[0,`  `last`  `-`   `first` `)`, the predicate `comp``(*(` `first` `+ N))` is true.  
+ `[0, last - first)`, the predicate `comp(*(first + N))` is true.  
   
 ##  <a name="binary_search"></a>  binary_search  
  Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.  
@@ -487,7 +231,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
  The value required to be matched by the value of the element or that must satisfy the condition with the element value specified by the binary predicate.  
   
  `comp`  
- User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns `true`when satisfied and `false` when not satisfied.  
+ User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns `true` when satisfied and `false` when not satisfied.  
   
 ### Return Value  
  `true` if an element is found in the range that is equal or equivalent to the specified value; otherwise, `false`.  
@@ -501,7 +245,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
   
  The value types of the forward iterators need to be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` – `first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` - `first`).  
   
 ### Example  
   
@@ -607,7 +351,7 @@ template<class InputIterator, class OutputIterator>
  An output iterator addressing the position of the first element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + ( `last` –  `first` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + ( `last` -  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
@@ -696,7 +440,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Return Value  
- An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `destEnd` – ( `last` –  `first` ).  
+ An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `destEnd` - ( `last` -  `first` ).  
   
 ### Remarks  
  The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.  
@@ -793,7 +537,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
   
  `if (_Pred(*_First + N)) * dest++ = *(_First + N))`  
   
- once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
+ once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[ first, last )`.  
   
 ##  <a name="copy_n"></a>  copy_n  
  Copies a specified number of elements.  
@@ -820,7 +564,7 @@ template<class InputIterator, class Size, class OutputIterator>
  Returns an output iterator where elements have been copied to. It is the same as the returned value of the third parameter, `dest`.  
   
 ### Remarks  
- The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0,` `count``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[``first``,` `Last``)`.  
+ The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.  
   
 ##  <a name="count"></a>  count  
  Returns the number of elements in a range whose values match a specified value.  
@@ -1098,7 +842,7 @@ pair<ForwardIterator, ForwardIterator> equal_range(
   
  Elements in the possibly empty subrange defined by the pair of iterators returned by `equal_range` will be equivalent to `val` in the sense defined by the predicate used.  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` – `first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last` - `first`).  
   
 ### Example  
   
@@ -1842,7 +1586,7 @@ Function for_each(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) comparisons.  
+ The complexity is linear with at most ( `last` -  `first`) comparisons.  
   
 ### Example  
   
@@ -1983,7 +1727,7 @@ void generate(
   
  The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.  
   
- The complexity is linear, with exactly ( `last` –  `first`) calls to the generator being required.  
+ The complexity is linear, with exactly ( `last` -  `first`) calls to the generator being required.  
   
 ### Example  
   
@@ -2150,7 +1894,7 @@ bool includes(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. More precisely, the algorithm tests whether all the elements in the first sorted range under a specified binary predicate have equivalent ordering to those in the second sorted range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( * last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( * last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -2337,7 +2081,7 @@ void inplace_merge(
   
  The sorted consecutive ranges must each be arranged as a precondition to the application of the `inplace_merge` algorithm in accordance with the same ordering as is to be used by the algorithm to sort the combined ranges. The operation is stable as the relative order of elements within each range is preserved. When there are equivalent elements in both source ranges, the element is the first range precedes the element from the second in the combined range.  
   
- The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with ( * last – first*) – 1 comparisons; if no auxiliary memory is available, the worst case is  *N* log *(N)*, where  *N* = ( * last – first*).  
+ The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with ( * last - first*) - 1 comparisons; if no auxiliary memory is available, the worst case is  *N* log *(N)*, where  *N* = ( * last - first*).  
   
 ### Example  
   
@@ -2474,13 +2218,13 @@ bool is_heap(
  A random access iterator that indicates the end of a range.  
   
  `comp`  
- A condition to test to order elements. A binary predicate takes a single argument and returns `true`or `false`.  
+ A condition to test to order elements. A binary predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns `true` if the elements in the specified range form a heap, `false` if they do not.  
   
 ### Remarks  
- The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first``,` `last``) ==` `last`.  
+ The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first ,` `last ) ==` `last`.  
   
  The second template function returns  
   
@@ -2516,7 +2260,7 @@ RandomAccessIterator is_heap_until(
  Returns `end` if the specified range forms a heap or contains one or fewer elements. Otherwise, returns an iterator for the first element found that does not satisfy the heap condition.  
   
 ### Remarks  
- The first template function returns the last iterator `next` in `[``begin``,` `end``]` where `[``begin``, next)` is a heap ordered by the function object `std::less<>`. If the distance `end` `-` `begin` `< 2`, the function returns `end`.  
+ The first template function returns the last iterator `next` in `[ begin , end ]` where `[ begin , next)` is a heap ordered by the function object `std::less<>`. If the distance `end - begin < 2`, the function returns `end`.  
   
  The second template function behaves the same as the first, except that it uses the predicate `compare` instead of `std::less<>` as the heap ordering condition.  
   
@@ -2539,13 +2283,13 @@ bool is_partitioned(
  An input iterator that indicates the end of a range.  
   
  `comp`  
- The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true`or `false`.  
+ The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Return Value  
  Returns true when all of the elements in the given range that test `true` for a condition come before any elements that test `false`, and otherwise returns `false`.  
   
 ### Remarks  
- The template function returns `true` only if all elements in `[` `first``,` `last``)` are partitioned by `comp`; that is, all elements `X` in `[` `first``,` `last``)` for which `comp``(X)` is true occur before all elements `Y` for which `comp``(Y)` is `false`.  
+ The template function returns `true` only if all elements in `[` `first ,` `last )` are partitioned by `comp`; that is, all elements `X` in `[` `first ,` `last )` for which `comp (X)` is true occur before all elements `Y` for which `comp (Y)` is `false`.  
   
 ##  <a name="is_permutation"></a>  is_permutation  
  Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range will not detect differences if the second range is longer than the first range, and will result in undefined behavior if the second range is shorter than the first range.  
@@ -2690,9 +2434,9 @@ bool is_sorted(
  The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`. This performs the same task as `operator<`.  
   
 ### Remarks  
- The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`(` `first``,` `last``) ==` `last`. The operator< function performs the order comparison.  
+ The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`. The `operator<` function performs the order comparison.  
   
- The second template function returns `is_sorted_until``(` `first``,` `last``,` `comp``) ==` `last`. The `comp` predicate function performs the order comparison.  
+ The second template function returns `is_sorted_until( first, last , comp ) == last`. The `comp` predicate function performs the order comparison.  
   
 ##  <a name="is_sorted_until"></a>  is_sorted_until  
  Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.  
@@ -2727,9 +2471,9 @@ template<class ForwardIterator, class BinaryPredicate>
  Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from  `first`.  
   
 ### Remarks  
- The first template function returns the last iterator `next` in `[` `first``,` `last``]` so that `[` `first``, next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `last`.  
+ The first template function returns the last iterator `next` in `[` `first ,` `last ]` so that `[` `first , next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `last`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp (X, Y)`.  
   
 ##  <a name="iter_swap"></a>  iter_swap  
  Exchanges two values referred to by a pair of specified iterators.  
@@ -3073,7 +2817,7 @@ ForwardIterator lower_bound(
   
  The value types of the forward iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements  
   
- The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last – first`).  
+ The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to ( `last - first`).  
   
 ### Example  
   
@@ -3202,7 +2946,7 @@ void make_heap(
   
  Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](../standard-library/priority-queue-class.md).  
   
- The complexity is linear, requiring 3 \* ( * last – first*) comparisons.  
+ The complexity is linear, requiring 3 \* ( * last - first*) comparisons.  
   
 ### Example  
   
@@ -3487,7 +3231,7 @@ ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryP
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear: ( `last` –  `first`) – 1 comparisons are required for a nonempty range.  
+ The complexity is linear: ( `last` -  `first`) - 1 comparisons are required for a nonempty range.  
   
 ### Example  
   
@@ -3645,7 +3389,7 @@ OutputIterator merge(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range.  
   
- The complexity of the algorithm is linear with at most ( * last1 – first1*) – ( * last2 – first2*) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most ( * last1 - first1*) - ( * last2 - first2*) - 1 comparisons.  
   
  The [list class](../standard-library/list-class.md) provides a member function "merge" to merge the elements of two lists.  
   
@@ -3998,7 +3742,7 @@ ForwardIterator min_element(ForwardIterator first, ForwardIterator last, BinaryP
 ### Remarks  
  The range referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear: ( `last` – `first`) – 1 comparisons are required for a nonempty range.  
+ The complexity is linear: ( `last` - `first`) - 1 comparisons are required for a nonempty range.  
   
 ### Example  
   
@@ -4144,18 +3888,18 @@ template<class ForwardIterator, class BinaryPredicate>
   
  `pair<ForwardIterator, ForwardIterator>`  
   
- `(` [min_element](../standard-library/algorithm-functions.md#min_element)(  `first`, `last`), [max_element](../standard-library/algorithm-functions.md#max_element)(  `first`, `last`)).  
+ `(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.  
   
 ### Remarks  
  The first template function returns  
   
  `pair<ForwardIterator,ForwardIterator>`  
   
- `(min_element(_First,Last),max_element(_First,Last))`.  
+ `(min_element(_First,Last), max_element(_First,Last))`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp (X, Y)`.  
   
- If the sequence is non-empty, the function performs at most `3 * (``last` `-`  `first` `- 1) / 2` comparisons.  
+ If the sequence is non-empty, the function performs at most `3 * (last - first - 1) / 2` comparisons.  
   
 ##  <a name="minmax"></a>  minmax  
  Compares two input parameters and returns them as a pair, in order of lesser to greater.  
@@ -4199,7 +3943,7 @@ template<class Type, class BinaryPredicate>
  The initializer_list that contains the members to be compared.  
   
 ### Remarks  
- The first template function returns `pair<const Type&, const Type&>(``right``,` `left``)` if `right` is less than `left`. Otherwise, it returns `pair<const Type&, const Type&>(``left``,` `right``)`.  
+ The first template function returns `pair<const Type&, const Type&>( right , left )` if `right` is less than `left`. Otherwise, it returns `pair<const Type&, const Type&>( left , right )`.  
   
  The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate `comp`.  
   
@@ -4390,7 +4134,7 @@ template<class InputIterator, class OutputIterator>
  The output iterator that is to contain the moved elements.  
   
 ### Remarks  
- The template function evaluates `*(``dest` `+ N) =`  move `(*(` `first` `+ N)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest` `+ N`. If `dest`and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
+ The template function evaluates `*(dest + N) = move(*(first + N))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.  
   
 ##  <a name="move_backward"></a>  move_backward  
  Moves the elements of one iterator to another. The move starts with the last element in a specified range, and ends with the first element in that range.  
@@ -4415,7 +4159,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
  A bidirectional iterator addressing the position of one past the final element in the destination range.  
   
 ### Remarks  
- The template function evaluates `*(``destEnd` `- N - 1) =` `move``(*(``last` `- N - 1)))` once for each `N` in the range `[0,` `last` `-`  `first``)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd` `- (``last` `-`  `first``)`. If `destEnd` and  `first` designate regions of storage, `destEnd` must not be in the range `[` `first``,` `last``)`.  
+ The template function evaluates `*(destEnd - N - 1) = move(*(last - N - 1))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd - (last - first)`. If `destEnd` and  `first` designate regions of storage, `destEnd` must not be in the range `[first, last)`.  
   
  `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.  
   
@@ -4449,7 +4193,7 @@ bool next_permutation(BidirectionalIterator first, BidirectionalIterator last, B
   
  The default binary predicate is less than and the elements in the range must be less than comparable to insure that the next permutation is well defined.  
   
- The complexity is linear with at most ( * last – first*)/2 swaps.  
+ The complexity is linear with at most ( * last - first*)/2 swaps.  
   
 ### Example  
   
@@ -4622,7 +4366,7 @@ void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomA
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other.  
   
- The average of a sort complexity is linear with respect to  * last – first*.  
+ The average of a sort complexity is linear with respect to  * last - first*.  
   
 ### Example  
   
@@ -4712,7 +4456,7 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
  Returns `true` if the condition is not detected at least once in the indicated range, and `false` if the condition is detected.  
   
 ### Remarks  
- The template function returns `true` only if, for some `N` in the range `[0,` `last` `-`  `first``)`, the predicate `comp``(*(` `first` `+ N))` is always `false`.  
+ The template function returns `true` only if, for some `N` in the range `[0, last - first)`, the predicate `comp(*(first + N))` is always `false`.  
   
 ##  <a name="partial_sort"></a>  partial_sort  
  Arranges a specified number of the smaller elements in a range into a nondescending order or according to an ordering criterion specified by a binary predicate.  
@@ -4977,7 +4721,7 @@ template<class BidirectionalIterator, class Predicate>
   
  Elements  *a* and  *b* are equivalent, but not necessarily equal, if both  *Pr* ( *a*,  *b*) is false and  *Pr* ( *b*,  *a*) if false, where  *Pr* is the parameter-specified predicate. The **partition** algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm **stable_ partition** does preserve this original ordering.  
   
- The complexity is linear: there are ( `last` –  `first`) applications of `comp` and at most ( `last` –  `first`)/2 swaps.  
+ The complexity is linear: there are ( `last` -  `first`) applications of `comp` and at most ( `last` -  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5050,7 +4794,7 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
  The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A predicate takes a single argument and returns `true` or `false`.  
   
 ### Remarks  
- The template function copies each element `X` in `[` `first``,` `last``)` to `*``dest1``++` if `_Pred``(X)` is true, or to `*``dest2``++ if not`. It returns `pair<OutputIterator1, OutputIterator2>(``dest1``,` `dest2``)`.  
+ The template function copies each element `X` in `[first,last)` to `*dest1++` if `_Pred(X)` is true, or to `*dest2++` if not. It returns `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.  
   
 ##  <a name="partition_point"></a>  partition_point  
  Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.  
@@ -5078,7 +4822,7 @@ template<class ForwardIterator, class Predicate>
  Returns a `ForwardIterator` that refers to the first element that does not fulfill the condition tested for by `comp`, or returns `last` if one is not found.  
   
 ### Remarks  
- The template function finds the first iterator `it` in `[` `first``,``last``)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.  
+ The template function finds the first iterator `it` in `[first, last)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.  
   
 ##  <a name="pop_heap"></a>  pop_heap  
  Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.  
@@ -5117,7 +4861,7 @@ void pop_heap(RandomAccessIterator first, RandomAccessIterator last, BinaryPredi
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log ( * last – first*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( * last - first*) comparisons.  
   
 ### Example  
   
@@ -5216,7 +4960,7 @@ template<class BidirectionalIterator, class BinaryPredicate>
   
  The default binary predicate is less than and the elements in the range must be less-than comparable to ensure that the previous permutation is well defined.  
   
- The complexity is linear, with at most ( `last` –  `first`)/2 swaps.  
+ The complexity is linear, with at most ( `last` -  `first`)/2 swaps.  
   
 ### Example  
   
@@ -5389,7 +5133,7 @@ void push_heap( RandomAccessIterator first, RandomAccessIterator last, BinaryPre
   
  The range excluding the newly added element at the end must be a heap.  
   
- The complexity is logarithmic, requiring at most log ( *last – first*) comparisons.  
+ The complexity is logarithmic, requiring at most log ( *last - first*) comparisons.  
   
 ### Example  
   
@@ -5459,7 +5203,7 @@ int main( ) {
 ```  
   
 ##  <a name="random_shuffle"></a>  random_shuffle  
- The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](../standard-library/algorithm-functions.md#std__shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting                 [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+ The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting  [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/p/?linkid=397954).  
   
 ##  <a name="remove"></a>  remove  
  Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.  
@@ -5490,7 +5234,7 @@ template<class ForwardIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality.  
   
  The [list class](../standard-library/list-class.md) has a more efficient member function version of **remove**, which also relinks pointers.  
   
@@ -5574,7 +5318,7 @@ template<class InputIterator, class OutputIterator, class Type>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments.  
   
 ### Example  
   
@@ -5653,7 +5397,7 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments.  
   
  For information on how these functions behave, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
@@ -5736,7 +5480,7 @@ template<class ForwardIterator, class Predicate>
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality.  
   
  List has a more efficient member function version of remove which relinks pointers.  
   
@@ -5818,7 +5562,7 @@ void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, c
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5898,7 +5642,7 @@ int main( ) {
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -5997,7 +5741,7 @@ OutputIterator replace_copy_if(
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear; there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear; there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6094,7 +5838,7 @@ void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, con
   
  The `operator==` used to determine the equality between elements must impose an equivalence relation between its operands.  
   
- The complexity is linear: there are ( `last` –  `first`) comparisons for equality and at most ( `last` –  `first`) assignments of new values.  
+ The complexity is linear: there are ( `last` -  `first`) comparisons for equality and at most ( `last` -  `first`) assignments of new values.  
   
 ### Example  
   
@@ -6291,7 +6035,7 @@ template<class ForwardIterator>
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) swaps.  
+ The complexity is linear with at most ( `last` -  `first`) swaps.  
   
 ### Example  
   
@@ -6400,7 +6144,7 @@ OutputIterator rotate_copy(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear with at most ( `last` –  `first`) swaps.  
+ The complexity is linear with at most ( `last` -  `first`) swaps.  
   
 ### Example  
   
@@ -6792,7 +6536,7 @@ OutputIterator set_difference(
   
  The value types of the input iterators need be less-than-comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element such that there are more in the first source range than in the second, then the destination range will contain the number by which the occurrences of those elements in the first source range exceed the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( *last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -6969,7 +6713,7 @@ OutputIterator set_intersection(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) + ( *last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) + ( *last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7140,7 +6884,7 @@ OutputIterator set_symmetric_difference(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the absolute value of the number by which the occurrences of those elements in the one of the source ranges exceeds the occurrences of those elements in the second source range.  
   
- The complexity of the algorithm is linear with at most 2 \* ( (*last1 – first1*) – (*last2 – first2*) ) – 1 comparisons for nonempty source ranges.  
+ The complexity of the algorithm is linear with at most 2 \* ( (*last1 - first1*) - (*last2 - first2*) ) - 1 comparisons for nonempty source ranges.  
   
 ### Example  
   
@@ -7316,7 +7060,7 @@ OutputIterator set_union(
   
  The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range. If the source ranges contain duplicates of an element, then the destination range will contain the maximum number of those elements that occur in both source ranges.  
   
- The complexity of the algorithm is linear with at most 2 \* ( ( *last1 – first1*) – ( *last2 – first2*) ) – 1 comparisons.  
+ The complexity of the algorithm is linear with at most 2 \* ( ( *last1 - first1*) - ( *last2 - first2*) ) - 1 comparisons.  
   
 ### Example  
   
@@ -7437,7 +7181,7 @@ int main( )
 }  
 ```  
   
-##  <a name="std__shuffle"></a>  std::shuffle  
+##  <a name="shuffle"></a>  std::shuffle  
  Shuffles (rearranges) elements for a given range by using a random number generator.  
   
 ```  
@@ -7492,7 +7236,7 @@ template<class RandomAccessIterator, class Predicate>
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The `sort` algorithm is not stable and so does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_sort` does preserve this original ordering.  
   
- The average of a sort complexity is  *O*( *N* log  *N*), where  *N* =  *last – first*.  
+ The average of a sort complexity is  *O*( *N* log  *N*), where  *N* =  *last - first*.  
   
 ### Example  
   
@@ -7603,7 +7347,7 @@ template<class RandomAccessIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.  
   
- The complexity is at most  *N* log  *N*, where  *N* = ( *last – first*).  
+ The complexity is at most  *N* log  *N*, where  *N* = ( *last - first*).  
   
 ### Example  
   
@@ -7760,7 +7504,7 @@ void stable_sort(
   
  Elements are equivalent, but not necessarily equal, if neither is less than the other. The **sort** algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved.  
   
- The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is  *O*( *N* log  *N*) and the worst case is  *O*(  *N* ( log  *N* )2 ), where  *N* =  *last – First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
+ The run-time complexity of `stable_sort` depends on the amount of memory available, but the best case (given sufficient memory) is  *O*( *N* log  *N*) and the worst case is  *O*(  *N* ( log  *N* )2 ), where  *N* =  *last - First.* Usually, the **sort** algorithm is significantly faster than `stable_sort`.  
   
 ### Example  
   
@@ -7938,7 +7682,7 @@ ForwardIterator2 swap_ranges(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position is reachable from the first by incrementation. The second range has to be as large as the first range.  
   
- The complexity is linear with `last1` –  `first1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
+ The complexity is linear with `last1` -  `first1` swaps performed. If elements from containers of the same type are being swapped, them the `swap` member function from that container should be used, because the member function typically has constant complexity.  
   
 ### Example  
   
@@ -8044,9 +7788,9 @@ OutputIterator transform(
 ### Remarks  
  The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position must be reachable from the first by incrementation. The destination range must be large enough to contain the transformed source range.  
   
- If `result` is set equal to  `first1` in the first version of the algorithm *,* then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [  `first1` +1, `last1`).  
+ If `result` is set equal to  `first1` in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the `result` may not address a position within the range [`first1` + 1, `last1`).  
   
- The complexity is linear with at most ( `last1` –  `first1`) comparisons.  
+ The complexity is linear with at most (`last1` -  `first1`) comparisons.  
   
 ### Example  
   
@@ -8172,7 +7916,7 @@ template<class ForwardIterator, class Predicate>
   
  The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation. he number of elements in the sequence is not changed by the algorithm **unique** and the elements beyond the end of the modified sequence are dereferenceable but not specified.  
   
- The complexity is linear, requiring ( `last` –  `first`) – 1 comparisons.  
+ The complexity is linear, requiring ( `last` -  `first`) - 1 comparisons.  
   
  List provides a more efficient member function "unique", which may perform better.  
   
@@ -8305,7 +8049,7 @@ OutputIterator unique_copy( InputIterator first,
   
  The ranges referenced must be valid; all pointers must be dereferenceable and within a sequence the last position is reachable from the first by incrementation.  
   
- The complexity is linear, requiring ( `last` –  `first`) comparisons.  
+ The complexity is linear, requiring ( `last` -  `first`) comparisons.  
   
 ### Example  
   

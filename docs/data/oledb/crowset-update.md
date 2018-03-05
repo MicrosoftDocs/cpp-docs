@@ -4,55 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CRowset.Update"
-  - "ATL.CRowset.Update"
-  - "ATL.CRowset<TAccessor>.Update"
-  - "ATL::CRowset<TAccessor>::Update"
-  - "CRowset<TAccessor>::Update"
-  - "CRowset::Update"
-  - "CRowset<TAccessor>.Update"
-  - "ATL::CRowset::Update"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Update method"
+ms.topic: "reference"
+f1_keywords: ["CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Update method"]
 ms.assetid: cd5fedc8-2b85-4cb8-8c40-c79576316903
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::Update
 Transmits any pending changes made to the current row since the last fetch or **Update** call on it.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Update(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT Update(DBCOUNTITEM* pcRows = NULL,   
    HROW* phRow = NULL,   
-   DBROWSTATUS* pStatus = NULL    
-) throw( );  
+   DBROWSTATUS* pStatus = NULL) throw();  
 ```  
   
 #### Parameters  

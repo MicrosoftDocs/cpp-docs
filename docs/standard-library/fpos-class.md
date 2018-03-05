@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std.fpos"
-  - "std::fpos"
-  - "iosfwd/std::fpos"
-  - "fpos"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fpos class, about fpos class"
-  - "fpos class"
+ms.topic: "reference"
+f1_keywords: ["iosfwd/std::fpos", "iosfwd/std::fpos::seekpos", "iosfwd/std::fpos::state", "iosfwd/std::fpos::operator streamoff"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # fpos Class
 The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream. An object of class fpos\< **St**> effectively stores at least two member objects:  
@@ -62,33 +41,33 @@ class fpos
   
 |||  
 |-|-|  
-|[fpos](#fpos__fpos)|Create an object that contains information about a position (offset) in a stream.|  
+|[fpos](#fpos)|Create an object that contains information about a position (offset) in a stream.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[seekpos](#fpos__seekpos)|Used internally by the C++ Standard Library only. Do not call this method from your code.|  
-|[state](#fpos__state)|Sets or returns the conversion state.|  
+|[seekpos](#seekpos)|Used internally by the C++ Standard Library only. Do not call this method from your code.|  
+|[state](#state)|Sets or returns the conversion state.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator!=](#fpos__operator_neq)|Tests file-position indicators for inequality.|  
-|[operator+](#fpos__operator_add)|Increments a file-position indicator.|  
-|[operator+=](#fpos__operator_add_eq)|Increments a file-position indicator.|  
-|[operator-](#fpos__operator-)|Decrements a file-position indicator.|  
-|[operator-=](#fpos__operator-_eq)|Decrements a file-position indicator.|  
-|[operator==](#fpos__operator_eq_eq)|Tests file-position indicators for equality.|  
-|[operator streamoff](#fpos__operator_streamoff)|Casts object of type `fpos` to object of type `streamoff`.|  
+|[operator!=](#op_neq)|Tests file-position indicators for inequality.|  
+|[operator+](#op_add)|Increments a file-position indicator.|  
+|[operator+=](#op_add_eq)|Increments a file-position indicator.|  
+|[operator-](#operator-)|Decrements a file-position indicator.|  
+|[operator-=](#operator-_eq)|Decrements a file-position indicator.|  
+|[operator==](#op_eq_eq)|Tests file-position indicators for equality.|  
+|[operator streamoff](#op_streamoff)|Casts object of type `fpos` to object of type `streamoff`.|  
   
 ## Requirements  
  **Header:** \<ios>  
   
  **Namespace:** std  
   
-##  <a name="fpos__fpos"></a>  fpos::fpos  
+##  <a name="fpos"></a>  fpos::fpos  
  Create an object that contains information about a position (offset) in a stream.  
   
 ```  
@@ -112,7 +91,7 @@ fpos(Statetype _State, fpos_t _Filepos);
   
  The second constructor stores a zero offset and the object `_State`.  
   
-##  <a name="fpos__operator_neq"></a>  fpos::operator!=  
+##  <a name="op_neq"></a>  fpos::operator!=  
  Tests file-position indicators for inequality.  
   
 ```  
@@ -120,14 +99,14 @@ bool operator!=(const fpos<Statetype>& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The file-position indicator against which to compare.  
   
 ### Return Value  
  **true** if the file-position indicators are not equal, otherwise **false**.  
   
 ### Remarks  
- The member function returns **!**( **\*this ==** ` right`).  
+ The member function returns `!(*this == right)`.  
   
 ### Example  
   
@@ -181,7 +160,7 @@ int main( )
 }  
 ```  
   
-##  <a name="fpos__operator_add"></a>  fpos::operator+  
+##  <a name="op_add"></a>  fpos::operator+  
  Increments a file-position indicator.  
   
 ```  
@@ -199,9 +178,9 @@ fpos<Statetype> operator+(streamoff _Off) const;
  The member function returns **fpos(\*this) +=** `_Off`.  
   
 ### Example  
-  See [operator!=](#fpos__operator_neq) for a sample of using `operator+`.  
+  See [operator!=](#op_neq) for a sample of using `operator+`.  
   
-##  <a name="fpos__operator_add_eq"></a>  fpos::operator+=  
+##  <a name="op_add_eq"></a>  fpos::operator+=  
  Increments a file-position indicator.  
   
 ```  
@@ -219,7 +198,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
  The member function adds `_Off` to the stored offset member object and then returns **\*this**. For positioning within a file, the result is generally valid only for binary streams that do not have a state-dependent encoding.  
   
 ### Example  
-  See [operator!=](#fpos__operator_neq) for a sample of using `operator+=`.  
+  See [operator!=](#op_neq) for a sample of using `operator+=`.  
   
 ##  <a name="fpos__operator-"></a>  fpos::operator-  
  Decrements a file-position indicator.  
@@ -231,17 +210,17 @@ fpos<Statetype> operator-(streamoff _Off) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  File position.  
   
  `_Off`  
  Stream offset.  
   
 ### Return Value  
- The first member function returns **(streamoff)\*this - (streamoff)**` right`. The second member function returns **fpos(\*this) -=** `_Off`.  
+ The first member function returns `(streamoff)*this - (streamoff) right`. The second member function returns `fpos(*this) -= _Off`.  
   
 ### Example  
-  See [operator!=](#fpos__operator_neq) for a sample of using `operator-`.  
+  See [operator!=](#op_neq) for a sample of using `operator-`.  
   
 ##  <a name="fpos__operator-_eq"></a>  fpos::operator-=  
  Decrements a file-position indicator.  
@@ -255,15 +234,15 @@ fpos<Statetype>& operator-=(streamoff _Off);
  Stream offset.  
   
 ### Return Value  
- The member function returns **fpos(\*this) -=** `_Off`.  
+ The member function returns `fpos(*this) -= _Off`.  
   
 ### Remarks  
  For positioning within a file, the result is generally valid only for binary streams that do not have a state-dependent encoding.  
   
 ### Example  
-  See [operator!=](#fpos__operator_neq) for a sample of using `operator-=`.  
+  See [operator!=](#op_neq) for a sample of using `operator-=`.  
   
-##  <a name="fpos__operator_eq_eq"></a>  fpos::operator==  
+##  <a name="op_eq_eq"></a>  fpos::operator==  
  Tests file-position indicators for equality.  
   
 ```  
@@ -271,19 +250,19 @@ bool operator==(const fpos<Statetype>& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The file-position indicator against which to compare.  
   
 ### Return Value  
  **true** if the file-position indicators are equal; otherwise **false**.  
   
 ### Remarks  
- The member function returns **(streamoff)\*this == (streamoff)**` right`.  
+ The member function returns `(streamoff)*this == (streamoff)right`.  
   
 ### Example  
-  See [operator!=](#fpos__operator_neq) for a sample of using `operator+=`.  
+  See [operator!=](#op_neq) for a sample of using `operator+=`.  
   
-##  <a name="fpos__operator_streamoff"></a>  fpos::operator streamoff  
+##  <a name="op_streamoff"></a>  fpos::operator streamoff  
  Cast object of type `fpos` to object of type `streamoff`.  
   
 ```  
@@ -320,14 +299,14 @@ int main( )
 0  
 ```  
   
-##  <a name="fpos__seekpos"></a>  fpos::seekpos  
+##  <a name="seekpos"></a>  fpos::seekpos  
  This method is used internally by the C++ Standard Library only. Do not call this method from your code.  
   
 ```  
 fpos_t seekpos() const;
 ```  
   
-##  <a name="fpos__state"></a>  fpos::state  
+##  <a name="state"></a>  fpos::state  
  Sets or returns the conversion state.  
   
 ```  

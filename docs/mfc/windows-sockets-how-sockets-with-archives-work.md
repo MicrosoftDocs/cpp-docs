@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows Sockets [C++], synchronous"
-  - "sockets [C++], synchronous operation"
-  - "sockets [C++], with archives"
-  - "synchronous state socket"
-  - "Windows Sockets [C++], with archives"
-  - "two-state socket object"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows Sockets [MFC], synchronous", "sockets [MFC], synchronous operation", "sockets [MFC], with archives", "synchronous state socket", "Windows Sockets [MFC], with archives", "two-state socket object"]
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: How Sockets with Archives Work
 This article explains how a [CSocket](../mfc/reference/csocket-class.md) object, a [CSocketFile](../mfc/reference/csocketfile-class.md) object, and a [CArchive](../mfc/reference/carchive-class.md) object are combined to simplify sending and receiving data through a Windows Socket.  

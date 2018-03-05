@@ -2,23 +2,20 @@
 title: "Platform::Boolean value class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Platform/Platform::Boolean"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Boolean Struct"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Boolean"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Boolean Struct"]
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Boolean value class
 Represents a Boolean value. The equivalent of `bool`.  
@@ -29,13 +26,13 @@ Represents a Boolean value. The equivalent of `bool`.
 public value struct Boolean  
 ```  
   
-## Members  
+### Members  
  Boolean has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md).  
   
-## Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+### Requirements  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

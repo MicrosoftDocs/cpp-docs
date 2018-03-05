@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDataSource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag and drop [C++], MFC support"
-  - "Clipboard [C++], OLE support"
-  - "uniform data transfer"
-  - "OLE [C++], uniform data transfer"
-  - "Clipboard [C++], MFC support"
-  - "OLE Clipboard [C++], support"
-  - "IDataObject, MFC encapsulation"
-  - "data transfer [C++], OLE"
-  - "COleDataSource class"
-  - "OLE data transfer [C++]"
-  - "uniform data transfer, OLE"
+f1_keywords: ["COleDataSource", "AFXOLE/COleDataSource", "AFXOLE/COleDataSource::COleDataSource", "AFXOLE/COleDataSource::CacheData", "AFXOLE/COleDataSource::CacheGlobalData", "AFXOLE/COleDataSource::DelayRenderData", "AFXOLE/COleDataSource::DelayRenderFileData", "AFXOLE/COleDataSource::DelaySetData", "AFXOLE/COleDataSource::DoDragDrop", "AFXOLE/COleDataSource::Empty", "AFXOLE/COleDataSource::FlushClipboard", "AFXOLE/COleDataSource::GetClipboardOwner", "AFXOLE/COleDataSource::OnRenderData", "AFXOLE/COleDataSource::OnRenderFileData", "AFXOLE/COleDataSource::OnRenderGlobalData", "AFXOLE/COleDataSource::OnSetData", "AFXOLE/COleDataSource::SetClipboard"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDataSource [MFC], COleDataSource", "COleDataSource [MFC], CacheData", "COleDataSource [MFC], CacheGlobalData", "COleDataSource [MFC], DelayRenderData", "COleDataSource [MFC], DelayRenderFileData", "COleDataSource [MFC], DelaySetData", "COleDataSource [MFC], DoDragDrop", "COleDataSource [MFC], Empty", "COleDataSource [MFC], FlushClipboard", "COleDataSource [MFC], GetClipboardOwner", "COleDataSource [MFC], OnRenderData", "COleDataSource [MFC], OnRenderFileData", "COleDataSource [MFC], OnRenderGlobalData", "COleDataSource [MFC], OnSetData", "COleDataSource [MFC], SetClipboard"]
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleDataSource Class
 Acts as a cache into which an application places the data that it will offer during data transfer operations, such as Clipboard or drag-and-drop operations.  
@@ -126,9 +99,9 @@ void CacheData(
   
  To use delayed rendering, call the [DelayRenderData](#delayrenderdata) or [DelayRenderFileData](#delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
  Call this function to specify a format in which data is offered during data transfer operations.  
@@ -155,9 +128,9 @@ void CacheGlobalData(
   
  To use delayed rendering, call the [DelayRenderData](#delayrenderdata) or [DelayRenderFileData](#delayrenderfiledata) member function. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="coledatasource"></a>  COleDataSource::COleDataSource  
  Constructs a `COleDataSource` object.  
@@ -189,9 +162,9 @@ void DelayRenderData(
   
  To use immediate rendering, call the [CacheData](#cachedata) or [CacheGlobalData](#cacheglobaldata) member function.  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
  Call this function to specify a format in which data is offered during data transfer operations.  
@@ -216,9 +189,9 @@ void DelayRenderFileData(
   
  To use immediate rendering, call the [CacheData](#cachedata) or [CacheGlobalData](#cacheglobaldata) member function.  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData  
  Call this function to support changing the contents of the data source.  
@@ -239,9 +212,9 @@ void DelaySetData(
 ### Remarks  
  [OnSetData](#onsetdata) will be called by the framework when this happens. This is only used when the framework returns the data source from [COleServerItem::GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). If `DelaySetData` is not called, your `OnSetData` function will never be called. `DelaySetData` should be called for each Clipboard or **FORMATETC** format you support.  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop  
  Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.  
@@ -285,7 +258,7 @@ DROPEFFECT DoDragDrop(
   
 -   Windows 95/98   Drag delay time is stored in a cached version of WIN.INI.  
   
- For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](http://msdn.microsoft.com/library/windows/desktop/ms725504) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](http://msdn.microsoft.com/library/windows/desktop/ms725504) in the Windows SDK.  
   
  For more information, see the article [Drag and Drop: Implementing a Drop Source](../../mfc/drag-and-drop-implementing-a-drop-source.md).  
   
@@ -299,7 +272,7 @@ void Empty();
 ### Remarks  
  Both cached and delay render formats are emptied so they can be reused.  
   
- For more information, see [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) in the Windows SDK.  
   
 ##  <a name="flushclipboard"></a>  COleDataSource::FlushClipboard  
  Renders data that is on the Clipboard, and then lets you paste data from the Clipboard after your application shuts down.  
@@ -347,7 +320,7 @@ virtual BOOL OnRenderData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures, the [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type, and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures, the [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type, and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is a file.  
@@ -373,7 +346,7 @@ virtual BOOL OnRenderFileData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override `OnRenderFileData`. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
@@ -401,7 +374,7 @@ virtual BOOL OnRenderGlobalData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata). For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
   
 ##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  Called by the framework to set or replace the data in the `COleDataSource` object in the specified format.  
@@ -431,7 +404,7 @@ virtual BOOL OnSetData(
   
  The default implementation does nothing. Override this function to replace the data in the specified format. This is an advanced overridable.  
   
- For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures and the [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) functions in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structures and the [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) and [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) functions in the Windows SDK.  
   
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
  Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).  

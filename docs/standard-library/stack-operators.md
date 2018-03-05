@@ -5,18 +5,21 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["stack/std::operator!=", "stack/std::operator&gt;", "stack/std::operator&gt;=", "stack/std::operator&lt;", "stack/std::operator&lt;=", "stack/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 caps.latest.revision: 13
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (stack)", "std::operator&gt; (stack)", "std::operator&gt;= (stack)", "std::operator&lt; (stack)", "std::operator&lt;= (stack)", "std::operator== (stack)"]
 ---
 # &lt;stack&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if the stack object on the left side of the operator is not equal to stack object on the right side.  
   
 ```  
@@ -24,10 +27,10 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  
@@ -77,7 +80,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests if the stack object on the left side of the operator is less than the stack object on the right side.  
   
 ```  
@@ -85,10 +88,10 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  
@@ -157,7 +160,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the stack object on the left side of the operator is less than or equal to the stack object on the right side.  
   
 ```  
@@ -165,10 +168,10 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  
@@ -220,7 +223,7 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if the stack object on the left side of the operator is equal to stack object on the right side.  
   
 ```  
@@ -228,10 +231,10 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  
@@ -281,7 +284,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests if the stack object on the left side of the operator is greater than the stack object on the right side.  
   
 ```  
@@ -289,10 +292,10 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  
@@ -346,7 +349,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the stack object on the left side of the operator is greater than or equal to the stack object on the right side.  
   
 ```  
@@ -354,10 +357,10 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **stack**.  
   
- ` right`  
+ `right`  
  An object of type **stack**.  
   
 ### Return Value  

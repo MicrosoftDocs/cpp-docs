@@ -4,52 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "m_szTableSchema"
-  - "m_szCatalog"
-  - "CViewTableInfo"
-  - "m_szTableCatalog"
-  - "m_szSchema"
-  - "m_szTableName"
-  - "m_szName"
-  - "CViewTableUsage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CViewTableInfo parameter class"
-  - "CViewTableUsage typedef class"
-  - "m_szSchema"
-  - "m_szTableSchema"
-  - "TABLE_CATALOG"
-  - "m_szCatalog"
-  - "TABLE_NAME"
-  - "TABLE_SCHEMA"
-  - "m_szName"
-  - "m_szTableCatalog"
-  - "m_szTableName"
+ms.topic: "reference"
+f1_keywords: ["m_szTableSchema", "m_szCatalog", "CViewTableInfo", "m_szTableCatalog", "m_szSchema", "m_szTableName", "m_szName", "CViewTableUsage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CViewTableInfo parameter class", "CViewTableUsage typedef class", "m_szSchema", "m_szTableSchema", "TABLE_CATALOG", "m_szCatalog", "TABLE_NAME", "TABLE_SCHEMA", "m_szName", "m_szTableCatalog", "m_szTableName"]
 ms.assetid: 10b74f2a-8010-4f97-acc2-ffce07349981
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CViewTableUsage, CViewTableInfo
 Call the typedef class **CViewTableUsage** to implement its parameter class **CViewTableInfo**.  

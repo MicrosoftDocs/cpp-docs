@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.accelerator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "accelerator keys"
-  - "keyboard shortcuts"
-  - "keyboard shortcuts, predefined"
+f1_keywords: ["vc.editors.accelerator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts, predefined"]
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Predefined Accelerator Keys
 There are a number of predefined accelerator keys that may be part of a Windows application project. Some of these virtual keys are for the Windows environment. Other support browsers or Unicode applications. You can use any of these keys in any accelerator.  
@@ -93,7 +74,7 @@ There are a number of predefined accelerator keys that may be part of a Windows 
 |VK_XBUTTON1|Windows: X1 mouse button|  
 |VK_XBUTTON2|Windows: X2 mouse button|  
   
- For information on adding resources to managed projects, please see [Resources in Applications](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
 ## Requirements  
  Win32  

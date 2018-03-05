@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "end member [STL/CLR]"
+f1_keywords: ["cliext::deque::end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: 3de3e816-3334-4b39-97ad-6f8771e9b4e9
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::end (STL/CLR)
 Designates the end of the controlled sequence.  

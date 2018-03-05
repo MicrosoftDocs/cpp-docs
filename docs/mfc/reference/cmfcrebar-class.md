@@ -4,39 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCReBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCReBar class"
+f1_keywords: ["CMFCReBar", "AFXREBAR/CMFCReBar", "AFXREBAR/CMFCReBar::AddBar", "AFXREBAR/CMFCReBar::CalcFixedLayout", "AFXREBAR/CMFCReBar::CanFloat", "AFXREBAR/CMFCReBar::Create", "AFXREBAR/CMFCReBar::EnableDocking", "AFXREBAR/CMFCReBar::GetReBarBandInfoSize", "AFXREBAR/CMFCReBar::GetReBarCtrl", "AFXREBAR/CMFCReBar::OnShowControlBarMenu", "AFXREBAR/CMFCReBar::OnToolHitTest", "AFXREBAR/CMFCReBar::OnUpdateCmdUI", "AFXREBAR/CMFCReBar::SetPaneAlignment"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCReBar [MFC], AddBar", "CMFCReBar [MFC], CalcFixedLayout", "CMFCReBar [MFC], CanFloat", "CMFCReBar [MFC], Create", "CMFCReBar [MFC], EnableDocking", "CMFCReBar [MFC], GetReBarBandInfoSize", "CMFCReBar [MFC], GetReBarCtrl", "CMFCReBar [MFC], OnShowControlBarMenu", "CMFCReBar [MFC], OnToolHitTest", "CMFCReBar [MFC], OnUpdateCmdUI", "CMFCReBar [MFC], SetPaneAlignment"]
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  
-  
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
 ## Syntax  
   
 ```  
@@ -139,7 +122,7 @@ BOOL Create(
  Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK documentation.  
   
  [in] `dwStyle`  
- The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/window-styles.md).  
+ The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `nID`  
  The rebar's child-window ID.  
@@ -163,7 +146,7 @@ CReBarCtrl& GetReBarCtrl() const;
  Call this method to take advantage of the Windows rebar common control functionality when customizing your rebar.  
   
 ##  <a name="calcfixedlayout"></a>  CMFCReBar::CalcFixedLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize CalcFixedLayout(
@@ -180,7 +163,7 @@ virtual CSize CalcFixedLayout(
 ### Remarks  
   
 ##  <a name="canfloat"></a>  CMFCReBar::CanFloat  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL CanFloat() const;  
@@ -191,7 +174,7 @@ virtual BOOL CanFloat() const;
 ### Remarks  
   
 ##  <a name="enabledocking"></a>  CMFCReBar::EnableDocking  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableDocking(DWORD dwDockStyle);
@@ -203,7 +186,7 @@ void EnableDocking(DWORD dwDockStyle);
 ### Remarks  
   
 ##  <a name="getrebarbandinfosize"></a>  CMFCReBar::GetReBarBandInfoSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 UINT GetReBarBandInfoSize() const;  
@@ -214,7 +197,7 @@ UINT GetReBarBandInfoSize() const;
 ### Remarks  
   
 ##  <a name="onshowcontrolbarmenu"></a>  CMFCReBar::OnShowControlBarMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -228,7 +211,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ### Remarks  
   
 ##  <a name="ontoolhittest"></a>  CMFCReBar::OnToolHitTest  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual INT_PTR OnToolHitTest(
@@ -245,7 +228,7 @@ virtual INT_PTR OnToolHitTest(
 ### Remarks  
   
 ##  <a name="onupdatecmdui"></a>  CMFCReBar::OnUpdateCmdUI  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnUpdateCmdUI(
@@ -260,7 +243,7 @@ virtual void OnUpdateCmdUI(
 ### Remarks  
   
 ##  <a name="setpanealignment"></a>  CMFCReBar::SetPaneAlignment  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetPaneAlignment(DWORD dwAlignment);

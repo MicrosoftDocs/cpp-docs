@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.editing.msghandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message handlers"
-  - "message handling, editing handlers"
+f1_keywords: ["vc.codewiz.editing.msghandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], editing handlers"]
 ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Editing a Message Handler
 Once you have defined a message handler, you can go to the member function's definition to add or modify code.  

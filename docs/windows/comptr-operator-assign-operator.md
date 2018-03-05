@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::ComPtr::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator= operator"
+f1_keywords: ["client/Microsoft::WRL::ComPtr::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator= operator"]
 ms.assetid: 1a0c2752-f7d8-4819-9443-07b88b69ef02
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator= Operator
 Assigns a value to the current ComPtr.  

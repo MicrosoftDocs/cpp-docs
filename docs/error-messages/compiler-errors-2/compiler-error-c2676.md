@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2676"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2676"
+f1_keywords: ["C2676"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2676"]
 ms.assetid: 838a5e34-c92f-4f65-a597-e150bf8cf737
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2676
 binary 'operator' : 'type' does not define this operator or a conversion to a type acceptable to the predefined operator  

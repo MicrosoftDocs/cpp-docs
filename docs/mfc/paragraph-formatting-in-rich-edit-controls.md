@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rich edit controls, paragraph formatting in"
-  - "paragraph formatting in CRichEditCtrl"
-  - "CRichEditCtrl class, paragraph formatting in"
-  - "formatting [C++], paragraphs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["rich edit controls [MFC], paragraph formatting in", "paragraph formatting in CRichEditCtrl [MFC]", "CRichEditCtrl class [MFC], paragraph formatting in", "formatting [MFC], paragraphs"]
 ms.assetid: 0df2e4c9-2074-4e41-b913-87cb8c1b4d43
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Paragraph Formatting in Rich Edit Controls
 You can use member functions of the rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) to format paragraphs and to retrieve formatting information. Paragraph formatting attributes include alignment, tabs, indents, and numbering.  

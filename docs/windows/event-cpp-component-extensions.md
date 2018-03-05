@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "event"
-  - "event_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event keyword [C++]"
+f1_keywords: ["event", "event_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event keyword [C++]"]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # event  (C++ Component Extensions)
 The `event` keyword declares an *event*, which is a notification to registered subscribers (*event handlers*) that something of interest has occurred.  
@@ -90,7 +72,7 @@ modifiereventdelegate^ event_name
   
  `event` is a context-sensitive keyword; see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
   
 ### Remarks  
  For more information, see [Events (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755799.aspx).  
@@ -100,7 +82,7 @@ modifiereventdelegate^ event_name
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  The `event` keyword lets you declare an event. An event is a way for a class to provide notifications when something of interest happens.  
   
  **Syntax**  
@@ -178,7 +160,7 @@ modifiereventdelegate^ event_name
   
     -   Create an object of the class that contains the event definition.  
   
- For more information on [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] events, see  
+ For more information on C++/CLI events, see  
   
 -   [Events in an Interface](../dotnet/how-to-use-events-in-cpp-cli.md)  
   

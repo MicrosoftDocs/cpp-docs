@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 93cb6430-e4cf-43f5-ab60-3b57d1273b2c
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Unwind Data Definitions in C
 The following is a C description of the unwind data:  
@@ -41,7 +26,7 @@ typedef enum _UNWIND_OP_CODES {
     UWOP_SET_FPREG,       /* no info, FP = RSP + UNWIND_INFO.FPRegOffset*16 */  
     UWOP_SAVE_NONVOL,     /* info == register number, offset in next slot */  
     UWOP_SAVE_NONVOL_FAR, /* info == register number, offset in next 2 slots */  
-    UWOP_SAVE_XMM128,     /* info == XMM reg number, offset in next slot */  
+    UWOP_SAVE_XMM128 = 8, /* info == XMM reg number, offset in next slot */  
     UWOP_SAVE_XMM128_FAR, /* info == XMM reg number, offset in next 2 slots */  
     UWOP_PUSH_MACHFRAME   /* info == 0: no error-code, 1: error-code */  
 } UNWIND_CODE_OPS;  

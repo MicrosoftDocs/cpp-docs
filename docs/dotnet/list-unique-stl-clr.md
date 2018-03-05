@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::unique"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unique member [STL/CLR]"
+f1_keywords: ["cliext::list::unique"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unique member [STL/CLR]"]
 ms.assetid: c3a29e4e-0ec1-4472-b050-7a9511037132
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::unique (STL/CLR)
 Removes adjacent elements that pass a specified test.  
@@ -52,7 +35,7 @@ template<typename Pred2>
 ## Remarks  
  The first member function removes from the controlled sequence (erases) every element that compares equal to its preceding element -- if element `X` precedes element `Y` and `X == Y`, the member function removes `Y`. You use it to remove all but one copy of every subsequence of adjacent elements that compare equal. Note that if the controlled sequence is ordered, such as by calling [list::sort (STL/CLR)](../dotnet/list-sort-stl-clr.md)`()`, the member function leaves only elements with unique values. (Hence the name).  
   
- The second member function behaves the same as the first, except that it removes each element `Y` following an element `X` for which `pred``(X, Y)`. You use it to remove all but one copy of every subsequence of adjacent elements that satisfy a predicate function or delegate that you specify. Note that if the controlled sequence is ordered, such as by calling `sort(``pred``)`, the member function leaves only elements that do not have equivalent ordering with any other elements.  
+ The second member function behaves the same as the first, except that it removes each element `Y` following an element `X` for which `pred(X, Y)`. You use it to remove all but one copy of every subsequence of adjacent elements that satisfy a predicate function or delegate that you specify. Note that if the controlled sequence is ordered, such as by calling `sort(pred)`, the member function leaves only elements that do not have equivalent ordering with any other elements.  
   
 ## Example  
   

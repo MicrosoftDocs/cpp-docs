@@ -4,62 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_WM_MENUSELECT"
-  - "ON_WM_MBUTTONDBLCLK"
-  - "ON_WM_MOUSEACTIVATE"
-  - "ON_WM_MOUSEMOVE"
-  - "ON_WM_MOVING"
-  - "ON_WM_LBUTTONUP"
-  - "ON_WM_LBUTTONDBLCLK"
-  - "ON_WM_MEASUREITEM"
-  - "ON_WM_MDIACTIVATE"
-  - "ON_WM_MOVE"
-  - "ON_WM_LBUTTONDOWN"
-  - "ON_WM_MBUTTONDOWN"
-  - "ON_WM_MENUCHAR"
-  - "ON_WM_MBUTTONUP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_MENUSELECT"
-  - "ON_WM_MBUTTONDBLCLK"
-  - "ON_WM_MOVE"
-  - "ON_WM_MOUSEACTIVATE"
-  - "ON_WM_MBUTTONUP"
-  - "ON_WM_MOUSEMOVE"
-  - "ON_WM_MENUCHAR"
-  - "ON_WM_MBUTTONDOWN"
-  - "ON_WM_MEASUREITEM"
-  - "ON_WM_MOVING"
-  - "ON_WM_LBUTTONDOWN"
-  - "ON_WM_MDIACTIVATE"
-  - "ON_WM_LBUTTONDBLCLK"
-  - "ON_WM_LBUTTONUP"
-  - "WM_ messages"
+f1_keywords: ["ON_WM_MENUSELECT", "ON_WM_MBUTTONDBLCLK", "ON_WM_MOUSEACTIVATE", "ON_WM_MOUSEMOVE", "ON_WM_MOVING", "ON_WM_LBUTTONUP", "ON_WM_LBUTTONDBLCLK", "ON_WM_MEASUREITEM", "ON_WM_MDIACTIVATE", "ON_WM_MOVE", "ON_WM_LBUTTONDOWN", "ON_WM_MBUTTONDOWN", "ON_WM_MENUCHAR", "ON_WM_MBUTTONUP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_MENUSELECT [MFC]", "ON_WM_MBUTTONDBLCLK [MFC]", "ON_WM_MOVE [MFC]", "ON_WM_MOUSEACTIVATE [MFC]", "ON_WM_MBUTTONUP [MFC]", "ON_WM_MOUSEMOVE [MFC]", "ON_WM_MENUCHAR [MFC]", "ON_WM_MBUTTONDOWN [MFC]", "ON_WM_MEASUREITEM [MFC]", "ON_WM_MOVING [MFC]", "ON_WM_LBUTTONDOWN [MFC]", "ON_WM_MDIACTIVATE [MFC]", "ON_WM_LBUTTONDBLCLK [MFC]", "ON_WM_LBUTTONUP [MFC]", "WM_ messages"]
 ms.assetid: 96ecaaf1-6d13-4e12-a454-535635967489
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # WM_ Message Handlers: L - M
 The following map entries on the left correspond to the function prototypes on the right:  

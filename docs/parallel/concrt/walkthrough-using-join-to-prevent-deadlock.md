@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "preventing deadlock with joins [Concurrency Runtime]"
-  - "deadlock, preventing [Concurrency Runtime]"
-  - "non-greedy joins, example"
-  - "join class, example"
+dev_langs: ["C++"]
+helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using join to Prevent Deadlock
 This topic uses the dining philosophers problem to illustrate how to use the [concurrency::join](../../parallel/concrt/reference/join-class.md) class to prevent deadlock in your application. In a software application, *deadlock* occurs when two or more processes each hold a resource and mutually wait for another process to release some other resource.  

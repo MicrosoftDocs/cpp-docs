@@ -4,53 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDataSource.OpenWithPromptFileName"
-  - "OpenWithPromptFileName"
-  - "ATL::CDataSource::OpenWithPromptFileName"
-  - "ATL.CDataSource.OpenWithPromptFileName"
-  - "CDataSource::OpenWithPromptFileName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OpenWithPromptFileName method"
+ms.topic: "reference"
+f1_keywords: ["CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OpenWithPromptFileName method"]
 ms.assetid: 89460504-1aaf-4412-aa7b-fa5a4b39ada3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::OpenWithPromptFileName
 This method prompts the user with a dialog box, then opens a data source using the file specified by the user.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenWithPromptFileName(   
-   HWND hWnd = GetActiveWindow(   
-   ),   
+```cpp
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),   
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,   
-   LPCOLESTR szInitialDirectory = NULL    
-) throw( );  
+   LPCOLESTR szInitialDirectory = NULL) throw();  
 ```  
   
 #### Parameters  

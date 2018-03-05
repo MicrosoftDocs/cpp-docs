@@ -4,41 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function templates overload resolution"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function templates overload resolution"]
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Overload Resolution of Function Template Calls
 A function template can overload nontemplate functions of the same name. In this scenario, function calls are resolved by first using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, the other function overloads are considered to resolve the call. These other overloads, also known as the candidate set, include nontemplate functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Function Overloading](function-overloading.md).  
   
-## Example  
+## Example
+
  If a nontemplate function is an equally good match to a template function, the nontemplate function is chosen (unless the template arguments were explicitly specified), as in the call `f(1, 1)` in the following example.  
   
-```  
+```cpp
 // template_name_resolution9.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -67,10 +52,11 @@ void f(T1, T2)
 void f(T1, T2)  
 ```  
   
-## Example  
+## Example
+
  The next example illustrates that the exactly matching template function is preferred if the nontemplate function requires a conversion.  
   
-```  
+```cpp
 // template_name_resolution10.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -98,7 +84,8 @@ int main()
 void f(T1, T2)  
 ```  
   
-## See Also  
+## See Also
+
  [Name Resolution](../cpp/templates-and-name-resolution.md)   
  [typename](../cpp/typename.md)   
  

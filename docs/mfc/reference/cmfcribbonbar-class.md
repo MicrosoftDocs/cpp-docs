@@ -4,39 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonBar class"
+f1_keywords: ["CMFCRibbonBar", "AFXRIBBONBAR/CMFCRibbonBar", "AFXRIBBONBAR/CMFCRibbonBar::ActivateContextCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddContextCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddMainCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddPrintPreviewCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddQATOnlyCategory", "AFXRIBBONBAR/CMFCRibbonBar::AddToTabs", "AFXRIBBONBAR/CMFCRibbonBar::CreateEx", "AFXRIBBONBAR/CMFCRibbonBar::Create", "AFXRIBBONBAR/CMFCRibbonBar::DeactivateKeyboardFocus", "AFXRIBBONBAR/CMFCRibbonBar::DrawMenuImage", "AFXRIBBONBAR/CMFCRibbonBar::DWMCompositionChanged", "AFXRIBBONBAR/CMFCRibbonBar::EnableKeyTips", "AFXRIBBONBAR/CMFCRibbonBar::EnablePrintPreview", "AFXRIBBONBAR/CMFCRibbonBar::EnableToolTips", "AFXRIBBONBAR/CMFCRibbonBar::FindByData", "AFXRIBBONBAR/CMFCRibbonBar::FindByID", "AFXRIBBONBAR/CMFCRibbonBar::FindCategoryIndexByData", "AFXRIBBONBAR/CMFCRibbonBar::ForceRecalcLayout", "AFXRIBBONBAR/CMFCRibbonBar::GetActiveCategory", "AFXRIBBONBAR/CMFCRibbonBar::GetCaptionHeight", "AFXRIBBONBAR/CMFCRibbonBar::GetCategory", "AFXRIBBONBAR/CMFCRibbonBar::GetCategoryCount", "AFXRIBBONBAR/CMFCRibbonBar::GetCategoryHeight", "AFXRIBBONBAR/CMFCRibbonBar::GetCategoryIndex", "AFXRIBBONBAR/CMFCRibbonBar::GetContextName", "AFXRIBBONBAR/CMFCRibbonBar::GetDroppedDown", "AFXRIBBONBAR/CMFCRibbonBar::GetElementsByID", "AFXRIBBONBAR/CMFCRibbonBar::GetApplicationButton", "AFXRIBBONBAR/CMFCRibbonBar::GetFocused", "AFXRIBBONBAR/CMFCRibbonBar::GetHideFlags", "AFXRIBBONBAR/CMFCRibbonBar::GetItemIDsList", "AFXRIBBONBAR/CMFCRibbonBar::GetKeyboardNavigationLevel", "AFXRIBBONBAR/CMFCRibbonBar::GetKeyboardNavLevelCurrent", "AFXRIBBONBAR/CMFCRibbonBar::GetKeyboardNavLevelParent", "AFXRIBBONBAR/CMFCRibbonBar::GetMainCategory", "AFXRIBBONBAR/CMFCRibbonBar::GetQATCommandsLocation", "AFXRIBBONBAR/CMFCRibbonBar::GetQATDroppedDown", "AFXRIBBONBAR/CMFCRibbonBar::GetQuickAccessCommands", "AFXRIBBONBAR/CMFCRibbonBar::GetQuickAccessToolbarLocation", "AFXRIBBONBAR/CMFCRibbonBar::GetTabTrancateRatio", "AFXRIBBONBAR/CMFCRibbonBar::GetTooltipFixedWidthLargeImage", "AFXRIBBONBAR/CMFCRibbonBar::GetTooltipFixedWidthRegular", "AFXRIBBONBAR/CMFCRibbonBar::GetVisibleCategoryCount", "AFXRIBBONBAR/CMFCRibbonBar::HideAllContextCategories", "AFXRIBBONBAR/CMFCRibbonBar::HideKeyTips", "AFXRIBBONBAR/CMFCRibbonBar::HitTest", "AFXRIBBONBAR/CMFCRibbonBar::IsKeyTipEnabled", "AFXRIBBONBAR/CMFCRibbonBar::IsMainRibbonBar", "AFXRIBBONBAR/CMFCRibbonBar::IsPrintPreviewEnabled", "AFXRIBBONBAR/CMFCRibbonBar::IsQATEmpty", "AFXRIBBONBAR/CMFCRibbonBar::IsQuickAccessToolbarOnTop", "AFXRIBBONBAR/CMFCRibbonBar::IsReplaceFrameCaption", "AFXRIBBONBAR/CMFCRibbonBar::IsShowGroupBorder", "AFXRIBBONBAR/CMFCRibbonBar::IsToolTipDescrEnabled", "AFXRIBBONBAR/CMFCRibbonBar::IsToolTipEnabled", "AFXRIBBONBAR/CMFCRibbonBar::IsTransparentCaption", "AFXRIBBONBAR/CMFCRibbonBar::IsWindows7Look", "AFXRIBBONBAR/CMFCRibbonBar::LoadFromResource", "AFXRIBBONBAR/CMFCRibbonBar::OnClickButton", "AFXRIBBONBAR/CMFCRibbonBar::OnEditContextMenu", "AFXRIBBONBAR/CMFCRibbonBar::OnRTLChanged", "AFXRIBBONBAR/CMFCRibbonBar::OnSetAccData", "AFXRIBBONBAR/CMFCRibbonBar::OnShowRibbonContextMenu", "AFXRIBBONBAR/CMFCRibbonBar::OnShowRibbonQATMenu", "AFXRIBBONBAR/CMFCRibbonBar::OnSysKeyDown", "AFXRIBBONBAR/CMFCRibbonBar::OnSysKeyUp", "AFXRIBBONBAR/CMFCRibbonBar::PopTooltip", "AFXRIBBONBAR/CMFCRibbonBar::PreTranslateMessage", "AFXRIBBONBAR/CMFCRibbonBar::RecalcLayout", "AFXRIBBONBAR/CMFCRibbonBar::RemoveAllCategories", "AFXRIBBONBAR/CMFCRibbonBar::RemoveAllFromTabs", "AFXRIBBONBAR/CMFCRibbonBar::RemoveCategory", "AFXRIBBONBAR/CMFCRibbonBar::SaveToXMLBuffer", "AFXRIBBONBAR/CMFCRibbonBar::SaveToXMLFile", "AFXRIBBONBAR/CMFCRibbonBar::SetActiveCategory", "AFXRIBBONBAR/CMFCRibbonBar::SetActiveMDIChild", "AFXRIBBONBAR/CMFCRibbonBar::SetElementKeys", "AFXRIBBONBAR/CMFCRibbonBar::SetApplicationButton", "AFXRIBBONBAR/CMFCRibbonBar::SetKeyboardNavigationLevel", "AFXRIBBONBAR/CMFCRibbonBar::SetMaximizeMode", "AFXRIBBONBAR/CMFCRibbonBar::SetQuickAccessCommands", "AFXRIBBONBAR/CMFCRibbonBar::SetQuickAccessDefaultState", "AFXRIBBONBAR/CMFCRibbonBar::SetQuickAccessToolbarOnTop", "AFXRIBBONBAR/CMFCRibbonBar::SetTooltipFixedWidth", "AFXRIBBONBAR/CMFCRibbonBar::SetWindows7Look", "AFXRIBBONBAR/CMFCRibbonBar::ShowCategory", "AFXRIBBONBAR/CMFCRibbonBar::ShowContextCategories", "AFXRIBBONBAR/CMFCRibbonBar::ShowKeyTips", "AFXRIBBONBAR/CMFCRibbonBar::ToggleMimimizeState", "AFXRIBBONBAR/CMFCRibbonBar::TranslateChar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonBar [MFC], ActivateContextCategory", "CMFCRibbonBar [MFC], AddCategory", "CMFCRibbonBar [MFC], AddContextCategory", "CMFCRibbonBar [MFC], AddMainCategory", "CMFCRibbonBar [MFC], AddPrintPreviewCategory", "CMFCRibbonBar [MFC], AddQATOnlyCategory", "CMFCRibbonBar [MFC], AddToTabs", "CMFCRibbonBar [MFC], CreateEx", "CMFCRibbonBar [MFC], Create", "CMFCRibbonBar [MFC], DeactivateKeyboardFocus", "CMFCRibbonBar [MFC], DrawMenuImage", "CMFCRibbonBar [MFC], DWMCompositionChanged", "CMFCRibbonBar [MFC], EnableKeyTips", "CMFCRibbonBar [MFC], EnablePrintPreview", "CMFCRibbonBar [MFC], EnableToolTips", "CMFCRibbonBar [MFC], FindByData", "CMFCRibbonBar [MFC], FindByID", "CMFCRibbonBar [MFC], FindCategoryIndexByData", "CMFCRibbonBar [MFC], ForceRecalcLayout", "CMFCRibbonBar [MFC], GetActiveCategory", "CMFCRibbonBar [MFC], GetCaptionHeight", "CMFCRibbonBar [MFC], GetCategory", "CMFCRibbonBar [MFC], GetCategoryCount", "CMFCRibbonBar [MFC], GetCategoryHeight", "CMFCRibbonBar [MFC], GetCategoryIndex", "CMFCRibbonBar [MFC], GetContextName", "CMFCRibbonBar [MFC], GetDroppedDown", "CMFCRibbonBar [MFC], GetElementsByID", "CMFCRibbonBar [MFC], GetApplicationButton", "CMFCRibbonBar [MFC], GetFocused", "CMFCRibbonBar [MFC], GetHideFlags", "CMFCRibbonBar [MFC], GetItemIDsList", "CMFCRibbonBar [MFC], GetKeyboardNavigationLevel", "CMFCRibbonBar [MFC], GetKeyboardNavLevelCurrent", "CMFCRibbonBar [MFC], GetKeyboardNavLevelParent", "CMFCRibbonBar [MFC], GetMainCategory", "CMFCRibbonBar [MFC], GetQATCommandsLocation", "CMFCRibbonBar [MFC], GetQATDroppedDown", "CMFCRibbonBar [MFC], GetQuickAccessCommands", "CMFCRibbonBar [MFC], GetQuickAccessToolbarLocation", "CMFCRibbonBar [MFC], GetTabTrancateRatio", "CMFCRibbonBar [MFC], GetTooltipFixedWidthLargeImage", "CMFCRibbonBar [MFC], GetTooltipFixedWidthRegular", "CMFCRibbonBar [MFC], GetVisibleCategoryCount", "CMFCRibbonBar [MFC], HideAllContextCategories", "CMFCRibbonBar [MFC], HideKeyTips", "CMFCRibbonBar [MFC], HitTest", "CMFCRibbonBar [MFC], IsKeyTipEnabled", "CMFCRibbonBar [MFC], IsMainRibbonBar", "CMFCRibbonBar [MFC], IsPrintPreviewEnabled", "CMFCRibbonBar [MFC], IsQATEmpty", "CMFCRibbonBar [MFC], IsQuickAccessToolbarOnTop", "CMFCRibbonBar [MFC], IsReplaceFrameCaption", "CMFCRibbonBar [MFC], IsShowGroupBorder", "CMFCRibbonBar [MFC], IsToolTipDescrEnabled", "CMFCRibbonBar [MFC], IsToolTipEnabled", "CMFCRibbonBar [MFC], IsTransparentCaption", "CMFCRibbonBar [MFC], IsWindows7Look", "CMFCRibbonBar [MFC], LoadFromResource", "CMFCRibbonBar [MFC], OnClickButton", "CMFCRibbonBar [MFC], OnEditContextMenu", "CMFCRibbonBar [MFC], OnRTLChanged", "CMFCRibbonBar [MFC], OnSetAccData", "CMFCRibbonBar [MFC], OnShowRibbonContextMenu", "CMFCRibbonBar [MFC], OnShowRibbonQATMenu", "CMFCRibbonBar [MFC], OnSysKeyDown", "CMFCRibbonBar [MFC], OnSysKeyUp", "CMFCRibbonBar [MFC], PopTooltip", "CMFCRibbonBar [MFC], PreTranslateMessage", "CMFCRibbonBar [MFC], RecalcLayout", "CMFCRibbonBar [MFC], RemoveAllCategories", "CMFCRibbonBar [MFC], RemoveAllFromTabs", "CMFCRibbonBar [MFC], RemoveCategory", "CMFCRibbonBar [MFC], SaveToXMLBuffer", "CMFCRibbonBar [MFC], SaveToXMLFile", "CMFCRibbonBar [MFC], SetActiveCategory", "CMFCRibbonBar [MFC], SetActiveMDIChild", "CMFCRibbonBar [MFC], SetElementKeys", "CMFCRibbonBar [MFC], SetApplicationButton", "CMFCRibbonBar [MFC], SetKeyboardNavigationLevel", "CMFCRibbonBar [MFC], SetMaximizeMode", "CMFCRibbonBar [MFC], SetQuickAccessCommands", "CMFCRibbonBar [MFC], SetQuickAccessDefaultState", "CMFCRibbonBar [MFC], SetQuickAccessToolbarOnTop", "CMFCRibbonBar [MFC], SetTooltipFixedWidth", "CMFCRibbonBar [MFC], SetWindows7Look", "CMFCRibbonBar [MFC], ShowCategory", "CMFCRibbonBar [MFC], ShowContextCategories", "CMFCRibbonBar [MFC], ShowKeyTips", "CMFCRibbonBar [MFC], ToggleMimimizeState", "CMFCRibbonBar [MFC], TranslateChar"]
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
 caps.latest.revision: 41
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonBar Class
 The `CMFCRibbonBar` class implements a ribbon bar similar to that used in Office 2007.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -1161,7 +1146,7 @@ virtual void OnClickButton(
 ### Remarks  
   
 ##  <a name="oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnEditContextMenu(
@@ -1206,7 +1191,7 @@ BOOL OnSetAccData(long lVal);
 ### Remarks  
   
 ##  <a name="onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowRibbonContextMenu(
@@ -1227,7 +1212,7 @@ virtual BOOL OnShowRibbonContextMenu(
 ### Remarks  
   
 ##  <a name="onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowRibbonQATMenu(

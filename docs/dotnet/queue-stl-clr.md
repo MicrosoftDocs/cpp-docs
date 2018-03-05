@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::queue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<queue> header [STL/CLR]"
-  - "queue class [STL/CLR]"
-  - "<cliext/queue> header [STL/CLR]"
+f1_keywords: ["cliext::queue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]"]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has first-in first-out access. You use the container adapter `queue` to manage an underlying container as a queue.  

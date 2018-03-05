@@ -4,45 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL"
-  - "module/Microsoft::WRL"
-  - "async/Microsoft::WRL"
-  - "internal/Microsoft::WRL"
-  - "event/Microsoft::WRL"
-  - "ftm/Microsoft::WRL"
-  - "client/Microsoft::WRL"
-  - "corewrappers/Microsoft::WRL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WRL namespace"
+f1_keywords: ["implements/Microsoft::WRL", "module/Microsoft::WRL", "async/Microsoft::WRL", "internal/Microsoft::WRL", "event/Microsoft::WRL", "ftm/Microsoft::WRL", "client/Microsoft::WRL", "corewrappers/Microsoft::WRL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["WRL namespace"]
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL Namespace
-Defines the fundamental types that make up the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+Defines the fundamental types that make up the Windows Runtime C++ Template Library.  
   
 ## Syntax  
   
@@ -101,7 +77,7 @@ namespace Microsoft::WRL;
 |[Callback Function](../windows/callback-function-windows-runtime-cpp-template-library.md)|Creates an object whose member function is a callback method.|  
 |[CreateActivationFactory Function](../windows/createactivationfactory-function.md)|Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.|  
 |[CreateClassFactory Function](../windows/createclassfactory-function.md)|Creates a factory that produces instances of the specified class.|  
-|[Make Function](../windows/make-function.md)|Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class.|  
+|[Make Function](../windows/make-function.md)|Initializes the specified Windows Runtime class.|  
   
 ## Requirements  
  **Header:** async.h, client.h, corewrappers.h, event.h, ftm.h, implements.h, internal.h, module.h  

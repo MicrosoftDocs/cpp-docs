@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "execution_character_set"
-  - "vc-pragma.execution_character_set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragma execution_character_set"
+ms.topic: "reference"
+f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragma execution_character_set"]
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # execution_character_set
 Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.  
@@ -41,7 +31,7 @@ Specifies the execution character set used for string and character literals. Th
  Specifies the target execution character set. Currently the only target execution set supported is "utf-8".  
   
 ## Remarks  
- This compiler directive is obsolete in Visual Studio 2015 Update 2. We recommend that you use the **/execution-charset:utf-8** or **/utf-8** compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and Character Literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md) and [/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).  
+ This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We recommend that you use the **/execution-charset:utf-8** or **/utf-8** compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and Character Literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md) and [/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).  
   
  The `#pragma execution_character_set("utf-8")` directive tells the compiler to encode narrow character and narrow string literals in your source code as UTF-8 in the executable. This output encoding is independent of the source file encoding used.  
   

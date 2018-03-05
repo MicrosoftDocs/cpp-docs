@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_graphics/Concurrency::graphics::texture"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["texture", "AMP_GRAPHICS/texture", "AMP_GRAPHICS/concurrency::graphics::texture::texture", "AMP_GRAPHICS/concurrency::graphics::texture::copy_to", "AMP_GRAPHICS/concurrency::graphics::texture::data", "AMP_GRAPHICS/concurrency::graphics::texture::get", "AMP_GRAPHICS/concurrency::graphics::texture::get_associated_accelerator_view", "AMP_GRAPHICS/concurrency::graphics::texture::get_depth_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::get_row_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::set", "AMP_GRAPHICS/concurrency::graphics::texture::rank", "AMP_GRAPHICS/concurrency::graphics::texture::associated_accelerator_view", "AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::row_pitch"]
+dev_langs: ["C++"]
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # texture Class
 A texture is a data aggregate on an `accelerator_view` in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type ( `unsigned int`, `int`, `float`, `double`), a scalar type ( `norm`, or `unorm`), or a short vector type.  
@@ -38,10 +22,7 @@ A texture is a data aggregate on an `accelerator_view` in the extent domain. It 
 ## Syntax  
   
 ```  
-template <
-    typename value_type,  
-    int _Rank  
->  
+template <typename value_type,  int _Rank>  
 class texture;  
 ```  
   
@@ -72,21 +53,21 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy_to Method](#copy_to)|Copies the `texture` object to the destination, by doing a deep copy.|  
-|[data Method](#data)|Returns a CPU pointer to the raw data of this texture.|  
-|[get Method](#get)|Returns the value of the element at the specified index.|  
-|[get_associated_accelerator_view Method](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[get_depth_pitch Method](#get_depth_pitch)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[get_row_pitch Method](#get_row_pitch)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
-|[set Method](#set)|Sets the value of the element at the specified index.|  
+|[copy_to](#copy_to)|Copies the `texture` object to the destination, by doing a deep copy.|  
+|[data](#data)|Returns a CPU pointer to the raw data of this texture.|  
+|[get](#get)|Returns the value of the element at the specified index.|  
+|[get_associated_accelerator_view](#get_associated_accelerator_view)|Returns the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[get_depth_pitch](#get_depth_pitch)|Returns the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[get_row_pitch](#get_row_pitch)|Returns the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[set](#set)|Sets the value of the element at the specified index.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator() Operator](#operator_call)|Returns the element value that is specified by the parameters.|  
-|[operator[] Operator](#operator_at)|Returns the element that is at the specified index.|  
-|[operator= Operator](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
+|[operator()](#operator_call)|Returns the element value that is specified by the parameters.|  
+|[operator[]](#operator_at)|Returns the element that is at the specified index.|  
+|[operator=](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|  
   
 ### Public Constants  
   
@@ -98,9 +79,9 @@ class texture;
   
 |Name|Description|  
 |----------|-----------------|  
-|[associated_accelerator_view Data Member](#associated_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
-|[depth_pitch Data Member](#depth_pitch)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
-|[row_pitch Data Member](#row_pitch)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
+|[associated_accelerator_view](#associated_accelerator_view)|Gets the [accelerator_view](accelerator-view-class.md) that is the preferred target for this texture to be copied to.|  
+|[depth_pitch](#depth_pitch)|Gets the number of bytes between each depth slice in a 3D staging texture on the CPU.|  
+|[row_pitch](#row_pitch)|Gets the number of bytes between each row in a 2D or 3D staging texture on the CPU.|  
   
 ## Inheritance Hierarchy  
  `_Texture_base`  
@@ -133,15 +114,8 @@ __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelera
  Copies the `texture` object to the destination, by doing a deep copy.  
   
 ```  
-void copy_to(
-    texture& _Dest) const;
-
- 
- 
-void copy_to(
-    writeonly_texture_view<value_type, _Rank>& _Dest) const;
-
- 
+void copy_to(texture& _Dest) const; 
+void copy_to(writeonly_texture_view<value_type, _Rank>& _Dest) const; 
 ```  
   
 ### Parameters  
@@ -349,40 +323,26 @@ void set(
  Initializes a new instance of the `texture` class.  
   
 ```  
-texture(
-    const Concurrency::extent<_Rank>& _Ext) restrict(cpu);
-
+texture(const Concurrency::extent<_Rank>& _Ext) restrict(cpu);
  
-texture(
-    int _E0) restrict(cpu);
-
+texture(int _E0) restrict(cpu);
  
-texture(
-    int _E0,  
-    int _E1) restrict(cpu);
-
+texture(int _E0, int _E1) restrict(cpu);
  
-texture(
-    int _E0,  
-    int _E1,  
-    int _E2) restrict(cpu);
-
+texture(int _E0, int _E1, int _E2) restrict(cpu);
  
 texture(
     const Concurrency::extent<_Rank>& _Ext,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
-
  
 texture(
     int _E0,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
-
  
 texture(
     int _E0,  
     int _E1,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
-
  
 texture(
     int _E0,  
@@ -390,70 +350,68 @@ texture(
     int _E2,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
 
- 
-template<
-    typename _Input_iterator  
->  
+
+template<typename _Input_iterator>  
 texture(
-    const Concurrency::extent<_Rank>& _Ext, _Input_iterator _Src_first, _Input_iterator _Src_last) restrict(cpu);
+    const Concurrency::extent<_Rank>& _Ext, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
     int _E0, _Input_iterator _Src_first, _Input_iterator _Src_last) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
     int _E0,  
-    int _E1, _Input_iterator _Src_first, _Input_iterator _Src_last) restrict(cpu);
+    int _E1, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
     int _E0,  
     int _E1,  
-    int _E2, _Input_iterator _Src_first, _Input_iterator _Src_last) restrict(cpu);
+    int _E2, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
-    const Concurrency::extent<_Rank>& _Ext, _Input_iterator _Src_first, _Input_iterator _Src_last,  
+    const Concurrency::extent<_Rank>& _Ext, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
-    int _E0, _Input_iterator _Src_first, _Input_iterator _Src_last,  
+    int _E0, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
     int _E0,  
-    int _E1, _Input_iterator _Src_first, _Input_iterator _Src_last,  
+    int _E1, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last,  
     const Concurrency::accelerator_view& _Av) restrict(cpu);
 
  
-template<
-    typename _Input_iterator  
->  
+template<typename _Input_iterator>  
 texture(
     int _E0,  
     int _E1,  
-    int _E2, _Input_iterator _Src_first, _Input_iterator _Src_last,  
+    int _E2, 
+    _Input_iterator _Src_first, 
+    _Input_iterator _Src_last,  
     const Concurrency::accelerator_view& _Av) restrict(cpu))  ;  
  
 texture(

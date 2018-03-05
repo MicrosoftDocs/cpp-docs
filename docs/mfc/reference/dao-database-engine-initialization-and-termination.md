@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.data"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO (Data Access Objects), termination"
-  - "DAO (Data Access Objects), initialization"
+f1_keywords: ["vc.mfc.macros.data"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # DAO Database Engine Initialization and Termination
 When using MFC DAO objects, the DAO database engine must first be initialized and then terminated before your application or DLL quits. Two functions, `AfxDaoInit` and `AfxDaoTerm`, perform these tasks.  
@@ -72,9 +54,9 @@ void AfxDaoTerm();
 ```  
   
 ### Remarks  
- Typically, you only need to call this function in a regular DLL; an application will automatically call `AfxDaoTerm` when it is needed.  
+ Typically, you only need to call this function in a regular MFC DLL; an application will automatically call `AfxDaoTerm` when it is needed.  
   
- In regular DLLs, call `AfxDaoTerm` before the `ExitInstance` function, but after all MFC DAO objects have been destroyed.  
+ In regular MFC DLLs, call `AfxDaoTerm` before the `ExitInstance` function, but after all MFC DAO objects have been destroyed.  
   
  For related information, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
 

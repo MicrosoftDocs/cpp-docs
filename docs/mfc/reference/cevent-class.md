@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CEvent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronization objects, event"
-  - "synchronization classes, CEvent class"
-  - "CEvent class"
+f1_keywords: ["CEvent", "AFXMT/CEvent", "AFXMT/CEvent::CEvent", "AFXMT/CEvent::PulseEvent", "AFXMT/CEvent::ResetEvent", "AFXMT/CEvent::SetEvent", "AFXMT/CEvent::Unlock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CEvent [MFC], CEvent", "CEvent [MFC], PulseEvent", "CEvent [MFC], ResetEvent", "CEvent [MFC], SetEvent", "CEvent [MFC], Unlock"]
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CEvent Class
 Represents an event, which is a synchronization object that enables one thread to notify another that an event has occurred.  
@@ -116,7 +97,7 @@ CEvent(
  Name of the `CEvent` object. Must be supplied if the object will be used across process boundaries. If the name matches an existing event, the constructor builds a new `CEvent` object which references the event of that name. If the name matches an existing synchronization object that is not an event, the construction will fail. If **NULL**, the name will be null.  
   
  `lpsaAttribute`  
- Security attributes for the event object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Security attributes for the event object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.  
   
 ### Remarks  
  To access or release a `CEvent` object, create a [CMultiLock](../../mfc/reference/cmultilock-class.md) or [CSingleLock](../../mfc/reference/csinglelock-class.md) object and call its [Lock](../../mfc/reference/csinglelock-class.md#lock) and [Unlock](../../mfc/reference/csinglelock-class.md#unlock) member functions.  

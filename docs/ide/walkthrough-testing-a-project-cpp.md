@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "project testing [C++]"
-  - "testing projects"
-  - "projects [C++], testing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["project testing [C++]", "testing projects", "projects [C++], testing"]
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Testing a Project (C++)
 When you run a program in Debug mode, you can use breakpoints to pause the program to examine the state of variables and objects.  
@@ -79,5 +61,5 @@ When you run a program in Debug mode, you can use breakpoints to pause the progr
  **Previous:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md) &#124; **Next:**[Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
- [DELETE_PENDING_Building and Debugging](http://msdn.microsoft.com/en-us/9f6ba537-5ea0-46fb-b6ba-b63d657d84f1)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)

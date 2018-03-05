@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<vector>"
-  - "std.<vector>"
-  - "std::<vector>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vector header"
+ms.topic: "reference"
+f1_keywords: ["<vector>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vector header"]
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;vector&gt;
 Defines the container template class vector and several supporting templates.  
@@ -100,22 +81,22 @@ void swap (
  Allocator  
  The template parameter for the stored allocator object responsible for memory allocation and deallocation.  
   
- ` left`  
+ `left`  
  The first (left) vector in a compare operation  
   
- ` right`  
+ `right`  
  The second (right) vector in a compare operation.  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/vector-operators.md#operator_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|  
-|[operator<](../standard-library/vector-operators.md#operator_lt_)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|  
-|[operator\<=](../standard-library/vector-operators.md#operator_lt__eq)|Tests if the vector object on the left side of the operator is less than or equal to the vector object on the right side.|  
-|[operator==](../standard-library/vector-operators.md#operator_eq_eq)|Tests if the vector object on the left side of the operator is equal to the vector object on the right side.|  
-|[operator>](../standard-library/vector-operators.md#operator_gt_)|Tests if the vector object on the left side of the operator is greater than the vector object on the right side.|  
-|[operator>=](../standard-library/vector-operators.md#operator_gt__eq)|Tests if the vector object on the left side of the operator is greater than or equal to the vector object on the right side.|  
+|[operator! =](../standard-library/vector-operators.md#op_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|  
+|[operator<](../standard-library/vector-operators.md#op_lt)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|  
+|[operator\<=](../standard-library/vector-operators.md#op_gt_eq)|Tests if the vector object on the left side of the operator is less than or equal to the vector object on the right side.|  
+|[operator==](../standard-library/vector-operators.md#op_eq_eq)|Tests if the vector object on the left side of the operator is equal to the vector object on the right side.|  
+|[operator>](../standard-library/vector-operators.md#op_gt)|Tests if the vector object on the left side of the operator is greater than the vector object on the right side.|  
+|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|Tests if the vector object on the left side of the operator is greater than or equal to the vector object on the right side.|  
   
 ### Classes  
   

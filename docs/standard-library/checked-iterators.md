@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_SECURE_SCL_THROWS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Safe Libraries"
-  - "Safe Libraries, C++ Standard Library"
-  - "Safe C++ Standard Library"
-  - "iterators, checked"
-  - "checked iterators"
+ms.topic: "reference"
+f1_keywords: ["_SECURE_SCL_THROWS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "iterators, checked", "checked iterators"]
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Checked Iterators
 Checked iterators ensure that the bounds of your container are not overwritten. Checked iterators apply to both release builds and debug builds. For more information about how to use debug iterators when you compile in debug mode, see [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
@@ -51,7 +30,7 @@ You can use the [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-le
   
 When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are performed:  
   
--   All standard iterators (for example, [vector::iterator](../standard-library/vector-class.md#vector__iterator)) are checked.  
+-   All standard iterators (for example, [vector::iterator](../standard-library/vector-class.md#iterator)) are checked.  
   
 -   If an output iterator is a checked iterator, calls to standard library functions such as [std::copy](../standard-library/algorithm-functions.md#copy) get checked behavior.  
   
@@ -61,9 +40,9 @@ When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are per
   
 |||||  
 |-|-|-|-|  
-|[basic_string::operator\[\]](../standard-library/basic-string-class.md#basic_string__operator_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#bitset__operator_at)|[deque::back](../standard-library/deque-class.md#deque__back)|[deque::front](../standard-library/deque-class.md#deque__front)|  
-|[deque::operator\[\]](../standard-library/deque-class.md#deque__operator_at)|[list::back](../standard-library/list-class.md#list__back)|[list::front](../standard-library/list-class.md#list__front)|[queue::back](../standard-library/queue-class.md#queue__back)|  
-|[queue::front](../standard-library/queue-class.md#queue__front)|[vector::operator\[\]](../standard-library/vector-class.md#vector__operator_at)|[vector::back](../standard-library/vector-class.md#vector__back)|[vector::front](../standard-library/vector-class.md#vector__front)|  
+|[basic_string::operator\[\]](../standard-library/basic-string-class.md#op_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#op_at)|[back](../standard-library/deque-class.md#back)|[front](../standard-library/deque-class.md#front)|  
+|[deque::operator\[\]](../standard-library/deque-class.md#op_at)|[back](../standard-library/list-class.md#back)|[front](../standard-library/list-class.md#front)|[back](../standard-library/queue-class.md#back)|  
+|[front](../standard-library/queue-class.md#front)|[vector::operator\[\]](../standard-library/vector-class.md#op_at)|[back](../standard-library/vector-class.md#back)|[front](../standard-library/vector-class.md#front)|  
   
 When `_ITERATOR_DEBUG_LEVEL` is defined as 0:  
   

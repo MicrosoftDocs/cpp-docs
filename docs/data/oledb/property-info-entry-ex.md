@@ -4,46 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROPERTY_INFO_ENTRY_EX"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PROPERTY_INFO_ENTRY_EX macro"
+ms.topic: "reference"
+f1_keywords: ["PROPERTY_INFO_ENTRY_EX"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PROPERTY_INFO_ENTRY_EX macro"]
 ms.assetid: af32dfcd-4c50-449d-af3b-48d21bd67a04
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # PROPERTY_INFO_ENTRY_EX
 Represents a specific property in a property set.  
   
 ## Syntax  
   
-```  
-  
-PROPERTY_INFO_ENTRY_EX(  
-dwPropID  
+```cpp
+PROPERTY_INFO_ENTRY_EX(dwPropID  
 , vt, dwFlags, value, options )  
 ```  
   

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, event handling"
-  - "event handling, ATL"
-  - "interfaces, event and event sink"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, event handling", "event handling, ATL", "interfaces, event and event sink"]
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Implementing the Event Handling Interface
 ATL helps you with all three elements required for handling events: implementing the event interface, advising the event source, and unadvising the event source. The precise steps you'll need to take depend on the type of the event interface and the performance requirements of your application.  
@@ -48,7 +30,7 @@ ATL helps you with all three elements required for handling events: implementing
 -   Deriving from [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) for dispinterfaces not described in a type library or when you want to improve efficiency by not loading the type information at run time.  
   
 
- If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](http://msdn.microsoft.com/Library/625a2f03-6b7f-4761-be5d-d2871d1d3254) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](http://msdn.microsoft.com/Library/939d2e50-e2df-4e8f-a16a-e9650b8f0340) to break the connection.  
+ If you are implementing a custom or dual interface, you should advise the event source by calling [AtlAdvise](reference/connection-point-global-functions.md#atladvise) or [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). You will need to keep track of the cookie returned by the call yourself. Call [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) to break the connection.  
 
   
  If you are implementing a dispinterface using `IDispEventImpl` or `IDispEventSimpleImpl`, you should advise the event source by calling [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Call [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) to break the connection.  

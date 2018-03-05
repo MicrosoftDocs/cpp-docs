@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IUMSThreadProxy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSThreadProxy structure"
+ms.topic: "reference"
+f1_keywords: ["IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::GetCriticalRegionType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSThreadProxy structure"]
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IUMSThreadProxy Structure
 An abstraction for a thread of execution. If you want your scheduler to be granted user-mode schedulable (UMS) threads, set the value for the scheduler policy element `SchedulerKind` to `UmsThreadDefault`, and implement the `IUMSScheduler` interface. UMS threads are only supported on 64-bit operating systems with version Windows 7 and higher.  
@@ -49,11 +32,11 @@ struct IUMSThreadProxy : public IThreadProxy;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IUMSThreadProxy::EnterCriticalRegion Method](#entercriticalregion)|Called in order to enter a critical region. When inside a critical region, the scheduler will not observe asynchronous blocking operations that happen during the region. This means that the scheduler will not be reentered for page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.|  
-|[IUMSThreadProxy::EnterHyperCriticalRegion Method](#enterhypercriticalregion)|Called in order to enter a hyper-critical region. When inside a hyper-critical region, the scheduler will not observe any blocking operations that happen during the region. This means the scheduler will not be reentered for blocking function calls, lock acquisition attempts which block, page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.|  
-|[IUMSThreadProxy::ExitCriticalRegion Method](#exitcriticalregion)|Called in order to exit a critical region.|  
-|[IUMSThreadProxy::ExitHyperCriticalRegion Method](#exithypercriticalregion)|Called in order to exit a hyper-critical region.|  
-|[IUMSThreadProxy::GetCriticalRegionType Method](#getcriticalregiontype)|Returns what kind of critical region the thread proxy is within. Because hyper-critical regions are a superset of critical regions, if code has entered a critical region and then a hyper-critical region, `InsideHyperCriticalRegion` will be returned.|  
+|[IUMSThreadProxy::EnterCriticalRegion](#entercriticalregion)|Called in order to enter a critical region. When inside a critical region, the scheduler will not observe asynchronous blocking operations that happen during the region. This means that the scheduler will not be reentered for page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.|  
+|[IUMSThreadProxy::EnterHyperCriticalRegion](#enterhypercriticalregion)|Called in order to enter a hyper-critical region. When inside a hyper-critical region, the scheduler will not observe any blocking operations that happen during the region. This means the scheduler will not be reentered for blocking function calls, lock acquisition attempts which block, page faults, thread suspensions, kernel asynchronous procedure calls (APCs), and so forth, for a UMS thread.|  
+|[IUMSThreadProxy::ExitCriticalRegion](#exitcriticalregion)|Called in order to exit a critical region.|  
+|[IUMSThreadProxy::ExitHyperCriticalRegion](#exithypercriticalregion)|Called in order to exit a hyper-critical region.|  
+|[IUMSThreadProxy::GetCriticalRegionType](#getcriticalregiontype)|Returns what kind of critical region the thread proxy is within. Because hyper-critical regions are a superset of critical regions, if code has entered a critical region and then a hyper-critical region, `InsideHyperCriticalRegion` will be returned.|  
   
 ## Inheritance Hierarchy  
  [IThreadProxy](ithreadproxy-structure.md)  

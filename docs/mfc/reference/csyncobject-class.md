@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSyncObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSyncObject class"
-  - "synchronization classes, CSyncObject"
+f1_keywords: ["CSyncObject", "AFXMT/CSyncObject", "AFXMT/CSyncObject::CSyncObject", "AFXMT/CSyncObject::Lock", "AFXMT/CSyncObject::Unlock", "AFXMT/CSyncObject::m_hObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSyncObject [MFC], CSyncObject", "CSyncObject [MFC], Lock", "CSyncObject [MFC], Unlock", "CSyncObject [MFC], m_hObject"]
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSyncObject Class
 A pure virtual class that provides functionality common to the synchronization objects in Win32.  

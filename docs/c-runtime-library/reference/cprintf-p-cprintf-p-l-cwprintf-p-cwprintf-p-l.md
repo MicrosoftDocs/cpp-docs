@@ -4,78 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_cprintf_p_l"
-  - "_cwprintf_p_l"
-  - "_cwprintf_p"
-  - "_cprintf_p"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_cprintf_p_l", "_cwprintf_p_l", "_cwprintf_p", "_cprintf_p"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "cprintf_p"
-  - "cwprintf_p"
-  - "tcprintf_p"
-  - "_cwprintf_p_l"
-  - "_cprintf_p"
-  - "csprintf_p_l"
-  - "_cprintf_p_l"
-  - "_cwprintf_p"
-  - "_tcprintf_p"
-  - "cprintf_p_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_cwprintf_p_l function"
-  - "cwprintf_p function"
-  - "tcprintf_p_l function"
-  - "cprintf_p_l function"
-  - "_tcprintf_p function"
-  - "_tcprintf_p_l function"
-  - "_cprintf_p function"
-  - "_cprintf_p_l function"
-  - "cwprintf_p_l function"
-  - "_cwprintf_p function"
-  - "tcprintf_p function"
-  - "cprintf_p function"
+f1_keywords: ["cprintf_p", "cwprintf_p", "tcprintf_p", "_cwprintf_p_l", "_cprintf_p", "csprintf_p_l", "_cprintf_p_l", "_cwprintf_p", "_tcprintf_p", "cprintf_p_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_cwprintf_p_l function", "cwprintf_p function", "tcprintf_p_l function", "cprintf_p_l function", "_tcprintf_p function", "_tcprintf_p_l function", "_cprintf_p function", "_cprintf_p_l function", "cwprintf_p_l function", "_cwprintf_p function", "tcprintf_p function", "cprintf_p function"]
 ms.assetid: 1f82fd7d-13c8-4c4a-a3e4-db0df3873564
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 Formats and prints to the console, and supports positional parameters in the format string.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -116,7 +65,7 @@ int _cwprintf_p_l(
 ## Remarks  
  These functions format and print a series of characters and values directly to the console, using the `_putch` and `_putwch` functions to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between `_cprintf_p` and `cprintf_s` is that `_cprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return–line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.  
+ Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.  
   

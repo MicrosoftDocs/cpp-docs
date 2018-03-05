@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [ATL]"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [ATL]"]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL Operators
 This section contains the reference topics for the ATL global operators.  
@@ -44,7 +28,8 @@ This section contains the reference topics for the ATL global operators.
 |[operator <=](#operator_lt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
 |[operator >=](#operator_gt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
   
- These operators are all defined in the file atlsecurity.h.  
+## Requirements  
+ **Header:** atlsecurity.h.  
   
 ##  <a name="operator_eq_eq"></a>  operator ==  
  Compares `CSid` objects or `SID` (security identifier) structures for equality.  

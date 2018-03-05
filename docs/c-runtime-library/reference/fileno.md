@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_fileno"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_fileno"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fileno"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "file handles [C++], getting from streams"
-  - "fileno function"
-  - "_fileno function"
-  - "streams, getting file handles"
+f1_keywords: ["_fileno"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["file handles [C++], getting from streams", "fileno function", "_fileno function", "streams, getting file handles"]
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _fileno
 Gets the file descriptor associated with a stream.  
@@ -69,7 +36,7 @@ int _fileno(
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- `_fileno` returns the file descriptor. There is no error return. The result is undefined if `stream` does not specify an open file. If stream is `NULL`, _`fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
+ `_fileno` returns the file descriptor. There is no error return. The result is undefined if `stream` does not specify an open file. If stream is `NULL`, `_fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -110,9 +77,6 @@ The file descriptor for stdin is 0
 The file descriptor for stdout is 1  
 The file descriptor for stderr is 2  
 ```  
-  
-## .NET Framework Equivalent  
- [System::IO::FileStream::Handle](https://msdn.microsoft.com/en-us/library/system.io.filestream.handle.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

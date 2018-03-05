@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Module class"
+f1_keywords: ["module/Microsoft::WRL::Module"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Module class"]
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module Class
 Represents a collection of related objects.  
@@ -92,12 +74,12 @@ class Module<OutOfProc> : public Module<InProc>;
 |[Module::GetObjectCount Method](../windows/module-getobjectcount-method.md)|Retrieves the number of objects managed by this module.|  
 |[Module::IncrementObjectCount Method](../windows/module-incrementobjectcount-method.md)|Increments the number of objects tracked by the module.|  
 |[Module::RegisterCOMObject Method](../windows/module-registercomobject-method.md)|Registers one or more COM objects so other applications can connect to them.|  
-|[Module::RegisterObjects Method](../windows/module-registerobjects-method.md)|Registers COM or [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.|  
-|[Module::RegisterWinRTObject Method](../windows/module-registerwinrtobject-method.md)|Registers one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.|  
+|[Module::RegisterObjects Method](../windows/module-registerobjects-method.md)|Registers COM or Windows Runtime objects so other applications can connect to them.|  
+|[Module::RegisterWinRTObject Method](../windows/module-registerwinrtobject-method.md)|Registers one or more Windows Runtime objects so other applications can connect to them.|  
 |[Module::Terminate Method](../windows/module-terminate-method.md)|Causes all factories instantiated by the module to shut down.|  
 |[Module::UnregisterCOMObject Method](../windows/module-unregistercomobject-method.md)|Unregisters one or more COM objects, which prevents other applications from connecting to them.|  
 |[Module::UnregisterObjects Method](../windows/module-unregisterobjects-method.md)|Unregisters the objects in the specified module so that other applications cannot connect to them.|  
-|[Module::UnregisterWinRTObject Method](../windows/module-unregisterwinrtobject-method.md)|Unregisters one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so that other applications cannot connect to them.|  
+|[Module::UnregisterWinRTObject Method](../windows/module-unregisterwinrtobject-method.md)|Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.|  
   
 ### Protected Methods  
   

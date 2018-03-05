@@ -4,44 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::CWindowImpl"
-  - "ATL.CWindowImpl"
-  - "CWindowImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWindowImpl class"
-  - "subclassing windows, ATL"
+f1_keywords: ["CWindowImpl", "ATLWIN/ATL::CWindowImpl", "ATLWIN/ATL::CWindowImpl::Create", "ATLWIN/ATL::DefWindowProc", "ATLWIN/ATL::GetCurrentMessage", "ATLWIN/ATL::GetWindowProc", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::SubclassWindow", "ATLWIN/ATL::UnsubclassWindow", "ATLWIN/ATL::GetWndClassInfo", "ATLWIN/ATL::WindowProc", "ATLWIN/ATL::m_pfnSuperWindowProc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWindowImpl class", "subclassing windows, ATL"]
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWindowImpl Class
 Provides methods for creating or subclassing a window.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -95,7 +75,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 ## Remarks  
  You can use `CWindowImpl` to create a window or subclass an existing window. the `CWindowImpl` window procedure uses a message map to direct messages to the appropriate handlers.  
   
- `CWindowImpl::Create` creates a window based on the window class information that's managed by [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `CWindowImpl` contains the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro, which means `CWndClassInfo` registers a new window class. If you want to superclass an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro. In this case, `CWndClassInfo` registers a window class that's based on an existing class but uses `CWindowImpl::WindowProc`. For example:  
+ `CWindowImpl::Create` creates a window based on the window class information that's managed by [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md). `CWindowImpl` contains the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro, which means `CWndClassInfo` registers a new window class. If you want to superclass an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro. In this case, `CWndClassInfo` registers a window class that's based on an existing class but uses `CWindowImpl::WindowProc`. For example:  
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]  
   
@@ -158,10 +138,10 @@ HWND Create(
  [in] Specifies the name of the window. The default value is **NULL**.  
   
  `dwStyle`  
- [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
  `dwExStyle`  
- [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `MenuOrID`  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  
@@ -178,7 +158,7 @@ HWND Create(
 > [!NOTE]
 >  Do not call **Create** if you have already called [SubclassWindow](#subclasswindow).  
   
- To use a window class that is based on an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro. The existing window class's window procedure is saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc). For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
+ To use a window class that is based on an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro. The existing window class's window procedure is saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc). For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
   
 > [!NOTE]
 >  If 0 is used as the value for the `MenuOrID` parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
@@ -247,9 +227,9 @@ static CWndClassInfo& GetWndClassInfo();
  A static instance of [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md).  
   
 ### Remarks  
- By default, `CWindowImpl` obtains this method through the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro, which specifies a new window class.  
+ By default, `CWindowImpl` obtains this method through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro, which specifies a new window class.  
   
- To superclass an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro to override `GetWndClassInfo`. For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
+ To superclass an existing window class, derive your class from `CWindowImpl` and include the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro to override `GetWndClassInfo`. For more information, see the [CWindowImpl](../../atl/reference/cwindowimpl-class.md) overview.  
   
  Besides using the `DECLARE_WND_CLASS` and `DECLARE_WND_SUPERCLASS` macros, you can override `GetWndClassInfo` with your own implementation.  
   
@@ -264,8 +244,8 @@ WNDPROC m_pfnSuperWindowProc;
   
 |Type of window|Window procedure|  
 |--------------------|----------------------|  
-|A window based on a new window class, specified through the [DECLARE_WND_CLASS](http://msdn.microsoft.com/library/55247a72-fb9e-4bde-87f3-747c08076971) macro.|The [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572) Win32 function.|  
-|A window based on a window class that modifies an existing class, specified through the [DECLARE_WND_SUPERCLASS](http://msdn.microsoft.com/library/650337b6-4973-41e5-8c36-55f90327bdcd) macro.|The existing window class's window procedure.|  
+|A window based on a new window class, specified through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro.|The [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572) Win32 function.|  
+|A window based on a window class that modifies an existing class, specified through the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro.|The existing window class's window procedure.|  
 |A subclassed window.|The subclassed window's original window procedure.|  
   
  [CWindowImpl::DefWindowProc](#defwindowproc) sends message information to the window procedure saved in `m_pfnSuperWindowProc`.  
@@ -342,7 +322,7 @@ static LRESULT CALLBACK WindowProc(
  The result of the message processing.  
   
 ### Remarks  
- `WindowProc` uses the default message map (declared with [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)) to direct messages to the appropriate handlers. If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing. If the final message is not handled, `WindowProc` does the following:  
+ `WindowProc` uses the default message map (declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)) to direct messages to the appropriate handlers. If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing. If the final message is not handled, `WindowProc` does the following:  
   
 -   Performs unsubclassing if the window was unsubclassed.  
   
@@ -353,6 +333,6 @@ static LRESULT CALLBACK WindowProc(
  You can override `WindowProc` to provide a different mechanism for handling messages.  
   
 ## See Also  
- [BEGIN_MSG_MAP](http://msdn.microsoft.com/library/8bbb5af9-18b1-48c6-880e-166f599ee554)   
+ [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   
  [Class Overview](../../atl/atl-class-overview.md)

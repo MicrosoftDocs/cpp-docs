@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::stack"
-  - "std.stack"
-  - "stack"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stack, stack class"
-  - "stack class"
+ms.topic: "reference"
+f1_keywords: ["stack/std::stack::container_type", "stack/std::stack::size_type", "stack/std::stack::value_type", "stack/std::stack::empty", "stack/std::stack::pop", "stack/std::stack::push", "stack/std::stack::size", "stack/std::stack::top"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::stack [C++], container_type", "std::stack [C++], size_type", "std::stack [C++], value_type", "std::stack [C++], empty", "std::stack [C++], pop", "std::stack [C++], push", "std::stack [C++], size", "std::stack [C++], top"]
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # stack Class
 A template container adaptor class that provides a restriction of functionality limiting access to the element most recently added to some underlying container type. The stack class is used when it is important to be clear that only stack operations are being performed on the container.  
@@ -55,7 +35,7 @@ class stack
  The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.  
   
 ## Remarks  
- The elements of class **Type** stipulated in the first template parameter of a stack object are synonymous with [value_type](#stack__value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.  
+ The elements of class **Type** stipulated in the first template parameter of a stack object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.  
   
  Suitable underlying container classes for stack include [deque](../standard-library/deque-class.md), [list class](../standard-library/list-class.md), and [vector class](../standard-library/vector-class.md), or any other sequence container that supports the operations of **back**, `push_back`, and `pop_back`. The underlying container class is encapsulated within the container adaptor, which exposes only the limited set of the sequence container member functions as a public interface.  
   
@@ -71,32 +51,32 @@ class stack
   
 |||  
 |-|-|  
-|[stack](#stack__stack)|Constructs a `stack` that is empty or that is a copy of a base container object.|  
+|[stack](#stack)|Constructs a `stack` that is empty or that is a copy of a base container object.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#stack__container_type)|A type that provides the base container to be adapted by a `stack`.|  
-|[size_type](#stack__size_type)|An unsigned integer type that can represent the number of elements in a `stack`.|  
-|[value_type](#stack__value_type)|A type that represents the type of object stored as an element in a `stack`.|  
+|[container_type](#container_type)|A type that provides the base container to be adapted by a `stack`.|  
+|[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `stack`.|  
+|[value_type](#value_type)|A type that represents the type of object stored as an element in a `stack`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[empty](#stack__empty)|Tests if the `stack` is empty.|  
-|[pop](#stack__pop)|Removes the element from the top of the `stack`.|  
-|[push](#stack__push)|Adds an element to the top of the `stack`.|  
-|[size](#stack__size)|Returns the number of elements in the `stack`.|  
-|[top](#stack__top)|Returns a reference to an element at the top of the `stack`.|  
+|[empty](#empty)|Tests if the `stack` is empty.|  
+|[pop](#pop)|Removes the element from the top of the `stack`.|  
+|[push](#push)|Adds an element to the top of the `stack`.|  
+|[size](#size)|Returns the number of elements in the `stack`.|  
+|[top](#top)|Returns a reference to an element at the top of the `stack`.|  
   
 ## Requirements  
  **Header:** \<stack>  
   
  **Namespace:** std  
   
-##  <a name="stack__container_type"></a>  stack::container_type  
+##  <a name="container_type"></a>  stack::container_type  
  A type that provides the base container to be adapted.  
   
 ```  
@@ -109,9 +89,9 @@ typedef Container container_type;
  For more information on `Container`, see the Remarks section of the [stack Class](../standard-library/stack-class.md) topic.  
   
 ### Example  
-  See the example for [stack::stack](#stack__stack) for an example of how to declare and use `container_type`.  
+  See the example for [stack::stack](#stack) for an example of how to declare and use `container_type`.  
   
-##  <a name="stack__empty"></a>  stack::empty  
+##  <a name="empty"></a>  stack::empty  
  Tests if a stack is empty.  
   
 ```  
@@ -154,7 +134,7 @@ The stack s1 is not empty.
 The stack s2 is empty.  
 ```  
   
-##  <a name="stack__pop"></a>  stack::pop  
+##  <a name="pop"></a>  stack::pop  
  Removes the element from the top of the stack.  
   
 ```  
@@ -208,7 +188,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.  
 ```  
   
-##  <a name="stack__push"></a>  stack::push  
+##  <a name="push"></a>  stack::push  
  Adds an element to the top end of the stack.  
   
 ```  
@@ -216,7 +196,7 @@ void push(const Type& val);
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The element added to the top of the stack.  
   
 ### Remarks  
@@ -254,7 +234,7 @@ The stack length is 3.
 The element at the top of the stack is 30.  
 ```  
   
-##  <a name="stack__size"></a>  stack::size  
+##  <a name="size"></a>  stack::size  
  Returns the number of elements in the stack.  
   
 ```  
@@ -293,7 +273,7 @@ The stack length is 1.
 The stack length is now 2.  
 ```  
   
-##  <a name="stack__size_type"></a>  stack::size_type  
+##  <a name="size_type"></a>  stack::size_type  
  An unsigned integer type that can represent the number of elements in a stack.  
   
 ```  
@@ -304,9 +284,9 @@ typedef typename Container::size_type size_type;
  The type is a synonym for `size_type` of the base container adapted by the stack.  
   
 ### Example  
-  See the example for [size](#stack__size) for an example of how to declare and use `size_type`.  
+  See the example for [size](#size) for an example of how to declare and use `size_type`.  
   
-##  <a name="stack__stack"></a>  stack::stack  
+##  <a name="stack"></a>  stack::stack  
  Constructs a stack that is empty or that is a copy of a base container class.  
   
 ```  
@@ -316,7 +296,7 @@ explicit stack(const container_type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The container of which the constructed stack is to be a copy.  
   
 ### Example  
@@ -358,7 +338,7 @@ int main( )
 The element at the top of stack vsi2 is 1.  
 ```  
   
-##  <a name="stack__top"></a>  stack::top  
+##  <a name="top"></a>  stack::top  
  Returns a reference to an element at the top of the stack.  
   
 ```  
@@ -406,7 +386,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.  
 ```  
   
-##  <a name="stack__value_type"></a>  stack::value_type  
+##  <a name="value_type"></a>  stack::value_type  
  A type that represents the type of object stored as an element in a stack.  
   
 ```  

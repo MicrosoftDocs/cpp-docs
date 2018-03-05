@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "registering OLE controls"
-  - "OLE controls, registering"
+f1_keywords: ["vc.mfc.macros.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["registering OLE controls", "OLE controls [MFC], registering"]
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Registering OLE Controls
 OLE controls, like other OLE server objects, can be accessed by other OLE-aware applications. This is achieved by registering the control's type library and class.  
@@ -94,13 +76,13 @@ BOOL AFXAPI AfxOleRegisterControlClass(
   
 - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.  
   
-     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on threading model registration.  
+     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.  
   
 > [!NOTE]
 >  In MFC versions before MFC 4.2, the `int` `nRegFlags` parameter was a **BOOL** parameter, *bInsertable*, that allowed or disallowed the control to be inserted from the Insert Object dialog box.  
   
  *dwMiscStatus*  
- Contains one or more of the following status flags (for a description of the flags, see **OLEMISC** enumeration in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]):  
+ Contains one or more of the following status flags (for a description of the flags, see **OLEMISC** enumeration in the Windows SDK):  
   
 -   OLEMISC_RECOMPOSEONRESIZE  
   
@@ -153,7 +135,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
  Nonzero if the control class was registered; otherwise 0.  
   
 ### Remarks  
- This allows the control to be used by containers that are OLE-control aware. `AfxOleRegisterControlClass` updates the registry with the control's name and location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This allows the control to be used by containers that are OLE-control aware. `AfxOleRegisterControlClass` updates the registry with the control's name and location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]  
@@ -200,7 +182,7 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
  Nonzero if the control class was registered; otherwise 0.  
   
 ### Remarks  
- This allows the property page to be used by containers that are OLE-control aware. `AfxOleRegisterPropertyPageClass` updates the registry with the property page name and its location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This allows the property page to be used by containers that are OLE-control aware. `AfxOleRegisterPropertyPageClass` updates the registry with the property page name and its location on the system and also sets the threading model that the control supports in the registry. For more information, see [Technical Note 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartment-Model Threading in OLE Controls," and [About Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms681917) in the Windows SDK.  
   
 ### Requirements  
   **Header** afxctl.h  

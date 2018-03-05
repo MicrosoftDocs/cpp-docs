@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_swprintf_s_l"
-  - "_sprintf_s_l"
-  - "swprintf_s"
-  - "sprintf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_swprintf_s_l", "_sprintf_s_l", "swprintf_s", "sprintf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "swprintf_s"
-  - "sprintf_s"
-  - "stdio/sprintf_s"
-  - "stdio/swprintf_s"
-  - "stdio/_sprintf_s_l"
-  - "stdio/_swprintf_s_l"
-  - "_sprintf_s_l"
-  - "_swprintf_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stprintf_s function"
-  - "stprintf_s_l function"
-  - "swprintf_s_l function"
-  - "sprintf_s function"
-  - "swprintf_s function"
-  - "_swprintf_s_l function"
-  - "sprintf_s_l function"
-  - "_stprintf_s_l function"
-  - "_stprintf_s function"
-  - "_sprintf_s_l function"
-  - "formatted text [C++]"
+f1_keywords: ["swprintf_s", "sprintf_s", "stdio/sprintf_s", "stdio/swprintf_s", "stdio/_sprintf_s_l", "stdio/_swprintf_s_l", "_sprintf_s_l", "_swprintf_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stprintf_s function", "stprintf_s_l function", "swprintf_s_l function", "sprintf_s function", "swprintf_s function", "_swprintf_s_l function", "sprintf_s_l function", "_stprintf_s_l function", "_stprintf_s function", "_sprintf_s_l function", "formatted text [C++]"]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 Write formatted data to a string. These are versions of [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -133,7 +85,7 @@ int swprintf_s(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or –1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
+ The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
   
  `sprintf_s` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf_s` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
@@ -142,7 +94,7 @@ int swprintf_s(
   
  One main difference between `sprintf_s` and `sprintf` is that `sprintf_s` checks the format string for valid formatting characters, whereas `sprintf` only checks if the format string or buffer are `NULL` pointers. If either check fails, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.  
   
- The other main difference between `sprintf_s` and `sprintf` is that `sprintf_s` takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at `buffer``[0]`, and the invalid parameter handler is invoked. Unlike `_snprintf`, `sprintf_s` guarantees that the buffer will be null-terminated unless the buffer size is zero.  
+ The other main difference between `sprintf_s` and `sprintf` is that `sprintf_s` takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at `buffer[0]`, and the invalid parameter handler is invoked. Unlike `_snprintf`, `sprintf_s` guarantees that the buffer will be null-terminated unless the buffer size is zero.  
   
  `swprintf_s` is a wide-character version of `sprintf_s`; the pointer arguments to `swprintf_s` are wide-character strings. Detection of encoding errors in `swprintf_s` may differ from that in `sprintf_s`. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   
@@ -225,9 +177,6 @@ int main( void )
 wrote 11 characters  
 wrote -1 characters  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::Format](https://msdn.microsoft.com/en-us/library/system.string.format.aspx)  
   
 ## See Also  
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   

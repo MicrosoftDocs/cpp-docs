@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComClassFactorySingleton"
-  - "ATL.CComClassFactorySingleton<T>"
-  - "ATL::CComClassFactorySingleton"
-  - "ATL::CComClassFactorySingleton<T>"
-  - "CComClassFactorySingleton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComClassFactorySingleton class"
+f1_keywords: ["CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton::CreateInstance", "ATLCOM/ATL::CComClassFactorySingleton::m_spObj"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComClassFactorySingleton class"]
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComClassFactorySingleton Class
 This class derives from [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) and uses [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) to construct a single object.  
@@ -72,7 +50,7 @@ class CComClassFactorySingleton : public CComClassFactory
 |[CComClassFactorySingleton::m_spObj](#m_spobj)|The [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) object constructed by `CComClassFactorySingleton`.|  
   
 ## Remarks  
- ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](http://msdn.microsoft.com/library/51a6b925-07c0-4d3a-9174-0b8c808975e4), which declares `CComClassFactory` as the default class factory. To use `CComClassFactorySingleton`, specify the [DECLARE_CLASSFACTORY_SINGLETON](http://msdn.microsoft.com/library/0e4a3964-c03d-463e-884c-fe3b416db478) macro in your object's class definition. For example:  
+ ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares `CComClassFactory` as the default class factory. To use `CComClassFactorySingleton`, specify the [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) macro in your object's class definition. For example:  
   
  [!code-cpp[NVC_ATL_COM#10](../../atl/codesnippet/cpp/ccomclassfactorysingleton-class_1.h)]  
   

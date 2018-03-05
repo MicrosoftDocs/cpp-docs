@@ -1,37 +1,20 @@
 ---
-title: "How to: Write a Binary File (C++-CLI) | Microsoft Docs"
+title: "How to: Write a Binary File (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary files, writing in C++"
-  - "files [C++], binary"
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary files, writing in C++", "files [C++], binary"]
 ms.assetid: 35d97ee6-fc7e-4c36-be18-8bbb3b44b3ae
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Write a Binary File (C++/CLI)
 The following code example demonstrates writing binary data to a file. Two classes from the <xref:System.IO> namespace are used: <xref:System.IO.FileStream> and <xref:System.IO.BinaryWriter>. <xref:System.IO.FileStream> represents the actual file, while <xref:System.IO.BinaryWriter> provides an interface to the stream that allows binary access.  

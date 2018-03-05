@@ -4,41 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 628b0852-89e5-44f8-bf58-a09762bda15c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # WRL Class Library Project Template
-If you use Visual Studio to write a [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) project, you can greatly simplify your task by downloading the WRL Class Library project template.  
+If you use Visual Studio to write a Windows Runtime C++ Template Library (WRL)project, you can greatly simplify your task by downloading the WRL Class Library project template.  
   
 > [!NOTE]
 >  If you have to manually update the project settings for an existing project, see [DLLs (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh699881\(v=vs.110\).aspx).  
   
 ## Download the WRL Project Template  
- Visual Studio doesn't provide a template for [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] projects. Here’s how to download a project template that creates a basic class library for [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps with [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+ Visual Studio doesn't provide a template for Windows Runtime C++ Template Library projects. Here’s how to download a project template that creates a basic class library for Universal Windows Platform apps with Windows Runtime C++ Template Library.  
   
 #### To download the WRL Project Template  
   
@@ -53,7 +37,7 @@ If you use Visual Studio to write a [!INCLUDE[cppwrl](../windows/includes/cppwrl
 5.  After the template installs, create a project by choosing **File**, **New Project**, and then selecting the `WRLClassLibrary` template. The project creates a DLL.  
   
 ## Examples that use the project template  
- Read [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md) for an example that uses this template to create a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component.  
+ Read [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md) for an example that uses this template to create a Windows Runtime component.  
   
 ## What the project template provides  
  The project template provides:  

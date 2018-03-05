@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.control"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "static display controls"
-  - "control classes"
-  - "buttons, MFC control classes"
-  - "controls [C++], MFC control classes"
-  - "controls [MFC]"
-  - "list boxes, MFC control classes"
-  - "control classes, MFC"
-  - "text, controls for input"
-  - "user input, MFC control classes"
+f1_keywords: ["vc.classes.control"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["static display controls [MFC]", "control classes [MFC]", "buttons, MFC control classes", "controls [MFC], MFC control classes", "controls [MFC]", "list boxes [MFC], MFC control classes", "control classes [MFC], MFC", "text, controls for input [MFC]", "user input [MFC], MFC control classes"]
 ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Control Classes
 Control classes encapsulate a wide variety of standard Windows controls ranging from static text controls to tree controls. In addition, MFC provides some new controls, including buttons with bitmaps and control bars.  

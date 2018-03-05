@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.structures"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "callback functions, MFC"
-  - "styles, MFC"
-  - "message maps, MFC"
-  - "structures, MFC"
+f1_keywords: ["vc.mfc.structures"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["callback functions, MFC", "styles, MFC", "message classes [MFC], MFC", "structures, MFC"]
 ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Structures, Styles, Callbacks, and Message Maps
 This section documents the structures, styles, and callback functions used by the Microsoft Foundation Class Library and the MFC message maps.  

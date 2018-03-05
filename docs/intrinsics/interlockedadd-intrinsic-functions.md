@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedAdd64_acq_cpp"
-  - "_InterlockedAdd64_acq"
-  - "_InterlockedAdd_acq"
-  - "_InterlockedAdd_nf"
-  - "_InterlockedAdd64_rel"
-  - "_InterlockedAdd64"
-  - "_InterlockedAdd_cpp"
-  - "_InterlockedAdd_rel_cpp"
-  - "_InterlockedAdd_rel"
-  - "_InterlockedAdd64_rel_cpp"
-  - "_InterlockedAdd64_cpp"
-  - "_InterlockedAdd_acq_cpp"
-  - "_InterlockedAdd64_nf"
-  - "_InterlockedAdd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_InterlockedAdd_nf intrinsic"
-  - "_InterlockedAdd_rel intrinsic"
-  - "_InterlockedAdd intrinsic"
-  - "_InterlockedAdd64 intrinsic"
-  - "_InterlockedAdd64_acq intrinsic"
-  - "_InterlockedAdd64_nf intrinsic"
-  - "_InterlockedAdd_acq intrinsic"
-  - "_InterlockedAdd64_rel intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_InterlockedAdd_nf intrinsic", "_InterlockedAdd_rel intrinsic", "_InterlockedAdd intrinsic", "_InterlockedAdd64 intrinsic", "_InterlockedAdd64_acq intrinsic", "_InterlockedAdd64_nf intrinsic", "_InterlockedAdd_acq intrinsic", "_InterlockedAdd64_rel intrinsic"]
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedAdd Intrinsic Functions
 **Microsoft Specific**  
@@ -184,7 +147,7 @@ ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

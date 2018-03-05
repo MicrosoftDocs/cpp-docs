@@ -4,77 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_snwscanf_s_l"
-  - "_snwscanf_s"
-  - "_snscanf_s"
-  - "_snscanf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_snwscanf_s_l", "_snwscanf_s", "_snscanf_s", "_snscanf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_sntscanf_s"
-  - "snscanf_s"
-  - "_snwscanf_s_l"
-  - "sntscanf_s_l"
-  - "snwscanf_s_l"
-  - "snwscanf_s"
-  - "_snscanf_s"
-  - "_snwscanf_s"
-  - "snscanf_s_l"
-  - "_sntscanf_s_l"
-  - "_snscanf_s_l"
-  - "sntscanf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_snscanf_s_l function"
-  - "snwscanf_s function"
-  - "_snwscanf_s function"
-  - "sntscanf_s_l function"
-  - "sntscanf_s function"
-  - "_snwscanf_s_l function"
-  - "_snscanf_s function"
-  - "snscanf_s_l function"
-  - "strings [C++], reading data from"
-  - "_sntscanf_s_l function"
-  - "reading data, strings"
-  - "snscanf_s function"
-  - "strings [C++], reading"
-  - "_sntscanf_s function"
-  - "snwscanf_s_l function"
+f1_keywords: ["_sntscanf_s", "snscanf_s", "_snwscanf_s_l", "sntscanf_s_l", "snwscanf_s_l", "snwscanf_s", "_snscanf_s", "_snwscanf_s", "snscanf_s_l", "_sntscanf_s_l", "_snscanf_s_l", "sntscanf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_snscanf_s_l function", "snwscanf_s function", "_snwscanf_s function", "sntscanf_s_l function", "sntscanf_s function", "_snwscanf_s_l function", "_snscanf_s function", "snscanf_s_l function", "strings [C++], reading data from", "_sntscanf_s_l function", "reading data, strings", "snscanf_s function", "strings [C++], reading", "_sntscanf_s function", "snwscanf_s_l function"]
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 Reads formatted data of a specified length from a string. These are versions of [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](../../c-runtime-library/reference/snscanf-snscanf-l-snwscanf-snwscanf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -85,28 +29,24 @@ Reads formatted data of a specified length from a string. These are versions of 
 int __cdecl _snscanf_s(  
    const char * input,  
    size_t length,  
-   const char * format,  
-   ...  
+   const char * format [, argument_list]  
 );  
 int __cdecl _snscanf_s_l(  
    const char * input,  
    size_t length,  
    const char * format,  
-   locale_t locale,  
-   ...  
+   locale_t locale [, argument_list]
 );  
 int __cdecl _snwscanf_s(  
    const wchar_t * input,  
    size_t length,  
-   const wchar_t * format,  
-   ...  
+   const wchar_t * format [, argument_list]
 );  
 int __cdecl _snwscanf_s_l(  
    const wchar_t * input,  
    size_t length,  
    const wchar_t * format,  
-   locale_t locale,  
-   …  
+   locale_t locale [, argument_list]
 );  
 ```  
   
@@ -125,6 +65,9 @@ int __cdecl _snwscanf_s_l(
   
  `locale`  
  The locale to use.  
+  
+ `argument_list`  
+ Optional arguments to be assigned according to the format string.  
   
 ## Return Value  
  Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
@@ -154,7 +97,7 @@ int __cdecl _snwscanf_s_l(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_snscanf_s`, _`snscanf_s_l`|\<stdio.h>|  
+|`_snscanf_s`, `_snscanf_s_l`|\<stdio.h>|  
 |`_snwscanf_s`, `_snwscanf_s_l`|\<stdio.h> or \<wchar.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
@@ -193,9 +136,6 @@ int main( )
 _snscanf_s converted 2 fields: 15 and 12.000000  
 _snwscanf_s converted 2 fields: 15 and 12.000000  
 ```  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)

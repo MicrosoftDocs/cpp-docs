@@ -4,65 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "getenv"
-  - "_wgetenv"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-environment-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["getenv", "_wgetenv"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wgetenv"
-  - "getenv"
-  - "_tgetenv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "getenv function"
-  - "tgetenv function"
-  - "wgetenv function"
-  - "environment values"
-  - "environment variables"
-  - "_tgetenv function"
-  - "_wgetenv function"
+f1_keywords: ["_wgetenv", "getenv", "_tgetenv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["getenv function", "tgetenv function", "wgetenv function", "environment values", "environment variables", "_tgetenv function", "_wgetenv function"]
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # getenv, _wgetenv
 Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -159,9 +121,6 @@ int main( void )
 Original LIB variable is: C:\progra~1\devstu~1\vc\lib  
 New LIB variable is: c:\mylib;c:\yourlib  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Environment::GetEnvironmentVariable](https://msdn.microsoft.com/en-us/library/system.environment.getenvironmentvariable.aspx)  
   
 ## See Also  
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   

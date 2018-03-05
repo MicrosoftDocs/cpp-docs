@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlpreviewctrlimpl/ATL::CAtlPreviewCtrlImpl"
-  - "CAtlPreviewCtrlImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlPreviewCtrlImpl class"
+f1_keywords: ["CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Create", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Destroy", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Focus", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::OnPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Redraw", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetHost", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetPreviewVisuals", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetRect", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::DoPaint", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_plf", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrBack", "ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlPreviewCtrlImpl class"]
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAtlPreviewCtrlImpl Class
 This class is an ATL implementation of a window that is placed on a host window provided by the Shell  for Rich Preview.  

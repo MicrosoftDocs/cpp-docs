@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.controls.bars"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "control bars, styles"
-  - "CStatusBar class, Tech Note 31 usage"
-  - "CControlBar class, Tech Note 31 usage"
-  - "CControlBar class, deriving from"
-  - "control bars, classes"
-  - "CDialogBar class, Tech Note 31 usage"
-  - "CToolBar class, Tech Note 31 usage"
-  - "TN031"
-  - "styles, control bars"
+f1_keywords: ["vc.controls.bars"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["control bars [MFC], styles", "CStatusBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], deriving from", "control bars [MFC], classes [MFC]", "CDialogBar class [MFC], Tech Note 31 usage", "CToolBar class [MFC], Tech Note 31 usage", "TN031", "styles [MFC], control bars"]
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # TN031: Control Bars
 > [!NOTE]

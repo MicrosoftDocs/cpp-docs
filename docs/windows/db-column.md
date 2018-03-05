@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.db_column"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "db_column attribute"
+f1_keywords: ["vc-attr.db_column"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["db_column attribute"]
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # db_column
 Binds a specified column to a variable in the rowset.  
@@ -80,7 +63,7 @@ Binds a specified column to a variable in the rowset.
   
  Use **db_column** in conjunction with either the [db_table](../windows/db-table.md) or [db_command](../windows/db-command.md) attributes.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
  For examples of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/en-us/52bef5da-c1a0-4223-b4e6-9e464b6db409), and [MultiRead](http://msdn.microsoft.com/en-us/5a2a915a-77dc-492f-94b2-1b809995dd5e).  
   
@@ -138,4 +121,3 @@ class CProducts {
 ## See Also  
  [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

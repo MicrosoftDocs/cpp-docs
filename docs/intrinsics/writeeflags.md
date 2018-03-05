@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "__writeeflags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__writeeflags intrinsics"
+ms.topic: "reference"
+f1_keywords: ["__writeeflags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__writeeflags intrinsics"]
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # __writeeflags
 Writes the specified value to the program status and control (EFLAGS) register.  
@@ -62,7 +44,7 @@ void __writeeflags(unsigned __int64 Value);
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

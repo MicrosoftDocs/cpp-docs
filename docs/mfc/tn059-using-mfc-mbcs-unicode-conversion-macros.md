@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFCANS32.DLL"
-  - "Unicode [C++], conversion macros"
-  - "Unicode [C++], OLE interfaces"
-  - "conversion macros [C++]"
-  - "converting Unicode"
-  - "MBCS [C++], conversion macros"
-  - "macros [C++], MBCS conversion macros"
-  - "TN059"
+f1_keywords: ["vc.mfc.mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN059: Using MFC MBCS/Unicode Conversion Macros
 > [!NOTE]
@@ -113,7 +89,7 @@ W2CA      (LPCWSTR) -> (LPCSTR)
 W2A      (LPCWSTR) -> (LPSTR)  
 ```  
   
- Besides doing text conversions, there are also macros and helper functions for converting `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. These macros are beyond the scope of this discussion – refer to AFXPRIV.H for more information on those macros.  
+ Besides doing text conversions, there are also macros and helper functions for converting `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. These macros are beyond the scope of this discussion - refer to AFXPRIV.H for more information on those macros.  
   
 ## OLE Conversion Macros  
  The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to `char` in Win16 and Macintosh platforms and **WCHAR** in Win32.  

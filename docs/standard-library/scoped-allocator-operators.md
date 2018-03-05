@@ -5,7 +5,9 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["scoped_allocator/std::operator!=", "scoped_allocator/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
 caps.latest.revision: 10
 manager: "ghogen"
@@ -13,9 +15,9 @@ manager: "ghogen"
 # &lt;scoped_allocator&gt; operators
 |||  
 |-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests two `scoped_allocator_adaptor` objects for inequality.  
   
 ```cpp  
@@ -35,7 +37,7 @@ bool operator!=(
 ### Return Value  
  `!(left == right)`  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests two `scoped_allocator_adaptor` objects for equality.  
   
 ```cpp  

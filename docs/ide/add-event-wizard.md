@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.event.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add Event Wizard [C++]"
+f1_keywords: ["vc.codewiz.event.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add Event Wizard [C++]"]
 ms.assetid: bdd2a7bb-13d5-44d7-abc9-e785ba4e05ce
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Add Event Wizard
 This wizard adds an event to an MFC ActiveX control project. You can specify your own event, you can customize a typically stock event, or you can select from a list of stock events.  

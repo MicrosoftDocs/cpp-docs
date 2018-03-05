@@ -5,10 +5,12 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::put_money", "iomanip/std::put_time", "iomanip/std::quoted", "iomanip/std::resetiosflags", "iomanip/std::setbase", "iomanip/std::setfill", "iomanip/std::setiosflags", "iomanip/std::setprecision", "iomanip/std::setw"]
 ms.assetid: 3ddde610-70cc-4cfa-8a89-3e83d1d356a8
 caps.latest.revision: 10
 manager: "ghogen"
+helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_money [C++]", "std::put_time [C++]", "std::quoted [C++]", "std::resetiosflags [C++]", "std::setbase [C++]", "std::setfill [C++]", "std::setiosflags [C++]", "std::setprecision [C++]", "std::setw [C++]"]
 ---
 # &lt;iomanip&gt; functions
 ||||  
@@ -272,7 +274,7 @@ T1 resetiosflags(ios_base::fmtflags Mask);
  The flags to clear.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [setf](../standard-library/ios-base-class.md#ios_base__setf)( `ios_base::`[fmtflags](../standard-library/ios-base-class.md#ios_base__fmtflags), _ *Mask*), and then returns **str**.  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags), _ *Mask*), and then returns **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `resetiosflags`.  
@@ -289,7 +291,7 @@ T3 setbase(int _Base);
  The number base.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. `setf`( **mask**, [ios_base::basefield](../standard-library/ios-base-class.md#ios_base__fmtflags)), and then returns **str**. Here, **mask** is determined as follows:  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. `setf`( **mask**, [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)), and then returns **str**. Here, **mask** is determined as follows:  
   
 -   If _ *Base* is 8, then **mask** is `ios_base::`[oct](../standard-library/ios-functions.md#oct).  
   
@@ -297,7 +299,7 @@ T3 setbase(int _Base);
   
 -   If _ *Base* is 16, then **mask** is `ios_base::`[hex](../standard-library/ios-functions.md#hex).  
   
--   If _ *Base* is any other value, then mask is `ios_base::`[fmtflags](../standard-library/ios-base-class.md#ios_base__fmtflags)(0).  
+-   If _ *Base* is any other value, then mask is `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)(0).  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setbase`.  
@@ -315,7 +317,7 @@ T4 setfill(Elem Ch);
  The character that will be used to fill spaces in a right-justified display.  
   
 ### Return Value  
- The template manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [fill](../standard-library/basic-ios-class.md#basic_ios__fill)( `Ch`), and then returns **str**. The type **Elem** must be the same as the element type for the stream **str**.  
+ The template manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [fill](../standard-library/basic-ios-class.md#fill)( `Ch`), and then returns **str**. The type **Elem** must be the same as the element type for the stream **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setfill`.  
@@ -332,7 +334,7 @@ T2 setiosflags(ios_base::fmtflags Mask);
  The flags to set.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [setf](../standard-library/ios-base-class.md#ios_base__setf)(_ *Mask*), and then returns **str**.  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [setf](../standard-library/ios-base-class.md#setf)(_ *Mask*), and then returns **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setiosflags`.  
@@ -349,7 +351,7 @@ T5 setprecision(streamsize Prec);
  The precision for floating-point values.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [precision](../standard-library/ios-base-class.md#ios_base__precision)( `Prec`), and then returns **str**.  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [precision](../standard-library/ios-base-class.md#precision)( `Prec`), and then returns **str**.  
   
 ### Example  
   See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setprecision`.  
@@ -366,7 +368,7 @@ T6 setw(streamsize Wide);
  The width of the display field.  
   
 ### Return Value  
- The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [width](../standard-library/ios-base-class.md#ios_base__width)(_ *Wide*), then returns **str**.  
+ The manipulator returns an object that, when extracted from or inserted into the stream **str**, calls **str**. [width](../standard-library/ios-base-class.md#width)(_ *Wide*), then returns **str**.  
   
 ### Remarks  
  setw sets the width only for the next element in the stream and must be inserted before each element whose width you want to specify.  

@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member-selection operators"
-  - "structure members, referencing"
-  - "-> operator, structure and union members"
-  - "dot operator (.)"
-  - "referencing structure members"
-  - ". operator"
-  - "operators [C], member selection"
-  - "structure member selection"
+dev_langs: ["C++"]
+helpviewer_keywords: ["member-selection operators", "structure members, referencing", "-> operator, structure and union members", "dot operator (.)", "referencing structure members", ". operator", "operators [C], member selection", "structure member selection"]
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Structure and Union Members
 A "member-selection expression" refers to members of structures and unions. Such an expression has the value and type of the selected member.  
@@ -48,7 +25,7 @@ postfix-expression
 .  
 identifier  
 postfix-expression  
-–>  
+->  
 identifier  
   
 ```  
@@ -61,12 +38,12 @@ identifier
   
  The two forms of member-selection expressions have similar effects.  
   
- In fact, an expression involving the member-selection operator (**–>**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (**\***) applied to a pointer value. Therefore,  
+ In fact, an expression involving the member-selection operator (**->**) is a shorthand version of an expression using the period (**.**) if the expression before the period consists of the indirection operator (**\***) applied to a pointer value. Therefore,  
   
 ```  
   
 expression  
-–>  
+->  
 identifier  
   
 ```  
@@ -105,10 +82,10 @@ item.sp = &item;
  In the example above, the address of the `item` structure is assigned to the `sp` member of the structure. This means that `item` contains a pointer to itself.  
   
 ```  
-(item.sp)–>a = 24;  
+(item.sp)->a = 24;  
 ```  
   
- In this example, the pointer expression `item.sp` is used with the member-selection operator (**–>**) to assign a value to the member `a`.  
+ In this example, the pointer expression `item.sp` is used with the member-selection operator (**->**) to assign a value to the member `a`.  
   
 ```  
 list[8].b = 12;  

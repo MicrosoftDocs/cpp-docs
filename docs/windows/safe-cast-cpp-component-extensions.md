@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "safe_cast"
-  - "safe_cast_cpp"
-  - "stdcli::language::safe_cast"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "safe_cast keyword [C++]"
+f1_keywords: ["safe_cast", "safe_cast_cpp", "stdcli::language::safe_cast"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["safe_cast keyword [C++]"]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # safe_cast (C++ Component Extensions)
 The `safe_cast` operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.  
@@ -57,7 +38,7 @@ expression
   
 ### Remarks  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  `safe_cast` allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use safe_cast without a try-catch block to detect programming errors during development. For more information, see [Casting (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
   
 ### Syntax  
@@ -87,7 +68,7 @@ expression
 ### Examples  
  **Example**  
   
- The following code example demonstrates how to use `safe_cast` with the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ The following code example demonstrates how to use `safe_cast` with the Windows Runtime.  
   
 ```cpp#  
 // safe_cast_ZW.cpp  
@@ -121,7 +102,7 @@ int main(Array<String^>^ args) {
 Caught expected exception: InvalidCastException  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  `safe_cast` allows you to change the type of an expression and generate verifiable MSIL code.  
   
 ### Syntax  
@@ -145,7 +126,7 @@ expression
 ### Remarks  
  The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand expression to an object of type type-id.  
   
- The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a `safe_cast`.  However, `safe_cast` is guaranteed to produce verifiable MSIL, where as a `static_cast` could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](http://msdn.microsoft.com/Library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) for more information on verifiable code.  
+ The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a `safe_cast`.  However, `safe_cast` is guaranteed to produce verifiable MSIL, where as a `static_cast` could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) for more information on verifiable code.  
   
  Like `static_cast`, `safe_cast` invokes user-defined conversions.  
   

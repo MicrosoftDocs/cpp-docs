@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "native functions called from managed code [C++]"
-  - "managed code [C++], interoperability"
-  - "platform invoke [C++], interoperability"
-  - "interoperabiliy [C++], calling native functions from managed code"
-  - "calling native functions from managed code"
-  - "interop [C++], calling native functions from managed code"
+dev_langs: ["C++"]
+helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Native Functions from Managed Code
 The common language runtime provides Platform Invocation Services, or PInvoke, that enables managed code to call C-style functions in native dynamic-linked libraries (DLLs). The same data marshaling is used as for COM interoperability with the runtime and for the "It Just Works," or IJW, mechanism.  

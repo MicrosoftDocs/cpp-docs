@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDialogBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog bars, Windows modeless dialog box"
-  - "CDialogBar class"
-  - "dialog boxes, modeless"
+f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDialogBar [MFC], CDialogBar", "CDialogBar [MFC], Create"]
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDialogBar Class
 Provides the functionality of a Windows modeless dialog box in a control bar.  

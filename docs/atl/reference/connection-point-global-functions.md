@@ -4,39 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], global functions"
+f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], global functions"]
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Connection Point Global Functions
 These functions provide support for connection points and sink maps.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  
@@ -51,7 +36,7 @@ These functions provide support for connection points and sink maps.
  Creates a connection between an object's connection point and a client's sink.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT    AtlAdvise(
@@ -87,7 +72,7 @@ HRESULT    AtlAdvise(
  Terminates the connection established through [AtlAdvise](#atladvise).  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT    AtlUnadvise(
@@ -116,7 +101,7 @@ HRESULT    AtlUnadvise(
  Call this function to advise or unadvise all entries in the object's sink event map.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);

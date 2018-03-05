@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CArchive"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CArchive class, closing CArchive objects"
-  - "CArchive objects, closing"
-  - "I/O [MFC], creating CArchive objects"
-  - "serialization [C++], CArchive class"
-  - "CArchive objects"
-  - "storage [C++], CArchive class"
-  - "data storage [C++], CArchive class"
-  - "CArchive class, constructor"
+f1_keywords: ["CArchive"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CArchive class [MFC], closing CArchive objects", "CArchive objects [MFC], closing", "I/O [MFC], creating CArchive objects", "serialization [MFC], CArchive class", "CArchive objects [MFC]", "storage [MFC], CArchive class [MFC]", "data storage [MFC], CArchive class", "CArchive class [MFC], constructor"]
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Two Ways to Create a CArchive Object
 There are two ways to create a `CArchive` object:  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/ERRORREPORT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-ERRORREPORT dumpbin option"
-  - "ERRORREPORT dumpbin option"
-  - "/ERRORREPORT dumpbin option"
+f1_keywords: ["/ERRORREPORT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-ERRORREPORT dumpbin option", "ERRORREPORT dumpbin option", "/ERRORREPORT dumpbin option"]
 ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (dumpbin.exe)
 ```  

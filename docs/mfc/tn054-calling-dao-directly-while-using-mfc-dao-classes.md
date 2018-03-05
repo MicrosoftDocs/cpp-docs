@@ -4,46 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.dao"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], DAO and"
-  - "passwords [C++], calling DAO"
-  - "security [MFC], DAO"
-  - "DAO (Data Access Objects), calling directly"
-  - "DAO (Data Access Objects), security"
-  - "security [MFC]"
-  - "TN054"
-  - "DAO (Data Access Objects), and MFC"
+f1_keywords: ["vc.mfc.dao"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, DAO and", "passwords [MFC], calling DAO", "security [MFC], DAO", "DAO (Data Access Objects), calling directly", "DAO (Data Access Objects), security", "security [MFC]", "TN054", "DAO (Data Access Objects), and MFC"]
 ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # TN054: Calling DAO Directly While Using MFC DAO Classes
 > [!NOTE]
->  As of Visual C++ .NET, the Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.  
+>  The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.  
   
  When using the MFC DAO database classes, there may be situations where it is necessary to use DAO directly. Usually, this will not be the case, but MFC has provided some helper mechanisms to facilitate making direct DAO calls simple when combining the use of the MFC classes with direct DAO calls. Making direct DAO calls to the methods of an MFC-managed DAO object should require only a few lines of code. If you need to create and use DAO objects that are *not* managed by MFC, you will have to do a little more work by actually calling **Release** on the object. This technical note explains when you might want to call DAO directly, what the MFC helpers can do to help you, and how to use the DAO OLE interfaces. Finally, this note provides some sample functions showing how to call DAO directly for DAO security features.  
   

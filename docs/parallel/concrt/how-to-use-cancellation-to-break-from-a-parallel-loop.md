@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "writing a parallel search algorithm [Concurrency Runtime]"
-  - "parallel search algorithm, writing [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["writing a parallel search algorithm [Concurrency Runtime]", "parallel search algorithm, writing [Concurrency Runtime]"]
 ms.assetid: 421cd2de-f058-465f-b890-dd8fcc0df273
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Cancellation to Break from a Parallel Loop
 This example shows how to use cancellation to implement a basic parallel search algorithm.  

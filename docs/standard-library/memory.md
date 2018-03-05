@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "memory/std::<memory>"
-  - "std.<memory>"
-  - "<memory>"
-  - "std::<memory>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memory header"
+ms.topic: "reference"
+f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["memory header"]
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt;
 Defines a class, an operator, and several templates that help allocate and free objects.  
@@ -61,13 +41,13 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Informs garbage collection that the indicated address is to allocated storage and is reachable.|  
 |[default_delete](../standard-library/memory-functions.md#default_delete)|Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.|  
 |[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|Dynamic cast to `shared_ptr`.|  
-|[get_deleter](../standard-library/memory-functions.md#get_deleter_function)|Get deleter from `shared_ptr`.|  
+|[get_deleter](../standard-library/memory-functions.md#get_deleter)|Get deleter from `shared_ptr`.|  
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|Returns the type of pointer safety assumed by any garbage collector.|  
 |[get_temporary_buffer](../standard-library/memory-functions.md#get_temporary_buffer)|Allocates temporary storage for a sequence of elements that does not exceed a specified number of elements.|  
 |[make_shared](../standard-library/memory-functions.md#make_shared)|Creates and returns a `shared_ptr` that points to the allocated object constructed from zero or more arguments using the default allocator.|  
 |[make_unique](../standard-library/memory-functions.md#make_unique)|Creates and returns a [unique_ptr](../standard-library/unique-ptr-class.md) that points to the allocated object constructed from zero or more arguments.|  
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|  
-|[pointer_safety](../standard-library/memory-enums.md#pointer_safety_enumeration)|An enumeration of all the possible return values for `get_pointer_safety`.|  
+|[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|An enumeration of all the possible return values for `get_pointer_safety`.|  
 |[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.|  
 |[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Static cast to `shared_ptr`.|  
 |[swap](../standard-library/memory-functions.md#swap)|Swap two `shared_ptr` or `weak_ptr` objects.|  
@@ -82,13 +62,13 @@ Defines a class, an operator, and several templates that help allocate and free 
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/memory-operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
-|[operator==](../standard-library/memory-operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
-|[operator>=](../standard-library/memory-operators.md#operator_gt__eq)|Tests for one allocator object being greater than or equal to a second allocator object, of a specified class.|  
-|[operator<](../standard-library/memory-operators.md#operator_lt_)|Tests for one object being less than a second object of a specified class.|  
-|[operator\<=](../standard-library/memory-operators.md#operator_lt__eq)|Tests for one object being less than or equal to a second object of a specified class.|  
-|[operator>](../standard-library/memory-operators.md#operator_gt_)|Tests for one object being greater than a second object of a specified class.|  
-|[operator<<](../standard-library/memory-operators.md#operator_lt__lt_)|`shared_ptr` inserter.|  
+|[operator!=](../standard-library/memory-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|  
+|[operator==](../standard-library/memory-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|  
+|[operator>=](../standard-library/memory-operators.md#op_gt_eq)|Tests for one allocator object being greater than or equal to a second allocator object, of a specified class.|  
+|[operator<](../standard-library/memory-operators.md#op_lt)|Tests for one object being less than a second object of a specified class.|  
+|[operator\<=](../standard-library/memory-operators.md#op_gt_eq)|Tests for one object being less than or equal to a second object of a specified class.|  
+|[operator>](../standard-library/memory-operators.md#op_gt)|Tests for one object being greater than a second object of a specified class.|  
+|[operator<<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` inserter.|  
   
 ### Classes  
   

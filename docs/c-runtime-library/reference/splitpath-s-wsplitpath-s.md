@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wsplitpath_s"
-  - "_splitpath_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wsplitpath_s", "_splitpath_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wsplitpath_s"
-  - "splitpath_s"
-  - "_splitpath_s"
-  - "wsplitpath_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "splitpath_s function"
-  - "pathnames"
-  - "_splitpath_s function"
-  - "_wsplitpath_s function"
-  - "path names"
-  - "wsplitpath_s function"
+f1_keywords: ["_wsplitpath_s", "splitpath_s", "_splitpath_s", "wsplitpath_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["splitpath_s function", "pathnames", "_splitpath_s function", "_wsplitpath_s function", "path names", "wsplitpath_s function"]
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _splitpath_s, _wsplitpath_s
 Breaks a path name into components. These are versions of [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -154,7 +116,7 @@ errno_t _wsplitpath_s(
  If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set `errno` to `ERANGE`, and return `ERANGE`.  
   
 ## Remarks  
- The `_splitpath_s` function breaks a path into its four components. `_splitpath_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath_s` is a wide-character version of `_splitpath_s`; the arguments to `_``wsplitpath_s`are wide-character strings. These functions behave identically otherwise  
+ The `_splitpath_s` function breaks a path into its four components. `_splitpath_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath_s` is a wide-character version of `_splitpath_s`; the arguments to `_wsplitpath_s` are wide-character strings. These functions behave identically otherwise  
   
 ### Generic-Text Routine Mappings  
   
@@ -190,9 +152,6 @@ errno_t _wsplitpath_s(
   
 ## Example  
  See the example for [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [File Handling](../../c-runtime-library/file-handling.md)   

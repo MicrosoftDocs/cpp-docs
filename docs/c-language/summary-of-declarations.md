@@ -4,47 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Summary of Declarations
 `declaration`:  
- *declaration-specifiers attribute-seq* opt*init-declarator-list*opt**;**  
+ *declaration-specifiers attribute-seq* <sub>opt</sub> *init-declarator-list*<sub>opt</sub>**;**  
   
  /\* *attribute-seq* is Microsoft Specific */  
   
  *declaration-specifiers*:  
- *storage-class-specifier declaration-specifiers*opt  
+ *storage-class-specifier declaration-specifiers*<sub>opt</sub>  
   
- *type-specifier declaration-specifiers*opt  
+ *type-specifier declaration-specifiers*<sub>opt</sub>  
   
- *type-qualifier declaration-specifiers*opt  
+ *type-qualifier declaration-specifiers*<sub>opt</sub>  
   
  *attribute-seq* :            /\* *attribute-seq* is Microsoft Specific \*/  
- *attribute attribute-seq* opt  
+ *attribute attribute-seq* <sub>opt</sub>  
   
  *attribute* : one of      /* Microsoft Specific \*/  
  ||||  
@@ -115,23 +100,23 @@ translation.priority.ht:
  `volatile`  
   
  `declarator`:  
- `pointer`opt*direct-declarator*  
+ `pointer`<sub>opt</sub> *direct-declarator*  
   
  *direct-declarator*:  
  *identifier*  
   
  **(**  *declarator*  **)**  
   
- *direct-declarator*  **[**  *constant-expression* opt**]**  
+ *direct-declarator*  **[**  *constant-expression* <sub>opt</sub>**]**  
   
  *direct-declarator*  **(**  *parameter-type-list*  **)** /* New-style declarator \*/  
   
- *direct-declarator*  **(**  *identifier-list*opt**)** /* Obsolete-style declarator \*/  
+ *direct-declarator*  **(**  *identifier-list*<sub>opt</sub>**)** /* Obsolete-style declarator \*/  
   
  `pointer`:  
- **\*** *type-qualifier-list*opt  
+ **\*** *type-qualifier-list*<sub>opt</sub>  
   
- **\*** *type-qualifier-list*opt`pointer`  
+ **\*** *type-qualifier-list*<sub>opt</sub>`pointer`  
   
  *parameter-type-list*:                           /\* The parameter list \*/  
  *parameter-list*  
@@ -149,7 +134,7 @@ translation.priority.ht:
  *type-qualifier-list type-qualifier*  
   
  *enum-specifier*:  
- **enum**  *identifier*opt**{** *enumerator-list* **}**  
+ **enum**  *identifier*<sub>opt</sub>**{** *enumerator-list* **}**  
   
  **enum**  *identifier*  
   
@@ -167,7 +152,7 @@ translation.priority.ht:
  *identifier*  
   
  *struct-or-union-specifier*:  
- *struct-or-union identifier*opt**{** *struct-declaration-list* **}** *struct-or-union identifier*  
+ *struct-or-union identifier*<sub>opt</sub>**{** *struct-declaration-list* **}** *struct-or-union identifier*  
   
  *struct-or-union*:  
  **struct**  
@@ -183,9 +168,9 @@ translation.priority.ht:
  *specifier-qualifier-list struct-declarator-list*  **;**  
   
  *specifier-qualifier-list*:  
- *type-specifier specifier-qualifier-list*opt  
+ *type-specifier specifier-qualifier-list*<sub>opt</sub>  
   
- *type-qualifier specifier-qualifier-list*opt  
+ *type-qualifier specifier-qualifier-list*<sub>opt</sub>  
   
  *struct-declarator-list*:  
  *struct-declarator struct-declarator-list*  **,**  *struct-declarator*  
@@ -193,12 +178,12 @@ translation.priority.ht:
  *struct-declarator*:  
  *declarator*  
   
- *type-specifier declarator*opt**:** *constant-expression*  
+ *type-specifier declarator*<sub>opt</sub>**:** *constant-expression*  
   
  *parameter-declaration*:  
  *declaration-specifiers declarator* /* Named declarator \*/  
   
- *declaration-specifiers abstract-declarator*opt**/\*** Anonymous declarator **\*/**  
+ *declaration-specifiers abstract-declarator*<sub>opt</sub>**/\*** Anonymous declarator **\*/**  
   
  *identifier-list*: **/\*** For old-style declarator **\* /**  
  *identifier*  
@@ -208,14 +193,14 @@ translation.priority.ht:
  *abstract-declarator*: **/\*** Used with anonymous declarators **\*/**  
  *pointer*  
   
- `pointer`opt*direct-abstract-declarator*  
+ `pointer`<sub>opt</sub>*direct-abstract-declarator*  
   
  *direct-abstract-declarator*:  
  **(**  *abstract-declarator*  **)**  
   
- *direct-abstract-declarator*opt**[** *constant-expression*opt**]**  
+ *direct-abstract-declarator*<sub>opt</sub>**[** *constant-expression*<sub>opt</sub>**]**  
   
- *direct-abstract-declarator*opt**(** *parameter-type-list* opt**)**  
+ *direct-abstract-declarator*<sub>opt</sub>**(** *parameter-type-list* <sub>opt</sub>**)**  
   
  *initializer*:  
  *assignment-expression*  
@@ -230,13 +215,13 @@ translation.priority.ht:
  *initializer-list*  **,**  *initializer*  
   
  *type-name*:  
- *specifier-qualifier-list abstract-declarator*opt  
+ *specifier-qualifier-list abstract-declarator*<sub>opt</sub>  
   
  *typedef-name*:  
  *identifier*  
   
  *extended-decl-modifier-seq*:/\*    Microsoft Specific \*/  
- *extended-decl-modifier*opt  
+ *extended-decl-modifier*<sub>opt</sub>  
   
  *extended-decl-modifier-seq extended-decl-modifier*  
   

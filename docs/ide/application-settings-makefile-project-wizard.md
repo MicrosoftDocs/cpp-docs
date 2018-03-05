@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.makefile.appset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Makefile Project Wizard, application settings"
+f1_keywords: ["vc.appwiz.makefile.appset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Makefile Project Wizard, application settings"]
 ms.assetid: e0cbce59-5984-4f68-8a1d-f7fb2007c9b4
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Application Settings, Makefile Project Wizard
 Provide the information for the project. The options you specify are reflected in the project's [property page](../ide/working-with-project-properties.md). Once you create the project, you can view and edit each of the following options in the **Nmake** page of the project's property page.  

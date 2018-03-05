@@ -4,56 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "COLUMN_ENTRY_PS_LENGTH_STATUS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_ENTRY_PS_LENGTH_STATUS macro"
+ms.topic: "reference"
+f1_keywords: ["COLUMN_ENTRY_PS_LENGTH_STATUS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_ENTRY_PS_LENGTH_STATUS macro"]
 ms.assetid: 04291671-329d-4974-b04e-36ef3f037787
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_PS_LENGTH_STATUS
 Represents a binding on the rowset to the specific column in the database.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_PS_LENGTH_STATUS(  
-nOrdinal  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status)  
   
 ```  
   

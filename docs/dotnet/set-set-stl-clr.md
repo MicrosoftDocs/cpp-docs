@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "set member [STL/CLR]"
+f1_keywords: ["cliext::set::set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["set member [STL/CLR]"]
 ms.assetid: 0cce8501-92ed-431c-b711-14e0b7be7375
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::set (STL/CLR)
 Constructs a container object.  
@@ -84,31 +67,25 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `set(set<Key>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[set::begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)`(),` `right``.`[set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `set(set<Key>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[set::begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)`(),` `right``->`[set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> set(InIter first, InIter last);`  
   
- `set(InIter first, InIter last);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
   
  The constructor:  
   
- `template<typename InIter>`  
+ `template<typename InIter> set(InIter first, InIter last, key_compare^ pred);`  
   
- `set(InIter first, InIter last,`  
-  
- `key_compare^ pred);`  
-  
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
   
  The constructor:  
   
@@ -118,15 +95,13 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  The constructor:  
   
- `set(System::Collections::Generic::IEnumerable<Key>^ right,`  
-  
- `key_compare^ pred);`  
+ `set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
  initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_set_construct.cpp   
 // compile with: /clr   
 #include <cliext/set>   

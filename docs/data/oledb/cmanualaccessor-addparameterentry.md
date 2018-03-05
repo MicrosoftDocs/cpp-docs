@@ -4,56 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CManualAccessor::AddParameterEntry"
-  - "ATL.CManualAccessor.AddParameterEntry"
-  - "CManualAccessor.AddParameterEntry"
-  - "AddParameterEntry"
-  - "ATL::CManualAccessor::AddParameterEntry"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddParameterEntry method"
+ms.topic: "reference"
+f1_keywords: ["CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddParameterEntry method"]
 ms.assetid: 9048b164-052b-41b1-a861-227fc529e0b5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CManualAccessor::AddParameterEntry
 Adds a parameter entry to the parameter entry structures.  
   
 ## Syntax  
   
-```  
-  
-      void AddParameterEntry(  
-   DBORDINAL nOrdinal,  
-   DBTYPE wType,  
-   DBLENGTH nColumnSize,  
+```
+void AddParameterEntry(DBORDINAL nOrdinal,  
+   DBTYPE wType,  DBLENGTH nColumnSize,  
    void* pData,  
    void* pLength = NULL,  
    void* pStatus = NULL,  
-   DBPARAMIO eParamIO = DBPARAMIO_INPUT   
-) throw ( );  
+   DBPARAMIO eParamIO = DBPARAMIO_INPUT) throw ();  
 ```  
   
 #### Parameters  

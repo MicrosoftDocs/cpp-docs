@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "bsearch_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["bsearch_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "bsearch_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [CRT], binary search"
-  - "bsearch_s function"
+f1_keywords: ["bsearch_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["arrays [CRT], binary search", "bsearch_s function"]
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # bsearch_s
 Performs a binary search of a sorted array. This is version of [bsearch](../../c-runtime-library/reference/bsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -87,9 +56,9 @@ void *bsearch_s(
  A pointer to an object that can be accessed in the comparison function.  
   
 ## Return Value  
- `bsearch_s` returns a pointer to an occurrence of`key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
+ `bsearch_s` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
   
- If invalid parameters are passed to the function, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno`is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ If invalid parameters are passed to the function, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ### Error Conditions  
   
@@ -204,9 +173,6 @@ int main( void )
 cat cow dog goat horse human pig rat  
 cat found at 002F0F04  
 ```  
-  
-## .NET Framework Equivalent  
- <xref:System.Collections.ArrayList.BinarySearch%2A>  
   
 ## See Also  
  [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   

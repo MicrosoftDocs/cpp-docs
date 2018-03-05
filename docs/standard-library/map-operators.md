@@ -5,20 +5,23 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 caps.latest.revision: 7
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::operator&gt;= (map)", "std::operator&lt; (map)", "std::operator&lt;= (map)", "std::operator== (map)"]
 ---
 # &lt;map&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator==](#operator_eq_eq)|  
-|[operator!= (multimap)](#operator_neq_multimap)|[operator&gt;](#operator_gt_multimap)|[operator&gt;=](#operator_gt__eq_multimap)|  
-|[operator&lt;](#operator_lt_multimap)|[operator&lt;=](#operator_lt__eq_multimap)|[operator==](#operator_eq_eq_multimap)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
+|[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#op_gt_eq_multimap)|  
+|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#op_lt_eq_multimap)|[operator==](#op_eq_eq_multimap)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if the map object on the left side of the operator is not equal to the map object on the right side.  
   
 ```
@@ -78,7 +81,7 @@ The maps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests if the map object on the left side of the operator is less than the map object on the right side.  
   
 ```
@@ -138,7 +141,7 @@ The map m1 is not less than the map m3.
 *\  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the map object on the left side of the operator is less than or equal to the map object on the right side.  
   
 ```
@@ -202,7 +205,7 @@ The map m1 is less than or equal to the map m4.
 *\  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if the map object on the left side of the operator is equal to the map object on the right side.  
   
 ```
@@ -262,7 +265,7 @@ The maps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests if the map object on the left side of the operator is greater than the map object on the right side.  
   
 ```
@@ -322,7 +325,7 @@ The map m1 is greater than the map m3.
 *\  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the map object on the left side of the operator is greater than or equal to the map object on the right side.  
   
 ```
@@ -386,7 +389,7 @@ Map m1 is greater than or equal to map m4.
 *\  
 ```  
   
-##  <a name="operator_neq_multimap"></a>  operator!= (multimap)  
+##  <a name="op_neq_multimap"></a>  operator!= (multimap)  
  Tests if the multimap object on the left side of the operator is not equal to the multimap object on the right side.  
   
 ```
@@ -446,7 +449,7 @@ The multimaps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="operator_lt_multimap"></a>  operator&lt;  
+##  <a name="op_lt_multimap"></a>  operator&lt;  
  Tests if the multimap object on the left side of the operator is less than the multimap object on the right side.  
   
 ```
@@ -506,7 +509,7 @@ The multimap m1 is not less than the multimap m3.
 *\  
 ```  
   
-##  <a name="operator_lt__eq_multimap"></a>  operator&lt;=  
+##  <a name="eq_multimap"></a>  operator&lt;=  
  Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.  
   
 ```
@@ -570,7 +573,7 @@ m1 is less than or equal to m4
 *\  
 ```  
   
-##  <a name="operator_eq_eq_multimap"></a>  operator==  
+##  <a name="op_eq_eq_multimap"></a>  operator==  
  Tests if the multimap object on the left side of the operator is equal to the multimap object on the right side.  
   
 ```
@@ -630,7 +633,7 @@ m1 and m3 are equal
 *\  
 ```  
   
-##  <a name="operator_gt_multimap"></a>  operator&gt;  
+##  <a name="op_gt_multimap"></a>  operator&gt;  
  Tests if the multimap object on the left side of the operator is greater than the multimap object on the right side.  
   
 ```
@@ -690,7 +693,7 @@ The multimap m1 is greater than the multimap m3.
 *\  
 ```  
   
-##  <a name="operator_gt__eq_multimap"></a>  operator&gt;=  
+##  <a name="op_gt_eq_multimap"></a>  operator&gt;=  
  Tests if the multimap object on the left side of the operator is greater than or equal to the multimap object on the right side.  
   
 ```

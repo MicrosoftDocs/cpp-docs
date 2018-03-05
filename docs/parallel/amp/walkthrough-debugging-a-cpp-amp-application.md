@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging, C++ Accelerated Massive Parallelism"
-  - "C++ AMP, debugging"
-  - "C++ Accelerated Massive Parallelism, debugging"
-  - "debugging, C++ AMP"
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a C++ AMP Application
 This topic demonstrates how to debug an application that uses C++ Accelerated Massive Parallelism (C++ AMP) to take advantage of the graphics processing unit (GPU). It uses a parallel-reduction program that sums up a large array of integers. This walkthrough illustrates the following tasks:  
@@ -56,7 +36,7 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
   
 -   Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).  
   
--   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](http://msdn.microsoft.com/library/40b38559-b8de-4041-91f2-68986767c976).  
+-   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).  
   
 -   Make sure you are running [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] to support debugging on the software emulator.  
   
@@ -352,7 +332,7 @@ Show Flagged Only button
      Now the GPU Threads, Parallel Watch, and Parallel Stacks windows display only the flagged threads.  
   
 ## Freezing and Thawing GPU Threads  
- You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](http://msdn.microsoft.com/library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
+ You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
   
 ### To freeze and thaw GPU threads  
   
@@ -403,7 +383,7 @@ Grouped threads in the GPU Threads window
 ## See Also  
  [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)   
  [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
- [How to: Use the GPU Threads Window](http://msdn.microsoft.com/library/c647c502-a9f0-48e0-a430-976744a5fa51)   
- [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/library/28004d9b-420c-48f7-b80e-ab1519802558)   
- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)
+ [How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)   
+ [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)   
+ [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
 

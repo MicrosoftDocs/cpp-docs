@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4047"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4047"
+f1_keywords: ["C4047"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4047"]
 ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4047
 'operator' : 'identifier1' differs in levels of indirection from 'identifier2'  

@@ -4,31 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Exceptions and Stack Unwinding in C++
 In the C++ exception mechanism, control moves from the throw statement to the first catch statement that can handle the thrown type. When the catch statement is reached, all of the automatic variables that are in scope between the throw and catch statements are destroyed in a process that is known as *stack unwinding*. In stack unwinding, execution proceeds as follows:  
@@ -41,7 +26,7 @@ In the C++ exception mechanism, control moves from the throw statement to the fi
   
 4.  If a matching handler is still not found, or if an exception occurs during the unwinding process but before the handler gets control, the predefined run-time function `terminate` is called. If an exception occurs after the exception is thrown but before the unwind begins, `terminate` is called.  
   
-5.  If a matching `catch` handler is found, and it catches by value, its formal parameter is initialized by copying the exception object. If it catches by reference, the parameter is initialized to refer to the exception object. After the formal parameter is initialized, the process of unwinding the stack begins. This involves the destruction of all automatic objects that were fully constructed—but not yet destructed—between the beginning of the `try` block that is associated with the `catch` handler and the throw site of the exception. Destruction occurs in reverse order of construction. The `catch` handler is executed and the program resumes execution after the last handler—that is, at the first statement or construct that is not a `catch` handler. Control can only enter a `catch` handler through a thrown exception, never through a `goto` statement or a `case` label in a `switch`statement.  
+5.  If a matching `catch` handler is found, and it catches by value, its formal parameter is initialized by copying the exception object. If it catches by reference, the parameter is initialized to refer to the exception object. After the formal parameter is initialized, the process of unwinding the stack begins. This involves the destruction of all automatic objects that were fully constructed—but not yet destructed—between the beginning of the `try` block that is associated with the `catch` handler and the throw site of the exception. Destruction occurs in reverse order of construction. The `catch` handler is executed and the program resumes execution after the last handler—that is, at the first statement or construct that is not a `catch` handler. Control can only enter a `catch` handler through a thrown exception, never through a `goto` statement or a `case` label in a `switch` statement.  
   
 ## Stack Unwinding Example  
  The following example demonstrates how the stack is unwound when an exception is thrown. Execution on the thread jumps from the throw statement in `C` to the catch statement in `main`, and unwinds each function along the way. Notice the order in which the `Dummy` objects are created and then destroyed as they go out of scope. Also notice that no function completes except `main`, which contains the catch statement. Function `A` never returns from its call to `B()`, and `B` never returns from its call to `C()`. If you uncomment the definition of the `Dummy` pointer and the corresponding delete statement, and then run the program, notice that the pointer is never deleted. This shows what can happen when functions do not provide an exception guarantee. For more information, see How to: Design for Exceptions. If you comment out the catch statement, you can observe what happens when a program terminates because of an unhandled exception.  

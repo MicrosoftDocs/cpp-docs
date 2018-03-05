@@ -4,66 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "va_arg"
-  - "va_end"
-  - "va_copy"
-  - "va_start"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["va_arg", "va_end", "va_copy", "va_start"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "va_arg"
-  - "va_start"
-  - "va_list"
-  - "va_alist"
-  - "va_dcl"
-  - "va_copy"
-  - "va_end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "variable argument lists, accessing"
-  - "va_start macro"
-  - "va_arg macro"
-  - "va_end macro"
-  - "arguments [C++], argument lists"
-  - "va_list macro"
-  - "va_dcl macro"
-  - "va_alist macro"
-  - "va_copy macro"
+f1_keywords: ["va_arg", "va_start", "va_list", "va_alist", "va_dcl", "va_copy", "va_end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["variable argument lists, accessing", "va_start macro", "va_arg macro", "va_end macro", "arguments [C++], argument lists", "va_list macro", "va_dcl macro", "va_alist macro", "va_copy macro"]
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # va_arg, va_copy, va_end, va_start
 Accesses variable-argument lists.  
@@ -245,9 +200,6 @@ Deviation is: 2.236068
 Deviation is: 0.000000  
   
 ```  
-  
-## .NET Framework Equivalent  
- [System::ParamArrayAttribute Class](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx)  
   
 ## See Also  
  [Argument Access](../../c-runtime-library/argument-access.md)   

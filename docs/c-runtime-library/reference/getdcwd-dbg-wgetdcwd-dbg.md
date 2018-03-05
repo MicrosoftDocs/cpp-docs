@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_getdcwd_dbg"
-  - "_wgetdcwd_dbg"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_getdcwd_dbg", "_wgetdcwd_dbg"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getdcwd_dbg"
-  - "getdcwd_dbg"
-  - "_wgetdcwd_dbg"
-  - "wgetdcwd_dbg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "working directory"
-  - "_getdcwd_dbg function"
-  - "wgetdcwd_dbg function"
-  - "current working directory"
-  - "getdcwd_dbg function"
-  - "_wgetdcwd_dbg function"
-  - "directories [C++], current working"
+f1_keywords: ["_getdcwd_dbg", "getdcwd_dbg", "_wgetdcwd_dbg", "wgetdcwd_dbg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["working directory", "_getdcwd_dbg function", "wgetdcwd_dbg function", "current working directory", "getdcwd_dbg function", "_wgetdcwd_dbg function", "directories [C++], current working"]
 ms.assetid: 266bf6f0-0417-497f-963d-2e0f306d9385
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _getdcwd_dbg, _wgetdcwd_dbg
 Debug versions of the [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md) functions (only available during debug).  
@@ -90,10 +52,10 @@ wchar_t *_wgetdcwd_dbg(
  Storage location for the path.  
   
  `maxlen`  
- Maximum length of the path in characters: `char` for `_getdcwd_dbg`and `wchar_t`for `_wgetdcwd_dbg`.  
+ Maximum length of the path in characters: `char` for `_getdcwd_dbg` and `wchar_t` for `_wgetdcwd_dbg`.  
   
  `blockType`  
- Requested type of the memory block: `_CLIENT_BLOCK`or `_NORMAL_BLOCK`.  
+ Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.  
   
  `filename`  
  Pointer to the name of the source file that requested the allocation operation or `NULL`.  
@@ -123,9 +85,6 @@ wchar_t *_wgetdcwd_dbg(
 |`_wgetdcwd_dbg`|\<crtdbg.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- <xref:System.Environment.CurrentDirectory%2A?displayProperty=fullName>  
   
 ## See Also  
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   

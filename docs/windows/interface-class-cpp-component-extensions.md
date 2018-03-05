@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "interface_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interface class keyword"
-  - "interface struct keyword"
+f1_keywords: ["interface_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # interface class  (C++ Component Extensions)
 Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).  
@@ -80,11 +62,11 @@ interface class
   
  For information on other CLR types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   
- You can detect at compile time if a type is an interface with `__is_interface_class(``type``)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ You can detect at compile time if a type is an interface with `__is_interface_class(type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  In the development environment, you can get F1 help on these keywords by highlighting the keyword, (`interface class`, for example) and pressing F1.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
@@ -92,7 +74,7 @@ interface class
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the common language runtime.)  

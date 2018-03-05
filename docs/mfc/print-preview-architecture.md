@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "print preview, process"
-  - "previewing printing"
-  - "print preview, architecture"
-  - "printing [MFC], print preview"
-  - "print preview, modifications to MFC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["print preview [MFC], process", "previewing printing", "print preview [MFC], architecture", "printing [MFC], print preview", "print preview [MFC], modifications to MFC"]
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Print Preview Architecture
 This article explains how the MFC framework implements print preview functionality. Topics covered include:  

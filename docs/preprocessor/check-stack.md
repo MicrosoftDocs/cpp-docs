@@ -4,48 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.check_stack"
-  - "check_stack_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "check_stack pragma"
-  - "pragmas, check_stack"
-  - "pragmas, check_stack usage table"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.check_stack", "check_stack_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["check_stack pragma", "pragmas, check_stack", "pragmas, check_stack usage table"]
 ms.assetid: f18e20cc-9abb-48b7-ad62-8d384875b996
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # check_stack
-Instructs the compiler to turn off stack probes if **off** (or **–**) is specified, or to turn on stack probes if **on** (or **+**) is specified.  
+Instructs the compiler to turn off stack probes if **off** (or **-**) is specified, or to turn on stack probes if **on** (or **+**) is specified.  
   
 ## Syntax  
   
 ```  
   
       #pragma check_stack([ {on | off}] )  
-#pragma check_stack{+ | –}  
+#pragma check_stack{+ | -}  
 ```  
   
 ## Remarks  
@@ -60,7 +40,7 @@ Instructs the compiler to turn off stack probes if **off** (or **–**) is speci
 |**#pragma check_stack( )** or<br /><br /> **#pragma check_stack**|Yes|Turns off stack checking for functions that follow|  
 |**#pragma check_stack( )** or<br /><br /> **#pragma check_stack**|No|Turns on stack checking for functions that follow|  
 |**#pragma check_stack(on)**<br /><br /> or **#pragma check_stack +**|Yes or No|Turns on stack checking for functions that follow|  
-|**#pragma check_stack(off)**<br /><br /> or **#pragma check_stack –**|Yes or No|Turns off stack checking for functions that follow|  
+|**#pragma check_stack(off)**<br /><br /> or **#pragma check_stack -**|Yes or No|Turns off stack checking for functions that follow|  
   
 ## See Also  
  [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

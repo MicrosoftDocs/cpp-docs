@@ -4,57 +4,33 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CDataSource::OpenFromFileName"
-  - "ATL::CDataSource::OpenFromFileName"
-  - "OpenFromFileName"
-  - "CDataSource.OpenFromFileName"
-  - "ATL.CDataSource.OpenFromFileName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OpenFromFileName method"
+ms.topic: "reference"
+f1_keywords: ["CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OpenFromFileName method"]
 ms.assetid: c4226de6-59da-4368-9c15-c5afab86f68b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::OpenFromFileName
 Opens a data source from a file specified by the user-supplied file name.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenFromFileName(   
-   LPCOLESTR szFileName    
-) throw( );  
+```cpp
+HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();  
 ```  
   
 #### Parameters  
  `szFileName`  
  [in] The name of a file, usually a data source connection (.UDL) file.  
   
- For more information about data link files (.udl files), see [Data Link API Overview](https://msdn.microsoft.com/en-us/library/ms718102.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about data link files (.udl files), see [Data Link API Overview](https://msdn.microsoft.com/en-us/library/ms718102.aspx) in the Windows SDK.  
   
 ## Return Value  
  A standard `HRESULT`.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set_intersection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "set_intersection function [STL/CLR]"
+f1_keywords: ["cliext::set_intersection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["set_intersection function [STL/CLR]"]
 ms.assetid: 8a799b20-55a5-4fba-a9c1-a48597cbdae6
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set_intersection (STL/CLR)
 Unites all of the elements that belong to both sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.  
@@ -49,7 +32,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `set_intersection`. For more information, see [set_intersection](http://msdn.microsoft.com/Library/49835507-0d59-4ca3-bcdb-1de1ac4eac00).  
+ This function behaves the same as the C++ Standard Library function `set_intersection`. For more information, see [set_intersection](../standard-library/algorithm-functions.md#set_intersection).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data access [C++], XML data"
-  - "XML [C++], accessing data"
-  - "CXMLAccessor class, retrieving XML data"
-  - "data [C++], XML data access"
-  - "rowsets [C++], retrieving XML data"
-  - "CStreamRowset class, retrieving XML data"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessing XML Data
 There are two separate methods of retrieving XML data from a data source: one uses [CStreamRowset](../../data/oledb/cstreamrowset-class.md) and the other uses [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  
@@ -61,7 +40,7 @@ CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
 CCommand<CNoAccessor, CStreamRowset> myCmd;  
 ```  
   
- Normally when you call `CCommand::Open` (specifying, for example, `CRowset` as the `TRowset` class), it obtains an `IRowset`pointer. `ICommand::Execute` returns an `IRowset`pointer, which is stored in the `m_spRowset` member of the `CRowset` object. Methods such as `MoveFirst`, `MoveNext`, and `GetData` use that pointer to retrieve the data.  
+ Normally when you call `CCommand::Open` (specifying, for example, `CRowset` as the `TRowset` class), it obtains an `IRowset` pointer. `ICommand::Execute` returns an `IRowset` pointer, which is stored in the `m_spRowset` member of the `CRowset` object. Methods such as `MoveFirst`, `MoveNext`, and `GetData` use that pointer to retrieve the data.  
   
  By contrast, when you call `CCommand::Open` (but specify `CStreamRowset` as the `TRowset` class), `ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in the `m_spStream` data member of [CStreamRowset](../../data/oledb/cstreamrowset-class.md). You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:  
   
@@ -90,7 +69,8 @@ CTable<CXMLAccessor, CRowset> rs;
 ```  
 // Open data source, session, and rowset  
 hr = rs.MoveFirst();  
-while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+
+while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
 {  
     CStringW strRowData;  
     myCmd.GetXMLRowData(strRowData);  

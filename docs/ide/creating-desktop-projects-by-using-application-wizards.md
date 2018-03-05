@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfcexe.project"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "platforms [C++], project creation"
-  - "Visual C++ projects, application wizards"
-  - "Visual C++ projects, creating"
-  - "programs [C++], beginning with wizards"
-  - "applications [C++], using wizards"
+f1_keywords: ["vc.appwiz.mfcexe.project"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["platforms [C++], project creation", "Visual C++ projects, application wizards", "Visual C++ projects, creating", "programs [C++], beginning with wizards", "applications [C++], using wizards"]
 ms.assetid: 090c6423-deb8-4a00-817d-337eb5644544
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating Desktop Projects By Using Application Wizards
 Every type of Visual C++ project has an application wizard that helps you generate new projects quickly and easily, modeled from the project template.  To open an application wizard, use the **New Project** dialog box to specify project properties such as the name of the project, or the directory and solution where your project will reside.  

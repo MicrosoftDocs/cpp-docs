@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMemoryState"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMemoryState structure"
-  - "memory leaks, detecting"
-  - "detecting memory leaks"
+f1_keywords: ["CMemoryState"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMemoryState structure [MFC]", "memory leaks [MFC], detecting", "detecting memory leaks [MFC]"]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMemoryState Structure
 Provides a convenient way to detect memory leaks in your program.  
@@ -165,7 +146,7 @@ void DumpStatistics() const;
 ```  
   
 ### Remarks  
- The report, which is printed on the [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
+ The report, which is printed on the [afxDump](diagnostic-services.md#afxdump) device, shows the following:  
   
  A sample report gives information on the number (or amount) of:  
   

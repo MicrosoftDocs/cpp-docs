@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.COleDateTimeSpan"
-  - "COleDateTimeSpan"
-  - "ATL::COleDateTimeSpan"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "timespan"
-  - "time span"
-  - "shared classes, COleDateTimeSpan"
-  - "Date data type, MFC encapsulation of"
-  - "COleDateTimeSpan class"
+f1_keywords: ["COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::Format", "ATLCOMTIME/ATL::COleDateTimeSpan::GetDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::m_span", "ATLCOMTIME/ATL::COleDateTimeSpan::m_status"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["timespan", "time span", "shared classes, COleDateTimeSpan", "Date data type, MFC encapsulation of", "COleDateTimeSpan class"]
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # COleDateTimeSpan Class
 Represents a relative time, a time span.  
@@ -220,7 +196,7 @@ LONG GetDays() const throw();
  The day portion of this date/time-span value.  
   
 ### Remarks  
- The return values from this function range between approximately – 3,615,000 and 3,615,000.  
+ The return values from this function range between approximately - 3,615,000 and 3,615,000.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -252,7 +228,7 @@ LONG GetHours() const throw();
  The hours portion of this date/time-span value.  
   
 ### Remarks  
- The return values from this function range between – 23 and 23.  
+ The return values from this function range between - 23 and 23.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -284,7 +260,7 @@ LONG GetMinutes() const throw();
  The minutes portion of this date/time-span value.  
   
 ### Remarks  
- The return values from this function range between – 59 and 59.  
+ The return values from this function range between - 59 and 59.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -316,7 +292,7 @@ LONG GetSeconds() const throw();
  The seconds portion of this date/time-span value.  
   
 ### Remarks  
- The return values from this function range between – 59 and 59.  
+ The return values from this function range between - 59 and 59.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -350,15 +326,13 @@ DateTimeSpanStatus GetStatus() const throw();
 ### Remarks  
  The return value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
- `enum DateTimeSpanStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+};  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -391,7 +365,7 @@ double GetTotalDays() const throw();
  This date/time-span value expressed in days. Although this function is prototyped to return a double, it will always return an integer value.  
   
 ### Remarks  
- The return values from this function range between approximately – 3.65e6 and 3.65e6.  
+ The return values from this function range between approximately - 3.65e6 and 3.65e6.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -423,7 +397,7 @@ double GetTotalHours() const throw();
  This date/time-span value expressed in hours. Although this function is prototyped to return a double, it will always return an integer value.  
   
 ### Remarks  
- The return values from this function range between approximately – 8.77e7 and 8.77e7.  
+ The return values from this function range between approximately - 8.77e7 and 8.77e7.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -455,7 +429,7 @@ double GetTotalMinutes() const throw();
  This date/time-span value expressed in minutes. Although this function is prototyped to return a double, it will always return an integer value.  
   
 ### Remarks  
- The return values from this function range between approximately – 5.26e9 and 5.26e9.  
+ The return values from this function range between approximately - 5.26e9 and 5.26e9.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -487,7 +461,7 @@ double GetTotalSeconds() const throw();
  This date/time-span value expressed in seconds. Although this function is prototyped to return a double, it will always return an integer value.  
   
 ### Remarks  
- The return values from this function range between approximately – 3.16e11 to 3.16e11.  
+ The return values from this function range between approximately - 3.16e11 to 3.16e11.  
   
  For other functions that query the value of a `COleDateTimeSpan` object, see the following member functions:  
   
@@ -529,15 +503,14 @@ DateTimeSpanStatus m_status;
 ```  
   
 ### Remarks  
- `enum DateTimeSpanStatus{`  
   
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+   };  
+```  
   
  For a brief description of these status values, see the following list:  
   
@@ -668,15 +641,13 @@ void SetStatus(DateTimeSpanStatus status) throw();
 ### Remarks  
  The *Status* parameter value is defined by the **DateTimeSpanStatus** enumerated type, which is defined within the `COleDateTimeSpan` class.  
   
- `enum DateTimeSpanStatus{`  
-  
- `valid = 0,`  
-  
- `invalid = 1,`  
-  
- `null = 2,`  
-  
- `};`  
+```  
+enum DateTimeSpanStatus{  
+   valid = 0,  
+   invalid = 1,  
+   null = 2,  
+   };  
+```  
   
  For a brief description of these status values, see the following list:  
   

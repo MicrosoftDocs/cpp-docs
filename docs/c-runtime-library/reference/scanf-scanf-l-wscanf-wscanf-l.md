@@ -4,69 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wscanf_l"
-  - "scanf"
-  - "_scanf_l"
-  - "wscanf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_wscanf_l", "scanf", "_scanf_l", "wscanf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tscanf"
-  - "_scanf_l"
-  - "wscanf"
-  - "_wscanf_l"
-  - "scanf"
-  - "_tscanf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tscanf_l function"
-  - "_tscanf_l function"
-  - "reading data [C++], from input streams"
-  - "_tscanf function"
-  - "data [C++], reading from input stream"
-  - "scanf_l function"
-  - "scanf function"
-  - "wscanf function"
-  - "_scanf_l function"
-  - "tscanf function"
-  - "formatted data [C++], from input streams"
-  - "wscanf_l function"
-  - "_wscanf_l function"
+f1_keywords: ["_tscanf", "_scanf_l", "wscanf", "_wscanf_l", "scanf", "_tscanf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tscanf_l function", "_tscanf_l function", "reading data [C++], from input streams", "_tscanf function", "data [C++], reading from input stream", "scanf_l function", "scanf function", "wscanf function", "_scanf_l function", "tscanf function", "formatted data [C++], from input streams", "wscanf_l function", "_wscanf_l function"]
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # scanf, _scanf_l, wscanf, _wscanf_l
 Reads formatted data from the standard input stream. More secure versions of these function are available; see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).  
@@ -137,7 +89,7 @@ int _wscanf_l(
 |`scanf`, `_scanf_l`|\<stdio.h>|  
 |`wscanf`, `_wscanf_l`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -174,14 +126,6 @@ The contents are: 71 98.599998 h z Byte characters
 The number of fields input is 6  
 The contents are: 36 92.300003 y n Wide characters  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
--   [System::Console::ReadLine](https://msdn.microsoft.com/en-us/library/system.console.readline.aspx)  
-  
--   See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

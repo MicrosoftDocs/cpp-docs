@@ -4,75 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcrt.dll"
-  - "msvcr120.dll"
-  - "msvcr100.dll"
-  - "msvcr90.dll"
+apilocation: ["msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_spawn"
-  - "_tspawnlp"
-  - "_tspawnlpe"
-  - "_tspawnve"
-  - "_tspawnvp"
-  - "_tspawnvpe"
-  - "_tspawnl"
-  - "spawn"
-  - "_tspawnv"
-  - "_tspawnle"
-  - "wspawn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tspawnve function"
-  - "_spawn functions"
-  - "_tspawnlpe function"
-  - "tspawnvpe function"
-  - "processes, creating"
-  - "tspawnve function"
-  - "_tspawnvp function"
-  - "spawn functions"
-  - "tspawnl function"
-  - "tspawnlp function"
-  - "_tspawnvpe function"
-  - "_tspawnl function"
-  - "tspawnvp function"
-  - "tspawnv function"
-  - "processes, executing new"
-  - "_tspawnv function"
-  - "tspawnle function"
-  - "process creation"
-  - "_tspawnlp function"
-  - "tspawnlpe function"
-  - "_tspawnle function"
+f1_keywords: ["_spawn", "_tspawnlp", "_tspawnlpe", "_tspawnve", "_tspawnvp", "_tspawnvpe", "_tspawnl", "spawn", "_tspawnv", "_tspawnle", "wspawn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe function", "tspawnvpe function", "processes, creating", "tspawnve function", "_tspawnvp function", "spawn functions", "tspawnl function", "tspawnlp function", "_tspawnvpe function", "_tspawnl function", "tspawnvp function", "tspawnv function", "processes, executing new", "_tspawnv function", "tspawnle function", "process creation", "_tspawnlp function", "tspawnlpe function", "_tspawnle function"]
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _spawn, _wspawn Functions
 Each of the `_spawn` functions creates and executes a new process:  

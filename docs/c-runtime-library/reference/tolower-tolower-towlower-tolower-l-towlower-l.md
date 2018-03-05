@@ -4,71 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_tolower_l"
-  - "towlower"
-  - "tolower"
-  - "_tolower"
-  - "_towlower_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_totlower"
-  - "tolower"
-  - "_tolower"
-  - "towlower"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tolower_l function"
-  - "_tolower_l function"
-  - "totlower function"
-  - "string conversion, to different characters"
-  - "lowercase, converting to"
-  - "tolower function"
-  - "string conversion, case"
-  - "towlower function"
-  - "_tolower function"
-  - "_totlower function"
-  - "towlower_l function"
-  - "case, converting"
-  - "characters, converting"
-  - "_towlower_l function"
+f1_keywords: ["_totlower", "tolower", "_tolower", "towlower"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tolower_l function", "_tolower_l function", "totlower function", "string conversion, to different characters", "lowercase, converting to", "tolower function", "string conversion, case", "towlower function", "_tolower function", "_totlower function", "towlower_l function", "case, converting", "characters, converting", "_towlower_l function"]
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # tolower, _tolower, towlower, _tolower_l, _towlower_l
 Converts a character to lowercase.  
@@ -132,9 +82,6 @@ int _towlower_l(
   
 ## Example  
  See the example in [to Functions](../../c-runtime-library/to-functions.md).  
-  
-## .NET Framework Equivalent  
- [System::Char::ToLower](https://msdn.microsoft.com/en-us/library/system.char.tolower.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

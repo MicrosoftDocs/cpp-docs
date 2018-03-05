@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.LinkTimeCodeGeneration"
-  - "VC.Project.VCConfiguration.WholeProgramOptimization"
-  - "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization"
-  - "/ltcg"
-  - "VC.Project.VCCLCompilerTool.WholeProgramOptimization"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "link-time code generation in C++ linker"
-  - "/LTCG linker option"
-  - "-LTCG linker option"
-  - "LTCG linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /LTCG (Link-time Code Generation)
 ```  
@@ -145,11 +120,9 @@ translation.priority.mt:
 ## /LTCG and MSIL Modules  
  Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-optimization.md) and [/clr](../../build/reference/clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.  
   
--   **/LTCG** can accept native object files, mixed native/managed object files (compiled by using **/clr**), and pure object files (compiled by using **/clr:pure**), and safe object files (compiled by using **/clr:safe**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+-   **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
--   **/LTCG** can accept safe .netmodules, which can be created by using **/clr:safe /LN** in Visual C++ and **/target:module** in any .NET Visual Studio compiler. .Netmodules produced by using **/clr** or **/clr:pure** are not accepted by **/LTCG**.  
-  
--   /LTCG:PGI does not accept native modules compiled by using **/GL** and **/clr**, or pure modules (produced by using **/clr:pure**)  
+-   /LTCG:PGI does not accept native modules compiled by using **/GL** and **/clr**  
   
 #### To set this compiler option in the Visual Studio development environment  
   

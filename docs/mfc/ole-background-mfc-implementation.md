@@ -4,54 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IMarshall"
-  - "IMoniker"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC libraries, implementing"
-  - "OLE MFC library implementation"
-  - "OLE IMarshal interface"
-  - "IMoniker interface, MFC"
-  - "IMarshall class"
-  - "OLE, compound files"
-  - "OLE IMoniker interface"
-  - "OLE IUnknown"
+f1_keywords: ["IMarshall", "IMoniker"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC libraries, implementing", "OLE MFC library implementation", "OLE IMarshal interface", "IMoniker interface, MFC", "IMarshall class [MFC]", "OLE, compound files", "OLE IMoniker interface", "OLE IUnknown"]
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # OLE Background: MFC Implementation
 Because of the size and complexity of the raw OLE API, calling it directly to write OLE applications can be very time consuming. The goal of the Microsoft Foundation Class Library implementation of OLE is to reduce the amount of work you have to do to write full-featured, OLE-capable applications.  
   
- This article explains the parts of the OLE API that have not been implemented inside MFC. The discussion also explains how what is implemented maps to the OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ This article explains the parts of the OLE API that have not been implemented inside MFC. The discussion also explains how what is implemented maps to the OLE section of the Windows SDK.  
   
 ##  <a name="_core_portions_of_ole_not_implemented_by_the_class_library"></a> Portions of OLE Not Implemented by the Class Library  
  A few interfaces and features of OLE are not directly provided by MFC. If you want to use these features, you can call the OLE API directly.  
   
  IMoniker Interface  
- The `IMoniker` interface is implemented by the class library (for example, the `COleServerItem` class) but has not previously been exposed to the programmer. For more information about this interface, see OLE Moniker Implementations in the OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)]. However, see also class [CMonikerFile](../mfc/reference/cmonikerfile-class.md) and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).  
+ The `IMoniker` interface is implemented by the class library (for example, the `COleServerItem` class) but has not previously been exposed to the programmer. For more information about this interface, see OLE Moniker Implementations in the OLE section of the Windows SDK. However, see also class [CMonikerFile](../mfc/reference/cmonikerfile-class.md) and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md).  
   
  IUnknown and IMarshal Interfaces  
  The **IUnknown** interface is implemented by the class library but is not exposed to the programmer. The **IMarshal** interface is not implemented by the class library but is used internally. Automation servers built using the class library already have marshaling capabilities built in.  

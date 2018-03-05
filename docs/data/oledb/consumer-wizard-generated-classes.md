@@ -4,46 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "attribute-injected classes and methods"
-  - "wizard-generated classes and methods"
-  - "OLE DB consumers, wizard-generated classes and methods"
-  - "command classes in OLE DB consumer"
-  - "classes [C++], OLE DB Consumer Wizard-generated"
-  - "consumer wizard-generated classes and methods"
-  - "user record classes in OLE DB consumer"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Classes
 When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:  
   
 -   If you select a templated consumer, the wizard generates a command class and a user record class. The command class will have the name that you enter in the Class box in the wizard (for example, `CProducts`), and the user record class will have a name of the form "*ClassName*Accessor" (for example, `CProductsAccessor`). Both classes are placed in the consumer's header file.  
   
--   If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you will be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
+-   If you select an attributed consumer, the user record class will have a name of the form "_*ClassName*Accessor" and will be injected. That is, you will be able to view only the command class in the text editor; you can only view the user record class as injected code. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  
   
  The following examples use a command class created on the Products table of the Northwind database to demonstrate the wizard-generated consumer code for the command class and user record class.  
   
@@ -157,7 +135,7 @@ SELECT \
  Finally, the wizard generates a command class declaration such as the following:  
   
 ```  
-class CProducts : public CCommand<CAccessor<CProductsAccessor> >  
+class CProducts : public CCommand<CAccessor<CProductsAccessor>>  
 ```  
   
 ## Attribute-Injected User Record Classes  
@@ -190,12 +168,12 @@ public:
  The injected command class declaration looks like this:  
   
 ```  
-class CProducts : public CCommand<CAccessor<_CProductsAccessor> >  
+class CProducts : public CCommand<CAccessor<_CProductsAccessor>>  
 ```  
   
  Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  
   
- For information about viewing injected code, see [Debugging Injected Code](http://msdn.microsoft.com/library/a1b4104d-d49e-451f-a91e-e39ceaf35875).  
+ For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  
   
 ## See Also  
  [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

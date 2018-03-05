@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_bstr_t"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BSTR object"
-  - "_bstr_t class"
-  - "BSTR object, COM encapsulation"
+f1_keywords: ["_bstr_t"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BSTR object", "_bstr_t class", "BSTR object [C++], COM encapsulation"]
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _bstr_t Class
 **Microsoft Specific**  
@@ -70,10 +51,10 @@ translation.priority.ht:
 |[operator ==, !=, \<, >, \<=, >=](../cpp/bstr-t-relational-operators.md)|Compares two `_bstr_t` objects.|  
 |[operator wchar_t* &#124; char\*](../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md)|Extract the pointers to the encapsulated Unicode or multibyte `BSTR` object.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comutil.h  
+ **Header:** \<comutil.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

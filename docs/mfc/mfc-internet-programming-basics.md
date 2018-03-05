@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISAPI extensions, programming with ISAPI"
-  - "Internet applications [C++]"
-  - "ISAPI"
-  - "ActiveX controls [C++], Internet"
-  - "programming [C++], Internet"
-  - "Web applications [C++], MFC classes"
-  - "ISAPI filters, programming with ISAPI"
-  - "Internet applications [C++], ActiveX controls"
-  - "Internet applications [C++], writing"
-  - "Internet applications [C++], Active technology"
-  - "Active technology [C++]"
-  - "Internet content [C++]"
-  - "WinInet classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISAPI extensions, programming with ISAPI", "Internet applications [MFC]", "ISAPI", "ActiveX controls [MFC], Internet", "programming [MFC], Internet", "Web applications [MFC], MFC classes", "ISAPI filters [MFC], programming with ISAPI", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], writing", "Internet applications [MFC], Active technology", "Active technology [MFC]", "Internet content [MFC]", "WinInet classes [MFC]"]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC Internet Programming Basics
 Microsoft provides many APIs for programming both client and server applications. Many new applications are being written for the Internet, and as technologies, browser capabilities, and security options change, new types of applications will be written. Browsers run on client computers, providing access to the World Wide Web and displaying HTML pages that contain text, graphics, ActiveX controls, and documents. Servers provide FTP, HTTP, and gopher services, and run server extension applications using CGI. Your custom application can retrieve information and provide data on the Internet.  
@@ -90,15 +62,16 @@ Microsoft provides many APIs for programming both client and server applications
 -   [ATL Support for DHTML Controls](../atl/atl-support-for-dhtml-controls.md)  
   
 ##  <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information  
- For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/linkid=56322) Web site. (Links may change without notice.)  
+ For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web site. (Links may change without notice.)  
   
  This Web site for developers contains information on using Microsoft development tools and technologies, and top stories about recent and upcoming conferences. From this page, you can jump to many related developer sites, including the .NET, and XML Developer Centers. You can also download beta SDKs and samples.  
   
- The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
+ The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
   
 ##  <a name="_core_more_internet_help"></a> More Internet Help  
- The OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
+ The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
   
 ## See Also  
- [MFC Internet Programming (NIB)](http://msdn.microsoft.com/en-us/0f7a1f3a-385b-4d56-a55b-0d766840c58a)
+
+
 

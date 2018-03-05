@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GENPROFILE"
-  - "FASTGENPROFILE"
-  - "/GENPROFILE"
-  - "/FASTGENPROFILE"
-helpviewer_keywords: 
-  - "GENPROFILE"
-  - "FASTGENPROFILE"
+f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
+helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)
 Specifies generation of a .pgd file by the linker to support profile-guided optimization (PGO).  /GENPROFILE and /FASTGENPROFILE use different default parameters. Use /GENPROFILE to favor precision over speed and memory usage during profiling. Use /FASTGENPROFILE to favor smaller memory usage and speed over precision.  

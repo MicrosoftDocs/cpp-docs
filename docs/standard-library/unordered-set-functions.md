@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["unordered_set/std::swap (set)", "unordered_set/std::swap (unordered_multiset)"]
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
 caps.latest.revision: 10
 manager: "ghogen"
@@ -46,7 +47,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_set::swap](../standard-library/unordered-set-class.md#unordered_set__swap)`(right)`.  
+ The template function executes `left.`[unordered_set::swap](../standard-library/unordered-set-class.md#swap)`(right)`.  
   
 ### Example  
   
@@ -135,7 +136,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_multiset::swap](../standard-library/unordered-multiset-class.md#unordered_multiset__swap)`(right)`.  
+ The template function executes `left.`[unordered_multiset::swap](../standard-library/unordered-multiset-class.md#swap)`(right)`.  
   
 ### Example  
   

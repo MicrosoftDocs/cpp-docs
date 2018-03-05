@@ -1,49 +1,37 @@
 ---
-title: "Internet URL Parsing Globals | Microsoft Docs"
+title: "Internet URL Parsing Globals and Helpers | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/03/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.isapi"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parsing, URLs"
-  - "URLs, parsing"
+f1_keywords: ["vc.mfc.macros.isapi"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
-# Internet URL Parsing Globals
-When a client sends a query to the Internet server, you can use one of the URL parsing globals to extract information about the client.  
+# Internet URL Parsing Globals and Helpers
+When a client sends a query to the Internet server, you can use one of the URL parsing globals to extract information about the client. The helper functions provide other internet functionality.
   
-### Internet URL Parsing Globals  
+## Internet URL Parsing Globals  
   
 |||  
 |-|-|  
 |[AfxParseURL](#afxparseurl)|Parses a URL string and returns the type of service and its components.|  
 |[AfxParseURLEx](#afxparseurlex)|Parses a URL string and returns the type of service and its components, as well as providing the user name and password.|  
+
+## Other Internet Helpers
+|||
+|-|-|
+|[AfxThrowInternetException](#afxthrowinternetexception)|Throws an exception related to the internet connection.|
+|[AfxGetInternetHandleType](#afxgetinternethandletype)|Determines the type of an Internet handle.|
   
 ##  <a name="afxparseurl"></a>  AfxParseURL  
  This global is used in [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
@@ -219,3 +207,86 @@ BOOL AFXAPI AfxParseURLEx(
     
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+ 
+## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
+Use this global function to determine the type of an Internet handle.  
+   
+### Syntax  
+  ```
+DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );  
+```
+### Parameters  
+ `hQuery`  
+ A handle to an Internet query.  
+   
+### Return Value  
+ Any of the Internet service types defined by WININET.H. See the Remarks section for a list of these Internet services. If the handle is NULL or not recognized, the function returns AFX_INET_SERVICE_UNK.  
+   
+### Remarks  
+ The following list includes possible Internet types returned by `AfxGetInternetHandleType`.  
+  
+-   INTERNET_HANDLE_TYPE_INTERNET  
+  
+-   INTERNET_HANDLE_TYPE_CONNECT_FTP  
+  
+-   INTERNET_HANDLE_TYPE_CONNECT_GOPHER  
+  
+-   INTERNET_HANDLE_TYPE_CONNECT_HTTP  
+  
+-   INTERNET_HANDLE_TYPE_FTP_FIND  
+  
+-   INTERNET_HANDLE_TYPE_FTP_FIND_HTML  
+  
+-   INTERNET_HANDLE_TYPE_FTP_FILE  
+  
+-   INTERNET_HANDLE_TYPE_FTP_FILE_HTML  
+  
+-   INTERNET_HANDLE_TYPE_GOPHER_FIND  
+  
+-   INTERNET_HANDLE_TYPE_GOPHER_FIND_HTML  
+  
+-   INTERNET_HANDLE_TYPE_GOPHER_FILE  
+  
+-   INTERNET_HANDLE_TYPE_GOPHER_FILE_HTML  
+  
+-   INTERNET_HANDLE_TYPE_HTTP_REQUEST  
+  
+> [!NOTE]
+>  In order to call this function, your project must include AFXINET.H.  
+   
+### Requirements  
+ **Header:** afxinet.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
+ 
+## <a name="afxthrowinternetexception"></a>  AfxThrowInternetException
+Throws an Internet exception.  
+   
+### Syntax    
+```
+   void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );  
+```
+### Parameters  
+ `dwContext`  
+ The context identifier for the operation that caused the error. The default value of `dwContext` is specified originally in [CInternetSession](cinternetsession-class.md) and is passed to [CInternetConnection](cinternetconnection-class.md)- and [CInternetFile](cinternetfile-class.md)-derived classes. For specific operations performed on a connection or a file, you usually override the default with a `dwContext` of your own. This value then is returned to [CInternetSession::OnStatusCallback](cinternetsession-class.md#onstatuscallback) to identify the specific operation's status. 
+  
+ `dwError`  
+ The error that caused the exception.  
+   
+### Remarks  
+ You are responsible for determining the cause based on the operating-system error code.  
+  
+> [!NOTE]
+>  To call this function, your project must include AFXINET.H.  
+   
+### Requirements  
+ **Header:** afxinet.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [CInternetException Class](cinternetexception-class.md)   
+ [THROW](#throw)
+ 
+

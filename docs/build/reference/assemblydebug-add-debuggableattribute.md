@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.AssemblyDebug"
-  - "/ASSEMBLYDEBUG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/ASSEMBLYDEBUG linker option"
-  - "-ASSEMBLYDEBUG linker option"
-  - "ASSEMBLYDEBUG linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.AssemblyDebug", "/ASSEMBLYDEBUG"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/ASSEMBLYDEBUG linker option", "-ASSEMBLYDEBUG linker option", "ASSEMBLYDEBUG linker option"]
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYDEBUG (Add DebuggableAttribute)
 ```  
@@ -63,7 +43,7 @@ translation.priority.ht:
 ```  
   
 ## Remarks  
- In Visual C++ .NET 2003 and later, it is necessary to explicitly specify that a managed image be debuggable. Using [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) alone is not sufficient.  
+ It is necessary to explicitly specify that a managed image be debuggable. Using [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) alone is not sufficient.  
   
  Other linker options that affect assembly generation are:  
   

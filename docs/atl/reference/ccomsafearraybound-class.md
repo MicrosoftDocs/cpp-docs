@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CComSafeArrayBound"
-  - "ATL::CComSafeArrayBound"
-  - "CComSafeArrayBound"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComSafeArrayBound class"
+f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComSafeArrayBound class"]
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CComSafeArrayBound Class
 This class is a wrapper for a [SAFEARRAYBOUND](http://msdn.microsoft.com/en-us/303a9bdb-71d6-4f14-8747-84cf84936c6d) structure.  

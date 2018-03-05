@@ -4,41 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/qifist"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "QIfist compiler option [C++]"
-  - "-QIfist compiler option [C++]"
-  - "/QIfist compiler option [C++]"
+f1_keywords: ["/qifist"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["QIfist compiler option [C++]", "-QIfist compiler option [C++]", "/QIfist compiler option [C++]"]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # /QIfist (Suppress _ftol)
-Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required.  
+Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required.  
   
 ## Syntax  
   
@@ -68,7 +48,7 @@ Suppresses the call of the helper function `_ftol` when a conversion from a floa
 > [!NOTE]
 >  **/QIfist** is not in effect by default because the rounding bits also affect floating point to floating point rounding (which occurs after every calculation), so when you set the flags for C-style (toward zero) rounding, your floating point calculations might be different. **/QIfist** should not be used if your code depends upon the expected behavior of truncating the fractional portion of the floating-point number. If you are unsure, do not use **/QIfist**.  
   
- **/QIfist** is deprecated. The compiler has made significant improvements in float to int conversion speed. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/QIfist** option is deprecated starting in Visual Studio 2005. The compiler has made significant improvements in float to int conversion speed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

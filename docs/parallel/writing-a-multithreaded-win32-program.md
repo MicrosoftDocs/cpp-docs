@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "thread stacks [C++]"
-  - "resources [C++], multithreading"
-  - "stacks [C++]"
-  - "shared resources [C++]"
-  - "threading [C++], sharing common resources"
-  - "multithreading [C++], thread stacks"
-  - "multithreading [C++], sharing common resources"
-  - "mutual exclusion [C++]"
-  - "communications [C++], between threads"
-  - "mutex [C++]"
-  - "threading [C++], thread stacks"
+dev_langs: ["C++"]
+helpviewer_keywords: ["thread stacks [C++]", "resources [C++], multithreading", "stacks [C++]", "shared resources [C++]", "threading [C++], sharing common resources", "multithreading [C++], thread stacks", "multithreading [C++], sharing common resources", "mutual exclusion [C++]", "communications [C++], between threads", "mutex [C++]", "threading [C++], thread stacks"]
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Writing a Multithreaded Win32 Program
 When you write a program with multiple threads, you must coordinate their behavior and [use of the program's resources](#_core_sharing_common_resources_between_threads). You must also make sure that each thread receives [its own stack](#_core_thread_stacks).  

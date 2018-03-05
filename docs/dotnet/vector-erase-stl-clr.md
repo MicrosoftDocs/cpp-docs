@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::erase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "erase member [STL/CLR]"
+f1_keywords: ["cliext::vector::erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 624905eb-83c0-499b-a07a-c10aebd7acc3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::erase (STL/CLR)
 Removes elements at specified positions.  
@@ -57,7 +40,7 @@ iterator erase(iterator first, iterator last);
 ## Remarks  
  The first member function removes the element of the controlled sequence pointed to by `where`. You use it to remove a single element.  
   
- The second member function removes the elements of the controlled sequence in the range `[``first``,` `last``)`. You use it to remove zero or more contiguous elements.  
+ The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.  
   
  Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`()` if no such element exists.  
   

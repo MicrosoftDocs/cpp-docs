@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleVariant"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Automation, parameter types"
-  - "COleVariant class"
-  - "VARIANT data type"
+f1_keywords: ["COleVariant", "AFXDISP/COleVariant", "AFXDISP/COleVariant::COleVariant", "AFXDISP/COleVariant::Attach", "AFXDISP/COleVariant::ChangeType", "AFXDISP/COleVariant::Clear", "AFXDISP/COleVariant::Detach", "AFXDISP/COleVariant::GetByteArrayFromVariantArray", "AFXDISP/COleVariant::SetString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleVariant [MFC], COleVariant", "COleVariant [MFC], Attach", "COleVariant [MFC], ChangeType", "COleVariant [MFC], Clear", "COleVariant [MFC], Detach", "COleVariant [MFC], GetByteArrayFromVariantArray", "COleVariant [MFC], SetString"]
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleVariant Class
 Encapsulates the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) data type.  
@@ -82,7 +63,7 @@ class COleVariant : public tagVARIANT
   
  The two related MFC classes [COleCurrency](../../mfc/reference/colecurrency-class.md) and [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) encapsulate the variant data types **CURRENCY** ( `VT_CY`) and **DATE** ( `VT_DATE`). The `COleVariant` class is used extensively in the DAO classes; see these classes for typical usage of this class, for example [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b), and [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [CURRENCY](http://msdn.microsoft.com/en-us/5e81273c-7289-45c7-93c0-32c1553f708e), [DISPPARAMS](http://msdn.microsoft.com/en-us/a16e5a21-766e-4287-b039-13429aa78f8b), and [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) entries in the Windows SDK.  
   
  For more information on the `COleVariant` class and its use in OLE automation, see "Passing Parameters in OLE Automation" in the article [Automation](../../mfc/automation.md).  
   
@@ -108,7 +89,7 @@ void Attach(VARIANT& varSrc);
 ### Remarks  
  This function sets the [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) of *varSrc* to `VT_EMPTY`.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the Windows SDK.  
   
 ##  <a name="colevariant"></a>  COleVariant::COleVariant  
  Constructs a `COleVariant` object.  
@@ -206,7 +187,7 @@ COleVariant(LPCITEMIDLIST pidl);
   
 - **COleVariant(** `lbSrc` **)** Copies a `CLongBinary` object into the new object, `VT_EMPTY`.  
   
- For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on `SCODE`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ##  <a name="changetype"></a>  COleVariant::ChangeType  
  Converts the type of variant value in this `COleVariant` object.  
@@ -223,7 +204,7 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
  A pointer to the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) object to be converted. If this value is **NULL**, this `COleVariant` object is used as the source for the conversion.  
   
 ### Remarks  
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantChangeType](http://msdn.microsoft.com/en-us/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantChangeType](http://msdn.microsoft.com/en-us/48a51e32-95d7-4eeb-8106-f5043ffa2fd1) entries in the Windows SDK.  
   
 ##  <a name="clear"></a>  COleVariant::Clear  
  Clears the **VARIANT**.  
@@ -235,7 +216,7 @@ void Clear();
 ### Remarks  
  This sets the **VARTYPE** for this object to `VT_EMPTY`. The `COleVariant` destructor calls this function.  
   
- For more information, see the `VARIANT`, `VARTYPE`, and `VariantClear` entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the `VARIANT`, `VARTYPE`, and `VariantClear` entries in the Windows SDK.  
   
 ##  <a name="detach"></a>  COleVariant::Detach  
  Detaches the underlying [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) object from this `COleVariant` object.  
@@ -250,7 +231,7 @@ VARIANT Detach();
 > [!NOTE]
 >  After calling **Detach**, it is the caller's responsibility to call **VariantClear** on the resulting **VARIANT** structure.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118), [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4), and [VariantClear](http://msdn.microsoft.com/en-us/28741d81-8404-4f85-95d3-5c209ec13835) entries in the Windows SDK.  
   
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray  
  Retrieves a byte array from an existing variant array  
@@ -331,7 +312,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
   
 - **operator =(** `lbSrc` **)** Copies a [CLongBinary](../../mfc/reference/clongbinary-class.md) object into this `COleVariant` object.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) and [VARTYPE](http://msdn.microsoft.com/en-us/317b911b-1805-402d-a9cb-159546bc88b4) entries in the Windows SDK.  
   
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator ==  
  This operator compares two variant values and returns nonzero if they are equal; otherwise 0.  

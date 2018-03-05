@@ -4,95 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_strlwr_s_l"
-  - "_mbslwr_s_l"
-  - "_mbslwr_s"
-  - "_wcslwr_s"
-  - "_strlwr_s"
-  - "_wcslwr_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_strlwr_s_l", "_mbslwr_s_l", "_mbslwr_s", "_wcslwr_s", "_strlwr_s", "_wcslwr_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strlwr_s_l"
-  - "_strlwr_s"
-  - "mbslwr_s_l"
-  - "strlwr_s_l"
-  - "_wcslwr_s"
-  - "strlwr_s"
-  - "mbslwr_s"
-  - "_wcslwr_s_l"
-  - "wcslwr_s_l"
-  - "_tcslwr_s"
-  - "_tcslwr_s_l"
-  - "_mbslwr_s_l"
-  - "wcslwr_s"
-  - "_mbslwr_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tcslwr_s function"
-  - "wcslwr_s function"
-  - "_mbslwr_s function"
-  - "_wcslwr_s function"
-  - "strlwr_s_l function"
-  - "mbslwr_s_l function"
-  - "_strlwr_s function"
-  - "string conversion [C++], case"
-  - "strlwr_s function"
-  - "wcslwr_s_l function"
-  - "_tcslwr_s_l function"
-  - "mbslwr_s function"
-  - "strings [C++], case"
-  - "_wcslwr_s_l function"
-  - "converting case, CRT functions"
-  - "_strlwr_s_l function"
-  - "_mbslwr_s_l function"
-  - "case, converting"
-  - "tcslwr_s function"
-  - "tcslwr_s_l function"
-  - "strings [C++], converting case"
+f1_keywords: ["_strlwr_s_l", "_strlwr_s", "mbslwr_s_l", "strlwr_s_l", "_wcslwr_s", "strlwr_s", "mbslwr_s", "_wcslwr_s_l", "wcslwr_s_l", "_tcslwr_s", "_tcslwr_s_l", "_mbslwr_s_l", "wcslwr_s", "_mbslwr_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tcslwr_s function", "wcslwr_s function", "_mbslwr_s function", "_wcslwr_s function", "strlwr_s_l function", "mbslwr_s_l function", "_strlwr_s function", "string conversion [C++], case", "strlwr_s function", "wcslwr_s_l function", "_tcslwr_s_l function", "mbslwr_s function", "strings [C++], case", "_wcslwr_s_l function", "converting case, CRT functions", "_strlwr_s_l function", "_mbslwr_s_l function", "case, converting", "tcslwr_s function", "tcslwr_s_l function", "strings [C++], converting case"]
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79
 caps.latest.revision: 42
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 Converts a string to lowercase, by using the current locale or a locale object that's passed in. These versions of [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  `_mbslwr_s` and `_mbslwr_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbslwr_s` and `_mbslwr_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -231,9 +163,6 @@ Mixed: The String to End All Strings!
 Lower: the string to end all strings!  
 Upper: THE STRING TO END ALL STRINGS!  
 ```  
-  
-## .NET Framework Equivalent  
- [System::String::ToLower](https://msdn.microsoft.com/en-us/library/system.string.tolower.aspx)  
   
 ## See Also  
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   

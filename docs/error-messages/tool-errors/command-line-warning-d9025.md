@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "D9025"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "D9025"
+f1_keywords: ["D9025"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["D9025"]
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9025
 overriding 'option1' with 'option2'  

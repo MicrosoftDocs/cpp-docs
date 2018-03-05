@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Classic COM Component Using WRL
-You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create basic classic COM components for use in desktop apps, in addition to using it for [!INCLUDE[win8_appstore_long](../build/reference/includes/win8_appstore_long_md.md)] apps. For the creation of COM components, the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] may require less code than the ATL. For information about the subset of COM that the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+You can use the Windows Runtime C++ Template Library (WRL) to create basic classic COM components for use in desktop apps, in addition to using it for Universal Windows Platform (UWP) apps. For the creation of COM components, the Windows Runtime C++ Template Library may require less code than the ATL. For information about the subset of COM that the Windows Runtime C++ Template Library supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
- This document shows how to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to create a basic COM component. Although you can use the deployment mechanism that best fits your needs, this document also shows a basic way to register and consume the COM component from a desktop app.  
+ This document shows how to use the Windows Runtime C++ Template Library to create a basic COM component. Although you can use the deployment mechanism that best fits your needs, this document also shows a basic way to register and consume the COM component from a desktop app.  
   
-### To use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to create a basic classic COM component  
+### To use the Windows Runtime C++ Template Library to create a basic classic COM component  
   
 1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, `WRLClassicCOM`.  
   
@@ -47,7 +32,7 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
   
      [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]  
   
-5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to [!INCLUDE[win8_appstore_short](../windows/includes/win8_appstore_short_md.md)] app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
+5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
   
      [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]  
   
@@ -102,7 +87,7 @@ You can use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[
      [!code-cpp[wrl-classic-com-component#6](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_6.cpp)]  
   
 ## Robust Programming  
- This document uses standard COM functions to demonstrate that you can use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to author a COM component and make it available to any COM-enabled technology. You can also use [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] types such as [Microsoft::WRL::ComPtr](../windows/comptr-class.md) in your desktop app to manage the lifetime of COM and other objects. The following code uses the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to manage the lifetime of the `ICalculatorComponent` pointer. The `CoInitializeWrapper` class is an RAII wrapper that guarantees that the COM library is freed and also guarantees that the lifetime of the COM library outlives the `ComPtr` smart pointer object.  
+ This document uses standard COM functions to demonstrate that you can use the Windows Runtime C++ Template Library to author a COM component and make it available to any COM-enabled technology. You can also use Windows Runtime C++ Template Library types such as [Microsoft::WRL::ComPtr](../windows/comptr-class.md) in your desktop app to manage the lifetime of COM and other objects. The following code uses the Windows Runtime C++ Template Library to manage the lifetime of the `ICalculatorComponent` pointer. The `CoInitializeWrapper` class is an RAII wrapper that guarantees that the COM library is freed and also guarantees that the lifetime of the COM library outlives the `ComPtr` smart pointer object.  
   
  [!code-cpp[wrl-classic-com-component#7](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_7.cpp)]  
   

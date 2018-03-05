@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "condition_variable/std::condition_variable_any"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["condition_variable/std::condition_variable_any", "condition_variable/std::condition_variable_any::condition_variable_any", "condition_variable/std::condition_variable_any::notify_all", "condition_variable/std::condition_variable_any::notify_one", "condition_variable/std::condition_variable_any::wait", "condition_variable/std::condition_variable_any::wait_for", "condition_variable/std::condition_variable_any::wait_until"]
+dev_langs: ["C++"]
 ms.assetid: d8afe5db-1561-4ec2-8e85-21ea03ee4321
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+helpviewer_keywords: ["std::condition_variable_any", "std::condition_variable_any::condition_variable_any", "std::condition_variable_any::notify_all", "std::condition_variable_any::notify_one", "std::condition_variable_any::wait", "std::condition_variable_any::wait_for", "std::condition_variable_any::wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # condition_variable_any Class
 Use the class `condition_variable_any` to wait for an event that has any `mutex` type.  
@@ -47,24 +32,24 @@ class condition_variable_any;
   
 |Name|Description|  
 |----------|-----------------|  
-|[condition_variable_any::condition_variable_any Constructor](#condition_variable_any__condition_variable_any_constructor)|Constructs a `condition_variable_any` object.|  
+|[condition_variable_any](#condition_variable_any)|Constructs a `condition_variable_any` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[condition_variable_any::notify_all](#condition_variable_any__notify_all_method)|Unblocks all threads that are waiting for the `condition_variable_any` object.|  
-|[condition_variable_any::notify_one](#condition_variable_any__notify_one_method)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|  
-|[condition_variable_any::wait](#condition_variable_any__wait_method)|Blocks a thread.|  
-|[condition_variable_any::wait_for](#condition_variable_any__wait_for_method)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
-|[condition_variable_any::wait_until](#condition_variable_any__wait_until_method)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
+|[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable_any` object.|  
+|[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|  
+|[wait](#wait)|Blocks a thread.|  
+|[wait_for](#wait_for)|Blocks a thread, and sets a time interval after which the thread unblocks.|  
+|[wait_until](#wait_until)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|  
   
 ## Requirements  
- **Header:** condition_variable  
+ **Header:** \<condition_variable>  
   
  **Namespace:** std  
   
-##  <a name="condition_variable_any__condition_variable_any_constructor"></a>  condition_variable_any::condition_variable_any Constructor  
+##  <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Constructor  
  Constructs a `condition_variable_any` object.  
   
 ```
@@ -74,21 +59,21 @@ condition_variable_any();
 ### Remarks  
  If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.  
   
-##  <a name="condition_variable_any__notify_all_method"></a>  condition_variable_any::notify_all  
+##  <a name="notify_all"></a>  condition_variable_any::notify_all  
  Unblocks all threads that are waiting for the `condition_variable_any` object.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="condition_variable_any__notify_one_method"></a>  condition_variable_any::notify_one  
+##  <a name="notify_one"></a>  condition_variable_any::notify_one  
  Unblocks one of the threads that are waiting on the `condition_variable_any` object.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="condition_variable_any__wait_method"></a>  condition_variable_any::wait  
+##  <a name="wait"></a>  condition_variable_any::wait  
  Blocks a thread.  
   
 ```
@@ -107,7 +92,7 @@ void wait(Lock& Lck, Predicate Pred);
  Any expression that returns `true` or `false`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#condition_variable__notify_one_method) or [notify_all](../standard-library/condition-variable-class.md#condition_variable__notify_all_method). It can also wake up spuriously.  
+ The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all). It can also wake up spuriously.  
   
  The second method in effect executes the following code.  
   
@@ -116,7 +101,7 @@ while (!Pred())
     wait(Lck);
 ```    
   
-##  <a name="condition_variable_any__wait_for_method"></a>  condition_variable_any::wait_for  
+##  <a name="wait_for"></a>  condition_variable_any::wait_for  
  Blocks a thread, and sets a time interval after which the thread unblocks.  
   
 ```
@@ -143,7 +128,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
  The second method returns the value of `Pred`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#condition_variable__notify_one_method) or [notify_all](../standard-library/condition-variable-class.md#condition_variable__notify_all_method), or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.  
+ The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.  
   
  The second method in effect executes the following code.  
   
@@ -155,7 +140,7 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="condition_variable_any__wait_until_method"></a>  condition_variable_any::wait_until  
+##  <a name="wait_until"></a>  condition_variable_any::wait_until  
  Blocks a thread, and sets a maximum point in time at which the thread unblocks.  
   
 ```
@@ -194,7 +179,7 @@ void wait_until(
  Methods that return a `bool` return the value of `Pred`.  
   
 ### Remarks  
- The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#condition_variable__notify_one_method) or [notify_all](../standard-library/condition-variable-class.md#condition_variable__notify_all_method), or until `Abs_time`. It can also wake up spuriously.  
+ The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until `Abs_time`. It can also wake up spuriously.  
   
  The second method in effect executes the following code.  
   

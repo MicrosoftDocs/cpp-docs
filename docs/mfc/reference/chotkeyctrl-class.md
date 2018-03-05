@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHotKeyCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hot key controls"
-  - "CHotKeyCtrl class"
-  - "Windows common controls [C++], CHotKeyCtrl"
+f1_keywords: ["CHotKeyCtrl", "AFXCMN/CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::Create", "AFXCMN/CHotKeyCtrl::CreateEx", "AFXCMN/CHotKeyCtrl::GetHotKey", "AFXCMN/CHotKeyCtrl::GetHotKeyName", "AFXCMN/CHotKeyCtrl::GetKeyName", "AFXCMN/CHotKeyCtrl::SetHotKey", "AFXCMN/CHotKeyCtrl::SetRules"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHotKeyCtrl [MFC], CHotKeyCtrl", "CHotKeyCtrl [MFC], Create", "CHotKeyCtrl [MFC], CreateEx", "CHotKeyCtrl [MFC], GetHotKey", "CHotKeyCtrl [MFC], GetHotKeyName", "CHotKeyCtrl [MFC], GetKeyName", "CHotKeyCtrl [MFC], SetHotKey", "CHotKeyCtrl [MFC], SetRules"]
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CHotKeyCtrl Class
 Provides the functionality of the Windows common hot key control.  
@@ -108,7 +89,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK for more information.  
   
  `rect`  
  Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).  
@@ -141,10 +122,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  

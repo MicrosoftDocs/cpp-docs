@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memory leaks, frame allocation"
-  - "memory, detecting leaks"
-  - "memory, reclaiming"
-  - "memory allocation, frames"
-  - "frame variables, automatic deletion of"
-  - "scope, frame variables"
-  - "heap allocation, vs. frame allocation"
-  - "variables, frame variables"
-  - "memory leaks, detecting"
-  - "memory, releasing"
-  - "stack frames"
-  - "memory leaks, allocating objects on the frame"
-  - "detecting memory leaks"
-  - "frame allocation"
-  - "frame variables"
+dev_langs: ["C++"]
+helpviewer_keywords: ["memory leaks [MFC], frame allocation", "memory [MFC], detecting leaks", "memory [MFC], reclaiming", "memory allocation [MFC], frames", "frame variables [MFC], automatic deletion of", "scope [MFC], frame variables", "heap allocation [MFC], vs. frame allocation", "variables [MFC], frame variables", "memory leaks [MFC], detecting", "memory, releasing [MFC]", "stack frames [MFC]", "memory leaks [MFC], allocating objects on the frame", "detecting memory leaks [MFC]", "frame allocation [MFC]", "frame variables [MFC]"]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Memory Management: Frame Allocation
 Allocation on the frame takes its name from the "stack frame" that is set up whenever a function is called. The stack frame is an area of memory that temporarily holds the arguments to the function as well as any variables that are defined local to the function. Frame variables are often called "automatic" variables because the compiler automatically allocates the space for them.  

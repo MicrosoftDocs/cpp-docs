@@ -4,47 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr100.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
+apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "file names [C++], searching for"
-  - "_find function"
-  - "wfind function"
-  - "find function"
-  - "_wfind function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Filename Search Functions
 These functions search for and close searches for specified file names:  
@@ -58,16 +30,16 @@ These functions search for and close searches for specified file names:
 ## Remarks  
  The `_findfirst` function provides information about the first instance of a file name that matches the file specified in the `filespec` argument. You can use in `filespec` any combination of wildcard characters that is supported by the host operating system.  
   
- The functions return file information in a _`finddata_t` structure, which is defined in IO.h. Various functions in the family use many variations on the `_finddata_t` structure. The basic `_finddata_t` structure includes the following elements:  
+ The functions return file information in a `_finddata_t` structure, which is defined in IO.h. Various functions in the family use many variations on the `_finddata_t` structure. The basic `_finddata_t` structure includes the following elements:  
   
  `unsigned attrib`  
  File attribute.  
   
  `time_t time_create`  
- Time of file creation (–1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use [localtime_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
+ Time of file creation (-1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use [localtime_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
   
  `time_t time_access`  
- Time of the last file access (–1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
+ Time of the last file access (-1L for FAT file systems). This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
   
  `time_t time_write`  
  Time of the last write to file. This time is stored in UTC format. To convert to the local time, use `localtime_s`.  
@@ -78,7 +50,7 @@ These functions search for and close searches for specified file names:
  `char name`[ `_MAX_PATH`]  
  Null-terminated name of matched file or directory, without the path.  
   
- In file systems that do not support the creation and last access times of a file, such as the FAT system, the `time_create` and `time_access` fields are always –1L.  
+ In file systems that do not support the creation and last access times of a file, such as the FAT system, the `time_create` and `time_access` fields are always -1L.  
   
  `_MAX_PATH` is defined in Stdlib.h as 260 bytes.  
   
@@ -110,7 +82,7 @@ These functions search for and close searches for specified file names:
   
  `_findfirst` and `_findnext` use the 64-bit time type. If you must use the old 32-bit time type, you can define `_USE_32BIT_TIME_T`. The versions of these functions that have the `32` suffix in their names use the 32-bit time type, and those with the `64` suffix use the 64-bit time type.  
   
- Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindnext32i64` also behave identically to the 32-bit time type versions of these functions except they use and return 64-bit file lengths. Functions `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, and `_wfindnext64i32`use the 64-bit time type but use 32-bit file lengths. These functions use appropriate variations of the `_finddata_t` type in which the fields have different types for the time and the file size.  
+ Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindnext32i64` also behave identically to the 32-bit time type versions of these functions except they use and return 64-bit file lengths. Functions `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, and `_wfindnext64i32` use the 64-bit time type but use 32-bit file lengths. These functions use appropriate variations of the `_finddata_t` type in which the fields have different types for the time and the file size.  
   
  `_finddata_t` is actually a macro that evaluates to `_finddata64i32_t` (or `_finddata32_t` if `_USE_32BIT_TIME_T` is defined). The following table summarizes the variations on `_finddata_t`:  
   

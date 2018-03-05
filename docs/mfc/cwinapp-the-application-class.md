@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CWinApp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application class"
-  - "CWinApp class, CWinThread"
-  - "MFC [C++], WinMain and"
-  - "CWinApp class, multithreading"
-  - "CWinThread class, and CWinApp"
-  - "InitApplication method"
-  - "WinMain method"
-  - "WinMain method, in MFC"
-  - "CWinApp class, WinMain"
+f1_keywords: ["CWinApp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application class [MFC]", "CWinApp class [MFC], CWinThread", "MFC, WinMain and", "CWinApp class [MFC], multithreading", "CWinThread class [MFC], and CWinApp", "InitApplication method [MFC]", "WinMain method [MFC]", "WinMain method [MFC], in MFC", "CWinApp class [MFC], WinMain"]
 ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CWinApp: The Application Class
 The main application class in MFC encapsulates the initialization, running, and termination of an application for the Windows operating system. An application built on the framework must have one and only one object of a class derived from [CWinApp](../mfc/reference/cwinapp-class.md). This object is constructed before windows are created.  

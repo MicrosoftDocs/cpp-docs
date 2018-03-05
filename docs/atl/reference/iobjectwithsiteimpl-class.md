@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::IObjectWithSiteImpl"
-  - "ATL.IObjectWithSiteImpl<T>"
-  - "IObjectWithSiteImpl"
-  - "ATL.IObjectWithSiteImpl"
-  - "ATL::IObjectWithSiteImpl<T>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IObjectWithSiteImpl class"
+f1_keywords: ["IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl::GetSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetSite", "ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IObjectWithSiteImpl class"]
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IObjectWithSiteImpl Class
 This class provides methods allowing an object to communicate with its site.  
@@ -96,7 +75,7 @@ STDMETHOD(GetSite)(
 ### Remarks  
  If the site supports this interface, the pointer is returned via `ppvSite`. Otherwise, `ppvSite` is set to **NULL**.  
   
- See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the Windows SDK.  
   
 ##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
  Manages the site's **IUnknown** pointer.  
@@ -130,7 +109,7 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 ```  
   
 ### Remarks  
- See [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

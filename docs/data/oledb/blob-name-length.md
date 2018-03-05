@@ -4,53 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BLOB_NAME_LENGTH"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BLOB_NAME_LENGTH macro"
+ms.topic: "reference"
+f1_keywords: ["BLOB_NAME_LENGTH"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BLOB_NAME_LENGTH macro"]
 ms.assetid: 38150260-a127-486d-a7ab-0d01b731b6fd
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME_LENGTH
 Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the length in bytes of the BLOB data column.  
   
 ## Syntax  
   
-```  
-  
-BLOB_NAME_LENGTH(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-length )  
+```cpp
+BLOB_NAME_LENGTH(pszName, IID, flags, data, length )  
 ```  
   
 #### Parameters  

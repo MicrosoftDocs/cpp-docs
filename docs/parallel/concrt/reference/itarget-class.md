@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::ITarget"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ITarget class"
+ms.topic: "reference"
+f1_keywords: ["ITarget", "AGENTS/concurrency::ITarget", "AGENTS/concurrency::ITarget::propagate", "AGENTS/concurrency::ITarget::send", "AGENTS/concurrency::ITarget::supports_anonymous_source", "AGENTS/concurrency::ITarget::link_source", "AGENTS/concurrency::ITarget::unlink_source", "AGENTS/concurrency::ITarget::unlink_sources"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ITarget class"]
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ITarget Class
 The `ITarget` class is the interface for all target blocks. Target blocks consume messages offered to them by `ISource` blocks.  
@@ -67,17 +50,17 @@ class ITarget;
   
 |Name|Description|  
 |----------|-----------------|  
-|[propagate Method](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
-|[send Method](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
-|[supports_anonymous_source Method](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
+|[propagate](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|  
+|[send](#send)|When overridden in a derived class, synchronously passes a message to the target block.|  
+|[supports_anonymous_source](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns `true`, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[link_source Method](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
-|[unlink_source Method](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
-|[unlink_sources Method](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
+|[link_source](#link_source)|When overridden in a derived class, links a specified source block to this `ITarget` block.|  
+|[unlink_source](#unlink_source)|When overridden in a derived class, unlinks a specified source block from this `ITarget` block.|  
+|[unlink_sources](#unlink_sources)|When overridden in a derived class, unlinks all source blocks from this `ITarget` block.|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  

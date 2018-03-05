@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/Zc:implicitNoexcept"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Zc:implicitNoexcept"
-  - "Zc:implicitNoexcept"
-  - "-Zc:implicitNoexcept"
+f1_keywords: ["/Zc:implicitNoexcept"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Zc:implicitNoexcept", "Zc:implicitNoexcept", "-Zc:implicitNoexcept"]
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:implicitNoexcept (Implicit Exception Specifiers)
 When the **/Zc:implicitNoexcept** option is specified, the compiler adds an implicit [noexcept](../../cpp/noexcept-cpp.md) exception specifier to compiler-defined special member functions and to user-defined destructors and deallocators. By default, **/Zc:implicitNoexcept** is enabled to conform to the ISO C++11 standard. Turning this option off disables implicit `noexcept` on user-defined destructors and dealloacators and compiler-defined special member functions.  

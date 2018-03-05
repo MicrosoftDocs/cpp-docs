@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "def files [C++], exporting from DLLs"
-  - ".def files [C++], exporting from DLLs"
-  - "exporting DLLs [C++], DEF files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs", "exporting DLLs [C++], DEF files"]
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Exporting from a DLL Using DEF Files
 A module-definition (.def) file is a text file containing one or more module statements that describe various attributes of a DLL. If you are not using the **__declspec(dllexport)** keyword to export the DLL's functions, the DLL requires a .def file.  
@@ -68,7 +50,7 @@ EXPORTS
 #define AFX_DATA  
 ```  
   
- These lines ensure that MFC variables that are used internally or that are added to your classes are exported (or imported) from your extension DLL. For example, when deriving a class using `DECLARE_DYNAMIC`, the macro expands to add a `CRuntimeClass` member variable to your class. Leaving out these four lines might cause your DLL to compile or link incorrectly or cause an error when the client application links to the DLL.  
+ These lines ensure that MFC variables that are used internally or that are added to your classes are exported (or imported) from your MFC extension DLL. For example, when deriving a class using `DECLARE_DYNAMIC`, the macro expands to add a `CRuntimeClass` member variable to your class. Leaving out these four lines might cause your DLL to compile or link incorrectly or cause an error when the client application links to the DLL.  
   
  When building the DLL, the linker uses the .def file to create an export (.exp) file and an import library (.lib) file. The linker then uses the export file to build the DLL file. Executables that implicitly link to the DLL link to the import library when they are built.  
   
@@ -88,7 +70,7 @@ EXPORTS
   
 -   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   

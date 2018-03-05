@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::assign"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "assign member [STL/CLR]"
+f1_keywords: ["cliext::vector::assign"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["assign member [STL/CLR]"]
 ms.assetid: 945e2048-6c61-4701-b13c-8241cbee3fa1
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::assign (STL/CLR)
 Replaces all elements.  
@@ -65,7 +48,7 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 ## Remarks  
  The first member function replaces the controlled sequence with a repetition of `count` elements of value `val`. You use it to fill the container with elements all having the same value.  
   
- If `InIt` is an integer type, the second member function behaves the same as `assign((size_type)``first``, (value_type)``last``)`. Otherwise, it replaces the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy another sequence.  
+ If `InIt` is an integer type, the second member function behaves the same as `assign((size_type)first, (value_type)last)`. Otherwise, it replaces the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy another sequence.  
   
  The third member function replaces the controlled sequence with the sequence designated by the enumerator `right`. You use it to make the controlled sequence a copy of a sequence described by an enumerator.  
   

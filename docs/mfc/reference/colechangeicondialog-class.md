@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleChangeIconDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE dialog boxes, Change Icon"
-  - "OLE Change Icon dialog box"
-  - "dialog boxes, OLE"
-  - "COleChangeIconDialog class"
-  - "Change Icon dialog box"
+f1_keywords: ["COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::DoChangeIcon", "AFXODLGS/COleChangeIconDialog::DoModal", "AFXODLGS/COleChangeIconDialog::GetIconicMetafile", "AFXODLGS/COleChangeIconDialog::m_ci"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleChangeIconDialog [MFC], COleChangeIconDialog", "COleChangeIconDialog [MFC], DoChangeIcon", "COleChangeIconDialog [MFC], DoModal", "COleChangeIconDialog [MFC], GetIconicMetafile", "COleChangeIconDialog [MFC], m_ci"]
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COleChangeIconDialog Class
 Used for the OLE Change Icon dialog box.  
@@ -72,7 +51,7 @@ class COleChangeIconDialog : public COleDialog
 ## Remarks  
  Create an object of class `COleChangeIconDialog` when you want to call this dialog box. After a `COleChangeIconDialog` object has been constructed, you can use the [m_ci](#m_ci) structure to initialize the values or states of controls in the dialog box. The `m_ci` structure is of type **OLEUICHANGEICON**. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
   
  For more information about OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -127,7 +106,7 @@ explicit COleChangeIconDialog(
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
   
 ##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon  
  Call this function to change the icon representing the item to the one selected in the dialog box after [DoModal](#domodal) returns **IDOK**.  
@@ -157,7 +136,7 @@ virtual INT_PTR DoModal();
   
 - **IDCANCEL** if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+- **IDABORT** if an error occurred. If **IDABORT** is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_ci](#m_ci) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -184,7 +163,7 @@ OLEUICHANGEICON m_ci;
 ### Remarks  
  Members of this structure can be modified either directly or through member functions.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

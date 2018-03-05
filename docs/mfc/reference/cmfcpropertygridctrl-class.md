@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCPropertyGridCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridCtrl::get_accValue method"
-  - "CMFCPropertyGridCtrl::accHitTest method"
-  - "CMFCPropertyGridCtrl::get_accState method"
-  - "CMFCPropertyGridCtrl::accLocation method"
-  - "CMFCPropertyGridCtrl::get_accChild method"
-  - "CMFCPropertyGridCtrl::get_accName method"
-  - "CMFCPropertyGridCtrl::PreTranslateMessage method"
-  - "CMFCPropertyGridCtrl::get_accRole method"
-  - "CMFCPropertyGridCtrl::get_accDefaultAction method"
-  - "CMFCPropertyGridCtrl class"
-  - "CMFCPropertyGridCtrl::get_accDescription method"
+f1_keywords: ["CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::accSelect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AddProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CloseColorPopup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Create", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DeleteProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DrawControlBarColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnsureVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ExpandAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::FindItemByData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accChildCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelp", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelpTopic", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accKeyboardShortcut", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBkColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBoldFont", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetLeftColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetListRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetRowHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetScrollBarCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetTextColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::InitHeader", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsMarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::MarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::RemoveAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ResetOriginalValues", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetBoolLabels", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetListDelimiter", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::UpdateColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AdjustLayout", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CompareProps", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EndEditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnChangeSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawBorder", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawList", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnPropertyChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ValidateItemData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridCtrl [MFC], CMFCPropertyGridCtrl", "CMFCPropertyGridCtrl [MFC], accSelect", "CMFCPropertyGridCtrl [MFC], AddProperty", "CMFCPropertyGridCtrl [MFC], AlwaysShowUserToolTip", "CMFCPropertyGridCtrl [MFC], CloseColorPopup", "CMFCPropertyGridCtrl [MFC], Create", "CMFCPropertyGridCtrl [MFC], DeleteProperty", "CMFCPropertyGridCtrl [MFC], DrawControlBarColors", "CMFCPropertyGridCtrl [MFC], EnableDescriptionArea", "CMFCPropertyGridCtrl [MFC], EnableHeaderCtrl", "CMFCPropertyGridCtrl [MFC], EnsureVisible", "CMFCPropertyGridCtrl [MFC], ExpandAll", "CMFCPropertyGridCtrl [MFC], FindItemByData", "CMFCPropertyGridCtrl [MFC], get_accChildCount", "CMFCPropertyGridCtrl [MFC], get_accFocus", "CMFCPropertyGridCtrl [MFC], get_accHelp", "CMFCPropertyGridCtrl [MFC], get_accHelpTopic", "CMFCPropertyGridCtrl [MFC], get_accKeyboardShortcut", "CMFCPropertyGridCtrl [MFC], get_accSelection", "CMFCPropertyGridCtrl [MFC], GetBkColor", "CMFCPropertyGridCtrl [MFC], GetBoldFont", "CMFCPropertyGridCtrl [MFC], GetCurSel", "CMFCPropertyGridCtrl [MFC], GetCustomColors", "CMFCPropertyGridCtrl [MFC], GetDescriptionHeight", "CMFCPropertyGridCtrl [MFC], GetDescriptionRows", "CMFCPropertyGridCtrl [MFC], GetHeaderCtrl", "CMFCPropertyGridCtrl [MFC], GetHeaderHeight", "CMFCPropertyGridCtrl [MFC], GetLeftColumnWidth", "CMFCPropertyGridCtrl [MFC], GetListRect", "CMFCPropertyGridCtrl [MFC], GetProperty", "CMFCPropertyGridCtrl [MFC], GetPropertyColumnWidth", "CMFCPropertyGridCtrl [MFC], GetPropertyCount", "CMFCPropertyGridCtrl [MFC], GetRowHeight", "CMFCPropertyGridCtrl [MFC], GetScrollBarCtrl", "CMFCPropertyGridCtrl [MFC], GetTextColor", "CMFCPropertyGridCtrl [MFC], HitTest", "CMFCPropertyGridCtrl [MFC], InitHeader", "CMFCPropertyGridCtrl [MFC], IsAlphabeticMode", "CMFCPropertyGridCtrl [MFC], IsAlwaysShowUserToolTip", "CMFCPropertyGridCtrl [MFC], IsDescriptionArea", "CMFCPropertyGridCtrl [MFC], IsGroupNameFullWidth", "CMFCPropertyGridCtrl [MFC], IsHeaderCtrl", "CMFCPropertyGridCtrl [MFC], IsMarkModifiedProperties", "CMFCPropertyGridCtrl [MFC], IsShowDragContext", "CMFCPropertyGridCtrl [MFC], IsVSDotNetLook", "CMFCPropertyGridCtrl [MFC], MarkModifiedProperties", "CMFCPropertyGridCtrl [MFC], RemoveAll", "CMFCPropertyGridCtrl [MFC], ResetOriginalValues", "CMFCPropertyGridCtrl [MFC], SetAlphabeticMode", "CMFCPropertyGridCtrl [MFC], SetBoolLabels", "CMFCPropertyGridCtrl [MFC], SetCurSel", "CMFCPropertyGridCtrl [MFC], SetCustomColors", "CMFCPropertyGridCtrl [MFC], SetDescriptionRows", "CMFCPropertyGridCtrl [MFC], SetGroupNameFullWidth", "CMFCPropertyGridCtrl [MFC], SetListDelimiter", "CMFCPropertyGridCtrl [MFC], SetShowDragContext", "CMFCPropertyGridCtrl [MFC], SetVSDotNetLook", "CMFCPropertyGridCtrl [MFC], UpdateColor", "CMFCPropertyGridCtrl [MFC], AdjustLayout", "CMFCPropertyGridCtrl [MFC], CompareProps", "CMFCPropertyGridCtrl [MFC], EditItem", "CMFCPropertyGridCtrl [MFC], EndEditItem", "CMFCPropertyGridCtrl [MFC], Init", "CMFCPropertyGridCtrl [MFC], OnChangeSelection", "CMFCPropertyGridCtrl [MFC], OnClickButton", "CMFCPropertyGridCtrl [MFC], OnDrawBorder", "CMFCPropertyGridCtrl [MFC], OnDrawDescription", "CMFCPropertyGridCtrl [MFC], OnDrawList", "CMFCPropertyGridCtrl [MFC], OnDrawProperty", "CMFCPropertyGridCtrl [MFC], OnPropertyChanged", "CMFCPropertyGridCtrl [MFC], OnSelectCombo", "CMFCPropertyGridCtrl [MFC], ValidateItemData"]
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridCtrl Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -88,7 +61,7 @@ class CMFCPropertyGridCtrl : public CWnd
 |`CMFCPropertyGridCtrl::get_accDescription`|Called by framework to retrieve a string that describes the visual appearance of the specified object. (Overrides [CWnd::get_accDescription](../../mfc/reference/cwnd-class.md#get_accdescription).)|  
 |[CMFCPropertyGridCtrl::get_accFocus](#get_accfocus)|Called by the framework to retrieve the object that has the keyboard focus. (Overrides [CWnd::get_accFocus](../../mfc/reference/cwnd-class.md#get_accfocus).)|  
 |[CMFCPropertyGridCtrl::get_accHelp](#get_acchelp)|Called by the framework to retrieve an object's `Help` property string. (Overrides [CWnd::get_accHelp](../../mfc/reference/cwnd-class.md#get_acchelp).)|  
-|[CMFCPropertyGridCtrl::get_accHelpTopic](#get_acchelptopic)|Called by the framework to retrieve the full path of the `WinHelp`file associated with the specified object and the identifier of the appropriate topic within that file. (Overrides [CWnd::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic).)|  
+|[CMFCPropertyGridCtrl::get_accHelpTopic](#get_acchelptopic)|Called by the framework to retrieve the full path of the `WinHelp` file associated with the specified object and the identifier of the appropriate topic within that file. (Overrides [CWnd::get_accHelpTopic](../../mfc/reference/cwnd-class.md#get_acchelptopic).)|  
 |[CMFCPropertyGridCtrl::get_accKeyboardShortcut](#get_acckeyboardshortcut)|Called by the framework to retrieve the specified object's shortcut key or access key. (Overrides [CWnd::get_accKeyboardShortcut](../../mfc/reference/cwnd-class.md#get_acckeyboardshortcut).)|  
 |`CMFCPropertyGridCtrl::get_accName`|Called by the framework to retrieve the name of the specified object. (Overrides [CWnd::get_accName](../../mfc/reference/cwnd-class.md#get_accname).)|  
 |`CMFCPropertyGridCtrl::get_accRole`|Called by the framework to retrieve information that describes the role of the specified object. (Overrides [CWnd::get_accRole](../../mfc/reference/cwnd-class.md#get_accrole).)|  
@@ -200,7 +173,7 @@ class CMFCPropertyGridCtrl : public CWnd
  **Header:** afxpropertygridctrl.h  
   
 ##  <a name="accselect"></a>  CMFCPropertyGridCtrl::accSelect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT accSelect(
@@ -253,7 +226,7 @@ virtual void AdjustLayout();
  This method recalculates how to draw the entire property grid control and its properties, including images, fonts, and controls.  
   
 ##  <a name="alwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::AlwaysShowUserToolTip  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void AlwaysShowUserToolTip(BOOL bShow = TRUE);
@@ -325,7 +298,7 @@ virtual BOOL Create(
   
 ### Parameters  
  [in] `dwStyle`  
- A bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md).  
+ A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  A bounding rectangle that specifies the size and position of the window, in client coordinates of `pParentWnd`.  
@@ -374,7 +347,7 @@ BOOL DeleteProperty(
  Use this method to delete a property, and any sub-items, from the property grid control.  
   
 ##  <a name="drawcontrolbarcolors"></a>  CMFCPropertyGridCtrl::DrawControlBarColors  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL DrawControlBarColors() const;  
@@ -509,7 +482,7 @@ CMFCPropertyGridProperty* FindItemByData(
  Use the [CMFCPropertyGridCtrl::CMFCPropertyGridCtrl](#cmfcpropertygridctrl) constructor or [CMFCPropertyGridProperty::SetData](../../mfc/reference/cmfcpropertygridproperty-class.md#setdata) method to associate a `DWORD` with a property.  
   
 ##  <a name="get_accchildcount"></a>  CMFCPropertyGridCtrl::get_accChildCount  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accChildCount(long* pcountChildren);
@@ -523,7 +496,7 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
 ### Remarks  
   
 ##  <a name="get_accfocus"></a>  CMFCPropertyGridCtrl::get_accFocus  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accFocus(VARIANT* pvarChild);
@@ -537,7 +510,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ### Remarks  
   
 ##  <a name="get_acchelp"></a>  CMFCPropertyGridCtrl::get_accHelp  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accHelp(
@@ -554,7 +527,7 @@ virtual HRESULT get_accHelp(
 ### Remarks  
   
 ##  <a name="get_acchelptopic"></a>  CMFCPropertyGridCtrl::get_accHelpTopic  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accHelpTopic(
@@ -573,7 +546,7 @@ virtual HRESULT get_accHelpTopic(
 ### Remarks  
   
 ##  <a name="get_acckeyboardshortcut"></a>  CMFCPropertyGridCtrl::get_accKeyboardShortcut  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accKeyboardShortcut(
@@ -590,7 +563,7 @@ virtual HRESULT get_accKeyboardShortcut(
 ### Remarks  
   
 ##  <a name="get_accselection"></a>  CMFCPropertyGridCtrl::get_accSelection  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual HRESULT get_accSelection(VARIANT* pvarChildren);
@@ -907,7 +880,7 @@ BOOL IsAlphabeticMode() const;
  Use the [CMFCPropertyGridCtrl::SetAlphabeticMode](#setalphabeticmode) method to enable or disable alphabetic mode.  
   
 ##  <a name="isalwaysshowusertooltip"></a>  CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsAlwaysShowUserToolTip() const;  

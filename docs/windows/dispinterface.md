@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.dispinterface"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dispinterface attribute"
+f1_keywords: ["vc-attr.dispinterface"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dispinterface attribute"]
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # dispinterface
 Places an interface in the .idl file as a dispatch interface.  
@@ -83,5 +65,4 @@ dispinterface helloPro
  [dual](../windows/dual.md)   
  [custom](../windows/custom-cpp.md)   
  [object](../windows/object-cpp.md)   
- [__interface](../cpp/interface.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [__interface](../cpp/interface.md)   

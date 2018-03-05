@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<functional>"
-  - "functional/std::<functional>"
-  - "std::<functional>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functors"
-  - "functional header"
+ms.topic: "reference"
+f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;functional&gt;
 Defines C++ Standard Library functions that help construct *function objects*—also known as functors—and their binders. A function object is an object of a type that defines `operator()`. A function object can be a function pointer, but more typically, the object is used to store additional information that can be accessed during a function call.  
@@ -49,7 +29,7 @@ Defines C++ Standard Library functions that help construct *function objects*—
 ## Remarks  
  Algorithms require two types of function objects: unary and binary. Unary function objects require one argument, and binary function objects require two arguments. A function object and function pointers can be passed as a predicate to an algorithm, but function objects are also adaptable and increase the scope, flexibility, and efficiency of the C++ Standard Library. If, for example, a value needed to be bound to a function before being passed to an algorithm, then a function pointer could not be used. Function adaptors convert function pointers into adaptable function objects that can be bound to a value. The header \<functional> also contains member function adaptors that allow member functions to be called as adaptable function objects. Functions are adaptable if they have nested type declarations specifying their argument and return types. The C++ Standard requires that this adaptability is implemented by having all standard object classes inherit from the unary_function or binary_function base classes. Function objects and their adaptors allow the C++ Standard Library to upgrade existing applications and help integrate the library into the C++ programming environment.  
   
- The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] implementation of the function objects in \<functional> includes *transparent operator functors*, which are specializations of standard function objects and take no template parameters, and perform perfect forwarding of the function arguments and perfect return of the result. This feature is part of the C++14 Draft Standard specification. These template specializations do not require that you specify argument types when you invoke arithmetic, comparison, logical, and bitwise operator functors. You can overload arithmetic, comparison, logical, or bitwise operators for your own types, or for heterogeneous combinations of types, and then use the transparent operator functors as function arguments. For example, if your type *MyType* implements `operator<`, you can call `sort(my_collection.begin(), my_collection.end(), less<>())` instead of explicitly specifying the type `sort(my_collection.begin(), my_collection.end(), less<MyType>())`.  
+ The Visual C++ implementation of the function objects in \<functional> includes *transparent operator functors*, which are specializations of standard function objects and take no template parameters, and perform perfect forwarding of the function arguments and perfect return of the result. This feature is part of the C++14 Draft Standard specification. These template specializations do not require that you specify argument types when you invoke arithmetic, comparison, logical, and bitwise operator functors. You can overload arithmetic, comparison, logical, or bitwise operators for your own types, or for heterogeneous combinations of types, and then use the transparent operator functors as function arguments. For example, if your type *MyType* implements `operator<`, you can call `sort(my_collection.begin(), my_collection.end(), less<>())` instead of explicitly specifying the type `sort(my_collection.begin(), my_collection.end(), less<MyType>())`.  
   
 ## C++11/C++14 Implementation  
  The following features are added in the Visual C++ implementation of C++11/C++14:  
@@ -121,22 +101,22 @@ Defines C++ Standard Library functions that help construct *function objects*—
   
 |||  
 |-|-|  
-|[bind](../standard-library/functional-functions.md#bind_function)|Binds arguments to a callable object.|  
-|[bind1st](../standard-library/functional-functions.md#bind1st_function)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|  
-|[bind2nd](../standard-library/functional-functions.md#bind2nd_function)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.|  
-|[bit_and](../standard-library/functional-functions.md#bit_and_function)|Returns the bitwise logical AND (binary operator&) of the two parameters.|  
-|[bit_not](../standard-library/functional-functions.md#bit_not_function)|Returns the bitwise logical complement (operator~) of the parameter.|  
-|[bit_or](../standard-library/functional-functions.md#bit_or_function)|Returns the bitwise logical OR (operator&#124;) of the two parameters.|  
-|[bit_xor](../standard-library/functional-functions.md#bit_xor_function)|Returns the bitwise logical XOR (operator^) of the two parameters.|  
-|[cref](../standard-library/functional-functions.md#cref_function)|Constructs a const `reference_wrapper` from an argument.|  
-|[mem_fn](../standard-library/functional-functions.md#mem_fn_function)|Generates a simple call wrapper.|  
-|[mem_fun](../standard-library/functional-functions.md#mem_fun_function)|Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.|  
-|[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref_function)|A helper template function used to construct function object adaptors for member functions when initialized with reference arguments.|  
-|[not1](../standard-library/functional-functions.md#not1_function)|Returns the complement of a unary predicate.|  
-|[not2](../standard-library/functional-functions.md#not2_function)|Returns the complement of a binary predicate.|  
-|[ptr_fun](../standard-library/functional-functions.md#ptr_fun_function)|A helper template function used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.|  
-|[ref](../standard-library/functional-functions.md#ref_function)|Constructs a `reference_wrapper` from an argument.|  
-|[swap](../standard-library/functional-functions.md#swap_function)|Swaps two `function` objects.|  
+|[bind](../standard-library/functional-functions.md#bind)|Binds arguments to a callable object.|  
+|[bind1st](../standard-library/functional-functions.md#bind1st)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|  
+|[bind2nd](../standard-library/functional-functions.md#bind2nd)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.|  
+|[bit_and](../standard-library/functional-functions.md#bit_and)|Returns the bitwise logical AND (binary operator&) of the two parameters.|  
+|[bit_not](../standard-library/functional-functions.md#bit_not)|Returns the bitwise logical complement (operator~) of the parameter.|  
+|[bit_or](../standard-library/functional-functions.md#bit_or)|Returns the bitwise logical OR (operator&#124;) of the two parameters.|  
+|[bit_xor](../standard-library/functional-functions.md#bit_xor)|Returns the bitwise logical XOR (operator^) of the two parameters.|  
+|[cref](../standard-library/functional-functions.md#cref)|Constructs a const `reference_wrapper` from an argument.|  
+|[mem_fn](../standard-library/functional-functions.md#mem_fn)|Generates a simple call wrapper.|  
+|[mem_fun](../standard-library/functional-functions.md#mem_fun)|Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.|  
+|[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|A helper template function used to construct function object adaptors for member functions when initialized with reference arguments.|  
+|[not1](../standard-library/functional-functions.md#not1)|Returns the complement of a unary predicate.|  
+|[not2](../standard-library/functional-functions.md#not2)|Returns the complement of a binary predicate.|  
+|[ptr_fun](../standard-library/functional-functions.md#ptr_fun)|A helper template function used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.|  
+|[ref](../standard-library/functional-functions.md#ref)|Constructs a `reference_wrapper` from an argument.|  
+|[swap](../standard-library/functional-functions.md#swap)|Swaps two `function` objects.|  
   
 ### Structs  
   
@@ -170,8 +150,8 @@ Defines C++ Standard Library functions that help construct *function objects*—
   
 |||  
 |-|-|  
-|[operator==](../standard-library/functional-operators.md#operator_eq_eq)|Disallows equality comparison of callable objects.|  
-|[operator!=](../standard-library/functional-operators.md#operator_neq)|Disallows inequality comparison of callable objects.|  
+|[operator==](../standard-library/functional-operators.md#op_eq_eq)|Disallows equality comparison of callable objects.|  
+|[operator!=](../standard-library/functional-operators.md#op_neq)|Disallows inequality comparison of callable objects.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

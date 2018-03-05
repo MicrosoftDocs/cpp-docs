@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "afxanimationcontroller/CAnimationVariableIntegerChangeHandler"
-  - "CAnimationVariableIntegerChangeHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationVariableIntegerChangeHandler class"
+f1_keywords: ["CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::SetAnimationController"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationVariableIntegerChangeHandler [MFC], CAnimationVariableIntegerChangeHandler", "CAnimationVariableIntegerChangeHandler [MFC], CreateInstance", "CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged", "CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController"]
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationVariableIntegerChangeHandler Class
 Implements a callback, which is called by the Animation API when the value of an animation variable changes.  

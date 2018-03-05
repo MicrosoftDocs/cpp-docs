@@ -4,63 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wcstoul_l"
-  - "_strtoul_l"
-  - "strtoul"
-  - "wcstoul"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wcstoul_l", "_strtoul_l", "strtoul", "wcstoul"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strtoul"
-  - "_tcstoul"
-  - "wcstoul"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wcstoul_l function"
-  - "_tcstoul function"
-  - "_strtoul_l function"
-  - "string conversion, to integers"
-  - "wcstoul function"
-  - "strtoul function"
-  - "wcstoul_l function"
-  - "strtoul_l function"
-  - "tcstoul function"
+f1_keywords: ["strtoul", "_tcstoul", "wcstoul"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wcstoul_l function", "_tcstoul function", "_strtoul_l function", "string conversion, to integers", "wcstoul function", "strtoul function", "wcstoul_l function", "strtoul_l function", "tcstoul function"]
 ms.assetid: 38f2afe8-8178-4e0b-8bbe-d5c6ad66e3ab
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strtoul, _strtoul_l, wcstoul, _wcstoul_l
 Convert strings to an unsigned long-integer value.  
@@ -128,9 +86,9 @@ unsigned long _wcstoul_l(
   
  `strtoul` expects `nptr` to point to a string of the following form:  
   
- [`whitespace`] [{`+` &#124; `–`}] [`0` [{ `x` &#124; `X` }]] [`digits`]  
+ [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits`]  
   
- A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits. The first character that does not fit this form stops the scan. If `base` is between 2 and 36, then it is used as the base of the number. If `base` is 0, the initial characters of the string pointed to by `nptr` are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than `base` are permitted. The first character outside the range of the base stops the scan. For example, if `base` is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`–`) sign prefix; a leading minus sign indicates that the return value is negated.  
+ A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits. The first character that does not fit this form stops the scan. If `base` is between 2 and 36, then it is used as the base of the number. If `base` is 0, the initial characters of the string pointed to by `nptr` are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than `base` are permitted. The first character outside the range of the base stops the scan. For example, if `base` is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`-`) sign prefix; a leading minus sign indicates that the return value is negated.  
   
 ## Requirements  
   
@@ -145,9 +103,6 @@ unsigned long _wcstoul_l(
   
 ## Example  
  See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
-  
-## .NET Framework Equivalent  
- [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint32.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

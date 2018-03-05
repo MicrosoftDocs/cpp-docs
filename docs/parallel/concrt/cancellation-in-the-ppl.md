@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parallel algorithms, canceling [Concurrency Runtime]"
-  - "canceling parallel algorithms [Concurrency Runtime]"
-  - "parallel tasks, canceling [Concurrency Runtime]"
-  - "cancellation in the PPL"
-  - "parallel work trees [Concurrency Runtime]"
-  - "canceling parallel tasks [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Cancellation in the PPL
 This document explains the role of cancellation in the Parallel Patterns Library (PPL), how to cancel parallel work, and how to determine when parallel work is canceled.  
@@ -50,7 +29,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 -   When possible, use cancellation tokens to cancel work. The [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) class defines a cancellation token.  
   
 
--   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation.  
+-   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation. Use the [concurrency::cancellation_token::is_canceled](reference/cancellation-token-class.md#is_canceled) method to check whether any other task has requested cancellation.
   
 -   Cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
   
@@ -97,7 +76,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
  For more examples that cancel parallel tasks, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), and [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
 ###  <a name="tokens"></a> Using a Cancellation Token to Cancel Parallel Work  
- The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can monitor its cancellation token and stop when it can.  
+ The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can use the [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) member function to monitor the cancellation token and stop when it can.  
   
 
  To initiate cancellation, call the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method. You respond to cancellation in these ways:  
@@ -165,7 +144,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
  When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is cancelled or when one of the participant tasks ends in a canceled state or throws an exception.  
   
- The `when_all` function inherits the cancellation token from each task that composes the overall operation when you do not provide a cancellation token to it. The task that is returned from `when_all` is canceled when any of these tokens are cancelled and at least one of the participant tasks has not yet started or is running. A similar behavior occurs when one of the tasks throws an exception – the task that is returned from `when_all` is immediately canceled with that exception.  
+ The `when_all` function inherits the cancellation token from each task that composes the overall operation when you do not provide a cancellation token to it. The task that is returned from `when_all` is canceled when any of these tokens are cancelled and at least one of the participant tasks has not yet started or is running. A similar behavior occurs when one of the tasks throws an exception - the task that is returned from `when_all` is immediately canceled with that exception.  
   
  The runtime chooses the cancellation token for the task that is returned from `when_any` function when that task completes. If none of the participant tasks finish in a completed state and one or more of the tasks throws an exception, one of the tasks that threw is chosen to complete the `when_any` and its token is chosen as the token for the final task. If more than one task finishes in the completed state, the task that is returned from `when_any` task ends in a completed state. The runtime tries to pick a completed task whose token is not canceled at the time of completion so that the task that is returned from `when_any` is not immediately canceled even though other executing tasks might complete at a later point.  
   

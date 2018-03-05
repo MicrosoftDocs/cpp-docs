@@ -4,53 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_setmbcp"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-locale-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_setmbcp"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_setmbcp"
-  - "setmbcp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "setmbcp function"
-  - "_setmbcp function"
-  - "multibyte code pages"
+f1_keywords: ["_setmbcp", "setmbcp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["setmbcp function", "_setmbcp function", "multibyte code pages"]
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _setmbcp
 Sets a new multibyte code page.  
@@ -68,7 +36,7 @@ int _setmbcp(
  New code page setting for locale-independent multibyte routines.  
   
 ## Return Value  
- Returns 0 if the code page is set successfully. If an invalid code page value is supplied for `codepage`, returns –1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.  
+ Returns 0 if the code page is set successfully. If an invalid code page value is supplied for `codepage`, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.  
   
 ## Remarks  
  The `_setmbcp` function specifies a new multibyte code page. By default, the run-time system automatically sets the multibyte code page to the system-default ANSI code page. The multibyte code page setting affects all multibyte routines that are not locale dependent. However, it is possible to instruct `_setmbcp` to use the code page defined for the current locale (see the following list of manifest constants and associated behavior results). For a list of the multibyte routines that are dependent on the locale code page rather than the multibyte code page, see [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).  

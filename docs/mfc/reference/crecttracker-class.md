@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRectTracker"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "displaying items"
-  - "CRectTracker class"
-  - "resizing items"
+f1_keywords: ["CRectTracker", "AFXEXT/CRectTracker", "AFXEXT/CRectTracker::CRectTracker", "AFXEXT/CRectTracker::AdjustRect", "AFXEXT/CRectTracker::Draw", "AFXEXT/CRectTracker::DrawTrackerRect", "AFXEXT/CRectTracker::GetHandleMask", "AFXEXT/CRectTracker::GetTrueRect", "AFXEXT/CRectTracker::HitTest", "AFXEXT/CRectTracker::NormalizeHit", "AFXEXT/CRectTracker::OnChangedRect", "AFXEXT/CRectTracker::SetCursor", "AFXEXT/CRectTracker::Track", "AFXEXT/CRectTracker::TrackRubberBand", "AFXEXT/CRectTracker::m_nHandleSize", "AFXEXT/CRectTracker::m_nStyle", "AFXEXT/CRectTracker::m_rect", "AFXEXT/CRectTracker::m_sizeMin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRectTracker [MFC], CRectTracker", "CRectTracker [MFC], AdjustRect", "CRectTracker [MFC], Draw", "CRectTracker [MFC], DrawTrackerRect", "CRectTracker [MFC], GetHandleMask", "CRectTracker [MFC], GetTrueRect", "CRectTracker [MFC], HitTest", "CRectTracker [MFC], NormalizeHit", "CRectTracker [MFC], OnChangedRect", "CRectTracker [MFC], SetCursor", "CRectTracker [MFC], Track", "CRectTracker [MFC], TrackRubberBand", "CRectTracker [MFC], m_nHandleSize", "CRectTracker [MFC], m_nStyle", "CRectTracker [MFC], m_rect", "CRectTracker [MFC], m_sizeMin"]
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRectTracker Class
 Allows an item to be displayed, moved, and resized in different fashions.  
@@ -60,7 +41,7 @@ class CRectTracker
 |[CRectTracker::AdjustRect](#adjustrect)|Called when the rectangle is resized.|  
 |[CRectTracker::Draw](#draw)|Renders the rectangle.|  
 |[CRectTracker::DrawTrackerRect](#drawtrackerrect)|Called when drawing the border of a `CRectTracker` object.|  
-|[CRectTracker::GetHandleMask](#gethandlemask)|Called to get the mask of a `CRectTracker`item's resize handles.|  
+|[CRectTracker::GetHandleMask](#gethandlemask)|Called to get the mask of a `CRectTracker` item's resize handles.|  
 |[CRectTracker::GetTrueRect](#gettruerect)|Returns width and height of rectangle, including resize handles.|  
 |[CRectTracker::HitTest](#hittest)|Returns the current position of the cursor related to the `CRectTracker` object.|  
 |[CRectTracker::NormalizeHit](#normalizehit)|Normalizes a hit-test code.|  
@@ -208,7 +189,7 @@ virtual UINT GetHandleMask() const;
 ### Remarks  
  The resize handles appear on the sides and corners of the rectangle and allow the user to control the shape and size of the rectangle.  
   
- A rectangle has 8 resize handles numbered 0–7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0–3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4–7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:  
+ A rectangle has 8 resize handles numbered 0-7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0-3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4-7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:  
   
  ![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "vc35dp1")  
   
@@ -244,7 +225,7 @@ int HitTest(CPoint point) const;
 ### Return Value  
  The value returned is based on the enumerated type **CRectTracker::TrackerHit** and can have one of the following values:  
   
-- **CRectTracker::hitNothing** –1  
+- **CRectTracker::hitNothing** -1  
   
 - **CRectTracker::hitTopLeft** 0  
   

@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical operators, expression sequence points"
-  - "logical operators, C"
-  - "logical AND operator"
-  - "|| operator"
-  - "operators [C], logical"
-  - "short-circuit evaluation"
-  - "&& operator"
-  - "logical OR operator"
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical operators, expression sequence points", "logical operators, C", "logical AND operator", "|| operator", "operators [C], logical", "short-circuit evaluation", "&& operator", "logical OR operator"]
 ms.assetid: c0a4e766-ad56-4300-bf76-b28dc0e19b43
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C Logical Operators
 The logical operators perform logical-AND (**&&**) and logical-OR ( `||` ) operations.  

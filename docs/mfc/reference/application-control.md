@@ -4,38 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application control"
+f1_keywords: ["vc.mfc.macros"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application control [MFC]"]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Application Control
-OLE requires substantial control over applications and their objects. The OLE system DLLs must be able to launch and release applications automatically, coordinate their production and modification of objects, and so on. The functions in this topic meet those requirements. In addition to being called by the OLE system DLLs, these functions must sometimes be called by applications as well.  
+OLE requires substantial control over applications and their objects. The OLE system DLLs must be able to launch and release applications automatically, coordinate their production and modification of objects, and so on. The functions in this topic meet those requirements. In addition to being called by the OLE system DLLs, these functions must sometimes be called by applications as well. 
   
 ### Application Control  
   
@@ -46,9 +29,12 @@ OLE requires substantial control over applications and their objects. The OLE sy
 |[AfxOleGetUserCtrl](#afxolegetuserctrl)|Retrieves the current user-control flag.|  
 |[AfxOleSetUserCtrl](#afxolesetuserctrl)|Sets or clears the user-control flag.|  
 |[AfxOleLockApp](#afxolelockapp)|Increments the framework's global count of the number of active objects in an application.|  
-|[AfxOleUnlockApp](#afxoleunlockapp)|Decrements the framework's count of the number of active objects in an application.|  
+|[AfxOleLockControl](#afxolelockcontrol)| Locks the class factory of the specified control. |
+|[AfxOleUnlockApp](#afxoleunlockapp)|Decrements the framework's count of the number of active objects in an application.| 
+|[AfxOleUnlockControl](#afxoleunlockcontrol)| Unlocks the class factory of the specified control. |
 |[AfxOleRegisterServerClass](#afxoleregisterserverclass)|Registers a server in the OLE system registry.|  
 |[AfxOleSetEditMenu](#afxoleseteditmenu)|Implements the user interface for the *typename* Object command.|  
+
   
 ##  <a name="afxolecanexitapp"></a>  AfxOleCanExitApp  
  Indicates whether the application can terminate.  
@@ -73,7 +59,7 @@ BOOL AFXAPI AfxOleCanExitApp();
  Retrieves the application's current message filter.  
   
 ```   
-COleMessageFilter* AFXAPI  AfxOleGetMessageFilter(); 
+COleMessageFilter* AFXAPI AfxOleGetMessageFilter(); 
 ```  
   
 ### Return Value  
@@ -94,7 +80,7 @@ COleMessageFilter* AFXAPI  AfxOleGetMessageFilter();
  Retrieves the current user-control flag.  
   
 ```   
-BOOL  AFXAPI AfxOleGetUserCtrl(); 
+BOOL AFXAPI AfxOleGetUserCtrl(); 
 ```  
   
 ### Return Value  
@@ -110,7 +96,7 @@ BOOL  AFXAPI AfxOleGetUserCtrl();
  Sets or clears the user-control flag, which is explained in the reference for `AfxOleGetUserCtrl`.  
   
 ```  
-void  AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl); 
+void AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl); 
 ```  
   
 ### Parameters  
@@ -129,7 +115,7 @@ void  AFXAPI AfxOleSetUserCtrl(BOOL bUserCtrl);
  Increments the framework's global count of the number of active objects in the application.  
   
 ```   
-void  AFXAPI  AfxOleLockApp(); 
+void AFXAPI AfxOleLockApp(); 
 ```  
   
 ### Remarks  
@@ -163,6 +149,43 @@ void AFXAPI AfxOleUnlockApp();
 ### Requirements  
  **Header**: afxdisp.h  
 
+ ## AfxOleLockControl
+Locks the class factory of the specified control so that dynamically created data associated with the control remains in memory.  
+   
+### Syntax    
+```
+BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );  
+BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );  
+```
+### Parameters  
+ `clsid`  
+ The unique class ID of the control.  
+  
+ `lpszProgID`  
+ The unique program ID of the control.  
+   
+### Return Value  
+ Nonzero if the class factory of the control was successfully locked; otherwise 0.  
+   
+### Remarks  
+ This can significantly speed up display of the controls. For example, once you create a control in a dialog box and lock the control with `AfxOleLockControl`, you do not need to create and kill it again every time the dialog is shown or destroyed. If the user opens and closes a dialog box repeatedly, locking your controls can significantly enhance performance. When you are ready to destroy the control, call `AfxOleUnlockControl`.  
+   
+### Example  
+```cpp
+// Starts and locks control's (Microsoft Calendar) class factory. 
+// Control will remain in memory for lifetime of
+// application or until AfxOleUnlockControl() is called.
+
+AfxOleLockControl(_T("MSCAL.Calendar"));
+```
+   
+### Requirements  
+ **Header:** <afxwin.h>  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [AfxOleUnlockControl](#afxoleunlockcontrol)
+ 
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass  
  This function allows you to register your server in the OLE system registry.  
   
@@ -232,7 +255,7 @@ BOOL AFXAPI AfxOleRegisterServerClass(
  Implements the user interface for the *typename* Object command.  
   
 ```   
-void  AFXAPI  AfxOleSetEditMenu(
+void AFXAPI AfxOleSetEditMenu(
     COleClientItem* pClient,  
     CMenu* pMenu,  
     UINT iMenuItem,  
@@ -272,3 +295,40 @@ void  AFXAPI  AfxOleSetEditMenu(
 
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
+Unlocks the class factory of the specified control.  
+   
+### Syntax  
+  ```
+BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );  
+BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );  
+```
+### Parameters  
+ `clsid`  
+ The unique class ID of the control.  
+  
+ `lpszProgID`  
+ The unique program ID of the control.  
+   
+### Return Value  
+ Nonzero if the class factory of the control was successfully unlocked; otherwise 0.  
+   
+### Remarks  
+ A control is locked with `AfxOleLockControl`, so that dynamically created data associated with the control remains in memory. This can significantly speed up display of the control because the control need not be created and destroyed every time it is displayed. When you are ready to destroy the control, call `AfxOleUnlockControl`.  
+   
+### Example  
+ ```cpp
+// Unlock control's (Microsoft Calendar Control) class factory.
+
+AfxOleUnlockControl(_T("MSCAL.Calendar"));
+
+```
+   
+### Requirements  
+ **Header:** <afxwin.h>  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)  
+ [AfxOleLockControl](#afxolelockcontrol)
+

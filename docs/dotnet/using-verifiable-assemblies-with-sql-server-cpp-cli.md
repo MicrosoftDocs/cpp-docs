@@ -1,40 +1,23 @@
 ---
-title: "Using Verifiable Assemblies with SQL Server (C++-CLI) | Microsoft Docs"
+title: "Using Verifiable Assemblies with SQL Server (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "verifiable assemblies [C++], with SQL Server"
+dev_langs: ["C++"]
+helpviewer_keywords: ["verifiable assemblies [C++], with SQL Server"]
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Verifiable Assemblies with SQL Server (C++/CLI)
-Extended stored procedures, packaged as dynamic-link libraries (DLLs), provide a way to extend SQL Server functionality through functions developed with [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]. Extended stored procedures are implemented as functions inside DLLs. In addition to functions, extended stored procedures can also define [user-defined types](../cpp/classes-and-structs-cpp.md) and [aggregate functions](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (such as SUM or AVG).  
+Extended stored procedures, packaged as dynamic-link libraries (DLLs), provide a way to extend SQL Server functionality through functions developed with Visual C++. Extended stored procedures are implemented as functions inside DLLs. In addition to functions, extended stored procedures can also define [user-defined types](../cpp/classes-and-structs-cpp.md) and [aggregate functions](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (such as SUM or AVG).  
   
  When a client executes an extended stored procedure, SQL Server searches for the DLL associated with the extended stored procedure and loads the DLL. SQL Server calls the requested extended stored procedure and executes it under a specified security context. The extended stored procedure then passes result sets and returns parameters back to the server.  
   
@@ -92,7 +75,7 @@ go
  SQL scripts can be executed interactively in SQL Query Analyzer or at the command line with the sqlcmd.exe utility. The following command line connects to MyServer, uses the default database, uses a trusted connection, inputs MyScript.sql, and outputs MyResult.txt.  
   
 ```  
-sqlcmd –S MyServer -E –i myScript.sql –o myResult.txt  
+sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt  
 ```  
   
 ## See Also  

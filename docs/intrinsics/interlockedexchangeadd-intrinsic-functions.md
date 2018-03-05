@@ -4,84 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedExchangeAdd64_nf"
-  - "_InterlockedExchangeAdd64_rel"
-  - "_InterlockedExchangeAdd16_rel"
-  - "_InterlockedExchangeAdd_acq"
-  - "_InterlockedExchangeAdd_nf"
-  - "_InterlockedExchangeAdd_rel"
-  - "_InterlockedExchangeAdd8_acq"
-  - "_InterlockedExchangeAdd16_nf"
-  - "_InterlockedExchangeAdd_acq_cpp"
-  - "_InterlockedExchangeAdd64_acq_cpp"
-  - "_InterlockedExchangeAdd16_acq"
-  - "_InterlockedExchangeAdd_HLERelease"
-  - "_InterlockedExchangeAdd64_cpp"
-  - "_InterlockedExchangeAdd64_HLERelease"
-  - "_InterlockedExchangeAdd64_acq"
-  - "_InterlockedExchangeAdd8"
-  - "_InterlockedExchangeAdd64"
-  - "_InterlockedExchangeAdd8_nf"
-  - "_InterlockedExchangeAdd16"
-  - "_InterlockedExchangeAdd64_rel_cpp"
-  - "_InterlockedExchangeAdd_cpp"
-  - "_InterlockedExchangeAdd8_rel"
-  - "_InterlockedExchangeAdd_HLEAcquire"
-  - "_InterlockedExchangeAdd64_HLEAcquire"
-  - "_InterlockedExchangeAdd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_InterlockedExchangeAdd8_nf intrinsic"
-  - "InterlockedExchangeAdd64_acq intrinsic"
-  - "_InterlockedExchangeAdd8_acq intrinsic"
-  - "_InterlockedExchangeAdd64 intrinsic"
-  - "_InterlockedExchangeAdd intrinsic"
-  - "_InterlockedExchangeAdd8_rel intrinsic"
-  - "_InterlockedExchangeAdd_acq intrinsic"
-  - "_InterlockedExchangeAdd_HLEAcquire intrinsic"
-  - "_InterlockedExchangeAdd8 intrinsic"
-  - "_InterlockedExchangeAdd_rel intrinsic"
-  - "_InterlockedExchangeAdd64_HLERelease intrinsic"
-  - "_InterlockedExchangeAdd64_nf intrinsic"
-  - "InterlockedExchangeAdd_rel intrinsic"
-  - "InterlockedExchangeAdd intrinsic"
-  - "_InterlockedExchangeAdd_nf intrinsic"
-  - "_InterlockedExchangeAdd16_rel intrinsic"
-  - "InterlockedExchangeAdd_acq intrinsic"
-  - "_InterlockedExchangeAdd64_HLEAcquire intrinsic"
-  - "_InterlockedExchangeAdd16 intrinsic"
-  - "_InterlockedExchangeAdd64_acq intrinsic"
-  - "InterlockedExchangeAdd64_rel intrinsic"
-  - "_InterlockedExchangeAdd16_acq intrinsic"
-  - "InterlockedExchangeAdd64 intrinsic"
-  - "_InterlockedExchangeAdd_HLERelease intrinsic"
-  - "_InterlockedExchangeAdd16_nf intrinsic"
-  - "_InterlockedExchangeAdd64_rel intrinsic"
+ms.topic: "reference"
+f1_keywords: ["_InterlockedExchangeAdd64_nf", "_InterlockedExchangeAdd64_rel", "_InterlockedExchangeAdd16_rel", "_InterlockedExchangeAdd_acq", "_InterlockedExchangeAdd_nf", "_InterlockedExchangeAdd_rel", "_InterlockedExchangeAdd8_acq", "_InterlockedExchangeAdd16_nf", "_InterlockedExchangeAdd_acq_cpp", "_InterlockedExchangeAdd64_acq_cpp", "_InterlockedExchangeAdd16_acq", "_InterlockedExchangeAdd_HLERelease", "_InterlockedExchangeAdd64_cpp", "_InterlockedExchangeAdd64_HLERelease", "_InterlockedExchangeAdd64_acq", "_InterlockedExchangeAdd8", "_InterlockedExchangeAdd64", "_InterlockedExchangeAdd8_nf", "_InterlockedExchangeAdd16", "_InterlockedExchangeAdd64_rel_cpp", "_InterlockedExchangeAdd_cpp", "_InterlockedExchangeAdd8_rel", "_InterlockedExchangeAdd_HLEAcquire", "_InterlockedExchangeAdd64_HLEAcquire", "_InterlockedExchangeAdd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_InterlockedExchangeAdd8_nf intrinsic", "InterlockedExchangeAdd64_acq intrinsic", "_InterlockedExchangeAdd8_acq intrinsic", "_InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd8_rel intrinsic", "_InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd_HLEAcquire intrinsic", "_InterlockedExchangeAdd8 intrinsic", "_InterlockedExchangeAdd_rel intrinsic", "_InterlockedExchangeAdd64_HLERelease intrinsic", "_InterlockedExchangeAdd64_nf intrinsic", "InterlockedExchangeAdd_rel intrinsic", "InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd_nf intrinsic", "_InterlockedExchangeAdd16_rel intrinsic", "InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd64_HLEAcquire intrinsic", "_InterlockedExchangeAdd16 intrinsic", "_InterlockedExchangeAdd64_acq intrinsic", "InterlockedExchangeAdd64_rel intrinsic", "_InterlockedExchangeAdd16_acq intrinsic", "InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd_HLERelease intrinsic", "_InterlockedExchangeAdd16_nf intrinsic", "_InterlockedExchangeAdd64_rel intrinsic"]
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedExchangeAdd Intrinsic Functions
 **Microsoft Specific**  
@@ -206,7 +140,7 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ## Example  
  For a sample of how to use `_InterlockedExchangeAdd`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

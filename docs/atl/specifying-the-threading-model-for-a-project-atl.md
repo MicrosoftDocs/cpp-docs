@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ATL_FREE_THREADED macro"
-  - "_ATL_APARTMENT_THREADED macro"
-  - "ATL, multithreading"
-  - "threading [ATL], models"
-  - "_ATL_SINGLE_THREADED macro"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ATL_FREE_THREADED macro", "_ATL_APARTMENT_THREADED macro", "ATL, multithreading", "threading [ATL], models", "_ATL_SINGLE_THREADED macro"]
 ms.assetid: 6b571078-521c-4f3e-9f08-482aa235a822
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Specifying the Threading Model for a Project (ATL)
 The following macros are available to specify the threading model of an ATL project:  
@@ -43,7 +23,7 @@ The following macros are available to specify the threading model of an ATL proj
 |-----------|--------------------------|  
 |_ATL_SINGLE_THREADED|Define if all of your objects use the single threading model.|  
 |_ATL_APARTMENT_THREADED|Define if one or more of your objects use apartment threading.|  
-|_ATL_FREE_THREADED|Define if one or more of your objects use free or neutral threading. Existing code may contain references to the equivalent macro [_ATL_MULTI_THREADED](http://msdn.microsoft.com/library/23fb6460-e651-46e6-b207-8559ccf49608).|  
+|_ATL_FREE_THREADED|Define if one or more of your objects use free or neutral threading. Existing code may contain references to the equivalent macro [_ATL_MULTI_THREADED](reference/compiler-options-macros.md#_atl_multi_threaded).|  
   
  If you do not define any of these macros for your project, _ATL_FREE_THREADED will be in effect.  
   

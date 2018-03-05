@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDesktopAlertWndInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDesktopAlertWndInfo class"
+f1_keywords: ["CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDesktopAlertWndInfo [MFC], m_hIcon", "CMFCDesktopAlertWndInfo [MFC], m_nURLCmdID", "CMFCDesktopAlertWndInfo [MFC], m_strText", "CMFCDesktopAlertWndInfo [MFC], m_strURL"]
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndInfo Class
 The `CMFCDesktopAlertWndInfo` class is used with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md). It specifies the controls that are displayed if the desktop alert window pops up.  

@@ -4,58 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "geometric_distribution"
-  - "std::geometric_distribution"
-  - "random/std::geometric_distribution"
-  - "std::geometric_distribution::reset"
-  - "random/std::geometric_distribution::reset"
-  - "std::geometric_distribution::p"
-  - "random/std::geometric_distribution::p"
-  - "std::geometric_distribution::param"
-  - "random/std::geometric_distribution::param"
-  - "std::geometric_distribution::min"
-  - "random/std::geometric_distribution::min"
-  - "std::geometric_distribution::max"
-  - "random/std::geometric_distribution::max"
-  - "std::geometric_distribution::operator()"
-  - "random/std::geometric_distribution::operator()"
-  - "std::geometric_distribution::param_type"
-  - "random/std::geometric_distribution::param_type"
-  - "std::geometric_distribution::param_type::p"
-  - "random/std::geometric_distribution::param_type::p"
-  - "std::geometric_distribution::param_type::operator=="
-  - "random/std::geometric_distribution::param_type::operator=="
-  - "std::geometric_distribution::param_type::operator!="
-  - "random/std::geometric_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "geometric_distribution class"
-  - "geometric_distribution"
+ms.topic: "reference"
+f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::geometric_distribution [C++]", "std::geometric_distribution [C++], reset", "std::geometric_distribution [C++], p", "std::geometric_distribution [C++], param", "std::geometric_distribution [C++], min", "std::geometric_distribution [C++], max", "std::geometric_distribution [C++], param_type", "std::geometric_distribution [C++], param_type"]
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # geometric_distribution Class
 Generates a geometric distribution.  
@@ -101,8 +61,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[geometric_distribution::geometric_distribution](#geometric_distribution__geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
-|`geometric_distribution::operator()`||[geometric_distribution::param_type](#geometric_distribution__param_type)|  
+|[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
+|`geometric_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `p()` returns the value for stored distribution parameter `p`.  
   
@@ -116,7 +76,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Geometric Distribution](http://go.microsoft.com/fwlink/LinkId=400529).  
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Geometric Distribution](http://go.microsoft.com/fwlink/p/?linkid=400529).  
   
 ## Example  
   
@@ -231,7 +191,7 @@ Distribution for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="geometric_distribution__geometric_distribution"></a>  geometric_distribution::geometric_distribution  
+##  <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution  
 Constructs the distribution.  
   
 ```  
@@ -253,7 +213,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="geometric_distribution__param_type"></a>  geometric_distribution::param_type  
+##  <a name="param_type"></a>  geometric_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```  

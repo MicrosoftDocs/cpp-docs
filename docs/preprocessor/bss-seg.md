@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.bss_seg"
-  - "bss_seg_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragmas, bss_seg"
-  - "bss_seg pragma"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.bss_seg", "bss_seg_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragmas, bss_seg", "bss_seg pragma"]
 ms.assetid: 755f0154-de51-4778-97d3-c9b24e445079
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # bss_seg
 Specifies the segment where uninitialized variables are stored in the .obj file.  
@@ -63,7 +44,7 @@ Specifies the segment where uninitialized variables are stored in the .obj file.
  *identifier* enables multiple records to be popped with a single **pop** command.  
   
  *"segment-name"*(optional)  
- The name of a segment*.* When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
+ The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
  *"segment-class"* (optional)  
  Included for compatibility with C++ prior to version 2.0. It is ignored.  

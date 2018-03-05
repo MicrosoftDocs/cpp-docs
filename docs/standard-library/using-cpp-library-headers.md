@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "headers, naming in C++ include directive"
-  - "standard header in C++"
-  - "headers"
-  - "INCLUDE directive"
-  - "headers, C++ Standard Library"
-  - "library headers"
-  - "C++ Standard Library, headers"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["headers, naming in C++ include directive", "standard header in C++", "headers", "INCLUDE directive", "headers, C++ Standard Library", "library headers", "C++ Standard Library, headers"]
 ms.assetid: a36e889e-1af2-4cd9-a211-bfc7a3fd8e85
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Using C++ Library Headers
 You include the contents of a standard header by naming it in an include directive.  

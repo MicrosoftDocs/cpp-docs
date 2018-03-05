@@ -5,7 +5,9 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 caps.latest.revision: 7
 manager: "ghogen"
@@ -13,9 +15,9 @@ manager: "ghogen"
 # &lt;unordered_set&gt; operators
 |||||  
 |-|-|-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|[operator!=](#operator_neq_unordered_multiset)|[operator==](#operator_eq_eq_unordered_multiset)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_unordered_multiset)|[operator==](#op_eq_eq_unordered_multiset)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is not equal to the unordered_set object on the right side.  
   
 ```
@@ -80,7 +82,7 @@ int main()
   
  `c2 != c3: true`  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is equal to the unordered_set object on the right side.  
   
 ```
@@ -145,7 +147,7 @@ int main()
   
  `c2 == c3: false`  
   
-##  <a name="operator_neq_unordered_multiset"></a>  operator!=  
+##  <a name="op_neq_unordered_multiset"></a>  operator!=  
  Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is not equal to the unordered_multiset object on the right side.  
   
 ```
@@ -213,7 +215,7 @@ int main()
   
  `c2 != c3: true`  
   
-##  <a name="operator_eq_eq_unordered_multiset"></a>  operator==  
+##  <a name="op_eq_eq_unordered_multiset"></a>  operator==  
  Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is equal to the unordered_multiset object on the right side.  
   
 ```

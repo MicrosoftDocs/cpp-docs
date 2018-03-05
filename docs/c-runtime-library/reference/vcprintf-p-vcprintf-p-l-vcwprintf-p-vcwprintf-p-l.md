@@ -4,77 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_vcprintf_p"
-  - "_vcwprintf_p_l"
-  - "_vcprintf_p_l"
-  - "_vcwprintf_p"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["_vcprintf_p", "_vcwprintf_p_l", "_vcprintf_p_l", "_vcwprintf_p"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vcwprintf_p"
-  - "vcprintf_p_l"
-  - "_vcprintf_p"
-  - "_vcprintf_p_l"
-  - "vcwprintf_p_l"
-  - "vcprintf_p"
-  - "_vcwprintf_p"
-  - "_vcwprintf_p_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_vtcprintf_p_l function"
-  - "vcprintf_p_l function"
-  - "_vcprintf_p_l function"
-  - "vtcprintf_p_l function"
-  - "vcprintf_p function"
-  - "_vcwprintf_p function"
-  - "_vcprintf_p function"
-  - "vcwprintf_p function"
-  - "vcwprintf_p_l function"
-  - "vtcprintf_p function"
-  - "_vcwprintf_p_l function"
-  - "_vtcprintf_p function"
+f1_keywords: ["vcwprintf_p", "vcprintf_p_l", "_vcprintf_p", "_vcprintf_p_l", "vcwprintf_p_l", "vcprintf_p", "_vcwprintf_p", "_vcwprintf_p_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_vtcprintf_p_l function", "vcprintf_p_l function", "_vcprintf_p_l function", "vtcprintf_p_l function", "vcprintf_p function", "_vcwprintf_p function", "_vcprintf_p function", "vcwprintf_p function", "vcwprintf_p_l function", "vtcprintf_p function", "_vcwprintf_p_l function", "_vtcprintf_p function"]
 ms.assetid: 611024cc-90e7-41db-8e85-145ca95012b1
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

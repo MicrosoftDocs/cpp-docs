@@ -4,49 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MSIL linking"
-  - "linking [C++], modules"
-  - ".netmodules"
-  - "modules, Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodules", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # .netmodule Files as Linker Input
 link.exe now accepts MSIL .obj and .netmodules as input. The output file produced by the linker will be an assembly or a .netmodule with no run-time dependency on any of the .obj or .netmodules that were input to the linker.  
   
  .netmodules are created by the Visual C++ compiler with [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md). .objs are always created in a Visual C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.  
   
- In most cases, you will need to pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule, unless the .netmodule was created with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). MSIL .netmodules used as input to the linker must be pure MSIL, which can be produced by the Visual C++ compiler using **/clr:safe**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. The .NET Visual Studio compilers produce pure MSIL modules by default.  
+  You will need to pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and will be removed in a future version of the compiler.   
   
- For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](../../build/reference/linker-command-line-syntax.md) and [Setting the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
+ For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](../../build/reference/linker-command-line-syntax.md), [Build C/C++ code on the command line](../../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
   
- Passing a .netmodule or .dll file to the linker that was compiled by the Visual C++ compiler with **/clr** or with **/clr:pure** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](../../build/reference/choosing-the-format-of-netmodule-input-files.md).  
+ Passing a .netmodule or .dll file to the linker that was compiled by the Visual C++ compiler with **/clr** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](../../build/reference/choosing-the-format-of-netmodule-input-files.md).  
   
- The linker accepts native .obj files as well as MSIL .obj files compiled with **/clr**, **/clr:pure**, or **/clr:safe**. When passing mixed .objs in the same build, the verifiability of the resulting output file will, by default, be equal to the lowest level of verifiability of the input modules. For example, if you pass a safe and pure .obj to the linker, the output file will be pure. [/CLRIMAGETYPE (Specify Type of CLR Image)](../../build/reference/clrimagetype-specify-type-of-clr-image.md) lets you specify a lower level of verifiability, if that is what you need.  
+ The linker accepts native .obj files as well as MSIL .obj files compiled with **/clr**. When passing mixed .objs in the same build, the verifiability of the resulting output file will, by default, be equal to the lowest level of verifiability of the input modules. 
   
  If you currently have an application that is composed of two or more assemblies and you want the application to be contained in one assembly, you must recompile the assemblies and then link the .objs or .netmodules to produce a single assembly.  
   

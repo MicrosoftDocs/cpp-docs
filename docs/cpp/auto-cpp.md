@@ -4,31 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
+f1_keywords: ["auto_CPP", "auto"]
+helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # auto (C++)
 Deduces the type of a declared variable from its initialization expression.  
@@ -213,7 +200,7 @@ int v1 = 100, v2 = 200;
 auto x = v1 > v2 ? v1 : v2;  
 ```  
   
- The following code fragment initializes variable `x` to type `int`, variable `y` to a reference to type `const``int`, and variable `fp` to a pointer to a function that returns type `int`.  
+ The following code fragment initializes variable `x` to type `int`, variable `y` to a reference to type `const int`, and variable `fp` to a pointer to a function that returns type `int`.  
   
 ```cpp  
 int f(int x) { return x; }  

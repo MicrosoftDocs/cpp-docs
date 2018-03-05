@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::float_2::yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator-="
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator++"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator-"
-  - "amp_short_vectors/Concurrency::graphics::float_2::r"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator/="
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator+="
-  - "amp_short_vectors/Concurrency::graphics::float_2::gr"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator="
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator--"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator*="
-  - "amp_short_vectors/Concurrency::graphics::float_2::rg"
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2::xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2"
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::g"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["amp_short_vectors/Concurrency::graphics::float_2::yx", "amp_short_vectors/Concurrency::graphics::float_2::operator-=", "amp_short_vectors/Concurrency::graphics::float_2::operator++", "amp_short_vectors/Concurrency::graphics::float_2::operator-", "amp_short_vectors/Concurrency::graphics::float_2::r", "amp_short_vectors/Concurrency::graphics::float_2::get_yx", "amp_short_vectors/Concurrency::graphics::float_2::get_xy", "amp_short_vectors/Concurrency::graphics::float_2::operator/=", "amp_short_vectors/Concurrency::graphics::float_2::set_yx", "amp_short_vectors/Concurrency::graphics::float_2::x", "amp_short_vectors/Concurrency::graphics::float_2::get_y", "amp_short_vectors/Concurrency::graphics::float_2::operator+=", "amp_short_vectors/Concurrency::graphics::float_2::gr", "amp_short_vectors/Concurrency::graphics::float_2::operator=", "amp_short_vectors/Concurrency::graphics::float_2::set_x", "amp_short_vectors/Concurrency::graphics::float_2::operator--", "amp_short_vectors/Concurrency::graphics::float_2::get_x", "amp_short_vectors/Concurrency::graphics::float_2::operator*=", "amp_short_vectors/Concurrency::graphics::float_2::rg", "amp_short_vectors/Concurrency::graphics::float_2::set_xy", "amp_short_vectors/Concurrency::graphics::float_2::xy", "amp_short_vectors/Concurrency::graphics::float_2", "amp_short_vectors/Concurrency::graphics::float_2::set_y", "amp_short_vectors/Concurrency::graphics::float_2::y", "amp_short_vectors/Concurrency::graphics::float_2::g"]
+dev_langs: ["C++"]
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # float_2 Class
 Represents a short vector of two floats.  
@@ -83,31 +43,31 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::get_x Method||  
-|float_2::get_xy Method||  
-|float_2::get_y Method||  
-|float_2::get_yx Method||  
-|float_2::ref_g Method||  
-|float_2::ref_r Method||  
-|float_2::ref_x Method||  
-|float_2::ref_y Method||  
-|float_2::set_x Method||  
-|float_2::set_xy Method||  
-|float_2::set_y Method||  
-|float_2::set_yx Method||  
+|float_2::get_x||  
+|float_2::get_xy||  
+|float_2::get_y||  
+|float_2::get_yx||  
+|float_2::ref_g||  
+|float_2::ref_r||  
+|float_2::ref_x||  
+|float_2::ref_y||  
+|float_2::set_x||  
+|float_2::set_xy||  
+|float_2::set_y||  
+|float_2::set_yx||  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::operator- Operator||  
-|float_2::operator-- Operator||  
-|float_2::operator*= Operator||  
-|float_2::operator/= Operator||  
-|float_2::operator++ Operator||  
-|float_2::operator+= Operator||  
-|float_2::operator= Operator||  
-|float_2::operator-= Operator||  
+|float_2::operator-||  
+|float_2::operator--||  
+|float_2::operator*=||  
+|float_2::operator/=||  
+|float_2::operator++||  
+|float_2::operator+=||  
+|float_2::operator=||  
+|float_2::operator-=||  
   
 ### Public Constants  
   
@@ -119,14 +79,14 @@ class float_2;
   
 |Name|Description|  
 |----------|-----------------|  
-|float_2::g Data Member||  
-|float_2::gr Data Member||  
-|float_2::r Data Member||  
-|float_2::rg Data Member||  
-|float_2::x Data Member||  
-|float_2::xy Data Member||  
-|float_2::y Data Member||  
-|float_2::yx Data Member||  
+|float_2::g||  
+|float_2::gr||  
+|float_2::r||  
+|float_2::rg||  
+|float_2::x||  
+|float_2::xy||  
+|float_2::y||  
+|float_2::yx||  
   
 ## Inheritance Hierarchy  
  `float_2`  

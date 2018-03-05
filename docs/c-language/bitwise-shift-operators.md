@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], bitwise"
-  - "shift operators, bitwise"
-  - "bitwise-shift operators"
-  - "operators [C++], shift"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], bitwise", "shift operators, bitwise", "bitwise-shift operators", "operators [C++], shift"]
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Bitwise Shift Operators
 The shift operators shift their first operand left (`<<`) or right (`>>`) by the number of positions the second operand specifies.  
@@ -75,7 +56,7 @@ z = ( x << 8 ) + ( y >> 8 );
   
  In this example, `x` is shifted left eight positions and `y` is shifted right eight positions. The shifted values are added, giving 0xAA55, and assigned to `z`.  
   
- Shifting a negative value to the right yields half the original value, rounded down. For example, –253 (binary 11111111 00000011) shifted right one bit produces –127 (binary 11111111 10000001). A positive 253 shifts right to produce +126.  
+ Shifting a negative value to the right yields half the original value, rounded down. For example, -253 (binary 11111111 00000011) shifted right one bit produces -127 (binary 11111111 10000001). A positive 253 shifts right to produce +126.  
   
  Right shifts preserve the sign bit. When a signed integer shifts right, the most-significant bit remains set. When an unsigned integer shifts right, the most-significant bit is cleared.  
   

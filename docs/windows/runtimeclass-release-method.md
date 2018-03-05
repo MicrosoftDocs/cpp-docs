@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::RuntimeClass::Release"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Release method"
+f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::Release"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Release method"]
 ms.assetid: 0bd6f9e2-ad90-4de6-adef-a6286f458cb6
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::Release Method
 Performs a COM Release operation on the current RuntimeClass object.  

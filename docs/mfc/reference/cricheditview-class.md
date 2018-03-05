@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRichEditView"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document/view architecture, rich edit controls"
-  - "OLE containers, rich edit"
-  - "rich edit controls, OLE container"
-  - "CRichEditView class"
+f1_keywords: ["CRichEditView", "AFXRICH/CRichEditView", "AFXRICH/CRichEditView::CRichEditView", "AFXRICH/CRichEditView::AdjustDialogPosition", "AFXRICH/CRichEditView::CanPaste", "AFXRICH/CRichEditView::DoPaste", "AFXRICH/CRichEditView::FindText", "AFXRICH/CRichEditView::FindTextSimple", "AFXRICH/CRichEditView::GetCharFormatSelection", "AFXRICH/CRichEditView::GetDocument", "AFXRICH/CRichEditView::GetInPlaceActiveItem", "AFXRICH/CRichEditView::GetMargins", "AFXRICH/CRichEditView::GetPageRect", "AFXRICH/CRichEditView::GetPaperSize", "AFXRICH/CRichEditView::GetParaFormatSelection", "AFXRICH/CRichEditView::GetPrintRect", "AFXRICH/CRichEditView::GetPrintWidth", "AFXRICH/CRichEditView::GetRichEditCtrl", "AFXRICH/CRichEditView::GetSelectedItem", "AFXRICH/CRichEditView::GetTextLength", "AFXRICH/CRichEditView::GetTextLengthEx", "AFXRICH/CRichEditView::InsertFileAsObject", "AFXRICH/CRichEditView::InsertItem", "AFXRICH/CRichEditView::IsRichEditFormat", "AFXRICH/CRichEditView::OnCharEffect", "AFXRICH/CRichEditView::OnParaAlign", "AFXRICH/CRichEditView::OnUpdateCharEffect", "AFXRICH/CRichEditView::OnUpdateParaAlign", "AFXRICH/CRichEditView::PrintInsideRect", "AFXRICH/CRichEditView::PrintPage", "AFXRICH/CRichEditView::SetCharFormat", "AFXRICH/CRichEditView::SetMargins", "AFXRICH/CRichEditView::SetPaperSize", "AFXRICH/CRichEditView::SetParaFormat", "AFXRICH/CRichEditView::TextNotFound", "AFXRICH/CRichEditView::GetClipboardData", "AFXRICH/CRichEditView::GetContextMenu", "AFXRICH/CRichEditView::IsSelected", "AFXRICH/CRichEditView::OnFindNext", "AFXRICH/CRichEditView::OnInitialUpdate", "AFXRICH/CRichEditView::OnPasteNativeObject", "AFXRICH/CRichEditView::OnPrinterChanged", "AFXRICH/CRichEditView::OnReplaceAll", "AFXRICH/CRichEditView::OnReplaceSel", "AFXRICH/CRichEditView::OnTextNotFound", "AFXRICH/CRichEditView::QueryAcceptData", "AFXRICH/CRichEditView::WrapChanged", "AFXRICH/CRichEditView::m_nBulletIndent", "AFXRICH/CRichEditView::m_nWordWrap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRichEditView [MFC], CRichEditView", "CRichEditView [MFC], AdjustDialogPosition", "CRichEditView [MFC], CanPaste", "CRichEditView [MFC], DoPaste", "CRichEditView [MFC], FindText", "CRichEditView [MFC], FindTextSimple", "CRichEditView [MFC], GetCharFormatSelection", "CRichEditView [MFC], GetDocument", "CRichEditView [MFC], GetInPlaceActiveItem", "CRichEditView [MFC], GetMargins", "CRichEditView [MFC], GetPageRect", "CRichEditView [MFC], GetPaperSize", "CRichEditView [MFC], GetParaFormatSelection", "CRichEditView [MFC], GetPrintRect", "CRichEditView [MFC], GetPrintWidth", "CRichEditView [MFC], GetRichEditCtrl", "CRichEditView [MFC], GetSelectedItem", "CRichEditView [MFC], GetTextLength", "CRichEditView [MFC], GetTextLengthEx", "CRichEditView [MFC], InsertFileAsObject", "CRichEditView [MFC], InsertItem", "CRichEditView [MFC], IsRichEditFormat", "CRichEditView [MFC], OnCharEffect", "CRichEditView [MFC], OnParaAlign", "CRichEditView [MFC], OnUpdateCharEffect", "CRichEditView [MFC], OnUpdateParaAlign", "CRichEditView [MFC], PrintInsideRect", "CRichEditView [MFC], PrintPage", "CRichEditView [MFC], SetCharFormat", "CRichEditView [MFC], SetMargins", "CRichEditView [MFC], SetPaperSize", "CRichEditView [MFC], SetParaFormat", "CRichEditView [MFC], TextNotFound", "CRichEditView [MFC], GetClipboardData", "CRichEditView [MFC], GetContextMenu", "CRichEditView [MFC], IsSelected", "CRichEditView [MFC], OnFindNext", "CRichEditView [MFC], OnInitialUpdate", "CRichEditView [MFC], OnPasteNativeObject", "CRichEditView [MFC], OnPrinterChanged", "CRichEditView [MFC], OnReplaceAll", "CRichEditView [MFC], OnReplaceSel", "CRichEditView [MFC], OnTextNotFound", "CRichEditView [MFC], QueryAcceptData", "CRichEditView [MFC], WrapChanged", "CRichEditView [MFC], m_nBulletIndent", "CRichEditView [MFC], m_nWordWrap"]
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRichEditView Class
 With [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) and [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md), provides the functionality of the rich edit control within the context of MFC's document view architecture.  
@@ -267,7 +247,7 @@ CHARFORMAT2& GetCharFormatSelection();
  A [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure which contains the character formatting attributes of the current selection.  
   
 ### Remarks  
- For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
@@ -307,14 +287,14 @@ virtual HRESULT GetClipboardData(
  Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the `lpchrg` parameter. The value of `lplpdataobj` is ignored if an error is returned.  
   
 ### Return Value  
- An `HRESULT` value reporting the success of the operation. For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ An `HRESULT` value reporting the success of the operation. For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Remarks  
  If the return value indicates success, **IRichEditOleCallback::GetClipboardData** returns the `IDataObject` accessed by `lplpdataobj`; otherwise, it returns the one accessed by `lpRichDataObj`. Override this function to supply your own Clipboard data. The default implementation of this function returns **E_NOTIMPL**.  
   
  This is an advanced overridable.  
   
- For more information, see [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] and see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ For more information, see [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK and see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
   
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu  
  The framework calls this function as part of the processing of [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317).  
@@ -356,7 +336,7 @@ virtual HMENU GetContextMenu(
   
  The default implementation returns **NULL**. This is an advanced overridable.  
   
- For more information, see [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317) and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317) and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK.  
   
  For more information on the **OLEOBJECT** type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.  
   
@@ -427,7 +407,7 @@ PARAFORMAT2& GetParaFormatSelection();
  A [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure which contains the paragraph formatting attributes of the current selection.  
   
 ### Remarks  
- For more information, see [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   
 ##  <a name="getprintrect"></a>  CRichEditView::GetPrintRect  
  Call this function to retrieve the bounds of the printing area within the page rectangle.  
@@ -496,7 +476,7 @@ long GetTextLengthEx(
   
 ### Parameters  
  `dwFlags`  
- Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) described in the Windows SDK.  
   
  `uCodePage`  
  Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).  
@@ -505,7 +485,7 @@ long GetTextLengthEx(
  The number of characters or bytes in the edit control. If incompatible flags were set in `dwFlags`, this member function returns `E_INVALIDARG`.  
   
 ### Remarks  
- `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK.  
   
 ##  <a name="insertfileasobject"></a>  CRichEditView::InsertFileAsObject  
  Call this function to insert the specified file (as a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object) into a rich edit view.  
@@ -533,7 +513,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
  An `HRESULT` value indicating the success of the insertion.  
   
 ### Remarks  
- For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on `HRESULT`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
  Call this function to determine if `cf` is a Clipboard format which is text, rich text, or rich text with OLE items.  
@@ -611,7 +591,7 @@ void OnCharEffect(
 ### Remarks  
  Each call to this function toggles the specified formatting effects for the current selection.  
   
- For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
@@ -675,7 +655,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
   
  This is an advanced overridable.  
   
- For more information, see [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the Windows SDK.  
   
 ##  <a name="onparaalign"></a>  CRichEditView::OnParaAlign  
  Call this function to change the paragraph alignment for the selected paragraphs.  
@@ -786,7 +766,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 ### Remarks  
  Override this function to change the output notification from a [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356).  
   
- For more information, see [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]  
@@ -814,7 +794,7 @@ void OnUpdateCharEffect(
 ### Remarks  
  The mask `dwMask` specifies which character formatting attributes to check. The flags `dwEffect` list the character formatting attributes to set/clear.  
   
- For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the `dwMask` and `dwEffect` parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
@@ -943,7 +923,7 @@ virtual HRESULT QueryAcceptData(
 ### Remarks  
  Override this function to handle different organization of COM items in your derived document class. This is an advanced overridable.  
   
- For more information on `HRESULT` and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on `HRESULT` and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
@@ -962,7 +942,7 @@ void SetCharFormat(CHARFORMAT2 cf);
 ### Remarks  
  Only the attributes specified by the **dwMask** member of `cf` are changed by this function.  
   
- For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
@@ -1020,7 +1000,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### Remarks  
  Only the attributes specified by the **dwMask** member of `pf` are changed by this function.  
   
- For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]  

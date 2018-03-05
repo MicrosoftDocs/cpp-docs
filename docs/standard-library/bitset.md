@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::<bitset>"
-  - "std.<bitset>"
-  - "<bitset>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<bitset> header"
-  - "bitset header"
+ms.topic: "reference"
+f1_keywords: ["<bitset>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<bitset> header", "bitset header"]
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt;
 Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.  
@@ -52,11 +32,11 @@ Defines the template class bitset and two supporting template functions for repr
   
 |||  
 |-|-|  
-|[operator&](../standard-library/bitset-operators.md#operator_amp_)|Performs a bitwise AND between two bitsets.|  
-|[operator<\<](../standard-library/bitset-operators.md#operator_lt__lt_)|Inserts a text representation of the bit sequence into the standard output stream.|  
-|[operator>>](../standard-library/bitset-operators.md#operator_gt__gt_)|Inserts a text representation of the bit sequence into the standard input stream.|  
-|[operator^](../standard-library/bitset-operators.md#operator_xor)|Performs a bitwise EXCLUSIVE-OR between two bitsets.|  
-|[operator&#124;](../standard-library/bitset-operators.md#operator_or)|Performs a bitwise OR between two bitsets.|  
+|[operator&](../standard-library/bitset-operators.md#op_amp)|Performs a bitwise AND between two bitsets.|  
+|[operator<\<](../standard-library/bitset-operators.md#op_lt_lt)|Inserts a text representation of the bit sequence into the standard output stream.|  
+|[operator>>](../standard-library/bitset-operators.md#op_gt_gt)|Inserts a text representation of the bit sequence into the standard input stream.|  
+|[operator^](../standard-library/bitset-operators.md#op_xor)|Performs a bitwise EXCLUSIVE-OR between two bitsets.|  
+|[operator&#124;](../standard-library/bitset-operators.md#op_or)|Performs a bitwise OR between two bitsets.|  
   
 ### Classes  
   

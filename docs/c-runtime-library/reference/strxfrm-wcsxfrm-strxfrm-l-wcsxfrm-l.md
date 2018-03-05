@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "strxfrm"
-  - "_wcsxfrm_l"
-  - "_strxfrm_l"
-  - "wcsxfrm"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["strxfrm", "_wcsxfrm_l", "_strxfrm_l", "wcsxfrm"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strxfrm"
-  - "_tcsxfrm"
-  - "wcsxfrm"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strxfrm_l function"
-  - "_tcsxfrm function"
-  - "_strxfrm_l function"
-  - "strxfrm function"
-  - "wcsxfrm_l function"
-  - "wcsxfrm function"
-  - "string comparison [C++], transforming strings"
-  - "tcsxfrm function"
-  - "strings [C++], comparing locale"
-  - "_wcsxfrm_l function"
+f1_keywords: ["strxfrm", "_tcsxfrm", "wcsxfrm"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strxfrm_l function", "_tcsxfrm function", "_strxfrm_l function", "strxfrm function", "wcsxfrm_l function", "wcsxfrm function", "string comparison [C++], transforming strings", "tcsxfrm function", "strings [C++], comparing locale", "_wcsxfrm_l function"]
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 Transform a string based on locale-specific information.  
@@ -101,7 +58,7 @@ size_t wcsxfrm_l(
  Source string.  
   
  `count`  
- Maximum number of characters to place in `strDest`*.*  
+ Maximum number of characters to place in `strDest`.  
   
  `locale`  
  The locale to use.  
@@ -154,9 +111,6 @@ return( strlen( _string1 ) );
 |`_wcsxfrm_l`|\<string.h> or \<wchar.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## .NET Framework Equivalent  
- Not applicable. To call the standard C function, use `PInvoke`. For more information, see [Platform Invoke Examples](http://msdn.microsoft.com/Library/15926806-f0b7-487e-93a6-4e9367ec689f).  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

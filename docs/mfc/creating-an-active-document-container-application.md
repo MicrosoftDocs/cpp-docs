@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "active documents [C++], containers"
-  - "containers [C++], active document"
-  - "active document containers [C++], creating"
-  - "MFC COM [C++], active document containment"
-  - "applications [MFC], active document container"
+dev_langs: ["C++"]
+helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Creating an Active Document Container Application
 The simplest and most recommended way to create an active document container application is to create an MFC EXE container application using the MFC Application Wizard, then modify the application to support active document containment.  
@@ -71,9 +51,9 @@ The simplest and most recommended way to create an active document container app
   
      Active document containment provides an improved printing scheme:  
   
-    -   You can first call the active document through its `IPrint`interface and tell it to print itself. This is different from previous OLE containment, in which the container had to render an image of the contained item onto the printer `CDC`object.  
+    -   You can first call the active document through its `IPrint` interface and tell it to print itself. This is different from previous OLE containment, in which the container had to render an image of the contained item onto the printer `CDC` object.  
   
-    -   If that fails, tell the contained item to print itself through its `IOleCommandTarget`interface  
+    -   If that fails, tell the contained item to print itself through its `IOleCommandTarget` interface  
   
     -   If that fails, make your own rendering of the item.  
   

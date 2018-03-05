@@ -4,46 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BEGIN_SCHEMA_MAP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BEGIN_SCHEMA_MAP macro"
+ms.topic: "reference"
+f1_keywords: ["BEGIN_SCHEMA_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BEGIN_SCHEMA_MAP macro"]
 ms.assetid: 4e751023-35bc-4efd-9018-5448dd1ad751
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_SCHEMA_MAP
 Denotes the beginning of a schema map.  
   
 ## Syntax  
   
-```  
-  
-      BEGIN_SCHEMA_MAP(  
-   SchemaClass   
-);  
+```cpp
+      BEGIN_SCHEMA_MAP(SchemaClass);  
 ```  
   
 #### Parameters  
@@ -51,7 +31,7 @@ Denotes the beginning of a schema map.
  The class that contains the MAP. Typically this will be the session class.  
   
 ## Remarks  
- See [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about schema rowsets.  
+ See [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the Windows SDK for more information about schema rowsets.  
   
 ## Requirements  
  **Header:** atldb.h  

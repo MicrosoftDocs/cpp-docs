@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wtoll"
-  - "_atoll_l"
-  - "_wtoll_l"
-  - "atoll"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wtoll", "_atoll_l", "_wtoll_l", "atoll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tstoll_l"
-  - "_wtoll"
-  - "_atoll_l"
-  - "_ttoll"
-  - "_tstoll"
-  - "_wtoll_l"
-  - "atoll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "atoll function"
-  - "_wtoll_l function"
-  - "_wtoll function"
-  - "_atoll_l function"
+f1_keywords: ["_tstoll_l", "_wtoll", "_atoll_l", "_ttoll", "_tstoll", "_wtoll_l", "atoll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["atoll function", "_wtoll_l function", "_wtoll function", "_atoll_l function"]
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # atoll, _atoll_l, _wtoll, _wtoll_l
 Converts a string to a `long long` integer.  
@@ -108,7 +67,7 @@ long long _wtoll_l(
 [whitespace] [sign] [digits]  
 ```  
   
- A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (–); and `digits` are one or more digits.  
+ A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.  
   
  `_wtoll` is identical to `atoll` except that it takes a wide character string as a parameter.  
   
@@ -178,12 +137,6 @@ Function: atoll("3336402735171707160320") = 9223372036854775807
 Overflow condition occurred.  
   
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Convert::ToInt64](https://msdn.microsoft.com/en-us/library/system.convert.toint64.aspx)  
-  
--   [System::Convert::ToUInt64](https://msdn.microsoft.com/en-us/library/system.convert.touint64.aspx)  
   
 ## See Also  
  [Data Conversion](../../c-runtime-library/data-conversion.md)   

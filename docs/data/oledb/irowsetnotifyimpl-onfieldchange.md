@@ -4,45 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IRowsetNotifyImpl.OnFieldChange"
-  - "IRowsetNotifyImpl::OnFieldChange"
-  - "OnFieldChange"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OnFieldChange method"
+ms.topic: "reference"
+f1_keywords: ["IRowsetNotifyImpl.OnFieldChange", "IRowsetNotifyImpl::OnFieldChange", "OnFieldChange"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OnFieldChange method"]
 ms.assetid: f26b492c-c86e-423b-9374-175e510a2860
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyImpl::OnFieldChange
 Notifies the consumer of any change to the value of a column.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 STDMETHOD(OnFieldChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ HROW /* hRow */,  

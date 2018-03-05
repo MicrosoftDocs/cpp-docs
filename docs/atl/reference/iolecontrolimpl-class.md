@@ -4,41 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IOleControlImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IOleControlImpl class"
+f1_keywords: ["IOleControlImpl", "ATLCTL/ATL::IOleControlImpl", "ATLCTL/ATL::IOleControlImpl::FreezeEvents", "ATLCTL/ATL::IOleControlImpl::GetControlInfo", "ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange", "ATLCTL/ATL::IOleControlImpl::OnMnemonic"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IOleControlImpl class"]
 ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IOleControlImpl Class
 This class provides a default implementation of the **IOleControl** interface and implements **IUnknown**.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -85,7 +68,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 ### Remarks  
  `FreezeEvents` then returns `S_OK`.  
   
- See [IOleControl::FreezeEvents](http://msdn.microsoft.com/library/windows/desktop/ms678482) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleControl::FreezeEvents](http://msdn.microsoft.com/library/windows/desktop/ms678482) in the Windows SDK.  
   
 ##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo  
  Fills in information about the control's keyboard behavior.  
@@ -95,7 +78,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```  
   
 ### Remarks  
- See [IOleControl:GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleControl:GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730) in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
@@ -111,7 +94,7 @@ HRESULT OnAmbientPropertyChange(DISPID dispid);
  Returns `S_OK`.  
   
 ### Remarks  
- See [IOleControl::OnAmbientPropertyChange](http://msdn.microsoft.com/library/windows/desktop/ms690175) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleControl::OnAmbientPropertyChange](http://msdn.microsoft.com/library/windows/desktop/ms690175) in the Windows SDK.  
   
 ##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic  
  Informs the control that a user has pressed a specified keystroke.  
@@ -124,7 +107,7 @@ HRESULT OnMnemonic(LPMSG pMsg);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleControl::OnMnemonic](http://msdn.microsoft.com/library/windows/desktop/ms680699) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleControl::OnMnemonic](http://msdn.microsoft.com/library/windows/desktop/ms680699) in the Windows SDK.  
   
 ## See Also  
  [IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)   

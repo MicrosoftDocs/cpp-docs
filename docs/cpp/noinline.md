@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "noinline"
-  - "noinline_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "noinline __declspec keyword"
-  - "__declspec keyword [C++], noinline"
+f1_keywords: ["noinline_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["noinline __declspec keyword", "__declspec keyword [C++], noinline"]
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # noinline
 ## Microsoft Specific  
@@ -52,7 +33,7 @@ class X {
 };  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__declspec](../cpp/declspec.md)   

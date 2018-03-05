@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCVisualManagerOffice2003"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCVisualManagerOffice2003 class"
+f1_keywords: ["CMFCVisualManagerOffice2003", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::DrawComboBorderWinXP", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::DrawComboDropButtonWinXP", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::DrawCustomizeButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::DrawPushButtonWinXP", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetBaseThemeColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetHighlightMenuItemColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetPropertyGridGroupColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetPropertyGridGroupTextColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetShowAllMenuItemsHeight", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetSmartDockingBaseGuideColors", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetSmartDockingHighlightToneColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetTabFrameColors", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetToolBarCustomizeButtonMargin", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetToolbarDisabledColor", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::GetToolTipInfo", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsDefaultWinXPColorsEnabled", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsDockingTabHasBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsHighlightOneNoteTabs", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsOffsetPressedButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsStatusBarOfficeXPLook", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsToolbarRoundShape", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsUseGlobalTheme", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::IsWindowsThemingSupported", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawAutoHideButtonBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawBarGripper", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawBrowseButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawButtonBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawCaptionBarBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawCheckBoxEx", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawComboBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawComboDropButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawControlBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawExpandingBox", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawHeaderCtrlBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawMenuBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawOutlookBarSplitter", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawOutlookPageButtonBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawPaneBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawPaneCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawPopupWindowBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawPopupWindowButtonBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawPopupWindowCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonButtonsGroup", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonCategoryCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonCategoryTab", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonProgressBar", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonQuickAccessToolBarSeparator", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonSliderChannel", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonSliderThumb", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonSliderZoomButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawRibbonStatusBarPane", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawScrollButtons", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawSeparator", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawShowAllMenuItems", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawStatusBarPaneBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawStatusBarProgress", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawStatusBarSizeBox", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTab", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTabsButtonBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTask", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTasksGroupAreaBorder", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTasksGroupCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnDrawTearOffCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnErasePopupWindowButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnEraseTabsArea", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnEraseTabsButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnEraseTabsFrame", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillBarBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillButtonInterior", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillCommandsListBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillHeaderCtrlBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillHighlightedArea", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillOutlookBarCaption", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillOutlookPageButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillPopupWindowBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillTab", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillTasksGroupInterior", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnFillTasksPaneBackground", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::OnUpdateSystemColors", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetDefaultWinXPColors", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook", "AFXVISUALMANAGEROFFICE2003/CMFCVisualManagerOffice2003::SetUseGlobalTheme"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCVisualManagerOffice2003 Class [MFC]"]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOffice2003 Class
 `CMFCVisualManagerOffice2003` gives an application a Microsoft Office 2003 appearance.  

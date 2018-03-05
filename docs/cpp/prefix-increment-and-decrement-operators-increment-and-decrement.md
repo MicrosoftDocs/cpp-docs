@@ -4,55 +4,33 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "--"
-  - "++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "increment operators, syntax"
-  - "++ operator, prefix increment operators"
-  - "operators [C++], decrement"
-  - "-- operator, prefix decrement operators"
-  - "operators [C++], increment"
-  - "decrement operators, syntax"
-  - "decrement operators"
+f1_keywords: ["--", "++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["increment operators [C++], syntax", "++ operator [C++], prefix increment operators", "operators [C++], decrement", "-- operator [C++], prefix decrement operators [C++]", "operators [C++], increment", "decrement operators [C++], syntax", "decrement operators [C++]"]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Prefix Increment and Decrement Operators: ++ and --
 ## Syntax  
   
 ```  
 ++ unary-expression  
-–– unary-expression  
+-- unary-expression  
 ```  
   
 ## Remarks  
  The prefix increment operator (`++`) adds one to its operand; this incremented value is the result of the expression. The operand must be an l-value not of type **const**. The result is an l-value of the same type as the operand.  
   
- The prefix decrement operator (**––**) is analogous to the prefix increment operator, except that the operand is decremented by one and the result is this decremented value.  
+ The prefix decrement operator (**--**) is analogous to the prefix increment operator, except that the operand is decremented by one and the result is this decremented value.  
+
+ **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of an increment or decrement operator may not be of type `bool`.
   
  Both the prefix and postfix increment and decrement operators affect their operands. The key difference between them is the order in which the increment or decrement takes place in the evaluation of an expression. (For more information, see [Postfix Increment and Decrement Operators](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) In the prefix form, the increment or decrement takes place before the value is used in expression evaluation, so the value of the expression is different from the value of the operand. In the postfix form, the increment or decrement takes place after the value is used in expression evaluation, so the value of the expression is the same as the value of the operand. For example, the following program prints "`++i = 6`":  
   

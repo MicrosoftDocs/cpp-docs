@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL.CSimpleStringT"
-  - "ATL::CSimpleStringT"
-  - "ATL::CSimpleStringT<BaseType>"
-  - "ATL.CSimpleStringT<BaseType>"
-  - "CSimpleStringT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "shared classes, CSimpleStringT"
-  - "strings [C++], ATL class"
-  - "CSimpleStringT class"
+f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL class", "CSimpleStringT class"]
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleStringT Class
 This class represents a `CSimpleStringT` object.  
@@ -414,7 +391,7 @@ PXSTR GetBuffer();
   
  The buffer memory is automatically freed when the `CSimpleStringT` object is destroyed.  
   
- If you keep track of the string length yourself, you should not append the terminating null character. However, you must specify the final string length when you release the buffer with `ReleaseBuffer`. If you do append a terminating null character, you should pass –1 (the default) for the length. `ReleaseBuffer` then determines the buffer length.  
+ If you keep track of the string length yourself, you should not append the terminating null character. However, you must specify the final string length when you release the buffer with `ReleaseBuffer`. If you do append a terminating null character, you should pass -1 (the default) for the length. `ReleaseBuffer` then determines the buffer length.  
   
  If there is insufficient memory to satisfy the `GetBuffer` request, this method throws a CMemoryException*.  
   
@@ -454,7 +431,7 @@ PXSTR GetBufferSetLength(int nLength);
   
  The buffer memory is automatically freed when the `CSimpleStringT` object is destroyed.  
   
- If you keep track of the string length yourself, do not not append the terminating null character. You must specify the final string length when you release the buffer by using `ReleaseBuffer`. If you do append a terminating null character when you call `ReleaseBuffer`, pass –1 (the default) for the length to `ReleaseBuffer`, and `ReleaseBuffer` will perform a `strlen` on the buffer to determine its length.  
+ If you keep track of the string length yourself, do not not append the terminating null character. You must specify the final string length when you release the buffer by using `ReleaseBuffer`. If you do append a terminating null character when you call `ReleaseBuffer`, pass -1 (the default) for the length to `ReleaseBuffer`, and `ReleaseBuffer` will perform a `strlen` on the buffer to determine its length.  
   
  For more information about reference counting, see the following articles:  
   
@@ -571,7 +548,7 @@ PXSTR LockBuffer();
  A pointer to a `CSimpleStringT` object or a null-terminated string.  
   
 ### Remarks  
- Call this method to lock the buffer of the `CSimpleStringT` object. By calling `LockBuffer`, you create a copy of the string, with a –1 for the reference count. When the reference count value is -1, the string in the buffer is considered to be in a "locked" state. While in a locked state, the string is protected in two ways:  
+ Call this method to lock the buffer of the `CSimpleStringT` object. By calling `LockBuffer`, you create a copy of the string, with a -1 for the reference count. When the reference count value is -1, the string in the buffer is considered to be in a "locked" state. While in a locked state, the string is protected in two ways:  
   
 -   No other string can get a reference to the data in the locked string, even if that string is assigned to the locked string.  
   

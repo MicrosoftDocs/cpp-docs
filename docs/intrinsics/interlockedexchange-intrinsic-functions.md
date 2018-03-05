@@ -4,73 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedExchange_rel"
-  - "_InterlockedExchange8_nf"
-  - "_InterlockedExchange_acq_cpp"
-  - "_InterlockedExchange_nf"
-  - "_InterlockedExchange64_nf"
-  - "_InterlockedExchange_HLEAcquire"
-  - "_InterlockedExchange_cpp"
-  - "_InterlockedExchange64_acq_cpp"
-  - "_InterlockedExchange64_acq"
-  - "_InterlockedExchange64_HLERelease"
-  - "_InterlockedExchange8_acq"
-  - "_InterlockedExchange16_acq"
-  - "_InterlockedExchange"
-  - "_InterlockedExchange64_HLEAcquire"
-  - "_InterlockedExchange8"
-  - "_InterlockedExchange64_rel"
-  - "_InterlockedExchange_acq"
-  - "_InterlockedExchange16"
-  - "_InterlockedExchange16_rel"
-  - "_InterlockedExchange16_nf"
-  - "_InterlockedExchange64"
-  - "_InterlockedExchange_HLERelease"
-  - "_InterlockedExchange64_cpp"
-  - "_InterlockedExchange8_rel"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_InterlockedExchange8"
-  - "_InterlockedExchange64 intrinsic"
-  - "_InterlockedExchange_acq intrinsic"
-  - "InterlockedExchange64 intrinsic"
-  - "_InterlockedExchange64_acq intrinsic"
-  - "InterlockedExchange64_acq intrinsic"
-  - "_InterlockedExchange16_acq"
-  - "_InterlockedExchange8_acq"
-  - "_InterlockedExchange16"
-  - "_InterlockedExchange8_rel"
-  - "InterlockedExchange_acq intrinsic"
-  - "InterlockedExchange intrinsic"
-  - "_InterlockedExchange16_rel"
-  - "_InterlockedExchange16_nf"
-  - "_InterlockedExchange intrinsic"
-  - "_InterlockedExchange8_nf"
+ms.topic: "reference"
+f1_keywords: ["_InterlockedExchange_rel", "_InterlockedExchange8_nf", "_InterlockedExchange_acq_cpp", "_InterlockedExchange_nf", "_InterlockedExchange64_nf", "_InterlockedExchange_HLEAcquire", "_InterlockedExchange_cpp", "_InterlockedExchange64_acq_cpp", "_InterlockedExchange64_acq", "_InterlockedExchange64_HLERelease", "_InterlockedExchange8_acq", "_InterlockedExchange16_acq", "_InterlockedExchange", "_InterlockedExchange64_HLEAcquire", "_InterlockedExchange8", "_InterlockedExchange64_rel", "_InterlockedExchange_acq", "_InterlockedExchange16", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange64", "_InterlockedExchange_HLERelease", "_InterlockedExchange64_cpp", "_InterlockedExchange8_rel"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_InterlockedExchange8", "_InterlockedExchange64 intrinsic", "_InterlockedExchange_acq intrinsic", "InterlockedExchange64 intrinsic", "_InterlockedExchange64_acq intrinsic", "InterlockedExchange64_acq intrinsic", "_InterlockedExchange16_acq", "_InterlockedExchange8_acq", "_InterlockedExchange16", "_InterlockedExchange8_rel", "InterlockedExchange_acq intrinsic", "InterlockedExchange intrinsic", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange intrinsic", "_InterlockedExchange8_nf"]
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedExchange Intrinsic Functions
 **Microsoft Specific**  
@@ -196,7 +141,7 @@ __int64 _InterlockedExchange64_rel(
 ## Example  
  For a sample of how to use `_InterlockedExchange`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

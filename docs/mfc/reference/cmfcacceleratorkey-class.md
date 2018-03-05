@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCAcceleratorKey"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCAcceleratorKey class"
+f1_keywords: ["CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::Format", "AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCAcceleratorKey [MFC], CMFCAcceleratorKey", "CMFCAcceleratorKey [MFC], Format", "CMFCAcceleratorKey [MFC], SetAccelerator"]
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCAcceleratorKey Class
 A helper class that implements virtual key mapping and formatting.  

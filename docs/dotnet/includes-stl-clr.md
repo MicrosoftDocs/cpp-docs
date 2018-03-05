@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::includes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "includes function [STL/CLR]"
+f1_keywords: ["cliext::includes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["includes function [STL/CLR]"]
 ms.assetid: 566307f4-92e0-4acc-ba49-caa48f3ec744
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # includes (STL/CLR)
 Tests whether one sorted range contains all the elements contained in a second sorted range, where the ordering or equivalence criterion between elements may be specified by a binary predicate.  
@@ -49,7 +32,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `includes`. For more information, see [includes](http://msdn.microsoft.com/Library/7038e179-3813-46f3-9b6f-85d8214e9768).  
+ This function behaves the same as the C++ Standard Library function `includes`. For more information, see [includes](../standard-library/algorithm-functions.md#includes).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

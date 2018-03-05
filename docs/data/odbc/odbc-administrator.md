@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "installing ODBC"
-  - "ODBC data sources [C++], ODBC Administrator"
-  - "ODBC drivers [C++], installing"
-  - "ODBC [C++], ODBC Administrator"
-  - "Administrator in ODBC"
-  - "administration ODBC Administrator"
-  - "ODBC Administrator [C++]"
-  - "drivers [C++], ODBC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["installing ODBC", "ODBC data sources [C++], ODBC Administrator", "ODBC drivers [C++], installing", "ODBC [C++], ODBC Administrator", "Administrator in ODBC", "administration ODBC Administrator", "ODBC Administrator [C++]", "drivers [C++], ODBC"]
 ms.assetid: b8652790-3437-4e7d-bc83-6ea6981f008b
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Administrator
 ODBC Administrator registers and configures the [data sources](../../data/odbc/data-source-odbc.md) available to you either locally or across a network. The wizards use information supplied by ODBC Administrator to create code in your applications that connects your users to data sources.  

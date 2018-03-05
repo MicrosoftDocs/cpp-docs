@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structured exception handling, termination handlers"
-  - "exceptions, terminating"
-  - "termination handlers, writing"
-  - "handlers"
-  - "handlers, termination"
-  - "termination handlers"
-  - "exception handling, termination handlers"
-  - "try-catch keyword [C++], termination handlers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["structured exception handling [C++], termination handlers", "exceptions [C++], terminating", "termination handlers [C++], writing", "handlers [C++]", "handlers [C++], termination", "termination handlers", "exception handling [C++], termination handlers", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Writing a Termination Handler
 Unlike an exception handler, a termination handler is always executed, regardless of whether the protected block of code terminated normally. The sole purpose of the termination handler should be to ensure that resources, such as memory, handles, and files, are properly closed regardless of how a section of code finishes executing.  

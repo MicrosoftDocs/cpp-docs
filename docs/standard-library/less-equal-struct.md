@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::less_equal"
-  - "xfunctional/std::less_equal"
-  - "std.less_equal"
-  - "less_equal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "less_equal function"
-  - "less_equal struct"
+ms.topic: "reference"
+f1_keywords: ["xfunctional/std::less_equal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["less_equal function", "less_equal struct"]
 ms.assetid: 32085782-c7e0-4310-9b40-8aa3c1bff211
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # less_equal Struct
 A binary predicate that performs the less-than-or-equal-to operation ( `operator<=`) on its arguments.  
@@ -72,7 +50,7 @@ struct less_equal<void>
  The right operand of the less-than-or-equal-to operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``<=``Right`. The specialized template does perfect forwarding of the result, which has the type returned by `operator<=`.  
+ The result of `Left <= Right`. The specialized template does perfect forwarding of the result, which has the type returned by `operator<=`.  
   
 ## Remarks  
  The binary predicate `less_equal`< `Type`> provides a strict weak ordering of a set of element values of type `Type` into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.comment"
-  - "comment_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "annotations [C++]"
-  - "comments [C++], compiled files"
-  - "pragmas, comment"
-  - "comment pragma"
+ms.topic: "reference"
+f1_keywords: ["vc-pragma.comment", "comment_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["annotations [C++]", "comments [C++], compiled files", "pragmas, comment", "comment pragma"]
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # comment (C/C++)
 Places a comment record into an object file or executable file.  

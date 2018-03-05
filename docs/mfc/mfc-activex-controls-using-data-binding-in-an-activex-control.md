@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "bindable"
-  - "requestedit"
-  - "defaultbind"
-  - "displaybind"
-  - "dispid"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, data binding"
-  - "data binding [C++], MFC ActiveX controls"
-  - "data-bound controls [C++], MFC ActiveX controls"
-  - "controls [MFC], data binding"
-  - "bound controls [C++], MFC ActiveX"
+f1_keywords: ["bindable", "requestedit", "defaultbind", "displaybind", "dispid"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], data binding", "data binding [MFC], MFC ActiveX controls", "data-bound controls [MFC], MFC ActiveX controls", "controls [MFC], data binding", "bound controls [MFC], MFC ActiveX"]
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Data Binding in an ActiveX Control
 One of the more powerful uses of ActiveX controls is data binding, which allows a property of the control to bind with a specific field in a database. When a user modifies data in this bound property, the control notifies the database and requests that the record field be updated. The database then notifies the control of the success or failure of the request.  
@@ -150,5 +125,4 @@ Conceptual Diagram of a Data-Bound Control
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
- [Data-Bound Controls (ADO and RDO)](../data/ado-rdo/data-bound-controls-ado-and-rdo.md)
 

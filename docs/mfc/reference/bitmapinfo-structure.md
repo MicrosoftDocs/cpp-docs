@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "BITMAPINFO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BITMAPINFO structure"
+f1_keywords: ["BITMAPINFO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BITMAPINFO structure [MFC]"]
 ms.assetid: a00caa49-e4df-419f-89a7-ab03c13a1b5b
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # BITMAPINFO Structure
 The `BITMAPINFO` structure defines the dimensions and color information for a Windows device-independent bitmap (DIB).  
@@ -58,7 +41,7 @@ typedef struct tagBITMAPINFO {
   
  A *packed bitmap* is a bitmap where the byte array immediately follows the `BITMAPINFO` structure. Packed bitmaps are referenced by a single pointer.  
   
- For more information about the `BITMAPINFO` structure and appropriate values for members of the `BITMAPINFOHEADER` and `RGBQUAD` structures, see the following topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation.  
+ For more information about the `BITMAPINFO` structure and appropriate values for members of the `BITMAPINFOHEADER` and `RGBQUAD` structures, see the following topics in the Windows SDK documentation.  
   
 - [BITMAPINFO structure](http://msdn.microsoft.com/library/windows/desktop/dd183375)  
   

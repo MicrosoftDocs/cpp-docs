@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property sheets, tab controls"
-  - "tab controls, and property sheets"
-  - "CTabCtrl class, and property sheets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["property sheets, tab controls", "tab controls [MFC], and property sheets", "CTabCtrl class [MFC], and property sheets"]
 ms.assetid: f3b87bea-9ad9-41e6-a7ff-a9285308267e
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Tab Controls and Property Sheets
 Property sheets are multiple-page dialogs or "tab dialogs" that can display up to 24 dialog template resources to the user. For examples of property sheets, see the Windows Display Properties dialog box or the following MFC sample application:  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers [C++], about providers"
-  - "databases [C++], OLE DB templates"
-  - "OLE DB provider templates [C++], about OLE DB provider templates"
-  - "templates [C++], OLE DB"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers [C++], about providers", "databases [C++], OLE DB templates", "OLE DB provider templates [C++], about OLE DB provider templates", "templates [C++], OLE DB"]
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates (C++)
 OLE DB is an important part of the Microsoft Universal Data Access strategy. The OLE DB design allows high-performance data access from any data source. Any tabular data is viewable through OLE DB regardless of whether it came from a database. The flexibility gives you a tremendous amount of power.  
@@ -61,7 +42,7 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
   
 -   Exposing your data to other data sources such as SQL Server, Excel, and Access. This can be very useful if you want to transfer data among different formats.  
   
--   Participating in cross–data source (heterogeneous) operations. This can be a very effective way of data warehousing. By using OLE DB providers, you can keep data in its native format and still be able to access it in a simple operation.  
+-   Participating in cross-data source (heterogeneous) operations. This can be a very effective way of data warehousing. By using OLE DB providers, you can keep data in its native format and still be able to access it in a simple operation.  
   
 -   Adding additional capabilities to your data, such as query processing.  
   
@@ -74,7 +55,7 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
   
 -   Visual C++ 6.0 supported only read-only providers. [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md) discusses how to create a read-only provider.  
   
--   Visual C++ .NET supports updatable providers, which can update (write to) the data store. For information about updatable providers, see [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md); the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample is an example of an updatable provider.  
+-   Visual C++ supports updatable providers, which can update (write to) the data store. For information about updatable providers, see [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md); the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample is an example of an updatable provider.  
   
  For more information, see:  
   
@@ -85,6 +66,6 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
 -   [OLE DB Programming](../../data/oledb/ole-db-programming.md)  
   
 ## See Also  
- [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)   
+ [Data Access](../data-access-in-cpp.md)   
  [OLE DB SDK Documentation](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
  [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)

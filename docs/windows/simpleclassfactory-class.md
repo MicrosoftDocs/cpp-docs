@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::SimpleClassFactory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SimpleClassFactory class"
+f1_keywords: ["module/Microsoft::WRL::SimpleClassFactory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SimpleClassFactory class"]
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleClassFactory Class
 Provides a fundamental mechanism to create a base class.  

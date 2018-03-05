@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CTaskDialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTaskDialog class"
+f1_keywords: ["CTaskDialog", "AFXTASKDIALOG/CTaskDialog", "AFXTASKDIALOG/CTaskDialog::CTaskDialog", "AFXTASKDIALOG/CTaskDialog::AddCommandControl", "AFXTASKDIALOG/CTaskDialog::AddRadioButton", "AFXTASKDIALOG/CTaskDialog::ClickCommandControl", "AFXTASKDIALOG/CTaskDialog::ClickRadioButton", "AFXTASKDIALOG/CTaskDialog::DoModal", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonCount", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonFlag", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonId", "AFXTASKDIALOG/CTaskDialog::GetOptions", "AFXTASKDIALOG/CTaskDialog::GetSelectedCommandControlID", "AFXTASKDIALOG/CTaskDialog::GetSelectedRadioButtonID", "AFXTASKDIALOG/CTaskDialog::GetVerificationCheckboxState", "AFXTASKDIALOG/CTaskDialog::IsCommandControlEnabled", "AFXTASKDIALOG/CTaskDialog::IsRadioButtonEnabled", "AFXTASKDIALOG/CTaskDialog::IsSupported", "AFXTASKDIALOG/CTaskDialog::LoadCommandControls", "AFXTASKDIALOG/CTaskDialog::LoadRadioButtons", "AFXTASKDIALOG/CTaskDialog::NavigateTo", "AFXTASKDIALOG/CTaskDialog::OnCommandControlClick", "AFXTASKDIALOG/CTaskDialog::OnCreate", "AFXTASKDIALOG/CTaskDialog::OnDestroy", "AFXTASKDIALOG/CTaskDialog::OnExpandButtonClick", "AFXTASKDIALOG/CTaskDialog::OnHelp", "AFXTASKDIALOG/CTaskDialog::OnHyperlinkClick", "AFXTASKDIALOG/CTaskDialog::OnInit", "AFXTASKDIALOG/CTaskDialog::OnNavigatePage", "AFXTASKDIALOG/CTaskDialog::OnRadioButtonClick", "AFXTASKDIALOG/CTaskDialog::OnTimer", "AFXTASKDIALOG/CTaskDialog::OnVerificationCheckboxClick", "AFXTASKDIALOG/CTaskDialog::RemoveAllCommandControls", "AFXTASKDIALOG/CTaskDialog::RemoveAllRadioButtons", "AFXTASKDIALOG/CTaskDialog::SetCommandControlOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtons", "AFXTASKDIALOG/CTaskDialog::SetContent", "AFXTASKDIALOG/CTaskDialog::SetDefaultCommandControl", "AFXTASKDIALOG/CTaskDialog::SetDefaultRadioButton", "AFXTASKDIALOG/CTaskDialog::SetDialogWidth", "AFXTASKDIALOG/CTaskDialog::SetExpansionArea", "AFXTASKDIALOG/CTaskDialog::SetFooterIcon", "AFXTASKDIALOG/CTaskDialog::SetFooterText", "AFXTASKDIALOG/CTaskDialog::SetMainIcon", "AFXTASKDIALOG/CTaskDialog::SetMainInstruction", "AFXTASKDIALOG/CTaskDialog::SetOptions", "AFXTASKDIALOG/CTaskDialog::SetProgressBarMarquee", "AFXTASKDIALOG/CTaskDialog::SetProgressBarPosition", "AFXTASKDIALOG/CTaskDialog::SetProgressBarRange", "AFXTASKDIALOG/CTaskDialog::SetProgressBarState", "AFXTASKDIALOG/CTaskDialog::SetRadioButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckbox", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckboxText", "AFXTASKDIALOG/CTaskDialog::SetWindowTitle", "AFXTASKDIALOG/CTaskDialog::ShowDialog", "AFXTASKDIALOG/CTaskDialog::TaskDialogCallback"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTaskDialog [MFC], CTaskDialog", "CTaskDialog [MFC], AddCommandControl", "CTaskDialog [MFC], AddRadioButton", "CTaskDialog [MFC], ClickCommandControl", "CTaskDialog [MFC], ClickRadioButton", "CTaskDialog [MFC], DoModal", "CTaskDialog [MFC], GetCommonButtonCount", "CTaskDialog [MFC], GetCommonButtonFlag", "CTaskDialog [MFC], GetCommonButtonId", "CTaskDialog [MFC], GetOptions", "CTaskDialog [MFC], GetSelectedCommandControlID", "CTaskDialog [MFC], GetSelectedRadioButtonID", "CTaskDialog [MFC], GetVerificationCheckboxState", "CTaskDialog [MFC], IsCommandControlEnabled", "CTaskDialog [MFC], IsRadioButtonEnabled", "CTaskDialog [MFC], IsSupported", "CTaskDialog [MFC], LoadCommandControls", "CTaskDialog [MFC], LoadRadioButtons", "CTaskDialog [MFC], NavigateTo", "CTaskDialog [MFC], OnCommandControlClick", "CTaskDialog [MFC], OnCreate", "CTaskDialog [MFC], OnDestroy", "CTaskDialog [MFC], OnExpandButtonClick", "CTaskDialog [MFC], OnHelp", "CTaskDialog [MFC], OnHyperlinkClick", "CTaskDialog [MFC], OnInit", "CTaskDialog [MFC], OnNavigatePage", "CTaskDialog [MFC], OnRadioButtonClick", "CTaskDialog [MFC], OnTimer", "CTaskDialog [MFC], OnVerificationCheckboxClick", "CTaskDialog [MFC], RemoveAllCommandControls", "CTaskDialog [MFC], RemoveAllRadioButtons", "CTaskDialog [MFC], SetCommandControlOptions", "CTaskDialog [MFC], SetCommonButtonOptions", "CTaskDialog [MFC], SetCommonButtons", "CTaskDialog [MFC], SetContent", "CTaskDialog [MFC], SetDefaultCommandControl", "CTaskDialog [MFC], SetDefaultRadioButton", "CTaskDialog [MFC], SetDialogWidth", "CTaskDialog [MFC], SetExpansionArea", "CTaskDialog [MFC], SetFooterIcon", "CTaskDialog [MFC], SetFooterText", "CTaskDialog [MFC], SetMainIcon", "CTaskDialog [MFC], SetMainInstruction", "CTaskDialog [MFC], SetOptions", "CTaskDialog [MFC], SetProgressBarMarquee", "CTaskDialog [MFC], SetProgressBarPosition", "CTaskDialog [MFC], SetProgressBarRange", "CTaskDialog [MFC], SetProgressBarState", "CTaskDialog [MFC], SetRadioButtonOptions", "CTaskDialog [MFC], SetVerificationCheckbox", "CTaskDialog [MFC], SetVerificationCheckboxText", "CTaskDialog [MFC], SetWindowTitle", "CTaskDialog [MFC], ShowDialog", "CTaskDialog [MFC], TaskDialogCallback"]
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CTaskDialog Class
 A pop-up dialog box that functions like a message box but can display additional information to the user. The `CTaskDialog` also includes functionality for gathering information from the user.  
@@ -789,7 +772,7 @@ void SetCommonButtonOptions(
 ### Remarks  
  You can set the common buttons available to an instance of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md) by using the constructor [CTaskDialog::CTaskDialog](#ctaskdialog) and the method [CTaskDialog::SetCommonButtons](#setcommonbuttons). `CTaskDialog::SetCommonButtonOptions` does not support adding new common buttons.  
   
- If you use this method to disable or elevate a common button that is not available for this `CTaskDialog`, this method throws an exception by using the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro.  
+ If you use this method to disable or elevate a common button that is not available for this `CTaskDialog`, this method throws an exception by using the [ENSURE](diagnostic-services.md#ensure) macro.  
   
  This method enables any button that is available to the `CTaskDialog` but is not in the `nDisabledButtonMask`, even if it was previously disabled. This method treats elevation in a similar manner: it records common buttons as not requiring elevation if the common button is available but not included in `nElevationButtonMask`.  
   
@@ -821,7 +804,7 @@ void SetCommonButtons(
   
  The buttons indicated by `nButtonMask` override any common buttons previously added to the `CTaskDialog`. Only the buttons indicated in `nButtonMask` are available.  
   
- If either `nDisabledButtonMask` or `nElevationButtonMask` contain a button that is not in `nButtonMask`, this method throws an exception by using the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro.  
+ If either `nDisabledButtonMask` or `nElevationButtonMask` contain a button that is not in `nButtonMask`, this method throws an exception by using the [ENSURE](diagnostic-services.md#ensure) macro.  
   
  By default, all common buttons are enabled and do not require elevation.  
   
@@ -935,7 +918,8 @@ void SetExpansionArea(
   
 ```  
 void SetFooterIcon(HICON hFooterIcon);  
-void SetFooterIcon(LPCWSTR lpszFooterIcon);```  
+void SetFooterIcon(LPCWSTR lpszFooterIcon);
+```  
   
 ### Parameters  
  [in] `hFooterIcon`  
@@ -947,7 +931,7 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);```
 ### Remarks  
  The footer icon is displayed on the bottom of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md). It can have associated footer text. You can change the footer text with [CTaskDialog::SetFooterText](#setfootertext).  
   
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if the `CTaskDialog` is displayed or the input parameter is `NULL`.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if the `CTaskDialog` is displayed or the input parameter is `NULL`.  
   
  A `CTaskDialog` can only accept an `HICON` or `LPCWSTR` as a footer icon. This is configured by setting the option `TDF_USE_HICON_FOOTER` in the constructor or [CTaskDialog::SetOptions](#setoptions). By default, the `CTaskDialog` is configured to use `LPCWSTR` as the input type for the footer icon. This method generates an exception if you try to set the icon using the inappropriate type.  
   
@@ -976,7 +960,8 @@ void SetFooterText(const CString& strFooterText);
   
 ```  
 void SetMainIcon(HICON hMainIcon);  
-void SetMainIcon(LPCWSTR lpszMainIcon);```  
+void SetMainIcon(LPCWSTR lpszMainIcon);
+```  
   
 ### Parameters  
  [in] `hMainIcon`  
@@ -986,7 +971,7 @@ void SetMainIcon(LPCWSTR lpszMainIcon);```
  The new icon.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if the `CTaskDialog` is displayed or the input parameter is `NULL`.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if the `CTaskDialog` is displayed or the input parameter is `NULL`.  
   
  A `CTaskDialog` can only accept an `HICON` or `LPCWSTR` as a main icon. You can configure this by setting the `TDF_USE_HICON_MAIN` option in the constructor or in the [CTaskDialog::SetOptions](#setoptions) method. By default, the `CTaskDialog` is configured to use `LPCWSTR` as the input type for the main icon. This method generates an exception if you try to set the icon using the inappropriate type.  
   
@@ -1098,7 +1083,7 @@ void SetProgressBarMarquee(
   
  Use `nMarqueeSpeed` to set the speed of the marquee bar; larger values indicate a slower speed. A value of 0 for `nMarqueeSpeed` makes the marquee bar move at the default speed for [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)].  
   
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if `nMarqueeSpeed` is less than 0.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if `nMarqueeSpeed` is less than 0.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
@@ -1115,7 +1100,7 @@ void SetProgressBarPosition(int nProgressPos);
  The position for the progress bar.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if `nProgressPos` is not in the progress bar range. You can change the progress bar range with [CTaskDialog::SetProgressBarRange](#setprogressbarrange).  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if `nProgressPos` is not in the progress bar range. You can change the progress bar range with [CTaskDialog::SetProgressBarRange](#setprogressbarrange).  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
@@ -1141,7 +1126,7 @@ void SetProgressBarRange(
   
  To display the progress bar, the option `TDF_SHOW_PROGRESS_BAR` must be enabled and `TDF_SHOW_MARQUEE_PROGRESS_BAR` must not be enabled. This method automatically sets `TDF_SHOW_PROGRESS_BAR` and clears `TDF_SHOW_MARQUEE_PROGRESS_BAR`. Use [CTaskDialog::SetOptions](#setoptions) to manually change the options for this instance of the [CTaskDialog Class](../../mfc/reference/ctaskdialog-class.md).  
   
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if `nRangeMin` is not less than `nRangeMax`. This method also throws an exception if the `CTaskDialog` is already displayed and has a marquee progress bar.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if `nRangeMin` is not less than `nRangeMax`. This method also throws an exception if the `CTaskDialog` is already displayed and has a marquee progress bar.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#4](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_7.cpp)]  
@@ -1158,7 +1143,7 @@ void SetProgressBarState(int nState = PBST_NORMAL);
  The state of the progress bar. See the Remarks section for the possible values.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if the `CTaskDialog` is already displayed and has a marquee progress bar.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if the `CTaskDialog` is already displayed and has a marquee progress bar.  
   
  The following table lists the possible values for `nState`. In all these cases, the progress bar will fill with the regular color until it reaches the designated stop position. At that point it will change color based on the state.  
   
@@ -1193,7 +1178,7 @@ void SetRadioButtonOptions(
  `TRUE` to enable the radio button; `FALSE` to disable the radio button.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if `nRadioButtonID` is not a valid ID for a radio button.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if `nRadioButtonID` is not a valid ID for a radio button.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#3](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_2.cpp)]  
@@ -1224,7 +1209,7 @@ void SetVerificationCheckboxText(CString& strVerificationText);
  The text that this method displays next to the verification check box.  
   
 ### Remarks  
- This method throws an exception with the [ENSURE](http://msdn.microsoft.com/library/738c4ccf-c29c-4c04-8d6c-f126bedf6e91) macro if this instance of the `CTaskDialog Class` is already displayed.  
+ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure) macro if this instance of the `CTaskDialog Class` is already displayed.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CTaskDialog#5](../../mfc/reference/codesnippet/cpp/ctaskdialog-class_4.cpp)]  

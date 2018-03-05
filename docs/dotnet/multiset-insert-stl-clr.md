@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::insert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert member [STL/CLR]"
+f1_keywords: ["cliext::multiset::insert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: 7a3b1cc8-ec60-4ed0-ace5-46cb5872e6e7
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::insert (STL/CLR)
 Adds elements.  
@@ -70,7 +53,7 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
   
  The second member function inserts an element with value `val`, using `where` as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
   
- The third member function inserts the sequence `[``first``,` `last``)`. You use it to insert zero or more elements copied from another sequence.  
+ The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.  
   
  The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
   

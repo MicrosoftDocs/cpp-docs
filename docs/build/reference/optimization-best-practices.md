@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, optimization"
-  - "optimization, best practices"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, optimization", "optimization, best practices"]
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Optimization Best Practices
 This document describes some best practices for optimization in Visual C++. The following topics are discussed:  
@@ -136,7 +118,7 @@ int myFunc() {...}
   
  The `__restrict` keyword replaces the **/Oa** switch from previous versions.  
   
- With `__assume,` a developer can tell the compiler to make assumptions about the value of some variable.  
+ With `__assume`, a developer can tell the compiler to make assumptions about the value of some variable.  
   
  For example `__assume(a < 5);` tells the optimizer that at that line of code the variable `a` is less than 5. Again this is a promise to the compiler. If `a` is actually 6 at this point in the program then the behavior of the program after the compiler has optimized may not be what you would expect. `__assume` is most useful prior to switch statements and/or conditional expressions.  
   
@@ -153,7 +135,7 @@ int myFunc() {...}
   
 3.  Your code gets the benefit of compiler optimizations. As the compiler gets better, the code generation for the intrinsics improves.  
   
- For more information, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md) and [Benefits of Using Intrinsics](http://msdn.microsoft.com/en-us/57af8920-527f-44af-a741-a07cbe80bf02).  
+ For more information, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).  
   
 ## Exceptions  
  There is a performance hit associated with using exceptions. Some restrictions are introduced when using try blocks that inhibit the compiler from performing certain optimizations. On x86 platforms there is additional performance degradation from try blocks due to additional state information that must be generated during code execution. On the 64-bit platforms, try blocks do not degrade performance as much, but once an exception is thrown, the process of finding the handler and unwinding the stack can be expensive.  

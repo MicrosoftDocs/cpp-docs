@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRecordset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "database records [C++]"
-  - "CRecordset class"
-  - "ODBC recordsets [C++], CRecordset objects"
-  - "sets of records [C++]"
+f1_keywords: ["CRecordset", "AFXDB/CRecordset", "AFXDB/CRecordset::CRecordset", "AFXDB/CRecordset::AddNew", "AFXDB/CRecordset::CanAppend", "AFXDB/CRecordset::CanBookmark", "AFXDB/CRecordset::Cancel", "AFXDB/CRecordset::CancelUpdate", "AFXDB/CRecordset::CanRestart", "AFXDB/CRecordset::CanScroll", "AFXDB/CRecordset::CanTransact", "AFXDB/CRecordset::CanUpdate", "AFXDB/CRecordset::CheckRowsetError", "AFXDB/CRecordset::Close", "AFXDB/CRecordset::Delete", "AFXDB/CRecordset::DoBulkFieldExchange", "AFXDB/CRecordset::DoFieldExchange", "AFXDB/CRecordset::Edit", "AFXDB/CRecordset::FlushResultSet", "AFXDB/CRecordset::GetBookmark", "AFXDB/CRecordset::GetDefaultConnect", "AFXDB/CRecordset::GetDefaultSQL", "AFXDB/CRecordset::GetFieldValue", "AFXDB/CRecordset::GetODBCFieldCount", "AFXDB/CRecordset::GetODBCFieldInfo", "AFXDB/CRecordset::GetRecordCount", "AFXDB/CRecordset::GetRowsetSize", "AFXDB/CRecordset::GetRowsFetched", "AFXDB/CRecordset::GetRowStatus", "AFXDB/CRecordset::GetSQL", "AFXDB/CRecordset::GetStatus", "AFXDB/CRecordset::GetTableName", "AFXDB/CRecordset::IsBOF", "AFXDB/CRecordset::IsDeleted", "AFXDB/CRecordset::IsEOF", "AFXDB/CRecordset::IsFieldDirty", "AFXDB/CRecordset::IsFieldNull", "AFXDB/CRecordset::IsFieldNullable", "AFXDB/CRecordset::IsOpen", "AFXDB/CRecordset::Move", "AFXDB/CRecordset::MoveFirst", "AFXDB/CRecordset::MoveLast", "AFXDB/CRecordset::MoveNext", "AFXDB/CRecordset::MovePrev", "AFXDB/CRecordset::OnSetOptions", "AFXDB/CRecordset::OnSetUpdateOptions", "AFXDB/CRecordset::Open", "AFXDB/CRecordset::RefreshRowset", "AFXDB/CRecordset::Requery", "AFXDB/CRecordset::SetAbsolutePosition", "AFXDB/CRecordset::SetBookmark", "AFXDB/CRecordset::SetFieldDirty", "AFXDB/CRecordset::SetFieldNull", "AFXDB/CRecordset::SetLockingMode", "AFXDB/CRecordset::SetParamNull", "AFXDB/CRecordset::SetRowsetCursorPosition", "AFXDB/CRecordset::SetRowsetSize", "AFXDB/CRecordset::Update", "AFXDB/CRecordset::m_hstmt", "AFXDB/CRecordset::m_nFields", "AFXDB/CRecordset::m_nParams", "AFXDB/CRecordset::m_pDatabase", "AFXDB/CRecordset::m_strFilter", "AFXDB/CRecordset::m_strSort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRecordset [MFC], CRecordset", "CRecordset [MFC], AddNew", "CRecordset [MFC], CanAppend", "CRecordset [MFC], CanBookmark", "CRecordset [MFC], Cancel", "CRecordset [MFC], CancelUpdate", "CRecordset [MFC], CanRestart", "CRecordset [MFC], CanScroll", "CRecordset [MFC], CanTransact", "CRecordset [MFC], CanUpdate", "CRecordset [MFC], CheckRowsetError", "CRecordset [MFC], Close", "CRecordset [MFC], Delete", "CRecordset [MFC], DoBulkFieldExchange", "CRecordset [MFC], DoFieldExchange", "CRecordset [MFC], Edit", "CRecordset [MFC], FlushResultSet", "CRecordset [MFC], GetBookmark", "CRecordset [MFC], GetDefaultConnect", "CRecordset [MFC], GetDefaultSQL", "CRecordset [MFC], GetFieldValue", "CRecordset [MFC], GetODBCFieldCount", "CRecordset [MFC], GetODBCFieldInfo", "CRecordset [MFC], GetRecordCount", "CRecordset [MFC], GetRowsetSize", "CRecordset [MFC], GetRowsFetched", "CRecordset [MFC], GetRowStatus", "CRecordset [MFC], GetSQL", "CRecordset [MFC], GetStatus", "CRecordset [MFC], GetTableName", "CRecordset [MFC], IsBOF", "CRecordset [MFC], IsDeleted", "CRecordset [MFC], IsEOF", "CRecordset [MFC], IsFieldDirty", "CRecordset [MFC], IsFieldNull", "CRecordset [MFC], IsFieldNullable", "CRecordset [MFC], IsOpen", "CRecordset [MFC], Move", "CRecordset [MFC], MoveFirst", "CRecordset [MFC], MoveLast", "CRecordset [MFC], MoveNext", "CRecordset [MFC], MovePrev", "CRecordset [MFC], OnSetOptions", "CRecordset [MFC], OnSetUpdateOptions", "CRecordset [MFC], Open", "CRecordset [MFC], RefreshRowset", "CRecordset [MFC], Requery", "CRecordset [MFC], SetAbsolutePosition", "CRecordset [MFC], SetBookmark", "CRecordset [MFC], SetFieldDirty", "CRecordset [MFC], SetFieldNull", "CRecordset [MFC], SetLockingMode", "CRecordset [MFC], SetParamNull", "CRecordset [MFC], SetRowsetCursorPosition", "CRecordset [MFC], SetRowsetSize", "CRecordset [MFC], Update", "CRecordset [MFC], m_hstmt", "CRecordset [MFC], m_nFields", "CRecordset [MFC], m_nParams", "CRecordset [MFC], m_pDatabase", "CRecordset [MFC], m_strFilter", "CRecordset [MFC], m_strSort"]
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRecordset Class
 Represents a set of records selected from a data source.  
@@ -315,7 +295,7 @@ virtual void CheckRowsetError(RETCODE nRetCode);
 |**SQL_INVALID_HANDLE**|Function failed due to an invalid environment handle, connection handle, or statement handle. This indicates a programming error. No additional information is available from **SQLError**.|  
 |`SQL_STILL_EXECUTING`|A function that was started asynchronously is still executing. Note that by default, MFC will never pass this value to `CheckRowsetError`; MFC will continue calling **SQLExtendedFetch** until it no longer returns `SQL_STILL_EXECUTING`.|  
   
- For more information about **SQLError**, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+ For more information about **SQLError**, see the Windows SDK. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ##  <a name="close"></a>  CRecordset::Close  
  Closes the recordset.  
@@ -476,7 +456,7 @@ BOOL FlushResultSet();
   
  If a predefined query uses an output parameter or input/output parameters, you must call `FlushResultSet` until it returns `FALSE` (the value 0), in order to obtain these parameter values.  
   
- `FlushResultSet` calls the ODBC API function `SQLMoreResults`. If `SQLMoreResults` returns `SQL_ERROR` or `SQL_INVALID_HANDLE`, then `FlushResultSet` will throw an exception. For more information about `SQLMoreResults`, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `FlushResultSet` calls the ODBC API function `SQLMoreResults`. If `SQLMoreResults` returns `SQL_ERROR` or `SQL_INVALID_HANDLE`, then `FlushResultSet` will throw an exception. For more information about `SQLMoreResults`, see the Windows SDK.  
   
  Your stored procedure needs to have bound fields if you want to call `FlushResultSet`.  
   
@@ -594,7 +574,7 @@ void GetFieldValue(
 |**SQL_C_CHAR**|**SQL_NUMERICSQL_DECIMALSQL_BIGINTSQL_CHARSQL_VARCHARSQL_LONGVARCHAR**|  
 |**SQL_C_BINARY**|**SQL_BINARYSQL_VARBINARYSQL_LONGVARBINARY**|  
   
- For more information about ODBC data types, see the topics "SQL Data Types" and "C Data Types" in Appendix D of the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about ODBC data types, see the topics "SQL Data Types" and "C Data Types" in Appendix D of the Windows SDK.  
   
  `nIndex`  
  The zero-based index of the field.  
@@ -612,7 +592,7 @@ void GetFieldValue(
 > [!NOTE]
 >  If you declare a recordset object without deriving from `CRecordset`, do not have the ODBC Cursor Library loaded. The cursor library requires that the recordset have at least one bound column; however, when you use `CRecordset` directly, none of the columns are bound. The member functions [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) and [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) control whether the cursor library will be loaded.  
   
- `GetFieldValue` calls the ODBC API function **SQLGetData**. If your driver outputs the value **SQL_NO_TOTAL** for the actual length of the field value, `GetFieldValue` throws an exception. For more information about **SQLGetData**, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ `GetFieldValue` calls the ODBC API function **SQLGetData**. If your driver outputs the value **SQL_NO_TOTAL** for the actual length of the field value, `GetFieldValue` throws an exception. For more information about **SQLGetData**, see the Windows SDK.  
   
 ### Example  
  The following sample code illustrates calls to `GetFieldValue` for a recordset object declared directly from `CRecordset`.  
@@ -676,7 +656,7 @@ long GetRecordCount() const;
 ```  
   
 ### Return Value  
- The number of records in the recordset; 0 if the recordset contains no records; or –1 if the record count cannot be determined.  
+ The number of records in the recordset; 0 if the recordset contains no records; or -1 if the record count cannot be determined.  
   
 ### Remarks  
   
@@ -746,7 +726,7 @@ WORD GetRowStatus(WORD wRow) const;
 |`SQL_ROW_ERROR`|The row is unretrievable due to an error.|  
 |`SQL_ROW_NOROW`|There is no row that corresponds to `wRow`.|  
   
- For more information, see the ODBC API function **SQLExtendedFetch** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the ODBC API function **SQLExtendedFetch** in the Windows SDK.  
   
 ##  <a name="getstatus"></a>  CRecordset::GetStatus  
  Determines the index of the current record in the recordset and whether the last record has been seen.  
@@ -776,9 +756,9 @@ void GetStatus(CRecordsetStatus& rStatus) const;
   
  The two members of **CRecordsetStatus** have the following meanings:  
   
-- **m_lCurrentRecord** Contains the zero-based index of the current record in the recordset, if known. If the index cannot be determined, this member contains **AFX_CURRENT_RECORD_UNDEFINED** (–2). If `IsBOF` is **TRUE** (empty recordset or attempt to scroll before first record), then **m_lCurrentRecord** is set to **AFX_CURRENT_RECORD_BOF** (–1). If on the first record, then it is set to 0, second record 1, and so on.  
+- **m_lCurrentRecord** Contains the zero-based index of the current record in the recordset, if known. If the index cannot be determined, this member contains **AFX_CURRENT_RECORD_UNDEFINED** (-2). If `IsBOF` is **TRUE** (empty recordset or attempt to scroll before first record), then **m_lCurrentRecord** is set to **AFX_CURRENT_RECORD_BOF** (-1). If on the first record, then it is set to 0, second record 1, and so on.  
   
-- **m_bRecordCountFinal** Nonzero if the total number of records in the recordset has been determined. Generally this must be accomplished by starting at the beginning of the recordset and calling `MoveNext` until `IsEOF` returns nonzero. If this member is zero, the record count as returned by `GetRecordCount`, if not –1, is only a "high water mark" count of the records.  
+- **m_bRecordCountFinal** Nonzero if the total number of records in the recordset has been determined. Generally this must be accomplished by starting at the beginning of the recordset and calling `MoveNext` until `IsEOF` returns nonzero. If this member is zero, the record count as returned by `GetRecordCount`, if not -1, is only a "high water mark" count of the records.  
   
 ##  <a name="getsql"></a>  CRecordset::GetSQL  
  Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.  
@@ -1039,7 +1019,7 @@ BOOL IsOpen() const;
   
  `ORDER BY sort-specification [, sort-specification]...`  
   
- where a sort-specification is an integer or a column name. You can also specify ascending or descending order (the order is ascending by default) by appending "ASC" or "DESC" to the column list in the sort string. The selected records are sorted first by the first column listed, then by the second, and so on. For example, you might order a "Customers" recordset by last name, then first name. The number of columns you can list depends on the data source. For more information, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ where a sort-specification is an integer or a column name. You can also specify ascending or descending order (the order is ascending by default) by appending "ASC" or "DESC" to the column list in the sort string. The selected records are sorted first by the first column listed, then by the second, and so on. For example, you might order a "Customers" recordset by last name, then first name. The number of columns you can list depends on the data source. For more information, see the Windows SDK.  
   
  Note that you do not include the **ORDER BY** keyword in your string. The framework supplies it.  
   
@@ -1098,7 +1078,7 @@ virtual void Move(
 > [!NOTE]
 >  If you call **Move** while the current record is being updated or added, the updates are lost without warning.  
   
- For more information about recordset navigation, see the articles [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) and [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). For related information, see the ODBC API function **SQLExtendedFetch** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about recordset navigation, see the articles [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md) and [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md). For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). For related information, see the ODBC API function **SQLExtendedFetch** in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDatabase#28](../../mfc/codesnippet/cpp/crecordset-class_14.cpp)]  
@@ -1276,7 +1256,7 @@ virtual BOOL Open(
   
      For `CRecordset`, the default value is **CRecordset::snapshot**. The default-value mechanism allows the Visual C++ wizards to interact with both ODBC `CRecordset` and DAO `CDaoRecordset`, which have different defaults.  
   
- For more information about these recordset types, see the article [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For related information, see the article "Using Block and Scrollable Cursors" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about these recordset types, see the article [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For related information, see the article "Using Block and Scrollable Cursors" in the Windows SDK.  
   
 > [!CAUTION]
 >  If the requested type is not supported, the framework throws an exception.  
@@ -1381,7 +1361,7 @@ void RefreshRowset(
   
  To use `RefreshRowset`, you must have implemented bulk row fetching by specifying the **CRecordset::useMulitRowFetch** option in the [Open](#open) member function.  
   
- `RefreshRowset` calls the ODBC API function **SQLSetPos**. The `wLockType` parameter specifies the lock state of the row after **SQLSetPos** has executed. The following table describes the possible values for `wLockTyp`e.  
+ `RefreshRowset` calls the ODBC API function **SQLSetPos**. The `wLockType` parameter specifies the lock state of the row after **SQLSetPos** has executed. The following table describes the possible values for `wLockType`.  
   
 |wLockType|Description|  
 |---------------|-----------------|  
@@ -1389,7 +1369,7 @@ void RefreshRowset(
 |`SQL_LOCK_EXCLUSIVE`|The driver or data source locks the row exclusively. Not all data sources support this type of lock.|  
 |`SQL_LOCK_UNLOCK`|The driver or data source unlocks the row. Not all data sources support this type of lock.|  
   
- For more information about **SQLSetPos**, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+ For more information about **SQLSetPos**, see the Windows SDK. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ##  <a name="requery"></a>  CRecordset::Requery  
  Rebuilds (refreshes) a recordset.  
@@ -1605,7 +1585,7 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
   
  To use `SetRowsetCursorPosition`, you must have implemented bulk row fetching by specifying the `CRecordset::useMultiRowFetch` option of the `dwOptions` parameter in the [Open](#open) member function.  
   
- `SetRowsetCursorPosition` calls the ODBC API function **SQLSetPos**. The `wLockType` parameter specifies the lock state of the row after **SQLSetPos** has executed. The following table describes the possible values for `wLockTyp`e.  
+ `SetRowsetCursorPosition` calls the ODBC API function **SQLSetPos**. The `wLockType` parameter specifies the lock state of the row after **SQLSetPos** has executed. The following table describes the possible values for `wLockType`.  
   
 |wLockType|Description|  
 |---------------|-----------------|  
@@ -1613,7 +1593,7 @@ void SetRowsetCursorPosition(WORD wRow, WORD wLockType = SQL_LOCK_NO_CHANGE);
 |`SQL_LOCK_EXCLUSIVE`|The driver or data source locks the row exclusively. Not all data sources support this type of lock.|  
 |`SQL_LOCK_UNLOCK`|The driver or data source unlocks the row. Not all data sources support this type of lock.|  
   
- For more information about **SQLSetPos**, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
+ For more information about **SQLSetPos**, see the Windows SDK. For more information about bulk row fetching, see the article [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
 ##  <a name="setrowsetsize"></a>  CRecordset::SetRowsetSize  
  Specifies the number of records you wish to retrieve during a fetch.  

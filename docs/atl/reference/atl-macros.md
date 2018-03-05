@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, macros"
-  - "macros, ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, macros", "macros, ATL"]
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ATL Macros
 To find an ATL macro by category, see the following topics.  
@@ -84,7 +67,7 @@ To find an ATL macro by category, see the following topics.
  [Snap-In Object Macros](../../atl/reference/snap-in-object-macros.md)  
  Provide support for snap-in extensions.  
   
- [String Conversion Macros](http://msdn.microsoft.com/library/8f53659e-0464-4424-97db-6b8453c49863)  
+ [String Conversion Macros](string-conversion-macros.md)  
  Provide string conversion features.  
   
  [Window Class Macros](../../atl/reference/window-class-macros.md)  

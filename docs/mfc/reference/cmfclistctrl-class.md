@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCListCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCListCtrl class"
+f1_keywords: ["CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn", "AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort", "AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl", "AFXLISTCTRL/CMFCListCtrl::IsMultipleSort", "AFXLISTCTRL/CMFCListCtrl::OnCompareItems", "AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor", "AFXLISTCTRL/CMFCListCtrl::OnGetCellFont", "AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor", "AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn", "AFXLISTCTRL/CMFCListCtrl::SetSortColumn", "AFXLISTCTRL/CMFCListCtrl::Sort"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtrl [MFC], EnableMultipleSort", "CMFCListCtrl [MFC], GetHeaderCtrl", "CMFCListCtrl [MFC], IsMultipleSort", "CMFCListCtrl [MFC], OnCompareItems", "CMFCListCtrl [MFC], OnGetCellBkColor", "CMFCListCtrl [MFC], OnGetCellFont", "CMFCListCtrl [MFC], OnGetCellTextColor", "CMFCListCtrl [MFC], RemoveSortColumn", "CMFCListCtrl [MFC], SetSortColumn", "CMFCListCtrl [MFC], Sort"]
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCListCtrl Class
 The `CMFCListCtrl` class extends the functionality of [CListCtrl Class](../../mfc/reference/clistctrl-class.md) class by supporting the advanced header control functionality of the [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md).  

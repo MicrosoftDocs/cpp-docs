@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WinMain method, calls CWinApp::Run"
-  - "messages, loops"
-  - "Run method, messages and idle processing"
-  - "message pump in CWinApp::Run"
-  - "WinMain method"
-  - "CWinApp class, Run"
+dev_langs: ["C++"]
+helpviewer_keywords: ["WinMain method [MFC]"]
 ms.assetid: 24ab7597-2354-495b-9a20-2c8ccc7385b3
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Run Member Function
 A framework application spends most of its time in the [Run](../mfc/reference/cwinapp-class.md#run) member function of class [CWinApp](../mfc/reference/cwinapp-class.md). After initialization, `WinMain` calls **Run** to process the message loop.  

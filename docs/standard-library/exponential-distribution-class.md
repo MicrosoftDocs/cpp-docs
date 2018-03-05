@@ -4,57 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "exponential_distribution"
-  - "std::exponential_distribution"
-  - "random/std::exponential_distribution"
-  - "std::exponential_distribution::reset"
-  - "random/std::exponential_distribution::reset"
-  - "std::exponential_distribution::lambda"
-  - "random/std::exponential_distribution::lambda"
-  - "std::exponential_distribution::param"
-  - "random/std::exponential_distribution::param"
-  - "std::exponential_distribution::min"
-  - "random/std::exponential_distribution::min"
-  - "std::exponential_distribution::max"
-  - "random/std::exponential_distribution::max"
-  - "std::exponential_distribution::operator()"
-  - "random/std::exponential_distribution::operator()"
-  - "std::exponential_distribution::param_type"
-  - "random/std::exponential_distribution::param_type"
-  - "std::exponential_distribution::param_type::lambda"
-  - "random/std::exponential_distribution::param_type::lambda"
-  - "std::exponential_distribution::param_type::operator=="
-  - "random/std::exponential_distribution::param_type::operator=="
-  - "std::exponential_distribution::param_type::operator!="
-  - "random/std::exponential_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exponential_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::exponential_distribution [C++]", "std::exponential_distribution [C++], reset", "std::exponential_distribution [C++], lambda", "std::exponential_distribution [C++], param", "std::exponential_distribution [C++], min", "std::exponential_distribution [C++], max", "std::exponential_distribution [C++], param_type", "std::exponential_distribution [C++], param_type"]
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # exponential_distribution Class
 Generates an exponential distribution.  
@@ -102,8 +63,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[exponential_distribution::exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
-|`exponential_distribution::operator()`||[exponential_distribution::param_type](#exponential_distribution__param_type)|  
+|[exponential_distribution](#exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
+|`exponential_distribution::operator()`||[param_type](#param_type)|  
   
 The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.  
   
@@ -111,7 +72,7 @@ The property member function `param()` sets or returns the `param_type` stored d
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/LinkId=401098).  
+For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/p/?linkid=401098).  
   
 ## Example  
   
@@ -194,7 +155,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="exponential_distribution__exponential_distribution"></a>  exponential_distribution::exponential_distribution  
+##  <a name="exponential_distribution"></a>  exponential_distribution::exponential_distribution  
  Constructs the distribution.  
   
 ```  
@@ -216,7 +177,7 @@ The first constructor constructs an object whose stored `lambda` value holds the
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="exponential_distribution__param_type"></a>  exponential_distribution::param_type  
+##  <a name="param_type"></a>  exponential_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```

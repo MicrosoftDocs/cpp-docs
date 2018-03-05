@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application wizards [C++], record view code"
-  - "record views, refreshing controls"
-  - "record views, application wizard code"
+dev_langs: ["C++"]
+helpviewer_keywords: ["application wizards [C++], record view code", "record views, refreshing controls", "record views, application wizard code"]
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record View Code Created by Application Wizard  (MFC Data Access)
 The [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md) overrides the view's `OnInitialUpdate` and `OnGetRecordset` member functions. After the framework creates the frame window, document, and view, it calls `OnInitialUpdate` to initialize the view. `OnInitialUpdate` obtains a pointer to the recordset from the document. A call to the base class [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) function opens the recordset. The following code shows this process for a `CRecordView`:  

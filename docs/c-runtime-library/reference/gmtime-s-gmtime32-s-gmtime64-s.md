@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_gmtime32_s"
-  - "gmtime_s"
-  - "_gmtime64_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_gmtime32_s", "gmtime_s", "_gmtime64_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_gmtime_s"
-  - "gmtime64_s"
-  - "gmtime32_s"
-  - "_gmtime64_s"
-  - "gmtime_s"
-  - "_gmtime32_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gmtime_s function"
-  - "gmtime32_s function"
-  - "time functions"
-  - "gmtime64_s function"
-  - "_gmtime64_s function"
-  - "time structure conversion"
-  - "_gmtime_s function"
-  - "_gmtime32_s function"
+f1_keywords: ["_gmtime_s", "gmtime64_s", "gmtime32_s", "_gmtime64_s", "gmtime_s", "_gmtime32_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["gmtime_s function", "gmtime32_s function", "time functions", "gmtime64_s function", "_gmtime64_s function", "time structure conversion", "_gmtime_s function", "_gmtime32_s function"]
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # gmtime_s, _gmtime32_s, _gmtime64_s
 Converts a time value to a structure. These are versions of [_gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -112,28 +69,28 @@ errno_t _gmtime64_s(
  Each of the structure fields is of type `int`, as shown in the following table.  
   
  `tm_sec`  
- Seconds after minute (0 – 59).  
+ Seconds after minute (0 - 59).  
   
  `tm_min`  
- Minutes after hour (0 – 59).  
+ Minutes after hour (0 - 59).  
   
  `tm_hour`  
- Hours since midnight (0 – 23).  
+ Hours since midnight (0 - 23).  
   
  `tm_mday`  
- Day of month (1 – 31).  
+ Day of month (1 - 31).  
   
  `tm_mon`  
- Month (0 – 11; January = 0).  
+ Month (0 - 11; January = 0).  
   
  `tm_year`  
  Year (current year minus 1900).  
   
  `tm_wday`  
- Day of week (0 – 6; Sunday = 0).  
+ Day of week (0 - 6; Sunday = 0).  
   
  `tm_yday`  
- Day of year (0 – 365; January 1 = 0).  
+ Day of year (0 - 365; January 1 = 0).  
   
  `tm_isdst`  
  Always 0 for `gmtime`.  
@@ -195,12 +152,6 @@ int main( void )
 ```Output  
 Coordinated universal time is Fri Apr 25 20:12:33 2003  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::DateTime::UtcNow](https://msdn.microsoft.com/en-us/library/system.datetime.utcnow.aspx)  
-  
--   [System::DateTime::ToUniversalTime](https://msdn.microsoft.com/en-us/library/system.datetime.touniversaltime.aspx)  
   
 ## See Also  
  [Time Management](../../c-runtime-library/time-management.md)   

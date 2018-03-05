@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.version.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Version Information editor, about Version Information editor"
-  - "editors, Version Information"
-  - "resource editors, Version Information editor"
+f1_keywords: ["vc.editors.version.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Version Information editor, about Version Information editor", "editors, Version Information", "resource editors, Version Information editor"]
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Version Information Editor
 Version information consists of company and product identification, a product release number, and copyright and trademark notification. With the Version Information editor, you create and maintain this data, which is stored in the version information resource. The version information resource is not required by an application, but it is a useful place to collect information that identifies the application. Version information is also used by setup APIs.  
@@ -58,7 +38,7 @@ Version information consists of company and product identification, a product re
     > [!NOTE]
     >  While using the Version Information editor, in many instances you can right-click to display a shortcut menu of resource-specific commands. For example, if you click while pointing to a block header entry, the shortcut menu shows the New Version Block Info and Delete Version Block Info commands.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  

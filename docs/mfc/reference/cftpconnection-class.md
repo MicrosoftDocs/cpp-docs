@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CFtpConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFtpConnection class"
-  - "FTP (File Transfer Protocol), establishing connections"
-  - "Internet connections, FTP"
-  - "Internet services, FTP"
+f1_keywords: ["CFtpConnection", "AFXINET/CFtpConnection", "AFXINET/CFtpConnection::CFtpConnection", "AFXINET/CFtpConnection::Command", "AFXINET/CFtpConnection::CreateDirectory", "AFXINET/CFtpConnection::GetCurrentDirectory", "AFXINET/CFtpConnection::GetCurrentDirectoryAsURL", "AFXINET/CFtpConnection::GetFile", "AFXINET/CFtpConnection::OpenFile", "AFXINET/CFtpConnection::PutFile", "AFXINET/CFtpConnection::Remove", "AFXINET/CFtpConnection::RemoveDirectory", "AFXINET/CFtpConnection::Rename", "AFXINET/CFtpConnection::SetCurrentDirectory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFtpConnection [MFC], CFtpConnection", "CFtpConnection [MFC], Command", "CFtpConnection [MFC], CreateDirectory", "CFtpConnection [MFC], GetCurrentDirectory", "CFtpConnection [MFC], GetCurrentDirectoryAsURL", "CFtpConnection [MFC], GetFile", "CFtpConnection [MFC], OpenFile", "CFtpConnection [MFC], PutFile", "CFtpConnection [MFC], Remove", "CFtpConnection [MFC], RemoveDirectory", "CFtpConnection [MFC], Rename", "CFtpConnection [MFC], SetCurrentDirectory"]
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CFtpConnection Class
 Manages your FTP connection to an Internet server and allows direct manipulation of directories and files on that server.  
@@ -178,7 +158,7 @@ CInternetFile* Command(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the Windows SDK.  
   
  If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).  
   
@@ -312,7 +292,7 @@ BOOL GetFile(
 -   FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
  `dwFlags`  
- Specifies the conditions under which the transfer occurs. This parameter can be any of the `dwFlags` values described in [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the conditions under which the transfer occurs. This parameter can be any of the `dwFlags` values described in [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) in the Windows SDK.  
   
  `dwContext`  
  The context identifier for the file retrieval. See **Remarks** for more information about `dwContext`.  

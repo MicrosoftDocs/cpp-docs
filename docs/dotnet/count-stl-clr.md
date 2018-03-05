@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::count"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "count function [STL/CLR]"
+f1_keywords: ["cliext::count"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["count function [STL/CLR]"]
 ms.assetid: 6d10abb4-3c48-469c-804c-281015b12865
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # count (STL/CLR)
 Returns the number of elements in a range whose values match a specified value.  
@@ -46,7 +29,7 @@ template<class _InIt, class _Ty> inline
 ```  
   
 ## Remarks  
- This function behaves the same as the C++ Standard Library function `count`. For more information, see [count](http://msdn.microsoft.com/Library/42d33762-e593-4719-ad85-6fb27a83bf41).  
+ This function behaves the same as the C++ Standard Library function `count`. For more information, see [count](../standard-library/algorithm-functions.md#count).  
   
 ## Requirements  
  **Header:** \<cliext/algorithm>  

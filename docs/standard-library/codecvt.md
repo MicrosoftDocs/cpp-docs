@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "codecvt"
-  - "std::<codecvt>"
-  - "std.<codecvt>"
-  - "<codecvt>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "codecvt header"
+ms.topic: "reference"
+f1_keywords: ["codecvt", "<codecvt>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["codecvt header"]
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;codecvt&gt;
 Defines several template classes that describe objects based on template class [codecvt](../standard-library/codecvt-class.md). These objects can serve as [locale facets](../standard-library/locale-class.md#facet_class) that control conversions between a sequence of values of type `Elem` and a sequence of values of type `char`.  
@@ -80,7 +60,7 @@ Defines several template classes that describe objects based on template class [
   
 |||  
 |-|-|  
-|[codecvt_mode](../standard-library/codecvt-enums.md#codecvt_mode_enumeration)|Specifies configuration information for locale facets.|  
+|[codecvt_mode](../standard-library/codecvt-enums.md#codecvt_mode)|Specifies configuration information for locale facets.|  
   
 ### Classes  
   

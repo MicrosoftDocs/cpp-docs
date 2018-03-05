@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Complete Asynchronous Operations Using WRL
-This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to start asynchronous operations and perform work when the operations complete.  
+This document shows how to use the Windows Runtime C++ Template Library (WRL)to start asynchronous operations and perform work when the operations complete.  
   
- This document shows two examples. The first example starts an asynchronous timer and waits for the timer to expire. In this example, you specify the asynchronous action when you create the timer object. The second example runs a background worker thread. This example shows how to work with a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] method that returns an `IAsyncInfo` interface. The [Callback](../windows/callback-function-windows-runtime-cpp-template-library.md) function is an important part of both examples because it enables them to specify an event handler to process the results of the asynchronous operations.  
+ This document shows two examples. The first example starts an asynchronous timer and waits for the timer to expire. In this example, you specify the asynchronous action when you create the timer object. The second example runs a background worker thread. This example shows how to work with a Windows Runtime method that returns an `IAsyncInfo` interface. The [Callback](../windows/callback-function-windows-runtime-cpp-template-library.md) function is an important part of both examples because it enables them to specify an event handler to process the results of the asynchronous operations.  
   
- For a more basic example that creates an instance of that component and retrieves a property value, see [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
+ For a more basic example that creates an instance of a component and retrieves a property value, see [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
   
 > [!TIP]
 >  These examples use lambda expressions to define the callbacks. You can also use function objects (functors), function pointers, or [std::function](../standard-library/function-class.md) objects. For more information about C++ lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).  
@@ -44,9 +29,9 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
  The following steps start an asynchronous timer and wait for the timer to expire. The complete example follows.  
   
 > [!WARNING]
->  Although you typically use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] in a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app. For more information about the types and functions that you can use in a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform (UWP) app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a UWP app. For more information about the types and functions that you can use in a UWP app, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) and [Win32 and COM for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
-1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or C++ Standard Library headers.  
+1.  Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.  
   
      [!code-cpp[wrl-consume-async#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]  
   
@@ -54,7 +39,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.  
   
-2.  Initialize the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+2.  Initialize the Windows Runtime.  
   
      [!code-cpp[wrl-consume-async#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_2.cpp)]  
   
@@ -62,7 +47,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      [!code-cpp[wrl-consume-async#4](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_3.cpp)]  
   
-     The [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] uses fully-qualified names to identify types. The `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` parameter is a string that's provided by the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and contains the required runtime class name.  
+     The Windows Runtime uses fully-qualified names to identify types. The `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` parameter is a string that's provided by the Windows Runtime and contains the required runtime class name.  
   
 4.  Create an [Event](../windows/event-class-windows-runtime-cpp-template-library.md) object that synchronizes the timer callback to the main app.  
   
@@ -92,9 +77,9 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
  The following steps start a worker thread and define the action that's performed by that thread. The complete example follows.  
   
 > [!TIP]
->  This example demonstrates how to work with the `ABI::Windows::Foundation::IAsyncAction` interface. You can apply this pattern to any interface that implements `IAsyncInfo`: `IAsyncAction`, `IAsyncActionWithProgress`, `IAsyncOperation`, and`IAsyncOperationWithProgress`.  
+>  This example demonstrates how to work with the `ABI::Windows::Foundation::IAsyncAction` interface. You can apply this pattern to any interface that implements `IAsyncInfo`: `IAsyncAction`, `IAsyncActionWithProgress`, `IAsyncOperation`, and `IAsyncOperationWithProgress`.  
   
-1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or C++ Standard Library headers.  
+1.  Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.  
   
      [!code-cpp[wrl-consume-asyncOp#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_8.cpp)]  
   
@@ -102,7 +87,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      We recommend that you use the `using namespace` directive in your .cpp file to make the code more readable.  
   
-2.  Initialize the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+2.  Initialize the Windows Runtime.  
   
      [!code-cpp[wrl-consume-asyncOp#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_9.cpp)]  
   

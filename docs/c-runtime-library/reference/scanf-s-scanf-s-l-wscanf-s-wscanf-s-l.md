@@ -4,71 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wscanf_s"
-  - "_wscanf_s_l"
-  - "scanf_s"
-  - "_scanf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+ms.topic: "reference"
+apiname: ["wscanf_s", "_wscanf_s_l", "scanf_s", "_scanf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wscanf_s"
-  - "_tscanf_s_l"
-  - "_wscanf_s_l"
-  - "scanf_s"
-  - "_tscanf_s"
-  - "_scanf_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reading data [C++], from input streams"
-  - "buffers [C++], buffer overruns"
-  - "_scanf_s_l function"
-  - "_wscanf_s_l function"
-  - "tscanf_s_l function"
-  - "tscanf_s function"
-  - "scanf_s function"
-  - "data [C++], reading from input stream"
-  - "wscanf_s function"
-  - "_tscanf_s_l function"
-  - "_tscanf_s function"
-  - "scanf_s_l function"
-  - "formatted data [C++], from input streams"
-  - "wscanf_s_l function"
-  - "buffers [C++], avoiding overruns"
+f1_keywords: ["wscanf_s", "_tscanf_s_l", "_wscanf_s_l", "scanf_s", "_tscanf_s", "_scanf_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reading data [C++], from input streams", "buffers [C++], buffer overruns", "_scanf_s_l function", "_wscanf_s_l function", "tscanf_s_l function", "tscanf_s function", "scanf_s function", "data [C++], reading from input stream", "wscanf_s function", "_tscanf_s_l function", "_tscanf_s function", "scanf_s_l function", "formatted data [C++], from input streams", "wscanf_s_l function", "buffers [C++], avoiding overruns"]
 ms.assetid: 42cafcf7-52d6-404a-80e4-b056a7faf2e5
 caps.latest.revision: 33
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
 Reads formatted data from the standard input stream. These versions of [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -168,7 +118,7 @@ wscanf_s(L"%9S", ws, (unsigned)_countof(ws));
 |`scanf_s`, `_scanf_s_l`|\<stdio.h>|  
 |`wscanf_s`, `_wscanf_s_l`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   
@@ -215,14 +165,6 @@ The contents are: 71 98.599998 h z Byte characters
 The number of fields input is 6  
 The contents are: 36 92.300003 y n Wide characters  
 ```  
-  
-## .NET Framework Equivalent  
-  
--   [System::Console::Read](https://msdn.microsoft.com/en-us/library/system.console.read.aspx)  
-  
--   [System::Console::ReadLine](https://msdn.microsoft.com/en-us/library/system.console.readline.aspx)  
-  
--   See also `Parse` methods, such as [System::Double::Parse](https://msdn.microsoft.com/en-us/library/system.double.parse.aspx).  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

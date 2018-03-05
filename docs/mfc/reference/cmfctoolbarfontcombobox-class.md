@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCToolBarFontComboBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolBarFontComboBox class"
+f1_keywords: ["CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBarFontComboBox [MFC], CMFCToolBarFontComboBox", "CMFCToolBarFontComboBox [MFC], GetFontDesc", "CMFCToolBarFontComboBox [MFC], SetFont"]
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarFontComboBox Class
 A toolbar button that contains a combo box control that enables the user to select a font from a list of system fonts.  
@@ -134,7 +117,7 @@ CMFCToolBarFontComboBox();
  If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) for a listing of possible character sets.  
   
  [in] `dwStyle`  
- The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/combo-box-styles.md))  
+ The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
  [in] `iWidth`  
  The width in pixels of the edit control.  

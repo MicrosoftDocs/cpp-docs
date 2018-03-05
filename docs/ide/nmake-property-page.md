@@ -1,46 +1,26 @@
 ---
-title: "NMake Property Page | Microsoft Docs"
+title: "NMake Property Page (Windows C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCNMakeTool.ReBuildCommandLine"
-  - "VC.Project.VCNMakeTool.CleanCommandLine"
-  - "VC.Project.VCNMakeTool.Output"
-  - "VC.Project.VCNMakeTool.BuildCommandLine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NMake property page"
+f1_keywords: ["VC.Project.VCNMakeTool.ReBuildCommandLine", "VC.Project.VCNMakeTool.CleanCommandLine", "VC.Project.VCNMakeTool.Output", "VC.Project.VCNMakeTool.BuildCommandLine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["NMake property page"]
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # NMake Property Page
 The **NMake** property page lets you specify build settings for NMake projects.  
   
- For more information about NMake projects, see [Creating a Makefile Project](../ide/creating-a-makefile-project.md).  
+ For more information about NMake projects, see [Creating a Makefile Project](../ide/creating-a-makefile-project.md). For non_Windows MakeFile projects, see [MakeFile Project Properties (Linux C++)](../linux/prop-pages/makefile-linux.md), [General Project Properties (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) or [NMake Properties (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
   
  The **NMake** property page contains the following properties.  
   

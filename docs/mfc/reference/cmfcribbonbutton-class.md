@@ -4,38 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCRibbonButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonButton class"
+f1_keywords: ["CMFCRibbonButton", "AFXRIBBONBUTTON/CMFCRibbonButton", "AFXRIBBONBUTTON/CMFCRibbonButton::CMFCRibbonButton", "AFXRIBBONBUTTON/CMFCRibbonButton::AddSubItem", "AFXRIBBONBUTTON/CMFCRibbonButton::CanBeStretched", "AFXRIBBONBUTTON/CMFCRibbonButton::CleanUpSizes", "AFXRIBBONBUTTON/CMFCRibbonButton::ClosePopupMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::DrawBottomText", "AFXRIBBONBUTTON/CMFCRibbonButton::DrawImage", "AFXRIBBONBUTTON/CMFCRibbonButton::DrawRibbonText", "AFXRIBBONBUTTON/CMFCRibbonButton::FindSubItemIndexByID", "AFXRIBBONBUTTON/CMFCRibbonButton::GetCommandRect", "AFXRIBBONBUTTON/CMFCRibbonButton::GetCompactSize", "AFXRIBBONBUTTON/CMFCRibbonButton::GetIcon", "AFXRIBBONBUTTON/CMFCRibbonButton::GetImageIndex", "AFXRIBBONBUTTON/CMFCRibbonButton::GetImageSize", "AFXRIBBONBUTTON/CMFCRibbonButton::GetIntermediateSize", "AFXRIBBONBUTTON/CMFCRibbonButton::GetMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::GetMenuRect", "AFXRIBBONBUTTON/CMFCRibbonButton::GetRegularSize", "AFXRIBBONBUTTON/CMFCRibbonButton::GetSubItems", "AFXRIBBONBUTTON/CMFCRibbonButton::GetTextRowHeight", "AFXRIBBONBUTTON/CMFCRibbonButton::GetToolTipText", "AFXRIBBONBUTTON/CMFCRibbonButton::HasCompactMode", "AFXRIBBONBUTTON/CMFCRibbonButton::HasIntermediateMode", "AFXRIBBONBUTTON/CMFCRibbonButton::HasLargeMode", "AFXRIBBONBUTTON/CMFCRibbonButton::HasMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::IsAlwaysDrawBorder", "AFXRIBBONBUTTON/CMFCRibbonButton::IsAlwaysLargeImage", "AFXRIBBONBUTTON/CMFCRibbonButton::IsApplicationButton", "AFXRIBBONBUTTON/CMFCRibbonButton::IsCommandAreaHighlighted", "AFXRIBBONBUTTON/CMFCRibbonButton::IsDefaultCommand", "AFXRIBBONBUTTON/CMFCRibbonButton::IsDefaultPanelButton", "AFXRIBBONBUTTON/CMFCRibbonButton::IsDrawTooltipImage", "AFXRIBBONBUTTON/CMFCRibbonButton::IsLargeImage", "AFXRIBBONBUTTON/CMFCRibbonButton::IsMenuAreaHighlighted", "AFXRIBBONBUTTON/CMFCRibbonButton::IsMenuOnBottom", "AFXRIBBONBUTTON/CMFCRibbonButton::IsPopupDefaultMenuLook", "AFXRIBBONBUTTON/CMFCRibbonButton::IsRightAlignMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::IsSingleLineText", "AFXRIBBONBUTTON/CMFCRibbonButton::OnCalcTextSize", "AFXRIBBONBUTTON/CMFCRibbonButton::OnDrawBorder", "AFXRIBBONBUTTON/CMFCRibbonButton::OnDraw", "AFXRIBBONBUTTON/CMFCRibbonButton::OnFillBackground", "AFXRIBBONBUTTON/CMFCRibbonButton::RemoveAllSubItems", "AFXRIBBONBUTTON/CMFCRibbonButton::RemoveSubItem", "AFXRIBBONBUTTON/CMFCRibbonButton::SetACCData", "AFXRIBBONBUTTON/CMFCRibbonButton::SetAlwaysLargeImage", "AFXRIBBONBUTTON/CMFCRibbonButton::SetDefaultCommand", "AFXRIBBONBUTTON/CMFCRibbonButton::SetDescription", "AFXRIBBONBUTTON/CMFCRibbonButton::SetImageIndex", "AFXRIBBONBUTTON/CMFCRibbonButton::SetMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::SetParentCategory", "AFXRIBBONBUTTON/CMFCRibbonButton::SetRightAlignMenu", "AFXRIBBONBUTTON/CMFCRibbonButton::SetText", "AFXRIBBONBUTTON/CMFCRibbonButton::OnClick"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonButton [MFC], CMFCRibbonButton", "CMFCRibbonButton [MFC], AddSubItem", "CMFCRibbonButton [MFC], CanBeStretched", "CMFCRibbonButton [MFC], CleanUpSizes", "CMFCRibbonButton [MFC], ClosePopupMenu", "CMFCRibbonButton [MFC], DrawBottomText", "CMFCRibbonButton [MFC], DrawImage", "CMFCRibbonButton [MFC], DrawRibbonText", "CMFCRibbonButton [MFC], FindSubItemIndexByID", "CMFCRibbonButton [MFC], GetCommandRect", "CMFCRibbonButton [MFC], GetCompactSize", "CMFCRibbonButton [MFC], GetIcon", "CMFCRibbonButton [MFC], GetImageIndex", "CMFCRibbonButton [MFC], GetImageSize", "CMFCRibbonButton [MFC], GetIntermediateSize", "CMFCRibbonButton [MFC], GetMenu", "CMFCRibbonButton [MFC], GetMenuRect", "CMFCRibbonButton [MFC], GetRegularSize", "CMFCRibbonButton [MFC], GetSubItems", "CMFCRibbonButton [MFC], GetTextRowHeight", "CMFCRibbonButton [MFC], GetToolTipText", "CMFCRibbonButton [MFC], HasCompactMode", "CMFCRibbonButton [MFC], HasIntermediateMode", "CMFCRibbonButton [MFC], HasLargeMode", "CMFCRibbonButton [MFC], HasMenu", "CMFCRibbonButton [MFC], IsAlwaysDrawBorder", "CMFCRibbonButton [MFC], IsAlwaysLargeImage", "CMFCRibbonButton [MFC], IsApplicationButton", "CMFCRibbonButton [MFC], IsCommandAreaHighlighted", "CMFCRibbonButton [MFC], IsDefaultCommand", "CMFCRibbonButton [MFC], IsDefaultPanelButton", "CMFCRibbonButton [MFC], IsDrawTooltipImage", "CMFCRibbonButton [MFC], IsLargeImage", "CMFCRibbonButton [MFC], IsMenuAreaHighlighted", "CMFCRibbonButton [MFC], IsMenuOnBottom", "CMFCRibbonButton [MFC], IsPopupDefaultMenuLook", "CMFCRibbonButton [MFC], IsRightAlignMenu", "CMFCRibbonButton [MFC], IsSingleLineText", "CMFCRibbonButton [MFC], OnCalcTextSize", "CMFCRibbonButton [MFC], OnDrawBorder", "CMFCRibbonButton [MFC], OnDraw", "CMFCRibbonButton [MFC], OnFillBackground", "CMFCRibbonButton [MFC], RemoveAllSubItems", "CMFCRibbonButton [MFC], RemoveSubItem", "CMFCRibbonButton [MFC], SetACCData", "CMFCRibbonButton [MFC], SetAlwaysLargeImage", "CMFCRibbonButton [MFC], SetDefaultCommand", "CMFCRibbonButton [MFC], SetDescription", "CMFCRibbonButton [MFC], SetImageIndex", "CMFCRibbonButton [MFC], SetMenu", "CMFCRibbonButton [MFC], SetParentCategory", "CMFCRibbonButton [MFC], SetRightAlignMenu", "CMFCRibbonButton [MFC], SetText", "CMFCRibbonButton [MFC], OnClick"]
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
 caps.latest.revision: 42
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonButton Class
 The `CMFCRibbonButton` class implements buttons that you can position on ribbon bar elements such as panels, Quick Access Toolbars, and pop-up menus.  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -169,7 +154,7 @@ void AddSubItem(
  Specifies the index at which to add the element to the array of menu items of the button; -1 to add the element at the end of the array of menu items.  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL CanBeStretched();
@@ -180,7 +165,7 @@ virtual BOOL CanBeStretched();
 ### Remarks  
   
 ##  <a name="cleanupsizes"></a>  CMFCRibbonButton::CleanUpSizes  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CleanUpSizes();
@@ -189,7 +174,7 @@ virtual void CleanUpSizes();
 ### Remarks  
   
 ##  <a name="closepopupmenu"></a>  CMFCRibbonButton::ClosePopupMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ClosePopupMenu();
@@ -240,7 +225,7 @@ CMFCRibbonButton(
  [!code-cpp[NVC_MFC_RibbonApp#6](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_2.cpp)]  
   
 ##  <a name="drawbottomtext"></a>  CMFCRibbonButton::DrawBottomText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CSize DrawBottomText(
@@ -257,7 +242,7 @@ CSize DrawBottomText(
 ### Remarks  
   
 ##  <a name="drawimage"></a>  CMFCRibbonButton::DrawImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void DrawImage(
@@ -274,7 +259,7 @@ virtual void DrawImage(
 ### Remarks  
   
 ##  <a name="drawribbontext"></a>  CMFCRibbonButton::DrawRibbonText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int DrawRibbonText(
@@ -311,7 +296,7 @@ int FindSubItemIndexByID(UINT uiID) const;
  The zero-based index of the sub-item that is associated with the `uiID`. -1 if there is no such sub-item.  
   
 ##  <a name="getcommandrect"></a>  CMFCRibbonButton::GetCommandRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetCommandRect() const;  
@@ -322,7 +307,7 @@ CRect GetCommandRect() const;
 ### Remarks  
   
 ##  <a name="getcompactsize"></a>  CMFCRibbonButton::GetCompactSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetCompactSize(CDC* pDC);
@@ -336,7 +321,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ### Remarks  
   
 ##  <a name="geticon"></a>  CMFCRibbonButton::GetIcon  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 HICON GetIcon(BOOL bLargeIcon = TRUE) const;  
@@ -364,7 +349,7 @@ int GetImageIndex(BOOL bLargeImage) const;
  The index of the button's image in the associated image list.  
   
 ##  <a name="getimagesize"></a>  CMFCRibbonButton::GetImageSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetImageSize(RibbonImageType type) const;  
@@ -378,7 +363,7 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 ### Remarks  
   
 ##  <a name="getintermediatesize"></a>  CMFCRibbonButton::GetIntermediateSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -402,7 +387,7 @@ HMENU GetMenu() const;
  A handle to a Windows menu assigned to the button; `NULL` if there is no menu assigned.  
   
 ##  <a name="getmenurect"></a>  CMFCRibbonButton::GetMenuRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetMenuRect() const;  
@@ -413,7 +398,7 @@ CRect GetMenuRect() const;
 ### Remarks  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonButton::GetRegularSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -427,7 +412,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### Remarks  
   
 ##  <a name="getsubitems"></a>  CMFCRibbonButton::GetSubItems  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() const;  
@@ -438,7 +423,7 @@ const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() cons
 ### Remarks  
   
 ##  <a name="gettextrowheight"></a>  CMFCRibbonButton::GetTextRowHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTextRowHeight() const;  
@@ -449,7 +434,7 @@ int GetTextRowHeight() const;
 ### Remarks  
   
 ##  <a name="gettooltiptext"></a>  CMFCRibbonButton::GetToolTipText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CString GetToolTipText() const;  
@@ -460,7 +445,7 @@ virtual CString GetToolTipText() const;
 ### Remarks  
   
 ##  <a name="hascompactmode"></a>  CMFCRibbonButton::HasCompactMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasCompactMode() const;  
@@ -471,7 +456,7 @@ virtual BOOL HasCompactMode() const;
 ### Remarks  
   
 ##  <a name="hasintermediatemode"></a>  CMFCRibbonButton::HasIntermediateMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasIntermediateMode() const;  
@@ -482,7 +467,7 @@ virtual BOOL HasIntermediateMode() const;
 ### Remarks  
   
 ##  <a name="haslargemode"></a>  CMFCRibbonButton::HasLargeMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasLargeMode() const;  
@@ -493,7 +478,7 @@ virtual BOOL HasLargeMode() const;
 ### Remarks  
   
 ##  <a name="hasmenu"></a>  CMFCRibbonButton::HasMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasMenu() const;  
@@ -504,7 +489,7 @@ virtual BOOL HasMenu() const;
 ### Remarks  
   
 ##  <a name="isalwaysdrawborder"></a>  CMFCRibbonButton::IsAlwaysDrawBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAlwaysDrawBorder() const;  
@@ -515,7 +500,7 @@ virtual BOOL IsAlwaysDrawBorder() const;
 ### Remarks  
   
 ##  <a name="isalwayslargeimage"></a>  CMFCRibbonButton::IsAlwaysLargeImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAlwaysLargeImage() const;  
@@ -526,7 +511,7 @@ virtual BOOL IsAlwaysLargeImage() const;
 ### Remarks  
   
 ##  <a name="isapplicationbutton"></a>  CMFCRibbonButton::IsApplicationButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsApplicationButton() const;  
@@ -537,7 +522,7 @@ virtual BOOL IsApplicationButton() const;
 ### Remarks  
   
 ##  <a name="iscommandareahighlighted"></a>  CMFCRibbonButton::IsCommandAreaHighlighted  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsCommandAreaHighlighted() const;  
@@ -558,7 +543,7 @@ BOOL IsDefaultCommand() const;
  `TRUE` if you have enabled the default command for a ribbon button; `FALSE` otherwise.  
   
 ##  <a name="isdefaultpanelbutton"></a>  CMFCRibbonButton::IsDefaultPanelButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsDefaultPanelButton() const;  
@@ -569,7 +554,7 @@ virtual BOOL IsDefaultPanelButton() const;
 ### Remarks  
   
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonButton::IsDrawTooltipImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsDrawTooltipImage() const;  
@@ -580,7 +565,7 @@ virtual BOOL IsDrawTooltipImage() const;
 ### Remarks  
   
 ##  <a name="islargeimage"></a>  CMFCRibbonButton::IsLargeImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsLargeImage() const;  
@@ -591,7 +576,7 @@ BOOL IsLargeImage() const;
 ### Remarks  
   
 ##  <a name="ismenuareahighlighted"></a>  CMFCRibbonButton::IsMenuAreaHighlighted  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsMenuAreaHighlighted() const;  
@@ -602,7 +587,7 @@ virtual BOOL IsMenuAreaHighlighted() const;
 ### Remarks  
   
 ##  <a name="ismenuonbottom"></a>  CMFCRibbonButton::IsMenuOnBottom  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMenuOnBottom() const;  
@@ -613,7 +598,7 @@ BOOL IsMenuOnBottom() const;
 ### Remarks  
   
 ##  <a name="ispopupdefaultmenulook"></a>  CMFCRibbonButton::IsPopupDefaultMenuLook  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsPopupDefaultMenuLook() const;  
@@ -634,7 +619,7 @@ BOOL IsRightAlignMenu() const;
  `TRUE` if menu is right-aligned; otherwise `FALSE`.  
   
 ##  <a name="issinglelinetext"></a>  CMFCRibbonButton::IsSingleLineText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsSingleLineText() const;  
@@ -645,7 +630,7 @@ BOOL IsSingleLineText() const;
 ### Remarks  
   
 ##  <a name="oncalctextsize"></a>  CMFCRibbonButton::OnCalcTextSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnCalcTextSize(CDC* pDC);
@@ -671,7 +656,7 @@ virtual void OnClick(CPoint point);
  Override this method in a derived class if you want to handle this event.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonButton::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -683,7 +668,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ##  <a name="ondrawborder"></a>  CMFCRibbonButton::OnDrawBorder  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDrawBorder(CDC* pDC);
@@ -695,7 +680,7 @@ virtual void OnDrawBorder(CDC* pDC);
 ### Remarks  
   
 ##  <a name="onfillbackground"></a>  CMFCRibbonButton::OnFillBackground  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual COLORREF OnFillBackground(CDC* pDC);
@@ -776,7 +761,7 @@ void SetDefaultCommand(BOOL bSet=TRUE);
  `bSet` is relevant only when the button has a menu. If `bSet` is `TRUE`, the button can execute its default command and the assigned pop-up menu appears only when a user clicks the arrow at the right edge of the button. Otherwise, the button cannot execute its default command, and the pop-up menu appears regardless of which area of the button the user clicks.  
   
 ##  <a name="setdescription"></a>  CMFCRibbonButton::SetDescription  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetDescription(LPCTSTR lpszText);
@@ -835,7 +820,7 @@ void SetMenu(
  When the application assigns the menu to the button, the button displays an arrow on its right side. If `bIsDefaultCommand` is `TRUE`, the menu appears only when the user clicks the arrow. If the user clicks the button, its default command is executed. If `bIsDefaultCommand` is `FALSE`, the menu appears by clicking anywhere on the button.  
   
 ##  <a name="setparentcategory"></a>  CMFCRibbonButton::SetParentCategory  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetParentCategory(CMFCRibbonCategory* pParent);
@@ -858,7 +843,7 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
  If `TRUE`, the menu is right-aligned. Otherwise, the menu is left-aligned  
   
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetText(LPCTSTR lpszText);

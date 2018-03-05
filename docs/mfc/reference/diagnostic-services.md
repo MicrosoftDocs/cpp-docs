@@ -4,50 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "diagnosis, diagnostic services"
-  - "diagnostic macros, list of general MFC"
-  - "services, diagnostic"
-  - "MFC, diagnostic services"
-  - "general diagnostic functions and variables"
-  - "diagnostics, diagnostic functions and variables"
-  - "diagnostics, list of general MFC"
-  - "diagnosis, diagnostic functions and variables"
-  - "diagnosis, list of general MFC"
-  - "general diagnostic macros in MFC"
-  - "diagnostic macros"
-  - "diagnostic services"
-  - "object diagnostic functions in MFC"
-  - "diagnostics, diagnostic services"
-  - "diagnostic functions and variables"
+f1_keywords: ["vc.mfc.macros"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Diagnostic Services
 The Microsoft Foundation Class Library supplies many diagnostic services that make debugging your programs easier. These diagnostic services include macros and global functions that allow you to track your program's memory allocations, dump the contents of objects during run time, and print debugging messages during run time. The macros and global functions for diagnostic services are grouped into the following categories:  
@@ -74,9 +42,11 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |-|-|  
 |[ASSERT](#assert)|Prints a message and then aborts the program if the specified expression evaluates to **FALSE** in the Debug version of the library.|  
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|  
-|[ASSERT_VALID](#assert_valid)|Tests the internal validity of an object by calling its `AssertValid` member function; typically overridden from `CObject`.|  
+|[ASSERT_VALID](#assert_valid)|Tests the internal validity of an object by calling its `AssertValid` member function; typically overridden from `CObject`.|
 |[DEBUG_NEW](#debug_new)|Supplies a filename and line number for all object allocations in Debug mode to help find memory leaks.|  
 |[DEBUG_ONLY](#debug_only)|Similar to **ASSERT** but does not test the value of the expression; useful for code that should execute only in Debug mode.|  
+|[ENSURE and ENSURE_VALID](#ensure)|Use to validate data correctness.|
+|[THIS_FILE](#this_file)|Expands to the name of the file that is being compiled.|
 |[TRACE](#trace)|Provides `printf`-like capability in the Debug version of the library.|  
 |[VERIFY](#verify)|Similar to **ASSERT** but evaluates the expression in the Release version of the library as well as in the Debug version.|  
   
@@ -88,7 +58,9 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |[afxMemDF](#afxmemdf)|Global variable that controls the behavior of the debugging memory allocator.|  
 |[AfxCheckError](#afxcheckerror)|Global variable used to test the passed **SCODE** to see if it is an error and, if so, throws the appropriate error.|  
 |[AfxCheckMemory](#afxcheckmemory)|Checks the integrity of all currently allocated memory.|  
-|[AfxDump](#cdumpcontext_in_mfc_)|If called while in the debugger, dumps the state of an object while debugging.|  
+|[AfxDebugBreak](#afxdebugbreak)|Causes a break in execution.|
+|[AfxDump](#cdumpcontext_in_mfc)|If called while in the debugger, dumps the state of an object while debugging.|  
+|[AfxDump](#afxdump)|Internal function that dumps the state of an object while debugging.|
 |[AfxDumpStack](#afxdumpstack)|Generate an image of the current stack. This function is always linked statically.|  
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Enables the memory leak dump.|  
 |[AfxEnableMemoryTracking](#afxenablememorytracking)|Turns memory tracking on and off.|  
@@ -103,7 +75,49 @@ The Microsoft Foundation Class Library supplies many diagnostic services that ma
 |-|-|  
 |[AfxDoForAllClasses](#afxdoforallclasses)|Performs a specified function on all `CObject`-derived classes that support run-time type checking.|  
 |[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **new**.|  
+
+### MFC Compilation Macros
+|||
+|-|-|
+|[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|Suppresses compiler warnings for the use of deprecated MFC functions.|  
+
+
+## <a name="afx_secure_no_warnings"></a> _AFX_SECURE_NO_WARNINGS
+Suppresses compiler warnings for the use of deprecated MFC functions.  
+   
+### Syntax   
+```  
+_AFX_SECURE_NO_WARNINGS  
+```     
+### Example  
+ This code sample would cause a compiler warning if _AFX_SECURE_NO_WARNINGS were not defined.  
   
+ ```cpp
+// define this before including any afx files in stdafx.h
+#define _AFX_SECURE_NO_WARNINGS
+```
+```cpp
+CRichEditCtrl* pRichEdit = new CRichEditCtrl;
+pRichEdit->Create(WS_CHILD|WS_VISIBLE|WS_BORDER|ES_MULTILINE,
+   CRect(10,10,100,200), pParentWnd, 1);
+char sz[256];
+pRichEdit->GetSelText(sz);
+```
+
+## <a name="afxdebugbreak"></a> AfxDebugBreak
+Call this function to cause a break (at the location of the call to `AfxDebugBreak`) in the execution of the debug version of your MFC application.  
+
+### Syntax    
+```
+void AfxDebugBreak( );    
+```  
+   
+### Remarks  
+ `AfxDebugBreak` has no effect in release versions of an MFC application and should be removed. This function should only be used in MFC applications. Use the Win32 API version, **DebugBreak**, to cause a break in non-MFC applications.  
+   
+### Requirements  
+ **Header:** afxver_.h   
+
 ##  <a name="assert"></a>  ASSERT
  Evaluates its argument.  
   
@@ -235,6 +249,67 @@ DEBUG_ONLY(expression)
 ### Requirements  
  **Header:** afx.h
 
+ ### <a name="ensure"></a>  ENSURE and ENSURE_VALID
+Use to validate data correctness.  
+   
+### Syntax    
+```
+ENSURE(  booleanExpression )  
+ENSURE_VALID( booleanExpression  )  
+```
+### Parameters  
+ `booleanExpression`  
+ Specifies a boolean expression to be tested.  
+   
+### Remarks  
+ The purpose of these macros is to improve the validation of parameters. The macros prevent further processing of incorrect parameters in your code. Unlike the **ASSERT** macros, the **ENSURE** macros throw an exception in addition to generating an assertion.  
+  
+ The macros behave in two ways, according to the project configuration. The macros call **ASSERT** and then throw an exception if the assertion fails. Thus, in Debug configurations (that is, where **_DEBUG** is defined) the macros produce an assertion and exception while in Release configurations, the macros produce only the exception (**ASSERT** does not evaluate the expression in Release configurations).  
+  
+ The macro **ENSURE_ARG** acts like the **ENSURE** macro.  
+  
+ **ENSURE_VALID** calls the `ASSERT_VALID` macro (which has an effect only in Debug builds). In addition, **ENSURE_VALID** throws an exception if the pointer is NULL. The NULL test is performed in both Debug and Release configurations.  
+  
+ If any of these tests fails, an alert message is displayed in the same manner as **ASSERT**. The macro throws an invalid argument exception if needed.  
+### Requirements  
+ **Header:** afx.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [VERIFY](#verify)   
+ [ATLENSURE](#altensure)
+
+## <a name="this_file"></a> THIS_FILE
+Expands to the name of the file that is being compiled.  
+   
+### Syntax    
+```
+THIS_FILE    
+```  
+   
+### Remarks  
+ The information is used by the **ASSERT** and **VERIFY** macros. The Application Wizard and code wizards place the macro in source code files they create.  
+   
+### Example  
+```cpp
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+// __FILE__ is one of the six predefined ANSI C macros that the 
+// compiler recognizes. 
+```
+   
+### Requirements  
+ **Header:** afx.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [ASSERT](#assert)   
+ [VERIFY](#verify)
+
+
 ##  <a name="trace"></a>  TRACE  
  Sends the specified string to the debugger of the current application.  
   
@@ -244,7 +319,7 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```  
   
 ### Remarks  
- See [ATLTRACE2](http://msdn.microsoft.com/library/467ff555-e7a5-4f94-bdd9-50ee27ab9986) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
+ See [ATLTRACE2](../../atl/reference/debugging-and-error-reporting-macros.md#atltrace2) for a description of **TRACE**. **TRACE** and `ATLTRACE2` have the same behavior.  
   
  In the debug version of MFC, this macro sends the specified string to the debugger of the current application. In a release build, this macro compiles to nothing (no code is generated at all).  
   
@@ -281,7 +356,7 @@ VERIFY(booleanExpression)
 ### Requirements  
  **Header:** afx.h
 
-##  <a name="cdumpcontext_in_mfc_"></a>  afxDump (CDumpContext in MFC)  
+##  <a name="cdumpcontext_in_mfc"></a>  afxDump (CDumpContext in MFC)  
  Provides basic object-dumping capability in your application.  
   
 ```   
@@ -300,6 +375,31 @@ CDumpContext  afxDump;
 
 ### Requirements  
  **Header:** afx.h
+
+
+## <a name="afxdump"></a> AfxDump (Internal)
+Internal function that MFC uses to dump the state of an object while debugging.  
+
+### Syntax    
+```
+void AfxDump(const CObject* pOb);   
+```
+### Parameters  
+ `pOb`  
+ A pointer to an object of a class derived from `CObject`.  
+   
+### Remarks  
+ **AfxDump** calls an object's `Dump` member function and sends the information to the location specified by the `afxDump` variable. **AfxDump** is available only in the Debug version of MFC.  
+  
+ Your program code should not call **AfxDump**, but should instead call the `Dump` member function of the appropriate object.  
+   
+### Requirements  
+ **Header:** afx.h  
+   
+### See Also  
+ [CObject::Dump](cobject-class.md#dump)   
+
+
 
 ##  <a name="afxmemdf"></a>  afxMemDF  
  This variable is accessible from a debugger or your program and allows you to tune allocation diagnostics.  
@@ -378,7 +478,7 @@ BOOL  AfxCheckMemory();
 ### Requirements  
  **Header:** afx.h  
  
-##  <a name="mfc_"></a>  AfxDump (MFC)  
+##  <a name="afxdump"></a>  AfxDump (MFC)  
  Call this function while in the debugger to dump the state of an object while debugging.  
   
 ```   
@@ -393,6 +493,14 @@ void AfxDump(const CObject* pOb);
  **AfxDump** calls an object's `Dump` member function and sends the information to the location specified by the `afxDump` variable. **AfxDump** is available only in the Debug version of MFC.  
   
  Your program code should not call **AfxDump**, but should instead call the `Dump` member function of the appropriate object.  
+
+### Requirements  
+ **Header:** afx.h  
+
+### See Also  
+ [CObject::Dump](cobject-class.md#dump)   
+
+
   
 ##  <a name="afxdumpstack"></a>  AfxDumpStack  
  This global function can be used to generate an image of the current stack.  
@@ -616,7 +724,7 @@ BOOL  AfxIsValidString(
  The pointer to test.  
   
  `nLength`  
- Specifies the length of the string to be tested, in bytes. A value of â€“1 indicates that the string will be null-terminated.  
+ Specifies the length of the string to be tested, in bytes. A value of -1 indicates that the string will be null-terminated.  
   
 ### Return Value  
  In debug builds, nonzero if the specified pointer points to a string of the specified size; otherwise 0.  

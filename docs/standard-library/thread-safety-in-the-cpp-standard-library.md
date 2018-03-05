@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "thread safety"
-  - "C++ Standard Library, thread safety"
-  - "thread safety, C++ Standard Library"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["thread safety", "C++ Standard Library, thread safety", "thread safety, C++ Standard Library"]
 ms.assetid: 9351c8fb-4539-4728-b0e9-226e2ac4284b
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Thread Safety in the C++ Standard Library
 The following thread safety rules apply to all classes in the C++ Standard Library—this includes `shared_ptr`, as described below.  Stronger guarantees are sometimes provided—for example, the standard iostream objects, as described below, and types specifically intended for multithreading, like those in [\<atomic>](../standard-library/atomic.md).  

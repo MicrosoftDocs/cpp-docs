@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deployment for Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deployment for Visual C++"]
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
 Describes how to use a setup project to deploy a Visual C++ application.  
@@ -50,7 +34,7 @@ Describes how to use a setup project to deploy a Visual C++ application.
   
 3.  Press F7 to build the application. Or, on the **Build** menu, click **Build Solution**. This enables the setup project to use the output of this MFC application project.  
   
-4.  If you haven’t already done so, download InstallShield Limited Edition (ISLE), which is free for Visual Studio developers and replaces the functionality of the project templates in Visual Studio for setup and deployment. When you are connected to the Internet, open the **New Project** dialog box by choosing **File**, **New**, **Project** on the menu bar, or by right-clicking your solution in **Solution Explorer** and choosing **Add**, **New Project…**. Expand the **Other Project Types** node, choose **Enable InstallShield Limited Edition** in the **Setup and Deployment** node, and follow the instructions that appear. Once you have downloaded, installed and activated InstallShield Limited Edition, close Visual Studio and re-open it.  
+4.  If you haven’t already done so, download InstallShield Limited Edition (ISLE), which is free for Visual Studio developers and replaces the functionality of the project templates in Visual Studio for setup and deployment. When you are connected to the Internet, open the **New Project** dialog box by choosing **File**, **New**, **Project** on the menu bar, or by right-clicking your solution in **Solution Explorer** and choosing **Add**, **New Project**. Expand the **Other Project Types** node, choose **Enable InstallShield Limited Edition** in the **Setup and Deployment** node, and follow the instructions that appear. Once you have downloaded, installed and activated InstallShield Limited Edition, close Visual Studio and re-open it.  
   
 5.  Open the **New Project** dialog box again, expand the **Other Project Types** node, and choose **InstallShield Limited Edition Project** in the **InstallShield Limited Edition** node.  
   

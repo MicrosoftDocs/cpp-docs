@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unexpected code generation"
-  - "debugging [MFC], release builds"
-  - "release builds, troubleshooting"
-  - "stray pointers"
-  - "debug builds, difference from release builds"
-  - "MFC [C++], release builds"
-  - "heap layout problems"
-  - "pointers, stray"
-  - "release builds, building applications"
-  - "debug memory allocator"
-  - "optimization [C++], compiler"
-  - "projects [C++], debug configuration"
-  - "troubleshooting Visual C++"
-  - "troubleshooting release builds"
-  - "memory [C++], overwrites"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unexpected code generation", "debugging [MFC], release builds", "release builds, troubleshooting", "stray pointers", "debug builds, difference from release builds", "MFC [C++], release builds", "heap layout problems", "pointers, stray", "release builds, building applications", "debug memory allocator", "optimization [C++], compiler", "projects [C++], debug configuration", "troubleshooting Visual C++", "troubleshooting release builds", "memory [C++], overwrites"]
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Common Problems When Creating a Release Build
 During development, you will usually build and test with a debug build of your project. If you then build your application for a release build, you may get an access violation.  

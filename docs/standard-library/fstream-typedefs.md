@@ -5,7 +5,8 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["fstream/std::filebuf", "fstream/std::fstream", "fstream/std::ifstream", "fstream/std::ofstream", "fstream/std::wfilebuf", "fstream/std::wfstream", "fstream/std::wifstream", "fstream/std::wofstream"]
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
 caps.latest.revision: 11
 manager: "ghogen"

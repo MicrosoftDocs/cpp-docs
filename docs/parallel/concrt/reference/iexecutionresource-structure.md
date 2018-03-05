@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrtrm/concurrency::IExecutionResource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IExecutionResource structure"
+ms.topic: "reference"
+f1_keywords: ["IExecutionResource", "CONCRTRM/concurrency::IExecutionResource", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IExecutionResource structure"]
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IExecutionResource Structure
 An abstraction for a hardware thread.  
@@ -49,10 +32,10 @@ struct IExecutionResource;
   
 |Name|Description|  
 |----------|-----------------|  
-|[IExecutionResource::CurrentSubscriptionLevel Method](#currentsubscriptionlevel)|Returns the number of activated virtual processor roots and subscribed external threads currently associated with the underlying hardware thread this execution resource represents.|  
-|[IExecutionResource::GetExecutionResourceId Method](#getexecutionresourceid)|Returns a unique identifier for the hardware thread that this execution resource represents.|  
-|[IExecutionResource::GetNodeId Method](#getnodeid)|Returns a unique identifier for the processor node that this execution resource belongs to.|  
-|[IExecutionResource::Remove Method](#remove)|Returns this execution resource to the Resource Manager.|  
+|[IExecutionResource::CurrentSubscriptionLevel](#currentsubscriptionlevel)|Returns the number of activated virtual processor roots and subscribed external threads currently associated with the underlying hardware thread this execution resource represents.|  
+|[IExecutionResource::GetExecutionResourceId](#getexecutionresourceid)|Returns a unique identifier for the hardware thread that this execution resource represents.|  
+|[IExecutionResource::GetNodeId](#getnodeid)|Returns a unique identifier for the processor node that this execution resource belongs to.|  
+|[IExecutionResource::Remove](#remove)|Returns this execution resource to the Resource Manager.|  
   
 ## Remarks  
  Execution resources can be standalone or associated with virtual processor roots. A standalone execution resource is created when a thread in your application creates a thread subscription. The methods [ISchedulerProxy::SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) and [ISchedulerProxy::RequestInitialVirtualProcessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) create thread subscriptions, and return an `IExecutionResource` interface representing the subscription. Creating a thread subscription is a way to inform the Resource Manager that a given thread will participate in the work queued to a scheduler, along with the virtual processor roots Resource Manager assigns to the scheduler. The Resource Manager uses the information to avoid oversubscribing hardware threads where it can.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CString"
-  - "CStringT"
-  - "ATL::CStringT"
-  - "ATL.CStringT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], in ATL"
-  - "shared classes, CStringT"
-  - "CStringT class"
+f1_keywords: ["CStringT", "ATLSTR/ATL::CStringT", "ATLSTR/ATL::CStringT::CStringT", "ATLSTR/ATL::CStringT::AllocSysString", "ATLSTR/ATL::CStringT::AnsiToOem", "ATLSTR/ATL::CStringT::AppendFormat", "ATLSTR/ATL::CStringT::Collate", "ATLSTR/ATL::CStringT::CollateNoCase", "ATLSTR/ATL::CStringT::Compare", "ATLSTR/ATL::CStringT::CompareNoCase", "ATLSTR/ATL::CStringT::Delete", "ATLSTR/ATL::CStringT::Find", "ATLSTR/ATL::CStringT::FindOneOf", "ATLSTR/ATL::CStringT::Format", "ATLSTR/ATL::CStringT::FormatMessage", "ATLSTR/ATL::CStringT::FormatMessageV", "ATLSTR/ATL::CStringT::FormatV", "ATLSTR/ATL::CStringT::GetEnvironmentVariable", "ATLSTR/ATL::CStringT::Insert", "ATLSTR/ATL::CStringT::Left", "ATLSTR/ATL::CStringT::LoadString", "ATLSTR/ATL::CStringT::MakeLower", "ATLSTR/ATL::CStringT::MakeReverse", "ATLSTR/ATL::CStringT::MakeUpper", "ATLSTR/ATL::CStringT::Mid", "ATLSTR/ATL::CStringT::OemToAnsi", "ATLSTR/ATL::CStringT::Remove", "ATLSTR/ATL::CStringT::Replace", "ATLSTR/ATL::CStringT::ReverseFind", "ATLSTR/ATL::CStringT::Right", "ATLSTR/ATL::CStringT::SetSysString", "ATLSTR/ATL::CStringT::SpanExcluding", "ATLSTR/ATL::CStringT::SpanIncluding", "ATLSTR/ATL::CStringT::Tokenize", "ATLSTR/ATL::CStringT::Trim", "ATLSTR/ATL::CStringT::TrimLeft", "ATLSTR/ATL::CStringT::TrimRight", "CSTRINGT/CStringT", "CSTRINGT/CStringT::CStringT", "CSTRINGT/CStringT::AllocSysString", "CSTRINGT/CStringT::AnsiToOem", "CSTRINGT/CStringT::AppendFormat", "CSTRINGT/CStringT::Collate", "CSTRINGT/CStringT::CollateNoCase", "CSTRINGT/CStringT::Compare", "CSTRINGT/CStringT::CompareNoCase", "CSTRINGT/CStringT::Delete", "CSTRINGT/CStringT::Find", "CSTRINGT/CStringT::FindOneOf", "CSTRINGT/CStringT::Format", "CSTRINGT/CStringT::FormatMessage", "CSTRINGT/CStringT::FormatMessageV", "CSTRINGT/CStringT::FormatV", "CSTRINGT/CStringT::GetEnvironmentVariable", "CSTRINGT/CStringT::Insert", "CSTRINGT/CStringT::Left", "CSTRINGT/CStringT::LoadString", "CSTRINGT/CStringT::MakeLower", "CSTRINGT/CStringT::MakeReverse", "CSTRINGT/CStringT::MakeUpper", "CSTRINGT/CStringT::Mid", "CSTRINGT/CStringT::OemToAnsi", "CSTRINGT/CStringT::Remove", "CSTRINGT/CStringT::Replace", "CSTRINGT/CStringT::ReverseFind", "CSTRINGT/CStringT::Right", "CSTRINGT/CStringT::SetSysString", "CSTRINGT/CStringT::SpanExcluding", "CSTRINGT/CStringT::SpanIncluding", "CSTRINGT/CStringT::Tokenize", "CSTRINGT/CStringT::Trim", "CSTRINGT/CStringT::TrimLeft", "CSTRINGT/CStringT::TrimRight"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], in ATL", "shared classes, CStringT", "CStringT class"]
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStringT Class
 This class represents a `CStringT` object.  
@@ -163,7 +141,7 @@ public CSimpleStringT<BaseType,
  `CString`, `CStringA`, and `CStringW` are exported from the MFC DLL (MFC90.DLL), never from user DLLs. This is done to prevent `CStringT` from being multiply defined.  
   
 > [!NOTE]
->  If you encountered linker errors when exporting a `CString`-derived class from an MFC extension DLL in Visual C++ .NET 2002 and have applied the workaround as described in the Knowledge Base article, "Linking Errors When You Import CString-Derived Classes" (Q309801), you should remove the workaround code, because this has been fixed in Visual C++ .NET 2003. You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+>  If your code contains the workaround for linker errors that is described in [Linking Errors When You Import CString-Derived Classes" (Q309801)](https://support.microsoft.com/help/309801/you-may-receive-an-lnk2019-error-message-when-you-build-a-visual-c-200), you should remove that code. It is no longer needed.  
   
  The following string types are available within MFC-based applications:  
   
@@ -239,9 +217,11 @@ BSTR AllocSysString() const;
 ### Remarks  
  In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [CAtlException](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.  
   
- Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](http://msdn.microsoft.com/en-us/8f230ee3-5f6e-4cb9-a910-9c90b754dcd3), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
+
+ Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
   
- For more information about OLE allocation functions in Windows, see [SysAllocString](http://msdn.microsoft.com/en-us/9e0437a2-9b4a-4576-88b0-5cb9d08ca29b) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about OLE allocation functions in Windows, see [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx) in the Windows SDK.  
+
   
 ### Example  
  The following example demonstrates the use of `CStringT::AllocSysString`.  
@@ -583,7 +563,7 @@ int FindOneOf(PCXSTR pszCharSet) const throw();
  String containing characters for matching.  
   
 ### Return Value  
- The zero-based index of the first character in this string that is also in `pszCharSet`; –1 if there is no match.  
+ The zero-based index of the first character in this string that is also in `pszCharSet`; -1 if there is no match.  
   
 ### Remarks  
  Finds the first occurrence of any of the characters in `pszCharSet`.  
@@ -645,7 +625,7 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 > [!NOTE]
 > `FormatMessage` attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- Each insert must have a corresponding parameter following the `pszFormat` or `nFormatID` parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Each insert must have a corresponding parameter following the `pszFormat` or `nFormatID` parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]  
@@ -670,7 +650,7 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 > [!NOTE]
 > `FormatMessageV` calls [CStringT::FormatMessage](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
   
 ##  <a name="formatv"></a>  CStringT::FormatV  
  Formats a message string using a variable argument list.  
@@ -1251,7 +1231,7 @@ int ReverseFind(XCHAR ch) const throw();
  The character to search for.  
   
 ### Return Value  
- The zero-based index of the last character in this `CStringT` object that matches the requested character, or –1 if the character is not found.  
+ The zero-based index of the last character in this `CStringT` object that matches the requested character, or -1 if the character is not found.  
   
 ### Remarks  
  The function is similar to the run-time function `strrchr`.  

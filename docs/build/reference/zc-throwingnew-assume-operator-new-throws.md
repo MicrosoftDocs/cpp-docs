@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "12/13/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "throwingNew"
-  - "/Zc:throwingNew"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc compiler options (C++)"
-  - "throwingNew"
-  - "Assume operator new Throws"
-  - "/Zc compiler options (C++)"
-  - "Zc compiler options (C++)"
+f1_keywords: ["throwingNew", "/Zc:throwingNew"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc compiler options (C++)", "throwingNew", "Assume operator new Throws", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:throwingNew (Assume operator new throws)  
 When the `/Zc:throwingNew` option is specified, the compiler optimizes calls to `operator new` to skip checks for a null pointer return. This option tells the compiler to assume that all linked implementations of `operator new` and custom allocators conform to the C++ standard and throw on allocation failure. By default in Visual Studio, the compiler pessimistically generates null checks (`/Zc:throwingNew-`) for these calls, because users can link with a non-throwing implementation of `operator new` or write custom allocator routines that return null pointers.  
@@ -48,7 +26,7 @@ When the `/Zc:throwingNew` option is specified, the compiler optimizes calls to 
   
 ## Remarks  
   
-Since ISO C++98, the standard has specified that the default [operator new](../../standard-library/new-operators.md#operator_new) throws `std::bad_alloc` when memory allocation fails. Versions of Visual C++ up to Visual Studio 6.0 returned a null pointer on an allocation failure. Beginning in Visual Studio 2002, `operator new` conforms to the standard and throws on failure. To support code that uses the older allocation style, Visual Studio provides a linkable implementation of `operator new` in *nothrownew.obj* that returns a null pointer on failure. By default, the compiler also generates defensive null checks to prevent these older-style allocators from causing an immediate crash on failure. The `/Zc:throwingNew` option tells the compiler to leave out these null checks, on the assumption that all linked memory allocators conform to the standard. This does not apply to explicit non-throwing `operator new` overloads, which are declared by using an additional parameter of type `std::nothrow_t` and have an explicit `noexcept` specification.  
+Since ISO C++98, the standard has specified that the default [operator new](../../standard-library/new-operators.md#op_new) throws `std::bad_alloc` when memory allocation fails. Versions of Visual C++ up to Visual Studio 6.0 returned a null pointer on an allocation failure. Beginning in Visual Studio 2002, `operator new` conforms to the standard and throws on failure. To support code that uses the older allocation style, Visual Studio provides a linkable implementation of `operator new` in *nothrownew.obj* that returns a null pointer on failure. By default, the compiler also generates defensive null checks to prevent these older-style allocators from causing an immediate crash on failure. The `/Zc:throwingNew` option tells the compiler to leave out these null checks, on the assumption that all linked memory allocators conform to the standard. This does not apply to explicit non-throwing `operator new` overloads, which are declared by using an additional parameter of type `std::nothrow_t` and have an explicit `noexcept` specification.  
   
 Conceptually, to create an object on the free store, the compiler generates code to allocate its memory and then to invoke its constructor to initialize the memory. Because the Visual C++ compiler normally cannot tell if this code will be linked to a non-conforming, non-throwing allocator, by default it also generates a null check before calling the constructor. This prevents a null pointer dereference in the constructor call if a non-throwing allocation fails. In most cases, these checks are unnecessary, because the default `operator new` allocators throw instead of returning null pointers. The checks also have unfortunate side effects. They bloat the code size, they flood the branch predictor, and they inhibit other useful compiler optimizations such as devirtualization or const propagation out of the initialized object. The checks exist only to support code that links to *nothrownew.obj* or has custom non-conforming `operator new` implementations. If you do not use non-conforming `operator new`, we recommend you use `/Zc:throwingNew` to optimize your code.  
   

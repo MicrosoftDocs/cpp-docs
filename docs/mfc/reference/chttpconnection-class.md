@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CHttpConnection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "servers, connecting to"
-  - "protocols, HTTP"
-  - "connecting to servers, HTTP servers"
-  - "Internet protocols, HTTP"
-  - "HTTP connections"
-  - "Internet protocols"
-  - "CHttpConnection class"
-  - "HTTP servers, connecting to"
-  - "connecting to servers"
-  - "Internet connections, HTTP"
-  - "connections [C++], HTTP"
-  - "Internet server, HTTP"
+f1_keywords: ["CHttpConnection", "AFXINET/CHttpConnection", "AFXINET/CHttpConnection::CHttpConnection", "AFXINET/CHttpConnection::OpenRequest"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHttpConnection [MFC], CHttpConnection", "CHttpConnection [MFC], OpenRequest"]
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CHttpConnection Class
 Manages your connection to an HTTP server.  

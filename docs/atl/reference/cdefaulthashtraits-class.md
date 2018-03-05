@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CDefaultHashTraits"
-  - "ATL.CDefaultHashTraits<T>"
-  - "ATL::CDefaultHashTraits<T>"
-  - "ATL.CDefaultHashTraits"
-  - "ATL::CDefaultHashTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDefaultHashTraits class"
+f1_keywords: ["CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits::Hash"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDefaultHashTraits class"]
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CDefaultHashTraits Class
 This class provides a static function for calculating hash values.  

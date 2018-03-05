@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::short_vector_traits"
-dev_langs: 
-  - "C++"
+ms.topic: "reference"
+f1_keywords: ["short_vector_traits", "AMP_SHORT_VECTORS/short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant"]
+dev_langs: ["C++"]
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # short_vector_traits Structure
 short_vector_traits allows retrival of the underlying vector length and scalar type of a short vector type or a scalar type  

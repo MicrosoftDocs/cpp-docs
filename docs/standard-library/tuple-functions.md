@@ -5,21 +5,20 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "tuple/std::get"
-  - "tuple/std::make_tuple"
-  - "tuple/std::tie"
+ms.topic: "reference"
+f1_keywords: ["tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie"]
+dev_langs: ["C++"]
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 caps.latest.revision: 13
 manager: "ghogen"
+helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]", "std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]"]
 ---
 # &lt;tuple&gt; functions
 ||||  
 |-|-|-|  
-|[get Function](#get_function)|[make_tuple Function](#make_tuple_function)|[tie Function](#tie_function)|  
+|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|  
   
-##  <a name="get_function"></a>  get Function  
+##  <a name="get"></a>  get
  Gets an element from a `tuple` object, by index or (in C++14) by type.  
   
 ```  
@@ -97,7 +96,7 @@ int main() {
 0 1.42 Call me Tuple  
 ```  
   
-##  <a name="make_tuple_function"></a>  make_tuple Function  
+##  <a name="make_tuple"></a>  make_tuple
  Makes a `tuple` from element values.  
   
 ```  
@@ -154,7 +153,7 @@ int main() {
  4 5 6 7  
 ```  
   
-##  <a name="tie_function"></a>  tie Function  
+##  <a name="tie"></a>  tie
  Makes a `tuple` from element references.  
   
 ```  

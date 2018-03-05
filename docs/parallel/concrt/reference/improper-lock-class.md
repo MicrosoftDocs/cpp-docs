@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "concrt/concurrency::improper_lock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "improper_lock class"
+ms.topic: "reference"
+f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["improper_lock class"]
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # improper_lock Class
 This class describes an exception thrown when a lock is acquired improperly.  
@@ -49,7 +32,7 @@ class improper_lock : public std::exception;
   
 |Name|Description|  
 |----------|-----------------|  
-|[improper_lock Constructor](#ctor)|Overloaded. Constructs an `improper_lock exception`.|  
+|[improper_lock](#ctor)|Overloaded. Constructs an `improper_lock exception`.|  
   
 ## Remarks  
  Typically, this exception is thrown when an attempt is made to acquire a non-reentrant lock recursively on the same context.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "std::raw_storage_iterator"
-  - "raw_storage_iterator"
-  - "std.raw_storage_iterator"
-  - "memory/std::raw_storage_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "raw_storage_iterator class"
+ms.topic: "reference"
+f1_keywords: ["memory/std::raw_storage_iterator", "memory/std::raw_storage_iterator::element_type", "memory/std::raw_storage_iterator::iter_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::raw_storage_iterator [C++]", "std::raw_storage_iterator [C++], element_type", "std::raw_storage_iterator [C++], iter_type"]
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # raw_storage_iterator Class
 An adaptor class that is provided to enable algorithms to store their results into uninitialized memory.  
@@ -65,29 +45,29 @@ class raw_storage_iterator
   
 |||  
 |-|-|  
-|[raw_storage_iterator](#raw_storage_iterator__raw_storage_iterator)|Constructs a raw storage iterator with a specified underlying output iterator.|  
+|[raw_storage_iterator](#raw_storage_iterator)|Constructs a raw storage iterator with a specified underlying output iterator.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[element_type](#raw_storage_iterator__element_type)|Provides a type that describes an element to be stored a raw storage iterator.|  
-|[iter_type](#raw_storage_iterator__iter_type)|Provides a type that describes an iterator that underlies a raw storage iterator.|  
+|[element_type](#element_type)|Provides a type that describes an element to be stored a raw storage iterator.|  
+|[iter_type](#iter_type)|Provides a type that describes an iterator that underlies a raw storage iterator.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#raw_storage_iterator__operator_star)|A dereferencing operator used to implement the output iterator expression * `ii` = `x`.|  
-|[operator=](#raw_storage_iterator__operator_eq)|An assignment operator used to implement the raw storage iterator expression * `i` = `x` for storing in memory.|  
-|[operator++](#raw_storage_iterator__operator_add_add)|Preincrement and postincrement operators for raw storage iterators.|  
+|[operator*](#op_star)|A dereferencing operator used to implement the output iterator expression * `ii` = `x`.|  
+|[operator=](#op_eq)|An assignment operator used to implement the raw storage iterator expression * `i` = `x` for storing in memory.|  
+|[operator++](#op_add_add)|Preincrement and postincrement operators for raw storage iterators.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="raw_storage_iterator__element_type"></a>  raw_storage_iterator::element_type  
+##  <a name="element_type"></a>  raw_storage_iterator::element_type  
  Provides a type that describes an element to be stored a raw storage iterator.  
   
 ```
@@ -97,7 +77,7 @@ typedef Type element_type;
 ### Remarks  
  The type is a synonym for the raw_storage_iterator class template parameter **Type**.  
   
-##  <a name="raw_storage_iterator__iter_type"></a>  raw_storage_iterator::iter_type  
+##  <a name="iter_type"></a>  raw_storage_iterator::iter_type  
  Provides a type that describes an iterator that underlies a raw storage iterator.  
   
 ```
@@ -107,7 +87,7 @@ typedef ForwardIterator iter_type;
 ### Remarks  
  The type is a synonym for the template parameter **ForwardIterator**.  
   
-##  <a name="raw_storage_iterator__operator_star"></a>  raw_storage_iterator::operator*  
+##  <a name="op_star"></a>  raw_storage_iterator::operator*  
  A dereferencing operator used to implement the raw storage iterator expression \* *ii* = *x*.  
   
 ```
@@ -118,7 +98,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator*();
  A reference to the raw storage iterator  
   
 ### Remarks  
- The requirements for a **ForwardIterator** are that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid and that it says nothing about the **operator** or the `operator=` on their own. The member operators in this implementation returns **\*this**, so that [operator=](#raw_storage_iterator__operator_eq)( **constType**&) can perform the actual store in an expression, such as \* *ptr* = `val`.  
+ The requirements for a **ForwardIterator** are that the raw storage iterator must satisfy require only the expression \* *ii* = *t* be valid and that it says nothing about the **operator** or the `operator=` on their own. The member operators in this implementation returns **\*this**, so that [operator=](#op_eq)( **constType**&) can perform the actual store in an expression, such as \* *ptr* = `val`.  
   
 ### Example  
   
@@ -171,7 +151,7 @@ Constructing 5
 *\  
 ```  
   
-##  <a name="raw_storage_iterator__operator_eq"></a>  raw_storage_iterator::operator=  
+##  <a name="op_eq"></a>  raw_storage_iterator::operator=  
  Assignment operator used to implement the raw storage iterator expression \* *i* = *x* for storing in memory.  
   
 ```
@@ -240,7 +220,7 @@ Constructing 5
 *\  
 ```  
   
-##  <a name="raw_storage_iterator__operator_add_add"></a>  raw_storage_iterator::operator++  
+##  <a name="op_add_add"></a>  raw_storage_iterator::operator++  
  Preincrement and postincrement operators for raw storage iterators.  
   
 ```
@@ -293,7 +273,7 @@ array 4 = 8
 *\  
 ```  
   
-##  <a name="raw_storage_iterator__raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator  
+##  <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator  
  Constructs a raw storage iterator with a specified underlying output iterator.  
   
 ```

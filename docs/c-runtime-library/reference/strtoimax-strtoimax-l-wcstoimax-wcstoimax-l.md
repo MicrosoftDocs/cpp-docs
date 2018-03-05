@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "wcstoimax"
-  - "_wcstoimax_l"
-  - "_strtoimax_l"
-  - "strtoimax"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["wcstoimax", "_wcstoimax_l", "_strtoimax_l", "strtoimax"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcstoimax"
-  - "_tcstoimax"
-  - "strtoimax"
-  - "_wcstoimax_l"
-  - "_strtoimax_l"
-  - "_tcstoimax_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strtoimax funciton"
-  - "conversion functions"
-  - "_strtoimax_l function"
-  - "_wcstoimax_l function"
-  - "wcstoimax function"
+f1_keywords: ["wcstoimax", "_tcstoimax", "strtoimax", "_wcstoimax_l", "_strtoimax_l", "_tcstoimax_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strtoimax funciton", "conversion functions", "_strtoimax_l function", "_wcstoimax_l function", "wcstoimax function"]
 ms.assetid: 4530d3dc-aaac-4a76-b7cf-29ae3c98d0ae
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 Converts a string to an integer value of the largest supported signed integer type.  
@@ -129,7 +88,7 @@ intmax_t _wcstoimax_l(
   
  `strtoimax` expects `nptr` to point to a string of the following form:  
   
- [`whitespace`] [{`+` &#124; `–`}] [`0` [{ `x` &#124; `X` }]] [`digits` &#124; `letters`]  
+ [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits` &#124; `letters`]  
   
  A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits; `letters` are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that does not fit this form stops the scan. If `base` is between 2 and 36, then it is used as the base of the number. If `base` is 0, the initial characters of the string pointed to by `nptr` are used to determine the base. If the first character is '0' and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than `base` are permitted. The first character outside the range of the base stops the scan. For example, if `base` is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character would stop the scan.  
   

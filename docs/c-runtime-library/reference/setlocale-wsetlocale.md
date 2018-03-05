@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_wsetlocale"
-  - "setlocale"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-locale-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_wsetlocale", "setlocale"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wsetlocale"
-  - "_tsetlocale"
-  - "setlocale"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wsetlocale function"
-  - "setlocale function"
-  - "tsetlocale function"
-  - "locales, defining"
-  - "_tsetlocale function"
-  - "defining locales"
-  - "_wsetlocale function"
+f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wsetlocale function", "setlocale function", "tsetlocale function", "locales, defining", "_tsetlocale function", "defining locales", "_wsetlocale function"]
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # setlocale, _wsetlocale
 Sets or retrieves the run-time locale.  
@@ -319,9 +281,6 @@ The time in en-US locale is: 'Wednesday, May 12, 2004'
 The thread locale is now set to de-DE.  
 The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'  
 ```  
-  
-## .NET Framework Equivalent  
- [System::Globalization::CultureInfo Class](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx)  
   
 ## See Also  
  [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   

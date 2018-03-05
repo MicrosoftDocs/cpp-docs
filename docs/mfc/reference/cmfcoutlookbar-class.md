@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCOutlookBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCOutlookBar class"
+f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane", "CMFCOutlookBar [MFC], CanAcceptPane", "CMFCOutlookBar [MFC], CanSetCaptionTextToTabName", "CMFCOutlookBar [MFC], Create", "CMFCOutlookBar [MFC], CreateCustomPage", "CMFCOutlookBar [MFC], DoesAllowDynInsertBefore", "CMFCOutlookBar [MFC], FloatTab", "CMFCOutlookBar [MFC], GetButtonsFont", "CMFCOutlookBar [MFC], GetTabArea", "CMFCOutlookBar [MFC], IsMode2003", "CMFCOutlookBar [MFC], OnAfterAnimation", "CMFCOutlookBar [MFC], OnBeforeAnimation", "CMFCOutlookBar [MFC], OnScroll", "CMFCOutlookBar [MFC], RemoveCustomPage", "CMFCOutlookBar [MFC], SetButtonsFont", "CMFCOutlookBar [MFC], SetMode2003"]
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBar Class
 A tabbed pane with the visual appearance of the **Navigation Pane** in Microsoft Outlook 2000 or Outlook 2003. The `CMFCOutlookBar` object contains a [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md) object and a series of tabs. The tabs can be either [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md) objects or `CWnd`-derived objects. To the user, the Outlook bar appears as a series of buttons and a display area. When the user clicks a button, the corresponding control or button pane is displayed.  
@@ -243,7 +225,7 @@ virtual BOOL Create(
  Specifies the control ID. Must be distinct from other control IDs used in the application.  
   
  [in] `dwStyle`  
- Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `dwControlBarStyle`  
  Specifies the special library-defined styles.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCTasksPane"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTasksPane class"
+f1_keywords: ["CMFCTasksPane", "AFXTASKSPANE/CMFCTasksPane", "AFXTASKSPANE/CMFCTasksPane::CMFCTasksPane", "AFXTASKSPANE/CMFCTasksPane::AddGroup", "AFXTASKSPANE/CMFCTasksPane::AddLabel", "AFXTASKSPANE/CMFCTasksPane::AddMRUFilesList", "AFXTASKSPANE/CMFCTasksPane::AddPage", "AFXTASKSPANE/CMFCTasksPane::AddSeparator", "AFXTASKSPANE/CMFCTasksPane::AddTask", "AFXTASKSPANE/CMFCTasksPane::AddWindow", "AFXTASKSPANE/CMFCTasksPane::CollapseAllGroups", "AFXTASKSPANE/CMFCTasksPane::CollapseGroup", "AFXTASKSPANE/CMFCTasksPane::CreateDefaultMiniframe", "AFXTASKSPANE/CMFCTasksPane::CreateMenu", "AFXTASKSPANE/CMFCTasksPane::EnableAnimation", "AFXTASKSPANE/CMFCTasksPane::EnableGroupCollapse", "AFXTASKSPANE/CMFCTasksPane::EnableHistoryMenuButtons", "AFXTASKSPANE/CMFCTasksPane::EnableNavigationToolbar", "AFXTASKSPANE/CMFCTasksPane::EnableOffsetCustomControls", "AFXTASKSPANE/CMFCTasksPane::EnableScrollButtons", "AFXTASKSPANE/CMFCTasksPane::EnableWrapLabels", "AFXTASKSPANE/CMFCTasksPane::EnableWrapTasks", "AFXTASKSPANE/CMFCTasksPane::GetActivePage", "AFXTASKSPANE/CMFCTasksPane::GetGroupCaptionHeight", "AFXTASKSPANE/CMFCTasksPane::GetGroupCaptionHorzOffset", "AFXTASKSPANE/CMFCTasksPane::GetGroupCaptionVertOffset", "AFXTASKSPANE/CMFCTasksPane::GetGroupCount", "AFXTASKSPANE/CMFCTasksPane::GetGroupLocation", "AFXTASKSPANE/CMFCTasksPane::GetGroupVertOffset", "AFXTASKSPANE/CMFCTasksPane::GetHorzMargin", "AFXTASKSPANE/CMFCTasksPane::GetNextPages", "AFXTASKSPANE/CMFCTasksPane::GetPageByGroup", "AFXTASKSPANE/CMFCTasksPane::GetPagesCount", "AFXTASKSPANE/CMFCTasksPane::GetPreviousPages", "AFXTASKSPANE/CMFCTasksPane::GetScrollBarCtrl", "AFXTASKSPANE/CMFCTasksPane::GetTask", "AFXTASKSPANE/CMFCTasksPane::GetTaskCount", "AFXTASKSPANE/CMFCTasksPane::GetTaskGroup", "AFXTASKSPANE/CMFCTasksPane::GetTaskLocation", "AFXTASKSPANE/CMFCTasksPane::GetTasksHorzOffset", "AFXTASKSPANE/CMFCTasksPane::GetTasksIconHorzOffset", "AFXTASKSPANE/CMFCTasksPane::GetTasksIconVertOffset", "AFXTASKSPANE/CMFCTasksPane::GetVertMargin", "AFXTASKSPANE/CMFCTasksPane::IsAccessibilityCompatible", "AFXTASKSPANE/CMFCTasksPane::IsAnimationEnabled", "AFXTASKSPANE/CMFCTasksPane::IsBackButtonEnabled", "AFXTASKSPANE/CMFCTasksPane::IsForwardButtonEnabled", "AFXTASKSPANE/CMFCTasksPane::IsGroupCollapseEnabled", "AFXTASKSPANE/CMFCTasksPane::IsHistoryMenuButtonsEnabled", "AFXTASKSPANE/CMFCTasksPane::IsNavigationToolbarEnabled", "AFXTASKSPANE/CMFCTasksPane::IsToolBox", "AFXTASKSPANE/CMFCTasksPane::IsWrapLabelsEnabled", "AFXTASKSPANE/CMFCTasksPane::IsWrapTasksEnabled", "AFXTASKSPANE/CMFCTasksPane::LoadState", "AFXTASKSPANE/CMFCTasksPane::OnCancel", "AFXTASKSPANE/CMFCTasksPane::OnClickTask", "AFXTASKSPANE/CMFCTasksPane::OnOK", "AFXTASKSPANE/CMFCTasksPane::OnPressBackButton", "AFXTASKSPANE/CMFCTasksPane::OnPressForwardButton", "AFXTASKSPANE/CMFCTasksPane::OnPressHomeButton", "AFXTASKSPANE/CMFCTasksPane::OnPressOtherButton", "AFXTASKSPANE/CMFCTasksPane::OnSetAccData", "AFXTASKSPANE/CMFCTasksPane::OnUpdateCmdUI", "AFXTASKSPANE/CMFCTasksPane::PreTranslateMessage", "AFXTASKSPANE/CMFCTasksPane::RecalcLayout", "AFXTASKSPANE/CMFCTasksPane::RemoveAllGroups", "AFXTASKSPANE/CMFCTasksPane::RemoveAllPages", "AFXTASKSPANE/CMFCTasksPane::RemoveAllTasks", "AFXTASKSPANE/CMFCTasksPane::RemoveGroup", "AFXTASKSPANE/CMFCTasksPane::RemovePage", "AFXTASKSPANE/CMFCTasksPane::RemoveTask", "AFXTASKSPANE/CMFCTasksPane::SaveState", "AFXTASKSPANE/CMFCTasksPane::Serialize", "AFXTASKSPANE/CMFCTasksPane::SetActivePage", "AFXTASKSPANE/CMFCTasksPane::SetCaption", "AFXTASKSPANE/CMFCTasksPane::SetGroupCaptionHeight", "AFXTASKSPANE/CMFCTasksPane::SetGroupCaptionHorzOffset", "AFXTASKSPANE/CMFCTasksPane::SetGroupCaptionVertOffset", "AFXTASKSPANE/CMFCTasksPane::SetGroupName", "AFXTASKSPANE/CMFCTasksPane::SetGroupTextColor", "AFXTASKSPANE/CMFCTasksPane::SetGroupVertOffset", "AFXTASKSPANE/CMFCTasksPane::SetHorzMargin", "AFXTASKSPANE/CMFCTasksPane::SetIconsList", "AFXTASKSPANE/CMFCTasksPane::SetPageCaption", "AFXTASKSPANE/CMFCTasksPane::SetTaskName", "AFXTASKSPANE/CMFCTasksPane::SetTasksIconHorzOffset", "AFXTASKSPANE/CMFCTasksPane::SetTasksIconVertOffset", "AFXTASKSPANE/CMFCTasksPane::SetTaskTextColor", "AFXTASKSPANE/CMFCTasksPane::SetTasksHorzOffset", "AFXTASKSPANE/CMFCTasksPane::SetVertMargin", "AFXTASKSPANE/CMFCTasksPane::SetWindowHeight", "AFXTASKSPANE/CMFCTasksPane::ShowCommandMessageString", "AFXTASKSPANE/CMFCTasksPane::ShowTask", "AFXTASKSPANE/CMFCTasksPane::ShowTaskByCmdId", "AFXTASKSPANE/CMFCTasksPane::Update", "AFXTASKSPANE/CMFCTasksPane::OnActivateTasksPanePage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTasksPane [MFC], CMFCTasksPane", "CMFCTasksPane [MFC], AddGroup", "CMFCTasksPane [MFC], AddLabel", "CMFCTasksPane [MFC], AddMRUFilesList", "CMFCTasksPane [MFC], AddPage", "CMFCTasksPane [MFC], AddSeparator", "CMFCTasksPane [MFC], AddTask", "CMFCTasksPane [MFC], AddWindow", "CMFCTasksPane [MFC], CollapseAllGroups", "CMFCTasksPane [MFC], CollapseGroup", "CMFCTasksPane [MFC], CreateDefaultMiniframe", "CMFCTasksPane [MFC], CreateMenu", "CMFCTasksPane [MFC], EnableAnimation", "CMFCTasksPane [MFC], EnableGroupCollapse", "CMFCTasksPane [MFC], EnableHistoryMenuButtons", "CMFCTasksPane [MFC], EnableNavigationToolbar", "CMFCTasksPane [MFC], EnableOffsetCustomControls", "CMFCTasksPane [MFC], EnableScrollButtons", "CMFCTasksPane [MFC], EnableWrapLabels", "CMFCTasksPane [MFC], EnableWrapTasks", "CMFCTasksPane [MFC], GetActivePage", "CMFCTasksPane [MFC], GetGroupCaptionHeight", "CMFCTasksPane [MFC], GetGroupCaptionHorzOffset", "CMFCTasksPane [MFC], GetGroupCaptionVertOffset", "CMFCTasksPane [MFC], GetGroupCount", "CMFCTasksPane [MFC], GetGroupLocation", "CMFCTasksPane [MFC], GetGroupVertOffset", "CMFCTasksPane [MFC], GetHorzMargin", "CMFCTasksPane [MFC], GetNextPages", "CMFCTasksPane [MFC], GetPageByGroup", "CMFCTasksPane [MFC], GetPagesCount", "CMFCTasksPane [MFC], GetPreviousPages", "CMFCTasksPane [MFC], GetScrollBarCtrl", "CMFCTasksPane [MFC], GetTask", "CMFCTasksPane [MFC], GetTaskCount", "CMFCTasksPane [MFC], GetTaskGroup", "CMFCTasksPane [MFC], GetTaskLocation", "CMFCTasksPane [MFC], GetTasksHorzOffset", "CMFCTasksPane [MFC], GetTasksIconHorzOffset", "CMFCTasksPane [MFC], GetTasksIconVertOffset", "CMFCTasksPane [MFC], GetVertMargin", "CMFCTasksPane [MFC], IsAccessibilityCompatible", "CMFCTasksPane [MFC], IsAnimationEnabled", "CMFCTasksPane [MFC], IsBackButtonEnabled", "CMFCTasksPane [MFC], IsForwardButtonEnabled", "CMFCTasksPane [MFC], IsGroupCollapseEnabled", "CMFCTasksPane [MFC], IsHistoryMenuButtonsEnabled", "CMFCTasksPane [MFC], IsNavigationToolbarEnabled", "CMFCTasksPane [MFC], IsToolBox", "CMFCTasksPane [MFC], IsWrapLabelsEnabled", "CMFCTasksPane [MFC], IsWrapTasksEnabled", "CMFCTasksPane [MFC], LoadState", "CMFCTasksPane [MFC], OnCancel", "CMFCTasksPane [MFC], OnClickTask", "CMFCTasksPane [MFC], OnOK", "CMFCTasksPane [MFC], OnPressBackButton", "CMFCTasksPane [MFC], OnPressForwardButton", "CMFCTasksPane [MFC], OnPressHomeButton", "CMFCTasksPane [MFC], OnPressOtherButton", "CMFCTasksPane [MFC], OnSetAccData", "CMFCTasksPane [MFC], OnUpdateCmdUI", "CMFCTasksPane [MFC], PreTranslateMessage", "CMFCTasksPane [MFC], RecalcLayout", "CMFCTasksPane [MFC], RemoveAllGroups", "CMFCTasksPane [MFC], RemoveAllPages", "CMFCTasksPane [MFC], RemoveAllTasks", "CMFCTasksPane [MFC], RemoveGroup", "CMFCTasksPane [MFC], RemovePage", "CMFCTasksPane [MFC], RemoveTask", "CMFCTasksPane [MFC], SaveState", "CMFCTasksPane [MFC], Serialize", "CMFCTasksPane [MFC], SetActivePage", "CMFCTasksPane [MFC], SetCaption", "CMFCTasksPane [MFC], SetGroupCaptionHeight", "CMFCTasksPane [MFC], SetGroupCaptionHorzOffset", "CMFCTasksPane [MFC], SetGroupCaptionVertOffset", "CMFCTasksPane [MFC], SetGroupName", "CMFCTasksPane [MFC], SetGroupTextColor", "CMFCTasksPane [MFC], SetGroupVertOffset", "CMFCTasksPane [MFC], SetHorzMargin", "CMFCTasksPane [MFC], SetIconsList", "CMFCTasksPane [MFC], SetPageCaption", "CMFCTasksPane [MFC], SetTaskName", "CMFCTasksPane [MFC], SetTasksIconHorzOffset", "CMFCTasksPane [MFC], SetTasksIconVertOffset", "CMFCTasksPane [MFC], SetTaskTextColor", "CMFCTasksPane [MFC], SetTasksHorzOffset", "CMFCTasksPane [MFC], SetVertMargin", "CMFCTasksPane [MFC], SetWindowHeight", "CMFCTasksPane [MFC], ShowCommandMessageString", "CMFCTasksPane [MFC], ShowTask", "CMFCTasksPane [MFC], ShowTaskByCmdId", "CMFCTasksPane [MFC], Update", "CMFCTasksPane [MFC], OnActivateTasksPanePage"]
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCTasksPane Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -309,7 +292,7 @@ int AddPage(LPCTSTR lpszPageLabel);
  The zero-based index of the new page.  
   
 ##  <a name="addseparator"></a>  CMFCTasksPane::AddSeparator  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int AddSeparator(int nGroup);
@@ -395,7 +378,7 @@ CMFCTasksPane();
 ```  
   
 ##  <a name="collapseallgroups"></a>  CMFCTasksPane::CollapseAllGroups  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void CollapseAllGroups(BOOL bCollapse = TRUE);
@@ -443,7 +426,7 @@ BOOL CollapseGroup(
  A collapsed group shows only the group caption; the list of tasks is hidden.  
   
 ##  <a name="createdefaultminiframe"></a>  CMFCTasksPane::CreateDefaultMiniframe  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
@@ -547,7 +530,7 @@ void EnableNavigationToolbar(
  By default, the framework does not display the navigation toolbar. If the navigation toolbar is not displayed, the navigation buttons are located on the caption of the docking bar.  
   
 ##  <a name="enableoffsetcustomcontrols"></a>  CMFCTasksPane::EnableOffsetCustomControls  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableOffsetCustomControls(BOOL bEnable);
@@ -696,7 +679,7 @@ int GetHorzMargin() const;
  The default spacing between a task pane and the edge of the client area is 12 pixels.  
   
 ##  <a name="getnextpages"></a>  CMFCTasksPane::GetNextPages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void GetNextPages(CStringList& lstNextPages) const;  
@@ -737,7 +720,7 @@ int GetPagesCount() const;
  The number of pages in the task pane.  
   
 ##  <a name="getpreviouspages"></a>  CMFCTasksPane::GetPreviousPages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void GetPreviousPages(CStringList& lstPrevPages) const;  
@@ -749,7 +732,7 @@ void GetPreviousPages(CStringList& lstPrevPages) const;
 ### Remarks  
   
 ##  <a name="getscrollbarctrl"></a>  CMFCTasksPane::GetScrollBarCtrl  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CScrollBar* GetScrollBarCtrl(int nBar) const;  
@@ -865,7 +848,7 @@ int GetTasksHorzOffset() const;
  The default horizontal offset of tasks is 12 pixels.  
   
 ##  <a name="gettasksiconhorzoffset"></a>  CMFCTasksPane::GetTasksIconHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksIconHorzOffset() const;  
@@ -876,7 +859,7 @@ int GetTasksIconHorzOffset() const;
 ### Remarks  
   
 ##  <a name="gettasksiconvertoffset"></a>  CMFCTasksPane::GetTasksIconVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksIconVertOffset() const;  
@@ -900,7 +883,7 @@ int GetVertMargin() const;
  The vertical margin is the space between a task pane and the edges of the client area. The default value of the vertical margin is 12 pixels.  
   
 ##  <a name="isaccessibilitycompatible"></a>  CMFCTasksPane::IsAccessibilityCompatible  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAccessibilityCompatible();
@@ -950,7 +933,7 @@ BOOL IsForwardButtonEnabled() const;
  The forward button enables forward navigation in the history of task pages.  
   
 ##  <a name="isgroupcollapseenabled"></a>  CMFCTasksPane::IsGroupCollapseEnabled  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsGroupCollapseEnabled() const;  
@@ -981,7 +964,7 @@ BOOL IsNavigationToolbarEnabled() const;
  `TRUE` if the navigation toolbar is enabled; otherwise, `FALSE`.  
   
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsToolBox() const;  
@@ -1012,7 +995,7 @@ BOOL IsWrapTasksEnabled() const;
  `TRUE` if the task string is wrapped; otherwise, `FALSE`.  
   
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL LoadState(
@@ -1041,7 +1024,7 @@ virtual void OnActivateTasksPanePage();
  Override this method in a derived class to customize the appearance of the task pane page.  
   
 ##  <a name="oncancel"></a>  CMFCTasksPane::OnCancel  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnCancel();
@@ -1079,7 +1062,7 @@ virtual void OnClickTask(
  Override this method in a derived class to execute custom code when a task is clicked.  
   
 ##  <a name="onok"></a>  CMFCTasksPane::OnOK  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnOK();
@@ -1124,7 +1107,7 @@ virtual void OnPressHomeButton();
  Override this method in a derived class to execute custom code when the user clicks the home navigation button.  
   
 ##  <a name="onpressotherbutton"></a>  CMFCTasksPane::OnPressOtherButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnPressOtherButton(
@@ -1139,7 +1122,7 @@ virtual void OnPressOtherButton(
 ### Remarks  
   
 ##  <a name="onsetaccdata"></a>  CMFCTasksPane::OnSetAccData  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSetAccData(long lVal);
@@ -1153,7 +1136,7 @@ virtual BOOL OnSetAccData(long lVal);
 ### Remarks  
   
 ##  <a name="onupdatecmdui"></a>  CMFCTasksPane::OnUpdateCmdUI  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnUpdateCmdUI(
@@ -1168,7 +1151,7 @@ virtual void OnUpdateCmdUI(
 ### Remarks  
   
 ##  <a name="pretranslatemessage"></a>  CMFCTasksPane::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1182,7 +1165,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Remarks  
   
 ##  <a name="recalclayout"></a>  CMFCTasksPane::RecalcLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void RecalcLayout(BOOL bRedraw = TRUE);
@@ -1276,7 +1259,7 @@ BOOL RemoveTask(
  `TRUE` if the function succeeds; `FALSE` if `nGroup` or `nTask` is invalid.  
   
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL SaveState(
@@ -1295,7 +1278,7 @@ virtual BOOL SaveState(
 ### Remarks  
   
 ##  <a name="serialize"></a>  CMFCTasksPane::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void Serialize(CArchive& ar);
@@ -1537,7 +1520,7 @@ void SetTasksHorzOffset(int n = -1);
  The default horizontal offset is 12 pixels.  
   
 ##  <a name="settasksiconhorzoffset"></a>  CMFCTasksPane::SetTasksIconHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetTasksIconHorzOffset(int n = -1);
@@ -1549,7 +1532,7 @@ void SetTasksIconHorzOffset(int n = -1);
 ### Remarks  
   
 ##  <a name="settasksiconvertoffset"></a>  CMFCTasksPane::SetTasksIconVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetTasksIconVertOffset(int n = -1);
@@ -1635,7 +1618,7 @@ BOOL SetWindowHeight(
  Call [CMFCTasksPane::AddWindow](#addwindow) to add tasks with window controls.  
   
 ##  <a name="showcommandmessagestring"></a>  CMFCTasksPane::ShowCommandMessageString  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ShowCommandMessageString(UINT uiCmdId);

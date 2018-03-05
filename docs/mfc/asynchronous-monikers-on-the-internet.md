@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], asynchronous"
-  - "MFC [C++], asynchronous monikers"
-  - "asynchronous monikers [C++]"
-  - "Web applications [C++], asynchronous"
-  - "downloading Internet resources and asynchronous monikers"
-  - "optimization [C++], asynchronous downloading across Internet"
-  - "Internet [C++], asynchronous downloading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX controls [MFC], asynchronous", "MFC, asynchronous monikers", "asynchronous monikers [MFC]", "Web applications [MFC], asynchronous", "downloading Internet resources and asynchronous monikers", "optimization [MFC], asynchronous downloading across Internet", "Internet [MFC], asynchronous downloading"]
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Asynchronous Monikers on the Internet
 The Internet requires new approaches to application design because of its slow network access. Applications should perform network access asynchronously to avoid stalling the user interface. The MFC class [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) provides asynchronous support for downloading files.  

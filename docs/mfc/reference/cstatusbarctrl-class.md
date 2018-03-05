@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CStatusBarCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CStatusBarCtrl"
-  - "CStatusBarCtrl class"
-  - "status bar controls"
+f1_keywords: ["CStatusBarCtrl", "AFXCMN/CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::Create", "AFXCMN/CStatusBarCtrl::CreateEx", "AFXCMN/CStatusBarCtrl::DrawItem", "AFXCMN/CStatusBarCtrl::GetBorders", "AFXCMN/CStatusBarCtrl::GetIcon", "AFXCMN/CStatusBarCtrl::GetParts", "AFXCMN/CStatusBarCtrl::GetRect", "AFXCMN/CStatusBarCtrl::GetText", "AFXCMN/CStatusBarCtrl::GetTextLength", "AFXCMN/CStatusBarCtrl::GetTipText", "AFXCMN/CStatusBarCtrl::IsSimple", "AFXCMN/CStatusBarCtrl::SetBkColor", "AFXCMN/CStatusBarCtrl::SetIcon", "AFXCMN/CStatusBarCtrl::SetMinHeight", "AFXCMN/CStatusBarCtrl::SetParts", "AFXCMN/CStatusBarCtrl::SetSimple", "AFXCMN/CStatusBarCtrl::SetText", "AFXCMN/CStatusBarCtrl::SetTipText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatusBarCtrl [MFC], CStatusBarCtrl", "CStatusBarCtrl [MFC], Create", "CStatusBarCtrl [MFC], CreateEx", "CStatusBarCtrl [MFC], DrawItem", "CStatusBarCtrl [MFC], GetBorders", "CStatusBarCtrl [MFC], GetIcon", "CStatusBarCtrl [MFC], GetParts", "CStatusBarCtrl [MFC], GetRect", "CStatusBarCtrl [MFC], GetText", "CStatusBarCtrl [MFC], GetTextLength", "CStatusBarCtrl [MFC], GetTipText", "CStatusBarCtrl [MFC], IsSimple", "CStatusBarCtrl [MFC], SetBkColor", "CStatusBarCtrl [MFC], SetIcon", "CStatusBarCtrl [MFC], SetMinHeight", "CStatusBarCtrl [MFC], SetParts", "CStatusBarCtrl [MFC], SetSimple", "CStatusBarCtrl [MFC], SetText", "CStatusBarCtrl [MFC], SetTipText"]
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CStatusBarCtrl Class
 Provides the functionality of the Windows common status bar control.  
@@ -108,7 +89,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This parameter must include the **WS_CHILD** style. It should also include the **WS_VISIBLE** style.  
+ Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK. This parameter must include the **WS_CHILD** style. It should also include the **WS_VISIBLE** style.  
   
  `rect`  
  Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -146,10 +127,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This parameter must include the **WS_CHILD** style. It should also include the **WS_VISIBLE** style.  
+ Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK. This parameter must include the **WS_CHILD** style. It should also include the **WS_VISIBLE** style.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -242,7 +223,7 @@ HICON GetIcon(int iPart) const;
  The handle to the icon if the method successful; otherwise, `NULL`.  
   
 ### Remarks  
- This method sends the [SB_GETICON](http://msdn.microsoft.com/library/windows/desktop/bb760744) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [SB_GETICON](http://msdn.microsoft.com/library/windows/desktop/bb760744) message, which is described in the Windows SDK.  
   
  A status bar control consists of a row of text output panes, which are also known as parts. For more information about the status bar, see [Status Bar Implementation in MFC](../../mfc/status-bar-implementation-in-mfc.md) and [Setting the Mode of a CStatusBarCtrl Object](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).  
   
@@ -270,7 +251,7 @@ int GetParts(
  Number of parts for which to retrieve coordinates. If this parameter is greater than the number of parts in the control, the message retrieves coordinates for existing parts only.  
   
  *pParts*  
- Address of an integer array having the same number of elements as the number of parts specified by `nParts`. Each element in the array receives the client coordinate of the right edge of the corresponding part. If an element is set to – 1, the position of the right edge for that part extends to the right edge of the status bar.  
+ Address of an integer array having the same number of elements as the number of parts specified by `nParts`. Each element in the array receives the client coordinate of the right edge of the corresponding part. If an element is set to - 1, the position of the right edge for that part extends to the right edge of the status bar.  
   
 ### Return Value  
  The number of parts in the control if successful, or zero otherwise.  
@@ -386,7 +367,7 @@ CString GetTipText(int nPane) const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the text to be used in the tooltip.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_GETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760751), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [SB_GETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760751), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
@@ -402,7 +383,7 @@ BOOL IsSimple() const;
  Nonzero if the status window control is in simple mode; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_ISSIMPLE](http://msdn.microsoft.com/library/windows/desktop/bb760753), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [SB_ISSIMPLE](http://msdn.microsoft.com/library/windows/desktop/bb760753), as described in the Windows SDK.  
   
 ##  <a name="setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
  Sets the background color in a status bar.  
@@ -419,7 +400,7 @@ COLORREF SetBkColor(COLORREF cr);
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the previous default background color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760754), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [SB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760754), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
@@ -444,7 +425,7 @@ BOOL SetIcon(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETICON](http://msdn.microsoft.com/library/windows/desktop/bb760755), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [SB_SETICON](http://msdn.microsoft.com/library/windows/desktop/bb760755), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CStatusBarCtrl::SetBkColor](#setbkcolor).  
@@ -480,7 +461,7 @@ BOOL SetParts(
  Number of parts to set. The number of parts cannot be greater than 255.  
   
  *pWidths*  
- Address of an integer array having the same number of elements as parts specified by `nParts`. Each element in the array specifies the position, in client coordinates, of the right edge of the corresponding part. If an element is – 1, the position of the right edge for that part extends to the right edge of the control.  
+ Address of an integer array having the same number of elements as parts specified by `nParts`. Each element in the array specifies the position, in client coordinates, of the right edge of the corresponding part. If an element is - 1, the position of the right edge for that part extends to the right edge of the control.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -551,7 +532,7 @@ void SetTipText(
  A pointer to a string containing the tooltip text.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760759), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [SB_SETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760759), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]  

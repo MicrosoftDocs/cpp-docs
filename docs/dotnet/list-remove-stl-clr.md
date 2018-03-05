@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::remove"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove member [STL/CLR]"
+f1_keywords: ["cliext::list::remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove member [STL/CLR]"]
 ms.assetid: eaf598ee-e8fd-4cc0-be69-ca81a80e1d51
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::remove (STL/CLR)
 Removes an element with a specified value.  
@@ -48,7 +31,7 @@ void remove(value_type val);
  Value of the element to remove.  
   
 ## Remarks  
- The member function removes an element in the controlled sequence for which `((System::Object^)``val``)->Equals((System::Object^)x)` is true (if any). You use it to erase an arbitrary element with the specified value.  
+ The member function removes an element in the controlled sequence for which `((System::Object^)val)->Equals((System::Object^)x)` is true (if any). You use it to erase an arbitrary element with the specified value.  
   
 ## Example  
   

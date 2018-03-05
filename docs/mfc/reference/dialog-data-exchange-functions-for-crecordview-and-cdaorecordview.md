@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.data"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DDX_Field functions"
-  - "ODBC [C++], dialog data exchange (DDX) support"
-  - "DDX (dialog data exchange) [C++], database support"
-  - "DDX (dialog data exchange) [C++], functions"
-  - "databases [C++], dialog data exchange (DDX) support"
-  - "DAO [C++], dialog data exchange (DDX) support"
+f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
 This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form.  
@@ -58,6 +36,7 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 |[DDX_FieldLBStringExact](#ddx_fieldlbstringexact)|Manages the transfer of `CString` data between a list-box control and the field data members of a recordset. When moving data from the recordset to the control, this function selects the first item that exactly matches the specified string.|  
 |[DDX_FieldRadio](#ddx_fieldradio)|Transfers integer data between a recordset field data member and a group of radio buttons in a `CRecordView` or `CDaoRecordView`.|  
 |[DDX_FieldScroll](#ddx_fieldscroll)|Sets or gets the scroll position of a scroll bar control in a `CRecordView` or `CDaoRecordView`. Call from your [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) function.|  
+|[DDX_FieldSlider](#ddx_fieldslider)|Synchronizes the thumb position of a slider control in a record view and an `int` field data member of a recordset. |
 |[DDX_FieldText](#ddx_fieldtext)|Overloaded versions are available for transferring `int`, **UINT**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **short**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), and [COleCurrency](../../mfc/reference/colecurrency-class.md) data between a recordset field data member and an edit box in a `CRecordView` or `CDaoRecordView`.|  
   
 ##  <a name="ddx_fieldcbindex"></a>  DDX_FieldCBIndex  
@@ -441,6 +420,54 @@ void AFXAPI DDX_FieldScroll(
   
 ### Requirements  
   **Header** afxdao.h  
+
+  ## name="ddx_fieldslider"></a>  DDX_FieldSlider
+The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an `int` field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).  
+   
+### Syntax  
+  ```
+   void AFXAPI DDX_FieldSlider(  
+       CDataExchange* pDX,  
+       int nIDC,  
+       int& value,  
+       CRecordset* pRecordset );  
+
+void AFXAPI DDX_FieldSlider(  
+     CDataExchange* pDX,  
+     int nIDC,  
+     int& value,  
+     CDaoRecordset* pRecordset );  
+```
+### Parameters  
+ `pDX`  
+ A pointer to a [CDataExchange](cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ `nIDC`  
+ The resource ID of the slider control.  
+  
+ *value*  
+ A reference to the value to be exchanged. This parameter holds or will be used to set the slider control's current thumb position.  
+  
+ `pRecordset`  
+ A pointer to the associated `CRecordset` or `CDaoRecordset` object with which data is exchanged.  
+   
+### Remarks  
+ When moving data from the recordset to the slider, this function sets the position of the slider to the value specified in *value*. On a transfer from the recordset to the control, if the recordset field is Null, the slider control's position is set to 0. On a transfer from the control to the recordset, if the control is empty, the value of the recordset field is 0.  
+  
+ `DDX_FieldSlider` does not exchange range information with slider controls capable of setting a range rather than simply a position.  
+  
+ Use the first override of the function if you are working with the ODBC-based classes. Use the second override with the DAO-based classes.  
+  
+ For more information about DDX, see [Dialog Data Exchange and Validation](../dialog-data-exchange-and-validation.md). For examples and more information about DDX for `CRecordView` and `CDaoRecordView` fields, see [Record Views](../../data/record-views-mfc-data-access.md). For information about slider controls, see [Using CSliderCtrl](../using-csliderctrl.md).  
+   
+### Example  
+ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `DDX_FieldSlider` would be similar.  
+   
+### Requirements  
+ **Header:** afxdao.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
   
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText  
  The `DDX_FieldText` function manages the transfer of `int`, **short**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.  

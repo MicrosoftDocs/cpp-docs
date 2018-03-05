@@ -4,55 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_commit"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_commit"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_commit"
-  - "commit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], flushing"
-  - "flushing files to disk"
-  - "commit function"
-  - "_commit function"
-  - "committing files to disk"
+f1_keywords: ["_commit", "commit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++], flushing", "flushing files to disk", "commit function", "_commit function", "committing files to disk"]
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # _commit
 Flushes a file directly to disk.  
@@ -70,7 +36,7 @@ int _commit(
  File descriptor referring to the open file.  
   
 ## Return Value  
- `_commit` returns 0 if the file was successfully flushed to disk. A return value of –1 indicates an error.  
+ `_commit` returns 0 if the file was successfully flushed to disk. A return value of -1 indicates an error.  
   
 ## Remarks  
  The `_commit` function forces the operating system to write the file associated with `fd` to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.  

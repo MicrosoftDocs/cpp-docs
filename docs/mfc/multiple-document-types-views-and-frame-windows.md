@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "static splitter windows"
-  - "multiple views"
-  - "multiple document types"
-  - "multiple views, frame windows"
-  - "document classes, multiple"
-  - "documents [C++], multiple types of"
-  - "splitter windows, dynamic"
-  - "dynamic splitter windows"
-  - "windows [C++], dynamic splitter"
-  - "windows [C++], static splitter"
-  - "multiple frame windows"
-  - "splitter windows, static"
+dev_langs: ["C++"]
+helpviewer_keywords: ["static splitter windows [MFC]", "multiple views [MFC]", "multiple document types [MFC]", "multiple views [MFC], frame windows", "document classes [MFC], multiple", "documents [MFC], multiple types of", "splitter windows [MFC], dynamic", "dynamic splitter windows [MFC]", "windows [MFC], dynamic splitter", "windows [MFC], static splitter", "multiple frame windows [MFC]", "splitter windows [MFC], static"]
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Multiple Document Types, Views, and Frame Windows
 The standard relationship among a document, its view, and its frame window is described in [Document/View Creation](../mfc/document-view-creation.md). Many applications support a single document type (but possibly multiple open documents of that type) with a single view on the document and only one frame window per document. But some applications may need to alter one or more of those defaults.  

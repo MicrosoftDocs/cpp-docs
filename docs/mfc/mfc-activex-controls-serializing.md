@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_wVerMinor"
-  - "DoPropExchange"
-  - "_wVerMajor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, version support"
-  - "wVerMinor global constant"
-  - "GetVersion method"
-  - "ExchangeVersion method"
-  - "MFC ActiveX controls, serializing"
-  - "DoPropExchange method"
-  - "versioning ActiveX controls"
-  - "wVerMajor global constant"
+f1_keywords: ["_wVerMinor", "DoPropExchange", "_wVerMajor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], version support", "wVerMinor global constant [MFC]", "GetVersion method [MFC]", "ExchangeVersion method [MFC]", "MFC ActiveX controls [MFC], serializing", "DoPropExchange method [MFC]", "versioning ActiveX controls", "wVerMajor global constant"]
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Serializing
 This article discusses how to serialize an ActiveX control. Serialization is the process of reading from or writing to a persistent storage medium, such as a disk file. The Microsoft Foundation Class (MFC) Library provides built-in support for serialization in class `CObject`. `COleControl` extends this support to ActiveX controls through the use of a property exchange mechanism.  

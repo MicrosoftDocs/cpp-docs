@@ -5,19 +5,22 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
+f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
 caps.latest.revision: 11
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (complex)", "std::operator&lt;&lt; (complex), std::operator== (complex)"]
 ---
 # &lt;complex&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;&gt;](#operator_gt__gt_)|[operator&lt;&lt;](#operator_lt__lt_)|  
-|[operator*](#operator_star)|[operator+](#operator_add)|[operator-](#operator-)|  
-|[operator/](#operator_)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|  
+|[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|  
+|[operator/](#op_div)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
 ```  
@@ -39,10 +42,10 @@ bool operator!=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or object of its parameter type to be tested for inequality.  
   
- ` right`  
+ `right`  
  A complex number or object of its parameter type to be tested for inequality.  
   
 ### Return Value  
@@ -153,7 +156,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.  
 ```  
   
-##  <a name="operator_star"></a>  operator*  
+##  <a name="op_star"></a>  operator*  
  Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
 ```  
@@ -175,10 +178,10 @@ complex<Type> operator*(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.  
   
 ### Return Value  
@@ -247,7 +250,7 @@ int main( )
 }  
 ```  
   
-##  <a name="operator_add"></a>  operator+  
+##  <a name="op_add"></a>  operator+  
  Adds two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
 ```  
@@ -272,17 +275,17 @@ complex<Type> operator+(const complex<Type>& left);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be added by the + operation.  
   
 ### Return Value  
  The complex number that results from the addition of the two numbers whose value and type are specified by the parameter inputs.  
   
 ### Remarks  
- The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format. The unary operator returns ` left.`  
+ The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format. The unary operator returns `left`.  
   
 ### Example  
   
@@ -408,14 +411,14 @@ complex<Type> operator-(const complex<Type>& left);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The first of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.  
   
- ` right`  
+ `right`  
  The second of two complex numbers or a number that is of the parameter type for a complex number that is to be subtracted by the - operation.  
   
 ### Return Value  
- The complex number that results from the subtraction of ` right` from ` left`, the two numbers whose values are specified by the parameter inputs.  
+ The complex number that results from the subtraction of `right` from `left`, the two numbers whose values are specified by the parameter inputs.  
   
 ### Remarks  
  The operation is overloaded so that simple arithmetic operations can be executed without the conversion of the data to a particular format.  
@@ -522,7 +525,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.  
 ```  
   
-##  <a name="operator_"></a>  operator/  
+##  <a name="op_div"></a>  operator/  
  Divides two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
 ```   
@@ -543,10 +546,10 @@ complex<Type> operator*(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or a number that is of the parameter type for a complex number that is the numerator to be divided by the denominator with the / operation.  
   
- ` right`  
+ `right`  
  A complex number or a number that is of the parameter type for a complex number that is the denominator to be used to divide the numerator with the / operation.  
   
 ### Return Value  
@@ -638,7 +641,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.  
 ```  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Inserts a complex number specified into the output stream.  
   
 ```   
@@ -652,7 +655,7 @@ basic_ostream<Elem, Traits>& operator<<(
  `Ostr`  
  The output stream into which the complex number is being entered.  
   
- ` right`  
+ `right`  
  The complex number to be entered into the output stream  
   
 ### Return Value  
@@ -696,7 +699,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests for equality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.  
   
 ```  
@@ -718,10 +721,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  A complex number or object of its parameter type to be tested for inequality.  
   
- ` right`  
+ `right`  
  A complex number or object of its parameter type to be tested for inequality.  
   
 ### Return Value  
@@ -832,7 +835,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.  
 ```  
   
-##  <a name="operator_gt__gt_"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  Extracts a complex value from the input stream.  
   
 ```  
@@ -847,11 +850,11 @@ basic_istream<Elem, Traits>& operator>>(
  `Istr`  
  The input stream from which the complex number is being extracted.  
   
- ` right`  
+ `right`  
  The complex number that is being extracted from the input stream.  
   
 ### Return Value  
- Reads the value of the specified complex number from `Istr` and returns it into ` right.`  
+ Reads the value of the specified complex number from `Istr` and returns it into `right`.  
   
 ### Remarks  
  The valid input formats are  

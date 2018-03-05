@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "is_volatile"
-  - "std::is_volatile"
-  - "type_traits/std::is_volatile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_volatile class"
-  - "is_volatile"
+ms.topic: "reference"
+f1_keywords: ["type_traits/std::is_volatile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_volatile class", "is_volatile"]
 ms.assetid: 54922e8a-db4e-4cae-8931-b3352f0b8d3b
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # is_volatile Class
 Tests if type is volatile.  

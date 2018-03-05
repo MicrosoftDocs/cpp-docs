@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.AdditionalDependencies"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OMF libraries"
-  - "linking [C++], OMF libraries"
-  - "import libraries, linker files"
-  - "libraries [C++], .lib files as linker input"
-  - "COFF files, import libraries"
-  - "default libraries [C++], linker output"
-  - "default libraries [C++]"
-  - "defaults [C++], libraries"
-  - ".lib files"
+f1_keywords: ["VC.Project.VCLinkerTool.AdditionalDependencies"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OMF libraries", "linking [C++], OMF libraries", "import libraries, linker files", "libraries [C++], .lib files as linker input", "COFF files, import libraries", "default libraries [C++], linker output", "default libraries [C++]", "defaults [C++], libraries", ".lib files"]
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # .Lib Files as Linker Input
 LINK accepts COFF standard libraries and COFF import libraries, both of which usually have the extension .lib. Standard libraries contain objects and are created by the LIB tool. Import libraries contain information about exports in other programs and are created either by LINK when it builds a program that contains exports or by the LIB tool. For information on using LIB to create standard or import libraries, see [LIB Reference](../../build/reference/lib-reference.md). For details on using LINK to create an import library, see the [/DLL](../../build/reference/dll-build-a-dll.md) option.  

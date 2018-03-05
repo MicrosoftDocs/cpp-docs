@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ppl/concurrency::structured_task_group"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structured_task_group class"
+ms.topic: "reference"
+f1_keywords: ["structured_task_group", "PPL/concurrency::structured_task_group", "PPL/concurrency::structured_task_group::structured_task_group", "PPL/concurrency::structured_task_group::cancel", "PPL/concurrency::structured_task_group::is_canceling", "PPL/concurrency::structured_task_group::run", "PPL/concurrency::structured_task_group::run_and_wait", "PPL/concurrency::structured_task_group::wait"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["structured_task_group class"]
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # structured_task_group Class
 The `structured_task_group` class represents a highly structured collection of parallel work. You can queue individual parallel tasks to a `structured_task_group` using `task_handle` objects, and wait for them to complete, or cancel the task group before they have finished executing, which will abort any tasks that have not begun execution.  
@@ -49,18 +32,18 @@ class structured_task_group;
   
 |Name|Description|  
 |----------|-----------------|  
-|[structured_task_group Constructor](#ctor)|Overloaded. Constructs a new `structured_task_group` object.|  
+|[structured_task_group](#ctor)|Overloaded. Constructs a new `structured_task_group` object.|  
 |[~structured_task_group Destructor](#dtor)|Destroys a `structured_task_group` object. You are expected to call either the `wait` or `run_and_wait` method on the object prior to the destructor executing, unless the destructor is executing as a result of stack unwinding due to an exception.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[cancel Method](#cancel)|Makes a best effort attempt to cancel the sub-tree of work rooted at this task group. Every task scheduled on the task group will get canceled transitively if possible.|  
-|[is_canceling Method](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `structured_task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `structured_task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `structured_task_group` object, `true` will be returned as well.|  
-|[run Method](#run)|Overloaded. Schedules a task on the `structured_task_group` object. The caller manages the lifetime of the `task_handle` object passed in the `_Task_handle` parameter. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.|  
-|[run_and_wait Method](#run_and_wait)|Overloaded. Schedules a task to be run inline on the calling context with the assistance of the `structured_task_group` object for full cancellation support. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object. The function then waits until all work on the `structured_task_group` object has either completed or been canceled.|  
-|[wait Method](#wait)|Waits until all work on the `structured_task_group` has completed or is canceled.|  
+|[cancel](#cancel)|Makes a best effort attempt to cancel the sub-tree of work rooted at this task group. Every task scheduled on the task group will get canceled transitively if possible.|  
+|[is_canceling](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `structured_task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `structured_task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `structured_task_group` object, `true` will be returned as well.|  
+|[run](#run)|Overloaded. Schedules a task on the `structured_task_group` object. The caller manages the lifetime of the `task_handle` object passed in the `_Task_handle` parameter. The version that takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.|  
+|[run_and_wait](#run_and_wait)|Overloaded. Schedules a task to be run inline on the calling context with the assistance of the `structured_task_group` object for full cancellation support. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object. The function then waits until all work on the `structured_task_group` object has either completed or been canceled.|  
+|[wait](#wait)|Waits until all work on the `structured_task_group` has completed or is canceled.|  
   
 ## Remarks  
  There are a number of severe restrictions placed on usage of a `structured_task_group` object in order to gain performance:  

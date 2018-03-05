@@ -4,61 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "_difftime32"
-  - "difftime"
-  - "_difftime64"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+ms.topic: "reference"
+apiname: ["_difftime32", "difftime", "_difftime64"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_difftime64"
-  - "difftime"
-  - "difftime64"
-  - "_difftime32"
-  - "difftime32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_difftime32 function"
-  - "difftime function"
-  - "time, finding the difference"
-  - "difftime64 function"
-  - "_difftime64 function"
-  - "difftime32 function"
+f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_difftime32 function", "difftime function", "time, finding the difference", "difftime64 function", "_difftime64 function", "difftime32 function"]
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # difftime, _difftime32, _difftime64
 Finds the difference between two times.  
@@ -165,9 +125,6 @@ Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multip
   
 Program takes      5 seconds.  
 ```  
-  
-## .NET Framework Equivalent  
- [System::DateTime::Subtract](https://msdn.microsoft.com/en-us/library/system.datetime.subtract.aspx)  
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   

@@ -4,54 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tools [C++], MBCS support"
-  - "Asian languages [C++]"
-  - "Code Editor [C++], MBCS support"
-  - "IME [C++]"
-  - "Chinese characters [C++]"
-  - "Input Method Editor [C++], MBCS"
-  - "resource editors [C++], MBCS support"
-  - "debugger [C++], MBCS support"
-  - "character sets [C++], multibyte"
-  - "Japanese characters [C++]"
-  - "multibyte characters [C++]"
-  - "Kanji character support [C++]"
-  - "NMAKE program, MBCS support"
-  - "double-byte character sets [C++]"
-  - "IME [C++], MBCS"
-  - "Input Method Editor [C++]"
-  - "MBCS [C++], enabling"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tools [C++], MBCS support", "Asian languages [C++]", "Code Editor [C++], MBCS support", "IME [C++]", "Chinese characters [C++]", "Input Method Editor [C++], MBCS", "resource editors [C++], MBCS support", "debugger [C++], MBCS support", "character sets [C++], multibyte", "Japanese characters [C++]", "multibyte characters [C++]", "Kanji character support [C++]", "NMAKE program, MBCS support", "double-byte character sets [C++]", "IME [C++], MBCS", "Input Method Editor [C++]", "MBCS [C++], enabling"]
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # MBCS Support in Visual C++
-When run on an MBCS-enabled version of the Windows 2000 or Windows XP operating system, the Visual C++ development system (including the integrated source code editor, debugger, and command line tools) is MBCS-enabled, with the exception of the memory window.  
+When run on an MBCS-enabled version of Windows, the Visual C++ development system (including the integrated source code editor, debugger, and command line tools) is MBCS-enabled, with the exception of the memory window.  
   
  The memory window does not interpret bytes of data as MBCS characters, even though it can interpret them as ANSI or Unicode characters. ANSI characters are always 1 byte in size and Unicode characters are 2 bytes in size. With MBCS, characters can be 1 or 2 bytes in size and their interpretation depends on which code page is in use. Because of this, it is difficult for the memory window to reliably display MBCS characters. The memory window cannot know which byte is the start of a character. The developer can view the byte values in the memory window and look up the value in tables to determine the character representation. This is possible because the developer knows the starting address of a string based on the source code.  
   

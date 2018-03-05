@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.helpfile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "helpfile attribute"
+f1_keywords: ["vc-attr.helpfile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["helpfile attribute"]
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # helpfile
 Sets the name of the Help file for a type library.  
@@ -76,5 +59,4 @@ Sets the name of the Help file for a type library.
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpcontext](../windows/helpcontext.md)   
- [helpstring](../windows/helpstring.md)   
- [Attributes Samples](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [helpstring](../windows/helpstring.md)   

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COccManager"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "custom controls [MFC], sites"
-  - "COccManager class"
-  - "CNoTrackObject class"
-  - "ActiveX control containers [C++], control site"
+f1_keywords: ["COccManager", "AFXOCC/COccManager", "AFXOCC/COccManager::CreateContainer", "AFXOCC/COccManager::CreateDlgControls", "AFXOCC/COccManager::CreateSite", "AFXOCC/COccManager::GetDefBtnCode", "AFXOCC/COccManager::IsDialogMessage", "AFXOCC/COccManager::IsLabelControl", "AFXOCC/COccManager::IsMatchingMnemonic", "AFXOCC/COccManager::OnEvent", "AFXOCC/COccManager::PostCreateDialog", "AFXOCC/COccManager::PreCreateDialog", "AFXOCC/COccManager::SetDefaultButton", "AFXOCC/COccManager::SplitDialogTemplate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COccManager [MFC], CreateContainer", "COccManager [MFC], CreateDlgControls", "COccManager [MFC], CreateSite", "COccManager [MFC], GetDefBtnCode", "COccManager [MFC], IsDialogMessage", "COccManager [MFC], IsLabelControl", "COccManager [MFC], IsMatchingMnemonic", "COccManager [MFC], OnEvent", "COccManager [MFC], PostCreateDialog", "COccManager [MFC], PreCreateDialog", "COccManager [MFC], SetDefaultButton", "COccManager [MFC], SplitDialogTemplate"]
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # COccManager Class
 Manages various custom control sites; implemented by `COleControlContainer` and `COleControlSite` objects.  
@@ -323,7 +303,7 @@ static void AFX_CDECL SetDefaultButton(
 ### Remarks  
   
 > [!NOTE]
->  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set. For more information on **OLEMISC** flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+>  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set. For more information on **OLEMISC** flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the Windows SDK.  
   
 ##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  Called by the framework to split the ActiveX controls from common dialog controls.  

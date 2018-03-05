@@ -4,45 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IDispatchImpl"
-  - "ATL.IDispatchImpl"
-  - "ATL::IDispatchImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dual interfaces, classes"
-  - "IDispatchImpl class"
-  - "IDispatch class support in ATL"
+f1_keywords: ["IDispatchImpl", "ATLCOM/ATL::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::GetIDsOfNames", "ATLCOM/ATL::IDispatchImpl::GetTypeInfo", "ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispatchImpl::Invoke"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dual interfaces, classes", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # IDispatchImpl Class
 Provides a default implementation for the `IDispatch` part of a dual interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -124,7 +103,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo  
  Retrieves the type information for the dual interface.  
@@ -137,7 +116,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount  
  Determines whether there is type information available for the dual interface.  
@@ -147,7 +126,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See `IDispatch::GetTypeInfoCount` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `IDispatch::GetTypeInfoCount` in the Windows SDK.  
   
 ##  <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl  
  The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls **Release**.  
@@ -172,7 +151,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### Remarks  
- See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

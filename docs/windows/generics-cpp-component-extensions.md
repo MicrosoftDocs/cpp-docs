@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "generic_cpp"
-  - "generic"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generics [C++]"
+f1_keywords: ["generic_cpp", "generic"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["generics [C++]"]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generics  (C++ Component Extensions)
 Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in Visual C++, and how to use generic types authored in a .NET Framework language in Visual C++. Finally, this section provides a comparison of generics and C++ templates.  

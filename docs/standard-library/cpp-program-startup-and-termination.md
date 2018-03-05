@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ Standard Library, program startup and termination"
-  - "terminating execution"
-  - "Function Main procedures"
-  - "control text streams"
-  - "startup code, and C++ program termination"
-  - "main function, program startup"
+ms.topic: "reference"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ Standard Library, program startup and termination", "terminating execution", "Function Main procedures", "control text streams", "startup code, and C++ program termination", "main function, program startup"]
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # C++ Program Startup and Termination
 A C++ program performs the same operations as a C program does at program startup and at program termination, plus a few more outlined here.  

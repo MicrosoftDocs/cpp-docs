@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCAutoHideButton"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCAutoHideButton class"
+f1_keywords: ["CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::BringToTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Create", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAlignment", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetAutoHideWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetParentToolBar", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetRect", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::GetTextSize", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::HighlightButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsActive", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHighlighted", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsHorizontal", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsTop", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::IsVisible", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::Move", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDraw", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnDrawBorder", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::OnFillBackground", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ReplacePane", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton", "AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCAutoHideButton [MFC], BringToTop", "CMFCAutoHideButton [MFC], Create", "CMFCAutoHideButton [MFC], GetAlignment", "CMFCAutoHideButton [MFC], GetAutoHideWindow", "CMFCAutoHideButton [MFC], GetParentToolBar", "CMFCAutoHideButton [MFC], GetRect", "CMFCAutoHideButton [MFC], GetSize", "CMFCAutoHideButton [MFC], GetTextSize", "CMFCAutoHideButton [MFC], HighlightButton", "CMFCAutoHideButton [MFC], IsActive", "CMFCAutoHideButton [MFC], IsHighlighted", "CMFCAutoHideButton [MFC], IsHorizontal", "CMFCAutoHideButton [MFC], IsTop", "CMFCAutoHideButton [MFC], IsVisible", "CMFCAutoHideButton [MFC], Move", "CMFCAutoHideButton [MFC], OnDraw", "CMFCAutoHideButton [MFC], OnDrawBorder", "CMFCAutoHideButton [MFC], OnFillBackground", "CMFCAutoHideButton [MFC], ReplacePane", "CMFCAutoHideButton [MFC], ShowAttachedWindow", "CMFCAutoHideButton [MFC], ShowButton", "CMFCAutoHideButton [MFC], UnSetAutoHideMode"]
 ms.assetid: c80e6b8b-25ca-4d12-9d27-457731028ab0
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCAutoHideButton Class
 A button that displays or hides a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) that is configured to hide.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -91,7 +75,7 @@ class CMFCAutoHideButton : public CObject
  **Header:** afxautohidebutton.h  
   
 ##  <a name="bringtotop"></a>  CMFCAutoHideButton::BringToTop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void BringToTop();
@@ -170,7 +154,7 @@ CDockablePane* GetAutoHideWindow() const;
  To associate an auto-hide button with a `CDockablePane`, pass the `CDockablePane` as a parameter to the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="getparenttoolbar"></a>  CMFCAutoHideButton::GetParentToolBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCAutoHideBar* GetParentToolBar();
@@ -181,7 +165,7 @@ CMFCAutoHideBar* GetParentToolBar();
 ### Remarks  
   
 ##  <a name="getrect"></a>  CMFCAutoHideButton::GetRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetRect() const;  
@@ -241,7 +225,7 @@ BOOL IsHorizontal() const;
  The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTop() const;  
@@ -340,7 +324,7 @@ virtual void ShowButton(BOOL bShow);
  A Boolean that specifies whether to show the auto-hide button.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void Move(int nOffset);
@@ -352,7 +336,7 @@ void Move(int nOffset);
 ### Remarks  
   
 ##  <a name="replacepane"></a>  CMFCAutoHideButton::ReplacePane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ReplacePane(CDockablePane* pNewBar);

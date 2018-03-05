@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], creating"
-  - "ActiveX controls [C++], Internet"
-  - "downloading data with ActiveX controls"
-  - "OLE controls [C++], upgrading to ActiveX"
-  - "Internet applications [C++], ActiveX controls"
-  - "networks [C++], downloading with ActiveX controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls on the Internet
 ActiveX controls are the updated version of the OLE control specification. Controls are a primary architecture for developing programmable software components that can be used in a variety of different containers, including COM-aware Web browsers on the Internet. Any ActiveX control can be an Internet control and can add its functionality to an Active document or be part of a Web page. Controls on a Web page can communicate with each other using scripting.  
@@ -172,7 +151,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  You implement [asynchronous monikers](../mfc/asynchronous-monikers-on-the-internet.md) using the `CAsyncMonikerFile` class. However, ActiveX controls can use the `CDataPathProperty` class, which is derived from `CAsyncMonikerFile`, to help implement asynchronous control properties.  
   
- The ASYNDOWN sample demonstrates how to set up an asynchronous loop using timers to read the data. ASYNDOWN is described in detail in the Knowledge Base article "HOWTO: AsyncDown Demonstrates Asynchronous Data Download" (Q177244) and is available for download from the Microsoft Download Center. (For more information about downloading files from the Microsoft Download Center, see the article "How to Obtain Microsoft Support Files from Online Services" (Q119591) in the Microsoft Knowledge Base.) You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+ The ASYNDOWN sample demonstrates how to set up an asynchronous loop using timers to read the data. ASYNDOWN is described in detail in the Knowledge Base article "HOWTO: AsyncDown Demonstrates Asynchronous Data Download" (Q177244) and is available for download from the Microsoft Download Center. (For more information about downloading files from the Microsoft Download Center, see the article "How to Obtain Microsoft Support Files from Online Services" (Q119591) in the Microsoft Knowledge Base.) You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
   
  The basic technique used in ASYNDOWN is to set a timer in **CDataPathProperty::OnDataAvailable** to indicate when data is available. When the timer message is received, the application reads in 128-byte blocks of data and fills an edit control. If data is not available when the timer message is handled, the timer is turned off. `OnDataAvailable` turns on the timer if more data arrives later.  
   

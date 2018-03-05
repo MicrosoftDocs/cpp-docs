@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.exe.ui"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC Application Wizard, user interface features"
+f1_keywords: ["vc.appwiz.mfc.exe.ui"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC Application Wizard, user interface features"]
 ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # User Interface Features, MFC Application Wizard
 This topic explains the options that you can use to specify the look of your application. The user interface features available for your project depend on the type of application you specified in the [Application Type, MFC Application Wizard](../../mfc/reference/application-type-mfc-application-wizard.md) page of the MFC Application Wizard. For example, if you create a single document interface application, you cannot add child frame styles.  
@@ -68,7 +51,7 @@ This topic explains the options that you can use to specify the look of your app
 |------------|-----------------|  
 |**Use a classic menu**|Specifies that your application contains a classic, non-draggable menu.|  
 |**Use a classic docking toolbar**|Adds a standard Windows toolbar to your application. The toolbar contains buttons for creating a new document; opening and saving document files; cutting copying, pasting, or printing text; and entering Help mode. Enabling this option also adds menu commands to display or hide the toolbar.|  
-|**Use a browser style toolbar**|Adds an Internet Explorer–style toolbar to your application.|  
+|**Use a browser style toolbar**|Adds an Internet Explorer-style toolbar to your application.|  
 |**Use a menu bar and toolbar**|Indicates that your application contains a draggable menu bar and a toolbar.|  
 |**User-defined toolbars and images**|Allows the user to customize the toolbar and the toolbar images at runtime.|  
 |**Personalized menu behavior**|Specifies whether the menu contains the full list of items when opened, or if it contains only the commands that the user most frequently uses.|  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCFontComboBox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCFontComboBox::DrawItem method"
-  - "CMFCFontComboBox::PreTranslateMessage method"
-  - "CMFCFontComboBox::MeasureItem method"
-  - "CMFCFontComboBox class"
-  - "CMFCFontComboBox::CompareItem method"
+f1_keywords: ["CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::GetSelFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::Setup", "AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCFontComboBox [MFC], CMFCFontComboBox", "CMFCFontComboBox [MFC], GetSelFont", "CMFCFontComboBox [MFC], SelectFont", "CMFCFontComboBox [MFC], Setup", "CMFCFontComboBox [MFC], m_bDrawUsingFont"]
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCFontComboBox Class
 The `CMFCFontComboBox` class creates a combo box control that contains a list of fonts.  

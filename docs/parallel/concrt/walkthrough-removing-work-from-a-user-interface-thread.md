@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user-interface threads, removing work from [Concurrency Runtime]"
-  - "removing work from user-interface threads [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Removing Work from a User-Interface Thread
 This document demonstrates how to use the Concurrency Runtime to move the work that is performed by the user-interface (UI) thread in a Microsoft Foundation Classes (MFC) application to a worker thread. This document also demonstrates how to improve the performance of a lengthy drawing operation.  

@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], Internet"
-  - "LPK files for Internet controls"
-  - "safe for scripting and initialization (controls)"
-  - "OLE controls [C++], upgrading to ActiveX"
-  - "CAB files, for ActiveX controls"
-  - "Internet applications [C++], ActiveX controls"
-  - "Internet applications [C++], packaging code for download"
-  - "upgrading ActiveX controls"
-  - "licensing ActiveX controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX controls [MFC], Internet", "LPK files for Internet controls", "safe for scripting and initialization (controls)", "OLE controls [MFC], upgrading to ActiveX", "CAB files, for ActiveX controls", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], packaging code for download", "upgrading ActiveX controls", "licensing ActiveX controls"]
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Upgrading an Existing ActiveX Control
 Existing ActiveX controls (formerly OLE controls) can be used on the Internet without modification. However, you may want to modify controls to improve their performance. When using your control on a Web page, there are additional considerations. The .ocx file and all supporting files must be on the target machine or be downloaded across the Internet. This makes code size and download time an important consideration. Downloads can be packaged in a signed .cab file. You can mark your control as safe for scripting, and as safe for initializing.  
@@ -60,7 +36,7 @@ Existing ActiveX controls (formerly OLE controls) can be used on the Internet wi
  You can also add optimizations, as described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md). Monikers can be used to download properties and large BLOBs asynchronously, as described in [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
   
 ##  <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading  
- For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+ For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
   
 ### The CODEBASE Tag  
  ActiveX controls are embedded in Web pages using the `<OBJECT>` tag. The `CODEBASE` parameter of the `<OBJECT>` tag specifies the location from which to download the control. `CODEBASE` can point at a number of different file types successfully.  
@@ -96,7 +72,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
  Cabinet files are the recommended way to package ActiveX controls that use MFC. Packaging an MFC ActiveX control in a cabinet file allows an .inf file to be included to control installation of the ActiveX control and any dependent DLLs (such as the MFC DLLs). Using a CAB file automatically compresses the code for quicker download. If you are using a .cab file for component download, it is faster to sign the entire .cab file than each individual component.  
   
 ### Creating CAB Files  
- You can download the Cabinet Development Kit from the Knowledge Base article [310618: Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/linkid=148204). In this kit you will find the necessary tools to construct cabinet files.  
+ You can download the Cabinet Development Kit from the Knowledge Base article [310618: Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/p/?linkid=148204). In this kit you will find the necessary tools to construct cabinet files.  
   
  The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.  
   
@@ -144,7 +120,7 @@ file-win32-x86=http://activex.microsoft.com/controls/vc/mfc42.cab
 C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf   
 ```  
   
- The `–s 6144` parameter reserves space in the cabinet for code signing.  
+ The `-s 6144` parameter reserves space in the cabinet for code signing.  
   
 ### The Version Tag  
  Note here that the `#Version` information specified with a CAB file applies to the control specified by the `CLASSID` parameter of the `<OBJECT>` tag.  

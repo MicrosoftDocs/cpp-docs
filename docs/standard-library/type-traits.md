@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "<type_traits>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "typetrait header"
-  - "type_traits"
+ms.topic: "reference"
+f1_keywords: ["<type_traits>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["typetrait header", "type_traits"]
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
 caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # &lt;type_traits&gt;
 Defines templates that provide compile-time constants that give information about the properties of their type arguments or produce transformed types.  
@@ -47,7 +29,7 @@ Defines templates that provide compile-time constants that give information abou
 ## Remarks  
  The classes and templates in `<type_traits>` are used to support type inference, classification, and transformation at compile time, to detect type-related errors, and to help you optimize your generic code. These classes and templates include unary type traits that describe a property of a type, binary type traits that describe a relationship between types, and transformation traits that modify a property of a type.  
   
- To support type traits, a helper class, `integral_constant`, is defined. It has template specializations `true_type` and `false_type` that form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it is publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type_typedef). When a type predicate *holds false*, it is publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type_typedef).  
+ To support type traits, a helper class, `integral_constant`, is defined. It has template specializations `true_type` and `false_type` that form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it is publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type). When a type predicate *holds false*, it is publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type).  
   
  A *type modifier* or *transformation trait* is a template that takes one or more template arguments and has one member, `type`, which is a synonym for the modified type.  
   
@@ -74,8 +56,8 @@ using add_const_t = typename add_const<T>::type;
 |||  
 |-|-|  
 |[integral_constant](../standard-library/integral-constant-class-bool-constant-class.md)|Makes an integral constant from a type and a value.|  
-|[true_type](../standard-library/type-traits-typedefs.md#true_type_typedef)|Holds integral constant with true value.|  
-|[false_type](../standard-library/type-traits-typedefs.md#false_type_typedef)|Holds integral constant with false value.|  
+|[true_type](../standard-library/type-traits-typedefs.md#true_type)|Holds integral constant with true value.|  
+|[false_type](../standard-library/type-traits-typedefs.md#false_type)|Holds integral constant with false value.|  
   
  Primary type categories  
   
@@ -173,7 +155,7 @@ using add_const_t = typename add_const<T>::type;
 |-|-|  
 |[add_const](../standard-library/add-const-class.md)|Produces a `const` type from type.|  
 |[add_volatile](../standard-library/add-volatile-class.md)|Produces a `volatile` type from type.|  
-|[add_cv](../standard-library/add-cv-class.md)|Produces a `const``volatile` type from type.|  
+|[add_cv](../standard-library/add-cv-class.md)|Produces a `const volatile` type from type.|  
 |[remove_const](../standard-library/remove-const-class.md)|Produces a non-const type from type.|  
 |[remove_volatile](../standard-library/remove-volatile-class.md)|Produces a non-volatile type from type.|  
 |[remove_cv](../standard-library/remove-cv-class.md)|Produces a non-const non-volatile type from type.|  

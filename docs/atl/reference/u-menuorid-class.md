@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL._U_MENUorID"
-  - "ATL::_U_MENUorID"
-  - "_U_MENUorID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "U_MENUorID class"
-  - "_U_MENUorID class"
+f1_keywords: ["ATL._U_MENUorID", "ATL::_U_MENUorID", "_U_MENUorID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["U_MENUorID class", "_U_MENUorID class"]
 ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # _U_MENUorID Class
 This class provides wrappers for **CreateWindow** and **CreateWindowEx**.  

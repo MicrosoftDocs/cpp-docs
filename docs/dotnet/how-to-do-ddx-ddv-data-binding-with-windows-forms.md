@@ -4,37 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], hosting a Windows Forms Control"
-  - "Windows Forms [C++], MFC support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], hosting a Windows Forms Control", "Windows Forms [C++], MFC support"]
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Do DDX/DDV Data Binding with Windows Forms
-[DDX_ManagedControl](http://msdn.microsoft.com/Library/61b55a90-c993-478e-9dea-db27fbf0e193) calls [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
+[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) calls [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
   
  Call `DDX_ManagedControl` in [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) to create controls from resource IDs. For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls. Instead, you can place code to access the properties of the managed control in the `DoDataExchange` method of your dialog (or view) class, as in the following example.  
   
@@ -99,5 +82,5 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
   
 ## See Also  
  [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)   
- [DDX_ManagedControl](http://msdn.microsoft.com/Library/61b55a90-c993-478e-9dea-db27fbf0e193)   
+ [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)   
  [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange)

@@ -4,57 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "poisson_distribution"
-  - "std::poisson_distribution"
-  - "random/std::poisson_distribution"
-  - "std::poisson_distribution::reset"
-  - "random/std::poisson_distribution::reset"
-  - "std::poisson_distribution::mean"
-  - "random/std::poisson_distribution::mean"
-  - "std::poisson_distribution::param"
-  - "random/std::poisson_distribution::param"
-  - "std::poisson_distribution::min"
-  - "random/std::poisson_distribution::min"
-  - "std::poisson_distribution::max"
-  - "random/std::poisson_distribution::max"
-  - "std::poisson_distribution::operator()"
-  - "random/std::poisson_distribution::operator()"
-  - "std::poisson_distribution::param_type"
-  - "random/std::poisson_distribution::param_type"
-  - "std::poisson_distribution::param_type::mean"
-  - "random/std::poisson_distribution::param_type::mean"
-  - "std::poisson_distribution::param_type::operator=="
-  - "random/std::poisson_distribution::param_type::operator=="
-  - "std::poisson_distribution::param_type::operator!="
-  - "random/std::poisson_distribution::param_type::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "poisson_distribution class"
+ms.topic: "reference"
+f1_keywords: ["random/std::poisson_distribution", "random/std::poisson_distribution::reset", "random/std::poisson_distribution::mean", "random/std::poisson_distribution::param", "random/std::poisson_distribution::min", "random/std::poisson_distribution::max", "random/std::poisson_distribution::operator()", "random/std::poisson_distribution::param_type", "random/std::poisson_distribution::param_type::mean", "random/std::poisson_distribution::param_type::operator==", "random/std::poisson_distribution::param_type::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::poisson_distribution [C++]", "std::poisson_distribution [C++], reset", "std::poisson_distribution [C++], mean", "std::poisson_distribution [C++], param", "std::poisson_distribution [C++], min", "std::poisson_distribution [C++], max", "std::poisson_distribution [C++], param_type", "std::poisson_distribution [C++], param_type"]
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # poisson_distribution Class
 Generates a Poisson distribution.  
@@ -99,8 +60,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[poisson_distribution::poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
-|`poisson_distribution::operator()`||[poisson_distribution::param_type](#poisson_distribution__param_type)|  
+|[poisson_distribution](#poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
+|`poisson_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `mean()` returns the value for stored distribution parameter *mean*.  
   
@@ -114,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Poisson distribution, see the Wolfram MathWorld article [Poisson Distribution](http://go.microsoft.com/fwlink/LinkId=401112).  
+For detailed information about the Poisson distribution, see the Wolfram MathWorld article [Poisson Distribution](http://go.microsoft.com/fwlink/p/?linkid=401112).  
   
 ## Example  
   
@@ -219,7 +180,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="poisson_distribution__poisson_distribution"></a>  poisson_distribution::poisson_distribution  
+##  <a name="poisson_distribution"></a>  poisson_distribution::poisson_distribution  
 Constructs the distribution.  
   
 ```  
@@ -241,7 +202,7 @@ The first constructor constructs an object whose stored `mean` value holds the v
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="poisson_distribution__param_type"></a>  poisson_distribution::param_type  
+##  <a name="param_type"></a>  poisson_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```    
@@ -256,7 +217,7 @@ struct param_type {
 ```  
   
 ### Parameters  
-See constructor parameters for [poisson_distribution](#poisson_distribution__poisson_distribution).  
+See constructor parameters for [poisson_distribution](#poisson_distribution).  
   
 ### Remarks  
  **Precondition:** `0.0 < mean`  

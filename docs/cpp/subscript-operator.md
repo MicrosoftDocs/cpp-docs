@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "[]"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], subscript"
-  - "postfix operators"
-  - "[] operator"
-  - "subscript operator, syntax"
+f1_keywords: ["[]"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], subscript", "postfix operators [C++]", "[] operator", "subscript operator [C++], syntax"]
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Subscript Operator:
 ## Syntax  
@@ -96,7 +76,7 @@ int main() {
 ```  
   
 ## Positive and negative subscripts  
- The first element of an array is element 0. The range of a C++ array is from *array*[0] to *array*[*size* – 1]. However, C++ supports positive and negative subscripts. Negative subscripts must fall within array boundaries; if they do not, the results are unpredictable. The following code shows positive and negative array subscripts:  
+ The first element of an array is element 0. The range of a C++ array is from *array*[0] to *array*[*size* - 1]. However, C++ supports positive and negative subscripts. Negative subscripts must fall within array boundaries; if they do not, the results are unpredictable. The following code shows positive and negative array subscripts:  
   
 ```  
 #include <iostream>  

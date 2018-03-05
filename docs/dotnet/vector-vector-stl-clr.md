@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::vector"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vector member [STL/CLR]"
+f1_keywords: ["cliext::vector::vector"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vector member [STL/CLR]"]
 ms.assetid: a0b5e807-1ef2-422b-b772-1f96cd62fb51
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::vector (STL/CLR)
 Constructs a container object.  
@@ -77,13 +60,13 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(vector<Value>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)`(),` `right``.`[vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object `right`.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object `right`.  
   
  The constructor:  
   
  `vector(vector<Value>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)`(),` `right``->`[vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is `right`.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is `right`.  
   
  The constructor:  
   
@@ -103,7 +86,7 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(InIt first, InIt last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy of another sequence.  
+ initializes the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy of another sequence.  
   
  The constructor:  
   

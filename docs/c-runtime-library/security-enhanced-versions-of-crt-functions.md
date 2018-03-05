@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "security [CRT]"
-  - "security-enhanced CRT"
-  - "CRT, security enhancements"
+dev_langs: ["C++"]
+helpviewer_keywords: ["security [CRT]", "security-enhanced CRT", "CRT, security enhancements"]
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Security-Enhanced Versions of CRT Functions
 More secure versions of run-time library routines are available. For further information concerning Security Enhancements in the CRT, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md).  
@@ -65,10 +46,10 @@ More secure versions of run-time library routines are available. For further inf
 |[_gcvt](../c-runtime-library/reference/gcvt.md)|[_gcvt_s](../c-runtime-library/reference/gcvt-s.md)|Convert a floating-point value to a string, and store it in a buffer|  
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)|[getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Get a value from the current environment.|  
 |Obsolete function|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|Get a line from the `stdin` stream|  
-|[gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)|[_gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|Convert time from type `time_t` to `struct``tm` or from type `__time64_t` to `struct tm`|  
+|[gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)|[_gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|Convert time from type `time_t` to `struct tm` or from type `__time64_t` to `struct tm`|  
 |[_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow](../c-runtime-library/reference/itoa-i64toa-ui64toa-itow-i64tow-ui64tow.md)|[_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md)|Convert an integer to a string|  
 |[_lfind](../c-runtime-library/reference/lfind.md)|[_lfind_s](../c-runtime-library/reference/lfind-s.md)|Perform a linear search for the specified key|  
-|[localtime, _localtime32, _localtime64](../c-runtime-library/reference/localtime-localtime32-localtime64.md)|[localtime_s, _localtime32_s, _localtime64_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)|Convert time from type `time_t` to `struct tm` or from type `__time64_t` to `struct tm`with local correction|  
+|[localtime, _localtime32, _localtime64](../c-runtime-library/reference/localtime-localtime32-localtime64.md)|[localtime_s, _localtime32_s, _localtime64_s](../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)|Convert time from type `time_t` to `struct tm` or from type `__time64_t` to `struct tm` with local correction|  
 |[_lsearch](../c-runtime-library/reference/lsearch.md)|[_lsearch_s](../c-runtime-library/reference/lsearch-s.md)|Perform a linear search for a value; adds to end of list if not found|  
 |[_ltoa, _ltow](../c-runtime-library/reference/ltoa-ltow.md)|[_ltoa_s, _ltow_s](../c-runtime-library/reference/ltoa-s-ltow-s.md)|Convert a long integer to a string|  
 |[_makepath, _wmakepath](../c-runtime-library/reference/makepath-wmakepath.md)|[_makepath_s, _wmakepath_s](../c-runtime-library/reference/makepath-s-wmakepath-s.md)|Create a path name from components|  

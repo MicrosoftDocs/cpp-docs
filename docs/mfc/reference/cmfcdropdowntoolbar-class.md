@@ -4,39 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CMFCDropDownToolBar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDropDownToolBar class"
+f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDropDownToolBar [MFC], AllowShowOnPaneMenu", "CMFCDropDownToolBar [MFC], LoadBitmap", "CMFCDropDownToolBar [MFC], LoadToolBar", "CMFCDropDownToolBar [MFC], OnLButtonUp", "CMFCDropDownToolBar [MFC], OnMouseMove", "CMFCDropDownToolBar [MFC], OnSendCommand", "CMFCDropDownToolBar [MFC], OnUpdateCmdUI"]
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDropDownToolBar Class
 A toolbar that appears when the user presses and holds a top-level toolbar button.  
   
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
 ## Syntax  
   
 ```  
@@ -105,7 +89,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
  **Header:** afxdropdowntoolbar.h  
   
 ##  <a name="allowshowonpanemenu"></a>  CMFCDropDownToolBar::AllowShowOnPaneMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL AllowShowOnPaneMenu() const;  
@@ -156,7 +140,7 @@ virtual BOOL LoadBitmap(
  Call the `LoadBitmapEx` method to load additional images after you create the toolbar.  
   
 ##  <a name="loadtoolbar"></a>  CMFCDropDownToolBar::LoadToolBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL LoadToolBar(
@@ -183,7 +167,7 @@ virtual BOOL LoadToolBar(
 ### Remarks  
   
 ##  <a name="onlbuttonup"></a>  CMFCDropDownToolBar::OnLButtonUp  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 afx_msg void OnLButtonUp(
@@ -198,7 +182,7 @@ afx_msg void OnLButtonUp(
 ### Remarks  
   
 ##  <a name="onmousemove"></a>  CMFCDropDownToolBar::OnMouseMove  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 afx_msg void OnMouseMove(
@@ -213,7 +197,7 @@ afx_msg void OnMouseMove(
 ### Remarks  
   
 ##  <a name="onsendcommand"></a>  CMFCDropDownToolBar::OnSendCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
@@ -227,7 +211,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ### Remarks  
   
 ##  <a name="onupdatecmdui"></a>  CMFCDropDownToolBar::OnUpdateCmdUI  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnUpdateCmdUI(

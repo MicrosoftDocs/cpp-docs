@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "calling conventions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["calling conventions"]
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # Calling Conventions
 The Visual C/C++ compiler provides several different conventions for calling internal and external functions. Understanding these different approaches can help you debug your program and link your code with assembly-language routines.  
@@ -41,7 +25,7 @@ The Visual C/C++ compiler provides several different conventions for calling int
   
 ## Topics in this section  
   
--   [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md) (__`cdecl`, \_\_**stdcall**, \_\_**fastcall**, and others)  
+-   [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md) (`__cdecl`, `__stdcall`, `__fastcall`, and others)  
   
 -   [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)  
   

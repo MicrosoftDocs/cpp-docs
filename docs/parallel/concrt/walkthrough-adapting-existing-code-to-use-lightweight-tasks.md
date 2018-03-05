@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "using lightweight tasks [Concurrency Runtime]"
-  - "lightweight tasks, using [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["using lightweight tasks [Concurrency Runtime]", "lightweight tasks, using [Concurrency Runtime]"]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adapting Existing Code to Use Lightweight Tasks
 This topic shows how to adapt existing code that uses the Windows API to create and execute a thread to use a lightweight task.  

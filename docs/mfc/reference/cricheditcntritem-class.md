@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRichEditCntrItem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRichEditCntrItem class"
-  - "OLE items, in rich edit views"
-  - "rich edit controls, using"
-  - "rich edit controls, OLE items"
+f1_keywords: ["CRichEditCntrItem", "AFXRICH/CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::SyncToRichEditObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRichEditCntrItem [MFC], CRichEditCntrItem", "CRichEditCntrItem [MFC], SyncToRichEditObject"]
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # CRichEditCntrItem Class
 With [CRichEditView](../../mfc/reference/cricheditview-class.md) and [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), provides the functionality of the rich edit control within the context of MFC's document view architecture.  
@@ -102,7 +82,7 @@ CRichEditCntrItem(
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
  Call this function to synchronize the device aspect, [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), of this **CRichEditCntrltem** to that specified by *reo*.  
@@ -116,7 +96,7 @@ void SyncToRichEditObject(REOBJECT& reo);
  Reference to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item.  
   
 ### Remarks  
- For more information, see [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample WORDPAD](../../visual-cpp-samples.md)   

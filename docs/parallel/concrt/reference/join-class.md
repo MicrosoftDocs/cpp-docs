@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "agents/concurrency::join"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "join class"
+ms.topic: "reference"
+f1_keywords: ["join", "AGENTS/concurrency::join", "AGENTS/concurrency::join::join", "AGENTS/concurrency::join::accept_message", "AGENTS/concurrency::join::consume_message", "AGENTS/concurrency::join::link_target_notification", "AGENTS/concurrency::join::propagate_message", "AGENTS/concurrency::join::propagate_to_any_targets", "AGENTS/concurrency::join::release_message", "AGENTS/concurrency::join::reserve_message", "AGENTS/concurrency::join::resume_propagation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["join class"]
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+ms.workload: ["cplusplus"]
 ---
 # join Class
 A `join` messaging block is a single-target, multi-source, ordered `propagator_block` which combines together messages of type `T` from each of its sources.  
@@ -59,21 +42,21 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
   
 |Name|Description|  
 |----------|-----------------|  
-|[join Constructor](#ctor)|Overloaded. Constructs a `join` messaging block.|  
+|[join](#ctor)|Overloaded. Constructs a `join` messaging block.|  
 |[~join Destructor](#dtor)|Destroys the `join` block.|  
   
 ### Protected Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[accept_message Method](#accept_message)|Accepts a message that was offered by this `join` messaging block, transferring ownership to the caller.|  
-|[consume_message Method](#consume_message)|Consumes a message previously offered by the `join` messaging block and reserved by the target, transferring ownership to the caller.|  
-|[link_target_notification Method](#link_target_notification)|A callback that notifies that a new target has been linked to this `join` messaging block.|  
-|[propagate_message Method](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `join` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[propagate_to_any_targets Method](#propagate_to_any_targets)|Constructs an output message containing an input message from each source when they have all propagated a message. Sends this output message out to each of its targets.|  
-|[release_message Method](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message Method](#reserve_message)|Reserves a message previously offered by this `join` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation Method](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[accept_message](#accept_message)|Accepts a message that was offered by this `join` messaging block, transferring ownership to the caller.|  
+|[consume_message](#consume_message)|Consumes a message previously offered by the `join` messaging block and reserved by the target, transferring ownership to the caller.|  
+|[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `join` messaging block.|  
+|[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `join` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Constructs an output message containing an input message from each source when they have all propagated a message. Sends this output message out to each of its targets.|  
+|[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Reserves a message previously offered by this `join` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## Remarks  
  For more information, see [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md).  
