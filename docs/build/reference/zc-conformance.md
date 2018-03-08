@@ -44,6 +44,7 @@ These are the `/Zc` compiler options:
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|Enable thread-safe local static initialization (on by default).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|Assume `operator new` throws on failure (off by default).|
 |[trigraphs\[-\]](zc-trigraphs-trigraphs-substitution.md)|Enable trigraphs (obsolete, off by default).|
+|[twoPhase-](zc-twophase.md)|Use non-conforming template parsing behavior (conforming by default).|
 |[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` is a native type, not a typedef (on by default).|
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
