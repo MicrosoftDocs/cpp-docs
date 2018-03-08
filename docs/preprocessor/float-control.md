@@ -47,8 +47,6 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(except, off)  
 #pragma fenv_access(off)  
 #pragma float_control(precise, off)  
-// The following line is needed on Itanium processors  
-#pragma fp_contract(on)  
 ```  
   
  To go from fast model to a strict model with the `float_control` pragma, use the following code:  
@@ -57,8 +55,6 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(precise, on)  
 #pragma fenv_access(on)  
 #pragma float_control(except, on)  
-// The following line is needed on Itanium processors.  
-#pragma fp_contract(off)  
 ```  
   
  Other floating-point pragmas include:  
