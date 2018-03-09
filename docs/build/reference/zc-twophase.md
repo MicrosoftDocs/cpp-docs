@@ -48,6 +48,28 @@ As a result, if the template body has syntax errors and the template is never in
 
 Another effect of this behavior is in overload resolution. Because of the way the token stream is expanded at the site of instantiation, symbols that were not visible at the template declaration may be visible at the point of instantiation and participate in overload resolution. This can lead to templates that change behavior based on code that was not visible when the template was defined, contrary to the standard.
 
+For example, consider this code:
+
+```cpp
+#include <cstdio>
+
+void func(void*) { std::puts("The call resolves to void*") ;}
+
+template<typename T> void g(T x)
+{
+    func(0);
+}
+
+void func(int) { std::puts("The call resolves to int"); }
+
+int main() 
+{
+    g(3.14);
+}
+```
+
+When compiled under **/Zc:twoPhase-**, this program prints "The call resolves to int". In conformance mode, this program prints "The call resolves to void*", because the second overload of `func` is not visible when the compiler encounters the template.
+
 ### Update your code for two-phase conformance
 
 Older versions of the compiler do not require the keywords `template` and `typename` everywhere the C++ Standard requires them. These keywords are needed in some positions to disambiguate how compilers should parse a dependent name during the first phase of lookup. For example:
