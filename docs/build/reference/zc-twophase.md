@@ -68,7 +68,55 @@ int main()
 }
 ```
 
-When compiled under **/Zc:twoPhase-**, this program prints "The call resolves to int". In conformance mode, this program prints "The call resolves to void*", because the second overload of `func` is not visible when the compiler encounters the template.
+When compiled under **/Zc:twoPhase-**, this program prints "The call resolves to int". In conformance mode under **/permissive-**, this program prints "The call resolves to void*", because the second overload of `func` is not visible when the compiler encounters the template.
+
+*Dependent names*, names that depend on a template parameter, have lookup behavior that is also different under **/Zc:twoPhase-**. In conformance mode, dependent names are not bound at the point of the template’s definition. Instead, these names are looked up when the template is instantiated. For function calls with a dependent function name, the name is bound to the set of functions that are visible at the point of the call in the template’s definition, as above. Additional overloads from argument-dependent lookup are added at both the point of the template definition and the point of where the template is instantiated. The two phases of two-phase lookup are the lookup for non-dependent names at the time of template definition, and lookup for dependent names at the time of template instantiation. Under **/Zc:twoPhase-**, the compiler does not do argument-dependent lookup separately from ordinary, unqualified lookup (that is, it doesn't do two-phase lookup), so the results of overload resolution may be different.
+
+Here's another example:
+
+```cpp
+// zctwophase1.cpp
+// Compile by using
+// cl /EHsc /W4 /permissive- zctwophase1.cpp
+// cl /EHsc /W4 /permissive- /Zc:twoPhase- zctwophase1.cpp
+
+#include <cstdio>
+
+void func(long) { std::puts("func(long)"); }
+
+template <typename T> void tfunc(T t) {
+    func(t);
+}
+
+void func(int) { std::puts("func(int)"); }
+
+namespace NS {
+    struct S {};
+    void func(S) { std::puts("NS::func(NS::S)"); }
+}
+
+int main() {
+    tfunc(1729);
+    NS::S s;
+    tfunc(s);
+}
+```
+
+When compiled without **/Zc:twoPhase-**, this prints
+
+```Output
+func(long)
+NS::func(NS::S)
+```
+
+When compiled with **/Zc:twoPhase-**, this prints
+
+```Output
+func(int)
+NS::func(NS::S)
+```
+
+In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to the `void func(long)` overload, not `void func(int)` overload as under **/Zc:twoPhase-**, because the unqualified `func(int)` is declared after the definition of the template and not found through argument-dependent lookup. But `void func(S)` does participate in argument-dependent lookup, so it is added to the overload set for the call `tfunc(s)` even though it is declared after the template function.
 
 ### Update your code for two-phase conformance
 
