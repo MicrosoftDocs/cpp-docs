@@ -74,35 +74,7 @@ int main() {
 ```Output  
 out=9.999999776482582e-003  
 ```  
-  
-## Example  
- The following sample is for compiler producing output files for Itanium processors. **/fp:precise** keeps the intermediate results in extended precision where values greater than FLT_MAX (3.402823466e+38F) can be calculated and as a result of that sum will have 1.0 result, as it should if manually calculated. **/fp:strict** keeps intermediate results in their source precision (float) so the first addition produces infinity, which is kept throughout the expression.  
-  
-```  
-// pragma_directive_fenv_access_IPF.cpp  
-// compile with: /O2 /fp:precise  
-// processor: IPF  
-// compiling with /fp:precise prints 1.0F  
-// compile with /fp:strict to print infinity  
-  
-#include <stdio.h>  
-float arr[5] = {3.402823465e+38F,   
-               3.402823462e+38F,  
-               3.402823464e+38F,  
-               3.402823463e+38F,  
-               1.0F};  
-  
-int main() {  
-   float sum = 0;  
-   sum = arr[0] + arr[1] - arr[2] - arr[3] + arr[4];  
-   printf_s("%f\n", sum);  
-}  
-```  
-  
-```Output  
-1.000000  
-```  
-  
+
 ## Example  
  When commenting out `#pragma fenv_access (on)` from the previous sample, note that the output is different because the compiler does compile-time evaluation, which does not use the control mode.  
   
