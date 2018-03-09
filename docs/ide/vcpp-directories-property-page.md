@@ -87,7 +87,7 @@ Directories in which to search for include files that are referenced in the sour
 **Library Directories**<br/>
 Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the  **Configuration Properties** > **Linker** > **General** property page, select **Additional Library Dependencies** and then specify the relative path of the file. For more information, see [Linker property pages](../ide/linker-property-pages.md).
 
-**Library WinRT Directories**<br>
+**Library WinRT Directories**<br/>
 Directories to search for WinRT library files for use in Universal Windows Platform (UWP) apps. 
 
 **Source Directories**<br/>
