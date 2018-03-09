@@ -1,4 +1,4 @@
----
+--
 title: "-FUNCTIONPADMIN (Create Hotpatchable Image) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
@@ -27,10 +27,8 @@ Prepares an image for hotpatching.
 ```  
   
 ## Remarks  
- where,  
-  
  `space` (optional)  
- The amount of padding to add to the beginning of each function, 5, 6, or 16.  x86 images require five bytes of padding, x64 images require 6 bytes, and images built for the Itanium Processor Family require 16 bytes of padding at the beginning of each function.  
+ The amount of padding to add to the beginning of each function. x86 images require five bytes of padding; x64 images require 6 bytes.
   
  By default, the compiler will add the correct amount of space to the image, based on the machine type of the image.  
   
