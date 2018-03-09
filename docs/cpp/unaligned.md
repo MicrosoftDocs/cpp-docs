@@ -18,13 +18,15 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __unaligned
-When you declare a pointer with the `__unaligned` modifier, the compiler assumes that the pointer addresses data that is not aligned. Consequently, for an application that targets an Itanium Processor Family (IPF) computer, the compiler generates code that reads the unaligned data one byte at a time.  
+When you declare a pointer with the `__unaligned` modifier, the compiler assumes the pointer addresses data that is not aligned. Consequently, platform appropriate code is generated to handle unaligned reads and writes through the pointer.
   
 ## Remarks  
- The `__unaligned` modifier is valid for the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] and [!INCLUDE[vcpritanium](../cpp/includes/vcpritanium_md.md)] compilers but affects only applications that target an IPF computer. This modifier describes the alignment of the addressed data only; the pointer itself is assumed to be aligned.  
-  
- The [!INCLUDE[vcpritanium](../cpp/includes/vcpritanium_md.md)] processor generates an alignment fault when it accesses misaligned data, and the time to process the fault weakens performance. Use the `__unaligned` modifier to cause the processor to read data one byte at a time and avoid the fault. This modifier is not required for [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] applications because the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] processor handles misaligned data without faulting.  
-  
+ The `__unaligned` modifier is not valid for x86 platform.
+ 
+ This modifier describes the alignment of the addressed data; the pointer itself is assumed to be aligned.
+ 
+ The necessity of the __unaligned keword varies by platform and enviornment. Failure to mark data appropritely can result in issues ranging from performance penalties to hardware faults.
+ 
  For more information about alignment, see:  
   
 -   [align](../cpp/align-cpp.md)  
@@ -36,30 +38,6 @@ When you declare a pointer with the `__unaligned` modifier, the compiler assumes
 -   [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md)  
   
 -   [Examples of Structure Alignment](../build/examples-of-structure-alignment.md)  
-  
-## Example  
-  
-```  
-// unaligned_keyword.cpp  
-// compile with: /c  
-// processor: x64 IPF  
-#include <stdio.h>  
-int main() {  
-   char buf[100];  
-  
-   int __unaligned *p1 = (int*)(&buf[37]);  
-   int *p2 = (int *)p1;  
-  
-   *p1 = 0;   // ok  
-  
-   __try {  
-      *p2 = 0;  // throws an exception  
-   }  
-   __except(1) {  
-      puts("exception");  
-   }  
-}  
-```  
-  
+
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)
