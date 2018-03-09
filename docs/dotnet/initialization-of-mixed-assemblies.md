@@ -17,12 +17,12 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Initialization of Mixed Assemblies
-Prior to Visual Studio 2005, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur.
+ Windows developers must always be wary of loader lock when running code during `DllMain`. However, there are some additional considerations that come into play when dealing with C++ /clr mixed-mode assemblies.
   
- Code within [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.  
-  
+ Code within [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.
+
 > [!NOTE]
->  Visual C++ 2003 provided _vcclrit.h to facilitate DLL initialization while minimizing opportunity for deadlock. Using _vcclrit.h is no longer necessary, and causes deprecation warnings to be produced during compilation. The recommended strategy is to remove dependencies on this file using the steps in [Removing Deprecated Header File _vcclrit.h](http://msdn.microsoft.com/en-us/7881993e-431d-43e9-8c6d-0d2285a4882d). Less ideal solutions include suppressing the warnings by defining `_CRT_VCCLRIT_NO_DEPRECATE` prior to including _vcclrit.h, or merely ignoring the deprecation warnings.  
+>  Visual C++ 2003 provided _vcclrit.h to facilitate DLL initialization while minimizing opportunity for deadlock. Using _vcclrit.h is no longer necessary, and causes deprecation warnings to be produced during compilation. The recommended strategy is to remove dependencies on this file using the steps in [Removing Deprecated Header File _vcclrit.h](http://msdn.microsoft.com/en-us/7881993e-431d-43e9-8c6d-0d2285a4882d). Less ideal solutions include suppressing the warnings by defining `_CRT_VCCLRIT_NO_DEPRECATE` prior to including _vcclrit.h, or merely ignoring the deprecation warnings.
   
 ## Causes of Loader Lock  
  With the introduction of the .NET platform there are two distinct mechanisms for loading an execution module (EXE or DLL): one for Windows, which is used for unmanaged modules, and one for the .NET Common Language Runtime (CLR) which loads .NET assemblies. The mixed DLL loading problem centers around the Microsoft Windows OS loader.  
@@ -137,10 +137,8 @@ void DuringLoaderlock(C & c)
     c.VirtualMember();  
     myObject_p();  
 }  
-```  
-  
--   With Itanium-targeted compilation, there is a bug in the implementation of all function pointers.  In the preceding example, if myObject_p were defined locally inside during_loaderlock(), the call might also resolve to a managed implementation.  
-  
+```
+
 ### Diagnosing in Debug Mode  
  All diagnoses of loader lock problems should be done with Debug builds. Release builds may not produce diagnostics, and the optimizations performed in Release mode may mask some of the MSIL under loader lock scenarios.  
   
