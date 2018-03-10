@@ -1,4 +1,4 @@
---
+---
 title: "-FUNCTIONPADMIN (Create Hotpatchable Image) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
