@@ -28,10 +28,8 @@ Prepares an image for hotpatching.
   
 ## Remarks  
  `space` (optional)  
- The amount of padding to add to the beginning of each function. x86 images require five bytes of padding; x64 images require 6 bytes.
-  
- By default, the compiler will add the correct amount of space to the image, based on the machine type of the image.  
-  
+ The amount of padding to add to the beginning of each function in bytes. On x86 this will default to 5 bytes of padding and on x64 this will default to 6 bytes. On other targets a value must be provided.
+
  In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](../../build/reference/hotpatch-create-hotpatchable-image.md).  
   
  When you compile and link an image with a single invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.  
