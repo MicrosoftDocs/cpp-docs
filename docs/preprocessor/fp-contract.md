@@ -19,7 +19,7 @@ Determines whether floating-point contraction takes place. A floating-point cont
 
 ## Syntax
 
-> **#pragma fp_contract** [ **on** | **off** ]  
+> **#pragma fp_contract (** { **on** | **off** } **)**  
 
 ## Remarks  
 
