@@ -19,7 +19,7 @@ Disables (**on**) or enables (**off*) optimizations that could change floating-p
 
 ## Syntax
 
-> **#pragma fenv_access** [ **on** | **off** ]  
+> **#pragma fenv_access (** { **on** | **off** } **)**  
 
 ## Remarks
 
