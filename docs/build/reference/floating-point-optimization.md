@@ -12,14 +12,14 @@ ms.workload: ["cplusplus"]
 ---
 # Microsoft Visual C++ Floating Point Optimization
 
-Get a handle on optimizing floating-point code using the Microsoft C++ compiler's method of managing floating-point semantics. Create fast programs while ensuring that only safe optimizations are performed on floating-point code. 
+Get a handle on optimizing floating-point code using the Microsoft C++ compiler's method of managing floating-point semantics. Create fast programs while ensuring that only safe optimizations are performed on floating-point code.
 
 ## Optimization of Floating-Point Code in C++
 
 An optimizing C++ compiler not only translates source code into machine code, it arranges the machine instructions in such a way as to improve efficiency and/or reduce size. Unfortunately, many common optimizations are not necessarily safe when applied to floating-point computations. A good example of this can be seen with the following summation algorithm, taken from David Goldberg, "What Every Computer Scientist Should Know About Floating-Point Arithmetic", *Computing Surveys*, March 1991, pg. 203:
 
 ```cpp
-float KahanSum( const float A[], int n )   
+float KahanSum( const float A[], int n )
 {
    float sum=0, C=0, Y, T;
    for (int i=0; i<n; i++)
@@ -41,11 +41,9 @@ A naïve C++ compiler might assume that floating-point arithmetic follows the sa
 
 That is, that the perceived value of C is always a constant zero. If this constant value is then propagated into subsequent expressions, the loop body is reduced to a simple summation. To be precise,
 
-> Y = A[i] - C ==> Y = A[i]  
-> T = sum + Y ==> T = sum + A[i]  
-> sum = T ==> sum = sum + A[i]  
+> Y = A[i] - C ==> Y = A[i]<br/>T = sum + Y ==> T = sum + A[i]<br/>sum = T ==> sum = sum + A[i]
 
-Thus, to the naïve compiler, a logical transformation of the KahanSum function would be:
+Thus, to the naïve compiler, a logical transformation of the `KahanSum` function would be:
 
 ```cpp
 float KahanSum( const float A[], int n )
@@ -61,7 +59,7 @@ Although the transformed algorithm is faster, *it is not at all an accurate repr
 
 Of course a sophisticated C++ compiler would know that algebraic rules of Real arithmetic do not generally apply to floating-point arithmetic. However, even a sophisticated C++ compiler might still incorrectly interpret the programmer's intention.
 
-Consider a common optimization that attempts to hold as many values in registers as possible (called "enregistering" a value). In the `KahanSum` example, this optimization might attempt to enregister the variables C, Y and T since they're used only within the loop body. If the register precision is 52bits (double) instead of 23bits (single), this optimization effectively type promotes `C`, `Y` and `T` to type double. If the sum variable is not likewise enregistered, it will remain encoded in single precision. This transforms the semantics of KahanSum to the following
+Consider a common optimization that attempts to hold as many values in registers as possible (called "enregistering" a value). In the `KahanSum` example, this optimization might attempt to enregister the variables C, Y and T since they're used only within the loop body. If the register precision is 52bits (double) instead of 23bits (single), this optimization effectively type promotes `C`, `Y` and `T` to type double. If the sum variable is not likewise enregistered, it will remain encoded in single precision. This transforms the semantics of `KahanSum` to the following
 
 ```cpp
 float KahanSum( const float A[], int n )
@@ -115,25 +113,24 @@ float Sum( const float A[], int n )
 }
 ```
 
-The function now maintains four separate summations, which can be processed simultaneously at each step. Although the optimized function is now much faster, the optimized results can be quite different from the non-optimized results. In making this change, the compiler assumed associative floating-point addition; that is, that these two expressions are equivalent (a+b)+c == a+(b+c). However, associativity does not always hold true for floating-point numbers. Instead of computing the summation as:
+The function now maintains four separate summations, which can be processed simultaneously at each step. Although the optimized function is now much faster, the optimized results can be quite different from the non-optimized results. In making this change, the compiler assumed associative floating-point addition; that is, that these two expressions are equivalent: `(a + b) + c == a + (b + c)`. However, associativity does not always hold true for floating-point numbers. Instead of computing the summation as:
 
-```
-sum = A[0]+A[1]+A[2]+...+A[n-1]
+```cpp
+sum = A[0]+A[1]+A[2]+...+A[n-1];
 ```
 
 the transformed function now computes the result as
 
-```
+```cpp
 sum = (A[0]+A[4]+A[8]+...)
-      +(A[1]+A[5]+A[9]+...)
-      +(A[2]+A[6]+A[10]+...)
-      +(A[3]+A[7]+A[11]+...)
-      +...
+    + (A[1]+A[5]+A[9]+...)
+    + (A[2]+A[6]+A[10]+...)
+    + (A[3]+A[7]+A[11]+...);
 ```
 
-For some values of A[], this different ordering of addition operations may produce unexpected results. To further complicate matters, some programmers may choose to anticipate such optimizations and compensate for them appropriately. In this case, a program can construct the array A in a different order so that the optimized sum produces the expected results. Moreover, in many circumstances the accuracy of the optimized result may be "close enough". This is especially true when the optimization provides compelling speed benefits. Video games, for example, require as much speed as possible but don't often require highly accurate floating-point computations. Compiler makers must therefore provide a mechanism for programmers to control the often disparate goals of speed and accuracy.
+For some values of `A[]`, this different ordering of addition operations may produce unexpected results. To further complicate matters, some programmers may choose to anticipate such optimizations and compensate for them appropriately. In this case, a program can construct the array `A` in a different order so that the optimized sum produces the expected results. Moreover, in many circumstances the accuracy of the optimized result may be "close enough". This is especially true when the optimization provides compelling speed benefits. Video games, for example, require as much speed as possible but don't often require highly accurate floating-point computations. Compiler makers must therefore provide a mechanism for programmers to control the often disparate goals of speed and accuracy.
 
-Some compilers resolve the tradeoff between speed and accuracy by providing a separate "switch" for each type of optimization. This allows developers to disable optimizations that are causing changes to floating-point accuracy for their particular application. While this solution may offer a high degree of control over the compiler, it introduces several additional problems:
+Some compilers resolve the tradeoff between speed and accuracy by providing a separate switch for each type of optimization. This allows developers to disable optimizations that are causing changes to floating-point accuracy for their particular application. While this solution may offer a high degree of control over the compiler, it introduces several additional problems:
 
 - It is often unclear which switches to enable or disable.
 - Disabling any single optimization may adversely affect the performance of non floating-point code.
@@ -141,37 +138,37 @@ Some compilers resolve the tradeoff between speed and accuracy by providing a se
 
 So while providing separate switches for each optimization may seem appealing, using such compilers can be cumbersome and unreliable.
 
-Many C++ compilers offer a "consistency" floating-point model, (through a /Op or /fltconsistency switch) which enables a developer to create programs compliant with strict floating-point semantics. When engaged, this model prevents the compiler from using most optimizations on floating-point computations while allowing those optimizations for non-floating-point code. The consistency model, however, has a dark-side. In order to return predictable results on different FPU architectures, nearly all implementations of /Op round intermediate expressions to the user specified precision; for example, consider the following expression:
+Many C++ compilers offer a *consistency* floating-point model, (through a **/Op** or **/fltconsistency** switch) which enables a developer to create programs compliant with strict floating-point semantics. When engaged, this model prevents the compiler from using most optimizations on floating-point computations while allowing those optimizations for non-floating-point code. The consistency model, however, has a dark-side. In order to return predictable results on different FPU architectures, nearly all implementations of **/Op** round intermediate expressions to the user specified precision; for example, consider the following expression:
 
 ```cpp
 float a, b, c, d, e;
-. . .
-a = b*c + d*e;
+// . . .
+a = b * c + d * e;
 ```
 
-In order to produce consistent and repeatable results under /Op, this expression gets evaluated as if it were implemented as follows:
+In order to produce consistent and repeatable results under **/Op**, this expression gets evaluated as if it were implemented as follows:
 
 ```cpp
-float x = b*c;
-float y = d*e;
-a = x+y;
+float x = b  *c;
+float y = d * e;
+a = x + y;
 ```
 
-The final result now suffers from single-precision rounding errors *at each step in evaluating the expression*. Although this interpretation doesn't strictly break any C++ semantics rules, it's almost never the best way to evaluate floating-point expressions. It is generally more desirable to compute the intermediate results in as high as precision as is practical. For instance, it would be better to compute the expression a=b*c+d*e in a higher precision as in,
+The final result now suffers from single-precision rounding errors *at each step in evaluating the expression*. Although this interpretation doesn't strictly break any C++ semantics rules, it's almost never the best way to evaluate floating-point expressions. It is generally more desirable to compute the intermediate results in as high as precision as is practical. For instance, it would be better to compute the expression `a = b * c + d * e` in a higher precision as in,
 
 ```cpp
-double x = b*c;
-double y = d*e;
-double z = x+y;
+double x = b * c;
+double y = d * e;
+double z = x + y;
 a = (float)z;
 ```
 
 or better yet
 
 ```cpp
-long double x = b*c;
-long double y = d*e
-long double z = x+y;
+long double x = b * c;
+long double y = d * e
+long double z = x + y;
 a = (float)z;
 ```
 
@@ -179,7 +176,7 @@ When computing the intermediate results in a higher precision, the final result 
 
 Beginning with version 8.0 (Visual C++® 2005), the Microsoft C++ compiler provides a much better alternative. It allows programmers to select one of three general floating-point modes: fp:precise, fp:fast and fp:strict.
 
-- Under fp:precise, only safe optimizations are performed on floating-point code and, unlike /Op, intermediate computations are consistently performed at the highest practical precision.
+- Under fp:precise, only safe optimizations are performed on floating-point code and, unlike **/Op**, intermediate computations are consistently performed at the highest practical precision.
 - fp:fast mode relaxes floating-point rules allowing for more aggressive optimization at the expense of accuracy.
 - fp:strict mode provides all the general correctness of fp:precise while enabling fp-exception semantics and preventing illegal transformations in the presence of FPU environment changes (e.g. changes to the register precision, rounding direction etc).
 
@@ -200,12 +197,12 @@ Under the fp:precise mode, the compiler never performs any optimizations that pe
 |||
 |-|-|
 |fp:precise Floating-Point Semantics|Explanation|
-|Rounding Semantics|Explicit rounding at assignments, typecasts, and function calls Intermediate expressions will be evaluated at register precision|
-|Algebraic Transformations|Strict adherence to non-associative, non-distributive floating-point algebra, unless a transformation is guaranteed to always produce the same results.|
-|Contractions|Permitted by default (see also The fp_contract Pragma)|
-|Order of Floating-point Evaluation|The compiler may reorder the evaluation of floating-point expressions provided that the final results are not altered.|
-|FPU Environment Access|Disabled by default (see also The fpenv_access Pragma). The default precision and rounding mode is assumed.|
-|Floating-point Exception Semantics|Disabled by default (see also fp:except switch)|
+|[Rounding Semantics](fixme)|Explicit rounding at assignments, typecasts, and function calls Intermediate expressions will be evaluated at register precision|
+|[Algebraic Transformations](fixme)|Strict adherence to non-associative, non-distributive floating-point algebra, unless a transformation is guaranteed to always produce the same results.|
+|[Contractions](fixme)|Permitted by default (see also [The fp_contract Pragma](fixme))|
+|[Order of Floating-point Evaluation](fixme)|The compiler may reorder the evaluation of floating-point expressions provided that the final results are not altered.|
+|[FPU Environment Access](fixme)|Disabled by default (see also [The fenv_access Pragma](fixme)). The default precision and rounding mode is assumed.|
+|[Floating-point Exception Semantics](fixme)|Disabled by default (see also [fp:except switch](fixme))|
 
 ### Rounding Semantics for Floating-Point Expressions Under fp:precise
 
@@ -237,7 +234,7 @@ To explicitly round an intermediate result, introduce a typecast. For example, i
 ```cpp
 float a, b, c, d;
 double x;
-. . .
+// . . .
 x = a*b + (float)(c*d);
 ```
 
@@ -246,18 +243,18 @@ is computed as
 ```cpp
 float a, b, c, d;
 double x;
-. . .
+// . . .
 register tmp1 = a*b;
 float tmp2 = c*d;
 register tmp3 = tmp1+tmp2;
-x = (double) tmp3 
+x = (double) tmp3;
 ```
 
 One implication of this rounding method is that some seemingly equivalent transformations don't actually have identical semantics. For instance, the following transformation splits a single assignment expression into two assignment expressions.
 
 ```cpp
 float a, b, c, d;
-. . .
+// . . .
 a = b*(c+d);
 ```
 
@@ -265,8 +262,8 @@ is NOT equivalent to
 
 ```cpp
 float a, b, c, d;
-. . .
-a = c+d; 
+// . . .
+a = c+d;
 a = b*a;
 ```
 
@@ -420,8 +417,7 @@ Optimizations that preserve the order of floating-point expression evaluation ar
 
 ```cpp
 //original function
-float dotProduct( float x[], float y[], 
-                  int n )
+float dotProduct( float x[], float y[], int n )
 {
    float p=0;
    for (int i=0; i<n; i++)
@@ -429,28 +425,26 @@ float dotProduct( float x[], float y[],
    return p;
 }
 
-
 //after a partial loop-unrolling
-float dotProduct( float x[], float y[],
-                  int n )
+float dotProduct( float x[], float y[], int n )
 {
-int n4= n/4*4; // or n4=n&(~3);
-float p=0;
-int i;
+   int n4= n/4*4; // or n4=n&(~3);
+   float p=0;
+   int i;
 
-for (i=0; i<n4; i+=4)
-{
-p+=x[i]*y[i];
-p+=x[i+1]*y[i+1];
-p+=x[i+2]*y[i+2];
-p+=x[i+3]*y[i+3];
-}
+   for (i=0; i<n4; i+=4)
+   {
+      p+=x[i]*y[i];
+      p+=x[i+1]*y[i+1];
+      p+=x[i+2]*y[i+2];
+      p+=x[i+3]*y[i+3];
+   }
 
-// last n%4 elements
-for (; i<n; i++)
-p+=x[i]*y[i];
+   // last n%4 elements
+   for (; i<n; i++)
+      p+=x[i]*y[i];
 
-return p;
+   return p;
 }
 ```
 
@@ -489,18 +483,18 @@ r3 = r3*r0;
 r0 = r1 + r2;
 r0 = r0 + r3;
 x = r0;         // x = r1+r2+r3
-. . .
+// . . .
 // Compute y
 r0 = a;         // r1 = a*a
 r1 = r0*r0;
 r0 = b;         // r2 = b*b
-r2 = r0*r0;             
+r2 = r0*r0;
 r0 = c;         // r3 = c*c
 r3 = r0*r0;
 r0 = r1 + r2;
 r0 = r0 + r3;
 y = r0;         // y = r1+r2+r3
-. . .
+// . . .
 // Compute z
 r1 = a;
 r2 = b;
@@ -510,7 +504,7 @@ r0 = r0 + r3;
 z = r0;         // z = r1+r2+r3
 ```
 
-There are several clearly redundant operations is this encoding (italicized). If the compiler strictly follows C++ semantic rules, this ordering is necessary because the program might access the FPU environment in-between each assignment. However, the default settings for fp:precise allow the compiler to optimize as though the program doesn't access the environment, allowing it to reorder these expressions. It's then free to remove the redundancies by computing the three values in reverse order, as follows:
+There are several clearly redundant operations is this encoding. If the compiler strictly follows C++ semantic rules, this ordering is necessary because the program might access the FPU environment in-between each assignment. However, the default settings for fp:precise allow the compiler to optimize as though the program doesn't access the environment, allowing it to reorder these expressions. It's then free to remove the redundancies by computing the three values in reverse order, as follows:
 
 ```cpp
 double a, b, c, d;
@@ -573,13 +567,13 @@ Other optimizations may attempt to move the evaluation of certain independent ex
 ```cpp
 vector<double> a(n);
 double d, s;
-. . . 
+// . . .
 for (int i=0; i<n; i++)
 {
    if (abs(d)>1.0)
       s = s+a[i]/d;
    else
-      s = s+a[i]*d; 
+      s = s+a[i]*d;
 }
 ```
 
@@ -588,7 +582,7 @@ The compiler may detect that the value of the expression (abs(d)>1) is invariant
 ```cpp
 vector<double> a(n);
 double d, s;
-. . . 
+// . . .
 if (abs(d)>1.0)
    for (int i=0; i<n; i++)
       s = s+a[i]/d;
@@ -611,7 +605,7 @@ Some programs may alter the floating-point rounding-direction by using the `_con
 
 ```cpp
 double a, b, cLower, cUpper;
-. . .
+// . . .
 _controlfp( _RC_DOWN, _MCW_RC );    // round to -&infin;
 cLower = a*b;
 _controlfp( _RC_UP, _MCW_RC );    // round to +&infin;
@@ -626,7 +620,7 @@ Other programs may attempt to detect certain floating-point errors by checking t
 ```cpp
 double a, b, c, r;
 float x;
-. . .
+// . . .
 _clearfp();
 r = (a*b + sqrt(b*b-4*a*c))/(2*a);
 if (_statusfp() & _SW_ZERODIVIDE)
@@ -643,6 +637,7 @@ Under fp:precise, optimizations that reorder expression evaluation may change th
 See [pragma fenv_access](fixme) for more information.
 
 ### Floating-Point Exception Semantics Under fp:precise
+
 By default, floating-point exception semantics are disabled under fp:precise. Most C++ programmers prefer to handle exceptional floating-point conditions without using system or C++ exceptions. Moreover, as stated earlier, disabling floating-point exception semantics allows the compiler greater flexibility when optimizing floating-point operations. Use either the **/fp:except** switch or the `fp_control` pragma to enable floating-point exception semantics when using the fp:precise model.
 
 See also
@@ -720,9 +715,9 @@ Original function
 
 ```cpp
 double sqrt(double)...
-. . .
+// . . .
 double a, b, c;
-. . .
+// . . .
 double length = sqrt(a*a + b*b + c*c);
 ```
 
@@ -730,9 +725,9 @@ Optimized function
 
 ```cpp
 float sqrtf(float)...
-. . .
+// . . .
 double a, b, c;
-. . .
+// . . .
 double tmp0 = a*a + b*b + c*c;
 float tmp1 = tmp0;    // round of parameter value
 float tmp2 = sqrtf(tmp1); // rounded sqrt result
@@ -745,9 +740,9 @@ Furthermore, there is no guaranteed consistency for the precision of intermediat
 
 ```cpp
 float sqrtf(float)...
-. . .
+// . . .
 double a, b, c;
-. . .
+// . . .
 float tmp0 = a*a;     // round intermediate a*a to single-precision
 float tmp1 = b*b;     // round intermediate b*b to single-precision
 double tmp2 = c*c;    // do NOT round intermediate c*c to single-precision
@@ -764,81 +759,26 @@ If fp:fast optimization is particularly problematic for a specific function, the
 
 The fp:fast mode enables the compiler to perform certain, unsafe algebraic transformations to floating point expressions. For example, the following unsafe optimizations may be employed under fp:fast.
 
-Original Code
+||||
+|-|-|-|
+|Original Code|Step #1|Step #2
+|`double a, b, c;`<br/>`double x, y, z;`<br/><br/>`y = (a + b);`<br/>`z = y – a – b;`<br/><br/>`c = x – z;`<br/><br/>`c = x * z;`<br/><br/>`c = x - z;`<br/><br/>`c = x + z;`<br/><br/>`c = z-x;`|`double a, b, c;`<br/>`double x, y, z;`<br/><br/>`y = (a + b);`<br/>`z = 0;`<br/><br/>`c = x – 0;`<br/><br/>`c = x * 0;`<br/><br/>`c = x - 0;`<br/><br/>`c = x + 0;`<br/><br/>`c = 0 - x;`|`double a, b, c;`<br/>`double x, y, z;`<br/><br/>`y = (a + b);`<br/>`z = 0;`<br/><br/>`c = x;`<br/><br/>`c = 0;`<br/><br/>`c = x;`<br/><br/>`c = x;`<br/><br/>`c = -x;`|
 
-```cpp
-double a, b, c;
-double x, y, z;
-. . .
-y = (a+b);
-z = y – a – b;
-. . .
-c = x – z;
-. . .
-c = x*z;
-. . .
-c = x-z;
-. . .
-c = x+z;
-. . .
-c = z-x;
-```
-
-Step #1
-
-```cpp
-double a, b, c;
-double x, y, z;
-. . .
-y = (a+b);
-z = 0;
-. . .
-c = x – 0;
-. . .
-c = x*0;
-. . .
-c = x-0;
-. . .
-c = x+0;
-. . .
-c = 0-x;
-```
-
-Step #2
-
-```cpp
-double a, b, c;
-double x, y, z;
-. . .
-y = (a+b);
-z = 0;
-. . .
-c = x;
-. . .
-c = 0;
-. . .
-c = x;
-. . .
-c = x;
-. . .
-c = -x;
-```
-
-In step 1, the compiler observes that `z = y – a – b` is always equal to zero. Although this is technically an invalid observation, it is permitted under fp:fast. The compiler then propagates the constant value zero to every subsequent use of the variable z. In step 2, the compiler further optimizes by observing that `x-0==x`, `x*0==0`, etc. Again, even though these observations are not strictly valid, they are permitted under fp:fast. The optimized code is now much faster, but may also be considerably less accurate or even incorrect.
+In step 1, the compiler observes that `z = y – a – b` is always equal to zero. Although this is technically an invalid observation, it is permitted under fp:fast. The compiler then propagates the constant value zero to every subsequent use of the variable z. In step 2, the compiler further optimizes by observing that `x - 0 == x`, `x * 0 == 0`, etc. Again, even though these observations are not strictly valid, they are permitted under fp:fast. The optimized code is now much faster, but may also be considerably less accurate or even incorrect.
 
 Any of the following (unsafe) algebraic rules may be employed by the optimizer when the fp:fast mode is enabled:
 
 |||
 |-|-|
 |Form|Description|
-|`(a+b)+c = a+(b+c)`|Associative rule for addition|
-|`(a*b)*c = a*(b*c)`|Associative rule for multiplication|
-|`a*(b+c) = a*b + b*c`|Distribution of multiplication over addition|
-|`(a+b)(a-b) = a*a-b*b`|Algebraic Factoring|
-|`a/b = a*(1/b)`|Division by multiplicative inverse|
-|`a*1.0 = a, a/1.0 = a`|Multiplicative identity|
-|`a±0.0 = a, 0.0-a = -a`|Additive identity|
-|`a/a = 1.0, a-a = 0.0`|Cancellation|
+|`(a + b) + c = a + (b + c)`|Associative rule for addition|
+|`(a * b) * c = a * (b * c)`|Associative rule for multiplication|
+|`a * (b + c) = a * b + b * c`|Distribution of multiplication over addition|
+|`(a + b)(a - b) = a * a - b * b`|Algebraic Factoring|
+|`a / b = a * (1 / b)`|Division by multiplicative inverse|
+|`a * 1.0 = a, a / 1.0 = a`|Multiplicative identity|
+|`a ± 0.0 = a, 0.0 - a = -a`|Additive identity|
+|`a / a = 1.0, a - a = 0.0`|Cancellation|
 
 If fp:fast optimization is particularly problematic for a particular function, the floating-point mode can be locally switched to fp:precise using the `float_control` compiler pragma.
 
@@ -932,7 +872,7 @@ As described in the fp:precise section, some programmers may alter the floating-
 
 ```cpp
 double a, b, cLower, cUpper;
-. . .
+// . . .
 _controlfp( _RC_DOWN, _MCW_RC );    // round to -8
 cLower = a*b;
 _controlfp( _RC_UP, _MCW_RC );       // round to +8
@@ -947,7 +887,7 @@ Programs may also check the FPU status word to detect certain floating-point err
 ```cpp
 double a, b, c, r;
 float x;
-. . .
+// . . .
 _clearfp();
 r = (a*b + sqrt(b*b-4*a*c))/(2*a);
 if (_statusfp() & _SW_ZERODIVIDE)
@@ -1037,7 +977,7 @@ For example, the following explicitly enables fp:fast semantics.
 #pragma fenv_access(off)               // disable fpu environment sensitivity
 ```
 
-> [!Note]  
+> [!Note]
 > Exception semantics must be turned off before turning off "precise" semantics.
 
 ## Enabling Floating-Point Exception Semantics
@@ -1045,7 +985,7 @@ For example, the following explicitly enables fp:fast semantics.
 Certain exceptional floating-point conditions, such as dividing by zero, can cause the FPU to signal a hardware exception. Floating-point exceptions are disabled by default. Floating-point exceptions are enabled by modifying the FPU control word with the `_controlfp` function. For example, the following code enables the divide-by-zero floating-point exception:
 
 ```cpp
-_clearfp(); // always call _clearfp before 
+_clearfp(); // always call _clearfp before
             // enabling/unmasking a FPU exception
 _controlfp( _EM_ZERODIVIDE, _MCW_EM );
 ```
@@ -1060,7 +1000,7 @@ When a floating-point exception is enabled, the FPU will halt execution of the o
 
 ```cpp
 double a, b, c;
-. . .
+// . . .
 // ...unmasking of FPU exceptions omitted...
 __try
 {
@@ -1072,7 +1012,7 @@ __except( EXCEPTION_EXECUTE_HANDLER )
 {
    printf("SEH Exception Detected\n");
 }
-. . .
+// . . .
 ```
 
 If a divide-by-zero condition occurs in the expression a=b/c, the FPU won't trap/raise the exception until the next floating-point operation in the expression 2.0*b. This results in the following output:
@@ -1085,7 +1025,7 @@ SEH Exception Detected
 The printf corresponding to the first line of the output should not have been reached; it was reached because the floating-point exception caused by the expression b/c wasn't raised until execution reached 2.0*b. To raise the exception just after executing b/c, the compiler must introduce a "wait" instruction:
 
 ```cpp
-. . .
+// . . .
    __try
    {
       b/c; // assume this expression will cause a "divide-by-zero" exception
@@ -1093,7 +1033,7 @@ The printf corresponding to the first line of the output should not have been re
       printf("This line shouldn't be reached when c==0.0\n");
       c = 2.0*b;
    }
-. . .
+// . . .
 ```
 
 This "wait" instruction forces the processor to synchronize with the state of the FPU and handle any pending exceptions. The compiler will only generate these "wait" instructions when floating-point semantics are enabled. When these semantics are disabled, as there are by default, programs may encounter synchronicity errors, similar to the one above, when using floating-point exceptions.
@@ -1130,7 +1070,7 @@ void se_fe_trans_func( unsigned int u, EXCEPTION_POINTERS* pExp )
    etc...
     };
 }
-. . .
+// . . .
 _set_se_translator(se_fe_trans_func);
 ```
 
@@ -1139,8 +1079,8 @@ Once this mapping is initialized, floating-point exceptions will behave as thoug
 ```cpp
 try
 {
-    floating-point code that might throw divide-by-zero 
-   or other floating-point exception
+   // floating-point code that might throw divide-by-zero
+   // or other floating-point exception
 }
 catch(fe_divide_by_zero)
 {
