@@ -148,9 +148,8 @@ struct B : A {
     B(int n) = delete; // Error C2280
 };
 
-B b(42L); // used to call B<long>(long),
-          // which called A(int) due to 
-          // substitution failure in A<long>(long).
+B b(42L); // Calls B<long>(long), which calls A(int)
+          //  due to substitution failure in A<long>(long).
 ```
 
 The following example shows **/std:c++17** behavior in Visual Studio 15.7:
@@ -201,7 +200,7 @@ Derived d2 {}; // OK in C++14: Calls Derived::Derived()
 
 ```
 
-In C++17, `Derived` is now considered an aggregate type; therefore, the initialization of `Base` via the private default constructor happens directly as part of the Extended aggregate initialization rule. Previously, the `Base` private constructor was called via the `Derived` constructor and it succeeded because of the friend declaration.
+In C++17, `Derived` is now considered an aggregate type; therefore, the initialization of `Base` via the private default constructor happens directly as part of the extended aggregate initialization rule. Previously, the `Base` private constructor was called via the `Derived` constructor and it succeeded because of the friend declaration.
 
 The following example shows C++17 behavior in Visual Studio version 15.7 in **/std:c++17** mode:
 
@@ -1554,7 +1553,7 @@ int main()
 
 ### C++17 Default argument in the primary class template
 
-This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html), which planned to be fully supported in a later preview of Visual Studio 2017 version 15.7.
+This behavior change is a precondition for [Template argument deduction for class templates - P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html), which is planned to be fully supported in a later preview of Visual Studio 2017 version 15.7.
 
 Previously, the compiler ignored the default argument in the primary class template.
 
