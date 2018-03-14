@@ -78,7 +78,7 @@ This version of the CRT is not fully conformant with the C99 standard. In partic
 |----------------------------|---------------------|------------|-----------------------------|
 |libcpmt.lib|Multithreaded, static link|**/MT**|_MT|
 |msvcprt.lib|Multithreaded, dynamic link (import library for MSVCP*version*.dll)|**/MD**|_MT, _DLL|
-|libcpmtd.|Multithreaded, static link|**/MTd**|_DEBUG, _MT|
+|libcpmtd.lib|Multithreaded, static link|**/MTd**|_DEBUG, _MT|
 |msvcprtd.lib|Multithreaded, dynamic link (import library for MSVCP*version*D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|
 
 When you build a release version of your project, one of the basic C run-time libraries (libcmt.lib, msvcmrt.lib, msvcrt.lib) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by Visual C++ at compile time. For example:
