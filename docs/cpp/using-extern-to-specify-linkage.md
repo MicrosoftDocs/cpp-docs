@@ -21,8 +21,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      extern string-literal { declaration-list }  
+extern string-literal { declaration-list }  
 extern string-literal declaration  
 ```  
   

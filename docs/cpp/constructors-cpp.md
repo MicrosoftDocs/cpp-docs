@@ -63,30 +63,14 @@ int main()
 
 ```
 
-## In this topic
-
-
-
-- [Default Constructors](#default_constructors)
-
-- [Copy and Move Constructors](#copy_and_move_constructors)
-
-- [Explicitly Defaulted and Deleted Constructors](#explicitly_defaulted_and_deleted_constructors)
-
-- [Explicit Constructors](#explicit_constructors)
-
-- [Order of construction](#order_of_construction)
-
-- [Virtual Functions in Constructors](#virtual_functions_in_constructors)
-
-- [Constructors and Composite Classes](#constructors_in_composite_classes)
-
-- [Delegating Constructors](#delegating_constructors)
-
-- [Inheriting constructors (C++11)](#inheriting_constructors)
+- Constructors may be declared as `inline`, [explicit](#explicit_constructors), `friend` or `constexpr`.
+- A constructor can modify class members to initialize an object that has been declared as const, volatile or const volatile.
+- To define a constructor in an implementation file, give it a qualified name as with any other member function: `Box::Box(){...}`.
+- 
+- 
 
 ##  <a name="default_constructors"></a> Default Constructors
- *Default constructors* have no parameters. You can declare a default constructor with an argument list, provided all arguments have defaults.
+ *Default constructors* typically have no parameters, but they can have parameters with default values.
 
 class Box {
 public:
