@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # VCPROFILE_PATH
+
 Specify the directory to create .pgc files.  
   
 ## Syntax  

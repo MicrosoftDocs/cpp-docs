@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # VCPROFILE_ALLOC_SCALE
+
 Modify the amount of memory allocated to hold the profile data.  
   
 ## Syntax  
