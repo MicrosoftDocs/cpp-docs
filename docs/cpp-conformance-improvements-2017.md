@@ -126,7 +126,7 @@ The Standard Library now uses variable templates internally.
 
 The Standard Library has been updated in response to C++17 compiler changes, including the addition of noexcept in the type system and the removal of dynamic-exception-specifications.
 
-## <a name="improvements_157"> Improvements in Visual Studio 2017 version 15.7
+## <a name="improvements_157"></a> Improvements in Visual Studio 2017 version 15.7
 
 
 ### C++17 Rewording inheriting constructors
