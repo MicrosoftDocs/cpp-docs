@@ -18,59 +18,73 @@ ms.workload: ["cplusplus"]
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ## C++11
+### Expression SFINAE support in more libraries
 
-**Expression SFINAE support in more libraries**  
 The compiler continues to improve its support for expression SFINAE, which is required for template argument deduction and substitution where decltype and constexpr expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3).
 
 ## C++ 14
 
-**NSDMI for Aggregates**  
+### NSDMI for Aggregates
+
 An aggregate is an array or a class with no user-provided constructor, no private or protected non-static data members, no base classes, and no virtual functions. Beginning in C++14 aggregates may contain member initializers. For more information, see [Member initializers and aggregates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3605.html).
 
-**Extended constexpr**  
+### Extended constexpr
 Expressions declared as constexpr are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a constexpr non-static member function be implicitly const. For more information, see [Relaxing constraints on constexpr functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html).
 
 ## C++17
 
-**Terse static_assert**  (available with **/std:c++17**)  
-In C++17 the message parameter for static_assert is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf).
+### Terse static_assert
 
-**[[fallthrough]] attribute**  (available with **/std:c++17**)  
-The [[fallthrough]] attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This prevents the compiler from issuing warnings in such cases. For more information, see [Wording for [[fallthrough]] attribute](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r0.pdf).
+the message parameter for static_assert is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf).
 
-**Generalized range-based for loops** (no compiler switch required)  
+### [[fallthrough]] attribute
+
+In **/std:c++17** mode, the [[fallthrough]] attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This prevents the compiler from issuing warnings in such cases. For more information, see [Wording for [[fallthrough]] attribute](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r0.pdf).
+
+### Generalized range-based for loops
+
 Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel as used by ranges in [range-v3](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
 
 ## <a name="improvements_153"></a> Improvements in Visual Studio 2017 version 15.3
 
-**constexpr lambdas**  
+### constexpr lambdas
+
 Lambda expressions may now be used in constant expressions. For more information, see [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
 
-**if constexpr in function templates**  
+### if constexpr in function templates
+
 A function template may contain `if constexpr` statements to enable compile-time branching. For more information, see [if constexpr](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0128r1.html).
 
-**Selection statements with initializers**  
+### Selection statements with initializers
+
 An `if` statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [Selection statements with initializer](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0305r1.html).
 
-**[[maybe_unused]] and [[nodiscard]] attributes**  
+### [[maybe_unused]] and [[nodiscard]] attributes
+
 New attributes to silence warnings when an entity is not used, or to create a warning if the return value of a function call is discarded. For more information, see [Wording for maybe_unused attribute](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0212r0.pdf) and [Proposal of unused,nodiscard and fallthrough attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0068r0.pdf).
 
-**Using attribute namespaces without repetition**  
+### Using attribute namespaces without repetition
+
 New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes2.md).
 
-**Structured bindings**  
+### Structured bindings
+
 It is now possible in a single declaration to store a value with individual names for its components, when the value is an array, a std::tuple or std::pair, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf).
 
-**Construction rules for enum class values**  
+### Construction rules for enum class values
+
 There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values ](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
 
-**Capturing *this by value**  
+### Capturing *this by value
+
 The `*this` object in a lambda expression may now be captured by value. This enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as [=,\*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
-**Removing operator++ for bool**  
+### Removing operator++ for bool
+
 `operator++` is no longer supported on `bool` types. For more information, see [Remove Deprecated operator++(bool)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html).
 
-**Removing deprecated "register" keyword**  
+### Removing deprecated "register" keyword
+
 The `register` keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
 For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
@@ -79,43 +93,56 @@ For the complete list of conformance improvements up through Visual Studio 2015 
 
 Features marked with [14] are available unconditionally even in **/std:c++14** mode.
 
-**New compiler switch for extern constexpr**  
+### New compiler switch for extern constexpr
+
 In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio 2017 version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
-**Removing Dynamic Exception Specifications**  
+### Removing Dynamic Exception Specifications
+
 [P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html) Dynamic exception specifications were deprecated in C++11. the feature is removed from C++17, but the (still) deprecated `throw()` specification is retained strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and noexcept](#noexcept_removal). 
 
-**not_fn()**  
+### not_fn()
+
 [P0005R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html) `not_fn` is a replacement of `not1` and `not2`.
 
-**Rewording enable_shared_from_this**  
+### Rewording enable_shared_from_this
+
 [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this` was added in C++11. The C++17 Standard updates the specification to better handle certain corner cases. [14]
 
-**Splicing Maps And Sets**  
+### Splicing Maps And Sets
+
 [P0083R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf) This feature enables extraction of nodes from associative containers (e.g., map, set, unordered\_map, unordered\_set) which can then be modified and inserted back into the same container or a different container that uses the same node type. (A common use case is to extract a node from a `std::map`, change the key, and reinsert.)
 
-**Deprecating Vestigial Library Parts**  
+### Deprecating Vestigial Library Parts
+
 [P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html) Several features of the C++ Standard library have been superceded by newer features over the years, or else have been found to be not very useful or to be problematic. These features are officially deprecated in C++17. 
 
-**Removing Allocator Support In std::function**  
+### Removing Allocator Support In std::function
+
 [P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html) Prior to C++17 the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. Therefore these contructors were removed.
 
-**Fixes for not_fn()**  
+### Fixes for not_fn()
+
 [P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html) New wording for `std::not_fn` provides support of propagation of value category in case of wrapper invocation.
 
-**shared_ptr\<T[]>, shared_ptr\<T[N]>**  
+### shared_ptr\<T[]>, shared_ptr\<T[N]>
+
 [P0414R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html) Merging `shared_ptr` changes from Library Fundamentals to C++17. [14]
 
-**Fixing shared_ptr for Arrays**  
+### Fixing shared_ptr for Arrays
+
 [P0497R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html) Fixes to shared_ptr support for arrays. [14]
 
-**Clarifying insert_return_type**  
+### Clarifying insert_return_type
+
 [P0508R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html) The associative containers with unique keys, and the unordered containers with unique keys have a member function `insert` that returns a nested type `insert_return_type`. That return type is now defined as a specialization of a type that is parameterized on the Iterator and NodeType of the container.
 
-**Inline Variables For The STL**  
+### Inline Variables For The STL
+
 [P0607R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)
 
-**Annex D features deprecated**  
+### Annex D features deprecated
+
 Annex D of the C++ standard contains all the features that have been deprecated, including `shared_ptr::unique()`, `<codecvt>`, and `namespace std::tr1`. When the **/std:c++17** compiler switch is set, almost all the Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
 
 The `std::tr2::sys` namespace in `<experimental/filesystem>` now emits a deprecation warning under **/std:c++14** by default, and is now removed under **/std:c++17** by default.
@@ -127,7 +154,6 @@ The Standard Library now uses variable templates internally.
 The Standard Library has been updated in response to C++17 compiler changes, including the addition of noexcept in the type system and the removal of dynamic-exception-specifications.
 
 ## <a name="improvements_157"></a> Improvements in Visual Studio 2017 version 15.7
-
 
 ### C++17 Rewording inheriting constructors
 
@@ -275,6 +301,89 @@ void bar(A<0> *p)
 
 ```
 
+### C++17 Elementary String Conversions
+
+[P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html) Low-level, locale-independent functions for conversions between integers and strings and between floating-point numbers and strings. (As of Visual Studio 15.7 Preview 2, supported for int only.)
+
+### C++20 Avoiding Unnecessary decay
+
+[P0777R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type traits remove_reference_t and remove_cvref_t added to replace decay_t in some contexts.
+
+### C++17 Parallel Algorithms
+
+[P0024R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html) Incorporates the Parallelism TS into the standard, with minor modifications.
+
+### C++17 hypot(x, y, z)
+
+[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) Adds three new overloads to std::hypot, for types float, double, and long double, each of which has three input parameters.
+
+### C++17 \<filesystem>
+
+[P0218R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html) Adopts the File System TS into the standard with a few wording modifications.
+
+### C++17 Relative Paths For Filesystem
+
+[P0219R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html) Adds support for constructing and retrieving relative paths.
+
+### C++17 Mathematical Special Functions
+
+[P0226R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) Adopts previous technical specifications for Mathematical Special Functions into the standard \<cmath> header.
+
+### C++17 Directory Entry Caching For Filesystem
+
+[P0317R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0317r1.html) Adds support for caching directory_entry objects for faster retrieval.
+
+### C++17 Renaming Parallel Execution Policies
+
+[P0336R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf) std::execution_policy is renamed to std::execution, and other types are renamed to better describe their actual behavior.
+
+### C++17 Supporting string_view In Filesystem Paths
+
+[P0392R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf) Adds string_view overloads to path functions that previously accepted only string.
+
+### C++17 Parallel Algorithms Should terminate() For Exceptions
+
+[P0394R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html) Makes all parallel algorithms invoke terminate() if element access functions exit via an uncaught exception.
+
+### C++17 Supporting Non-POSIX Filesystems
+
+[P0430R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0430r2.pdf) Adds support for specifying whether a path is given in generic or native format, along with support for more flexible root directory names, and for implementation-defined directory-like file types.
+
+### C++17 Deduction Guides For The STL
+
+[P0433R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html) Updates to STL to take advantage of C++17 adoption of P0091R3 which adds support for class template argument deduction.
+
+### C++17 Unifying \<numeric> Parallel Algorithms
+
+[P0452R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0452r1.html) Changes to \<numeric> sequence algorithm signatures and to the order of parameters of \<numeric> sequence algorithm signatures.
+
+### C++17 Resolving NB Comments For Filesystem
+
+[P0492R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0492r2.html) Miscellaneous improvements to the <filesystem> specification.
+
+### C++17 Repairing Elementary String Conversions
+
+[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header <charconv> and make other improvements, including changing error handling to use use std::errc instead of std::error_code. 
+
+### C++17 <memory_resource>
+
+TBD This is captured in next item Library Fundamentals?
+
+### C++17 Library Fundamentals V1
+
+[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view> , \<experimental/memory>, and \<experimental/algorithm>.
+
+### C++17 Deleting polymorphic_allocator Assignment
+
+[P0337R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html) The operator polymorphic_allocator& operator=(const polymorphic_allocator& rhs) is now deleted to reduce the incidence of errors. In general, stateful allocators for which propagate_on_container_move/copy_assignment is false should not have move and copy assignment operators.
+
+### C++17 constexpr For char_traits
+
+[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to  std::traits_type member functions length, compare and find  in order to make make std::string_view usable in constant expressions.
+
+### C++17 Improving Class Template Argument Deduction For The STL
+
+[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move acopt_lock_t to front of parameter list for scoped_lock to enable consistent use of scoped_lock. Allow std::variant constructor to participate in overload resolution in more cases, in order to enable copy assignment.
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), and [15.7](#update_157)
 
