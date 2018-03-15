@@ -33,7 +33,7 @@ ms.workload: ["cplusplus"]
 |\v|Vertical tab|11|  
 |\\"|Double quotation|34|  
 |\\'|Single quotation|39|  
-|\\\|Backslash|92|  
+|\\\\ |Backslash|92|  
   
 ## See Also  
  [Characters](../c-language/characters.md)
