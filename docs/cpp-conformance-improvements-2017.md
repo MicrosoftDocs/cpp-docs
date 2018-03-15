@@ -258,7 +258,7 @@ void bar(A<0> *p)
 
 ```
 
-The following example shows C++17 code in Visual Studio 15.7 in **/std:c++** mode:
+The following example shows C++17 code in Visual Studio 15.7 in **/std:c++17** mode:
 
 
 ```cpp
@@ -1621,7 +1621,7 @@ struct D : B<T*> {
 
 ### C++17 [[nodiscard]] attribute - warning level increase
 
-In Visual Studio 2017 version 15.7 in **std:c++17** mode, the warning level of C4834 ("discarding return value of function with 'nodiscard' attribute") is increased from W3 to W1. You can disable the warning with a cast to `void`, or by passing /wd4834 to the compiler
+In Visual Studio 2017 version 15.7 in **/std:c++17** mode, the warning level of C4834 ("discarding return value of function with 'nodiscard' attribute") is increased from W3 to W1. You can disable the warning with a cast to `void`, or by passing **/wd:4834** to the compiler
 
 ```cpp
 
