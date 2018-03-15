@@ -13,7 +13,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), and [15.7](#improvements_157)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), and [15.7](#improvements_157)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -152,6 +152,28 @@ Improved conformance in iostreams by avoiding a non-Standard extension (in-class
 The Standard Library now uses variable templates internally.
 
 The Standard Library has been updated in response to C++17 compiler changes, including the addition of noexcept in the type system and the removal of dynamic-exception-specifications.
+
+## <a name="improvements_156"></a>  Improvements in Visual Studio 2017 version 15.6
+
+### C++17 <memory_resource>
+
+TBD This is captured in next item Library Fundamentals?
+
+### C++17 Library Fundamentals V1
+
+[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view> , \<experimental/memory>, and \<experimental/algorithm>.
+
+### C++17 Deleting polymorphic_allocator Assignment
+
+[P0337R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html) The operator polymorphic_allocator& operator=(const polymorphic_allocator& rhs) is now deleted to reduce the incidence of errors. In general, stateful allocators for which propagate_on_container_move/copy_assignment is false should not have move and copy assignment operators.
+
+### C++17 constexpr For char_traits (partial)
+
+[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to td::traits_type member functions length, compare and find in order to make make std::string_view usable in constant expressions.
+
+### C++17 Improving Class Template Argument Deduction For The STL
+
+[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move adopt_lock_t to front of parameter list for scoped_lock to enable consistent use of scoped_lock. Allow std::variant constructor to participate in overload resolution in more cases, in order to enable copy assignment.
 
 ## <a name="improvements_157"></a> Improvements in Visual Studio 2017 version 15.7
 
@@ -301,7 +323,7 @@ void bar(A<0> *p)
 
 ```
 
-### C++17 Elementary String Conversions
+### C++17 Elementary String Conversions (partial)
 
 [P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html) Low-level, locale-independent functions for conversions between integers and strings and between floating-point numbers and strings. (As of Visual Studio 15.7 Preview 2, supported for int only.)
 
@@ -365,25 +387,6 @@ void bar(A<0> *p)
 
 [P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header <charconv> and make other improvements, including changing error handling to use use std::errc instead of std::error_code. 
 
-### C++17 <memory_resource>
-
-TBD This is captured in next item Library Fundamentals?
-
-### C++17 Library Fundamentals V1
-
-[P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view> , \<experimental/memory>, and \<experimental/algorithm>.
-
-### C++17 Deleting polymorphic_allocator Assignment
-
-[P0337R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html) The operator polymorphic_allocator& operator=(const polymorphic_allocator& rhs) is now deleted to reduce the incidence of errors. In general, stateful allocators for which propagate_on_container_move/copy_assignment is false should not have move and copy assignment operators.
-
-### C++17 constexpr For char_traits
-
-[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to  std::traits_type member functions length, compare and find  in order to make make std::string_view usable in constant expressions.
-
-### C++17 Improving Class Template Argument Deduction For The STL
-
-[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move acopt_lock_t to front of parameter list for scoped_lock to enable consistent use of scoped_lock. Allow std::variant constructor to participate in overload resolution in more cases, in order to enable copy assignment.
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), and [15.7](#update_157)
 
