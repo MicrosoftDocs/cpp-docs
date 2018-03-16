@@ -68,7 +68,7 @@ int main()
 - A constructor can modify class members to initialize an object that has been declared as const, volatile or const volatile.
 - To define a constructor in an implementation file, give it a qualified name as with any other member function: `Box::Box(){...}`.
 
-## <a name="default_constructors"></a> Default Constructors
+## <a name="default_constructors"></a> Default constructors
 
  *Default constructors* typically have no parameters, but they can have parameters with default values.
 
@@ -275,7 +275,7 @@ An implicitly declared move constructor is defined as deleted if any members tha
 
 For more information about how to write a non-trivial move constructor, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
 
-## <a name="explicitly_defaulted_and_deleted_constructors"></a> Explicitly Defaulted and Deleted Constructors
+## <a name="explicitly_defaulted_and_deleted_constructors"></a> Explicitly defaulted and deleted constructors
 
 You can explicitly *default* copy constructors, default constructors, move constructors, copy assignment operators, move assignment operators, and destructors. You can explicitly *delete* all of the special member functions.
 
@@ -323,7 +323,7 @@ And then create Box objects like this:
     Box b2(initializer_list<string> { "bread", "cheese", "wine" }, 2, 4, 6);
 ```
 
-## <a name="explicit_constructors"></a> Explicit Constructors
+## <a name="explicit_constructors"></a> Explicit constructors
 
 If a class has a constructor with a single parameter, or if all parameters except one have a default value, the parameter type can be implicitly converted to the class type. For example, if the `Box` class has a constructor like this:
 
@@ -472,7 +472,7 @@ If a constructor throws an exception, the order of destruction is the reverse of
 
 1. If the constructor is non-delegating, all fully-constructed base class objects and members are destroyed. However, because the object itself is not fully constructed, the destructor is not run.
 
-### Constructors for Classes That Have Multiple Inheritance
+### Constructors for classes that have multiple inheritance
 
 If a class is derived from multiple base classes, the base class constructors are invoked in the order in which they are listed in the declaration of the derived class:
 
@@ -517,7 +517,7 @@ DerivedClass ctor
 
 ```
 
-## <a name="virtual_functions_in_constructors"></a> Virtual Functions in Constructors
+## <a name="virtual_functions_in_constructors"></a> Virtual functions in constructors
 
 We recommend that you be careful when you call virtual functions in constructors. Because the base class constructor is always invoked before the derived class constructor, the function that's called in the base constructor is the base class version, not the derived class version. In the following example, constructing a `DerivedClass` causes the `BaseClass` implementation of `print_it()` to execute before the `DerivedClass` constructor causes the `DerivedClass` implementation of `print_it()` to execute:
 
@@ -558,7 +558,7 @@ BaseClass print_it
 Derived Class print_it
 ```
 
-## <a name="delegating_constructors"></a> Delegating Constructors
+## <a name="delegating_constructors"></a> Delegating constructors
 
 A *delegating constructor* calls a different constructor in the same class to do some of the work of initialization. This is useful when you have multiple constructors that all have to perform similar work. You can write the main logic in one constructor and invoke it from others. In the following trivial example, Box(int) delegates its work to Box(int,int,int):
 
@@ -650,7 +650,7 @@ class Derived : T {
 
 A deriving class cannot inherit from multiple base classes if those base classes have constructors that have an identical signature.
 
-## <a name="constructors_in_composite_classes"></a> Constructors and Composite Classes
+## <a name="constructors_in_composite_classes"></a> Constructors and composite classes
 
 Classes that contain class-type members are known as *composite classes*. When a class-type member of a composite class is created, the constructor is called before the class's own constructor. When a contained class lacks a default constructor, you must use an initialization list in the constructor of the composite class. In the earlier `StorageBox` example, if you change the type of the `m_label` member variable to a new `Label` class, you must call both the base class constructor and initialize the `m_label` variable in the `StorageBox` constructor:
 
