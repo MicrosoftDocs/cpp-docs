@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # Environment Variables for Profile-Guided Optimizations
 
-There are three environment variables that affect test scenarios on an image created with /LTCG:PGI for profile-guided optimizations:
+There are three environment variables that affect test scenarios on an image created with **/LTCG:PGI** for profile-guided optimizations:
 
 - **PogoSafeMode** specifies whether to use fast mode or safe mode for application profiling.
 
@@ -22,9 +22,11 @@ There are three environment variables that affect test scenarios on an image cre
 
 - **VCPROFILE_PATH** lets you specify the folder used for .pgc files.
 
+**The PogoSafeMode and VCPROFILE_ALLOC_SCALE environment variables are deprecated starting in Visual Studio 2015.** The linker options [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) and  [/USEPROFILE](useprofile.md) specify the same linker behavior as these environment variables.
+
 ## PogoSafeMode
 
-Clear or set the PogoSafeMode environment variable to specify whether to use fast mode or safe mode for application profiling on x86 systems.
+Clear or set the **PogoSafeMode** environment variable to specify whether to use fast mode or safe mode for application profiling on x86 systems. This environment variable is deprecated. Use the **EXACT** or **NOEXACT** arguments to **/GENPROFILE** or **/FASTGENPROFILE** to control this behavior.
 
 Profile-guided optimization (PGO) has two possible modes during the profiling phase: *fast mode* and *safe mode*. When profiling is in fast mode, it uses the **INC** instruction to increase data counters. The **INC** instruction is faster but is not thread-safe. When profiling is in safe mode, it uses the **LOCK INC** instruction to increase data counters. The **LOCK INC** instruction has the same functionality as the **INC** instruction has, and is thread-safe, but it is slower than the **INC** instruction.
 
@@ -41,6 +43,8 @@ Set **PogoSafeMode** to any value to enable safe mode. Set without a value to cl
 ## VCPROFILE_ALLOC_SCALE
 
 Modify the **VCPROFILE_ALLOC_SCALE** environment variable to change the amount of memory allocated to hold the profile data. In rare cases, there will not be enough memory available to support gathering profile data when running test scenarios. In those cases, you can increase the amount of memory by setting **VCPROFILE_ALLOC_SCALE**. If you receive an error message during a test run that indicates that you have insufficient memory, assign a larger value to **VCPROFILE_ALLOC_SCALE**, until the test runs complete with no out-of-memory errors.
+
+This environment variable is deprecated. Use the **MEMMIN** and **MEMMAX** arguments to **/GENPROFILE** or **/FASTGENPROFILE** to control this behavior.
 
 ### VCPROFILE_ALLOC_SCALE syntax
 
