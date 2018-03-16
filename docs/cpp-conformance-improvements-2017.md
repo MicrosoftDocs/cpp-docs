@@ -163,23 +163,23 @@ TBD This is captured in next item Library Fundamentals?
 
 [P0220R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) incorporates Library Fundamentals Technical Specification for C++17 into the standard. Covers updates to \<experimental/tuple>, \<experimental/optional>, \<experimental/functional>, \<experimental/any>, \<experimental/string_view> , \<experimental/memory>, and \<experimental/algorithm>.
 
-### C++17 Deleting polymorphic_allocator Assignment
+### C++17 Deleting polymorphic_allocator assignment
 
-[P0337R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html) The operator polymorphic_allocator& operator=(const polymorphic_allocator& rhs) is now deleted to reduce the incidence of errors. In general, stateful allocators for which propagate_on_container_move/copy_assignment is false should not have move and copy assignment operators.
+[P0337R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html) The operator `polymorphic_allocator& operator=(const polymorphic_allocator& rhs)` is now deleted to reduce the incidence of errors. In general, stateful allocators for which `propagate_on_container_move_assignment` and propagate_on_container_copy_assignment` is false should not have move and copy assignment operators.
 
-### C++17 constexpr For char_traits (partial)
+### C++17 constexpr for char_traits (partial)
 
-[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to td::traits_type member functions length, compare and find in order to make make std::string_view usable in constant expressions.
+[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare` and `find` in order to make make `std::string_view` usable in constant expressions.
 
 ### C++17 Improving Class Template Argument Deduction For The STL
 
-[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move adopt_lock_t to front of parameter list for scoped_lock to enable consistent use of scoped_lock. Allow std::variant constructor to participate in overload resolution in more cases, in order to enable copy assignment.
+[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move `adopt_lock_t` to front of parameter list for `scoped_lock` to enable consistent use of `scoped_lock`. Allow `std::variant` constructor to participate in overload resolution in more cases, in order to enable copy assignment.
 
 ## <a name="improvements_157"></a> Improvements in Visual Studio 2017 version 15.7
 
 ### C++17 Rewording inheriting constructors
 
-[P0136R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0136r1.html) specifies that a using declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class rather than declaring additional derived class constructors. This is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **/std:c++17** mode, code that is valid in C++14 and uses inheriting constructors may not be valid or may have different semantics.
+[P0136R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0136r1.html) specifies that a **using** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class rather than declaring additional derived class constructors. This is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **/std:c++17** mode, code that is valid in C++14 and uses inheriting constructors may not be valid or may have different semantics.
 
 The following example shows C++14 behavior:
 
@@ -278,7 +278,7 @@ Derived d2 {}; // error C2248: 'Base::Base': cannot access
 
 [P0127R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html)
 
-In **/std:c++17** mode, the compiler can now deduce the type of a non-type template argument that is declared with `auto`:
+In **/std:c++17** mode, the compiler can now deduce the type of a non-type template argument that is declared with **auto**:
 
 ```cpp
 
@@ -323,69 +323,69 @@ void bar(A<0> *p)
 
 ```
 
-### C++17 Elementary String Conversions (partial)
+### C++17 Elementary string conversions (partial)
 
 [P0067R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html) Low-level, locale-independent functions for conversions between integers and strings and between floating-point numbers and strings. (As of Visual Studio 15.7 Preview 2, supported for int only.)
 
-### C++20 Avoiding Unnecessary decay
+### C++20 Avoiding unnecessary decay
 
-[P0777R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type traits remove_reference_t and remove_cvref_t added to replace decay_t in some contexts.
+[P0777R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf) Adds differentiation between the concept of "decay" and that of simply removing const or reference qualifiers.  New type traits `remove_reference_t` and `remove_cvref_t` replace `decay_t` in some contexts.
 
-### C++17 Parallel Algorithms
+### C++17 Parallel algorithms
 
-[P0024R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html) Incorporates the Parallelism TS into the standard, with minor modifications.
+[P0024R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html) The Parallelism TS is incorporated into the standard, with minor modifications.
 
 ### C++17 hypot(x, y, z)
 
-[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) Adds three new overloads to std::hypot, for types float, double, and long double, each of which has three input parameters.
+[P0030R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf) Adds three new overloads to `std::hypot`, for types **float**, **double**, and **long double**, each of which has three input parameters.
 
 ### C++17 \<filesystem>
 
 [P0218R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html) Adopts the File System TS into the standard with a few wording modifications.
 
-### C++17 Relative Paths For Filesystem
+### C++17 Relative paths for \<filesystem>
 
 [P0219R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html) Adds support for constructing and retrieving relative paths.
 
-### C++17 Mathematical Special Functions
+### C++17 Mathematical special functions
 
 [P0226R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html) Adopts previous technical specifications for Mathematical Special Functions into the standard \<cmath> header.
 
-### C++17 Directory Entry Caching For Filesystem
+### C++17 Directory entry caching for \<filesystem>
 
-[P0317R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0317r1.html) Adds support for caching directory_entry objects for faster retrieval.
+[P0317R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0317r1.html) Adds support for caching `directory_entry` objects for faster retrieval.
 
-### C++17 Renaming Parallel Execution Policies
+### C++17 Renaming parallel execution policies
 
-[P0336R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf) std::execution_policy is renamed to std::execution, and other types are renamed to better describe their actual behavior.
+[P0336R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf) `std::execution_policy` is renamed to `std::execution`, and other types are renamed to better describe their actual behavior.
 
-### C++17 Supporting string_view In Filesystem Paths
+### C++17 Supporting string_view in \<filesystem> paths
 
-[P0392R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf) Adds string_view overloads to path functions that previously accepted only string.
+[P0392R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf) Adds `std::string_view` overloads to path functions that previously accepted only `std::string`.
 
-### C++17 Parallel Algorithms Should terminate() For Exceptions
+### C++17 Parallel algorithms should terminate() for exceptions
 
-[P0394R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html) Makes all parallel algorithms invoke terminate() if element access functions exit via an uncaught exception.
+[P0394R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html) Makes all parallel algorithms invoke `terminate()` if element access functions exit via an uncaught exception.
 
-### C++17 Supporting Non-POSIX Filesystems
+### C++17 Supporting non-POSIX file systems
 
 [P0430R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0430r2.pdf) Adds support for specifying whether a path is given in generic or native format, along with support for more flexible root directory names, and for implementation-defined directory-like file types.
 
-### C++17 Deduction Guides For The STL
+### C++17 Deduction guides for the STL
 
-[P0433R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html) Updates to STL to take advantage of C++17 adoption of P0091R3 which adds support for class template argument deduction.
+[P0433R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html) Updates to STL to take advantage of C++17 adoption of [P0091R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html), which adds support for class template argument deduction.
 
-### C++17 Unifying \<numeric> Parallel Algorithms
+### C++17 Unifying \<numeric> parallel algorithms
 
 [P0452R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0452r1.html) Changes to \<numeric> sequence algorithm signatures and to the order of parameters of \<numeric> sequence algorithm signatures.
 
-### C++17 Resolving NB Comments For Filesystem
+### C++17 Resolving NB comments for filesystem
 
 [P0492R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0492r2.html) Miscellaneous improvements to the <filesystem> specification.
 
-### C++17 Repairing Elementary String Conversions
+### C++17 Repairing elementary string conversions
 
-[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header <charconv> and make other improvements, including changing error handling to use use std::errc instead of std::error_code. 
+[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header <charconv> and make other improvements, including changing error handling to use use `std::errc` instead of `std::error_code`. 
 
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), and [15.7](#update_157)
