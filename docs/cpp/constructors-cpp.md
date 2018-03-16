@@ -58,20 +58,45 @@ When you declare an instance of a class, the compiler chooses which constructor 
 int main()
 {
     Box b; // Calls Box()
+
+    // Using uniform initialization (preferred):
     Box b2 {5}; // Calls Box(int)
     Box b3 {5, 8, 12}; // Calls Box(int, int, int)
+
+    // Using function-style notation:
+    Box b4(2, 4, 6); // Calls Box(int, int, int)
 }
 
 ```
 
-- Constructors may be declared as `inline`, [explicit](#explicit_constructors), `friend` or `constexpr`.
-- A constructor can modify class members to initialize an object that has been declared as const, volatile or const volatile.
+- Constructors may be declared as **inline**, [explicit](#explicit_constructors), **friend** or [constexpr](#constexpr_constructors).
+- A constructor can initialize an object that has been declared as **const**, **volatile** or **const volatile**. The object becomes **const** after the constructor completes.
 - To define a constructor in an implementation file, give it a qualified name as with any other member function: `Box::Box(){...}`.
+
+## <a name="member_init_list"></a> Member initializer lists
+
+A constructor can optionally have a member initializer list, which initializes class members prior to execution of the constructor body. (Note that a member initializer list is not the same thing as an *initializer list* of type [std::initializer_list\<T>](../standard-library/initializer-list-class.md).)
+
+Using a member intializer list is preferred over assigning values in the body of the constructor because it directly initializes the member. In the following example shows the member initializer list consists of all the **identifier(argument)** expressions after the colon:
+
+```cpp
+  
+    Box(int width, int length, int height)
+        : m_width(width), m_length(length), m_height(height)
+    {}
+```
+
+The identifier must refer to a class member; it is initialized with the value of the argument. The argument can be one of the constructor parameters, a function call or a [std::initializer_list\<T>](../standard-library/initializer-list-class.md). 
+
+**const** members and members of reference type must be initialized in the member initializer list.
+
+Calls to parameterized base class constructors should be made in the initializer list to ensure the base class is fully initialized prior to execution of the derived constructor.
 
 ## <a name="default_constructors"></a> Default constructors
 
  *Default constructors* typically have no parameters, but they can have parameters with default values.
 
+```cpp
 class Box {
 public:
     Box() { /*perform any required default initialization steps*/}
@@ -80,8 +105,9 @@ public:
     Box (int w = 1, int l = 1, int h = 1): m_width(w), m_height(h), m_length(l){}
 ...
 }
+```
 
-Default constructors are one of the *special member functions*. If no constructors are declared in a class, the compiler provides an implicit inline default constructor.
+Default constructors are one of the [special member functions](special-member-functions.md). If no constructors are declared in a class, the compiler provides an implicit **inline** default constructor.
 
 ```cpp
 #include <iostream>
@@ -114,7 +140,7 @@ You can prevent the compiler from generating an implicit default constructor by 
 
 ```
 
-A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their subobjects, must have a default constructor and destructors that are accessible. All data members of reference type, as well as `const` members must have a default member initializer.
+A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their class-type members, must have a default constructor and destructors that are accessible. All data members of reference type, as well as **const** members must have a default member initializer.
 
 When you call a compiler-generated default constructor and try to use parentheses, a warning is issued:
 
@@ -145,7 +171,7 @@ int main(){
 
     Box box1(1, 2, 3);
     Box box2{ 2, 3, 4 };
-    Box box3;     // compiler error C2512: no appropriate default constructor available
+    Box box3; // C2512: no appropriate default constructor available
 }
 
 ```
@@ -153,7 +179,7 @@ int main(){
 If a class has no default constructor, an array of objects of that class cannot be constructed by using square-bracket syntax alone. For example, given the previous code block, an array of Boxes cannot be declared like this:
 
 ```cpp
-Box boxes[3];    // compiler error C2512: no appropriate default constructor available
+Box boxes[3]; // C2512: no appropriate default constructor available
 
 ```
 
@@ -163,6 +189,8 @@ However, you can use a set of initializer lists to initialize an array of Box ob
 Box boxes[3]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 ```
 
+For more information, see [Initializers](initializers.md).
+
 ## <a name="copy_and_move_constructors"></a> Copy constructors
 
 A *copy constructor* initializes an object by copying the member values from an object of the same type. If your class members are all simple types such as scalar values, the compiler-generated copy constructor is sufficient and you do not need to define your own. If your class requires more complex initialization, then you need to implement a custom copy constructor. For example, if a class member is a pointer then you need to define a copy constructor to allocate new memory and copy the values from the other's pointed-to object. The compiler-generated copy constructor simply copies the pointer, so that the new pointer still points to the other's memory location.
@@ -171,16 +199,16 @@ A copy constructor may have one of these signatures:
 
 ```cpp
 
-    Box(Box& other); // avoid this if possible. allows modification of other.
+    Box(Box& other); // Avoid if possible--allows modification of other.
     Box(const Box& other);
     Box(volatile Box& other);
     Box(volatile const Box& other);
 
-    // additional parameters OK if they have default values
+    // Additional parameters OK if they have default values
     Box(Box& other, int i = 42, string label = "Box");
 ```
 
-When you define a copy constructor, you should also define a copy assignment operator (=).
+When you define a copy constructor, you should also define a copy assignment operator (=). For more information, see [Assignment](assignment.md) and [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md).
 
 You can prevent your object from being copied by defining the copy constructor as deleted:
 
@@ -190,16 +218,14 @@ You can prevent your object from being copied by defining the copy constructor a
 
 Attempting to copy the object produces error *C2280: attempting to reference a deleted function*.
 
-For more information, see [Copy Constructors and Copy Assignment Operators (C++)](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)
-
 ## <a name="move_constructors"></a> Move constructors
-A *move constructor* is a special member function that moves ownership of an existing object's data to a new variable without copying the original data. It takes an rvalue reference as its first parameter, and any additional parameters must have default values. Move constructors can significantly increase your program's efficiency when passing around large objects.
+A *move constructor* is a special member function that moves ownership of an existing object's data to a new variable without copying the original data. It takes an rvalue reference as its first parameter, and any additional parameters must have default values. Move constructors can significantly increase your program's efficiency when passing around large objects. A move constructor takes an rvalue reference as its first parameter. Any other parameters must have default values.
 
 ```cpp
-
+Box(Box&& other);
 ```
 
-The compiler chooses a move constructor in certain situations where the object is being initialized by another object of the same type that is about to be destroyed and no longer needs it resources. The following example shows one case when a move constructor is selected by overload resolution. The variable *box* returned by get_Box() is an *xvalue* (eXpiring value) which is about to go out of scope. To provide motivation for this example, let's give Box a large vector of strings that represent its contents. Rather than copying the vector and its strings, the move constructor "steals" it from the expiring value "box" so that the vector now belongs to the new object. The call to std::move is all that's needed because both vector and string classes implement their own move constructors.
+The compiler chooses a move constructor in certain situations where the object is being initialized by another object of the same type that is about to be destroyed and no longer needs it resources. The following example shows one case when a move constructor is selected by overload resolution. The variable *box* returned by get_Box() is an *xvalue* (eXpiring value) which is about to go out of scope. To provide motivation for this example, let's give Box a large vector of strings that represent its contents. Rather than copying the vector and its strings, the move constructor "steals" it from the expiring value "box" so that the vector now belongs to the new object. The call to `std::move` is all that's needed because both `vector` and `string` classes implement their own move constructors.
 
 ```cpp
 #include <iostream>
@@ -288,7 +314,7 @@ public:
     Box2& operator=(const Box2& other) = default;
     Box2(Box2&& other) = default;
     Box2& operator=(Box2&& other) = default;
-//...
+    //...
 };
 ```
 
@@ -308,7 +334,7 @@ A constructor may be declared as [constexpr](constexpr-cpp.md) if
 
 ## <a name="init_list_constructors"></a> Initializer list constructors
 
-If a constructor takes a std::initializer_list\<T\> as its parameter, and any other parameters have default arguments, that constructor will be selected in overload resolution when the class is instantiated through direct initialization. You can use the initializer_list to initialize any member that can accept it. For example, assume the Box class (shown previously) has a std::vector<string> member **m_contents**. You can provide a constructor like this:
+If a constructor takes a [std::initializer_list\<T\>](../standard-library/initializer-list-class.md) as its parameter, and any other parameters have default arguments, that constructor will be selected in overload resolution when the class is instantiated through direct initialization. You can use the initializer_list to initialize any member that can accept it. For example, assume the Box class (shown previously) has a `std::vector<string>` member **m_contents**. You can provide a constructor like this:
 
 ```cpp
     Box(initializer_list<string> list, int w = 0, int h = 0, int l = 0)
