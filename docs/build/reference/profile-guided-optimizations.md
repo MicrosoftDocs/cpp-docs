@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 Profile-guided optimization lets you optimize an output file, where the optimizer uses data from test runs of the .exe or .dll file. The data represents how the program is likely to perform in a production environment.
 
-Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations are not available for output files that will run on the common language runtime. Even if you produce an assembly with mixed native and managed code (compile with **/clr**), you cannot use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
+Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations are not available for output files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you cannot use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
 
 > [!NOTE]
 > Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md).
@@ -27,9 +27,9 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
    Each module built with **/GL** can be examined during profile-guided optimization test runs to capture run-time behavior. Every module in a profile-guided optimization build does not have to be compiled with **/GL**. However, only those modules compiled with **/GL** are instrumented and later available for profile-guided optimizations.
 
-- Link using [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) and [/GENPROFILE](../../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
+- Link using [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) and [/GENPROFILE or /FASTGENPROFILE](../../build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
 
-   Using both **/LTCG** and **/GENPROFILE** creates an empty .pgd file. After test-run data is added to the .pgd file, it can be used as input to the next link step (creating the optimized image). When specifying **/GENPROFILE**, you can optionally add **:PGD=**_filename_ to specify a nondefault name or location for the .pgd file.
+   Using both **/LTCG** and **/GENPROFILE** or **/FASTGENPROFILE** creates a .pgd file when the instrumented app is run. After test-run data is added to the .pgd file, it can be used as input to the next link step (creating the optimized image). When specifying **/GENPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a nondefault name or location for the .pgd file. The combination of **/LTCG** and **/GENPROFILE** or **/FASTGENPROFILE** linker options replaces the deprecated **/LTCG:PGINSTRUMENT** linker option.
 
 - Profile the application.
 
@@ -37,13 +37,15 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
    During a test run, you can force closure of the currently open .pgc file and the creation of a new .pgc file with the [pgosweep](../../build/reference/pgosweep.md) utility (for example, when the end of a test scenario does not coincide with application shutdown).
 
-   You can use the [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) environment variable, or the **/POGOSAFEMODE** linker option. When you profile your application, these options enable you to specify whether you want to profile the application in *safe mode*, which is slower but thread safe, or  the default, *fast mode* which is faster but not thread safe.
+   Your application can also directly invoke a PGO function, [PgoAutoSweep](pgoautosweep.md), to capture the profile data at the point of the call as a .pgc file. This can give you finer control over the code covered by the captured data in your .pgc files. For an example of how to use this function, see the [PgoAutoSweep](pgoautosweep.md) documentation.
+
+   When you create your instrumented build, by default, data collection is done in non-thread-safe mode, which is faster but may not be completely accurate. By using the **EXACT** argument to **/GENPROFILE** or **/FASTGENPROFILE**, you can specify data collection in thread-safe mode, which is more accurate but slower. This option is also available if you set the deprecated [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) environment variable, or the deprecated **/POGOSAFEMODE** linker option, when you create your instrumented build.
 
 - Link using **/LTCG** and **/USEPROFILE**.
 
-   Using both **/LTCG** and **/USEPROFILE** creates the optimized image. This step takes as input the .pgd file. When you specify **/USEPROFILE**, you can optionally add **:PGD=**_filename_ to specify a non-default name or location for the .pgd file. For more information, see [/LTCG](../../build/reference/ltcg-link-time-code-generation.md).
+   Use both the **/LTCG** and [/USEPROFILE](useprofile.md) linker options to create the optimized image. This step takes as input the .pgd file. When you specify **/USEPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a non-default name or location for the .pgd file. You can also specify this name by using the deprecated **/PGD** linker option. The combination of **/LTCG** and **/USEPROFILE** replaces the deprecated **/LTCG:PGOPTIMIZE** and **/LTCG:PGUPDATE** linker options.
 
-It is even possible to create the optimized output file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its .pgd file are available, you can do additional test runs and rebuild the optimized image with the newer .pgd file.
+It is even possible to create the optimized output file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its .pgd file are available, you can do additional test runs and rebuild the optimized image with the newer .pgd file, by using the same **/LTCG** and **/USEPROFILE** linker options.
 
 The following is a list of the profile-guided optimizations:
 

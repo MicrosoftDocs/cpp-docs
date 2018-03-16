@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)
 
-Specifies generation of a .pgd file by the linker to support profile-guided optimization (PGO).  **/GENPROFILE** and **/FASTGENPROFILE** use different default parameters. Use **/GENPROFILE** to favor precision over speed and memory usage during profiling. Use **/FASTGENPROFILE** to favor smaller memory usage and speed over precision.
+Specifies generation of a .pgd file by the linker to support profile-guided optimization (PGO). **/GENPROFILE** and **/FASTGENPROFILE** use different default parameters. Use **/GENPROFILE** to favor precision over speed and memory usage during profiling. Use **/FASTGENPROFILE** to favor smaller memory usage and speed over precision.
 
 ## Syntax
 

@@ -398,6 +398,7 @@
 ### [Profile Guided Optimization in the Performance and Diagnostics Hub](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)
 ### [Tools for Manual Profile-Guided Optimization](tools-for-manual-profile-guided-optimization.md)
 #### [Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)
+#### [PgoAutoSweep](pgoautosweep.md)
 #### [pgomgr](pgomgr.md)
 #### [pgosweep](pgosweep.md)
 ### [How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
