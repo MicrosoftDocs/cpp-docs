@@ -64,4 +64,6 @@ In this example, profile data from all myapp#.pgc files is added to the myapp.pg
 
 ## See also
 
-[Tools for Manual Profile-Guided Optimization](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
+[PgoAutoSweep](pgoautosweep.md)<br/>
+[pgosweep](pgosweep.md)<br/>

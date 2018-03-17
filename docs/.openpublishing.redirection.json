@@ -141,6 +141,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/tools-for-manual-profile-guided-optimization.md",
+            "redirect_url": "/cpp/build/reference/profile-guided-optimizations.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/reference/two-choices-for-precompiling-code.md",
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#two-choices-for-precompiling-code",
             "redirect_document_id": false

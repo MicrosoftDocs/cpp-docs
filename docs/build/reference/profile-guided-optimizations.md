@@ -21,6 +21,8 @@ Profile-guided optimizations are only available for x86 or x64 native targets. P
 > [!NOTE]
 > Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md).
 
+## Steps to optimize your app
+
 To use profile-guided optimization, follow these steps to optimize your app:
 
 - Compile one or more source code files with [/GL](../../build/reference/gl-whole-program-optimization.md).
@@ -47,6 +49,8 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
 It is even possible to create the optimized output file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its .pgd file are available, you can do additional test runs and rebuild the optimized image with the newer .pgd file, by using the same **/LTCG** and **/USEPROFILE** linker options.
 
+## Optimizations performed by PGO
+
 The following is a list of the profile-guided optimizations:
 
 - **Inlining** - For example, if there exists a function A that frequently calls function B, and function B is relatively small, then profile-guided optimizations will inline function B in function A.
@@ -71,11 +75,24 @@ The following is a list of the profile-guided optimizations:
 
 If you use Visual Studio 2013, you can use the automated [Profile Guided Optimization Plug-In](../../build/reference/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md) for Visual C++ in the Performance and Diagnostics Hub to simplify and streamline the optimization process within Visual Studio. This plug-in is not available in later versions of Visual Studio.
 
-## In this section
+## Next steps
 
-[Tools for Manual Profile-Guided Optimization](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+Read more about these environment variables, functions, and tools you can use in profile-guided optimizations:
+
+[Environment Variables for Profile-Guided Optimizations](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+These variables can be used to specify run-time behavior of testing scenarios. They have been deprecated in favor of new linker options; read this to help you move from the environment variables to the linker options.
+
+[PgoAutoSweep](pgoautosweep.md)<br/>
+A function you can add to your app to provide fine-grained .pgc file data capture control.
+
+[pgosweep](../../build/reference/pgosweep.md)<br/>
+A command-line utility that writes all profile data to the .pgc file, closes the .pgc file, and opens a new .pgc file.
+
+[pgomgr](../../build/reference/pgomgr.md)<br/>
+A command-line utility that adds profile data from one or more .pgc files to the .pgd file.
 
 [How to: Merge Multiple PGO Profiles into a Single Profile](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
+Examples of **pgomgr** usage.
 
 ## See also
 

@@ -46,6 +46,8 @@ When you name a .pgc file (by using the *pgcfile* parameter) you can use the sta
 > [!NOTE]
 > You can start this tool only from a Visual Studio developer command prompt. You cannot start it from a system command prompt or from File Explorer.
 
+For information on how to capture the profile data from within your executable, see [PgoAutoSweep](pgoautosweep.md).
+
 ## Example
 
 In this example command, **pgosweep** writes the current profile information for myapp.exe to myapp!1.pgc.
@@ -54,4 +56,5 @@ In this example command, **pgosweep** writes the current profile information for
 
 ## See also
 
-[Tools for Manual Profile-Guided Optimization](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
+[PgoAutoSweep](pgoautosweep.md)<br/>

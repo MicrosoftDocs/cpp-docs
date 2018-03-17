@@ -159,4 +159,5 @@ Finished generating code
 
 ## See also
 
-[Tools for Manual Profile-Guided Optimization](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
+[pgosweep](pgosweep.md)<br/>

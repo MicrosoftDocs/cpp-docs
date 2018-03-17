@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # /POGOSAFEMODE (Run PGO in thread safe mode)
 
-**The /POGOSAFEMODE option is deprecated starting in Visual Studio 2015**. Use the [/GENPROFILE:EXACT](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) and **/GENPROFILE:NOEXACT** options instead. These linker options specify the thread-safe mode for application profiling during Profile-guided optimization on x86 and x64 systems.
+**The /POGOSAFEMODE option is deprecated starting in Visual Studio 2015**. Use the [/GENPROFILE:EXACT](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) and **/GENPROFILE:NOEXACT** options instead. The **/POGOSAFEMODE** linker option specifies that the instrumented build is created to use thread-safe mode for profile data capture during profile-guided optimization (PGO) training runs.
 
 ## Syntax
 
@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 
 ## Remarks
 
-Profile-guided optimization (PGO) has two possible modes during the profiling phase: *fast mode* and *safe mode*. When profiling is in fast mode, it uses the **INC** instruction to increase data counters. The **INC** instruction is faster but is not thread-safe. When profiling is in safe mode, it uses the **LOCK INC** instruction to increase data counters. The **LOCK INC** instruction has the same functionality as the **INC** instruction has, and is thread-safe, but it is slower than the **INC** instruction.
+Profile-guided optimization (PGO) has two possible modes during the profiling phase: *fast mode* and *safe mode*. When profiling is in fast mode, it uses an increment instruction to increase data counters. The increment instruction is faster but is not thread-safe. When profiling is in safe mode, it uses the interlocked-increment instruction to increase data counters. This instruction has the same functionality as the increment instruction has, and is thread-safe, but it is slower.
 
 The **/POGOSAFEMODE** option sets the instrumented build to use safe mode. This option can only be used when the deprecated [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) is specified, during the PGO instrumentation linker phase.
 
