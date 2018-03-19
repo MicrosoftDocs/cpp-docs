@@ -23,9 +23,7 @@ Represents an event. EventSource member functions add, remove, and invoke event 
 ## Syntax  
   
 ```  
-template<  
-   typename TDelegateInterface  
->  
+template<typename TDelegateInterface>  
 class EventSource;  
 ```  
   

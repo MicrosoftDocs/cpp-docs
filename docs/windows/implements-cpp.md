@@ -141,7 +141,7 @@ library odod
 #ifndef __attr_implements_h__  
 #define __attr_implements_h__  
   
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)  
+#if defined(_MSC_VER) && (_MSC_VER>= 1020)  
 #pragma once  
 #endif  
   
@@ -475,7 +475,7 @@ public:
       if (pDispParams == 0) {  
          return DISP_E_BADVARTYPE;  
       }  
-      if (pDispParams->cArgs > 0) {  
+      if (pDispParams->cArgs> 0) {  
          return DISP_E_BADPARAMCOUNT;  
       }  
       if (pVarResult != 0) {  

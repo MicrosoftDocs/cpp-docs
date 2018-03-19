@@ -30,14 +30,10 @@ template<
          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>,   
    T)> , T)> class MakeAllocator;  
   
-template<  
-   typename T  
->  
+template<typename>  
 class MakeAllocator<T, false>;  
   
-template<  
-   typename T  
->  
+template<typename>  
 class MakeAllocator<T, true>;  
 ```  
   

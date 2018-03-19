@@ -28,9 +28,7 @@ template <
 >  
 class ComPtr;  
   
-template<  
-   class U  
->  
+template<   class>  
 friend class ComPtr;  
 ```  
   
