@@ -22,7 +22,7 @@ This linker option together with [/LTCG (Link-time code generation](ltcg-link-ti
 ### Arguments
 
 **AGGRESSIVE**<br/>
-This optional argument specifies that aggressive optimizations should be used during optimized code generation.
+This optional argument specifies that aggressive speed optimizations should be used during optimized code generation.
 
 **PGD**=*filename*<br/>
 Specifies a base file name for the .pgd file. By default, the linker uses the base executable file name with a .pgd extension.
@@ -31,7 +31,9 @@ Specifies a base file name for the .pgd file. By default, the linker uses the ba
 
 The **/USEPROFILE** linker option is used together with **/LTCG** to generate or update an optimized build based on PGO training data. It is the equivalent of the deprecated **/LTCG:PGUPDATE** and **/LTCG:PGOPTIMIZE** options.
 
-The **PGD** argument specifies an optional name for the training data .pgd file to use, the same as in [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md). It is the equivalent of the deprecated **/PGD** switch. If no *filename* is specified, a .pgd file that has the same base name as the executable is used.
+The optional **AGGRESSIVE** argument disables size-related heuristics to attempt to optimize for speed. This may result in optimizations that substantially increase the size of your executable, and may not increase the resulting speed. You should profile and compare the results of using and not using **AGGRESSIVE**. This argument must be specified explicitly; it is not enabled by default.
+
+The **PGD** argument specifies an optional name for the training data .pgd file to use, the same as in [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md). It is the equivalent of the deprecated **/PGD** switch. By default, or if no *filename* is specified, a .pgd file that has the same base name as the executable is used.
 
 The **/USEPROFILE** linker option is new in Visual Studio 2015.
 
