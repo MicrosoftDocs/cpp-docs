@@ -31,17 +31,44 @@ class AgileEventSource
  The interface to a delegate that represents an event handler.
 
  `TEventSourceOptions`
- An [InvokeModeOptions](invokemodeoptions.md) stucture whose invokeMode field is set to InvokeMode::StopOnFirstError or InvokeMode::FireAll. See [InvokeModeOptions](invokemodeoptions-structure.md) for more information.
-  
+ An [InvokeModeOptions](invokemodeoptions.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
+
+## Remarks
+
+TBD
+
 ## Members  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[AgileEventSource::Add Method](../windows/eventsource-add-method.md)|Appends the agile event handler represented by the specified delegate interface to the set of event handlers for the current AgileEventSource object.|  
+|[AgileEventSource::Add Method](#add)|Appends the agile event handler represented by the specified delegate interface to the set of event handlers for the current AgileEventSource object.|  
 
-## Remarks
+## <a name="add"></a> AgileEventSource::Add Method
+
+Appends the event handler represented by the specified delegate interface to the set of event handlers for the current EventSource object.
+
+### Syntax
+
+```cpp
+HRESULT Add(  
+   _In_ TDelegateInterface* delegateInterface,  
+   _Out_ EventRegistrationToken* token  
+);
+```
+
+### Parameters
+
+*delegateInterface*
+
+The interface to a delegate object, which represents an event handler.
+
+*token*
+When this operation completes, a handle that represents the event. Use this token as the parameter to the Remove() method to discard the event handler.
+
+### Return Value
+S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Inheritance Hierarchy  
  `EventSource`  
