@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ltoa, _ltow
+
 Converts a long integer to a string. More secure versions of these functions are available; see [_ltoa_s, _ltow_s](../../c-runtime-library/reference/ltoa-s-ltow-s.md).  
   
 ## Syntax  
