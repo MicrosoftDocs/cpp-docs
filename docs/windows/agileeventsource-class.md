@@ -33,10 +33,6 @@ class AgileEventSource
  `TEventSourceOptions`
  An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
-## Remarks
-
-TBD
-
 ## Members  
   
 ### Public Methods  

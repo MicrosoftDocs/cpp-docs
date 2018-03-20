@@ -35,8 +35,6 @@ struct InvokeModeOptions
 };
 ```
 
-## Remarks
-
 ## Requirements
 
  **Header:** event.h
