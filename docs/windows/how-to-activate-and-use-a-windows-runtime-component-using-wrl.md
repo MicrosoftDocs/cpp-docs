@@ -18,9 +18,6 @@ ms.workload: ["cplusplus", "uwp"]
 # How to: Activate and Use a Windows Runtime Component Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to initialize the Windows Runtime and how to activate and use a Windows Runtime component.  
   
-> [!NOTE]
->  This example activates a built-in Windows Runtime component. To learn how to create your own component that you can activate in a similar manner, see [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md).  
-  
  To use a component, you must acquire an interface pointer to the type that is implemented by the component. And because the underlying technology of the Windows Runtime is the Component Object Model (COM), you must follow COM rules to maintain an instance of the type. For example, you must maintain the *reference count* that determines when the type is deleted from memory.  
   
  To simplify the use of the Windows Runtime, Windows Runtime C++ Template Library provides the smart pointer template, [ComPtr\<T>](../windows/comptr-class.md), that automatically performs reference counting. When you declare a variable, specify `ComPtr<`*interface-name*`>` *identifier*. To access an interface member, apply the arrow member-access operator (`->`) to the identifier.  

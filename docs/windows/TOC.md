@@ -285,8 +285,6 @@
 ### [How to: Activate and Use a Windows Runtime Component Using WRL](how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)
 ### [How to: Complete Asynchronous Operations Using WRL](how-to-complete-asynchronous-operations-using-wrl.md)
 ### [How to: Handle Events Using WRL](how-to-handle-events-using-wrl.md)
-### [WRL Class Library Project Template](wrl-class-library-project-template.md)
-### [Walkthrough: Creating a Basic Windows Runtime Component Using WRL](walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)
 ### [Walkthrough: Creating a UWP app using WRL and Media Foundation](walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)
 ### [How to: Create a Classic COM Component Using WRL](how-to-create-a-classic-com-component-using-wrl.md)
 ### [How to: Instantiate WRL Components Directly](how-to-instantiate-wrl-components-directly.md)
