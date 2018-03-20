@@ -1,7 +1,7 @@
 ---
 title: "EventSource Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "03/22/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource Class
-Represents an event. EventSource member functions add, remove, and invoke event handlers.  
+Represents a non-agile event. EventSource member functions add, remove, and invoke event handlers. For agile events, use [AgileEventSource](agileeventsource.md). 
   
 ## Syntax  
   
@@ -66,3 +66,4 @@ class EventSource;
   
 ## See Also  
  [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[AgileEventSource Class](agileeventsource.md)
