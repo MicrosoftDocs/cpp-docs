@@ -27,82 +27,49 @@ Converts an integer to a string. More secure versions of these functions are ava
 ## Syntax
 
 ```C
-char *_itoa(
-   int value,
-   char *buffer,
-   int radix
-);
-char *_ltoa(
-   long value,
-   char *buffer,
-   int radix
-);
-char *_ultoa(
-   unsigned long value,
-   char *buffer,
-   int radix
-);
-char *_i64toa(
-   __int64 value,
-   char *buffer,
-   int radix
-);
-char * _ui64toa(
-   unsigned _int64 value,
-   char *buffer,
-   int radix
-);
-wchar_t * _itow(
-   int value,
-   wchar_t *buffer,
-   int radix
-);
-wchar_t * _i64tow(
-   __int64 value,
-   wchar_t *buffer,
-   int radix
-);
-wchar_t * _ui64tow(
-   unsigned __int64 value,
-   wchar_t *buffer,
-   int radix
-);
+char * _itoa( int value, char *buffer, int radix );
+char * _ltoa( long value, char *buffer, int radix );
+char * _ultoa( unsigned long value, char *buffer, int radix );
+char * _i64toa( long long value, char *buffer, int radix );
+char * _ui64toa( unsigned long long value, char *buffer, int radix );
+
+wchar_t * _itow( int value, wchar_t *buffer, int radix );
+wchar_t * _ltow( long value, wchar_t *buffer, int radix );
+wchar_t * _ultow( unsigned long value, wchar_t *buffer, int radix );
+wchar_t * _i64tow( long long value, wchar_t *buffer, int radix );
+wchar_t * _ui64tow( unsigned long long value, wchar_t *buffer, int radix );
+
+// The following template functions are C++ only:
 template <size_t size>
-char *_itoa(
-   int value,
-   char (&buffer)[size],
-   int radix
-); // C++ only
+char *_itoa( int value, char (&buffer)[size], int radix );
+
 template <size_t size>
-char *_i64toa(
-   __int64 value,
-   char (&buffer)[size],
-   int radix
-); // C++ only
+char *_itoa( long value, char (&buffer)[size], int radix );
+
 template <size_t size>
-char * _ui64toa(
-   unsigned _int64 value,
-   char (&buffer)[size],
-   int radix
-); // C++ only
+char *_itoa( unsigned long value, char (&buffer)[size], int radix );
+
 template <size_t size>
-wchar_t * _itow(
-   int value,
-   wchar_t (&buffer)[size],
-   int radix
-); // C++ only
+char *_i64toa( long long value, char (&buffer)[size], int radix );
+
 template <size_t size>
-wchar_t * _i64tow(
-   __int64 value,
-   wchar_t (&buffer)[size],
-   int radix
-); // C++ only
+char * _ui64toa( unsigned long long value, char (&buffer)[size], int radix );
+
 template <size_t size>
-wchar_t * _ui64tow(
-   unsigned __int64 value,
-   wchar_t (&buffer)[size],
-   int radix
-); // C++ only
+wchar_t * _itow( int value, wchar_t (&buffer)[size], int radix );
+
+template <size_t size>
+wchar_t * _ltow( long value, wchar_t (&buffer)[size], int radix );
+
+template <size_t size>
+wchar_t * _ultow( unsigned long value, wchar_t (&buffer)[size], int radix );
+
+template <size_t size>
+wchar_t * _i64tow( long long value, wchar_t (&buffer)[size], int radix );
+
+template <size_t size>
+wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
+   int radix );
 ```
 
 ### Parameters
@@ -114,10 +81,10 @@ Number to be converted.
 String result.
 
 *radix*<br/>
-Base of *value*; which must be in the range 2-36.
+The base to use for the conversion of *value*, which must be in the range 2-36.
 
 *size*<br/>
-Length of the buffer in units of the character type. This parameter is inferred in C++.
+Length of the buffer in units of the character type. This parameter is inferred from the *buffer* argument in C++.
 
 ## Return Value
 
@@ -125,66 +92,47 @@ Each of these functions returns a pointer to *buffer*. There is no error return.
 
 ## Remarks
 
-The `_itoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given *value* argument to a null-terminated character string and stores the result (up to 33 characters for `_itoa` and 65 for `_i64toa` and `_ui64toa`) in *buffer*. If *radix* equals 10 and *value* is negative, the first character of the stored string is the minus sign ( `-` ). `_itow`, `_i64tow`, and `_ui64tow` are wide-character versions of `_itoa`, `_i64toa`, and `_ui64toa`, respectively.
-
-> [!IMPORTANT]
-> To prevent buffer overruns, ensure that the *buffer* buffer is large enough to hold the converted digits plus the trailing null-character and a sign character. For convenience, stdlib.h and wchar.h define macros that specify the required count of narrow or wide characters required for each type of conversion. For more information, see [Maximum conversion count macros](#maximum-conversion-count-macros).
+The `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given *value* argument to a null-terminated character string and stores the result (up to 33 characters for `_itoa`, `_ltoa`, and `_ultoa`, and 65 for `_i64toa` and `_ui64toa`) in *buffer*. If *radix* equals 10 and *value* is negative, the first character of the stored string is the minus sign ( `-` ). The `_itow`, `_ltow`, `_ultow`, `_i64tow`, and `_ui64tow` functions are wide-character versions of `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa`, respectively.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
+> [!IMPORTANT]
+> To prevent buffer overruns, ensure that *buffer* is large enough to hold the converted digits plus the trailing null-character and a sign character.
+
 ### Maximum conversion count macros
 
-The Microsoft implementation of the CRT includes some convenient macros for the size of the buffer required to convert the longest possible integer of each type. To ensure that your conversion buffer is large enough to receive any conversion in the base specified by *radix*, use one of these defined macros when you allocate the buffer. This helps to prevent buffer overrun errors when you convert integral types to strings. 
+To help you create secure buffers for conversions, the Microsoft implementation of the CRT includes some convenient macros for the size of the buffer required to convert the longest possible integer of each type, including the null terminator and sign character, for several common bases. To ensure that your conversion buffer is large enough to receive any conversion in the base specified by *radix*, use one of these defined macros when you allocate the buffer. This helps to prevent buffer overrun errors when you convert integral types to strings. These macros are defined when you include either stdlib.h or wchar.h in your source.
 
-These macros are defined when you include either stdlib.h or wchar.h in your source:
-
-```C
-// Maximum number of elements, including null terminator (and negative sign
-// where appropriate), needed for integer-to-string conversions for several
-// bases and integer types.
-#define _MAX_ITOSTR_BASE16_COUNT   (8  + 1)
-#define _MAX_ITOSTR_BASE10_COUNT   (1 + 10 + 1)
-#define _MAX_ITOSTR_BASE8_COUNT    (11 + 1)
-#define _MAX_ITOSTR_BASE2_COUNT    (32 + 1)
-
-#define _MAX_LTOSTR_BASE16_COUNT   (8  + 1)
-#define _MAX_LTOSTR_BASE10_COUNT   (1 + 10 + 1)
-#define _MAX_LTOSTR_BASE8_COUNT    (11 + 1)
-#define _MAX_LTOSTR_BASE2_COUNT    (32 + 1)
-
-#define _MAX_ULTOSTR_BASE16_COUNT  (8  + 1)
-#define _MAX_ULTOSTR_BASE10_COUNT  (10 + 1)
-#define _MAX_ULTOSTR_BASE8_COUNT   (11 + 1)
-#define _MAX_ULTOSTR_BASE2_COUNT   (32 + 1)
-
-#define _MAX_I64TOSTR_BASE16_COUNT (16 + 1)
-#define _MAX_I64TOSTR_BASE10_COUNT (1 + 19 + 1)
-#define _MAX_I64TOSTR_BASE8_COUNT  (22 + 1)
-#define _MAX_I64TOSTR_BASE2_COUNT  (64 + 1)
-
-#define _MAX_U64TOSTR_BASE16_COUNT (16 + 1)
-#define _MAX_U64TOSTR_BASE10_COUNT (20 + 1)
-#define _MAX_U64TOSTR_BASE8_COUNT  (22 + 1)
-#define _MAX_U64TOSTR_BASE2_COUNT  (64 + 1)
-```
-
-To use one of these macros, declare your conversion buffer of the appropriate type and use the macro value for the dimension. For example,
+To use one of these macros in a string conversion function, declare your conversion buffer of the appropriate character type and use the macro value for the integer type and base as the buffer dimension. This table lists the macros that are appropriate for each function for the listed bases:
 
 ||||
 |-|-|-|
-|Function|radix|Macro|
+|Functions|radix|Macros|
 |`_itoa`, `_itow`|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
-|`_ltoa`, `_ltow`|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
-|`_itoa`, `_itow`|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
-|`_itoa`, `_itow`|16<br/>10<br/>8<br/>2|`_MAX_ITOSTR_BASE16_COUNT`<br/>`_MAX_ITOSTR_BASE10_COUNT`<br/>`_MAX_ITOSTR_BASE8_COUNT`<br/>`_MAX_ITOSTR_BASE2_COUNT`|
+|`_ltoa`, `_ltow`|16<br/>10<br/>8<br/>2|`_MAX_LTOSTR_BASE16_COUNT`<br/>`_MAX_LTOSTR_BASE10_COUNT`<br/>`_MAX_LTOSTR_BASE8_COUNT`<br/>`_MAX_LTOSTR_BASE2_COUNT`|
+|`_ultoa`, `_ultow`|16<br/>10<br/>8<br/>2|`_MAX_ULTOSTR_BASE16_COUNT`<br/>`_MAX_ULTOSTR_BASE10_COUNT`<br/>`_MAX_ULTOSTR_BASE8_COUNT`<br/>`_MAX_ULTOSTR_BASE2_COUNT`|
+|`_i64toa`, `_i64tow`|16<br/>10<br/>8<br/>2|`_MAX_I64TOSTR_BASE16_COUNT`<br/>`_MAX_I64TOSTR_BASE10_COUNT`<br/>`_MAX_I64TOSTR_BASE8_COUNT`<br/>`_MAX_I64TOSTR_BASE2_COUNT`|
+|`_ui64toa`, `_ui64tow`|16<br/>10<br/>8<br/>2|`_MAX_U64TOSTR_BASE16_COUNT`<br/>`_MAX_U64TOSTR_BASE10_COUNT`<br/>`_MAX_U64TOSTR_BASE8_COUNT`<br/>`_MAX_U64TOSTR_BASE2_COUNT`|
 
+This example uses a conversion count macro to define a buffer large enough to contain an unsigned long in base 2:
 
+```cpp
+#include <wchar.h>
+#include <iostream>
+int main()
+{
+    wchar_t buffer[_MAX_ULTOSTR_BASE2_COUNT];
+    std:wcout << _ultow(3000000000ul, buffer, 2) << std::endl;
+}
+```
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_itot`|`_itoa`|`_itoa`|`_itow`|
+|`_ltot`|`_ltoa`|`_ltoa`|`_ltow`|
+|`_ultot`|`_ultoa`|`_ultoa`|`_ultow`|
 |`_i64tot`|`_i64toa`|`_i64toa`|`_i64tow`|
 |`_ui64tot`|`_ui64toa`|`_ui64toa`|`_ui64tow`|
 
@@ -192,14 +140,10 @@ To use one of these macros, declare your conversion buffer of the appropriate ty
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_itoa`|\<stdlib.h>|
-|`_i64toa`|\<stdlib.h>|
-|`_ui64toa`|\<stdlib.h>|
-|`_itow`|\<stdlib.h>|
-|`_i64tow`|\<stdlib.h>|
-|`_ui64tow`|\<stdlib.h>|
+|`_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, `_ui64toa`|\<stdlib.h>|
+|`_itow`, `_ltow`, `_ultow`, `_i64tow`, `_ui64tow`|\<stdlib.h> or \<wchar.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+These functions and macros are Microsoft-specific. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -209,31 +153,32 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 // This program makes use of the _itoa functions
 // in various examples.
 
+#define _CRT_SECURE_NO_WARNINGS 1
 #include <string.h>
 #include <stdlib.h>
 
 int main( void )
 {
-   char buffer[65];
+   char buffer[_MAX_U64TOSTR_BASE2_COUNT];
    int r;
-   for( r=10; r>=2; --r )
+
+   for ( r = 10; r >= 2; --r )
    {
-     _itoa( -1, buffer, r ); // C4996
-     // Note: _itoa is deprecated; consider using _itoa_s instead
+     _itoa( -1, buffer, r );
      printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
    }
    printf( "\n" );
-   for( r=10; r>=2; --r )
+
+   for ( r = 10; r >= 2; --r )
    {
-     _i64toa( -1L, buffer, r ); // C4996
-     // Note: _i64toa is deprecated; consider using _i64toa_s
+     _i64toa( -1L, buffer, r );
      printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
    }
    printf( "\n" );
-   for( r=10; r>=2; --r )
+
+   for( r = 10; r >= 2; --r )
    {
-     _ui64toa( 0xffffffffffffffffL, buffer, r ); // C4996
-     // Note: _ui64toa is deprecated; consider using _ui64toa_s
+     _ui64toa( 0xffffffffffffffffL, buffer, r );
      printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
    }
 }
