@@ -31,7 +31,7 @@ class AgileEventSource
  The interface to a delegate that represents an event handler.
 
  `TEventSourceOptions`
- An [InvokeModeOptions](invokemodeoptions.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
+ An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
 

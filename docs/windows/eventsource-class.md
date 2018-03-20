@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource Class
-Represents a non-agile event. EventSource member functions add, remove, and invoke event handlers. For agile events, use [AgileEventSource](agileeventsource.md). 
+Represents a non-agile event. EventSource member functions add, remove, and invoke event handlers. For agile events, use [AgileEventSource](agileeventsource-class.md). 
   
 ## Syntax  
   
@@ -66,4 +66,4 @@ class EventSource;
   
 ## See Also  
  [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
-[AgileEventSource Class](agileeventsource.md)
+[AgileEventSource Class](agileeventsource-class.md)
