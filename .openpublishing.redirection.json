@@ -126,6 +126,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/pogosafemode.md",
+            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#pogosafemode",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/reference/precompiled-header-consistency-rules.md",
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#precompiled-header-consistency-rules",
             "redirect_document_id": false
@@ -136,6 +141,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/tools-for-manual-profile-guided-optimization.md",
+            "redirect_url": "/cpp/build/reference/profile-guided-optimizations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/reference/two-choices-for-precompiling-code.md",
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#two-choices-for-precompiling-code",
             "redirect_document_id": false
@@ -143,6 +153,16 @@
         {
             "source_path": "docs/build/reference/using-precompiled-headers-in-a-project.md",
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#using-precompiled-headers-in-a-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/vcprofile-alloc-scale.md",
+            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#vcprofileallocscale",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/vcprofile-path.md",
+            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#vcprofilepath",
             "redirect_document_id": false
         },
         {
