@@ -341,6 +341,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/parallel/amp/index.md",
+            "redirect_url": "/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/parallel/amp/reference/index.md",
             "redirect_url": "/cpp/parallel/amp/reference/reference-cpp-amp",
             "redirect_document_id": false
