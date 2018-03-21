@@ -23,7 +23,7 @@ Retrieves an activation factory for the type specified by the template parameter
 ## Syntax  
   
 ```  
-template<typename>  
+template<typename T>  
 inline HRESULT GetActivationFactory(  
    _In_ HSTRING activatableClassId,  
    _Out_ Microsoft::WRL::Details::ComPtrRef<T> factory  

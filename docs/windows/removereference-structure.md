@@ -23,11 +23,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<   class>  
+template<class T>  
 struct RemoveReference;  
-template<   class>  
+template<class T>  
 struct RemoveReference<T&>;  
-template<   class>  
+template<class T>  
 struct RemoveReference<T&&>;  
 ```  
   

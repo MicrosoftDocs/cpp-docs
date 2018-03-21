@@ -25,8 +25,8 @@ Represents a free-threaded marshaler object.
 ```  
   
 class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags< WinRtClassicComMix>,   
-   Microsoft::WRL::CloakedIid< IMarshal> >;  
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
+   Microsoft::WRL::CloakedIid<IMarshal> >;  
 ```  
   
 ## Remarks  

@@ -23,7 +23,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<typename>  
+template<typename T>  
 __forceinline static HRESULT AsIID(  
    _In_ T* implements,  
    REFIID riid,  

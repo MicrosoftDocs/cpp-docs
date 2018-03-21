@@ -48,7 +48,7 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
      ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")  
   
-     Choose the **Macros>>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.  
+     Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.  
   
      ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")  
   

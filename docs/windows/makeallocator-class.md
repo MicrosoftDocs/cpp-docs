@@ -27,13 +27,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 template<  
    typename T,  
    bool hasWeakReferenceSupport =   
-         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>,   
-   T)> , T)> class MakeAllocator;  
+         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
+ class MakeAllocator;  
   
-template<typename>  
+template<typename T>  
 class MakeAllocator<T, false>;  
   
-template<typename>  
+template<typename T>  
 class MakeAllocator<T, true>;  
 ```  
   

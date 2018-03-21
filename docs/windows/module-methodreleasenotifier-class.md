@@ -23,7 +23,7 @@ Invokes an event handler when the last object in the current module is released.
 ## Syntax  
   
 ```  
-template<typename>  
+template<typename T>  
 class MethodReleaseNotifier : public ReleaseNotifier;  
 ```  
   

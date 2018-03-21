@@ -24,12 +24,12 @@ Returns a ComPtr object that represents the interface identified by the specifie
   
 ```  
   
-template<typename>  
+template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
 ) const;  
   
-template<typename>  
+template<typename U>  
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> p  
 ) const;  

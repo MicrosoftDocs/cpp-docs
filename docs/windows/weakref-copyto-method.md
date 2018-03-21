@@ -28,7 +28,7 @@ HRESULT CopyTo(
    _Deref_out_ IInspectable** ptr  
 );  
   
-template<typename>  
+template<typename U>  
 HRESULT CopyTo(  
    _Deref_out_ U** ptr  
 );  
