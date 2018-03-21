@@ -53,7 +53,7 @@ int main()
     // Pop the items off the Stack.  
     // The item is returned as an Object, so a cast is  
     // necessary to convert it to its proper type.  
-    while (s->Count > 0)  
+    while (s->Count> 0)  
     {  
         Object ^o = s->Pop();  
         if (o->GetType() == Type::GetType("System.String"))  

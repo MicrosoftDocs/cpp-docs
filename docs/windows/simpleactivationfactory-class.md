@@ -23,9 +23,7 @@ Provides a fundamental mechanism to create a Windows Runtime or classic COM base
 ## Syntax  
   
 ```  
-template<  
-   typename Base  
->  
+template<typename Base>  
 class SimpleActivationFactory : public ActivationFactory<>;  
 ```  
   

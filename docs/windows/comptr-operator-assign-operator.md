@@ -38,18 +38,14 @@ WRL_NOTHROW ComPtr& operator=(
 WRL_NOTHROW ComPtr& operator=(  
    const ComPtr &other  
 );  
-template<  
-   class U  
->  
+template<   class>  
 WRL_NOTHROW ComPtr& operator=(  
    const ComPtr<U>& other  
 );  
 WRL_NOTHROW ComPtr& operator=(  
    _Inout_ ComPtr &&other  
 );  
-template<  
-   class U  
->  
+template<   class>  
 WRL_NOTHROW ComPtr& operator=(  
    _Inout_ ComPtr<U>&& other  
 );  

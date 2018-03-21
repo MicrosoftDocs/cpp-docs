@@ -27,18 +27,14 @@ WRL_NOTHROW ComPtr();
 WRL_NOTHROW ComPtr(  
    decltype(__nullptr)  
 );  
-template<  
-   class U  
->  
+template<   class>  
 WRL_NOTHROW ComPtr(  
    _In_opt_ U *other  
 );  
 WRL_NOTHROW ComPtr(  
    const ComPtr& other  
 );  
-template<  
-   class U  
->  
+template<   class>  
 WRL_NOTHROW ComPtr(  
    const ComPtr<U> &other,  
    typename ENABLE_IF<__is_convertible_to(U*,  
@@ -47,9 +43,7 @@ WRL_NOTHROW ComPtr(
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr &&other  
 );  
-template<  
-   class U  
->  
+template<   class>  
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr<U>&& other,  
    typename ENABLE_IF<__is_convertible_to(U*,  

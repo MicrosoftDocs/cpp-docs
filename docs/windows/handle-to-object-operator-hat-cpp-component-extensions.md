@@ -182,7 +182,7 @@ public:
    }  
   
    void f(int Item) {  
-      if (Item >= Size)  
+      if (Item>= Size)  
       {  
          System::Console::WriteLine("Cannot access array element {0}, size is {1}", Item, Size);  
          return;  

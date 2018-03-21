@@ -23,13 +23,9 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   typename TMemberFunction  
->  
+template<typename TMemberFunction>  
 struct ArgTraits;  
-template<  
-   typename TDelegateInterface  
->  
+template<typename TDelegateInterface>  
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(void)>;  
 template<  
    typename TDelegateInterface,  

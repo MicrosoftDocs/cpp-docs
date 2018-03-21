@@ -23,9 +23,7 @@ Registers and retrieves an instance of a specified type defined in a specified c
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename>  
 inline HRESULT ActivateInstance(  
    _In_ HSTRING activatableClassId,  
    _Out_ Microsoft::WRL::Details::ComPtrRef<T> instance  

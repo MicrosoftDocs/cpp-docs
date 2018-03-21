@@ -23,7 +23,7 @@ You can use generic type parameters with delegates. For more information on dele
   
 ```  
 [attributes]   
-generic < [class | typename] type-parameter-identifiers >  
+generic < [class | typename] type-parameter-identifiers>  
 [type-parameter-constraints-clauses]  
 [accessibility-modifiers] delegate result-type identifier   
 ([formal-parameters]);  

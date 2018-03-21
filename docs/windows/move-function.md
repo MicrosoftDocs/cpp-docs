@@ -23,9 +23,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   class T  
->  
+template<   class>  
 inline typename RemoveReference<T>::Type&& Move(  
    _Inout_ T&& arg  
 );  

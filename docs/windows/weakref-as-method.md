@@ -24,16 +24,12 @@ Sets the specified ComPtr pointer parameter to represent the specified interface
   
 ```  
   
-template<  
-   typename U  
->  
+template<typename>  
 HRESULT As(  
    _Out_ ComPtr<U>* ptr  
 );  
   
-template<  
-   typename U  
->  
+template<typename>  
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> ptr  
 );  
