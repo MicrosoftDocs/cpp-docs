@@ -141,7 +141,7 @@ library odod
 #ifndef __attr_implements_h__  
 #define __attr_implements_h__  
   
-#if defined(_MSC_VER) && (_MSC_VER>= 1020)  
+#if defined(_MSC_VER) && (_MSC_VER >= 1020)  
 #pragma once  
 #endif  
   
@@ -546,4 +546,4 @@ public:
   
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

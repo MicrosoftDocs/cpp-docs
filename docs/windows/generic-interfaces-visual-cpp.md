@@ -185,7 +185,7 @@ ref class List2 : public IList<ItemType> {
    }  
   
    virtual bool AtEnd() {  
-      if (current>= count)  
+      if (current >= count)  
         return true;  
       else  
         return false;  
