@@ -1,20 +1,15 @@
 ---
-title: "_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow | Microsoft Docs"
+title: "_itoa, _itow functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "03/20/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: ["_itow", "_i64tow", "_itoa", "_i64toa", "_ui64toa", "_ui64tow"]
+apiname: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["_i64tow", "ui64toa", "ui64tow", "itot", "_itot", "_i64toa", "_itoa", "_itow", "_ui64tow", "i64toa", "i64tow", "itow", "_ui64toa"]
+f1_keywords: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "ltoa", "ultoa", "i64toa", "ui64toa", "itow", "ltow", "ultow", "i64tow", "ui64tow", "itot", "_itot", "ltot", "_ltot", "ultot", "_ultot", "i64tot", "_i64tot", "ui64tot", "_ui64tot"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_itot function", "ui64toa function", "_ui64toa function", "converting integers", "itot function", "_i64tow function", "_i64toa function", "_itow function", "ui64tow function", "integers, converting", "itoa function", "_ui64tow function", "i64tow function", "itow function", "i64toa function", "converting numbers, to strings", "_itoa function"]
-ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
@@ -22,7 +17,7 @@ ms.workload: ["cplusplus"]
 ---
 # _itoa, _ltoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).
+Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).
 
 ## Syntax
 
@@ -78,7 +73,7 @@ wchar_t * _ui64tow( unsigned long long value, wchar_t (&buffer)[size],
 Number to be converted.
 
 *buffer*<br/>
-String result.
+Buffer that holds the result of the conversion.
 
 *radix*<br/>
 The base to use for the conversion of *value*, which must be in the range 2-36.
@@ -92,16 +87,25 @@ Each of these functions returns a pointer to *buffer*. There is no error return.
 
 ## Remarks
 
-The `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given *value* argument to a null-terminated character string and stores the result (up to 33 characters for `_itoa`, `_ltoa`, and `_ultoa`, and 65 for `_i64toa` and `_ui64toa`) in *buffer*. If *radix* equals 10 and *value* is negative, the first character of the stored string is the minus sign ( `-` ). The `_itow`, `_ltow`, `_ultow`, `_i64tow`, and `_ui64tow` functions are wide-character versions of `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa`, respectively.
-
-In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+The `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa` functions convert the digits of the given *value* argument to a null-terminated character string and store the result (up to 33 characters for `_itoa`, `_ltoa`, and `_ultoa`, and 65 for `_i64toa` and `_ui64toa`) in *buffer*. If *radix* equals 10 and *value* is negative, the first character of the stored string is the minus sign (**-**). The `_itow`, `_ltow`, `_ultow`, `_i64tow`, and `_ui64tow` functions are wide-character versions of `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa`, respectively.
 
 > [!IMPORTANT]
-> To prevent buffer overruns, ensure that *buffer* is large enough to hold the converted digits plus the trailing null-character and a sign character.
+> These functions can write past the end of a buffer that is too small. To prevent buffer overruns, ensure that *buffer* is large enough to hold the converted digits plus the trailing null-character and a sign character. Misuse of these functions can cause serious security issues in your code.
+
+Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996): **This function or variable may be unsafe. Consider using** *safe_function* **instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS.** We recommend you change your source code to use the *safe_function* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).
+
+To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source file. If you use precompiled headers, define the macro at the top of the precompiled header include file, typically stdafx.h. To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
+
+```C
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdlib.h>
+```
+
+In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ### Maximum conversion count macros
 
-To help you create secure buffers for conversions, the Microsoft implementation of the CRT includes some convenient macros for the size of the buffer required to convert the longest possible integer of each type, including the null terminator and sign character, for several common bases. To ensure that your conversion buffer is large enough to receive any conversion in the base specified by *radix*, use one of these defined macros when you allocate the buffer. This helps to prevent buffer overrun errors when you convert integral types to strings. These macros are defined when you include either stdlib.h or wchar.h in your source.
+To help you create secure buffers for conversions, the CRT includes some convenient macros. These define the size of the buffer required to convert the longest possible value of each integer type, including the null terminator and sign character, for several common bases. To ensure that your conversion buffer is large enough to receive any conversion in the base specified by *radix*, use one of these defined macros when you allocate the buffer. This helps to prevent buffer overrun errors when you convert integral types to strings. These macros are defined when you include either stdlib.h or wchar.h in your source.
 
 To use one of these macros in a string conversion function, declare your conversion buffer of the appropriate character type and use the macro value for the integer type and base as the buffer dimension. This table lists the macros that are appropriate for each function for the listed bases:
 
@@ -114,15 +118,15 @@ To use one of these macros in a string conversion function, declare your convers
 |`_i64toa`, `_i64tow`|16<br/>10<br/>8<br/>2|`_MAX_I64TOSTR_BASE16_COUNT`<br/>`_MAX_I64TOSTR_BASE10_COUNT`<br/>`_MAX_I64TOSTR_BASE8_COUNT`<br/>`_MAX_I64TOSTR_BASE2_COUNT`|
 |`_ui64toa`, `_ui64tow`|16<br/>10<br/>8<br/>2|`_MAX_U64TOSTR_BASE16_COUNT`<br/>`_MAX_U64TOSTR_BASE10_COUNT`<br/>`_MAX_U64TOSTR_BASE8_COUNT`<br/>`_MAX_U64TOSTR_BASE2_COUNT`|
 
-This example uses a conversion count macro to define a buffer large enough to contain an unsigned long in base 2:
+This example uses a conversion count macro to define a buffer large enough to contain an **unsigned long long** in base 2:
 
 ```cpp
 #include <wchar.h>
 #include <iostream>
 int main()
 {
-    wchar_t buffer[_MAX_ULTOSTR_BASE2_COUNT];
-    std:wcout << _ultow(3000000000ul, buffer, 2) << std::endl;
+    wchar_t buffer[_MAX_U64TOSTR_BASE2_COUNT];
+    std:wcout << _ui64tow(0xFFFFFFFFFFFFFFFFull, buffer, 2) << std::endl;
 }
 ```
 
@@ -219,7 +223,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_ltoa, _ltow](../../c-runtime-library/reference/ltoa-ltow.md)<br/>
-[_ltoa_s, _ltow_s](../../c-runtime-library/reference/ltoa-s-ltow-s.md)<br/>
-[_ultoa, _ultow](../../c-runtime-library/reference/ultoa-ultow.md)<br/>
-[_ultoa_s, _ultow_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md)<br/>
+[_itoa_s, _itow_s](../../c-runtime-library/reference/itoa-s-itow-s.md)<br/>
