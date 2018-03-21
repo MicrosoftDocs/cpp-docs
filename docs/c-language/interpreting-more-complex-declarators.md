@@ -37,7 +37,7 @@ You can enclose any declarator in parentheses to specify a particular interpreta
      7   6  4 2 1   3    5  
     ```  
   
- In this example, the steps are numbered in order and can be interpreted as follows:  
+In this example, the steps are numbered in order and can be interpreted as follows:  
   
 1.  The identifier `var` is declared as  
   

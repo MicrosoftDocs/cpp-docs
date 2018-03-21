@@ -1,7 +1,7 @@
 ---
 title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization) | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/96/2018"
+ms.date: "03/14/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "article"
 f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]
@@ -19,7 +19,7 @@ The **/Zc:threadSafeInit** compiler option tells the compiler to initialize stat
 
 ## Syntax
 
-**/Zc:threadSafeInit**[`-`]
+> **/Zc:threadSafeInit**[**-**]
 
 ## Remarks
 

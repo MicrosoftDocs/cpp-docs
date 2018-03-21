@@ -1,16 +1,12 @@
 ---
 title: "Deployment in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "9/21/2017"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "03/13/2018"
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]"]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
@@ -39,6 +35,8 @@ Because central deployment by using a redistributable package or merge modules e
 ## Local Deployment
 
 In local deployment, library files are installed in your application folder together with the executable file. Different versions of Visual C++ redistributable libraries can be installed in the same folder because the file name of each version includes its version number. For example, version 12 of the C++ runtime library is msvcp120.dll, and version 14 is msvcp140.dll.
+
+A library may be spread across multiple additional DLLs, known as *dot libraries*. For example, some functionality in the standard library released in Visual Studio 2017 version 15.6 was added into msvcp140_1.dll, to preverve the ABI compatibility of msvcp140.dll. If you use Visual Studio 2017 version 15.6 (toolset 14.13), or a later toolset from Visual Studio 2017, you may need to locally deploy these dot libraries as well as the main library. These separate dot libraries are then rolled into the next major version of the base library, when the ABI changes.
 
 Because Microsoft cannot automatically update locally deployed Visual C++ libraries, we do not recommend local deployment of these libraries. If you decide to use local deployment of redistributable libraries, we recommend that you implement your own method of automatically updating the locally deployed libraries.
 
