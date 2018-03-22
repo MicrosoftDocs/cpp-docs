@@ -1,16 +1,13 @@
 ---
-title: "_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s | Microsoft Docs"
+title: "_itoa_s, _itow_s functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "03/21/2018"
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: ["_ui64tow_s", "_itoa_s", "_itow_s", "_ui64toa_s", "_i64tow_s", "_i64toa_s"]
+apiname: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["i64tot_s", "itow_s", "_ui64tow_s", "_itow_s", "ui64tot_s", "_ui64toa_s", "itoa_s", "_i64tow_s", "_i64tot_s", "_itot_s", "_i64toa_s", "_itoa_s", "ui64toa_s", "i64toa_s", "_ui64tot_s", "i64tow_s", "itot_s"]
+f1_keywords: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s", "_itot_s", "_ltot_s", "_ultot_s", "_i64tot_s", "_ui64tot_s", "itoa_s", "ltoa_s", "ultoa_s", "i64toa_s", "ui64toa_s", "itow_s", "ltow_s", "ultow_s", "i64tow_s", "ui64tow_s", "itot_s", "ltot_s", "ultot_s", "i64tot_s", "ui64tot_s"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_ui64toa_s function", "_itow_s function", "_i64tow_s function", "_itot_s function", "converting integers", "itow_s function", "i64toa_s function", "_ui64tow_s function", "integers, converting", "_i64tot_s function", "itoa_s function", "_itoa_s function", "ui64toa_s function", "i64tow_s function", "converting numbers, to strings", "_ui64tot_s function", "_i64toa_s function"]
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
@@ -22,7 +19,7 @@ ms.workload: ["cplusplus"]
 ---
 # _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
 
-Converts an integer to a string. These are versions of the [_itoa, _itow Functions](../../c-runtime-library/reference/itoa-itow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts an integer to a string. These are versions of the [_itoa, _itow functions](../../c-runtime-library/reference/itoa-itow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -31,20 +28,20 @@ errno_t _itoa_s( int value, char * buffer, size_t size, int radix );
 errno_t _ltoa_s( long value, char * buffer, size_t size, int radix );
 errno_t _ultoa_s( unsigned long value, char * buffer, size_t size, int radix );
 errno_t _i64toa_s( long long value, char *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 errno_t _ui64toa_s( unsigned long long value, char *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 
 errno_t _itow_s( int value, wchar_t *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 errno_t _ltow_s( long value, wchar_t *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 errno_t _ultow_s( unsigned long value, wchar_t *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 errno_t _i64tow_s( long long value, wchar_t *buffer,
-   size_t sizeInCharacters, int radix );
+   size_t size, int radix );
 errno_t _ui64tow_s( unsigned long long value, wchar_t *buffer,
-   size_t sizeInCharacters, int radix
+   size_t size, int radix
 );
 
 // These template functions are C++ only:
@@ -52,59 +49,61 @@ template <size_t size>
 errno_t _itoa_s( int value, char (&buffer)[size], int radix );
 
 template <size_t size>
+errno_t _ltoa_s( long value, char (&buffer)[size], int radix );
+
+template <size_t size>
+errno_t _ultoa_s( unsigned long value, char (&buffer)[size], int radix );
+
+template <size_t size>
 errno_t _itow_s( int value, wchar_t (&buffer)[size], int radix );
 
 template <size_t size>
-errno_t _ltoa_s( long value, char (&str)[size], int radix );
+errno_t _ltow_s( long value, wchar_t (&buffer)[size], int radix );
 
 template <size_t size>
-errno_t _ltow_s( long value, wchar_t (&str)[size], int radix );
-
-template <size_t size>
-errno_t _ultoa_s( unsigned long value, char (&str)[size], int radix );
-
-template <size_t size>
-errno_t _ultow_s( unsigned long value, wchar_t (&str)[size], int radix );
+errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 ```
 
 ### Parameters
 
-[in] *value*<br/>
+*value*<br/>
 Number to be converted.
 
-[out] *buffer*<br/>
-Buffer that holds the result of the conversion.
+*buffer*<br/>
+Output buffer that holds the result of the conversion.
 
-[in] *sizeInCharacters*<br/>
+*size*<br/>
 Size of *buffer* in characters or wide characters.
 
-[in] *radix*<br/>
-Base of *value*, which must be in the range 2-36.
+*radix*<br/>
+The radix or numeric base to use to convert *value*, which must be in the range 2-36.
 
-## Return Value
+## Return value
 
 Zero if successful; an error code on failure. If any of the following conditions applies, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-### Error Conditions
+### Error conditions
 
-|value|buffer|sizeInCharacters|radix|Return|
+|value|buffer|size|radix|Return|
 |-----------|------------|----------------------|-----------|------------|
 |any|`NULL`|any|any|`EINVAL`|
 |any|any|<=0|any|`EINVAL`|
 |any|any|<= length of the result string required|any|`EINVAL`|
 |any|any|any|*radix* < 2 or *radix* > 36|`EINVAL`|
 
-**Security Issues**
+### Security issues
 
 These functions can generate an access violation if *buffer* does not point to valid memory and is not `NULL`, or if the length of the buffer is not long enough to hold the result string.
 
 ## Remarks
 
-Except for the parameters and return value, the `_itoa_s` functions have the same behavior as the corresponding less secure `_itoa` versions.
+Except for the parameters and return value, the `_itoa_s` and `_itow_s` function families have the same behavior as the corresponding less secure `_itoa` and `_itow` versions.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug library versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+
+The CRT includes convenient macros to define the size of the buffer required to convert the longest possible value of each integer type, including the null terminator and sign character, for several common bases. For information, see [Maximum conversion count macros](itoa-itow.md#maximum-conversion-count-macros).
 
 ### Generic-Text Routine Mappings
 
@@ -127,31 +126,38 @@ These functions are Microsoft-specific. For more compatibility information, see 
 
 ## Example
 
+This sample demonstrates the use of a few of the integer conversion functions. Note that the [_countof](countof-macro.md) macro only works to determine buffer size when the array declaration is visible to the compiler, and not for parameters that have decayed to pointers.
+
 ```C
 // crt_itoa_s.c
-#include <stdlib.h>
-#include <string.h>
+// Compile by using: cl /W4 crt_itoa_s.c
+#include <stdlib.h>     // for _itoa_s functions, _countof, count macro
+#include <stdio.h>      // for printf
+#include <string.h>     // for strnlen
 
 int main( void )
 {
-    char buffer[65];
+    char buffer[_MAX_U64TOSTR_BASE2_COUNT];
     int r;
-    for( r=10; r>=2; --r )
+    for ( r = 10; r >= 2; --r )
     {
-       _itoa_s( -1, buffer, 65, r );
-       printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
+        _itoa_s( -1, buffer, _countof(buffer), r );
+        printf( "base %d: %s (%d chars)\n",
+            r, buffer, strnlen(buffer, _countof(buffer)) );
     }
     printf( "\n" );
-    for( r=10; r>=2; --r )
+    for ( r = 10; r >= 2; --r )
     {
-       _i64toa_s( -1L, buffer, 65, r );
-       printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
+        _i64toa_s( -1LL, buffer, _countof(buffer), r );
+        printf( "base %d: %s (%d chars)\n",
+            r, buffer, strnlen(buffer, _countof(buffer)) );
     }
     printf( "\n" );
-    for( r=10; r>=2; --r )
+    for ( r = 10; r >= 2; --r )
     {
-       _ui64toa_s( 0xffffffffffffffffL, buffer, 65, r );
-       printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
+        _ui64toa_s( 0xffffffffffffffffULL, buffer, _countof(buffer), r );
+        printf( "base %d: %s (%d chars)\n",
+            r, buffer, strnlen(buffer, _countof(buffer)) );
     }
 }
 ```
@@ -191,4 +197,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa, _itow](../../c-runtime-library/reference/itoa-itow.md)<br/>
+[_itoa, _itow functions](../../c-runtime-library/reference/itoa-itow.md)<br/>

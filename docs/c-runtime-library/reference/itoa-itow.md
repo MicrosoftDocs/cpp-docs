@@ -1,13 +1,13 @@
 ---
 title: "_itoa, _itow functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/20/2018"
+ms.date: "03/21/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
-apiname: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow"]
+apiname: ["itoa", "_itoa", "ltoa", "_ltoa", "ultoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "ltoa", "ultoa", "i64toa", "ui64toa", "itow", "ltow", "ultow", "i64tow", "ui64tow", "itot", "_itot", "ltot", "_ltot", "ultot", "_ultot", "i64tot", "_i64tot", "ui64tot", "_ui64tot"]
+f1_keywords: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "itoa", "ltoa", "ultoa", "i64toa", "ui64toa", "itow", "ltow", "ultow", "i64tow", "ui64tow", "itot", "_itot", "ltot", "_ltot", "ultot", "_ultot", "i64tot", "_i64tot", "ui64tot", "_ui64tot", "_MAX_ITOSTR_BASE16_COUNT", "_MAX_ITOSTR_BASE10_COUNT", "_MAX_ITOSTR_BASE8_COUNT", "_MAX_ITOSTR_BASE2_COUNT", "_MAX_LTOSTR_BASE16_COUNT", "_MAX_LTOSTR_BASE10_COUNT", "_MAX_LTOSTR_BASE8_COUNT", "_MAX_LTOSTR_BASE2_COUNT", "_MAX_ULTOSTR_BASE16_COUNT", "_MAX_ULTOSTR_BASE10_COUNT", "_MAX_ULTOSTR_BASE8_COUNT", "_MAX_ULTOSTR_BASE2_COUNT", "_MAX_I64TOSTR_BASE16_COUNT", "_MAX_I64TOSTR_BASE10_COUNT", "_MAX_I64TOSTR_BASE8_COUNT", "_MAX_I64TOSTR_BASE2_COUNT", "_MAX_U64TOSTR_BASE16_COUNT", "_MAX_U64TOSTR_BASE10_COUNT", "_MAX_U64TOSTR_BASE8_COUNT", "_MAX_U64TOSTR_BASE2_COUNT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_itot function", "ui64toa function", "_ui64toa function", "converting integers", "itot function", "_i64tow function", "_i64toa function", "_itow function", "ui64tow function", "integers, converting", "itoa function", "_ui64tow function", "i64tow function", "itow function", "i64toa function", "converting numbers, to strings", "_itoa function"]
 author: "corob-msft"
@@ -15,9 +15,9 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# _itoa, _ltoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
+# itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).
+Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-itow-s.md).
 
 ## Syntax
 
@@ -33,6 +33,11 @@ wchar_t * _ltow( long value, wchar_t *buffer, int radix );
 wchar_t * _ultow( unsigned long value, wchar_t *buffer, int radix );
 wchar_t * _i64tow( long long value, wchar_t *buffer, int radix );
 wchar_t * _ui64tow( unsigned long long value, wchar_t *buffer, int radix );
+
+// These Posix versions of the functions have deprecated names:
+char * itoa( int value, char *buffer, int radix );
+char * ltoa( long value, char *buffer, int radix );
+char * ultoa( unsigned long value, char *buffer, int radix );
 
 // The following template functions are C++ only:
 template <size_t size>
@@ -92,9 +97,9 @@ The `_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, and `_ui64toa` functions convert the 
 > [!IMPORTANT]
 > These functions can write past the end of a buffer that is too small. To prevent buffer overruns, ensure that *buffer* is large enough to hold the converted digits plus the trailing null-character and a sign character. Misuse of these functions can cause serious security issues in your code.
 
-Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996): **This function or variable may be unsafe. Consider using** *safe_function* **instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS.** We recommend you change your source code to use the *safe_function* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).
+Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996): **This function or variable may be unsafe. Consider using** *safe_function* **instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS.** We recommend you change your source code to use the *safe_function* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-itow-s.md).
 
-To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source file. If you use precompiled headers, define the macro at the top of the precompiled header include file, typically stdafx.h. To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
+To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, typically stdafx.h. To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS 1
@@ -102,6 +107,16 @@ To use these functions without the deprecation warning, define the **_CRT_SECURE
 ```
 
 In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+
+The Posix names `itoa`, `ltoa`, and `ultoa` exist as aliases for the `_itoa`, `_ltoa`, and `_ultoa` functions. The Posix names are deprecated because they do not follow the implementation-specific function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *new_name*. We recommend you change your source code to use the safer versions of these functions, `_itoa_s`, `_ltoa_s`, or `_ultoa_s`. For more information, see [_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-itow-s.md).
+
+For source code portability, you may prefer to retain the Posix names in your code. To use these functions without the deprecation warning, define both the **_CRT_NONSTDC_NO_WARNINGS** and **_CRT_SECURE_NO_WARNINGS** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** and **/D_CRT_NONSTDC_NO_WARNINGS** compiler options to the **cl** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file, typically stdafx.h. To define the macros in your source code, use **#define** directives before you include any CRT header, as in this example:
+
+```C
+#define _CRT_NONSTDC_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdlib.h>
+```
 
 ### Maximum conversion count macros
 
@@ -144,6 +159,7 @@ int main()
 
 |Routine|Required header|
 |-------------|---------------------|
+|`itoa`, `ltoa`, `ultoa`|\<stdlib.h>|
 |`_itoa`, `_ltoa`, `_ultoa`, `_i64toa`, `_ui64toa`|\<stdlib.h>|
 |`_itow`, `_ltow`, `_ultow`, `_i64tow`, `_ui64tow`|\<stdlib.h> or \<wchar.h>|
 
@@ -223,4 +239,4 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa_s, _itow_s](../../c-runtime-library/reference/itoa-s-itow-s.md)<br/>
+[_itoa_s, _itow_s functions](../../c-runtime-library/reference/itoa-s-itow-s.md)<br/>
