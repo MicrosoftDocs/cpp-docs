@@ -23,7 +23,7 @@ You can use generic type parameters with delegates. For more information on dele
   
 ```  
 [attributes]   
-generic < [class | typename] type-parameter-identifiers >  
+generic < [class | typename] type-parameter-identifiers>  
 [type-parameter-constraints-clauses]  
 [accessibility-modifiers] delegate result-type identifier   
 ([formal-parameters]);  
@@ -57,7 +57,7 @@ generic < [class | typename] type-parameter-identifiers >
 ```  
 // generics_generic_delegate1.cpp  
 // compile with: /clr /c  
-generic < class ItemType>  
+generic <class ItemType>  
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);  
 ```  
   
@@ -73,10 +73,10 @@ delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```  
 // generics_generic_delegate2.cpp  
 // compile with: /clr  
-generic < class ItemType>  
+generic <class ItemType>  
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);  
   
-generic < class ItemType>  
+generic <class ItemType>  
 ref struct MyGenClass {  
    ItemType MyMethod(ItemType i, ItemType % j) {  
       return ItemType();  
@@ -84,7 +84,7 @@ ref struct MyGenClass {
 };  
   
 ref struct MyClass {  
-   generic < class ItemType>  
+   generic <class ItemType>  
    static ItemType MyStaticMethod(ItemType i, ItemType % j) {  
       return ItemType();  
    }  

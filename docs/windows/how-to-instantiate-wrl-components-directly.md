@@ -20,7 +20,7 @@ Learn how to use the Windows Runtime C++ Template Library (WRL)[Microsoft::WRL::
   
  By instantiating components directly, you can reduce overhead when you don't need class factories or other mechanisms. You can instantiate a component directly in both Universal Windows Platform apps and in desktop apps.  
   
- To learn how to use Windows Runtime C++ Template Library to create a basic Windows Runtime component and instantiate it from an external Universal Windows Platform app, see [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md). To learn how to use Windows Runtime C++ Template Library to create a classic COM component and instantiate it from an external desktop app, see [How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md).  
+To learn how to use Windows Runtime C++ Template Library to create a classic COM component and instantiate it from an external desktop app, see [How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md).  
   
  This document shows two examples. The first example uses the `Make` function to instantiate a component. The second example uses the `MakeAndInitialize` function to instantiate a component that can fail during construction. (Because COM typically uses `HRESULT` values, instead of exceptions, to indicate errors, a COM type typically does not throw from its constructor. `MakeAndInitialize` enables a component to validate its construction arguments through the `RuntimeClassInitialize` method.) Both examples define a basic logger interface and implement that interface by defining a class that writes messages to the console.  
   

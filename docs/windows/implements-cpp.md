@@ -475,7 +475,7 @@ public:
       if (pDispParams == 0) {  
          return DISP_E_BADVARTYPE;  
       }  
-      if (pDispParams->cArgs > 0) {  
+      if (pDispParams->cArgs> 0) {  
          return DISP_E_BADPARAMCOUNT;  
       }  
       if (pVarResult != 0) {  
@@ -546,4 +546,4 @@ public:
   
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

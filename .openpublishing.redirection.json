@@ -489,6 +489,16 @@
             "source_path": "docs/windows/index.md",
             "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/wrl-class-library-project-template.md",
+            "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md",
+            "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": false
         }
     ]
 }

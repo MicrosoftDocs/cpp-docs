@@ -24,15 +24,11 @@ Creates an instance of a module.
   
 ```  
 WRL_NOTHROW static Module& Create();  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    T callback  
 );  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    _In_ T* object,  
    _In_ void (T::* method)()  

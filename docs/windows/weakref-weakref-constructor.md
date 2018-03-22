@@ -50,7 +50,7 @@ WeakRef(
  A pointer, reference, or rvalue-reference to an existing object that initializes the current WeakRef object.  
   
 ## Remarks  
- The first constructor initializes an empty WeakRef object. The second constructor initializes a WeakRef object from a pointer to the IWeakReference interface. The third constructor initializes a WeakRef object from a reference to a ComPtr\< IWeakReference> object. The fourth and fifth constructors initializes a WeakRef object from another WeakRef object.  
+ The first constructor initializes an empty WeakRef object. The second constructor initializes a WeakRef object from a pointer to the IWeakReference interface. The third constructor initializes a WeakRef object from a reference to a ComPtr\<IWeakReference> object. The fourth and fifth constructors initializes a WeakRef object from another WeakRef object.  
   
 ## Requirements  
  **Header:** client.h  
