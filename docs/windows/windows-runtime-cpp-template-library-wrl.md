@@ -16,7 +16,12 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime C++ Template Library (WRL)
-The Windows Runtime C++ Template Library (WRL) is a template library that provides a low-level way to author and use Windows Runtime components.  
+The Windows Runtime C++ Template Library (WRL) is a template library that provides a low-level way to author and use Windows Runtime components.
+
+> [!NOTE]
+> WRL is now superceded by C++/WinRT, a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and designed to provide you with first-class access to the modern Windows API.
+
+> With C++/WinRT, you can both consume and author Windows Runtime APIs using any standards-compliant C++17 compiler. C++/WinRT typically performs better and produces smaller binaries than any other language option for the Windows Runtime. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).   
   
 ## Benefits  
  The Windows Runtime C++ Template Library enables you to more easily implement and consume Component Object Model (COM) components. It provides housekeeping techniques like reference-counting to manage the lifetime of objects and testing `HRESULT` values to determine whether an operation succeeded or failed. To successfully use the Windows Runtime C++ Template Library, you must carefully follow these rules and techniques.  
@@ -48,9 +53,6 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
   
  [How to: Handle Events](../windows/how-to-handle-events-using-wrl.md)  
  Shows how to use the Windows Runtime C++ Template Library to subscribe to and handle the events of a Windows Runtime object.  
-  
- [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)  
- Shows how to use the Windows Runtime C++ Template Library to create a basic Windows Runtime component that adds two numbers. Also demonstrates how to raise events and use the component from a UWP app that uses JavaScript.  
   
  [Walkthrough: Creating a UWP app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
  Learn how to create a UWP app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
@@ -135,7 +137,6 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
   
 |||  
 |-|-|  
-|[Class Library Project Template](../windows/wrl-class-library-project-template.md)|Describes how to access the WRL Class Library project template. This template helps simplify the task of using Visual Studio to create Windows Runtime components.|  
 |[Key APIs by Category](../windows/key-wrl-apis-by-category.md)|Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.|  
 |[Reference](../windows/wrl-reference.md)|Contains reference information for the Windows Runtime C++ Template Library.|  
 |[Quick Reference (Windows Runtime and Visual C++)](http://go.microsoft.com/fwlink/p/?linkid=229180)|Briefly describes the C++/CX features that support the Windows Runtime.|  

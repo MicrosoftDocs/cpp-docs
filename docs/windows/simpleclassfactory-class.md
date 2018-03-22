@@ -23,9 +23,7 @@ Provides a fundamental mechanism to create a base class.
 ## Syntax  
   
 ```  
-template<  
-   typename Base  
->  
+template<typename Base>  
 class SimpleClassFactory : public ClassFactory<>;  
 ```  
   
