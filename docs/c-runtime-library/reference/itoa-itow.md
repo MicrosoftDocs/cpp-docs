@@ -168,40 +168,46 @@ These functions and macros are Microsoft-specific. For more compatibility inform
 
 ## Example
 
+This sample demonstrates the use of some of the integer conversion functions. Note the use of the **_CRT_SECURE_NO_WARNINGS** macro to silence warning C4996.
+
 ```C
 // crt_itoa.c
-// compile with: /W3
+// Compile by using: cl /W4 crt_itoa.c
 // This program makes use of the _itoa functions
 // in various examples.
 
 #define _CRT_SECURE_NO_WARNINGS 1
-#include <string.h>
-#include <stdlib.h>
+#include <stdio.h>      // for printf
+#include <string.h>     // for strnlen
+#include <stdlib.h>     // for _countof, _itoa fns, _MAX_COUNT macros
 
-int main( void )
+int main(void)
 {
-   char buffer[_MAX_U64TOSTR_BASE2_COUNT];
-   int r;
+    char buffer[_MAX_U64TOSTR_BASE2_COUNT];
+    int r;
 
-   for ( r = 10; r >= 2; --r )
-   {
-     _itoa( -1, buffer, r );
-     printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
-   }
-   printf( "\n" );
+    for (r = 10; r >= 2; --r)
+    {
+        _itoa(-1, buffer, r);
+        printf("base %d: %s (%d chars)\n", r, buffer,
+            strnlen(buffer, _countof(buffer)));
+    }
+    printf("\n");
 
-   for ( r = 10; r >= 2; --r )
-   {
-     _i64toa( -1L, buffer, r );
-     printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
-   }
-   printf( "\n" );
+    for (r = 10; r >= 2; --r)
+    {
+        _i64toa(-1LL, buffer, r);
+        printf("base %d: %s (%d chars)\n", r, buffer,
+            strnlen(buffer, _countof(buffer)));
+    }
+    printf("\n");
 
-   for( r = 10; r >= 2; --r )
-   {
-     _ui64toa( 0xffffffffffffffffL, buffer, r );
-     printf( "base %d: %s (%d chars)\n", r, buffer, strnlen(buffer, _countof(buffer)) );
-   }
+    for (r = 10; r >= 2; --r)
+    {
+        _ui64toa(0xffffffffffffffffULL, buffer, r);
+        printf("base %d: %s (%d chars)\n", r, buffer,
+            strnlen(buffer, _countof(buffer)));
+    }
 }
 ```
 
