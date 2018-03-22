@@ -11,7 +11,6 @@ f1_keywords: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_ito
 dev_langs: ["C++"]
 helpviewer_keywords: ["_ui64toa_s function", "_itow_s function", "_i64tow_s function", "_itot_s function", "converting integers", "itow_s function", "i64toa_s function", "_ui64tow_s function", "integers, converting", "_i64tot_s function", "itoa_s function", "_itoa_s function", "ui64toa_s function", "i64tow_s function", "converting numbers, to strings", "_ui64tot_s function", "_i64toa_s function"]
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"

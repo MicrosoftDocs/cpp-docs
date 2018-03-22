@@ -10,6 +10,7 @@ apitype: "DLLExport"
 f1_keywords: ["_itoa", "_ltoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "itoa", "ltoa", "ultoa", "i64toa", "ui64toa", "itow", "ltow", "ultow", "i64tow", "ui64tow", "itot", "_itot", "ltot", "_ltot", "ultot", "_ultot", "i64tot", "_i64tot", "ui64tot", "_ui64tot", "_MAX_ITOSTR_BASE16_COUNT", "_MAX_ITOSTR_BASE10_COUNT", "_MAX_ITOSTR_BASE8_COUNT", "_MAX_ITOSTR_BASE2_COUNT", "_MAX_LTOSTR_BASE16_COUNT", "_MAX_LTOSTR_BASE10_COUNT", "_MAX_LTOSTR_BASE8_COUNT", "_MAX_LTOSTR_BASE2_COUNT", "_MAX_ULTOSTR_BASE16_COUNT", "_MAX_ULTOSTR_BASE10_COUNT", "_MAX_ULTOSTR_BASE8_COUNT", "_MAX_ULTOSTR_BASE2_COUNT", "_MAX_I64TOSTR_BASE16_COUNT", "_MAX_I64TOSTR_BASE10_COUNT", "_MAX_I64TOSTR_BASE8_COUNT", "_MAX_I64TOSTR_BASE2_COUNT", "_MAX_U64TOSTR_BASE16_COUNT", "_MAX_U64TOSTR_BASE10_COUNT", "_MAX_U64TOSTR_BASE8_COUNT", "_MAX_U64TOSTR_BASE2_COUNT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_itot function", "ui64toa function", "_ui64toa function", "converting integers", "itot function", "_i64tow function", "_i64toa function", "_itow function", "ui64tow function", "integers, converting", "itoa function", "_ui64tow function", "i64tow function", "itow function", "i64toa function", "converting numbers, to strings", "_itoa function"]
+ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
