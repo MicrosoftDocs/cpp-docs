@@ -8,7 +8,7 @@ ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 apiname: ["_snwprintf", "_snprintf", "_snprintf_l", "_snwprintf_l", "snprintf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_snprintf", "snprintf_l", "snwprintf_l", "sntprintf", "snprintf", "_sntprintf", "_sntprintf_l", "sntprintf_l", "snwprintf", "_snprintf_l", "_snwprintf", "_snwprintf_l"]
 dev_langs: ["C++"]
