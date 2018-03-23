@@ -226,6 +226,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/c-runtime-library/reference/itoa.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/itoa-i64toa-ui64toa-itow-i64tow-ui64tow.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-s-itow-s",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ltoa.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ltoa-ltow.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ltoa-s-ltow-s.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-s-itow-s",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ultoa.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ultoa-s-ultow-s.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-s-itow-s",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/ultoa-ultow.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/c-runtime-library/size-specification.md",
             "redirect_url": "/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions#size",
             "redirect_document_id": false
