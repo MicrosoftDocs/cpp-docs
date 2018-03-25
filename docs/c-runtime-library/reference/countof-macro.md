@@ -73,6 +73,6 @@ sizeof(arr) = 40 bytes
 _countof(arr) = 20 elements
 ```
 
-## See Also
+## See also
 
 [sizeof Operator](../../cpp/sizeof-operator.md)<br/>
