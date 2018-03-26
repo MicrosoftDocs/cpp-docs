@@ -24,9 +24,9 @@ In this step, you will add a control to your project, build it, and test it on a
   
 1.  In Class View, right-click the Polygon project.  
   
-2.  Point to **Add** on the shortcut menu, and click **Class** in the submenu.  
+2.  Point to **Add** on the shortcut menu, and click **New Item** in the submenu.  
   
-     The **Add Class** dialog box appears. The different object categories are listed in the tree structure on the left.  
+     The **Add New Item** dialog box appears. The different object categories are listed in the tree structure on the left.  
   
 3.  Click the **ATL** folder.  
   
