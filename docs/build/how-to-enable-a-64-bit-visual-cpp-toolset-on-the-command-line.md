@@ -29,7 +29,7 @@ When Visual Studio is installed on a 64-bit Windows operating system, additional
 
 ## Use Vcvarsall.bat to set a 64-bit hosted build architecture
 
-Any of the native or cross compiler tools build configurations can be used on the command line by running the vcvarsall.bat command file. This command file configures the path and environment variables that enable a particular build architecture in an existing command prompt window. For specific instructions, see [Developer command files and locations](../build/building-on-the-command-line.md#developer_command_files) .
+Any of the native or cross compiler tools build configurations can be used on the command line by running the vcvarsall.bat command file. This command file configures the path and environment variables that enable a particular build architecture in an existing command prompt window. For specific instructions, see [Developer command files and locations](../build/building-on-the-command-line.md#developer-command-files-and-locations) .
 
 ## See also
 
