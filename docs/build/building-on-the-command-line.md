@@ -128,19 +128,19 @@ You must adjust the path to reflect your Visual Studio installation directory.
 
 To build a C/C++ project on the command line, Visual Studio provides these command-line tools:
 
-[CL](../build/reference/compiling-a-c-cpp-program.md)
+[CL](../build/reference/compiling-a-c-cpp-program.md)<br/>
 Use the compiler (cl.exe) to compile and link source code files into apps, libraries, and DLLs.
 
-[Link](../build/reference/linking.md)
+[Link](../build/reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
 Use MSBuild (msbuild.exe) to build Visual C++ projects and Visual Studio solutions. This is equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE.
 
-[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)
+[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
 Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the Visual Studio IDE.
 
-[NMAKE](../build/nmake-reference.md)
+[NMAKE](../build/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) to automate tasks that build Visual C++ projects by using a traditional makefile.
 
 When you build on the command line, the F1 command is not available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages, or you can use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your search string in the search box at the top of the page.
