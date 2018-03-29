@@ -1,7 +1,7 @@
 ---
 title: "Build C/C++ Code on the Command Line | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/26/2018"
+ms.date: "03/29/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "get-started-article"
 dev_langs: ["C++"]
@@ -57,7 +57,6 @@ The primary developer command prompt command file, VsDevCmd.bat, is located in t
 
 Additional command files are available to set up specific build architectures, depending on your processor architecture and the Visual Studio workloads and options you have installed. In Visual Studio 2017, these are located in the VC\Auxiliary\Build subdirectory of the Visual Studio installation directory. In Visual Studio 2015, these are located in the VC, VC\bin, or VC\bin\\*architectures* subdirectories of the installation directory, where *architectures* is one of the native or cross-compiler options. These command files set default parameters and call VsDevCmd.bat to set up the specified build architecture environment. A typical installation may include these command files:
 
-|||
 |Command File|Host and Target architectures|
 |---|---|
 |**vcvars32.bat**| Use the 32-bit x86-native tools to build 32-bit x86 code.|
