@@ -41,7 +41,7 @@ ms.workload: ["cplusplus"]
  Integral promotion is performed on integral operands, and the resultant type is the type to which the operand is promoted. See [Standard Conversions](standard-conversions.md) for more information about how the promotion is performed.  
   
 ## Microsoft specific  
- Unary negation of unsigned quantities is performed by subtracting the value of the operand from 2^n, where n is the number of bits in an object of the given unsigned type. (Microsoft C++ runs on processors that utilize two's-complement arithmetic. On other processors, the algorithm for negation can differ.)  
+ Unary negation of unsigned quantities is performed by subtracting the value of the operand from 2^n, where n is the number of bits in an object of the given unsigned type.
   
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
