@@ -28,7 +28,7 @@ Universal Windows Platform (UWP) apps embody a set of design principles that emp
 |-|-|  
 |[Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)|Describes the set of extensions that simplify C++ consumption of Windows Runtime APIs and enable error handling that's based on exceptions.|  
 |[Building apps and libraries (C++/CX)](../cppcx/building-apps-and-libraries-c-cx.md)|Describes how to create DLLs and static libraries that can be accessed from a C++/CX app or component.|  
-|[Tutorial: Create your first UWP app using C++](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|A walkthrough that introduces the basic concepts of UWP app development in C++. (Not yet updated for UWP development on Windows 10.)|  
+|[Tutorial: Create your first UWP app using C++](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|A walkthrough that introduces the basic concepts of UWP app development in C++. |  
 |[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Describes how to create DLLs that other UWP apps and components can consume.|  
 |[Developing games](https://docs.microsoft.com/en-us/windows/uwp/gaming/)|Describes how to use DirectX and C++ to create games.|  
   
