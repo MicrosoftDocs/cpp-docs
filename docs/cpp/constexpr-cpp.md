@@ -21,7 +21,7 @@ The keyword `constexpr` was introduced in C++11 and improved in C++14. It means 
   
 ## Syntax  
   
-```cpp  
+```  
 constexpr  literal-type  identifier = constant-expression;
 constexpr  literal-type  identifier { constant-expression };
 constexpr literal-type identifier(params );
