@@ -79,9 +79,9 @@ The following rules apply to constexpr functions:
 
 - The body can contain no **goto** statements or try blocks.
 
-- An explicit specialization of a non-constexpr template can be declared as **constexpr`:
+- An explicit specialization of a non-constexpr template can be declared as **constexpr**:
 
-- An explicit specialization of a **constexpr** template does not have to also be **constexpr`:
+- An explicit specialization of a **constexpr** template does not have to also be **constexpr**:
 
 The following rules apply to **constexpr** functions in Visual Studio 2017 and later:
 
