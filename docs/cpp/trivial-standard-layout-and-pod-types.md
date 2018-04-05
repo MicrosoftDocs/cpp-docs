@@ -28,7 +28,7 @@ The term *layout* refers to how the members of an object of class, struct or uni
 
 - no data members of class type with a corresponding non-trivial constructor/operator/destructor
 
- The following examples show trivial types. In Trivial2, the presence of the `Trivial2(int a, int b)` constructor requires that you provide a default constructor. For the type to qualify as trivial, you must explicitly default that constructor.
+The following examples show trivial types. In Trivial2, the presence of the `Trivial2(int a, int b)` constructor requires that you provide a default constructor. For the type to qualify as trivial, you must explicitly default that constructor.
 
 ```cpp
 struct Trivial
@@ -69,7 +69,7 @@ struct Trivial2
 
   - has no base classes with non-static data members
 
- The following code shows one example of a standard-layout type:
+The following code shows one example of a standard-layout type:
 
 ```cpp
 struct SL
@@ -192,15 +192,11 @@ int main()
 
 A literal type is one whose layout can be determined at compile time. The following are the literal types:
 
-1. void
-
-2. scalar types
-
-3. references
-
-4. Arrays of void, scalar types or references
-
-5. A class that has a trivial destructor, and one or more constexpr constructors that are not move or copy constructors. Additionally, all its non-static data members and base classes must be literal types and not volatile.
+- void
+- scalar types
+- references
+- Arrays of void, scalar types or references
+- A class that has a trivial destructor, and one or more constexpr constructors that are not move or copy constructors. Additionally, all its non-static data members and base classes must be literal types and not volatile.
 
 ## See Also
 

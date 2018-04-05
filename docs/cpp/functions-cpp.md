@@ -118,11 +118,11 @@ Optional parts of a function declaration are:
 
 1. (Member functions only) The cv-qualifiers, which specify whether the function is **const** or **volatile**.
 
-1. (Member functions only) **virtual**, **override`, or **final`. **virtual** specifies that a function can be overridden in a derived class. **override** means that a function in a derived class is overriding a virtual function. **final** means a function cannot be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
+1. (Member functions only) **virtual**, **override**, or **final**. **virtual** specifies that a function can be overridden in a derived class. **override** means that a function in a derived class is overriding a virtual function. **final** means a function cannot be overridden in any further derived class. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
 
 1. (member functions only) **static** applied to a member function means that the function is not associated with any object instances of the class.
 
-1. (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (*this) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers).
+1. (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (\*this) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers).
 
 The following figure shows the parts of a function definition. The shaded area is the function body.
 
@@ -261,7 +261,7 @@ When **auto** is used in conjunction with a trailing return type, it just serves
 
 A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
 
-In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit`. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
+In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit**. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
 ##  <a name="type_deduction"></a> Type deduction in return types (C++14)
 
@@ -304,108 +304,108 @@ There are various ways to return more than one value from a function:
 
 1. Encapsulate the values in a named class or struct object. Requires the class or struct definition to be visible to the caller:
 
-```cpp
-#include <string>
-#include <iostream>
-
-using namespace std;
-
-struct S
-{
-    string name;
-    int num;
-};
-
-S g()
-{
-    string t{ "hello" };
-    int u{ 42 };
-    return { t, u };
-}
-
-int main()
-{
-    S s = g();
-    cout << s.name << " " << s.num << endl;
-    return 0;
-}
-```
-
+    ```cpp
+    #include <string>
+    #include <iostream>
+    
+    using namespace std;
+    
+    struct S
+    {
+        string name;
+        int num;
+    };
+    
+    S g()
+    {
+        string t{ "hello" };
+        int u{ 42 };
+        return { t, u };
+    }
+    
+    int main()
+    {
+        S s = g();
+        cout << s.name << " " << s.num << endl;
+        return 0;
+    }
+    ```
+    
 1. Return a std::tuple or std::pair object:
 
-```cpp
-#include <tuple>
-#include <string>
-#include <iostream>
-
-using namespace std;
-
-
-tuple<int, string, double> f()
-{
-    int i{ 108 };
-    string s{ "Some text" };
-    double d{ .01 };
-    return { i,s,d };
-}
-
-int main()
-{
-    auto t = f();
-    cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
- 
-    // --or--
-
-    int myval;
-    string myname;
-    double mydecimal;
-    tie(myval, myname, mydecimal) = f();
-    cout << myval << " " << myname << " " << mydecimal << endl;
-
-    return 0;
-}
-```
+    ```cpp
+    #include <tuple>
+    #include <string>
+    #include <iostream>
+    
+    using namespace std;
+    
+    
+    tuple<int, string, double> f()
+    {
+        int i{ 108 };
+        string s{ "Some text" };
+        double d{ .01 };
+        return { i,s,d };
+    }
+    
+    int main()
+    {
+        auto t = f();
+        cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
+     
+        // --or--
+    
+        int myval;
+        string myname;
+        double mydecimal;
+        tie(myval, myname, mydecimal) = f();
+        cout << myval << " " << myname << " " << mydecimal << endl;
+    
+        return 0;
+    }
+    ```
 
 1. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.
 
-```cpp
-#include <tuple>
-#include <string>
-#include <iostream>
-
-using namespace std;
-
-tuple<int, string, double> f()
-{
-    int i{ 108 };
-    string s{ "Some text" };
-    double d{ .01 };
-    return { i,s,d };
-}
-struct S
-{
-    string name;
-    int num;
-};
-
-S g()
-{
-    string t{ "hello" };
-    int u{ 42 };
-    return { t, u };
-}
-
-int main()
-{
-    auto[x, y, z] = f(); // init from tuple
-    cout << x << " " << y << " " << z << endl;
-
-    auto[a, b] = g(); // init from POD struct
-    cout << a << " " << b << endl;
-    return 0;
-}
-```
-
+    ```cpp
+    #include <tuple>
+    #include <string>
+    #include <iostream>
+    
+    using namespace std;
+    
+    tuple<int, string, double> f()
+    {
+        int i{ 108 };
+        string s{ "Some text" };
+        double d{ .01 };
+        return { i,s,d };
+    }
+    struct S
+    {
+        string name;
+        int num;
+    };
+    
+    S g()
+    {
+        string t{ "hello" };
+        int u{ 42 };
+        return { t, u };
+    }
+    
+    int main()
+    {
+        auto[x, y, z] = f(); // init from tuple
+        cout << x << " " << y << " " << z << endl;
+    
+        auto[a, b] = g(); // init from POD struct
+        cout << a << " " << b << endl;
+        return 0;
+    }
+    ```
+    
 1. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
 
 ## Function pointers
@@ -429,9 +429,9 @@ The preceding declaration is equivalent to the declaration using typedef above.
 
 ## See Also
 
- [Function Overloading](../cpp/function-overloading.md)
- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)
- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)
- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
- [Default Arguments](../cpp/default-arguments.md)
- [Inline Functions](../cpp/inline-functions-cpp.md)
+- [Function Overloading](../cpp/function-overloading.md)
+- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)
+- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)
+- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
+- [Default Arguments](../cpp/default-arguments.md)
+- [Inline Functions](../cpp/inline-functions-cpp.md)
