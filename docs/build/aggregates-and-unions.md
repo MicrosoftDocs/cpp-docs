@@ -17,7 +17,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Aggregates and Unions
-Other types such as arrays, structs, and unions have stricter alignment requirements that ensure consistent aggregate and union storage and data retrieval. Here are the definitions for array, structure, and union:  
+Other types, such as arrays, structs, and unions, have stricter alignment requirements that ensure consistent aggregate and union storage and data retrieval. Here are the definitions for array, structure, and union:  
   
  Array  
  Contains an ordered group of adjacent data objects. Each object is called an element. All elements within an array have the same size and data type.  

@@ -29,13 +29,13 @@ template <
    typename TProgress = Details::Nil,  
    AsyncResultType resultType = SingleResult  
 >  
-class AsyncBase : public AsyncBase< TComplete, Details::Nil, resultType >;  
+class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;  
   
 template <  
    typename TComplete,  
    AsyncResultType resultType  
 >  
-class AsyncBase< TComplete, Details::Nil, resultType > : public Microsoft::WRL::Implements< IAsyncInfo >;  
+class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;  
 ```  
   
 #### Parameters  
