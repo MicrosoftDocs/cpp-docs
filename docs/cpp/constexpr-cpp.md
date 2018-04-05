@@ -1,7 +1,7 @@
 ---
 title: "constexpr (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/06/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -103,6 +103,10 @@ constexpr float exp(float x, int n)
 
 > [!TIP]
 > Note: In the Visual Studio debugger, when debugging a non-optimised Debug build, you can tell whether a **constexpr** function is being evaluated at compile time by putting a breakpoint inside it. If the breakpoint is hit, the function was called at run-time.  If not, then the function was called at compile time.
+
+## extern constexpr
+
+The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage]() to variables declared by using **extern constexpr**. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
 
 ## Example
 
