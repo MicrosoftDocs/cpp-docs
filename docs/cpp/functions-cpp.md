@@ -261,7 +261,7 @@ When **auto** is used in conjunction with a trailing return type, it just serves
 
 A variable that is declared inside a function body is called a *local variable* or simply a *local*. Non-static locals are only visible inside the function body and, if they are declared on the stack go out of scope when the function exits. When you construct a local variable and return it by value, the compiler can usually perform the return value optimization to avoid unnecessary copy operations. If you return a local variable by reference, the compiler will issue a warning because any attempt by the caller to use that reference will occur after the local has been destroyed.
 
-In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by `atexit**. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
+In C++ a local variable may be declared as static. The variable is only visible inside the function body, but a single copy of the variable exists for all instances of the function. Local static objects are destroyed during termination specified by **atexit**. If a static object was not constructed because the program's flow of control bypassed its declaration, no attempt is made to destroy that object.
 
 ##  <a name="type_deduction"></a> Type deduction in return types (C++14)
 
@@ -339,8 +339,7 @@ There are various ways to return more than one value from a function:
     #include <iostream>
     
     using namespace std;
-    
-    
+        
     tuple<int, string, double> f()
     {
         int i{ 108 };
