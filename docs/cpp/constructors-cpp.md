@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 ---
 # Constructors (C++)
 
-To customize how class members are initialized, or to invoke functions when an object of your class is created, define a *constructor*. A constructor has the same name as the class and no return value. You can define as many overloaded constructors as needed to customize initialization in various ways. Typically, constructors have public accessibility so that code outside the class definition or inheritance hierarchy can create objects of the class. But you can also declare a constructor as `protected` or `private`.
+To customize how class members are initialized, or to invoke functions when an object of your class is created, define a *constructor*. A constructor has the same name as the class and no return value. You can define as many overloaded constructors as needed to customize initialization in various ways. Typically, constructors have public accessibility so that code outside the class definition or inheritance hierarchy can create objects of the class. But you can also declare a constructor as **protected** or **private**.
 
 Constructors can optionally take a member init list. This is a more efficient way to initialize class members than assigning values in the constructor body. The following example shows a class `Box` with three overloaded constructors. The last two use member init lists:
 
@@ -324,13 +324,14 @@ For more information, see [Explicitly Defaulted and Deleted Functions](../cpp/ex
 
 A constructor may be declared as [constexpr](constexpr-cpp.md) if
 
-- it is either declared as defaulted or else it satisfies all the conditions for constexpr functions in general;
+- it is either declared as defaulted or else it satisfies all the conditions for [constexpr functions](constexpr-cpp.md#constexpr_functions) in general;
 - the class has no virtual base classes;
-- each of the parameters is a literal type;
-- the body is not a try-block;
+- each of the parameters is a [literal type](trivial-standard-layout-and-pod-types.md#literal_types);
+- the body is not a function try-block;
 - all non-static data members and base class sub-objects are initialized;
 - if the class is (a) a union having variant members, or (b) has anonymous unions, only one of the union members is initialized;
-- every data member of class type has a constexpr constructor
+- every non-static data member of class type, and all base-class sub-objects have a constexpr constructor
+
 
 ## <a name="init_list_constructors"></a> Initializer list constructors
 
@@ -380,7 +381,7 @@ private:
 
 ```
 
-Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the `explicit` keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
+Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the **explicit** keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
 
 ```cpp
 
