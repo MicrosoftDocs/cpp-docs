@@ -4,11 +4,7 @@ description: vcpkg is a command line package manager that greatly simplifies the
 keywords: vcpkg
 author: mikeblome
 ms.author: mblome
-<<<<<<< HEAD
-ms.date: 01/21/2018
-=======
-ms.date: 02/01/2018
->>>>>>> master
+ms.date: 04/06/2018
 ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: "windows"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
