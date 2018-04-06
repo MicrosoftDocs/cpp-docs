@@ -62,7 +62,7 @@ int j = 0;
 constexpr int k = j + 1; //Error! j not a constant expression
 ```
 
-## <a name="constexpr_functions></a> constexpr functions
+## <a name="constexpr_functions"></a> constexpr functions
 
 A **constexpr** function is one whose return value can be computed at compile when consuming code requires it.  When its arguments are **constexpr** values, and consuming code requires the return value at compile time, for example to initialize a **constexpr** variable or provide a non-type template argument, it produces a compile-time constant. When called with non-**constexpr** arguments, or when its value is not required at compile-time, it produces a value at run time like a regular function.  (This dual behavior saves you from having to write **constexpr** and non-**constexpr** versions of the same function.)
 
