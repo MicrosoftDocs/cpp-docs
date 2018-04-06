@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["Platform::WeakReference"]
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
 caps.latest.revision: 4

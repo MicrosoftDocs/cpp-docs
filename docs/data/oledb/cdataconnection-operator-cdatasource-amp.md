@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource& operator", "operator & (CDataSource)"]
@@ -22,9 +22,8 @@ Returns a reference to the contained `CDataSource` object.
   
 ## Syntax  
   
-```  
-  
-operator const CDataSource&() throw( );  
+```cpp
+operator const CDataSource&() throw();  
   
 ```  
   

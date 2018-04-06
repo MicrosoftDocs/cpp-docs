@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_rgRowData"]
@@ -22,8 +22,7 @@ By default, a `CAtlArray` that templatizes on the user record template argument 
   
 ## Syntax  
   
-```  
-  
+```cpp
 ArrayType CRowsetBaseImpl::m_rgRowData;  
   
 ```  

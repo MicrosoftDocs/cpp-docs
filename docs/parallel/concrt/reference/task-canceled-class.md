@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["task_canceled", "CONCRT/concurrency::task_canceled", "CONCRT/concurrency::task_canceled::task_canceled"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_canceled class"]

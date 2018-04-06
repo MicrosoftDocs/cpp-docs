@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBCreateCommandImpl", "IDBCreateCommandImpl", "ATL.IDBCreateCommandImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateCommandImpl class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBCreateCommandImpl Class
 Provides an implementation of the [IDBCreateCommand](https://msdn.microsoft.com/en-us/library/ms711625.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class CommandClass >  
 class ATL_NO_VTABLE IDBCreateCommandImpl   
    : public IDBCreateCommand  

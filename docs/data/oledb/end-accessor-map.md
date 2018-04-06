@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["END_ACCESSOR_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_ACCESSOR_MAP macro"]
@@ -22,9 +22,8 @@ Marks the end of the accessor map entries.
   
 ## Syntax  
   
-```  
-  
-END_ACCESSOR_MAP( )  
+```cpp
+END_ACCESSOR_MAP()  
   
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IsAutoAccessor", "CAccessorBase.IsAutoAccessor", "CAccessorBase::IsAutoAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsAutoAccessor method"]
@@ -22,11 +22,8 @@ Returns true if data is automatically retrieved for the accessor during a Move o
   
 ## Syntax  
   
-```  
-  
-      bool IsAutoAccessor(  
-   ULONG nAccessor   
-) const;  
+```cpp
+      bool IsAutoAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  

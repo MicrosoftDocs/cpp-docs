@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["invalid_operation", "CONCRT/concurrency::invalid_operation", "CONCRT/concurrency::invalid_operation::invalid_operation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_operation class"]

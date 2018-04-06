@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
@@ -258,7 +258,7 @@ A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/
 
 ## .NET Framework Equivalent
 
-Windows Store apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
+Windows Runtime apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
 
 ## <a name="remove"></a>  Map::Remove Method
 

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["NameFromDBID method"]
@@ -22,13 +22,10 @@ Extracts a string from a **DBID** and copies it to the `bstr` passed in.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::NameFromDBID(  
-   DBID* pDBID,  
+```cpp
+HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,  
    CComBSTR& bstr,  
-   bool bIndex   
-);  
+   bool bIndex);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset::Close", "ATL.CRowset.Close", "CRowset<TAccessor>::Close", "CRowset<TAccessor>.Close", "ATL.CRowset<TAccessor>.Close", "ATL::CRowset::Close", "ATL::CRowset<TAccessor>::Close", "CRowset.Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -22,9 +22,8 @@ Releases rows and the current [IRowset](https://msdn.microsoft.com/en-us/library
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

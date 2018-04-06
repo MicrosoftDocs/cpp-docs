@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.comment", "comment_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["annotations [C++]", "comments [C++], compiled files", "pragmas, comment", "comment pragma"]

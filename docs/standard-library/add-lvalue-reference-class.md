@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::add_lvalue_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_lvalue_reference"]

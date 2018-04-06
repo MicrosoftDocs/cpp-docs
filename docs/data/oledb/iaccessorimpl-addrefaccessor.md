@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddRefAccessor method"]
@@ -22,12 +22,9 @@ Adds a reference count to an existing accessor.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(AddRefAccessor)(  
-   HACCESSOR hAccessor,  
-   DBREFCOUNT* pcRefCount   
-);  
+```cpp
+      STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,  
+   DBREFCOUNT* pcRefCount);  
 ```  
   
 #### Parameters  

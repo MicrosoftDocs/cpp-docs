@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetTransactionInfo", "CSession.GetTransactionInfo", "ATL.CSession.GetTransactionInfo", "CSession::GetTransactionInfo", "ATL::CSession::GetTransactionInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetTransactionInfo method"]
@@ -22,11 +22,8 @@ Returns information regarding a transaction.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetTransactionInfo(   
-   XACTTRANSINFO* pInfo    
-) const throw( );  
+```cpp
+HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();  
 ```  
   
 #### Parameters  

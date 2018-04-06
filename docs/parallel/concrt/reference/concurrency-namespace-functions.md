@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing", "concrt/concurrency::EnableTracing", "concrtrm/concurrency::GetExecutionContextId", "concrtrm/concurrency::GetOSVersion", "concrtrm/concurrency::GetProcessorNodeCount", "concrtrm/concurrency::GetSchedulerId", "agents/concurrency::asend", "ppltasks/concurrency::cancel_current_task", "ppltasks/concurrency::create_async", "ppltasks/concurrency::create_task", "concurrent_vector/concurrency::internal_assign_iterators", "ppl/concurrency::interruption_point", "agents/concurrency::make_choice", "agents/concurrency::make_greedy_join", "ppl/concurrency::make_task", "ppl/concurrency::parallel_buffered_sort", "ppl/concurrency::parallel_for_each", "ppl/concurrency::parallel_invoke", "ppl/concurrency::parallel_reduce", "ppl/concurrency::parallel_sort", "agents/concurrency::receive", "ppl/concurrency::run_with_cancellation_token", "pplconcrt/concurrency::set_ambient_scheduler", "concrt/concurrency::set_task_execution_resources", "ppltasks/concurrency::task_from_exception", "ppltasks/concurrency::task_from_result", "concrt/concurrency::wait", "ppltasks/concurrency::when_all", "ppltasks/concurrency::when_any"]
 dev_langs: ["C++"]
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
@@ -133,7 +133,7 @@ __declspec(noinline) auto create_async(const _Function& _Func)
   
  If the body of the lambda returns a task, the lamba executes inline, and by declaring the lambda to take an argument of type `cancellation_token` you can trigger cancellation of any tasks you create within the lambda by passing that token in when you create them. You may also use the `register_callback` method on the token to cause the Runtime to invoke a callback when you call `IAsyncInfo::Cancel` on the async operation or action produced..  
   
- This function is only available to Windows Store apps.  
+ This function is only available to Windows Runtime apps.  
   
 ##  <a name="createresourcemanager"></a>  CreateResourceManager  
  Returns an interface that represents the singleton instance of the Concurrency Runtime's Resource Manager. The Resource Manager is responsible for assigning resources to schedulers that want to cooperate with each other.  
@@ -168,7 +168,7 @@ __declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Ta
   
  `_ReturnType`  
  `_Param`  
- The parameter from which the task is to be constructed. This could be a lambda or function object, a `task_completion_event` object, a different `task` object, or a Windows::Foundation::IAsyncInfo interface if you are using tasks in your Windows Store app.  
+ The parameter from which the task is to be constructed. This could be a lambda or function object, a `task_completion_event` object, a different `task` object, or a Windows::Foundation::IAsyncInfo interface if you are using tasks in your UWP app.  
   
  `_TaskOptions`  
  `_Task`  
@@ -183,7 +183,7 @@ __declspec( noinline) task<_ReturnType> create_task(const task<_ReturnType>& _Ta
   
  The type of the returned task is inferred from the first parameter to the function. If `_Param` is a `task_completion_event<T>`, a `task<T>`, or a functor that returns either type `T` or `task<T>`, the type of the created task is `task<T>`.  
   
- In a Windows Store app, if `_Param` is of type Windows::Foundation::IAsyncOperation\<T>^ or Windows::Foundation::IAsyncOperationWithProgress\<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress\<P>^, or a functor that returns either of those types, the created task will have type `task<void>`.  
+ In a UWP app, if `_Param` is of type Windows::Foundation::IAsyncOperation\<T>^ or Windows::Foundation::IAsyncOperationWithProgress\<T,P>^, or a functor that returns either of those types, the created task will be of type `task<T>`. If `_Param` is of type Windows::Foundation::IAsyncAction^ or Windows::Foundation::IAsyncActionWithProgress\<P>^, or a functor that returns either of those types, the created task will have type `task<void>`.  
   
 ##  <a name="disabletracing"></a>  DisableTracing  
  Disables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is unregistered by default.  
@@ -1533,7 +1533,7 @@ auto when_all(
  A task that completes sucessfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.  
   
 ### Remarks  
- `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.  
   
  If one of the tasks is canceled or throws an exception, the returned task will complete early, in the canceled state, and the exception, if one is encoutered, will be thrown if you call [task::get](task-class.md#get) or `task::wait` on that task.  
   
@@ -1582,7 +1582,7 @@ auto when_any(
  A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.  
   
 ### Remarks  
- `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+ `when_any` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.  
   
  For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   

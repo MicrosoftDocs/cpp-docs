@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandImpl::GetDBSession", "GetDBSession", "ICommandImpl.GetDBSession"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetDBSession method"]
@@ -22,12 +22,9 @@ Returns an interface pointer to the session that created the command.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetDBSession) (  
-   REFIID riid,  
-   IUnknown** ppSession   
-);  
+```cpp
+      STDMETHOD (GetDBSession) (REFIID riid,  
+   IUnknown** ppSession);  
 ```  
   
 #### Parameters  

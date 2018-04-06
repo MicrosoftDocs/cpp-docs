@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSCompletionList structure"]

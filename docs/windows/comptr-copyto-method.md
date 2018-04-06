@@ -31,10 +31,8 @@ HRESULT CopyTo(
    REFIID riid,  
    _Deref_out_ void** ptr  
 ) const;  
-template<  
-   typename U  
->  
-  
+
+template<typename U>  
 HRESULT CopyTo(  
    _Deref_out_ U** ptr  
 ) const;  

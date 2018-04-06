@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CNoRowset", "ATL::CNoRowset<TAccessor>", "CNoRowset", "ATL.CNoRowset<TAccessor>", "ATL::CNoRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNoRowset class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoRowset Class
 Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor = CAccessorBase>  
 class CNoRowset  
 ```  

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["istream/std::swap", "istream/std::ws"]
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 caps.latest.revision: 8

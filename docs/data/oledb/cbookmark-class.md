@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBookmark", "ATL::CBookmark<nSize>", "CBookmark", "ATL.CBookmark<nSize>", "ATL::CBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBookmark class"]
@@ -20,12 +20,13 @@ ms.workload: ["cplusplus", "data-storage"]
 # CBookmark Class
 Holds a bookmark value in its buffer.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < DBLENGTH nSize = 0 >  
-class CBookmark : public CBookmarkBase  
-template < >  
+class CBookmark : public CBookmarkBase
+  
+template <>  
 class CBookmark< 0 > : public CBookmarkBase  
 ```  
   

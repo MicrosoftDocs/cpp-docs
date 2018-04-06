@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.errors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, error information classes", "error handling, classes", "error information, classes"]

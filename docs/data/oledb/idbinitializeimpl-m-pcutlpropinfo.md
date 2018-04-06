@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBInitializeImpl<T>::m_pCUtlPropInfo", "m_pCUtlPropInfo", "IDBInitializeImpl::m_pCUtlPropInfo", "ATL.IDBInitializeImpl.m_pCUtlPropInfo", "IDBInitializeImpl<T>::m_pCUtlPropInfo", "IDBInitializeImpl.m_pCUtlPropInfo", "ATL::IDBInitializeImpl::m_pCUtlPropInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_pCUtlPropInfo"]
@@ -22,8 +22,7 @@ A pointer to implementation object for DB Properties information.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CUtlPropInfo<  
 T  
 >* m_pCUtlPropInfo;  

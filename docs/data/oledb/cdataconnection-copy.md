@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Copy method"]
@@ -22,11 +22,8 @@ Creates a copy of an existing data connection.
   
 ## Syntax  
   
-```  
-  
-      CDataConnection& Copy(   
-   const CDataConnection & ds    
-) throw( );  
+```cpp
+      CDataConnection& Copy(const CDataConnection & ds) throw();  
 ```  
   
 #### Parameters  

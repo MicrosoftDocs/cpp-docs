@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["intrinsics, compiler", "compiler intrinsics", "cl.exe compiler, performance", "cl.exe compiler, intrinsics"]
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858

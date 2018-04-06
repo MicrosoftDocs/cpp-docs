@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["invalid_compute_domain", "AMPRT/invalid_compute_domain", "AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_compute_domain class"]

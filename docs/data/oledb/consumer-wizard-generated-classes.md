@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
@@ -135,7 +135,7 @@ SELECT \
  Finally, the wizard generates a command class declaration such as the following:  
   
 ```  
-class CProducts : public CCommand<CAccessor<CProductsAccessor> >  
+class CProducts : public CCommand<CAccessor<CProductsAccessor>>  
 ```  
   
 ## Attribute-Injected User Record Classes  
@@ -168,7 +168,7 @@ public:
  The injected command class declaration looks like this:  
   
 ```  
-class CProducts : public CCommand<CAccessor<_CProductsAccessor> >  
+class CProducts : public CCommand<CAccessor<_CProductsAccessor>>  
 ```  
   
  Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  

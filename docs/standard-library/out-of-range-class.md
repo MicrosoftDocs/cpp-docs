@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stdexcept/std::out_of_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_range class"]

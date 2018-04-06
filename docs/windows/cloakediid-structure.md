@@ -23,9 +23,7 @@ Indicates to the RuntimeClass, Implements and ChainInterfaces templates that the
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 struct CloakedIid : T;  
 ```  
   

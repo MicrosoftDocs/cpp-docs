@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_not_attached class"]

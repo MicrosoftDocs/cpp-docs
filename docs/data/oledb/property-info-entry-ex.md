@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["PROPERTY_INFO_ENTRY_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PROPERTY_INFO_ENTRY_EX macro"]
@@ -22,10 +22,8 @@ Represents a specific property in a property set.
   
 ## Syntax  
   
-```  
-  
-PROPERTY_INFO_ENTRY_EX(  
-dwPropID  
+```cpp
+PROPERTY_INFO_ENTRY_EX(dwPropID  
 , vt, dwFlags, value, options )  
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced::context_unblock_unbalanced"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["context_unblock_unbalanced class"]

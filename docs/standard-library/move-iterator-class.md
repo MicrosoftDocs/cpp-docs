@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iterator/std::move_iterator", "iterator/std::move_iterator::iterator_type", "iterator/std::move_iterator::iterator_category", "iterator/std::move_iterator::value_type", "iterator/std::move_iterator::difference_type", "iterator/std::move_iterator::pointer", "iterator/std::move_iterator::reference", "iterator/std::move_iterator::base"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::move_iterator [C++]", "std::move_iterator [C++], iterator_type", "std::move_iterator [C++], iterator_category", "std::move_iterator [C++], value_type", "std::move_iterator [C++], difference_type", "std::move_iterator [C++], pointer", "std::move_iterator [C++], reference", "std::move_iterator [C++], base"]

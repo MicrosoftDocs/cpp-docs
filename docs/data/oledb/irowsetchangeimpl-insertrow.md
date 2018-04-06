@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetChangeImpl.InsertRow", "InsertRow", "IRowsetChangeImpl.InsertRow", "ATL::IRowsetChangeImpl::InsertRow", "IRowsetChangeImpl::InsertRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InsertRow method"]
@@ -22,14 +22,11 @@ Creates and initializes a new row in the rowset.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( InsertRow )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,  
    HACCESSOR hAccessor,  
    void* pData,  
-   HROW* phRow   
-);  
+   HROW* phRow);  
 ```  
   
 #### Parameters  

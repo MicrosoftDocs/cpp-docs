@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["string/std::operator!=", "string/std::operator&gt;", "string/std::operator&gt;&gt;", "string/std::operator&gt;=", "string/std::operator&lt;", "string/std::operator&lt;&lt;", "string/std::operator&lt;=", "string/std::operator+", "string/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910

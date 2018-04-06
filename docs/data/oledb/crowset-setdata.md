@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset<TAccessor>.SetData", "SetData", "ATL::CRowset::SetData", "CRowset<TAccessor>.SetData", "CRowset::SetData", "ATL.CRowset.SetData", "CRowset.SetData", "CRowset<TAccessor>::SetData", "ATL::CRowset<TAccessor>::SetData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetData method"]
@@ -22,12 +22,11 @@ Sets data values in one or more columns of a row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT SetData( ) const throw( );   
-HRESULT SetData(  
-   int nAccessor   
-) const throw( );  
+```cpp
+HRESULT SetData() const throw();   
+
+
+HRESULT SetData(int nAccessor) const throw();  
 ```  
   
 #### Parameters  

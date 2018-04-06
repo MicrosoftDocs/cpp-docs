@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["string/std::getline", "string/std::stod", "string/std::stof", "string/std::stoi", "string/std::stol", "string/std::stold", "string/std::stoll", "string/std::stoul", "string/std::stoull", "string/std::swap", "string/std::to_string", "string/std::to_wstring"]
 ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
 caps.latest.revision: 15

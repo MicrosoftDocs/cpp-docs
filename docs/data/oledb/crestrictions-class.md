@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CRestrictions", "CRestrictions", "ATL.CRestrictions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRestrictions class"]
@@ -20,18 +20,12 @@ ms.workload: ["cplusplus", "data-storage"]
 # CRestrictions Class
 A generic class that allows you to specify restrictions for schema rowsets.  
   
-## Syntax  
-  
-```  
-template <   
-   class T,   
-   short nRestrictions,   
-   const GUID* pguid   
->  
-class CRestrictions : public CSchemaRowset <   
-   T,   
-   nRestrictions   
->  
+## Syntax
+
+```cpp
+template <class T, short nRestrictions, const GUID* pguid>  
+class CRestrictions : 
+        public CSchemaRowset <T, nRestrictions>  
 ```  
   
 #### Parameters  

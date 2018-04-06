@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp_graphics/Concurrency::fast_math::copy_async", "amp_graphics/Concurrency::fast_math::copy"]
 dev_langs: ["C++"]
 ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934

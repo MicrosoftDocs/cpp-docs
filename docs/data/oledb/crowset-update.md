@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Update method"]
@@ -22,13 +22,10 @@ Transmits any pending changes made to the current row since the last fetch or **
   
 ## Syntax  
   
-```  
-  
-      HRESULT Update(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT Update(DBCOUNTITEM* pcRows = NULL,   
    HROW* phRow = NULL,   
-   DBROWSTATUS* pStatus = NULL    
-) throw( );  
+   DBROWSTATUS* pStatus = NULL) throw();  
 ```  
   
 #### Parameters  

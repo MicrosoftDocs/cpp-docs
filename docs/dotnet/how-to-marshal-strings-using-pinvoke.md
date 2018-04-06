@@ -26,8 +26,6 @@ This topic explains how native functions that accept C-style strings can be call
 ## Example  
  The following code consists of a unmanaged and a managed module. The unmanaged module is a DLL that defines a function called TakesAString that accepts a C-style ANSI string in the form of a char*. The managed module is a command-line application that imports the TakesAString function, but defines it as taking a managed System.String instead of a char\*. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute is used to indicate how the managed string should be marshaled when TakesAString is called.  
   
- The managed module is compiled with /clr, but /clr:pure works as well.  
-  
 ```  
 // TraditionalDll2.cpp  
 // compile with: /LD /EHsc  

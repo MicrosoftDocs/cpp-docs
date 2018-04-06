@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__movsd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rep movsd instruction", "__movsd intrinsic", "movsd instruction"]

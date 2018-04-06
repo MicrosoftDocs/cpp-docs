@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetAllErrorInfo", "ATL::CDBErrorInfo::GetAllErrorInfo", "GetAllErrorInfo", "CDBErrorInfo.GetAllErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetAllErrorInfo method"]
@@ -22,17 +22,13 @@ Returns all the types of error information contained in an error record.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetAllErrorInfo(  
-   ULONG ulRecordNum,  
-   LCID lcid,  
-   BSTR* pbstrDescription,  
+```
+HRESULT GetAllErrorInfo(ULONG ulRecordNum,  
+   LCID lcid,  BSTR* pbstrDescription,  
    BSTR* pbstrSource = NULL,  
    GUID* pguid = NULL,  
    DWORD* pdwHelpContext = NULL,  
-   BSTR* pbstrHelpFile = NULL  
-) const throw( );  
+   BSTR* pbstrHelpFile = NULL) const throw();  
 ```  
   
 #### Parameters  

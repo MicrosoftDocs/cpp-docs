@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__stosq"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rep stosq instruction", "stosq instruction", "__stosq intrinsic"]

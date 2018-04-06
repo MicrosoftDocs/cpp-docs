@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::sync_per_container", "allocators/stdext::sync_per_container::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["sync_per_container class"]

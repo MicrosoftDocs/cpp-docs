@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocators::allocator_fixed_size", "allocators/stdext::allocator_fixed_size", "stdext::allocators::allocator_fixed_size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocators [C++], allocator_fixed_size", "stdext::allocator_fixed_size"]

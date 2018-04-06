@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CEnumeratorAccessor::m_szName", "ATL.CEnumeratorAccessor.m_szName", "m_szName", "ATL::CEnumeratorAccessor::m_szName", "CEnumeratorAccessor.m_szName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szName"]
@@ -22,8 +22,7 @@ The name of the data source or enumerator.
   
 ## Syntax  
   
-```  
-  
+```cpp
 WCHAR m_szName[129];  
   
 ```  

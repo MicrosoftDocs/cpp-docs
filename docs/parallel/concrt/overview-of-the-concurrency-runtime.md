@@ -50,7 +50,7 @@ This document provides an overview of the Concurrency Runtime. It describes the 
  ![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")  
   
 > [!IMPORTANT]
->  The Task Scheduler and Resource Manager components are not available from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app or when you use the task class or other types in ppltasks.h.  
+>  The Task Scheduler and Resource Manager components are not available from a Universal Windows Platform (UWP) app or when you use the task class or other types in ppltasks.h.  
   
  The Concurrency Runtime is highly *composable*, that is, you can combine existing functionality to do more. The Concurrency Runtime composes many features, such as parallel algorithms, from lower-level components.  
   

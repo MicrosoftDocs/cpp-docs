@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IColumnsInfoImpl<T>::MapColumnIDs", "MapColumnIDs", "ATL::IColumnsInfoImpl::MapColumnIDs", "IColumnsInfoImpl.MapColumnIDs", "ATL::IColumnsInfoImpl<T>::MapColumnIDs", "IColumnsInfoImpl::MapColumnIDs", "ATL.IColumnsInfoImpl<T>.MapColumnIDs", "ATL.IColumnsInfoImpl.MapColumnIDs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MapColumnIDs method"]
@@ -22,13 +22,10 @@ Returns an array of ordinals of the columns in a rowset that are identified by t
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (MapColumnIDs)(  
-   DBORDINAL cColumnIDs,  
+```cpp
+      STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
    const DBID rgColumnIDs[],  
-   DBORDINAL rgColumns[]   
-);  
+   DBORDINAL rgColumns[]);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCommandText method"]
@@ -22,12 +22,9 @@ Returns the text command set by the last call to [SetCommandText](../../data/ole
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetCommandText)(   
-   GUID * pguidDialect,   
-   LPOLESTR * ppwszCommand    
-);  
+```cpp
+      STDMETHOD(GetCommandText)(GUID * pguidDialect,   
+   LPOLESTR * ppwszCommand);  
 ```  
   
 #### Parameters  

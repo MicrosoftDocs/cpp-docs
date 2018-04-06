@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::StringReference::StringReference", "VCCORLIB/Platform::StringReference::Data", "VCCORLIB/Platform::StringReference::Length", "VCCORLIB/Platform::StringReference::GetHSTRING", "VCCORLIB/Platform::StringReference::GetString"]
 dev_langs: ["C++"]
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e

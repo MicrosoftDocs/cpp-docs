@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
@@ -42,7 +42,7 @@ To test a provider, you need a consumer. It helps if the consumer can match up w
   
  Open the header file for the dialog class (in this case TestProvDlg.h). Add the following code to the header file (outside of any class declarations):  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // TestProvDlg.h  
   
@@ -65,13 +65,13 @@ END_COLUMN_MAP()
   
  Add a handler function for the **Run** button by pressing CTRL and double-clicking the **Run** button. Place the following code in the function:  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////  
 // TestProvDlg.cpp  
   
 void CtestProvDlg::OnRun()  
 {  
-   CCommand<CAccessor<CProvider> > table;  
+   CCommand<CAccessor<CProvider>> table;  
    CDataSource source;  
    CSession   session;  
   

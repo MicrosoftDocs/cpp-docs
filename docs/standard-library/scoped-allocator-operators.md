@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scoped_allocator/std::operator!=", "scoped_allocator/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837

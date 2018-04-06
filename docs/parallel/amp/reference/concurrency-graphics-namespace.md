@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["AMP_GRAPHICS/Concurrency"]
 dev_langs: ["C++"]
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e

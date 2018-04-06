@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, class wizards"]
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBCreateCommandImpl.CreateCommand", "CreateCommand", "IDBCreateCommandImpl::CreateCommand"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateCommand method"]
@@ -22,13 +22,10 @@ Creates a new command and returns the requested interface.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateCommand)(   
-   IUnknown * pUnkOuter,   
+```cpp
+      STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,   
    REFIID riid,   
-   IUnknown ** ppvCommand    
-);  
+   IUnknown ** ppvCommand);  
 ```  
   
 #### Parameters  

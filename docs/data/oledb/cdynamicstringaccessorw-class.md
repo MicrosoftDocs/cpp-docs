@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessorW"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessorW class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDynamicStringAccessorW Class
 Allows you to access a data source when you have no knowledge of the database schema (underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 typedef CDynamicStringAccessorT<WCHAR, DBTYPE_WSTR> CDynamicStringAccessorW;  
 ```  
   

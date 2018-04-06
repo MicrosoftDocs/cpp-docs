@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::extreme_value_distribution [C++]", "std::extreme_value_distribution [C++], reset", "std::extreme_value_distribution [C++], a", "std::extreme_value_distribution [C++], b", "std::extreme_value_distribution [C++], param", "std::extreme_value_distribution [C++], min", "std::extreme_value_distribution [C++], max", "std::extreme_value_distribution [C++], param_type", "std::extreme_value_distribution [C++], param_type"]

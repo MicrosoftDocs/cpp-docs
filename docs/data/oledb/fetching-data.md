@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data [C++], fetching", "rowsets [C++], fetching", "fetching", "OLE DB consumer templates [C++], fetching data"]
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: [".SAFESEH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["registering functions as exception handlers", "SAFESEH directive", ".SAFESEH directive"]

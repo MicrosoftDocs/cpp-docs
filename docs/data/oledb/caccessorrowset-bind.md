@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorRowset.Bind", "CAccessorRowset::Bind"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Bind method"]
@@ -22,9 +22,8 @@ Creates the bindings if you specified **bBind** as false in [CCommand::Open](../
   
 ## Syntax  
   
-```  
-  
-HRESULT Bind( );  
+```cpp
+HRESULT Bind();  
   
 ```  
   

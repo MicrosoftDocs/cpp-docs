@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorDescriptionString", "IErrorRecordsImpl.GetErrorDescriptionString", "IErrorRecordsImpl::GetErrorDescriptionString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorDescriptionString method"]
@@ -22,11 +22,8 @@ Gets the error description string from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorDescriptionString(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

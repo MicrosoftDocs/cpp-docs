@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]

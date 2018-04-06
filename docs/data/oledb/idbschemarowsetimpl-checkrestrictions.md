@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CheckRestrictions method"]
@@ -22,13 +22,9 @@ Checks the validity of restrictions against a schema rowset.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CheckRestrictions(  
-   REFGUID rguidSchema,  
-   ULONG cRestrictions,  
-   const VARIANT rgRestrictions[]  
-);  
+```
+HRESULT CheckRestrictions(REFGUID rguidSchema,  
+   ULONG cRestrictions,  const VARIANT rgRestrictions[]);  
 ```  
   
 #### Parameters  

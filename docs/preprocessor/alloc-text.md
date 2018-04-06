@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.alloc_text", "alloc_text_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["alloc_text pragma", "pragmas, alloc_text"]

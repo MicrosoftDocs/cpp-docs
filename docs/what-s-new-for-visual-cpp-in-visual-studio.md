@@ -27,11 +27,11 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
    **Visual Studio 2017 version 15.3**:
 
-   The **/std:c++17** option enables the set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
+   The **/std:c++17** option enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
 
    **Visual Studio 2017 version 15.5**:
 
-   The Visual C++ compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+   The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
 
 - [/permissive-](build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is off by default but will be on by default at some point in the future.
 

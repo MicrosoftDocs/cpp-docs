@@ -23,9 +23,7 @@ Retrieves a weak reference to a specified instance.
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 HRESULT AsWeak(  
    _In_ T* p,  
    _Out_ WeakRef* pWeak  

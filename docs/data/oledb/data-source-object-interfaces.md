@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data source objects [C++], interfaces", "data source objects [C++]", "interfaces [C++], OLE DB", "interfaces [C++], list of", "OLE DB provider templates [C++], object interfaces", "OLE DB [C++], interfaces"]
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6

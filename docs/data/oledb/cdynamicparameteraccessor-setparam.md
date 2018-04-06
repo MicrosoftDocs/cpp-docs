@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParam method"]
@@ -22,21 +22,16 @@ Sets the parameter buffer using the specified (non-string) data.
   
 ## Syntax  
   
-```  
-  
-      template < class   
-      ctype >  
-bool SetParam(  
-   DBORDINAL nParam,  
-   const ctype* pData,  
-   DBSTATUS status = DBSTATUS_S_OK  
-) throw( );  
-template < class ctype >  
-bool SetParam(  
-   TCHAR* pParamName,  
-   const ctype* pData,  
-   DBSTATUS status = DBSTATUS_S_OK  
-) throw( );  
+```cpp
+template <class ctype>
+bool SetParam(DBORDINAL nParam,  
+               constctype* pData,  
+               DBSTATUS status = DBSTATUS_S_OK) throw();  
+
+template <class ctype>  
+bool SetParam(TCHAR* pParamName,  
+               const ctype* pData,  
+               DBSTATUS status = DBSTATUS_S_OK) throw();  
 ```  
   
 #### Parameters  

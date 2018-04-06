@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB record views", "COleDBRecordView class, overview", "rowsets, record views", "record views, record view objects", "OLE DB, record views", "MFC, record views"]
 ms.assetid: 1cd3e595-ce08-43d8-a0a9-d03b5d3e24ce

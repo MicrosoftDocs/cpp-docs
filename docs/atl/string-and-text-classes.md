@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["string conversion, ATL", "string classes [ATL]"]
 ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571

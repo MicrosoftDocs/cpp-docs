@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLECTION/Platform::Collections::VectorView::First", "COLLECTION/Platform::Collections::VectorView::GetAt", "COLLECTION/Platform::Collections::VectorView::GetMany", "COLLECTION/Platform::Collections::VectorView::IndexOf", "COLLECTION/Platform::Collections::VectorView::Size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VectorView Class"]

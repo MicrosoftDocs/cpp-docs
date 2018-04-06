@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["improper_scheduler_detach", "CONCRT/concurrency::improper_scheduler_detach", "CONCRT/concurrency::improper_scheduler_detach::improper_scheduler_detach"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_detach class"]

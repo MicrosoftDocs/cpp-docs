@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, Visual C++", "stored procedures, about stored procedures", "OLE DB provider templates, stored procedures", "stored procedures, OLE DB"]
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b

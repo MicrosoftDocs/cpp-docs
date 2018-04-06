@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_PS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_PS macro"]
@@ -22,17 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_PS(  
-nOrdinal  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)  
   
 ```  
   

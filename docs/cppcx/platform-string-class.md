@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::String::String", "VCCORLIB/Platform::String::Begin", "VCCORLIB/Platform::String::CompareOrdinal", "VCCORLIB/Platform::String::Concat", "VCCORLIB/Platform::String::Data", "VCCORLIB/Platform::String::Dispose", "VCCORLIB/Platform::String::End", "VCCORLIB/Platform::String::Equals", "VCCORLIB/Platform::String::GetHashCode", "VCCORLIB/Platform::String::IsEmpty", "VCCORLIB/Platform::String::IsFastPass", "VCCORLIB/Platform::String::Length", "VCCORLIB/Platform::String::ToString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::String"]

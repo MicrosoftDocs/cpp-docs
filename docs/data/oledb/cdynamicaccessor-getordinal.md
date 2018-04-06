@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor.GetOrdinal", "ATL::CDynamicAccessor::GetOrdinal", "CDynamicAccessor::GetOrdinal", "ATL.CDynamicAccessor.GetOrdinal", "GetOrdinal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetOrdinal method"]
@@ -22,16 +22,12 @@ Retrieves the column number given a column name.
   
 ## Syntax  
   
-```  
-  
-      bool GetOrdinal(  
-   const CHAR* pColumnName,  
-   DBORDINAL* pOrdinal   
-) const throw( );  
-bool GetOrdinal(  
-   const WCHAR* pColumnName,  
-   DBORDINAL* pOrdinal   
-) const throw( );  
+```cpp
+      bool GetOrdinal(const CHAR* pColumnName,  
+   DBORDINAL* pOrdinal) const throw();  
+
+bool GetOrdinal(const WCHAR* pColumnName,  
+   DBORDINAL* pOrdinal) const throw();  
 ```  
   
 #### Parameters  

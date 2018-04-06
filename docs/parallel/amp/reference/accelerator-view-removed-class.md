@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["accelerator_view_removed", "AMPRT/accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class"]

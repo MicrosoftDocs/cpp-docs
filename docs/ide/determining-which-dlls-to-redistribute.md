@@ -1,7 +1,7 @@
 ---
 title: "Determining Which DLLs to Redistribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2017"
+ms.date: "03/13/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -42,7 +42,7 @@ The following table describes some of the Visual C++ DLLs that your application 
 |--------------------------|-----------------|----------------|
 |vcruntime*version*.dll|Runtime Library for native code.|Applications that use the normal C and C++ language startup and termination services.|
 |vccorlib*version*.dll|Runtime Library for managed code.|Applications that use the C++ language services for managed code.|
-|msvcp*version*.dll|C++ Standard Library for native code.|Applications that use the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).|
+|msvcp*version*.dll and msvcp*version*_*dotnumber*.dll|C++ Standard Library for native code.|Applications that use the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).|
 |concrt*version*.dll|Concurrency Runtime Library for native code.|Applications that use the [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).|
 |mfc*version*.dll|Microsoft Foundation Classes (MFC) Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md).|
 |mfc*version* *language*.dll|Microsoft Foundation Classes (MFC) Library Resources.|Applications that use specific language resources for MFC.|

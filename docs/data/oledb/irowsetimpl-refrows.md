@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RefRows method"]
@@ -22,15 +22,12 @@ Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseR
   
 ## Syntax  
   
-```  
-  
-      HRESULT RefRows(  
-   DBCOUNTITEM cRows,  
-   const HROW rghRows[],  
+```
+HRESULT RefRows(DBCOUNTITEM cRows,  
+   const HROWrghRows[],  
    DBREFCOUNT rgRefCounts[],  
    DBROWSTATUS rgRowStatus[],  
-   BOOL bAdd   
-);  
+   BOOL bAdd);  
 ```  
   
 #### Parameters  

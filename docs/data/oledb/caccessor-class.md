@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CAccessor<T>", "ATL::CAccessor", "CAccessor", "ATL::CAccessor<T>", "ATL.CAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessor class"]
@@ -24,9 +24,7 @@ Represents one of the accessor types.
   
 ```  
   
-      template < class   
-      T  
-       >  
+template <class T>  
 class CAccessor : public CAccessorBase, public T  
 ```  
   

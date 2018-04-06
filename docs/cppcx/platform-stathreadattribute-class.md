@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Platform", "COLLECTION/Platform::Platform::STAThreadAttribute constructor 1", "COLLECTION/Platform::Platform::STAThreadAttribute::Equals", "COLLECTION/Platform::Platform::STAThreadAttribute::GetHashCode", "COLLECTION/Platform::Platform::STAThreadAttribute::ToString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::STAThreadAttribute Class"]

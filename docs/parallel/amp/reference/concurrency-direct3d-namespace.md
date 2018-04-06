@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::direct3d", "amprt/Concurrency::direct3d", "amp_short_vectors/Concurrency::direct3d", "amp_graphics/Concurrency::direct3d", "amp_math/Concurrency::direct3d"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["direct3d namespace"]

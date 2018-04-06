@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl.AddErrorRecord", "AddErrorRecord", "IErrorRecordsImpl::AddErrorRecord"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddErrorRecord method"]
@@ -22,15 +22,12 @@ Adds a record to the OLE DB error object.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( AddErrorRecord )(  
-   ERRORINFO *pErrorInfo,  
+```cpp
+      STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,  
    DWORD dwLookupID,  
    DISPPARAMS *pdispparams,  
    IUnknown *punkCustomError,  
-   DWORD dwDynamicErrorID   
-);  
+   DWORD dwDynamicErrorID);  
 ```  
   
 #### Parameters  

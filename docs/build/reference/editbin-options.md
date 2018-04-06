@@ -28,7 +28,7 @@ You can use EDITBIN to modify object files, executable files, and dynamic-link l
 |------------|-------------|  
 |[/ALLOWBIND](../../build/reference/allowbind.md)|Specifies whether a DLL can be bound.|  
 |[/ALLOWISOLATION](../../build/reference/allowisolation.md)|Specifies DLL or executable file manifest lookup behavior.|  
-|[/APPCONTAINER](../../build/reference/appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.|  
+|[/APPCONTAINER](../../build/reference/appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a UWP app.|  
 |[/BIND](../../build/reference/bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|  
 |[/DYNAMICBASE](../../build/reference/dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|  
 |[/ERRORREPORT](../../build/reference/errorreport-editbin-exe.md)|Reports internal errors to Microsoft.|  

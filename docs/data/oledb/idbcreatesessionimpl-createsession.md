@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateSession method"]
@@ -22,13 +22,10 @@ Creates a new session from the data source object and returns the requested inte
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateSession)(   
-   IUnknown * pUnkOuter,   
+```cpp
+      STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
    REFIID riid,   
-   IUnknown ** ppDBSession    
-);  
+   IUnknown ** ppDBSession);  
 ```  
   
 #### Parameters  

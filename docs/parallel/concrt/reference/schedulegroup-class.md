@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ScheduleGroup", "CONCRT/concurrency::ScheduleGroup", "CONCRT/concurrency::ScheduleGroup::Id", "CONCRT/concurrency::ScheduleGroup::Reference", "CONCRT/concurrency::ScheduleGroup::Release", "CONCRT/concurrency::ScheduleGroup::ScheduleTask"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ScheduleGroup class"]

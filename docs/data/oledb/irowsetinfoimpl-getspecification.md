@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetSpecification method"]
@@ -22,12 +22,9 @@ Returns an interface pointer on the object (command or session) that created thi
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetSpecification )(  
-   REFIID riid,  
-   IUnknown** ppSpecification   
-);  
+```cpp
+      STDMETHOD (GetSpecification )(REFIID riid,  
+   IUnknown** ppSpecification);  
 ```  
   
 #### Parameters  

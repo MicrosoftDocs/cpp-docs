@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BLOB_NAME_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME_STATUS macro"]
@@ -22,16 +22,8 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
-BLOB_NAME_STATUS(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data  
+```cpp
+BLOB_NAME_STATUS(pszName, IID, flags, data  
 , status )  
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet.operator=", "ATL.CDBPropIDSet.operator=", "ATL::CDBPropIDSet::operator=", "CDBPropIDSet::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator =, property sets", "= operator, with OLE DB templates", "operator=, property sets"]
@@ -22,11 +22,8 @@ Assigns the contents of one property ID set to another ID property set.
   
 ## Syntax  
   
-```  
-  
-      CDBPropIDSet& operator =(   
-   CDBPropIDSet& propset    
-) throw( );  
+```cpp
+      CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();  
 ```  
   
 ## Requirements  

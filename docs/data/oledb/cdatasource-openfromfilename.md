@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenFromFileName method"]
@@ -22,11 +22,8 @@ Opens a data source from a file specified by the user-supplied file name.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenFromFileName(   
-   LPCOLESTR szFileName    
-) throw( );  
+```cpp
+HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();  
 ```  
   
 #### Parameters  

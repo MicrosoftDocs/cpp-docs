@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ppltasks/std::make_exception_ptr"]
 dev_langs: ["C++"]
 ms.assetid: 8d81cf7a-818e-4b27-8d49-440ec3088609

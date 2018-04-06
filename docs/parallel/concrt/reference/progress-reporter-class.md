@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["progress_reporter", "PPLTASKS/concurrency::progress_reporter", "PPLTASKS/concurrency::progress_reporter::progress_reporter", "PPLTASKS/concurrency::progress_reporter::report"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["progress_reporter class"]
@@ -46,7 +46,7 @@ class progress_reporter;
 |[report](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
   
 ## Remarks  
- This type is only available to Windows Store apps.  
+ This type is only available to Windows Runtime apps.  
   
 ## Inheritance Hierarchy  
  `progress_reporter`  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetUpdateImpl.GetRowStatus", "IRowsetUpdateImpl::GetRowStatus", "IRowsetUpdateImpl.GetRowStatus", "ATL::IRowsetUpdateImpl::GetRowStatus", "GetRowStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowStatus method"]
@@ -22,14 +22,11 @@ Returns the status of specified rows.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowStatus )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
-   DBPENDINGSTATUS rgPendingStatus[]   
-);  
+   DBPENDINGSTATUS rgPendingStatus[]);  
 ```  
   
 #### Parameters  

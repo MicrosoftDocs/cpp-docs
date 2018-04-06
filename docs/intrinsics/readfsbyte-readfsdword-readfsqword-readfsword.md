@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__readfsword", "__readfsdword", "__readfsbyte", "__readfsqword"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__readfsword intrinsic", "readfsword intrinsic", "__readfsdword intrinsic", "readfsbyte intrinsic", "__readfsbyte intrinsic", "readfsdword intrinsic", "readfsqword intrinsic", "__readfsqword intrinsic"]

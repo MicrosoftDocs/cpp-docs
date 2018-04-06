@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CTable.Open", "ATL::CTable::Open", "CTable::Open", "CTable.Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -22,26 +22,23 @@ Opens the table.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CSession& session,  
+```cpp
+HRESULT Open(const CSession& session,  
    LPCWSTR wszTableName,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw ();  
+
+
+HRESULT Open(const CSession& session,  
    LPCSTR szTableName,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw ();  
+
+
+HRESULT Open(const CSession& session,  
    DBID& dbid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
+   ULONG ulPropSets = 0) throw ();  
 ```  
   
 #### Parameters  

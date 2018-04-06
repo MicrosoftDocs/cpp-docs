@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CEnumeratorAccessor", "CEnumeratorAccessor", "ATL.CEnumeratorAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEnumeratorAccessor class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CEnumeratorAccessor Class
 Used by [CEnumerator](../../data/oledb/cenumerator-class.md) to access the data from the enumerator rowset.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CEnumeratorAccessor  
 ```  
   

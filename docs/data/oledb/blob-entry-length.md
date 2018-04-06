@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BLOB_ENTRY_LENGTH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_ENTRY_LENGTH macro"]
@@ -22,19 +22,8 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
-BLOB_ENTRY_LENGTH(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-length  
- )  
+```cpp
+BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)  
   
 ```  
   

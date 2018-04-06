@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SchedulerPolicy", "concrt/concurrency::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::GetPolicyValue", "concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits", "concrt/concurrency::SchedulerPolicy::SetPolicyValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SchedulerPolicy class"]

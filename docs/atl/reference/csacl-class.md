@@ -117,7 +117,7 @@ bool AddAuditAce(
  Returns **true** if the ACE is added to the `CSacl` object, **false** on failure.  
   
 ### Remarks  
- A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object. The second form of `AddAuditAce` is only available on Windows 2000 and later.  
+ A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   

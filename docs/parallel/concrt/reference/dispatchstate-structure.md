@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DispatchState", "CONCRTRM/concurrency::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize", "CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked", "CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DispatchState structure"]

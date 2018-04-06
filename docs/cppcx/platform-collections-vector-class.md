@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FindNextRow method"]
@@ -22,18 +22,15 @@ Finds the next matching row after the specified bookmark.
   
 ## Syntax  
   
-```  
-  
-      HRESULT FindNextRow(   
-   DBCOMPAREOP op,   
-   BYTE* pData,   
+```
+HRESULT FindNextRow(DBCOMPAREOP op,   
+  BYTE* pData,   
    DBTYPE wType,   
    DBLENGTH nLength,   
    BYTE bPrecision,   
    BYTE bScale,   
    BOOL bSkipCurrent = TRUE,   
-   CBookmarkBase* pBookmark = NULL    
-) throw( );  
+   CBookmarkBase* pBookmark = NULL) throw();  
 ```  
   
 #### Parameters  

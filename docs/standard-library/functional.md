@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["functors", "functional header"]

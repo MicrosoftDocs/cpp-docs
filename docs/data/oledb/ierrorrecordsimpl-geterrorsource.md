@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl.GetErrorSource", "GetErrorSource", "IErrorRecordsImpl::GetErrorSource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorSource method"]
@@ -22,11 +22,8 @@ Gets the source code that caused the error from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorSource(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorSource(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

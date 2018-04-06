@@ -2,6 +2,7 @@
 layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
+ms.topic: landing-page
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
 ---

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicParameterAccessor::GetParamLength", "ATL.CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor::GetParamLength", "GetParamLength"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParamLength method"]
@@ -22,15 +22,11 @@ Retrieves the length of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamLength(  
-   DBORDINAL nParam,  
-   DBLENGTH* pLength  
-);  
-DBLENGTH* GetParamLength(   
-   DBORDINAL nParam    
-) const throw( );  
+```
+bool GetParamLength(DBORDINAL nParam,  
+  DBLENGTH* pLength);  
+
+DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();  
 ```  
   
 #### Parameters  
