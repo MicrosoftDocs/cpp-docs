@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp"]
+f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp", "register_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
@@ -17,13 +17,16 @@ ms.author: "mblome"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Storage classes (C++)
+# Storage classes (C++)  
+  
+A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the `extern`, `static`, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.  
+  
+**Notes**  
+  
+1.  The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.  
+  
+2.  **Visual C++ 2010 and later:** The `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The `register` keyword is removed from the C++ language.
 
-A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the `extern`, `static`, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.
-
-1. The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.
-
-1. **Visual C++ 2010 and later:** The `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated. **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The `register` keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
