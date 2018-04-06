@@ -81,7 +81,7 @@ DirectX games can run on the PC or Xbox. For more information, see [DirectX Deve
 
 Visual C++ includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are located either in the Visual Studio installation directory under the \VC\ folder, or in the case of the CRT, in the Windows SDK installation folder.   
 
-You can use the [Vcpkg package manager](../vcpkd.md) to conveniently install hundreds of third-party open-source libraries for Windows.
+You can use the [Vcpkg package manager](../vcpkg.md) to conveniently install hundreds of third-party open-source libraries for Windows.
 
 The Microsoft libraries include:
 
