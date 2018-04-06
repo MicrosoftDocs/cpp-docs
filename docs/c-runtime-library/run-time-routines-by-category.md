@@ -1,7 +1,7 @@
 ---
-title: "Run-Time Routines by Category | Microsoft Docs"
+title: "Run-time routines by category | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2018"
+ms.date: "04/06/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "article"
 f1_keywords: ["c.runtime"]
@@ -13,11 +13,11 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Run-Time Routines by Category
+# Run-Time routines by category
 
 This section lists and describes Microsoft run-time library routines by category. For reference convenience, some routines are listed in more than one category. Multibyte-character routines and wide-character routines are grouped with single-byte character counterparts, where they exist.
 
-The main categories of Microsoft run-time library routines are:
+## Routine categories
 
 |||
 |-|-|
