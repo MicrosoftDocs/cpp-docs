@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN046: Commenting Conventions for the MFC Classes
 This technical note originally described the conventions used to comment the MFC classes. This information is now covered in [MFC: Using the MFC Source Files](../mfc/using-the-mfc-source-files.md).  

@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Renaming with a Name That Exists
 **ANSI 4.9.4.2** The effect if a file with the new name exists prior to a call to the **rename** function  

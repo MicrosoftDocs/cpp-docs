@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::unary_negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unary_negate class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unary_negate Class
 A template class providing a member function that negates the return value of a specified unary function.  

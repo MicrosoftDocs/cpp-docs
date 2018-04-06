@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["struct"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["STRUCT directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # STRUCT (MASM)
 Declares a structure type having the specified *fielddeclarations*. Each field must be a valid data definition. Same as [STRUC](../../assembler/masm/struc.md).  

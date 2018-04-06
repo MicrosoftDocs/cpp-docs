@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["valarray/std::slice_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["slice_array class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # slice_array Class
 An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.  

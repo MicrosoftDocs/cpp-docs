@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d", "amp_short_vectors/Concurrency::graphics::direct3d"]
 dev_langs: ["C++"]
 ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics::direct3d Namespace
 Provides the [get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture) and [make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture) methods.  

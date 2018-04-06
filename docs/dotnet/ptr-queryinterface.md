@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::QueryInterface
 Queries the owned COM object for an interface and attaches the result to another `com::ptr`.  

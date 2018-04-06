@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDBErrorInfo.GetErrorParameters", "CDBErrorInfo::GetErrorParameters", "ATL::CDBErrorInfo::GetErrorParameters", "CDBErrorInfo.GetErrorParameters", "GetErrorParameters"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorParameters method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetErrorParameters
 Calls [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/en-us/library/ms715793.aspx) to return the error parameters.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorParameters(   
-   ULONG ulRecordNum,   
-   DISPPARAMS* pdispparams    
-) const throw( );  
+```
+HRESULT GetErrorParameters(ULONG ulRecordNum,   
+  DISPPARAMS* pdispparams) const throw();  
 ```  
   
 #### Parameters  

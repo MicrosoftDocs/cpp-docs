@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoRelationFieldInfo Structure
 The `CDaoRelationFieldInfo` structure contains information about a field in a relation defined for data access objects (DAO).  

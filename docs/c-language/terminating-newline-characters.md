@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Terminating Newline Characters
 **ANSI 4.9.2** Whether the last line of a text stream requires a terminating newline character  

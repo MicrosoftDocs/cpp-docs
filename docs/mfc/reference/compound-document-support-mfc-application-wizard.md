@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compound Document Support, MFC Application Wizard
 In this page of the MFC Application Wizard, indicate to what level your application provides compound and active document support. Your application must support the document/view architecture to support compound documents and document templates.  

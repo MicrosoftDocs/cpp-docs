@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Multipage Documents
 This article describes the Windows printing protocol and explains how to print documents that contain more than one page. The article covers the following topics:  

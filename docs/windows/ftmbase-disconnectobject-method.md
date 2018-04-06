@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::DisconnectObject Method
 Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.  

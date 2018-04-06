@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sizeof Operator
 Yields the size of its operand with respect to the size of type `char`.  
@@ -30,7 +31,7 @@ sizeof  ( type-name )
 ```  
   
 ## Remarks  
- The result of the `sizeof` operator is of type `size_t`, an integral type defined in the include file STDDEF.H. This operator allows you to avoid specifying machine-dependent data sizes in your programs.  
+ The result of the `sizeof` operator is of type `size_t`, an integral type defined in the include file \<stddef.h>. This operator allows you to avoid specifying machine-dependent data sizes in your programs.  
   
  The operand to `sizeof` can be one of the following:  
   

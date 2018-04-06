@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Regular Expressions (C++/CLI)
 Demonstrates various string operations using regular expressions classes in the .NET Framework.  

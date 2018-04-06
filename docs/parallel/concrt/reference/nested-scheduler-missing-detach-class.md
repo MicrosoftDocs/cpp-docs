@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach::nested_scheduler_missing_detach"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["nested_scheduler_missing_detach class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # nested_scheduler_missing_detach Class
 This class describes an exception thrown when the Concurrency Runtime detects that you neglected to call the `CurrentScheduler::Detach` method on a context that attached to a second scheduler using the `Attach` method of the `Scheduler` object.  

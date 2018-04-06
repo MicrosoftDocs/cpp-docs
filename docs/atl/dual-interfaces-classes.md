@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.interfaces.dual"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dual interfaces, classes", "dual interfaces"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces Classes
 The following class provides support for dual interfaces:  

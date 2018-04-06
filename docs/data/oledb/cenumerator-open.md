@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -15,23 +15,21 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator::Open
 Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/en-us/library/ms711200.aspx).  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(   
-   LPMONIKER pMoniker    
-) throw( );  
-HRESULT Open(   
-   const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR    
-) throw( );  
-HRESULT Open(   
-   const CEnumerator& enumerator    
-) throw( );  
+```cpp
+HRESULT Open(LPMONIKER pMoniker) throw();  
+
+
+HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
+
+
+HRESULT Open(const CEnumerator& enumerator) throw();  
 ```  
   
 #### Parameters  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory Class
 Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.  
@@ -22,9 +23,7 @@ Provides a fundamental mechanism to create a Windows Runtime or classic COM base
 ## Syntax  
   
 ```  
-template<  
-   typename Base  
->  
+template<typename Base>  
 class SimpleActivationFactory : public ActivationFactory<>;  
 ```  
   

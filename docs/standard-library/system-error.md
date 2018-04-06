@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<system_error>", "system_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["system_error header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;system_error&gt;
 Include the header `<system_error>` to define the exception class `system_error` and related templates for processing low-level system errors.  

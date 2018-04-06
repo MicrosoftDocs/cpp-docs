@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Porting Guide: MFC Scribble
 This topic is the first of several topics that introduce you to the upgrade procedure for Visual C++ projects that were created in older versions of Visual Studio to Visual Studio 2017. These topics introduce the upgrade process by example, starting with a very simple project and moving to slightly more complex ones. In this topic, we work through the upgrade process for a specific project, MFC Scribble. It is suitable as a basic introduction to the upgrade process for C++ projects.  
@@ -79,7 +80,7 @@ _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
  There is no test suite, so we just started the app, tested its features manually through the UI. No issues were observed.  
   
 ### Step 4. Improve the code  
- Now that you've migrated to Visual Studio 2017, you might want to make some changes to take advantage of new C++ features. The current version of Visual C++ compiler is much more conformant to the C++ standard then previous versions, so if you have a mind to make some code changes to make your code more secure, and more portable to other compilers and operating systems, you should consider some improvements.  
+ Now that you've migrated to Visual Studio 2017, you might want to make some changes to take advantage of new C++ features. The current version of the C++ compiler is much more conformant to the C++ standard then previous versions, so if you have a mind to make some code changes to make your code more secure, and more portable to other compilers and operating systems, you should consider some improvements.  
   
 ## Next steps  
  Scribble was a small and simple Windows desktop application, and it wasn't hard to convert. Many small, simple apps convert just as easily to the new version.  For more complex applications, with many more lines of code, older legacy code that might not be up to modern engineering standards, multiple projects and libraries, custom build steps, or for complex scripted automated builds, it will take more time to upgrade. Continue with the [next example](../porting/porting-guide-com-spy.md), an ATL/COM application called COM Spy.  

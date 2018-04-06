@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::treat_as_floating_point"]
 dev_langs: ["C++"]
 ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434
@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # treat_as_floating_point Structure
 Specifies whether `Rep` can be treated as a floating-point type.  

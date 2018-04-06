@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Defining a Rule
 The *fromext* represents the extension of a dependent file, and *toext* represents the extension of a target file.  

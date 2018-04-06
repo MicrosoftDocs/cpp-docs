@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using an NMAKE Macro
 To use a macro, enclose its name in parentheses preceded by a dollar sign ($) as follows.  

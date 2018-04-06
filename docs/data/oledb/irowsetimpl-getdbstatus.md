@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetDBStatus method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::GetDBStatus
 Returns the `DBSTATUS` status flags for the specified field.  
   
 ## Syntax  
   
-```  
-  
-      virtual DBSTATUS GetDBStatus(  
-   RowClass* currentRow,  
-   ATLCOLUMNINFO* columnNames   
-);  
+```cpp
+      virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
+   ATLCOLUMNINFO* columnNames);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["code_seg_CPP", "vc-pragma.code_seg"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, code_seg", "code_seg pragma"]
@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # code_seg
 Specifies the text segment where functions are stored in the .obj file.  

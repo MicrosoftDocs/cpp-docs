@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Property to the Control (ATL Tutorial, Part 3)
 `IPolyCtl` is the interface that contains the control's custom methods and properties, and you will add a property to it.  

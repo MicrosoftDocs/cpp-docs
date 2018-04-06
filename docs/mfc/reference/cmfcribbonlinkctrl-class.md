@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonLinkCtrl Class
 Implements a hyperlink that is positioned on a ribbon. The hyperlink opens a Web page when you click it.  

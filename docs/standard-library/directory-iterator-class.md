@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]
 dev_langs: ["C++"]
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::directory_iterator::directory_iterator", "std::experimental::filesystem::directory_iterator::increment", "std::experimental::filesystem::directory_iterator::operator=", "std::experimental::filesystem::directory_iterator::operator==", "std::experimental::filesystem::directory_iterator::operator!=", "std::experimental::filesystem::directory_iterator::operator*", "std::experimental::filesystem::directory_iterator::operator-&gt;", "std::experimental::filesystem::directory_iterator::operator++"]
+ms.workload: ["cplusplus"]
 ---
 # directory_iterator Class
 Describes an input iterator that sequences through the filenames in a directory. For an iterator X, the expression *X evaluates to an object of class directory_entry that wraps the filename and anything known about its status.  

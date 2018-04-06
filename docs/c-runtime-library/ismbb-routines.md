@@ -17,6 +17,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbb Routines
 Tests the given integer value `c` for a particular condition, by using the current locale or a specified LC_CTYPE conversion state category.  

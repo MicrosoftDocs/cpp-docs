@@ -14,6 +14,7 @@ caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)
 

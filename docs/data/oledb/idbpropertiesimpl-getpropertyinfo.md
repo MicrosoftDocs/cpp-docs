@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetPropertyInfo method"]
@@ -15,21 +15,19 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl::GetPropertyInfo
 Returns property information supported by the data source.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetPropertyInfo)(   
-   ULONG cPropertySets,   
+```cpp
+      STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcPropertyInfoSets,   
    DBPROPINFOSET ** prgPropertyInfoSets,   
-   OLECHAR ** ppDescBuffer    
-);  
+   OLECHAR ** ppDescBuffer);  
 ```  
   
 #### Parameters  

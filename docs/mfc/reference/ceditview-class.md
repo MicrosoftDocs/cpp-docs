@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CEditView Class
 A type of view class that provides the functionality of a Windows edit control and can be used to implement simple text-editor functionality.  

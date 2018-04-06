@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComAutoCriticalSection Class
 `CComAutoCriticalSection` provides methods for obtaining and releasing ownership of a critical section object.  

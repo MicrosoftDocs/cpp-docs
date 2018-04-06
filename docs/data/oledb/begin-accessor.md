@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_ACCESSOR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro"]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_ACCESSOR
 Marks the beginning of an accessor entry.  
@@ -22,13 +23,7 @@ Marks the beginning of an accessor entry.
 ## Syntax  
   
 ```  
-  
-BEGIN_ACCESSOR(  
-num  
-,   
-bAuto  
- )  
-  
+BEGIN_ACCESSOR(num, bAuto)  
 ```  
   
 #### Parameters  

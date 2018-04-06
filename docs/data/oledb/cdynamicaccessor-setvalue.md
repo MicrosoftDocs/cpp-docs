@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetValue method"]
@@ -15,29 +15,28 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::SetValue
 Stores data to a specified column.  
   
 ## Syntax  
   
-```  
-  
-      template < class ctype >    
+```cpp  
+template <class ctype>
 bool SetValue(   
    DBORDINAL nColumn,   
-   const ctype& data    
-) throw( );  
-template < class ctype >    
+   constctype& data) throw( );  
+
+template <class ctype>    
 bool SetValue(   
    const CHAR * pColumnName,   
-   const ctype& data    
-) throw( );  
+   const ctype& data) throw( );  
+
 template <class ctype>   
 bool SetValue(  
    const WCHAR *pColumnName,  
-   const ctype& data   
-) throw( );  
+   const ctype& data) throw( );  
 ```  
   
 #### Parameters  

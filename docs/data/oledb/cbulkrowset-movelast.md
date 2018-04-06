@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBulkRowset.MoveLast", "ATL.CBulkRowset.MoveLast", "ATL::CBulkRowset<TAccessor>::MoveLast", "CBulkRowset::MoveLast", "CBulkRowset<TAccessor>.MoveLast", "ATL::CBulkRowset::MoveLast", "ATL.CBulkRowset<TAccessor>.MoveLast", "CBulkRowset<TAccessor>::MoveLast", "MoveLast"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveLast method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::MoveLast
 Moves to the last row.  
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveLast( ) throw( );  
+```cpp
+HRESULT MoveLast() throw();  
   
 ```  
   

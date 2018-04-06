@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["LT", "operator LT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LT operator", "operator LT"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator LT
 Returns true (-1) if *expression1* is less than *expression2*, or returns false (0) if it is not.  

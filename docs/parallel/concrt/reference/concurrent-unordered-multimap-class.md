@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_multimap class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_multimap Class
 The `concurrent_unordered_multimap` class is an concurrency-safe container that controls a varying-length sequence of elements of type `std::pair<const K, _Element_type>`. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations.  

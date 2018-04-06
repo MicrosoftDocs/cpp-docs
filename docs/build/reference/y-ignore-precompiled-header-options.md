@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Y- (Ignore Precompiled Header Options)
 Causes all other `/Y` compiler options to be ignored (and cannot itself be overridden).  

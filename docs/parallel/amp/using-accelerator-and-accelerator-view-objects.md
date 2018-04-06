@@ -13,6 +13,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using accelerator and accelerator_view Objects
 You can use the [accelerator](../../parallel/amp/reference/accelerator-class.md) and [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) classes to specify the device or emulator to run your C++ AMP code on. A system might have several devices or emulators that differ by amount of memory, shared memory support, debugging support, or double-precision support. C++ Accelerated Massive Parallelism (C++ AMP) provides APIs that you can use to examine the available accelerators, set one as the default, specify multiple accelerator_views for multiple calls to parallel_for_each, and perform special debugging tasks.  
@@ -170,10 +171,10 @@ bool pick_accelerator()
   
 - [accelerator::direct3d_warp Data Member](reference/accelerator-class.md#direct3d_warp): This accelerator provides a fallback solution for executing C++ AMP code on multi-core CPUs that use Streaming SIMD Extensions (SSE).  
   
-- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/LinkId=248485) post on the Parallel Programming in Native Code blog.  
+- [accelerator::cpu_accelerator Data Member](reference/accelerator-class.md#cpu_accelerator): You can use this accelerator for setting up staging arrays. It cannot execute C++ AMP code. For more information, see the [Staging Arrays in C++ AMP](http://go.microsoft.com/fwlink/p/?linkId=248485) post on the Parallel Programming in Native Code blog.  
   
 ## Interoperability  
- The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/LinkId=248488). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
+ The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/?linkId=248488). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
   
 ## See Also  
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   

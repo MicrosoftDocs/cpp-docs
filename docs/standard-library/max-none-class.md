@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_none", "allocators/stdext::max_none::allocated", "allocators/stdext::max_none::deallocated", "allocators/stdext::max_none::full", "allocators/stdext::max_none::released", "allocators/stdext::max_none::saved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_none", "stdext::max_none [C++], allocated", "stdext::max_none [C++], deallocated", "stdext::max_none [C++], full", "stdext::max_none [C++], released", "stdext::max_none [C++], saved"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # max_none Class
 Describes a [max class](../standard-library/allocators-header.md) object that limits a [freelist](../standard-library/freelist-class.md) object to a maximum length of zero.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Automation
 Automation (formerly known as OLE Automation) makes it possible for one application to manipulate objects implemented in another application, or to expose objects so they can be manipulated.  
@@ -24,7 +25,7 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
   
 -   Automation (local).  
   
--   [Remote Automation](../mfc/remote-automation.md) (over a network, using Distributed COM, or DCOM).  
+-   Remote Automation (over a network, using Distributed COM, or DCOM).  
   
  Exposing objects is beneficial when applications provide functionality useful to other applications. For example, an ActiveX control is a type of Automation server; the application hosting the ActiveX control is the automation client of that control.  
   
@@ -58,8 +59,6 @@ Automation (formerly known as OLE Automation) makes it possible for one applicat
 -   [Automation Clients](../mfc/automation-clients.md)  
   
 -   [Automation Servers](../mfc/automation-servers.md)  
-  
--   [Remote Automation](../mfc/remote-automation.md)  
   
 -   [OLE](../mfc/ole-in-mfc.md)  
   

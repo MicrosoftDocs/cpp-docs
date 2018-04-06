@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["hdrstop_CPP", "vc-pragma.hdrstop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hdrstop pragma", "pragmas, hdrstop"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # hdrstop
 Gives you additional control over precompilation file names and over the location at which the compilation state is saved.  

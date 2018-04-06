@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::subtract_with_carry_engine", "random/std::subtract_with_carry_engine::default_seed", "random/std::subtract_with_carry_engine::discard", "random/std::subtract_with_carry_engine::min", "random/std::subtract_with_carry_engine::max", "random/std::subtract_with_carry_engine::seed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::subtract_with_carry_engine [C++]", "std::subtract_with_carry_engine [C++], default_seed", "std::subtract_with_carry_engine [C++], discard", "std::subtract_with_carry_engine [C++], min", "std::subtract_with_carry_engine [C++], max", "std::subtract_with_carry_engine [C++], seed"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # subtract_with_carry_engine Class
 Generates a random sequence by the subtract-with-carry (lagged Fibonacci) algorithm.  
@@ -64,7 +65,7 @@ class subtract_with_carry_engine;
  `ranlux48_base`: Used as a base for `ranlux48`.                   
 `typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;`  
   
- For detailed information about the subract with carry engine algorithm, see the Wikipedia article [Lagged Fibonacci generator](http://go.microsoft.com/fwlink/LinkId=402445).  
+ For detailed information about the subract with carry engine algorithm, see the Wikipedia article [Lagged Fibonacci generator](http://go.microsoft.com/fwlink/p/?linkid=402445).  
   
 ## Requirements  
  **Header:** \<random>  

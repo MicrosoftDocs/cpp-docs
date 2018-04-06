@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedAdd_nf intrinsic", "_InterlockedAdd_rel intrinsic", "_InterlockedAdd intrinsic", "_InterlockedAdd64 intrinsic", "_InterlockedAdd64_acq intrinsic", "_InterlockedAdd64_nf intrinsic", "_InterlockedAdd_acq intrinsic", "_InterlockedAdd64_rel intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedAdd Intrinsic Functions
 **Microsoft Specific**  

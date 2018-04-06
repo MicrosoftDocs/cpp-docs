@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDockState Class
 A serialized `CObject` class that loads, unloads, or clears the state of one or more docking control bars in persistent memory (a file).  

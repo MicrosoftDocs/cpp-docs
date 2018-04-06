@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # public (C++ Attributes)
 Ensures that a typedef will go into the type library even if it is not referenced from within the .idl file.  

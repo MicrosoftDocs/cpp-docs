@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr Class
 Creates a *smart pointer* type that represents the interface specified by the template parameter. ComPtr automatically maintains a reference count for the underlying interface pointer and releases the interface when the reference count goes to zero.  
@@ -22,14 +23,10 @@ Creates a *smart pointer* type that represents the interface specified by the te
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
+template <typename T>  
 class ComPtr;  
   
-template<  
-   class U  
->  
+template<class T>  
 friend class ComPtr;  
 ```  
   

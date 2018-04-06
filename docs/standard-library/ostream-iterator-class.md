@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iterator/std::ostream_iterator", "iterator/std::ostream_iterator::char_type", "iterator/std::ostream_iterator::ostream_type", "iterator/std::ostream_iterator::traits_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::ostream_iterator [C++]", "std::ostream_iterator [C++], char_type", "std::ostream_iterator [C++], ostream_type", "std::ostream_iterator [C++], traits_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ostream_iterator Class
 The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction **operator <<**.  

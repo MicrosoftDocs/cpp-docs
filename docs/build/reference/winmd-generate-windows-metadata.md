@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WINMD (Generate Windows Metadata)
 Enables generation of a Windows Runtime Metadata (.winmd) file.  
@@ -24,7 +25,7 @@ Enables generation of a Windows Runtime Metadata (.winmd) file.
   
 ## Remarks  
  /WINMD  
- The default setting for [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The linker generates both the binary executable file and the .winmd metadata file.  
+ The default setting for Universal Windows Platform apps. The linker generates both the binary executable file and the .winmd metadata file.  
   
  /WINMD:NO  
  The linker generates only the binary executable file, but not a .winmd file.  

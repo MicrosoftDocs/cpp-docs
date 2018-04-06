@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_FUNC_INFO structure", "ATL_FUNC_INFO structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_FUNC_INFO Structure
 Contains type information used to describe a method or property on a dispinterface.  

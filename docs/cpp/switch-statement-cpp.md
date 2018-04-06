@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # switch Statement (C++)
 Allows selection among multiple sections of code, depending on the value of an integral expression.  

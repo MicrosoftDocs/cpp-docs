@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase::DecrementObjectCount Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

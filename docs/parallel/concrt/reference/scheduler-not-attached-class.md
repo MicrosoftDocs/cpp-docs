@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_not_attached class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_not_attached Class
 This class describes an exception thrown when an operation is performed which requires a scheduler to be attached to the current context and one is not.  

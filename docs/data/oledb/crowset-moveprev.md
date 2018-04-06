@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>.MovePrev", "CRowset.MovePrev", "MovePrev", "CRowset::MovePrev", "ATL.CRowset.MovePrev", "ATL::CRowset<TAccessor>::MovePrev", "ATL::CRowset::MovePrev", "ATL.CRowset<TAccessor>.MovePrev", "CRowset<TAccessor>::MovePrev"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MovePrev method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::MovePrev
 Moves the cursor to the previous record.  
   
 ## Syntax  
   
-```  
-  
-HRESULT MovePrev( ) throw( );  
+```cpp
+HRESULT MovePrev() throw();  
   
 ```  
   

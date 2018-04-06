@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Recommendations for Handling Input/Output
 Whether you use file-based I/O or not depends on how you respond to the questions in the following decision tree:  

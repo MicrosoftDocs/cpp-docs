@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["queue/std::priority_queue::container_type", "queue/std::priority_queue::size_type", "queue/std::priority_queue::value_type", "queue/std::priority_queue::empty", "queue/std::priority_queue::pop", "queue/std::priority_queue::push", "queue/std::priority_queue::size", "queue/std::priority_queue::top"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::priority_queue [C++], container_type", "std::priority_queue [C++], size_type", "std::priority_queue [C++], value_type", "std::priority_queue [C++], empty", "std::priority_queue [C++], pop", "std::priority_queue [C++], push", "std::priority_queue [C++], size", "std::priority_queue [C++], top"]
@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # priority_queue Class
 A template container adaptor class that provides a restriction of functionality limiting access to the top element of some underlying container type, which is always the largest or of the highest priority. New elements can be added to the priority_queue and the top element of the priority_queue can be inspected or removed.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::uniform_int_distribution", "random/std::uniform_int_distribution::reset", "random/std::uniform_int_distribution::a", "random/std::uniform_int_distribution::b", "random/std::uniform_int_distribution::param", "random/std::uniform_int_distribution::min", "random/std::uniform_int_distribution::max", "random/std::uniform_int_distribution::operator()", "random/std::uniform_int_distribution::param_type", "random/std::uniform_int_distribution::param_type::a", "random/std::uniform_int_distribution::param_type::b", "random/std::uniform_int_distribution::param_type::operator==", "random/std::uniform_int_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::uniform_int_distribution [C++]", "std::uniform_int_distribution [C++], reset", "std::uniform_int_distribution [C++], a", "std::uniform_int_distribution [C++], b", "std::uniform_int_distribution [C++], param", "std::uniform_int_distribution [C++], min", "std::uniform_int_distribution [C++], max", "std::uniform_int_distribution [C++], param_type", "std::uniform_int_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # uniform_int_distribution Class
 Generates a uniform (every value is equally probable) integer distribution within an output range that is inclusive-inclusive.  

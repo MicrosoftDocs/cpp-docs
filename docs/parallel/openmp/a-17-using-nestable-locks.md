@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.17   Using Nestable Locks
 The following example (for [Section 3.2](../../parallel/openmp/3-2-lock-functions.md) on page 41) demonstrates how a nestable lock can be used to synchronize updates both to a whole structure and to one of its members.  

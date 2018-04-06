@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Single-Byte and Multibyte Character Sets
 The ASCII character set defines characters in the range 0x00 - 0x7F. There are a number of other character sets, primarily European, that define the characters within the range 0x00 - 0x7F identically to the ASCII character set and also define an extended character set from 0x80 - 0xFF. Thus an 8-bit, single-byte-character set (`SBCS`) is sufficient to represent the ASCII character set as well as the character sets for many European languages. However, some non-European character sets, such as Japanese Kanji, include many more characters than can be represented in a single-byte coding scheme, and therefore require multibyte-character set (`MBCS`) encoding.  

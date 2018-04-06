@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN068: Performing Transactions with the Microsoft Access 7 ODBC Driver
 > [!NOTE]

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Tracking References in C++/CLI
 This article shows how to use a tracking reference (%) in C++/CLI to pass common language runtime (CLR) types by reference.  

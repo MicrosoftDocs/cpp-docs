@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CA2AEX Class
 This class is used by the string conversion macros `CA2TEX` and `CT2AEX`, and the typedef **CA2A**.  

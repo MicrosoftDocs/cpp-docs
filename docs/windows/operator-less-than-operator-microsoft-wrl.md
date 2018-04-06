@@ -14,6 +14,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # operator&lt; Operator (Microsoft::WRL)
 Determines if the address of one object is less than another.  

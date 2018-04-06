@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xloctime/std::time_put_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["time_put_byname class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # time_put_byname Class
 The derived template class describes an object that can serve as a locale facet of type `time_put`\< CharType, OutputIterator >.  

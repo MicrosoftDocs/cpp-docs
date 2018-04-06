@@ -14,6 +14,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a C++ AMP Application
 This topic demonstrates how to debug an application that uses C++ Accelerated Massive Parallelism (C++ AMP) to take advantage of the graphics processing unit (GPU). It uses a parallel-reduction program that sums up a large array of integers. This walkthrough illustrates the following tasks:  
@@ -384,5 +385,5 @@ Grouped threads in the GPU Threads window
  [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
  [How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)   
  [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)   
- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)
+ [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
 

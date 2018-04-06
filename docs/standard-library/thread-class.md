@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]
 dev_langs: ["C++"]
 ms.assetid: df249bc7-ff81-4ff9-a6d6-5e3d9a8f56a1
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
+ms.workload: ["cplusplus"]
 ---
 # thread Class
 Defines an object that's used to observe and manage a thread of execution within an application.  

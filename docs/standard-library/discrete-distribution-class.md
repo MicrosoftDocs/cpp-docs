@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::discrete_distribution", "random/std::discrete_distribution::reset", "random/std::discrete_distribution::probabilities", "random/std::discrete_distribution::param", "random/std::discrete_distribution::min", "random/std::discrete_distribution::max", "random/std::discrete_distribution::operator()", "random/std::discrete_distribution::param_type", "random/std::discrete_distribution::param_type::probabilities", "random/std::discrete_distribution::param_type::operator==", "random/std::discrete_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::discrete_distribution [C++]", "std::discrete_distribution [C++], reset", "std::discrete_distribution [C++], probabilities", "std::discrete_distribution [C++], param", "std::discrete_distribution [C++], min", "std::discrete_distribution [C++], max", "std::discrete_distribution [C++], param_type", "std::discrete_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # discrete_distribution Class
 Generates a discrete integer distribution that has uniform-width intervals with uniform probability in each interval.  

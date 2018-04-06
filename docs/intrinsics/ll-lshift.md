@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__ll_lshift_cpp", "__ll_lshift"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ll_lshift intrinsic", "__ll_lshift intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __ll_lshift
 **Microsoft Specific**  

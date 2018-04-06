@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ArgTraits Structure
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
@@ -22,13 +23,9 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   typename TMemberFunction  
->  
+template<typename TMemberFunction>  
 struct ArgTraits;  
-template<  
-   typename TDelegateInterface  
->  
+template<typename TDelegateInterface>  
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(void)>;  
 template<  
    typename TDelegateInterface,  

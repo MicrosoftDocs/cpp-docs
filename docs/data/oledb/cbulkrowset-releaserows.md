@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ReleaseRows", "ATL.CBulkRowset<TAccessor>.ReleaseRows", "ATL::CBulkRowset<TAccessor>::ReleaseRows", "ATL.CBulkRowset.ReleaseRows", "CBulkRowset<TAccessor>::ReleaseRows", "ATL::CBulkRowset::ReleaseRows", "CBulkRowset::ReleaseRows", "CBulkRowset.ReleaseRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReleaseRows method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::ReleaseRows
 Calls [IRowset::ReleaseRows](https://msdn.microsoft.com/en-us/library/ms719771.aspx) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
   
 ## Syntax  
   
-```  
-  
-HRESULT ReleaseRows( ) throw( );  
+```cpp
+HRESULT ReleaseRows() throw();  
   
 ```  
   

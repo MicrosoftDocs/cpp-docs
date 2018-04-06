@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CProcedures", "m_szCatalog", "CProcedureInfo", "m_szSchema", "m_szDefinition", "m_szName", "m_nType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DESCRIPTION class data member", "m_szSchema", "m_nType", "m_szCatalog", "CProcedureInfo parameter class", "m_szName", "m_szDescription", "m_szDefinition", "CProcedures typedef class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CProcedures, CProcedureInfo
 Call the typedef class **CProcedures** to implement its parameter class **CProcedureInfo**.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetCreatorImpl.SetSite", "IRowsetCreatorImpl<T>::SetSite", "IRowsetCreatorImpl::SetSite", "SetSite", "ATL.IRowsetCreatorImpl.SetSite", "ATL::IRowsetCreatorImpl<T>::SetSite", "ATL::IRowsetCreatorImpl::SetSite", "ATL.IRowsetCreatorImpl<T>.SetSite"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetSite method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetCreatorImpl::SetSite
 Sets the site that contains the rowset object. For more information, see [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869).  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( SetSite )(  
-   IUnknown* pCreator   
-);  
+```cpp
+      STDMETHOD(SetSite )(IUnknown* pCreator);  
 ```  
   
 #### Parameters  

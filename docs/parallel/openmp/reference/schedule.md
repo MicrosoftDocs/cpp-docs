@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["schedule"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["schedule OpenMP clause"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # schedule
 Applies to the [for](../../../parallel/openmp/reference/for-openmp.md) directive.  

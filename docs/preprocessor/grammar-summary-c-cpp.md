@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["grammar", "preprocessor, grammar"]
 ms.assetid: 0acb6e9b-364c-4ef8-ace4-7be980521121
@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Grammar Summary (C/C++)
 This section describes the formal grammar of the preprocessor. It covers the syntax of preprocessing directives and operators discussed in [The Preprocessor](../preprocessor/preprocessor.md) and in [Pragma Directives](../preprocessor/pragma-directives-and-the-pragma-keyword.md).  

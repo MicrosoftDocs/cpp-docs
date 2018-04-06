@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["functional/std::binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary_function class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # binary_function Struct
 An empty base struct that defines types that may be inherited by derived classes that provides a binary function object.  

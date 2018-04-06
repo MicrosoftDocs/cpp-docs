@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAxWindow2T Class
 This class provides methods for manipulating a window that hosts an ActiveX control, and also has support for hosting licensed ActiveX controls.  

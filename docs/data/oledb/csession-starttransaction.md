@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession::StartTransaction", "StartTransaction", "ATL.CSession.StartTransaction", "CSession.StartTransaction", "ATL::CSession::StartTransaction"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["StartTransaction method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession::StartTransaction
 Begins a new transaction for this session.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT StartTransaction(  
-   ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,  
+```cpp
+HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,  
    ULONG isoFlags = 0,  
    ITransactionOptions* pOtherOptions = NULL,  
-   ULONG* pulTransactionLevel = NULL   
-) const throw( );  
+   ULONG* pulTransactionLevel = NULL) const throw();  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # auto_ptr Class
 Wraps a smart pointer around a resource that ensures the resource is destroyed automatically when control leaves a block.  

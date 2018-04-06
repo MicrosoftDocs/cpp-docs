@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Frame Window Classes (Architecture)
 In document/view architecture, frame windows are windows that contain a view window. They also support having control bars attached to them.  

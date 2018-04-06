@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CObList Class
 fSupports ordered lists of nonunique `CObject` pointers accessible sequentially or by pointer value.  

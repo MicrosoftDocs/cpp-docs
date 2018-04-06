@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RefRows method"]
@@ -15,21 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::RefRows
 Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) to either increment or release a reference count to an existing row handle.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT RefRows(  
-   DBCOUNTITEM cRows,  
-   const HROW rghRows[],  
+```
+HRESULT RefRows(DBCOUNTITEM cRows,  
+   const HROWrghRows[],  
    DBREFCOUNT rgRefCounts[],  
    DBROWSTATUS rgRowStatus[],  
-   BOOL bAdd   
-);  
+   BOOL bAdd);  
 ```  
   
 #### Parameters  

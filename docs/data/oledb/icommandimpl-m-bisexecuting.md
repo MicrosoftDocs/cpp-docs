@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting", "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bIsExecuting"]
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl::m_bIsExecuting
 Indicates whether the command is currently executing.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bIsExecuting:1;  
   
 ```  

@@ -14,6 +14,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Extend the Marshaling Library
 This topic explains how to extend the marshaling library to provide more conversions between data types. Users can extend the marshaling library for any data conversions not currently supported by the library.  

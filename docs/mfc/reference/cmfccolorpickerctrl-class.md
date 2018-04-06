@@ -15,6 +15,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorPickerCtrl Class
 The `CMFCColorPickerCtrl` class provides functionality for a control that is used to select colors.  

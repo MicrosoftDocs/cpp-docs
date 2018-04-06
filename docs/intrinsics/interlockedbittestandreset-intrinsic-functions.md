@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_interlockedbittestandreset_rel", "_interlockedbittestandreset64", "_interlockedbittestandreset64_HLERelease", "_interlockedbittestandreset_HLERelease", "_interlockedbittestandreset_HLEAcquire", "_interlockedbittestandreset_acq", "_interlockedbittestandreset_cpp", "_interlockedbittestandreset_nf", "_interlockedbittestandreset64_cpp", "_interlockedbittestandreset64_HLEAcquire", "_interlockedbittestandreset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["lock_btr instruction", "_interlockedbittestandreset64 intrinsic", "_interlockedbittestandreset intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _interlockedbittestandreset Intrinsic Functions
 **Microsoft Specific**  

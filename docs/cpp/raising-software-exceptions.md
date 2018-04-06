@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Raising Software Exceptions
 Some of the most common sources of program errors are not flagged as exceptions by the system. For example, if you attempt to allocate a memory block but there is insufficient memory, the run-time or API function does not raise an exception but returns an error code.  
@@ -28,7 +29,7 @@ Some of the most common sources of program errors are not flagged as exceptions 
   
 -   Use exception-handling filters to test for the exception code you defined.  
   
- The WINERROR.H file shows the format for exception codes. To make sure that you do not define a code that conflicts with an existing exception code, set the third most significant bit to 1. The four most-significant bits should be set as shown in the following table.  
+ The \<winerror.h> file shows the format for exception codes. To make sure that you do not define a code that conflicts with an existing exception code, set the third most significant bit to 1. The four most-significant bits should be set as shown in the following table.  
   
 |Bits|Recommended binary setting|Description|  
 |----------|--------------------------------|-----------------|  

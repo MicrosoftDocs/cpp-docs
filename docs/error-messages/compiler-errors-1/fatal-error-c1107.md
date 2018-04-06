@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1107
 could not find assembly 'file': please specify the assembly search path using /AI or by setting the LIBPATH environment variable  

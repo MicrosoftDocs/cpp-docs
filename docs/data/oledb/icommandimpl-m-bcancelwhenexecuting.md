@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting", "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bCancelWhenExecuting"]
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl::m_bCancelWhenExecuting
 Indicates whether the command can be canceled when executing.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bCancelWhenExecuting:1;  
   
 ```  

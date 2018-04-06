@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["reduction"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reduction OpenMP clause"]
@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # reduction
 Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.  

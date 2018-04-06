@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SUBTITLE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SUBTITLE directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SUBTITLE
 Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).  

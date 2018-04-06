@@ -15,6 +15,7 @@ caps.latest.revision: 37
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Options
 

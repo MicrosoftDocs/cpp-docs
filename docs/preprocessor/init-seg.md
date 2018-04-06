@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.init_seg", "init_seg_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, init_seg", "init_seg pragma", "data segment initializing [C++]"]
@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # init_seg
 **C++ Specific**  

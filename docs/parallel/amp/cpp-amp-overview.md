@@ -14,6 +14,7 @@ caps.latest.revision: 60
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ AMP Overview
 C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code by taking advantage of data-parallel hardware such as a graphics processing unit (GPU) on a discrete graphics card. By using C++ AMP, you can code multi-dimensional data algorithms so that execution can be accelerated by using parallelism on heterogeneous hardware. The C++ AMP programming model includes multidimensional arrays, indexing, memory transfer, tiling, and a mathematical function library. You can use C++ AMP language extensions to control how data is moved from the CPU to the GPU and back, so that you can improve performance.  
@@ -417,7 +418,7 @@ for (int i = 0; i <4; i++) {
 ```  
   
 ## Math Libraries  
- C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
+ C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The `restrict` keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.  
 
   
 ```cpp  
@@ -454,18 +455,18 @@ void MathExample() {
   
 - [Short Vector Library](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): Defines a set of short vector types of length 2, 3, and 4 that are based on `int`, `uint`, `float`, `double`, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
   
-## [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] Apps  
- Like other C++ libraries, you can use C++ AMP in your [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. These articles describe how to include C++ AMP code in apps that is created by using C++, C#, Visual Basic, or JavaScript:  
+## Universal Windows Platform (UWP) Apps  
+ Like other C++ libraries, you can use C++ AMP in your UWP apps. These articles describe how to include C++ AMP code in apps that is created by using C++, C#, Visual Basic, or JavaScript:  
   
-- [Using C++ AMP in Windows Store Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
+- [Using C++ AMP in UWP Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
-- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](http://go.microsoft.com/fwlink/p/linkid=249077)  
+- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](http://go.microsoft.com/fwlink/p/?linkid=249077)  
   
-- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](http://go.microsoft.com/fwlink/p/linkid=249078)  
+- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](http://go.microsoft.com/fwlink/p/?linkid=249078)  
   
-- [How to use C++ AMP from C# using the Windows Runtime](http://go.microsoft.com/fwlink/p/linkid=249080)  
+- [How to use C++ AMP from C# using the Windows Runtime](http://go.microsoft.com/fwlink/p/?linkid=249080)  
   
-- [How to use C++ AMP from C#](http://go.microsoft.com/fwlink/p/linkid=249081)  
+- [How to use C++ AMP from C#](http://go.microsoft.com/fwlink/p/?linkid=249081)  
   
 - [Calling Native Functions from Managed Code](../../dotnet/calling-native-functions-from-managed-code.md)  
   
@@ -482,7 +483,7 @@ void MathExample() {
   
 - [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)  
   
-- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)  
+- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)  
   
 ## Performance Recommendations  
  Modulus and division of unsigned integers have significantly better performance than modulus and division of signed integers. We recommend that you use unsigned integers when possible.  
@@ -491,4 +492,4 @@ void MathExample() {
  [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
  [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)   
  [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)   
- [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/linkid=238472)
+ [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)

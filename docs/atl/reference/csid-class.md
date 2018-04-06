@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSid Class
 This class is a wrapper for a `SID` (security identifier) structure.  
@@ -465,7 +466,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### Return Value  
- Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399), although this function is only available on Windows 2000 or later and so is emulated for earlier operating systems.  
+ Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
   
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  Returns a description of the state of the `CSid` object.  

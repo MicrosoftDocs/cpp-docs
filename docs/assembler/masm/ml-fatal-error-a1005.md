@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "error-reference"
 f1_keywords: ["A1005"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A1005"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1005
 **assembler limit : macro parameter name table full**  

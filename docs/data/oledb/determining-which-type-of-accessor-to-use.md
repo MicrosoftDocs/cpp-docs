@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Determining Which Type of Accessor to Use
 You can determine data types on a rowset at compile time or at run time.  

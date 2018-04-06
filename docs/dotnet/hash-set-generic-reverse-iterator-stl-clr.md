@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::generic_reverse_iterator (STL/CLR)
 The type of a reverse iterator for use with the generic interface for the container.  

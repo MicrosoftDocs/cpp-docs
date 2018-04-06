@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_istringstream Class
 Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  

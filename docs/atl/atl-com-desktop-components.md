@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL COM Desktop Components
 The ATL Reference documents the Active Template Library (ATL), a set of template-based C++ classes that simplify the programming of Component Object Model (COM) objects. To fully take advantage of ATL, a working familiarity with COM is highly recommended.  
@@ -58,7 +59,3 @@ The ATL Reference documents the Active Template Library (ATL), a set of template
   
  [OLE DB Templates](../data/oledb/ole-db-templates.md)  
  Provides reference material for the OLE DB consumer and provider templates, a set of template classes that implement many commonly used OLE DB interfaces.  
-  
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.
-

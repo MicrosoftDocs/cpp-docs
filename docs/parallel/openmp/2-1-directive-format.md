@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.1 Directive Format
 The syntax of an OpenMP directive is formally specified by the grammar in [Appendix C](../../parallel/openmp/c-openmp-c-and-cpp-grammar.md), and informally as follows:  

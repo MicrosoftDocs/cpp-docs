@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateSessionImpl class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
 Provides an implementation for the [IDBCreateSession](https://msdn.microsoft.com/en-us/library/ms724076.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class SessionClass>  
 class ATL_NO_VTABLE IDBCreateSessionImpl   
    : public IDBCreateSession  

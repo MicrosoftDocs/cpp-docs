@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IErrorRecordsImpl::GetCustomErrorObject", "IErrorRecordsImpl::GetCustomErrorObject", "ATL.IErrorRecordsImpl.GetCustomErrorObject", "IErrorRecordsImpl.GetCustomErrorObject", "GetCustomErrorObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCustomErrorObject method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl::GetCustomErrorObject
 Returns a pointer to an interface on a custom error object.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetCustomErrorObject )(  
-   ULONG ulRecordNum,  
+```cpp
+      STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,  
    REFIID riid,  
-   IUnknown **ppObject   
-);  
+   IUnknown **ppObject);  
 ```  
   
 #### Parameters  

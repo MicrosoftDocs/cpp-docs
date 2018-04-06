@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IPropertyPage2Impl Class
 This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  

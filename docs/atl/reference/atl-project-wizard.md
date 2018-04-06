@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Project Wizard
 The Active Template Library (ATL) is a set of template-based C++ classes that simplify writing small and fast COM objects. The ATL Project Wizard creates a project with the structures to contain COM objects.  

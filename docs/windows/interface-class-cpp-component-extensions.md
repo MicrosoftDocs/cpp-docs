@@ -15,6 +15,7 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # interface class  (C++ Component Extensions)
 Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).  

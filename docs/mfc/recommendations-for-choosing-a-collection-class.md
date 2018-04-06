@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing a Collection Class
 This article contains detailed information designed to help you choose a collection class for your particular application needs.  

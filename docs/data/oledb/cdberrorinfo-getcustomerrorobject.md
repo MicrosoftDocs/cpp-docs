@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo::GetCustomErrorObject", "ATL.CDBErrorInfo.GetCustomErrorObject", "CDBErrorInfo.GetCustomErrorObject", "ATL::CDBErrorInfo::GetCustomErrorObject", "GetCustomErrorObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCustomErrorObject method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetCustomErrorObject
 Calls [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/en-us/library/ms725417.aspx) to return a pointer to an interface on a custom error object.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetCustomErrorObject(   
-   ULONG ulRecordNum,   
-   REFIID riid,   
-   IUnknown** ppObject    
-) const throw( );  
+```
+HRESULT GetCustomErrorObject(ULONG ulRecordNum,   
+   REFIID riid,IUnknown** ppObject) const throw();  
 ```  
   
 #### Parameters  

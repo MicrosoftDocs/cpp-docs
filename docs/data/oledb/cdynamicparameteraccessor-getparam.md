@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParam method"]
@@ -15,28 +15,23 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::GetParam
 Retrieves the nonstring data for a specified parameter from the parameter buffer.  
   
 ## Syntax  
   
-```  
-  
-      template < class ctype > bool GetParam(   
-   DBORDINAL nParam,   
-   ctype* pData    
-) const throw( );  
-template < class ctype > bool GetParam(   
-   TCHAR* pParamName,   
-   ctype* pData    
-) const throw( );  
-void* GetParam(   
-   DBORDINAL nParam    
-) const throw( );  
-void* GetParam(   
-   TCHAR* pParamName    
-) const throw( );  
+```cpp
+template <class ctype>bool GetParam(DBORDINAL nParam,   
+  ctype* pData) const throw();  
+
+template <class ctype> bool GetParam(TCHAR* pParamName,   
+   ctype* pData) const throw();  
+
+void* GetParam(DBORDINAL nParam) const throw();  
+
+void* GetParam(TCHAR* pParamName) const throw();  
 ```  
   
 #### Parameters  

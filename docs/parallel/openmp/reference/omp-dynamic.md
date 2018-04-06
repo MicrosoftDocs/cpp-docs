@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OMP_DYNAMIC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OMP_DYNAMIC OpenMP environment variable"]
@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OMP_DYNAMIC
 Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.  

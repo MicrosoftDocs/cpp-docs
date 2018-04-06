@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot Class
 Automatic resource management (like [auto_ptr Class](../standard-library/auto-ptr-class.md)) which can be used to embed a virtual handle into a native type.  

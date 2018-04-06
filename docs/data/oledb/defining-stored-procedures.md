@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, syntax", "OLE DB, stored procedures", "stored procedures, defining", "stored procedures, OLE DB"]
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Defining Stored Procedures
 Before calling a stored procedure, you must first define it, using the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. When you define the command, denote parameters with a question mark (?) as the parameter marker:  
@@ -45,16 +46,17 @@ DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")
  Next, declare the command class:  
   
 ```  
-class CMySProc : public CCommand<CAccessor<CMySProcAccessor> >  
+class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>  
 ```  
   
  Finally, call the stored procedure in `OpenRowset` as follows:  
   
 ```  
 CSession m_session;  
+
 HRESULT OpenRowset()  
 {  
-   return CCommand<CAccessor<CMySProcAccessor> >::Open(m_session);  
+   return CCommand<CAccessor<CMySProcAccessor>>::Open(m_session);  
 }  
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, regular expressions", "regular expressions, Visual C++", "regular expressions"]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Regular Expressions (C++)
 The C++ standard library supports multiple regular expression grammars. This topic discusses the grammar variations available when using regular expressions.  
@@ -26,7 +27,7 @@ The regular expression grammar to use is by specified by the use of one of the `
 -   `extended`: The POSIX extended regular expressions or ERE.
 -   `awk`: This is `extended`, but it has additional escapes for non-printing characters.
 -   `grep`: This is `basic`, but it also allows newline ('\n') characters to separate alternations.
--   `egrep`: This is `extended`, but it also allows newline characters to separate alternatios.
+-   `egrep`: This is `extended`, but it also allows newline characters to separate alternations.
 
 By default, if no grammar is specified, `ECMAScript` is assumed. Only one grammar may be specified.  
   

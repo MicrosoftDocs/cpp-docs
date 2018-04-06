@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Label"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LABEL directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LABEL (MASM)
 Creates a new label by assigning the current location-counter value and the given `type` to *name*.  

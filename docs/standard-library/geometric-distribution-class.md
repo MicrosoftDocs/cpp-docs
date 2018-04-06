@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::geometric_distribution [C++]", "std::geometric_distribution [C++], reset", "std::geometric_distribution [C++], p", "std::geometric_distribution [C++], param", "std::geometric_distribution [C++], min", "std::geometric_distribution [C++], max", "std::geometric_distribution [C++], param_type", "std::geometric_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # geometric_distribution Class
 Generates a geometric distribution.  
@@ -75,7 +76,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Geometric Distribution](http://go.microsoft.com/fwlink/LinkId=400529).  
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Geometric Distribution](http://go.microsoft.com/fwlink/p/?linkid=400529).  
   
 ## Example  
   

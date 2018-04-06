@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor::CDynamicAccessor", "ATL::CDynamicAccessor::CDynamicAccessor", "ATL.CDynamicAccessor.CDynamicAccessor", "CDynamicAccessor.CDynamicAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicAccessor class, constructor"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::CDynamicAccessor
 Instantiates and initializes the `CDynamicAccessor` object.  
   
 ## Syntax  
   
-```  
-  
-      CDynamicAccessor(   
-   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
-   DBLENGTH nBlobSize = 8000   
-);  
+```cpp
+      CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+   DBLENGTH nBlobSize = 8000);  
 ```  
   
 #### Parameters  

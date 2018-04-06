@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFixedStringT: Example of a Custom String Manager
 The ATL library implements one example of a custom string manager used by class [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md), called **CFixedStringMgr**. `CFixedStringT` is derived from [CStringT](../atl-mfc-shared/reference/cstringt-class.md) and implements a string that allocates its character data as part of the `CFixedStringT` object itself as long as the string is less than the length specified by the **t_nChars** template parameter of `CFixedStringT`. With this approach, the string does not need the heap at all, unless the length of the string grows beyond the size of the fixed buffer. Because `CFixedStringT` does not always use a heap to allocate its string data, it cannot use **CAtlStringMgr** as its string manager. It uses a custom string manager (**CFixedStringMgr**), implementing the [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) interface. This interface is discussed in [Implementation of a Custom String Manager (Advanced Method)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Containers
 A container application is an application that can incorporate embedded or linked items into its own documents. The documents managed by a container application must be able to store and display OLE compound document components as well as data created by the application itself. A container application must also allow users to insert new items or edit existing items.  

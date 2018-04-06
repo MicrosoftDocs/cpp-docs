@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource::OpenWithServiceComponents", "OpenWithServiceComponents", "CDataSource.OpenWithServiceComponents"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenWithServiceComponents method"]
@@ -15,24 +15,22 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::OpenWithServiceComponents
 Opens a data source object using the service components in oledb32.dll.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenWithServiceComponents (  
-   const CLSID clsid,  
+```cpp
+HRESULT OpenWithServiceComponents (const CLSID clsid,  
    DBPROPSET* pPropset = NULL,  
-   ULONG ulPropSets = 1   
-);  
-HRESULT OpenWithServiceComponents (  
-   LPCSTR szProgID,  
+   ULONG ulPropSets = 1);  
+
+
+HRESULT OpenWithServiceComponents (LPCSTR szProgID,  
    DBPROPSET* pPropset = NULL,  
-   ULONG ulPropSets = 1   
-);  
+   ULONG ulPropSets = 1);  
 ```  
   
 #### Parameters  

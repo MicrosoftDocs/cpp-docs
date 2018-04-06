@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Basic Concepts in Using Managed Exceptions
 This topic discusses exception handling in managed applications. That is, an application that is compiled with the **/clr** compiler option.  

@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CLongBinary Class
 Simplifies working with very large binary data objects (often called BLOBs, or "binary large objects") in a database.  

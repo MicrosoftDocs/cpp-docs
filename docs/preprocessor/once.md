@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.once", "once_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["once pragma", "pragmas, once"]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # once
 Specifies that the file will be included (opened) only once by the compiler when compiling a source code file.  

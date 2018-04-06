@@ -1,17 +1,17 @@
 ---
-title: Step 1 - Create a C++ console app project | Microsoft Docs
-description: "Install Visual Studio support for Visual C++"
+title: Create a C++ console app project | Microsoft Docs
+description: "Create a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 10/17/2017
+ms.date: 12/12/2017
 ms.topic: "get-started-article"
-ms.technology:
-  - "devlang-C++"
+ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Create a C++ console app project
 
@@ -19,7 +19,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Step 0 - Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
+- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
 
 ## Create your app project
 
@@ -88,7 +88,7 @@ When the code looks like this in the editor, you're ready to go on to the next s
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Step 2: Build and run a C++ project](vscpp-step-2-build.md)
+> [Build and run a C++ project](vscpp-step-2-build.md)
 
 ## Troubleshooting guide
 

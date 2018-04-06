@@ -6,13 +6,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OpenMP Environment Variables
 Provides links to environment variables used in the OpenMP API.  

@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal ANSI Strings Using C++ Interop
 This topic demonstrates how ANSI strings can be passed using C++ Interop, but the .NET Framework <xref:System.String> represents strings in Unicode format, so conversion to ANSI is an extra step. For interoperating with other string types, see the following topics:  

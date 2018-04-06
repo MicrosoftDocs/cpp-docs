@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Windows Programming Symbols
 These symbols are also part of the MFC support files, but they support standard Windows application functions and actions. These symbols are mainly used with menus. When you are working with menus in the Menu Editor, these symbols will appear in the Property Window associated with common menu commands. For instance, if your application has a File menu with an Exit command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_handle class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # task_handle Class
 The `task_handle` class represents an individual parallel work item. It encapsulates the instructions and the data required to execute a piece of work.  

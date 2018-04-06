@@ -14,6 +14,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # nullptr  (C++ Component Extensions)
 The `nullptr` keyword represents a *null pointer value*. Use a null pointer value to indicate that an object handle, interior pointer, or native pointer type does not point to an object.  

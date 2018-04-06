@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: Performing a Transaction in a Recordset (ODBC)
 This topic explains how to perform a transaction in a recordset.  

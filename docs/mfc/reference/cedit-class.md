@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CEdit Class
 Provides the functionality of a Windows edit control.  
@@ -242,7 +243,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the edit control's style. Apply any combination of [edit styles](edit-styles.md) to the control.  
+ Specifies the edit control's style. Apply any combination of [edit styles](styles-used-by-mfc.md#edit-styles) to the control.  
   
  `rect`  
  Specifies the edit control's size and position. Can be a `CRect` object or `RECT` structure.  
@@ -263,7 +264,7 @@ virtual BOOL Create(
   
  These messages are handled by default by the [OnNcCreate](cwnd-class.md#onnccreate), [OnNcCalcSize](cwnd-class.md#onnccalcsize), [OnCreate](cwnd-class.md#oncreate), and [OnGetMinMaxInfo](cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CEdit`, add a message map to the new class, and override the above message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for the new class.  
   
- Apply the following [window styles](window-styles.md) to an edit control.  
+ Apply the following [window styles](styles-used-by-mfc.md#window-styles) to an edit control.  
   
 - **WS_CHILD** Always  
   
@@ -978,7 +979,7 @@ void SetPasswordChar(TCHAR ch);
   
  When the `SetPasswordChar` member function is called, `CEdit` will redraw all visible characters using the character specified by *ch*.  
   
- If the edit control is created with the [ES_PASSWORD](edit-styles.md) style, the default password character is set to an asterisk ( **\***). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
+ If the edit control is created with the [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) style, the default password character is set to an asterisk ( **\***). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
   
  For more information, see [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) in the Windows SDK.  
   
@@ -1000,7 +1001,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
  Nonzero if the operation is successful, or 0 if an error occurs.  
   
 ### Remarks  
- The current setting can be found by testing the [ES_READONLY](edit-styles.md) flag in the return value of [CWnd::GetStyle](cwnd-class.md#getstyle).  
+ The current setting can be found by testing the [ES_READONLY](styles-used-by-mfc.md#edit-styles) flag in the return value of [CWnd::GetStyle](cwnd-class.md#getstyle).  
   
  For more information, see [EM_SETREADONLY](http://msdn.microsoft.com/library/windows/desktop/bb761655) in the Windows SDK.  
   

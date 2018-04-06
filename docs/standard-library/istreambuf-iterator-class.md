@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["streambuf/std::istreambuf_iterator", "iterator/std::istreambuf_iterator::char_type", "iterator/std::istreambuf_iterator::int_type", "iterator/std::istreambuf_iterator::istream_type", "iterator/std::istreambuf_iterator::streambuf_type", "iterator/std::istreambuf_iterator::traits_type", "iterator/std::istreambuf_iterator::equal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::istreambuf_iterator [C++]", "std::istreambuf_iterator [C++], char_type", "std::istreambuf_iterator [C++], int_type", "std::istreambuf_iterator [C++], istream_type", "std::istreambuf_iterator [C++], streambuf_type", "std::istreambuf_iterator [C++], traits_type", "std::istreambuf_iterator [C++], equal"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # istreambuf_iterator Class
 The template class istreambuf_iterator describes an input iterator object that extracts character elements from an input stream buffer, which it accesses through an object it stores, of type pointer to `basic_streambuf`\< **CharType**, **Traits**>.  

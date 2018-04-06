@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeDivide
 Divides two numbers in a way that protects against dividing by zero.  

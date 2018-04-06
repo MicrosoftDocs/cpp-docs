@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating Your Dialog Class
 For each dialog box in your program, create a new dialog class to work with the dialog resource.  

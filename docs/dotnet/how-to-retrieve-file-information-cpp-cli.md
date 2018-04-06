@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Retrieve File Information (C++/CLI)
 The following code example demonstrates the <xref:System.IO.FileInfo> class. When you have the name of a file, you can use this class to retrieve information about the file such as the file size, directory, full name, and date and time of creation and of the last modification.  

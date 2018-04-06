@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CTypedPtrList Class
 Provides a type-safe "wrapper" for objects of class `CPtrList`.  

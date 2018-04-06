@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["auto_inline_CPP", "vc-pragma.auto_inline"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, auto_inline", "auto_inline pragma"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # auto_inline
 Excludes any functions defined within the range where **off** is specified from being considered as candidates for automatic inline expansion.  

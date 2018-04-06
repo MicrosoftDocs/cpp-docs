@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generics  (C++ Component Extensions)
 Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in Visual C++, and how to use generic types authored in a .NET Framework language in Visual C++. Finally, this section provides a comparison of generics and C++ templates.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet.AddPropertyID", "CDBPropIDSet::AddPropertyID", "AddPropertyID", "ATL.CDBPropIDSet.AddPropertyID", "ATL::CDBPropIDSet::AddPropertyID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddPropertyID method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropIDSet::AddPropertyID
 Adds a property ID to the property ID set.  
   
 ## Syntax  
   
-```  
-  
-      bool AddPropertyID(   
-   DBPROPID propid    
-) throw( );  
+```cpp
+      bool AddPropertyID(DBPROPID propid) throw();  
 ```  
   
 #### Parameters  

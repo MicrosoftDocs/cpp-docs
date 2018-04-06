@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Servers: Implementing Server Documents
 This article explains the steps you must take to successfully implement a server document if you did not specify the OLE Server option in the application wizard.  

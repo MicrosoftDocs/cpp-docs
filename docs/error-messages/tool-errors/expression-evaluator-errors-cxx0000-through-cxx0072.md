@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Errors CXX0000 Through CXX0072
 

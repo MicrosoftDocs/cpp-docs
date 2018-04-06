@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["operator LOW", "LOW"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator LOW", "LOW operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator LOW
 Returns the low 8 bits of *expression*. MASM expressions are 64-bit values.  

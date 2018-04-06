@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStdioFile Class
 Represents a C run-time stream file as opened by the run-time function [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  

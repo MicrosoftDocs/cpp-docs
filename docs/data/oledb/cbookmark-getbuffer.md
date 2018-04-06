@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBookmark<0>.GetBuffer", "ATL.CBookmark.GetBuffer", "ATL::CBookmark<0>::GetBuffer", "ATL::CBookmark::GetBuffer", "CBookmark.GetBuffer", "ATL::CBookmark<nSize>::GetBuffer", "ATL.CBookmark<nSize>.GetBuffer", "CBookmark<0>.GetBuffer", "CBookmark<nSize>::GetBuffer", "CBookmark<0>::GetBuffer", "CBookmark<nSize>.GetBuffer", "CBookmark::GetBuffer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBuffer method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBookmark::GetBuffer
 Retrieves the pointer to the bookmark buffer.  
   
 ## Syntax  
   
-```  
-  
-virtual BYTE* GetBuffer( ) const throw( );  
+```cpp
+virtual BYTE* GetBuffer() const throw();  
   
 ```  
   

@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDataRecoveryHandler Class
 The `CDataRecoveryHandler` autosaves documents and restores them if an application unexpectedly exits.  

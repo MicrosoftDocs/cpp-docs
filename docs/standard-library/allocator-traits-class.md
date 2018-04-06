@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::allocator_traits", "memory/std::allocator_traits::propagate_on_container_move_assignment", "memory/std::allocator_traits::const_pointer", "memory/std::allocator_traits::propagate_on_container_swap", "memory/std::allocator_traits::propagate_on_container_copy_assignment", "memory/std::allocator_traits::difference_type", "memory/std::allocator_traits::allocator_type", "memory/std::allocator_traits::value_type", "memory/std::allocator_traits::pointer", "memory/std::allocator_traits::size_type", "memory/std::allocator_traits::const_void_pointer", "memory/std::allocator_traits::void_pointer", "memory/std::allocator_traits::allocate", "memory/std::allocator_traits::construct", "memory/std::allocator_traits::deallocate", "memory/std::allocator_traits::destroy", "memory/std::allocator_traits::max_size", "memory/std::allocator_traits::select_on_container_copy_construction"]
 dev_langs: ["C++"]
 ms.assetid: 612974b8-b5d4-4668-82fb-824bff6821d6
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::allocator_traits [C++]", "std::allocator_traits [C++], propagate_on_container_move_assignment", "std::allocator_traits [C++], const_pointer", "std::allocator_traits [C++], propagate_on_container_swap", "std::allocator_traits [C++], propagate_on_container_copy_assignment", "std::allocator_traits [C++], difference_type", "std::allocator_traits [C++], allocator_type", "std::allocator_traits [C++], value_type", "std::allocator_traits [C++], pointer", "std::allocator_traits [C++], size_type", "std::allocator_traits [C++], const_void_pointer", "std::allocator_traits [C++], void_pointer", "std::allocator_traits [C++], allocate", "std::allocator_traits [C++], construct", "std::allocator_traits [C++], deallocate", "std::allocator_traits [C++], destroy", "std::allocator_traits [C++], max_size", "std::allocator_traits [C++], select_on_container_copy_construction"]
+ms.workload: ["cplusplus"]
 ---
 # allocator_traits Class
 The template class describes an object that supplements an *allocator type*. An allocator type is any type that describes an allocator object that is used for managing allocated storage. Specifically, for any allocator type `Alloc`, you can use `allocator_traits<Alloc>` to determine all the information that is needed by an allocator-enabled container. For more information, see the default [allocator Class](../standard-library/allocator-class.md).  

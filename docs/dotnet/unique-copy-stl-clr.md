@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # unique_copy (STL/CLR)
 Copies elements from a source range into a destination range except for the duplicate elements that are adjacent to each other.  

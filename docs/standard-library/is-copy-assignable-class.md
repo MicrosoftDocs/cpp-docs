@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_copy_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_copy_assignable"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_copy_assignable Class
 Tests whether type has can be copied on assignment.  

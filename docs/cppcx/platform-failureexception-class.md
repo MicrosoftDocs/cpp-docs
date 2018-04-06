@@ -6,19 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::FailureException::FailureException"
-  - "VCCORLIB/Platform::FailureException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::FailureException"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::FailureException::FailureException", "VCCORLIB/Platform::FailureException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::FailureException"]
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::FailureException Class
 Thrown when the operation has failed. It is the equivalent of the E_FAIL HRESULT.  

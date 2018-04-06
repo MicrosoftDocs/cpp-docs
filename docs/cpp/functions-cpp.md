@@ -1,7 +1,7 @@
 ---
 title: "Functions (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "01/25/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Functions (C++)
 A function is a block of code that performs some operation. A function can optionally define input parameters that enable callers to pass arguments into the function. A function can optionally return a value as output. Functions are useful for encapsulating common operations in a single reusable block, ideally with a name that clearly describes what the function does. The following function accepts two integers from a caller and returns their sum; `a` and `b` are *parameters* of type `int`.  
@@ -39,6 +40,8 @@ int main()
  There is no practical limit to function length, but good design aims for functions that perform a single well-defined task. Complex algorithms should be broken up into easy-to-understand simpler functions whenever possible.  
   
  Functions that are defined at class scope are called member functions. In C++, unlike other languages, a function can also be defined at namespace scope (including the implicit global namespace). Such functions are called *free functions* or *non-member functions*; they are used extensively in the Standard Library.  
+
+Functions may be *overloaded*, which means different versions of a function may share the same name if they differ by the number and/or type of formal parameters. For more information, see [Function Overloading](../cpp/function-overloading.md).
   
 ## Parts of a function declaration  
  A minimal function *declaration* consists of the return type, function name, and parameter list (which may be empty), along with optional keywords that provide additional instructions to the compiler. The following example is a function declaration:
@@ -116,7 +119,7 @@ int sum(int a, int b)
   
 7.  (member functions only) `static` applied to a member function means that the function is not associated with any object instances of the class.  
   
-8.  (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (*this) is an rvalue reference vs. an lvalue reference.  
+8.  (Non-static member functions only) The ref-qualifier, which specifies to the compiler which overload of a function to choose when the implicit object parameter (*this) is an rvalue reference vs. an lvalue reference. For more information, see [Function Overloading](function-overloading.md#ref-qualifiers). 
   
  The following figure shows the parts of a function definition. The shaded area is the function body.  
   
@@ -362,7 +365,7 @@ int main()
 }
 ```
 
-4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
+4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).  
   
 ## Function pointers  
  C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  

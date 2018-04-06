@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CWnd Class
 Provides the base functionality of all window classes in the Microsoft Foundation Class Library.  
@@ -141,7 +142,7 @@ class CWnd : public CCmdTarget
 |[CWnd::GetLayeredWindowAttributes](#getlayeredwindowattributes)|Retrieves the opacity and transparency color key of a layered window.|  
 |[CWnd::GetMenu](#getmenu)|Retrieves a pointer to the specified menu.|  
 |[CWnd::GetNextDlgGroupItem](#getnextdlggroupitem)|Searches for the next (or previous) control within a group of controls.|  
-|[CWnd::GetNextDlgTabItem](#getnextdlgtabitem)|Retrieves the first control with the [WS_TABSTOP](window-styles.md) style that follows (or precedes) the specified control.|  
+|[CWnd::GetNextDlgTabItem](#getnextdlgtabitem)|Retrieves the first control with the [WS_TABSTOP](styles-used-by-mfc.md#window-styles) style that follows (or precedes) the specified control.|  
 |[CWnd::GetNextWindow](#getnextwindow)|Returns the next (or previous) window in the window manager's list.|  
 |[CWnd::GetOleControlSite](#getolecontrolsite)|Retrieves the custom site for the specified ActiveX control.|  
 |[CWnd::GetOpenClipboardWindow](#getopenclipboardwindow)|Retrieves a pointer to the window that currently has the Clipboard open.|  
@@ -1022,7 +1023,7 @@ virtual BOOL Create(
  Pointer to a null-terminated string that contains the window display name; otherwise `NULL` for no window display name.  
   
  [in] `dwStyle`  
- Bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). The `WS_POPUP` option is not a valid style.  
+ Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles). The `WS_POPUP` option is not a valid style.  
   
  [in] `rect`  
  The size and location of the window relative to the top-left corner of the parent window.  
@@ -1240,7 +1241,7 @@ virtual BOOL CreateEx(
  Pointer to a null-terminated string that contains the window display name; otherwise `NULL` for no window display name.  
   
  `dwStyle`  
- Bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles); otherwise `NULL` for the default window style.  
+ Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles); otherwise `NULL` for the default window style.  
   
  `x`  
  The initial horizontal distance of the window from the left side of the screen or the parent window.  
@@ -3090,7 +3091,7 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
  The returned pointer may be temporary and should not be stored for later use.  
   
 ### Remarks  
- A group of controls begins with a control that was created with the [WS_GROUP](../../mfc/reference/styles-used-by-mfc.md#window-styles) style and ends with the last control that was not created with the **WS_GROUP** style.  
+ A group of controls begins with a control that was created with the [WS_GROUP](styles-used-by-mfc.md#window-styles) style and ends with the last control that was not created with the **WS_GROUP** style.  
   
  By default, the `GetNextDlgGroupItem` member function returns a pointer to the next control in the group. If `pWndCtl` identifies the first control in the group and `bPrevious` is **TRUE**, `GetNextDlgGroupItem` returns a pointer to the last control in the group.  
   
@@ -3104,7 +3105,7 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
 |Standard window|Contains just an `HWND`. The `m_hWnd` member of `COleControlSiteOrWnd` is set to the `HWND` of the window, and the **m_pSite** member is **NULL**.|  
   
 ##  <a name="getnextdlgtabitem"></a>  CWnd::GetNextDlgTabItem  
- Retrieves a pointer to the first control that was created with the [WS_TABSTOP](window-styles.md) style and that precedes or follows the specified control.  
+ Retrieves a pointer to the first control that was created with the [WS_TABSTOP](styles-used-by-mfc.md#window-styles) style and that precedes or follows the specified control.  
   
 ```  
 CWnd* GetNextDlgTabItem(
@@ -3462,7 +3463,7 @@ DWORD GetStyle() const;
 ```  
   
 ### Return Value  
- The window's style. For more information about the window styles used in MFC, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+ The window's style. For more information about the window styles used in MFC, see [Window Styles](styles-used-by-mfc.md#window-styles).  
   
 ##  <a name="getsystemmenu"></a>  CWnd::GetSystemMenu  
  Allows the application to access the Control menu for copying and modification.  
@@ -4141,7 +4142,7 @@ BOOL IsWindowVisible() const;
 ```  
   
 ### Return Value  
- Nonzero if `CWnd` is visible (has the [WS_VISIBLE](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit set, and parent window is visible). Because the return value reflects the state of the **WS_VISIBLE** style bit, the return value may be nonzero even though `CWnd` is totally obscured by other windows.  
+ Nonzero if `CWnd` is visible (has the [WS_VISIBLE](styles-used-by-mfc.md#window-styles) style bit set, and parent window is visible). Because the return value reflects the state of the **WS_VISIBLE** style bit, the return value may be nonzero even though `CWnd` is totally obscured by other windows.  
   
 ### Remarks  
  A window possesses a visibility state indicated by the **WS_VISIBLE** style bit. When this style bit is set with a call to the [ShowWindow](#showwindow) member function, the window is displayed and subsequent drawing to the window is displayed as long as the window has the style bit set.  
@@ -4215,7 +4216,7 @@ BOOL LockWindowUpdate();
   
  While window updates are locked, the system keeps track of the bounding rectangle of any drawing operations to device contexts associated with a locked window. When drawing is reenabled, this bounding rectangle is invalidated in the locked window and its child windows to force an eventual [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message to update the screen. If no drawing has occurred while the window updates were locked, no area is invalidated.  
   
- The `LockWindowUpdate` member function does not make the given window invisible and does not clear the [WS_VISIBLE](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit.  
+ The `LockWindowUpdate` member function does not make the given window invisible and does not clear the [WS_VISIBLE](styles-used-by-mfc.md#window-styles) style bit.  
   
 ##  <a name="m_hwnd"></a>  CWnd::m_hWnd  
  The handle of the Windows window attached to this `CWnd`.  
@@ -5273,7 +5274,7 @@ afx_msg void OnEnable(BOOL bEnable);
  Specifies whether the `CWnd` object has been enabled or disabled. This parameter is **TRUE** if the `CWnd` has been enabled; it is **FALSE** if the `CWnd` has been disabled.  
   
 ### Remarks  
- `OnEnable` is called before the [EnableWindow](#enablewindow) member function returns, but after the window enabled state ( [WS_DISABLED](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit) has changed.  
+ `OnEnable` is called before the [EnableWindow](#enablewindow) member function returns, but after the window enabled state ( [WS_DISABLED](styles-used-by-mfc.md#window-styles) style bit) has changed.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8374,7 +8375,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 ### Remarks  
  An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure.  
   
- For a window with the [WS_OVERLAPPED](../../mfc/reference/styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](../../mfc/reference/styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) message to the window. This is done to validate the new size and position of the window and to enforce the **CS_BYTEALIGNCLIENT** and **CS_BYTEALIGN** client styles. An application can override this functionality by not calling its base class.  
+ For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) message to the window. This is done to validate the new size and position of the window and to enforce the **CS_BYTEALIGNCLIENT** and **CS_BYTEALIGN** client styles. An application can override this functionality by not calling its base class.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  

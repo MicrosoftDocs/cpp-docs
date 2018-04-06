@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading: Programming Tips
 Multithreaded applications require stricter care than single-threaded applications when accessing data. Because there are multiple, independent paths of execution in use simultaneously in multithreaded applications, either the algorithms, the data, or both must be aware that data could be used by more than one thread at a time. This topic explains techniques for avoiding potential problems when programming multithreaded applications with the Microsoft Foundation Class (MFC) library.  

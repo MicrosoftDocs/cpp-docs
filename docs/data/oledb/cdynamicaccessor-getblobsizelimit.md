@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::GetBlobSizeLimit", "CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor::GetBlobSizeLimit", "GetBlobSizeLimit", "ATL.CDynamicAccessor.GetBlobSizeLimit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBlobSizeLimit method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetBlobSizeLimit
 Retrieves the maximum BLOB size in bytes.  
   
 ## Syntax  
   
-```  
-  
-const DBLENGTH GetBlobSizeLimit( ) const;  
+```cpp
+const DBLENGTH GetBlobSizeLimit() const;  
   
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParamString method"]
@@ -15,32 +15,21 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::GetParamString
 Retrieves the string data of the specified parameter stored in the buffer.  
   
 ## Syntax  
   
-```  
-  
-      bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringA& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringW& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   WCHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
+```
+bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringA& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringW& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CHAR* pBuffer,  
+   size_t* pMaxLen) throw();bool GetParamString(DBORDINAL nParam,  
+  WCHAR* pBuffer,  
+   size_t* pMaxLen) throw();  
 ```  
   
 #### Parameters  

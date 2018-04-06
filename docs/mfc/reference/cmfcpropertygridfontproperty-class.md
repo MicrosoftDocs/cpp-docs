@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridFontProperty Class
 The `CMFCPropertyGridFileProperty` class supports a property list control item that opens a font selection dialog box.  

@@ -13,6 +13,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Document/View Sample List
 See the following sample programs that illustrate using MFC's document/view architecture in interesting ways:  

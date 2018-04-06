@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetImpl class"]
@@ -15,22 +15,21 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl Class
 Provides an implementation of the `IRowset` interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,   
    class RowsetInterface,  
    class RowClass = CSimpleRow,  
    class MapClass = CAtlMap <  
       RowClass::KeyType,  
-      RowClass*   
-   >  
->  
+      RowClass*>>  
 class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface  
 ```  
   

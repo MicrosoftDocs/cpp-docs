@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["critical_section", "CONCRT/concurrency::critical_section", "CONCRT/concurrency::critical_section::critical_section::scoped_lock Class", "CONCRT/concurrency::critical_section::critical_section", "CONCRT/concurrency::critical_section::lock", "CONCRT/concurrency::critical_section::native_handle", "CONCRT/concurrency::critical_section::try_lock", "CONCRT/concurrency::critical_section::try_lock_for", "CONCRT/concurrency::critical_section::unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["critical_section class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # critical_section Class
 A non-reentrant mutex which is explicitly aware of the Concurrency Runtime.  

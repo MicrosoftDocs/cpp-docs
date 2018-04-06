@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddRefRow method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSimpleRow::AddRefRow
 Adds a reference count to an existing row handle in a thread-safe manner.  
   
 ## Syntax  
   
-```  
-  
-DWORD AddRefRow( );  
+```cpp
+DWORD AddRefRow();  
   
 ```  
   

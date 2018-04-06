@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Retrieve the Windows Version (C++/CLI)
 The following code example demonstrates how to retrieve the platform and version information of the current operating system. This information is stored in the <xref:System.Environment.OSVersion%2A?displayProperty=fullName> property and consists of an enumeration that describes the version of Windows in broad terms and a <xref:System.Environment.Version%2A> object that contains the exact build of the operating system.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CStreamRowset::Close
 Releases the [ISequentialStream](https://msdn.microsoft.com/en-us/library/ms718035.aspx) interface pointer in the class.  
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

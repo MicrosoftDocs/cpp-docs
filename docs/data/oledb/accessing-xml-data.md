@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessing XML Data
 There are two separate methods of retrieving XML data from a data source: one uses [CStreamRowset](../../data/oledb/cstreamrowset-class.md) and the other uses [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  
@@ -68,7 +69,8 @@ CTable<CXMLAccessor, CRowset> rs;
 ```  
 // Open data source, session, and rowset  
 hr = rs.MoveFirst();  
-while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+
+while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
 {  
     CStringW strRowData;  
     myCmd.GetXMLRowData(strRowData);  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Temporary Objects
 In some cases, it is necessary for the compiler to create temporary objects. These temporary objects can be created for the following reasons:  

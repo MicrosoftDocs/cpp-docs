@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CHAIN_PROPERTY_SET"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHAIN_PROPERTY_SET macro"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CHAIN_PROPERTY_SET
 This macro chains property groups together.  
   
 ## Syntax  
   
-```  
-  
-CHAIN_PROPERTY_SET(  
-ChainClass   
-)  
+```cpp
+CHAIN_PROPERTY_SET(ChainClass)  
   
 ```  
   

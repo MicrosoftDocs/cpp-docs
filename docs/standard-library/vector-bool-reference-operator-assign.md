@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["=", "operator=", "vector<bool>::reference::operator=", "std::vector<bool>::reference::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["= operator, with specific C++ Standard Library objects", "reference::operator="]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt;::reference::operator=
 Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.  

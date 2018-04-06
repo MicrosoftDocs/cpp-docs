@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # jitintrinsic
 Marks the function as significant to the 64-bit common language runtime. This is used on certain functions in Microsoft-provided libraries.  

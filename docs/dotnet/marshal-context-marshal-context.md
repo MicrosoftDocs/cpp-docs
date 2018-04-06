@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context::marshal_context
 Constructs a `marshal_context` object to use for data conversion between managed and native data types.  

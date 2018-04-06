@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.interfaces.tear-off"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, tear-off", "tear-off interfaces classes"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Tear-Off Interfaces Classes
 The following classes provide support for tear-off interfaces:  

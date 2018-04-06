@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.21   Scoping Variables with the private Clause
 The values of `i` and `j` in the following example are undefined on exit from the parallel region:  

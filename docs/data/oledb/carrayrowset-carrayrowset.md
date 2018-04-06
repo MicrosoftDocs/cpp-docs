@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CArrayRowset::CArrayRowset", "CArrayRowset.CArrayRowset", "ATL.CArrayRowset.CArrayRowset", "ATL.CArrayRowset<TAccessor>.CArrayRowset", "CArrayRowset::CArrayRowset", "CArrayRowset", "CArrayRowset<TAccessor>::CArrayRowset", "ATL::CArrayRowset<TAccessor>::CArrayRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CArrayRowset class, constructor"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset::CArrayRowset
 Creates a new `CArrayRowset` object.  
   
 ## Syntax  
   
-```  
-  
-      CArrayRowset(   
-   int nMax = 100000    
-);  
+```cpp
+      CArrayRowset(int nMax = 100000);  
 ```  
   
 #### Parameters  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4938
 'var' : Floating point reduction variable may cause inconsistent results under /fp:strict or #pragma fenv_access  

@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAllocator Class
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
@@ -26,17 +27,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 template<  
    typename T,  
    bool hasWeakReferenceSupport =   
-         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>,   
-   T)> , T)> class MakeAllocator;  
+         !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
+ class MakeAllocator;  
   
-template<  
-   typename T  
->  
+template<typename T>  
 class MakeAllocator<T, false>;  
   
-template<  
-   typename T  
->  
+template<typename T>  
 class MakeAllocator<T, true>;  
 ```  
   

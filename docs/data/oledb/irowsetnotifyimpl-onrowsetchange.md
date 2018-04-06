@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OnRowsetChange", "IRowsetNotifyImpl::OnRowsetChange", "IRowsetNotifyImpl.OnRowsetChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnRowsetChange method"]
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyImpl::OnRowsetChange
 Notifies the consumer of any change affecting the entire rowset.  
   
 ## Syntax  
   
-```  
-  
+```cpp
    STDMETHOD(OnRowsetChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ DBREASON /* eReason */,  

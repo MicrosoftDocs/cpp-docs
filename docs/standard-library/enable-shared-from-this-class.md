@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::enable_shared_from_this"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["enable_shared_from_this class", "enable_shared_from_this"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # enable_shared_from_this Class
 Helps generate a `shared_ptr`.  

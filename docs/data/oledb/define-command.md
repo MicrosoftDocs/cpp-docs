@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DEFINE_COMMAND"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DEFINE_COMMAND macro"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # DEFINE_COMMAND
 Specifies the command that will be used to create the rowset when using the [CCommand](../../data/oledb/ccommand-class.md) class. Accepts only string types matching the specified application type (ANSI or Unicode).  
@@ -24,13 +25,8 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ## Syntax  
   
-```  
-  
-DEFINE_COMMAND(  
-x  
-,   
-szCommand  
- )  
+```cpp
+DEFINE_COMMAND(x, szCommand)  
   
 ```  
   

@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CWaitCursor Class
 Provides a one-line way to show a wait cursor, which is usually displayed as an hourglass, while you're doing a lengthy operation.  
@@ -108,7 +109,7 @@ void Restore();
  [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)   
  [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)   
  [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)   
- [How Do I: Change the Mouse Cursor in an Microsoft Foundation Class Application](http://go.microsoft.com/fwlink/linkid=128044)
+ [How Do I: Change the Mouse Cursor in an Microsoft Foundation Class Application](http://go.microsoft.com/fwlink/p/?linkid=128044)
 
 
 

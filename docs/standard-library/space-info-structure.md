@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::space_info"]
 dev_langs: ["C++"]
 ms.assetid: f2b35b42-06ff-45bd-8617-39a0f5358a54
@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # space_info Structure
 Holds information about a volume.  

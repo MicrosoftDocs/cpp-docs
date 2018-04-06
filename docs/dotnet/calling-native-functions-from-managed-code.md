@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Native Functions from Managed Code
 The common language runtime provides Platform Invocation Services, or PInvoke, that enables managed code to call C-style functions in native dynamic-linked libraries (DLLs). The same data marshaling is used as for COM interoperability with the runtime and for the "It Just Works," or IJW, mechanism.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::cache_suballoc", "allocators/stdext::cache_suballoc::allocate", "allocators/stdext::cache_suballoc::deallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cache_suballoc", "stdext::cache_suballoc [C++], allocate", "stdext::cache_suballoc [C++], deallocate"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cache_suballoc Class
 Defines a [block allocator](../standard-library/allocators-header.md) that allocates and deallocates memory blocks of a single size.  

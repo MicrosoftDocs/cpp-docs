@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["this", "operator THIS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator THIS", "THIS operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator THIS
 Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.  

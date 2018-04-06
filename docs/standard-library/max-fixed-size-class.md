@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_fixed_size", "allocators/stdext::max_fixed_size::allocated", "allocators/stdext::max_fixed_size::deallocated", "allocators/stdext::max_fixed_size::full", "allocators/stdext::max_fixed_size::released", "allocators/stdext::max_fixed_size::saved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_fixed_size", "stdext::max_fixed_size [C++], allocated", "stdext::max_fixed_size [C++], deallocated", "stdext::max_fixed_size [C++], full", "stdext::max_fixed_size [C++], released", "stdext::max_fixed_size [C++], saved"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # max_fixed_size Class
 Describes a [max class](../standard-library/allocators-header.md) object that limits a [freelist](../standard-library/freelist-class.md) object to a fixed maximum length.  

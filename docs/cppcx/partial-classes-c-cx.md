@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
 caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Partial classes (C++/CX)
 A partial class is a construct that supports scenarios in which you are modifying one part of a class definition, and automatic code-generating software—for example, the XAML designer—is also modifying code in the same class. By using a partial class, you can prevent the designer from overwriting your code. In a Visual Studio project, the `partial` modifier is applied automatically to the generated file.  

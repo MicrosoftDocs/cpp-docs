@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator CSession&", "CSession& operator"]
@@ -15,14 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::operator CSession&amp;
 Returns a reference to the contained `CSession` object.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 operator const CSession&();  
   
 ```  

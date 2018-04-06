@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAsyncMonikerFile Class
 Provides functionality for the use of asynchronous monikers in ActiveX controls (formerly OLE controls).  

@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::IidCount Constant
 The total number of interface IDs contained in the interfaces specified by template parameters `I0` through `I9`.  

@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Security Features in the CRT
 Many old CRT functions have newer, more secure versions. If a secure function exists, the older, less secure version is marked as deprecated and the new version has the `_s` ("secure") suffix.  
@@ -39,7 +40,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
  For those deprecated functions without secure template overloads, you should definitely consider manually updating your code to use the secure versions.  
   
- Another source of deprecation warnings, unrelated to security, is the POSIX functions. Replace POSIX function names with their standard equivalents (for example, change [access](../c-runtime-library/reference/access-crt.md) to [_access](../c-runtime-library/reference/access-waccess.md)), or disable POSIX-related deprecation warnings by defining `_CRT_NONSTDC_NO_WARNINGS`. For more information, see [Deprecated CRT Functions](http://msdn.microsoft.com/en-us/7e259932-c6c8-4c1a-9637-639e591681a5).  
+ Another source of deprecation warnings, unrelated to security, is the POSIX functions. Replace POSIX function names with their standard equivalents (for example, change [access](../c-runtime-library/reference/access-crt.md) to [_access](../c-runtime-library/reference/access-waccess.md)), or disable POSIX-related deprecation warnings by defining `_CRT_NONSTDC_NO_WARNINGS`. For more information, see [Compatibility](compatibility.md).  
   
 ## Additional Security Features  
  Some of the security features include the following:  

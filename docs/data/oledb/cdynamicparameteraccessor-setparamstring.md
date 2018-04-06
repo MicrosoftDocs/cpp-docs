@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParamString method"]
@@ -15,24 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::SetParamString
 Sets the string data of the specified parameter stored in the buffer.  
   
 ## Syntax  
   
-```  
-  
-      bool SetParamString(   
-   DBORDINAL nParam,   
-   const CHAR* pString,   
-   DBSTATUS status = DBSTATUS_S_OK    
-) throw( );  
-bool SetParamString(   
-   DBORDINAL nParam,   
-   const WCHAR* pString,   
-   DBSTATUS status = DBSTATUS_S_OK    
-) throw( );  
+```
+bool SetParamString(DBORDINAL nParam,   
+   constCHAR* pString,   
+   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam,   
+   constWCHAR* pString,   
+   DBSTATUS status = DBSTATUS_S_OK) throw();  
 ```  
   
 #### Parameters  

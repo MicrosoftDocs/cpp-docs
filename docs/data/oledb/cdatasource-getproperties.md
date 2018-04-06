@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource::GetProperties", "ATL.CDataSource.GetProperties", "CDataSource.GetProperties", "ATL::CDataSource::GetProperties", "GetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetProperties method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::GetProperties
 Returns the property information requested for the connected data source object.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetProperties(   
-   ULONG ulPropIDSets,   
-   const DBPROPIDSET* pPropIDSet,   
+```
+HRESULT GetProperties(ULONG ulPropIDSets,   
+   constDBPROPIDSET* pPropIDSet,   
    ULONG* pulPropertySets,   
-   DBPROPSET** ppPropsets    
-) const throw( );  
+   DBPROPSET** ppPropsets) const throw();  
 ```  
   
 #### Parameters  

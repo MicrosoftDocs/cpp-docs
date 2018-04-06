@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator&amp; Operator
 Releases the interface associated with this `ComPtr` object and then retrieves the address of the `ComPtr` object.  

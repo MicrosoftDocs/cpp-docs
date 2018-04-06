@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveNext method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::MoveNext
 Moves the cursor to the next record.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveNext( ) throw( );   
-HRESULT MoveNext(   
-   LONG lSkip,   
-   bool bForward = true    
-) throw( );  
+```cpp
+HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip,   
+   bool bForward= true) throw();  
 ```  
   
 #### Parameters  

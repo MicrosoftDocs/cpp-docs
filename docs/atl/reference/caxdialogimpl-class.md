@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAxDialogImpl Class
 This class implements a dialog box (modal or modeless) that hosts ActiveX controls.  

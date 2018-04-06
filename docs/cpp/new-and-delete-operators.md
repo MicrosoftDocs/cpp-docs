@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # new and delete Operators
 
@@ -45,7 +46,7 @@ The two scopes for `operator new` functions are described in the following table
 |**::operator new**|Global|  
 |*class-name* **::operator new**|Class|  
   
- The first argument to **operator new** must be of type **size_t** (a type defined in STDDEF.H), and the return type is always **void \***.  
+ The first argument to **operator new** must be of type **size_t** (a type defined in \<stddef.h>), and the return type is always **void \***.  
   
  The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.  
   

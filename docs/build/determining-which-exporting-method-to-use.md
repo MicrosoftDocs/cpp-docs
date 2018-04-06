@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Determining Which Exporting Method to Use
 You can export functions in either of two ways—a .def file or the `__declspec(dllexport)` keyword. To help you decide which way is better for your DLL, consider these questions:  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["limits/std::numeric_limits", "limits/std::numeric_limits::denorm_min", "limits/std::numeric_limits::digits", "limits/std::numeric_limits::digits10", "limits/std::numeric_limits::epsilon", "limits/std::numeric_limits::has_denorm", "limits/std::numeric_limits::has_denorm_loss", "limits/std::numeric_limits::has_infinity", "limits/std::numeric_limits::has_quiet_NaN", "limits/std::numeric_limits::has_signaling_NaN", "limits/std::numeric_limits::infinity", "limits/std::numeric_limits::is_bounded", "limits/std::numeric_limits::is_exact", "limits/std::numeric_limits::is_iec559", "limits/std::numeric_limits::is_integer", "limits/std::numeric_limits::is_modulo", "limits/std::numeric_limits::is_signed", "limits/std::numeric_limits::is_specialized", "limits/std::numeric_limits::lowest", "limits/std::numeric_limits::max", "limits/std::numeric_limits::max_digits10", "limits/std::numeric_limits::max_exponent", "limits/std::numeric_limits::max_exponent10", "limits/std::numeric_limits::min", "limits/std::numeric_limits::min_exponent", "limits/std::numeric_limits::min_exponent10", "limits/std::numeric_limits::quiet_NaN", "limits/std::numeric_limits::radix", "limits/std::numeric_limits::round_error", "limits/std::numeric_limits::round_style", "limits/std::numeric_limits::signaling_NaN", "limits/std::numeric_limits::tinyness_before", "limits/std::numeric_limits::traps"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::numeric_limits [C++]", "std::numeric_limits [C++], denorm_min", "std::numeric_limits [C++], digits", "std::numeric_limits [C++], digits10", "std::numeric_limits [C++], epsilon", "std::numeric_limits [C++], has_denorm", "std::numeric_limits [C++], has_denorm_loss", "std::numeric_limits [C++], has_infinity", "std::numeric_limits [C++], has_quiet_NaN", "std::numeric_limits [C++], has_signaling_NaN", "std::numeric_limits [C++], infinity", "std::numeric_limits [C++], is_bounded", "std::numeric_limits [C++], is_exact", "std::numeric_limits [C++], is_iec559", "std::numeric_limits [C++], is_integer", "std::numeric_limits [C++], is_modulo", "std::numeric_limits [C++], is_signed", "std::numeric_limits [C++], is_specialized", "std::numeric_limits [C++], lowest", "std::numeric_limits [C++], max", "std::numeric_limits [C++], max_digits10", "std::numeric_limits [C++], max_exponent", "std::numeric_limits [C++], max_exponent10", "std::numeric_limits [C++], min", "std::numeric_limits [C++], min_exponent", "std::numeric_limits [C++], min_exponent10", "std::numeric_limits [C++], quiet_NaN", "std::numeric_limits [C++], radix", "std::numeric_limits [C++], round_error", "std::numeric_limits [C++], round_style", "std::numeric_limits [C++], signaling_NaN", "std::numeric_limits [C++], tinyness_before", "std::numeric_limits [C++], traps"]
@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # numeric_limits Class
 The template class describes arithmetic properties of built-in numerical types.  

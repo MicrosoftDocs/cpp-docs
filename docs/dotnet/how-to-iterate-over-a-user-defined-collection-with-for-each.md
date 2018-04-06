@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Iterate Over a User-Defined Collection with for each
 For a class to be a managed collection, it needs a non-private GetEnumerator function that returns a handle to an Enumerator class or an interface.  An enumerator class must contain the declaration for non-static MoveNext function and Current property.  

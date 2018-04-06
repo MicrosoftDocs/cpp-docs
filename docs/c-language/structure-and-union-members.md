@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Structure and Union Members
 A "member-selection expression" refers to members of structures and unions. Such an expression has the value and type of the selected member.  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Custom Format Strings in a Date and Time Picker Control
 By default, date and time picker controls provide three format types (each format corresponding to a unique style) for displaying the current date or time:  

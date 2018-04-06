@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a Project (C++)
 In this walkthrough, you modify the program to fix the problem that you discovered when you tested the project.  

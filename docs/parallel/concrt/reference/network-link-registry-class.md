@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["network_link_registry", "AGENTS/concurrency::network_link_registry", "AGENTS/concurrency::network_link_registry::add", "AGENTS/concurrency::network_link_registry::begin", "AGENTS/concurrency::network_link_registry::contains", "AGENTS/concurrency::network_link_registry::count", "AGENTS/concurrency::network_link_registry::remove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["network_link_registry class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # network_link_registry Class
 The `network_link_registry` abstract base class manages the links between source and target blocks.  

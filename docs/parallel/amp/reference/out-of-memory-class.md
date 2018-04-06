@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["out_of_memory", "AMPRT/out_of_memory", "AMPRT/Concurrency::out_of_memory::out_of_memory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_memory class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # out_of_memory Class
 The exception that is thrown when a method fails because of a lack of system or device memory.  

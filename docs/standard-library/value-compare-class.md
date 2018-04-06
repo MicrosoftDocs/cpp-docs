@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["value_compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_compare class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # value_compare Class
 Provides a function object that can compare the elements of a hash_map by comparing the values of their keys to determine their relative order in the hash_map.  

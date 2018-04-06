@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_getdcwd", "_wgetdcwd"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getdcwd, _wgetdcwd
 Gets the full path of the current working directory on the specified drive.  
@@ -63,7 +64,7 @@ wchar_t *_wgetdcwd(
   
  `_wgetdcwd` is a wide-character version of `_getdcwd`, and its `buffer` parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.  
   
- This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/?LinkID=150542) and then search for **GetFullPathName**.  
+ This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.  
   
  The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](../../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md).  
   

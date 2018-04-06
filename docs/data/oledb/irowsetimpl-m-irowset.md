@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_iRowset"]
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::m_iRowset
 An index to the rowset, representing the cursor.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 DBROWOFFSET m_iRowset;  
   
 ```  

@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding references in Visual C++ projects
 It is very common for programs to call into APIs in other binaries such as DLLs, Windows Runtime components, extension SDKs, COM components, and .NET assemblies. The way that your program finds those other binaries depends both on the type of your project, and the type of the binary.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["bitset/std::bitset", "bitset/std::bitset::element_type", "bitset/std::bitset::all", "bitset/std::bitset::any", "bitset/std::bitset::count", "bitset/std::bitset::flip", "bitset/std::bitset::none", "bitset/std::bitset::reset", "bitset/std::bitset::set", "bitset/std::bitset::size", "bitset/std::bitset::test", "bitset/std::bitset::to_string", "bitset/std::bitset::to_ullong", "bitset/std::bitset::to_ulong", "bitset/std::bitset::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::bitset [C++]", "std::bitset [C++], element_type", "std::bitset [C++], all", "std::bitset [C++], any", "std::bitset [C++], count", "std::bitset [C++], flip", "std::bitset [C++], none", "std::bitset [C++], reset", "std::bitset [C++], set", "std::bitset [C++], size", "std::bitset [C++], test", "std::bitset [C++], to_string", "std::bitset [C++], to_ullong", "std::bitset [C++], to_ulong", "std::bitset [C++], reference"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bitset Class
 Describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions. The bitset class supports operations on objects of type bitset that contain a collection of bits and provide constant-time access to each bit.  

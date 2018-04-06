@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["END_PROPSET_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_PROPSET_MAP macro"]
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # END_PROPSET_MAP
 Marks the end of property set map entries.  
   
 ## Syntax  
   
-```  
-  
-END_PROPSET_MAP( )  
+```cpp
+END_PROPSET_MAP()  
   
 ```  
   

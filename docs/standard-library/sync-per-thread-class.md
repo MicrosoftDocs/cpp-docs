@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::sync_per_thread", "allocators/stdext::sync_per_thread::allocate", "allocators/stdext::sync_per_thread::deallocate", "allocators/stdext::sync_per_thread::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_per_thread", "stdext::sync_per_thread [C++], allocate", "stdext::sync_per_thread [C++], deallocate", "stdext::sync_per_thread [C++], equals"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sync_per_thread Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each thread.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Expression Statement (C)
 When an expression statement is executed, the expression is evaluated according to the rules outlined in [Expressions and Assignments](../c-language/expressions-and-assignments.md).  

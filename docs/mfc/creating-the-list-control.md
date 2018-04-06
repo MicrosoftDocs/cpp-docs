@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating the List Control
 How the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) is created depends on whether you're using the control directly or using class [CListView](../mfc/reference/clistview-class.md) instead. If you use `CListView`, the framework constructs the view as part of its document/view creation sequence. Creating the list view creates the list control as well (the two are the same thing). The control is created in the view's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function. In this case, the control is ready for you to add items, via a call to [GetListCtrl](../mfc/reference/clistview-class.md#getlistctrl).  

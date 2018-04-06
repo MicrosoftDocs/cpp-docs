@@ -10,6 +10,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using the Visual Studio IDE for C++ Desktop Development
 

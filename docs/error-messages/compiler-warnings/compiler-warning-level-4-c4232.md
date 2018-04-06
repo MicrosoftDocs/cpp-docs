@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4232
 nonstandard extension used : 'identifier' : address of dllimport 'dllimport' is not static, identity not guaranteed  

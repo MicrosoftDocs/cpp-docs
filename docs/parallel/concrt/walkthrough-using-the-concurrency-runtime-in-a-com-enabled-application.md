@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application
 This document demonstrates how to use the Concurrency Runtime in an application that uses the Component Object Model (COM).  

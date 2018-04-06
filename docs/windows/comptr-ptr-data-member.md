@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ptr_ Data Member
 Contains a pointer to the interface that is associated with, and managed by this ComPtr.  

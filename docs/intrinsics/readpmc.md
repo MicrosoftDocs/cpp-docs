@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__readpmc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Read Performance Monitoring Counters instruction", "__readpmc intrinsic", "rdpmc instruction"]
@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __readpmc
 **Microsoft Specific**  

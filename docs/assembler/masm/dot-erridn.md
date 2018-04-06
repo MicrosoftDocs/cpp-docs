@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: [".ERRIDN[[I]]"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".ERRIDN[[I]] directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .ERRIDN]
 Generates an error if the text items are identical.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CUtlProps"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnInterfaceRequested method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::OnInterfaceRequested
 Handles requests for an optional interface when a consumer calls a method on one of the object creation interfaces.  
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(  
-   REFIID riid  
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
 ```  
   
 #### Parameters  

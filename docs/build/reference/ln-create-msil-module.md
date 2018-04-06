@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /LN (Create MSIL Module)
 Specifies that an assembly manifest should not be inserted into the output file.  

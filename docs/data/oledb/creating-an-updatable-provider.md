@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, updatable", "notifications, support in providers", "OLE DB providers, creating"]
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an Updatable Provider
 Visual C++ supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
@@ -206,7 +207,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how `FlushData` is implemented in the `RUpdateRowset` class in the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample (see Rowset.h in the sample code):  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
 ...  
@@ -305,7 +306,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how the **CommonGetColInfo** function is implemented in **CUpdateCommand** (see UpProvRS.cpp) in UpdatePV. Note how the columns have this **DBCOLUMNFLAGS_ISNULLABLE** for nullable columns.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////////  
 // CUpdateCommand (in UpProvRS.cpp)  
   
@@ -417,6 +418,7 @@ trData[0].m_nNumericPrecision = 10;
 trData[0].m_ulColumnFlags = DBCOLUMNFLAGS_WRITE |  
                             DBCOLUMNFLAGS_ISFIXEDLENGTH;  
 lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));  
+
 m_rgRowData.Add(trData[0]);  
 ```  
   

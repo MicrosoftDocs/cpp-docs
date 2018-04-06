@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 5b34e1df-7c2b-4269-aba8-b767d36c49d9
 caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Strings (C++/CX)
 Text in the Windows Runtime is represented in C++/CX by the [Platform::String Class](../cppcx/platform-string-class.md). Use the `Platform::String Class` when you pass strings back and forth to methods in Windows Runtime classes, or when you are interacting with other Windows Runtime components across the application binary interface (ABI) boundary. The `Platform::String Class` provides methods for several common string operations, but it's not designed to be a full-featured string class. In your C++ module, use standard C++ string types such as [wstring](../standard-library/basic-string-class.md) for any significant text processing, and then convert the final result to [Platform::String^](../cppcx/platform-string-class.md) before you pass it to or from a public interface. It's easy and efficient to convert between `wstring` or `wchar_t*` and `Platform::String`.  

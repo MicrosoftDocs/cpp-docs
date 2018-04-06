@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.2.4 omp_unset_lock and omp_unset_nest_lock Functions
 These functions provide the means of releasing ownership of a lock. The format is as follows:  

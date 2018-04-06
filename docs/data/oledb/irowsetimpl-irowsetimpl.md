@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "IRowsetImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetImpl constructor"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::IRowsetImpl
 The constructor.  
   
 ## Syntax  
   
-```  
-  
-IRowsetImpl( );  
+```cpp
+IRowsetImpl();  
   
 ```  
   

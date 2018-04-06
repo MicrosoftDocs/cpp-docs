@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "conformance testing", "conformance testing [OLE DB]", "OLE DB providers, testing"]
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Passing OLE DB Conformance Tests
 To make providers more consistent, the Data Access SDK provides a set of OLE DB conformance tests. The tests check all aspects of your provider and give you reasonable assurance that your provider functions as expected. You can find the OLE DB conformance tests on the Microsoft Data Access SDK. This section focuses on things you should do to pass the conformance tests. For information about running the OLE DB conformance tests, see the SDK.  
@@ -28,7 +29,7 @@ To make providers more consistent, the Data Access SDK provides a set of OLE DB 
   
  The following code is the **ValidateCommandID** validation routine:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
 // Class: CMyProviderRowset   

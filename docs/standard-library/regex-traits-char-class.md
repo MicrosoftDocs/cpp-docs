@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits<char>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["regex_traits<char> class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;char&gt; Class
 Specialization of regex_traits for char.  

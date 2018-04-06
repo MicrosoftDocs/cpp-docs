@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /TSAWARE (Create Terminal Server Aware Application)
 ```  
@@ -30,7 +31,7 @@ manager: "ghogen"
   
  If you use /TSAWARE and your application still uses INI files, the files will be shared by all users of the system. If that is acceptable, you can still link your application with /TSAWARE; otherwise you need to use /TSAWARE:NO.  
   
- The /TSAWARE option is enabled by default for Windows 2000 and later, for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
+ The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
   
  /TSAWARE is not valid for drivers, VxDs, or DLLs.  
   

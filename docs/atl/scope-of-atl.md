@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Scope of ATL
 ATL allows you to easily create COM objects, Automation servers, and ActiveX controls. ATL provides built-in support for many of the fundamental COM interfaces.  

@@ -15,6 +15,7 @@ caps.latest.revision: 41
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonBar Class
 The `CMFCRibbonBar` class implements a ribbon bar similar to that used in Office 2007.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::AsIID Method
 Sets the specified ComPtr pointer parameter to represent the specified interface ID.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_strCommandText"]
@@ -15,14 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::m_strCommandText
 Contains the rowset's initial command.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR CRowsetBaseImpl::m_strCommandText;  
   
 ```  

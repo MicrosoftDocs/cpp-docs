@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Manipulating Menus During Program Execution
 Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsulates a Windows `HMENU` handle and supplies member functions for working with menus.  

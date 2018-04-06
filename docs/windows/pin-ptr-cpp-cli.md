@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # pin_ptr (C++/CLI)
 Declares a *pinning pointer*, which is used only with the common language runtime.  
@@ -196,7 +197,7 @@ public:
   
 int main() {  
    ManagedType ^mt = gcnew ManagedType;  
-   pin_ptr< int > pt = &mt->i;  
+   pin_ptr<int> pt = &mt->i;  
    *pt = 8;  
    Console::WriteLine(mt->i);  
   

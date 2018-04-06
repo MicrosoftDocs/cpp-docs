@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["source_block", "AGENTS/concurrency::source_block", "AGENTS/concurrency::source_block::source_block", "AGENTS/concurrency::source_block::accept", "AGENTS/concurrency::source_block::acquire_ref", "AGENTS/concurrency::source_block::consume", "AGENTS/concurrency::source_block::link_target", "AGENTS/concurrency::source_block::release", "AGENTS/concurrency::source_block::release_ref", "AGENTS/concurrency::source_block::reserve", "AGENTS/concurrency::source_block::unlink_target", "AGENTS/concurrency::source_block::unlink_targets", "AGENTS/concurrency::source_block::accept_message", "AGENTS/concurrency::source_block::async_send", "AGENTS/concurrency::source_block::consume_message", "AGENTS/concurrency::source_block::enable_batched_processing", "AGENTS/concurrency::source_block::initialize_source", "AGENTS/concurrency::source_block::link_target_notification", "AGENTS/concurrency::source_block::process_input_messages", "AGENTS/concurrency::source_block::propagate_output_messages", "AGENTS/concurrency::source_block::propagate_to_any_targets", "AGENTS/concurrency::source_block::release_message", "AGENTS/concurrency::source_block::remove_targets", "AGENTS/concurrency::source_block::reserve_message", "AGENTS/concurrency::source_block::resume_propagation", "AGENTS/concurrency::source_block::sync_send", "AGENTS/concurrency::source_block::unlink_target_notification", "AGENTS/concurrency::source_block::wait_for_outstanding_async_sends"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["source_block class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # source_block Class
 The `source_block` class is an abstract base class for source-only blocks. The class provides basic link management functionality as well as common error checks.  

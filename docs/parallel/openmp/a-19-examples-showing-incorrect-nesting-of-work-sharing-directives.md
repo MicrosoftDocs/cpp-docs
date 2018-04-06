@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.19   Examples Showing Incorrect Nesting of Work-sharing Directives
 The examples in this section illustrate the directive nesting rules. For more information on directive nesting, see [Section 2.9](../../parallel/openmp/2-9-directive-nesting.md) on page 33.  

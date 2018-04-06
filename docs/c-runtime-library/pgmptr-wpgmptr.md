@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _pgmptr, _wpgmptr
 The path of the executable file. Deprecated; use [_get_pgmptr](../c-runtime-library/reference/get-pgmptr.md) and [_get_wpgmptr](../c-runtime-library/reference/get-wpgmptr.md).  

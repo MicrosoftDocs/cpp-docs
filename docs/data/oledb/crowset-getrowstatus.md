@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "GetRowStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowStatus method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::GetRowStatus
 Returns the status of all rows.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetRowStatus(   
-   DBPENDINGSTATUS* pStatus    
-) const throw( );  
+```cpp
+HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();  
 ```  
   
 #### Parameters  

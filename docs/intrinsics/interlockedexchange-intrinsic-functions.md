@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedExchange_rel", "_InterlockedExchange8_nf", "_InterlockedExchange_acq_cpp", "_InterlockedExchange_nf", "_InterlockedExchange64_nf", "_InterlockedExchange_HLEAcquire", "_InterlockedExchange_cpp", "_InterlockedExchange64_acq_cpp", "_InterlockedExchange64_acq", "_InterlockedExchange64_HLERelease", "_InterlockedExchange8_acq", "_InterlockedExchange16_acq", "_InterlockedExchange", "_InterlockedExchange64_HLEAcquire", "_InterlockedExchange8", "_InterlockedExchange64_rel", "_InterlockedExchange_acq", "_InterlockedExchange16", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange64", "_InterlockedExchange_HLERelease", "_InterlockedExchange64_cpp", "_InterlockedExchange8_rel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedExchange8", "_InterlockedExchange64 intrinsic", "_InterlockedExchange_acq intrinsic", "InterlockedExchange64 intrinsic", "_InterlockedExchange64_acq intrinsic", "InterlockedExchange64_acq intrinsic", "_InterlockedExchange16_acq", "_InterlockedExchange8_acq", "_InterlockedExchange16", "_InterlockedExchange8_rel", "InterlockedExchange_acq intrinsic", "InterlockedExchange intrinsic", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange intrinsic", "_InterlockedExchange8_nf"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedExchange Intrinsic Functions
 **Microsoft Specific**  

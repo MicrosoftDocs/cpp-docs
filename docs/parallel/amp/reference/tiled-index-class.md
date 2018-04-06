@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["tiled_index", "AMP/tiled_index", "AMP/Concurrency::tiled_index::tiled_index", "AMP/Concurrency::tiled_index::get_tile_extent", "AMP/Concurrency::tiled_index::barrier", "AMP/Concurrency::tiled_index::global", "AMP/Concurrency::tiled_index::local", "AMP/Concurrency::tiled_index::rank", "AMP/Concurrency::tiled_index::tile", "AMP/Concurrency::tiled_index::tile_dim0", "AMP/Concurrency::tiled_index::tile_dim1", "AMP/Concurrency::tiled_index::tile_dim2", "AMP/Concurrency::tiled_index::tile_origin", "AMP/Concurrency::tiled_index::tile_extent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tiled_index class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tiled_index Class
 Provides an index into a [tiled_extent](tiled-extent-class.md) object. This class has properties to access elements relative to the local tile origin and relative to the global origin. For more information about tiled spaces, see [Using Tiles](../../../parallel/amp/using-tiles.md).  

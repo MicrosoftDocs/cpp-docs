@@ -15,6 +15,7 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarButton Class
 Provides button functionality to toolbars.  

@@ -11,6 +11,7 @@ ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Move Definition Location

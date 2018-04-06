@@ -14,11 +14,12 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Pointer Subtraction
 **ANSI 3.3.6, 4.1.1** The type of integer required to hold the difference between two pointers to elements of the same array, **ptrdiff_t**  
   
- A **ptrdiff_t** is a **signed int**.  
+ The `ptrdiff_t` typedef is an `int` on the 32-bit x86 platform. On 64-bit platforms, the `ptrdiff_t` typedef is an `__int64`.
   
 ## See Also  
  [Arrays and Pointers](../c-language/arrays-and-pointers.md)

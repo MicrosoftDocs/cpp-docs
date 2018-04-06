@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_PARAM_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PARAM_MAP macro"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_PARAM_MAP
 Marks the beginning of the parameter map entries.  
   
 ## Syntax  
   
-```  
-  
-BEGIN_PARAM_MAP(  
-x  
- )  
+```cpp
+BEGIN_PARAM_MAP(x)  
   
 ```  
   

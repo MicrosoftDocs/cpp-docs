@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Offset", "operator OFFSET"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OFFSET operator", "operator OFFSET"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator OFFSET
 Returns the offset into the relevant segment of *expression*.  

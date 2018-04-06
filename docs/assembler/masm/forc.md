@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["FORC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FORC directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # FORC
 Marks a block that will be repeated once for each character in `string`, with the current character replacing `parameter` on each repetition.  

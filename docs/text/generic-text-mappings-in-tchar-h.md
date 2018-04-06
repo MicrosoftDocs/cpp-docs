@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings in Tchar.h
 To simplify the transporting of code for international use, the [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] run-time library provides [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)]-specific generic-text mappings for many data types, routines, and other objects. You can use these mappings, which are defined in Tchar.h, to write generic code that can be compiled for single-byte, multibyte, or [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] character sets, depending on a manifest constant that you define by using a `#define` statement. Generic-text mappings are [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] extensions that are not [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] compatible.  

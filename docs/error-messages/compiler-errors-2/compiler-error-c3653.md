@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3653
 'function' : cannot be used as a named override: a function being overridden not found; did you forget to name the function explicitly, using a :: operator?  

@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDockingPanesRow Class
 Manages a list of panes that are located in the same horizontal or vertical row (column) of a dock site.  

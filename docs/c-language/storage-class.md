@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Storage Class
 The storage-class specifier in a function definition gives the function either `extern` or **static** storage class.  

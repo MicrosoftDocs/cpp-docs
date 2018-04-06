@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["HIGHWORD", "operator HIGHWORD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator HIGHWORD", "HIGHWORD operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator HIGHWORD
 Returns the high 16 bits of the low 32 bits of *expression*. MASM expressions are 64-bit values.  

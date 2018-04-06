@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl::GetRecordCount", "ATL::IErrorRecordsImpl::GetRecordCount", "IErrorRecordsImpl.GetRecordCount", "ATL.IErrorRecordsImpl.GetRecordCount"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRecordCount method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl::GetRecordCount
 Returns the number of records in the OLE DB record object.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetRecordCount )(  
-   ULONG *pcRecords   
-);  
+```cpp
+      STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
 ```  
   
 #### Parameters  

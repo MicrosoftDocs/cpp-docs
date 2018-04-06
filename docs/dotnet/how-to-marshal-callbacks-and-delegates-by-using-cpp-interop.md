@@ -14,6 +14,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Callbacks and Delegates By Using C++ Interop
 This topic demonstrates the marshalling of callbacks and delegates (the managed version of a callback) between managed and unmanaged code using Visual C++.  

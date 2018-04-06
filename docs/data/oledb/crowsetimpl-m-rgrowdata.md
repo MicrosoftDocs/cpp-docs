@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_rgRowData"]
@@ -15,14 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::m_rgRowData
 By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 ArrayType CRowsetBaseImpl::m_rgRowData;  
   
 ```  

@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Explicit Type Conversion Operator: ()
 C++ allows explicit type conversion using syntax similar to the function-call syntax.  

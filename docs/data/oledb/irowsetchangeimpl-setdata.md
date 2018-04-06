@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SetData", "IRowsetChangeImpl::SetData", "ATL.IRowsetChangeImpl.SetData", "IRowsetChangeImpl.SetData", "ATL::IRowsetChangeImpl::SetData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetData method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetChangeImpl::SetData
 Sets data values in one or more columns.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( SetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD (SetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pSrcData   
-);  
+   void* pSrcData);  
 ```  
   
 #### Parameters  

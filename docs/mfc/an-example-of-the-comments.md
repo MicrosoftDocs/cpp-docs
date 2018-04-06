@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # An Example of the Comments
 The following partial listing of class `CChildFrame` uses most of the standard comments that MFC employs in its classes to divide class members by the ways they are used:  

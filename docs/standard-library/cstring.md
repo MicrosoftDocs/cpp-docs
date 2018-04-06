@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<cstring>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<cstring> header", "cstring header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cstring&gt;
 Includes the Standard C library header \<string.h> and adds the associated names to the `std` namespace.  

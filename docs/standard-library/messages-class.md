@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xlocmes/std::messages", "xlocmes/std::messages::char_type", "xlocmes/std::messages::string_type", "xlocmes/std::messages::close", "xlocmes/std::messages::do_close", "xlocmes/std::messages::do_get", "xlocmes/std::messages::do_open", "xlocmes/std::messages::get", "xlocmes/std::messages::open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::messages [C++]", "std::messages [C++], char_type", "std::messages [C++], string_type", "std::messages [C++], close", "std::messages [C++], do_close", "std::messages [C++], do_get", "std::messages [C++], do_open", "std::messages [C++], get", "std::messages [C++], open"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # messages Class
 The template class describes an object that can serve as a locale facet to retrieve localized messages from a catalog of internationalized messages for a given locale.  

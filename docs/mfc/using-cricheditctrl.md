@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CRichEditCtrl
 A rich edit control is a window in which the user can enter and edit text. The text can be assigned character and paragraph formatting, and can include embedded OLE objects. The rich edit control is represented in MFC by the [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) class.  

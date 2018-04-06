@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Improve Performance with Generics (Visual C++)
 With generics, you can create reusable code based on a type parameter. The actual type of the type parameter is deferred until called by client code. For more information on generics, see [Generics](../windows/generics-cpp-component-extensions.md).  
@@ -52,7 +53,7 @@ int main()
     // Pop the items off the Stack.  
     // The item is returned as an Object, so a cast is  
     // necessary to convert it to its proper type.  
-    while (s->Count > 0)  
+    while (s->Count> 0)  
     {  
         Object ^o = s->Pop();  
         if (o->GetType() == Type::GetType("System.String"))  

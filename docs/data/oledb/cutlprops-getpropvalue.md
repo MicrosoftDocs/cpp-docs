@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetPropValue method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::GetPropValue
 Gets a property from a property set.  
   
 ## Syntax  
   
-```  
-  
-      OUT_OF_LINE HRESULT GetPropValue(  
-   const GUID* pguidPropSet,  
+```cpp
+      OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,  
    DBPROPID dwPropId,  
-   VARIANT* pvValue   
-);  
+   VARIANT* pvValue);  
 ```  
   
 #### Parameters  

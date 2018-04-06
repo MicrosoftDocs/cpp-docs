@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_bittestandreset64_cpp", "_bittestandreset", "_bittestandreset_cpp", "_bittestandreset64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["btr instruction", "_bittestandreset intrinsic", "_bittestandreset64 intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _bittestandreset, _bittestandreset64
 **Microsoft Specific**  

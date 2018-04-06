@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Inverting the Colors in a Selection (Image Editor for Icons)
 The Image editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.  

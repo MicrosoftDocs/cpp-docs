@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorBase.Close", "CAccessorBase::Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorBase::Close
 Closes the accessors.  
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

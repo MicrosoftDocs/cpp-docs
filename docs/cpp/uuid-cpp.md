@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # uuid (C++)
 **Microsoft Specific**  
@@ -25,9 +26,7 @@ manager: "ghogen"
   
 ```  
   
-__declspec( uuid("  
-ComObjectGUID  
-") ) declarator  
+__declspec( uuid("ComObjectGUID") ) declarator  
 ```  
   
 ## Remarks  
@@ -38,7 +37,7 @@ struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;  
 ```  
   
- This attribute can be applied in a redeclaration. This allows the system headers to supply the definitions of interfaces such as **IUnknown**, and the redeclaration in some other header (such as COMDEF.H) to supply the GUID.  
+ This attribute can be applied in a redeclaration. This allows the system headers to supply the definitions of interfaces such as **IUnknown**, and the redeclaration in some other header (such as \<comdef.h>) to supply the GUID.  
   
  The keyword [__uuidof](../cpp/uuidof-operator.md) can be applied to retrieve the constant GUID attached to a user-defined type.  
   

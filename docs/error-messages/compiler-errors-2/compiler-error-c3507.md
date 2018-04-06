@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3507
 a ProgID can have no more than 39 characters 'id'; nor contain any punctuation apart from '.'; nor start with a digit  

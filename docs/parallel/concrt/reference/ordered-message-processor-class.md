@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ordered_message_processor", "AGENTS/concurrency::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::async_send", "AGENTS/concurrency::ordered_message_processor::initialize", "AGENTS/concurrency::ordered_message_processor::initialize_batched_processing", "AGENTS/concurrency::ordered_message_processor::sync_send", "AGENTS/concurrency::ordered_message_processor::wait", "AGENTS/concurrency::ordered_message_processor::process_incoming_message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ordered_message_processor class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ordered_message_processor Class
 An `ordered_message_processor` is a `message_processor` that allows message blocks to process messages in the order they were received.  

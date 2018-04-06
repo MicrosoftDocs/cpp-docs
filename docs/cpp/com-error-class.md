@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _com_error Class
 **Microsoft Specific**  
@@ -67,7 +68,7 @@ manager: "ghogen"
 **END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comdef.h  
+ **Header:** \<comdef.h>  
   
  `Lib:` comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Load Unmanaged Resources into a Byte Array
 This topic discusses several ways to load unmanaged resources into a <xref:System.Byte> array.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "IAccessorImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAccessorImpl class, constructor", "IAccessorImpl constructor"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl::IAccessorImpl
 The constructor.  
   
 ## Syntax  
   
-```  
-  
-IAccessorImpl( );  
+```cpp
+IAccessorImpl();  
   
 ```  
   

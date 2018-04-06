@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
 caps.latest.revision: 42
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Ref classes and structs (C++/CX)
 The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the Windows Runtime type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between Windows Runtime components and Universal Windows Platform apps that are written in C++ or other languages.  

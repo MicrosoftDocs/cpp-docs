@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["reader_writer_lock", "CONCRT/concurrency::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock_read", "CONCRT/concurrency::reader_writer_lock::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::lock", "CONCRT/concurrency::reader_writer_lock::lock_read", "CONCRT/concurrency::reader_writer_lock::try_lock", "CONCRT/concurrency::reader_writer_lock::try_lock_read", "CONCRT/concurrency::reader_writer_lock::unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reader_writer_lock class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # reader_writer_lock Class
 A writer-preference queue-based reader-writer lock with local only spinning. The lock grants first in - first out (FIFO) access to writers and starves readers under a continuous load of writers.  

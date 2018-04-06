@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Changing the Styles of a Window Created by MFC
 In its version of the `WinMain` function, MFC registers several standard window classes for you. Because you don't normally edit MFC's `WinMain`, that function gives you no opportunity to change the MFC default window styles. This article explains how you can change the styles of such a preregistered window class in an existing application.  

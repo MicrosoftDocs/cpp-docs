@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorInfo", "ATL.CDBErrorInfo.GetErrorInfo", "CDBErrorInfo.GetErrorInfo", "ATL::CDBErrorInfo::GetErrorInfo", "CDBErrorInfo::GetErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorInfo method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetErrorInfo
 Calls [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms711230.aspx) to return an [IErrorInfo](https://msdn.microsoft.com/en-us/library/ms718112.aspx) interface pointer to the specified record.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorInfo(   
-   ULONG ulRecordNum,   
-   LCID lcid,   
-   IErrorInfo** ppErrorInfo    
-) const throw( );  
+```
+HRESULT GetErrorInfo(ULONG ulRecordNum,   
+   LCID lcid,IErrorInfo** ppErrorInfo) const throw();  
 ```  
   
 #### Parameters  

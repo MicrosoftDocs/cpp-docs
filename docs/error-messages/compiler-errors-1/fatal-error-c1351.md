@@ -15,11 +15,12 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-robots: noindex,nofollow
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1351
-error loading dll 'dll': incompatible version  
-  
- The wrong version of a DLL was found.  
-  
- This indicates a problem with your installation and you should reinstall the DLL from your product CD.
+
+> error loading dll '*dll*': incompatible version  
+
+The wrong version of a DLL was found.
+
+This indicates a problem with your installation, and you should reinstall Visual Studio.

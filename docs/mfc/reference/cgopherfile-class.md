@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CGopherFile Class
 Provides the functionality to find and read files on a gopher server.  
@@ -87,7 +88,7 @@ CGopherFile(
  A handle to the current Internet session.  
   
  `pstrLocator`  
- A pointer to a string used to locate the gopher server. See [Gopher Sessions](https://msdn.microsoft.com/library/24wz8xze.aspx) for more information about gopher locators.  
+ A pointer to a string used to locate the gopher server. See [Gopher Sessions](cgopherlocator-class.md) for more information about gopher locators.  
   
  *dwLocLen*  
  A DWORD containing the number of bytes in `pstrLocator`.  

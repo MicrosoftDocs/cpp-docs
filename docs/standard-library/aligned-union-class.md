@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::aligned_union"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_union"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # aligned_union Class
 Provides a POD type large enough and suitably aligned to store a union type, and the size required.  

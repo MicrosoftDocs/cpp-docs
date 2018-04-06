@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __p__fmode
 Points to the `_fmode` global variable, which specifies the default *file translation mode* for file I/O operations.  

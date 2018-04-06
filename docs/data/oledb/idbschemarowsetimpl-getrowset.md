@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset", "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowset method"]
@@ -15,24 +15,22 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::GetRowset
 Returns a schema rowset.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetRowset)(  
-   IUnknown *pUnkOuter,  
+```cpp
+      STDMETHOD (GetRowset)(IUnknown *pUnkOuter,  
    REFGUID rguidSchema,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
-   IUnknown **ppRowset   
-);  
+   IUnknown **ppRowset);  
 ```  
   
 #### Parameters  

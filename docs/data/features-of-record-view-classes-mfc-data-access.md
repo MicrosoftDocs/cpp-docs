@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Features of Record View Classes  (MFC Data Access)
 You can do form-based data-access programming with class [CFormView](../mfc/reference/cformview-class.md), but [CRecordView](../mfc/reference/crecordview-class.md) is generally a better class to derive from. In addition to its `CFormView` features, `CRecordView`:  

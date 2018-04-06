@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBulkRowset<TAccessor>::MoveToBookmark", "CBulkRowset.MoveToBookmark", "MoveToBookmark", "ATL.CBulkRowset.MoveToBookmark", "CBulkRowset::MoveToBookmark", "ATL::CBulkRowset<TAccessor>::MoveToBookmark", "ATL::CBulkRowset::MoveToBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveToBookmark method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::MoveToBookmark
 Fetches the row marked by a bookmark or the row at a specified offset (`lSkip`) from that bookmark.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveToBookmark(  
-   const CBookmarkBase& bookmark,  
-   DBCOUNTITEM lSkip = 0   
-) throw( );  
+```cpp
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark,  
+   DBCOUNTITEM lSkip = 0) throw();  
 ```  
   
 #### Parameters  

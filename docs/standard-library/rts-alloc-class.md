@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::rts_alloc", "stdext::rts_alloc [C++], allocate", "stdext::rts_alloc [C++], deallocate", "stdext::rts_alloc [C++], equals"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # rts_alloc Class
 The rts_alloc template class describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.  

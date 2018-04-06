@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBSchemaRowsetImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBSchemaRowsetImpl class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl Class
 Provides implementation for schema rowsets.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class SessionClass>  
 class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset  
 ```  

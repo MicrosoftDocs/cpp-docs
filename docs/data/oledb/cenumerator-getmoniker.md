@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetMoniker method"]
@@ -15,21 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator::GetMoniker
 Parses the display name to extract the component of the string that can be converted into a moniker.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetMoniker(   
-   LPMONIKER* ppMoniker    
-) const throw( );  
-HRESULT GetMoniker(   
-   LPMONIKER* ppMoniker,   
-   LPCTSTR lpszDisplayName    
-) const throw( );  
+```cpp
+HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
+
+
+HRESULT GetMoniker(LPMONIKER* ppMoniker,   
+   LPCTSTR lpszDisplayName) const throw();  
 ```  
   
 #### Parameters  

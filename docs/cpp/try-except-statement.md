@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # try-except Statement
 
@@ -86,13 +87,13 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
 ```  
 
-The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file WINNT.H, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file EXCPT.H
+The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file \<winnt.h>, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file \<excpt.h>
 
 You can use `GetExceptionCode` within the exception handler. However, you can use `GetExceptionInformation` only within the exception filter expression. The information it points to is generally on the stack and is no longer available when control is transferred to the exception handler.
 
 The intrinsic function `AbnormalTermination` is available within a termination handler. It returns 0 if the body of the **try-finally** statement terminates sequentially. In all other cases, it returns 1.
 
-EXCPT.H defines some alternate names for these intrinsics:
+excpt.h defines some alternate names for these intrinsics:
 
 `GetExceptionCode` is equivalent to `_exception_code`
 

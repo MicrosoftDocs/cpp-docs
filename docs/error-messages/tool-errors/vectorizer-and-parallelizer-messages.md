@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Vectorizer and Parallelizer Messages
 You can use the Visual C++ compiler options [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) and [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) to set the [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md) to output reason codes and informational messages about its activity. This article explains the reason codes and the messages.  
@@ -979,7 +980,7 @@ void code_1505(int *A, int *B)
   
 ## See Also  
  [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)   
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [#pragma loop()](../../preprocessor/loop.md)   
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   
  [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["AMPRT/accelerator", "AMPRT/Concurrency::accelerator::accelerator", "AMPRT/Concurrency::accelerator::create_view", "AMPRT/Concurrency::accelerator::get_all", "AMPRT/Concurrency::accelerator::get_auto_selection_view", "AMPRT/Concurrency::accelerator::get_dedicated_memory", "AMPRT/Concurrency::accelerator::get_default_cpu_access_type", "AMPRT/Concurrency::accelerator::get_default_view", "AMPRT/Concurrency::accelerator::get_description", "AMPRT/Concurrency::accelerator::get_device_path", "AMPRT/Concurrency::accelerator::get_has_display", "AMPRT/Concurrency::accelerator::get_is_debug", "AMPRT/Concurrency::accelerator::get_is_emulated", "AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::get_supports_double_precision", "AMPRT/Concurrency::accelerator::get_supports_limited_double_precision", "AMPRT/Concurrency::accelerator::get_version", "AMPRT/Concurrency::accelerator::set_default", "AMPRT/Concurrency::accelerator::set_default_cpu_access_type", "AMPRT/Concurrency::accelerator::cpu_accelerator", "AMPRT/Concurrency::accelerator::dedicated_memory", "AMPRT/Concurrency::accelerator::default_accelerator", "AMPRT/Concurrency::accelerator::default_cpu_access_type", "AMPRT/Concurrency::accelerator::default_view", "AMPRT/Concurrency::accelerator::description", "AMPRT/Concurrency::accelerator::device_path", "AMPRT/Concurrency::accelerator::direct3d_ref", "AMPRT/Concurrency::accelerator::direct3d_warp", "AMPRT/Concurrency::accelerator::has_display", "AMPRT/Concurrency::accelerator::is_debug", "AMPRT/Concurrency::accelerator::is_emulated", "AMPRT/Concurrency::accelerator::supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::supports_double_precision", "AMPRT/Concurrency::accelerator::supports_limited_double_precision", "AMPRT/Concurrency::accelerator::version"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # accelerator Class
 An accelerator is a hardware capability that is optimized for data-parallel computing. An accelerator may be a device attached to a PCIe bus (such as a GPU), or it might be an extended instruction set on the main CPU.  

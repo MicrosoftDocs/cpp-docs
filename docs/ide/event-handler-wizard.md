@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Event Handler Wizard
 This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visualstudio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. See [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md) for more information.  

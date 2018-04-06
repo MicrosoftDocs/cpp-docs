@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::bernoulli_distribution", "random/std::bernoulli_distribution::reset", "random/std::bernoulli_distribution::p", "random/std::bernoulli_distribution::param", "random/std::bernoulli_distribution::min", "random/std::bernoulli_distribution::max", "random/std::bernoulli_distribution::operator()", "random/std::bernoulli_distribution::param_type", "random/std::bernoulli_distribution::param_type::p", "random/std::bernoulli_distribution::param_type::operator==", "random/std::bernoulli_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::bernoulli_distribution [C++]", "std::bernoulli_distribution [C++], reset", "std::bernoulli_distribution [C++], p", "std::bernoulli_distribution [C++], param", "std::bernoulli_distribution [C++], min", "std::bernoulli_distribution [C++], max", "std::bernoulli_distribution [C++], param_type", "std::bernoulli_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bernoulli_distribution Class
 Generates a Bernoulli distribution.  
@@ -74,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/LinkId=398467).  
+For detailed information about the Bernoulli distribution discrete probability function, see the Wolfram MathWorld article [Bernoulli Distribution](http://go.microsoft.com/fwlink/p/?linkid=398467).  
   
 ## Example  
   

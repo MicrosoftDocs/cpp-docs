@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Private Virtual Functions
 The way private virtual functions are handled in derived classes has changed from Managed Extensions for C++ to Visual C++.  

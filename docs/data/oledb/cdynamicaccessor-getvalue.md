@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetValue", "CDynamicAccessor::GetValue<ctype>", "ATL.CDynamicAccessor.GetValue<ctype>", "CDynamicAccessor.GetValue", "CDynamicAccessor::GetValue", "ATL.CDynamicAccessor.GetValue", "ATL::CDynamicAccessor::GetValue", "ATL::CDynamicAccessor::GetValue<ctype>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetValue method"]
@@ -15,38 +15,28 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetValue
 Retrieves the data for a specified column.  
   
 ## Syntax  
   
-```  
-  
-      void* GetValue(   
-   DBORDINAL nColumn    
-) const throw( );  
-void* GetValue(  
-   const CHAR* pColumnName   
-) const throw( );  
-void* GetValue(  
-   const WCHAR* pColumnName   
-) const throw( );  
+```cpp
+void* GetValue(DBORDINAL nColumn) const throw();  
+
+void* GetValue(const CHAR* pColumnName) const throw();  
+
+void* GetValue(const WCHAR* pColumnName) const throw();  
+
+template < class ctype >
+bool GetValue(DBORDINAL nColumn, ctype* pData) const throw();  
+
 template < class ctype >  
-bool GetValue(  
-   DBORDINAL nColumn,  
-   ctype* pData   
-) const throw( );  
+bool GetValue(const CHAR* pColumnName, ctype* pData) const throw();  
+
 template < class ctype >  
-bool GetValue(  
-   const CHAR* pColumnName,  
-   ctype* pData   
-) const throw( );  
-template < class ctype >  
-bool GetValue(  
-   const WCHAR* pColumnName,  
-   ctype* pData   
-) const throw( );  
+bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();  
 ```  
   
 #### Parameters  

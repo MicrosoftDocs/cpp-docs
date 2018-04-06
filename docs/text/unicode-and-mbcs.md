@@ -15,16 +15,14 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Unicode and MBCS
 The Microsoft Foundation Classes (MFC) library, the C run-time library for Visual C++, and the Visual C++ development environment are enabled to assist your international programming. They provide:  
   
--   Support for the Unicode standard on Windows 2000 (formerly Windows NT). Unicode is the current standard and should be used whenever possible.  
+-   Support for the Unicode standard on Windows. Unicode is the current standard and should be used whenever possible.  
   
      Unicode is a 16-bit character encoding, providing enough encodings for all languages. All ASCII characters are included in Unicode as widened characters.  
-  
-    > [!NOTE]
-    >  The Unicode standard is not supported on Windows 95, Windows 98, or Windows Millennium Edition.  
   
 -   Support for a form of multibyte character set (MBCS) called double-byte character set (DBCS) on all platforms.  
   

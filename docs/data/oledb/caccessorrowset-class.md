@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessorRowset class"]
@@ -15,20 +15,17 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset Class
 Encapsulates a rowset and its associated accessors in a single class.  
   
-## Syntax  
-  
-```  
-template <   
-   class TAccessor = CNoAccessor,    
-   template <typename T> class TRowset = CRowset    
->  
-class CAccessorRowset :   
-   public TAccessor,    
-   public TRowset<TAccessor>  
+## Syntax
+
+```cpp
+template <class TAccessor = CNoAccessor, 
+          template <typename T> class TRowset = CRowset>  
+class CAccessorRowset : public TAccessor, public TRowset<TAccessor>  
 ```  
   
 #### Parameters  

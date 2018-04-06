@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CArrayRowset<TAccessor>", "ATL.CArrayRowset", "CArrayRowset", "ATL::CArrayRowset", "ATL::CArrayRowset<TAccessor>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CArrayRowset class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset Class
 Accesses elements of a rowset using array syntax.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < class TAccessor >  
 class CArrayRowset :   
    public CVirtualBuffer <TAccessor>,   

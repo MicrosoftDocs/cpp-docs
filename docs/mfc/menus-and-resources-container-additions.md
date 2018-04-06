@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Container Additions
 This article explains the changes that need to be made to the menus and other resources in a visual editing container application.  

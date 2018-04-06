@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Updating Rowsets
 A very basic database operation is to update, or write data to, the data store. In OLE DB, the update mechanism is simple: your consumer application sets the values of bound data members and then writes those values to the rowset; the consumer then requests that the provider update the data store.  
@@ -39,6 +40,7 @@ A very basic database operation is to update, or write data to, the data store. 
   
 ```  
 CDBPropSet ps(DBPROPSET_ROWSET);  
+
 ps.AddProperty(DBPROP_IRowsetChange, true)  
 ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
 ```  
@@ -50,7 +52,7 @@ ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | 
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -58,12 +60,13 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the current row of the Product table  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Candle" ) );  
+
 product.m_UnitsInStock = 10000;  
   
 // Set the data  
-HRESULT hr = product.SetData( );  
+HRESULT hr = product.SetData();  
 ```  
   
 ## Inserting Rows into Rowsets  
@@ -81,7 +84,7 @@ HRESULT Insert(int nAccessor = 0, bool bGetRow = false)
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -90,12 +93,14 @@ product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100
   
 // Set the column values for a row of the Product table, then insert the row  
 product.m_ProductID = 101;  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Candle" ) );  
+
 product.m_SupplierID = 27857;  
 product.m_CategoryID = 372;  
-_tcscpy_s( product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit,  
+_tcscpy_s(product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit,  
            _T( "Pack of 10" ) );  
+
 product.m_UnitPrice = 20;  
 product.m_UnitsInStock = 10000;  
 product.m_UnitsOnOrder = 5201;  
@@ -121,7 +126,7 @@ m_dwProductNameLength = 6;             // "Candle" has 6 characters
 m_dwQuantityPerUnitLength = 10;        // "Pack of 10" has 10 characters  
   
 // Insert the data  
-HRESULT hr = product.Insert( );  
+HRESULT hr = product.Insert();  
 ```  
   
  For a more detailed example, see [CRowset::Insert](../../data/oledb/crowset-insert.md).  
@@ -133,7 +138,7 @@ HRESULT hr = product.Insert( );
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -141,7 +146,7 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Delete the row  
-HRESULT hr = product.Delete( );  
+HRESULT hr = product.Delete();  
 ```  
   
 ## Immediate and Deferred Updates  
@@ -165,7 +170,7 @@ pPropSet->AddProperty(DBPROP_IRowsetUpdate, true);
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -173,18 +178,23 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the 100th row of the Product table  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Wick" ) );  
+
 product.m_UnitsInStock = 10000;  
-HRESULT hr = product.SetData( );  // No changes made to row 100 yet  
+
+HRESULT hr = product.SetData();  // No changes made to row 100 yet  
 product.Update();                 // Update row 100 now  
   
 // Change the values of columns "Name" and "Units in Stock" in the 101st row of the Product table  
-product.MoveNext( );  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName  
+product.MoveNext();  
+
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName  
            _T( "Wax" ) );  
+
 product.m_UnitsInStock = 500;  
-HRESULT hr = product.SetData( );  // No changes made to row 101 yet  
+
+HRESULT hr = product.SetData();  // No changes made to row 101 yet  
 product.Update();                 // Update row 101 now  
 ```  
   

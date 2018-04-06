@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_TYPE_SIZE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_TYPE_SIZE macro"]
@@ -15,23 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_TYPE_SIZE
 Represents a binding to the specific column in the database. Supports `type` and `size` parameters.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE_SIZE(  
-nOrdinal  
-,   
-wType  
-,   
-nLength  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
   
 ```  
   

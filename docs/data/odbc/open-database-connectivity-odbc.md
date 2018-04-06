@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Open Database Connectivity (ODBC)
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.

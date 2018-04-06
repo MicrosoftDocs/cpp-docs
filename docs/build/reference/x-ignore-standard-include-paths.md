@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /X (Ignore Standard Include Paths)
 Prevents the compiler from searching for include files in directories specified in the PATH and INCLUDE environment variables.  

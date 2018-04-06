@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetChangeImpl::FlushData", "IRowsetChangeImpl.FlushData", "FlushData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FlushData method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetChangeImpl::FlushData
 Overidden by provider to commit data to its store.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT FlushData(  
-   HROW hRowToFlush,  
-   HACCESSOR hAccessorToFlush   
-);  
-```  
+```
+HRESULT FlushData(HROW hRowToFlush,  
+   HACCESSOR hAccessorToFlush);  ```  
   
 #### Parameters  
  *hRowToFlush*  

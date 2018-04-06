@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateAccessor method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CManualAccessor::CreateAccessor
 Allocates memory for the column bind structures and initializes the column data members.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateAccessor(   
-   int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize    
-) throw( );  
+```
+HRESULT CreateAccessor(int nBindEntries,   
+  void* pBuffer,   
+   DBLENGTH nBufferSize) throw();  
 ```  
   
 #### Parameters  

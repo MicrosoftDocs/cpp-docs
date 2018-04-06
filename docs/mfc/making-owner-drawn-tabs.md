@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Making Owner-Drawn Tabs
 You can define individual items of a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Tabs](http://msdn.microsoft.com/library/windows/desktop/bb760550) in the Windows SDK.  

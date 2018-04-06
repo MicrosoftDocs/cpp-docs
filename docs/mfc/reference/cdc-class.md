@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDC Class
 Defines a class of device-context objects.  
@@ -1527,7 +1528,7 @@ int EnumObjects(
  Points to the application-supplied data. The data is passed to the callback function along with the object information.  
   
 ### Return Value  
- Specifies the last value returned by the [callback function](../../mfc/reference/callback-function-for-cdc-enumobjects.md). Its meaning is user-defined.  
+ Specifies the last value returned by the [callback function](callback-functions-used-by-mfc.md#enum_objects). Its meaning is user-defined.  
   
 ### Remarks  
  For each object of a given type, the callback function that you pass is called with the information for that object. The system calls the callback function until there are no more objects or the callback function returns 0.  
@@ -3318,7 +3319,7 @@ virtual BOOL GrayString(
  Identifies the brush to be used for dimming (graying).  
   
  `lpfnOutput`  
- Specifies the procedure-instance address of the application-supplied callback function that will draw the string. For more information, see the description of the Windows **OutputFunc** [callback function](../../mfc/reference/callback-function-for-cdc-graystring.md). If this parameter is **NULL**, the system uses the Windows `TextOut` function to draw the string, and `lpData` is assumed to be a long pointer to the character string to be output.  
+ Specifies the procedure-instance address of the application-supplied callback function that will draw the string. For more information, see the description of the Windows **OutputFunc** [callback function](callback-functions-used-by-mfc.md#graystring). If this parameter is **NULL**, the system uses the Windows `TextOut` function to draw the string, and `lpData` is assumed to be a long pointer to the character string to be output.  
   
  `lpData`  
  Specifies a far pointer to data to be passed to the output function. If `lpfnOutput` is **NULL**, `lpData` must be a long pointer to the string to be output.  
@@ -4775,7 +4776,7 @@ int SetAbortProc(BOOL (CALLBACK* lpfn)(HDC, int));
   
 ### Parameters  
  `lpfn`  
- A pointer to the abort function to install as the abort procedure. For more about the callback function, see [Callback Function for CDC::SetAbortProc](../../mfc/reference/callback-function-for-cdc-setabortproc.md).  
+ A pointer to the abort function to install as the abort procedure. For more about the callback function, see [Callback Function for CDC::SetAbortProc](callback-functions-used-by-mfc.md#setabortproc).  
   
 ### Return Value  
  Specifies the outcome of the `SetAbortProc` function. Some of the following values are more probable than others, but all are possible.  

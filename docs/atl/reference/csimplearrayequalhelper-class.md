@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleArrayEqualHelper Class
 This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-class.md) class.  

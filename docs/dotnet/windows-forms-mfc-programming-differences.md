@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Forms/MFC Programming Differences
 The topics in [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md) describe the MFC support for Windows Forms. If you are not familiar with .NET Framework or MFC programming, this topic provides background information about programming differences between the two.  

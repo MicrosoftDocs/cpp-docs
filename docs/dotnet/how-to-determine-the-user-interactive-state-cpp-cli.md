@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Determine the User Interactive State (C++/CLI)
 The following code example demonstrates how to determine whether code is being run in a user-interactive context. If <xref:System.Environment.UserInteractive%2A> is false, then the code is running as a service process or from inside a Web application, in which case you should not attempt to interact with the user.  

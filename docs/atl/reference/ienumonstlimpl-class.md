@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IEnumOnSTLImpl Class
 This class defines an enumerator interface based on a C++ Standard Library collection.  

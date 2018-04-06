@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["sstream/std::basic_stringstream", "sstream/std::basic_stringstream::allocator_type", "sstream/std::basic_stringstream::rdbuf", "sstream/std::basic_stringstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_stringstream [C++]", "std::basic_stringstream [C++], allocator_type", "std::basic_stringstream [C++], rdbuf", "std::basic_stringstream [C++], str"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_stringstream Class
 Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  

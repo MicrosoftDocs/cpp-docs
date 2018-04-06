@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _DEBUG
 The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These options specify debug versions of the C run-time library.  

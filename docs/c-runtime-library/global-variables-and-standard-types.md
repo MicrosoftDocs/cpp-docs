@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Global Variables and Standard Types
 The Microsoft run-time library contains definitions for [global variables](../c-runtime-library/global-variables.md), [control flags](../c-runtime-library/control-flags.md), and [standard types](../c-runtime-library/standard-types.md) used by library routines. Access these variables, flags, and types by declaring them in your program or by including the appropriate header files.  

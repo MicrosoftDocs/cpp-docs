@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # External Linkage
 If the first declaration at file-scope level for an identifier does not use the **static** storage-class specifier, the object has external linkage.  

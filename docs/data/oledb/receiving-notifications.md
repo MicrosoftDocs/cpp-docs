@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [C++], OLE DB consumers", "receiving notifications in OLE DB", "events [C++], notifications in OLE DB", "notifications [C++], events", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB providers, notifications"]
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Receiving Notifications
 OLE DB provides interfaces for receiving notifications when events occur. These are described in [OLE DB Object Notifications](https://msdn.microsoft.com/en-us/library/ms725406.aspx) in the *OLE DB Programmer's Reference*. Setup of these events uses the standard COM connection-point mechanism. For example, an ATL object that wants to retrieve events through `IRowsetNotify` implements the `IRowsetNotify` interface by adding `IRowsetNotify` to the class-derived list and exposing it through a **COM_INTERFACE_ENTRY** macro.  
@@ -26,10 +27,13 @@ OLE DB provides interfaces for receiving notifications when events occur. These 
   
 ```  
 CDBPropSet propset(DBPROPSET_ROWSET);  
+
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);  
   
+
 product.Open(session, _T("Products"), &propset);  
   
+
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);  
 ```  
   

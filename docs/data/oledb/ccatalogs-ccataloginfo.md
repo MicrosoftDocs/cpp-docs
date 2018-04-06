@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CCatalogs", "m_szName", "CCatalogInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DESCRIPTION class data member", "CCatalogInfo parameter class", "CCatalogs typedef class", "m_szName", "m_szDescription"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCatalogs, CCatalogInfo
 Call the typedef class **CCatalogs** to implement its parameter class **CCatalogInfo**.  

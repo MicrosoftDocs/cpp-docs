@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDBPropIDSet::CDBPropIDSet", "CDBPropIDSet", "CDBPropIDSet.CDBPropIDSet", "CDBPropIDSet::CDBPropIDSet", "ATL.CDBPropIDSet.CDBPropIDSet"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropIDSet class, constructor"]
@@ -15,21 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropIDSet::CDBPropIDSet
 The constructor. Initializes the **rgProperties**, **cProperties**, and (optionally) **guidPropertySet** fields of the [DBPROPIDSET](https://msdn.microsoft.com/en-us/library/ms717981.aspx) structure.  
   
 ## Syntax  
   
-```  
-  
-      CDBPropIDSet(  
-   const GUID& guid   
-);  
-CDBPropIDSet(   
-   const CDBPropIDSet& propidset    
-);  
-CDBPropIDSet( );  
+```cpp
+      CDBPropIDSet(const GUID& guid);  
+
+CDBPropIDSet(const CDBPropIDSet& propidset);  
+
+CDBPropIDSet();  
 ```  
   
 #### Parameters  

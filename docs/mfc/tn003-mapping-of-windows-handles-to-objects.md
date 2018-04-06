@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN003: Mapping of Windows Handles to Objects
 This note describes the MFC routines that support mapping Windows object handles to C++ objects.  

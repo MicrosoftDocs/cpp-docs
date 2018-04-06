@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # enum Type
 **ANSI 3.5.2.2** The integer type chosen to represent the values of an enumeration type  

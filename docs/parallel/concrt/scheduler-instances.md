@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Scheduler Instances
 This document describes the role of scheduler instances in the Concurrency Runtime and how to use the [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) and [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) classes to create and manage scheduler instances. Scheduler instances are useful when you want to associate explicit scheduling policies with specific types of workloads. For example, you can create one scheduler instance to run some tasks at an elevated thread priority and use the default scheduler to run other tasks at the normal thread priority.  

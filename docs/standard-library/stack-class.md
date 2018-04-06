@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stack/std::stack::container_type", "stack/std::stack::size_type", "stack/std::stack::value_type", "stack/std::stack::empty", "stack/std::stack::pop", "stack/std::stack::push", "stack/std::stack::size", "stack/std::stack::top"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::stack [C++], container_type", "std::stack [C++], size_type", "std::stack [C++], value_type", "std::stack [C++], empty", "std::stack [C++], pop", "std::stack [C++], push", "std::stack [C++], size", "std::stack [C++], top"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # stack Class
 A template container adaptor class that provides a restriction of functionality limiting access to the element most recently added to some underlying container type. The stack class is used when it is important to be clear that only stack operations are being performed on the container.  

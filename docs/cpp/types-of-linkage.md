@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Types of Linkage
 The way the names of objects and functions are shared between translation units is called linkage. These names can have:  

@@ -6,17 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Platform", "COLLECTION/Platform::Platform::STAThreadAttribute constructor 1", "COLLECTION/Platform::Platform::STAThreadAttribute::Equals", "COLLECTION/Platform::Platform::STAThreadAttribute::GetHashCode", "COLLECTION/Platform::Platform::STAThreadAttribute::ToString"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::STAThreadAttribute Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::STAThreadAttribute Class"]
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::STAThreadAttribute Class
 Indicates that the threading model for an application is single-threaded apartment (STA).  

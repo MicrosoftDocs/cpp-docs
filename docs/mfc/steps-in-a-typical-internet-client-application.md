@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical Internet Client Application
 The following table shows the steps you might perform in a typical Internet client application.  

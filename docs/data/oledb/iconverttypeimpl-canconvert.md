@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IConvertTypeImpl.CanConvert", "CanConvert", "IConvertTypeImpl::CanConvert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CanConvert method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IConvertTypeImpl::CanConvert
 Gives information on the availability of type conversions on a command or on a rowset.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CanConvert)(   
-   DBTYPE wFromType,   
+```cpp
+      STDMETHOD(CanConvert)(DBTYPE wFromType,   
    DBTYPE wToType,   
-   DBCONVERTFLAGS dwConvertFlags    
-);  
+   DBCONVERTFLAGS dwConvertFlags);  
 ```  
   
 #### Parameters  

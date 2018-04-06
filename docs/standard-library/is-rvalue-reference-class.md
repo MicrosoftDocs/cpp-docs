@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_rvalue_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_rvalue_reference class", "is_rvalue_reference"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_rvalue_reference Class
 Tests if type is an rvalue reference.  

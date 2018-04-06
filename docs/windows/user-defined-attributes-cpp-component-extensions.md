@@ -14,6 +14,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # User-Defined Attributes  (C++ Component Extensions)
 Custom attributes enable you to extend the metadata of an interface, class or structure, method, parameter, or enumeration.  

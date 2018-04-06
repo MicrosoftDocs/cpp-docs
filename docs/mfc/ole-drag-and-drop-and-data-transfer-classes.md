@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE Drag-and-Drop and Data Transfer Classes
 These classes are used in OLE data transfers. They allow data to be transferred between applications by using the Clipboard or through drag and drop.  

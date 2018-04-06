@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["message", "AGENTS/concurrency::message", "AGENTS/concurrency::message::message", "AGENTS/concurrency::message::add_ref", "AGENTS/concurrency::message::msg_id", "AGENTS/concurrency::message::remove_ref", "AGENTS/concurrency::message::payload"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # message Class
 The basic message envelope containing the data payload being passed between messaging blocks.  

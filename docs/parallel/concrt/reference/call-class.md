@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["call", "AGENTS/concurrency::call", "AGENTS/concurrency::call::call", "AGENTS/concurrency::call::process_input_messages", "AGENTS/concurrency::call::process_message", "AGENTS/concurrency::call::propagate_message", "AGENTS/concurrency::call::send_message", "AGENTS/concurrency::call::supports_anonymous_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["call class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # call Class
 A `call` messaging block is a multi-source, ordered `target_block` that invokes a specified function when receiving a message.  

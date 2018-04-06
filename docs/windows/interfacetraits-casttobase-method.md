@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits::CastToBase Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
@@ -22,9 +23,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 static __forceinline Base* CastToBase(  
    _In_ T* ptr  
 );  

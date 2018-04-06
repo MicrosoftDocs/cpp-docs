@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime and Managed Templates (C++ Component Extensions)
 Templates enable you to define a prototype of a Windows Runtime or common language runtime type, and then instantiate variations of that type by using different template type parameters.  

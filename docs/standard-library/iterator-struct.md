@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xutility/std::iterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iterator class", "iterator struct"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # iterator Struct
 An empty base struct used to ensure that a user-defined iterator class works properly with **iterator_trait**s.  

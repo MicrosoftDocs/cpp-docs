@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_TYPE macro"]
@@ -15,21 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_TYPE
 Represents a binding to the specific column in the database. Supports `type` parameter.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE (  
-nOrdinal  
-,   
-wType  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
   
 ```  
   

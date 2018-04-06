@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<regex>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["regex header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;regex&gt;
 Defines a template class to parse [Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md), and several template classes and functions to search text for matches to a regular expression object.  

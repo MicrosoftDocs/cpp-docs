@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OpenMP in Visual C++
 The OpenMP C and C++ application program interface lets you write applications that effectively use multiple processors. Visual C++ supports the OpenMP 2.0 standard.  

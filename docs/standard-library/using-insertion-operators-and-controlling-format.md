@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["insertion operators"]
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Insertion Operators and Controlling Format
 This topic shows how to control format and how to create insertion operators for your own classes. The insertion (**<<**) operator, which is preprogrammed for all standard C++ data types, sends bytes to an output stream object. Insertion operators work with predefined "manipulators," which are elements that change the default format of integer arguments.  
@@ -207,11 +208,11 @@ std::cout <<extracted;   //   This
   
  This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in `<iomanip>`. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is encountered. Any embedded quotes are escaped with an escape character ('\\\\' by default).  
   
- The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str)().  
+ The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str).  
   
  The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on and all these will be preserved by the quoted() manipulator.  
   
- For more information and full code examples, see [quoted]--brokenlink--(../Topic/%3Cios%3E%20functions.md#quoted).  
+ For more information and full code examples, see [quoted](../standard-library/iomanip-functions.md#quoted).  
   
 ## See Also  
  [Output Streams](../standard-library/output-streams.md)   

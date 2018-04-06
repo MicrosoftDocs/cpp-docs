@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Storage-Class Specifiers with Function Declarations
 You can use either the **static** or the `extern` storage-class specifier in function declarations. Functions always have global lifetimes.  

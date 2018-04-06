@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Containers for ActiveX Controls
 You can use ActiveX controls developed in Visual C++ in other applications, as long as they support ActiveX control containment. A number of Microsoft applications, beginning with the versions listed, support ActiveX control containment.  

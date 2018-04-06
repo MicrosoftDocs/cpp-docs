@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSimpleRow.Compare", "CSimpleRow::Compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Compare method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSimpleRow::Compare
 Compares two rows to see if they refer to the same row instance.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Compare(   
-   CSimpleRow* pRow    
-);  
+```cpp
+HRESULT Compare(CSimpleRow* pRow);  
 ```  
   
 #### Parameters  

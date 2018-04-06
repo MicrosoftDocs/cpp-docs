@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Wizards and the Resource Editors
 Visual C++ includes several wizards for use in MFC programming, along with many integrated resource editors. For ActiveX controls programming, the [ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md) serves a purpose much like that of the MFC Application Wizard. While you can write MFC applications without most of these tools, the tools greatly simplify and speed your work.  

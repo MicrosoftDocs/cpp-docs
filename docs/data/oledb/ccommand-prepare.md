@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CCommand.Prepare", "CCommand::Prepare", "Prepare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Prepare method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand::Prepare
 Validates and optimizes the current command.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::Prepare(  
-   ULONG cExpectedRuns = 0   
-) throw( );  
+```cpp
+HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();  
 ```  
   
 #### Parameters  

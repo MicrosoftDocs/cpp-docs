@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IEEE Floating-Point Representation
 Microsoft Visual C++ is consistent with the IEEE numeric standards. There are three internal varieties of real numbers. Real\*4 and real\*8 are used in Visual C++. Real\*4 is declared using the word **float**. Real\*8 is declared using the word **double**. In Windows 32-bit programming, the `long double` data type maps to **double**. There is, however, assembly language support for computations using the real*10 data type.  

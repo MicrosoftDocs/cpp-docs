@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # v1_enum
 Directs that the specified enumerated type be transmitted as a 32-bit entity rather than the 16-bit default.  

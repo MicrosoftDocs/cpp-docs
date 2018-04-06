@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::istream_iterator [C++]", "std::istream_iterator [C++], char_type", "std::istream_iterator [C++], istream_type", "std::istream_iterator [C++], traits_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # istream_iterator Class
 Describes an input iterator object. It extracts objects of class `Type` from an input stream, which it accesses through an object it stores, of type `pointer` to `basic_istream`< `CharType`, `Traits`>.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2573
 'class' : cannot delete pointers to objects of this type; the class has no non-placement overload for 'operator delete'.  

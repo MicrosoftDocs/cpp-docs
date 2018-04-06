@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_nOrdinal", "m_szTableSchema", "m_nColumnPropID", "CPrimaryKeys", "COLUMN_GUID", "CPrimaryKeyInfo", "m_szColumnName", "m_szTableCatalog", "COLUMN_PROPID", "m_guidColumn", "ORDINAL", "m_szTableName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_PROPID", "m_szTableSchema", "TABLE_CATALOG", "ORDINAL data member", "CPrimaryKeys typedef class", "TABLE_NAME", "m_nColumnPropID", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szTableCatalog", "m_szTableName", "m_nOrdinal", "CPrimaryKeyInfo parameter class", "COLUMN_GUID", "m_guidColumn"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CPrimaryKeys, CPrimaryKeyInfo
 Call the typedef class **CPrimaryKeys** to implement its parameter class **CPrimaryKeyInfo**.  

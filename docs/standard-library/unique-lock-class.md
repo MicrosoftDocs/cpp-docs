@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["mutex/std::unique_lock"]
 dev_langs: ["C++"]
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unique_lock Class
 Represents a template that can be instantiated to create objects that manage the locking and unlocking of a `mutex`.  

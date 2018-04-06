@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Swap Method
 Exchanges the interface managed by the current ComPtr with the interface managed by the specified ComPtr.  

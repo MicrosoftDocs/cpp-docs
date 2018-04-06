@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_ReadWriteBarrier"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReadWriteBarrier intrinsic", "_ReadWriteBarrier intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ReadWriteBarrier
 **Microsoft Specific**  

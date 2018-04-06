@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LoadLibrary and AfxLoadLibrary
 Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (or [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.  
@@ -28,7 +29,7 @@ Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (o
  If Windows cannot load the DLL, the process can attempt to recover from the error. For example, the process could notify the user of the error and ask the user to specify another path to the DLL.  
   
 > [!IMPORTANT]
->  If the code is to run under Windows NT 4, Windows 2000, or Windows XP (prior to SP1), make sure to specify the full path of any DLLs. On these operating systems, the current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded.  
+>  Make sure to specify the full path of any DLLs. The current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded.  
   
 ## What do you want to do?  
   

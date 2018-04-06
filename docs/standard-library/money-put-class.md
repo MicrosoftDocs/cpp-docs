@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xlocmon/std::money_put", "xlocmon/std::money_put::char_type", "xlocmon/std::money_put::iter_type", "xlocmon/std::money_put::string_type", "xlocmon/std::money_put::do_put", "xlocmon/std::money_put::put"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::money_put [C++]", "std::money_put [C++], char_type", "std::money_put [C++], iter_type", "std::money_put [C++], string_type", "std::money_put [C++], do_put", "std::money_put [C++], put"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # money_put Class
 The template class describes an object that can serve as a locale facet to control conversions of monetary values to sequences of type `CharType`.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Find method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator::Find
 Looks for a specified name among available providers.  
   
 ## Syntax  
   
-```  
-  
-      bool Find(   
-   TCHAR* szSearchName    
-) throw( );  
+```cpp
+      bool Find(TCHAR* szSearchName) throw();  
 ```  
   
 #### Parameters  

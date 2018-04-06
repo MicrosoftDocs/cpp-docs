@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _inp, _inpw, _inpd
 Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd`).  
@@ -26,7 +27,7 @@ Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd
 >  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -52,7 +53,7 @@ unsigned long _inpd(
 ## Remarks  
  The `_inp`, `_inpw`, and `_inpd` functions read a byte, a word, and a double word, respectively, from the specified input port. The input value can be any unsigned short integer in the range 0 - 65,535.  
   
- Because these functions read directly from an I/O port, they might not be used in user code in Windows NT, Windows 2000, Windows XP, and Windows Server 2003.  
+ Because these functions read directly from an I/O port, they cannot be used in user code.  
   
 ## Requirements  
   

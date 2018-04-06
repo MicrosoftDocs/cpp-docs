@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CManualAccessor::CreateParameterAccessor", "ATL.CManualAccessor.CreateParameterAccessor", "CManualAccessor.CreateParameterAccessor", "CreateParameterAccessor", "CManualAccessor::CreateParameterAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateParameterAccessor method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CManualAccessor::CreateParameterAccessor
 Allocates memory for the parameter bind structures and initializes the parameter data members.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateParameterAccessor(   
-   int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize    
-) throw( );  
+```
+HRESULT CreateParameterAccessor(int nBindEntries,   
+  void* pBuffer,   
+   DBLENGTH nBufferSize) throw();  
 ```  
   
 #### Parameters  

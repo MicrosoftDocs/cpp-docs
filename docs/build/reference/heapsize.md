@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # HEAPSIZE
 Exposes the same functionality as the [/HEAP](../../build/reference/heap-set-heap-size.md) linker option.  

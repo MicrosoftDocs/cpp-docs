@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # x64 Software Conventions
 This section describes the Visual C++ calling convention methodology for [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], 64-bit extension to the x86 architecture.  

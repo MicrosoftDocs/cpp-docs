@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # International Enabling
 Most traditional C and C++ code makes assumptions about character and string manipulation that do not work well for international applications. While both MFC and the run-time library support Unicode or MBCS, there is still work for you to do. To guide you, this section explains the meaning of "international enabling" in Visual C++:  

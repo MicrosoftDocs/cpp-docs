@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Multiple Targets
 NMAKE evaluates multiple targets in a single dependency as if each were specified in a separate description block.  

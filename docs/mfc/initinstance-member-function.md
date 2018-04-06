@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # InitInstance Member Function
 The Windows operating system allows you to run more than one copy, or "instance," of the same application. `WinMain` calls [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) every time a new instance of the application starts.  

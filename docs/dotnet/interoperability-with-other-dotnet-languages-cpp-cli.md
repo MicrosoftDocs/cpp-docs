@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Interoperability with Other .NET Languages (C++/CLI)
 The topics in this section show how to create assemblies in Visual C++ that consume from or provide functionality to assemblies written in C# or Visual Basic.  

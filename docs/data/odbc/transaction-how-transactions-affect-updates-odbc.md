@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: How Transactions Affect Updates (ODBC)
 Updates to the [data source](../../data/odbc/data-source-odbc.md) are managed during transactions through the use of an edit buffer (the same method used outside of transactions). The field data members of a recordset collectively serve as an edit buffer that contains the current record, which the recordset backs up temporarily during an `AddNew` or **Edit**. During a **Delete** operation, the current record is not backed up within a transaction. For more information about the edit buffer and how updates store the current record, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  

@@ -7,14 +7,13 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["auto_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["automatic storage class [C++], auto keyword", "auto keyword [C++]"]
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # auto Keyword
 The `auto` keyword is a declaration specifier. However, the C++ standard defines an original and a revised meaning for this keyword. Before Visual C++ 2010, the `auto` keyword declares a variable in the *automatic* storage class; that is, a variable that has a local lifetime. Starting with Visual C++ 2010, the `auto` keyword declares a variable whose type is deduced from the initialization expression in its declaration. The [/Zc:auto&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) compiler option controls the meaning of the `auto` keyword.  

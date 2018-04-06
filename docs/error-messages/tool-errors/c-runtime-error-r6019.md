@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6019
 unable to open console device  
@@ -31,4 +32,4 @@ unable to open console device
   
  **Information for Programmers**  
   
- This error occurs because the app called a console function, but the operating system did not grant access to the console. Except in debugging mode, console functions are generally not allowed in Windows Store apps. If your app requires administrator privileges to run, make sure it is installed to run as administrator by default.
+ This error occurs because the app called a console function, but the operating system did not grant access to the console. Except in debugging mode, console functions are generally not allowed in Microsoft Store apps. If your app requires administrator privileges to run, make sure it is installed to run as administrator by default.

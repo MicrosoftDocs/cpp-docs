@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with Documents and Views
 The Microsoft Foundation Classes (MFC) library relies on a document/view architecture for many of its features. Typically, a document stores your data and a view displays it within the client area of a frame window and manages user interaction with the data. The view communicates with the document to obtain and update the data. You can use the database classes with the framework or without it.  

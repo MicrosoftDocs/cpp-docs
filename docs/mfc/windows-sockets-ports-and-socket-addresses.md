@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Ports and Socket Addresses
 This article explains the terms "port" and "address" as used with Windows Sockets.  

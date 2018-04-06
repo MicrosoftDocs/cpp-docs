@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Events (C++/CX)
 A Windows Runtime type can declare (that is, publish) events, and client code in the same component or in other components can subscribe to those events by associating methods called *event handlers* with the event. Multiple event handlers can be associated with a single event. When the publishing object raises the event, it causes all event handlers to be invoked. In this way, a subscribing class can perform whatever custom action is appropriate when the publisher raises the event. An event has a delegate type that specifies the signature that all event handlers must have in order to subscribe to the event.  

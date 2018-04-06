@@ -6,18 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Runtime::CompilerServices"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Runtime::CompilerServices Namespace"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Runtime::CompilerServices"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Runtime::CompilerServices Namespace"]
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::CompilerServices Namespace
 This namespace is intended for internal use only, and is not intended to be used for development.  

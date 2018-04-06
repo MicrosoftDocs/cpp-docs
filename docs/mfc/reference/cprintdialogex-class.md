@@ -15,9 +15,10 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPrintDialogEx Class
-Encapsulates the services provided by the Windows 2000 Print property sheet.  
+Encapsulates the services provided by the Windows Print property sheet.  
   
 ## Syntax  
   
@@ -98,7 +99,7 @@ class CPrintDialogEx : public CCommonDialog
  **Header:** afxdlgs.h  
   
 ##  <a name="cprintdialogex"></a>  CPrintDialogEx::CPrintDialogEx  
- Constructs a Windows 2000 Print property sheet.  
+ Constructs a Windows Print property sheet.  
   
 ```  
 CPrintDialogEx(
@@ -132,7 +133,7 @@ HDC CreatePrinterDC();
  This DC is assumed to be the current printer DC, and any other previously obtained printer DCs must be deleted. This function can be called, and the resulting DC used, without ever displaying the Print dialog box.  
   
 ##  <a name="domodal"></a>  CPrintDialogEx::DoModal  
- Call this function to display the Windows 2000 common Print property sheet and allow the user to select various printing options such as the number of copies, page range, and whether copies should be collated.  
+ Call this function to display the Windows Print property sheet and allow the user to select various printing options such as the number of copies, page range, and whether copies should be collated.  
   
 ```  
 virtual INT_PTR DoModal();

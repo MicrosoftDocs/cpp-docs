@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_PROPERTY_SET_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PROPERTY_SET_EX macro"]
@@ -15,16 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_PROPERTY_SET_EX
 Marks the beginning of a property set in a property set map.  
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROPERTY_SET_EX(  
-guid  
+```cpp
+BEGIN_PROPERTY_SET_EX(guid  
 , flags )  
 ```  
   

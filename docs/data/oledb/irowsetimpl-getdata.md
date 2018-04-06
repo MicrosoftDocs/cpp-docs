@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetData method [OLE DB]"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::GetData
 Retrieves data from the rowset's copy of the row.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD(GetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pDstData   
-);  
+   void* pDstData);  
 ```  
   
 #### Parameters  

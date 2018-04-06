@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["I/O [C++], stream", "stream I/O"]
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Input/Output Streams
 `basic_iostream`, which is defined in the header file \<istream>, is the class template for objects that handle both input and output character-based I/O streams.  

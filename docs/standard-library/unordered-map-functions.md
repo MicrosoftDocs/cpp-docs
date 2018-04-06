@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["unordered_map/std::swap", "unordered_map/std::swap (unordered_map)", "unordered_map/std::swap (unordered_multimap)"]
 dev_langs: ["C++"]
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
@@ -14,6 +14,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_map&gt; functions
 |||  

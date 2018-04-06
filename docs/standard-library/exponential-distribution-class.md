@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::exponential_distribution [C++]", "std::exponential_distribution [C++], reset", "std::exponential_distribution [C++], lambda", "std::exponential_distribution [C++], param", "std::exponential_distribution [C++], min", "std::exponential_distribution [C++], max", "std::exponential_distribution [C++], param_type", "std::exponential_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # exponential_distribution Class
 Generates an exponential distribution.  
@@ -71,7 +72,7 @@ The property member function `param()` sets or returns the `param_type` stored d
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/LinkId=401098).  
+For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/p/?linkid=401098).  
   
 ## Example  
   

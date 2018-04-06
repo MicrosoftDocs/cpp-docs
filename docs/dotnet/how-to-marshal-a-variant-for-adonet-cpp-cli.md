@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal a VARIANT for ADO.NET (C++/CLI)
 Demonstrates how to add a native `VARIANT` to a database and how to marshal a <xref:System.Object?displayProperty=fullName> from a database to a native `VARIANT`.  

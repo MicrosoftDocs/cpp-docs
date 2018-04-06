@@ -6,13 +6,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 820b6448-fb01-49a4-aeaa-546ad7576ea4
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;initializer_list&gt;
 Defines the container template class `initializer_list` and several supporting templates.  

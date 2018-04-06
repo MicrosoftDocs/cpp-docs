@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::student_t_distribution", "random/std::student_t_distribution::result_type", "random/std::student_t_distribution::reset", "random/std::student_t_distribution::operator()", "random/std::student_t_distribution::n", "random/std::student_t_distribution::param", "random/std::student_t_distribution::min", "random/std::student_t_distribution::max", "random/std::student_t_distribution::param_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::student_t_distribution [C++]", "std::student_t_distribution [C++], result_type", "std::student_t_distribution [C++], reset", "std::student_t_distribution [C++], n", "std::student_t_distribution [C++], param", "std::student_t_distribution [C++], min", "std::student_t_distribution [C++], max", "std::student_t_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # student_t_distribution Class
 Generates a Student's *t*-distribution.  
@@ -63,7 +64,7 @@ public:
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/LinkId=401094).  
+ For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/p/?linkid=401094).  
   
 ## Example  
   

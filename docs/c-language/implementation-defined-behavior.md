@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementation-Defined Behavior
 ANSI X3.159-1989, *American National Standard for Information Systems* - *Programming Language* - *C*, contains a section called "Portability Issues." The ANSI section lists areas of the C language that ANSI leaves open to each particular implementation. This section describes how Microsoft C handles these implementation-defined areas of the C language.  

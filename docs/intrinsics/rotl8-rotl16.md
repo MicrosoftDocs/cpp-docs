@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_rotl8", "_rotl16"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_rotl8 intrinsic", "_rotl16 intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _rotl8, _rotl16
 **Microsoft Specific**  

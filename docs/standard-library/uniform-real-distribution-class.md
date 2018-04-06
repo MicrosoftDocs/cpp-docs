@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::uniform_real_distribution", "random/std::uniform_real_distribution::reset", "random/std::uniform_real_distribution::a", "random/std::uniform_real_distribution::b", "random/std::uniform_real_distribution::param", "random/std::uniform_real_distribution::min", "random/std::uniform_real_distribution::max", "random/std::uniform_real_distribution::operator()", "random/std::uniform_real_distribution::param_type", "random/std::uniform_real_distribution::param_type::a", "random/std::uniform_real_distribution::param_type::b", "random/std::uniform_real_distribution::param_type::operator==", "random/std::uniform_real_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::uniform_real_distribution [C++]", "std::uniform_real_distribution [C++], reset", "std::uniform_real_distribution [C++], a", "std::uniform_real_distribution [C++], b", "std::uniform_real_distribution [C++], param", "std::uniform_real_distribution [C++], min", "std::uniform_real_distribution [C++], max", "std::uniform_real_distribution [C++], param_type", "std::uniform_real_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # uniform_real_distribution Class
 Generates a uniform (every value is equally probable) floating-point distribution within an output range that is inclusive-exclusive.  

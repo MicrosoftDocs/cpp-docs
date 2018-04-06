@@ -17,6 +17,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _exec, _wexec Functions
 Each function in this family loads and executes a new process:  

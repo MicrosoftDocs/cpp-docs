@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Editable File Types for Resources
 You can open the following types of files and edit the resources they contain.  
@@ -25,8 +26,8 @@ You can open the following types of files and edit the resources they contain.
 |.rct|Resource template files.|  
 |.res|Resource files.|  
 |.resx|Managed resource files.|  
-|.exe|Executable files. Can only be edited on Windows 2000 and later operating systems.|  
-|.dll|Dynamic-link library files. Can only be edited on Windows 2000 and later operating systems.|  
+|.exe|Executable files.|  
+|.dll|Dynamic-link library files.|  
 |.bmp, .ico, .dib, and .cur|Bitmap, icon, toolbar and cursor files.|  
   
 

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::clear", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::empty", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::get_allocator", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::push", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_priority_queue class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_priority_queue Class
 The `concurrent_priority_queue` class is a container that allows multiple threads to concurrently push and pop items. Items are popped in priority order where priority is determined by a functor supplied as a template argument.  

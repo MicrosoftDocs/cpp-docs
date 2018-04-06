@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3287
 the type 'type' (return type of GetEnumerator) must have a suitable public MoveNext member function and public Current property  

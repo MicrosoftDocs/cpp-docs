@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["+", "operator +"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["+ operator, syntax", "+ operator", "arithmetic operators [C++], addition", "operators [MASM], arithmetic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator +
 The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.  

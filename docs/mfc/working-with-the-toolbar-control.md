@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Working with the Toolbar Control
 This article explains how you can access the [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) object underlying a [CToolBar](../mfc/reference/ctoolbar-class.md) for greater control over your toolbars. This is an advanced topic.  

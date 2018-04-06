@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["index structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # index Class
 Defines an *N*-dimensional index pographics-cpp-amp.md.  

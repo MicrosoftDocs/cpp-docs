@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: How Sockets with Archives Work
 This article explains how a [CSocket](../mfc/reference/csocket-class.md) object, a [CSocketFile](../mfc/reference/csocketfile-class.md) object, and a [CArchive](../mfc/reference/carchive-class.md) object are combined to simplify sending and receiving data through a Windows Socket.  

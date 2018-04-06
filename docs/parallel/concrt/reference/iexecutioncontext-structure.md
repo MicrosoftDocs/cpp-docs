@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IExecutionContext", "CONCRTRM/concurrency::IExecutionContext", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::Dispatch", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetId", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetProxy", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetScheduler", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::SetProxy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IExecutionContext structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IExecutionContext Structure
 An interface to an execution context which can run on a given virtual processor and be cooperatively context switched.  

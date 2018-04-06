@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::map [C++]", "std::map [C++], allocator_type", "std::map [C++], const_iterator", "std::map [C++], const_pointer", "std::map [C++], const_reference", "std::map [C++], const_reverse_iterator", "std::map [C++], difference_type", "std::map [C++], iterator", "std::map [C++], key_compare", "std::map [C++], key_type", "std::map [C++], mapped_type", "std::map [C++], pointer", "std::map [C++], reference", "std::map [C++], reverse_iterator", "std::map [C++], size_type", "std::map [C++], value_type", "std::map [C++], at", "std::map [C++], begin", "std::map [C++], cbegin", "std::map [C++], cend", "std::map [C++], clear", "std::map [C++], count", "std::map [C++], crbegin", "std::map [C++], crend", "std::map [C++], emplace", "std::map [C++], emplace_hint", "std::map [C++], empty", "std::map [C++], end", "std::map [C++], equal_range", "std::map [C++], erase", "std::map [C++], find", "std::map [C++], get_allocator", "std::map [C++], insert", "std::map [C++], key_comp", "std::map [C++], lower_bound", "std::map [C++], max_size", "std::map [C++], rbegin", "std::map [C++], rend", "std::map [C++], size", "std::map [C++], swap", "std::map [C++], upper_bound", "std::map [C++], value_comp"]
@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # map Class
 Used for the storage and retrieval of data from a collection in which each element is a pair that has both a data value and a sort key. The value of the key is unique and is used to automatically sort the data.  

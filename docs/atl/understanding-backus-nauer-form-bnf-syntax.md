@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Understanding Backus Nauer Form (BNF) Syntax
 The scripts used by the ATL Registrar are described in this topic using BNF syntax, which uses the notation shown in the following table.  

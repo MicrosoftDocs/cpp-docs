@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __writegsbyte, __writegsdword, __writegsqword, __writegsword
 **Microsoft Specific**  

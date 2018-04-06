@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.14   Using the flush Directive without a List
 The following example (for [Section 2.6.5](../../parallel/openmp/2-6-5-flush-directive.md) on page 20) distinguishes the shared objects affected by a `flush` directive with no list from the shared objects that are not affected:  

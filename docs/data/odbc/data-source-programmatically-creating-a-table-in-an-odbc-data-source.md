@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Programmatically Creating a Table in an ODBC Data Source
 This topic explains how to create a table for your data source, using the `ExecuteSQL` member function of class `CDatabase`, passing the function a string that contains a **CREATE TABLE** SQL statement.  

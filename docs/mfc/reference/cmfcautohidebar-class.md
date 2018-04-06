@@ -15,6 +15,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCAutoHideBar Class
 The `CMFCAutoHideBar` class is a special toolbar class that implements the auto-hide feature.  

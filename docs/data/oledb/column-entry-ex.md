@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_EX macro"]
@@ -15,31 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_EX
 Represents a binding on the rowset to the specific column in the database.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_EX(  
-nOrdinal  
-,   
-wType  
-,   
-nLength  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, status)  
   
 ```  
   

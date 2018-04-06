@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.ReleaseRows", "ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReleaseRows method"]
@@ -15,21 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::ReleaseRows
 Releases rows.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( ReleaseRows )(  
-   DBCOUNTITEM cRows,  
+```cpp
+      STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBROWOPTIONS rgRowOptions[],  
    DBREFCOUNT rgRefCounts[],  
-   DBROWSTATUS rgRowStatus[]   
-);  
+   DBROWSTATUS rgRowStatus[]);  
 ```  
   
 #### Parameters  

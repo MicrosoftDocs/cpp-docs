@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["operator XOR", "Xor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator XOR", "XOR operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator XOR
 Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.  

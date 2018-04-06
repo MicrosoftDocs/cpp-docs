@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: Output Files
 To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  

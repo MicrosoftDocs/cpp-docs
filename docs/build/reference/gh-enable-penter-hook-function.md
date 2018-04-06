@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Gh (Enable _penter Hook Function)
 Causes a call to the `_penter` function at the start of every method or function.  

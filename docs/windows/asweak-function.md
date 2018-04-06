@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsWeak Function
 Retrieves a weak reference to a specified instance.  
@@ -22,9 +23,7 @@ Retrieves a weak reference to a specified instance.
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 HRESULT AsWeak(  
    _In_ T* p,  
    _Out_ WeakRef* pWeak  

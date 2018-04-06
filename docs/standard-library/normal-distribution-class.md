@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::normal_distribution", "random/std::normal_distribution::reset", "random/std::normal_distribution::mean", "random/std::normal_distribution::stddev", "random/std::normal_distribution::param", "random/std::normal_distribution::min", "random/std::normal_distribution::max", "random/std::normal_distribution::operator()", "random/std::normal_distribution::param_type", "random/std::normal_distribution::param_type::mean", "random/std::normal_distribution::param_type::stddev", "random/std::normal_distribution::param_type::operator==", "random/std::normal_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::normal_distribution [C++]", "std::normal_distribution [C++], reset", "std::normal_distribution [C++], mean", "std::normal_distribution [C++], stddev", "std::normal_distribution [C++], param", "std::normal_distribution [C++], min", "std::normal_distribution [C++], max", "std::normal_distribution [C++], param_type", "std::normal_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # normal_distribution Class
 Generates a normal distribution.  
@@ -74,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/LinkId=400924).  
+For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/p/?linkid=400924).  
   
 ## Example  
   

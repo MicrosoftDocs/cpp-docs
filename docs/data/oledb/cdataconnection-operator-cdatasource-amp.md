@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource& operator", "operator & (CDataSource)"]
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::operator CDataSource&amp;
 Returns a reference to the contained `CDataSource` object.  
   
 ## Syntax  
   
-```  
-  
-operator const CDataSource&() throw( );  
+```cpp
+operator const CDataSource&() throw();  
   
 ```  
   

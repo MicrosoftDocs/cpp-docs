@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::seed_seq", "random/std::seed_seq::result_type", "random/std::seed_seq::generate", "random/std::seed_seq::size", "random/std::seed_seq::param"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::seed_seq [C++]", "std::seed_seq [C++], result_type", "std::seed_seq [C++], generate", "std::seed_seq [C++], size", "std::seed_seq [C++], param"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # seed_seq Class
 Stores a vector of unsigned integer values that can supply a randomized seed for a random-number engine.  

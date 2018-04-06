@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BOOKMARK_ENTRY"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BOOKMARK_ENTRY macro"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BOOKMARK_ENTRY
 Binds the bookmark column.  
   
 ## Syntax  
   
-```  
-  
-BOOKMARK_ENTRY(  
-variable  
- )  
+```cpp
+BOOKMARK_ENTRY(variable)  
   
 ```  
   
@@ -35,7 +33,8 @@ variable
   
 ## Example  
 
-```cpp  
+```
+cpp  
 class CArtistsBookmark
 {
 public:

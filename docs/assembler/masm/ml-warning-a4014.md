@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "error-reference"
 f1_keywords: ["A4014"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A4014"]
@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Warning A4014
 instructions and initialized data not supported in BSS segments  

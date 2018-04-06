@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange (RFX)
 The MFC ODBC database classes automate moving data between the data source and a [recordset](../../data/odbc/recordset-odbc.md) object. When you derive a class from [CRecordset](../../mfc/reference/crecordset-class.md) and do not use bulk row fetching, data is transferred by the record field exchange (RFX) mechanism.  

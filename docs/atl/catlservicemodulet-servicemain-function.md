@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::ServiceMain Function
 The service control manager (SCM) calls `ServiceMain` when you open the Services Control Panel application, select the service, and click **Start**.  

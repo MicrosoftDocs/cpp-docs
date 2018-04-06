@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::FillArrayWithIid Method
 Stores the interface ID defined by the `I0` template parameter into a specified location in a specified array of interface IDs.  

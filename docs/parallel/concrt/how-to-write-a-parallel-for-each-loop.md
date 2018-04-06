@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Write a parallel_for_each Loop
 This example shows how to use the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object in parallel.  

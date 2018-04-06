@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3854
 expression to left of '=' evaluates to a function. Cannot assign to a function (a function is not an l-value)  

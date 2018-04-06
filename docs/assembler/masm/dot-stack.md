@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: [".STACK"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".STACK directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .STACK
 When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segment (with segment name STACK). The optional `size` specifies the number of bytes for the stack (default 1,024). The `.STACK` directive automatically closes the stack statement.  

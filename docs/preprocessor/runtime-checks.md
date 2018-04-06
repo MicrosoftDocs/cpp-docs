@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.runtime_checks", "runtime_checks_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_checks pragma", "pragmas, runtime_checks"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # runtime_checks
 Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md) settings.  

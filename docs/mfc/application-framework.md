@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Application Framework
 The core of the Microsoft Foundation Class (MFC) Library is an encapsulation of a large portion of the Windows API in C++ form. Library classes represent windows, dialog boxes, device contexts, common GDI objects such as brushes and pens, controls, and other standard Windows items. These classes provide a convenient C++ member function interface to the structures in Windows that they encapsulate. For more about using these classes, see [Window Object Topics](../mfc/window-objects.md).  

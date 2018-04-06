@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReleaseAccessors method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorBase::ReleaseAccessors
 Releases the accessors created by the class.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT ReleaseAccessors(  
-   IUnknown* pUnk   
-);  
+```cpp
+HRESULT ReleaseAccessors(IUnknown* pUnk);  
 ```  
   
 #### Parameters  

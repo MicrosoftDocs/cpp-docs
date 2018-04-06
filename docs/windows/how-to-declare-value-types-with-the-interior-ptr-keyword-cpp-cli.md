@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)
 An `interior_ptr` can be used with a value type.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor.GetColumnFlags", "ATL::CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnFlags", "CDynamicAccessor::GetColumnFlags", "GetColumnFlags"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnFlags method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetColumnFlags
 Retrieves the column characteristics.  
   
 ## Syntax  
   
-```  
-  
-      bool GetColumnFlags(   
-   DBORDINAL nColumn,   
-   DBCOLUMNFLAGS* pFlags    
-) const throw( );  
+```
+bool GetColumnFlags(DBORDINAL nColumn,   
+  DBCOLUMNFLAGS* pFlags) const throw();  
 ```  
   
 #### Parameters  

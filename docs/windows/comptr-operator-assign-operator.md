@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator= Operator
 Assigns a value to the current ComPtr.  
@@ -28,27 +29,21 @@ WRL_NOTHROW ComPtr& operator=(
 WRL_NOTHROW ComPtr& operator=(  
    _In_opt_ T *other  
 );  
-template <  
-   typename U  
->  
+template <typename U>  
 WRL_NOTHROW ComPtr& operator=(  
    _In_opt_ U *other  
 );  
 WRL_NOTHROW ComPtr& operator=(  
    const ComPtr &other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr& operator=(  
    const ComPtr<U>& other  
 );  
 WRL_NOTHROW ComPtr& operator=(  
    _Inout_ ComPtr &&other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr& operator=(  
    _Inout_ ComPtr<U>&& other  
 );  

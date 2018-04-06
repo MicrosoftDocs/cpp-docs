@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_enable", "_enable_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["enable intrinsic", "_enable intrinsic", "ssm instruction"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _enable
 **Microsoft Specific**  

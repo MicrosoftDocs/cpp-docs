@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["PROPERTY_INFO_ENTRY_VALUE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PROPERTY_INFO_ENTRY_VALUE macro"]
@@ -15,16 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # PROPERTY_INFO_ENTRY_VALUE
 Represents a specific property in a property set.  
   
 ## Syntax  
   
-```  
-  
-PROPERTY_INFO_ENTRY_VALUE(  
-dwPropID  
+```cpp
+PROPERTY_INFO_ENTRY_VALUE(dwPropID  
 , value )  
 ```  
   

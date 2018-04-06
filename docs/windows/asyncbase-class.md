@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase Class
 Implements the Windows Runtime asynchronous state machine.  
@@ -28,13 +29,13 @@ template <
    typename TProgress = Details::Nil,  
    AsyncResultType resultType = SingleResult  
 >  
-class AsyncBase : public AsyncBase< TComplete, Details::Nil, resultType >;  
+class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;  
   
 template <  
    typename TComplete,  
    AsyncResultType resultType  
 >  
-class AsyncBase< TComplete, Details::Nil, resultType > : public Microsoft::WRL::Implements< IAsyncInfo >;  
+class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;  
 ```  
   
 #### Parameters  

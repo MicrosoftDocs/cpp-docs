@@ -13,6 +13,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type Conversions and Type Safety (Modern C++)
 This document identifies common type conversion problems and describes how you can avoid them in your C++ code.  

@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1.9 omp_set_nested Function
 The **omp_set_nested** function enables or disables nested parallelism. The format is as follows:  

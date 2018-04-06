@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3626
 'keyword': '__event' keyword can only be used on COM interfaces, member functions and data members that are pointers to delegates  

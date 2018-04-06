@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Drawing and Printing Classes
 In Windows, all graphical output is drawn on a virtual drawing area called a device context (DC). MFC provides classes to encapsulate the various types of DCs, as well as encapsulations for Windows drawing tools such as bitmaps, brushes, palettes, and pens.  

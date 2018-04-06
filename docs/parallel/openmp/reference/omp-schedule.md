@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OMP_SCHEDULE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OMP_SCHEDULE OpenMP environment variable"]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OMP_SCHEDULE
 Modifies the behavior of the [schedule](../../../parallel/openmp/reference/schedule.md) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.  

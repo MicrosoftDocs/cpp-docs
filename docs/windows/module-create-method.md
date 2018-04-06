@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::Create Method
 Creates an instance of a module.  
@@ -23,15 +24,11 @@ Creates an instance of a module.
   
 ```  
 WRL_NOTHROW static Module& Create();  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    T callback  
 );  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    _In_ T* object,  
    _In_ void (T::* method)()  

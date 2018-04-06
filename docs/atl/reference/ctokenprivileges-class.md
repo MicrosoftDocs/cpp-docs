@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CTokenPrivileges Class
 This class is a wrapper for the **TOKEN_PRIVILEGES** structure.  
@@ -60,7 +61,7 @@ class CTokenPrivileges
 |[CTokenPrivileges::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system.  
+ An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
  The access token is used to describe the various security privileges granted to each user. A privilege consists of a 64-bit number called a locally unique identifier ( [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)) and a descriptor string.  
   
@@ -136,7 +137,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
  Returns true if the privilege was successfully deleted, false otherwise.  
   
 ### Remarks  
- This method is useful as a tool for creating restricted tokens under Windows 2000.  
+ This method is useful as a tool for creating restricted tokens.  
   
 ##  <a name="deleteall"></a>  CTokenPrivileges::DeleteAll  
  Deletes all privileges from the `CTokenPrivileges` access token object.  

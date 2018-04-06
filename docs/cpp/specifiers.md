@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specifiers
 This topic describes the *decl-specifiers* (declaration specifiers) component of a [declaration](declarations-and-definitions-cpp.md).  

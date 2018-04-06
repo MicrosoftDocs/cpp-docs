@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Internet Programming Basics
 Microsoft provides many APIs for programming both client and server applications. Many new applications are being written for the Internet, and as technologies, browser capabilities, and security options change, new types of applications will be written. Browsers run on client computers, providing access to the World Wide Web and displaying HTML pages that contain text, graphics, ActiveX controls, and documents. Servers provide FTP, HTTP, and gopher services, and run server extension applications using CGI. Your custom application can retrieve information and provide data on the Internet.  
@@ -61,11 +62,11 @@ Microsoft provides many APIs for programming both client and server applications
 -   [ATL Support for DHTML Controls](../atl/atl-support-for-dhtml-controls.md)  
   
 ##  <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information  
- For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/linkid=56322) Web site. (Links may change without notice.)  
+ For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web site. (Links may change without notice.)  
   
  This Web site for developers contains information on using Microsoft development tools and technologies, and top stories about recent and upcoming conferences. From this page, you can jump to many related developer sites, including the .NET, and XML Developer Centers. You can also download beta SDKs and samples.  
   
- The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
+ The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
   
 ##  <a name="_core_more_internet_help"></a> More Internet Help  
  The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  

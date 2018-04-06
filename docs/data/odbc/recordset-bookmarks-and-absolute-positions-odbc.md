@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Bookmarks and Absolute Positions (ODBC)
 This topic applies to the MFC ODBC classes.  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  
@@ -232,7 +233,7 @@ int main()
  When the compiler encounters the **new** operator to allocate an object of type `type`, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined `operator new` is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
   
 > [!NOTE]
->  The argument to `operator new` is of type **size_t**. This type is defined in DIRECT.H, MALLOC.H, MEMORY.H, SEARCH.H, STDDEF.H, STDIO.H, STDLIB.H, STRING.H, and TIME.H.  
+>  The argument to `operator new` is of type **size_t**. This type is defined in \<direct.h>, \<malloc.h>, \<memory.h>, \<search.h>, \<stddef.h>, \<stdio.h>, \<stdlib.h>, \<string.h>, and \<time.h>.  
   
  An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of `operator new`; it allows extra information to be passed to `operator new`. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
   

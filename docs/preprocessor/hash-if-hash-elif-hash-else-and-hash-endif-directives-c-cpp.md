@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["#else", "#endif", "#if", "#elif", "defined", "__has_include"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["#elif directive", "conditional compilation, directives", "endif directive (#endif)", "preprocessor, directives", "#else directive", "#endif directive", "if directive (#if)", "else directive (#else)", "#if directive", "elif directive (#elif)", "defined directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # #if, #elif, #else, and #endif Directives (C/C++)
 The `#if` directive, with the `#elif`, `#else`, and `#endif` directives, controls compilation of portions of a source file. If the expression you write (after the `#if`) has a nonzero value, the line group immediately following the `#if` directive is retained in the translation unit.  

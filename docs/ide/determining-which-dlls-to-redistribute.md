@@ -1,7 +1,7 @@
 ---
 title: "Determining Which DLLs to Redistribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2017"
+ms.date: "03/13/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -14,6 +14,7 @@ caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Determining Which DLLs to Redistribute
 
@@ -29,7 +30,7 @@ The individual redistributable DLLs are also included in your installation of Vi
 
 To determine which DLLs you have to redistribute with your application, collect a list of the DLLs that your application depends on. These are normally listed as import library inputs to the linker. Certain libraries, such as vcruntime and the Universal C Runtime Library (UCRT), are included by default. If your app or one of its dependencies uses LoadLibrary to dynamically load a DLL, that DLL may not be listed in the inputs to the linker. One way to collect the list of dynamically loaded DLLs is to run Dependency Walker (depends.exe) on your app, as described in [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Unfortunately, this tool is outdated and may report that it can't find certain DLLs.
 
-When you have the list of dependencies, compare it to the list linked in the Redist.txt file found under the Microsoft Visual Studio installation directory, or to the "REDIST list" of redistributable DLLs that is referenced in the "Distributable Code Files" section of the Microsoft Software License Terms for your copy of Visual Studio. For Visual Studio 2017, see [Distributable Code for Microsoft Visual Studio 2017 (Includes Utilities, Extensibility, and BuildServer Files)](http://go.microsoft.com/fwlink/?LinkId=823098). For Visual Studio 2015, see [Distributable Code for Microsoft Visual Studio 2015 and Microsoft Visual Studio 2015 SDK (Includes Utilities and BuildServer Files)](http://go.microsoft.com/fwlink/?LinkId=799794). For Visual Studio 2013, the list is available online in [Distributable Code for Microsoft Visual Studio 2013 and Microsoft Visual Studio 2013 SDK](http://go.microsoft.com/fwlink/p/?LinkId=313603).
+When you have the list of dependencies, compare it to the list linked in the Redist.txt file found under the Microsoft Visual Studio installation directory, or to the "REDIST list" of redistributable DLLs that is referenced in the "Distributable Code Files" section of the Microsoft Software License Terms for your copy of Visual Studio. For Visual Studio 2017, see [Distributable Code for Microsoft Visual Studio 2017 (Includes Utilities, Extensibility, and BuildServer Files)](http://go.microsoft.com/fwlink/p/?linkid=823098). For Visual Studio 2015, see [Distributable Code for Microsoft Visual Studio 2015 and Microsoft Visual Studio 2015 SDK (Includes Utilities and BuildServer Files)](http://go.microsoft.com/fwlink/p/?linkid=799794). For Visual Studio 2013, the list is available online in [Distributable Code for Microsoft Visual Studio 2013 and Microsoft Visual Studio 2013 SDK](http://go.microsoft.com/fwlink/p/?LinkId=313603).
 
 In Visual Studio versions before Visual Studio 2015, the C Runtime Library (CRT) was included as a redistributable DLL, in msvc*version*.dll. Starting in Visual Studio 2015, the functions in the CRT were refactored into the vcruntime and the UCRT. The UCRT is now a system component in Windows 10, managed by Windows Update. It is available on all Windows 10 operating systems. To deploy your application to earlier operating systems, you may need to redistribute the UCRT as well. An early version of the UCRT is included in the Visual Studio redistributable files, which is only installed on operating systems earlier than Windows 10, and only if no version of the UCRT is already installed. For an installable version of the UCRT for downlevel systems as a Microsoft System Update package, see [Windows 10 Universal C Runtime](https://www.microsoft.com/en-us/download/details.aspx?id=48234) in the Microsoft Download Center.
 
@@ -41,7 +42,7 @@ The following table describes some of the Visual C++ DLLs that your application 
 |--------------------------|-----------------|----------------|
 |vcruntime*version*.dll|Runtime Library for native code.|Applications that use the normal C and C++ language startup and termination services.|
 |vccorlib*version*.dll|Runtime Library for managed code.|Applications that use the C++ language services for managed code.|
-|msvcp*version*.dll|C++ Standard Library for native code.|Applications that use the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).|
+|msvcp*version*.dll and msvcp*version*_*dotnumber*.dll|C++ Standard Library for native code.|Applications that use the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).|
 |concrt*version*.dll|Concurrency Runtime Library for native code.|Applications that use the [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).|
 |mfc*version*.dll|Microsoft Foundation Classes (MFC) Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md).|
 |mfc*version* *language*.dll|Microsoft Foundation Classes (MFC) Library Resources.|Applications that use specific language resources for MFC.|

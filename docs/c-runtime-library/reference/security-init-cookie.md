@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["__security_init_cookie"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __security_init_cookie
 Initializes the global security cookie.  
@@ -47,4 +48,4 @@ void __security_init_cookie(void);
  `__security_init_cookie` is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260)
+ [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::sync_none", "allocators/stdext::sync_none::allocate", "allocators/stdext::sync_none::deallocate", "allocators/stdext::sync_none::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_none", "stdext::sync_none [C++], allocate", "stdext::sync_none [C++], deallocate", "stdext::sync_none [C++], equals"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sync_none Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides no synchronization.  

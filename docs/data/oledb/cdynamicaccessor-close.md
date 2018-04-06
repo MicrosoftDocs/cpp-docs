@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::Close", "ATL.CDynamicAccessor.Close", "CDynamicAccessor.Close", "CDynamicAccessor::Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::Close
 Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) interface pointer in the class.  
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

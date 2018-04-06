@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1.1 omp_set_num_threads Function
 The `omp_set_num_threads` function sets the default number of threads to use for subsequent parallel regions that do not specify a `num_threads` clause. The format is as follows:  

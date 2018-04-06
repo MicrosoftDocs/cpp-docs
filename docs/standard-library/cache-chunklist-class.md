@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::cache_chunklist", "allocators/stdext::cache_chunklist::allocate", "allocators/stdext::cache_chunklist::deallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cache_chunklist", "stdext::cache_chunklist [C++], allocate", "stdext::cache_chunklist [C++], deallocate"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cache_chunklist Class
 Defines a [block allocator](../standard-library/allocators-header.md) that allocates and deallocates memory blocks of a single size.  

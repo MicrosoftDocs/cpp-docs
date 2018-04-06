@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<bitset>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<bitset> header", "bitset header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt;
 Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.  

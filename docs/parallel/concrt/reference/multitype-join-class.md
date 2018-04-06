@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["multitype_join", "AGENTS/concurrency::multitype_join", "AGENTS/concurrency::multitype_join::multitype_join", "AGENTS/concurrency::multitype_join::accept", "AGENTS/concurrency::multitype_join::acquire_ref", "AGENTS/concurrency::multitype_join::consume", "AGENTS/concurrency::multitype_join::link_target", "AGENTS/concurrency::multitype_join::release", "AGENTS/concurrency::multitype_join::release_ref", "AGENTS/concurrency::multitype_join::reserve", "AGENTS/concurrency::multitype_join::unlink_target", "AGENTS/concurrency::multitype_join::unlink_targets"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["multitype_join class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # multitype_join Class
 A `multitype_join` messaging block is a multi-source, single-target messaging block that combines together messages of different types from each of its sources and offers a tuple of the combined messages to its targets.  

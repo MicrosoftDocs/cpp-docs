@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDBPropSet.SetGUID", "CDBPropSet.SetGUID", "ATL::CDBPropSet::SetGUID", "SetGUID", "CDBPropSet::SetGUID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetGUID method", "AddProperty method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropSet::SetGUID
 Sets the **guidPropertySet** field in the **DBPROPSET** structure.  
   
 ## Syntax  
   
-```  
-  
-      void SetGUID(   
-   const GUID& guid    
-) throw( );  
+```cpp
+      void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### Parameters  

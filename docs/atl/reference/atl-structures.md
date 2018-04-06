@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 f1_keywords: ["vc.atl.structures"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, structures", "structures, ATL"]
@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Structures
 

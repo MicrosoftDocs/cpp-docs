@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_oversubscribe_operation class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # invalid_oversubscribe_operation Class
 This class describes an exception thrown when the `Context::Oversubscribe` method is called with the `_BeginOversubscription` parameter set to `false` without a prior call to the `Context::Oversubscribe` method with the `_BeginOversubscription` parameter set to `true`.  

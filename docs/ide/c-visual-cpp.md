@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;c&gt; (Visual C++)
 The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](../ide/code-visual-cpp.md) to indicate multiple lines as code.  

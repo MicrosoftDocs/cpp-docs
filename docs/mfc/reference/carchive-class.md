@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CArchive Class
 Allows you to save a complex network of objects in a permanent binary form (usually disk storage) that persists after those objects are deleted.  

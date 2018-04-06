@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling in MFC
 This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:  
@@ -102,5 +103,5 @@ This article explains the exception-handling mechanisms available in MFC. Two me
   
 ## See Also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)   
- [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/linkid=128045)
+ [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
 

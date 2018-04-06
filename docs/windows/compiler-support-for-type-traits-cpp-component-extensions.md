@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Compiler Support for Type Traits (C++ Component Extensions)
 The compiler supports *type traits*, which indicate various characteristics of a type at compile time.  

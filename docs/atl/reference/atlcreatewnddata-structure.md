@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::_AtlCreateWndData", "ATL._AtlCreateWndData", "_AtlCreateWndData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_AtlCreateWndData structure", "AtlCreateWndData structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _AtlCreateWndData Structure
 This structure contains class instance data in windowing code in ATL.  

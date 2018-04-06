@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object
 Here is an example of [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) usage:  

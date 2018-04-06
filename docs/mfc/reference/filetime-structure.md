@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # FILETIME Structure
 The `FILETIME` structure is a 64-bit value representing the number of 100-nanosecond intervals since January 1, 1601.  

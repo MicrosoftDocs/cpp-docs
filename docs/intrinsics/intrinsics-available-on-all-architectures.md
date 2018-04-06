@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, intrinsics"]
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Intrinsics Available on All Architectures
 The following intrinsics are available with the x86, AMD64, and ARM architectures:  

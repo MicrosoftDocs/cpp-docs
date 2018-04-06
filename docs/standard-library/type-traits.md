@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<type_traits>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["typetrait header", "type_traits"]
@@ -15,6 +15,7 @@ caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;type_traits&gt;
 Defines templates that provide compile-time constants that give information about the properties of their type arguments or produce transformed types.  

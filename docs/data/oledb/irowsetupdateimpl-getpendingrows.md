@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetUpdateImpl::GetPendingRows", "GetPendingRows", "IRowsetUpdateImpl.GetPendingRows", "ATL::IRowsetUpdateImpl::GetPendingRows", "ATL.IRowsetUpdateImpl.GetPendingRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetPendingRows method"]
@@ -15,21 +15,19 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::GetPendingRows
 Returns a list of rows with pending changes.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetPendingRows )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,  
    DBPENDINGSTATUS dwRowStatus,  
    DBCOUNTITEM* pcPendingRows,  
    HROW** prgPendingRows,  
-   DBPENDINGSTATUS** prgPendingStatus   
-);  
+   DBPENDINGSTATUS** prgPendingStatus);  
 ```  
   
 #### Parameters  

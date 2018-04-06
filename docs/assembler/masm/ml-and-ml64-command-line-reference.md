@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ML"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/W* MASM compiler option", "/c MASM compiler option", "/EP MASM compiler option", "/Fe MASM compiler option", "/Zp MASM compiler option", "/AT MASM compiler option", "/Zm MASM compiler option", "/Sf MASM compiler option", "/Sp MASM compiler option", "/w MASM compiler option", "/Fl MASM compiler option", "/coff MASM compiler option", "/St MASM compiler option", "/Cx MASM compiler option", "/Sl MASM compiler option", "/Cu MASM compiler option", "MASM (Microsoft Macro Assembler), ML command-line reference", "/FPi MASM compiler option", "/Zf MASM compiler option", "ML environment variable", "/Fr MASM compiler option", "/help MASM compiler option", "/Sa MASM compiler option", "/Zd MASM compiler option", "/I MASM compiler option", "/? MASM compiler option", "/Bl MASM compiler option", "/Fm MASM compiler option", "/Fo MASM compiler option", "command-line reference [ML]", "/Sn MASM compiler option", "/Gd MASM compiler option", "/D* MASM compiler option", "environment variables, ML", "/Gc MASM compiler option", "/F* MASM compiler option", "/Sc MASM compiler option", "/H MASM compiler option", "/Zs MASM compiler option", "/omf MASM compiler option", "/Sg MASM compiler option", "/Cp MASM compiler option", "/Zi MASM compiler option", "/nologo MASM compiler option", "/Sx MASM compiler option", "/WX MASM compiler option", "/Ss MASM compiler option", "command line, reference [ML]", "/Ta MASM compiler option"]
@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML and ML64 Command-Line Reference
 Assembles and links one or more assembly-language source files. The command-line options are case sensitive.  

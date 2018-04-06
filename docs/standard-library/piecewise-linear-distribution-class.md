@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::piecewise_linear_distribution", "random/std::piecewise_linear_distribution::reset", "random/std::piecewise_linear_distribution::intervals", "random/std::piecewise_linear_distribution::densities", "random/std::piecewise_linear_distribution::param", "random/std::piecewise_linear_distribution::min", "random/std::piecewise_linear_distribution::max", "random/std::piecewise_linear_distribution::operator()", "random/std::piecewise_linear_distribution::param_type", "random/std::piecewise_linear_distribution::param_type::intervals", "random/std::piecewise_linear_distribution::param_type::densities", "random/std::piecewise_linear_distribution::param_type::operator==", "random/std::piecewise_linear_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::piecewise_linear_distribution [C++]", "std::piecewise_linear_distribution [C++], reset", "std::piecewise_linear_distribution [C++], intervals", "std::piecewise_linear_distribution [C++], densities", "std::piecewise_linear_distribution [C++], param", "std::piecewise_linear_distribution [C++], min", "std::piecewise_linear_distribution [C++], max", "std::piecewise_linear_distribution [C++], param_type", "std::piecewise_linear_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # piecewise_linear_distribution Class
 Generates a piecewise linear distribution that has varying-width intervals with linearly varying probability in each interval.  

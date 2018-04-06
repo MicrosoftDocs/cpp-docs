@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Opening the Resource Editor for a Given Symbol
 When you are browsing symbols in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), you may want more information on how a particular symbol is used. The **View Use** button provides a quick way to get this information.  

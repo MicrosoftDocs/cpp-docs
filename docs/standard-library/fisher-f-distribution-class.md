@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::fisher_f_distribution", "random/std::fisher_f_distribution::reset", "random/std::fisher_f_distribution::m", "random/std::fisher_f_distribution::n", "random/std::fisher_f_distribution::param", "random/std::fisher_f_distribution::min", "random/std::fisher_f_distribution::max", "random/std::fisher_f_distribution::operator()", "random/std::fisher_f_distribution::param_type", "random/std::fisher_f_distribution::param_type::m", "random/std::fisher_f_distribution::param_type::n", "random/std::fisher_f_distribution::param_type::operator==", "random/std::fisher_f_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::fisher_f_distribution [C++]", "std::fisher_f_distribution [C++], reset", "std::fisher_f_distribution [C++], m", "std::fisher_f_distribution [C++], n", "std::fisher_f_distribution [C++], param", "std::fisher_f_distribution [C++], min", "std::fisher_f_distribution [C++], max", "std::fisher_f_distribution [C++], param_type", "std::fisher_f_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fisher_f_distribution Class
 Generates a Fisher F distribution.  
@@ -74,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the F-distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/LinkId=400899).  
+ For detailed information about the F-distribution, see the Wolfram MathWorld article [F-Distribution](http://go.microsoft.com/fwlink/p/?linkid=400899).  
   
 ## Example  
   

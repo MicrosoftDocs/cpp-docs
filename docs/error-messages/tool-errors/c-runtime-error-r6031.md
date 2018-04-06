@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6031
 Attempt to initialize the CRT more than once. This indicates a bug in your application.  

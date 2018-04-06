@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["char_traits<char16_t>", "iosfwd/std::char_traits<char16_t>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits<char16_t> class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # char_traits&lt;char16_t&gt; Struct
 A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type `char16_t`.  

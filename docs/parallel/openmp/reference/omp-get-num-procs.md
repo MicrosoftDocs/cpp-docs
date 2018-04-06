@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["omp_get_num_procs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_get_num_procs OpenMP function"]
@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # omp_get_num_procs
 Returns the number of processors that are available when the function is called.  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Enumerate Data Types in Assemblies using Reflection (C++/CLI)
 The following code demonstrates the enumeration of public types and members using <xref:System.Reflection>.  

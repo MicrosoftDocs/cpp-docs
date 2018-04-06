@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
 caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler and Linker options (C++/CX)
 An environment variable, C++/CX compiler options, and linker options support the building of apps for the Windows Runtime.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCommandText method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandTextImpl::GetCommandText
 Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetCommandText)(   
-   GUID * pguidDialect,   
-   LPOLESTR * ppwszCommand    
-);  
+```cpp
+      STDMETHOD(GetCommandText)(GUID * pguidDialect,   
+   LPOLESTR * ppwszCommand);  
 ```  
   
 #### Parameters  

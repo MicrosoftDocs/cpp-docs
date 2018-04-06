@@ -15,9 +15,10 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /ZW (Windows Runtime Compilation)
-Compiles source code to support [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) for the creation of [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps.  
+Compiles source code to support [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) for the creation of Universal Windows Platform (UWP) apps.  
   
  When you use **/ZW** to compile, always specify **/EHsc** as well.  
   

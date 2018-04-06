@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN037: Multithreaded MFC 2.1 Applications
 This technical note originally described the limitations of multithreaded programs with MFC 2.1, originally provided with Visual C++ 1.0 for Windows NT. MFC 3.0 supports multithreading directly and is documented. See that reference for more information.  

@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CLocalHeap Class
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 local heap functions.  

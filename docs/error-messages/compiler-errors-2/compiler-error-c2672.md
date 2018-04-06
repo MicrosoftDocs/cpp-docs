@@ -10,6 +10,7 @@ ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2672
 

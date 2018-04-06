@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["join", "AGENTS/concurrency::join", "AGENTS/concurrency::join::join", "AGENTS/concurrency::join::accept_message", "AGENTS/concurrency::join::consume_message", "AGENTS/concurrency::join::link_target_notification", "AGENTS/concurrency::join::propagate_message", "AGENTS/concurrency::join::propagate_to_any_targets", "AGENTS/concurrency::join::release_message", "AGENTS/concurrency::join::reserve_message", "AGENTS/concurrency::join::resume_propagation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["join class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # join Class
 A `join` messaging block is a single-target, multi-source, ordered `propagator_block` which combines together messages of type `T` from each of its sources.  

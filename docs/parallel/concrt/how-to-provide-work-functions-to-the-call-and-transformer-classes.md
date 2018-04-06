@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Provide Work Functions to the call and transformer Classes
 This topic illustrates several ways to provide work functions to the [concurrency::call](../../parallel/concrt/reference/call-class.md) and [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) classes.  

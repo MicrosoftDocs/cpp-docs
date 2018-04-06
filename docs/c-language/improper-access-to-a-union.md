@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Improper Access to a Union
 **ANSI 3.3.2.3** A member of a union object is accessed using a member of a different type  

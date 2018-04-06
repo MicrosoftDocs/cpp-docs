@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bad_typeid Exception
 The `bad_typeid` exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for `typeid` is a NULL pointer.  

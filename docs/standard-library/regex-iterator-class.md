@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["regex/std::regex_iterator", "regex/std::regex_iterator::operator==", "regex/std::regex_iterator::operator!=", "regex/std::regex_iterator::operator*", "regex/std::regex_iterator::operator->", "regex/std::regex_iterator::operator++"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::regex_iterator", "std::regex_iterator::operator==", "std::regex_iterator::operator!=", "std::regex_iterator::operator*", "std::regex_iterator::operator->", "std::regex_iterator::operator++"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # regex_iterator Class
 Iterator class for matches.  

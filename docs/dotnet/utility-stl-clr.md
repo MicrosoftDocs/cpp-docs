@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # utility (STL/CLR)
 Include the STL/CLR header `<cliext/utility>` to define the template class `pair` and several supporting template functions.  

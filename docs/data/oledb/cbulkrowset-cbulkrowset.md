@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBulkRowset<TAccessor>.CBulkRowset", "ATL::CBulkRowset::CBulkRowset", "CBulkRowset.CBulkRowset", "CBulkRowset::CBulkRowset", "ATL.CBulkRowset.CBulkRowset", "ATL::CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBulkRowset class, constructor"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::CBulkRowset
 Creates a new `CBulkRowset` object and sets the default row count to 10.  
   
 ## Syntax  
   
-```  
-  
-CBulkRowset( );  
+```cpp
+CBulkRowset();  
   
 ```  
   

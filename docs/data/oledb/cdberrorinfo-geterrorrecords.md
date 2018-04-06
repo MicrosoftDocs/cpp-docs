@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo.GetErrorRecords", "ATL.CDBErrorInfo.GetErrorRecords", "ATL::CDBErrorInfo::GetErrorRecords", "GetErrorRecords", "CDBErrorInfo::GetErrorRecords"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorRecords method"]
@@ -15,22 +15,20 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetErrorRecords
 Gets error records for the specified object.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorRecords(   
-   IUnknown* pUnk,   
+```cpp
+HRESULT GetErrorRecords(IUnknown* pUnk,   
    const IID& iid,   
-   ULONG* pcRecords    
-) throw( );  
-HRESULT GetErrorRecords(   
-   ULONG* pcRecords    
-) throw( );  
+   ULONG* pcRecords) throw();  
+
+
+HRESULT GetErrorRecords(ULONG* pcRecords) throw();  
 ```  
   
 #### Parameters  

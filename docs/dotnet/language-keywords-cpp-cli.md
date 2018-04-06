@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Language Keywords (C++/CLI)
 Several language keywords changed from Managed Extensions for C++ to Visual C++.  

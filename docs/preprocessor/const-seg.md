@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.const_seg", "const_seg_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, const_seg", "const_seg pragma"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # const_seg
 Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in the .obj file.  

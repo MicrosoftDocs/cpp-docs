@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Synchronization (lock Class)
 Provides a mechanism to automate taking a lock that synchronizes access to an object.  

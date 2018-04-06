@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4398
 'variable' : per-process global object might not work correctly with multiple appdomains; consider using __declspec(appdomain)  

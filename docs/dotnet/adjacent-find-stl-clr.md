@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # adjacent_find (STL/CLR)
 Searches for two adjacent elements that are either equal or satisfy a specified condition.  

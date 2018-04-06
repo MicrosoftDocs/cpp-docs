@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1510
 Cannot open language resource clui.dll  

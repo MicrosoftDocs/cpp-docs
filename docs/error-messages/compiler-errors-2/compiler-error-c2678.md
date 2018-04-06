@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2678
 binary 'operator' : no operator defined which takes a left-hand operand of type 'type' (or there is no acceptable conversion)  

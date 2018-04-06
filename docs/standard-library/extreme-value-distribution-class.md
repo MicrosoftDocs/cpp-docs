@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::extreme_value_distribution [C++]", "std::extreme_value_distribution [C++], reset", "std::extreme_value_distribution [C++], a", "std::extreme_value_distribution [C++], b", "std::extreme_value_distribution [C++], param", "std::extreme_value_distribution [C++], min", "std::extreme_value_distribution [C++], max", "std::extreme_value_distribution [C++], param_type", "std::extreme_value_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # extreme_value_distribution Class
 Generates an extreme value distribution.  
@@ -68,7 +69,7 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/LinkId=401110).  
+ For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/p/?linkid=401110).  
   
 ## Example  
   

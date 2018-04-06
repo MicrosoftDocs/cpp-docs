@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CString Exception Cleanup
 In previous versions of MFC, it was important that you clean up [CString](../atl-mfc-shared/reference/cstringt-class.md) objects after use. With MFC version 3.0 and later, explicit cleanup is no longer necessary.  

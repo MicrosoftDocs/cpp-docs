@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Consumer Without Using a Wizard
 The following example assumes that you are adding OLE DB consumer support to an existing ATL project. If you want to add OLE DB consumer support to an MFC application, you should run the MFC Application Wizard, which creates all the support necessary and invokes MFC routines necessary to execute the application.  
@@ -40,7 +41,7 @@ The following example assumes that you are adding OLE DB consumer support to an 
     ```  
     CDataSource ds;  
     CSession ss;  
-    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor> >  
+    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>  
     ```  
   
 -   Call **CoInitialize** to initialize COM. This is usually called in the main code. For example:  

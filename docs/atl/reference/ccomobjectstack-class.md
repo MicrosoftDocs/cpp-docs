@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectStack Class
 This class creates a temporary COM object and provides it with a skeletal implementation of **IUnknown**.  

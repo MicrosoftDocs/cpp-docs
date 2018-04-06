@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_bittest intrinsic", "_bittest64 intrinsic", "bt instruction"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _bittest, _bittest64
 **Microsoft Specific**  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["unsupported_feature", "AMPRT/unsupported_feature", "AMPRT/Concurrency::unsupported_feature"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unsupported_feature class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unsupported_feature Class
 The exception that is thrown when an unsupported feature is used.  

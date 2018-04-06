@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.5.1 parallel for Construct
 The **parallel for** directive is a shortcut for a **parallel** region that contains only a single **for** directive. The syntax of the **parallel for** directive is as follows:  

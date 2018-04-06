@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetXMLColumnData method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor::GetXMLColumnData
 Retrieves the column type information of a table as XML-formatted string data, by column.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetXMLColumnData(   
-   CSimpleStringW& strOutput    
-) throw( );  
+```cpp
+HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();  
 ```  
   
 #### Parameters  

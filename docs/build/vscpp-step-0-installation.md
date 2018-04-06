@@ -1,17 +1,17 @@
 ---
-title: Step 0 - Install C++ support in Visual Studio | Microsoft Docs
+title: Install C++ support in Visual Studio | Microsoft Docs
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: 10/17/2017
+ms.date: 12/12/2017
 ms.topic: "get-started-article"
-ms.technology:
-  - "devlang-C++"
+ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Install C++ support in Visual Studio
 
@@ -70,6 +70,6 @@ When Visual Studio is running, you are ready to continue to the next step.
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Step 1: Create a C++ project](vscpp-step-1-create.md)
+> [Create a C++ project](vscpp-step-1-create.md)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

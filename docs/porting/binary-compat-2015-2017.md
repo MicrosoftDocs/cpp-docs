@@ -4,19 +4,17 @@ ms.custom: ""
 ms.date: "09/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary compatibility, Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary compatibility, Visual C++"]
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2017
 
@@ -27,8 +25,8 @@ There are two exceptions to this rule. Binary compatibility is not guaranteed in
 
 1) When static libraries or object files are compiled with the /GL compiler switch.  
 
-2) When the application consumes redistributable 
-libraries whose version number is less than the toolset that is used to compile the application. In other words, if you compile a program with platform toolset v141, any redistributable libraries that the application consumes must be compiled with v141 or greater.  
+2) When consuming libraries built with a toolset whose version is greater than the toolset used to compile and link the application. For example, a program that is compiled and linked with toolset 19.12 can consume libraries that are compiled with 19.0 up through 19.12. Linking 19.x programs with libraries produced by Visual Studio 2013 or earlier is not supported.
+
 
 ## See Also  
 

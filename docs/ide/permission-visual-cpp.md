@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;permission&gt; (Visual C++)
 The \<permission> tag lets you document the access of a member. <xref:System.Security.PermissionSet> lets you specify access to a member.  

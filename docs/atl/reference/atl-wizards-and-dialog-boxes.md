@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, class wizards"]
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Wizards and Dialog Boxes
 The Active Template Library (ATL) wizards generate boilerplate code for various kinds of COM objects. You can run the wizards by opening the shortcut menu for a project in **Solution Explorer** and choosing **Add**, **Class**.  

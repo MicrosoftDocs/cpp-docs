@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDacl Class
 This class is a wrapper for a DACL (discretionary access-control list) structure.  
@@ -109,9 +110,6 @@ bool AddAllowedAce(
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.  
   
-> [!NOTE]
->  The second form of `AddAllowedAce` is only available on Windows 2000 and later.  
-  
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
@@ -152,9 +150,6 @@ bool AddDeniedAce(
   
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.  
-  
-> [!NOTE]
->  The second form of `AddDeniedAce` is only available on Windows 2000 and later.  
   
  See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
   

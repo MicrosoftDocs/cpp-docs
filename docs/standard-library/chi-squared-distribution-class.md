@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::chi_squared_distribution", "random/std::chi_squared_distribution::reset", "random/std::chi_squared_distribution::n", "random/std::chi_squared_distribution::param", "random/std::chi_squared_distribution::min", "random/std::chi_squared_distribution::max", "random/std::chi_squared_distribution::operator()", "random/std::chi_squared_distribution::param_type", "random/std::chi_squared_distribution::param_type::n", "random/std::chi_squared_distribution::param_type::operator==", "random/std::chi_squared_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::chi_squared_distribution [C++]", "std::chi_squared_distribution [C++], reset", "std::chi_squared_distribution [C++], n", "std::chi_squared_distribution [C++], param", "std::chi_squared_distribution [C++], min", "std::chi_squared_distribution [C++], max", "std::chi_squared_distribution [C++], param_type", "std::chi_squared_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # chi_squared_distribution Class
 Generates a chi-squared distribution.  
@@ -75,7 +76,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/LinkId=400528).  
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/p/?linkid=400528).  
   
 ## Example  
   

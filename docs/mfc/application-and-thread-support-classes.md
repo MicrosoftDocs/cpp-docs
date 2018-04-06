@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Application and Thread Support Classes
 Each application has one and only one application object; this object coordinates other objects in the running program and is derived from `CWinApp`.  

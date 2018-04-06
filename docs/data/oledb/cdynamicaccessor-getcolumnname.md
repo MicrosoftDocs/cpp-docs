@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnName method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetColumnName
 Retrieves the name of the specified column.  
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetColumnName(   
-   DBORDINAL nColumn    
-) const throw( );  
+```cpp
+      LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();  
 ```  
   
 #### Parameters  

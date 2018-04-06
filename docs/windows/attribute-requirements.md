@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Requirements
 The requirements listed for C++ attributes describe the project types, compiler settings, and other information necessary for an attribute to work. The categories of information are described below.  

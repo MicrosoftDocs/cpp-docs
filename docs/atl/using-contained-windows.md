@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Contained Windows
 ATL implements contained windows with [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md). A contained window represents a window that delegates its messages to a container object instead of handling them in its own class.  

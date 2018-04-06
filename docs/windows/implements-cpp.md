@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # implements (C++)
 Specifies dispatch interfaces that are forced to be members of the IDL coclass.  
@@ -474,7 +475,7 @@ public:
       if (pDispParams == 0) {  
          return DISP_E_BADVARTYPE;  
       }  
-      if (pDispParams->cArgs > 0) {  
+      if (pDispParams->cArgs> 0) {  
          return DISP_E_BADPARAMCOUNT;  
       }  
       if (pVarResult != 0) {  
@@ -545,4 +546,4 @@ public:
   
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

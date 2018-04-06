@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_literal_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_literal_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_literal_type Class
 Tests whether a type can be used as a `constexpr` variable or be constructed, used by, or returned from `constexpr` functions.  

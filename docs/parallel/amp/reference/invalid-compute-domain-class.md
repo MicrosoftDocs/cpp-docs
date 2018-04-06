@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["invalid_compute_domain", "AMPRT/invalid_compute_domain", "AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_compute_domain class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # invalid_compute_domain Class
 The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) call site.  

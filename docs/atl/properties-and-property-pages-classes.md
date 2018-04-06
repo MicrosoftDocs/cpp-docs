@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.properties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, classes", "properties [ATL], classes", "properties [ATL]"]
@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Properties and Property Pages Classes
 The following classes support properties and property pages:  

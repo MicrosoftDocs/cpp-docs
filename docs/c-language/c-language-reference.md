@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Language Reference
 The *C Language Reference* describes the C programming language as implemented in Microsoft C. The book's organization is based on the ANSI C standard (sometimes referred to as C89) with additional material on the Microsoft extensions to the ANSI C standard.  

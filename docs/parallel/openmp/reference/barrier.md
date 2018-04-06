@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["barrier"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["barrier OpenMP directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # barrier
 Synchronizes all threads in a team; all threads pause at the barrier, until all threads execute the barrier.  

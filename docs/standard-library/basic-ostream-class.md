@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ostream/std::basic_ostream", "ostream/std::basic_ostream::flush", "ostream/std::basic_ostream::put", "ostream/std::basic_ostream::seekp", "ostream/std::basic_ostream::sentry", "ostream/std::basic_ostream::swap", "ostream/std::basic_ostream::tellp", "ostream/std::basic_ostream::write"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ostream [C++]", "std::basic_ostream [C++], flush", "std::basic_ostream [C++], put", "std::basic_ostream [C++], seekp", "std::basic_ostream [C++], sentry", "std::basic_ostream [C++], swap", "std::basic_ostream [C++], tellp", "std::basic_ostream [C++], write"]
@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_ostream Class
 This template class describes an object that controls insertion of elements and encoded objects into a stream buffer with elements of type **Elem**, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class **Tr**, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_lock class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # improper_lock Class
 This class describes an exception thrown when a lock is acquired improperly.  

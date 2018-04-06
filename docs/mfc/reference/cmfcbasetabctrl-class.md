@@ -15,6 +15,7 @@ caps.latest.revision: 41
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCBaseTabCtrl Class
 Implements the base functionality for tabbed windows.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SHR", "operator SHR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator SHR", "SHR operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator SHR
 Returns the result of shifting the bits of *expression* right *count* number of bits.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["future/std::shared_future", "future/std::shared_future::shared_future", "future/std::shared_future::get", "future/std::shared_future::valid", "future/std::shared_future::wait", "future/std::shared_future::wait_for", "future/std::shared_future::wait_until"]
 dev_langs: ["C++"]
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::shared_future [C++]", "std::shared_future [C++], shared_future", "std::shared_future [C++], get", "std::shared_future [C++], valid", "std::shared_future [C++], wait", "std::shared_future [C++], wait_for", "std::shared_future [C++], wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # shared_future Class
 Describes an *asynchronous return object*. In contrast with a [future](../standard-library/future-class.md) object, an *asynchronous provider* can be associated with any number of `shared_future` objects.  

@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Scope of this Manual
 C is a flexible language that leaves many programming decisions up to you. In keeping with this philosophy, C imposes few restrictions in matters such as type conversion. Although this characteristic of the language can make your programming job easier, you must know the language well to understand how programs will behave. This book provides information on the C language components and the features of the Microsoft implementation. The syntax for the C language is from ANSI X3.159-1989, *American National Standard for Information Systems - Programming Language - C* (hereinafter called the ANSI C standard), although it is not part of the ANSI C standard. [C Language Syntax Summary](../c-language/c-language-syntax-summary.md) provides the syntax and a description of how to read and use the syntax definitions.  

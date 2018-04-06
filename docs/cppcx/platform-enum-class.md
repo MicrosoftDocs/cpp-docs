@@ -6,18 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Enum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Enum Struct"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Enum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Enum Struct"]
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Enum Class
 A value class that represents a set of named constants.  

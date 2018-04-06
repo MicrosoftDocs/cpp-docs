@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message maps, ATL", "ATL, message handlers"]
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Maps (ATL)
 A message map associates a handler function with a particular message, command, or notification. By using ATL's [message map macros](../atl/reference/message-map-macros-atl.md), you can specify a message map for a window. The window procedures in `CWindowImpl`, `CDialogImpl`, and `CContainedWindowT` direct a window's messages to its message map.  

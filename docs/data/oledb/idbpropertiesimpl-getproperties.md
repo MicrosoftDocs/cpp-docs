@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetProperties method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl::GetProperties
 Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetProperties)(   
-   ULONG cPropertySets,   
+```cpp
+      STDMETHOD(GetProperties)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcProperties,   
-   DBPROPSET ** prgProperties    
-);  
+   DBPROPSET ** prgProperties);  
 ```  
   
 #### Parameters  

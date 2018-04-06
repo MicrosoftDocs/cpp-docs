@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN051: Using CTL3D Now and in the Future
 This technical note, which previously discussed CTL3D and MFC, is now obsolete. The 3D effect for controls is automatically implemented by MFC.  

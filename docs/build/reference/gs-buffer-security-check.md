@@ -15,6 +15,7 @@ caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GS (Buffer Security Check)  
   
@@ -28,7 +29,7 @@ Detects some buffer overruns that overwrite a function's return address, excepti
   
 ## Remarks  
   
-**/GS** is on by default. If you expect your application to have no security exposure, use **/GS-**. For more information about **/GS**, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260). For more information about suppressing buffer overrun detection, see [safebuffers](../../cpp/safebuffers.md).  
+**/GS** is on by default. If you expect your application to have no security exposure, use **/GS-**. For more information about **/GS**, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260). For more information about suppressing buffer overrun detection, see [safebuffers](../../cpp/safebuffers.md).  
   
 ## Security Checks  
   

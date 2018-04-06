@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WINMDDELAYSIGN (Partially Sign a winmd)
 Enables partial signing of a Windows Runtime Metadata (.winmd) file by putting the public key in the file.  

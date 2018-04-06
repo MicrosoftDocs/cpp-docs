@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Overview of LIB
 LIB creates standard libraries, import libraries, and export files you can use with [LINK](../../build/reference/linker-options.md) when building a program. LIB runs from a command prompt.  

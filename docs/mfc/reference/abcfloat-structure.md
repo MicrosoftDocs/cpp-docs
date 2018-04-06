@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ABCFLOAT Structure
 The `ABCFLOAT` structure contains the A, B, and C widths of a font character.  

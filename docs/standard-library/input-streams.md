@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["reading data [C++], from input streams", "data [C++], reading from input stream", "input streams", "input stream objects"]
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Input Streams
 An input stream object is a source of bytes. The three most important input stream classes are [istream](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md), and [istringstream](../standard-library/basic-istringstream-class.md).  

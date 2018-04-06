@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BLOB_NAME_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_NAME_STATUS macro"]
@@ -15,22 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BLOB_NAME_STATUS
 Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the status of the BLOB data column.  
   
 ## Syntax  
   
-```  
-  
-BLOB_NAME_STATUS(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data  
+```cpp
+BLOB_NAME_STATUS(pszName, IID, flags, data  
 , status )  
 ```  
   

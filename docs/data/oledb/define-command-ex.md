@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DEFINE_COMMAND_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DEFINE_COMMAND_EX macro"]
@@ -15,19 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # DEFINE_COMMAND_EX
 Specifies the command that will be used to create the rowset when using the [CCommand](../../data/oledb/ccommand-class.md) class. Supports Unicode and ANSI applications.  
   
 ## Syntax  
   
-```  
-  
-DEFINE_COMMAND_EX(  
-x  
-,   
-wszCommand  
- )  
+```cpp
+DEFINE_COMMAND_EX(x, wszCommand)  
   
 ```  
   

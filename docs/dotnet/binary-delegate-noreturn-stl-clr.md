@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # binary_delegate_noreturn (STL/CLR)
 The genereic class describes a two-argument delegate that returns `void`. You use it specify a delegate in terms of its argument.  

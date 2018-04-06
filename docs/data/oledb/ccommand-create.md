@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CCommand.Create", "CCommand::Create"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Create method [C++]"]
@@ -15,24 +15,22 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand::Create
 Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to create a command for the specified session, then calls [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709825.aspx) to specify the command text.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::Create(  
-   const CSession& session,   
+```cpp
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCWSTR wszCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
-HRESULT CCommandBase::Create(  
-   const CSession& session,   
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
+
+
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCSTR szCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
 ```  
   
 #### Parameters  

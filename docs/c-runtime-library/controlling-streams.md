@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Controlling Streams
 [fopen](../c-runtime-library/reference/fopen-wfopen.md) returns the address of an object of type `FILE`. You use this address as the `stream` argument to several library functions to perform various operations on an open file. For a byte stream, all input takes place as if each character is read by calling [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), and all output takes place as if each character is written by calling [fputc](../c-runtime-library/reference/fputc-fputwc.md). For a wide stream, all input takes place as if each character is read by calling [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), and all output takes place as if each character is written by calling [fputwc](../c-runtime-library/reference/fputc-fputwc.md).  

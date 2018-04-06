@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.12   Using the atomic Directive
 The following example avoids race conditions (simultaneous updates of an element of *x* by multiple threads) by using the `atomic` directive ([Section 2.6.4](../../parallel/openmp/2-6-4-atomic-construct.md) on page 19):  

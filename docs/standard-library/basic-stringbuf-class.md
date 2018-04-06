@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["sstream/std::basic_stringbuf", "sstream/std::basic_stringbuf::allocator_type", "sstream/std::basic_stringbuf::char_type", "sstream/std::basic_stringbuf::int_type", "sstream/std::basic_stringbuf::off_type", "sstream/std::basic_stringbuf::pos_type", "sstream/std::basic_stringbuf::traits_type", "sstream/std::basic_stringbuf::overflow", "sstream/std::basic_stringbuf::pbackfail", "sstream/std::basic_stringbuf::seekoff", "sstream/std::basic_stringbuf::seekpos", "sstream/std::basic_stringbuf::str", "sstream/std::basic_stringbuf::underflow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_stringbuf [C++]", "std::basic_stringbuf [C++], allocator_type", "std::basic_stringbuf [C++], char_type", "std::basic_stringbuf [C++], int_type", "std::basic_stringbuf [C++], off_type", "std::basic_stringbuf [C++], pos_type", "std::basic_stringbuf [C++], traits_type", "std::basic_stringbuf [C++], overflow", "std::basic_stringbuf [C++], pbackfail", "std::basic_stringbuf [C++], seekoff", "std::basic_stringbuf [C++], seekpos", "std::basic_stringbuf [C++], str", "std::basic_stringbuf [C++], underflow"]
@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_stringbuf Class
 Describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an array object.  

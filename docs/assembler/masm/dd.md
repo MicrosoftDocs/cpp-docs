@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["dd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DD directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DD
 Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`. `DD` is a synonym of [DWORD](../../assembler/masm/dword.md).  

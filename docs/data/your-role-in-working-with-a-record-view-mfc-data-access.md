@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Your Role in Working with a Record View  (MFC Data Access)
 The following table shows what you typically must do to work with a record view and what the framework does for you.  

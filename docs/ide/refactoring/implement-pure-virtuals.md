@@ -11,6 +11,7 @@ ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Implement Pure Virtuals

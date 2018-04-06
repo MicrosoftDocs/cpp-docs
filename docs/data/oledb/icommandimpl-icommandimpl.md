@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandImpl constructor", "ICommandImpl class, constructor"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl::ICommandImpl
 The constructor.  
   
 ## Syntax  
   
-```  
-  
-ICommandImpl( );  
+```cpp
+ICommandImpl();  
   
 ```  
   

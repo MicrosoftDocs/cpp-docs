@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["resource pooling [OLE DB], provider requirements", "OLE DB, resource pooling", "service providers [OLE DB]", "OLE DB services [OLE DB], provider requirements", "OLE DB services [OLE DB]", "OLE DB providers, resource pooling"]
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Resource Pooling and Services
 To work well with OLE DB pooling, or with any OLE DB service, your provider must support aggregation of all objects. This is a requirement of any OLE DB 1.5 or later provider. It is critical for leveraging services. Providers that do not support aggregation cannot be pooled and no additional services are provided.  

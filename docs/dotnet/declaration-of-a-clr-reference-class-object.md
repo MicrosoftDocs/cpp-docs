@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a CLR Reference Class Object
 The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to Visual C++.  

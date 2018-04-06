@@ -1,12 +1,12 @@
 ---
 title: "_get_osfhandle | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/11/2017"
+ms.date: "12/12/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_get_osfhandle"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _get_osfhandle
 
@@ -33,16 +34,16 @@ intptr_t _get_osfhandle(
   
 ### Parameters
 
-*fd*
+*fd*  
 An existing file descriptor.  
   
 ## Return Value
 
-An operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
+Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
   
 ## Remarks
 
-To close a file whose operating-system file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. The underlying handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle.  
+To close a file whose operating system (OS) file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. Do not call `CloseHandle` on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when `_close` is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, do not call `_close` on the file descriptor.
   
 ## Requirements  
   

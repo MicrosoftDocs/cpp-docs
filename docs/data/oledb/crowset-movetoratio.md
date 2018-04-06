@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["MoveToRatio", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveToRatio method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::MoveToRatio
 Fetches rows starting from a fractional position in the rowset.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveToRatio(   
-   DBCOUNTITEM nNumerator,   
-   DBCOUNTITEM nDenominator,   
-   bool bForward = true    
-) throw( );  
+```
+HRESULT MoveToRatio(DBCOUNTITEM nNumerator,   
+   DBCOUNTITEM nDenominator,bool bForward = true) throw();  
 ```  
   
 #### Parameters  
@@ -46,7 +43,7 @@ Fetches rows starting from a fractional position in the rowset.
 ## Remarks  
  `MoveToRatio` fetches rows according roughly to the following formula:  
   
- `( nNumerator *  RowsetSize ) / nDenominator`  
+ `(nNumerator *  RowsetSize ) / nDenominator`  
   
  where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](https://msdn.microsoft.com/en-us/library/ms709602.aspx).  
   

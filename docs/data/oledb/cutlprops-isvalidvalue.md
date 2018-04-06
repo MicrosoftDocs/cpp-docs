@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsValidValue method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::IsValidValue
 Used to validate a value before setting a property.  
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::IsValidValue(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### Parameters  

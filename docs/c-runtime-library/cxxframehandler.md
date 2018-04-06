@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __CxxFrameHandler
 Internal CRT function. Used by the CRT to handle structured exception frames.  

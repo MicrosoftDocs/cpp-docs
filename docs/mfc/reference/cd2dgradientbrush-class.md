@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CD2DGradientBrush Class
 The base class of the CD2DLinearGradientBrush and the CD2DRadialGradientBrush classes.  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Write a parallel_for Loop
 This example demonstrates how to use [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) to compute the product of two matrices.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Class Templates
 This topic describes rules that are specific to C++ class templates.  
@@ -194,7 +195,7 @@ X<T>::Y<U>::~Y()
  Local classes are not allowed to have member templates.  
   
 ## Template friends  
- Class templates can have [friends](http://msdn.microsoft.com/en-us/bf412640-d857-4acb-b2b5-513131cb9681). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
+ Class templates can have [friends](friend-cpp.md). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
   
  In the following example, a friend function is defined as a function template within the class template. This code produces a version of the friend function for every instantiation of the template. This construct is useful if your friend function depends on the same template parameters as the class does.  
   

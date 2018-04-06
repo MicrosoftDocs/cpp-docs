@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0032
 The 'Outputs' property for the project-level custom build step contained 'macro' which evaluates out to 'macro_expansion'.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::recursive_directory_iterator"]
 dev_langs: ["C++"]
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # recursive_directory_iterator Class
 describes an input iterator that sequences through the filenames in a directory, possibly descending into subdirectories recursively. For an iterator X, the expression *X evaluates to an object of class directory_entry that wraps the filename and anything known about its status.  

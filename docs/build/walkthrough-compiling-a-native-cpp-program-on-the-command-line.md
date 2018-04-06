@@ -14,9 +14,10 @@ caps.latest.revision: 63
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
-Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows apps, Windows Store apps, and .NET components.  
+Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.  
   
  In this walkthrough, you create a basic, "Hello, World"-style C++ program by using a text editor, and then compile it on the command line. If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
@@ -27,7 +28,7 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
   
  Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and  how to download and install Visual Studio, including the free Visual Studio Community edition, see [VisualStudio.com](https://www.visualstudio.com/).  
   
- The Visual Studio Build Tools installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Visual Studio Build Tools](https://go.microsoft.com/fwlink/?linkid=840931) and run the installer. For more information, see [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
+ The Visual Studio Build Tools installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Visual Studio Build Tools](https://go.microsoft.com/fwlink/p/?linkid=840931) and run the installer. For more information, see [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools).  
   
  Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment in order to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window**. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they are located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.  
   

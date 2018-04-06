@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["queue/std::queue::container_type", "queue/std::queue::size_type", "queue/std::queue::value_type", "queue/std::queue::back", "queue/std::queue::empty", "queue/std::queue::front", "queue/std::queue::pop", "queue/std::queue::push", "queue/std::queue::size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::queue [C++], container_type", "std::queue [C++], size_type", "std::queue [C++], value_type", "std::queue [C++], back", "std::queue [C++], empty", "std::queue [C++], front", "std::queue [C++], pop", "std::queue [C++], push", "std::queue [C++], size"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # queue Class
 A template container adaptor class that provides a restriction of functionality for some underlying container type, limiting access to the front and back elements. Elements can be added at the back or removed from the front, and elements can be inspected at either end of the queue.  

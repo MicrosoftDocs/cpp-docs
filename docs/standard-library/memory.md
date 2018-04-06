@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["memory header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt;
 Defines a class, an operator, and several templates that help allocate and free objects.  

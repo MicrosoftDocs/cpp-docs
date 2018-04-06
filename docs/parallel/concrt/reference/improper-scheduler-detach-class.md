@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["improper_scheduler_detach", "CONCRT/concurrency::improper_scheduler_detach", "CONCRT/concurrency::improper_scheduler_detach::improper_scheduler_detach"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_detach class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # improper_scheduler_detach Class
 This class describes an exception thrown when the `CurrentScheduler::Detach` method is called on a context which has not been attached to any scheduler using the `Attach` method of a `Scheduler` object.  

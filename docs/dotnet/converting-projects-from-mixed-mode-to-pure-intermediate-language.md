@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Converting Projects from Mixed Mode to Pure Intermediate Language
 All Visual C++ CLR projects link to the C run-time libraries by default. Consequently, these projects are classified as mixed-mode applications, because they combine native code with code that targets the common language runtime (managed code). When they are compiled, they are compiled into intermediate language (IL), also known as Microsoft intermediate language (MSIL).  

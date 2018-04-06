@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module Class
 Represents a collection of related objects.  
@@ -23,9 +24,7 @@ Represents a collection of related objects.
   
 ```  
   
-template<  
-   ModuleType moduleType  
->  
+template<ModuleType moduleType>  
 class Module;  
   
 template<>  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropSet.operator=", "ATL::CDBPropSet::operator=", "ATL.CDBPropSet.operator=", "CDBPropSet::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator =, property sets", "= operator, with OLE DB templates", "operator=, property sets"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropSet::operator =
 Assigns the contents of one property set to another property set.  
   
 ## Syntax  
   
-```  
-  
-      CDBPropSet& operator =(   
-   CDBPropSet& propset    
-) throw( );  
+```cpp
+      CDBPropSet& operator =(CDBPropSet& propset) throw();  
 ```  
   
 ## Requirements  

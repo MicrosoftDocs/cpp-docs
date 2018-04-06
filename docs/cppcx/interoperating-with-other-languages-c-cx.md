@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: f74db99f-7dbd-421e-99e6-c34bbebf5cea
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Interoperating with Other Languages (C++/CX)
 This part of the documentation describes how to use C++/CX to author Windows Runtime components that can be consumed by other programming languages and libraries. You can also author components that can't be consumed by all languages. This section describes different aspects to consider when your C++/CX application interoperates with components that are written by using JavaScript, a .NET Framework managed language, or the Windows Runtime C++ Template Library.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessor class"]
@@ -15,14 +15,14 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor Class
 Allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure).  
   
 ## Syntax  
   
-```  
-  
+```cpp
       template< typename BaseType, DBTYPEENUM OleDbType >  
 class CDynamicStringAccessorT : public CDynamicAccessor  
 ```  

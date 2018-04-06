@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal BSTR Strings for ADO.NET (C++/CLI)
 Demonstrates how to add a COM string (`BSTR`) to a database and how to marshal a <xref:System.String?displayProperty=fullName> from a database to a `BSTR`.  

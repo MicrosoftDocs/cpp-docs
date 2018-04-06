@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedExchangePointer_cpp", "_InterlockedExchangePointer_rel", "_InterlockedExchangePointer_nf", "_InterlockedExchangePointer_HLERelease", "_InterlockedExchangePointer_acq", "_InterlockedExchangePointer", "_InterlockedExchangePointer_acq_cpp", "_InterlockedExchangePointer_HLEAcquire"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedExchangePointer_rel intrinsic", "_InterlockedExchangePointer_HLERelease intrinsic", "_InterlockedExchangePointer intrinsic", "_InterlockedExchangePointer_nf intrinsic", "_InterlockedExchangePointer_acq intrinsic", "_InterlockedExchangePointer_HLEAcquire intrinsic", "InterlockedExchangePointer_acq intrinsic", "InterlockedExchangePointer intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _InterlockedExchangePointer Intrinsic Functions
 **Microsoft Specific**  

@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overview of Marshaling in C++
 In mixed mode, you sometimes must marshal your data between native and managed types. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] introduced the marshaling library to help you marshal and convert data in a simple way.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["std::!=", "!=", "std::operator!=", "std.operator!=", "std.!=", "operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["!= operator", "operator!=", "operator !="]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator!=
 > [!NOTE]

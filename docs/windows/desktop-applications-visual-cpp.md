@@ -13,6 +13,7 @@ caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Desktop Applications (Visual C++)
 A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 10 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then).   A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 10, and also on XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](https://msdn.microsoft.com/en-us/library/windows/desktop/dn614993\(v=vs.85\).aspx).  
@@ -44,7 +45,7 @@ A *desktop application* in C++ is a native application that can access the full 
 |Title|Description|  
 |-----------|-----------------|  
 |[Windows Development](http://go.microsoft.com/fwlink/p/?LinkId=262282)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|  
-|[Hilo: Developing C++ Applications for Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=262284)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a throough introduction to Win32 programming.|  
+|[Hilo: Developing C++ Applications for Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=262284)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|  
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|  
   
 ## See Also  

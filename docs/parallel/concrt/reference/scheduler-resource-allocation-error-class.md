@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_resource_allocation_error class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_resource_allocation_error Class
 This class describes an exception thrown because of a failure to acquire a critical resource in the Concurrency Runtime.  

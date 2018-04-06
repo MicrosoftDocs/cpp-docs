@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szTableSchema", "m_szCatalog", "CViewTableInfo", "m_szTableCatalog", "m_szSchema", "m_szTableName", "m_szName", "CViewTableUsage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CViewTableInfo parameter class", "CViewTableUsage typedef class", "m_szSchema", "m_szTableSchema", "TABLE_CATALOG", "m_szCatalog", "TABLE_NAME", "TABLE_SCHEMA", "m_szName", "m_szTableCatalog", "m_szTableName"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CViewTableUsage, CViewTableInfo
 Call the typedef class **CViewTableUsage** to implement its parameter class **CViewTableInfo**.  

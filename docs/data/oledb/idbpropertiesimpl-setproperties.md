@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetProperties method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl::SetProperties
 Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetProperties)(   
-   ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]    
-);  
+```cpp
+      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ITopologyExecutionResource structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ITopologyExecutionResource Structure
 An interface to an execution resource as defined by the Resource Manager.  

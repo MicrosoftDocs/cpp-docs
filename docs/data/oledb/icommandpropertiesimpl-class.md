@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandPropertiesImpl class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
 Provides an implementation of the [ICommandProperties](https://msdn.microsoft.com/en-us/library/ms723044.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE ICommandPropertiesImpl   
    : public ICommandProperties, public CUtlProps<PropClass>  

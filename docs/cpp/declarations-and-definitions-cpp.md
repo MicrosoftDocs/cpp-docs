@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Declarations and Definitions (C++)
 Declarations introduce names in a program, for example the names of variables, namespaces, functions and classes. Declarations also specify type information as well as other characteristics of the object that is being declared. A name must be declared before it can be used; in C++ the point at which a name is declared determines whether it is visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit; you can use *forward declarations* to get around this limitation.  

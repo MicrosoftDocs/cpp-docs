@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # back_insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the back end of a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `back_insert_iterator` class is templatized on the type of container.  

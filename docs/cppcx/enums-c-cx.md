@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
 caps.latest.revision: 14
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Enums (C++/CX)
 C++/CX supports the `public enum class` keyword, which is analagous to a standard C++ `scoped  enum`. When you use an enumerator that's declared by using the `public enum class` keyword, you must use the enumeration identifier to scope each enumerator value.  

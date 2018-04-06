@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Toolbar Editor
 The Toolbar editor enables you to create toolbar resources and convert bitmaps into toolbar resources. The Toolbar editor uses a graphical display to show a toolbar and buttons that closely resemble how they will look in a finished application.  
@@ -36,7 +37,7 @@ Toolbar Editor
   
  The Toolbar editor is similar to the Image editor in functionality. The menu items, graphic tools, and bitmap grid are the same as those in the Image editor. There is a menu command on the Image menu to allow you to switch between the Toolbar editor and the Image editor. For more information on using the Graphics toolbar, Colors palette, or Image menu, see [Image Editor](../windows/image-editor-for-icons.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  MFC or ATL  

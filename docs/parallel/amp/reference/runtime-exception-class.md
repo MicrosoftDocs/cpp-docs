@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["runtime_exception", "AMPRT/runtime_exception", "AMPRT/Concurrency::runtime_exception", "AMPRT/Concurrency::runtime_exception::get_error_code"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_exception class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # runtime_exception Class
 The base type for exceptions in the C++ Accelerated Massive Parallelism (AMP) library.  

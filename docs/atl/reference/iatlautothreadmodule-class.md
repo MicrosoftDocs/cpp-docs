@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["devlang-cpp"]
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["IAtlAutoThreadModule", "atlbase/ATL::IAtlAutoThreadModule"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAtlAutoThreadModule Class
 This class represents an interface to a `CreateInstance` method.  

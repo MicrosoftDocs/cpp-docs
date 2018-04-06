@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _com_raise_error
 **Microsoft Specific**  
@@ -39,7 +40,7 @@ manager: "ghogen"
  **IErrorInfo** object.  
   
 ## Remarks  
- `_com_raise_error`, which is defined in comdef.h, can be replaced by a user-written version of the same name and prototype. This could be done if you want to use `#import` but do not want to use C++ exception handling. In that case, a user version of **_com_raise_error** might decide to do a `longjmp` or display a message box and halt. The user version should not return, though, because the compiler COM support code does not expect it to return.  
+ `_com_raise_error`, which is defined in \<comdef.h>, can be replaced by a user-written version of the same name and prototype. This could be done if you want to use `#import` but do not want to use C++ exception handling. In that case, a user version of **_com_raise_error** might decide to do a `longjmp` or display a message box and halt. The user version should not return, though, because the compiler COM support code does not expect it to return.  
   
  You can also use [_set_com_error_handler](../cpp/set-com-error-handler.md) to replace the default error-handling function.  
   
@@ -54,7 +55,7 @@ void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {
 **END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comdef.h  
+ **Header:** \<comdef.h>  
   
  **Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   

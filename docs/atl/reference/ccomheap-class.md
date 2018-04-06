@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComHeap Class
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the COM memory allocation functions.  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # User-Defined Conversions (C++/CLI)
 This section discusses user-defined conversions (UDC) when one of the types in the conversion is a reference or instance of a value type or reference type.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["QWORD"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["QWORD directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # QWORD
 Allocates and optionally initializes 8 bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.  

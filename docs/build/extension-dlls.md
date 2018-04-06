@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC extension DLLs
 An MFC extension DLL is a DLL that typically implements reusable classes derived from the existing Microsoft Foundation Class Library classes.  
@@ -45,7 +46,7 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
  Before version 4.0 of MFC, this type of DLL was called an AFXDLL. AFXDLL refers to the `_AFXDLL` preprocessor symbol that is defined when building the DLL.  
   
- The import libraries for the shared version of MFC are named according to the convention described in [Naming conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md). Visual C++ supplies prebuilt versions of the MFC DLLs, plus a number of non-MFC DLLs that you can use and distribute with your applications. These are documented in Redist.txt, which is installed to the Program Files\Microsoft Visual Studio folder.  
+ The import libraries for the shared version of MFC are named according to the convention described in [Naming conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual C++ supplies prebuilt versions of the MFC DLLs, plus a number of non-MFC DLLs that you can use and distribute with your applications. These are documented in Redist.txt, which is installed to the Program Files\Microsoft Visual Studio folder.  
   
  If you are exporting using a .def file, place the following code at the beginning and end of your header file:  
   

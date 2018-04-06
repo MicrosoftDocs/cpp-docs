@@ -13,9 +13,10 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Classic COM Component Using WRL
-You can use the Windows Runtime C++ Template Library (WRL)to create basic classic COM components for use in desktop apps, in addition to using it for [!INCLUDE[win8_appstore_long](../build/reference/includes/win8_appstore_long_md.md)] apps. For the creation of COM components, the Windows Runtime C++ Template Library may require less code than the ATL. For information about the subset of COM that the Windows Runtime C++ Template Library supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+You can use the Windows Runtime C++ Template Library (WRL) to create basic classic COM components for use in desktop apps, in addition to using it for Universal Windows Platform (UWP) apps. For the creation of COM components, the Windows Runtime C++ Template Library may require less code than the ATL. For information about the subset of COM that the Windows Runtime C++ Template Library supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
  This document shows how to use the Windows Runtime C++ Template Library to create a basic COM component. Although you can use the deployment mechanism that best fits your needs, this document also shows a basic way to register and consume the COM component from a desktop app.  
   
@@ -31,7 +32,7 @@ You can use the Windows Runtime C++ Template Library (WRL)to create basic classi
   
      [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]  
   
-5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to [!INCLUDE[win8_appstore_short](../windows/includes/win8_appstore_short_md.md)] app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
+5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
   
      [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]  
   

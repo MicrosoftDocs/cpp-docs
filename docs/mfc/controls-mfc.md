@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Controls (MFC)
 Controls are objects that users can interact with to enter or manipulate data. They commonly appear in dialog boxes or on toolbars. This topic family covers three main kinds of controls:  
@@ -27,15 +28,7 @@ Controls are objects that users can interact with to enter or manipulate data. T
 ## Windows Common Controls  
  The Windows operating system has always provided a number of Windows common controls. These control objects are programmable, and the Visual C++ dialog editor supports adding them to your dialog boxes. The Microsoft Foundation Class Library (MFC) supplies classes that encapsulate each of these controls, as shown in the table [Windows Common Controls and MFC Classes](#_core_windows_common_controls_and_mfc_classes). (Some items in the table have related topics that describe them further. For controls that lack topics, see the documentation for the MFC class.)  
   
- Class [CWnd](../mfc/reference/cwnd-class.md) is the base class of all window classes, including all of the control classes. The Windows common controls are supported in the following environments:  
-  
--   Windows 95, Windows 98, and Windows 2000  
-  
--   Windows NT, version 3.51 and later  
-  
--   Win32s, version 1.3 (Visual C++ versions 4.2 and later do not support Win32s)  
-  
- The older common controls — check boxes, combo boxes, edit boxes, list boxes, option buttons, pushbuttons, scroll bar controls, and static controls — were available in earlier versions of Windows as well.  
+ Class [CWnd](../mfc/reference/cwnd-class.md) is the base class of all window classes, including all of the control classes. 
   
 ## ActiveX Controls  
  ActiveX controls, formerly known as OLE controls, can be used in dialog boxes in your applications for Windows, or in HTML pages on the World Wide Web. For more information, see [MFC ActiveX Controls](../mfc/mfc-activex-controls.md).  

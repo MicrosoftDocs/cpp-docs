@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRowset class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset Class
 Encapsulates an OLE DB rowset object and several related interfaces and provides manipulation methods for rowset data.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor = CAccessorBase>  
 class CRowset  
 ```  

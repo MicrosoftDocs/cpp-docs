@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Importing Data Using __declspec(dllimport)
 In the case of data, using **__declspec(dllimport)** is a convenience item that removes a layer of indirection. When you import data from a DLL, you still have to go through the import address table. Before **__declspec(dllimport)**, this meant you had to remember to do an extra level of indirection when accessing data exported from the DLL:  

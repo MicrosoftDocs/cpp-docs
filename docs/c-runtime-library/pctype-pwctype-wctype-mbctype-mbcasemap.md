@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 These global variables contain information used by the character classification functions. They are for internal use only.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IScheduler", "CONCRTRM/concurrency::IScheduler", "CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::GetId", "CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle", "CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::Statistics"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IScheduler structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IScheduler Structure
 An interface to an abstraction of a work scheduler. The Concurrency Runtime's Resource Manager uses this interface to communicate with work schedulers.  

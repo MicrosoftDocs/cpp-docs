@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Macro Substitution
 When *macroname* is invoked, each occurrence of *string1* in its definition string is replaced by *string2*.  

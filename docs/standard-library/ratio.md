@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ratio/std::mega", "ratio/std::peta", "ratio/std::ratio_greater", "ratio/std::micro", "ratio/std::ratio_add", "ratio/std::ratio_not_equal", "ratio/std::hecto", "ratio/std::nano", "ratio/std::ratio_less_equal", "ratio/std::ratio_less", "ratio/std::centi", "ratio/std::ratio_greater_equal", "ratio/std::ratio_subtract", "<ratio>", "ratio/std::atto", "ratio/std::tera", "ratio/std::milli", "ratio/std::ratio_multiply", "ratio/std::kilo", "ratio/std::ratio_divide", "ratio/std::giga", "ratio/std::pico", "ratio/std::femto", "ratio/std::ratio_equal", "ratio/std::ratio", "ratio/std::exa", "ratio/std::deci", "ratio/std::deca"]
 dev_langs: ["C++"]
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;ratio&gt;
 

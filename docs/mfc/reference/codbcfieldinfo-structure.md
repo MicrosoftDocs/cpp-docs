@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CODBCFieldInfo Structure
 The `CODBCFieldInfo` structure contains information about the fields in an ODBC data source.  

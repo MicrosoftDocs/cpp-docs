@@ -15,6 +15,7 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDockablePane Class
 Implements a pane that can either be docked in a dock site or included in a tabbed pane.  

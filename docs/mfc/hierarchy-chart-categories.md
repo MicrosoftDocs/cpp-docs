@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Hierarchy Chart Categories
 ![MFC hierarchy chart categories](../mfc/media/vc369r1.png "vc369r1")  

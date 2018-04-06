@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _heapset
 Checks heaps for minimal consistency and sets the free entries to a specified value.  

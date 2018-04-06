@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset::IsSameRow", "CRowset.IsSameRow", "IsSameRow", "ATL::CRowset::IsSameRow", "ATL.CRowset.IsSameRow", "CRowset<TAccessor>::IsSameRow", "ATL.CRowset<TAccessor>.IsSameRow", "CRowset<TAccessor>.IsSameRow", "ATL::CRowset<TAccessor>::IsSameRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsSameRow method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::IsSameRow
 Compares the specified row with the current row.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT IsSameRow(   
-   HROW hRow    
-) const throw( );  
+```cpp
+HRESULT IsSameRow(HROW hRow) const throw();  
 ```  
   
 #### Parameters  

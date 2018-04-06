@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::cauchy_distribution", "random/std::cauchy_distribution::reset", "random/std::cauchy_distribution::a", "random/std::cauchy_distribution::b", "random/std::cauchy_distribution::param", "random/std::cauchy_distribution::min", "random/std::cauchy_distribution::max", "random/std::cauchy_distribution::operator()", "random/std::cauchy_distribution::param_type", "random/std::cauchy_distribution::param_type::a", "random/std::cauchy_distribution::param_type::b", "random/std::cauchy_distribution::param_type::operator==", "random/std::cauchy_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::cauchy_distribution [C++]", "std::cauchy_distribution [C++], reset", "std::cauchy_distribution [C++], a", "std::cauchy_distribution [C++], b", "std::cauchy_distribution [C++], param", "std::cauchy_distribution [C++], min", "std::cauchy_distribution [C++], max", "std::cauchy_distribution [C++], param_type", "std::cauchy_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cauchy_distribution Class
 Generates a Cauchy distribution.  
@@ -77,7 +78,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/LinkId=400523).  
+For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/p/?linkid=400523).  
   
 ## Example  
   

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Containers: Advanced Features
 This article describes the steps necessary to incorporate optional advanced features into existing container applications. These features are:  

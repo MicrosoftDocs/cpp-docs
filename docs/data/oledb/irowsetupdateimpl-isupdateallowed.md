@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsUpdateAllowed method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::IsUpdateAllowed
 Override this method to check for security, integrity, and so on before updates.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT IsUpdateAllowed(  
-   DBPENDINGSTATUS /* [in] *//* status */,  
+```cpp
+HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] *//* status */,  
    HROW /* [in] *//* hRowUpdate */,  
-   DBROWSTATUS* /* [out] *//* pRowStatus */  
-);  
+   DBROWSTATUS* /* [out] *//* pRowStatus */);  
 ```  
   
 #### Parameters  

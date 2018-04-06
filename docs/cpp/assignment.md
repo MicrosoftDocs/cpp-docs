@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Assignment
 The assignment operator (**=**) is, strictly speaking, a binary operator. Its declaration is identical to any other binary operator, with the following exceptions:  

@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 4.3 OMP_DYNAMIC
 The **OMP_DYNAMIC** environment variable enables or disables dynamic adjustment of the number of threads available for execution of parallel regions unless dynamic adjustment is explicitly enabled or disabled by calling the **omp_set_dynamic** library routine. Its value must be **TRUE** or **FALSE**.  

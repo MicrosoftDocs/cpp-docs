@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # dllexport, dllimport
 **Microsoft Specific**  
@@ -25,8 +26,8 @@ manager: "ghogen"
   
 ```  
   
-      __declspec( dllimport ) declarator  
-__declspec( dllexport ) declarator  
+   __declspec( dllimport ) declarator  
+   __declspec( dllexport ) declarator  
 ```  
   
 ## Remarks  

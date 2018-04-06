@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ICommandSource Interface
 Manages commands sent from a command source object to a user control.  
@@ -68,7 +69,7 @@ A handle to the command handler method.
 
 ### Remarks
 This method adds the command handler cmdHandler to the command source object and maps the handler to cmdID.
-See [How to: Add Command Routing to the Windows Forms Control](https://msdn.microsoft.com/library/y33d8624.aspx) for an example of how to use AddCommandHandler.
+See [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) for an example of how to use AddCommandHandler.
 
 ## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 

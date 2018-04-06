@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor.GetString", "CDynamicStringAccessor::GetString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetString method"]
@@ -15,23 +15,19 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor::GetString
 Retrieves the specified column data as a string.  
   
 ## Syntax  
   
-```  
-  
-      BaseType* GetString(  
-   DBORDINAL nColumn  
-) const throw( );  
-BaseType* GetString(  
-   const CHAR* pColumnName  
-) const throw( );  
-BaseType* GetString(  
-   const WCHAR* pColumnName  
-) const throw( );  
+```cpp
+      BaseType* GetString(DBORDINAL nColumn) const throw();  
+
+BaseType* GetString(const CHAR* pColumnName) const throw();  
+
+BaseType* GetString(const WCHAR* pColumnName) const throw();  
 ```  
   
 #### Parameters  

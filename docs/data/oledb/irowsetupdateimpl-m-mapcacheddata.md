@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetUpdateImpl.m_mapCachedData", "IRowsetUpdateImpl::m_mapCachedData", "m_mapCachedData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_mapCachedData"]
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::m_mapCachedData
 A map containing the original data for the deferred operation.  
   
 ## Syntax  
   
-```  
-  
+```cpp
       CAtlMap<   
    HROW hRow,    
    Storage* pData   

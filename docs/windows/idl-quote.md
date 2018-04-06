@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # idl_quote
 Allows you to use IDL constructs that are not supported in the current version of Visual C++ and have them pass through to the generated .idl file.  

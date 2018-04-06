@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.1   Executing a Simple Loop in Parallel
 The following example demonstrates how to parallelize a simple loop using the `parallel for` directive ([Section 2.5.1](../../parallel/openmp/2-5-1-parallel-for-construct.md) on page 16). The loop iteration variable is private by default, so it is not necessary to specify it explicitly in a private clause.  

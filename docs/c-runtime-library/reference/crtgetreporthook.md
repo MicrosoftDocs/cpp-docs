@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_CrtGetReportHook"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtGetReportHook
 Retrieves the client-defined reporting function for hooking it into the C run time for the debug reporting process (debug version only).  
@@ -48,7 +49,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtSetReportHook`, see [report](http://msdn.microsoft.com/en-us/f6e08c30-6bd9-459a-830a-56deec0d2051).  
+ For a sample of how to use `_CrtSetReportHook`, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

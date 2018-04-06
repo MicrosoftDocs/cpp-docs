@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IDispEventSimpleImpl Class
 This class provides implementations of the `IDispatch` methods, without getting type information from a type library.  

@@ -6,17 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorIterator::VectorIterator"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VectorIterator Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["VectorIterator Class"]
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorIterator Class
 Provides a Standard Template Library iterator for objects derived from the Windows Runtime IVector interface.  

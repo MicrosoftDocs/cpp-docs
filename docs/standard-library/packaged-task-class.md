@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["future/std::packaged_task", "future/std::packaged_task::packaged_task", "future/std::packaged_task::get_future", "future/std::packaged_task::make_ready_at_thread_exit", "future/std::packaged_task::reset", "future/std::packaged_task::swap", "future/std::packaged_task::valid", "future/std::packaged_task::operator()", "future/std::packaged_task::operator bool"]
 dev_langs: ["C++"]
 ms.assetid: 0a72cbe3-f22a-4bfe-8e50-dcb268c98780
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::packaged_task [C++]", "std::packaged_task [C++], packaged_task", "std::packaged_task [C++], get_future", "std::packaged_task [C++], make_ready_at_thread_exit", "std::packaged_task [C++], reset", "std::packaged_task [C++], swap", "std::packaged_task [C++], valid"]
+ms.workload: ["cplusplus"]
 ---
 # packaged_task Class
 Describes an *asynchronous provider* that is a call wrapper whose call signature is `Ty(ArgTypes...)`. Its *associated asynchronous state* holds a copy of its callable object in addition to the potential result.  

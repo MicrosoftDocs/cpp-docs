@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Editing a Message Handler
 Once you have defined a message handler, you can go to the member function's definition to add or modify code.  

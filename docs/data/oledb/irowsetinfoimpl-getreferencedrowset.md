@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetReferencedRowset method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl::GetReferencedRowset
 Returns an interface pointer to the rowset to which a bookmark applies.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetReferencedRowset )(  
-   DBORDINAL iOrdinal,  
+```cpp
+      STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,  
    REFIID riid,  
-   IUnknown** ppReferencedRowset   
-);  
+   IUnknown** ppReferencedRowset);  
 ```  
   
 #### Parameters  

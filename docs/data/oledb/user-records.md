@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], accessors", "COLUMN_ENTRY macro", "COLUMN_ENTRY_MAP macro", "user records, OLE DB consumer templates", "OLE DB consumer templates, user records", "CAccessor class, example", "BEGIN_ACCESSOR_MAP macro", "accessors [C++], rowsets", "accessors [C++], static", "BEGIN_ACCESSOR macro, example"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # User Records
 To use a static accessor (that is, an accessor derived from **CAccessor)**, your consumer must have a user record. The user record is a C++ class that contains data elements to handle input or output. The ATL OLE DB Consumer Wizard generates a user record for your consumer. You can add methods to the user record for optional tasks like handling commands.  

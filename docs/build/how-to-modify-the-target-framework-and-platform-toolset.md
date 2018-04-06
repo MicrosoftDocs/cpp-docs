@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Modify the Target Framework and Platform Toolset
 You can change Visual C++ project settings to target different versions of the .NET Framework and to use different platform toolsets. By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can change the target platform toolset by modifying the project properties. You can change the target Framework by modifying the project (.vcxproj) file. You do not have to maintain a separate code base for every compilation target.  
@@ -27,7 +28,7 @@ You can change Visual C++ project settings to target different versions of the .
 > [!NOTE]
 >  To change the target platform toolset, you must have the associated version of Visual Studio or the Windows Platform SDK installed. For example, to target the Itanium platform with the **Windows7.1SDK** platform toolset, you must have [Microsoft Windows SDK for Windows 7 and .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) installed; however, you could use another compatible version of Visual Studio to do your development work, provided that you target the correct Framework version and platform toolset.  
   
- You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](http://go.microsoft.com/fwlink/?LinkId=196619) on the Visual C++ blog.  
+ You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](http://go.microsoft.com/fwlink/p/?linkid=196619) on the Visual C++ blog.  
   
 ### To change the target Framework  
   

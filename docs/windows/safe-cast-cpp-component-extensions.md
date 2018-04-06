@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # safe_cast (C++ Component Extensions)
 The `safe_cast` operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.  

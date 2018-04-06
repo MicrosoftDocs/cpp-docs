@@ -10,6 +10,7 @@ ms.assetid: 5ca122bb-34f3-43ee-a21f-95802cd515f7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4694
 

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ios/std::basic_ios", "ios/std::basic_ios::char_type", "ios/std::basic_ios::int_type", "ios/std::basic_ios::off_type", "ios/std::basic_ios::pos_type", "ios/std::basic_ios::traits_type", "ios/std::basic_ios::bad", "ios/std::basic_ios::clear", "ios/std::basic_ios::copyfmt", "ios/std::basic_ios::eof", "ios/std::basic_ios::exceptions", "ios/std::basic_ios::fail", "ios/std::basic_ios::fill", "ios/std::basic_ios::good", "ios/std::basic_ios::imbue", "ios/std::basic_ios::init", "ios/std::basic_ios::move", "ios/std::basic_ios::narrow", "ios/std::basic_ios::rdbuf", "ios/std::basic_ios::rdstate", "ios/std::basic_ios::set_rdbuf", "ios/std::basic_ios::setstate", "ios/std::basic_ios::swap", "ios/std::basic_ios::tie", "ios/std::basic_ios::widen", "ios/std::basic_ios::explicit operator bool"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ios [C++]", "std::basic_ios [C++], char_type", "std::basic_ios [C++], int_type", "std::basic_ios [C++], off_type", "std::basic_ios [C++], pos_type", "std::basic_ios [C++], traits_type", "std::basic_ios [C++], bad", "std::basic_ios [C++], clear", "std::basic_ios [C++], copyfmt", "std::basic_ios [C++], eof", "std::basic_ios [C++], exceptions", "std::basic_ios [C++], fail", "std::basic_ios [C++], fill", "std::basic_ios [C++], good", "std::basic_ios [C++], imbue", "std::basic_ios [C++], init", "std::basic_ios [C++], move", "std::basic_ios [C++], narrow", "std::basic_ios [C++], rdbuf", "std::basic_ios [C++], rdstate", "std::basic_ios [C++], set_rdbuf", "std::basic_ios [C++], setstate", "std::basic_ios [C++], swap", "std::basic_ios [C++], tie", "std::basic_ios [C++], widen"]
@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_ios Class
 The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type **Elem**, whose character traits are determined by the class **Traits**.  

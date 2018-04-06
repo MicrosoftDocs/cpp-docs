@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool"]
 dev_langs: ["C++"]
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_ptr Structure
 Represents a pointer to a scheduler. This class exists to allow the the specification of a shared lifetime by using shared_ptr or just a plain reference by using raw pointer.  

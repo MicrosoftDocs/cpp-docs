@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # checked_array_iterator Class
 The `checked_array_iterator` class allows you to transform an array or pointer into a checked iterator. Use this class as a wrapper (using the [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) function) for raw pointers or arrays as a targeted way to provide checking and to manage unchecked pointer warnings instead of globally silencing these warnings. If necessary, you can use the unchecked version of this class, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Strings Using PInvoke
 This topic explains how native functions that accept C-style strings can be called using the CLR string type System::String using .NET Framework Platform Invoke support. Visual C++ programmers are encouraged to use the C++ Interop features instead (when possible) because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL, and the source code is not available, then P/Invoke is the only option, but otherwise see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
@@ -24,8 +25,6 @@ This topic explains how native functions that accept C-style strings can be call
   
 ## Example  
  The following code consists of a unmanaged and a managed module. The unmanaged module is a DLL that defines a function called TakesAString that accepts a C-style ANSI string in the form of a char*. The managed module is a command-line application that imports the TakesAString function, but defines it as taking a managed System.String instead of a char\*. The <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute is used to indicate how the managed string should be marshaled when TakesAString is called.  
-  
- The managed module is compiled with /clr, but /clr:pure works as well.  
   
 ```  
 // TraditionalDll2.cpp  

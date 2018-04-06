@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::allocator<void>", "allocator<void>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["allocator<void> class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocator&lt;void&gt; Class
 A specialization of the template class allocator to type `void`, defining the types that make sense in this context.  

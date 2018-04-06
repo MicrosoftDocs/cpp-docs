@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Rules for Module-Definition Statements
 The following syntax rules apply to all statements in a .def file. Other rules that apply to specific statements are described with each statement.  

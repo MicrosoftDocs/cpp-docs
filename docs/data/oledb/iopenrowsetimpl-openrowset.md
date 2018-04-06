@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenRowset method"]
@@ -15,23 +15,21 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IOpenRowsetImpl::OpenRowset
 Opens and returns a rowset that includes all rows from a single base table or index.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenRowset(  
-   IUnknown* pUnkOuter,  
+```cpp
+HRESULT OpenRowset(IUnknown* pUnkOuter,  
    DBID* pTableID,  
    DBID* pIndexID,  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
-   IUnknown** ppRowset   
-);  
+   IUnknown** ppRowset);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Undo method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::Undo
 Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Undo(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT Undo(DBCOUNTITEM* pcRows = NULL,   
    HROW* phRow = NULL,   
-   DBROWSTATUS* pStatus = NULL    
-) throw( );  
+   DBROWSTATUS* pStatus = NULL) throw();  
 ```  
   
 #### Parameters  

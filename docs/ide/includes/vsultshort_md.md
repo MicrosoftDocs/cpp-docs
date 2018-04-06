@@ -1,3 +1,0 @@
----
----
-Visual Studio Ultimate

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["structured_task_group", "PPL/concurrency::structured_task_group", "PPL/concurrency::structured_task_group::structured_task_group", "PPL/concurrency::structured_task_group::cancel", "PPL/concurrency::structured_task_group::is_canceling", "PPL/concurrency::structured_task_group::run", "PPL/concurrency::structured_task_group::run_and_wait", "PPL/concurrency::structured_task_group::wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["structured_task_group class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # structured_task_group Class
 The `structured_task_group` class represents a highly structured collection of parallel work. You can queue individual parallel tasks to a `structured_task_group` using `task_handle` objects, and wait for them to complete, or cancel the task group before they have finished executing, which will abort any tasks that have not begun execution.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor directives, Null", "null directive", "preprocessor directives", "preprocessor, directives"]
 ms.assetid: df59990f-b420-43f3-b415-5c25493abeee
@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Null Directive
 The null preprocessor directive is a single number sign (**#**) alone on a line. It has no effect.  

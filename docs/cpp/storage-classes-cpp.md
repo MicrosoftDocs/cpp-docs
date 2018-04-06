@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Storage classes (C++)  
   
@@ -209,14 +210,12 @@ void DoSomething()
 ```  
   
 Things to note about the `thread_local` specifier:  
+
+- Dynamically initialized thread-local variables in DLLs may not be correctly initialized on all calling threads. For more information, see [thread](thread.md).
   
 -  The `thread_local` specifier may be combined with `static` or `extern`.  
   
 -  You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.  
-  
--  The use of `thread_local` may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports. 
-  
--  On XP systems, `thread_local` may not function correctly if a DLL uses `thread_local` data and it is loaded dynamically via `LoadLibrary`.  
   
 -  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both `static` and `extern`), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`. 
   

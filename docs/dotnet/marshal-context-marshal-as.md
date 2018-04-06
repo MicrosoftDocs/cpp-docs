@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context::marshal_as
 Performs the marshaling on a specific data object to convert it between a managed and a native data type.  

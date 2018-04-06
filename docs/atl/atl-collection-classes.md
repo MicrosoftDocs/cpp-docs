@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Collection Classes
 ATL provides many classes for storing and accessing data. Which class you decide to use depends on several factors, including:  

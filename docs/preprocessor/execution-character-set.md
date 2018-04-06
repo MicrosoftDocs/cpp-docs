@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragma execution_character_set"]
@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # execution_character_set
 Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.  

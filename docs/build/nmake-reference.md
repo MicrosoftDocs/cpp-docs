@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # NMAKE Reference
 The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] that builds projects based on commands that are contained in a description file.  

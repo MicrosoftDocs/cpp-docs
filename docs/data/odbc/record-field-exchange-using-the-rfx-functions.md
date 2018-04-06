@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using the RFX Functions
 This topic explains how to use the RFX function calls that make up the body of your `DoFieldExchange` override.  

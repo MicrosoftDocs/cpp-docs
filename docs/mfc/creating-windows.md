@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating Windows
 The framework automatically creates most of the windows you need in a framework program. [Document/View Creation](../mfc/document-view-creation.md) shows how the framework creates the frame windows associated with documents and views. But for special purposes you can create your own windows — including your own child windows of frame windows or views — in addition to the windows supplied by the framework.  

@@ -15,12 +15,13 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Add Resource Dialog Box
 Use this dialog box to add resources to a C++ Windows desktop application project.  
   
 > [!NOTE]
->  This information does not apply to resources in Windows Store apps. For more information about that, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This information does not apply to resources in Universal Windows Platform apps. For more information about that, see [App resources and the Resource Management System](/windows/uwp/app-resources/).  
   
  **Resource Type**  
  Specifies the kind of resource you want to create.  

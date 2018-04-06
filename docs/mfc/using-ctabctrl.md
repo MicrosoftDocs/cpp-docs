@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CTabCtrl
 A "tab control" is analogous to the dividers in a notebook or the labeled folders in a file cabinet. Use the tab control, represented by class [CTabCtrl](../mfc/reference/ctabctrl-class.md), to show multiple pages of information or controls to a user, one at a time, in a format that suggests a peer or logical relationship between each page.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Load Palette Colors Dialog Box (Image Editor for Icons)
 Use this dialog box to load special color palettes to use in your project. For more information, see [Saving and Loading Different Color Palettes](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  

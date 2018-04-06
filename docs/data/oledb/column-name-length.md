@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_NAME_LENGTH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_NAME_LENGTH macro"]
@@ -15,21 +15,15 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_NAME_LENGTH
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes column length.  
   
 ## Syntax  
   
-```  
-  
-COLUMN_NAME_LENGTH(  
-pszName  
-,   
-data  
-,   
-length  
- )  
+```cpp
+COLUMN_NAME_LENGTH(pszName, data, length)  
   
 ```  
   

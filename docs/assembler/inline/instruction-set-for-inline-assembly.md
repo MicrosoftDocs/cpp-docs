@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline assembly [C++], instruction set", "instruction set [C++], inline assembly", "assembler [C++], instruction set", "instruction set [C++]"]
 ms.assetid: a45b5b22-9b5f-4545-81ec-70eb8ea2ef9b
@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Instruction Set for Inline Assembly
 ## Microsoft Specific  

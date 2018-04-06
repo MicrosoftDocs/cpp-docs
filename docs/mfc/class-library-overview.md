@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Class Library Overview
 This overview categorizes and describes the classes in the Microsoft Foundation Class Library (MFC) version 9.0. The classes in MFC, taken together, constitute an application framework — the framework of an application written for the Windows API. Your programming task is to fill in the code that is specific to your application.  

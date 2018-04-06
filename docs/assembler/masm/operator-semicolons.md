@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["%3B%3B", "operator %3B%3B"]
 dev_langs: ["C++"]
 helpviewer_keywords: [";; operator", "operator ;;"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator ;;
 Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.  

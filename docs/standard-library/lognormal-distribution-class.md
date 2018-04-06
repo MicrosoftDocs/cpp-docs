@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::lognormal_distribution", "random/std::lognormal_distribution::reset", "random/std::lognormal_distribution::m", "random/std::lognormal_distribution::s", "random/std::lognormal_distribution::param", "random/std::lognormal_distribution::min", "random/std::lognormal_distribution::max", "random/std::lognormal_distribution::operator()", "random/std::lognormal_distribution::param_type", "random/std::lognormal_distribution::param_type::m", "random/std::lognormal_distribution::param_type::s", "random/std::lognormal_distribution::param_type::operator==", "random/std::lognormal_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::lognormal_distribution [C++]", "std::lognormal_distribution [C++], reset", "std::lognormal_distribution [C++], m", "std::lognormal_distribution [C++], s", "std::lognormal_distribution [C++], param", "std::lognormal_distribution [C++], min", "std::lognormal_distribution [C++], max", "std::lognormal_distribution [C++], param_type", "std::lognormal_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lognormal_distribution Class
 Generates a log normal distribution.  
@@ -70,7 +71,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the LogNormal distribution, see the Wolfram MathWorld article [LogNormal Distribution](http://go.microsoft.com/fwlink/LinkId=400917).  
+For detailed information about the LogNormal distribution, see the Wolfram MathWorld article [LogNormal Distribution](http://go.microsoft.com/fwlink/p/?linkid=400917).  
   
 ## Example  
   

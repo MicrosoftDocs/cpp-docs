@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["warning_CPP", "vc-pragma.warning"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, warning", "push pragma warning", "pop warning pragma", "warning pragma"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # warning Pragma
 Enables selective modification of the behavior of compiler warning messages.  

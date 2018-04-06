@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COleBusyDialog Class
 Used for the OLE Server Not Responding or Server Busy dialog boxes.  

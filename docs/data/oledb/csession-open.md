@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CSession::Open", "CSession::Open", "CSession.Open", "ATL.CSession.Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession::Open
 Opens a new session for the data source object.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CDataSource& ds,  
+```cpp
+HRESULT Open(const CDataSource& ds,  
    DBPROPSET *pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw( );  
+   ULONG ulPropSets = 0) throw();  
 ```  
   
 #### Parameters  

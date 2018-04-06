@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How the Framework Searches Message Maps
 The framework searches the message-map table for matches with incoming messages. Once you write a message-map entry for each message you want a class to handle and write the corresponding handlers, the framework calls your handlers automatically. The following topics explain message-map searching:  

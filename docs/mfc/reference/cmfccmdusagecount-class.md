@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCCmdUsageCount Class
 Tracks the usage count of Windows messages, such as when the user selects an item from a menu.  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and ATL
 A dual interface allows its methods to be accessed as dispinterface methods or as vtable methods. This section covers some of the features of dual interfaces from an ATL perspective.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["initializer_list/std::initializer_list::initializer_list", "initializer_list/std::initializer_list::begin", "initializer_list/std::initializer_list::end", "initializer_list/std::initializer_list::size"]
 dev_langs: ["C++"]
 ms.assetid: 1f2c0ff4-5636-4f79-b008-e75426e3d2ab
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::initializer_list::initializer_list", "std::initializer_list::begin", "std::initializer_list::end", "std::initializer_list::size"]
+ms.workload: ["cplusplus"]
 ---
 # initializer_list Class
 Provides access to an array of elements in which each member is of the specified type.  

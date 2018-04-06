@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.4.1 for Construct
 The **for** directive identifies an iterative work-sharing construct that specifies that the iterations of the associated loop will be executed in parallel. The iterations of the **for** loop are distributed across threads that already exist in the team executing the parallel construct to which it binds. The syntax of the **for** construct is as follows:  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Working with Large Data Items (ODBC)
 This topic applies to both the MFC ODBC classes and the MFC DAO classes.  

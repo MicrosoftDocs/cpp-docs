@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["condition_variable/std::condition_variable_any", "condition_variable/std::condition_variable_any::condition_variable_any", "condition_variable/std::condition_variable_any::notify_all", "condition_variable/std::condition_variable_any::notify_one", "condition_variable/std::condition_variable_any::wait", "condition_variable/std::condition_variable_any::wait_for", "condition_variable/std::condition_variable_any::wait_until"]
 dev_langs: ["C++"]
 ms.assetid: d8afe5db-1561-4ec2-8e85-21ea03ee4321
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::condition_variable_any", "std::condition_variable_any::condition_variable_any", "std::condition_variable_any::notify_all", "std::condition_variable_any::notify_one", "std::condition_variable_any::wait", "std::condition_variable_any::wait_for", "std::condition_variable_any::wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # condition_variable_any Class
 Use the class `condition_variable_any` to wait for an event that has any `mutex` type.  

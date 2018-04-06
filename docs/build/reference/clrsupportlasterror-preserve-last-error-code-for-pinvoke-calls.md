@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)
 **/CLRSUPPORTLASTERROR**, which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with **/clr**.  

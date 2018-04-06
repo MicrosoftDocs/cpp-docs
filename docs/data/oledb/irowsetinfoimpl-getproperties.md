@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "GetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetProperties method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl::GetProperties
 Returns the current settings for properties in the **DBPROPSET_ROWSET** group.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetProperties )(  
-   const ULONG cPropertyIDSets,  
+```cpp
+      STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,  
    const DBPROPIDSET rgPropertyIDSets[],  
    ULONG* pcPropertySets,  
-   DBPROPSET** prgPropertySets   
-);  
+   DBPROPSET** prgPropertySets);  
 ```  
   
 #### Parameters  

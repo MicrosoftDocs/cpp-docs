@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Properties
 Stock properties differ from custom properties in that they are already implemented by the class `COleControl`. `COleControl` contains predefined member functions that support common properties for the control. Some common properties include the control's caption and the foreground and background colors. For information on other stock properties, see [Stock Properties Supported by the Add Property Wizard](#_core_stock_properties_supported_by_classwizard) later in this article. The dispatch map entries for stock properties are always prefixed by **DISP_STOCKPROP**.  

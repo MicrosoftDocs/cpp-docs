@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __popcnt16, __popcnt, __popcnt64
 **Microsoft Specific**  
@@ -90,7 +91,7 @@ __popcnt16(0xff) = 8
 __popcnt16(0xffff) = 16  
 __popcnt(0x0) = 0  
 __popcnt(0xff) = 8  
-__oopcnt(0xffff) = 16  
+__popcnt(0xffff) = 16  
 __popcnt(0xffffffff) = 32  
 ```  
   

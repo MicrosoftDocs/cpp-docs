@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["strstream/std::strstream::freeze", "strstream/std::strstream::pcount", "strstream/std::strstream::rdbuf", "strstream/std::strstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::strstream [C++], freeze", "std::strstream [C++], pcount", "std::strstream [C++], rdbuf", "std::strstream [C++], str"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strstream Class
 Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).  

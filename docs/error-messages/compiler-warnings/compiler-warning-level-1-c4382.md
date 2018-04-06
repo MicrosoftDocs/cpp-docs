@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4382
 throwing 'type' : a type with __clrcall destructor or copy constructor can only be caught in /clr:pure module  

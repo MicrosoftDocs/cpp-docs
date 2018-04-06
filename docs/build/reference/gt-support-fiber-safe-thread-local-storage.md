@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GT (Support Fiber-Safe Thread-Local Storage)
 Supports fiber safety for data allocated using static thread-local storage, that is, data allocated with `__declspec(thread)`.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLLATION_CATALOG", "m_szCatalog", "CCollationInfo", "CCollations", "CHARACTER_SET_NAME", "CHARACTER_SET_SCHEMA", "m_szCharSetName", "m_szSchema", "CHARACTER_SET_CATALOG", "m_szCharSetSchema", "m_szCharSetCatalog", "m_szPadAttribute", "COLLATION_NAME", "COLLATION_SCHEMA", "m_szName", "COLLATIONS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szSchema", "COLLATION_SCHEMA", "m_szCharSetCatalog", "m_szCatalog", "COLLATIONS recordset", "COLLATION_CATALOG", "CCollationInfo parameter class", "m_szName", "COLLATION_NAME", "m_szPadAttribute", "CHARACTER_SET_NAME", "m_szCharSetName", "CHARACTER_SET_SCHEMA", "CHARACTER_SET_CATALOG", "m_szCharSetSchema", "CCollations typedef class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCollations, CCollationInfo
 Call the typedef class **CCollations** to implement its parameter class **CCollationInfo**.  

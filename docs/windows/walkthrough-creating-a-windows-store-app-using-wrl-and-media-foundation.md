@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Windows Store app using WRL and Media Foundation | Microsoft Docs"
+title: "Walkthrough: Creating a UWP app using WRL and Media Foundation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -13,9 +13,10 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
-# Walkthrough: Creating a Windows Store app using WRL and Media Foundation
-Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
+# Walkthrough: Creating a UWP app using WRL and Media Foundation
+Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.  
   
@@ -51,13 +52,13 @@ Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Univ
   
 -   Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.  
   
--   Use project references to make WRL components accessible to Universal Windows Platform apps.  
+-   Use project references to make WRL components accessible to UWP apps.  
   
 ### To use the WRL to create the Media Foundation grayscale transform component  
   
 1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, `MediaCapture`.  
   
-2.  Add a **DLL (Windows Store apps)** project to the solution. Name the project, for example, `GrayscaleTransform`.  
+2.  Add a **DLL (Universal Windows)** project to the solution. Name the project, for example, `GrayscaleTransform`.  
   
 3.  Add a **Midl File (.idl)** file to the project. Name the file, for example, `GrayscaleTransform.idl`.  
   

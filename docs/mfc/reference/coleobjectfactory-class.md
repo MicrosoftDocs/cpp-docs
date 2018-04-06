@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COleObjectFactory Class
 Implements the OLE class factory, which creates OLE objects such as servers, automation objects, and documents.  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
 Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and additional interfaces to be supported.  

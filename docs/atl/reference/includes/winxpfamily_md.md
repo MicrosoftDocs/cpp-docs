@@ -1,3 +1,1 @@
----
----
 Windows XP Home Edition, Windows XP Professional, Windows Server 2003

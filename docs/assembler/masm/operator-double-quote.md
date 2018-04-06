@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["&#34; &#34;", "operator &#34; &#34;"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["&#34; &#34; operator", "operator &#34; &#34;"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator &quot; &quot;
 Treats "*text*" as a string.  

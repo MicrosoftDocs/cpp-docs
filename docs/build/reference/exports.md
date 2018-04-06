@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # EXPORTS
 Introduces a section of one or more export definitions that specify the exported names or ordinals of functions or data. Each definition must be on a separate line.  

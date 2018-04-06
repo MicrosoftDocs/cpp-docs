@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["read-only provider"]
 ms.assetid: 22a8adb5-19da-43b5-9733-0ea72bb8684c
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing the Simple Read-Only Provider
 The extended example in this topic shows how to edit the wizard-created files to create a simple read-only provider that reads a set of two strings from a text file. To create this provider from the wizard files, add code to complete the following tasks:  

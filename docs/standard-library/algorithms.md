@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["libraries [C++], C++ algorithm conventions", "algorithms [C++], C++", "C++ Standard Library, algorithms", "algorithm template function C++ library conventions", "conventions [C++], C++ algorithm"]
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Algorithms
 Algorithms are a fundamental part of the C++ Standard Library. Algorithms do not work with containers themselves but rather with iterators. Therefore, the same algorithm can be used by most if not all of the C++ Standard Library containers. This section discusses the conventions and terminology of the C++ Standard Library algorithms.  
@@ -45,7 +46,7 @@ Algorithms are a fundamental part of the C++ Standard Library. Algorithms do not
   
  A sequence of elements designated by iterators in the range [`First`, `Last`) is a sequence ordered by operator**<** if, for each *N* in the range [0, `Last` - `First`) and for each *M* in the range (N, `Last` - `First`) the predicate !(\*(`First` + *M*) < \*(*First* + *N*)) is true. (Note that the elements are sorted in ascending order.) The predicate function **operator<**, or any replacement for it, must not alter either of its operands. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand. Moreover, it must impose a strict weak ordering on the operands it compares.  
   
- A sequence of elements designated by iterators in the range [`First`, `Last`) is a heap ordered by **operator<** if, for each *N* in the range [1, `Last` - `First`) the predicate !(\*`First` < \*(`First` + *N*)) is true. (The first element is the largest.) Its internal structure is otherwise known only to the template functions [make_heap](http://msdn.microsoft.com/Library/b09f795c-f368-4aa8-b57e-61ee6100ddc2), [pop_heap]--brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#pop_heap), and [push_heap]-brokenlink--(../Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#push_heap). As with an ordered sequence, the predicate function **operator<**, or any replacement for it, must not alter either of its operands, and it must impose a strict weak ordering on the operands it compares. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand.  
+ A sequence of elements designated by iterators in the range [`First`, `Last`) is a heap ordered by **operator<** if, for each *N* in the range [1, `Last` - `First`) the predicate !(\*`First` < \*(`First` + *N*)) is true. (The first element is the largest.) Its internal structure is otherwise known only to the template functions [make_heap](../standard-library/algorithm-functions.md#make_heap), [pop_heap](../standard-library/algorithm-functions.md#pop_heap), and [push_heap](../standard-library/algorithm-functions.md#push_heap). As with an ordered sequence, the predicate function **operator<**, or any replacement for it, must not alter either of its operands, and it must impose a strict weak ordering on the operands it compares. It must yield the same `bool` result every time it is evaluated, and it must yield the same result if a copy of either operand is substituted for the operand.  
   
  The C++ Standard Library algorithms are located in the [\<algorithm>](../standard-library/algorithm.md) and [\<numeric>](../standard-library/numeric.md) header files.  
   

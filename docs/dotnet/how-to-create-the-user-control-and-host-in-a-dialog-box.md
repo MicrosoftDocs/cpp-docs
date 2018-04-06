@@ -14,6 +14,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create the User Control and Host in a Dialog Box
 The steps in this article assume that you are creating a dialog-based ([CDialog Class](../mfc/reference/cdialog-class.md)) Microsoft Foundation Classes (MFC) project, but you can also add support for a Windows Forms control to an existing MFC dialog box.  

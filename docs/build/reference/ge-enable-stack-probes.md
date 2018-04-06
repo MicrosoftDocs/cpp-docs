@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Ge (Enable Stack Probes)
 Activates stack probes for every function call that requires storage for local variables.  

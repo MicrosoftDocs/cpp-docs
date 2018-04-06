@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: The ODBC Cursor Library
 This topic describes the ODBC Cursor Library and explains how to use it. For more information, see:  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RestartPosition method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::RestartPosition
 Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( RestartPosition )(  
-   HCHAPTER /* hReserved */   
-);  
+```cpp
+      STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
 ```  
   
 #### Parameters  

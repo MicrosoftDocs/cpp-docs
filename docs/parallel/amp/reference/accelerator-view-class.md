@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["accelerator_view", "AMPRT/accelerator_view", "AMPRT/Concurrency::accelerator_view:accelerator_view", "AMPRT/Concurrency::accelerator_view:create_marker", "AMPRT/Concurrency::accelerator_view:flush", "AMPRT/Concurrency::accelerator_view:get_accelerator", "AMPRT/Concurrency::accelerator_view:get_is_auto_selection", "AMPRT/Concurrency::accelerator_view:get_is_debug", "AMPRT/Concurrency::accelerator_view:get_queuing_mode", "AMPRT/Concurrency::accelerator_view:get_version", "AMPRT/Concurrency::accelerator_view:wait", "AMPRT/Concurrency::accelerator_view:accelerator", "AMPRT/Concurrency::accelerator_view:is_auto_selection", "AMPRT/Concurrency::accelerator_view:is_debug", "AMPRT/Concurrency::accelerator_view:queuing_mode", "AMPRT/Concurrency::accelerator_view:version"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator_view class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # accelerator_view Class
 Represents a virtual device abstraction on a C++ AMP data-parallel accelerator.  

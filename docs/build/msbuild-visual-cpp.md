@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MSBuild (Visual C++)
 You can use the **MSBuild** tool to build a Visual C++ application from the command prompt. The build process is controlled by the information in a project file (.vcxproj) that you can create and edit. The project file specifies build options based on build stages, conditions, and events.  

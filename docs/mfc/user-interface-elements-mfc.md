@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # User Interface Elements (MFC)
 For information about how to create the user interface for your application by using the Microsoft Foundation Class (MFC) Library, see the following topics.  

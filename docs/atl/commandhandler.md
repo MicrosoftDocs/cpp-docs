@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CommandHandler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CommandHandler function"]
@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CommandHandler
 `CommandHandler` is the function identified by the third parameter of the `COMMAND_HANDLER` macro in your message map.  

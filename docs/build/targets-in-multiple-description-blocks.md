@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Targets in Multiple Description Blocks
 To update a target in more than one description block using different commands, specify two consecutive colons (::) between targets and dependents.  

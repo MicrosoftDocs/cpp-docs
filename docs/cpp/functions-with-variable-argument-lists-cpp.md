@@ -14,12 +14,13 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Functions with Variable Argument Lists  (C++)
 Function declarations in which the last member of  is the ellipsis (...) can take a variable number of arguments. In these cases, C++ provides type checking only for the explicitly declared arguments. You can use variable argument lists when you need to make a function so general that even the number and types of arguments can vary. The  family of functions is an example of functions that use variable argument lists.`printf`*argument-declaration-list*  
   
 ## Functions with variable arguments  
- To access arguments after those declared, use the macros contained in the standard include file STDARG.H as described below.  
+ To access arguments after those declared, use the macros contained in the standard include file \<stdarg.h> as described below.  
   
  **Microsoft Specific**  
   
@@ -31,9 +32,9 @@ Function declarations in which the last member of  is the ellipsis (...) can tak
   
  When arguments of type `char` are passed as variable arguments, they are converted to type `int`. Similarly, when arguments of type **float** are passed as variable arguments, they are converted to type **double**. Arguments of other types are subject to the usual integral and floating-point promotions. See [Standard Conversions](standard-conversions.md) for more information.  
   
- Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the STDARG.H include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.  
+ Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the \<stdarg.h> include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.  
   
- The following example shows how the macros work together with the type (declared in STDARG.H): 
+ The following example shows how the macros work together with the type (declared in \<stdarg.h>): 
   
 ```  
 // variable_argument_lists.cpp  

@@ -15,10 +15,11 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Property Pages
 
-This topic discusses the following properties on the **General** linker property page:
+This topic discusses the following properties on the **General** linker property page. For the Linux version of this page, see [Linker Properties (Linux C++)](../linux/prop-pages/linker-linux.md).
 
 ## General page properties
 

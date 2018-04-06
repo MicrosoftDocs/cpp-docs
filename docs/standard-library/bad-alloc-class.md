@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["new/std::bad_alloc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["bad_alloc class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bad_alloc Class
 The class describes an exception thrown to indicate that an allocation request did not succeed.  

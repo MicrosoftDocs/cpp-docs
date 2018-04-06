@@ -6,19 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::WrongThreadException"
-  - "VCCORLIB/Platform::WrongThreadException::WrongThreadException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::WrongThreadException"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::WrongThreadException", "VCCORLIB/Platform::WrongThreadException::WrongThreadException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::WrongThreadException"]
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::WrongThreadException Class
 Thrown when a thread calls by way of an interface pointer for a proxy object that doesn't belong to the thread's apartment.  

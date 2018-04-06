@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iomanip header"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;iomanip&gt;
 Include the `iostreams` standard header `<iomanip>` to define several manipulators that each take a single argument.  

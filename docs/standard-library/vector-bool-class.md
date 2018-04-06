@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vector<bool>", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::pointer", "vector/std::vector::flip", "vector/std::vector::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt; Class
 The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type `bool`. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one `bool` value per bit.  

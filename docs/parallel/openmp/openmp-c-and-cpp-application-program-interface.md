@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OpenMP C and C++ Application Program Interface
 Discusses the OpenMP C and C++ API, as documented in the version 2.0 specification from the OpenMP Architecture Review Board.  

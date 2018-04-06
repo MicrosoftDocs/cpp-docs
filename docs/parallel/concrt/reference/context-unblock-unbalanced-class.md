@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced::context_unblock_unbalanced"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["context_unblock_unbalanced class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # context_unblock_unbalanced Class
 This class describes an exception thrown when calls to the `Block` and `Unblock` methods of a `Context` object are not properly paired.  

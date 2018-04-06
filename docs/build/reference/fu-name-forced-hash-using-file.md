@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /FU (Name Forced #using File)
 A compiler option that you can use as an alternative to passing a file name to [#using Directive](../../preprocessor/hash-using-directive-cpp.md) in source code.  

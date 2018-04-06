@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenWithPromptFileName method"]
@@ -15,20 +15,17 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::OpenWithPromptFileName
 This method prompts the user with a dialog box, then opens a data source using the file specified by the user.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenWithPromptFileName(   
-   HWND hWnd = GetActiveWindow(   
-   ),   
+```cpp
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),   
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,   
-   LPCOLESTR szInitialDirectory = NULL    
-) throw( );  
+   LPCOLESTR szInitialDirectory = NULL) throw();  
 ```  
   
 #### Parameters  

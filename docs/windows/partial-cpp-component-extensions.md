@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # partial  (C++ Component Extensions)
 The `partial` keyword enables different parts of the same ref class to be authored independently and in different files.  

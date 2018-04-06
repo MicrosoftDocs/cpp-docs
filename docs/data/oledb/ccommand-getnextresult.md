@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetNextResult method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand::GetNextResult
 Fetches the next result set if one is available.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetNextResult(  
-   DBROWCOUNT* pulRowsAffected,  
-   bool bBind = true   
-) throw( );  
+```cpp
+HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,  
+   bool bBind = true) throw();  
 ```  
   
 #### Parameters  

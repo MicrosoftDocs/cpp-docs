@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IDBInitializeImpl<T>", "ATL::IDBInitializeImpl<T>", "IDBInitializeImpl", "ATL::IDBInitializeImpl", "ATL.IDBInitializeImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBInitializeImpl class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
 Provides an implementation for the [IDBInitialize](https://msdn.microsoft.com/en-us/library/ms713706.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize  
 ```  

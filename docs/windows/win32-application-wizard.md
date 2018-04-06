@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Win32 Application Wizard
 The Visual C++ Win32 Application Wizard allows you to create any of four types of projects (listed in the heading in the table below). In each case, you can specify additional options that are appropriate for the type of project you open. The following table indicates which options are available for each application type.  

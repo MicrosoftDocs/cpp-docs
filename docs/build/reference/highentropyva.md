@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /HIGHENTROPYVA
 Specifies whether the executable image supports high-entropy 64-bit address space layout randomization (ASLR).  

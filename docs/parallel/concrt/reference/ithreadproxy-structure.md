@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IThreadProxy", "CONCRTRM/concurrency::IThreadProxy", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::GetId", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchOut", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchTo", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::YieldToSystem"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IThreadProxy structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IThreadProxy Structure
 An abstraction for a thread of execution. Depending on the `SchedulerType` policy key of the scheduler you create, the Resource Manager will grant you a thread proxy that is backed by either a regular Win32 thread or a user-mode schedulable (UMS) thread. UMS threads are supported on 64-bit operating systems with version Windows 7 and higher.  

@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSocketFile Class
 A `CFile` object used for sending and receiving data across a network via Windows Sockets.  

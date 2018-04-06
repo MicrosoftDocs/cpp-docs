@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicParameterAccessor::SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamStatus", "ATL::CDynamicParameterAccessor::SetParamStatus", "CDynamicParameterAccessor.SetParamStatus", "SetParamStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParamStatus method"]
@@ -15,19 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::SetParamStatus
 Sets the status of the specified parameter stored in the buffer.  
   
 ## Syntax  
   
-```  
-  
-      bool SetParamStatus(  
-   DBORDINAL nParam,  
-   DBSTATUS status  
-);  
-```  
+```
+bool SetParamStatus(DBORDINAL nParam,  
+   DBSTATUS status);  ```  
   
 #### Parameters  
  `nParam`  

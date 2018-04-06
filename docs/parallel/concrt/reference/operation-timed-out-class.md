@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["operation_timed_out", "CONCRT/concurrency::operation_timed_out", "CONCRT/concurrency::operation_timed_out::operation_timed_out"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operation_timed_out class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operation_timed_out Class
 This class describes an exception thrown when an operation has timed out.  

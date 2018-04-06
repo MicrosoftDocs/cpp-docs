@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files"]
 ms.assetid: 6e1ac94b-eb90-4abf-82b3-06944b947ebc
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Wizard-Generated Files
 The ATL OLE DB Provider Wizard generates the following files. The following topics use the short name "MyProvider", but the exact file names depend on the choice you made when creating the provider.  

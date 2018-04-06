@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_SECURE_SCL_THROWS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "iterators, checked", "checked iterators"]
@@ -15,6 +15,7 @@ caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Checked Iterators
 Checked iterators ensure that the bounds of your container are not overwritten. Checked iterators apply to both release builds and debug builds. For more information about how to use debug iterators when you compile in debug mode, see [Debug Iterator Support](../standard-library/debug-iterator-support.md).  

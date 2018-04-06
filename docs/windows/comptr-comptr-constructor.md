@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ComPtr Constructor
 Intializes a new instance of the ComPtr class. Overloads provide default, copy, move, and conversion constructors.  
@@ -26,18 +27,14 @@ WRL_NOTHROW ComPtr();
 WRL_NOTHROW ComPtr(  
    decltype(__nullptr)  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    _In_opt_ U *other  
 );  
 WRL_NOTHROW ComPtr(  
    const ComPtr& other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    const ComPtr<U> &other,  
    typename ENABLE_IF<__is_convertible_to(U*,  
@@ -46,9 +43,7 @@ WRL_NOTHROW ComPtr(
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr &&other  
 );  
-template<  
-   class U  
->  
+template<class U>  
 WRL_NOTHROW ComPtr(  
    _Inout_ ComPtr<U>&& other,  
    typename ENABLE_IF<__is_convertible_to(U*,  

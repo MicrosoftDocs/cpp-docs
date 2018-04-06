@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDataSource", "ATL::CDataSource", "CDataSource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource Class
 Corresponds to an OLE DB data source object, which represents a connection through a provider to a data source.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDataSource  
 ```  
   

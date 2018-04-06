@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorRowset.Bind", "CAccessorRowset::Bind"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Bind method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset::Bind
 Creates the bindings if you specified **bBind** as false in [CCommand::Open](../../data/oledb/ccommand-open.md).  
   
 ## Syntax  
   
-```  
-  
-HRESULT Bind( );  
+```cpp
+HRESULT Bind();  
   
 ```  
   

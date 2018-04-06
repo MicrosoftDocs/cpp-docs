@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_value class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # invalid_scheduler_policy_value Class
 This class describes an exception thrown when a policy key of a `SchedulerPolicy` object is set to an invalid value for that key.  

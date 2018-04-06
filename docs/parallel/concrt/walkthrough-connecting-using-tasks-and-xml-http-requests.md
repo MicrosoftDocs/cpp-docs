@@ -8,27 +8,28 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["connecting to web services, Windows Store apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
+helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Connecting Using Tasks and XML HTTP Requests
-This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. By combining `IXMLHTTPRequest2` together with tasks, you can write code that composes with other tasks. For example, you can use the download task as part of a chain of tasks. The download task can also respond when work is canceled.  
+This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app. By combining `IXMLHTTPRequest2` together with tasks, you can write code that composes with other tasks. For example, you can use the download task as part of a chain of tasks. The download task can also respond when work is canceled.  
   
 > [!TIP]
->  You can also use the C++ REST SDK to perform HTTP requests from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ app or from a desktop C++ app. For more info, see [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk).  
+>  You can also use the C++ REST SDK to perform HTTP requests from a UWP app using C++ app or from a desktop C++ app. For more info, see [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk).  
   
- For more information about tasks, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about how to use tasks in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, see [Asynchronous programming in C++](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31) and [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+ For more information about tasks, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md). For more information about how to use tasks in a UWP app, see [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) and [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
   
- This document first shows how to create `HttpRequest` and its supporting classes. It then shows how to use this class from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app that uses C++ and XAML.  
+ This document first shows how to create `HttpRequest` and its supporting classes. It then shows how to use this class from a UWP app that uses C++ and XAML.  
   
  For a more complete example that uses the `HttpReader` class described in this document, see [Developing Bing Maps Trip Optimizer, a Windows Store app in JavaScript and C++](http://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30). For another example that uses `IXMLHTTPRequest2` but does not use tasks, see [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35).  
   
 > [!TIP]
->  `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` are the interfaces that we recommend for use in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. You can also adapt this example for use in a desktop app.  
+>  `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` are the interfaces that we recommend for use in a UWP app. You can also adapt this example for use in a desktop app.  
   
 ## Prerequisites  
   
@@ -59,8 +60,8 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
      [!code-cpp[concrt-using-ixhr2#3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_3.cpp)]  
   
-## Using the HttpRequest Class in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] App  
- This section demonstrates how to use the `HttpRequest` class in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. The app provides an input box that defines a URL resource, and button commands that perform GET and POST operations, and a button command that cancels the current operation.  
+## Using the HttpRequest Class in a UWP App  
+ This section demonstrates how to use the `HttpRequest` class in a UWP app. The app provides an input box that defines a URL resource, and button commands that perform GET and POST operations, and a button command that cancels the current operation.  
   
 #### To Use the HttpRequest Class  
   
@@ -103,7 +104,7 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
   
  Here is the running app:  
   
- ![The running Windows Store app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
+ ![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
   
 ## Next Steps  
  [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)  
@@ -111,8 +112,8 @@ This example shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/e
 ## See Also  
  [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [Cancellation in the PPL](cancellation-in-the-ppl.md)   
- [Asynchronous programming in C++](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31)   
- [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
+ [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)   
+ [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
  [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
  [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)   
  [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)

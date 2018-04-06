@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN028: Context-Sensitive Help Support
 This note describes the rules for assigning Help contexts IDs and other help issues in MFC. Context-sensitive help support requires the help compiler that is available in Visual C++.  

@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /errorReport (Report Internal Compiler Errors)
 Lets you provide internal compiler error (ICE) information directly to Microsoft.  
@@ -53,7 +54,7 @@ Lets you provide internal compiler error (ICE) information directly to Microsoft
   
 3.  Click the **Advanced** property page.  
   
-4.  Modify the **Error Reporting**property.  
+4.  Modify the **Error Reporting** property.  
   
 ### To set this compiler option programmatically  
   

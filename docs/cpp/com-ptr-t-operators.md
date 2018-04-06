@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t Operators
 For information about the `_com_ptr_t` operators, see [_com_ptr_t Class](../cpp/com-ptr-t-class.md).  

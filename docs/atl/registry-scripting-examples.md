@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Registry Scripting Examples
 The scripting examples in this topic demonstrate how to add a key to the system registry, register the Registrar COM server, and specify multiple parse trees.  

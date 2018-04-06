@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Active Server Page Component Wizard
 This wizard inserts into the project an Active Server Pages (ASP) component. The Microsoft Internet Information Services (IIS) uses ASP components as part of its enhanced Web page development architecture.  

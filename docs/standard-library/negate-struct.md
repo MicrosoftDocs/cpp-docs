@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["negate struct", "negate class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # negate Struct
 A predefined function object that performs the arithmetic negation operation (unary `operator-`) on its argument.  

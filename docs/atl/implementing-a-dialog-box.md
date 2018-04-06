@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementing a Dialog Box
 There are two ways to add a dialog box to your ATL project: use the ATL Dialog Wizard or add it manually.  

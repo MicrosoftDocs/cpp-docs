@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits::GetInvalidValue Method
 Specializes a CriticalSection template so that the template is always invalid.  

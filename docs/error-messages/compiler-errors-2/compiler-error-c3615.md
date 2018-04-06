@@ -10,6 +10,7 @@ ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3615
 

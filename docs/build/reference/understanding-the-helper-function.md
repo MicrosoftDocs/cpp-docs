@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Understanding the Helper Function
 The helper function for linker-supported delayed loading is what actually loads the DLL at run time. You can modify the helper function to customize its behavior by writing your own function and linking it to your program instead of using the supplied helper function in Delayimp.lib. One helper function serves all delay loaded DLLs.  

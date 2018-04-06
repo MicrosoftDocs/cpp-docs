@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # new (new slot in vtable)  (C++ Component Extensions)
 The `new` keyword indicates that a virtual member will get a new slot in the vtable.  

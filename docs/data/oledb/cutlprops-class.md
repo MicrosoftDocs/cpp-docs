@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CUtlProps"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CUtlProps class"]
@@ -15,13 +15,14 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps Class
 Implements properties for a variety of OLE DB property interfaces (for example, `IDBProperties`, `IDBProperties`, and `IRowsetInfo`).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < class T >  
 class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase  
 ```  

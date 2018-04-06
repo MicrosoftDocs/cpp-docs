@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBSchemaRowsetImpl::CreateSchemaRowset", "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateSchemaRowset method"]
@@ -15,27 +15,23 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::CreateSchemaRowset
 Implements a COM object creator function for the object specified by the template parameter.  
   
 ## Syntax  
   
-```  
-  
-      template < class   
-      SchemaRowsetClass  
-       >  
-HRESULT CreateSchemaRowset(  
-   IUnknown *pUnkOuter,  
+```cpp
+template template <class SchemaRowsetClass>  
+HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
    IUnknown** ppRowset,  
-   SchemaRowsetClass*& pSchemaRowset   
-);  
+   SchemaRowsetClass*& pSchemaRowset);  
 ```  
   
 #### Parameters  

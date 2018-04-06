@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["functional/std::function", "functional/std::function::result_type", "functional/std::function::assign", "functional/std::function::swap", "functional/std::function::target", "functional/std::function::target_type", "functional/std::function::operator unspecified", "functional/std::function::operator()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::function [C++]", "std::function [C++], result_type", "std::function [C++], assign", "std::function [C++], swap", "std::function [C++], target", "std::function [C++], target_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # function Class
 Wrapper for a callable object.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::binomial_distribution", "random/std::binomial_distribution::reset", "random/std::binomial_distribution::p", "random/std::binomial_distribution::t", "random/std::binomial_distribution::param", "random/std::binomial_distribution::min", "random/std::binomial_distribution::max", "random/std::binomial_distribution::operator()", "random/std::binomial_distribution::param_type", "random/std::binomial_distribution::param_type::p", "random/std::binomial_distribution::param_type::t", "random/std::binomial_distribution::param_type::operator==", "random/std::binomial_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::binomial_distribution [C++]", "std::binomial_distribution [C++], reset", "std::binomial_distribution [C++], p", "std::binomial_distribution [C++], t", "std::binomial_distribution [C++], param", "std::binomial_distribution [C++], min", "std::binomial_distribution [C++], max", "std::binomial_distribution [C++], param_type", "std::binomial_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # binomial_distribution Class
 Generates a binomial distribution.  
@@ -77,7 +78,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](http://go.microsoft.com/fwlink/LinkId=398469).  
+For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](http://go.microsoft.com/fwlink/p/?linkid=398469).  
   
 ## Example  
   

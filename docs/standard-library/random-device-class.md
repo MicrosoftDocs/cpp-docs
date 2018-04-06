@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::random_device", "random/std::random_device::min", "random/std::random_device::max", "random/std::random_device::entropy", "random/std::random_device::operator()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::random_device [C++]", "std::random_device [C++], min", "std::random_device [C++], max", "std::random_device [C++], entropy", "std::random_device [C++], entropy"]
@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # random_device Class
 Generates a random sequence from an external device.  

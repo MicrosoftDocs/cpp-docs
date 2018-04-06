@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Delimiters for Visual C++ Documentation Tags
 The use of documentation tags requires delimiters, which indicate to the compiler where a documentation comment begins and ends.  

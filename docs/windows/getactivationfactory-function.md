@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # GetActivationFactory Function
 Retrieves an activation factory for the type specified by the template parameter.  
@@ -22,9 +23,7 @@ Retrieves an activation factory for the type specified by the template parameter
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 inline HRESULT GetActivationFactory(  
    _In_ HSTRING activatableClassId,  
    _Out_ Microsoft::WRL::Details::ComPtrRef<T> factory  

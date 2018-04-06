@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xutility/std::output_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["output_iterator_tag class", "output_iterator_tag struct"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # output_iterator_tag Struct
 A class that provides a return type for **iterator_category** function that represents an output iterator.  

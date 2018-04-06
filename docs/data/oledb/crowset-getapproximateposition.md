@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetApproximatePosition method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::GetApproximatePosition
 Returns the approximate position of a row corresponding to a bookmark.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetApproximatePosition(   
-   const CBookmarkBase* pBookmark,   
+```cpp
+HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,   
    DBCOUNTITEM* pPosition,   
-   DBCOUNTITEM* pcRows    
-) throw( );  
+   DBCOUNTITEM* pcRows) throw();  
 ```  
   
 #### Parameters  

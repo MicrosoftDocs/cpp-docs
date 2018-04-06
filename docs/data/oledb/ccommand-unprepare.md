@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Unprepare method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand::Unprepare
 Discards the current command execution plan.  
   
 ## Syntax  
   
-```  
-  
-HRESULT CCommandBase::Unprepare( ) throw( );  
+```cpp
+HRESULT CCommandBase::Unprepare() throw();  
   
 ```  
   

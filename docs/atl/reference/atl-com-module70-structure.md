@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::_ATL_COM_MODULE70", "ATL._ATL_COM_MODULE70", "_ATL_COM_MODULE70"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_COM_MODULE70 structure", "ATL_COM_MODULE70 structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_COM_MODULE70 Structure
 Used by COM-related code in ATL.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "FreeRecordMemory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FreeRecordMemory method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset::FreeRecordMemory
 Frees any columns in the current record that need to be freed.  
   
 ## Syntax  
   
-```  
-  
-void FreeRecordMemory( );  
+```cpp
+void FreeRecordMemory();  
   
 ```  
   

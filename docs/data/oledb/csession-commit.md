@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Commit method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession::Commit
 Commits the transaction.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Commit(   
-   BOOL bRetaining = FALSE,   
+```cpp
+HRESULT Commit(BOOL bRetaining = FALSE,   
    DWORD grfTC = XACTTC_SYNC,   
-   DWORD grfRM = 0    
-) const throw( );  
+   DWORD grfRM = 0) const throw();  
 ```  
   
 #### Parameters  

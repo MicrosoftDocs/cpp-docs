@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor::SetBlobHandling", "CDynamicAccessor.SetBlobHandling", "ATL::CDynamicAccessor::SetBlobHandling", "SetBlobHandling", "ATL.CDynamicAccessor.SetBlobHandling"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetBlobHandling method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::SetBlobHandling
 Sets the BLOB handling value for the current row.  
   
 ## Syntax  
   
-```  
-  
-      bool SetBlobHandling(  
-   DBBLOBHANDLINGENUM eBlobHandling   
-);  
+```cpp
+      bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);  
 ```  
   
 #### Parameters  

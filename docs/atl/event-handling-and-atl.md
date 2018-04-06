@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Event Handling and ATL
 This section shows how to sink events using ATL. It covers the principles of COM event handling and the specifics of sinking events using the support provided by ATL.  

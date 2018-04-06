@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["reference, OLE DB provider templates", "OLE DB, provider templates", "templates, OLE DB provider", "OLE DB providers, templates"]
 ms.assetid: c90b7523-dbff-431c-be06-eed9055710d2
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with OLE DB Provider Templates
 To learn how to work with the OLE DB provider templates, see the following topics:  

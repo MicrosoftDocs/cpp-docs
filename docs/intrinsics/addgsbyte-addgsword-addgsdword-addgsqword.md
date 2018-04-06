@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__addgsdword", "__addgsqword", "__addgsword_cpp", "__addgsword", "__addgsbyte_cpp", "__addgsqword_cpp", "__addgsbyte", "__addgsdword_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__addgsword intrinsic", "__addgsqword intrinsic", "__addgsdword intrinsic", "__addgsbyte intrinsic"]
@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __addgsbyte, __addgsword, __addgsdword, __addgsqword
 **Microsoft Specific**  

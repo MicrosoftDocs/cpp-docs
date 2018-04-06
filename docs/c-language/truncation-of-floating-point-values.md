@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Truncation of Floating-Point Values
 **ANSI 3.2.1.4** The direction of truncation or rounding when a floating-point number is converted to a narrower floating-point number  

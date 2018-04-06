@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Selection Statements (C++)
 The C++ selection statements, [if](../cpp/if-else-statement-cpp.md) and [switch](../cpp/switch-statement-cpp.md), provide a means to conditionally execute sections of code.  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::CopyTo Method
 Copies the current or specified interface associated with this ComPtr to the specified pointer.  
@@ -30,10 +31,8 @@ HRESULT CopyTo(
    REFIID riid,  
    _Deref_out_ void** ptr  
 ) const;  
-template<  
-   typename U  
->  
-  
+
+template<typename U>  
 HRESULT CopyTo(  
    _Deref_out_ U** ptr  
 ) const;  

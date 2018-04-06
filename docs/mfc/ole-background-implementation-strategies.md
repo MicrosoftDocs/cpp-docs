@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE Background: Implementation Strategies
 Depending on your application, there are four possible implementation strategies for adding OLE support:  

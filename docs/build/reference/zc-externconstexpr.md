@@ -1,25 +1,17 @@
 ---
 title: "/Zc:externConstexpr (Enable extern constexpr variables) | Microsoft Docs"
 ms.custom: ""
-ms.date: "9/29/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
-ms.tgt_pltfrm: ""
+ms.date: "02/28/2018"
+ms.technology: ["cpp-tools"]
 ms.topic: "article"
-f1_keywords: 
-  - "/Zc:externConstexpr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc:externConstexpr compiler option (C++)"
-  - "extern constexpr variables (C++)"
+f1_keywords: ["/Zc:externConstexpr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:externConstexpr (Enable extern constexpr variables)
 
@@ -27,11 +19,11 @@ The **/Zc:externConstexpr** compiler option tells the compiler to conform to the
 
 ## Syntax
 
-> /Zc:externConstexpr[-]
+> **/Zc:externConstexpr**[**-**]
 
 ## Remarks
 
-The **/Zc:externConstexpr** compiler option causes the compiler to apply external linkage to variables declared by using `extern constexpr`. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.5. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to `constexpr` variables even if the `extern` keyword is used.
+The **/Zc:externConstexpr** compiler option causes the compiler to apply external linkage to variables declared by using `extern constexpr`. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to `constexpr` variables even if the `extern` keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The [/permissive-](permissive-standards-conformance.md) option does not enable **/Zc:externConstexpr**.
 
 If a header file contains a variable declared `extern constexpr`, it must be marked [__declspec(selectany)](../../cpp/selectany.md) in order to merge the duplicate declarations into a single instance in the linked binary. Otherwise you may see linker errors, for example, LNK2005, for violations of the one-definition rule.
 
@@ -39,7 +31,7 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Under **Configuration Properties**, expand **C/C++** and then choose **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Add **/Zc:externConstexpr** or **/Zc:externConstexpr-** to the **Additional options:** pane.
 

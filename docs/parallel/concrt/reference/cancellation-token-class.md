@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::deregister_callback", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_cancelable", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_canceled", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::none", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::register_callback"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cancellation_token Class
 The `cancellation_token` class represents the ability to determine whether some operation has been requested to cancel. A given token can be associated with a `task_group`, `structured_task_group`, or `task` to provide implicit cancellation. It can also be polled for cancellation or have a callback registered for if and when the associated `cancellation_token_source` is canceled.  

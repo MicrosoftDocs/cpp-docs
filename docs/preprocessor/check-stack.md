@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.check_stack", "check_stack_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["check_stack pragma", "pragmas, check_stack", "pragmas, check_stack usage table"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # check_stack
 Instructs the compiler to turn off stack probes if **off** (or **-**) is specified, or to turn on stack probes if **on** (or **+**) is specified.  

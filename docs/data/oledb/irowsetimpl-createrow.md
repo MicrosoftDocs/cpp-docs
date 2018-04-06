@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateRow method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::CreateRow
 A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new **HROW**.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateRow(  
-   DBROWOFFSET lRowsOffset,  
-   DBCOUNTITEM& cRowsObtained,  
-   HROW* rgRows   
-);  
+```
+HRESULT CreateRow(DBROWOFFSET lRowsOffset,  
+  DBCOUNTITEM& cRowsObtained,  
+   HROW* rgRows);  
 ```  
   
 #### Parameters  

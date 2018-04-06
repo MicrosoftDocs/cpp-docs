@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Schedule Groups to Influence Order of Execution
 In the Concurrency Runtime, the order in which tasks are scheduled is non-deterministic. However, you can use scheduling policies to influence the order in which tasks run. This topic shows how to use schedule groups together with the [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) scheduler policy to influence the order in which tasks run.  

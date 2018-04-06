@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["propagator_block", "AGENTS/concurrency::propagator_block", "AGENTS/concurrency::propagator_block::propagator_block", "AGENTS/concurrency::propagator_block::propagate", "AGENTS/concurrency::propagator_block::send", "AGENTS/concurrency::propagator_block::decline_incoming_messages", "AGENTS/concurrency::propagator_block::initialize_source_and_target", "AGENTS/concurrency::propagator_block::link_source", "AGENTS/concurrency::propagator_block::process_input_messages", "AGENTS/concurrency::propagator_block::propagate_message", "AGENTS/concurrency::propagator_block::register_filter", "AGENTS/concurrency::propagator_block::remove_network_links", "AGENTS/concurrency::propagator_block::send_message", "AGENTS/concurrency::propagator_block::unlink_source", "AGENTS/concurrency::propagator_block::unlink_sources"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["propagator_block class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # propagator_block Class
 The `propagator_block` class is an abstract base class for message blocks that are both a source and target. It combines the functionality of both the `source_block` and `target_block` classes.  

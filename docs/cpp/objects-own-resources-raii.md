@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Objects Own Resources (RAII)
 Make sure that objects own resources. This principle is also known as “resource acquisition is initialization” or “RAII.”  

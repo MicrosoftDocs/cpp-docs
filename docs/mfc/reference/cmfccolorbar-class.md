@@ -15,6 +15,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorBar Class
 The `CMFCColorBar` class represents a docking control bar that can select colors in a document or application.  

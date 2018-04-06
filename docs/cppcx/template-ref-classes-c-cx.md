@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: a24d5f45-8dbb-4540-958f-c76c90d8ed93
 caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Template ref classes (C++/CX)
 C++ templates are not published to metadata and therefore cannot have public or protected accessibility in your program. You can, of course, use standard C++ templates internally in your program. In addition, you can define a private ref class as a template and you can declare an explicitly specialized template ref class as a private member in a public ref class.  

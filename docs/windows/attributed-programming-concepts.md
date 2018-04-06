@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributed Programming Concepts
 Visual C++ includes a variety of material to help you use attributes in your programs. Attributes, a new feature in Visual C++, are designed to simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider dynamic-link libraries (DLL) to insert code or modify the code in the generated object files. There are attributes that aid in the creation of .idl files, interfaces, type libraries, and other COM elements. In the integrated development environment (IDE), attributes are supported by the wizards and by the Properties window.  
@@ -46,5 +47,3 @@ Visual C++ includes a variety of material to help you use attributes in your pro
  [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  
  Links to new C++ keywords related to attributed programming.  
   
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
- Provides links to topics describing conceptual information about the Visual C++ libraries and topics discussing various coding technologies and techniques.

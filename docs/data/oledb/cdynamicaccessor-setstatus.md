@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor::SetStatus", "ATL::CDynamicAccessor::SetStatus", "CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetStatus method"]
@@ -15,26 +15,22 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::SetStatus
 Sets the status of the specified column.  
   
 ## Syntax  
   
-```  
-  
-      bool SetStatus(   
-   DBORDINAL nColumn,   
-   DBSTATUS status    
-) throw( );  
-bool SetStatus(   
-   const CHAR* pColumnName,   
-   DBSTATUS status    
-) throw( );  
-bool SetStatus(   
-   const WCHAR* pColumnName,   
-   DBSTATUS status    
-) throw( );  
+```
+bool SetStatus(DBORDINAL nColumn,   
+   DBSTATUS status)throw();  
+
+bool SetStatus(const CHAR* pColumnName,   
+   DBSTATUS status) throw();  
+
+bool SetStatus(const WCHAR* pColumnName,   
+   DBSTATUS status) throw();  
 ```  
   
 #### Parameters  

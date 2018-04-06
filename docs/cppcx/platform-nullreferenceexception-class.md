@@ -6,19 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::NullReferenceException"
-  - "VCCORLIB/Platform::NullReferenceException::NullReferenceException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::NullReferenceException"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::NullReferenceException", "VCCORLIB/Platform::NullReferenceException::NullReferenceException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::NullReferenceException"]
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::NullReferenceException Class
 Thrown when there is an attempt to dereference a null object reference.  

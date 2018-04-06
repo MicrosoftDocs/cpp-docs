@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["POPCONTEXT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["POPCONTEXT directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # POPCONTEXT
 Restores part or all of the current `context` (saved by the [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive). The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.  

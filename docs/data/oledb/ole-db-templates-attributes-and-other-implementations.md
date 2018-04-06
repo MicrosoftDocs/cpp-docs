@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, implementations", "OLE DB templates, about OLE DB templates", "OLE DB templates"]
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Templates, Attributes, and Other Implementations
 ## ATL OLE DB Templates  

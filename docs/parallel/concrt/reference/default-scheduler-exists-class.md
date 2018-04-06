@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists::default_scheduler_exists"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["default_scheduler_exists class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # default_scheduler_exists Class
 This class describes an exception thrown when the `Scheduler::SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process.  

@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # less (STL/CLR)
 The template class describes a functor that, when called, returns true only if the first argument is less than the second. You use it specify a function object in terms of its argument type.  

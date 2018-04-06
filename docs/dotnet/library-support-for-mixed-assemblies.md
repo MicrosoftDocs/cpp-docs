@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Library Support for Mixed Assemblies
 Visual C++ supports the use of the C++ Standard Library, the Common RunTime library (CRT), ATL, and MFC for applications compiled with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). This allows existing applications that use these libraries to use .NET Framework features as well.  
@@ -21,8 +22,6 @@ Visual C++ supports the use of the C++ Standard Library, the Common RunTime libr
  This support introduces the following new DLL and import libraries:  
   
 -   Msvcmrt[d].lib if you compile with /clr. Mixed assemblies links to this import library.  
-  
--   Msvcm90[d].dll and Msvcurt[d].lib if you compile with /clr:pure. The DLL is a mixed assembly providing managed C Run Time (CRT) support, and is part of a managed assembly installed in the global assembly cache (GAC). Pure assemblies link to this import library and end up bound to Msvcm90.dll.  
   
  This support provides several related benefits:  
   
@@ -38,9 +37,7 @@ Visual C++ supports the use of the C++ Standard Library, the Common RunTime libr
   
  In addition, this support presents the following limitations:  
   
--   Only the CRT DLL model is supported (both for code compiled with /clr or /clr:pure).  
-  
--   You cannot mix pure and mixed objects in a single image if those objects use the Visual C++ libraries (because all objects must be pure in a pure image). If you do this, you receive link-time errors.  
+-   Only the CRT DLL model is supported for code compiled with /clr.  
   
  You should update your common language runtime (CLR) to the current version as it is not guaranteed to work with earlier versions. Code built with these changes will not run on CLR version 1.x.  
   

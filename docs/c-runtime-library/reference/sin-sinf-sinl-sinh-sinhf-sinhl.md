@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["sinl", "sinf", "sinhf", "sinh", "sin", "sinhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -18,42 +18,33 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sin, sinf, sinl, sinh, sinhf, sinhl
 Calculates sines and hyperbolic sines.  
   
 ## Syntax  
   
-```  
-double sin(  
-   double x   
-);  
-float sin(  
-   float x  
-);  // C++ only  
-long double sin(  
-   long double x  
-);  // C++ only  
-float sinf(  
-   float x   
-);  
-long double sinl(   long double x  
-);  
-double sinh(  
-   double x   
-);  
-float sinh(  
-   float x   
-);  // C++ only  
-long double sinh(  
-   long double x  
-);  // C++ only  
-float sinhf(  
-   float x  
-);  
-long double sinhl(  
-   long double x  
-);  
+```cpp  
+double sin(double x);
+  
+float sin(float x);  // C++ only 
+ 
+long double sin(long double x);  // C++ only  
+
+float sinf(float x);  
+
+long double sinl(long double x);  
+
+double sinh(double x);  
+
+float sinh(float x);  // C++ only  
+
+long double sinh(long double x);  // C++ only  
+
+float sinhf(float x);  
+
+long double sinhl(long double x);  
 ```  
   
 #### Parameters  
@@ -95,7 +86,7 @@ long double sinhl(
 #include <math.h>  
 #include <stdio.h>  
   
-int main( void )  
+int main( void)  
 {  
    double pi = 3.1415926535;  
    double x, y;  

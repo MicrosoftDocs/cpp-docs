@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
 dev_langs: ["C++"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
@@ -14,6 +14,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt; operators
 ||||  
@@ -91,7 +92,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ### Remarks  
  The template function overloads **operator<<**, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:  
   
- **ostr** << _ *Right*. [to_string](https://msdn.microsoft.com/library/2f93c55z.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
+ **ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
   
 ### Example  
   
@@ -148,7 +149,7 @@ _Istr,
  The template function returns the string `_Istr`.  
   
 ### Remarks  
- The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](https://msdn.microsoft.com/library/syxtdd4f.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
+ The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
   
  The template function extracts elements from `_Istr` and inserts them into the bitset until:  
   

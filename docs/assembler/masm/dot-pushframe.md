@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: [".PUSHFRAME"]
 dev_langs: ["C++"]
 helpviewer_keywords: [".PUSHFRAME directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .PUSHFRAME
 Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional `code` is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.  

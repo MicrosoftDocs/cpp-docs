@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_filebuf", "fstream/std::basic_filebuf::char_type", "fstream/std::basic_filebuf::int_type", "fstream/std::basic_filebuf::off_type", "fstream/std::basic_filebuf::pos_type", "fstream/std::basic_filebuf::traits_type", "fstream/std::basic_filebuf::close", "fstream/std::basic_filebuf::is_open", "fstream/std::basic_filebuf::open", "fstream/std::basic_filebuf::overflow", "fstream/std::basic_filebuf::pbackfail", "fstream/std::basic_filebuf::seekoff", "fstream/std::basic_filebuf::seekpos", "fstream/std::basic_filebuf::setbuf", "fstream/std::basic_filebuf::Swap", "fstream/std::basic_filebuf::sync", "fstream/std::basic_filebuf::uflow", "fstream/std::basic_filebuf::underflow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_filebuf [C++]", "std::basic_filebuf [C++], char_type", "std::basic_filebuf [C++], int_type", "std::basic_filebuf [C++], off_type", "std::basic_filebuf [C++], pos_type", "std::basic_filebuf [C++], traits_type", "std::basic_filebuf [C++], close", "std::basic_filebuf [C++], is_open", "std::basic_filebuf [C++], open", "std::basic_filebuf [C++], overflow", "std::basic_filebuf [C++], pbackfail", "std::basic_filebuf [C++], seekoff", "std::basic_filebuf [C++], seekpos", "std::basic_filebuf [C++], setbuf", "std::basic_filebuf [C++], Swap", "std::basic_filebuf [C++], sync", "std::basic_filebuf [C++], uflow", "std::basic_filebuf [C++], underflow"]
@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_filebuf Class
 Describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an external file.  

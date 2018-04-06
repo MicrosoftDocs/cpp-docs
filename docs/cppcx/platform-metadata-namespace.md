@@ -6,18 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Metadata"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Metadata Namespace"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::Metadata"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Metadata Namespace"]
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
 caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata Namespace
 This namespace contains attributes that modify the declarations of types.  

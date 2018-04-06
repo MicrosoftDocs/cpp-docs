@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /DYNAMICBASE (Use address space layout randomization)
 Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)].  

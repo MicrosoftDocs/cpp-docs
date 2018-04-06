@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Controls to a Dialog Causes the Dialog to No Longer Function
 After adding a common control or rich edit control to a dialog box, it will not appear when you test the dialog box or the dialog itself will not appear.  

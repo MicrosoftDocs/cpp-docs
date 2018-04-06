@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LIBRARY
 Tells LINK to create a DLL. At the same time, LINK creates an import library, unless an .exp file is used in the build.  

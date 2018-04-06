@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP::Fire_OnFieldChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Fire_OnFieldChange method"]
@@ -15,23 +15,21 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP::Fire_OnFieldChange
 Broadcasts an [OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.aspx) event to notify consumers of a change to the value of a column.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnFieldChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnFieldChange(IRowset* pRowset,  
    HROW hRow,  
    DBORDINAL cColumns,  
    DBORDINAL* rgColumns,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

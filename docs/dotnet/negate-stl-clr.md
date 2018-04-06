@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # negate (STL/CLR)
 The template class describes a functor that, when called, returns its argument negated. You use it specify a function object in terms of its argument type.  

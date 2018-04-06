@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::greater"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["greater struct", "greater function"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # greater Struct
 A binary predicate that performs the greater-than operation ( `operator>`) on its arguments.  

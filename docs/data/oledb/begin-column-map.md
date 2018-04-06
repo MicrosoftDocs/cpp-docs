@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_COLUMN_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_COLUMN_MAP macro"]
@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_COLUMN_MAP
 Marks the beginning of a column map entry.  
@@ -22,11 +23,7 @@ Marks the beginning of a column map entry.
 ## Syntax  
   
 ```  
-  
-BEGIN_COLUMN_MAP(  
-x  
- )  
-  
+BEGIN_COLUMN_MAP(x)  
 ```  
   
 #### Parameters  

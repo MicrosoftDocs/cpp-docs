@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DispatchState", "CONCRTRM/concurrency::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize", "CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked", "CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DispatchState structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DispatchState Structure
 The `DispatchState` structure is used to transfer state to the `IExecutionContext::Dispatch` method. It describes the circumstances under which the `Dispatch` method is invoked on an `IExecutionContext` interface.  

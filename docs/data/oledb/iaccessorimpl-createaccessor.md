@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IAccessorImpl::CreateAccessor", "CreateAccessor", "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateAccessor method"]
@@ -15,22 +15,20 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl::CreateAccessor
 Creates an accessor from a set of bindings.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateAccessor)(  
-   DBACCESSORFLAGS dwAccessorFlags,  
+```cpp
+      STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,  
    DBCOUNTITEM cBindings,  
    const DBBINDING rgBindings[],  
    DBLENGTH cbRowSize,  
    HACCESSOR* phAccessor,  
-   DBBINDSTATUS rgStatus[]   
-);  
+   DBBINDSTATUS rgStatus[]);  
 ```  
   
 #### Parameters  

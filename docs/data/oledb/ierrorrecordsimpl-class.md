@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IErrorRecordsImpl class"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl Class
 Implements the OLE DB [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.  
   
-## Syntax  
-  
-```  
-template <  
-   class T,   
-   class RecordClass = ATLERRORINFO  
->  
+## Syntax
+
+```cpp
+template <class T, class RecordClass = ATLERRORINFO>  
 class IErrorRecordsImpl : public IErrorRecords  
 ```  
   

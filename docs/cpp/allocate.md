@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocate
 **Microsoft Specific**  
@@ -24,10 +25,9 @@ manager: "ghogen"
 ## Syntax  
   
 ```  
-  
-__declspec(allocate("  
-segname  
-")) declarator  
+
+   __declspec(allocate("segname")) declarator  
+
 ```  
   
 ## Remarks  

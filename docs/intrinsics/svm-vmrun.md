@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__svm_vmrun"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_vmrun intrinsic", "VMRUN instruction"]
@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __svm_vmrun
 **Microsoft Specific**  
@@ -38,7 +39,7 @@ void __svm_vmrun(
 ## Remarks  
  The `__svm_vmrun` function uses a minimal amount of information in the VMCB to begin executing the virtual machine guest code. Use the [__svm_vmsave](../intrinsics/svm-vmsave.md) or [__svm_vmload](../intrinsics/svm-vmload.md) function if you require more information to handle a complex interrupt or to switch to another guest.  
   
- The `__svm_vmrun` function is equivalent to the `VMRUN` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11 or later, at the [AMD corporation](http://go.microsoft.com/fwlink/?LinkId=23746) site.  
+ The `__svm_vmrun` function is equivalent to the `VMRUN` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11 or later, at the [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
   
 ## Requirements  
   

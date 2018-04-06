@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["combinable", "PPL/concurrency::combinable", "PPL/concurrency::combinable::combinable", "PPL/concurrency::combinable::clear", "PPL/concurrency::combinable::combine", "PPL/concurrency::combinable::combine_each", "PPL/concurrency::combinable::local"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # combinable Class
 The `combinable<T>` object is intended to provide thread-private copies of data, to perform lock-free thread-local sub-computations during parallel algorithms. At the end of the parallel operation, the thread-private sub-computations can then be merged into a final result. This class can be used instead of a shared variable, and can result in a performance improvement if there would otherwise be a lot of contention on that shared variable.  

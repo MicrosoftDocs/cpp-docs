@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /CLRIMAGETYPE (Specify Type of CLR Image)
 ```  
@@ -22,15 +23,9 @@ manager: "ghogen"
 ```  
   
 ## Remarks  
- The linker accepts native objects and also MSIL objects that are compiled by using [/clr](../../build/reference/clr-common-language-runtime-compilation.md), /clr:pure, or /clr:safe. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass both a safe and a pure module to the linker, the output file will be pure. If you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.  
+ The linker accepts native objects and also MSIL objects that are compiled by using [/clr](../../build/reference/clr-common-language-runtime-compilation.md). The **/clr:pure** and **/clr:safe** compiler options were deprecated in Visual Studio 2015. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.  
   
  You can use /CLRIMAGETYPE to specify a lower level of verifiability, if that is what you need.  
-  
- In .NET 4.5, /CLRIMAGETYPE supports a SAFE32BITPREFERRED option. This sets—in the PE header of the image—flags that indicate that the MSIL objects are safe and can be run on all platforms, but that 32-bit execution environments are preferred. This option enables an app to run on ARM platforms and also specifies that it should run under WOW64 on 64-bit operating systems instead of using the 64-bit execution environment.  
-  
- When an .exe that was compiled by using **/clr** or **/clr:pure** is run on a 64-bit operating system, the application is run under WOW64, which enables a 32-bit application to run on a 64-bit operating system. By default, an .exe that's compiled by using **/clr:safe** is run under the operating system's 64-bit support. However, it is possible that your safe application loads a 32-bit component. In that case, a safe image running under the operating system's 64-bit support will fail when it loads the 32-bit application. To ensure that a safe image continues to run when it loads a 32-bit component on a 64-bit operating system, use the /CLRIMAGETYPE:SAFE32BITPREFERRED option. If your code does not have to run on ARM platforms, you can specify the /CLRIMAGETYPE:PURE option to change the metadata (.corflags), marking it to be run under WOW64 (and substituting your own entry symbol):  
-  
- **cl /clr:safe t.cpp /link /clrimagetype:pure /entry:?main@@$$HYMHXZ /subsystem:console**  
   
  For information about how to determine the CLR image type of a file, see [/CLRHEADER](../../build/reference/clrheader.md).  
   

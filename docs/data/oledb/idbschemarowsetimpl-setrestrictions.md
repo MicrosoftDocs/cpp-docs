@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetRestrictions method"]
@@ -15,19 +15,17 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl::SetRestrictions
 Specifies which restrictions you support on a particular schema rowset.  
   
 ## Syntax  
   
-```  
-  
-      void SetRestrictions(  
-   ULONG cRestrictions,  
-   GUID* /* rguidSchema */,  
-   ULONG* rgRestrictions   
-);  
+```
+void SetRestrictions(ULONG cRestrictions,  
+  GUID* /* rguidSchema */,  
+   ULONG* rgRestrictions);  
 ```  
   
 #### Parameters  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4334
 'operator' : result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)  

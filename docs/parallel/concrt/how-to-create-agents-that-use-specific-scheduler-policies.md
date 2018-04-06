@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Create Agents that Use Specific Scheduler Policies
 An agent is an application component that works asynchronously with other components to solve larger computing tasks. An agent typically has a set life cycle and maintains state.  

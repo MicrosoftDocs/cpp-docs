@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["operator EQ", "EQ"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator EQ", "EQ operator"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator EQ
 Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.  

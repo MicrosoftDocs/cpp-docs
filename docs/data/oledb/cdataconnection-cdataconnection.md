@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataConnection class, constructor"]
@@ -15,18 +15,17 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataConnection::CDataConnection
 Instantiates and initializes a `CDataConnection` object.  
   
 ## Syntax  
   
-```  
-  
+```cpp
       CDataConnection();   
-CDataConnection(  
-   const CDataConnection &ds  
-);  
+
+CDataConnection(const CDataConnection &ds);  
 ```  
   
 #### Parameters  

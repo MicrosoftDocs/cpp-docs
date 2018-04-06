@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Internet and Networking Classes
 These classes allow you to exchange information with another computer using a Windows Socket or Win32 Internet (WinInet). There are also a set of classes for manipulating Windows Sockets.  

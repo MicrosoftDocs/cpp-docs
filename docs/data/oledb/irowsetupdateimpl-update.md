@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetUpdateImpl::Update", "IRowsetUpdateImpl::Update", "IRowsetUpdateImpl.Update", "ATL.IRowsetUpdateImpl.Update"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Update method"]
@@ -15,22 +15,20 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::Update
 Transmits any changes made to the row since the last fetch or update.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Update )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Update )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBCOUNTITEM* pcRows,  
    HROW** prgRows,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### Parameters  

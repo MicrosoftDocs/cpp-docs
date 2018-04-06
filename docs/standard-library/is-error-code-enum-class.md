@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["system_error/std::is_error_code_enum"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_error_code_enum class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_error_code_enum Class
 Represents a type predicate that tests for the [error_code](../standard-library/error-code-class.md) enumeration.  

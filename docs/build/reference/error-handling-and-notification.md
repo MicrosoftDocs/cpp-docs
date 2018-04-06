@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Error Handling and Notification
 For more information on error handling and notification, see [Understanding the Helper Function](understanding-the-helper-function.md).  

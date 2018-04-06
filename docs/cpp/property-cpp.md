@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # property (C++)
 **Microsoft Specific**  
@@ -25,9 +26,9 @@ manager: "ghogen"
   
 ```  
   
-      __declspec( property( get=get_func_name ) ) declarator  
-__declspec( property( put=put_func_name ) ) declarator  
-__declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name ) ) declarator  
+   __declspec( property( put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
 ```  
   
 ## Remarks  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["single_link_registry", "AGENTS/concurrency::single_link_registry", "AGENTS/concurrency::single_link_registry::single_link_registry", "AGENTS/concurrency::single_link_registry::add", "AGENTS/concurrency::single_link_registry::begin", "AGENTS/concurrency::single_link_registry::contains", "AGENTS/concurrency::single_link_registry::count", "AGENTS/concurrency::single_link_registry::remove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["single_link_registry class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # single_link_registry Class
 The `single_link_registry` object is a `network_link_registry` that manages only a single source or target block.  

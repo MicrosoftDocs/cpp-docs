@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Command File (Response File)
 You can provide part or all of the command-line input in a command file. Specify the command file using the following syntax:  

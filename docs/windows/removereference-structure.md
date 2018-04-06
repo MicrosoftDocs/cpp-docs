@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RemoveReference Structure
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
@@ -22,17 +23,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   class T  
->  
+template<class T>  
 struct RemoveReference;  
-template<  
-   class T  
->  
+template<class T>  
 struct RemoveReference<T&>;  
-template<  
-   class T  
->  
+template<class T>  
 struct RemoveReference<T&&>;  
 ```  
   

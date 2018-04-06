@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # .NET Programming with C++/CLI (Visual C++)
 The following topics describe how Visual C++ can target the .NET platform.  

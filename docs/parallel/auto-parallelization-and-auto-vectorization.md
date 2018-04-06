@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Auto-Parallelization and Auto-Vectorization
 Auto-Parallelizer and Auto-Vectorizer are designed to provide automatic performance gains for loops in your code.  
@@ -112,7 +113,7 @@ for (int i = 0; i < 1000; ++i)
   
 ## See Also  
  [loop](../preprocessor/loop.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?linkid=263662)   
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)   
  [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
  [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   

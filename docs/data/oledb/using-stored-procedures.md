@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, Visual C++", "stored procedures, about stored procedures", "OLE DB provider templates, stored procedures", "stored procedures, OLE DB"]
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Stored Procedures
 A stored procedure is an executable object stored in a database. Calling a stored procedure is similar to invoking a SQL command. Using stored procedures on the data source (instead of executing or preparing a statement in the client application) can provide several advantages, including higher performance, reduced network overhead, and improved consistency and accuracy.  

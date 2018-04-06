@@ -13,6 +13,7 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Open Folder projects in Visual C++
 Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
@@ -78,9 +79,120 @@ A configuration may have any of the following properties:
 - Linux-arm
 - gccarm
 
-CppProperties.json supports environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`.
+#### Environment variables
+CppProperties.json supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. The following system-defined variables are also supported:
 
-You also have access to the following built-in macros inside this file:
+|Variable Name|Description|  
+|-----------|-----------------|
+|vsdev|The default Visual Studio environment|
+|msvc_x86|Compile for x86 using x86 tools|
+|msvc_arm|Compile for ARM using x86 tools|
+|msvc_arm64|Compile for ARM64 using x86 tools|
+|msvc_x86_x64|Compile for AMD64 using x86 tools|
+|msvc_x64_x64|Compile for AMD64 using 64-bit tools|
+|msvc_arm_x64|Compile for ARM using 64-bit tools|
+|msvc_arm64_x64|Compile for ARM64 using 64-bit tools|
+
+When the Linux workload is installed, the following environments are available for remotely targeting Linux and WSL:
+
+|Variable Name|Description|  
+|-----------|-----------------|
+|linux_x86|Target x86 Linux remotely|
+|linux_x64|Target x64 Linux remotely|
+|linux_arm|Target ARM Linux remotely|
+
+You can define custom environment variables in CppProperties.json either globally or per-configuration. The following example shows how default and custom environment variables can be declared and used. The global **environments** property declares a variable named **INCLUDE** that can be used by any configuration:
+
+```json
+{
+  // The "environments" property is an array of key value pairs of the form
+  // { "EnvVar1": "Value1", "EnvVar2": "Value2" }
+  "environments": [
+    {
+      "INCLUDE": "${workspaceRoot}\\src\\includes"
+    }
+  ],
+ 
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        // Inherit the MSVC 32-bit environment and toolchain.
+        "msvc_x86"
+      ],
+      "name": "x86",
+      "includePath": [
+        // Use the include path defined above.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x86"
+    },
+    {
+      "inheritEnvironments": [
+        // Inherit the MSVC 64-bit environment and toolchain.
+        "msvc_x64"
+      ],
+      "name": "x64",
+      "includePath": [
+        // Use the include path defined above.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x64"
+    }
+  ]
+}
+```
+You can also define an **environments** property inside a configuration, so that it applies only to that configuration, and overrides any global variables of the same name. In the following example, the x64 configuration defines a local **INCLUDE** variable that overrides the global value:
+
+```json
+{
+  "environments": [
+    {
+      "INCLUDE": "${workspaceRoot}\\src\\includes"
+    }
+  ],
+ 
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "msvc_x86"
+      ],
+      "name": "x86",
+      "includePath": [
+        // Use the include path defined in the global environments property.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x86"
+    },
+    {
+      "environments": [
+        {
+          // Append 64-bit specific include path to env.INCLUDE.
+          "INCLUDE": "${env.INCLUDE};${workspaceRoot}\\src\\includes64"
+        }
+      ],
+ 
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64",
+      "includePath": [
+        // Use the include path defined in the local environments property.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x64"
+    }
+  ]
+}
+```
+
+All custom and default environment variables are also available in tasks.vs.json and launch.vs.json.
+
+#### Macros
+You have access to the following built-in macros inside CppProperties.json:
 |||
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|
@@ -134,7 +246,7 @@ You can automate build scripts or any other external operations on the files you
 
 ![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
 
-This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
+This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
 ```json
 {
@@ -151,6 +263,8 @@ This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual 
 }
 ```
 After saving tasks.vs.json, you can right-click any .cpp file in the folder, choose **Echo filename** from the context menu, and see the file name displayed in the Output window.
+
+
 
 #### appliesTo
 You can create tasks for any file or folder by specifying its name in the `appliesTo` field, for example `"appliesTo" : "hello.cpp"`. The following file masks can be used as values:

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_set class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_set Class
 The `concurrent_unordered_set` class is an concurrency-safe container that controls a varying-length sequence of elements of type K. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations.  

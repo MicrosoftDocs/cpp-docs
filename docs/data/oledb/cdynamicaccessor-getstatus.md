@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetStatus method"]
@@ -15,26 +15,22 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetStatus
 Retrieves the status of the specified column.  
   
 ## Syntax  
   
-```  
-  
-      bool GetStatus(   
-   DBORDINAL nColumn,   
-   DBSTATUS* pStatus    
-) const throw( );  
-bool GetStatus(  
-   const CHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
-bool GetStatus(  
-   const WCHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
+```
+bool GetStatus(DBORDINAL nColumn,   
+  DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const CHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const WCHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
 ```  
   
 #### Parameters  

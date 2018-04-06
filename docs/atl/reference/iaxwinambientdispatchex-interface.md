@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IAxWinAmbientDispatchEx", "No header/ATL::IAxWinAmbientDispatchEx", "No header/ATL::SetAmbientDispatch"]
+f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinAmbientDispatchEx interface"]
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatchEx Interface
 This interface implements supplemental ambient properties for a hosted control.  

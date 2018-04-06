@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # WSADATA Structure
 The `WSADATA` structure is used to store Windows Sockets initialization information returned by a call to the `AfxSocketInit` global function.  

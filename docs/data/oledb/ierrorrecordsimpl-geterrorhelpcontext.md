@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpContext", "IErrorRecordsImpl.GetErrorHelpContext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorHelpContext method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl::GetErrorHelpContext
 Gets the help context ID from an error record.  
   
 ## Syntax  
   
-```  
-  
-      DWORD GetErrorHelpContext(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      DWORD GetErrorHelpContext(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

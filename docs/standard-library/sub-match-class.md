@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["regex/std::sub_match", "regex/std::sub_match::matched", "regex/std::sub_match::compare", "regex/std::sub_match::length", "regex/std::sub_match::str", "regex/std::sub_match::difference_type", "regex/std::sub_match::iterator", "regex/std::sub_match::value_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::sub_match [C++]", "std::sub_match [C++], matched", "std::sub_match [C++], compare", "std::sub_match [C++], length", "std::sub_match [C++], str", "std::sub_match [C++], difference_type", "std::sub_match [C++], iterator", "std::sub_match [C++], value_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sub_match Class
 Describes a submatch.  

@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarFontComboBox Class
 A toolbar button that contains a combo box control that enables the user to select a font from a list of system fonts.  

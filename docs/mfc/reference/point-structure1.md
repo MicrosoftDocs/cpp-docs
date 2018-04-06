@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # POINT Structure1
 The **POINT** structure defines the x*-* and y-coordinates of a point.  

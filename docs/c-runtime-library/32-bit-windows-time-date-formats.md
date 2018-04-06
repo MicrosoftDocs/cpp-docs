@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 32-Bit Windows Time/Date Formats
 The file time and the date are stored individually, using unsigned integers as bit fields. File time and date are packed as follows:  

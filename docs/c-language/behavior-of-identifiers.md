@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Behavior of Identifiers
 -   [Significant Characters Without External Linkage](../c-language/significant-characters-without-external-linkage.md)  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Library
 The SafeInt library helps prevent integer overflows that might result when the application performs mathematical operations.  

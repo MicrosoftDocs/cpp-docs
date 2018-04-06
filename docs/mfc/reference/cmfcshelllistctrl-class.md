@@ -15,6 +15,7 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCShellListCtrl Class
 The `CMFCShellListCtrl` class provides Windows list control functionality and expands it by including the ability to display a list of shell items.  

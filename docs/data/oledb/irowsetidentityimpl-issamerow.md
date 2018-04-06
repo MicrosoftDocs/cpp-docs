@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IsSameRow method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl::IsSameRow
 Compares two row handles to see if they refer to the same row.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( IsSameRow )(  
-   HROW hThisRow,  
-   HROW hThatRow   
-);  
+```cpp
+      STDMETHOD(IsSameRow )(HROW hThisRow,  
+   HROW hThatRow);  
 ```  
   
 #### Parameters  

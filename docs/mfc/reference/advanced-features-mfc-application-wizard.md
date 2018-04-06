@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Advanced Features, MFC Application Wizard
 This topic lists options for additional features for your application, such as Help, printing support, and so on. In each section, specify additional support for these advanced features.  

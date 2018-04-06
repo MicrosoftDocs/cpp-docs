@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["variadic macros [C++]", "__VA_ARGS__ variadic macro specifier"]
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Variadic Macros
 Variadic macros are function-like macros that contain a variable number of arguments.  

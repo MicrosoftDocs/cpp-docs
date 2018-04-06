@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::As Method
 Returns a ComPtr object that represents the interface identified by the specified template parameter.  
@@ -23,16 +24,12 @@ Returns a ComPtr object that represents the interface identified by the specifie
   
 ```  
   
-template<  
-   typename U  
->  
+template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
 ) const;  
   
-template<  
-   typename U  
->  
+template<typename U>  
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> p  
 ) const;  

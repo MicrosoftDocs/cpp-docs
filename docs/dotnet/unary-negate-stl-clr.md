@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # unary_negate (STL/CLR)
 The template class describes a functor that, when called, returns the logical NOT of its stored one-argument functor. You use it specify a function object in terms of its stored functor.  

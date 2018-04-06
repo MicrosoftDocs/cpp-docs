@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["message_not_found", "CONCRT/concurrency::message_not_found", "CONCRT/concurrency::message_not_found::message_not_found"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message_not_found class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # message_not_found Class
 This class describes an exception thrown when a messaging block is unable to find a requested message.  

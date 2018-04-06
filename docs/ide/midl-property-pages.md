@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MIDL Property Pages
 The **MIDL** node contains several property pages. To access them. right-click on the .idl file in **Solution Explorer**.  

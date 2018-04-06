@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["pointers_to_members_CPP", "vc-pragma.pointers_to_members"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["class members, pointers to", "pragmas, pointers_to_members", "members, pointers to", "pointers_to_members pragma"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # pointers_to_members
 **C++ Specific**  

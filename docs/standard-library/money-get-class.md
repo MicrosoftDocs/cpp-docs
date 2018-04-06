@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xlocmon/std::money_get", "xlocmon/std::money_get::char_type", "xlocmon/std::money_get::iter_type", "xlocmon/std::money_get::string_type", "xlocmon/std::money_get::do_get", "xlocmon/std::money_get::get"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::money_get [C++]", "std::money_get [C++], char_type", "std::money_get [C++], iter_type", "std::money_get [C++], string_type", "std::money_get [C++], do_get", "std::money_get [C++], get"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # money_get Class
 The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to monetary values.  

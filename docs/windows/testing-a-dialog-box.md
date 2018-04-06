@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Testing a Dialog Box
 When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:  

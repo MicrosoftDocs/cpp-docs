@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_ifstream", "fstream/std::basic_ifstream::close", "fstream/std::basic_ifstream::is_open", "fstream/std::basic_ifstream::open", "fstream/std::basic_ifstream::rdbuf", "fstream/std::basic_ifstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ifstream [C++]", "std::basic_ifstream [C++], close", "std::basic_ifstream [C++], is_open", "std::basic_ifstream [C++], open", "std::basic_ifstream [C++], rdbuf", "std::basic_ifstream [C++], swap"]
@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_ifstream Class
 Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.  

@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Handle Events Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to subscribe to and handle the events of a Windows Runtime object.  
@@ -23,7 +24,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
  The following steps start an `ABI::Windows::System::Threading::IDeviceWatcher` object and use event handlers to monitor progress. The `IDeviceWatcher` interface enables you to enumerate devices asynchronously, or in the background, and receive notification when devices are added, removed, or changed. The [Callback](../windows/callback-function-windows-runtime-cpp-template-library.md) function is an important part of this example because it enables it to specify event handlers that process the results of the background operation. The complete example follows.  
   
 > [!WARNING]
->  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a Universal Windows Platform app. For more information about the types and functions that you can use in a Universal Windows Platform app, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a Universal Windows Platform app. For more information about the types and functions that you can use in a Universal Windows Platform app, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) and [Win32 and COM for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 1.  Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.  
   

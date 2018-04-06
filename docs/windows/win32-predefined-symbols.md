@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Win32 Predefined Symbols
 These symbols are defined in the Win32 header files, and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties Window](/visualstudio/ide/reference/properties-window) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the Property Window.  

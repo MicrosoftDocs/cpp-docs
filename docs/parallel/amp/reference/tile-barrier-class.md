@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["tile_barrier", "AMP/tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::wait", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tile_barrier class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tile_barrier Class
 Synchronizes the execution of threads that are running in the thread group (the tile) by using `wait` methods. Only the runtime can instantiate this class.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["array_view", "AMP/array_view", "AMP/Concurrency::array_view::array_view", "AMP/Concurrency::array_view::copy_to", "AMP/Concurrency::array_view::data", "AMP/Concurrency::array_view::discard_data", "AMP/Concurrency::array_view::get_extent", "AMP/Concurrency::array_view::get_ref", "AMP/Concurrency::array_view::get_source_accelerator_view", "AMP/Concurrency::array_view::refresh", "AMP/Concurrency::array_view::reinterpret_as", "AMP/Concurrency::array_view::section", "AMP/Concurrency::array_view::synchronize", "AMP/Concurrency::array_view::synchronize_async", "AMP/Concurrency::array_view::synchronize_to", "AMP/Concurrency::array_view::synchronize_to_async", "AMP/Concurrency::array_view::view_as", "AMP/Concurrency::array_view::rank", "AMP/Concurrency::array_view::extent", "AMP/Concurrency::array_view::source_accelerator_view", "AMP/Concurrency::array_view::value_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["array_view class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # array_view Class
 Represents an N-dimensional view over the data held in another container.  

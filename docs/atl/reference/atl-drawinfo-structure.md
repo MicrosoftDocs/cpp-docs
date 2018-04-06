@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DRAWINFO structure"]
@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL_DRAWINFO Structure
 Contains information used for rendering to various targets, such as a printer, metafile, or ActiveX control.  

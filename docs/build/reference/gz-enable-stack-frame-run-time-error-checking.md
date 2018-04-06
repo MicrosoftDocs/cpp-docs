@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GZ (Enable Stack Frame Run-Time Error Checking)
 Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) option. Deprecated.  

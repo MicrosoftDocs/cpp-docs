@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IErrorRecordsImpl::GetBasicErrorInfo", "IErrorRecordsImpl::GetBasicErrorInfo", "GetBasicErrorInfo", "ATL.IErrorRecordsImpl.GetBasicErrorInfo", "IErrorRecordsImpl.GetBasicErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBasicErrorInfo method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl::GetBasicErrorInfo
 Returns basic information about the error, such as the return code and provider-specific error number.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetBasicErrorInfo )(  
-   ULONG ulRecordNum,  
-   ERRORINFO *pErrorInfo   
-);  
+```cpp
+      STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,  
+   ERRORINFO *pErrorInfo);  
 ```  
   
 #### Parameters  

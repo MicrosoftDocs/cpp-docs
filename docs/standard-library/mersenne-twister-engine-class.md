@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::mersenne_twister_engine"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mersenne_twister_engine class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mersenne_twister_engine Class
 Generates a high quality random sequence of integers based on the Mersenne twister algorithm.  
@@ -99,7 +100,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
     43, 6364136223846793005ULL> mt19937_64;  
 ```  
   
- For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/LinkId=402356).  
+ For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/p/?linkid=402356).  
   
 ## Example  
  For a code example, see [\<random>](../standard-library/random.md).  

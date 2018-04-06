@@ -6,17 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::MapView::MapView", "COLLECTION/Platform::Collections::MapView::First", "COLLECTION/Platform::Collections::MapView::HasKey", "COLLECTION/Platform::Collections::MapView::Lookup", "COLLECTION/Platform::Collections::MapView::Size", "COLLECTION/Platform::Collections::MapView::Split"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MapView Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MapView Class"]
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::MapView Class
 Represents a read-only view into a *map*, which is a collection of key-value pairs.  

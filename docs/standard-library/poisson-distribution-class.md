@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::poisson_distribution", "random/std::poisson_distribution::reset", "random/std::poisson_distribution::mean", "random/std::poisson_distribution::param", "random/std::poisson_distribution::min", "random/std::poisson_distribution::max", "random/std::poisson_distribution::operator()", "random/std::poisson_distribution::param_type", "random/std::poisson_distribution::param_type::mean", "random/std::poisson_distribution::param_type::operator==", "random/std::poisson_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::poisson_distribution [C++]", "std::poisson_distribution [C++], reset", "std::poisson_distribution [C++], mean", "std::poisson_distribution [C++], param", "std::poisson_distribution [C++], min", "std::poisson_distribution [C++], max", "std::poisson_distribution [C++], param_type", "std::poisson_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # poisson_distribution Class
 Generates a Poisson distribution.  
@@ -74,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Poisson distribution, see the Wolfram MathWorld article [Poisson Distribution](http://go.microsoft.com/fwlink/LinkId=401112).  
+For detailed information about the Poisson distribution, see the Wolfram MathWorld article [Poisson Distribution](http://go.microsoft.com/fwlink/p/?linkid=401112).  
   
 ## Example  
   

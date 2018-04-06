@@ -6,12 +6,13 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
 caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Properties (C++/CX)
 Windows Runtime types expose public data as properties. Client code accesses the property like a public datamember. Internally, the property is implemented as a block that contains a get accessor method, a set accessor method, or both. By using the accessor methods, you can perform additional actions before or after you retrieve the value, for example, you could fire an event or perform validation checks.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo::GetBasicErrorInfo", "ATL.CDBErrorInfo.GetBasicErrorInfo", "CDBErrorInfo.GetBasicErrorInfo", "ATL::CDBErrorInfo::GetBasicErrorInfo", "GetBasicErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBasicErrorInfo method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo::GetBasicErrorInfo
 Calls [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/en-us/library/ms723907.aspx) to return basic information about the error, such as the return code and provider-specific error number.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetBasicErrorInfo(   
-   ULONG ulRecordNum,   
-   ERRORINFO* pErrorInfo    
-) const throw( );  
+```
+HRESULT GetBasicErrorInfo(ULONG ulRecordNum,   
+  ERRORINFO* pErrorInfo) const throw();  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBulkRowset::MovePrev", "MovePrev", "CBulkRowset<TAccessor>::MovePrev", "ATL::CBulkRowset<TAccessor>::MovePrev", "CBulkRowset<TAccessor>.MovePrev", "ATL::CBulkRowset::MovePrev", "CBulkRowset.MovePrev", "ATL.CBulkRowset.MovePrev", "ATL.CBulkRowset<TAccessor>.MovePrev"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MovePrev method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::MovePrev
 Moves to the previous row.  
   
 ## Syntax  
   
-```  
-  
-HRESULT MovePrev( ) throw( );  
+```cpp
+HRESULT MovePrev() throw();  
   
 ```  
   

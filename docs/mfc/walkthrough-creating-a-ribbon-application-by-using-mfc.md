@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Ribbon Application By Using MFC
 This walkthrough shows how to use the **MFC Application Wizard** to create an application that has a ribbon by default. You can then expand the ribbon by adding a **Custom** ribbon category that has a **Favorites** ribbon panel, and then adding some frequently used commands to the panel.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::greater_equal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["greater_equal struct", "greater_equal function"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # greater_equal Struct
 A binary predicate that performs the greater-than-or-equal-to operation ( `operator>=`) on its arguments.  

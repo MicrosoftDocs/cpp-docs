@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Qimprecise_fwaits (Remove fwaits Inside Try Blocks)
 Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](../../build/reference/fp-specify-floating-point-behavior.md) compiler option.  

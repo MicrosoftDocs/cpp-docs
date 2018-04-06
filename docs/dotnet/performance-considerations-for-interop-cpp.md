@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Performance Considerations for Interop (C++)
 This topic provides guidelines for reducing the effect of managed/unmanaged interop transitions on run-time performance.  

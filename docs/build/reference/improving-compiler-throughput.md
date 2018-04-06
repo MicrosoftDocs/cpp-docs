@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Improving Compiler Throughput
 Use precompiled header files to build your project faster. This is important if you are using ATL, MFC, or the Windows SDK header files.  

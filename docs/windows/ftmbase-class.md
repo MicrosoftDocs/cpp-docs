@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase Class
 Represents a free-threaded marshaler object.  
@@ -24,8 +25,8 @@ Represents a free-threaded marshaler object.
 ```  
   
 class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags< WinRtClassicComMix >,   
-   Microsoft::WRL::CloakedIid< IMarshal > >;  
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
+   Microsoft::WRL::CloakedIid<IMarshal> >;  
 ```  
   
 ## Remarks  

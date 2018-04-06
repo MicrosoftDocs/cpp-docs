@@ -6,22 +6,23 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Directives
-For the most part, the Microsoft ARM assembler uses the ARM assembly language, which is documented in Chapter 7 of the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102). However, the Microsoft implementations of some assembly directives differ from the ARM assembly directives. This article explains the differences.  
+For the most part, the Microsoft ARM assembler uses the ARM assembly language, which is documented in Chapter 7 of the [ARM assembler tools guide](http://go.microsoft.com/fwlink/p/?linkid=246102). However, the Microsoft implementations of some assembly directives differ from the ARM assembly directives. This article explains the differences.  
   
 ## Microsoft Implementations of ARM Assembly Directives  
  AREA  
  The Microsoft ARM assembler supports these AREA attributes: ALIGN, CODE, CODEALIGN, DATA, NOINIT, READONLY, READWRITE, THUMB, ARM.  
   
- All except THUMB and ARM work as documented in the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102).  
+ All except THUMB and ARM work as documented in the [ARM assembler tools guide](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  In the Microsoft ARM assembler, THUMB indicates that a CODE section contains Thumb code, and is the default for CODE sections.  ARM indicates that the section contains ARM code.  
   

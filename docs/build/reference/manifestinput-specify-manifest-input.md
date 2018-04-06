@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /MANIFESTINPUT (Specify Manifest Input)
 Specifies a manifest input file to include in the manifest that's embedded in the image.  

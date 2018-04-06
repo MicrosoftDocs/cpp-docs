@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_fstream", "fstream/std::basic_fstream::close", "fstream/std::basic_fstream::is_open", "fstream/std::basic_fstream::open", "fstream/std::basic_fstream::rdbuf", "fstream/std::basic_fstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_fstream [C++]", "std::basic_fstream [C++], close", "std::basic_fstream [C++], is_open", "std::basic_fstream [C++], open", "std::basic_fstream [C++], rdbuf", "std::basic_fstream [C++], swap"]
@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_fstream Class
 Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.  

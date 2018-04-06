@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # min (STL/CLR)
 Compares two objects and returns the lesser of the two, where the ordering criterion may be specified by a binary predicate.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl.m_dwStatus", "ATL.IDBInitializeImpl.m_dwStatus", "IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl<T>::m_dwStatus", "ATL.IDBInitializeImpl<T>.m_dwStatus", "ATL::IDBInitializeImpl<T>::m_dwStatus", "m_dwStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_dwStatus"]
@@ -15,14 +15,14 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl::m_dwStatus
 Data source flags.  
   
 ## Syntax  
   
-```  
-  
+```cpp
 DWORD m_dwStatus;  
   
 ```  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Map Macros (MFC)
 To support message maps, MFC supplies the following macros:  
@@ -283,7 +284,7 @@ ON_MESSAGE( message, memberFxn )
  There should be exactly one `ON_MESSAGE` macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
   
 > [!NOTE]
->  In addition to user-defined messages, `ON_MESSAGE` handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/?linkId=192022).  
+>  In addition to user-defined messages, `ON_MESSAGE` handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/p/?linkid=192022).  
   
  For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)  
   

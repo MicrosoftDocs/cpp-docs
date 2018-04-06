@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::Invoke Method
 When implemented, calls an event handler when the last object in a module is released.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException::SafeIntException
 Creates a `SafeIntException` object.  

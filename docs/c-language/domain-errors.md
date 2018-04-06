@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Domain Errors
 **ANSI 4.5.1** The values returned by the mathematics functions on domain errors  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert Between System::Guid and _GUID
 The following code sample shows how to convert between a <xref:System.Guid> and a `_GUID`.  

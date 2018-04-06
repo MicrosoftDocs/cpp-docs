@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AtlTraceErrorRecords function"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # AtlTraceErrorRecords
 Dumps OLE DB Error Record information to the dump device if an error is returned.  
   
 ## Syntax  
   
-```  
-  
-      inline void AtlTraceErrorRecords(   
-   HRESULT hrErr = S_OK    
-);  
+```cpp
+      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### Parameters  

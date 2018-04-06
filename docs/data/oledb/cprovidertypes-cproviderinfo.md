@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_bIsLong", "m_szLocalTypeName", "m_guidType", "m_bCaseSensitive", "m_szVersion", "m_szCreateParams", "IS_NULLABLE", "m_bAutoUniqueValue", "LITERAL_SUFFIX", "COLUMN_SIZE", "CProviderTypes", "LOCAL_TYPE_NAME", "MINIMUM_SCALE", "m_nMinScale", "m_nColumnSize", "m_szLiteralSuffix", "m_bFixedPrecScale", "m_szLiteralPrefix", "m_nMaxScale", "m_szTypeLib", "m_nDataType", "m_bUnsignedAttribute", "m_nSearchable", "m_bBestMatch", "m_szTypeName", "DATA_TYPE", "MAXIMUM_SCALE", "CProviderInfo", "FIXED_PREC_SCALE", "m_bIsNullable", "IS_LONG"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DATA_TYPE", "MAXIMUM_SCALE", "m_nMinScale", "m_guidType", "LOCAL_TYPE_NAME", "m_bAutoUniqueValue", "m_bBestMatch", "m_bIsLong", "m_bUnsignedAttribute", "CProviderInfo parameter class", "FIXED_PREC_SCALE", "m_nColumnSize", "m_szVersion", "CProviderTypes typedef class", "m_szCreateParams", "IS_NULLABLE", "m_bIsNullable", "m_szTypeLib", "m_szLiteralPrefix", "m_nMaxScale", "m_nDataType", "m_bCaseSensitive", "m_bFixedPrecScale", "m_nSearchable", "MINIMUM_SCALE", "m_szTypeName", "m_szLocalTypeName", "IS_LONG", "LITERAL_SUFFIX", "COLUMN_SIZE", "m_szLiteralSuffix"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CProviderTypes, CProviderInfo
 Call the typedef class **CProviderTypes** to implement its parameter class **CProviderInfo**.  

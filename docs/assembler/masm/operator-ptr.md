@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["PTR", "operator PTR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PTR operator", "operator PTR"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator PTR
 The first operator forces the *expression* to be treated as having the specified `type`. The second operator specifies a pointer to `type`.  

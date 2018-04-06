@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Fire_OnRowsetChange method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP::Fire_OnRowsetChange
 Broadcasts an [OnRowsetChange](https://msdn.microsoft.com/en-us/library/ms722669.aspx) event to all listeners on the connection point **IID_IRowsetNotify** to notify consumers of a change affecting the entire rowset.  
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnRowsetChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnRowsetChange(IRowset* pRowset,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bool (C++)
 This keyword is a built-in type. A variable of this type can have values [true](../cpp/true-cpp.md) and [false](../cpp/false-cpp.md). Conditional expressions have the type `bool` and so have values of type `bool`. For example, `i!=0` now has **true** or **false** depending on the value of `i`.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::weibull_distribution", "random/std::weibull_distribution::reset", "random/std::weibull_distribution::a", "random/std::weibull_distribution::b", "random/std::weibull_distribution::param", "random/std::weibull_distribution::min", "random/std::weibull_distribution::max", "random/std::weibull_distribution::operator()", "random/std::weibull_distribution::param_type", "random/std::weibull_distribution::param_type::a", "random/std::weibull_distribution::param_type::b", "random/std::weibull_distribution::param_type::operator==", "random/std::weibull_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::weibull_distribution [C++]", "std::weibull_distribution [C++], reset", "std::weibull_distribution [C++], a", "std::weibull_distribution [C++], b", "std::weibull_distribution [C++], param", "std::weibull_distribution [C++], min", "std::weibull_distribution [C++], max", "std::weibull_distribution [C++], param_type", "std::weibull_distribution [C++], param_type"]
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # weibull_distribution Class
 Generates a Weibull distribution.  
@@ -72,7 +73,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://go.microsoft.com/fwlink/LinkId=401115).  
+For detailed information about the Weibull distribution, see the Wolfram MathWorld article [Weibull Distribution](http://go.microsoft.com/fwlink/p/?linkid=401115).  
   
 ## Example  
   

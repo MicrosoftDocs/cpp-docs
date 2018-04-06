@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["target_block", "AGENTS/concurrency::target_block", "AGENTS/concurrency::target_block::target_block", "AGENTS/concurrency::target_block::propagate", "AGENTS/concurrency::target_block::send", "AGENTS/concurrency::target_block::async_send", "AGENTS/concurrency::target_block::decline_incoming_messages", "AGENTS/concurrency::target_block::enable_batched_processing", "AGENTS/concurrency::target_block::initialize_target", "AGENTS/concurrency::target_block::link_source", "AGENTS/concurrency::target_block::process_input_messages", "AGENTS/concurrency::target_block::process_message", "AGENTS/concurrency::target_block::propagate_message", "AGENTS/concurrency::target_block::register_filter", "AGENTS/concurrency::target_block::remove_sources", "AGENTS/concurrency::target_block::send_message", "AGENTS/concurrency::target_block::sync_send", "AGENTS/concurrency::target_block::unlink_source", "AGENTS/concurrency::target_block::unlink_sources", "AGENTS/concurrency::target_block::wait_for_async_sends"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["target_block class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # target_block Class
 The `target_block` class is an abstract base class that provides basic link management functionality and error checking for target only blocks.  

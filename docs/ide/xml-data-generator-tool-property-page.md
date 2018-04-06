@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # XML Data Generator Tool Property Page
 The **XML Data Generator Tool** property page becomes available when you add a dataset to a project.  

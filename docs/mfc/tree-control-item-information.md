@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Information
 Tree controls ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) have a number of member functions that retrieve information about items in the control. The [GetItem](../mfc/reference/ctreectrl-class.md#getitem) member function retrieves some or all of the data associated with an item. This data could include the item's text, state, images, count of child items, and an application-defined 32-bit data value. There is also a [SetItem](../mfc/reference/ctreectrl-class.md#setitem) function that can set some or all of the data associated with an item.  

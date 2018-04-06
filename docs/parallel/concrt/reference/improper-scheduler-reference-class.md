@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["improper_scheduler_reference", "CONCRT/concurrency::improper_scheduler_reference", "CONCRT/concurrency::improper_scheduler_reference::improper_scheduler_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_reference class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # improper_scheduler_reference Class
 This class describes an exception thrown when the `Reference` method is called on a `Scheduler` object that is shutting down, from a context that is not part of that scheduler.  

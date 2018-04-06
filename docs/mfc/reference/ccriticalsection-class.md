@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCriticalSection Class
 Represents a "critical section" — a synchronization object that allows one thread at a time to access a resource or section of code.  

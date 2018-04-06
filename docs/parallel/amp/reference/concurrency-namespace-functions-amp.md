@@ -5,15 +5,15 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::all_memory_fence", "amp/Concurrency::atomic_compare_exchange", "amp/Concurrency::atomic_fetch_dec", "amp/Concurrency::atomic_fetch_max", "amp/Concurrency::atomic_fetch_min", "amp/Concurrency::copy", "amp/Concurrency::direct3d_abort", "amp/Concurrency::direct3d_printf", "amp/Concurrency::global_memory_fence", "amp/Concurrency::tile_static_memory_fence"]
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency namespace functions (AMP)
 ||||  

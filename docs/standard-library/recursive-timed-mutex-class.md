@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["mutex/std::recursive_timed_mutex", "mutex/std::recursive_timed_mutex::recursive_timed_mutex", "mutex/std::recursive_timed_mutex::lock", "mutex/std::recursive_timed_mutex::try_lock", "mutex/std::recursive_timed_mutex::try_lock_for", "mutex/std::recursive_timed_mutex::try_lock_until", "mutex/std::recursive_timed_mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: 59cc2d5c-ed80-45f3-a0a8-05652a8ead7e
@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::recursive_timed_mutex [C++]", "std::recursive_timed_mutex [C++], recursive_timed_mutex", "std::recursive_timed_mutex [C++], lock", "std::recursive_timed_mutex [C++], try_lock", "std::recursive_timed_mutex [C++], try_lock_for", "std::recursive_timed_mutex [C++], try_lock_until", "std::recursive_timed_mutex [C++], unlock"]
+ms.workload: ["cplusplus"]
 ---
 # recursive_timed_mutex Class
 Represents a *timed mutex type*. Objects of this type are used to enforce mutual exclusion by using time-limited blocking within a program. Unlike objects of type [timed_mutex](../standard-library/timed-mutex-class.md), the effect of calling locking methods for `recursive_timed_mutex` objects is well-defined.  

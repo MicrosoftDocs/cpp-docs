@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
@@ -13,6 +13,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt; operators
 ||||  

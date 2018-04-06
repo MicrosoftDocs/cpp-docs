@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [C++], OLE DB consumers", "events [C++], notifications in OLE DB", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB provider templates, notifications", "OLE DB providers, notifications"]
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Notifications
 ## Implementing Connection Point Interfaces on the Provider and Consumer  
@@ -39,14 +40,14 @@ END_CONNECTION_POINT_MAP
 > [!NOTE]
 >  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
   
 class RUpdateRowset :   
 public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,   
-         CAtlArray< CAgentMan, CAtlArray<CAgentMan> >, CSimpleRow,   
-         IRowsetScrollImpl< RUpdateRowset, IRowsetScroll > >,  
+         CAtlArray< CAgentMan, CAtlArray<CAgentMan>>, CSimpleRow,   
+         IRowsetScrollImpl< RUpdateRowset, IRowsetScroll >>,  
       public IRowsetUpdateImpl< RUpdateRowset, CAgentMan >,  
       public IConnectionPointContainerImpl<RUpdateRowset>,  
       public IRowsetNotifyCP<RUpdateRowset>  

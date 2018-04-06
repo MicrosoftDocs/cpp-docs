@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetHAccessor", "CAccessorBase::GetHAccessor", "CAccessorBase.GetHAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetHAccessor method"]
@@ -15,17 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorBase::GetHAccessor
 Retrieves the accessor handle of a specified accessor.  
   
 ## Syntax  
   
-```  
-  
-      HACCESSOR GetHAccessor(  
-   ULONG nAccessor   
-) const;  
+```cpp
+      HACCESSOR GetHAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBindings method"]
@@ -15,20 +15,18 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl::GetBindings
 Returns the basic columns bindings from the consumer in an accessor.  
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetBindings)(  
-   HACCESSOR hAccessor,  
+```cpp
+      STDMETHOD(GetBindings)(HACCESSOR hAccessor,  
    DBACCESSORFLAGS* pdwAccessorFlags,  
    DBCOUNTITEM* pcBindings,  
-   DBBINDING** prgBindings   
-);  
+   DBBINDING** prgBindings);  
 ```  
   
 #### Parameters  

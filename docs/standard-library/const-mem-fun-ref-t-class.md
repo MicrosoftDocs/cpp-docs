@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::const_mem_fun_ref_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_mem_fun_ref_t class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # const_mem_fun_ref_t Class
 An adapter class that allows a **const** member function that takes no arguments to be called as a unary function object when initialized with a reference argument.  

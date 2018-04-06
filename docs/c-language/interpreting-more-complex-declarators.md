@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Interpreting More Complex Declarators
 You can enclose any declarator in parentheses to specify a particular interpretation of a "complex declarator." A complex declarator is an identifier qualified by more than one array, pointer, or function modifier. You can apply various combinations of array, pointer, and function modifiers to a single identifier. Generally `typedef` may be used to simplify declarations. See [Typedef Declarations](../c-language/typedef-declarations.md).  
@@ -36,7 +37,7 @@ You can enclose any declarator in parentheses to specify a particular interpreta
      7   6  4 2 1   3    5  
     ```  
   
- In this example, the steps are numbered in order and can be interpreted as follows:  
+In this example, the steps are numbered in order and can be interpreted as follows:  
   
 1.  The identifier `var` is declared as  
   

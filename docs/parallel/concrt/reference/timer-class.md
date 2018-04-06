@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["timer", "AGENTS/concurrency::timer", "AGENTS/concurrency::timer::timer", "AGENTS/concurrency::timer::pause", "AGENTS/concurrency::timer::start", "AGENTS/concurrency::timer::stop", "AGENTS/concurrency::timer::accept_message", "AGENTS/concurrency::timer::consume_message", "AGENTS/concurrency::timer::link_target_notification", "AGENTS/concurrency::timer::propagate_to_any_targets", "AGENTS/concurrency::timer::release_message", "AGENTS/concurrency::timer::reserve_message", "AGENTS/concurrency::timer::resume_propagation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["timer class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # timer Class
 A `timer` messaging block is a single-target `source_block` capable of sending a message to its target after a specified time period has elapsed or at specific intervals.  

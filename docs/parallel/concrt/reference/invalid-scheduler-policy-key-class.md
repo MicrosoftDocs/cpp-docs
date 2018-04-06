@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["invalid_scheduler_policy_key", "CONCRT/concurrency::invalid_scheduler_policy_key", "CONCRT/concurrency::invalid_scheduler_policy_key::invalid_scheduler_policy_key"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_key class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # invalid_scheduler_policy_key Class
 This class describes an exception thrown when an invalid or unknown key is passed to a `SchedulerPolicy` object constructor, or the `SetPolicyValue` method of a `SchedulerPolicy` object is passed a key that must be changed using other means such as the `SetConcurrencyLimits` method.  

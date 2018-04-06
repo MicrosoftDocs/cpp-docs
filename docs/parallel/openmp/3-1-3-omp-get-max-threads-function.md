@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1.3 omp_get_max_threads Function
 The **omp_get_max_threads** function returns an integer that is guaranteed to be at least as large as the number of threads that would be used to form a team if a parallel region without a **num_threads** clause were to be encountered at that point in the code. The format is as follows:  

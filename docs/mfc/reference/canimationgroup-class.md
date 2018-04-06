@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationGroup Class
 Implements an animation group, which combines an animation storyboard, animation objects, and transitions to define an animation.  

@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Structures, Styles, Callbacks, and Message Maps
 This section documents the structures, styles, and callback functions used by the Microsoft Foundation Class Library and the MFC message maps.  

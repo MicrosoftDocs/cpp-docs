@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Qvec-report (Auto-Vectorizer Reporting Level)
 Enables the reporting feature of the compiler [Auto-Vectorizer](../../parallel/auto-parallelization-and-auto-vectorization.md) and specifies the level of informational messages for output during compilation.  
@@ -48,4 +49,4 @@ Enables the reporting feature of the compiler [Auto-Vectorizer](../../parallel/a
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)

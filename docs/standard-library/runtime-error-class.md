@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stdexcept/std::runtime_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_error class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # runtime_error Class
 The class serves as the base class for all exceptions thrown to report errors presumably detectable only when the program executes.  

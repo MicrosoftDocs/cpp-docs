@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, reading strings into"]
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Reading Strings into the OLE DB Provider
 The `RMyProviderRowset::Execute` function opens a file and reads strings. The consumer passes the file name to the provider by calling [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). The provider receives the file name and stores it in the member variable `m_szCommandText`. `Execute` reads the file name from `m_szCommandText`. If the file name is invalid or the file is unavailable, `Execute` returns an error. Otherwise, it opens the file and calls `fgets` to retrieve the strings. For each set of strings it reads, `Execute` creates an instance of the user record (`CAgentMan`) and places it into an array.  
@@ -27,7 +28,7 @@ The `RMyProviderRowset::Execute` function opens a file and reads strings. The co
   
 ### Code  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
 class RMyProviderRowset : public CRowsetImpl< RMyProviderRowset, CAgentMan, CRMyProviderCommand>  

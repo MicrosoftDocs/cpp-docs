@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Application Settings, ATL Project Wizard
 Use the **Application Settings** page of the ATL Project Wizard to design and add basic features to a new ATL project.  

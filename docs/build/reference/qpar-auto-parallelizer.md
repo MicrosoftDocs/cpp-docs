@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Qpar (Auto-Parallelizer)
 Enables the [Auto-Parallelizer](../../parallel/auto-parallelization-and-auto-vectorization.md) feature of the compiler to automatically parallelize loops in your code.  
@@ -49,4 +50,4 @@ Enables the [Auto-Parallelizer](../../parallel/auto-parallelization-and-auto-vec
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
  [#pragma loop()](../../preprocessor/loop.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)

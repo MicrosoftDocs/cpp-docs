@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ppltasks/concurrency::task_options"]
 dev_langs: ["C++"]
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # task_options Class (Concurrency Runtime)
 Represents the allowed options for creating a task  

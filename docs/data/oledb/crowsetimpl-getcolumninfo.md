@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetColumnInfo", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnInfo method"]
@@ -15,18 +15,16 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::GetColumnInfo
 Retrieves column information for a particular client request.  
   
 ## Syntax  
   
-```  
-  
-      static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(  
-   T* pv,  
-   ULONG* pcCols   
-);  
+```cpp
+      static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,  
+   ULONG* pcCols);  
 ```  
   
 #### Parameters  

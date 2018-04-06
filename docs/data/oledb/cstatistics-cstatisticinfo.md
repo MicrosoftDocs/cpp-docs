@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CStatistics", "m_szTableSchema", "CStatisticInfo", "m_szTableCatalog", "m_nCardinality", "m_szTableName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_nCardinality", "m_szTableSchema", "TABLE_CATALOG", "TABLE_NAME", "TABLE_SCHEMA", "CStatistics typedef class", "m_szTableCatalog", "m_szTableName", "CStatisticInfo parameter class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CStatistics, CStatisticInfo
 Call the typedef class **CStatistics** to implement its parameter class **CStatisticInfo**.  

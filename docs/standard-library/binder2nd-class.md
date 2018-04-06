@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::binder2nd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binder2nd class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # binder2nd Class
 A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.  

@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Composite Control Global Functions
 These functions provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.  

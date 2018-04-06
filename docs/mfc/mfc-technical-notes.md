@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Technical Notes
 A technical note is a document written for programmers by programmers.  
@@ -28,6 +29,6 @@ A technical note is a document written for programmers by programmers.
 -   [Technical Notes By Category](../mfc/technical-notes-by-category.md)  
   
 ## See Also  
- [Visual C++ Libraries Reference](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)   
+
  [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
 

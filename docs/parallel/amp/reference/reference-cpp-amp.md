@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::Reference (C++ AMP)"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, reference"]
@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Reference (C++ AMP)
 This section contains reference information for the C++ Accelerated Massive Parallelism (C++ AMP) runtime.  

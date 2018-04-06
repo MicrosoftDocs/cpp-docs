@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["choice", "AGENTS/concurrency::choice", "AGENTS/concurrency::choice::choice", "AGENTS/concurrency::choice::accept", "AGENTS/concurrency::choice::acquire_ref", "AGENTS/concurrency::choice::consume", "AGENTS/concurrency::choice::has_value", "AGENTS/concurrency::choice::index", "AGENTS/concurrency::choice::link_target", "AGENTS/concurrency::choice::release", "AGENTS/concurrency::choice::release_ref", "AGENTS/concurrency::choice::reserve", "AGENTS/concurrency::choice::unlink_target", "AGENTS/concurrency::choice::unlink_targets", "AGENTS/concurrency::choice::value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["choice class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # choice Class
 A `choice` messaging block is a multi-source, single-target block that represents a control-flow interaction with a set of sources. The choice block will wait for any one of multiple sources to produce a message and will propagate the index of the source that produced the message.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Validation Routines
 This topic lists the standard dialog data validation (DDV) routines used for common MFC dialog controls.  

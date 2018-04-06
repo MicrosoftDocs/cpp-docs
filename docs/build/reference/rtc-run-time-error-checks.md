@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /RTC (Run-Time Error Checks)
 Used to enable and disable the run-time error checks feature, in conjunction with the [runtime_checks](../../preprocessor/runtime-checks.md) pragma.  

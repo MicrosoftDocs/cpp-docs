@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Snapshot
 A snapshot is a recordset that reflects a static view of the data as it existed at the time the snapshot was created. When you open the snapshot and move to all the records, the set of records it contains and their values do not change until you rebuild the snapshot by calling **Requery**.  

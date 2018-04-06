@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["valarray/std::gslice", "valarray/std::gslice::size", "valarray/std::gslice::start", "valarray/std::gslice::stride"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::gslice [C++]", "std::gslice [C++], size", "std::gslice [C++], start", "std::gslice [C++], stride"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # gslice Class
 A utility class to valarray that is used to define multidimensional subsets of a valarray. If a valarray is regarded as a multidimensional matrix with all elements in an array, then the slice extracts a vector out of the multidimensional array.  

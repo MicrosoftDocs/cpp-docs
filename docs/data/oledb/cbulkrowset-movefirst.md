@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBulkRowset.MoveFirst", "CBulkRowset<TAccessor>.MoveFirst", "ATL.CBulkRowset<TAccessor>.MoveFirst", "ATL::CBulkRowset::MoveFirst", "ATL::CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset::MoveFirst", "CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset.MoveFirst"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveFirst method"]
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset::MoveFirst
 Retrieves the first row of data.  
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveFirst( ) throw( );  
+```cpp
+HRESULT MoveFirst() throw();  
   
 ```  
   

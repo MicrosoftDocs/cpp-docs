@@ -16,6 +16,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # printf_p Positional Parameters
 Positional parameters provide the ability to specify by number which of the arguments is to be substituted into a field in a format string. The following positional parameter `printf` functions are available:  

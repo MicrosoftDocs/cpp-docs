@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["@fardata"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["@fardata symbol"]
@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # @fardata
 The name of the segment defined by the [.FARDATA](../../assembler/masm/dot-fardata.md) directive (text macro).  

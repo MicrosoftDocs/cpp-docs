@@ -6,19 +6,16 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::ClassNotRegisteredException::ClassNotRegisteredException"
-  - "VCCORLIB/Platform::ClassNotRegisteredException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::ClassNotRegisteredException"
+ms.topic: "reference"
+f1_keywords: ["VCCORLIB/Platform::ClassNotRegisteredException::ClassNotRegisteredException", "VCCORLIB/Platform::ClassNotRegisteredException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::ClassNotRegisteredException"]
 ms.assetid: 8f8871d8-51b9-46e8-902e-ae023c9f1de9
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::ClassNotRegisteredException Class
 Thrown when a COM class has not been registered.  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::pointer_to_unary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_to_unary_function function", "pointer_to_unary_function class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # pointer_to_unary_function Class
 Converts a unary function pointer into an adaptable unary function.  

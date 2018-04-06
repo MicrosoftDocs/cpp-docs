@@ -14,6 +14,7 @@ caps.latest.revision: 56
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Task Parallelism (Concurrency Runtime)
 In the Concurrency Runtime, a *task* is a unit of work that performs a specific job and typically runs in parallel with other tasks. A task can be decomposed into additional, more fine-grained tasks that are organized into a *task group*.  
@@ -113,7 +114,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  For an example that uses `task`, [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), cancellation, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md). (The `task_completion_event` class is described later in this document.)  
   
 > [!TIP]
->  To learn details that are specific to tasks in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps, see [Asynchronous programming in C++](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31) and [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+>  To learn details that are specific to tasks in UWP apps, see [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) and [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
   
 ##  <a name="continuations"></a> Continuation Tasks  
  In asynchronous programming, it is very common for one asynchronous operation, on completion, to invoke a second operation and pass data to it. Traditionally, this is done by using callback methods. In the Concurrency Runtime, the same functionality is provided by *continuation tasks*. A continuation task (also known just as a continuation) is an asynchronous task that is invoked by another task, which is known as the *antecedent*, when the antecedent completes. By using continuations, you can:  
@@ -124,7 +125,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
 -   Cancel a continuation either before it starts or cooperatively while it is running.  
   
--   Provide hints about how the continuation should be scheduled. (This applies to [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps only. For more information, see [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)  
+-   Provide hints about how the continuation should be scheduled. (This applies to Universal Windows Platform (UWP) apps only. For more information, see [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)  
   
 -   Invoke multiple continuations from the same antecedent.  
   
@@ -148,7 +149,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  [!code-cpp[concrt-continuation-chain#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_6.cpp)]  
   
- A continuation can also return another task. If there is no cancellation, then this task is executed before the subsequent continuation. This technique is known as *asynchronous unwrapping*. Asynchronous unwrapping is useful when you want to perform additional work in the background, but do not want the current task to block the current thread. (This is common in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps, where continuations can run on the UI thread). The following example shows three tasks. The first task returns another task that is run before a continuation task.  
+ A continuation can also return another task. If there is no cancellation, then this task is executed before the subsequent continuation. This technique is known as *asynchronous unwrapping*. Asynchronous unwrapping is useful when you want to perform additional work in the background, but do not want the current task to block the current thread. (This is common in UWP apps, where continuations can run on the UI thread). The following example shows three tasks. The first task returns another task that is run before a continuation task.  
   
  [!code-cpp[concrt-async-unwrapping#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_7.cpp)]  
   
@@ -186,7 +187,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_10.cpp)]  
   
- Consider a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app that uses C++ and XAML and writes a set of files to disk. The following example shows how to use `when_all` and `observe_all_exceptions` to ensure that the program observes all exceptions.  
+ Consider a UWP app that uses C++ and XAML and writes a set of files to disk. The following example shows how to use `when_all` and `observe_all_exceptions` to ensure that the program observes all exceptions.  
   
  [!code-cpp[concrt-eh-when_all#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_11.cpp)]  
   
@@ -208,7 +209,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
 > [!TIP]
 
-> `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](reference/task-class.md#wait), it is safe to call this function in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app on the ASTA (Application STA) thread.  
+> `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](reference/task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.  
 
   
 ###  <a name="when-any"></a> The when_any Function  
@@ -238,7 +239,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
  `auto t = t1 || t2; // same as when_any`  
   
 > [!TIP]
->  As with `when_all`, `when_any` is non-blocking and is safe to call in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app on the ASTA thread.  
+>  As with `when_all`, `when_any` is non-blocking and is safe to call in a UWP app on the ASTA thread.  
   
 ##  <a name="delayed-tasks"></a> Delayed Task Execution  
  It is sometimes necessary to delay the execution of a task until a condition is satisfied, or to start a task in response to an external event. For example, in asynchronous programming, you might have to start a task in response to an I/O completion event.  

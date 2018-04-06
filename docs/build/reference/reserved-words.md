@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Reserved Words
 The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](../../build/reference/module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").  

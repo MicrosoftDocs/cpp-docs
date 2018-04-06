@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a Managed Class Type
 The way to declare a reference class type changed from Managed Extensions for C++ to Visual C++.  

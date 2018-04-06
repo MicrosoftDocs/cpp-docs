@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ELSEIF2"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ELSEIF2 directive"]
@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ELSEIF2
 [ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.  

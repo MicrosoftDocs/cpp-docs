@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Language Syntax Summary
 This section gives the full description of the C language and the Microsoft-specific C language features. You can use the syntax notation in this section to determine the exact syntax for any language component. The explanation for the syntax appears in the section of this manual where a topic is discussed.  

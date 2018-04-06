@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAnimationVariableIntegerChangeHandler Class
 Implements a callback, which is called by the Animation API when the value of an animation variable changes.  

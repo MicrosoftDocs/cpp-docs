@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # goto and Labeled Statements (C)
 The `goto` statement transfers control to a label. The given label must reside in the same function and can appear before only one statement in the same function.  

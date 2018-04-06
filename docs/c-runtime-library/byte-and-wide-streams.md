@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Byte and Wide Streams
 A byte stream treats a file as a sequence of bytes. Within the program, the stream is the identical sequence of bytes.  

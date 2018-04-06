@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocators::allocator_newdel", "allocators/stdext::allocator_newdel", "stdext::allocators::allocator_newdel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocators [C++], allocator_newdel", "stdext::allocator_newdel"]
@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocator_newdel Class
 Implements an allocator that uses `operator delete` to deallocate a memory block and `operator new` to allocate a memory block.  

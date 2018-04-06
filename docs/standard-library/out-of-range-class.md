@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stdexcept/std::out_of_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_range class"]
@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # out_of_range Class
 The class serves as the base class for all exceptions thrown to report an argument that is out of its valid range.  

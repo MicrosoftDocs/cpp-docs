@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetChangeImpl", "IRowsetChangeImpl", "ATL.IRowsetChangeImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["providers, updatable", "updatable providers, immediate update", "IRowsetChangeImpl class"]
@@ -15,20 +15,20 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetChangeImpl Class
 The OLE DB Templates implementation of the [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) interface in the OLE DB specification.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,   
    class Storage,   
    class BaseInterface = IRowsetChange,   
    class RowClass = CSimpleRow,   
-   class MapClass = CAtlMap < RowClass::KeyType, RowClass* >   
->  
+   class MapClass = CAtlMap <RowClass::KeyType, RowClass*>>  
 class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface  
 ```  
   

@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorMenuButton Class
 The `CMFCColorMenuButton` class supports a menu command or a toolbar button that starts a color picker dialog box.  

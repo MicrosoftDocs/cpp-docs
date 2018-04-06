@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL
 This topic discusses how to create a partially trusted Common Language Runtime application using Visual C++ by removing dependency on msvcm90.dll.  
