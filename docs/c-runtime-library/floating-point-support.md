@@ -1,7 +1,7 @@
 ---
-title: "Floating-Point Support | Microsoft Docs"
+title: "Math and floating-point support | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2018"
+ms.date: "04/06/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -14,7 +14,7 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Floating-Point Support
+# Math and floating-point support
 
 The Microsoft C Runtime library (CRT) provides many floating point math library functions, including all of those required by ISO C99. These functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there is greater inaccuracy.
 
@@ -22,7 +22,7 @@ Many of the floating point math library functions have different implementations
 
 Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported the **long double** type as an 80-bit precision floating-point data type. In later versions of Visual C++, the **long double** data type is a 64-bit precision floating-point data type identical to the **double** type. The compiler treats **long double** and **double** as distinct types, but the **long double** functions are identical to their **double** counterparts. The CRT provides **long double** versions of the math functions for ISO C99 source code compatibility, but note that the binary representation may differ from other compilers.
 
-The CRT supports these floating point functions:
+## Supported math and floating-point routines
 
 [abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)
 
@@ -51,8 +51,6 @@ The CRT supports these floating point functions:
 [_chgsign, _chgsignf, _chgsignl](../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)
 
 [_clear87, _clearfp](../c-runtime-library/reference/clear87-clearfp.md)
-
-[compl](../c-runtime-library/reference/compl.md)
 
 [conj, conjf, conjl](../c-runtime-library/reference/conj-conjf-conjl.md)
 
@@ -200,8 +198,6 @@ The CRT supports these floating point functions:
 
 [nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl](../c-runtime-library/reference/nextafter-functions.md)
 
-[norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)
-
 [pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)
 
 [remainder, remainderf, remainderl](../c-runtime-library/reference/remainder-remainderf-remainderl.md)
@@ -248,4 +244,4 @@ The CRT supports these floating point functions:
 
 ## See also
 
-[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+[Run-time routines by category](../c-runtime-library/run-time-routines-by-category.md)
