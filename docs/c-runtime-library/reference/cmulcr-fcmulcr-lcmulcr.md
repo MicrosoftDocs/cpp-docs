@@ -1,0 +1,65 @@
+---
+title: "_Cmulcr, _FCmulcr, _LCmulcr | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2018"
+ms.technology: ["cpp", "devlang-cpp"]
+ms.topic: "reference"
+apiname: ["_Cmulcr", "_FCmulcr", "_LCmulcr"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apitype: "DLLExport"
+f1_keywords: ["_Cmulcr", "_FCmulcr", "_LCmulcr", "complex/_Cmulcr", "complex/_FCmulcr", "complex/_LCmulcr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_Cmulcr function", "_FCmulcr function", "_LCmulcr function"]
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+ms.workload: ["cplusplus"]
+---
+# _Cmulcr, _FCmulcr, _LCmulcr
+
+Multiplies a complex number by a floating-point number.
+
+## Syntax
+
+```C
+_Dcomplex _Cmulcr( _Dcomplex x, double y );
+_Fcomplex _FCmulcr( _Fcomplex x, float y );
+_Lcomplex _LCmulcr( _Lcomplex x, long double y );
+```
+
+### Parameters
+
+*x*<br/>
+One of the complex operands to multiply.
+
+*y*<br/>
+The floating-point operand to multiply.
+
+## Return Value
+
+A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the complex product of the complex number *x* and flaoting-point number *y*.
+
+## Remarks
+
+Because the built-in arithmetic operators do not work on the Microsoft implementation of the complex types, the **_Cmulcr**, **_FCmulcr**, and **_LCmulcr** functions simplify multiplication of complex types by floating-point types.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|`_Cmulcr`,`_FCmulcr`, `_LCmulcr`|\<complex.h>|\<ccomplex>|
+
+These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, and **_Lcomplex** are Microsoft-specific equivalents to the unimplemented C99 native types **double _Complex**, **float _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See also
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[_Cbuild, _FCbuild, _LCbuild](../../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md)<br/>
+[_Cmulcc, _FCmulcc, _LCmulcc](../../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md)<br/>
+[norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
+[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
+[creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>
+[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)<br/>
