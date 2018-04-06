@@ -1,7 +1,7 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -63,22 +63,22 @@ long double erfcl(
  A floating-point value.  
   
 ## Return Value  
- The `erf` functions return the Gauss error function of `x`. The `erfc` functions return the complementary Gauss error function of `x`.  
+ The **erf** functions return the Gauss error function of `x`. The **erfc** functions return the complementary Gauss error function of `x`.  
   
 ## Remarks  
- The `erf` functions calculate the Gauss error function of x, which is defined as:  
+ The **erf** functions calculate the Gauss error function of x, which is defined as:  
   
  ![The error function of x](../../c-runtime-library/reference/media/crt_erf_formula.PNG "CRT_erf_formula")  
   
- The complementary Gauss error function is defined as 1 - erf(x). The `erf` functions return a value in the range -1.0 to 1.0. There is no error return. The `erfc` functions return a value in the range 0 to 2. If `x` is too large for `erfc`, the `errno` variable is set to `ERANGE`.  
+ The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If `x` is too large for **erfc**, the **errno** variable is set to **ERANGE**.  
   
- Because C++ allows overloading, you can call overloads of `erf` and `erfc` that take and return `float` and `long double` types. In a C program, `erf` and `erfc` always take and return a `double`.  
+ Because C++ allows overloading, you can call overloads of **erf** and **erfc** that take and return **float** and **long** **double** types. In a C program, **erf** and **erfc** always take and return a **double**.  
   
 ## Requirements  
   
 |Function|Required header|  
 |--------------|---------------------|  
-|`erf`, `erff`, `erfl`, `erfc`, `erfcf`, `erfcl`|\<math.h>|  
+|**erf**, **erff**, **erfl**, **erfc**, **erfcf**, **erfcl**|\<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

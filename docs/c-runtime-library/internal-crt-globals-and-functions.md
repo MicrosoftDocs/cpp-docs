@@ -352,4 +352,4 @@ These functions and function macros are used to implement the CRT and the C++ St
   
 ## See Also
 
-[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

@@ -23,4 +23,4 @@ The Microsoft run-time library provides many routines that are useful for creati
  Also included are the ISO646 operator alternatives.  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

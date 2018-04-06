@@ -71,4 +71,4 @@ These routines operate on null-terminated single-byte character, wide-character,
 |[vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md), [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)|Write formatted output using a pointer to a list of arguments|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

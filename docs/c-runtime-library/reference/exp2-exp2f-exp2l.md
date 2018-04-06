@@ -1,7 +1,7 @@
 ---
 title: "exp2, exp2f, exp2l | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
@@ -66,13 +66,13 @@ long double exp2l(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `exp2` that take and return **float** and **long double** types. In a C program, `exp2` always takes and returns a **double**.  
+ Because C++ allows overloading, you can call overloads of **exp2** that take and return **float** and **long double** types. In a C program, **exp2** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Routine|C header|C++ header|  
 |-------------|--------------|------------------|  
-|`exp`, `expf`, `expl`|\<math.h>|\<cmath>|  
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

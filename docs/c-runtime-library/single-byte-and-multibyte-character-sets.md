@@ -27,4 +27,4 @@ The ASCII character set defines characters in the range 0x00 - 0x7F. There are a
   
 ## See Also  
  [Internationalization](../c-runtime-library/internationalization.md)   
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

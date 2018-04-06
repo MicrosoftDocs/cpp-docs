@@ -42,4 +42,4 @@ The following C run-time functions support data alignment.
 |[_aligned_recalloc_dbg](../c-runtime-library/reference/aligned-recalloc-dbg.md)|Changes the size of a memory block that was allocated with [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

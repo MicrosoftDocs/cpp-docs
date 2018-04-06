@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CRT Alphabetical Function Reference
 
-The C Run-Time (CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Run-Time Routines by Category](../../c-runtime-library/run-time-routines-by-category.md).
+The C Run-Time (CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md).
 
 ## A
 

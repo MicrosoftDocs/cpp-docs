@@ -1,7 +1,7 @@
 ---
 title: "_ecvt_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -21,7 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ecvt_s
-Converts a `double` number to a string. This is a version of [_ecvt](../../c-runtime-library/reference/ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
+Converts a **double** number to a string. This is a version of [_ecvt](../../c-runtime-library/reference/ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
   
@@ -66,29 +66,29 @@ errno_t _ecvt_s(
 ## Return Value  
  Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
+ In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.  
   
 ### Error Conditions  
   
 |`_Buffer`|`_SizeInBytes`|_Value|_Count|_Dec|_Sign|Return value|Value in `buffer`|  
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|  
-|`NULL`|any|any|any|any|any|`EINVAL`|Not modified.|  
-|Not `NULL` (points to valid memory)|<=0|any|any|any|any|`EINVAL`|Not modified.|  
-|any|any|any|any|`NULL`|any|`EINVAL`|Not modified.|  
-|any|any|any|any|any|`NULL`|`EINVAL`|Not modified.|  
+|**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|  
+|Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|  
+|any|any|any|any|**NULL**|any|**EINVAL**|Not modified.|  
+|any|any|any|any|any|**NULL**|**EINVAL**|Not modified.|  
   
  **Security Issues**  
   
- `_ecvt_s` might generate an access violation if `buffer` does not point to valid memory and is not `NULL`.  
+ **_ecvt_s** might generate an access violation if `buffer` does not point to valid memory and is not **NULL**.  
   
 ## Remarks  
- The `_ecvt_s` function converts a floating-point number to a character string. The `_Value` parameter is the floating-point number to be converted. This function stores up to `count` digits of `_Value` as a string and appends a null character ('\0'). If the number of digits in `_Value` exceeds `_Count`, the low-order digit is rounded. If there are fewer than `count` digits, the string is padded with zeros.  
+ The **_ecvt_s** function converts a floating-point number to a character string. The `_Value` parameter is the floating-point number to be converted. This function stores up to `count` digits of `_Value` as a string and appends a null character ('\0'). If the number of digits in `_Value` exceeds `_Count`, the low-order digit is rounded. If there are fewer than `count` digits, the string is padded with zeros.  
   
  Only digits are stored in the string. The position of the decimal point and the sign of `_Value` can be obtained from `_Dec` and `_Sign` after the call. The `_Dec` parameter points to an integer value giving the position of the decimal point with respect to the beginning of the string. A 0 or negative integer value indicates that the decimal point lies to the left of the first digit. The `_Sign` parameter points to an integer that indicates the sign of the converted number. If the integer value is 0, the number is positive. Otherwise, the number is negative.  
   
- A buffer of length `_CVTBUFSIZE` is sufficient for any floating-point value.  
+ A buffer of length **_CVTBUFSIZE** is sufficient for any floating-point value.  
   
- The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `_Count` parameter. `_ecvt_s` interprets `_Count` as the total number of digits in the output string, whereas `_fcvt_s` interprets `_Count` as the number of digits after the decimal point.  
+ The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the `_Count` parameter. **_ecvt_s** interprets `_Count` as the total number of digits in the output string, whereas **_fcvt_s** interprets `_Count` as the number of digits after the decimal point.  
   
  In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -98,7 +98,7 @@ errno_t _ecvt_s(
   
 |Function|Required header|Optional header|  
 |--------------|---------------------|---------------------|  
-|`_ecvt_s`|\<stdlib.h>|\<errno.h>|  
+|**_ecvt_s**|\<stdlib.h>|\<errno.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

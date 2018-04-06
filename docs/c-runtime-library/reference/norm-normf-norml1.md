@@ -1,7 +1,7 @@
 ---
 title: "norm, normf, norml | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2018"
+ms.date: "04/05/2018"
 ms.technology: ["cpp", "devlang-cpp"]
 ms.topic: "reference"
 apiname: ["norm", "normf", "norml"]
@@ -44,13 +44,13 @@ The squared magnitude of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `norm` that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, `norm` always takes a **_Dcomplex** value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **norm** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, **norm** always takes a **_Dcomplex** value and returns a **double** value.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|`norm`, `normf`, `norml`|\<complex.h>|\<ccomplex>|
+|**norm**, **normf**, **norml**|\<complex.h>|\<complex.h>|
 
 The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "_fcvt_s | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -66,29 +66,29 @@ errno_t _fcvt_s(
 ## Return Value  
  Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For a listing of these errors, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
+ In the case of an invalid parameter, as listed in the following table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.  
   
 ### Error Conditions  
   
 |`buffer`|`sizeInBytes`|value|count|dec|sign|Return|Value in `buffer`|  
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|  
-|`NULL`|any|any|any|any|any|`EINVAL`|Not modified.|  
-|Not `NULL` (points to valid memory)|<=0|any|any|any|any|`EINVAL`|Not modified.|  
-|any|any|any|any|`NULL`|any|`EINVAL`|Not modified.|  
-|any|any|any|any|any|`NULL`|`EINVAL`|Not modified.|  
+|**NULL**|any|any|any|any|any|**EINVAL**|Not modified.|  
+|Not **NULL** (points to valid memory)|<=0|any|any|any|any|**EINVAL**|Not modified.|  
+|any|any|any|any|**NULL**|any|**EINVAL**|Not modified.|  
+|any|any|any|any|any|**NULL**|**EINVAL**|Not modified.|  
   
  **Security Issues**  
   
- `_fcvt_s` might generate an access violation if `buffer` does not point to valid memory and is not `NULL`.  
+ **_fcvt_s** might generate an access violation if `buffer` does not point to valid memory and is not **NULL**.  
   
 ## Remarks  
- The `_fcvt_s` function converts a floating-point number to a null-terminated character string. The `value` parameter is the floating-point number to be converted. `_fcvt_s` stores the digits of `value` as a string and appends a null character ('\0'). The `count` parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to `count` places. If there are fewer than `count` digits of precision, the string is padded with zeros.  
+ The **_fcvt_s** function converts a floating-point number to a null-terminated character string. The `value` parameter is the floating-point number to be converted. **_fcvt_s** stores the digits of `value` as a string and appends a null character ('\0'). The `count` parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to `count` places. If there are fewer than `count` digits of precision, the string is padded with zeros.  
   
  Only digits are stored in the string. The position of the decimal point and the sign of `value` can be obtained from `dec` and `sign` after the call. The `dec` parameter points to an integer value; this integer value gives the position of the decimal point with respect to the beginning of the string. A zero or negative integer value indicates that the decimal point lies to the left of the first digit. The parameter `sign` points to an integer indicating the sign of `value`. The integer is set to 0 if `value` is positive and is set to a nonzero number if `value` is negative.  
   
- A buffer of length `_CVTBUFSIZE` is sufficient for any floating point value.  
+ A buffer of length **_CVTBUFSIZE** is sufficient for any floating point value.  
   
- The difference between `_ecvt_s` and `_fcvt_s` is in the interpretation of the `count` parameter. `_ecvt_s` interprets `count` as the total number of digits in the output string, and `_fcvt_s` interprets `count` as the number of digits after the decimal point.  
+ The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of the `count` parameter. **_ecvt_s** interprets `count` as the total number of digits in the output string, and **_fcvt_s** interprets `count` as the number of digits after the decimal point.  
   
  In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -98,7 +98,7 @@ errno_t _fcvt_s(
   
 |Function|Required header|Optional header|  
 |--------------|---------------------|---------------------|  
-|`_fcvt_s`|\<stdlib.h>|\<errno.h>|  
+|**_fcvt_s**|\<stdlib.h>|\<errno.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

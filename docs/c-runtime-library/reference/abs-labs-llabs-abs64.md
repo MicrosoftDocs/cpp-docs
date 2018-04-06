@@ -1,7 +1,7 @@
 ---
 title: "abs, labs, llabs, _abs64 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -60,14 +60,14 @@ __int64 _abs64(
  Numeric value.  
   
 ## Return Value  
- The `abs`, `labs`, `llabs` and `_abs64` functions return the absolute value of the parameter `n`. There is no error return.  
+ The **abs**, **labs**, **llabs** and **_abs64** functions return the absolute value of the parameter `n`. There is no error return.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `abs` that take and return `long`, `long long`, `float`, `double`, and `long double` values. These overloads are defined in the \<cmath> header. In a C program, `abs` always takes and returns an int.  
+ Because C++ allows overloading, you can call overloads of **abs** that take and return **long**, **long** **long**, **float**, **double**, and **long** **double** values. These overloads are defined in the \<cmath> header. In a C program, **abs** always takes and returns an int.  
   
  **Microsoft Specific**  
   
- Because the range of negative integers that can be represented by using any integral type is larger than the range of positive integers that can be represented by using that type, it's possible to supply an argument to these functions that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the `abs` functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns `INT_MIN`, `labs(LONG_MIN)` returns `LONG_MIN`, `llabs(LLONG_MIN)` returns `LLONG_MIN`, and `_abs64(_I64_MIN)` returns `_I64_MIN`. This means that the `abs` functions cannot be used to guarantee a positive value.  
+ Because the range of negative integers that can be represented by using any integral type is larger than the range of positive integers that can be represented by using that type, it's possible to supply an argument to these functions that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the **abs** functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns **INT_MIN**, `labs(LONG_MIN)` returns **LONG_MIN**, `llabs(LLONG_MIN)` returns **LLONG_MIN**, and `_abs64(_I64_MIN)` returns **_I64_MIN**. This means that the **abs** functions cannot be used to guarantee a positive value.  
   
  **End Microsoft Specific**  
   
@@ -75,10 +75,10 @@ __int64 _abs64(
   
 |Routine|Required C header|Required C++ header|  
 |-------------|-----------------------|---------------------------|  
-|`abs`, `labs`, `llabs`|\<math.h> or \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> or \<math.h>|  
-|`_abs64`|\<stdlib.h>|\<cstdlib> or \<stdlib.h>|  
+|**abs**, **labs**, **llabs**|\<math.h> or \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> or \<math.h>|  
+|**_abs64**|\<stdlib.h>|\<cstdlib> or \<stdlib.h>|  
   
- To use the overloaded versions of `abs` in C++, you must include the \<cmath> header.  
+ To use the overloaded versions of **abs** in C++, you must include the \<cmath> header.  
   
 ## Example  
  This program computes and displays the absolute values of several numbers.  

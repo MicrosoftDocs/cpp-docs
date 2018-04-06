@@ -1,7 +1,7 @@
 ---
 title: "fdim, fdimf, fdiml | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
@@ -79,7 +79,7 @@ long double fdiml(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `fdim` that take and return float and long double types. In a C program, `fdim` always takes and returns a double.  
+ Because C++ allows overloading, you can call overloads of **fdim** that take and return **float** and **long** **double** types. In a C program, **fdim** always takes and returns a **double**.  
   
  Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.  
   
@@ -87,7 +87,7 @@ long double fdiml(
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`fdim`, `fdimf`, `fdiml`|\<math.h>|\<cmath>|  
+|**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

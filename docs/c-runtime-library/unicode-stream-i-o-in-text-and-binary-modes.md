@@ -27,5 +27,5 @@ When a Unicode stream I/O routine (such as `fwprintf`, `fwscanf`, `fgetwc`, `fpu
  However, when a Unicode stream-I/O function operates in binary mode, the file is assumed to be Unicode, and no CR-LF translation or character conversion occurs during input or output. Use the _setmode( _fileno( stdin ), _O_BINARY ); instruction in order to correctly use wcin on a UNICODE text file.  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [Input and Output](../c-runtime-library/input-and-output.md)

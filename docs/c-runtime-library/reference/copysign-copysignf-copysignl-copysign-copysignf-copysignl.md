@@ -1,7 +1,7 @@
 ---
 title: "copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -66,17 +66,17 @@ long double _copysignl(
  [Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)  
   
 ## Return Value  
- The `copysign` functions return a floating-point value that combines the magnitude of `x` and the sign of `y`. There is no error return.  
+ The **copysign** functions return a floating-point value that combines the magnitude of `x` and the sign of `y`. There is no error return.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `copysign` that take and return `float` or `long double` values. In a C program, `copysign` always takes and returns a `double`.  
+ Because C++ allows overloading, you can call overloads of **copysign** that take and return **float** or **long** **double** values. In a C program, **copysign** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_copysign`|\<float.h>|  
-|`copysign`, `copysignf`, `copysignl`, `_copysignf`, `_copysignl`|\<math.h>|  
+|**_copysign**|\<float.h>|  
+|**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<math.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

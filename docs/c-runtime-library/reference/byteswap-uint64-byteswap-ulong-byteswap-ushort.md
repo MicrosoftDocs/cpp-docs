@@ -37,23 +37,23 @@ unsigned __int64 _byteswap_uint64 (
 );  
 ```  
   
-#### Parameters  
- `val`  
+### Parameters  
+ *val*  
  The integer to reverse byte order.  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_byteswap_ushort`|\<stdlib.h>|  
-|`_byteswap_ulong`|\<stdlib.h>|  
-|`_byteswap_uint64`|\<stdlib.h>|  
+|**_byteswap_ushort**|\<stdlib.h>|  
+|**_byteswap_ulong**|\<stdlib.h>|  
+|**_byteswap_uint64**|\<stdlib.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
   
-```  
+```C  
 // crt_byteswap.c  
 #include <stdlib.h>  
   
@@ -73,4 +73,4 @@ byteswap of 1020304 = 4030201
 ```  
   
 ## See Also  
- [Run-Time Routines by Category](../../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md)

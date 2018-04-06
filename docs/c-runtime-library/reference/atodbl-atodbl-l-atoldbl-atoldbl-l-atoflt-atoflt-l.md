@@ -1,7 +1,7 @@
 ---
 title: "_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -21,7 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
-Converts a string to a double (`_atodbl`), long double (`_atoldbl`), or float (`_atoflt`).  
+Converts a string to a double (**_atodbl**), long double (**_atoldbl**), or float (**_atoflt**).  
   
 ## Syntax  
   
@@ -56,30 +56,30 @@ int _atoflt_l(
 ```  
   
 #### Parameters  
- `value`  
+ **value**  
  The double, long double, or float value that's produced by converting the string to a floating-point value. These values are wrapped in a structure.  
   
- `str`  
+ **str**  
  The string to be parsed to convert into a floating-point value.  
   
- `locale`  
+ **locale**  
  The locale to use.  
   
 ## Return Value  
- Returns 0 if successful. Possible error codes are `_UNDERFLOW` or `_OVERFLOW`, which are defined in the header file Math.h.  
+ Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file Math.h.  
   
 ## Remarks  
- These functions convert a string to a floating-point value. The difference between these functions and the `atof` family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.  
+ These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.  
   
- If a string does not have a valid interpretation as a floating-point value, `value` is set to zero and the return value is zero.  
+ If a string does not have a valid interpretation as a floating-point value, **value** is set to zero and the return value is zero.  
   
- The versions of these functions that have the `_l` suffix are identical the versions that don't have the suffix, except that they use the locale parameter that's passed in instead of the current thread locale.  
+ The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the locale parameter that's passed in instead of the current thread locale.  
   
 ## Requirements  
   
 |Routines|Required header|  
 |--------------|---------------------|  
-|`_atodbl`, `_atoldbl`, `_atoflt`<br /><br /> `_atodbl_l`, `_atoldbl_l`, `_atoflt_l`|\<stdlib.h>|  
+|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|  
   
 ## Example  
   

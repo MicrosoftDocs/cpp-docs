@@ -35,4 +35,4 @@ Any Microsoft `MBCS` run-time library routine that handles only one multibyte ch
   
 ## See Also  
  [Internationalization](../c-runtime-library/internationalization.md)   
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

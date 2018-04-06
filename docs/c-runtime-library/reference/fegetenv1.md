@@ -1,7 +1,7 @@
 ---
-title: "fegetenv1 | Microsoft Docs"
+title: "fegetenv | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]

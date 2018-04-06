@@ -1,7 +1,7 @@
 ---
 title: "_get_FMA3_enable, _set_FMA3_enable | Microsoft Docs"
 ms.custom: ""
-ms.date: "6/13/2017"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]

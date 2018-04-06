@@ -1,7 +1,7 @@
 ---
 title: "atanh, atanhf, atanhl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -44,25 +44,25 @@ long double atanhl(
 ```  
   
 #### Parameters  
- `x`  
+ **x**  
  Floating-point value.  
   
 ## Return Value  
- The `atanh` functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of `x`. If `x` is greater than 1, or less than -1, `errno` is set to `EDOM` and the result is a quiet NaN. If `x` is equal to 1 or -1, a positive or negative infinity is returned, respectively, and `errno` is set to `ERANGE`.  
+ The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of **x**. If **x** is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If **x** is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.  
   
-|Input|SEH Exception|`Matherr` Exception|  
+|Input|SEH Exception|**Matherr** Exception|  
 |-----------|-------------------|-------------------------|  
 |± QNAN,IND|none|none|  
-|`X` ≥ 1; `x` ≤ -1|none|none|  
+|**X** ≥ 1; **x** ≤ -1|none|none|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `atanh` that take and return `float` or `long double` values. In a C program, `atanh` always takes and returns `double`.  
+ Because C++ allows overloading, you can call overloads of **atanh** that take and return **float** or **long** **double** values. In a C program, **atanh** always takes and returns **double**.  
   
 ## Requirements  
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`atanh`, `atanhf`, `atanhl`|\<math.h>|\<cmath>|  
+|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

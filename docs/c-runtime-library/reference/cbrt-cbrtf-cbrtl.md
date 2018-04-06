@@ -1,7 +1,7 @@
 ---
 title: "cbrt, cbrtf, cbrtl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -44,24 +44,24 @@ long double cbrtl(
 ```  
   
 #### Parameters  
- `x`  
+ *x*  
  Floating-point value  
   
 ## Return Value  
- The `cbrt` functions return the cube-root of `x`.  
+ The **cbrt** functions return the cube-root of *x*.  
   
-|Input|SEH Exception|`_matherr` Exception|  
+|Input|SEH Exception|**_matherr** Exception|  
 |-----------|-------------------|--------------------------|  
 |± ∞, QNAN, IND|none|none|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cbrt` that take `float` or `long double` types. In a C program, `cbrt` always takes and returns `double`.  
+ Because C++ allows overloading, you can call overloads of **cbrt** that take **float** or **long** **double** types. In a C program, **cbrt** always takes and returns **double**.  
   
 ## Requirements  
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`cbrt`, `cbrtf`, `cbrtl`|\<math.h>|\<cmath>|  
+|**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

@@ -105,5 +105,5 @@ The debug version of the C run-time library supplies many diagnostic services th
 |C [assert](../c-runtime-library/reference/assert-macro-assert-wassert.md) routine|C++ [new](../cpp/new-operator-cpp.md) operator|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [Run-Time Error Checking](../c-runtime-library/run-time-error-checking.md)

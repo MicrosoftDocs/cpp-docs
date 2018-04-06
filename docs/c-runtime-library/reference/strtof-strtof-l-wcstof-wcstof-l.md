@@ -1,7 +1,7 @@
 ---
 title: "strtof, _strtof_l, wcstof, _wcstof_l | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]

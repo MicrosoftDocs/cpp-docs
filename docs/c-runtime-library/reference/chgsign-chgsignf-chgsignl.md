@@ -1,7 +1,7 @@
 ---
 title: "_chgsign, _chgsignf, _chgsignl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -38,18 +38,18 @@ long double _chgsignl(
 ```  
   
 #### Parameters  
- `x`  
+ *x*  
  The floating-point value to be changed.  
   
 ## Return Value  
- The `_chgsign` functions return a value that's equal to the floating-point argument `x`, but with its sign reversed. There is no error return.  
+ The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There is no error return.  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_chgsign`|\<float.h>|  
-|`_chgsignf`, `_chgsignl`|\<math.h>|  
+|**_chgsign**|\<float.h>|  
+|**_chgsignf**, **_chgsignl**|\<math.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

@@ -52,5 +52,5 @@ These functions invoke the operating system directly for lower-level operation t
   
 ## See Also  
  [Input and Output](../c-runtime-library/input-and-output.md)   
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [System Calls](../c-runtime-library/system-calls.md)

@@ -1,7 +1,7 @@
 ---
 title: "Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -49,41 +49,41 @@ double _yn(
 ```  
   
 #### Parameters  
- `x`  
+ *x*  
  Floating-point value.  
   
- `n`  
+ *n*  
  Integer order of Bessel function.  
   
 ## Return Value  
- Each of these routines returns a Bessel function of `x`. If `x` is negative in the `_y0`, `_y1`, or `_yn` functions, the routine sets `errno` to `EDOM`, prints a `_DOMAIN` error message to `stderr`, and returns `_HUGE_VAL`. You can modify error handling by using `_matherr`.  
+ Each of these routines returns a Bessel function of *x*. If *x* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.  
   
 ## Remarks  
- The `_j0`, `_j1`, and `_jn` routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.  
+ The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
-|± `QNAN`,`IND`|`INVALID`|`_DOMAIN`|  
+|± **QNAN**,**IND**|**INVALID**|**_DOMAIN**|  
   
- The `_y0`, `_y1`, and `_yn` routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.  
+ The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
-|± `QNAN`,`IND`|`INVALID`|`_DOMAIN`|  
-|± 0|`ZERODIVIDE`|`_SING`|  
-|&#124;x&#124;<0.0|`INVALID`|`_DOMAIN`|  
+|± **QNAN**, **IND**|**INVALID**|**_DOMAIN**|  
+|± 0|**ZERODIVIDE**|**_SING**|  
+|&#124;x&#124; < 0.0|**INVALID**|**_DOMAIN**|  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_j0`, `_j1`, `_jn`, `_y0`, `_y1`, `_yn`|\<cmath> (C++), \<math.h> (C, C++)|  
+|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|  
   
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   
-```  
+```C  
 // crt_bessel1.c  
 #include <math.h>  
 #include <stdio.h>  

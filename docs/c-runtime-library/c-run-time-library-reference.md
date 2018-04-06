@@ -26,7 +26,7 @@ The Microsoft run-time library provides routines for programming for the Microso
  [C Run-Time Libraries](../c-runtime-library/crt-library-features.md)  
  Discusses the .lib files that comprise the C run-time libraries.  
   
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)  
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)  
  Provides links to the run-time library by category.  
   
  [Global Variables and Standard Types](../c-runtime-library/global-variables-and-standard-types.md)  

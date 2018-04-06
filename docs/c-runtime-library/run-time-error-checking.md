@@ -32,7 +32,7 @@ The C run-time library contains the functions that support run-time error checks
 |[_RTC_SetErrorType](../c-runtime-library/reference/rtc-seterrortype.md)|Associates an error that is detected by run-time error checks with a type.|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [/RTC (Run-Time Error Checks)](../build/reference/rtc-run-time-error-checks.md)   
  [runtime_checks](../preprocessor/runtime-checks.md)   
  [Debug Routines](../c-runtime-library/debug-routines.md)

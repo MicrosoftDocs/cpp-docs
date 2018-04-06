@@ -1,7 +1,7 @@
 ---
 title: "fabs, fabsf, fabsl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -48,20 +48,20 @@ long double fabsl(
  Floating-point value.  
   
 ## Return Value  
- The `fabs` functions return the absolute value of the argument `x`. There is no error return.  
+ The **fabs** functions return the absolute value of the argument `x`. There is no error return.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
 |± QNAN,IND|none|_DOMAIN|  
   
 ## Remarks  
- C++ allows overloading, so you can call overloads of `fabs` if you include the \<cmath> header. In a C program, `fabs` always takes and returns a double.  
+ C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Function|Required C header|Required C++ header|  
 |--------------|-----------------------|---------------------------|  
-|`fabs`, `fabsf`, `fabsl`|\<math.h>|\<cmath> or \<math.h>|  
+|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> or \<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

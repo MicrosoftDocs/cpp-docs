@@ -1,7 +1,7 @@
 ---
 title: "remquo, remquof, remquol | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # remquo, remquof, remquol
+
 Computes the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter.  
   
 ## Syntax  
@@ -65,20 +66,20 @@ long double remquol(
  A pointer to an integer to store a value that has the sign and approximate magnitude of the quotient.  
   
 ## Return Value  
- `remquo` returns the floating-point remainder of `x` / `y`. If the value of `y` is 0.0, `remquo` returns a quiet NaN. For information about the representation of a quiet NaN by the `printf` family, see [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
+ **remquo** returns the floating-point remainder of `x` / `y`. If the value of `y` is 0.0, **remquo** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
   
 ## Remarks  
- The `remquo` function calculates the floating-point remainder `f` of `x` / `y` such that `x` = `i` `*` `y` + `f`, where `i` is an integer, `f` has the same sign as `x`, and the absolute value of `f` is less than the absolute value of `y`.  
+ The **remquo** function calculates the floating-point remainder `f` of `x` / `y` such that `x` = `i` `*` `y` + `f`, where `i` is an integer, `f` has the same sign as `x`, and the absolute value of `f` is less than the absolute value of `y`.  
   
- C++ allows overloading, so you can call overloads of `remquo` that take and return `float` or `long double` values. In a C program, `remquo` always takes two doubles and returns a double.  
+ C++ allows overloading, so you can call overloads of **remquo** that take and return **float** or **long** **double** values. In a C program, **remquo** always takes two **double** arguments and returns a **double**.  
   
 ## Requirements  
   
-|Function|Required header|  
-|--------------|---------------------|  
-|`remquo`, `remquof`, `remquol`|\<math.h>|  
+|Function|Required header (C)|Required header (++)|  
+|--------------|---------------------|-|  
+|**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> or \<math.h>|  
   
- For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   

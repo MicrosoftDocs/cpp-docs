@@ -30,5 +30,5 @@ Use the following C run-time library functions to improve the robustness of your
 |[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Installs your own termination function to be called by [unexpected](../c-runtime-library/reference/unexpected-crt.md).|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [SetUnhandledExceptionFilter](http://msdn.microsoft.com/library/windows/desktop/ms680634.aspx)

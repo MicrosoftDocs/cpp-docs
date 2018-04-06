@@ -86,6 +86,6 @@ Use these routines to create, delete, and manipulate files and to set and check 
 -   [CreateNamedPipe](http://msdn.microsoft.com/library/windows/desktop/aa365150.aspx)  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)   
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)   
  [Directory Control](../c-runtime-library/directory-control.md)   
  [System Calls](../c-runtime-library/system-calls.md)

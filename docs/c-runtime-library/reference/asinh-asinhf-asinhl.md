@@ -1,7 +1,7 @@
 ---
 title: "asinh, asinhf, asinhl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -44,24 +44,24 @@ long double asinhl(
 ```  
   
 #### Parameters  
- `x`  
+ **x**  
  Floating-point value.  
   
 ## Return Value  
- The `asinh` functions return the inverse hyberbolic sine (arc hyperbolic sine) of `x`. This function is valid over the floating-point domain. If `x` is a quiet NaN, indefinite, or infinity, the same value is returned.  
+ The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine) of **x**. This function is valid over the floating-point domain. If **x** is a quiet NaN, indefinite, or infinity, the same value is returned.  
   
-|Input|SEH Exception|`_matherr` Exception|  
+|Input|SEH Exception|**_matherr** Exception|  
 |-----------|-------------------|--------------------------|  
 |± QNAN, IND, INF|none|none|  
   
 ## Remarks  
- When you use C++, you can call overloads of `asinh` that take and return `float` or `long double` values. In a C program, `asinh` always takes and returns `double`.  
+ When you use C++, you can call overloads of **asinh** that take and return **float** or **long** **double** values. In a C program, **asinh** always takes and returns **double**.  
   
 ## Requirements  
   
 |Function|C header|C++ header|  
 |--------------|--------------|------------------|  
-|`asinh`, `asinhf`, `asinhl`|\<math.h>|\<cmath>|  
+|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

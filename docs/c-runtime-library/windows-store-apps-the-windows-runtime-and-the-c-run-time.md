@@ -52,4 +52,4 @@ For a complete list of CRT functions that are not available in a UWP app and sug
 ## See Also
  [Compatibility](../c-runtime-library/compatibility.md) 
  [Windows Runtime Unsupported CRT Functions](../c-runtime-library/windows-runtime-unsupported-crt-functions.md) 
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

@@ -1,7 +1,7 @@
 ---
 title: "asin, asinf, asinl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -48,24 +48,24 @@ long double asinl(
  Value whose arcsine is to be calculated.  
   
 ## Return Value  
- The `asin` function returns the arcsine (the inverse sine function) of `x` in the range -π/2 to π/2 radians.  
+ The **asin** function returns the arcsine (the inverse sine function) of `x` in the range -π/2 to π/2 radians.  
   
- By default, if `x` is less than -1 or greater than 1, `asin` returns an indefinite.  
+ By default, if `x` is less than -1 or greater than 1, **asin** returns an indefinite.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
-|± ∞|`INVALID`|`_DOMAIN`|  
-|± `QNAN`,`IND`|none|`_DOMAIN`|  
-|&#124;x&#124;>1|`INVALID`|`_DOMAIN`|  
+|± ∞|**INVALID**|**_DOMAIN**|  
+|± **QNAN**,**IND**|none|**_DOMAIN**|  
+|&#124;x&#124;>1|**INVALID**|**_DOMAIN**|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `asin` with `float` and `long double` values. In a C program, `asin` always takes and returns a double.  
+ Because C++ allows overloading, you can call overloads of **asin** with **float** and **long** **double** values. In a C program, **asin** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`asin`, `asinf`, `asinl`|\<math.h>|  
+|**asin**, **asinf**, **asinl**|\<math.h>|  
   
 ## Example  
  For more information, see [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md).  

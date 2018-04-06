@@ -85,4 +85,4 @@ Use the process-control routines to start, stop, and manage processes from withi
 |`_execvpe, _spawnvpe`|Yes|Array|Pointer to environment table for new process passed as last argument|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

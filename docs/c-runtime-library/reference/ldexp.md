@@ -1,18 +1,18 @@
 ---
-title: "ldexp | Microsoft Docs"
+title: "ldexp, ldexpf, ldexpl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: ["ldexp"]
+apiname: ["ldexp", "ldexpf", "ldexpl", "_ldexpl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["ldexp", "_ldexpl"]
+f1_keywords: ["ldexp", "ldexpf", "ldexpl", "_ldexpl"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["calculating real numbers", "computing real numbers", "mantissas, floating-point variables", "ldexp function", "exponent, floating-point numbers", "floating-point functions, mantissa and exponent"]
+helpviewer_keywords: ["calculating real numbers", "computing real numbers", "mantissas, floating-point variables", "ldexp function", "ldexpf function", "ldexpl function", "exponent, floating-point numbers", "floating-point functions, mantissa and exponent"]
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
 caps.latest.revision: 12
 author: "corob-msft"
@@ -20,7 +20,7 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# ldexp
+# ldexp, ldexpf, ldexpl
 Multiplies a floating-point number by an integral power of two.  
   
 ## Syntax  
@@ -56,7 +56,7 @@ long double ldexpl(
  Integer exponent.  
   
 ## Return Value  
- The `ldexp` function returns the value of `x` * 2<sup>exp</sup> if successful. On overflow, and depending on the sign of `x`, `ldexp` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
+ The `ldexp` functions return the value of `x` * 2<sup>exp</sup> if successful. On overflow, and depending on the sign of `x`, `ldexp` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
   
  For more information about `errno` and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

@@ -36,4 +36,4 @@ Provides readable alternatives to certain operators or punctuators. The standard
   
 ## See Also  
  [Internationalization](../c-runtime-library/internationalization.md)   
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

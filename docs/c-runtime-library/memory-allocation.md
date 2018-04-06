@@ -54,4 +54,4 @@ Use these routines to allocate, free, and reallocate memory.
 |[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|Set new handler mode for `malloc`|  
   
 ## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+ [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

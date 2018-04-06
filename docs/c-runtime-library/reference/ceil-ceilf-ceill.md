@@ -1,7 +1,7 @@
 ---
 title: "ceil, ceilf, ceill | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -44,26 +44,26 @@ long double ceill(
 ```  
   
 #### Parameters  
- `x`  
+ *x*  
  Floating-point value.  
   
 ## Return Value  
- The `ceil` functions return a floating-point value that represents the smallest integer that is greater than or equal to `x`. There is no error return.  
+ The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *x*. There is no error return.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
-|± `QNAN`,`IND`|none|`_DOMAIN`|  
+|± **QNAN**,**IND**|none|**_DOMAIN**|  
   
- `ceil` has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
+ **ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `ceil`. In a C program, `ceil` always takes and returns a double.  
+ Because C++ allows overloading, you can call overloads of **ceil** that take **float** or **long** **double** types. In a C program, **ceil** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`ceil`, `ceilf`, `ceill`|\<math.h>|  
+|**ceil**, **ceilf**, **ceill**|\<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   

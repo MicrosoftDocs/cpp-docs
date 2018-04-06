@@ -1,7 +1,7 @@
 ---
-title: "frexp | Microsoft Docs"
+title: "frexp, frexpf, frexpl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -20,7 +20,7 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# frexp
+# frexp, frexpf, frexpl
 Gets the mantissa and exponent of a floating-point number.  
   
 ## Syntax  
@@ -30,6 +30,14 @@ double frexp(
    double x,  
    int *expptr   
 );  
+float frexpf(  
+   float x,  
+   int * expptr  
+);
+long double frexpl(  
+   long double x,  
+   int * expptr  
+);
 float frexp(  
    float x,  
    int * expptr  
@@ -59,7 +67,7 @@ long double frexp(
   
 |Function|Required header|  
 |--------------|---------------------|  
-|`frexp`|\<math.h>|  
+|`frexp`, frexpf, frexpl|\<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

@@ -1,7 +1,7 @@
 ---
 title: "exp, expf, expl | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/05/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -48,7 +48,7 @@ long double expl(
  The floating-point value to exponentiate the natural logarithm base *e* by.  
   
 ## Return Value  
- The `exp` functions return the exponential value of the floating-point parameter, *x*, if successful. That is, the result is *e*<sup>*x*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns INF (infinity) and on underflow, `exp` returns 0.  
+ The **exp** functions return the exponential value of the floating-point parameter, *x*, if successful. That is, the result is *e*<sup>*x*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns INF (infinity) and on underflow, **exp** returns 0.  
   
 |Input|SEH Exception|Matherr Exception|  
 |-----------|-------------------|-----------------------|  
@@ -57,22 +57,22 @@ long double expl(
 |x ≥ 7.097827e+002|INEXACT+OVERFLOW|OVERFLOW|  
 |X ≤ -7.083964e+002|INEXACT+UNDERFLOW|UNDERFLOW|  
   
- The `exp` function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.  
+ The **exp** function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.  
   
 ## Remarks  
- C++ allows overloading, so you can call overloads of `exp` that take a **float** or **long double** argument. In a C program, `exp` always takes and returns a **double**.  
+ C++ allows overloading, so you can call overloads of **exp** that take a **float** or **long double** argument. In a C program, **exp** always takes and returns a **double**.  
   
 ## Requirements  
   
 |Function|Required C header|Required C++ header|  
 |--------------|---------------------|---|  
-|`exp`, `expf`|\<math.h>|\<cmath> or \<math.h>|  
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath> or \<math.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
   
-```  
+```C  
 // crt_exp.c  
   
 #include <math.h>  
