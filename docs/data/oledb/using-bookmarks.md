@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "OLE DB providers, bookmark support"]
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
@@ -31,9 +31,11 @@ public:
 };  
   
 CDBPropSet propset(DBPROPSET_ROWSET);  
+
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
   
-CTable<CAccessor<CProducts> > product;  
+
+CTable<CAccessor<CProducts>> product;  
 product.Open(session, "Products", &propset);  
 ```  
   
@@ -44,9 +46,13 @@ CTable<CDynamicAccessor> product;
 CBookmark<>              bookmark;  
 CDBPropSet propset(DBPROPSET_ROWSET);  
   
+
 propset.AddProperty(DBPROP_BOOKMARKS, true);  
+
 product.Open(session, "Products", &propset);  
+
 product.MoveNext();  
+
 product.GetBookmark(&bookmark);  
 ```  
   

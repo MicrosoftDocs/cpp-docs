@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -22,41 +22,38 @@ Executes and optionally binds the command.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CSession& session,  
+```cpp
+HRESULT Open(const CSession& session,  
    LPCWSTR wszCommand,  
    DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
    REFGUID guidCommand = DBGUID_DEFAULT,  
    bool bBind = true,  
-   ULONG ulPropSets = 0  
-) throw( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw();  
+
+
+HRESULT Open(const CSession& session,  
    LPCSTR szCommand,  
    DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
    REFGUID guidCommand = DBGUID_DEFAULT,  
    bool bBind = true,  
-   ULONG ulPropSets = 0  
-) throw( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw();  
+
+
+HRESULT Open(const CSession& session,  
    INT szCommand = NULL,  
    DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
    REFGUID guidCommand = DBGUID_DEFAULT,  
    bool bBind = true,  
-   ULONG ulPropSets = 0  
-) throw( );  
-HRESULT Open(  
-   DBPROPSET *pPropSet = NULL,  
+   ULONG ulPropSets = 0) throw();  
+
+
+HRESULT Open(DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
    bool bBind = true,  
-   ULONG ulPropSets = 0  
-) throw( );  
+   ULONG ulPropSets = 0) throw();  
 ```  
   
 #### Parameters  

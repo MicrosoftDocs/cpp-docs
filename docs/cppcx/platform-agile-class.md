@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["AGILE/Platform::Platform", "AGILE/Platform::Platform::Agile::Agile", "AGILE/Platform::Platform::Agile::Get", "AGILE/Platform::Platform::Agile::GetAddressOf", "AGILE/Platform::Platform::Agile::GetAddressOfForInOut", "AGILE/Platform::Platform::Agile::Release"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Agile"]

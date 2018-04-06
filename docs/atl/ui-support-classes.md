@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.ui"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["user interfaces, support classes", "user interfaces, ATL classes"]

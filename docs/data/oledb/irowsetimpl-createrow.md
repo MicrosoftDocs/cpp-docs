@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CreateRow method"]
@@ -22,13 +22,10 @@ A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateRow(  
-   DBROWOFFSET lRowsOffset,  
-   DBCOUNTITEM& cRowsObtained,  
-   HROW* rgRows   
-);  
+```
+HRESULT CreateRow(DBROWOFFSET lRowsOffset,  
+  DBCOUNTITEM& cRowsObtained,  
+   HROW* rgRows);  
 ```  
   
 #### Parameters  

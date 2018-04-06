@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["omp_destroy_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_destroy_lock OpenMP function"]

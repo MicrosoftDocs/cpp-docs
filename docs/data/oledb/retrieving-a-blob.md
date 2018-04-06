@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["retrieving BLOBs", "BLOB (binary large object), retrieving", "OLE DB, BLOBs (binary large objects)"]
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
@@ -32,11 +32,12 @@ BEGIN_COLUMN_MAP(CCategories)
 END_COLUMN_MAP()  
 };  
   
-CTable<CAccessor<CCategories> > categories;  
+CTable<CAccessor<CCategories>> categories;  
 ULONG          cb;  
 BYTE            myBuffer[65536];  
   
 categories.Open(session, "Categories");  
+
 while (categories.MoveNext() == S_OK)  
 {  
    do  

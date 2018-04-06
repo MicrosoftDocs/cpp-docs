@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szTableSchema", "m_szConstraintCatalog", "m_nColumnPropID", "ORDINAL_POSITION", "m_nOrdinalPosition", "COLUMN_GUID", "CKeyColumnInfo", "CONSTRAINT_NAME", "m_szColumnName", "m_szTableCatalog", "m_szConstraintSchema", "COLUMN_PROPID", "m_guidColumn", "CKeyColumns", "m_szTableName", "CONSTRAINT_CATALOG", "CONSTRAINT_SCHEMA", "m_szConstraintName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_PROPID", "ORDINAL_POSITION", "m_szConstraintCatalog", "CONSTRAINT_CATALOG", "m_szTableSchema", "TABLE_CATALOG", "CKeyColumnInfo parameter class", "TABLE_NAME", "CONSTRAINT_NAME", "m_nOrdinalPosition", "m_nColumnPropID", "CONSTRAINT_SCHEMA", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szTableCatalog", "m_szConstraintName", "CKeyColumns typedef class", "m_szTableName", "m_szConstraintSchema", "COLUMN_GUID", "m_guidColumn"]

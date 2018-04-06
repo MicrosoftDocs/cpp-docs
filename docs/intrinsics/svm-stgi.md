@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__svm_stgi"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_stgi intrinsic", "STGI instruction"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["operator ABS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator ABS", "ABS operator"]

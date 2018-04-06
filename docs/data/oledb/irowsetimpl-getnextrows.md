@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetNextRows method"]
@@ -22,15 +22,12 @@ Fetches rows sequentially, remembering the previous position.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetNextRows )(  
-   HCHAPTER hReserved,  
+```cpp
+      STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
-   HROW** prghRows   
-);  
+   HROW** prghRows);  
 ```  
   
 #### Parameters  

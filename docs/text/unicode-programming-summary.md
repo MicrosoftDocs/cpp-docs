@@ -84,7 +84,7 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
   
 -   Use [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) to open Unicode files.  
   
- To summarize, MFC and the run-time library provide the following support for Unicode programming under Windows 2000:  
+ To summarize, MFC and the run-time library provide the following support for Unicode programming:  
   
 -   Except for database class member functions, all MFC functions are Unicode-enabled, including `CString`. `CString` also provides Unicode/ANSI conversion functions.  
   

@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
 caps.latest.revision: 15
 author: "ghogen"
@@ -56,7 +56,7 @@ Windows Runtime is an abstraction over COM, which uses HRESULT error codes inste
 ```  
   
 ## dynamic_cast  
- Use `dynamic_cast` when you cast an object (more specifically, a hat `^`) to a more derived type, you expect either that the target object might sometimes be `nullptr` or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Windows Store Blank App** project template, the `OnLaunched` method in `app.xamp.cpp` uses `dynamic_cast` to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.  
+ Use `dynamic_cast` when you cast an object (more specifically, a hat `^`) to a more derived type, you expect either that the target object might sometimes be `nullptr` or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in `app.xamp.cpp` uses `dynamic_cast` to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.  
 ```
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)  
 {  

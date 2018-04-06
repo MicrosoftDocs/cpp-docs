@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl::m_rgErrors", "IErrorRecordsImpl.m_rgErrors", "ATL.IErrorRecordsImpl.m_rgErrors", "m_rgErrors", "ATL::IErrorRecordsImpl::m_rgErrors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_rgErrors"]
@@ -22,8 +22,7 @@ An array of error records.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CAtlArray<  
 RecordClass  
 > m_rgErrors;  

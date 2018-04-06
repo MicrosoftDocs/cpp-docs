@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xloctime/std::time_put", "locale/std::time_put::char_type", "locale/std::time_put::iter_type", "locale/std::time_put::do_put", "locale/std::time_put::put"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::time_put [C++]", "std::time_put [C++], char_type", "std::time_put [C++], iter_type", "std::time_put [C++], do_put", "std::time_put [C++], put"]

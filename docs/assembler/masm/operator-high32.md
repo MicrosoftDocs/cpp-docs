@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["HIGH32", "operator HIGH32"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator HIGH32", "HIGH32 operator"]

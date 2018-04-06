@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRowsetImpl class"]
@@ -20,16 +20,16 @@ ms.workload: ["cplusplus", "data-storage"]
 # CRowsetImpl Class
 Provides a standard OLE DB rowset implementation without requiring multiple inheritance of many implementation interfaces.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,  
    class Storage,  
    class CreatorClass,  
    class ArrayType = CAtlArray<Storage>,   
    class RowClass = CSimpleRow,   
-   class RowsetInterface = IRowsetImpl < T, IRowset >   
+   class RowsetInterface = IRowsetImpl <T, IRowset>   
 >  
 class CRowsetImpl :    
    public CComObjectRootEx<CreatorClass::_ThreadModel>,   

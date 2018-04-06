@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetString method"]
@@ -22,19 +22,17 @@ Sets the specified column data as a string.
   
 ## Syntax  
   
-```  
-HRESULT SetString(  
-   DBORDINAL nColumn,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const CHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const WCHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
+```
+HRESULT SetString(DBORDINAL nColumn,  
+  BaseType* data) throw();  
+
+
+HRESULT SetString(const CHAR* pColumnName,  
+   BaseType* data) throw();  
+
+
+HRESULT SetString(const WCHAR* pColumnName,  
+   BaseType* data) throw();  
 ```  
   
 #### Parameters  

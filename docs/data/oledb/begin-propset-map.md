@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_PROPSET_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PROPSET_MAP macro"]
@@ -22,11 +22,8 @@ Marks the beginning of the property set map entries.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROPSET_MAP(  
-Class   
-)  
+```cpp
+BEGIN_PROPSET_MAP(Class)  
   
 ```  
   

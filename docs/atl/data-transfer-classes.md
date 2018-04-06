@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_U_STRINGorID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["data transfer [C++]", "data transfer [C++], classes", "data transfer classes [C++]"]

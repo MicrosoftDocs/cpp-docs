@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetCommandText method"]
@@ -22,12 +22,9 @@ Sets the command text, replacing the existing command text.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetCommandText)(   
-   REFGUID rguidDialect,   
-   LPCOLESTR pwszCommand    
-);  
+```cpp
+      STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
+   LPCOLESTR pwszCommand);  
 ```  
   
 #### Parameters  

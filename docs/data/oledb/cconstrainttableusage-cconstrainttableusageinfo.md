@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CConstraintTableUsageInfo", "CONSTRAINT_TABLE_USAGE", "m_szTableSchema", "m_szConstraintCatalog", "CONSTRAINT_NAME", "m_szTableCatalog", "m_szConstraintSchema", "m_szTableName", "CONSTRAINT_CATALOG", "CONSTRAINT_SCHEMA", "CConstraintTableUsage", "m_szConstraintName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CConstraintTableUsage typedef class", "m_szConstraintCatalog", "CONSTRAINT_CATALOG", "m_szTableSchema", "CConstraintTableUsageInfo parameter class", "TABLE_CATALOG", "CONSTRAINT_TABLE_USAGE", "TABLE_NAME", "CONSTRAINT_NAME", "CONSTRAINT_SCHEMA", "TABLE_SCHEMA", "m_szTableCatalog", "m_szConstraintName", "m_szTableName", "m_szConstraintSchema"]

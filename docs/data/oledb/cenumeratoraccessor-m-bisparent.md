@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CEnumeratorAccessor.m_bIsParent", "ATL::CEnumeratorAccessor::m_bIsParent", "m_bIsParent", "ATL.CEnumeratorAccessor.m_bIsParent", "CEnumeratorAccessor::m_bIsParent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bIsParent"]
@@ -22,8 +22,7 @@ A variable indicating whether the enumerator is a parent enumerator, if the row 
   
 ## Syntax  
   
-```  
-  
+```cpp
 VARIANT_BOOL m_bIsParent;  
   
 ```  

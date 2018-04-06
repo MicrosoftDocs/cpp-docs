@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>::MoveFirst", "ATL::CRowset::MoveFirst", "CRowset<TAccessor>.MoveFirst", "CRowset::MoveFirst", "CRowset.MoveFirst", "ATL.CRowset.MoveFirst", "ATL.CRowset<TAccessor>.MoveFirst", "ATL::CRowset<TAccessor>::MoveFirst"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveFirst method"]
@@ -22,9 +22,8 @@ Moves the cursor to the initial position and retrieves the initial row.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveFirst( ) throw( );  
+```cpp
+HRESULT MoveFirst() throw();  
   
 ```  
   

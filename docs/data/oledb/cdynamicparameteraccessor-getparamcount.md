@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor.GetParamCount", "GetParamCount", "ATL.CDynamicParameterAccessor.GetParamCount"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParamCount method"]
@@ -22,9 +22,8 @@ Retrieves the number of parameters stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-DB_UPARAMS GetParamCount( ) const throw( );  
+```cpp
+DB_UPARAMS GetParamCount() const throw();  
   
 ```  
   

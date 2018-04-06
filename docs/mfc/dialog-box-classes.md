@@ -48,7 +48,7 @@ Class `CDialog` and its derived classes encapsulate dialog-box functionality. Si
  Provides a standard dialog box for printing a file.  
   
  [CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)  
- Provides a Windows 2000 Print property sheet.  
+ Provides a Windows Print property sheet.  
   
  [CPageSetupDialog](../mfc/reference/cpagesetupdialog-class.md)  
  Encapsulates the services provided by the Windows common Page Setup dialog box with additional support for setting and modifying print margins.  

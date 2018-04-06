@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "preprocessor, macros", "Visual C++, preprocessor macros"]
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388

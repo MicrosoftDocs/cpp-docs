@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl::GetErrorParameters", "ATL.IErrorRecordsImpl.GetErrorParameters", "IErrorRecordsImpl.GetErrorParameters", "GetErrorParameters", "ATL::IErrorRecordsImpl::GetErrorParameters"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorParameters method"]
@@ -22,12 +22,9 @@ Returns the error parameters.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetErrorParameters )(  
-   ULONG ulRecordNum,  
-   DISPPARAMS *pdispparams   
-);  
+```cpp
+      STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,  
+   DISPPARAMS *pdispparams);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["operators [ATL]"]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2

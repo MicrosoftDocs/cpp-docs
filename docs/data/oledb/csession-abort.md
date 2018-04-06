@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession.Abort", "CSession::Abort", "ATL.CSession.Abort", "ATL::CSession::Abort"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Abort method"]
@@ -22,13 +22,10 @@ Terminates the transaction.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Abort(   
-   BOID* pboidReason = NULL,   
+```cpp
+HRESULT Abort(BOID* pboidReason = NULL,   
    BOOL bRetaining = FALSE,   
-   BOOL bAsync = FALSE    
-) const throw( );  
+   BOOL bAsync = FALSE) const throw();  
 ```  
   
 #### Parameters  

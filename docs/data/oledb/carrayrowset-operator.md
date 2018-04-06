@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CArrayRowset::operator[]", "CArrayRowset.operator[]"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator [], arrays", "[] operator", "operator[], arrays"]
@@ -22,8 +22,7 @@ Provides array-like syntax for accessing a row in the rowset.
   
 ## Syntax  
   
-```  
-  
+```cpp
       TAccessor  
       & operator[](int nrow);  
 ```  

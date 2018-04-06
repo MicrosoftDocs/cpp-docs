@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_nOrdinal", "m_szPKColumnName", "FK_TABLE_NAME", "m_guidFKColumn", "FK_COLUMN_NAME", "m_guidPKColumn", "DELETE_RULE", "m_szPKTableSchema", "FK_COLUMN_PROPID", "m_nFKColumnPropID", "m_szFKTableCatalog", "CForeignKeysInfo", "FK_TABLE_SCHEMA", "m_szPKTableCatalog", "m_szDeleteRule", "m_szUpdateRule", "m_szPKTableName", "m_szFKTableSchema", "ORDINAL", "m_nPKColumnPropID", "m_szFKColumnName", "FK_TABLE_CATALOG", "FK_COLUMN_GUID", "m_szFKTableName", "CForeignKeys"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szPKTableCatalog", "FK_COLUMN_GUID", "m_szPKColumnName", "m_szFKTableName", "ORDINAL data member", "m_nPKColumnPropID", "m_szDeleteRule", "DELETE_RULE", "m_guidFKColumn", "FK_COLUMN_PROPID", "m_szPKTableSchema", "m_szFKTableCatalog", "CForeignKeysInfo parameter class", "m_szFKTableSchema", "FK_TABLE_SCHEMA", "FK_COLUMN_NAME", "m_szUpdateRule", "m_szFKColumnName", "FK_TABLE_CATALOG", "m_nOrdinal", "m_szPKTableName", "CForeignKeys typedef class", "m_nFKColumnPropID", "m_guidPKColumn", "FK_TABLE_NAME"]

@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.  
   
 > [!NOTE]
->  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0  SP6, Windows 2000, Windows 98, and Windows Me. To download the latest redistributable, see  [http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm](http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm). For more information, see the GDI+ SDK documentation at: [http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
+>  For more information, see the GDI+ SDK documentation at: [http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
   
  This article explains the use of these graphic-object classes:  
   
@@ -69,8 +69,6 @@ Windows provides a variety of drawing tools to use in device contexts. It provid
 -   [Selecting a Graphic Object into a Device Context](../mfc/selecting-a-graphic-object-into-a-device-context.md)  
   
 -   [Device contexts](../mfc/device-contexts.md)  
-  
--   [CImage limitations with earlier operating systems](../mfc/cimage-limitations-with-earlier-operating-systems.md)  
   
 ## See Also  
  [Window Objects](../mfc/window-objects.md)

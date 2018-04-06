@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 ---
 # abort Function
 
-The **abort** function, also declared in the standard include file STDLIB.H, terminates a C++ program. The difference between **exit** and **abort** is that **exit** allows the C++ run-time termination processing to take place (global object destructors will be called), whereas **abort** terminates the program immediately. For more information, see [abort](../c-runtime-library/reference/abort.md) in the *Run-Time Library Reference*.
+The **abort** function, also declared in the standard include file \<stdlib.h>, terminates a C++ program. The difference between **exit** and **abort** is that **exit** allows the C++ run-time termination processing to take place (global object destructors will be called), whereas **abort** terminates the program immediately. For more information, see [abort](../c-runtime-library/reference/abort.md) in the *Run-Time Library Reference*.
 
 ## See also
 

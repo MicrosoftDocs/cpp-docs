@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/std::stringbuf", "iosfwd/std::stringstream", "iosfwd/std::wistringstream", "iosfwd/std::wostringstream", "iosfwd/std::wstringbuf", "iosfwd/std::wstringstream"]
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
 caps.latest.revision: 9

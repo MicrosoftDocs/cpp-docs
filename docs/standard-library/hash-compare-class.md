@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["hash_set/stdext::hash_compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["hash_compare class"]

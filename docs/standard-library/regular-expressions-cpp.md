@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, regular expressions", "regular expressions, Visual C++", "regular expressions"]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c

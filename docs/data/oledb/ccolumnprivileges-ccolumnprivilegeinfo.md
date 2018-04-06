@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szTableSchema", "CColumnPrivileges", "m_bIsGrantable", "m_nColumnPropID", "m_szPrivilegeType", "COLUMN_GUID", "IS_GRANTABLE", "m_szColumnName", "m_szTableCatalog", "m_szGrantor", "GRANTOR", "GRANTEE", "COLUMN_PROPID", "m_guidColumn", "COLUMN_PRIVILEGES", "m_szTableName", "CColumnPrivilegeInfo", "m_szGrantee"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_PROPID", "GRANTOR", "m_szPrivilegeType", "m_szTableSchema", "TABLE_CATALOG", "TABLE_NAME", "COLUMN_PRIVILEGES", "IS_GRANTABLE", "m_nColumnPropID", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szTableCatalog", "m_szGrantee", "m_szGrantor", "m_szTableName", "CColumnPrivileges typedef class", "COLUMN_GUID", "GRANTEE", "m_guidColumn", "CColumnPrivilegeInfo parameter class", "m_bIsGrantable"]

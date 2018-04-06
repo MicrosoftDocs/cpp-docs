@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_iRowset"]
@@ -22,8 +22,7 @@ Index to the rowset representing the cursor.
   
 ## Syntax  
   
-```  
-  
+```cpp
 KeyType m_iRowset;  
   
 ```  

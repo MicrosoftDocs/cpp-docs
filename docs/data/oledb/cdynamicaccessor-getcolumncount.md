@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicAccessor.GetColumnCount", "ATL::CDynamicAccessor::GetColumnCount", "CDynamicAccessor::GetColumnCount", "CDynamicAccessor.GetColumnCount", "GetColumnCount"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnCount method"]
@@ -22,9 +22,8 @@ Retrieves the number of columns.
   
 ## Syntax  
   
-```  
-  
-DBORDINAL GetColumnCount( ) const throw( );  
+```cpp
+DBORDINAL GetColumnCount() const throw();  
   
 ```  
   

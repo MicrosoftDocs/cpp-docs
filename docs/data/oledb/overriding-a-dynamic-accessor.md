@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors", "overriding, dynamic accessors"]
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
@@ -29,6 +29,7 @@ CCommand<CDynamicAccessor> product;
 // Open the table, passing false to prevent automatic binding   
 product.Open(session, _T("Select * FROM Products"), NULL, NULL, DBGUID_DEFAULT, false);  
   
+
 ULONG         nColumns;  
 DBCOLUMNINFO*   pColumnInfo;  
 // Get the column information from the opened rowset.  
@@ -53,6 +54,7 @@ product.Bind();
 // previous call to GetColumnInfo.  
 CoTaskMemFree(pColumnInfo);  
   
+
 char*   pszProductName;  
 char*   pszReorderLevel;  
 bool   bRC;  

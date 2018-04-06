@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ppltasks/std"]
 dev_langs: ["C++"]
 ms.assetid: b3a41cfa-0b64-485d-9e79-23407dca07ba

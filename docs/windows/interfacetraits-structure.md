@@ -27,9 +27,7 @@ template<
    typename I0  
 >  
 struct __declspec(novtable) InterfaceTraits;  
-template<  
-   typename CloakedType  
->  
+template<typename CloakedType>  
 struct __declspec(novtable) InterfaceTraits<CloakedIid<CloakedType>>;  
   
 template<>  

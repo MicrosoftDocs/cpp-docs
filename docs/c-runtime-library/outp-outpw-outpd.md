@@ -27,7 +27,7 @@ Outputs, at a port, a byte (`_outp`), a word (`_outpw`), or a double word (`_out
 >  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ unsigned long dataword
 ## Remarks  
  The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double word, respectively, to the specified output port. The *port* argument can be any unsigned integer in the range 0 - 65,535; *databyte* can be any integer in the range 0 - 255; and *dataword* can be any value in the range of an integer, an unsigned short integer, and an unsigned long integer, respectively.  
   
- Because these functions write directly to an I/O port, they cannot be used in user code in Windows NT, Windows 2000, Windows XP, and Windows Server 2003. For information about using I/O ports in these operating systems, search for "Serial Communications in Win32" at MSDN.  
+ Because these functions write directly to an I/O port, they cannot be used in user code. For information about using I/O ports in these operating systems, search for "Serial Communications in Win32" at MSDN.  
   
 ## Requirements  
   

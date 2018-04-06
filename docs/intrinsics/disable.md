@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_disable_cpp", "_disable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_disable intrinsic", "rsm instruction", "disable intrinsic"]

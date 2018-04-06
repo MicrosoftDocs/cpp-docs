@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Compare method"]
@@ -22,16 +22,13 @@ Compares two bookmarks.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Compare )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Compare )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmark1,  
    const BYTE* pBookmark1,  
    DBBKMARK cbBookmark2,  
    const BYTE* pBookmark2,  
-   DBCOMPARE* pComparison   
-);  
+   DBCOMPARE* pComparison);  
 ```  
   
 #### Parameters  

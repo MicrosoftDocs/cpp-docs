@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szUniqueName", "m_szCatalog", "DELETE_RULE", "m_szUniqueCatalog", "CONSTRAINT_NAME", "CReferentialConstraintInfo", "MATCH_OPTION", "m_szSchema", "m_szDeleteRule", "m_szUpdateRule", "m_szUniqueSchema", "CReferentialConstraints", "m_szName", "CONSTRAINT_CATALOG", "m_szMatchOption", "CONSTRAINT_SCHEMA"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szUniqueSchema", "DESCRIPTION class data member", "m_szSchema", "CONSTRAINT_CATALOG", "CReferentialConstraints typedef class", "m_szUniqueName", "m_szCatalog", "CONSTRAINT_NAME", "m_szDeleteRule", "DELETE_RULE", "MATCH_OPTION", "CONSTRAINT_SCHEMA", "m_szName", "m_szDescription", "m_szMatchOption", "m_szUniqueCatalog", "m_szUpdateRule", "CReferentialConstraintInfo parameter class"]

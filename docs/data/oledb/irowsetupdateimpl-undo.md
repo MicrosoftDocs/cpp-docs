@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Undo method"]
@@ -22,16 +22,13 @@ Undoes any changes to the row since the last fetch or update.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Undo )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[ ],  
    DBCOUNTITEM* pcRowsUndone,  
    HROW** prgRowsUndone,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### Parameters  

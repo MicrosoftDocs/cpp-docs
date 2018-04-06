@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["mutex/std::try_to_lock_t"]
 dev_langs: ["C++"]
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBookmark<0>.CBookmark<0>", "CBookmark::CBookmark", "ATL.CBookmark.CBookmark", "CBookmark.CBookmark", "CBookmark", "ATL::CBookmark<0>::CBookmark<0>", "ATL.CBookmark<0>.CBookmark<0>", "CBookmark<0>::CBookmark<0>", "ATL::CBookmark::CBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBookmark class, constructor"]
@@ -22,12 +22,10 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-      CBookmark( );   
-CBookmark(  
-   DBLENGTH nSize   
-);  
+```cpp
+      CBookmark();   
+
+CBookmark(DBLENGTH nSize);  
 ```  
   
 #### Parameters  

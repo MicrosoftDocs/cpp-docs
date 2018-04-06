@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, OLE DB object model", "OLE DB, object model"]
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff

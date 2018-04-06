@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IOpenRowsetImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IOpenRowsetImpl class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IOpenRowsetImpl Class
 Provides implementation for the `IOpenRowset` interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class SessionClass>  
 class IOpenRowsetImpl : public IOpenRowset  
 ```  

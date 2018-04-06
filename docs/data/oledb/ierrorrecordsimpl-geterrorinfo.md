@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorInfo", "IErrorRecordsImpl.GetErrorInfo", "IErrorRecordsImpl::GetErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorInfo method"]
@@ -22,13 +22,10 @@ Returns an [IErrorInfo](https://msdn.microsoft.com/en-us/library/ms718112.aspx) 
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetErrorInfo )(  
-   ULONG ulRecordNum,  
+```cpp
+      STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,  
    LCID lcid,  
-   IErrorInfo **ppErrorInfo   
-);  
+   IErrorInfo **ppErrorInfo);  
 ```  
   
 #### Parameters  

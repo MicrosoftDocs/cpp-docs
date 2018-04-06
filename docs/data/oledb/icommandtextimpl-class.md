@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandText class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # ICommandTextImpl Class
 Provides an implementation for the [ICommandText](https://msdn.microsoft.com/en-us/library/ms714914.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T >  
 class ATL_NO_VTABLE ICommandTextImpl   
    : public ICommandImpl<T, ICommandText>  

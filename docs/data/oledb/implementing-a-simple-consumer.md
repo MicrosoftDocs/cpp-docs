@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["clients, creating", "OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
@@ -48,7 +48,7 @@ The following topics show how to edit the files created by the MFC Application W
     ...  
     int main(int argc, char* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   CProducts rs;   hr = rs.OpenAll();   ATLASSERT( SUCCEEDED( hr ) );   hr = rs.MoveFirst();   // Iterate through the rowset   while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      hr = rs.MoveNext();   }   rs.Close();   rs.ReleaseCommand();   CoUninitialize();  
+ HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   CProducts rs;   hr = rs.OpenAll();   ATLASSERT(SUCCEEDED(hr ) );   hr = rs.MoveFirst();   // Iterate through the rowset   while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      hr = rs.MoveNext();   }   rs.Close();   rs.ReleaseCommand();   CoUninitialize();  
   
        return 0;  
     }  
@@ -136,7 +136,7 @@ The following topics show how to edit the files created by the MFC Application W
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);  
+ HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -160,10 +160,10 @@ The following topics show how to edit the files created by the MFC Application W
        // Iterate through the rowset and output column data to output.txt row by row  
        // In the file, mark the beginning of this set of data:  
        outfile << "initial row dump" << endl;  
-       while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+       while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
        {  
           nCounter++;  
-          if( nCounter == 5 )  
+          if(nCounter == 5 )  
              myBookmark = rs.bookmark;  
           // Output the column information for each row:  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
@@ -176,7 +176,7 @@ The following topics show how to edit the files created by the MFC Application W
        // Iterate through the rowset and output column data to output.txt row by row  
        // In the file, mark the beginning of this set of data:  
        outfile << "row dump starting from bookmarked row" << endl;  
-       while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+       while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
        {  
           // Output the column information for each row  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
@@ -220,7 +220,7 @@ The following topics show how to edit the files created by the MFC Application W
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);  
+ HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -242,7 +242,7 @@ The following topics show how to edit the files created by the MFC Application W
        for (;;)  
        {  
           // Read sequential stream data into buffer  
-          HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
+    HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
           if (FAILED (hr))  
              break;  
           // Output buffer to file  

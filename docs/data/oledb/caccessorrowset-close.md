@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorRowset.Close", "CAccessorRowset::Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -22,9 +22,8 @@ Releases any active accessors and the rowset.
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__svm_clgi"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLGI instruction", "__svm_clgi intrinsic"]

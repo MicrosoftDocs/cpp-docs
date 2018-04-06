@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], ATL", "ATL, classes"]
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc

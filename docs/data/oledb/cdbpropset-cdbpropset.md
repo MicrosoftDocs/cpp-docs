@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropSet.CDBPropSet", "CDBPropSet::CDBPropSet", "ATL::CDBPropSet::CDBPropSet", "ATL.CDBPropSet.CDBPropSet"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropSet class, constructor"]
@@ -22,15 +22,12 @@ The constructor. Initializes the **rgProperties**, **cProperties**, and **guidPr
   
 ## Syntax  
   
-```  
-  
-      CDBPropSet(  
-   const GUID& guid   
-);  
-CDBPropSet(   
-   const CDBPropSet& propset    
-);  
-CDBPropSet( );  
+```cpp
+      CDBPropSet(const GUID& guid);  
+
+CDBPropSet(const CDBPropSet& propset);  
+
+CDBPropSet();  
 ```  
   
 #### Parameters  

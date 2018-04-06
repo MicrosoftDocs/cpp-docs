@@ -25,10 +25,9 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-__declspec(allocate("  
-segname  
-")) declarator  
+
+   __declspec(allocate("segname")) declarator  
+
 ```  
   
 ## Remarks  

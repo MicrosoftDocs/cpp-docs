@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__vmx_vmlaunch"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VMLAUNCH instruction", "__vmx_vmlaunch intrinsic"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IErrorRecordsImpl::GetErrorHelpFile", "GetErrorHelpFile", "IErrorRecordsImpl.GetErrorHelpFile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorHelpFile method"]
@@ -22,11 +22,8 @@ Gets the path name of the help file from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorHelpFile(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

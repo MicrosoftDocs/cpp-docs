@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator CSession*", "CSession* operator"]
@@ -22,9 +22,8 @@ Returns a pointer to the contained `CSession` object.
   
 ## Syntax  
   
-```  
-  
-operator const CSession*() throw( );  
+```cpp
+operator const CSession*() throw();  
   
 ```  
   

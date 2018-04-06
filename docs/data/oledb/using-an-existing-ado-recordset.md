@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ADO recordsets [C++]", "OLE DB consumer templates, ADO recordsets", "recordsets [C++], using in OLE DB"]
 ms.assetid: a9b1de8a-d379-49b1-a26e-578741e9f6a8

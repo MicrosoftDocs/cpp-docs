@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowsAt method"]
@@ -22,18 +22,15 @@ Fetches rows starting with the row specified by an offset from a bookmark.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowsAt )(  
-   HWATCHREGION /* hReserved1 */,  
+```cpp
+      STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,  
    HCHAPTER hReserved2,  
    DBBKMARK cbBookmark,  
    const BYTE* pBookmark,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
-   HROW** prghRows   
-);  
+   HROW** prghRows);  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandImpl::Execute", "ICommandImpl.Execute"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Execute method"]
@@ -22,15 +22,12 @@ Executes the command.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Execute(  
-   IUnknown* pUnkOuter,  
+```cpp
+HRESULT Execute(IUnknown* pUnkOuter,  
    REFIID riid,  
    DBPARAMS* pParams,  
    DBROWCOUNT* pcRowsAffected,  
-   IUnknown** ppRowset   
-);  
+   IUnknown** ppRowset);  
 ```  
   
 #### Parameters  

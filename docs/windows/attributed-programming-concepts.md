@@ -47,5 +47,3 @@ Visual C++ includes a variety of material to help you use attributes in your pro
  [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  
  Links to new C++ keywords related to attributed programming.  
   
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
- Provides links to topics describing conceptual information about the Visual C++ libraries and topics discussing various coding technologies and techniques.

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetProperties method"]
@@ -22,14 +22,11 @@ Returns the values of properties in the Data Source, Data Source Information, an
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetProperties)(   
-   ULONG cPropertySets,   
+```cpp
+      STDMETHOD(GetProperties)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcProperties,   
-   DBPROPSET ** prgProperties    
-);  
+   DBPROPSET ** prgProperties);  
 ```  
   
 #### Parameters  

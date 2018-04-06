@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CNoAccessor", "CNoAccessor", "ATL.CNoAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNoAccessor class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoAccessor Class
 Can be used as a template argument (`TAccessor`) for template classes, such as `CCommand` and `CTable`, that require an accessor class argument.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CNoAccessor  
 ```  
   

@@ -29,7 +29,7 @@ Some of the most common sources of program errors are not flagged as exceptions 
   
 -   Use exception-handling filters to test for the exception code you defined.  
   
- The WINERROR.H file shows the format for exception codes. To make sure that you do not define a code that conflicts with an existing exception code, set the third most significant bit to 1. The four most-significant bits should be set as shown in the following table.  
+ The \<winerror.h> file shows the format for exception codes. To make sure that you do not define a code that conflicts with an existing exception code, set the third most significant bit to 1. The four most-significant bits should be set as shown in the following table.  
   
 |Bits|Recommended binary setting|Description|  
 |----------|--------------------------------|-----------------|  

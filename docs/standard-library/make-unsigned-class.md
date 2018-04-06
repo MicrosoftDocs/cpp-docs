@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::make_unsigned"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["make_unsigned class", "make_unsigned"]

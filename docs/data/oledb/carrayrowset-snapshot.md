@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset::Snapshot", "Snapshot", "CArrayRowset<TAccessor>::Snapshot", "ATL.CArrayRowset.Snapshot", "ATL.CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset<TAccessor>::Snapshot", "CArrayRowset::Snapshot", "CArrayRowset.Snapshot"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Snapshot method"]
@@ -22,9 +22,8 @@ Reads the entire rowset into memory, creating an image or snapshot of it.
   
 ## Syntax  
   
-```  
-  
-HRESULT Snapshot( ) throw( );  
+```cpp
+HRESULT Snapshot() throw();  
   
 ```  
   

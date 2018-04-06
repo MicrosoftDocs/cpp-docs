@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRestrictions.Open", "ATL::CRestrictions::Open", "ATL.CRestrictions.Open", "CRestrictions::Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -22,10 +22,8 @@ Returns a result set according to the user-supplied restrictions.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CSession& session,  
+```cpp
+HRESULT Open(const CSession& session,  
    LPCTSTR lpszParam 1 = NULL,  
    LPCTSTR lpszParam 2 = NULL,  
    LPCTSTR lpszParam 3 = NULL,  
@@ -33,8 +31,7 @@ Returns a result set according to the user-supplied restrictions.
    LPCTSTR lpszParam 5 = NULL,  
    LPCTSTR lpszParam 6 = NULL,  
    LPCTSTR lpszParam 7 = NULL,  
-   bool bBind = true  
-);  
+   bool bBind = true);  
 ```  
   
 #### Parameters  

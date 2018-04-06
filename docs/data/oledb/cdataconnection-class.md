@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataConnection class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDataConnection Class
 Manages the connection with the data source.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDataConnection  
 ```  
   

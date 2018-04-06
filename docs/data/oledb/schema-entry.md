@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SCHEMA_ENTRY"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SCHEMA_ENTRY macro"]
@@ -22,12 +22,9 @@ Associates a GUID with a class.
   
 ## Syntax  
   
-```  
-  
-      SCHEMA_ENTRY(  
-   guid,  
-   rowsetClass   
-);   
+```cpp
+      SCHEMA_ENTRY(guid,  
+   rowsetClass);   
 ```  
   
 #### Parameters  
@@ -41,8 +38,7 @@ Associates a GUID with a class.
  [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) can then query the map for a list of GUIDs, or it can create a rowset if it is given a GUID. The schema rowset `IDBSchemaRowsetImpl` creates is similar to a standard `CRowsetImpl`-derived class, except it must provide an **Execute** method that has the following signature:  
   
 ```  
-HRESULT Execute (
-    LONG* pcRowsAffected,  
+HRESULT Execute (LONG* pcRowsAffected,  
     ULONG cRestrictions,  
     const VARIANT* rgRestrictions);  
 ```  

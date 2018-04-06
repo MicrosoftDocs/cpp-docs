@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator CSession&", "CSession& operator"]
@@ -22,8 +22,7 @@ Returns a reference to the contained `CSession` object.
   
 ## Syntax  
   
-```  
-  
+```cpp
 operator const CSession&();  
   
 ```  

@@ -129,7 +129,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### Remarks  
  The string can be created by using [CSecurityDesc::ToString](#tostring). Converting the security descriptor into a string makes it easier to store and transmit.  
   
- This method is only available with Windows 2000 and later because it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  Retrieves control information from the security descriptor.  
@@ -146,7 +146,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
  Returns true if the method succeeds, false if it fails.  
   
 ### Remarks  
- This method is only meaningful when using Windows 2000 or later, as it calls [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
+ This method calls [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
   
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl  
  Retrieves discretionary access-control list (DACL) information from the security descriptor.  
@@ -302,7 +302,7 @@ bool IsDaclProtected() const throw();
 ### Remarks  
  To set this flag, use the [CSecurityDesc::SetDacl](#setdacl) method.  
   
- This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
+ This method supports automatic propagation of inheritable ACEs.  
   
 ##  <a name="isgroupdefaulted"></a>  CSecurityDesc::IsGroupDefaulted  
  Determines if the security descriptor's group security identifier (SID) was set by default.  
@@ -384,7 +384,7 @@ bool IsSaclProtected() const throw();
 ### Remarks  
  To set this flag, use the [CSecurityDesc::SetSacl](#setsacl) method.  
   
- This method is only meaningful for Windows 2000 or later, as only Windows 2000 supports automatic propagation of inheritable ACEs.  
+ This method supports automatic propagation of inheritable ACEs.  
   
 ##  <a name="isselfrelative"></a>  CSecurityDesc::IsSelfRelative  
  Determines if the security descriptor is in self-relative format.  
@@ -464,7 +464,7 @@ bool SetControl(
  Returns true on success, false on failure.  
   
 ### Remarks  
- This method is available only on Windows 2000 and later, as it calls [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
+ This method calls [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl  
  Sets information in a discretionary access-control list (DACL). If a DACL is already present in the security descriptor, it is replaced.  
@@ -582,7 +582,7 @@ bool ToString(
   
  If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input security descriptor, the resulting security descriptor string does not have a D: component. See [Security Descriptor String Format](http://msdn.microsoft.com/library/windows/desktop/aa379570) for more details.  
   
- This method is only available with Windows 2000 and later, as it calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   

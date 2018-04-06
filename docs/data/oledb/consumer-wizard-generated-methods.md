@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenAll method", "attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "methods [C++], OLE DB Consumer Wizard-generated", "CloseDataSource method", "consumer wizard-generated classes and methods", "OpenDataSource method", "CloseAll method", "OpenRowset method", "GetRowsetProperties method"]
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
@@ -35,6 +35,7 @@ The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain f
   
 ```  
 HRESULT OpenAll();   
+
 void CloseAll();  
 ```  
   
@@ -142,6 +143,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
   
 ```  
 HRESULT OpenDataSource();   
+
 void CloseDataSource();  
 ```  
   

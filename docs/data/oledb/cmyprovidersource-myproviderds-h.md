@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["myproviderds.h", "cmyprovidersource"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H"]
@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # CMyProviderSource (MyProviderDS.H)
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CMyProviderSource  
 class ATL_NO_VTABLE CMyProviderSource :   

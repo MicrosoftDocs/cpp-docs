@@ -23,12 +23,11 @@ Specify standards conformance mode to the compiler. Use this option to help you 
 
 ## Remarks
 
-You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code. 
+You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
 
 By default, the **/permissive-** option is set in new projects created by Visual Studio 2017 version 15.5 and later versions. It is not set by default in earlier versions. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code.
 
-The **/permissive-** option is compatible with almost all of the header files from the latest Windows Kits, such as the Software Development Kit (SDK) or Windows Driver Kit (WDK), starting in the Windows Fall Creators 
-SDK (10.0.16299.0). Older versions of the SDK may fail to compile under **/permissive-** for various source code conformance reasons. The compiler and SDKs ship on different release timelines, therefore there are some remaining issues. For specific header file issues, see [Windows header issues](#windows-header-issues) below.
+The **/permissive-** option is compatible with almost all of the header files from the latest Windows Kits, such as the Software Development Kit (SDK) or Windows Driver Kit (WDK), starting in the Windows Fall Creators SDK (10.0.16299.0). Older versions of the SDK may fail to compile under **/permissive-** for various source code conformance reasons. The compiler and SDKs ship on different release timelines, therefore there are some remaining issues. For specific header file issues, see [Windows header issues](#windows-header-issues) below.
 
 The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conforming behavior. They default to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.
 
@@ -403,7 +402,7 @@ In versions before Visual Studio 2017 version 15.5, use this procedure:
 
 1. Open your project's **Property Pages** dialog box.
 
-1. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter the **/permissive-** compiler option in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
 

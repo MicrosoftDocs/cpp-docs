@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, returning result sets", "multiple result sets"]
 ms.assetid: c450c12c-a76c-4ae4-9675-071a41eeac05

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IConvertTypeImpl<T>", "IConvertTypeImpl", "ATL.IConvertTypeImpl", "ATL::IConvertTypeImpl", "ATL::IConvertTypeImpl<T>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IConvertTypeImpl class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IConvertTypeImpl Class
 Provides an implementation of the [IConvertType](https://msdn.microsoft.com/en-us/library/ms715926.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IConvertTypeImpl   
    : public IConvertType, public CConvertHelper  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp_math/Concurrency::fast_math"]
 dev_langs: ["C++"]
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508

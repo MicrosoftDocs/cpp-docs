@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["custom stream manipulators", "streams, custom stream manipulators", "output streams, custom stream manipulators"]
 ms.assetid: fa4655a7-d68f-4fea-a26e-73c3ad5c90a5

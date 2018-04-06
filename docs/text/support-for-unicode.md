@@ -46,7 +46,7 @@ Class `CString` uses `_TCHAR` as its base and provides constructors and operator
 
 - [Use Unicode to create an internationalized program](../text/unicode-programming-summary.md)
 
-- [Learn the benefits of Unicode, including how using Unicode makes my program more efficient on Windows 2000](../text/benefits-of-character-set-portability.md)
+- [Learn the benefits of Unicode](../text/benefits-of-character-set-portability.md)
 
 - [Use wmain so I can pass wide-character arguments to my program](../text/support-for-using-wmain.md)
 

@@ -27,4 +27,4 @@ These POSIX functions are deprecated. Use the ISO C++ conformant [_inp, _inpw, _
 >  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

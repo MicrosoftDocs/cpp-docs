@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetDataHere method"]
@@ -22,12 +22,9 @@ Retrieves data from the current row and places it into the specified buffer.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetDataHere(   
-   int nAccessor,   
-   void* pBuffer    
-) throw( );  
+```
+HRESULT GetDataHere(int nAccessor,   
+  void* pBuffer) throw();  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragma execution_character_set"]

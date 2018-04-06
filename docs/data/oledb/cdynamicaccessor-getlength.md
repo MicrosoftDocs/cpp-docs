@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor.GetLength", "ATL.CDynamicAccessor.GetLength", "CDynamicAccessor::GetLength", "ATL::CDynamicAccessor::GetLength"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetLength method"]
@@ -22,20 +22,15 @@ Retrieves the length of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool GetLength(   
-   DBORDINAL nColumn,   
-   DBLENGTH* pLength    
-) const throw( );  
-bool GetLength(   
-   const CHAR* pColumnName,   
-   DBLENGTH* pLength    
-) const throw( );  
-bool GetLength(   
-   const WCHAR* pColumnName,   
-   DBLENGTH* pLength    
-) const throw( );  
+```
+bool GetLength(DBORDINAL nColumn,   
+  DBLENGTH* pLength) const throw();  
+
+bool GetLength(const CHAR* pColumnName,   
+   DBLENGTH* pLength) const throw();  
+
+bool GetLength(const WCHAR* pColumnName,   
+   DBLENGTH* pLength) const throw();  
 ```  
   
 #### Parameters  

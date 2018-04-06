@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetUpdateImpl.GetOriginalData", "IRowsetUpdateImpl.GetOriginalData", "GetOriginalData", "ATL::IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetOriginalData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetOriginalData method"]
@@ -22,13 +22,10 @@ Gets the data most recently transmitted to or obtained from the data source, ign
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetOriginalData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD (GetOriginalData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pData   
-);  
+   void* pData);  
 ```  
   
 #### Parameters  

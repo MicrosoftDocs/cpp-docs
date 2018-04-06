@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_PROPERTY_SET_EX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PROPERTY_SET_EX macro"]
@@ -22,10 +22,8 @@ Marks the beginning of a property set in a property set map.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROPERTY_SET_EX(  
-guid  
+```cpp
+BEGIN_PROPERTY_SET_EX(guid  
 , flags )  
 ```  
   

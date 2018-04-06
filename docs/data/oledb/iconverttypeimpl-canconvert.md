@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IConvertTypeImpl.CanConvert", "CanConvert", "IConvertTypeImpl::CanConvert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CanConvert method"]
@@ -22,13 +22,10 @@ Gives information on the availability of type conversions on a command or on a r
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CanConvert)(   
-   DBTYPE wFromType,   
+```cpp
+      STDMETHOD(CanConvert)(DBTYPE wFromType,   
    DBTYPE wToType,   
-   DBCONVERTFLAGS dwConvertFlags    
-);  
+   DBCONVERTFLAGS dwConvertFlags);  
 ```  
   
 #### Parameters  

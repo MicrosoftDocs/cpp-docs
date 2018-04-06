@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DEFAULT_CHARACTER_SET_CATALOG", "DEFAULT_CHARACTER_SET_SCHEMA", "m_szCharName", "CSchemataInfo", "m_szCatalog", "m_szCharCatalog", "m_szOwner", "m_szCharSchema", "CSchemata", "m_szName", "DEFAULT_CHARACTER_SET_NAME"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szCharName", "CSchemata typedef class", "DEFAULT_CHARACTER_SET_NAME", "m_szOwner", "CSchemataInfo parameter class", "DEFAULT_CHARACTER_SET_CATALOG", "m_szCharSchema", "m_szCatalog", "m_szName", "m_szCharCatalog", "DEFAULT_CHARACTER_SET_SCHEMA"]

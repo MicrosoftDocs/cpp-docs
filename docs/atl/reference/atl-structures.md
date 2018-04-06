@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 f1_keywords: ["vc.atl.structures"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, structures", "structures, ATL"]

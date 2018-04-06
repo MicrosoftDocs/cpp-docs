@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["PROVIDER_COLUMN_ENTRY_STR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_STR macro"]
@@ -22,10 +22,8 @@ Represents a specific column supported by the provider.
   
 ## Syntax  
   
-```  
-  
-PROVIDER_COLUMN_ENTRY_STR(  
-name  
+```cpp
+PROVIDER_COLUMN_ENTRY_STR(name  
 , ordinal, member )  
 ```  
   

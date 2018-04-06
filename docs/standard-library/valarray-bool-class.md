@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["valarray<bool> class"]

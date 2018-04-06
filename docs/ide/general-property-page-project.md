@@ -122,7 +122,7 @@ In managed projects, specifies the .NET framework version to target.
 Specifies the [/GL](../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG](../build/reference/ltcg-link-time-code-generation.md) linker option. By default, this is disabled for Debug configurations, and enabled for Retail configurations.
 
 **Windows Store App Support**  
-Specifies whether this project supports Windows Store apps. For more information, see [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md), and the Windows Developer Center.
+Specifies whether this project supports Windows Runtime (Universal Windows Platform) apps. For more information, see [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md), and the Windows Developer Center.
 
 ## See also
 

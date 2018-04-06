@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CXMLAccessor class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CXMLAccessor Class
 Allows you to access data sources as string data when you have no knowledge of the data store's schema (underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CXMLAccessor : public CDynamicStringAccessorW  
 ```  
   
