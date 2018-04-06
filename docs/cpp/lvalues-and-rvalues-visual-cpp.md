@@ -1,7 +1,7 @@
 ---
 title: "Value Categories: Lvalues and Rvalues (Visual C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/05/2018"
+ms.date: "04/06/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -40,7 +40,7 @@ The following diagram illustrates the relationships between the categories:
 
  The following example demonstrates several correct and incorrect usages of lvalues and rvalues:
 
-```
+```cpp
 // lvalues_and_rvalues2.cpp
 int main()
 {
