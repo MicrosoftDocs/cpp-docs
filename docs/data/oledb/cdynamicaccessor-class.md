@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicAccessor", "ATL::CDynamicAccessor", "CDynamicAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicAccessor class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDynamicAccessor Class
 Allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDynamicAccessor : public CAccessorBase  
 ```  
   

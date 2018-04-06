@@ -13,12 +13,11 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-robots: noindex,nofollow
 ms.workload: ["cplusplus"]
 ---
 # Template Friends
 
-Class templates can have [friends](http://msdn.microsoft.com/en-us/bf412640-d857-4acb-b2b5-513131cb9681). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
+Class templates can have [friends](friend-cpp.md). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
   
 **C++ 11**:  A type parameter can be declared as a friend by using the form `friend T;`.  
   

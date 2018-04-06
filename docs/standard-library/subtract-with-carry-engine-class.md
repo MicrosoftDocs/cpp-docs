@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::subtract_with_carry_engine", "random/std::subtract_with_carry_engine::default_seed", "random/std::subtract_with_carry_engine::discard", "random/std::subtract_with_carry_engine::min", "random/std::subtract_with_carry_engine::max", "random/std::subtract_with_carry_engine::seed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::subtract_with_carry_engine [C++]", "std::subtract_with_carry_engine [C++], default_seed", "std::subtract_with_carry_engine [C++], discard", "std::subtract_with_carry_engine [C++], min", "std::subtract_with_carry_engine [C++], max", "std::subtract_with_carry_engine [C++], seed"]

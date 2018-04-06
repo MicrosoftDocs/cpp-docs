@@ -4,9 +4,8 @@ ms.custom: ""
 ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
-s.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::WriteOnlyArray::Data", "VCCORLIB/Platform::WriteOnlyArray::end", "VCCORLIB/Platform::WriteOnlyArray::FastPass", "VCCORLIB/Platform::WriteOnlyArray::Length", "VCCORLIB/Platform::WriteOnlyArray::set"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WriteOnlyArray Class"]

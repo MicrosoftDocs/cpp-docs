@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["END_PARAM_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_PARAM_MAP macro"]
@@ -22,9 +22,8 @@ Marks the end of the parameter map entries.
   
 ## Syntax  
   
-```  
-  
-END_PARAM_MAP( )  
+```cpp
+END_PARAM_MAP()  
   
 ```  
   

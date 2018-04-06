@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>.AddRefRows", "CRowset.AddRefRows", "ATL.CRowset.AddRefRows", "AddRefRows", "CRowset::AddRefRows", "CRowset<TAccessor>::AddRefRows", "ATL::CRowset::AddRefRows", "ATL.CRowset<TAccessor>.AddRefRows", "ATL::CRowset<TAccessor>::AddRefRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddRefRows method"]
@@ -22,9 +22,8 @@ Calls [IRowset::AddRefRows](https://msdn.microsoft.com/en-us/library/ms719619.as
   
 ## Syntax  
   
-```  
-  
-HRESULT AddRefRows( ) throw( );  
+```cpp
+HRESULT AddRefRows() throw();  
   
 ```  
   

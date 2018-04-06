@@ -12,7 +12,7 @@ ms.workload: ["cplusplus"]
 ---
 # How to Report a Problem with the Visual C++ Toolset
 
-If you encounter problems with the Visual C++ compiler, linker, or other tools and libraries, we want to know about them.
+If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them.
 
 The best way to let us know about a problem is to send us a report that includes a description of the problem you've encountered, details about how you're building your program, and a *repro*, a complete test case we can use to reproduce the problem on our own machines. This information lets us quickly verify that the problem exists in our code and is not local to your environment, to determine whether it affects other versions of the compiler, and to diagnose its cause.
 

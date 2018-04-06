@@ -23,9 +23,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-template<  
-   typename T  
->  
+template<typename T>  
 static __forceinline Base* CastToBase(  
    _In_ T* ptr  
 );  

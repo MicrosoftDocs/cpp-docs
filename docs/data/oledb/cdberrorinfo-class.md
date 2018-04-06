@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo", "ATL::CDBErrorInfo", "ATL.CDBErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBErrorInfo class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDBErrorInfo Class
 Provides support for OLE DB error processing using the OLE DB [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDBErrorInfo  
 ```  
   

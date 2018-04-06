@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["length", "Type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["variables, length", "size, getting in inline assembly", "size", "LENGTH operator", "TYPE operator", "SIZE operator", "inline assembly, operators", "variables, type", "variables, size"]

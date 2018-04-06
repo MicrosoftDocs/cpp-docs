@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CNoMultipleResults", "ATL.CNoMultipleResults", "ATL::CNoMultipleResults"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNoMultipleResults class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoMultipleResults Class
 Used as a template argument (*TMultiple*) to [CCommand](../../data/oledb/ccommand-class.md) to create an optimized command that handles a single result set.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CNoMultipleResults  
 ```  
   

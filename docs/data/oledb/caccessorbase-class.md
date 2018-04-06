@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorBase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessorBase class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CAccessorBase Class
 All accessors in the OLE DB Templates derive from this class. `CAccessorBase` allows one rowset to manage multiple accessors. It also provides binding for both parameters and output columns.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 // Replace with syntax  
 ```  
   

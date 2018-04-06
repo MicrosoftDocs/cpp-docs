@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnPropertyChanged method"]
@@ -22,12 +22,9 @@ Called after setting a property to handle chained properties.
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT OnPropertyChanged(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### Parameters  

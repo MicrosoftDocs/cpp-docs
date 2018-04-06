@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["functional/std::bind", "xfunctional/std::bind1st", "xfunctional/std::bind2nd", "xfunctional/std::bit_and", "xfunctional/std::bit_not", "xfunctional/std::bit_or", "xfunctional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "xfunctional/std::mem_fn", "xfunctional/std::mem_fun_ref", "xfunctional/std::not1", "xfunctional/std::not2", "xfunctional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]

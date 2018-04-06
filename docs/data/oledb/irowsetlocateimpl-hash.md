@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Hash method"]
@@ -22,16 +22,13 @@ Returns hash values for the specified bookmarks.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Hash )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Hash )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmarks,  
    const DBBKMARK* rgcbBookmarks[],  
    const BYTE* rgpBookmarks[],  
    DBHASHVALUE rgHashValues[],  
-   DBROWSTATUS rgBookmarkStatus[]   
-);  
+   DBROWSTATUS rgBookmarkStatus[]);  
 ```  
   
 #### Parameters  

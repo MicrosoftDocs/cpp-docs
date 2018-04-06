@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parameter queries, running using CCommand class"]
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
@@ -24,13 +24,13 @@ The following example issues a simple parameterized query that retrieves records
   
 CDataSource connection;  
 CSession session;  
-CCommand<CAccessor<CArtists> > artists;  
+CCommand<CAccessor<CArtists>> artists;  
   
 // Open the connection, session, and table, specifying authentication   
 // using Windows NT integrated security. Hard-coding a password is a major   
 // security weakness.  
-connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL,   
-DBPROP_AUTH_INTEGRATED);  
+connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+
 session.Open(connection);  
   
 // Set the parameter for the query  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetCreatorImpl", "ATL.IRowsetCreatorImpl", "ATL::IRowsetCreatorImpl<T>", "ATL.IRowsetCreatorImpl<T>", "IRowsetCreatorImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetCreatorImpl class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetCreatorImpl Class
 Performs the same functions as `IObjectWithSite` but also enables the OLE DB properties **DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS**.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < class T >  
 class ATL_NO_VTABLE IRowsetCreatorImpl   
    : public IObjectWithSiteImpl< T >  

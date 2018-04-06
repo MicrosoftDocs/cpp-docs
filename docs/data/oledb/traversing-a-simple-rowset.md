@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data access [C++], rowsets", "rowsets [C++], accessing", "simple rowsets", "OLE DB consumers [C++], database attributes", "accessors [C++], rowsets"]
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
@@ -24,14 +24,15 @@ The following example shows a quick and easy database access that does not invol
   
 CDataSource connection;  
 CSession session;  
-CTable<CAccessor<CArtists> > artists;  
+CTable<CAccessor<CArtists>> artists;  
   
 // Open the connection, session, and table, specifying authentication   
 // using Windows NT integrated security. Hard-coding a password is a major  
 // security weakness.  
-connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL,   
-DBPROP_AUTH_INTEGRATED);  
+connection.Open(CLSID_MSDASQL, "NWind", NULL, NULL, DBPROP_AUTH_INTEGRATED);  
+
 session.Open(connection);  
+
 artists.Open(session, "Artists");  
   
 // Get data from the rowset  

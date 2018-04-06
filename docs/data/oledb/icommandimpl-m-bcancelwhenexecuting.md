@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting", "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bCancelWhenExecuting"]
@@ -22,8 +22,7 @@ Indicates whether the command can be canceled when executing.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bCancelWhenExecuting:1;  
   
 ```  

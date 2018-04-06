@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBInitializeImpl.IDBInitializeImpl", "IDBInitializeImpl", "IDBInitializeImpl::IDBInitializeImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBInitializeImpl constructor"]
@@ -22,9 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-IDBInitializeImpl( );  
+```cpp
+IDBInitializeImpl();  
   
 ```  
   

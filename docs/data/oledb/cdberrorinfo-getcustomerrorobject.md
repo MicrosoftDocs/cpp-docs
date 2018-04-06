@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo::GetCustomErrorObject", "ATL.CDBErrorInfo.GetCustomErrorObject", "CDBErrorInfo.GetCustomErrorObject", "ATL::CDBErrorInfo::GetCustomErrorObject", "GetCustomErrorObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCustomErrorObject method"]
@@ -22,13 +22,9 @@ Calls [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/en-us/lib
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetCustomErrorObject(   
-   ULONG ulRecordNum,   
-   REFIID riid,   
-   IUnknown** ppObject    
-) const throw( );  
+```
+HRESULT GetCustomErrorObject(ULONG ulRecordNum,   
+   REFIID riid,IUnknown** ppObject) const throw();  
 ```  
   
 #### Parameters  

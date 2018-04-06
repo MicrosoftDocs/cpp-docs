@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_strIndexText"]
@@ -22,8 +22,7 @@ Contains the rowset's initial index.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR CRowsetBaseImpl::m_strIndexText;  
   
 ```  

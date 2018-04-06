@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["std::operator>", "operator>", "std::>", ">"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["> operator, comparing specific objects", "operator >"]

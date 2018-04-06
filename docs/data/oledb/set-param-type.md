@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SET_PARAM_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SET_PARAM_TYPE macro"]
@@ -22,11 +22,8 @@ Specifies `COLUMN_ENTRY` macros that follow the `SET_PARAM_TYPE` macro input, ou
   
 ## Syntax  
   
-```  
-  
-SET_PARAM_TYPE(  
-type  
- )  
+```cpp
+SET_PARAM_TYPE(type)  
   
 ```  
   
@@ -46,7 +43,8 @@ type
 -   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** The parameter is both an input and an output parameter.  
   
 ## Example  
-```cpp  
+```
+cpp  
 class CArtistsProperty
 {
 public:

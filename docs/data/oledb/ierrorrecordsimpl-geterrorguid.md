@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorGUID", "IErrorRecordsImpl.GetErrorGUID", "IErrorRecordsImpl::GetErrorGUID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorGUID method"]
@@ -22,11 +22,8 @@ Gets the error GUID from an error record.
   
 ## Syntax  
   
-```  
-  
-      REFGUID GetErrorGUID(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      REFGUID GetErrorGUID(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

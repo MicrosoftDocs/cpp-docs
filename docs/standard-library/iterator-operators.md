@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xutility/std::operator!=", "xutility/std::operator&gt;", "xutility/std::operator&gt;=", "xutility/std::operator&lt;", "xutility/std::operator&lt;=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc

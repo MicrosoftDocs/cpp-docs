@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor operators", "operators [C++], preprocessor"]
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656

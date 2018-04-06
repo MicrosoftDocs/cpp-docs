@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["type_traits/std::index_sequence", "type_traits/std::make_index_sequence", "type_traits/std::integer_sequence", "type_traits/std::make_integer_sequence", "type_traits/std::index_sequence_for"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::index_sequence", "std::make_index_sequence", "std::integer_sequence", "std::make_integer_sequence", "std::index_sequence_for"]

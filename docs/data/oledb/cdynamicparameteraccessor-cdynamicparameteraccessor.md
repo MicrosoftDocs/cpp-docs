@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method"]
@@ -22,13 +22,11 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
+```cpp
       typedef CDynamicParameterAccessor _ParamClass;  
-CDynamicParameterAccessor(   
-   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
    DBLENGTH nBlobSize = 8000 )   
-   : CDynamicAccessor( eBlobHandling, nBlobSize )  
+   : CDynamicAccessor(eBlobHandling, nBlobSize )  
 ```  
   
 #### Parameters  

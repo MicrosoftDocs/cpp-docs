@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 caps.latest.revision: 7
@@ -224,7 +224,7 @@ A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/
 
 ## .NET Framework Equivalent
 
-Windows Store apps that us C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
+Windows Runtime apps that us C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
 
 ## <a name="remove"></a>  UnorderedMap::Remove Method
 

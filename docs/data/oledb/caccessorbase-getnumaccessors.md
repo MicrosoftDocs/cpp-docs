@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CAccessorBase::GetNumAccessors", "GetNumAccessors", "CAccessorBase.GetNumAccessors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetNumAccessors method"]
@@ -22,9 +22,8 @@ Retrieves the number of accessors created by the class.
   
 ## Syntax  
   
-```  
-  
-ULONG GetNumAccessors( ) const;  
+```cpp
+ULONG GetNumAccessors() const;  
   
 ```  
   

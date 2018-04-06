@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["task_completion_event", "PPLTASKS/concurrency::task_completion_event", "PPLTASKS/concurrency::task_completion_event::task_completion_event", "PPLTASKS/concurrency::task_completion_event::set", "PPLTASKS/concurrency::task_completion_event::set_exception"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_completion_event class"]

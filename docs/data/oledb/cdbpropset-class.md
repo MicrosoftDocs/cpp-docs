@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropSet class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDBPropSet Class
 Inherits from the **DBPROPSET** structure and adds a constructor that initializes key fields as well as the `AddProperty` access method.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDBPropSet : public tagDBPROPSET  
 ```  
   

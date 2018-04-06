@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Compare method"]
@@ -22,13 +22,10 @@ Compares two bookmarks using [IRowsetLocate::Compare](https://msdn.microsoft.com
   
 ## Syntax  
   
-```  
-  
-      HRESULT Compare(   
-   const CBookmarkBase& bookmark1,   
+```cpp
+HRESULT Compare(const CBookmarkBase& bookmark1,   
    const CBookmarkBase& bookmark2,   
-   DBCOMPARE* pComparison    
-) const throw( );  
+   DBCOMPARE* pComparison) const throw();  
 ```  
   
 #### Parameters  

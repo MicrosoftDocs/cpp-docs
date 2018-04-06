@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IDBInitializeImpl.Uninitialize", "Uninitialize", "IDBInitializeImpl::Uninitialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Uninitialize method"]
@@ -22,11 +22,8 @@ Places the data source object in an uninitialized state by freeing internal reso
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(Uninitialize)(   
-   void    
-);  
+```cpp
+      STDMETHOD(Uninitialize)(void);  
 ```  
   
 ## Remarks  

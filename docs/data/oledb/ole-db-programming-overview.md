@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Universal Data Access", "OLE DB, about OLE DB"]
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df

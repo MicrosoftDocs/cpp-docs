@@ -23,14 +23,10 @@ Creates a *smart pointer* type that represents the interface specified by the te
 ## Syntax  
   
 ```  
-template <  
-   typename T  
->  
+template <typename T>  
 class ComPtr;  
   
-template<  
-   class U  
->  
+template<class T>  
 friend class ComPtr;  
 ```  
   

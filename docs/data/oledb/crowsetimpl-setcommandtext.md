@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetCommandText method"]
@@ -22,12 +22,9 @@ Validates and stores the **DBID**s in the two strings ([m_strCommandText](../../
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::SetCommandText(  
-   DBID* pTableID,  
-   DBID* pIndexID   
-);  
+```cpp
+HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,  
+   DBID* pIndexID);  
 ```  
   
 #### Parameters  

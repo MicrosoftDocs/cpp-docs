@@ -167,7 +167,7 @@ virtual int ReportError(
   
 ### Parameters  
  `nType`  
- Specifies the style of the message box. Apply any combination of the [message-box styles](message-box-styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
+ Specifies the style of the message box. Apply any combination of the [message-box styles](styles-used-by-mfc.md#message-box-styles) to the box. If you don't specify this parameter, the default is **MB_OK**.  
   
  *nMessageID*  
  Specifies the resource ID (string table entry) of a message to display if the exception object does not have an error message. If 0, the message "No error message is available" is displayed.  

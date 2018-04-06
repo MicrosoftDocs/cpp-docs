@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocator_chunklist", "allocators/stdext::allocators::allocator_chunklist"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocator_chunklist", "stdext::allocators [C++], allocator_chunklist"]

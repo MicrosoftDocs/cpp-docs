@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetColumnInfo", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnInfo method"]
@@ -22,17 +22,13 @@ Gets column information from the opened rowset.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetColumnInfo(  
-   DBORDINAL* pulColumns,  
+```cpp
+HRESULT GetColumnInfo(DBORDINAL* pulColumns,  
    DBCOLUMNINFO** ppColumnInfo,  
-   LPOLESTR* ppStrings   
-) const;  
-HRESULT GetColumnInfo(  
-   DBORDINAL* pColumns,  
-   DBCOLUMNINFO** ppColumnInfo   
-);  
+   LPOLESTR* ppStrings) const;  
+
+HRESULT GetColumnInfo(DBORDINAL* pColumns,  
+   DBCOLUMNINFO** ppColumnInfo);  
 ```  
   
 #### Parameters  

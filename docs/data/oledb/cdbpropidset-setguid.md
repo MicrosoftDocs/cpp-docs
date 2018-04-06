@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet.SetGUID", "ATL::CDBPropIDSet::SetGUID", "SetGUID", "ATL.CDBPropIDSet.SetGUID", "CDBPropIDSet::SetGUID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetGUID method"]
@@ -22,11 +22,8 @@ Sets the GUID field in the **DBPROPIDSET** structure.
   
 ## Syntax  
   
-```  
-  
-      void SetGUID(   
-   const GUID& guid    
-) throw( );  
+```cpp
+      void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### Parameters  

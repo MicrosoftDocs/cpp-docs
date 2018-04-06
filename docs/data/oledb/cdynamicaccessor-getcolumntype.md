@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicAccessor.GetColumnType", "CDynamicAccessor::GetColumnType", "GetColumnType", "CDynamicAccessor.GetColumnType", "ATL::CDynamicAccessor::GetColumnType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnType method"]
@@ -22,12 +22,9 @@ Retrieves the data type of a specified column.
   
 ## Syntax  
   
-```  
-  
-      bool GetColumnType(   
-   DBORDINAL nColumn,   
-   DBTYPE* pType    
-) const throw( );  
+```
+bool GetColumnType(DBORDINAL nColumn,   
+  DBTYPE* pType) const throw();  
 ```  
   
 #### Parameters  

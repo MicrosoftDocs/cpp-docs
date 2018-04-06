@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenNewSession method"]
@@ -22,11 +22,8 @@ Opens a new session using the current connection object's data source.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenNewSession(   
-   CSession & session    
-) throw( );  
+```cpp
+HRESULT OpenNewSession(CSession & session) throw();  
 ```  
   
 #### Parameters  

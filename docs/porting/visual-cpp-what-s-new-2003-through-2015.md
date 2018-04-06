@@ -1478,7 +1478,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
 #### Compiler
 
-The Microsoft C++ compiler supports these ISO C++11 language features:
+The Microsoft Visual C++ compiler supports these ISO C++11 language features:
 
 - Default template arguments for function templates.
 - Delegating constructors
@@ -1495,8 +1495,8 @@ The Microsoft C++ compiler supports these ISO C++11 language features:
 - Compound literals.
 - Designated initializers.
 - Mixing declarations with code.
-- String literal conversion to modifiable values can be disallowed by using the new compiler option /Zc:strictStrings. In C++98, conversion from string literals to char\* (and wide string literals to wchar_t\*) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the /Zc:strictStrings option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
-- rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the Visual C++ compiler did not provide this in specific casting scenarios. A new compiler option, /Zc:rvalueCast, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
+- String literal conversion to modifiable values can be disallowed by using the new compiler option **/Zc:strictStrings**. In C++98, conversion from string literals to char\* (and wide string literals to wchar_t\*) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the **/Zc:strictStrings** option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
+- rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the compiler did not provide this in specific casting scenarios. A new compiler option, **/Zc:rvalueCast**, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
   - Note: For defaulted functions, using =default to request memberwise move constructors and move assignment operators is not supported.
 
 ### C99 Libraries
@@ -1536,16 +1536,16 @@ This improved support for ISO C/C++ standards may require changes to existing co
 ### Profile Guided Optimization (PGO) enhancements
 
 - Performance improvements from a reduction in the working set of apps that are optimized by using PGO.
-- New PGO for Windows Store app development.
+- New PGO for Windows Runtime app development.
 
-### Windows Store App Development Support
+### Windows Runtime App Development Support
 
-- **Support For Boxed Types In Value structs.** You can now define value types by using fields that can be null—for example, IBox<int>^ as opposed to int. This means that the fields can either have a value, or be equal to nullptr.
+- **Support For Boxed Types In Value structs.** You can now define value types by using fields that can be null—for example, IBox\<int>^ as opposed to int. This means that the fields can either have a value, or be equal to nullptr.
 - **Richer Exception Information.** C++/CX supports the new Windows error model that enables the capture and propagation of rich exception information across the application binary interface (ABI); this includes call stacks and custom message strings.
 - **Object::ToString() Is Now Virtual.** You can now override ToString in user-defined Windows Runtime ref types.
 - **Support For Deprecated APIs.** Public Windows Runtime APIs can now be marked as deprecated and given a custom message that appears as a build warning and can provide migration guidance.
 - **Debugger Improvements.** Support for native/JavaScript interop debugging, Windows Runtime exception diagnosis, and async code debugging (both Windows Runtime and PPL).
-  - Note: In addition to the C++-specific features and enhancements that are described in this section, other enhancements in Visual Studio also can help you write better Windows Store apps.
+  - Note: In addition to the C++-specific features and enhancements that are described in this section, other enhancements in Visual Studio also can help you write better Windows Runtime apps.
 
 ### Diagnostics Enhancements
 
@@ -1623,12 +1623,12 @@ func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
 func1(Element::Helium); // OK
    ```
 
-### Windows Store App Development Support
+### Windows Runtime App Development Support
 
-- **Native XAML-based UI model**. For Windows Store apps, you can use the new native XAML-based UI model.
-- **Visual C++ Component Extensions**. These extensions simplify consumption of Windows Runtime objects, which are a necessary part of Windows Store apps. For more information, see Roadmap for Windows Store apps using C++ and Visual C++ Language Reference (C++/CX)
-- **DirectX games**. You can develop engaging games by using the new DirectX support for Windows Store apps.
-- **XAML/DirectX interop**. Windows Store apps that use both XAML and DirectX now interoperate efficiently.
+- **Native XAML-based UI model**. For Windows Runtime apps, you can use the new native XAML-based UI model.
+- **Visual C++ Component Extensions**. These extensions simplify consumption of Windows Runtime objects, which are a necessary part of Windows Runtime apps. For more information, see [Roadmap for Windows Runtime apps using C++](../windows/universal-windows-apps-cpp.md) and [Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
+- **DirectX games**. You can develop engaging games by using the new DirectX support for Windows Runtime apps.
+- **XAML/DirectX interop**. Windows Runtime apps that use both XAML and DirectX now interoperate efficiently.
 - **Windows Runtime Component DLL development**. Component DLL development makes the Windows Runtime environment extensible.
 
 ### Compiler and Linker
@@ -1932,7 +1932,7 @@ The compiler has breaking changes in this release.
 - `64-bit native and cross-compilers.
 - /analyze (Enterprise Code Analysis) compiler option has been added.
 - /bigobj compiler option has been added.
-- /clr:pure, /clr:safe, and /clr:oldSyntax have been added.
+- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Later deprecated in Visual Studio 2015.)
 - Deprecated compiler options: many compiler options have been deprecated in this release; see Deprecated Compiler Options for more information.
 - Double thunking in /clr code is reduced; see Double Thunking (C++) for more information.
 - /EH (Exception Handling Model) or /EHs can no longer be used to catch an exception that is raised with something other than a throw; use /EHa.

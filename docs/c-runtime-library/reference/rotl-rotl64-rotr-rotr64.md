@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_rotr64", "_rotl", "_rotr", "_rotl64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -27,7 +27,7 @@ Rotates bits to the left (`_rotl`) or right (`_rotr`).
   
 ```  
   
-      unsigned int _rotl(  
+unsigned int _rotl(  
    unsigned int value,  
    int shift   
 );  

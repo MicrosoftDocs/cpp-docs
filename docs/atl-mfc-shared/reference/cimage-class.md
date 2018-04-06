@@ -1,7 +1,7 @@
 ---
 title: "CImage Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "02/01/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
@@ -65,7 +65,7 @@ class CImage
 |[CImage::IsDIBSection](#isdibsection)|Determines if the attached bitmap is a DIB section.|  
 |[CImage::IsIndexed](#isindexed)|Indicates that a bitmap's colors are mapped to an indexed palette.|  
 |[CImage::IsNull](#isnull)|Indicates if a source bitmap is currently loaded.|  
-|[CImage::IsTransparencySupported](#istransparencysupported)|Indicates whether the application supports transparent bitmaps and was compiled for Windows 2000 or later.|  
+|[CImage::IsTransparencySupported](#istransparencysupported)|Indicates whether the application supports transparent bitmaps.|  
 |[CImage::Load](#load)|Loads an image from the specified file.|  
 |[CImage::LoadFromResource](#loadfromresource)|Loads an image from the specified resource.|  
 |[CImage::MaskBlt](#maskblt)|Combines the color data for the source and destination bitmaps using the specified mask and raster operation.|  
@@ -143,17 +143,6 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 
   
  Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 HBITMAP or DIB section.  
-  
-> [!NOTE]
->  The following `CImage` methods have limitations on their use:  
-  
-|Method|Limitation|  
-|------------|----------------|  
-|[PlgBlt](#plgblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
-|[MaskBlt](#maskblt)|Works with only Windows NT 4.0 or later. Will not work on applications running on Windows 95/98 or later.|  
-|[AlphaBlend](#alphablend)|Works with only Windows 2000, Windows 98, and later systems.|  
-|[TransparentBlt](#transparentblt)|Works with only Windows 2000, Windows 98, and later systems.|  
-|[Draw](#draw)|Supports transparency with only Windows 2000, Windows 98, and later systems.|  
   
  You can use `CImage` from either MFC or ATL.  
   
@@ -923,7 +912,7 @@ bool IsNull() const throw();
  This method returns **True** if a bitmap is not currently loaded; otherwise **False**.  
   
 ##  <a name="istransparencysupported"></a>  CImage::IsTransparencySupported  
- Indicates whether the application supports transparent bitmaps and was compiled for Windows 2000 or later.  
+ Indicates whether the application supports transparent bitmaps.  
   
 ```
 static BOOL IsTransparencySupported() throw();
@@ -934,8 +923,6 @@ static BOOL IsTransparencySupported() throw();
   
 ### Remarks  
  If the return value is nonzero, and transparency is supported, a call to [AlphaBlend](#alphablend), [TransparentBlt](#transparentblt), or [Draw](#draw) will handle transparent colors.  
-  
- If the application is compiled for use with operating systems before Windows 2000 or Windows 98, this method will always return 0, even on newer operating systems.  
   
 
 ##  <a name="load"></a>  CImage::Load  

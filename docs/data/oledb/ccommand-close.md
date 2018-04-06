@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CCommand.Close", "CCommand::Close"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Close method"]
@@ -20,10 +20,10 @@ ms.workload: ["cplusplus", "data-storage"]
 # CCommand::Close
 Releases the accessor rowset associated with the command.  
   
-## Syntax  
-  
-```  
-void Close( );  
+## Syntax
+
+```cpp
+void Close();  
 ```  
   
 ## Remarks  

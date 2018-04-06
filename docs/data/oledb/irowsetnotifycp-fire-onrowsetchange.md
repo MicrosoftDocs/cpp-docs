@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Fire_OnRowsetChange method"]
@@ -22,14 +22,11 @@ Broadcasts an [OnRowsetChange](https://msdn.microsoft.com/en-us/library/ms722669
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnRowsetChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnRowsetChange(IRowset* pRowset,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

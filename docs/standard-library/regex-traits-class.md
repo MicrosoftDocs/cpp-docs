@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits", "regex/std::regex_traits::char_type", "regex/std::regex_traits::size_type", "regex/std::regex_traits::string_type", "regex/std::regex_traits::locale_type", "regex/std::regex_traits::char_class_type", "regex/std::regex_traits::length", "regex/std::regex_traits::translate", "regex/std::regex_traits::translate_nocase", "regex/std::regex_traits::transform", "regex/std::regex_traits::transform_primary", "regex/std::regex_traits::lookup_classname", "regex/std::regex_traits::lookup_collatename", "regex/std::regex_traits::isctype", "regex/std::regex_traits::value", "regex/std::regex_traits::imbue", "regex/std::regex_traits::getloc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::regex_traits [C++]", "std::regex_traits [C++], char_type", "std::regex_traits [C++], size_type", "std::regex_traits [C++], string_type", "std::regex_traits [C++], locale_type", "std::regex_traits [C++], char_class_type", "std::regex_traits [C++], length", "std::regex_traits [C++], translate", "std::regex_traits [C++], translate_nocase", "std::regex_traits [C++], transform", "std::regex_traits [C++], transform_primary", "std::regex_traits [C++], lookup_classname", "std::regex_traits [C++], lookup_collatename", "std::regex_traits [C++], isctype", "std::regex_traits [C++], value", "std::regex_traits [C++], imbue", "std::regex_traits [C++], getloc"]

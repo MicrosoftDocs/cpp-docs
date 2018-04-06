@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicParameterAccessor::SetParamLength", "CDynamicParameterAccessor.SetParamLength", "ATL.CDynamicParameterAccessor.SetParamLength", "CDynamicParameterAccessor::SetParamLength", "SetParamLength"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParamLength method"]
@@ -22,13 +22,9 @@ Sets the length of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool SetParamLength(  
-   DBORDINAL nParam,  
-   DBLENGTH length  
-);  
-```  
+```
+bool SetParamLength(DBORDINAL nParam,  
+   DBLENGTH length);  ```  
   
 #### Parameters  
  `nParam`  

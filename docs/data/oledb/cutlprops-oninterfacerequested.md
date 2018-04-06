@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CUtlProps"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnInterfaceRequested method"]
@@ -22,11 +22,8 @@ Handles requests for an optional interface when a consumer calls a method on one
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(  
-   REFIID riid  
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
 ```  
   
 #### Parameters  

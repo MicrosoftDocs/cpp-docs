@@ -39,7 +39,7 @@ For the Linux version of this page, see [Custom Build Step Properties (Linux C++
  These options define when the custom build step is run in the build process, relative to the listed targets. The most commonly listed targets are BuildGenerateSources, BuildCompile, and BuildLink, because they represent the major steps in the build process. Other often-listed targets are Midl, CLCompile, and Link.  
   
  Treat Output As Content  
- This option is only meaningful for Windows Store or Windows Phone apps, which include all content files in the .appx package.  
+ This option is only meaningful for Universal Windows Platform or Windows Phone apps, which include all content files in the .appx package.  
   
 ### To specify a custom build step  
   

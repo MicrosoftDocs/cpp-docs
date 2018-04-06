@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParameterInfo method"]
@@ -22,13 +22,10 @@ Specifies the native type of each command parameter.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::SetParameterInfo(  
-   DB_UPARAMS ulParams,  
+```cpp
+HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,  
    const DBORDINAL* pOrdinals,  
-   const DBPARAMBINDINFO* pParamInfo   
-) throw( );  
+   const DBPARAMBINDINFO* pParamInfo) throw();  
 ```  
   
 #### Parameters  

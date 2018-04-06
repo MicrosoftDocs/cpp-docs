@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["DEFINE_COMMAND"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DEFINE_COMMAND macro"]
@@ -25,13 +25,8 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ## Syntax  
   
-```  
-  
-DEFINE_COMMAND(  
-x  
-,   
-szCommand  
- )  
+```cpp
+DEFINE_COMMAND(x, szCommand)  
   
 ```  
   

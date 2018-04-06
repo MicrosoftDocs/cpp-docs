@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetErrorInfo", "ATL.CDBErrorInfo.GetErrorInfo", "CDBErrorInfo.GetErrorInfo", "ATL::CDBErrorInfo::GetErrorInfo", "CDBErrorInfo::GetErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorInfo method"]
@@ -22,13 +22,9 @@ Calls [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms7
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorInfo(   
-   ULONG ulRecordNum,   
-   LCID lcid,   
-   IErrorInfo** ppErrorInfo    
-) const throw( );  
+```
+HRESULT GetErrorInfo(ULONG ulRecordNum,   
+   LCID lcid,IErrorInfo** ppErrorInfo) const throw();  
 ```  
   
 #### Parameters  

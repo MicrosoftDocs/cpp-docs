@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.templates.ole"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros"]

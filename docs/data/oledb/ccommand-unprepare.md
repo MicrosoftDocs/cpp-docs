@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Unprepare method"]
@@ -22,9 +22,8 @@ Discards the current command execution plan.
   
 ## Syntax  
   
-```  
-  
-HRESULT CCommandBase::Unprepare( ) throw( );  
+```cpp
+HRESULT CCommandBase::Unprepare() throw();  
   
 ```  
   

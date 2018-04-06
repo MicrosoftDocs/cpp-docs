@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_TYPE macro"]
@@ -22,15 +22,8 @@ Represents a binding to the specific column in the database. Supports `type` par
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE (  
-nOrdinal  
-,   
-wType  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
   
 ```  
   

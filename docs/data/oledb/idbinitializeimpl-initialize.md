@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Initialize", "IDBInitializeImpl::Initialize", "IDBInitializeImpl.Initialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Initialize method"]
@@ -22,11 +22,8 @@ Initializes the data source object by preparing its property support.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(Initialize)(   
-   void    
-);  
+```cpp
+      STDMETHOD(Initialize)(void);  
 ```  
   
 ## Remarks  

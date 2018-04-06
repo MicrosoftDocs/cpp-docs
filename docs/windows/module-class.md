@@ -24,9 +24,7 @@ Represents a collection of related objects.
   
 ```  
   
-template<  
-   ModuleType moduleType  
->  
+template<ModuleType moduleType>  
 class Module;  
   
 template<>  

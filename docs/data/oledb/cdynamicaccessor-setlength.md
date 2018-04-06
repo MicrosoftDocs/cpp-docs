@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::SetLength", "CDynamicAccessor.SetLength", "CDynamicAccessor::SetLength", "ATL.CDynamicAccessor.SetLength"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetLength method"]
@@ -22,20 +22,15 @@ Sets the length of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool SetLength(   
-   DBORDINAL nColumn,   
-   DBLENGTH nLength    
-) throw( );  
-bool SetLength(   
-   const CHAR* pColumnName,   
-   DBLENGTH nLength    
-) throw( );  
-bool SetLength(   
-   const WCHAR* pColumnName,   
-   DBLENGTH nLength    
-) throw( );  
+```
+bool SetLength(DBORDINAL nColumn,   
+   DBLENGTH nLength)throw();  
+
+bool SetLength(const CHAR* pColumnName,   
+   DBLENGTH nLength) throw();  
+
+bool SetLength(const WCHAR* pColumnName,   
+   DBLENGTH nLength) throw();  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetCommandFromID method"]
@@ -22,12 +22,9 @@ Checks to see if either or both parameters contain string values, and if so, cop
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::GetCommandFromID(  
-   DBID* pTableID,  
-   DBID* pIndexID   
-);  
+```cpp
+HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,  
+   DBID* pIndexID);  
 ```  
   
 #### Parameters  

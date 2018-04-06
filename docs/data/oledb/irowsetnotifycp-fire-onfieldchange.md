@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP::Fire_OnFieldChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Fire_OnFieldChange method"]
@@ -22,17 +22,14 @@ Broadcasts an [OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnFieldChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnFieldChange(IRowset* pRowset,  
    HROW hRow,  
    DBORDINAL cColumns,  
    DBORDINAL* rgColumns,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

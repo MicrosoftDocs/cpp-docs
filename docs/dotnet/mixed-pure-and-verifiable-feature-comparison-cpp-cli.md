@@ -25,13 +25,13 @@ This topic compares features among the different **/clr** compilation modes. For
   
 |Feature|Mixed (/clr)|Pure (/clr:pure)|Safe (/clr:safe)|Related Information|  
 |-------------|---------------------|-------------------------|-------------------------|-------------------------|  
-|CRT library|supported|supported||[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)|  
+|CRT library|supported|deprecated||[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)|  
 |MFC/ATL|supported|||[MFC Desktop Applications](../mfc/mfc-desktop-applications.md) &#124; [Class Overview](../atl/atl-class-overview.md)|  
 |Unmanaged Functions|supported|||[Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)|  
-|Unmanaged Data|supported|supported||[Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)|  
-|Callable from Unmanaged Functions|supported|||[How to: Migrate to /clr:pure (C++/CLI)](../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md)|  
-|Supports calling unmanaged Functions|supported|C-style functions only|P/Invoke only|[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)|  
-|Supports Reflection|DLLs only|supported|supported|[Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)|  
+|Unmanaged Data|supported|deprecated||[Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)|  
+|Callable from Unmanaged Functions|supported||||  
+|Supports calling unmanaged Functions|supported|deprecated|deprecated|[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)|  
+|Supports Reflection|DLLs only|deprecated|deprecated|[Reflection (C++/CLI)](../dotnet/reflection-cpp-cli.md)|  
   
 ## See Also  
  [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)

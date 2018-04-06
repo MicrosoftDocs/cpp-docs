@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessor class"]
@@ -22,8 +22,7 @@ Allows you to access a data source when you have no knowledge of the database sc
   
 ## Syntax  
   
-```  
-  
+```cpp
       template< typename BaseType, DBTYPEENUM OleDbType >  
 class CDynamicStringAccessorT : public CDynamicAccessor  
 ```  

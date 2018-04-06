@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_rotr16", "_rotr8"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]

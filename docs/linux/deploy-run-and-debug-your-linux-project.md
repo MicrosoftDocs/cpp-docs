@@ -80,5 +80,11 @@ There are several ways to interact with and debug your Linux project.
 
   ```handle SIGILL nostop noprint```
 
+## Next steps
+
+* To debug ARM devices on Linux, see this blog post: [Debugging an embedded ARM device in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
+
+* To debug using the **Attach to Process** command, see this blog post: [Linux C++ Workload improvements to the Project System, Linux Console Window, rsync and Attach to Process](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
+
 ## See also
 [C++ Debugging Properties (Linux C++)](../linux/prop-pages/debugging-linux.md).

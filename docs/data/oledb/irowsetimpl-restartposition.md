@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RestartPosition method"]
@@ -22,11 +22,8 @@ Repositions the next fetch position to its initial position; that is, its positi
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( RestartPosition )(  
-   HCHAPTER /* hReserved */   
-);  
+```cpp
+      STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
 ```  
   
 #### Parameters  

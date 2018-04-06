@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["strstream/std::ostrstream::freeze", "strstream/std::ostrstream::pcount", "strstream/std::ostrstream::rdbuf", "strstream/std::ostrstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::ostrstream [C++], freeze", "std::ostrstream [C++], pcount", "std::ostrstream [C++], rdbuf", "std::ostrstream [C++], str"]

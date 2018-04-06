@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.datatypes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["data types classes [C++]", "data types [C++], classes"]

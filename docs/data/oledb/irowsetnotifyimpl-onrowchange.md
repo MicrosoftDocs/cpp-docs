@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OnRowChange method"]
@@ -22,8 +22,7 @@ Notifies the consumer of the first change to a row or of any change that affects
   
 ## Syntax  
   
-```  
-  
+```cpp
 STDMETHOD(OnRowChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ DBCOUNTITEM /* cRows */,  

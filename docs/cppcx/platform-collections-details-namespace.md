@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::Details"]
 dev_langs: ["C++"]
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e

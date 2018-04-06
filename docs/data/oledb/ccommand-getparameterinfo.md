@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParameterInfo method"]
@@ -22,13 +22,10 @@ Gets a list of the command's parameters, their names, and their types.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::GetParameterInfo(  
-   DB_UPARAMS* pParams,  
+```cpp
+HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,  
    DBPARAMINFO** ppParamInfo,  
-   OLECHAR** ppNamesBuffer   
-) throw ( );  
+   OLECHAR** ppNamesBuffer) throw ();  
 ```  
   
 #### Parameters  

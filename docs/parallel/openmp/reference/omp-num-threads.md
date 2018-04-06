@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["OMP_NUM_THREADS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OMP_NUM_THREADS OpenMP environment variable"]

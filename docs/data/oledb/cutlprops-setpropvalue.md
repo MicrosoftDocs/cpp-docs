@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetPropValue method"]
@@ -22,13 +22,10 @@ Sets a property in a property set.
   
 ## Syntax  
   
-```  
-  
-      HRESULT SetPropValue(  
-   const GUID* pguidPropSet,  
+```cpp
+HRESULT SetPropValue(const GUID* pguidPropSet,  
    DBPROPID dwPropId,  
-   VARIANT* pvValue   
-);  
+   VARIANT* pvValue);  
 ```  
   
 #### Parameters  

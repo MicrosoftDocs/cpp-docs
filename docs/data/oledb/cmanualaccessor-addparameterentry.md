@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddParameterEntry method"]
@@ -22,17 +22,13 @@ Adds a parameter entry to the parameter entry structures.
   
 ## Syntax  
   
-```  
-  
-      void AddParameterEntry(  
-   DBORDINAL nOrdinal,  
-   DBTYPE wType,  
-   DBLENGTH nColumnSize,  
+```
+void AddParameterEntry(DBORDINAL nOrdinal,  
+   DBTYPE wType,  DBLENGTH nColumnSize,  
    void* pData,  
    void* pLength = NULL,  
    void* pStatus = NULL,  
-   DBPARAMIO eParamIO = DBPARAMIO_INPUT   
-) throw ( );  
+   DBPARAMIO eParamIO = DBPARAMIO_INPUT) throw ();  
 ```  
   
 #### Parameters  

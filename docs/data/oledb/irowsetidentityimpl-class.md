@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetIdentityImpl class"]
@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetIdentityImpl Class
 Implements the OLE DB [IRowsetIdentity](https://msdn.microsoft.com/en-us/library/ms715913.aspx) interface, which enables testing for row identity.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class RowClass = CSimpleRow>  
 class ATL_NO_VTABLE IRowsetIdentityImpl   
    : public IRowsetIdentity  

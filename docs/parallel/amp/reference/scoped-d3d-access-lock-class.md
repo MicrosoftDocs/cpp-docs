@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scoped_d3d_access_lock", "AMPRT/scoped_d3d_access_lock", "AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock"]
 dev_langs: ["C++"]
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1

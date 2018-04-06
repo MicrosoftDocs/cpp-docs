@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vector/vector<bool>::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["vector<bool> reference class"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::ICommandTextImpl::m_strCommandText", "ICommandTextImpl<T>::m_strCommandText", "m_strCommandText", "ICommandTextImpl.m_strCommandText", "ICommandTextImpl::m_strCommandText", "ATL::ICommandTextImpl<T>::m_strCommandText", "ATL.ICommandTextImpl.m_strCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_strCommandText"]
@@ -22,8 +22,7 @@ Stores the command text string.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR m_strCommandText;  
   
 ```  

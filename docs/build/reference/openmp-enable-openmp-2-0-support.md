@@ -29,8 +29,6 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
 ## Remarks  
  `#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** is not specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** is not specified.  
   
- An application compiled with **/openmp** and using the [Libraries](../../parallel/openmp/reference/openmp-libraries.md) can only be run on Windows 2000 or later operating systems.  
-  
  Applications compiled with **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it will detect the process is compiled with **/openmp** and if the application is being loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).  
   
  If you attempt to load an application compiled with **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception will be thrown outside the debugger and a OpenMPWithMultipleAppdomainsException exception will be thrown in the debugger.  

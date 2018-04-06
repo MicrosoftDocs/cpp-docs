@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "GetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetProperties method"]
@@ -22,14 +22,11 @@ Returns the list of properties in the **DBPROPSET_SESSION** property group that 
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetProperties)(   
-   ULONG cPropertyIDSets,   
+```cpp
+      STDMETHOD(GetProperties)(ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
-   DBPROPSET ** prgPropertySets    
-);  
+   DBPROPSET ** prgPropertySets);  
 ```  
   
 #### Parameters  

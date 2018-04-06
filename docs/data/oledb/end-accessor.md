@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["END_ACCESSOR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_ACCESSOR macro"]
@@ -22,9 +22,8 @@ Marks the end of an accessor entry.
   
 ## Syntax  
   
-```  
-  
-END_ACCESSOR( )  
+```cpp
+END_ACCESSOR()  
   
 ```  
   

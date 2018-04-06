@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetColumnInfo", "ATL.CDynamicAccessor.GetColumnInfo", "ATL::CDynamicAccessor::GetColumnInfo", "CDynamicAccessor.GetColumnInfo", "CDynamicAccessor::GetColumnInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnInfo method"]
@@ -22,14 +22,11 @@ Returns the column metadata needed by most consumers.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetColumnInfo(   
-   IRowset* pRowset,   
+```cpp
+HRESULT GetColumnInfo(IRowset* pRowset,   
    DBORDINAL* pColumns,   
    DBCOLUMNINFO** ppColumnInfo,   
-   OLECHAR** ppStringsBuffer    
-) throw( );  
+   OLECHAR** ppStringsBuffer) throw();  
 ```  
   
 #### Parameters  

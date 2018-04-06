@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CRowset<TAccessor>::MoveLast", "CRowset<TAccessor>::MoveLast", "ATL.CRowset.MoveLast", "ATL::CRowset::MoveLast", "CRowset<TAccessor>.MoveLast", "MoveLast", "CRowset::MoveLast", "ATL.CRowset<TAccessor>.MoveLast", "CRowset.MoveLast"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveLast method"]
@@ -22,9 +22,8 @@ Moves the cursor to the last row.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveLast( ) throw( );  
+```cpp
+HRESULT MoveLast() throw();  
   
 ```  
   

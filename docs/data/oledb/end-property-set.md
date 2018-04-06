@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["END_PROPERTY_SET"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["END_PROPERTY_SET macro"]
@@ -22,11 +22,8 @@ Marks the end of a property set.
   
 ## Syntax  
   
-```  
-  
-END_PROPERTY_SET(  
-guid   
-)  
+```cpp
+END_PROPERTY_SET(guid)  
   
 ```  
   

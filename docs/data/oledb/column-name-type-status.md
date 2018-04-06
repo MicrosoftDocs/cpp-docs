@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_NAME_TYPE_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_NAME_TYPE_STATUS macro"]
@@ -22,17 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ## Syntax  
   
-```  
-  
-COLUMN_NAME_TYPE_STATUS(  
-pszName  
-,   
-wType  
-,   
-status  
-,   
-data  
- )  
+```cpp
+COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)  
   
 ```  
   

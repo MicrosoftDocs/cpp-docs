@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want fine-tune the performance of your existing code that uses the Concurrency Runtime.  
   
 > [!IMPORTANT]
->  The Task Scheduler is not available from a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app. For more information, see [Creating Asynchronous Operations in C++ for Windows Store Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+>  The Task Scheduler is not available from a Universal Windows Platform (UWP) app. For more information, see [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
 >   
 >  In Visual Studio 2015 and later, the [concurrency::task](../../parallel/concrt/reference/task-class.md) class and related types in ppltasks.h use the Windows ThreadPool as their scheduler. This topic no longer applies to types that are defined in ppltasks.h. Parallel algorithms such as parallel_for continue to use the Concurrency Runtime as the default scheduler.  
   

@@ -27,7 +27,7 @@ C++ AMP (C++ Accelerated Massive Parallelism) accelerates the execution of your 
 |[Using Lambdas, Function Objects, and Restricted Functions](../../parallel/amp/using-lambdas-function-objects-and-restricted-functions.md)|Describes how to use lambda expressions, function objects, and restricted functions in calls to the [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) method.|  
 |[Using Tiles](../../parallel/amp/using-tiles.md)|Describes how to use tiles to accelerate your C++ AMP code.|  
 |[Using accelerator and accelerator_view Objects](../../parallel/amp/using-accelerator-and-accelerator-view-objects.md)|Describes how to use accelerators to customize execution of your code on the GPU.|  
-|[Using C++ AMP in Windows Store Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)|Describes how to use C++ AMP in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps that use Windows Runtime types.|  
+|[Using C++ AMP in UWP Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)|Describes how to use C++ AMP in Universal Windows Platform (UWP) apps that use Windows Runtime types.|  
 |[Graphics (C++ AMP)](../../parallel/amp/graphics-cpp-amp.md)|Describes how to use the C++ AMP graphics library.|  
 |[Walkthrough: Matrix Multiplication](../../parallel/amp/walkthrough-matrix-multiplication.md)|Demonstrates matrix multiplication using C++ AMP code and tiling.|  
 |[Walkthrough: Debugging a C++ AMP Application](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)|Explains how to create and debug an application that uses parallel reduction to sum up a large array of integers.|  

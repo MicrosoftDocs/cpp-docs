@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, field status", "field status in OLE DB templates"]
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
@@ -104,9 +104,10 @@ BEGIN_COLUMN_MAP(CProducts)
 END_COLUMN_MAP()  
 };  
   
-CTable<CAccessor<CProducts > > product;  
+CTable<CAccessor<CProducts >> product;  
   
 product.Open(session, "Product");  
+
 while (product.MoveNext() == S_OK)  
 {  
    // Check the product name isn't NULL before tracing it  

@@ -114,7 +114,7 @@ The following topics provide detailed information about how to program DLLs in V
  [Automation in a DLL](../build/automation-in-a-dll.md)  
  Describes what the Automation option in the MFC DLL Wizard supplies.  
   
- [Naming Conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md)  
+ [Naming Conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)  
  Discusses how the DLLs and libraries included in MFC follow a structured naming convention.  
   
  [Calling DLL functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)  

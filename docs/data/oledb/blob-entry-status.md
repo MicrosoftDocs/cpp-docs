@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BLOB_ENTRY_STATUS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB_ENTRY_STATUS macro"]
@@ -22,19 +22,8 @@ Used with `BEGIN_COLUMN_MAP` or `BEGIN_ACCESSOR_MAP` to bind a binary large obje
   
 ## Syntax  
   
-```  
-  
-BLOB_ENTRY_STATUS(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-status  
- )  
+```cpp
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
   
 ```  
   

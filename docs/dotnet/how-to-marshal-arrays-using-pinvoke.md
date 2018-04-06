@@ -26,7 +26,7 @@ This topic explains how native functions that accept C-style strings can be call
   
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts an array of integers. The second module is a managed command-line application that imports this function, but defines it in terms of a managed array, and uses the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify that the array should be converted to a native array when called.  
   
- The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ The managed module is compiled with /clr.  
   
 ```cpp  
 // TraditionalDll4.cpp  

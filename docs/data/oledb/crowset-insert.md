@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Insert method"]
@@ -22,12 +22,9 @@ Creates and initializes a new row using data from the accessor.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Insert(   
-   int nAccessor = 0,   
-   bool bGetHRow = false    
-) throw( );  
+```cpp
+HRESULT Insert(int nAccessor = 0,   
+   bool bGetHRow = false) throw();  
 ```  
   
 #### Parameters  

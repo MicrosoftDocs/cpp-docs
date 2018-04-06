@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBulkRowset<TAccessor>.MoveNext", "ATL::CBulkRowset::MoveNext", "CBulkRowset::MoveNext", "ATL.CBulkRowset.MoveNext", "CBulkRowset.MoveNext", "ATL::CBulkRowset<TAccessor>::MoveNext", "CBulkRowset<TAccessor>.MoveNext", "CBulkRowset<TAccessor>::MoveNext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveNext method"]
@@ -22,9 +22,8 @@ Retrieves the next row of data.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveNext( ) throw( );  
+```cpp
+HRESULT MoveNext() throw();  
   
 ```  
   

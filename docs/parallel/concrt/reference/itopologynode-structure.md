@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ITopologyNode", "CONCRTRM/concurrency::ITopologyNode", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetExecutionResourceCount", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetFirstExecutionResource", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ITopologyNode structure"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["tuple_size", "std::tuple_size", "utility/std::tuple_size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::tuple_size"]

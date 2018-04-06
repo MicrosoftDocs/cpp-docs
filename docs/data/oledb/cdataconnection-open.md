@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Open method"]
@@ -22,11 +22,8 @@ Opens a connection to a data source using an initialization string.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(   
-   LPCOLESTR szInitString    
-) throw( );  
+```cpp
+HRESULT Open(LPCOLESTR szInitString) throw();  
 ```  
   
 #### Parameters  

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor.GetBookmark", "GetBookmark", "CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetBookmark", "ATL::CDynamicAccessor::GetBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBookmark method"]
@@ -22,11 +22,8 @@ Retrieves the bookmark for the current row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetBookmark(   
-   CBookmark< >* pBookmark    
-) const throw( );  
+```cpp
+HRESULT GetBookmark(CBookmark< >* pBookmark) const throw();  
 ```  
   
 #### Parameters  

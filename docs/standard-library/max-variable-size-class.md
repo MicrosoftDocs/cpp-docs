@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_variable_size", "allocators/stdext::max_variable_size::allocated", "allocators/stdext::max_variable_size::deallocated", "allocators/stdext::max_variable_size::full", "allocators/stdext::max_variable_size::released", "allocators/stdext::max_variable_size::saved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_variable_size", "stdext::max_variable_size [C++], allocated", "stdext::max_variable_size [C++], deallocated", "stdext::max_variable_size [C++], full", "stdext::max_variable_size [C++], released", "stdext::max_variable_size [C++], saved"]

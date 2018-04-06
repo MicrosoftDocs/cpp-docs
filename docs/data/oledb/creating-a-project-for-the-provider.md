@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "OLE DB providers, projects", "projects [C++], creating"]
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2

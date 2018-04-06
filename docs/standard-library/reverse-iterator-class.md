@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xutility/std::reverse_iterator", "iterator/std::reverse_iterator::difference_type", "iterator/std::reverse_iterator::iterator_type", "iterator/std::reverse_iterator::pointer", "iterator/std::reverse_iterator::reference", "iterator/std::reverse_iterator::base", "iterator/std::reverse_iterator::operator_star"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::reverse_iterator [C++]", "std::reverse_iterator [C++], difference_type", "std::reverse_iterator [C++], iterator_type", "std::reverse_iterator [C++], pointer", "std::reverse_iterator [C++], reference", "std::reverse_iterator [C++], base", "std::reverse_iterator [C++], operator_star"]

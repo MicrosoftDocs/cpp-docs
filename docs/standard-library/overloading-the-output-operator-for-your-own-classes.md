@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator<<, overloading for your own classes", "operator <<, overloading for your own classes"]
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0

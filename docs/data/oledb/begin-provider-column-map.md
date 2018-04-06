@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["BEGIN_PROVIDER_COLUMN_MAP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_PROVIDER_COLUMN_MAP macro"]
@@ -22,11 +22,8 @@ Marks the beginning of the provider column map entries.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROVIDER_COLUMN_MAP(  
-theClass   
-)  
+```cpp
+BEGIN_PROVIDER_COLUMN_MAP(theClass)  
   
 ```  
   

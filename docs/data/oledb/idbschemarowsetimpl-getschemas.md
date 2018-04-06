@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas", "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetSchemas method"]
@@ -22,13 +22,10 @@ Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetSchema s )(  
-   ULONG * pcSchemas,  
+```cpp
+      STDMETHOD (GetSchema s )(ULONG * pcSchemas,  
    GUID ** prgSchemas,  
-   ULONG** prgRest  
-);  
+   ULONG** prgRest);  
 ```  
   
 #### Parameters  

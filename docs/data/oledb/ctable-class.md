@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CTable", "ATL.CTable", "CTable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTable class"]
@@ -20,18 +20,13 @@ ms.workload: ["cplusplus", "data-storage"]
 # CTable Class
 Provides a means to directly access a simple rowset (one with no parameters).  
   
-## Syntax  
-  
-```  
-template <   
-   class TAccessor = CNoAccessor,    
-   template <typename T> class TRowset = CRowset    
->  
-class CTable :    
-   public CAccessorRowset <   
-      TAccessor,    
-      TRowset    
-   >  
+## Syntax
+
+```cpp
+template <class TAccessor = CNoAccessor, 
+            template <typename T> class TRowset = CRowset>  
+class CTable :  
+   public CAccessorRowset <TAccessor, TRowset>  
 ```  
   
 #### Parameters  

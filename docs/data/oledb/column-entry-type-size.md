@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_TYPE_SIZE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COLUMN_ENTRY_TYPE_SIZE macro"]
@@ -22,17 +22,8 @@ Represents a binding to the specific column in the database. Supports `type` and
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE_SIZE(  
-nOrdinal  
-,   
-wType  
-,   
-nLength  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
   
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["inject_statement"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inject_statement attribute"]

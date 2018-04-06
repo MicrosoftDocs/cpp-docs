@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl::m_bCanScrollBack", "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bCanScrollBack"]
@@ -22,8 +22,7 @@ Indicates whether a provider can have its cursor scroll backwards.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned  m_bCanScrollBack:1;  
   
 ```  
