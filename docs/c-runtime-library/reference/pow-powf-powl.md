@@ -64,9 +64,9 @@ Returns the value of *x*<sup>*y*</sup>. No error message is printed on overflow 
 
 **pow** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).
 
-Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, **pow** always takes two double values and returns a double value.
+Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, **pow** always takes two **double** values and returns a **double** value.
 
-The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit C2668. To avoid this problem, cast the first parameter to `double`, `float`, or `long double`.
+The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit C2668. To avoid this problem, cast the first parameter to **double**, **float**, or **long** **double**.
 
 ## Requirements
 

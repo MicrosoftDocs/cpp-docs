@@ -20,66 +20,66 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fmin, fminf, fminl
-Determines the smaller of the two specified values.  
-  
-## Syntax  
-  
-```  
-double fmin(  
-   double x,   
-   double y  
-);  
-  
-float fmin(  
-   float x,   
-   float y  
-); //C++ only  
-  
-long double fmin(  
-   long double x,   
-   long double y  
-); //C++ only  
-  
-float fminf(  
-   float x,   
-   float y  
-);  
-  
-long double fminl(  
-   long double x,   
-   long double y  
-);  
-```  
-  
-#### Parameters  
- `x`  
- The first value to compare.  
-  
- `y`  
- The second value to compare.  
-  
-## Return Value  
- If successful, returns the smaller of `x` or `y`.  
-  
-|Input|Result|  
-|-----------|------------|  
-|`x` is NaN|`y`|  
-|`y` is NaN|`x`|  
-|`x` and `y` are NaN|NaN|  
-  
- The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of `errno`.  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `fmin` that take and return float and long double types. In a C program, `fmin` always takes and returns a double.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`fmin`, `fminf`, `fminl`|C: \<math.h><br />C++: \<math.h> or \<cmath>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)  
- [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)  
+Determines the smaller of the two specified values.
+
+## Syntax
+
+```
+double fmin(
+   double x,
+   double y
+);
+
+float fmin(
+   float x,
+   float y
+); //C++ only
+
+long double fmin(
+   long double x,
+   long double y
+); //C++ only
+
+float fminf(
+   float x,
+   float y
+);
+
+long double fminl(
+   long double x,
+   long double y
+);
+```
+
+#### Parameters
+ *x*<br/>
+ The first value to compare.
+
+ *y*<br/>
+ The second value to compare.
+
+## Return Value
+ If successful, returns the smaller of *x* or *y*.
+
+|Input|Result|
+|-----------|------------|
+|*x* is NaN|*y*|
+|*y* is NaN|*x*|
+|*x* and *y* are NaN|NaN|
+
+ The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
+
+## Remarks
+ Because C++ allows overloading, you can call overloads of **fmin** that take and return **float** and **long** **double** types. In a C program, **fmin** always takes and returns a **double**.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
+
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+ [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+ [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>

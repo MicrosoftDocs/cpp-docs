@@ -117,21 +117,21 @@ The CRT supports these floating point functions:
 [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md)|Rounds a floating-point value
 [_scalb, _scalbf](../c-runtime-library/reference/scalb.md)|Scales argument by a power of 2
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of **FLT_RADIX**
-[_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|
-[_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|
-[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|
-[sinh, sinhf, sinhl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|
-[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|
-[_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|
-[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|
-[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|
-[tanh, tanhf, tanhl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|
-[tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|
-[trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|
-[_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|
+[_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Sets the floating-point control word
+[_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Enables or disables SSE2 instructions
+[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|Computes the sine
+[sinh, sinhf, sinhl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
+[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Computes the square root
+[_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Gets the floating-point status word
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Converts a string to a **float**
+[strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Converts a string to a **long** **double**
+[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|Computes the tangent
+[tanh, tanhf, tanhl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|Computes the hyperbolic tangent
+[tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Computes the gamma function
+[trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Truncates the fractional part
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a wide string to a **double**
+[_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Computes the Bessel function
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

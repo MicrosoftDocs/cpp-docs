@@ -21,54 +21,54 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fabs, fabsf, fabsl
-Calculates the absolute value of the floating-point argument.  
-  
-## Syntax  
-  
-```  
-double fabs(   
-   double x   
-);  
-float fabs(  
-   float x   
-); // C++ only  
-long double fabs(  
-   long double x  
-); // C++ only  
-float fabsf(   
-   float x   
-);  
-long double fabsl(  
-   long double x  
-);  
-```  
-  
-#### Parameters  
- `x`  
- Floating-point value.  
-  
-## Return Value  
- The **fabs** functions return the absolute value of the argument `x`. There is no error return.  
-  
-|Input|SEH Exception|Matherr Exception|  
-|-----------|-------------------|-----------------------|  
-|± QNAN,IND|none|_DOMAIN|  
-  
-## Remarks  
- C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.  
-  
-## Requirements  
-  
-|Function|Required C header|Required C++ header|  
-|--------------|-----------------------|---------------------------|  
-|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> or \<math.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
- See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md).  
-  
-## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)   
- [_cabs](../../c-runtime-library/reference/cabs.md)   
+Calculates the absolute value of the floating-point argument.
+
+## Syntax
+
+```
+double fabs(
+   double x
+);
+float fabs(
+   float x
+); // C++ only
+long double fabs(
+   long double x
+); // C++ only
+float fabsf(
+   float x
+);
+long double fabsl(
+   long double x
+);
+```
+
+#### Parameters
+ *x*<br/>
+ Floating-point value.
+
+## Return Value
+ The **fabs** functions return the absolute value of the argument *x*. There is no error return.
+
+|Input|SEH Exception|Matherr Exception|
+|-----------|-------------------|-----------------------|
+|± QNAN,IND|none|_DOMAIN|
+
+## Remarks
+ C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.
+
+## Requirements
+
+|Function|Required C header|Required C++ header|
+|--------------|-----------------------|---------------------------|
+|**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> or \<math.h>|
+
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+ See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md).
+
+## See Also
+ [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+ [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
+ [_cabs](../../c-runtime-library/reference/cabs.md)<br/>

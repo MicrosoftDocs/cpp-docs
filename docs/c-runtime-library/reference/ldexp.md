@@ -21,81 +21,81 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ldexp, ldexpf, ldexpl
-Multiplies a floating-point number by an integral power of two.  
-  
-## Syntax  
-  
-```  
-double ldexp(  
-   double x,  
-   int exp   
-);  
-float ldexp(  
-   float x,  
-   int exp  
-);  // C++ only  
-long double ldexp(  
-   long double x,  
-   int exp  
-);  // C++ only   
-float ldexpf(  
-   float x,  
-   int exp  
-);   
-long double ldexpl(  
-   long double x,  
-   int exp  
-);   
-```  
-  
-#### Parameters  
- `x`  
- Floating-point value.  
-  
- `exp`  
- Integer exponent.  
-  
-## Return Value  
- The `ldexp` functions return the value of `x` * 2<sup>exp</sup> if successful. On overflow, and depending on the sign of `x`, `ldexp` returns +/- `HUGE_VAL`; the `errno` value is set to `ERANGE`.  
-  
- For more information about `errno` and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `ldexp` that take `float` or `long double` types. In a C program, `ldexp` always takes a `double` and an `int` and returns a `double`.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`ldexp`, `ldexpf`, `ldexpl`|\<math.h>|\<cmath>|  
-  
- For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Example  
-  
-```  
-// crt_ldexp.c  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double x = 4.0, y;  
-   int p = 3;  
-  
-   y = ldexp( x, p );  
-   printf( "%2.1f times two to the power of %d is %2.1f\n", x, p, y );  
-}  
-```  
-  
-## Output  
-  
-```  
-4.0 times two to the power of 3 is 32.0  
-```  
-  
-## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [frexp](../../c-runtime-library/reference/frexp.md)   
- [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)
+Multiplies a floating-point number by an integral power of two.
+
+## Syntax
+
+```
+double ldexp(
+   double x,
+   int exp
+);
+float ldexp(
+   float x,
+   int exp
+);  // C++ only
+long double ldexp(
+   long double x,
+   int exp
+);  // C++ only
+float ldexpf(
+   float x,
+   int exp
+);
+long double ldexpl(
+   long double x,
+   int exp
+);
+```
+
+#### Parameters
+ *x*<br/>
+ Floating-point value.
+
+ *exp*<br/>
+ Integer exponent.
+
+## Return Value
+ The **ldexp** functions return the value of *x* * 2<sup>*exp*</sup> if successful. On overflow, and depending on the sign of *x*, **ldexp** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
+
+ For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## Remarks
+ Because C++ allows overloading, you can call overloads of **ldexp** that take **float** or **long** **double** types. In a C program, **ldexp** always takes a **double** and an **int** and returns a **double**.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
+
+ For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Example
+
+```C
+// crt_ldexp.c
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double x = 4.0, y;
+   int p = 3;
+
+   y = ldexp( x, p );
+   printf( "%2.1f times two to the power of %d is %2.1f\n", x, p, y );
+}
+```
+
+## Output
+
+```
+4.0 times two to the power of 3 is 32.0
+```
+
+## See Also
+ [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+ [frexp](../../c-runtime-library/reference/frexp.md)<br/>
+ [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>

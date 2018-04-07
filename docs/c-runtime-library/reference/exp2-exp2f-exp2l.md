@@ -21,62 +21,62 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # exp2, exp2f, exp2l
-Computes 2 raised to the specified value.  
-  
-## Syntax  
-  
-```  
-double exp2(  
-   double x  
-);  
-  
-float exp2(  
-   float x  
-);  // C++ only  
-  
-long double exp2(  
-   long double x  
-); // C++ only  
-  
-float exp2f(  
-   float x  
-);  
-  
-long double exp2l(  
-   long double x  
-);  
-```  
-  
-#### Parameters  
- [in] `x`  
- The value of the exponent.  
-  
-## Return Value  
- If successful, returns the base-2 exponent of `x`, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:  
-  
-|Issue|Return|  
-|-----------|------------|  
-|`x` = ±0|1|  
-|`x` = -INFINITY|+0|  
-|`x` = +INFINITY|+INFINITY|  
-|`x` = NaN|NaN|  
-|Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|  
-|Underflow range error|Correct result, after rounding|  
-  
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of **exp2** that take and return **float** and **long double** types. In a C program, **exp2** always takes and returns a **double**.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
- [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)
+Computes 2 raised to the specified value.
+
+## Syntax
+
+```
+double exp2(
+   double x
+);
+
+float exp2(
+   float x
+);  // C++ only
+
+long double exp2(
+   long double x
+); // C++ only
+
+float exp2f(
+   float x
+);
+
+long double exp2l(
+   long double x
+);
+```
+
+#### Parameters
+ [in] *x*<br/>
+ The value of the exponent.
+
+## Return Value
+ If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
+
+|Issue|Return|
+|-----------|------------|
+|*x* = ±0|1|
+|*x* = -INFINITY|+0|
+|*x* = +INFINITY|+INFINITY|
+|*x* = NaN|NaN|
+|Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
+|Underflow range error|Correct result, after rounding|
+
+ Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+
+## Remarks
+ Because C++ allows overloading, you can call overloads of **exp2** that take and return **float** and **long double** types. In a C program, **exp2** always takes and returns a **double**.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**exp**, **expf**, **expl**|\<math.h>|\<cmath>|
+
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+ [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+ [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
+ [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>

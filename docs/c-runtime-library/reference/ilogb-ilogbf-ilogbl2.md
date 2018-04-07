@@ -20,63 +20,63 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ilogb, ilogbf, ilogbl
-Retrieves an integer that represents the unbiased base-2 exponent of the specified value.  
-  
-## Syntax  
-  
-```  
-int ilogb(  
-   double x  
-);  
-  
-int ilogb(  
-   float x  
-); //C++ only  
-  
-int ilogb(  
-   long double x  
-); //C++ only  
-  
-int ilogbf(  
-   float x  
-);  
-  
-int ilogbl(  
-   long double x  
-);  
-  
-```  
-  
-#### Parameters  
- [in] `x`  
- The specified value.  
-  
-## Return Value  
- If successful, return the base-2 exponent of `x` as a signed `int` value.  
-  
- Otherwise, returns one of the following values, defined in \<math.h>:  
-  
-|Input|Result|  
-|-----------|------------|  
-|±0|FP_ILOGB0|  
-|±inf, ±nan, indefinite|FP_ILOGBNAN|  
-  
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `ilogb` that take and return float and long double types. In a C program, `ilogb` always takes and returns a double.  
-  
- Calling this function is similar to calling the equivalent `logb` function, then casting the return value to `int`.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`ilogb`,                `ilogbf`,  `ilogbl`|\<math.h>|\<cmath>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [frexp](../../c-runtime-library/reference/frexp.md)   
- [logb, logbf, logbl, _logb, _logbf](../../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)
+Retrieves an integer that represents the unbiased base-2 exponent of the specified value.
+
+## Syntax
+
+```
+int ilogb(
+   double x
+);
+
+int ilogb(
+   float x
+); //C++ only
+
+int ilogb(
+   long double x
+); //C++ only
+
+int ilogbf(
+   float x
+);
+
+int ilogbl(
+   long double x
+);
+
+```
+
+#### Parameters
+ [in] *x*<br/>
+ The specified value.
+
+## Return Value
+ If successful, return the base-2 exponent of *x* as a signed **int** value.
+
+ Otherwise, returns one of the following values, defined in \<math.h>:
+
+|Input|Result|
+|-----------|------------|
+|±0|FP_ILOGB0|
+|±inf, ±nan, indefinite|FP_ILOGBNAN|
+
+ Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+
+## Remarks
+ Because C++ allows overloading, you can call overloads of **ilogb** that take and return **float** and **long** **double** types. In a C program, **ilogb** always takes and returns a **double**.
+
+ Calling this function is similar to calling the equivalent **logb** function, then casting the return value to **int**.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
+
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+ [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+ [frexp](../../c-runtime-library/reference/frexp.md)<br/>
+ [logb, logbf, logbl, _logb, _logbf](../../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)<br/>

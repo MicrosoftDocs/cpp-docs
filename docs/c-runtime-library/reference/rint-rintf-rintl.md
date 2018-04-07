@@ -21,84 +21,86 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # rint, rintf, rintl
-Rounds a floating-point value to the nearest integer in floating-point format.  
-  
-## Syntax  
-  
-```  
-double rint( double x );  
-float rint( float x );  // C++ only  
-long double rint( long double x );  // C++ only  
-float rintf( float x );   
-long double rintl( long double x );  
-  
-```  
-  
-#### Parameters  
- `x`  
- The floating-point value to round.  
-  
-## Return Value  
- The `rint` functions return a floating-point value that represents the nearest integer to `x`. Halfway values are rounded according to the current setting of the floating-point rounding mode, the same as the `nearbyint` functions. Unlike the `nearbyint` functions, the `rint` functions may raise the `FE_INEXACT` floating-point exception if the result differs in value from the argument. There is no error return.  
-  
-|Input|SEH Exception|`_matherr` Exception|  
-|-----------|-------------------|--------------------------|  
-|± ∞, QNAN, IND|none|none|  
-|Denormals|EXCEPTION_FLT_UNDERFLOW|none|  
-  
-## Remarks  
- Because C++ allows overloading, you can call overloads of `rint` that take and return `float` and `long double` values. In a C program, `rint` always takes and returns a `double`.  
-  
-## Requirements  
-  
-|Function|C header|C++ header|  
-|--------------|--------------|------------------|  
-|`rint`, `rintf`, `rintl`|\<math.h>|\<cmath>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Example  
-  
-```  
-// crt_rint.c  
-// Build with: cl /W3 /Tc crt_rint.c  
-// This example displays the rounded results of  
-// the floating-point values 2.499999, -2.499999,   
-// 2.8, -2.8, 2.5 and -2.5.  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double x = 2.499999;  
-   float y = 2.8f;  
-   long double z = 2.5;  
-  
-   printf("rint(%f) is %.0f\n", x, rint (x));  
-   printf("rint(%f) is %.0f\n", -x, rint (-x));  
-   printf("rintf(%f) is %.0f\n", y, rintf(y));  
-   printf("rintf(%f) is %.0f\n", -y, rintf(-y));  
-   printf("rintl(%Lf) is %.0Lf\n", z, rintl(z));  
-   printf("rintl(%Lf) is %.0Lf\n", -z, rintl(-z));  
-}  
-```  
-  
-```Output  
-rint(2.499999) is 2  
-rint(-2.499999) is -2  
-rintf(2.800000) is 3  
-rintf(-2.800000) is -3  
-rintl(2.500000) is 3  
-rintl(-2.500000) is -3  
-```  
-  
-## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)   
- [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)   
- [fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)   
- [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)   
- [lround, lroundf, lroundl, llround, llroundf, llroundl](../../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)   
- [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)   
- [rint](../../c-runtime-library/reference/rint-rintf-rintl.md)
+Rounds a floating-point value to the nearest integer in floating-point format.
+
+## Syntax
+
+```C
+double rint( double x );
+float rintf( float x );
+long double rintl( long double x );
+```
+
+```cpp
+float rint( float x );  // C++ only
+long double rint( long double x );  // C++ only
+```
+
+#### Parameters
+ *x*<br/>
+ The floating-point value to round.
+
+## Return Value
+ The **rint** functions return a floating-point value that represents the nearest integer to *x*. Halfway values are rounded according to the current setting of the floating-point rounding mode, the same as the **nearbyint** functions. Unlike the **nearbyint** functions, the **rint** functions may raise the **FE_INEXACT** floating-point exception if the result differs in value from the argument. There is no error return.
+
+|Input|SEH Exception|**_matherr** Exception|
+|-----------|-------------------|--------------------------|
+|± ∞, QNAN, IND|none|none|
+|Denormals|EXCEPTION_FLT_UNDERFLOW|none|
+
+## Remarks
+ Because C++ allows overloading, you can call overloads of **rint** that take and return **float** and **long** **double** values. In a C program, **rint** always takes and returns a **double**.
+
+## Requirements
+
+|Function|C header|C++ header|
+|--------------|--------------|------------------|
+|**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
+
+ For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Example
+
+```C
+// crt_rint.c
+// Build with: cl /W3 /Tc crt_rint.c
+// This example displays the rounded results of
+// the floating-point values 2.499999, -2.499999,
+// 2.8, -2.8, 2.5 and -2.5.
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double x = 2.499999;
+   float y = 2.8f;
+   long double z = 2.5;
+
+   printf("rint(%f) is %.0f\n", x, rint (x));
+   printf("rint(%f) is %.0f\n", -x, rint (-x));
+   printf("rintf(%f) is %.0f\n", y, rintf(y));
+   printf("rintf(%f) is %.0f\n", -y, rintf(-y));
+   printf("rintl(%Lf) is %.0Lf\n", z, rintl(z));
+   printf("rintl(%Lf) is %.0Lf\n", -z, rintl(-z));
+}
+```
+
+```Output
+rint(2.499999) is 2
+rint(-2.499999) is -2
+rintf(2.800000) is 3
+rintf(-2.800000) is -3
+rintl(2.500000) is 3
+rintl(-2.500000) is -3
+```
+
+## See Also
+ [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+ [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
+ [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
+ [fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
+ [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
+ [lround, lroundf, lroundl, llround, llroundf, llroundl](../../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)<br/>
+ [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
+ [rint](../../c-runtime-library/reference/rint-rintf-rintl.md)<br/>
