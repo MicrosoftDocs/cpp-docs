@@ -1,7 +1,7 @@
 ---
 title: "Program and Linkage  (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/06/2018"
+ms.date: "04/09/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -41,5 +41,6 @@ If a header file contains a variable declared extern constexpr, it needs to be m
 extern constexpr __declspec(selectany) int x = 10;
 ```
 
-## See Also  
+## See Also
+
  [Basic Concepts](../cpp/basic-concepts-cpp.md)
