@@ -82,7 +82,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  In `ECMAScript`, an element can also be one of the following things:  
   
--   A *non-capture group* of the form "(: *subexpression* )". Matches the sequence of characters in the target sequence that is matched by the pattern between the delimiters.  
+-   A *non-capture group* of the form "(?: *subexpression* )". Matches the sequence of characters in the target sequence that is matched by the pattern between the delimiters.  
   
 -   A limited *file format escape* of the form "\f", "\n", "\r", "\t", or "\v". These match a form feed, newline, carriage return, horizontal tab, and vertical tab, respectively, in the target sequence.  
   
@@ -104,7 +104,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  Examples:  
   
--   "(:a)" matches the target sequence "a", but "(:a)\1" is invalid because there is no capture group 1.  
+-   "(?:a)" matches the target sequence "a", but "(?:a)\1" is invalid because there is no capture group 1.  
   
 -   "(=a)a" matches the target sequence "a". The positive assert matches the initial sequence "a" in the target sequence and the final "a" in the regular expression matches the initial sequence "a" in the target sequence.  
   
@@ -151,7 +151,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
 -   "a+" matches the target sequence "a", the target sequence "aa", and so on, but not the target sequence "".  
   
- In `ECMAScript`, all the forms of repetition count can be followed by the character '', which designates a *non-greedy repetition*.  
+ In `ECMAScript`, all the forms of repetition count can be followed by the character '?', which designates a *non-greedy repetition*.  
   
 ### Concatenation  
  Regular expression elements, with or without *repetition counts*, can be concatenated to form longer regular expressions. The resulting expression matches a target sequence that is a concatenation of the sequences that are matched by the individual elements. For example, "a{2,3}b" matches the target sequence "aab" and the target sequence "aaab", but does not match the target sequence "ab" or the target sequence "aaaab".  
@@ -354,7 +354,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
  A negative word boundary assert matches if the current position in the target string is not immediately after a *word boundary*.  
   
 ### Non-capture Group  
- A non-capture group marks its contents as a single unit in the regular expression grammar, but does not label the target text. For example, "(a)(:b)\*(c)" matches the target text "abbc" and associates capture group 1 with the subsequence "a" and capture group 2 with the subsequence "c".  
+ A non-capture group marks its contents as a single unit in the regular expression grammar, but does not label the target text. For example, "(a)(?:b)\*(c)" matches the target text "abbc" and associates capture group 1 with the subsequence "a" and capture group 2 with the subsequence "c".  
   
 ### Non-greedy Repetition  
  A non-greedy repetition consumes the shortest subsequence of the target sequence that matches the pattern. A greedy repetition consumes the longest. For example, "(a+)(a\*b)" matches the target sequence "aaab". When a non-greedy repetition is used, it associates capture group 1 with the subsequence "a" at the beginning of the target sequence and capture group 2 with the subsequence "aab" at the end of the target sequence. When a greedy match is used, it associates capture group 1 with the subsequence "aaa" and capture group 2 with the subsequence "b".  
