@@ -39,7 +39,7 @@ To give a const object external linkage, declare it as **extern** and assign it 
 extern const int value = 42;
 ```
 
-See [extern](using-extern-to-specify-linkage.md) for more information.
+See [extern](extern-cpp.md) for more information.
 
 ## Extern constexpr linkage
 
