@@ -40,6 +40,7 @@ One or more parameters which must be a literal type and must itself be a constan
 
 ## Return Value
 
+
  A constexpr variable or function must return a [literal type](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## constexpr variables
@@ -61,7 +62,7 @@ int j = 0;
 constexpr int k = j + 1; //Error! j not a constant expression
 ```
 
-## constexpr functions
+## <a name="constexpr_functions"></a> constexpr functions
 
 A **constexpr** function is one whose return value can be computed at compile when consuming code requires it.  When its arguments are **constexpr** values, and consuming code requires the return value at compile time, for example to initialize a **constexpr** variable or provide a non-type template argument, it produces a compile-time constant. When called with non-**constexpr** arguments, or when its value is not required at compile-time, it produces a value at run time like a regular function.  (This dual behavior saves you from having to write **constexpr** and non-**constexpr** versions of the same function.)
 
