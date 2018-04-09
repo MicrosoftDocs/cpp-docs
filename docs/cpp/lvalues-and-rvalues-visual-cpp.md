@@ -38,6 +38,8 @@ The following diagram illustrates the relationships between the categories:
 
  An xvalue expression has an address that no longer accessible by your program but can be used to initialize an rvalue reference, which provides access to the expression. Examples include function calls that return an rvalue reference, and the array subscript, member and pointer to member expressions where the array or object is an rvalue reference.
 
+## Example
+
  The following example demonstrates several correct and incorrect usages of lvalues and rvalues:
 
 ```cpp
