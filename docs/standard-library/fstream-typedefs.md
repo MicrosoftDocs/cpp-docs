@@ -48,7 +48,7 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 ```  
   
 ### Remarks  
- The type is a synonym for template class `basic_ifstream`, specialized for elements of type char with default character traits. An example is  
+ The type is a synonym for template class [basic_ifstream](../standard-library/basic-ifstream-class.md), specialized for elements of type char with default character traits. An example is  
   
  `using namespace std;`  
   
