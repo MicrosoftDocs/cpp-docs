@@ -1,5 +1,5 @@
 ---
-title: "Using extern to Specify Linkage | Microsoft Docs"
+title: "extern (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/06/2018"
 ms.reviewer: ""
