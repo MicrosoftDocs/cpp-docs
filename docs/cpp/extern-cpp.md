@@ -29,7 +29,7 @@ extern string-literal declaration
 
 The **extern** keyword declares a variable or function and specifies that it is defined (or assigned a value) in another translation unit. The compiler treats the extern variable and the variable defined elsewhere as the same name. Such a variable has external linkage (its name is visible from files other than the one in which it's defined). Declarations of non-const variables and functions at global scope are external by default. See [Program and linkage](program-and-linkage-cpp.md) for more information.
 
-The **extern** keyword is ignored if the declaration is also a definition. In the following, when the compiler sees the `int foo = 9;` if fileA.cpp, it treats it as a separate name from `foo` in FileB.cpp, and a linker error will be raised because a name can only appear once in a given scope. To fix the error, change `extern int foo = 9;` to `extern int foo;` so that the linker treats this `foo` variable as the same name as the one in fileB.cpp:
+The **extern** keyword is ignored if the declaration is also a definition. In the following, when the compiler sees the `int foo = 9;` in fileA.cpp, it treats it as a separate name from `foo` in FileB.cpp, and a linker error will be raised because a name can only appear once in a given scope. To fix the error, change `extern int foo = 9;` to `extern int foo;` so that the linker treats this `foo` variable as the same name as the one in fileB.cpp:
 
 ```cpp
 //fileA.cpp
@@ -123,7 +123,7 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 
 ## See Also
 
- [Keywords](../cpp/keywords-cpp.md) 
- [extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md) 
- [Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md) 
- [Linkage in C](../c-language/linkage.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md) 
+- [Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md) 
+- [Linkage in C](../c-language/linkage.md)
