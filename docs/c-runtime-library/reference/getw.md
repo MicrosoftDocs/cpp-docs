@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getw
+
 Gets an integer from a stream.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _getw(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- `_getw` returns the integer value read. A return value of `EOF` indicates either an error or end of file. However, because the `EOF` value is also a legitimate integer value, use `feof` or `ferror` to verify an end-of-file or error condition. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.  
+
+`_getw` returns the integer value read. A return value of `EOF` indicates either an error or end of file. However, because the `EOF` value is also a legitimate integer value, use `feof` or `ferror` to verify an end-of-file or error condition. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.  
   
 ## Remarks  
- The `_getw` function reads the next binary value of type `int` from the file associated with `stream` and increments the associated file pointer (if there is one) to point to the next unread character. `_getw` does not assume any special alignment of items in the stream. Problems with porting can occur with `_getw` because the size of the `int` type and the ordering of bytes within the `int` type differ across systems.  
+
+The `_getw` function reads the next binary value of type `int` from the file associated with `stream` and increments the associated file pointer (if there is one) to point to the next unread character. `_getw` does not assume any special alignment of items in the stream. Problems with porting can occur with `_getw` because the size of the `int` type and the ordering of bytes within the `int` type differ across systems.  
   
 ## Requirements  
   
@@ -98,5 +102,6 @@ First data word in file: 0x656e694c
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_putw](../../c-runtime-library/reference/putw.md)

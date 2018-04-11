@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
+
 Writes formatted output to the console by using a pointer to a list of arguments. These versions of [_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l](../../c-runtime-library/reference/vcprintf-vcprintf-l-vcwprintf-vcwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _vcwprintf_s_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format specification.  
   
  `argptr`  
@@ -62,12 +64,14 @@ int _vcwprintf_s_l(
  For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or a negative value if an output error occurs.  
+
+The number of characters written, or a negative value if an output error occurs.  
   
  Like the less secure versions of these functions, if `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). Additionally, unlike the less secure versions of these functions, if `format` does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the console. `_vcwprintf_s` is the wide-character version of `_vcprintf_s`. It takes a wide-character string as an argument.  
+
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the console. `_vcwprintf_s` is the wide-character version of `_vcprintf_s`. It takes a wide-character string as an argument.  
   
  The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.  
   
@@ -124,7 +128,8 @@ int main()
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   

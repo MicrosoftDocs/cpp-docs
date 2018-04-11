@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcat, wcscat, _mbscat
+
 Appends a string. More secure versions of these functions are available; see [strcat_s, wcscat_s, _mbscat_s](../../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md).  
   
 > [!IMPORTANT]
@@ -58,18 +59,21 @@ unsigned char *_mbscat(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDestination`  
+### Parameters  
+
+`strDestination`  
  Null-terminated destination string.  
   
  `strSource`  
  Null-terminated source string.  
   
 ## Return Value  
- Each of these functions returns the destination string (`strDestination`). No return value is reserved to indicate an error.  
+
+Each of these functions returns the destination string (`strDestination`). No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `strcat` function appends `strSource` to `strDestination` and terminates the resulting string with a null character. The initial character of `strSource` overwrites the terminating null character of `strDestination`. The behavior of `strcat` is undefined if the source and destination strings overlap.  
+
+The `strcat` function appends `strSource` to `strDestination` and terminates the resulting string with a null character. The initial character of `strSource` overwrites the terminating null character of `strDestination`. The behavior of `strcat` is undefined if the source and destination strings overlap.  
   
 > [!IMPORTANT]
 >  Because `strcat` does not check for sufficient space in `strDestination` before appending `strSource`, it is a potential cause of buffer overruns. Consider using [strncat](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) instead.  
@@ -95,10 +99,12 @@ unsigned char *_mbscat(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md).  
+
+See the example for [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   
  [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)   
  [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)   

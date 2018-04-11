@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_daylight
+
 Retrieves the daylight saving time offset in hours.  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Retrieves the daylight saving time offset in hours.
 );  
 ```  
   
-#### Parameters  
- `hours`  
+### Parameters  
+
+`hours`  
  The offset in hours of daylight saving time.  
   
 ## Return Value  
- Zero if successful or an `errno` value if an error occurs.  
+
+Zero if successful or an `errno` value if an error occurs.  
   
 ## Remarks  
- The `_get_daylight` function retrieves the number of hours in daylight saving time as an integer. If daylight saving time is in effect, the default offset is one hour (although a few regions do observe a two-hour offset).  
+
+The `_get_daylight` function retrieves the number of hours in daylight saving time as an integer. If daylight saving time is in effect, the default offset is one hour (although a few regions do observe a two-hour offset).  
   
  If `hours` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
   
@@ -55,7 +59,8 @@ Retrieves the daylight saving time offset in hours.
  For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)   
  [_get_dstbias](../../c-runtime-library/reference/get-dstbias.md)   
  [_get_timezone](../../c-runtime-library/reference/get-timezone.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
+
 Writes formatted output to the console by using a pointer to a list of arguments. More secure versions of these functions are available, see [_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l](../../c-runtime-library/reference/vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md).  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _vcwprintf_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format specification.  
   
  `argptr`  
@@ -62,10 +64,12 @@ int _vcwprintf_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or a negative value if an output error occurs. If `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.  
+
+The number of characters written, or a negative value if an output error occurs. If `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, then formats and writes the given data to the console. `_vcwprintf` is the wide-character version of `_vcprintf`. It takes a wide-character string as an argument.  
+
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to the console. `_vcwprintf` is the wide-character version of `_vcprintf`. It takes a wide-character string as an argument.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.  
   
@@ -123,7 +127,8 @@ int main()
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   

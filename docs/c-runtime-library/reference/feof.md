@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # feof
+
 Tests for end-of-file on a stream.  
   
 ## Syntax  
@@ -31,17 +32,20 @@ int feof(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- The `feof` function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is `NULL`, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the `feof` returns 0.  
+
+The `feof` function returns a nonzero value if a read operation has attempted to read past the end of the file; it returns 0 otherwise. If the stream pointer is `NULL`, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the `feof` returns 0.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `feof` routine (implemented both as a function and as a macro) determines whether the end of `stream` has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until `rewind`, `fsetpos`, `fseek`, or `clearerr` is called against it.  
+
+The `feof` routine (implemented both as a function and as a macro) determines whether the end of `stream` has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until `rewind`, `fsetpos`, `fseek`, or `clearerr` is called against it.  
   
  For example, if a file contains 10 bytes and you read 10 bytes from the file, `feof` will return 0 because, even though the file pointer is at the end of the file, you have not attempted to read beyond the end. Only after you try to read an 11th byte will `feof` return a nonzero value.  
   
@@ -107,7 +111,8 @@ Number of bytes read = 19
 ```  
   
 ## See Also  
- [Error Handling](../../c-runtime-library/error-handling-crt.md)   
+
+[Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [_eof](../../c-runtime-library/reference/eof.md)   

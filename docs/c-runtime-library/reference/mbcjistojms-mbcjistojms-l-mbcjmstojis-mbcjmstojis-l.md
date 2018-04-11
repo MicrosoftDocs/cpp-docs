@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
+
 Converts between Japan Industry Standard (JIS) and Japan Microsoft (JMS) characters.  
   
 > [!IMPORTANT]
@@ -45,18 +46,21 @@ unsigned int _mbcjmstojis_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to convert.  
   
  `local`  
  Locale to use.  
   
 ## Return Value  
- On Japanese locale, these functions return a converted character or return 0 if no conversion is possible. On a non-Japanese locale, these functions return the character passed in.  
+
+On Japanese locale, these functions return a converted character or return 0 if no conversion is possible. On a non-Japanese locale, these functions return the character passed in.  
   
 ## Remarks  
- The `_mbcjistojms` function converts a Japan Industry Standard (JIS) character to a Microsoft Kanji (Shift JIS) character. The character is converted only if the lead and trail bytes are in the range 0x21 - 0x7E. If the lead or trial byte is outside this range, `errno` is set to `EILSEQ`. For more information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+
+The `_mbcjistojms` function converts a Japan Industry Standard (JIS) character to a Microsoft Kanji (Shift JIS) character. The character is converted only if the lead and trail bytes are in the range 0x21 - 0x7E. If the lead or trial byte is outside this range, `errno` is set to `EILSEQ`. For more information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
  The `_mbcjmstojis` function converts a Shift JIS character to a JIS character. The character is converted only if the lead byte is in the range 0x81 - 0x9F or 0xE0 - 0xFC and the trail byte is in the range 0x40 - 0x7E or 0x80 - 0xFC. Note that some code points in that range do not have a character assigned and so cannot be converted.  
   
@@ -78,5 +82,6 @@ unsigned int _mbcjmstojis_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

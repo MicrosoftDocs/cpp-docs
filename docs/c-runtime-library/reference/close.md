@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _close
+
 Closes a file.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _close(
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor referring to the open file.  
   
 ## Return Value  
- `_close` returns 0 if the file was successfully closed. A return value of -1 indicates an error.  
+
+`_close` returns 0 if the file was successfully closed. A return value of -1 indicates an error.  
   
 ## Remarks  
- The `_close` function closes the file associated with `fd`.  
+
+The `_close` function closes the file associated with `fd`.  
   
  The file descriptor and the underlying OS file handle are closed. Thus, it is not necessary to call `CloseHandle` if the file was originally opened using the Win32 function `CreateFile` and converted to a file descriptor using `_open_osfhandle`.  
   
@@ -54,10 +58,12 @@ int _close(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [_open](../../c-runtime-library/reference/open-wopen.md).  
+
+See the example for [_open](../../c-runtime-library/reference/open-wopen.md).  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chsize](../../c-runtime-library/reference/chsize.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
  [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   

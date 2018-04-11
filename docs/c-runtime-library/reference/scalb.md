@@ -37,7 +37,7 @@ float _scalbf(
 ); /* x64 only */
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Double-precision, floating-point value.

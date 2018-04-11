@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _access, _waccess
+
 Determines if a file is read-only or not. More secure versions are available; see [_access_s, _waccess_s](../../c-runtime-library/reference/access-s-waccess-s.md).  
   
 ## Syntax  
@@ -36,15 +37,17 @@ int _waccess(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  File or directory path.  
   
  `mode`  
  Read/write attribute.  
   
 ## Return Value  
- Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
+
+Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.  
   
  `EACCES`  
  Access denied: the file's permission setting does not allow specified access.  
@@ -58,7 +61,8 @@ int _waccess(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- When used with files, the `_access` function determines whether the specified file or directory exists and has the attributes specified by the value of `mode`. When used with directories, `_access` determines only whether the specified directory exists; in [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.  
+
+When used with files, the `_access` function determines whether the specified file or directory exists and has the attributes specified by the value of `mode`. When used with directories, `_access` determines only whether the specified directory exists; in [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.  
   
 |`mode` value|Checks file for|  
 |------------------|---------------------|  
@@ -87,7 +91,8 @@ int _waccess(
 |`_waccess`|\<wchar.h> or \<io.h>|\<errno.h>|  
   
 ## Example  
- The following example uses `_access` to check the file named crt_ACCESS.C to see whether it exists and whether writing is allowed.  
+
+The following example uses `_access` to check the file named crt_ACCESS.C to see whether it exists and whether writing is allowed.  
   
 ```  
 // crt_access.c  
@@ -120,7 +125,8 @@ File crt_ACCESS.C does not have write permission.
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
  [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)   

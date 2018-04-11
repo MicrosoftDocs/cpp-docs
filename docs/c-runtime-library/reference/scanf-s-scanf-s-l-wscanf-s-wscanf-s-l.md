@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
+
 Reads formatted data from the standard input stream. These versions of [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _wscanf_s_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control string.  
   
  `argument`  
@@ -57,12 +59,14 @@ int _wscanf_s_l(
  The locale to use.  
   
 ## Return Value  
- Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `scanf_s` and `wscanf_s` return `EOF` and set `errno` to `EINVAL`.  
+
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `scanf_s` and `wscanf_s` return `EOF` and set `errno` to `EINVAL`.  
   
  For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `scanf_s` function reads data from the standard input stream `stdin` and writes the data into the location that's given by `argument`. Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
+
+The `scanf_s` function reads data from the standard input stream `stdin` and writes the data into the location that's given by `argument`. Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
   
  `wscanf_s` is a wide-character version of `scanf_s`; the `format` argument to `wscanf_s` is a wide-character string. `wscanf_s` and `scanf_s` behave identically if the stream is opened in ANSI mode. `scanf_s` doesn't currently support input from a UNICODE stream.  
   
@@ -167,7 +171,8 @@ The contents are: 36 92.300003 y n Wide characters
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
+
 Scans a string for the last occurrence of a character.  
   
 > [!IMPORTANT]
@@ -82,8 +83,9 @@ const unsigned char *_mbsrchr_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to search.  
   
  `c`  
@@ -93,10 +95,12 @@ const unsigned char *_mbsrchr_l(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the last occurrence of `c` in `str`, or `NULL` if `c` is not found.  
+
+Returns a pointer to the last occurrence of `c` in `str`, or `NULL` if `c` is not found.  
   
 ## Remarks  
- The `strrchr` function finds the last occurrence of `c` (converted to `char`) in `str`. The search includes the terminating null character.  
+
+The `strrchr` function finds the last occurrence of `c` (converted to `char`) in `str`. The search includes the terminating null character.  
   
  `wcsrchr` and `_mbsrchr` are wide-character and multibyte-character versions of `strrchr`. The arguments and return value of `wcsrchr` are wide-character strings; those of `_mbsrchr` are multibyte-character strings.  
   
@@ -124,10 +128,12 @@ const unsigned char *_mbsrchr_l(
  For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- For an example of using `strrchr`, see [strchr](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md).  
+
+For an example of using `strrchr`, see [strchr](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strchr, wcschr, _mbschr, _mbschr_l](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md)   

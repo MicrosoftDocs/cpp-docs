@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memmove_s, wmemmove_s
+
 Moves one buffer to another. These are versions of [memmove, wmemmove](../../c-runtime-library/reference/memmove-wmemmove.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -41,8 +42,9 @@ errno_t wmemmove_s(
 );  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  Destination object.  
   
  `numberOfElements`  
@@ -55,7 +57,8 @@ errno_t wmemmove_s(
  Number of bytes (`memmove_s`) or characters (`wmemmove_s`) to copy.  
   
 ## Return Value  
- Zero if successful; an error code on failure  
+
+Zero if successful; an error code on failure  
   
 ### Error Conditions  
   
@@ -66,7 +69,8 @@ errno_t wmemmove_s(
 |any|< `count`|any|`ERANGE`|not modified|  
   
 ## Remarks  
- Copies `count` bytes of characters from `src` to `dest`. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
+
+Copies `count` bytes of characters from `src` to `dest`. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.  
   
  If `dest` or if `src` is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.  
   
@@ -116,7 +120,8 @@ Before: 0123456789
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   
  [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)   

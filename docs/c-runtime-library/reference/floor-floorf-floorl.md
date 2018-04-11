@@ -44,7 +44,7 @@ long double floorl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

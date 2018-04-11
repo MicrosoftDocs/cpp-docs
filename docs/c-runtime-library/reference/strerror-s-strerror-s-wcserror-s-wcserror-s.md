@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strerror_s, _strerror_s, _wcserror_s, __wcserror_s
+
 Get a system error message (`strerror_s`, `_wcserror_s`) or print a user-supplied error message (`_strerror_s`, `__wcserror_s`). These are versions of [strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -68,8 +69,9 @@ errno_t __wcserror_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Buffer to hold error string.  
   
  `numberOfElements`  
@@ -82,7 +84,8 @@ errno_t __wcserror_s(
  User-supplied message.  
   
 ## Return Value  
- Zero if successful, an error code on failure.  
+
+Zero if successful, an error code on failure.  
   
 ### Error Condtions  
   
@@ -92,7 +95,8 @@ errno_t __wcserror_s(
 |any|0|any|not modified|  
   
 ## Remarks  
- The `strerror_s` function maps `errnum` to an error-message string, returning the string in `buffer`. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
+
+The `strerror_s` function maps `errnum` to an error-message string, returning the string in `buffer`. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
   
 ```  
 if (( _access( "datafile",2 )) == -1 )  
@@ -134,10 +138,12 @@ if (( _access( "datafile",2 )) == -1 )
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).  
+
+See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [ferror](../../c-runtime-library/reference/ferror.md)   
  [perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)

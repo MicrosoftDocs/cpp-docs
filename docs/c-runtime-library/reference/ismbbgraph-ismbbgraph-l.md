@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbgraph, _ismbbgraph_l
+
 Determines whether a particular multibyte character is a graphical character.  
   
 ## Syntax  
@@ -35,15 +36,17 @@ int _ismbbgraph_l (
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Returns a nonzero value if the expression:  
+
+Returns a nonzero value if the expression:  
   
 ```  
 ( _PUNCT | _UPPER | _LOWER | _DIGIT ) || _ismbbkprint  
@@ -61,8 +64,10 @@ int _ismbbgraph_l (
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

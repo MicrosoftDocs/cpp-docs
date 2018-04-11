@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isleadbyte, _isleadbyte_l
+
 Determines whether a character is the lead byte of a multibyte character.  
   
 > [!IMPORTANT]
@@ -37,15 +38,18 @@ int _isleadbyte_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
 ## Return Value  
- `isleadbyte` returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, `isleadbyte` always returns 0.  
+
+`isleadbyte` returns a nonzero value if the argument satisfies the test condition or 0 if it does not. In the "C" locale and in single-byte character set (SBCS) locales, `isleadbyte` always returns 0.  
   
 ## Remarks  
- The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (`EOF`) to `UCHAR_MAX` (0xFF), inclusive.  
+
+The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (`EOF`) to `UCHAR_MAX` (0xFF), inclusive.  
   
  The expected argument type of `isleadbyte` is `int`; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.  
   
@@ -67,6 +71,7 @@ int _isleadbyte_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

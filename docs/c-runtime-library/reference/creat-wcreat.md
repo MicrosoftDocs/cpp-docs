@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _creat, _wcreat
+
 Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) instead.  
   
 ## Syntax  
@@ -36,15 +37,17 @@ int _wcreat(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  Name of new file.  
   
  `pmode`  
  Permission setting.  
   
 ## Return Value  
- These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set `errno` as shown in the following table.  
+
+These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set `errno` as shown in the following table.  
   
 |`errno` setting|Description|  
 |---------------------|-----------------|  
@@ -57,7 +60,8 @@ int _wcreat(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_creat` function creates a new file or opens and truncates an existing one. `_wcreat` is a wide-character version of `_creat`; the `filename` argument to `_wcreat` is a wide-character string. `_wcreat` and `_creat` behave identically otherwise.  
+
+The `_creat` function creates a new file or opens and truncates an existing one. `_wcreat` is a wide-character version of `_creat`; the `filename` argument to `_wcreat` is a wide-character string. `_wcreat` and `_creat` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -122,7 +126,8 @@ Created data file.
 ```  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_chsize](../../c-runtime-library/reference/chsize.md)   
  [_close](../../c-runtime-library/reference/close.md)   

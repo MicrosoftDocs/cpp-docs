@@ -43,7 +43,7 @@ int _mbscmp(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  `string1`, `string2`  
  Null-terminated strings to compare.  
   

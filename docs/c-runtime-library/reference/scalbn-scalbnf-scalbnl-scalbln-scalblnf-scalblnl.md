@@ -69,7 +69,7 @@ long double scalblnl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

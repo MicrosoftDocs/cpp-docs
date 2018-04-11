@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetDbgFlag
+
 Retrieves or modifies the state of the **_crtDbgFlag** flag to control the allocation behavior of the debug heap manager (debug version only).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Retrieves or modifies the state of the **_crtDbgFlag** flag to control the alloc
 );  
 ```  
   
-#### Parameters  
- `newFlag`  
+### Parameters  
+
+`newFlag`  
  New state for **_crtDbgFlag**.  
   
 ## Return Value  
- Returns the previous state of **_crtDbgFlag**.  
+
+Returns the previous state of **_crtDbgFlag**.  
   
 ## Remarks  
- The `_CrtSetDbgFlag` function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **_crtDbgFlag** flag. By setting the bits (turning on), the application can instruct the debug heap manager to perform special debugging operations, including checking for memory leaks when the application exits and reporting if any are found, simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list, and verifying the integrity of the heap by inspecting each memory block at every allocation request. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDbgFlag` are removed during preprocessing.  
+
+The `_CrtSetDbgFlag` function allows the application to control how the debug heap manager tracks memory allocations by modifying the bit fields of the **_crtDbgFlag** flag. By setting the bits (turning on), the application can instruct the debug heap manager to perform special debugging operations, including checking for memory leaks when the application exits and reporting if any are found, simulating low-memory conditions by specifying that freed memory blocks should remain in the heap's linked list, and verifying the integrity of the heap by inspecting each memory block at every allocation request. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDbgFlag` are removed during preprocessing.  
   
  The following table lists the bit fields for **_crtDbgFlag** and describes their behavior. Because setting the bits results in increased diagnostic output and reduced program execution speed, these bits are not set (turned off) by default. For more information about these bit fields, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -134,7 +138,8 @@ _CrtSetDbgFlag( tmpFlag );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
   
@@ -215,6 +220,7 @@ int main( )
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)   
  [_CrtCheckMemory](../../c-runtime-library/reference/crtcheckmemory.md)

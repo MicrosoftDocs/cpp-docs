@@ -52,7 +52,7 @@ long double fminl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The first value to compare.

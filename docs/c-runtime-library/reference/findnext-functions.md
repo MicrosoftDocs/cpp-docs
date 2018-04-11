@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
+
 Find the next name, if any, that matches the `filespec` argument in a previous call to [_findfirst](../../c-runtime-library/reference/findfirst-functions.md), and then alter the `fileinfo` structure contents accordingly.  
   
 ## Syntax  
@@ -76,15 +77,17 @@ int _wfindnext64i32(
 );  
 ```  
   
-#### Parameters  
- `handle`  
+### Parameters  
+
+`handle`  
  Search handle returned by a previous call to `_findfirst`.  
   
  `fileinfo`  
  File information buffer.  
   
 ## Return Value  
- If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
+
+If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.  
   
  `EINVAL`  
  Invalid parameter: `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.  
@@ -98,7 +101,8 @@ int _wfindnext64i32(
  If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
 ## Remarks  
- You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished using either the `_findfirst` or `_findnext` function (or any variants). This frees up resources used by these functions in your application.  
+
+You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished using either the `_findfirst` or `_findnext` function (or any variants). This frees up resources used by these functions in your application.  
   
  The variations of these functions with the `w` prefix are wide-character versions; otherwise, they are identical to the corresponding single-byte functions.  
   
@@ -150,8 +154,10 @@ int _wfindnext64i32(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [System Calls](../../c-runtime-library/system-calls.md)   
+
+[System Calls](../../c-runtime-library/system-calls.md)   
  [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

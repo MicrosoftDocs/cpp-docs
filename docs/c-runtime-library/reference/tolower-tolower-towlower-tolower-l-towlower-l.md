@@ -45,7 +45,7 @@ int _towlower_l(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  [in] `c`  
  Character to convert.  
   

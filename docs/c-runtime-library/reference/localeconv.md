@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # localeconv
+
 Gets detailed information on locale settings.  
   
 ## Syntax  
@@ -30,10 +31,12 @@ struct lconv *localeconv( void );
 ```  
   
 ## Return Value  
- `localeconv` returns a pointer to a filled-in object of type [struct lconv](../../c-runtime-library/standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to `localeconv`. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) with `category` values of `LC_ALL`, `LC_MONETARY`, or `LC_NUMERIC` overwrite the contents of the structure.  
+
+`localeconv` returns a pointer to a filled-in object of type [struct lconv](../../c-runtime-library/standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to `localeconv`. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) with `category` values of `LC_ALL`, `LC_MONETARY`, or `LC_NUMERIC` overwrite the contents of the structure.  
   
 ## Remarks  
- The `localeconv` function gets detailed information about numeric formatting for the current locale. This information is stored in a structure of type `lconv`. The `lconv` structure, defined in LOCALE.H, contains the following members:  
+
+The `localeconv` function gets detailed information about numeric formatting for the current locale. This information is stored in a structure of type `lconv`. The `lconv` structure, defined in LOCALE.H, contains the following members:  
   
  `char *decimal_point, wchar_t *_W_decimal_point`  
  Decimal-point character for nonmonetary quantities.  
@@ -140,10 +143,12 @@ The values for `p_sign_posn` and `n_sign_posn` are interpreted according to the 
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [setlocale](../../preprocessor/setlocale.md)   
  [strcoll Functions](../../c-runtime-library/strcoll-functions.md)   
  [strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)   

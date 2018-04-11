@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strdup, _wcsdup, _mbsdup
+
 Duplicates strings.  
   
 > [!IMPORTANT]
@@ -40,15 +41,18 @@ unsigned char *_mbsdup(
 );  
 ```  
   
-#### Parameters  
- `strSource`  
+### Parameters  
+
+`strSource`  
  Null-terminated source string.  
   
 ## Return Value  
- Each of these functions returns a pointer to the storage location for the copied string or `NULL` if storage cannot be allocated.  
+
+Each of these functions returns a pointer to the storage location for the copied string or `NULL` if storage cannot be allocated.  
   
 ## Remarks  
- The `_strdup` function calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate storage space for a copy of `strSource` and then copies `strSource` to the allocated space.  
+
+The `_strdup` function calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate storage space for a copy of `strSource` and then copies `strSource` to the allocated space.  
   
  `_wcsdup` and `_mbsdup` are wide-character and multibyte-character versions of `_strdup`. The arguments and return value of `_wcsdup` are wide-character strings; those of `_mbsdup` are multibyte-character strings. These three functions behave identically otherwise.  
   
@@ -97,7 +101,8 @@ Copy:     This is the buffer text
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   
  [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   

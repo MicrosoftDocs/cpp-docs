@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mktemp
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_mktemp](../../c-runtime-library/reference/mktemp-wmktemp.md) or security-enhanced [_mktemp_s](../../c-runtime-library/reference/mktemp-s-wmktemp-s.md) instead.

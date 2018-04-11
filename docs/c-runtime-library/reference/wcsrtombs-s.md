@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wcsrtombs_s
+
 Convert a wide character string to its multibyte character string representation. A version of [wcsrtombs](../../c-runtime-library/reference/wcsrtombs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -44,8 +45,9 @@ errno_t wcsrtombs_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `pReturnValue`  
+### Parameters  
+
+[out] `pReturnValue`  
  The number of characters converted.  
   
  [out] `mbstr`  
@@ -64,7 +66,8 @@ errno_t wcsrtombs_s(
  A pointer to an `mbstate_t` conversion state object.  
   
 ## Return Value  
- Zero if successful, an error code on failure.  
+
+Zero if successful, an error code on failure.  
   
 |Error condition|Return value and `errno`|  
 |---------------------|------------------------------|  
@@ -75,7 +78,8 @@ errno_t wcsrtombs_s(
  If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.  
   
 ## Remarks  
- The `wcsrtombs_s` function converts a string of wide characters pointed to by `wcstr` into multibyte characters stored in the buffer pointed to by `mbstr`, using the conversion state contained in `mbstate`. The conversion will continue for each character until one of these conditions is met:  
+
+The `wcsrtombs_s` function converts a string of wide characters pointed to by `wcstr` into multibyte characters stored in the buffer pointed to by `mbstr`, using the conversion state contained in `mbstate`. The conversion will continue for each character until one of these conditions is met:  
   
 -   A null wide character is encountered  
   
@@ -101,7 +105,8 @@ errno_t wcsrtombs_s(
  In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
 ## Exceptions  
- The `wcsrtombs_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the `mbstate` is null.  
+
+The `wcsrtombs_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the `mbstate` is null.  
   
 ## Example  
   
@@ -157,7 +162,8 @@ The string was successfully converted.
 |`wcsrtombs_s`|\<wchar.h>|  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [wcrtomb](../../c-runtime-library/reference/wcrtomb.md)   

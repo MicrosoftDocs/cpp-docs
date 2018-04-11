@@ -43,7 +43,7 @@ int __control87_2(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *new*<br/>
  New control-word bit values.

@@ -49,7 +49,7 @@ long double ldexpl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

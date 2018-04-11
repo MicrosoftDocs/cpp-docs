@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
+
 Copies characters of one string to another.  These versions of [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -109,8 +110,9 @@ errno_t _mbsncpy_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Destination string.  
   
  `numberOfElements`  
@@ -126,7 +128,8 @@ errno_t _mbsncpy_s_l(
  The locale to use.  
   
 ## Return Value  
- Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.  
+
+Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.  
   
 ### Error Conditions  
   
@@ -138,7 +141,8 @@ errno_t _mbsncpy_s_l(
 |not `NULL`|too small|any|`ERANGE`|`strDest`[0] set to 0|  
   
 ## Remarks  
- These functions try to copy the first `D` characters of `strSource` to `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
+
+These functions try to copy the first `D` characters of `strSource` to `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
  There is an exception to the above paragraph. If `count` is `_TRUNCATE`, then as much of `strSource` as will fit into `strDest` is copied while still leaving room for the terminating null which is always appended.  
   
@@ -362,7 +366,8 @@ After strncpy_s (with null-termination):
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md)   

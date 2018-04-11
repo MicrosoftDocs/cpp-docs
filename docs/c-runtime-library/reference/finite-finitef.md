@@ -36,7 +36,7 @@ int _finitef(
 ); /* x64 and ARM/ARM64 only */
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to test.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cexit, _c_exit
+
 Performs cleanup operations and returns without terminating the process.  
   
 ## Syntax  
@@ -31,7 +32,8 @@ void _c_exit( void );
 ```  
   
 ## Remarks  
- The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions registered by `atexit` and `_onexit`. Then `_cexit` flushes all I/O buffers and closes all open streams before returning. `_c_exit` is the same as `_exit` but returns to the calling process without processing `atexit` or `_onexit` or flushing stream buffers. The behavior of `exit`,`_exit`, `_cexit`, and `_c_exit` is shown in the following table.  
+
+The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions registered by `atexit` and `_onexit`. Then `_cexit` flushes all I/O buffers and closes all open streams before returning. `_c_exit` is the same as `_exit` but returns to the calling process without processing `atexit` or `_onexit` or flushing stream buffers. The behavior of `exit`,`_exit`, `_cexit`, and `_c_exit` is shown in the following table.  
   
 |Function|Behavior|  
 |--------------|--------------|  
@@ -56,7 +58,8 @@ myObject.myClass::~myClass( );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
+
 Writes formatted data to a string. These are versions of [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -72,8 +73,9 @@ int _snwprintf_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for the output.  
   
  `sizeOfBuffer`  
@@ -92,7 +94,8 @@ int _snwprintf_s(
  The locale to use.  
   
 ## Return Value  
- `_snprintf_s` returns the number of characters stored in `buffer`, not counting the terminating null character. `_snwprintf_s` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
+
+`_snprintf_s` returns the number of characters stored in `buffer`, not counting the terminating null character. `_snwprintf_s` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
  If the storage required to store the data and a terminating null exceeds `sizeOfBuffer`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set `buffer` to an empty string, set `errno` to `ERANGE`, and return -1.  
   
@@ -101,7 +104,8 @@ int _snwprintf_s(
  For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_snprintf_s` function formats and stores `count` or fewer characters in `buffer` and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in `format`. The formatting is consistent with the `printf` family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.  
+
+The `_snprintf_s` function formats and stores `count` or fewer characters in `buffer` and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in `format`. The formatting is consistent with the `printf` family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.  
   
  If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), then `_snprintf_s` writes as much of the string as will fit in `buffer` while leaving room for a terminating null. If the entire string (with terminating null) fits in `buffer`, then `_snprintf_s` returns the number of characters written (not including the terminating null); otherwise, `_snprintf_s` returns -1 to indicate that truncation occurred.  
   
@@ -259,7 +263,8 @@ Invalid parameter handler invoked: ("Buffer too small", 0)
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   

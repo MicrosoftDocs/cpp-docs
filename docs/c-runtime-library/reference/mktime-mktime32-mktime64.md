@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mktime, _mktime32, _mktime64
+
 Convert the local time to a calendar value.  
   
 ## Syntax  
@@ -37,17 +38,20 @@ __time64_t _mktime64(
 );  
 ```  
   
-#### Parameters  
- *timeptr*  
+### Parameters  
+
+*timeptr*  
  Pointer to time structure; see [asctime](../../c-runtime-library/reference/asctime-wasctime.md).  
   
 ## Return Value  
- `_mktime32` returns the specified calendar time encoded as a value of type [time_t](../../c-runtime-library/standard-types.md). If *timeptr* references a date before midnight, January 1, 1970, or if the calendar time cannot be represented, `_mktime32` returns -1 cast to type `time_t`. When using `_mktime32` and if *timeptr* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type `time_t`.  
+
+`_mktime32` returns the specified calendar time encoded as a value of type [time_t](../../c-runtime-library/standard-types.md). If *timeptr* references a date before midnight, January 1, 1970, or if the calendar time cannot be represented, `_mktime32` returns -1 cast to type `time_t`. When using `_mktime32` and if *timeptr* references a date after 23:59:59 January 18, 2038, Coordinated Universal Time (UTC), it will return -1 cast to type `time_t`.  
   
  `_mktime64` will return -1 cast to type `__time64_t` if *timeptr* references a date after 23:59:59, December 31, 3000, UTC.  
   
 ## Remarks  
- The `mktime`, `_mktime32` and `_mktime64` functions convert the supplied time structure (possibly incomplete) pointed to by *timeptr* into a fully defined structure with normalized values and then converts it to a `time_t` calendar time value. The converted time has the same encoding as the values returned by the [time](../../c-runtime-library/reference/time-time32-time64.md) function. The original values of the `tm_wday` and `tm_yday` components of the *timeptr* structure are ignored, and the original values of the other components are not restricted to their normal ranges.  
+
+The `mktime`, `_mktime32` and `_mktime64` functions convert the supplied time structure (possibly incomplete) pointed to by *timeptr* into a fully defined structure with normalized values and then converts it to a `time_t` calendar time value. The converted time has the same encoding as the values returned by the [time](../../c-runtime-library/reference/time-time32-time64.md) function. The original values of the `tm_wday` and `tm_yday` components of the *timeptr* structure are ignored, and the original values of the other components are not restricted to their normal ranges.  
   
  `mktime` is an inline function that is equivalent to `_mktime64`, unless `_USE_32BIT_TIME_T` is defined, in which case it is equivalent to `_mktime32`.  
   
@@ -78,7 +82,8 @@ __time64_t _mktime64(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -122,7 +127,8 @@ In 20 days the time will be Thu May 15 13:34:07 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   
  [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   

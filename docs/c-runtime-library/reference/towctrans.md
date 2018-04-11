@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # towctrans
+
 Transforms a character.  
   
 ## Syntax  
@@ -32,18 +33,21 @@ wint_t towctrans(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  The character you want to transform.  
   
  `category`  
  An identifier that contains the return value of [wctrans](../../c-runtime-library/reference/wctrans.md).  
   
 ## Return Value  
- The character `c`, after `towctrans` used the transform rule in `category`.  
+
+The character `c`, after `towctrans` used the transform rule in `category`.  
   
 ## Remarks  
- The value of `category` must have been returned by an earlier successful call to [wctrans](../../c-runtime-library/reference/wctrans.md).  
+
+The value of `category` must have been returned by an earlier successful call to [wctrans](../../c-runtime-library/reference/wctrans.md).  
   
 ## Requirements  
   
@@ -54,7 +58,9 @@ wint_t towctrans(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See `wctrans` for a sample that uses `towctrans`.  
+
+See `wctrans` for a sample that uses `towctrans`.  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)

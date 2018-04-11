@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # gmtime_s, _gmtime32_s, _gmtime64_s
+
 Converts a time value to a structure. These are versions of [_gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -40,15 +41,17 @@ errno_t _gmtime64_s(
 );  
 ```  
   
-#### Parameters  
- `_tm`  
+### Parameters  
+
+`_tm`  
  Pointer to a `tm` structure. The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time.  
   
  `time`  
  Pointer to stored time. The time is represented as seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).  
   
 ## Return Value  
- Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md).  
+
+Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md).  
   
 ### Error Conditions  
   
@@ -61,7 +64,8 @@ errno_t _gmtime64_s(
  In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.  
   
 ## Remarks  
- The `_gmtime32_s` function breaks down the `time` value and stores it in a structure of type `tm`, defined in Time.h. The address of the structure is passed in `_tm`. The value of `time` is usually obtained from a call to the `time` function.  
+
+The `_gmtime32_s` function breaks down the `time` value and stores it in a structure of type `tm`, defined in Time.h. The address of the structure is passed in `_tm`. The value of `time` is usually obtained from a call to the `time` function.  
   
 > [!NOTE]
 >  The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .  
@@ -154,7 +158,8 @@ Coordinated universal time is Fri Apr 25 20:12:33 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

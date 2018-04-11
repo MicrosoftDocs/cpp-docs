@@ -82,7 +82,7 @@ const unsigned char *_mbschr_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
+### Parameters  
  `str`  
  Null-terminated source string.  
   

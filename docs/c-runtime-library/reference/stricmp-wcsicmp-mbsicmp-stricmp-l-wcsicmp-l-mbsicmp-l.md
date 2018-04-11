@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
+
 Performs a case-insensitive comparison of strings.  
   
 > [!IMPORTANT]
@@ -58,15 +59,17 @@ int _mbsicmp_l(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  Null-terminated strings to compare.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- The return value indicates the relation of `string1` to `string2` as follows.  
+
+The return value indicates the relation of `string1` to `string2` as follows.  
   
 |Return value|Description|  
 |------------------|-----------------|  
@@ -77,7 +80,8 @@ int _mbsicmp_l(
  On an error, `_mbsicmp` returns `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.  
   
 ## Remarks  
- The `_stricmp` function ordinally compares `string1` and `string2` after converting each character to lowercase, and returns a value indicating their relationship. `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is only affected by `LC_CTYPE`, which determines which characters are upper and lowercase. The `_stricoll` function compares strings according to both the `LC_CTYPE` and `LC_COLLATE` categories of the locale, which includes both the case and the collation order. For more information about the `LC_COLLATE` category, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the `_l` suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `_stricmp` function ordinally compares `string1` and `string2` after converting each character to lowercase, and returns a value indicating their relationship. `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is only affected by `LC_CTYPE`, which determines which characters are upper and lowercase. The `_stricoll` function compares strings according to both the `LC_CTYPE` and `LC_COLLATE` categories of the locale, which includes both the case and the collation order. For more information about the `LC_COLLATE` category, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the `_l` suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
 > [!NOTE]
 >  `_stricmp` is equivalent to `_strcmpi`. They can be used interchangeably but `_stricmp` is the preferred standard.  
@@ -180,7 +184,8 @@ Compare strings:
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   
  [_memicmp, _memicmp_l](../../c-runtime-library/reference/memicmp-memicmp-l.md)   
  [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   

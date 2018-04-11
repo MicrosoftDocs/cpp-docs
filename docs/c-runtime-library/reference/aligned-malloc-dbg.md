@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_malloc_dbg
+
 Allocates memory on a specified alignment boundary with additional space for a debugging header and overwrite buffers (debug version only).  
   
 ## Syntax  
@@ -34,8 +35,9 @@ void * _aligned_malloc_dbg(
 );  
 ```  
   
-#### Parameters  
- [in] `size`  
+### Parameters  
+
+[in] `size`  
  Size of the requested memory allocation.  
   
  [in] `alignment`  
@@ -48,10 +50,12 @@ void * _aligned_malloc_dbg(
  Line number in the source file where the allocation operation was requested or NULL.  
   
 ## Return Value  
- A pointer to the memory block that was allocated or `NULL` if the operation failed.  
+
+A pointer to the memory block that was allocated or `NULL` if the operation failed.  
   
 ## Remarks  
- `_aligned_malloc_dbg` is a debug version of the [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_malloc_dbg` is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and `_aligned_malloc_dbg` allocate a block of memory in the base heap, but `_aligned_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and `filename`/`linenumber` information to determine the origin of allocation requests.  
+
+`_aligned_malloc_dbg` is a debug version of the [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_malloc_dbg` is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and `_aligned_malloc_dbg` allocate a block of memory in the base heap, but `_aligned_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and `filename`/`linenumber` information to determine the origin of allocation requests.  
   
  `_aligned_malloc_dbg` allocates the memory block with slightly more space than the requested `size`. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.  
   
@@ -68,7 +72,9 @@ void * _aligned_malloc_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

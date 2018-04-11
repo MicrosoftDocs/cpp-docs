@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memcmp, wmemcmp
+
 Compares characters in two buffers.  
   
 ## Syntax  
@@ -38,8 +39,9 @@ int wmemcmp(
 );  
 ```  
   
-#### Parameters  
- `buf1`  
+### Parameters  
+
+`buf1`  
  First buffer.  
   
  `buf2`  
@@ -49,7 +51,8 @@ int wmemcmp(
  Number of characters to compare. (Compares bytes for `memcmp`, wide characters for `wmemcmp`).  
   
 ## Return Value  
- The return value indicates the relationship between the buffers.  
+
+The return value indicates the relationship between the buffers.  
   
 |Return value|Relationship of first `count` characters of buf1 and buf2|  
 |------------------|---------------------------------------------------------------|  
@@ -58,7 +61,8 @@ int wmemcmp(
 |> 0|`buf1` greater than `buf2`|  
   
 ## Remarks  
- Compares the first `count` characters of `buf1` and `buf2` and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as `unsigned char` for `memcmp`, and as `wchar_t` for `wmemcmp`.  
+
+Compares the first `count` characters of `buf1` and `buf2` and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as `unsigned char` for `memcmp`, and as `wchar_t` for `wmemcmp`.  
   
 ## Requirements  
   
@@ -70,7 +74,8 @@ int wmemcmp(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time library](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time library](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -121,7 +126,8 @@ int_arr1 is equal to int_arr2.
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   

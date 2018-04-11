@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
+
 Scans strings for characters in specified character sets.  
   
 > [!IMPORTANT]
@@ -82,8 +83,9 @@ const unsigned char *_mbspbrk_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated, searched string.  
   
  `strCharSet`  
@@ -93,10 +95,12 @@ const unsigned char *_mbspbrk_l(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the first occurrence of any character from `strCharSet` in `str`, or a `NULL` pointer if the two string arguments have no characters in common.  
+
+Returns a pointer to the first occurrence of any character from `strCharSet` in `str`, or a `NULL` pointer if the two string arguments have no characters in common.  
   
 ## Remarks  
- The `strpbrk` function returns a pointer to the first occurrence of a character in `str` that belongs to the set of characters in `strCharSet`. The search does not include the terminating null character.  
+
+The `strpbrk` function returns a pointer to the first occurrence of a character in `str` that belongs to the set of characters in `strCharSet`. The search does not include the terminating null character.  
   
  `wcspbrk` and `_mbspbrk` are wide-character and multibyte-character versions of `strpbrk`. The arguments and return value of `wcspbrk` are wide-character strings; those of `_mbspbrk` are multibyte-character strings.  
   
@@ -160,7 +164,8 @@ int main( void )
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)   

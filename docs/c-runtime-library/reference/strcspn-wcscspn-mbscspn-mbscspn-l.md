@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcspn, wcscspn, _mbscspn, _mbscspn_l
+
 Returns the index of the first occurrence in a string, of a character that belongs to a set of characters.  
   
 > [!IMPORTANT]
@@ -48,8 +49,9 @@ size_t _mbscspn_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated searched string.  
   
  `strCharSet`  
@@ -59,12 +61,14 @@ size_t _mbscspn_l(
  Locale to use.  
   
 ## Return Value  
- These functions return the index of the first character in `str` that is in `strCharSet`. If none of the characters in `str` is in `strCharSet`, then the return value is the length of `str`.  
+
+These functions return the index of the first character in `str` that is in `strCharSet`. If none of the characters in `str` is in `strCharSet`, then the return value is the length of `str`.  
   
  No return value is reserved to indicate an error.  
   
 ## Remarks  
- `wcscspn` and `_mbscspn` are wide-character and multibyte-character versions of `strcspn`. The arguments of `wcscspn` are wide-character strings; those of `_mbscspn` are multibyte-character strings.  
+
+`wcscspn` and `_mbscspn` are wide-character and multibyte-character versions of `strcspn`. The arguments of `wcscspn` are wide-character strings; those of `_mbscspn` are multibyte-character strings.  
   
  `_mbscspn` validates its parameters. If either `str` or `strCharSet` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`. `strcspn` and `wcscspn` do not validate their parameters. These three functions behave identically otherwise.  
   
@@ -122,7 +126,8 @@ strcspn( "", "" ) = 0
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _pclose
+
 Waits for a new command processor and closes the stream on the associated pipe.  
   
 > [!IMPORTANT]
@@ -35,17 +36,20 @@ FILE *stream
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Return value from the previous call to `_popen`.  
   
 ## Return Value  
- Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for `_cwait`, except the low-order and high-order bytes are swapped. If stream is **NULL**, `_pclose` sets `errno` to `EINVAL` and returns -1.  
+
+Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for `_cwait`, except the low-order and high-order bytes are swapped. If stream is **NULL**, `_pclose` sets `errno` to `EINVAL` and returns -1.  
   
  For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_pclose` function looks up the process ID of the command processor (Cmd.exe) started by the associated `_popen` call, executes a [_cwait](../../c-runtime-library/reference/cwait.md) call on the new command processor, and closes the stream on the associated pipe.  
+
+The `_pclose` function looks up the process ID of the command processor (Cmd.exe) started by the associated `_popen` call, executes a [_cwait](../../c-runtime-library/reference/cwait.md) call on the new command processor, and closes the stream on the associated pipe.  
   
 ## Requirements  
   
@@ -56,9 +60,11 @@ FILE *stream
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_pipe](../../c-runtime-library/reference/pipe.md)   
  [_popen, _wpopen](../../c-runtime-library/reference/popen-wpopen.md)

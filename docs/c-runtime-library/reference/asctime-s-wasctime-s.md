@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # asctime_s, _wasctime_s
+
 Convert a `tm` time structure to a character string. These functions are versions of [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -48,8 +49,9 @@ errno_t _wasctime_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  [out] A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by `numberOfElements`.  
   
  `numberOfElements`  
@@ -59,7 +61,8 @@ errno_t _wasctime_s(
  [in] Time/date structure. This function assumes a pointer to a valid `struct tm` object.  
   
 ## Return Value  
- Zero if successful. If there is a failure, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the return value is an error code. Error codes are defined in ERRNO.H. For more information, see [errno Constants](../../c-runtime-library/errno-constants.md). The actual error codes returned for each error condition are shown in the following table.  
+
+Zero if successful. If there is a failure, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the return value is an error code. Error codes are defined in ERRNO.H. For more information, see [errno Constants](../../c-runtime-library/errno-constants.md). The actual error codes returned for each error condition are shown in the following table.  
   
 ### Error Conditions  
   
@@ -75,7 +78,8 @@ errno_t _wasctime_s(
 >  Error conditions for `wasctime_s` are similar to `asctime_s` with the exception that the size limit is measured in words.  
   
 ## Remarks  
- The `asctime` function converts a time stored as a structure to a character string. The `_tm` value is usually obtained from a call to `gmtime` or `localtime`. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.  
+
+The `asctime` function converts a time stored as a structure to a character string. The `_tm` value is usually obtained from a call to `gmtime` or `localtime`. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.  
   
 |timeptr member|Value|  
 |--------------------|-----------|  
@@ -111,12 +115,14 @@ errno_t _wasctime_s(
 |`_wasctime_s`|\<time.h> or \<wchar.h>|  
   
 ## Security  
- If the buffer pointer is not `NULL` and the pointer does not point to a valid buffer, the function will overwrite whatever is at the location. This can also result in an access violation.  
+
+If the buffer pointer is not `NULL` and the pointer does not point to a valid buffer, the function will overwrite whatever is at the location. This can also result in an access violation.  
   
  A [buffer overrun](http://msdn.microsoft.com/library/windows/desktop/ms717795) can occur if the size argument passed in is greater than the actual size of the buffer.  
   
 ## Example  
- This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the `asctime_s` function.  
+
+This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the `asctime_s` function.  
   
 ```  
 // crt_asctime_s.c  
@@ -151,7 +157,8 @@ Current date and time: Wed May 14 15:30:17 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   

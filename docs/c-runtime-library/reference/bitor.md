@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # bitor
+
 An alternative to the &#124; operator.  
   
 ## Syntax  
@@ -31,7 +32,8 @@ An alternative to the &#124; operator.
 ```  
   
 ## Remarks  
- The macro yields the operator &#124;.  
+
+The macro yields the operator &#124;.  
   
 ## Example  
   
@@ -60,4 +62,5 @@ int main( )
 ```  
   
 ## Requirements  
- **Header:** \<iso646.h>
+
+**Header:** \<iso646.h>

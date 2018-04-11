@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getdrive
+
 Gets the current disk drive.  
   
 > [!IMPORTANT]
@@ -33,7 +34,8 @@ int _getdrive( void );
 ```  
   
 ## Return Value  
- Returns the current (default) drive (1=A, 2=B, and so on). There is no error return.  
+
+Returns the current (default) drive (1=A, 2=B, and so on). There is no error return.  
   
 ## Requirements  
   
@@ -94,7 +96,8 @@ G: (Current directory is G:\)
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdrive](../../c-runtime-library/reference/chdrive.md)   
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)

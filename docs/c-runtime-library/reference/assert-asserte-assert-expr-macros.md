@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ASSERT, _ASSERTE, _ASSERT_EXPR Macros
+
 Evaluate an expression and generate a debug report when the result is `False` (debug version only).  
   
 ## Syntax  
@@ -38,15 +39,17 @@ _ASSERTE(
   
 ```  
   
-#### Parameters  
- `booleanExpression`  
+### Parameters  
+
+`booleanExpression`  
  A scalar expression (including pointer expressions) that evaluates to nonzero (true) or 0 (false).  
   
  `message`  
  A wide string to display as part of the report.  
   
 ## Remarks  
- The `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` macros provide an application with a clean and simple mechanism for checking assumptions during the debugging process. They are very flexible because they do not need to be enclosed in `#ifdef` statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro. `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` are only available when `_DEBUG` is defined at compile time. When `_DEBUG` is not defined, calls to these macros are removed during preprocessing.  
+
+The `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` macros provide an application with a clean and simple mechanism for checking assumptions during the debugging process. They are very flexible because they do not need to be enclosed in `#ifdef` statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro. `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` are only available when `_DEBUG` is defined at compile time. When `_DEBUG` is not defined, calls to these macros are removed during preprocessing.  
   
  `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` evaluate their `booleanExpression` argument and when the result is `false` (0), they print a diagnostic message and call [_CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) to generate a debug report. The `_ASSERT` macro prints a simple diagnostic message,  `_ASSERTE` includes a string representation of the failed expression in the message, and `_ASSERT_EXPR` includes the `message` string in the diagnostic message. These macros do nothing when `booleanExpression` evaluates to nonzero.  
   
@@ -75,7 +78,8 @@ _ASSERTE(
 |`_ASSERT_EXPR`,                  `_ASSERT`, `_ASSERTE`|\<crtdbg.h>|  
   
 ## Example  
- In this program, calls are made to the `_ASSERT` and `_ASSERTE` macros to test the condition `string1 == string2`. If the condition fails, these macros print a diagnostic message. The `_RPTn` and `_RPTFn` group of macros is also exercised in this program, as an alternative to the `printf` function.  
+
+In this program, calls are made to the `_ASSERT` and `_ASSERTE` macros to test the condition `string1 == string2`. If the condition fails, these macros print a diagnostic message. The `_RPTn` and `_RPTFn` group of macros is also exercised in this program, as an alternative to the `printf` function.  
   
 ```C  
 // crt_ASSERT_macro.c  
@@ -150,6 +154,7 @@ crt_ASSERT_macro.c(59) : Assertion failed: p1 == p2
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)   
  [_RPT, _RPTF, _RPTW, _RPTFW Macros](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)

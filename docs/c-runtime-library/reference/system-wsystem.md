@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # system, _wsystem
+
 Executes a command.  
   
 > [!IMPORTANT]
@@ -37,12 +38,14 @@ int _wsystem(
 );  
 ```  
   
-#### Parameters  
- `command`  
+### Parameters  
+
+`command`  
  The command to be executed.  
   
 ## Return Value  
- If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and `errno` is set to one of the following values:  
+
+If `command` is `NULL` and the command interpreter is found, returns a nonzero value. If the command interpreter is not found, returns 0 and sets `errno` to `ENOENT`. If `command` is not `NULL`, `system` returns the value that is returned by the command interpreter. It returns the value 0 only if the command interpreter returns the value 0. A return value of - 1 indicates an error, and `errno` is set to one of the following values:  
   
  `E2BIG`  
  The argument list (which is system-dependent) is too big.  
@@ -59,7 +62,8 @@ int _wsystem(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these return codes.  
   
 ## Remarks  
- The `system` function passes `command` to the command interpreter, which executes the string as an operating-system command. `system` uses the `COMSPEC` and `PATH` environment variables to locate the command-interpreter file CMD.exe. If `command` is `NULL`, the function just checks whether the command interpreter exists.  
+
+The `system` function passes `command` to the command interpreter, which executes the string as an operating-system command. `system` uses the `COMSPEC` and `PATH` environment variables to locate the command-interpreter file CMD.exe. If `command` is `NULL`, the function just checks whether the command interpreter exists.  
   
  You must explicitly flush—by using `fflush` or `_flushall`—or close any stream before you call `system`.  
   
@@ -81,7 +85,8 @@ int _wsystem(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- This example uses `system` to TYPE a text file.  
+
+This example uses `system` to TYPE a text file.  
   
 ```  
 // crt_system.c  
@@ -109,7 +114,8 @@ Line two.
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   
  [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [_flushall](../../c-runtime-library/reference/flushall.md)   

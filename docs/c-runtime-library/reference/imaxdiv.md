@@ -33,7 +33,7 @@ imaxdiv_t imaxdiv(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *numer*<br/>
  The numerator.

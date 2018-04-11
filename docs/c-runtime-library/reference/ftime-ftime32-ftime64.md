@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ftime, _ftime32, _ftime64
+
 Get the current time. More secure versions of these functions are available; see [_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md).  
   
 ## Syntax  
@@ -37,12 +38,14 @@ void _ftime64(
 );  
 ```  
   
-#### Parameters  
- `timeptr`  
+### Parameters  
+
+`timeptr`  
  Pointer to a `_timeb`,`__timeb32` or `__timeb64` structure.  
   
 ## Remarks  
- The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
+
+The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
   
  `dstflag`  
  Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)  
@@ -128,7 +131,8 @@ The time is Mon Apr 28 11:08:54.230 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

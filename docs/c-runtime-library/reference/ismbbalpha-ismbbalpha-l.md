@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbalpha, _ismbbalpha_l
+
 Determines whether a specified multibyte character is alpha.  
   
 ## Syntax  
@@ -34,15 +35,17 @@ int _ismbbalpha_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- `_ismbbalpha` returns a nonzero value if the expression:  
+
+`_ismbbalpha` returns a nonzero value if the expression:  
   
 ```  
 isalpha || _ismbbkalnum  
@@ -60,8 +63,10 @@ isalpha || _ismbbkalnum
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

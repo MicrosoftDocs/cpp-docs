@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fread_nolock
+
 Reads data from a stream, without locking other threads.  
   
 ## Syntax  
@@ -34,8 +35,9 @@ size_t _fread_nolock(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for data.  
   
  `size`  
@@ -48,10 +50,12 @@ size_t _fread_nolock(
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- See [fread](../../c-runtime-library/reference/fread.md).  
+
+See [fread](../../c-runtime-library/reference/fread.md).  
   
 ## Remarks  
- This function is a non-locking version of `fread`. It is identical to `fread` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+This function is a non-locking version of `fread`. It is identical to `fread` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ## Requirements  
   
@@ -62,6 +66,7 @@ size_t _fread_nolock(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   
  [_read](../../c-runtime-library/reference/read.md)

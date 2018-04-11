@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getmaxstdio
+
 Returns the number of simultaneously open files permitted at the stream I/O level.  
   
 ## Syntax  
@@ -30,10 +31,12 @@ int _getmaxstdio( void );
 ```  
   
 ## Return Value  
- Returns a number that represents the number of simultaneously open files currently permitted at the `stdio` level.  
+
+Returns a number that represents the number of simultaneously open files currently permitted at the `stdio` level.  
   
 ## Remarks  
- Use [_setmaxstdio](../../c-runtime-library/reference/setmaxstdio.md) to configure the number of simultaneously open files permitted at the `stdio` level.  
+
+Use [_setmaxstdio](../../c-runtime-library/reference/setmaxstdio.md) to configure the number of simultaneously open files permitted at the `stdio` level.  
   
 ## Requirements  
   
@@ -69,4 +72,5 @@ int main()
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)

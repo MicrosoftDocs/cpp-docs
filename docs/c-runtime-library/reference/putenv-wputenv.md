@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _putenv, _wputenv
+
 Creates, modifies, or removes environment variables. More secure versions of these functions are available; see [_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md).  
   
 > [!IMPORTANT]
@@ -37,15 +38,18 @@ int _wputenv(
 );  
 ```  
   
-#### Parameters  
- `envstring`  
+### Parameters  
+
+`envstring`  
  Environment-string definition.  
   
 ## Return Value  
- Return 0 if successful or -1 in the case of an error.  
+
+Return 0 if successful or -1 in the case of an error.  
   
 ## Remarks  
- The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the `envstring` argument to `_wputenv` is a wide-character string.  
+
+The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the `envstring` argument to `_wputenv` is a wide-character string.  
   
 ### Generic-Text Routine Mappings  
   
@@ -74,9 +78,11 @@ int _wputenv(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- For a sample of how to use `_putenv`, see [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md).  
+
+For a sample of how to use `_putenv`, see [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md).  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)   
  [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)

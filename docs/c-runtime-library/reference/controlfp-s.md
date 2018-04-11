@@ -34,7 +34,7 @@ errno_t _controlfp_s(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *currentControl*<br/>
  The current control-word bit value.

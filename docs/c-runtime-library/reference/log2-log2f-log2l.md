@@ -47,7 +47,7 @@ long double log2l(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The value to determine the base-2 logarithm of.

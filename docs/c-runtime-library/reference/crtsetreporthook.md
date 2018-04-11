@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportHook
+
 Installs a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).  
   
 ## Syntax  
@@ -31,15 +32,18 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
 );  
 ```  
   
-#### Parameters  
- `reportHook`  
+### Parameters  
+
+`reportHook`  
  New client-defined reporting function to hook into the C run-time debug reporting process.  
   
 ## Return Value  
- Returns the previous client-defined reporting function.  
+
+Returns the previous client-defined reporting function.  
   
 ## Remarks  
- `_CrtSetReportHook` allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using `_CrtDbgReport`. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetReportHook` are removed during preprocessing.  
+
+`_CrtSetReportHook` allows an application to use its own reporting function into the C run-time debug library reporting process. As a result, whenever [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) is called to generate a debug report, the application's reporting function is called first. This functionality enables an application to perform operations such as filtering debug reports so it can focus on specific allocation types or send a report to destinations not available by using `_CrtDbgReport`. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetReportHook` are removed during preprocessing.  
   
  For a more robust version of `_CrtSetReportHook`, see [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md).  
   
@@ -67,8 +71,10 @@ int YourReportHook( int reportType, char *message, int *returnValue );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtGetReportHook](../../c-runtime-library/reference/crtgetreporthook.md)

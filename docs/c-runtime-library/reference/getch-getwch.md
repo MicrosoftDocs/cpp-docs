@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getch, _getwch
+
 Gets a character from the console without echo.  
   
 > [!IMPORTANT]
@@ -34,10 +35,12 @@ wint_t _getwch( void );
 ```  
   
 ## Return Value  
- Returns the character read. There is no error return.  
+
+Returns the character read. There is no error return.  
   
 ## Remarks  
- The `_getch` and `_getwch` functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.  
+
+The `_getch` and `_getwch` functions read a single character from the console without echoing the character. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.  
   
  These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getch_nolock, _getwch_nolock](../../c-runtime-library/reference/getch-nolock-getwch-nolock.md).  
   
@@ -93,7 +96,8 @@ Type 'Y' when finished typing keys: Y
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_getche, _getwche](../../c-runtime-library/reference/getche-getwche.md)   
  [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   

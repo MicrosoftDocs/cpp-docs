@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _sopen, _wsopen
+
 Opens a file for sharing. More-secure versions of these functions are available—see [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).  
   
 ## Syntax  
@@ -40,8 +41,9 @@ int _wsopen(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  File name.  
   
  `oflag`  
@@ -54,7 +56,8 @@ int _wsopen(
  Permission setting.  
   
 ## Return Value  
- Each of these functions returns a file descriptor for the opened file.  
+
+Each of these functions returns a file descriptor for the opened file.  
   
  If `filename` or `oflag` is a `NULL` pointer, or if `oflag` or `shflag` is not within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to one of the following values.  
   
@@ -76,7 +79,8 @@ int _wsopen(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_sopen` function opens the file specified by `filename` and prepares the file for shared reading or writing, as defined by `oflag` and `shflag`. `_wsopen` is a wide-character version of `_sopen`; the `filename` argument to `_wsopen` is a wide-character string. `_wsopen` and `_sopen` behave identically otherwise.  
+
+The `_sopen` function opens the file specified by `filename` and prepares the file for shared reading or writing, as defined by `oflag` and `shflag`. `_wsopen` is a wide-character version of `_sopen`; the `filename` argument to `_wsopen` is a wide-character string. `_wsopen` and `_sopen` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -185,10 +189,12 @@ int _wsopen(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [_locking](../../c-runtime-library/reference/locking.md).  
+
+See the example for [_locking](../../c-runtime-library/reference/locking.md).  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_close](../../c-runtime-library/reference/close.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

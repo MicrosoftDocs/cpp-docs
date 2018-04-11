@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _execl, _wexecl
+
 Loads and executes new child processes.  
   
 > [!IMPORTANT]
@@ -43,15 +44,17 @@ intptr_t _wexecl(
 );  
 ```  
   
-#### Parameters  
- `cmdname`  
+### Parameters  
+
+`cmdname`  
  Path of the file to be executed.  
   
  `arg0, ... argn`  
  List of pointers to the parameters.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
+
+If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |errno value|Description|  
 |-----------------|-----------------|  
@@ -64,7 +67,8 @@ intptr_t _wexecl(
 |`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|  
   
 ## Remarks  
- Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter. The first argument is the command or executable file name, and the second argument should be the same as the first. It becomes `argv[0]` in the executed process. The third argument is the first argument, `argv[1]`, of the process being executed.  
+
+Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter. The first argument is the command or executable file name, and the second argument should be the same as the first. It becomes `argv[0]` in the executed process. The third argument is the first argument, `argv[1]`, of the process being executed.  
   
  The `_execl` functions validate their parameters. If either `cmdname` or `arg0` is a null pointer or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.  
   
@@ -78,10 +82,12 @@ intptr_t _wexecl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
+
+See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   

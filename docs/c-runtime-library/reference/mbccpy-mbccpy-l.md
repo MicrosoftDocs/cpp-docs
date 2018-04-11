@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbccpy, _mbccpy_l
+
 Copies a multibyte character from one string to another string. More secure versions of these functions are available; see [_mbccpy_s, _mbccpy_s_l](../../c-runtime-library/reference/mbccpy-s-mbccpy-s-l.md).  
   
 > [!IMPORTANT]
@@ -40,8 +41,9 @@ void _mbccpy_l(
 );  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  Copy destination.  
   
  `src`  
@@ -51,7 +53,8 @@ void _mbccpy_l(
  Locale to use.  
   
 ## Remarks  
- The `_mbccpy` function copies one multibyte character from `src` to `dest`.  
+
+The `_mbccpy` function copies one multibyte character from `src` to `dest`.  
   
  This function validates its parameters. If `_mbccpy` is passed a null pointer for `dest` or `src`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`.  
   
@@ -76,6 +79,7 @@ void _mbccpy_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)

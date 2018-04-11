@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
+
 Returns the number of characters in the formatted string using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _vscwprintf_p _l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format-control string.  
   
  `argptr`  
@@ -59,10 +61,12 @@ int _vscwprintf_p _l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- `_vscprintf_p` returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. `_vscwprintf_p` performs the same function for wide characters.  
+
+`_vscprintf_p` returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. `_vscwprintf_p` performs the same function for wide characters.  
   
 ## Remarks  
- These functions differ from `_vscprintf` and `_vscwprintf` only in that they support the ability to specify the order in which the arguments are used. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+
+These functions differ from `_vscprintf` and `_vscwprintf` only in that they support the ability to specify the order in which the arguments are used. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   
@@ -88,9 +92,11 @@ int _vscwprintf_p _l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).  
+
+See the example for [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).  
   
 ## See Also  
- [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
+
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](../../c-runtime-library/reference/scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)   
  [_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)

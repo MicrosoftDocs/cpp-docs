@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _execv, _wexecv
+
 Loads and executes new child processes.  
   
 > [!IMPORTANT]
@@ -39,15 +40,17 @@ intptr_t _wexecv(
 );  
 ```  
   
-#### Parameters  
- `cmdname`  
+### Parameters  
+
+`cmdname`  
  Path of the file to execute.  
   
  `argv`  
  Array of pointers to parameters.  
   
 ## Return Value  
- If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
+
+If successful, these functions do not return to the calling process. A return value of -1 indicates an error, in which case the `errno` global variable is set.  
   
 |`errno` value|Description|  
 |-------------------|-----------------|  
@@ -62,7 +65,8 @@ intptr_t _wexecv(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments.  
+
+Each of these functions loads and executes a new process, passing an array of pointers to command-line arguments.  
   
  The `_execv` functions validate their parameters. If `cmdname` is a null pointer, or if `argv` is a null pointer, pointer to an empty array, or if the array contains an empty string as the first argument, the `_execv` functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No process is launched.  
   
@@ -76,10 +80,12 @@ intptr_t _wexecv(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
+
+See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   

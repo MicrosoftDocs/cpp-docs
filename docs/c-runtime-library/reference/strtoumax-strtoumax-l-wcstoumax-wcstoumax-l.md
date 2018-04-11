@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
+
 Converts strings to an integer value of the largest supported unsigned integer type.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ uintmax_t _wcstoumax_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,12 +66,14 @@ uintmax_t _wcstoumax_l(
  Locale to use.  
   
 ## Return Value  
- `strtoumax` returns the converted value, if any, or `UINTMAX_MAX` on overflow. `strtoumax` returns 0 if no conversion can be performed. `wcstoumax` returns values analogously to `strtoumax`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
+
+`strtoumax` returns the converted value, if any, or `UINTMAX_MAX` on overflow. `strtoumax` returns 0 if no conversion can be performed. `wcstoumax` returns values analogously to `strtoumax`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
   
  For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- Each of these functions converts the input string `nptr` to a `uintmax_t` integer value.  
+
+Each of these functions converts the input string `nptr` to a `uintmax_t` integer value.  
   
  `strtoumax` stops reading the string `nptr` at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to `base`. The `LC_NUMERIC` category setting of the locale determines the recognition of the radix character in `nptr`. For more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strtoumax` and `wcstoumax` use the current locale; `_strtoumax_l` and `_wcstoumax_l` are identical except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -102,10 +106,12 @@ uintmax_t _wcstoumax_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
+
+See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

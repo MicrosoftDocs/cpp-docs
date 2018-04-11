@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorFuncW
+
 Designates a function as the handler for the reporting of run-time error checks (RTCs).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Designates a function as the handler for the reporting of run-time error checks 
 );  
 ```  
   
-#### Parameters  
- `function`  
+### Parameters  
+
+`function`  
  The address of the function that will handle run-time error checks.  
   
 ## Return Value  
- The previously defined error function; or `NULL` if there is no previously defined function.  
+
+The previously defined error function; or `NULL` if there is no previously defined function.  
   
 ## Remarks  
- In new code, use only `_RTC_SetErrorFuncW`. `_RTC_SetErrorFunc` is only included in the library for backward compatibility.  
+
+In new code, use only `_RTC_SetErrorFuncW`. `_RTC_SetErrorFunc` is only included in the library for backward compatibility.  
   
  The `_RTC_SetErrorFuncW` callback applies only to the component that it was linked in, but not globally.  
   
@@ -82,8 +86,10 @@ Designates a function as the handler for the reporting of run-time error checks 
  For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)   
+
+[_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)   
  [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

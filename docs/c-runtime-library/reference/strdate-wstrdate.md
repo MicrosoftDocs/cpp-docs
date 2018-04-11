@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strdate, _wstrdate
+
 Copy current system date to a buffer. More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md).  
   
 ## Syntax  
@@ -42,15 +43,18 @@ wchar_t *_wstrdate(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `datestr`  
+### Parameters  
+
+`datestr`  
  A pointer to a buffer containing the formatted date string.  
   
 ## Return Value  
- Each of these functions returns a pointer to the resulting character string `datestr`.  
+
+Each of these functions returns a pointer to the resulting character string `datestr`.  
   
 ## Remarks  
- More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.  
+
+More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.  
   
  The `_strdate` function copies the current system date to the buffer pointed to by `datestr`, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 bytes long.  
   
@@ -102,7 +106,8 @@ OS date: 04/25/03
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

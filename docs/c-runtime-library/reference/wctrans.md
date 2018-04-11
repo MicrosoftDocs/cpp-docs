@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wctrans
+
 Determines a mapping from one set of character codes to another.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ wctrans_t wctrans(
 );  
 ```  
   
-#### Parameters  
- `property`  
+### Parameters  
+
+`property`  
  A string that specifies one of the valid transformations.  
   
 ## Return Value  
- If the `LC_CTYPE` category of the current locale does not define a mapping whose name matches the property string `property`, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](../../c-runtime-library/reference/towctrans.md).  
+
+If the `LC_CTYPE` category of the current locale does not define a mapping whose name matches the property string `property`, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](../../c-runtime-library/reference/towctrans.md).  
   
 ## Remarks  
- This function determines a mapping from one set of character codes to another.  
+
+This function determines a mapping from one set of character codes to another.  
   
  The following pairs of calls have the same behavior in all locales, but it is possible to define additional mappings even in the "C" locale:  
   
@@ -93,5 +97,6 @@ int main()
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CxxThrowException
+
 Builds the exception record and calls the runtime environment to start processing the exception.  
   
 ## Syntax  
@@ -32,18 +33,22 @@ extern "C" void __stdcall _CxxThrowException(
 );  
 ```  
   
-#### Parameters  
- [in] `pExceptionObject`  
+### Parameters  
+
+[in] `pExceptionObject`  
  The object that generated the exception.  
   
  [in] `pThrowInfo`  
  The information that is required to process the exception.  
   
 ## Remarks  
- This method is included in a compiler-only file that the compiler uses to process exceptions. Do not call the method directly from your code.  
+
+This method is included in a compiler-only file that the compiler uses to process exceptions. Do not call the method directly from your code.  
   
 ## Requirements  
- **Source:** Throw.cpp  
+
+**Source:** Throw.cpp  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)

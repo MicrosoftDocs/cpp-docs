@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # bsearch_s
+
 Performs a binary search of a sorted array. This is version of [bsearch](../../c-runtime-library/reference/bsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -36,8 +37,9 @@ void *bsearch_s(
 );  
 ```  
   
-#### Parameters  
- `key`  
+### Parameters  
+
+`key`  
  Object to search for.  
   
  `base`  
@@ -56,7 +58,8 @@ void *bsearch_s(
  A pointer to an object that can be accessed in the comparison function.  
   
 ## Return Value  
- `bsearch_s` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
+
+`bsearch_s` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
   
  If invalid parameters are passed to the function, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -71,7 +74,8 @@ void *bsearch_s(
 |any|any|`NULL`|an|any|`EINVAL`|  
   
 ## Remarks  
- The `bsearch_s` function performs a binary search of a sorted array of `num` elements, each of `width` bytes in size. The `base` value is a pointer to the base of the array to be searched, and `key` is the value being sought. The `compare` parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:  
+
+The `bsearch_s` function performs a binary search of a sorted array of `num` elements, each of `width` bytes in size. The `base` value is a pointer to the base of the array to be searched, and `key` is the value being sought. The `compare` parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:  
   
 |Value returned by `compare` routine|Description|  
 |-----------------------------------------|-----------------|  
@@ -90,7 +94,8 @@ void *bsearch_s(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This program sorts a string array with [qsort_s](../../c-runtime-library/reference/qsort-s.md), and then uses bsearch_s to find the word "cat".  
+
+This program sorts a string array with [qsort_s](../../c-runtime-library/reference/qsort-s.md), and then uses bsearch_s to find the word "cat".  
   
 ```  
 // crt_bsearch_s.cpp  
@@ -175,7 +180,8 @@ cat found at 002F0F04
 ```  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [_lfind](../../c-runtime-library/reference/lfind.md)   
  [_lsearch](../../c-runtime-library/reference/lsearch.md)   
  [qsort](../../c-runtime-library/reference/qsort.md)

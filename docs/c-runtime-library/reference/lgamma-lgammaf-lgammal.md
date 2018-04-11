@@ -49,7 +49,7 @@ long double lgammal(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The value to compute.

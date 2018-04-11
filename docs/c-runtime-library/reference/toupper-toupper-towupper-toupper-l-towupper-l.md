@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # toupper, _toupper, towupper, _toupper_l, _towupper_l
+
 Convert character to uppercase.  
   
 ## Syntax  
@@ -45,15 +46,17 @@ int _towupper_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to convert.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines converts a copy of `c`, if possible, and returns the result.  
+
+Each of these routines converts a copy of `c`, if possible, and returns the result.  
   
  If `c` is a wide character for which `iswlower` is nonzero and there is a corresponding wide character for which `iswupper` is nonzero, `towupper` returns the corresponding wide character; otherwise, `towupper` returns `c` unchanged.  
   
@@ -62,7 +65,8 @@ int _towupper_l(
  In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [islower](../../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.  
   
 ## Remarks  
- Each of these routines converts a given lowercase letter to an uppercase letter if possible and appropriate. The case conversion of `towupper` is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+Each of these routines converts a given lowercase letter to an uppercase letter if possible and appropriate. The case conversion of `towupper` is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [isupper](../../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.  
   
@@ -89,10 +93,12 @@ int _towupper_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example in [to Functions](../../c-runtime-library/to-functions.md).  
+
+See the example in [to Functions](../../c-runtime-library/to-functions.md).  
   
 ## See Also  
- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
+
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
  [to Functions](../../c-runtime-library/to-functions.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)

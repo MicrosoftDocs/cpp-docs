@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
+
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.  
   
 ## Syntax  
@@ -54,8 +55,9 @@ int _vswprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for output.  
   
  `sizeInBytes`  
@@ -74,10 +76,12 @@ int _vswprintf_p_l(
  The locale to use.  
   
 ## Return Value  
- `_vsprintf_p` and `_vswprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.  
+
+`_vsprintf_p` and `_vswprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by `buffer`.  
+
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by `buffer`.  
   
  These functions differ from the `vsprintf_s` and `vswprintf_s` only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
@@ -153,7 +157,8 @@ This is a string
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
+
 Returns the number of characters or bytes within a specified count.  
   
 > [!IMPORTANT]
@@ -58,8 +59,9 @@ size_t _mbsnccnt_l(
   
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be examined.  
   
  `count`  
@@ -69,12 +71,14 @@ size_t _mbsnccnt_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsnbcnt` and `_mbsnbcnt_l` return the number of bytes found in the first `count` of multibyte characters of `str`. `_mbsnccnt` and `_mbsnccnt_l` return the number of characters found in the first `count` of bytes of `str`. If a NULL character is encountered before the examination of `str` has completed, they return the number of bytes or characters found before the NULL character. If `str` consists of fewer than `count` characters or bytes, they return the number of characters or bytes in the string. If `count` is less than zero, they return 0. In previous versions, these functions had a return value of type `int` rather than `size_t`.  
+
+`_mbsnbcnt` and `_mbsnbcnt_l` return the number of bytes found in the first `count` of multibyte characters of `str`. `_mbsnccnt` and `_mbsnccnt_l` return the number of characters found in the first `count` of bytes of `str`. If a NULL character is encountered before the examination of `str` has completed, they return the number of bytes or characters found before the NULL character. If `str` consists of fewer than `count` characters or bytes, they return the number of characters or bytes in the string. If `count` is less than zero, they return 0. In previous versions, these functions had a return value of type `int` rather than `size_t`.  
   
  `_strncnt` returns the number of characters in the first `count` bytes of the single-byte string `str`. `_wcsncnt` returns the number of characters in the first `count` wide characters of the wide-character string `str`.  
   
 ## Remarks  
- `_mbsnbcnt` and `_mbsnbcnt_l` count the number of bytes found in the first `count` of multibyte characters of `str`. `_mbsnbcnt` and `_mbsnbcnt_l` replace `mtob` and should be used in place of `mtob`.  
+
+`_mbsnbcnt` and `_mbsnbcnt_l` count the number of bytes found in the first `count` of multibyte characters of `str`. `_mbsnbcnt` and `_mbsnbcnt_l` replace `mtob` and should be used in place of `mtob`.  
   
  `_mbsnccnt` and `_mbsnccnt_l` count the number of characters found in the first `count` of bytes of `str`. If `_mbsnccnt` and `_mbsnccnt_l` encounter a NULL in the second byte of a double-byte character, the first byte is also considered to be NULL and is not included in the returned count value. `_mbsnccnt` and `_mbsnccnt_l` replace `btom` and should be used in place of `btom`.  
   
@@ -133,7 +137,8 @@ The first 10 characters are single-byte.
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)

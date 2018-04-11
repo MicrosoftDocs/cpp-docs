@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
+
 Converts a string to uppercase. More secure versions of these functions are available; see [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](../../c-runtime-library/reference/strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md).  
   
 > [!IMPORTANT]
@@ -79,18 +80,21 @@ unsigned char *_mbsupr_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to capitalize.  
   
  `locale`  
  The locale to use.  
   
 ## Return Value  
- Returns a pointer to the altered string. Because the modification is done in place, the pointer returned is the same as the pointer passed as the input argument. No return value is reserved to indicate an error.  
+
+Returns a pointer to the altered string. Because the modification is done in place, the pointer returned is the same as the pointer passed as the input argument. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_strupr` function converts, in place, each lowercase letter in `str` to uppercase. The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `_strupr` function converts, in place, each lowercase letter in `str` to uppercase. The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  `_wcsupr` and `_mbsupr` are wide-character and multibyte-character versions of `_strupr`. The argument and return value of `_wcsupr` are wide-character strings; those of `_mbsupr` are multibyte-character strings. These three functions behave identically otherwise.  
   
@@ -116,9 +120,11 @@ unsigned char *_mbsupr_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [_strlwr](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md).  
+
+See the example for [_strlwr](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)

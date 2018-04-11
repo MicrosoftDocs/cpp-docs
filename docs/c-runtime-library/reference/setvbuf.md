@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # setvbuf
+
 Controls stream buffering and buffer size.  
   
 ## Syntax  
@@ -34,8 +35,9 @@ int setvbuf(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `buffer`  
@@ -48,14 +50,16 @@ int setvbuf(
  Buffer size in bytes. Allowable range: 2 <= `size` <= INT_MAX (2147483647). Internally, the value supplied for `size` is rounded down to the nearest multiple of 2.  
   
 ## Return Value  
- Returns 0 if successful.  
+
+Returns 0 if successful.  
   
  If `stream` is `NULL`, or if `mode` or `size` is not within a valid change, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
   
  For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `setvbuf` function allows the program to control both buffering and buffer size for `stream`. `stream` must refer to an open file that has not undergone an I/O operation since it was opened. The array pointed to by `buffer` is used as the buffer, unless it is `NULL`, in which case `setvbuf` uses an automatically allocated buffer of length `size`/2 * 2 bytes.  
+
+The `setvbuf` function allows the program to control both buffering and buffer size for `stream`. `stream` must refer to an open file that has not undergone an I/O operation since it was opened. The array pointed to by `buffer` is used as the buffer, unless it is `NULL`, in which case `setvbuf` uses an automatically allocated buffer of length `size`/2 * 2 bytes.  
   
  The mode must be `_IOFBF`, `_IOLBF`, or `_IONBF`. If `mode` is `_IOFBF` or `_IOLBF`, then `size` is used as the size of the buffer. If `mode` is `_IONBF`, the stream is unbuffered and `size` and `buffer` are ignored. Values for `mode` and their meanings are:  
   
@@ -77,7 +81,8 @@ int setvbuf(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -117,7 +122,8 @@ int main( void )
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [fflush](../../c-runtime-library/reference/fflush.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

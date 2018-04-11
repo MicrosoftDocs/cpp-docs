@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # c16rtomb, c32rtomb
+
 Convert a UTF-16 or UTF-32 wide character into a multibyte character in the current locale.  
   
 ## Syntax  
@@ -38,8 +39,9 @@ size_t c32rtomb(
 );  
 ```  
   
-#### Parameters  
- [out] `mbchar`  
+### Parameters  
+
+[out] `mbchar`  
  Pointer to an array to store the multibyte converted character.  
   
  [in] `wchar`  
@@ -49,10 +51,12 @@ size_t c32rtomb(
  A pointer to an `mbstate_t` object.  
   
 ## Return Value  
- The number of bytes stored in array object `mbchar`, including any shift sequences. If `wchar` is not a valid wide character, the value (`size_t`)(-1) is returned, `errno` is set to `EILSEQ`, and the value of `state` is unspecified.  
+
+The number of bytes stored in array object `mbchar`, including any shift sequences. If `wchar` is not a valid wide character, the value (`size_t`)(-1) is returned, `errno` is set to `EILSEQ`, and the value of `state` is unspecified.  
   
 ## Remarks  
- The `c16rtomb` function converts the UTF-16 character `wchar` to the equivalent multibyte narrow character sequence in the current locale. If `mbchar` is not a null pointer, the function stores the converted sequence in the array object pointed to by `mbchar`. Up to `MB_CUR_MAX` bytes are stored in `mbchar`, and `state` is set to the resulting multibyte shift state.    If `wchar` is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character, and `state` is set to the initial conversion state. The `c32rtomb` function is identical, but converts a UTF-32 character.  
+
+The `c16rtomb` function converts the UTF-16 character `wchar` to the equivalent multibyte narrow character sequence in the current locale. If `mbchar` is not a null pointer, the function stores the converted sequence in the array object pointed to by `mbchar`. Up to `MB_CUR_MAX` bytes are stored in `mbchar`, and `state` is set to the resulting multibyte shift state.    If `wchar` is a null wide character, a sequence required to restore the initial shift state is stored, if needed, followed by the null character, and `state` is set to the initial conversion state. The `c32rtomb` function is identical, but converts a UTF-32 character.  
   
  If `mbchar` is a null pointer, the behavior is equivalent to a call to the function that substitutes an internal buffer for `mbchar` and a wide null character for `wchar`.  
   
@@ -67,7 +71,8 @@ size_t c32rtomb(
  For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [mbrtoc16, mbrtoc32](../../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _RTC_SetErrorType
+
 Associates an error that is detected by run-time error checks (RTCs) with a type. Your error handler processes how to output errors of the specified type.  
   
 ## Syntax  
@@ -33,8 +34,9 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
 );  
 ```  
   
-#### Parameters  
- *errnum*  
+### Parameters  
+
+*errnum*  
  A number between zero and one less than the value returned by [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md).  
   
  *ErrType*  
@@ -43,10 +45,12 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
  An *ErrType* of _RTC_ERRTYPE_IGNORE has special meaning to `_CrtSetReportMode`; the error is ignored.  
   
 ## Return Value  
- The previous value for the error type `type`.  
+
+The previous value for the error type `type`.  
   
 ## Remarks  
- By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
+
+By default, all errors are set to *ErrType* = 1, which corresponds to **_CRT_ERROR**. For more information about the default error types such as **_CRT_ERROR**, see [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).  
   
  Before you can call this function, you must first call one of the run-time error check initialization functions; see [Using Run-Time Checks without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)  
   
@@ -59,8 +63,10 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
  For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)   
+
+[_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)   
  [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

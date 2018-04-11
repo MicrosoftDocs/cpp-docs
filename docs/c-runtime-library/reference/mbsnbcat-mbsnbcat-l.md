@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcat, _mbsnbcat_l
+
 Appends, at most, the first `n` bytes of one multibyte-character string to another. More secure versions of these functions are available; see [_mbsnbcat_s, _mbsnbcat_s_l](../../c-runtime-library/reference/mbsnbcat-s-mbsnbcat-s-l.md).  
   
 > [!IMPORTANT]
@@ -55,8 +56,9 @@ unsigned char *_mbsnbcat_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  Null-terminated multibyte-character destination string.  
   
  `src`  
@@ -69,10 +71,12 @@ unsigned char *_mbsnbcat_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsnbcat` returns a pointer to the destination string. No return value is reserved to indicate an error.  
+
+`_mbsnbcat` returns a pointer to the destination string. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_mbsnbcat` function appends, at most, the first `count` bytes of `src` to `dest`. If the byte immediately preceding the null character in `dest` is a lead byte, the initial byte of `src` overwrites this lead byte. Otherwise, the initial byte of `src` overwrites the terminating null character of `dest`. If a null byte appears in `src` before `count` bytes are appended, `_mbsnbcat` appends all bytes from `src`, up to the null character. If `count` is greater than the length of `src`, the length of `src` is used in place of `count`. The resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.  
+
+The `_mbsnbcat` function appends, at most, the first `count` bytes of `src` to `dest`. If the byte immediately preceding the null character in `dest` is a lead byte, the initial byte of `src` overwrites this lead byte. Otherwise, the initial byte of `src` overwrites the terminating null character of `dest`. If a null byte appears in `src` before `count` bytes are appended, `_mbsnbcat` appends all bytes from `src`, up to the null character. If `count` is greater than the length of `src`, the length of `src` is used in place of `count`. The resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The `_mbsnbcat` version of the function uses the current locale for this locale-dependent behavior; the `_mbsnbcat_l` version is identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -99,7 +103,8 @@ unsigned char *_mbsnbcat_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
  [_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l](../../c-runtime-library/reference/strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)   
  [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md)   

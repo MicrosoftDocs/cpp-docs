@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fgetc_nolock, _fgetwc_nolock
+
 Reads a character from a stream without locking the thread.  
   
 ## Syntax  
@@ -34,15 +35,18 @@ wint_t _fgetwc_nolock(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- See[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md).  
+
+See[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md).  
   
 ## Remarks  
- `_fgetc_nolock` and `_fgetwc_nolock` are identical to `fgetc` and `fgetwc`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+`_fgetc_nolock` and `_fgetwc_nolock` are identical to `fgetc` and `fgetwc`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -110,6 +114,7 @@ Line two.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)

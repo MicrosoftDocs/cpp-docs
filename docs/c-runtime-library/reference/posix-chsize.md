@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # chsize
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_chsize](../../c-runtime-library/reference/chsize.md) or security-enhanced [_chsize_s](../../c-runtime-library/reference/chsize-s.md) instead.

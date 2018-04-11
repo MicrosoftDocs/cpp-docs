@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getcwd, _wgetcwd
+
 Gets the current working directory.  
   
 ## Syntax  
@@ -36,20 +37,23 @@ wchar_t *_wgetcwd(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for the path.  
   
  `maxlen`  
  Maximum length of the path in characters: `char` for `_getcwd` and `wchar_t` for `_wgetcwd`.  
   
 ## Return Value  
- Returns a pointer to `buffer`. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate `maxlen` bytes (when a `NULL` argument is given as `buffer`), or to `ERANGE`, indicating that the path is longer than `maxlen` characters. If `maxlen` is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
+
+Returns a pointer to `buffer`. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate `maxlen` bytes (when a `NULL` argument is given as `buffer`), or to `ERANGE`, indicating that the path is longer than `maxlen` characters. If `maxlen` is less than or equal to zero, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_getcwd` function gets the full path of the current working directory for the default drive and stores it at `buffer`. The integer argument `maxlen` specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds `maxlen`. The `buffer` argument can be `NULL`; a buffer of at least size `maxlen` (more only if necessary) is automatically allocated, using `malloc`, to store the path. This buffer can later be freed by calling `free` and passing it the `_getcwd` return value (a pointer to the allocated buffer).  
+
+The `_getcwd` function gets the full path of the current working directory for the default drive and stores it at `buffer`. The integer argument `maxlen` specifies the maximum length for the path. An error occurs if the length of the path (including the terminating null character) exceeds `maxlen`. The `buffer` argument can be `NULL`; a buffer of at least size `maxlen` (more only if necessary) is automatically allocated, using `malloc`, to store the path. This buffer can later be freed by calling `free` and passing it the `_getcwd` return value (a pointer to the allocated buffer).  
   
  `_getcwd` returns a string that represents the path of the current working directory. If the current working directory is the root, the string ends with a backslash ( `\` ). If the current working directory is a directory other than the root, the string ends with the directory name and not with a backslash.  
   
@@ -106,7 +110,8 @@ C:\Code
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   
  [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)   
  [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)

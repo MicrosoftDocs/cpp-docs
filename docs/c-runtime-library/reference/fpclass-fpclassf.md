@@ -36,7 +36,7 @@ int _fpclassf(
 ); /* x64 only */
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to test.

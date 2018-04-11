@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # va_arg, va_copy, va_end, va_start
+
 Accesses variable-argument lists.  
   
 ## Syntax  
@@ -46,8 +47,9 @@ void va_start(
 );  // (deprecated Pre-ANSI C89 standardization version)  
 ```  
   
-#### Parameters  
- `type`  
+### Parameters  
+
+`type`  
  Type of argument to be retrieved.  
   
  `arg_ptr`  
@@ -63,10 +65,12 @@ void va_start(
  Parameter that precedes the first optional argument.  
   
 ## Return Value  
- `va_arg` returns the current argument. `va_copy`, `va_start` and `va_end` do not return values.  
+
+`va_arg` returns the current argument. `va_copy`, `va_start` and `va_end` do not return values.  
   
 ## Remarks  
- The `va_arg`, `va_copy`, `va_end`, and `va_start` macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in STDARG.H conform to the ISO C99 standard; the macros defined in VARARGS.H are deprecated but are retained for backward compatibility with code that was written before the ANSI C89 standard.  
+
+The `va_arg`, `va_copy`, `va_end`, and `va_start` macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in STDARG.H conform to the ISO C99 standard; the macros defined in VARARGS.H are deprecated but are retained for backward compatibility with code that was written before the ANSI C89 standard.  
   
  These macros assume that the function takes a fixed number of required arguments, followed by a variable number of optional arguments. The required arguments are declared as ordinary parameters to the function and can be accessed through the parameter names. The optional arguments are accessed through the macros in STDARG.H (or VARARGS.H for code that was written before the ANSI C89 standard), which sets a pointer to the first optional argument in the argument list, retrieves arguments from the list, and resets the pointer when argument processing is completed.  
   
@@ -124,12 +128,14 @@ int main()
 ```  
   
 ## Requirements  
- **Header:** \<stdio.h> and \<stdarg.h>  
+
+**Header:** \<stdio.h> and \<stdarg.h>  
   
  **Deprecated Header:** \<varargs.h>  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -202,5 +208,6 @@ Deviation is: 0.000000
 ```  
   
 ## See Also  
- [Argument Access](../../c-runtime-library/argument-access.md)   
+
+[Argument Access](../../c-runtime-library/argument-access.md)   
  [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](../../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)

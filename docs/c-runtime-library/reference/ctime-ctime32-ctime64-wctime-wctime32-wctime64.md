@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
+
 Convert a time value to a string and adjust for local time zone settings. More secure versions of these functions are available; see [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).  
   
 ## Syntax  
@@ -46,12 +47,14 @@ wchar_t *_wctime64(
 );  
 ```  
   
-#### Parameters  
- `timer`  
+### Parameters  
+
+`timer`  
  Pointer to stored time.  
   
 ## Return Value  
- A pointer to the character string result. `NULL` will be returned if:  
+
+A pointer to the character string result. `NULL` will be returned if:  
   
 -   `time` represents a date before midnight, January 1, 1970, UTC.  
   
@@ -62,7 +65,8 @@ wchar_t *_wctime64(
  `ctime` is an inline function which evaluates to `_ctime64` and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. Doing this will cause `ctime` to evaluate to `_ctime32`. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.  
   
 ## Remarks  
- The `ctime` function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The `timer` value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:  
+
+The `ctime` function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The `timer` value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:  
   
 ```  
 Wed Jan 02 02:03:55 1980\n\0  
@@ -127,7 +131,8 @@ The time is Wed Feb 13 16:04:43 2002
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

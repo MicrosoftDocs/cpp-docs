@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtDoForAllClientObjects
+
 Calls an application-supplied function for all `_CLIENT_BLOCK` types in the heap (debug version only).  
   
 ## Syntax  
@@ -32,15 +33,17 @@ void _CrtDoForAllClientObjects(
 );  
 ```  
   
-#### Parameters  
- `pfn`  
+### Parameters  
+
+`pfn`  
  Pointer to the application-supplied function callback function. The first parameter to this function points to the data. The second parameter is the context pointer that is passed to the call to `_CrtDoForAllClientObjects`.  
   
  `context`  
  Pointer to the application-supplied context to pass to the application-supplied function.  
   
 ## Remarks  
- The `_CrtDoForAllClientObjects` function searches the heap's linked list for memory blocks with the `_CLIENT_BLOCK` type and calls the application-supplied function when a block of this type is found. The found block and the `context` parameter are passed as arguments to the application-supplied function. During debugging, an application can track a specific group of allocations by explicitly calling the debug heap functions to allocate the memory and specifying that the blocks be assigned the `_CLIENT_BLOCK` block type. These blocks can then be tracked separately and reported on differently during leak detection and memory state reporting.  
+
+The `_CrtDoForAllClientObjects` function searches the heap's linked list for memory blocks with the `_CLIENT_BLOCK` type and calls the application-supplied function when a block of this type is found. The found block and the `context` parameter are passed as arguments to the application-supplied function. During debugging, an application can track a specific group of allocations by explicitly calling the debug heap functions to allocate the memory and specifying that the blocks be assigned the `_CLIENT_BLOCK` block type. These blocks can then be tracked separately and reported on differently during leak detection and memory state reporting.  
   
  If the `_CRTDBG_ALLOC_MEM_DF` bit field of the [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) flag is not turned on, `_CrtDoForAllClientObjects` immediately returns. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtDoForAllClientObjects` are removed during preprocessing.  
   
@@ -59,7 +62,8 @@ void _CrtDoForAllClientObjects(
  **Libraries:** Debug versions of  universal C run-time libraries only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)   
  [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details)   
  [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)

@@ -45,7 +45,7 @@ bool isnan(
 ) throw(); /* C++ only */
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to test.

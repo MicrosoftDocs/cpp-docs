@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
+
 Prints formatted output to the standard output stream. These versions of [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _wprintf_s_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control.  
   
  `argument`  
@@ -57,10 +59,12 @@ int _wprintf_s_l(
  The locale to use.  
   
 ## Return Value  
- Returns the number of characters printed, or a negative value if an error occurs.  
+
+Returns the number of characters printed, or a negative value if an error occurs.  
   
 ## Remarks  
- The `printf_s` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the `format` string must contain specifications that determine the output format for the arguments.  
+
+The `printf_s` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the `format` string must contain specifications that determine the output format for the arguments.  
   
  The main difference between `printf_s` and `printf` is that `printf_s` checks the format string for valid formatting characters, whereas `printf` only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.  
   
@@ -185,7 +189,8 @@ Address as:   0012FF78
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

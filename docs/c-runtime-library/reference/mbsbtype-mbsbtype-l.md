@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsbtype, _mbsbtype_l
+
 Returns the type of byte within a string.  
   
 > [!IMPORTANT]
@@ -40,8 +41,9 @@ int _mbsbtype_l(
 );  
 ```  
   
-#### Parameters  
- `mbstr`  
+### Parameters  
+
+`mbstr`  
  Address of a sequence of multibyte characters.  
   
  `count`  
@@ -51,7 +53,8 @@ int _mbsbtype_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsbtype` and `_mbsbtype_l` returns an integer value indicating the result of the test on the specified byte. The manifest constants in the following table are defined in Mbctype.h.  
+
+`_mbsbtype` and `_mbsbtype_l` returns an integer value indicating the result of the test on the specified byte. The manifest constants in the following table are defined in Mbctype.h.  
   
 |Return value|Byte type|  
 |------------------|---------------|  
@@ -61,7 +64,8 @@ int _mbsbtype_l(
 |`_MBC_ILLEGAL` (-1)|`NULL` string, invalid character, or `NULL` byte found before the byte at offset `count` in `mbstr`.|  
   
 ## Remarks  
- The `_mbsbtype` function determines the type of a byte in a multibyte character string. The function examines only the byte at offset `count` in `mbstr`, ignoring invalid characters before the specified byte.  
+
+The `_mbsbtype` function determines the type of a byte in a multibyte character string. The function examines only the byte at offset `count` in `mbstr`, ignoring invalid characters before the specified byte.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The version of this function without the `_l` suffix uses the current locale for this locale-dependent behavior; the version with the `_l` suffix is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -79,4 +83,5 @@ int _mbsbtype_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)

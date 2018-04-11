@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _rmdir, _wrmdir
+
 Deletes a directory.  
   
 ## Syntax  
@@ -35,12 +36,14 @@ int _wrmdir(
 );  
 ```  
   
-#### Parameters  
- `dirname`  
+### Parameters  
+
+`dirname`  
  Path of the directory to be removed.  
   
 ## Return Value  
- Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and `errno` is set to one of the following values:  
+
+Each of these functions returns 0 if the directory is successfully deleted. A return value of -1 indicates an error and `errno` is set to one of the following values:  
   
  **ENOTEMPTY**  
  Given path is not a directory, the directory is not empty, or the directory is either the current working directory or the root directory.  
@@ -54,7 +57,8 @@ int _wrmdir(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_rmdir` function deletes the directory specified by `dirname`. The directory must be empty, and it must not be the current working directory or the root directory.  
+
+The `_rmdir` function deletes the directory specified by `dirname`. The directory must be empty, and it must not be the current working directory or the root directory.  
   
  `_wrmdir` is a wide-character version of `_rmdir`; the `dirname` argument to `_wrmdir` is a wide-character string. `_wrmdir` and `_rmdir` behave identically otherwise.  
   
@@ -74,12 +78,15 @@ int _wrmdir(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
- See the example for [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md).  
+
+See the example for [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md).  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   
  [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)

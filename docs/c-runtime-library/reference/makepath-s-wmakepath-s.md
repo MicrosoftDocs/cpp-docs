@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _makepath_s, _wmakepath_s
+
 Creates a path name from components. These are versions of [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -60,8 +61,9 @@ errno_t _wmakepath_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `path`  
+### Parameters  
+
+[out] `path`  
  Full path buffer.  
   
  [in] `sizeInWords`  
@@ -83,7 +85,8 @@ errno_t _wmakepath_s(
  Contains the actual file name extension, with or without a leading period (.). `_makepath_s` inserts the period automatically if it does not appear in `ext`. If `ext` is `NULL` or points to an empty string, no extension is inserted in the composite `path` string.  
   
 ## Return Value  
- Zero if successful; an error code on failure.  
+
+Zero if successful; an error code on failure.  
   
 ### Error Conditions  
   
@@ -95,7 +98,8 @@ errno_t _wmakepath_s(
  If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`. `NULL` is allowed for the parameters `drive`, `fname`, and `ext`. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.  
   
 ## Remarks  
- The `_makepath_s` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, file name, and file name extension. `_wmakepath_s` is a wide-character version of `_makepath_s`; the arguments to `_wmakepath_s` are wide-character strings. `_wmakepath_s` and `_makepath_s` behave identically otherwise.  
+
+The `_makepath_s` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, file name, and file name extension. `_wmakepath_s` is a wide-character version of `_makepath_s`; the arguments to `_wmakepath_s` are wide-character strings. `_wmakepath_s` and `_makepath_s` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -173,7 +177,8 @@ Path extracted with _splitpath_s:
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)   
  [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)

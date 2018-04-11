@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _searchenv_s, _wsearchenv_s
+
 Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -55,8 +56,9 @@ errno_t _wsearchenv_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [in] `filename`  
+### Parameters  
+
+[in] `filename`  
  Name of the file to search for.  
   
  [in] `varname`  
@@ -69,7 +71,8 @@ errno_t _wsearchenv_s(
  Size of the `pathname` buffer.  
   
 ## Return Value  
- Zero if successful; an error code on failure.  
+
+Zero if successful; an error code on failure.  
   
  If `filename` is an empty string, the return value is `ENOENT`.  
   
@@ -84,7 +87,8 @@ errno_t _wsearchenv_s(
  If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.  
   
 ## Remarks  
- The `_searchenv_s` routine searches for the target file in the specified domain. The `varname` variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because `_searchenv_s` is case-sensitive, `varname` should match the case of the environment variable. If `varname` does not match the name of an environment variable defined in the process's environment, the function returns zero and the `pathname` variable is unchanged.  
+
+The `_searchenv_s` routine searches for the target file in the specified domain. The `varname` variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because `_searchenv_s` is case-sensitive, `varname` should match the case of the environment variable. If `varname` does not match the name of an environment variable defined in the process's environment, the function returns zero and the `pathname` variable is unchanged.  
   
  The routine searches first for the file in the current working directory. If it does not find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into `pathname`. If the `filename` file is not found, `pathname` contains an empty null-terminated string.  
   
@@ -146,7 +150,8 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)   
  [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)

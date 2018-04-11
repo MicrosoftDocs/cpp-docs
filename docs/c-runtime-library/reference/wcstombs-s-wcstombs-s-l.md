@@ -62,7 +62,7 @@ errno_t _wcstombs_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
+### Parameters  
 
 [out] *pReturnValue*  
 The number of characters converted.  

@@ -59,7 +59,7 @@ long double fmal(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The first value to multiply.

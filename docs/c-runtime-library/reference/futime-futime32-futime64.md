@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _futime, _futime32, _futime64
+
 Sets the modification time on an open file.  
   
 ## Syntax  
@@ -40,18 +41,21 @@ int _futime64(
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor to the open file.  
   
  `filetime`  
  Pointer to the structure containing the new modification date.  
   
 ## Return Value  
- Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`, indicating an invalid file descriptor, or `EINVAL`, indicating an invalid parameter.  
+
+Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`, indicating an invalid file descriptor, or `EINVAL`, indicating an invalid parameter.  
   
 ## Remarks  
- The `_futime` routine sets the modification date and the access time on the open file associated with `fd`. `_futime` is identical to [_utime](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md), except that its argument is the file descriptor of an open file, rather than the name of a file or a path to a file. The `_utimbuf` structure contains fields for the new modification date and access time. Both fields must contain valid values. `_utimbuf32` and `_utimbuf64` are identical to `_utimbuf` except for the use of the 32-bit and 64-bit time types, respectively. `_futime` and `_utimbuf` use a 64-bit time type and `_futime` is identical in behavior to `_futime64`. If you need to force the old behavior, define `_USE_32BIT_TIME_T`. Doing this causes `_futime` to be identical in behavior to `_futime32` and causes the `_utimbuf` structure to use the 32-bit time type, making it equivalent to `__utimbuf32`.  
+
+The `_futime` routine sets the modification date and the access time on the open file associated with `fd`. `_futime` is identical to [_utime](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md), except that its argument is the file descriptor of an open file, rather than the name of a file or a path to a file. The `_utimbuf` structure contains fields for the new modification date and access time. Both fields must contain valid values. `_utimbuf32` and `_utimbuf64` are identical to `_utimbuf` except for the use of the 32-bit and 64-bit time types, respectively. `_futime` and `_utimbuf` use a 64-bit time type and `_futime` is identical in behavior to `_futime64`. If you need to force the old behavior, define `_USE_32BIT_TIME_T`. Doing this causes `_futime` to be identical in behavior to `_futime32` and causes the `_utimbuf` structure to use the 32-bit time type, making it equivalent to `__utimbuf32`.  
   
  `_futime64`, which uses the `__utimbuf64` structure, can read and modify file dates through 23:59:59, December 31, 3000, UTC; whereas a call to `_futime32` fails if the date on the file is later than 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for these functions.  
   
@@ -130,4 +134,5 @@ File time modified
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)
+
+[Time Management](../../c-runtime-library/time-management.md)

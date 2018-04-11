@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_wpgmptr
+
 Gets the current value of the `_wpgmptr` global variable.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ errno_t _get_wpgmptr( 
 );  
 ```  
   
-#### Parameters  
- [out] `pValue`  
+### Parameters  
+
+[out] `pValue`  
  A pointer to a string to be filled with the current value of the `_wpgmptr` variable.  
   
 ## Return Value  
- Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
+
+Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
   
 ## Remarks  
- Only call `_get_wpgmptr` if your program has a wide entry point, like `wmain()` or `wWinMain()`. The `_wpgmptr` global variable contains the full path to the executable associated with the process as a wide-character string. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).  
+
+Only call `_get_wpgmptr` if your program has a wide entry point, like `wmain()` or `wWinMain()`. The `_wpgmptr` global variable contains the full path to the executable associated with the process as a wide-character string. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).  
   
 ## Requirements  
   
@@ -50,4 +54,5 @@ errno_t _get_wpgmptr( 
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [_get_pgmptr](../../c-runtime-library/reference/get-pgmptr.md)
+
+[_get_pgmptr](../../c-runtime-library/reference/get-pgmptr.md)

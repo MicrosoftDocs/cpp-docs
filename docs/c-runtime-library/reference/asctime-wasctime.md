@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # asctime, _wasctime
+
 Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).  
   
 ## Syntax  
@@ -34,15 +35,18 @@ wchar_t *_wasctime(
 );  
 ```  
   
-#### Parameters  
- `timeptr`  
+### Parameters  
+
+`timeptr`  
  Time/date structure.  
   
 ## Return Value  
- `asctime` returns a pointer to the character string result; `_wasctime` returns a pointer to the wide-character string result. There is no error return value.  
+
+`asctime` returns a pointer to the character string result; `_wasctime` returns a pointer to the wide-character string result. There is no error return value.  
   
 ## Remarks  
- More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).  
+
+More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).  
   
  The `asctime` function converts a time stored as a structure to a character string. The `timeptr` value is usually obtained from a call to `gmtime` or `localtime`, which both return a pointer to a `tm` structure, defined in TIME.H.  
   
@@ -80,7 +84,8 @@ wchar_t *_wasctime(
 |`_wasctime`|\<time.h> or \<wchar.h>|  
   
 ## Example  
- This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the `asctime` function.  
+
+This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the `asctime` function.  
   
 ```  
 // crt_asctime.c  
@@ -111,7 +116,8 @@ Current date and time: Sun Feb 03 11:38:58 2002
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

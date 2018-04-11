@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
+
 Initializes characters of a string to a given character. These versions of [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -70,8 +71,9 @@ errno_t _mbsnset_s_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be altered.  
   
  `numberOfElements`  
@@ -87,12 +89,14 @@ errno_t _mbsnset_s_l(
  Locale to use.  
   
 ## Return Value  
- Zero if successful, otherwise an error code.  
+
+Zero if successful, otherwise an error code.  
   
  These functions validate their arguments. If `str` is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.  
   
 ## Remarks  
- These functions set, at most, the first `count` characters of `str` to `c`. If `count` is greater than the size of `str`, the size of `str` is used instead of `count`. An error occurs if `count` is greater than `numberOfElements` and both those parameters are greater than the size of `str`.  
+
+These functions set, at most, the first `count` characters of `str` to `c`. If `count` is greater than the size of `str`, the size of `str` is used instead of `count`. An error occurs if `count` is greater than `numberOfElements` and both those parameters are greater than the size of `str`.  
   
  `_wcsnset_s` and `_mbsnset_s` are wide-character and multibyte-character versions of `_strnset_s`. The string argument of `_wcsnset_s` is a wide-character string; that of `_mbsnset_s` is amultibyte-character string. These three functions behave identically otherwise.  
   
@@ -142,7 +146,8 @@ After:  **** is a test
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   

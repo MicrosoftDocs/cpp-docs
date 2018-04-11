@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _calloc_dbg
+
 Allocates a number of memory blocks in the heap with additional space for a debugging header and overwrite buffers (debug version only).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void *_calloc_dbg(
 );  
 ```  
   
-#### Parameters  
- `num`  
+### Parameters  
+
+`num`  
  Requested number of memory blocks.  
   
  `size`  
@@ -56,10 +58,12 @@ void *_calloc_dbg(
  The `filename` and `linenumber` parameters are only available when `_calloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.  
   
 ## Return Value  
- On successful completion, this function returns a pointer to the user portion of the last allocated memory block, calls the new handler function, or returns `NULL`. For a complete description of the return behavior, see the Remarks section. For more information about how the new handler function is used, see the [calloc](../../c-runtime-library/reference/calloc.md) function.  
+
+On successful completion, this function returns a pointer to the user portion of the last allocated memory block, calls the new handler function, or returns `NULL`. For a complete description of the return behavior, see the Remarks section. For more information about how the new handler function is used, see the [calloc](../../c-runtime-library/reference/calloc.md) function.  
   
 ## Remarks  
- `_calloc_dbg` is a debug version of the [calloc](../../c-runtime-library/reference/calloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_calloc_dbg` is reduced to a call to `calloc`. Both `calloc` and `_calloc_dbg` allocate `num` memory blocks in the base heap, but `_calloc_dbg` offers several debugging features:  
+
+`_calloc_dbg` is a debug version of the [calloc](../../c-runtime-library/reference/calloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_calloc_dbg` is reduced to a call to `calloc`. Both `calloc` and `_calloc_dbg` allocate `num` memory blocks in the base heap, but `_calloc_dbg` offers several debugging features:  
   
 -   Buffers on either side of the user portion of the block to test for leaks.  
   
@@ -122,7 +126,8 @@ Allocated memory successfully
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)   
  [_DEBUG](../../c-runtime-library/debug.md)

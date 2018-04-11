@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
+
 **Code Page 932 Specific functions**, using the current locale or a specified LC_CTYPE conversion state category.  
   
 > [!IMPORTANT]
@@ -52,18 +53,21 @@ int _ismbcl2_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If `c` <= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
+
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If `c` <= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
   
 ## Remarks  
- Each of these functions tests a given multibyte character for a given condition.  
+
+Each of these functions tests a given multibyte character for a given condition.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -94,6 +98,7 @@ int _ismbcl2_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

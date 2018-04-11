@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
+
 Gets the function that is called when the CRT detects an invalid argument.  
   
 ## Syntax  
@@ -31,10 +32,12 @@ _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
 ```  
   
 ## Return Value  
- A pointer to the currently set invalid parameter handler function, or a null pointer if none has been set.  
+
+A pointer to the currently set invalid parameter handler function, or a null pointer if none has been set.  
   
 ## Remarks  
- The `_get_invalid_parameter_handler` function gets the currently set global invalid parameter handler. It returns a null pointer if no global invalid parameter handler was set. Similarly, the `_get_thread_local_invalid_parameter_handler` gets the current thread-local invalid parameter handler of the thread it is called on, or a null pointer if no handler was set. For information about how to set global and thread-local invalid parameter handlers, see [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).  
+
+The `_get_invalid_parameter_handler` function gets the currently set global invalid parameter handler. It returns a null pointer if no global invalid parameter handler was set. Similarly, the `_get_thread_local_invalid_parameter_handler` gets the current thread-local invalid parameter handler of the thread it is called on, or a null pointer if no handler was set. For information about how to set global and thread-local invalid parameter handlers, see [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).  
   
  The returned invalid parameter handler function pointer has the following type:  
   
@@ -59,5 +62,6 @@ typedef void (__cdecl* _invalid_parameter_handler)(
  The `_get_invalid_parameter_handler` and `_get_thread_local_invalid_parameter_handler` functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)   
+
+[_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)   
  [Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)

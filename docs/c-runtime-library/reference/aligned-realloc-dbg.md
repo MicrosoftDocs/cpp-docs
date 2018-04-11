@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_realloc_dbg
+
 Changes the size of a memory block that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) (debug version only).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void * _aligned_realloc_dbg(
 );  
 ```  
   
-#### Parameters  
- [in] `memblock`  
+### Parameters  
+
+[in] `memblock`  
  The current memory block pointer.  
   
  [in] `size`  
@@ -52,12 +54,14 @@ void * _aligned_realloc_dbg(
  Line number in the source file where the `realloc` operation was requested or NULL.  
   
 ## Return Value  
- `_aligned_realloc_dbg` returns a void pointer to the reallocated (and possibly moved) memory block. The return value is `NULL` if the size is zero and the buffer argument is not `NULL`, or if there is not enough available memory to expand the block to the given size. In the first case, the original block is freed. In the second, the original block is unchanged. The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than void, use a type cast on the return value.  
+
+`_aligned_realloc_dbg` returns a void pointer to the reallocated (and possibly moved) memory block. The return value is `NULL` if the size is zero and the buffer argument is not `NULL`, or if there is not enough available memory to expand the block to the given size. In the first case, the original block is freed. In the second, the original block is unchanged. The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than void, use a type cast on the return value.  
   
  It is an error to reallocate memory and change the alignment of a block.  
   
 ## Remarks  
- `_aligned_realloc_dbg` is a debug version of the [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_realloc_dbg` is reduced to a call to `_aligned_realloc`. Both `_aligned_realloc` and `_aligned_realloc_dbg` reallocate a memory block in the base heap, but `_aligned_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
+
+`_aligned_realloc_dbg` is a debug version of the [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_realloc_dbg` is reduced to a call to `_aligned_realloc`. Both `_aligned_realloc` and `_aligned_realloc_dbg` reallocate a memory block in the base heap, but `_aligned_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
   
  `_aligned_realloc_dbg` reallocates the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.  
   
@@ -76,7 +80,9 @@ void * _aligned_realloc_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

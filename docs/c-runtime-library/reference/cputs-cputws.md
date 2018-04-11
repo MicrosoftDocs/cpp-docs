@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cputs, _cputws
+
 Puts a string to the console.  
   
 > [!IMPORTANT]
@@ -37,15 +38,18 @@ int _cputws(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Output string.  
   
 ## Return Value  
- If successful, `_cputs` returns 0. If the function fails, it returns a nonzero value.  
+
+If successful, `_cputs` returns 0. If the function fails, it returns a nonzero value.  
   
 ## Remarks  
- The `_cputs` function writes the null-terminated string that's pointed to by `str` directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.  
+
+The `_cputs` function writes the null-terminated string that's pointed to by `str` directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.  
   
  This function validates its parameter. If `str` is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.  
   
@@ -65,7 +69,8 @@ int _cputws(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -125,5 +130,6 @@ Hello world (courtesy of _cputws)!
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_putch, _putwch](../../c-runtime-library/reference/putch-putwch.md)

@@ -57,7 +57,7 @@ long double _copysignl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value that's returned as the magnitude of the result.

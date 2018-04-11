@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_errno
+
 Gets the current value of the errno global variable.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ errno_t _get_errno( 
 );  
 ```  
   
-#### Parameters  
- [out] `pValue`  
+### Parameters  
+
+[out] `pValue`  
  A pointer to an integer to be filled with the current value of the `errno` variable.  
   
 ## Return Value  
- Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
+
+Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
   
 ## Remarks  
- Possible values of `errno` are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
+
+Possible values of `errno` are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
   
 ## Example  
   
@@ -76,5 +80,6 @@ fyi, ENOENT = 2
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [_set_errno](../../c-runtime-library/reference/set-errno.md)   
+
+[_set_errno](../../c-runtime-library/reference/set-errno.md)   
  [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

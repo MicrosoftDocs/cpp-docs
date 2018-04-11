@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _dupenv_s, _wdupenv_s
+
 Gets a value from the current environment.  
   
 > [!IMPORTANT]
@@ -41,8 +42,9 @@ errno_t _wdupenv_s(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Buffer to store the variable's value.  
   
  `numberOfElements`  
@@ -52,14 +54,16 @@ errno_t _wdupenv_s(
  Environment variable name.  
   
 ## Return Value  
- Zero on success, an error code on failure.  
+
+Zero on success, an error code on failure.  
   
  These functions validate their parameters; if `buffer` or `varname` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EINVAL`.  
   
  If these functions cannot allocate enough memory, they set `buffer` to `NULL` and `numberOfElements` to 0, and return `ENOMEM`.  
   
 ## Remarks  
- The `_dupenv_s` function searches the list of environment variables for `varname`. If the variable is found, `_dupenv_s` allocates a buffer and copies the variable's value into the buffer. The buffer's address and length are returned in `buffer` and `numberOfElements`. By allocating the buffer itself, `_dupenv_s` provides a more convenient alternative to [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
+
+The `_dupenv_s` function searches the list of environment variables for `varname`. If the variable is found, `_dupenv_s` allocates a buffer and copies the variable's value into the buffer. The buffer's address and length are returned in `buffer` and `numberOfElements`. By allocating the buffer itself, `_dupenv_s` provides a more convenient alternative to [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
   
 > [!NOTE]
 >  It is the calling program's responsibility to free the memory by calling [free](../../c-runtime-library/reference/free.md).  
@@ -118,7 +122,8 @@ nonexistentvariable = (null)
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [Environmental Constants](../../c-runtime-library/environmental-constants.md)   
  [_dupenv_s_dbg, _wdupenv_s_dbg](../../c-runtime-library/reference/dupenv-s-dbg-wdupenv-s-dbg.md)   
  [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)   

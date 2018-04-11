@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strdup, wcsdup
+
 These POSIX functions are deprecated. Use the ISO C++ conformant [_strdup, _wcsdup, _mbsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md) instead.

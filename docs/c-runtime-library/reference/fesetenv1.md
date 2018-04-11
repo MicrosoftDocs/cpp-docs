@@ -32,7 +32,7 @@ int fesetenv(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *penv*<br/>
  Pointer to a **fenv_t** object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the **FE_DFL_ENV** macro.

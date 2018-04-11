@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # localtime_s, _localtime32_s, _localtime64_s
+
 Converts a time value and corrects for the local time zone. These are versions of [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -40,15 +41,17 @@ errno_t _localtime64_s(
 );  
 ```  
   
-#### Parameters  
- `_tm`  
+### Parameters  
+
+`_tm`  
  Pointer to the time structure to be filled in.  
   
  `time`  
  Pointer to the stored time.  
   
 ## Return Value  
- Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For a listing of these errors, see [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+
+Zero if successful. The return value is an error code if there is a failure. Error codes are defined in Errno.h. For a listing of these errors, see [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ### Error Conditions  
   
@@ -61,7 +64,8 @@ errno_t _localtime64_s(
  In the case of the first two error conditions, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.  
   
 ## Remarks  
- The `_localtime32_s` function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type `tm`. The `long` value `timer` represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the `time` function.  
+
+The `_localtime32_s` function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type `tm`. The `long` value `timer` represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the `time` function.  
   
  `_localtime32_s` corrects for the local time zone if the user first sets the global environment variable `TZ`. When `TZ` is set, three other environment variables (`_timezone`, `_daylight`, and `_tzname`) are automatically set as well. If the `TZ` variable is not set, `localtime32_s` attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific time zone, is used by default. See [_tzset](../../c-runtime-library/reference/tzset.md) for a description of these variables. `TZ` is a Microsoft extension and not part of the ANSI standard definition of `localtime`.  
   
@@ -168,7 +172,8 @@ Fri Apr 25 01:19:27 PM
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

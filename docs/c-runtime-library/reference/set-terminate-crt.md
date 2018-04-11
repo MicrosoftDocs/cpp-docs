@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # set_terminate (CRT)
+
 Installs your own termination routine to be called by `terminate`.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ terminate_function set_terminate(
 );  
 ```  
   
-#### Parameters  
- `termFunction`  
+### Parameters  
+
+`termFunction`  
  Pointer to a terminate function that you write.  
   
 ## Return Value  
- Returns a pointer to the previous function registered by `set_terminate` so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be NULL.  
+
+Returns a pointer to the previous function registered by `set_terminate` so that the previous function can be restored later. If no previous function has been set, the return value may be used to restore the default behavior; this value may be NULL.  
   
 ## Remarks  
- The `set_terminate` function installs `termFunction` as the function called by `terminate`. `set_terminate` is used with C++ exception handling and may be called at any point in your program before the exception is thrown. `terminate` calls `abort` by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. After performing any desired cleanup tasks, `termFunction` should exit the program. If it does not exit (if it returns to its caller), `abort` is called.  
+
+The `set_terminate` function installs `termFunction` as the function called by `terminate`. `set_terminate` is used with C++ exception handling and may be called at any point in your program before the exception is thrown. `terminate` calls `abort` by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. After performing any desired cleanup tasks, `termFunction` should exit the program. If it does not exit (if it returns to its caller), `abort` is called.  
   
  In a multithreaded environment, terminate functions are maintained separately for each thread. Each new thread needs to install its own terminate function. Thus, each thread is in charge of its own termination handling.  
   
@@ -63,10 +67,12 @@ typedef void ( *terminate_function )( );
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [terminate](../../c-runtime-library/reference/terminate-crt.md).  
+
+See the example for [terminate](../../c-runtime-library/reference/terminate-crt.md).  
   
 ## See Also  
- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [_get_terminate](../../c-runtime-library/reference/get-terminate.md)   
  [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)   

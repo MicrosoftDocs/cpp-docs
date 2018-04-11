@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # xor_eq
+
 An alternative to the ^= operator.  
   
 ## Syntax  
@@ -31,7 +32,8 @@ An alternative to the ^= operator.
 ```  
   
 ## Remarks  
- The macro yields the operator ^=.  
+
+The macro yields the operator ^=.  
   
 ## Example  
   
@@ -63,4 +65,5 @@ int main( )
 ```  
   
 ## Requirements  
- **Header:** \<iso646.h>
+
+**Header:** \<iso646.h>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_heap_handle
+
 Returns the handle of the heap that's used by the C run-time system.  
   
 ## Syntax  
@@ -30,10 +31,12 @@ intptr_t _get_heap_handle( void );
 ```  
   
 ## Return Value  
- Returns the handle to the Win32 heap used by the C run-time system.  
+
+Returns the handle to the Win32 heap used by the C run-time system.  
   
 ## Remarks  
- Use this function if you want to call [HeapSetInformation](http://msdn.microsoft.com/library/windows/desktop/aa366705) and enable the Low Fragmentation Heap on the CRT heap.  
+
+Use this function if you want to call [HeapSetInformation](http://msdn.microsoft.com/library/windows/desktop/aa366705) and enable the Low Fragmentation Heap on the CRT heap.  
   
 ## Requirements  
   
@@ -67,4 +70,5 @@ int main(void)
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)

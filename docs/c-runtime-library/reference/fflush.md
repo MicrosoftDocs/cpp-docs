@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fflush
+
 Flushes a stream.  
   
 ## Syntax  
@@ -31,18 +32,21 @@ int fflush(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- `fflush` returns 0 if the buffer was successfully flushed. The value 0 is also returned in cases in which the specified stream has no buffer or is open for reading only. A return value of `EOF` indicates an error.  
+
+`fflush` returns 0 if the buffer was successfully flushed. The value 0 is also returned in cases in which the specified stream has no buffer or is open for reading only. A return value of `EOF` indicates an error.  
   
 > [!NOTE]
 >  If `fflush` returns `EOF`, data may have been lost due to a write failure. When setting up a critical error handler, it is safest to turn buffering off with the `setvbuf` function or to use low-level I/O routines such as `_open`, `_close`, and `_write` instead of the stream I/O functions.  
   
 ## Remarks  
- The `fflush` function flushes the stream `stream`. If the stream was opened in write mode, or it was opened in update mode and the last operation was a write, the contents of the stream buffer are written to the underlying file or device and the buffer is discarded. If the stream was opened in read mode, or if the stream has no buffer, the call to `fflush` has no effect, and any buffer is retained. A call to `fflush` negates the effect of any prior call to `ungetc` for the stream. The stream remains open after the call.  
+
+The `fflush` function flushes the stream `stream`. If the stream was opened in write mode, or it was opened in update mode and the last operation was a write, the contents of the stream buffer are written to the underlying file or device and the buffer is discarded. If the stream was opened in read mode, or if the stream has no buffer, the call to `fflush` has no effect, and any buffer is retained. A call to `fflush` negates the effect of any prior call to `ungetc` for the stream. The stream remains open after the call.  
   
  If `stream` is `NULL`, the behavior is the same as a call to `fflush` on each open stream. All streams opened in write mode and all streams opened in update mode where the last operation was a write are flushed. The call has no effect on other streams.  
   
@@ -109,7 +113,8 @@ This is a test
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_flushall](../../c-runtime-library/reference/flushall.md)   
  [setvbuf](../../c-runtime-library/reference/setvbuf.md)

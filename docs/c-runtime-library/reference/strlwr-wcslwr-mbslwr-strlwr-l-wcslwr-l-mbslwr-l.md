@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
+
 Converts a string to lowercase. More secure versions of these functions are available; see [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](../../c-runtime-library/reference/strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).  
   
 > [!IMPORTANT]
@@ -79,18 +80,21 @@ unsigned char *_mbslwr_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to convert to lowercase.  
   
  `locale`  
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns a pointer to the converted string. Because the modification is done in place, the pointer returned is the same as the pointer passed as the input argument. No return value is reserved to indicate an error.  
+
+Each of these functions returns a pointer to the converted string. Because the modification is done in place, the pointer returned is the same as the pointer passed as the input argument. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_strlwr` function converts any uppercase letters in `str` to lowercase as determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for their locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `_strlwr` function converts any uppercase letters in `str` to lowercase as determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale for their locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  The `_wcslwr` and `_mbslwr` functions are wide-character and multibyte-character versions of `_strlwr`. The argument and return value of `_wcslwr` are wide-character strings; those of `_mbslwr` are multibyte-character strings. These three functions behave identically otherwise.  
   
@@ -152,6 +156,7 @@ Upper: THE STRING TO END ALL STRINGS!
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](../../c-runtime-library/reference/strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md)

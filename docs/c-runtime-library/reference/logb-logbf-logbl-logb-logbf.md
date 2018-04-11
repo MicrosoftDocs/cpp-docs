@@ -50,7 +50,7 @@ float _logbf(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  A floating-point value.

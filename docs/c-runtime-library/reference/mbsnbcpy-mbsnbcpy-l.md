@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcpy, _mbsnbcpy_l
+
 Copies `n` bytes of a string to a destination string. More secure versions of these functions are available—see [_mbsnbcpy_s, _mbsnbcpy_s_l](../../c-runtime-library/reference/mbsnbcpy-s-mbsnbcpy-s-l.md).  
   
 > [!IMPORTANT]
@@ -55,8 +56,9 @@ unsigned char * _mbsnbcpy_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Destination for the character string to be copied.  
   
  `strSource`  
@@ -69,10 +71,12 @@ unsigned char * _mbsnbcpy_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsnbcpy` returns a pointer to the destination character string. No return value is reserved to indicate an error.  
+
+`_mbsnbcpy` returns a pointer to the destination character string. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_mbsnbcpy` function copies `count` bytes from `strSource` to `strDest`. If `count` exceeds the size of `strDest` or the source and destination strings overlap, the behavior of `_mbsnbcpy` is undefined.  
+
+The `_mbsnbcpy` function copies `count` bytes from `strSource` to `strDest`. If `count` exceeds the size of `strDest` or the source and destination strings overlap, the behavior of `_mbsnbcpy` is undefined.  
   
  If `strSource` or `strDest` is a null pointer, this function invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.  
   
@@ -100,7 +104,8 @@ unsigned char * _mbsnbcpy_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
  [_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l](../../c-runtime-library/reference/strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fgetchar, _fgetwchar
+
 Reads a character from `stdin`.  
   
 ## Syntax  
@@ -31,10 +32,12 @@ wint_t _fgetwchar( void );
 ```  
   
 ## Return Value  
- `_fgetchar` returns the character read as an `int` or return `EOF` to indicate an error or end of file. **_**`fgetwchar` returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition.  
+
+`_fgetchar` returns the character read as an `int` or return `EOF` to indicate an error or end of file. **_**`fgetwchar` returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition.  
   
 ## Remarks  
- These functions read a single character from `stdin`. The function then increments the associated file pointer (if defined) to point to the next character. If the stream is at end of file, the end-of-file indicator for the stream is set.  
+
+These functions read a single character from `stdin`. The function then increments the associated file pointer (if defined) to point to the next character. If the stream is at end of file, the end-of-file indicator for the stream is set.  
   
  `_fgetchar` is equivalent to `fgetc( stdin )`. It is also equivalent to `getchar`, but implemented only as a function, rather than as a function and a macro. `_fgetwchar` is the wide-character version of `_fgetchar`.  
   
@@ -94,6 +97,7 @@ Line two.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)

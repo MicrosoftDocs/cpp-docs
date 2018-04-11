@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_malloc
+
 Allocates memory on a specified alignment boundary.  
   
 ## Syntax  
@@ -33,8 +34,9 @@ void * _aligned_offset_malloc(
 );  
 ```  
   
-#### Parameters  
- [in] `size`  
+### Parameters  
+
+[in] `size`  
  The size of the requested memory allocation.  
   
  [in] `alignment`  
@@ -44,10 +46,12 @@ void * _aligned_offset_malloc(
  The offset into the memory allocation to force the alignment.  
   
 ## Return Value  
- A pointer to the memory block that was allocated or `NULL` if the operation failed.  
+
+A pointer to the memory block that was allocated or `NULL` if the operation failed.  
   
 ## Remarks  
- `_aligned_offset_malloc` is useful in situations where alignment is needed on a nested element; for example, if alignment was needed on a nested class.  
+
+`_aligned_offset_malloc` is useful in situations where alignment is needed on a nested element; for example, if alignment was needed on a nested class.  
   
  `_aligned_offset_malloc` is based on `malloc`; for more information, see [malloc](../../c-runtime-library/reference/malloc.md).  
   
@@ -62,7 +66,9 @@ void * _aligned_offset_malloc(
 |`_aligned_offset_malloc`|\<malloc.h>|  
   
 ## Example  
- For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
+
+For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
   
 ## See Also  
- [Data Alignment](../../c-runtime-library/data-alignment.md)
+
+[Data Alignment](../../c-runtime-library/data-alignment.md)

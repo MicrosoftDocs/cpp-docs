@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # localtime, _localtime32, _localtime64
+
 Convert a time value and correct for the local time zone. More secure versions of these functions are available; see [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
   
 ## Syntax  
@@ -37,12 +38,14 @@ struct tm *_localtime64(
 );  
 ```  
   
-#### Parameters  
- `timer`  
+### Parameters  
+
+`timer`  
  Pointer to stored time.  
   
 ## Return Value  
- Return a pointer to the structure result, or `NULL` if the date passed to the function is:  
+
+Return a pointer to the structure result, or `NULL` if the date passed to the function is:  
   
 -   Before midnight, January 1, 1970.  
   
@@ -84,7 +87,8 @@ struct tm *_localtime64(
  Positive value if daylight saving time is in effect; 0 if daylight saving time is not in effect; negative value if status of daylight saving time is unknown. If the `TZ` environment variable is set, the C run-time library assumes rules appropriate to the United States for implementing the calculation of daylight-saving time (DST).  
   
 ## Remarks  
- The `localtime` function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type `tm`. The `long` value `timer` represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the `time` function.  
+
+The `localtime` function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type `tm`. The `long` value `timer` represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the `time` function.  
   
  Both the 32-bit and 64-bit versions of `gmtime`, `mktime`, `mkgmtime`, and `localtime` all use a single `tm` structure per thread for the conversion. Each call to one of these routines destroys the result of the previous call.  
   
@@ -150,7 +154,8 @@ Tue Feb 12 10:05:58 AM
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

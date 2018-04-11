@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _isctype, iswctype, _isctype_l, _iswctype_l
+
 Tests `c` for the property specified by the `desc` argument. For each valid value of `desc`, there is an equivalent wide-character classification routine.  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _iswctype_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `desc`  
@@ -57,7 +59,8 @@ int _iswctype_l(
  The locale to use for any locale-dependent tests.  
   
 ## Return Value  
- `_isctype` and `iswctype` return a nonzero value if `c` has the property specified by `desc` in the current locale or 0 if it does not. The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+`_isctype` and `iswctype` return a nonzero value if `c` has the property specified by `desc` in the current locale or 0 if it does not. The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  The behavior of `_isctype` and `_isctype_l` is undefined if `c` is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and `c` is not one of these values, the functions raise an assertion.  
   
@@ -80,9 +83,11 @@ int _iswctype_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

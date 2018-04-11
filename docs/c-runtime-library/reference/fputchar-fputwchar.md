@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fputchar, _fputwchar
+
 Writes a character to `stdout`.  
   
 ## Syntax  
@@ -34,17 +35,20 @@ wint_t _fputwchar(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be written.  
   
 ## Return Value  
- Each of these functions returns the character written. For `_fputchar`, a return value of `EOF` indicates an error. For `_fputwchar`, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` (or `WEOF`) and set `errno` to `EINVAL`.  
+
+Each of these functions returns the character written. For `_fputchar`, a return value of `EOF` indicates an error. For `_fputwchar`, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` (or `WEOF`) and set `errno` to `EINVAL`.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- Both of these functions writes the single character `c` to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.  
+
+Both of these functions writes the single character `c` to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.  
   
 ### Generic-Text Routine Mappings  
   
@@ -87,6 +91,7 @@ This is a test of _fputchar!!
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)

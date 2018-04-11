@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_malloc
+
 Allocates memory on a specified alignment boundary.  
   
 ## Syntax  
@@ -32,18 +33,21 @@ void * _aligned_malloc(
 );  
 ```  
   
-#### Parameters  
- `size`  
+### Parameters  
+
+`size`  
  Size of the requested memory allocation.  
   
  `alignment`  
  The alignment value, which must be an integer power of 2.  
   
 ## Return Value  
- A pointer to the memory block that was allocated or `NULL` if the operation failed. The pointer is a multiple of `alignment`.  
+
+A pointer to the memory block that was allocated or `NULL` if the operation failed. The pointer is a multiple of `alignment`.  
   
 ## Remarks  
- `_aligned_malloc` is based on [malloc](../../c-runtime-library/reference/malloc.md).  
+
+`_aligned_malloc` is based on [malloc](../../c-runtime-library/reference/malloc.md).  
   
  `_aligned_malloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).  
   
@@ -138,4 +142,5 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 ```  
   
 ## See Also  
- [Data Alignment](../../c-runtime-library/data-alignment.md)
+
+[Data Alignment](../../c-runtime-library/data-alignment.md)

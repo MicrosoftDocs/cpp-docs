@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctan, ctanf, ctanl
+
 Retrieves the tangent of a complex number.  
   
 ## Syntax  
@@ -43,12 +44,14 @@ _Lcomplex ctanl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents the angle, in radians.  
   
 ## Return Value  
- The tangent of `z`.  
+
+The tangent of `z`.  
   
 |Input|SEH Exception|`_matherr` Exception|  
 |-----------|-------------------|--------------------------|  
@@ -56,7 +59,8 @@ _Lcomplex ctanl(
 |± ∞ (`tan`, `tanf`)|INVALID|_DOMAIN|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `ctan` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ctan` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `ctan` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ctan` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -67,7 +71,8 @@ _Lcomplex ctanl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

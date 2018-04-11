@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fullpath_dbg, _wfullpath_dbg
+
 Versions of [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md) that use the debug version of `malloc` to allocate memory.  
   
 ## Syntax  
@@ -44,8 +45,9 @@ wchar_t *_wfullpath_dbg(
 );  
 ```  
   
-#### Parameters  
- `absPath`  
+### Parameters  
+
+`absPath`  
  Pointer to a buffer containing the absolute or full path name, or `NULL`.  
   
  `relPath`  
@@ -64,10 +66,12 @@ wchar_t *_wfullpath_dbg(
  Line number in the source file where the allocation operation was requested or `NULL`.  
   
 ## Return Value  
- Each function returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`) the function returns `NULL`.  
+
+Each function returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`) the function returns `NULL`.  
   
 ## Remarks  
- The `_fullpath_dbg` and `_wfullpath_dbg` functions are identical to `_fullpath` and `_wfullpath` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory if NULL is passed as the first parameter. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
+
+The `_fullpath_dbg` and `_wfullpath_dbg` functions are identical to `_fullpath` and `_wfullpath` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory if NULL is passed as the first parameter. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
  You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_fullpath` and `_wfullpath` are remapped to `_fullpath_dbg` and `_wfullpath_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -87,6 +91,7 @@ wchar_t *_wfullpath_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

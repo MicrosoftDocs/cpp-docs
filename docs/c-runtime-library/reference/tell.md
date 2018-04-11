@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tell
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_tell](../../c-runtime-library/reference/tell-telli64.md) instead.

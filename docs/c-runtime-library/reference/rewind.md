@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # rewind
+
 Repositions the file pointer to the beginning of a file.  
   
 ## Syntax  
@@ -32,12 +33,14 @@ Repositions the file pointer to the beginning of a file.
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to **FILE** structure.  
   
 ## Remarks  
- The **rewind** function repositions the file pointer associated with `stream` to the beginning of the file. A call to **rewind** is similar to  
+
+The **rewind** function repositions the file pointer associated with `stream` to the beginning of the file. A call to **rewind** is similar to  
   
  **(void) fseek(** `stream`**, 0L,** `SEEK_SET` **);**  
   
@@ -58,7 +61,8 @@ Repositions the file pointer to the beginning of a file.
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -101,4 +105,5 @@ The values read are: 1 and -37
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)

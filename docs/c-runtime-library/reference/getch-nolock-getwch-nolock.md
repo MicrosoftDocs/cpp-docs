@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getch_nolock, _getwch_nolock
+
 Gets a character from the console without echo and without locking the thread.  
   
 > [!IMPORTANT]
@@ -34,10 +35,12 @@ wint_t _getwch_nolock( void );
 ```  
   
 ## Return Value  
- Returns the character read. There is no error return.  
+
+Returns the character read. There is no error return.  
   
 ## Remarks  
- `_getch_nolock` and `_getwch_nolock` are identical to `_getch` and `_getchw` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+`_getch_nolock` and `_getwch_nolock` are identical to `_getch` and `_getchw` except that they not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -91,7 +94,8 @@ Type 'Y' when finished typing keys: Y
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_getche, _getwche](../../c-runtime-library/reference/getche-getwche.md)   
  [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   

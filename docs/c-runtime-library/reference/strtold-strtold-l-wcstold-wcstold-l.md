@@ -46,7 +46,7 @@ long double wcstold_l(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *nptr*<br/>
  Null-terminated string to convert.

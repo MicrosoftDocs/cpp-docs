@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isspace, iswspace, _isspace_l, _iswspace_l
+
 Determines whether an integer represents a space character.  
   
 ## Syntax  
@@ -42,15 +43,17 @@ int _iswspace_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a space character. `isspace` returns a nonzero value if `c` is a white-space character (0x09 - 0x0D or 0x20). The result of the test condition for the `isspace` function depends on the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+Each of these routines returns nonzero if `c` is a particular representation of a space character. `isspace` returns a nonzero value if `c` is a white-space character (0x09 - 0x0D or 0x20). The result of the test condition for the `isspace` function depends on the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  `iswspace` returns a nonzero value if `c` is a wide character that corresponds to a standard white-space character.  
   
@@ -74,6 +77,7 @@ int _iswspace_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

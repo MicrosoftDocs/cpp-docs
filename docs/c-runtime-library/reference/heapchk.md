@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _heapchk
+
 Runs consistency checks on the heap.  
   
 ## Syntax  
@@ -30,7 +31,8 @@ int _heapchk( void );
 ```  
   
 ## Return Value  
- `_heapchk` returns one of the following integer manifest constants defined in Malloc.h.  
+
+`_heapchk` returns one of the following integer manifest constants defined in Malloc.h.  
   
  `_HEAPBADBEGIN`  
  Initial header information is bad or cannot be found.  
@@ -50,7 +52,8 @@ int _heapchk( void );
  In addition, if an error occurs, `_heapchk` sets `errno` to `ENOSYS`.  
   
 ## Remarks  
- The `_heapchk` function helps debug heap-related problems by checking for minimal consistency of the heap. If the operating system does not support `_heapchk`(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.  
+
+The `_heapchk` function helps debug heap-related problems by checking for minimal consistency of the heap. If the operating system does not support `_heapchk`(for example, Windows 98), the function returns `_HEAPOK` and sets `errno` to `ENOSYS`.  
   
 ## Requirements  
   
@@ -104,7 +107,8 @@ OK - heap is fine
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [_heapadd](../../c-runtime-library/heapadd.md)   
  [_heapmin](../../c-runtime-library/reference/heapmin.md)   
  [_heapset](../../c-runtime-library/heapset.md)   

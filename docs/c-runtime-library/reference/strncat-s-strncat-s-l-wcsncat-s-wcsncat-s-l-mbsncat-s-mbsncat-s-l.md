@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
+
 Appends characters to a string. These versions of [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -109,8 +110,9 @@ errno_t _mbsncat_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `strDest`  
+### Parameters  
+
+[out] `strDest`  
  Null-terminated destination string.  
   
  [in]`numberOfElements`  
@@ -126,7 +128,8 @@ errno_t _mbsncat_s_l(
  Locale to use.  
   
 ## Return Value  
- Returns 0 if successful, an error code on failure.  
+
+Returns 0 if successful, an error code on failure.  
   
 ### Error Conditions  
   
@@ -137,7 +140,8 @@ errno_t _mbsncat_s_l(
 |any|0, or too small|any|`ERANGE`|not modified|  
   
 ## Remarks  
- These functions try to append the first `D` characters of `strSource` to the end of `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If appending those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of `strDest`, and a new terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
+
+These functions try to append the first `D` characters of `strSource` to the end of `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If appending those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of `strDest`, and a new terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
  There is an exception to the above paragraph. If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md) then as much of `strSource` as will fit is appended to `strDest` while still leaving room to append a terminating null.  
   
@@ -328,7 +332,8 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   

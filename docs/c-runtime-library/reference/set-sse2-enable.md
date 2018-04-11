@@ -32,7 +32,7 @@ int _set_SSE2_enable(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *flag*<br/>
  1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.

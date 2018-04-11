@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # freopen_s, _wfreopen_s
+
 Reassigns a file pointer. These versions of [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -40,8 +41,9 @@ errno_t _wfreopen(
 );  
 ```  
   
-#### Parameters  
- [out] `pFile`  
+### Parameters  
+
+[out] `pFile`  
  A pointer to the file pointer to be provided by the call.  
   
  [in] `path`  
@@ -54,10 +56,12 @@ errno_t _wfreopen(
  Pointer to `FILE` structure.  
   
 ## Return Value  
- Each of these functions returns an error code. If an error occurs, the original file is closed.  
+
+Each of these functions returns an error code. If an error occurs, the original file is closed.  
   
 ## Remarks  
- The `freopen_s` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path.` `_wfreopen_s` is a wide-character version of `_freopen_s`; the `path` and `mode` arguments to `_wfreopen_s` are wide-character strings. `_wfreopen_s` and `_freopen_s` behave identically otherwise.  
+
+The `freopen_s` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path.` `_wfreopen_s` is a wide-character version of `_freopen_s`; the `path` and `mode` arguments to `_wfreopen_s` are wide-character strings. `_wfreopen_s` and `_freopen_s` behave identically otherwise.  
   
  If any of `pFile`, `path`, `mode`, or `stream` are `NULL`, or if `path` is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.  
   
@@ -150,7 +154,8 @@ This will go to the file 'freopen.out'
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   

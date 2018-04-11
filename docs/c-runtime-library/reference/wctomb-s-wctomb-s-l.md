@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wctomb_s, _wctomb_s_l
+
 Converts a wide character to the corresponding multibyte character. A version of [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -41,8 +42,9 @@ errno_t _wctomb_s_l(
 );  
 ```  
   
-#### Parameters  
- [out] `pRetValue`  
+### Parameters  
+
+[out] `pRetValue`  
  The number of bytes, or a code indicating the result.  
   
  [out] `mbchar`  
@@ -58,7 +60,8 @@ errno_t _wctomb_s_l(
  The locale to use.  
   
 ## Return Value  
- Zero if successful, an error code on failure.  
+
+Zero if successful, an error code on failure.  
   
  Error Conditions  
   
@@ -71,7 +74,8 @@ errno_t _wctomb_s_l(
  If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.  
   
 ## Remarks  
- The `wctomb_s` function converts its `wchar` argument to the corresponding multibyte character and stores the result at `mbchar`. You can call the function from any point in any program.  
+
+The `wctomb_s` function converts its `wchar` argument to the corresponding multibyte character and stores the result at `mbchar`. You can call the function from any point in any program.  
   
  If `wctomb_s` converts the wide character to a multibyte character, it puts the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character into the integer pointed to by `pRetValue`. If `wchar` is the wide-character null character (L'\0'), `wctomb_s` fills `pRetValue` with 1. If the target pointer `mbchar` is NULL, `wctomb_s` puts 0 in `pRetValue`. If the conversion is not possible in the current locale, `wctomb_s` puts -1 in `pRetValue`.  
   
@@ -87,7 +91,8 @@ errno_t _wctomb_s_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This program illustrates the behavior of the `wctomb` function.  
+
+This program illustrates the behavior of the `wctomb` function.  
   
 ```  
 // crt_wctomb_s.cpp  
@@ -114,7 +119,8 @@ Convert a wide character:
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)   
  [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)   

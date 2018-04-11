@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _memccpy
+
 Copies characters from a buffer.  
   
 ## Syntax  
@@ -35,8 +36,9 @@ Copies characters from a buffer.
 );  
 ```  
   
-#### Parameters  
- *dest*  
+### Parameters  
+
+*dest*  
  Pointer to the destination.  
   
  *src*  
@@ -49,10 +51,12 @@ Copies characters from a buffer.
  Number of characters.  
   
 ## Return Value  
- If the character `c` is copied, `_memccpy` returns a pointer to the char in *dest* that immediately follows the character. If `c` is not copied, it returns **NULL**.  
+
+If the character `c` is copied, `_memccpy` returns a pointer to the char in *dest* that immediately follows the character. If `c` is not copied, it returns **NULL**.  
   
 ## Remarks  
- The `_memccpy` function copies 0 or more characters of *src* to *dest*, halting when the character `c` has been copied or when *count* characters have been copied, whichever comes first.  
+
+The `_memccpy` function copies 0 or more characters of *src* to *dest*, halting when the character `c` has been copied or when *count* characters have been copied, whichever comes first.  
   
  **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -65,7 +69,8 @@ Copies characters from a buffer.
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -102,7 +107,8 @@ Length: 25 characters
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   
  [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   

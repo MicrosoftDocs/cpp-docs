@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _putch_nolock, _putwch_nolock
+
 Writes a character to the console without locking the thread.  
   
 > [!IMPORTANT]
@@ -38,15 +39,18 @@ wchar_t c
 );  
 ```  
   
-#### Parameters  
- *c*  
+### Parameters  
+
+*c*  
  Character to be output.  
   
 ## Return Value  
- Returns *c* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.  
+
+Returns *c* if successful. If **_putch_nolock** fails, it returns **EOF**; if **_putwch_nolock** fails, it returns **WEOF**.  
   
 ## Remarks  
- **_putch_nolock** and **_putwch_nolock** are identical to **_putch** and **_putwch**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+**_putch_nolock** and **_putwch_nolock** are identical to **_putch** and **_putwch**, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -64,9 +68,11 @@ wchar_t c
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)

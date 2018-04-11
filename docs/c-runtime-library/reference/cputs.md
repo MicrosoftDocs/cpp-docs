@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cputs
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_cputs](../../c-runtime-library/reference/cputs-cputws.md) instead.  
   
 > [!IMPORTANT]

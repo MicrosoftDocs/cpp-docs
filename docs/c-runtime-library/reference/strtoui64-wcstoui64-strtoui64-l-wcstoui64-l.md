@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
+
 Convert a string to an unsigned `__int64` value.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ unsigned __int64 _wcstoui64(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,7 +66,8 @@ unsigned __int64 _wcstoui64(
  Locale to use.  
   
 ## Return Value  
- `_strtoui64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. `_strtoui64` returns 0 if no conversion can be performed.  
+
+`_strtoui64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. `_strtoui64` returns 0 if no conversion can be performed.  
   
  `_UI64_MAX` is defined in LIMITS.H.  
   
@@ -73,7 +76,8 @@ unsigned __int64 _wcstoui64(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `_strtoui64` function converts `nptr` to an `unsigned` `__int64`. `_wcstoui64` is a wide-character version of `_strtoui64`; its `nptr` argument is a wide-character string. Otherwise these functions behave identically.  
+
+The `_strtoui64` function converts `nptr` to an `unsigned` `__int64`. `_wcstoui64` is a wide-character version of `_strtoui64`; its `nptr` argument is a wide-character string. Otherwise these functions behave identically.  
   
  Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`.  
   
@@ -126,7 +130,8 @@ u = 18446744073709551615
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

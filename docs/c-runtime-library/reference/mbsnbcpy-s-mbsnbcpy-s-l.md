@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcpy_s, _mbsnbcpy_s_l
+
 Copies `n` bytes of a string to a destination string. These versions of [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -57,8 +58,9 @@ errno_t _mbsnbcpy_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Destination for character string to be copied.  
   
  `sizeInBytes`  
@@ -74,10 +76,12 @@ errno_t _mbsnbcpy_s_l(
  Locale to use.  
   
 ## Return Value  
- Zero if successful; `EINVAL` if a bad parameter was passed in.  
+
+Zero if successful; `EINVAL` if a bad parameter was passed in.  
   
 ## Remarks  
- The `_mbsnbcpy_s` function copies `count` bytes from `strSource` to `strDest`. If `count` exceeds the size of `strDest`, either of the input strings is a null pointer, or `sizeInBytes` or `count` is 0, the function invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL`. If the source and destination strings overlap, the behavior of `_mbsnbcpy_s` is undefined.  
+
+The `_mbsnbcpy_s` function copies `count` bytes from `strSource` to `strDest`. If `count` exceeds the size of `strDest`, either of the input strings is a null pointer, or `sizeInBytes` or `count` is 0, the function invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL`. If the source and destination strings overlap, the behavior of `_mbsnbcpy_s` is undefined.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -105,7 +109,8 @@ errno_t _mbsnbcpy_s_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
  [_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l](../../c-runtime-library/reference/strncnt-wcsncnt-mbsnbcnt-mbsnbcnt-l-mbsnccnt-mbsnccnt-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fopen, _wfopen
+
 Opens a file. More-secure versions of these functions that perform additional parameter validation and return error codes are available; see [fopen_s, _wfopen_s](../../c-runtime-library/reference/fopen-s-wfopen-s.md).  
   
 ## Syntax  
@@ -36,27 +37,31 @@ FILE *_wfopen(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  File name.  
   
  `mode`  
  Kind of access that's enabled.  
   
 ## Return Value  
- Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
+
+Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
   
  For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `fopen` function opens the file that is specified by `filename`. By default, a narrow `filename` string is interpreted using the ANSI codepage (CP_ACP). In Windows Desktop applications this can be changed to the OEM codepage (CP_OEMCP) by using the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) function. You can use the [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) function to determine whether `filename` is interpreted using the ANSI or the system default OEM codepage. `_wfopen` is a wide-character version of `fopen`; the arguments to `_wfopen` are wide-character strings. Otherwise, `_wfopen` and `fopen` behave identically. Just using `_wfopen` does not affect the coded character set that is used in the file stream.  
+
+The `fopen` function opens the file that is specified by `filename`. By default, a narrow `filename` string is interpreted using the ANSI codepage (CP_ACP). In Windows Desktop applications this can be changed to the OEM codepage (CP_OEMCP) by using the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) function. You can use the [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) function to determine whether `filename` is interpreted using the ANSI or the system default OEM codepage. `_wfopen` is a wide-character version of `fopen`; the arguments to `_wfopen` are wide-character strings. Otherwise, `_wfopen` and `fopen` behave identically. Just using `_wfopen` does not affect the coded character set that is used in the file stream.  
   
  `fopen` accepts paths that are valid on the file system at the point of execution; `fopen` accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for `fopen`, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.  
   
  Always check the return value to see whether the pointer is NULL before you perform any additional operations on the file. If an error occurs, the global variable `errno` is set and may be used to obtain specific error information. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Unicode Support  
- `fopen` supports Unicode file streams. To open a Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen`, as follows.  
+
+`fopen` supports Unicode file streams. To open a Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen`, as follows.  
   
  `FILE *fp = fopen("newfile.txt", "rt+, ccs=encoding");`  
   
@@ -189,7 +194,8 @@ FILE *_wfopen(
  The `c`, `n`, `t`, `S`, `R`, `T`, and `D` `mode` options are Microsoft extensions for `fopen` and `_fdopen` and should not be used where ANSI portability is desired.  
   
 ## Example  
- The following program opens two files.  It uses `fclose` to close the first file and `_fcloseall` to close all remaining files.  
+
+The following program opens two files.  It uses `fclose` to close the first file and `_fcloseall` to close all remaining files.  
   
 ```C  
 // crt_fopen.c  
@@ -241,7 +247,8 @@ Number of files closed by _fcloseall: 1
 ```  
   
 ## Example  
- The following program creates a file (or overwrites one if it exists), in text mode that has Unicode encoding.  It then writes two strings into the file and closes the file. The output is a file named _wfopen_test.xml, which contains the data from the output section.  
+
+The following program creates a file (or overwrites one if it exists), in text mode that has Unicode encoding.  It then writes two strings into the file and closes the file. The output is a file named _wfopen_test.xml, which contains the data from the output section.  
   
 ```C  
 // crt__wfopen.c  
@@ -298,7 +305,8 @@ int main(int argc, char** argv)
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   

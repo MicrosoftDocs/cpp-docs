@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _msize
+
 Returns the size of a memory block allocated in the heap.  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Returns the size of a memory block allocated in the heap.
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  Pointer to the memory block.  
   
 ## Return Value  
- `_msize` returns the size (in bytes) as an unsigned integer.  
+
+`_msize` returns the size (in bytes) as an unsigned integer.  
   
 ## Remarks  
- The `_msize` function returns the size, in bytes, of the memory block allocated by a call to `calloc`, `malloc`, or `realloc`.  
+
+The `_msize` function returns the size, in bytes, of the memory block allocated by a call to `calloc`, `malloc`, or `realloc`.  
   
  When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -55,13 +59,16 @@ Returns the size of a memory block allocated in the heap.
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
- See the example for [realloc](../../c-runtime-library/reference/realloc.md).  
+
+See the example for [realloc](../../c-runtime-library/reference/realloc.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [_expand](../../c-runtime-library/reference/expand.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   

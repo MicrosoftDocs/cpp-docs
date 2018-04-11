@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strtime, _wstrtime
+
 Copy the time to a buffer. More secure versions of these functions are available; see [_strtime_s, _wstrtime_s](../../c-runtime-library/reference/strtime-s-wstrtime-s.md).  
   
 ## Syntax  
@@ -42,15 +43,18 @@ wchar_t *_wstrtime(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `timestr`  
+### Parameters  
+
+`timestr`  
  Time string.  
   
 ## Return Value  
- Returns a pointer to the resulting character string `timestr`.  
+
+Returns a pointer to the resulting character string `timestr`.  
   
 ## Remarks  
- The `_strtime` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long.  
+
+The `_strtime` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long.  
   
  `_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.If `timestr` is `NULL` pointer or if `timestr` is formatted incorrectly, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the exception is allowed to continue, these functions return a NULL and set `errno` to `EINVAL` if `timestr` was a NULL or set `errno` to `ERANGE` if `timestr` is formatted incorrectly.  
   
@@ -94,7 +98,8 @@ The current time is 14:21:44
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

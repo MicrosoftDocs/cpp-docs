@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _RTC_GetErrDesc
+
 Returns a brief description of a run-time error check (RTC) type.  
   
 ## Syntax  
@@ -32,12 +33,14 @@ Returns a brief description of a run-time error check (RTC) type.
 );  
 ```  
   
-#### Parameters  
- *errnum*  
+### Parameters  
+
+*errnum*  
  A number between zero and one less than the value returned by `_RTC_NumErrors`.  
   
 ## Return Value  
- A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md), `_RTC_GetErrDesc` returns NULL.  
+
+A character string that contains a short description of one of the error types detected by the run-time error check system. If error is less than zero or greater than or equal to the value returned by [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md), `_RTC_GetErrDesc` returns NULL.  
   
 ## Requirements  
   
@@ -48,8 +51,10 @@ Returns a brief description of a run-time error check (RTC) type.
  For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md)   
+
+[_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md)   
  [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

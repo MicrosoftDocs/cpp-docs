@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fread_nolock_s
+
 Reads data from a stream, without locking other threads. This version of [fread_nolock](../../c-runtime-library/reference/fread-nolock.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -34,8 +35,9 @@ size_t _fread_nolock_s(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for data.  
   
  `bufferSize`  
@@ -51,10 +53,12 @@ size_t _fread_nolock_s(
  Pointer to `FILE` structure.  
   
 ## Return Value  
- See [fread_s](../../c-runtime-library/reference/fread-s.md).  
+
+See [fread_s](../../c-runtime-library/reference/fread-s.md).  
   
 ## Remarks  
- This function is a non-locking version of `fread_s`. It is identical to `fread_s` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+This function is a non-locking version of `fread_s`. It is identical to `fread_s` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ## Requirements  
   
@@ -65,6 +69,7 @@ size_t _fread_nolock_s(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   
  [_read](../../c-runtime-library/reference/read.md)

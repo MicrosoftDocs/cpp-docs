@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
+
 Formats and prints to the console. These versions of [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _cwprintf_s_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format-control string.  
   
  `argument`  
@@ -60,10 +62,12 @@ int _cwprintf_s_l(
  The locale to use.  
   
 ## Return Value  
- The number of characters printed.  
+
+The number of characters printed.  
   
 ## Remarks  
- These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
+
+These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
   
  An important distinction is that `_cwprintf_s` displays Unicode characters when used in Windows NT. Unlike `_cprintf_s`, `_cwprintf_s` uses the current console locale  
   
@@ -91,7 +95,8 @@ int _cwprintf_s_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -123,7 +128,8 @@ int main( void )
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   
  [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)   
  [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
+
 Formats and prints to the console, and supports positional parameters in the format string.  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _cwprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format-control string.  
   
  `argument`  
@@ -60,10 +62,12 @@ int _cwprintf_p_l(
  The locale to use.  
   
 ## Return Value  
- The number of characters printed or a negative value if an error occurs.  
+
+The number of characters printed or a negative value if an error occurs.  
   
 ## Remarks  
- These functions format and print a series of characters and values directly to the console, using the `_putch` and `_putwch` functions to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between `_cprintf_p` and `cprintf_s` is that `_cprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+
+These functions format and print a series of characters and values directly to the console, using the `_putch` and `_putwch` functions to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. The difference between `_cprintf_p` and `cprintf_s` is that `_cprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
  Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.  
   
@@ -119,7 +123,8 @@ int main( void )
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   
  [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](../../c-runtime-library/reference/cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)   
  [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](../../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)   

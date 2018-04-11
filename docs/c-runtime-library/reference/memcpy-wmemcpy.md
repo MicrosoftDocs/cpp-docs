@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memcpy, wmemcpy
+
 Copies bytes between buffers. More secure versions of these functions are available; see [memcpy_s, wmemcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md).  
   
 ## Syntax  
@@ -38,8 +39,9 @@ wchar_t *wmemcpy(
 );  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  New buffer.  
   
  `src`  
@@ -49,10 +51,12 @@ wchar_t *wmemcpy(
  Number of characters to copy.  
   
 ## Return Value  
- The value of `dest`.  
+
+The value of `dest`.  
   
 ## Remarks  
- `memcpy` copies `count` bytes from `src` to `dest`; `wmemcpy` copies `count` wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy` is undefined. Use `memmove` to handle overlapping regions.  
+
+`memcpy` copies `count` bytes from `src` to `dest`; `wmemcpy` copies `count` wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy` is undefined. Use `memmove` to handle overlapping regions.  
   
 > [!IMPORTANT]
 >  Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -86,10 +90,12 @@ wchar_t *wmemcpy(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See [memmove](../../c-runtime-library/reference/memmove-wmemmove.md) for a sample of how to use `memcpy`.  
+
+See [memmove](../../c-runtime-library/reference/memmove-wmemmove.md) for a sample of how to use `memcpy`.  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

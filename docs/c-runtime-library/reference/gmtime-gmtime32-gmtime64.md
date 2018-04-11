@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # gmtime, _gmtime32, _gmtime64
+
 Converts a time value to a structure. More secure versions of these functions are available; see [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).  
   
 ## Syntax  
@@ -37,12 +38,14 @@ struct tm *_gmtime64(
 );  
 ```  
   
-#### Parameters  
- `timer`  
+### Parameters  
+
+`timer`  
  Pointer to the stored time. The time is represented as seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).  
   
 ## Return Value  
- A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:  
+
+A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md). The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time. Each of the structure fields is of type `int`, as follows:  
   
  `tm_sec`  
  Seconds after minute (0 - 59).  
@@ -80,7 +83,8 @@ struct tm *_gmtime64(
  These functions validate their parameters. If `timer` is a null pointer, or if the timer value is negative, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.  
   
 ## Remarks  
- The `_gmtime32` function breaks down the `timer` value and stores it in a statically allocated structure of type `tm`, defined in TIME.H. The value of `timer` is typically obtained from a call to the `time` function.  
+
+The `_gmtime32` function breaks down the `timer` value and stores it in a statically allocated structure of type `tm`, defined in TIME.H. The value of `timer` is typically obtained from a call to the `time` function.  
   
 > [!NOTE]
 >  In most cases, the target environment tries to determine whether daylight savings time is in effect. The C run-time library assumes that the United States rules for implementing the calculation of Daylight Saving Time (DST) are used.  
@@ -129,7 +133,8 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

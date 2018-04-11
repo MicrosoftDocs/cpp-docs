@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strrev, _wcsrev, _mbsrev, _mbsrev_l
+
 Reverses the characters of a string.  
   
 > [!IMPORTANT]
@@ -44,18 +45,21 @@ unsigned char *_mbsrev_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to reverse.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the altered string. No return value is reserved to indicate an error.  
+
+Returns a pointer to the altered string. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_strrev` function reverses the order of the characters in `string`. The terminating null character remains in place. `_wcsrev` and `_mbsrev` are wide-character and multibyte-character versions of `_strrev`. The arguments and return value of `_wcsrev` are wide-character strings; those of `_mbsrev` are multibyte-character strings. For `_mbsrev`, the order of bytes in each multibyte character in `string` is not changed. These three functions behave identically otherwise.  
+
+The `_strrev` function reverses the order of the characters in `string`. The terminating null character remains in place. `_wcsrev` and `_mbsrev` are wide-character and multibyte-character versions of `_strrev`. The arguments and return value of `_wcsrev` are wide-character strings; those of `_mbsrev` are multibyte-character strings. For `_mbsrev`, the order of bytes in each multibyte character in `string` is not changed. These three functions behave identically otherwise.  
   
  `_mbsrev` validates its parameters. If either `string1` or `string2` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsrev` returns `NULL` and sets `errno` to `EINVAL`. `_strrev` and `_wcsrev` do not validate their parameters.  
   
@@ -112,7 +116,8 @@ The string "Able was I ere I saw Elba" is a palindrome
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)   

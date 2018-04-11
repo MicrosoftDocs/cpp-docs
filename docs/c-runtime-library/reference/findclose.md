@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _findclose
+
 Closes the specified search handle and releases associated resources.  
   
 ## Syntax  
@@ -31,12 +32,14 @@ int _findclose(
 );  
 ```  
   
-#### Parameters  
- `handle`  
+### Parameters  
+
+`handle`  
  Search handle returned by a previous call to `_findfirst`.  
   
 ## Return Value  
- If successful, `_findclose` returns 0. Otherwise, it returns -1 and sets `errno` to `ENOENT`, indicating that no more matching files could be found.  
+
+If successful, `_findclose` returns 0. Otherwise, it returns -1 and sets `errno` to `ENOENT`, indicating that no more matching files could be found.  
   
 ## Requirements  
   
@@ -47,5 +50,6 @@ int _findclose(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [System Calls](../../c-runtime-library/system-calls.md)   
+
+[System Calls](../../c-runtime-library/system-calls.md)   
  [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

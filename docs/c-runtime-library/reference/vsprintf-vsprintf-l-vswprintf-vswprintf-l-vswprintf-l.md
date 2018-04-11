@@ -84,7 +84,7 @@ int _vswprintf_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
+### Parameters  
  `buffer`  
  Storage location for output.  
   

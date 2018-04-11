@@ -44,7 +44,7 @@ long double ceill(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

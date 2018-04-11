@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ftell, _ftelli64
+
 Gets the current position of a file pointer.  
   
 ## Syntax  
@@ -34,17 +35,20 @@ __int64 _ftelli64(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Target `FILE` structure.  
   
 ## Return Value  
- `ftell` and `_ftelli64` return the current file position. The value returned by `ftell` and `_ftelli64` may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return-linefeed translation. Use `ftell` with `fseek` or `_ftelli64` with `_fseeki64` to return to file locations correctly. On error, `ftell` and `_ftelli64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1L and set `errno` to one of two constants, defined in ERRNO.H. The `EBADF` constant means the `stream` argument is not a valid file pointer value or does not refer to an open file. `EINVAL` means an invalid `stream` argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when `stream` does not refer to an open file, the return value is undefined.  
+
+`ftell` and `_ftelli64` return the current file position. The value returned by `ftell` and `_ftelli64` may not reflect the physical byte offset for streams opened in text mode, because text mode causes carriage return-linefeed translation. Use `ftell` with `fseek` or `_ftelli64` with `_fseeki64` to return to file locations correctly. On error, `ftell` and `_ftelli64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1L and set `errno` to one of two constants, defined in ERRNO.H. The `EBADF` constant means the `stream` argument is not a valid file pointer value or does not refer to an open file. `EINVAL` means an invalid `stream` argument was passed to the function. On devices incapable of seeking (such as terminals and printers), or when `stream` does not refer to an open file, the return value is undefined.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `ftell` and `_ftelli64` functions retrieve the current position of the file pointer (if any) associated with `stream`. The position is expressed as an offset relative to the beginning of the stream.  
+
+The `ftell` and `_ftelli64` functions retrieve the current position of the file pointer (if any) associated with `stream`. The position is expressed as an offset relative to the beginning of the stream.  
   
  Note that when a file is opened for appending data, the current file position is determined by the last I/O operation, not by where the next write would occur. For example, if a file is opened for an append and the last operation was a read, the file position is the point where the next read operation would start, not where the next write would start. (When a file is opened for appending, the file position is moved to end of file before any write operation.) If no I/O operation has yet occurred on a file opened for appending, the file position is the beginning of the file.  
   
@@ -96,7 +100,8 @@ Position after trying to read 100 bytes: 100
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
  [fgetpos](../../c-runtime-library/reference/fgetpos.md)   
  [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)   

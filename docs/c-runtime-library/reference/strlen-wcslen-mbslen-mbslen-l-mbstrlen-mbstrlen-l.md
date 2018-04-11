@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
+
 Gets the length of a string, by using the current locale or a specified locale. More secure versions of these functions are available; see [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](../../c-runtime-library/reference/strnlen-strnlen-s.md)  
   
 > [!IMPORTANT]
@@ -51,18 +52,21 @@ size_t _mbstrlen_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns the number of characters in `str`, excluding the terminal `NULL`. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.  
+
+Each of these functions returns the number of characters in `str`, excluding the terminal `NULL`. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.  
   
 ## Remarks  
- `strlen` interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcslen` is a wide-character version of `strlen`; the argument of `wcslen` is a wide-character string and the count of characters is in wide (two-byte) characters. `wcslen` and `strlen` behave identically otherwise.  
+
+`strlen` interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcslen` is a wide-character version of `strlen`; the argument of `wcslen` is a wide-character string and the count of characters is in wide (two-byte) characters. `wcslen` and `strlen` behave identically otherwise.  
   
  **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -153,7 +157,8 @@ Bytes in 'ABCァD' : 6
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

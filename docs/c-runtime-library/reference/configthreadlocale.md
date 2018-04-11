@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _configthreadlocale
+
 Configures per-thread locale options.  
   
 ## Syntax  
@@ -32,14 +33,17 @@ int _configthreadlocale(
 ```  
   
 ### Parameters  
- `type`  
+
+`type`  
  The option to set. One of the options listed in the following table.  
   
 ## Return Value  
- The previous per-thread locale status (`_DISABLE_PER_THREAD_LOCALE` or `_ENABLE_PER_THREAD_LOCALE`), or -1 on failure.  
+
+The previous per-thread locale status (`_DISABLE_PER_THREAD_LOCALE` or `_ENABLE_PER_THREAD_LOCALE`), or -1 on failure.  
   
 ## Remarks  
- The `_configurethreadlocale` function is used to control the use of thread-specific locales. Use one of these options to specify or determine the per-thread locale status:  
+
+The `_configurethreadlocale` function is used to control the use of thread-specific locales. Use one of these options to specify or determine the per-thread locale status:  
   
  `_ENABLE_PER_THREAD_LOCALE`  
  Make the current thread use a thread-specific locale. Subsequent calls to `setlocale` in this thread affect only the thread's own locale.  
@@ -172,7 +176,8 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
 ```  
   
 ## See Also  
- [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
+
+[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
  [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Multithreading and Locales](../../parallel/multithreading-and-locales.md)  

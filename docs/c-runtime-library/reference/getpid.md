@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getpid
+
 Gets the process identification.  
   
 > [!IMPORTANT]
@@ -33,10 +34,12 @@ int _getpid( void );
 ```  
   
 ## Return Value  
- Returns the process ID obtained from the system. There is no error return.  
+
+Returns the process ID obtained from the system. There is no error return.  
   
 ## Remarks  
- The `_getpid` function obtains the process ID from the system. The process ID uniquely identifies the calling process.  
+
+The `_getpid` function obtains the process ID from the system. The process ID uniquely identifies the calling process.  
   
 ## Requirements  
   
@@ -70,5 +73,6 @@ Process id: 3584
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)

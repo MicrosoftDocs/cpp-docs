@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
+
 Pushes back the last character that's read from the console.  
   
 > [!IMPORTANT]
@@ -43,15 +44,18 @@ wint_t _ungetwch_nolock(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be pushed.  
   
 ## Return Value  
- Both functions return the character `c` if successful. If there is an error, `_ungetch` returns a value of `EOF` and `_ungetwch` returns `WEOF`.  
+
+Both functions return the character `c` if successful. If there is an error, `_ungetch` returns a value of `EOF` and `_ungetwch` returns `WEOF`.  
   
 ## Remarks  
- These functions push the character `c` back to the console, causing `c` to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). `_ungetch` and `_ungetwch` fail if they are called more than once before the next read. The `c` argument may not be `EOF` (or `WEOF`).  
+
+These functions push the character `c` back to the console, causing `c` to be the next character read by `_getch` or `_getche` (or `_getwch` or `_getwche`). `_ungetch` and `_ungetwch` fail if they are called more than once before the next read. The `c` argument may not be `EOF` (or `WEOF`).  
   
  The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
@@ -114,6 +118,7 @@ Whitetoken = White
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)

@@ -48,7 +48,7 @@ long double log1pl(
 
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point argument.

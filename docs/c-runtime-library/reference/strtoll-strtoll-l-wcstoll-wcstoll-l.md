@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtoll, _strtoll_l, wcstoll, _wcstoll_l
+
 Converts a string to a `long long` value.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ long long _wcstoll_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,7 +66,8 @@ long long _wcstoll_l(
  The locale to use.  
   
 ## Return Value  
- `strtoll` returns the value that's represented in the string `nptr`, except when the representation would cause an overflow—in that case, it returns `LLONG_MAX` or `LLONG_MIN`. The function returns 0 if no conversion can be performed. `wcstoll` returns values analogously to `strtoll`.  
+
+`strtoll` returns the value that's represented in the string `nptr`, except when the representation would cause an overflow—in that case, it returns `LLONG_MAX` or `LLONG_MIN`. The function returns 0 if no conversion can be performed. `wcstoll` returns values analogously to `strtoll`.  
   
  `LLONG_MAX` and `LLONG_MIN` are defined in LIMITS.H.  
   
@@ -73,7 +76,8 @@ long long _wcstoll_l(
  For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `strtoll` function converts `nptr` to a `long long`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to `base`. `wcstoll` is a wide-character version of `strtoll`; its `nptr` argument is a wide-character string. Otherwise, these functions behave identically.  
+
+The `strtoll` function converts `nptr` to a `long long`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to `base`. `wcstoll` is a wide-character version of `strtoll`; its `nptr` argument is a wide-character string. Otherwise, these functions behave identically.  
   
 ### Generic-Text Routine Mappings  
   
@@ -102,7 +106,8 @@ long long _wcstoll_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

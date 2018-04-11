@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # putenv
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_putenv](../../c-runtime-library/reference/putenv-wputenv.md) or security-enhanced [_putenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md) instead.  
   
 > [!IMPORTANT]

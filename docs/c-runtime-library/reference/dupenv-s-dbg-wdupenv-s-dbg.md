@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _dupenv_s_dbg, _wdupenv_s_dbg
+
 Get a value from the current environment.  Versions of [_dupenv_s, _wdupenv_s](../../c-runtime-library/reference/dupenv-s-wdupenv-s.md) that allocate memory with [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) to provide additional debugging information.  
   
 ## Syntax  
@@ -44,8 +45,9 @@ errno_t _wdupenv_s_dbg(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Buffer to store the variable's value.  
   
  `numberOfElements`  
@@ -64,14 +66,16 @@ errno_t _wdupenv_s_dbg(
  Line number in source file or `NULL`.  
   
 ## Return Value  
- Zero on success, an error code on failure.  
+
+Zero on success, an error code on failure.  
   
  These functions validate their parameters; if `buffer` or `varname` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EINVAL`.  
   
  If these functions cannot allocate enough memory, they set `buffer` to `NULL` and `numberOfElements` to 0, and return `ENOMEM`.  
   
 ## Remarks  
- The `_dupenv_s_dbg` and `_wdupenv_s_dbg` functions are identical to `_dupenv_s` and `_wdupenv_s` except that, when `_DEBUG` is defined, these functions use the debug version of [malloc](../../c-runtime-library/reference/malloc.md), [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
+
+The `_dupenv_s_dbg` and `_wdupenv_s_dbg` functions are identical to `_dupenv_s` and `_wdupenv_s` except that, when `_DEBUG` is defined, these functions use the debug version of [malloc](../../c-runtime-library/reference/malloc.md), [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
   
  You do not need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_dupenv_s` and `_wdupenv_s` are remapped to `_dupenv_s_dbg` and `_wdupenv_s_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -122,7 +126,8 @@ nonexistentvariable = (null)
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [Environmental Constants](../../c-runtime-library/environmental-constants.md)   
  [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)   
  [_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # csqrt, csqrtf, csqrtl
+
 Retrieves the square root of a complex number, with a branch cut along the negative real axis.  
   
 ## Syntax  
@@ -43,12 +44,14 @@ _Lcomplex csqrtl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number.  
   
 ## Return Value  
- The square root of `z`. The result is in the right half-plane.  
+
+The square root of `z`. The result is in the right half-plane.  
   
 |Input|SEH Exception|`_matherr` Exception|  
 |-----------|-------------------|--------------------------|  
@@ -56,7 +59,8 @@ _Lcomplex csqrtl(
 |- ∞|none|_DOMAIN|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `csqrt` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `csqrt` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `csqrt` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `csqrt` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -67,7 +71,8 @@ _Lcomplex csqrtl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

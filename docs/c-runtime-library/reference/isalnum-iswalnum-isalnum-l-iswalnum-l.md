@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isalnum, iswalnum, _isalnum_l, _iswalnum_l
+
 Determines whether an integer represents an alphanumeric character.  
   
 ## Syntax  
@@ -42,15 +43,17 @@ int _iswalnum_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `locale`  
  The locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of an alphanumeric character. `isalnum` returns a nonzero value if either `isalpha` or `isdigit` is nonzero for `c`, that is, if `c` is within the ranges A - Z, a - z, or 0 - 9. `iswalnum` returns a nonzero value if either `iswalpha` or `iswdigit` is nonzero for `c`. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+
+Each of these routines returns nonzero if `c` is a particular representation of an alphanumeric character. `isalnum` returns a nonzero value if either `isalpha` or `isdigit` is nonzero for `c`, that is, if `c` is within the ranges A - Z, a - z, or 0 - 9. `iswalnum` returns a nonzero value if either `iswalpha` or `iswdigit` is nonzero for `c`. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -75,6 +78,7 @@ int _iswalnum_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

@@ -44,7 +44,7 @@ long double sqrtl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Non-negative floating-point value

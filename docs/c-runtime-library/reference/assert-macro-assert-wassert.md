@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # assert Macro, _assert, _wassert
+
 Evaluates an expression and, when the result is `false`, prints a diagnostic message and aborts the program.  
   
 ## Syntax  
@@ -41,8 +42,9 @@ void _wassert(
 );  
 ```  
   
-#### Parameters  
- `expression`  
+### Parameters  
+
+`expression`  
  A scalar expression (including pointer expressions) that evaluates to nonzero (`true`) or 0 (`false`).  
   
  `message`  
@@ -55,7 +57,8 @@ void _wassert(
  The line number in the source file of the failed assertion.  
   
 ## Remarks  
- The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the `expression` argument to evaluate to `false` only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro `NDEBUG`. You can turn off the `assert` macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.  
+
+The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the `expression` argument to evaluate to `false` only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro `NDEBUG`. You can turn off the `assert` macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.  
   
  The `assert` macro prints a diagnostic message when `expression` evaluates to `false` (0) and calls [abort](../../c-runtime-library/reference/abort.md) to terminate program execution. No action is taken if `expression` is `true` (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.  
   
@@ -80,7 +83,8 @@ void _wassert(
  The signature of the `_assert` function is not available in a header file. The signature of the `_wassert` function is only available when the `NDEBUG` macro is not defined.  
   
 ## Example  
- In this program, the `analyze_string` function uses the `assert` macro to test several conditions related to string and length. If any of the conditions fails, the program prints a message indicating what caused the failure.  
+
+In this program, the `analyze_string` function uses the `assert` macro to test several conditions related to string and length. If any of the conditions fails, the program prints a message indicating what caused the failure.  
   
 ```  
 // crt_assert.c  
@@ -130,7 +134,8 @@ A problem caused the program to stop working correctly. Windows will close the p
  If a debugger is installed, choose the **Debug** button to start the debugger, or **Close program** to exit.  
   
 ## See Also  
- [Error Handling](../../c-runtime-library/error-handling-crt.md)   
+
+[Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [raise](../../c-runtime-library/reference/raise.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getdiskfree
+
 Uses information about a disk drive to populate a `_diskfree_t` structure.  
   
 > [!IMPORTANT]
@@ -35,18 +36,21 @@ unsigned _getdiskfree(
 );  
 ```  
   
-#### Parameters  
- [in] `drive`  
+### Parameters  
+
+[in] `drive`  
  The disk drive for which you want information.  
   
  [out] `driveinfo`  
  A `_diskfree_t` structure that will be populated with information about the drive.  
   
 ## Return Value  
- If the function succeeds, the return value is zero. If the function fails, the return value is the error code. The value `errno` is set for any errors that are returned by the operating system. For more information about error conditions that are indicated by `errno`, see [errno Constants](../../c-runtime-library/errno-constants.md).  
+
+If the function succeeds, the return value is zero. If the function fails, the return value is the error code. The value `errno` is set for any errors that are returned by the operating system. For more information about error conditions that are indicated by `errno`, see [errno Constants](../../c-runtime-library/errno-constants.md).  
   
 ## Remarks  
- The `_diskfree_t` structure is defined in Direct.h.  
+
+The `_diskfree_t` structure is defined in Direct.h.  
   
 ```  
 struct _diskfree_t {   
@@ -182,4 +186,5 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)
+
+[Directory Control](../../c-runtime-library/directory-control.md)

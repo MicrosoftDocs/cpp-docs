@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _isatty
+
 Determines whether a file descriptor is associated with a character device.  
   
 ## Syntax  
@@ -32,15 +33,18 @@ int fd
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor that refers to the device to be tested.  
   
 ## Return Value  
- `_isatty` returns a nonzero value if the descriptor is associated with a character device. Otherwise, `_isatty` returns 0.  
+
+`_isatty` returns a nonzero value if the descriptor is associated with a character device. Otherwise, `_isatty` returns 0.  
   
 ## Remarks  
- The `_isatty` function determines whether `fd` is associated with a character device (a terminal, console, printer, or serial port).  
+
+The `_isatty` function determines whether `fd` is associated with a character device (a terminal, console, printer, or serial port).  
   
  This function validates the `fd` parameter. If `fd` is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EBADF`.  
   
@@ -53,7 +57,8 @@ int fd
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -82,4 +87,5 @@ stdout has not been redirected to a file
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)
+
+[File Handling](../../c-runtime-library/file-handling.md)

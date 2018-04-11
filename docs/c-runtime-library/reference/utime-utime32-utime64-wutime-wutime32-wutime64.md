@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
+
 Set the file modification time.  
   
 ## Syntax  
@@ -52,15 +53,17 @@ int _wutime64(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  Pointer to a string that contains the path or filename.  
   
  `times`  
  Pointer to stored time values.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
+
+Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:  
   
  `EACCES`  
  Path specifies directory or read-only file  
@@ -79,7 +82,8 @@ int _wutime64(
  The date can be changed for a file if the change date is after midnight, January 1, 1970, and before the end date of the function used. `_utime` and `_wutime` use a 64-bit time value, so the end date is 23:59:59, December 31, 3000, UTC. If `_USE_32BIT_TIME_T` is defined to force the old behavior, the end date is 23:59:59 January 18, 2038, UTC. `_utime32` or `_wutime32` use a 32-bit time type regardless of whether `_USE_32BIT_TIME_T` is defined, and always have the earlier end date. `_utime64` or `_wutime64` always use the 64-bit time type, so these functions always support the later end date.  
   
 ## Remarks  
- The `_utime` function sets the modification time for the file specified by `filename`*.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If `times` is a `NULL` pointer, the modification time is set to the current local time. Otherwise, `times` must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.  
+
+The `_utime` function sets the modification time for the file specified by `filename`*.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If `times` is a `NULL` pointer, the modification time is set to the current local time. Otherwise, `times` must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.  
   
  The `_utimbuf` structure stores file access and modification times used by `_utime` to change file-modification dates. The structure has the following fields, which are both of type `time_t`:  
   
@@ -114,7 +118,8 @@ int _wutime64(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This program uses `_utime` to set the file-modification time to the current time.  
+
+This program uses `_utime` to set the file-modification time to the current time.  
   
 ```  
 // crt_utime.c  
@@ -184,7 +189,8 @@ File time modified
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   

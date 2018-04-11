@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
+
 Initializes characters of a string to a given character. More secure versions of these functions exist; see [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](../../c-runtime-library/reference/strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).  
   
 > [!IMPORTANT]
@@ -64,8 +65,9 @@ unsigned char *_mbsnset_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be altered.  
   
  `c`  
@@ -78,10 +80,12 @@ unsigned char *_mbsnset_l(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the altered string.  
+
+Returns a pointer to the altered string.  
   
 ## Remarks  
- The `_strnset` function sets, at most, the first `count` characters of `str` to `c` (converted to `char`). If `count` is greater than the length of `str`, the length of `str` is used instead of `count`.  
+
+The `_strnset` function sets, at most, the first `count` characters of `str` to `c` (converted to `char`). If `count` is greater than the length of `str`, the length of `str` is used instead of `count`.  
   
  `_wcsnset` and `_mbsnset` are wide-character and multibyte-character versions of `_strnset`. The string arguments and return value of `_wcsnset` are wide-character strings; those of `_mbsnset` are multibyte-character strings. These three functions behave identically otherwise.  
   
@@ -133,7 +137,8 @@ After:  **** is a test
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   

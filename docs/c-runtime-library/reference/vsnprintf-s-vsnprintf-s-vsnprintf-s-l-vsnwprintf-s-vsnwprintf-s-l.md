@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
+
 Write formatted output using a pointer to a list of arguments. These are versions of [vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -79,8 +80,9 @@ int _vsnwprintf_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for output.  
   
  `sizeOfBuffer`  
@@ -101,7 +103,8 @@ int _vsnwprintf_s(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- `vsnprintf_s`,`_vsnprintf_s` and `_vsnwprintf_s` return the number of characters written, not including the terminating null, or a negative value if an output error occurs. `vsnprintf_s` is identical to `_vsnprintf_s`. `vsnprintf_s` is included for compliance to the ANSI standard. `_vnsprintf` is retained for backward compatibility.  
+
+`vsnprintf_s`,`_vsnprintf_s` and `_vsnwprintf_s` return the number of characters written, not including the terminating null, or a negative value if an output error occurs. `vsnprintf_s` is identical to `_vsnprintf_s`. `vsnprintf_s` is included for compliance to the ANSI standard. `_vnsprintf` is retained for backward compatibility.  
   
  If the storage required to store the data and a terminating null exceeds `sizeOfBuffer`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in `buffer` is written and -1 returned. If execution continues after the invalid parameter handler, these functions set `buffer` to an empty string, set `errno` to `ERANGE`, and return -1.  
   
@@ -117,7 +120,8 @@ int _vsnwprintf_s(
 |`sizeOfBuffer` too small (and `count` != `_TRUNCATE`)|-1 (and `buffer` set to an empty string)|`ERANGE`|  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, then formats and writes up to `count` characters of the given data to the memory pointed to by `buffer` and appends a terminating null.  
+
+Each of these functions takes a pointer to an argument list, then formats and writes up to `count` characters of the given data to the memory pointed to by `buffer` and appends a terminating null.  
   
  If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), then these functions write as much of the string as will fit in `buffer` while leaving room for a terminating null. If the entire string (with terminating null) fits in `buffer`, then these functions return the number of characters written (not including the terminating null); otherwise, these functions return -1 to indicate that truncation occurred.  
   
@@ -183,7 +187,8 @@ nSize: -1, buff: Hi there!
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   

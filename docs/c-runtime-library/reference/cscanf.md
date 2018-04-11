@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cscanf
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_cscanf](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md) instead.  
   
 > [!IMPORTANT]

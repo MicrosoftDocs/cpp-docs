@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _chmod, _wchmod
+
 Changes the file-permission settings.  
   
 ## Syntax  
@@ -37,18 +38,21 @@ int _wchmod(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  Name of the existing file.  
   
  `pmode`  
  Permission setting for the file.  
   
 ## Return Value  
- These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file could not be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.  
+
+These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file could not be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.  
   
 ## Remarks  
- The `_chmod` function changes the permission setting of the file specified by `filename`. The permission setting controls the read and write access to the file. The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\Stat.h.  
+
+The `_chmod` function changes the permission setting of the file specified by `filename`. The permission setting controls the read and write access to the file. The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\Stat.h.  
   
  `_S_IWRITE`  
  Writing permitted.  
@@ -158,7 +162,8 @@ Mode set to read/write
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   

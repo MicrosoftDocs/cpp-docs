@@ -49,7 +49,7 @@ long double frexp(
 );  // C++ only
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tmpfile
+
 Creates a temporary file. This function is deprecated because a more secure version is available; see [tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md).  
   
 ## Syntax  
@@ -30,10 +31,12 @@ FILE *tmpfile( void );
 ```  
   
 ## Return Value  
- If successful, `tmpfile` returns a stream pointer. Otherwise, it returns a `NULL` pointer.  
+
+If successful, `tmpfile` returns a stream pointer. Otherwise, it returns a `NULL` pointer.  
   
 ## Remarks  
- The `tmpfile` function creates a temporary file and returns a pointer to that stream. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) or [tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
+
+The `tmpfile` function creates a temporary file and returns a pointer to that stream. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) or [tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
  If the file cannot be opened, `tmpfile` returns a `NULL` pointer. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.  
   
@@ -87,6 +90,7 @@ Temporary file 3 was created
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_rmtmp](../../c-runtime-library/reference/rmtmp.md)   
  [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)

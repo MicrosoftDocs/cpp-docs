@@ -32,7 +32,7 @@ int fegetenv(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *penv*<br/>
  Pointer to an **fenv_t** object to contain the current floating-point environment values.

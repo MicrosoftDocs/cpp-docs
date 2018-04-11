@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
+
 Converts a string to a 64-bit integer.  
   
 ## Syntax  
@@ -42,22 +43,25 @@ __int64 _wtoi64_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be converted.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each function returns the `__int64` value produced by interpreting the input characters as a number. The return value is 0 for `_atoi64` if the input cannot be converted to a value of that type.  
+
+Each function returns the `__int64` value produced by interpreting the input characters as a number. The return value is 0 for `_atoi64` if the input cannot be converted to a value of that type.  
   
  In the case of overflow with large positive integral values, `_atoi64` returns `I64_MAX` and `I64_MIN` in the case of overflow with large negative integral values.  
   
  In all out-of-range cases, `errno` is set to `ERANGE`. If the parameter passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return 0.  
   
 ## Remarks  
- These functions convert a character string to a 64-bit integer value.  
+
+These functions convert a character string to a 64-bit integer value.  
   
  The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') terminating the string.  
   
@@ -88,7 +92,8 @@ __int64 _wtoi64_l(
 |`_wtoi64`, `_wtoi64_l`|\<stdlib.h> or \<wchar.h>|  
   
 ## Example  
- This program shows how numbers stored as strings can be converted to numeric values using the `_atoi64` functions.  
+
+This program shows how numbers stored as strings can be converted to numeric values using the `_atoi64` functions.  
   
 ```  
 // crt_atoi64.c  
@@ -136,7 +141,8 @@ Overflow condition occurred.
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_ecvt](../../c-runtime-library/reference/ecvt.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fseek, _fseeki64
+
 Moves the file pointer to a specified location.  
   
 ## Syntax  
@@ -38,8 +39,9 @@ int _fseeki64(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `offset`  
@@ -49,10 +51,12 @@ int _fseeki64(
  Initial position.  
   
 ## Return Value  
- If successful, `fseek` and `_fseeki64` returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If `stream` is a null pointer, or if `origin` is not one of allowed values described below, `fseek` and `_fseeki64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.  
+
+If successful, `fseek` and `_fseeki64` returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If `stream` is a null pointer, or if `origin` is not one of allowed values described below, `fseek` and `_fseeki64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.  
   
 ## Remarks  
- The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with `stream` to a new location that is `offset` bytes from `origin`. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:  
+
+The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with `stream` to a new location that is `offset` bytes from `origin`. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:  
   
  `SEEK_CUR`  
  Current position of file pointer.  
@@ -129,7 +133,8 @@ This is the file 'fseek.out'.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
  [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)   
  [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   

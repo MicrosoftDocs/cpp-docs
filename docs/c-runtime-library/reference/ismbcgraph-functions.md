@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
+
 Determines whether character is a graphical character, a display character, a punctuation character, or a space character.  
   
 > [!IMPORTANT]
@@ -66,20 +67,23 @@ int _ismbcspace_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be determined.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns a nonzero value if the character satisfies the test condition, or 0 if it does not. If `c` <= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
+
+Each of these routines returns a nonzero value if the character satisfies the test condition, or 0 if it does not. If `c` <= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
   
  The versions of these functions are identical, except that the ones that have the `_l` suffix use the locale that's passed in for their locale-dependent behavior, instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
 ## Remarks  
- Each of these functions tests a given multibyte character for a given condition.  
+
+Each of these functions tests a given multibyte character for a given condition.  
   
 |Routine|Test condition|Code page 932 example|  
 |-------------|--------------------|---------------------------|  
@@ -107,10 +111,12 @@ int _ismbcspace_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   

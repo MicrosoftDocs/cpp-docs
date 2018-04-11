@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fread
+
 Reads data from a stream.  
   
 ## Syntax  
@@ -34,8 +35,9 @@ size_t fread(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for data.  
   
  `size`  
@@ -48,12 +50,14 @@ size_t fread(
  Pointer to `FILE` structure.  
   
 ## Return Value  
- `fread` returns the number of full items actually read, which may be less than `count` if an error occurs or if the end of the file is encountered before reaching `count`. Use the `feof` or `ferror` function to distinguish a read error from an end-of-file condition. If `size` or `count` is 0, `fread` returns 0 and the buffer contents are unchanged. If `stream` or `buffer` is a null pointer, `fread` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.  
+
+`fread` returns the number of full items actually read, which may be less than `count` if an error occurs or if the end of the file is encountered before reaching `count`. Use the `feof` or `ferror` function to distinguish a read error from an end-of-file condition. If `size` or `count` is 0, `fread` returns 0 and the buffer contents are unchanged. If `stream` or `buffer` is a null pointer, `fread` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `fread` function reads up to `count` items of `size` bytes from the input `stream` and stores them in `buffer`. The file pointer associated with `stream` (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.  
+
+The `fread` function reads up to `count` items of `size` bytes from the input `stream` and stores them in `buffer`. The file pointer associated with `stream` (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.  
   
  This function locks out other threads. If you need a non-locking version, use `_fread_nolock`.  
   
@@ -116,6 +120,7 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   
  [_read](../../c-runtime-library/reference/read.md)

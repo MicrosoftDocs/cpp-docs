@@ -43,7 +43,7 @@ int fpclassify(
 
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to test.

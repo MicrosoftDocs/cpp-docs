@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ungetc_nolock, _ungetwc_nolock
+
 Pushes a character back onto the stream.  
   
 ## Syntax  
@@ -36,20 +37,23 @@ wint_t _ungetwc_nolock(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be pushed.  
   
  `stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- If successful, each of these functions returns the character argument `c`. If `c` cannot be pushed back or if no character has been read, the input stream is unchanged and `_ungetc_nolock` returns `EOF`; `_ungetwc_nolock` returns `WEOF`. If `stream` is `NULL`, `EOF` or `WEOF` is returned and `errno` is set to `EINVAL`.  
+
+If successful, each of these functions returns the character argument `c`. If `c` cannot be pushed back or if no character has been read, the input stream is unchanged and `_ungetc_nolock` returns `EOF`; `_ungetwc_nolock` returns `WEOF`. If `stream` is `NULL`, `EOF` or `WEOF` is returned and `errno` is set to `EINVAL`.  
   
  For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- These functions are non-locking versions of `ungetc` and `ungetwc`. The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+These functions are non-locking versions of `ungetc` and `ungetwc`. The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. They may be faster since they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -67,6 +71,7 @@ wint_t _ungetwc_nolock(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcmp, _mbsnbcmp_l
+
 Compares the first `n` bytes of two multibyte-character strings.  
   
 > [!IMPORTANT]
@@ -42,8 +43,9 @@ int _mbsnbcmp_l(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  The strings to compare.  
   
  `count`  
@@ -53,7 +55,8 @@ int _mbsnbcmp_l(
  The locale to use.  
   
 ## Return Value  
- The return value indicates the ordinal relationship between the substrings of `string1` and `string`.  
+
+The return value indicates the ordinal relationship between the substrings of `string1` and `string`.  
   
 |Return value|Description|  
 |------------------|-----------------|  
@@ -64,7 +67,8 @@ int _mbsnbcmp_l(
  On a parameter validation error, `_mbsnbcmp` and `_mbsnbcmp_l` return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.  
   
 ## Remarks  
- The `_mbsnbcmp` functions compare at most the first `count` bytes in `string1` and `string2` and return a value that indicates the relationship between the substrings. `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. Unlike `_mbsnbcoll`, `_mbsnbcmp` is not affected by the collation order of the locale. `_mbsnbcmp` recognizes multibyte-character sequences according to the current multibyte [code page](../../c-runtime-library/code-pages.md).  
+
+The `_mbsnbcmp` functions compare at most the first `count` bytes in `string1` and `string2` and return a value that indicates the relationship between the substrings. `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. Unlike `_mbsnbcoll`, `_mbsnbcmp` is not affected by the collation order of the locale. `_mbsnbcmp` recognizes multibyte-character sequences according to the current multibyte [code page](../../c-runtime-library/code-pages.md).  
   
  `_mbsnbcmp` resembles `_mbsncmp`, except that `_mbsncmp` compares strings by characters rather than by bytes.  
   
@@ -140,7 +144,8 @@ Result:   String 1 is equal to string 2
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_mbsnbicmp, _mbsnbicmp_l](../../c-runtime-library/reference/mbsnbicmp-mbsnbicmp-l.md)   
  [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)   

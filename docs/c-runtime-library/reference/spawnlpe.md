@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # spawnlpe
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_spawnlpe](../../c-runtime-library/reference/spawnlpe-wspawnlpe.md) instead.  
   
 > [!IMPORTANT]

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mktemp, _wmktemp
+
 Creates a unique file name. More secure versions of these functions are available; see [_mktemp_s, _wmktemp_s](../../c-runtime-library/reference/mktemp-s-wmktemp-s.md).  
   
 ## Syntax  
@@ -42,15 +43,18 @@ wchar_t *_wmktemp(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `template`  
+### Parameters  
+
+`template`  
  File name pattern.  
   
 ## Return Value  
- Each of these functions returns a pointer to the modified template. The function returns `NULL` if `template` is badly formed or no more unique names can be created from the given template.  
+
+Each of these functions returns a pointer to the modified template. The function returns `NULL` if `template` is badly formed or no more unique names can be created from the given template.  
   
 ## Remarks  
- The `_mktemp` function creates a unique file name by modifying the `template` argument. `_mktemp` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. `_wmktemp` is a wide-character version of `_mktemp`; the argument and return value of `_wmktemp` are wide-character strings. `_wmktemp` and `_mktemp` behave identically otherwise, except that `_wmktemp` does not handle multibyte-character strings.  
+
+The `_mktemp` function creates a unique file name by modifying the `template` argument. `_mktemp` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. `_wmktemp` is a wide-character version of `_mktemp`; the argument and return value of `_wmktemp` are wide-character strings. `_wmktemp` and `_mktemp` behave identically otherwise, except that `_wmktemp` does not handle multibyte-character strings.  
   
 ### Generic-Text Routine Mappings  
   
@@ -186,7 +190,8 @@ Out of unique filenames.
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
  [_getpid](../../c-runtime-library/reference/getpid.md)   

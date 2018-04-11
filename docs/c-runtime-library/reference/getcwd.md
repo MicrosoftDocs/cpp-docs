@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getcwd
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_getcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) instead.  
   
 > [!IMPORTANT]

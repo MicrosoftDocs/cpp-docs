@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
+
 Write formatted data to a string with the ability to specify the order that the parameters are used in the format string.  
   
 ## Syntax  
@@ -54,8 +55,9 @@ int _swprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for output  
   
  `sizeOfBuffer`  
@@ -73,10 +75,12 @@ int _swprintf_p_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or -1 if an error occurred.  
+
+The number of characters written, or -1 if an error occurred.  
   
 ## Remarks  
- The `_sprintf_p` function formats and stores a series of characters and values in `buffer`. Each argument in the `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). A `NULL` character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined. The difference between `_sprintf_p` and `sprintf_s` is that `_sprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+
+The `_sprintf_p` function formats and stores a series of characters and values in `buffer`. Each argument in the `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). A `NULL` character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined. The difference between `_sprintf_p` and `sprintf_s` is that `_sprintf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
  `_swprintf_p` is a wide-character version of `_sprintf_p`; the pointer arguments to `_swprintf_p` are wide-character strings. Detection of encoding errors in `_swprintf_p` may differ from that in `_sprintf_p`. `_swprintf_p` and `fwprintf_p` behave identically except that `_swprintf_p` writes output to a string rather than to a destination of type `FILE`, and `_swprintf_p` requires the `count` parameter to specify the maximum number of characters to be written. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   
@@ -174,7 +178,8 @@ Wrote -1 characters
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](../../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](../../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)   

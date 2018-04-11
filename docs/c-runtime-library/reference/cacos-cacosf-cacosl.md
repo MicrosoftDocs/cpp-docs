@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cacos, cacosf, cacosl
+
 Retrieves the arccosine of a complex number, with branch cuts outside the interval [-1, +1] along the real axis.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex cacosl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The arccosine of `z`, in radians. The result is unbounded along the imaginary axis, and  in the  in the interval [0, π] along the real axis. A domain error will occur if `z` is outside the interval [-1, +1].  
+
+The arccosine of `z`, in radians. The result is unbounded along the imaginary axis, and  in the  in the interval [0, π] along the real axis. A domain error will occur if `z` is outside the interval [-1, +1].  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cacos` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacos` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `cacos` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacos` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex cacosl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

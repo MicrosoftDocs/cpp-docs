@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # freopen, _wfreopen
+
 Reassigns a file pointer. More secure versions of these functions are available; see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
   
 ## Syntax  
@@ -38,8 +39,9 @@ FILE *_wfreopen(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  Path of new file.  
   
  `mode`  
@@ -49,12 +51,14 @@ FILE *_wfreopen(
  Pointer to `FILE` structure.  
   
 ## Return Value  
- Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a `NULL` pointer value. If `path`, `mode`, or `stream` is a null pointer, or if `filename` is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.  
+
+Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a `NULL` pointer value. If `path`, `mode`, or `stream` is a null pointer, or if `filename` is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- More secure versions of these functions exist, see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
+
+More secure versions of these functions exist, see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
   
  The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`. `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.  
   
@@ -147,7 +151,8 @@ This will go to the file 'freopen.out'
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
  [_fileno](../../c-runtime-library/reference/fileno.md)   

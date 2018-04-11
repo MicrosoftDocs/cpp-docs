@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # printf, _printf_l, wprintf, _wprintf_l
+
 Prints formatted output to the standard output stream. More secure versions of these functions are available; see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _wprintf_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control.  
   
  `argument`  
@@ -57,12 +59,14 @@ int _wprintf_l(
  The locale to use.  
   
 ## Return Value  
- Returns the number of characters printed, or a negative value if an error occurs. If `format` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`. If **EOF** (0xFFFF) is encountered in `argument`, the function returns -1.  
+
+Returns the number of characters printed, or a negative value if an error occurs. If `format` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`. If **EOF** (0xFFFF) is encountered in `argument`, the function returns -1.  
   
  For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.  
+
+The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.  
   
  `wprintf` is a wide-character version of `printf`; `format` is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.  
   
@@ -195,7 +199,8 @@ Address as:   0012FF3C
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

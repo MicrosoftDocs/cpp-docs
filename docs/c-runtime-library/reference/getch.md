@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getch
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_getch](../../c-runtime-library/reference/getch-getwch.md) instead.  
   
 > [!IMPORTANT]

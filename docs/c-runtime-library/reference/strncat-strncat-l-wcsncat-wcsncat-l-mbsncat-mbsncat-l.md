@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
+
 Appends characters of a string. More secure versions of these functions are available, see [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .  
   
 > [!IMPORTANT]
@@ -77,8 +78,9 @@ unsigned char *_mbsncat_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Null-terminated destination string.  
   
  `strSource`  
@@ -91,10 +93,12 @@ unsigned char *_mbsncat_l(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the destination string. No return value is reserved to indicate an error.  
+
+Returns a pointer to the destination string. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `strncat` function appends, at most, the first `count` characters of `strSource` to `strDest`. The initial character of `strSource` overwrites the terminating null character of `strDest`. If a null character appears in `strSource` before `count` characters are appended, `strncat` appends all characters from `strSource`, up to the null character. If `count` is greater than the length of `strSource`, the length of `strSource` is used in place of `count`. The all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.  
+
+The `strncat` function appends, at most, the first `count` characters of `strSource` to `strDest`. The initial character of `strSource` overwrites the terminating null character of `strDest`. If a null character appears in `strSource` before `count` characters are appended, `strncat` appends all characters from `strSource`, up to the null character. If `count` is greater than the length of `strSource`, the length of `strSource` is used in place of `count`. The all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.  
   
 > [!IMPORTANT]
 >  `strncat` does not check for sufficient space in `strDest`; it is therefore a potential cause of buffer overruns. Keep in mind that `count` limits the number of characters appended; it is not a limit on the size of `strDest`. See the example below. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -176,7 +180,8 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
  Note that `BadAppend` caused a buffer overrun.  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   
  [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   

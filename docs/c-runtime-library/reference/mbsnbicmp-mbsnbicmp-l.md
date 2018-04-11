@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbicmp, _mbsnbicmp_l
+
 Compares `n` bytes of two multibyte-character strings, and ignores case.  
   
 > [!IMPORTANT]
@@ -36,15 +37,17 @@ int _mbsnbicmp(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  Null-terminated strings to compare.  
   
  `count`  
  Number of bytes to compare.  
   
 ## Return Value  
- The return value indicates the relationship between the substrings.  
+
+The return value indicates the relationship between the substrings.  
   
 |Return value|Description|  
 |------------------|-----------------|  
@@ -55,7 +58,8 @@ int _mbsnbicmp(
  On an error, `_mbsnbcmp` returns `_NLSCMPERROR`, which is defined in String.h and Mbstring.h.  
   
 ## Remarks  
- The `_mbsnbicmp` function performs an ordinal comparison of at most the first `count` bytes of `string1` and `string2`. The comparison is performed by converting each character to lowercase; `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. The comparison ends if a terminating null character is reached in either string before `count` characters are compared. If the strings are equal when a terminating null character is reached in either string before `count` characters are compared, the shorter string is lesser.  
+
+The `_mbsnbicmp` function performs an ordinal comparison of at most the first `count` bytes of `string1` and `string2`. The comparison is performed by converting each character to lowercase; `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. The comparison ends if a terminating null character is reached in either string before `count` characters are compared. If the strings are equal when a terminating null character is reached in either string before `count` characters are compared, the shorter string is lesser.  
   
  `_mbsnbicmp`  is similar to `_mbsnicmp`, except that it compares strings up to `count` bytes instead of by characters.  
   
@@ -81,10 +85,12 @@ int _mbsnbicmp(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md).  
+
+See the example for [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
  [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)

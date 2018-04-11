@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fopen_s, _wfopen_s
+
 Opens a file. These versions of [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -38,8 +39,9 @@ errno_t _wfopen_s(
 );  
 ```  
   
-#### Parameters  
- [out] `pFile`  
+### Parameters  
+
+[out] `pFile`  
  A pointer to the file pointer that will receive the pointer to the opened file.  
   
  [in] `filename`  
@@ -49,7 +51,8 @@ errno_t _wfopen_s(
  Type of access permitted.  
   
 ## Return Value  
- Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these error codes.  
+
+Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these error codes.  
   
 ### Error Conditions  
   
@@ -60,7 +63,8 @@ errno_t _wfopen_s(
 |any|any|NULL|`EINVAL`|unchanged|  
   
 ## Remarks  
- Files that are opened by `fopen_s` and `_wfopen_s` are not sharable. If you require that a file be sharable, use [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, `_SH_DENYNO` for read/write sharing.  
+
+Files that are opened by `fopen_s` and `_wfopen_s` are not sharable. If you require that a file be sharable, use [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, `_SH_DENYNO` for read/write sharing.  
   
  The `fopen_s` function opens the file that's specified by `filename`. `_wfopen_s` is a wide-character version of `fopen_s`; the arguments to `_wfopen_s` are wide-character strings. `_wfopen_s` and `fopen_s` behave identically otherwise.  
   
@@ -71,7 +75,8 @@ errno_t _wfopen_s(
  Always check the return value to see if the function succeeded before you perform any further operations on the file. If an error occurs, the error code is returned and the global variable `errno` is set. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Unicode support  
- `fopen_s` supports Unicode file streams. To open a new or existing Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen_s`:  
+
+`fopen_s` supports Unicode file streams. To open a new or existing Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen_s`:  
   
  `fopen_s(&fp, "newfile.txt", "rw, ccs=`*encoding*`");`  
   
@@ -200,7 +205,8 @@ errno_t _wfopen_s(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
  The `c`, `n`, and `t` `mode` options are Microsoft extensions for `fopen_s` and `_fdopen` and should not be used where ANSI portability is desired.  
   
@@ -269,7 +275,8 @@ Number of files closed by _fcloseall: 1
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
  [ferror](../../c-runtime-library/reference/ferror.md)   

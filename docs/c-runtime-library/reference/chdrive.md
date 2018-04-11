@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _chdrive
+
 Changes the current working drive.  
   
 > [!IMPORTANT]
@@ -34,15 +35,18 @@ int _chdrive(
 );  
 ```  
   
-#### Parameters  
- `drive`  
+### Parameters  
+
+`drive`  
  An integer from 1 through 26 that specifies the current working drive (1=A, 2=B, and so forth).  
   
 ## Return Value  
- Zero (0) if the current working drive was changed successfully; otherwise, -1.  
+
+Zero (0) if the current working drive was changed successfully; otherwise, -1.  
   
 ## Remarks  
- If `drive` is not in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, `errno` is set to `EACCES`, and `_doserrno` is set to `ERROR_INVALID_DRIVE`.  
+
+If `drive` is not in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, `errno` is set to `EACCES`, and `_doserrno` is set to `ERROR_INVALID_DRIVE`.  
   
  The **_chdrive** function is not thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **SetCurrentDirectory**.  
   
@@ -57,10 +61,12 @@ int _chdrive(
  For more information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [_getdrive](../../c-runtime-library/reference/getdrive.md).  
+
+See the example for [_getdrive](../../c-runtime-library/reference/getdrive.md).  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _heapwalk
+
 Traverses the heap and returns information about the next entry.  
   
 > [!IMPORTANT]
@@ -34,12 +35,14 @@ int _heapwalk(
 );  
 ```  
   
-#### Parameters  
- `entryinfo`  
+### Parameters  
+
+`entryinfo`  
  Buffer to contain heap information.  
   
 ## Return Value  
- `_heapwalk` returns one of the following integer manifest constants defined in Malloc.h.  
+
+`_heapwalk` returns one of the following integer manifest constants defined in Malloc.h.  
   
  `_HEAPBADBEGIN`  
  Initial header information invalid or not found.  
@@ -62,7 +65,8 @@ int _heapwalk(
  In addition, if an error occurs, `_heapwalk` sets `errno` to `ENOSYS`.  
   
 ## Remarks  
- The `_heapwalk` function helps debug heap-related problems in programs. The function walks through the heap, traversing one entry per call, and returns a pointer to a structure of type `_HEAPINFO` that contains information about the next heap entry. The `_HEAPINFO` type, defined in Malloc.h, contains the following elements.  
+
+The `_heapwalk` function helps debug heap-related problems in programs. The function walks through the heap, traversing one entry per call, and returns a pointer to a structure of type `_HEAPINFO` that contains information about the next heap entry. The `_HEAPINFO` type, defined in Malloc.h, contains the following elements.  
   
  `int *_pentry`  
  Heap entry pointer.  
@@ -169,7 +173,8 @@ OK - end of heap
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [_heapadd](../../c-runtime-library/heapadd.md)   
  [_heapchk](../../c-runtime-library/reference/heapchk.md)   
  [_heapmin](../../c-runtime-library/reference/heapmin.md)   

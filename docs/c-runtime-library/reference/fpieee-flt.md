@@ -34,7 +34,7 @@ int _fpieee_flt(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *excCode*<br/>
  Exception code.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
+
 Write formatted data to a string. These are versions of [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -66,8 +67,9 @@ int swprintf_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for output  
   
  `sizeOfBuffer`  
@@ -85,12 +87,14 @@ int swprintf_s(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
+
+The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, `sprintf_s` and `swprintf_s` return -1 and set `errno` to `EINVAL`.  
   
  `sprintf_s` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf_s` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.  
   
 ## Remarks  
- The `sprintf_s` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.  
+
+The `sprintf_s` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.  
   
  One main difference between `sprintf_s` and `sprintf` is that `sprintf_s` checks the format string for valid formatting characters, whereas `sprintf` only checks if the format string or buffer are `NULL` pointers. If either check fails, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.  
   
@@ -179,7 +183,8 @@ wrote -1 characters
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   
  [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)   

@@ -32,7 +32,7 @@ int feraiseexcept(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *excepts*<br/>
  The floating-point exceptions to raise.

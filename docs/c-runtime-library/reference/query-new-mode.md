@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _query_new_mode
+
 Returns an integer indicating the new handler mode set by `_set_new_mode` for `malloc`.  
   
 ## Syntax  
@@ -33,10 +34,12 @@ Returns an integer indicating the new handler mode set by `_set_new_mode` for `m
 ```  
   
 ## Return Value  
- Returns the current new handler mode, namely 0 or 1, for `malloc`. A return value of 1 indicates that, on failure to allocate memory, `malloc` calls the new handler routine; a return value of 0 indicates that it does not.  
+
+Returns the current new handler mode, namely 0 or 1, for `malloc`. A return value of 1 indicates that, on failure to allocate memory, `malloc` calls the new handler routine; a return value of 0 indicates that it does not.  
   
 ## Remarks  
- The C++ `_query_new_mode` function returns an integer that indicates the new handler mode that is set by the C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function for [malloc](../../c-runtime-library/reference/malloc.md). The new handler mode indicates whether, on failure to allocate memory, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure. You can use `_set_new_mode` to override this behavior so that on failure `malloc` calls the new handler routine in the same way that the **new** operator does when it fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
+
+The C++ `_query_new_mode` function returns an integer that indicates the new handler mode that is set by the C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function for [malloc](../../c-runtime-library/reference/malloc.md). The new handler mode indicates whether, on failure to allocate memory, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure. You can use `_set_new_mode` to override this behavior so that on failure `malloc` calls the new handler routine in the same way that the **new** operator does when it fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
   
 ## Requirements  
   
@@ -47,10 +50,12 @@ Returns an integer indicating the new handler mode set by `_set_new_mode` for `m
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [free](../../c-runtime-library/reference/free.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)   

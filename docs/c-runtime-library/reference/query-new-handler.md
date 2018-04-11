@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _query_new_handler
+
 Returns the address of the current new handler routine.  
   
 ## Syntax  
@@ -32,10 +33,12 @@ _PNH _query_new_handler(
 ```  
   
 ## Return Value  
- Returns the address of the current new handler routine as set by `_set_new_handler`.  
+
+Returns the address of the current new handler routine as set by `_set_new_handler`.  
   
 ## Remarks  
- The C++ `_query_new_handler` function returns the address of the current exception-handling function set by the C++ [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **new** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
+
+The C++ `_query_new_handler` function returns the address of the current exception-handling function set by the C++ [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md) function. `_set_new_handler` is used to specify an exception-handling function that is to gain control if the **new** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.  
   
 ## Requirements  
   
@@ -46,8 +49,10 @@ _PNH _query_new_handler(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [free](../../c-runtime-library/reference/free.md)

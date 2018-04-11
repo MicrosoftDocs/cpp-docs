@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getenv, _wgetenv
+
 Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
   
 > [!IMPORTANT]
@@ -37,15 +38,18 @@ wchar_t *_wgetenv(
 );  
 ```  
   
-#### Parameters  
- `varname`  
+### Parameters  
+
+`varname`  
  Environment variable name.  
   
 ## Return Value  
- Returns a pointer to the environment table entry containing `varname`. It is not safe to modify the value of the environment variable using the returned pointer. Use the `_putenv` function to modify the value of an environment variable. The return value is `NULL` if `varname` is not found in the environment table.  
+
+Returns a pointer to the environment table entry containing `varname`. It is not safe to modify the value of the environment variable using the returned pointer. Use the `_putenv` function to modify the value of an environment variable. The return value is `NULL` if `varname` is not found in the environment table.  
   
 ## Remarks  
- The `getenv` function searches the list of environment variables for `varname`. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.  
+
+The `getenv` function searches the list of environment variables for `varname`. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.  
   
  If `varname` is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.  
   
@@ -123,6 +127,7 @@ New LIB variable is: c:\mylib;c:\yourlib
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)   
  [Environmental Constants](../../c-runtime-library/environmental-constants.md)

@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # open
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_open](../../c-runtime-library/reference/open-wopen.md) instead.

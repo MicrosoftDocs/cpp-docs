@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wcrtomb
+
 Convert a wide character into its multibyte character representation. A more secure version of this function is available; see [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md).  
   
 ## Syntax  
@@ -39,8 +40,9 @@ size_t wcrtomb(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `mbchar`  
+### Parameters  
+
+[out] `mbchar`  
  The resulting multibyte converted character.  
   
  [in] `wchar`  
@@ -50,10 +52,12 @@ size_t wcrtomb(
  A pointer to an `mbstate_t` object.  
   
 ## Return Value  
- Returns the number of bytes required to represent the converted multibyte character, otherwise a -1 if an error occurs.  
+
+Returns the number of bytes required to represent the converted multibyte character, otherwise a -1 if an error occurs.  
   
 ## Remarks  
- The `wcrtomb` function converts a wide character, beginning in the specified conversion state contained in `mbstate`, from the value contained in `wchar`, into the address represented by `mbchar`. The return value is the number of bytes required to represent the corresponding multibyte character, but it will not return more than `MB_CUR_MAX` bytes.  
+
+The `wcrtomb` function converts a wide character, beginning in the specified conversion state contained in `mbstate`, from the value contained in `wchar`, into the address represented by `mbchar`. The return value is the number of bytes required to represent the corresponding multibyte character, but it will not return more than `MB_CUR_MAX` bytes.  
   
  If `mbstate` is null, the internal `mbstate_t` object containing the conversion state of `mbchar` is used. If the character sequence `wchar` does not have a corresponding multibyte character representation, a -1 is returned and the `errno` is set to `EILSEQ`.  
   
@@ -62,7 +66,8 @@ size_t wcrtomb(
  In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
 ## Exceptions  
- The `wcrtomb` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and while the `mbstate` is null.  
+
+The `wcrtomb` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and while the `mbstate` is null.  
   
 ## Example  
   
@@ -114,7 +119,8 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 |`wcrtomb`|\<wchar.h>|  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [mbsinit](../../c-runtime-library/reference/mbsinit.md)

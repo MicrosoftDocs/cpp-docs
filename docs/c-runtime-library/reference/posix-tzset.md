@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tzset
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_tzset](../../c-runtime-library/reference/tzset.md) instead.  
   
 > [!IMPORTANT]

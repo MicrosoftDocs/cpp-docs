@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isgraph, iswgraph, _isgraph_l, _iswgraph_l
+
 Determines whether an integer represents a graphical character.  
   
 ## Syntax  
@@ -42,12 +43,14 @@ int _iswgraph_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a printable character other than a space. `isgraph` returns a nonzero value if `c` is a printable character other than a space. `iswgraph` returns a nonzero value if `c` is a printable wide character other than a wide character space. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+
+Each of these routines returns nonzero if `c` is a particular representation of a printable character other than a space. `isgraph` returns a nonzero value if `c` is a printable character other than a space. `iswgraph` returns a nonzero value if `c` is a printable wide character other than a wide character space. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -72,6 +75,7 @@ int _iswgraph_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

@@ -34,7 +34,7 @@ int fegetexceptflag(
 
 ```
 
-#### Parameters
+### Parameters
 
 *pstatus*<br/>
  A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *excepts*.

@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vscanf_s, vwscanf_s
+
 Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -35,20 +36,23 @@ int vwscanf_s(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control string.  
   
  `arglist`  
  Variable argument list.  
   
 ## Return Value  
- Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `vscanf_s` and `vwscanf_s` return `EOF` and set `errno` to `EINVAL`.  
+
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `vscanf_s` and `vwscanf_s` return `EOF` and set `errno` to `EINVAL`.  
   
  For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `vscanf_s` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
+
+The `vscanf_s` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
   
  `vwscanf_s` is a wide-character version of `vscanf_s`; the `format` argument to `vwscanf_s` is a wide-character string. `vwscanf_s` and `vscanf_s` behave identically if the stream is opened in ANSI mode. `vscanf_s` doesn't support input from a UNICODE stream.  
   
@@ -142,7 +146,8 @@ The contents are: 36 92.300003 y n Wide characters
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   

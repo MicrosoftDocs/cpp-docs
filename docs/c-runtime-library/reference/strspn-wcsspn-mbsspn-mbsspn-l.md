@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strspn, wcsspn, _mbsspn, _mbsspn_l
+
 Returns the index of the first character, in a string, that does not belong to a set of characters.  
   
 > [!IMPORTANT]
@@ -48,8 +49,9 @@ size_t _mbsspn_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to search.  
   
  `strCharSet`  
@@ -59,10 +61,12 @@ size_t _mbsspn_l(
  Locale to use.  
   
 ## Return Value  
- Returns an integer value specifying the length of the substring in `str` that consists entirely of characters in `strCharSet`. If `str` begins with a character not in `strCharSet`, the function returns 0.  
+
+Returns an integer value specifying the length of the substring in `str` that consists entirely of characters in `strCharSet`. If `str` begins with a character not in `strCharSet`, the function returns 0.  
   
 ## Remarks  
- The `strspn` function returns the index of the first character in `str` that does not belong to the set of characters in `strCharSet`. The search does not include terminating null characters.  
+
+The `strspn` function returns the index of the first character in `str` that does not belong to the set of characters in `strCharSet`. The search does not include terminating null characters.  
   
  `wcsspn` and `_mbsspn` are wide-character and multibyte-character versions of `strspn`. The arguments of `wcsspn` are wide-character strings; those of `_mbsspn` are multibyte-character strings. `_mbsspn` validates its parameters. If `str` or `strCharSet` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbspn` sets `errno` to `EINVAL` and returns 0. `strspn` and `wcsspn` do not validate their parameters. These three functions behave identically otherwise.  
   
@@ -113,7 +117,8 @@ The portion of 'cabbage' containing only a, b, or c is 5 bytes long
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l](../../c-runtime-library/reference/strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)   

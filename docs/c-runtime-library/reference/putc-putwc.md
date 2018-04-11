@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # putc, putwc
+
 Writes a character to a stream.  
   
 ## Syntax  
@@ -37,20 +38,23 @@ wint_t putwc(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be written.  
   
  `stream`  
  Pointer to **FILE** structure.  
   
 ## Return Value  
- Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return `EOF`; `putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](../../c-runtime-library/reference/ferror.md) or [feof](../../c-runtime-library/reference/feof.md) to check for an error or end of file. If passed a null pointer for `stream`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` or **WEOF** and set `errno` to `EINVAL`.  
+
+Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return `EOF`; `putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](../../c-runtime-library/reference/ferror.md) or [feof](../../c-runtime-library/reference/feof.md) to check for an error or end of file. If passed a null pointer for `stream`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` or **WEOF** and set `errno` to `EINVAL`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- The `putc` routine writes the single character `c` to the output `stream` at the current position. Any integer can be passed to `putc`, but only the lower 8 bits are written. The `putchar` routine is identical to **putc(** `c`**, stdout )**. For each routine, if a read error occurs, the error indicator for the stream is set. `putc` and `putchar` are similar to `fputc` and `_fputchar`, respectively, but are implemented both as functions and as macros (see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). `putwc` and `putwchar` are wide-character versions of `putc` and `putchar`, respectively. `putwc` and `putc` behave identically if the stream is opened in ANSI mode. `putc` doesn't currently support output into a UNICODE stream.  
+
+The `putc` routine writes the single character `c` to the output `stream` at the current position. Any integer can be passed to `putc`, but only the lower 8 bits are written. The `putchar` routine is identical to **putc(** `c`**, stdout )**. For each routine, if a read error occurs, the error indicator for the stream is set. `putc` and `putchar` are similar to `fputc` and `_fputchar`, respectively, but are implemented both as functions and as macros (see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). `putwc` and `putwchar` are wide-character versions of `putc` and `putchar`, respectively. `putwc` and `putc` behave identically if the stream is opened in ANSI mode. `putc` doesn't currently support output into a UNICODE stream.  
   
  The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. For more information, see **_putc_nolock, _putwc_nolock**.  
   
@@ -70,7 +74,8 @@ wint_t putwc(
 The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -104,6 +109,7 @@ This is the line of output
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _expand
+
 Changes the size of a memory block.  
   
 ## Syntax  
@@ -32,15 +33,17 @@ void *_expand(
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  Pointer to previously allocated memory block.  
   
  `size`  
  New size in bytes.  
   
 ## Return Value  
- `_expand` returns a void pointer to the reallocated memory block. `_expand`, unlike `realloc`, cannot move a block to change its size. Thus, if there is sufficient memory available to expand the block without moving it, the `memblock` parameter to `_expand` is the same as the return value.  
+
+`_expand` returns a void pointer to the reallocated memory block. `_expand`, unlike `realloc`, cannot move a block to change its size. Thus, if there is sufficient memory available to expand the block without moving it, the `memblock` parameter to `_expand` is the same as the return value.  
   
  `_expand` returns `NULL` when an error is detected during its operation. For example, if `_expand` is used to shrink a memory block, it might detect corruption in the small block heap or an invalid block pointer and return `NULL`.  
   
@@ -49,7 +52,8 @@ void *_expand(
  The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To check the new size of the item, use `_msize`. To get a pointer to a type other than `void`, use a type cast on the return value.  
   
 ## Remarks  
- The `_expand` function changes the size of a previously allocated memory block by trying to expand or contract the block without moving its location in the heap. The `memblock` parameter points to the beginning of the block. The `size` parameter gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes. `memblock` should not be a block that has been freed.  
+
+The `_expand` function changes the size of a previously allocated memory block by trying to expand or contract the block without moving its location in the heap. The `memblock` parameter points to the beginning of the block. The `size` parameter gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes. `memblock` should not be a block that has been freed.  
   
 > [!NOTE]
 >  On 64-bit platforms, `_expand` might not contract the block if the new size is less than the current size; in particular, if the block was less than 16K in size and therefore allocated in the Low Fragmentation Heap, `_expand` leaves the block unchanged and returns `memblock`.  
@@ -101,7 +105,8 @@ Expanded block to 1024 bytes at 002C12BC
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [free](../../c-runtime-library/reference/free.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _umask_s
+
 Sets the default file-permission mask. A version of [_umask](../../c-runtime-library/reference/umask.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -32,15 +33,17 @@ errno_t _umask_s(
 );  
 ```  
   
-#### Parameters  
- [in] `mode`  
+### Parameters  
+
+[in] `mode`  
  Default permission setting.  
   
  [out] `oldMode`  
  The previous value of the permission setting.  
   
 ## Return Value  
- Returns an error code if `Mode` does not specify a valid mode or the `pOldMode` pointer is `NULL`.  
+
+Returns an error code if `Mode` does not specify a valid mode or the `pOldMode` pointer is `NULL`.  
   
 ### Error Conditions  
   
@@ -52,7 +55,8 @@ errno_t _umask_s(
  If one of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_umask_s` returns `EINVAL` and sets `errno` to `EINVAL`.  
   
 ## Remarks  
- The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
+
+The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
   
  The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:  
   
@@ -112,7 +116,8 @@ Oldmask = 0x0000
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

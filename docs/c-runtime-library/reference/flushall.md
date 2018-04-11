@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _flushall
+
 Flushes all streams; clears all buffers.  
   
 ## Syntax  
@@ -30,10 +31,12 @@ int _flushall( void );
 ```  
   
 ## Return Value  
- `_flushall` returns the number of open streams (input and output). There is no error return.  
+
+`_flushall` returns the number of open streams (input and output). There is no error return.  
   
 ## Remarks  
- By default, the `_flushall` function writes to appropriate files the contents of all buffers associated with open output streams. All buffers associated with open input streams are cleared of their current contents. (These buffers are normally maintained by the operating system, which determines the optimal time to write the data automatically to disk: when a buffer is full, when a stream is closed, or when a program terminates normally without closing streams.)  
+
+By default, the `_flushall` function writes to appropriate files the contents of all buffers associated with open output streams. All buffers associated with open input streams are cleared of their current contents. (These buffers are normally maintained by the operating system, which determines the optimal time to write the data automatically to disk: when a buffer is full, when a stream is closed, or when a program terminates normally without closing streams.)  
   
  If a read follows a call to `_flushall`, new data is read from the input files into the buffers. All streams remain open after the call to `_flushall`.  
   
@@ -72,7 +75,8 @@ There were 3 streams flushed
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_commit](../../c-runtime-library/reference/commit.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [fflush](../../c-runtime-library/reference/fflush.md)   

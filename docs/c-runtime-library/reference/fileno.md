@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fileno
+
 Gets the file descriptor associated with a stream.  
   
 ## Syntax  
@@ -31,12 +32,14 @@ int _fileno(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- `_fileno` returns the file descriptor. There is no error return. The result is undefined if `stream` does not specify an open file. If stream is `NULL`, `_fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
+
+`_fileno` returns the file descriptor. There is no error return. The result is undefined if `stream` does not specify an open file. If stream is `NULL`, `_fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -44,7 +47,8 @@ int _fileno(
 >  If `stdout` or `stderr` is not associated with an output stream (for example, in a Windows application without a console window), the file descriptor returned is -2. In previous versions, the file descriptor returned was -1. This change allows applications to distinguish this condition from an error.  
   
 ## Remarks  
- The `_fileno` routine returns the file descriptor currently associated with `stream`. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).  
+
+The `_fileno` routine returns the file descriptor currently associated with `stream`. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).  
   
 ## Requirements  
   
@@ -79,7 +83,8 @@ The file descriptor for stderr is 2
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
  [_filelength, _filelengthi64](../../c-runtime-library/reference/filelength-filelengthi64.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cwait
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_cwait](../../c-runtime-library/reference/cwait.md) instead.  
   
 > [!IMPORTANT]

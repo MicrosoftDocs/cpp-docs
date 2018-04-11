@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
+
 Get status information on a file.  
   
 ## Syntax  
@@ -76,22 +77,25 @@ int _wstat64i32(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  Pointer to a string containing the path of existing file or directory.  
   
  `buffer`  
  Pointer to structure that stores results.  
   
 ## Return Value  
- Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
+
+Each of these functions returns 0 if the file-status information is obtained. A return value of -1 indicates an error, in which case `errno` is set to `ENOENT`, indicating that the filename or path could not be found. A return value of `EINVAL` indicates an invalid parameter; `errno` is also set to `EINVAL` in this case.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   
  The date stamp on a file can be represented if it is later than midnight, January 1, 1970, and before 23:59:59, December 31, 3000, UTC, unless you use `_stat32` or `_wstat32`, or have defined `_USE_32BIT_TIME_T`, in which case the date can be represented only until 23:59:59 January 18, 2038, UTC.  
   
 ## Remarks  
- The `_stat` function obtains information about the file or directory specified by `path` and stores it in the structure pointed to by `buffer`. `_stat` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.  
+
+The `_stat` function obtains information about the file or directory specified by `path` and stores it in the structure pointed to by `buffer`. `_stat` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.  
   
  `_wstat` is a wide-character version of `_stat`; the `path` argument to `_wstat` is a wide-character string. `_wstat` and `_stat` behave identically except that `_wstat` does not handle multibyte-character strings.  
   
@@ -237,7 +241,8 @@ Time modified : Thu Feb 07 14:39:36 2002
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _putchar_nolock, _putwchar_nolock
+
 Writes a character to **stdout** without locking the thread.  
   
 ## Syntax  
@@ -36,15 +37,18 @@ wint_t _putwchar_nolock(
   
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be written.  
   
 ## Return Value  
- See **putchar, putwchar**.  
+
+See **putchar, putwchar**.  
   
 ## Remarks  
- **putchar_nolock** and `_putwchar_nolock` are identical to the versions without the **_nolock** suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+**putchar_nolock** and `_putwchar_nolock` are identical to the versions without the **_nolock** suffix except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -62,7 +66,8 @@ wint_t _putwchar_nolock(
 The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -95,6 +100,7 @@ This is the line of output
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)

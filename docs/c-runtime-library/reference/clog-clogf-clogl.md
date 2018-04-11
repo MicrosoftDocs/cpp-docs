@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # clog, clogf, clogl
+
 Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.  
   
 ## Syntax  
@@ -43,12 +44,14 @@ _Lcomplex clogl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  The base of the logarithm.  
   
 ## Return Value  
- The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.  
+
+The natural logarithm of `z`. The result is unbounded along the real axis and in the interval [-iπ, +iπ] along the imaginary axis.  
   
  The possible return values are:  
   
@@ -61,7 +64,8 @@ _Lcomplex clogl(
 |+ ∞|+ ∞|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `clog` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `clog` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `clog` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `clog` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -72,7 +76,8 @@ _Lcomplex clogl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)   
  [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)   
  [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)

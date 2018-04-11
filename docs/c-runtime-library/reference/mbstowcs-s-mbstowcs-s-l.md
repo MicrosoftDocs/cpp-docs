@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbstowcs_s, _mbstowcs_s_l
+
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. Versions of [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -58,8 +59,9 @@ errno_t _mbstowcs_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `pReturnValue`  
+### Parameters  
+
+[out] `pReturnValue`  
  The number of characters converted.  
   
  [out] `wcstr`  
@@ -78,7 +80,8 @@ errno_t _mbstowcs_s_l(
  The locale to use.  
   
 ## Return Value  
- Zero if successful, an error code on failure.  
+
+Zero if successful, an error code on failure.  
   
 |Error condition|Return value and `errno`|  
 |---------------------|------------------------------|  
@@ -90,7 +93,8 @@ errno_t _mbstowcs_s_l(
  If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.  
   
 ## Remarks  
- The `mbstowcs_s` function converts a string of multibyte characters pointed to by `mbstr` into wide characters stored in the buffer pointed to by `wcstr`. The conversion will continue for each character until one of these conditions is met:  
+
+The `mbstowcs_s` function converts a string of multibyte characters pointed to by `mbstr` into wide characters stored in the buffer pointed to by `wcstr`. The conversion will continue for each character until one of these conditions is met:  
   
 -   A multibyte null character is encountered  
   
@@ -125,7 +129,8 @@ errno_t _mbstowcs_s_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   

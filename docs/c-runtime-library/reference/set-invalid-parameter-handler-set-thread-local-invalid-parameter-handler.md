@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
+
 Sets a function to be called when the CRT detects an invalid argument.  
   
 ## Syntax  
@@ -34,15 +35,18 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 );  
 ```  
   
-#### Parameters  
- [in] `pNew`  
+### Parameters  
+
+[in] `pNew`  
  The function pointer to the new invalid parameter handler.  
   
 ## Return Value  
- A pointer to the invalid parameter handler before the call.  
+
+A pointer to the invalid parameter handler before the call.  
   
 ## Remarks  
- Many C runtime functions check the validity of arguments passed to them. If an invalid argument is passed, the function can set the `errno` error number or return an error code. In such cases, the invalid parameter handler is also called. The C runtime supplies a default global invalid parameter handler that terminates the program and displays a runtime error message. You can use the `_set_invalid_parameter_handler` to set your own function as the global invalid parameter handler. The C runtime also supports a thread-local invalid parameter handler. If a thread-local parameter handler is set in a thread by using `_set_thread_local_invalid_parameter_handler`, the C runtime functions called from the thread use that handler instead of the global handler. Only one function can be specified as the global invalid argument handler at a time. Only one function can be specified as the thread-local invalid argument handler per thread, but different threads can have different thread-local handlers. This allows you to change the handler used in one part of your code without affecting the behavior of other threads.  
+
+Many C runtime functions check the validity of arguments passed to them. If an invalid argument is passed, the function can set the `errno` error number or return an error code. In such cases, the invalid parameter handler is also called. The C runtime supplies a default global invalid parameter handler that terminates the program and displays a runtime error message. You can use the `_set_invalid_parameter_handler` to set your own function as the global invalid parameter handler. The C runtime also supports a thread-local invalid parameter handler. If a thread-local parameter handler is set in a thread by using `_set_thread_local_invalid_parameter_handler`, the C runtime functions called from the thread use that handler instead of the global handler. Only one function can be specified as the global invalid argument handler at a time. Only one function can be specified as the thread-local invalid argument handler per thread, but different threads can have different thread-local handlers. This allows you to change the handler used in one part of your code without affecting the behavior of other threads.  
   
  When the runtime calls the invalid parameter function, it usually means that a nonrecoverable error occurred. The invalid parameter handler function you supply should save any data it can and then abort. It should not return control to the main function unless you are confident that the error is recoverable.  
   
@@ -69,7 +73,8 @@ void _invalid_parameter(
  The `_set_invalid_parameter_handler` and `_set_thread_local_invalid_parameter_handler` functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md).  
+
+In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md).  
   
 ```C  
 // crt_set_invalid_parameter_handler.c  
@@ -114,6 +119,7 @@ Expression: format != nullptr
 ```  
   
 ## See Also  
- [_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)   
+
+[_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)   
  [Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)   
  [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

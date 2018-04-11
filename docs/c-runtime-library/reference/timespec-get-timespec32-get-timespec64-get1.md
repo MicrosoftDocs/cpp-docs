@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # timespec_get, _timespec32_get, _timespec64_get
+
 Sets the interval pointed to by the first argument to the current calendar time, based on the specified time base.  
   
 ## Syntax  
@@ -41,18 +42,21 @@ int _timespec64_get(
   
 ```  
   
-#### Parameters  
- `time_spec`  
+### Parameters  
+
+`time_spec`  
  Pointer to a struct that is set to the time in seconds and nanoseconds since the start of the epoch.  
   
  `base`  
  A non-zero implementation-specific value that specifies the time base.  
   
 ## Return Value  
- The value of `base` if successful, otherwise it returns zero.  
+
+The value of `base` if successful, otherwise it returns zero.  
   
 ## Remarks  
- The `timespec_get` functions set the current time in the struct pointed to by the `time_spec` argument. All versions of this struct have two members, `tv_sec` and `tv_nsec`. The `tv_sec` value is set to the whole number of seconds and `tv_nsec` to the integral number of nanoseconds, rounded to the resolution of the system clock, since the start of the epoch specified by `base`.  
+
+The `timespec_get` functions set the current time in the struct pointed to by the `time_spec` argument. All versions of this struct have two members, `tv_sec` and `tv_nsec`. The `tv_sec` value is set to the whole number of seconds and `tv_nsec` to the integral number of nanoseconds, rounded to the resolution of the system clock, since the start of the epoch specified by `base`.  
   
  **Microsoft Specific**  
   
@@ -69,7 +73,8 @@ int _timespec64_get(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

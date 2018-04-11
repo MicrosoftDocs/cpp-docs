@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcpy, wcscpy, _mbscpy
+
 Copies a string. More secure versions of these functions are available; see [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md).  
   
 > [!IMPORTANT]
@@ -58,18 +59,21 @@ unsigned char *_mbscpy(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDestination`  
+### Parameters  
+
+`strDestination`  
  Destination string.  
   
  `strSource`  
  Null-terminated source string.  
   
 ## Return Value  
- Each of these functions returns the destination string. No return value is reserved to indicate an error.  
+
+Each of these functions returns the destination string. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `strcpy` function copies `strSource`, including the terminating null character, to the location that's specified by `strDestination`. The behavior of `strcpy` is undefined if the source and destination strings overlap.  
+
+The `strcpy` function copies `strSource`, including the terminating null character, to the location that's specified by `strDestination`. The behavior of `strcpy` is undefined if the source and destination strings overlap.  
   
 > [!IMPORTANT]
 >  Because `strcpy` does not check for sufficient space in `strDestination` before it copies `strSource`, it is a potential cause of buffer overruns. Therefore, we recommend that you use [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) instead.  
@@ -130,7 +134,8 @@ String = Hello world from strcpy and strcat!
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   
  [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   

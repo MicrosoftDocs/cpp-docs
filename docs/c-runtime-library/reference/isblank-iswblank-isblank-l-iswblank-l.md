@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isblank, iswblank, _isblank_l, _iswblank_l
+
 Determines whether an integer represents a blank character.  
   
 ## Syntax  
@@ -41,15 +42,17 @@ int _iswblank_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. `isblank` returns a nonzero value if `c` is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the `isblank` functions depends on the `LC_CTYPE` category setting of the locale; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+Each of these routines returns nonzero if `c` is a particular representation of a space or horizontal tab character, or is one of a locale-specific set of characters that are used to separate words within a line of text. `isblank` returns a nonzero value if `c` is a space character (0x20) or horizontal tab character (0x09). The result of the test condition for the `isblank` functions depends on the `LC_CTYPE` category setting of the locale; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  `iswblank` returns a nonzero value if `c` is a wide character that corresponds to a standard space or horizontal tab character.  
   
@@ -74,6 +77,7 @@ int _iswblank_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbsinit
+
 Tracks the state of a multibyte character conversion.  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Tracks the state of a multibyte character conversion.
 );  
 ```  
   
-#### Parameters  
- `ps`  
+### Parameters  
+
+`ps`  
  A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.  
   
 ## Return Value  
- Nonzero if `ps` is NULL or if not in the middle of a conversion.  
+
+Nonzero if `ps` is NULL or if not in the middle of a conversion.  
   
 ## Remarks  
- When using one of the ANSI functions that takes an **mbstate_t** pointer, passing the address of your `mbstate_t` will return information about whether the last byte in the buffer was converted.  
+
+When using one of the ANSI functions that takes an **mbstate_t** pointer, passing the address of your `mbstate_t` will return information about whether the last byte in the buffer was converted.  
   
  The appropriate code page needs to be installed to support your multibyte characters.  
   
@@ -151,4 +155,5 @@ WC String: AaBbCcxXyYzZ
 ```  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtDumpMemoryLeaks
+
 Dumps all the memory blocks in the debug heap when a memory leak has occurred (debug version only).  
   
 ## Syntax  
@@ -31,10 +32,12 @@ int _CrtDumpMemoryLeaks( void );
 ```  
   
 ## Return Value  
- `_CrtDumpMemoryLeaks` returns TRUE if a memory leak is found. Otherwise, the function returns FALSE.  
+
+`_CrtDumpMemoryLeaks` returns TRUE if a memory leak is found. Otherwise, the function returns FALSE.  
   
 ## Remarks  
- The `_CrtDumpMemoryLeaks` function determines whether a memory leak has occurred since the start of program execution. When a leak is found, the debug header information for all the objects in the heap is dumped in a user-readable form. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtDumpMemoryLeaks` are removed during preprocessing.  
+
+The `_CrtDumpMemoryLeaks` function determines whether a memory leak has occurred since the start of program execution. When a leak is found, the debug header information for all the objects in the heap is dumped in a user-readable form. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtDumpMemoryLeaks` are removed during preprocessing.  
   
  `_CrtDumpMemoryLeaks` is frequently called at the end of program execution to verify that all memory allocated by the application has been freed. The function can be called automatically at program termination by turning on the `_CRTDBG_LEAK_CHECK_DF` bit field of the [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) flag using the [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) function.  
   
@@ -53,10 +56,13 @@ int _CrtDumpMemoryLeaks( void );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
+
+For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

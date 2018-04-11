@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fsopen, _wfsopen
+
 Opens a stream with file sharing.  
   
 ## Syntax  
@@ -38,8 +39,9 @@ FILE *_wfsopen(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  Name of the file to open.  
   
  `mode`  
@@ -49,12 +51,14 @@ FILE *_wfsopen(
  Type of sharing allowed.  
   
 ## Return Value  
- Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
+
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_fsopen` function opens the file specified by `filename` as a stream and prepares the file for subsequent shared reading or writing, as defined by the mode and `shflag` arguments. `_wfsopen` is a wide-character version of `_fsopen`; the `filename` and `mode` arguments to `_wfsopen` are wide-character strings. `_wfsopen` and `_fsopen` behave identically otherwise.  
+
+The `_fsopen` function opens the file specified by `filename` as a stream and prepares the file for subsequent shared reading or writing, as defined by the mode and `shflag` arguments. `_wfsopen` is a wide-character version of `_fsopen`; the `filename` and `mode` arguments to `_wfsopen` are wide-character strings. `_wfsopen` and `_fsopen` behave identically otherwise.  
   
  The character string `mode` specifies the type of access requested for the file, as shown in the following table.  
   
@@ -138,7 +142,8 @@ No one else in the network can write to this file until we are done.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
  [ferror](../../c-runtime-library/reference/ferror.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
+
 Prints formatted output to the standard output stream, and enables specification of the order in which parameters are used in the format string.  
   
 ## Syntax  
@@ -46,8 +47,9 @@ int _wprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control.  
   
  `argument`  
@@ -57,10 +59,12 @@ int _wprintf_p_l(
  The locale to use.  
   
 ## Return Value  
- Returns the number of characters printed or a negative value if an error occurs.  
+
+Returns the number of characters printed or a negative value if an error occurs.  
   
 ## Remarks  
- The `_printf_p` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments (see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)).  
+
+The `_printf_p` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments (see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)).  
   
  The difference between `_printf_p` and `printf_s` is that `_printf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
@@ -120,7 +124,8 @@ Width specifiers:     Hello
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # carg, cargf, cargl
+
 Retrieves the argument  of a complex number, with a branch cut along the negative real axis.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ long double cargl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number.  
   
 ## Return Value  
- The argument (also known as the phase) of `z`. The result is in the interval [-π, +π].  
+
+The argument (also known as the phase) of `z`. The result is in the interval [-π, +π].  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `carg` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `carg` always takes a `_Dcomplex` value and returns a `double` value.  
+
+Because C++ allows overloading, you can call overloads of `carg` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `carg` always takes a `_Dcomplex` value and returns a `double` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ long double cargl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
  [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
  [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   

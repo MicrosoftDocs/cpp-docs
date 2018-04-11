@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs_s
+
 Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -44,8 +45,9 @@ errno_t mbsrtowcs_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `pReturnValue`  
+### Parameters  
+
+[out] `pReturnValue`  
  The number of characters converted.  
   
  [out] `wcstr`  
@@ -64,7 +66,8 @@ errno_t mbsrtowcs_s(
  A pointer to an `mbstate_t` conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own `mbstate` parameter.  
   
 ## Return Value  
- Zero if conversion is successful, or an error code on failure.  
+
+Zero if conversion is successful, or an error code on failure.  
   
 |Error condition|Return value and `errno`|  
 |---------------------|------------------------------|  
@@ -76,7 +79,8 @@ errno_t mbsrtowcs_s(
  If any one of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.  
   
 ## Remarks  
- The `mbsrtowcs_s` function converts a string of multibyte characters indirectly pointed to by `mbstr` into wide characters stored in the buffer pointed to by `wcstr`, by using the conversion state contained in `mbstate`. The conversion will continue for each character until one of these conditions is met:  
+
+The `mbsrtowcs_s` function converts a string of multibyte characters indirectly pointed to by `mbstr` into wide characters stored in the buffer pointed to by `wcstr`, by using the conversion state contained in `mbstate`. The conversion will continue for each character until one of these conditions is met:  
   
 -   A multibyte null character is encountered  
   
@@ -106,7 +110,8 @@ errno_t mbsrtowcs_s(
  In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the requirement to specify a size argument) and they can automatically replace older, non-secure functions by using their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
 ## Exceptions  
- The `mbsrtowcs_s` function is multithread safe if no function in the current thread calls `setlocale` as long as this function is executing and the `mbstate` argument is not a null pointer.  
+
+The `mbsrtowcs_s` function is multithread safe if no function in the current thread calls `setlocale` as long as this function is executing and the `mbstate` argument is not a null pointer.  
   
 ## Requirements  
   
@@ -115,7 +120,8 @@ errno_t mbsrtowcs_s(
 |`mbsrtowcs_s`|\<wchar.h>|  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [mbrtowc](../../c-runtime-library/reference/mbrtowc.md)   

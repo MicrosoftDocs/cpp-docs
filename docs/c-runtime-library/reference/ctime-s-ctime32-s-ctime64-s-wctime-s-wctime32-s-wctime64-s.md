@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
+
 Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -78,8 +79,9 @@ errno_t _wctime64_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `buffer`  
+### Parameters  
+
+[out] `buffer`  
  Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL` if:  
   
 -   `time` represents a date before midnight, January 1, 1970, UTC.  
@@ -97,7 +99,8 @@ errno_t _wctime64_s(
  Pointer to stored time.  
   
 ## Return Value  
- Zero if successful. If there is a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.  
+
+Zero if successful. If there is a failure due to an invalid parameter, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, an error code is returned. Error codes are defined in ERRNO.H; for a listing of these errors, see [errno](../../c-runtime-library/errno-constants.md). The actual error codes thrown for each error condition are shown in the following table.  
   
 ## Error Conditions  
   
@@ -110,7 +113,8 @@ errno_t _wctime64_s(
 |Not `NULL`|>= 26|< 0|`EINVAL`|Empty string|  
   
 ## Remarks  
- The `ctime_s` function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The `time` value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:  
+
+The `ctime_s` function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The `time` value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:  
   
 ```  
 Wed Jan 02 02:03:55 1980\n\0  
@@ -144,7 +148,8 @@ Wed Jan 02 02:03:55 1980\n\0
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -184,7 +189,8 @@ The time is Fri Apr 25 13:03:39 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

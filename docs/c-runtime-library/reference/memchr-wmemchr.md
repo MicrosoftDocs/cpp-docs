@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memchr, wmemchr
+
 Find characters in a buffer.  
   
 ## Syntax  
@@ -58,8 +59,9 @@ const wchar_t *wmemchr(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buf`  
+### Parameters  
+
+`buf`  
  Pointer to buffer.  
   
  `c`  
@@ -69,10 +71,12 @@ const wchar_t *wmemchr(
  Number of characters to check.  
   
 ## Return Value  
- If successful, returns a pointer to the first location of `c` in `buf`. Otherwise it returns `NULL`.  
+
+If successful, returns a pointer to the first location of `c` in `buf`. Otherwise it returns `NULL`.  
   
 ## Remarks  
- `memchr` and `wmemchr` look for the first occurrence of `c` in the first `count` bytes of `buf`. It stops when it finds `c` or when it has checked the first `count` bytes.  
+
+`memchr` and `wmemchr` look for the first occurrence of `c` in the first `count` bytes of `buf`. It stops when it finds `c` or when it has checked the first `count` bytes.  
   
  In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloadsin C++, define the symbol _CONST_RETURN.  
   
@@ -86,7 +90,8 @@ const wchar_t *wmemchr(
  For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -132,7 +137,8 @@ Result:      r found at position 12
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   
  [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   

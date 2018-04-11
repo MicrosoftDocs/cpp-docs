@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
+
 Converts between hiragana and katakana characters.  
   
 > [!IMPORTANT]
@@ -45,18 +46,21 @@ unsigned int _mbctokata_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Multibyte character to convert.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns the converted character `c`, if possible. Otherwise it returns the character `c` unchanged.  
+
+Each of these functions returns the converted character `c`, if possible. Otherwise it returns the character `c` unchanged.  
   
 ## Remarks  
- The `_mbctohira` and `_mbctokata` functions test a character `c` and, if possible, apply one of the following conversions.  
+
+The `_mbctohira` and `_mbctokata` functions test a character `c` and, if possible, apply one of the following conversions.  
   
 |Routines|Converts|  
 |--------------|--------------|  
@@ -79,7 +83,8 @@ unsigned int _mbctokata_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)   
  [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)   
  [_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)

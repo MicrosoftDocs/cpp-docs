@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportHook2, _CrtSetReportHookW2
+
 Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).  
   
 ## Syntax  
@@ -37,8 +38,9 @@ int _CrtSetReportHookW2(
 );  
 ```  
   
-#### Parameters  
- `mode`  
+### Parameters  
+
+`mode`  
  The action to take: `_CRT_RPTHOOK_INSTALL` or `_CRT_RPTHOOK_REMOVE`.  
   
  `pfnNewHook`  
@@ -48,10 +50,12 @@ int _CrtSetReportHookW2(
  Report hook to install or remove in the wide-character version of this function.  
   
 ## Return Value  
- -1 if an error was encountered, with `EINVAL` or `ENOMEM` set; otherwise returns the reference count of `pfnNewHook` after the call.  
+
+-1 if an error was encountered, with `EINVAL` or `ENOMEM` set; otherwise returns the reference count of `pfnNewHook` after the call.  
   
 ## Remarks  
- `_CrtSetReportHook2` and `_CrtSetReportHookW2` let you hook or unhook a function, whereas [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) only lets you hook a function.  
+
+`_CrtSetReportHook2` and `_CrtSetReportHookW2` let you hook or unhook a function, whereas [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) only lets you hook a function.  
   
  `_CrtSetReportHook2` or `_CrtSetReportHookW2` should be used instead of `_CrtSetReportHook` when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with `_CrtSetReportHook`.  
   
@@ -84,7 +88,8 @@ int YourReportHook( int reportType, char *message, int *returnValue );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
   
@@ -235,4 +240,5 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

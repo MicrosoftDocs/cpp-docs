@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # kbhit
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_kbhit](../../c-runtime-library/reference/kbhit.md) instead.  
   
 > [!IMPORTANT]

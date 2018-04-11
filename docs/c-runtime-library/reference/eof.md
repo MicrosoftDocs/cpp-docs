@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _eof
+
 Tests for end of file (EOF).  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _eof(
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor referring to the open file.  
   
 ## Return Value  
- `_eof` returns 1 if the current position is end of file, or 0 if it is not. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, which indicates an invalid file descriptor.  
+
+`_eof` returns 1 if the current position is end of file, or 0 if it is not. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, which indicates an invalid file descriptor.  
   
 ## Remarks  
- The `_eof` function determines whether the end of the file associated with `fd` has been reached.  
+
+The `_eof` function determines whether the end of the file associated with `fd` has been reached.  
   
 ## Requirements  
   
@@ -102,7 +106,8 @@ Number of bytes read = 29
 ```  
   
 ## See Also  
- [Error Handling](../../c-runtime-library/error-handling-crt.md)   
+
+[Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [feof](../../c-runtime-library/reference/feof.md)   

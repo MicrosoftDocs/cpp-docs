@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strerror, _strerror, _wcserror, __wcserror
+
 Gets a system error message string (`strerror`, `_wcserror`) or formats a user-supplied error message string (`_strerror`, `__wcserror`). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md).  
   
 ## Syntax  
@@ -40,18 +41,21 @@ wchar_t * __wcserror(
 );  
 ```  
   
-#### Parameters  
- `errnum`  
+### Parameters  
+
+`errnum`  
  Error number.  
   
  `strErrMsg`  
  User-supplied message.  
   
 ## Return Value  
- All of these functions return a pointer to the error-message string. Subsequent calls can overwrite the string.  
+
+All of these functions return a pointer to the error-message string. Subsequent calls can overwrite the string.  
   
 ## Remarks  
- The `strerror` function maps `errnum` to an error-message string and returns a pointer to the string. Neither `strerror` nor `_strerror` actually prints the message: For that, you have to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
+
+The `strerror` function maps `errnum` to an error-message string and returns a pointer to the string. Neither `strerror` nor `_strerror` actually prints the message: For that, you have to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
   
 ```  
 if (( _access( "datafile",2 )) == -1 )  
@@ -85,10 +89,12 @@ if (( _access( "datafile",2 )) == -1 )
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).  
+
+See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [ferror](../../c-runtime-library/reference/ferror.md)   
  [perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)

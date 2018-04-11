@@ -44,7 +44,7 @@ long double roundl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to round.

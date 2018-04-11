@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # qsort_s
+
 Performs a quick sort. A version of [qsort](../../c-runtime-library/reference/qsort.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void qsort_s(
 );  
 ```  
   
-#### Parameters  
- `base`  
+### Parameters  
+
+`base`  
  Start of target array.  
   
  `num`  
@@ -52,7 +54,8 @@ void qsort_s(
  A pointer to a context, which can be any object that the `compare` routine needs to access.  
   
 ## Remarks  
- The `qsort_s` function implements a quick-sort algorithm to sort an array of `num` elements, each of `width` bytes. The argument `base` is a pointer to the base of the array to be sorted. `qsort_s` overwrites this array with the sorted elements. The argument `compare` is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `qsort_s` calls the `compare` routine one or more times during the sort, passing pointers to two array elements on each call:  
+
+The `qsort_s` function implements a quick-sort algorithm to sort an array of `num` elements, each of `width` bytes. The argument `base` is a pointer to the base of the array to be sorted. `qsort_s` overwrites this array with the sorted elements. The argument `compare` is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `qsort_s` calls the `compare` routine one or more times during the sort, passing pointers to two array elements on each call:  
   
 ```  
 compare( context, (void *) & elem1, (void *) & elem2 );  
@@ -92,7 +95,8 @@ compare( context, (void *) & elem1, (void *) & elem2 );
  **Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
- The following example demonstrates how to use the `context` parameter in the `qsort_s` function. The `context` parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different `context` parameter in each sort. In this example, a locale object is used as the `context` parameter.  
+
+The following example demonstrates how to use the `context` parameter in the `qsort_s` function. The `context` parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different `context` parameter in each sort. In this example, a locale object is used as the `context` parameter.  
   
 ```  
 // crt_qsort_s.cpp  
@@ -247,7 +251,8 @@ table tablet tableux
 ```  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch_s](../../c-runtime-library/reference/bsearch-s.md)   
  [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)   
  [qsort](../../c-runtime-library/reference/qsort.md)

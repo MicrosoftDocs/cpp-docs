@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # not_eq
+
 An alternative to the != operator.  
   
 ## Syntax  
@@ -31,7 +32,8 @@ An alternative to the != operator.
 ```  
   
 ## Remarks  
- The macro yields the operator !=.  
+
+The macro yields the operator !=.  
   
 ## Example  
   
@@ -60,4 +62,5 @@ a is not equal to b
 ```  
   
 ## Requirements  
- **Header:** \<iso646.h>
+
+**Header:** \<iso646.h>

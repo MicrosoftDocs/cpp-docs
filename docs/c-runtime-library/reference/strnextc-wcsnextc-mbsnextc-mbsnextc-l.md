@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
+
 Finds the next character in a string.  
   
 > [!IMPORTANT]
@@ -45,18 +46,21 @@ unsigned int _mbsnextc_l(
   
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Source string.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns the integer value of the next character in `str`.  
+
+Each of these functions returns the integer value of the next character in `str`.  
   
 ## Remarks  
- The `_mbsnextc` function returns the integer value of the next multibyte character in `str`, without advancing the string pointer. `_mbsnextc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.  
+
+The `_mbsnextc` function returns the integer value of the next multibyte character in `str`, without advancing the string pointer. `_mbsnextc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.  
   
  If `str` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns 0.  
   
@@ -84,7 +88,8 @@ unsigned int _mbsnextc_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_strdec, _wcsdec, _mbsdec, _mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)   

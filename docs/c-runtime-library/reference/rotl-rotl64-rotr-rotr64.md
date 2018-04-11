@@ -46,7 +46,7 @@ unsigned __int64 _rotr64(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *value*<br/>
  Value to be rotated.

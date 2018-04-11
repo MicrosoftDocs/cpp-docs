@@ -45,7 +45,7 @@ errno_t _ecvt_s(
 ); // C++ only
 ```
 
-#### Parameters
+### Parameters
 
 [out] *_Buffer*<br/>
  Filled with the pointer to the string of digits, the result of the conversion.

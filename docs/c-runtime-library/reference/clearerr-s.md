@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # clearerr_s
+
 Resets the error indicator for a stream. This is a version of [clearerr](../../c-runtime-library/reference/clearerr.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -31,15 +32,18 @@ errno_t clearerr_s(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure  
   
 ## Return Value  
- Zero if successful; `EINVAL` if `stream` is NULL.  
+
+Zero if successful; `EINVAL` if `stream` is NULL.  
   
 ## Remarks  
- The `clearerr_s` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.  
+
+The `clearerr_s` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.  
   
  If `stream` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
   
@@ -106,7 +110,8 @@ Will input cause an error? n
 ```  
   
 ## See Also  
- [Error Handling](../../c-runtime-library/error-handling-crt.md)   
+
+[Error Handling](../../c-runtime-library/error-handling-crt.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [_eof](../../c-runtime-library/reference/eof.md)   

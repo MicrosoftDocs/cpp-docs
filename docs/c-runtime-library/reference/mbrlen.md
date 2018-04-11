@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbrlen
+
 Determine the number of bytes that are required to complete a multibyte character in the current locale, with the capability of restarting in the middle of a multibyte character.  
   
 ## Syntax  
@@ -33,8 +34,9 @@ size_t mbrlen(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Pointer to the next byte to inspect in a multibyte character string.  
   
  `count`  
@@ -44,7 +46,8 @@ size_t mbrlen(
  Pointer to the current shift state of the initial byte of `str`.  
   
 ## Return Value  
- One of the following values:  
+
+One of the following values:  
   
  0  
  The next `count` or fewer bytes complete the multibyte character that represents the wide null character.  
@@ -59,7 +62,8 @@ size_t mbrlen(
  An encoding error occurred. The next `count` or fewer bytes do not contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion state in `mbstate` is unspecified.  
   
 ## Remarks  
- The `mbrlen` function inspects at most `count` bytes starting with the byte pointed to by `str` to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where `mbstate` is either a user-provided `mbstate_t` object, or a static internal object provided by the library.  
+
+The `mbrlen` function inspects at most `count` bytes starting with the byte pointed to by `str` to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where `mbstate` is either a user-provided `mbstate_t` object, or a static internal object provided by the library.  
   
  The `mbrlen` function saves and uses the shift state of an incomplete multibyte character in the `mbstate` parameter. This gives `mbrlen` the capability of restarting in the middle of a multibyte character if need be, examining at most `count` bytes. If `mbstate` is a null pointer, `mbrlen` uses an internal, static `mbstate_t` object to store the shift state. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always allocate and pass your own `mbstate` parameter.  
   
@@ -80,7 +84,8 @@ size_t mbrlen(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This example shows how the interpretation of multibyte characters depends on the current code page, and demonstrates the resuming capability of `mbrlen`.  
+
+This example shows how the interpretation of multibyte characters depends on the current code page, and demonstrates the resuming capability of `mbrlen`.  
   
 ```C  
 // crt_mbrlen.c  
@@ -142,5 +147,6 @@ Character count: 25
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)

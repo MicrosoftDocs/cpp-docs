@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cexp, cexpf, cexpl
+
 Compute the base-e exponential of a complex number.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex cexpl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents the exponent.  
   
 ## Return Value  
- The value of `e` raised to the power of `z`.  
+
+The value of `e` raised to the power of `z`.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cexp` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cexp` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `cexp` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cexp` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex cexpl(
  For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)   
  [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)   
  [clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)

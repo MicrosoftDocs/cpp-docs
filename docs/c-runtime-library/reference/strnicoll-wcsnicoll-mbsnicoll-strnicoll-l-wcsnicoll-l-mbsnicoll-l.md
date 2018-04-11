@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
+
 Compares strings by using locale-specific information.  
   
 > [!IMPORTANT]
@@ -64,8 +65,9 @@ int _mbsnicoll_l(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  Null-terminated strings to compare  
   
  `count`  
@@ -75,7 +77,8 @@ int _mbsnicoll_l(
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of the substrings of `string1` and `string2`, as follows.  
+
+Each of these functions returns a value indicating the relationship of the substrings of `string1` and `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  
@@ -86,7 +89,8 @@ int _mbsnicoll_l(
  Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either STRING.H or MBSTRING.H. `_wcsnicoll` can fail if either `string1` or `string2` contains wide-character codes outside the domain of the collating sequence. When an error occurs, `_wcsnicoll` may set `errno` to `EINVAL`. To check for an error on a call to `_wcsnicoll`, set `errno` to 0 and then check `errno` after calling `_wcsnicoll`**.**  
   
 ## Remarks  
- Each of these functions performs a case-insensitive comparison of the first `count` characters in `string1` and `string2` according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the `_l` suffix use the current locale and code page. The versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+Each of these functions performs a case-insensitive comparison of the first `count` characters in `string1` and `string2` according to the code page. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the code page and this difference is of interest for the string comparison. The versions of these functions without the `_l` suffix use the current locale and code page. The versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  All of these functions validate their parameters. If either `string1` or `string2` is a null pointer, or if count is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`**.**  
   
@@ -109,7 +113,8 @@ int _mbsnicoll_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strcoll Functions](../../c-runtime-library/strcoll-functions.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   

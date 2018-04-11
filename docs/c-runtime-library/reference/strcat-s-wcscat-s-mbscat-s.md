@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcat_s, wcscat_s, _mbscat_s
+
 Appends a string. These versions of [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -61,8 +62,9 @@ errno_t _mbscat_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDestination`  
+### Parameters  
+
+`strDestination`  
  Null-terminated destination string buffer.  
   
  `numberOfElements`  
@@ -72,7 +74,8 @@ errno_t _mbscat_s(
  Null-terminated source string buffer.  
   
 ## Return Value  
- Zero if successful; an error code on failure.  
+
+Zero if successful; an error code on failure.  
   
 ### Error Conditions  
   
@@ -83,7 +86,8 @@ errno_t _mbscat_s(
 |any|0, or too small|any|`ERANGE`|`strDestination`[0] set to 0|  
   
 ## Remarks  
- The `strcat_s` function appends `strSource` to `strDestination` and terminates the resulting string with a null character. The initial character of `strSource` overwrites the terminating null character of `strDestination`. The behavior of `strcat_s` is undefined if the source and destination strings overlap.  
+
+The `strcat_s` function appends `strSource` to `strDestination` and terminates the resulting string with a null character. The initial character of `strSource` overwrites the terminating null character of `strDestination`. The behavior of `strcat_s` is undefined if the source and destination strings overlap.  
   
  Note that the second parameter is the total size of the buffer, not the remaining size:  
   
@@ -119,10 +123,12 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the code example in [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md).  
+
+See the code example in [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)   
  [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)   
  [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)   

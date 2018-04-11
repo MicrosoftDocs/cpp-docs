@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_printf_count_output
+
 Enable or disable support of the `%n` format in [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)-family functions.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _set_printf_count_output(
 );  
 ```  
   
-#### Parameters  
- `enable`  
+### Parameters  
+
+`enable`  
  A non-zero value to enable `%n` support, 0 to disable `%n` support.  
   
 ## Property Value/Return Value  
- The state of `%n` support before calling this function: non-zero if `%n` support was enabled, 0 if it was disabled.  
+
+The state of `%n` support before calling this function: non-zero if `%n` support was enabled, 0 if it was disabled.  
   
 ## Remarks  
- Because of security reasons, support for the `%n` format specifier is disabled by default in `printf` and all its variants. If `%n` is encountered in a `printf` format specification, the default behavior is to invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). Calling `_set_printf_count_output` with a non-zero argument will cause `printf`-family functions to interpret `%n` as described in [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+
+Because of security reasons, support for the `%n` format specifier is disabled by default in `printf` and all its variants. If `%n` is encountered in a `printf` format specification, the default behavior is to invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). Calling `_set_printf_count_output` with a non-zero argument will cause `printf`-family functions to interpret `%n` as described in [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Requirements  
   
@@ -77,4 +81,5 @@ i = 5
 ```  
   
 ## See Also  
- [_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)
+
+[_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)

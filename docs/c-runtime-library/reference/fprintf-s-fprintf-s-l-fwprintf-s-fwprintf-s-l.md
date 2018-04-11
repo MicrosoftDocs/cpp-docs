@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
+
 Print formatted data to a stream. These are versions of [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int _fwprintf_s_l(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `format`  
@@ -64,10 +66,12 @@ int _fwprintf_s_l(
  The locale to use.  
   
 ## Return Value  
- `fprintf_s` returns the number of bytes written. `fwprintf_s` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs.  
+
+`fprintf_s` returns the number of bytes written. `fwprintf_s` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs.  
   
 ## Remarks  
- `fprintf_s` formats and prints a series of characters and values to the output `stream`. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+
+`fprintf_s` formats and prints a series of characters and values to the output `stream`. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
  `fwprintf_s` is a wide-character version of `fprintf_s`; in `fwprintf_s`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf_s` doesn't currently support output into a UNICODE stream.  
   
@@ -133,7 +137,8 @@ this is a string
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)   
  [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cimag, cimagf, cimagl
+
 Retrieves the imaginary part of a complex number.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ long double cimagl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number.  
   
 ## Return Value  
- The imaginary part of `z`.  
+
+The imaginary part of `z`.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cimag` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `cimag` always takes a `_Dcomplex` value and returns a `double` value.  
+
+Because C++ allows overloading, you can call overloads of `cimag` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `cimag` always takes a `_Dcomplex` value and returns a `double` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ long double cimagl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
  [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
  [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   

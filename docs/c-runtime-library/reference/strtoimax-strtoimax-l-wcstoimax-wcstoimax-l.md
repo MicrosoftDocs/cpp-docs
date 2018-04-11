@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
+
 Converts a string to an integer value of the largest supported signed integer type.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ intmax_t _wcstoimax_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,7 +66,8 @@ intmax_t _wcstoimax_l(
  The locale to use.  
   
 ## Return Value  
- `strtoimax` returns the value that's represented in the string `nptr`, except when the representation would cause an overflow—in that case, it returns `INTMAX_MAX` or `INTMAX_MIN`, and `errno` is set to `ERANGE`. The function returns 0 if no conversion can be performed. `wcstoimax` returns values analogously to `strtoimax`.  
+
+`strtoimax` returns the value that's represented in the string `nptr`, except when the representation would cause an overflow—in that case, it returns `INTMAX_MAX` or `INTMAX_MIN`, and `errno` is set to `ERANGE`. The function returns 0 if no conversion can be performed. `wcstoimax` returns values analogously to `strtoimax`.  
   
  `INTMAX_MAX` and `INTMAX_MIN` are defined in stdint.h.  
   
@@ -73,7 +76,8 @@ intmax_t _wcstoimax_l(
  For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `strtoimax` function converts `nptr` to an `intmax_t`. The wide-character version of `strtoimax` is `wcstoimax`; its `nptr` argument is a wide-character string. Otherwise, these functions behave identically. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to `base`.  
+
+The `strtoimax` function converts `nptr` to an `intmax_t`. The wide-character version of `strtoimax` is `wcstoimax`; its `nptr` argument is a wide-character string. Otherwise, these functions behave identically. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character that's greater than or equal to `base`.  
   
  The locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; `_strtoimax_l` and `_wcstoimax_l` are identical to the corresponding functions that don't have the `_l` suffix except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -101,7 +105,8 @@ intmax_t _wcstoimax_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

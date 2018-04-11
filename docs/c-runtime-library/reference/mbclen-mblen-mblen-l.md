@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbclen, mblen, _mblen_l
+
 Gets the length and determines the validity of a multibyte character.  
   
 > [!IMPORTANT]
@@ -43,8 +44,9 @@ int _mblen_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Multibyte character.  
   
  `mbstr`  
@@ -57,10 +59,12 @@ int _mblen_l(
  Locale to use.  
   
 ## Return Value  
- `_mbclen` returns 1 or 2, according to whether the multibyte character `c` is 1 or 2 bytes long. There is no error return for `_mbclen`. If `mbstr` is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If `mbstr` is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that `mbstr` points to does not form a valid multibyte character within the first `count` characters, `mblen` returns -1.  
+
+`_mbclen` returns 1 or 2, according to whether the multibyte character `c` is 1 or 2 bytes long. There is no error return for `_mbclen`. If `mbstr` is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If `mbstr` is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that `mbstr` points to does not form a valid multibyte character within the first `count` characters, `mblen` returns -1.  
   
 ## Remarks  
- The `_mbclen` function returns the length, in bytes, of the multibyte character `c`. If `c` does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.  
+
+The `_mbclen` function returns the length, in bytes, of the multibyte character `c`. If `c` does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.  
   
  `mblen` returns the length in bytes of `mbstr` if it is a valid multibyte character and determines multibyte-character validity associated with the code page. `mblen` examines `count` or fewer bytes contained in `mbstr`, but not more than `MB_CUR_MAX` bytes.  
   
@@ -124,7 +128,8 @@ Length in bytes of NULL multibyte character 0: 0
 ```  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbccpy, _mbccpy_l](../../c-runtime-library/reference/mbccpy-mbccpy-l.md)   

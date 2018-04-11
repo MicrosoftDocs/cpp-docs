@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _putenv_s, _wputenv_s
+
 Creates, modifies, or removes environment variables. These are versions of [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md) but have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -39,15 +40,17 @@ errno_t _wputenv_s(
 );  
 ```  
   
-#### Parameters  
- `name`  
+### Parameters  
+
+`name`  
  The environment variable name.  
   
  `value`  
  The value to set the environment variable to.  
   
 ## Return Value  
- Returns 0 if successful, or an error code.  
+
+Returns 0 if successful, or an error code.  
   
 ### Error Conditions  
   
@@ -59,7 +62,8 @@ errno_t _wputenv_s(
  If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.  
   
 ## Remarks  
- The `_putenv_s` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv_s` is a wide-character version of `_putenv_s`; the `envstring` argument to `_wputenv_s` is a wide-character string.  
+
+The `_putenv_s` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv_s` is a wide-character version of `_putenv_s`; the `envstring` argument to `_wputenv_s` is a wide-character string.  
   
 ### Generic-Text Routine Mappings  
   
@@ -88,9 +92,11 @@ errno_t _wputenv_s(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- For a sample that shows how to use `_putenv_s`, see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
+
+For a sample that shows how to use `_putenv_s`, see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)   
  [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)

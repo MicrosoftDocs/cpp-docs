@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # csinh, csinhf, csinhl
+
 Retrieves the hyperbolic sine of a complex number.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex csinhl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The hyperbolic sine of `z`, in radians.  
+
+The hyperbolic sine of `z`, in radians.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `csinh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `csinh` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `csinh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `csinh` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex csinhl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

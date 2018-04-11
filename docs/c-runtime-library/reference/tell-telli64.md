@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _tell, _telli64
+
 Get the position of the file pointer.  
   
 ## Syntax  
@@ -34,19 +35,22 @@ __int64 _telli64(
 );  
 ```  
   
-#### Parameters  
- `handle`  
+### Parameters  
+
+`handle`  
  File descriptor referring to open file.  
   
 ## Return Value  
- The current position of the file pointer. On devices incapable of seeking, the return value is undefined.  
+
+The current position of the file pointer. On devices incapable of seeking, the return value is undefined.  
   
  A return value of -1L indicates an error. If `handle` is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   
 ## Remarks  
- The `_tell` function gets the current position of the file pointer (if any) associated with the `handle` argument. The position is expressed as the number of bytes from the beginning of the file. For the `_telli64` function, this value is expressed as a 64-bit integer.  
+
+The `_tell` function gets the current position of the file pointer (if any) associated with the `handle` argument. The position is expressed as the number of bytes from the beginning of the file. For the `_telli64` function, this value is expressed as a 64-bit integer.  
   
 ## Requirements  
   
@@ -103,6 +107,7 @@ Current file position is: 20
 ```  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)   
  [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)

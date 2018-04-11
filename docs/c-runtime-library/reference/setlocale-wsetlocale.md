@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # setlocale, _wsetlocale
+
 Sets or retrieves the run-time locale.  
   
 ## Syntax  
@@ -36,15 +37,17 @@ wchar_t *_wsetlocale(
 );  
 ```  
   
-#### Parameters  
- `category`  
+### Parameters  
+
+`category`  
  Category affected by locale.  
   
  `locale`  
  Locale specifier.  
   
 ## Return Value  
- If a valid `locale` and `category` are given, returns a pointer to the string associated with the specified `locale` and `category`. If the `locale` or `category` is not valid, returns a null pointer and the current locale settings of the program are not changed.  
+
+If a valid `locale` and `category` are given, returns a pointer to the string associated with the specified `locale` and `category`. If the `locale` or `category` is not valid, returns a null pointer and the current locale settings of the program are not changed.  
   
  For example, the call  
   
@@ -57,7 +60,8 @@ wchar_t *_wsetlocale(
  You can copy the string returned by `setlocale` to restore that part of the program's locale information. Global or thread local storage is used for the string returned by `setlocale`. Later calls to `setlocale` overwrite the string, which invalidates string pointers returned by earlier calls.  
   
 ## Remarks  
- Use the `setlocale` function to set, change, or query some or all of the current program locale information specified by `locale` and `category`. `locale` refers to the locality (country/region and language) for which you can customize certain aspects of your program. Some locale-dependent categories include the formatting of dates and the display format for monetary values. If you set `locale` to the default string for a language that has multiple forms supported on your computer, you should check the `setlocale` return value to see which language is in effect. For example, if you set `locale` to "chinese" the return value could be either "chinese-simplified" or "chinese-traditional".  
+
+Use the `setlocale` function to set, change, or query some or all of the current program locale information specified by `locale` and `category`. `locale` refers to the locality (country/region and language) for which you can customize certain aspects of your program. Some locale-dependent categories include the formatting of dates and the display format for monetary values. If you set `locale` to the default string for a language that has multiple forms supported on your computer, you should check the `setlocale` return value to see which language is in effect. For example, if you set `locale` to "chinese" the return value could be either "chinese-simplified" or "chinese-traditional".  
   
  `_wsetlocale` is a wide-character version of `setlocale`; the `locale` argument and return value of `_wsetlocale` are wide-character strings. `_wsetlocale` and `setlocale` behave identically otherwise.  
   
@@ -283,7 +287,8 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 ```  
   
 ## See Also  
- [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
+
+[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
  [_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md)   
  [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)   
  [Locale](../../c-runtime-library/locale.md)   

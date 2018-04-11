@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs
+
 Converts a multibyte character string in the current locale to a corresponding wide character string, with the capability of restarting in the middle of a multibyte character. A more secure version of this function is available; see [mbsrtowcs_s](../../c-runtime-library/reference/mbsrtowcs-s.md).  
   
 ## Syntax  
@@ -41,8 +42,9 @@ size_t mbsrtowcs(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `wcstr`  
+### Parameters  
+
+[out] `wcstr`  
  Address to store the resulting converted wide character string.  
   
  [in, out] `mbstr`  
@@ -55,10 +57,12 @@ size_t mbsrtowcs(
  A pointer to an `mbstate_t` conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own `mbstate` parameter.  
   
 ## Return Value  
- Returns the number of characters successfully converted, not including the terminating null character, if any. Returns (size_t)(-1) if an error occurred, and sets `errno` to EILSEQ.  
+
+Returns the number of characters successfully converted, not including the terminating null character, if any. Returns (size_t)(-1) if an error occurred, and sets `errno` to EILSEQ.  
   
 ## Remarks  
- The `mbsrtowcs` function converts a string of multibyte characters indirectly pointed to by `mbstr`, into wide characters stored in the buffer pointed to by `wcstr`, by using the conversion state contained in `mbstate`. The conversion continues for each character until either a terminating null multibyte character is encountered, a multibyte sequence that does not correspond to a valid character in the current locale is encountered, or until `count` characters have been converted. If `mbsrtowcs` encounters the multibyte null character ('\0') either before or when `count` occurs, it converts it to a 16-bit terminating null character and stops.  
+
+The `mbsrtowcs` function converts a string of multibyte characters indirectly pointed to by `mbstr`, into wide characters stored in the buffer pointed to by `wcstr`, by using the conversion state contained in `mbstate`. The conversion continues for each character until either a terminating null multibyte character is encountered, a multibyte sequence that does not correspond to a valid character in the current locale is encountered, or until `count` characters have been converted. If `mbsrtowcs` encounters the multibyte null character ('\0') either before or when `count` occurs, it converts it to a 16-bit terminating null character and stops.  
   
  Thus, the wide character string at `wcstr` is null-terminated only if `mbsrtowcs` encounters a multibyte null character during conversion. If the sequences pointed to by `mbstr` and `wcstr` overlap, the behavior of `mbsrtowcs` is undefined. `mbsrtowcs` is affected by the LC_TYPE category of the current locale.  
   
@@ -73,7 +77,8 @@ size_t mbsrtowcs(
  In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   
 ## Exceptions  
- The `mbsrtowcs` function is multithread safe as long as no function in the current thread calls `setlocale` as long as this function is executing and the `mbstate` argument is not a null pointer.  
+
+The `mbsrtowcs` function is multithread safe as long as no function in the current thread calls `setlocale` as long as this function is executing and the `mbstate` argument is not a null pointer.  
   
 ## Requirements  
   
@@ -82,7 +87,8 @@ size_t mbsrtowcs(
 |`mbsrtowcs`|\<wchar.h>|  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [mbrtowc](../../c-runtime-library/reference/mbrtowc.md)   

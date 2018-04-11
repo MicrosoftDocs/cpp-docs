@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
+
 Reads formatted data of a specified length from a string. These are versions of [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](../../c-runtime-library/reference/snscanf-snscanf-l-snwscanf-snwscanf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int __cdecl _snwscanf_s_l(
 );  
 ```  
   
-#### Parameters  
- `input`  
+### Parameters  
+
+`input`  
  Input string to examine.  
   
  `length`  
@@ -70,14 +72,16 @@ int __cdecl _snwscanf_s_l(
  Optional arguments to be assigned according to the format string.  
   
 ## Return Value  
- Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
+
+Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
   
  If `input` or `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.  
   
  For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- This function is like `sscanf_s` except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
+
+This function is like `sscanf_s` except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
   
  The buffer size parameter is required with the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).  
   
@@ -138,4 +142,5 @@ _snwscanf_s converted 2 fields: 15 and 12.000000
 ```  
   
 ## See Also  
- [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)
+
+[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)

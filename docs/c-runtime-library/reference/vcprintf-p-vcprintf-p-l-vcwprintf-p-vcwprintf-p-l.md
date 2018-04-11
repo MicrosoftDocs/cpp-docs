@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
+
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _vcwprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  The format specification.  
   
  `argptr`  
@@ -62,10 +64,12 @@ int _vcwprintf_p_l(
  For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The number of characters that are written, or a negative value if an output error occurs. If `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.  
+
+The number of characters that are written, or a negative value if an output error occurs. If `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, and then uses the `_putch` function to format and write the given data to the console. (`_vcwprintf_p` uses `_putwch` instead of `_putch`. `_vcwprintf_p` is the wide-character version of `_vcprintf_p`. It takes a wide-character string as an argument.)  
+
+Each of these functions takes a pointer to an argument list, and then uses the `_putch` function to format and write the given data to the console. (`_vcwprintf_p` uses `_putwch` instead of `_putch`. `_vcwprintf_p` is the wide-character version of `_vcprintf_p`. It takes a wide-character string as an argument.)  
   
  The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.  
   
@@ -126,7 +130,8 @@ parameter 2 = 222; parameter 1 = one
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)   
  [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)

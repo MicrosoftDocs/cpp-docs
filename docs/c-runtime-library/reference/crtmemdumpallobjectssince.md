@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtMemDumpAllObjectsSince
+
 Dumps information about objects in the heap from the start of program execution or from a specified heap state (debug version only).  
   
 ## Syntax  
@@ -32,12 +33,14 @@ Dumps information about objects in the heap from the start of program execution 
 );  
 ```  
   
-#### Parameters  
- `state`  
+### Parameters  
+
+`state`  
  Pointer to the heap state to begin dumping from or **NULL**.  
   
 ## Remarks  
- The `_CrtMemDumpAllObjectsSince` function dumps the debug header information of objects allocated in the heap in a user-readable form. The dump information can be used by the application to track allocations and detect memory problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemDumpAllObjectsSince` are removed during preprocessing.  
+
+The `_CrtMemDumpAllObjectsSince` function dumps the debug header information of objects allocated in the heap in a user-readable form. The dump information can be used by the application to track allocations and detect memory problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemDumpAllObjectsSince` are removed during preprocessing.  
   
  `_CrtMemDumpAllObjectsSince` uses the value of the `state` parameter to determine where to initiate the dump operation. To begin dumping from a specified heap state, the `state` parameter must be a pointer to a **_CrtMemState** structure that has been filled in by [_CrtMemCheckpoint](../../c-runtime-library/reference/crtmemcheckpoint.md) before `_CrtMemDumpAllObjectsSince` was called. When `state` is **NULL**, the function begins the dump from the start of program execution.  
   
@@ -54,11 +57,14 @@ Dumps information about objects in the heap from the start of program execution 
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).  
+
+For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)

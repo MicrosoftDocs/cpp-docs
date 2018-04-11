@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cgets_s, _cgetws_s
+
 Gets a character string from the console. These versions of [_cgets and _cgetws](../../c-runtime-library/cgets-cgetws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -51,8 +52,9 @@ errno_t _cgetws_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [out] `buffer`  
+### Parameters  
+
+[out] `buffer`  
  Storage location for data.  
   
  [in] `numberOfElements`  
@@ -62,7 +64,8 @@ errno_t _cgetws_s(
  The number of characters actually read.  
   
 ## Return Value  
- The return value is zero if successful; otherwise, an error code if a failure occurs.  
+
+The return value is zero if successful; otherwise, an error code if a failure occurs.  
   
 ### Error Conditions  
   
@@ -73,7 +76,8 @@ errno_t _cgetws_s(
 |not `NULL`|any|`NULL`|`EINVAL`|zero-length string|  
   
 ## Remarks  
- `_cgets_s` and `_cgetws_s` read a string from the console and copy the string (with a null terminator) into `buffer`. `_cgetws_s` is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the `numberOfElements` parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in `pSizeRead`.  
+
+`_cgets_s` and `_cgetws_s` read a string from the console and copy the string (with a null terminator) into `buffer`. `_cgetws_s` is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the `numberOfElements` parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in `pSizeRead`.  
   
  If an error occurs during the operation or in the validating of the parameters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `errno` is set to `EINVAL` and `EINVAL` is returned.  
   
@@ -95,5 +99,6 @@ errno_t _cgetws_s(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _setmbcp
+
 Sets a new multibyte code page.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _setmbcp(
 );  
 ```  
   
-#### Parameters  
- `codepage`  
+### Parameters  
+
+`codepage`  
  New code page setting for locale-independent multibyte routines.  
   
 ## Return Value  
- Returns 0 if the code page is set successfully. If an invalid code page value is supplied for `codepage`, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.  
+
+Returns 0 if the code page is set successfully. If an invalid code page value is supplied for `codepage`, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.  
   
 ## Remarks  
- The `_setmbcp` function specifies a new multibyte code page. By default, the run-time system automatically sets the multibyte code page to the system-default ANSI code page. The multibyte code page setting affects all multibyte routines that are not locale dependent. However, it is possible to instruct `_setmbcp` to use the code page defined for the current locale (see the following list of manifest constants and associated behavior results). For a list of the multibyte routines that are dependent on the locale code page rather than the multibyte code page, see [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).  
+
+The `_setmbcp` function specifies a new multibyte code page. By default, the run-time system automatically sets the multibyte code page to the system-default ANSI code page. The multibyte code page setting affects all multibyte routines that are not locale dependent. However, it is possible to instruct `_setmbcp` to use the code page defined for the current locale (see the following list of manifest constants and associated behavior results). For a list of the multibyte routines that are dependent on the locale code page rather than the multibyte code page, see [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).  
   
  The multibyte code page also affects multibyte-character processing by the following run-time library routines:  
   
@@ -72,5 +76,6 @@ int _setmbcp(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
+
+[_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)

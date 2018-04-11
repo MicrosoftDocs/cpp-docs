@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _splitpath_s, _wsplitpath_s
+
 Breaks a path name into components. These are versions of [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -66,8 +67,9 @@ errno_t _wsplitpath_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- [in] `path`  
+### Parameters  
+
+[in] `path`  
  Full path.  
   
  [out] `drive`  
@@ -95,7 +97,8 @@ errno_t _wsplitpath_s(
  The size of `ext` buffer in single-byte or wide characters. If `ext` is `NULL`, this value must be 0.  
   
 ## Return Value  
- Zero if successful; an error code on failure.  
+
+Zero if successful; an error code on failure.  
   
 ### Error Conditions  
   
@@ -116,7 +119,8 @@ errno_t _wsplitpath_s(
  If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set `errno` to `ERANGE`, and return `ERANGE`.  
   
 ## Remarks  
- The `_splitpath_s` function breaks a path into its four components. `_splitpath_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath_s` is a wide-character version of `_splitpath_s`; the arguments to `_wsplitpath_s` are wide-character strings. These functions behave identically otherwise  
+
+The `_splitpath_s` function breaks a path into its four components. `_splitpath_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath_s` is a wide-character version of `_splitpath_s`; the arguments to `_wsplitpath_s` are wide-character strings. These functions behave identically otherwise  
   
 ### Generic-Text Routine Mappings  
   
@@ -151,10 +155,12 @@ errno_t _wsplitpath_s(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).  
+
+See the example for [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   

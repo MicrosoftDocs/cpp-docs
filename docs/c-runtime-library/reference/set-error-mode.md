@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_error_mode
+
 Modifies `__error_mode` to determine a non-default location where the C runtime writes an error message for an error that might end the program.  
   
 > [!IMPORTANT]
@@ -34,15 +35,18 @@ int _set_error_mode(
 );  
 ```  
   
-#### Parameters  
- `modeval`  
+### Parameters  
+
+`modeval`  
  Destination of error messages.  
   
 ## Return Value  
- Returns the old setting or -1 if an error occurs.  
+
+Returns the old setting or -1 if an error occurs.  
   
 ## Remarks  
- Controls the error output sink by setting the value of `__error_mode`. For example, you can direct output to a standard error or use the `MessageBox` API.  
+
+Controls the error output sink by setting the value of `__error_mode`. For example, you can direct output to a standard error or use the `MessageBox` API.  
   
  The `modeval` parameter can be set to one of the following values.  
   
@@ -86,4 +90,5 @@ Please contact the application's support team for more information.
 ```  
   
 ## See Also  
- [assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)
+
+[assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)

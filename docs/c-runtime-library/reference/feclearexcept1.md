@@ -32,7 +32,7 @@ int feclearexcept(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *excepts*<br/>
  The exception status flags to clear.

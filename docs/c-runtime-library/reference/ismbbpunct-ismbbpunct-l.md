@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbpunct, _ismbbpunct_l
+
 Determines whether a particular character is a punctuation character.  
   
 ## Syntax  
@@ -35,15 +36,17 @@ int _ismbbpunct_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- `_ismbbpunct` returns a nonzero value if the integer `c` is a non-ASCII punctuation symbol. `_ismbbpunct` uses the current locale for any locale-dependent character settings. `_ismbbpunct_l` is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+`_ismbbpunct` returns a nonzero value if the integer `c` is a non-ASCII punctuation symbol. `_ismbbpunct` uses the current locale for any locale-dependent character settings. `_ismbbpunct_l` is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
 ## Requirements  
   
@@ -55,5 +58,6 @@ int _ismbbpunct_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

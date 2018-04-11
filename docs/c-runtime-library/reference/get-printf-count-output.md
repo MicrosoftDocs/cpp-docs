@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _get_printf_count_output
+
 Indicates whether [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)-family functions support the `%n` format.  
   
 ## Syntax  
@@ -30,10 +31,12 @@ int _get_printf_count_output();
 ```  
   
 ## Return Value  
- Non-zero if `%n` is supported, 0 if `%n` is not supported.  
+
+Non-zero if `%n` is supported, 0 if `%n` is not supported.  
   
 ## Remarks  
- If `%n` is not supported (the default), encountering `%n` in the format string of any of the `printf` functions will invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If `%n` support is enabled (see [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)) then `%n` will behave as described in [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+
+If `%n` is not supported (the default), encountering `%n` in the format string of any of the `printf` functions will invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If `%n` support is enabled (see [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)) then `%n` will behave as described in [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Requirements  
   
@@ -44,7 +47,9 @@ int _get_printf_count_output();
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md).  
+
+See the example for [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md).  
   
 ## See Also  
+
 [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)  

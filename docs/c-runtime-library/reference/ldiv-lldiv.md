@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ldiv, lldiv
+
 Computes the quotient and remainder of two integers as one operation.  
   
 ## Syntax  
@@ -36,18 +37,21 @@ lldiv_t lldiv(
 );  
 ```  
   
-#### Parameters  
- `numer`  
+### Parameters  
+
+`numer`  
  Numerator.  
   
  `denom`  
  Denominator.  
   
 ## Return Value  
- `ldiv` returns a structure of type [ldiv_t](../../c-runtime-library/standard-types.md) that comprises both the quotient and the remainder. `lldiv` returns a structure of type [lldiv_t](../../c-runtime-library/standard-types.md) that comprises both the quotient and the remainder.  
+
+`ldiv` returns a structure of type [ldiv_t](../../c-runtime-library/standard-types.md) that comprises both the quotient and the remainder. `lldiv` returns a structure of type [lldiv_t](../../c-runtime-library/standard-types.md) that comprises both the quotient and the remainder.  
   
 ## Remarks  
- The `ldiv` and `lldiv` functions divide `numer` by `denom`, and thereby compute the quotient and remainder. The sign of the quotient is the same as that of the mathematical quotient. The absolute value of the quotient is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message. `ldiv` and `lldiv` are the same as `div`, except that the arguments of `ldiv` and the members of the returned structure are all of type `long`, and the arguments of `lldiv` and the members of the returned structure are of type `long long`.  
+
+The `ldiv` and `lldiv` functions divide `numer` by `denom`, and thereby compute the quotient and remainder. The sign of the quotient is the same as that of the mathematical quotient. The absolute value of the quotient is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message. `ldiv` and `lldiv` are the same as `div`, except that the arguments of `ldiv` and the members of the returned structure are all of type `long`, and the arguments of `lldiv` and the members of the returned structure are of type `long long`.  
   
  The `ldiv_t` and `lldiv_t` structures are defined in \<stdlib.h>.  
   
@@ -60,7 +64,8 @@ lldiv_t lldiv(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -90,6 +95,7 @@ For 5149627 / 234879, the quotient is 21, and the remainder is 217168
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [div](../../c-runtime-library/reference/div.md)   
  [imaxdiv](../../c-runtime-library/reference/imaxdiv.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cproj, cprojf, cprojl
+
 Retrieves the projection of a complex number on the Reimann sphere.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex cprojl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number.  
   
 ## Return Value  
- The projection of `z` on the Reimann sphere.  
+
+The projection of `z` on the Reimann sphere.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cproj` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cproj` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `cproj` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cproj` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex cprojl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
  [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
  [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   

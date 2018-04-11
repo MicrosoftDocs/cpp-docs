@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getdrives
+
 Returns a bitmask that represents the currently available disk drives.  
   
 > [!IMPORTANT]
@@ -33,7 +34,8 @@ unsigned long _getdrives( void );
 ```  
   
 ## Return Value  
- If the function succeeds, the return value is a bitmask that represents the currently available disk drives. Bit position 0 (the least-significant bit) is drive A, bit position 1 is drive B, bit position 2 is drive C, and so on. If the function fails, the return value is zero. To get extended error information, call `GetLastError`.  
+
+If the function succeeds, the return value is a bitmask that represents the currently available disk drives. Bit position 0 (the least-significant bit) is drive A, bit position 1 is drive B, bit position 2 is drive C, and so on. If the function fails, the return value is zero. To get extended error information, call `GetLastError`.  
   
 ## Requirements  
   
@@ -90,4 +92,5 @@ E:
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)
+
+[Directory Control](../../c-runtime-library/directory-control.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbset_s, _mbsnbset_s_l
+
 Sets the first `n` bytes of a multibyte-character string to a specified character. These versions of [_mbsnbset, _mbsnbset_l](../../c-runtime-library/reference/mbsnbset-mbsnbset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -57,8 +58,9 @@ errno_t _mbsnbset_s_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be altered.  
   
  `size`  
@@ -74,10 +76,12 @@ errno_t _mbsnbset_s_l(
  Locale to use.  
   
 ## Return Value  
- Zero if successful; otherwise, an error code.  
+
+Zero if successful; otherwise, an error code.  
   
 ## Remarks  
- The `_mbsnbset_s` and `_mbsnbset_s_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte that's specified by `count`, the last byte is padded with a blank character. `_mbsnbset_s` and `_mbsnbset_s_l` do not place a terminating null at the end of `str`.  
+
+The `_mbsnbset_s` and `_mbsnbset_s_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte that's specified by `count`, the last byte is padded with a blank character. `_mbsnbset_s` and `_mbsnbset_s_l` do not place a terminating null at the end of `str`.  
   
  `_mbsnbset_s` and `_mbsnbset_s_l` resemble `_mbsnset`, except that they set `count` bytes rather than `count` characters of `c`.  
   
@@ -130,7 +134,8 @@ After:  **** is a test
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)   
  [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)

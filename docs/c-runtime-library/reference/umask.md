@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _umask
+
 Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](../../c-runtime-library/reference/umask-s.md).  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _umask(
 );  
 ```  
   
-#### Parameters  
- `pmode`  
+### Parameters  
+
+`pmode`  
  Default permission setting.  
   
 ## Return Value  
- `_umask` returns the previous value of `pmode`. There is no error return.  
+
+`_umask` returns the previous value of `pmode`. There is no error return.  
   
 ## Remarks  
- The `_umask` function sets the file-permission mask of the current process to the mode specified by `pmode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
+
+The `_umask` function sets the file-permission mask of the current process to the mode specified by `pmode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.  
   
  The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:  
   
@@ -65,7 +69,8 @@ int _umask(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -97,7 +102,8 @@ Oldmask = 0x0000
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

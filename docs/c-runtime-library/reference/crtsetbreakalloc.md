@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetBreakAlloc
+
 Sets a breakpoint on a specified object allocation order number (debug version only).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Sets a breakpoint on a specified object allocation order number (debug version o
 );  
 ```  
   
-#### Parameters  
- *lBreakAlloc*  
+### Parameters  
+
+*lBreakAlloc*  
  Allocation order number, for which to set the breakpoint.  
   
 ## Return Value  
- Returns the previous object allocation order number that had a breakpoint set.  
+
+Returns the previous object allocation order number that had a breakpoint set.  
   
 ## Remarks  
- `_CrtSetBreakAlloc` allows an application to perform memory leak detection by breaking at a specific point of memory allocation and tracing back to the origin of the request. The function uses the sequential object allocation order number assigned to the memory block when it was allocated in the heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetBreakAlloc` are removed during preprocessing.  
+
+`_CrtSetBreakAlloc` allows an application to perform memory leak detection by breaking at a specific point of memory allocation and tracing back to the origin of the request. The function uses the sequential object allocation order number assigned to the memory block when it was allocated in the heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetBreakAlloc` are removed during preprocessing.  
   
  The object allocation order number is stored in the *lRequest* field of the **_CrtMemBlockHeader** structure, defined in Crtdbg.h. When information about a memory block is reported by one of the debug dump functions, this number is enclosed in braces, such as {36}.  
   
@@ -55,7 +59,8 @@ Sets a breakpoint on a specified object allocation order number (debug version o
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
   
@@ -104,4 +109,5 @@ int main( )
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

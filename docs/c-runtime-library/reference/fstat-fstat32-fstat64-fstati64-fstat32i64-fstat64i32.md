@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
+
 Gets information about an open file.  
   
 ## Syntax  
@@ -52,18 +53,21 @@ int _fstat64i32(
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor of the open file.  
   
  `buffer`  
  Pointer to the structure to store results.  
   
 ## Return Value  
- Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if `buffer` is `NULL`.  
+
+Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if `buffer` is `NULL`.  
   
 ## Remarks  
- The `_fstat` function obtains information about the open file associated with `fd` and stores it in the structure pointed to by `buffer`. The `_stat` structure, defined in SYS\Stat.h, contains the following fields.  
+
+The `_fstat` function obtains information about the open file associated with `fd` and stores it in the structure pointed to by `buffer`. The `_stat` structure, defined in SYS\Stat.h, contains the following fields.  
   
  `st_atime`  
  Time of the last file access.  
@@ -191,7 +195,8 @@ Time modified : Wed May 07 15:25:11 2003
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_filelength, _filelengthi64](../../c-runtime-library/reference/filelength-filelengthi64.md)   

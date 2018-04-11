@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _locking
+
 Locks or unlocks bytes of a file.  
   
 ## Syntax  
@@ -34,8 +35,9 @@ Locks or unlocks bytes of a file.
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor.  
   
  *mode*  
@@ -45,7 +47,8 @@ Locks or unlocks bytes of a file.
  Number of bytes to lock.  
   
 ## Return Value  
- `_locking` returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
+
+`_locking` returns 0 if successful. A return value of -1 indicates failure, in which case [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to one of the following values.  
   
  `EACCES`  
  Locking violation (file already locked or unlocked).  
@@ -62,7 +65,8 @@ Locks or unlocks bytes of a file.
  If the failure is due to a bad parameter, such as an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
 ## Remarks  
- The `_locking` function locks or unlocks *nbytes* bytes of the file specified by `fd`. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *nbytes* bytes. It is possible to lock bytes past end of file.  
+
+The `_locking` function locks or unlocks *nbytes* bytes of the file specified by `fd`. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *nbytes* bytes. It is possible to lock bytes past end of file.  
   
  *mode* must be one of the following manifest constants, which are defined in Locking.h.  
   
@@ -92,7 +96,8 @@ Locks or unlocks bytes of a file.
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -160,6 +165,7 @@ Now I'm done. Do what you will with them
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
  [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
+
 Determines whether an integer represents a character that is a hexadecimal digit.  
   
 ## Syntax  
@@ -42,15 +43,17 @@ int _iswxdigit_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a hexadecimal digit. `isxdigit` returns a nonzero value if `c` is a hexadecimal digit (A - F, a - f, or 0 - 9). `iswxdigit` returns a nonzero value if `c` is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+
+Each of these routines returns nonzero if `c` is a particular representation of a hexadecimal digit. `isxdigit` returns a nonzero value if `c` is a hexadecimal digit (A - F, a - f, or 0 - 9). `iswxdigit` returns a nonzero value if `c` is a wide character that corresponds to a hexadecimal digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  For the "C" locale, the `iswxdigit` function does not support Unicode full-width hexadecimal characters.  
   
@@ -76,6 +79,7 @@ int _iswxdigit_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

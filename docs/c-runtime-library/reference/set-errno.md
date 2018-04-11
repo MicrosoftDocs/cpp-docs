@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_errno
+
 Set the value of the `errno` global variable.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ errno_t _set_errno( 
 );  
 ```  
   
-#### Parameters  
- [in] `value`  
+### Parameters  
+
+[in] `value`  
  The new value of `errno`.  
   
 ## Return Value  
- Returns zero if successful.  
+
+Returns zero if successful.  
   
 ## Remarks  
- Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
+
+Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
   
 ## Example  
   
@@ -68,5 +72,6 @@ Oops: Illegal byte sequence
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [_get_errno](../../c-runtime-library/reference/get-errno.md)   
+
+[_get_errno](../../c-runtime-library/reference/get-errno.md)   
  [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

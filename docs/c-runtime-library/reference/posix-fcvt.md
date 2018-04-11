@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fcvt
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_fcvt](../../c-runtime-library/reference/fcvt.md) or security-enhanced [_fcvt_s](../../c-runtime-library/reference/fcvt-s.md) instead.

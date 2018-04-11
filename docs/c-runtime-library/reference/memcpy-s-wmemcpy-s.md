@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memcpy_s, wmemcpy_s
+
 Copies bytes between buffers. These are versions of [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -40,8 +41,9 @@ errno_t wmemcpy_s(
 );  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  New buffer.  
   
  `destSize`  
@@ -54,7 +56,8 @@ errno_t wmemcpy_s(
  Number of characters to copy.  
   
 ## Return Value  
- Zero if successful; an error code on failure.  
+
+Zero if successful; an error code on failure.  
   
 ### Error Conditions  
   
@@ -66,7 +69,8 @@ errno_t wmemcpy_s(
 |any|< `count`|any|non-zero|`ERANGE`|`dest` is zeroed out|  
   
 ## Remarks  
- `memcpy_s` copies `count` bytes from `src` to `dest`; `wmemcpy_s` copies `count` wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.  
+
+`memcpy_s` copies `count` bytes from `src` to `dest`; `wmemcpy_s` copies `count` wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.  
   
  These functions validate their parameters. If `count` is non-zero and `dest` or `src` is a null pointer, or `destSize` is smaller than `count`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE` and set `errno` to the return value.  
   
@@ -120,7 +124,8 @@ int main()
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

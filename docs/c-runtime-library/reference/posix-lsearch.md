@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lsearch
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_lsearch](../../c-runtime-library/reference/lsearch.md) or security-enhanced [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md) instead.

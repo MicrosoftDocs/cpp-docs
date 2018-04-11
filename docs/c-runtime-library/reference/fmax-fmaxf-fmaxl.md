@@ -54,7 +54,7 @@ long double fmaxl(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The first value to compare.

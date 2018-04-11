@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getchar, getwchar
+
 Reads a character from standard input.  
   
 ## Syntax  
@@ -31,10 +32,12 @@ wint_t getwchar();
 ```  
   
 ## Return Value  
- Returns the character read. To indicate a read error or end-of-file condition, `getchar` returns `EOF`, and `getwchar` returns `WEOF`. For `getchar`, use `ferror` or `feof` to check for an error or for end of file.  
+
+Returns the character read. To indicate a read error or end-of-file condition, `getchar` returns `EOF`, and `getwchar` returns `WEOF`. For `getchar`, use `ferror` or `feof` to check for an error or for end of file.  
   
 ## Remarks  
- Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), but it is implemented as a function and as a macro.  
+
+Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), but it is implemented as a function and as a macro.  
   
  These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](../../c-runtime-library/reference/getchar-nolock-getwchar-nolock.md).  
   
@@ -84,7 +87,8 @@ This textInput was: This text
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)   

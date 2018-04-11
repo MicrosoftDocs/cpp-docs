@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _seh_filter_dll, _seh_filter_exe
+
 Identifies the exception and the related action to be taken.  
   
 ## Syntax  
@@ -36,18 +37,21 @@ int __cdecl _seh_filter_exe(
 );  
 ```  
   
-#### Parameters  
- [in] `_ExceptionNum`  
+### Parameters  
+
+[in] `_ExceptionNum`  
  The identifier for the exception.  
   
  [in] `_ExceptionPtr`  
  A pointer to the exception information.  
   
 ## Return Value  
- An integer that indicates the action to be taken, based on the result of exception processing.  
+
+An integer that indicates the action to be taken, based on the result of exception processing.  
   
 ## Remarks  
- These methods are called by the exception-filter expression of the [try-except Statement](../../cpp/try-except-statement.md). The method consults a constant internal table to identify the exception and determine the appropriate action, as shown here. The exception numbers are defined in winnt.h and the signal numbers are defined in signal.h.  
+
+These methods are called by the exception-filter expression of the [try-except Statement](../../cpp/try-except-statement.md). The method consults a constant internal table to identify the exception and determine the appropriate action, as shown here. The exception numbers are defined in winnt.h and the signal numbers are defined in signal.h.  
   
 |Exception Number (unsigned long)|Signal Number|  
 |----------------------------------------|-------------------|  
@@ -63,7 +67,9 @@ int __cdecl _seh_filter_exe(
 |STATUS_FLOAT_UNDERFLOW|SIGFPE|  
   
 ## Requirements  
- **Header:** corecrt_startup.h  
+
+**Header:** corecrt_startup.h  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
+
 Tests and converts the case of a multibyte character.  
   
 > [!IMPORTANT]
@@ -45,18 +46,21 @@ unsigned int _mbctoupper_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Multibyte character to convert.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns the converted character `c`, if possible. Otherwise it returns the character `c` unchanged.  
+
+Each of these functions returns the converted character `c`, if possible. Otherwise it returns the character `c` unchanged.  
   
 ## Remarks  
- The functions test a character `c` and, if possible, apply one of the following conversions.  
+
+The functions test a character `c` and, if possible, apply one of the following conversions.  
   
 |Routines|Converts|  
 |--------------|--------------|  
@@ -86,7 +90,8 @@ unsigned int _mbctoupper_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [_mbbtombc, _mbbtombc_l](../../c-runtime-library/reference/mbbtombc-mbbtombc-l.md)   
  [_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)   
  [_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l](../../c-runtime-library/reference/mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)   

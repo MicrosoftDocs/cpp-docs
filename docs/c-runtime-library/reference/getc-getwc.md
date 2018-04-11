@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getc, getwc
+
 Read a character from a stream.  
   
 ## Syntax  
@@ -34,17 +35,20 @@ wint_t getwc(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Input stream.  
   
 ## Return Value  
- Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for `getwc`) and set `errno` to `EINVAL`.  
+
+Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for `getwc`) and set `errno` to `EINVAL`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with `stream`.  
+
+Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with `stream`.  
   
  These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](../../c-runtime-library/reference/getc-nolock-getwc-nolock.md).  
   
@@ -121,7 +125,8 @@ Input was: Line one.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)   

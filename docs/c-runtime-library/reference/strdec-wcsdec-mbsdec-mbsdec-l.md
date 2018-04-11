@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strdec, _wcsdec, _mbsdec, _mbsdec_l
+
 Moves a string pointer back one character.  
   
 > [!IMPORTANT]
@@ -48,8 +49,9 @@ unsigned char *_mbsdec_l(
 );  
 ```  
   
-#### Parameters  
- `start`  
+### Parameters  
+
+`start`  
  Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.  
   
  `current`  
@@ -59,10 +61,12 @@ unsigned char *_mbsdec_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
+
+`_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.  
   
 ## Remarks  
- The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes `current` in the string that contains `start`.  
+
+The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes `current` in the string that contains `start`.  
   
  The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -93,7 +97,8 @@ unsigned char *_mbsdec_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- The following example shows a use of `_tcsdec`.  
+
+The following example shows a use of `_tcsdec`.  
   
 ```  
   
@@ -146,7 +151,8 @@ int main()
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_strinc, _wcsinc, _mbsinc, _mbsinc_l](../../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md)   
  [_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)   
  [_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)

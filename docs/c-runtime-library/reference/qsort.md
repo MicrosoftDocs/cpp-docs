@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # qsort
+
 Performs a quick sort. A more secure version of this function is available; see [qsort_s](../../c-runtime-library/reference/qsort-s.md).  
   
 ## Syntax  
@@ -34,8 +35,9 @@ void qsort(
 );  
 ```  
   
-#### Parameters  
- `base`  
+### Parameters  
+
+`base`  
  Start of target array.  
   
  `num`  
@@ -48,7 +50,8 @@ void qsort(
  Pointer to a user-supplied routine that compares two array elements and returns a value that specifies their relationship.  
   
 ## Remarks  
- The `qsort` function implements a quick-sort algorithm to sort an array of `num` elements, each of `width` bytes. The argument `base` is a pointer to the base of the array to be sorted. `qsort` overwrites this array by using the sorted elements.  
+
+The `qsort` function implements a quick-sort algorithm to sort an array of `num` elements, each of `width` bytes. The argument `base` is a pointer to the base of the array to be sorted. `qsort` overwrites this array by using the sorted elements.  
   
  `qsort` calls the `compare` routine one or more times during the sort, and passes pointers to two array elements on each call.  
   
@@ -121,6 +124,7 @@ boy deserves every favor good
 ```  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch](../../c-runtime-library/reference/bsearch.md)   
  [_lsearch](../../c-runtime-library/reference/lsearch.md)

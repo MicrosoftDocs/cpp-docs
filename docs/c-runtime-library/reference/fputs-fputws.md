@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fputs, fputws
+
 Writes a string to a stream.  
   
 ## Syntax  
@@ -36,20 +37,23 @@ int fputws(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Output string.  
   
  `stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- Each of these functions returns a nonnegative value if it is successful. On an error, `fputs` and `fputws` return `EOF`. If `str` or `stream` is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and then `fputs` returns `EOF`, and `fputws` returns `WEOF`.  
+
+Each of these functions returns a nonnegative value if it is successful. On an error, `fputs` and `fputws` return `EOF`. If `str` or `stream` is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and then `fputs` returns `EOF`, and `fputws` returns `WEOF`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- Each of these functions copies `str` to the output `stream` at the current position. `fputws` copies the wide-character argument `str` to `stream` as a multibyte-character string or a wide-character string according to whether `stream` is opened in text mode or binary mode, respectively. Neither function copies the terminating null character.  
+
+Each of these functions copies `str` to the output `stream` at the current position. `fputws` copies the wide-character argument `str` to `stream` as a multibyte-character string or a wide-character string according to whether `stream` is opened in text mode or binary mode, respectively. Neither function copies the terminating null character.  
   
  The two functions behave identically if the stream is opened in ANSI mode. `fputs` does not currently support output into a UNICODE stream.  
   
@@ -88,7 +92,8 @@ Hello world from fputs.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)   
  [gets, _getws](../../c-runtime-library/gets-getws.md)   
  [puts, _putws](../../c-runtime-library/reference/puts-putws.md)

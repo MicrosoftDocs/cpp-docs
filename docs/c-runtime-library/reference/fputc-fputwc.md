@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fputc, fputwc
+
 Writes a character to a stream.  
   
 ## Syntax  
@@ -36,20 +37,23 @@ wint_t fputwc(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be written.  
   
  `stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- Each of these functions returns the character written. For `fputc`, a return value of `EOF` indicates an error. For `fputwc`, a return value of `WEOF` indicates an error. If `stream` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` and set `errno` to `EINVAL`.  
+
+Each of these functions returns the character written. For `fputc`, a return value of `EOF` indicates an error. For `fputwc`, a return value of `WEOF` indicates an error. If `stream` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` and set `errno` to `EINVAL`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- Each of these functions writes the single character `c` to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with `stream`. If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.  
+
+Each of these functions writes the single character `c` to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with `stream`. If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.  
   
  The two functions behave identically if the stream is opened in ANSI mode. `fputc` does not currently support output into a UNICODE stream.  
   
@@ -103,6 +107,7 @@ This is a test of fputc!!
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)

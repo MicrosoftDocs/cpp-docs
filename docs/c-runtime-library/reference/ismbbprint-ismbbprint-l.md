@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbbprint, _ismbbprint_l
+
 Determines whether a specified multibyte character is a print character.  
   
 ## Syntax  
@@ -35,15 +36,17 @@ int _ismbbprint_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- `_ismbbprint` returns a nonzero value if the expression:  
+
+`_ismbbprint` returns a nonzero value if the expression:  
   
 ```  
 isprint || _ismbbkprint  
@@ -61,5 +64,6 @@ isprint || _ismbbkprint
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Byte Classification](../../c-runtime-library/byte-classification.md)   
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

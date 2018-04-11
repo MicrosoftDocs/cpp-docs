@@ -44,7 +44,7 @@ wchar_t *_getws_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
+### Parameters  
  [out] `buffer`  
  Storage location for input string.  
   

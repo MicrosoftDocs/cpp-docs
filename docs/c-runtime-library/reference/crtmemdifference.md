@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtMemDifference
+
 Compares two memory states and returns their differences (debug version only).  
   
 ## Syntax  
@@ -33,8 +34,9 @@ int _CrtMemDifference(
 );  
 ```  
   
-#### Parameters  
- `stateDiff`  
+### Parameters  
+
+`stateDiff`  
  Pointer to a `_CrtMemState` structure that is used to store the differences between the two memory states (returned).  
   
  `oldState`  
@@ -44,10 +46,12 @@ int _CrtMemDifference(
  Pointer to a later memory state (`_CrtMemState` structure).  
   
 ## Return Value  
- If the memory states are significantly different, `_CrtMemDifference` returns TRUE. Otherwise, the function returns FALSE.  
+
+If the memory states are significantly different, `_CrtMemDifference` returns TRUE. Otherwise, the function returns FALSE.  
   
 ## Remarks  
- The `_CrtMemDifference` function compares `oldState` and `newState` and stores their differences in `stateDiff`, which can then be used by the application to detect memory leaks and other memory problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemDifference` are removed during preprocessing.  
+
+The `_CrtMemDifference` function compares `oldState` and `newState` and stores their differences in `stateDiff`, which can then be used by the application to detect memory leaks and other memory problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemDifference` are removed during preprocessing.  
   
  `newState` and `oldState` must each be a valid pointer to a `_CrtMemState` structure, defined in Crtdbg.h, that has been filled in by [_CrtMemCheckpoint](../../c-runtime-library/reference/crtmemcheckpoint.md) before calling `_CrtMemDifference`. `stateDiff` must be a pointer to a previously allocated instance of the `_CrtMemState` structure. If `stateDiff`, `newState`, or `oldState` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to `EINVAL` and the function returns FALSE.  
   
@@ -68,5 +72,6 @@ int _CrtMemDifference(
  **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)

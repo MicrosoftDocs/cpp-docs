@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fscanf, _fscanf_l, fwscanf, _fwscanf_l
+
 Read formatted data from a stream. More secure versions of these functions are available; see [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md).  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int _fwscanf_l(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `format`  
@@ -64,12 +66,14 @@ int _fwscanf_l(
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for `fscanf` and `fwscanf`.  
+
+Each of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for `fscanf` and `fwscanf`.  
   
  These functions validate their parameters. If `stream` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.  
   
 ## Remarks  
- The `fscanf` function reads data from the current position of `stream` into the locations given by `argument` (if any). Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. `format` controls the interpretation of the input fields and has the same form and function as the `format` argument for `scanf`; see [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) for a description of `format`.  
+
+The `fscanf` function reads data from the current position of `stream` into the locations given by `argument` (if any). Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. `format` controls the interpretation of the input fields and has the same form and function as the `format` argument for `scanf`; see [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) for a description of `format`.  
   
  `fwscanf` is a wide-character version of `fscanf`; the format argument to `fwscanf` is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. `fscanf` doesn't currently support input from a UNICODE stream.  
   
@@ -153,7 +157,8 @@ x
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)   

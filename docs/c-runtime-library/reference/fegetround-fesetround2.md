@@ -34,7 +34,7 @@ int fesetround(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *round_mode*<br/>
  The rounding mode to set, as one of the floating-point rounding macros. If the value is not equal to one of the floating-point rounding macros, the rounding mode is not changed.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _lseek, _lseeki64
+
 Moves a file pointer to the specified location.  
   
 ## Syntax  
@@ -39,8 +40,9 @@ __int64 _lseeki64(
 );  
 ```  
   
-#### Parameters  
- `fd`  
+### Parameters  
+
+`fd`  
  File descriptor referring to an open file.  
   
  *offset*  
@@ -50,12 +52,14 @@ __int64 _lseeki64(
  Initial position.  
   
 ## Return Value  
- `_lseek` returns the offset, in bytes, of the new position from the beginning of the file. `_lseeki64` returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *origin* is invalid or the position specified by *offset* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.  
+
+`_lseek` returns the offset, in bytes, of the new position from the beginning of the file. `_lseeki64` returns the offset in a 64-bit integer. The function returns -1L to indicate an error. If passed an invalid parameter, such as a bad file descriptor, or the value for *origin* is invalid or the position specified by *offset* is before the beginning of the file, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L. On devices incapable of seeking (such as terminals and printers), the return value is undefined.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_lseek` function moves the file pointer associated with `fd` to a new location that is *offset* bytes from *origin*. The next operation on the file occurs at the new location. The *origin* argument must be one of the following constants, which are defined in Stdio.h.  
+
+The `_lseek` function moves the file pointer associated with `fd` to a new location that is *offset* bytes from *origin*. The next operation on the file occurs at the new location. The *origin* argument must be one of the following constants, which are defined in Stdio.h.  
   
  `SEEK_SET`  
  Beginning of the file.  
@@ -78,7 +82,8 @@ __int64 _lseeki64(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -151,6 +156,7 @@ Position for end of file seek = 57
 ```  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)   
  [_tell, _telli64](../../c-runtime-library/reference/tell-telli64.md)

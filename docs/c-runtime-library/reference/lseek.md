@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lseek
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_lseek](../../c-runtime-library/reference/lseek-lseeki64.md) instead.

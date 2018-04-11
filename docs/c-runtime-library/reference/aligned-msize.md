@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_msize
+
 Returns the size of a memory block allocated in the heap.  
   
 ## Syntax  
@@ -33,8 +34,9 @@ size_t _msize(
 );  
 ```  
   
-#### Parameters  
- [in] `memblock`  
+### Parameters  
+
+[in] `memblock`  
  Pointer to the memory block.  
   
  [in] `alignment`  
@@ -44,10 +46,12 @@ size_t _msize(
  The offset into the memory allocation to force the alignment.  
   
 ## Return Value  
- Returns the size (in bytes) as an unsigned integer.  
+
+Returns the size (in bytes) as an unsigned integer.  
   
 ## Remarks  
- The `_aligned_msize` function returns the size, in bytes, of the memory block allocated by a call to [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md). The `alignment` and `offset` values must be the same as the values passed to the function that allocated the block.  
+
+The `_aligned_msize` function returns the size, in bytes, of the memory block allocated by a call to [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md). The `alignment` and `offset` values must be the same as the values passed to the function that allocated the block.  
   
  When the application is linked with a debug version of the C run-time libraries, `_aligned_msize` resolves to [_aligned_msize_dbg](../../c-runtime-library/reference/aligned-msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).  
   
@@ -62,7 +66,9 @@ size_t _msize(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)

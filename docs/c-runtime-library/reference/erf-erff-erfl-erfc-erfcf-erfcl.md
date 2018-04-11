@@ -59,7 +59,7 @@ long double erfcl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  A floating-point value.

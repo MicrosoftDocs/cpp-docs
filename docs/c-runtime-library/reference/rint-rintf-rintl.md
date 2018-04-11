@@ -37,7 +37,7 @@ float rint( float x );  // C++ only
 long double rint( long double x );  // C++ only
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to round.

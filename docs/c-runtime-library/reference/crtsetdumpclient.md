@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtSetDumpClient
+
 Installs an application-defined function to dump `_CLIENT_BLOCK` type memory blocks (debug version only).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Installs an application-defined function to dump `_CLIENT_BLOCK` type memory blo
 );  
 ```  
   
-#### Parameters  
- `dumpClient`  
+### Parameters  
+
+`dumpClient`  
  New client-defined memory dump function to hook into the C run-time debug memory dump process.  
   
 ## Return Value  
- Returns the previously defined client block dump function.  
+
+Returns the previously defined client block dump function.  
   
 ## Remarks  
- The `_CrtSetDumpClient` function allows the application to hook its own function to dump objects stored in `_CLIENT_BLOCK` memory blocks into the C run-time debug memory dump process. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md) dumps a `_CLIENT_BLOCK` memory block, the application's dump function is called as well. `_CrtSetDumpClient` provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in `_CLIENT_BLOCK` blocks. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDumpClient` are removed during preprocessing.  
+
+The `_CrtSetDumpClient` function allows the application to hook its own function to dump objects stored in `_CLIENT_BLOCK` memory blocks into the C run-time debug memory dump process. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md) dumps a `_CLIENT_BLOCK` memory block, the application's dump function is called as well. `_CrtSetDumpClient` provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in `_CLIENT_BLOCK` blocks. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDumpClient` are removed during preprocessing.  
   
  The `_CrtSetDumpClient` function installs the new application-defined dump function specified in `dumpClient` and returns the previously defined dump function. An example of a client block dump function is as follows:  
   
@@ -65,9 +69,11 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)   
  [_CrtGetDumpClient](../../c-runtime-library/reference/crtgetdumpclient.md)

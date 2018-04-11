@@ -32,7 +32,7 @@ unsigned int _statusfp( void );
 void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 ```
 
-#### Parameters
+### Parameters
 
 *px86*<br/>
  This address is filled with the status word for the x87 floating-point unit.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strinc, _wcsinc, _mbsinc, _mbsinc_l
+
 Advances a string pointer by one character.  
   
 > [!IMPORTANT]
@@ -47,18 +48,21 @@ unsigned char *_mbsinc_l(
   
 ```  
   
-#### Parameters  
- `current`  
+### Parameters  
+
+`current`  
  Character pointer.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns a pointer to the character that immediately follows `current`.  
+
+Each of these routines returns a pointer to the character that immediately follows `current`.  
   
 ## Remarks  
- The `_mbsinc` function returns a pointer to the first byte of the multibyte character that immediately follows `current`. `_mbsinc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) that's currently in use; `_mbsinc_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `_mbsinc` function returns a pointer to the first byte of the multibyte character that immediately follows `current`. `_mbsinc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) that's currently in use; `_mbsinc_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  The generic-text function `_tcsinc`, defined in Tchar.h, maps to `_mbsinc` if `_MBCS` has been defined, or to `_wcsinc` if `_UNICODE` has been defined. Otherwise, `_tcsinc` maps to `_strinc`. `_strinc` and `_wcsinc` are single-byte-character and wide-character versions of `_mbsinc`. `_strinc` and `_wcsinc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).  
   
@@ -79,7 +83,8 @@ unsigned char *_mbsinc_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_strdec, _wcsdec, _mbsdec, _mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)   
  [_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)   
  [_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)

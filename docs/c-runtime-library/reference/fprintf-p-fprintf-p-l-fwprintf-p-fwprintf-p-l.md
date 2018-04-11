@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
+
 Prints formatted data to a stream.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int _fwprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to the `FILE` structure.  
   
  `format`  
@@ -64,10 +66,12 @@ int _fwprintf_p_l(
  The locale to use.  
   
 ## Return Value  
- `_fprintf_p` and `_fwprintf_p` return the number of characters written or return a negative value when an output error occurs.  
+
+`_fprintf_p` and `_fwprintf_p` return the number of characters written or return a negative value when an output error occurs.  
   
 ## Remarks  
- `_fprintf_p` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `_fprintf_p`, the `format` argument has the same syntax and use that it has in `_printf_p`. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+
+`_fprintf_p` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `_fprintf_p`, the `format` argument has the same syntax and use that it has in `_printf_p`. These functions support positional parameters, meaning that the order of the parameters used by the format string can be changed. For more information about positional parameters, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
  `_fwprintf_p` is a wide-character version of `_fprintf_p`; in `_fwprintf_p`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `_fprintf_p` doesn't currently support output into a UNICODE stream.  
   
@@ -141,7 +145,8 @@ this is a string
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)   
  [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)   

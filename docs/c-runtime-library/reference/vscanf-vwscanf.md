@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vscanf, vwscanf
+
 Reads formatted data from the standard input stream. More secure versions of these function are available; see [vscanf_s, vwscanf_s](../../c-runtime-library/reference/vscanf-s-vwscanf-s.md).  
   
 ## Syntax  
@@ -36,22 +37,25 @@ int vwscanf(
   
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format control string.  
   
  `arglist`  
  Variable argument list.  
   
 ## Return Value  
- Returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned.  
+
+Returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned.  
   
  If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.  
   
  For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `vscanf` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
+
+The `vscanf` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.  
   
 > [!IMPORTANT]
 >  When you use `vscanf` to read a string, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [vscanf_s, vwscanf_s](../../c-runtime-library/reference/vscanf-s-vwscanf-s.md) or [fgets](../../c-runtime-library/reference/fgets-fgetws.md).  
@@ -132,7 +136,8 @@ The contents are: 36 92.300003 y n Wide characters
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)   

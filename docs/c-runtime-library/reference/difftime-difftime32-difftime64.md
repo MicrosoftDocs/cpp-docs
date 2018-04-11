@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # difftime, _difftime32, _difftime64
+
 Finds the difference between two times.  
   
 ## Syntax  
@@ -40,18 +41,21 @@ double _difftime64(
 );  
 ```  
   
-#### Parameters  
- `timer1`  
+### Parameters  
+
+`timer1`  
  Ending time.  
   
  `timer0`  
  Beginning time.  
   
 ## Return Value  
- `difftime` returns the elapsed time in seconds, from `timer0` to `timer1`. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.  
+
+`difftime` returns the elapsed time in seconds, from `timer0` to `timer1`. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.  
   
 ## Remarks  
- The `difftime` function computes the difference between the two supplied time values `timer0` and `timer1`.  
+
+The `difftime` function computes the difference between the two supplied time values `timer0` and `timer1`.  
   
  The time value supplied must fit within the range of `time_t`. `time_t` is a 64-bit value. Thus, the end of the range was extended from 23:59:59 January 18, 2038, UTC to 23:59:59, December 31, 3000. The lower range of `time_t` is still midnight, January 1, 1970.  
   
@@ -127,6 +131,7 @@ Program takes      5 seconds.
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Time Management](../../c-runtime-library/time-management.md)   
  [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)

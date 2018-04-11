@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # perror, _wperror
+
 Print an error message.  
   
 ## Syntax  
@@ -35,12 +36,14 @@ void _wperror(
 );  
 ```  
   
-#### Parameters  
- `string`  
+### Parameters  
+
+`string`  
  String message to print.  
   
 ## Remarks  
- The `perror` function prints an error message to `stderr`. `_wperror` is a wide-character version of **_perror**; the `string` argument to `_wperror` is a wide-character string. `_wperror` and **_perror** behave identically otherwise.  
+
+The `perror` function prints an error message to `stderr`. `_wperror` is a wide-character version of **_perror**; the `string` argument to `_wperror` is a wide-character string. `_wperror` and **_perror** behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -66,7 +69,8 @@ void _wperror(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -119,7 +123,8 @@ _strerror says open failed: No such file or directory
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [clearerr](../../c-runtime-library/reference/clearerr.md)   
  [ferror](../../c-runtime-library/reference/ferror.md)   
  [strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)

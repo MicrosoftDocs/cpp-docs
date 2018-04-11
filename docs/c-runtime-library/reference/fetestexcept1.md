@@ -33,7 +33,7 @@ int fetestexcept(
 
 ```
 
-#### Parameters
+### Parameters
 
 *excepts*<br/>
  A bitwise OR of the floating-point     status flags to test.

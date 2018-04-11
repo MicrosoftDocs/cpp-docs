@@ -48,7 +48,7 @@ int ilogbl(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The specified value.

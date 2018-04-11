@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
+
 Sets characters of a string to a character. More secure versions of these functions are available; see [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](../../c-runtime-library/reference/strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).  
   
 > [!IMPORTANT]
@@ -58,8 +59,9 @@ unsigned char *_mbsset_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to be set.  
   
  `c`  
@@ -69,10 +71,12 @@ unsigned char *_mbsset_l(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the altered string.  
+
+Returns a pointer to the altered string.  
   
 ## Remarks  
- The `_strset` function sets all characters (except the terminating null character) of `str` to `c`, converted to `char`. `_wcsset` and `_mbsset_l` are wide-character and multibyte-character versions of `_strset`, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.  
+
+The `_strset` function sets all characters (except the terminating null character) of `str` to `c`, converted to `char`. `_wcsset` and `_mbsset_l` are wide-character and multibyte-character versions of `_strset`, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.  
   
  `_mbsset` validates its parameters. If `str` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsset` returns `NULL` and sets `errno` to `EINVAL`. `_strset` and `_wcsset` do not validate their parameters.  
   
@@ -125,7 +129,8 @@ After:  *******************************
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbsnbset, _mbsnbset_l](../../c-runtime-library/reference/mbsnbset-mbsnbset-l.md)   

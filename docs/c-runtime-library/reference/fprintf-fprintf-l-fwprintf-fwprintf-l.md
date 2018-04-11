@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fprintf, _fprintf_l, fwprintf, _fwprintf_l
+
 Print formatted data to a stream. More secure versions of these functions are available; see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int _fwprintf_l(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `format`  
@@ -64,12 +66,14 @@ int _fwprintf_l(
  The locale to use.  
   
 ## Return Value  
- `fprintf` returns the number of bytes written. `fwprintf` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If `stream` or `format` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. The format string is not checked for valid formatting characters as it is when using `fprintf_s` or `fwprintf_s`.  
+
+`fprintf` returns the number of bytes written. `fwprintf` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If `stream` or `format` is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. The format string is not checked for valid formatting characters as it is when using `fprintf_s` or `fwprintf_s`.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
 ## Remarks  
- `fprintf` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
+
+`fprintf` formats and prints a series of characters and values to the output `stream`. Each function `argument` (if any) is converted and output according to the corresponding format specification in `format`. For `fprintf`, the `format` argument has the same syntax and use that it has in `printf`.  
   
  `fwprintf` is a wide-character version of `fprintf`; in `fwprintf`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf` does not currently support output into a UNICODE stream.  
   
@@ -134,7 +138,8 @@ this is a string
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
  [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)   
  [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)   

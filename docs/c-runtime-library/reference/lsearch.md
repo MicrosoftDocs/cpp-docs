@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _lsearch
+
 Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void *_lsearch(
 );  
 ```  
   
-#### Parameters  
- `key`  
+### Parameters  
+
+`key`  
  Object to search for.  
   
  `base`  
@@ -52,10 +54,12 @@ void *_lsearch(
  Pointer to the comparison routine. The first parameter is a pointer to the key for search. The second parameter is a pointer to an array element to be compared with the key.  
   
 ## Return Value  
- If the key is found, `_lsearch` returns a pointer to the element of the array at `base` that matches `key`. If the key is not found, `_lsearch` returns a pointer to the newly added item at the end of the array.  
+
+If the key is found, `_lsearch` returns a pointer to the element of the array at `base` that matches `key`. If the key is not found, `_lsearch` returns a pointer to the newly added item at the end of the array.  
   
 ## Remarks  
- The `_lsearch` function performs a linear search for the value `key` in an array of `num` elements, each of `width` bytes. Unlike `bsearch`, `_lsearch` does not require the array to be sorted. If `key` is not found, `_lsearch` adds it to the end of the array and increments `num`.  
+
+The `_lsearch` function performs a linear search for the value `key` in an array of `num` elements, each of `width` bytes. Unlike `bsearch`, `_lsearch` does not require the array to be sorted. If `key` is not found, `_lsearch` adds it to the end of the array and increments `num`.  
   
  The `compare` argument is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `_lsearch` calls the `compare` routine one or more times during the search, passing pointers to two array elements on each call. `compare` must compare the elements and return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).  
   
@@ -112,7 +116,8 @@ wordlist after _lsearch: hello thanks bye extra
 ```  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch](../../c-runtime-library/reference/bsearch.md)   
  [_lfind](../../c-runtime-library/reference/lfind.md)   
  [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)

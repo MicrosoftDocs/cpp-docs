@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # offsetof Macro
+
 Retrieves the offset of a member from the beginning of its parent structure.  
   
 ## Syntax  
@@ -32,18 +33,21 @@ Retrieves the offset of a member from the beginning of its parent structure.
 );  
 ```  
   
-#### Parameters  
- *structName*  
+### Parameters  
+
+*structName*  
  Name of the parent data structure.  
   
  `memberName`  
  Name of the member in the parent data structure for which to determine the offset.  
   
 ## Return Value  
- `offsetof` returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.  
+
+`offsetof` returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.  
   
 ## Remarks  
- The `offsetof` macro returns the offset in bytes of `memberName` from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.  
+
+The `offsetof` macro returns the offset in bytes of `memberName` from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.  
   
 > [!NOTE]
 >  `offsetof` is not a function and cannot be described using a C prototype.  
@@ -57,7 +61,9 @@ Retrieves the offset of a member from the beginning of its parent structure.
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)

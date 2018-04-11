@@ -33,7 +33,7 @@ void __cdecl _set_controlfp(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *newControl*<br/>
  New control-word bit values.

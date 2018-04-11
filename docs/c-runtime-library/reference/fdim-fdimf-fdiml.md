@@ -54,7 +54,7 @@ long double fdiml(
 
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The first value.

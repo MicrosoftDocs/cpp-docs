@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _access_s, _waccess_s
+
 Determines file read/write permissions. This is a version of [_access, _waccess](../../c-runtime-library/reference/access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -36,15 +37,17 @@ errno_t _waccess_s(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  File or directory path.  
   
  `mode`  
  Permission setting.  
   
 ## Return Value  
- Each function returns 0 if the file has the given mode. The function returns an error code if the named file does not exist or is not accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.  
+
+Each function returns 0 if the file has the given mode. The function returns an error code if the named file does not exist or is not accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.  
   
  `EACCES`  
  Access denied. The file's permission setting does not allow specified access.  
@@ -58,7 +61,8 @@ errno_t _waccess_s(
  For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- When used with files, the `_access_s` function determines whether the specified file exists and can be accessed as specified by the value of `mode`. When used with directories, `_access_s` determines only whether the specified directory exists. In [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.  
+
+When used with files, the `_access_s` function determines whether the specified file exists and can be accessed as specified by the value of `mode`. When used with directories, `_access_s` determines only whether the specified directory exists. In [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.  
   
 |mode value|Checks file for|  
 |----------------|---------------------|  
@@ -87,7 +91,8 @@ errno_t _waccess_s(
 |`_waccess_s`|\<wchar.h> or \<io.h>|\<errno.h>|  
   
 ## Example  
- This example uses `_access_s` to check the file named crt_access_s.c to see whether it exists and whether writing is allowed.  
+
+This example uses `_access_s` to check the file named crt_access_s.c to see whether it exists and whether writing is allowed.  
   
 ```  
 // crt_access_s.c  
@@ -130,7 +135,8 @@ File crt_access_s.c does not have write permission.
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
+
 Checks whether a multibyte character is a legal or symbol character.  
   
 > [!IMPORTANT]
@@ -45,18 +46,21 @@ int _ismbcsymbol_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be tested.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If `c`<= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
+
+Each of these routines returns a nonzero value if the character satisfies the test condition or 0 if it does not. If `c`<= 255 and there is a corresponding `_ismbb` routine (for example, `_ismbcalnum` corresponds to `_ismbbalnum`), the result is the return value of the corresponding `_ismbb` routine.  
   
 ## Remarks  
- Each of these functions tests a given multibyte character for a given condition.  
+
+Each of these functions tests a given multibyte character for a given condition.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -82,7 +86,8 @@ int _ismbcsymbol_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

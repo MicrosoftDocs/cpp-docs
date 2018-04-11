@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
+
 Transform a string based on locale-specific information.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ size_t wcsxfrm_l(
 );  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Destination string.  
   
  `strSource`  
@@ -64,10 +66,12 @@ size_t wcsxfrm_l(
  The locale to use.  
   
 ## Return Value  
- Returns the length of the transformed string, not counting the terminating null character. If the return value is greater than or equal to `count`, the content of `strDest` is unpredictable. On an error, each function sets `errno` and returns `INT_MAX`. For an invalid character, `errno` is set to `EILSEQ`.  
+
+Returns the length of the transformed string, not counting the terminating null character. If the return value is greater than or equal to `count`, the content of `strDest` is unpredictable. On an error, each function sets `errno` and returns `INT_MAX`. For an invalid character, `errno` is set to `EILSEQ`.  
   
 ## Remarks  
- The `strxfrm` function transforms the string pointed to by `strSource` into a new collated form that is stored in `strDest`. No more than `count` characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's `LC_COLLATE` category setting. For more information on `LC_COLLATE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strxfrm` uses the current locale for its locale-dependent behavior; `_strxfrm_l` is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `strxfrm` function transforms the string pointed to by `strSource` into a new collated form that is stored in `strDest`. No more than `count` characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's `LC_COLLATE` category setting. For more information on `LC_COLLATE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strxfrm` uses the current locale for its locale-dependent behavior; `_strxfrm_l` is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  After the transformation, a call to `strcmp` with the two transformed strings yields results identical to those of a call to `strcoll` applied to the original two strings. As with `strcoll` and `stricoll`, `strxfrm` automatically handles multibyte-character strings as appropriate.  
   
@@ -113,7 +117,8 @@ return( strlen( _string1 ) );
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
  [Locale](../../c-runtime-library/locale.md)   

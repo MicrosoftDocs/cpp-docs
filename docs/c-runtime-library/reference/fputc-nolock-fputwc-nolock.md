@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fputc_nolock, _fputwc_nolock
+
 Writes a character to a stream without locking the thread.  
   
 ## Syntax  
@@ -36,18 +37,21 @@ wint_t _fputwc_nolock(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Character to be written.  
   
  `stream`  
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- Each of these functions returns the character written. For error information, see [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md).  
+
+Each of these functions returns the character written. For error information, see [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md).  
   
 ## Remarks  
- `_fputc_nolock` and `_fputwc_nolock` are identical to `fputc` and `fputwc`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+`_fputc_nolock` and `_fputwc_nolock` are identical to `fputc` and `fputwc`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
  The two functions behave identically if the stream is opened in ANSI mode. `_fputc_nolock` does not currently support output into a UNICODE stream.  
   
@@ -92,6 +96,7 @@ This is a test of _fputc_nolock!!
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)

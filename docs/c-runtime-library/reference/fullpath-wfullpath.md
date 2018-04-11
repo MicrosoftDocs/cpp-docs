@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fullpath, _wfullpath
+
 Creates an absolute or full path name for the specified relative path name.  
   
 ## Syntax  
@@ -38,8 +39,9 @@ wchar_t *_wfullpath(
 );  
 ```  
   
-#### Parameters  
- `absPath`  
+### Parameters  
+
+`absPath`  
  Pointer to a buffer containing the absolute or full path name, or NULL.  
   
  `relPath`  
@@ -49,10 +51,12 @@ wchar_t *_wfullpath(
  Maximum length of the absolute path name buffer (`absPath`). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.  
   
 ## Return Value  
- Each of these functions returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`), the function returns `NULL`.  
+
+Each of these functions returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`), the function returns `NULL`.  
   
 ## Remarks  
- The `_fullpath` function expands the relative path name in `relPath` to its fully qualified or absolute path and stores this name in `absPath`. If `absPath` is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (`relPath`) that include "./" or "../" in their names.  
+
+The `_fullpath` function expands the relative path name in `relPath` to its fully qualified or absolute path and stores this name in `absPath`. If `absPath` is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (`relPath`) that include "./" or "../" in their names.  
   
  For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):  
   
@@ -125,7 +129,8 @@ Full path is: C:\Documents and Settings\user\test
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   
  [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   
  [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)   

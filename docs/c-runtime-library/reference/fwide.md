@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fwide
+
 Unimplemented.  
   
 ## Syntax  
@@ -32,18 +33,21 @@ int fwide(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure (ignored).  
   
  `mode`  
  The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)  
   
 ## Return Value  
- This function currently just returns `mode`.  
+
+This function currently just returns `mode`.  
   
 ## Remarks  
- The current version of this function does not comply with the Standard.  
+
+The current version of this function does not comply with the Standard.  
   
 ## Requirements  
   

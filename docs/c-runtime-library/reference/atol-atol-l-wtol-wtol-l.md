@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atol, _atol_l, _wtol, _wtol_l
+
 Convert a string to a long integer.  
   
 ## Syntax  
@@ -42,20 +43,23 @@ long _wtol_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be converted.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each function returns the `long` value produced by interpreting the input characters as a number. The return value is 0L for `atol` if the input cannot be converted to a value of that type.  
+
+Each function returns the `long` value produced by interpreting the input characters as a number. The return value is 0L for `atol` if the input cannot be converted to a value of that type.  
   
  In the case of overflow with large positive integral values, `atol` returns `LONG_MAX`; in the case of overflow with large negative integral values, `LONG_MIN` is returned. In all out-of-range cases, `errno` is set to `ERANGE`. If the parameter passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return 0.  
   
 ## Remarks  
- These functions convert a character string to a long integer value (`atol`).  
+
+These functions convert a character string to a long integer value (`atol`).  
   
  The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character may be the `NULL` character ('\0' or L'\0') terminating the string.  
   
@@ -84,7 +88,8 @@ long _wtol_l(
 |`_atol_l`, `_wtol`, `_wtol_l`|\<stdlib.h> and \<wchar.h>|  
   
 ## Example  
- This program shows how numbers stored as strings can be converted to numeric values using the `atol` function.  
+
+This program shows how numbers stored as strings can be converted to numeric values using the `atol` function.  
   
 ```  
 // crt_atol.c  
@@ -132,7 +137,8 @@ Overflow condition occurred.
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_ecvt](../../c-runtime-library/reference/ecvt.md)   

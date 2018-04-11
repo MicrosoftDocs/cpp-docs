@@ -44,7 +44,7 @@ long double expm1l(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point exponential value.

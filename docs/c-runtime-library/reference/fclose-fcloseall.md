@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fclose, _fcloseall
+
 Closes a stream (`fclose`) or closes all open streams (`_fcloseall`).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ int fclose(
 int _fcloseall( void );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
 ## Return Value  
- `fclose` returns 0 if the stream is successfully closed. `_fcloseall` returns the total number of streams closed. Both functions return `EOF` to indicate an error.  
+
+`fclose` returns 0 if the stream is successfully closed. `_fcloseall` returns the total number of streams closed. Both functions return `EOF` to indicate an error.  
   
 ## Remarks  
- The `fclose` function closes `stream`. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `fclose` sets `errno` to `EINVAL` and returns `EOF`. It is recommended that the `stream` pointer always be checked prior to calling this function.  
+
+The `fclose` function closes `stream`. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `fclose` sets `errno` to `EINVAL` and returns `EOF`. It is recommended that the `stream` pointer always be checked prior to calling this function.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
   
@@ -60,10 +64,12 @@ int _fcloseall( void );
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
+
+See the example for [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [_close](../../c-runtime-library/reference/close.md)   
  [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
  [fflush](../../c-runtime-library/reference/fflush.md)   

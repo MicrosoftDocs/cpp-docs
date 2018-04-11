@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # terminate (CRT)
+
 Calls `abort` or a function you specify using `set_terminate`.  
   
 ## Syntax  
@@ -30,7 +31,8 @@ void terminate( void );
 ```  
   
 ## Remarks  
- The `terminate` function is used with C++ exception handling and is called in the following cases:  
+
+The `terminate` function is used with C++ exception handling and is called in the following cases:  
   
 -   A matching catch handler cannot be found for a thrown C++ exception.  
   
@@ -95,7 +97,8 @@ term_func() was called by terminate().
 ```  
   
 ## See Also  
- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)   
  [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   

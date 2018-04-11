@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fputchar
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_fputchar](../../c-runtime-library/reference/fputchar-fputwchar.md) instead.

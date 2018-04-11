@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_realloc
+
 Changes the size of a memory block that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md).  
   
 ## Syntax  
@@ -34,8 +35,9 @@ void * _aligned_offset_realloc(
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  The current memory block pointer.  
   
  `size`  
@@ -48,12 +50,14 @@ void * _aligned_offset_realloc(
  The offset into the memory allocation to force the alignment.  
   
 ## Return Value  
- `_aligned_offset_realloc` returns a void pointer to the reallocated (and possibly moved) memory block. The return value is `NULL` if the size is zero and the buffer argument is not `NULL`, or if there is not enough available memory to expand the block to the given size. In the first case, the original block is freed. In the second case, the original block is unchanged. The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than void, use a type cast on the return value.  
+
+`_aligned_offset_realloc` returns a void pointer to the reallocated (and possibly moved) memory block. The return value is `NULL` if the size is zero and the buffer argument is not `NULL`, or if there is not enough available memory to expand the block to the given size. In the first case, the original block is freed. In the second case, the original block is unchanged. The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than void, use a type cast on the return value.  
   
  `_aligned_offset_realloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).  
   
 ## Remarks  
- Like [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md), `_aligned_offset_realloc` allows a structure to be aligned at an offset within the structure.  
+
+Like [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md), `_aligned_offset_realloc` allows a structure to be aligned at an offset within the structure.  
   
  `_aligned_offset_realloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](../../c-runtime-library/reference/malloc.md). If `memblock` is `NULL`, the function calls `_aligned_offset_malloc` internally.  
   
@@ -66,7 +70,9 @@ void * _aligned_offset_realloc(
 |`_aligned_offset_realloc`|\<malloc.h>|  
   
 ## Example  
- For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
+
+For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
   
 ## See Also  
- [Data Alignment](../../c-runtime-library/data-alignment.md)
+
+[Data Alignment](../../c-runtime-library/data-alignment.md)

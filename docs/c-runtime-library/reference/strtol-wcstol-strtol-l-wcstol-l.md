@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtol, wcstol, _strtol_l, _wcstol_l
+
 Convert strings to a long-integer value.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ long _wcstol_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,12 +66,14 @@ long _wcstol_l(
  Locale to use.  
   
 ## Return Value  
- `strtol` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `LONG_MAX` or `LONG_MIN`. `strtol` returns 0 if no conversion can be performed. `wcstol` returns values analogously to `strtol`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
+
+`strtol` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `LONG_MAX` or `LONG_MIN`. `strtol` returns 0 if no conversion can be performed. `wcstol` returns values analogously to `strtol`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.  
   
 ## Remarks  
- The `strtol` function converts `nptr` to a `long`. `strtol` stops reading the string `nptr` at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`.  
+
+The `strtol` function converts `nptr` to a `long`. `strtol` stops reading the string `nptr` at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`.  
   
  `wcstol` is a wide-character version of `strtol`; its `nptr` argument is a wide-character string. These functions behave identically otherwise.  
   
@@ -101,10 +105,12 @@ long _wcstol_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
+
+See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

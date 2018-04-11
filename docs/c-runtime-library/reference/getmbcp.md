@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getmbcp
+
 Retrieves the current code page.  
   
 ## Syntax  
@@ -30,7 +31,8 @@ int _getmbcp( void );
 ```  
   
 ## Return Value  
- Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.  
+
+Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.  
   
 ## Requirements  
   
@@ -41,4 +43,5 @@ int _getmbcp( void );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [_setmbcp](../../c-runtime-library/reference/setmbcp.md)
+
+[_setmbcp](../../c-runtime-library/reference/setmbcp.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # casin, casinf, casinl
+
 Retrieves the arcsine of a complex number, with branch cuts outside the interval [-1, +1] along the real axis.  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex casinl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The arcsine of `z`, in radians. The result is unbounded along the imaginary axis, and in the interval [-π/2, +π/2] along the real axis.  
+
+The arcsine of `z`, in radians. The result is unbounded along the imaginary axis, and in the interval [-π/2, +π/2] along the real axis.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `casin` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `casin` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `casin` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `casin` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex casinl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

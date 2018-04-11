@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
+
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order that arguments are used in the format string.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ int _vfwprintf_p_l(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to `FILE` structure.  
   
  `format`  
@@ -66,10 +68,12 @@ int _vfwprintf_p_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- `_vfprintf_p` and `_vfwprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.  
+
+`_vfprintf_p` and `_vfwprintf_p` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, then formats and writes the given data to `stream`. These functions differ from the `_vfprint_s` and `_vfwprint_s` versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
+
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to `stream`. These functions differ from the `_vfprint_s` and `_vfwprint_s` versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).  
   
  `_vfwprintf_p` is the wide-character version of `_vprintf_p`; the two functions behave identically if the stream is opened in ANSI mode. `_vprintf_p` doesn't currently support output into a UNICODE stream.  
   
@@ -99,7 +103,8 @@ int _vfwprintf_p_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   

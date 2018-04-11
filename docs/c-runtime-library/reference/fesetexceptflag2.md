@@ -33,7 +33,7 @@ int fesetexceptflag(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *pstatus*<br/>
  Pointer to an **fexcept_t** object containing the values to set the exception status flags to. The object may be set by a previous call to [fegetexceptflag](fegetexceptflag2.md).

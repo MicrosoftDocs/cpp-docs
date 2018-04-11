@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _onexit, _onexit_m
+
 Registers a routine to be called at exit time.  
   
 ## Syntax  
@@ -34,15 +35,18 @@ _onexit_t_m _onexit_m(
 );  
 ```  
   
-#### Parameters  
- `function`  
+### Parameters  
+
+`function`  
  Pointer to a function to be called at exit.  
   
 ## Return Value  
- `_onexit` returns a pointer to the function if successful or `NULL` if there is no space to store the function pointer.  
+
+`_onexit` returns a pointer to the function if successful or `NULL` if there is no space to store the function pointer.  
   
 ## Remarks  
- The `_onexit` function is passed the address of a function (`function`) to be called when the program terminates normally. Successive calls to `_onexit` create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to `_onexit` cannot take parameters.  
+
+The `_onexit` function is passed the address of a function (`function`) to be called when the program terminates normally. Successive calls to `_onexit` create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to `_onexit` cannot take parameters.  
   
  In the case when `_onexit` is called from within a DLL, routines registered with `_onexit` run on a DLL's unloading after `DllMain` is called with DLL_PROCESS_DETACH.  
   
@@ -109,7 +113,8 @@ This is executed next.
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   
  [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [__dllonexit](../../c-runtime-library/dllonexit.md)

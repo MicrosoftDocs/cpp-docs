@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fflush_nolock
+
 Flushes a stream without locking the thread.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ int _fflush_nolock(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Pointer to the `FILE` structure.  
   
 ## Return Value  
- See [fflush](../../c-runtime-library/reference/fflush.md).  
+
+See [fflush](../../c-runtime-library/reference/fflush.md).  
   
 ## Remarks  
- This function is a non-locking version of `fflush`. It is identical to `fflush` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+This function is a non-locking version of `fflush`. It is identical to `fflush` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ## Requirements  
   
@@ -50,7 +54,8 @@ int _fflush_nolock(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
  [_flushall](../../c-runtime-library/reference/flushall.md)   
  [setvbuf](../../c-runtime-library/reference/setvbuf.md)

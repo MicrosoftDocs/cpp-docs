@@ -53,7 +53,7 @@ long double _hypotl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*, *y*<br/>
  Floating-point values.

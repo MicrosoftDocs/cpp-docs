@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # realloc
+
 Reallocate memory blocks.  
   
 ## Syntax  
@@ -32,15 +33,17 @@ void *realloc(
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  Pointer to previously allocated memory block.  
   
  `size`  
  New size in bytes.  
   
 ## Return Value  
- `realloc` returns a `void` pointer to the reallocated (and possibly moved) memory block.  
+
+`realloc` returns a `void` pointer to the reallocated (and possibly moved) memory block.  
   
  If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and `NULL` is returned.  
   
@@ -49,7 +52,8 @@ void *realloc(
  The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than `void`, use a type cast on the return value.  
   
 ## Remarks  
- The `realloc` function changes the size of an allocated memory block. The `memblock` argument points to the beginning of the memory block. If `memblock` is `NULL`, `realloc` behaves the same way as `malloc` and allocates a new block of `size` bytes. If `memblock` is not `NULL`, it should be a pointer returned by a previous call to `calloc`, `malloc`, or `realloc`.  
+
+The `realloc` function changes the size of an allocated memory block. The `memblock` argument points to the beginning of the memory block. If `memblock` is `NULL`, `realloc` behaves the same way as `malloc` and allocates a new block of `size` bytes. If `memblock` is not `NULL`, it should be a pointer returned by a previous call to `calloc`, `malloc`, or `realloc`.  
   
  The `size` argument gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes, although the new block can be in a different location. Because the new block can be in a new memory location, the pointer returned by `realloc` is not guaranteed to be the pointer passed through the `memblock` argument. `realloc` does not zero newly allocated memory in the case of buffer growth.  
   
@@ -123,7 +127,8 @@ Size of block after realloc of 1000 more longs: 8000
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [free](../../c-runtime-library/reference/free.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)

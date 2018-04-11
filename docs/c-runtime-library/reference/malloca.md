@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _malloca
+
 Allocates memory on the stack. This is a version of [_alloca](../../c-runtime-library/reference/alloca.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -31,17 +32,20 @@ void *_malloca(
 );  
 ```  
   
-#### Parameters  
- `size`  
+### Parameters  
+
+`size`  
  Bytes to be allocated from the stack.  
   
 ## Return Value  
- The `_malloca` routine returns a `void` pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If `size` is 0, `_malloca` allocates a zero-length item and returns a valid pointer to that item.  
+
+The `_malloca` routine returns a `void` pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If `size` is 0, `_malloca` allocates a zero-length item and returns a valid pointer to that item.  
   
  A stack overflow exception is generated if the space cannot be allocated. The stack overflow exception is not a C++ exception; it is a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH).  
   
 ## Remarks  
- `_malloca` allocates `size` bytes from the program stack or the heap if the request exceeds a certain size in bytes given by `_ALLOCA_S_THRESHOLD`. The difference between `_malloca` and `_alloca` is that `_alloca` always allocates on the stack, regardless of the size. Unlike `_alloca`, which does not require or permit a call to `free` to free the memory so allocated, `_malloca` requires the use of [_freea](../../c-runtime-library/reference/freea.md) to free memory. In debug mode, `_malloca` always allocates memory from the heap.  
+
+`_malloca` allocates `size` bytes from the program stack or the heap if the request exceeds a certain size in bytes given by `_ALLOCA_S_THRESHOLD`. The difference between `_malloca` and `_alloca` is that `_alloca` always allocates on the stack, regardless of the size. Unlike `_alloca`, which does not require or permit a call to `free` to free the memory so allocated, `_malloca` requires the use of [_freea](../../c-runtime-library/reference/freea.md) to free memory. In debug mode, `_malloca` always allocates memory from the heap.  
   
  There are restrictions to explicitly calling `_malloca` in an exception handler (EH). EH routines that run on x86-class processors operate in their own memory frame: They perform their tasks in memory space that is not based on the current location of the stack pointer of the enclosing function. The most common implementations include Windows NT structured exception handling (SEH) and C++ catch clause expressions. Therefore, explicitly calling `_malloca` in any of the following scenarios results in program failure during the return to the calling EH routine:  
   
@@ -157,7 +161,8 @@ Enter the number of bytes to allocate using _malloca: 1000
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)   

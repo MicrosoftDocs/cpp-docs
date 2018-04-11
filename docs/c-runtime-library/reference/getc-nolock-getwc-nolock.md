@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getc_nolock, _getwc_nolock
+
 Reads a character from a stream.  
   
 ## Syntax  
@@ -34,15 +35,18 @@ wint_t _getwc_nolock(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Input stream.  
   
 ## Return Value  
- See [getc, getwc](../../c-runtime-library/reference/getc-getwc.md).  
+
+See [getc, getwc](../../c-runtime-library/reference/getc-getwc.md).  
   
 ## Remarks  
- These functions are identical to `getc` and `getwc` except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+These functions are identical to `getc` and `getwc` except that they do not lock the calling thread. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -109,7 +113,8 @@ Input was: Line the first.
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)   
  [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)   

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _realloc_dbg
+
 Reallocates a specified block of memory in the heap by moving and/or resizing the block (debug version only).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void *_realloc_dbg(
 );  
 ```  
   
-#### Parameters  
- `userData`  
+### Parameters  
+
+`userData`  
  Pointer to the previously allocated memory block.  
   
  `newSize`  
@@ -54,10 +56,12 @@ void *_realloc_dbg(
  The `filename` and `linenumber` parameters are only available when `_realloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.  
   
 ## Return Value  
- On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [realloc](../../c-runtime-library/reference/realloc.md) function.  
+
+On successful completion, this function either returns a pointer to the user portion of the reallocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [realloc](../../c-runtime-library/reference/realloc.md) function.  
   
 ## Remarks  
- `_realloc_dbg` is a debug version of the [realloc](../../c-runtime-library/reference/realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_realloc_dbg` is reduced to a call to `realloc`. Both `realloc` and `_realloc_dbg` reallocate a memory block in the base heap, but `_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
+
+`_realloc_dbg` is a debug version of the [realloc](../../c-runtime-library/reference/realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_realloc_dbg` is reduced to a call to `realloc`. Both `realloc` and `_realloc_dbg` reallocate a memory block in the base heap, but `_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
   
  `_realloc_dbg` reallocates the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.  
   
@@ -74,11 +78,14 @@ void *_realloc_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- See the example in the [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md) topic.  
+
+See the example in the [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md) topic.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)

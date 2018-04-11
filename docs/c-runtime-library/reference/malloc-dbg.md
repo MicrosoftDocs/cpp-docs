@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _malloc_dbg
+
 Allocates a block of memory in the heap with additional space for a debugging header and overwrite buffers (debug version only).  
   
 ## Syntax  
@@ -34,8 +35,9 @@ void *_malloc_dbg(
 );  
 ```  
   
-#### Parameters  
- `size`  
+### Parameters  
+
+`size`  
  Requested size of the memory block (in bytes).  
   
  `blockType`  
@@ -50,10 +52,12 @@ void *_malloc_dbg(
  The `filename` and `linenumber` parameters are only available when `_malloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.  
   
 ## Return Value  
- On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](../../c-runtime-library/reference/malloc.md) function.  
+
+On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](../../c-runtime-library/reference/malloc.md) function.  
   
 ## Remarks  
- `_malloc_dbg` is a debug version of the [malloc](../../c-runtime-library/reference/malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_malloc_dbg` is reduced to a call to `malloc`. Both `malloc` and `_malloc_dbg` allocate a block of memory in the base heap, but `_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
+
+`_malloc_dbg` is a debug version of the [malloc](../../c-runtime-library/reference/malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_malloc_dbg` is reduced to a call to `malloc`. Both `malloc` and `_malloc_dbg` allocate a block of memory in the base heap, but `_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.  
   
  `_malloc_dbg` allocates the memory block with slightly more space than the requested `size`. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.  
   
@@ -70,13 +74,16 @@ void *_malloc_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_malloc_dbg`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
+
+For a sample of how to use `_malloc_dbg`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)   
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   
  [_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)   
  [_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)

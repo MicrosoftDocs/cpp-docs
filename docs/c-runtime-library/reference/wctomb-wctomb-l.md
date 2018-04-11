@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # wctomb, _wctomb_l
+
 Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md).  
   
 ## Syntax  
@@ -37,18 +38,21 @@ int _wctomb_l(
 );  
 ```  
   
-#### Parameters  
- `mbchar`  
+### Parameters  
+
+`mbchar`  
  The address of a multibyte character.  
   
  `wchar`  
  A wide character.  
   
 ## Return Value  
- If `wctomb` converts the wide character to a multibyte character, it returns the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character. If `wchar` is the wide-character null character (L'\0'), `wctomb` returns 1. If the target pointer `mbchar` is NULL, `wctomb` returns 0. If the conversion is not possible in the current locale, `wctomb` returns -1 and `errno` is set to `EILSEQ`.  
+
+If `wctomb` converts the wide character to a multibyte character, it returns the number of bytes (which is never greater than `MB_CUR_MAX`) in the wide character. If `wchar` is the wide-character null character (L'\0'), `wctomb` returns 1. If the target pointer `mbchar` is NULL, `wctomb` returns 0. If the conversion is not possible in the current locale, `wctomb` returns -1 and `errno` is set to `EILSEQ`.  
   
 ## Remarks  
- The `wctomb` function converts its `wchar` argument to the corresponding multibyte character and stores the result at `mbchar`. You can call the function from any point in any program. `wctomb` uses the current locale for any locale-dependent behavior; `_wctomb_l` is identical to `wctomb` except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+
+The `wctomb` function converts its `wchar` argument to the corresponding multibyte character and stores the result at `mbchar`. You can call the function from any point in any program. `wctomb` uses the current locale for any locale-dependent behavior; `_wctomb_l` is identical to `wctomb` except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  `wctomb` validates its parameters. If `mbchar` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.  
   
@@ -61,7 +65,8 @@ int _wctomb_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This program illustrates the behavior of the wctomb function.  
+
+This program illustrates the behavior of the wctomb function.  
   
 ```  
 // crt_wctomb.cpp  
@@ -90,7 +95,8 @@ Convert a wide character:
 ```  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)   
  [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)   

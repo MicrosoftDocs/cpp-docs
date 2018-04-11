@@ -41,7 +41,7 @@ errno_t _gcvt_s(
 ); // C++ only
 ```
 
-#### Parameters
+### Parameters
 
 [out] *buffer*<br/>
  Buffer to store the result of the conversion.

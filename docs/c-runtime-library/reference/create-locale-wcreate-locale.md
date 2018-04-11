@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _create_locale, _wcreate_locale
+
 Creates a locale object.  
   
 ## Syntax  
@@ -36,18 +37,21 @@ _locale_t _wcreate_locale(
 );  
 ```  
   
-#### Parameters  
- `category`  
+### Parameters  
+
+`category`  
  Category.  
   
  `locale`  
  Locale specifier.  
   
 ## Return Value  
- If a valid `locale` and `category` are given, returns the specified locale settings as a `_locale_t` object. The current locale settings of the program are not changed.  
+
+If a valid `locale` and `category` are given, returns the specified locale settings as a `_locale_t` object. The current locale settings of the program are not changed.  
   
 ## Remarks  
- The `_create_locale` function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the `_l` suffix). The behavior is similar to `setlocale`, except that instead of applying the specified locale settings to the current environment, the settings are saved in a `_locale_t` structure that is returned. The `_locale_t` structure should be freed using [_free_locale](../../c-runtime-library/reference/free-locale.md) when it is no longer needed.  
+
+The `_create_locale` function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the `_l` suffix). The behavior is similar to `setlocale`, except that instead of applying the specified locale settings to the current environment, the settings are saved in a `_locale_t` structure that is returned. The `_locale_t` structure should be freed using [_free_locale](../../c-runtime-library/reference/free-locale.md) when it is no longer needed.  
   
  `_wcreate_locale` is a wide-character version of `_create_locale`; the `locale` argument to `_wcreate_locale` is a wide-character string. `_wcreate_locale` and `_create_locale` behave identically otherwise.  
   
@@ -153,7 +157,8 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 ```  
   
 ## See Also  
- [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
+
+[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
  [Language Strings](../../c-runtime-library/language-strings.md)   
  [Country/Region Strings](../../c-runtime-library/country-region-strings.md)   
  [_free_locale](../../c-runtime-library/reference/free-locale.md)   

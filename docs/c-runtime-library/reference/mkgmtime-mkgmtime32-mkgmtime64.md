@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
+
 Converts a UTC time represented by a `tm struct` to a UTC time represented by a `time_t` type.  
   
 ## Syntax  
@@ -38,15 +39,18 @@ __time64_t _mkgmtime64(
 );  
 ```  
   
-#### Parameters  
- `timeptr`  
+### Parameters  
+
+`timeptr`  
  A pointer to the UTC time as a `struct tm` to convert.  
   
 ## Return Value  
- A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is -1.  
+
+A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is -1.  
   
 ## Remarks  
- The `_mkgmtime32` and `_mkgmtime64` functions convert a UTC time to a `__time32_t` or `__time64_t` type representing the time in UTC. To convert a local time to UTC time, use `mktime`, `_mktime32`, and `_mktime64` instead.  
+
+The `_mkgmtime32` and `_mkgmtime64` functions convert a UTC time to a `__time32_t` or `__time64_t` type representing the time in UTC. To convert a local time to UTC time, use `mktime`, `_mktime32`, and `_mktime64` instead.  
   
  `_mkgmtime` is an inline function that evaluates to `_mkgmtime64`, and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This is not recommended because your application might fail after January 18, 2038 (the maximum range of a 32-bit `time_t`), and it is not allowed at all on 64-bit platforms.  
   
@@ -160,7 +164,8 @@ After calling _mkgmtime, t1 = Wed Feb 12 00:00:00 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

@@ -45,7 +45,7 @@ errno_t _fcvt_s(
 ); // C++ only
 ```
 
-#### Parameters
+### Parameters
 
 [out] *buffer*<br/>
  The supplied buffer that will hold the result of the conversion.

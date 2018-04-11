@@ -52,7 +52,7 @@ lldiv_t div(
 ); /* C++ only */
 ```
 
-#### Parameters
+### Parameters
 
 *numer*<br/>
  The numerator.

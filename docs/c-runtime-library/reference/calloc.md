@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # calloc
+
 Allocates an array in memory with elements initialized to 0.  
   
 ## Syntax  
@@ -32,18 +33,21 @@ void *calloc(
 );  
 ```  
   
-#### Parameters  
- `num`  
+### Parameters  
+
+`num`  
  Number of elements.  
   
  `size`  
  Length in bytes of each element.  
   
 ## Return Value  
- `calloc` returns a pointer to the allocated space. The storage space pointed to by the return value is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than `void`, use a type cast on the return value.  
+
+`calloc` returns a pointer to the allocated space. The storage space pointed to by the return value is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than `void`, use a type cast on the return value.  
   
 ## Remarks  
- The `calloc` function allocates storage space for an array of `num` elements, each of length `size` bytes. Each element is initialized to 0.  
+
+The `calloc` function allocates storage space for an array of `num` elements, each of length `size` bytes. Each element is initialized to 0.  
   
  `calloc` sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -95,7 +99,8 @@ Allocated 40 long integers
 ```  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [free](../../c-runtime-library/reference/free.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
+
 Gets the length of a string by using the current locale or one that has been passed in. These are more secure versions of [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).  
   
 > [!IMPORTANT]
@@ -65,8 +66,9 @@ size_t _mbstrnlen_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string.  
   
  `numberOfElements`  
@@ -76,7 +78,8 @@ size_t _mbstrnlen_l(
  Locale to use.  
   
 ## Return Value  
- These functions return the number of characters in the string, not including the terminating null character. If there is no null terminator within the first `numberOfElements` bytes of the string (or wide characters for `wcsnlen`), then `numberOfElements` is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than `numberOfElements`.  
+
+These functions return the number of characters in the string, not including the terminating null character. If there is no null terminator within the first `numberOfElements` bytes of the string (or wide characters for `wcsnlen`), then `numberOfElements` is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than `numberOfElements`.  
   
  `_mbstrnlen` and `_mbstrnlen_l` return -1 if the string contains an invalid multibyte character.  
   
@@ -155,7 +158,8 @@ returned rather than the actual size of the string.
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

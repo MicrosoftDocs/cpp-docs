@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbrtowc
+
 Convert a multibyte character in the current locale into the equivalent wide character, with the capability of restarting in the middle of a multibyte character.  
   
 ## Syntax  
@@ -34,8 +35,9 @@ size_t mbrtowc(
 );  
 ```  
   
-#### Parameters  
- `wchar`  
+### Parameters  
+
+`wchar`  
  Address of a wide character to receive the converted wide character string (type `wchar_t`). This value can be a null pointer if no return wide character is required.  
   
  `mbchar`  
@@ -48,7 +50,8 @@ size_t mbrtowc(
  Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own `mbstate` argument.  
   
 ## Return Value  
- One of the following values:  
+
+One of the following values:  
   
  0  
  The next `count` or fewer bytes complete the multibyte character that represents the null wide character, which is stored in `wchar`, if `wchar` is not a null pointer.  
@@ -63,7 +66,8 @@ size_t mbrtowc(
  The next `count` bytes contribute to an incomplete but potentially valid multibyte character, and all `count` bytes have been processed. No value is stored in `wchar`, but `mbstate` is updated to restart the function.  
   
 ## Remarks  
- If `mbchar` is a null pointer, the function is equivalent to the call:  
+
+If `mbchar` is a null pointer, the function is equivalent to the call:  
   
  `mbrtowc(NULL, "", 1, &mbstate)`  
   
@@ -74,7 +78,8 @@ size_t mbrtowc(
  The `mbrtowc` function differs from [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md) by its restartability. The conversion state is stored in `mbstate` for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs`.  
   
 ## Example  
- Converts a multibyte character to its wide character equivalent.  
+
+Converts a multibyte character to its wide character equivalent.  
   
 ```  
 // crt_mbrtowc.cpp  
@@ -198,6 +203,7 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 |`mbrtowc`|\<wchar.h>|  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)

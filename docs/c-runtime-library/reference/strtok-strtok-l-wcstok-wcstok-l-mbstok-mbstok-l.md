@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
+
 Finds the next token in a string, by using the current locale or a specified locale that's passed in. More secure versions of these functions are available; see [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](../../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).  
   
 > [!IMPORTANT]
@@ -48,8 +49,9 @@ unsigned char *_mbstok(
 );  
 ```  
   
-#### Parameters  
- `strToken`  
+### Parameters  
+
+`strToken`  
  String containing token or tokens.  
   
  `strDelimit`  
@@ -59,10 +61,12 @@ unsigned char *_mbstok(
  Locale to use.  
   
 ## Return Value  
- Returns a pointer to the next token found in `strToken`. They return `NULL` when no more tokens are found. Each call modifies `strToken` by substituting a `NULL` character for the first delimiter that occurs after the returned token.  
+
+Returns a pointer to the next token found in `strToken`. They return `NULL` when no more tokens are found. Each call modifies `strToken` by substituting a `NULL` character for the first delimiter that occurs after the returned token.  
   
 ## Remarks  
- The `strtok` function finds the next token in `strToken`. The set of characters in `strDelimit` specifies possible delimiters of the token to be found in `strToken` on the current call. `wcstok` and `_mbstok` are wide-character and multibyte-character versions of `strtok`. The arguments and return value of `wcstok` are wide-character strings; those of `_mbstok` are multibyte-character strings. These three functions behave identically otherwise.  
+
+The `strtok` function finds the next token in `strToken`. The set of characters in `strDelimit` specifies possible delimiters of the token to be found in `strToken` on the current call. `wcstok` and `_mbstok` are wide-character and multibyte-character versions of `strtok`. The arguments and return value of `wcstok` are wide-character strings; those of `_mbstok` are multibyte-character strings. These three functions behave identically otherwise.  
   
 > [!IMPORTANT]
 >  These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -138,7 +142,8 @@ Tokens:
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)   

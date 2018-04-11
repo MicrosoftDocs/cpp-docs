@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _open, _wopen
+
 Opens a file. These functions are deprecated because more-secure versions are available; see [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).  
   
 ## Syntax  
@@ -38,8 +39,9 @@ int _wopen(
 );  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  File name.  
   
  `oflag`  
@@ -49,7 +51,8 @@ int _wopen(
  Permission mode.  
   
 ## Return Value  
- Each of these functions returns a file descriptor for the opened file. A return value of -1 indicates an error; in that case `errno` is set to one of the following values.  
+
+Each of these functions returns a file descriptor for the opened file. A return value of -1 indicates an error; in that case `errno` is set to one of the following values.  
   
  `EACCES`  
  Tried to open a read-only file for writing, file's sharing mode does not allow the specified operations, or the given path is a directory.  
@@ -69,7 +72,8 @@ int _wopen(
  For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_open` function opens the file specified by `filename` and prepares it for reading or writing, as specified by `oflag`. `_wopen` is a wide-character version of `_open`; the `filename` argument to `_wopen` is a wide-character string. `_wopen` and `_open` behave identically otherwise.  
+
+The `_open` function opens the file specified by `filename` and prepares it for reading or writing, as specified by `oflag`. `_wopen` is a wide-character version of `_open`; the `filename` argument to `_wopen` is a wide-character string. `_wopen` and `_open` behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -168,7 +172,8 @@ int _wopen(
  `_open` and `_wopen` are Microsoft extensions. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -219,7 +224,8 @@ Open succeeded on output file
 ```  
   
 ## See Also  
- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
  [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)   
  [_close](../../c-runtime-library/reference/close.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   

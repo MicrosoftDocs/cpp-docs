@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _makepath, _wmakepath
+
 Create a path name from components. More secure versions of these functions are available; see [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).  
   
 ## Syntax  
@@ -42,8 +43,9 @@ void _wmakepath(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  Full path buffer.  
   
  `drive`  
@@ -59,7 +61,8 @@ void _wmakepath(
  Contains the actual file name extension, with or without a leading period (.). `_makepath` inserts the period automatically if it does not appear in `ext`. If `ext` is `NULL` or points to an empty string, no extension is inserted in the composite `path` string.  
   
 ## Remarks  
- The `_makepath` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, filename, and filename extension. `_wmakepath` is a wide-character version of `_makepath`; the arguments to `_wmakepath` are wide-character strings. `_wmakepath` and `_makepath` behave identically otherwise.  
+
+The `_makepath` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, filename, and filename extension. `_wmakepath` is a wide-character version of `_makepath`; the arguments to `_wmakepath` are wide-character strings. `_wmakepath` and `_makepath` behave identically otherwise.  
   
  **Security Note** Use a null-terminated string. To avoid buffer overrun, the null-terminated string must not exceed the size of the `path` buffer. `_makepath` does not ensure that the length of the composite path string does not exceed `_MAX_PATH`. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -121,7 +124,8 @@ Path extracted with _splitpath:
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)   
  [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md)

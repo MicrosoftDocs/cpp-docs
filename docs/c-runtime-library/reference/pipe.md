@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _pipe
+
 Creates a pipe for reading and writing.  
   
 > [!IMPORTANT]
@@ -36,8 +37,9 @@ int _pipe(
 );  
 ```  
   
-#### Parameters  
- `pfds`[2]  
+### Parameters  
+
+`pfds`[2]  
  Array to hold read and write file descriptors.  
   
  `psize`  
@@ -47,7 +49,8 @@ int _pipe(
  File mode.  
   
 ## Return Value  
- Returns 0 if successful. Returns -1 to indicate an error. On error, `errno` is set to one of these values:  
+
+Returns 0 if successful. Returns -1 to indicate an error. On error, `errno` is set to one of these values:  
   
 -   `EMFILE`, which indicates that no more file descriptors are available.  
   
@@ -58,7 +61,8 @@ int _pipe(
  For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_pipe` function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file because it has a file pointer, a file descriptor, or both, and it can be read from or written to by using the Standard Library input and output functions. However, a pipe does not represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.  
+
+The `_pipe` function creates a *pipe*, which is an artificial I/O channel that a program uses to pass information to other programs. A pipe resembles a file because it has a file pointer, a file descriptor, or both, and it can be read from or written to by using the Standard Library input and output functions. However, a pipe does not represent a specific file or device. Instead, it represents temporary storage in memory that is independent of the program's own memory and is controlled entirely by the operating system.  
   
  `_pipe` resembles `_open` but opens the pipe for reading and writing and returns two file descriptors instead of one. The program can use both sides of the pipe or close the one that it doesn't need. For example, the command processor in Windows creates a pipe when it executes a command such as `PROGRAM1 | PROGRAM2`.  
   
@@ -87,7 +91,8 @@ int _pipe(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example 1  
   
@@ -195,7 +200,8 @@ Dad, the square root of 8000 is 89.44.
 ```  
   
 ## Example 2  
- This is a basic filter application. It spawns the application crt_pipe_beeper after it creates a pipe that directs the spawned application's stdout to the filter. The filter removes ASCII 7 (beep) characters.  
+
+This is a basic filter application. It spawns the application crt_pipe_beeper after it creates a pipe that directs the spawned application's stdout to the filter. The filter removes ASCII 7 (beep) characters.  
   
 ```C  
 // crt_pipe_beeper.c  
@@ -323,5 +329,6 @@ This is speaker beep number 10...
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)

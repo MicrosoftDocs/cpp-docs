@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cabs
+
 Calculates the absolute value of a complex number.  
   
 ## Syntax  
@@ -31,15 +32,18 @@ double _cabs(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  Complex number.  
   
 ## Return Value  
- `_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets `errno` to `ERANGE`. You can change error handling with [_matherr](../../c-runtime-library/reference/matherr.md).  
+
+`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets `errno` to `ERANGE`. You can change error handling with [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## Remarks  
- The `_cabs` function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure `z` is composed of a real component `x` and an imaginary component `y`. A call to `_cabs` produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.  
+
+The `_cabs` function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure `z` is composed of a real component `x` and an imaginary component `y`. A call to `_cabs` produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.  
   
 ## Requirements  
   
@@ -75,6 +79,7 @@ The absolute value of 3.000000 + 4.000000i is 5.000000
 ```  
   
 ## See Also  
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)   
  [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)   

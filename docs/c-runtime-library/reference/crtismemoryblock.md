@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtIsMemoryBlock
+
 Verifies that a specified memory block is in the local heap and that it has a valid debug heap block type identifier (debug version only).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ int _CrtIsMemoryBlock(
 );  
 ```  
   
-#### Parameters  
- [in] `userData`  
+### Parameters  
+
+[in] `userData`  
  Pointer to the beginning of the memory block to verify.  
   
  [in] `size`  
@@ -52,10 +54,12 @@ int _CrtIsMemoryBlock(
  Pointer to the line number in the source file or `NULL`.  
   
 ## Return Value  
- `_CrtIsMemoryBlock` returns `TRUE` if the specified memory block is located within the local heap and has a valid debug heap block type identifier; otherwise, the function returns `FALSE`.  
+
+`_CrtIsMemoryBlock` returns `TRUE` if the specified memory block is located within the local heap and has a valid debug heap block type identifier; otherwise, the function returns `FALSE`.  
   
 ## Remarks  
- The `_CrtIsMemoryBlock` function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. Passing non-NULL values for the `requestNumber`, `filename`, or `linenumber` parameters causes `_CrtIsMemoryBlock` to set these parameters to the values in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsMemoryBlock` are removed during preprocessing.  
+
+The `_CrtIsMemoryBlock` function verifies that a specified memory block is located within the application's local heap and that it has a valid block type identifier. This function can also be used to obtain the object allocation order number and the source file name/line number where the memory block allocation was originally requested. Passing non-NULL values for the `requestNumber`, `filename`, or `linenumber` parameters causes `_CrtIsMemoryBlock` to set these parameters to the values in the memory block's debug header, if it finds the block in the local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsMemoryBlock` are removed during preprocessing.  
   
  If `_CrtIsMemoryBlock` fails, it returns `FALSE` and the output parameters are initialized to default values: `requestNumber` and `lineNumber` are set to 0 and `filename` is set to `NULL`.  
   
@@ -77,10 +81,13 @@ _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.  
+
+See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

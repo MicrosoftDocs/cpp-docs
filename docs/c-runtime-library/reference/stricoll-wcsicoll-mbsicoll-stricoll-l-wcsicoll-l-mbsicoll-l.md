@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l
+
 Compares strings by using locale-specific information.  
   
 > [!IMPORTANT]
@@ -58,15 +59,17 @@ int _mbsicoll_l(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  Null-terminated strings to compare.  
   
  `locale`  
  The locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
+
+Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  
@@ -78,7 +81,8 @@ int _mbsicoll_l(
  Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either `STRING.H` or `MBSTRING.H`. `_wcsicoll` can fail if either `string1` or `string2` contains wide-character codes outside the domain of the collating sequence. When an error occurs, `_wcsicoll` may set `errno` to `EINVAL`. To check for an error on a call to `_wcsicoll`, set `errno` to 0 and then check `errno` after calling `_wcsicoll`.  
   
 ## Remarks  
- Each of these functions performs a case-insensitive comparison of `string1` and `string2` according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.  
+
+Each of these functions performs a case-insensitive comparison of `string1` and `string2` according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.  
   
  `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is affected by `LC_CTYPE`, whereas the `_stricoll` comparison is according to the `LC_CTYPE` and `LC_COLLATE` categories of the locale. For more information on the `LC_COLLATE` category, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the `_l` suffix use the current locale; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -101,7 +105,8 @@ int _mbsicoll_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strcoll Functions](../../c-runtime-library/strcoll-functions.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   

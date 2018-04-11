@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
+
 Formats and prints to the console. More-secure versions are available; see [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md).  
   
 > [!IMPORTANT]
@@ -45,8 +46,9 @@ int _cwprintf_l(
 );  
 ```  
   
-#### Parameters  
- `format`  
+### Parameters  
+
+`format`  
  Format-control string.  
   
  `argument_list`  
@@ -56,10 +58,12 @@ int _cwprintf_l(
  The locale to use.  
   
 ## Return Value  
- The number of characters printed.  
+
+The number of characters printed.  
   
 ## Remarks  
- These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
+
+These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.  
   
  An important distinction is that `_cwprintf` displays Unicode characters when used in Windows. Unlike `_cprintf`, `_cwprintf` uses the current console locale settings.  
   
@@ -115,7 +119,8 @@ int main( void )
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
  [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
  [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   

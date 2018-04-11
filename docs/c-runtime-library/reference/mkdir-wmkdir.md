@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mkdir, _wmkdir
+
 Creates a new directory.  
   
 ## Syntax  
@@ -35,12 +36,14 @@ int _wmkdir(
 );  
 ```  
   
-#### Parameters  
- `dirname`  
+### Parameters  
+
+`dirname`  
  Path for a new directory.  
   
 ## Return Value  
- Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets `errno` as follows.  
+
+Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets `errno` as follows.  
   
  `EEXIST`  
  Directory was not created because `dirname` is the name of an existing file, directory, or device.  
@@ -51,7 +54,8 @@ int _wmkdir(
  For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_mkdir` function creates a new directory with the specified *dirname.* `_mkdir` can create only one new directory per call, so only the last component of `dirname` can name a new directory. `_mkdir` does not translate path delimiters. In Windows NT, both the backslash ( \\) and the forward slash (/ ) are valid path delimiters in character strings in run-time routines.  
+
+The `_mkdir` function creates a new directory with the specified *dirname.* `_mkdir` can create only one new directory per call, so only the last component of `dirname` can name a new directory. `_mkdir` does not translate path delimiters. In Windows NT, both the backslash ( \\) and the forward slash (/ ) are valid path delimiters in character strings in run-time routines.  
   
  `_wmkdir` is a wide-character version of `_mkdir`; the `dirname` argument to `_wmkdir` is a wide-character string. `_wmkdir` and `_mkdir` behave identically otherwise.  
   
@@ -71,7 +75,8 @@ int _wmkdir(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -115,6 +120,7 @@ Directory '\testtmp' was successfully removed
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   
  [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)

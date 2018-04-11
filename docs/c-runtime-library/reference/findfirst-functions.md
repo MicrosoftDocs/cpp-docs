@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
+
 Provide information about the first instance of a file name that matches the file specified in the `filespec` argument.  
   
 ## Syntax  
@@ -76,15 +77,17 @@ intptr_t _wfindfirst64i32(
 );  
 ```  
   
-#### Parameters  
- `filespec`  
+### Parameters  
+
+`filespec`  
  Target file specification (can include wildcard characters).  
   
  `fileinfo`  
  File information buffer.  
   
 ## Return Value  
- If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the `filespec` specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.  
+
+If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the `filespec` specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.  
   
  `EINVAL`  
  Invalid parameter: `filespec` or `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.  
@@ -103,7 +106,8 @@ intptr_t _wfindfirst64i32(
  If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).  
   
 ## Remarks  
- You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished with either the `_findfirst` or `_findnext` function (or any variants). This frees resources used by these functions in your application.  
+
+You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished with either the `_findfirst` or `_findnext` function (or any variants). This frees resources used by these functions in your application.  
   
  The variations of these functions that have the `w` prefix are wide-character versions; otherwise, they are identical to the corresponding single-byte functions.  
   
@@ -159,5 +163,6 @@ intptr_t _wfindfirst64i32(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [System Calls](../../c-runtime-library/system-calls.md)   
+
+[System Calls](../../c-runtime-library/system-calls.md)   
  [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

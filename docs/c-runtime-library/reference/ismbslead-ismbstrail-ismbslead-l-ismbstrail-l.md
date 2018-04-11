@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
+
 Performs context-sensitive tests for multibyte-character-string lead bytes and trail bytes and determines whether a given substring pointer points to a lead byte or a trail byte.  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ int _ismbstrail_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Pointer to the start of the string or the previous known lead byte.  
   
  `current`  
@@ -60,10 +62,12 @@ int _ismbstrail_l(
  The locale to use.  
   
 ## Return Value  
- `_ismbslead` returns -1 if the character is a lead byte and `_ismbstrail` returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
+
+`_ismbslead` returns -1 if the character is a lead byte and `_ismbstrail` returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.  
   
 ## Remarks  
- `_ismbslead` and `_ismbstrail` are slower than the `_ismbblead` and `_ismbbtrail` versions because they take the string context into account.  
+
+`_ismbslead` and `_ismbstrail` are slower than the `_ismbblead` and `_ismbbtrail` versions because they take the string context into account.  
   
  The versions of these functions that have the `_l` suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -81,7 +85,8 @@ int _ismbstrail_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
  [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

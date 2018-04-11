@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # free
+
 Deallocates or frees a memory block.  
   
 ## Syntax  
@@ -31,12 +32,14 @@ void free(
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  Previously allocated memory block to be freed.  
   
 ## Remarks  
- The `free` function deallocates a memory block (`memblock`) that was previously allocated by a call to `calloc`, `malloc`, or `realloc`. The number of freed bytes is equivalent to the number of bytes requested when the block was allocated (or reallocated, in the case of `realloc`). If `memblock` is `NULL`, the pointer is ignored and `free` immediately returns. Attempting to free an invalid pointer (a pointer to a memory block that was not allocated by `calloc`, `malloc`, or `realloc`) may affect subsequent allocation requests and cause errors.  
+
+The `free` function deallocates a memory block (`memblock`) that was previously allocated by a call to `calloc`, `malloc`, or `realloc`. The number of freed bytes is equivalent to the number of bytes requested when the block was allocated (or reallocated, in the case of `realloc`). If `memblock` is `NULL`, the pointer is ignored and `free` immediately returns. Attempting to free an invalid pointer (a pointer to a memory block that was not allocated by `calloc`, `malloc`, or `realloc`) may affect subsequent allocation requests and cause errors.  
   
  If an error occurs in freeing the memory, `errno` is set with information from the operating system on the nature of the failure. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -57,10 +60,12 @@ void free(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [malloc](../../c-runtime-library/reference/malloc.md).  
+
+See the example for [malloc](../../c-runtime-library/reference/malloc.md).  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [_alloca](../../c-runtime-library/reference/alloca.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   

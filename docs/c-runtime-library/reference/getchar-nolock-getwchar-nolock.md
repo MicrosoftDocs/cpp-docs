@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getchar_nolock, _getwchar_nolock
+
 Reads a character from standard input.  
   
 ## Syntax  
@@ -31,10 +32,12 @@ wint_t _getwchar_nolock( void );
 ```  
   
 ## Return Value  
- See [getchar, getwchar](../../c-runtime-library/reference/getchar-getwchar.md).  
+
+See [getchar, getwchar](../../c-runtime-library/reference/getchar-getwchar.md).  
   
 ## Remarks  
- `_getchar_nolock` and `_getwchar_nolock` are identical to `getchar` and `getwchar` except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+`_getchar_nolock` and `_getwchar_nolock` are identical to `getchar` and `getwchar` except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -83,7 +86,8 @@ This textInput was: This text
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   
  [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
  [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)   

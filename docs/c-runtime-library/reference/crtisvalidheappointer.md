@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _CrtIsValidHeapPointer
+
 Verifies that a specified pointer is in a heap allocated by some C run-time library, but not necessarily by the caller's CRT library. In versions of the CRT before Visual Studio 2010, this verifies that the specified pointer is in the local heap (debug version only).  
   
 ## Syntax  
@@ -32,15 +33,18 @@ Verifies that a specified pointer is in a heap allocated by some C run-time libr
 );  
 ```  
   
-#### Parameters  
- `userData`  
+### Parameters  
+
+`userData`  
  Pointer to the beginning of an allocated memory block.  
   
 ## Return Value  
- `_CrtIsValidHeapPointer` returns TRUE if the specified pointer is in the heap shared by all CRT library instances. In versions of the CRT before Visual Studio 2010, this returns TRUE if the specified pointer is in the local heap. Otherwise, the function returns FALSE.  
+
+`_CrtIsValidHeapPointer` returns TRUE if the specified pointer is in the heap shared by all CRT library instances. In versions of the CRT before Visual Studio 2010, this returns TRUE if the specified pointer is in the local heap. Otherwise, the function returns FALSE.  
   
 ## Remarks  
- We do not recommend that you use this function. Starting with the Visual Studio 2010 CRT library, all CRT libraries share one OS heap, the *process heap*. The `_CrtIsValidHeapPointer` function reports whether the pointer was allocated in a CRT heap, but not that it was allocated by the caller's CRT library. For example, consider a block allocated by using the Visual Studio 2010 version of the CRT library. If the `_CrtIsValidHeapPointer` function exported by the Visual Studio 2012 version of the CRT library tests the pointer, it returns TRUE. This is no longer a useful test. In versions of the CRT library before Visual Studio 2010, the function is used to ensure that a specific memory address is within the local heap. The local heap refers to the heap created and managed by a particular instance of the C run-time library. If a dynamic-link library (DLL) contains a static link to the run-time library, it has its own instance of the run-time heap, and therefore its own heap, independent of the application's local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsValidHeapPointer` are removed during preprocessing.  
+
+We do not recommend that you use this function. Starting with the Visual Studio 2010 CRT library, all CRT libraries share one OS heap, the *process heap*. The `_CrtIsValidHeapPointer` function reports whether the pointer was allocated in a CRT heap, but not that it was allocated by the caller's CRT library. For example, consider a block allocated by using the Visual Studio 2010 version of the CRT library. If the `_CrtIsValidHeapPointer` function exported by the Visual Studio 2012 version of the CRT library tests the pointer, it returns TRUE. This is no longer a useful test. In versions of the CRT library before Visual Studio 2010, the function is used to ensure that a specific memory address is within the local heap. The local heap refers to the heap created and managed by a particular instance of the C run-time library. If a dynamic-link library (DLL) contains a static link to the run-time library, it has its own instance of the run-time heap, and therefore its own heap, independent of the application's local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsValidHeapPointer` are removed during preprocessing.  
   
  Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:  
   
@@ -59,10 +63,12 @@ _ASSERTE( _CrtIsValidHeapPointer( userData ) );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- The following example demonstrates how to test whether memory is valid when it is used with C run-time libraries before Visual Studio 2010. This example is provided for users of legacy CRT library code.  
+
+The following example demonstrates how to test whether memory is valid when it is used with C run-time libraries before Visual Studio 2010. This example is provided for users of legacy CRT library code.  
   
 ```  
 // crt_isvalid.c  
@@ -121,4 +127,5 @@ my_pointer is within the local heap.
 ```  
   
 ## See Also  
- [Debug Routines](../../c-runtime-library/debug-routines.md)
+
+[Debug Routines](../../c-runtime-library/debug-routines.md)

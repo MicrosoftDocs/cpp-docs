@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # and
+
 An alternative to the && operator.  
   
 ## Syntax  
@@ -31,7 +32,8 @@ An alternative to the && operator.
 ```  
   
 ## Remarks  
- The macro yields the operator &&.  
+
+The macro yields the operator &&.  
   
 ## Example  
   
@@ -62,4 +64,5 @@ false
 ```  
   
 ## Requirements  
- **Header:** \<iso646.h>
+
+**Header:** \<iso646.h>

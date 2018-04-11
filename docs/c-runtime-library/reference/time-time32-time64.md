@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # time, _time32, _time64
+
 Get the system time.  
   
 ## Syntax  
@@ -37,15 +38,18 @@ __time64_t _time64(
 );  
 ```  
   
-#### Parameters  
- `timer`  
+### Parameters  
+
+`timer`  
  Pointer to the storage location for time.  
   
 ## Return Value  
- Return the time as seconds elapsed since midnight, January 1, 1970, or -1 in the case of an error.  
+
+Return the time as seconds elapsed since midnight, January 1, 1970, or -1 in the case of an error.  
   
 ## Remarks  
- The `time` function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by `timer`. This parameter may be `NULL`, in which case the return value is not stored.  
+
+The `time` function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by `timer`. This parameter may be `NULL`, in which case the return value is not stored.  
   
  `time` is a wrapper for `_time64` and `time_t` is, by default, equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This is not recommended because your application may fail after January 18, 2038; the use of this macro is not allowed on 64-bit platforms.  
   
@@ -210,7 +214,8 @@ Today is Friday, day 25 of April in the year 2003.
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   

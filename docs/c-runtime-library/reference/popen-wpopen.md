@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _popen, _wpopen
+
 Creates a pipe and executes a command.  
   
 > [!IMPORTANT]
@@ -39,20 +40,23 @@ const wchar_t *mode
 );
 ```  
   
-#### Parameters  
- *command*  
+### Parameters  
+
+*command*  
  Command to be executed.  
   
  *mode*  
  Mode of the returned stream.  
   
 ## Return Value  
- Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **NULL** on an error. If the error is an invalid parameter, such as if *command* or *mode* is a null pointer, or *mode* is not a valid mode, `errno` is set to `EINVAL`. See the Remarks section for valid modes.  
+
+Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **NULL** on an error. If the error is an invalid parameter, such as if *command* or *mode* is a null pointer, or *mode* is not a valid mode, `errno` is set to `EINVAL`. See the Remarks section for valid modes.  
   
  For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `_popen` function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.  
+
+The `_popen` function creates a pipe and asynchronously executes a spawned copy of the command processor with the specified string *command*. The character string *mode* specifies the type of access requested, as follows.  
   
  **"r"**  
  The calling process can read the spawned command's standard output using the returned stream.  
@@ -87,7 +91,8 @@ const wchar_t *mode
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -134,7 +139,8 @@ int main( void )
 ```  
   
 ## Sample Output  
- This output assumes that there is only one file in the current directory with a .c file name extension.  
+
+This output assumes that there is only one file in the current directory with a .c file name extension.  
   
 ```  
  Volume in drive C is CDRIVE  
@@ -150,6 +156,7 @@ Process returned 0
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [_pclose](../../c-runtime-library/reference/pclose.md)   
  [_pipe](../../c-runtime-library/reference/pipe.md)

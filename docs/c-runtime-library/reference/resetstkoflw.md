@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _resetstkoflw
+
 Recovers from stack overflow.  
   
 > [!IMPORTANT]
@@ -35,10 +36,12 @@ int _resetstkoflw ( void );
 ```  
   
 ## Return Value  
- Nonzero if the function succeeds, zero if it fails.  
+
+Nonzero if the function succeeds, zero if it fails.  
   
 ## Remarks  
- The `_resetstkoflw` function recovers from a stack overflow condition, allowing a program to continue instead of failing with a fatal exception error. If the `_resetstkoflw` function is not called, there are no guard pages after the previous exception. The next time that there is a stack overflow, there are no exceptions at all and the process terminates without warning.  
+
+The `_resetstkoflw` function recovers from a stack overflow condition, allowing a program to continue instead of failing with a fatal exception error. If the `_resetstkoflw` function is not called, there are no guard pages after the previous exception. The next time that there is a stack overflow, there are no exceptions at all and the process terminates without warning.  
   
  If a thread in an application causes an **EXCEPTION_STACK_OVERFLOW** exception, the thread has left its stack in a damaged state. This is in contrast to other exceptions such as **EXCEPTION_ACCESS_VIOLATION** or **EXCEPTION_INT_DIVIDE_BY_ZERO**, where the stack is not damaged. The stack is set to an arbitrarily small value when the program is first loaded. The stack then grows on demand to meet the needs of the thread. This is implemented by placing a page with PAGE_GUARD access at the end of the current stack. For more information, see [Creating Guard Pages](http://msdn.microsoft.com/library/windows/desktop/aa366549).  
   
@@ -95,7 +98,8 @@ int _resetstkoflw ( void );
  **Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
- The following example shows the recommended usage of the `_resetstkoflw` function.  
+
+The following example shows the recommended usage of the `_resetstkoflw` function.  
   
 ```  
 // crt_resetstkoflw.c  
@@ -165,7 +169,8 @@ int main(int ac)
 ```  
   
 ## Sample Output  
- With no program arguments:  
+
+With no program arguments:  
   
 ```  
 loop #1  
@@ -199,7 +204,8 @@ resetting stack overflow
 ```  
   
 ### Description  
- The following example shows the recommended use of `_resetstkoflw` in a program where structured exceptions are converted to C++ exceptions.  
+
+The following example shows the recommended use of `_resetstkoflw` in a program where structured exceptions are converted to C++ exceptions.  
   
 ### Code  
   
@@ -292,4 +298,5 @@ Recovered from stack overflow and allocated 100,000 bytes using _alloca.
 ```  
   
 ## See Also  
- [_alloca](../../c-runtime-library/reference/alloca.md)
+
+[_alloca](../../c-runtime-library/reference/alloca.md)

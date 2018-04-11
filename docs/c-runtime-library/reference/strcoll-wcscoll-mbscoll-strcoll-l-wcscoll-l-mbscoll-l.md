@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
+
 Compares strings by using the current locale or a specified LC_COLLATE conversion-state category.  
   
 > [!IMPORTANT]
@@ -58,15 +59,17 @@ int _mbscoll_l(
 );  
 ```  
   
-#### Parameters  
- `string1`, `string2`  
+### Parameters  
+
+`string1`, `string2`  
  Null-terminated strings to compare.  
   
  `locale`  
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
+
+Each of these functions returns a value indicating the relationship of `string1` to `string2`, as follows.  
   
 |Return value|Relationship of string1 to string2|  
 |------------------|----------------------------------------|  
@@ -77,7 +80,8 @@ int _mbscoll_l(
  Each of these functions returns `_NLSCMPERROR` on an error. To use `_NLSCMPERROR`, include either STRING.H or MBSTRING.H. `wcscoll` can fail if either `string1` or `string2` is NULL or contains wide-character codes outside the domain of the collating sequence. When an error occurs, `wcscoll` may set `errno` to `EINVAL`. To check for an error on a call to `wcscoll`, set `errno` to 0 and then check `errno` after calling `wcscoll`.  
   
 ## Remarks  
- Each of these functions performs a case-sensitive comparison of `string1` and `string2` according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.  
+
+Each of these functions performs a case-sensitive comparison of `string1` and `string2` according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.  
   
  All of these functions validate their parameters. If either `string1` or `string2` is a null pointer, or if `count` is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.  
   
@@ -102,7 +106,8 @@ int _mbscoll_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Locale](../../c-runtime-library/locale.md)   
+
+[Locale](../../c-runtime-library/locale.md)   
  [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [strcoll Functions](../../c-runtime-library/strcoll-functions.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   

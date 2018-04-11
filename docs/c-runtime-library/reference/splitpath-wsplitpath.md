@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _splitpath, _wsplitpath
+
 Break a path name into components. More secure versions of these functions are available, see [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).  
   
 ## Syntax  
@@ -42,8 +43,9 @@ void _wsplitpath(
 );  
 ```  
   
-#### Parameters  
- `path`  
+### Parameters  
+
+`path`  
  Full path.  
   
  `drive`  
@@ -59,7 +61,8 @@ void _wsplitpath(
  Filename extension, including leading period (`.`). You can pass `NULL` for this parameter if you do not need the filename extension.  
   
 ## Remarks  
- The `_splitpath` function breaks a path into its four components. `_splitpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath` is a wide-character version of `_splitpath`; the arguments to `_wsplitpath` are wide-character strings. These functions behave identically otherwise.  
+
+The `_splitpath` function breaks a path into its four components. `_splitpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath` is a wide-character version of `_splitpath`; the arguments to `_wsplitpath` are wide-character strings. These functions behave identically otherwise.  
   
  **Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). More secure versions of these functions are available; see [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).  
   
@@ -98,10 +101,12 @@ void _wsplitpath(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [_makepath](../../c-runtime-library/reference/makepath-wmakepath.md).  
+
+See the example for [_makepath](../../c-runtime-library/reference/makepath-wmakepath.md).  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)   
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
  [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)   

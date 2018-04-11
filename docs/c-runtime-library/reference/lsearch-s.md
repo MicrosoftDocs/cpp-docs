@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _lsearch_s
+
 Performs a linear search for a value. A version of [_lsearch](../../c-runtime-library/reference/lsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -36,8 +37,9 @@ void *_lsearch_s(
 );  
 ```  
   
-#### Parameters  
- `key`  
+### Parameters  
+
+`key`  
  Object to search for.  
   
  `base`  
@@ -56,7 +58,8 @@ void *_lsearch_s(
  A pointer to an object that might be accessed in the comparison function.  
   
 ## Return Value  
- If `key` is found, `_lsearch_s` returns a pointer to the element of the array at `base` that matches `key`. If `key` is not found, `_lsearch_s` returns a pointer to the newly added item at the end of the array.  
+
+If `key` is found, `_lsearch_s` returns a pointer to the element of the array at `base` that matches `key`. If `key` is not found, `_lsearch_s` returns a pointer to the newly added item at the end of the array.  
   
  If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, then `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -70,7 +73,8 @@ void *_lsearch_s(
 |any|any|`NULL`|an|any|`EINVAL`|  
   
 ## Remarks  
- The `_lsearch_s` function performs a linear search for the value `key` in an array of `num` elements, each of `width` bytes. Unlike `bsearch_s`, `_lsearch_s` does not require the array to be sorted. If `key` is not found, then `_lsearch_s` adds it to the end of the array and increments `num`.  
+
+The `_lsearch_s` function performs a linear search for the value `key` in an array of `num` elements, each of `width` bytes. Unlike `bsearch_s`, `_lsearch_s` does not require the array to be sorted. If `key` is not found, then `_lsearch_s` adds it to the end of the array and increments `num`.  
   
  The `compare` function is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. The `compare` function also takes the pointer to the context as the first argument. `_lsearch_s` calls `compare` one or more times during the search, passing pointers to two array elements on each call. `compare` must compare the elements and then return either nonzero (meaning the elements are different) or 0 (meaning the elements are identical).  
   
@@ -85,7 +89,8 @@ void *_lsearch_s(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [bsearch_s](../../c-runtime-library/reference/bsearch-s.md)   
  [_lfind_s](../../c-runtime-library/reference/lfind-s.md)   
  [_lsearch](../../c-runtime-library/reference/lsearch.md)

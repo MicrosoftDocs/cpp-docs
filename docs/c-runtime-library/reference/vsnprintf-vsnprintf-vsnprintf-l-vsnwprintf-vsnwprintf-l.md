@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
+
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).  
   
 ## Syntax  
@@ -97,8 +98,9 @@ int _vsnwprintf_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Storage location for output.  
   
  `count`  
@@ -116,7 +118,8 @@ int _vsnwprintf_l(
  For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## Return Value  
- The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by `count` is not sufficiently large to contain the output specified by `format` and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if `count` were sufficiently large. If the return value is greater than `count` - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.  
+
+The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by `count` is not sufficiently large to contain the output specified by `format` and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if `count` were sufficiently large. If the return value is greater than `count` - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.  
   
  Both `_vsnprintf` and `_vsnwprintf` functions return the number of characters written if the number of characters to write is less than or equal to `count`; if the number of characters to write is greater than `count`, these functions return -1 indicating that output has been truncated.  
   
@@ -125,7 +128,8 @@ int _vsnwprintf_l(
  If `format` is `NULL`, or if `buffer` is NULL and `count` is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.  
   
 ## Remarks  
- Each of these functions takes a pointer to an argument list, then formats the data, and writes up to `count` characters  to the memory pointed to by `buffer`. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than `count`).  
+
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to `count` characters  to the memory pointed to by `buffer`. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than `count`).  
   
 > [!IMPORTANT]
 >  To prevent certain kinds of security risks, ensure that `format` is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -236,7 +240,8 @@ nSize: 10, buff: Hi there!
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [vprintf Functions](../../c-runtime-library/vprintf-functions.md)   
  [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)   
  [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   

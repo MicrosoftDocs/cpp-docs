@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cacosh, cacoshf, cacoshl
+
 Retrieves the inverse hyperbolic cosine of a complex number with a branch cut at values less than 1 along the real axis. .  
   
 ## Syntax  
@@ -43,15 +44,18 @@ _Lcomplex cacoshl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The inverse hyperbolic cosine of `z`, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [-iπ, +iπ] along the imaginary axis.  
+
+The inverse hyperbolic cosine of `z`, in radians. The result is unbounded and non-negative along the real axis, and  in the interval [-iπ, +iπ] along the imaginary axis.  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `cacosh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacosh` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `cacosh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `cacosh` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -62,7 +66,8 @@ _Lcomplex cacoshl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   

@@ -35,7 +35,7 @@ char *_fcvt(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *value*<br/>
  Number to be converted.
@@ -105,7 +105,8 @@ source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
  [_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>

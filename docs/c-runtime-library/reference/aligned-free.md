@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_free
+
 Frees a block of memory that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md).  
   
 ## Syntax  
@@ -31,12 +32,14 @@ void _aligned_free (
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  A pointer to the memory block that was returned to the `_aligned_malloc` or `_aligned_offset_malloc` function.  
   
 ## Remarks  
- `_aligned_free` is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [noalias](../../cpp/noalias.md).  
+
+`_aligned_free` is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [noalias](../../cpp/noalias.md).  
   
  This function does not validate its parameter, unlike the other _aligned CRT functions. If `memblock` is a `NULL` pointer, this function simply performs no actions. It does not change `errno` and it does not invoke the invalid parameter handler. If an error occurs in the function due to not using _aligned functions previously to allocate the block of memory or a misalignment of memory occurs due to some unforeseen calamity, the function generates a debug report from the [_RPT, _RPTF, _RPTW, _RPTFW Macros](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md).  
   
@@ -47,7 +50,9 @@ void _aligned_free (
 |`_aligned_free`|\<malloc.h>|  
   
 ## Example  
- For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
+
+For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
   
 ## See Also  
- [Data Alignment](../../c-runtime-library/data-alignment.md)
+
+[Data Alignment](../../c-runtime-library/data-alignment.md)

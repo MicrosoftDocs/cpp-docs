@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _searchenv, _wsearchenv
+
 Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](../../c-runtime-library/reference/searchenv-s-wsearchenv-s.md).  
   
 > [!IMPORTANT]
@@ -53,8 +54,9 @@ void _wsearchenv(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `filename`  
+### Parameters  
+
+`filename`  
  Name of the file to search for.  
   
  `varname`  
@@ -64,7 +66,8 @@ void _wsearchenv(
  Buffer to store the complete path.  
   
 ## Remarks  
- The `_searchenv` routine searches for the target file in the specified domain. The `varname` variable can be any environment or user-defined variable—for example, `PATH`, `LIB`, or `INCLUDE`—that specifies a list of directory paths. Because `_searchenv` is case-sensitive, `varname` should match the case of the environment variable.  
+
+The `_searchenv` routine searches for the target file in the specified domain. The `varname` variable can be any environment or user-defined variable—for example, `PATH`, `LIB`, or `INCLUDE`—that specifies a list of directory paths. Because `_searchenv` is case-sensitive, `varname` should match the case of the environment variable.  
   
  The routine first searches for the file in the current working directory. If it does not find the file, it looks through the directories that are specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into `pathname`. If the `filename` file is not found, `pathname` contains an empty null-terminated string.  
   
@@ -128,7 +131,8 @@ C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 ```  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)   
  [_searchenv_s, _wsearchenv_s](../../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)

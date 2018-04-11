@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memmove, wmemmove
+
 Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](../../c-runtime-library/reference/memmove-s-wmemmove-s.md).  
   
 ## Syntax  
@@ -38,8 +39,9 @@ wchar_t *wmemmove(
 );  
 ```  
   
-#### Parameters  
- `dest`  
+### Parameters  
+
+`dest`  
  Destination object.  
   
  `src`  
@@ -49,10 +51,12 @@ wchar_t *wmemmove(
  Number of bytes (`memmove`) or characters (`wmemmove`) to copy.  
   
 ## Return Value  
- The value of `dest`.  
+
+The value of `dest`.  
   
 ## Remarks  
- Copies `count` bytes (`memmove`) or characters (`wmemmove`) from `src` to `dest`. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.  
+
+Copies `count` bytes (`memmove`) or characters (`wmemmove`) from `src` to `dest`. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.  
   
  **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -112,7 +116,8 @@ New string: aaaabb
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   
  [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)   

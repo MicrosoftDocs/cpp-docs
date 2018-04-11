@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
+
 Compares `n` bytes of two multibyte-character strings by using multibyte code-page information.  
   
 > [!IMPORTANT]
@@ -53,8 +54,9 @@ int _mbsnbicoll_l(
 );  
 ```  
   
-#### Parameters  
- `string1, string2`  
+### Parameters  
+
+`string1, string2`  
  Strings to compare.  
   
  `count`  
@@ -64,7 +66,8 @@ int _mbsnbicoll_l(
  Locale to use.  
   
 ## Return Value  
- The return value indicates the relation of the substrings of `string1` and `string2`.  
+
+The return value indicates the relation of the substrings of `string1` and `string2`.  
   
 |Return value|Description|  
 |------------------|-----------------|  
@@ -75,7 +78,8 @@ int _mbsnbicoll_l(
  If `string1` or `string2` is `NULL` or `count` is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.  
   
 ## Remarks  
- Each of these functions collates, at most, the first `count` bytes in `string1` and `string2` and returns a value indicating the relationship between the resulting substrings of `string1` and `string2`. If the final byte in the substring of `string1` or `string2` is a lead byte, it is not included in the comparison; these functions compare only complete characters in the substrings. `_mbsnbicoll` is a case-insensitive version of `_mbsnbcoll`. Like `_mbsnbcmp` and `_mbsnbicmp`, `_mbsnbcoll` and `_mbsnbicoll` collate the two multibyte-character strings according to the lexicographic order specified by the multibyte [code page](../../c-runtime-library/code-pages.md) currently in use.  
+
+Each of these functions collates, at most, the first `count` bytes in `string1` and `string2` and returns a value indicating the relationship between the resulting substrings of `string1` and `string2`. If the final byte in the substring of `string1` or `string2` is a lead byte, it is not included in the comparison; these functions compare only complete characters in the substrings. `_mbsnbicoll` is a case-insensitive version of `_mbsnbcoll`. Like `_mbsnbcmp` and `_mbsnbicmp`, `_mbsnbcoll` and `_mbsnbicoll` collate the two multibyte-character strings according to the lexicographic order specified by the multibyte [code page](../../c-runtime-library/code-pages.md) currently in use.  
   
  For some code pages and corresponding character sets, the order of characters in the character set might differ from the lexicographic character order. In the "C" locale, this is not the case: the order of characters in the ASCII character set is the same as the lexicographic order of the characters. However, in certain European code pages, for example, the character 'a' (value 0x61) precedes the character 'ä' (value 0xE4) in the character set, but the character 'ä' precedes the character 'a' lexicographically. To perform a lexicographic comparison of strings by bytes in such an instance, use `_mbsnbcoll` rather than `_mbsnbcmp`; to check only for string equality, use `_mbsnbcmp`.  
   
@@ -104,7 +108,8 @@ int _mbsnbicoll_l(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
  [_mbsnbicmp, _mbsnbicmp_l](../../c-runtime-library/reference/mbsnbicmp-mbsnbicmp-l.md)   

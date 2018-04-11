@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # isdigit, iswdigit, _isdigit_l, _iswdigit_l
+
 Determines whether an integer represents a decimal-digit character.  
   
 ## Syntax  
@@ -42,15 +43,17 @@ int _iswdigit_l(
 );  
 ```  
   
-#### Parameters  
- `c`  
+### Parameters  
+
+`c`  
  Integer to test.  
   
  `locale`  
  The locale to use.  
   
 ## Return Value  
- Each of these routines returns nonzero if `c` is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if `c` is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if `c` is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
+
+Each of these routines returns nonzero if `c` is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if `c` is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if `c` is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.  
   
  The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -75,6 +78,7 @@ int _iswdigit_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Character Classification](../../c-runtime-library/character-classification.md)   
+
+[Character Classification](../../c-runtime-library/character-classification.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

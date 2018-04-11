@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
+
 Returns a pointer to the first character in a given string that is not in another given string.  
   
 > [!IMPORTANT]
@@ -49,8 +50,9 @@ unsigned char *_mbsspnp_l(
   
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  Null-terminated string to search.  
   
  `charset`  
@@ -60,10 +62,12 @@ unsigned char *_mbsspnp_l(
  Locale to use.  
   
 ## Return Value  
- `_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`. Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`. For each of these routines, no return value is reserved to indicate an error.  
+
+`_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`. Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`. For each of these routines, no return value is reserved to indicate an error.  
   
 ## Remarks  
- The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in `str` that does not belong to the set of characters in `charset`. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.  
+
+The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in `str` that does not belong to the set of characters in `charset`. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.  
   
  If either `str` or `charset` is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.  
   
@@ -110,7 +114,8 @@ abbage
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)   

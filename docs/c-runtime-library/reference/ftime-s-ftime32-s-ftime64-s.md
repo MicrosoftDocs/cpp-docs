@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ftime_s, _ftime32_s, _ftime64_s
+
 Gets the current time. These are versions of [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -37,15 +38,18 @@ errno_t _ftime64_s(
 );  
 ```  
   
-#### Parameters  
- `timeptr`  
+### Parameters  
+
+`timeptr`  
  Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.  
   
 ## Return Value  
- Zero if successful, an error code on failure. If `timeptr` is `NULL`, the return value is `EINVAL`.  
+
+Zero if successful, an error code on failure. If `timeptr` is `NULL`, the return value is `EINVAL`.  
   
 ## Remarks  
- The `_ftime_s` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
+
+The `_ftime_s` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
   
  `dstflag`  
  Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)  
@@ -76,7 +80,8 @@ errno_t _ftime64_s(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -132,7 +137,8 @@ The time is Mon Apr 28 11:08:54.230 2003
 ```  
   
 ## See Also  
- [Time Management](../../c-runtime-library/time-management.md)   
+
+[Time Management](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
  [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   

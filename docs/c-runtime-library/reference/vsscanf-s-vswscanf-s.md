@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vsscanf_s, vswscanf_s
+
 Reads formatted data from a string. These versions of [vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -37,8 +38,9 @@ int vswscanf_s(
 );   
 ```  
   
-#### Parameters  
- `buffer`  
+### Parameters  
+
+`buffer`  
  Stored data  
   
  `format`  
@@ -48,14 +50,16 @@ int vswscanf_s(
  Variable argument list.  
   
 ## Return Value  
- Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.  
+
+Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion.  
   
  If `buffer` or `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`  
   
  For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## Remarks  
- The `vsscanf_s` function reads data from `buffer` into the locations that are given by each argument in the `arglist` argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in `format`. Unlike the less secure version `vsscanf`, a buffer size parameter is required when you use the type field characters `c`, `C`, `s`, `S`, or string-control sets that are enclosed in `[]`. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.  
+
+The `vsscanf_s` function reads data from `buffer` into the locations that are given by each argument in the `arglist` argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in `format`. Unlike the less secure version `vsscanf`, a buffer size parameter is required when you use the type field characters `c`, `C`, `s`, `S`, or string-control sets that are enclosed in `[]`. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.  
   
  The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.  
   
@@ -136,7 +140,8 @@ Real:     = 15.000000
 ```  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)   
  [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)   
  [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)   

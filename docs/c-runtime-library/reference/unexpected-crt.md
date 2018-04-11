@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # unexpected (CRT)
+
 Calls `terminate` or function you specify using `set_unexpected`.  
   
 ## Syntax  
@@ -30,7 +31,8 @@ void unexpected( void );
 ```  
   
 ## Remarks  
- The `unexpected` routine is not used with the current implementation of C++ exception handling. `unexpected` calls `terminate` by default. You can change this default behavior by writing a custom termination function and calling `set_unexpected` with the name of your function as its argument. `unexpected` calls the last function given as an argument to `set_unexpected`.  
+
+The `unexpected` routine is not used with the current implementation of C++ exception handling. `unexpected` calls `terminate` by default. You can change this default behavior by writing a custom termination function and calling `set_unexpected` with the name of your function as its argument. `unexpected` calls the last function given as an argument to `set_unexpected`.  
   
 ## Requirements  
   
@@ -41,7 +43,8 @@ void unexpected( void );
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
  [abort](../../c-runtime-library/reference/abort.md)   
  [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)   
  [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   

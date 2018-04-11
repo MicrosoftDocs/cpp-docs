@@ -38,7 +38,7 @@ long double _chgsignl(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  The floating-point value to be changed.

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # bsearch
+
 Performs a binary search of a sorted array. A more secure version of this function is available; see [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).  
   
 ## Syntax  
@@ -35,8 +36,9 @@ void *bsearch(
 );  
 ```  
   
-#### Parameters  
- `key`  
+### Parameters  
+
+`key`  
  Object to search for.  
   
  `base`  
@@ -52,10 +54,12 @@ void *bsearch(
  Callback function that compares two elements. The first is a pointer to the key for the search and the second is a pointer to the array element to be compared with the key.  
   
 ## Return Value  
- `bsearch` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
+
+`bsearch` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.  
   
 ## Remarks  
- The `bsearch` function performs a binary search of a sorted array of `num` elements, each of `width` bytes in size. The `base` value is a pointer to the base of the array to be searched, and `key` is the value being sought. The `compare` parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:  
+
+The `bsearch` function performs a binary search of a sorted array of `num` elements, each of `width` bytes in size. The `base` value is a pointer to the base of the array to be searched, and `key` is the value being sought. The `compare` parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:  
   
 |Value returned by `compare` routine|Description|  
 |-----------------------------------------|-----------------|  
@@ -74,7 +78,8 @@ void *bsearch(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- This program sorts a string array with qsort, and then uses bsearch to find the word "cat".  
+
+This program sorts a string array with qsort, and then uses bsearch to find the word "cat".  
   
 ```  
 // crt_bsearch.c  
@@ -118,7 +123,8 @@ cat found at 002F0F04
 ```  
   
 ## See Also  
- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
+
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)   
  [_lfind](../../c-runtime-library/reference/lfind.md)   
  [_lsearch](../../c-runtime-library/reference/lsearch.md)   
  [qsort](../../c-runtime-library/reference/qsort.md)

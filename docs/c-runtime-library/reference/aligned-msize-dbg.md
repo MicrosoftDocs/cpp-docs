@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _aligned_msize_dbg
+
 Returns the size of a memory block allocated in the heap (debug version only).  
   
 ## Syntax  
@@ -33,8 +34,9 @@ size_t _aligned_msize_dbg(
 );  
 ```  
   
-#### Parameters  
- [in] `memblock`  
+### Parameters  
+
+[in] `memblock`  
  Pointer to the memory block.  
   
  [in] `alignment`  
@@ -44,10 +46,12 @@ size_t _aligned_msize_dbg(
  The offset into the memory allocation to force the alignment.  
   
 ## Return Value  
- Returns the size (in bytes) as an unsigned integer.  
+
+Returns the size (in bytes) as an unsigned integer.  
   
 ## Remarks  
- The `alignment` and `offset` values must be the same as the values passed to the function that allocated the block.  
+
+The `alignment` and `offset` values must be the same as the values passed to the function that allocated the block.  
   
  `_aligned_msize_dbg` is a debug version of the [_aligned_msize](../../c-runtime-library/reference/aligned-msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_msize_dbg` is reduced to a call to `_aligned_msize`. Both `_aligned_msize` and `_aligned_msize_dbg` calculate the size of a memory block in the base heap, but `_aligned_msize_dbg` adds a debugging feature: It includes the buffers on either side of the user portion of the memory block in the returned size.  
   
@@ -64,7 +68,9 @@ size_t _aligned_msize_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
+
+Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _recalloc
+
 A combination of `realloc` and `calloc`. Reallocates an array in memory and initializes its elements to 0.  
   
 ## Syntax  
@@ -33,8 +34,9 @@ void *_recalloc(
 );  
 ```  
   
-#### Parameters  
- `memblock`  
+### Parameters  
+
+`memblock`  
  Pointer to previously allocated memory block.  
   
  `num`  
@@ -44,7 +46,8 @@ void *_recalloc(
  Length in bytes of each element.  
   
 ## Return Value  
- `_recalloc` returns a `void` pointer to the reallocated (and possibly moved) memory block.  
+
+`_recalloc` returns a `void` pointer to the reallocated (and possibly moved) memory block.  
   
  If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and `NULL` is returned.  
   
@@ -53,7 +56,8 @@ void *_recalloc(
  The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than `void`, use a type cast on the return value.  
   
 ## Remarks  
- The `_recalloc` function changes the size of an allocated memory block. The `memblock` argument points to the beginning of the memory block. If `memblock` is `NULL`, `_recalloc` behaves the same way as [calloc](../../c-runtime-library/reference/calloc.md) and allocates a new block of `num` * `size` bytes. Each element is initialized to 0. If `memblock` is not `NULL`, it should be a pointer returned by a previous call to `calloc`, [malloc](../../c-runtime-library/reference/malloc.md), or [realloc](../../c-runtime-library/reference/realloc.md).  
+
+The `_recalloc` function changes the size of an allocated memory block. The `memblock` argument points to the beginning of the memory block. If `memblock` is `NULL`, `_recalloc` behaves the same way as [calloc](../../c-runtime-library/reference/calloc.md) and allocates a new block of `num` * `size` bytes. Each element is initialized to 0. If `memblock` is not `NULL`, it should be a pointer returned by a previous call to `calloc`, [malloc](../../c-runtime-library/reference/malloc.md), or [realloc](../../c-runtime-library/reference/realloc.md).  
   
  Because the new block can be in a new memory location, the pointer returned by `_recalloc` is not guaranteed to be the pointer passed through the `memblock` argument.  
   
@@ -80,7 +84,8 @@ _set_new_mode(1)
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Memory Allocation](../../c-runtime-library/memory-allocation.md)   
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
  [_recalloc_dbg](../../c-runtime-library/reference/recalloc-dbg.md)   
  [_aligned_recalloc](../../c-runtime-library/reference/aligned-recalloc.md)   
  [_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md)   

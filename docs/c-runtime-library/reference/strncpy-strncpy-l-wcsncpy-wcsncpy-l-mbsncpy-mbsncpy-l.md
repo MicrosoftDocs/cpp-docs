@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
+
 Copy characters of one string to another. More secure versions of these functions are available; see [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).  
   
 > [!IMPORTANT]
@@ -103,8 +104,9 @@ unsigned char *_mbsncpy_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `strDest`  
+### Parameters  
+
+`strDest`  
  Destination string.  
   
  `strSource`  
@@ -117,10 +119,12 @@ unsigned char *_mbsncpy_l(
  Locale to use.  
   
 ## Return Value  
- Returns `strDest`. No return value is reserved to indicate an error.  
+
+Returns `strDest`. No return value is reserved to indicate an error.  
   
 ## Remarks  
- The `strncpy` function copies the initial `count` characters of `strSource` to `strDest` and returns `strDest`. If `count` is less than or equal to the length of `strSource`, a null character is not appended automatically to the copied string. If `count` is greater than the length of `strSource`, the destination string is padded with null characters up to length `count`. The behavior of `strncpy` is undefined if the source and destination strings overlap.  
+
+The `strncpy` function copies the initial `count` characters of `strSource` to `strDest` and returns `strDest`. If `count` is less than or equal to the length of `strSource`, a null character is not appended automatically to the copied string. If `count` is greater than the length of `strSource`, the destination string is padded with null characters up to length `count`. The behavior of `strncpy` is undefined if the source and destination strings overlap.  
   
 > [!IMPORTANT]
 >  `strncpy` does not check for sufficient space in `strDest`; this makes it a potential cause of buffer overruns. The `count` argument limits the number of characters copied; it is not a limit on the size of `strDest`. See the following example. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -154,7 +158,8 @@ unsigned char *_mbsncpy_l(
  For additional platform compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- The following example demonstrates the use of `strncpy` and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to `strncpy` similar to **crt_strncpy_x86.c(15) : warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.**  
+
+The following example demonstrates the use of `strncpy` and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to `strncpy` similar to **crt_strncpy_x86.c(15) : warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.**  
   
 ```  
 // crt_strncpy_x86.c  
@@ -222,7 +227,8 @@ Buffer overrun: s = 'ars.' (should be 'test')
  The layout of automatic variables and the level of error detection and code protection can vary with changed compiler settings. This example may have different results when built in other compilation environments or with other compiler options.  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md)   

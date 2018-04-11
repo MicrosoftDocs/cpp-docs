@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _getdcwd_nolock, _wgetdcwd_nolock
+
 Gets the full path of the current working directory on the specified drive.  
   
 > [!IMPORTANT]
@@ -41,8 +42,9 @@ wchar_t *_wgetdcwd_nolock(
 );  
 ```  
   
-#### Parameters  
- `drive`  
+### Parameters  
+
+`drive`  
  Disk drive.  
   
  `buffer`  
@@ -52,10 +54,12 @@ wchar_t *_wgetdcwd_nolock(
  Maximum length of path in characters: `char` for `_getdcwd` and `wchar_t` for `_wgetdcwd`.  
   
 ## Return Value  
- See [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md).  
+
+See [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md).  
   
 ## Remarks  
- `_getdcwd_nolock` and `_wgetdcwd_nolock` are identical to `_getdcwd` and `_wgetdcwd`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+`_getdcwd_nolock` and `_wgetdcwd_nolock` are identical to `_getdcwd` and `_wgetdcwd`, respectively, except that they are not protected from interference by other threads. They might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ### Generic-Text Routine Mappings  
   
@@ -73,7 +77,8 @@ wchar_t *_wgetdcwd_nolock(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Directory Control](../../c-runtime-library/directory-control.md)   
+
+[Directory Control](../../c-runtime-library/directory-control.md)   
  [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)   
  [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)   
  [_getdrive](../../c-runtime-library/reference/getdrive.md)   

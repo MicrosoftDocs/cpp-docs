@@ -49,7 +49,7 @@ double _yn(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *x*<br/>
  Floating-point value.

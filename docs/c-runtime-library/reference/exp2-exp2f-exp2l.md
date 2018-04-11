@@ -48,7 +48,7 @@ long double exp2l(
 );
 ```
 
-#### Parameters
+### Parameters
 
 [in] *x*<br/>
  The value of the exponent.

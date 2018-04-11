@@ -82,7 +82,7 @@ const unsigned char *_mbsstr_l(
 ); // C++ only  
 ```  
   
-#### Parameters  
+### Parameters  
  `str`  
  Null-terminated string to search.  
   

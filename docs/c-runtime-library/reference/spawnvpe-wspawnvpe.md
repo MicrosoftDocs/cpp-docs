@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _spawnvpe, _wspawnvpe
+
 Creates and executes a new process.  
   
 > [!IMPORTANT]
@@ -43,8 +44,9 @@ intptr_t _wspawnvpe(
 );  
 ```  
   
-#### Parameters  
- `mode`  
+### Parameters  
+
+`mode`  
  Execution mode for calling process  
   
  `cmdname`  
@@ -57,7 +59,8 @@ intptr_t _wspawnvpe(
  Array of pointers to environment settings  
   
 ## Return Value  
- The return value from a synchronous `_spawnvpe` or `_wspawnvpe` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnvpe` or `_wspawnvpe` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values:  
+
+The return value from a synchronous `_spawnvpe` or `_wspawnvpe` (`_P_WAIT` specified for `mode`) is the exit status of the new process. The return value from an asynchronous `_spawnvpe` or `_wspawnvpe` (`_P_NOWAIT` or `_P_NOWAITO` specified for `mode`) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically calls the `exit` routine with a nonzero argument. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, `errno` is set to one of the following values:  
   
  `E2BIG`  
  Argument list exceeds 1024 bytes  
@@ -77,7 +80,8 @@ intptr_t _wspawnvpe(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- Each of these functions creates and executes a new process, passing an array of pointers to command-line arguments and an array of pointers to environment settings. These functions use the `PATH` environment variable to find the file to execute.  
+
+Each of these functions creates and executes a new process, passing an array of pointers to command-line arguments and an array of pointers to environment settings. These functions use the `PATH` environment variable to find the file to execute.  
   
  These functions validate their parameters. If either `cmdname` or `argv` is a null pointer, or if `argv` points to null pointer, or `argv[0]` is an empty string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set `errno` to `EINVAL`, and return -1. No new process is spawned.  
   
@@ -91,10 +95,12 @@ intptr_t _wspawnvpe(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
- See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
+
+See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md).  
   
 ## See Also  
- [abort](../../c-runtime-library/reference/abort.md)   
+
+[abort](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   
  [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)   
  [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   

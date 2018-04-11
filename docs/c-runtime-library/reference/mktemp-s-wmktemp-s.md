@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mktemp_s, _wmktemp_s
+
 Creates a unique file name. These are versions of [_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 ## Syntax  
@@ -44,15 +45,17 @@ errno_t _wmktemp_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `template`  
+### Parameters  
+
+`template`  
  File name pattern.  
   
  `sizeInChars`  
  Size of the buffer in single-byte characters in `_mktemp_s`; wide characters in `_wmktemp_s`, including the null terminator.  
   
 ## Return Value  
- Both of these functions return zero on success; an error code on failure.  
+
+Both of these functions return zero on success; an error code on failure.  
   
 ### Error Conditions  
   
@@ -65,7 +68,8 @@ errno_t _wmktemp_s(
  If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`.  
   
 ## Remarks  
- The `_mktemp_s` function creates a unique file name by modifying the `template` argument, so that after the call, the `template` pointer points to a string containing the new file name. `_mktemp_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. `_wmktemp_s` is a wide-character version of `_mktemp_s`; the argument of `_wmktemp_s` is a wide-character string. `_wmktemp_s` and `_mktemp_s` behave identically otherwise, except that `_wmktemp_s` does not handle multibyte-character strings.  
+
+The `_mktemp_s` function creates a unique file name by modifying the `template` argument, so that after the call, the `template` pointer points to a string containing the new file name. `_mktemp_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. `_wmktemp_s` is a wide-character version of `_mktemp_s`; the argument of `_wmktemp_s` is a wide-character string. `_wmktemp_s` and `_mktemp_s` behave identically otherwise, except that `_wmktemp_s` does not handle multibyte-character strings.  
   
 ### Generic-Text Routine Mappings  
   
@@ -167,7 +171,8 @@ Unique filename is fne03188
 ```  
   
 ## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
+
+[File Handling](../../c-runtime-library/file-handling.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
  [_getpid](../../c-runtime-library/reference/getpid.md)   

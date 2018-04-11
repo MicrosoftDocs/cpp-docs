@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ctanh, ctanhf, ctanhl
+
 Computes the complex hyperbolic tangent of a complex number.  
   
 ## Syntax  
@@ -43,12 +44,14 @@ _Lcomplex ctanhl(
 );  
 ```  
   
-#### Parameters  
- `z`  
+### Parameters  
+
+`z`  
  A complex number that represents an angle, in radians.  
   
 ## Return Value  
- The complex hyperbolic tangent of `z`.  
+
+The complex hyperbolic tangent of `z`.  
   
 |Input|SEH Exception|`_matherr` Exception|  
 |-----------|-------------------|--------------------------|  
@@ -56,7 +59,8 @@ _Lcomplex ctanhl(
 |± ∞ (tan, tanf)|INVALID|_DOMAIN|  
   
 ## Remarks  
- Because C++ allows overloading, you can call overloads of `ctanh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ctanh` always takes and returns a `_Dcomplex` value.  
+
+Because C++ allows overloading, you can call overloads of `ctanh` that take and return `_Fcomplex` and `_Lcomplex` values. In a C program, `ctanh` always takes and returns a `_Dcomplex` value.  
   
 ## Requirements  
   
@@ -67,7 +71,8 @@ _Lcomplex ctanhl(
  For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
  [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   
  [csinh, csinhf, csinhl](../../c-runtime-library/reference/csinh-csinhf-csinhl.md)   

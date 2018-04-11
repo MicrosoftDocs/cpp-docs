@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # memset, wmemset
+
 Sets buffers to a specified character.  
   
 ## Syntax  
@@ -39,8 +40,9 @@ wchar_t *wmemset(
 );  
 ```  
   
-#### Parameters  
- *dest*  
+### Parameters  
+
+*dest*  
  Pointer to destination.  
   
  `c`  
@@ -50,10 +52,12 @@ wchar_t *wmemset(
  Number of characters.  
   
 ## Return Value  
- The value of `dest`.  
+
+The value of `dest`.  
   
 ## Remarks  
- Sets the first `count` characters of `dest` to the character `c`.  
+
+Sets the first `count` characters of `dest` to the character `c`.  
   
  **Security Note** Make sure that the destination buffer has enough room for at least `count` characters. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
@@ -67,7 +71,8 @@ wchar_t *wmemset(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -126,7 +131,8 @@ After:  **** is a test of the wmemset function
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

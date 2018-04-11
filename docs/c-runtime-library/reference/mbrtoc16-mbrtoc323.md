@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # mbrtoc16, mbrtoc32
+
 Translates the first multibyte character in a narrow string into the equivalent UTF-16 or UTF-32 character.  
   
 ## Syntax  
@@ -42,8 +43,9 @@ size_t mbrtoc32(
   
 ```  
   
-#### Parameters  
- `destination`  
+### Parameters  
+
+`destination`  
  Pointer to the `char16_t` or `char32_t` equivalent of the multibyte character to convert. If null, the function does not store a value.  
   
  `source`  
@@ -56,7 +58,8 @@ size_t mbrtoc32(
  Pointer to a `mbstate_t` conversion state object used to interpret the multibyte string to one or more output characters.  
   
 ## Return Value  
- On success, returns the value of the first of these conditions that applies, given the current `state` value:  
+
+On success, returns the value of the first of these conditions that applies, given the current `state` value:  
   
 |Value|Condition|  
 |-----------|---------------|  
@@ -67,7 +70,8 @@ size_t mbrtoc32(
 |-1|An encoding error has occurred. The next `max_bytes` or fewer bytes do not contribute to a complete and valid multibyte character. No value is stored in `destination`.<br /><br /> `EILSEQ` is stored in `errno` and the conversion state `state` is unspecified.|  
   
 ## Remarks  
- The `mbrtoc16` function reads up to `max_bytes` bytes from `source` to find  the first complete, valid multibyte character, and then stores the equivalent UTF-16 character in `destination`. The source bytes are interpreted according to the current thread multibyte locale. If the multibyte character requires more than one UTF-16 output character, such as a surrogate pair, then the `state` value is set to store the next UTF-16 character in `destination` on the next call to `mbrtoc16`. The `mbrtoc32` function is identical, but output is stored as a UTF-32 character.  
+
+The `mbrtoc16` function reads up to `max_bytes` bytes from `source` to find  the first complete, valid multibyte character, and then stores the equivalent UTF-16 character in `destination`. The source bytes are interpreted according to the current thread multibyte locale. If the multibyte character requires more than one UTF-16 output character, such as a surrogate pair, then the `state` value is set to store the next UTF-16 character in `destination` on the next call to `mbrtoc16`. The `mbrtoc32` function is identical, but output is stored as a UTF-32 character.  
   
  If `source` is null, these functions return the equivalent of a call made using arguments of `NULL` for `destination`, `""` for `source`,  and `1` for `max_bytes`. The passed values of `destination` and `max_bytes` are ignored.  
   
@@ -82,7 +86,8 @@ size_t mbrtoc32(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
  [c16rtomb, c32rtomb](../../c-runtime-library/reference/c16rtomb-c32rtomb1.md)   

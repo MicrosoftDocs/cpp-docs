@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # execl
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_execl](../../c-runtime-library/reference/execl-wexecl.md) instead.  
   
 > [!IMPORTANT]

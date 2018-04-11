@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtoul, _strtoul_l, wcstoul, _wcstoul_l
+
 Convert strings to an unsigned long-integer value.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ unsigned long _wcstoul_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,12 +66,14 @@ unsigned long _wcstoul_l(
  Locale to use.  
   
 ## Return Value  
- `strtoul` returns the converted value, if any, or `ULONG_MAX` on overflow. `strtoul` returns 0 if no conversion can be performed. `wcstoul` returns values analogously to `strtoul`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
+
+`strtoul` returns the converted value, if any, or `ULONG_MAX` on overflow. `strtoul` returns 0 if no conversion can be performed. `wcstoul` returns values analogously to `strtoul`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.  
   
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.  
   
 ## Remarks  
- Each of these functions converts the input string `nptr` to an `unsigned` `long`.  
+
+Each of these functions converts the input string `nptr` to an `unsigned` `long`.  
   
  `strtoul` stops reading the string `nptr` at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`. The `LC_NUMERIC` category setting of the locale determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strtoul` and `wcstoul` use the current locale; `_strtoul_l` and `_wcstoul_l` are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
@@ -102,10 +106,12 @@ unsigned long _wcstoul_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
+
+See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

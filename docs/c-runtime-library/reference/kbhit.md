@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _kbhit
+
 Checks the console for keyboard input.  
   
 > [!IMPORTANT]
@@ -34,10 +35,12 @@ int _kbhit( void );
 ```  
   
 ## Return Value  
- `_kbhit` returns a nonzero value if a key has been pressed. Otherwise, it returns 0.  
+
+`_kbhit` returns a nonzero value if a key has been pressed. Otherwise, it returns 0.  
   
 ## Remarks  
- The `_kbhit` function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call `_getch` or `_getche` to get the keystroke.  
+
+The `_kbhit` function checks the console for a recent keystroke. If the function returns a nonzero value, a keystroke is waiting in the buffer. The program can then call `_getch` or `_getche` to get the keystroke.  
   
 ## Requirements  
   
@@ -48,7 +51,8 @@ int _kbhit( void );
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Libraries  
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
   
@@ -83,4 +87,5 @@ Key struck was 'q'
 ```  
   
 ## See Also  
- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)

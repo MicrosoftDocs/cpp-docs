@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _memicmp, _memicmp_l
+
 Compares characters in two buffers (case-insensitive).  
   
 ## Syntax  
@@ -39,8 +40,9 @@ int _memicmp_l(
 );  
 ```  
   
-#### Parameters  
- `buf1`  
+### Parameters  
+
+`buf1`  
  First buffer.  
   
  `buf2`  
@@ -53,7 +55,8 @@ int _memicmp_l(
  Locale to use.  
   
 ## Return Value  
- The return value indicates the relationship between the buffers.  
+
+The return value indicates the relationship between the buffers.  
   
 |Return value|Relationship of first count bytes of buf1 and buf2|  
 |------------------|--------------------------------------------------------|  
@@ -63,7 +66,8 @@ int _memicmp_l(
 |`_NLSCMPERROR`|An error occurred.|  
   
 ## Remarks  
- The `_memicmp` function compares the first `count` characters of the two buffers `buf1` and `buf2` byte by byte. The comparison is not case-sensitive.  
+
+The `_memicmp` function compares the first `count` characters of the two buffers `buf1` and `buf2` byte by byte. The comparison is not case-sensitive.  
   
  If either `buf1` or `buf2` is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.  
   
@@ -114,7 +118,8 @@ First is equal to second.
 ```  
   
 ## See Also  
- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
+
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)   
  [_memccpy](../../c-runtime-library/reference/memccpy.md)   
  [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
  [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   

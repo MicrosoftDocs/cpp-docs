@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
+
 Convert a string to an `__int64` value.  
   
 ## Syntax  
@@ -50,8 +51,9 @@ __int64 _wcstoi64_l(
 );  
 ```  
   
-#### Parameters  
- `nptr`  
+### Parameters  
+
+`nptr`  
  Null-terminated string to convert.  
   
  `endptr`  
@@ -64,7 +66,8 @@ __int64 _wcstoi64_l(
  The locale to use.  
   
 ## Return Value  
- `_strtoi64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_I64_MAX` or `_I64_MIN`. The function will return 0 if no conversion can be performed. `_wcstoi64` returns values analogously to `strtoi64`.  
+
+`_strtoi64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_I64_MAX` or `_I64_MIN`. The function will return 0 if no conversion can be performed. `_wcstoi64` returns values analogously to `strtoi64`.  
   
  `_I64_MAX` and `_I64_MIN` are defined in LIMITS.H.  
   
@@ -73,7 +76,8 @@ __int64 _wcstoi64_l(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `_strtoi64` function converts `nptr` to an `__int64`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`. `_wcstoi64` is a wide-character version of `_strtoi64`; its `nptr` argument is a wide-character string. These functions behave identically otherwise.  
+
+The `_strtoi64` function converts `nptr` to an `__int64`. Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`. `_wcstoi64` is a wide-character version of `_strtoi64`; its `nptr` argument is a wide-character string. These functions behave identically otherwise.  
   
 ### Generic-Text Routine Mappings  
   
@@ -102,7 +106,8 @@ __int64 _wcstoi64_l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Data Conversion](../../c-runtime-library/data-conversion.md)   
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)   
  [Locale](../../c-runtime-library/locale.md)   
  [localeconv](../../c-runtime-library/reference/localeconv.md)   
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   

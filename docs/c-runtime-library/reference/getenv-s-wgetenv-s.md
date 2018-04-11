@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # getenv_s, _wgetenv_s
+
 Gets a value from the current environment. These versions of [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
@@ -55,8 +56,9 @@ errno_t _wgetenv_s(
 ); // C++ only  
 ```  
   
-#### Parameters  
- `pReturnValue`  
+### Parameters  
+
+`pReturnValue`  
  The buffer size that's required, or 0 if the variable is not found.  
   
  `buffer`  
@@ -69,7 +71,8 @@ errno_t _wgetenv_s(
  Environment variable name.  
   
 ## Return Value  
- Zero if successful; otherwise, an error code on failure.  
+
+Zero if successful; otherwise, an error code on failure.  
   
 ### Error Conditions  
   
@@ -84,7 +87,8 @@ errno_t _wgetenv_s(
  Also, if the buffer is too small, these functions return `ERANGE`. They do not invoke an invalid parameter handler. They write out the required buffer size in `pReturnValue`, and thereby enable programs to call the function again with a larger buffer.  
   
 ## Remarks  
- The `getenv_s` function searches the list of environment variables for `varname`. `getenv_s` is not case sensitive in the Windows operating system. `getenv_s` and `_putenv_s` use the copy of the environment that's pointed to by the global variable `_environ` to access the environment. `getenv_s` operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.  
+
+The `getenv_s` function searches the list of environment variables for `varname`. `getenv_s` is not case sensitive in the Windows operating system. `getenv_s` and `_putenv_s` use the copy of the environment that's pointed to by the global variable `_environ` to access the environment. `getenv_s` operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.  
   
  `_wgetenv_s` is a wide-character version of `getenv_s`; the argument and return value of `_wgetenv_s` are wide-character strings. The `_wenviron` global variable is a wide-character version of `_environ`.  
   
@@ -183,7 +187,8 @@ New LIB variable is: c:\mylib;c:\yourlib
 ```  
   
 ## See Also  
- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
  [Environmental Constants](../../c-runtime-library/environmental-constants.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)   
  [_dupenv_s, _wdupenv_s](../../c-runtime-library/reference/dupenv-s-wdupenv-s.md)

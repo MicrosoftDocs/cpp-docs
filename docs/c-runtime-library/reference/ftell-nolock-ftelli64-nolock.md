@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ftell_nolock, _ftelli64_nolock
+
 Gets the current position of a file pointer, without locking the thread.  
   
 ## Syntax  
@@ -34,15 +35,18 @@ __int64 _ftelli64_nolock(
 );  
 ```  
   
-#### Parameters  
- `stream`  
+### Parameters  
+
+`stream`  
  Target the `FILE` structure.  
   
 ## Return Value  
- Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)**.**  
+
+Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)**.**  
   
 ## Remarks  
- These functions are non-locking versions of `ftell` and `_ftelli64`, respectively. They are identical to `ftell` and `_ftelli64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
+
+These functions are non-locking versions of `ftell` and `_ftelli64`, respectively. They are identical to `ftell` and `_ftelli64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
   
 ## Requirements  
   
@@ -54,7 +58,8 @@ __int64 _ftelli64_nolock(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## See Also  
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)   
  [fgetpos](../../c-runtime-library/reference/fgetpos.md)   
  [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)   
  [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   

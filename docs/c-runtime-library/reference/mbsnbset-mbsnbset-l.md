@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mbsnbset, _mbsnbset_l
+
 Sets the first `n` bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [_mbsnbset_s, _mbsnbset_s_l](../../c-runtime-library/reference/mbsnbset-s-mbsnbset-s-l.md).  
   
 > [!IMPORTANT]
@@ -42,8 +43,9 @@ unsigned char *_mbsnbset_l(
 );  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+
+`str`  
  String to be altered.  
   
  `c`  
@@ -56,10 +58,12 @@ unsigned char *_mbsnbset_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsnbset` returns a pointer to the altered string.  
+
+`_mbsnbset` returns a pointer to the altered string.  
   
 ## Remarks  
- The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte specified by `count`, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l` does not place a terminating null at the end of `str`.  
+
+The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte specified by `count`, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l` does not place a terminating null at the end of `str`.  
   
  `_mbsnbset` and `_mbsnbset_l` is similar to `_mbsnset`, except that it sets `count` bytes rather than `count` characters of `c`.  
   
@@ -112,7 +116,8 @@ After:  **** is a test
 ```  
   
 ## See Also  
- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)   
  [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)   
  [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)   
  [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)
