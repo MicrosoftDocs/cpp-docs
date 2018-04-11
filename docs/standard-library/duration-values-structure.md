@@ -43,7 +43,7 @@ struct duration_values;
 
 **Namespace:** std::chrono
 
-##  <a name="max"></a>  duration_values::max
+## <a name="max"></a>  duration_values::max
 
 Static method that returns the upper bound for values of type `Ref`.
 
@@ -59,7 +59,7 @@ In effect, returns `numeric_limits<Rep>::max()`.
 
 When `Rep` is a user-defined type, the return value must be greater than [duration_values::zero](#zero).
 
-##  <a name="min"></a>  duration_values::min
+## <a name="min"></a>  duration_values::min
 
 Static method that returns the lower bound for values of type `Ref`.
 
@@ -75,7 +75,7 @@ In effect, returns `numeric_limits<Rep>::lowest()`.
 
 When `Rep` is a user-defined type, the return value must be less than or equal to [duration_values::zero](#zero).
 
-##  <a name="zero"></a>  duration_values::zero
+## <a name="zero"></a>  duration_values::zero
 
 Returns `Rep(0)`.
 

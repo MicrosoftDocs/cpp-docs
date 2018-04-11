@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 
 The C++ standard library supports multiple regular expression grammars. This topic discusses the grammar variations available when using regular expressions.
 
-##  <a name="regexgrammar"></a> Regular Expression Grammar
+## <a name="regexgrammar"></a> Regular Expression Grammar
 
 The regular expression grammar to use is by specified by the use of one of the `std::regex_constants::syntax_option_type` enumeration values. These regular expression grammars are defined in std::regex_constants:
 
@@ -173,7 +173,7 @@ In `grep` and `egrep`, a newline character ('\n') can be used to separate altern
 
 In `basic` and `grep`, a subexpression is a concatenation. In the other regular expression grammars, a subexpression is an alternation.
 
-##  <a name="grammarsummary"></a> Grammar Summary
+## <a name="grammarsummary"></a> Grammar Summary
 
 The following table summarizes the features that are available in the various regular expression grammars:
 
@@ -206,7 +206,7 @@ The following table summarizes the features that are available in the various re
 |wildcard character|+|+|+|+|+|+|
 |word boundary assert|||+||||
 
-##  <a name="semanticdetails"></a> Semantic Details
+## <a name="semanticdetails"></a> Semantic Details
 
 ### Anchor
 
@@ -460,7 +460,7 @@ A word boundary occurs in the following situations:
 
 A word boundary assert matches when the current position in the target string is immediately after a *word boundary*.
 
-##  <a name="matchingandsearching"></a> Matching and Searching
+## <a name="matchingandsearching"></a> Matching and Searching
 
 For a regular expression to match a target sequence, the entire regular expression must match the entire target sequence. For example, the regular expression "bcd" matches the target sequence "bcd" but does not match the target sequence "abcd" nor the target sequence "bcde".
 
@@ -476,7 +476,7 @@ If there is more than one subsequence that matches at some location in the targe
 
 A partial match succeeds if the match reaches the end of the target sequence without failing, even if it has not reached the end of the regular expression. Therefore, after a partial match succeeds, appending characters to the target sequence could cause a later partial match to fail. However, after a partial match fails, appending characters to the target sequence cannot cause a later partial match to succeed. For example, with a partial match, "ab" matches the target sequence "a" but not "ac".
 
-##  <a name="formatflags"></a> Format Flags
+## <a name="formatflags"></a> Format Flags
 
 |ECMAScript Format Rules|sed Format Rules|Replacement Text|
 |-----------------------------|----------------------|----------------------|

@@ -67,7 +67,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  num_put::char_type
+## <a name="char_type"></a>  num_put::char_type
 
 A type that is used to describe a character used by a locale.
 
@@ -79,7 +79,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="do_put"></a>  num_put::do_put
+## <a name="do_put"></a>  num_put::do_put
 
 A virtual function that is called to convert a number into a sequence of **CharType**s that represents the number formatted for a given locale.
 
@@ -288,7 +288,7 @@ behaves the same as the first, except that it replaces a conversion specificatio
 
 See the example for [put](#put), which calls `do_put`.
 
-##  <a name="iter_type"></a>  num_put::iter_type
+## <a name="iter_type"></a>  num_put::iter_type
 
 A type that describes an output iterator.
 
@@ -300,7 +300,7 @@ typedef OutputIterator iter_type;
 
 The type is a synonym for the template parameter **OutputIterator.**
 
-##  <a name="num_put"></a>  num_put::num_put
+## <a name="num_put"></a>  num_put::num_put
 
 The constructor for objects of type `num_put`.
 
@@ -327,7 +327,7 @@ No direct examples are possible, because the destructor is protected.
 
 The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(_ *Refs*).
 
-##  <a name="put"></a>  num_put::put
+## <a name="put"></a>  num_put::put
 
 Converts a number into a sequence of **CharType**s that represents the number formatted for a given locale.
 

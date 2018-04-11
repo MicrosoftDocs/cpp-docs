@@ -163,7 +163,7 @@ Distribution for 10 samples:
 
 **Namespace:** std
 
-##  <a name="uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution
+## <a name="uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution
 
 Constructs the distribution.
 
@@ -191,7 +191,7 @@ The first constructor constructs an object whose stored `a` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-##  <a name="param_type"></a>  uniform_real_distribution::param_type
+## <a name="param_type"></a>  uniform_real_distribution::param_type
 
 Stores all the parameters of the distribution.
 

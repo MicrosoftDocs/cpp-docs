@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[swap](#swap)|[swap (hash_multiset)](#swap_hash_multiset)|
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -50,7 +50,7 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 
 See the code example for the member class [hash_set::swap](../standard-library/hash-set-class.md#swap) for an example that uses the template version of `swap`.
 
-##  <a name="swap_hash_multiset"></a>  swap (hash_multiset)
+## <a name="swap_hash_multiset"></a>  swap (hash_multiset)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).

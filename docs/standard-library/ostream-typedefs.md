@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[ostream](#ostream)|[wostream](#wostream)|
 
-##  <a name="ostream"></a>  ostream
+## <a name="ostream"></a>  ostream
 
 Creates a type from basic_ostream that is specialized on `char` and `char_traits` specialized on `char`.
 
@@ -29,7 +29,7 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type `char` with default character traits.
 
-##  <a name="wostream"></a>  wostream
+## <a name="wostream"></a>  wostream
 
 Creates a type from basic_ostream that is specialized on `wchar_t` and `char_traits` specialized on `wchar_t`.
 

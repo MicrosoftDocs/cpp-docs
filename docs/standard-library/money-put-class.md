@@ -68,7 +68,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  money_put::char_type
+## <a name="char_type"></a>  money_put::char_type
 
 A type that is used to describe a character used by a locale.
 
@@ -80,7 +80,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="do_put"></a>  money_put::do_put
+## <a name="do_put"></a>  money_put::do_put
 
 A virtual function called to convert either number or a string to a character sequence that represents a monetary value.
 
@@ -164,7 +164,7 @@ The function calls **iosbase**. **width**(0) to reset the field width to zero.
 
 See the example for [put](#put), where the virtual member function is called by **put**.
 
-##  <a name="iter_type"></a>  money_put::iter_type
+## <a name="iter_type"></a>  money_put::iter_type
 
 A type that describes an output iterator.
 
@@ -176,7 +176,7 @@ typedef OutputIterator iter_type;
 
 The type is a synonym for the template parameter **OutputIterator.**
 
-##  <a name="money_put"></a>  money_put::money_put
+## <a name="money_put"></a>  money_put::money_put
 
 The constructor for objects of type `money_put`.
 
@@ -203,7 +203,7 @@ No direct examples are possible, because the destructor is protected.
 
 The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
 
-##  <a name="put"></a>  money_put::put
+## <a name="put"></a>  money_put::put
 
 Converts either number or a string to a character sequence that represents a monetary value.
 
@@ -281,7 +281,7 @@ int main( )
 money_put( ) = "CAD1,000.12"
 ```
 
-##  <a name="string_type"></a>  money_put::string_type
+## <a name="string_type"></a>  money_put::string_type
 
 A type that describes a string containing characters of type **CharType**.
 

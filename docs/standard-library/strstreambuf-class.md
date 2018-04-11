@@ -73,7 +73,7 @@ The object also stores pointers to two functions that control `strstreambuf` all
 
 **Namespace:** std
 
-##  <a name="freeze"></a>  strstreambuf::freeze
+## <a name="freeze"></a>  strstreambuf::freeze
 
 Causes a stream buffer to be unavailable through stream buffer operations.
 
@@ -161,7 +161,7 @@ after clearing stream: stream good
 test1test3
 ```
 
-##  <a name="overflow"></a>  strstreambuf::overflow
+## <a name="overflow"></a>  strstreambuf::overflow
 
 A protected virtual function that can be called when a new character is inserted into a full buffer.
 
@@ -186,7 +186,7 @@ If _ *Meta* != `EOF`, the protected virtual member function tries to insert the 
 
 - If the stored strstreambuf mode says the controlled sequence is modifiable, extendable, and not frozen, the function can make a write position available by allocating new for the output buffer. Extending the output buffer this way also extends any associated input buffer.
 
-##  <a name="pbackfail"></a>  strstreambuf::pbackfail
+## <a name="pbackfail"></a>  strstreambuf::pbackfail
 
 A protected virtual member function that tries to put back an element into the input stream, and then makes it the current element (pointed to by the next pointer).
 
@@ -213,7 +213,7 @@ If _ *Meta* == `EOF`, the element to push back is effectively the one already in
 
 - If a putback position is available, and if the strstreambuf mode says the controlled sequence is modifiable, the function can store **ch** into the putback position and decrement the next pointer for the input buffer.
 
-##  <a name="pcount"></a>  strstreambuf::pcount
+## <a name="pcount"></a>  strstreambuf::pcount
 
 Returns a count of the number of elements written to the controlled sequence.
 
@@ -248,7 +248,7 @@ int main( )
 }
 ```
 
-##  <a name="seekoff"></a>  strstreambuf::seekoff
+## <a name="seekoff"></a>  strstreambuf::seekoff
 
 A protected virtual member function that tries to alter the current positions for the controlled streams.
 
@@ -289,7 +289,7 @@ If `_Which` & **ios_base::in** is nonzero and the input buffer exist, the functi
 
 Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.
 
-##  <a name="seekpos"></a>  strstreambuf::seekpos
+## <a name="seekpos"></a>  strstreambuf::seekpos
 
 A protected virtual member function that tries to alter the current positions for the controlled streams.
 
@@ -315,7 +315,7 @@ The protected virtual member function endeavors to alter the current positions f
 
 If `_Which` & **ios_base::in** is nonzero and the input buffer exists, the function alters the next position to read in the input buffer. If `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function also sets the next position to write to match the next position to read. Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.
 
-##  <a name="str"></a>  strstreambuf::str
+## <a name="str"></a>  strstreambuf::str
 
 Calls [freeze](#freeze), and then returns a pointer to the beginning of the controlled sequence.
 
@@ -335,7 +335,7 @@ No terminating null element exists, unless you explicitly insert one.
 
 See [strstreambuf::freeze](#freeze) for a sample that uses **str**.
 
-##  <a name="strstreambuf"></a>  strstreambuf::strstreambuf
+## <a name="strstreambuf"></a>  strstreambuf::strstreambuf
 
 Constructs an object of type `strstreambuf`.
 
@@ -456,7 +456,7 @@ streambuf((char *)_Getptr, count);
 
 except that the stored mode makes the controlled sequence neither modifiable nor extendable.
 
-##  <a name="underflow"></a>  strstreambuf::underflow
+## <a name="underflow"></a>  strstreambuf::underflow
 
 A protected virtual function to extract the current element from the input stream.
 

@@ -82,7 +82,7 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 
 **Namespace:** std
 
-##  <a name="get"></a>  reference_wrapper::get
+## <a name="get"></a>  reference_wrapper::get
 
 Obtains the wrapped reference.
 
@@ -121,7 +121,7 @@ rwi = 1
 i = -1
 ```
 
-##  <a name="op_ty_amp"></a>  reference_wrapper::operator Ty&amp;
+## <a name="op_ty_amp"></a>  reference_wrapper::operator Ty&amp;
 
 Gets the wrapped reference.
 
@@ -157,7 +157,7 @@ i = 1
 (int)rwi = 1
 ```
 
-##  <a name="op_call"></a>  reference_wrapper::operator()
+## <a name="op_call"></a>  reference_wrapper::operator()
 
 Calls the wrapped reference.
 
@@ -203,7 +203,7 @@ int main() {
 rwi(3) = -3
 ```
 
-##  <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper
+## <a name="reference_wrapper"></a>  reference_wrapper::reference_wrapper
 
 Constructs a `reference_wrapper`.
 
@@ -254,7 +254,7 @@ rwi = 1
 i = -1
 ```
 
-##  <a name="result_type"></a>  reference_wrapper::result_type
+## <a name="result_type"></a>  reference_wrapper::result_type
 
 The weak result type of the wrapped reference.
 
@@ -293,7 +293,7 @@ int main() {
 val = -3
 ```
 
-##  <a name="type"></a>  reference_wrapper::type
+## <a name="type"></a>  reference_wrapper::type
 
 The type of the wrapped reference.
 

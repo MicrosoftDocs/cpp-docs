@@ -19,7 +19,7 @@ helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]",
 |[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[inner_product](#inner_product)|
 |[iota](#iota)|[partial_sum](#partial_sum)|
 
-##  <a name="accumulate"></a>  accumulate
+## <a name="accumulate"></a>  accumulate
 
 Computes the sum of all the elements in a specified range including some initial value by computing successive partial sums or computes the result of successive partial results similarly obtained from using a specified binary operation other than the sum.
 
@@ -156,7 +156,7 @@ The vector of partial products is:
  ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
 ```
 
-##  <a name="adjacent_difference"></a>  adjacent_difference
+## <a name="adjacent_difference"></a>  adjacent_difference
 
 Computes the successive differences between each element and its predecessor in an input range and outputs the results to a destination range or computes the result of a generalized procedure where the difference operation is replaced by another, specified binary operation.
 
@@ -264,7 +264,7 @@ int main( )
 }
 ```
 
-##  <a name="inner_product"></a>  inner_product
+## <a name="inner_product"></a>  inner_product
 
 Computes the sum of the element-wise product of two ranges and adds it to a specified initial value or computes the result of a generalized procedure where the sum and product binary operations are replaced by other specified binary operations.
 
@@ -414,7 +414,7 @@ int main()
 }
 ```
 
-##  <a name="iota"></a>  iota
+## <a name="iota"></a>  iota
 
 Stores a starting value, beginning with the first element and filling with successive increments of that value ( ` value++`) in each of the elements in the interval `[ first,  last)`.
 
@@ -478,7 +478,7 @@ int main(void)
 }
 ```
 
-##  <a name="partial_sum"></a>  partial_sum
+## <a name="partial_sum"></a>  partial_sum
 
 Computes a series of sums in an input range from the first element through the *i*th element and stores the result of each such sum in the *i*th element of a destination range or computes the result of a generalized procedure where the sum operation is replaced by another specified binary operation.
 

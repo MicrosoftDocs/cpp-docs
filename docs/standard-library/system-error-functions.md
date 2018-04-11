@@ -19,7 +19,7 @@ helpviewer_keywords: ["std::generic_category", "std::make_error_code", "std::mak
 |[generic_category](#generic_category)|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|
 |[system_category](#system_category)|
 
-##  <a name="generic_category"></a>  generic_category
+## <a name="generic_category"></a>  generic_category
 
 Represents the category for generic errors.
 
@@ -31,7 +31,7 @@ extern const error_category& generic_category();
 
 The `generic_category` object is an implementation of [error_category](../standard-library/error-category-class.md).
 
-##  <a name="make_error_code"></a>  make_error_code
+## <a name="make_error_code"></a>  make_error_code
 
 Creates an error code object.
 
@@ -51,7 +51,7 @@ The error code object.
 
 ### Remarks
 
-##  <a name="make_error_condition"></a>  make_error_condition
+## <a name="make_error_condition"></a>  make_error_condition
 
 Creates an error condition object.
 
@@ -71,7 +71,7 @@ The error condition object.
 
 ### Remarks
 
-##  <a name="system_category"></a>  system_category
+## <a name="system_category"></a>  system_category
 
 Represents the category for errors caused by low-level system overflows.
 

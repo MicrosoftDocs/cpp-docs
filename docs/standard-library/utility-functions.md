@@ -19,7 +19,7 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
 |[exchange](#exchange)|[forward](#forward)|[get Function &lt;utility&gt;](#get)|
 |[make_pair](#make_pair)|[move](#move)|[swap](#swap)|
 
-##  <a name="exchange"></a>  exchange
+## <a name="exchange"></a>  exchange
 
 **(C++14)** Assigns a new value to an object and returns its old value.
 
@@ -74,7 +74,7 @@ The old value of c1 is: 1
 The new value of c1 after exchange is: 2
 ```
 
-##  <a name="forward"></a>  forward
+## <a name="forward"></a>  forward
 
 Conditionally casts its argument to an rvalue reference if the argument is an rvalue or rvalue reference. This restores the rvalue-ness of an argument to the forwarding function in support of perfect forwarding.
 
@@ -105,7 +105,7 @@ You must specify an explicit template argument to call `forward`.
 
 Restoring the rvalue-ness of an argument's original value in order to perform overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.
 
-##  <a name="get"></a>  get
+## <a name="get"></a>  get
 
 Gets an element from a `pair` object by index position, or by type.
 
@@ -203,7 +203,7 @@ int main()
 }
 ```
 
-##  <a name="make_pair"></a>  make_pair
+## <a name="make_pair"></a>  make_pair
 
 A template function that you can use to construct objects of type `pair`, where the component types are automatically chosen based on the data types that are passed as parameters.
 
@@ -253,7 +253,7 @@ The `make_pair` helper function also makes it possible to pass two values to a f
 
 For an example about how to use the helper function `make_pair` to declare and initialize a pair, see [pair Structure](../standard-library/pair-structure.md).
 
-##  <a name="move"></a>  move
+## <a name="move"></a>  move
 
 Unconditionally casts its argument to an rvalue reference, and thereby signals that it can be moved if its type is move-enabled.
 
@@ -281,7 +281,7 @@ The template argument `Type` is not intended to be specified explicitly, but to 
 
 If the value passed in `Arg` is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in `Arg` by its name or address after it's been moved.
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Exchanges the elements of two [pair Structure](../standard-library/pair-structure.md) objects.
 

@@ -80,7 +80,7 @@ The stack objects are equality comparable if and only if the elements of class *
 
 **Namespace:** std
 
-##  <a name="container_type"></a>  stack::container_type
+## <a name="container_type"></a>  stack::container_type
 
 A type that provides the base container to be adapted.
 
@@ -98,7 +98,7 @@ For more information on `Container`, see the Remarks section of the [stack Class
 
 See the example for [stack::stack](#stack) for an example of how to declare and use `container_type`.
 
-##  <a name="empty"></a>  stack::empty
+## <a name="empty"></a>  stack::empty
 
 Tests if a stack is empty.
 
@@ -143,7 +143,7 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-##  <a name="pop"></a>  stack::pop
+## <a name="pop"></a>  stack::pop
 
 Removes the element from the top of the stack.
 
@@ -199,7 +199,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-##  <a name="push"></a>  stack::push
+## <a name="push"></a>  stack::push
 
 Adds an element to the top end of the stack.
 
@@ -248,7 +248,7 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-##  <a name="size"></a>  stack::size
+## <a name="size"></a>  stack::size
 
 Returns the number of elements in the stack.
 
@@ -289,7 +289,7 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-##  <a name="size_type"></a>  stack::size_type
+## <a name="size_type"></a>  stack::size_type
 
 An unsigned integer type that can represent the number of elements in a stack.
 
@@ -305,7 +305,7 @@ The type is a synonym for `size_type` of the base container adapted by the stack
 
 See the example for [size](#size) for an example of how to declare and use `size_type`.
 
-##  <a name="stack"></a>  stack::stack
+## <a name="stack"></a>  stack::stack
 
 Constructs a stack that is empty or that is a copy of a base container class.
 
@@ -359,7 +359,7 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-##  <a name="top"></a>  stack::top
+## <a name="top"></a>  stack::top
 
 Returns a reference to an element at the top of the stack.
 
@@ -410,7 +410,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-##  <a name="value_type"></a>  stack::value_type
+## <a name="value_type"></a>  stack::value_type
 
 A type that represents the type of object stored as an element in a stack.
 

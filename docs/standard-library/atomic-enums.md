@@ -14,7 +14,7 @@ manager: "ghogen"
 ---
 # &lt;atomic&gt; enums
 
-##  <a name="memory_order_enum"></a>  memory_order Enum
+## <a name="memory_order_enum"></a>  memory_order Enum
 
 Supplies symbolic names for synchronization operations on memory locations. These operations affect how assignments in one thread become visible in another.
 

@@ -66,7 +66,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  num_get::char_type
+## <a name="char_type"></a>  num_get::char_type
 
 A type that is used to describe a character used by a locale.
 
@@ -78,7 +78,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="do_get"></a>  num_get::do_get
+## <a name="do_get"></a>  num_get::do_get
 
 A virtual function that is called to extracts a numerical or Boolean value from a character sequence.
 
@@ -325,7 +325,7 @@ A Boolean input field takes one of two forms. If `iosbase.flags() & ios_base::`[
 
 See the example for [get](#get), where the virtual member function is called by `do_get`.
 
-##  <a name="get"></a>  num_get::get
+## <a name="get"></a>  num_get::get
 
 Extracts a numerical or Boolean value from a character sequence.
 
@@ -547,7 +547,7 @@ int main( )
 }
 ```
 
-##  <a name="iter_type"></a>  num_get::iter_type
+## <a name="iter_type"></a>  num_get::iter_type
 
 A type that describes an input iterator.
 
@@ -559,7 +559,7 @@ typedef InputIterator iter_type;
 
 The type is a synonym for the template parameter **InputIterator**.
 
-##  <a name="num_get"></a>  num_get::num_get
+## <a name="num_get"></a>  num_get::num_get
 
 The constructor for objects of type `num_get` that are used to extract numerical values from sequences.
 

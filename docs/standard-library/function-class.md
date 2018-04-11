@@ -130,7 +130,7 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 **Namespace:** std
 
-##  <a name="assign"></a>  function::assign
+## <a name="assign"></a>  function::assign
 
 Assigns a callable object to this function object.
 
@@ -161,7 +161,7 @@ template <class Fx, class Alloc>
 
 The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.
 
-##  <a name="function"></a>  function::function
+## <a name="function"></a>  function::function
 
 Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.
 
@@ -278,7 +278,7 @@ f is non-empty (correct).
 g is empty (correct).
 ```
 
-##  <a name="op_unspecified"></a>  function::operator unspecified
+## <a name="op_unspecified"></a>  function::operator unspecified
 
 Tests if stored callable object exists.
 
@@ -320,7 +320,7 @@ not empty == false
 not empty == true
 ```
 
-##  <a name="op_call"></a>  function::operator()
+## <a name="op_call"></a>  function::operator()
 
 Calls a callable object.
 
@@ -371,7 +371,7 @@ empty == false
 val == -3
 ```
 
-##  <a name="op_eq"></a>  function::operator=
+## <a name="op_eq"></a>  function::operator=
 
 Replaces the stored callable object.
 
@@ -453,7 +453,7 @@ empty == false
 val == -3
 ```
 
-##  <a name="result_type"></a>  function::result_type
+## <a name="result_type"></a>  function::result_type
 
 The return type of the stored callable object.
 
@@ -495,7 +495,7 @@ empty == false
 val == -3
 ```
 
-##  <a name="swap"></a>  function::swap
+## <a name="swap"></a>  function::swap
 
 Swap two callable objects.
 
@@ -554,7 +554,7 @@ empty == false
 val == -3
 ```
 
-##  <a name="target"></a>  function::target
+## <a name="target"></a>  function::target
 
 Tests if stored callable object is callable as specified.
 
@@ -616,7 +616,7 @@ empty == true
 no target == true
 ```
 
-##  <a name="target_type"></a>  function::target_type
+## <a name="target_type"></a>  function::target_type
 
 Gets type information on the callable object.
 

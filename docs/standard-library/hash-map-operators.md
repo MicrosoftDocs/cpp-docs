@@ -19,7 +19,7 @@ manager: "ghogen"
 |[operator!=](#op_neq)|[operator!= (multimap)](#op_neq_mm)|
 |[operator==](#op_eq_eq)|[operator== (multimap)](#op_eq_eq_mm)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).
@@ -88,7 +88,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).
@@ -155,7 +155,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-##  <a name="op_neq_mm"></a>  operator!= (hash_multimap)
+## <a name="op_neq_mm"></a>  operator!= (hash_multimap)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).
@@ -222,7 +222,7 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-##  <a name="op_eq_eq_mm"></a>  operator==  (hash_multimap)
+## <a name="op_eq_eq_mm"></a>  operator==  (hash_multimap)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).

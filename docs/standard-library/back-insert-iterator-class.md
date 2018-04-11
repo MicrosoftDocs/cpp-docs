@@ -64,7 +64,7 @@ The container must satisfy the requirements for a back insertion sequence where 
 
 **Namespace:** std
 
-##  <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator
+## <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator
 
 Constructs a `back_insert_iterator` that inserts elements after the last element in a container.
 
@@ -129,7 +129,7 @@ The initial vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).
 ```
 
-##  <a name="container_type"></a>  back_insert_iterator::container_type
+## <a name="container_type"></a>  back_insert_iterator::container_type
 
 A type that provides a container for the `back_insert_iterator`.
 
@@ -183,7 +183,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).
 ```
 
-##  <a name="op_star"></a>  back_insert_iterator::operator*
+## <a name="op_star"></a>  back_insert_iterator::operator*
 
 Dereferencing operator used to implement the output iterator expression \* *i* = *x*.
 
@@ -243,7 +243,7 @@ The vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).
 ```
 
-##  <a name="op_add_add"></a>  back_insert_iterator::operator++
+## <a name="op_add_add"></a>  back_insert_iterator::operator++
 
 Increments the `back_insert_iterator` to the next location into which a value may be stored.
 
@@ -304,7 +304,7 @@ The vector vec is: ( 10 20 ).
 After the insertions, the vector vec becomes: ( 10 20 30 40 ).
 ```
 
-##  <a name="op_eq"></a>  back_insert_iterator::operator=
+## <a name="op_eq"></a>  back_insert_iterator::operator=
 
 Appends or pushes a value onto the back end of a container.
 
@@ -371,7 +371,7 @@ int main( )
 }
 ```
 
-##  <a name="reference"></a>  back_insert_iterator::reference
+## <a name="reference"></a>  back_insert_iterator::reference
 
 A type that provides a reference for the `back_insert_iterator`.
 

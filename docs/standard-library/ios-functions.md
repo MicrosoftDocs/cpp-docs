@@ -25,7 +25,7 @@ helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::d
 |[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|
 |[unitbuf](#unitbuf)|[uppercase](#uppercase)|
 
-##  <a name="boolalpha"></a>  boolalpha
+## <a name="boolalpha"></a>  boolalpha
 
 Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **true** or **false** in the stream.
 
@@ -77,7 +77,7 @@ true
 true
 ```
 
-##  <a name="dec"></a>  dec
+## <a name="dec"></a>  dec
 
 Specifies that integer variables appear in base 10 notation.
 
@@ -130,7 +130,7 @@ int main( )
 100
 ```
 
-##  <a name="ios_defaultfloat"></a>  &lt;ios&gt; defaultfloat
+## <a name="ios_defaultfloat"></a>  &lt;ios&gt; defaultfloat
 
 Configures the flags of an `ios_base` object to use a default display format for float values.
 
@@ -147,7 +147,7 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 The manipulator effectively calls _I `osbase.`[ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, then returns _I `osbase`.
 
-##  <a name="fixed"></a>  fixed
+## <a name="fixed"></a>  fixed
 
 Specifies that a floating-point number is displayed in fixed-decimal notation.
 
@@ -195,7 +195,7 @@ int main( )
 1.1
 ```
 
-##  <a name="hex"></a>  hex
+## <a name="hex"></a>  hex
 
 Specifies that integer variables shall appear in base 16 notation.
 
@@ -222,7 +222,7 @@ The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-
 
 See [dec](../standard-library/ios-functions.md#dec) for an example of how to use **hex**.
 
-##  <a name="internal"></a>  internal
+## <a name="internal"></a>  internal
 
 Causes a number's sign to be left justified and the number to be right justified.
 
@@ -268,7 +268,7 @@ int main( void )
 -..123.456
 ```
 
-##  <a name="left"></a>  left
+## <a name="left"></a>  left
 
 Causes text that is not as wide as the output width to appear in the stream flush with the left margin.
 
@@ -311,7 +311,7 @@ int main( )
 5
 ```
 
-##  <a name="noboolalpha"></a>  noboolalpha
+## <a name="noboolalpha"></a>  noboolalpha
 
 Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as 1 or 0 in the stream.
 
@@ -340,7 +340,7 @@ By default, `noboolalpha` is in effect.
 
 See [boolalpha](../standard-library/ios-functions.md#boolalpha) for an example of using `noboolalpha`.
 
-##  <a name="noshowbase"></a>  noshowbase
+## <a name="noshowbase"></a>  noshowbase
 
 Turns off indicating the notational base in which a number is displayed.
 
@@ -367,7 +367,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [showbase](../standard-library/ios-functions.md#showbase) for an example of how to use `noshowbase`.
 
-##  <a name="noshowpoint"></a>  noshowpoint
+## <a name="noshowpoint"></a>  noshowpoint
 
 Displays only the whole-number part of floating-point numbers whose fractional part is zero.
 
@@ -414,7 +414,7 @@ int main( )
 5
 ```
 
-##  <a name="noshowpos"></a>  noshowpos
+## <a name="noshowpos"></a>  noshowpos
 
 Causes positive numbers to not be explicitly signed.
 
@@ -441,7 +441,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [showpos](../standard-library/ios-functions.md#showpos) for an example of using `noshowpos`.
 
-##  <a name="noskipws"></a>  noskipws
+## <a name="noskipws"></a>  noskipws
 
 Cause spaces to be read by the input stream.
 
@@ -483,7 +483,7 @@ int main() {
 }
 ```
 
-##  <a name="nounitbuf"></a>  nounitbuf
+## <a name="nounitbuf"></a>  nounitbuf
 
 Causes output to be buffered and processed on when the buffer is full.
 
@@ -506,7 +506,7 @@ A reference to the object from which _ *Str* is derived.
 
 The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`), and then returns `str`.
 
-##  <a name="nouppercase"></a>  nouppercase
+## <a name="nouppercase"></a>  nouppercase
 
 Specifies that hexadecimal digits and the exponent in scientific notation appear in lowercase.
 
@@ -531,7 +531,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [uppercase](../standard-library/ios-functions.md#uppercase) for an example of using `nouppercase`.
 
-##  <a name="oct"></a>  oct
+## <a name="oct"></a>  oct
 
 Specifies that integer variables appear in base 8 notation.
 
@@ -558,7 +558,7 @@ The manipulator effectively calls `str`.[setf](../standard-library/ios-base-clas
 
 See [dec](../standard-library/ios-functions.md#dec) for an example of how to use **oct**.
 
-##  <a name="right"></a>  right
+## <a name="right"></a>  right
 
 Causes text that is not as wide as the output width to appear in the stream flush with the right margin.
 
@@ -615,7 +615,7 @@ int main( )
                    5
 ```
 
-##  <a name="scientific"></a>  scientific
+## <a name="scientific"></a>  scientific
 
 Causes floating-point numbers to be displayed using scientific notation.
 
@@ -660,7 +660,7 @@ int main( )
 1.002300e+002
 ```
 
-##  <a name="showbase"></a>  showbase
+## <a name="showbase"></a>  showbase
 
 Indicates the notational base in which a number is displayed.
 
@@ -714,7 +714,7 @@ int main( )
 144
 ```
 
-##  <a name="showpoint"></a>  showpoint
+## <a name="showpoint"></a>  showpoint
 
 Displays the whole-number part of a floating-point number and digits to the right of the decimal point even when the fractional part is zero.
 
@@ -741,7 +741,7 @@ The manipulator effectively calls `str`.[setf](../standard-library/ios-base-clas
 
 See [noshowpoint](../standard-library/ios-functions.md#noshowpoint) for an example of using `showpoint`.
 
-##  <a name="showpos"></a>  showpos
+## <a name="showpos"></a>  showpos
 
 Causes positive numbers to be explicitly signed.
 
@@ -786,7 +786,7 @@ int main( )
 +1
 ```
 
-##  <a name="skipws"></a>  skipws
+## <a name="skipws"></a>  skipws
 
 Cause spaces to not be read by the input stream.
 
@@ -840,7 +840,7 @@ int main( )
 .3.
 ```
 
-##  <a name="unitbuf"></a>  unitbuf
+## <a name="unitbuf"></a>  unitbuf
 
 Causes output to be processed when the buffer is not empty.
 
@@ -865,7 +865,7 @@ Note that `endl` also flushes the buffer.
 
 The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( [ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)), and then returns `str`.
 
-##  <a name="uppercase"></a>  uppercase
+## <a name="uppercase"></a>  uppercase
 
 Specifies that hexadecimal digits and the exponent in scientific notation appear in uppercase.
 

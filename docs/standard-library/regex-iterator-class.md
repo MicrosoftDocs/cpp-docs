@@ -90,7 +90,7 @@ See the following topics for examples on regular expressions:
 
 **Namespace:** std
 
-##  <a name="difference_type"></a>  regex_iterator::difference_type
+## <a name="difference_type"></a>  regex_iterator::difference_type
 
 The type of an iterator difference.
 
@@ -145,7 +145,7 @@ match == a
 match == a
 ```
 
-##  <a name="iterator_category"></a>  regex_iterator::iterator_category
+## <a name="iterator_category"></a>  regex_iterator::iterator_category
 
 The type of the iterator category.
 
@@ -200,7 +200,7 @@ match == a
 match == a
 ```
 
-##  <a name="op_neq"></a>  regex_iterator::operator!=
+## <a name="op_neq"></a>  regex_iterator::operator!=
 
 Compares iterators for inequality.
 
@@ -260,7 +260,7 @@ match == a
 match == a
 ```
 
-##  <a name="op_star"></a>  regex_iterator::operator*
+## <a name="op_star"></a>  regex_iterator::operator*
 
 Accesses the designated match.
 
@@ -315,7 +315,7 @@ match == a
 match == a
 ```
 
-##  <a name="op_add_add"></a>  regex_iterator::operator++
+## <a name="op_add_add"></a>  regex_iterator::operator++
 
 Increments the iterator.
 
@@ -373,7 +373,7 @@ match == a
 match == a
 ```
 
-##  <a name="op_eq"></a>  regex_iterator::operator=
+## <a name="op_eq"></a>  regex_iterator::operator=
 
 Compares iterators for equality.
 
@@ -433,7 +433,7 @@ match == a
 match == a
 ```
 
-##  <a name="regex_iterator__operator-_gt"></a>  regex_iterator::operator-&gt;
+## <a name="regex_iterator__operator-_gt"></a>  regex_iterator::operator-&gt;
 
 Accesses the designated match.
 
@@ -488,7 +488,7 @@ match == a
 match == a
 ```
 
-##  <a name="pointer"></a>  regex_iterator::pointer
+## <a name="pointer"></a>  regex_iterator::pointer
 
 The type of a pointer to a match.
 
@@ -543,7 +543,7 @@ match == a
 match == a
 ```
 
-##  <a name="reference"></a>  regex_iterator::reference
+## <a name="reference"></a>  regex_iterator::reference
 
 The type of a reference to a match.
 
@@ -599,7 +599,7 @@ match == a
 match == a
 ```
 
-##  <a name="regex_iterator"></a>  regex_iterator::regex_iterator
+## <a name="regex_iterator"></a>  regex_iterator::regex_iterator
 
 Constructs the iterator.
 
@@ -674,7 +674,7 @@ match == a
 match == a
 ```
 
-##  <a name="regex_type"></a>  regex_iterator::regex_type
+## <a name="regex_type"></a>  regex_iterator::regex_type
 
 The type of the regular expression to match.
 
@@ -730,7 +730,7 @@ match == a
 match == a
 ```
 
-##  <a name="value_type"></a>  regex_iterator::value_type
+## <a name="value_type"></a>  regex_iterator::value_type
 
 The type of a match.
 

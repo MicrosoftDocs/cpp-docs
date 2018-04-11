@@ -101,7 +101,7 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 
 **Namespace:** std
 
-##  <a name="auto_ptr"></a>  auto_ptr::auto_ptr
+## <a name="auto_ptr"></a>  auto_ptr::auto_ptr
 
 The constructor for objects of type `auto_ptr`.
 
@@ -191,7 +191,7 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-##  <a name="element_type"></a>  auto_ptr::element_type
+## <a name="element_type"></a>  auto_ptr::element_type
 
 The type is a synonym for the template parameter **Type**.
 
@@ -200,7 +200,7 @@ The type is a synonym for the template parameter **Type**.
 typedef Type element  _type;
 ```
 
-##  <a name="get"></a>  auto_ptr::get
+## <a name="get"></a>  auto_ptr::get
 
 The member function returns the stored pointer **myptr**.
 
@@ -259,7 +259,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-##  <a name="op_eq"></a>  auto_ptr::operator=
+## <a name="op_eq"></a>  auto_ptr::operator=
 
 An assignment operator that transfers ownership from one `auto_ptr` object to another.
 
@@ -287,7 +287,7 @@ The assignment evaluates the expression **delete myptr**, but only if the stored
 
 For an example of the use of the member operator, see [auto_ptr::auto_ptr](#auto_ptr).
 
-##  <a name="op_star"></a>  auto_ptr::operator*
+## <a name="op_star"></a>  auto_ptr::operator*
 
 The dereferencing operator for objects of type `auto_ptr`.
 
@@ -307,7 +307,7 @@ The indirection operator returns `*`[get](#get). Hence, the stored pointer must 
 
 For an example of how to use the member function, see [auto_ptr::auto_ptr](#auto_ptr).
 
-##  <a name="auto_ptr__operator-_gt"></a>  auto_ptr::operator-&gt;
+## <a name="auto_ptr__operator-_gt"></a>  auto_ptr::operator-&gt;
 
 The operator for allowing member access.
 
@@ -327,7 +327,7 @@ The selection operator returns [get](#get)`( )`, so that the expression *ap*-> *
 
 For an example of how to use the member function, see [auto_ptr::auto_ptr](#auto_ptr).
 
-##  <a name="op_auto_ptr_lt_other_gt"></a>  auto_ptr::operator auto_ptr&lt;Other&gt;
+## <a name="op_auto_ptr_lt_other_gt"></a>  auto_ptr::operator auto_ptr&lt;Other&gt;
 
 Casts from one kind of `auto_ptr` to another kind of `auto_ptr`.
 
@@ -357,7 +357,7 @@ int main()
 }
 ```
 
-##  <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
+## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
 
 Casts from an `auto_ptr` to an **auto_ptr_ref**.
 
@@ -418,7 +418,7 @@ main exiting
 ~C:  1
 ```
 
-##  <a name="release"></a>  auto_ptr::release
+## <a name="release"></a>  auto_ptr::release
 
 The member replaces the stored pointer **myptr** with a null pointer and returns the previously stored pointer.
 
@@ -480,7 +480,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-##  <a name="reset"></a>  auto_ptr::reset
+## <a name="reset"></a>  auto_ptr::reset
 
 The member function evaluates the expression **delete** **myptr**, but only if the stored pointer value **myptr** changes as a result of a function call. It then replaces the stored pointer with **ptr**.
 

@@ -19,7 +19,7 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 |-|-|-|
 |[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|
 
-##  <a name="get"></a>  get
+## <a name="get"></a>  get
 
 Gets an element from a `tuple` object, by index or (in C++14) by type.
 
@@ -100,7 +100,7 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-##  <a name="make_tuple"></a>  make_tuple
+## <a name="make_tuple"></a>  make_tuple
 
 Makes a `tuple` from element values.
 
@@ -158,7 +158,7 @@ int main() {
 4 5 6 7
 ```
 
-##  <a name="tie"></a>  tie
+## <a name="tie"></a>  tie
 
 Makes a `tuple` from element references.
 

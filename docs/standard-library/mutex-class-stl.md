@@ -51,7 +51,7 @@ class mutex;
 
 **Namespace:** std
 
-##  <a name="lock"></a>  mutex::lock
+## <a name="lock"></a>  mutex::lock
 
 Blocks the calling thread until the thread obtains ownership of the `mutex`.
 
@@ -63,7 +63,7 @@ void lock();
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="mutex"></a>  mutex::mutex Constructor
+## <a name="mutex"></a>  mutex::mutex Constructor
 
 Constructs a `mutex` object that is not locked.
 
@@ -71,7 +71,7 @@ Constructs a `mutex` object that is not locked.
 constexpr mutex() noexcept;
 ```
 
-##  <a name="dtormutex_destructor"></a>  mutex::~mutex Destructor
+## <a name="dtormutex_destructor"></a>  mutex::~mutex Destructor
 
 Releases any resources that are used by the `mutex` object.
 
@@ -83,7 +83,7 @@ Releases any resources that are used by the `mutex` object.
 
 If the object is locked when the destructor runs, the behavior is undefined.
 
-##  <a name="native_handle"></a>  mutex::native_handle
+## <a name="native_handle"></a>  mutex::native_handle
 
 Returns the implementation-specific type that represents the mutex handle. The mutex handle can be used in implementation-specific ways.
 
@@ -95,7 +95,7 @@ native_handle_type native_handle();
 
 `native_handle_type` is defined as a `Concurrency::critical_section *` that's cast as `void *`.
 
-##  <a name="try_lock"></a>  mutex::try_lock
+## <a name="try_lock"></a>  mutex::try_lock
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -111,7 +111,7 @@ bool try_lock();
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="unlock"></a>  mutex::unlock
+## <a name="unlock"></a>  mutex::unlock
 
 Releases ownership of the `mutex`.
 

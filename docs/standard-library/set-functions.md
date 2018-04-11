@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[swap (map)](#swap)|[swap (multiset)](#swap_multiset)|
 
-##  <a name="swap"></a>  swap  (map)
+## <a name="swap"></a>  swap  (map)
 
 Exchanges the elements of two sets.
 
@@ -46,7 +46,7 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 
 See the code example for the member class [set::swap](../standard-library/set-class.md#swap) for an example of the use of the template version of `swap`.
 
-##  <a name="swap_multiset"></a>  swap  (multiset)
+## <a name="swap_multiset"></a>  swap  (multiset)
 
 Exchanges the elements of two multisets.
 

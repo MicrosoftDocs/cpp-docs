@@ -69,7 +69,7 @@ An object of type `error_code` class stores an error code value and a pointer to
 
 **Namespace:** std
 
-##  <a name="assign"></a>  error_code::assign
+## <a name="assign"></a>  error_code::assign
 
 Assigns an error code value and category to an error code.
 
@@ -88,7 +88,7 @@ void assign(value_type val, const error_category& _Cat);
 
 The member function stores `val` as the error code value and a pointer to `_Cat`.
 
-##  <a name="category"></a>  error_code::category
+## <a name="category"></a>  error_code::category
 
 Returns the error category.
 
@@ -98,7 +98,7 @@ const error_category& category() const;
 
 ### Remarks
 
-##  <a name="clear"></a>  error_code::clear
+## <a name="clear"></a>  error_code::clear
 
 Clears the error code value and category.
 
@@ -110,7 +110,7 @@ clear();
 
 The member function stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category) object.
 
-##  <a name="default_error_condition"></a>  error_code::default_error_condition
+## <a name="default_error_condition"></a>  error_code::default_error_condition
 
 Returns the default error condition.
 
@@ -126,7 +126,7 @@ The [error_condition](../standard-library/error-condition-class.md) specified by
 
 This member function returns `category().default_error_condition(value())`.
 
-##  <a name="error_code"></a>  error_code::error_code
+## <a name="error_code"></a>  error_code::error_code
 
 Constructs an object of type `error_code`.
 
@@ -157,7 +157,7 @@ The second constructor stores `val` as the error code value and a pointer to [er
 
 The third constructor stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-##  <a name="message"></a>  error_code::message
+## <a name="message"></a>  error_code::message
 
 Returns the name of the error code.
 
@@ -173,7 +173,7 @@ A `string` representing the name of the error code.
 
 This member function returns `category().message(value())`.
 
-##  <a name="op_eq_eq"></a>  error_code::operator==
+## <a name="op_eq_eq"></a>  error_code::operator==
 
 Tests for equality between `error_code` objects.
 
@@ -195,7 +195,7 @@ bool operator==(const error_code& right) const;
 
 The member operator returns `category() == right.category() && value == right.value()`.
 
-##  <a name="op_neq"></a>  error_code::operator!=
+## <a name="op_neq"></a>  error_code::operator!=
 
 Tests for inequality between `error_code` objects.
 
@@ -217,7 +217,7 @@ bool operator!=(const error_code& right) const;
 
 The member operator returns `!(*this == right)`.
 
-##  <a name="op_lt"></a>  error_code::operator&lt;
+## <a name="op_lt"></a>  error_code::operator&lt;
 
 Tests if the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object is less than the `error_code` object passed in for comparison.
 
@@ -239,7 +239,7 @@ bool operator<(const error_code& right) const;
 
 The member operator returns `category() < right.category() || category() == right.category() && value < right.value()`.
 
-##  <a name="op_eq"></a>  error_code::operator=
+## <a name="op_eq"></a>  error_code::operator=
 
 Assigns a new enumeration value to the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object.
 
@@ -264,7 +264,7 @@ A reference to the `error_code` object that is being assigned the new enumeratio
 
 The member operator stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
 
-##  <a name="op_bool"></a>  error_code::operator bool
+## <a name="op_bool"></a>  error_code::operator bool
 
 Casts a variable of type `error_code`.
 
@@ -280,7 +280,7 @@ The Boolean value of the `error_code` object.
 
 The operator returns a value convertible to `true` only if [value](#value) is not equal to zero. The return type is convertible only to `bool`, not to `void *` or other known scalar types.
 
-##  <a name="value"></a>  error_code::value
+## <a name="value"></a>  error_code::value
 
 Returns the stored error code value.
 
@@ -294,7 +294,7 @@ The stored error code value of type [value_type](#value_type).
 
 ### Remarks
 
-##  <a name="value_type"></a>  error_code::value_type
+## <a name="value_type"></a>  error_code::value_type
 
 A type that represents the stored error code value.
 

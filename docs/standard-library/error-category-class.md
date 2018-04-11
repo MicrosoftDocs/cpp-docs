@@ -60,7 +60,7 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 **Namespace:** std
 
-##  <a name="default_error_condition"></a>  error_category::default_error_condition
+## <a name="default_error_condition"></a>  error_category::default_error_condition
 
 Stores the error code value for an error condition object.
 
@@ -80,7 +80,7 @@ Returns `error_condition(_Errval, *this)`.
 
 ### Remarks
 
-##  <a name="equivalent"></a>  error_category::equivalent
+## <a name="equivalent"></a>  error_category::equivalent
 
 Returns a value that specifies whether error objects are equivalent.
 
@@ -110,7 +110,7 @@ The first member function returns `*this == _Cond.category() && _Cond.value() ==
 
 The second member function returns `*this == _Code.category() && _Code.value() == _Errval`.
 
-##  <a name="message"></a>  error_category::message
+## <a name="message"></a>  error_category::message
 
 Returns the name of the specified error code.
 
@@ -130,7 +130,7 @@ Returns a descriptive name of the error code `val` for the category.
 
 ### Remarks
 
-##  <a name="name"></a>  error_category::name
+## <a name="name"></a>  error_category::name
 
 Returns the name of the category.
 
@@ -144,7 +144,7 @@ Returns the name of the category as a null-terminated byte string.
 
 ### Remarks
 
-##  <a name="op_eq_eq"></a>  error_category::operator==
+## <a name="op_eq_eq"></a>  error_category::operator==
 
 Tests for equality between `error_category` objects.
 
@@ -166,7 +166,7 @@ bool operator==(const error_category& right) const;
 
 This member operator returns `this == &right`.
 
-##  <a name="op_neq"></a>  error_category::operator!=
+## <a name="op_neq"></a>  error_category::operator!=
 
 Tests for inequality between `error_category` objects.
 
@@ -188,7 +188,7 @@ bool operator!=(const error_category& right) const;
 
 The member operator returns `(!*this == right)`.
 
-##  <a name="op_lt"></a>  error_category::operator&lt;
+## <a name="op_lt"></a>  error_category::operator&lt;
 
 Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.
 
@@ -210,7 +210,7 @@ bool operator<(const error_category& right) const;
 
 The member operator returns `this < &right`.
 
-##  <a name="value_type"></a>  error_category::value_type
+## <a name="value_type"></a>  error_category::value_type
 
 A type that represents the stored error code value.
 

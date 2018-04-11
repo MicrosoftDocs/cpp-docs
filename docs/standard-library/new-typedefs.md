@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|
 |[new_handler](#new_handler)|
 
-##  <a name="new_handler"></a>  new_handler
+## <a name="new_handler"></a>  new_handler
 
 The type points to a function suitable for use as a new handler.
 

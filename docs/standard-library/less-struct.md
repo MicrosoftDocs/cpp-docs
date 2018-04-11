@@ -23,21 +23,21 @@ A binary predicate that performs the less-than operation ( `operator<`) on its a
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct less : public binary_function <Type, Type, bool>
 {
     bool operator()(const Type& Left, const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator<
 template <>
 struct less<void>
 {
-  template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
-    -> decltype(std::forward<T>(Left) <std::forward<U>(Right));
- };
+    template <class T, class U>
+    auto operator()(T&& Left, U&& Right) const
+        -> decltype(std::forward<T>(Left) <std::forward<U>(Right));
+};
 ```
 
 ### Parameters

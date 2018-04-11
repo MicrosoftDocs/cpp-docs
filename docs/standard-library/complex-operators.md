@@ -21,7 +21,7 @@ helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (compl
 |[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|
 |[operator/](#op_div)|[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -161,7 +161,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-##  <a name="op_star"></a>  operator*
+## <a name="op_star"></a>  operator*
 
 Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -259,7 +259,7 @@ int main( )
 }
 ```
 
-##  <a name="op_add"></a>  operator+
+## <a name="op_add"></a>  operator+
 
 Adds two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -400,7 +400,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-##  <a name="operator-"></a>  operator-
+## <a name="operator-"></a>  operator-
 
 Subtracts two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -542,7 +542,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-##  <a name="op_div"></a>  operator/
+## <a name="op_div"></a>  operator/
 
 Divides two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -662,7 +662,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-##  <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
 Inserts a complex number specified into the output stream.
 
@@ -724,7 +724,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests for equality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -864,7 +864,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-##  <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a>  operator&gt;&gt;
 
 Extracts a complex value from the input stream.
 

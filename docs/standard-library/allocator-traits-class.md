@@ -63,7 +63,7 @@ The following static methods call the corresponding method on a given allocator 
 
 **Namespace:** std
 
-##  <a name="allocate"></a>  allocator_traits::allocate
+## <a name="allocate"></a>  allocator_traits::allocate
 
 Static method that allocates memory by using the given allocator parameter.
 
@@ -93,7 +93,7 @@ The first static method returns `al.allocate(count)`.
 
 The second method returns `al.allocate(count, hint)`, if that expression is well formed; otherwise it returns `al.allocate(count)`.
 
-##  <a name="construct"></a>  allocator_traits::construct
+## <a name="construct"></a>  allocator_traits::construct
 
 Static method that uses a specified allocator to construct an object.
 
@@ -117,7 +117,7 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 The static member function calls `al.construct(ptr, args...)`, if that expression is well formed; otherwise it evaluates `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.
 
-##  <a name="deallocate"></a>  allocator_traits::deallocate
+## <a name="deallocate"></a>  allocator_traits::deallocate
 
 Static method that uses a specified allocator to deallocate a specified number of objects.
 
@@ -144,7 +144,7 @@ This method calls `al.deallocate(ptr, count)`.
 
 This method throws nothing.
 
-##  <a name="destroy"></a>  allocator_traits::destroy
+## <a name="destroy"></a>  allocator_traits::destroy
 
 Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.
 
@@ -165,7 +165,7 @@ static void destroy(Alloc& al, Uty* ptr);
 
 This method calls `al.destroy(ptr)`, if that expression is well formed; otherwise it evaluates `ptr->~Uty()`.
 
-##  <a name="max_size"></a>  allocator_traits::max_size
+## <a name="max_size"></a>  allocator_traits::max_size
 
 Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.
 
@@ -182,7 +182,7 @@ static size_type max_size(const Alloc& al);
 
 This method returns `al.max_size()`, if that expression is well formed; otherwise it returns `numeric_limits<size_type>::max()`.
 
-##  <a name="select_on_container_copy_construction"></a>  allocator_traits::select_on_container_copy_construction
+## <a name="select_on_container_copy_construction"></a>  allocator_traits::select_on_container_copy_construction
 
 Static method that calls `select_on_container_copy_construction` on the specified allocator.
 

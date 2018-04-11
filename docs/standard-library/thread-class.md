@@ -71,7 +71,7 @@ Every thread of execution has a unique identifier of type `thread::id`. The func
 
 **Namespace:** std
 
-##  <a name="detach"></a>  thread::detach
+## <a name="detach"></a>  thread::detach
 
 Detaches the associated thread. The operating system becomes responsible for releasing thread resources on termination.
 
@@ -87,7 +87,7 @@ If the thread that's associated with the calling object is not joinable, the fun
 
 If the thread that's associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.
 
-##  <a name="get_id"></a>  thread::get_id
+## <a name="get_id"></a>  thread::get_id
 
 Returns a unique identifier for the associated thread.
 
@@ -99,7 +99,7 @@ id get_id() const noexcept;
 
 A [thread::id](#id_class) object that uniquely identifies the associated thread, or `thread::id()` if no thread is associated with the object.
 
-##  <a name="hardware_concurrency"></a>  thread::hardware_concurrency
+## <a name="hardware_concurrency"></a>  thread::hardware_concurrency
 
 Static method that returns an estimate of the number of hardware thread contexts.
 
@@ -111,7 +111,7 @@ static unsigned int hardware_concurrency() noexcept;
 
 An estimate of the number of hardware thread contexts. If the value cannot be computed or is not well defined, this method returns 0.
 
-##  <a name="id_class"></a>  thread::id Class
+## <a name="id_class"></a>  thread::id Class
 
 Provides a unique identifier for each thread of execution in the process.
 
@@ -127,7 +127,7 @@ The default constructor creates an object that does not compare equal to the `th
 
 All default-constructed `thread::id` objects compare equal.
 
-##  <a name="join"></a>  thread::join
+## <a name="join"></a>  thread::join
 
 Blocks until the thread of execution that's associated with the calling object completes.
 
@@ -139,7 +139,7 @@ void join();
 
 If the call succeeds, subsequent calls to [get_id](#get_id) for the calling object return a default [thread::id](#id_class) that does not compare equal to the `thread::id` of any existing thread; if the call does not succeed, the value that's returned by `get_id` is unchanged.
 
-##  <a name="joinable"></a>  thread::joinable
+## <a name="joinable"></a>  thread::joinable
 
 Specifies whether the associated thread is *joinable*.
 
@@ -155,7 +155,7 @@ bool joinable() const noexcept;
 
 A thread object is *joinable* if `get_id() != id()`.
 
-##  <a name="native_handle"></a>  thread::native_handle
+## <a name="native_handle"></a>  thread::native_handle
 
 Returns the implementation-specific type that represents the thread handle. The thread handle can be used in implementation-specific ways.
 
@@ -167,7 +167,7 @@ native_handle_type native_handle();
 
 `native_handle_type` is defined as a Win32 `HANDLE` that's cast as `void *`.
 
-##  <a name="op_eq"></a>  thread::operator=
+## <a name="op_eq"></a>  thread::operator=
 
 Associates the thread of a specified object with the current object.
 
@@ -190,7 +190,7 @@ The method calls detach if the calling object is joinable.
 
 After the association is made, `Other` is set to a default-constructed state.
 
-##  <a name="swap"></a>  thread::swap
+## <a name="swap"></a>  thread::swap
 
 Swaps the object state with that of a specified `thread` object.
 
@@ -203,7 +203,7 @@ void swap(thread& Other) noexcept;
 `Other`
  A `thread` object.
 
-##  <a name="thread"></a>  thread::thread Constructor
+## <a name="thread"></a>  thread::thread Constructor
 
 Constructs a `thread` object.
 

@@ -72,7 +72,7 @@ class allocator_base
 
 **Namespace:** stdext
 
-##  <a name="charalloc"></a>  allocator_base::_Charalloc
+## <a name="charalloc"></a>  allocator_base::_Charalloc
 
 Allocates storage for an array of type `char`.
 
@@ -94,7 +94,7 @@ A pointer to the allocated object.
 
 This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Charalloc` for the user-defined allocator by returning the result of a call to the `allocate` function of the synchronization filter.
 
-##  <a name="chardealloc"></a>  allocator_base::_Chardealloc
+## <a name="chardealloc"></a>  allocator_base::_Chardealloc
 
 Frees storage for the array containing elements of type `char`.
 
@@ -113,7 +113,7 @@ void _Chardealloc(void* ptr, size_type count);
 
 This member function is used by containers when compiled with a compiler that cannot compile rebind. It implements `_Chardealloc` for the user-defined allocator by calling the `deallocate` function of the synchronization filter. The pointer ptr must have been earlier returned by a call to `_Charalloc` for an allocator object that compares equal to `*this`, allocating an array object of the same size and type. `_Chardealloc` never throws an exception.
 
-##  <a name="address"></a>  allocator_base::address
+## <a name="address"></a>  allocator_base::address
 
 Finds the address of an object whose value is specified.
 
@@ -136,7 +136,7 @@ A const or nonconst pointer to the object found of, respectively, const or nonco
 
 This member function is implemented for the user-defined allocator by returning `&val`.
 
-##  <a name="allocate"></a>  allocator_base::allocate
+## <a name="allocate"></a>  allocator_base::allocate
 
 Allocates a block of memory large enough to store at least some specified number of elements.
 
@@ -162,7 +162,7 @@ A pointer to the allocated object.
 
 The member function implements memory allocation for the user-defined allocator by returning the result of a call to the `allocate` function of the synchronization filter of type Type `*` if `_Nx == 1`, otherwise by returning the result of a call to `operator new(_Nx * sizeof(Type))` cast to type Type `*`.
 
-##  <a name="allocator_base"></a>  allocator_base::allocator_base
+## <a name="allocator_base"></a>  allocator_base::allocator_base
 
 Constructs an object of type `allocator_base`.
 
@@ -183,7 +183,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 
 The first constructor constructs an [allocator_base](../standard-library/allocator-base-class.md) instance. The second constructor constructs an `allocator_base` instance such that for any `allocator_base<Type, _Sync>` instance `a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
 
-##  <a name="const_pointer"></a>  allocator_base::const_pointer
+## <a name="const_pointer"></a>  allocator_base::const_pointer
 
 A type that provides a constant pointer to the type of object managed by the allocator.
 
@@ -191,7 +191,7 @@ A type that provides a constant pointer to the type of object managed by the all
 typedef const Type *const_pointer;
 ```
 
-##  <a name="const_reference"></a>  allocator_base::const_reference
+## <a name="const_reference"></a>  allocator_base::const_reference
 
 A type that provides a constant reference to type of object managed by the allocator.
 
@@ -199,7 +199,7 @@ A type that provides a constant reference to type of object managed by the alloc
 typedef const Type& const_reference;
 ```
 
-##  <a name="construct"></a>  allocator_base::construct
+## <a name="construct"></a>  allocator_base::construct
 
 Constructs a specific type of object at a specified address that is initialized with a specified value.
 
@@ -218,7 +218,7 @@ void construct(pointer ptr, const Type& val);
 
 This member function is implemented for the user-defined allocator by calling `new((void*)ptr Type(val)`.
 
-##  <a name="deallocate"></a>  allocator_base::deallocate
+## <a name="deallocate"></a>  allocator_base::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -237,7 +237,7 @@ void deallocate(pointer ptr, size_type _Nx);
 
 This member function is implemented for the user-defined allocator by calling `deallocate(ptr)` on the synchronization filter `Sync` if `_Nx == 1`, otherwise by calling `operator delete(_Nx * ptr)`.
 
-##  <a name="destroy"></a>  allocator_base::destroy
+## <a name="destroy"></a>  allocator_base::destroy
 
 Calls an objects destructor without deallocating the memory where the object was stored.
 
@@ -255,7 +255,7 @@ void destroy(pointer ptr);
 
 This member function is implemented for the user-defined allocator by calling `ptr->~Type()`.
 
-##  <a name="difference_type"></a>  allocator_base::difference_type
+## <a name="difference_type"></a>  allocator_base::difference_type
 
 A signed integral type that can represent the difference between values of pointers to the type of object managed by the allocator.
 
@@ -263,7 +263,7 @@ A signed integral type that can represent the difference between values of point
 typedef std::ptrdiff_t difference_type;
 ```
 
-##  <a name="max_size"></a>  allocator_base::max_size
+## <a name="max_size"></a>  allocator_base::max_size
 
 Returns the number of elements of type `Type` that could be allocated by an object of class allocator before the free memory is used up.
 
@@ -279,7 +279,7 @@ The number of elements that could be allocated.
 
 This member function is implemented for the user-defined allocator by returning `(size_t)-1 / sizeof(Type)` if `0 < (size_t)-1 / sizeof(Type)`, otherwise `1`.
 
-##  <a name="pointer"></a>  allocator_base::pointer
+## <a name="pointer"></a>  allocator_base::pointer
 
 A type that provides a pointer to the type of object managed by the allocator.
 
@@ -287,7 +287,7 @@ A type that provides a pointer to the type of object managed by the allocator.
 typedef Type *pointer;
 ```
 
-##  <a name="reference"></a>  allocator_base::reference
+## <a name="reference"></a>  allocator_base::reference
 
 A type that provides a reference to the type of object managed by the allocator.
 
@@ -295,7 +295,7 @@ A type that provides a reference to the type of object managed by the allocator.
 typedef Type& reference;
 ```
 
-##  <a name="size_type"></a>  allocator_base::size_type
+## <a name="size_type"></a>  allocator_base::size_type
 
 An unsigned integral type that can represent the length of any sequence that an object of template class `allocator_base` can allocate.
 
@@ -303,7 +303,7 @@ An unsigned integral type that can represent the length of any sequence that an 
 typedef std::size_t size_type;
 ```
 
-##  <a name="value_type"></a>  allocator_base::value_type
+## <a name="value_type"></a>  allocator_base::value_type
 
 A type that is managed by the allocator.
 

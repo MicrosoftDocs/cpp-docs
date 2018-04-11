@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 |-|
 |[swap](#swap)|
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Exchanges the elements of two deques.
 

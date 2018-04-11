@@ -69,7 +69,7 @@ Each `regex_traits` object holds an object of type `regex_traits::locale` which 
 
 **Namespace:** std
 
-##  <a name="char_class_type"></a>  regex_traits::char_class_type
+## <a name="char_class_type"></a>  regex_traits::char_class_type
 
 The type of character class designators.
 
@@ -152,7 +152,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="char_type"></a>  regex_traits::char_type
+## <a name="char_type"></a>  regex_traits::char_type
 
 The type of an element.
 
@@ -235,7 +235,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="getloc"></a>  regex_traits::getloc
+## <a name="getloc"></a>  regex_traits::getloc
 
 Returns the stored locale object.
 
@@ -318,7 +318,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="imbue"></a>  regex_traits::imbue
+## <a name="imbue"></a>  regex_traits::imbue
 
 Alters the stored locale object.
 
@@ -406,7 +406,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="isctype"></a>  regex_traits::isctype
+## <a name="isctype"></a>  regex_traits::isctype
 
 Tests for class membership.
 
@@ -497,7 +497,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="length"></a>  regex_traits::length
+## <a name="length"></a>  regex_traits::length
 
 Returns the length of a nul-terminated sequence.
 
@@ -585,7 +585,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="locale_type"></a>  regex_traits::locale_type
+## <a name="locale_type"></a>  regex_traits::locale_type
 
 The type of the stored locale object.
 
@@ -668,7 +668,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="lookup_classname"></a>  regex_traits::lookup_classname
+## <a name="lookup_classname"></a>  regex_traits::lookup_classname
 
 Maps a sequence to a character class.
 
@@ -764,7 +764,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="lookup_collatename"></a>  regex_traits::lookup_collatename
+## <a name="lookup_collatename"></a>  regex_traits::lookup_collatename
 
 Maps a sequence to a collating element.
 
@@ -856,7 +856,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="regex_traits"></a>  regex_traits::regex_traits
+## <a name="regex_traits"></a>  regex_traits::regex_traits
 
 Constructs the object.
 
@@ -939,7 +939,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="size_type"></a>  regex_traits::size_type
+## <a name="size_type"></a>  regex_traits::size_type
 
 The type of a sequence length.
 
@@ -1024,7 +1024,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="string_type"></a>  regex_traits::string_type
+## <a name="string_type"></a>  regex_traits::string_type
 
 The type of a string of elements.
 
@@ -1107,7 +1107,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="transform"></a>  regex_traits::transform
+## <a name="transform"></a>  regex_traits::transform
 
 Converts to equivalent ordered sequence.
 
@@ -1199,7 +1199,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="transform_primary"></a>  regex_traits::transform_primary
+## <a name="transform_primary"></a>  regex_traits::transform_primary
 
 Converts to equivalent caseless ordered sequence.
 
@@ -1291,7 +1291,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="translate"></a>  regex_traits::translate
+## <a name="translate"></a>  regex_traits::translate
 
 Converts to equivalent matching element.
 
@@ -1379,7 +1379,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="translate_nocase"></a>  regex_traits::translate_nocase
+## <a name="translate_nocase"></a>  regex_traits::translate_nocase
 
 Converts to equivalent caseless matching element.
 
@@ -1467,7 +1467,7 @@ class digit == d == true
 hex C == 12
 ```
 
-##  <a name="value"></a>  regex_traits::value
+## <a name="value"></a>  regex_traits::value
 
 Converts an element to a digit value.
 

@@ -18,7 +18,7 @@ manager: "ghogen"
 |[iostream](#iostream)|[istream](#istream)|[wiostream](#wiostream)|
 |[wistream](#wistream)|
 
-##  <a name="iostream"></a>  iostream
+## <a name="iostream"></a>  iostream
 
 A type `basic_iostream` specialized on `char`.
 
@@ -30,7 +30,7 @@ typedef basic_iostream<char, char_traits<char>> iostream;
 
 The type is a synonym for template class [basic_iostream](../standard-library/basic-iostream-class.md), specialized for elements of type `char` with default character traits.
 
-##  <a name="istream"></a>  istream
+## <a name="istream"></a>  istream
 
 A type `basic_istream` specialized on `char`.
 
@@ -42,7 +42,7 @@ typedef basic_istream<char, char_traits<char>> istream;
 
 The type is a synonym for template class [basic_istream](../standard-library/basic-istream-class.md), specialized for elements of type `char` with default character traits.
 
-##  <a name="wiostream"></a>  wiostream
+## <a name="wiostream"></a>  wiostream
 
 A type `basic_iostream` specialized on `wchar_t`.
 
@@ -54,7 +54,7 @@ typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
 
 The type is a synonym for template class [basic_iostream](../standard-library/basic-iostream-class.md), specialized for elements of type `wchar_t` with default character traits.
 
-##  <a name="wistream"></a>  wistream
+## <a name="wistream"></a>  wistream
 
 A type `basic_istream` specialized on `wchar_t`.
 

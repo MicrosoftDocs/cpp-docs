@@ -122,7 +122,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 **Header**: \<deque>
 
-##  <a name="allocator_type"></a>  deque::allocator_type
+## <a name="allocator_type"></a>  deque::allocator_type
 
 A type that represents the allocator class for the deque object.
 
@@ -138,7 +138,7 @@ typedef Allocator allocator_type;
 
 See the example for [get_allocator](#get_allocator).
 
-##  <a name="assign"></a>  deque::assign
+## <a name="assign"></a>  deque::assign
 
 Erases elements from a deque and copies a new set of elements to the target deque.
 
@@ -232,7 +232,7 @@ int main()
 d1 = 5678c1 =102030c1 =5060c1 =4444444
 ```
 
-##  <a name="at"></a>  deque::at
+## <a name="at"></a>  deque::at
 
 Returns a reference to the element at a specified location in the deque.
 
@@ -283,7 +283,7 @@ The first element is 10
 The second element is 20
 ```
 
-##  <a name="back"></a>  deque::back
+## <a name="back"></a>  deque::back
 
 Returns a reference to the last element of the deque.
 
@@ -332,7 +332,7 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10
 ```
 
-##  <a name="begin"></a>  deque::begin
+## <a name="begin"></a>  deque::begin
 
 Returns an iterator addressing the first element in the deque.
 
@@ -384,7 +384,7 @@ The first element of c1 is 1
 The first element of c1 is now 20
 ```
 
-##  <a name="cbegin"></a>  deque::cbegin
+## <a name="cbegin"></a>  deque::cbegin
 
 Returns a `const` iterator that addresses the first element in the range.
 
@@ -410,7 +410,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-##  <a name="cend"></a>  deque::cend
+## <a name="cend"></a>  deque::cend
 
 Returns a `const` iterator that addresses the location just beyond the last element in a range.
 
@@ -438,7 +438,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-##  <a name="clear"></a>  deque::clear
+## <a name="clear"></a>  deque::clear
 
 Erases all the elements of a deque.
 
@@ -474,7 +474,7 @@ The size of the deque is initially 3
 The size of the deque after clearing is 0
 ```
 
-##  <a name="const_iterator"></a>  deque::const_iterator
+## <a name="const_iterator"></a>  deque::const_iterator
 
 A type that provides a random-access iterator that can access and read a **const** element in the deque.
 
@@ -490,7 +490,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 See the example for [back](#back).
 
-##  <a name="const_pointer"></a>  deque::const_pointer
+## <a name="const_pointer"></a>  deque::const_pointer
 
 Provides a pointer to a `const` element in a deque.
 
@@ -502,7 +502,7 @@ typedef typename Allocator::const_pointer const_pointer;
 
 A type `const_pointer` cannot be used to modify the value of an element. An [iterator](#iterator) is more commonly used to access a deque element.
 
-##  <a name="const_reference"></a>  deque::const_reference
+## <a name="const_reference"></a>  deque::const_reference
 
 A type that provides a reference to a **const** element stored in a deque for reading and performing **const** operations.
 
@@ -546,7 +546,7 @@ The first element is 10
 The second element is 20
 ```
 
-##  <a name="const_reverse_iterator"></a>  deque::const_reverse_iterator
+## <a name="const_reverse_iterator"></a>  deque::const_reverse_iterator
 
 A type that provides a random-access iterator that can read any **const** element in the deque.
 
@@ -562,7 +562,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 See the example for [rbegin](#rbegin) for an example of how to declare and use an iterator.
 
-##  <a name="crbegin"></a>  deque::crbegin
+## <a name="crbegin"></a>  deque::crbegin
 
 Returns a const iterator to the first element in a reversed deque.
 
@@ -611,7 +611,7 @@ The first element of deque is 1.
 The first element of the reversed deque is 2.
 ```
 
-##  <a name="crend"></a>  deque::crend
+## <a name="crend"></a>  deque::crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed deque.
 
@@ -660,7 +660,7 @@ int main( )
 1
 ```
 
-##  <a name="deque"></a>  deque::deque
+## <a name="deque"></a>  deque::deque
 
 Constructs a deque of a specific size, or with elements of a specific value, or with a specific allocator, or as a copy of all or part of some other deque.
 
@@ -927,7 +927,7 @@ int main( )
 }
 ```
 
-##  <a name="difference_type"></a>  deque::difference_type
+## <a name="difference_type"></a>  deque::difference_type
 
 A type that provides the difference between two iterators that refer to elements within the same deque.
 
@@ -982,7 +982,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-##  <a name="emplace"></a>  deque::emplace
+## <a name="emplace"></a>  deque::emplace
 
 Inserts an element constructed in place into the deque at a specified position.
 
@@ -1050,7 +1050,7 @@ v1 = 10 20 30
 vv1[0] = 10 20 30
 ```
 
-##  <a name="emplace_back"></a>  deque::emplace_back
+## <a name="emplace_back"></a>  deque::emplace_back
 
 Adds an element constructed in place to the end of the deque.
 
@@ -1101,7 +1101,7 @@ New last element: 2
 Moved last element: 2
 ```
 
-##  <a name="emplace_front"></a>  deque::emplace_front
+## <a name="emplace_front"></a>  deque::emplace_front
 
 Adds an element constructed in place to the end of the deque.
 
@@ -1152,7 +1152,7 @@ New last element: 2
 Moved last element: 2
 ```
 
-##  <a name="empty"></a>  deque::empty
+## <a name="empty"></a>  deque::empty
 
 Tests if a deque is empty.
 
@@ -1189,7 +1189,7 @@ int main( )
 The deque is not empty.
 ```
 
-##  <a name="end"></a>  deque::end
+## <a name="end"></a>  deque::end
 
 Returns an iterator that addresses the location succeeding the last element in a deque.
 
@@ -1249,7 +1249,7 @@ The new next-to-last integer of c1 is 400
 The deque is now: 10 400 30
 ```
 
-##  <a name="erase"></a>  deque::erase
+## <a name="erase"></a>  deque::erase
 
 Removes an element or a range of elements in a deque from specified positions.
 
@@ -1322,7 +1322,7 @@ After erasing the first element, the deque becomes:  20 30 40 50
 After erasing all elements but the first, deque becomes: 20
 ```
 
-##  <a name="front"></a>  deque::front
+## <a name="front"></a>  deque::front
 
 Returns a reference to the first element in a deque.
 
@@ -1372,7 +1372,7 @@ The first integer of c1 is 10
 The second integer of c1 is 11
 ```
 
-##  <a name="get_allocator"></a>  deque::get_allocator
+## <a name="get_allocator"></a>  deque::get_allocator
 
 Returns a copy of the allocator object used to construct the deque.
 
@@ -1411,7 +1411,7 @@ int main( )
 }
 ```
 
-##  <a name="insert"></a>  deque::insert
+## <a name="insert"></a>  deque::insert
 
 Inserts an element or a number of elements or a range of elements into the deque at a specified position.
 
@@ -1460,7 +1460,7 @@ The first two insert functions return an iterator that points to the position wh
 
 Any insertion operation can be expensive.
 
-##  <a name="iterator"></a>  deque::iterator
+## <a name="iterator"></a>  deque::iterator
 
 A type that provides a random-access iterator that can read or modify any element in a deque.
 
@@ -1476,7 +1476,7 @@ A type **iterator** can be used to modify the value of an element.
 
 See the example for [begin](#begin).
 
-##  <a name="max_size"></a>  deque::max_size
+## <a name="max_size"></a>  deque::max_size
 
 Returns the maximum length of the deque.
 
@@ -1507,7 +1507,7 @@ int main( )
 }
 ```
 
-##  <a name="op_at"></a>  deque::operator[]
+## <a name="op_at"></a>  deque::operator[]
 
 Returns a reference to the deque element at a specified position.
 
@@ -1559,7 +1559,7 @@ The first integer of c1 is 10
 The second integer of c1 is 20
 ```
 
-##  <a name="op_eq"></a>  deque::operator=
+## <a name="op_eq"></a>  deque::operator=
 
 Replaces the elements of this deque using the elements from another deque.
 
@@ -1635,7 +1635,7 @@ int main( )
  }
 ```
 
-##  <a name="pointer"></a>  deque::pointer
+## <a name="pointer"></a>  deque::pointer
 
 Provides a pointer to an element in a [deque](../standard-library/deque-class.md).
 
@@ -1647,7 +1647,7 @@ typedef typename Allocator::pointer pointer;
 
 A type **pointer** can be used to modify the value of an element. An [iterator](#iterator) is more commonly used to access a deque element.
 
-##  <a name="pop_back"></a>  deque::pop_back
+## <a name="pop_back"></a>  deque::pop_back
 
 Deletes the element at the end of the deque.
 
@@ -1689,7 +1689,7 @@ The last element is: 2
 After deleting the element at the end of the deque, the last element is: 1
 ```
 
-##  <a name="pop_front"></a>  deque::pop_front
+## <a name="pop_front"></a>  deque::pop_front
 
 Deletes the element at the beginning of the deque.
 
@@ -1731,7 +1731,7 @@ The second element is: 2
 After deleting the element at the beginning of the deque, the first element is: 2
 ```
 
-##  <a name="push_back"></a>  deque::push_back
+## <a name="push_back"></a>  deque::push_back
 
 Adds an element to the end of the deque.
 
@@ -1752,7 +1752,7 @@ void push_back(Type&& val);
 
 If an exception is thrown, the deque is left unaltered and the exception is rethrown.
 
-##  <a name="push_front"></a>  deque::push_front
+## <a name="push_front"></a>  deque::push_front
 
 Adds an element to the beginning of the deque.
 
@@ -1809,7 +1809,7 @@ New first element: 2
 Moved first element: a
 ```
 
-##  <a name="rbegin"></a>  deque::rbegin
+## <a name="rbegin"></a>  deque::rbegin
 
 Returns an iterator to the first element in a reversed deque.
 
@@ -1885,7 +1885,7 @@ The reversed deque is: 30 20 10
 Last element in deque is now 40.
 ```
 
-##  <a name="reference"></a>  deque::reference
+## <a name="reference"></a>  deque::reference
 
 A type that provides a reference to an element stored in a deque.
 
@@ -1921,7 +1921,7 @@ The first element is 10
 The second element is 20
 ```
 
-##  <a name="rend"></a>  deque::rend
+## <a name="rend"></a>  deque::rend
 
 Returns an iterator that addresses the location succeeding the last element in a reversed deque.
 
@@ -2006,7 +2006,7 @@ The reversed deque is: 30 20 10
 The modified reversed deque is: 30 20 40
 ```
 
-##  <a name="resize"></a>  deque::resize
+## <a name="resize"></a>  deque::resize
 
 Specifies a new size for a deque.
 
@@ -2074,7 +2074,7 @@ The reduced size of c1 is: 2
 The value of the last element is now 20
 ```
 
-##  <a name="reverse_iterator"></a>  deque::reverse_iterator
+## <a name="reverse_iterator"></a>  deque::reverse_iterator
 
 A type that provides a random-access iterator that can read or modify an element in a reversed deque.
 
@@ -2090,7 +2090,7 @@ A type `reverse_iterator` is use to iterate through the deque.
 
 See the example for rbegin.
 
-##  <a name="shrink_to_fit"></a>  deque::shrink_to_fit
+## <a name="shrink_to_fit"></a>  deque::shrink_to_fit
 
 Discards excess capacity.
 
@@ -2131,7 +2131,7 @@ Current size of v1 = 1
 Current size of v1 = 1
 ```
 
-##  <a name="size"></a>  deque::size
+## <a name="size"></a>  deque::size
 
 Returns the number of elements in the deque.
 
@@ -2172,7 +2172,7 @@ The deque length is 1.
 The deque length is now 2.
 ```
 
-##  <a name="size_type"></a>  deque::size_type
+## <a name="size_type"></a>  deque::size_type
 
 A type that counts the number of elements in a deque.
 
@@ -2184,7 +2184,7 @@ typedef typename Allocator::size_type size_type;
 
 See the example for [size](#size).
 
-##  <a name="swap"></a>  deque::swap
+## <a name="swap"></a>  deque::swap
 
 Exchanges the elements of two deques.
 
@@ -2258,7 +2258,7 @@ After swapping with c3, deque c1 is: 100
 After swapping with c2, deque c1 is: 1 2 3
 ```
 
-##  <a name="value_type"></a>  deque::value_type
+## <a name="value_type"></a>  deque::value_type
 
 A type that represents the data type stored in a deque.
 

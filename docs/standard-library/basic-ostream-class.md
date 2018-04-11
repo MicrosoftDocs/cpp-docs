@@ -129,7 +129,7 @@ See the example for [basic_ofstream Class](../standard-library/basic-ofstream-cl
 
 **Namespace:** std
 
-##  <a name="basic_ostream"></a>  basic_ostream::basic_ostream
+## <a name="basic_ostream"></a>  basic_ostream::basic_ostream
 
 Constructs a `basic_ostream` object.
 
@@ -160,7 +160,7 @@ The first constructor initializes the base class by calling [init](../standard-l
 
 See the example for [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) to learn more about output streams.
 
-##  <a name="flush"></a>  basic_ostream::flush
+## <a name="flush"></a>  basic_ostream::flush
 
 Flushes the buffer.
 
@@ -195,7 +195,7 @@ int main( )
 test
 ```
 
-##  <a name="basic_ostream_operator_lt_lt"></a>  basic_ostream::operator&lt;&lt;
+## <a name="basic_ostream_operator_lt_lt"></a>  basic_ostream::operator&lt;&lt;
 
 Writes to the stream.
 
@@ -338,7 +338,7 @@ int main()
 }
 ```
 
-##  <a name="op_eq"></a>  basic_ostream::operator=
+## <a name="op_eq"></a>  basic_ostream::operator=
 
 Assigns values for the provided `basic_ostream` object parameter to this object.
 
@@ -355,7 +355,7 @@ basic_ostream& operator=(basic_ostream&& right);
 
 The member operator calls swap `(right)`.
 
-##  <a name="put"></a>  basic_ostream::put
+## <a name="put"></a>  basic_ostream::put
 
 Puts a character in a stream.
 
@@ -397,7 +397,7 @@ v
 l
 ```
 
-##  <a name="seekp"></a>  basic_ostream::seekp
+## <a name="seekp"></a>  basic_ostream::seekp
 
 Reset position in output stream.
 
@@ -456,7 +456,7 @@ int main()
 7
 ```
 
-##  <a name="sentry"></a>  basic_ostream::sentry
+## <a name="sentry"></a>  basic_ostream::sentry
 
 The nested class describes an object whose declaration structures the formatted output functions and the unformatted output functions.
 
@@ -473,7 +473,7 @@ The nested class describes an object whose declaration structures the formatted 
 
 If `uncaught_exception` returns **false** and [flags](../standard-library/ios-base-class.md#flags) **&** [unitbuf](../standard-library/ios-functions.md#unitbuf) is nonzero, the destructor calls [flush](#flush).
 
-##  <a name="swap"></a>  basic_ostream::swap
+## <a name="swap"></a>  basic_ostream::swap
 
 Exchanges the values of this `basic_ostream` object for the values of the provided `basic_ostream`.
 
@@ -490,7 +490,7 @@ void swap(basic_ostream& right);
 
 The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(right)` to exchange the contents of this object for the contents of `right`.
 
-##  <a name="tellp"></a>  basic_ostream::tellp
+## <a name="tellp"></a>  basic_ostream::tellp
 
 Report position in output stream.
 
@@ -510,7 +510,7 @@ If [fail](../standard-library/basic-ios-class.md#fail) is **false**, the member 
 
 See [seekp](#seekp) for an example using `tellp`.
 
-##  <a name="write"></a>  basic_ostream::write
+## <a name="write"></a>  basic_ostream::write
 
 Put characters in a stream.
 

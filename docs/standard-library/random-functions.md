@@ -14,7 +14,7 @@ manager: "ghogen"
 ---
 # &lt;random&gt; functions
 
-##  <a name="generate_canonical"></a>  generate_canonical
+## <a name="generate_canonical"></a>  generate_canonical
 
 Returns a floating-point value from a random sequence.
 

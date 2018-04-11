@@ -50,7 +50,7 @@ ms.workload: ["cplusplus"]
 |[transform](#transform)|[unique](#unique)|[unique_copy](#unique_copy)|
 |[upper_bound](#upper_bound)|
 
-##  <a name="adjacent_find"></a>  adjacent_find
+## <a name="adjacent_find"></a>  adjacent_find
 
 Searches for two adjacent elements that are either equal or satisfy a specified condition.
 
@@ -150,7 +150,7 @@ There are two adjacent elements where the second is twice the first.
  They have values of 10 & 20.
 ```
 
-##  <a name="all_of"></a>  all_of
+## <a name="all_of"></a>  all_of
 
 Returns `true` when a condition is present at each element in the given range.
 
@@ -181,7 +181,7 @@ Returns `true` if the condition is detected at each element in the indicated ran
 
 The template function returns `true` only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is `true`.
 
-##  <a name="any_of"></a>  any_of
+## <a name="any_of"></a>  any_of
 
 Returns `true` when a condition is present at least once in the specified range of elements.
 
@@ -214,7 +214,7 @@ The template function returns `true` only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `comp(*(first + N))` is true.
 
-##  <a name="binary_search"></a>  binary_search
+## <a name="binary_search"></a>  binary_search
 
 Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.
 
@@ -346,7 +346,7 @@ int main( )
 }
 ```
 
-##  <a name="copy"></a>  copy
+## <a name="copy"></a>  copy
 
 Assigns the values of elements from a source range to a destination range, iterating through the source sequence of elements and assigning them new positions in a forward direction.
 
@@ -439,7 +439,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```
 
-##  <a name="copy_backward"></a>  copy_backward
+## <a name="copy_backward"></a>  copy_backward
 
 Assigns the values of elements from a source range to a destination range, iterating through the source sequence of elements and assigning them new positions in a backward direction.
 
@@ -529,7 +529,7 @@ int main() {
 }
 ```
 
-##  <a name="copy_if"></a>  copy_if
+## <a name="copy_if"></a>  copy_if
 
 In a range of elements, copies the elements that are `true` for the specified condition.
 
@@ -568,7 +568,7 @@ The template function evaluates
 
 once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[ first, last )`.
 
-##  <a name="copy_n"></a>  copy_n
+## <a name="copy_n"></a>  copy_n
 
 Copies a specified number of elements.
 
@@ -599,7 +599,7 @@ Returns an output iterator where elements have been copied to. It is the same as
 
 The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.
 
-##  <a name="count"></a>  count
+## <a name="count"></a>  count
 
 Returns the number of elements in a range whose values match a specified value.
 
@@ -669,7 +669,7 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.
 ```
 
-##  <a name="count_if"></a>  count_if
+## <a name="count_if"></a>  count_if
 
 Returns the number of elements in a range whose values satisfy a specified condition.
 
@@ -743,7 +743,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-##  <a name="equal"></a>  equal
+## <a name="equal"></a>  equal
 
 Compares two ranges element by element for equality or equivalence in a sense specified by a binary predicate.
 
@@ -844,7 +844,7 @@ int main()
 
 ```
 
-##  <a name="equal_range"></a>  equal_range
+## <a name="equal_range"></a>  equal_range
 
 Given an ordered range, finds the subrange in which all elements are equivalent to a given value.
 
@@ -1011,7 +1011,7 @@ int main()
 
 ```
 
-##  <a name="fill"></a>  fill
+## <a name="fill"></a>  fill
 
 Assigns the same new value to every element in a specified range.
 
@@ -1079,7 +1079,7 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )
 ```
 
-##  <a name="fill_n"></a>  fill_n
+## <a name="fill_n"></a>  fill_n
 
 Assigns a new value to a specified number of elements in a range beginning with a particular element.
 
@@ -1159,7 +1159,7 @@ int main()
 
 ```
 
-##  <a name="find"></a>  find
+## <a name="find"></a>  find
 
 Locates the position of the first occurrence of an element in a range that has a specified value.
 
@@ -1192,7 +1192,7 @@ The `operator==` used to determine the match between an element and the specifie
 
 For a code example using `find()`, see [find_if](../standard-library/algorithm-functions.md#find_if).
 
-##  <a name="find_end"></a>  find_end
+## <a name="find_end"></a>  find_end
 
 Looks in a range for the last subsequence that is identical to a specified sequence or that is equivalent in a sense specified by a binary predicate.
 
@@ -1336,7 +1336,7 @@ There is a sequence of elements in v1 that are equivalent to those
  in v2 under the binary predicate twice and that begins at position 8.
 ```
 
-##  <a name="find_first_of"></a>  find_first_of
+## <a name="find_first_of"></a>  find_first_of
 
 Searches for the first occurrence of any of several values within a target range or for the first occurrence of any of several elements that are equivalent in a sense specified by a binary predicate to a specified set of the elements.
 
@@ -1483,7 +1483,7 @@ There is a sequence of elements in v1 that are equivalent
  and the first one begins at position 2.
 ```
 
-##  <a name="find_if"></a>  find_if
+## <a name="find_if"></a>  find_if
 
 Locates the position of the first occurrence of an element in a range that satisfies a specified condition.
 
@@ -1600,7 +1600,7 @@ int main()
 
 ```
 
-##  <a name="find_if_not"></a>  find_if_not
+## <a name="find_if_not"></a>  find_if_not
 
 Returns the first element in the indicated range that does not satisfy a condition.
 
@@ -1633,7 +1633,7 @@ This template function is a generalization of the algorithm [find](../standard-l
 
 For a code example readily adaptable to `find_if_not()`, see [find_if](../standard-library/algorithm-functions.md#find_if).
 
-##  <a name="for_each"></a>  for_each
+## <a name="for_each"></a>  for_each
 
 Applies a specified function object to each element in a forward order within a range and returns the function object.
 
@@ -1781,7 +1781,7 @@ The average of the elements of v1 is:
  Average ( v1mod2 ) = 10.
 ```
 
-##  <a name="generate"></a>  generate
+## <a name="generate"></a>  generate
 
 Assigns the values generated by a function object to each element in a range.
 
@@ -1855,7 +1855,7 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).
 ```
 
-##  <a name="generate_n"></a>  generate_n
+## <a name="generate_n"></a>  generate_n
 
 Assigns the values generated by a function object to a specified number of elements in a range and returns to the position one past the last assigned value.
 
@@ -1930,7 +1930,7 @@ int main()
 
 ```
 
-##  <a name="includes"></a>  includes
+## <a name="includes"></a>  includes
 
 Tests whether one sorted range contains all the elements contained in a second sorted range, where the ordering or equivalence criterion between elements may be specified by a binary predicate.
 
@@ -2135,7 +2135,7 @@ At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is  not contained under mod_lesser in vector v3a.
 ```
 
-##  <a name="inplace_merge"></a>  inplace_merge
+## <a name="inplace_merge"></a>  inplace_merge
 
 Combines the elements from two consecutive sorted ranges into a single sorted range, where the ordering criterion may be specified by a binary predicate.
 
@@ -2287,7 +2287,7 @@ Merged inplace with binary predicate mod_lesser specified,
  vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 ```
 
-##  <a name="is_heap"></a>  is_heap
+## <a name="is_heap"></a>  is_heap
 
 Returns `true` if the elements in the specified range form a heap.
 
@@ -2327,7 +2327,7 @@ The second template function returns
 
 `is_heap_until` `(`  `first` `,`  `last` `,`  `comp` `) ==`  `last`.
 
-##  <a name="is_heap_until"></a>  is_heap_until
+## <a name="is_heap_until"></a>  is_heap_until
 
 Returns an iterator positioned at the first element in the range [ `begin`, `end`) that does not satisfy the heap ordering condition, or `end` if the range forms a heap.
 
@@ -2365,7 +2365,7 @@ The first template function returns the last iterator `next` in `[ begin , end ]
 
 The second template function behaves the same as the first, except that it uses the predicate `compare` instead of `std::less<>` as the heap ordering condition.
 
-##  <a name="is_partitioned"></a>  is_partitioned
+## <a name="is_partitioned"></a>  is_partitioned
 
 Returns `true` if all the elements in the given range that test `true` for a condition come before any elements that test `false`.
 
@@ -2396,7 +2396,7 @@ Returns true when all of the elements in the given range that test `true` for a 
 
 The template function returns `true` only if all elements in `[` `first ,` `last )` are partitioned by `comp`; that is, all elements `X` in `[` `first ,` `last )` for which `comp (X)` is true occur before all elements `Y` for which `comp (Y)` is `false`.
 
-##  <a name="is_permutation"></a>  is_permutation
+## <a name="is_permutation"></a>  is_permutation
 
 Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range will not detect differences if the second range is longer than the first range, and will result in undefined behavior if the second range is shorter than the first range.
 
@@ -2517,7 +2517,7 @@ int main()
 
 ```
 
-##  <a name="is_sorted"></a>  is_sorted
+## <a name="is_sorted"></a>  is_sorted
 
 Returns `true` if the elements in the specified range are in sorted order.
 
@@ -2551,7 +2551,7 @@ The first template function returns [is_sorted_until](http://msdn.microsoft.com/
 
 The second template function returns `is_sorted_until( first, last , comp ) == last`. The `comp` predicate function performs the order comparison.
 
-##  <a name="is_sorted_until"></a>  is_sorted_until
+## <a name="is_sorted_until"></a>  is_sorted_until
 
 Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.
 
@@ -2592,7 +2592,7 @@ The first template function returns the last iterator `next` in `[` `first ,` `l
 
 The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp (X, Y)`.
 
-##  <a name="iter_swap"></a>  iter_swap
+## <a name="iter_swap"></a>  iter_swap
 
 Exchanges two values referred to by a pair of specified iterators.
 
@@ -2749,7 +2749,7 @@ After exchanging first elements,
  & deque deq2 is: deq2 = ( 0 5 ).
 ```
 
-##  <a name="lexicographical_compare"></a>  lexicographical_compare
+## <a name="lexicographical_compare"></a>  lexicographical_compare
 
 Compares element by element between two sequences to determine which is lesser of the two.
 
@@ -2897,7 +2897,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.
 ```
 
-##  <a name="lower_bound"></a>  lower_bound
+## <a name="lower_bound"></a>  lower_bound
 
 Finds the position of the first element in an ordered range that has a value greater than or equivalent to a specified value, where the ordering criterion may be specified by a binary predicate.
 
@@ -3038,7 +3038,7 @@ int main( )
 
 ```
 
-##  <a name="make_heap"></a>  make_heap
+## <a name="make_heap"></a>  make_heap
 
 Converts elements from a specified range into a heap in which the first element is the largest and for which a sorting criterion may be specified with a binary predicate.
 
@@ -3121,7 +3121,7 @@ int main() {
 }
 ```
 
-##  <a name="max"></a>  max
+## <a name="max"></a>  max
 
 Compares two objects and returns the larger of the two, where the ordering criterion may be specified by a binary predicate.
 
@@ -3338,7 +3338,7 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).
 ```
 
-##  <a name="max_element"></a>  max_element
+## <a name="max_element"></a>  max_element
 
 Finds the first occurrence of largest element in a specified range where the ordering criterion may be specified by a binary predicate.
 
@@ -3472,7 +3472,7 @@ int main( )
 }
 ```
 
-##  <a name="merge"></a>  merge
+## <a name="merge"></a>  merge
 
 Combines all of the elements from two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -3646,7 +3646,7 @@ int main() {
 }
 ```
 
-##  <a name="min"></a>  min
+## <a name="min"></a>  min
 
 Compares two objects and returns the lesser of the two, where the ordering criterion may be specified by a binary predicate.
 
@@ -3861,7 +3861,7 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 ```
 
-##  <a name="min_element"></a>  min_element
+## <a name="min_element"></a>  min_element
 
 Finds the first occurrence of smallest element in a specified range where the ordering criterion may be specified by a binary predicate.
 
@@ -4005,7 +4005,7 @@ The smallest element in v1 under the mod_lesser
  binary predicate is: 0
 ```
 
-##  <a name="minmax_element"></a>  minmax_element
+## <a name="minmax_element"></a>  minmax_element
 
 Performs the work performed by `min_element` and `max_element` in one call.
 
@@ -4056,7 +4056,7 @@ The second template function behaves the same, except that it replaces `operator
 
 If the sequence is non-empty, the function performs at most `3 * (last - first - 1) / 2` comparisons.
 
-##  <a name="minmax"></a>  minmax
+## <a name="minmax"></a>  minmax
 
 Compares two input parameters and returns them as a pair, in order of lesser to greater.
 
@@ -4109,7 +4109,7 @@ The remaining template functions behave the same, except that they replace the `
 
 The function performs exactly one comparison.
 
-##  <a name="mismatch"></a>  mismatch
+## <a name="mismatch"></a>  mismatch
 
 Compares two ranges element by element and locates the first position where a difference occurs.
 
@@ -4276,7 +4276,7 @@ Press a key
 
 ```
 
-##  <a name="alg_move"></a>  &lt;alg&gt; move
+## <a name="alg_move"></a>  &lt;alg&gt; move
 
 Move elements associated with a specified range.
 
@@ -4304,7 +4304,7 @@ template<class InputIterator, class OutputIterator>
 
 The template function evaluates `*(dest + N) = move(*(first + N))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and `first` designate regions of storage, `dest` must not be in the range `[first, last)`.
 
-##  <a name="move_backward"></a>  move_backward
+## <a name="move_backward"></a>  move_backward
 
 Moves the elements of one iterator to another. The move starts with the last element in a specified range, and ends with the first element in that range.
 
@@ -4334,7 +4334,7 @@ The template function evaluates `*(destEnd - N - 1) = move(*(last - N - 1))` onc
 
 `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.
 
-##  <a name="next_permutation"></a>  next_permutation
+## <a name="next_permutation"></a>  next_permutation
 
 Reorders the elements in a range so that the original ordering is replaced by the lexicographically next greater permutation if it exists, where the sense of next may be specified with a binary predicate.
 
@@ -4509,7 +4509,7 @@ After another next_permutation of vector v1,
  v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
-##  <a name="nth_element"></a>  nth_element
+## <a name="nth_element"></a>  nth_element
 
 Partitions a range of elements, correctly locating the                 *n*th element of the sequence in the range so that all the elements in front of it are less than or equal to it and all the elements that follow it in the sequence are greater than or equal to it.
 
@@ -4612,7 +4612,7 @@ int main() {
 }
 ```
 
-##  <a name="none_of"></a>  none_of
+## <a name="none_of"></a>  none_of
 
 Returns `true` when a condition is never present among elements in the given range.
 
@@ -4640,7 +4640,7 @@ Returns `true` if the condition is not detected at least once in the indicated r
 
 The template function returns `true` only if, for some `N` in the range `[0, last - first)`, the predicate `comp(*(first + N))` is always `false`.
 
-##  <a name="partial_sort"></a>  partial_sort
+## <a name="partial_sort"></a>  partial_sort
 
 Arranges a specified number of the smaller elements in a range into a nondescending order or according to an ordering criterion specified by a binary predicate.
 
@@ -4755,7 +4755,7 @@ Partially resorted (UDgreater) vector:
  v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
-##  <a name="partial_sort_copy"></a>  partial_sort_copy
+## <a name="partial_sort_copy"></a>  partial_sort_copy
 
 Copies elements from a source range into a destination range where the source elements are ordered by either less than or another specified binary predicate.
 
@@ -4879,7 +4879,7 @@ int main() {
 }
 ```
 
-##  <a name="partition"></a>  partition
+## <a name="partition"></a>  partition
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it.
 
@@ -4954,7 +4954,7 @@ int main( ) {
 }
 ```
 
-##  <a name="partition_copy"></a>  partition_copy
+## <a name="partition_copy"></a>  partition_copy
 
 Copies elements for which a condition is `true` to one destination, and for which the condition is `false` to another. The elements must come from a specified range.
 
@@ -4991,7 +4991,7 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
 
 The template function copies each element `X` in `[first,last)` to `*dest1++` if `_Pred(X)` is true, or to `*dest2++` if not. It returns `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.
 
-##  <a name="partition_point"></a>  partition_point
+## <a name="partition_point"></a>  partition_point
 
 Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.
 
@@ -5023,7 +5023,7 @@ Returns a `ForwardIterator` that refers to the first element that does not fulfi
 
 The template function finds the first iterator `it` in `[first, last)` for which `comp(*it)` is `false`. The sequence must be ordered by `comp`.
 
-##  <a name="pop_heap"></a>  pop_heap
+## <a name="pop_heap"></a>  pop_heap
 
 Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.
 
@@ -5127,7 +5127,7 @@ int main( )  {
 }
 ```
 
-##  <a name="prev_permutation"></a>  prev_permutation
+## <a name="prev_permutation"></a>  prev_permutation
 
 Reorders the elements in a range so that the original ordering is replaced by the lexicographically previous greater permutation if it exists, where the sense of previous may be specified with a binary predicate.
 
@@ -5302,7 +5302,7 @@ After another prev_permutation of vector v1,
  v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
-##  <a name="push_heap"></a>  push_heap
+## <a name="push_heap"></a>  push_heap
 
 Adds an element that is at the end of a range to an existing heap consisting of the prior elements in the range.
 
@@ -5411,11 +5411,11 @@ int main( ) {
 }
 ```
 
-##  <a name="random_shuffle"></a>  random_shuffle
+## <a name="random_shuffle"></a>  random_shuffle
 
 The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting  [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/p/?linkid=397954).
 
-##  <a name="remove"></a>  remove
+## <a name="remove"></a>  remove
 
 Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.
 
@@ -5498,7 +5498,7 @@ int main( ) {
 }
 ```
 
-##  <a name="remove_copy"></a>  remove_copy
+## <a name="remove_copy"></a>  remove_copy
 
 Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.
 
@@ -5581,7 +5581,7 @@ int main() {
 }
 ```
 
-##  <a name="remove_copy_if"></a>  remove_copy_if
+## <a name="remove_copy_if"></a>  remove_copy_if
 
 Copies elements from a source range to a destination range, except that satisfying a predicate are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.
 
@@ -5673,7 +5673,7 @@ int main() {
 }
 ```
 
-##  <a name="remove_if"></a>  remove_if
+## <a name="remove_if"></a>  remove_if
 
 Eliminates elements that satisfy a predicate from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.
 
@@ -5760,7 +5760,7 @@ int main( ) {
 }
 ```
 
-##  <a name="replace"></a>  replace
+## <a name="replace"></a>  replace
 
 Examines each element in a range and replaces it if it matches a specified value.
 
@@ -5831,7 +5831,7 @@ int main( ) {
 }
 ```
 
-##  <a name="replace_copy"></a>  replace_copy
+## <a name="replace_copy"></a>  replace_copy
 
 Examines each element in a source range and replaces it if it matches a specified value while copying the result into a new destination range.
 
@@ -5933,7 +5933,7 @@ int main( ) {
 }
 ```
 
-##  <a name="replace_copy_if"></a>  replace_copy_if
+## <a name="replace_copy_if"></a>  replace_copy_if
 
 Examines each element in a source range and replaces it if it satisfies a specified predicate while copying the result into a new destination range.
 
@@ -6043,7 +6043,7 @@ int main( ) {
 }
 ```
 
-##  <a name="replace_if"></a>  replace_if
+## <a name="replace_if"></a>  replace_if
 
 Examines each element in a range and replaces it if it satisfies a specified predicate.
 
@@ -6123,7 +6123,7 @@ int main( ) {
 }
 ```
 
-##  <a name="reverse"></a>  reverse
+## <a name="reverse"></a>  reverse
 
 Reverses the order of the elements within a range.
 
@@ -6187,7 +6187,7 @@ The modified vector v1 with values reversed is:
  ( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
-##  <a name="reverse_copy"></a>  reverse_copy
+## <a name="reverse_copy"></a>  reverse_copy
 
 Reverses the order of the elements within a source range while copying them into a destination range
 
@@ -6259,7 +6259,7 @@ int main( ) {
 }
 ```
 
-##  <a name="rotate"></a>  rotate
+## <a name="rotate"></a>  rotate
 
 Exchanges the elements in two adjacent ranges.
 
@@ -6361,7 +6361,7 @@ After the rotation of a single deque element to the back,
  d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-##  <a name="rotate_copy"></a>  rotate_copy
+## <a name="rotate_copy"></a>  rotate_copy
 
 Exchanges the elements in two adjacent ranges within a source range and copies the result to a destination range.
 
@@ -6458,7 +6458,7 @@ int main() {
 }
 ```
 
-##  <a name="search"></a>  search
+## <a name="search"></a>  search
 
 Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.
 
@@ -6607,7 +6607,7 @@ There is a sequence of elements in v1 that are equivalent
  and the first one begins at position 2.
 ```
 
-##  <a name="search_n"></a>  search_n
+## <a name="search_n"></a>  search_n
 
 Searches for the first subsequence in a range that of a specified number of elements having a particular value or a relation to that value as specified by a binary predicate.
 
@@ -6741,7 +6741,7 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
  predicate one_half in v1 and the first one begins at position 15.
 ```
 
-##  <a name="set_difference"></a>  set_difference
+## <a name="set_difference"></a>  set_difference
 
 Unites all of the elements that belong to one sorted source range, but not to a second sorted source range, into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -6921,7 +6921,7 @@ int main( )
 }
 ```
 
-##  <a name="set_intersection"></a>  set_intersection
+## <a name="set_intersection"></a>  set_intersection
 
 Unites all of the elements that belong to both sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -7095,7 +7095,7 @@ int main() {
 }
 ```
 
-##  <a name="set_symmetric_difference"></a>  set_symmetric_difference
+## <a name="set_symmetric_difference"></a>  set_symmetric_difference
 
 Unites all of the elements that belong to one, but not both, of the sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -7276,7 +7276,7 @@ int main( )
 }
 ```
 
-##  <a name="set_union"></a>  set_union
+## <a name="set_union"></a>  set_union
 
 Unites all of the elements that belong to at least one of two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -7456,7 +7456,7 @@ int main( )
 }
 ```
 
-##  <a name="shuffle"></a>  std::shuffle
+## <a name="shuffle"></a>  std::shuffle
 
 Shuffles (rearranges) elements for a given range by using a random number generator.
 
@@ -7482,7 +7482,7 @@ void shuffle(RandomAccessIterator first,
 
 For more information, and a code sample that uses `shuffle()`, see [\<random>](../standard-library/random.md).
 
-##  <a name="sort"></a>  sort
+## <a name="sort"></a>  sort
 
 Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate.
 
@@ -7587,7 +7587,7 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```
 
-##  <a name="sort_heap"></a>  sort_heap
+## <a name="sort_heap"></a>  sort_heap
 
 Converts a heap into a sorted range.
 
@@ -7683,7 +7683,7 @@ int main() {
 }
 ```
 
-##  <a name="stable_partition"></a>  stable_partition
+## <a name="stable_partition"></a>  stable_partition
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it, preserving the relative order of equivalent elements.
 
@@ -7762,7 +7762,7 @@ int main( ) {
 }
 ```
 
-##  <a name="stable_sort"></a>  stable_sort
+## <a name="stable_sort"></a>  stable_sort
 
 Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate and preserves the relative ordering of equivalent elements.
 
@@ -7864,7 +7864,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 The first override exchanges the values of two objects. The second override exchanges the values between two arrays of objects.
 
@@ -7948,7 +7948,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```
 
-##  <a name="swap_ranges"></a>  swap_ranges
+## <a name="swap_ranges"></a>  swap_ranges
 
 Exchanges the elements of one range with the elements of another, equal sized range.
 
@@ -8043,7 +8043,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-##  <a name="transform"></a>  transform
+## <a name="transform"></a>  transform
 
 Applies a specified function object to each element in a source range or to a pair of elements from two source ranges and copies the return values of the function object into a destination range.
 
@@ -8180,7 +8180,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
  v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-##  <a name="unique"></a>  unique
+## <a name="unique"></a>  unique
 
 Removes duplicate elements that are adjacent to each other in a specified range.
 
@@ -8314,7 +8314,7 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
 
-##  <a name="unique_copy"></a>  unique_copy
+## <a name="unique_copy"></a>  unique_copy
 
 Copies elements from a source range into a destination range except for the duplicate elements that are adjacent to each other.
 
@@ -8431,7 +8431,7 @@ int main() {
 }
 ```
 
-##  <a name="upper_bound"></a>  upper_bound
+## <a name="upper_bound"></a>  upper_bound
 
 Finds the position of the first element in an ordered range that has a value that is greater than a specified value, where the ordering criterion may be specified by a binary predicate.
 

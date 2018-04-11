@@ -20,7 +20,7 @@ helpviewer_keywords: ["std::operator!= (list)", "std::operator&gt; (list)", "std
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
 |[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests if the list object on the left side of the operator is not equal to the list object on the right side.
 
@@ -71,7 +71,7 @@ Lists not equal.
 *\
 ```
 
-##  <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a>  operator&lt;
 
 Tests if the list object on the left side of the operator is less than the list object on the right side.
 
@@ -126,7 +126,7 @@ List c1 is less than list c2.
 *\
 ```
 
-##  <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a>  operator&lt;=
 
 Tests if the list object on the left side of the operator is less than or equal to the list object on the right side.
 
@@ -181,7 +181,7 @@ List c1 is less than or equal to list c2.
 *\
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests if the list object on the left side of the operator is equal to the list object on the right side.
 
@@ -232,7 +232,7 @@ The lists are equal.
 *\
 ```
 
-##  <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a>  operator&gt;
 
 Tests if the list object on the left side of the operator is greater than the list object on the right side.
 
@@ -287,7 +287,7 @@ List c1 is greater than list c2.
 *\
 ```
 
-##  <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a>  operator&gt;=
 
 Tests if the list object on the left side of the operator is greater than or equal to the list object on the right side.
 

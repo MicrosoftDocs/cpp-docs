@@ -23,7 +23,7 @@ A binary predicate that performs the less-than-or-equal-to operation ( `operator
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct less_equal : public binary_function <Type, Type, bool>
 {
@@ -35,7 +35,7 @@ template <>
 struct less_equal<void>
 {
   template <class T, class U>
-  auto operator()(T&& Left, U&& Right) const`
+  auto operator()(T&& Left, U&& Right) const
     -> decltype(std::forward<T>(Left) <= std::forward<U>(Right));
 };
 ```

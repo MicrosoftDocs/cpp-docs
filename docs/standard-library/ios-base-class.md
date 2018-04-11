@@ -126,7 +126,7 @@ An object of class ios_base also stores stream state information, in an object o
 
 **Namespace:** std
 
-##  <a name="event"></a>  ios_base::event
+## <a name="event"></a>  ios_base::event
 
 Specifies event types.
 
@@ -151,7 +151,7 @@ The type is an enumerated type that describes an object that can store the callb
 
 See [register_callback](#register_callback) for an example.
 
-##  <a name="event_callback"></a>  ios_base::event_callback
+## <a name="event_callback"></a>  ios_base::event_callback
 
 Describes a function passed to [register_call](#register_callback).
 
@@ -181,7 +181,7 @@ The type describes a pointer to a function that can be registered with [register
 
 See [register_call](#register_callback) for an example that uses `event_callback`.
 
-##  <a name="failure"></a>  ios_base::failure
+## <a name="failure"></a>  ios_base::failure
 
 The class `failure` defines the base class for the types of all objects thrown as exceptions, by functions in the `iostreams` library, to report errors detected during stream buffer operations.
 
@@ -233,7 +233,7 @@ int main ( )
 Caught an exception: ios_base::failbit set
 ```
 
-##  <a name="flags"></a>  ios_base::flags
+## <a name="flags"></a>  ios_base::flags
 
 Sets or returns the current flag settings.
 
@@ -279,7 +279,7 @@ int main ( )
 16896
 ```
 
-##  <a name="fmtflags"></a>  ios_base::fmtflags
+## <a name="fmtflags"></a>  ios_base::fmtflags
 
 Constants to specify the appearance of output.
 
@@ -355,7 +355,7 @@ In addition, several useful values are:
 
 For examples of functions that modify these format flags, see [\<iomanip>](../standard-library/iomanip.md).
 
-##  <a name="getloc"></a>  ios_base::getloc
+## <a name="getloc"></a>  ios_base::getloc
 
 Returns the stored locale object.
 
@@ -385,7 +385,7 @@ int main( )
 C
 ```
 
-##  <a name="imbue"></a>  ios_base::imbue
+## <a name="imbue"></a>  ios_base::imbue
 
 Changes the locale.
 
@@ -410,7 +410,7 @@ The member function stores `_Loc` in the locale object and then reports the call
 
 See [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) for a sample.
 
-##  <a name="init"></a>  ios_base::Init
+## <a name="init"></a>  ios_base::Init
 
 Creates the standard iostream objects when constructed.
 
@@ -422,7 +422,7 @@ class Init { };
 
 The nested class describes an object whose construction ensures that the standard iostreams objects are properly constructed, even before the execution of a constructor for an arbitrary static object.
 
-##  <a name="ios_base"></a>  ios_base::ios_base
+## <a name="ios_base"></a>  ios_base::ios_base
 
 Constructs ios_base objects.
 
@@ -434,7 +434,7 @@ ios_base();
 
 The (protected) constructor does nothing. A later call to **basic_ios::**[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for template class [basic_ios](../standard-library/basic-ios-class.md).
 
-##  <a name="iostate"></a>  ios_base::iostate
+## <a name="iostate"></a>  ios_base::iostate
 
 The type of constants that describe the state of a stream.
 
@@ -462,7 +462,7 @@ The type is a bitmask type that describes an object that can store stream state 
 
 In addition, a useful value is `goodbit`, where none of the previously mentioned bits are set ( `goodbit` is guaranteed to be zero).
 
-##  <a name="iword"></a>  ios_base::iword
+## <a name="iword"></a>  ios_base::iword
 
 Assigns a value to be stored as an `iword`.
 
@@ -487,7 +487,7 @@ To obtain a unique index, for use across all objects of type `ios_base`, call [x
 
 See [xalloc](#xalloc) for a sample of how to use `iword`.
 
-##  <a name="openmode"></a>  ios_base::openmode
+## <a name="openmode"></a>  ios_base::openmode
 
 Describes how to interact with a stream.
 
@@ -537,7 +537,7 @@ int main ( )
 }
 ```
 
-##  <a name="op_eq"></a>  ios_base::operator=
+## <a name="op_eq"></a>  ios_base::operator=
 
 The assignment operator for ios_base objects.
 
@@ -560,7 +560,7 @@ The operator copies the stored formatting information, making a new copy of any 
 
 This operator is only used by classes derived from `ios_base`.
 
-##  <a name="precision"></a>  ios_base::precision
+## <a name="precision"></a>  ios_base::precision
 
 Specifies the number of digits to display in a floating-point number.
 
@@ -606,7 +606,7 @@ int main( )
 31.312
 ```
 
-##  <a name="pword"></a>  ios_base::pword
+## <a name="pword"></a>  ios_base::pword
 
 Assigns a value to be stored as a `pword`.
 
@@ -631,7 +631,7 @@ To obtain a unique index, for use across all objects of type `ios_base`, call [x
 
 See [xalloc](#xalloc) for an example of using `pword`.
 
-##  <a name="register_callback"></a>  ios_base::register_callback
+## <a name="register_callback"></a>  ios_base::register_callback
 
 Specifies a callback function.
 
@@ -739,7 +739,7 @@ in callback2
 an erase event
 ```
 
-##  <a name="seekdir"></a> ios_base::seekdir
+## <a name="seekdir"></a> ios_base::seekdir
 
 Specifies starting point for offset operations.
 
@@ -793,7 +793,7 @@ int main ( )
 }
 ```
 
-##  <a name="setf"></a> ios_base::setf
+## <a name="setf"></a> ios_base::setf
 
 Sets the specified flags.
 
@@ -847,7 +847,7 @@ int main( )
 }
 ```
 
-##  <a name="sync_with_stdio"></a> ios_base::sync_with_stdio
+## <a name="sync_with_stdio"></a> ios_base::sync_with_stdio
 
 Ensures that iostream and C run-time library operations occur in the order that they appear in source code.
 
@@ -870,7 +870,7 @@ static bool sync_with_stdio(
 
     The static member function stores a **stdio** sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores `_Sync` in the **stdio** sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
-##  <a name="unsetf"></a> ios_base::unsetf
+## <a name="unsetf"></a> ios_base::unsetf
 
 Causes the specified flags to be off.
 
@@ -893,7 +893,7 @@ void unsetf(
 
     See [ios_base::setf](#setf) for a sample of using `unsetf`.
 
-##  <a name="width"></a> ios_base::width
+## <a name="width"></a> ios_base::width
 
 Sets the length of the output stream.
 
@@ -938,7 +938,7 @@ int main( ) {
 0
 ```
 
-##  <a name="xalloc"></a> ios_base::xalloc
+## <a name="xalloc"></a> ios_base::xalloc
 
     Specifies that a variable is part of the stream.
 

@@ -68,7 +68,7 @@ The template class describes an object that controls insertion and extraction of
 
 **Namespace:** std
 
-##  <a name="allocator_type"></a>  basic_stringstream::allocator_type
+## <a name="allocator_type"></a>  basic_stringstream::allocator_type
 
 The type is a synonym for the template parameter `Alloc`.
 
@@ -76,7 +76,7 @@ The type is a synonym for the template parameter `Alloc`.
 typedef Alloc allocator_type;
 ```
 
-##  <a name="basic_stringstream"></a>  basic_stringstream::basic_stringstream
+## <a name="basic_stringstream"></a>  basic_stringstream::basic_stringstream
 
 Constructs an object of type `basic_stringstream`.
 
@@ -100,7 +100,7 @@ The first constructor initializes the base class by calling [basic_iostream](../
 
 The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes **sb** by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).
 
-##  <a name="rdbuf"></a>  basic_stringstream::rdbuf
+## <a name="rdbuf"></a>  basic_stringstream::rdbuf
 
 Returns the address of the stored stream buffer of type **pointer** to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.
 
@@ -116,7 +116,7 @@ The address of the stored stream buffer of type **pointer** to basic_stringbuf< 
 
 See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.
 
-##  <a name="str"></a>  basic_stringstream::str
+## <a name="str"></a>  basic_stringstream::str
 
 Sets or gets the text in a string buffer without changing the write position.
 

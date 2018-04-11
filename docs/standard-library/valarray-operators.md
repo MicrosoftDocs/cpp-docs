@@ -24,7 +24,7 @@ helpviewer_keywords: ["std::operator!= (valarray), std::operator&amp; (valarray)
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|
 |[operator^](#op_xor)|[operator|](#op_or)|[operator||](#op_lor)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests whether the corresponding elements of two equally sized valarrays are unequal or whether all the elements of a valarray are unequal a specified value.
 
@@ -119,7 +119,7 @@ The element-by-element result of the not equal comparison test is the
 *\
 ```
 
-##  <a name="op_mod"></a>  operator%
+## <a name="op_mod"></a>  operator%
 
 Obtains the remainder of dividing the corresponding elements of two equally sized valarrays or of dividing a valarray by a specified value or of dividing a specified value by a valarray.
 
@@ -202,7 +202,7 @@ The remainders from the element-by-element division is the
 *\
 ```
 
-##  <a name="op_amp"></a>  operator&amp;
+## <a name="op_amp"></a>  operator&amp;
 
 Obtains the bitwise **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
 
@@ -291,7 +291,7 @@ The element-by-element result of the bitwise operator & is the
 *\
 ```
 
-##  <a name="op_amp_amp"></a>  operator&amp;&amp;
+## <a name="op_amp_amp"></a>  operator&amp;&amp;
 
 Obtains the logical **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.
 
@@ -378,7 +378,7 @@ The element-by-element result of the logical AND operator&& is the
 *\
 ```
 
-##  <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a>  operator&gt;
 
 Tests whether the elements of one valarray are greater than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
 
@@ -469,7 +469,7 @@ The element-by-element result of the greater than comparison test is the
 *\
 ```
 
-##  <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a>  operator&gt;=
 
 Tests whether the elements of one valarray are greater than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
 
@@ -560,7 +560,7 @@ The element-by-element result of the greater than or equal test is the
 *\
 ```
 
-##  <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a>  operator&gt;&gt;
 
 Right-shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
 
@@ -647,7 +647,7 @@ The element-by-element result of the right shift is the
 *\
 ```
 
-##  <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a>  operator&lt;
 
 Tests whether the elements of one valarray are less than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value.
 
@@ -738,7 +738,7 @@ The element-by-element result of the less-than comparson test is the
 *\
 ```
 
-##  <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a>  operator&lt;=
 
 Tests whether the elements of one valarray are less than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.
 
@@ -829,7 +829,7 @@ The element-by-element result of the less than or equal test is the
 *\
 ```
 
-##  <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
 Left shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.
 
@@ -916,7 +916,7 @@ The element-by-element result of the left shift is the
 *\
 ```
 
-##  <a name="op_star"></a>  operator*
+## <a name="op_star"></a>  operator*
 
 Obtains the element-wise product between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
 
@@ -999,7 +999,7 @@ The element-by-element result of the multiplication is the
 *\
 ```
 
-##  <a name="op_add"></a>  operator+
+## <a name="op_add"></a>  operator+
 
 Obtains the element-wise sum between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
 
@@ -1082,7 +1082,7 @@ The element-by-element result of the sum is the
 *\
 ```
 
-##  <a name="operator-"></a>  operator-
+## <a name="operator-"></a>  operator-
 
 Obtains the element-wise difference between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
 
@@ -1171,7 +1171,7 @@ The element-by-element result of the difference is the
 *\
 ```
 
-##  <a name="op_div"></a>  operator/
+## <a name="op_div"></a>  operator/
 
 Obtains the element-wise quotient between corresponding elements of two equally sized valarrays or of between a valarray a specified value.
 
@@ -1260,7 +1260,7 @@ The element-by-element result of the quotient is the
 *\
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests whether the corresponding elements of two equally sized valarrays are equal or whether all the elements of a valarray are equal a specified value.
 
@@ -1351,7 +1351,7 @@ The element-by-element result of the equality comparison test is the
 *\
 ```
 
-##  <a name="op_xor"></a>  operator^
+## <a name="op_xor"></a>  operator^
 
 Obtains the bitwise exclusive `OR` ( **XOR**) between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
 
@@ -1444,7 +1444,7 @@ The element-by-element result of the bitwise XOR operator^ is the
 *\
 ```
 
-##  <a name="op_or"></a>  operator&#124;
+## <a name="op_or"></a>  operator&#124;
 
 Obtains the bitwise `OR` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.
 
@@ -1537,7 +1537,7 @@ The element-by-element result of the bitwise OR operator| is the
 *\
 ```
 
-##  <a name="op_lor"></a>  operator&#124;&#124;
+## <a name="op_lor"></a>  operator&#124;&#124;
 
 Obtains the logical `OR` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray element type.
 

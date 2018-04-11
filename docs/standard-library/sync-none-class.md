@@ -48,7 +48,7 @@ class sync_none
 
 **Namespace:** stdext
 
-##  <a name="allocate"></a>  sync_none::allocate
+## <a name="allocate"></a>  sync_none::allocate
 
 Allocates a block of memory.
 
@@ -66,7 +66,7 @@ void *allocate(std::size_t count);
 
 The member function returns `cache.allocate(count)`, where `cache` is the cache object.
 
-##  <a name="deallocate"></a>  sync_none::deallocate
+## <a name="deallocate"></a>  sync_none::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -85,7 +85,7 @@ void deallocate(void* ptr, std::size_t count);
 
 The member function calls `cache.deallocate(ptr, count)`, where `cache` represents the cache object.
 
-##  <a name="equals"></a>  sync_none::equals
+## <a name="equals"></a>  sync_none::equals
 
 Compares two caches for equality.
 

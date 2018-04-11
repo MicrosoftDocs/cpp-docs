@@ -138,7 +138,7 @@ The iterator provided by the hash_multiset class is a bidirectional iterator, bu
 
 **Namespace:** stdext
 
-##  <a name="allocator_type"></a>  hash_multiset::allocator_type
+## <a name="allocator_type"></a>  hash_multiset::allocator_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -153,7 +153,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 See example for [get_allocator](#get_allocator) for an example using `allocator_type`
 
-##  <a name="begin"></a>  hash_multiset::begin
+## <a name="begin"></a>  hash_multiset::begin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -214,7 +214,7 @@ The first element of hms1 is 1
 The first element of hms1 is now 2
 ```
 
-##  <a name="cbegin"></a>  hash_multiset::cbegin
+## <a name="cbegin"></a>  hash_multiset::cbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -261,7 +261,7 @@ int main( )
 The first element of hs1 is 1
 ```
 
-##  <a name="cend"></a>  hash_multiset::cend
+## <a name="cend"></a>  hash_multiset::cend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -309,7 +309,7 @@ int main( )
 The last element of hs1 is 3
 ```
 
-##  <a name="clear"></a>  hash_multiset::clear
+## <a name="clear"></a>  hash_multiset::clear
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -353,7 +353,7 @@ The size of the hash_multiset is initially 2.
 The size of the hash_multiset after clearing is 0.
 ```
 
-##  <a name="const_iterator"></a>  hash_multiset::const_iterator
+## <a name="const_iterator"></a>  hash_multiset::const_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -372,7 +372,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 See example for [begin](#begin) for an example using `const_iterator`.
 
-##  <a name="const_pointer"></a>  hash_multiset::const_pointer
+## <a name="const_pointer"></a>  hash_multiset::const_pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -389,7 +389,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **const** hash_multiset object.
 
-##  <a name="const_reference"></a>  hash_multiset::const_reference
+## <a name="const_reference"></a>  hash_multiset::const_reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -436,7 +436,7 @@ int main( )
 The first element in the hash_multiset is 10.
 ```
 
-##  <a name="const_reverse_iterator"></a>  hash_multiset::const_reverse_iterator
+## <a name="const_reverse_iterator"></a>  hash_multiset::const_reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -455,7 +455,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
 
-##  <a name="count"></a>  hash_multiset::count
+## <a name="count"></a>  hash_multiset::count
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -518,7 +518,7 @@ The number of elements in hms1 with a sort key of 1 is: 2.
 The number of elements in hms1 with a sort key of 2 is: 0.
 ```
 
-##  <a name="crbegin"></a>  hash_multiset::crbegin
+## <a name="crbegin"></a>  hash_multiset::crbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -570,7 +570,7 @@ int main( )
 The first element in the reversed hash_multiset is 30.
 ```
 
-##  <a name="crend"></a>  hash_multiset::crend
+## <a name="crend"></a>  hash_multiset::crend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -623,7 +623,7 @@ int main( )
 The last element in the reversed hash_multiset is 10.
 ```
 
-##  <a name="difference_type"></a>  hash_multiset::difference_type
+## <a name="difference_type"></a>  hash_multiset::difference_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -703,7 +703,7 @@ The number '20' occurs 2 times in hash_multiset hms1.
 The number of elements in the hash_multiset hms1 is 3.
 ```
 
-##  <a name="emplace"></a>  hash_multiset::emplace
+## <a name="emplace"></a>  hash_multiset::emplace
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -754,7 +754,7 @@ int main( )
 After the emplace insertion, hms3 contains a.
 ```
 
-##  <a name="emplace_hint"></a>  hash_multiset::emplace_hint
+## <a name="emplace_hint"></a>  hash_multiset::emplace_hint
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -810,7 +810,7 @@ int main( )
 After the emplace insertion, hms1 contains a.
 ```
 
-##  <a name="empty"></a>  hash_multiset::empty
+## <a name="empty"></a>  hash_multiset::empty
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -859,7 +859,7 @@ The hash_multiset hms1 is not empty.
 The hash_multiset hms2 is empty.
 ```
 
-##  <a name="end"></a>  hash_multiset::end
+## <a name="end"></a>  hash_multiset::end
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -922,7 +922,7 @@ The last element of hms1 is 3
 The last element of hms1 is now 2
 ```
 
-##  <a name="equal_range"></a>  hash_multiset::equal_range
+## <a name="equal_range"></a>  hash_multiset::equal_range
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1009,7 +1009,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The hash_multiset hms1 doesn't have an element with a key less than 40.
 ```
 
-##  <a name="erase"></a>  hash_multiset::erase
+## <a name="erase"></a>  hash_multiset::erase
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1132,7 +1132,7 @@ After another element with a key equal to that of the 2nd element
  is deleted, the hash_multiset hms3 is: 0 3.
 ```
 
-##  <a name="find"></a>  hash_multiset::find
+## <a name="find"></a>  hash_multiset::find
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1210,7 +1210,7 @@ The hash_multiset hms1 doesn't have an element with a key of 40.
 The element of hms1 with a key matching that of the last element is: 30.
 ```
 
-##  <a name="get_allocator"></a>  hash_multiset::get_allocator
+## <a name="get_allocator"></a>  hash_multiset::get_allocator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1286,7 +1286,7 @@ int main( )
 }
 ```
 
-##  <a name="hash_multiset"></a>  hash_multiset::hash_multiset
+## <a name="hash_multiset"></a>  hash_multiset::hash_multiset
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1365,7 +1365,7 @@ The last three constructors copy the range [ `First`, `Last`) of a `hash_multise
 
 The actual order of elements in a hashed set container depends on the hash function, the ordering function and the current size of the hash table and cannot, in general, be predicted as it could with the set container, where it was determined by the ordering function alone.
 
-##  <a name="insert"></a>  hash_multiset::insert
+## <a name="insert"></a>  hash_multiset::insert
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1428,7 +1428,7 @@ The third member function inserts the sequence of element values into a hash_mul
 
 Insertion can occur in amortized constant time for the hint version of insert, instead of logarithmic time, if the insertion point immediately follows `Where`.
 
-##  <a name="iterator"></a>  hash_multiset::iterator
+## <a name="iterator"></a>  hash_multiset::iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1447,7 +1447,7 @@ A type **iterator** can be used to modify the value of an element.
 
 See example for [begin](#begin) for an example of how to declare and use **iterator**.
 
-##  <a name="key_comp"></a>  hash_multiset::key_comp
+## <a name="key_comp"></a>  hash_multiset::key_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1523,7 +1523,7 @@ int main( )
 }
 ```
 
-##  <a name="key_compare"></a>  hash_multiset::key_compare
+## <a name="key_compare"></a>  hash_multiset::key_compare
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1546,7 +1546,7 @@ Note that both `key_compare` and value_compare are synonyms for the template par
 
 See example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.
 
-##  <a name="key_type"></a>  hash_multiset::key_type
+## <a name="key_type"></a>  hash_multiset::key_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1569,7 +1569,7 @@ For more information on `Key`, see the Remarks section of the [hash_multiset Cla
 
 See example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-##  <a name="lower_bound"></a>  hash_multiset::lower_bound
+## <a name="lower_bound"></a>  hash_multiset::lower_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1636,7 +1636,7 @@ int main() {
 }
 ```
 
-##  <a name="max_size"></a>  hash_multiset::max_size
+## <a name="max_size"></a>  hash_multiset::max_size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1674,7 +1674,7 @@ int main( )
 }
 ```
 
-##  <a name="op_eq"></a>  hash_multiset::operator=
+## <a name="op_eq"></a>  hash_multiset::operator=
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1736,7 +1736,7 @@ int main( )
 }
 ```
 
-##  <a name="pointer"></a>  hash_multiset::pointer
+## <a name="pointer"></a>  hash_multiset::pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1753,7 +1753,7 @@ A type **pointer** can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a multiset object.
 
-##  <a name="rbegin"></a>  hash_multiset::rbegin
+## <a name="rbegin"></a>  hash_multiset::rbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1836,7 +1836,7 @@ The reversed hash_multiset is: 30 20 10
 After the erasure, the first element in the reversed hash_multiset is 20.
 ```
 
-##  <a name="reference"></a>  hash_multiset::reference
+## <a name="reference"></a>  hash_multiset::reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1886,7 +1886,7 @@ The first element in the hash_multiset is 10.
 The first element in the hash_multiset is now 15.
 ```
 
-##  <a name="rend"></a>  hash_multiset::rend
+## <a name="rend"></a>  hash_multiset::rend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1972,7 +1972,7 @@ The reversed hash_multiset is: 30 20 10 .
 After the erasure, the last element in the reversed hash_multiset is 20.
 ```
 
-##  <a name="reverse_iterator"></a>  hash_multiset::reverse_iterator
+## <a name="reverse_iterator"></a>  hash_multiset::reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -1991,7 +1991,7 @@ A type `reverse_iterator` is use to iterate through the hash_multiset in reverse
 
 See example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-##  <a name="size"></a>  hash_multiset::size
+## <a name="size"></a>  hash_multiset::size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2038,7 +2038,7 @@ The hash_multiset length is 1.
 The hash_multiset length is now 2.
 ```
 
-##  <a name="size_type"></a>  hash_multiset::size_type
+## <a name="size_type"></a>  hash_multiset::size_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2055,7 +2055,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 See example for [size](#size) for an example of how to declare and use `size_type`
 
-##  <a name="swap"></a>  hash_multiset::swap
+## <a name="swap"></a>  hash_multiset::swap
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2129,7 +2129,7 @@ After swapping with hms2, list hms1 is: 200 100.
 After swapping with hms3, list hms1 is: 300.
 ```
 
-##  <a name="upper_bound"></a>  hash_multiset::upper_bound
+## <a name="upper_bound"></a>  hash_multiset::upper_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2208,7 +2208,7 @@ The first element of hms1
 that of the initial element of hms1 is: 20.
 ```
 
-##  <a name="value_comp"></a>  hash_multiset::value_comp
+## <a name="value_comp"></a>  hash_multiset::value_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2289,7 +2289,7 @@ vc1( 2,3 ) returns value of true, where vc1 is the function object of hms1.
 vc2( 2,3 ) returns value of false, where vc2 is the function object of hms2.
 ```
 
-##  <a name="value_compare"></a>  hash_multiset::value_compare
+## <a name="value_compare"></a>  hash_multiset::value_compare
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
@@ -2312,7 +2312,7 @@ Note that both [key_compare](#key_compare) and **value_compare** are synonyms fo
 
 See example for [value_comp](#value_comp) for an example of how to declare and use `value_compare`.
 
-##  <a name="value_type"></a>  hash_multiset::value_type
+## <a name="value_type"></a>  hash_multiset::value_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_multiset Class](../standard-library/unordered-multiset-class.md).

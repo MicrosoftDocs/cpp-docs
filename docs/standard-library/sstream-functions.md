@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|
 |[swap](#sstream_swap)|
 
-##  <a name="sstream_swap"></a>  swap
+## <a name="sstream_swap"></a>  swap
 
 Exchanges the values between two `sstream` objects.
 

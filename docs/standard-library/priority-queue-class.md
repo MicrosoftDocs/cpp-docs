@@ -87,7 +87,7 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 **Namespace:** std
 
-##  <a name="container_type"></a>  priority_queue::container_type
+## <a name="container_type"></a>  priority_queue::container_type
 
 A type that provides the base container to be adapted.
 
@@ -105,7 +105,7 @@ For more information on `Container`, see the Remarks section of the [priority_qu
 
 See the example for [priority_queue](#priority_queue) for an example of how to declare and use `container_type`.
 
-##  <a name="empty"></a>  priority_queue::empty
+## <a name="empty"></a>  priority_queue::empty
 
 Tests if a priority_queue is empty.
 
@@ -151,7 +151,7 @@ The priority_queue q1 is not empty.
 The priority_queue s2 is empty.
 ```
 
-##  <a name="pop"></a>  priority_queue::pop
+## <a name="pop"></a>  priority_queue::pop
 
 Removes the largest element of the priority_queue from the top position.
 
@@ -207,7 +207,7 @@ After a pop, the priority_queue length is 2.
 After a pop, the element at the top of the priority_queue is 20.
 ```
 
-##  <a name="priority_queue"></a>  priority_queue::priority_queue
+## <a name="priority_queue"></a>  priority_queue::priority_queue
 
 Constructs a priority_queue that is empty or that is a copy of a range of a base container object or of another priority_queue.
 
@@ -366,7 +366,7 @@ int main( )
 }
 ```
 
-##  <a name="push"></a>  priority_queue::push
+## <a name="push"></a>  priority_queue::push
 
 Adds an element to the priority queue based on the priority of the element from operator<.
 
@@ -415,7 +415,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.
 ```
 
-##  <a name="size"></a>  priority_queue::size
+## <a name="size"></a>  priority_queue::size
 
 Returns the number of elements in the priority_queue.
 
@@ -456,7 +456,7 @@ The priority_queue length is 1.
 The priority_queue length is now 2.
 ```
 
-##  <a name="size_type"></a>  priority_queue::size_type
+## <a name="size_type"></a>  priority_queue::size_type
 
 An unsigned integer type that can represent the number of elements in a priority_queue.
 
@@ -472,7 +472,7 @@ The type is a synonym for the `size_type` of the base container adapted by the p
 
 See the example for [size](#size) for an example of how to declare and use `size_type`.
 
-##  <a name="top"></a>  priority_queue::top
+## <a name="top"></a>  priority_queue::top
 
 Returns a const reference to the largest element at the top of the priority_queue.
 
@@ -520,7 +520,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.
 ```
 
-##  <a name="value_type"></a>  priority_queue::value_type
+## <a name="value_type"></a>  priority_queue::value_type
 
 A type that represents the type of object stored as an element in a priority_queue.
 

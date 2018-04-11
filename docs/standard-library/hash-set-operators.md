@@ -19,7 +19,7 @@ manager: "ghogen"
 |[operator!=](#op_neq)|[operator!= (hash_multiset)](#op_neq_hash_multiset)|[operator==](#op_eq_eq)|
 |[operator== (hash_multiset)](#op_eq_eq_hash_multiset)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -87,7 +87,7 @@ The hash_sets hs1 and hs2 are not equal.
 The hash_sets hs1 and hs3 are equal.
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -153,7 +153,7 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.
 ```
 
-##  <a name="neq_hash_multiset"></a>  operator!= (hash_multiset)
+## <a name="neq_hash_multiset"></a>  operator!= (hash_multiset)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -219,7 +219,7 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.
 ```
 
-##  <a name="eq_eq_hash_multiset"></a>  operator== (hash_multiset)
+## <a name="eq_eq_hash_multiset"></a>  operator== (hash_multiset)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).

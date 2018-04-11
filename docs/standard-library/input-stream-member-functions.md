@@ -32,7 +32,7 @@ Input stream member functions are used for disk input. The member functions incl
 
 - [The close Function for Input Streams](#vclrftheclosefunctionforinputstreamsanchor15)
 
-##  <a name="vclrftheopenfunctionforinputstreamsanchor11"></a> The open Function for Input Streams
+## <a name="vclrftheopenfunctionforinputstreamsanchor11"></a> The open Function for Input Streams
 
 If you are using an input file stream (ifstream), you must associate that stream with a specific disk file. You can do this in the constructor, or you can use the **open** function. In either case, the arguments are the same.
 
@@ -47,7 +47,7 @@ if (ifile.fail())
 // The file does not exist ...
 ```
 
-##  <a name="vclrfthegetfunctionanchor12"></a> The get
+## <a name="vclrfthegetfunctionanchor12"></a> The get
 
 The unformatted **get** member function works like the **>>** operator with two exceptions. First, the **get** function includes white-space characters, whereas the extractor excludes white space when the **skipws** flag is set (the default). Second, the **get** function is less likely to cause a tied output stream (`cout`, for example) to be flushed.
 
@@ -82,7 +82,7 @@ int main()
 1234
 ```
 
-##  <a name="vclrfthegetlinefunctionanchor13"></a> The getline
+## <a name="vclrfthegetlinefunctionanchor13"></a> The getline
 
 The **getline** member function is similar to the **get** function. Both functions allow a third argument that specifies the terminating character for input. The default value is the newline character. Both functions reserve one character for the required terminating character. However, **get** leaves the terminating character in the stream and **getline** removes the terminating character.
 
@@ -109,7 +109,7 @@ int main( )
 test
 ```
 
-##  <a name="vclrfthereadfunctionanchor14"></a> The read
+## <a name="vclrfthereadfunctionanchor14"></a> The read
 
 The **read** member function reads bytes from a file to a specified area of memory. The length argument determines the number of bytes read. If you do not include that argument, reading stops when the physical end of file is reached or, in the case of a text-mode file, when an embedded `EOF` character is read.
 
@@ -141,7 +141,7 @@ int main()
 
 The program assumes that the data records are formatted exactly as specified by the structure with no terminating carriage-return or linefeed characters.
 
-##  <a name="vclrftheseekgandtellgfunctionsanchor7"></a> The seekg and tellg Functions
+## <a name="vclrftheseekgandtellgfunctionsanchor7"></a> The seekg and tellg Functions
 
 Input file streams keep an internal pointer to the position in the file where data is to be read next. You set this pointer with the `seekg` function, as shown here:
 
@@ -196,7 +196,7 @@ int main( )
 }
 ```
 
-##  <a name="vclrftheclosefunctionforinputstreamsanchor15"></a> The close Function for Input Streams
+## <a name="vclrftheclosefunctionforinputstreamsanchor15"></a> The close Function for Input Streams
 
 The **close** member function closes the disk file associated with an input file stream and frees the operating system file handle. The [ifstream](../standard-library/basic-ifstream-class.md) destructor closes the file for you, but you can use the **close** function if you need to open another file for the same stream object.
 

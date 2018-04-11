@@ -61,7 +61,7 @@ class packaged_task;
 
 **Namespace:** std
 
-##  <a name="get_future"></a>  packaged_task::get_future
+## <a name="get_future"></a>  packaged_task::get_future
 
 Returns an object of type `future<Ty>` that has the same *associated asynchronous state*.
 
@@ -75,7 +75,7 @@ If the `packaged_task` object does not have an associated asynchronous state, th
 
 If this method has already been called for a `packaged_task` object that has the same associated asynchronous state, the method throws a `future_error` that has an error code of `future_already_retrieved`.
 
-##  <a name="make_ready_at_thread_exit"></a>  packaged_task::make_ready_at_thread_exit
+## <a name="make_ready_at_thread_exit"></a>  packaged_task::make_ready_at_thread_exit
 
 Calls the callable object that's stored in the *associated asynchronous state* and atomically stores the returned value.
 
@@ -93,7 +93,7 @@ Otherwise, this operator calls `INVOKE(fn, args..., Ty)`, where *fn* is the call
 
 In contrast to [packaged_task::operator()](#op_call), the associated asynchronous state is not set to `ready` until after all thread-local objects in the calling thread have been destroyed. Typically, threads that are blocked on the associated asynchronous state are not unblocked until the calling thread exits.
 
-##  <a name="op_eq"></a>  packaged_task::operator=
+## <a name="op_eq"></a>  packaged_task::operator=
 
 Transfers the *associated asynchronous state* from a specified object.
 
@@ -114,7 +114,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 After the operation, `Right` no longer has an associated asynchronous state.
 
-##  <a name="op_call"></a>  packaged_task::operator()
+## <a name="op_call"></a>  packaged_task::operator()
 
 Calls the callable object that's stored in the *associated asynchronous state*, atomically stores the returned value, and sets the state to *ready*.
 
@@ -130,7 +130,7 @@ If this method or [make_ready_at_thread_exit](#make_ready_at_thread_exit) has al
 
 Otherwise, this operator calls `INVOKE(fn, args..., Ty)`, where *fn* is the callable object that's stored in the associated asynchronous state. Any returned value is stored atomically as the returned result of the associated asynchronous state, and the state is set to ready. As a result, any threads that are blocked on the associated asynchronous state become unblocked.
 
-##  <a name="op_bool"></a>  packaged_task::operator bool
+## <a name="op_bool"></a>  packaged_task::operator bool
 
 Specifies whether the object has an `associated asynchronous state`.
 
@@ -142,7 +142,7 @@ operator bool() const noexcept;
 
 `true` if the object has an associated asynchronous state; otherwise, `false`.
 
-##  <a name="packaged_task"></a>  packaged_task::packaged_task Constructor
+## <a name="packaged_task"></a>  packaged_task::packaged_task Constructor
 
 Constructs a `packaged_task` object.
 
@@ -178,7 +178,7 @@ The third constructor constructs a `packaged_task` object that has a copy of `fn
 
 The fourth constructor constructs a `packaged_task` object that has a copy of `fn` stored in its associated asynchronous state, and uses `alloc` for memory allocation.
 
-##  <a name="dtorpackaged_task_destructor"></a>  packaged_task::~packaged_task Destructor
+## <a name="dtorpackaged_task_destructor"></a>  packaged_task::~packaged_task Destructor
 
 Destroys a `packaged_task` object.
 
@@ -190,7 +190,7 @@ Destroys a `packaged_task` object.
 
 If the *associated asynchronous state* is not *ready*, the destructor stores a [future_error](../standard-library/future-error-class.md) exception that has an error code of `broken_promise` as the result in the associated asynchronous state, and any threads that are blocked on the associated asynchronous state become unblocked.
 
-##  <a name="reset"></a>  packaged_task::reset
+## <a name="reset"></a>  packaged_task::reset
 
 Uses a new *associated asynchronous state* to replace the existing associated asynchronous state.
 
@@ -202,7 +202,7 @@ void reset();
 
 In effect, this method executes `*this = packaged_task(move(fn))`, where *fn* is the function object that's stored in the associated asynchronous state for this object. Therefore, the state of the object is cleared, and [get_future](#get_future), [operator()](#op_call), and [make_ready_at_thread_exit](#make_ready_at_thread_exit) can be called as if on a newly-constructed object.
 
-##  <a name="swap"></a>  packaged_task::swap
+## <a name="swap"></a>  packaged_task::swap
 
 Exchanges the associated asynchronous state with that of a specified object.
 
@@ -215,7 +215,7 @@ void swap(packaged_task& Right) noexcept;
 `Right`
  A `packaged_task` object.
 
-##  <a name="valid"></a>  packaged_task::valid
+## <a name="valid"></a>  packaged_task::valid
 
 Specifies whether the object has an `associated asynchronous state`.
 

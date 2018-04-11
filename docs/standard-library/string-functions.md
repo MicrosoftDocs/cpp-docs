@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 |[stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|
 |[swap](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|
 
-##  <a name="getline"></a>  getline
+## <a name="getline"></a>  getline
 
 Extract strings from the input stream line-by-line.
 
@@ -140,7 +140,7 @@ int main()
 
 ```
 
-##  <a name="stod"></a>  stod
+## <a name="stod"></a>  stod
 
 Converts a character sequence to a `double`.
 
@@ -170,7 +170,7 @@ The `double` value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `double` as if by calling `strtod( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stof"></a>  stof
+## <a name="stof"></a>  stof
 
 Converts a character sequence to a float.
 
@@ -199,7 +199,7 @@ The float value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `float` as if by calling `strtof( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stoi"></a>  stoi
+## <a name="stoi"></a>  stoi
 
 Converts a character sequence to an integer.
 
@@ -235,7 +235,7 @@ The function `stoi` converts the sequence of characters in `str` to a value of t
 
 If `str.c_str() == *_Eptr`, `stoi` throws an object of type `invalid_argument`. If such a call would set `errno`, or if the returned value cannot be represented as an object of type `int`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr - str.c_str()` in `*idx`.
 
-##  <a name="stol"></a>  stol
+## <a name="stol"></a>  stol
 
 Converts a character sequence to a `long`.
 
@@ -267,7 +267,7 @@ The long-integer value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `long` as if by calling `strtol( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stold"></a>  stold
+## <a name="stold"></a>  stold
 
 Converts a character sequence to a `long double`.
 
@@ -296,7 +296,7 @@ The `long double` value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `long double` as if by calling `strtold( str.c_str(), _Eptr)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stoll"></a>  stoll
+## <a name="stoll"></a>  stoll
 
 Converts a character sequence to a `long long`.
 
@@ -328,7 +328,7 @@ The `long long` value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `long long` as if by calling `strtoll( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stoul"></a>  stoul
+## <a name="stoul"></a>  stoul
 
 Converts a character sequence to an unsigned long.
 
@@ -360,7 +360,7 @@ The unsigned long-integer value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `unsigned long` as if by calling `strtoul( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="stoull"></a>  stoull
+## <a name="stoull"></a>  stoull
 
 Converts a character sequence to an `unsigned long long`.
 
@@ -392,7 +392,7 @@ The `unsigned long long` value.
 
 The function converts the sequence of elements in `str` to a value `val` of type `unsigned long long` as if by calling `strtoull( str.c_str(), _Eptr, idx)`, where `_Eptr` is an object internal to the function. If ` str.c_str() == *_Eptr` it throws an object of type `invalid_argument`. If such a call would set `errno`, it throws an object of type `out_of_range`. Otherwise, if `idx` is not a null pointer, the function stores `*_Eptr -  str.c_str()` in `*idx` and returns `val`.
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Exchanges the arrays of characters of two strings.
 
@@ -448,7 +448,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-##  <a name="to_string"></a>  to_string
+## <a name="to_string"></a>  to_string
 
 Converts a value to a `string`.
 
@@ -496,7 +496,7 @@ The function converts `Val` to a sequence of elements stored in an array object 
 
 The function returns `string(Buf)`.
 
-##  <a name="to_wstring"></a>  to_wstring
+## <a name="to_wstring"></a>  to_wstring
 
 Converts a value to a wide string.
 

@@ -15,7 +15,7 @@ manager: "ghogen"
 # &lt;vector&gt; functions
 
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Exchanges the elements of two vectors.
 

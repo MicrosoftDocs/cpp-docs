@@ -52,7 +52,7 @@ class condition_variable;
 
 **Namespace:** std
 
-##  <a name="condition_variable"></a>  condition_variable::condition_variable Constructor
+## <a name="condition_variable"></a>  condition_variable::condition_variable Constructor
 
 Constructs a `condition_variable` object.
 
@@ -64,7 +64,7 @@ condition_variable();
 
 If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.
 
-##  <a name="native_handle"></a>  condition_variable::native_handle
+## <a name="native_handle"></a>  condition_variable::native_handle
 
 Returns the implementation-specific type that represents the condition_variable handle.
 
@@ -76,7 +76,7 @@ native_handle_type native_handle();
 
 `native_handle_type` is defined as a pointer to Concurrency Runtime internal data structures.
 
-##  <a name="notify_all"></a>  condition_variable::notify_all
+## <a name="notify_all"></a>  condition_variable::notify_all
 
 Unblocks all threads that are waiting for the `condition_variable` object.
 
@@ -84,7 +84,7 @@ Unblocks all threads that are waiting for the `condition_variable` object.
 void notify_all() noexcept;
 ```
 
-##  <a name="notify_one"></a>  condition_variable::notify_one
+## <a name="notify_one"></a>  condition_variable::notify_one
 
 Unblocks one of the threads that are waiting on the `condition_variable` object.
 
@@ -92,7 +92,7 @@ Unblocks one of the threads that are waiting on the `condition_variable` object.
 void notify_one() noexcept;
 ```
 
-##  <a name="wait"></a>  condition_variable::wait
+## <a name="wait"></a>  condition_variable::wait
 
 Blocks a thread.
 
@@ -122,7 +122,7 @@ while(!Pred())
     wait(Lck);
 ```
 
-##  <a name="wait_for"></a>  condition_variable::wait_for
+## <a name="wait_for"></a>  condition_variable::wait_for
 
 Blocks a thread, and sets a time interval after which the thread unblocks.
 
@@ -170,7 +170,7 @@ while(!Pred())
 return true;
 ```
 
-##  <a name="wait_until"></a>  condition_variable::wait_until
+## <a name="wait_until"></a>  condition_variable::wait_until
 
 Blocks a thread, and sets a maximum point in time at which the thread unblocks.
 

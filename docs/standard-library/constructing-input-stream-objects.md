@@ -24,7 +24,7 @@ If you use only the `cin` object, you do not need to construct an input stream. 
 
 - [Input String Stream Constructors](#vclrfinputstringstreamconstructorsanchor9)
 
-##  <a name="vclrfinputfilestreamconstructorsanchor8"></a> Input File Stream Constructors
+## <a name="vclrfinputfilestreamconstructorsanchor8"></a> Input File Stream Constructors
 
 There are two ways to create an input file stream:
 
@@ -44,7 +44,7 @@ There are two ways to create an input file stream:
    ifstream myFile("filename");
    ```
 
-##  <a name="vclrfinputstringstreamconstructorsanchor9"></a> Input String Stream Constructors
+## <a name="vclrfinputstringstreamconstructorsanchor9"></a> Input String Stream Constructors
 
 Input string stream constructors require the address of preallocated, preinitialized storage:
 

@@ -94,7 +94,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 **Namespace:** std
 
-##  <a name="element_type"></a>  element_type
+## <a name="element_type"></a>  element_type
 
 The type of the element.
 
@@ -131,7 +131,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-##  <a name="expired"></a>  expired
+## <a name="expired"></a>  expired
 
 Tests if ownership has expired.
 
@@ -189,7 +189,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-##  <a name="lock"></a>  lock
+## <a name="lock"></a>  lock
 
 Obtains exclusive ownership of a resource.
 
@@ -246,7 +246,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-##  <a name="op_eq"></a>  operator=
+## <a name="op_eq"></a>  operator=
 
 Replaces owned resource.
 
@@ -307,7 +307,7 @@ int main()
 *wp1.lock() == 10
 ```
 
-##  <a name="owner_before"></a>  owner_before
+## <a name="owner_before"></a>  owner_before
 
 Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.
 
@@ -328,7 +328,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 The template member function returns `true` if `*this` is `ordered before` `ptr`.
 
-##  <a name="reset"></a>  reset
+## <a name="reset"></a>  reset
 
 Releases owned resource.
 
@@ -371,7 +371,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Swaps two `weak_ptr` objects.
 
@@ -442,7 +442,7 @@ int main()
 *wp1 == 5
 ```
 
-##  <a name="use_count"></a>  use_count
+## <a name="use_count"></a>  use_count
 
 Counts number of designated `shared_ptr` objects.
 
@@ -483,7 +483,7 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-##  <a name="weak_ptr"></a>  weak_ptr
+## <a name="weak_ptr"></a>  weak_ptr
 
 Constructs a `weak_ptr`.
 

@@ -79,7 +79,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  time_get::char_type
+## <a name="char_type"></a>  time_get::char_type
 
 A type that is used to describe a character used by a locale.
 
@@ -91,7 +91,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="date_order"></a>  time_get::date_order
+## <a name="date_order"></a>  time_get::date_order
 
 Returns the date order used by a facet.
 
@@ -151,7 +151,7 @@ German_Germany.1252(day, month, year)
 English_United Kingdom.1252(day, month, year)
 ```
 
-##  <a name="do_date_order"></a>  time_get::do_date_order
+## <a name="do_date_order"></a>  time_get::do_date_order
 
 A protected virtual member function that is called to return the date order used by a facet.
 
@@ -171,7 +171,7 @@ The virtual protected member function returns a value of type **time_base::dateo
 
 See the example for [date_order](#date_order), which calls `do_date_order`.
 
-##  <a name="do_get"></a>  time_get::do_get
+## <a name="do_get"></a>  time_get::do_get
 
 Reads and converts character data to a time value. Accepts one conversion specifier and modifier.
 
@@ -268,7 +268,7 @@ The conversion specifiers are:
 
 Any other conversion specifier sets `ios_base::failbit` in `state` and returns. In this implementation, any modifier has no effect.
 
-##  <a name="do_get_date"></a>  time_get::do_get_date
+## <a name="do_get_date"></a>  time_get::do_get_date
 
 A protected virtual member function that is called to parse a string as the date produced by the *x* specifier for `strftime`.
 
@@ -319,7 +319,7 @@ The literal spaces and commas must match corresponding elements in the input seq
 
 See the example for [get_date](#get_date), which calls `do_get_date`.
 
-##  <a name="do_get_monthname"></a>  time_get::do_get_monthname
+## <a name="do_get_monthname"></a>  time_get::do_get_monthname
 
 A protected virtual member function that is called to parse a string as the name of the month.
 
@@ -362,7 +362,7 @@ The month input field is a sequence that matches the longest of a set of locale-
 
 See the example for [get_monthname](#get_monthname), which calls `do_get_monthname`.
 
-##  <a name="do_get_time"></a>  time_get::do_get_time
+## <a name="do_get_time"></a>  time_get::do_get_time
 
 A protected virtual member function that is called to parse a string as the date produced by the *X* specifier for `strftime`.
 
@@ -413,7 +413,7 @@ The literal colons must match corresponding elements in the input sequence.
 
 See the example for [get_time](#get_time), which calls `do_get_time`.
 
-##  <a name="do_get_weekday"></a>  time_get::do_get_weekday
+## <a name="do_get_weekday"></a>  time_get::do_get_weekday
 
 A protected virtual member function that is called to parse a string as the name of the day of the week.
 
@@ -456,7 +456,7 @@ The weekday input field is a sequence that matches the longest of a set of local
 
 See the example for [get_weekday](#get_weekday), which calls `do_get_weekday`.
 
-##  <a name="do_get_year"></a>  time_get::do_get_year
+## <a name="do_get_year"></a>  time_get::do_get_year
 
 A protected virtual member function that is called to parses a string as the name of the year.
 
@@ -499,7 +499,7 @@ The year input field is a sequence of decimal digits whose corresponding numeric
 
 See the example for [get_year](#get_year), which calls `do_get_year`.
 
-##  <a name="get"></a>  time_get::get
+## <a name="get"></a>  time_get::get
 
 Reads from a source of character data and converts that data to a time that is stored in a time struct. The first function accepts one conversion specifier and modifier, the second accepts several.
 
@@ -568,7 +568,7 @@ A whitespace element in the format skips past zero or more input whitespace elem
 
 Any other element in the format must match the next input element, which is skipped. A match failure sets `ios_base::failbit` in `state` and returns.
 
-##  <a name="get_date"></a>  time_get::get_date
+## <a name="get_date"></a>  time_get::get_date
 
 Parses a string as the date produced by the *x* specifier for `strftime`.
 
@@ -662,7 +662,7 @@ tm_yday: 0
 tm_isdst: 0
 ```
 
-##  <a name="get_monthname"></a>  time_get::get_monthname
+## <a name="get_monthname"></a>  time_get::get_monthname
 
 Parses a string as the name of the month.
 
@@ -754,7 +754,7 @@ tm_yday: 0
 tm_isdst: 0
 ```
 
-##  <a name="get_time"></a>  time_get::get_time
+## <a name="get_time"></a>  time_get::get_time
 
 Parses a string as the date produced by the *X* specifier for `strftime`.
 
@@ -835,7 +835,7 @@ tm_min: 13
 tm_hour: 11
 ```
 
-##  <a name="get_weekday"></a>  time_get::get_weekday
+## <a name="get_weekday"></a>  time_get::get_weekday
 
 Parses a string as the name of the day of the week.
 
@@ -912,7 +912,7 @@ time_get::get_time(mercredi) =
 tm_wday: 3
 ```
 
-##  <a name="get_year"></a>  time_get::get_year
+## <a name="get_year"></a>  time_get::get_year
 
 Parses a string as the name of the year.
 
@@ -990,7 +990,7 @@ time_get::get_year(1928) =
 tm_year: 28
 ```
 
-##  <a name="iter_type"></a>  time_get::iter_type
+## <a name="iter_type"></a>  time_get::iter_type
 
 A type that describes an input iterator.
 
@@ -1002,7 +1002,7 @@ typedef InputIterator iter_type;
 
 The type is a synonym for the template parameter **InputIterator**.
 
-##  <a name="time_get"></a>  time_get::time_get
+## <a name="time_get"></a>  time_get::time_get
 
 The constructor for objects of type `time_get`.
 

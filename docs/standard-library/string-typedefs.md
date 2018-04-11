@@ -18,7 +18,7 @@ manager: "ghogen"
 |[string](#string)|[u16string](#u16string)|[u32string](#u32string)|
 |[wstring](#wstring)|
 
-##  <a name="string"></a>  string
+## <a name="string"></a>  string
 
 A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char`.
 
@@ -40,7 +40,7 @@ basic_string<char> str("");
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
-##  <a name="u16string"></a>  u16string
+## <a name="u16string"></a>  u16string
 
 A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char16_t`.
 
@@ -54,7 +54,7 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
-##  <a name="u32string"></a>  u32string
+## <a name="u32string"></a>  u32string
 
 A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char32_t`.
 
@@ -68,7 +68,7 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
-##  <a name="wstring"></a>  wstring
+## <a name="wstring"></a>  wstring
 
 A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `wchar_t`.
 

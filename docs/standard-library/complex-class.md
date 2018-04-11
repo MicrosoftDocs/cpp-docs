@@ -79,7 +79,7 @@ Explicit specializations of template class complex exist for the three floating-
 
 **Namespace:** std
 
-##  <a name="complex"></a>  complex::complex
+## <a name="complex"></a>  complex::complex
 
 Constructs a complex number with specified real and imaginary parts or as a copy of some other complex number.
 
@@ -167,7 +167,7 @@ int main( )
 }
 ```
 
-##  <a name="imag"></a>  complex::imag
+## <a name="imag"></a>  complex::imag
 
 Extracts the imaginary component of a complex number.
 
@@ -222,7 +222,7 @@ The real part of c1 is c1.real ( ) = 4.
 The imaginary part of c1 is c1.imag ( ) = 3.
 ```
 
-##  <a name="op_star_eq"></a>  complex::operator*=
+## <a name="op_star_eq"></a>  complex::operator*=
 
 Multiplies a target complex number by a factor, which may be complex or be the same type as are the real and imaginary parts of the complex number.
 
@@ -306,7 +306,7 @@ int main() {
 }
 ```
 
-##  <a name="op_add_eq"></a>  complex::operator+=
+## <a name="op_add_eq"></a>  complex::operator+=
 
 Adds a number to a target complex number, where the number added may be complex or of the same type as are the real and imaginary parts of the complex number to which it is added.
 
@@ -409,7 +409,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-##  <a name="complex__operator-_eq"></a>  complex::operator-=
+## <a name="complex__operator-_eq"></a>  complex::operator-=
 
 Subtracts a number from a target complex number, where the number subtracted may be complex or of the same type as are the real and imaginary parts of the complex number to which it is added.
 
@@ -517,7 +517,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
 
-##  <a name="op_div_eq"></a>  complex::operator/=
+## <a name="op_div_eq"></a>  complex::operator/=
 
 Divides a target complex number by a divisor, which may be complex or be the same type as are the real and imaginary parts of the complex number.
 
@@ -621,7 +621,7 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-##  <a name="op_eq"></a>  complex::operator=
+## <a name="op_eq"></a>  complex::operator=
 
 Assigns a number to a target complex number, where the number assigned may be complex or of the same type as are the real and imaginary parts of the complex number to which it is being assigned.
 
@@ -699,7 +699,7 @@ The complex number (3, 4) assigned to the complex number cl2 is:
  cl2 = (3,4)
 ```
 
-##  <a name="real"></a>  complex::real
+## <a name="real"></a>  complex::real
 
 Gets or sets the real component of a complex number.
 
@@ -754,7 +754,7 @@ The real part of c1 is c1.real ( ) = 4.
 The imaginary part of c1 is c1.imag ( ) = 3.
 ```
 
-##  <a name="value_type"></a>  complex::value_type
+## <a name="value_type"></a>  complex::value_type
 
 A type that represents the data type used to represent the real and imaginary parts of a complex number.
 

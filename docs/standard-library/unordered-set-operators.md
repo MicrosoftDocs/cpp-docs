@@ -18,7 +18,7 @@ manager: "ghogen"
 |-|-|-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_unordered_multiset)|[operator==](#op_eq_eq_unordered_multiset)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is not equal to the unordered_set object on the right side.
 
@@ -87,7 +87,7 @@ int main()
 
 `c2 != c3: true`
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is equal to the unordered_set object on the right side.
 
@@ -156,7 +156,7 @@ int main()
 
 `c2 == c3: false`
 
-##  <a name="op_neq_unordered_multiset"></a>  operator!=
+## <a name="op_neq_unordered_multiset"></a>  operator!=
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is not equal to the unordered_multiset object on the right side.
 
@@ -228,7 +228,7 @@ int main()
 
 `c2 != c3: true`
 
-##  <a name="op_eq_eq_unordered_multiset"></a>  operator==
+## <a name="op_eq_eq_unordered_multiset"></a>  operator==
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is equal to the unordered_multiset object on the right side.
 

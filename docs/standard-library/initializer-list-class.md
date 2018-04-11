@@ -76,7 +76,7 @@ The compiler transforms braced initializer lists with homogeneous elements into 
 
 **Namespace:** std
 
-##  <a name="begin"></a>  initializer_list::begin
+## <a name="begin"></a>  initializer_list::begin
 
 Returns a pointer to the first element in an `initializer_list`.
 
@@ -90,7 +90,7 @@ A pointer to the first element of the `initializer_list`. If the list is empty, 
 
 ### Remarks
 
-##  <a name="end"></a>  initializer_list::end
+## <a name="end"></a>  initializer_list::end
 
 Returns a pointer to one past the last element in an `initializer list`.
 
@@ -102,7 +102,7 @@ constexpr const InputIterator* end() const noexcept;
 
 A pointer to one past the last element in the list. If the list is empty, this is the same as the pointer to the first element in the list.
 
-##  <a name="initializer_list"></a>  initializer_list::initializer_list
+## <a name="initializer_list"></a>  initializer_list::initializer_list
 
 Constructs an object of type `initializer_list`.
 
@@ -185,7 +185,7 @@ int main()
 c1 = 3c2 = 5 4 3 2 1c3 = 5 4 3 2 1c4 = 5 4c5 = 5 4
 ```
 
-##  <a name="size"></a>  initializer_list::size
+## <a name="size"></a>  initializer_list::size
 
 Returns the number of elements in the list.
 

@@ -114,7 +114,7 @@ The object allocates and frees storage for the sequence it controls through a st
 
 **Namespace:** std
 
-##  <a name="allocator_type"></a>  unordered_multiset::allocator_type
+## <a name="allocator_type"></a>  unordered_multiset::allocator_type
 
 The type of an allocator for managing storage.
 
@@ -153,7 +153,7 @@ int main()
 al == std::allocator() is true
 ```
 
-##  <a name="begin"></a>  unordered_multiset::begin
+## <a name="begin"></a>  unordered_multiset::begin
 
 Designates the beginning of the controlled sequence or a bucket.
 
@@ -224,7 +224,7 @@ int main()
 [a]
 ```
 
-##  <a name="bucket"></a>  unordered_multiset::bucket
+## <a name="bucket"></a>  unordered_multiset::bucket
 
 Gets the bucket number for a key value.
 
@@ -281,7 +281,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-##  <a name="bucket_count"></a>  unordered_multiset::bucket_count
+## <a name="bucket_count"></a>  unordered_multiset::bucket_count
 
 Gets the number of buckets.
 
@@ -369,7 +369,7 @@ max_load_factor() == 0.1
 
 ```
 
-##  <a name="bucket_size"></a>  unordered_multiset::bucket_size
+## <a name="bucket_size"></a>  unordered_multiset::bucket_size
 
 Gets the size of a bucket
 
@@ -426,7 +426,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-##  <a name="cbegin"></a>  unordered_multiset::cbegin
+## <a name="cbegin"></a>  unordered_multiset::cbegin
 
 Returns a `const` iterator that addresses the first element in the range.
 
@@ -452,7 +452,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-##  <a name="cend"></a>  unordered_multiset::cend
+## <a name="cend"></a>  unordered_multiset::cend
 
 Returns a `const` iterator that addresses the location just beyond the last element in a range.
 
@@ -480,7 +480,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-##  <a name="clear"></a>  unordered_multiset::clear
+## <a name="clear"></a>  unordered_multiset::clear
 
 Removes all elements.
 
@@ -548,7 +548,7 @@ size == 2
 empty() == false
 ```
 
-##  <a name="const_iterator"></a>  unordered_multiset::const_iterator
+## <a name="const_iterator"></a>  unordered_multiset::const_iterator
 
 The type of a constant iterator for the controlled sequence.
 
@@ -592,7 +592,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="const_local_iterator"></a>  unordered_multiset::const_local_iterator
+## <a name="const_local_iterator"></a>  unordered_multiset::const_local_iterator
 
 The type of a constant bucket iterator for the controlled sequence.
 
@@ -641,7 +641,7 @@ int main()
 [a]
 ```
 
-##  <a name="const_pointer"></a>  unordered_multiset::const_pointer
+## <a name="const_pointer"></a>  unordered_multiset::const_pointer
 
 The type of a constant pointer to an element.
 
@@ -688,7 +688,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="const_reference"></a>  unordered_multiset::const_reference
+## <a name="const_reference"></a>  unordered_multiset::const_reference
 
 The type of a constant reference to an element.
 
@@ -735,7 +735,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="count"></a>  unordered_multiset::count
+## <a name="count"></a>  unordered_multiset::count
 
 Finds the number of elements matching a specified key.
 
@@ -791,7 +791,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-##  <a name="difference_type"></a>  unordered_multiset::difference_type
+## <a name="difference_type"></a>  unordered_multiset::difference_type
 
 The type of a signed distance between two elements.
 
@@ -851,7 +851,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-##  <a name="emplace"></a>  unordered_multiset::emplace
+## <a name="emplace"></a>  unordered_multiset::emplace
 
 Inserts an element constructed in place (no copy or move operations are performed).
 
@@ -879,7 +879,7 @@ During the insertion, if an exception is thrown but does not occur in the contai
 
 For a code example, see [multiset::emplace](../standard-library/multiset-class.md#emplace).
 
-##  <a name="emplace_hint"></a>  unordered_multiset::emplace_hint
+## <a name="emplace_hint"></a>  unordered_multiset::emplace_hint
 
 Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.
 
@@ -910,7 +910,7 @@ During the insertion, if an exception is thrown but does not occur in the contai
 
 For a code example, see [set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-##  <a name="empty"></a>  unordered_multiset::empty
+## <a name="empty"></a>  unordered_multiset::empty
 
 Tests whether no elements are present.
 
@@ -978,7 +978,7 @@ size == 2
 empty() == false
 ```
 
-##  <a name="end"></a>  unordered_multiset::end
+## <a name="end"></a>  unordered_multiset::end
 
 Designates the end of the controlled sequence.
 
@@ -1047,7 +1047,7 @@ int main()
 [a]
 ```
 
-##  <a name="equal_range"></a>  unordered_multiset::equal_range
+## <a name="equal_range"></a>  unordered_multiset::equal_range
 
 Finds range that matches a specified key.
 
@@ -1117,7 +1117,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-##  <a name="erase"></a>  unordered_multiset::erase
+## <a name="erase"></a>  unordered_multiset::erase
 
 Removes an element or a range of elements in a unordered_multiset from specified positions or removes elements that match a specified key.
 
@@ -1157,7 +1157,7 @@ For the third member function, returns the number of elements that have been rem
 
 For a code example, see [set::erase](../standard-library/set-class.md#erase).
 
-##  <a name="find"></a>  unordered_multiset::find
+## <a name="find"></a>  unordered_multiset::find
 
 Finds an element that matches a specified key.
 
@@ -1218,7 +1218,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-##  <a name="get_allocator"></a>  unordered_multiset::get_allocator
+## <a name="get_allocator"></a>  unordered_multiset::get_allocator
 
 Gets the stored allocator object.
 
@@ -1257,7 +1257,7 @@ int main()
 al == std::allocator() is true
 ```
 
-##  <a name="hash"></a>  unordered_multiset::hash_function
+## <a name="hash"></a>  unordered_multiset::hash_function
 
 Gets the stored hash function object.
 
@@ -1296,7 +1296,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-##  <a name="hasher"></a>  unordered_multiset::hasher
+## <a name="hasher"></a>  unordered_multiset::hasher
 
 The type of the hash function.
 
@@ -1335,7 +1335,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-##  <a name="insert"></a>  unordered_multiset::insert
+## <a name="insert"></a>  unordered_multiset::insert
 
 Inserts an element or a range of elements into an unordered_multiset.
 
@@ -1413,7 +1413,7 @@ For insertion of an element constructed in place—that is, no copy or move oper
 
 For a code example, see [multiset::insert](../standard-library/multiset-class.md#insert).
 
-##  <a name="iterator"></a>  unordered_multiset::iterator
+## <a name="iterator"></a>  unordered_multiset::iterator
 
 A type that provides a constant [forward iterator](../standard-library/forward-iterator-tag-struct.md) that can read elements in an unordered_multiset.
 
@@ -1425,7 +1425,7 @@ typedef implementation-defined iterator;
 
 See the example for [begin](../standard-library/multiset-class.md#begin) for an example of how to declare and use an **iterator**.
 
-##  <a name="key_eq"></a>  unordered_multiset::key_eq
+## <a name="key_eq"></a>  unordered_multiset::key_eq
 
 Gets the stored comparison function object.
 
@@ -1466,7 +1466,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-##  <a name="key_equal"></a>  unordered_multiset::key_equal
+## <a name="key_equal"></a>  unordered_multiset::key_equal
 
 The type of the comparison function.
 
@@ -1507,7 +1507,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-##  <a name="key_type"></a>  unordered_multiset::key_type
+## <a name="key_type"></a>  unordered_multiset::key_type
 
 The type of an ordering key.
 
@@ -1562,7 +1562,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-##  <a name="load_factor"></a>  unordered_multiset::load_factor
+## <a name="load_factor"></a>  unordered_multiset::load_factor
 
 Counts the average elements per bucket.
 
@@ -1631,7 +1631,7 @@ int main()
 
 ```
 
-##  <a name="local_iterator"></a>  unordered_multiset::local_iterator
+## <a name="local_iterator"></a>  unordered_multiset::local_iterator
 
 The type of a bucket iterator.
 
@@ -1680,7 +1680,7 @@ int main()
 [a]
 ```
 
-##  <a name="max_bucket_count"></a>  unordered_multiset::max_bucket_count
+## <a name="max_bucket_count"></a>  unordered_multiset::max_bucket_count
 
 Gets the maximum number of buckets.
 
@@ -1768,7 +1768,7 @@ max_load_factor() == 0.1
 
 ```
 
-##  <a name="max_load_factor"></a>  unordered_multiset::max_load_factor
+## <a name="max_load_factor"></a>  unordered_multiset::max_load_factor
 
 Gets or sets the maximum elements per bucket.
 
@@ -1864,7 +1864,7 @@ max_load_factor() == 0.1
 
 ```
 
-##  <a name="max_size"></a>  unordered_multiset::max_size
+## <a name="max_size"></a>  unordered_multiset::max_size
 
 Gets the maximum size of the controlled sequence.
 
@@ -1900,7 +1900,7 @@ int main()
 max_size() == 4294967295
 ```
 
-##  <a name="op_eq"></a>  unordered_multiset::operator=
+## <a name="op_eq"></a>  unordered_multiset::operator=
 
 Copies a hash table.
 
@@ -1958,7 +1958,7 @@ int main( )
    }
 ```
 
-##  <a name="pointer"></a>  unordered_multiset::pointer
+## <a name="pointer"></a>  unordered_multiset::pointer
 
 The type of a pointer to an element.
 
@@ -2006,7 +2006,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="reference"></a>  unordered_multiset::reference
+## <a name="reference"></a>  unordered_multiset::reference
 
 The type of a reference to an element.
 
@@ -2054,7 +2054,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="rehash"></a>  unordered_multiset::rehash
+## <a name="rehash"></a>  unordered_multiset::rehash
 
 Rebuilds the hash table.
 
@@ -2133,7 +2133,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-##  <a name="size"></a>  unordered_multiset::size
+## <a name="size"></a>  unordered_multiset::size
 
 Counts the number of elements.
 
@@ -2201,7 +2201,7 @@ size == 2
 empty() == false
 ```
 
-##  <a name="size_type"></a>  unordered_multiset::size_type
+## <a name="size_type"></a>  unordered_multiset::size_type
 
 The type of an unsigned distance between two elements.
 
@@ -2238,7 +2238,7 @@ int main()
 size == 0
 ```
 
-##  <a name="swap"></a>  unordered_multiset::swap
+## <a name="swap"></a>  unordered_multiset::swap
 
 Swaps the contents of two containers.
 
@@ -2311,7 +2311,7 @@ int main()
 [c] [b] [a]
 ```
 
-##  <a name="unordered_multiset"></a>  unordered_multiset::unordered_multiset
+## <a name="unordered_multiset"></a>  unordered_multiset::unordered_multiset
 
 Constructs a container object.
 
@@ -2390,7 +2390,7 @@ The comparison function object is the argument `Comp`, if present; otherwise it 
 
 The allocator object is the argument `Al`, if present; otherwise, it is `Alloc()`.
 
-##  <a name="value_type"></a>  unordered_multiset::value_type
+## <a name="value_type"></a>  unordered_multiset::value_type
 
 The type of an element.
 

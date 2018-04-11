@@ -14,7 +14,7 @@ manager: "ghogen"
 ---
 # &lt;codecvt&gt; enums
 
-##  <a name="codecvt_mode"></a>  codecvt_mode Enumeration
+## <a name="codecvt_mode"></a>  codecvt_mode Enumeration
 
 Specifies configuration information for [locale](../standard-library/locale-class.md) facets.
 

@@ -21,7 +21,7 @@ helpviewer_keywords: ["std::operator!= (iterator)", "std::operator&gt; (iterator
 |[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|
 |[operator-](#operator-)|[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.
 
@@ -114,7 +114,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.
 
@@ -220,7 +220,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.
 ```
 
-##  <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a>  operator&lt;
 
 Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.
 
@@ -311,7 +311,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-##  <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a>  operator&lt;=
 
 Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.
 
@@ -406,7 +406,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-##  <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a>  operator&gt;
 
 Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.
 
@@ -495,7 +495,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-##  <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a>  operator&gt;=
 
 Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.
 
@@ -590,7 +590,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-##  <a name="op_add"></a>  operator+
+## <a name="op_add"></a>  operator+
 
 Adds an offset to an iterator and returns a `move_iterator` or a `reverse_iterator` addressing the inserted element at the new offset position.
 
@@ -669,7 +669,7 @@ The iterator rVPOS1 now points to the fifth element
  in the reversed sequence: 2.
 ```
 
-##  <a name="operator-"></a>  operator-
+## <a name="operator-"></a>  operator-
 
 Subtracts one iterator from another and returns the difference.
 

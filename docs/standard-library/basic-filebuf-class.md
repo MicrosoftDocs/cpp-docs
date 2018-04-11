@@ -203,7 +203,7 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 
 **Namespace:** std
 
-##  <a name="basic_filebuf"></a>  basic_filebuf::basic_filebuf
+## <a name="basic_filebuf"></a>  basic_filebuf::basic_filebuf
 
 Constructs an object of type `basic_filebuf`.
 
@@ -219,7 +219,7 @@ The first constructor stores a null pointer in all the pointers controlling the 
 
 The second constructor initializes the object with the contents of `right`, treated as an rvalue reference.
 
-##  <a name="char_type"></a>  basic_filebuf::char_type
+## <a name="char_type"></a>  basic_filebuf::char_type
 
 Associates a type name with the **Elem** template parameter.
 
@@ -227,7 +227,7 @@ Associates a type name with the **Elem** template parameter.
 typedef Elem char_type;
 ```
 
-##  <a name="close"></a>  basic_filebuf::close
+## <a name="close"></a>  basic_filebuf::close
 
 Closes a file.
 
@@ -294,7 +294,7 @@ s
 1
 ```
 
-##  <a name="int_type"></a>  basic_filebuf::int_type
+## <a name="int_type"></a>  basic_filebuf::int_type
 
 Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
 
@@ -302,7 +302,7 @@ Makes this type within basic_filebuf's scope equivalent to the type of the same 
 typedef typename traits_type::int_type int_type;
 ```
 
-##  <a name="is_open"></a>  basic_filebuf::is_open
+## <a name="is_open"></a>  basic_filebuf::is_open
 
 Indicates whether a file is open.
 
@@ -338,7 +338,7 @@ false
 true
 ```
 
-##  <a name="off_type"></a>  basic_filebuf::off_type
+## <a name="off_type"></a>  basic_filebuf::off_type
 
 Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
 
@@ -346,7 +346,7 @@ Makes this type within basic_filebuf's scope equivalent to the type of the same 
 typedef typename traits_type::off_type off_type;
 ```
 
-##  <a name="open"></a>  basic_filebuf::open
+## <a name="open"></a>  basic_filebuf::open
 
 Opens a file.
 
@@ -411,7 +411,7 @@ If the file pointer is a null pointer, the function returns a null pointer. Othe
 
 See [basic_filebuf::close](#close) for an example that uses **open**.
 
-##  <a name="op_eq"></a>  basic_filebuf::operator=
+## <a name="op_eq"></a>  basic_filebuf::operator=
 
 Assign the content of this stream buffer object. This is a move assignment involving an rvalue that does not leave a copy behind.
 
@@ -432,7 +432,7 @@ Returns *this.
 
 The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-##  <a name="overflow"></a>  basic_filebuf::overflow
+## <a name="overflow"></a>  basic_filebuf::overflow
 
 Called when a new character is inserted into a full buffer.
 
@@ -459,7 +459,7 @@ If _ *Meta***!= traits_type::**[eof](../standard-library/char-traits-struct.md#e
 
 - It can convert any pending output in the output buffer, followed by **ch**, by using the file conversion facet **fac** to call **fac.out** as needed. Each element `ch` of type *char* thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`( **ch**, **fp**). If any conversion or write fails, the function does not succeed.
 
-##  <a name="pbackfail"></a>  basic_filebuf::pbackfail
+## <a name="pbackfail"></a>  basic_filebuf::pbackfail
 
 Tries to put back an element into the input stream, then make it the current element (pointed to by the next pointer).
 
@@ -486,7 +486,7 @@ The protected virtual member function puts back an element into the input buffer
 
 - If the function can push back an element onto the input stream, it can do so, such as by calling `ungetc` for an element of type `char`.
 
-##  <a name="pos_type"></a>  basic_filebuf::pos_type
+## <a name="pos_type"></a>  basic_filebuf::pos_type
 
 Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
 
@@ -494,7 +494,7 @@ Makes this type within basic_filebuf's scope equivalent to the type of the same 
 typedef typename traits_type::pos_type pos_type;
 ```
 
-##  <a name="seekoff"></a>  basic_filebuf::seekoff
+## <a name="seekoff"></a>  basic_filebuf::seekoff
 
 Tries to alter the current positions for the controlled streams.
 
@@ -527,7 +527,7 @@ For a file opened for both reading and writing, both the input and output stream
 
 If the file pointer **fp** is a null pointer, the function fails. Otherwise, it endeavors to alter the stream position by calling `fseek`( **fp**, `_Off`, `_Way`). If that function succeeds and the resulting position **fposn** can be determined by calling `fgetpos`( **fp**, **&fposn**), the function succeeds. If the function succeeds, it returns a value of type **pos_type** containing **fposn**. Otherwise, it returns an invalid stream position.
 
-##  <a name="seekpos"></a>  basic_filebuf::seekpos
+## <a name="seekpos"></a>  basic_filebuf::seekpos
 
 Tries to alter the current positions for the controlled streams.
 
@@ -555,7 +555,7 @@ For a file opened for both reading and writing, both the input and output stream
 
 For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet **fac** to call **fac**`.unshift` as needed. Each element **byte** of type `char` thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`( **byte**, **fp**). If the call to **fac.unshift** or any write fails, the function does not succeed.
 
-##  <a name="setbuf"></a>  basic_filebuf::setbuf
+## <a name="setbuf"></a>  basic_filebuf::setbuf
 
 Performs an operation particular to each derived stream buffer.
 
@@ -581,7 +581,7 @@ The protected member function returns zero if the file pointer `fp` is a null po
 
 `setbuf` calls `setvbuf`( **fp**, ( `char` \*) `_Buffer`, `_IOFBF`, `count` \* `sizeof` ( **Elem**) ) to offer the array of `count` elements beginning at _ *Buffer* as a buffer for the stream. If that function returns a nonzero value, the function returns a null pointer. Otherwise, it returns **this** to signal success.
 
-##  <a name="swap"></a>  basic_filebuf::swap
+## <a name="swap"></a>  basic_filebuf::swap
 
 Exchanges the contents of this `basic_filebuf` for the contents of the provided `basic_filebuf`.
 
@@ -594,7 +594,7 @@ void swap(basic_filebuf& right);
 `right`
  An `lvalue` reference to another `basic_filebuf`.
 
-##  <a name="sync"></a>  basic_filebuf::sync
+## <a name="sync"></a>  basic_filebuf::sync
 
 Tries to synchronize the controlled streams with any associated external streams.
 
@@ -606,7 +606,7 @@ virtual int sync();
 
 Returns zero if the file pointer **fp** is a null pointer. Otherwise, it returns zero only if calls to both [overflow](#overflow) and `fflush`( **fp**) succeed in flushing any pending output to the stream.
 
-##  <a name="traits_type"></a>  basic_filebuf::traits_type
+## <a name="traits_type"></a>  basic_filebuf::traits_type
 
 Associates a type name with the **Tr** template parameter.
 
@@ -614,7 +614,7 @@ Associates a type name with the **Tr** template parameter.
 typedef Tr traits_type;
 ```
 
-##  <a name="underflow"></a>  basic_filebuf::underflow
+## <a name="underflow"></a>  basic_filebuf::underflow
 
 Extracts the current element from the input stream.
 

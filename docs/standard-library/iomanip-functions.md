@@ -21,7 +21,7 @@ helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_m
 |[setbase](#setbase)|[setfill](#setfill)|[setiosflags](#setiosflags)|
 |[setprecision](#setprecision)|[setw](#setw)|
 
-##  <a name="iomanip_get_money"></a>  get_money
+## <a name="iomanip_get_money"></a>  get_money
 
 Extracts a monetary value from a stream using the desired format, and returns the value in a parameter.
 
@@ -44,7 +44,7 @@ The manipulator returns an object that, when extracted from the stream `str`, be
 
 `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
-##  <a name="iomanip_get_time"></a>  get_time
+## <a name="iomanip_get_time"></a>  get_time
 
 Extracts a time value from a stream using a desired format. Returns the value in a parameter as a time structure.
 
@@ -65,7 +65,7 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.
 
-##  <a name="iomanip_put_money"></a>  put_money
+## <a name="iomanip_put_money"></a>  put_money
 
 Inserts a monetary amount using the desired format into a stream.
 
@@ -92,7 +92,7 @@ The manipulator returns an object that, when inserted into the stream `str`, beh
 
 `Money` must be of type `long double` or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
-##  <a name="iomanip_put_time"></a>  put_time
+## <a name="iomanip_put_time"></a>  put_time
 
 Writes a time value from a time structure to a stream by using a specified format.
 
@@ -113,7 +113,7 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses `_Tptr` to indicate the time structure and `_Fmt` to indicate the beginning of a NUL-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
 
-##  <a name="quoted"></a>  quoted
+## <a name="quoted"></a>  quoted
 
 **(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the >> and << operators.
 
@@ -281,7 +281,7 @@ Press Enter to exit
 
 ```
 
-##  <a name="resetiosflags"></a>  resetiosflags
+## <a name="resetiosflags"></a>  resetiosflags
 
 Clears the specified flags.
 
@@ -302,7 +302,7 @@ The manipulator returns an object that, when extracted from or inserted into the
 
 See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `resetiosflags`.
 
-##  <a name="setbase"></a>  setbase
+## <a name="setbase"></a>  setbase
 
 Set base for integers.
 
@@ -331,7 +331,7 @@ The manipulator returns an object that, when extracted from or inserted into the
 
 See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setbase`.
 
-##  <a name="setfill"></a>  setfill
+## <a name="setfill"></a>  setfill
 
 Sets the character that will be used to fill spaces in a right-justified display.
 
@@ -353,7 +353,7 @@ The template manipulator returns an object that, when extracted from or inserted
 
 See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setfill`.
 
-##  <a name="setiosflags"></a>  setiosflags
+## <a name="setiosflags"></a>  setiosflags
 
 Sets the specified flags.
 
@@ -374,7 +374,7 @@ The manipulator returns an object that, when extracted from or inserted into the
 
 See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setiosflags`.
 
-##  <a name="setprecision"></a>  setprecision
+## <a name="setprecision"></a>  setprecision
 
 Sets the precision for floating-point values.
 
@@ -395,7 +395,7 @@ The manipulator returns an object that, when extracted from or inserted into the
 
 See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setprecision`.
 
-##  <a name="setw"></a>  setw
+## <a name="setw"></a>  setw
 
 Specifies the width of the display field for the next element in the stream.
 

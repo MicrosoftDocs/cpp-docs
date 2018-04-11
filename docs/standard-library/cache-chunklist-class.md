@@ -59,7 +59,7 @@ Each memory block holds `Sz` bytes of usable memory and a pointer to the chunk t
 
 **Namespace:** stdext
 
-##  <a name="allocate"></a>  cache_chunklist::allocate
+## <a name="allocate"></a>  cache_chunklist::allocate
 
 Allocates a block of memory.
 
@@ -79,7 +79,7 @@ A pointer to the allocated object.
 
 ### Remarks
 
-##  <a name="cache_chunklist"></a>  cache_chunklist::cache_chunklist
+## <a name="cache_chunklist"></a>  cache_chunklist::cache_chunklist
 
 Constructs an object of type `cache_chunklist`.
 
@@ -89,7 +89,7 @@ cache_chunklist();
 
 ### Remarks
 
-##  <a name="deallocate"></a>  cache_chunklist::deallocate
+## <a name="deallocate"></a>  cache_chunklist::deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 

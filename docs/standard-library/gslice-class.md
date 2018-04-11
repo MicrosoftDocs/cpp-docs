@@ -57,7 +57,7 @@ Operations on valarrays are guaranteed only if the source and destination subset
 
 **Namespace:** std
 
-##  <a name="gslice"></a>  gslice::gslice
+## <a name="gslice"></a>  gslice::gslice
 
 A utility class to valarray that is used to define multi-dimensional slices of a valarray.
 
@@ -136,7 +136,7 @@ The valarray for vaGSlice is vaResult:
 va[vaGSlice] = ( 0 4 8 12 7 11 15 19)
 ```
 
-##  <a name="size"></a>  gslice::size
+## <a name="size"></a>  gslice::size
 
 Finds the array values specifying the numbers of elements in a general slice of a valarray.
 
@@ -214,7 +214,7 @@ The size of vaResult is:
  vaGSlice.size ( ) = ( 4 4 ).
 ```
 
-##  <a name="start"></a>  gslice::start
+## <a name="start"></a>  gslice::start
 
 Finds the starting index of a general slice of a valarray.
 
@@ -277,7 +277,7 @@ The valarray for vaGSlice is vaResult:
 The index of the first element of vaResult is: 0.
 ```
 
-##  <a name="stride"></a>  gslice::stride
+## <a name="stride"></a>  gslice::stride
 
 Finds the distance between elements in a general slice of a valarray.
 

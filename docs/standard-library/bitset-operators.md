@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
 |[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
 |[operator^](#op_xor)|[operator|](#op_or)|
 
-##  <a name="op_amp"></a>  operator&amp;
+## <a name="op_amp"></a>  operator&amp;
 
 Performs a bitwise `AND` between two bitsets.
 
@@ -75,7 +75,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-##  <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
 Inserts a text representation of the bit sequence into the output stream.
 
@@ -133,7 +133,7 @@ int main( )
 }
 ```
 
-##  <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a>  operator&gt;&gt;
 
 Reads a string of bit characters into a bitset.
 
@@ -220,7 +220,7 @@ int main()
 }
 ```
 
-##  <a name="op_xor"></a>  operator^
+## <a name="op_xor"></a>  operator^
 
 Performs a bitwise `EXCLUSIVE-OR` between two bitsets.
 
@@ -272,7 +272,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-##  <a name="op_or"></a>  operator|
+## <a name="op_or"></a>  operator|
 
 Performs a bitwise `OR` between two bitsets.
 

@@ -67,7 +67,7 @@ class time_point;
 
 **Namespace:** std::chrono
 
-##  <a name="max"></a>  time_point::max
+## <a name="max"></a>  time_point::max
 
 Static method that returns the upper bound for values of type `time_point::ref`.
 
@@ -79,7 +79,7 @@ static constexpr time_point max();
 
 In effect, returns `time_point(duration::max())`.
 
-##  <a name="min"></a>  time_point::min
+## <a name="min"></a>  time_point::min
 
 Static method that returns the lower bound for values of type `time_point::ref`.
 
@@ -91,7 +91,7 @@ static constexpr time_point min();
 
 In effect, returns `time_point(duration::min())`.
 
-##  <a name="op_add_eq"></a>  time_point::operator+=
+## <a name="op_add_eq"></a>  time_point::operator+=
 
 Adds a specified value to the stored [duration](../standard-library/duration-class.md) value.
 
@@ -108,7 +108,7 @@ time_point& operator+=(const duration& Dur);
 
 The `time_point` object after the addition is performed.
 
-##  <a name="time_point__operator-_eq"></a>  time_point::operator-=
+## <a name="time_point__operator-_eq"></a>  time_point::operator-=
 
 Subtracts a specified value from the stored [duration](../standard-library/duration-class.md) value.
 
@@ -125,7 +125,7 @@ time_point& operator-=(const duration& Dur);
 
 The `time_point` object after the subtraction is performed.
 
-##  <a name="time_point"></a>  time_point::time_point Constructor
+## <a name="time_point"></a>  time_point::time_point Constructor
 
 Constructs a `time_point` object.
 
@@ -154,7 +154,7 @@ The second constructor constructs an object whose stored duration value is equal
 
 The third constructor initializes its `duration` value by using `Tp.time_since_epoch()`.
 
-##  <a name="time_since_epoch"></a>  time_point::time_since_epoch
+## <a name="time_since_epoch"></a>  time_point::time_since_epoch
 
 Retrieves the stored [duration](../standard-library/duration-class.md) value.
 

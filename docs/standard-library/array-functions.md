@@ -24,7 +24,7 @@ The \<array> header includes two non-member functions, `get` and `swap`, that op
 |-|-|
 |[get](#get)|[swap](#swap)|
 
-##  <a name="get"></a>  get
+## <a name="get"></a>  get
 
 Returns a reference to the specified element of the array.
 
@@ -85,7 +85,7 @@ int main()
 1 3
 ```
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 A non-member template specialization of `std::swap` that swaps two `array` objects.
 

@@ -79,7 +79,7 @@ Internally, a `unique_lock` stores a pointer to an associated `mutex` object and
 
 **Namespace:** std
 
-##  <a name="lock"></a>  lock
+## <a name="lock"></a>  lock
 
 Blocks the calling thread until the thread obtains ownership of the associated `mutex`.
 
@@ -95,7 +95,7 @@ If the calling thread already owns the associated `mutex`, this method throws a 
 
 Otherwise, this method calls `lock` on the associated `mutex` and sets the internal thread ownership flag to `true`.
 
-##  <a name="mutex"></a>  mutex
+## <a name="mutex"></a>  mutex
 
 Retrieves the stored pointer to the associated `mutex`.
 
@@ -103,7 +103,7 @@ Retrieves the stored pointer to the associated `mutex`.
 mutex_type *mutex() const noexcept;
 ```
 
-##  <a name="op_bool"></a>  operator bool
+## <a name="op_bool"></a>  operator bool
 
 Specifies whether the calling thread has ownership of the associated mutex.
 
@@ -115,7 +115,7 @@ explicit operator bool() noexcept
 
 `true` if the thread owns the mutex; otherwise `false`.
 
-##  <a name="op_eq"></a>  operator=
+## <a name="op_eq"></a>  operator=
 
 Copies the stored `mutex` pointer and associated ownership status from a specified object.
 
@@ -138,7 +138,7 @@ If the calling thread owns the previously associated `mutex`, before this method
 
 After the copy, this method sets `Other` to a default-constructed state.
 
-##  <a name="owns_lock"></a>  owns_lock
+## <a name="owns_lock"></a>  owns_lock
 
 Specifies whether the calling thread owns the associated `mutex`.
 
@@ -150,7 +150,7 @@ bool owns_lock() const noexcept;
 
 `true` if the thread owns the `mutex`; otherwise, `false`.
 
-##  <a name="release"></a>  release
+## <a name="release"></a>  release
 
 Disassociates the `unique_lock` object from the associated `mutex` object.
 
@@ -166,7 +166,7 @@ The previous value of the stored `mutex` pointer.
 
 This method sets the value of the stored `mutex` pointer to 0 and sets the internal `mutex` ownership flag to `false`.
 
-##  <a name="swap"></a>  swap
+## <a name="swap"></a>  swap
 
 Swaps the associated `mutex` and ownership status with that of a specified object.
 
@@ -179,7 +179,7 @@ void swap(unique_lock& Other) noexcept;
 `Other`
  A `unique_lock` object.
 
-##  <a name="try_lock"></a>  try_lock
+## <a name="try_lock"></a>  try_lock
 
 Attempts to obtain ownership of the associated `mutex` without blocking.
 
@@ -197,7 +197,7 @@ If the stored `mutex` pointer is `null`, the method throws a [system_error](../s
 
 If the calling thread already owns the `mutex`, the method throws a `system_error` that has an error code of `resource_deadlock_would_occur`.
 
-##  <a name="try_lock_for"></a>  try_lock_for
+## <a name="try_lock_for"></a>  try_lock_for
 
 Attempts to obtain ownership of the associated `mutex` without blocking.
 
@@ -222,7 +222,7 @@ If the stored `mutex` pointer is `null`, the method throws a [system_error](../s
 
 If the calling thread already owns the `mutex`, the method throws a `system_error` that has an error code of `resource_deadlock_would_occur`.
 
-##  <a name="try_lock_until"></a>  try_lock_until
+## <a name="try_lock_until"></a>  try_lock_until
 
 Attempts to obtain ownership of the associated `mutex` without blocking.
 
@@ -248,7 +248,7 @@ If the stored `mutex` pointer is `null`, the method throws a [system_error](../s
 
 If the calling thread already owns the `mutex`, the method throws a `system_error` that has an error code of `resource_deadlock_would_occur`.
 
-##  <a name="unique_lock"></a>  unique_lock Constructor
+## <a name="unique_lock"></a>  unique_lock Constructor
 
 Constructs a `unique_lock` object.
 
@@ -307,7 +307,7 @@ The remaining constructors store & `Mtx` as the stored `mutex` pointer. Ownershi
 |`Rel_time`|Ownership is determined by calling `try_lock_for(Rel_time)`.|
 |`Abs_time`|Ownership is determined by calling `try_lock_until(Abs_time)`.|
 
-##  <a name="dtorunique_lock_destructor"></a>  ~unique_lock Destructor
+## <a name="dtorunique_lock_destructor"></a>  ~unique_lock Destructor
 
 Releases any resources that are associated with the `unique_lock` object.
 
@@ -319,7 +319,7 @@ Releases any resources that are associated with the `unique_lock` object.
 
 If the calling thread owns the associated `mutex`, the destructor releases ownership by calling unlock on the `mutex` object.
 
-##  <a name="unlock"></a>  unlock
+## <a name="unlock"></a>  unlock
 
 Releases ownership of the associated `mutex`.
 

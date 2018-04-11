@@ -103,7 +103,7 @@ The **close** member function closes the disk file associated with an output fil
 
 The output stream destructor automatically closes a stream's file only if the constructor or the **open** member function opened the file. If you pass the constructor a file descriptor for an already-open file or use the **attach** member function, you must close the file explicitly.
 
-##  <a name="vclrferrorprocessingfunctionsanchor10"></a> Error Processing Functions
+## <a name="vclrferrorprocessingfunctionsanchor10"></a> Error Processing Functions
 
 Use these member functions to test for errors while writing to a stream:
 

@@ -22,7 +22,7 @@ helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::be
 |[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|
 |[next](#next)|[prev](#prev)|
 
-##  <a name="advance"></a>  advance
+## <a name="advance"></a>  advance
 
 Increments an iterator by a specified number of positions.
 
@@ -96,7 +96,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-##  <a name="back_inserter"></a>  back_inserter
+## <a name="back_inserter"></a>  back_inserter
 
 Creates an iterator that can insert elements at the back of a specified container.
 
@@ -167,11 +167,11 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-##  <a name="begin"></a>  begin
+## <a name="begin"></a>  begin
 
 Retrieves an iterator to the first element in a specified container.
 
-```
+```cpp
 template <class Container>
 auto begin(Container& cont)  `
    -> decltype(cont.begin());
@@ -269,13 +269,13 @@ Then sending an array to it would cause this compiler error:
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-##  <a name="cbegin"></a>  cbegin
+## <a name="cbegin"></a>  cbegin
 
 Retrieves a const iterator to the first element in a specified container.
 
-```
+```cpp
 template <class Container>
-auto cbegin(const Container& cont)   `
+auto cbegin(const Container& cont)
    -> decltype(cont.begin());
 ```
 
@@ -302,13 +302,13 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-##  <a name="cend"></a>  cend
+## <a name="cend"></a>  cend
 
 Retrieves a const iterator to the element that follows the last element in the specified container.
 
-```
+```cpp
 template <class Container>
-auto cend(const Container& cont)   `
+auto cend(const Container& cont)
    -> decltype(cont.end());
 ```
 
@@ -335,7 +335,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-##  <a name="distance"></a>  distance
+## <a name="distance"></a>  distance
 
 Determines the number of increments between the positions addressed by two iterators.
 
@@ -408,17 +408,17 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-##  <a name="end"></a>  end
+## <a name="end"></a>  end
 
 Retrieves an iterator to the element that follows the last element in the specified container.
 
-```
+```cpp
 template <class Container>
-auto end(Container& cont)   `
+auto end(Container& cont)
    -> decltype(cont.end());
 
 template <class Container>
-auto end(const Container& cont)   `
+auto end(const Container& cont)
    -> decltype(cont.end());
 
 template <class Ty, class Size>
@@ -443,7 +443,7 @@ The third template function returns `array + Size`.
 
 For a code example, see [begin](../standard-library/iterator-functions.md#begin).
 
-##  <a name="front_inserter"></a>  front_inserter
+## <a name="front_inserter"></a>  front_inserter
 
 Creates an iterator that can insert elements at the front of a specified container.
 
@@ -514,7 +514,7 @@ After the front insertions, the list L is:
  ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-##  <a name="inserter"></a>  inserter
+## <a name="inserter"></a>  inserter
 
 A helper template function that lets you use `inserter(_Cont, _Where)` instead of `insert_iterator<Container>(_Cont, _Where)`.
 
@@ -585,7 +585,7 @@ After the insertions, the list L is:
  ( 1 20 30 40 500 ).
 ```
 
-##  <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
 
 Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -680,7 +680,7 @@ int main()
 
 ```
 
-##  <a name="make_move_iterator"></a>  make_move_iterator
+## <a name="make_move_iterator"></a>  make_move_iterator
 
 Creates a `move iterator` that contains the provided iterator as the `stored` iterator.
 
@@ -699,7 +699,7 @@ make_move_iterator(const Iterator& _It);
 
 The template function returns `move_iterator` `<Iterator>(_It)`.
 
-##  <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator
 
 Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -779,7 +779,7 @@ int main()
 
 ```
 
-##  <a name="next"></a>  next
+## <a name="next"></a>  next
 
 Iterates a specified number of times and returns the new iterator position.
 
@@ -806,7 +806,7 @@ Returns the new iterator position after iterating `_Off` times.
 
 The template function returns `next` incremented `_Off` times
 
-##  <a name="prev"></a>  prev
+## <a name="prev"></a>  prev
 
 Iterates in reverse a specified number of times and returns the new iterator position.
 

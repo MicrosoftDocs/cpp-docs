@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|
 |[pointer_safety](#pointer_safety)|
 
-##  <a name="pointer_safety"></a>  pointer_safety Enumeration
+## <a name="pointer_safety"></a>  pointer_safety Enumeration
 
 The enumeration of possible values returned by `get_pointer_safety`.
 

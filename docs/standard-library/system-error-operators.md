@@ -18,7 +18,7 @@ manager: "ghogen"
 |-|-|-|
 |[operator!=](#op_neq)|[operator&lt;](#op_lt)|[operator==](#op_eq_eq)|
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests if the object on the left side of the operator is equal to the object on the right side.
 
@@ -45,7 +45,7 @@ bool operator==(const error_condition& left,
 
 This function returns `left.category() == right.category() && left.value() == right.value()`.
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
 
@@ -72,7 +72,7 @@ bool operator!=(const error_condition& left,
 
 This function returns `!(left == right)`.
 
-##  <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a>  operator&lt;
 
 Tests if an object is less than the object passed in for comparison.
 

@@ -23,7 +23,7 @@ helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "st
 |[real](#real)|[sin](#sin)|[sinh](#sinh)|
 |[sqrt](#sqrt)|[tan](#tan)|[tanh](#tanh)|
 
-##  <a name="abs"></a>  abs
+## <a name="abs"></a>  abs
 
 Calculates the modulus of a complex number.
 
@@ -110,7 +110,7 @@ Argument of c2 is recovered from c2 using:
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
-##  <a name="arg"></a>  arg
+## <a name="arg"></a>  arg
 
 Extracts the argument from a complex number.
 
@@ -197,7 +197,7 @@ Argument of c2 is recovered from c2 using:
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
-##  <a name="conj"></a>  conj
+## <a name="conj"></a>  conj
 
 Returns the complex conjugate of a complex number.
 
@@ -272,7 +272,7 @@ The imaginary part of c2 is imag ( c2 ) = -3.
 The norm of (c1 * conj (c1) ) is c1 * c2 = 25
 ```
 
-##  <a name="cos"></a>  cos
+## <a name="cos"></a>  cos
 
 Returns the cosine of a complex number.
 
@@ -363,7 +363,7 @@ The complex components cos (vci), where abs (vci) = 1
 (0.540302,-1.74036e-013)
 ```
 
-##  <a name="cosh"></a>  cosh
+## <a name="cosh"></a>  cosh
 
 Returns the hyperbolic cosine of a complex number.
 
@@ -454,7 +454,7 @@ The complex components cosh (vci), where abs (vci) = 1
 (1.54308,2.43059e-013)
 ```
 
-##  <a name="exp"></a>  exp
+## <a name="exp"></a>  exp
 
 Returns the exponential function of a complex number.
 
@@ -525,7 +525,7 @@ int main() {
 }
 ```
 
-##  <a name="imag"></a>  imag
+## <a name="imag"></a>  imag
 
 Extracts the imaginary component of a complex number.
 
@@ -577,7 +577,7 @@ The real part of c1 is real ( c1 ) = 4.
 The imaginary part of c1 is imag ( c1 ) = 3.
 ```
 
-##  <a name="log"></a>  log
+## <a name="log"></a>  log
 
 Returns the natural logarithm of a complex number.
 
@@ -647,7 +647,7 @@ int main() {
 }
 ```
 
-##  <a name="log10"></a>  log10
+## <a name="log10"></a>  log10
 
 Returns the base 10 logarithm of a complex number.
 
@@ -717,7 +717,7 @@ int main() {
 }
 ```
 
-##  <a name="norm"></a>  norm
+## <a name="norm"></a>  norm
 
 Extracts the norm of a complex number.
 
@@ -800,7 +800,7 @@ The norm of c2 given by: norm ( c2 ) = 25
 The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.
 ```
 
-##  <a name="polar"></a>  polar
+## <a name="polar"></a>  polar
 
 Returns the complex number, which corresponds to a specified modulus and argument, in Cartesian form.
 
@@ -877,7 +877,7 @@ Argument of c2 is recovered from c2 using:
  arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 ```
 
-##  <a name="pow"></a>  pow
+## <a name="pow"></a>  pow
 
 Evaluates the complex number obtained by raising a base that is a complex number to the power of another complex number.
 
@@ -1022,7 +1022,7 @@ The modulus of ce4 is: 9.8696
 The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.
 ```
 
-##  <a name="real"></a>  real
+## <a name="real"></a>  real
 
 Extracts the real component of a complex number.
 
@@ -1074,7 +1074,7 @@ The real part of c1 is real ( c1 ) = 4.
 The imaginary part of c1 is imag ( c1 ) = 3.
 ```
 
-##  <a name="sin"></a>  sin
+## <a name="sin"></a>  sin
 
 Returns the sine of a complex number.
 
@@ -1165,7 +1165,7 @@ The complex components sin (vci), where abs (vci) = 1
 (-0.841471,-1.11747e-013)
 ```
 
-##  <a name="sinh"></a>  sinh
+## <a name="sinh"></a>  sinh
 
 Returns the hyperbolic sine of a complex number.
 
@@ -1256,7 +1256,7 @@ The complex components sinh (vci), where abs (vci) = 1
 (-1.1752,-3.19145e-013)
 ```
 
-##  <a name="sqrt"></a>  sqrt
+## <a name="sqrt"></a>  sqrt
 
 Calculates the square root of a complex number.
 
@@ -1333,7 +1333,7 @@ The argument of c2 = ( 1 / 2 ) * arg ( c1 ) =0.785398 radians,
  which is 45 degrees.
 ```
 
-##  <a name="tan"></a> tan
+## <a name="tan"></a> tan
 
 Returns the tangent of a complex number.
 
@@ -1422,7 +1422,7 @@ The complex components tan (vci), where abs (vci) = 1
 (-1.55741,-7.08476e-013)
 ```
 
-##  <a name="tanh"></a>  tanh
+## <a name="tanh"></a>  tanh
 
 Returns the hyperbolic tangent of a complex number.
 

@@ -67,7 +67,7 @@ As with any locale facet, the static object ID has an initial stored value of ze
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  money_get::char_type
+## <a name="char_type"></a>  money_get::char_type
 
 A type that is used to describe a character used by a locale.
 
@@ -79,7 +79,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="do_get"></a>  money_get::do_get
+## <a name="do_get"></a>  money_get::do_get
 
 Virtual function called to extracts a numerical value from a character sequence that represents a monetary value.
 
@@ -159,7 +159,7 @@ Arbitrary white space is matched where the element equal to **money_base::space*
 
 See the example for [get](#get), which calls `do_get`.
 
-##  <a name="get"></a>  money_get::get
+## <a name="get"></a>  money_get::get
 
 Extracts a numerical value from a character sequence that represents a monetary value.
 
@@ -256,7 +256,7 @@ int main( )
 };
 ```
 
-##  <a name="iter_type"></a>  money_get::iter_type
+## <a name="iter_type"></a>  money_get::iter_type
 
 A type that describes an input iterator.
 
@@ -268,7 +268,7 @@ typedef InputIterator iter_type;
 
 The type is a synonym for the template parameter **InputIterator**.
 
-##  <a name="money_get"></a>  money_get::money_get
+## <a name="money_get"></a>  money_get::money_get
 
 The constructor for objects of type `money_get` that are used to extract numerical values from sequences representing monetary values.
 
@@ -295,7 +295,7 @@ No direct examples are possible, because the destructor is protected.
 
 The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( **_***Refs*).
 
-##  <a name="string_type"></a>  money_get::string_type
+## <a name="string_type"></a>  money_get::string_type
 
 A type that describes a string containing characters of type **CharType**.
 

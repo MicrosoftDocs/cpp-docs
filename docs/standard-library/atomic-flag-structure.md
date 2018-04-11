@@ -45,7 +45,7 @@ struct atomic_flag;
 
 **Namespace:** std
 
-##  <a name="clear"></a>  atomic_flag::clear
+## <a name="clear"></a>  atomic_flag::clear
 
 Sets the `bool` flag that is stored in `*this` to `false`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
@@ -59,7 +59,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 `Order`
  A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
-##  <a name="test_and_set"></a>  atomic_flag::test_and_set
+## <a name="test_and_set"></a>  atomic_flag::test_and_set
 
 Sets the `bool` flag that is stored in `*this` to `true`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 

@@ -55,7 +55,7 @@ Here are some tips to keep in mind when using \<random>:
 
 There are many options to choose from in the \<random> header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how \<random> addresses these shortcomings, see [this video](http://go.microsoft.com/fwlink/p/?linkid=397615).
 
-##  <a name="code"></a> Examples
+## <a name="code"></a> Examples
 
 The following code example shows how to generate some random numbers in this case five of them using a generator created with non-deterministic seed.
 
@@ -210,7 +210,7 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 
 This code demonstrates two different randomizations—randomize a vector of integers and shuffle an array of indexed data—with a test template function. The first call to the test function uses the crypto-secure, non-deterministic, not-seedable, non-repeatable URNG `random_device`. The second test run uses `mersenne_twister_engine` as URNG, with a deterministic 32-bit constant seed, which means the results are repeatable. The third test run seeds `mersenne_twister_engine` with a 32-bit non-deterministic result from `random_device`. The fourth test run expands on this by using a [seed sequence](../standard-library/seed-seq-class.md) filled with `random_device` results, which effectively gives more than 32-bit non-deterministic randomness (but still not crypto-secure). For more information, read on.
 
-##  <a name="listing"></a> Categorized Listing
+## <a name="listing"></a> Categorized Listing
 
 ###  <a name="urngs"></a> Uniform Random Number Generators
 
@@ -365,7 +365,7 @@ This section lists the operators provided in the \<random> header.
 |`operator<<`|Writes state information to a stream.|
 |`operator>>`|Extracts state information from a stream.|
 
-##  <a name="engdist"></a> Engines and Distributions
+## <a name="engdist"></a> Engines and Distributions
 
 Refer to the following sections for information about each of these template class categories defined in \<random>. Both of these template class categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
 
@@ -451,7 +451,7 @@ A parameter structure is an object that stores all of the parameters needed for 
 
 For more information, see the reference subtopics below this one, linked previously in this article.
 
-##  <a name="comments"></a> Remarks
+## <a name="comments"></a> Remarks
 
 There are two highly useful URNGs in Visual Studio—`mt19937` and `random_device`—as shown in this comparison table:
 

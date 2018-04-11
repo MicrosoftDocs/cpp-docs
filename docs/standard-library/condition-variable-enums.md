@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|
 |[cv_status](#cv_status)|
 
-##  <a name="cv_status"></a>  cv_status Enumeration
+## <a name="cv_status"></a>  cv_status Enumeration
 
 Supplies symbolic names for the return values of the methods of template class [condition_variable](../standard-library/condition-variable-class.md).
 

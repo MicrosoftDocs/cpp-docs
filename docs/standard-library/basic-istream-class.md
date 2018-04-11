@@ -145,7 +145,7 @@ See the example for [basic_ifstream Class](../standard-library/basic-ifstream-cl
 
 **Namespace:** std
 
-##  <a name="basic_istream"></a>  basic_istream::basic_istream
+## <a name="basic_istream"></a>  basic_istream::basic_istream
 
 Constructs an object of type `basic_istream`.
 
@@ -178,7 +178,7 @@ The second constructor initializes the base class by calling `move( right)`. It 
 
 See the example for [basic_ifstream::basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream) to learn more about input streams.
 
-##  <a name="gcount"></a>  basic_istream::gcount
+## <a name="gcount"></a>  basic_istream::gcount
 
 Returns the number of characters read during the last unformatted input.
 
@@ -229,7 +229,7 @@ a
 1
 ```
 
-##  <a name="get"></a>  basic_istream::get
+## <a name="get"></a>  basic_istream::get
 
 Reads one or more characters from the input stream.
 
@@ -313,7 +313,7 @@ int main( )
 1111
 ```
 
-##  <a name="getline"></a>  basic_istream::getline
+## <a name="getline"></a>  basic_istream::getline
 
 Gets a line from the input stream.
 
@@ -379,7 +379,7 @@ int main( )
 121
 ```
 
-##  <a name="ignore"></a>  basic_istream::ignore
+## <a name="ignore"></a>  basic_istream::ignore
 
 Causes a number of elements to be skipped from the current read position.
 
@@ -427,7 +427,7 @@ Type 'abcdef': abcdef
 def
 ```
 
-##  <a name="op_gt_gt"></a>  basic\_istream::operator>>
+## <a name="op_gt_gt"></a>  basic\_istream::operator>>
 
 Calls a function on the input stream or reads formatted data from the input stream.
 
@@ -556,7 +556,7 @@ int main( )
 }
 ```
 
-##  <a name="op_eq"></a>  basic_istream::operator=
+## <a name="op_eq"></a>  basic_istream::operator=
 
 Assigns the `basic_istream` on the right side of the operator to this object. This is a move assignment involving an `rvalue` reference that does not leave a copy behind.
 
@@ -577,7 +577,7 @@ Returns *this.
 
 The member operator calls swap `( right)`.
 
-##  <a name="peek"></a>  basic_istream::peek
+## <a name="peek"></a>  basic_istream::peek
 
 Returns the next character to be read.
 
@@ -625,7 +625,7 @@ abcde
 a abcde
 ```
 
-##  <a name="putback"></a>  basic_istream::putback
+## <a name="putback"></a>  basic_istream::putback
 
 Puts a specified character into the stream.
 
@@ -672,7 +672,7 @@ int main( )
 qwq
 ```
 
-##  <a name="read"></a>  basic_istream::read
+## <a name="read"></a>  basic_istream::read
 
 Reads a specified number of characters from the stream and stores them in an array.
 
@@ -736,7 +736,7 @@ abcde
 abcde
 ```
 
-##  <a name="readsome"></a>  basic_istream::readsome
+## <a name="readsome"></a>  basic_istream::readsome
 
 Reads the specified number of character values.
 
@@ -795,7 +795,7 @@ int main( )
 }
 ```
 
-##  <a name="seekg"></a>  basic_istream::seekg
+## <a name="seekg"></a>  basic_istream::seekg
 
 Moves the read position in a stream.
 
@@ -852,7 +852,7 @@ int main ( )
 }
 ```
 
-##  <a name="sentry"></a>  basic_istream::sentry
+## <a name="sentry"></a>  basic_istream::sentry
 
 The nested class describes an object whose declaration structures the formatted and unformatted input functions.
 
@@ -874,7 +874,7 @@ If `_Istr.`[good](../standard-library/basic-ios-class.md#good) is true, the cons
 
 If, after any such preparation, `_Istr`. **good** is false, the constructor calls `_Istr`. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**). In any case, the constructor stores the value returned by `_Istr`. **good** in **status**. A later call to **operator bool** delivers this stored value.
 
-##  <a name="swap"></a>  basic_istream::swap
+## <a name="swap"></a>  basic_istream::swap
 
 Exchanges the contents of two `basic_istream` objects.
 
@@ -891,7 +891,7 @@ void swap(basic_istream& right);
 
 The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(right)`. It also exchanges the extraction count with the extraction count for `right`.
 
-##  <a name="sync"></a>  basic_istream::sync
+## <a name="sync"></a>  basic_istream::sync
 
 Synchronizes the input device associated with the stream with the stream's buffer.
 
@@ -903,7 +903,7 @@ int sync();
 
 If [rdbuf](../standard-library/basic-ios-class.md#rdbuf) is a null pointer, the function returns -1. Otherwise, it calls `rdbuf` -> [pubsync](../standard-library/basic-streambuf-class.md#pubsync). If that returns -1, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **badbit**) and returns -1. Otherwise, the function returns zero.
 
-##  <a name="tellg"></a>  basic_istream::tellg
+## <a name="tellg"></a>  basic_istream::tellg
 
 Reports the current read position in the stream.
 
@@ -945,7 +945,7 @@ int main()
 }
 ```
 
-##  <a name="unget"></a>  basic_istream::unget
+## <a name="unget"></a>  basic_istream::unget
 
 Puts the most recently read character back into the stream.
 

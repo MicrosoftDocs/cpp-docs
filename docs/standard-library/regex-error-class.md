@@ -45,7 +45,7 @@ The class describes an exception object thrown to report an error in the constru
 
 **Namespace:** std
 
-##  <a name="code"></a>  regex_error::code
+## <a name="code"></a>  regex_error::code
 
 Returns the error code.
 
@@ -94,7 +94,7 @@ int main()
 regex error: unbalanced parentheses
 ```
 
-##  <a name="regex_error"></a>  regex_error::regex_error
+## <a name="regex_error"></a>  regex_error::regex_error
 
 Constructs the object.
 

@@ -140,7 +140,7 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 **Namespace:** std
 
-##  <a name="element_type"></a>  shared_ptr::element_type
+## <a name="element_type"></a>  shared_ptr::element_type
 
 The type of an element.
 
@@ -176,7 +176,7 @@ int main()
 *sp0 == 5
 ```
 
-##  <a name="get"></a>  shared_ptr::get
+## <a name="get"></a>  shared_ptr::get
 
 Gets address of owned resource.
 
@@ -215,7 +215,7 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-##  <a name="shared_ptr__operator_boolean-type"></a>  shared_ptr::operator boolean-type
+## <a name="shared_ptr__operator_boolean-type"></a>  shared_ptr::operator boolean-type
 
 Tests if an owned resource exists.
 
@@ -255,7 +255,7 @@ int main()
 (bool)sp1 == true
 ```
 
-##  <a name="op_star"></a>  shared_ptr::operator*
+## <a name="op_star"></a>  shared_ptr::operator*
 
 Gets the designated value.
 
@@ -290,7 +290,7 @@ int main()
 *sp0 == 5
 ```
 
-##  <a name="op_eq"></a>  shared_ptr::operator=
+## <a name="op_eq"></a>  shared_ptr::operator=
 
 Replaces the owned resource.
 
@@ -355,7 +355,7 @@ int main()
 *sp0 == 10
 ```
 
-##  <a name="shared_ptr__operator-_gt"></a>  shared_ptr::operator-&gt;
+## <a name="shared_ptr__operator-_gt"></a>  shared_ptr::operator-&gt;
 
 Gets a pointer to the designated value.
 
@@ -393,7 +393,7 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-##  <a name="owner_before"></a>  shared_ptr::owner_before
+## <a name="owner_before"></a>  shared_ptr::owner_before
 
 Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.
 
@@ -414,7 +414,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 The template member function returns true if `*this` is `ordered before` `ptr`.
 
-##  <a name="reset"></a>  shared_ptr::reset
+## <a name="reset"></a>  shared_ptr::reset
 
 Replace owned resource.
 
@@ -502,7 +502,7 @@ int main()
 *sp == 15
 ```
 
-##  <a name="shared_ptr"></a>  shared_ptr::shared_ptr
+## <a name="shared_ptr"></a>  shared_ptr::shared_ptr
 
 Constructs a `shared_ptr`.
 
@@ -638,7 +638,7 @@ int main()
 *sp5 == 15
 ```
 
-##  <a name="dtorshared_ptr"></a>  shared_ptr::~shared_ptr
+## <a name="dtorshared_ptr"></a>  shared_ptr::~shared_ptr
 
 Destroys a `shared_ptr`.
 
@@ -694,7 +694,7 @@ use count == 2
 use count == 1
 ```
 
-##  <a name="swap"></a>  shared_ptr::swap
+## <a name="swap"></a>  shared_ptr::swap
 
 Swaps two `shared_ptr` objects.
 
@@ -765,7 +765,7 @@ int main()
 *wp1 == 5
 ```
 
-##  <a name="unique"></a>  shared_ptr::unique
+## <a name="unique"></a>  shared_ptr::unique
 
 Tests if owned resource is unique.
 
@@ -813,7 +813,7 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-##  <a name="use_count"></a>  shared_ptr::use_count
+## <a name="use_count"></a>  shared_ptr::use_count
 
 Counts numbers of resource owners.
 

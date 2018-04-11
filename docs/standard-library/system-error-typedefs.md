@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|
 |[generic_errno](#generic_errno)|
 
-##  <a name="generic_errno"></a>  generic_errno
+## <a name="generic_errno"></a>  generic_errno
 
 A type that represents the enumeration that provides the symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
 

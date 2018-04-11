@@ -140,7 +140,7 @@ The iterator provided by the hash_set class is a bidirectional iterator, but the
 
 **Namespace:** stdext
 
-##  <a name="allocator_type"></a>  hash_set::allocator_type
+## <a name="allocator_type"></a>  hash_set::allocator_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -161,7 +161,7 @@ For more information on `Allocator`, see the Remarks section of the [hash_set Cl
 
 See example for [get_allocator](#get_allocator) for an example that uses `allocator_type`.
 
-##  <a name="begin"></a>  hash_set::begin
+## <a name="begin"></a>  hash_set::begin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -222,7 +222,7 @@ The first element of hs1 is 1
 The first element of hs1 is now 2
 ```
 
-##  <a name="cbegin"></a>  hash_set::cbegin
+## <a name="cbegin"></a>  hash_set::cbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -269,7 +269,7 @@ int main( )
 The first element of hs1 is 1
 ```
 
-##  <a name="cend"></a>  hash_set::cend
+## <a name="cend"></a>  hash_set::cend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -317,7 +317,7 @@ int main( )
 The last element of hs1 is 3
 ```
 
-##  <a name="clear"></a>  hash_set::clear
+## <a name="clear"></a>  hash_set::clear
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -361,7 +361,7 @@ The size of the hash_set is initially 2.
 The size of the hash_set after clearing is 0.
 ```
 
-##  <a name="const_iterator"></a>  hash_set::const_iterator
+## <a name="const_iterator"></a>  hash_set::const_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -380,7 +380,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 See example for [begin](#begin) for an example that uses `const_iterator`.
 
-##  <a name="const_pointer"></a>  hash_set::const_pointer
+## <a name="const_pointer"></a>  hash_set::const_pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -397,7 +397,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **const** hash_set object.
 
-##  <a name="const_reference"></a>  hash_set::const_reference
+## <a name="const_reference"></a>  hash_set::const_reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -444,7 +444,7 @@ int main( )
 The first element in the hash_set is 10.
 ```
 
-##  <a name="const_reverse_iterator"></a>  hash_set::const_reverse_iterator
+## <a name="const_reverse_iterator"></a>  hash_set::const_reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -463,7 +463,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`
 
-##  <a name="count"></a>  hash_set::count
+## <a name="count"></a>  hash_set::count
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -527,7 +527,7 @@ The number of elements in hs1 with a sort key of 1 is: 1.
 The number of elements in hs1 with a sort key of 2 is: 0.
 ```
 
-##  <a name="crbegin"></a>  hash_set::crbegin
+## <a name="crbegin"></a>  hash_set::crbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -579,7 +579,7 @@ int main( )
 The first element in the reversed hash_set is 30.
 ```
 
-##  <a name="crend"></a>  hash_set::crend
+## <a name="crend"></a>  hash_set::crend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -632,7 +632,7 @@ int main( )
 The last element in the reversed hash_set is 10.
 ```
 
-##  <a name="difference_type"></a>  hash_set::difference_type
+## <a name="difference_type"></a>  hash_set::difference_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -709,7 +709,7 @@ The number '20' occurs 1 times in hash_set hs1.
 The number of elements in the hash_set hs1 is: 2.
 ```
 
-##  <a name="emplace"></a>  hash_set::emplace
+## <a name="emplace"></a>  hash_set::emplace
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -762,7 +762,7 @@ int main( )
 After the emplace insertion, hs3 contains a.
 ```
 
-##  <a name="emplace_hint"></a>  hash_set::emplace_hint
+## <a name="emplace_hint"></a>  hash_set::emplace_hint
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -818,7 +818,7 @@ int main( )
 After the emplace insertion, hs3 contains a.
 ```
 
-##  <a name="empty"></a>  hash_set::empty
+## <a name="empty"></a>  hash_set::empty
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -867,7 +867,7 @@ The hash_set hs1 is not empty.
 The hash_set hs2 is empty.
 ```
 
-##  <a name="end"></a>  hash_set::end
+## <a name="end"></a>  hash_set::end
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -930,7 +930,7 @@ The last element of hs1 is 3
 The last element of hs1 is now 2
 ```
 
-##  <a name="equal_range"></a>  hash_set::equal_range
+## <a name="equal_range"></a>  hash_set::equal_range
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1015,7 +1015,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The hash_set hs1 doesn't have an element with a key greater than or equal to 40.
 ```
 
-##  <a name="erase"></a>  hash_set::erase
+## <a name="erase"></a>  hash_set::erase
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1135,7 +1135,7 @@ After another element (unique for hash_set) with a key
 equal to that of the 2nd element is deleted, the hash_set hs3 is: 0 3.
 ```
 
-##  <a name="find"></a>  hash_set::find
+## <a name="find"></a>  hash_set::find
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1213,7 +1213,7 @@ The hash_set hs1 doesn't have an element with a key of 40.
 The element of hs1 with a key matching that of the last element is: 30.
 ```
 
-##  <a name="get_allocator"></a>  hash_set::get_allocator
+## <a name="get_allocator"></a>  hash_set::get_allocator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1289,7 +1289,7 @@ int main( )
 }
 ```
 
-##  <a name="hash_set"></a>  hash_set::hash_set
+## <a name="hash_set"></a>  hash_set::hash_set
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1374,7 +1374,7 @@ The eighth constructor moves the `hash_set` `Right`.
 
 The actual order of elements in a `hash_set` container depends on the hash function, the ordering function and the current size of the hash table and cannot, in general, be predicted as it could with the set container, where it was determined by the ordering function alone.
 
-##  <a name="insert"></a>  hash_set::insert
+## <a name="insert"></a>  hash_set::insert
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1422,7 +1422,7 @@ The third member function inserts the elements in an initializer_list.
 
 The third member function inserts the sequence of element values into a `hash_set` corresponding to each element addressed by an iterator of in the range [ `First`, `Last`) of a specified `hash_set`.
 
-##  <a name="iterator"></a>  hash_set::iterator
+## <a name="iterator"></a>  hash_set::iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1441,7 +1441,7 @@ A type **iterator** can be used to modify the value of an element.
 
 See the example for [begin](#begin) for an example of how to declare and use **iterator**.
 
-##  <a name="key_comp"></a>  hash_set::key_comp
+## <a name="key_comp"></a>  hash_set::key_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1517,7 +1517,7 @@ int main( )
 }
 ```
 
-##  <a name="key_compare"></a>  hash_set::key_compare
+## <a name="key_compare"></a>  hash_set::key_compare
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1540,7 +1540,7 @@ Note that both `key_compare` and [value_compare](#value_compare) are synonyms fo
 
 See the example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.
 
-##  <a name="key_type"></a>  hash_set::key_type
+## <a name="key_type"></a>  hash_set::key_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1563,7 +1563,7 @@ Note that both `key_type` and [value_type](#value_type) are synonyms for the tem
 
 See the example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-##  <a name="lower_bound"></a>  hash_set::lower_bound
+## <a name="lower_bound"></a>  hash_set::lower_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1637,7 +1637,7 @@ The hash_set hs1 doesn't have an element with a key of 40.
 The element of hs1 with a key matching that of the last element is: 30.
 ```
 
-##  <a name="max_size"></a>  hash_set::max_size
+## <a name="max_size"></a>  hash_set::max_size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1675,7 +1675,7 @@ int main( )
 }
 ```
 
-##  <a name="op_eq"></a>  hash_set::operator=
+## <a name="op_eq"></a>  hash_set::operator=
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1737,7 +1737,7 @@ int main( )
 }
 ```
 
-##  <a name="pointer"></a>  hash_set::pointer
+## <a name="pointer"></a>  hash_set::pointer
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1754,7 +1754,7 @@ A type **pointer** can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a hash_set object.
 
-##  <a name="rbegin"></a>  hash_set::rbegin
+## <a name="rbegin"></a>  hash_set::rbegin
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1837,7 +1837,7 @@ The reversed hash_set is: 30 20 10
 After the erasure, the first element in the reversed hash_set is 20.
 ```
 
-##  <a name="reference"></a>  hash_set::reference
+## <a name="reference"></a>  hash_set::reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1887,7 +1887,7 @@ The first element in the hash_set is 10.
 The first element in the hash_set is now 15.
 ```
 
-##  <a name="rend"></a>  hash_set::rend
+## <a name="rend"></a>  hash_set::rend
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1973,7 +1973,7 @@ The reversed hash_set is: 30 20 10 .
 After the erasure, the last element in the reversed hash_set is 20.
 ```
 
-##  <a name="reverse_iterator"></a>  hash_set::reverse_iterator
+## <a name="reverse_iterator"></a>  hash_set::reverse_iterator
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -1992,7 +1992,7 @@ A type `reverse_iterator` is use to iterate through the hash_set in reverse.
 
 See the example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-##  <a name="size"></a>  hash_set::size
+## <a name="size"></a>  hash_set::size
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2039,7 +2039,7 @@ The hash_set length is 1.
 The hash_set length is now 2.
 ```
 
-##  <a name="size_type"></a>  hash_set::size_type
+## <a name="size_type"></a>  hash_set::size_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2056,7 +2056,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::size
 
 See the example for [size](#size) for an example of how to declare and use `size_type`
 
-##  <a name="swap"></a>  hash_set::swap
+## <a name="swap"></a>  hash_set::swap
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2130,7 +2130,7 @@ After swapping with hs2, list hs1 is: 200 100.
 After swapping with hs3, list hs1 is: 300.
 ```
 
-##  <a name="upper_bound"></a>  hash_set::upper_bound
+## <a name="upper_bound"></a>  hash_set::upper_bound
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2204,7 +2204,7 @@ The first element of hs1 with a key greater than
 that of the initial element of hs1 is: 20.
 ```
 
-##  <a name="value_comp"></a>  hash_set::value_comp
+## <a name="value_comp"></a>  hash_set::value_comp
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2280,7 +2280,7 @@ int main( )
 }
 ```
 
-##  <a name="value_compare"></a>  hash_set::value_compare
+## <a name="value_compare"></a>  hash_set::value_compare
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -2303,7 +2303,7 @@ Note that both [key_compare](#key_compare) and **value_compare** are synonyms fo
 
 See the example for [value_comp](#value_comp) for an example of how to declare and use `value_compare`.
 
-##  <a name="value_type"></a>  hash_set::value_type
+## <a name="value_type"></a>  hash_set::value_type
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).

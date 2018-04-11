@@ -18,7 +18,7 @@ manager: "ghogen"
 |[ios](#ios)|[streamoff](#streamoff)|[streampos](#streampos)|
 |[streamsize](#streamsize)|[wios](#wios)|[wstreampos](#wstreampos)|
 
-##  <a name="ios"></a>  ios
+## <a name="ios"></a>  ios
 
 Supports the ios class from the old iostream library.
 
@@ -30,7 +30,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type `char` with default character traits.
 
-##  <a name="streamoff"></a>  streamoff
+## <a name="streamoff"></a>  streamoff
 
 Supports internal operations.
 
@@ -46,7 +46,7 @@ Supports internal operations.
 
 The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value **streamoff(-1)** generally indicates an erroneous offset.
 
-##  <a name="streampos"></a>  streampos
+## <a name="streampos"></a>  streampos
 
 Holds the current position of the buffer pointer or file pointer.
 
@@ -81,7 +81,7 @@ int main( )
 7
 ```
 
-##  <a name="streamsize"></a>  streamsize
+## <a name="streamsize"></a>  streamsize
 
 Denotes the size of the stream.
 
@@ -117,7 +117,7 @@ int main( )
 }
 ```
 
-##  <a name="wios"></a>  wios
+## <a name="wios"></a>  wios
 
 Supports the wios class from the old iostream library.
 
@@ -129,7 +129,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type `wchar_t` with default character traits.
 
-##  <a name="wstreampos"></a>  wstreampos
+## <a name="wstreampos"></a>  wstreampos
 
 Holds the current position of the buffer pointer or file pointer.
 

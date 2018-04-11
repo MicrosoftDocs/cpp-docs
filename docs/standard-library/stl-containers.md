@@ -24,7 +24,7 @@ You iterate over the elements in a container, and access the individual elements
 
 Containers can be divided into three categories: sequence containers, associative containers, and container adapters.
 
-##  <a name="sequence_containers"></a> Sequence Containers
+## <a name="sequence_containers"></a> Sequence Containers
 
 Sequence containers maintain the ordering of inserted elements that you specify.
 

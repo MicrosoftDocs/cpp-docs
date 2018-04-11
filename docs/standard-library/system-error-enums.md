@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[errc](#errc)|[io_errc](#io_errc)|
 
-##  <a name="errc"></a>  errc Enumeration
+## <a name="errc"></a>  errc Enumeration
 
 Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
 
@@ -104,7 +104,7 @@ class errc {
 
 ### Remarks
 
-##  <a name="io_errc"></a>  io_errc Enumeration
+## <a name="io_errc"></a>  io_errc Enumeration
 
 Provides symbolic names for the error conditions in \<iostream>. Can be used to create [error_condition](../standard-library/error-condition-class.md) objects to be compared with the value that's returned by the [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()` function.
 

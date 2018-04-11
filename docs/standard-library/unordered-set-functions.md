@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[swap (set)](#swap)|[swap (unordered_multiset)](#swap_unordered_multiset)|
 
-##  <a name="swap"></a>  swap (unordered_set)
+## <a name="swap"></a>  swap (unordered_set)
 
 Swaps the contents of two containers.
 
@@ -109,7 +109,7 @@ return (0);
 
 ```
 
-##  <a name="swap_unordered_multiset"></a>  swap (unordered_multiset)
+## <a name="swap_unordered_multiset"></a>  swap (unordered_multiset)
 
 Swaps the contents of two containers.
 

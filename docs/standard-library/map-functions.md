@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[swap (map)](#swap)|[swap (multimap)](#swap_multimap)|
 
-##  <a name="swap_multimap"></a>  swap  (map)
+## <a name="swap_multimap"></a>  swap  (map)
 
 Exchanges the elements of two maps.
 
@@ -44,7 +44,7 @@ The template function is an algorithm specialized on the container class map to 
 
 See the code example for member function [map::swap](../standard-library/map-class.md#swap) for an example that uses the template version of `swap`.
 
-##  <a name="swap"></a>  swap  (multimap)
+## <a name="swap"></a>  swap  (multimap)
 
 Exchanges the elements of two multimaps.
 

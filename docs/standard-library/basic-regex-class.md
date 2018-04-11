@@ -110,7 +110,7 @@ These member functions also take an argument `flags` that specifies various opti
 
 **Namespace:** std
 
-##  <a name="assign"></a>  basic_regex::assign
+## <a name="assign"></a>  basic_regex::assign
 
 Assigns a value to the regular expressoin object.
 
@@ -263,7 +263,7 @@ int main()
 match("abc", "") == falsematch("abc", "abcd") == falsematch("abc", "abc") == truematch("abc", "abc") == truematch(string("abcd"), "abc") == falsematch(string("abc"), "abc") == true"abc" mark_count == 0"(abc)" mark_count == 1getloc == imbued == truematch("abc") == true
 ```
 
-##  <a name="basic_regex"></a>  basic_regex::basic_regex
+## <a name="basic_regex"></a>  basic_regex::basic_regex
 
 Construct the regular expression object.
 
@@ -423,7 +423,7 @@ int main()
 match("abc", "") == falsematch("abc", "abcd") == falsematch("abc", "abc") == truematch("abc", "abc") == truematch(string("abcd"), "abc") == falsematch(string("abc"), "abc") == true"abc" mark_count == 0"(abc)" mark_count == 1getloc == imbued == truematch("abc", "abc") == true
 ```
 
-##  <a name="flag_type"></a>  basic_regex::flag_type
+## <a name="flag_type"></a>  basic_regex::flag_type
 
 The type of syntax option flags.
 
@@ -520,7 +520,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="flags"></a>  basic_regex::flags
+## <a name="flags"></a>  basic_regex::flags
 
 Returns syntax option flags.
 
@@ -617,7 +617,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="getloc"></a>  basic_regex::getloc
+## <a name="getloc"></a>  basic_regex::getloc
 
 Returns the stored locale object.
 
@@ -714,7 +714,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="imbue"></a>  basic_regex::imbue
+## <a name="imbue"></a>  basic_regex::imbue
 
 Alters the stored locale object.
 
@@ -816,7 +816,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="locale_type"></a>  basic_regex::locale_type
+## <a name="locale_type"></a>  basic_regex::locale_type
 
 The type of the stored locale object.
 
@@ -913,7 +913,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="mark_count"></a>  basic_regex::mark_count
+## <a name="mark_count"></a>  basic_regex::mark_count
 
 Returns number of subexpressions matched.
 
@@ -1010,7 +1010,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="op_eq"></a>  basic_regex::operator=
+## <a name="op_eq"></a>  basic_regex::operator=
 
 Assigns a value to the regular expression object.
 
@@ -1126,7 +1126,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="swap"></a>  basic_regex::swap
+## <a name="swap"></a>  basic_regex::swap
 
 Swaps two regular expression objects.
 
@@ -1228,7 +1228,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true
 ```
 
-##  <a name="value_type"></a>  basic_regex::value_type
+## <a name="value_type"></a>  basic_regex::value_type
 
 The element type.
 

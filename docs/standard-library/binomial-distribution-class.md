@@ -215,7 +215,7 @@ Histogram for 100 samples:
 
 **Namespace:** std
 
-##  <a name="binomial_distribution"></a>  binomial_distribution::binomial_distribution
+## <a name="binomial_distribution"></a>  binomial_distribution::binomial_distribution
 
 Constructs the distribution.
 
@@ -243,7 +243,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
 
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.
 
-##  <a name="param_type"></a>  binomial_distribution::param_type
+## <a name="param_type"></a>  binomial_distribution::param_type
 
 Stores all the parameters of the distribution.
 

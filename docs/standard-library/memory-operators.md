@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
 |[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
 |[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests for inequality between objects.
 
@@ -125,7 +125,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests for equality between objects.
 
@@ -238,7 +238,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-##  <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a>  operator&gt;=
 
 Tests for one object being greater than or equal to a second object.
 
@@ -272,7 +272,7 @@ bool operator>=(
 
 The template operators return `left.get() >= right.get()`.
 
-##  <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a>  operator&lt;
 
 Tests for one object being less than a second object.
 
@@ -302,7 +302,7 @@ bool operator<(
 `Ty2`
  The type controlled by the right pointer.
 
-##  <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a>  operator&lt;=
 
 Tests for one object being less than or equal to a second object.
 
@@ -336,7 +336,7 @@ bool operator<=(
 
 The template operators return `left.get() <= right.get()`
 
-##  <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a>  operator&gt;
 
 Tests for one object being greater than a second object.
 
@@ -366,7 +366,7 @@ bool operator>(
 `Ty2`
  The type controlled by the right shared pointer.
 
-##  <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
 Writes the shared pointer to the stream.
 

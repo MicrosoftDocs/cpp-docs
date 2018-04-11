@@ -83,7 +83,7 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 **Namespace:** std
 
-##  <a name="back"></a>  queue::back
+## <a name="back"></a>  queue::back
 
 Returns a reference to the last and most recently added element at the back of the queue.
 
@@ -129,7 +129,7 @@ int main( )
 }
 ```
 
-##  <a name="container_type"></a>  queue::container_type
+## <a name="container_type"></a>  queue::container_type
 
 A type that provides the base container to be adapted.
 
@@ -147,7 +147,7 @@ For more information on `Container`, see the Remarks section of the [queue Class
 
 See the example for [queue](#queue) for an example of how to declare and use `container_type`.
 
-##  <a name="empty"></a>  queue::empty
+## <a name="empty"></a>  queue::empty
 
 Tests if a queue is empty.
 
@@ -193,7 +193,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-##  <a name="front"></a>  queue::front
+## <a name="front"></a>  queue::front
 
 Returns a reference to the first element at the front of the queue.
 
@@ -245,7 +245,7 @@ int main() {
 }
 ```
 
-##  <a name="pop"></a>  queue::pop
+## <a name="pop"></a>  queue::pop
 
 Removes an element from the front of the queue.
 
@@ -301,7 +301,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-##  <a name="push"></a>  queue::push
+## <a name="push"></a>  queue::push
 
 Adds an element to the back of the queue.
 
@@ -350,7 +350,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-##  <a name="queue"></a>  queue::queue
+## <a name="queue"></a>  queue::queue
 
 Constructs a queue that is empty or that is a copy of a base container object.
 
@@ -417,7 +417,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-##  <a name="size"></a>  queue::size
+## <a name="size"></a>  queue::size
 
 Returns the number of elements in the queue.
 
@@ -458,7 +458,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-##  <a name="size_type"></a>  queue::size_type
+## <a name="size_type"></a>  queue::size_type
 
 An unsigned integer type that can represent the number of elements in a queue.
 
@@ -474,7 +474,7 @@ The type is a synonym for the `size_type` of the base container adapted by the q
 
 See the example for [queue::front](#front) for an example of how to declare and use `size_type`.
 
-##  <a name="value_type"></a>  queue::value_type
+## <a name="value_type"></a>  queue::value_type
 
 A type that represents the type of object stored as an element in a queue.
 

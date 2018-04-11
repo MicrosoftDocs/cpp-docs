@@ -24,7 +24,7 @@ If you use only the predefined `cout`, `cerr`, or `clog` objects, you do not nee
 
 - [Output String Stream Constructors](#vclrfoutputstringstreamconstructorsanchor2)
 
-##  <a name="vclrfoutputfilestreamconstructorsanchor1"></a> Output File Stream Constructors
+## <a name="vclrfoutputfilestreamconstructorsanchor1"></a> Output File Stream Constructors
 
 You can construct an output file stream in one of two ways:
 
@@ -44,7 +44,7 @@ You can construct an output file stream in one of two ways:
    ofstream myFile("filename", ios_base::out);
    ```
 
-##  <a name="vclrfoutputstringstreamconstructorsanchor2"></a> Output String Stream Constructors
+## <a name="vclrfoutputstringstreamconstructorsanchor2"></a> Output String Stream Constructors
 
 To construct an output string stream, you can use `ostringstream` in the following way:
 

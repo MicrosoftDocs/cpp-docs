@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 |-|
 |[operator&lt;&lt;](#op_lt_lt)|
 
-##  <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
 Writes various types to the stream.
 

@@ -71,7 +71,7 @@ This facet basically opens a catalog of messages defined in the base class messa
 
 **Namespace:** std
 
-##  <a name="char_type"></a>  messages::char_type
+## <a name="char_type"></a>  messages::char_type
 
 A character type that is used display messages.
 
@@ -83,7 +83,7 @@ typedef CharType char_type;
 
 The type is a synonym for the template parameter **CharType**.
 
-##  <a name="close"></a>  messages::close
+## <a name="close"></a>  messages::close
 
 Closes the message catalog.
 
@@ -100,7 +100,7 @@ void close(catalog _Catval) const;
 
 The member function calls [do_close](#do_close)(_ *Catval*).
 
-##  <a name="do_close"></a>  messages::do_close
+## <a name="do_close"></a>  messages::do_close
 
 A virtual function called to lose the message catalog.
 
@@ -123,7 +123,7 @@ The protected member function closes the message catalog `_Catval`, which must h
 
 See the example for [close](#close), which calls `do_close`.
 
-##  <a name="do_get"></a>  messages::do_get
+## <a name="do_get"></a>  messages::do_get
 
 A virtual function called to retrieve the message catalog.
 
@@ -161,7 +161,7 @@ The protected member function tries to obtain a message sequence from the messag
 
 See the example for [get](#get), which calls `do_get`.
 
-##  <a name="do_open"></a>  messages::do_open
+## <a name="do_open"></a>  messages::do_open
 
 A virtual function called to open the message catalog.
 
@@ -193,7 +193,7 @@ The return value should be used as the argument on a later call to [close](#clos
 
 See the example for [open](#open), which calls `do_open`.
 
-##  <a name="get"></a>  messages::get
+## <a name="get"></a>  messages::get
 
 Retrieves the message catalog.
 
@@ -227,7 +227,7 @@ It returns a copy of `_Dfault` on failure. Otherwise, it returns a copy of the s
 
 The member function returns [do_get](#do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).
 
-##  <a name="messages"></a>  messages::messages
+## <a name="messages"></a>  messages::messages
 
 The message facet constructor function.
 
@@ -262,7 +262,7 @@ No direct examples are possible, because the destructor is protected.
 
 The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).
 
-##  <a name="open"></a>  messages::open
+## <a name="open"></a>  messages::open
 
 Opens the message catalog.
 
@@ -288,7 +288,7 @@ It returns a value that compares less than zero on failure. Otherwise, the retur
 
 The member function returns [do_open](#do_open)( `_Catname`, `_Loc`).
 
-##  <a name="string_type"></a>  messages::string_type
+## <a name="string_type"></a>  messages::string_type
 
 A type that describes a string of type `basic_string` containing characters of type **CharType**.
 

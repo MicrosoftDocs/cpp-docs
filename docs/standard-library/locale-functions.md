@@ -22,7 +22,7 @@ helpviewer_keywords: ["std::has_facet [C++]", "std::isalnum [C++]", "std::isalph
 |[isspace](#isspace)|[isupper](#isupper)|[isxdigit](#isxdigit)|
 |[tolower](#tolower)|[toupper](#toupper)|[use_facet](#use_facet)|
 
-##  <a name="has_facet"></a>  has_facet
+## <a name="has_facet"></a>  has_facet
 
 Tests if a particular facet is stored in a specified locale.
 
@@ -65,7 +65,7 @@ int main( )
 1
 ```
 
-##  <a name="isalnum"></a>  isalnum
+## <a name="isalnum"></a>  isalnum
 
 Tests whether an element in a locale is an alphabetic or a numeric character.
 
@@ -132,7 +132,7 @@ The character '@' in the locale is  not alphanumeric.
 The character '3' in the locale is alphanumeric.
 ```
 
-##  <a name="isalpha"></a>  isalpha
+## <a name="isalpha"></a>  isalpha
 
 Tests whether an element in a locale is an alphabetic character.
 
@@ -197,7 +197,7 @@ int main( )
 }
 ```
 
-##  <a name="iscntrl"></a>  iscntrl
+## <a name="iscntrl"></a>  iscntrl
 
 Tests whether an element in a locale is a control character.
 
@@ -262,7 +262,7 @@ int main( )
 }
 ```
 
-##  <a name="isdigit"></a>  isdigit
+## <a name="isdigit"></a>  isdigit
 
 Tests whether an element in a locale is a numeric character.
 
@@ -327,7 +327,7 @@ int main( )
 }
 ```
 
-##  <a name="isgraph"></a>  isgraph
+## <a name="isgraph"></a>  isgraph
 
 Tests whether an element in a locale is an alphanumeric or punctuation character.
 
@@ -392,7 +392,7 @@ int main( )
 }
 ```
 
-##  <a name="islower"></a>  islower
+## <a name="islower"></a>  islower
 
 Tests whether an element in a locale is lower case.
 
@@ -457,7 +457,7 @@ int main( )
 }
 ```
 
-##  <a name="isprint"></a>  isprint
+## <a name="isprint"></a>  isprint
 
 Tests whether an element in a locale is a printable character.
 
@@ -521,7 +521,7 @@ int main( )
 }
 ```
 
-##  <a name="ispunct"></a>  ispunct
+## <a name="ispunct"></a>  ispunct
 
 Tests whether an element in a locale is a punctuation character.
 
@@ -586,7 +586,7 @@ int main( )
 }
 ```
 
-##  <a name="isspace"></a>  isspace
+## <a name="isspace"></a>  isspace
 
 Tests whether an element in a locale is a whitespace character.
 
@@ -651,7 +651,7 @@ int main( )
 }
 ```
 
-##  <a name="isupper"></a>  isupper
+## <a name="isupper"></a>  isupper
 
 Tests whether an element in a locale is in upper case.
 
@@ -716,7 +716,7 @@ int main( )
 }
 ```
 
-##  <a name="isxdigit"></a>  isxdigit
+## <a name="isxdigit"></a>  isxdigit
 
 Tests whether an element in a locale is a character used to represent a hexadecimal number.
 
@@ -783,7 +783,7 @@ int main( )
 }
 ```
 
-##  <a name="tolower"></a>  tolower
+## <a name="tolower"></a>  tolower
 
 Converts a character to lower case.
 
@@ -832,7 +832,7 @@ int main( )
 }
 ```
 
-##  <a name="toupper"></a>  toupper
+## <a name="toupper"></a>  toupper
 
 Converts a character to upper case.
 
@@ -881,7 +881,7 @@ int main( )
 }
 ```
 
-##  <a name="use_facet"></a>  use_facet
+## <a name="use_facet"></a>  use_facet
 
 Returns a reference to a facet of a specified type stored in a locale.
 

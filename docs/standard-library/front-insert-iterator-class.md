@@ -64,7 +64,7 @@ The container must satisfy the requirements for a front insertion sequence where
 
 **Namespace:** std
 
-##  <a name="container_type"></a>  front_insert_iterator::container_type
+## <a name="container_type"></a>  front_insert_iterator::container_type
 
 A type that represents the container into which a front insertion is to be made.
 
@@ -106,7 +106,7 @@ The list L2 is: ( 40 10 20 ).
 *\
 ```
 
-##  <a name="front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator
+## <a name="front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator
 
 Creates an iterator that can insert elements at the front of a specified container object.
 
@@ -169,7 +169,7 @@ After the front insertions, the list L is:
 *\
 ```
 
-##  <a name="op_star"></a>  front_insert_iterator::operator*
+## <a name="op_star"></a>  front_insert_iterator::operator*
 
 Dereferences the insert iterator returning the element it addresses.
 
@@ -230,7 +230,7 @@ After the front insertions, the list L is:
 *\
 ```
 
-##  <a name="op_add_add"></a>  front_insert_iterator::operator++
+## <a name="op_add_add"></a>  front_insert_iterator::operator++
 
 Increments the `back_insert_iterator` to the next location into which a value may be stored.
 
@@ -281,7 +281,7 @@ The list L1 is: ( 30 20 10 ).
 *\
 ```
 
-##  <a name="op_eq"></a>  front_insert_iterator::operator=
+## <a name="op_eq"></a>  front_insert_iterator::operator=
 
 Appends (pushes) a value onto the front of the container.
 
@@ -343,7 +343,7 @@ The list L1 is: ( 30 20 10 ).
 *\
 ```
 
-##  <a name="reference"></a>  front_insert_iterator::reference
+## <a name="reference"></a>  front_insert_iterator::reference
 
 A type that provides a reference to an element in a sequence controlled by the associated container.
 

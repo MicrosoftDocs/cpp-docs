@@ -18,7 +18,7 @@ manager: "ghogen"
 |[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|[operator new](#op_new)|
 |[operator new[]](#op_new_arr)|
 
-##  <a name="op_delete"></a>  operator delete
+## <a name="op_delete"></a>  operator delete
 
 The function called by a delete expression to deallocate storage for individual of objects.
 
@@ -51,7 +51,7 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new](../standard-library/new-operators.md#op_new) for an example that use `operator delete`.
 
-##  <a name="op_delete_arr"></a>  operator delete[]
+## <a name="op_delete_arr"></a>  operator delete[]
 
 The function called by a delete expression to deallocate storage for an array of objects.
 
@@ -82,7 +82,7 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of the use of `operator delete[]`.
 
-##  <a name="op_new"></a>  operator new
+## <a name="op_new"></a>  operator new
 
 The function called by a new-expression to allocate storage for individual objects.
 
@@ -181,7 +181,7 @@ int main( )
 }
 ```
 
-##  <a name="op_new_arr"></a>  operator new[]
+## <a name="op_new_arr"></a>  operator new[]
 
 The allocation function called by a new expression to allocate storage for an array of objects.
 

@@ -55,7 +55,7 @@ The object stores an object of class `strstreambuf`.
 
 **Namespace:** std
 
-##  <a name="freeze"></a>  strstream::freeze
+## <a name="freeze"></a>  strstream::freeze
 
 Causes a stream buffer to be unavailable through stream buffer operations.
 
@@ -76,7 +76,7 @@ The member function calls [rdbuf](#rdbuf) -> [freeze](../standard-library/strstr
 
 See [strstreambuf::freeze](../standard-library/strstreambuf-class.md#freeze) for an example that uses **freeze**.
 
-##  <a name="pcount"></a>  strstream::pcount
+## <a name="pcount"></a>  strstream::pcount
 
 Returns a count of the number of elements written to the controlled sequence.
 
@@ -96,7 +96,7 @@ The member function returns [rdbuf](#rdbuf) -> [pcount](../standard-library/strs
 
 See [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) for a sample of using pcount.
 
-##  <a name="rdbuf"></a>  strstream::rdbuf
+## <a name="rdbuf"></a>  strstream::rdbuf
 
 Returns a pointer to the stream's associated strstreambuf object.
 
@@ -116,7 +116,7 @@ The member function returns the address of the stored stream buffer of type **po
 
 See [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) for a sample that uses `rdbuf`.
 
-##  <a name="str"></a>  strstream::str
+## <a name="str"></a>  strstream::str
 
 Calls [freeze](../standard-library/strstreambuf-class.md#freeze), and then returns a pointer to the beginning of the controlled sequence.
 
@@ -136,7 +136,7 @@ The member function returns [rdbuf](#rdbuf) -> [str](../standard-library/strstre
 
 See [strstreambuf::str](../standard-library/strstreambuf-class.md#str) for a sample that uses **str**.
 
-##  <a name="strstream"></a>  strstream::strstream
+## <a name="strstream"></a>  strstream::strstream
 
 Constructs an object of type `strstream`.
 

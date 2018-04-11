@@ -162,7 +162,7 @@ Distribution for 100 samples:
 
 **Namespace:** std
 
-##  <a name="discrete_distribution"></a>  discrete_distribution::discrete_distribution
+## <a name="discrete_distribution"></a>  discrete_distribution::discrete_distribution
 
 Constructs the distribution.
 
@@ -220,12 +220,13 @@ The iterator range constructor that has parameters *firstW* and *lastW* construc
 The initializer list constructor that has a *weightlist* parameter constructs a distribution object with weights from the intializer list *weightlist*.
 
 The constructor that has *count*, *low*, *high*, and *weightfunc* parameters constructs a distribution object initialized based on these rules:
--  If *count* < 1, **n** = 1, and as such is equivalent to the default constructor, always generating zero.
--  If *count* > 0, **n** = *count*. Provided **d** = (*high* - *low*) / **n** is greater than zero, using **d** uniform subranges, each weight is assigned as follows: `weight[k] = weightfunc(x)`, where **x** = *low* + **k** * **d** + **d** / 2, for **k** = 0, ..., **n** - 1.
+
+- If *count* < 1, **n** = 1, and as such is equivalent to the default constructor, always generating zero.
+- If *count* > 0, **n** = *count*. Provided **d** = (*high* - *low*) / **n** is greater than zero, using **d** uniform subranges, each weight is assigned as follows: `weight[k] = weightfunc(x)`, where **x** = *low* + **k** * **d** + **d** / 2, for **k** = 0, ..., **n** - 1.
 
 The constructor that has a `param_type` parameter *parm* constructs a distribution object using *parm* as the stored parameter structure.
 
-##  <a name="param_type"></a>  discrete_distribution::param_type
+## <a name="param_type"></a>  discrete_distribution::param_type
 
 Stores all the parameters of the distribution.
 

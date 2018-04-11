@@ -68,7 +68,7 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 **Namespace:** std
 
-##  <a name="assign"></a>  error_condition::assign
+## <a name="assign"></a>  error_condition::assign
 
 Assigns an error code value and category to an error condition.
 
@@ -87,7 +87,7 @@ void assign(value_type val, const error_category& _Cat);
 
 The member function stores `val` as the error code value and a pointer to `_Cat`.
 
-##  <a name="category"></a>  error_condition::category
+## <a name="category"></a>  error_condition::category
 
 Returns the error category.
 
@@ -101,7 +101,7 @@ A reference to the stored error category
 
 ### Remarks
 
-##  <a name="clear"></a>  error_condition::clear
+## <a name="clear"></a>  error_condition::clear
 
 Clears the error code value and category.
 
@@ -113,7 +113,7 @@ clear();
 
 The member function stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category) object.
 
-##  <a name="error_condition"></a>  error_condition::error_condition
+## <a name="error_condition"></a>  error_condition::error_condition
 
 Constructs an object of type `error_condition`.
 
@@ -144,7 +144,7 @@ The second constructor stores `val` as the error code value and a pointer to [er
 
 The third constructor stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-##  <a name="message"></a>  error_condition::message
+## <a name="message"></a>  error_condition::message
 
 Returns the name of the error code.
 
@@ -160,7 +160,7 @@ A `string` representing the name of the error code.
 
 This member function returns `category().message(value())`.
 
-##  <a name="op_eq_eq"></a>  error_condition::operator==
+## <a name="op_eq_eq"></a>  error_condition::operator==
 
 Tests for equality between `error_condition` objects.
 
@@ -182,7 +182,7 @@ bool operator==(const error_condition& right) const;
 
 The member operator returns `category() == right.category() && value == right.value()`.
 
-##  <a name="op_neq"></a>  error_condition::operator!=
+## <a name="op_neq"></a>  error_condition::operator!=
 
 Tests for inequality between `error_condition` objects.
 
@@ -204,7 +204,7 @@ bool operator!=(const error_condition& right) const;
 
 The member operator returns `!(*this == right)`.
 
-##  <a name="op_lt"></a>  error_condition::operator&lt;
+## <a name="op_lt"></a>  error_condition::operator&lt;
 
 Tests if the `error_condition` object is less than the `error_code` object passed in for comparison.
 
@@ -226,7 +226,7 @@ bool operator<(const error_condition& right) const;
 
 The member operator returns `category() < right.category() || category() == right.category() && value < right.value()`.
 
-##  <a name="op_eq"></a>  error_condition::operator=
+## <a name="op_eq"></a>  error_condition::operator=
 
 Assigns a new enumeration value to the `error_condition` object.
 
@@ -252,7 +252,7 @@ A reference to the `error_condition` object that is being assigned the new enume
 
 The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
 
-##  <a name="op_bool"></a>  error_condition::operator bool
+## <a name="op_bool"></a>  error_condition::operator bool
 
 Casts a variable of type `error_condition`.
 
@@ -268,7 +268,7 @@ The Boolean value of the `error_condition` object.
 
 The operator returns a value convertible to `true` only if [value](#value) is not equal to zero. The return type is convertible only to `bool`, not to `void *` or other known scalar types.
 
-##  <a name="value"></a>  error_condition::value
+## <a name="value"></a>  error_condition::value
 
 Returns the stored error code value.
 
@@ -282,7 +282,7 @@ The stored error code value of type [value_type](#value_type).
 
 ### Remarks
 
-##  <a name="value_type"></a>  error_condition::value_type
+## <a name="value_type"></a>  error_condition::value_type
 
 A type that represents the stored error code value.
 

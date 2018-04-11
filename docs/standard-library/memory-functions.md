@@ -29,7 +29,7 @@ ms.workload: ["cplusplus"]
 |[undeclare_reachable](#undeclare_reachable)|[uninitialized_copy](#uninitialized_copy)|[uninitialized_copy_n](#uninitialized_copy_n)|
 |[uninitialized_fill](#uninitialized_fill)|[uninitialized_fill_n](#uninitialized_fill_n)|
 
-##  <a name="addressof"></a>  addressof
+## <a name="addressof"></a>  addressof
 
 Gets the true address of an object.
 
@@ -49,7 +49,7 @@ The actual address of the object or function referenced by `Val`, even if an ove
 
 ### Remarks
 
-##  <a name="align"></a>  align
+## <a name="align"></a>  align
 
 Fits storage of the given size—aligned by the given alignment specification—into the first possible address of the given storage.
 
@@ -109,7 +109,7 @@ while (std::align(alignment, sizeof(MyObj), ptr, space)) {
 // possible to allow more aligned storage in this buffer.
 ```
 
-##  <a name="allocate_shared"></a>  allocate_shared
+## <a name="allocate_shared"></a>  allocate_shared
 
 Creates a `shared_ptr` to objects that are allocated and constructed for a given type by using a specified allocator. Returns the `shared_ptr`.
 
@@ -131,7 +131,7 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 The function creates the object `shared_ptr<Type>`, a pointer to `Type(Args...)` as allocated and constructed by `Alloc`.
 
-##  <a name="const_pointer_cast"></a>  const_pointer_cast
+## <a name="const_pointer_cast"></a>  const_pointer_cast
 
 Const cast to shared_ptr.
 
@@ -181,7 +181,7 @@ int main()
 sp1 == 3
 ```
 
-##  <a name="declare_no_pointers"></a>  declare_no_pointers
+## <a name="declare_no_pointers"></a>  declare_no_pointers
 
 Informs a garbage collector that the characters in the memory block defined by a base address pointer and block size contains no traceable pointers.
 
@@ -202,7 +202,7 @@ void declare_no_pointers(
 
 The function informs any garbage collector that the range of addresses `[ ptr, ptr + _Size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made reachable.)
 
-##  <a name="declare_reachable"></a>  declare_reachable
+## <a name="declare_reachable"></a>  declare_reachable
 
 Informs garbage collection that the indicated address is to allocated storage and is reachable.
 
@@ -219,7 +219,7 @@ void declare_reachable(void* ptr);
 
 If `ptr` is not null, the function informs any garbage collector that `ptr` is hereafter reachable (points to valid allocated storage).
 
-##  <a name="default_delete"></a>  default_delete
+## <a name="default_delete"></a>  default_delete
 
 Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.
 
@@ -244,7 +244,7 @@ Other
 
 The template class describes a `deleter` that deletes scalar objects allocated with `operator new`, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<Type[]>`.
 
-##  <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
+## <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
 
 Dynamic cast to shared_ptr.
 
@@ -305,7 +305,7 @@ int main()
 sp1->val == 3
 ```
 
-##  <a name="get_deleter"></a>  get_deleter
+## <a name="get_deleter"></a>  get_deleter
 
 Get deleter from shared_ptr.
 
@@ -374,7 +374,7 @@ get_deleter(sp0) != 0 == false
 get_deleter(sp1) != 0 == true
 ```
 
-##  <a name="get_pointer_safety"></a>  get_pointer_safety
+## <a name="get_pointer_safety"></a>  get_pointer_safety
 
 Returns the type of pointer safety assumed by any garbage collector.
 
@@ -386,7 +386,7 @@ pointer_safety get_pointer_safety();
 
 The function returns the type of pointer safety assumed by any automatic garbage collector.
 
-##  <a name="get_temporary_buffer"></a>  get_temporary_buffer
+## <a name="get_temporary_buffer"></a>  get_temporary_buffer
 
 Allocates temporary storage for a sequence of elements that does not exceed a specified number of elements.
 
@@ -443,7 +443,7 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 9.
 ```
 
-##  <a name="make_shared"></a>  make_shared
+## <a name="make_shared"></a>  make_shared
 
 Creates and returns a `shared_ptr` that points to the allocated objects that are constructed from zero or more arguments by using the default allocator. Allocates and constructs both an object of the specified type and a `shared_ptr` to manage shared ownership of the object, and returns the `shared_ptr`.
 
@@ -538,7 +538,7 @@ Playing Yesterday by The Beatles, use count: 3
 Playing Blackbird by The Beatles, use count: 3
 ```
 
-##  <a name="make_unique"></a>  make_unique
+## <a name="make_unique"></a>  make_unique
 
 Creates and returns a [unique_ptr](../standard-library/unique-ptr-class.md) to an object of the specified type, which is constructed by using the specified arguments.
 
@@ -595,7 +595,7 @@ The following example shows how to use `make_unique`. For more examples, see [Ho
 
 When you see error C2280 in connection with a `unique_ptr`, it is almost certainly because you are attempting to invoke its copy constructor, which is a deleted function.
 
-##  <a name="owner_less"></a>  owner_less
+## <a name="owner_less"></a>  owner_less
 
 Allows ownership-based mixed comparisons of shared and weak pointers. Returns `true` if the left parameter is ordered before right parameter by the member function `owner_before`.
 
@@ -646,7 +646,7 @@ struct owner_less<weak_ptr<Type>>
 
 The template classes define all their member operators as returning `left.owner_before(right)`.
 
-##  <a name="return_temporary_buffer"></a>  return_temporary_buffer
+## <a name="return_temporary_buffer"></a>  return_temporary_buffer
 
 Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.
 
@@ -702,7 +702,7 @@ The number of elements that the allocated memory
  could store is given by: resultPair.second = 7.
 ```
 
-##  <a name="static_pointer_cast"></a>  static_pointer_cast
+## <a name="static_pointer_cast"></a>  static_pointer_cast
 
 Static cast to shared_ptr.
 
@@ -762,7 +762,7 @@ int main()
 sp1->val == 3
 ```
 
-##  <a name="swap"></a>  swap (C++ Standard Library)
+## <a name="swap"></a>  swap (C++ Standard Library)
 
 Swap two shared_ptr or weak_ptr objects.
 
@@ -845,7 +845,7 @@ int main()
 *wp1 == 5
 ```
 
-##  <a name="undeclare_no_pointers"></a>  undeclare_no_pointers
+## <a name="undeclare_no_pointers"></a>  undeclare_no_pointers
 
 Informs a garbage collector that the characters in the memory block defined by a base address pointer and block size may now contain traceable pointers.
 
@@ -859,7 +859,7 @@ void undeclare_no_pointers(
 
 The function informs any garbage collector that the range of addresses `[ptr, ptr + _Size)` may now contain traceable pointers.
 
-##  <a name="undeclare_reachable"></a>  undeclare_reachable
+## <a name="undeclare_reachable"></a>  undeclare_reachable
 
 Revokes a declaration of reachability for a specified memory location.
 
@@ -878,7 +878,7 @@ Type *undeclare_reachable(Type* ptr);
 
 If `ptr` is not `nullptr`, the function informs any garbage collector that `ptr` is no longer reachable. It returns a safely-derived pointer that compares equal to `ptr`.
 
-##  <a name="uninitialized_copy"></a>  uninitialized_copy
+## <a name="uninitialized_copy"></a>  uninitialized_copy
 
 Copies objects from a specified source range into an uninitialized destination range.
 
@@ -983,7 +983,7 @@ int main()
 }
 ```
 
-##  <a name="uninitialized_copy_n"></a>  uninitialized_copy_n
+## <a name="uninitialized_copy_n"></a>  uninitialized_copy_n
 
 Creates a copy of a specified number of elements from an input iterator. The copies are put in a forward iterator.
 
@@ -1023,7 +1023,7 @@ The template function effectively executes the following:
 
 unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.
 
-##  <a name="uninitialized_fill"></a>  uninitialized_fill
+## <a name="uninitialized_fill"></a>  uninitialized_fill
 
 Copies objects of a specified value into an uninitialized destination range.
 
@@ -1095,7 +1095,7 @@ int main( )
 The initialized Array contains: 25 25 25 25 25 25 25 25 25 25
 ```
 
-##  <a name="uninitialized_fill_n"></a>  uninitialized_fill_n
+## <a name="uninitialized_fill_n"></a>  uninitialized_fill_n
 
 Copies objects of a specified value into specified number of elements into an uninitialized destination range.
 

@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 |-|-|
 |[swap](#istream_swap)|[ws](#ws)|
 
-##  <a name="istream_swap"></a>  swap
+## <a name="istream_swap"></a>  swap
 
 Exchanges the elements of two stream objects.
 
@@ -44,7 +44,7 @@ void swap(
 `right`
  A stream.
 
-##  <a name="ws"></a>  ws
+## <a name="ws"></a>  ws
 
 Skips white space in the stream.
 

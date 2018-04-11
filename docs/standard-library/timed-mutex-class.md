@@ -52,7 +52,7 @@ class timed_mutex;
 
 **Namespace:** std
 
-##  <a name="lock"></a>  timed_mutex::lock
+## <a name="lock"></a>  timed_mutex::lock
 
 Blocks the calling thread until the thread obtains ownership of the `mutex`.
 
@@ -64,7 +64,7 @@ void lock();
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="timed_mutex"></a>  timed_mutex::timed_mutex Constructor
+## <a name="timed_mutex"></a>  timed_mutex::timed_mutex Constructor
 
 Constructs a `timed_mutex` object that is not locked.
 
@@ -72,7 +72,7 @@ Constructs a `timed_mutex` object that is not locked.
 timed_mutex();
 ```
 
-##  <a name="dtortimed_mutex_destructor"></a>  timed_mutex::~timed_mutex Destructor
+## <a name="dtortimed_mutex_destructor"></a>  timed_mutex::~timed_mutex Destructor
 
 Releases any resources that are used by the `mutex` object.
 
@@ -84,7 +84,7 @@ Releases any resources that are used by the `mutex` object.
 
 If the object is locked when the destructor runs, the behavior is undefined.
 
-##  <a name="try_lock"></a>  timed_mutex::try_lock
+## <a name="try_lock"></a>  timed_mutex::try_lock
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -100,7 +100,7 @@ bool try_lock();
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="try_lock_for"></a>  timed_mutex::try_lock_for
+## <a name="try_lock_for"></a>  timed_mutex::try_lock_for
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -122,7 +122,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="try_lock_until"></a>  timed_mutex::try_lock_until
+## <a name="try_lock_until"></a>  timed_mutex::try_lock_until
 
 Attempts to obtain ownership of the `mutex` without blocking.
 
@@ -146,7 +146,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 If the calling thread already owns the `mutex`, the behavior is undefined.
 
-##  <a name="unlock"></a>  timed_mutex::unlock
+## <a name="unlock"></a>  timed_mutex::unlock
 
 Releases ownership of the `mutex`.
 

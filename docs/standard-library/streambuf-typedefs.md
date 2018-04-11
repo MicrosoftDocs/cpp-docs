@@ -17,7 +17,7 @@ manager: "ghogen"
 |-|-|
 |[streambuf](#streambuf)|[wstreambuf](#wstreambuf)|
 
-##  <a name="streambuf"></a>  streambuf
+## <a name="streambuf"></a>  streambuf
 
 A specialization of `basic_streambuf` that uses `char` as the template parameters.
 
@@ -29,7 +29,7 @@ typedef basic_streambuf<char, char_traits<char>> streambuf;
 
 The type is a synonym for the template class [basic_streambuf](../standard-library/basic-streambuf-class.md), specialized for elements of type `char` with default character traits.
 
-##  <a name="wstreambuf"></a>  wstreambuf
+## <a name="wstreambuf"></a>  wstreambuf
 
 A specialization of `basic_streambuf` that uses `wchar_t` as the template parameters.
 

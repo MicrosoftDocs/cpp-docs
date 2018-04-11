@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;istream&gt; operators
 
-##  <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a>  operator&gt;&gt;
 
 Extracts characters and strings from the stream.
 

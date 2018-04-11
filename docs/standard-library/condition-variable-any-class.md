@@ -51,7 +51,7 @@ class condition_variable_any;
 
 **Namespace:** std
 
-##  <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Constructor
+## <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Constructor
 
 Constructs a `condition_variable_any` object.
 
@@ -63,7 +63,7 @@ condition_variable_any();
 
 If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.
 
-##  <a name="notify_all"></a>  condition_variable_any::notify_all
+## <a name="notify_all"></a>  condition_variable_any::notify_all
 
 Unblocks all threads that are waiting for the `condition_variable_any` object.
 
@@ -71,7 +71,7 @@ Unblocks all threads that are waiting for the `condition_variable_any` object.
 void notify_all() noexcept;
 ```
 
-##  <a name="notify_one"></a>  condition_variable_any::notify_one
+## <a name="notify_one"></a>  condition_variable_any::notify_one
 
 Unblocks one of the threads that are waiting on the `condition_variable_any` object.
 
@@ -79,7 +79,7 @@ Unblocks one of the threads that are waiting on the `condition_variable_any` obj
 void notify_one() noexcept;
 ```
 
-##  <a name="wait"></a>  condition_variable_any::wait
+## <a name="wait"></a>  condition_variable_any::wait
 
 Blocks a thread.
 
@@ -110,7 +110,7 @@ while (!Pred())
     wait(Lck);
 ```
 
-##  <a name="wait_for"></a>  condition_variable_any::wait_for
+## <a name="wait_for"></a>  condition_variable_any::wait_for
 
 Blocks a thread, and sets a time interval after which the thread unblocks.
 
@@ -153,7 +153,7 @@ while(!Pred())
 return true;
 ```
 
-##  <a name="wait_until"></a>  condition_variable_any::wait_until
+## <a name="wait_until"></a>  condition_variable_any::wait_until
 
 Blocks a thread, and sets a maximum point in time at which the thread unblocks.
 

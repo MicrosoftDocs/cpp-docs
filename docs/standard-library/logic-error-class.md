@@ -59,8 +59,6 @@ int main( )
 }
 ```
 
-**Output**
-
 ```Output
 Caught: logic error
 Type: class std::logic_error

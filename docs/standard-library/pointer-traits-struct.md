@@ -30,6 +30,7 @@ struct pointer_traits;
 ## Remarks
 
 Ptr can be a raw pointer of type `Ty *` or a class with the following properties.
+
 ```cpp
 struct Ptr
    { // describes a pointer type usable by allocators
@@ -69,7 +70,7 @@ struct Ptr
 
 **Namespace:** std
 
-##  <a name="pointer_to"></a>  pointer_to
+## <a name="pointer_to"></a>  pointer_to
 
 Static method that returns `Ptr::pointer_to(obj)`, if that function exists. Otherwise, it is not possible to convert an arbitrary reference to an object of class `Ptr`. If `Ptr` is a raw pointer, this method returns `addressof(obj)`.
 
