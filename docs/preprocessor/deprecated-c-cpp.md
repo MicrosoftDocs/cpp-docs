@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 # deprecated (C/C++)
 The **deprecated** pragma lets you indicate that a function, type, or any other identifier may no longer be supported in a future release or should no longer be used.  
 > [!NOTE]
-> For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs the Microsoft declspec or pragma, see [C++ Standard Attributes](../cpp/attributes2.md) attribute.
+> For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs the Microsoft declspec or pragma, see [C++ Standard Attributes](../cpp/attributes.md) attribute.
   
 ## Syntax  
   
