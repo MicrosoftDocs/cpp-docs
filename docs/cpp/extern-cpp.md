@@ -27,7 +27,15 @@ extern string-literal declaration
 
 ## Remarks
 
-The **extern** keyword declares a variable or function and specifies that it is defined (or assigned a value) in another translation unit. The compiler treats the extern variable and the variable defined elsewhere as the same name. Such a variable has external linkage (its name is visible from files other than the one in which it's defined). Declarations of non-const variables and functions at global scope are external by default. See [Program and linkage](program-and-linkage-cpp.md) for more information.
+The **extern** keyword has three uses:
+
+1. in a global variable or function declaration it specifies that the variable or function is defined (or assigned a value) in another translation unit.
+2. with a "C" argument, it specifies that the function is defined elsewhere and uses the C-language calling convention.
+3. in a template declaration, it specifies that the template has already been instantiated elsewhere. This is an optimization that tells the compiler that it can use the other instantiation rather than creating a new one at the current location. For more information about this use of **extern**, see [Templates](templates-cpp.md).
+
+## extern linkage
+
+When the compiler sees **extern** before a global variable or function declaration, it makes a note for the linker that this program element is the same thing as some other element defined elsewhere with the same name. Such a name has external linkage (its name is visible from files other than the one in which it's defined). Declarations of non-const variables and functions at global scope are external by default. See [Program and linkage](program-and-linkage-cpp.md) for more information.
 
 The **extern** keyword is ignored if the declaration is also a definition. In the following, when the compiler sees the `int foo = 9;` in fileA.cpp, it treats it as a separate name from `foo` in FileB.cpp, and a linker error will be raised because a name can only appear once in a given scope. To fix the error, change `extern int foo = 9;` to `extern int foo;` so that the linker treats this `foo` variable as the same name as the one in fileB.cpp:
 
