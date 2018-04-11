@@ -1,7 +1,7 @@
 ---
 title: "Program and Linkage  (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/09/2018"
+ms.date: "04/12/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -15,11 +15,27 @@ ms.author: "mblome"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Program and Linkage  (C++)
+# Program and Linkage (C++)
 
-In a C++ program, each global symbol can be defined only once, even if the program consists of multiple translation units. A translation unit consists of an implementation file (.cpp, .hpp, .cxx, etc) and all the headers that it includes directly or indirectly. A program consists of one or more translation units linked together. 
+In a C++ program, a symbol (for example a variable or function name) can be declared any number of times within its scope, but it can only be defined once. This is the One Definition Rule (ODR). A declaration introduces (or re-introduces) a name into the program. A definition introduces a name and, in the case of a variable, explicitly initializes it. A function definition consists of the signature plus the function body.
 
-In general, the best way to make a variable or class declaration visible across multiple files is to put it in a header file (.h, .hpp, etc) and add an #include directive in every .cpp file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names it declares are only defined once.
+These are declarations:
+
+```cpp
+int i;
+int f(int x);
+```
+
+These are definitions:
+
+```cpp
+int i{42};
+int f(int x){ return x * i; }|
+```
+
+A program consists of one or more translation units. A translation unit consists of an implementation file (.cpp, .cxx, etc.) and all the headers (.h, .hpp, etc.)that it includes directly or indirectly. Each translation unit is compiled independently by the compiler, after which the linker merges the compiled translation units into a single program. Violations of the ODR rule typically show up as linker errors when the same name has two different definitions in different .cpp files.
+
+In general, the best way to make a variable visible across multiple files is to put it in a header file (.h, .hpp, etc) and add an #include directive in every .cpp file that requires the declaration. By adding *include guards* around the header contents, you ensure that the names it declares are only defined once.
 
 However, in some cases it may be necessary to declare a global variable or class in a .cpp file. In those cases, the concept linkage comes into play because you need a way to tell the compiler and linker whether the name of the object applies just to the one file, or to all files.
 
@@ -47,19 +63,7 @@ extern const int value = 42;
 
 See [extern](extern-cpp.md) for more information.
 
-## Extern constexpr linkage
 
-In Visual Studio 2017 version 15.3 and earlier, the compiler always gave a constexpr variable internal linkage even when the variable was marked extern. In Visual Studio 2017 version 15.5, a new compiler switch ([/Zc:externConstexpr](../build/reference/zc-externconstexpr.md)) enables correct standards-conforming behavior. Eventually this will become the default.
-
-```cpp
-extern constexpr int x = 10; //error LNK2005: "int const x" already defined
-```
-
-If a header file contains a variable declared extern constexpr, it needs to be marked **__declspec(selectany)** in order to correctly have its duplicate declarations combined:
-
-```cpp
-extern constexpr __declspec(selectany) int x = 10;
-```
 
 ## See Also
 

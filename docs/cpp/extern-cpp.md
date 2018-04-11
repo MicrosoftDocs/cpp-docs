@@ -59,6 +59,20 @@ extern const int i = 42; // extern const definition
 extern const int i;  // declaration only. same as i in FileA
 ```
 
+## extern constexpr linkage
+
+In Visual Studio 2017 version 15.3 and earlier, the compiler always gave a constexpr variable internal linkage even when the variable was marked extern. In Visual Studio 2017 version 15.5, a new compiler switch ([/Zc:externConstexpr](../build/reference/zc-externconstexpr.md)) enables correct standards-conforming behavior. Eventually this will become the default.
+
+```cpp
+extern constexpr int x = 10; //error LNK2005: "int const x" already defined
+```
+
+If a header file contains a variable declared extern constexpr, it needs to be marked **__declspec(selectany)** in order to correctly have its duplicate declarations combined:
+
+```cpp
+extern constexpr __declspec(selectany) int x = 10;
+```
+
 ## extern "C" and extern "C++" function declarations
 
  In C++, when used with a string, **extern** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they are previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
