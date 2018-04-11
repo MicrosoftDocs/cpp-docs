@@ -21,11 +21,11 @@ ms.workload: ["cplusplus"]
 
 Use these routines to create, delete, and manipulate files and to set and check file-access permissions.
 
- The C run-time libraries have a 512 limit for the number of files that can be open at any one time. Attempting to open more than the maximum number of file descriptors or file streams causes program failure. Use [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) to change this number.
+The C run-time libraries have a 512 limit for the number of files that can be open at any one time. Attempting to open more than the maximum number of file descriptors or file streams causes program failure. Use [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) to change this number.
 
 ## File-Handling Routines (File Descriptor)
 
- These routines operate on files designated by a file descriptor.
+These routines operate on files designated by a file descriptor.
 
 |Routine|Use|
 |-------------|---------|
@@ -40,7 +40,7 @@ Use these routines to create, delete, and manipulate files and to set and check 
 
 ## File-Handling Routines (Path or Filename)
 
- These routines operate on files specified by a path or filename.
+These routines operate on files specified by a path or filename.
 
 |Routine|Use|
 |-------------|---------|
@@ -58,7 +58,7 @@ Use these routines to create, delete, and manipulate files and to set and check 
 
 ## File-Handling Routines (Open File)
 
- These routines open files.
+These routines open files.
 
 |Routine|Use|
 |-------------|---------|
@@ -69,7 +69,7 @@ Use these routines to create, delete, and manipulate files and to set and check 
 |[_pipe](../c-runtime-library/reference/pipe.md)|Creates a pipe for reading and writing.|
 |[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s, _wfreopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md)|Reassign a file pointer.|
 
- These routines provide a way to change the representation of the file between a `FILE` structure, a file descriptor, and a Win32 file handle.
+These routines provide a way to change the representation of the file between a `FILE` structure, a file descriptor, and a Win32 file handle.
 
 |Routine|Use|
 |-------------|---------|
@@ -80,14 +80,14 @@ Use these routines to create, delete, and manipulate files and to set and check 
 
  The following Win32 functions also open files and pipes:
 
--   [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858.aspx)
+- [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858.aspx)
 
--   [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
+- [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
 
--   [CreateNamedPipe](http://msdn.microsoft.com/library/windows/desktop/aa365150.aspx)
+- [CreateNamedPipe](http://msdn.microsoft.com/library/windows/desktop/aa365150.aspx)
 
 ## See Also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [Directory Control](../c-runtime-library/directory-control.md)<br/>
- [System Calls](../c-runtime-library/system-calls.md)<br/>
+[Directory Control](../c-runtime-library/directory-control.md)<br/>
+[System Calls](../c-runtime-library/system-calls.md)<br/>

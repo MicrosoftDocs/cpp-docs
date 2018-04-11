@@ -54,11 +54,7 @@ The **abs**, **labs**, **llabs** and **_abs64** functions return the absolute va
 
 Because C++ allows overloading, you can call overloads of **abs** that take and return **long**, **long** **long**, **float**, **double**, and **long** **double** values. These overloads are defined in the \<cmath> header. In a C program, **abs** always takes and returns an int.
 
-**Microsoft Specific**
-
-Because the range of negative integers that can be represented by using any integral type is larger than the range of positive integers that can be represented by using that type, it's possible to supply an argument to these functions that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the **abs** functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns **INT_MIN**, `labs(LONG_MIN)` returns **LONG_MIN**, `llabs(LLONG_MIN)` returns **LLONG_MIN**, and `_abs64(_I64_MIN)` returns **_I64_MIN**. This means that the **abs** functions cannot be used to guarantee a positive value.
-
-**End Microsoft Specific**
+**Microsoft Specific**: Because the range of negative integers that can be represented by using any integral type is larger than the range of positive integers that can be represented by using that type, it's possible to supply an argument to these functions that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the **abs** functions return the argument value unchanged. Specifically, `abs(INT_MIN)` returns **INT_MIN**, `labs(LONG_MIN)` returns **LONG_MIN**, `llabs(LLONG_MIN)` returns **LLONG_MIN**, and `_abs64(_I64_MIN)` returns **_I64_MIN**. This means that the **abs** functions cannot be used to guarantee a positive value.
 
 ## Requirements
 
@@ -67,7 +63,7 @@ Because the range of negative integers that can be represented by using any inte
 |**abs**, **labs**, **llabs**|\<math.h> or \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> or \<math.h>|
 |**_abs64**|\<stdlib.h>|\<cstdlib> or \<stdlib.h>|
 
- To use the overloaded versions of **abs** in C++, you must include the \<cmath> header.
+To use the overloaded versions of **abs** in C++, you must include the \<cmath> header.
 
 ## Example
 
@@ -124,7 +120,6 @@ Microsoft implementation-specific results:
  labs(LONG_MIN) returns -2147483648
  llabs(LLONG_MIN) returns -9223372036854775808
  _abs64(_I64_MIN) returns 0x8000000000000000
-
 ```
 
 ## See Also
@@ -134,4 +129,3 @@ Microsoft implementation-specific results:
 [_cabs](../../c-runtime-library/reference/cabs.md)<br/>
 [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
 [imaxabs](../../c-runtime-library/reference/imaxabs.md)<br/>
-

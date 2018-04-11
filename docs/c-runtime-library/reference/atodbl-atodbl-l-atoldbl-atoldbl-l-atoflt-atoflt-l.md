@@ -26,58 +26,37 @@ Converts a string to a double (**_atodbl**), long double (**_atoldbl**), or floa
 
 ## Syntax
 
-```
-int _atodbl(
-   _CRT_DOUBLE * value,
-   char * str
-);
-int _atodbl_l (
-   _CRT_DOUBLE * value,
-   char * str,
-   locale_t locale
-);
-int _atoldbl(
-   _LDOUBLE * value,
-   char * str
-);
-int _atoldbl_l (
-   _LDOUBLE * value,
-   char * str,
-   locale_t locale
-);
-int _atoflt(
-   _CRT_FLOAT * value,
-   const char * str
-);
-int _atoflt_l(
-   _CRT_FLOAT * value,
-   const char * str,
-   locale_t locale
-);
+```C
+int _atodbl( _CRT_DOUBLE * value, char * str );
+int _atodbl_l ( _CRT_DOUBLE * value, char * str, locale_t locale );
+int _atoldbl( _LDOUBLE * value, char * str );
+int _atoldbl_l ( _LDOUBLE * value, char * str, locale_t locale );
+int _atoflt( _CRT_FLOAT * value, const char * str );
+int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 ```
 
-#### Parameters
+### Parameters
 
 *value*<br/>
- The double, long double, or float value that's produced by converting the string to a floating-point value. These values are wrapped in a structure.
+The double, long double, or float value that's produced by converting the string to a floating-point value. These values are wrapped in a structure.
 
- *str*<br/>
- The string to be parsed to convert into a floating-point value.
+*str*<br/>
+The string to be parsed to convert into a floating-point value.
 
- *locale*<br/>
- The locale to use.
+*locale*<br/>
+The locale to use.
 
 ## Return Value
 
-Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file Math.h.
+Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file \<math.h>.
 
 ## Remarks
 
 These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.
 
- If a string does not have a valid interpretation as a floating-point value, *value* is set to zero and the return value is zero.
+If a string does not have a valid interpretation as a floating-point value, *value* is set to zero and the return value is zero.
 
- The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *locale* parameter that's passed in instead of the current thread locale.
+The versions of these functions that have the **_l** suffix are identical the versions that don't have the suffix, except that they use the *locale* parameter that's passed in instead of the current thread locale.
 
 ## Requirements
 
@@ -137,13 +116,13 @@ Return value: 0
 Float value: 0.000000
 Return value: 0
 
-Float value: 1.#INF00
+Float value: inf
 Return value: 3
 ```
 
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [Locale](../../c-runtime-library/locale.md)<br/>
- [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>

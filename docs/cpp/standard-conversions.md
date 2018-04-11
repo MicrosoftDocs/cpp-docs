@@ -109,8 +109,7 @@ int main()
   
  Objects of unsigned integral types can be converted to corresponding signed types. However, such a conversion can cause misinterpretation of data if the value of the unsigned object is outside the range representable by the signed type, as demonstrated in the following example:  
   
-```  
-  
+```cpp
 #include <iostream>  
   
 using namespace std;  
@@ -131,11 +130,11 @@ int main()
   
  An object of a floating type can also be converted to a less precise type, if it is in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value cannot be represented precisely, it can be converted to either the next higher or the next lower representable value. If no such value exists, the result is undefined. Consider the following example:  
   
-```  
+```cpp
 cout << (float)1E300 << endl;  
 ```  
   
- The maximum value representable by type **float** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is 1.#INF.  
+ The maximum value representable by type **float** is 3.402823466E38 — a much smaller number than 1E300. Therefore, the number is converted to infinity, and the result is "inf".  
   
 ## Conversions between integral and floating point types  
  Certain expressions can cause objects of floating type to be converted to integral types, or vice versa. When an object of integral type is converted to a floating type and the original value cannot be represented exactly, the result is either the next higher or the next lower representable value.  

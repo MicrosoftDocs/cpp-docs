@@ -139,10 +139,10 @@ int _matherr( struct _exception *except )
 
 ```Output
 Special: using absolute value: log: _DOMAIN error
-log( -2.0 ) = 6.931472e-001
+log( -2.0 ) = 6.931472e-01
 Special: using absolute value: log10: _DOMAIN error
-log10( -5.0 ) = 6.989700e-001
-Normal: log( 0.0 ) = -1.#INF00e+000
+log10( -5.0 ) = 6.989700e-01
+Normal: log( 0.0 ) = -inf
 ```
 
 ## See also
