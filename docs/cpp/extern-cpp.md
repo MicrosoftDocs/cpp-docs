@@ -1,7 +1,7 @@
 ---
 title: "extern (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/06/2018"
+ms.date: "04/12/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -18,55 +18,48 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # extern (C++)
-## Syntax
 
-```
-extern string-literal { declaration-list }
-extern string-literal declaration
-```
+The **extern** keyword is applied to a global variable, function or template declaration to specify that the name of that thing has *external linkage*. For background information on linkage and why the use of global variables is discouraged, see [Program and linkage](program-and-linkage-cpp.md).
 
-## Remarks
+The **extern** keyword has four meanings depending on the context:
 
-The **extern** keyword has three uses:
+1. in a non-const global variable declaration, **extern** specifies that the variable or function is defined in another translation unit. The **extern** must be applied in all files except the one where the variable is defined.
+1. in a const variable declaration, it specifies that the variable has external linkage. The **extern** must be applied to all declarations in all files. (Global const variables have internal linkage by default.)
+1. **extern "C"** specifies that the function is defined elsewhere and uses the C-language calling convention. The extern "C" modifier may also be applied to multiple function declarations in a block.
+1. in a template declaration, it specifies that the template has already been instantiated elsewhere. This is an optimization that tells the compiler that it can re-use the other instantiation rather than creating a new one at the current location. For more information about this use of **extern**, see [Templates](templates-cpp.md).
 
-1. in a global variable or function declaration it specifies that the variable or function is defined (or assigned a value) in another translation unit.
-2. with a "C" argument, it specifies that the function is defined elsewhere and uses the C-language calling convention.
-3. in a template declaration, it specifies that the template has already been instantiated elsewhere. This is an optimization that tells the compiler that it can use the other instantiation rather than creating a new one at the current location. For more information about this use of **extern**, see [Templates](templates-cpp.md).
+## extern linkage for non-const globals
 
-## extern linkage
-
-When the compiler sees **extern** before a global variable or function declaration, it makes a note for the linker that this program element is the same thing as some other element defined elsewhere with the same name. Such a name has external linkage (its name is visible from files other than the one in which it's defined). Declarations of non-const variables and functions at global scope are external by default. See [Program and linkage](program-and-linkage-cpp.md) for more information.
-
-The **extern** keyword is ignored if the declaration is also a definition. In the following, when the compiler sees the `int foo = 9;` in fileA.cpp, it treats it as a separate name from `foo` in FileB.cpp, and a linker error will be raised because a name can only appear once in a given scope. To fix the error, change `extern int foo = 9;` to `extern int foo;` so that the linker treats this `foo` variable as the same name as the one in fileB.cpp:
+When the linker sees **extern** before a global variable declaration, it looks for the definition in another translation unit. Declarations of non-const variables at global scope are external by default; only apply **extern** to the declarations that don't provide the definition.
 
 ```cpp
 //fileA.cpp
-extern int foo = 9; // Error. extern is ignored.
+int i = 42; // declaration and definition
 
 //fileB.cpp
-int foo = 0;
+extern int i;  // declaration only. same as i in FileA
+
+//fileC.cpp
+extern int i;  // declaration only. same as i in FileA
+
+//fileD.cpp
+int i = 43; // LNK2005! 'i' already has a definition.
+extern int i = 43; // same error (extern is ignored on definitions)
 ```
 
-## Example
+## extern linkage for const globals
+
+A **const** global variable has internal linkage by default. If you want the variable to have external linkage, apply the **extern** keyword to definition as well as to all other declarations in other files:
 
 ```cpp
-// specifying_linkage1.cpp
-int i = 1;
-void other();
+//fileA.cpp
+extern const int i = 42; // extern const definition
 
-int main() {
-   // Reference to i, defined above:
-   extern int i;
-}
-
-void other() {
-   // Address of global i assigned to pointer variable:
-   static int *external_i = &i;
-
-   // i will be redefined; global i no longer visible:
-   // int i = 16;
-}
+//fileB.cpp
+extern const int i;  // declaration only. same as i in FileA
 ```
+
+## extern "C" and extern "C++" function declarations
 
  In C++, when used with a string, **extern** specifies that the linkage conventions of another language are being used for the declarator(s). C functions and data can be accessed only if they are previously declared as having C linkage. However, they must be defined in a separately compiled translation unit.
 
@@ -74,40 +67,37 @@ void other() {
 
 ## Example
 
-The following example shows alternative ways to declare names that have C linkage:
+The following example shows how to declare names that have C linkage:
 
 ```cpp
-// specifying_linkage2.cpp
-// compile with: /c
 // Declare printf with C linkage.
-extern "C" int printf( const char *fmt, ... );
+extern "C" int printf(const char *fmt, ...);
 
-//  Cause everything in the specified header files
-//   to have C linkage.
+//  Cause everything in the specified
+//  header files to have C linkage.
 extern "C" {
-   // add your #include statements here
-   #include <stdio.h>
+    // add your #include statements here
+#include <stdio.h>
 }
 
-//  Declare the two functions ShowChar and GetChar
-//   with C linkage.
+//  Declare the two functions ShowChar
+//  and GetChar with C linkage.
 extern "C" {
-   char ShowChar( char ch );
-   char GetChar( void );
+    char ShowChar(char ch);
+    char GetChar(void);
 }
 
-//  Define the two functions ShowChar and GetChar
-//   with C linkage.
-extern "C" char ShowChar( char ch ) {
-   putchar( ch );
-   return ch;
+//  Define the two functions 
+//  ShowChar and GetChar with C linkage.
+extern "C" char ShowChar(char ch) {
+    putchar(ch);
+    return ch;
 }
 
-extern "C" char GetChar( void ) {
-   char ch;
-
-   ch = getchar();
-   return ch;
+extern "C" char GetChar(void) {
+    char ch;
+    ch = getchar();
+    return ch;
 }
 
 // Declare a global variable, errno, with C linkage.
@@ -132,6 +122,7 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 ## See Also
 
 - [Keywords](../cpp/keywords-cpp.md)
+- [Program and linkage](program-and-linkage-cpp.md)
 - [extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md) 
 - [Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md) 
 - [Linkage in C](../c-language/linkage.md)
