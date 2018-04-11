@@ -46,7 +46,7 @@ int fpclassify(
 ### Parameters
 
 *x*<br/>
- The floating-point value to test.
+The floating-point value to test.
 
 ## Return Value
 
@@ -70,9 +70,9 @@ In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded
 |---------------------|---------------------------|-------------------------------|
 |**fpclassify**|\<math.h>|\<math.h> or \<cmath>|
 
- The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
+[isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>

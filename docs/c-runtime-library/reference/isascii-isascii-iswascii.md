@@ -39,7 +39,7 @@ int iswascii(
 
 ### Parameters
 
-*c*  
+*c*
 Integer to test.
 
 ## Return Value
@@ -69,6 +69,6 @@ The `isascii`, `__isascii` and `iswascii` functions are Microsoft specific. For 
 
 ## See Also
 
-[Character Classification](../../c-runtime-library/character-classification.md)   
-[Locale](../../c-runtime-library/locale.md)   
+[Character Classification](../../c-runtime-library/character-classification.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
 [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

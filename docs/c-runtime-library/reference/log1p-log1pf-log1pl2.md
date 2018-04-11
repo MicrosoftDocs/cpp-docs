@@ -51,13 +51,13 @@ long double log1pl(
 ### Parameters
 
 *x*<br/>
- The floating-point argument.
+The floating-point argument.
 
 ## Return Value
 
 If successful, returns the natural (base-*e*) log of (*x* + 1).
 
- Otherwise, may return one of the following values:
+Otherwise, may return one of the following values:
 
 |Input|Result|SEH exception|errno|
 |-----------|------------|-------------------|-----------|
@@ -70,15 +70,15 @@ If successful, returns the natural (base-*e*) log of (*x* + 1).
 |±SNaN|Same as input|INVALID||
 |±QNaN, indefinite|Same as input|||
 
- The **errno** value is set to ERANGE if *x* = -1. The **errno** value is set to **EDOM** if *x* < -1.
+The **errno** value is set to ERANGE if *x* = -1. The **errno** value is set to **EDOM** if *x* < -1.
 
 ## Remarks
 
 The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is near 0.
 
- Because C++ allows overloading, you can call overloads of **log1p** that take and return **float** and **long** **double** types. In a C program, **log1p** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **log1p** that take and return **float** and **long** **double** types. In a C program, **log1p** always takes and returns a **double**.
 
- If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
+If *x* is a natural number, this function returns the logarithm of the factorial of (*x* - 1).
 
 ## Requirements
 
@@ -86,10 +86,10 @@ The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is
 |--------------|--------------|------------------|
 |**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>
- [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>
+[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>

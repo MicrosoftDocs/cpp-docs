@@ -103,14 +103,13 @@ File could not be opened: No such file or directory
 
 ## See also
 
-[Using abort](../../cpp/using-abort.md)  
-[abort Function](../../c-language/abort-function-c.md)  
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)  
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)  
-[raise](../../c-runtime-library/reference/raise.md)  
-[signal](../../c-runtime-library/reference/signal.md)  
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)  
-[_DEBUG](../../c-runtime-library/debug.md)  
-[_set_abort_behavior](../../c-runtime-library/reference/set-abort-behavior.md)  
-
+[Using abort](../../cpp/using-abort.md)<br/>
+[abort Function](../../c-language/abort-function-c.md)<br/>
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
+[raise](../../c-runtime-library/reference/raise.md)<br/>
+[signal](../../c-runtime-library/reference/signal.md)<br/>
+[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_DEBUG](../../c-runtime-library/debug.md)<br/>
+[_set_abort_behavior](../../c-runtime-library/reference/set-abort-behavior.md)

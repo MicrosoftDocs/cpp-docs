@@ -47,7 +47,7 @@ long double floorl(
 ### Parameters
 
 *x*<br/>
- Floating-point value.
+Floating-point value.
 
 ## Return Value
 
@@ -57,7 +57,7 @@ The **floor** functions return a floating-point value that represents the larges
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|none|_DOMAIN|
 
- **floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).
+**floor** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).
 
 ## Remarks
 
@@ -69,7 +69,7 @@ C++ allows overloading, so you can call overloads of **floor** that take and ret
 |--------------|---------------------|
 |**floor**, **floorf**, **floorl**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -109,6 +109,6 @@ The ceil of -2.8 is -2.000000
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
- [round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
- [fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
+[ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
+[round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
+[fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>

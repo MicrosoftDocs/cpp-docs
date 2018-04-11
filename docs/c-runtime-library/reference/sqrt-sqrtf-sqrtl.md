@@ -47,7 +47,7 @@ long double sqrtl(
 ### Parameters
 
 *x*<br/>
- Non-negative floating-point value
+Non-negative floating-point value
 
 ## Remarks
 
@@ -69,7 +69,7 @@ The **sqrt** functions return the square-root of *x*. By default, if *x* is nega
 |--------------|--------------|------------------|
 |**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
 
- For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -99,7 +99,7 @@ The square root of 45.35 is 6.73
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
- [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
- [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
- [_CIsqrt](../../c-runtime-library/cisqrt.md)<br/>
+[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
+[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
+[_CIsqrt](../../c-runtime-library/cisqrt.md)<br/>

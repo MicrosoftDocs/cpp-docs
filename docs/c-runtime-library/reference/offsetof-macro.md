@@ -21,49 +21,49 @@ ms.workload: ["cplusplus"]
 ---
 # offsetof Macro
 
-Retrieves the offset of a member from the beginning of its parent structure.  
-  
-## Syntax  
-  
-```  
-  
-      size_t offsetof(  
-   structName,  
-   memberName   
-);  
-```  
-  
-### Parameters  
+Retrieves the offset of a member from the beginning of its parent structure.
 
-*structName*  
- Name of the parent data structure.  
-  
- `memberName`  
- Name of the member in the parent data structure for which to determine the offset.  
-  
-## Return Value  
+## Syntax
 
-`offsetof` returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.  
-  
-## Remarks  
+```
 
-The `offsetof` macro returns the offset in bytes of `memberName` from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.  
-  
+      size_t offsetof(
+   structName,
+   memberName
+);
+```
+
+### Parameters
+
+*structName*
+Name of the parent data structure.
+
+`memberName`
+Name of the member in the parent data structure for which to determine the offset.
+
+## Return Value
+
+`offsetof` returns the offset in bytes of the specified member from the beginning of its parent data structure. It is undefined for bit fields.
+
+## Remarks
+
+The `offsetof` macro returns the offset in bytes of `memberName` from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.
+
 > [!NOTE]
->  `offsetof` is not a function and cannot be described using a C prototype.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`offsetof`|\<stddef.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Libraries  
+>  `offsetof` is not a function and cannot be described using a C prototype.
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## See Also  
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`offsetof`|\<stddef.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## See Also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)

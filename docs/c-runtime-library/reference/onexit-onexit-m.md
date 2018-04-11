@@ -22,99 +22,99 @@ ms.workload: ["cplusplus"]
 ---
 # _onexit, _onexit_m
 
-Registers a routine to be called at exit time.  
-  
-## Syntax  
-  
-```  
-_onexit_t _onexit(  
-   _onexit_t function  
-);  
-_onexit_t_m _onexit_m(  
-   _onexit_t_m function  
-);  
-```  
-  
-### Parameters  
+Registers a routine to be called at exit time.
 
-`function`  
- Pointer to a function to be called at exit.  
-  
-## Return Value  
+## Syntax
 
-`_onexit` returns a pointer to the function if successful or `NULL` if there is no space to store the function pointer.  
-  
-## Remarks  
+```
+_onexit_t _onexit(
+   _onexit_t function
+);
+_onexit_t_m _onexit_m(
+   _onexit_t_m function
+);
+```
 
-The `_onexit` function is passed the address of a function (`function`) to be called when the program terminates normally. Successive calls to `_onexit` create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to `_onexit` cannot take parameters.  
-  
- In the case when `_onexit` is called from within a DLL, routines registered with `_onexit` run on a DLL's unloading after `DllMain` is called with DLL_PROCESS_DETACH.  
-  
- `_onexit` is a Microsoft extension. For ANSI portability, use [atexit](../../c-runtime-library/reference/atexit.md). The `_onexit_m` version of the function is for mixed mode use.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_onexit`|\<stdlib.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
-  
-```  
-// crt_onexit.c  
-  
-#include <stdlib.h>  
-#include <stdio.h>  
-  
-/* Prototypes */  
-int fn1(void), fn2(void), fn3(void), fn4 (void);  
-  
-int main( void )  
-{  
-   _onexit( fn1 );  
-   _onexit( fn2 );  
-   _onexit( fn3 );  
-   _onexit( fn4 );  
-   printf( "This is executed first.\n" );  
-}  
-  
-int fn1()  
-{  
-   printf( "next.\n" );  
-   return 0;  
-}  
-  
-int fn2()  
-{  
-   printf( "executed " );  
-   return 0;  
-}  
-  
-int fn3()  
-{  
-   printf( "is " );  
-   return 0;  
-}  
-  
-int fn4()  
-{  
-   printf( "This " );  
-   return 0;  
-}  
-```  
-  
-## Output  
-  
-```  
-This is executed first.  
-This is executed next.  
-```  
-  
-## See Also  
+### Parameters
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
- [atexit](../../c-runtime-library/reference/atexit.md)   
- [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
- [__dllonexit](../../c-runtime-library/dllonexit.md)
+`function`
+Pointer to a function to be called at exit.
+
+## Return Value
+
+`_onexit` returns a pointer to the function if successful or `NULL` if there is no space to store the function pointer.
+
+## Remarks
+
+The `_onexit` function is passed the address of a function (`function`) to be called when the program terminates normally. Successive calls to `_onexit` create a register of functions that are executed in LIFO (last-in-first-out) order. The functions passed to `_onexit` cannot take parameters.
+
+In the case when `_onexit` is called from within a DLL, routines registered with `_onexit` run on a DLL's unloading after `DllMain` is called with DLL_PROCESS_DETACH.
+
+`_onexit` is a Microsoft extension. For ANSI portability, use [atexit](../../c-runtime-library/reference/atexit.md). The `_onexit_m` version of the function is for mixed mode use.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_onexit`|\<stdlib.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+```
+// crt_onexit.c
+
+#include <stdlib.h>
+#include <stdio.h>
+
+/* Prototypes */
+int fn1(void), fn2(void), fn3(void), fn4 (void);
+
+int main( void )
+{
+   _onexit( fn1 );
+   _onexit( fn2 );
+   _onexit( fn3 );
+   _onexit( fn4 );
+   printf( "This is executed first.\n" );
+}
+
+int fn1()
+{
+   printf( "next.\n" );
+   return 0;
+}
+
+int fn2()
+{
+   printf( "executed " );
+   return 0;
+}
+
+int fn3()
+{
+   printf( "is " );
+   return 0;
+}
+
+int fn4()
+{
+   printf( "This " );
+   return 0;
+}
+```
+
+## Output
+
+```
+This is executed first.
+This is executed next.
+```
+
+## See Also
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[atexit](../../c-runtime-library/reference/atexit.md)<br/>
+[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
+[__dllonexit](../../c-runtime-library/dllonexit.md)

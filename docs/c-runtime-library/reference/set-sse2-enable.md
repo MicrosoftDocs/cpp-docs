@@ -35,7 +35,7 @@ int _set_SSE2_enable(
 ### Parameters
 
 *flag*<br/>
- 1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.
+1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.
 
 ## Return Value
 
@@ -61,12 +61,12 @@ The following functions have SSE2 implementations that can be enabled by using *
 
 -   [pow](../../c-runtime-library/reference/pow-powf-powl.md)
 
- The SSE2 implementations of these functions might give slightly different answers than the default implementations, because SSE2 intermediate values are 64-bit floating-point quantities but the default implementation intermediate values are 80-bit floating-point quantities.
+The SSE2 implementations of these functions might give slightly different answers than the default implementations, because SSE2 intermediate values are 64-bit floating-point quantities but the default implementation intermediate values are 80-bit floating-point quantities.
 
 > [!NOTE]
 >  If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **_set_SSE2_enable** has no effect. The `/Oi` compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **_set_SSE2_enable**. If you want to guarantee that `/Oi` does not override **_set_SSE2_enable**, use `/Oi-` to compile your project. This might also be good practice when you use other compiler switches that imply `/Oi`.
 
- The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md) to mask exceptions.
+The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md) to mask exceptions.
 
 ## Requirements
 
@@ -74,7 +74,7 @@ The following functions have SSE2 implementations that can be enabled by using *
 |-------------|---------------------|
 |**_set_SSE2_enable**|\<math.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
@@ -95,9 +95,9 @@ int main()
 }
 ```
 
- **Output**
+**Output**
 
- `SSE2 enabled.`
+`SSE2 enabled.`
 
 ## See Also
 

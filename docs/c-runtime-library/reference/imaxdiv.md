@@ -36,10 +36,10 @@ imaxdiv_t imaxdiv(
 ### Parameters
 
 *numer*<br/>
- The numerator.
+The numerator.
 
- *denom*<br/>
- The denominator.
+*denom*<br/>
+The denominator.
 
 ## Return Value
 
@@ -55,7 +55,7 @@ The **imaxdiv** function divides *numer* by *denom* and thereby computes the quo
 |-------------|---------------------|
 |**imaxdiv**|\<inttypes.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 }
 ```
 
- When built and then called with command line parameters of `9460730470000000 8766`, the code generates this output:
+When built and then called with command line parameters of `9460730470000000 8766`, the code generates this output:
 
 ```Output
 The call to imaxdiv(9460730470000000, 8766)
@@ -95,5 +95,5 @@ results in a quotient of 1079252848505, and a remainder of 5170
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [div](../../c-runtime-library/reference/div.md)<br/>
- [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>
+[div](../../c-runtime-library/reference/div.md)<br/>
+[ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>

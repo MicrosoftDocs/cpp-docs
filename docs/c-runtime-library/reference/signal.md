@@ -32,10 +32,10 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 ```
 
 ### Parameters
-_sig_  
+_sig_
 Signal value.
 
-_func_  
+_func_
 The second parameter is a pointer to the function to be executed. The first parameter is a signal value and the second parameter is a sub-code that can be used when the first parameter is SIGFPE.
 
 ## Return Value
@@ -141,9 +141,9 @@ Please contact the application's support team for more information.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[abort](../../c-runtime-library/reference/abort.md)  
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)  
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)  
-[_fpreset](../../c-runtime-library/reference/fpreset.md)  
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)  
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[abort](../../c-runtime-library/reference/abort.md)<br/>
+[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
+[_fpreset](../../c-runtime-library/reference/fpreset.md)<br/>
+[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)

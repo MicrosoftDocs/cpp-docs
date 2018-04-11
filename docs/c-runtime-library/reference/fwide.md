@@ -22,37 +22,37 @@ ms.workload: ["cplusplus"]
 ---
 # fwide
 
-Unimplemented.  
-  
-## Syntax  
-  
-```  
-int fwide(  
-   FILE *stream,  
-   int mode;  
-);  
-```  
-  
-### Parameters  
+Unimplemented.
 
-`stream`  
- Pointer to `FILE` structure (ignored).  
-  
- `mode`  
- The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)  
-  
-## Return Value  
+## Syntax
 
-This function currently just returns `mode`.  
-  
-## Remarks  
+```
+int fwide(
+   FILE *stream,
+   int mode;
+);
+```
 
-The current version of this function does not comply with the Standard.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`fwide`|\<wchar.h>|  
-  
- For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
+### Parameters
+
+`stream`
+Pointer to `FILE` structure (ignored).
+
+`mode`
+The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)
+
+## Return Value
+
+This function currently just returns `mode`.
+
+## Remarks
+
+The current version of this function does not comply with the Standard.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|`fwide`|\<wchar.h>|
+
+For more information, see [Compatibility](../../c-runtime-library/compatibility.md).

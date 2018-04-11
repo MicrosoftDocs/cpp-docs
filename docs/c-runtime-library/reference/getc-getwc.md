@@ -22,112 +22,112 @@ ms.workload: ["cplusplus"]
 ---
 # getc, getwc
 
-Read a character from a stream.  
-  
-## Syntax  
-  
-```  
-int getc(   
-   FILE *stream   
-);  
-wint_t getwc(   
-   FILE *stream   
-);  
-```  
-  
-### Parameters  
+Read a character from a stream.
 
-`stream`  
- Input stream.  
-  
-## Return Value  
+## Syntax
 
-Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for `getwc`) and set `errno` to `EINVAL`.  
-  
- See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.  
-  
-## Remarks  
+```
+int getc(
+   FILE *stream
+);
+wint_t getwc(
+   FILE *stream
+);
+```
 
-Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with `stream`.  
-  
- These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](../../c-runtime-library/reference/getc-nolock-getwc-nolock.md).  
-  
- Routine-specific remarks follow.  
-  
-|Routine|Remarks|  
-|-------------|-------------|  
-|`getc`|Same as `fgetc`, but implemented as a function and as a macro.|  
-|`getwc`|Wide-character version of `getc`. Reads a multibyte character or a wide character according to whether `stream` is opened in text mode or binary mode.|  
-  
-### Generic-Text Routine Mappings  
-  
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_gettc`|`getc`|`getc`|`getwc`|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`getc`|\<stdio.h>|  
-|`getwc`|\<stdio.h> or \<wchar.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
-  
-```  
-// crt_getc.c  
-// Use getc to read a line from a file.  
-  
-#include <stdio.h>  
-  
-int main()  
-{  
-    char buffer[81];  
-    int i, ch;  
-    FILE* fp;  
-  
-    // Read a single line from the file "crt_getc.txt".   
-  
-    fopen_s(&fp, "crt_getc.txt", "r");  
-    if (!fp)  
-    {  
-       printf("Failed to open file crt_getc.txt.\n");  
-       exit(1);  
-    }  
-  
-    for (i = 0; (i < 80) && ((ch = getc(fp)) != EOF)  
-                         && (ch != '\n'); i++)  
-    {  
-        buffer[i] = (char) ch;  
-    }  
-  
-    // Terminate string with a null character   
-    buffer[i] = '\0';  
-    printf( "Input was: %s\n", buffer);  
-  
-    fclose(fp);  
-}  
-```  
-  
-## Input: crt_getc.txt  
-  
-```  
-Line one.  
-Line two.  
-```  
-  
-### Output  
-  
-```  
-Input was: Line one.  
-```  
-  
-## See Also  
+### Parameters
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
- [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)   
- [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)   
- [ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)
+`stream`
+Input stream.
+
+## Return Value
+
+Returns the character read. To indicate a read error or end-of-file condition, `getc` returns `EOF`, and `getwc` returns `WEOF`. For `getc`, use `ferror` or `feof` to check for an error or for end of file. If `stream` is `NULL`, `getc` and `getwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` (or `WEOF` for `getwc`) and set `errno` to `EINVAL`.
+
+See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
+
+## Remarks
+
+Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with `stream`.
+
+These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](../../c-runtime-library/reference/getc-nolock-getwc-nolock.md).
+
+Routine-specific remarks follow.
+
+|Routine|Remarks|
+|-------------|-------------|
+|`getc`|Same as `fgetc`, but implemented as a function and as a macro.|
+|`getwc`|Wide-character version of `getc`. Reads a multibyte character or a wide character according to whether `stream` is opened in text mode or binary mode.|
+
+### Generic-Text Routine Mappings
+
+|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|`_gettc`|`getc`|`getc`|`getwc`|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`getc`|\<stdio.h>|
+|`getwc`|\<stdio.h> or \<wchar.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+```
+// crt_getc.c
+// Use getc to read a line from a file.
+
+#include <stdio.h>
+
+int main()
+{
+    char buffer[81];
+    int i, ch;
+    FILE* fp;
+
+    // Read a single line from the file "crt_getc.txt".
+
+    fopen_s(&fp, "crt_getc.txt", "r");
+    if (!fp)
+    {
+       printf("Failed to open file crt_getc.txt.\n");
+       exit(1);
+    }
+
+    for (i = 0; (i < 80) && ((ch = getc(fp)) != EOF)
+                         && (ch != '\n'); i++)
+    {
+        buffer[i] = (char) ch;
+    }
+
+    // Terminate string with a null character
+    buffer[i] = '\0';
+    printf( "Input was: %s\n", buffer);
+
+    fclose(fp);
+}
+```
+
+## Input: crt_getc.txt
+
+```
+Line one.
+Line two.
+```
+
+### Output
+
+```
+Input was: Line one.
+```
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
+[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
+[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)

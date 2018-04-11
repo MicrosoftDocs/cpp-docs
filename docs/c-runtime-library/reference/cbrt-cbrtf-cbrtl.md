@@ -47,7 +47,7 @@ long double cbrtl(
 ### Parameters
 
 *x*<br/>
- Floating-point value
+Floating-point value
 
 ## Return Value
 
@@ -67,7 +67,7 @@ Because C++ allows overloading, you can call overloads of **cbrt** that take **f
 |--------------|--------------|------------------|
 |**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -96,6 +96,6 @@ The cube root of -64.64 is -4.013289
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
- [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
- [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
+[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
+[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>

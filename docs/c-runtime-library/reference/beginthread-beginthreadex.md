@@ -103,7 +103,7 @@ You can call [_endthread](../../c-runtime-library/reference/endthread-endthreade
 
 `_endthread` automatically closes the thread handle, whereas `_endthreadex` does not. Therefore, when you use `_beginthread` and `_endthread`, do not explicitly close the thread handle by calling the Win32 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API.
 
-> [!NOTE]  
+> [!NOTE]
 > For an executable file linked with Libcmt.lib, do not call the Win32 `ExitThread` API so that you don't prevent the run-time system from reclaiming allocated resources. `_endthread` and `_endthreadex` reclaim allocated thread resources and then call `ExitThread`.
 
 The operating system handles the allocation of the stack when either `_beginthread` or `_beginthreadex` is called; you don't have to pass the address of the thread stack to either of these functions. In addition, the *stack_size* argument can be 0, in which case the operating system uses the same value as the stack that's specified for the main thread.
@@ -151,7 +151,7 @@ void CheckKey( void * );
 // GetGlyph returns a printable ASCII character value
 #define GetGlyph( val ) ((char)((val + 32) % 93 + 33))
 
-BOOL repeat = TRUE;                 // Global repeat flag 
+BOOL repeat = TRUE;                 // Global repeat flag
 HANDLE hStdOut;                     // Handle for console window
 CONSOLE_SCREEN_BUFFER_INFO csbi;    // Console information structure
 
@@ -167,7 +167,7 @@ int main()
     // Launch CheckKey thread to check for terminating keystroke.
     _beginthread( CheckKey, 0, NULL );
 
-    // Loop until CheckKey terminates program or 1000 threads created. 
+    // Loop until CheckKey terminates program or 1000 threads created.
     while( repeat && param < 1000 )
     {
         // launch another character thread.
@@ -205,9 +205,9 @@ void Bounce( void * parg )
 
     // Generate location, letter and color attribute from thread argument.
     srand( _threadid );
-    oldcoord.X = region.Left = region.Right = 
+    oldcoord.X = region.Left = region.Right =
         GetRandom(csbi.srWindow.Left, csbi.srWindow.Right - 1);
-    oldcoord.Y = region.Top = region.Bottom = 
+    oldcoord.Y = region.Top = region.Bottom =
         GetRandom(csbi.srWindow.Top, csbi.srWindow.Bottom - 1);
     ci.Char.AsciiChar = GetGlyph(*((int *)parg));
     ci.Attributes = GetRandom(1, 15);
@@ -260,7 +260,7 @@ The following sample code demonstrates how you can use the thread handle that's 
 #include <stdio.h>
 #include <process.h>
 
-unsigned Counter; 
+unsigned Counter;
 unsigned __stdcall SecondThreadFunc( void* pArguments )
 {
     printf( "In second thread...\n" );

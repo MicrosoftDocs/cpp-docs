@@ -37,13 +37,13 @@ char *_gcvt(
 ### Parameters
 
 *value*<br/>
- Value to be converted.
+Value to be converted.
 
- *digits*<br/>
- Number of significant digits stored.
+*digits*<br/>
+Number of significant digits stored.
 
- *buffer*<br/>
- Storage location for the result.
+*buffer*<br/>
+Storage location for the result.
 
 ## Return Value
 
@@ -53,9 +53,9 @@ char *_gcvt(
 
 The **_gcvt** function converts a floating-point *value* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *buffer*. The *buffer* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *digits* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **_gcvt** attempts to produce *digits* digits in decimal format. If it cannot, it produces *digits* digits in exponential format. Trailing zeros might be suppressed in the conversion.
 
- A *buffer* of length **_CVTBUFSIZE** is sufficient for any floating point value.
+A *buffer* of length **_CVTBUFSIZE** is sufficient for any floating point value.
 
- This function validates its parameters. If *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
+This function validates its parameters. If *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
 
 ## Requirements
 
@@ -63,7 +63,7 @@ The **_gcvt** function converts a floating-point *value* to a character string (
 |-------------|---------------------|
 |**_gcvt**|\<stdlib.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
@@ -124,7 +124,7 @@ buffer: '-1.23456789012e-002' (19 chars)
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
- [_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
- [_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
+[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
+[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>

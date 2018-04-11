@@ -57,10 +57,10 @@ long double fdiml(
 ### Parameters
 
 [in] *x*<br/>
- The first value.
+The first value.
 
- [in] *y*<br/>
- The second value.
+[in] *y*<br/>
+The second value.
 
 ## Return Value
 
@@ -71,7 +71,7 @@ Returns the positive difference between *x* and *y*:
 |x-y|if x > y|
 |0|if x <= y|
 
- Otherwise, may return one of the following errors:
+Otherwise, may return one of the following errors:
 
 |Issue|Return|
 |-----------|------------|
@@ -79,13 +79,13 @@ Returns the positive difference between *x* and *y*:
 |Underflow range error|correct value (after rounding)|
 |*x* or *y* is NaN|NaN|
 
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **fdim** that take and return **float** and **long** **double** types. In a C program, **fdim** always takes and returns a **double**.
 
- Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
+Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 
 ## Requirements
 
@@ -93,10 +93,10 @@ Because C++ allows overloading, you can call overloads of **fdim** that take and
 |--------------|--------------|------------------|
 |**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)<br/>
- [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
+[fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)<br/>
+[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>

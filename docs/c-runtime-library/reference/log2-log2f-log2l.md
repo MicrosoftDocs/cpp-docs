@@ -50,13 +50,13 @@ long double log2l(
 ### Parameters
 
 [in] *x*<br/>
- The value to determine the base-2 logarithm of.
+The value to determine the base-2 logarithm of.
 
 ## Return Value
 
 On success, returns return log2 *x*.
 
- Otherwise, may return one of the following values:
+Otherwise, may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
@@ -68,7 +68,7 @@ On success, returns return log2 *x*.
 |domain error|NaN|
 |pole error|-HUGE_VAL, -HUGE_VALF, or -HUGE_VALL|
 
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 
@@ -80,10 +80,10 @@ If x is an integer, this function essentially returns the zero-based index of th
 |--------------|--------------|------------------|
 |**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [exp2, exp2f, exp2l](../../c-runtime-library/reference/exp2-exp2f-exp2l.md)<br/>
- [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[exp2, exp2f, exp2l](../../c-runtime-library/reference/exp2-exp2f-exp2l.md)<br/>
+[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>

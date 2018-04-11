@@ -72,9 +72,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ```C
 // crt_log.c
 /* This program uses log and log10
- * to calculate the natural logarithm and
- * the base-10 logarithm of 9,000.
- */
+* to calculate the natural logarithm and
+* the base-10 logarithm of 9,000.
+*/
 
 #include <math.h>
 #include <stdio.h>

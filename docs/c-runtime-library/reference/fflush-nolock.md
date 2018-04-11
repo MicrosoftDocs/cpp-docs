@@ -22,40 +22,40 @@ ms.workload: ["cplusplus"]
 ---
 # _fflush_nolock
 
-Flushes a stream without locking the thread.  
-  
-## Syntax  
-  
-```  
-int _fflush_nolock(   
-   FILE *stream   
-);  
-```  
-  
-### Parameters  
+Flushes a stream without locking the thread.
 
-`stream`  
- Pointer to the `FILE` structure.  
-  
-## Return Value  
+## Syntax
 
-See [fflush](../../c-runtime-library/reference/fflush.md).  
-  
-## Remarks  
+```
+int _fflush_nolock(
+   FILE *stream
+);
+```
 
-This function is a non-locking version of `fflush`. It is identical to `fflush` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_fflush_nolock`|\<stdio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
- [_flushall](../../c-runtime-library/reference/flushall.md)   
- [setvbuf](../../c-runtime-library/reference/setvbuf.md)
+`stream`
+Pointer to the `FILE` structure.
+
+## Return Value
+
+See [fflush](../../c-runtime-library/reference/fflush.md).
+
+## Remarks
+
+This function is a non-locking version of `fflush`. It is identical to `fflush` except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|`_fflush_nolock`|\<stdio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
+[_flushall](../../c-runtime-library/reference/flushall.md)<br/>
+[setvbuf](../../c-runtime-library/reference/setvbuf.md)

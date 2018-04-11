@@ -34,14 +34,14 @@ void exit(
 void _Exit(
    int const status
 );
-void _exit( 
+void _exit(
    int const status
 );
 ```
 
 ### Parameters
 
-_status_  
+_status_
 Exit status code.
 
 ## Remarks
@@ -99,12 +99,12 @@ int main( void )
 
 ## See Also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[abort](../../c-runtime-library/reference/abort.md)  
-[atexit](../../c-runtime-library/reference/atexit.md)  
-[_cexit, _c_exit](../../c-runtime-library/reference/cexit-c-exit.md)  
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)  
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)  
-[quick_exit](../../c-runtime-library/reference/quick-exit1.md)  
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)  
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)  
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[abort](../../c-runtime-library/reference/abort.md)<br/>
+[atexit](../../c-runtime-library/reference/atexit.md)<br/>
+[_cexit, _c_exit](../../c-runtime-library/reference/cexit-c-exit.md)<br/>
+[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
+[quick_exit](../../c-runtime-library/reference/quick-exit1.md)<br/>
+[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)

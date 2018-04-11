@@ -21,54 +21,54 @@ ms.workload: ["cplusplus"]
 ---
 # _STATIC_ASSERT Macro
 
-Evaluate an expression at compile time and generate an error when the result is `FALSE`.  
-  
-## Syntax  
-  
-```  
-_STATIC_ASSERT(  
-    booleanExpression  
-);  
-```  
-  
-### Parameters  
+Evaluate an expression at compile time and generate an error when the result is `FALSE`.
 
-`booleanExpression`  
- Expression (including pointers) that evaluates to nonzero (`TRUE`) or 0 (`FALSE`).  
-  
-## Remarks  
+## Syntax
 
-This macro resembles the [_ASSERT and _ASSERTE macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), except that `booleanExpression` is evaluated at compile time instead of at runtime. If `booleanExpression` evaluates to `FALSE` (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.  
-  
-## Example  
+```
+_STATIC_ASSERT(
+    booleanExpression
+);
+```
 
-In this example, we check whether the `sizeof` an `int` is larger than or equal to 2 bytes and whether the `sizeof` a `long` is 1 byte. The program will not compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a `long` is larger than 1 byte.  
-  
-```  
-// crt__static_assert.c  
-  
-#include <crtdbg.h>  
-#include <stdio.h>  
-  
-_STATIC_ASSERT(sizeof(int) >= 2);  
-_STATIC_ASSERT(sizeof(long) == 1);  // C2466  
-  
-int main()  
-{  
-    printf("I am sure that sizeof(int) will be >= 2: %d\n",  
-        sizeof(int));  
-    printf("I am not so sure that sizeof(long) == 1: %d\n",  
-        sizeof(long));  
-}  
-```  
-  
-## Requirements  
-  
-|Macro|Required header|  
-|-----------|---------------------|  
-|`_STATIC_ASSERT`|\<crtdbg.h>|  
-  
-## See Also  
+### Parameters
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)
+`booleanExpression`
+Expression (including pointers) that evaluates to nonzero (`TRUE`) or 0 (`FALSE`).
+
+## Remarks
+
+This macro resembles the [_ASSERT and _ASSERTE macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), except that `booleanExpression` is evaluated at compile time instead of at runtime. If `booleanExpression` evaluates to `FALSE` (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
+
+## Example
+
+In this example, we check whether the `sizeof` an `int` is larger than or equal to 2 bytes and whether the `sizeof` a `long` is 1 byte. The program will not compile and it will generate [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) because a `long` is larger than 1 byte.
+
+```
+// crt__static_assert.c
+
+#include <crtdbg.h>
+#include <stdio.h>
+
+_STATIC_ASSERT(sizeof(int) >= 2);
+_STATIC_ASSERT(sizeof(long) == 1);  // C2466
+
+int main()
+{
+    printf("I am sure that sizeof(int) will be >= 2: %d\n",
+        sizeof(int));
+    printf("I am not so sure that sizeof(long) == 1: %d\n",
+        sizeof(long));
+}
+```
+
+## Requirements
+
+|Macro|Required header|
+|-----------|---------------------|
+|`_STATIC_ASSERT`|\<crtdbg.h>|
+
+## See Also
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)

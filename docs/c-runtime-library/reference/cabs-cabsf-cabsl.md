@@ -22,55 +22,55 @@ ms.workload: ["cplusplus"]
 ---
 # cabs, cabsf, cabsl
 
-Retrieves the absolute value of a complex number.  
-  
-## Syntax  
-  
-```  
-double cabs(   
-   _Dcomplex z   
-);  
-float cabs(   
-   _Fcomplex z   
-);  // C++ only  
-long double cabs(   
-   _Lcomplex z   
-);  // C++ only  
-float cabsf(   
-   _Fcomplex z   
-);  
-long double cabsl(   
-   _Lcomplex z   
-);  
-```  
-  
-### Parameters  
+Retrieves the absolute value of a complex number.
 
-`z`  
- A complex number.  
-  
-## Return Value  
+## Syntax
 
-The absolute value of `z`.  
-  
-## Remarks  
+```
+double cabs(
+   _Dcomplex z
+);
+float cabs(
+   _Fcomplex z
+);  // C++ only
+long double cabs(
+   _Lcomplex z
+);  // C++ only
+float cabsf(
+   _Fcomplex z
+);
+long double cabsl(
+   _Lcomplex z
+);
+```
 
-Because C++ allows overloading, you can call overloads of `cabs` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `cabs` always takes a `_Dcomplex` value and returns a `double` value.  
-  
-## Requirements  
-  
-|Routine|C header|C++ header|  
-|-------------|--------------|------------------|  
-|`cabs`,               `cabsf`, `cabsl`|\<complex.h>|\<ccomplex>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
- [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)
+`z`
+A complex number.
+
+## Return Value
+
+The absolute value of `z`.
+
+## Remarks
+
+Because C++ allows overloading, you can call overloads of `cabs` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `cabs` always takes a `_Dcomplex` value and returns a `double` value.
+
+## Requirements
+
+|Routine|C header|C++ header|
+|-------------|--------------|------------------|
+|`cabs`,               `cabsf`, `cabsl`|\<complex.h>|\<ccomplex>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
+[creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
+[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)

@@ -22,64 +22,64 @@ ms.workload: ["cplusplus"]
 ---
 # _mbccpy, _mbccpy_l
 
-Copies a multibyte character from one string to another string. More secure versions of these functions are available; see [_mbccpy_s, _mbccpy_s_l](../../c-runtime-library/reference/mbccpy-s-mbccpy-s-l.md).  
-  
+Copies a multibyte character from one string to another string. More secure versions of these functions are available; see [_mbccpy_s, _mbccpy_s_l](../../c-runtime-library/reference/mbccpy-s-mbccpy-s-l.md).
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
-```  
-void _mbccpy(  
-   unsigned char *dest,  
-   const unsigned char *src   
-);  
-void _mbccpy_l(  
-   unsigned char *dest,  
-   const unsigned char *src,  
-   _locale_t locale  
-);  
-```  
-  
-### Parameters  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-`dest`  
- Copy destination.  
-  
- `src`  
- Multibyte character to copy.  
-  
- `locale`  
- Locale to use.  
-  
-## Remarks  
+## Syntax
 
-The `_mbccpy` function copies one multibyte character from `src` to `dest`.  
-  
- This function validates its parameters. If `_mbccpy` is passed a null pointer for `dest` or `src`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`.  
-  
- `_mbccpy` uses the current locale for any locale-dependent behavior. `_mbccpy_l` is identical to `_mbccpy` except that `_mbccpy_l` uses the locale passed in for any locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
- **Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege.  
-  
-### Generic-Text Routine Mappings  
-  
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_tccpy`|Maps to macro or inline function|`_mbccpy`|Maps to macro or inline function|  
-|`_tccpy_l`|n/a|`_mbccpy_l`|n/a|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_mbccpy`|\<mbctype.h>|  
-|`_mbccpy_l`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
+```
+void _mbccpy(
+   unsigned char *dest,
+   const unsigned char *src
+);
+void _mbccpy_l(
+   unsigned char *dest,
+   const unsigned char *src,
+   _locale_t locale
+);
+```
 
-[Locale](../../c-runtime-library/locale.md)   
- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)
+### Parameters
+
+`dest`
+Copy destination.
+
+`src`
+Multibyte character to copy.
+
+`locale`
+Locale to use.
+
+## Remarks
+
+The `_mbccpy` function copies one multibyte character from `src` to `dest`.
+
+This function validates its parameters. If `_mbccpy` is passed a null pointer for `dest` or `src`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`.
+
+`_mbccpy` uses the current locale for any locale-dependent behavior. `_mbccpy_l` is identical to `_mbccpy` except that `_mbccpy_l` uses the locale passed in for any locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+**Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege.
+
+### Generic-Text Routine Mappings
+
+|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|`_tccpy`|Maps to macro or inline function|`_mbccpy`|Maps to macro or inline function|
+|`_tccpy_l`|n/a|`_mbccpy_l`|n/a|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_mbccpy`|\<mbctype.h>|
+|`_mbccpy_l`|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+
+[Locale](../../c-runtime-library/locale.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)

@@ -57,16 +57,16 @@ long double fmaxl(
 ### Parameters
 
 [in] *x*<br/>
- The first value to compare.
+The first value to compare.
 
- [in] *y*<br/>
- The second value to compare.
+[in] *y*<br/>
+The second value to compare.
 
 ## Return Value
 
 If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
 
- Otherwise, may return one of the following values:
+Otherwise, may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
@@ -74,7 +74,7 @@ If successful, returns the larger of *x* or *y*. The value returned is exact, an
 |*y* = NaN|*x*|
 |*x* and *y* = NaN|NaN|
 
- This function does not use the errors specified in  [_matherr](../../c-runtime-library/reference/matherr.md).
+This function does not use the errors specified in  [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 
@@ -86,9 +86,9 @@ Because C++ allows overloading, you can call overloads of fmax that take and ret
 |--------------|--------------|------------------|
 |**fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> or \<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>
+[fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>

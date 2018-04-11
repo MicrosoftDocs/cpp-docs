@@ -47,7 +47,7 @@ long double fabsl(
 ### Parameters
 
 *x*<br/>
- Floating-point value.
+Floating-point value.
 
 ## Return Value
 
@@ -67,7 +67,7 @@ C++ allows overloading, so you can call overloads of **fabs** if you include the
 |--------------|-----------------------|---------------------------|
 |**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> or \<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
@@ -76,5 +76,5 @@ See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
- [_cabs](../../c-runtime-library/reference/cabs.md)<br/>
+[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
+[_cabs](../../c-runtime-library/reference/cabs.md)<br/>

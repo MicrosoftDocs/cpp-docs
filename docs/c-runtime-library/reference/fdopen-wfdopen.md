@@ -39,10 +39,10 @@ FILE *_wfdopen(
 
 ### Parameters
 
-*fd*  
+*fd*
 File descriptor of the open file.
 
-*mode*  
+*mode*
 Type of file access.
 
 ## Return Value
@@ -63,40 +63,40 @@ File descriptors passed into `_fdopen` are owned by the returned `FILE *` stream
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tfdopen`|`_fdopen`|`_fdopen`|`_wfdopen`|
 
-The *mode* character string specifies the type of file access requested for the file:  
+The *mode* character string specifies the type of file access requested for the file:
 
-`"r"`  
+`"r"`
 Opens for reading. If the file does not exist or cannot be found, the `fopen` call fails.
 
-`"w"`  
+`"w"`
 Opens an empty file for writing. If the given file exists, its contents are destroyed.
 
-`"a"`  
+`"a"`
 Opens for writing, at the end of the file (appending). Creates the file if it does not exist.
 
-`"r+"`  
+`"r+"`
 Opens for both reading and writing. (The file must exist.)
 
-`"w+"`  
+`"w+"`
 Opens an empty file for both reading and writing. If the given file exists, its contents are destroyed.
 
-`"a+"`  
+`"a+"`
 Opens for reading and appending. Creates the file if it does not exist.
 
 When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, `fseek`, or `rewind` operation. You can specify the current position for the `fsetpos` or `fseek` operation, if you want to.
 
 In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
 
-`t`  
+`t`
 Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` checks for a Ctrl+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file that ends with a Ctrl+Z might cause `fseek` to behave incorrectly near the end of the file.
 
-`b`  
+`b`
 Open in binary (untranslated) mode. Any translations from `t` mode are suppressed.
 
-`c`  
+`c`
 Enable the commit flag for the associated `filename` so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
 
-`n`  
+`n`
 Reset the commit flag for the associated `filename` to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
 
 The `t`, `c`, and `n` *mode* options are Microsoft extensions for `fopen` and `_fdopen`. Do not use them if you want to preserve ANSI portability.
@@ -179,9 +179,9 @@ Lines in file: 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
-[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)   
-[fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
-[fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
-[freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
+[fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
+[fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
+[freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
 [\_open, \_wopen](../../c-runtime-library/reference/open-wopen.md)

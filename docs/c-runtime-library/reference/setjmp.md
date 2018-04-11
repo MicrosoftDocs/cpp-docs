@@ -22,51 +22,51 @@ ms.workload: ["cplusplus"]
 ---
 # setjmp
 
-Saves the current state of the program.  
-  
-## Syntax  
-  
-```  
-int setjmp(  
-   jmp_buf env   
-);  
-```  
-  
-### Parameters  
+Saves the current state of the program.
 
-`env`  
- Variable in which environment is stored.  
-  
-## Return Value  
+## Syntax
 
-Returns 0 after saving the stack environment. If `setjmp` returns as a result of a `longjmp` call, it returns the `value` argument of `longjmp`, or if the `value` argument of `longjmp` is 0, `setjmp` returns 1. There is no error return.  
-  
-## Remarks  
+```
+int setjmp(
+   jmp_buf env
+);
+```
 
-The `setjmp` function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, `setjmp` and `longjmp` provide a way to execute a non-local `goto`. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.  
-  
- A call to `setjmp` saves the current stack environment in `env`. A subsequent call to `longjmp` restores the saved environment and returns control to the point just after the corresponding `setjmp` call. All variables (except register variables) accessible to the routine receiving control contain the values they had when `longjmp` was called.  
-  
- It is not possible to use `setjmp` to jump from native to managed code.  
-  
- **Note** `setjmp` and `longjmp` do not support C++ object semantics. In C++ programs, use the C++ exception-handling mechanism.  
-  
- For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-longjmp.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`setjmp`|\<setjmp.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
+### Parameters
 
-See the example for [_fpreset](../../c-runtime-library/reference/fpreset.md).  
-  
-## See Also  
+`env`
+Variable in which environment is stored.
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)   
- [longjmp](../../c-runtime-library/reference/longjmp.md)   
- [_setjmp3](../../c-runtime-library/setjmp3.md)
+## Return Value
+
+Returns 0 after saving the stack environment. If `setjmp` returns as a result of a `longjmp` call, it returns the `value` argument of `longjmp`, or if the `value` argument of `longjmp` is 0, `setjmp` returns 1. There is no error return.
+
+## Remarks
+
+The `setjmp` function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, `setjmp` and `longjmp` provide a way to execute a non-local `goto`. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.
+
+A call to `setjmp` saves the current stack environment in `env`. A subsequent call to `longjmp` restores the saved environment and returns control to the point just after the corresponding `setjmp` call. All variables (except register variables) accessible to the routine receiving control contain the values they had when `longjmp` was called.
+
+It is not possible to use `setjmp` to jump from native to managed code.
+
+**Note** `setjmp` and `longjmp` do not support C++ object semantics. In C++ programs, use the C++ exception-handling mechanism.
+
+For more information, see [Using setjmp and longjmp](../../cpp/using-setjmp-longjmp.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`setjmp`|\<setjmp.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+See the example for [_fpreset](../../c-runtime-library/reference/fpreset.md).
+
+## See Also
+
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[longjmp](../../c-runtime-library/reference/longjmp.md)<br/>
+[_setjmp3](../../c-runtime-library/setjmp3.md)

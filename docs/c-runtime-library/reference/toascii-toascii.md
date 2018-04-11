@@ -35,7 +35,7 @@ int __toascii(
 
 ### Parameters
 
-*c*  
+*c*
 Character to convert.
 
 ## Return Value
@@ -58,6 +58,6 @@ The `toascii` macro is a POSIX extension, and `__toascii` is a Microsoft-specifi
 
 ## See Also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)   
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
 [to Functions](../../c-runtime-library/to-functions.md)

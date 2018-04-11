@@ -21,48 +21,48 @@ ms.workload: ["cplusplus"]
 ---
 # or
 
-An alternative to the &#124;&#124; operator.  
-  
-## Syntax  
-  
-```  
-  
-#define or ||  
-  
-```  
-  
-## Remarks  
+An alternative to the &#124;&#124; operator.
 
-The macro yields the operator &#124;&#124;.  
-  
-## Example  
-  
-```  
-// iso646_or.cpp  
-// compile with: /EHsc  
-#include <iostream>  
-#include <iso646.h>  
-  
-int main( )  
-{  
-   using namespace std;  
-   bool a = true, b = false, result;  
-  
-   boolalpha(cout);  
-  
-   result= a || b;  
-   cout << result << endl;  
-  
-   result= a or b;  
-   cout << result << endl;  
-}  
-```  
-  
-```Output  
-true  
-true  
-```  
-  
-## Requirements  
+## Syntax
+
+```
+
+#define or ||
+
+```
+
+## Remarks
+
+The macro yields the operator &#124;&#124;.
+
+## Example
+
+```
+// iso646_or.cpp
+// compile with: /EHsc
+#include <iostream>
+#include <iso646.h>
+
+int main( )
+{
+   using namespace std;
+   bool a = true, b = false, result;
+
+   boolalpha(cout);
+
+   result= a || b;
+   cout << result << endl;
+
+   result= a or b;
+   cout << result << endl;
+}
+```
+
+```Output
+true
+true
+```
+
+## Requirements
 
 **Header:** \<iso646.h>

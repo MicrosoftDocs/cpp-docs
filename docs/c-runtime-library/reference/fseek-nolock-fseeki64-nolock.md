@@ -22,54 +22,54 @@ ms.workload: ["cplusplus"]
 ---
 # _fseek_nolock, _fseeki64_nolock
 
-Moves the file pointer to a specified location.  
-  
-## Syntax  
-  
-```  
-int _fseek_nolock(   
-   FILE *stream,  
-   long offset,  
-   int origin   
-);  
-int _fseeki64_nolock(   
-   FILE *stream,  
-   __int64 offset,  
-   int origin   
-);  
-```  
-  
-### Parameters  
+Moves the file pointer to a specified location.
 
-`stream`  
- Pointer to the `FILE` structure.  
-  
- `offset`  
- Number of bytes from `origin.`  
-  
- `origin`  
- Initial position.  
-  
-## Return Value  
+## Syntax
 
-Same as [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md) respectively.  
-  
-## Remarks  
+```
+int _fseek_nolock(
+   FILE *stream,
+   long offset,
+   int origin
+);
+int _fseeki64_nolock(
+   FILE *stream,
+   __int64 offset,
+   int origin
+);
+```
 
-These functions are the non-locking versions of `fseek` and `_fseeki64`, respectively.These are identical to `fseek` and `_fseeki64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`fseek`|\<stdio.h>|  
-|`_fseeki64`|\<stdio.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)   
- [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   
- [rewind](../../c-runtime-library/reference/rewind.md)
+`stream`
+Pointer to the `FILE` structure.
+
+`offset`
+Number of bytes from `origin.`
+
+`origin`
+Initial position.
+
+## Return Value
+
+Same as [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md) respectively.
+
+## Remarks
+
+These functions are the non-locking versions of `fseek` and `_fseeki64`, respectively.These are identical to `fseek` and `_fseeki64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|`fseek`|\<stdio.h>|
+|`_fseeki64`|\<stdio.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)<br/>
+[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
+[rewind](../../c-runtime-library/reference/rewind.md)

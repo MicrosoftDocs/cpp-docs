@@ -34,7 +34,7 @@ _se_translator_function _set_se_translator(
 
 ### Parameters
 
-*seTransFunction*  
+*seTransFunction*
 Pointer to a C structured exception translator function that you write.
 
 ## Return Value
@@ -113,7 +113,7 @@ void trans_func(unsigned int u, EXCEPTION_POINTERS*)
 
 int main()
 {
-    auto original = _set_se_translator(trans_func); 
+    auto original = _set_se_translator(trans_func);
     try
     {
         SEFunc();
@@ -196,8 +196,8 @@ Caught CMyException, error c0000094
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)  
-[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)  
-[set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)  
-[terminate](../../c-runtime-library/reference/terminate-crt.md)  
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)  
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
+[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
+[set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
+[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)

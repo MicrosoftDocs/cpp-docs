@@ -35,10 +35,10 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 ### Parameters
 
 *px86*<br/>
- This address is filled with the status word for the x87 floating-point unit.
+This address is filled with the status word for the x87 floating-point unit.
 
- *pSSE2*<br/>
- This address is filled with the status word for the SSE2 floating-point unit.
+*pSSE2*<br/>
+This address is filled with the status word for the SSE2 floating-point unit.
 
 ## Return Value
 
@@ -48,11 +48,11 @@ For **_status87** and **_statusfp**, the bits in the value that's returned indic
 
 The **_statusfp** function gets the floating-point status word. The status word is a combination of the floating-point processor status and other conditions detected by the floating-point exception handler—for example, floating-point stack overflow and underflow. Unmasked exceptions are checked for before the contents of the status word are returned. This means that the caller is informed of pending exceptions. On x86 platforms, **_statusfp** returns a combination of the x87 and SSE2 floating-point status. On x64 platforms, the status that's returned is based on the SSE’s MXCSR status. On ARM platforms, **_statusfp** returns status from the FPSCR register.
 
- **_statusfp** is a platform-independent, portable version of **_status87**. It is identical to **_status87** on Intel (x86) platforms and is also supported by the x64 and ARM platforms. To ensure that your floating-point code is portable to all architectures, use **_statusfp**. If you are only targeting x86 platforms, you can use either **_status87** or **_statusfp**.
+**_statusfp** is a platform-independent, portable version of **_status87**. It is identical to **_status87** on Intel (x86) platforms and is also supported by the x64 and ARM platforms. To ensure that your floating-point code is portable to all architectures, use **_statusfp**. If you are only targeting x86 platforms, you can use either **_status87** or **_statusfp**.
 
- We recommend **_statusfp2** for chips (such as the Pentium IV) that have both an x87 and an SSE2 floating-point processor. For **_statusfp2**, the addresses are filled by using the floating-point status word for both the x87 or the SSE2 floating-point processor. For a chip that supports x87 and SSE2 floating-point processors, EM_AMBIGUOUS is set to 1 if **_statusfp** or **_controlfp** is used and the action was ambiguous because it could refer to the x87 or the SSE2 floating-point status word. The **_statusfp2** function is only supported on x86 platforms.
+We recommend **_statusfp2** for chips (such as the Pentium IV) that have both an x87 and an SSE2 floating-point processor. For **_statusfp2**, the addresses are filled by using the floating-point status word for both the x87 or the SSE2 floating-point processor. For a chip that supports x87 and SSE2 floating-point processors, EM_AMBIGUOUS is set to 1 if **_statusfp** or **_controlfp** is used and the action was ambiguous because it could refer to the x87 or the SSE2 floating-point status word. The **_statusfp2** function is only supported on x86 platforms.
 
- These functions are not useful for [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime (CLR) only supports the default floating-point precision.
+These functions are not useful for [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) because the common language runtime (CLR) only supports the default floating-point precision.
 
 ## Requirements
 
@@ -60,7 +60,7 @@ The **_statusfp** function gets the floating-point status word. The status word 
 |-------------|---------------------|
 |**_status87**, **_statusfp**, **_statusfp2**|\<float.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -111,5 +111,5 @@ Status = 0x00080003 - inexact, underflow, denormal
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
- [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>
+[_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
+[_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>

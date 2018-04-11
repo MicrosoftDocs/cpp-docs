@@ -22,30 +22,30 @@ ms.workload: ["cplusplus"]
 ---
 # _get_unexpected
 
-Returns the termination routine to be called by `unexpected`.  
-  
-## Syntax  
-  
-```  
-unexpected_function _get_unexpected( void );  
-```  
-  
-## Return Value  
+Returns the termination routine to be called by `unexpected`.
 
-Returns a pointer to the function registered by [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_unexpected`|\<eh.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+## Syntax
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
- [abort](../../c-runtime-library/reference/abort.md)   
- [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   
- [terminate](../../c-runtime-library/reference/terminate-crt.md)   
- [unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+```
+unexpected_function _get_unexpected( void );
+```
+
+## Return Value
+
+Returns a pointer to the function registered by [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_get_unexpected`|\<eh.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
+[abort](../../c-runtime-library/reference/abort.md)<br/>
+[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
+[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)

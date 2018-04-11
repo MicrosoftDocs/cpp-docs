@@ -22,93 +22,93 @@ ms.workload: ["cplusplus"]
 ---
 # tmpfile_s
 
-Creates a temporary file. It is a version of [tmpfile](../../c-runtime-library/reference/tmpfile.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
-  
-## Syntax  
-  
-```  
-errno_t tmpfile_s(  
-   FILE** pFilePtr  
-);  
-```  
-  
-### Parameters  
+Creates a temporary file. It is a version of [tmpfile](../../c-runtime-library/reference/tmpfile.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
-[out] `pFilePtr`  
- The address of a pointer to store the address of the generated pointer to a stream.  
-  
-## Return Value  
+## Syntax
 
-Returns 0 if successful, an error code on failure.  
-  
-### Error Conditions  
-  
-|`pFilePtr`|**Return Value**|**Contents of**  `pFilePtr`|  
-|----------------|----------------------|---------------------------------|  
-|`NULL`|`EINVAL`|not changed|  
-  
- If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the return value is `EINVAL`.  
-  
-## Remarks  
+```
+errno_t tmpfile_s(
+   FILE** pFilePtr
+);
+```
 
-The `tmpfile_s` function creates a temporary file and puts a pointer to that stream in the `pFilePtr` argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam_s](../../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md) or [tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
-  
- If the file cannot be opened, `tmpfile_s` writes `NULL` to the `pFilePtr` parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.  
-  
- Failure can occur if you attempt more than `TMP_MAX_S` (see STDIO.H) calls with `tmpfile_s.`  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`tmpfile_s`|\<stdio.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
-  
+### Parameters
+
+[out] `pFilePtr`
+The address of a pointer to store the address of the generated pointer to a stream.
+
+## Return Value
+
+Returns 0 if successful, an error code on failure.
+
+### Error Conditions
+
+|`pFilePtr`|**Return Value**|**Contents of**  `pFilePtr`|
+|----------------|----------------------|---------------------------------|
+|`NULL`|`EINVAL`|not changed|
+
+If the above parameter validation error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the return value is `EINVAL`.
+
+## Remarks
+
+The `tmpfile_s` function creates a temporary file and puts a pointer to that stream in the `pFilePtr` argument. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam_s](../../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md) or [tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
+
+If the file cannot be opened, `tmpfile_s` writes `NULL` to the `pFilePtr` parameter. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.
+
+Failure can occur if you attempt more than `TMP_MAX_S` (see STDIO.H) calls with `tmpfile_s.`
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`tmpfile_s`|\<stdio.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
 > [!NOTE]
->  This example requires administrative privileges to run on Windows Vista.  
-  
-```  
-// crt_tmpfile_s.c  
-// This program uses tmpfile_s to create a  
-// temporary file, then deletes this file with _rmtmp.  
-//  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   FILE *stream;  
-   char tempstring[] = "String to be written";  
-   int  i;  
-   errno_t err;  
-  
-   // Create temporary files.  
-   for( i = 1; i <= 3; i++ )  
-   {  
-      err = tmpfile_s(&stream);  
-      if( err )  
-         perror( "Could not open new temporary file\n" );  
-      else  
-         printf( "Temporary file %d was created\n", i );  
-   }  
-  
-   // Remove temporary files.  
-   printf( "%d temporary files deleted\n", _rmtmp() );  
-}  
-```  
-  
-```Output  
-Temporary file 1 was created  
-Temporary file 2 was created  
-Temporary file 3 was created  
-3 temporary files deleted  
-```  
-  
-## See Also  
+>  This example requires administrative privileges to run on Windows Vista.
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [_rmtmp](../../c-runtime-library/reference/rmtmp.md)   
- [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)
+```
+// crt_tmpfile_s.c
+// This program uses tmpfile_s to create a
+// temporary file, then deletes this file with _rmtmp.
+//
+
+#include <stdio.h>
+
+int main( void )
+{
+   FILE *stream;
+   char tempstring[] = "String to be written";
+   int  i;
+   errno_t err;
+
+   // Create temporary files.
+   for( i = 1; i <= 3; i++ )
+   {
+      err = tmpfile_s(&stream);
+      if( err )
+         perror( "Could not open new temporary file\n" );
+      else
+         printf( "Temporary file %d was created\n", i );
+   }
+
+   // Remove temporary files.
+   printf( "%d temporary files deleted\n", _rmtmp() );
+}
+```
+
+```Output
+Temporary file 1 was created
+Temporary file 2 was created
+Temporary file 3 was created
+3 temporary files deleted
+```
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[_rmtmp](../../c-runtime-library/reference/rmtmp.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)

@@ -35,10 +35,10 @@ int _open_osfhandle (
 
 ### Parameters
 
-*osfhandle*  
+*osfhandle*
 Operating-system file handle.
 
-*flags*  
+*flags*
 Types of operations allowed.
 
 ## Return Value
@@ -51,16 +51,16 @@ The `_open_osfhandle` function allocates a C run-time file descriptor and associ
 
 Fcntl.h defines the following manifest constants:
 
-**\_O\_APPEND**  
+**\_O\_APPEND**
 Positions a file pointer to the end of the file before every write operation.
 
-**\_O\_RDONLY**  
+**\_O\_RDONLY**
 Opens the file for reading only.
 
-**\_O\_TEXT**  
+**\_O\_TEXT**
 Opens the file in text (translated) mode.
 
-**\_O\_WTEXT**  
+**\_O\_WTEXT**
 Opens the file in Unicode (translated UTF-16) mode.
 
 To close a file opened with `_open_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md). The underlying OS file handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream also closes both the file descriptor and the underlying handle. In this case, do not call `_close` on the file descriptor.
@@ -75,4 +75,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)  
+[File Handling](../../c-runtime-library/file-handling.md)

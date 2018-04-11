@@ -22,26 +22,26 @@ ms.workload: ["cplusplus"]
 ---
 # _getmbcp
 
-Retrieves the current code page.  
-  
-## Syntax  
-  
-```  
-int _getmbcp( void );  
-```  
-  
-## Return Value  
+Retrieves the current code page.
 
-Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_getmbcp`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+## Syntax
+
+```
+int _getmbcp( void );
+```
+
+## Return Value
+
+Returns the current multibyte code page. A return value of 0 indicates that a single byte code page is in use.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_getmbcp`|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
 
 [_setmbcp](../../c-runtime-library/reference/setmbcp.md)

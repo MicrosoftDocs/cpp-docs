@@ -22,48 +22,48 @@ ms.workload: ["cplusplus"]
 ---
 # _ismbbprint, _ismbbprint_l
 
-Determines whether a specified multibyte character is a print character.  
-  
-## Syntax  
-  
-```  
-int _ismbbprint(  
-   unsigned int c   
-);  
-int _ismbbprint_l(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-### Parameters  
+Determines whether a specified multibyte character is a print character.
 
-`c`  
- Integer to be tested.  
-  
- `locale`  
- Locale to use.  
-  
-## Return Value  
+## Syntax
 
-`_ismbbprint` returns a nonzero value if the expression:  
-  
-```  
-isprint || _ismbbkprint  
-```  
-  
- is nonzero for `c`, or 0 if it is not. `_ismbbprint` uses the current locale for any locale-dependent behavior. `_ismbbprint_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_ismbbprint`|\<mbctype.h>|  
-|`_ismbbprint_l`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
+```
+int _ismbbprint(
+   unsigned int c
+);
+int _ismbbprint_l(
+   unsigned int c,
+   _locale_t locale
+);
+```
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)   
- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+### Parameters
+
+`c`
+Integer to be tested.
+
+`locale`
+Locale to use.
+
+## Return Value
+
+`_ismbbprint` returns a nonzero value if the expression:
+
+```
+isprint || _ismbbkprint
+```
+
+is nonzero for `c`, or 0 if it is not. `_ismbbprint` uses the current locale for any locale-dependent behavior. `_ismbbprint_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_ismbbprint`|\<mbctype.h>|
+|`_ismbbprint_l`|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

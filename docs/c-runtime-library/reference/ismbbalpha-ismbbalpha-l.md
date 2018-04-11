@@ -22,51 +22,51 @@ ms.workload: ["cplusplus"]
 ---
 # _ismbbalpha, _ismbbalpha_l
 
-Determines whether a specified multibyte character is alpha.  
-  
-## Syntax  
-  
-```  
-int _ismbbalpha(  
-   unsigned int c   
-);  
-int _ismbbalpha_l(  
-   unsigned int c   
-);  
-```  
-  
-### Parameters  
+Determines whether a specified multibyte character is alpha.
 
-`c`  
- Integer to be tested.  
-  
- `locale`  
- Locale to use.  
-  
-## Return Value  
+## Syntax
 
-`_ismbbalpha` returns a nonzero value if the expression:  
-  
-```  
-isalpha || _ismbbkalnum  
-```  
-  
- is nonzero for `c`, or 0 if it is not. `_ismbbalpha` uses the current locale for any locale-dependent character settings. `_ismbbalpha_l` is identical except that it uses the locale passed in.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_ismbbalpha`|\<mbctype.h>|  
-|`_ismbbalpha_l`|\<mbctype.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
+```
+int _ismbbalpha(
+   unsigned int c
+);
+int _ismbbalpha_l(
+   unsigned int c
+);
+```
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## See Also  
+### Parameters
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)   
- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+`c`
+Integer to be tested.
+
+`locale`
+Locale to use.
+
+## Return Value
+
+`_ismbbalpha` returns a nonzero value if the expression:
+
+```
+isalpha || _ismbbkalnum
+```
+
+is nonzero for `c`, or 0 if it is not. `_ismbbalpha` uses the current locale for any locale-dependent character settings. `_ismbbalpha_l` is identical except that it uses the locale passed in.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_ismbbalpha`|\<mbctype.h>|
+|`_ismbbalpha_l`|\<mbctype.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## See Also
+
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

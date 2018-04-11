@@ -35,7 +35,7 @@ int feclearexcept(
 ### Parameters
 
 *excepts*<br/>
- The exception status flags to clear.
+The exception status flags to clear.
 
 ## Return Value
 
@@ -54,7 +54,7 @@ The **feclearexcept** function attempts to clear the floating point exception st
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
 |FE_ALLEXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
- The *excepts* argument may be zero, or the bitwise OR of one or more of the supported exception macros. The result of any other argument value is undefined.
+The *excepts* argument may be zero, or the bitwise OR of one or more of the supported exception macros. The result of any other argument value is undefined.
 
 ## Requirements
 
@@ -62,9 +62,9 @@ The **feclearexcept** function attempts to clear the floating point exception st
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h>|\<cfenv>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>
+[fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>

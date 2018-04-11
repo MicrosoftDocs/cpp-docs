@@ -58,7 +58,7 @@ The value to find the gamma of.
 
 If successful, returns the gamma of *x*.
 
- A range error may occur if the magnitude of *x* is too large or too small for the data type. A domain error or range error may occur if *x* <= 0.
+A range error may occur if the magnitude of *x* is too large or too small for the data type. A domain error or range error may occur if *x* <= 0.
 
 |Issue|Return|
 |-----------|------------|
@@ -72,13 +72,13 @@ If successful, returns the gamma of *x*.
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |underflow range error|the correct value, after rounding.|
 
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **long** **double** types. In a C program, **tgamma** always takes and returns a **double**.
 
- If x is a natural number, this function returns the factorial of (x-1).
+If x is a natural number, this function returns the factorial of (x-1).
 
 ## Requirements
 
@@ -86,7 +86,7 @@ Because C++ allows overloading, you can call overloads of **tgamma** that take a
 |--------------|--------------|------------------|
 |**tgamma**, **tgammaf**,  **tgammal**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 

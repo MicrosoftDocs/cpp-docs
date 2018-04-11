@@ -52,10 +52,10 @@ double _yn(
 ### Parameters
 
 *x*<br/>
- Floating-point value.
+Floating-point value.
 
- *n*<br/>
- Integer order of Bessel function.
+*n*<br/>
+Integer order of Bessel function.
 
 ## Return Value
 
@@ -69,7 +69,7 @@ The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first 
 |-----------|-------------------|-----------------------|
 |± **QNAN**,**IND**|**INVALID**|**_DOMAIN**|
 
- The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.
+The **_y0**, **_y1**, and **_yn** routines return Bessel functions of the second kind: orders 0, 1, and n, respectively.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -83,7 +83,7 @@ The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first 
 |-------------|---------------------|
 |**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_yn**|\<cmath> (C++), \<math.h> (C, C++)|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -98,35 +98,35 @@ int main( void )
    int n = 3, c;
 
    printf( "Bessel functions for x = %f:\n", x );
-   printf( " Kind   Order  Function     Result\n\n" );
-   printf( " First  0      _j0( x )     %f\n", _j0( x ) );
-   printf( " First  1      _j1( x )     %f\n", _j1( x ) );
+   printf( "   Kind   Order  Function     Result\n\n" );
+   printf( "   First  0      _j0( x )     %f\n", _j0( x ) );
+   printf( "   First  1      _j1( x )     %f\n", _j1( x ) );
    for( c = 2; c < 5; c++ )
-      printf( " First  %d      _jn( %d, x )  %f\n", c, c, _jn( c, x ) );
-   printf( " Second 0      _y0( x )     %f\n", _y0( x ) );
-   printf( " Second 1      _y1( x )     %f\n", _y1( x ) );
+      printf( "   First  %d      _jn( %d, x )  %f\n", c, c, _jn( c, x ) );
+   printf( "   Second 0      _y0( x )     %f\n", _y0( x ) );
+   printf( "   Second 1      _y1( x )     %f\n", _y1( x ) );
    for( c = 2; c < 5; c++ )
-      printf( " Second %d      _yn( %d, x )  %f\n", c, c, _yn( c, x ) );
+      printf( "   Second %d      _yn( %d, x )  %f\n", c, c, _yn( c, x ) );
 }
 ```
 
 ```Output
 Bessel functions for x = 2.387000:
- Kind   Order  Function     Result
+   Kind   Order  Function     Result
 
- First  0      _j0( x )     0.009288
- First  1      _j1( x )     0.522941
- First  2      _jn( 2, x )  0.428870
- First  3      _jn( 3, x )  0.195734
- First  4      _jn( 4, x )  0.063131
- Second 0      _y0( x )     0.511681
- Second 1      _y1( x )     0.094374
- Second 2      _yn( 2, x )  -0.432608
- Second 3      _yn( 3, x )  -0.819314
- Second 4      _yn( 4, x )  -1.626833
+   First  0      _j0( x )     0.009288
+   First  1      _j1( x )     0.522941
+   First  2      _jn( 2, x )  0.428870
+   First  3      _jn( 3, x )  0.195734
+   First  4      _jn( 4, x )  0.063131
+   Second 0      _y0( x )     0.511681
+   Second 1      _y1( x )     0.094374
+   Second 2      _yn( 2, x )  -0.432608
+   Second 3      _yn( 3, x )  -0.819314
+   Second 4      _yn( 4, x )  -1.626833
 ```
 
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [_matherr](../../c-runtime-library/reference/matherr.md)<br/>
+[_matherr](../../c-runtime-library/reference/matherr.md)<br/>

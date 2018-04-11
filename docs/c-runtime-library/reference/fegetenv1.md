@@ -35,7 +35,7 @@ int fegetenv(
 ### Parameters
 
 *penv*<br/>
- Pointer to an **fenv_t** object to contain the current floating-point environment values.
+Pointer to an **fenv_t** object to contain the current floating-point environment values.
 
 ## Return Value
 
@@ -45,7 +45,7 @@ Returns 0 if the floating-point environment was successfully stored in *penv*. O
 
 The **fegetenv** function stores the current floating-point environment in the object pointed to by *penv*. The floating point environment is the set of status flags and control modes that affect floating-point calculations. This includes the rounding direction mode and the status flags for floating-point exceptions.  If *penv* does not point to a valid **fenv_t** object, subsequent behavior is undefined.
 
- To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -53,9 +53,9 @@ The **fegetenv** function stores the current floating-point environment in the o
 |--------------|--------------|------------------|
 |**fegetenv**|\<fenv.h>|\<cfenv>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fesetenv](../../c-runtime-library/reference/fesetenv1.md)<br/>
+[fesetenv](../../c-runtime-library/reference/fesetenv1.md)<br/>

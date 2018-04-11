@@ -53,7 +53,7 @@ The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remaind
 
 The **remainder** functions calculate the floating-point remainder *r* of *x* / *y* such that *x* = *n* * *y* + *r*, where *n*is the integer nearest in value to *x* / *y* and *n*is even whenever &#124; *n* - *x* / *y* &#124; = 1/2. When *r* = 0, *r* has the same sign as *x*.
 
- Because C++ allows overloading, you can call overloads of **remainder** that take and return **float** or **long** **double** values. In a C program, **remainder** always takes two **double** arguments and returns a **double**.
+Because C++ allows overloading, you can call overloads of **remainder** that take and return **float** or **long** **double** values. In a C program, **remainder** always takes two **double** arguments and returns a **double**.
 
 ## Requirements
 

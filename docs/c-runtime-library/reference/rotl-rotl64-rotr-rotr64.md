@@ -49,10 +49,10 @@ unsigned __int64 _rotr64(
 ### Parameters
 
 *value*<br/>
- Value to be rotated.
+Value to be rotated.
 
- *shift*<br/>
- Number of bits to shift.
+*shift*<br/>
+Number of bits to shift.
 
 ## Return Value
 
@@ -69,7 +69,7 @@ The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bit
 |**_rotl**, **_rotl64**|\<stdlib.h>|
 |**_rotr**, **_rotr64**|\<stdlib.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Libraries
 
@@ -80,7 +80,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 ```C
 // crt_rot.c
 /* This program shifts values to rotate an integer.
- */
+*/
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -114,5 +114,5 @@ int main( void )
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [_lrotl, _lrotr](../../c-runtime-library/reference/lrotl-lrotr.md)<br/>
+[_lrotl, _lrotr](../../c-runtime-library/reference/lrotl-lrotr.md)<br/>
 

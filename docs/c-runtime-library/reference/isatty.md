@@ -22,70 +22,70 @@ ms.workload: ["cplusplus"]
 ---
 # _isatty
 
-Determines whether a file descriptor is associated with a character device.  
-  
-## Syntax  
-  
-```  
-  
-      int _isatty(  
-int fd   
-);  
-```  
-  
-### Parameters  
+Determines whether a file descriptor is associated with a character device.
 
-`fd`  
- File descriptor that refers to the device to be tested.  
-  
-## Return Value  
+## Syntax
 
-`_isatty` returns a nonzero value if the descriptor is associated with a character device. Otherwise, `_isatty` returns 0.  
-  
-## Remarks  
+```
 
-The `_isatty` function determines whether `fd` is associated with a character device (a terminal, console, printer, or serial port).  
-  
- This function validates the `fd` parameter. If `fd` is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EBADF`.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_isatty`|\<io.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
+      int _isatty(
+int fd
+);
+```
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## Example  
-  
-```  
-// crt_isatty.c  
-/* This program checks to see whether  
- * stdout has been redirected to a file.  
- */  
-  
-#include <stdio.h>  
-#include <io.h>  
-  
-int main( void )  
-{  
-   if( _isatty( _fileno( stdout ) ) )  
-      printf( "stdout has not been redirected to a file\n" );  
-   else  
-      printf( "stdout has been redirected to a file\n");  
-}  
-```  
-  
-## Sample Output  
-  
-```  
-stdout has not been redirected to a file  
-```  
-  
-## See Also  
+### Parameters
+
+`fd`
+File descriptor that refers to the device to be tested.
+
+## Return Value
+
+`_isatty` returns a nonzero value if the descriptor is associated with a character device. Otherwise, `_isatty` returns 0.
+
+## Remarks
+
+The `_isatty` function determines whether `fd` is associated with a character device (a terminal, console, printer, or serial port).
+
+This function validates the `fd` parameter. If `fd` is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EBADF`.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_isatty`|\<io.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## Example
+
+```
+// crt_isatty.c
+/* This program checks to see whether
+* stdout has been redirected to a file.
+*/
+
+#include <stdio.h>
+#include <io.h>
+
+int main( void )
+{
+   if( _isatty( _fileno( stdout ) ) )
+      printf( "stdout has not been redirected to a file\n" );
+   else
+      printf( "stdout has been redirected to a file\n");
+}
+```
+
+## Sample Output
+
+```
+stdout has not been redirected to a file
+```
+
+## See Also
 
 [File Handling](../../c-runtime-library/file-handling.md)

@@ -21,46 +21,46 @@ ms.workload: ["cplusplus"]
 ---
 # not_eq
 
-An alternative to the != operator.  
-  
-## Syntax  
-  
-```  
-  
-#define not_eq !=  
-  
-```  
-  
-## Remarks  
+An alternative to the != operator.
 
-The macro yields the operator !=.  
-  
-## Example  
-  
-```  
-// iso646_not_eq.cpp  
-// compile with: /EHsc  
-#include <iostream>  
-#include <iso646.h>  
-  
-int main( )  
-{  
-   using namespace std;  
-   int a = 0, b = 1;  
-  
-   if (a != b)  
-      cout << "a is not equal to b" << endl;  
-  
-   if (a not_eq b)  
-      cout << "a is not equal to b" << endl;  
-}  
-```  
-  
-```Output  
-a is not equal to b  
-a is not equal to b  
-```  
-  
-## Requirements  
+## Syntax
+
+```
+
+#define not_eq !=
+
+```
+
+## Remarks
+
+The macro yields the operator !=.
+
+## Example
+
+```
+// iso646_not_eq.cpp
+// compile with: /EHsc
+#include <iostream>
+#include <iso646.h>
+
+int main( )
+{
+   using namespace std;
+   int a = 0, b = 1;
+
+   if (a != b)
+      cout << "a is not equal to b" << endl;
+
+   if (a not_eq b)
+      cout << "a is not equal to b" << endl;
+}
+```
+
+```Output
+a is not equal to b
+a is not equal to b
+```
+
+## Requirements
 
 **Header:** \<iso646.h>

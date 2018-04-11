@@ -22,38 +22,38 @@ ms.workload: ["cplusplus"]
 ---
 # _heapmin
 
-Releases unused heap memory to the operating system.  
-  
-## Syntax  
-  
-```  
-int _heapmin( void );  
-```  
-  
-## Return Value  
+Releases unused heap memory to the operating system.
 
-If successful, `_heapmin` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.  
-  
- For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## Remarks  
+## Syntax
 
-The `_heapmin` function minimizes the heap by releasing unused heap memory to the operating system. If the operating system does not support `_heapmin`(for example, Windows 98), the function returns -1 and sets `errno` to `ENOSYS`.  
-  
-## Requirements  
-  
-|Routine|Required header|Optional header|  
-|-------------|---------------------|---------------------|  
-|`_heapmin`|\<malloc.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+```
+int _heapmin( void );
+```
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)   
- [free](../../c-runtime-library/reference/free.md)   
- [_heapadd](../../c-runtime-library/heapadd.md)   
- [_heapchk](../../c-runtime-library/reference/heapchk.md)   
- [_heapset](../../c-runtime-library/heapset.md)   
- [_heapwalk](../../c-runtime-library/reference/heapwalk.md)   
- [malloc](../../c-runtime-library/reference/malloc.md)
+## Return Value
+
+If successful, `_heapmin` returns 0; otherwise, the function returns -1 and sets `errno` to `ENOSYS`.
+
+For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## Remarks
+
+The `_heapmin` function minimizes the heap by releasing unused heap memory to the operating system. If the operating system does not support `_heapmin`(for example, Windows 98), the function returns -1 and sets `errno` to `ENOSYS`.
+
+## Requirements
+
+|Routine|Required header|Optional header|
+|-------------|---------------------|---------------------|
+|`_heapmin`|\<malloc.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+[free](../../c-runtime-library/reference/free.md)<br/>
+[_heapadd](../../c-runtime-library/heapadd.md)<br/>
+[_heapchk](../../c-runtime-library/reference/heapchk.md)<br/>
+[_heapset](../../c-runtime-library/heapset.md)<br/>
+[_heapwalk](../../c-runtime-library/reference/heapwalk.md)<br/>
+[malloc](../../c-runtime-library/reference/malloc.md)

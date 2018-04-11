@@ -22,82 +22,82 @@ ms.workload: ["cplusplus"]
 ---
 # _getche, _getwche
 
-Gets a character from the console with echo.  
-  
+Gets a character from the console with echo.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
-```  
-int _getche( void );  
-wint_t _getwche( void );  
-```  
-  
-## Return Value  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-Returns the character read. There is no error return.  
-  
-## Remarks  
+## Syntax
 
-The `_getche` and `_getwche` functions read a single character from the console with echo, meaning that the character is displayed at the console. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.  
-  
- These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getche_nolock, _getwche_nolock](../../c-runtime-library/reference/getche-nolock-getwche-nolock.md).  
-  
-### Generic-Text Routine Mappings  
-  
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_getche`|`_getche`|`_getch`|`_getwche`|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_getche`|\<conio.h>|  
-|`_getwche`|\<conio.h> or \<wchar.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Example  
-  
-```  
-// crt_getche.c  
-// compile with: /c  
-// This program reads characters from  
-// the keyboard until it receives a 'Y' or 'y'.  
-  
-#include <conio.h>  
-#include <ctype.h>  
-  
-int main( void )  
-{  
-   int ch;  
-  
-   _cputs( "Type 'Y' when finished typing keys: " );  
-   do  
-   {  
-      ch = _getche();  
-      ch = toupper( ch );  
-   } while( ch != 'Y' );  
-  
-   _putch( ch );  
-   _putch( '\r' );    // Carriage return  
-   _putch( '\n' );    // Line feed       
-}  
-```  
-  
-```Input  
+```
+int _getche( void );
+wint_t _getwche( void );
+```
+
+## Return Value
+
+Returns the character read. There is no error return.
+
+## Remarks
+
+The `_getche` and `_getwche` functions read a single character from the console with echo, meaning that the character is displayed at the console. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
+
+These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getche_nolock, _getwche_nolock](../../c-runtime-library/reference/getche-nolock-getwche-nolock.md).
+
+### Generic-Text Routine Mappings
+
+|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|`_getche`|`_getche`|`_getch`|`_getwche`|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_getche`|\<conio.h>|
+|`_getwche`|\<conio.h> or \<wchar.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Example
+
+```
+// crt_getche.c
+// compile with: /c
+// This program reads characters from
+// the keyboard until it receives a 'Y' or 'y'.
+
+#include <conio.h>
+#include <ctype.h>
+
+int main( void )
+{
+   int ch;
+
+   _cputs( "Type 'Y' when finished typing keys: " );
+   do
+   {
+      ch = _getche();
+      ch = toupper( ch );
+   } while( ch != 'Y' );
+
+   _putch( ch );
+   _putch( '\r' );    // Carriage return
+   _putch( '\n' );    // Line feed
+}
+```
+
+```Input
 abcdefy
 ```
-  
-```Output  
-Type 'Y' when finished typing keys: abcdefyY  
-```  
-  
-## See Also  
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
- [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)   
- [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)   
- [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+```Output
+Type 'Y' when finished typing keys: abcdefyY
+```
+
+## See Also
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
+[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

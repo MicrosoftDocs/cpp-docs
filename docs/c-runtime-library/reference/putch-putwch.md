@@ -22,63 +22,63 @@ ms.workload: ["cplusplus"]
 ---
 # _putch, _putwch
 
-Writes a character to the console.  
-  
+Writes a character to the console.
+
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
-```  
-  
-      int _putch(  
-int c   
-);  
-wint_t _putwch(  
-   wchar_t c  
-);  
-```  
-  
-### Parameters  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-`c`  
- Character to be output.  
-  
-## Return Value  
+## Syntax
 
-Returns `c` if successful. If `_putch` fails, it returns `EOF`; if **_putwch** fails, it returns **WEOF**.  
-  
-## Remarks  
+```
 
-These functions write the character `c` directly, without buffering, to the console. In Windows NT, **_putwch** writes Unicode characters using the current console locale setting.  
-  
- The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. For more information, see `_putch_nolock`, `_putwch_nolock`.  
-  
-### Generic-Text Routine Mappings  
-  
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|**_puttch**|`_putch`|`_putch`|**_putwch**|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_putch`|\<conio.h>|  
-|**_putwch**|\<conio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## Libraries  
+      int _putch(
+int c
+);
+wint_t _putwch(
+   wchar_t c
+);
+```
 
-All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).  
-  
-## Example  
+### Parameters
 
-See the example for [_getch](../../c-runtime-library/reference/getch-getwch.md).  
-  
-## See Also  
+`c`
+Character to be output.
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)   
- [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)   
- [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)
+## Return Value
+
+Returns `c` if successful. If `_putch` fails, it returns `EOF`; if **_putwch** fails, it returns **WEOF**.
+
+## Remarks
+
+These functions write the character `c` directly, without buffering, to the console. In Windows NT, **_putwch** writes Unicode characters using the current console locale setting.
+
+The versions with the **_nolock** suffix are identical except that they are not protected from interference by other threads. For more information, see `_putch_nolock`, `_putwch_nolock`.
+
+### Generic-Text Routine Mappings
+
+|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_puttch**|`_putch`|`_putch`|**_putwch**|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_putch`|\<conio.h>|
+|**_putwch**|\<conio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## Libraries
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+## Example
+
+See the example for [_getch](../../c-runtime-library/reference/getch-getwch.md).
+
+## See Also
+
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)

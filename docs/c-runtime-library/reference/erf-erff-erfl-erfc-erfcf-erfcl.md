@@ -62,7 +62,7 @@ long double erfcl(
 ### Parameters
 
 *x*<br/>
- A floating-point value.
+A floating-point value.
 
 ## Return Value
 
@@ -72,11 +72,11 @@ The **erf** functions return the Gauss error function of *x*. The **erfc** funct
 
 The **erf** functions calculate the Gauss error function of *x*, which is defined as:
 
- ![The error function of x](../../c-runtime-library/reference/media/crt_erf_formula.PNG "CRT_erf_formula")
+![The error function of x](../../c-runtime-library/reference/media/crt_erf_formula.PNG "CRT_erf_formula")
 
- The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
+The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
 
- Because C++ allows overloading, you can call overloads of **erf** and **erfc** that take and return **float** and **long** **double** types. In a C program, **erf** and **erfc** always take and return a **double**.
+Because C++ allows overloading, you can call overloads of **erf** and **erfc** that take and return **float** and **long** **double** types. In a C program, **erf** and **erfc** always take and return a **double**.
 
 ## Requirements
 
@@ -84,7 +84,7 @@ The **erf** functions calculate the Gauss error function of *x*, which is define
 |--------------|---------------------|
 |**erf**, **erff**, **erfl**, **erfc**, **erfcf**, **erfcl**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 

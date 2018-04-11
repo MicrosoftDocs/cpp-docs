@@ -39,7 +39,7 @@ int _fpclassf(
 ### Parameters
 
 *x*<br/>
- The floating-point value to test.
+The floating-point value to test.
 
 ## Return Value
 
@@ -68,10 +68,10 @@ The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are si
 |--------------|---------------------|
 |**_fpclass**, **_fpclassf**|\<float.h>|
 
- For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
- [fpclassify](../../c-runtime-library/reference/fpclassify.md)<br/>
+[isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
+[fpclassify](../../c-runtime-library/reference/fpclassify.md)<br/>

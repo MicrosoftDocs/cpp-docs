@@ -53,7 +53,7 @@ float _logbf(
 ### Parameters
 
 *x*<br/>
- A floating-point value.
+A floating-point value.
 
 ## Return Value
 
@@ -63,7 +63,7 @@ float _logbf(
 
 The **logb** functions extract the exponential value of the floating-point argument *x*, as though *x* were represented with infinite range. If the argument *x* is denormalized, it is treated as if it were normalized.
 
- Because C++ allows overloading, you can call overloads of **logb** that take and return **float** or **long** **double** values. In a C program, **logb** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **logb** that take and return **float** or **long** **double** values. In a C program, **logb** always takes and returns a **double**.
 
 |Input|SEH exception|Matherr exception|
 |-----------|-------------------|-----------------------|
@@ -77,7 +77,7 @@ The **logb** functions extract the exponential value of the floating-point argum
 |**_logb**|\<float.h>|
 |**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
@@ -86,4 +86,4 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [frexp](../../c-runtime-library/reference/frexp.md)<br/>
+[frexp](../../c-runtime-library/reference/frexp.md)<br/>

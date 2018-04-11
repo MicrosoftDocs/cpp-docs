@@ -40,7 +40,7 @@ long double nearbyint( long double x ); //C++ only
 ### Parameters
 
 *x*<br/>
- The value to round.
+The value to round.
 
 ## Return Value
 

@@ -98,7 +98,7 @@ int main( void )
 11651
 27464
 18093
- 3284
+3284
 11785
 14686
 11447
@@ -118,6 +118,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[srand](../../c-runtime-library/reference/srand.md)  
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[srand](../../c-runtime-library/reference/srand.md)<br/>
 [rand_s](../../c-runtime-library/reference/rand-s.md)  

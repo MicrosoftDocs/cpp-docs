@@ -54,7 +54,7 @@ Otherwise, may return one of the following:
 |*x* =  ±0|x|
 |*x* = NaN|NaN|
 
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 

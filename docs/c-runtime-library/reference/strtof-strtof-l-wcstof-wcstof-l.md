@@ -50,21 +50,21 @@ float wcstof_l(
 ## Parameters
 
 *nptr*<br/>
- Null-terminated string to convert.
+Null-terminated string to convert.
 
- *endptr*<br/>
- Pointer to the character that stops the scan.
+*endptr*<br/>
+Pointer to the character that stops the scan.
 
- *locale*<br/>
- The locale to use.
+*locale*<br/>
+The locale to use.
 
 ## Return Value
 
 **strtof** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VALF**. The sign of **HUGE_VALF** matches the sign of the value that cannot be represented. **strtof** returns 0 if no conversion can be performed or an underflow occurs.
 
- **wcstof** returns values analogously to **strtof**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**wcstof** returns values analogously to **strtof**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
- For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -77,17 +77,17 @@ Each function converts the input string *nptr* to a **float**. The **strtof** fu
 |**_tcstof**|**strtof**|**strtof**|**wcstof**|
 |**_tcstof_l**|**_strtof_l**|**_strtof_l**|**_wcstof_l**|
 
- The **LC_NUMERIC** category setting of the current locale determines recognition of the radix character in *nptr*; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **LC_NUMERIC** category setting of the current locale determines recognition of the radix character in *nptr*; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; the ones that have the suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
- If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location that's pointed to by *endptr*.
+If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location that's pointed to by *endptr*.
 
- **strtof** expects *nptr* to point to a string of the following form:
+**strtof** expects *nptr* to point to a string of the following form:
 
- [*whitespace*] [*sign*] [*digits*] [__.__*digits*] [{**e** &#124; **E**} [*sign*] *digits*]
+[*whitespace*] [*sign*] [*digits*] [__.__*digits*] [{**e** &#124; **E**} [*sign*] *digits*]
 
- A *whitespace* may consist of space and tab characters, which are ignored; *sign* is either plus (**+**) or minus (**-**); and *digits* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.
+A *whitespace* may consist of space and tab characters, which are ignored; *sign* is either plus (**+**) or minus (**-**); and *digits* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.
 
- The UCRT versions of these functions do not support conversion of Fortran-style (**d** or **D**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.
+The UCRT versions of these functions do not support conversion of Fortran-style (**d** or **D**) exponent letters. This non-standard extension was supported by earlier versions of the CRT, and may be a breaking change for your code.
 
 ## Requirements
 
@@ -96,7 +96,7 @@ Each function converts the input string *nptr* to a **float**. The **strtof** fu
 |**strtof**, **_strtof_l**|C: \<stdlib.h> C++: &lt;cstdlib> or \<stdlib.h>|
 |**wcstof**, **_wcstof_l**|C: \<stdlib.h> or \<wchar.h> C++: &lt;cstdlib>, \<stdlib.h> or \<wchar.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -131,14 +131,14 @@ string = 3.14159This stopped it
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
- [Locale](../../c-runtime-library/locale.md)<br/>
- [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
- [strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
- [strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
- [strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
- [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
- [localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
- [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
- [_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
+[strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
+[strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
+[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
+[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
+[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>

@@ -22,64 +22,64 @@ ms.workload: ["cplusplus"]
 ---
 # _get_errno
 
-Gets the current value of the errno global variable.  
-  
-## Syntax  
-  
-```  
-errno_t _get_errno(   
-   int * pValue   
-);  
-```  
-  
-### Parameters  
+Gets the current value of the errno global variable.
 
-[out] `pValue`  
- A pointer to an integer to be filled with the current value of the `errno` variable.  
-  
-## Return Value  
+## Syntax
 
-Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
-  
-## Remarks  
+```
+errno_t _get_errno( 
+   int * pValue 
+);
+```
 
-Possible values of `errno` are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).  
-  
-## Example  
-  
-```  
-// crt_get_errno.c  
-#include <stdio.h>  
-#include <fcntl.h>  
-#include <sys/stat.h>  
-#include <share.h>  
-#include <errno.h>  
-  
-int main()  
-{  
-   errno_t err;  
-   int pfh;  
-   _sopen_s( &pfh, "nonexistent.file", _O_WRONLY, _SH_DENYNO, _S_IWRITE );  
-   _get_errno( &err );  
-   printf( "errno = %d\n", err );  
-   printf( "fyi, ENOENT = %d\n", ENOENT );  
-}  
-```  
-  
-```Output  
-errno = 2  
-fyi, ENOENT = 2  
-```  
-  
-## Requirements  
-  
-|Routine|Required header|Optional header|  
-|-------------|---------------------|---------------------|  
-|`_get_errno`|\<stdlib.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[_set_errno](../../c-runtime-library/reference/set-errno.md)   
- [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[out] `pValue`
+A pointer to an integer to be filled with the current value of the `errno` variable.
+
+## Return Value
+
+Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+
+## Remarks
+
+Possible values of `errno` are defined in Errno.h. Also, see [errno Constants](../../c-runtime-library/errno-constants.md).
+
+## Example
+
+```
+// crt_get_errno.c
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <share.h>
+#include <errno.h>
+
+int main()
+{
+   errno_t err;
+   int pfh;
+   _sopen_s( &pfh, "nonexistent.file", _O_WRONLY, _SH_DENYNO, _S_IWRITE );
+   _get_errno( &err );
+   printf( "errno = %d\n", err );
+   printf( "fyi, ENOENT = %d\n", ENOENT );
+}
+```
+
+```Output
+errno = 2
+fyi, ENOENT = 2
+```
+
+## Requirements
+
+|Routine|Required header|Optional header|
+|-------------|---------------------|---------------------|
+|`_get_errno`|\<stdlib.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[_set_errno](../../c-runtime-library/reference/set-errno.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

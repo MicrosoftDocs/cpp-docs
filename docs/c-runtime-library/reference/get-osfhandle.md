@@ -22,41 +22,41 @@ ms.workload: ["cplusplus"]
 ---
 # _get_osfhandle
 
-Retrieves the operating-system file handle that is associated with the specified file descriptor.  
-  
-## Syntax  
-  
-```  
-intptr_t _get_osfhandle(   
-   int fd   
-);  
-```  
-  
+Retrieves the operating-system file handle that is associated with the specified file descriptor.
+
+## Syntax
+
+```
+intptr_t _get_osfhandle(
+   int fd
+);
+```
+
 ### Parameters
 
-*fd*  
-An existing file descriptor.  
-  
+*fd*
+An existing file descriptor.
+
 ## Return Value
 
-Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
-  
+Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.
+
 ## Remarks
 
 To close a file whose operating system (OS) file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. Do not call `CloseHandle` on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when `_close` is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, do not call `_close` on the file descriptor.
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_osfhandle`|\<io.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_get_osfhandle`|\<io.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
 ## See Also
 
-[File Handling](../../c-runtime-library/file-handling.md)   
-[_close](../../c-runtime-library/reference/close.md)   
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
-[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   
+[File Handling](../../c-runtime-library/file-handling.md)<br/>
+[_close](../../c-runtime-library/reference/close.md)<br/>
+[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
+[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)

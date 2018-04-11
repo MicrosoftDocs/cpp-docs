@@ -62,7 +62,7 @@ long long llroundl(
 ### Parameters
 
 *x*<br/>
- The floating-point value to round.
+The floating-point value to round.
 
 ## Return Value
 
@@ -82,7 +82,7 @@ Because C++ allows overloading, you can call overloads of **lround** or **llroun
 |-------------|---------------------|
 |**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -123,10 +123,10 @@ lroundl(-2.500000) is -4
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
- [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
- [fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
- [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
- [round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
- [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
- [rint, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)<br/>
+[ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
+[floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
+[fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
+[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
+[round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
+[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
+[rint, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)<br/>

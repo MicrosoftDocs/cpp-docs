@@ -22,60 +22,60 @@ ms.workload: ["cplusplus"]
 ---
 # isgraph, iswgraph, _isgraph_l, _iswgraph_l
 
-Determines whether an integer represents a graphical character.  
-  
-## Syntax  
-  
-```  
-int isgraph(  
-   int c   
-);  
-int iswgraph(  
-   wint_t c   
-);  
-int _isgraph_l(  
-   int c,  
-   _locale_t locale  
-);  
-int _iswgraph_l(  
-   wint_t c,  
-   _locale_t locale  
-);  
-```  
-  
-### Parameters  
+Determines whether an integer represents a graphical character.
 
-`c`  
- Integer to test.  
-  
-## Return Value  
+## Syntax
 
-Each of these routines returns nonzero if `c` is a particular representation of a printable character other than a space. `isgraph` returns a nonzero value if `c` is a printable character other than a space. `iswgraph` returns a nonzero value if `c` is a printable wide character other than a wide character space. Each of these routines returns 0 if `c` does not satisfy the test condition.  
-  
- The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
- The behavior of `isgraph` and `_isgraph_l` is undefined if `c` is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and `c` is not one of these values, the functions raise an assertion.  
-  
-### Generic-Text Routine Mappings  
-  
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_istgraph`|`isgraph`|[_ismbcgraph](../../c-runtime-library/reference/ismbcgraph-functions.md)|`iswgraph`|  
-|`_istgraph_l`|`_isgraph_l`|[_ismbcgraph_l](../../c-runtime-library/reference/ismbcgraph-functions.md)|`_iswgraph_l`|  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`isgraph`|\<ctype.h>|  
-|`iswgraph`|\<ctype.h> or \<wchar.h>|  
-|`_isgraph_l`|\<ctype.h>|  
-|`_iswgraph_l`|\<ctype.h> or \<wchar.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
-  
-## See Also  
+```
+int isgraph(
+   int c
+);
+int iswgraph(
+   wint_t c
+);
+int _isgraph_l(
+   int c,
+   _locale_t locale
+);
+int _iswgraph_l(
+   wint_t c,
+   _locale_t locale
+);
+```
 
-[Character Classification](../../c-runtime-library/character-classification.md)   
- [Locale](../../c-runtime-library/locale.md)   
- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+### Parameters
+
+`c`
+Integer to test.
+
+## Return Value
+
+Each of these routines returns nonzero if `c` is a particular representation of a printable character other than a space. `isgraph` returns a nonzero value if `c` is a printable character other than a space. `iswgraph` returns a nonzero value if `c` is a printable wide character other than a wide character space. Each of these routines returns 0 if `c` does not satisfy the test condition.
+
+The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+The behavior of `isgraph` and `_isgraph_l` is undefined if `c` is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and `c` is not one of these values, the functions raise an assertion.
+
+### Generic-Text Routine Mappings
+
+|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|`_istgraph`|`isgraph`|[_ismbcgraph](../../c-runtime-library/reference/ismbcgraph-functions.md)|`iswgraph`|
+|`_istgraph_l`|`_isgraph_l`|[_ismbcgraph_l](../../c-runtime-library/reference/ismbcgraph-functions.md)|`_iswgraph_l`|
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`isgraph`|\<ctype.h>|
+|`iswgraph`|\<ctype.h> or \<wchar.h>|
+|`_isgraph_l`|\<ctype.h>|
+|`_iswgraph_l`|\<ctype.h> or \<wchar.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+
+## See Also
+
+[Character Classification](../../c-runtime-library/character-classification.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)

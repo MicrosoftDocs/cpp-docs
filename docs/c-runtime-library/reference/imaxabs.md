@@ -35,7 +35,7 @@ intmax_t imaxabs(
 ### Parameters
 
 *n*<br/>
- Integer value.
+Integer value.
 
 ## Return Value
 
@@ -50,7 +50,7 @@ The **imaxabs** function returns the absolute value of the argument. There is no
 |-------------|---------------------|
 |**imaxabs**|\<inttypes.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
@@ -83,7 +83,7 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 ## See Also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
- [_cabs](../../c-runtime-library/reference/cabs.md)<br/>
- [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
+[_cabs](../../c-runtime-library/reference/cabs.md)<br/>
+[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>

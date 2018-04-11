@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 ---
 # rand_s
 
-Generates a pseudorandom number. This is a more secure version of the function [rand](../../c-runtime-library/reference/rand.md), with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md). 
+Generates a pseudorandom number. This is a more secure version of the function [rand](../../c-runtime-library/reference/rand.md), with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -30,7 +30,7 @@ errno_t rand_s(unsigned int* randomValue);
 
 ### Parameters
 
-*randomValue*  
+*randomValue*
 A pointer to an integer to hold the generated value.
 
 ## Return Value
@@ -102,7 +102,7 @@ int main( void )
         {
             printf_s("The rand_s function failed!\n");
         }
-        printf_s( "  %g\n", (double) number / 
+        printf_s( "  %g\n", (double) number /
                           ((double) UINT_MAX + 1) * max );
     }
 }
@@ -136,6 +136,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[rand](../../c-runtime-library/reference/rand.md)  
-[srand](../../c-runtime-library/reference/srand.md)  
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](../../c-runtime-library/reference/rand.md)<br/>
+[srand](../../c-runtime-library/reference/srand.md)

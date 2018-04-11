@@ -116,10 +116,10 @@ The absolute value of -41567 is 41567
 The absolute value of -9876543210 is 9876543210
 The absolute value of 0xffffffffffffffff is 0x0000000000000001
 Microsoft implementation-specific results:
- abs(INT_MIN) returns -2147483648
- labs(LONG_MIN) returns -2147483648
- llabs(LLONG_MIN) returns -9223372036854775808
- _abs64(_I64_MIN) returns 0x8000000000000000
+abs(INT_MIN) returns -2147483648
+labs(LONG_MIN) returns -2147483648
+llabs(LLONG_MIN) returns -9223372036854775808
+_abs64(_I64_MIN) returns 0x8000000000000000
 ```
 
 ## See Also

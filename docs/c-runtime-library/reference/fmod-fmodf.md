@@ -52,7 +52,7 @@ long double fmodl(
 ### Parameters
 
 *x*, *y*<br/>
- Floating-point values.
+Floating-point values.
 
 ## Return Value
 
@@ -62,7 +62,7 @@ long double fmodl(
 
 The **fmod** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* `*` *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
 
- C++ allows overloading, so you can call overloads of **fmod** that take and return **float** and **long** **double** values. In a C program, **fmod** always takes two double arguments and returns a double.
+C++ allows overloading, so you can call overloads of **fmod** that take and return **float** and **long** **double** values. In a C program, **fmod** always takes two double arguments and returns a double.
 
 ## Requirements
 
@@ -70,7 +70,7 @@ The **fmod** function calculates the floating-point remainder *f* of *x* / *y* s
 |--------------|---------------------|
 |**fmod**, **fmodf**, **fmodl**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
@@ -97,7 +97,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
- [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
- [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
- [_CIfmod](../../c-runtime-library/cifmod.md)<br/>
+[ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
+[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
+[floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
+[_CIfmod](../../c-runtime-library/cifmod.md)<br/>

@@ -60,12 +60,12 @@ long double _copysignl(
 ### Parameters
 
 *x*<br/>
- The floating-point value that's returned as the magnitude of the result.
+The floating-point value that's returned as the magnitude of the result.
 
- *y*<br/>
- The floating-point value that's returned as the sign of the result.
+*y*<br/>
+The floating-point value that's returned as the sign of the result.
 
- [Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)
+[Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)
 
 ## Return Value
 
@@ -82,9 +82,9 @@ Because C++ allows overloading, you can call overloads of **copysign** that take
 |**_copysign**|\<float.h>|
 |**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<math.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
- [_chgsign, _chgsignf, _chgsignl](../../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)<br/>
+[_chgsign, _chgsignf, _chgsignl](../../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)<br/>

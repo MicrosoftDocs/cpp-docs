@@ -37,10 +37,10 @@ int fegetexceptflag(
 ### Parameters
 
 *pstatus*<br/>
- A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *excepts*.
+A pointer to a **fexcept_t** object to contain the current values of the  exception flags specified by *excepts*.
 
- *excepts*<br/>
- The floating-point exception flags to store in *pstatus*.
+*excepts*<br/>
+The floating-point exception flags to store in *pstatus*.
 
 ## Return Value
 
@@ -59,9 +59,9 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
 |FE_ALLEXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
- The *excepts* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
+The *excepts* argument may be zero, one of the supported floating-point exception macros, or the bitwise OR of two or more of the macros. The effect of any other argument value is undefined.
 
- To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
 ## Requirements
 
@@ -69,9 +69,9 @@ The **fegetexceptflag** function stores the current state of the floating-point 
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
+[fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>

@@ -72,7 +72,7 @@ long long int llrintl(
 ### Parameters
 
 [in] *x*<br/>
- the value to round.
+the value to round.
 
 ## Return Value
 
@@ -86,9 +86,9 @@ If successful, returns the rounded integral value of *x*.
 
 Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **float** and **long** **double** types. In a C program, **lrint** and **llrint** always take a **double**.
 
- If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
+If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
- **Microsoft specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
+**Microsoft specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
 
 ## Requirements
 
@@ -96,7 +96,7 @@ Because C++ allows overloading, you can call overloads of **lrint** and **llrint
 |--------------|--------------|------------------|
 |**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 

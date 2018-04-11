@@ -22,37 +22,37 @@ ms.workload: ["cplusplus"]
 ---
 # _get_pgmptr
 
-Gets the current value of the `_pgmptr` global variable.  
-  
-## Syntax  
-  
-```  
-errno_t _get_pgmptr(   
-   char **pValue   
-);  
-```  
-  
-### Parameters  
+Gets the current value of the `_pgmptr` global variable.
 
-[out] `pValue`  
- A pointer to a string to be filled with the current value of the `_pgmptr` variable.  
-  
-## Return Value  
+## Syntax
 
-Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.  
-  
-## Remarks  
+```
+errno_t _get_pgmptr( 
+   char **pValue 
+);
+```
 
-Only call `_get_pgmptr` if your program has a narrow entry point, like `main()` or `WinMain()`. The `_pgmptr` global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_pgmptr`|\<stdlib.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
+
+[out] `pValue`
+A pointer to a string to be filled with the current value of the `_pgmptr` variable.
+
+## Return Value
+
+Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+
+## Remarks
+
+Only call `_get_pgmptr` if your program has a narrow entry point, like `main()` or `WinMain()`. The `_pgmptr` global variable contains the full path to the executable associated with the process. For more information, see [_pgmptr, _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_get_pgmptr`|\<stdlib.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
 
 [_get_wpgmptr](../../c-runtime-library/reference/get-wpgmptr.md)

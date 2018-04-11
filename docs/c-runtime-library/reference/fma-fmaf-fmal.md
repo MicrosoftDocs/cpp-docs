@@ -62,19 +62,19 @@ long double fmal(
 ### Parameters
 
 [in] *x*<br/>
- The first value to multiply.
+The first value to multiply.
 
- [in] *y*<br/>
- The second value to multiply.
+[in] *y*<br/>
+The second value to multiply.
 
- [in] *z*<br/>
- The value to add.
+[in] *z*<br/>
+The value to add.
 
 ## Return Value
 
 Returns `(x * y) + z`. The return value is then rounded using the current rounding format.
 
- Otherwise, may return one of the following values:
+Otherwise, may return one of the following values:
 
 |Issue|Return|
 |-----------|------------|
@@ -85,13 +85,13 @@ Returns `(x * y) + z`. The return value is then rounded using the current roundi
 |Overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |Underflow range error|correct value, after rounding.|
 
- Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
 
 Because C++ allows overloading, you can call overloads of **fma** that take and return **float** and **long** **double** types. In a C program, **fma** always takes and returns a **double**.
 
- This function computes the value as though it were taken to infinite precision, and then rounds the final result.
+This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 
 ## Requirements
 
@@ -99,10 +99,10 @@ Because C++ allows overloading, you can call overloads of **fma** that take and 
 |--------------|--------------|------------------|
 |**fma**, **fmaf**, **fmal**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [remainder, remainderf, remainderl](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)<br/>
- [remquo, remquof, remquol](../../c-runtime-library/reference/remquo-remquof-remquol.md)<br/>
+[remainder, remainderf, remainderl](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)<br/>
+[remquo, remquof, remquol](../../c-runtime-library/reference/remquo-remquof-remquol.md)<br/>

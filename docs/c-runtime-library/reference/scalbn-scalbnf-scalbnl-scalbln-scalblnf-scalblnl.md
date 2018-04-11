@@ -72,22 +72,22 @@ long double scalblnl(
 ### Parameters
 
 *x*<br/>
- Floating-point value.
+Floating-point value.
 
- *exp*<br/>
- Integer exponent.
+*exp*<br/>
+Integer exponent.
 
 ## Return Value
 
 The **scalbn** functions return the value of *x* * **FLT_RADIX**<sup>exp</sup> when successful. On overflow (depending on the sign of *x*), **scalbn** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
- For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 **FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](../../c-runtime-library/reference/ldexp.md).
 
- Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **long** **double** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
+Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **long** **double** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
 
 ## Requirements
 
@@ -95,7 +95,7 @@ The **scalbn** functions return the value of *x* * **FLT_RADIX**<sup>exp</sup> w
 |--------------|--------------|------------------|
 |**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -124,6 +124,6 @@ int main( void )
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [frexp](../../c-runtime-library/reference/frexp.md)<br/>
- [ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
- [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>
+[frexp](../../c-runtime-library/reference/frexp.md)<br/>
+[ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
+[modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>

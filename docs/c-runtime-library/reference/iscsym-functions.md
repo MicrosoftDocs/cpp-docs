@@ -61,10 +61,10 @@ int _iswcsymf_l(
 
 ### Parameters
 
-*c*  
+*c*
 Integer to test. *c* should be in the range of 0-255 for the narrow character version of the function.
 
-*locale*  
+*locale*
 The locale to use.
 
 ## Return Value
@@ -87,6 +87,6 @@ The `iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_i
 
 ## See Also
 
-[Character Classification](../../c-runtime-library/character-classification.md)   
-[Locale](../../c-runtime-library/locale.md)   
+[Character Classification](../../c-runtime-library/character-classification.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
 [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

@@ -35,7 +35,7 @@ int feraiseexcept(
 ### Parameters
 
 *excepts*<br/>
- The floating-point exceptions to raise.
+The floating-point exceptions to raise.
 
 ## Return Value
 
@@ -54,11 +54,11 @@ The **feraiseexcept** function attempts to raise the floating-point exceptions s
 |FE_UNDERFLOW|An earlier floating-point operation result was too small to be represented at full precision; a denormal value was created.|
 |FE_ALLEXCEPT|The bitwise OR of all supported floating-point exceptions.|
 
- The *excepts* argument may be zero, one of the exception macro values, or the bitwise OR of two or more of the supported exception macros. If one of the specified exception macros is FE_OVERFLOW or FE_UNDERFLOW, the FE_INEXACT exception may be raised as a side-effect.
+The *excepts* argument may be zero, one of the exception macro values, or the bitwise OR of two or more of the supported exception macros. If one of the specified exception macros is FE_OVERFLOW or FE_UNDERFLOW, the FE_INEXACT exception may be raised as a side-effect.
 
- To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
+To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
- **Microsoft Specific:** The exceptions specified in *excepts* are raised in the order FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. However, FE_INEXACT can be raised when FE_OVERFLOW or FE_UNDERFLOW is raised, even if not specified in *excepts*. **End Microsoft Specific**
+**Microsoft Specific:** The exceptions specified in *excepts* are raised in the order FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. However, FE_INEXACT can be raised when FE_OVERFLOW or FE_UNDERFLOW is raised, even if not specified in *excepts*. **End Microsoft Specific**
 
 ## Requirements
 
@@ -66,12 +66,12 @@ The **feraiseexcept** function attempts to raise the floating-point exceptions s
 |--------------|--------------|------------------|
 |*feraiseexcept*|\<fenv.h>|\<cfenv>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
- [feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>
- [fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>
- [feupdateenv](../../c-runtime-library/reference/feupdateenv.md)<br/>
+[fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
+[feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>
+[fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>
+[feupdateenv](../../c-runtime-library/reference/feupdateenv.md)<br/>

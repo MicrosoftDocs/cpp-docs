@@ -47,7 +47,7 @@ long double expm1l(
 ### Parameters
 
 *x*<br/>
- The floating-point exponential value.
+The floating-point exponential value.
 
 ## Return Value
 
@@ -63,10 +63,10 @@ Because C++ allows overloading, you can call overloads of **expm1** that take an
 |-------------|---------------------|
 |**expm1**, **expm1f**, **expm1l**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
- [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
+[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
+[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>

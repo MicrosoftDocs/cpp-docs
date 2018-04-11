@@ -35,7 +35,7 @@ int raise(
 
 ### Parameters
 
-*sig*  
+*sig*
 Signal to be raised.
 
 ## Return Value
@@ -67,6 +67,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)  
-[abort](../../c-runtime-library/reference/abort.md)  
-[signal](../../c-runtime-library/reference/signal.md)  
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[abort](../../c-runtime-library/reference/abort.md)<br/>
+[signal](../../c-runtime-library/reference/signal.md)

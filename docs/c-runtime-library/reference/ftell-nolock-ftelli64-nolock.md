@@ -22,45 +22,45 @@ ms.workload: ["cplusplus"]
 ---
 # _ftell_nolock, _ftelli64_nolock
 
-Gets the current position of a file pointer, without locking the thread.  
-  
-## Syntax  
-  
-```  
-long _ftell_nolock(   
-   FILE *stream   
-);  
-__int64 _ftelli64_nolock(   
-   FILE *stream   
-);  
-```  
-  
-### Parameters  
+Gets the current position of a file pointer, without locking the thread.
 
-`stream`  
- Target the `FILE` structure.  
-  
-## Return Value  
+## Syntax
 
-Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)**.**  
-  
-## Remarks  
+```
+long _ftell_nolock(
+   FILE *stream
+);
+__int64 _ftelli64_nolock(
+   FILE *stream
+);
+```
 
-These functions are non-locking versions of `ftell` and `_ftelli64`, respectively. They are identical to `ftell` and `_ftelli64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|Optional header|  
-|--------------|---------------------|---------------------|  
-|`ftell_nolock`|\<stdio.h>|\<errno.h>|  
-|`_ftelli64_nolock`|\<stdio.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [fgetpos](../../c-runtime-library/reference/fgetpos.md)   
- [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)   
- [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   
- [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)
+`stream`
+Target the `FILE` structure.
+
+## Return Value
+
+Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)**.**
+
+## Remarks
+
+These functions are non-locking versions of `ftell` and `_ftelli64`, respectively. They are identical to `ftell` and `_ftelli64` except that they are not protected from interference by other threads. These functions might be faster because they do not incur the overhead of locking out other threads. Use these functions only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|Optional header|
+|--------------|---------------------|---------------------|
+|`ftell_nolock`|\<stdio.h>|\<errno.h>|
+|`_ftelli64_nolock`|\<stdio.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[fgetpos](../../c-runtime-library/reference/fgetpos.md)<br/>
+[fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
+[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
+[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)

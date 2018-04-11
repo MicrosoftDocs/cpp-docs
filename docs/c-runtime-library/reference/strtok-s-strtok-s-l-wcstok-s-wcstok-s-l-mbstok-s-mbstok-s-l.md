@@ -22,85 +22,85 @@ ms.workload: ["cplusplus"]
 ---
 # strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
-Finds the next token in a string, by using the current locale or a locale that's passed in. These versions of [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](../../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  
-  
+Finds the next token in a string, by using the current locale or a locale that's passed in. These versions of [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](../../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+
 > [!IMPORTANT]
->  `_mbstok_s` and `_mbstok_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## Syntax  
-  
+>  `_mbstok_s` and `_mbstok_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## Syntax
+
 ```
-char* strtok_s(  
-   char* str,  
-   const char* delimiters,  
-   char** context  
+char* strtok_s(
+   char* str,
+   const char* delimiters,
+   char** context
 );
 
-char* _strtok_s_l(  
-   char* str,  
-   const char* delimiters,  
-   char** context,  
-   _locale_t locale  
-);  
+char* _strtok_s_l(
+   char* str,
+   const char* delimiters,
+   char** context,
+   _locale_t locale
+);
 
-wchar_t* wcstok_s(  
-   wchar_t* str,  
-   const wchar_t* delimiters,   
-   wchar_t** context  
-); 
- 
-wchar_t *_wcstok_s_l(  
-   wchar_t* str,  
-   const wchar_t* delimiters,   
-   wchar_t** context,  
-   _locale_t locale  
-);  
+wchar_t* wcstok_s(
+   wchar_t* str,
+   const wchar_t* delimiters,
+   wchar_t** context
+);
 
-unsigned char* _mbstok_s(  
-   unsigned char* str,  
-   const unsigned char* delimiters,   
-   char** context  
-);  
+wchar_t *_wcstok_s_l(
+   wchar_t* str,
+   const wchar_t* delimiters,
+   wchar_t** context,
+   _locale_t locale
+);
 
-unsigned char* _mbstok_s(  
-   unsigned char* str,  
-   const unsigned char* delimiters,   
-   char** context,  
-   _locale_t locale  
-);  
-```  
-  
-### Parameters  
+unsigned char* _mbstok_s(
+   unsigned char* str,
+   const unsigned char* delimiters,
+   char** context
+);
 
-*str*  
-A string containing the token or tokens to find.  
-  
-*delimiters*  
-The set of delimiter characters to use.  
-  
-*context*  
-Used to store position information between calls to the function.  
-  
-*locale*  
-The locale to use.  
-  
-## Return Value  
+unsigned char* _mbstok_s(
+   unsigned char* str,
+   const unsigned char* delimiters,
+   char** context,
+   _locale_t locale
+);
+```
 
-Returns a pointer to the next token found in *str*. Returns `NULL` when no more tokens are found. Each call modifies *str* by substituting a `NULL` character for the first delimiter that occurs after the returned token.  
-  
-### Error Conditions  
-  
-|*str*|*delimiters*|*context*|Return value|`errno`|  
-|----------------|------------------|---------------|------------------|-------------|  
-|`NULL`|any|pointer to a null pointer|`NULL`|`EINVAL`|  
-|any|`NULL`|any|`NULL`|`EINVAL`|  
-|any|any|`NULL`|`NULL`|`EINVAL`|  
-  
-If *str* is `NULL` but *context* is a pointer to a valid context pointer, there is no error.  
-  
-## Remarks  
+### Parameters
 
-The `strtok_s` family of functions finds the next token in *str*. The set of characters in *delimiters* specifies possible delimiters of the token to be found in *str* on the current call. `wcstok_s` and `_mbstok_s` are wide-character and multibyte-character versions of `strtok_s`. The arguments and return values of `wcstok_s` and `_wcstok_s_l` are wide-character strings; those of `_mbstok_s` and `_mbstok_s_l` are multibyte-character strings. These functions behave identically otherwise.  
+*str*
+A string containing the token or tokens to find.
+
+*delimiters*
+The set of delimiter characters to use.
+
+*context*
+Used to store position information between calls to the function.
+
+*locale*
+The locale to use.
+
+## Return Value
+
+Returns a pointer to the next token found in *str*. Returns `NULL` when no more tokens are found. Each call modifies *str* by substituting a `NULL` character for the first delimiter that occurs after the returned token.
+
+### Error Conditions
+
+|*str*|*delimiters*|*context*|Return value|`errno`|
+|----------------|------------------|---------------|------------------|-------------|
+|`NULL`|any|pointer to a null pointer|`NULL`|`EINVAL`|
+|any|`NULL`|any|`NULL`|`EINVAL`|
+|any|any|`NULL`|`NULL`|`EINVAL`|
+
+If *str* is `NULL` but *context* is a pointer to a valid context pointer, there is no error.
+
+## Remarks
+
+The `strtok_s` family of functions finds the next token in *str*. The set of characters in *delimiters* specifies possible delimiters of the token to be found in *str* on the current call. `wcstok_s` and `_mbstok_s` are wide-character and multibyte-character versions of `strtok_s`. The arguments and return values of `wcstok_s` and `_wcstok_s_l` are wide-character strings; those of `_mbstok_s` and `_mbstok_s_l` are multibyte-character strings. These functions behave identically otherwise.
 
 This function validates its parameters. If an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.
 
@@ -119,7 +119,7 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 |`wcstok_s`,<br />`_wcstok_s_l`|\<string.h> or \<wchar.h>|
 |`_mbstok_s`,<br />`_mbstok_s_l`|\<mbstring.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ### Generic-Text Routine Mappings
 
@@ -173,31 +173,31 @@ int main(void)
         }
     }
 }
-```  
-  
-```Output  
-Tokens:  
- A  
-        Another  
- string  
-        string  
- of  
-        parsed  
- tokens  
-        at  
- and  
-        the  
- some  
-        same  
- more  
-        time.  
- tokens  
-```  
-  
-## See Also  
+```
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)  
-[Locale](../../c-runtime-library/locale.md)  
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)  
-[strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)  
+```Output
+Tokens:
+A
+        Another
+string
+        string
+of
+        parsed
+tokens
+        at
+and
+        the
+some
+        same
+more
+        time.
+tokens
+```
+
+## See Also
+
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)

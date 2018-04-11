@@ -49,21 +49,21 @@ long double wcstold_l(
 ### Parameters
 
 *nptr*<br/>
- Null-terminated string to convert.
+Null-terminated string to convert.
 
- *endptr*<br/>
- Pointer to the character that stops the scan.
+*endptr*<br/>
+Pointer to the character that stops the scan.
 
- *locale*<br/>
- The locale to use.
+*locale*<br/>
+The locale to use.
 
 ## Return Value
 
 **strtold** returns the value of the floating-point number as a **long** **double**, except when the representation would cause an overflow—in that case, the function returns +/-**HUGE_VALL**. The sign of **HUGE_VALL** matches the sign of the value that cannot be represented. **strtold** returns 0 if no conversion can be performed or an underflow occurs.
 
- **wcstold** returns values analogously to **strtold**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+**wcstold** returns values analogously to **strtold**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
- For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -76,15 +76,15 @@ Each function converts the input string *nptr* to a **long** **double**. The **s
 |**_tcstold**|**strtold**|**strtold**|**wcstold**|
 |**_tcstold_l**|**_strtold_l**|**_strtold_l**|**_wcstold_l**|
 
- The **LC_NUMERIC** category setting of the current locale determines the recognition of the radix character in *nptr*. For more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtold_l** and **_wcstold_l** are identical to **_strtold** and **_wcstold** except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **LC_NUMERIC** category setting of the current locale determines the recognition of the radix character in *nptr*. For more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtold_l** and **_wcstold_l** are identical to **_strtold** and **_wcstold** except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
- If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location that's pointed to by *endptr*.
+If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location that's pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location that's pointed to by *endptr*.
 
- **strtold** expects *nptr* to point to a string of the following form:
+**strtold** expects *nptr* to point to a string of the following form:
 
- [*whitespace*] [*sign*] [*digits*] [.*digits*] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]*digits*]
+[*whitespace*] [*sign*] [*digits*] [.*digits*] [ {**d** &#124; **D** &#124; **e** &#124; **E**}[*sign*]*digits*]
 
- A *whitespace* may consist of space and tab characters, which are ignored; *sign* is either plus (**+**) or minus (**-**); and *digits* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**d**, **D**, **e**, or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.
+A *whitespace* may consist of space and tab characters, which are ignored; *sign* is either plus (**+**) or minus (**-**); and *digits* are one or more decimal digits. If no digits appear before the radix character, at least one must appear after the radix character. The decimal digits can be followed by an exponent, which consists of an introductory letter (**d**, **D**, **e**, or **E**) and an optionally signed integer. If neither an exponent part nor a radix character appears, a radix character is assumed to follow the last digit in the string. The first character that does not fit this form stops the scan.
 
 ## Requirements
 
@@ -93,7 +93,7 @@ Each function converts the input string *nptr* to a **long** **double**. The **s
 |**strtold**, **_strtold_l**|\<stdlib.h>|
 |**wcstold**, **_wcstold_l**|\<stdlib.h> or \<wchar.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

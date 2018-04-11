@@ -39,7 +39,7 @@ int _finitef(
 ### Parameters
 
 *x*<br/>
- The floating-point value to test.
+The floating-point value to test.
 
 ## Return Value
 
@@ -56,10 +56,10 @@ The **_finite** and **_finitef** functions are Microsoft specific. The **_finite
 |**_finite**|\<float.h> or \<math.h>|\<float.h>, \<math.h>, \<cfloat>, or \<cmath>|
 |**_finitef**|\<math.h>|\<math.h> or \<cmath>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
- [_fpclass, _fpclassf](../../c-runtime-library/reference/fpclass-fpclassf.md)<br/>
+[isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
+[_fpclass, _fpclassf](../../c-runtime-library/reference/fpclass-fpclassf.md)<br/>

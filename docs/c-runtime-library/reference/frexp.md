@@ -52,10 +52,10 @@ long double frexp(
 ### Parameters
 
 *x*<br/>
- Floating-point value.
+Floating-point value.
 
- *expptr*<br/>
- Pointer to stored integer exponent.
+*expptr*<br/>
+Pointer to stored integer exponent.
 
 ## Return Value
 
@@ -65,7 +65,7 @@ long double frexp(
 
 The **frexp** function breaks down the floating-point value (*x*) into a mantissa (*m*) and an exponent (*n*), such that the absolute value of *m* is greater than or equal to 0.5 and less than 1.0, and *x* = *m* * 2<sup>*n*</sup>. The integer exponent *n* is stored at the location pointed to by *expptr*.
 
- C++ allows overloading, so you can call overloads of **frexp**. In a C program, **frexp** always takes a **double** and an **int** pointer and returns a **double**.
+C++ allows overloading, so you can call overloads of **frexp**. In a C program, **frexp** always takes a **double** and an **int** pointer and returns a **double**.
 
 ## Requirements
 
@@ -73,7 +73,7 @@ The **frexp** function breaks down the floating-point value (*x*) into a mantiss
 |--------------|---------------------|
 |**frexp**, **frexpf**, **frexpl**|\<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
@@ -103,5 +103,5 @@ frexp( 16.400000, &n ) = 0.512500, n = 5
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
- [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>
+[ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
+[modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>

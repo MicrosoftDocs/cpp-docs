@@ -22,42 +22,42 @@ ms.workload: ["cplusplus"]
 ---
 # _fclose_nolock
 
-Closes a stream without thread-locking.  
-  
-## Syntax  
-  
-```  
-int _fclose_nolock(   
-   FILE *stream   
-);  
-```  
-  
-### Parameters  
+Closes a stream without thread-locking.
 
-`stream`  
- Pointer to the `FILE` structure.  
-  
-## Return Value  
+## Syntax
 
-`fclose` returns 0 if the stream is successfully closed. Returns `EOF` to indicate an error.  
-  
-## Remarks  
+```
+int _fclose_nolock(
+   FILE *stream
+);
+```
 
-This functions is a non-locking version of `fclose`. It is identical except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_fclose_nolock`|\<stdio.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [_close](../../c-runtime-library/reference/close.md)   
- [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)   
- [fflush](../../c-runtime-library/reference/fflush.md)   
- [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
- [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)
+`stream`
+Pointer to the `FILE` structure.
+
+## Return Value
+
+`fclose` returns 0 if the stream is successfully closed. Returns `EOF` to indicate an error.
+
+## Remarks
+
+This functions is a non-locking version of `fclose`. It is identical except that it is not protected from interference by other threads. It might be faster because it does not incur the overhead of locking out other threads. Use this function only in thread-safe contexts such as single-threaded applications or where the calling scope already handles thread isolation.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|`_fclose_nolock`|\<stdio.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[_close](../../c-runtime-library/reference/close.md)<br/>
+[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
+[fflush](../../c-runtime-library/reference/fflush.md)<br/>
+[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
+[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)

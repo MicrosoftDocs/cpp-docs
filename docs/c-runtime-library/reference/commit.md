@@ -22,43 +22,43 @@ ms.workload: ["cplusplus"]
 ---
 # _commit
 
-Flushes a file directly to disk.  
-  
-## Syntax  
-  
-```  
-int _commit(   
-   int fd   
-);  
-```  
-  
-### Parameters  
+Flushes a file directly to disk.
 
-`fd`  
- File descriptor referring to the open file.  
-  
-## Return Value  
+## Syntax
 
-`_commit` returns 0 if the file was successfully flushed to disk. A return value of -1 indicates an error.  
-  
-## Remarks  
+```
+int _commit(
+   int fd
+);
+```
 
-The `_commit` function forces the operating system to write the file associated with `fd` to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.  
-  
- If `fd` is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`.  
-  
-## Requirements  
-  
-|Routine|Required header|Optional headers|  
-|-------------|---------------------|----------------------|  
-|`_commit`|\<io.h>|\<errno.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+### Parameters
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)   
- [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
- [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)   
- [_read](../../c-runtime-library/reference/read.md)   
- [_write](../../c-runtime-library/reference/write.md)
+`fd`
+File descriptor referring to the open file.
+
+## Return Value
+
+`_commit` returns 0 if the file was successfully flushed to disk. A return value of -1 indicates an error.
+
+## Remarks
+
+The `_commit` function forces the operating system to write the file associated with `fd` to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.
+
+If `fd` is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`.
+
+## Requirements
+
+|Routine|Required header|Optional headers|
+|-------------|---------------------|----------------------|
+|`_commit`|\<io.h>|\<errno.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
+[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_read](../../c-runtime-library/reference/read.md)<br/>
+[_write](../../c-runtime-library/reference/write.md)

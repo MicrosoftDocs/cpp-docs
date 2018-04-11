@@ -22,30 +22,30 @@ ms.workload: ["cplusplus"]
 ---
 # _get_terminate
 
-Returns the termination routine to be called by `terminate`.  
-  
-## Syntax  
-  
-```  
-terminate_function _get_terminate( void );  
-```  
-  
-## Return Value  
+Returns the termination routine to be called by `terminate`.
 
-Returns a pointer to the function registered by [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`_get_terminate`|\<eh.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## See Also  
+## Syntax
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)   
- [abort](../../c-runtime-library/reference/abort.md)   
- [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)   
- [terminate](../../c-runtime-library/reference/terminate-crt.md)   
- [unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+```
+terminate_function _get_terminate( void );
+```
+
+## Return Value
+
+Returns a pointer to the function registered by [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`_get_terminate`|\<eh.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## See Also
+
+[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
+[abort](../../c-runtime-library/reference/abort.md)<br/>
+[set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
+[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)

@@ -22,89 +22,89 @@ ms.workload: ["cplusplus"]
 ---
 # clearerr
 
-Resets the error indicator for a stream. A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).  
-  
-## Syntax  
-  
-```  
-void clearerr(  
-   FILE *stream   
-);  
-```  
-  
-### Parameters  
+Resets the error indicator for a stream. A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).
 
-`stream`  
- Pointer to `FILE` structure.  
-  
-## Remarks  
+## Syntax
 
-The `clearerr` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.  
-  
- If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns. For more information on `errno` and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).  
-  
- A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`clearerr`|\<stdio.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
-  
-```  
-// crt_clearerr.c  
-// This program creates an error  
-// on the standard input stream, then clears  
-// it so that future reads won't fail.  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   int c;  
-   // Create an error by writing to standard input.  
-   putc( 'c', stdin );  
-   if( ferror( stdin ) )  
-   {  
-      perror( "Write error" );  
-      clearerr( stdin );  
-   }  
-  
-   // See if read causes an error.  
-   printf( "Will input cause an error? " );  
-   c = getc( stdin );  
-   if( ferror( stdin ) )  
-   {  
-      perror( "Read error" );  
-      clearerr( stdin );  
-   }  
-   else  
-      printf( "No read error\n" );  
-}  
-```  
-  
-```Output  
-  
-n  
-  
-```  
-  
-```Output  
-  
-      nWrite error: No error  
-Will input cause an error? n  
-No read error  
-```  
-  
-## See Also  
+```
+void clearerr(
+   FILE *stream
+);
+```
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)   
- [Stream I/O](../../c-runtime-library/stream-i-o.md)   
- [_eof](../../c-runtime-library/reference/eof.md)   
- [feof](../../c-runtime-library/reference/feof.md)   
- [ferror](../../c-runtime-library/reference/ferror.md)   
- [perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+### Parameters
+
+`stream`
+Pointer to `FILE` structure.
+
+## Remarks
+
+The `clearerr` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
+
+If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns. For more information on `errno` and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
+
+A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).
+
+## Requirements
+
+|Routine|Required header|
+|-------------|---------------------|
+|`clearerr`|\<stdio.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+```
+// crt_clearerr.c
+// This program creates an error
+// on the standard input stream, then clears
+// it so that future reads won't fail.
+
+#include <stdio.h>
+
+int main( void )
+{
+   int c;
+   // Create an error by writing to standard input.
+   putc( 'c', stdin );
+   if( ferror( stdin ) )
+   {
+      perror( "Write error" );
+      clearerr( stdin );
+   }
+
+   // See if read causes an error.
+   printf( "Will input cause an error? " );
+   c = getc( stdin );
+   if( ferror( stdin ) )
+   {
+      perror( "Read error" );
+      clearerr( stdin );
+   }
+   else
+      printf( "No read error\n" );
+}
+```
+
+```Output
+
+n
+
+```
+
+```Output
+
+      nWrite error: No error
+Will input cause an error? n
+No read error
+```
+
+## See Also
+
+[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[_eof](../../c-runtime-library/reference/eof.md)<br/>
+[feof](../../c-runtime-library/reference/feof.md)<br/>
+[ferror](../../c-runtime-library/reference/ferror.md)<br/>
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)

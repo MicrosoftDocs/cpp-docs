@@ -56,19 +56,19 @@ long double _hypotl(
 ### Parameters
 
 *x*, *y*<br/>
- Floating-point values.
+Floating-point values.
 
 ## Return Value
 
 If successful, **hypot** returns the length of the hypotenuse; on overflow, **hypot** returns INF (infinity) and the **errno** variable is set to **ERANGE**. You can use **_matherr** to modify error handling.
 
- For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
 The **hypot** functions calculate the length of the hypotenuse of a right triangle, given the length of the two sides *x* and *y* (in other words, the square root of *x*<sup>2</sup> + *y*<sup>2</sup>).
 
- The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
+The versions of the functions that have leading underscores are provided for compatibility with earlier standards. Their behavior is identical to the versions that don't have leading underscores. We recommend using the versions without leading underscores for new code.
 
 ## Requirements
 
@@ -76,7 +76,7 @@ The **hypot** functions calculate the length of the hypotenuse of a right triang
 |-------------|---------------------|
 |**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
 
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -103,5 +103,5 @@ If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 ## See Also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [_cabs](../../c-runtime-library/reference/cabs.md)<br/>
- [_matherr](../../c-runtime-library/reference/matherr.md)<br/>
+[_cabs](../../c-runtime-library/reference/cabs.md)<br/>
+[_matherr](../../c-runtime-library/reference/matherr.md)<br/>

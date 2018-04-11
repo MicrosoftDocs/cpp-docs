@@ -32,7 +32,7 @@ void srand(
 
 ### Parameters
 
-*seed*  
+*seed*
 Seed for pseudorandom number generation
 
 ## Remarks
@@ -53,5 +53,5 @@ See the example for [rand](../../c-runtime-library/reference/rand.md).
 
 ## See Also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
-[rand](../../c-runtime-library/reference/rand.md)  
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](../../c-runtime-library/reference/rand.md)

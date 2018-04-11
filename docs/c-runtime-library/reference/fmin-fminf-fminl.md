@@ -55,10 +55,10 @@ long double fminl(
 ### Parameters
 
 *x*<br/>
- The first value to compare.
+The first value to compare.
 
- *y*<br/>
- The second value to compare.
+*y*<br/>
+The second value to compare.
 
 ## Return Value
 
@@ -70,7 +70,7 @@ If successful, returns the smaller of *x* or *y*.
 |*y* is NaN|*x*|
 |*x* and *y* are NaN|NaN|
 
- The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
+The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
 
 ## Remarks
 
@@ -82,9 +82,9 @@ Because C++ allows overloading, you can call overloads of **fmin** that take and
 |-------------|---------------------|
 |**fmin**, **fminf**, **fminl**|C: \<math.h><br />C++: \<math.h> or \<cmath>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
+[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>

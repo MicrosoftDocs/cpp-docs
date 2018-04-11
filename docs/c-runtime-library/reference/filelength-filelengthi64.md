@@ -22,47 +22,47 @@ ms.workload: ["cplusplus"]
 ---
 # _filelength, _filelengthi64
 
-Gets the length of a file.  
-  
-## Syntax  
-  
-```  
-long _filelength(   
-   int fd   
-);  
-__int64 _filelengthi64(   
-   int fd   
-);  
-```  
-  
-### Parameters  
+Gets the length of a file.
 
-`fd`  
- Target the file descriptor.  
-  
-## Return Value  
+## Syntax
 
-Both `_filelength` and `_filelengthi64` return the file length, in bytes, of the target file associated with `fd`. If `fd` is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set `errno` to `EBADF`.  
-  
-## Requirements  
-  
-|Function|Required header|  
-|--------------|---------------------|  
-|`_filelength`|\<io.h>|  
-|`_filelengthi64`|\<io.h>|  
-  
- For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
+```
+long _filelength(
+   int fd
+);
+__int64 _filelengthi64(
+   int fd
+);
+```
 
-See the example for [_chsize](../../c-runtime-library/reference/chsize.md).  
-  
-## See Also  
+### Parameters
 
-[File Handling](../../c-runtime-library/file-handling.md)   
- [_chsize](../../c-runtime-library/reference/chsize.md)   
- [_fileno](../../c-runtime-library/reference/fileno.md)   
- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
- [_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)   
- [_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)
+`fd`
+Target the file descriptor.
+
+## Return Value
+
+Both `_filelength` and `_filelengthi64` return the file length, in bytes, of the target file associated with `fd`. If `fd` is an invalid file descriptor, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, both functions return -1L to indicate an error and set `errno` to `EBADF`.
+
+## Requirements
+
+|Function|Required header|
+|--------------|---------------------|
+|`_filelength`|\<io.h>|
+|`_filelengthi64`|\<io.h>|
+
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+See the example for [_chsize](../../c-runtime-library/reference/chsize.md).
+
+## See Also
+
+[File Handling](../../c-runtime-library/file-handling.md)<br/>
+[_chsize](../../c-runtime-library/reference/chsize.md)<br/>
+[_fileno](../../c-runtime-library/reference/fileno.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
+[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)

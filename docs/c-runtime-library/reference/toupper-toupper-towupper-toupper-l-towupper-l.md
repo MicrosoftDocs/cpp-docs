@@ -22,83 +22,83 @@ ms.workload: ["cplusplus"]
 ---
 # toupper, _toupper, towupper, _toupper_l, _towupper_l
 
-Convert character to uppercase.  
-  
-## Syntax  
-  
-```  
-int toupper(  
-   int c   
-);  
-int _toupper(  
-   int c   
-);  
-int towupper(  
-   wint_t c   
-);  
-int _toupper_l(  
-   int c ,  
-   _locale_t locale  
-);  
-int _towupper_l(  
-   wint_t c ,  
-   _locale_t locale  
-);  
-```  
-  
-### Parameters  
+Convert character to uppercase.
 
-`c`  
- Character to convert.  
-  
- `locale`  
- Locale to use.  
-  
-## Return Value  
+## Syntax
 
-Each of these routines converts a copy of `c`, if possible, and returns the result.  
-  
- If `c` is a wide character for which `iswlower` is nonzero and there is a corresponding wide character for which `iswupper` is nonzero, `towupper` returns the corresponding wide character; otherwise, `towupper` returns `c` unchanged.  
-  
- There is no return value reserved to indicate an error.  
-  
- In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [islower](../../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.  
-  
-## Remarks  
+```
+int toupper(
+   int c
+);
+int _toupper(
+   int c
+);
+int towupper(
+   wint_t c
+);
+int _toupper_l(
+   int c ,
+   _locale_t locale
+);
+int _towupper_l(
+   wint_t c ,
+   _locale_t locale
+);
+```
 
-Each of these routines converts a given lowercase letter to an uppercase letter if possible and appropriate. The case conversion of `towupper` is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
-  
- In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [isupper](../../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.  
-  
- [Data Conversion Routines](../../c-runtime-library/data-conversion.md)  
-  
-### Generic-Text Routine Mappings  
-  
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_totupper`|`toupper`|`_mbctoupper`|`towupper`|  
-|`_totupper_l`|`_toupper_l`|`_mbctoupper_l`|`_towupper_l`|  
-  
+### Parameters
+
+`c`
+Character to convert.
+
+`locale`
+Locale to use.
+
+## Return Value
+
+Each of these routines converts a copy of `c`, if possible, and returns the result.
+
+If `c` is a wide character for which `iswlower` is nonzero and there is a corresponding wide character for which `iswupper` is nonzero, `towupper` returns the corresponding wide character; otherwise, `towupper` returns `c` unchanged.
+
+There is no return value reserved to indicate an error.
+
+In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [islower](../../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md) must both return nonzero.
+
+## Remarks
+
+Each of these routines converts a given lowercase letter to an uppercase letter if possible and appropriate. The case conversion of `towupper` is locale-specific. Only the characters relevant to the current locale are changed in case. The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+
+In order for `toupper` to give the expected results, [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) and [isupper](../../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md) must both return nonzero.
+
+[Data Conversion Routines](../../c-runtime-library/data-conversion.md)
+
+### Generic-Text Routine Mappings
+
+|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|`_totupper`|`toupper`|`_mbctoupper`|`towupper`|
+|`_totupper_l`|`_toupper_l`|`_mbctoupper_l`|`_towupper_l`|
+
 > [!NOTE]
->  `_toupper_l` and `_towupper_l` have no locale dependence and are not meant to be called directly. They are provided for internal use by `_totupper_l`.  
-  
-## Requirements  
-  
-|Routine|Required header|  
-|-------------|---------------------|  
-|`toupper`|\<ctype.h>|  
-|`_toupper`|\<ctype.h>|  
-|`towupper`|\<ctype.h> or \<wchar.h>|  
-  
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
-  
-## Example  
+>  `_toupper_l` and `_towupper_l` have no locale dependence and are not meant to be called directly. They are provided for internal use by `_totupper_l`.
 
-See the example in [to Functions](../../c-runtime-library/to-functions.md).  
-  
-## See Also  
+## Requirements
 
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)   
- [to Functions](../../c-runtime-library/to-functions.md)   
- [Locale](../../c-runtime-library/locale.md)   
- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+|Routine|Required header|
+|-------------|---------------------|
+|`toupper`|\<ctype.h>|
+|`_toupper`|\<ctype.h>|
+|`towupper`|\<ctype.h> or \<wchar.h>|
+
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+
+## Example
+
+See the example in [to Functions](../../c-runtime-library/to-functions.md).
+
+## See Also
+
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+[to Functions](../../c-runtime-library/to-functions.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
