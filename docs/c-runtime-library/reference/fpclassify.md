@@ -19,6 +19,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fpclassify
+
 Returns the floating-point classification of the argument.
 
 ## Syntax
@@ -43,11 +44,13 @@ int fpclassify(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value to test.
 
 ## Return Value
- **fpclassify** returns an integer value that indicates the floating-point class of the argument *x*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
+
+**fpclassify** returns an integer value that indicates the floating-point class of the argument *x*. This table shows the possible values returned by **fpclassify**, defined in \<math.h>.
 
 |Value|Description|
 |-----------|-----------------|
@@ -58,7 +61,8 @@ int fpclassify(
 |**FP_ZERO**|A positive or negative zero value|
 
 ## Remarks
- In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded using argument types of **float**, **double**, or **long** **double**. In either case, the value returned depends on the effective type of the argument expression, and not on any intermediate representation. For example, a normal **double** or **long** **double** value can become an infinity, denormal, or zero value when converted to a **float**.
+
+In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded using argument types of **float**, **double**, or **long** **double**. In either case, the value returned depends on the effective type of the argument expression, and not on any intermediate representation. For example, a normal **double** or **long** **double** value can become an infinity, denormal, or zero value when converted to a **float**.
 
 ## Requirements
 
@@ -69,5 +73,6 @@ int fpclassify(
  The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>

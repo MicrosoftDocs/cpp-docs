@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling Routines
+
 Use the C++ exception-handling functions to recover from unexpected events during program execution.
 
 ## Exception-Handling Functions
@@ -31,4 +32,5 @@ Use the C++ exception-handling functions to recover from unexpected events durin
 |[unexpected](../c-runtime-library/reference/unexpected-crt.md)|Calls **terminate** or a function you specify using **set_unexpected**. The **unexpected** function is not used in current Microsoft C++ exception-handling implementation|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

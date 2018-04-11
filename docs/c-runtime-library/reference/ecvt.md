@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _ecvt
+
 Converts a **double** number to a string. A more secure version of this function is available; see [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md).
 
 ## Syntax
@@ -35,7 +36,8 @@ char *_ecvt(
 ```
 
 #### Parameters
- *value*<br/>
+
+*value*<br/>
  Number to be converted.
 
  *count*<br/>
@@ -48,10 +50,12 @@ char *_ecvt(
  Sign of the converted number.
 
 ## Return Value
- **_ecvt** returns a pointer to the string of digits; NULL if an error occurred.
+
+**_ecvt** returns a pointer to the string of digits; NULL if an error occurred.
 
 ## Remarks
- The **_ecvt** function converts a floating-point number to a character string. The *value* parameter is the floating-point number to be converted. This function stores up to *count* digits of *value* as a string and appends a null character ('\0'). If the number of digits in *value* exceeds *count*, the low-order digit is rounded. If there are fewer than *count* digits, the string is padded with zeros.
+
+The **_ecvt** function converts a floating-point number to a character string. The *value* parameter is the floating-point number to be converted. This function stores up to *count* digits of *value* as a string and appends a null character ('\0'). If the number of digits in *value* exceeds *count*, the low-order digit is rounded. If there are fewer than *count* digits, the string is padded with zeros.
 
  The total number of digits returned by **_ecvt** will not exceed **_CVTBUFSIZE**.
 
@@ -101,7 +105,8 @@ source: 3.1415926535   buffer: '3141592654'  decimal: 1  sign: 0
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
  [_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>

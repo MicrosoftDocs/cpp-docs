@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fpclass, _fpclassf
+
 Returns a value indicating the floating-point classification of the argument.
 
 ## Syntax
@@ -36,11 +37,13 @@ int _fpclassf(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value to test.
 
 ## Return Value
- The **_fpclass** and **_fpclassf** functions return an integer value that indicates the floating-point classification of the argument *x*. The classification may have one of the following values, defined in \<float.h>.
+
+The **_fpclass** and **_fpclassf** functions return an integer value that indicates the floating-point classification of the argument *x*. The classification may have one of the following values, defined in \<float.h>.
 
 |Value|Description|
 |-----------|-----------------|
@@ -56,7 +59,8 @@ int _fpclassf(
 |**_FPCLASS_PINF**|Positive infinity (+INF)|
 
 ## Remarks
- The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are similar to [fpclassify](../../c-runtime-library/reference/fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
+
+The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are similar to [fpclassify](../../c-runtime-library/reference/fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
 
 ## Requirements
 
@@ -67,6 +71,7 @@ int _fpclassf(
  For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
  [fpclassify](../../c-runtime-library/reference/fpclassify.md)<br/>

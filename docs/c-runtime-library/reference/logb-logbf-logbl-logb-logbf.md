@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # logb, logbf, logbl, _logb, _logbf
+
 Extracts the exponent value of a floating-point argument.
 
 ## Syntax
@@ -50,14 +51,17 @@ float _logbf(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  A floating-point value.
 
 ## Return Value
- **logb** returns the unbiased exponent value of *x* as a signed integer represented as a floating-point value.
+
+**logb** returns the unbiased exponent value of *x* as a signed integer represented as a floating-point value.
 
 ## Remarks
- The **logb** functions extract the exponential value of the floating-point argument *x*, as though *x* were represented with infinite range. If the argument *x* is denormalized, it is treated as if it were normalized.
+
+The **logb** functions extract the exponential value of the floating-point argument *x*, as though *x* were represented with infinite range. If the argument *x* is denormalized, it is treated as if it were normalized.
 
  Because C++ allows overloading, you can call overloads of **logb** that take and return **float** or **long** **double** values. In a C program, **logb** always takes and returns a **double**.
 
@@ -76,8 +80,10 @@ float _logbf(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [frexp](../../c-runtime-library/reference/frexp.md)<br/>

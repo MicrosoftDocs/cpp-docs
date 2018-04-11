@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Error Handling (CRT)
+
 Use these routines to handle program errors.
 
 ## Error-Handling Routines
@@ -35,4 +36,5 @@ Use these routines to handle program errors.
 |[_set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)|Sets the handler for a pure virtual function call.|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

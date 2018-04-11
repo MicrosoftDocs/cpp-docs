@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atof, _atof_l, _wtof, _wtof_l
+
 Convert a string to double.
 
 ## Syntax
@@ -43,19 +44,22 @@ double _wtof_l(
 ```
 
 ## Parameters
- *str*<br/>
+
+*str*<br/>
  String to be converted.
 
  *locale*<br/>
  Locale to use.
 
 ## Return Value
- Each function returns the **double** value produced by interpreting the input characters as a number. The return value is 0.0 if the input cannot be converted to a value of that type.
+
+Each function returns the **double** value produced by interpreting the input characters as a number. The return value is 0.0 if the input cannot be converted to a value of that type.
 
  In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
 ## Remarks
- These functions convert a character string to a double-precision, floating-point value.
+
+These functions convert a character string to a double-precision, floating-point value.
 
  The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character may be the null character ('\0' or L'\0') terminating the string.
 
@@ -84,7 +88,8 @@ double _wtof_l(
 |**_wtof**, **_wtof_l**|C: \<stdlib.h> or \<wchar.h> C++: \<cstdlib>, \<stdlib.h> or \<wchar.h>|
 
 ## Example
- This program shows how numbers stored as strings can be converted to numeric values using the **atof** and **_atof_l** functions.
+
+This program shows how numbers stored as strings can be converted to numeric values using the **atof** and **_atof_l** functions.
 
 ```C
 // crt_atof.c
@@ -134,7 +139,8 @@ Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [Locale](../../c-runtime-library/locale.md)<br/>
  [_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>

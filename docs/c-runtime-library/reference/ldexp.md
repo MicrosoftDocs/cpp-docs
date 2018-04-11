@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ldexp, ldexpf, ldexpl
+
 Multiplies a floating-point number by an integral power of two.
 
 ## Syntax
@@ -49,19 +50,22 @@ long double ldexpl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Floating-point value.
 
  *exp*<br/>
  Integer exponent.
 
 ## Return Value
- The **ldexp** functions return the value of *x* * 2<sup>*exp*</sup> if successful. On overflow, and depending on the sign of *x*, **ldexp** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
+
+The **ldexp** functions return the value of *x* * 2<sup>*exp*</sup> if successful. On overflow, and depending on the sign of *x*, **ldexp** returns +/- **HUGE_VAL**; the **errno** value is set to **ERANGE**.
 
  For more information about **errno** and possible error return values, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **ldexp** that take **float** or **long** **double** types. In a C program, **ldexp** always takes a **double** and an **int** and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **ldexp** that take **float** or **long** **double** types. In a C program, **ldexp** always takes a **double** and an **int** and returns a **double**.
 
 ## Requirements
 
@@ -91,11 +95,12 @@ int main( void )
 
 ## Output
 
-```
+```Output
 4.0 times two to the power of 3 is 32.0
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [frexp](../../c-runtime-library/reference/frexp.md)<br/>
  [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>

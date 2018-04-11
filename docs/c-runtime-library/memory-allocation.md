@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Memory Allocation
+
 Use these routines to allocate, free, and reallocate memory.
 
 ## Memory-Allocation Routines
@@ -54,4 +55,5 @@ Use these routines to allocate, free, and reallocate memory.
 |[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|Set new handler mode for **malloc**|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

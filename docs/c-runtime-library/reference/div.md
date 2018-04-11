@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # div, ldiv, lldiv
+
 Computes the quotient and the remainder of two integer values.
 
 ## Syntax
@@ -52,17 +53,20 @@ lldiv_t div(
 ```
 
 #### Parameters
- *numer*<br/>
+
+*numer*<br/>
  The numerator.
 
  *denom*<br/>
  The denominator.
 
 ## Return Value
- **div** called by using arguments of type **int** returns a structure of type **div_t**, which comprises the quotient and the remainder. The return value with arguments of type **long** is **ldiv_t**, and the return value with arguments of type **long** **long** is **lldiv_t**. **div_t**, **ldiv_t**, and **lldiv_t** are defined in \<stdlib.h>.
+
+**div** called by using arguments of type **int** returns a structure of type **div_t**, which comprises the quotient and the remainder. The return value with arguments of type **long** is **ldiv_t**, and the return value with arguments of type **long** **long** is **lldiv_t**. **div_t**, **ldiv_t**, and **lldiv_t** are defined in \<stdlib.h>.
 
 ## Remarks
- The **div** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The [div_t](../../c-runtime-library/standard-types.md) structure contains the quotient, **quot**, and the remainder, **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
+
+The **div** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The [div_t](../../c-runtime-library/standard-types.md) structure contains the quotient, **quot**, and the remainder, **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
 
  The overloads of **div** that take arguments of type **long** or **long** **long** are only available to C++ code. The return types [ldiv_t](../../c-runtime-library/standard-types.md) and [lldiv_t](../../c-runtime-library/standard-types.md) contains members **quot** and **rem**, which have the same meanings as the members of **div_t**.
 
@@ -113,6 +117,7 @@ The quotient is 67, and the remainder is 5
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>
  [imaxdiv](../../c-runtime-library/reference/imaxdiv.md)<br/>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # erf, erff, erfl, erfc, erfcf, erfcl
+
 Computes the error function or the complementary error function of a value.
 
 ## Syntax
@@ -59,14 +60,17 @@ long double erfcl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  A floating-point value.
 
 ## Return Value
- The **erf** functions return the Gauss error function of *x*. The **erfc** functions return the complementary Gauss error function of *x*.
+
+The **erf** functions return the Gauss error function of *x*. The **erfc** functions return the complementary Gauss error function of *x*.
 
 ## Remarks
- The **erf** functions calculate the Gauss error function of *x*, which is defined as:
+
+The **erf** functions calculate the Gauss error function of *x*, which is defined as:
 
  ![The error function of x](../../c-runtime-library/reference/media/crt_erf_formula.PNG "CRT_erf_formula")
 
@@ -83,4 +87,5 @@ long double erfcl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

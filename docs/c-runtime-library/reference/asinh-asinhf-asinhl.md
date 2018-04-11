@@ -14,56 +14,52 @@ f1_keywords: ["asinhf", "asinhl", "asinh"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["asinh function", "asinhl function", "asinhf function"]
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # asinh, asinhf, asinhl
+
 Calculates the inverse hyperbolic sine.
 
 ## Syntax
 
-```
-double asinh(
-   double x
-);
-float asinh(
-   float x
-);  // C++ only
-long double asinh(
-   long double x
-);  // C++ only
-float asinhf(
-   float x
-);
-long double asinhl(
-   long double x
-);
+```C
+double asinh( double x );
+float asinhf( float x );
+long double asinhl( long double x );
 ```
 
-#### Parameters
- *x*<br/>
- Floating-point value.
+```cpp
+float asinh( float x );  // C++ only
+long double asinh( long double x );  // C++ only
+```
+
+### Parameters
+
+*x*<br/>
+Floating-point value.
 
 ## Return Value
- The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine) of *x*. This function is valid over the floating-point domain. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+
+The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine) of *x*. This function is valid over the floating-point domain. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|none|none|
 
 ## Remarks
- When you use C++, you can call overloads of **asinh** that take and return **float** or **long** **double** values. In a C program, **asinh** always takes and returns **double**.
+
+When you use C++, you can call overloads of **asinh** that take and return **float** or **long** **double** values. In a C program, **asinh** always takes and returns **double**.
 
 ## Requirements
 
-|Function|C header|C++ header|
+|Function|Required C header|Required C++ header|
 |--------------|--------------|------------------|
-|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath>|
+|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath> or \<math.h<|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -94,10 +90,10 @@ asinh( 0.868671 ) = 0.785398
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)<br/>
- [acosh, acoshf, acoshl](../../c-runtime-library/reference/acosh-acoshf-acoshl.md)<br/>
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)<br/>
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)<br/>
- [atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
- [_CItan](../../c-runtime-library/citan.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[acosh, acoshf, acoshl](../../c-runtime-library/reference/acosh-acoshf-acoshl.md)<br/>
+[atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
+[cosh, coshf, coshl](../../c-runtime-library/reference/cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)<br/>

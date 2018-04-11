@@ -1,7 +1,7 @@
 ---
 title: "ISO646 Operators | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/11/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -16,9 +16,10 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ISO646 Operators
+
 Provides readable alternatives to certain operators or punctuators. The standard header \<iso646.h> is available even in a freestanding implementation.
 
-### Macros
+## Macros
 
 |||
 |-|-|
@@ -35,5 +36,6 @@ Provides readable alternatives to certain operators or punctuators. The standard
 |[xor_eq](../c-runtime-library/reference/xor-eq.md)|An alternative to the ^= operator.|
 
 ## See Also
- [Internationalization](../c-runtime-library/internationalization.md)<br/>
+
+[Internationalization](../c-runtime-library/internationalization.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

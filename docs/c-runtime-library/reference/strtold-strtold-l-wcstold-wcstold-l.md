@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtold, _strtold_l, wcstold, _wcstold_l
+
 Converts strings to a long double-precision floating-point value.
 
 ## Syntax
@@ -46,7 +47,8 @@ long double wcstold_l(
 ```
 
 #### Parameters
- *nptr*<br/>
+
+*nptr*<br/>
  Null-terminated string to convert.
 
  *endptr*<br/>
@@ -56,14 +58,16 @@ long double wcstold_l(
  The locale to use.
 
 ## Return Value
- **strtold** returns the value of the floating-point number as a **long** **double**, except when the representation would cause an overflow—in that case, the function returns +/-**HUGE_VALL**. The sign of **HUGE_VALL** matches the sign of the value that cannot be represented. **strtold** returns 0 if no conversion can be performed or an underflow occurs.
+
+**strtold** returns the value of the floating-point number as a **long** **double**, except when the representation would cause an overflow—in that case, the function returns +/-**HUGE_VALL**. The sign of **HUGE_VALL** matches the sign of the value that cannot be represented. **strtold** returns 0 if no conversion can be performed or an underflow occurs.
 
  **wcstold** returns values analogously to **strtold**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
  For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
- Each function converts the input string *nptr* to a **long** **double**. The **strtold** function stops reading the string *nptr* at the first character it cannot recognize as part of a number. This may be the terminating null character. The wide-character version of **strtold** is **wcstold**; its *nptr* argument is a wide-character string. Otherwise, these functions behave identically.
+
+Each function converts the input string *nptr* to a **long** **double**. The **strtold** function stops reading the string *nptr* at the first character it cannot recognize as part of a number. This may be the terminating null character. The wide-character version of **strtold** is **wcstold**; its *nptr* argument is a wide-character string. Otherwise, these functions behave identically.
 
 ### Generic-Text Routine Mappings
 
@@ -124,15 +128,16 @@ string = 3.1415926535898This stopped it
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
- [Locale](../../c-runtime-library/locale.md)<br/>
- [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
- [strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
- [strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
- [strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
- [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
- [localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
- [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
- [_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Locale](../../c-runtime-library/locale.md)<br/>
+[String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
+[strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
+[strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
+[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
+[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
+[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>

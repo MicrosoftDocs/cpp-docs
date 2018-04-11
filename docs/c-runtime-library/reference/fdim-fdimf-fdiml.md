@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fdim, fdimf, fdiml
+
 Determines the positive difference between the first and second values.
 
 ## Syntax
@@ -54,14 +55,16 @@ long double fdiml(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The first value.
 
  [in] *y*<br/>
  The second value.
 
 ## Return Value
- Returns the positive difference between *x* and *y*:
+
+Returns the positive difference between *x* and *y*:
 
 |Return value|Scenario|
 |------------------|--------------|
@@ -79,7 +82,8 @@ long double fdiml(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **fdim** that take and return **float** and **long** **double** types. In a C program, **fdim** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **fdim** that take and return **float** and **long** **double** types. In a C program, **fdim** always takes and returns a **double**.
 
  Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 
@@ -92,6 +96,7 @@ long double fdiml(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)<br/>
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>

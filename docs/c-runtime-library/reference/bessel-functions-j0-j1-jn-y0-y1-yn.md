@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn
+
 Computes the Bessel function of the first or second kind, of orders 0, 1, or n. The Bessel functions are commonly used in the mathematics of electromagnetic wave theory.
 
 ## Syntax
@@ -49,17 +50,20 @@ double _yn(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Floating-point value.
 
  *n*<br/>
  Integer order of Bessel function.
 
 ## Return Value
- Each of these routines returns a Bessel function of *x*. If *x* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
+
+Each of these routines returns a Bessel function of *x*. If *x* is negative in the **_y0**, **_y1**, or **_yn** functions, the routine sets **errno** to **EDOM**, prints a **_DOMAIN** error message to **stderr**, and returns **_HUGE_VAL**. You can modify error handling by using **_matherr**.
 
 ## Remarks
- The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.
+
+The **_j0**, **_j1**, and **_jn** routines return Bessel functions of the first kind: orders 0, 1, and n, respectively.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -123,5 +127,6 @@ Bessel functions for x = 2.387000:
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [_matherr](../../c-runtime-library/reference/matherr.md)<br/>

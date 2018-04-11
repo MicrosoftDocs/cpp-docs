@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Directory Control
+
 These routines access, modify, and obtain information about the directory structure.
 
 ## Directory-Control Routines
@@ -36,6 +37,7 @@ These routines access, modify, and obtain information about the directory struct
 |[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Search for given file on specified paths|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
  [File Handling](../c-runtime-library/file-handling.md)<br/>
  [System Calls](../c-runtime-library/system-calls.md)<br/>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fabs, fabsf, fabsl
+
 Calculates the absolute value of the floating-point argument.
 
 ## Syntax
@@ -44,18 +45,21 @@ long double fabsl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Floating-point value.
 
 ## Return Value
- The **fabs** functions return the absolute value of the argument *x*. There is no error return.
+
+The **fabs** functions return the absolute value of the argument *x*. There is no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|none|_DOMAIN|
 
 ## Remarks
- C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.
+
+C++ allows overloading, so you can call overloads of **fabs** if you include the \<cmath> header. In a C program, **fabs** always takes and returns a **double**.
 
 ## Requirements
 
@@ -66,9 +70,11 @@ long double fabsl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
- See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md).
+
+See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
  [_cabs](../../c-runtime-library/reference/cabs.md)<br/>

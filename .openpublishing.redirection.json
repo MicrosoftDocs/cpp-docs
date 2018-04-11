@@ -256,6 +256,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/cos-cosf-cosl.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/sin-sinf-sinl.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/tan-tanf-tanl.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/c-runtime-library/reference/ultoa.md",
             "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
             "redirect_document_id": false

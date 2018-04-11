@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fma, fmaf, fmal
+
 Multiplies two values together,  adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.
 
 ## Syntax
@@ -59,7 +60,8 @@ long double fmal(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The first value to multiply.
 
  [in] *y*<br/>
@@ -69,7 +71,8 @@ long double fmal(
  The value to add.
 
 ## Return Value
- Returns `(x * y) + z`. The return value is then rounded using the current rounding format.
+
+Returns `(x * y) + z`. The return value is then rounded using the current rounding format.
 
  Otherwise, may return one of the following values:
 
@@ -85,7 +88,8 @@ long double fmal(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **fma** that take and return **float** and **long** **double** types. In a C program, **fma** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **fma** that take and return **float** and **long** **double** types. In a C program, **fma** always takes and returns a **double**.
 
  This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 
@@ -98,6 +102,7 @@ long double fmal(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [remainder, remainderf, remainderl](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)<br/>
  [remquo, remquof, remquol](../../c-runtime-library/reference/remquo-remquof-remquol.md)<br/>

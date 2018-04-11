@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lrint, lrintf, lrintl, llrint, llrintf, llrintl
+
 Rounds the specified floating-point value to the nearest integral value, by using the current rounding mode and direction.
 
 ## Syntax
@@ -69,18 +70,21 @@ long long int llrintl(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  the value to round.
 
 ## Return Value
- If successful, returns the rounded integral value of *x*.
+
+If successful, returns the rounded integral value of *x*.
 
 |Issue|Return|
 |-----------|------------|
 |*x* is outside the range of the return type<br /><br /> *x* = ±∞<br /><br /> *x* = NaN|Raises **FE_INVALID** and returns zero (0).|
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **float** and **long** **double** types. In a C program, **lrint** and **llrint** always take a **double**.
+
+Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **float** and **long** **double** types. In a C program, **lrint** and **llrint** always take a **double**.
 
  If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
@@ -95,4 +99,5 @@ long long int llrintl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

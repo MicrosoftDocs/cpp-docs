@@ -19,6 +19,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # log2, log2f, log2l
+
 Determines the binary (base-2) logarithm of the specified value.
 
 ## Syntax
@@ -47,11 +48,13 @@ long double log2l(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The value to determine the base-2 logarithm of.
 
 ## Return Value
- On success, returns return log2 *x*.
+
+On success, returns return log2 *x*.
 
  Otherwise, may return one of the following values:
 
@@ -68,7 +71,8 @@ long double log2l(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- If x is an integer, this function essentially returns the zero-based index of the most significant 1 bit of *x*.
+
+If x is an integer, this function essentially returns the zero-based index of the most significant 1 bit of *x*.
 
 ## Requirements
 
@@ -79,6 +83,7 @@ long double log2l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [exp2, exp2f, exp2l](../../c-runtime-library/reference/exp2-exp2f-exp2l.md)<br/>
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>

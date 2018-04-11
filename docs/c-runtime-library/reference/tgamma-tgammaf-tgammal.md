@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tgamma, tgammaf, tgammal
+
 Determines the gamma function of the specified value.
 
 ## Syntax
@@ -48,12 +49,14 @@ long double tgammal(
 
 ```
 
-#### Parameters
- [in] *x*<br/>
- The value to find the gamma of.
+### Parameters
+
+[in] *x*<br/>
+The value to find the gamma of.
 
 ## Return Value
- If successful, returns the gamma of *x*.
+
+If successful, returns the gamma of *x*.
 
  A range error may occur if the magnitude of *x* is too large or too small for the data type. A domain error or range error may occur if *x* <= 0.
 
@@ -72,7 +75,8 @@ long double tgammal(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **long** **double** types. In a C program, **tgamma** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **tgamma** that take and return **float** and **long** **double** types. In a C program, **tgamma** always takes and returns a **double**.
 
  If x is a natural number, this function returns the factorial of (x-1).
 
@@ -85,5 +89,6 @@ long double tgammal(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
- [lgamma, lgammaf, lgammal](../../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[lgamma, lgammaf, lgammal](../../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)<br/>

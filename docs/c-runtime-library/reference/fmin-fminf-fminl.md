@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fmin, fminf, fminl
+
 Determines the smaller of the two specified values.
 
 ## Syntax
@@ -52,14 +53,16 @@ long double fminl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The first value to compare.
 
  *y*<br/>
  The second value to compare.
 
 ## Return Value
- If successful, returns the smaller of *x* or *y*.
+
+If successful, returns the smaller of *x* or *y*.
 
 |Input|Result|
 |-----------|------------|
@@ -70,7 +73,8 @@ long double fminl(
  The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **fmin** that take and return **float** and **long** **double** types. In a C program, **fmin** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **fmin** that take and return **float** and **long** **double** types. In a C program, **fmin** always takes and returns a **double**.
 
 ## Requirements
 
@@ -81,5 +85,6 @@ long double fminl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>

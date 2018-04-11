@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # imaxdiv
+
 Computes the quotient and the remainder of two integer values of any size as a single operation.
 
 ## Syntax
@@ -33,17 +34,20 @@ imaxdiv_t imaxdiv(
 ```
 
 #### Parameters
- *numer*<br/>
+
+*numer*<br/>
  The numerator.
 
  *denom*<br/>
  The denominator.
 
 ## Return Value
- **imaxdiv** called with arguments of type [intmax_t](../../c-runtime-library/standard-types.md) returns a structure of type [imaxdiv_t](../../c-runtime-library/standard-types.md) that comprises the quotient and the remainder.
+
+**imaxdiv** called with arguments of type [intmax_t](../../c-runtime-library/standard-types.md) returns a structure of type [imaxdiv_t](../../c-runtime-library/standard-types.md) that comprises the quotient and the remainder.
 
 ## Remarks
- The **imaxdiv** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The **imaxdiv_t** structure contains the quotient, **intmax_t** **quot**, and the remainder, **intmax_t** **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
+
+The **imaxdiv** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The **imaxdiv_t** structure contains the quotient, **intmax_t** **quot**, and the remainder, **intmax_t** **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
 
 ## Requirements
 
@@ -89,6 +93,7 @@ results in a quotient of 1079252848505, and a remainder of 5170
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [div](../../c-runtime-library/reference/div.md)<br/>
  [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>

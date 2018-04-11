@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _controlfp_s
+
 Gets and sets the floating-point control word. This version of [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
@@ -34,7 +35,8 @@ errno_t _controlfp_s(
 ```
 
 #### Parameters
- *currentControl*<br/>
+
+*currentControl*<br/>
  The current control-word bit value.
 
  *newControl*<br/>
@@ -44,10 +46,12 @@ errno_t _controlfp_s(
  Mask for new control-word bits to set.
 
 ## Return Value
- Zero if successful, or an **errno** value error code.
+
+Zero if successful, or an **errno** value error code.
 
 ## Remarks
- The **_controlfp_s** function is a platform-independent and more secure version of **_control87**, which gets the floating-point control word into the address that's stored in *currentControl* and sets it by using *newControl*. The bits in the values indicate the floating-point control state. The floating-point control state enables the program to change the precision, rounding, and infinity modes in the floating-point math package, depending on the platform. You can also use **_controlfp_s** to mask or unmask floating-point exceptions.
+
+The **_controlfp_s** function is a platform-independent and more secure version of **_control87**, which gets the floating-point control word into the address that's stored in *currentControl* and sets it by using *newControl*. The bits in the values indicate the floating-point control state. The floating-point control state enables the program to change the precision, rounding, and infinity modes in the floating-point math package, depending on the platform. You can also use **_controlfp_s** to mask or unmask floating-point exceptions.
 
  If the value for *mask* is equal to 0, **_controlfp_s** gets the floating-point control word and stores the retrieved value in *currentControl*.
 
@@ -162,7 +166,8 @@ Default:  0x9001f
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
  [_status87, _statusfp, _statusfp2](../../c-runtime-library/reference/status87-statusfp-statusfp2.md)<br/>
  [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>

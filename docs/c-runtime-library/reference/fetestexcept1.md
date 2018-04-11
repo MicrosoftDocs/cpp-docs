@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fetestexcept
+
 Determines which of the specified floating-point exception status flags are currently set.
 
 ## Syntax
@@ -33,14 +34,17 @@ int fetestexcept(
 ```
 
 #### Parameters
- *excepts*<br/>
+
+*excepts*<br/>
  A bitwise OR of the floating-point     status flags to test.
 
 ## Return Value
- On success, returns a bitmask containing a bitwise OR of the floating-point exception macros that correspond to the exception status flags currently set. Returns 0 if none of the exceptions are set.
+
+On success, returns a bitmask containing a bitwise OR of the floating-point exception macros that correspond to the exception status flags currently set. Returns 0 if none of the exceptions are set.
 
 ## Remarks
- Use the fetestexcept function to determine which exceptions were raised by a floating point operation. Use the *excepts* parameter to specify which exception status flags to test. The **fetestexcept** function uses these exception macros defined in \<fenv.h> in *excepts* and the return value:
+
+Use the fetestexcept function to determine which exceptions were raised by a floating point operation. Use the *excepts* parameter to specify which exception status flags to test. The **fetestexcept** function uses these exception macros defined in \<fenv.h> in *excepts* and the return value:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
@@ -64,6 +68,7 @@ int fetestexcept(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>
  [feraiseexcept](../../c-runtime-library/reference/feraiseexcept.md)<br/>

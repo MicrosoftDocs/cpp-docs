@@ -1,12 +1,12 @@
 ---
 title: "Interpretation of Multibyte-Character Sequences | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/11/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["c.character.multibyte"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], locale code page"]
@@ -18,9 +18,10 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Interpretation of Multibyte-Character Sequences
+
 Most multibyte-character routines in the Microsoft run-time library recognize multibyte-character sequences relating to a multibyte code page. The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.
 
-### Locale-Dependent Multibyte Routines
+## Locale-Dependent Multibyte Routines
 
 |Routine|Use|
 |-------------|---------|
@@ -34,5 +35,6 @@ Most multibyte-character routines in the Microsoft run-time library recognize mu
 |[c16rtomb, c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md)|Convert UTF-16 or UTF-32 character to equivalent multibyte character|
 
 ## See Also
- [Internationalization](../c-runtime-library/internationalization.md)<br/>
+
+[Internationalization](../c-runtime-library/internationalization.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strtof, _strtof_l, wcstof, _wcstof_l
+
 Converts strings to a single-precision floating-point value.
 
 ## Syntax
@@ -47,7 +48,8 @@ float wcstof_l(
 ```
 
 ## Parameters
- *nptr*<br/>
+
+*nptr*<br/>
  Null-terminated string to convert.
 
  *endptr*<br/>
@@ -57,14 +59,16 @@ float wcstof_l(
  The locale to use.
 
 ## Return Value
- **strtof** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VALF**. The sign of **HUGE_VALF** matches the sign of the value that cannot be represented. **strtof** returns 0 if no conversion can be performed or an underflow occurs.
+
+**strtof** returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-**HUGE_VALF**. The sign of **HUGE_VALF** matches the sign of the value that cannot be represented. **strtof** returns 0 if no conversion can be performed or an underflow occurs.
 
  **wcstof** returns values analogously to **strtof**. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
  For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
- Each function converts the input string *nptr* to a **float**. The **strtof** function converts *nptr* to a single-precision value. **strtof** stops reading the string *nptr* at the first character it cannot recognize as part of a number. This may be the terminating null character. **wcstof** is a wide-character version of **strtof**; its *nptr* argument is a wide-character string. Otherwise, these functions behave identically.
+
+Each function converts the input string *nptr* to a **float**. The **strtof** function converts *nptr* to a single-precision value. **strtof** stops reading the string *nptr* at the first character it cannot recognize as part of a number. This may be the terminating null character. **wcstof** is a wide-character version of **strtof**; its *nptr* argument is a wide-character string. Otherwise, these functions behave identically.
 
 ### Generic-Text Routine Mappings
 
@@ -125,7 +129,8 @@ string = 3.14159This stopped it
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
  [Locale](../../c-runtime-library/locale.md)<br/>

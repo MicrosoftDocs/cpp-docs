@@ -20,6 +20,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # log1p, log1pf, log1pl
+
 Computes the natural logarithm of 1 plus the specified value.
 
 ## Syntax
@@ -48,11 +49,13 @@ long double log1pl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point argument.
 
 ## Return Value
- If successful, returns the natural (base-*e*) log of (*x* + 1).
+
+If successful, returns the natural (base-*e*) log of (*x* + 1).
 
  Otherwise, may return one of the following values:
 
@@ -70,7 +73,8 @@ long double log1pl(
  The **errno** value is set to ERANGE if *x* = -1. The **errno** value is set to **EDOM** if *x* < -1.
 
 ## Remarks
- The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is near 0.
+
+The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is near 0.
 
  Because C++ allows overloading, you can call overloads of **log1p** that take and return **float** and **long** **double** types. In a C program, **log1p** always takes and returns a **double**.
 
@@ -85,6 +89,7 @@ long double log1pl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>

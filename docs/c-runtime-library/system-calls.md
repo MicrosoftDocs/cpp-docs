@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # System Calls
+
 The following functions are Windows operating system calls.
 
 ## System Call Functions
@@ -29,7 +30,8 @@ The following functions are Windows operating system calls.
 |[_findnext, _findnext32, _findnext64, _findnexti64, _findnext32i64, _findnext64i32, _wfindnext, _wfindnext32, _wfindnexti64, _wfindnext64, _wfindnexti64](../c-runtime-library/reference/findnext-functions.md)|Find next file with specified attributes|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
  [File Handling](../c-runtime-library/file-handling.md)<br/>
  [Directory Control](../c-runtime-library/directory-control.md)<br/>
  [Low-Level I/O](../c-runtime-library/low-level-i-o.md)<br/>

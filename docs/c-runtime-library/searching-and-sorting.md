@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Searching and Sorting
+
 Use the following functions for searching and sorting.
 
 ## Searching and Sorting Functions
@@ -34,4 +35,5 @@ Use the following functions for searching and sorting.
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|A more secure version of **qsort**|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

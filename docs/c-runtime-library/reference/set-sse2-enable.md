@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_SSE2_enable
+
 Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions in CRT math routines. (This function is not available on x64 architectures because SSE2 is enabled by default.)
 
 ## Syntax
@@ -32,14 +33,17 @@ int _set_SSE2_enable(
 ```
 
 #### Parameters
- *flag*<br/>
+
+*flag*<br/>
  1 to enable the SSE2 implementation; 0 to disable the SSE2 implementation. By default, SSE2 implementation is enabled on processors that support it.
 
 ## Return Value
- Nonzero if SSE2 implementation is enabled; zero if SSE2 implementation is disabled.
+
+Nonzero if SSE2 implementation is enabled; zero if SSE2 implementation is disabled.
 
 ## Remarks
- The following functions have SSE2 implementations that can be enabled by using **_set_SSE2_enable**:
+
+The following functions have SSE2 implementations that can be enabled by using **_set_SSE2_enable**:
 
 -   [atan](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
@@ -96,4 +100,5 @@ int main()
  `SSE2 enabled.`
 
 ## See Also
- [CRT Library Features](../../c-runtime-library/crt-library-features.md)<br/>
+
+[CRT Library Features](../../c-runtime-library/crt-library-features.md)<br/>

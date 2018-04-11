@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Stream I/O
+
 These functions process data in different sizes and formats, from single characters to large data structures. They also provide buffering, which can improve performance. The default size of a stream buffer is 4K. These routines affect only buffers created by the run-time library routines, and have no effect on buffers created by the operating system.
 
 ## Stream I/O Routines
@@ -97,5 +98,6 @@ These functions process data in different sizes and formats, from single charact
  Input can follow output directly only with an intervening call to **fflush** or to a file-positioning function (**fseek**, **fsetpos**, or **rewind**). Output can follow input without an intervening call to a file-positioning function if the input operation encounters the end of the file.
 
 ## See Also
- [Input and Output](../c-runtime-library/input-and-output.md)<br/>
+
+[Input and Output](../c-runtime-library/input-and-output.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

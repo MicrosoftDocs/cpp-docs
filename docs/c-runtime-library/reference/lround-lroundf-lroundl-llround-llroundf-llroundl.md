@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lround, lroundf, lroundl, llround, llroundf, llroundl
+
 Rounds a floating-point value to the nearest integer.
 
 ## Syntax
@@ -59,18 +60,21 @@ long long llroundl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value to round.
 
 ## Return Value
- The **lround** and **llround** functions return the nearest **long** or **long** **long** integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There is no error return.
+
+The **lround** and **llround** functions return the nearest **long** or **long** **long** integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There is no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|none|**_DOMAIN**|
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **lround** or **llround** that take and return **float** and **long** **double** values. In a C program, **lround** and **llround** always take and return a **double**.
+
+Because C++ allows overloading, you can call overloads of **lround** or **llround** that take and return **float** and **long** **double** values. In a C program, **lround** and **llround** always take and return a **double**.
 
 ## Requirements
 
@@ -117,7 +121,8 @@ lroundl(-2.500000) is -4
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
  [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
  [fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>

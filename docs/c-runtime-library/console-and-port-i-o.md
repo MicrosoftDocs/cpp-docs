@@ -42,5 +42,6 @@ These routines read and write on your console or on the specified port. The cons
 |[_ungetch, _ungetwch](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)|"Unget" last character read from console so it becomes next character read|
 
 ## See Also
- [Input and Output](../c-runtime-library/input-and-output.md)<br/>
+
+[Input and Output](../c-runtime-library/input-and-output.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -21,34 +21,30 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # atanh, atanhf, atanhl
+
 Calculates the inverse hyperbolic tangent.
 
 ## Syntax
 
-```
-double atanh(
-   double x
-);
-float atanh(
-   float x
-);  // C++ only
-long double atanh(
-   long double x
-);  // C++ only
-float atanhf(
-   float x
-);
-long double atanhl(
-   long double x
-);
+```C
+double atanh( double x );
+float atanhf( float x );
+long double atanhl( long double x );
 ```
 
-#### Parameters
- *x*<br/>
- Floating-point value.
+```cpp
+float atanh( float x );  // C++ only
+long double atanh( long double x );  // C++ only
+```
+
+### Parameters
+
+*x*<br/>
+Floating-point value.
 
 ## Return Value
- The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
+
+The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic tangent) of *x*. If *x* is greater than 1, or less than -1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is equal to 1 or -1, a positive or negative infinity is returned, respectively, and **errno** is set to **ERANGE**.
 
 |Input|SEH Exception|**Matherr** Exception|
 |-----------|-------------------|-------------------------|
@@ -56,15 +52,16 @@ long double atanhl(
 |*X* ≥ 1; *x* ≤ -1|none|none|
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **atanh** that take and return **float** or **long** **double** values. In a C program, **atanh** always takes and returns **double**.
+
+Because C++ allows overloading, you can call overloads of **atanh** that take and return **float** or **long** **double** values. In a C program, **atanh** always takes and returns **double**.
 
 ## Requirements
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath>|
+|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> or \<math.h>|
 
- For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -95,11 +92,10 @@ atanh( 0.655794 ) = 0.785398
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)<br/>
- [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)<br/>
- [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
- [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)<br/>
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)<br/>
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)<br/>
- [_CItan](../../c-runtime-library/citan.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[acosh, acoshf, acoshl](../../c-runtime-library/reference/acosh-acoshf-acoshl.md)<br/>
+[asinh, asinhf, asinhl](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)<br/>
+[cosh, coshf, coshl](../../c-runtime-library/reference/cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)<br/>

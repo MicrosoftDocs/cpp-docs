@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # imaxabs
+
 Calculates the absolute value of an integer of any size.
 
 ## Syntax
@@ -32,11 +33,13 @@ intmax_t imaxabs(
 ```
 
 #### Parameters
- *n*<br/>
+
+*n*<br/>
  Integer value.
 
 ## Return Value
- The **imaxabs** function returns the absolute value of the argument. There is no error return.
+
+The **imaxabs** function returns the absolute value of the argument. There is no error return.
 
 > [!NOTE]
 >  Because the range of negative integers that can be represented by using **intmax_t** is larger than the range of positive integers that can be represented, it's possible to supply an argument to **imaxabs** that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the behavior of **imaxabs** is undefined.
@@ -50,7 +53,8 @@ intmax_t imaxabs(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
 ## Example
 
@@ -77,7 +81,8 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
  [_cabs](../../c-runtime-library/reference/cabs.md)<br/>

@@ -17,6 +17,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _nolock Functions
+
 These are functions that do not perform any locking. They are provided for users requiring maximum performance. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).
 
  Use _nolock functions only if your program is truly single-threaded or if it does its own locking.
@@ -58,5 +59,6 @@ These are functions that do not perform any locking. They are provided for users
  [_ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
 ## See Also
- [Input and Output](../c-runtime-library/input-and-output.md)<br/>
+
+[Input and Output](../c-runtime-library/input-and-output.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

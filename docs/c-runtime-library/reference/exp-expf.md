@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # exp, expf, expl
+
 Calculates the exponential.
 
 ## Syntax
@@ -44,11 +45,13 @@ long double expl(
 ```
 
 ### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value to exponentiate the natural logarithm base *e* by.
 
 ## Return Value
- The **exp** functions return the exponential value of the floating-point parameter, *x*, if successful. That is, the result is *e*<sup>*x*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns INF (infinity) and on underflow, **exp** returns 0.
+
+The **exp** functions return the exponential value of the floating-point parameter, *x*, if successful. That is, the result is *e*<sup>*x*</sup>, where *e* is the base of the natural logarithm. On overflow, the function returns INF (infinity) and on underflow, **exp** returns 0.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -60,7 +63,8 @@ long double expl(
  The **exp** function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 ## Remarks
- C++ allows overloading, so you can call overloads of **exp** that take a **float** or **long double** argument. In a C program, **exp** always takes and returns a **double**.
+
+C++ allows overloading, so you can call overloads of **exp** that take a **float** or **long double** argument. In a C program, **exp** always takes and returns a **double**.
 
 ## Requirements
 
@@ -92,6 +96,7 @@ exp( 2.302585 ) = 10.000000
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
  [_CIexp](../../c-runtime-library/ciexp.md)<br/>

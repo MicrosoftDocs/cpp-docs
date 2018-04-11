@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fpieee_flt
+
 Invokes a user-defined trap handler for IEEE floating-point exceptions.
 
 ## Syntax
@@ -34,7 +35,8 @@ int _fpieee_flt(
 ```
 
 #### Parameters
- *excCode*<br/>
+
+*excCode*<br/>
  Exception code.
 
  *excInfo*<br/>
@@ -44,10 +46,12 @@ int _fpieee_flt(
  Pointer to the user's IEEE trap-handler routine.
 
 ## Return Value
- The return value of **_fpieee_flt** is the value returned by *handler*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
+
+The return value of **_fpieee_flt** is the value returned by *handler*. As such, the IEEE filter routine might be used in the except clause of a structured exception-handling (SEH) mechanism.
 
 ## Remarks
- The **_fpieee_flt** function invokes a user-defined trap handler for IEEE floating-point exceptions and provides it with all relevant information. This routine serves as an exception filter in the SEH mechanism, which invokes your own IEEE exception handler when necessary.
+
+The **_fpieee_flt** function invokes a user-defined trap handler for IEEE floating-point exceptions and provides it with all relevant information. This routine serves as an exception filter in the SEH mechanism, which invokes your own IEEE exception handler when necessary.
 
  The **_FPIEEE_RECORD** structure, defined in Fpieee.h, contains information pertaining to an IEEE floating-point exception. This structure is passed to the user-defined trap handler by **_fpieee_flt**.
 
@@ -136,6 +140,7 @@ int main( void )
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>
  [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md)<br/>

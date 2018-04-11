@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fmax, fmaxf, fmaxl
+
 Determine the larger of two specified numeric values.
 
 ## Syntax
@@ -54,14 +55,16 @@ long double fmaxl(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The first value to compare.
 
  [in] *y*<br/>
  The second value to compare.
 
 ## Return Value
- If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
+
+If successful, returns the larger of *x* or *y*. The value returned is exact, and does not depend on any form of rounding.
 
  Otherwise, may return one of the following values:
 
@@ -74,7 +77,8 @@ long double fmaxl(
  This function does not use the errors specified in  [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of fmax that take and return float and long double types. In a C program, fmax always takes and returns a double.
+
+Because C++ allows overloading, you can call overloads of fmax that take and return float and long double types. In a C program, fmax always takes and returns a double.
 
 ## Requirements
 
@@ -85,5 +89,6 @@ long double fmaxl(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>

@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Low-Level I/O
+
 These functions invoke the operating system directly for lower-level operation than that provided by stream I/O. Low-level input and output calls do not buffer or format data.
 
  Low-level routines can access the standard streams opened at program startup using the following predefined file descriptors.
@@ -51,6 +52,7 @@ These functions invoke the operating system directly for lower-level operation t
  **_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
 
 ## See Also
- [Input and Output](../c-runtime-library/input-and-output.md)<br/>
+
+[Input and Output](../c-runtime-library/input-and-output.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
  [System Calls](../c-runtime-library/system-calls.md)<br/>

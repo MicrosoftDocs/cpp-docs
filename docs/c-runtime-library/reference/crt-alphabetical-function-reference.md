@@ -1,7 +1,7 @@
 ---
-title: "CRT Alphabetical Function Reference | Microsoft Docs"
+title: "UCRT alphabetical function reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/21/2018"
+ms.date: "04/11/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["vc.tables.runtime"]
@@ -12,9 +12,9 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# CRT Alphabetical Function Reference
+# UCRT alphabetical function reference
 
-The C Run-Time (CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md).
+The Universal C Runtime (UCRT, often just CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md).
 
 ## A
 
@@ -370,17 +370,17 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
 
 [_copysignl](../../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)
 
-[cos](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[cos](../../c-runtime-library/reference/cos-cosf-cosl.md)
 
-[cosf](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[cosf](../../c-runtime-library/reference/cos-cosf-cosl.md)
 
-[cosh](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[cosh](../../c-runtime-library/reference/cosh-coshf-coshl.md)
 
-[coshf](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[coshf](../../c-runtime-library/reference/cosh-coshf-coshl.md)
 
-[coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[coshl](../../c-runtime-library/reference/cosh-coshf-coshl.md)
 
-[cosl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)
+[cosl](../../c-runtime-library/reference/cos-cosf-cosl.md)
 
 [_countof](../../c-runtime-library/reference/countof-macro.md)
 
@@ -2268,17 +2268,17 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
 
 [signal](../../c-runtime-library/reference/signal.md)
 
-[sin](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sin](../../c-runtime-library/reference/sin-sinf-sinl.md)
 
-[sinf](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sinf](../../c-runtime-library/reference/sin-sinf-sinl.md)
 
-[sinh](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sinh](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)
 
-[sinhf](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sinhf](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)
 
-[sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)
 
-[sinl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+[sinl](../../c-runtime-library/reference/sin-sinf-sinl.md)
 
 [snprintf](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)
 
@@ -2648,17 +2648,17 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
 
 ## T
 
-[tan](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tan](../../c-runtime-library/reference/tan-tanf-tanl.md)
 
-[tanf](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tanf](../../c-runtime-library/reference/tan-tanf-tanl.md)
 
-[tanh](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tanh](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)
 
-[tanhf](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tanhf](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)
 
-[tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)
 
-[tanl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)
+[tanl](../../c-runtime-library/reference/tan-tanf-tanl.md)
 
 [tell](../../c-runtime-library/reference/tell.md)
 

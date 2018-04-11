@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _chgsign, _chgsignf, _chgsignl
+
 Reverses the sign of a floating-point argument.
 
 ## Syntax
@@ -38,11 +39,13 @@ long double _chgsignl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value to be changed.
 
 ## Return Value
- The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There is no error return.
+
+The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There is no error return.
 
 ## Requirements
 
@@ -54,6 +57,7 @@ long double _chgsignl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
  [copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)<br/>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fegetround, fesetround
+
 Gets or sets the current floating-point rounding mode.
 
 ## Syntax
@@ -34,16 +35,19 @@ int fesetround(
 ```
 
 #### Parameters
- *round_mode*<br/>
+
+*round_mode*<br/>
  The rounding mode to set, as one of the floating-point rounding macros. If the value is not equal to one of the floating-point rounding macros, the rounding mode is not changed.
 
 ## Return Value
- On success, **fegetround** returns the rounding mode as one of the floating point rounding macro values. It returns a negative value if the current rounding mode can't be determined.
+
+On success, **fegetround** returns the rounding mode as one of the floating point rounding macro values. It returns a negative value if the current rounding mode can't be determined.
 
  On success, **fesetround** returns 0. Otherwise, a non-zero value is returned.
 
 ## Remarks
- Floating-point operations can use one of several rounding modes. These control which direction the results of floating-point operations are rounded toward when the results are stored. These are the names and behaviors of the floating-point rounding macros defined in \<fenv.h>:
+
+Floating-point operations can use one of several rounding modes. These control which direction the results of floating-point operations are rounded toward when the results are stored. These are the names and behaviors of the floating-point rounding macros defined in \<fenv.h>:
 
 |Macro|Description|
 |-----------|-----------------|
@@ -83,7 +87,8 @@ int fesetround(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [nearbyint, nearbyintf, nearbyintl](../../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md)<br/>
  [rint, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)<br/>
  [lrint, lrintf, lrintl, llrint, llrintf, llrintl](../../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>

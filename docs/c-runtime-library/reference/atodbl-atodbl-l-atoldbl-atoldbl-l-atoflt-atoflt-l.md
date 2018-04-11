@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
+
 Converts a string to a double (**_atodbl**), long double (**_atoldbl**), or float (**_atoflt**).
 
 ## Syntax
@@ -56,7 +57,8 @@ int _atoflt_l(
 ```
 
 #### Parameters
- *value*<br/>
+
+*value*<br/>
  The double, long double, or float value that's produced by converting the string to a floating-point value. These values are wrapped in a structure.
 
  *str*<br/>
@@ -66,10 +68,12 @@ int _atoflt_l(
  The locale to use.
 
 ## Return Value
- Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file Math.h.
+
+Returns 0 if successful. Possible error codes are **_UNDERFLOW** or **_OVERFLOW**, which are defined in the header file Math.h.
 
 ## Remarks
- These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.
+
+These functions convert a string to a floating-point value. The difference between these functions and the **atof** family of functions is that these functions do not generate floating-point code and do not cause hardware exceptions. Instead, error conditions are reported as error codes.
 
  If a string does not have a valid interpretation as a floating-point value, *value* is set to zero and the return value is zero.
 
@@ -138,7 +142,8 @@ Return value: 3
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [Locale](../../c-runtime-library/locale.md)<br/>
  [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>

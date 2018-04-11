@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # File Handling
+
 Use these routines to create, delete, and manipulate files and to set and check file-access permissions.
 
  The C run-time libraries have a 512 limit for the number of files that can be open at any one time. Attempting to open more than the maximum number of file descriptors or file streams causes program failure. Use [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) to change this number.
@@ -86,6 +87,7 @@ Use these routines to create, delete, and manipulate files and to set and check 
 -   [CreateNamedPipe](http://msdn.microsoft.com/library/windows/desktop/aa365150.aspx)
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
  [Directory Control](../c-runtime-library/directory-control.md)<br/>
  [System Calls](../c-runtime-library/system-calls.md)<br/>

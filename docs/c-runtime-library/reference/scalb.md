@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _scalb, _scalbf
+
 Scales argument by a power of 2.
 
 ## Syntax
@@ -37,19 +38,22 @@ float _scalbf(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Double-precision, floating-point value.
 
  *exp*<br/>
  Long integer exponent.
 
 ## Return Value
- Returns an exponential value if successful. On overflow (depending on the sign of *x*), **_scalb** returns +/- **HUGE_VAL**; the **errno** variable is set to **ERANGE**.
+
+Returns an exponential value if successful. On overflow (depending on the sign of *x*), **_scalb** returns +/- **HUGE_VAL**; the **errno** variable is set to **ERANGE**.
 
  For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
- The **_scalb** function calculates the value of *x* * 2<sup>*exp*</sup>.
+
+The **_scalb** function calculates the value of *x* * 2<sup>*exp*</sup>.
 
 ## Requirements
 
@@ -60,5 +64,6 @@ float _scalbf(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [ldexp](../../c-runtime-library/reference/ldexp.md)<br/>

@@ -21,42 +21,39 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # acosh, acoshf, acoshl
+
 Calculates the inverse hyperbolic cosine.
 
 ## Syntax
 
-```
-double acosh(
-   double x
-);
-float acosh(
-   float x
-);  // C++ only
-long double acosh(
-   long double x
-);  // C++ only
-float acoshf(
-   float x
-);
-long double acoshl(
-   long double x
-);
+```C
+double acosh( double x );
+float acoshf( float x );
+long double acoshl( long double x );
 ```
 
-#### Parameters
- *x*<br/>
- Floating-point value.
+```cpp
+float acosh( float x );  // C++ only
+long double acosh( long double x );  // C++ only
+```
+
+### Parameters
+
+*x*<br/>
+Floating-point value.
 
 ## Return Value
- The **acosh** functions return the inverse hyberbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+
+The **acosh** functions return the inverse hyberbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, **errno** is set to **EDOM** and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, INF|none|none|
-|x < 1|none|none|
+|*x* < 1|none|none|
 
 ## Remarks
- When you use C++, you can call overloads of **acosh** that take and return **float** or **long** **double** values. In a C program, **acosh** always takes and returns **double**.
+
+When you use C++, you can call overloads of **acosh** that take and return **float** or **long** **double** values. In a C program, **acosh** always takes and returns **double**.
 
 ## Requirements
 
@@ -94,11 +91,11 @@ cosh( 0.785398 ) = 1.324609
 acosh( 1.324609 ) = 0.785398
 ```
 
-## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
- [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)<br/>
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)<br/>
- [asinh, asinhf, asinhl](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)<br/>
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)<br/>
- [atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
- [_CItan](../../c-runtime-library/citan.md)<br/>
+## See also
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+[asinh, asinhf, asinhl](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)<br/>
+[atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
+[cosh, coshf, coshl](../../c-runtime-library/reference/cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)<br/>

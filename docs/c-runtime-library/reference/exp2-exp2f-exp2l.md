@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # exp2, exp2f, exp2l
+
 Computes 2 raised to the specified value.
 
 ## Syntax
@@ -48,11 +49,13 @@ long double exp2l(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The value of the exponent.
 
 ## Return Value
- If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
+
+If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Otherwise, it returns one of the following values:
 
 |Issue|Return|
 |-----------|------------|
@@ -66,7 +69,8 @@ long double exp2l(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **exp2** that take and return **float** and **long double** types. In a C program, **exp2** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **exp2** that take and return **float** and **long double** types. In a C program, **exp2** always takes and returns a **double**.
 
 ## Requirements
 
@@ -77,6 +81,7 @@ long double exp2l(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
  [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>

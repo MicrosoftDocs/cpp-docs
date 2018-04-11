@@ -1,7 +1,7 @@
 ---
 title: "Locale | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/11/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Locale
+
 *Locale* refers to country/region and language settings that you can use to customize your program. Some locale-dependent categories include the display formats for dates and monetary values. For more information, see [Locale Categories](../c-runtime-library/locale-categories.md).
 
  Use the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) function to change or query some or all of the current program or thread locale information while using functions without the **_l** suffix. The functions with the **_l** suffix will use the locale parameter passed in for their locale information during the execution of that specific function only. To create a locale for use with a function with a **_l** suffix, use [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md). To free this locale, use [_free_locale](../c-runtime-library/reference/free-locale.md). To get the current locale, use [_get_current_locale](../c-runtime-library/reference/get-current-locale.md).
@@ -69,5 +70,6 @@ ms.workload: ["cplusplus"]
 > For multibyte routines, the multibyte code page must be equivalent to the locale set with [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md). [_setmbcp](../c-runtime-library/reference/setmbcp.md), with an argument of **_MB_CP_LOCALE** makes the multibyte code page the same as the **setlocale** code page.
 
 ## See Also
- [Internationalization](../c-runtime-library/internationalization.md)<br/>
+
+[Internationalization](../c-runtime-library/internationalization.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

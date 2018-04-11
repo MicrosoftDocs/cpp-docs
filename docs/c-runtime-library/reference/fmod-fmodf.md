@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fmod, fmodf, fmodl
+
 Calculates the floating-point remainder.
 
 ## Syntax
@@ -49,14 +50,17 @@ long double fmodl(
 ```
 
 #### Parameters
- *x*, *y*<br/>
+
+*x*, *y*<br/>
  Floating-point values.
 
 ## Return Value
- **fmod** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **fmod** returns a quiet NaN. For information about representation of a quiet NaN by the **printf** family, see [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
+
+**fmod** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **fmod** returns a quiet NaN. For information about representation of a quiet NaN by the **printf** family, see [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
- The **fmod** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* `*` *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
+
+The **fmod** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* `*` *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
 
  C++ allows overloading, so you can call overloads of **fmod** that take and return **float** and **long** **double** values. In a C program, **fmod** always takes two double arguments and returns a double.
 
@@ -91,7 +95,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
  [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
  [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>

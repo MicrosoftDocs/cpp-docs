@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _fcvt
+
 Converts a floating-point number to a string. A more secure version of this function is available; see [_fcvt_s](../../c-runtime-library/reference/fcvt-s.md).
 
 ## Syntax
@@ -35,7 +36,8 @@ char *_fcvt(
 ```
 
 #### Parameters
- *value*<br/>
+
+*value*<br/>
  Number to be converted.
 
  *count*<br/>
@@ -48,10 +50,12 @@ char *_fcvt(
  Pointer to the stored sign indicator.
 
 ## Return Value
- **_fcvt** returns a pointer to the string of digits, NULL on error.
+
+**_fcvt** returns a pointer to the string of digits, NULL on error.
 
 ## Remarks
- The **_fcvt** function converts a floating-point number to a null-terminated character string. The *value* parameter is the floating-point number to be converted. **_fcvt** stores the digits of *value* as a string and appends a null character ('\0'). The *count* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *count* places. If there are fewer than *count* digits of precision, the string is padded with zeros.
+
+The **_fcvt** function converts a floating-point number to a null-terminated character string. The *value* parameter is the floating-point number to be converted. **_fcvt** stores the digits of *value* as a string and appends a null character ('\0'). The *count* parameter specifies the number of digits to be stored after the decimal point. Excess digits are rounded off to *count* places. If there are fewer than *count* digits of precision, the string is padded with zeros.
 
  The total number of digits returned by **_fcvt** will not exceed **_CVTBUFSIZE**.
 

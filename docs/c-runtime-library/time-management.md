@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Time Management
+
 Use these functions to get the current time and convert, adjust, and store it as necessary. The current time is the system time.
 
  The **_ftime** and **localtime** routines use the **TZ** environment variable. If **TZ** is not set, the run-time library attempts to use the time-zone information specified by the operating system. If this information is unavailable, these functions use the default value of PST8PDT. For more information on **TZ**, see [_tzset](../c-runtime-library/reference/tzset.md); also see [_daylight, timezone, and _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
@@ -50,4 +51,5 @@ Use these functions to get the current time and convert, adjust, and store it as
 > In versions of Visual C++ and Microsoft C/C++ before Visual C++ 2005, **time_t** was a **long** **int** (32 bits) and hence could not be used for dates past 3:14:07 January 19, 2038, UTC. **time_t** is now equivalent to **__time64_t** by default, but defining **_USE_32BIT_TIME_T** changes **time_t** to **__time32_t** and forces many time functions to call versions that take the 32-bit **time_t**. For more information, see [Standard Types](../c-runtime-library/standard-types.md) and comments in the documentation for the individual time functions.
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

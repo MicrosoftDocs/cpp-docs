@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # sqrt, sqrtf, sqrtl
+
 Calculates the square root.
 
 ## Syntax
@@ -44,14 +45,17 @@ long double sqrtl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Non-negative floating-point value
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **sqrt** that take **float** or **long** **double** types. In a C program, **sqrt** always takes and returns **double**.
+
+Because C++ allows overloading, you can call overloads of **sqrt** that take **float** or **long** **double** types. In a C program, **sqrt** always takes and returns **double**.
 
 ## Return Value
- The **sqrt** functions return the square-root of *x*. By default, if *x* is negative, **sqrt** returns an indefinite NaN.
+
+The **sqrt** functions return the square-root of *x*. By default, if *x* is negative, **sqrt** returns an indefinite NaN.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
@@ -93,7 +97,8 @@ The square root of 45.35 is 6.73
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>

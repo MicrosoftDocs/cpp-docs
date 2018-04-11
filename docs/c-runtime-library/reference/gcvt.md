@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _gcvt
+
 Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [_gcvt_s](../../c-runtime-library/reference/gcvt-s.md).
 
 ## Syntax
@@ -34,7 +35,8 @@ char *_gcvt(
 ```
 
 #### Parameters
- *value*<br/>
+
+*value*<br/>
  Value to be converted.
 
  *digits*<br/>
@@ -44,10 +46,12 @@ char *_gcvt(
  Storage location for the result.
 
 ## Return Value
- **_gcvt** returns a pointer to the string of digits.
+
+**_gcvt** returns a pointer to the string of digits.
 
 ## Remarks
- The **_gcvt** function converts a floating-point *value* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *buffer*. The *buffer* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *digits* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **_gcvt** attempts to produce *digits* digits in decimal format. If it cannot, it produces *digits* digits in exponential format. Trailing zeros might be suppressed in the conversion.
+
+The **_gcvt** function converts a floating-point *value* to a character string (which includes a decimal point and a possible sign byte) and stores the string in *buffer*. The *buffer* should be large enough to accommodate the converted value plus a terminating null character, which is appended automatically. If a buffer size of *digits* + 1 is used, the function overwrites the end of the buffer. This is because the converted string includes a decimal point and can contain sign and exponent information. There is no provision for overflow. **_gcvt** attempts to produce *digits* digits in decimal format. If it cannot, it produces *digits* digits in exponential format. Trailing zeros might be suppressed in the conversion.
 
  A *buffer* of length **_CVTBUFSIZE** is sufficient for any floating point value.
 
@@ -118,7 +122,8 @@ buffer: '-1.23456789012e-002' (19 chars)
 ```
 
 ## See Also
- [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
+
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
  [_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>

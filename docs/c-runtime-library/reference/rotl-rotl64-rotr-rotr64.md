@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _rotl, _rotl64, _rotr, _rotr64
+
 Rotates bits to the left (**_rotl**) or right (**_rotr**).
 
 ## Syntax
@@ -46,17 +47,20 @@ unsigned __int64 _rotr64(
 ```
 
 #### Parameters
- *value*<br/>
+
+*value*<br/>
  Value to be rotated.
 
  *shift*<br/>
  Number of bits to shift.
 
 ## Return Value
- The rotated value. There is no error return.
+
+The rotated value. There is no error return.
 
 ## Remarks
- The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *value* to the other end.
+
+The **_rotl** and **_rotr** functions rotate the unsigned *value* by *shift* bits. **_rotl** rotates the value left. **_rotr** rotates the value right. Both functions wrap bits rotated off one end of *value* to the other end.
 
 ## Requirements
 
@@ -68,7 +72,8 @@ unsigned __int64 _rotr64(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Libraries
- All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
+
+All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
 ## Example
 
@@ -107,6 +112,7 @@ int main( void )
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [_lrotl, _lrotr](../../c-runtime-library/reference/lrotl-lrotr.md)<br/>
 

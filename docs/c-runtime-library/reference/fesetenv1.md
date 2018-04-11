@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # fesetenv
+
 Sets the current floating-point environment.
 
 ## Syntax
@@ -32,14 +33,17 @@ int fesetenv(
 ```
 
 #### Parameters
- *penv*<br/>
+
+*penv*<br/>
  Pointer to a **fenv_t** object that contains a floating-point environment as set by a call to [fegetenv](fegetenv1.md) or [feholdexcept](feholdexcept2.md). You can also specify the default startup floating-point environment by using the **FE_DFL_ENV** macro.
 
 ## Return Value
- Returns 0 if the environment was successfully set. Otherwise, returns a nonzero value.
+
+Returns 0 if the environment was successfully set. Otherwise, returns a nonzero value.
 
 ## Remarks
- The **fesetenv** function sets the current floating-point environment from the value stored in the **fenv_t** object pointed to by *penv*. The floating point environment is the set of status flags and control modes that affect floating-point calculations. This includes the rounding mode and the status flags for floating-point exceptions.  If *penv* is not **FE_DFL_ENV** or does not point to a valid **fenv_t** object, subsequent behavior is undefined.
+
+The **fesetenv** function sets the current floating-point environment from the value stored in the **fenv_t** object pointed to by *penv*. The floating point environment is the set of status flags and control modes that affect floating-point calculations. This includes the rounding mode and the status flags for floating-point exceptions.  If *penv* is not **FE_DFL_ENV** or does not point to a valid **fenv_t** object, subsequent behavior is undefined.
 
  A call to this function sets the exception status flags that are in the *penv* object, but it does not raise those exceptions.
 
@@ -54,7 +58,8 @@ int fesetenv(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fegetenv](../../c-runtime-library/reference/fegetenv1.md)<br/>
  [feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>
  [feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>

@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # feraiseexcept
+
 Raises the specified floating-point exceptions.
 
 ## Syntax
@@ -32,14 +33,17 @@ int feraiseexcept(
 ```
 
 #### Parameters
- *excepts*<br/>
+
+*excepts*<br/>
  The floating-point exceptions to raise.
 
 ## Return Value
- If all specified exceptions are raised successfully, returns 0.
+
+If all specified exceptions are raised successfully, returns 0.
 
 ## Remarks
- The **feraiseexcept** function attempts to raise the floating-point exceptions specified by *excepts*.   The **feraiseexcept** function supports these exception macros, defined in \<fenv.h>:
+
+The **feraiseexcept** function attempts to raise the floating-point exceptions specified by *excepts*.   The **feraiseexcept** function supports these exception macros, defined in \<fenv.h>:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
@@ -65,7 +69,8 @@ int feraiseexcept(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
  [feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>
  [fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>

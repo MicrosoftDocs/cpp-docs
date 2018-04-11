@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # cbrt, cbrtf, cbrtl
+
 Calculates the cube root.
 
 ## Syntax
@@ -44,18 +45,21 @@ long double cbrtl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  Floating-point value
 
 ## Return Value
- The **cbrt** functions return the cube-root of *x*.
+
+The **cbrt** functions return the cube-root of *x*.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|none|none|
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **cbrt** that take **float** or **long** **double** types. In a C program, **cbrt** always takes and returns **double**.
+
+Because C++ allows overloading, you can call overloads of **cbrt** that take **float** or **long** **double** types. In a C program, **cbrt** always takes and returns **double**.
 
 ## Requirements
 
@@ -90,7 +94,8 @@ The cube root of -64.64 is -4.013289
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
  [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>

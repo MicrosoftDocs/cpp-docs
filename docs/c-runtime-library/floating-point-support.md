@@ -45,8 +45,8 @@ The CRT supports these floating point functions:
 [_control87, \__control87_2, _controlfp](../c-runtime-library/reference/control87-controlfp-control87-2.md)|Gets and sets the floating-point control word
 [_controlfp_s](../c-runtime-library/reference/controlfp-s.md)|Secure version of **_controlfp**
 [copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Returns a value that has the magnitude of one argument and the sign of another
-[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|Computes the sine
-[cosh, coshf, coshl](../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)|Computes the hyperbolic sine
+[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Computes the sine
+[cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Computes the hyperbolic sine
 [div, ldiv, lldiv](../c-runtime-library/reference/div.md)|Computes the quotient and the remainder of two integer values
 [_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Converts a **double** to a string
 [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|Secure version of **_ecvt**
@@ -119,14 +119,14 @@ The CRT supports these floating point functions:
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of **FLT_RADIX**
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Sets the floating-point control word
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Enables or disables SSE2 instructions
-[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|Computes the sine
-[sinh, sinhf, sinhl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
+[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Computes the sine
+[sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Computes the square root
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Gets the floating-point status word
 [strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Converts a string to a **float**
 [strtold, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Converts a string to a **long** **double**
-[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|Computes the tangent
-[tanh, tanhf, tanhl](../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)|Computes the hyperbolic tangent
+[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Computes the tangent
+[tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Computes the hyperbolic tangent
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Computes the gamma function
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Truncates the fractional part
 [_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Converts a wide string to a **double**

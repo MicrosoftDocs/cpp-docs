@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
+
 Returns a value that has the magnitude of one argument and the sign of another.
 
 ## Syntax
@@ -57,7 +58,8 @@ long double _copysignl(
 ```
 
 #### Parameters
- *x*<br/>
+
+*x*<br/>
  The floating-point value that's returned as the magnitude of the result.
 
  *y*<br/>
@@ -66,10 +68,12 @@ long double _copysignl(
  [Floating-Point Support Routines](../../c-runtime-library/floating-point-support.md)
 
 ## Return Value
- The **copysign** functions return a floating-point value that combines the magnitude of *x* and the sign of *y*. There is no error return.
+
+The **copysign** functions return a floating-point value that combines the magnitude of *x* and the sign of *y*. There is no error return.
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **copysign** that take and return **float** or **long** **double** values. In a C program, **copysign** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **copysign** that take and return **float** or **long** **double** values. In a C program, **copysign** always takes and returns a **double**.
 
 ## Requirements
 
@@ -81,5 +85,6 @@ long double _copysignl(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
+
+[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
  [_chgsign, _chgsignf, _chgsignl](../../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)<br/>

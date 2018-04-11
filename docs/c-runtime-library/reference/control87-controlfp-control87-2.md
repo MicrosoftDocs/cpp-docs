@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _control87, _controlfp, __control87_2
+
 Gets and sets the floating-point control word. A more secure version of **_controlfp** is available; see [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md).
 
 ## Syntax
@@ -43,7 +44,8 @@ int __control87_2(
 ```
 
 #### Parameters
- *new*<br/>
+
+*new*<br/>
  New control-word bit values.
 
  *mask*<br/>
@@ -56,12 +58,14 @@ int __control87_2(
  Control word for the SSE floating-point unit. Pass in 0 (**NULL**) to set only the x87 control word.
 
 ## Return Value
- For **_control87** and **_controlfp**, the bits in the value returned indicate the floating-point control state. For a complete definition of the bits that are returned by **_control87**, see FLOAT.H.
+
+For **_control87** and **_controlfp**, the bits in the value returned indicate the floating-point control state. For a complete definition of the bits that are returned by **_control87**, see FLOAT.H.
 
  For **__control87_2**, the return value is 1, which indicates success.
 
 ## Remarks
- The **_control87** function gets and sets the floating-point control word. The floating-point control word enables the program to change the precision, rounding, and infinity modes in the floating-point math package, depending on the platform. You can also use **_control87** to mask or unmask floating-point exceptions. If the value for *mask* is equal to 0, **_control87** gets the floating-point control word. If *mask* is nonzero, a new value for the control word is set: For any bit that is on (that is, equal to 1) in *mask*, the corresponding bit in *new* is used to update the control word. In other words, **fpcntrl** = ((**fpcntrl** & ~*mask*) &#124; (*new* & *mask*)) where **fpcntrl** is the floating-point control word.
+
+The **_control87** function gets and sets the floating-point control word. The floating-point control word enables the program to change the precision, rounding, and infinity modes in the floating-point math package, depending on the platform. You can also use **_control87** to mask or unmask floating-point exceptions. If the value for *mask* is equal to 0, **_control87** gets the floating-point control word. If *mask* is nonzero, a new value for the control word is set: For any bit that is on (that is, equal to 1) in *mask*, the corresponding bit in *new* is used to update the control word. In other words, **fpcntrl** = ((**fpcntrl** & ~*mask*) &#124; (*new* & *mask*)) where **fpcntrl** is the floating-point control word.
 
 > [!NOTE]
 >  By default, the run-time libraries mask all floating-point exceptions.
@@ -167,7 +171,8 @@ Default:  0x0001
 ```
 
 ## See Also
- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
  [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
  [_status87, _statusfp, _statusfp2](../../c-runtime-library/reference/status87-statusfp-statusfp2.md)<br/>
  [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md)<br/>

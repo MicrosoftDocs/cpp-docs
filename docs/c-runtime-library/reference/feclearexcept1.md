@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # feclearexcept
+
 Attempts to clear the floating-point exception flags        specified by the argument.
 
 ## Syntax
@@ -32,14 +33,17 @@ int feclearexcept(
 ```
 
 #### Parameters
- *excepts*<br/>
+
+*excepts*<br/>
  The exception status flags to clear.
 
 ## Return Value
- Returns zero if *excepts* is zero, or if all        the specified exceptions were successfully cleared. Otherwise, returns a nonzero value.
+
+Returns zero if *excepts* is zero, or if all        the specified exceptions were successfully cleared. Otherwise, returns a nonzero value.
 
 ## Remarks
- The **feclearexcept** function attempts to clear the floating point exception status flags specified by *excepts*. The function supports these exception macros, defined in fenv.h:
+
+The **feclearexcept** function attempts to clear the floating point exception status flags specified by *excepts*. The function supports these exception macros, defined in fenv.h:
 
 |Exception Macro|Description|
 |---------------------|-----------------|
@@ -61,5 +65,6 @@ int feclearexcept(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>

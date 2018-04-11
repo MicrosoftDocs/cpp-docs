@@ -18,6 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Process and Environment Control
+
 Use the process-control routines to start, stop, and manage processes from within a program. Use the environment-control routines to get and change information about the operating-system environment.
 
 ## Process and Environment Control Functions
@@ -85,4 +86,5 @@ Use the process-control routines to start, stop, and manage processes from withi
 |**_execvp**, **_spawnvp**|Yes|Array|Inherited from calling process|
 
 ## See Also
- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

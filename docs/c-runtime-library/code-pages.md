@@ -40,5 +40,6 @@ A *code page* is a character set, which can include numbers, punctuation marks, 
 - The "C" locale is defined by ANSI to correspond to the locale in which C programs have traditionally executed. The code page for the "C" locale ("C" code page) corresponds to the ASCII character set. For example, in the "C" locale, **islower** returns true for the values 0x61 - 0x7A only. In another locale, **islower** may return true for these as well as other values, as defined by that locale.
 
 ## See Also
- [Internationalization](../c-runtime-library/internationalization.md)<br/>
+
+[Internationalization](../c-runtime-library/internationalization.md)<br/>
  [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

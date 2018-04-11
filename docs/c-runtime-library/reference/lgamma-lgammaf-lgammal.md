@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # lgamma, lgammaf, lgammal
+
 Determines the natural logarithm of the absolute value of the gamma function of the specified value.
 
 ## Syntax
@@ -49,11 +50,13 @@ long double lgammal(
 ```
 
 #### Parameters
- [in] *x*<br/>
+
+[in] *x*<br/>
  The value to compute.
 
 ## Return Value
- If successful, return the natural logarithm of the absolute value of the gamma function of `x.`
+
+If successful, return the natural logarithm of the absolute value of the gamma function of `x.`
 
 |Issue|Return|
 |-----------|------------|
@@ -67,7 +70,8 @@ long double lgammal(
  Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
 
 ## Remarks
- Because C++ allows overloading, you can call overloads of **lgamma** that take and return **float** and **long** **double** types. In a C program, **lgamma** always takes and returns a **double**.
+
+Because C++ allows overloading, you can call overloads of **lgamma** that take and return **float** and **long** **double** types. In a C program, **lgamma** always takes and returns a **double**.
 
  If x is a rational number, this function returns the logarithm of the factorial of (x - 1).
 
@@ -80,5 +84,6 @@ long double lgammal(
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See Also
- [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
  [tgamma, tgammaf, tgammal](../../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)<br/>
