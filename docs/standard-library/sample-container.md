@@ -17,16 +17,17 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;sample container&gt;
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Shows you the structure of the container headers in the C++ Standard Library.  
-  
-## Syntax  
-  
-```  
-  
-#include <sample container> // Nonfunctional header  
-  
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Shows you the structure of the container headers in the C++ Standard Library.
+
+## Syntax
+
+```
+
+#include <sample container> // Nonfunctional header
+
 ```
 

@@ -17,104 +17,114 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt; enumerations
+
 This topic documents the enums in the filesystem header.
 
-## Requirements  
- **Header:** \<experimental/filesystem>    
- **Namespace:** std::experimental::filesystem  
+## Requirements
+
+**Header:** \<experimental/filesystem>
+ **Namespace:** std::experimental::filesystem
 
 ##  <a name="copy_options"></a>  copy_options
-An enumeration of bitmask values that is used with [copy](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) functions to specify behavior.  
-  
-### Syntax  
-```cpp  
-enum class copy_options {      
-   none = 0,  
-   skip_existing = 1,  
-   overwrite_existing = 2,  
-   update_existing = 4,  
-   recursive = 8,  
-   copy_symlinks = 16,  
-   skip_symlinks = 32,  
-   directories_only = 64,  
-   create_symlinks = 128,  
-   create_hard_links = 256  
-};  
-```  
-  
-### Values  
-  
-|`Name`|Description|  
-|------------|-----------------|  
-|`none`|Perform the default behavior for the operation.|  
-|`skip_existing`|Do not copy if the file already exists, do not report an error.|  
-|`overwrite_existing`|Overwrite the file if it already exists.|  
-|`update_existing`|Overwrite the file if it already exists and is older than the replacement.|  
-|`recursive`|Recursively copy subdirectories and their contents.|  
-|`copy_symlinks`|Copy symbolic links as symbolic links, instead of copying the files they point to.|  
-|`skip_symlinks`|Ignore symbolic links.|  
-|`directories_only`|Only iterate over directories, ignore files.|  
-|`create_symlinks`|Make symbolic links instead of copying files. An absolute path must be used as the source path unless the destination is the current directory.|  
-|`create_hard_links`|Make hard links instead of copying files.|  
-  
+
+An enumeration of bitmask values that is used with [copy](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) functions to specify behavior.
+
+### Syntax
+
+```cpp
+enum class copy_options {
+   none = 0,
+   skip_existing = 1,
+   overwrite_existing = 2,
+   update_existing = 4,
+   recursive = 8,
+   copy_symlinks = 16,
+   skip_symlinks = 32,
+   directories_only = 64,
+   create_symlinks = 128,
+   create_hard_links = 256
+};
+```
+
+### Values
+
+|`Name`|Description|
+|------------|-----------------|
+|`none`|Perform the default behavior for the operation.|
+|`skip_existing`|Do not copy if the file already exists, do not report an error.|
+|`overwrite_existing`|Overwrite the file if it already exists.|
+|`update_existing`|Overwrite the file if it already exists and is older than the replacement.|
+|`recursive`|Recursively copy subdirectories and their contents.|
+|`copy_symlinks`|Copy symbolic links as symbolic links, instead of copying the files they point to.|
+|`skip_symlinks`|Ignore symbolic links.|
+|`directories_only`|Only iterate over directories, ignore files.|
+|`create_symlinks`|Make symbolic links instead of copying files. An absolute path must be used as the source path unless the destination is the current directory.|
+|`create_hard_links`|Make hard links instead of copying files.|
+
 
 ##  <a name="directory_options"></a> directory_options
-Specifies whether to follow symbolic links to directories or to ignore them.  
-  
-### Syntax  
-```cpp  
-enum class directory_options {  
-   none = 0,  
-   follow_directory_symlink 
-};  
-```  
-  
-### Values  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`none`|Default behavior: ignore symbolic links to directories. Permission denied is an error.|  
-|`follow_directory_symlink`|Treat symbolic links to directories as actual directories.|  
-  
+
+Specifies whether to follow symbolic links to directories or to ignore them.
+
+### Syntax
+
+```cpp
+enum class directory_options {
+   none = 0,
+   follow_directory_symlink
+};
+```
+
+### Values
+
+|Name|Description|
+|----------|-----------------|
+|`none`|Default behavior: ignore symbolic links to directories. Permission denied is an error.|
+|`follow_directory_symlink`|Treat symbolic links to directories as actual directories.|
+
 ##  <a name="file_type"></a>  file_type
-An enumeration for file types. The supported values are regular, directory, not_found, and unknown.  
-  
-### Syntax  
-```cpp  
+
+An enumeration for file types. The supported values are regular, directory, not_found, and unknown.
+
+### Syntax
+
+```cpp
 enum class file_type {
-    not_found = -1, 
-    none, 
-    regular, 
-    directory, 
+    not_found = -1,
+    none,
+    regular,
+    directory,
     symlink,
-    block, 
-    character, 
-    fifo, 
-    socket, 
+    block,
+    character,
+    fifo,
+    socket,
     unknown
-};  
-```  
-  
-### Values  
-  
-|Name|Value|Description|  
-|----------|-----------|-----------------|  
-|`not_found`|-1|Represents a file that does not exist.|  
-|`none`|0|Represents a file that has no type attribute. (Not supported.)|  
-|`regular`|1|Represents a conventional disk file.|  
-|`directory`|2|Represents a directory.|  
-|`symlink`|3|Represents a symbolic link. (Not supported.)|  
-|`block`|4|Represents a block-special file on UNIX-based systems. (Not supported.)|  
-|`character`|5|Represents a character-special file on UNIX-based systems. (Not supported.)|  
-|`fifo`|6|Represents a FIFO file on UNIX-based systems. (Not supported.)|  
-|`socket`|7|Represents a socket on UNIX based systems. (Not supported.)|  
-|`unknown`|8|Represents a file whose status cannot be determined.|  
-  
+};
+```
+
+### Values
+
+|Name|Value|Description|
+|----------|-----------|-----------------|
+|`not_found`|-1|Represents a file that does not exist.|
+|`none`|0|Represents a file that has no type attribute. (Not supported.)|
+|`regular`|1|Represents a conventional disk file.|
+|`directory`|2|Represents a directory.|
+|`symlink`|3|Represents a symbolic link. (Not supported.)|
+|`block`|4|Represents a block-special file on UNIX-based systems. (Not supported.)|
+|`character`|5|Represents a character-special file on UNIX-based systems. (Not supported.)|
+|`fifo`|6|Represents a FIFO file on UNIX-based systems. (Not supported.)|
+|`socket`|7|Represents a socket on UNIX based systems. (Not supported.)|
+|`unknown`|8|Represents a file whose status cannot be determined.|
+
 ##  <a name="perms"></a>  perms
-Flags for file permissions. The supported values are essentially “readonly” and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.  
-  
-### Syntax  
-```cpp  
+
+Flags for file permissions. The supported values are essentially “readonly” and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.
+
+### Syntax
+
+```cpp
 enum class perms {// names for permissions
    none = 0,
    owner_read = 0400,  // S_IRUSR
@@ -138,10 +148,10 @@ enum class perms {// names for permissions
    add_perms = 0x10000,
    remove_perms = 0x20000,
    resolve_symlinks = 0x40000
-};  
-```  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [\<filesystem>](../standard-library/filesystem.md)
+};
+```
 
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<filesystem>](../standard-library/filesystem.md)<br/>

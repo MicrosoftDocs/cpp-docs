@@ -17,17 +17,19 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::max_size
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Returns the length of the longest sequence that the object can control, in constant time regardless of the length of the controlled sequence.  
-  
-## Syntax  
-  
-```  
- 
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Returns the length of the longest sequence that the object can control, in constant time regardless of the length of the controlled sequence.
+
+## Syntax
+
+```
+
 size_type max_size() const;
-```  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+```
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>

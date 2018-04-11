@@ -18,23 +18,25 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator&lt;= (&lt;sample container&gt;)
-> [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Overloads **operator<=** to compare two objects of template class [Container](../standard-library/sample-container-class.md).  
-  
-## Syntax  
-  
-```  
-template <class Ty>  
-bool operator<=(
-    const Container <Ty>& left,  
-    const Container <Ty>& right);
-```  
-  
-## Return Value  
- Returns `!(right < left)`.  
-  
-## See Also  
- [\<sample container>](../standard-library/sample-container.md)
 
+> [!NOTE]
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Overloads **operator<=** to compare two objects of template class [Container](../standard-library/sample-container-class.md).
+
+## Syntax
+
+```cpp
+template <class Ty>
+bool operator<=(
+    const Container <Ty>& left,
+    const Container <Ty>& right);
+```
+
+## Return Value
+
+Returns `!(right < left)`.
+
+## See also
+
+[\<sample container>](../standard-library/sample-container.md)<br/>

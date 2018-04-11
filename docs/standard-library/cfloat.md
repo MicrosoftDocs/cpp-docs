@@ -18,19 +18,18 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # &lt;cfloat&gt;
-Includes the Standard C library header \<float.h>.  
-  
-## Syntax  
-  
-```  
-#include <cfloat>  
-  
-```  
-  
-## See Also  
- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)   
- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
+Includes the Standard C library header \<float.h>.
 
+## Syntax
 
+```cpp
+#include <cfloat>
+
+```
+
+## See also
+
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

@@ -17,20 +17,23 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::value_type
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Acts a synonym for the template parameter **Ty**.  
-  
-## Syntax  
-  
-```  
- 
-typedef T4 value_type;  
-```  
-  
-## Remarks  
- It is described here as a synonym for the unspecified type **T4** (typically **Alloc::value_type**).  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Acts a synonym for the template parameter **Ty**.
+
+## Syntax
+
+```
+
+typedef T4 value_type;
+```
+
+## Remarks
+
+It is described here as a synonym for the unspecified type **T4** (typically **Alloc::value_type**).
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>

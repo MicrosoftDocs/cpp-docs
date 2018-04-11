@@ -192,11 +192,11 @@ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.s
 
 ## Requirements
 
- **Header:** &lt;shared_mutex>
+**Header:** &lt;shared_mutex>
 
- **Namespace:** std
+**Namespace:** std
 
 ## See Also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)  
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
 [&lt;mutex>](../standard-library/mutex.md)

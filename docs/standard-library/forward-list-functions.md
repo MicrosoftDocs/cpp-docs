@@ -12,31 +12,32 @@ caps.latest.revision: 11
 manager: "ghogen"
 ---
 # &lt;forward_list&gt; functions
-||  
-|-|  
-|[swap](#swap)|  
-  
-##  <a name="swap"></a>  swap  
- Exchanges the elements of two forward lists.  
-  
-```
+
+||
+|-|
+|[swap](#swap)|
+
+##  <a name="swap"></a>  swap
+
+Exchanges the elements of two forward lists.
+
+```cpp
 void swap(
     forward_list <Type, Allocator>& left,
     forward_list <Type, Allocator>& right);
-```  
-  
-### Parameters  
-  
-|Parameter|Description|  
-|---------------|-----------------|  
-|`left`|An object of type `forward_list`.|  
-|`right`|An object of type `forward_list`.|  
-  
-### Remarks  
- This template function executes `left.swap(right)`.  
-  
-## See Also  
- [<forward_list>](../standard-library/forward-list.md)
+```
 
+### Parameters
 
+|Parameter|Description|
+|---------------|-----------------|
+|`left`|An object of type `forward_list`.|
+|`right`|An object of type `forward_list`.|
 
+### Remarks
+
+This template function executes `left.swap(right)`.
+
+## See also
+
+[<forward_list>](../standard-library/forward-list.md)<br/>

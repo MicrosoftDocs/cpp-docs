@@ -13,50 +13,57 @@ caps.latest.revision: 10
 manager: "ghogen"
 ---
 # &lt;scoped_allocator&gt; operators
-|||  
-|-|-|  
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
-  
-##  <a name="op_neq"></a>  operator!=  
- Tests two `scoped_allocator_adaptor` objects for inequality.  
-  
-```cpp  
-template <class Outer, class... Inner>  
-bool operator!=(
-    const scoped_allocator_adaptor<Outer, Inner...>& left,  
-    const scoped_allocator_adaptor<Outer, Inner...>& right) noexcept;  
-```  
-  
-### Parameters  
- `left`  
- The left `scoped_allocator_adaptor` object.  
-  
- `right`  
- The right `scoped_allocator_adaptor` object.  
-  
-### Return Value  
- `!(left == right)`  
-  
-##  <a name="op_eq_eq"></a>  operator==  
- Tests two `scoped_allocator_adaptor` objects for equality.  
-  
-```cpp  
-template <class Outer, class... Inner>  
-bool operator==(
-    const scoped_allocator_adaptor<Outer, Inner...>& left,  
-    const scoped_allocator_adaptor<Outer, Inner...>& right) noexcept;  
-```  
-  
-### Parameters  
- `left`  
- The left `scoped_allocator_adaptor` object.  
-  
- `right`  
- The right `scoped_allocator_adaptor` object.  
-  
-### Return Value  
- `left.outer_allocator() == right.outer_allocator() && left.inner_allocator() == right.inner_allocator()`  
-  
-## See Also  
- [<scoped_allocator>](../standard-library/scoped-allocator.md)
 
+|||
+|-|-|
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
+
+##  <a name="op_neq"></a>  operator!=
+
+Tests two `scoped_allocator_adaptor` objects for inequality.
+
+```cpp
+template <class Outer, class... Inner>
+bool operator!=(
+    const scoped_allocator_adaptor<Outer, Inner...>& left,
+    const scoped_allocator_adaptor<Outer, Inner...>& right) noexcept;
+```
+
+### Parameters
+
+`left`
+ The left `scoped_allocator_adaptor` object.
+
+`right`
+ The right `scoped_allocator_adaptor` object.
+
+### Return Value
+
+`!(left == right)`
+
+##  <a name="op_eq_eq"></a>  operator==
+
+Tests two `scoped_allocator_adaptor` objects for equality.
+
+```cpp
+template <class Outer, class... Inner>
+bool operator==(
+    const scoped_allocator_adaptor<Outer, Inner...>& left,
+    const scoped_allocator_adaptor<Outer, Inner...>& right) noexcept;
+```
+
+### Parameters
+
+`left`
+ The left `scoped_allocator_adaptor` object.
+
+`right`
+ The right `scoped_allocator_adaptor` object.
+
+### Return Value
+
+`left.outer_allocator() == right.outer_allocator() && left.inner_allocator() == right.inner_allocator()`
+
+## See also
+
+[<scoped_allocator>](../standard-library/scoped-allocator.md)<br/>

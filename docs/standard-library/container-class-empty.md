@@ -17,17 +17,19 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::empty
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- Returns **true** for an empty controlled sequence.  
-  
-## Syntax  
-  
-```  
- 
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+Returns **true** for an empty controlled sequence.
+
+## Syntax
+
+```
+
 bool empty() const;
-```  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+```
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>

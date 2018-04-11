@@ -17,20 +17,22 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Container Class::rend
+
 > [!NOTE]
->  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
-  
- The member function returns a reverse iterator that points at the first element of the sequence (or just beyond the end of an empty sequence), designating the end of the reverse sequence.  
-  
-## Syntax  
-  
-```  
- 
+> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+
+The member function returns a reverse iterator that points at the first element of the sequence (or just beyond the end of an empty sequence), designating the end of the reverse sequence.
+
+## Syntax
+
+```
+
     const_reverse_iterator rend() const;
 
- 
+
 reverse_iterator rend();
-```  
-  
-## See Also  
- [Sample Container Class](../standard-library/sample-container-class.md)
+```
+
+## See also
+
+[Sample Container Class](../standard-library/sample-container-class.md)<br/>
