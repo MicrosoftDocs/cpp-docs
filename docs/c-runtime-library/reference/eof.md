@@ -34,7 +34,7 @@ int _eof(
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor referring to the open file.
 
 ## Return Value
@@ -43,7 +43,7 @@ File descriptor referring to the open file.
 
 ## Remarks
 
-The `_eof` function determines whether the end of the file associated with `fd` has been reached.
+The `_eof` function determines whether the end of the file associated with *fd* has been reached.
 
 ## Requirements
 

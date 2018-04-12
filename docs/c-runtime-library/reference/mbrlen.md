@@ -36,14 +36,14 @@ size_t mbrlen(
 
 ### Parameters
 
-`str`
+*str*
 Pointer to the next byte to inspect in a multibyte character string.
 
 `count`
 The maximum number of bytes to inspect.
 
 `mbstate`
-Pointer to the current shift state of the initial byte of `str`.
+Pointer to the current shift state of the initial byte of *str*.
 
 ## Return Value
 
@@ -63,7 +63,7 @@ An encoding error occurred. The next `count` or fewer bytes do not contribute to
 
 ## Remarks
 
-The `mbrlen` function inspects at most `count` bytes starting with the byte pointed to by `str` to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where `mbstate` is either a user-provided `mbstate_t` object, or a static internal object provided by the library.
+The `mbrlen` function inspects at most `count` bytes starting with the byte pointed to by *str* to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where `mbstate` is either a user-provided `mbstate_t` object, or a static internal object provided by the library.
 
 The `mbrlen` function saves and uses the shift state of an incomplete multibyte character in the `mbstate` parameter. This gives `mbrlen` the capability of restarting in the middle of a multibyte character if need be, examining at most `count` bytes. If `mbstate` is a null pointer, `mbrlen` uses an internal, static `mbstate_t` object to store the shift state. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always allocate and pass your own `mbstate` parameter.
 

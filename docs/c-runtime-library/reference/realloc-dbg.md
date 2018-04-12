@@ -44,16 +44,16 @@ Pointer to the previously allocated memory block.
 `newSize`
 Requested size for the reallocated block (bytes).
 
-`blockType`
+*blockType*
 Requested type for the reallocated block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-`filename`
+*filename*
 Pointer to the name of the source file that requested the `realloc` operation or NULL.
 
-`linenumber`
+*linenumber*
 Line number in the source file where the `realloc` operation was requested or NULL.
 
-The `filename` and `linenumber` parameters are only available when `_realloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
+The *filename* and *linenumber* parameters are only available when `_realloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.
 
 ## Return Value
 
@@ -61,7 +61,7 @@ On successful completion, this function either returns a pointer to the user por
 
 ## Remarks
 
-`_realloc_dbg` is a debug version of the [realloc](../../c-runtime-library/reference/realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_realloc_dbg` is reduced to a call to `realloc`. Both `realloc` and `_realloc_dbg` reallocate a memory block in the base heap, but `_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.
+`_realloc_dbg` is a debug version of the [realloc](../../c-runtime-library/reference/realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_realloc_dbg` is reduced to a call to `realloc`. Both `realloc` and `_realloc_dbg` reallocate a memory block in the base heap, but `_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
 `_realloc_dbg` reallocates the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 

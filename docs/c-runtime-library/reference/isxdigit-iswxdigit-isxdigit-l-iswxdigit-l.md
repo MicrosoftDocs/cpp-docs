@@ -48,7 +48,7 @@ int _iswxdigit_l(
 `c`
 Integer to test.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

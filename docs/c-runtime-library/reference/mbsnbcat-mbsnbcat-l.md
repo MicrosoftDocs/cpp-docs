@@ -67,7 +67,7 @@ Null-terminated multibyte-character source string.
 `count`
 Number of bytes from `src` to append to `dest`.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

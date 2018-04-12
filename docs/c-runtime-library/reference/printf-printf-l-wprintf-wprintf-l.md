@@ -49,26 +49,26 @@ int _wprintf_l(
 
 ### Parameters
 
-`format`
+*format*
 Format control.
 
-`argument`
+*argument*
 Optional arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
 
-Returns the number of characters printed, or a negative value if an error occurs. If `format` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`. If **EOF** (0xFFFF) is encountered in `argument`, the function returns -1.
+Returns the number of characters printed, or a negative value if an error occurs. If *format* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`. If **EOF** (0xFFFF) is encountered in *argument*, the function returns -1.
 
 For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.
+The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.
 
-`wprintf` is a wide-character version of `printf`; `format` is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.
+`wprintf` is a wide-character version of `printf`; *format* is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -78,7 +78,7 @@ The versions of these functions with the `_l` suffix are identical except that t
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tprintf`|`printf`|`printf`|`wprintf`|
 
-The `format` argument consists of ordinary characters, escape sequences, and (if arguments follow `format`) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line:
+The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line:
 
 ```
 printf("Line one\n\t\tLine two\n");
@@ -91,10 +91,10 @@ Line one
         Line two
 ```
 
-[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf` encounters the first format specification (if any), it converts the value of the first argument after `format` and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
+[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf` encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string.
+>  Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 

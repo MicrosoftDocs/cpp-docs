@@ -40,7 +40,7 @@ int _cputws(
 
 ### Parameters
 
-`str`
+*str*
 Output string.
 
 ## Return Value
@@ -49,9 +49,9 @@ If successful, `_cputs` returns 0. If the function fails, it returns a nonzero v
 
 ## Remarks
 
-The `_cputs` function writes the null-terminated string that's pointed to by `str` directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
+The `_cputs` function writes the null-terminated string that's pointed to by *str* directly to the console. A carriage return-line feed (CR-LF) combination is not automatically appended to the string.
 
-This function validates its parameter. If `str` is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.
+This function validates its parameter. If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.
 
 ### Generic-Text Routine Mappings
 

@@ -30,7 +30,7 @@ Performs a binary search of a sorted array. This is version of [bsearch](../../c
 void *bsearch_s(
    const void *key,
    const void *base,
-   size_t num,
+   size_t number,
    size_t width,
    int ( __cdecl *compare ) ( void *, const void *key, const void *datum),
    void * context
@@ -39,27 +39,27 @@ void *bsearch_s(
 
 ### Parameters
 
-`key`
+*key*
 Object to search for.
 
-`base`
+*base*
 Pointer to base of search data.
 
-`num`
+*number*
 Number of elements.
 
-`width`
+*width*
 Width of elements.
 
-`compare`
-Callback function that compares two elements. The first argument is the `context` pointer. The second argument is a pointer to the `key` for the search. The third argument is a pointer to the array element to be compared with `key`.
+*compare*
+Callback function that compares two elements. The first argument is the *context* pointer. The second argument is a pointer to the *key* for the search. The third argument is a pointer to the array element to be compared with *key*.
 
-`context`
+*context*
 A pointer to an object that can be accessed in the comparison function.
 
 ## Return Value
 
-`bsearch_s` returns a pointer to an occurrence of `key` in the array pointed to by `base`. If `key` is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+`bsearch_s` returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 If invalid parameters are passed to the function, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -67,7 +67,7 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 |||||||
 |-|-|-|-|-|-|
-|`key`|`base`|`compare`|`num`|`width`|`errno`|
+|*key*|*base*|*compare*|*number*|*width*|`errno`|
 |`NULL`|any|any|any|any|`EINVAL`|
 |any|`NULL`|any|!= 0|any|`EINVAL`|
 |any|any|any|any|= 0|`EINVAL`|
@@ -75,15 +75,15 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 ## Remarks
 
-The `bsearch_s` function performs a binary search of a sorted array of `num` elements, each of `width` bytes in size. The `base` value is a pointer to the base of the array to be searched, and `key` is the value being sought. The `compare` parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
+The `bsearch_s` function performs a binary search of a sorted array of *number* elements, each of *width* bytes in size. The *base* value is a pointer to the base of the array to be searched, and *key* is the value being sought. The *compare* parameter is a pointer to a user-supplied routine that compares the requested key to an array element and returns one of the following values specifying their relationship:
 
-|Value returned by `compare` routine|Description|
+|Value returned by *compare* routine|Description|
 |-----------------------------------------|-----------------|
 |\< 0|Key is less than array element.|
 |0|Key is equal to array element.|
 |> 0|Key is greater than array element.|
 
-The `context` pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The `compare` function may cast the void pointer into the appropriate object type and access members of that object. The addition of the `context` parameter makes `bsearch_s` more secure since additional context may be used to avoid reentrancy bugs associated with using static variables to make data available to the `compare` function.
+The *context* pointer may be useful if the searched data structure is part of an object, and the compare function needs to access members of the object. The *compare* function may cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes `bsearch_s` more secure since additional context may be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
 
 ## Requirements
 

@@ -46,17 +46,17 @@ int _mbbtype_l(
 `c`
 The character to test.
 
-`type`
+*type*
 The type of byte to test for.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
 
-`_mbbtype` returns the type of byte in a string. This decision is context-sensitive, as specified by the value of `type`, which provides the control test condition. `type` is the type of the previous byte in the string. The manifest constants in the following table are defined in Mbctype.h.
+`_mbbtype` returns the type of byte in a string. This decision is context-sensitive, as specified by the value of *type*, which provides the control test condition. *type* is the type of the previous byte in the string. The manifest constants in the following table are defined in Mbctype.h.
 
-|Value of `type`|`_mbbtype` tests for|Return value|`c`|
+|Value of *type*|`_mbbtype` tests for|Return value|`c`|
 |---------------------|--------------------------|------------------|---------|
 |Any value except 1|Valid single byte or lead byte|`_MBC_SINGLE` (0)|Single byte (0x20 - 0x7E, 0xA1 - 0xDF)|
 |Any value except 1|Valid single byte or lead byte|`_MBC_LEAD` (1)|Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC)|
@@ -66,7 +66,7 @@ The locale to use.
 
 ## Remarks
 
-The `_mbbtype` function determines the type of a byte in a multibyte character. If the value of `type` is any value except 1, `_mbbtype` tests for a valid single-byte or lead byte of a multibyte character. If the value of `type` is 1, `_mbbtype` tests for a valid trail byte of a multibyte character.
+The `_mbbtype` function determines the type of a byte in a multibyte character. If the value of *type* is any value except 1, `_mbbtype` tests for a valid single-byte or lead byte of a multibyte character. If the value of *type* is 1, `_mbbtype` tests for a valid trail byte of a multibyte character.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The `_mbbtype` version of this function uses the current locale for this locale-dependent behavior; the `_mbbtype_l` version is identical except that it use the locale parameter that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

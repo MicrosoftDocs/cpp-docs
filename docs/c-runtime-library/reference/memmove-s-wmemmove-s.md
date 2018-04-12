@@ -47,7 +47,7 @@ errno_t wmemmove_s(
 `dest`
 Destination object.
 
-`numberOfElements`
+*numberOfElements*
 Size of the destination buffer.
 
 `src`
@@ -62,7 +62,7 @@ Zero if successful; an error code on failure
 
 ### Error Conditions
 
-|`dest`|`numberOfElements`|`src`|Return value|Contents of `dest`|
+|`dest`|*numberOfElements*|`src`|Return value|Contents of `dest`|
 |------------|------------------------|-----------|------------------|------------------------|
 |`NULL`|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|not modified|

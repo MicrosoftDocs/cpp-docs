@@ -55,7 +55,7 @@ Integer to test.
 `desc`
 Property to test for. This is normally retrieved using ctype or [wctype](../../c-runtime-library/reference/wctype.md).
 
-`locale`
+*locale*
 The locale to use for any locale-dependent tests.
 
 ## Return Value

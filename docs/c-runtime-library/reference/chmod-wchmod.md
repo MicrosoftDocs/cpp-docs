@@ -26,24 +26,17 @@ Changes the file-permission settings.
 
 ## Syntax
 
-```
-
-      int _chmod(
-   const char *filename,
-   int pmode
-);
-int _wchmod(
-   const wchar_t *filename,
-   int pmode
-);
+```C
+int _chmod( const char *filename, int pmode );
+int _wchmod( const wchar_t *filename, int pmode );
 ```
 
 ### Parameters
 
-`filename`
+*filename*
 Name of the existing file.
 
-`pmode`
+*pmode*
 Permission setting for the file.
 
 ## Return Value
@@ -52,7 +45,7 @@ These functions return 0 if the permission setting is successfully changed. A re
 
 ## Remarks
 
-The `_chmod` function changes the permission setting of the file specified by `filename`. The permission setting controls the read and write access to the file. The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\Stat.h.
+The `_chmod` function changes the permission setting of the file specified by *filename*. The permission setting controls the read and write access to the file. The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\Stat.h.
 
 `_S_IWRITE`
 Writing permitted.
@@ -65,9 +58,9 @@ Reading and writing permitted.
 
 When both constants are given, they are joined with the bitwise `OR` operator ( `|` ). If write permission is not given, the file is read-only. Note that all files are always readable; it is not possible to give write-only permission. Thus, the modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are equivalent.
 
-`_wchmod` is a wide-character version of `_chmod`; the `filename` argument to `_wchmod` is a wide-character string. `_wchmod` and `_chmod` behave identically otherwise.
+`_wchmod` is a wide-character version of `_chmod`; the *filename* argument to `_wchmod` is a wide-character string. `_wchmod` and `_chmod` behave identically otherwise.
 
-This function validates its parameters. If `pmode` is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores those. If `filename` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
+This function validates its parameters. If *pmode* is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores those. If *filename* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
 
 ### Generic-Text Routine Mappings
 

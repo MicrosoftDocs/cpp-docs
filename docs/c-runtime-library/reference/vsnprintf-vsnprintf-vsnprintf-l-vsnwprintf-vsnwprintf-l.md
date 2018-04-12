@@ -100,39 +100,39 @@ int _vsnwprintf_l(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for output.
 
 `count`
 Maximum number of characters to write.
 
-`format`
+*format*
 Format specification.
 
 `argptr`
 Pointer to list of arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
 
-The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by `count` is not sufficiently large to contain the output specified by `format` and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if `count` were sufficiently large. If the return value is greater than `count` - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by `count` is not sufficiently large to contain the output specified by *format* and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if `count` were sufficiently large. If the return value is greater than `count` - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
 
 Both `_vsnprintf` and `_vsnwprintf` functions return the number of characters written if the number of characters to write is less than or equal to `count`; if the number of characters to write is greater than `count`, these functions return -1 indicating that output has been truncated.
 
 The value returned by all these functions does not include the terminating null, whether one is written or not. When `count` is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
 
-If `format` is `NULL`, or if `buffer` is NULL and `count` is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+If *format* is `NULL`, or if *buffer* is NULL and `count` is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to `count` characters  to the memory pointed to by `buffer`. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than `count`).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to `count` characters  to the memory pointed to by *buffer*. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than `count`).
 
 > [!IMPORTANT]
->  To prevent certain kinds of security risks, ensure that `format` is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  To prevent certain kinds of security risks, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 > [!NOTE]
 >  To ensure that there is room for the terminating null when calling `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf` and `_vsnwprintf_l`, be sure that `count` is strictly less than the buffer length and initialize the buffer to null prior to calling the function.

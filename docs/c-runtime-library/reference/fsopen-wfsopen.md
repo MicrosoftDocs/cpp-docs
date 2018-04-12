@@ -41,26 +41,26 @@ FILE *_wfsopen(
 
 ### Parameters
 
-`filename`
+*filename*
 Name of the file to open.
 
-`mode`
+*mode*
 Type of access permitted.
 
-`shflag`
+*shflag*
 Type of sharing allowed.
 
 ## Return Value
 
-Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *filename* or *mode* is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_fsopen` function opens the file specified by `filename` as a stream and prepares the file for subsequent shared reading or writing, as defined by the mode and `shflag` arguments. `_wfsopen` is a wide-character version of `_fsopen`; the `filename` and `mode` arguments to `_wfsopen` are wide-character strings. `_wfsopen` and `_fsopen` behave identically otherwise.
+The `_fsopen` function opens the file specified by *filename* as a stream and prepares the file for subsequent shared reading or writing, as defined by the mode and *shflag* arguments. `_wfsopen` is a wide-character version of `_fsopen`; the *filename* and *mode* arguments to `_wfsopen` are wide-character strings. `_wfsopen` and `_fsopen` behave identically otherwise.
 
-The character string `mode` specifies the type of access requested for the file, as shown in the following table.
+The character string *mode* specifies the type of access requested for the file, as shown in the following table.
 
 |Term|Definition|
 |----------|----------------|
@@ -73,7 +73,7 @@ The character string `mode` specifies the type of access requested for the file,
 
 Use the `"w"` and `"w+"` types with care, as they can destroy existing files.
 
-When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for update). However, when switching between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters can be included in `mode` to specify the translation mode for new lines, and for file management.
+When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for update). However, when switching between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters can be included in *mode* to specify the translation mode for new lines, and for file management.
 
 |Term|Definition|
 |----------|----------------|
@@ -84,9 +84,9 @@ When a file is opened with the `"a"` or `"a+"` access type, all write operations
 |`T`|Specifies a file as temporary. If possible, it is not flushed to disk.|
 |`D`|Specifies a file as temporary. It is deleted when the last file pointer is closed.|
 
-If `t` or `b` is not given in `mode`, the translation mode is defined by the default-mode variable `_fmode`. If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+If `t` or `b` is not given in *mode*, the translation mode is defined by the default-mode variable `_fmode`. If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-The argument `shflag` is a constant expression consisting of one of the following manifest constants, defined in Share.h.
+The argument *shflag* is a constant expression consisting of one of the following manifest constants, defined in Share.h.
 
 |Term|Definition|
 |----------|----------------|
@@ -106,8 +106,8 @@ The argument `shflag` is a constant expression consisting of one of the followin
 
 |Function|Required header|Optional headers|
 |--------------|---------------------|----------------------|
-|`_fsopen`|\<stdio.h>|\<share.h><br /><br /> For manifest constant for `shflag` parameter.|
-|`_wfsopen`|\<stdio.h> or \<wchar.h>|\<share.h><br /><br /> For manifest constant for `shflag` parameter.|
+|`_fsopen`|\<stdio.h>|\<share.h><br /><br /> For manifest constant for *shflag* parameter.|
+|`_wfsopen`|\<stdio.h> or \<wchar.h>|\<share.h><br /><br /> For manifest constant for *shflag* parameter.|
 
 ## Example
 

@@ -115,7 +115,7 @@ Source string.
 `count`
 Number of characters to be copied.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

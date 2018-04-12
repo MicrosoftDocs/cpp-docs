@@ -57,7 +57,7 @@ Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of an
 `current`
 Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

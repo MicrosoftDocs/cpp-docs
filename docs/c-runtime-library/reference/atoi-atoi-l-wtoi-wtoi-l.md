@@ -45,10 +45,10 @@ int _wtoi_l(
 
 ### Parameters
 
-`str`
+*str*
 String to be converted.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
@@ -61,7 +61,7 @@ In the case of overflow with large negative integral values, `LONG_MIN` is retur
 
 These functions convert a character string to an integer value (`atoi` and `_wtoi`). The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character may be the null character ('\0' or L'\0') terminating the string.
 
-The `str` argument to `atoi` and `_wtoi` has the following form:
+The *str* argument to `atoi` and `_wtoi` has the following form:
 
 [`whitespace`] [`sign`] [`digits`]]
 

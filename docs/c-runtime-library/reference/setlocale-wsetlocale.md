@@ -39,15 +39,15 @@ wchar_t *_wsetlocale(
 
 ### Parameters
 
-`category`
+*category*
 Category affected by locale.
 
-`locale`
+*locale*
 Locale specifier.
 
 ## Return Value
 
-If a valid `locale` and `category` are given, returns a pointer to the string associated with the specified `locale` and `category`. If the `locale` or `category` is not valid, returns a null pointer and the current locale settings of the program are not changed.
+If a valid *locale* and *category* are given, returns a pointer to the string associated with the specified *locale* and *category*. If the *locale* or *category* is not valid, returns a null pointer and the current locale settings of the program are not changed.
 
 For example, the call
 
@@ -61,9 +61,9 @@ You can copy the string returned by `setlocale` to restore that part of the prog
 
 ## Remarks
 
-Use the `setlocale` function to set, change, or query some or all of the current program locale information specified by `locale` and `category`. `locale` refers to the locality (country/region and language) for which you can customize certain aspects of your program. Some locale-dependent categories include the formatting of dates and the display format for monetary values. If you set `locale` to the default string for a language that has multiple forms supported on your computer, you should check the `setlocale` return value to see which language is in effect. For example, if you set `locale` to "chinese" the return value could be either "chinese-simplified" or "chinese-traditional".
+Use the `setlocale` function to set, change, or query some or all of the current program locale information specified by *locale* and *category*. *locale* refers to the locality (country/region and language) for which you can customize certain aspects of your program. Some locale-dependent categories include the formatting of dates and the display format for monetary values. If you set *locale* to the default string for a language that has multiple forms supported on your computer, you should check the `setlocale` return value to see which language is in effect. For example, if you set *locale* to "chinese" the return value could be either "chinese-simplified" or "chinese-traditional".
 
-`_wsetlocale` is a wide-character version of `setlocale`; the `locale` argument and return value of `_wsetlocale` are wide-character strings. `_wsetlocale` and `setlocale` behave identically otherwise.
+`_wsetlocale` is a wide-character version of `setlocale`; the *locale* argument and return value of `_wsetlocale` are wide-character strings. `_wsetlocale` and `setlocale` behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -71,7 +71,7 @@ Use the `setlocale` function to set, change, or query some or all of the current
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tsetlocale`|`setlocale`|`setlocale`|`_wsetlocale`|
 
-The `category` argument specifies the parts of a program's locale information that are affected. The macros used for `category` and the parts of the program they affect are as follows:
+The *category* argument specifies the parts of a program's locale information that are affected. The macros used for *category* and the parts of the program they affect are as follows:
 
 `LC_ALL`
 All categories in the following list.
@@ -93,15 +93,15 @@ The `strftime` and `wcsftime` functions.
 
 This function validates the category parameter. If the category parameter is not one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
 
-The `locale` argument is a pointer to a string that specifies the locale. For information about the format of the `locale` argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If `locale` points to an empty string, the locale is the implementation-defined native environment. A value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that all `char` data types are 1 byte and that their value is always less than 256.
+The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). If *locale* points to an empty string, the locale is the implementation-defined native environment. A value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that all `char` data types are 1 byte and that their value is always less than 256.
 
 At program startup, the equivalent of the following statement is executed:
 
 `setlocale( LC_ALL, "C" );`
 
-The `locale` argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API except code pages that require more than two bytes per character, such as UTF-7 and UTF-8. If you provide a code page value of UTF-7 or UTF-8, `setlocale` will fail, returning NULL. The set of locale names supported by `setlocale` are described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
+The *locale* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all those supported by the Windows NLS API except code pages that require more than two bytes per character, such as UTF-7 and UTF-8. If you provide a code page value of UTF-7 or UTF-8, `setlocale` will fail, returning NULL. The set of locale names supported by `setlocale` are described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `setlocale` are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md). We recommend the locale name form for performance and for maintainability of locale strings embedded in code or serialized to storage. The locale name strings are less likely to be changed by an operating system update than the language and country/region name form.
 
-A null pointer that's passed as the `locale` argument tells `setlocale` to query instead of to set the international environment. If the `locale` argument is a null pointer, the program's current locale setting is not changed. Instead, `setlocale` returns a pointer to the string that's associated with the `category` of the thread's current locale. If the `category` argument is `LC_ALL`, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
+A null pointer that's passed as the *locale* argument tells `setlocale` to query instead of to set the international environment. If the *locale* argument is a null pointer, the program's current locale setting is not changed. Instead, `setlocale` returns a pointer to the string that's associated with the *category* of the thread's current locale. If the *category* argument is `LC_ALL`, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
 
 `// Set all categories and return "en-US"`
 

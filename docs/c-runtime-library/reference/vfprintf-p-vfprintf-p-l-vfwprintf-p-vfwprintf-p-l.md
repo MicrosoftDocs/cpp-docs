@@ -53,16 +53,16 @@ int _vfwprintf_p_l(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
-`format`
+*format*
 Format specification.
 
 `argptr`
 Pointer to list of arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
@@ -73,16 +73,16 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats and writes the given data to `stream`. These functions differ from the `_vfprint_s` and `_vfwprint_s` versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Each of these functions takes a pointer to an argument list, then formats and writes the given data to *stream*. These functions differ from the `_vfprint_s` and `_vfwprint_s` versions only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
 `_vfwprintf_p` is the wide-character version of `_vprintf_p`; the two functions behave identically if the stream is opened in ANSI mode. `_vprintf_p` doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-If either `stream` or `format` is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+If either *stream* or *format* is a null pointer, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 

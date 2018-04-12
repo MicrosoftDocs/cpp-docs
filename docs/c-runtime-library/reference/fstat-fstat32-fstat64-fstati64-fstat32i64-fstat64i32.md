@@ -55,19 +55,19 @@ int _fstat64i32(
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor of the open file.
 
-`buffer`
+*buffer*
 Pointer to the structure to store results.
 
 ## Return Value
 
-Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if `buffer` is `NULL`.
+Returns 0 if the file-status information is obtained. A return value of -1 indicates an error. If the file descriptor is invalid or *buffer* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EBADF`, in the case of an invalid file descriptor, or to `EINVAL`, if *buffer* is `NULL`.
 
 ## Remarks
 
-The `_fstat` function obtains information about the open file associated with `fd` and stores it in the structure pointed to by `buffer`. The `_stat` structure, defined in SYS\Stat.h, contains the following fields.
+The `_fstat` function obtains information about the open file associated with *fd* and stores it in the structure pointed to by *buffer*. The `_stat` structure, defined in SYS\Stat.h, contains the following fields.
 
 `st_atime`
 Time of the last file access.
@@ -76,10 +76,10 @@ Time of the last file access.
 Time of the creation of the file.
 
 `st_dev`
-If a device, `fd`; otherwise 0.
+If a device, *fd*; otherwise 0.
 
 `st_mode`
-Bit mask for file-mode information. The `_S_IFCHR` bit is set if `fd` refers to a device. The `_S_IFREG` bit is set if `fd` refers to an ordinary file. The read/write bits are set according to the file's permission mode. `_S_IFCHR` and other constants are defined in SYS\Stat.h.
+Bit mask for file-mode information. The `_S_IFCHR` bit is set if *fd* refers to a device. The `_S_IFREG` bit is set if *fd* refers to an ordinary file. The read/write bits are set according to the file's permission mode. `_S_IFCHR` and other constants are defined in SYS\Stat.h.
 
 `st_mtime`
 Time of the last modification of the file.
@@ -88,12 +88,12 @@ Time of the last modification of the file.
 Always 1 on non-NTFS file systems.
 
 `st_rdev`
-If a device, `fd`; otherwise 0.
+If a device, *fd*; otherwise 0.
 
 `st_size`
 Size of the file in bytes.
 
-If `fd` refers to a device, the `st_atime`, `st_ctime`, `st_mtime`, and `st_size` fields are not meaningful.
+If *fd* refers to a device, the `st_atime`, `st_ctime`, `st_mtime`, and `st_size` fields are not meaningful.
 
 Because Stat.h uses the [_dev_t](../../c-runtime-library/standard-types.md) type, which is defined in Types.h, you must include Types.h before Stat.h in your code.
 

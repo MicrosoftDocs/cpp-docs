@@ -34,12 +34,12 @@ errno_t _set_fmode( 
 
 ### Parameters
 
-[in] `mode`
+[in] *mode*
 The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value
 
-Returns zero if successful, an error code on failure. If `mode` is not `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+Returns zero if successful, an error code on failure. If *mode* is not `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 

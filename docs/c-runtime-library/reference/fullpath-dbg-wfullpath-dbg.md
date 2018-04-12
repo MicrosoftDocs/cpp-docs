@@ -56,13 +56,13 @@ Relative path name.
 `maxLength`
 Maximum length of the absolute path name buffer (`absPath`). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
 
-`blockType`
+*blockType*
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-`filename`
+*filename*
 Pointer to the name of the source file that requested allocation operation or `NULL`.
 
-`linenumber`
+*linenumber*
 Line number in the source file where the allocation operation was requested or `NULL`.
 
 ## Return Value
@@ -73,7 +73,7 @@ Each function returns a pointer to a buffer containing the absolute path name (`
 
 The `_fullpath_dbg` and `_wfullpath_dbg` functions are identical to `_fullpath` and `_wfullpath` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc`, `_malloc_dbg`, to allocate memory if NULL is passed as the first parameter. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).
 
-You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_fullpath` and `_wfullpath` are remapped to `_fullpath_dbg` and `_wfullpath_dbg`, respectively, with the `blockType` set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
+You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_fullpath` and `_wfullpath` are remapped to `_fullpath_dbg` and `_wfullpath_dbg`, respectively, with the *blockType* set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
 ### Generic-Text Routine Mappings
 

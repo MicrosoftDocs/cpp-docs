@@ -34,18 +34,18 @@ errno_t clearerr_s(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to `FILE` structure
 
 ## Return Value
 
-Zero if successful; `EINVAL` if `stream` is NULL.
+Zero if successful; `EINVAL` if *stream* is NULL.
 
 ## Remarks
 
-The `clearerr_s` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
+The `clearerr_s` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
 
-If `stream` is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+If *stream* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_clearerr_s.c
 // This program creates an error
 // on the standard input stream, then clears

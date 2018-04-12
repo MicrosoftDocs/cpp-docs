@@ -46,12 +46,12 @@ _Lcomplex ccoshl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents the angle, in radians.
 
 ## Return Value
 
-The hyperbolic cosine of `z`, in radians.
+The hyperbolic cosine of *z*, in radians.
 
 ## Remarks
 

@@ -54,13 +54,13 @@ errno_t _cgetws_s(
 
 ### Parameters
 
-[out] `buffer`
+[out] *buffer*
 Storage location for data.
 
-[in] `numberOfElements`
+[in] *numberOfElements*
 The size of the buffer in single-byte or wide characters, which is also the maximum number of characters to be read.
 
-[in] `pSizeRead`
+[in] *pSizeRead*
 The number of characters actually read.
 
 ## Return Value
@@ -69,7 +69,7 @@ The return value is zero if successful; otherwise, an error code if a failure oc
 
 ### Error Conditions
 
-|`buffer`|`numberOfElements`|`pSizeRead`|Return|Contents of `buffer`|
+|*buffer*|*numberOfElements*|*pSizeRead*|Return|Contents of *buffer*|
 |--------------|------------------------|-----------------|------------|--------------------------|
 |`NULL`|any|any|`EINVAL`|n/a|
 |not `NULL`|zero|any|`EINVAL`|not modified|
@@ -77,7 +77,7 @@ The return value is zero if successful; otherwise, an error code if a failure oc
 
 ## Remarks
 
-`_cgets_s` and `_cgetws_s` read a string from the console and copy the string (with a null terminator) into `buffer`. `_cgetws_s` is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the `numberOfElements` parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in `pSizeRead`.
+`_cgets_s` and `_cgetws_s` read a string from the console and copy the string (with a null terminator) into *buffer*. `_cgetws_s` is the wide character version of the function; other than the character size, the behavior of these two functions is identical. The maximum size of the string to be read is passed in as the *numberOfElements* parameter. This size should include an extra character for the terminating null. The actual number of characters read is placed in *pSizeRead*.
 
 If an error occurs during the operation or in the validating of the parameters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `errno` is set to `EINVAL` and `EINVAL` is returned.
 

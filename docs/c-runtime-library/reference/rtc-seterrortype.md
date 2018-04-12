@@ -46,7 +46,7 @@ An *ErrType* of _RTC_ERRTYPE_IGNORE has special meaning to `_CrtSetReportMode`; 
 
 ## Return Value
 
-The previous value for the error type `type`.
+The previous value for the error type *type*.
 
 ## Remarks
 

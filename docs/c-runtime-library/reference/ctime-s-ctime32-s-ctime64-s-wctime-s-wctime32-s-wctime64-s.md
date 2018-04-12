@@ -81,7 +81,7 @@ errno_t _wctime64_s(
 
 ### Parameters
 
-[out] `buffer`
+[out] *buffer*
 Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL` if:
 
 -   `time` represents a date before midnight, January 1, 1970, UTC.
@@ -92,7 +92,7 @@ Must be large enough to hold 26 characters. A pointer to the character string re
 
 -   If you use `_ctime_s` or `_wctime_s`, these functions are wrappers to the previous functions. See the Remarks section.
 
-[in] `numberOfElements`
+[in] *numberOfElements*
 The size of the buffer.
 
 [in] `time`
@@ -104,7 +104,7 @@ Zero if successful. If there is a failure due to an invalid parameter, the inval
 
 ## Error Conditions
 
-|`buffer`|`numberOfElements`|`time`|Return|Value in `buffer`|
+|*buffer*|*numberOfElements*|`time`|Return|Value in *buffer*|
 |--------------|------------------------|------------|------------|-----------------------|
 |`NULL`|any|any|`EINVAL`|Not modified|
 |Not `NULL` (points to valid memory)|0|any|`EINVAL`|Not modified|

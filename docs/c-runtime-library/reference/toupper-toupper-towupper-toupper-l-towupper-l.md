@@ -51,7 +51,7 @@ int _towupper_l(
 `c`
 Character to convert.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

@@ -115,7 +115,7 @@ errno_t _mbsncpy_s_l(
 `strDest`
 Destination string.
 
-`numberOfElements`
+*numberOfElements*
 The size of the destination string, in characters.
 
 `strSource`
@@ -124,7 +124,7 @@ Source string.
 `count`
 Number of characters to be copied, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -133,7 +133,7 @@ Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
 ### Error Conditions
 
-|`strDest`|`numberOfElements`|`strSource`|Return value|Contents of `strDest`|
+|`strDest`|*numberOfElements*|`strSource`|Return value|Contents of `strDest`|
 |---------------|------------------------|-----------------|------------------|---------------------------|
 |`NULL`|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|`strDest`[0] set to 0|
@@ -142,7 +142,7 @@ Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
 ## Remarks
 
-These functions try to copy the first `D` characters of `strSource` to `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to copy the first `D` characters of `strSource` to `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If those `D` characters will fit within `strDest` (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 There is an exception to the above paragraph. If `count` is `_TRUNCATE`, then as much of `strSource` as will fit into `strDest` is copied while still leaving room for the terminating null which is always appended.
 
@@ -154,7 +154,7 @@ For example,
 
 means that we are asking `strncpy_s` to copy five characters into a buffer five bytes long; this would leave no space for the null terminator, hence `strncpy_s` zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use `_TRUNCATE` or (`size` - 1):
+If truncation behavior is needed, use `_TRUNCATE` or (*size* - 1):
 
 `strncpy_s(dst, 5, "a long string", _TRUNCATE);`
 
@@ -164,7 +164,7 @@ Note that unlike `strncpy`, if `count` is greater than the length of `strSource`
 
 The behavior of `strncpy_s` is undefined if the source and destination strings overlap.
 
-If `strDest` or `strSource` is `NULL`, or `numberOfElements` is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
+If `strDest` or `strSource` is `NULL`, or *numberOfElements* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 `wcsncpy_s` and `_mbsncpy_s` are wide-character and multibyte-character versions of `strncpy_s`. The arguments and return value of `wcsncpy_s` and `mbsncpy_s` do vary accordingly. These six functions behave identically otherwise.
 

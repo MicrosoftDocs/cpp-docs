@@ -41,18 +41,18 @@ FILE *_wfreopen(
 
 ### Parameters
 
-`path`
+*path*
 Path of new file.
 
-`mode`
+*mode*
 Type of access permitted.
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a `NULL` pointer value. If `path`, `mode`, or `stream` is a null pointer, or if `filename` is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.
+Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a `NULL` pointer value. If *path*, *mode*, or *stream* is a null pointer, or if *filename* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `NULL`.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
@@ -60,7 +60,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 More secure versions of these functions exist, see [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).
 
-The `freopen` function closes the file currently associated with `stream` and reassigns `stream` to the file specified by `path`. `_wfreopen` is a wide-character version of `_freopen`; the `path` and `mode` arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.
+The `freopen` function closes the file currently associated with *stream* and reassigns *stream* to the file specified by *path*. `_wfreopen` is a wide-character version of `_freopen`; the *path* and *mode* arguments to `_wfreopen` are wide-character strings. `_wfreopen` and `_freopen` behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -68,7 +68,7 @@ The `freopen` function closes the file currently associated with `stream` and re
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tfreopen`|`freopen`|`freopen`|`_wfreopen`|
 
-`freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with `stream` is opened with `mode`, which is a character string specifying the type of access requested for the file, as follows:
+`freopen` is typically used to redirect the pre-opened files `stdin`, `stdout`, and `stderr` to files specified by the user. The new file associated with *stream* is opened with *mode*, which is a character string specifying the type of access requested for the file, as follows:
 
 `"r"`
 Opens for reading. If the file does not exist or cannot be found, the `freopen` call fails.
@@ -94,7 +94,7 @@ When a file is opened with the `"a"` or `"a+"` access type, all write operations
 
 The `"a"` mode does not remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. The `"a+"` mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The `"a+"` mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 
-When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters may be included in the `mode` string to specify the translation mode for new lines.
+When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters may be included in the *mode* string to specify the translation mode for new lines.
 
 `t`
 Open in text (translated) mode; carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with `"a+"`, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file may cause `fseek` to behave improperly near the end of the file. The `t` option is a Microsoft extension that should not be used where ANSI portability is desired.
@@ -102,7 +102,7 @@ Open in text (translated) mode; carriage return-linefeed (CR-LF) combinations ar
 `b`
 Open in binary (untranslated) mode; the above translations are suppressed.
 
-If `t` or `b` is not given in `mode`, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
+If `t` or `b` is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
 
 For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 

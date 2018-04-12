@@ -54,15 +54,15 @@ size_t _mbstrlen_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated string.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
-Each of these functions returns the number of characters in `str`, excluding the terminal `NULL`. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
+Each of these functions returns the number of characters in *str*, excluding the terminal `NULL`. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
 
 ## Remarks
 

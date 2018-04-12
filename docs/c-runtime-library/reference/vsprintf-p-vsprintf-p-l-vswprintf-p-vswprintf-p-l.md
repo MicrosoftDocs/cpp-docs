@@ -57,22 +57,22 @@ int _vswprintf_p_l(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for output.
 
 `sizeInBytes`
-Size of `buffer` in characters.
+Size of *buffer* in characters.
 
 `count`
 Maximum number of characters to store, in the UNICODE version of this function.
 
-`format`
+*format*
 Format specification.
 
 `argptr`
 Pointer to list of arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -81,13 +81,13 @@ The locale to use.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by `buffer`.
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
 These functions differ from the `vsprintf_s` and `vswprintf_s` only in that they support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If the `buffer` or `format` parameters are NULL pointers, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+If the *buffer* or *format* parameters are NULL pointers, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 

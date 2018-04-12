@@ -34,7 +34,7 @@ int _fclose_nolock(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to the `FILE` structure.
 
 ## Return Value

@@ -49,13 +49,13 @@ int _wprintf_p_l(
 
 ### Parameters
 
-`format`
+*format*
 Format control.
 
-`argument`
+*argument*
 Optional arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -64,7 +64,7 @@ Returns the number of characters printed or a negative value if an error occurs.
 
 ## Remarks
 
-The `_printf_p` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the `format` string, the `format` string must contain specifications that determine the output format for the arguments (see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)).
+The `_printf_p` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments (see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)).
 
 The difference between `_printf_p` and `printf_s` is that `_printf_p` supports positional parameters, which allows specifying the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
@@ -73,9 +73,9 @@ The difference between `_printf_p` and `printf_s` is that `_printf_p` supports p
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string.
+>  Ensure that *format* is not a user-defined string.
 
-If `format` or `argument` are `NULL`, or of the format string contains invalid formatting characters, `_printf_p` and `_wprintf_p` functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
+If *format* or *argument* are `NULL`, or of the format string contains invalid formatting characters, `_printf_p` and `_wprintf_p` functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 

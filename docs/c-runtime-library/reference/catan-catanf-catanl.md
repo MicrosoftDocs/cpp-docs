@@ -39,12 +39,12 @@ _Lcomplex catan( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents an angle, in radians.
 
 ## Return Value
 
-The arctangent of `z`, in radians. The result is unbounded along the imaginary axis, and  in the interval [-π/2; +π/2] along the real axis.
+The arctangent of *z*, in radians. The result is unbounded along the imaginary axis, and  in the interval [-π/2; +π/2] along the real axis.
 
 ## Remarks
 

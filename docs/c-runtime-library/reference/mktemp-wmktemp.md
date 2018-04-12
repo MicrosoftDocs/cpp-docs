@@ -62,9 +62,9 @@ The `_mktemp` function creates a unique file name by modifying the `template` ar
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tmktemp`|`_mktemp`|`_mktemp`|`_wmktemp`|
 
-The `template` argument has the form `base`*XXXXXX*, where `base` is the part of the new file name that you supply and each X is a placeholder for a character supplied by `_mktemp`. Each placeholder character in `template` must be an uppercase X. `_mktemp` preserves `base` and replaces the first trailing X with an alphabetic character. `_mktemp` replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
+The `template` argument has the form *base**XXXXXX*, where *base* is the part of the new file name that you supply and each X is a placeholder for a character supplied by `_mktemp`. Each placeholder character in `template` must be an uppercase X. `_mktemp` preserves *base* and replaces the first trailing X with an alphabetic character. `_mktemp` replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
 
-Each successful call to `_mktemp` modifies `template`. In each subsequent call from the same process or thread with the same `template` argument, `_mktemp` checks for file names that match names returned by `_mktemp` in previous calls. If no file exists for a given name, `_mktemp` returns that name. If files exist for all previously returned names, `_mktemp` creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if `base` is:
+Each successful call to `_mktemp` modifies `template`. In each subsequent call from the same process or thread with the same `template` argument, `_mktemp` checks for file names that match names returned by `_mktemp` in previous calls. If no file exists for a given name, `_mktemp` returns that name. If files exist for all previously returned names, `_mktemp` creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *base* is:
 
 ```
 fn
@@ -76,7 +76,7 @@ and the five-digit value supplied by `_mktemp` is 12345, the first name returned
 fna12345
 ```
 
-If this name is used to create file FNA12345 and this file still exists, the next name returned on a call from the same process or thread with the same `base` for `template` is:
+If this name is used to create file FNA12345 and this file still exists, the next name returned on a call from the same process or thread with the same *base* for `template` is:
 
 ```
 fnb12345
@@ -88,7 +88,7 @@ If FNA12345 does not exist, the next name returned is again:
 fna12345
 ```
 
-`_mktemp` can create a maximum of 26 unique file names for any given combination of base and template values. Therefore, FNZ12345 is the last unique file name `_mktemp` can create for the `base` and `template` values used in this example.
+`_mktemp` can create a maximum of 26 unique file names for any given combination of base and template values. Therefore, FNZ12345 is the last unique file name `_mktemp` can create for the *base* and `template` values used in this example.
 
 On failure, `errno` is set. If `template` has an invalid format (for example, fewer than 6 X's), `errno` is set to `EINVAL`. If `_mktemp` is unable to create a unique name because all 26 possible file names already exist, `_mktemp` sets template to an empty string and returns `EEXIST`.
 

@@ -64,7 +64,7 @@ int _mbsicmp_l(
 `string1, string2`
 Null-terminated strings to compare.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

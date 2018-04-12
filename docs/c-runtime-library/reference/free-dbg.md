@@ -38,7 +38,7 @@ void _free_dbg(
 `userData`
 Pointer to the allocated memory block to be freed.
 
-`blockType`
+*blockType*
 Type of allocated memory block to be freed: `_CLIENT_BLOCK`, `_NORMAL_BLOCK`, or `_IGNORE_BLOCK`.
 
 ## Remarks

@@ -55,7 +55,7 @@ Address of a multibyte-character byte sequence.
 `count`
 Number of bytes to check.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

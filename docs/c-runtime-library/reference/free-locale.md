@@ -34,7 +34,7 @@ void _free_locale(
 
 ### Parameters
 
-`locale`
+*locale*
 Locale object to free.
 
 ## Remarks

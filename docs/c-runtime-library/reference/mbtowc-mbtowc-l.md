@@ -45,7 +45,7 @@ int _mbtowc_l(
 *wchar*
 Address of a wide character (type `wchar_t`).
 
-`mbchar`
+*mbchar*
 Address of a sequence of bytes (a multibyte character).
 
 *count*
@@ -56,11 +56,11 @@ The locale to use.
 
 ## Return Value
 
-If **mbchar** is not **NULL** and if the object that `mbchar` points to forms a valid multibyte character, `mbtowc` returns the length in bytes of the multibyte character. If `mbchar` is **NULL** or the object that it points to is a wide-character null character (L'\0'), the function returns 0. If the object that `mbchar` points to does not form a valid multibyte character within the first *count* characters, it returns -1.
+If **mbchar** is not **NULL** and if the object that *mbchar* points to forms a valid multibyte character, `mbtowc` returns the length in bytes of the multibyte character. If *mbchar* is **NULL** or the object that it points to is a wide-character null character (L'\0'), the function returns 0. If the object that *mbchar* points to does not form a valid multibyte character within the first *count* characters, it returns -1.
 
 ## Remarks
 
-The `mbtowc` function converts *count* or fewer bytes pointed to by `mbchar`, if `mbchar` is not **NULL**, to a corresponding wide character. `mbtowc` stores the resulting wide character at *wchar,* if *wchar* is not **NULL**. `mbtowc` does not examine more than `MB_CUR_MAX` bytes. `mbtowc` uses the current locale for locale-dependent behavior; `_mbtowc_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `mbtowc` function converts *count* or fewer bytes pointed to by *mbchar*, if *mbchar* is not **NULL**, to a corresponding wide character. `mbtowc` stores the resulting wide character at *wchar,* if *wchar* is not **NULL**. `mbtowc` does not examine more than `MB_CUR_MAX` bytes. `mbtowc` uses the current locale for locale-dependent behavior; `_mbtowc_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 

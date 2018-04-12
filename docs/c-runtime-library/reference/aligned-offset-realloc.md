@@ -37,16 +37,16 @@ void * _aligned_offset_realloc(
 
 ### Parameters
 
-`memblock`
+*memblock*
 The current memory block pointer.
 
-`size`
+*size*
 The size of the memory allocation.
 
-`alignment`
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-`offset`
+*offset*
 The offset into the memory allocation to force the alignment.
 
 ## Return Value
@@ -59,9 +59,9 @@ The offset into the memory allocation to force the alignment.
 
 Like [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md), `_aligned_offset_realloc` allows a structure to be aligned at an offset within the structure.
 
-`_aligned_offset_realloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](../../c-runtime-library/reference/malloc.md). If `memblock` is `NULL`, the function calls `_aligned_offset_malloc` internally.
+`_aligned_offset_realloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](../../c-runtime-library/reference/malloc.md). If *memblock* is `NULL`, the function calls `_aligned_offset_malloc` internally.
 
-This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_realloc` validates its parameters. If `alignment` is not a power of 2 or if `offset` is greater than or equal to `size` and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
+This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_realloc` validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to *size* and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
 ## Requirements
 

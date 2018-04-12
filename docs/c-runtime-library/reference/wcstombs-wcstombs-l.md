@@ -64,7 +64,7 @@ The address of a sequence of wide characters.
 `count`
 The maximum number of bytes that can be stored in the multibyte output string.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value

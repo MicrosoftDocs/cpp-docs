@@ -51,7 +51,7 @@ unsigned int _mbctoupper_l(
 `c`
 Multibyte character to convert.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

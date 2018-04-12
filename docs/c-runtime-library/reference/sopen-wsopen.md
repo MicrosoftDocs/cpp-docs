@@ -43,32 +43,32 @@ int _wsopen(
 
 ### Parameters
 
-`filename`
+*filename*
 File name.
 
-`oflag`
+*oflag*
 The kind of operations allowed.
 
-`shflag`
+*shflag*
 The kind of sharing allowed.
 
-`pmode`
+*pmode*
 Permission setting.
 
 ## Return Value
 
 Each of these functions returns a file descriptor for the opened file.
 
-If `filename` or `oflag` is a `NULL` pointer, or if `oflag` or `shflag` is not within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to one of the following values.
+If *filename* or *oflag* is a `NULL` pointer, or if *oflag* or *shflag* is not within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to one of the following values.
 
 `EACCES`
 The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
 
 `EEXIST`
-`_O_CREAT` and `_O_EXCL` flags were specified, but `filename` already exists.
+`_O_CREAT` and `_O_EXCL` flags were specified, but *filename* already exists.
 
 `EINVAL`
-Invalid `oflag` or `shflag` argument.
+Invalid *oflag* or *shflag* argument.
 
 `EMFILE`
 No more file descriptors are available.
@@ -80,7 +80,7 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_sopen` function opens the file specified by `filename` and prepares the file for shared reading or writing, as defined by `oflag` and `shflag`. `_wsopen` is a wide-character version of `_sopen`; the `filename` argument to `_wsopen` is a wide-character string. `_wsopen` and `_sopen` behave identically otherwise.
+The `_sopen` function opens the file specified by *filename* and prepares the file for shared reading or writing, as defined by *oflag* and *shflag*. `_wsopen` is a wide-character version of `_sopen`; the *filename* argument to `_wsopen` is a wide-character string. `_wsopen` and `_sopen` behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -88,7 +88,7 @@ The `_sopen` function opens the file specified by `filename` and prepares the fi
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tsopen`|`_sopen`|`_sopen`|`_wsopen`|
 
-The integer expression `oflag` is formed by combining one or more of the following manifest constants, which are defined in \<fcntl.h>. When two or more constants form the argument `oflag`, they are combined with the bitwise-OR operator ( `|` ).
+The integer expression *oflag* is formed by combining one or more of the following manifest constants, which are defined in \<fcntl.h>. When two or more constants form the argument *oflag*, they are combined with the bitwise-OR operator ( `|` ).
 
 `_O_APPEND`
 Repositions a file pointer to the end of the file before every write operation.
@@ -97,16 +97,16 @@ Repositions a file pointer to the end of the file before every write operation.
 Opens a file in binary (untranslated) mode. (See [fopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)
 
 `_O_CREAT`
-Creates a file and opens it for writing. Has no effect if the file specified by `filename` exists. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT | _O_SHORT_LIVED`
-Creates a file as temporary and if possible does not flush to disk. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT | _O_TEMPORARY`
-Creates a file as temporary; the file is deleted when the last file descriptor is closed. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT | _O_EXCL`
-Returns an error value if a file specified by `filename` exists. Applies only when used with `_O_CREAT`.
+Returns an error value if a file specified by *filename* exists. Applies only when used with `_O_CREAT`.
 
 `_O_NOINHERIT`
 Prevents creation of a shared file descriptor.
@@ -150,7 +150,7 @@ When a file is opened in Unicode mode by using `_O_WTEXT`, `_O_U8TEXT`, or `_O_U
 
 If `_sopen` is called with `_O_WRONLY | _O_APPEND` (append mode) and `_O_WTEXT`, `_O_U16TEXT`, or `_O_U8TEXT`, it first tries to open the file for reading and writing, read the BOM, then reopen it for writing only. If opening the file for reading and writing fails, it opens the file for writing only and uses the default value for the Unicode mode setting.
 
-The argument `shflag` is a constant expression consisting of one of the following manifest constants, which are defined in \<share.h>.
+The argument *shflag* is a constant expression consisting of one of the following manifest constants, which are defined in \<share.h>.
 
 `_SH_DENYRW`
 Denies read and write access to a file.
@@ -164,7 +164,7 @@ Denies read access to a file.
 `_SH_DENYNO`
 Permits read and write access.
 
-The `pmode` argument is required only when `_O_CREAT` is specified. If the file does not exist, `pmode` specifies the file's permission settings, which are set when the new file is closed the first time. Otherwise, `pmode` is ignored. `pmode` is an integer expression that contains one or both of the manifest constants `_S_IWRITE` and `_S_IREAD`, which are defined in \<sys\stat.h>. When both constants are given, they are combined with the bitwise-OR operator. The meaning of `pmode` is as follows.
+The *pmode* argument is required only when `_O_CREAT` is specified. If the file does not exist, *pmode* specifies the file's permission settings, which are set when the new file is closed the first time. Otherwise, *pmode* is ignored. *pmode* is an integer expression that contains one or both of the manifest constants `_S_IWRITE` and `_S_IREAD`, which are defined in \<sys\stat.h>. When both constants are given, they are combined with the bitwise-OR operator. The meaning of *pmode* is as follows.
 
 `_S_IWRITE`
 Writing permitted.
@@ -177,7 +177,7 @@ Reading and writing permitted.
 
 If write permission is not given, the file is read-only. In the Windows operating system, all files are readable; it is not possible to give write-only permission. Therefore, the modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are equivalent.
 
-`_sopen` applies the current file-permission mask to `pmode` before the permissions are set. (See [_umask](../../c-runtime-library/reference/umask.md).)
+`_sopen` applies the current file-permission mask to *pmode* before the permissions are set. (See [_umask](../../c-runtime-library/reference/umask.md).)
 
 ## Requirements
 

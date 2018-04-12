@@ -67,7 +67,7 @@ errno_t _mbscat_s(
 `strDestination`
 Null-terminated destination string buffer.
 
-`numberOfElements`
+*numberOfElements*
 Size of the destination string buffer.
 
 `strSource`
@@ -79,7 +79,7 @@ Zero if successful; an error code on failure.
 
 ### Error Conditions
 
-|`strDestination`|`numberOfElements`|`strSource`|Return value|Contents of `strDestination`|
+|`strDestination`|*numberOfElements*|`strSource`|Return value|Contents of `strDestination`|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |`NULL` or unterminated|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|`strDestination`[0] set to 0|

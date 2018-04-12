@@ -28,22 +28,22 @@ Converts a time value to a structure. These are versions of [_gmtime32, _gmtime6
 
 ```
 errno_t gmtime_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const __time_t* time
 );
 errno_t _gmtime32_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const __time32_t* time
 );
 errno_t _gmtime64_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const __time64_t* time
 );
 ```
 
 ### Parameters
 
-`_tm`
+*tmDest*
 Pointer to a `tm` structure. The fields of the returned structure hold the evaluated value of the `timer` argument in UTC rather than in local time.
 
 `time`
@@ -55,7 +55,7 @@ Zero if successful. The return value is an error code if there is a failure. Err
 
 ### Error Conditions
 
-|`_tm`|`time`|Return|Value in `_tm`|
+|*tmDest*|`time`|Return|Value in *tmDest*|
 |-----------|------------|------------|--------------------|
 |`NULL`|any|`EINVAL`|Not modified.|
 |Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1.|
@@ -65,7 +65,7 @@ In the case of the first two error conditions, the invalid parameter handler is 
 
 ## Remarks
 
-The `_gmtime32_s` function breaks down the `time` value and stores it in a structure of type `tm`, defined in Time.h. The address of the structure is passed in `_tm`. The value of `time` is usually obtained from a call to the `time` function.
+The `_gmtime32_s` function breaks down the `time` value and stores it in a structure of type `tm`, defined in Time.h. The address of the structure is passed in *tmDest*. The value of `time` is usually obtained from a call to the `time` function.
 
 > [!NOTE]
 >  The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .

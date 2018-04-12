@@ -69,30 +69,30 @@ int vswprintf_s(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for output.
 
-`numberOfElements`
-Size of `buffer` in characters.
+*numberOfElements*
+Size of *buffer* in characters.
 
-`format`
+*format*
 Format specification.
 
 `argptr`
 Pointer to list of arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
 
-`vsprintf_s` and `vswprintf_s` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If `buffer` or `format` is a null pointer, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+`vsprintf_s` and `vswprintf_s` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *buffer* or *format* is a null pointer, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by `buffer`.
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
 `vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, `count`, of type `size_t`.
 

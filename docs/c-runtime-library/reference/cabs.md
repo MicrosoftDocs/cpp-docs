@@ -34,7 +34,7 @@ double _cabs(
 
 ### Parameters
 
-`z`
+*z*
 Complex number.
 
 ## Return Value
@@ -43,7 +43,7 @@ Complex number.
 
 ## Remarks
 
-The `_cabs` function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure `z` is composed of a real component `x` and an imaginary component `y`. A call to `_cabs` produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
+The `_cabs` function calculates the absolute value of a complex number, which must be a structure of type [_complex](../../c-runtime-library/standard-types.md). The structure *z* is composed of a real component *x* and an imaginary component *y*. A call to `_cabs` produces a value equivalent to that of the expression `sqrt( z.x * z.x + z.y * z.y )`.
 
 ## Requirements
 

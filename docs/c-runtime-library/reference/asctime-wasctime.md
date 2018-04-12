@@ -37,7 +37,7 @@ wchar_t *_wasctime(
 
 ### Parameters
 
-`timeptr`
+*timeptr*
 Time/date structure.
 
 ## Return Value
@@ -48,7 +48,7 @@ Time/date structure.
 
 More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).
 
-The `asctime` function converts a time stored as a structure to a character string. The `timeptr` value is usually obtained from a call to `gmtime` or `localtime`, which both return a pointer to a `tm` structure, defined in TIME.H.
+The `asctime` function converts a time stored as a structure to a character string. The *timeptr* value is usually obtained from a call to `gmtime` or `localtime`, which both return a pointer to a `tm` structure, defined in TIME.H.
 
 |timeptr member|Value|
 |--------------------|-----------|
@@ -68,7 +68,7 @@ The string result produced by `asctime` contains exactly 26 characters and has t
 
 `_wasctime` is a wide-character version of `asctime`. `_wasctime` and `asctime` behave identically otherwise.
 
-These functions validate their parameters. If `timeptr` is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
+These functions validate their parameters. If *timeptr* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mapping
 

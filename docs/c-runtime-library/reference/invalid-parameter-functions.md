@@ -53,7 +53,7 @@ These functions do not return a value. The `_invalid_parameter_noinfo_noreturn` 
 
 ## Parameters
 
-`expression`
+*expression*
 A string representing the source code parameter expression that is not valid.
 
 `function_name`

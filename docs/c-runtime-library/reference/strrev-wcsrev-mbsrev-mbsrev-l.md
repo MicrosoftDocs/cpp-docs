@@ -47,10 +47,10 @@ unsigned char *_mbsrev_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated string to reverse.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

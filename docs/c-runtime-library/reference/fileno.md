@@ -34,12 +34,12 @@ int _fileno(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to the `FILE` structure.
 
 ## Return Value
 
-`_fileno` returns the file descriptor. There is no error return. The result is undefined if `stream` does not specify an open file. If stream is `NULL`, `_fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.
+`_fileno` returns the file descriptor. There is no error return. The result is undefined if *stream* does not specify an open file. If stream is `NULL`, `_fileno` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets `errno` to `EINVAL`.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -48,7 +48,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 ## Remarks
 
-The `_fileno` routine returns the file descriptor currently associated with `stream`. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
+The `_fileno` routine returns the file descriptor currently associated with *stream*. This routine is implemented both as a function and as a macro. For information about choosing either implementation, see [Choosing Between Functions and Macros](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
 ## Requirements
 

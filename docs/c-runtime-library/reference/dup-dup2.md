@@ -38,7 +38,7 @@ int _dup2(
 
 ### Parameters
 
-`fd`, `fd1`
+*fd*, `fd1`
 File descriptors referring to open file.
 
 `fd2`

@@ -85,26 +85,26 @@ const unsigned char *_mbspbrk_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated, searched string.
 
 `strCharSet`
 Null-terminated character set.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
-Returns a pointer to the first occurrence of any character from `strCharSet` in `str`, or a `NULL` pointer if the two string arguments have no characters in common.
+Returns a pointer to the first occurrence of any character from `strCharSet` in *str*, or a `NULL` pointer if the two string arguments have no characters in common.
 
 ## Remarks
 
-The `strpbrk` function returns a pointer to the first occurrence of a character in `str` that belongs to the set of characters in `strCharSet`. The search does not include the terminating null character.
+The `strpbrk` function returns a pointer to the first occurrence of a character in *str* that belongs to the set of characters in `strCharSet`. The search does not include the terminating null character.
 
 `wcspbrk` and `_mbspbrk` are wide-character and multibyte-character versions of `strpbrk`. The arguments and return value of `wcspbrk` are wide-character strings; those of `_mbspbrk` are multibyte-character strings.
 
-`_mbspbrk` validates its parameters. If `str` or `strCharSet` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbspbrk` returns `NULL` and sets `errno` to `EINVAL`. `strpbrk` and `wcspbrk` do not validate their parameters. These three functions behave identically otherwise.
+`_mbspbrk` validates its parameters. If *str* or `strCharSet` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbspbrk` returns `NULL` and sets `errno` to `EINVAL`. `strpbrk` and `wcspbrk` do not validate their parameters. These three functions behave identically otherwise.
 
 `_mbspbrk` is similar to `_mbscspn` except that `_mbspbrk` returns a pointer rather than a value of type [size_t](../../c-runtime-library/standard-types.md).
 

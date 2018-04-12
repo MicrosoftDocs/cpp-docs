@@ -41,12 +41,12 @@ wchar_t *_wgetdcwd(
 
 ### Parameters
 
-`drive`
+*drive*
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
 If the specified drive is not available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) cannot be determined, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
 
-`buffer`
+*buffer*
 Storage location for the path, or **NULL**.
 
 If **NULL** is specified, this function allocates a buffer of at least `maxlen` size by using **malloc**, and the return value of `_getdcwd` is a pointer to the allocated buffer. The buffer can be freed by calling `free` and passing it the pointer.
@@ -60,13 +60,13 @@ If `maxlen` is not greater than zero, the invalid-parameter handler, which is de
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or `NULL`, which indicates an error.
 
-If `buffer` is specified as `NULL` and there is insufficient memory to allocate `maxlen` characters, an error occurs and `errno` is set to `ENOMEM`. If the length of the path,  which includes the terminating null character, exceeds `maxlen`, an error occurs and `errno` is set to `ERANGE`. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as `NULL` and there is insufficient memory to allocate `maxlen` characters, an error occurs and `errno` is set to `ENOMEM`. If the length of the path,  which includes the terminating null character, exceeds `maxlen`, an error occurs and `errno` is set to `ERANGE`. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_getdcwd` function gets the full path of the current working directory on the specified drive and stores it at `buffer`. If the current working directory is set to the root, the string ends with a backslash (\\). If the current working directory is set to a directory other than the root, the string ends with the name of the directory and not with a backslash.
+The `_getdcwd` function gets the full path of the current working directory on the specified drive and stores it at *buffer*. If the current working directory is set to the root, the string ends with a backslash (\\). If the current working directory is set to a directory other than the root, the string ends with the name of the directory and not with a backslash.
 
-`_wgetdcwd` is a wide-character version of `_getdcwd`, and its `buffer` parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.
+`_wgetdcwd` is a wide-character version of `_getdcwd`, and its *buffer* parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.
 
 This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.
 

@@ -46,12 +46,12 @@ _Lcomplex ccosl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents the angle, in radians.
 
 ## Return Value
 
-The cosine of `z`, in radians.
+The cosine of *z*, in radians.
 
 ## Remarks
 

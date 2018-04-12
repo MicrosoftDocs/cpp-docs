@@ -30,34 +30,34 @@ Convert a `tm` time structure to a character string. These functions are version
 errno_t asctime_s(
    char* buffer,
    size_t numberOfElements,
-   const struct tm *_tm
+   const struct tm *tmSource
 );
 errno_t _wasctime_s(
    wchar_t* buffer,
    size_t numberOfElements
-   const struct tm *_tm
+   const struct tm *tmSource
 );
 template <size_t size>
 errno_t asctime_s(
    char (&buffer)[size],
-   const struct tm *_tm
+   const struct tm *tmSource
 ); // C++ only
 template <size_t size>
 errno_t _wasctime_s(
    wchar_t (&buffer)[size],
-   const struct tm *_tm
+   const struct tm *tmSource
 ); // C++ only
 ```
 
 ### Parameters
 
-`buffer`
-[out] A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by `numberOfElements`.
+*buffer*
+[out] A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by *numberOfElements*.
 
-`numberOfElements`
+*numberOfElements*
 [in] The size of the buffer used to store the result.
 
-`_tm`
+*tmSource*
 [in] Time/date structure. This function assumes a pointer to a valid `struct tm` object.
 
 ## Return Value
@@ -66,7 +66,7 @@ Zero if successful. If there is a failure, the invalid parameter handler is invo
 
 ### Error Conditions
 
-|`buffer`|`numberOfElements`|`tm`|Return|Value in `buffer`|
+|*buffer*|*numberOfElements*|*tmSource*|Return|Value in *buffer*|
 |--------------|------------------------|----------|------------|-----------------------|
 |`NULL`|Any|Any|`EINVAL`|Not modified|
 |Not `NULL` (points to valid memory)|0|Any|`EINVAL`|Not modified|
@@ -79,7 +79,7 @@ Zero if successful. If there is a failure, the invalid parameter handler is invo
 
 ## Remarks
 
-The `asctime` function converts a time stored as a structure to a character string. The `_tm` value is usually obtained from a call to `gmtime` or `localtime`. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.
+The `asctime` function converts a time stored as a structure to a character string. The *tmSource* value is usually obtained from a call to `gmtime` or `localtime`. Both functions can be used to fill in a `tm` structure, as defined in TIME.H.
 
 |timeptr member|Value|
 |--------------------|-----------|

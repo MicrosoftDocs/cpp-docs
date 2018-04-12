@@ -39,10 +39,10 @@ int _waccess(
 
 ### Parameters
 
-`path`
+*path*
 File or directory path.
 
-`mode`
+*mode*
 Read/write attribute.
 
 ## Return Value
@@ -62,9 +62,9 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-When used with files, the `_access` function determines whether the specified file or directory exists and has the attributes specified by the value of `mode`. When used with directories, `_access` determines only whether the specified directory exists; in [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.
+When used with files, the `_access` function determines whether the specified file or directory exists and has the attributes specified by the value of *mode*. When used with directories, `_access` determines only whether the specified directory exists; in [!INCLUDE[Win2kFamily](../../c-runtime-library/includes/win2kfamily_md.md)] and later operating systems, all directories have read and write access.
 
-|`mode` value|Checks file for|
+|*mode* value|Checks file for|
 |------------------|---------------------|
 |00|Existence only|
 |02|Write-only|
@@ -73,9 +73,9 @@ When used with files, the `_access` function determines whether the specified fi
 
 This function only checks whether the file and directory are read-only or not, it does not check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909). An ATL class exists to provide this functionality; see [CAccessToken Class](../../atl/reference/caccesstoken-class.md).
 
-`_waccess` is a wide-character version of `_access`; the `path` argument to `_waccess` is a wide-character string. `_waccess` and `_access` behave identically otherwise.
+`_waccess` is a wide-character version of `_access`; the *path* argument to `_waccess` is a wide-character string. `_waccess` and `_access` behave identically otherwise.
 
-This function validates its parameters. If `path` is `NULL` or `mode` does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
+This function validates its parameters. If *path* is `NULL` or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
 
 ### Generic-Text Routine Mappings
 

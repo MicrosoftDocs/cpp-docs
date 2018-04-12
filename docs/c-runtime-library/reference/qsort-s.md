@@ -38,24 +38,24 @@ void qsort_s(
 
 ### Parameters
 
-`base`
+*base*
 Start of target array.
 
-`num`
+*number*
 Array size in elements.
 
-`width`
+*width*
 Element size in bytes.
 
-`compare`
-Comparison function. The first argument is the `context` pointer. The second argument is a pointer to the `key` for the search. The third argument is a pointer to the array element to be compared with `key`.
+*compare*
+Comparison function. The first argument is the *context* pointer. The second argument is a pointer to the *key* for the search. The third argument is a pointer to the array element to be compared with *key*.
 
-`context`
-A pointer to a context, which can be any object that the `compare` routine needs to access.
+*context*
+A pointer to a context, which can be any object that the *compare* routine needs to access.
 
 ## Remarks
 
-The `qsort_s` function implements a quick-sort algorithm to sort an array of `num` elements, each of `width` bytes. The argument `base` is a pointer to the base of the array to be sorted. `qsort_s` overwrites this array with the sorted elements. The argument `compare` is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `qsort_s` calls the `compare` routine one or more times during the sort, passing pointers to two array elements on each call:
+The `qsort_s` function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. `qsort_s` overwrites this array with the sorted elements. The argument *compare* is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `qsort_s` calls the *compare* routine one or more times during the sort, passing pointers to two array elements on each call:
 
 ```
 compare( context, (void *) & elem1, (void *) & elem2 );
@@ -82,7 +82,7 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 |any|any|any|any|<= 0|`EINVAL`|
 |any|any|`NULL`|any|any|`EINVAL`|
 
-`qsort_s` has the same behavior as `qsort` but has the `context` parameter and sets `errno`. By passing a `context` parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the `context` parameter makes `qsort_s` more secure because `context` can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the `compare` function.
+`qsort_s` has the same behavior as `qsort` but has the *context* parameter and sets `errno`. By passing a *context* parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *context* parameter makes `qsort_s` more secure because *context* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *compare* function.
 
 ## Requirements
 
@@ -96,7 +96,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-The following example demonstrates how to use the `context` parameter in the `qsort_s` function. The `context` parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different `context` parameter in each sort. In this example, a locale object is used as the `context` parameter.
+The following example demonstrates how to use the *context* parameter in the `qsort_s` function. The *context* parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different *context* parameter in each sort. In this example, a locale object is used as the *context* parameter.
 
 ```
 // crt_qsort_s.cpp

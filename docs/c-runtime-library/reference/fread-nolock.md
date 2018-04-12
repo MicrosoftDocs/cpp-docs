@@ -37,16 +37,16 @@ size_t _fread_nolock(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for data.
 
-`size`
+*size*
 Item size in bytes.
 
 `count`
 Maximum number of items to be read.
 
-`stream`
+*stream*
 Pointer to the `FILE` structure.
 
 ## Return Value

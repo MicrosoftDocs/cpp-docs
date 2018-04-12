@@ -46,12 +46,12 @@ _Lcomplex csqrtl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number.
 
 ## Return Value
 
-The square root of `z`. The result is in the right half-plane.
+The square root of *z*. The result is in the right half-plane.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|

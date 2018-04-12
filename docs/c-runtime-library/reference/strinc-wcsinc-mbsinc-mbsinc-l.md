@@ -53,7 +53,7 @@ unsigned char *_mbsinc_l(
 `current`
 Character pointer.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

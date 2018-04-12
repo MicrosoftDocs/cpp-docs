@@ -39,21 +39,21 @@ FILE *_wfopen(
 
 ### Parameters
 
-`filename`
+*filename*
 File name.
 
-`mode`
+*mode*
 Kind of access that's enabled.
 
 ## Return Value
 
-Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If `filename` or `mode` is `NULL` or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
+Each of these functions returns a pointer to the open file. A null pointer value indicates an error. If *filename* or *mode* is `NULL` or an empty string, these functions trigger the invalid parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
 
 For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `fopen` function opens the file that is specified by `filename`. By default, a narrow `filename` string is interpreted using the ANSI codepage (CP_ACP). In Windows Desktop applications this can be changed to the OEM codepage (CP_OEMCP) by using the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) function. You can use the [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) function to determine whether `filename` is interpreted using the ANSI or the system default OEM codepage. `_wfopen` is a wide-character version of `fopen`; the arguments to `_wfopen` are wide-character strings. Otherwise, `_wfopen` and `fopen` behave identically. Just using `_wfopen` does not affect the coded character set that is used in the file stream.
+The `fopen` function opens the file that is specified by *filename*. By default, a narrow *filename* string is interpreted using the ANSI codepage (CP_ACP). In Windows Desktop applications this can be changed to the OEM codepage (CP_OEMCP) by using the [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) function. You can use the [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) function to determine whether *filename* is interpreted using the ANSI or the system default OEM codepage. `_wfopen` is a wide-character version of `fopen`; the arguments to `_wfopen` are wide-character strings. Otherwise, `_wfopen` and `fopen` behave identically. Just using `_wfopen` does not affect the coded character set that is used in the file stream.
 
 `fopen` accepts paths that are valid on the file system at the point of execution; `fopen` accepts UNC paths and paths that involve mapped network drives as long as the system that executes the code has access to the share or mapped drive at the time of execution. When you construct paths for `fopen`, make sure that drives, paths, or network shares will be available in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
@@ -86,7 +86,7 @@ The following table summarizes the modes that are used for various `ccs` flags g
 
 Files opened for writing in Unicode mode have a BOM written to them automatically.
 
-If `mode` is "`a, ccs=<encoding>`", `fopen` first tries to open the file by using both read and write access. If this succeeds, the function reads the BOM to determine the encoding for the file; if this fails, the function uses the default encoding for the file. In either case, `fopen` will then re-open the file by using write-only access. (This applies to `a` mode only, not to `a+` mode.)
+If *mode* is "`a, ccs=<encoding>`", `fopen` first tries to open the file by using both read and write access. If this succeeds, the function reads the BOM to determine the encoding for the file; if this fails, the function uses the default encoding for the file. In either case, `fopen` will then re-open the file by using write-only access. (This applies to `a` mode only, not to `a+` mode.)
 
 ### Generic-Text Routine Mappings
 
@@ -94,7 +94,7 @@ If `mode` is "`a, ccs=<encoding>`", `fopen` first tries to open the file by usin
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tfopen`|`fopen`|`fopen`|`_wfopen`|
 
-The character string `mode` specifies the kind of access that is requested for the file, as follows.
+The character string *mode* specifies the kind of access that is requested for the file, as follows.
 
 `"r"`
 Opens for reading. If the file does not exist or cannot be found, the `fopen` call fails.
@@ -120,7 +120,7 @@ The `"a"` mode does not remove the EOF marker before it appends to the file. Aft
 
 When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file positioning function. The file positioning functions are `fsetpos`, `fseek`, and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file positioning function.
 
-In addition to the earlier values, the following characters can be appended to `mode` to specify the translation mode for newline characters.
+In addition to the earlier values, the following characters can be appended to *mode* to specify the translation mode for newline characters.
 
 `t`
 Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using `"a+"`, `fopen` checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using `fseek` and `ftell` to move within a file that ends with CTRL+Z may cause `fseek` to behave incorrectly near the end of the file.
@@ -130,15 +130,15 @@ In text mode, carriage return-linefeed combinations are translated into single l
 `b`
 Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
 
-If `t` or `b` is not given in `mode`, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
+If `t` or `b` is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
 
 For more information about how to use text and binary modes in Unicode and multibyte stream-I/O, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
 `c`
-Enable the commit flag for the associated `filename` so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
 
 `n`
-Reset the commit flag for the associated `filename` to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
+Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 
 `N`
 Specifies that the file is not inherited by child processes.
@@ -158,9 +158,9 @@ Specifies a file as temporary. It is deleted when the last file pointer is close
 `ccs=ENCODING`
 Specifies the coded character set to use (`UTF-8`, `UTF-16LE`, or `UNICODE`) for this file. Leave unspecified if you want ANSI encoding.
 
-Valid characters for the `mode` string that is used in `fopen` and `_fdopen` correspond to `oflag` arguments that are used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.
+Valid characters for the *mode* string that is used in `fopen` and `_fdopen` correspond to *oflag* arguments that are used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.
 
-|Characters in mode string|Equivalent `oflag` value for `_open`/`_sopen`|
+|Characters in mode string|Equivalent *oflag* value for `_open`/`_sopen`|
 |-------------------------------|----------------------------------------------------|
 |`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|
 |`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|
@@ -191,7 +191,7 @@ If you are using `rb` mode, do not have to port code, and expect to read most of
 
 `_wfopen` is a Microsoft extension. For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-The `c`, `n`, `t`, `S`, `R`, `T`, and `D` `mode` options are Microsoft extensions for `fopen` and `_fdopen` and should not be used where ANSI portability is desired.
+The `c`, `n`, `t`, `S`, `R`, `T`, and `D` *mode* options are Microsoft extensions for `fopen` and `_fdopen` and should not be used where ANSI portability is desired.
 
 ## Example
 

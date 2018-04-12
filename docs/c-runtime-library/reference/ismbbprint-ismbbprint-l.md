@@ -41,7 +41,7 @@ int _ismbbprint_l(
 `c`
 Integer to be tested.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

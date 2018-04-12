@@ -83,20 +83,20 @@ const unsigned char *_mbschr_l(
 ```
 
 ### Parameters
-`str`
+*str*
 Null-terminated source string.
 
 `c`
 Character to be located.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
-Each of these functions returns a pointer to the first occurrence of `c` in `str`, or `NULL` if `c` is not found.
+Each of these functions returns a pointer to the first occurrence of `c` in *str*, or `NULL` if `c` is not found.
 
 ## Remarks
-The `strchr` function finds the first occurrence of `c` in `str`, or it returns `NULL` if `c` is not found. The null terminating character is included in the search.
+The `strchr` function finds the first occurrence of `c` in *str*, or it returns `NULL` if `c` is not found. The null terminating character is included in the search.
 
 `wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings; those of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets `errno` to `EINVAL`. `strchr` and `wcschr` do not validate their parameters. These three functions behave identically otherwise.
 

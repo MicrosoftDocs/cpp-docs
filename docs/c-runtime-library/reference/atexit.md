@@ -34,7 +34,7 @@ int atexit(
 
 ### Parameters
 
-`func`
+*func*
 Function to be called.
 
 ## Return Value
@@ -43,7 +43,7 @@ Function to be called.
 
 ## Remarks
 
-The `atexit` function is passed the address of a function (`func`) to be called when the program terminates normally. Successive calls to `atexit` create a register of functions that are executed in last-in, first-out (LIFO) order. The functions passed to `atexit` cannot take parameters. `atexit` and `_onexit` use the heap to hold the register of functions. Thus, the number of functions that can be registered is limited only by heap memory.
+The `atexit` function is passed the address of a function *func* to be called when the program terminates normally. Successive calls to `atexit` create a register of functions that are executed in last-in, first-out (LIFO) order. The functions passed to `atexit` cannot take parameters. `atexit` and `_onexit` use the heap to hold the register of functions. Thus, the number of functions that can be registered is limited only by heap memory.
 
 The code in the `atexit` function should not contain any dependency on any DLL which could have already been unloaded when the `atexit` function is called.
 

@@ -44,7 +44,7 @@ unsigned int _mbctombb_l(
 `c`
 Multibyte character to convert.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

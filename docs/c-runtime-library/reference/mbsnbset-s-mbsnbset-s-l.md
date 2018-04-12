@@ -60,10 +60,10 @@ errno_t _mbsnbset_s_l(
 
 ### Parameters
 
-`str`
+*str*
 String to be altered.
 
-`size`
+*size*
 The size of the string buffer.
 
 `c`
@@ -72,7 +72,7 @@ Single-byte or multibyte-character setting.
 `count`
 Number of bytes to be set.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
@@ -81,11 +81,11 @@ Zero if successful; otherwise, an error code.
 
 ## Remarks
 
-The `_mbsnbset_s` and `_mbsnbset_s_l` functions set, at most, the first `count` bytes of `str` to `c`. If `count` is greater than the length of `str`, the length of `str` is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte that's specified by `count`, the last byte is padded with a blank character. `_mbsnbset_s` and `_mbsnbset_s_l` do not place a terminating null at the end of `str`.
+The `_mbsnbset_s` and `_mbsnbset_s_l` functions set, at most, the first `count` bytes of *str* to `c`. If `count` is greater than the length of *str*, the length of *str* is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte that's specified by `count`, the last byte is padded with a blank character. `_mbsnbset_s` and `_mbsnbset_s_l` do not place a terminating null at the end of *str*.
 
 `_mbsnbset_s` and `_mbsnbset_s_l` resemble `_mbsnset`, except that they set `count` bytes rather than `count` characters of `c`.
 
-If `str` is `NULL` or `count` is zero, this function generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if `c` is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
+If *str* is `NULL` or `count` is zero, this function generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if `c` is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The `_mbsnbset_s` version of this function uses the current locale for this locale-dependent behavior; the `_mbsnbset_s_l` version is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 

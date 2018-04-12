@@ -41,10 +41,10 @@ int _fseeki64(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
-`offset`
+*offset*
 Number of bytes from `origin`.
 
 `origin`
@@ -52,11 +52,11 @@ Initial position.
 
 ## Return Value
 
-If successful, `fseek` and `_fseeki64` returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If `stream` is a null pointer, or if `origin` is not one of allowed values described below, `fseek` and `_fseeki64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If successful, `fseek` and `_fseeki64` returns 0. Otherwise, it returns a nonzero value. On devices incapable of seeking, the return value is undefined. If *stream* is a null pointer, or if `origin` is not one of allowed values described below, `fseek` and `_fseeki64` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ## Remarks
 
-The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with `stream` to a new location that is `offset` bytes from `origin`. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:
+The `fseek` and `_fseeki64` functions moves the file pointer (if any) associated with *stream* to a new location that is *offset* bytes from `origin`. The next operation on the stream takes place at the new location. On a stream open for update, the next operation can be either a read or a write. The argument origin must be one of the following constants, defined in STDIO.H:
 
 `SEEK_CUR`
 Current position of file pointer.
@@ -67,7 +67,7 @@ End of file.
 `SEEK_SET`
 Beginning of file.
 
-You can use `fseek` and `_fseeki64` to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. `fseek` and `_fseeki64` clears the end-of-file indicator and negates the effect of any prior `ungetc` calls against `stream`.
+You can use `fseek` and `_fseeki64` to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. `fseek` and `_fseeki64` clears the end-of-file indicator and negates the effect of any prior `ungetc` calls against *stream*.
 
 When a file is opened for appending data, the current file position is determined by the last I/O operation, not by where the next write would occur. If no I/O operation has yet occurred on a file opened for appending, the file position is the start of the file.
 

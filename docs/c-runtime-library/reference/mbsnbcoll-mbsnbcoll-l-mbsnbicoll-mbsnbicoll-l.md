@@ -62,7 +62,7 @@ Strings to compare.
 `count`
 Number of bytes to compare.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

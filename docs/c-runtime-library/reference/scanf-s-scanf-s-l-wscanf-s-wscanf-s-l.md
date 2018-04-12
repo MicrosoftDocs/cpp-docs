@@ -49,26 +49,26 @@ int _wscanf_s_l(
 
 ### Parameters
 
-`format`
+*format*
 Format control string.
 
-`argument`
+*argument*
 Optional arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
 
-Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `scanf_s` and `wscanf_s` return `EOF` and set `errno` to `EINVAL`.
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `scanf_s` and `wscanf_s` return `EOF` and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `scanf_s` function reads data from the standard input stream `stdin` and writes the data into the location that's given by `argument`. Each `argument` must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.
+The `scanf_s` function reads data from the standard input stream `stdin` and writes the data into the location that's given by *argument*. Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
 
-`wscanf_s` is a wide-character version of `scanf_s`; the `format` argument to `wscanf_s` is a wide-character string. `wscanf_s` and `scanf_s` behave identically if the stream is opened in ANSI mode. `scanf_s` doesn't currently support input from a UNICODE stream.
+`wscanf_s` is a wide-character version of `scanf_s`; the *format* argument to `wscanf_s` is a wide-character string. `wscanf_s` and `scanf_s` behave identically if the stream is opened in ANSI mode. `scanf_s` doesn't currently support input from a UNICODE stream.
 
 The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
 

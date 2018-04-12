@@ -35,7 +35,7 @@ errno_t _umask_s(
 
 ### Parameters
 
-[in] `mode`
+[in] *mode*
 Default permission setting.
 
 [out] `oldMode`
@@ -47,7 +47,7 @@ Returns an error code if `Mode` does not specify a valid mode or the `pOldMode` 
 
 ### Error Conditions
 
-|`mode`|`pOldMode`|**Return Value**|**Contents of**  `oldMode`|
+|*mode*|`pOldMode`|**Return Value**|**Contents of**  `oldMode`|
 |------------|----------------|----------------------|--------------------------------|
 |any|`NULL`|`EINVAL`|not modified|
 |invalid mode|any|`EINVAL`|not modified|
@@ -56,9 +56,9 @@ If one of the above conditions occurs, the invalid parameter handler is invoked,
 
 ## Remarks
 
-The `_umask_s` function sets the file-permission mask of the current process to the mode specified by `mode`. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.
+The `_umask_s` function sets the file-permission mask of the current process to the mode specified by *mode*. The file-permission mask modifies the permission setting of new files created by `_creat`, `_open`, or `_sopen`. If a bit in the mask is 1, the corresponding bit in the file's requested permission value is set to 0 (disallowed). If a bit in the mask is 0, the corresponding bit is left unchanged. The permission setting for a new file is not set until the file is closed for the first time.
 
-The integer expression `pmode` contains one or both of the following manifest constants, defined in SYS\STAT.H:
+The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\STAT.H:
 
 `_S_IWRITE`
 Writing permitted.
@@ -69,9 +69,9 @@ Reading permitted.
 `_S_IREAD | _S_IWRITE`
 Reading and writing permitted.
 
-When both constants are given, they are joined with the bitwise-OR operator ( `|` ). If the `mode` argument is `_S_IREAD`, reading is not allowed (the file is write-only). If the `mode` argument is `_S_IWRITE`, writing is not allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. Note that with MS-DOS and the Windows operating systems, all files are readable; it is not possible to give write-only permission. Therefore, setting the read bit with `_umask_s` has no effect on the file's modes.
+When both constants are given, they are joined with the bitwise-OR operator ( `|` ). If the *mode* argument is `_S_IREAD`, reading is not allowed (the file is write-only). If the *mode* argument is `_S_IWRITE`, writing is not allowed (the file is read-only). For example, if the write bit is set in the mask, any new files will be read-only. Note that with MS-DOS and the Windows operating systems, all files are readable; it is not possible to give write-only permission. Therefore, setting the read bit with `_umask_s` has no effect on the file's modes.
 
-If `pmode` is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function will simply ignore those.
+If *pmode* is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function will simply ignore those.
 
 ## Requirements
 

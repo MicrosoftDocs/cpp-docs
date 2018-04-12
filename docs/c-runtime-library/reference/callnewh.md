@@ -34,7 +34,7 @@ int _callnewh(
 
 ### Parameters
 
-`size`
+*size*
 The amount of memory that the [new operator](../../cpp/new-operator-cpp.md) tried to allocate.
 
 ## Return Value

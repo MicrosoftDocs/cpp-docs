@@ -25,37 +25,30 @@ Evaluate an expression and generate a debug report when the result is `False` (d
 
 ## Syntax
 
-```
-_ASSERT_EXPR(
-   booleanExpression,
-   message
-);
-_ASSERT(
-   booleanExpression
-);
-_ASSERTE(
-   booleanExpression
-);
-
+```C
+// Typical usage:
+_ASSERT_EXPR( booleanExpression, message );
+_ASSERT( booleanExpression );
+_ASSERTE( booleanExpression );
 ```
 
 ### Parameters
 
-`booleanExpression`
+*booleanExpression*
 A scalar expression (including pointer expressions) that evaluates to nonzero (true) or 0 (false).
 
-`message`
+*message*
 A wide string to display as part of the report.
 
 ## Remarks
 
 The `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` macros provide an application with a clean and simple mechanism for checking assumptions during the debugging process. They are very flexible because they do not need to be enclosed in `#ifdef` statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro. `_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` are only available when `_DEBUG` is defined at compile time. When `_DEBUG` is not defined, calls to these macros are removed during preprocessing.
 
-`_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` evaluate their `booleanExpression` argument and when the result is `false` (0), they print a diagnostic message and call [_CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) to generate a debug report. The `_ASSERT` macro prints a simple diagnostic message,  `_ASSERTE` includes a string representation of the failed expression in the message, and `_ASSERT_EXPR` includes the `message` string in the diagnostic message. These macros do nothing when `booleanExpression` evaluates to nonzero.
+`_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` evaluate their *booleanExpression* argument and when the result is `false` (0), they print a diagnostic message and call [_CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) to generate a debug report. The `_ASSERT` macro prints a simple diagnostic message,  `_ASSERTE` includes a string representation of the failed expression in the message, and `_ASSERT_EXPR` includes the *message* string in the diagnostic message. These macros do nothing when *booleanExpression* evaluates to nonzero.
 
-`_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` invoke `_CrtDbgReportW`, which causes all output to be in wide characters. `_ASSERTE` properly prints Unicode characters in `booleanExpression` and `_ASSERT_EXPR` prints Unicode characters in `message`.
+`_ASSERT_EXPR`, `_ASSERT` and `_ASSERTE` invoke `_CrtDbgReportW`, which causes all output to be in wide characters. `_ASSERTE` properly prints Unicode characters in *booleanExpression* and `_ASSERT_EXPR` prints Unicode characters in *message*.
 
-Because the `_ASSERTE` macro specifies the failed expression, and `_ASSERT_EXPR` lets you specify a message in the generated report, they enable users to identify the problem without referring to the application source code. However, a disadvantage exists in that every `message` printed by `_ASSERT_EXPR` and every expression evaluated by `_ASSERTE` is included in the output (debug version) file of your application as a string constant. Therefore, if a large number of calls are made to `_ASSERT_EXPR` or `_ASSERTE`, these expressions can greatly increase the size of your output file.
+Because the `_ASSERTE` macro specifies the failed expression, and `_ASSERT_EXPR` lets you specify a message in the generated report, they enable users to identify the problem without referring to the application source code. However, a disadvantage exists in that every *message* printed by `_ASSERT_EXPR` and every expression evaluated by `_ASSERTE` is included in the output (debug version) file of your application as a string constant. Therefore, if a large number of calls are made to `_ASSERT_EXPR` or `_ASSERTE`, these expressions can greatly increase the size of your output file.
 
 Unless you specify otherwise with the [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) functions, messages appear in a pop-up dialog box equivalent to setting:
 

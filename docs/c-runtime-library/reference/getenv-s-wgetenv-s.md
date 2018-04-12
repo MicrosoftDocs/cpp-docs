@@ -61,13 +61,13 @@ errno_t _wgetenv_s(
 `pReturnValue`
 The buffer size that's required, or 0 if the variable is not found.
 
-`buffer`
+*buffer*
 Buffer to store the value of the environment variable.
 
-`numberOfElements`
-Size of `buffer`.
+*numberOfElements*
+Size of *buffer*.
 
-`varname`
+*varname*
 Environment variable name.
 
 ## Return Value
@@ -76,7 +76,7 @@ Zero if successful; otherwise, an error code on failure.
 
 ### Error Conditions
 
-|`pReturnValue`|`buffer`|`numberOfElements`|`varname`|Return Value|
+|`pReturnValue`|*buffer*|*numberOfElements*|*varname*|Return Value|
 |--------------------|--------------|------------------------|---------------|------------------|
 |`NULL`|any|any|any|`EINVAL`|
 |any|`NULL`|>0|any|`EINVAL`|
@@ -88,7 +88,7 @@ Also, if the buffer is too small, these functions return `ERANGE`. They do not i
 
 ## Remarks
 
-The `getenv_s` function searches the list of environment variables for `varname`. `getenv_s` is not case sensitive in the Windows operating system. `getenv_s` and `_putenv_s` use the copy of the environment that's pointed to by the global variable `_environ` to access the environment. `getenv_s` operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.
+The `getenv_s` function searches the list of environment variables for *varname*. `getenv_s` is not case sensitive in the Windows operating system. `getenv_s` and `_putenv_s` use the copy of the environment that's pointed to by the global variable `_environ` to access the environment. `getenv_s` operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.
 
 `_wgetenv_s` is a wide-character version of `getenv_s`; the argument and return value of `_wgetenv_s` are wide-character strings. The `_wenviron` global variable is a wide-character version of `_environ`.
 

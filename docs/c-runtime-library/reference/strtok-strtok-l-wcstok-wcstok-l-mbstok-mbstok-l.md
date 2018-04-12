@@ -57,7 +57,7 @@ String containing token or tokens.
 `strDelimit`
 Set of delimiter characters.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

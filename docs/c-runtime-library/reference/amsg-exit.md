@@ -27,14 +27,12 @@ Emits a specified runtime error message and then exits your application with err
 ## Syntax
 
 ```cpp
-void _amsg_exit (
-   int rterrnum
-   )
+void _amsg_exit ( int rterrnum );
 ```
 
 ### Parameters
 
-`rterrnum`
+*rterrnum*<br/>
 The identification number of a system-defined runtime error message.
 
 ## Remarks

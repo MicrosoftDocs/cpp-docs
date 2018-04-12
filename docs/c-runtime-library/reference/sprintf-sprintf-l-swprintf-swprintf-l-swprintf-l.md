@@ -75,35 +75,35 @@ int _sprintf_l(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for output
 
 `count`
 Maximum number of characters to store in the Unicode version of this function.
 
-`format`
+*format*
 Format-control string
 
-`argument`
+*argument*
 Optional arguments
 
-`locale`
+*locale*
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
 
-The number of characters written, or -1 if an error occurred. If `buffer` or `format` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+The number of characters written, or -1 if an error occurred. If *buffer* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
-`sprintf` returns the number of bytes stored in `buffer`, not counting the terminating null character. `swprintf` returns the number of wide characters stored in `buffer`, not counting the terminating null wide character.
+`sprintf` returns the number of bytes stored in *buffer*, not counting the terminating null character. `swprintf` returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
 
 ## Remarks
 
-The `sprintf` function formats and stores a series of characters and values in `buffer`. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format consists of ordinary characters and has the same form and function as the `format` argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
+The `sprintf` function formats and stores a series of characters and values in *buffer*. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  Using `sprintf`, there is no way to limit the number of characters written, which means that code using `sprintf` is susceptible to buffer overruns. Consider using the related function [_snprintf](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to be written to `buffer`, or use [_scprintf](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that `format` is not a user-defined string.
+>  Using `sprintf`, there is no way to limit the number of characters written, which means that code using `sprintf` is susceptible to buffer overruns. Consider using the related function [_snprintf](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to be written to *buffer*, or use [_scprintf](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
 
 `swprintf` is a wide-character version of `sprintf`; the pointer arguments to `swprintf` are wide-character strings. Detection of encoding errors in `swprintf` may differ from that in `sprintf`. `swprintf` and `fwprintf` behave identically except that `swprintf` writes output to a string rather than to a destination of type `FILE`, and `swprintf` requires the `count` parameter to specify the maximum number of characters to be written. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

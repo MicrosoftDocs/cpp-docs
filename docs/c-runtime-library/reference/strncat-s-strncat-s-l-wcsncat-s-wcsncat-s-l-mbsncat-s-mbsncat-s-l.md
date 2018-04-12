@@ -115,7 +115,7 @@ errno_t _mbsncat_s_l(
 [out] `strDest`
 Null-terminated destination string.
 
-[in]`numberOfElements`
+[in]*numberOfElements*
 Size of the destination buffer.
 
 [in]`strSource`
@@ -124,7 +124,7 @@ Null-terminated source string.
 [in]`count`
 Number of characters to append, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-[in] `locale`
+[in] *locale*
 Locale to use.
 
 ## Return Value
@@ -133,7 +133,7 @@ Returns 0 if successful, an error code on failure.
 
 ### Error Conditions
 
-|`strDestination`|`numberOfElements`|`strSource`|Return value|Contents of `strDestination`|
+|`strDestination`|*numberOfElements*|`strSource`|Return value|Contents of `strDestination`|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |`NULL` or unterminated|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|not modified|
@@ -141,7 +141,7 @@ Returns 0 if successful, an error code on failure.
 
 ## Remarks
 
-These functions try to append the first `D` characters of `strSource` to the end of `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If appending those `D` characters will fit within `strDest` (whose size is given as `numberOfElements`) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of `strDest`, and a new terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to append the first `D` characters of `strSource` to the end of `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If appending those `D` characters will fit within `strDest` (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of `strDest`, and a new terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 There is an exception to the above paragraph. If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md) then as much of `strSource` as will fit is appended to `strDest` while still leaving room to append a terminating null.
 
@@ -155,7 +155,7 @@ For example,
 
 means that we are asking `strncat_s` to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence `strncat_s` zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use `_TRUNCATE` or adjust the `size` parameter accordingly:
+If truncation behavior is needed, use `_TRUNCATE` or adjust the *size* parameter accordingly:
 
 `strncat_s(dst, _countof(dst), "34567", _TRUNCATE);`
 
@@ -165,7 +165,7 @@ or
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If `strSource` or `strDest` is `NULL`, or is `numberOfElements` is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
+If `strSource` or `strDest` is `NULL`, or is *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
 
 `wcsncat_s` and `_mbsncat_s` are wide-character and multibyte-character versions of `strncat_s`. The string arguments and return value of `wcsncat_s` are wide-character strings; those of `_mbsncat_s` are multibyte-character strings. These three functions behave identically otherwise.
 

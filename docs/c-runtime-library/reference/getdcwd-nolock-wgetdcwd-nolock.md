@@ -44,10 +44,10 @@ wchar_t *_wgetdcwd_nolock(
 
 ### Parameters
 
-`drive`
+*drive*
 Disk drive.
 
-`buffer`
+*buffer*
 Storage location for the path.
 
 `maxlen`

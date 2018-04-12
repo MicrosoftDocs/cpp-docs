@@ -88,24 +88,24 @@ errno_t _wcslwr_s_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated string to convert to lowercase.
 
-`numberOfElements`
+*numberOfElements*
 Size of the buffer.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
 
 Zero if successful; a non-zero error code on failure.
 
-These functions validate their parameters. If `str` is not a valid null-terminated string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return `EINVAL` and set `errno` to `EINVAL`. If `numberOfElements` is less than the length of the string, the functions also return `EINVAL` and set `errno` to `EINVAL`.
+These functions validate their parameters. If *str* is not a valid null-terminated string, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return `EINVAL` and set `errno` to `EINVAL`. If *numberOfElements* is less than the length of the string, the functions also return `EINVAL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
-The `_strlwr_s` function converts, in place, any uppercase letters in `str` to lowercase. `_mbslwr_s` is a multi-byte character version of `_strlwr_s`.`_wcslwr_s` is a wide-character version of `_strlwr_s`.
+The `_strlwr_s` function converts, in place, any uppercase letters in *str* to lowercase. `_mbslwr_s` is a multi-byte character version of `_strlwr_s`.`_wcslwr_s` is a wide-character version of `_strlwr_s`.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

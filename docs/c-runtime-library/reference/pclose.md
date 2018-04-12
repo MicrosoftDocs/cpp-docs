@@ -38,7 +38,7 @@ FILE *stream
 
 ### Parameters
 
-`stream`
+*stream*
 Return value from the previous call to `_popen`.
 
 ## Return Value

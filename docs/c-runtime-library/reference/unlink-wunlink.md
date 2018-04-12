@@ -37,7 +37,7 @@ int _wunlink(
 
 ### Parameters
 
-`filename`
+*filename*
 Name of file to remove.
 
 ## Return Value
@@ -48,7 +48,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `_unlink` function deletes the file specified by `filename`. `_wunlink` is a wide-character version of `_unlink`; the `filename` argument to `_wunlink` is a wide-character string. These functions behave identically otherwise.
+The `_unlink` function deletes the file specified by *filename*. `_wunlink` is a wide-character version of `_unlink`; the *filename* argument to `_wunlink` is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 

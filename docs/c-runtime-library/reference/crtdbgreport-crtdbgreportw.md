@@ -47,23 +47,23 @@ int _CrtDbgReportW(
 
 ### Parameters
 
-`reportType`
+*reportType*
 Report type: `_CRT_WARN`, `_CRT_ERROR`, and `_CRT_ASSERT`.
 
-`filename`
+*filename*
 Pointer to name of source file where assert/report occurred or `NULL`.
 
-`linenumber`
+*linenumber*
 Line number in source file where assert/report occurred or `NULL`.
 
-`moduleName`
+*moduleName*
 Pointer to name of module (.exe or .dll) where assert or report occurred.
 
-`format`
+*format*
 Pointer to format-control string used to create the user message.
 
-`argument`
-Optional substitution arguments used by `format`.
+*argument*
+Optional substitution arguments used by *format*.
 
 ## Return Value
 
@@ -73,11 +73,11 @@ The [_RPT, _RPTF](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.m
 
 ## Remarks
 
-`_CrtDbgReport` and `_CrtDbgReportW` can send the debug report to three different destinations: a debug report file, a debug monitor (the [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] debugger), or a debug message window. Two configuration functions, [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it is possible to specify that a `reportType` of `_CRT_WARN` only be sent to the debug monitor, while a `reportType` of `_CRT_ASSERT` be sent to a debug message window and a user-defined report file.
+`_CrtDbgReport` and `_CrtDbgReportW` can send the debug report to three different destinations: a debug report file, a debug monitor (the [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] debugger), or a debug message window. Two configuration functions, [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) and [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md), are used to specify the destination or destinations for each report type. These functions allow the reporting destination or destinations for each report type to be separately controlled. For example, it is possible to specify that a *reportType* of `_CRT_WARN` only be sent to the debug monitor, while a *reportType* of `_CRT_ASSERT` be sent to a debug message window and a user-defined report file.
 
 `_CrtDbgReportW` is the wide-character version of `_CrtDbgReport`. All its output and string parameters are in wide-character strings; otherwise it is identical to the single-byte character version.
 
-`_CrtDbgReport` and `_CrtDbgReportW` create the user message for the debug report by substituting the `argument`[`n`] arguments into the `format` string, using the same rules defined by the `printf` or `wprintf` functions. These functions then generate the debug report and determine the destination or destinations, based on the current report modes and file defined for `reportType`. When the report is sent to a debug message window, the `filename`, `lineNumber`, and `moduleName` are included in the information displayed in the window.
+`_CrtDbgReport` and `_CrtDbgReportW` create the user message for the debug report by substituting the *argument*[`n`] arguments into the *format* string, using the same rules defined by the `printf` or `wprintf` functions. These functions then generate the debug report and determine the destination or destinations, based on the current report modes and file defined for *reportType*. When the report is sent to a debug message window, the *filename*, `lineNumber`, and *moduleName* are included in the information displayed in the window.
 
 The following table lists the available choices for the report mode or modes and file and the resulting behavior of `_CrtDbgReport` and `_CrtDbgReportW`. These options are defined as bit flags in \<crtdbg.h>.
 

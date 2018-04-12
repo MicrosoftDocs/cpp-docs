@@ -46,12 +46,12 @@ _Lcomplex csinhl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents an angle, in radians.
 
 ## Return Value
 
-The hyperbolic sine of `z`, in radians.
+The hyperbolic sine of *z*, in radians.
 
 ## Remarks
 

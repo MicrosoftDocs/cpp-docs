@@ -28,13 +28,13 @@ Determine whether an integer represents a valid single-byte character in the ini
 
 ```
 wint_t btowc(
-   int c
+   int character
 );
 ```
 
 ### Parameters
 
-`c`
+*character*
 Integer to test.
 
 ## Return Value

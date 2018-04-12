@@ -49,7 +49,7 @@ void va_start(
 
 ### Parameters
 
-`type`
+*type*
 Type of argument to be retrieved.
 
 `arg_ptr`
@@ -78,7 +78,7 @@ The C standard macros, defined in STDARG.H, are used as follows:
 
 -   `va_start` sets `arg_ptr` to the first optional argument in the list of arguments that's passed to the function. The argument `arg_ptr` must have the `va_list` type. The argument `prev_param` is the name of the required parameter that immediately precedes the first optional argument in the argument list. If `prev_param` is declared with the register storage class, the macro's behavior is undefined. `va_start` must be used before `va_arg` is used for the first time.
 
--   `va_arg` retrieves a value of `type` from the location that's given by `arg_ptr`, and increments `arg_ptr` to point to the next argument in the list by using the size of `type` to determine where the next argument starts. `va_arg` can be used any number of times in the function to retrieve arguments from the list.
+-   `va_arg` retrieves a value of *type* from the location that's given by `arg_ptr`, and increments `arg_ptr` to point to the next argument in the list by using the size of *type* to determine where the next argument starts. `va_arg` can be used any number of times in the function to retrieve arguments from the list.
 
 -   `va_copy` makes a copy of a list of arguments in its current state. The `src` parameter must already be initialized with `va_start`; it may have been updated with `va_arg` calls, but must not have been reset with `va_end`. The next argument that's retrieved by `va_arg` from `dest` is the same as the next argument that's retrieved from `src`.
 

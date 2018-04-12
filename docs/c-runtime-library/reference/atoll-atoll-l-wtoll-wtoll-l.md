@@ -45,10 +45,10 @@ long long _wtoll_l(
 
 ### Parameters
 
-`str`
+*str*
 String to be converted.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
@@ -65,7 +65,7 @@ These functions convert a character string to a `long long` integer value.
 
 The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') that terminates the string.
 
-The `str` argument to `atoll` has the following form:
+The *str* argument to `atoll` has the following form:
 
 ```
 [whitespace] [sign] [digits]

@@ -41,7 +41,7 @@ int _ismbbtrail_l(
 `c`
 The integer to be tested.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value

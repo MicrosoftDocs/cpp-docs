@@ -73,7 +73,7 @@ Null-terminated strings to compare
 `count`
 Number of characters to compare
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value

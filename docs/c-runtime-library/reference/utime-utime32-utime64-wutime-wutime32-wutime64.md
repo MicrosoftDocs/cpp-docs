@@ -55,7 +55,7 @@ int _wutime64(
 
 ### Parameters
 
-`filename`
+*filename*
 Pointer to a string that contains the path or filename.
 
 `times`
@@ -83,7 +83,7 @@ The date can be changed for a file if the change date is after midnight, January
 
 ## Remarks
 
-The `_utime` function sets the modification time for the file specified by `filename`*.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If `times` is a `NULL` pointer, the modification time is set to the current local time. Otherwise, `times` must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
+The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If `times` is a `NULL` pointer, the modification time is set to the current local time. Otherwise, `times` must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
 
 The `_utimbuf` structure stores file access and modification times used by `_utime` to change file-modification dates. The structure has the following fields, which are both of type `time_t`:
 
@@ -95,9 +95,9 @@ Time of file modification
 
 Specific versions of the `_utimbuf` structure (`_utimebuf32` and `__utimbuf64`) are defined using the 32-bit and 64-bit versions of the time type. These are used in the 32-bit and 64-bit specific versions of this function. `_utimbuf` itself by default uses a 64-bit time type unless `_USE_32BIT_TIME_T` is defined.
 
-`_utime` is identical to `_futime` except that the `filename` argument of `_utime` is a filename or a path to a file, rather than a file descriptor of an open file.
+`_utime` is identical to `_futime` except that the *filename* argument of `_utime` is a filename or a path to a file, rather than a file descriptor of an open file.
 
-`_wutime` is a wide-character version of `_utime`; the `filename` argument to `_wutime` is a wide-character string. These functions behave identically otherwise.
+`_wutime` is a wide-character version of `_utime`; the *filename* argument to `_wutime` is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 

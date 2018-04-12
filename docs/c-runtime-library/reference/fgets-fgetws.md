@@ -41,28 +41,28 @@ wchar_t *fgetws(
 
 ### Parameters
 
-`str`
+*str*
 Storage location for data.
 
 `n`
 Maximum number of characters to read.
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns `str`. `NULL` is returned to indicate an error or an end-of-file condition. Use `feof` or `ferror` to determine whether an error occurred. If `str` or `stream` is a null pointer, or `n` is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
+Each of these functions returns *str*. `NULL` is returned to indicate an error or an end-of-file condition. Use `feof` or `ferror` to determine whether an error occurred. If *str* or *stream* is a null pointer, or `n` is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
 ## Remarks
 
-The `fgets` function reads a string from the input `stream` argument and stores it in `str`. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` - 1, whichever comes first. The result stored in `str` is appended with a null character. The newline character, if read, is included in the string.
+The `fgets` function reads a string from the input *stream* argument and stores it in *str*. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` - 1, whichever comes first. The result stored in *str* is appended with a null character. The newline character, if read, is included in the string.
 
 `fgetws` is a wide-character version of `fgets`.
 
-`fgetws` reads the wide-character argument `str` as a multibyte-character string or a wide-character string according to whether `stream` is opened in text mode or binary mode, respectively. For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
+`fgetws` reads the wide-character argument *str* as a multibyte-character string or a wide-character string according to whether *stream* is opened in text mode or binary mode, respectively. For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
 ### Generic-Text Routine Mappings
 

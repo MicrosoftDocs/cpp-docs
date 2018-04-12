@@ -35,10 +35,10 @@ errno_t _chsize_s(
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor referring to an open file.
 
-`size`
+*size*
 New length of the file in bytes.
 
 ## Return Value
@@ -49,11 +49,11 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_chsize_s` function extends or truncates the file associated with `fd` to the length specified by `size`. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
+The `_chsize_s` function extends or truncates the file associated with *fd* to the length specified by *size*. The file must be open in a mode that permits writing. Null characters ('\0') are appended if the file is extended. If the file is truncated, all data from the end of the shortened file to the original length of the file is lost.
 
 `_chsize_s` takes a 64-bit integer as the file size, and therefore can handle file sizes greater than 4 GB. `_chsize` is limited to 32-bit file sizes.
 
-This function validates its parameters. If `fd` is not a valid file descriptor or size is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If *fd* is not a valid file descriptor or size is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## Requirements
 

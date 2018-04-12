@@ -79,10 +79,10 @@ int _wstat64i32(
 
 ### Parameters
 
-`path`
+*path*
 Pointer to a string containing the path of existing file or directory.
 
-`buffer`
+*buffer*
 Pointer to structure that stores results.
 
 ## Return Value
@@ -95,9 +95,9 @@ The date stamp on a file can be represented if it is later than midnight, Januar
 
 ## Remarks
 
-The `_stat` function obtains information about the file or directory specified by `path` and stores it in the structure pointed to by `buffer`. `_stat` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.
+The `_stat` function obtains information about the file or directory specified by *path* and stores it in the structure pointed to by *buffer*. `_stat` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use.
 
-`_wstat` is a wide-character version of `_stat`; the `path` argument to `_wstat` is a wide-character string. `_wstat` and `_stat` behave identically except that `_wstat` does not handle multibyte-character strings.
+`_wstat` is a wide-character version of `_stat`; the *path* argument to `_wstat` is a wide-character string. `_wstat` and `_stat` behave identically except that `_wstat` does not handle multibyte-character strings.
 
 Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (`32` or `64`) indicates the size of the time type used; the second suffix is either `i32` or `i64`, indicating whether the file size is represented as a 32-bit or 64-bit integer.
 
@@ -106,7 +106,7 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 > [!NOTE]
 >  `_wstat` does not work with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.
 
-This function validates its parameters. If either `path` or `buffer` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If either *path* or *buffer* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ### Time Type and File Length Type Variations of _stat
 
@@ -149,7 +149,7 @@ Drive number of the disk containing the file (same as `st_rdev`).
 Number of the information node (the `inode`) for the file (UNIX-specific). On UNIX file systems, the `inode` describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same `inode`. The `inode`, and therefore `st_ino`, has no meaning in the FAT, HPFS, or NTFS file systems.
 
 `st_mode`
-Bit mask for file-mode information. The `_S_IFDIR` bit is set if `path` specifies a directory; the `_S_IFREG` bit is set if `path` specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
+Bit mask for file-mode information. The `_S_IFDIR` bit is set if *path* specifies a directory; the `_S_IFREG` bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
 
 `st_mtime`
 Time of last modification of file.
@@ -166,7 +166,7 @@ Size of the file in bytes; a 64-bit integer for variations with the `i64` suffix
 `st_uid`
 Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
 
-If `path` refers to a device, the `st_size`, various time fields, `st_dev`, and `st_rdev` fields in the `_stat` structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
+If *path* refers to a device, the `st_size`, various time fields, `st_dev`, and `st_rdev` fields in the `_stat` structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
 
 ## Requirements
 

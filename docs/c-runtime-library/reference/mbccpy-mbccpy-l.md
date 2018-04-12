@@ -49,7 +49,7 @@ Copy destination.
 `src`
 Multibyte character to copy.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Remarks

@@ -35,15 +35,15 @@ _HFILE _CrtSetReportFile(
 
 ### Parameters
 
-`reportType`
+*reportType*
 Report type: `_CRT_WARN`, `_CRT_ERROR`, and `_CRT_ASSERT`.
 
 `reportFile`
-New report file for `reportType`.
+New report file for *reportType*.
 
 ## Return Value
 
-On successful completion, `_CrtSetReportFile` returns the previous report file defined for the report type specified in `reportType`. If an invalid value is passed in for `reportType`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `_CRTDBG_HFILE_ERROR`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, `_CrtSetReportFile` returns the previous report file defined for the report type specified in *reportType*. If an invalid value is passed in for *reportType*, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `_CRTDBG_HFILE_ERROR`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -83,7 +83,7 @@ Writes message to `stdout`, which you can redirect.
 `_CRTDBG_REPORT_FILE`
 Returns the current report mode.
 
-The report file used by each report type can be separately controlled. For example, it is possible to specify that a `reportType` of `_CRT_ERROR` be reported to `stderr`, while a `reportType` of `_CRT_ASSERT` be reported to a user-defined file handle or stream.
+The report file used by each report type can be separately controlled. For example, it is possible to specify that a *reportType* of `_CRT_ERROR` be reported to `stderr`, while a *reportType* of `_CRT_ASSERT` be reported to a user-defined file handle or stream.
 
 ## Requirements
 

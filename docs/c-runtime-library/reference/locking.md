@@ -37,7 +37,7 @@ Locks or unlocks bytes of a file.
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor.
 
 *mode*
@@ -66,7 +66,7 @@ If the failure is due to a bad parameter, such as an invalid file descriptor, th
 
 ## Remarks
 
-The `_locking` function locks or unlocks *nbytes* bytes of the file specified by `fd`. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *nbytes* bytes. It is possible to lock bytes past end of file.
+The `_locking` function locks or unlocks *nbytes* bytes of the file specified by *fd*. Locking bytes in a file prevents access to those bytes by other processes. All locking or unlocking begins at the current position of the file pointer and proceeds for the next *nbytes* bytes. It is possible to lock bytes past end of file.
 
 *mode* must be one of the following manifest constants, which are defined in Locking.h.
 

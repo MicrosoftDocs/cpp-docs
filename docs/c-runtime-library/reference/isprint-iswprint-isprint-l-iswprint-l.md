@@ -48,7 +48,7 @@ int _iswprint_l(
 `c`
 Integer to test.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value

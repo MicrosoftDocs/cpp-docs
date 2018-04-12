@@ -72,7 +72,7 @@ int _ismbcspace_l(
 `c`
 Character to be determined.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

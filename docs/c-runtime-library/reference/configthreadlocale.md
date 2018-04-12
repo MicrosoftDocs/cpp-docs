@@ -34,7 +34,7 @@ int _configthreadlocale(
 
 ### Parameters
 
-`type`
+*type*
 The option to set. One of the options listed in the following table.
 
 ## Return Value
@@ -58,7 +58,7 @@ These functions affect the behavior of `setlocale`, `_tsetlocale`, `_wsetlocale`
 
 If you use `_configurethreadlocale` to enable a per-thread locale, we recommend that you call `setlocale` or `_wsetlocale` to set the preferred locale in that thread immediately afterward.
 
-If `type` is not one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1.
+If *type* is not one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1.
 
 ## Requirements
 

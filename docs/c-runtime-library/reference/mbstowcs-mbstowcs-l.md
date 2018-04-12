@@ -64,7 +64,7 @@ The address of a sequence of null terminated multibyte characters.
 [in] `count`
 The maximum number of multibyte characters to convert.
 
-[in] `locale`
+[in] *locale*
 The locale to use.
 
 ## Return Value

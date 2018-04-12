@@ -85,33 +85,33 @@ int _vswprintf_l(
 ```
 
 ### Parameters
-`buffer`
+*buffer*
 Storage location for output.
 
 `count`
 Maximum number of characters to store, in the `UNICODE` version of this function.
 
-`format`
+*format*
 Format specification.
 
 `argptr`
 Pointer to list of arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
-`vsprintf` and `vswprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If `buffer` or `format` is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+`vsprintf` and `vswprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *buffer* or *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
-Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by `buffer`.
+Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Using `vsprintf`, there is no way to limit the number of characters written, which means that code using this function is susceptible to buffer overruns. Use [_vsnprintf](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) instead, or call [_vscprintf](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) to determine how large a buffer is needed. Also, ensure that `format` is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  Using `vsprintf`, there is no way to limit the number of characters written, which means that code using this function is susceptible to buffer overruns. Use [_vsnprintf](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) instead, or call [_vscprintf](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) to determine how large a buffer is needed. Also, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 `vswprintf` conforms to the ISO C Standard, which requires the second parameter, `count`, of type `size_t`. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS.` The old behavior may not be in a future version, so code should be changed to use the new conformant behavior.
 

@@ -49,13 +49,13 @@ int _wprintf_s_l(
 
 ### Parameters
 
-`format`
+*format*
 Format control.
 
-`argument`
+*argument*
 Optional arguments.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -64,7 +64,7 @@ Returns the number of characters printed, or a negative value if an error occurs
 
 ## Remarks
 
-The `printf_s` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the `format` string must contain specifications that determine the output format for the arguments.
+The `printf_s` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments.
 
 The main difference between `printf_s` and `printf` is that `printf_s` checks the format string for valid formatting characters, whereas `printf` only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
@@ -72,7 +72,7 @@ For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist,
 
 `printf_s` and `fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
-`wprintf_s` is a wide-character version of `printf_s`; `format` is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.
+`wprintf_s` is a wide-character version of `printf_s`; *format* is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -83,7 +83,7 @@ The versions of these functions with the `_l` suffix are identical except that t
 |`_tprintf_s`|`printf_s`|`printf_s`|`wprintf_s`|
 |`_tprintf_s_l`|`_printf_s_l`|`_printf_s_l`|`_wprintf_s_l`|
 
-The `format` argument consists of ordinary characters, escape sequences, and (if arguments follow `format`) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line
+The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line
 
 ```
 printf_s("Line one\n\t\tLine two\n");
@@ -96,10 +96,10 @@ Line one
         Line two
 ```
 
-[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf_s` encounters the first format specification (if any), it converts the value of the first argument after `format` and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
+[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf_s` encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string.
+>  Ensure that *format* is not a user-defined string.
 
 ## Requirements
 

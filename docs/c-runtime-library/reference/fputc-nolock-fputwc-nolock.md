@@ -42,7 +42,7 @@ wint_t _fputwc_nolock(
 `c`
 Character to be written.
 
-`stream`
+*stream*
 Pointer to the `FILE` structure.
 
 ## Return Value

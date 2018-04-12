@@ -62,7 +62,7 @@ Source string.
 `count`
 Maximum number of characters to place in `strDest`.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value

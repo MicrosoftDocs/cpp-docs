@@ -89,7 +89,7 @@ Null-terminated source string.
 `count`
 Number of characters to append.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

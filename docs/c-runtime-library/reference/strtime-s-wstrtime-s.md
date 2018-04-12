@@ -47,10 +47,10 @@ errno_t _wstrtime_s(
 
 ### Parameters
 
-[out] `buffer`
+[out] *buffer*
 A buffer, at least 10 bytes long, where the time will be written.
 
-[in] `numberOfElements`
+[in] *numberOfElements*
 The size of the buffer.
 
 ## Return Value
@@ -61,7 +61,7 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ### Error Conditions
 
-|`buffer`|`numberOfElements`|Return|Contents of `buffer`|
+|*buffer*|*numberOfElements*|Return|Contents of *buffer*|
 |--------------|------------------------|------------|--------------------------|
 |`NULL`|(any)|`EINVAL`|Not modified|
 |Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
@@ -70,9 +70,9 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 ## Security Issues
 
-Passing in an invalid non-NULL value for the buffer will result in an access violation if the `numberOfElements` parameter is greater than 9.
+Passing in an invalid non-NULL value for the buffer will result in an access violation if the *numberOfElements* parameter is greater than 9.
 
-Passing a value for `numberOfElements` that is greater than the actual size of the buffer will result in buffer overrun.
+Passing a value for *numberOfElements* that is greater than the actual size of the buffer will result in buffer overrun.
 
 ## Remarks
 

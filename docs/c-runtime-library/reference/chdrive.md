@@ -29,7 +29,7 @@ Changes the current working drive.
 
 ## Syntax
 
-```
+```C
 int _chdrive(
    int drive
 );
@@ -37,7 +37,7 @@ int _chdrive(
 
 ### Parameters
 
-`drive`
+*drive*
 An integer from 1 through 26 that specifies the current working drive (1=A, 2=B, and so forth).
 
 ## Return Value
@@ -46,7 +46,7 @@ Zero (0) if the current working drive was changed successfully; otherwise, -1.
 
 ## Remarks
 
-If `drive` is not in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, `errno` is set to `EACCES`, and `_doserrno` is set to `ERROR_INVALID_DRIVE`.
+If *drive* is not in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, `errno` is set to `EACCES`, and `_doserrno` is set to `ERROR_INVALID_DRIVE`.
 
 The **_chdrive** function is not thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **SetCurrentDirectory**.
 

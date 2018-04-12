@@ -42,7 +42,7 @@ __int64 _lseeki64(
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor referring to an open file.
 
 *offset*
@@ -59,7 +59,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 ## Remarks
 
-The `_lseek` function moves the file pointer associated with `fd` to a new location that is *offset* bytes from *origin*. The next operation on the file occurs at the new location. The *origin* argument must be one of the following constants, which are defined in Stdio.h.
+The `_lseek` function moves the file pointer associated with *fd* to a new location that is *offset* bytes from *origin*. The next operation on the file occurs at the new location. The *origin* argument must be one of the following constants, which are defined in Stdio.h.
 
 `SEEK_SET`
 Beginning of the file.

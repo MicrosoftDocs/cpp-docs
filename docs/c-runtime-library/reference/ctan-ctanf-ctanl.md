@@ -46,12 +46,12 @@ _Lcomplex ctanl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents the angle, in radians.
 
 ## Return Value
 
-The tangent of `z`.
+The tangent of *z*.
 
 |Input|SEH Exception|`_matherr` Exception|
 |-----------|-------------------|--------------------------|

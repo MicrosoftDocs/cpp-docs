@@ -68,18 +68,18 @@ size_t _mbstrnlen_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated string.
 
-`numberOfElements`
+*numberOfElements*
 The size of the string buffer.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
-These functions return the number of characters in the string, not including the terminating null character. If there is no null terminator within the first `numberOfElements` bytes of the string (or wide characters for `wcsnlen`), then `numberOfElements` is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than `numberOfElements`.
+These functions return the number of characters in the string, not including the terminating null character. If there is no null terminator within the first *numberOfElements* bytes of the string (or wide characters for `wcsnlen`), then *numberOfElements* is returned to indicate the error condition; null-terminated strings have lengths that are strictly less than *numberOfElements*.
 
 `_mbstrnlen` and `_mbstrnlen_l` return -1 if the string contains an invalid multibyte character.
 
@@ -88,13 +88,13 @@ These functions return the number of characters in the string, not including the
 > [!NOTE]
 >  `strnlen` is not a replacement for `strlen`; `strnlen` is intended to be used only to calculate the size of incoming untrusted data in a buffer of known size—for example, a network packet. `strnlen` calculates the length but doesn't walk past the end of the buffer if the string is unterminated. For other situations, use `strlen`. (The same applies to `wcsnlen`, `_mbsnlen`, and `_mbstrnlen`.)
 
-Each of these functions returns the number of characters in `str`, not including the terminating null character. However, `strnlen` and `strnlen_s` interpret the string as a single-byte character string and therefore, the return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcsnlen` and `wcsnlen_s` are wide-character versions of `strnlen` and `strnlen_s` respectively; the arguments for `wcsnlen` and `wcsnlen_s` are wide-character strings and the count of characters are in wide-character units. Otherwise, `wcsnlen` and `strnlen` behave identically, as do `strnlen_s` and `wcsnlen_s`.
+Each of these functions returns the number of characters in *str*, not including the terminating null character. However, `strnlen` and `strnlen_s` interpret the string as a single-byte character string and therefore, the return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcsnlen` and `wcsnlen_s` are wide-character versions of `strnlen` and `strnlen_s` respectively; the arguments for `wcsnlen` and `wcsnlen_s` are wide-character strings and the count of characters are in wide-character units. Otherwise, `wcsnlen` and `strnlen` behave identically, as do `strnlen_s` and `wcsnlen_s`.
 
-`strnlen`, `wcsnlen`, and `_mbsnlen` do not validate their parameters. If `str` is `NULL`, an access violation occurs.
+`strnlen`, `wcsnlen`, and `_mbsnlen` do not validate their parameters. If *str* is `NULL`, an access violation occurs.
 
-`strnlen_s` and `wcsnlen_s` validate their parameters. If `str` is `NULL`, the functions return 0.
+`strnlen_s` and `wcsnlen_s` validate their parameters. If *str* is `NULL`, the functions return 0.
 
-`_mbstrnlen` also validates its parameters. If `str` is `NULL`, or if `numberOfElements` is greater than `INT_MAX`, `_mbstrnlen` generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbstrnlen` sets `errno` to `EINVAL` and returns -1.
+`_mbstrnlen` also validates its parameters. If *str* is `NULL`, or if *numberOfElements* is greater than `INT_MAX`, `_mbstrnlen` generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbstrnlen` sets `errno` to `EINVAL` and returns -1.
 
 ### Generic-Text Routine Mappings
 

@@ -64,7 +64,7 @@ int _ismbcdigit_l
 `c`
 Character to be tested.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

@@ -41,10 +41,10 @@ int _fseeki64_nolock(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to the `FILE` structure.
 
-`offset`
+*offset*
 Number of bytes from `origin.`
 
 `origin`

@@ -48,7 +48,7 @@ int _iswalpha_l(
 `c`
 Integer to test.
 
-`locale`
+*locale*
 The locale to use instead of the current locale.
 
 ## Return Value

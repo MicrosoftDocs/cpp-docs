@@ -47,7 +47,7 @@ Type of file access.
 
 ## Return Value
 
-Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that `mode` was a null pointer.
+Each of these functions returns a pointer to the open stream. A null pointer value indicates an error. When an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set either to `EBADF`, which indicates a bad file descriptor, or `EINVAL`, which indicates that *mode* was a null pointer.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -94,10 +94,10 @@ Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) 
 Open in binary (untranslated) mode. Any translations from `t` mode are suppressed.
 
 `c`
-Enable the commit flag for the associated `filename` so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
 
 `n`
-Reset the commit flag for the associated `filename` to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
+Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
 
 The `t`, `c`, and `n` *mode* options are Microsoft extensions for `fopen` and `_fdopen`. Do not use them if you want to preserve ANSI portability.
 

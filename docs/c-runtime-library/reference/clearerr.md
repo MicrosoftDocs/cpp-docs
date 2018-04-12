@@ -34,14 +34,14 @@ void clearerr(
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
 ## Remarks
 
-The `clearerr` function resets the error indicator and end-of-file indicator for `stream`. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
+The `clearerr` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
 
-If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns. For more information on `errno` and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
+If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns. For more information on `errno` and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
 A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).
 

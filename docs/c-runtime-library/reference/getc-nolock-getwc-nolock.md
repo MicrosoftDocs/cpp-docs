@@ -37,7 +37,7 @@ wint_t _getwc_nolock(
 
 ### Parameters
 
-`stream`
+*stream*
 Input stream.
 
 ## Return Value

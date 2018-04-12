@@ -35,7 +35,7 @@ int fd
 
 ### Parameters
 
-`fd`
+*fd*
 File descriptor that refers to the device to be tested.
 
 ## Return Value
@@ -44,9 +44,9 @@ File descriptor that refers to the device to be tested.
 
 ## Remarks
 
-The `_isatty` function determines whether `fd` is associated with a character device (a terminal, console, printer, or serial port).
+The `_isatty` function determines whether *fd* is associated with a character device (a terminal, console, printer, or serial port).
 
-This function validates the `fd` parameter. If `fd` is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EBADF`.
+This function validates the *fd* parameter. If *fd* is a bad file pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EBADF`.
 
 ## Requirements
 

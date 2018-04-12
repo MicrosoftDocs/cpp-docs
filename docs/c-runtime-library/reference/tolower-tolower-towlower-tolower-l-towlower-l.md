@@ -49,7 +49,7 @@ int _towlower_l(
 [in] `c`
 Character to convert.
 
-[in] `locale`
+[in] *locale*
 Locale to use for locale-specific translation.
 
 ## Return Value

@@ -28,22 +28,22 @@ Converts a time value and corrects for the local time zone. These are versions o
 
 ```
 errno_t localtime_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const time_t *time
 );
 errno_t _localtime32_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const time32_t *time
 );
 errno_t _localtime64_s(
-   struct tm* _tm,
+   struct tm* tmDest,
    const _time64_t *time
 );
 ```
 
 ### Parameters
 
-`_tm`
+*tmDest*
 Pointer to the time structure to be filled in.
 
 `time`
@@ -55,7 +55,7 @@ Zero if successful. The return value is an error code if there is a failure. Err
 
 ### Error Conditions
 
-|`_tm`|`time`|Return value|Value in `_tm`|Invokes invalid parameter handler|
+|*tmDest*|`time`|Return value|Value in *tmDest*|Invokes invalid parameter handler|
 |-----------|------------|------------------|--------------------|---------------------------------------|
 |`NULL`|any|`EINVAL`|Not modified|Yes|
 |Not `NULL` (points to valid memory)|`NULL`|`EINVAL`|All fields set to -1|Yes|

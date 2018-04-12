@@ -71,10 +71,10 @@ errno_t __wcserror_s(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Buffer to hold error string.
 
-`numberOfElements`
+*numberOfElements*
 Size of buffer.
 
 `errnum`
@@ -89,14 +89,14 @@ Zero if successful, an error code on failure.
 
 ### Error Condtions
 
-|`buffer`|`numberOfElements`|`strErrMsg`|Contents of `buffer`|
+|*buffer*|*numberOfElements*|`strErrMsg`|Contents of *buffer*|
 |--------------|------------------------|-----------------|--------------------------|
 |`NULL`|any|any|n/a|
 |any|0|any|not modified|
 
 ## Remarks
 
-The `strerror_s` function maps `errnum` to an error-message string, returning the string in `buffer`. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The `strerror_s` function maps `errnum` to an error-message string, returning the string in *buffer*. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
 ```
 if (( _access( "datafile",2 )) == -1 )
@@ -106,9 +106,9 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-If `strErrMsg` is `NULL`, `_strerror_s` returns a string in `buffer` containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If `strErrMsg` is not equal to `NULL`, then `_strerror_s` returns a string in `buffer` containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
+If `strErrMsg` is `NULL`, `_strerror_s` returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If `strErrMsg` is not equal to `NULL`, then `_strerror_s` returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
 
-These functions truncate the error message if its length exceeds `numberOfElements` -1. The resulting string in `buffer` is always null-terminated.
+These functions truncate the error message if its length exceeds *numberOfElements* -1. The resulting string in *buffer* is always null-terminated.
 
 The actual error number for `_strerror_s` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. `_strerror_s` accesses the appropriate error message by using the `errno` value as an index to the variable `_sys_errlist`. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call `_strerror_s` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror_s` or `_strerror_s` can overwrite the `errno` value.
 

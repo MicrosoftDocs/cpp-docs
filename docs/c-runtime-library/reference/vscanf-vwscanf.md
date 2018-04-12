@@ -39,7 +39,7 @@ int vwscanf(
 
 ### Parameters
 
-`format`
+*format*
 Format control string.
 
 `arglist`
@@ -49,18 +49,18 @@ Variable argument list.
 
 Returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned.
 
-If `format` is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
+If *format* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `vscanf` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in `format`. If copying occurs between strings that overlap, the behavior is undefined.
+The `vscanf` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
 >  When you use `vscanf` to read a string, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, incorrectly formatted input can cause a buffer overrun. As an alternative, you can use [vscanf_s, vwscanf_s](../../c-runtime-library/reference/vscanf-s-vwscanf-s.md) or [fgets](../../c-runtime-library/reference/fgets-fgetws.md).
 
-`vwscanf` is a wide-character version of `vscanf`; the `format` argument to `vwscanf` is a wide-character string. `vwscanf` and `vscanf` behave identically if the stream is opened in ANSI mode. `vscanf` doesn't support input from a UNICODE stream.
+`vwscanf` is a wide-character version of `vscanf`; the *format* argument to `vwscanf` is a wide-character string. `vwscanf` and `vscanf` behave identically if the stream is opened in ANSI mode. `vscanf` doesn't support input from a UNICODE stream.
 
 ### Generic-Text Routine Mappings
 

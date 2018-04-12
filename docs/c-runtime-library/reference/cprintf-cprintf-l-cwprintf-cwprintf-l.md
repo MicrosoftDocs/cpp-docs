@@ -48,13 +48,13 @@ int _cwprintf_l(
 
 ### Parameters
 
-`format`
+*format*
 Format-control string.
 
-`argument_list`
+*argument_list*
 Optional parameters for the format string.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -63,16 +63,16 @@ The number of characters printed.
 
 ## Remarks
 
-These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.
+These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf`) to output characters. Each argument in *argument_list* (if any) is converted and output according to the corresponding format specification in *format*. The *format* argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Unlike the `fprintf`, `printf`, and `sprintf` functions, neither `_cprintf` nor `_cwprintf` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.
 
 An important distinction is that `_cwprintf` displays Unicode characters when used in Windows. Unlike `_cprintf`, `_cwprintf` uses the current console locale settings.
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
-`_cprintf` validates the `format` parameter. If `format` is a null pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
+`_cprintf` validates the *format* parameter. If *format* is a null pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string.
+>  Ensure that *format* is not a user-defined string.
 
 ### Generic-Text Routine Mappings
 

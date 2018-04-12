@@ -69,14 +69,14 @@ errno_t _wsplitpath_s(
 
 ### Parameters
 
-[in] `path`
+[in] *path*
 Full path.
 
-[out] `drive`
+[out] *drive*
 Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
 
 [in] `driveNumberOfElements`
-The size of the `drive` buffer in single-byte or wide characters. If `drive` is `NULL`, this value must be 0.
+The size of the *drive* buffer in single-byte or wide characters. If *drive* is `NULL`, this value must be 0.
 
 [out] `dir`
 Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
@@ -104,9 +104,9 @@ Zero if successful; an error code on failure.
 
 |Condition|Return Value|
 |---------------|------------------|
-|`path` is `NULL`|`EINVAL`|
-|`drive` is `NULL`, `driveNumberOfElements` is non-zero|`EINVAL`|
-|`drive` is non-`NULL`, `driveNumberOfElements` is zero|`EINVAL`|
+|*path* is `NULL`|`EINVAL`|
+|*drive* is `NULL`, `driveNumberOfElements` is non-zero|`EINVAL`|
+|*drive* is non-`NULL`, `driveNumberOfElements` is zero|`EINVAL`|
 |`dir` is `NULL`, `dirNumberOfElements` is non-zero|`EINVAL`|
 |`dir` is non-`NULL`, `dirNumberOfElements` is zero|`EINVAL`|
 |`fname` is `NULL`, `nameNumberOfElements` is non-zero|`EINVAL`|

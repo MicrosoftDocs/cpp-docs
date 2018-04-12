@@ -51,7 +51,7 @@ Second buffer.
 `count`
 Number of characters.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

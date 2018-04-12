@@ -38,19 +38,19 @@ void * _aligned_realloc_dbg(
 
 ### Parameters
 
-[in] `memblock`
+[in] *memblock*
 The current memory block pointer.
 
-[in] `size`
+[in] *size*
 The size of the requested memory allocation.
 
-[in] `alignment`
+[in] *alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] `filename`
+[in] *filename*
 Pointer to the name of the source file that requested the `realloc` operation or NULL.
 
-[in] `linenumber`
+[in] *linenumber*
 Line number in the source file where the `realloc` operation was requested or NULL.
 
 ## Return Value
@@ -61,13 +61,13 @@ It is an error to reallocate memory and change the alignment of a block.
 
 ## Remarks
 
-`_aligned_realloc_dbg` is a debug version of the [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_realloc_dbg` is reduced to a call to `_aligned_realloc`. Both `_aligned_realloc` and `_aligned_realloc_dbg` reallocate a memory block in the base heap, but `_aligned_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and `filename`/`linenumber` information to determine the origin of allocation requests.
+`_aligned_realloc_dbg` is a debug version of the [_aligned_realloc](../../c-runtime-library/reference/aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_realloc_dbg` is reduced to a call to `_aligned_realloc`. Both `_aligned_realloc` and `_aligned_realloc_dbg` reallocate a memory block in the base heap, but `_aligned_realloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
 `_aligned_realloc_dbg` reallocates the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 
 `_aligned_realloc_dbg` sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory needed (including the overhead mentioned previously) exceeds `_HEAP_MAXREQ`. For information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Also, `_aligned_realloc_dbg` validates its parameters. If `alignment` is not a power of 2, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
+Also, `_aligned_realloc_dbg` validates its parameters. If *alignment* is not a power of 2, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 

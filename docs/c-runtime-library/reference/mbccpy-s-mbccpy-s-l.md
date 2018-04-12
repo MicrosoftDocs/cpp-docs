@@ -72,7 +72,7 @@ Filled with the number of bytes copied (1 or 2 if successful). Pass `NULL` if yo
 [in] `src`
 Multibyte character to copy.
 
-[in] `locale`
+[in] *locale*
 Locale to use.
 
 ## Return Value

@@ -51,22 +51,22 @@ unsigned char *_mbsninc(
 
 ### Parameters
 
-`str`
+*str*
 Source string.
 
 `count`
 Number of characters to increment a string pointer.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
-Each of these routines returns a pointer to `str` after `str` has been incremented by `count` characters or `NULL` if the supplied pointer is `NULL`. If `count` is greater than or equal to the number of characters in `str`, the result is undefined.
+Each of these routines returns a pointer to *str* after *str* has been incremented by `count` characters or `NULL` if the supplied pointer is `NULL`. If `count` is greater than or equal to the number of characters in *str*, the result is undefined.
 
 ## Remarks
 
-The `_mbsninc` function increments `str` by `count` multibyte characters. `_mbsninc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+The `_mbsninc` function increments *str* by `count` multibyte characters. `_mbsninc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
 
 ### Generic-Text Routine Mappings
 

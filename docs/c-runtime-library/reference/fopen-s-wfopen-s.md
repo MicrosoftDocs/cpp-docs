@@ -44,10 +44,10 @@ errno_t _wfopen_s(
 [out] `pFile`
 A pointer to the file pointer that will receive the pointer to the opened file.
 
-[in] `filename`
+[in] *filename*
 Filename.
 
-[in] `mode`
+[in] *mode*
 Type of access permitted.
 
 ## Return Value
@@ -56,7 +56,7 @@ Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlis
 
 ### Error Conditions
 
-|`pFile`|`filename`|`mode`|Return Value|Contents of `pFile`|
+|`pFile`|*filename*|*mode*|Return Value|Contents of `pFile`|
 |-------------|----------------|------------|------------------|------------------------|
 |`NULL`|any|any|`EINVAL`|unchanged|
 |any|`NULL`|any|`EINVAL`|unchanged|
@@ -66,11 +66,11 @@ Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlis
 
 Files that are opened by `fopen_s` and `_wfopen_s` are not sharable. If you require that a file be sharable, use [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, `_SH_DENYNO` for read/write sharing.
 
-The `fopen_s` function opens the file that's specified by `filename`. `_wfopen_s` is a wide-character version of `fopen_s`; the arguments to `_wfopen_s` are wide-character strings. `_wfopen_s` and `fopen_s` behave identically otherwise.
+The `fopen_s` function opens the file that's specified by *filename*. `_wfopen_s` is a wide-character version of `fopen_s`; the arguments to `_wfopen_s` are wide-character strings. `_wfopen_s` and `fopen_s` behave identically otherwise.
 
 `fopen_s` accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by `fopen_s` as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for `fopen_s`, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
-These functions validate their parameters. If `pFile`, `filename`, or `mode` is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions validate their parameters. If `pFile`, *filename*, or *mode* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 Always check the return value to see if the function succeeded before you perform any further operations on the file. If an error occurs, the error code is returned and the global variable `errno` is set. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -99,7 +99,7 @@ The following table summarizes the modes for various `ccs` flags that are given 
 
 Files that are opened for writing in Unicode mode have a BOM written to them automatically.
 
-If `mode` is "a, ccs=*encoding*", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)
+If *mode* is "a, ccs=*encoding*", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)
 
 ### Generic-Text Routine Mappings
 
@@ -107,7 +107,7 @@ If `mode` is "a, ccs=*encoding*", `fopen_s` first tries to open the file with bo
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tfopen_s`|`fopen_s`|`fopen_s`|`_wfopen_s`|
 
-The character string `mode` specifies the kind of access that's requested for the file, as follows.
+The character string *mode* specifies the kind of access that's requested for the file, as follows.
 
 `"r"`
 Opens for reading. If the file does not exist or cannot be found, the `fopen_s` call fails.
@@ -133,7 +133,7 @@ The `"a"` mode does not remove the EOF marker before appending to the file. Afte
 
 When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, `fseek`, and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.
 
-In addition to the above values, the following characters can be included in `mode` to specify the translation mode for newline characters:
+In addition to the above values, the following characters can be included in *mode* to specify the translation mode for newline characters:
 
 `t`
 Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with `"a+"`, `fopen_s` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z, may cause `fseek` to behave improperly near the end of the file.
@@ -143,15 +143,15 @@ Also, in text mode, carriage return-linefeed combinations are translated into si
 `b`
 Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
 
-If `t` or `b` is not given in `mode`, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
+If `t` or `b` is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`.
 
 For more information about using text and binary modes in Unicode and multibyte stream-I/O, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [Unicode Stream I/O in Text and Binary Modes](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 
 `c`
-Enable the commit flag for the associated `filename` so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
+Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either `fflush` or `_flushall` is called.
 
 `n`
-Reset the commit flag for the associated `filename` to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
+Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 
 `N`
 Specifies that the file is not inherited by child processes.
@@ -171,9 +171,9 @@ Specifies a file as temporary. It is deleted when the last file pointer is close
 `ccs=ENCODING`
 Specify the coded character set to use (UTF-8, UTF-16LE, and UNICODE) for this file. Leave this unspecified if you want ANSI encoding.
 
-Valid characters for the `mode` string used in `fopen_s` and `_fdopen` correspond to `oflag` arguments used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.
+Valid characters for the *mode* string used in `fopen_s` and `_fdopen` correspond to *oflag* arguments used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.
 
-|Characters in mode string|Equivalent `oflag` value for `_open`/`_sopen`|
+|Characters in mode string|Equivalent *oflag* value for `_open`/`_sopen`|
 |-------------------------------|----------------------------------------------------|
 |`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|
 |`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|
@@ -208,7 +208,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-The `c`, `n`, and `t` `mode` options are Microsoft extensions for `fopen_s` and `_fdopen` and should not be used where ANSI portability is desired.
+The `c`, `n`, and `t` *mode* options are Microsoft extensions for `fopen_s` and `_fdopen` and should not be used where ANSI portability is desired.
 
 ## Example
 

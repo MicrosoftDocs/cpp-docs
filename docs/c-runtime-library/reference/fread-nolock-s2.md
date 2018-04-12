@@ -37,7 +37,7 @@ size_t _fread_nolock_s(
 
 ### Parameters
 
-`buffer`
+*buffer*
 Storage location for data.
 
 `bufferSize`
@@ -49,7 +49,7 @@ Size of the item to read in bytes.
 `elementCount`
 Maximum number of items to be read.
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
 ## Return Value

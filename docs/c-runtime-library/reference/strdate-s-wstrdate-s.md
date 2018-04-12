@@ -47,10 +47,10 @@ errno_t _wstrdate_s(
 
 ### Parameters
 
-[out] `buffer`
+[out] *buffer*
 A pointer to a buffer which will be filled in with the formatted date string.
 
-[in] `numberOfElements`
+[in] *numberOfElements*
 Size of the buffer.
 
 ## Return Value
@@ -59,26 +59,26 @@ Zero if successful. The return value is an error code if there is a failure. Err
 
 ## Error Conditions
 
-|`buffer`|`numberOfElements`|Return|Contents of `buffer`|
+|*buffer*|*numberOfElements*|Return|Contents of *buffer*|
 |--------------|------------------------|------------|--------------------------|
 |`NULL`|(any)|`EINVAL`|Not modified|
 |Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0 < `numberOfElements` < 9|`EINVAL`|Empty string|
-|Not `NULL` (pointing to valid buffer)|`numberOfElements` >= 9|0|Current date formatted as specified in the remarks|
+|Not `NULL` (pointing to valid buffer)|0 < *numberOfElements* < 9|`EINVAL`|Empty string|
+|Not `NULL` (pointing to valid buffer)|*numberOfElements* >= 9|0|Current date formatted as specified in the remarks|
 
 ## Security Issues
 
-Passing in an invalid non `NULL` value for the buffer will result in an access violation if the `numberOfElements` parameter is greater than 9.
+Passing in an invalid non `NULL` value for the buffer will result in an access violation if the *numberOfElements* parameter is greater than 9.
 
-Passing values for size that is greater than the actual size of the `buffer` will result in buffer overrun.
+Passing values for size that is greater than the actual size of the *buffer* will result in buffer overrun.
 
 ## Remarks
 
-These functions provide more secure versions of `_strdate` and `_wstrdate`. The `_strdate_s` function copies the current system date to the buffer pointed to by `buffer`, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 characters long.
+These functions provide more secure versions of `_strdate` and `_wstrdate`. The `_strdate_s` function copies the current system date to the buffer pointed to by *buffer*, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 characters long.
 
 `_wstrdate_s` is a wide-character version of `_strdate_s`; the argument and return value of `_wstrdate_s` are wide-character strings. These functions behave identically otherwise.
 
-If `buffer` is a `NULL` pointer, or if `numberOfElements` is less than 9 characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL` if the buffer is `NULL` or if `numberOfElements` is less than or equal to 0, or set `errno` to `ERANGE` if `numberOfElements` is less than 9.
+If *buffer* is a `NULL` pointer, or if *numberOfElements* is less than 9 characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL` if the buffer is `NULL` or if *numberOfElements* is less than or equal to 0, or set `errno` to `ERANGE` if *numberOfElements* is less than 9.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

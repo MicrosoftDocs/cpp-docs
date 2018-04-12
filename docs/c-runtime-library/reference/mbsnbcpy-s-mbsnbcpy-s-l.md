@@ -72,7 +72,7 @@ Character string to be copied.
 `count`
 Number of bytes to be copied.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

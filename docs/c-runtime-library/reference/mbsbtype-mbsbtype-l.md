@@ -49,7 +49,7 @@ Address of a sequence of multibyte characters.
 `count`
 Byte offset from head of string.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value

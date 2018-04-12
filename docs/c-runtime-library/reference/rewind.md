@@ -35,14 +35,14 @@ Repositions the file pointer to the beginning of a file.
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to **FILE** structure.
 
 ## Remarks
 
-The **rewind** function repositions the file pointer associated with `stream` to the beginning of the file. A call to **rewind** is similar to
+The **rewind** function repositions the file pointer associated with *stream* to the beginning of the file. A call to **rewind** is similar to
 
-**(void) fseek(** `stream`**, 0L,** `SEEK_SET` **);**
+**(void) fseek(** *stream***, 0L,** `SEEK_SET` **);**
 
 However, unlike `fseek`, **rewind** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike `fseek`, **rewind** does not return a value to indicate whether the pointer was successfully moved.
 

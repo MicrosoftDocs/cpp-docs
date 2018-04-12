@@ -35,10 +35,10 @@ void *calloc(
 
 ### Parameters
 
-`num`
+*number*
 Number of elements.
 
-`size`
+*size*
 Length in bytes of each element.
 
 ## Return Value
@@ -47,7 +47,7 @@ Length in bytes of each element.
 
 ## Remarks
 
-The `calloc` function allocates storage space for an array of `num` elements, each of length `size` bytes. Each element is initialized to 0.
+The `calloc` function allocates storage space for an array of *number* elements, each of length *size* bytes. Each element is initialized to 0.
 
 `calloc` sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

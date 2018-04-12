@@ -46,12 +46,12 @@ _Lcomplex casinhl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number that represents an angle, in radians.
 
 ## Return Value
 
-The inverse hyperbolic sine of `z`, in radians. The result is unbound along the real axis, and in the interval [-iπ/2, +iπ/2] along the imaginary axis.
+The inverse hyperbolic sine of *z*, in radians. The result is unbound along the real axis, and in the interval [-iπ/2, +iπ/2] along the imaginary axis.
 
 ## Remarks
 

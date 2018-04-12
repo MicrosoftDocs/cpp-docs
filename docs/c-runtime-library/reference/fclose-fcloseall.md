@@ -35,7 +35,7 @@ int _fcloseall( void );
 
 ### Parameters
 
-`stream`
+*stream*
 Pointer to `FILE` structure.
 
 ## Return Value
@@ -44,7 +44,7 @@ Pointer to `FILE` structure.
 
 ## Remarks
 
-The `fclose` function closes `stream`. If `stream` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `fclose` sets `errno` to `EINVAL` and returns `EOF`. It is recommended that the `stream` pointer always be checked prior to calling this function.
+The `fclose` function closes *stream*. If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `fclose` sets `errno` to `EINVAL` and returns `EOF`. It is recommended that the *stream* pointer always be checked prior to calling this function.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

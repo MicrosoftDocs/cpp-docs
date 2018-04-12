@@ -39,23 +39,23 @@ _locale_t _wcreate_locale(
 
 ### Parameters
 
-`category`
+*category*
 Category.
 
-`locale`
+*locale*
 Locale specifier.
 
 ## Return Value
 
-If a valid `locale` and `category` are given, returns the specified locale settings as a `_locale_t` object. The current locale settings of the program are not changed.
+If a valid *locale* and *category* are given, returns the specified locale settings as a `_locale_t` object. The current locale settings of the program are not changed.
 
 ## Remarks
 
 The `_create_locale` function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the `_l` suffix). The behavior is similar to `setlocale`, except that instead of applying the specified locale settings to the current environment, the settings are saved in a `_locale_t` structure that is returned. The `_locale_t` structure should be freed using [_free_locale](../../c-runtime-library/reference/free-locale.md) when it is no longer needed.
 
-`_wcreate_locale` is a wide-character version of `_create_locale`; the `locale` argument to `_wcreate_locale` is a wide-character string. `_wcreate_locale` and `_create_locale` behave identically otherwise.
+`_wcreate_locale` is a wide-character version of `_create_locale`; the *locale* argument to `_wcreate_locale` is a wide-character string. `_wcreate_locale` and `_create_locale` behave identically otherwise.
 
-The `category` argument specifies the parts of the locale-specific behavior that are affected. The flags used for `category` and the parts of the program they affect are as shown in the following table.
+The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in the following table.
 
 `LC_ALL`
 All categories, as listed below.
@@ -75,11 +75,11 @@ Decimal-point character for the formatted output routines (such as `printf`), fo
 `LC_TIME`
 The `strftime` and `wcsftime` functions.
 
-This function validates the `category` and `locale` parameters. If the category parameter is not one of the values given in the previous table or if `locale` is `NULL`, the function returns `NULL`.
+This function validates the *category* and *locale* parameters. If the category parameter is not one of the values given in the previous table or if *locale* is `NULL`, the function returns `NULL`.
 
-The `locale` argument is a pointer to a string that specifies the locale. For information about the format of the `locale` argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
+The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
 
-The `locale` argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all that are supported by the Windows NLS API except the code pages that require more than two bytes per character—for example, UTF-7 and UTF-8. If you provide a code page like UTF-7 or UTF-8, `_create_locale` will fail and return NULL. The set of locale names supported by `_create_locale` are described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `_create_locale` are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md).
+The *locale* argument can take a locale name, a language string, a language string and country/region code, a code page, or a language string, country/region code, and code page. The set of available locale names, languages, country/region codes, and code pages includes all that are supported by the Windows NLS API except the code pages that require more than two bytes per character—for example, UTF-7 and UTF-8. If you provide a code page like UTF-7 or UTF-8, `_create_locale` will fail and return NULL. The set of locale names supported by `_create_locale` are described in [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md). The set of language and country/region strings supported by `_create_locale` are listed in [Language Strings](../../c-runtime-library/language-strings.md) and [Country/Region Strings](../../c-runtime-library/country-region-strings.md).
 
 For more information about locale settings, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).
 

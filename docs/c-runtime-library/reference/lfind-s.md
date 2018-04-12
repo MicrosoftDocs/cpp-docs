@@ -39,27 +39,27 @@ void *_lfind_s(
 
 ### Parameters
 
-`key`
+*key*
 Object to search for.
 
-`base`
+*base*
 Pointer to the base of search data.
 
-`num`
+*number*
 Number of array elements.
 
-`size`
+*size*
 Size of array elements in bytes.
 
-`compare`
-Pointer to comparison routine. The first parameter is the `context` pointer. The second parameter is a pointer to key for search. The third parameter is a pointer to array element to be compared with key.
+*compare*
+Pointer to comparison routine. The first parameter is the *context* pointer. The second parameter is a pointer to key for search. The third parameter is a pointer to array element to be compared with key.
 
-`context`
+*context*
 A pointer to an object that might be accessed in the comparison function.
 
 ## Return Value
 
-If the key is found, `_lfind_s` returns a pointer to the element of the array at `base` that matches `key`. If the key is not found, `_lfind_s` returns `NULL`.
+If the key is found, `_lfind_s` returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, `_lfind_s` returns `NULL`.
 
 If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
 
@@ -74,9 +74,9 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 ## Remarks
 
-The `_lfind_s` function performs a linear search for the value `key` in an array of `num` elements, each of `width` bytes. Unlike `bsearch_s`, `_lfind_s` does not require the array to be sorted. The `base` argument is a pointer to the base of the array to be searched. The `compare` argument is a pointer to a user-supplied routine that compares two array elements and then returns a value specifying their relationship. `_lfind_s` calls the `compare` routine one or more times during the search, passing the `context` pointer and pointers to two array elements on each call. The `compare` routine must compare the elements then return nonzero (meaning that the elements are different) or 0 (meaning the elements are identical).
+The `_lfind_s` function performs a linear search for the value *key* in an array of *number* elements, each of *width* bytes. Unlike `bsearch_s`, `_lfind_s` does not require the array to be sorted. The *base* argument is a pointer to the base of the array to be searched. The *compare* argument is a pointer to a user-supplied routine that compares two array elements and then returns a value specifying their relationship. `_lfind_s` calls the *compare* routine one or more times during the search, passing the *context* pointer and pointers to two array elements on each call. The *compare* routine must compare the elements then return nonzero (meaning that the elements are different) or 0 (meaning the elements are identical).
 
-`_lfind_s` is similar to `_lfind` except for the addition of the `context` pointer to the arguments of the comparison function and the parameter list of the function. The `context` pointer can be useful if the searched data structure is part of an object and the `compare` function needs to access members of the object. The `compare` function can cast the void pointer into the appropriate object type and access members of that object. The addition of the `context` parameter makes `_lfind_s` more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the `compare` function.
+`_lfind_s` is similar to `_lfind` except for the addition of the *context* pointer to the arguments of the comparison function and the parameter list of the function. The *context* pointer can be useful if the searched data structure is part of an object and the *compare* function needs to access members of the object. The *compare* function can cast the void pointer into the appropriate object type and access members of that object. The addition of the *context* parameter makes `_lfind_s` more secure because additional context can be used to avoid reentrancy bugs associated with using static variables to make data available to the *compare* function.
 
 ## Requirements
 

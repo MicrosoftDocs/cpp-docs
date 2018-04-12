@@ -51,18 +51,18 @@ size_t _mbscspn_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated searched string.
 
 `strCharSet`
 Null-terminated character set.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
-These functions return the index of the first character in `str` that is in `strCharSet`. If none of the characters in `str` is in `strCharSet`, then the return value is the length of `str`.
+These functions return the index of the first character in *str* that is in `strCharSet`. If none of the characters in *str* is in `strCharSet`, then the return value is the length of *str*.
 
 No return value is reserved to indicate an error.
 
@@ -70,7 +70,7 @@ No return value is reserved to indicate an error.
 
 `wcscspn` and `_mbscspn` are wide-character and multibyte-character versions of `strcspn`. The arguments of `wcscspn` are wide-character strings; those of `_mbscspn` are multibyte-character strings.
 
-`_mbscspn` validates its parameters. If either `str` or `strCharSet` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`. `strcspn` and `wcscspn` do not validate their parameters. These three functions behave identically otherwise.
+`_mbscspn` validates its parameters. If either *str* or `strCharSet` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`. `strcspn` and `wcscspn` do not validate their parameters. These three functions behave identically otherwise.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

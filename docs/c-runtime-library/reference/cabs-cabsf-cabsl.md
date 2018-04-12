@@ -46,12 +46,12 @@ long double cabsl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number.
 
 ## Return Value
 
-The absolute value of `z`.
+The absolute value of *z*.
 
 ## Remarks
 

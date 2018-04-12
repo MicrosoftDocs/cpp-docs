@@ -41,13 +41,13 @@ int _wopen(
 
 ### Parameters
 
-`filename`
+*filename*
 File name.
 
-`oflag`
+*oflag*
 The kind of operations allowed.
 
-`pmode`
+*pmode*
 Permission mode.
 
 ## Return Value
@@ -58,10 +58,10 @@ Each of these functions returns a file descriptor for the opened file. A return 
 Tried to open a read-only file for writing, file's sharing mode does not allow the specified operations, or the given path is a directory.
 
 `EEXIST`
-`_O_CREAT` and `_O_EXCL` flags specified, but `filename` already exists.
+`_O_CREAT` and `_O_EXCL` flags specified, but *filename* already exists.
 
 `EINVAL`
-Invalid `oflag` or `pmode` argument.
+Invalid *oflag* or *pmode* argument.
 
 `EMFILE`
 No more file descriptors are available (too many files are open).
@@ -73,7 +73,7 @@ For more information about these and other return codes, see [errno, _doserrno, 
 
 ## Remarks
 
-The `_open` function opens the file specified by `filename` and prepares it for reading or writing, as specified by `oflag`. `_wopen` is a wide-character version of `_open`; the `filename` argument to `_wopen` is a wide-character string. `_wopen` and `_open` behave identically otherwise.
+The `_open` function opens the file specified by *filename* and prepares it for reading or writing, as specified by *oflag*. `_wopen` is a wide-character version of `_open`; the *filename* argument to `_wopen` is a wide-character string. `_wopen` and `_open` behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -81,7 +81,7 @@ The `_open` function opens the file specified by `filename` and prepares it for 
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_topen`|`_open`|`_open`|`_wopen`|
 
-`oflag` is an integer expression formed from one or more of the following manifest constants or constant combinations, which are defined in \<fcntl.h>.
+*oflag* is an integer expression formed from one or more of the following manifest constants or constant combinations, which are defined in \<fcntl.h>.
 
 `_O_APPEND`
 Moves the file pointer to the end of the file before every write operation.
@@ -90,16 +90,16 @@ Moves the file pointer to the end of the file before every write operation.
 Opens the file in binary (untranslated) mode. (See [fopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)
 
 `_O_CREAT`
-Creates a file and opens it for writing. Has no effect if the file specified by `filename` exists. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT` &#124; `_O_SHORT_LIVED`
-Creates a file as temporary and if possible does not flush to disk. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT` &#124; `_O_TEMPORARY`
-Creates a file as temporary; the file is deleted when the last file descriptor is closed. The `pmode` argument is required when `_O_CREAT` is specified.
+Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when `_O_CREAT` is specified.
 
 `_O_CREAT` &#124; `_O_EXCL`
-Returns an error value if the file specified by `filename` exists. Applies only when used with `_O_CREAT`.
+Returns an error value if the file specified by *filename* exists. Applies only when used with `_O_CREAT`.
 
 `_O_NOINHERIT`
 Prevents creation of a shared file descriptor.
@@ -145,9 +145,9 @@ When a file is opened in Unicode mode by using `_O_WTEXT`, `_O_U8TEXT`, or `_O_U
 
 If `_open` is called with `_O_WRONLY|_O_APPEND` (append mode) and `_O_WTEXT`, `_O_U16TEXT`, or `_O_U8TEXT`, it first tries to open the file for reading and writing, read the BOM, then reopen it for writing only. If opening the file for reading and writing fails, it opens the file for writing only and uses the default value for the Unicode mode setting.
 
-When two or more manifest constants are used to form the `oflag` argument, the constants are combined with the bitwise-OR operator ( `|` ). For a discussion of binary and text modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+When two or more manifest constants are used to form the *oflag* argument, the constants are combined with the bitwise-OR operator ( `|` ). For a discussion of binary and text modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-The `pmode` argument is required only when `_O_CREAT` is specified. If the file already exists, `pmode` is ignored. Otherwise, `pmode` specifies the file permission settings, which are set when the new file is closed the first time. `_open` applies the current file-permission mask to `pmode` before the permissions are set. (For more information, see [_umask](../../c-runtime-library/reference/umask.md).) `pmode` is an integer expression that contains one or both of the following manifest constants, which are defined in \<sys\stat.h>.
+The *pmode* argument is required only when `_O_CREAT` is specified. If the file already exists, *pmode* is ignored. Otherwise, *pmode* specifies the file permission settings, which are set when the new file is closed the first time. `_open` applies the current file-permission mask to *pmode* before the permissions are set. (For more information, see [_umask](../../c-runtime-library/reference/umask.md).) *pmode* is an integer expression that contains one or both of the following manifest constants, which are defined in \<sys\stat.h>.
 
 `_S_IREAD`
 Only reading permitted.
@@ -160,7 +160,7 @@ Reading and writing permitted.
 
 When both constants are given, they are joined with the bitwise-OR operator ( `|` ). In Windows, all files are readable; write-only permission is not available. Therefore, the modes `_S_IWRITE` and `_S_IREAD` `|` `_S_IWRITE` are equivalent.
 
-If a value other than some combination of `_S_IREAD` and `_S_IWRITE` is specified for `pmode`—even if it would specify a valid `pmode` in another operating system—or if any value other than the allowed `oflag` values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
+If a value other than some combination of `_S_IREAD` and `_S_IWRITE` is specified for *pmode*—even if it would specify a valid *pmode* in another operating system—or if any value other than the allowed *oflag* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
 ## Requirements
 

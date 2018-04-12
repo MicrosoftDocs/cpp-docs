@@ -35,15 +35,15 @@ void *_expand(
 
 ### Parameters
 
-`memblock`
+*memblock*
 Pointer to previously allocated memory block.
 
-`size`
+*size*
 New size in bytes.
 
 ## Return Value
 
-`_expand` returns a void pointer to the reallocated memory block. `_expand`, unlike `realloc`, cannot move a block to change its size. Thus, if there is sufficient memory available to expand the block without moving it, the `memblock` parameter to `_expand` is the same as the return value.
+`_expand` returns a void pointer to the reallocated memory block. `_expand`, unlike `realloc`, cannot move a block to change its size. Thus, if there is sufficient memory available to expand the block without moving it, the *memblock* parameter to `_expand` is the same as the return value.
 
 `_expand` returns `NULL` when an error is detected during its operation. For example, if `_expand` is used to shrink a memory block, it might detect corruption in the small block heap or an invalid block pointer and return `NULL`.
 
@@ -53,14 +53,14 @@ The return value points to a storage space that is guaranteed to be suitably ali
 
 ## Remarks
 
-The `_expand` function changes the size of a previously allocated memory block by trying to expand or contract the block without moving its location in the heap. The `memblock` parameter points to the beginning of the block. The `size` parameter gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes. `memblock` should not be a block that has been freed.
+The `_expand` function changes the size of a previously allocated memory block by trying to expand or contract the block without moving its location in the heap. The *memblock* parameter points to the beginning of the block. The *size* parameter gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes. *memblock* should not be a block that has been freed.
 
 > [!NOTE]
->  On 64-bit platforms, `_expand` might not contract the block if the new size is less than the current size; in particular, if the block was less than 16K in size and therefore allocated in the Low Fragmentation Heap, `_expand` leaves the block unchanged and returns `memblock`.
+>  On 64-bit platforms, `_expand` might not contract the block if the new size is less than the current size; in particular, if the block was less than 16K in size and therefore allocated in the Low Fragmentation Heap, `_expand` leaves the block unchanged and returns *memblock*.
 
 When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](../../c-runtime-library/reference/expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
-This function validates its parameters. If `memblock` is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. If `size` is greater than `_HEAP_MAXREQ`, `errno` is set to `ENOMEM` and the function returns `NULL`.
+This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. If *size* is greater than `_HEAP_MAXREQ`, `errno` is set to `ENOMEM` and the function returns `NULL`.
 
 ## Requirements
 

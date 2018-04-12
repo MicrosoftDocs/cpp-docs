@@ -52,13 +52,13 @@ int _cwscanf_l(
 
 ### Parameters
 
-`format`
+*format*
 Format-control string.
 
-`argument`
+*argument*
 Optional parameters.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -67,7 +67,7 @@ The number of fields that were successfully converted and assigned. The return v
 
 ## Remarks
 
-The `_cscanf` function reads data directly from the console into the locations given by `argument`. The [_getche](../../c-runtime-library/reference/getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in `format`. The format controls the interpretation of the input fields and has the same form and function as the `format` parameter for the [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
+The `_cscanf` function reads data directly from the console into the locations given by *argument*. The [_getche](../../c-runtime-library/reference/getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
 
 This function validates its parameters. If format is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.
 

@@ -40,18 +40,18 @@ wchar_t *_wgetenv(
 
 ### Parameters
 
-`varname`
+*varname*
 Environment variable name.
 
 ## Return Value
 
-Returns a pointer to the environment table entry containing `varname`. It is not safe to modify the value of the environment variable using the returned pointer. Use the `_putenv` function to modify the value of an environment variable. The return value is `NULL` if `varname` is not found in the environment table.
+Returns a pointer to the environment table entry containing *varname*. It is not safe to modify the value of the environment variable using the returned pointer. Use the `_putenv` function to modify the value of an environment variable. The return value is `NULL` if *varname* is not found in the environment table.
 
 ## Remarks
 
-The `getenv` function searches the list of environment variables for `varname`. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.
+The `getenv` function searches the list of environment variables for *varname*. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.
 
-If `varname` is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
+If *varname* is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
 `_wgetenv` is a wide-character version of `getenv`; the argument and return value of `_wgetenv` are wide-character strings. The `_wenviron` global variable is a wide-character version of `_environ`.
 

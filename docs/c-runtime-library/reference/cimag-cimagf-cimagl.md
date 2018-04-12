@@ -39,12 +39,12 @@ long double cimag( _Lcomplex z );  // C++
 
 ### Parameters
 
-`z`
+*z*
 A complex number.
 
 ## Return Value
 
-The imaginary part of `z`.
+The imaginary part of *z*.
 
 ## Remarks
 

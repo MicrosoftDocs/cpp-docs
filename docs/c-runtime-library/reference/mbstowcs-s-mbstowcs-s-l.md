@@ -76,7 +76,7 @@ The address of a sequence of null terminated multibyte characters.
 [in] `count`
 The maximum number of wide characters to store in the `wcstr` buffer, not including the terminating null, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-[in] `locale`
+[in] *locale*
 The locale to use.
 
 ## Return Value

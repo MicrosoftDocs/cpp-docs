@@ -34,7 +34,7 @@ void _aligned_free_dbg(
 
 ### Parameters
 
-`memblock`
+*memblock*
 A pointer to the memory block that was returned to the `_aligned_malloc` or `_aligned_offset_malloc` function.
 
 ## Remarks

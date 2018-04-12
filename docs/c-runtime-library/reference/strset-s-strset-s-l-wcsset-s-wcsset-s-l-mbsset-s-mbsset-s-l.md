@@ -67,27 +67,27 @@ errno_t _mbsset_s_l(
 
 ### Parameters
 
-`str`
+*str*
 Null-terminated string to be set.
 
-`numberOfElements`
-The size of the `str` buffer.
+*numberOfElements*
+The size of the *str* buffer.
 
 `c`
 Character setting.
 
-`locale`
+*locale*
 Locale to use.
 
 ## Return Value
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If `str` is a null pointer, or the `numberOfElements` argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+These functions validate their arguments. If *str* is a null pointer, or the *numberOfElements* argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 ## Remarks
 
-The `_strset_s` function sets all the characters of `str` to `c` (converted to `char`), except the terminating null character. `_wcsset_s` and `_mbsset_s` are wide-character and multibyte-character versions of `_strset_s`. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The `_strset_s` function sets all the characters of *str* to `c` (converted to `char`), except the terminating null character. `_wcsset_s` and `_mbsset_s` are wide-character and multibyte-character versions of `_strset_s`. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

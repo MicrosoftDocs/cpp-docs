@@ -52,13 +52,13 @@ int _cwprintf_s_l(
 
 ### Parameters
 
-`format`
+*format*
 Format-control string.
 
-`argument`
+*argument*
 Optional parameters.
 
-`locale`
+*locale*
 The locale to use.
 
 ## Return Value
@@ -67,16 +67,16 @@ The number of characters printed.
 
 ## Remarks
 
-These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each `argument` (if any) is converted and output according to the corresponding format specification in `format`. The format has the same form and function as the `format` parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.
+These functions format and print a series of characters and values directly to the console, using the `_putch` function (`_putwch` for `_cwprintf_s`) to output characters. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format has the same form and function as the *format* parameter for the [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) function. Unlike the `fprintf_s`, `printf_s`, and `sprintf_s` functions, neither `_cprintf_s` nor `_cwprintf_s` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output.
 
 An important distinction is that `_cwprintf_s` displays Unicode characters when used in Windows NT. Unlike `_cprintf_s`, `_cwprintf_s` uses the current console locale
 
 The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
->  Ensure that `format` is not a user-defined string.
+>  Ensure that *format* is not a user-defined string.
 
-Like the non-secure versions (see [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if `format` is a null pointer. These functions differ from the non-secure versions in that the format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions invoke the invalid parameter handler. In all cases, If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+Like the non-secure versions (see [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *format* is a null pointer. These functions differ from the non-secure versions in that the format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions invoke the invalid parameter handler. In all cases, If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 

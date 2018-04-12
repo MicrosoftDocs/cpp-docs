@@ -46,12 +46,12 @@ long double cargl(
 
 ### Parameters
 
-`z`
+*z*
 A complex number.
 
 ## Return Value
 
-The argument (also known as the phase) of `z`. The result is in the interval [-π, +π].
+The argument (also known as the phase) of *z*. The result is in the interval [-π, +π].
 
 ## Remarks
 
