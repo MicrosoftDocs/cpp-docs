@@ -658,7 +658,7 @@ int main()
 Derived d1(5) calls: Base(int)
 Derived d1('c') calls: Base(char)
 Derived d3 = d2 calls: Base(Base&)
-Derived d4 calls: Base()
+Derived d4 calls: Base()*/
 
 ```
 

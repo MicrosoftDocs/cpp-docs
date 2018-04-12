@@ -1,7 +1,7 @@
 ---
-title: "Character Sets2 | Microsoft Docs"
+title: "Character Sets | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "04/12/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
