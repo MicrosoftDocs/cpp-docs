@@ -48,6 +48,7 @@
 #### [decltype](decltype-cpp.md)
 #### [Attributes](attributes.md)
 ### [Scope (Visual C++)](scope-visual-cpp.md)
+### [Header Files](header-files-cpp.md)
 ### [Program and Linkage](program-and-linkage-cpp.md)
 #### [extern](using-extern-to-specify-linkage.md)
 ### [Startup and Termination](startup-and-termination-cpp.md)
