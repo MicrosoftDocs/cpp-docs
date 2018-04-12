@@ -14,11 +14,22 @@ ms.author: "mblome"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
+# Header files (C++)
 
-The names of program elements such as variables, functions, classes, and so on must be declared before they can be used. For example, you can't just write `x = 42` in a .cpp file without first declaring 'x'. The declaration tells the compiler whether is an int, a double, a function, or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile your program, each .cpp file is compiled independently by the compiler. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause the linker to see the name as representing a different entity than what you intended, and errors will result. 
-To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a single header file, then use the #include directive in every .cpp file or other header file requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation.  Typically, header files have an *include guard* such as #pragma once to ensure that they are not inserted multiple times into a single .cpp file. 
+The names of program elements such as variables, functions, classes, and so on must be declared before they can be used. For example, you can't just write `x = 42` without first declaring 'x'. 
+
+```cpp
+int x; // declaration
+x = 42; // use x
+```
+
+ The declaration tells the compiler whether is an **int**, a **double**, a **function**, a **class** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
+
+To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a header file, then use the #include directive in every .cpp file or other header file requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation. 
+
 ## Example
-The following example shows a common a common way to use a header file. Suppose we want to create a class and then use it in a different source file. We'll start with the header file, **my_class.h**. It contains a class definition, but note that the definition is incomplete; the member function `do_something` is not defined. 
+
+The following example shows a common way to declare a class and then use it in a different source file. We'll start with the header file, **my_class.h**. It contains a class definition, but note that the definition is incomplete; the member function `do_something` is not defined:
 
 ```cpp
 // my_class.h
@@ -33,12 +44,15 @@ namespace N
 
 }
 ```
-Next, we create a .cpp file called my_class.cpp and provide a definition for the member declaration. We add an #include directive for "my_class.h" file in order to have the my_class declaration inserted at this point in the .cpp file, and we include <iostream> to pull in the declaration for std::cout. Note that quotes are used for header files in the same directory as the source file, and angle brackets are used for standard library headers. Also, many standard library headers do not have .h or any other file extension.
-In a .cpp file, we can optionally use a **using** statement to avoid having to qualify every mention of "my_class" or "cout" with "N::" or "std::".  Don't put **using** statements in your header files!
+
+Next, create an implementation file (typically with a .cpp or similar extension). We'll call the file my_class.cpp and provide a definition for the member declaration. We add an `#include` directive for "my_class.h" file in order to have the my_class declaration inserted at this point in the .cpp file, and we include **\<iostream>** to pull in the declaration for `std::cout`. Note that quotes are used for header files in the same directory as the source file, and angle brackets are used for standard library headers. Also, many standard library headers do not have .h or any other file extension.
+
+In the implementation file, we can optionally use a **using** statement to avoid having to qualify every mention of "my_class" or "cout" with "N::" or "std::".  Don't put **using** statements in your header files!
+
 ```cpp
 // my_class.cpp
-#include "my_class.h"
-#include <iostream>
+#include "my_class.h" // header in local directory
+#include <iostream> // header in standard library
 
 using namespace N;
 using namespace std;
@@ -48,7 +62,8 @@ void my_class::do_something()
     cout << "Doing something!" << endl;
 }
 ```
-Now we can use my_class in another .cpp file. We #include the header file so that the compiler pulls in the declaration. All the compiler needs to know is that my_class is a class that has a public member function called do_something(). After the compiler finishes compiling each .cpp file into .obj files, it passes the .obj files to the linker. The linker's job is to merge the object files into a single program: my_program.exe. For each name that is declared in each .obj file, the linker looks for exactly one definition of that name in all the .obj files. In our example, it finds the definition for my_class in the .obj file produced for my_class.cpp, and the build succeeds.
+
+Now we can use `my_class` in another .cpp file. We #include the header file so that the compiler pulls in the declaration. All the compiler needs to know is that my_class is a class that has a public member function called `do_something()`.
 
 ```cpp
 // my_program.cpp
@@ -63,20 +78,99 @@ int main()
     return 0;
 }
 ```
+
+After the compiler finishes compiling each .cpp file into .obj files, it passes the .obj files to the linker. When the linker merges the object files it finds exactly one definition for my_class; it is in the .obj file produced for my_class.cpp, and the build succeeds.
+
+## Include guards
+
+Typically, header files have an *include guard* such as #pragma once to ensure that they are not inserted multiple times into a single .cpp file. 
+
 ## What to put in a header file
-Because a header file might potentially be included by multiple .cpp files, in general it must contain only declarations, not definitions. The only definitions allowed are inline functions, const variables and constexpr expressions.
-A header file may contain any kind of declaration or definition EXCEPT the following:
-non-inline function definitions
-non-const variable definitions
-aggregate definitions
-unnamed namespaces
-using directives
 
-Use of the using directive will not necessarily an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header. 
+Because a header file might potentially be included by multiple files, it cannot contain some kinds of definitions because that could produce multiple definitions of the same name. The following are not allowed, or are considered very bad practice:
+
+- built-in type definitions at namespace or global scope
+- non-inline function definitions 
+- non-const variable definitions
+- aggregate definitions
+- unnamed namespaces
+- using directives
+
+Use of the **using** directive will not necessarily an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header. 
+
+## Sample header file
+
+The following example shows the various kinds of declarations and definitions that are allowed in a header file:
+
+```cpp
+#pragma once    //include guard
+#include <vector> // #include directive
+#include <string>
+
+namespace N  // namespace declaration
+{
+
+    inline namespace P
+    {
+        //...
+    }
+
+    enum class colors : short { red, blue, purple, azure };
 
 
+    const double PI = 3.14;  // const and constexpr definitions
+    constexpr int MeaningOfLife{ 42 };
+    constexpr int get_meaning()
+    {
+        static_assert(MeaningOfLife == 42, "unexpected!"); // static_assert
+        return MeaningOfLife;
+    }
+    using vstr = std::vector<int>;  // type alias
+    extern double d; // extern variable
+
+    // int i; // ERROR! 
+
+#define LOG   // macro definition
+
+#ifdef LOG   // conditional compilation directive
+    void print_to_log();
+#endif
 
 
+    class my_class   // regular class definition, 
+    {               // but no non-inline function definitions
 
+        friend class other_class;
+    public:
+        void do_something();   // definition in my_class.cpp
+        inline void put_value(int i) { vals.push_back(i); } // inline OK
 
+    private:
+        vstr vals;
+        int i;
+    };
 
+    struct RGB
+    {
+        short r{ 0 };  // member initialization
+        short g{ 0 };
+        short b{ 0 };
+    };
+
+    template <typename T>  // template definition
+    class value_store
+    {
+    public:
+        value_store<T>() = default;
+        void write_value(T val)
+        {
+            //... function definition OK in template
+        }
+    private:
+        std::vector<T> vals;
+    };
+
+    template <typename T>  // template declaration
+    class value_widget;
+
+}
