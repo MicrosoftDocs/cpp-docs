@@ -65,7 +65,7 @@ New attributes to silence warnings when an entity is not used, or to create a wa
 
 ### Using attribute namespaces without repetition
 
-New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes2.md).
+New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes.md).
 
 ### Structured bindings
 
