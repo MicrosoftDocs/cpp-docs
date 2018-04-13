@@ -21,6 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # strcmp, wcscmp, _mbscmp
+
 Compare strings.
 
 > [!IMPORTANT]
@@ -28,7 +29,7 @@ Compare strings.
 
 ## Syntax
 
-```
+```C
 int strcmp(
    const char *string1,
    const char *string2
@@ -44,22 +45,25 @@ int _mbscmp(
 ```
 
 ### Parameters
-`string1`, `string2`
+
+*string1*, *string2*<br/>
 Null-terminated strings to compare.
 
 ## Return Value
-The return value for each of these functions indicates the ordinal relation of `string1` to `string2`.
+
+The return value for each of these functions indicates the ordinal relation of *string1* to *string2*.
 
 |Value|Relationship of string1 to string2|
 |-----------|----------------------------------------|
-|< 0|`string1` is less than `string2`|
-|0|`string1` is identical to `string2`|
-|> 0|`string1` is greater than `string2`|
+|< 0|*string1* is less than *string2*|
+|0|*string1* is identical to *string2*|
+|> 0|*string1* is greater than *string2*|
 
 On a parameter validation error, `_mbscmp` returns `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
-The `strcmp` function performs an ordinal comparison of `string1` and `string2` and returns a value that indicates their relationship. `wcscmp` and `_mbscmp` are, respectively, wide-character and multibyte-character versions of `strcmp`. `_mbscmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if `string1` or `string2` is a null pointer, `_mbscmp` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbscmp` returns `_NLSCMPERROR` and sets `errno` to `EINVAL`. `strcmp` and `wcscmp` do not validate their parameters. These three functions behave identically otherwise.
+
+The `strcmp` function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. `wcscmp` and `_mbscmp` are, respectively, wide-character and multibyte-character versions of `strcmp`. `_mbscmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, `_mbscmp` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbscmp` returns `_NLSCMPERROR` and sets `errno` to `EINVAL`. `strcmp` and `wcscmp` do not validate their parameters. These three functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -90,7 +94,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_strcmp.c
 
 #include <string.h>
@@ -137,7 +141,8 @@ Compare strings:
    _stricmp:  String 1 is equal to string 2
 ```
 
-## See Also
+## See also
+
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
 [_memicmp, _memicmp_l](../../c-runtime-library/reference/memicmp-memicmp-l.md)<br/>
@@ -147,4 +152,4 @@ Compare strings:
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>

@@ -26,7 +26,7 @@ Writes a character to `stdout`.
 
 ## Syntax
 
-```
+```C
 int _fputchar(
    int c
 );
@@ -37,7 +37,7 @@ wint_t _fputwchar(
 
 ### Parameters
 
-`c`
+*c*
 Character to be written.
 
 ## Return Value
@@ -48,7 +48,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 ## Remarks
 
-Both of these functions writes the single character `c` to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.
+Both of these functions writes the single character *c* to `stdout` and advances the indicator as appropriate. `_fputchar` is equivalent to `fputc( stdout )`. It is also equivalent to `putchar`, but implemented only as a function, rather than as a function and a macro. Unlike `fputc` and `putchar`, these functions are not compatible with the ANSI standard.
 
 ### Generic-Text Routine Mappings
 
@@ -90,8 +90,8 @@ int main( void )
 This is a test of _fputchar!!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>

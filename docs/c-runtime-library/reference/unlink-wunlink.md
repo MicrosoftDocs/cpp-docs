@@ -26,7 +26,7 @@ Delete a file.
 
 ## Syntax
 
-```
+```C
 int _unlink(
    const char *filename
 );
@@ -95,8 +95,8 @@ This file will be deleted.
 Deleted 'CRT_UNLINK.TXT'
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
-[remove, _wremove](../../c-runtime-library/reference/remove-wremove.md)
+[remove, _wremove](../../c-runtime-library/reference/remove-wremove.md)<br/>

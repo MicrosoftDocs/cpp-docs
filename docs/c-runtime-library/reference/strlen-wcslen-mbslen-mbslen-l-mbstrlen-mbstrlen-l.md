@@ -29,7 +29,7 @@ Gets the length of a string, by using the current locale or a specified locale. 
 
 ## Syntax
 
-```
+```C
 size_t strlen(
    const char *str
 );
@@ -80,7 +80,7 @@ Each of these functions returns the number of characters in *str*, excluding the
 
 `_mbslen` and `_mbslen_l` return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. `_mbstrlen` and `_mbstrlen_l` test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to `_mbstrlen` or `_mbstrlen_l` contains an invalid multibyte character for the code page, the function returns -1 and sets `errno` to `EILSEQ`.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
@@ -156,7 +156,7 @@ Length of 'ABCァD' : 5
 Bytes in 'ABCァD' : 6
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
@@ -168,4 +168,4 @@ Bytes in 'ABCァD' : 6
 [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

@@ -26,7 +26,7 @@ Performs a quick sort. A more secure version of this function is available; see 
 
 ## Syntax
 
-```
+```C
 void qsort(
    void *base,
    size_t num,
@@ -123,8 +123,8 @@ int compare( const void *arg1, const void *arg2 )
 boy deserves every favor good
 ```
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)
+[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>

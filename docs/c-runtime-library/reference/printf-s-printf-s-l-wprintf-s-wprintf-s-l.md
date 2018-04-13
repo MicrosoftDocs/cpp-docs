@@ -26,7 +26,7 @@ Prints formatted output to the standard output stream. These versions of [printf
 
 ## Syntax
 
-```
+```C
 int printf_s(
    const char *format [,
    argument]...
@@ -74,7 +74,7 @@ For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist,
 
 `wprintf_s` is a wide-character version of `printf_s`; *format* is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -188,7 +188,7 @@ Address as:   0012FF78
 
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -197,4 +197,4 @@ Address as:   0012FF78
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

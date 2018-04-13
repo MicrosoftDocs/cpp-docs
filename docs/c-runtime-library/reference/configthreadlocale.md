@@ -26,7 +26,7 @@ Configures per-thread locale options.
 
 ## Syntax
 
-```
+```C
 int _configthreadlocale(
    int type
 );
@@ -175,9 +175,9 @@ The thread locale is now set to German_Germany.1252.
 The time in German locale is: 'Mittwoch, 12. Mai 2004'
 ```
 
-## See Also
+## See also
 
 [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
 [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[Multithreading and Locales](../../parallel/multithreading-and-locales.md)
+[Multithreading and Locales](../../parallel/multithreading-and-locales.md)<br/>

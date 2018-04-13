@@ -26,7 +26,7 @@ Sets the specified floating-point status flags in the current floating-point env
 
 ## Syntax
 
-```
+```C
 int fesetexceptflag(
      const fexcept_t *pstatus,
      int excepts
@@ -70,7 +70,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fegetexceptflag](../../c-runtime-library/reference/fegetexceptflag2.md)<br/>

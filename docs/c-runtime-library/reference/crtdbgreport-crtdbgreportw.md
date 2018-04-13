@@ -26,7 +26,7 @@ Generates a report with a debugging message and sends the report to three possib
 
 ## Syntax
 
-```
+```C
 int _CrtDbgReport(
    int reportType,
    const char *filename,
@@ -121,10 +121,10 @@ int main(int argc, char *argv[]) {
 
 See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2) for an example of how to change the report function.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md)<br/>
 [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)
+[_DEBUG](../../c-runtime-library/debug.md)<br/>

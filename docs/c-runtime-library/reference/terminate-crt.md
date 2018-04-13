@@ -26,7 +26,7 @@ Calls `abort` or a function you specify using `set_terminate`.
 
 ## Syntax
 
-```
+```C
 void terminate( void );
 ```
 
@@ -96,11 +96,11 @@ void term_func()
 term_func() was called by terminate().
 ```
 
-## See Also
+## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
 [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)<br/>
 [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
 [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>

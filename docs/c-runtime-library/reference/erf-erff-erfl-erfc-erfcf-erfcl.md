@@ -26,7 +26,7 @@ Computes the error function or the complementary error function of a value.
 
 ## Syntax
 
-```
+```C
 double erf(
    double x
 );
@@ -86,6 +86,6 @@ Because C++ allows overloading, you can call overloads of **erf** and **erfc** t
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

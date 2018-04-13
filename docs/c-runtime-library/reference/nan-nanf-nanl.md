@@ -51,7 +51,7 @@ The **nan** functions return a floating-point value that corresponds to a quiet 
 |--------------|--------------|------------------|
 |**nan**, **nanf**, **nanl**|\<math.h>|\<cmath> or \<math.h>|
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_finite, _finitef](../../c-runtime-library/reference/finite-finitef.md)<br/>

@@ -26,7 +26,7 @@ Creates an absolute or full path name for the specified relative path name.
 
 ## Syntax
 
-```
+```C
 char *_fullpath(
    char *absPath,
    const char *relPath,
@@ -41,22 +41,22 @@ wchar_t *_wfullpath(
 
 ### Parameters
 
-`absPath`
+*absPath*
 Pointer to a buffer containing the absolute or full path name, or NULL.
 
-`relPath`
+*relPath*
 Relative path name.
 
-`maxLength`
-Maximum length of the absolute path name buffer (`absPath`). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
+*maxLength*
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
 
 ## Return Value
 
-Each of these functions returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`), the function returns `NULL`.
+Each of these functions returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*), the function returns `NULL`.
 
 ## Remarks
 
-The `_fullpath` function expands the relative path name in `relPath` to its fully qualified or absolute path and stores this name in `absPath`. If `absPath` is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (`relPath`) that include "./" or "../" in their names.
+The `_fullpath` function expands the relative path name in *relPath* to its fully qualified or absolute path and stores this name in *absPath*. If *absPath* is NULL, `malloc` is used to allocate a buffer of sufficient length to hold the path name. It is the responsibility of the caller to free this buffer. A relative path name specifies a path to another location from the current location (such as the current working directory: "."). An absolute path name is the expansion of a relative path name that states the entire path required to reach the desired location from the root of the file system. Unlike `_makepath`, `_fullpath` can be used to obtain the absolute path name for relative paths (*relPath*) that include "./" or "../" in their names.
 
 For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):
 
@@ -74,7 +74,7 @@ when the absolute path (actual file system location) of the file might be:
 
 If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](../../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md).
 
-This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if `maxlen` is less than or equal to 0. If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
+This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
 ### Generic-Text Routine Mappings
 
@@ -82,7 +82,7 @@ This function invokes the invalid parameter handler, as described in [Parameter 
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tfullpath`|`_fullpath`|`_fullpath`|`_wfullpath`|
 
-If the `absPath` buffer is `NULL`, `_fullpath` calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate a buffer and ignores the `maxLength` argument. It is the caller's responsibility to deallocate this buffer (using [free](../../c-runtime-library/reference/free.md)) as appropriate. If the `relPath` argument specifies a disk drive, the current directory of this drive is combined with the path.
+If the *absPath* buffer is `NULL`, `_fullpath` calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](../../c-runtime-library/reference/free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
 
 ## Requirements
 
@@ -128,10 +128,10 @@ Full path is: C:\test
 Full path is: C:\Documents and Settings\user\test
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
 [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)<br/>
 [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
-[_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)
+[_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>

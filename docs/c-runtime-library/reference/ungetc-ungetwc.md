@@ -26,7 +26,7 @@ Pushes a character back onto the stream.
 
 ## Syntax
 
-```
+```C
 int ungetc(
    int c,
    FILE *stream
@@ -112,8 +112,8 @@ int main( void )
 Next character in stream = 'a'
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>

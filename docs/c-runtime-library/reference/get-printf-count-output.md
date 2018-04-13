@@ -26,7 +26,7 @@ Indicates whether [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-libra
 
 ## Syntax
 
-```
+```C
 int _get_printf_count_output();
 ```
 
@@ -50,6 +50,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md).
 
-## See Also
+## See also
 
-[_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)
+[_set_printf_count_output](../../c-runtime-library/reference/set-printf-count-output.md)<br/>

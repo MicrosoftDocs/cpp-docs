@@ -26,7 +26,7 @@ Write formatted output using a pointer to a list of arguments. These are version
 
 ## Syntax
 
-```
+```C
 int vsnprintf_s(
    char *buffer,
    size_t sizeOfBuffer,
@@ -85,10 +85,10 @@ int _vsnwprintf_s(
 *buffer*
 Storage location for output.
 
-`sizeOfBuffer`
+*sizeOfBuffer*
 The size of the *buffer* for output, as the character count.
 
-`count`
+*count*
 Maximum number of characters to write (not including the terminating null), or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *format*
@@ -106,9 +106,9 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 `vsnprintf_s`,`_vsnprintf_s` and `_vsnwprintf_s` return the number of characters written, not including the terminating null, or a negative value if an output error occurs. `vsnprintf_s` is identical to `_vsnprintf_s`. `vsnprintf_s` is included for compliance to the ANSI standard. `_vnsprintf` is retained for backward compatibility.
 
-If the storage required to store the data and a terminating null exceeds `sizeOfBuffer`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set `errno` to `ERANGE`, and return -1.
+If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set `errno` to `ERANGE`, and return -1.
 
-If *buffer* or *format* is a `NULL` pointer, or if `count` is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If *buffer* or *format* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 ### Error Conditions
 
@@ -116,22 +116,22 @@ If *buffer* or *format* is a `NULL` pointer, or if `count` is less than or equal
 |-----------------|------------|-------------|
 |*buffer* is `NULL`|-1|`EINVAL`|
 |*format* is `NULL`|-1|`EINVAL`|
-|`count` <= 0|-1|`EINVAL`|
-|`sizeOfBuffer` too small (and `count` != `_TRUNCATE`)|-1 (and *buffer* set to an empty string)|`ERANGE`|
+|*count* <= 0|-1|`EINVAL`|
+|*sizeOfBuffer* too small (and *count* != `_TRUNCATE`)|-1 (and *buffer* set to an empty string)|`ERANGE`|
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats and writes up to `count` characters of the given data to the memory pointed to by *buffer* and appends a terminating null.
+Each of these functions takes a pointer to an argument list, then formats and writes up to *count* characters of the given data to the memory pointed to by *buffer* and appends a terminating null.
 
-If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), then these functions write as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then these functions return the number of characters written (not including the terminating null); otherwise, these functions return -1 to indicate that truncation occurred.
+If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then these functions write as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then these functions return the number of characters written (not including the terminating null); otherwise, these functions return -1 to indicate that truncation occurred.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 > [!NOTE]
->  To ensure that there is room for the terminating null, be sure that `count` is strictly less than the buffer length, or use `_TRUNCATE`.
+>  To ensure that there is room for the terminating null, be sure that *count* is strictly less than the buffer length, or use `_TRUNCATE`.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -186,11 +186,11 @@ nSize: 9, buff: Hi there!
 nSize: -1, buff: Hi there!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)
+[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>

@@ -26,7 +26,7 @@ Determines the gamma function of the specified value.
 
 ## Syntax
 
-```
+```C
 double tgamma(
    double x
 );
@@ -51,7 +51,7 @@ long double tgammal(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The value to find the gamma of.
 
 ## Return Value
@@ -88,7 +88,7 @@ If x is a natural number, this function returns the factorial of (x-1).
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [lgamma, lgammaf, lgammal](../../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)<br/>

@@ -26,36 +26,27 @@ Finds the difference between two times.
 
 ## Syntax
 
-```
-double difftime(
-   time_t timer1,
-   time_t timer0
-);
-double _difftime32(
-   __time32_t timer1,
-   __time32_t timer0
-);
-double _difftime64(
-   __time64_t timer1,
-   __time64_t timer0
-);
+```C
+double difftime( time_t timeEnd, time_t timeStart );
+double _difftime32( __time32_t timeEnd, __time32_t timeStart );
+double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 ```
 
 ### Parameters
 
-`timer1`
+*timeEnd*
 Ending time.
 
-`timer0`
+*timeStart*
 Beginning time.
 
 ## Return Value
 
-`difftime` returns the elapsed time in seconds, from `timer0` to `timer1`. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
+`difftime` returns the elapsed time in seconds, from *timeStart* to *timeEnd*. The value returned is a double precision floating-point number. The return value may be 0, indicating an error.
 
 ## Remarks
 
-The `difftime` function computes the difference between the two supplied time values `timer0` and `timer1`.
+The `difftime` function computes the difference between the two supplied time values *timeStart* and *timeEnd*.
 
 The time value supplied must fit within the range of `time_t`. `time_t` is a 64-bit value. Thus, the end of the range was extended from 23:59:59 January 18, 2038, UTC to 23:59:59, December 31, 3000. The lower range of `time_t` is still midnight, January 1, 1970.
 
@@ -130,8 +121,8 @@ Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multip
 Program takes      5 seconds.
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

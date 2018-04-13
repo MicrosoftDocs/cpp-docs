@@ -26,7 +26,7 @@ Determines whether a byte is a trailing byte of a multibyte character.
 
 ## Syntax
 
-```
+```C
 int _ismbbtrail(
    unsigned int c
 );
@@ -38,7 +38,7 @@ int _ismbbtrail_l(
 
 ### Parameters
 
-`c`
+*c*
 The integer to be tested.
 
 *locale*
@@ -46,7 +46,7 @@ The locale to use.
 
 ## Return Value
 
-`_ismbbtrail` returns a nonzero value if the integer `c` is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
+`_ismbbtrail` returns a nonzero value if the integer *c* is the second byte of a multibyte character. For example, in code page 932 only, valid ranges are 0x40 to 0x7E and 0x80 to 0xFC.
 
 ## Remarks
 
@@ -63,7 +63,7 @@ The locale to use.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

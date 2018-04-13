@@ -26,7 +26,7 @@ Specifies the destination or destinations for a specific report type generated b
 
 ## Syntax
 
-```
+```C
 int _CrtSetReportMode(
    int reportType,
    int reportMode
@@ -38,12 +38,12 @@ int _CrtSetReportMode(
 *reportType*
 Report type: `_CRT_WARN`, `_CRT_ERROR`, and `_CRT_ASSERT`.
 
-`reportMode`
+*reportMode*
 New report mode or modes for *reportType*.
 
 ## Return Value
 
-On successful completion, `_CrtSetReportMode` returns the previous report mode or modes for the report type specified in *reportType*. If an invalid value is passed in as *reportType* or an invalid mode is specified for `reportMode`, `_CrtSetReportMode` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, `_CrtSetReportMode` returns the previous report mode or modes for the report type specified in *reportType*. If an invalid value is passed in as *reportType* or an invalid mode is specified for *reportMode*, `_CrtSetReportMode` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -67,14 +67,14 @@ The following table lists the report types defined in Crtdbg.h.
 |`_CRT_ERROR`|Errors, unrecoverable problems, and issues that require immediate attention.|
 |`_CRT_ASSERT`|Assertion failures (asserted expressions that evaluate to `FALSE`).|
 
-The `_CrtSetReportMode` function assigns the new report mode specified in `reportMode` to the report type specified in *reportType* and returns the previously defined report mode for *reportType*. The following table lists the available choices for `reportMode` and the resulting behavior of `_CrtDbgReport`. These options are defined as bit flags in Crtdbg.h.
+The `_CrtSetReportMode` function assigns the new report mode specified in *reportMode* to the report type specified in *reportType* and returns the previously defined report mode for *reportType*. The following table lists the available choices for *reportMode* and the resulting behavior of `_CrtDbgReport`. These options are defined as bit flags in Crtdbg.h.
 
 |Report mode|_CrtDbgReport behavior|
 |-----------------|-----------------------------|
 |`_CRTDBG_MODE_DEBUG`|Writes the message to the debugger's output window.|
 |`_CRTDBG_MODE_FILE`|Writes the message to a user-supplied file handle. [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) should be called to define the specific file or stream to use as the destination.|
 |`_CRTDBG_MODE_WNDW`|Creates a message box to display the message along with the `Abort`, `Retry`, and `Ignore` buttons.|
-|`_CRTDBG_REPORT_MODE`|Returns `reportMode` for the specified *reportType*:<br /><br /> 1   `_CRTDBG_MODE_FILE`<br /><br /> 2   `_CRTDBG_MODE_DEBUG`<br /><br /> 4   `_CRTDBG_MODE_WNDW`|
+|`_CRTDBG_REPORT_MODE`|Returns *reportMode* for the specified *reportType*:<br /><br /> 1   `_CRTDBG_MODE_FILE`<br /><br /> 2   `_CRTDBG_MODE_DEBUG`<br /><br /> 4   `_CRTDBG_MODE_WNDW`|
 
 Each report type can be reported using one, two, or three modes or no mode at all. Therefore, it is possible to have more than one destination defined for a single report type. For example, the following code fragment causes assertion failures to be sent to both a debug message window and to `stderr`:
 
@@ -95,6 +95,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

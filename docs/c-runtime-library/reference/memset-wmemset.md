@@ -26,9 +26,8 @@ Sets buffers to a specified character.
 
 ## Syntax
 
-```
-
-      void *memset(
+```C
+void *memset(
    void *dest,
    int c,
    size_t count
@@ -45,7 +44,7 @@ wchar_t *wmemset(
 *dest*
 Pointer to destination.
 
-`c`
+*c*
 Character to set.
 
 *count*
@@ -53,13 +52,13 @@ Number of characters.
 
 ## Return Value
 
-The value of `dest`.
+The value of *dest*.
 
 ## Remarks
 
-Sets the first `count` characters of `dest` to the character `c`.
+Sets the first *count* characters of *dest* to the character *c*.
 
-**Security Note** Make sure that the destination buffer has enough room for at least `count` characters. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Security Note** Make sure that the destination buffer has enough room for at least *count* characters. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ## Requirements
 
@@ -130,11 +129,11 @@ Before: This is a test of the wmemset function
 After:  **** is a test of the wmemset function
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
 [memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
 [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
 [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)
+[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>

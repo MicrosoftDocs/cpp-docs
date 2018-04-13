@@ -26,9 +26,8 @@ Returns an integer indicating the new handler mode set by `_set_new_mode` for `m
 
 ## Syntax
 
-```
-
-      int _query_new_mode(
+```C
+int _query_new_mode(
    void
 );
 ```
@@ -53,10 +52,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
 [realloc](../../c-runtime-library/reference/realloc.md)<br/>
-[_query_new_handler](../../c-runtime-library/reference/query-new-handler.md)
+[_query_new_handler](../../c-runtime-library/reference/query-new-handler.md)<br/>

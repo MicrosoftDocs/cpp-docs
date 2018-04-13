@@ -29,7 +29,7 @@ Converts a single-byte multibyte character to a corresponding double-byte multib
 
 ## Syntax
 
-```
+```C
 unsigned int _mbbtombc(
    unsigned int c
 );
@@ -41,7 +41,7 @@ unsigned int _mbbtombc_l(
 
 ### Parameters
 
-`c`
+*c*
 Single-byte character to convert.
 
 *locale*
@@ -49,7 +49,7 @@ Locale to use.
 
 ## Return Value
 
-If `_mbbtombc` successfully converts `c`, it returns a multibyte character; otherwise, it returns `c`.
+If `_mbbtombc` successfully converts *c*, it returns a multibyte character; otherwise, it returns *c*.
 
 ## Remarks
 
@@ -68,7 +68,7 @@ In earlier versions, `_mbbtombc` was named `hantozen`. For new code, use `_mbbto
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)
+[_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)<br/>

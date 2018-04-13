@@ -29,7 +29,7 @@ Appends characters of a string. More secure versions of these functions are avai
 
 ## Syntax
 
-```
+```C
 char *strncat(
    char *strDest,
    const char *strSource,
@@ -80,13 +80,13 @@ unsigned char *_mbsncat_l(
 
 ### Parameters
 
-`strDest`
+*strDest*
 Null-terminated destination string.
 
-`strSource`
+*strSource*
 Null-terminated source string.
 
-`count`
+*count*
 Number of characters to append.
 
 *locale*
@@ -98,14 +98,14 @@ Returns a pointer to the destination string. No return value is reserved to indi
 
 ## Remarks
 
-The `strncat` function appends, at most, the first `count` characters of `strSource` to `strDest`. The initial character of `strSource` overwrites the terminating null character of `strDest`. If a null character appears in `strSource` before `count` characters are appended, `strncat` appends all characters from `strSource`, up to the null character. If `count` is greater than the length of `strSource`, the length of `strSource` is used in place of `count`. The all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
+The `strncat` function appends, at most, the first *count* characters of *strSource* to *strDest*. The initial character of *strSource* overwrites the terminating null character of *strDest*. If a null character appears in *strSource* before *count* characters are appended, `strncat` appends all characters from *strSource*, up to the null character. If *count* is greater than the length of *strSource*, the length of *strSource* is used in place of *count*. The all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  `strncat` does not check for sufficient space in `strDest`; it is therefore a potential cause of buffer overruns. Keep in mind that `count` limits the number of characters appended; it is not a limit on the size of `strDest`. See the example below. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  `strncat` does not check for sufficient space in *strDest*; it is therefore a potential cause of buffer overruns. Keep in mind that *count* limits the number of characters appended; it is not a limit on the size of *strDest*. See the example below. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 `wcsncat` and `_mbsncat` are wide-character and multibyte-character versions of `strncat`. The string arguments and return value of `wcsncat` are wide-character strings; those of `_mbsncat` are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, these functions have template overloads. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -179,7 +179,7 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 
 Note that `BadAppend` caused a buffer overrun.
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)<br/>
@@ -193,4 +193,4 @@ Note that `BadAppend` caused a buffer overrun.
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

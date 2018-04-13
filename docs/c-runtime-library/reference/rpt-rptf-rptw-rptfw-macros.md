@@ -21,13 +21,12 @@ ms.workload: ["cplusplus"]
 ---
 # _RPT, _RPTF, _RPTW, _RPTFW Macros
 
-Tracks an application's progress by generating a debug report (debug version only). Note that *n* specifies the number of arguments in `args` and can be 0, 1, 2, 3, 4, or 5.
+Tracks an application's progress by generating a debug report (debug version only). Note that *n* specifies the number of arguments in *args* and can be 0, 1, 2, 3, 4, or 5.
 
 ## Syntax
 
-```
-
-      _RPT
+```C
+_RPT
       n
       (
    reportType,
@@ -59,12 +58,12 @@ Report type: `_CRT_WARN`, `_CRT_ERROR`, or `_CRT_ASSERT`.
 *format*
 Format-control string used to create the user message.
 
-`args`
+*args*
 Substitution arguments used by *format*.
 
 ## Remarks
 
-All these macros take the *reportType* and *format* parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, `_RPT0` and `_RPTF0` take no additional arguments, `_RPT1` and `_RPTF1` take `arg1`, `_RPT2` and `_RPTF2` take `arg1` and `arg2`, and so on.
+All these macros take the *reportType* and *format* parameters. In addition, they might also take up to four additional arguments, signified by the number appended to the macro name. For example, `_RPT0` and `_RPTF0` take no additional arguments, `_RPT1` and `_RPTF1` take *arg1*, `_RPT2` and `_RPTF2` take *arg1* and `arg2`, and so on.
 
 The `_RPT` and `_RPTF` macros are similar to the [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) function, because they can be used to track an application's progress during the debugging process. However, these macros are more flexible than `printf` because they do not need to be enclosed in `#ifdef` statements to prevent them from being called in a retail build of an application. This flexibility is achieved by using the [_DEBUG](../../c-runtime-library/debug.md) macro; the `_RPT` and `_RPTF` macros are only available when the `_DEBUG` flag is defined. When `_DEBUG` is not defined, calls to these macros are removed during preprocessing.
 
@@ -107,6 +106,6 @@ Although these are macros and are obtained by including Crtdbg.h, the applicatio
 
 See the example in the [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) topic.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

@@ -29,7 +29,7 @@ Creates a pipe and executes a command.
 
 ## Syntax
 
-```
+```C
 FILE *_popen(
 const char *command,
 const char *mode
@@ -155,8 +155,8 @@ Directory of D:\proj\console\test1
 Process returned 0
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_pclose](../../c-runtime-library/reference/pclose.md)<br/>
-[_pipe](../../c-runtime-library/reference/pipe.md)
+[_pipe](../../c-runtime-library/reference/pipe.md)<br/>

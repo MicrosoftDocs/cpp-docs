@@ -26,9 +26,8 @@ Writes a string to **stdout**.
 
 ## Syntax
 
-```
-
-      int puts(
+```C
+int puts(
    const char *str
 );
 int _putws(
@@ -94,8 +93,8 @@ int main( void )
 Hello world from puts!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)<br/>
-[fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)
+[fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)<br/>

@@ -29,7 +29,7 @@ Reads formatted data from the console. More secure versions of these functions a
 
 ## Syntax
 
-```
+```C
 int _cscanf(
    const char *format [,
    argument] ...
@@ -71,7 +71,7 @@ The `_cscanf` function reads data directly from the console into the locations g
 
 This function validates its parameters. If format is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -130,10 +130,10 @@ Enter three integers: 1 2 3
 You entered 3 2 1
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)
+[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

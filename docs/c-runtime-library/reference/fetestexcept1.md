@@ -26,7 +26,7 @@ Determines which of the specified floating-point exception status flags are curr
 
 ## Syntax
 
-```
+```C
 int fetestexcept(
    int excepts
 );
@@ -67,7 +67,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>

@@ -26,7 +26,7 @@ Scales argument by a power of 2.
 
 ## Syntax
 
-```
+```C
 double _scalb(
    double x,
    long exp
@@ -63,7 +63,7 @@ The **_scalb** function calculates the value of *x* * 2<sup>*exp*</sup>.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ldexp](../../c-runtime-library/reference/ldexp.md)<br/>

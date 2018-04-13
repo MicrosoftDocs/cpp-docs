@@ -26,16 +26,10 @@ Gets the current time. These are versions of [_ftime, _ftime32, _ftime64](../../
 
 ## Syntax
 
-```
-errno_t _ftime_s(
-   struct _timeb *timeptr
-);
-errno_t _ftime32_s(
-   struct __timeb32 *timeptr
-);
-errno_t _ftime64_s(
-   struct __timeb64 *timeptr
-);
+```C
+errno_t _ftime_s( struct _timeb *timeptr );
+errno_t _ftime32_s( struct __timeb32 *timeptr );
+errno_t _ftime64_s( struct __timeb64 *timeptr );
 ```
 
 ### Parameters
@@ -51,21 +45,16 @@ Zero if successful, an error code on failure. If *timeptr* is `NULL`, the return
 
 The `_ftime_s` function gets the current local time and stores it in the structure pointed to by *timeptr*. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.
 
-`dstflag`
-Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)
+|Field|Description|
+|-|-|
+|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)|
+|**millitm**|Fraction of a second in milliseconds.|
+|**time**|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
+|**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of `timezone` is set from the value of the global variable `_timezone` (see `_tzset`).|
 
-`millitm`
-Fraction of a second in milliseconds.
+The `_ftime64_s` function, which uses the `__timeb64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas `_ftime32_s` only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
-`time`
-Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).
-
-`timezone`
-Difference in minutes, moving westward, between UTC and local time. The value of `timezone` is set from the value of the global variable `_timezone` (see `_tzset`).
-
-`_ftime64_s`, which uses the `__timeb64` structure, allows file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC; whereas `_ftime32_s` only represents dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
-
-`_ftime_s` is equivalent to `_ftime64_s` and `_timeb` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime_s` uses a 32-bit time and `_timeb` contains a 32-bit time.
+The `_ftime_s` function is equivalent to `_ftime64_s`, and `_timeb` contains a 64-bit time, unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime_s` uses a 32-bit time and `_timeb` contains a 32-bit time.
 
 `_ftime_s` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.
 
@@ -77,7 +66,7 @@ Difference in minutes, moving westward, between UTC and local time. The value of
 |`_ftime32_s`|\<sys/types.h> and \<sys/timeb.h>|
 |`_ftime64_s`|\<sys/types.h> and \<sys/timeb.h>|
 
-For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
@@ -85,7 +74,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_ftime64_s.c
 // This program uses _ftime64_s to obtain the current
 // time and then stores this time in timebuffer.
@@ -136,11 +125,11 @@ Daylight savings time flag (1 means Daylight time is in effect): 1
 The time is Mon Apr 28 11:08:54.230 2003
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
 [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

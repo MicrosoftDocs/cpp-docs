@@ -26,7 +26,7 @@ Sets the stream-position indicator.
 
 ## Syntax
 
-```
+```C
 int fsetpos(
    FILE *stream,
    const fpos_t *pos
@@ -38,18 +38,18 @@ int fsetpos(
 *stream*
 Pointer to `FILE` structure.
 
-`pos`
+*pos*
 Position-indicator storage.
 
 ## Return Value
 
-If successful, `fsetpos` returns 0. On failure, the function returns a nonzero value and sets `errno` to one of the following manifest constants (defined in ERRNO.H): `EBADF`, which means the file is not accessible or the object that *stream* points to is not a valid file structure; or `EINVAL`, which means an invalid value for *stream* or `pos` was passed. If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If successful, `fsetpos` returns 0. On failure, the function returns a nonzero value and sets `errno` to one of the following manifest constants (defined in ERRNO.H): `EBADF`, which means the file is not accessible or the object that *stream* points to is not a valid file structure; or `EINVAL`, which means an invalid value for *stream* or *pos* was passed. If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
 
 ## Remarks
 
-The `fsetpos` function sets the file-position indicator for *stream* to the value of `pos`, which is obtained in a prior call to `fgetpos` against *stream*. The function clears the end-of-file indicator and undoes any effects of [ungetc](../../c-runtime-library/reference/ungetc-ungetwc.md) on *stream*. After calling `fsetpos`, the next operation on *stream* may be either input or output.
+The `fsetpos` function sets the file-position indicator for *stream* to the value of *pos*, which is obtained in a prior call to `fgetpos` against *stream*. The function clears the end-of-file indicator and undoes any effects of [ungetc](../../c-runtime-library/reference/ungetc-ungetwc.md) on *stream*. After calling `fsetpos`, the next operation on *stream* may be either input or output.
 
 ## Requirements
 
@@ -63,7 +63,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [fgetpos](../../c-runtime-library/reference/fgetpos.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetpos](../../c-runtime-library/reference/fgetpos.md)
+[fgetpos](../../c-runtime-library/reference/fgetpos.md)<br/>

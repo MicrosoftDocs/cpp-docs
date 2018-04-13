@@ -26,7 +26,7 @@ Multiplies a floating-point number by an integral power of two.
 
 ## Syntax
 
-```
+```C
 double ldexp(
    double x,
    int exp
@@ -99,7 +99,7 @@ int main( void )
 4.0 times two to the power of 3 is 32.0
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](../../c-runtime-library/reference/frexp.md)<br/>

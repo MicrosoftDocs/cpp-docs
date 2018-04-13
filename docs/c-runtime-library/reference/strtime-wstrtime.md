@@ -26,7 +26,7 @@ Copy the time to a buffer. More secure versions of these functions are available
 
 ## Syntax
 
-```
+```C
 char *_strtime(
    char *timestr
 );
@@ -97,7 +97,7 @@ int main( void )
 The current time is 14:21:44
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
@@ -106,4 +106,4 @@ The current time is 14:21:44
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
 [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)
+[_tzset](../../c-runtime-library/reference/tzset.md)<br/>

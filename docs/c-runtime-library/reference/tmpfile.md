@@ -26,7 +26,7 @@ Creates a temporary file. This function is deprecated because a more secure vers
 
 ## Syntax
 
-```
+```C
 FILE *tmpfile( void );
 ```
 
@@ -89,8 +89,8 @@ Temporary file 3 was created
 3 temporary files deleted
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](../../c-runtime-library/reference/rmtmp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

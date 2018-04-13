@@ -26,7 +26,7 @@ Writes a character to a stream without locking the thread.
 
 ## Syntax
 
-```
+```C
 int _fputc_nolock(
    int c,
    FILE *stream
@@ -39,7 +39,7 @@ wint_t _fputwc_nolock(
 
 ### Parameters
 
-`c`
+*c*
 Character to be written.
 
 *stream*
@@ -95,8 +95,8 @@ int main( void )
 This is a test of _fputc_nolock!!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>

@@ -26,9 +26,8 @@ Writes an integer to a stream.
 
 ## Syntax
 
-```
-
-      int _putw(
+```C
+int _putw(
    int binint,
    FILE *stream
 );
@@ -102,7 +101,7 @@ int main( void )
 Wrote ten words
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getw](../../c-runtime-library/reference/getw.md)
+[_getw](../../c-runtime-library/reference/getw.md)<br/>

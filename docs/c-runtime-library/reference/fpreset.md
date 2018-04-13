@@ -26,7 +26,7 @@ Resets the floating-point package.
 
 ## Syntax
 
-```
+```C
 void _fpreset( void );
 ```
 
@@ -158,7 +158,7 @@ Dividing    5 by    0...
 Error 131: Divide by zero
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>

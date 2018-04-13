@@ -26,7 +26,7 @@ Allocates a number of memory blocks in the heap with additional space for a debu
 
 ## Syntax
 
-```
+```C
 void *_calloc_dbg(
    size_t num,
    size_t size,
@@ -120,9 +120,9 @@ int main( void )
 Allocated memory successfully
 ```
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)
+[_DEBUG](../../c-runtime-library/debug.md)<br/>

@@ -54,7 +54,7 @@ Because C++ allows overloading, you can call overloads of **norm** that take **_
 
 The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively.  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>

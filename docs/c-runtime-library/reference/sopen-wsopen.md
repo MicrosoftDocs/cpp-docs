@@ -26,7 +26,7 @@ Opens a file for sharing. More-secure versions of these functions are availableâ
 
 ## Syntax
 
-```
+```C
 int _sopen(
    const char *filename,
    int oflag,
@@ -192,11 +192,11 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 See the example for [_locking](../../c-runtime-library/reference/locking.md).
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

@@ -26,9 +26,8 @@ Converts a UTC time represented by a `tm struct` to a UTC time represented by a 
 
 ## Syntax
 
-```
-
-      time_t _mkgmtime(
+```C
+time_t _mkgmtime(
    struct tm* timeptr
 );
 __time32_t _mkgmtime32(
@@ -163,7 +162,7 @@ After calling _mkgmtime, t1 = Wed Feb 12 00:00:00 2003
 t.tm_yday = 42
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
@@ -172,4 +171,4 @@ t.tm_yday = 42
 [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
 [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
 [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

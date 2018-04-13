@@ -26,7 +26,7 @@ Retrieves the cosine of a complex number.
 
 ## Syntax
 
-```
+```C
 _Dcomplex ccos(
    _Dcomplex z
 );
@@ -65,7 +65,7 @@ Because C++ allows overloading, you can call overloads of `ccos` that take and r
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)<br/>
@@ -79,4 +79,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 [ctan, ctanf, ctanl](../../c-runtime-library/reference/ctan-ctanf-ctanl.md)<br/>
 [csin, csinf, csinl](../../c-runtime-library/reference/csin-csinf-csinl.md)<br/>
 [casin, casinf, casinl](../../c-runtime-library/reference/casin-casinf-casinl.md)<br/>
-[csqrt, csqrtf, csqrtl](../../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)
+[csqrt, csqrtf, csqrtl](../../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)<br/>

@@ -26,7 +26,7 @@ Rounds the specified floating-point value to the nearest integral value, by usin
 
 ## Syntax
 
-```
+```C
 long int lrint(
    double x
 );
@@ -71,7 +71,7 @@ long long int llrintl(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 the value to round.
 
 ## Return Value
@@ -98,6 +98,6 @@ If *x* does not represent the floating-point equivalent of an integral value, th
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

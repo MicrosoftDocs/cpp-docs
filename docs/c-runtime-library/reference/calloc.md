@@ -26,7 +26,7 @@ Allocates an array in memory with elements initialized to 0.
 
 ## Syntax
 
-```
+```C
 void *calloc(
    size_t num,
    size_t size
@@ -98,9 +98,9 @@ int main( void )
 Allocated 40 long integers
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)
+[realloc](../../c-runtime-library/reference/realloc.md)<br/>

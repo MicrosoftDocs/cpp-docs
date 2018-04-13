@@ -241,6 +241,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/c-runtime-library/reference/ldiv-lldiv.md",
+            "redirect_url": "/cpp/c-runtime-library/reference/div",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/c-runtime-library/reference/ltoa.md",
             "redirect_url": "/cpp/c-runtime-library/reference/itoa-itow",
             "redirect_document_id": false

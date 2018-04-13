@@ -26,7 +26,7 @@ Installs your own termination function to be called by `unexpected`.
 
 ## Syntax
 
-```
+```C
 unexpected_function set_unexpected(
    unexpected_function unexpFunction
 );
@@ -34,7 +34,7 @@ unexpected_function set_unexpected(
 
 ### Parameters
 
-`unexpFunction`
+*unexpFunction*
 Pointer to a function that you write to replace the `unexpected` function.
 
 ## Return Value
@@ -43,7 +43,7 @@ Returns a pointer to the previous termination function registered by `_set_unexp
 
 ## Remarks
 
-The `set_unexpected` function installs `unexpFunction` as the function called by `unexpected`. `unexpected` is not used in the current C++ exception-handling implementation. The `unexpected_function` type is defined in EH.H as a pointer to a user-defined unexpected function, `unexpFunction` that returns `void`. Your custom `unexpFunction` function should not return to its caller.
+The `set_unexpected` function installs *unexpFunction* as the function called by `unexpected`. `unexpected` is not used in the current C++ exception-handling implementation. The `unexpected_function` type is defined in EH.H as a pointer to a user-defined unexpected function, *unexpFunction* that returns `void`. Your custom *unexpFunction* function should not return to its caller.
 
 ```
 typedef void ( *unexpected_function )( );
@@ -51,7 +51,7 @@ typedef void ( *unexpected_function )( );
 
 By default, `unexpected` calls `terminate`. You can change this default behavior by writing your own termination function and calling `set_unexpected` with the name of your function as its argument. `unexpected` calls the last function given as an argument to `set_unexpected`.
 
-Unlike the custom termination function installed by a call to `set_terminate`, an exception can be thrown from within `unexpFunction`.
+Unlike the custom termination function installed by a call to `set_terminate`, an exception can be thrown from within *unexpFunction*.
 
 In a multithreaded environment, unexpected functions are maintained separately for each thread. Each new thread needs to install its own unexpected function. Thus, each thread is in charge of its own unexpected handling.
 
@@ -67,11 +67,11 @@ There is a single `set_unexpected` handler for all dynamically linked DLLs or EX
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
 [_get_unexpected](../../c-runtime-library/reference/get-unexpected.md)<br/>
 [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
 [terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>

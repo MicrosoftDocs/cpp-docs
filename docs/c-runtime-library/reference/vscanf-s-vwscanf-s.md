@@ -25,7 +25,7 @@ Reads formatted data from the standard input stream. These versions of [vscanf, 
 
 ## Syntax
 
-```
+```C
 int vscanf_s(
    const char *format,
    va_list arglist
@@ -145,7 +145,7 @@ The number of fields input is 6
 The contents are: 36 92.300003 y n Wide characters
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -153,4 +153,4 @@ The contents are: 36 92.300003 y n Wide characters
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md)
+[vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md)<br/>

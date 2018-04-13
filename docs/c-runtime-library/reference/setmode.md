@@ -26,7 +26,7 @@ Sets the file translation mode.
 
 ## Syntax
 
-```
+```C
 int _setmode (
    int fd,
    int mode
@@ -114,10 +114,10 @@ int main(void) {
 }
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_set_fmode](../../c-runtime-library/reference/set-fmode.md)
+[_set_fmode](../../c-runtime-library/reference/set-fmode.md)<br/>

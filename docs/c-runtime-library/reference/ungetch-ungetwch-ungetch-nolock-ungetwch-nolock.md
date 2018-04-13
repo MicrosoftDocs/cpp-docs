@@ -29,7 +29,7 @@ Pushes back the last character that's read from the console.
 
 ## Syntax
 
-```
+```C
 int _ungetch(
    int c
 );
@@ -117,8 +117,8 @@ int main( void )
 Whitetoken = White
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)
+[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>

@@ -26,11 +26,8 @@ Determines whether a file descriptor is associated with a character device.
 
 ## Syntax
 
-```
-
-      int _isatty(
-int fd
-);
+```C
+int _isatty( int fd );
 ```
 
 ### Parameters
@@ -86,6 +83,6 @@ int main( void )
 stdout has not been redirected to a file
 ```
 
-## See Also
+## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)
+[File Handling](../../c-runtime-library/file-handling.md)<br/>

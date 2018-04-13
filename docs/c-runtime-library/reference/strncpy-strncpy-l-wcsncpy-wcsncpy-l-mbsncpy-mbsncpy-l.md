@@ -29,7 +29,7 @@ Copy characters of one string to another. More secure versions of these function
 
 ## Syntax
 
-```
+```C
 char *strncpy(
    char *strDest,
    const char *strSource,
@@ -106,13 +106,13 @@ unsigned char *_mbsncpy_l(
 
 ### Parameters
 
-`strDest`
+*strDest*
 Destination string.
 
-`strSource`
+*strSource*
 Source string.
 
-`count`
+*count*
 Number of characters to be copied.
 
 *locale*
@@ -120,20 +120,20 @@ Locale to use.
 
 ## Return Value
 
-Returns `strDest`. No return value is reserved to indicate an error.
+Returns *strDest*. No return value is reserved to indicate an error.
 
 ## Remarks
 
-The `strncpy` function copies the initial `count` characters of `strSource` to `strDest` and returns `strDest`. If `count` is less than or equal to the length of `strSource`, a null character is not appended automatically to the copied string. If `count` is greater than the length of `strSource`, the destination string is padded with null characters up to length `count`. The behavior of `strncpy` is undefined if the source and destination strings overlap.
+The `strncpy` function copies the initial *count* characters of *strSource* to *strDest* and returns *strDest*. If *count* is less than or equal to the length of *strSource*, a null character is not appended automatically to the copied string. If *count* is greater than the length of *strSource*, the destination string is padded with null characters up to length *count*. The behavior of `strncpy` is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
->  `strncpy` does not check for sufficient space in `strDest`; this makes it a potential cause of buffer overruns. The `count` argument limits the number of characters copied; it is not a limit on the size of `strDest`. See the following example. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  `strncpy` does not check for sufficient space in *strDest*; this makes it a potential cause of buffer overruns. The *count* argument limits the number of characters copied; it is not a limit on the size of *strDest*. See the following example. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-If `strDest` or `strSource` is a `NULL` pointer, or if `count` is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`
+If *strDest* or *strSource* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`
 
 `wcsncpy` and `_mbsncpy` are wide-character and multibyte-character versions of `strncpy`. The arguments and return value of `wcsncpy` and `_mbsncpy` vary accordingly. These six functions behave identically otherwise.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -226,7 +226,7 @@ Buffer overrun: s = 'ars.' (should be 'test')
 
 The layout of automatic variables and the level of error detection and code protection can vary with changed compiler settings. This example may have different results when built in other compilation environments or with other compiler options.
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -242,4 +242,4 @@ The layout of automatic variables and the level of error detection and code prot
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
-[strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)
+[strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>

@@ -26,7 +26,7 @@ Closes the specified search handle and releases associated resources.
 
 ## Syntax
 
-```
+```C
 int _findclose(
    intptr_t handle
 );
@@ -34,7 +34,7 @@ int _findclose(
 
 ### Parameters
 
-`handle`
+*handle*
 Search handle returned by a previous call to `_findfirst`.
 
 ## Return Value
@@ -49,7 +49,7 @@ If successful, `_findclose` returns 0. Otherwise, it returns -1 and sets `errno`
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)
+[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>

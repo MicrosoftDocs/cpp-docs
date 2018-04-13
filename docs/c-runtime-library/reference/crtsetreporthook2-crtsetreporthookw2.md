@@ -26,9 +26,8 @@ Installs or uninstalls a client-defined reporting function by hooking it into th
 
 ## Syntax
 
-```
-
-      int _CrtSetReportHook2(
+```C
+int _CrtSetReportHook2(
    int mode,
    _CRT_REPORT_HOOK pfnNewHook
 );
@@ -43,15 +42,12 @@ int _CrtSetReportHookW2(
 *mode*
 The action to take: `_CRT_RPTHOOK_INSTALL` or `_CRT_RPTHOOK_REMOVE`.
 
-`pfnNewHook`
-Report hook to install or remove in the narrow-character version of this function.
-
-`pfnNewHook`
-Report hook to install or remove in the wide-character version of this function.
+*pfnNewHook*
+Report hook to install or remove in the narrow-character or wide-character version of this function.
 
 ## Return Value
 
--1 if an error was encountered, with `EINVAL` or `ENOMEM` set; otherwise returns the reference count of `pfnNewHook` after the call.
+-1 if an error was encountered, with `EINVAL` or `ENOMEM` set; otherwise returns the reference count of *pfnNewHook* after the call.
 
 ## Remarks
 
@@ -239,6 +235,6 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook2) returned 0
 _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 ```
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

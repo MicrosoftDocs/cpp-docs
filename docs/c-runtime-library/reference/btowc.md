@@ -26,7 +26,7 @@ Determine whether an integer represents a valid single-byte character in the ini
 
 ## Syntax
 
-```
+```C
 wint_t btowc(
    int character
 );
@@ -49,6 +49,6 @@ Returns the wide-character representation of the character if the integer repres
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)
+[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>

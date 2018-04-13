@@ -26,7 +26,7 @@ Frees a block of memory in the heap (debug version only).
 
 ## Syntax
 
-```
+```C
 void _free_dbg(
    void *userData,
    int blockType
@@ -35,7 +35,7 @@ void _free_dbg(
 
 ### Parameters
 
-`userData`
+*userData*
 Pointer to the allocated memory block to be freed.
 
 *blockType*
@@ -63,7 +63,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 For a sample of how to use `_free_dbg`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)
+[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)<br/>

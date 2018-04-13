@@ -26,7 +26,7 @@ Returns the number of characters in the formatted string using a pointer to a li
 
 ## Syntax
 
-```
+```C
 int _vscprintf(
    const char *format,
    va_list argptr
@@ -64,7 +64,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 `_vscprintf` returns the number of characters that would be generated if the string pointed to by the list of arguments was printed or sent to a file or buffer using the specified formatting codes. The value returned does not include the terminating null character. `_vscwprintf` performs the same function for wide characters.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
@@ -95,11 +95,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

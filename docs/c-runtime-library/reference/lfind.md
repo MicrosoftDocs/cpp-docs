@@ -26,7 +26,7 @@ Performs a linear search for the specified key. A more secure version of this fu
 
 ## Syntax
 
-```
+```C
 void *_lfind(
    const void *key,
    const void *base,
@@ -108,10 +108,10 @@ int main( )
 Hello found
 ```
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [_lfind_s](../../c-runtime-library/reference/lfind-s.md)<br/>
 [bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
 [_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)
+[qsort](../../c-runtime-library/reference/qsort.md)<br/>

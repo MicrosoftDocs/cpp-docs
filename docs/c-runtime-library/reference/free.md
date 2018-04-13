@@ -26,7 +26,7 @@ Deallocates or frees a memory block.
 
 ## Syntax
 
-```
+```C
 void free(
    void *memblock
 );
@@ -63,7 +63,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [malloc](../../c-runtime-library/reference/malloc.md).
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [_alloca](../../c-runtime-library/reference/alloca.md)<br/>
@@ -72,4 +72,4 @@ See the example for [malloc](../../c-runtime-library/reference/malloc.md).
 [realloc](../../c-runtime-library/reference/realloc.md)<br/>
 [_free_dbg](../../c-runtime-library/reference/free-dbg.md)<br/>
 [_heapmin](../../c-runtime-library/reference/heapmin.md)<br/>
-[_freea](../../c-runtime-library/reference/freea.md)
+[_freea](../../c-runtime-library/reference/freea.md)<br/>

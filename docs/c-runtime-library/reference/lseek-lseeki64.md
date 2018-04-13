@@ -26,9 +26,8 @@ Moves a file pointer to the specified location.
 
 ## Syntax
 
-```
-
-      long _lseek(
+```C
+long _lseek(
    int fd,
    long offset,
    int origin
@@ -155,8 +154,8 @@ Position for current position seek = 10
 Position for end of file seek = 57
 ```
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_tell, _telli64](../../c-runtime-library/reference/tell-telli64.md)
+[_tell, _telli64](../../c-runtime-library/reference/tell-telli64.md)<br/>

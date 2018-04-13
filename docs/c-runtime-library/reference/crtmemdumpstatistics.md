@@ -26,7 +26,7 @@ Dumps the debug header information for a specified heap state in a user-readable
 
 ## Syntax
 
-```
+```C
 void _CrtMemDumpStatistics(
    const _CrtMemState *state
 );
@@ -55,6 +55,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

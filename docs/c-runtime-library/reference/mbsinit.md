@@ -26,21 +26,20 @@ Tracks the state of a multibyte character conversion.
 
 ## Syntax
 
-```
-
-      int mbsinit(
+```C
+int mbsinit(
    const mbstate_t* ps
 );
 ```
 
 ### Parameters
 
-`ps`
+*ps*
 A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.
 
 ## Return Value
 
-Nonzero if `ps` is NULL or if not in the middle of a conversion.
+Nonzero if *ps* is NULL or if not in the middle of a conversion.
 
 ## Remarks
 
@@ -50,7 +49,7 @@ The appropriate code page needs to be installed to support your multibyte charac
 
 ## Example
 
-```
+```cpp
 // crt_mbsinit.cpp
 #include <stdio.h>
 #include <mbctype.h>
@@ -154,6 +153,6 @@ MB String: AaBbCcxXyYzZ
 WC String: AaBbCcxXyYzZ
 ```
 
-## See Also
+## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>

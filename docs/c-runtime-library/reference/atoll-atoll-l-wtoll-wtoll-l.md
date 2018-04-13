@@ -26,7 +26,7 @@ Converts a string to a `long long` integer.
 
 ## Syntax
 
-```
+```C
 long long atoll(
    const char *str
 );
@@ -75,7 +75,7 @@ A `whitespace` consists of space or tab characters, which are ignored; `sign` is
 
 `_wtoll` is identical to `atoll` except that it takes a wide character string as a parameter.
 
-The versions of these functions that have the `_l` suffix are identical to the versions that don't have it, except that they use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix are identical to the versions that don't have it, except that they use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 
@@ -143,7 +143,7 @@ Overflow condition occurred.
 
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
@@ -152,4 +152,4 @@ Overflow condition occurred.
 [_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
 [_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
 [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](../../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)
+[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](../../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>

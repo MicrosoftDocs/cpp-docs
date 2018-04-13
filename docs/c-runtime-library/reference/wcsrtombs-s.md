@@ -26,7 +26,7 @@ Convert a wide character string to its multibyte character string representation
 
 ## Syntax
 
-```
+```C
 errno_t wcsrtombs_s(
    size_t *pReturnValue,
    char *mbstr,
@@ -47,22 +47,22 @@ errno_t wcsrtombs_s(
 
 ### Parameters
 
-[out] `pReturnValue`
+*pReturnValue*
 The number of characters converted.
 
-[out] `mbstr`
+*mbstr*
 The address of a buffer for the resulting converted multibyte character string.
 
-[out] `sizeInBytes`
-The size in bytes of the `mbstr` buffer.
+*sizeInBytes*
+The size in bytes of the *mbstr* buffer.
 
-[in] `wcstr`
+*wcstr*
 Points to the wide character string to be converted.
 
-[in] `count`
-The maximum number of bytes to be stored in the `mbstr` buffer, or [_TRUNCATE](../../c-runtime-library/truncate.md).
+*count*
+The maximum number of bytes to be stored in the *mbstr* buffer, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-[in] `mbstate`
+*mbstate*
 A pointer to an `mbstate_t` conversion state object.
 
 ## Return Value
@@ -71,42 +71,42 @@ Zero if successful, an error code on failure.
 
 |Error condition|Return value and `errno`|
 |---------------------|------------------------------|
-|`mbstr` is `NULL` and `sizeInBytes` > 0|`EINVAL`|
-|`wcstr` is `NULL`|`EINVAL`|
-|The destination buffer is too small to contain the converted string (unless `count` is `_TRUNCATE`; see Remarks below)|`ERANGE`|
+|*mbstr* is `NULL` and *sizeInBytes* > 0|`EINVAL`|
+|*wcstr* is `NULL`|`EINVAL`|
+|The destination buffer is too small to contain the converted string (unless *count* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
 
 If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
 
 ## Remarks
 
-The `wcsrtombs_s` function converts a string of wide characters pointed to by `wcstr` into multibyte characters stored in the buffer pointed to by `mbstr`, using the conversion state contained in `mbstate`. The conversion will continue for each character until one of these conditions is met:
+The `wcsrtombs_s` function converts a string of wide characters pointed to by *wcstr* into multibyte characters stored in the buffer pointed to by *mbstr*, using the conversion state contained in *mbstate*. The conversion will continue for each character until one of these conditions is met:
 
 -   A null wide character is encountered
 
 -   A wide character that cannot be converted is encountered
 
--   The number of bytes stored in the `mbstr` buffer equals `count`.
+-   The number of bytes stored in the *mbstr* buffer equals *count*.
 
 The destination string is always null-terminated (even in the case of an error).
 
-If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `wcsrtombs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
+If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `wcsrtombs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.
 
-If `wcsrtombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `mbstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `mbstr` is `NULL`, `count` is ignored.
+If `wcsrtombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not `NULL`). This occurs even if the *mbstr* argument is `NULL` and provides a way to determine the required buffer size. Note that if *mbstr* is `NULL`, *count* is ignored.
 
 If `wcsrtombs_s` encounters a wide character it cannot convert to a multibyte character, it puts -1 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
 
-If the sequences pointed to by `wcstr` and `mbstr` overlap, the behavior of `wcsrtombs_s` is undefined. `wcsrtombs_s` is affected by the LC_TYPE category of the current locale.
+If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of `wcsrtombs_s` is undefined. `wcsrtombs_s` is affected by the LC_TYPE category of the current locale.
 
 > [!IMPORTANT]
->  Ensure that `wcstr` and `mbstr` do not overlap, and that `count` correctly reflects the number of wide characters to convert.
+>  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of wide characters to convert.
 
-The `wcsrtombs_s` function differs from [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md) by its restartability. The conversion state is stored in `mbstate` for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
+The `wcsrtombs_s` function differs from [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ## Exceptions
 
-The `wcsrtombs_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the `mbstate` is null.
+The `wcsrtombs_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the *mbstate* is null.
 
 ## Example
 
@@ -161,7 +161,7 @@ The string was successfully converted.
 |-------------|---------------------|
 |`wcsrtombs_s`|\<wchar.h>|
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -170,4 +170,4 @@ The string was successfully converted.
 [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md)<br/>
 [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
 [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)
+[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>

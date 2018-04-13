@@ -26,7 +26,7 @@ Convert a wide character into its multibyte character representation. A version 
 
 ## Syntax
 
-```
+```C
 errno_t wcrtomb_s(
    size_t *pReturnValue,
    char *mbchar,
@@ -45,19 +45,19 @@ errno_t wcrtomb_s(
 
 ### Parameters
 
-[out] `pReturnValue`
+*pReturnValue*
 Returns the number of bytes written or -1 if an error occurred.
 
-[out] *mbchar*
+*mbchar*
 The resulting multibyte converted character.
 
-[in] `sizeOfmbchar`
+`sizeOfmbchar`
 The size of the *mbchar* variable in bytes.
 
-[in] *wchar*
+*wchar*
 A wide character to convert.
 
-[in] `mbstate`
+*mbstate*
 A pointer to an `mbstate_t` object.
 
 ## Return Value
@@ -66,17 +66,17 @@ Returns zero or an `errno` value if an error occurs.
 
 ## Remarks
 
-The `wcrtomb_s` function converts a wide character, beginning in the specified conversion state contained in `mbstate`, from the value contained in *wchar*, into the address represented by *mbchar*. The `pReturnValue` value will be the number of bytes converted, but no more than `MB_CUR_MAX` bytes, or an -1 if an error occurred.
+The `wcrtomb_s` function converts a wide character, beginning in the specified conversion state contained in *mbstate*, from the value contained in *wchar*, into the address represented by *mbchar*. The *pReturnValue* value will be the number of bytes converted, but no more than `MB_CUR_MAX` bytes, or an -1 if an error occurred.
 
-If `mbstate` is null, the internal `mbstate_t` conversion state is used. If the character contained in *wchar* does not have a corresponding multibyte character, the value of `pReturnValue` will be -1 and the function will return the `errno` value of `EILSEQ`.
+If *mbstate* is null, the internal `mbstate_t` conversion state is used. If the character contained in *wchar* does not have a corresponding multibyte character, the value of *pReturnValue* will be -1 and the function will return the `errno` value of `EILSEQ`.
 
-The `wcrtomb_s` function differs from [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in `mbstate` for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
+The `wcrtomb_s` function differs from [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
 
 In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ## Exceptions
 
-The `wcrtomb_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the `mbstate` is null.
+The `wcrtomb_s` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and the *mbstate* is null.
 
 ## Example
 
@@ -128,9 +128,9 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 |-------------|---------------------|
 |`wcrtomb_s`|\<wchar.h>|
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)
+[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>

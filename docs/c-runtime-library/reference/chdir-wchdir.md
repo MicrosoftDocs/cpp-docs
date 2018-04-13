@@ -26,7 +26,7 @@ Changes the current working directory.
 
 ## Syntax
 
-```
+```C
 int _chdir(
    const char *dirname
 );
@@ -130,9 +130,9 @@ int main( int argc, char *argv[] )
                0 Dir(s)  67,326,029,824 bytes free
 ```
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
 [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

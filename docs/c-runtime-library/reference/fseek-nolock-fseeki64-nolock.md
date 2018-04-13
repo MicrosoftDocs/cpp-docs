@@ -26,7 +26,7 @@ Moves the file pointer to a specified location.
 
 ## Syntax
 
-```
+```C
 int _fseek_nolock(
    FILE *stream,
    long offset,
@@ -47,7 +47,7 @@ Pointer to the `FILE` structure.
 *offset*
 Number of bytes from `origin.`
 
-`origin`
+*origin*
 Initial position.
 
 ## Return Value
@@ -67,9 +67,9 @@ These functions are the non-locking versions of `fseek` and `_fseeki64`, respect
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)<br/>
 [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[rewind](../../c-runtime-library/reference/rewind.md)
+[rewind](../../c-runtime-library/reference/rewind.md)<br/>

@@ -26,7 +26,7 @@ Versions of [_strdup and _wcsdup](../../c-runtime-library/reference/strdup-wcsdu
 
 ## Syntax
 
-```
+```C
 char *_strdup_dbg(
    const char *strSource,
    int blockType,
@@ -43,7 +43,7 @@ wchar_t *_wcsdup_dbg(
 
 ### Parameters
 
-`strSource`
+*strSource*
 Null-terminated source string.
 
 *blockType*
@@ -83,8 +83,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 All debug versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strdup, _wcsdup, _mbsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

@@ -26,7 +26,7 @@ Convert a string to an unsigned `__int64` value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 _strtoui64(
    const char *nptr,
    char **endptr,
@@ -88,7 +88,7 @@ Both functions stop reading the string `nptr` at the first character they cannot
 |`_tcstoui64`|`_strtoui64`|`_strtoui64`|`_wstrtoui64`|
 |`_tcstoui64_l`|`_strtoui64_l`|`_strtoui64_l`|`_wstrtoui64_l`|
 
-The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoui64_l` and `_wcstoui64_l` are identical to the corresponding functions without the `_l` suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoui64_l` and `_wcstoui64_l` are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If `endptr` is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by `endptr`. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of `nptr` is stored at the location pointed to by `endptr`.
 
@@ -129,7 +129,7 @@ int main() {
 u = 18446744073709551615
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -138,4 +138,4 @@ u = 18446744073709551615
 [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>

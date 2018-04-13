@@ -26,7 +26,7 @@ Writes a character to a stream.
 
 ## Syntax
 
-```
+```C
 int fputc(
    int c,
    FILE *stream
@@ -39,7 +39,7 @@ wint_t fputwc(
 
 ### Parameters
 
-`c`
+*c*
 Character to be written.
 
 *stream*
@@ -53,7 +53,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-Each of these functions writes the single character `c` to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with *stream*. If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.
+Each of these functions writes the single character *c* to a file at the position indicated by the associated file position indicator (if defined) and advances the indicator as appropriate. In the case of `fputc` and `fputwc`, the file is associated with *stream*. If the file cannot support positioning requests or was opened in append mode, the character is appended to the end of the stream.
 
 The two functions behave identically if the stream is opened in ANSI mode. `fputc` does not currently support output into a UNICODE stream.
 
@@ -64,7 +64,7 @@ Routine-specific remarks follow.
 |Routine|Remarks|
 |-------------|-------------|
 |`fputc`|Equivalent to `putc`, but implemented only as a function, rather than as a function and a macro.|
-|`fputwc`|Wide-character version of `fputc`. Writes `c` as a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
+|`fputwc`|Wide-character version of `fputc`. Writes *c* as a multibyte character or a wide character according to whether *stream* is opened in text mode or binary mode.|
 
 ### Generic-Text Routine Mappings
 
@@ -106,8 +106,8 @@ int main( void )
 This is a test of fputc!!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>

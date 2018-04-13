@@ -26,7 +26,7 @@ Accesses variable-argument lists.
 
 ## Syntax
 
-```
+```C
 type va_arg(
    va_list arg_ptr,
    type
@@ -55,11 +55,11 @@ Type of argument to be retrieved.
 `arg_ptr`
 Pointer to the list of arguments.
 
-`dest`
-Pointer to the list of arguments to be initialized from `src`
+*dest*
+Pointer to the list of arguments to be initialized from *src*
 
-`src`
-Pointer to the initialized list of arguments to copy to `dest`.
+*src*
+Pointer to the initialized list of arguments to copy to *dest*.
 
 `prev_param`
 Parameter that precedes the first optional argument.
@@ -80,7 +80,7 @@ The C standard macros, defined in STDARG.H, are used as follows:
 
 -   `va_arg` retrieves a value of *type* from the location that's given by `arg_ptr`, and increments `arg_ptr` to point to the next argument in the list by using the size of *type* to determine where the next argument starts. `va_arg` can be used any number of times in the function to retrieve arguments from the list.
 
--   `va_copy` makes a copy of a list of arguments in its current state. The `src` parameter must already be initialized with `va_start`; it may have been updated with `va_arg` calls, but must not have been reset with `va_end`. The next argument that's retrieved by `va_arg` from `dest` is the same as the next argument that's retrieved from `src`.
+-   `va_copy` makes a copy of a list of arguments in its current state. The *src* parameter must already be initialized with `va_start`; it may have been updated with `va_arg` calls, but must not have been reset with `va_end`. The next argument that's retrieved by `va_arg` from *dest* is the same as the next argument that's retrieved from *src*.
 
 -   After all arguments have been retrieved, `va_end` resets the pointer to **NULL**. `va_end` must be called on each argument list that's initialized with `va_start` or `va_copy` before the function returns.
 
@@ -207,7 +207,7 @@ Deviation is: 0.000000
 
 ```
 
-## See Also
+## See also
 
 [Argument Access](../../c-runtime-library/argument-access.md)<br/>
-[vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](../../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)
+[vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](../../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>

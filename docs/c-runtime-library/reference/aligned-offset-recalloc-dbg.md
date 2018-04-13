@@ -26,7 +26,7 @@ Changes the size of a memory block that was allocated with [_aligned_malloc](../
 
 ## Syntax
 
-```
+```C
 void * _aligned_offset_recalloc_dbg(
    void *memblock,
    size_t num,
@@ -40,25 +40,25 @@ void * _aligned_offset_recalloc_dbg(
 
 ### Parameters
 
-[in] *memblock*
+*memblock*
 The current memory block pointer.
 
-[in] *number*
+*number*
 Number of elements.
 
-[in] *size*
+*size*
 Length in bytes of each element.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] *offset*
+*offset*
 The offset into the memory allocation to force the alignment.
 
-[in] *filename*
+*filename*
 Pointer to the name of the source file that requested the `realloc` operation or NULL.
 
-[in] *linenumber*
+*linenumber*
 Line number in the source file where the `realloc` operation was requested or NULL.
 
 ## Return Value
@@ -69,7 +69,7 @@ Line number in the source file where the `realloc` operation was requested or NU
 
 `_aligned_offset_realloc_dbg` is a debug version of the [_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_offset_recalloc_dbg` is reduced to a call to `_aligned_offset_recalloc`. Both `_aligned_offset_recalloc` and `_aligned_offset_recalloc_dbg` reallocate a memory block in the base heap, but `_aligned_offset_recalloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
-`_aligned_offset_realloc_dbg` reallocates the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
+`_aligned_offset_realloc_dbg` reallocates the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 
 This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size (*number* * *size*) was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_recalloc_dbg` validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to the requested size and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
@@ -81,6 +81,6 @@ For information about how memory blocks are allocated, initialized, and managed 
 |-------------|---------------------|
 |`_aligned_offset_recalloc_dbg`|\<malloc.h>|
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

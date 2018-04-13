@@ -26,7 +26,7 @@ Determines whether a specified multibyte character is alpha or numeric.
 
 ## Syntax
 
-```
+```C
 int _ismbbalnum(
    unsigned int c
 );
@@ -37,7 +37,7 @@ int _ismbbalnum_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to be tested.
 
 *locale*
@@ -47,13 +47,11 @@ Locale to use.
 
 `_ismbbalnum` returns a nonzero value if the expression:
 
-```
-isalnum || _ismbbkalnum
-```
+`isalnum(c) || _ismbbkalnum(c)`
 
-is nonzero for `c`, or 0 if it is not.
+is nonzero for *c*, or 0 if it is not.
 
-The version of this function with the `_l` suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
+The version of this function with the **_l** suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 
 ## Requirements
 
@@ -68,7 +66,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

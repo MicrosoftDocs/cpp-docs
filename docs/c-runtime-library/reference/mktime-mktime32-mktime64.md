@@ -26,7 +26,7 @@ Convert the local time to a calendar value.
 
 ## Syntax
 
-```
+```C
 time_t mktime(
    struct tm *timeptr
 );
@@ -126,11 +126,11 @@ Current time is Fri Apr 25 13:34:07 2003
 In 20 days the time will be Thu May 15 13:34:07 2003
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
 [_mkgmtime, _mkgmtime32, _mkgmtime64](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

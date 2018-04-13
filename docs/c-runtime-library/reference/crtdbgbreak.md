@@ -26,7 +26,7 @@ Sets a break point on a particular line of code. (Used in debug mode only.)
 
 ## Syntax
 
-```
+```C
 void _CrtDbgBreak( void );
 ```
 
@@ -50,7 +50,7 @@ For more information about using other hook-capable run-time functions and writi
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[__debugbreak](../../intrinsics/debugbreak.md)
+[__debugbreak](../../intrinsics/debugbreak.md)<br/>

@@ -29,7 +29,7 @@ Gets the full path of the current working directory on the specified drive.
 
 ## Syntax
 
-```
+```C
 char *_getdcwd_nolock(
    int drive,
    char *buffer,
@@ -50,7 +50,7 @@ Disk drive.
 *buffer*
 Storage location for the path.
 
-`maxlen`
+*maxlen*
 Maximum length of path in characters: `char` for `_getdcwd` and `wchar_t` for `_wgetdcwd`.
 
 ## Return Value
@@ -76,11 +76,11 @@ See [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
 [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
 [_getdrive](../../c-runtime-library/reference/getdrive.md)<br/>
 [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)
+[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>

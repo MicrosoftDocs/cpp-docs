@@ -25,7 +25,7 @@ Reads formatted data from a string. These versions of [vsscanf, vswscanf](../../
 
 ## Syntax
 
-```
+```C
 int vsscanf_s(
    const char *buffer,
    const char *format,
@@ -139,11 +139,11 @@ Integer:  = 15
 Real:     = 15.000000
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
 [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md)
+[vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md)<br/>

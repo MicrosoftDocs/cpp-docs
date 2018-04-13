@@ -29,7 +29,7 @@ Uses information about a disk drive to populate a `_diskfree_t` structure.
 
 ## Syntax
 
-```
+```C
 unsigned _getdiskfree(
    unsigned drive,
    struct _diskfree_t * driveinfo
@@ -38,10 +38,10 @@ unsigned _getdiskfree(
 
 ### Parameters
 
-[in] *drive*
+*drive*
 The disk drive for which you want information.
 
-[out] `driveinfo`
+*driveinfo*
 A `_diskfree_t` structure that will be populated with information about the drive.
 
 ## Return Value
@@ -61,7 +61,7 @@ struct _diskfree_t {
 };
 ```
 
-This function validates its parameters. If the `driveinfo` pointer is `NULL` or *drive* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
+This function validates its parameters. If the *driveinfo* pointer is `NULL` or *drive* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
 
 `total_clusters`
 The total number of clusters, both used and available, on the disk.
@@ -185,6 +185,6 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 ======================================================================
 ```
 
-## See Also
+## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)
+[Directory Control](../../c-runtime-library/directory-control.md)<br/>

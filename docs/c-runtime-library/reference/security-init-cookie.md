@@ -26,7 +26,7 @@ Initializes the global security cookie.
 
 ## Syntax
 
-```
+```C
 void __security_init_cookie(void);
 ```
 
@@ -50,6 +50,6 @@ See the examples in [C Runtime Error R6035](../../error-messages/tool-errors/c-r
 
 `__security_init_cookie` is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
-[Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)
+[Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)<br/>

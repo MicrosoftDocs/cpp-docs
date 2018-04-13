@@ -26,7 +26,7 @@ Calls an application-supplied function for all `_CLIENT_BLOCK` types in the heap
 
 ## Syntax
 
-```
+```C
 void _CrtDoForAllClientObjects(
    void ( * pfn )( void *, void * ),
    void *context
@@ -35,7 +35,7 @@ void _CrtDoForAllClientObjects(
 
 ### Parameters
 
-`pfn`
+*pfn*
 Pointer to the application-supplied function callback function. The first parameter to this function points to the data. The second parameter is the context pointer that is passed to the call to `_CrtDoForAllClientObjects`.
 
 *context*
@@ -49,7 +49,7 @@ If the `_CRTDBG_ALLOC_MEM_DF` bit field of the [_crtDbgFlag](../../c-runtime-lib
 
 For more information about the `_CLIENT_BLOCK` type and how it can be used by other debug functions, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
-If `pfn` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to `EINVAL` and the function returns.
+If *pfn* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is set to `EINVAL` and the function returns.
 
 ## Requirements
 
@@ -61,9 +61,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 **Libraries:** Debug versions of  universal C run-time libraries only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)<br/>
 [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details)<br/>
-[_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)
+[_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)<br/>

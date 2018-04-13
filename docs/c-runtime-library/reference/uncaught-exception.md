@@ -43,6 +43,6 @@ bool __uncaught_exception(
 |-------------|---------------------|
 |__uncaught_exception|eh.h|
 
-## See Also
+## See also
 
-[try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)
+[try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)<br/>

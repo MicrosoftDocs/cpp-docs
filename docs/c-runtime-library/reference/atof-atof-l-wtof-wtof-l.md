@@ -26,7 +26,7 @@ Convert a string to double.
 
 ## Syntax
 
-```
+```C
 double atof(
    const char *str
 );
@@ -138,7 +138,7 @@ Function: atof("  -2,309e-25") = -2.000000e+00
 Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

@@ -26,7 +26,7 @@ Tests for end of file (EOF).
 
 ## Syntax
 
-```
+```C
 int _eof(
    int fd
 );
@@ -105,11 +105,11 @@ This file contains some text.
 Number of bytes read = 29
 ```
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
 [feof](../../c-runtime-library/reference/feof.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

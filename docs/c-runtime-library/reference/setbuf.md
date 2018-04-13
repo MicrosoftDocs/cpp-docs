@@ -26,7 +26,7 @@ Controls stream buffering. This function is deprecated; use [setvbuf](../../c-ru
 
 ## Syntax
 
-```
+```C
 void setbuf(
    FILE *stream,
    char *buffer
@@ -94,10 +94,10 @@ stream1 set to user-defined buffer at: 0012FCDC
 stream2 buffering disabled
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [fflush](../../c-runtime-library/reference/fflush.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)
+[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>

@@ -26,7 +26,7 @@ Reverses the sign of a floating-point argument.
 
 ## Syntax
 
-```
+```C
 double _chgsign(
    double x
 );
@@ -56,7 +56,7 @@ The **_chgsign** functions return a value that's equal to the floating-point arg
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>

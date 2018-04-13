@@ -26,7 +26,7 @@ Sets a new handler mode for `malloc`.
 
 ## Syntax
 
-```
+```C
 int _set_new_mode(
    int newhandlermode
 );
@@ -34,12 +34,12 @@ int _set_new_mode(
 
 ### Parameters
 
-`newhandlermode`
+*newhandlermode*
 New handler mode for `malloc`; valid value is 0 or 1.
 
 ## Return Value
 
-Returns the previous handler mode set for `malloc`. A return value of 1 indicates that, on failure to allocate memory, `malloc` previously called the new handler routine; a return value of 0 indicates that it did not. If the `newhandlermode` argument does not equal 0 or 1, returns -1.
+Returns the previous handler mode set for `malloc`. A return value of 1 indicates that, on failure to allocate memory, `malloc` previously called the new handler routine; a return value of 0 indicates that it did not. If the *newhandlermode* argument does not equal 0 or 1, returns -1.
 
 ## Remarks
 
@@ -51,7 +51,7 @@ _set_new_mode(1)
 
 early in your program or link with Newmode.obj (see [Link Options](../../c-runtime-library/link-options.md)).
 
-This function validates its parameter. If `newhandlermode` is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_**`set_new_mode` returns -1 and sets `errno` to `EINVAL`.
+This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_**`set_new_mode` returns -1 and sets `errno` to `EINVAL`.
 
 ## Requirements
 
@@ -61,11 +61,11 @@ This function validates its parameter. If `newhandlermode` is anything other tha
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
 [realloc](../../c-runtime-library/reference/realloc.md)<br/>
 [_query_new_handler](../../c-runtime-library/reference/query-new-handler.md)<br/>
-[_query_new_mode](../../c-runtime-library/reference/query-new-mode.md)
+[_query_new_mode](../../c-runtime-library/reference/query-new-mode.md)<br/>

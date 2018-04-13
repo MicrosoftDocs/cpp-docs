@@ -26,7 +26,7 @@ Dumps all the memory blocks in the debug heap when a memory leak has occurred (d
 
 ## Syntax
 
-```
+```C
 
 int _CrtDumpMemoryLeaks( void );
 ```
@@ -63,6 +63,6 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 For a sample of how to use `_CrtDumpMemoryLeaks`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

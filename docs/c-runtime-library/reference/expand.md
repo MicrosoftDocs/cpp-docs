@@ -26,7 +26,7 @@ Changes the size of a memory block.
 
 ## Syntax
 
-```
+```C
 void *_expand(
    void *memblock,
    size_t size
@@ -104,11 +104,11 @@ Allocated 512 bytes at 002C12BC
 Expanded block to 1024 bytes at 002C12BC
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
 [_msize](../../c-runtime-library/reference/msize.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)
+[realloc](../../c-runtime-library/reference/realloc.md)<br/>

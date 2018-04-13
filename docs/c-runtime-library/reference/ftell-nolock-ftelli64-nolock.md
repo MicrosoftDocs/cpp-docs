@@ -26,7 +26,7 @@ Gets the current position of a file pointer, without locking the thread.
 
 ## Syntax
 
-```
+```C
 long _ftell_nolock(
    FILE *stream
 );
@@ -57,10 +57,10 @@ These functions are non-locking versions of `ftell` and `_ftelli64`, respectivel
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetpos](../../c-runtime-library/reference/fgetpos.md)<br/>
 [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
 [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)
+[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)<br/>

@@ -154,11 +154,11 @@ Access is denied.
 Mode set to read/write
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)
+[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>

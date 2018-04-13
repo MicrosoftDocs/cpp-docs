@@ -26,7 +26,7 @@ Computes the base-e exponential of a value, minus one.
 
 ## Syntax
 
-```
+```C
 double expm1(
    double x
 );
@@ -65,7 +65,7 @@ Because C++ allows overloading, you can call overloads of **expm1** that take an
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>

@@ -26,7 +26,7 @@ Processes the specified function at exit.
 
 ## Syntax
 
-```
+```C
 int atexit(
    void (__cdecl *func )( void )
 );
@@ -101,9 +101,9 @@ This is executed first.
 This is executed next.
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)
+[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>

@@ -26,7 +26,7 @@ Gets or sets the current floating-point rounding mode.
 
 ## Syntax
 
-```
+```C
 int fegetround(void);
 
 int fesetround(
@@ -86,7 +86,7 @@ To use these functions, you must turn off floating-point optimizations that coul
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [nearbyint, nearbyintf, nearbyintl](../../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md)<br/>

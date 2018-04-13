@@ -29,7 +29,7 @@ Moves a string pointer back one character.
 
 ## Syntax
 
-```
+```C
 unsigned char *_strdec(
    const unsigned char *start,
    const unsigned char *current
@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](../../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
 [_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)
+[_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>

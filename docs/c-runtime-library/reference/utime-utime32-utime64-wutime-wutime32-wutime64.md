@@ -26,7 +26,7 @@ Set the file modification time.
 
 ## Syntax
 
-```
+```C
 int _utime(
    const char *filename,
    struct _utimbuf *times
@@ -188,7 +188,7 @@ Directory of C:\test
                0 Dir(s)  20,742,955,008 bytes free
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
@@ -199,4 +199,4 @@ Directory of C:\test
 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
 [_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

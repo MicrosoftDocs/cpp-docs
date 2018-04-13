@@ -29,7 +29,7 @@ Compares up to the specified count of characters of two strings.
 
 ## Syntax
 
-```
+```C
 int strncmp(
    const char *string1,
    const char *string2,
@@ -59,10 +59,10 @@ int _mbsncmp_l(
 
 ### Parameters
 
-`string1, string2`
+*string1*, *string2*<br/>
 Strings to compare.
 
-`count`
+*count*
 Number of characters to compare.
 
 *locale*
@@ -70,23 +70,23 @@ Locale to use.
 
 ## Return Value
 
-The return value indicates the relation of the substrings of `string1` and `string2` as follows.
+The return value indicates the relation of the substrings of *string1* and *string2* as follows.
 
 |Return value|Description|
 |------------------|-----------------|
-|< 0|`string1` substring less than `string2` substring|
-|0|`string1` substring identical to `string2` substring|
-|> 0|`string1` substring greater than `string2` substring|
+|< 0|*string1* substring less than *string2* substring|
+|0|*string1* substring identical to *string2* substring|
+|> 0|*string1* substring greater than *string2* substring|
 
 On a parameter validation error, `_mbsncmp` and `_mbsncmp_l` return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `strncmp` function performs an ordinal comparison of at most the first `count` characters in `string1` and `string2` and returns a value indicating the relationship between the substrings. `strncmp` is a case-sensitive version of `_strnicmp`. `wcsncmp` and `_mbsncmp` are case-sensitive versions of `_wcsnicmp` and `_mbsnicmp`.
+The `strncmp` function performs an ordinal comparison of at most the first *count* characters in *string1* and *string2* and returns a value indicating the relationship between the substrings. `strncmp` is a case-sensitive version of `_strnicmp`. `wcsncmp` and `_mbsncmp` are case-sensitive versions of `_wcsnicmp` and `_mbsnicmp`.
 
 `wcsncmp` and `_mbsncmp` are wide-character and multibyte-character versions of `strncmp`. The arguments of `wcsncmp` are wide-character strings; those of `_mbsncmp` are multibyte-character strings. `_mbsncmp` recognizes multibyte-character sequences according to a multibyte code page and returns `_NLSCMPERROR` on an error.
 
-Also, `_mbsncmp` and `_mbsncmp_l` validate parameters. If `string1` or `string2` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsncmp` and `_mbsncmp_l` return `_NLSCMPERROR` and set `errno` to `EINVAL`. `strncmp` and `wcsncmp` do not validate their parameters. These functions behave identically otherwise.
+Also, `_mbsncmp` and `_mbsncmp_l` validate parameters. If *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsncmp` and `_mbsncmp_l` return `_NLSCMPERROR` and set `errno` to `EINVAL`. `strncmp` and `wcsncmp` do not validate their parameters. These functions behave identically otherwise.
 
 The comparison behavior of `_mbsncmp` and `_mbsncmp_l` is affected by the setting of the `LC_CTYPE` category setting of the locale. This controls detection of leading and trailing bytes of multibyte characters. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The `_mbsncmp` function uses the current locale for this locale-dependent behavior. The `_mbsncmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md). If the locale is a single-byte locale, the behavior of these functions is identical to `strncmp`.
 
@@ -158,7 +158,7 @@ Function:   strnicmp _strnicmp (first 10 characters only)
 Result:      String 1 is equal to string 2
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -170,4 +170,4 @@ Result:      String 1 is equal to string 2
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

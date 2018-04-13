@@ -26,43 +26,43 @@ Compares characters in two buffers.
 
 ## Syntax
 
-```
+```C
 int memcmp(
-   const void *buf1,
-   const void *buf2,
+   const void *buffer1,
+   const void *buffer2,
    size_t count
 );
 int wmemcmp(
-   const wchar_t * buf1,
-   const wchar_t * buf2,
+   const wchar_t * buffer1,
+   const wchar_t * buffer2,
    size_t count
 );
 ```
 
 ### Parameters
 
-`buf1`
+*buffer1*
 First buffer.
 
-`buf2`
+*buffer2*
 Second buffer.
 
-`count`
+*count*
 Number of characters to compare. (Compares bytes for `memcmp`, wide characters for `wmemcmp`).
 
 ## Return Value
 
 The return value indicates the relationship between the buffers.
 
-|Return value|Relationship of first `count` characters of buf1 and buf2|
+|Return value|Relationship of first *count* characters of buf1 and buf2|
 |------------------|---------------------------------------------------------------|
-|< 0|`buf1` less than `buf2`|
-|0|`buf1` identical to `buf2`|
-|> 0|`buf1` greater than `buf2`|
+|< 0|*buffer1* less than *buffer2*|
+|0|*buffer1* identical to *buffer2*|
+|> 0|*buffer1* greater than *buffer2*|
 
 ## Remarks
 
-Compares the first `count` characters of `buf1` and `buf2` and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as `unsigned char` for `memcmp`, and as `wchar_t` for `wmemcmp`.
+Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as `unsigned char` for `memcmp`, and as `wchar_t` for `wmemcmp`.
 
 ## Requirements
 
@@ -125,7 +125,7 @@ Compare '1,2' to '1,2':
 int_arr1 is equal to int_arr2.
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
@@ -133,4 +133,4 @@ int_arr1 is equal to int_arr2.
 [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
 [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
 [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

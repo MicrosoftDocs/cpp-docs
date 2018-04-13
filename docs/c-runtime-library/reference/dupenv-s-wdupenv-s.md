@@ -29,7 +29,7 @@ Gets a value from the current environment.
 
 ## Syntax
 
-```
+```C
 errno_t _dupenv_s(
    char **buffer,
    size_t *numberOfElements,
@@ -66,7 +66,7 @@ If these functions cannot allocate enough memory, they set *buffer* to `NULL` an
 The `_dupenv_s` function searches the list of environment variables for *varname*. If the variable is found, `_dupenv_s` allocates a buffer and copies the variable's value into the buffer. The buffer's address and length are returned in *buffer* and *numberOfElements*. By allocating the buffer itself, `_dupenv_s` provides a more convenient alternative to [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).
 
 > [!NOTE]
->  It is the calling program's responsibility to free the memory by calling [free](../../c-runtime-library/reference/free.md).
+> It is the calling program's responsibility to free the memory by calling [free](../../c-runtime-library/reference/free.md).
 
 If the variable is not found, then *buffer* is set to `NULL`, *numberOfElements* is set to 0, and the return value is 0 because this situation is not considered to be an error condition.
 
@@ -95,7 +95,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_dupenv_s.c
 #include  <stdlib.h>
 
@@ -114,17 +114,15 @@ int main( void )
 }
 ```
 
-## Sample Output
-
-```
+```Output
 pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl
 nonexistentvariable = (null)
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
 [_dupenv_s_dbg, _wdupenv_s_dbg](../../c-runtime-library/reference/dupenv-s-dbg-wdupenv-s-dbg.md)<br/>
 [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
-[_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)
+[_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)<br/>

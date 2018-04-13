@@ -26,7 +26,7 @@ Calculates the cube root.
 
 ## Syntax
 
-```
+```C
 double cbrt(
    double x
 );
@@ -93,7 +93,7 @@ int main( void )
 The cube root of -64.64 is -4.013289
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>

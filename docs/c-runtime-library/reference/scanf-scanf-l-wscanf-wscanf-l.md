@@ -26,7 +26,7 @@ Reads formatted data from the standard input stream. More secure versions of the
 
 ## Syntax
 
-```
+```C
 int scanf(
    const char *format [,
    argument]...
@@ -75,7 +75,7 @@ The `scanf` function reads data from the standard input stream `stdin` and write
 
 `wscanf` is a wide-character version of `scanf`; the *format* argument to `wscanf` is a wide-character string. `wscanf` and `scanf` behave identically if the stream is opened in ANSI mode. `scanf` doesn't currently support input from a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -133,7 +133,7 @@ The number of fields input is 6
 The contents are: 36 92.300003 y n Wide characters
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -141,4 +141,4 @@ The contents are: 36 92.300003 y n Wide characters
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)
+[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

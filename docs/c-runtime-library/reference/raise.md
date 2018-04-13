@@ -69,4 +69,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
-[signal](../../c-runtime-library/reference/signal.md)
+[signal](../../c-runtime-library/reference/signal.md)<br/>

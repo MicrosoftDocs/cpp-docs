@@ -26,7 +26,7 @@ Performs a binary search of a sorted array. This is version of [bsearch](../../c
 
 ## Syntax
 
-```
+```C
 void *bsearch_s(
    const void *key,
    const void *base,
@@ -179,9 +179,9 @@ cat cow dog goat horse human pig rat
 cat found at 002F0F04
 ```
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [_lfind](../../c-runtime-library/reference/lfind.md)<br/>
 [_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)
+[qsort](../../c-runtime-library/reference/qsort.md)<br/>

@@ -26,7 +26,7 @@ Computes the Bessel function of the first or second kind, of orders 0, 1, or n. 
 
 ## Syntax
 
-```
+```C
 double _j0(
    double x
 );
@@ -126,7 +126,7 @@ Bessel functions for x = 2.387000:
    Second 4      _yn( 4, x )  -1.626833
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_matherr](../../c-runtime-library/reference/matherr.md)<br/>

@@ -29,7 +29,7 @@ Recovers from stack overflow.
 
 ## Syntax
 
-```
+```C
 
 int _resetstkoflw ( void );
 
@@ -297,6 +297,6 @@ Stack overflow!
 Recovered from stack overflow and allocated 100,000 bytes using _alloca.
 ```
 
-## See Also
+## See also
 
-[_alloca](../../c-runtime-library/reference/alloca.md)
+[_alloca](../../c-runtime-library/reference/alloca.md)<br/>

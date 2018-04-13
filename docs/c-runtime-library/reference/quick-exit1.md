@@ -26,7 +26,7 @@ Causes normal program termination to occur.
 
 ## Syntax
 
-```
+```C
 __declspec(noreturn) void quick_exit(
     int status
 );
@@ -34,7 +34,7 @@ __declspec(noreturn) void quick_exit(
 
 ### Parameters
 
-status
+*status*
 The status code to return to the host environment.
 
 ## Return Value
@@ -47,7 +47,7 @@ The `quick_exit` function causes normal program termination. It calls no functio
 
 The `quick_exit` function calls, in last-in, first-out (LIFO) order, the functions registered by `at_quick_exit`, except for those functions already called when the function was registered.  Behavior is undefined if a [longjmp](../../c-runtime-library/reference/longjmp.md) call is made during a call to a registered function that would terminate the call to the  function.
 
-After the registered functions have been called, `quick_exit` invokes `_Exit` by using the `status` value to return control to the host environment.
+After the registered functions have been called, `quick_exit` invokes `_Exit` by using the *status* value to return control to the host environment.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ After the registered functions have been called, `quick_exit` invokes `_Exit` by
 
 For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
@@ -66,4 +66,4 @@ For more information about compatibility, see [Compatibility](../../c-runtime-li
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

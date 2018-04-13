@@ -26,7 +26,7 @@ Break a path name into components. More secure versions of these functions are a
 
 ## Syntax
 
-```
+```C
 void _splitpath(
    const char *path,
    char *drive,
@@ -51,13 +51,13 @@ Full path.
 *drive*
 Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
 
-`dir`
+*dir*
 Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
 
-`fname`
+*fname*
 Base filename (no extension). You can pass `NULL` for this parameter if you do not need the filename.
 
-`ext`
+*ext*
 Filename extension, including leading period (`.`). You can pass `NULL` for this parameter if you do not need the filename extension.
 
 ## Remarks
@@ -104,11 +104,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [_makepath](../../c-runtime-library/reference/makepath-wmakepath.md).
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
 [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
 [_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)
+[_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)<br/>

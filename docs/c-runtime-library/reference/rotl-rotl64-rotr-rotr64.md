@@ -26,7 +26,7 @@ Rotates bits to the left (**_rotl**) or right (**_rotr**).
 
 ## Syntax
 
-```
+```C
 
 unsigned int _rotl(
    unsigned int value,
@@ -111,8 +111,7 @@ int main( void )
 101010101010101 rotated right four times is 1010101010101010
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_lrotl, _lrotr](../../c-runtime-library/reference/lrotl-lrotr.md)<br/>
-

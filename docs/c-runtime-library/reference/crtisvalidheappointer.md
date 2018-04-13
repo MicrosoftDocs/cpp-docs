@@ -26,16 +26,15 @@ Verifies that a specified pointer is in a heap allocated by some C run-time libr
 
 ## Syntax
 
-```
-
-      int _CrtIsValidHeapPointer(
+```C
+int _CrtIsValidHeapPointer(
    const void *userData
 );
 ```
 
 ### Parameters
 
-`userData`
+*userData*
 Pointer to the beginning of an allocated memory block.
 
 ## Return Value
@@ -126,6 +125,6 @@ my_pointer has read and write accessibility.
 my_pointer is within the local heap.
 ```
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

@@ -29,9 +29,8 @@ Writes a character to the console without locking the thread.
 
 ## Syntax
 
-```
-
-      int _putch_nolock(
+```C
+int _putch_nolock(
 int c
 );
 wint_t _putwch_nolock(
@@ -71,8 +70,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)
+[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>

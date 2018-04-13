@@ -26,7 +26,7 @@ Enable or disable support of the `%n` format in [printf, _printf_l, wprintf, _wp
 
 ## Syntax
 
-```
+```C
 int _set_printf_count_output(
    int enable
 );
@@ -34,7 +34,7 @@ int _set_printf_count_output(
 
 ### Parameters
 
-`enable`
+*enable*
 A non-zero value to enable `%n` support, 0 to disable `%n` support.
 
 ## Property Value/Return Value
@@ -80,6 +80,6 @@ int main()
 i = 5
 ```
 
-## See Also
+## See also
 
-[_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)
+[_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)<br/>

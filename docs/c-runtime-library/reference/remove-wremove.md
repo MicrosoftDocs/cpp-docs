@@ -26,9 +26,8 @@ Delete a file.
 
 ## Syntax
 
-```
-
-      int remove(
+```C
+int remove(
    const char *path
 );
 int _wremove(
@@ -99,7 +98,7 @@ This file will be deleted.
 Deleted 'CRT_REMOVE.TXT'
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_unlink, _wunlink](../../c-runtime-library/reference/unlink-wunlink.md)
+[_unlink, _wunlink](../../c-runtime-library/reference/unlink-wunlink.md)<br/>

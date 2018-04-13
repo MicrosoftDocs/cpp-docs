@@ -29,7 +29,7 @@ Creates a pipe for reading and writing.
 
 ## Syntax
 
-```
+```C
 int _pipe(
    int *pfds,
    unsigned int psize,
@@ -39,24 +39,24 @@ int _pipe(
 
 ### Parameters
 
-`pfds`[2]
-Array to hold read and write file descriptors.
+*pfds*
+Pointer to an array of two **int** to hold read and write file descriptors.
 
-`psize`
+*psize*
 Amount of memory to reserve.
 
-`textmode`
+*textmode*
 File mode.
 
 ## Return Value
 
 Returns 0 if successful. Returns -1 to indicate an error. On error, `errno` is set to one of these values:
 
--   `EMFILE`, which indicates that no more file descriptors are available.
+- `EMFILE`, which indicates that no more file descriptors are available.
 
--   `ENFILE`, which indicates a system-file-table overflow.
+- `ENFILE`, which indicates a system-file-table overflow.
 
--   `EINVAL`, which indicates that either the array `pfds` is a null pointer or that an invalid value for `textmode` was passed in.
+- `EINVAL`, which indicates that either the array *pfds* is a null pointer or that an invalid value for *textmode* was passed in.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -68,13 +68,13 @@ The `_pipe` function creates a *pipe*, which is an artificial I/O channel that a
 
 The standard output descriptor of `PROGRAM1` is attached to the pipe's write descriptor. The standard input descriptor of `PROGRAM2` is attached to the pipe's read descriptor. This eliminates the need to create temporary files to pass information to other programs.
 
-The `_pipe` function returns two file descriptors to the pipe in the `pfds` argument. The element `pfds`[0] contains the read descriptor, and the element `pfds`[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions `_read` and `_write` can read from and write to a pipe.) To detect the end-of-pipe condition, check for a `_read` request that returns 0 as the number of bytes read.
+The `_pipe` function returns two file descriptors to the pipe in the *pfds* argument. The element *pfds*[0] contains the read descriptor, and the element *pfds*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions `_read` and `_write` can read from and write to a pipe.) To detect the end-of-pipe condition, check for a `_read` request that returns 0 as the number of bytes read.
 
-The `psize` argument specifies the amount of memory, in bytes, to reserve for the pipe. The `textmode` argument specifies the translation mode for the pipe. The manifest constant `_O_TEXT` specifies a text translation, and the constant `_O_BINARY` specifies binary translation. (See [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of text and binary modes.) If the `textmode` argument is 0, `_pipe` uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
+The *psize* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *textmode* argument specifies the translation mode for the pipe. The manifest constant `_O_TEXT` specifies a text translation, and the constant `_O_BINARY` specifies binary translation. (See [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of text and binary modes.) If the *textmode* argument is 0, `_pipe` uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
 
 In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and should not be referenced by any thread until after the `_pipe` call is complete.
 
-To use the `_pipe` function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to `OR` (`|`) the `_O_NOINHERIT` flag with `textmode`. Then, use `_dup` or `_dup2` to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
+To use the `_pipe` function to communicate between a parent process and a child process, each process must have only one descriptor open on the pipe. The descriptors must be opposites: if the parent has a read descriptor open, then the child must have a write descriptor open. The easiest way to do this is to `OR` (`|`) the `_O_NOINHERIT` flag with *textmode*. Then, use `_dup` or `_dup2` to create an inheritable copy of the pipe descriptor that you want to pass to the child. Close the original descriptor, and then spawn the child process. On returning from the spawn call, close the duplicate descriptor in the parent process. For more information, see example 2 later in this article.
 
 In the Windows operating system, a pipe is destroyed when all of its descriptors have been closed. (If all read descriptors on the pipe have been closed, then writing to the pipe causes an error.) All read and write operations on the pipe wait until there is enough data or enough buffer space to complete the I/O request.
 
@@ -328,7 +328,7 @@ This is speaker beep number 9...
 This is speaker beep number 10...
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

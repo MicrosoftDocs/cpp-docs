@@ -26,7 +26,7 @@ Rounds a floating-point value to the nearest integer.
 
 ## Syntax
 
-```
+```C
 double round(
    double x
 );
@@ -105,7 +105,7 @@ roundl(2.500000) is 3
 roundl(-2.500000) is -3
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>

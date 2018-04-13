@@ -25,7 +25,7 @@ An alternative to the & operator.
 
 ## Syntax
 
-```
+```C
 
 #define bitand &
 

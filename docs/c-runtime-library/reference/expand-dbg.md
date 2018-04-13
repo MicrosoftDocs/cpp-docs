@@ -26,7 +26,7 @@ Resizes a specified block of memory in the heap by expanding or contracting the 
 
 ## Syntax
 
-```
+```C
 void *_expand_dbg(
    void *userData,
    size_t newSize,
@@ -38,10 +38,10 @@ void *_expand_dbg(
 
 ### Parameters
 
-`userData`
+*userData*
 Pointer to the previously allocated memory block.
 
-`newSize`
+*newSize*
 Requested new size for the block (in bytes).
 
 *blockType*
@@ -63,9 +63,9 @@ On successful completion, `_expand_dbg` returns a pointer to the resized memory 
 
 The `_expand_dbg` function is a debug version of the _[expand](../../c-runtime-library/reference/expand.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_expand_dbg` is reduced to a call to `_expand`. Both `_expand` and `_expand_dbg` resize a memory block in the base heap, but `_expand_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
-`_expand_dbg` resizes the specified memory block with slightly more space than the requested `newSize`. `newSize` might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. `_expand_dbg` does not move the memory block, as does the [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md) function.
+`_expand_dbg` resizes the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The resize is accomplished by either expanding or contracting the original memory block. `_expand_dbg` does not move the memory block, as does the [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md) function.
 
-When `newSize` is greater than the original block size, the memory block is expanded. During an expansion, if the memory block cannot be expanded to accommodate the requested size, `NULL` is returned. When `newSize` is less than the original block size, the memory block is contracted until the new size is obtained.
+When *newSize* is greater than the original block size, the memory block is expanded. During an expansion, if the memory block cannot be expanded to accommodate the requested size, `NULL` is returned. When *newSize* is less than the original block size, the memory block is contracted until the new size is obtained.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
@@ -140,7 +140,7 @@ Size of block after _expand_dbg of 1 more long: 164
 
 The output of this program depends on your computer's ability to expand all the sections. If all sections are expanded, the output is reflected in the Output section.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)
+[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)<br/>

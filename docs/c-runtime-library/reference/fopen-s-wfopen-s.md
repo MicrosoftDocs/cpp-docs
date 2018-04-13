@@ -26,7 +26,7 @@ Opens a file. These versions of [fopen, _wfopen](../../c-runtime-library/referen
 
 ## Syntax
 
-```
+```C
 errno_t fopen_s(
    FILE** pFile,
    const char *filename,
@@ -41,13 +41,13 @@ errno_t _wfopen_s(
 
 ### Parameters
 
-[out] `pFile`
+*pFile*
 A pointer to the file pointer that will receive the pointer to the opened file.
 
-[in] *filename*
+*filename*
 Filename.
 
-[in] *mode*
+*mode*
 Type of access permitted.
 
 ## Return Value
@@ -56,7 +56,7 @@ Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlis
 
 ### Error Conditions
 
-|`pFile`|*filename*|*mode*|Return Value|Contents of `pFile`|
+|*pFile*|*filename*|*mode*|Return Value|Contents of *pFile*|
 |-------------|----------------|------------|------------------|------------------------|
 |`NULL`|any|any|`EINVAL`|unchanged|
 |any|`NULL`|any|`EINVAL`|unchanged|
@@ -70,7 +70,7 @@ The `fopen_s` function opens the file that's specified by *filename*. `_wfopen_s
 
 `fopen_s` accepts paths that are valid on the file system at the point of execution; UNC paths and paths that involve mapped network drives are accepted by `fopen_s` as long as the system that's executing the code has access to the share or mapped network drive at the time of execution. When you construct paths for `fopen_s`, don't make assumptions about the availability of drives, paths, or network shares in the execution environment. You can use either forward slashes (/) or backslashes (\\) as the directory separators in a path.
 
-These functions validate their parameters. If `pFile`, *filename*, or *mode* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions validate their parameters. If *pFile*, *filename*, or *mode* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 Always check the return value to see if the function succeeded before you perform any further operations on the file. If an error occurs, the error code is returned and the global variable `errno` is set. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -274,7 +274,7 @@ The file 'data2' was opened
 Number of files closed by _fcloseall: 1
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
@@ -283,4 +283,4 @@ Number of files closed by _fcloseall: 1
 [_fileno](../../c-runtime-library/reference/fileno.md)<br/>
 [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)
+[_setmode](../../c-runtime-library/reference/setmode.md)<br/>

@@ -26,7 +26,7 @@ Debug versions of the [_getcwd, _wgetcwd](../../c-runtime-library/reference/getc
 
 ## Syntax
 
-```
+```C
 char *_getcwd_dbg(
    char *buffer,
    int maxlen,
@@ -48,7 +48,7 @@ wchar_t *_wgetcwd_dbg(
 *buffer*
 Storage location for the path.
 
-`maxlen`
+*maxlen*
 Maximum length of the path in characters: `char` for `_getcwd_dbg` and `wchar_t` for `_wgetcwd_dbg`.
 
 *blockType*
@@ -62,7 +62,7 @@ Line number in the source file where the allocation operation was requested or `
 
 ## Return Value
 
-Returns a pointer to *buffer*. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate `maxlen` bytes (when a `NULL` argument is given as *buffer*), or to `ERANGE`, indicating that the path is longer than `maxlen` characters.
+Returns a pointer to *buffer*. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate *maxlen* bytes (when a `NULL` argument is given as *buffer*), or to `ERANGE`, indicating that the path is longer than *maxlen* characters.
 
 For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -87,8 +87,8 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

@@ -75,7 +75,7 @@ Each function converts the input string *nptr* to a `double`. The `strtod` funct
 |`_tcstod`|`strtod`|`strtod`|`wcstod`|
 |`_tcstod_l`|`_strtod_l`|`_strtod_l`|`_wcstod_l`|
 
-The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *nptr*. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the `_l` suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *nptr*. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location pointed to by *endptr*.
 
@@ -164,7 +164,7 @@ string = 10110134932
    Stopped scan at: 932
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
@@ -176,4 +176,4 @@ string = 10110134932
 [atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
 [localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
 [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
-[_free_locale](../../c-runtime-library/reference/free-locale.md)
+[_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>

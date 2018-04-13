@@ -26,7 +26,7 @@ Calculates the floating-point remainder.
 
 ## Syntax
 
-```
+```C
 double fmod(
    double x,
    double y
@@ -94,7 +94,7 @@ int main( void )
 The remainder of -10.00 / 3.00 is -1.000000
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>

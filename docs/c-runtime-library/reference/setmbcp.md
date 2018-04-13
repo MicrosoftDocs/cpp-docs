@@ -26,7 +26,7 @@ Sets a new multibyte code page.
 
 ## Syntax
 
-```
+```C
 int _setmbcp(
    int codepage
 );
@@ -34,12 +34,12 @@ int _setmbcp(
 
 ### Parameters
 
-`codepage`
+*codepage*
 New code page setting for locale-independent multibyte routines.
 
 ## Return Value
 
-Returns 0 if the code page is set successfully. If an invalid code page value is supplied for `codepage`, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.
+Returns 0 if the code page is set successfully. If an invalid code page value is supplied for *codepage*, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.
 
 ## Remarks
 
@@ -53,9 +53,9 @@ The multibyte code page also affects multibyte-character processing by the follo
 |[_fullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)|[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)|
 |[_makepath](../../c-runtime-library/reference/makepath-wmakepath.md)|[_splitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)|[tmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)|
 
-In addition, all run-time library routines that receive multibyte-character `argv` or `envp` program arguments as parameters (such as the `_exec` and `_spawn` families) process these strings according to the multibyte code page. Therefore, these routines are also affected by a call to `_setmbcp` that changes the multibyte code page.
+In addition, all run-time library routines that receive multibyte-character *argv* or *envp* program arguments as parameters (such as the `_exec` and `_spawn` families) process these strings according to the multibyte code page. Therefore, these routines are also affected by a call to `_setmbcp` that changes the multibyte code page.
 
-The `codepage` argument can be set to any of the following values:
+The *codepage* argument can be set to any of the following values:
 
 -   `_MB_CP_ANSI` Use ANSI code page obtained from operating system at program startup.
 
@@ -75,7 +75,7 @@ The `codepage` argument can be set to any of the following values:
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)
+[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

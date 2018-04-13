@@ -26,9 +26,8 @@ Writes a character to **stdout** without locking the thread.
 
 ## Syntax
 
-```
-
-      int _putchar_nolock(
+```C
+int _putchar_nolock(
    int c
 );
 wint_t _putwchar_nolock(
@@ -39,7 +38,7 @@ wint_t _putwchar_nolock(
 
 ### Parameters
 
-`c`
+*c*
 Character to be written.
 
 ## Return Value
@@ -99,8 +98,8 @@ int main( void )
 This is the line of output
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)
+[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>

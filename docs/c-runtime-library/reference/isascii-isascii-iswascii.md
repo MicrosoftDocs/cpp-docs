@@ -67,8 +67,8 @@ For backward compatibility, `isascii` is implemented as a macro only if [&#95;&#
 
 The `isascii`, `__isascii` and `iswascii` functions are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>

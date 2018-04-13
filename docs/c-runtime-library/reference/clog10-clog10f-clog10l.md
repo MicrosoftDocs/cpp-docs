@@ -66,9 +66,9 @@ Because C++ allows overloading, you can call overloads of `clog10` that take and
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)<br/>
 [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)<br/>
-[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)
+[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)<br/>

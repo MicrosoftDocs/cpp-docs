@@ -26,7 +26,7 @@ Converts a string to a `long long` value.
 
 ## Syntax
 
-```
+```C
 long long strtoll(
    const char *nptr,
    char **endptr,
@@ -86,7 +86,7 @@ The `strtoll` function converts `nptr` to a `long long`. Both functions stop rea
 |`_tcstoll`|`strtoll`|`strtoll`|`wcstoll`|
 |`_tcstoll_l`|`_strtoll_l`|`_strtoll_l`|`_wcstoll_l`|
 
-The locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions that don't have the `_l` suffix use the current locale; `_strtoll_l` and `_wcstoll_l` are identical to the corresponding functions that don't have the suffix, except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions that don't have the **_l** suffix use the current locale; `_strtoll_l` and `_wcstoll_l` are identical to the corresponding functions that don't have the suffix, except that they instead use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If `endptr` is not `NULL`, a pointer to the character that stopped the scan is stored at the location that's pointed to by `endptr`. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of `nptr` is stored at the location that's pointed to by `endptr`.
 
@@ -105,7 +105,7 @@ A `whitespace` may consist of space and tab characters, which are ignored; `digi
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -115,4 +115,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 [strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)
+[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>

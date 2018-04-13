@@ -26,9 +26,8 @@ Calculates the size of a block of memory in the heap (debug version only).
 
 ## Syntax
 
-```
-
-      size_t _msize_dbg(
+```C
+size_t _msize_dbg(
    void *userData,
    int blockType
 );
@@ -36,7 +35,7 @@ Calculates the size of a block of memory in the heap (debug version only).
 
 ### Parameters
 
-`userData`
+*userData*
 Pointer to the memory block for which to determine the size.
 
 *blockType*
@@ -125,7 +124,7 @@ Size of block after _malloc_dbg of 40 longs: 160
 Size of block after _realloc_dbg of 40 more longs: 320
 ```
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)
+[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)<br/>

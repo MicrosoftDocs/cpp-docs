@@ -26,7 +26,7 @@ Tests if a floating-point value is not a number (NAN).
 
 ## Syntax
 
-```
+```C
 int isnan(
    /* floating-point */ x
 ); /* C-only macro */
@@ -73,7 +73,7 @@ The **_isnan** and **_isnanf** functions are Microsoft specific. The **_isnanf**
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_finite, _finitef](../../c-runtime-library/reference/finite-finitef.md)<br/>

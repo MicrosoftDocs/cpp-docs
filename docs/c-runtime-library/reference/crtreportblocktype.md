@@ -26,9 +26,8 @@ Returns the block type/subtype associated with a given debug heap block pointer.
 
 ## Syntax
 
-```
-
-      int _CrtReportBlockType(
+```C
+int _CrtReportBlockType(
    const void * pBlock
 };
 ```
@@ -119,9 +118,9 @@ Data: <          > CD CD CD CD CD CD CD CD CD CD
 Object dump complete.
 ```
 
-## See Also
+## See also
 
 [_CrtDoForAllClientObjects](../../c-runtime-library/reference/crtdoforallclientobjects.md)<br/>
 [_CrtSetDumpClient](../../c-runtime-library/reference/crtsetdumpclient.md)<br/>
 [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md)<br/>
-[_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md)
+[_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md)<br/>

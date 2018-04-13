@@ -26,15 +26,13 @@ Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-err
 
 ## Syntax
 
-```
-errno_t _set_doserrno( 
-   int value 
-);
+```C
+errno_t _set_doserrno( int error_value );
 ```
 
 ### Parameters
 
-[in] `value`
+*error_value*
 The new value of `_doserrno`.
 
 ## Return Value
@@ -53,7 +51,7 @@ Possible values are defined in Errno.h.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_get_doserrno](../../c-runtime-library/reference/get-doserrno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

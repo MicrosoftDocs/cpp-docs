@@ -29,7 +29,7 @@ Copies characters of one string to another.  These versions of [strncpy, _strncp
 
 ## Syntax
 
-```
+```C
 errno_t strncpy_s(
    char *strDest,
    size_t numberOfElements,
@@ -112,16 +112,16 @@ errno_t _mbsncpy_s_l(
 
 ### Parameters
 
-`strDest`
+*strDest*
 Destination string.
 
 *numberOfElements*
 The size of the destination string, in characters.
 
-`strSource`
+*strSource*
 Source string.
 
-`count`
+*count*
 Number of characters to be copied, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *locale*
@@ -133,18 +133,18 @@ Zero if successful, `STRUNCATE` if truncation occurred, otherwise an error code.
 
 ### Error Conditions
 
-|`strDest`|*numberOfElements*|`strSource`|Return value|Contents of `strDest`|
+|*strDest*|*numberOfElements*|*strSource*|Return value|Contents of *strDest*|
 |---------------|------------------------|-----------------|------------------|---------------------------|
 |`NULL`|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|`strDest`[0] set to 0|
+|any|any|`NULL`|`EINVAL`|*strDest*[0] set to 0|
 |any|0|any|`EINVAL`|not modified|
-|not `NULL`|too small|any|`ERANGE`|`strDest`[0] set to 0|
+|not `NULL`|too small|any|`ERANGE`|*strDest*[0] set to 0|
 
 ## Remarks
 
-These functions try to copy the first `D` characters of `strSource` to `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If those `D` characters will fit within `strDest` (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to copy the first `D` characters of *strSource* to *strDest*, where `D` is the lesser of *count* and the length of *strSource*. If those `D` characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are copied and a terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-There is an exception to the above paragraph. If `count` is `_TRUNCATE`, then as much of `strSource` as will fit into `strDest` is copied while still leaving room for the terminating null which is always appended.
+There is an exception to the above paragraph. If *count* is `_TRUNCATE`, then as much of *strSource* as will fit into *strDest* is copied while still leaving room for the terminating null which is always appended.
 
 For example,
 
@@ -160,15 +160,15 @@ If truncation behavior is needed, use `_TRUNCATE` or (*size* - 1):
 
 `strncpy_s(dst, 5, "a long string", 4);`
 
-Note that unlike `strncpy`, if `count` is greater than the length of `strSource`, the destination string is NOT padded with null characters up to length `count`.
+Note that unlike `strncpy`, if *count* is greater than the length of *strSource*, the destination string is NOT padded with null characters up to length *count*.
 
 The behavior of `strncpy_s` is undefined if the source and destination strings overlap.
 
-If `strDest` or `strSource` is `NULL`, or *numberOfElements* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
+If *strDest* or *strSource* is `NULL`, or *numberOfElements* is 0, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 `wcsncpy_s` and `_mbsncpy_s` are wide-character and multibyte-character versions of `strncpy_s`. The arguments and return value of `wcsncpy_s` and `mbsncpy_s` do vary accordingly. These six functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -365,7 +365,7 @@ After strncpy_s (with null-termination):
    'mice'
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -379,4 +379,4 @@ After strncpy_s (with null-termination):
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

@@ -26,7 +26,7 @@ Allocates memory on a specified alignment boundary (debug version only).
 
 ## Syntax
 
-```
+```C
 void * _aligned_offset_malloc_dbg(
    size_t size,
    size_t alignment,
@@ -38,19 +38,19 @@ void * _aligned_offset_malloc_dbg(
 
 ### Parameters
 
-[in] *size*
+*size*
 The size of the requested memory allocation.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] *offset*
+*offset*
 The offset into the memory allocation to force the alignment.
 
-[in] *filename*
+*filename*
 Pointer to the name of the source file that requested the allocation operation or NULL.
 
-[in] *linenumber*
+*linenumber*
 Line number in the source file where the allocation operation was requested or NULL.
 
 ## Return Value
@@ -85,6 +85,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

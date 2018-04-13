@@ -26,7 +26,7 @@ Gets an integer from a stream.
 
 ## Syntax
 
-```
+```C
 int _getw(
    FILE *stream
 );
@@ -101,7 +101,7 @@ Line two.
 First data word in file: 0x656e694c
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_putw](../../c-runtime-library/reference/putw.md)
+[_putw](../../c-runtime-library/reference/putw.md)<br/>

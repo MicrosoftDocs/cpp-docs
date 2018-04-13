@@ -26,7 +26,7 @@ Installs a client-defined reporting function by hooking it into the C run-time d
 
 ## Syntax
 
-```
+```C
 _CRT_REPORT_HOOK _CrtSetReportHook(
    _CRT_REPORT_HOOK reportHook
 );
@@ -34,7 +34,7 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
 
 ### Parameters
 
-`reportHook`
+*reportHook*
 New client-defined reporting function to hook into the C run-time debug reporting process.
 
 ## Return Value
@@ -47,7 +47,7 @@ Returns the previous client-defined reporting function.
 
 For a more robust version of `_CrtSetReportHook`, see [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md).
 
-The `_CrtSetReportHook` function installs the new client-defined reporting function specified in `reportHook` and returns the previous client-defined hook. The following example demonstrates how a client-defined report hook should be prototyped:
+The `_CrtSetReportHook` function installs the new client-defined reporting function specified in *reportHook* and returns the previous client-defined hook. The following example demonstrates how a client-defined report hook should be prototyped:
 
 ```
 int YourReportHook( int reportType, char *message, int *returnValue );
@@ -74,7 +74,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtGetReportHook](../../c-runtime-library/reference/crtgetreporthook.md)
+[_CrtGetReportHook](../../c-runtime-library/reference/crtgetreporthook.md)<br/>

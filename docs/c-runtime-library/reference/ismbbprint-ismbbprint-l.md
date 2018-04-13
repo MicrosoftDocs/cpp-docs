@@ -26,7 +26,7 @@ Determines whether a specified multibyte character is a print character.
 
 ## Syntax
 
-```
+```C
 int _ismbbprint(
    unsigned int c
 );
@@ -38,7 +38,7 @@ int _ismbbprint_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to be tested.
 
 *locale*
@@ -52,7 +52,7 @@ Locale to use.
 isprint || _ismbbkprint
 ```
 
-is nonzero for `c`, or 0 if it is not. `_ismbbprint` uses the current locale for any locale-dependent behavior. `_ismbbprint_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+is nonzero for *c*, or 0 if it is not. `_ismbbprint` uses the current locale for any locale-dependent behavior. `_ismbbprint_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
@@ -63,7 +63,7 @@ is nonzero for `c`, or 0 if it is not. `_ismbbprint` uses the current locale for
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

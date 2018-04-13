@@ -26,7 +26,7 @@ Frees a block of memory that was allocated with [_aligned_malloc](../../c-runtim
 
 ## Syntax
 
-```
+```C
 void _aligned_free (
    void *memblock
 );
@@ -53,6 +53,6 @@ This function does not validate its parameter, unlike the other _aligned CRT fun
 
 For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

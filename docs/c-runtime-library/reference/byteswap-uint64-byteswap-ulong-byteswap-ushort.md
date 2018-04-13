@@ -68,6 +68,6 @@ byteswap of 102030405060708 = 807060504030201
 byteswap of 1020304 = 4030201
 ```
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../../c-runtime-library/run-time-routines-by-category.md)<br/>

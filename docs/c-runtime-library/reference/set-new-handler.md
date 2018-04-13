@@ -26,7 +26,7 @@ Transfers control to your error-handling mechanism if the `new` operator fails t
 
 ## Syntax
 
-```
+```C
 _PNH _set_new_handler(
    _PNH pNewHandler
 );
@@ -34,7 +34,7 @@ _PNH _set_new_handler(
 
 ### Parameters
 
-`pNewHandler`
+*pNewHandler*
 Pointer to the application-supplied memory handling function. An argument of 0 causes the new handler to be removed.
 
 ## Return Value
@@ -145,9 +145,9 @@ This application has requested the Runtime to terminate it in an unusual way.
 Please contact the application's support team for more information.
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)
+[realloc](../../c-runtime-library/reference/realloc.md)<br/>

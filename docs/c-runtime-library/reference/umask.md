@@ -26,7 +26,7 @@ Sets the default file-permission mask. A more secure version of this function is
 
 ## Syntax
 
-```
+```C
 int _umask(
    int pmode
 );
@@ -101,11 +101,11 @@ int main( void )
 Oldmask = 0x0000
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

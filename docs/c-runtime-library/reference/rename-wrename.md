@@ -26,9 +26,8 @@ Rename a file or directory.
 
 ## Syntax
 
-```
-
-      int rename(
+```C
+int rename(
    const char *oldname,
    const char *newname
 );
@@ -118,6 +117,6 @@ int main( void )
 File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 ```
 
-## See Also
+## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)
+[File Handling](../../c-runtime-library/file-handling.md)<br/>

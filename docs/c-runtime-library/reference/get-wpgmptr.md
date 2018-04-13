@@ -26,7 +26,7 @@ Gets the current value of the `_wpgmptr` global variable.
 
 ## Syntax
 
-```
+```C
 errno_t _get_wpgmptr( 
    wchar_t **pValue 
 );
@@ -34,12 +34,12 @@ errno_t _get_wpgmptr( 
 
 ### Parameters
 
-[out] `pValue`
+*pValue*
 A pointer to a string to be filled with the current value of the `_wpgmptr` variable.
 
 ## Return Value
 
-Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+Returns zero if successful; an error code on failure. If *pValue* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 
@@ -53,6 +53,6 @@ Only call `_get_wpgmptr` if your program has a wide entry point, like `wmain()` 
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
-[_get_pgmptr](../../c-runtime-library/reference/get-pgmptr.md)
+[_get_pgmptr](../../c-runtime-library/reference/get-pgmptr.md)<br/>

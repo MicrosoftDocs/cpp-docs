@@ -26,7 +26,7 @@ Prints formatted data to a stream.
 
 ## Syntax
 
-```
+```C
 int _fprintf_p(
    FILE *stream,
    const char *format [,
@@ -75,7 +75,7 @@ The locale to use.
 
 `_fwprintf_p` is a wide-character version of `_fprintf_p`; in `_fwprintf_p`, *format* is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `_fprintf_p` doesn't currently support output into a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
@@ -144,7 +144,7 @@ this is a string
 1.500000
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
@@ -154,4 +154,4 @@ this is a string
 [_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l](../../c-runtime-library/reference/cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
 [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
-[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)
+[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)<br/>

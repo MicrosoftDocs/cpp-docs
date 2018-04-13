@@ -29,7 +29,7 @@ Writes formatted output to the console by using a pointer to a list of arguments
 
 ## Syntax
 
-```
+```C
 int _vcprintf(
    const char* format,
    va_list argptr
@@ -71,7 +71,7 @@ The number of characters written, or a negative value if an output error occurs.
 
 Each of these functions takes a pointer to an argument list, then formats and writes the given data to the console. `_vcwprintf` is the wide-character version of `_vcprintf`. It takes a wide-character string as an argument.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
@@ -126,7 +126,7 @@ int main()
     (Related to symbol '<symbol>' defined on line 5).
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
@@ -134,4 +134,4 @@ int main()
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)
+[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>

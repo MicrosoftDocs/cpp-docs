@@ -26,7 +26,7 @@ Returns the address of the current new handler routine.
 
 ## Syntax
 
-```
+```C
 _PNH _query_new_handler(
    void
 );
@@ -52,7 +52,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](../../c-runtime-library/reference/free.md)
+[free](../../c-runtime-library/reference/free.md)<br/>

@@ -26,22 +26,17 @@ Creates a second file descriptor for an open file (`_dup`), or reassigns a file 
 
 ## Syntax
 
-```
-int _dup(
-   int fd
-);
-int _dup2(
-   int fd1,
-   int fd2
-);
+```C
+int _dup( int fd );
+int _dup2( int fd1, int fd2 );
 ```
 
 ### Parameters
 
-*fd*, `fd1`
+*fd*, *fd1*
 File descriptors referring to open file.
 
-`fd2`
+*fd2*
 Any file descriptor.
 
 ## Return Value
@@ -52,11 +47,11 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_dup` and `_dup2` functions associate a second file descriptor with a currently open file. These functions can be used to associate a predefined file descriptor, such as that for `stdout`, with a different file. Operations on the file can be carried out using either file descriptor. The type of access allowed for the file is unaffected by the creation of a new descriptor. `_dup` returns the next available file descriptor for the given file. `_dup2` forces `fd2` to refer to the same file as `fd1`. If `fd2` is associated with an open file at the time of the call, that file is closed.
+The `_dup` and `_dup2` functions associate a second file descriptor with a currently open file. These functions can be used to associate a predefined file descriptor, such as that for `stdout`, with a different file. Operations on the file can be carried out using either file descriptor. The type of access allowed for the file is unaffected by the creation of a new descriptor. `_dup` returns the next available file descriptor for the given file. `_dup2` forces *fd2* to refer to the same file as *fd1*. If *fd2* is associated with an open file at the time of the call, that file is closed.
 
 Both `_dup` and `_dup2` accept file descriptors as parameters. To pass a stream `(FILE *)` to either of these functions, use [_fileno](../../c-runtime-library/reference/fileno.md). The `fileno` routine returns the file descriptor currently associated with the given stream. The following example shows how to associate `stderr` (defined as `FILE` `*` in Stdio.h) with a file descriptor:
 
-```
+```C
 int cstderr = _dup( _fileno( stderr ));
 ```
 
@@ -71,13 +66,12 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_dup.c
 // This program uses the variable old to save
 // the original stdout. It then opens a new file named
 // DataFile and forces stdout to refer to it. Finally, it
 // restores stdout to its original state.
-//
 
 #include <io.h>
 #include <stdlib.h>
@@ -131,9 +125,9 @@ The file 'data' contains:
 This goes to file 'data'
 ```
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

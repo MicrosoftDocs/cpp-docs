@@ -26,7 +26,7 @@ Create a path name from components. More secure versions of these functions are 
 
 ## Syntax
 
-```
+```C
 void _makepath(
    char *path,
    const char *drive,
@@ -51,14 +51,14 @@ Full path buffer.
 *drive*
 Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. `_makepath` inserts the colon automatically in the composite path if it is missing. If *drive* is `NULL` or points to an empty string, no drive letter appears in the composite *path* string.
 
-`dir`
-Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single `dir` argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If `dir` is `NULL` or points to an empty string, no directory path is inserted in the composite *path* string.
+*dir*
+Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *dir* argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If *dir* is `NULL` or points to an empty string, no directory path is inserted in the composite *path* string.
 
-`fname`
-Contains the base file name without any file name extensions. If `fname` is `NULL` or points to an empty string, no filename is inserted in the composite *path* string.
+*fname*
+Contains the base file name without any file name extensions. If *fname* is `NULL` or points to an empty string, no filename is inserted in the composite *path* string.
 
-`ext`
-Contains the actual file name extension, with or without a leading period (.). `_makepath` inserts the period automatically if it does not appear in `ext`. If `ext` is `NULL` or points to an empty string, no extension is inserted in the composite *path* string.
+*ext*
+Contains the actual file name extension, with or without a leading period (.). `_makepath` inserts the period automatically if it does not appear in *ext*. If *ext* is `NULL` or points to an empty string, no extension is inserted in the composite *path* string.
 
 ## Remarks
 
@@ -123,9 +123,9 @@ Path extracted with _splitpath:
    Ext: .c
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
 [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>
-[_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md)
+[_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md)<br/>

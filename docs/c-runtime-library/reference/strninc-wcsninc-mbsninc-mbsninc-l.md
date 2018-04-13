@@ -29,7 +29,7 @@ Advances a string pointer by `n` characters.
 
 ## Syntax
 
-```
+```C
 char *_strninc(
    const char *str,
    size_t count
@@ -54,7 +54,7 @@ unsigned char *_mbsninc(
 *str*
 Source string.
 
-`count`
+*count*
 Number of characters to increment a string pointer.
 
 *locale*
@@ -62,11 +62,11 @@ Locale to use.
 
 ## Return Value
 
-Each of these routines returns a pointer to *str* after *str* has been incremented by `count` characters or `NULL` if the supplied pointer is `NULL`. If `count` is greater than or equal to the number of characters in *str*, the result is undefined.
+Each of these routines returns a pointer to *str* after *str* has been incremented by *count* characters or `NULL` if the supplied pointer is `NULL`. If *count* is greater than or equal to the number of characters in *str*, the result is undefined.
 
 ## Remarks
 
-The `_mbsninc` function increments *str* by `count` multibyte characters. `_mbsninc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
+The `_mbsninc` function increments *str* by *count* multibyte characters. `_mbsninc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.
 
 ### Generic-Text Routine Mappings
 
@@ -89,11 +89,11 @@ The `_mbsninc` function increments *str* by `count` multibyte characters. `_mbsn
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strdec, _wcsdec, _mbsdec, _mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](../../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)
+[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>

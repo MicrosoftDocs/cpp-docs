@@ -26,32 +26,20 @@ Determines the natural logarithm of the absolute value of the gamma function of 
 
 ## Syntax
 
+```C
+double lgamma( double x );
+float lgammaf( float x );
+long double lgammal( long double x );
 ```
-double lgamma(
-   double x
-);
 
-float lgamma(
-   float x
-); //C++ only
-
-long double lgamma(
-   long double x
-); //C++ only
-
-float lgammaf(
-   float x
-);
-
-long double lgammal(
-   long double x
-);
-
+```cpp
+float lgamma( float x ); //C++ only
+long double lgamma( long double x ); //C++ only
 ```
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The value to compute.
 
 ## Return Value
@@ -83,7 +71,7 @@ If x is a rational number, this function returns the logarithm of the factorial 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [tgamma, tgammaf, tgammal](../../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)<br/>

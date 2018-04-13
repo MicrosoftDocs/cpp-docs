@@ -26,7 +26,7 @@ Flushes a file directly to disk.
 
 ## Syntax
 
-```
+```C
 int _commit(
    int fd
 );
@@ -55,10 +55,10 @@ If *fd* is an invalid file descriptor, the invalid parameter handler is invoked,
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
 [_read](../../c-runtime-library/reference/read.md)<br/>
-[_write](../../c-runtime-library/reference/write.md)
+[_write](../../c-runtime-library/reference/write.md)<br/>

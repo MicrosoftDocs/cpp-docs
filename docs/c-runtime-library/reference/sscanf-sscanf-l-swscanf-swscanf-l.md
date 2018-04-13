@@ -26,7 +26,7 @@ Read formatted data from a string. More secure versions of these functions are a
 
 ## Syntax
 
-```
+```C
 int sscanf(
    const char *buffer,
    const char *format [,
@@ -82,7 +82,7 @@ The `sscanf` function reads data from *buffer* into the location given by each *
 
 `swscanf` is a wide-character version of `sscanf`; the arguments to `swscanf` are wide-character strings. `sscanf` does not handle multibyte hexadecimal characters. `swscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `swscanf` and `sscanf` behave identically.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -141,10 +141,10 @@ Integer:  = 15
 Real:     = 15.000000
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)
+[snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)<br/>

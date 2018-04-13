@@ -26,7 +26,7 @@ Gets the default file translation mode for file I/O operations.
 
 ## Syntax
 
-```
+```C
 errno_t _get_fmode( 
    int * pmode 
 );
@@ -34,7 +34,7 @@ errno_t _get_fmode( 
 
 ### Parameters
 
-[out] *pmode*
+*pmode*
 A pointer to an integer to be filled with the current default mode: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value
@@ -57,9 +57,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 See the example in [_set_fmode](../../c-runtime-library/reference/set-fmode.md).
 
-## See Also
+## See also
 
 [_fmode](../../c-runtime-library/fmode.md)<br/>
 [_set_fmode](../../c-runtime-library/reference/set-fmode.md)<br/>
 [_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)
+[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

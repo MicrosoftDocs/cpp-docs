@@ -26,7 +26,7 @@ Retrieves the value of a number raised to the specified power, where the base an
 
 ## Syntax
 
-```
+```C
 _Dcomplex cpow(
    _Dcomplex x, _Dcomplex y
 );
@@ -68,9 +68,9 @@ Because C++ allows overloading, you can call overloads of `cpow` that take and r
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)<br/>
 [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)
+[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)<br/>

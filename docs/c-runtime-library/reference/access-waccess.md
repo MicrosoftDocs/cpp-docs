@@ -26,7 +26,7 @@ Determines if a file is read-only or not. More secure versions are available; se
 
 ## Syntax
 
-```
+```C
 int _access(
    const char *path,
    int mode
@@ -124,10 +124,10 @@ File crt_ACCESS.C exists.
 File crt_ACCESS.C does not have write permission.
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)
+[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>

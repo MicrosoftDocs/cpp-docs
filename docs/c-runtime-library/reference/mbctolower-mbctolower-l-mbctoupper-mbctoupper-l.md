@@ -29,7 +29,7 @@ Tests and converts the case of a multibyte character.
 
 ## Syntax
 
-```
+```C
 unsigned int _mbctolower(
    unsigned int c
 );
@@ -48,7 +48,7 @@ unsigned int _mbctoupper_l(
 
 ### Parameters
 
-`c`
+*c*
 Multibyte character to convert.
 
 *locale*
@@ -56,18 +56,18 @@ Locale to use.
 
 ## Return Value
 
-Each of these functions returns the converted character `c`, if possible. Otherwise it returns the character `c` unchanged.
+Each of these functions returns the converted character *c*, if possible. Otherwise it returns the character *c* unchanged.
 
 ## Remarks
 
-The functions test a character `c` and, if possible, apply one of the following conversions.
+The functions test a character *c* and, if possible, apply one of the following conversions.
 
 |Routines|Converts|
 |--------------|--------------|
 |`_mbctolower,_mbctolower_l`|Uppercase character to lowercase character.|
 |`_mbctoupper,_mbctoupper_l`|Lowercase character to uppercase character.|
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The version of this function without the `_l` suffix uses the current locale for this locale-dependent behavior; the version with the `_l` suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The version of this function without the **_l** suffix uses the current locale for this locale-dependent behavior; the version with the **_l** suffix is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In previous versions, `_mbctolower` was called `jtolower`, and `_mbctoupper` was called `jtoupper`. For new code, use the new names instead.
 
@@ -89,10 +89,10 @@ In previous versions, `_mbctolower` was called `jtolower`, and `_mbctoupper` was
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [_mbbtombc, _mbbtombc_l](../../c-runtime-library/reference/mbbtombc-mbbtombc-l.md)<br/>
 [_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)<br/>
 [_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l](../../c-runtime-library/reference/mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)<br/>
-[_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)
+[_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)<br/>

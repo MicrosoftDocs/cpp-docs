@@ -26,34 +26,34 @@ Find characters in a buffer.
 
 ## Syntax
 
-```
+```C
 void *memchr(
-   const void *buf,
+   const void *buffer,
    int c,
    size_t count
 ); // C only
 void *memchr(
-   void *buf,
+   void *buffer,
    int c,
    size_t count
 ); // C++ only
 const void *memchr(
-   const void *buf,
+   const void *buffer,
    int c,
    size_t count
 ); // C++ only
 wchar_t *wmemchr(
-   const wchar_t * buf,
+   const wchar_t * buffer,
    wchar_t c,
    size_t count
 ); // C only
 wchar_t *wmemchr(
-   wchar_t * buf,
+   wchar_t * buffer,
    wchar_t c,
    size_t count
 ); // C++ only
 const wchar_t *wmemchr(
-   const wchar_t * buf,
+   const wchar_t * buffer,
    wchar_t c,
    size_t count
 ); // C++ only
@@ -61,22 +61,22 @@ const wchar_t *wmemchr(
 
 ### Parameters
 
-`buf`
+*buffer*
 Pointer to buffer.
 
-`c`
+*c*
 Character to look for.
 
-`count`
+*count*
 Number of characters to check.
 
 ## Return Value
 
-If successful, returns a pointer to the first location of `c` in `buf`. Otherwise it returns `NULL`.
+If successful, returns a pointer to the first location of *c* in *buffer*. Otherwise it returns `NULL`.
 
 ## Remarks
 
-`memchr` and `wmemchr` look for the first occurrence of `c` in the first `count` bytes of `buf`. It stops when it finds `c` or when it has checked the first `count` bytes.
+`memchr` and `wmemchr` look for the first occurrence of *c* in the first *count* bytes of *buffer*. It stops when it finds *c* or when it has checked the first *count* bytes.
 
 In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro _CRT_CONST_CORRECT_OVERLOADS is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloadsin C++, define the symbol _CONST_RETURN.
 
@@ -136,11 +136,11 @@ Search char: r
 Result:      r found at position 12
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
 [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
 [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
 [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
-[strchr, wcschr, _mbschr, _mbschr_l](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md)
+[strchr, wcschr, _mbschr, _mbschr_l](../../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md)<br/>

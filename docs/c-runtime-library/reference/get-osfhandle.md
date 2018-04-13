@@ -26,7 +26,7 @@ Retrieves the operating-system file handle that is associated with the specified
 
 ## Syntax
 
-```
+```C
 intptr_t _get_osfhandle(
    int fd
 );
@@ -53,10 +53,10 @@ To close a file whose operating system (OS) file handle is obtained by `_get_osf
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

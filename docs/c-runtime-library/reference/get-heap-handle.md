@@ -26,7 +26,7 @@ Returns the handle of the heap that's used by the C run-time system.
 
 ## Syntax
 
-```
+```C
 intptr_t _get_heap_handle( void );
 ```
 
@@ -69,6 +69,6 @@ int main(void)
 }
 ```
 
-## See Also
+## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>

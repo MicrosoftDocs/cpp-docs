@@ -29,7 +29,7 @@ Formats and prints to the console, and supports positional parameters in the for
 
 ## Syntax
 
-```
+```C
 int _cprintf_p(
    const char * format [,
    argument] ...
@@ -71,7 +71,7 @@ These functions format and print a series of characters and values directly to t
 
 Unlike the `fprintf_p`, `printf_p`, and `sprintf_p` functions, neither `_cprintf_p` nor `_cwprintf_p` translates line-feed characters into carriage return-line feed (CR-LF) combinations when output. An important distinction is that `_cwprintf_p` displays Unicode characters when used in Windows NT. Unlike `_cprintf_p`, `_cwprintf_p` uses the current console locale settings.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
@@ -122,7 +122,7 @@ int main( void )
 -16  001d  62511  A Test
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
@@ -135,4 +135,4 @@ int main( void )
 [_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l](../../c-runtime-library/reference/vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
 [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
-[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)
+[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>

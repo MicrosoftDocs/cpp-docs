@@ -29,7 +29,7 @@ Formats and prints to the console. More-secure versions are available; see [_cpr
 
 ## Syntax
 
-```
+```C
 int _cprintf(
    const char * format [, argument_list]
 );
@@ -67,7 +67,7 @@ These functions format and print a series of characters and values directly to t
 
 An important distinction is that `_cwprintf` displays Unicode characters when used in Windows. Unlike `_cprintf`, `_cwprintf` uses the current console locale settings.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
 `_cprintf` validates the *format* parameter. If *format* is a null pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
 
@@ -118,7 +118,7 @@ int main( void )
 -16  001d  62511  A Test
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
@@ -128,4 +128,4 @@ int main( void )
 [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](../../c-runtime-library/reference/vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
 [_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l](../../c-runtime-library/reference/cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md)<br/>
-[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)
+[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>

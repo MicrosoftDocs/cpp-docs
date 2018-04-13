@@ -26,7 +26,7 @@ Identifies the exception and the related action to be taken.
 
 ## Syntax
 
-```
+```C
 int __cdecl _seh_filter_dll(
    unsigned long _ExceptionNum,
    struct _EXCEPTION_POINTERS* _ExceptionPtr
@@ -39,10 +39,10 @@ int __cdecl _seh_filter_exe(
 
 ### Parameters
 
-[in] `_ExceptionNum`
+*_ExceptionNum*
 The identifier for the exception.
 
-[in] `_ExceptionPtr`
+*_ExceptionPtr*
 A pointer to the exception information.
 
 ## Return Value
@@ -70,6 +70,6 @@ These methods are called by the exception-filter expression of the [try-except S
 
 **Header:** corecrt_startup.h
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

@@ -26,7 +26,7 @@ Converts a **double** number to a string. A more secure version of this function
 
 ## Syntax
 
-```
+```C
 char *_ecvt(
    double value,
    int count,
@@ -104,7 +104,7 @@ int main( void )
 source: 3.1415926535   buffer: '3141592654'  decimal: 1  sign: 0
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

@@ -26,11 +26,9 @@ Gets or sets the error handler for a pure virtual function call.
 
 ## Syntax
 
-```
+```cpp
 typedef void (__cdecl* _purecall_handler)(void);
-
 _purecall_handler __cdecl _get_purecall_handler(void);
-
 _purecall_handler __cdecl _set_purecall_handler(
    _purecall_handler function
 );
@@ -38,7 +36,7 @@ _purecall_handler __cdecl _set_purecall_handler(
 
 ### Parameters
 
-`function`
+*function*
 The function to be called when a pure virtual function is called. A `_purecall_handler` function must have a void return type.
 
 ## Return Value
@@ -65,7 +63,7 @@ For compatibility information, see [Compatibility](../../c-runtime-library/compa
 
 ## Example
 
-```
+```cpp
 // _set_purecall_handler.cpp
 // compile with: /W1
 #include <tchar.h>
@@ -112,7 +110,7 @@ int _tmain(int argc, _TCHAR* argv[])
 In _purecall_handler.
 ```
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[_purecall](../../c-runtime-library/reference/purecall.md)
+[_purecall](../../c-runtime-library/reference/purecall.md)<br/>

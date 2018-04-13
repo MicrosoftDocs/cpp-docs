@@ -26,7 +26,7 @@ Multiplies a floating-point number by an integral power of FLT_RADIX.
 
 ## Syntax
 
-```
+```C
 double scalbn(
    double x,
    int exp
@@ -121,7 +121,7 @@ int main( void )
 6.4 times FLT_RADIX to the power of 3 is 51.2
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](../../c-runtime-library/reference/frexp.md)<br/>

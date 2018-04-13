@@ -26,7 +26,7 @@ Converts a **double** number to a string. This is a version of [_ecvt](../../c-r
 
 ## Syntax
 
-```
+```C
 errno_t _ecvt_s(
    char * _Buffer,
    size_t _SizeInBytes,
@@ -47,22 +47,22 @@ errno_t _ecvt_s(
 
 ### Parameters
 
-[out] *_Buffer*<br/>
+*_Buffer*<br/>
 Filled with the pointer to the string of digits, the result of the conversion.
 
-[in] *_SizeInBytes*<br/>
+*_SizeInBytes*<br/>
 Size of the buffer in bytes.
 
-[in] *_Value*<br/>
+*_Value*<br/>
 Number to be converted.
 
-[in] *_Count*<br/>
+*_Count*<br/>
 Number of digits stored.
 
-[out] *_Dec*<br/>
+*_Dec*<br/>
 Stored decimal-point position.
 
-[out] *_Sign*<br/>
+*_Sign*<br/>
 Sign of the converted number.
 
 ## Return Value
@@ -138,7 +138,7 @@ int main( )
 Converted value: 12000
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

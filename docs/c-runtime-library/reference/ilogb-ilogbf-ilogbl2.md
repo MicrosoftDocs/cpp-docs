@@ -25,7 +25,7 @@ Retrieves an integer that represents the unbiased base-2 exponent of the specifi
 
 ## Syntax
 
-```
+```C
 int ilogb(
    double x
 );
@@ -50,7 +50,7 @@ int ilogbl(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The specified value.
 
 ## Return Value
@@ -80,7 +80,7 @@ Calling this function is similar to calling the equivalent **logb** function, th
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [frexp](../../c-runtime-library/reference/frexp.md)<br/>

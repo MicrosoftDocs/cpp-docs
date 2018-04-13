@@ -28,7 +28,7 @@ Returns a pointer to the first occurrence of a search string in a string.
 
 ## Syntax
 
-```
+```C
 char *strstr(
    const char *str,
    const char *strSearch
@@ -103,7 +103,7 @@ The `strstr` function returns a pointer to the first occurrence of `strSearch` i
 
 In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload that takes a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol `_CONST_RETURN`.
 
-The output value is affected by the locale-category setting of `LC_CTYPE`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions that do not have the `_l` suffix use the current locale for this locale-dependent behavior; the versions that have the `_l` suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the locale-category setting of `LC_CTYPE`; for more information, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions that do not have the **_l** suffix use the current locale for this locale-dependent behavior; the versions that have the **_l** suffix are identical except that they instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 
@@ -159,7 +159,7 @@ String to be searched:
 lazy found at position 36
 ```
 
-## See Also
+## See also
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
@@ -168,4 +168,4 @@ lazy found at position 36
 [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](../../c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[basic_string::find](../../standard-library/basic-string-class.md#find)
+[basic_string::find](../../standard-library/basic-string-class.md#find)<br/>

@@ -28,7 +28,7 @@ The first pointer is the starting location in the table and the second pointer i
 
 ## Syntax
 
-```
+```C
 void __cdecl _initterm(
    PVFV *,
    PVFV *
@@ -50,6 +50,6 @@ These methods are only called internally during the initialization of a C++ prog
 
 When these methods walk a table of function entries, they skip `NULL` entries and continue.
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

@@ -26,7 +26,7 @@ Moves one buffer to another. More secure versions of these functions are availab
 
 ## Syntax
 
-```
+```C
 void *memmove(
    void *dest,
    const void *src,
@@ -41,22 +41,22 @@ wchar_t *wmemmove(
 
 ### Parameters
 
-`dest`
+*dest*
 Destination object.
 
-`src`
+*src*
 Source object.
 
-`count`
+*count*
 Number of bytes (`memmove`) or characters (`wmemmove`) to copy.
 
 ## Return Value
 
-The value of `dest`.
+The value of *dest*.
 
 ## Remarks
 
-Copies `count` bytes (`memmove`) or characters (`wmemmove`) from `src` to `dest`. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *count* bytes (`memmove`) or characters (`wmemmove`) from *src* to *dest*. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
 
 **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
@@ -115,10 +115,10 @@ The string: aabbcc
 New string: aaaabb
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
 [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
 [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

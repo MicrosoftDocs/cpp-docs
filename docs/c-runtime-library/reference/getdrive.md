@@ -29,7 +29,7 @@ Gets the current disk drive.
 
 ## Syntax
 
-```
+```C
 int _getdrive( void );
 ```
 
@@ -95,9 +95,9 @@ F: (Current directory is F:\)
 G: (Current directory is G:\)
 ```
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_chdrive](../../c-runtime-library/reference/chdrive.md)<br/>
 [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)
+[_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)<br/>

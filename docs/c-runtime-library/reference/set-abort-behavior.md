@@ -36,10 +36,10 @@ unsigned int _set_abort_behavior(
 
 ### Parameters
 
-[in] _flags_
+*flags*
 New value of the `abort` flags.
 
-[in] _mask_
+*mask*
 Mask for the `abort` flags bits to set.
 
 ## Return Value
@@ -81,4 +81,4 @@ Suppressing the abort message. If successful, this message will be the only outp
 
 ## See also
 
-[abort](../../c-runtime-library/reference/abort.md)
+[abort](../../c-runtime-library/reference/abort.md)<br/>

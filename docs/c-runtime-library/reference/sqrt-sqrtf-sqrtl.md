@@ -26,7 +26,7 @@ Calculates the square root.
 
 ## Syntax
 
-```
+```C
 double sqrt(
    double x
 );
@@ -96,7 +96,7 @@ int main( void )
 The square root of 45.35 is 6.73
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>

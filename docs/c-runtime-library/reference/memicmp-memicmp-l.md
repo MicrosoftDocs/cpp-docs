@@ -26,15 +26,15 @@ Compares characters in two buffers (case-insensitive).
 
 ## Syntax
 
-```
+```C
 int _memicmp(
-   const void *buf1,
-   const void *buf2,
+   const void *buffer1,
+   const void *buffer2,
    size_t count
 );
 int _memicmp_l(
-   const void *buf1,
-   const void *buf2,
+   const void *buffer1,
+   const void *buffer2,
    size_t count,
    _locale_t locale
 );
@@ -42,13 +42,13 @@ int _memicmp_l(
 
 ### Parameters
 
-`buf1`
+*buffer1*
 First buffer.
 
-`buf2`
+*buffer2*
 Second buffer.
 
-`count`
+*count*
 Number of characters.
 
 *locale*
@@ -60,16 +60,16 @@ The return value indicates the relationship between the buffers.
 
 |Return value|Relationship of first count bytes of buf1 and buf2|
 |------------------|--------------------------------------------------------|
-|< 0|`buf1` less than `buf2`.|
-|0|`buf1` identical to `buf2`.|
-|> 0|`buf1` greater than `buf2`.|
+|< 0|*buffer1* less than *buffer2*.|
+|0|*buffer1* identical to *buffer2*.|
+|> 0|*buffer1* greater than *buffer2*.|
 |`_NLSCMPERROR`|An error occurred.|
 
 ## Remarks
 
-The `_memicmp` function compares the first `count` characters of the two buffers `buf1` and `buf2` byte by byte. The comparison is not case-sensitive.
+The `_memicmp` function compares the first *count* characters of the two buffers *buffer1* and *buffer2* byte by byte. The comparison is not case-sensitive.
 
-If either `buf1` or `buf2` is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
+If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
 
 `_memicmp` uses the current locale for locale-dependent behavior; `_memicmp_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -117,7 +117,7 @@ Compare 'Those Who Will Not Learn from' to 'THOSE WHO WILL NOT LEARN FROM'
 First is equal to second.
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
@@ -126,4 +126,4 @@ First is equal to second.
 [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
 [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
 [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

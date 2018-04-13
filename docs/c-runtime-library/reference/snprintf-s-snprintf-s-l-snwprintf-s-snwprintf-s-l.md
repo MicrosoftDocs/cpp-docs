@@ -26,7 +26,7 @@ Writes formatted data to a string. These are versions of [snprintf, _snprintf, _
 
 ## Syntax
 
-```
+```C
 int _snprintf_s(
    char *buffer,
    size_t sizeOfBuffer,
@@ -78,10 +78,10 @@ int _snwprintf_s(
 *buffer*
 Storage location for the output.
 
-`sizeOfBuffer`
+*sizeOfBuffer*
 The size of the storage location for output. Size in `bytes` for `_snprintf_s` or size in `words` for `_snwprintf_s`.
 
-`Count`
+*count*
 Maximum number of characters to store, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *format*
@@ -97,24 +97,24 @@ The locale to use.
 
 `_snprintf_s` returns the number of characters stored in *buffer*, not counting the terminating null character. `_snwprintf_s` returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
 
-If the storage required to store the data and a terminating null exceeds `sizeOfBuffer`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set `errno` to `ERANGE`, and return -1.
+If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set `errno` to `ERANGE`, and return -1.
 
-If *buffer* or *format* is a `NULL` pointer, or if `count` is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If *buffer* or *format* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `_snprintf_s` function formats and stores `count` or fewer characters in *buffer* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *format*. The formatting is consistent with the `printf` family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
+The `_snprintf_s` function formats and stores *count* or fewer characters in *buffer* and appends a terminating null. Each argument (if any) is converted and output according to the corresponding format specification in *format*. The formatting is consistent with the `printf` family of functions; see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). If copying occurs between strings that overlap, the behavior is undefined.
 
-If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md), then `_snprintf_s` writes as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then `_snprintf_s` returns the number of characters written (not including the terminating null); otherwise, `_snprintf_s` returns -1 to indicate that truncation occurred.
+If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then `_snprintf_s` writes as much of the string as will fit in *buffer* while leaving room for a terminating null. If the entire string (with terminating null) fits in *buffer*, then `_snprintf_s` returns the number of characters written (not including the terminating null); otherwise, `_snprintf_s` returns -1 to indicate that truncation occurred.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
 
 `_snwprintf_s` is a wide-character version of `_snprintf_s`; the pointer arguments to `_snwprintf_s` are wide-character strings. Detection of encoding errors in `_snwprintf_s` might differ from that in `_snprintf_s`. `_snwprintf_s`, like `swprintf_s`, writes output to a string rather than to a destination of type `FILE`.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -262,7 +262,7 @@ Invalid parameter handler invoked: ("Buffer too small", 0)
     new contents of dest: ''
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
@@ -270,4 +270,4 @@ Invalid parameter handler invoked: ("Buffer too small", 0)
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

@@ -26,7 +26,7 @@ Get status information on a file.
 
 ## Syntax
 
-```
+```C
 int _stat(
    const char *path,
    struct _stat *buffer
@@ -240,10 +240,10 @@ Drive         : C:
 Time modified : Thu Feb 07 14:39:36 2002
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](../../c-runtime-library/reference/access-waccess.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)
+[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>

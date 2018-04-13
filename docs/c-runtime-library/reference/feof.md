@@ -26,7 +26,7 @@ Tests for end-of-file on a stream.
 
 ## Syntax
 
-```
+```C
 int feof(
    FILE *stream
 );
@@ -110,11 +110,11 @@ Line two.
 Number of bytes read = 19
 ```
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
 [_eof](../../c-runtime-library/reference/eof.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

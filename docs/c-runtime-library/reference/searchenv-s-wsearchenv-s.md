@@ -29,7 +29,7 @@ Searches for a file by using environment paths. These versions of [_searchenv, _
 
 ## Syntax
 
-```
+```C
 errno_t _searchenv_s(
    const char *filename,
    const char *varname,
@@ -58,17 +58,17 @@ errno_t _wsearchenv_s(
 
 ### Parameters
 
-[in] *filename*
+*filename*
 Name of the file to search for.
 
-[in] *varname*
+*varname*
 Environment to search.
 
-[out] `pathname`
+*pathname*
 Buffer to store the complete path.
 
-[in] *numberOfElements*
-Size of the `pathname` buffer.
+*numberOfElements*
+Size of the *pathname* buffer.
 
 ## Return Value
 
@@ -78,7 +78,7 @@ If *filename* is an empty string, the return value is `ENOENT`.
 
 ### Error Conditions
 
-|*filename*|*varname*|`pathname`|*numberOfElements*|Return value|Contents of `pathname`|
+|*filename*|*varname*|*pathname*|*numberOfElements*|Return value|Contents of *pathname*|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
 |any|any|`NULL`|any|`EINVAL`|n/a|
 |`NULL`|any|any|any|`EINVAL`|not changed|
@@ -88,11 +88,11 @@ If any of these error conditions occurs, the invalid parameter handler is invoke
 
 ## Remarks
 
-The `_searchenv_s` routine searches for the target file in the specified domain. The *varname* variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because `_searchenv_s` is case-sensitive, *varname* should match the case of the environment variable. If *varname* does not match the name of an environment variable defined in the process's environment, the function returns zero and the `pathname` variable is unchanged.
+The `_searchenv_s` routine searches for the target file in the specified domain. The *varname* variable can be any environment or user-defined variable that specifies a list of directory paths, such as `PATH`, `LIB`, and `INCLUDE`. Because `_searchenv_s` is case-sensitive, *varname* should match the case of the environment variable. If *varname* does not match the name of an environment variable defined in the process's environment, the function returns zero and the *pathname* variable is unchanged.
 
-The routine searches first for the file in the current working directory. If it does not find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into `pathname`. If the *filename* file is not found, `pathname` contains an empty null-terminated string.
+The routine searches first for the file in the current working directory. If it does not find the file, it looks next through the directories specified by the environment variable. If the target file is in one of those directories, the newly created path is copied into *pathname*. If the *filename* file is not found, *pathname* contains an empty null-terminated string.
 
-The `pathname` buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, `_searchenv_s` might overrun the `pathname` buffer resulting in unexpected behavior.
+The *pathname* buffer should be at least `_MAX_PATH` characters long to accommodate the full length of the constructed path name. Otherwise, `_searchenv_s` might overrun the *pathname* buffer resulting in unexpected behavior.
 
 `_wsearchenv_s` is a wide-character version of `_searchenv_s`; the arguments to `_wsearchenv_s` are wide-character strings. `_wsearchenv_s` and `_searchenv_s` behave identically otherwise.
 
@@ -149,9 +149,9 @@ Path for CL.EXE:
 C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 ```
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)<br/>
 [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)
+[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>

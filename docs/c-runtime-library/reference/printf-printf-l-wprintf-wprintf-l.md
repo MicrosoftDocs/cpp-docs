@@ -26,7 +26,7 @@ Prints formatted output to the standard output stream. More secure versions of t
 
 ## Syntax
 
-```
+```C
 int printf(
    const char *format [,
    argument]...
@@ -70,7 +70,7 @@ The `printf` function formats and prints a series of characters and values to th
 
 `wprintf` is a wide-character version of `printf`; *format* is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -198,7 +198,7 @@ Real numbers:
 Address as:   0012FF3C
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -208,4 +208,4 @@ Address as:   0012FF3C
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[_set_output_format](../../c-runtime-library/set-output-format.md)
+[_set_output_format](../../c-runtime-library/set-output-format.md)<br/>

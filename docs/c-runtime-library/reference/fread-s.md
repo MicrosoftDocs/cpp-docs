@@ -25,7 +25,7 @@ Reads data from a stream. This version of [fread](../../c-runtime-library/refere
 
 ## Syntax
 
-```
+```C
 size_t fread_s(
    void *buffer,
    size_t bufferSize,
@@ -40,13 +40,13 @@ size_t fread_s(
 *buffer*
 Storage location for data.
 
-`bufferSize`
+*bufferSize*
 Size of the destination buffer in bytes.
 
-`elementSize`
+*elementSize*
 Size of the item to read in bytes.
 
-`count`
+*count*
 Maximum number of items to be read.
 
 *stream*
@@ -54,13 +54,13 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-`fread_s` returns the number of (whole) items that were read into the buffer, which may be less than `count` if a read error or the end of the file is encountered before `count` is reached. Use the `feof` or `ferror` function to distinguish an error from an end-of-file condition. If *size* or `count` is 0, `fread_s` returns 0 and the buffer contents are unchanged. If *stream* or *buffer* is a null pointer, `fread_s` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.
+`fread_s` returns the number of (whole) items that were read into the buffer, which may be less than *count* if a read error or the end of the file is encountered before *count* is reached. Use the `feof` or `ferror` function to distinguish an error from an end-of-file condition. If *size* or *count* is 0, `fread_s` returns 0 and the buffer contents are unchanged. If *stream* or *buffer* is a null pointer, `fread_s` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns 0.
 
 For more information about error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `fread_s` function reads up to `count` items of `elementSize` bytes from the input *stream* and stores them in *buffer*.  The file pointer that is associated with *stream* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
+The `fread_s` function reads up to *count* items of *elementSize* bytes from the input *stream* and stores them in *buffer*.  The file pointer that is associated with *stream* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
 
 This function locks out other threads. If you require a non-locking version, use `_fread_nolock`.
 
@@ -139,8 +139,8 @@ Contents of buffer after write/read:
         zyxwvutsrqponmlkjihgfe
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)
+[_read](../../c-runtime-library/reference/read.md)<br/>

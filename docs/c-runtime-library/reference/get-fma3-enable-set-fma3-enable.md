@@ -26,7 +26,7 @@ Gets or sets a flag that specifies whether the transcendental math floating-poin
 
 ## Syntax
 
-```
+```C
 int _set_FMA3_enable(int flag);
 int _get_FMA3_enable();
 ```
@@ -56,7 +56,7 @@ The **_set_FMA3_enable** and **_get_FMA3_enable** functions are only available i
 
 The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-point support](../../c-runtime-library/floating-point-support.md)<br/>
 [Floating-point migration issues](../../porting/floating-point-migration-issues.md)<br/>

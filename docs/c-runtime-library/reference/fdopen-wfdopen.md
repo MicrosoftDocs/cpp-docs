@@ -184,4 +184,4 @@ Lines in file: 2
 [fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[\_open, \_wopen](../../c-runtime-library/reference/open-wopen.md)
+[\_open, \_wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

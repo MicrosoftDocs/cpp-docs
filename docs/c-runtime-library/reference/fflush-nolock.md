@@ -26,7 +26,7 @@ Flushes a stream without locking the thread.
 
 ## Syntax
 
-```
+```C
 int _fflush_nolock(
    FILE *stream
 );
@@ -53,9 +53,9 @@ This function is a non-locking version of `fflush`. It is identical to `fflush` 
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)
+[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>

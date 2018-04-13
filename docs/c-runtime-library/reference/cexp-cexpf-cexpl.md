@@ -58,9 +58,9 @@ Because C++ allows overloading, you can call overloads of `cexp` that take and r
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)<br/>
 [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)
+[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)<br/>

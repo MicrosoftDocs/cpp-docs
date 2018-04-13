@@ -26,7 +26,7 @@ Copy the current system date to a buffer. These are versions of [_strdate, _wstr
 
 ## Syntax
 
-```
+```C
 errno_t _strdate_s(
    char *buffer,
    size_t numberOfElements
@@ -47,10 +47,10 @@ errno_t _wstrdate_s(
 
 ### Parameters
 
-[out] *buffer*
+*buffer*
 A pointer to a buffer which will be filled in with the formatted date string.
 
-[in] *numberOfElements*
+*numberOfElements*
 Size of the buffer.
 
 ## Return Value
@@ -100,7 +100,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 See the example for [time](../../c-runtime-library/reference/time-time32-time64.md).
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
@@ -109,4 +109,4 @@ See the example for [time](../../c-runtime-library/reference/time-time32-time64.
 [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
 [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)
+[_tzset](../../c-runtime-library/reference/tzset.md)<br/>

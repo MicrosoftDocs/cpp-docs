@@ -26,86 +26,74 @@ Convert a time value to a string and adjust for local time zone settings. More s
 
 ## Syntax
 
-```
-char *ctime(
-   const time_t *timer
-);
-char *_ctime32(
-   const __time32_t *timer )
-;
-char *_ctime64(
-   const __time64_t *timer )
-;
-wchar_t *_wctime(
-   const time_t *timer
-);
-wchar_t *_wctime32(
-   const __time32_t *timer
-);
-wchar_t *_wctime64(
-   const __time64_t *timer
-);
+```C
+char *ctime( const time_t *sourceTime );
+char *_ctime32( const __time32_t *sourceTime );
+char *_ctime64( const __time64_t *sourceTime );
+wchar_t *_wctime( const time_t *sourceTime );
+wchar_t *_wctime32( const __time32_t *sourceTime );
+wchar_t *_wctime64( const __time64_t *sourceTime );
 ```
 
 ### Parameters
 
-`timer`
-Pointer to stored time.
+*sourceTime*
+Pointer to stored time to convert.
 
 ## Return Value
 
-A pointer to the character string result. `NULL` will be returned if:
+A pointer to the character string result. **NULL** will be returned if:
 
--   `time` represents a date before midnight, January 1, 1970, UTC.
+- *sourceTime* represents a date before midnight, January 1, 1970, UTC.
 
--   If you use `_ctime32` or `_wctime32` and `time` represents a date after 23:59:59 January 18, 2038, UTC.
+- If you use **_ctime32** or **_wctime32** and *sourceTime* represents a date after 23:59:59 January 18, 2038, UTC.
 
--   If you use `_ctime64` or `_wctime64` and `time` represents a date after 23:59:59, December 31, 3000, UTC.
+- If you use **_ctime64** or **_wctime64** and *sourceTime* represents a date after 23:59:59, December 31, 3000, UTC.
 
-`ctime` is an inline function which evaluates to `_ctime64` and `time_t` is equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. Doing this will cause `ctime` to evaluate to `_ctime32`. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
+**ctime** is an inline function which evaluates to **_ctime64** and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. Doing this will cause **ctime** to evaluate to **_ctime32**. This is not recommended because your application may fail after January 18, 2038, and it is not allowed on 64-bit platforms.
 
 ## Remarks
 
-The `ctime` function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The `timer` value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) value into a character string. The *sourceTime* value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
-```
+```Output
 Wed Jan 02 02:03:55 1980\n\0
 ```
 
 A 24-hour clock is used. All fields have a constant width. The newline character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
-The converted character string is also adjusted according to the local time zone settings. See the `time`, [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions for information on configuring the local time and the [_tzset](../../c-runtime-library/reference/tzset.md) function for details about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. See the [time](../../c-runtime-library/reference/time-time32-time64.md), [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions for information on configuring the local time and the [_tzset](../../c-runtime-library/reference/tzset.md) function for details about defining the time zone environment and global variables.
 
-A call to `ctime` modifies the single statically allocated buffer used by the `gmtime` and `localtime` functions. Each call to one of these routines destroys the result of the previous call. `ctime` shares a static buffer with the `asctime` function. Thus, a call to `ctime` destroys the results of any previous call to `asctime`, `localtime`, or `gmtime`.
+A call to **ctime** modifies the single statically allocated buffer used by the **gmtime** and **localtime** functions. Each call to one of these routines destroys the result of the previous call. **ctime** shares a static buffer with the **asctime** function. Thus, a call to **ctime** destroys the results of any previous call to **asctime**, **localtime**, or **gmtime**.
 
-`_wctime` and `_wctime64` are the wide-character version of `ctime` and `_ctime64`; returning a pointer to wide-character string. Otherwise, `_ctime64`, `_wctime`, and `_wctime64` behave identically to `ctime`.
+**_wctime** and **_wctime64** are the wide-character version of **ctime** and **_ctime64**; returning a pointer to wide-character string. Otherwise, **_ctime64**, **_wctime**, and **_wctime64** behave identically to **ctime**.
 
-These functions validate their parameters. If `timer` is a null pointer, or if the timer value is negative, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `NULL` and set `errno` to `EINVAL`.
+These functions validate their parameters. If *sourceTime* is a null pointer, or if the *sourceTime* value is negative, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **NULL** and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tctime`|`ctime`|`ctime`|`_wctime`|
-|`_tctime32`|`_ctime32`|`_ctime32`|`_wctime32`|
-|`_tctime64`|`_ctime64`|`_ctime64`|`_wctime64`|
+|**_tctime**|**ctime**|**ctime**|**_wctime**|
+|**_tctime32**|**_ctime32**|**_ctime32**|**_wctime32**|
+|**_tctime64**|**_ctime64**|**_ctime64**|**_wctime64**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`ctime`|\<time.h>|
-|`_ctime32`|\<time.h>|
-|`_ctime64`|\<time.h>|
-|`_wctime`|\<time.h> or \<wchar.h>|
-|`_wctime32`|\<time.h> or \<wchar.h>|
-|`_wctime64`|\<time.h> or \<wchar.h>|
+|**ctime**|\<time.h>|
+|**_ctime32**|\<time.h>|
+|**_ctime64**|\<time.h>|
+|**_wctime**|\<time.h> or \<wchar.h>|
+|**_wctime32**|\<time.h> or \<wchar.h>|
+|**_wctime64**|\<time.h> or \<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
 ## Example
 
-```
+```C
 // crt_ctime64.c
 // compile with: /W3
 /* This program gets the current
@@ -130,7 +118,7 @@ int main( void )
 The time is Wed Feb 13 16:04:43 2002
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
@@ -138,4 +126,4 @@ The time is Wed Feb 13 16:04:43 2002
 [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
 [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)
+[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>

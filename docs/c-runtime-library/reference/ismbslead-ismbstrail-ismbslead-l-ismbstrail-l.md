@@ -29,7 +29,7 @@ Performs context-sensitive tests for multibyte-character-string lead bytes and t
 
 ## Syntax
 
-```
+```C
 int _ismbslead(
    const unsigned char *str,
    const unsigned char *current
@@ -69,7 +69,7 @@ The locale to use.
 
 `_ismbslead` and `_ismbstrail` are slower than the `_ismbblead` and `_ismbbtrail` versions because they take the string context into account.
 
-The versions of these functions that have the `_l` suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix are identical except that for their locale-dependent behavior they use the locale that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
@@ -84,9 +84,9 @@ The versions of these functions that have the `_l` suffix are identical except t
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
 [is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

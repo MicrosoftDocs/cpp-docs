@@ -26,7 +26,7 @@ Generate names you can use to create temporary files. More secure versions of so
 
 ## Syntax
 
-```
+```C
 char *_tempnam(
    const char *dir,
    const char *prefix
@@ -48,7 +48,7 @@ wchar_t *_wtmpnam(
 `prefix`
 The string that will be pre-pended to names returned by `_tempnam`.
 
-`dir`
+*dir*
 The path used in the file name if there is no TMP environment variable, or if TMP is not a valid directory.
 
 *str*
@@ -56,7 +56,7 @@ Pointer that will hold the generated name and will be identical to the name retu
 
 ## Return Value
 
-Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam` and there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.
+Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam` and there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
 
 > [!NOTE]
 >  The pointers returned by `tmpnam` and `_wtmpnam` point to internal static buffers. [free](../../c-runtime-library/reference/free.md) should not be called to deallocate those pointers. `free` needs to be called for pointers allocated by `_tempnam` and `_wtempnam`.
@@ -71,9 +71,9 @@ For `tmpnam`, you can store this generated file name in *str*. If *str* is `NULL
 
 -   If the TMP environment variable is defined and set to a valid directory name, unique file names will be generated for the directory specified by TMP.
 
--   If the TMP environment variable is not defined or if it is set to the name of a directory that does not exist, `_tempnam` will use the `dir` parameter as the path for which it will generate unique names.
+-   If the TMP environment variable is not defined or if it is set to the name of a directory that does not exist, `_tempnam` will use the *dir* parameter as the path for which it will generate unique names.
 
--   If the TMP environment variable is not defined or if it is set to the name of a directory that does not exist, and if `dir` is either `NULL` or set to the name of a directory that does not exist, `_tempnam` will use the current working directory to generate unique names. Currently, if both TMP and `dir` specify names of directories that do not exist, the `_tempnam` function call will fail.
+-   If the TMP environment variable is not defined or if it is set to the name of a directory that does not exist, and if *dir* is either `NULL` or set to the name of a directory that does not exist, `_tempnam` will use the current working directory to generate unique names. Currently, if both TMP and *dir* specify names of directories that do not exist, the `_tempnam` function call will fail.
 
 The name returned by `_tempnam` will be a concatenation of `prefix` and a sequential number, which will combine to create a unique file name for the specified directory. `_tempnam` generates file names that have no extension. `_tempnam` uses [malloc](../../c-runtime-library/reference/malloc.md) to allocate space for the filename; the program is responsible for freeing this space when it is no longer needed.
 
@@ -144,11 +144,11 @@ int main( void )
 C:\DOCUME~1\user\LOCALS~1\Temp\2\stq2 is safe to use as a temporary file.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
 [_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
 [tmpfile](../../c-runtime-library/reference/tmpfile.md)<br/>
-[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)
+[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)<br/>

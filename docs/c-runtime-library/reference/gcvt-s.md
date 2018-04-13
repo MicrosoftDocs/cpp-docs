@@ -26,7 +26,7 @@ Converts a floating-point value to a string. This is a version of [_gcvt](../../
 
 ## Syntax
 
-```
+```C
 errno_t _gcvt_s(
    char *buffer,
    size_t sizeInBytes,
@@ -43,16 +43,16 @@ errno_t _gcvt_s(
 
 ### Parameters
 
-[out] *buffer*<br/>
+*buffer*<br/>
 Buffer to store the result of the conversion.
 
-[in] *sizeInBytes*<br/>
+*sizeInBytes*<br/>
 Size of the buffer.
 
-[in] *value*<br/>
+*value*<br/>
 Value to be converted.
 
-[in] *digits*<br/>
+*digits*<br/>
 Number of significant digits stored.
 
 ## Return Value
@@ -118,7 +118,7 @@ int main()
 Converted value: 1.2
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

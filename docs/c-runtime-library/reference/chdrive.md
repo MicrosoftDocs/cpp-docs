@@ -64,7 +64,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 See the example for [_getdrive](../../c-runtime-library/reference/getdrive.md).
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
@@ -73,4 +73,4 @@ See the example for [_getdrive](../../c-runtime-library/reference/getdrive.md).
 [_getdrive](../../c-runtime-library/reference/getdrive.md)<br/>
 [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
 [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

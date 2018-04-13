@@ -26,7 +26,7 @@ Sets the floating-point control word.
 
 ## Syntax
 
-```
+```C
 void __cdecl _set_controlfp(
     unsigned int newControl,
     unsigned int mask
@@ -59,7 +59,7 @@ This function is deprecated when compiling with [/clr (Common Language Runtime C
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>

@@ -26,7 +26,7 @@ Changes the size of a file. This is a version of [_chsize](../../c-runtime-libra
 
 ## Syntax
 
-```
+```C
 errno_t _chsize_s(
    int fd,
    __int64 size
@@ -63,10 +63,10 @@ This function validates its parameters. If *fd* is not a valid file descriptor o
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_chsize](../../c-runtime-library/reference/chsize.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

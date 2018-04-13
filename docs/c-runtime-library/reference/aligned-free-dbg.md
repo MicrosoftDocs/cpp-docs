@@ -26,7 +26,7 @@ Frees a block of memory that was allocated with [_aligned_malloc](../../c-runtim
 
 ## Syntax
 
-```
+```C
 void _aligned_free_dbg(
    void *memblock
 );
@@ -55,6 +55,6 @@ For information about how memory blocks are allocated, initialized, and managed 
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

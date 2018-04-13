@@ -26,7 +26,7 @@ Converts a floating-point number to a string. This is a version of [_fcvt](../..
 
 ## Syntax
 
-```
+```C
 errno_t _fcvt_s(
    char* buffer,
    size_t sizeInBytes,
@@ -47,22 +47,22 @@ errno_t _fcvt_s(
 
 ### Parameters
 
-[out] *buffer*<br/>
+*buffer*<br/>
 The supplied buffer that will hold the result of the conversion.
 
-[in] *sizeInBytes*<br/>
+*sizeInBytes*<br/>
 The size of the buffer in bytes.
 
-[in] *value*<br/>
+*value*<br/>
 Number to be converted.
 
-[in] *count*<br/>
+*count*<br/>
 Number of digits after the decimal point.
 
-[out] *dec*<br/>
+*dec*<br/>
 Pointer to the stored decimal-point position.
 
-[out] *sign*<br/>
+*sign*<br/>
 Pointer to the stored sign indicator.
 
 ## Return Value
@@ -140,7 +140,7 @@ int main()
 Converted value: 120000
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

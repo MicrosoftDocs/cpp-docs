@@ -26,7 +26,7 @@ Generate names you can use to create temporary files. These are versions of [tmp
 
 ## Syntax
 
-```
+```C
 errno_t tmpnam_s(
    char * str,
    size_t sizeInChars
@@ -47,10 +47,10 @@ errno_t _wtmpnam_s(
 
 ### Parameters
 
-[out] *str*
+*str*
 Pointer that will hold the generated name.
 
-[in] `sizeInChars`
+*sizeInChars*
 The size of the buffer in characters.
 
 ## Return Value
@@ -61,7 +61,7 @@ Both of these functions return 0 if successful or an error number on failure.
 
 |||||
 |-|-|-|-|
-|*str*|`sizeInChars`|**Return Value**|**Contents of**  *str*|
+|*str*|*sizeInChars*|**Return Value**|**Contents of**  *str*|
 |`NULL`|any|`EINVAL`|not modified|
 |not `NULL` (points to valid memory)|too short|`ERANGE`|not modified|
 
@@ -125,10 +125,10 @@ int main( void )
 }
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
 [_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)
+[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)<br/>

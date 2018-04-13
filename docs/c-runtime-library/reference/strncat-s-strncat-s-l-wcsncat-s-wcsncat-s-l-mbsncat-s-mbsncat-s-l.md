@@ -29,7 +29,7 @@ Appends characters to a string. These versions of [strncat, _strncat_l, wcsncat,
 
 ## Syntax
 
-```
+```C
 errno_t strncat_s(
    char *strDest,
    size_t numberOfElements,
@@ -112,19 +112,19 @@ errno_t _mbsncat_s_l(
 
 ### Parameters
 
-[out] `strDest`
+*strDest*
 Null-terminated destination string.
 
-[in]*numberOfElements*
+*numberOfElements*
 Size of the destination buffer.
 
-[in]`strSource`
+*strSource*
 Null-terminated source string.
 
-[in]`count`
+*count*
 Number of characters to append, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-[in] *locale*
+*locale*
 Locale to use.
 
 ## Return Value
@@ -133,7 +133,7 @@ Returns 0 if successful, an error code on failure.
 
 ### Error Conditions
 
-|`strDestination`|*numberOfElements*|`strSource`|Return value|Contents of `strDestination`|
+|*strDestination*|*numberOfElements*|*strSource*|Return value|Contents of *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |`NULL` or unterminated|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|not modified|
@@ -141,9 +141,9 @@ Returns 0 if successful, an error code on failure.
 
 ## Remarks
 
-These functions try to append the first `D` characters of `strSource` to the end of `strDest`, where `D` is the lesser of `count` and the length of `strSource`. If appending those `D` characters will fit within `strDest` (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of `strDest`, and a new terminating null is appended; otherwise, `strDest`[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+These functions try to append the first `D` characters of *strSource* to the end of *strDest*, where `D` is the lesser of *count* and the length of *strSource*. If appending those `D` characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *strDest*, and a new terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-There is an exception to the above paragraph. If `count` is [_TRUNCATE](../../c-runtime-library/truncate.md) then as much of `strSource` as will fit is appended to `strDest` while still leaving room to append a terminating null.
+There is an exception to the above paragraph. If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
 
 For example,
 
@@ -165,11 +165,11 @@ or
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If `strSource` or `strDest` is `NULL`, or is *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
+If *strSource* or *strDest* is `NULL`, or is *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns `EINVAL` without modifying its parameters.
 
 `wcsncat_s` and `_mbsncat_s` are wide-character and multibyte-character versions of `strncat_s`. The string arguments and return value of `wcsncat_s` are wide-character strings; those of `_mbsncat_s` are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -331,7 +331,7 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -345,4 +345,4 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

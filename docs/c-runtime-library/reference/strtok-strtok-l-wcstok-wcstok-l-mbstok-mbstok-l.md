@@ -29,7 +29,7 @@ Finds the next token in a string, by using the current locale or a specified loc
 
 ## Syntax
 
-```
+```C
 char *strtok(
    char *strToken,
    const char *strDelimit
@@ -73,7 +73,7 @@ The `strtok` function finds the next token in `strToken`. The set of characters 
 
 On the first call to `strtok`, the function skips leading delimiters and returns a pointer to the first token in `strToken`, terminating the token with a null character. More tokens can be broken out of the remainder of `strToken` by a series of calls to `strtok`. Each call to `strtok` modifies `strToken` by inserting a null character after the `token` returned by that call. To read the next token from `strToken`, call `strtok` with a `NULL` value for the `strToken` argument. The `NULL` `strToken` argument causes `strtok` to search for the next token in the modified `strToken`. The `strDelimit` argument can take any value from one call to the next so that the set of delimiters may vary.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
 >  Each function uses a thread-local static variable for parsing the string into tokens. Therefore, multiple threads can simultaneously call these functions without undesirable effects. However, within a single thread, interleaving calls to one of these functions is highly likely to produce data corruption and inaccurate results. When parsing different strings, finish parsing one string before starting to parse the next. Also, be aware of the potential for danger when calling one of these functions from within a loop where another function is called. If the other function ends up using one of these functions, an interleaved sequence of calls will result, triggering data corruption.
@@ -141,10 +141,10 @@ more
 tokens
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

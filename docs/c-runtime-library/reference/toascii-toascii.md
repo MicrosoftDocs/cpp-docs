@@ -56,8 +56,8 @@ The `__toascii` routine is defined as a macro unless the preprocessor macro _CTY
 
 The `toascii` macro is a POSIX extension, and `__toascii` is a Microsoft-specific implementation of the POSIX extension. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[to Functions](../../c-runtime-library/to-functions.md)
+[to Functions](../../c-runtime-library/to-functions.md)<br/>

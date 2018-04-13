@@ -26,7 +26,7 @@ Convert a `tm` time structure to a character string. More secure versions of the
 
 ## Syntax
 
-```
+```C
 char *asctime(
    const struct tm *timeptr
 );
@@ -115,7 +115,7 @@ int main( void )
 Current date and time: Sun Feb 03 11:38:58 2002
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
@@ -124,4 +124,4 @@ Current date and time: Sun Feb 03 11:38:58 2002
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
 [_tzset](../../c-runtime-library/reference/tzset.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)
+[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>

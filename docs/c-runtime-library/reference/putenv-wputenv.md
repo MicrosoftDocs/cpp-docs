@@ -29,7 +29,7 @@ Creates, modifies, or removes environment variables. More secure versions of the
 
 ## Syntax
 
-```
+```C
 int _putenv(
    const char *envstring
 );
@@ -40,7 +40,7 @@ int _wputenv(
 
 ### Parameters
 
-`envstring`
+*envstring*
 Environment-string definition.
 
 ## Return Value
@@ -49,7 +49,7 @@ Return 0 if successful or -1 in the case of an error.
 
 ## Remarks
 
-The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the `envstring` argument to `_wputenv` is a wide-character string.
+The `_putenv` function adds new environment variables or modifies the values of existing environment variables. Environment variables define the environment in which a process executes (for example, the default search path for libraries to be linked with a program). `_wputenv` is a wide-character version of `_putenv`; the *envstring* argument to `_wputenv` is a wide-character string.
 
 ### Generic-Text Routine Mappings
 
@@ -57,7 +57,7 @@ The `_putenv` function adds new environment variables or modifies the values of 
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tputenv`|`_putenv`|`_putenv`|`_wputenv`|
 
-The `envstring` argument must be a pointer to a string of the form `varname=string`, where *varname* is the name of the environment variable to be added or modified and `string` is the variable's value. If *varname* is already part of the environment, its value is replaced by `string`; otherwise, the new *varname* variable and its `string` value are added to the environment. You can remove a variable from the environment by specifying an empty `string` — in other words, by specifying only `varname=`.
+The *envstring* argument must be a pointer to a string of the form *varname*=*value_string*, where *varname* is the name of the environment variable to be added or modified and *value_string* is the variable's value. If *varname* is already part of the environment, its value is replaced by *value_string*; otherwise, the new *varname* variable and its *value_string* value are added to the environment. You can remove a variable from the environment by specifying an empty *value_string*, or in other words, by specifying only *varname*=.
 
 `_putenv` and `_wputenv` affect only the environment that is local to the current process; you cannot use them to modify the command-level environment. That is, these functions operate only on data structures accessible to the run-time library and not on the environment segment created for a process by the operating system. When the current process terminates, the environment reverts to the level of the calling process (in most cases, the operating-system level). However, the modified environment can be passed to any new processes created by `_spawn`, `_exec`, or `system`, and these new processes get any new items added by `_putenv` and `_wputenv`.
 
@@ -81,8 +81,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 For a sample of how to use `_putenv`, see [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)
+[_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)<br/>

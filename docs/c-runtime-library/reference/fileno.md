@@ -26,7 +26,7 @@ Gets the file descriptor associated with a stream.
 
 ## Syntax
 
-```
+```C
 int _fileno(
    FILE *stream
 );
@@ -82,10 +82,10 @@ The file descriptor for stdout is 1
 The file descriptor for stderr is 2
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [_filelength, _filelengthi64](../../c-runtime-library/reference/filelength-filelengthi64.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)
+[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>

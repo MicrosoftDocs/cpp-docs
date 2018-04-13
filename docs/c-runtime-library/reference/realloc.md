@@ -26,7 +26,7 @@ Reallocate memory blocks.
 
 ## Syntax
 
-```
+```C
 void *realloc(
    void *memblock,
    size_t size
@@ -126,9 +126,9 @@ Size of block after malloc of 1000 longs: 4000
 Size of block after realloc of 1000 more longs: 8000
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)
+[malloc](../../c-runtime-library/reference/malloc.md)<br/>

@@ -26,7 +26,7 @@ Converts a sequence of wide characters to a corresponding sequence of multibyte 
 
 ## Syntax
 
-```
+```C
 errno_t wcstombs_s(
    size_t *pReturnValue,
    char *mbstr,
@@ -64,22 +64,22 @@ errno_t _wcstombs_s_l(
 
 ### Parameters
 
-[out] *pReturnValue*
+*pReturnValue*
 The number of characters converted.
 
-[out] *mbstr*
+*mbstr*
 The address of a buffer for the resulting converted multibyte character string.
 
-[in] *sizeInBytes*
+*sizeInBytes*
 The size in bytes of the *mbstr* buffer.
 
-[in] *wcstr*
+*wcstr*
 Points to the wide character string to be converted.
 
-[in] *count*
+*count*
 The maximum number of bytes to store in the *mbstr* buffer, not including the terminating null character, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-[in] *locale*
+*locale*
 The locale to use.
 
 ## Return Value
@@ -174,7 +174,7 @@ Convert wide-character string:
     Multibyte character: Hello, world.
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -182,4 +182,4 @@ Convert wide-character string:
 [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
 [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)
+[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

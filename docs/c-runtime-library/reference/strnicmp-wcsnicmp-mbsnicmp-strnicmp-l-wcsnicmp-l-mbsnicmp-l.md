@@ -28,7 +28,7 @@ Compares the specified number of characters of two strings without regard to cas
 
 ## Syntax
 
-```
+```C
 int _strnicmp(
    const char *string1,
    const char *string2,
@@ -65,10 +65,10 @@ int _mbsnicmp_l(
 ```
 
 ### Parameters
-`string1, string2`
+*string1*, *string2*<br/>
 Null-terminated strings to compare.
 
-`count`
+*count*
 Number of characters to compare.
 
 *locale*
@@ -79,20 +79,20 @@ Indicates the relationship between the substrings, as follows.
 
 |Return value|Description|
 |------------------|-----------------|
-|< 0|`string1` substring is less than `string2` substring.|
-|0|`string1` substring is identical to `string2` substring.|
-|> 0|`string1` substring is greater than `string2` substring.|
+|< 0|*string1* substring is less than *string2* substring.|
+|0|*string1* substring is identical to *string2* substring.|
+|> 0|*string1* substring is greater than *string2* substring.|
 
 On a parameter validation error, these functions return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
-The `_strnicmp` function ordinally compares, at most, the first `count` characters of `string1` and `string2`. The comparison is performed without regard to case by converting each character to lowercase. `_strnicmp` is a case-insensitive version of `strncmp`. The comparison ends if a terminating null character is reached in either string before `count` characters are compared. If the strings are equal when a terminating null character is reached in either string before `count` characters are compared, the shorter string is lesser.
+The `_strnicmp` function ordinally compares, at most, the first *count* characters of *string1* and *string2*. The comparison is performed without regard to case by converting each character to lowercase. `_strnicmp` is a case-insensitive version of `strncmp`. The comparison ends if a terminating null character is reached in either string before *count* characters are compared. If the strings are equal when a terminating null character is reached in either string before *count* characters are compared, the shorter string is lesser.
 
 The characters from 91 to 96 in the ASCII table ('[', '\\', ']', '^', '_', and '\`') evaluate as less than any alphabetic character. This ordering is identical to that of `stricmp`.
 
-`_wcsnicmp` and `_mbsnicmp` are wide-character and multibyte-character versions of `_strnicmp`. The arguments of `_wcsnicmp` are wide-character strings; those of `_mbsnicmp` are multibyte-character strings. `_mbsnicmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the `_l` suffix use the current locale for their locale-dependent behavior; the versions that do have the `_l` suffix instead use the *locale* that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+`_wcsnicmp` and `_mbsnicmp` are wide-character and multibyte-character versions of `_strnicmp`. The arguments of `_wcsnicmp` are wide-character strings; those of `_mbsnicmp` are multibyte-character strings. `_mbsnicmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the **_l** suffix use the current locale for their locale-dependent behavior; the versions that do have the **_l** suffix instead use the *locale* that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-All of these functions validate their parameters. If either `string1` or `string2` is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 
@@ -115,7 +115,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## Example
 See the example for [strncmp](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md).
 
-## See Also
+## See also
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
@@ -125,4 +125,4 @@ See the example for [strncmp](../../c-runtime-library/reference/strncmp-wcsncmp-
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

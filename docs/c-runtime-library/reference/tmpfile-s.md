@@ -26,7 +26,7 @@ Creates a temporary file. It is a version of [tmpfile](../../c-runtime-library/r
 
 ## Syntax
 
-```
+```C
 errno_t tmpfile_s(
    FILE** pFilePtr
 );
@@ -34,7 +34,7 @@ errno_t tmpfile_s(
 
 ### Parameters
 
-[out] `pFilePtr`
+`pFilePtr`
 The address of a pointer to store the address of the generated pointer to a stream.
 
 ## Return Value
@@ -107,8 +107,8 @@ Temporary file 3 was created
 3 temporary files deleted
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](../../c-runtime-library/reference/rmtmp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

@@ -26,7 +26,7 @@ Write formatted output using a pointer to a list of arguments. These are version
 
 ## Syntax
 
-```
+```C
 int vsprintf_s(
    char *buffer,
    size_t numberOfElements,
@@ -94,11 +94,11 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 
 Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
-`vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, `count`, of type `size_t`.
+`vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, *count*, of type `size_t`.
 
 These functions differ from the non-secure versions only in that the secure versions support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -158,7 +158,7 @@ int main( void )
 This is a string
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
@@ -166,4 +166,4 @@ This is a string
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)
+[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>

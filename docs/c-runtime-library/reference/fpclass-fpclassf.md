@@ -26,7 +26,7 @@ Returns a value indicating the floating-point classification of the argument.
 
 ## Syntax
 
-```
+```C
 int _fpclass(
    double x
 );
@@ -70,7 +70,7 @@ The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are si
 
 For more compatibility and conformance information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>

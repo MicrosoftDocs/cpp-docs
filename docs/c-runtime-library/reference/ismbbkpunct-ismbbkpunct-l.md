@@ -26,7 +26,7 @@ Checks whether a multibyte character is a punctuation character.
 
 ## Syntax
 
-```
+```C
 int _ismbbkpunct(
    unsigned int c
 );
@@ -38,7 +38,7 @@ int _ismbbkpunct_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to be tested.
 
 *locale*
@@ -46,7 +46,7 @@ Locale to use.
 
 ## Return Value
 
-`_ismbbkpunct` returns a nonzero value if the integer `c` is a non-ASCII punctuation symbol, or 0 if it is not. For example, in code page 932 only, `_ismbbkpunct` tests for katakana punctuation. `_ismbbkpunct` uses the current locale for any locale-dependent character settings. `_ismbbkpunct_l` is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+`_ismbbkpunct` returns a nonzero value if the integer *c* is a non-ASCII punctuation symbol, or 0 if it is not. For example, in code page 932 only, `_ismbbkpunct` tests for katakana punctuation. `_ismbbkpunct` uses the current locale for any locale-dependent character settings. `_ismbbkpunct_l` is identical except that it uses the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Locale to use.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

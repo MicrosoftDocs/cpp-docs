@@ -26,7 +26,7 @@ Flushes all streams; clears all buffers.
 
 ## Syntax
 
-```
+```C
 int _flushall( void );
 ```
 
@@ -74,10 +74,10 @@ int main( void )
 There were 3 streams flushed
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_commit](../../c-runtime-library/reference/commit.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [fflush](../../c-runtime-library/reference/fflush.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)
+[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>

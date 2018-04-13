@@ -26,7 +26,7 @@ Allocates memory on the stack. This is a version of [_alloca](../../c-runtime-li
 
 ## Syntax
 
-```
+```C
 void *_malloca(
    size_t size
 );
@@ -160,10 +160,10 @@ int main()
 Enter the number of bytes to allocate using _malloca: 1000
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
 [realloc](../../c-runtime-library/reference/realloc.md)<br/>
-[_resetstkoflw](../../c-runtime-library/reference/resetstkoflw.md)
+[_resetstkoflw](../../c-runtime-library/reference/resetstkoflw.md)<br/>

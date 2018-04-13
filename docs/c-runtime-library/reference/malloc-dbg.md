@@ -26,7 +26,7 @@ Allocates a block of memory in the heap with additional space for a debugging he
 
 ## Syntax
 
-```
+```C
 void *_malloc_dbg(
    size_t size,
    int blockType,
@@ -81,9 +81,9 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 For a sample of how to use `_malloc_dbg`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [malloc](../../c-runtime-library/reference/malloc.md)<br/>
 [_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)<br/>
-[_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)
+[_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)<br/>

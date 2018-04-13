@@ -26,7 +26,7 @@ Resets the error indicator for a stream. This is a version of [clearerr](../../c
 
 ## Syntax
 
-```
+```C
 errno_t clearerr_s(
    FILE *stream
 );
@@ -109,7 +109,7 @@ n
 Will input cause an error? n
 ```
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -117,4 +117,4 @@ Will input cause an error? n
 [_eof](../../c-runtime-library/reference/eof.md)<br/>
 [feof](../../c-runtime-library/reference/feof.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

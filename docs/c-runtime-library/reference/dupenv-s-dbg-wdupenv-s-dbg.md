@@ -26,7 +26,7 @@ Get a value from the current environment.  Versions of [_dupenv_s, _wdupenv_s](.
 
 ## Syntax
 
-```
+```C
 errno_t _dupenv_s_dbg(
    char **buffer,
    size_t *numberOfElements,
@@ -96,7 +96,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_dupenv_s_dbg.c
 #include  <stdlib.h>
 #include <crtdbg.h>
@@ -118,16 +118,14 @@ int main( void )
 }
 ```
 
-## Sample Output
-
-```
+```Output
 pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl
 nonexistentvariable = (null)
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
 [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
-[_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)
+[_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)<br/>

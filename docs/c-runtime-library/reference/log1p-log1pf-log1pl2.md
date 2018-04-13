@@ -25,7 +25,7 @@ Computes the natural logarithm of 1 plus the specified value.
 
 ## Syntax
 
-```
+```C
 double log1p(
    double x
 );
@@ -88,7 +88,7 @@ If *x* is a natural number, this function returns the logarithm of the factorial
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>

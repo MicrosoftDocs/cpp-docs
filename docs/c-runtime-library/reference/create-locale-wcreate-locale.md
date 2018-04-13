@@ -26,7 +26,7 @@ Creates a locale object.
 
 ## Syntax
 
-```
+```C
 _locale_t _create_locale(
    int category,
    const char *locale
@@ -51,7 +51,7 @@ If a valid *locale* and *category* are given, returns the specified locale setti
 
 ## Remarks
 
-The `_create_locale` function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the `_l` suffix). The behavior is similar to `setlocale`, except that instead of applying the specified locale settings to the current environment, the settings are saved in a `_locale_t` structure that is returned. The `_locale_t` structure should be freed using [_free_locale](../../c-runtime-library/reference/free-locale.md) when it is no longer needed.
+The `_create_locale` function allows you to create an object that represents certain region-specific settings, for use in locale-specific versions of many CRT functions (functions with the **_l** suffix). The behavior is similar to `setlocale`, except that instead of applying the specified locale settings to the current environment, the settings are saved in a `_locale_t` structure that is returned. The `_locale_t` structure should be freed using [_free_locale](../../c-runtime-library/reference/free-locale.md) when it is no longer needed.
 
 `_wcreate_locale` is a wide-character version of `_create_locale`; the *locale* argument to `_wcreate_locale` is a wide-character string. `_wcreate_locale` and `_create_locale` behave identically otherwise.
 
@@ -156,7 +156,7 @@ In de-CH locale, _strftime_l returns 'Samstag, 9. Februar 2002'
 In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 ```
 
-## See Also
+## See also
 
 [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
 [Language Strings](../../c-runtime-library/language-strings.md)<br/>
@@ -176,4 +176,4 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 [strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
 [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)
+[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>

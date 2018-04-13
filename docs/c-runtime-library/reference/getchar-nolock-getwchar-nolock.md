@@ -26,7 +26,7 @@ Reads a character from standard input.
 
 ## Syntax
 
-```
+```C
 int _getchar_nolock( void );
 wint_t _getwchar_nolock( void );
 ```
@@ -85,11 +85,11 @@ int main()
 This textInput was: This text
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
 [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
 [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
 [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)
+[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>

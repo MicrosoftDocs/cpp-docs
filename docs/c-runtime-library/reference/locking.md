@@ -26,9 +26,8 @@ Locks or unlocks bytes of a file.
 
 ## Syntax
 
-```
-
-      int _locking(
+```C
+int _locking(
    int fd,
    int mode,
    long nbytes
@@ -164,8 +163,8 @@ No one can change these bytes while I'm reading them
 Now I'm done. Do what you will with them
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

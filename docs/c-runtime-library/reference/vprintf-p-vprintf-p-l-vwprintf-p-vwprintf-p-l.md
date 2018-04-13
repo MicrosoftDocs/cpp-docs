@@ -26,7 +26,7 @@ Writes formatted output by using a pointer to a list of arguments, and enables s
 
 ## Syntax
 
-```
+```C
 int _vprintf_p(
    const char *format,
    va_list argptr
@@ -70,7 +70,7 @@ Each of these functions takes a pointer to an argument list, then formats and wr
 
 `_vwprintf_p` is the wide-character version of `_vprintf_p`; the two functions behave identically if the stream is opened in ANSI mode. `_vprintf_p` doesn't currently support output into a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
@@ -95,7 +95,7 @@ If *format* is a null pointer, or if the format string contains invalid formatti
 
 The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
@@ -106,4 +106,4 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>
 [_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l](../../c-runtime-library/reference/vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](../../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>
-[printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)
+[printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>

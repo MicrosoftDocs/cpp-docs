@@ -26,7 +26,7 @@ Gets the current value of the errno global variable.
 
 ## Syntax
 
-```
+```C
 errno_t _get_errno( 
    int * pValue 
 );
@@ -34,12 +34,12 @@ errno_t _get_errno( 
 
 ### Parameters
 
-[out] `pValue`
+*pValue*
 A pointer to an integer to be filled with the current value of the `errno` variable.
 
 ## Return Value
 
-Returns zero if successful; an error code on failure. If `pValue` is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+Returns zero if successful; an error code on failure. If *pValue* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 
@@ -79,7 +79,7 @@ fyi, ENOENT = 2
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_set_errno](../../c-runtime-library/reference/set-errno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

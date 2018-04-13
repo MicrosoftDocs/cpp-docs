@@ -26,7 +26,7 @@ Returns the size of a memory block allocated in the heap (debug version only).
 
 ## Syntax
 
-```
+```C
 size_t _aligned_msize_dbg(
    void *memblock,
    size_t alignment,
@@ -36,13 +36,13 @@ size_t _aligned_msize_dbg(
 
 ### Parameters
 
-[in] *memblock*
+*memblock*
 Pointer to the memory block.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] *offset*
+*offset*
 The offset into the memory allocation to force the alignment.
 
 ## Return Value
@@ -71,6 +71,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>

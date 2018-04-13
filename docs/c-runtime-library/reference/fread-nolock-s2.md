@@ -25,7 +25,7 @@ Reads data from a stream, without locking other threads. This version of [fread_
 
 ## Syntax
 
-```
+```C
 size_t _fread_nolock_s(
    void *buffer,
    size_t bufferSize,
@@ -40,13 +40,13 @@ size_t _fread_nolock_s(
 *buffer*
 Storage location for data.
 
-`bufferSize`
+*bufferSize*
 Size of the destination buffer in bytes.
 
-`elementSize`
+*elementSize*
 Size of the item to read in bytes.
 
-`elementCount`
+*elementCount*
 Maximum number of items to be read.
 
 *stream*
@@ -68,8 +68,8 @@ This function is a non-locking version of `fread_s`. It is identical to `fread_s
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)
+[_read](../../c-runtime-library/reference/read.md)<br/>

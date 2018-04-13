@@ -26,7 +26,7 @@ Sets a function to be called when the CRT detects an invalid argument.
 
 ## Syntax
 
-```
+```C
 _invalid_parameter_handler _set_invalid_parameter_handler(
    _invalid_parameter_handler pNew
 );
@@ -37,7 +37,7 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 
 ### Parameters
 
-[in] `pNew`
+*pNew*
 The function pointer to the new invalid parameter handler.
 
 ## Return Value
@@ -62,7 +62,7 @@ void _invalid_parameter(
 );
 ```
 
-The *expression* argument is a wide string representation of the argument expression that raised the error. The `function` argument is the name of the CRT function that received the invalid argument. The `file` argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value `NULL` unless a debug version of the CRT library is used.
+The *expression* argument is a wide string representation of the argument expression that raised the error. The *function* argument is the name of the CRT function that received the invalid argument. The *file* argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value `NULL` unless a debug version of the CRT library is used.
 
 ## Requirements
 
@@ -118,8 +118,8 @@ Invalid parameter detected in function common_vfprintf. File: minkernel\crts\ucr
 Expression: format != nullptr
 ```
 
-## See Also
+## See also
 
 [_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)<br/>
 [Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

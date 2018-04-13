@@ -26,7 +26,7 @@ Reassigns a file pointer. These versions of [freopen, _wfreopen](../../c-runtime
 
 ## Syntax
 
-```
+```C
 errno_t freopen(
    FILE** pFile,
    const char *path,
@@ -43,16 +43,16 @@ errno_t _wfreopen(
 
 ### Parameters
 
-[out] `pFile`
+*pFile*
 A pointer to the file pointer to be provided by the call.
 
-[in] *path*
+*path*
 Path of new file.
 
-[in] *mode*
+*mode*
 Type of access permitted.
 
-[in] *stream*
+*stream*
 Pointer to `FILE` structure.
 
 ## Return Value
@@ -63,7 +63,7 @@ Each of these functions returns an error code. If an error occurs, the original 
 
 The `freopen_s` function closes the file currently associated with *stream* and reassigns *stream* to the file specified by `path.` `_wfreopen_s` is a wide-character version of `_freopen_s`; the *path* and *mode* arguments to `_wfreopen_s` are wide-character strings. `_wfreopen_s` and `_freopen_s` behave identically otherwise.
 
-If any of `pFile`, *path*, *mode*, or *stream* are `NULL`, or if *path* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+If any of *pFile*, *path*, *mode*, or *stream* are `NULL`, or if *path* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 ### Generic-Text Routine Mappings
 
@@ -153,7 +153,7 @@ successfully reassigned
 This will go to the file 'freopen.out'
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
@@ -162,4 +162,4 @@ This will go to the file 'freopen.out'
 [_fileno](../../c-runtime-library/reference/fileno.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)
+[_setmode](../../c-runtime-library/reference/setmode.md)<br/>

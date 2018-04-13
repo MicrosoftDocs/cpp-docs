@@ -29,7 +29,7 @@ Finds the next token in a string, by using the current locale or a locale that's
 
 ## Syntax
 
-```
+```C
 char* strtok_s(
    char* str,
    const char* delimiters,
@@ -108,7 +108,7 @@ On the first call to `strtok_s` the function skips leading delimiters and return
 
 Since the *context* parameter supersedes the static buffers used in `strtok` and `_strtok_l`, it is possible to parse two strings simultaneously in the same thread.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current thread locale for this locale-dependent behavior. The versions with the `_l` suffix are identical except that they instead use the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except that they instead use the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 
@@ -194,10 +194,10 @@ more
 tokens
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](../../c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

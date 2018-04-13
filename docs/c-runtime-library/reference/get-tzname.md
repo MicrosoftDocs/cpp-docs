@@ -26,7 +26,7 @@ Retrieves the character string representation of the time zone name or the dayli
 
 ## Syntax
 
-```
+```C
 errno_t _get_tzname(
     size_t* pReturnValue,
     char* timeZoneName,
@@ -37,27 +37,27 @@ errno_t _get_tzname(
 
 ### Parameters
 
-[out] `pReturnValue`
-The string length of `timeZoneName` including a NULL terminator.
+*pReturnValue*
+The string length of *timeZoneName* including a NULL terminator.
 
-[out] `timeZoneName`
-The address of a character string for the representation of the time zone name or the daylight standard time zone name (DST), depending on `index`.
+*timeZoneName*
+The address of a character string for the representation of the time zone name or the daylight standard time zone name (DST), depending on *index*.
 
-[in] `sizeInBytes`
-The size of the `timeZoneName` character string in bytes.
+*sizeInBytes*
+The size of the *timeZoneName* character string in bytes.
 
-[in] `index`
+*index*
 The index of one of the two time zone names to retrieve.
 
 ## Return Value
 
 Zero if successful, otherwise an `errno` type value.
 
-If either `timeZoneName` is `NULL`, or `sizeInBytes` is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+If either *timeZoneName* is `NULL`, or *sizeInBytes* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ### Error Conditions
 
-|`pReturnValue`|`timeZoneName`|`sizeInBytes`|`index`|Return value|Contents of `timeZoneName`|
+|*pReturnValue*|*timeZoneName*|*sizeInBytes*|*index*|Return value|Contents of *timeZoneName*|
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |size of TZ name|`NULL`|0|0 or 1|0|not modified|
 |size of TZ name|any|> 0|0 or 1|0|TZ name|
@@ -67,11 +67,11 @@ If either `timeZoneName` is `NULL`, or `sizeInBytes` is zero or less than zero (
 
 ## Remarks
 
-The `_get_tzname` function retrieves the character string representation of the time zone name or the daylight standard time zone name (DST) into the address of `timeZoneName` depending on the index value, along with the size of the string in `pReturnValue`. If `timeZoneName` is `NULL` and `sizeInBytes` is zero, just the size of the string of either time zone in bytes is returned in `pReturnValue`. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of index have undetermined results.
+The `_get_tzname` function retrieves the character string representation of the time zone name or the daylight standard time zone name (DST) into the address of *timeZoneName* depending on the index value, along with the size of the string in *pReturnValue*. If *timeZoneName* is `NULL` and *sizeInBytes* is zero, just the size of the string of either time zone in bytes is returned in *pReturnValue*. The index values must be either 0 for standard time zone or 1 for daylight standard time zone; any other values of index have undetermined results.
 
 ### Index values
 
-|`index`|Contents of `timeZoneName`|`timeZoneName` default value|
+|*index*|Contents of *timeZoneName*|*timeZoneName* default value|
 |-------------|--------------------------------|----------------------------------|
 |0|Time zone name|"PST"|
 |1|Daylight standard time zone name|"PDT"|
@@ -87,11 +87,11 @@ Unless the values are explicitly changed during run time, the default values are
 
 For more information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
 [_get_daylight](../../c-runtime-library/reference/get-daylight.md)<br/>
 [_get_dstbias](../../c-runtime-library/reference/get-dstbias.md)<br/>
 [_get_timezone](../../c-runtime-library/reference/get-timezone.md)<br/>
-[TZNAME_MAX](../../c-runtime-library/tzname-max.md)
+[TZNAME_MAX](../../c-runtime-library/tzname-max.md)<br/>

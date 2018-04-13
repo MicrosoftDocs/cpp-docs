@@ -26,7 +26,7 @@ Tests for an error on a stream.
 
 ## Syntax
 
-```
+```C
 int ferror(
    FILE *stream
 );
@@ -59,7 +59,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [feof](../../c-runtime-library/reference/feof.md).
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -67,4 +67,4 @@ See the example for [feof](../../c-runtime-library/reference/feof.md).
 [_eof](../../c-runtime-library/reference/eof.md)<br/>
 [feof](../../c-runtime-library/reference/feof.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

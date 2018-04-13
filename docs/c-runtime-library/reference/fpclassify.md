@@ -24,7 +24,7 @@ Returns the floating-point classification of the argument.
 
 ## Syntax
 
-```
+```C
 int fpclassify(
    /* floating-point */ x
 );
@@ -72,7 +72,7 @@ In C, **fpclassify** is a macro; in C++, **fpclassify** is a function overloaded
 
 The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and C++11 specifications. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>

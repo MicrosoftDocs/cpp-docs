@@ -26,7 +26,7 @@ Stores the current state of the specified floating-point exception flags.
 
 ## Syntax
 
-```
+```C
 int fegetexceptflag(
    fexcept_t* pstatus,
    int excepts
@@ -71,7 +71,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>

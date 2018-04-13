@@ -26,7 +26,7 @@ Builds the exception record and calls the runtime environment to start processin
 
 ## Syntax
 
-```
+```C
 extern "C" void __stdcall _CxxThrowException(
    void* pExceptionObject
    _ThrowInfo* pThrowInfo
@@ -35,10 +35,10 @@ extern "C" void __stdcall _CxxThrowException(
 
 ### Parameters
 
-[in] `pExceptionObject`
+*pExceptionObject*
 The object that generated the exception.
 
-[in] `pThrowInfo`
+*pThrowInfo*
 The information that is required to process the exception.
 
 ## Remarks
@@ -49,6 +49,6 @@ This method is included in a compiler-only file that the compiler uses to proces
 
 **Source:** Throw.cpp
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

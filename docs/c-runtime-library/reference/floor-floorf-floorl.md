@@ -26,7 +26,7 @@ Calculates the floor of a value.
 
 ## Syntax
 
-```
+```C
 double floor(
    double x
 );
@@ -106,7 +106,7 @@ The ceil of 2.8 is 3.000000
 The ceil of -2.8 is -2.000000
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>

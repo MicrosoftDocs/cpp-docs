@@ -26,7 +26,7 @@ Sets the modification time on an open file.
 
 ## Syntax
 
-```
+```C
 int _futime(
    int fd,
    struct _utimbuf *filetime
@@ -46,7 +46,7 @@ int _futime64(
 *fd*
 File descriptor to the open file.
 
-`filetime`
+*filetime*
 Pointer to the structure containing the new modification date.
 
 ## Return Value
@@ -133,6 +133,6 @@ Directory of Z:\crt
 File time modified
 ```
 
-## See Also
+## See also
 
-[Time Management](../../c-runtime-library/time-management.md)
+[Time Management](../../c-runtime-library/time-management.md)<br/>

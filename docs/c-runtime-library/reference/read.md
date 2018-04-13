@@ -26,7 +26,7 @@ Reads data from a file.
 
 ## Syntax
 
-```
+```C
 int _read(
    int fd,
    void *buffer,
@@ -126,10 +126,10 @@ Line two.
 Read 19 bytes from file
 ```
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [fread](../../c-runtime-library/reference/fread.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_write](../../c-runtime-library/reference/write.md)
+[_write](../../c-runtime-library/reference/write.md)<br/>

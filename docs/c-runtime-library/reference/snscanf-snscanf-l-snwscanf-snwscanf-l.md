@@ -26,7 +26,7 @@ Reads formatted data of a specified length from a string. More secure versions o
 
 ## Syntax
 
-```
+```C
 int __cdecl _snscanf(
    const char * input,
    size_t length,
@@ -57,17 +57,17 @@ int __cdecl _snwscanf_l(
 
 ### Parameters
 
-`input`
+*input*
 Input string to examine.
 
-`length`
-Number of characters to examine in `input`.
+*length*
+Number of characters to examine in *input*.
 
 *format*
 One or more format specifiers.
 
-`... (optional)`
-Variables that will be used to store the values extracted from the input string by the format specifiers in *format*.
+*...*
+Optional variables that will be used to store the values extracted from the input string by the format specifiers in *format*.
 
 *locale*
 The locale to use.
@@ -76,7 +76,7 @@ The locale to use.
 
 Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-If `input` or *format* is a `NULL` pointer, or if `length` is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
+If *input* or *format* is a `NULL` pointer, or if *length* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -84,7 +84,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 This function is like `sscanf` except that it provides the ability to specify a fixed number of characters to examine from the input string. For more information, see [sscanf](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
@@ -135,6 +135,6 @@ _snscanf converted 2 fields: 15 and 12.000000
 _snwscanf converted 2 fields: 15 and 12.000000
 ```
 
-## See Also
+## See also
 
-[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)
+[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)<br/>

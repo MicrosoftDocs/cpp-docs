@@ -91,7 +91,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 Approximate signed quotient is -3
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>

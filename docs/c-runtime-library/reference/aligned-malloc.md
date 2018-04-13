@@ -26,7 +26,7 @@ Allocates memory on a specified alignment boundary.
 
 ## Syntax
 
-```
+```C
 void * _aligned_malloc(
     size_t size,
     size_t alignment
@@ -141,6 +141,6 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 This pointer, 3280891, is offset by 5 on alignment of 16
 ```
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

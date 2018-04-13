@@ -26,7 +26,7 @@ Opens a file for sharing. These versions of [_sopen and _wsopen](../../c-runtime
 
 ## Syntax
 
-```
+```C
 errno_t _sopen_s(
    int* pfh,
    const char *filename,
@@ -45,45 +45,38 @@ errno_t _wsopen_s(
 
 ### Parameters
 
-[out] `pfh`
+*pfh*
 The file handle, or -1 in the case of an error.
 
-[in] *filename*
+*filename*
 File name.
 
-[in] *oflag*
+*oflag*
 The kind of operations allowed.
 
-[in] *shflag*
+*shflag*
 The kind of sharing allowed.
 
-[in] *pmode*
+*pmode*
 Permission setting.
 
 ## Return Value
 
 A nonzero return value indicates an error; in that case `errno` is set to one of the following values.
 
-`EACCES`
-The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
-
-`EEXIST`
-`_O_CREAT` and `_O_EXCL` flags were specified, but *filename* already exists.
-
-`EINVAL`
-Invalid *oflag*, *shflag*, or *pmode* argument, or `pfh` or *filename* was a null pointer.
-
-`EMFILE`
-No more file descriptors available.
-
-`ENOENT`
-File or path not found.
+|||
+|-|-|
+`EACCES`| The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
+`EEXIST`| `_O_CREAT` and `_O_EXCL` flags were specified, but *filename* already exists.
+`EINVAL`| Invalid *oflag*, *shflag*, or *pmode* argument, or *pfh* or *filename* was a null pointer.
+`EMFILE`|No more file descriptors available.
+`ENOENT`|File or path not found.
 
 If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and `EINVAL` is returned.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-In the case of an error, -1 is returned through `pfh` (unless `pfh` is a null pointer).
+In the case of an error, -1 is returned through *pfh* (unless *pfh* is a null pointer).
 
 ## Remarks
 
@@ -199,11 +192,11 @@ If write permission is not given, the file is read-only. In the Windows operatin
 
 See the example for [_locking](../../c-runtime-library/reference/locking.md).
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>

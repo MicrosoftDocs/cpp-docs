@@ -26,7 +26,7 @@ Reallocates an array and initializes its elements to 0 (debug version only).
 
 ## Syntax
 
-```
+```C
 void *_recalloc_dbg(
    void *userData,
    size_t num,
@@ -39,7 +39,7 @@ void *_recalloc_dbg(
 
 ### Parameters
 
-`userData`
+*userData*
 Pointer to the previously allocated memory block.
 
 *number*
@@ -87,6 +87,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

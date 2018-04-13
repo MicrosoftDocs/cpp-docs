@@ -26,7 +26,7 @@ Calculates the ceiling of a value.
 
 ## Syntax
 
-```
+```C
 double ceil(
    double x
 );
@@ -75,7 +75,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [floor](../../c-runtime-library/reference/floor-floorf-floorl.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>

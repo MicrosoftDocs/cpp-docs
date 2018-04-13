@@ -69,7 +69,7 @@ The locale to use.
 
 ## Return Value
 
-Both `__iscsym` and `__iswcsym` return a nonzero value if *c* is a letter, underscore, or digit. Both `__iscsymf` and `__iswcsymf` return a nonzero value if *c* is a letter or an underscore. Each of these routines returns 0 if *c* does not satisfy the test condition. The versions of these functions with the `_l` suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+Both `__iscsym` and `__iswcsym` return a nonzero value if *c* is a letter, underscore, or digit. Both `__iscsymf` and `__iswcsymf` return a nonzero value if *c* is a letter or an underscore. Each of these routines returns 0 if *c* does not satisfy the test condition. The versions of these functions with the **_l** suffix are identical except that they use the *locale* passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Remarks
 
@@ -85,8 +85,8 @@ For backward compatibility, `iscsym` and `iscsymf` are defined as macros only wh
 
 The `iscsym`, `iscsymf`, `__iscsym`, `__iswcsym`, `__iscsymf`, `__iswcsymf`, `_iscsym_l`, `_iswcsym_l`, `_iscsymf_l`, and `_iswcsymf_l` routines are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>

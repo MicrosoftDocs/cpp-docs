@@ -26,7 +26,7 @@ Converts a floating-point value to a string, which it stores in a buffer. A more
 
 ## Syntax
 
-```
+```C
 char *_gcvt(
    double value,
    int digits,
@@ -121,7 +121,7 @@ buffer: '-0.123456789012' (15 chars)
 buffer: '-1.23456789012e-002' (19 chars)
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

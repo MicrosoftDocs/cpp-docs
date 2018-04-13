@@ -26,7 +26,7 @@ Retrieves the client-defined reporting function for hooking it into the C run ti
 
 ## Syntax
 
-```
+```C
 _CRT_REPORT_HOOK _CrtGetReportHook( void );
 ```
 
@@ -56,7 +56,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 For a sample of how to use `_CrtSetReportHook`, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md)
+[_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md)<br/>

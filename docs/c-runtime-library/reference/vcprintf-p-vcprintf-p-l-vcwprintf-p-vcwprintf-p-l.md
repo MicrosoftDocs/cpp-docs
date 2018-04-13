@@ -29,7 +29,7 @@ Writes formatted output to the console by using a pointer to a list of arguments
 
 ## Syntax
 
-```
+```C
 int _vcprintf_p(
    const char* format,
    va_list argptr
@@ -71,7 +71,7 @@ The number of characters that are written, or a negative value if an output erro
 
 Each of these functions takes a pointer to an argument list, and then uses the `_putch` function to format and write the given data to the console. (`_vcwprintf_p` uses `_putwch` instead of `_putch`. `_vcwprintf_p` is the wide-character version of `_vcprintf_p`. It takes a wide-character string as an argument.)
 
-The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
+The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current locale.
 
 Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format specification supports positional parameters so that you can specify the order in which the arguments are used in the format string. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
@@ -129,9 +129,9 @@ parameter 2 = 222; parameter 1 = one
 38 characters printed
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>
-[printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)
+[printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>

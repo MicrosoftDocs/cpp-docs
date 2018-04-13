@@ -23,7 +23,7 @@ These functions are used by the C Runtime Library to handle non-valid parameters
 
 ## Syntax
 
-```
+```C
 extern "C" void __cdecl
 _invalid_parameter(
     wchar_t const* const expression,
@@ -86,9 +86,9 @@ When the default handler `_invoke_watson` is called, if the processor supports a
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)<br/>
 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)<br/>
-[Parameter Validation](../../c-runtime-library/parameter-validation.md)
+[Parameter Validation](../../c-runtime-library/parameter-validation.md)<br/>

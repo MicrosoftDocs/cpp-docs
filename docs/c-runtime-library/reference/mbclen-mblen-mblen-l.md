@@ -29,7 +29,7 @@ Gets the length and determines the validity of a multibyte character.
 
 ## Syntax
 
-```
+```C
 size_t _mbclen(
    const unsigned char *c
 );
@@ -46,13 +46,13 @@ int _mblen_l(
 
 ### Parameters
 
-`c`
+*c*
 Multibyte character.
 
-`mbstr`
+*mbstr*
 Address of a multibyte-character byte sequence.
 
-`count`
+*count*
 Number of bytes to check.
 
 *locale*
@@ -60,15 +60,15 @@ Locale to use.
 
 ## Return Value
 
-`_mbclen` returns 1 or 2, according to whether the multibyte character `c` is 1 or 2 bytes long. There is no error return for `_mbclen`. If `mbstr` is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If `mbstr` is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that `mbstr` points to does not form a valid multibyte character within the first `count` characters, `mblen` returns -1.
+`_mbclen` returns 1 or 2, according to whether the multibyte character *c* is 1 or 2 bytes long. There is no error return for `_mbclen`. If *mbstr* is not `NULL`, `mblen` returns the length, in bytes, of the multibyte character. If *mbstr* is `NULL` or it points to the wide-character null character, `mblen` returns 0. If the object that *mbstr* points to does not form a valid multibyte character within the first *count* characters, `mblen` returns -1.
 
 ## Remarks
 
-The `_mbclen` function returns the length, in bytes, of the multibyte character `c`. If `c` does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.
+The `_mbclen` function returns the length, in bytes, of the multibyte character *c*. If *c* does not point to the lead byte of a multibyte character as determined by an implicit call to `_ismbblead`, the result of `_mbclen` is unpredictable.
 
-`mblen` returns the length in bytes of `mbstr` if it is a valid multibyte character and determines multibyte-character validity associated with the code page. `mblen` examines `count` or fewer bytes contained in `mbstr`, but not more than `MB_CUR_MAX` bytes.
+`mblen` returns the length in bytes of *mbstr* if it is a valid multibyte character and determines multibyte-character validity associated with the code page. `mblen` examines *count* or fewer bytes contained in *mbstr*, but not more than `MB_CUR_MAX` bytes.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the `_l` suffix use the current locale for this locale-dependent behavior; the versions with the `_l` suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 
@@ -125,10 +125,10 @@ Length in bytes of multibyte character 61: 1
 Length in bytes of NULL multibyte character 0: 0
 ```
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbccpy, _mbccpy_l](../../c-runtime-library/reference/mbccpy-mbccpy-l.md)<br/>
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)
+[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>

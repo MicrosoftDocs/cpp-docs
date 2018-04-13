@@ -26,7 +26,7 @@ Copies bytes between buffers. These are versions of [memcpy, wmemcpy](../../c-ru
 
 ## Syntax
 
-```
+```C
 errno_t memcpy_s(
    void *dest,
    size_t destSize,
@@ -43,16 +43,16 @@ errno_t wmemcpy_s(
 
 ### Parameters
 
-`dest`
+*dest*
 New buffer.
 
-`destSize`
+*destSize*
 Size of the destination buffer, in bytes for memcpy_s and wide characters (wchar_t) for wmemcpy_s.
 
-`src`
+*src*
 Buffer to copy from.
 
-`count`
+*count*
 Number of characters to copy.
 
 ## Return Value
@@ -61,18 +61,18 @@ Zero if successful; an error code on failure.
 
 ### Error Conditions
 
-|`dest`|`destSize`|`src`|`count`|Return value|Contents of `dest`|
+|*dest*|*destSize*|*src*|*count*|Return value|Contents of *dest*|
 |------------|----------------|-----------|---|------------------|------------------------|
 |any|any|any|0|0|Not modified|
 |`NULL`|any|any|non-zero|`EINVAL`|Not modified|
-|any|any|`NULL`|non-zero|`EINVAL`|`dest` is zeroed out|
-|any|< `count`|any|non-zero|`ERANGE`|`dest` is zeroed out|
+|any|any|`NULL`|non-zero|`EINVAL`|*dest* is zeroed out|
+|any|< *count*|any|non-zero|`ERANGE`|*dest* is zeroed out|
 
 ## Remarks
 
-`memcpy_s` copies `count` bytes from `src` to `dest`; `wmemcpy_s` copies `count` wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.
+`memcpy_s` copies *count* bytes from *src* to *dest*; `wmemcpy_s` copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.
 
-These functions validate their parameters. If `count` is non-zero and `dest` or `src` is a null pointer, or `destSize` is smaller than `count`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE` and set `errno` to the return value.
+These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` or `ERANGE` and set `errno` to the return value.
 
 ## Requirements
 
@@ -123,7 +123,7 @@ int main()
 0 1 4 9 16 25 36 49 64 81
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
@@ -133,4 +133,4 @@ int main()
 [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
 [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)
+[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>

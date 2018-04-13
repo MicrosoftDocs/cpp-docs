@@ -26,7 +26,7 @@ Allocates memory blocks.
 
 ## Syntax
 
-```
+```C
 void *malloc(
    size_t size
 );
@@ -47,7 +47,7 @@ The `malloc` function allocates a memory block of at least *size* bytes. The blo
 
 `malloc` sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-The startup code uses `malloc` to allocate storage for the `_environ`, `envp`, and `argv` variables. The following functions and their wide-character counterparts also call `malloc`.
+The startup code uses `malloc` to allocate storage for the `_environ`, *envp*, and *argv* variables. The following functions and their wide-character counterparts also call `malloc`.
 
 |||||
 |-|-|-|-|
@@ -117,10 +117,10 @@ Memory space allocated for path name
 Memory freed
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](../../c-runtime-library/reference/calloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
 [realloc](../../c-runtime-library/reference/realloc.md)<br/>
-[_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md)
+[_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md)<br/>

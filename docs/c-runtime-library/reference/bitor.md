@@ -25,7 +25,7 @@ An alternative to the &#124; operator.
 
 ## Syntax
 
-```
+```C
 
 #define bitor |
 

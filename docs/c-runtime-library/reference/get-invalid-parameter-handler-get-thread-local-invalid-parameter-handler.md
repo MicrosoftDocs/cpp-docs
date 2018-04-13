@@ -26,7 +26,7 @@ Gets the function that is called when the CRT detects an invalid argument.
 
 ## Syntax
 
-```
+```C
 _invalid_parameter_handler _get_invalid_parameter_handler(void);
 _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
 ```
@@ -61,7 +61,7 @@ For details on the invalid parameter handler, see the prototype in [_set_invalid
 
 The `_get_invalid_parameter_handler` and `_get_thread_local_invalid_parameter_handler` functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)<br/>
-[Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)
+[Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>

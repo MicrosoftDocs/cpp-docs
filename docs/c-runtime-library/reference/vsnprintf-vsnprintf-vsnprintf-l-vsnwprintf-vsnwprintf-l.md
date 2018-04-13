@@ -26,7 +26,7 @@ Write formatted output using a pointer to a list of arguments. More secure versi
 
 ## Syntax
 
-```
+```C
 int vsnprintf(
    char *buffer,
    size_t count,
@@ -103,7 +103,7 @@ int _vsnwprintf_l(
 *buffer*
 Storage location for output.
 
-`count`
+*count*
 Maximum number of characters to write.
 
 *format*
@@ -119,29 +119,29 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by `count` is not sufficiently large to contain the output specified by *format* and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if `count` were sufficiently large. If the return value is greater than `count` - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by *count* is not sufficiently large to contain the output specified by *format* and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if *count* were sufficiently large. If the return value is greater than *count* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
 
-Both `_vsnprintf` and `_vsnwprintf` functions return the number of characters written if the number of characters to write is less than or equal to `count`; if the number of characters to write is greater than `count`, these functions return -1 indicating that output has been truncated.
+Both `_vsnprintf` and `_vsnwprintf` functions return the number of characters written if the number of characters to write is less than or equal to *count*; if the number of characters to write is greater than *count*, these functions return -1 indicating that output has been truncated.
 
-The value returned by all these functions does not include the terminating null, whether one is written or not. When `count` is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
+The value returned by all these functions does not include the terminating null, whether one is written or not. When *count* is zero, the value returned is the number of characters the functions would write, not including any terminating null. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
 
-If *format* is `NULL`, or if *buffer* is NULL and `count` is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+If *format* is `NULL`, or if *buffer* is NULL and *count* is not equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 ## Remarks
 
-Each of these functions takes a pointer to an argument list, then formats the data, and writes up to `count` characters  to the memory pointed to by *buffer*. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than `count`).
+Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *count* characters  to the memory pointed to by *buffer*. The `vsnprintf` function always writes a null terminator, even if it truncates the output. When using `_vsnprintf` and `_vsnwprintf`, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than *count*).
 
 > [!IMPORTANT]
 >  To prevent certain kinds of security risks, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 > [!NOTE]
->  To ensure that there is room for the terminating null when calling `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf` and `_vsnwprintf_l`, be sure that `count` is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
+>  To ensure that there is room for the terminating null when calling `_vsnprintf`, `_vsnprintf_l`, `_vsnwprintf` and `_vsnwprintf_l`, be sure that *count* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.
 >
->  Because `vsnprintf` always writes the terminating null, the `count` parameter may be equal to the size of the buffer.
+>  Because `vsnprintf` always writes the terminating null, the *count* parameter may be equal to the size of the buffer.
 
 Beginning with the UCRT in Visual Studio 2015 and Windows 10,         `vsnprintf` is no longer identical to `_vsnprintf`. The `vsnprintf` function complies with the C99 standard; `_vnsprintf` is retained for backward compatibility with older Visual Studio code.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -201,7 +201,7 @@ nSize: 9, buff: Hi there!
 nSize: -1, buff: Hi there!
 ```
 
-The behavior changes if you use vsnprintf instead, along with narrow-string parameters. The `count` parameter can be the entire size of the buffer, and the return value is the number of characters that would have been written if `count` was large enough:
+The behavior changes if you use vsnprintf instead, along with narrow-string parameters. The *count* parameter can be the entire size of the buffer, and the return value is the number of characters that would have been written if *count* was large enough:
 
 ## Example
 
@@ -239,7 +239,7 @@ nSize: 9, buff: Hi there!
 nSize: 10, buff: Hi there!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
@@ -247,4 +247,4 @@ nSize: 10, buff: Hi there!
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)
+[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>

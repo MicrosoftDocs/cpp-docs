@@ -22,44 +22,38 @@ ms.workload: ["cplusplus"]
 ---
 # time, _time32, _time64
 
-Get the system time.
+Gets the system time.
 
 ## Syntax
 
-```
-time_t time(
-   time_t *timer
-);
-__time32_t _time32(
-   __time32_t *timer
-);
-__time64_t _time64(
-   __time64_t *timer
-);
+```C
+time_t time( time_t *destTime );
+__time32_t _time32( __time32_t *destTime );
+__time64_t _time64( __time64_t *destTime );
 ```
 
 ### Parameters
 
-`timer`
+*destTime*
 Pointer to the storage location for time.
 
 ## Return Value
 
-Return the time as seconds elapsed since midnight, January 1, 1970, or -1 in the case of an error.
+Returns the time as seconds elapsed since midnight, January 1, 1970, or -1 in the case of an error.
 
 ## Remarks
 
-The `time` function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by `timer`. This parameter may be `NULL`, in which case the return value is not stored.
+The **time** function returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Coordinated Universal Time (UTC), according to the system clock. The return value is stored in the location given by *destTime*. This parameter may be **NULL**, in which case the return value is not stored.
 
-`time` is a wrapper for `_time64` and `time_t` is, by default, equivalent to `__time64_t`. If you need to force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`. This is not recommended because your application may fail after January 18, 2038; the use of this macro is not allowed on 64-bit platforms.
+**time** is a wrapper for **_time64** and **time_t** is, by default, equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. This is not recommended because your application may fail after January 18, 2038; the use of this macro is not allowed on 64-bit platforms.
 
 ## Requirements
 
-|Routine|Required header|
+|Routine|Required C header|Required C++ header|
 |-------------|---------------------|
-|`time`, `_time32`, `_time64`|C: \<time.h>, C++: \<ctime> or \<time.h>|
+|**time**, **_time32**, **_time64**|\<time.h>|\<ctime> or \<time.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -110,8 +104,8 @@ int main()
     err = ctime_s(timebuf, 26, &ltime);
     if (err)
     {
-       printf("ctime_s failed due to an invalid argument.");
-       exit(1);
+        printf("ctime_s failed due to an invalid argument.");
+        exit(1);
     }
     printf( "UNIX time and date:\t\t\t%s", timebuf );
 
@@ -119,13 +113,13 @@ int main()
     err = _gmtime64_s( &gmt, &ltime );
     if (err)
     {
-       printf("_gmtime64_s failed due to an invalid argument.");
+        printf("_gmtime64_s failed due to an invalid argument.");
     }
     err = asctime_s(timebuf, 26, &gmt);
     if (err)
     {
-       printf("asctime_s failed due to an invalid argument.");
-       exit(1);
+        printf("asctime_s failed due to an invalid argument.");
+        exit(1);
     }
     printf( "Coordinated universal time:\t\t%s", timebuf );
 
@@ -133,23 +127,23 @@ int main()
     err = _localtime64_s( &today, &ltime );
     if (err)
     {
-       printf("_localtime64_s failed due to an invalid argument.");
-       exit(1);
+        printf("_localtime64_s failed due to an invalid argument.");
+        exit(1);
     }
-    if( today.tm_hour >= 12 )
+    if ( today.tm_hour >= 12 )
     {
-   strcpy_s( ampm, sizeof(ampm), "PM" );
-   today.tm_hour -= 12;
+        strcpy_s( ampm, sizeof(ampm), "PM" );
+        today.tm_hour -= 12;
     }
-    if( today.tm_hour == 0 )  // Adjust if midnight hour.
-   today.tm_hour = 12;
+    if ( today.tm_hour == 0 )  // Adjust if midnight hour.
+        today.tm_hour = 12;
 
     // Convert today into an ASCII string
     err = asctime_s(timebuf, 26, &today);
     if (err)
     {
-       printf("asctime_s failed due to an invalid argument.");
-       exit(1);
+        printf("asctime_s failed due to an invalid argument.");
+        exit(1);
     }
 
     // Note how pointer addition is used to skip the first 11
@@ -157,7 +151,7 @@ int main()
     // characters.
     //
     printf( "12-hour time:\t\t\t\t%.8s %s\n",
-       timebuf + 11, ampm );
+        timebuf + 11, ampm );
 
     // Print additional time information.
     _ftime( &tstruct ); // C4996
@@ -173,13 +167,13 @@ int main()
     // Make time for noon on Christmas, 1993.
     if( mktime( &xmas ) != (time_t)-1 )
     {
-       err = asctime_s(timebuf, 26, &xmas);
-       if (err)
-       {
-          printf("asctime_s failed due to an invalid argument.");
-          exit(1);
-       }
-       printf( "Christmas\t\t\t\t%s\n", timebuf );
+        err = asctime_s(timebuf, 26, &xmas);
+        if (err)
+        {
+            printf("asctime_s failed due to an invalid argument.");
+            exit(1);
+        }
+        printf( "Christmas\t\t\t\t%s\n", timebuf );
     }
 
     // Use time structure to build a customized time string.
@@ -192,7 +186,7 @@ int main()
 
     // Use strftime to build a customized time string.
     strftime( tmpbuf, 128,
-         "Today is %A, day %d of %B in the year %Y.\n", &today );
+              "Today is %A, day %d of %B in the year %Y.\n", &today );
     printf( tmpbuf );
 }
 ```
@@ -213,7 +207,7 @@ Christmas            Sat Dec 25 12:00:00 1993
 Today is Friday, day 25 of April in the year 2003.
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
@@ -223,4 +217,4 @@ Today is Friday, day 25 of April in the year 2003.
 [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
 [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
 [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)
+[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)<br/>

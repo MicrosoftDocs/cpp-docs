@@ -26,7 +26,7 @@ Unlocks a file, allowing other processes to access the file.
 
 ## Syntax
 
-```
+```C
 void _unlock_file(
    FILE* file
 );
@@ -34,12 +34,12 @@ void _unlock_file(
 
 ### Parameters
 
-`file`
+*file*
 File handle.
 
 ## Remarks
 
-The `_unlock_file` function unlocks the file specified by `file`. Unlocking a file allows access to the file by other processes. This function should not be called unless `_lock_file` was previously called on the `file` pointer. Calling `_unlock_file` on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](../../c-runtime-library/reference/lock-file.md).
+The `_unlock_file` function unlocks the file specified by *file*. Unlocking a file allows access to the file by other processes. This function should not be called unless `_lock_file` was previously called on the *file* pointer. Calling `_unlock_file` on a file that isn't locked may result in a deadlock. For an example, see [_lock_file](../../c-runtime-library/reference/lock-file.md).
 
 ## Requirements
 
@@ -49,9 +49,9 @@ The `_unlock_file` function unlocks the file specified by `file`. Unlocking a fi
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_lock_file](../../c-runtime-library/reference/lock-file.md)
+[_lock_file](../../c-runtime-library/reference/lock-file.md)<br/>

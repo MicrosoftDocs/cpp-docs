@@ -29,7 +29,7 @@ Gets a character from the console, with echo and without locking the thread.
 
 ## Syntax
 
-```
+```C
 int _getche_nolock( void );
 wint_t _getwche_nolock( void );
 ```
@@ -93,9 +93,9 @@ abcdefy
 Type 'Y' when finished typing keys: abcdefyY
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>

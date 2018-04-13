@@ -26,7 +26,7 @@ Gets the floating-point status word.
 
 ## Syntax
 
-```
+```C
 unsigned int _status87( void );
 unsigned int _statusfp( void );
 void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
@@ -108,7 +108,7 @@ Status = 0x00000003 - inexact, underflow
 Status = 0x00080003 - inexact, underflow, denormal
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>

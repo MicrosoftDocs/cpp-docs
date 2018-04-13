@@ -26,7 +26,7 @@ Calculates the absolute value of a complex number.
 
 ## Syntax
 
-```
+```C
 double _cabs(
    struct _complex z
 );
@@ -78,7 +78,7 @@ int main( void )
 The absolute value of 3.000000 + 4.000000i is 5.000000
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>

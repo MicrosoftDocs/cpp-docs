@@ -26,7 +26,7 @@ Sets or retrieves the run-time locale.
 
 ## Syntax
 
-```
+```C
 char *setlocale(
    int category,
    const char *locale
@@ -286,7 +286,7 @@ The thread locale is now set to de-DE.
 The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 ```
 
-## See Also
+## See also
 
 [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
 [_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md)<br/>
@@ -302,4 +302,4 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 [strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
 [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)
+[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>

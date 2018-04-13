@@ -29,7 +29,7 @@ Converts a string to uppercase. More secure versions of these functions are avai
 
 ## Syntax
 
-```
+```C
 char *_strupr(
    char *str
 );
@@ -94,7 +94,7 @@ Returns a pointer to the altered string. Because the modification is done in pla
 
 ## Remarks
 
-The `_strupr` function converts, in place, each lowercase letter in *str* to uppercase. The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the `_l` suffix use the current locale; the versions with the `_l` suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `_strupr` function converts, in place, each lowercase letter in *str* to uppercase. The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 `_wcsupr` and `_mbsupr` are wide-character and multibyte-character versions of `_strupr`. The argument and return value of `_wcsupr` are wide-character strings; those of `_mbsupr` are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -123,8 +123,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [_strlwr](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md).
 
-## See Also
+## See also
 
 [Locale](../../c-runtime-library/locale.md)<br/>
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)
+[_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](../../c-runtime-library/reference/strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)<br/>

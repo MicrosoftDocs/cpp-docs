@@ -26,7 +26,7 @@ Breaks a path name into components. These are versions of [_splitpath, _wsplitpa
 
 ## Syntax
 
-```
+```C
 errno_t _splitpath_s(
    const char * path,
    char * drive,
@@ -69,32 +69,32 @@ errno_t _wsplitpath_s(
 
 ### Parameters
 
-[in] *path*
+*path*
 Full path.
 
-[out] *drive*
+*drive*
 Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
 
-[in] `driveNumberOfElements`
+*driveNumberOfElements*
 The size of the *drive* buffer in single-byte or wide characters. If *drive* is `NULL`, this value must be 0.
 
-[out] `dir`
+*dir*
 Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
 
-[in] `dirNumberOfElements`
-The size of the `dir` buffer in single-byte or wide characters. If `dir` is `NULL`, this value must be 0.
+*dirNumberOfElements*
+The size of the *dir* buffer in single-byte or wide characters. If *dir* is `NULL`, this value must be 0.
 
-[out] `fname`
+*fname*
 Base filename (without extension). You can pass `NULL` for this parameter if you do not need the filename.
 
-[in] `nameNumberOfElements`
-The size of the `fname` buffer in single-byte or wide characters. If `fname` is `NULL`, this value must be 0.
+*nameNumberOfElements*
+The size of the *fname* buffer in single-byte or wide characters. If *fname* is `NULL`, this value must be 0.
 
-[out] `ext`
+*ext*
 Filename extension, including leading period (**.**).You can pass `NULL` for this parameter if you do not need the filename extension.
 
-[in] `extNumberOfElements`
-The size of `ext` buffer in single-byte or wide characters. If `ext` is `NULL`, this value must be 0.
+*extNumberOfElements*
+The size of *ext* buffer in single-byte or wide characters. If *ext* is `NULL`, this value must be 0.
 
 ## Return Value
 
@@ -105,14 +105,14 @@ Zero if successful; an error code on failure.
 |Condition|Return Value|
 |---------------|------------------|
 |*path* is `NULL`|`EINVAL`|
-|*drive* is `NULL`, `driveNumberOfElements` is non-zero|`EINVAL`|
-|*drive* is non-`NULL`, `driveNumberOfElements` is zero|`EINVAL`|
-|`dir` is `NULL`, `dirNumberOfElements` is non-zero|`EINVAL`|
-|`dir` is non-`NULL`, `dirNumberOfElements` is zero|`EINVAL`|
-|`fname` is `NULL`, `nameNumberOfElements` is non-zero|`EINVAL`|
-|`fname` is non-`NULL`, `nameNumberOfElements` is zero|`EINVAL`|
-|`ext` is `NULL`, `extNumberOfElements` is non-zero|`EINVAL`|
-|`ext` is non-`NULL`, `extNumberOfElements` is zero|`EINVAL`|
+|*drive* is `NULL`, *driveNumberOfElements* is non-zero|`EINVAL`|
+|*drive* is non-`NULL`, *driveNumberOfElements* is zero|`EINVAL`|
+|*dir* is `NULL`, *dirNumberOfElements* is non-zero|`EINVAL`|
+|*dir* is non-`NULL`, *dirNumberOfElements* is zero|`EINVAL`|
+|*fname* is `NULL`, *nameNumberOfElements* is non-zero|`EINVAL`|
+|*fname* is non-`NULL`, *nameNumberOfElements* is zero|`EINVAL`|
+|*ext* is `NULL`, *extNumberOfElements* is non-zero|`EINVAL`|
+|*ext* is non-`NULL`, *extNumberOfElements* is zero|`EINVAL`|
 
 If any of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
@@ -158,11 +158,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>
 [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
 [_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
 [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)
+[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>

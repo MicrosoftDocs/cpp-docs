@@ -29,7 +29,7 @@ Gets the process identification.
 
 ## Syntax
 
-```
+```C
 int _getpid( void );
 ```
 
@@ -72,7 +72,7 @@ int main( void )
 Process id: 3584
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)
+[_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)<br/>

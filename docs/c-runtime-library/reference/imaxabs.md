@@ -26,7 +26,7 @@ Calculates the absolute value of an integer of any size.
 
 ## Syntax
 
-```
+```C
 intmax_t imaxabs(
    intmax_t n
 );
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 The absolute value of -9223372036854775806 is 9223372036854775806
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

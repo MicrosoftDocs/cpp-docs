@@ -55,7 +55,7 @@ The argument returned is evaluated twice by the macro. This can lead to unexpect
 
 For more information, see the example for [__min](../../c-runtime-library/reference/min.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [__min](../../c-runtime-library/reference/min.md)<br/>

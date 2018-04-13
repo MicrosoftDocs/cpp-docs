@@ -26,7 +26,7 @@ Write formatted data to a string. These are versions of [sprintf, _sprintf_l, sw
 
 ## Syntax
 
-```
+```C
 int sprintf_s(
    char *buffer,
    size_t sizeOfBuffer,
@@ -72,7 +72,7 @@ int swprintf_s(
 *buffer*
 Storage location for output
 
-`sizeOfBuffer`
+*sizeOfBuffer*
 Maximum number of characters to store.
 
 *format*
@@ -100,7 +100,7 @@ One main difference between `sprintf_s` and `sprintf` is that `sprintf_s` checks
 
 The other main difference between `sprintf_s` and `sprintf` is that `sprintf_s` takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at `buffer[0]`, and the invalid parameter handler is invoked. Unlike `_snprintf`, `sprintf_s` guarantees that the buffer will be null-terminated unless the buffer size is zero.
 
-`swprintf_s` is a wide-character version of `sprintf_s`; the pointer arguments to `swprintf_s` are wide-character strings. Detection of encoding errors in `swprintf_s` may differ from that in `sprintf_s`. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+`swprintf_s` is a wide-character version of `sprintf_s`; the pointer arguments to `swprintf_s` are wide-character strings. Detection of encoding errors in `swprintf_s` may differ from that in `sprintf_s`. The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, use of these functions is simplified by template overloads; the overloads can infer buffer length automatically, which eliminates the need to specify a size argument, and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -182,11 +182,11 @@ wrote 11 characters
 wrote -1 characters
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

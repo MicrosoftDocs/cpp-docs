@@ -26,7 +26,7 @@ Retrieves the current application-defined function for dumping the `_CLIENT_BLOC
 
 ## Syntax
 
-```
+```C
 _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 ```
 
@@ -52,8 +52,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)<br/>
-[_CrtSetDumpClient](../../c-runtime-library/reference/crtsetdumpclient.md)
+[_CrtSetDumpClient](../../c-runtime-library/reference/crtsetdumpclient.md)<br/>

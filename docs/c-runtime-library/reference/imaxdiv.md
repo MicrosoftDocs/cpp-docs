@@ -26,7 +26,7 @@ Computes the quotient and the remainder of two integer values of any size as a s
 
 ## Syntax
 
-```
+```C
 imaxdiv_t imaxdiv(
    intmax_t numer,
    intmax_t denom
@@ -92,7 +92,7 @@ The call to imaxdiv(9460730470000000, 8766)
 results in a quotient of 1079252848505, and a remainder of 5170
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [div](../../c-runtime-library/reference/div.md)<br/>

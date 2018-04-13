@@ -26,7 +26,7 @@ Invokes a user-defined trap handler for IEEE floating-point exceptions.
 
 ## Syntax
 
-```
+```C
 int _fpieee_flt(
    unsigned long excCode,
    struct _EXCEPTION_POINTERS *excInfo,
@@ -139,7 +139,7 @@ int main( void )
 }
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>

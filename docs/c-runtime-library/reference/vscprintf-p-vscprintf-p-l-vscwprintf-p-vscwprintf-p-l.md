@@ -26,7 +26,7 @@ Returns the number of characters in the formatted string using a pointer to a li
 
 ## Syntax
 
-```
+```C
 int _vscprintf_p(
    const char *format,
    va_list argptr
@@ -68,7 +68,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 These functions differ from `_vscprintf` and `_vscwprintf` only in that they support the ability to specify the order in which the arguments are used. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
 
@@ -95,8 +95,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
 
-## See Also
+## See also
 
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
 [_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](../../c-runtime-library/reference/scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)<br/>
-[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)
+[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)<br/>

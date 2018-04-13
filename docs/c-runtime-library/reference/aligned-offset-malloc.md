@@ -26,7 +26,7 @@ Allocates memory on a specified alignment boundary.
 
 ## Syntax
 
-```
+```C
 void * _aligned_offset_malloc(
    size_t size,
    size_t alignment,
@@ -36,13 +36,13 @@ void * _aligned_offset_malloc(
 
 ### Parameters
 
-[in] *size*
+*size*
 The size of the requested memory allocation.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] *offset*
+*offset*
 The offset into the memory allocation to force the alignment.
 
 ## Return Value
@@ -69,6 +69,6 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

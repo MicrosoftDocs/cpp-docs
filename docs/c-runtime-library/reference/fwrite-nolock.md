@@ -26,7 +26,7 @@ Writes data to a stream, without locking the thread.
 
 ## Syntax
 
-```
+```C
 size_t _fwrite_nolock(
    const void *buffer,
    size_t size,
@@ -43,7 +43,7 @@ Pointer to the data to be written.
 *size*
 Item size in bytes.
 
-`count`
+*count*
 Maximum number of items to be written.
 
 *stream*
@@ -69,8 +69,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 See the example for [fread](../../c-runtime-library/reference/fread.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fread](../../c-runtime-library/reference/fread.md)<br/>
-[_write](../../c-runtime-library/reference/write.md)
+[_write](../../c-runtime-library/reference/write.md)<br/>

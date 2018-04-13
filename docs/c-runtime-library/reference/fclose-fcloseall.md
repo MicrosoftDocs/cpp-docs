@@ -26,7 +26,7 @@ Closes a stream (`fclose`) or closes all open streams (`_fcloseall`).
 
 ## Syntax
 
-```
+```C
 int fclose(
    FILE *stream
 );
@@ -67,11 +67,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fflush](../../c-runtime-library/reference/fflush.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)
+[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>

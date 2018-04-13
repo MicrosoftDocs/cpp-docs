@@ -24,7 +24,7 @@ Determines the binary (base-2) logarithm of the specified value.
 
 ## Syntax
 
-```
+```C
 double log2(
    double x
 );
@@ -49,7 +49,7 @@ long double log2l(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The value to determine the base-2 logarithm of.
 
 ## Return Value
@@ -82,7 +82,7 @@ If x is an integer, this function essentially returns the zero-based index of th
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [exp2, exp2f, exp2l](../../c-runtime-library/reference/exp2-exp2f-exp2l.md)<br/>

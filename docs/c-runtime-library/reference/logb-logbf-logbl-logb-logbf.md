@@ -26,7 +26,7 @@ Extracts the exponent value of a floating-point argument.
 
 ## Syntax
 
-```
+```C
 double logb(
    double x
 );
@@ -83,7 +83,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](../../c-runtime-library/reference/frexp.md)<br/>

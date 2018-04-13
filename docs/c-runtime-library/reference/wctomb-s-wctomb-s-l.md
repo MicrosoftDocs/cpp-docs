@@ -26,7 +26,7 @@ Converts a wide character to the corresponding multibyte character. A version of
 
 ## Syntax
 
-```
+```C
 errno_t wctomb_s(
    int *pRetValue,
    char *mbchar,
@@ -44,19 +44,19 @@ errno_t _wctomb_s_l(
 
 ### Parameters
 
-[out] `pRetValue`
+`pRetValue`
 The number of bytes, or a code indicating the result.
 
-[out] *mbchar*
+*mbchar*
 The address of a multibyte character.
 
-[in] `sizeInBytes`
+*sizeInBytes*
 Size of the buffer *mbchar*.
 
-[in] *wchar*
+*wchar*
 A wide character.
 
-[in] *locale*
+*locale*
 The locale to use.
 
 ## Return Value
@@ -65,7 +65,7 @@ Zero if successful, an error code on failure.
 
 Error Conditions
 
-|*mbchar*|`sizeInBytes`|Return value|`pRetValue`|
+|*mbchar*|*sizeInBytes*|Return value|`pRetValue`|
 |--------------|-------------------|------------------|-----------------|
 |`NULL`|>0|`EINVAL`|not modified|
 |any|>`INT_MAX`|`EINVAL`|not modified|
@@ -118,7 +118,7 @@ Convert a wide character:
    Multibyte character: a
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -126,4 +126,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)
+[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

@@ -26,7 +26,7 @@ Evaluates an expression and, when the result is `false`, prints a diagnostic mes
 
 ## Syntax
 
-```
+```C
 assert(
    expression
 );
@@ -133,7 +133,7 @@ A problem caused the program to stop working correctly. Windows will close the p
 
 If a debugger is installed, choose the **Debug** button to start the debugger, or **Close program** to exit.
 
-## See Also
+## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
@@ -141,4 +141,4 @@ If a debugger is installed, choose the **Debug** button to start the debugger, o
 [raise](../../c-runtime-library/reference/raise.md)<br/>
 [signal](../../c-runtime-library/reference/signal.md)<br/>
 [_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)
+[_DEBUG](../../c-runtime-library/debug.md)<br/>

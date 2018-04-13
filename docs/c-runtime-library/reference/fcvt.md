@@ -26,7 +26,7 @@ Converts a floating-point number to a string. A more secure version of this func
 
 ## Syntax
 
-```
+```C
 char *_fcvt(
    double value,
    int count,
@@ -104,7 +104,7 @@ int main( void )
 source: 3.1415926535   buffer: '31415927'   decimal: 1   sign: 0
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

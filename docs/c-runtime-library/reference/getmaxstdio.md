@@ -26,7 +26,7 @@ Returns the number of simultaneously open files permitted at the stream I/O leve
 
 ## Syntax
 
-```
+```C
 int _getmaxstdio( void );
 ```
 
@@ -71,6 +71,6 @@ int main()
 2048
 ```
 
-## See Also
+## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>

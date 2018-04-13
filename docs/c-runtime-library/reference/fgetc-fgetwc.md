@@ -26,7 +26,7 @@ Read a character from a stream.
 
 ## Syntax
 
-```
+```C
 int fgetc(
    FILE *stream
 );
@@ -122,8 +122,8 @@ Line one.
 Line two.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)
+[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>

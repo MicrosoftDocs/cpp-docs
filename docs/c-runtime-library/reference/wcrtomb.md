@@ -26,7 +26,7 @@ Convert a wide character into its multibyte character representation. A more sec
 
 ## Syntax
 
-```
+```C
 size_t wcrtomb(
    char *mbchar,
    wchar_t wchar,
@@ -42,13 +42,13 @@ size_t wcrtomb(
 
 ### Parameters
 
-[out] *mbchar*
+*mbchar*
 The resulting multibyte converted character.
 
-[in] *wchar*
+*wchar*
 A wide character to convert.
 
-[in] `mbstate`
+*mbstate*
 A pointer to an `mbstate_t` object.
 
 ## Return Value
@@ -57,17 +57,17 @@ Returns the number of bytes required to represent the converted multibyte charac
 
 ## Remarks
 
-The `wcrtomb` function converts a wide character, beginning in the specified conversion state contained in `mbstate`, from the value contained in *wchar*, into the address represented by *mbchar*. The return value is the number of bytes required to represent the corresponding multibyte character, but it will not return more than `MB_CUR_MAX` bytes.
+The `wcrtomb` function converts a wide character, beginning in the specified conversion state contained in *mbstate*, from the value contained in *wchar*, into the address represented by *mbchar*. The return value is the number of bytes required to represent the corresponding multibyte character, but it will not return more than `MB_CUR_MAX` bytes.
 
-If `mbstate` is null, the internal `mbstate_t` object containing the conversion state of *mbchar* is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the `errno` is set to `EILSEQ`.
+If *mbstate* is null, the internal `mbstate_t` object containing the conversion state of *mbchar* is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the `errno` is set to `EILSEQ`.
 
-The `wcrtomb` function differs from [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) by its restartability. The conversion state is stored in `mbstate` for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
+The `wcrtomb` function differs from [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
 
 In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ## Exceptions
 
-The `wcrtomb` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and while the `mbstate` is null.
+The `wcrtomb` function is multithread safe as long as no function in the current thread calls `setlocale` while this function is executing and while the *mbstate* is null.
 
 ## Example
 
@@ -118,9 +118,9 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 |-------------|---------------------|
 |`wcrtomb`|\<wchar.h>|
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)
+[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>

@@ -26,7 +26,7 @@ Determines whether a floating-point value is finite.
 
 ## Syntax
 
-```
+```C
 int _finite(
    double x
 );
@@ -58,7 +58,7 @@ The **_finite** and **_finitef** functions are Microsoft specific. The **_finite
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>

@@ -26,7 +26,7 @@ Converts strings to a single-precision floating-point value.
 
 ## Syntax
 
-```
+```C
 float strtof(
    const char *nptr,
    char **endptr
@@ -128,7 +128,7 @@ string = 3.14159This stopped it
    Stopped scan at: This stopped it
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

@@ -26,7 +26,7 @@ Determines whether an integer represents a decimal-digit character.
 
 ## Syntax
 
-```
+```C
 int isdigit(
    int c
 );
@@ -45,7 +45,7 @@ int _iswdigit_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to test.
 
 *locale*
@@ -53,11 +53,11 @@ The locale to use.
 
 ## Return Value
 
-Each of these routines returns nonzero if `c` is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if `c` is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if `c` is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if `c` does not satisfy the test condition.
+Each of these routines returns nonzero if *c* is a particular representation of a decimal-digit character. `isdigit` returns a nonzero value if *c* is a decimal digit (0 - 9). `iswdigit` returns a nonzero value if *c* is a wide character that corresponds to a decimal-digit character. Each of these routines returns 0 if *c* does not satisfy the test condition.
 
-The versions of these functions that have the `_l` suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
+The versions of these functions that have the **_l** suffix use the locale that's passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-The behavior of `isdigit` and `_isdigit_l` is undefined if `c` is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and `c` is not one of these values, the functions raise an assertion.
+The behavior of `isdigit` and `_isdigit_l` is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
 ### Generic-Text Routine Mappings
 
@@ -77,8 +77,8 @@ The behavior of `isdigit` and `_isdigit_l` is undefined if `c` is not EOF or in 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>

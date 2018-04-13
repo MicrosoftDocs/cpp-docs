@@ -25,19 +25,19 @@ ms.workload: ["cplusplus"]
 Modifies `__error_mode` to determine a non-default location where the C runtime writes an error message for an error that might end the program.
 
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
-```
+```C
 int _set_error_mode(
-   int modeval
+   int mode_val
 );
 ```
 
 ### Parameters
 
-`modeval`
+*mode_val*
 Destination of error messages.
 
 ## Return Value
@@ -48,7 +48,7 @@ Returns the old setting or -1 if an error occurs.
 
 Controls the error output sink by setting the value of `__error_mode`. For example, you can direct output to a standard error or use the `MessageBox` API.
 
-The `modeval` parameter can be set to one of the following values.
+The *mode_val* parameter can be set to one of the following values.
 
 |Parameter|Description|
 |---------------|-----------------|
@@ -89,6 +89,6 @@ This application has requested the Runtime to terminate it in an unusual way.
 Please contact the application's support team for more information.
 ```
 
-## See Also
+## See also
 
-[assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)
+[assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>

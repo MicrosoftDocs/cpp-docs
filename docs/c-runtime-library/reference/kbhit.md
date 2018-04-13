@@ -29,7 +29,7 @@ Checks the console for keyboard input.
 
 ## Syntax
 
-```
+```C
 
 int _kbhit( void );
 ```
@@ -86,6 +86,6 @@ Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!!
 Key struck was 'q'
 ```
 
-## See Also
+## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)
+[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>

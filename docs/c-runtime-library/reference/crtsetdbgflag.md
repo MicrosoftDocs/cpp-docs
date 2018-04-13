@@ -26,16 +26,15 @@ Retrieves or modifies the state of the **_crtDbgFlag** flag to control the alloc
 
 ## Syntax
 
-```
-
-      int _CrtSetDbgFlag(
+```C
+int _CrtSetDbgFlag(
    int newFlag
 );
 ```
 
 ### Parameters
 
-`newFlag`
+*newFlag*
 New state for **_crtDbgFlag**.
 
 ## Return Value
@@ -60,7 +59,7 @@ The following table lists the bit fields for **_crtDbgFlag** and describes their
 
 You can specify how often the C run-time library performs validation of the debug heap (`_CrtCheckMemory`) based on the number of calls to `malloc`, `realloc`, **free**, and `_msize`.
 
-`_CrtSetDbgFlag` then inspects the upper 16 bits of the `newFlag` parameter for a value. The value specified is the number of `malloc`, `realloc`, **free**, and `_msize` calls between `_CrtCheckMemory` calls. Four predefined macros are provided for this purpose.
+`_CrtSetDbgFlag` then inspects the upper 16 bits of the *newFlag* parameter for a value. The value specified is the number of `malloc`, `realloc`, **free**, and `_msize` calls between `_CrtCheckMemory` calls. Four predefined macros are provided for this purpose.
 
 |Macro|Number of malloc, realloc, free, and _msize calls between calls to _CrtCheckMemory|
 |-----------|------------------------------------------------------------------------------------------|
@@ -90,19 +89,19 @@ _CrtSetDbgFlag(tmp);
 }
 ```
 
-The upper 16 bits of the `newFlag` parameter are ignored when _CRTDBG_CHECK_ALWAYS_DF is specified. In this case, `_CrtCheckMemory` is called each time you call `malloc`, `realloc`, **free**, and `_msize`.
+The upper 16 bits of the *newFlag* parameter are ignored when _CRTDBG_CHECK_ALWAYS_DF is specified. In this case, `_CrtCheckMemory` is called each time you call `malloc`, `realloc`, **free**, and `_msize`.
 
-`newFlag` is the new state to apply to the **_crtDbgFlag** and is a combination of the values for each of the bit fields.
+*newFlag* is the new state to apply to the **_crtDbgFlag** and is a combination of the values for each of the bit fields.
 
 ### To change one or more of these bit fields and create a new state for the flag
 
-1.  Call `_CrtSetDbgFlag` with `newFlag` equal to `_CRTDBG_REPORT_FLAG` to obtain the current **_crtDbgFlag** state and store the returned value in a temporary variable.
+1.  Call `_CrtSetDbgFlag` with *newFlag* equal to `_CRTDBG_REPORT_FLAG` to obtain the current **_crtDbgFlag** state and store the returned value in a temporary variable.
 
 2.  Turn on any bits by `OR`-ing the temporary variable with the corresponding bitmasks (represented in the application code by manifest constants).
 
 3.  Turn off the other bits by **AND**-ing the variable with a bitwise **NOT** of the appropriate bitmasks.
 
-4.  Call `_CrtSetDbgFlag` with `newFlag` equal to the value stored in the temporary variable to set the new state for **_crtDbgFlag**.
+4.  Call `_CrtSetDbgFlag` with *newFlag* equal to the value stored in the temporary variable to set the new state for **_crtDbgFlag**.
 
 The following code demonstrates how to simulate low-memory conditions by keeping freed memory blocks in the heap's linked list and prevent `_CrtCheckMemory` from being called at every allocation request:
 
@@ -127,7 +126,7 @@ For an overview of memory management and the debug heap, see [CRT Debug Heap Det
 
 To disable a flag with the `_CrtSetDbgFlag` function, you should **AND** the variable with the bitwise **NOT** of the bitmask.
 
-If `newFlag` is not a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns the previous state of `_crtDbgFlag`.
+If *newFlag* is not a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns the previous state of `_crtDbgFlag`.
 
 ## Requirements
 
@@ -219,8 +218,8 @@ int main( )
 }
 ```
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
-[_CrtCheckMemory](../../c-runtime-library/reference/crtcheckmemory.md)
+[_CrtCheckMemory](../../c-runtime-library/reference/crtcheckmemory.md)<br/>

@@ -26,7 +26,7 @@ Controls stream buffering and buffer size.
 
 ## Syntax
 
-```
+```C
 int setvbuf(
    FILE *stream,
    char *buffer,
@@ -121,10 +121,10 @@ int main( void )
 'stream2' now has no buffer
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [fflush](../../c-runtime-library/reference/fflush.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[setbuf](../../c-runtime-library/reference/setbuf.md)
+[setbuf](../../c-runtime-library/reference/setbuf.md)<br/>

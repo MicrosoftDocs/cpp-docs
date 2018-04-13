@@ -26,7 +26,7 @@ Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions i
 
 ## Syntax
 
-```
+```C
 int _set_SSE2_enable(
    int flag
 );
@@ -99,6 +99,6 @@ int main()
 
 `SSE2 enabled.`
 
-## See Also
+## See also
 
 [CRT Library Features](../../c-runtime-library/crt-library-features.md)<br/>

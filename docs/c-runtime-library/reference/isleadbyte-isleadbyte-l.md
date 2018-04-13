@@ -29,18 +29,14 @@ Determines whether a character is the lead byte of a multibyte character.
 
 ## Syntax
 
-```
-int isleadbyte(
-   int c
-);
-int _isleadbyte_l(
-   int c
-);
+```C
+int isleadbyte( int c );
+int _isleadbyte_l( int c );
 ```
 
 ### Parameters
 
-`c`
+*c*
 Integer to test.
 
 ## Return Value
@@ -53,13 +49,13 @@ The `isleadbyte` macro returns a nonzero value if its argument is the first byte
 
 The expected argument type of `isleadbyte` is `int`; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.
 
-The version of this function with the `_l` suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
+The version of this function with the **_l** suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 
 ### Generic-Text Routine Mappings
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istleadbyte`|Always returns false|**_** `isleadbyte`|Always returns false|
+|**_istleadbyte**|Always returns false|**_isleadbyte**|Always returns false|
 
 ## Requirements
 
@@ -70,8 +66,8 @@ The version of this function with the `_l` suffix is identical except that it us
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

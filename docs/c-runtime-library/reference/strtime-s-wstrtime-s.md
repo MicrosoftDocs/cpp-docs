@@ -26,7 +26,7 @@ Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](.
 
 ## Syntax
 
-```
+```C
 errno_t _strtime_s(
    char *buffer,
    size_t numberOfElements
@@ -47,10 +47,10 @@ errno_t _wstrtime_s(
 
 ### Parameters
 
-[out] *buffer*
+*buffer*
 A buffer, at least 10 bytes long, where the time will be written.
 
-[in] *numberOfElements*
+*numberOfElements*
 The size of the buffer.
 
 ## Return Value
@@ -140,7 +140,7 @@ OS time:            14:37:49
 OS date:            04/25/03
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
@@ -149,4 +149,4 @@ OS date:            04/25/03
 [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
 [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)
+[_tzset](../../c-runtime-library/reference/tzset.md)<br/>

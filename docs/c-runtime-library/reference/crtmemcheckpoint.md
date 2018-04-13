@@ -26,7 +26,7 @@ Obtains the current state of the debug heap and stores in an application-supplie
 
 ## Syntax
 
-```
+```C
 void _CrtMemCheckpoint(
    _CrtMemState *state
 );
@@ -57,7 +57,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 **Libraries:** Debug versions of the UCRT only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md)
+[_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md)<br/>

@@ -26,9 +26,8 @@ Deletes a directory.
 
 ## Syntax
 
-```
-
-      int _rmdir(
+```C
+int _rmdir(
    const char *dirname
 );
 int _wrmdir(
@@ -38,7 +37,7 @@ int _wrmdir(
 
 ### Parameters
 
-`dirname`
+*dirname*
 Path of the directory to be removed.
 
 ## Return Value
@@ -58,9 +57,9 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 ## Remarks
 
-The `_rmdir` function deletes the directory specified by `dirname`. The directory must be empty, and it must not be the current working directory or the root directory.
+The `_rmdir` function deletes the directory specified by *dirname*. The directory must be empty, and it must not be the current working directory or the root directory.
 
-`_wrmdir` is a wide-character version of `_rmdir`; the `dirname` argument to `_wrmdir` is a wide-character string. `_wrmdir` and `_rmdir` behave identically otherwise.
+`_wrmdir` is a wide-character version of `_rmdir`; the *dirname* argument to `_wrmdir` is a wide-character string. `_wrmdir` and `_rmdir` behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -85,8 +84,8 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 See the example for [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md).
 
-## See Also
+## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)
+[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>

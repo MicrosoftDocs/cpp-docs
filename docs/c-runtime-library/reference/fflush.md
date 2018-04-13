@@ -26,7 +26,7 @@ Flushes a stream.
 
 ## Syntax
 
-```
+```C
 int fflush(
    FILE *stream
 );
@@ -112,9 +112,9 @@ Enter the same sentence with gets: This is a test
 This is a test
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
 [_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)
+[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>

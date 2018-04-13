@@ -25,9 +25,8 @@ Retrieves the offset of a member from the beginning of its parent structure.
 
 ## Syntax
 
-```
-
-      size_t offsetof(
+```C
+size_t offsetof(
    structName,
    memberName
 );
@@ -38,7 +37,7 @@ Retrieves the offset of a member from the beginning of its parent structure.
 *structName*
 Name of the parent data structure.
 
-`memberName`
+*memberName*
 Name of the member in the parent data structure for which to determine the offset.
 
 ## Return Value
@@ -47,7 +46,7 @@ Name of the member in the parent data structure for which to determine the offse
 
 ## Remarks
 
-The `offsetof` macro returns the offset in bytes of `memberName` from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.
+The `offsetof` macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type `size_t`. You can specify types with the `struct` keyword.
 
 > [!NOTE]
 >  `offsetof` is not a function and cannot be described using a C prototype.
@@ -64,6 +63,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)
+[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>

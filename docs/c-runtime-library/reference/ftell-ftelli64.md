@@ -26,7 +26,7 @@ Gets the current position of a file pointer.
 
 ## Syntax
 
-```
+```C
 long ftell(
    FILE *stream
 );
@@ -99,10 +99,10 @@ int main( void )
 Position after trying to read 100 bytes: 100
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [fgetpos](../../c-runtime-library/reference/fgetpos.md)<br/>
 [fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)
+[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>

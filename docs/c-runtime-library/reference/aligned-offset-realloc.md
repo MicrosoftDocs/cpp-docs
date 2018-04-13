@@ -26,7 +26,7 @@ Changes the size of a memory block that was allocated with [_aligned_malloc](../
 
 ## Syntax
 
-```
+```C
 void * _aligned_offset_realloc(
    void *memblock,
    size_t size,
@@ -73,6 +73,6 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

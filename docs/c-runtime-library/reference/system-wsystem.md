@@ -29,7 +29,7 @@ Executes a command.
 
 ## Syntax
 
-```
+```C
 int system(
    const char *command
 );
@@ -113,10 +113,10 @@ Line one.
 Line two.
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
 [_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>

@@ -26,7 +26,7 @@ Reassigns a file pointer. More secure versions of these functions are available;
 
 ## Syntax
 
-```
+```C
 FILE *freopen(
    const char *path,
    const char *mode,
@@ -150,7 +150,7 @@ successfully reassigned
 This will go to the file 'freopen.out'
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
@@ -158,4 +158,4 @@ This will go to the file 'freopen.out'
 [_fileno](../../c-runtime-library/reference/fileno.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)
+[_setmode](../../c-runtime-library/reference/setmode.md)<br/>

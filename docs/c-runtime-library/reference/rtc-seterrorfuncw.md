@@ -26,16 +26,15 @@ Designates a function as the handler for the reporting of run-time error checks 
 
 ## Syntax
 
-```
-
-      _RTC_error_fnW _RTC_SetErrorFuncW(
+```C
+_RTC_error_fnW _RTC_SetErrorFuncW(
    _RTC_error_fnW function
 );
 ```
 
 ### Parameters
 
-`function`
+*function*
 The address of the function that will handle run-time error checks.
 
 ## Return Value
@@ -89,7 +88,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)
+[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

@@ -26,9 +26,8 @@ Sets a breakpoint on a specified object allocation order number (debug version o
 
 ## Syntax
 
-```
-
-      long _CrtSetBreakAlloc(
+```C
+long _CrtSetBreakAlloc(
    long lBreakAlloc
 );
 ```
@@ -108,6 +107,6 @@ int main( )
 }
 ```
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

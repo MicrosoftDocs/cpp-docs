@@ -26,7 +26,7 @@ Get a system error message (`strerror_s`, `_wcserror_s`) or print a user-supplie
 
 ## Syntax
 
-```
+```C
 errno_t strerror_s(
    char *buffer,
    size_t numberOfElements,
@@ -141,9 +141,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

@@ -26,9 +26,8 @@ Returns a brief description of a run-time error check (RTC) type.
 
 ## Syntax
 
-```
-
-      const char * _RTC_GetErrDesc(
+```C
+const char * _RTC_GetErrDesc(
    _RTC_ErrorNumber errnum
 );
 ```
@@ -54,7 +53,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)
+[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

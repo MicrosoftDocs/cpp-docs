@@ -29,7 +29,7 @@ Loads and runs new child processes.
 
 ## Syntax
 
-```
+```C
 intptr_t _execvpe(
    const char *cmdname,
    const char *const *argv,
@@ -44,13 +44,13 @@ intptr_t _wexecvpe(
 
 ### Parameters
 
-`cmdname`
+*cmdname*
 Path of the file to execute.
 
-`argv`
+*argv*
 Array of pointers to parameters.
 
-`envp`
+*envp*
 Array of pointers to environment settings.
 
 ## Return Value
@@ -72,7 +72,7 @@ For more information about these and other return codes, see [errno, _doserrno, 
 
 Each of these functions loads and executes a new process, and passes an array of pointers to command-line arguments and an array of pointers to environment settings. These functions use the `PATH` environment variable to find the file to execute.
 
-The `_execvpe` functions validate their parameters. If the `cmdname` is a null pointer, or if `argv` is a null pointer, a pointer to an empty array, or a pointer to an array that contains an empty string as the first argument, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No process is launched.
+The `_execvpe` functions validate their parameters. If the *cmdname* is a null pointer, or if *argv* is a null pointer, a pointer to an empty array, or a pointer to an array that contains an empty string as the first argument, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No process is launched.
 
 ## Requirements
 
@@ -87,7 +87,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
@@ -96,4 +96,4 @@ See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

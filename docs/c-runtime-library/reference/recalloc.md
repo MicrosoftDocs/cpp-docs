@@ -26,7 +26,7 @@ A combination of `realloc` and `calloc`. Reallocates an array in memory and init
 
 ## Syntax
 
-```
+```C
 void *_recalloc(
    void *memblock
    size_t num,
@@ -83,11 +83,11 @@ When the application is linked with a debug version of the C run-time libraries,
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [_recalloc_dbg](../../c-runtime-library/reference/recalloc-dbg.md)<br/>
 [_aligned_recalloc](../../c-runtime-library/reference/aligned-recalloc.md)<br/>
 [_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
-[Link Options](../../c-runtime-library/link-options.md)
+[Link Options](../../c-runtime-library/link-options.md)<br/>

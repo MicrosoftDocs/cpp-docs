@@ -29,7 +29,7 @@ Loads and executes new child processes.
 
 ## Syntax
 
-```
+```C
 intptr_t _execlpe(
    const char *cmdname,
    const char *arg0,
@@ -48,13 +48,13 @@ intptr_t _wexeclpe(
 
 ### Parameters
 
-`cmdname`
+*cmdname*
 Path of the file to execute.
 
-`arg0, ... argn`
+*arg0*, ... *argn*<br/>
 List of pointers to parameters.
 
-`envp`
+*envp*
 Array of pointers to environment settings.
 
 ## Return Value
@@ -77,7 +77,7 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 Each of these functions loads and executes a new process, passing each command-line argument as a separate parameter and also passing an array of pointers to environment settings. These functions use the `PATH` environment variable to find the file to execute.
 
-The `_execlpe` functions validate their parameters. If either `cmdname` or `arg0` is a null pointers or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is launched.
+The `_execlpe` functions validate their parameters. If either *cmdname* or *arg0* is a null pointers or empty string, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is launched.
 
 ## Requirements
 
@@ -92,7 +92,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
@@ -101,4 +101,4 @@ See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

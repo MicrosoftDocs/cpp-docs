@@ -26,9 +26,8 @@ Repositions the file pointer to the beginning of a file.
 
 ## Syntax
 
-```
-
-      void rewind(
+```C
+void rewind(
    FILE *stream
 );
 ```
@@ -104,6 +103,6 @@ The values written are: 1 and -37
 The values read are: 1 and -37
 ```
 
-## See Also
+## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)
+[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>

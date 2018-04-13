@@ -26,7 +26,7 @@ Sets the default file-permission mask. A version of [_umask](../../c-runtime-lib
 
 ## Syntax
 
-```
+```C
 errno_t _umask_s(
    int mode,
    int * pOldMode
@@ -35,10 +35,10 @@ errno_t _umask_s(
 
 ### Parameters
 
-[in] *mode*
+*mode*
 Default permission setting.
 
-[out] `oldMode`
+`oldMode`
 The previous value of the permission setting.
 
 ## Return Value
@@ -115,7 +115,7 @@ int main( void )
 Oldmask = 0x0000
 ```
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
@@ -123,4 +123,4 @@ Oldmask = 0x0000
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_umask](../../c-runtime-library/reference/umask.md)
+[_umask](../../c-runtime-library/reference/umask.md)<br/>

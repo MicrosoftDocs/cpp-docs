@@ -26,9 +26,8 @@ Moves one buffer to another. These are versions of [memmove, wmemmove](../../c-r
 
 ## Syntax
 
-```
-
-      errno_t memmove_s(
+```C
+errno_t memmove_s(
    void *dest,
    size_t numberOfElements,
    const void *src,
@@ -44,16 +43,16 @@ errno_t wmemmove_s(
 
 ### Parameters
 
-`dest`
+*dest*
 Destination object.
 
 *numberOfElements*
 Size of the destination buffer.
 
-`src`
+*src*
 Source object.
 
-`count`
+*count*
 Number of bytes (`memmove_s`) or characters (`wmemmove_s`) to copy.
 
 ## Return Value
@@ -62,17 +61,17 @@ Zero if successful; an error code on failure
 
 ### Error Conditions
 
-|`dest`|*numberOfElements*|`src`|Return value|Contents of `dest`|
+|*dest*|*numberOfElements*|*src*|Return value|Contents of *dest*|
 |------------|------------------------|-----------|------------------|------------------------|
 |`NULL`|any|any|`EINVAL`|not modified|
 |any|any|`NULL`|`EINVAL`|not modified|
-|any|< `count`|any|`ERANGE`|not modified|
+|any|< *count*|any|`ERANGE`|not modified|
 
 ## Remarks
 
-Copies `count` bytes of characters from `src` to `dest`. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *count* bytes of characters from *src* to *dest*. If some regions of the source area and the destination overlap, `memmove_s` ensures that the original source bytes in the overlapping region are copied before being overwritten.
 
-If `dest` or if `src` is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+If *dest* or if *src* is a null pointer, or if the destination string is too small, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
 
 ## Requirements
 
@@ -119,7 +118,7 @@ Before: 0123456789
 After: 0012345789
 ```
 
-## See Also
+## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
@@ -127,4 +126,4 @@ After: 0012345789
 [strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
 [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

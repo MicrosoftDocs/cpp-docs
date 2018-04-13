@@ -26,7 +26,7 @@ Retrieves the current client-defined allocation function for hooking into the C 
 
 ## Syntax
 
-```
+```C
 _CRT_ALLOC_HOOK _CrtGetAllocHook( void );
 ```
 
@@ -52,7 +52,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetAllocHook](../../c-runtime-library/reference/crtsetallochook.md)
+[_CrtSetAllocHook](../../c-runtime-library/reference/crtsetallochook.md)<br/>

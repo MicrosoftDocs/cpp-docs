@@ -26,7 +26,7 @@ Returns the total number of errors that can be detected by run-time error checks
 
 ## Syntax
 
-```
+```C
 
 int _RTC_NumErrors( void );
 
@@ -48,7 +48,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)
+[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

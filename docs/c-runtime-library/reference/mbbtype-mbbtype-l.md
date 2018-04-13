@@ -29,7 +29,7 @@ Returns the byte type, based on the previous byte.
 
 ## Syntax
 
-```
+```C
 int _mbbtype(
    unsigned char c,
    int type
@@ -43,7 +43,7 @@ int _mbbtype_l(
 
 ### Parameters
 
-`c`
+*c*
 The character to test.
 
 *type*
@@ -56,7 +56,7 @@ The locale to use.
 
 `_mbbtype` returns the type of byte in a string. This decision is context-sensitive, as specified by the value of *type*, which provides the control test condition. *type* is the type of the previous byte in the string. The manifest constants in the following table are defined in Mbctype.h.
 
-|Value of *type*|`_mbbtype` tests for|Return value|`c`|
+|Value of *type*|`_mbbtype` tests for|Return value|*c*|
 |---------------------|--------------------------|------------------|---------|
 |Any value except 1|Valid single byte or lead byte|`_MBC_SINGLE` (0)|Single byte (0x20 - 0x7E, 0xA1 - 0xDF)|
 |Any value except 1|Valid single byte or lead byte|`_MBC_LEAD` (1)|Lead byte of multibyte character (0x81 - 0x9F, 0xE0 - 0xFC)|
@@ -83,6 +83,6 @@ In earlier versions, `_mbbtype` was named `chkctype`. For new code, use `_mbbtyp
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)
+[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>

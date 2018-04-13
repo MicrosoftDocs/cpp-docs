@@ -26,7 +26,7 @@ Prints formatted output to the standard output stream, and enables specification
 
 ## Syntax
 
-```
+```C
 int _printf_p(
    const char *format [,
    argument]...
@@ -70,7 +70,7 @@ The difference between `_printf_p` and `printf_s` is that `_printf_p` supports p
 
 `_wprintf_p` is the wide-character version of `_printf_p`; they behave identically if the stream is opened in ANSI mode. `_printf_p` doesn't currently support output into a UNICODE stream.
 
-The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
@@ -123,7 +123,7 @@ Reusing arguments: 10 10 10 10
 Width specifiers:     Hello
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -137,4 +137,4 @@ Width specifiers:     Hello
 [_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l](../../c-runtime-library/reference/sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

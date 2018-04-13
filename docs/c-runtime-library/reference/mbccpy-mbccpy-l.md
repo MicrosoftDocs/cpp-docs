@@ -29,7 +29,7 @@ Copies a multibyte character from one string to another string. More secure vers
 
 ## Syntax
 
-```
+```C
 void _mbccpy(
    unsigned char *dest,
    const unsigned char *src
@@ -43,10 +43,10 @@ void _mbccpy_l(
 
 ### Parameters
 
-`dest`
+*dest*
 Copy destination.
 
-`src`
+*src*
 Multibyte character to copy.
 
 *locale*
@@ -54,9 +54,9 @@ Locale to use.
 
 ## Remarks
 
-The `_mbccpy` function copies one multibyte character from `src` to `dest`.
+The `_mbccpy` function copies one multibyte character from *src* to *dest*.
 
-This function validates its parameters. If `_mbccpy` is passed a null pointer for `dest` or `src`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`.
+This function validates its parameters. If `_mbccpy` is passed a null pointer for *dest* or *src*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL`.
 
 `_mbccpy` uses the current locale for any locale-dependent behavior. `_mbccpy_l` is identical to `_mbccpy` except that `_mbccpy_l` uses the locale passed in for any locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -78,8 +78,8 @@ This function validates its parameters. If `_mbccpy` is passed a null pointer fo
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)
+[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>

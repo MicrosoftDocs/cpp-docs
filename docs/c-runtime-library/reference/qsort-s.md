@@ -26,7 +26,7 @@ Performs a quick sort. A version of [qsort](../../c-runtime-library/reference/qs
 
 ## Syntax
 
-```
+```C
 void qsort_s(
    void *base,
    size_t num,
@@ -250,9 +250,9 @@ España Español espantado
 table tablet tableux
 ```
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch_s](../../c-runtime-library/reference/bsearch-s.md)<br/>
 [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)
+[qsort](../../c-runtime-library/reference/qsort.md)<br/>

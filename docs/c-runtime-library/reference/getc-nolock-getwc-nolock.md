@@ -26,7 +26,7 @@ Reads a character from a stream.
 
 ## Syntax
 
-```
+```C
 int _getc_nolock(
    FILE *stream
 );
@@ -112,10 +112,10 @@ Line the second.
 Input was: Line the first.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
 [_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
 [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)
+[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>

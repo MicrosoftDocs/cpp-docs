@@ -26,7 +26,7 @@ Determines the positive difference between the first and second values.
 
 ## Syntax
 
-```
+```C
 double fdim(
    double x,
    double y
@@ -56,10 +56,10 @@ long double fdiml(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The first value.
 
-[in] *y*<br/>
+*y*<br/>
 The second value.
 
 ## Return Value
@@ -95,7 +95,7 @@ Except for the NaN handling, this function is equivalent to `fmax(x - y, 0)`.
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)<br/>

@@ -26,7 +26,7 @@ Computes 2 raised to the specified value.
 
 ## Syntax
 
-```
+```C
 double exp2(
    double x
 );
@@ -50,7 +50,7 @@ long double exp2l(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The value of the exponent.
 
 ## Return Value
@@ -80,7 +80,7 @@ Because C++ allows overloading, you can call overloads of **exp2** that take and
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>

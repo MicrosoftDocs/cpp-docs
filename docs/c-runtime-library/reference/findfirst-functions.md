@@ -22,11 +22,11 @@ ms.workload: ["cplusplus"]
 ---
 # _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
-Provide information about the first instance of a file name that matches the file specified in the `filespec` argument.
+Provide information about the first instance of a file name that matches the file specified in the *filespec* argument.
 
 ## Syntax
 
-```
+```C
 intptr_t _findfirst(
    const char *filespec,
    struct _finddata_t *fileinfo
@@ -79,18 +79,18 @@ intptr_t _wfindfirst64i32(
 
 ### Parameters
 
-`filespec`
+*filespec*
 Target file specification (can include wildcard characters).
 
-`fileinfo`
+*fileinfo*
 File information buffer.
 
 ## Return Value
 
-If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the `filespec` specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.
+If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the *filespec* specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.
 
 `EINVAL`
-Invalid parameter: `filespec` or `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.
+Invalid parameter: *filespec* or *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
 
 `ENOENT`
 File specification that could not be matched.
@@ -113,7 +113,7 @@ The variations of these functions that have the `w` prefix are wide-character ve
 
 Variations of these functions support 32-bit or 64-bit time types and 32-bit or 64-bit file sizes. The first numeric suffix (`32` or `64`) indicates the size of the time type; the second suffix is either `i32` or `i64`, and indicates whether the file size is represented as a 32-bit or 64-bit integer. For information about which versions support 32-bit and 64-bit time types and file sizes, see the following table. The `i32` or `i64` suffix is omitted if it is the same as the size of the time type, so `_findfirst64` also supports 64-bit file lengths and `_findfirst32` supports only 32-bit file lengths.
 
-These functions use various forms of the `_finddata_t` structure for the `fileinfo` parameter. For more information about the structure, see [Filename Search Functions](../../c-runtime-library/filename-search-functions.md).
+These functions use various forms of the `_finddata_t` structure for the *fileinfo* parameter. For more information about the structure, see [Filename Search Functions](../../c-runtime-library/filename-search-functions.md).
 
 The variations that use a 64-bit time type enable file-creation dates to be expressed up through 23:59:59, December 31, 3000, UTC. Those that use 32-bit time types represent dates only through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for all these functions.
 
@@ -162,7 +162,7 @@ Unless you have a specific reason to use the versions that specify the time size
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)
+[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>

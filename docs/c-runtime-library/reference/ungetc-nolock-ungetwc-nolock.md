@@ -26,7 +26,7 @@ Pushes a character back onto the stream.
 
 ## Syntax
 
-```
+```C
 int _ungetc_nolock(
    int c,
    FILE *stream
@@ -70,8 +70,8 @@ These functions are non-locking versions of `ungetc` and `ungetwc`. The versions
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>

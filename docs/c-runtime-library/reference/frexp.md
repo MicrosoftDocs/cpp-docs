@@ -26,7 +26,7 @@ Gets the mantissa and exponent of a floating-point number.
 
 ## Syntax
 
-```
+```C
 double frexp(
    double x,
    int *expptr
@@ -100,7 +100,7 @@ int main( void )
 frexp( 16.400000, &n ) = 0.512500, n = 5
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ldexp](../../c-runtime-library/reference/ldexp.md)<br/>

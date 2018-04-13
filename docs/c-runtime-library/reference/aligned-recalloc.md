@@ -26,7 +26,7 @@ Changes the size of a memory block that was allocated with [_aligned_malloc](../
 
 ## Syntax
 
-```
+```C
 void * _aligned_recalloc(
    void *memblock,
    size_t num,
@@ -37,16 +37,16 @@ void * _aligned_recalloc(
 
 ### Parameters
 
-[in] *memblock*
+*memblock*
 The current memory block pointer.
 
-[in] *number*
+*number*
 The number of elements.
 
-[in] *size*
+*size*
 The size in bytes of each element.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
 ## Return Value
@@ -67,8 +67,8 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 |-------------|---------------------|
 |`_aligned_recalloc`|\<malloc.h>|
 
-## See Also
+## See also
 
 [Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
 [_recalloc](../../c-runtime-library/reference/recalloc.md)<br/>
-[_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md)
+[_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md)<br/>

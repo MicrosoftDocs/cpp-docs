@@ -26,7 +26,7 @@ Retrieves the absolute value of a complex number.
 
 ## Syntax
 
-```
+```C
 double cabs(
    _Dcomplex z
 );
@@ -65,7 +65,7 @@ Because C++ allows overloading, you can call overloads of `cabs` that take `_Fco
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
@@ -73,4 +73,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
 [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
 [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)
+[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>

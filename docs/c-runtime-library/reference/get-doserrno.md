@@ -26,7 +26,7 @@ Gets the error value returned by the operating system before it is translated in
 
 ## Syntax
 
-```
+```C
 errno_t _get_doserrno( 
    int * pValue 
 );
@@ -34,12 +34,12 @@ errno_t _get_doserrno( 
 
 ### Parameters
 
-[out] `pValue`
+*pValue*
 A pointer to an integer to be filled with the current value of the `_doserrno` global macro.
 
 ## Return Value
 
-If `_get_doserrno` succeeds, it returns zero; if it fails, it returns an error code. If `pValue` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+If `_get_doserrno` succeeds, it returns zero; if it fails, it returns an error code. If *pValue* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
 ## Remarks
 
@@ -57,7 +57,7 @@ Possible values of `_doserrno` are defined in \<errno.h>.
 
 `_get_doserrno` is a Microsoft extension. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [_set_doserrno](../../c-runtime-library/reference/set-doserrno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

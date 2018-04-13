@@ -26,7 +26,7 @@ Confirms the integrity of the memory blocks allocated in the debug heap (debug v
 
 ## Syntax
 
-```
+```C
 
 int _CrtCheckMemory( void );
 ```
@@ -65,8 +65,8 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 For a sample of how to use `_CrtCheckMemory`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
-[_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)
+[_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)<br/>

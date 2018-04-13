@@ -26,7 +26,7 @@ Changes the size of a memory block that was allocated with [_aligned_malloc](../
 
 ## Syntax
 
-```
+```C
 void * _aligned_realloc(
    void *memblock,
    size_t size,
@@ -36,13 +36,13 @@ void * _aligned_realloc(
 
 ### Parameters
 
-[in] *memblock*
+*memblock*
 The current memory block pointer.
 
-[in] *size*
+*size*
 The size of the requested memory allocation.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
 ## Return Value
@@ -67,6 +67,6 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).
 
-## See Also
+## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>

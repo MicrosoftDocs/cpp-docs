@@ -26,7 +26,7 @@ The default pure virtual function call error handler. The compiler generates cod
 
 ## Syntax
 
-```
+```C
 extern "C" int __cdecl _purecall();
 ```
 
@@ -40,7 +40,7 @@ A call to a pure virtual function is an error because it has no implementation. 
 
 The `_purecall` function does not have a header declaration. The `_purecall_handler` typedef is defined in \<stdlib.h>.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_get_purecall_handler, _set_purecall_handler](../../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)
+[_get_purecall_handler, _set_purecall_handler](../../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)<br/>

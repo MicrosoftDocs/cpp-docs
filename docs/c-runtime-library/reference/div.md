@@ -116,7 +116,7 @@ x is 876, y is 13
 The quotient is 67, and the remainder is 5
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>

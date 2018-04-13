@@ -29,7 +29,7 @@ Puts a string to the console.
 
 ## Syntax
 
-```
+```C
 int _cputs(
    const char *str
 );
@@ -129,7 +129,7 @@ Hello world (courtesy of _cputs)!
 Hello world (courtesy of _cputws)!
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_putch, _putwch](../../c-runtime-library/reference/putch-putwch.md)
+[_putch, _putwch](../../c-runtime-library/reference/putch-putwch.md)<br/>

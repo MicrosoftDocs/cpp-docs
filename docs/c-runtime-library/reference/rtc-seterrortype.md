@@ -26,9 +26,8 @@ Associates an error that is detected by run-time error checks (RTCs) with a type
 
 ## Syntax
 
-```
-
-      int _RTC_SetErrorType(
+```C
+int _RTC_SetErrorType(
    _RTC_ErrorNumber errnum,
    int ErrType
 );
@@ -66,7 +65,7 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)
+[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

@@ -29,9 +29,8 @@ Waits for a new command processor and closes the stream on the associated pipe.
 
 ## Syntax
 
-```
-
-      int _pclose(
+```C
+int _pclose(
 FILE *stream
 );
 ```
@@ -63,8 +62,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_pipe](../../c-runtime-library/reference/pipe.md)<br/>
-[_popen, _wpopen](../../c-runtime-library/reference/popen-wpopen.md)
+[_popen, _wpopen](../../c-runtime-library/reference/popen-wpopen.md)<br/>

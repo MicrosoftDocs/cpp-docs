@@ -22,7 +22,7 @@ Format a time string.
 
 ## Syntax
 
-```
+```C
 size_t strftime(
    char *strDest,
    size_t maxsize,
@@ -91,7 +91,7 @@ This function validates its parameters. If *strDest*, *format*, or *timeptr* is 
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcsftime`|`strftime`|`strftime`|`wcsftime`|
 
-The *format* argument consists of one or more codes; as in `printf`, the formatting codes are preceded by a percent sign (**%**). Characters that do not begin with **%** are copied unchanged to `strDest`. The **LC_TIME** category of the current locale affects the output formatting of `strftime`. (For more information on **LC_TIME**, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).) The `strftime` and `wcsftime` functions use the currently set locale. The `_strftime_l` and `_wcsftime_l` versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The *format* argument consists of one or more codes; as in `printf`, the formatting codes are preceded by a percent sign (**%**). Characters that do not begin with **%** are copied unchanged to *strDest*. The **LC_TIME** category of the current locale affects the output formatting of `strftime`. (For more information on **LC_TIME**, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).) The `strftime` and `wcsftime` functions use the currently set locale. The `_strftime_l` and `_wcsftime_l` versions of these functions are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 The `strftime` functions support these formatting codes:
 

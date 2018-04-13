@@ -26,7 +26,7 @@ Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, 
 
 ## Syntax
 
-```
+```C
 int _creat(
    const char *filename,
    int pmode
@@ -125,7 +125,7 @@ int main( void )
 Created data file.
 ```
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
@@ -134,4 +134,4 @@ Created data file.
 [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
 [_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_umask](../../c-runtime-library/reference/umask.md)
+[_umask](../../c-runtime-library/reference/umask.md)<br/>

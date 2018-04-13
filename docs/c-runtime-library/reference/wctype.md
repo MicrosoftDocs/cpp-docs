@@ -26,7 +26,7 @@ Determines a classification rule for wide-character codes.
 
 ## Syntax
 
-```
+```C
 wctype_t wctype(
    const char * property
 );
@@ -67,7 +67,7 @@ The function determines a classification rule for wide-character codes. The foll
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)
+[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

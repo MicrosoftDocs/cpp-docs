@@ -26,7 +26,7 @@ Function versions of [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-lib
 
 ## Syntax
 
-```
+```C
 char *_tempnam_dbg(
    const char *dir,
    const char *prefix,
@@ -45,7 +45,7 @@ wchar_t *_wtempnam_dbg(
 
 ### Parameters
 
-`dir`
+*dir*
 The path used in the file name if there is no TMP environment variable, or if TMP is not a valid directory.
 
 `prefix`
@@ -62,7 +62,7 @@ Line number in source file where allocation operation was requested or `NULL`.
 
 ## Return Value
 
-Each function returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.
+Each function returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if there is an invalid directory name specified in the TMP environment variable and in the *dir* parameter.
 
 > [!NOTE]
 >  `free` (or `free_dbg`) does need to be called for pointers allocated by `_tempnam_dbg` and `_wtempnam_dbg`.
@@ -87,8 +87,8 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

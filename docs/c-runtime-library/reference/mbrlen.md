@@ -26,7 +26,7 @@ Determine the number of bytes that are required to complete a multibyte characte
 
 ## Syntax
 
-```
+```C
 size_t mbrlen(
    const char * str,
    size_t count,
@@ -39,35 +39,30 @@ size_t mbrlen(
 *str*
 Pointer to the next byte to inspect in a multibyte character string.
 
-`count`
+*count*
 The maximum number of bytes to inspect.
 
-`mbstate`
+*mbstate*
 Pointer to the current shift state of the initial byte of *str*.
 
 ## Return Value
 
 One of the following values:
 
-0
-The next `count` or fewer bytes complete the multibyte character that represents the wide null character.
-
-1 to `count`, inclusive
-The next `count` or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character.
-
-(size_t)(-2)
-The next `count` bytes contribute to an incomplete but potentially valid multibyte character and all `count` bytes have been processed.
-
-(size_t)(-1)
-An encoding error occurred. The next `count` or fewer bytes do not contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion state in `mbstate` is unspecified.
+|||
+|-|-|
+0|The next *count* or fewer bytes complete the multibyte character that represents the wide null character.
+1 to *count*, inclusive|The next *count* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character.
+(size_t)(-2)|The next *count* bytes contribute to an incomplete but potentially valid multibyte character and all *count* bytes have been processed.
+(size_t)(-1)|An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion state in *mbstate* is unspecified.
 
 ## Remarks
 
-The `mbrlen` function inspects at most `count` bytes starting with the byte pointed to by *str* to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where `mbstate` is either a user-provided `mbstate_t` object, or a static internal object provided by the library.
+The `mbrlen` function inspects at most *count* bytes starting with the byte pointed to by *str* to determine the number of bytes that are required to complete the next multibyte character, including any shift sequences. It is equivalent to the call `mbrtowc(NULL, str, count, &mbstate)` where *mbstate* is either a user-provided `mbstate_t` object, or a static internal object provided by the library.
 
-The `mbrlen` function saves and uses the shift state of an incomplete multibyte character in the `mbstate` parameter. This gives `mbrlen` the capability of restarting in the middle of a multibyte character if need be, examining at most `count` bytes. If `mbstate` is a null pointer, `mbrlen` uses an internal, static `mbstate_t` object to store the shift state. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always allocate and pass your own `mbstate` parameter.
+The `mbrlen` function saves and uses the shift state of an incomplete multibyte character in the *mbstate* parameter. This gives `mbrlen` the capability of restarting in the middle of a multibyte character if need be, examining at most *count* bytes. If *mbstate* is a null pointer, `mbrlen` uses an internal, static `mbstate_t` object to store the shift state. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always allocate and pass your own *mbstate* parameter.
 
-The `mbrlen` function differs from [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md) by its restartability. The shift state is stored in `mbstate` for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs.`
+The `mbrlen` function differs from [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md) by its restartability. The shift state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application should use `wcsrlen` instead of `wcslen` if a subsequent call to `wcsrtombs` is used instead of `wcstombs.`
 
 ### Generic-Text Routine Mappings
 
@@ -146,7 +141,7 @@ Character count: 25
 
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)
+[Locale](../../c-runtime-library/locale.md)<br/>

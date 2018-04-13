@@ -25,7 +25,7 @@ Evaluate an expression at compile time and generate an error when the result is 
 
 ## Syntax
 
-```
+```C
 _STATIC_ASSERT(
     booleanExpression
 );
@@ -68,7 +68,7 @@ int main()
 |-----------|---------------------|
 |`_STATIC_ASSERT`|\<crtdbg.h>|
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)
+[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>

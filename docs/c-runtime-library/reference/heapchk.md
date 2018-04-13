@@ -26,7 +26,7 @@ Runs consistency checks on the heap.
 
 ## Syntax
 
-```
+```C
 int _heapchk( void );
 ```
 
@@ -106,10 +106,10 @@ int main( void )
 OK - heap is fine
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapmin](../../c-runtime-library/reference/heapmin.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../../c-runtime-library/reference/heapwalk.md)
+[_heapwalk](../../c-runtime-library/reference/heapwalk.md)<br/>

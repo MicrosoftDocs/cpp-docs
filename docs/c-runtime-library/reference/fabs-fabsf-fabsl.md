@@ -26,7 +26,7 @@ Calculates the absolute value of the floating-point argument.
 
 ## Syntax
 
-```
+```C
 double fabs(
    double x
 );
@@ -73,7 +73,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md).
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>

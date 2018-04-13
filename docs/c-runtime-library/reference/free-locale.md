@@ -26,7 +26,7 @@ Frees a locale object.
 
 ## Syntax
 
-```
+```C
 void _free_locale(
    _locale_t locale
 );
@@ -51,7 +51,7 @@ The previous name of this function, `__free_locale` (with two leading underscore
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_get_current_locale](../../c-runtime-library/reference/get-current-locale.md)<br/>
-[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)
+[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>

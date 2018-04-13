@@ -26,7 +26,7 @@ Reads a character from `stdin`.
 
 ## Syntax
 
-```
+```C
 int _fgetchar( void );
 wint_t _fgetwchar( void );
 ```
@@ -96,8 +96,8 @@ Line two.Line one.
 Line two.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)
+[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>

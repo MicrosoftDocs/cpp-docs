@@ -26,7 +26,7 @@ Sets the default file translation mode for file I/O operations.
 
 ## Syntax
 
-```
+```C
 errno_t _set_fmode( 
    int mode 
 );
@@ -34,7 +34,7 @@ errno_t _set_fmode( 
 
 ### Parameters
 
-[in] *mode*
+*mode*
 The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value
@@ -118,9 +118,9 @@ Default Mode is binary
 A   B   C   D   E   F   G   H   I   J   K   L
 ```
 
-## See Also
+## See also
 
 [_fmode](../../c-runtime-library/fmode.md)<br/>
 [_get_fmode](../../c-runtime-library/reference/get-fmode.md)<br/>
 [_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)
+[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

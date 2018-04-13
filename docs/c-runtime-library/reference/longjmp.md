@@ -26,9 +26,8 @@ Restores stack environment and execution locale.
 
 ## Syntax
 
-```
-
-      void longjmp(
+```C
+void longjmp(
    jmp_buf env,
    int value
 );
@@ -36,7 +35,7 @@ Restores stack environment and execution locale.
 
 ### Parameters
 
-`env`
+*env*
 Variable in which environment is stored.
 
 *value*
@@ -44,9 +43,9 @@ Value to be returned to `setjmp` call.
 
 ## Remarks
 
-The `longjmp` function restores a stack environment and execution locale previously saved in `env` by `setjmp`. `setjmp` and `longjmp` provide a way to execute a nonlocal `goto`; they are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal call and return conventions.
+The `longjmp` function restores a stack environment and execution locale previously saved in *env* by `setjmp`. `setjmp` and `longjmp` provide a way to execute a nonlocal `goto`; they are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal call and return conventions.
 
-A call to `setjmp` causes the current stack environment to be saved in `env`. A subsequent call to `longjmp` restores the saved environment and returns control to the point immediately following the corresponding `setjmp` call. Execution resumes as if *value* had just been returned by the `setjmp` call. The values of all variables (except register variables) that are accessible to the routine receiving control contain the values they had when `longjmp` was called. The values of register variables are unpredictable. The value returned by `setjmp` must be nonzero. If *value* is passed as 0, the value 1 is substituted in the actual return.
+A call to `setjmp` causes the current stack environment to be saved in *env*. A subsequent call to `longjmp` restores the saved environment and returns control to the point immediately following the corresponding `setjmp` call. Execution resumes as if *value* had just been returned by the `setjmp` call. The values of all variables (except register variables) that are accessible to the routine receiving control contain the values they had when `longjmp` was called. The values of register variables are unpredictable. The value returned by `setjmp` must be nonzero. If *value* is passed as 0, the value 1 is substituted in the actual return.
 
 Call `longjmp` before the function that called `setjmp` returns; otherwise the results are unpredictable.
 
@@ -76,7 +75,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 See the example for [_fpreset](../../c-runtime-library/reference/fpreset.md).
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[setjmp](../../c-runtime-library/reference/setjmp.md)
+[setjmp](../../c-runtime-library/reference/setjmp.md)<br/>

@@ -26,15 +26,15 @@ Get a string from a stream.
 
 ## Syntax
 
-```
+```C
 char *fgets(
    char *str,
-   int n,
+   int numChars,
    FILE *stream
 );
 wchar_t *fgetws(
    wchar_t *str,
-   int n,
+   int numChars,
    FILE *stream
 );
 ```
@@ -44,7 +44,7 @@ wchar_t *fgetws(
 *str*
 Storage location for data.
 
-`n`
+*numChars*
 Maximum number of characters to read.
 
 *stream*
@@ -52,13 +52,13 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns *str*. `NULL` is returned to indicate an error or an end-of-file condition. Use `feof` or `ferror` to determine whether an error occurred. If *str* or *stream* is a null pointer, or `n` is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
+Each of these functions returns *str*. `NULL` is returned to indicate an error or an end-of-file condition. Use `feof` or `ferror` to determine whether an error occurred. If *str* or *stream* is a null pointer, or *numChars* is less than or equal to zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
 ## Remarks
 
-The `fgets` function reads a string from the input *stream* argument and stores it in *str*. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to `n` - 1, whichever comes first. The result stored in *str* is appended with a null character. The newline character, if read, is included in the string.
+The `fgets` function reads a string from the input *stream* argument and stores it in *str*. `fgets` reads characters from the current stream position to and including the first newline character, to the end of the stream, or until the number of characters read is equal to *numChars* - 1, whichever comes first. The result stored in *str* is appended with a null character. The newline character, if read, is included in the string.
 
 `fgetws` is a wide-character version of `fgets`.
 
@@ -97,7 +97,7 @@ int main( void )
    if( fopen_s( &stream, "crt_fgets.txt", "r" ) == 0 )
    {
       if( fgets( line, 100, stream ) == NULL)
-         printf( "fgets error\n" );
+         printf( "fgets error\numChars" );
       else
          printf( "%s", line);
       fclose( stream );
@@ -118,9 +118,9 @@ Line two.
 Line one.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](../../c-runtime-library/reference/puts-putws.md)
+[puts, _putws](../../c-runtime-library/reference/puts-putws.md)<br/>

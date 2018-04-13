@@ -29,7 +29,7 @@ Compares the first `n` bytes of two multibyte-character strings.
 
 ## Syntax
 
-```
+```C
 int _mbsnbcmp(
    const unsigned char *string1,
    const unsigned char *string2,
@@ -45,10 +45,10 @@ int _mbsnbcmp_l(
 
 ### Parameters
 
-`string1, string2`
+*string1*, *string2*<br/>
 The strings to compare.
 
-`count`
+*count*
 The number of bytes to compare.
 
 *locale*
@@ -56,25 +56,25 @@ The locale to use.
 
 ## Return Value
 
-The return value indicates the ordinal relationship between the substrings of `string1` and `string`.
+The return value indicates the ordinal relationship between the substrings of *string1* and *string2*.
 
 |Return value|Description|
 |------------------|-----------------|
-|< 0|`string1` substring is less than `string2` substring.|
-|0|`string1` substring is identical to `string2` substring.|
-|> 0|`string1` substring is greater than `string2` substring.|
+|< 0|*string1* substring is less than *string2* substring.|
+|0|*string1* substring is identical to *string2* substring.|
+|> 0|*string1* substring is greater than *string2* substring.|
 
 On a parameter validation error, `_mbsnbcmp` and `_mbsnbcmp_l` return `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `_mbsnbcmp` functions compare at most the first `count` bytes in `string1` and `string2` and return a value that indicates the relationship between the substrings. `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. Unlike `_mbsnbcoll`, `_mbsnbcmp` is not affected by the collation order of the locale. `_mbsnbcmp` recognizes multibyte-character sequences according to the current multibyte [code page](../../c-runtime-library/code-pages.md).
+The `_mbsnbcmp` functions compare at most the first *count* bytes in *string1* and *string2* and return a value that indicates the relationship between the substrings. `_mbsnbcmp` is a case-sensitive version of `_mbsnbicmp`. Unlike `_mbsnbcoll`, `_mbsnbcmp` is not affected by the collation order of the locale. `_mbsnbcmp` recognizes multibyte-character sequences according to the current multibyte [code page](../../c-runtime-library/code-pages.md).
 
 `_mbsnbcmp` resembles `_mbsncmp`, except that `_mbsncmp` compares strings by characters rather than by bytes.
 
 The output value is affected by the `LC_CTYPE` category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The `_mbsnbcmp` function uses the current locale for this locale-dependent behavior. The `_mbsnbcmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If either `string1` or `string2` is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `_NLSCMPERROR` and `errno` is set to `EINVAL`.
+If either *string1* or *string2* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `_NLSCMPERROR` and `errno` is set to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 
@@ -143,7 +143,7 @@ Function: _mbsnicmp _mbsnicmp (first 10 characters only)
 Result:   String 1 is equal to string 2
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)<br/>
@@ -151,4 +151,4 @@ Result:   String 1 is equal to string 2
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

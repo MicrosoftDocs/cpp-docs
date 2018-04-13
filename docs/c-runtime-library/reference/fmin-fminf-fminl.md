@@ -25,7 +25,7 @@ Determines the smaller of the two specified values.
 
 ## Syntax
 
-```
+```C
 double fmin(
    double x,
    double y
@@ -84,7 +84,7 @@ Because C++ allows overloading, you can call overloads of **fmin** that take and
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>

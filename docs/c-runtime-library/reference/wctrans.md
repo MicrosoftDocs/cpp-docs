@@ -26,7 +26,7 @@ Determines a mapping from one set of character codes to another.
 
 ## Syntax
 
-```
+```C
 wctrans_t wctrans(
    const char *property
 );
@@ -96,7 +96,7 @@ int main()
 65
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)
+[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

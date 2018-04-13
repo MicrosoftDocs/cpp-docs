@@ -26,7 +26,7 @@ Opens a file. More-secure versions of these functions that perform additional pa
 
 ## Syntax
 
-```
+```C
 FILE *fopen(
    const char *filename,
    const char *mode
@@ -304,7 +304,7 @@ int main(int argc, char** argv)
 }
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
@@ -315,4 +315,4 @@ int main(int argc, char** argv)
 [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
 [_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)
+[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>

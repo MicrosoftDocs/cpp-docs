@@ -39,7 +39,7 @@ float trunc( float x ); //C++ only
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The value to truncate.
 
 ## Return Value
@@ -72,7 +72,7 @@ You can also round down by implicitly converting from floating-point to integral
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>

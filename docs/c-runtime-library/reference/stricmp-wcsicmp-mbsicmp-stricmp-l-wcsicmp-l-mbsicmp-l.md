@@ -29,7 +29,7 @@ Performs a case-insensitive comparison of strings.
 
 ## Syntax
 
-```
+```C
 int _stricmp(
    const char *string1,
    const char *string2
@@ -61,7 +61,7 @@ int _mbsicmp_l(
 
 ### Parameters
 
-`string1, string2`
+*string1*, *string2*<br/>
 Null-terminated strings to compare.
 
 *locale*
@@ -69,19 +69,19 @@ Locale to use.
 
 ## Return Value
 
-The return value indicates the relation of `string1` to `string2` as follows.
+The return value indicates the relation of *string1* to *string2* as follows.
 
 |Return value|Description|
 |------------------|-----------------|
-|< 0|`string1` less than `string2`|
-|0|`string1` identical to `string2`|
-|> 0|`string1` greater than `string2`|
+|< 0|*string1* less than *string2*|
+|0|*string1* identical to *string2*|
+|> 0|*string1* greater than *string2*|
 
 On an error, `_mbsicmp` returns `_NLSCMPERROR`, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The `_stricmp` function ordinally compares `string1` and `string2` after converting each character to lowercase, and returns a value indicating their relationship. `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is only affected by `LC_CTYPE`, which determines which characters are upper and lowercase. The `_stricoll` function compares strings according to both the `LC_CTYPE` and `LC_COLLATE` categories of the locale, which includes both the case and the collation order. For more information about the `LC_COLLATE` category, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the `_l` suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `_stricmp` function ordinally compares *string1* and *string2* after converting each character to lowercase, and returns a value indicating their relationship. `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is only affected by `LC_CTYPE`, which determines which characters are upper and lowercase. The `_stricoll` function compares strings according to both the `LC_CTYPE` and `LC_COLLATE` categories of the locale, which includes both the case and the collation order. For more information about the `LC_COLLATE` category, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
 >  `_stricmp` is equivalent to `_strcmpi`. They can be used interchangeably but `_stricmp` is the preferred standard.
@@ -116,7 +116,7 @@ int main() {
 
 An alternative is to call [_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md) and pass the returned locale object as a parameter to `_wcsicmp_l`.
 
-All of these functions validate their parameters. If either `string1` or `string2` are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
 
 ### Generic-Text Routine Mappings
 
@@ -183,7 +183,7 @@ Compare strings:
    _stricmp:  String 1 is equal to string 2
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
@@ -194,4 +194,4 @@ Compare strings:
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

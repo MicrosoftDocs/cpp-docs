@@ -29,7 +29,7 @@ Gets a value from the current environment. More secure versions of these functio
 
 ## Syntax
 
-```
+```C
 char *getenv(
    const char *varname
 );
@@ -49,7 +49,7 @@ Returns a pointer to the environment table entry containing *varname*. It is not
 
 ## Remarks
 
-The `getenv` function searches the list of environment variables for *varname*. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the `envp` argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.
+The `getenv` function searches the list of environment variables for *varname*. `getenv` is not case sensitive in the Windows operating system. `getenv` and `_putenv` use the copy of the environment pointed to by the global variable `_environ` to access the environment. `getenv` operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.
 
 If *varname* is `NULL`, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
@@ -126,8 +126,8 @@ Original LIB variable is: C:\progra~1\devstu~1\vc\lib
 New LIB variable is: c:\mylib;c:\yourlib
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)
+[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>

@@ -26,7 +26,7 @@ Determine the larger of two specified numeric values.
 
 ## Syntax
 
-```
+```C
 double fmax(
    double x,
    double y
@@ -56,10 +56,10 @@ long double fmaxl(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The first value to compare.
 
-[in] *y*<br/>
+*y*<br/>
 The second value to compare.
 
 ## Return Value
@@ -88,7 +88,7 @@ Because C++ allows overloading, you can call overloads of fmax that take and ret
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>

@@ -26,7 +26,7 @@ Saves the currently raised floating-point exceptions, restores the specified flo
 
 ## Syntax
 
-```
+```C
 int feupdateenv(
    const fenv_t* penv
 );
@@ -55,7 +55,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [fegetenv](../../c-runtime-library/reference/fegetenv1.md)<br/>
 [feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>

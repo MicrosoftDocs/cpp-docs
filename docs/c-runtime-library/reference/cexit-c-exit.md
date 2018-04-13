@@ -26,7 +26,7 @@ Performs cleanup operations and returns without terminating the process.
 
 ## Syntax
 
-```
+```C
 void _cexit( void );
 void _c_exit( void );
 ```
@@ -57,7 +57,7 @@ myObject.myClass::~myClass( );
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
@@ -66,4 +66,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 [exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

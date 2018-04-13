@@ -26,7 +26,7 @@ Attempts to clear the floating-point exception flags        specified by the arg
 
 ## Syntax
 
-```
+```C
 int feclearexcept(
    int excepts
 );
@@ -64,7 +64,7 @@ The *excepts* argument may be zero, or the bitwise OR of one or more of the supp
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>

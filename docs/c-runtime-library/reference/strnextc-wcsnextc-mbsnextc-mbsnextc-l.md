@@ -29,7 +29,7 @@ Finds the next character in a string.
 
 ## Syntax
 
-```
+```C
 unsigned int _strnextc(
    const char *str
 );
@@ -72,7 +72,7 @@ If *str* is `NULL`, the invalid parameter handler is invoked, as described in [P
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tcsnextc`|`_strnextc`|`_mbsnextc`|`_wcsnextc`|
 
-`_strnextc` and `_wcsnextc` are single-byte-character string and wide-character string versions of `_mbsnextc`. `_wcsnextc` returns the integer value of the next wide character in `string`; `_strnextc` returns the integer value of the next single-byte character in `string`. `_strnextc` and `_wcsnextc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
+`_strnextc` and `_wcsnextc` are single-byte-character string and wide-character string versions of `_mbsnextc`. `_wcsnextc` returns the integer value of the next wide character in *str*; `_strnextc` returns the integer value of the next single-byte character in *str*. `_strnextc` and `_wcsnextc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
 
 `_mbsnextc_l` is identical except that it uses the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -87,11 +87,11 @@ If *str* is `NULL`, the invalid parameter handler is invoked, as described in [P
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strdec, _wcsdec, _mbsdec, _mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](../../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)
+[_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>

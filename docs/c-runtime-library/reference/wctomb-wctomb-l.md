@@ -26,7 +26,7 @@ Convert a wide character to the corresponding multibyte character. More secure v
 
 ## Syntax
 
-```
+```C
 int wctomb(
    char *mbchar,
    wchar_t wchar
@@ -94,7 +94,7 @@ Convert a wide character:
    Multibyte character: a
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -102,4 +102,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)
+[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

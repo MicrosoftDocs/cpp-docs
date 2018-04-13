@@ -26,7 +26,7 @@ Returns the termination routine to be called by `unexpected`.
 
 ## Syntax
 
-```
+```C
 unexpected_function _get_unexpected( void );
 ```
 
@@ -42,10 +42,10 @@ Returns a pointer to the function registered by [set_unexpected](../../c-runtime
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
 [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
 [terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>

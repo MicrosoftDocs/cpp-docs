@@ -26,7 +26,7 @@ Returns a value that has the magnitude of one argument and the sign of another.
 
 ## Syntax
 
-```
+```C
 double copysign(
    double x,
    double y
@@ -84,7 +84,7 @@ Because C++ allows overloading, you can call overloads of **copysign** that take
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
 [_chgsign, _chgsignf, _chgsignl](../../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)<br/>

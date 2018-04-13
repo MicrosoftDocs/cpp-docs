@@ -26,7 +26,7 @@ Performs a linear search for a value; adds to end of list if not found. A more s
 
 ## Syntax
 
-```
+```C
 void *_lsearch(
    const void *key,
    void *base,
@@ -115,9 +115,9 @@ wordlist before _lsearch: hello thanks bye
 wordlist after _lsearch: hello thanks bye extra
 ```
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
 [_lfind](../../c-runtime-library/reference/lfind.md)<br/>
-[_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)
+[_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)<br/>

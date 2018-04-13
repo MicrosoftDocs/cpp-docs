@@ -26,7 +26,7 @@ Gets a system error message string (`strerror`, `_wcserror`) or formats a user-s
 
 ## Syntax
 
-```
+```C
 char *strerror(
    int errnum
 );
@@ -92,9 +92,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)
+[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>

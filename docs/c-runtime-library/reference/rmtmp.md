@@ -26,7 +26,7 @@ Removes temporary files.
 
 ## Syntax
 
-```
+```C
 
 int _rmtmp( void );
 ```
@@ -55,9 +55,9 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 See the example for [tmpfile](../../c-runtime-library/reference/tmpfile.md).
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_flushall](../../c-runtime-library/reference/flushall.md)<br/>
 [tmpfile](../../c-runtime-library/reference/tmpfile.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

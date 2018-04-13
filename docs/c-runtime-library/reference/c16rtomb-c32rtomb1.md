@@ -26,7 +26,7 @@ Convert a UTF-16 or UTF-32 wide character into a multibyte character in the curr
 
 ## Syntax
 
-```
+```C
 size_t c16rtomb(
     char *mbchar,
     char16_t wchar,
@@ -41,13 +41,13 @@ size_t c32rtomb(
 
 ### Parameters
 
-[out] *mbchar*
+*mbchar*
 Pointer to an array to store the multibyte converted character.
 
-[in] *wchar*
+*wchar*
 A wide character to convert.
 
-[in, out] *state*
+*state*
 A pointer to an `mbstate_t` object.
 
 ## Return Value
@@ -70,11 +70,11 @@ The *state* conversion state object allows you to make subsequent calls to this 
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [mbrtoc16, mbrtoc32](../../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)<br/>
 [wcrtomb](../../c-runtime-library/reference/wcrtomb.md)<br/>
-[wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md)
+[wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md)<br/>

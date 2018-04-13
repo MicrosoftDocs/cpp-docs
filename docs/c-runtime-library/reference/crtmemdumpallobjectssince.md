@@ -26,9 +26,8 @@ Dumps information about objects in the heap from the start of program execution 
 
 ## Syntax
 
-```
-
-      void _CrtMemDumpAllObjectsSince(
+```C
+void _CrtMemDumpAllObjectsSince(
    const _CrtMemState *state
 );
 ```
@@ -64,7 +63,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 For a sample of how to use `_CrtMemDumpAllObjectsSince`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
-## See Also
+## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)
+[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>

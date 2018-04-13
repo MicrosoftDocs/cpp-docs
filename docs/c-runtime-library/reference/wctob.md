@@ -26,7 +26,7 @@ Determines if a wide character corresponds to a multibyte character and returns 
 
 ## Syntax
 
-```
+```C
 int wctob(
    wint_t wchar
 );
@@ -90,7 +90,7 @@ int main( void )
 Determined the corresponding multibyte character to be "A".
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
@@ -98,4 +98,4 @@ Determined the corresponding multibyte character to be "A".
 [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)
+[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

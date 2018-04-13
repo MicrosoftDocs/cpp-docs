@@ -26,7 +26,7 @@ Versions of [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-w
 
 ## Syntax
 
-```
+```C
 char *_fullpath_dbg(
    char *absPath,
    const char *relPath,
@@ -47,14 +47,14 @@ wchar_t *_wfullpath_dbg(
 
 ### Parameters
 
-`absPath`
+*absPath*
 Pointer to a buffer containing the absolute or full path name, or `NULL`.
 
-`relPath`
+*relPath*
 Relative path name.
 
-`maxLength`
-Maximum length of the absolute path name buffer (`absPath`). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
+*maxLength*
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
 
 *blockType*
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
@@ -67,7 +67,7 @@ Line number in the source file where the allocation operation was requested or `
 
 ## Return Value
 
-Each function returns a pointer to a buffer containing the absolute path name (`absPath`). If there is an error (for example, if the value passed in `relPath` includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (`absPath`) is greater than `maxLength`) the function returns `NULL`.
+Each function returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*) the function returns `NULL`.
 
 ## Remarks
 
@@ -90,8 +90,8 @@ You do not need to call these functions explicitly in most cases. Instead, you c
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

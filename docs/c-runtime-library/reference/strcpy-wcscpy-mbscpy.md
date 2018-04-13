@@ -29,7 +29,7 @@ Copies a string. More secure versions of these functions are available; see [str
 
 ## Syntax
 
-```
+```C
 char *strcpy(
    char *strDestination,
    const char *strSource
@@ -61,10 +61,10 @@ unsigned char *_mbscpy(
 
 ### Parameters
 
-`strDestination`
+*strDestination*
 Destination string.
 
-`strSource`
+*strSource*
 Null-terminated source string.
 
 ## Return Value
@@ -73,10 +73,10 @@ Each of these functions returns the destination string. No return value is reser
 
 ## Remarks
 
-The `strcpy` function copies `strSource`, including the terminating null character, to the location that's specified by `strDestination`. The behavior of `strcpy` is undefined if the source and destination strings overlap.
+The `strcpy` function copies *strSource*, including the terminating null character, to the location that's specified by *strDestination*. The behavior of `strcpy` is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
->  Because `strcpy` does not check for sufficient space in `strDestination` before it copies `strSource`, it is a potential cause of buffer overruns. Therefore, we recommend that you use [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) instead.
+>  Because `strcpy` does not check for sufficient space in *strDestination* before it copies *strSource*, it is a potential cause of buffer overruns. Therefore, we recommend that you use [strcpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) instead.
 
 `wcscpy` and `_mbscpy` are, respectively, wide-character and multibyte-character versions of `strcpy`. The arguments and return value of `wcscpy` are wide-character strings; those of `_mbscpy` are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -133,7 +133,7 @@ int main( void )
 String = Hello world from strcpy and strcat!
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)<br/>
@@ -143,4 +143,4 @@ String = Hello world from strcpy and strcat!
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

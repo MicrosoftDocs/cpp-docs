@@ -26,7 +26,7 @@ Transforms a character.
 
 ## Syntax
 
-```
+```C
 wint_t towctrans(
    wint_t c,
    wctrans_t category
@@ -61,6 +61,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 See `wctrans` for a sample that uses `towctrans`.
 
-## See Also
+## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)
+[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>

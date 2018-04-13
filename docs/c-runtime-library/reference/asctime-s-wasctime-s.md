@@ -26,7 +26,7 @@ Convert a `tm` time structure to a character string. These functions are version
 
 ## Syntax
 
-```
+```C
 errno_t asctime_s(
    char* buffer,
    size_t numberOfElements,
@@ -52,13 +52,13 @@ errno_t _wasctime_s(
 ### Parameters
 
 *buffer*
-[out] A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by *numberOfElements*.
+A pointer to a buffer to store the character string result. This function assumes a pointer to a valid memory location with a size specified by *numberOfElements*.
 
 *numberOfElements*
-[in] The size of the buffer used to store the result.
+The size of the buffer used to store the result.
 
 *tmSource*
-[in] Time/date structure. This function assumes a pointer to a valid `struct tm` object.
+Time/date structure. This function assumes a pointer to a valid `struct tm` object.
 
 ## Return Value
 
@@ -156,7 +156,7 @@ int main( void )
 Current date and time: Wed May 14 15:30:17 2003
 ```
 
-## See Also
+## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
@@ -164,4 +164,4 @@ Current date and time: Wed May 14 15:30:17 2003
 [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
 [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
 [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)
+[_tzset](../../c-runtime-library/reference/tzset.md)<br/>

@@ -25,7 +25,7 @@ Converts strings to a long double-precision floating-point value.
 
 ## Syntax
 
-```
+```C
 long double strtold(
    const char *nptr,
    char **endptr
@@ -127,7 +127,7 @@ string = 3.1415926535898This stopped it
 
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>

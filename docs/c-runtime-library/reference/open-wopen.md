@@ -26,7 +26,7 @@ Opens a file. These functions are deprecated because more-secure versions are av
 
 ## Syntax
 
-```
+```C
 int _open(
    const char *filename,
    int oflag [,
@@ -223,7 +223,7 @@ Open succeeded on input file
 Open succeeded on output file
 ```
 
-## See Also
+## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
@@ -231,4 +231,4 @@ Open succeeded on output file
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
 [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)
+[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>

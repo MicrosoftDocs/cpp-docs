@@ -26,7 +26,7 @@ Reads formatted data from the standard input stream. These versions of [scanf, _
 
 ## Syntax
 
-```
+```C
 int scanf_s(
    const char *format [,
    argument]...
@@ -70,7 +70,7 @@ The `scanf_s` function reads data from the standard input stream `stdin` and wri
 
 `wscanf_s` is a wide-character version of `scanf_s`; the *format* argument to `wscanf_s` is a wide-character string. `wscanf_s` and `scanf_s` behave identically if the stream is opened in ANSI mode. `scanf_s` doesn't currently support input from a UNICODE stream.
 
-The versions of these functions that have the `_l` suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
+The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter that's passed in instead of the current thread locale.
 
 Unlike `scanf` and `wscanf`, `scanf_s` and `wscanf_s` require the buffer size to be specified for all input parameters of type `c`, `C`, `s`, `S`, or string control sets that are enclosed in `[]`. The buffer size in characters is passed as an additional parameter immediately following the pointer to the buffer or variable. For example, if you are reading a string, the buffer size for that string is passed as follows:
 
@@ -170,7 +170,7 @@ The number of fields input is 6
 The contents are: 36 92.300003 y n Wide characters
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
@@ -178,4 +178,4 @@ The contents are: 36 92.300003 y n Wide characters
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)
+[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

@@ -26,7 +26,7 @@ Sets the current floating-point environment.
 
 ## Syntax
 
-```
+```C
 int fesetenv(
    const fenv_t *penv
 );
@@ -57,7 +57,7 @@ To use this function, you must turn off floating-point optimizations that could 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [fegetenv](../../c-runtime-library/reference/fegetenv1.md)<br/>

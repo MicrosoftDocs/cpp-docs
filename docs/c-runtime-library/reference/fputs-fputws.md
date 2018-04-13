@@ -26,7 +26,7 @@ Writes a string to a stream.
 
 ## Syntax
 
-```
+```C
 int fputs(
    const char *str,
    FILE *stream
@@ -91,9 +91,9 @@ int main( void )
 Hello world from fputs.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](../../c-runtime-library/reference/puts-putws.md)
+[puts, _putws](../../c-runtime-library/reference/puts-putws.md)<br/>

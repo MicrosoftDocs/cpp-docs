@@ -26,7 +26,7 @@ Multiplies two values together,  adds a third value, and then rounds the result,
 
 ## Syntax
 
-```
+```C
 double fma(
    double x,
    double y,
@@ -61,13 +61,13 @@ long double fmal(
 
 ### Parameters
 
-[in] *x*<br/>
+*x*<br/>
 The first value to multiply.
 
-[in] *y*<br/>
+*y*<br/>
 The second value to multiply.
 
-[in] *z*<br/>
+*z*<br/>
 The value to add.
 
 ## Return Value
@@ -101,7 +101,7 @@ This function computes the value as though it were taken to infinite precision, 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [remainder, remainderf, remainderl](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)<br/>

@@ -26,7 +26,7 @@ Calculates the hypotenuse.
 
 ## Syntax
 
-```
+```C
 double hypot(
    double x,
    double y
@@ -100,7 +100,7 @@ int main( void )
 If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_cabs](../../c-runtime-library/reference/cabs.md)<br/>

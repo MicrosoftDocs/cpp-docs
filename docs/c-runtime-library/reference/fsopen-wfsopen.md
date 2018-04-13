@@ -26,7 +26,7 @@ Opens a stream with file sharing.
 
 ## Syntax
 
-```
+```C
 FILE *_fsopen(
    const char *filename,
    const char *mode,
@@ -141,7 +141,7 @@ int main( void )
 No one else in the network can write to this file until we are done.
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
@@ -152,4 +152,4 @@ No one else in the network can write to this file until we are done.
 [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
 [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
 [_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)
+[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>

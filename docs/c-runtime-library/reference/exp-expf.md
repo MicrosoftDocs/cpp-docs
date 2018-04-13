@@ -26,7 +26,7 @@ Calculates the exponential.
 
 ## Syntax
 
-```
+```C
 double exp(
    double x
 );
@@ -95,7 +95,7 @@ int main( void )
 exp( 2.302585 ) = 10.000000
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>

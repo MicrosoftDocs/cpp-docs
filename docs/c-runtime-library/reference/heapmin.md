@@ -26,7 +26,7 @@ Releases unused heap memory to the operating system.
 
 ## Syntax
 
-```
+```C
 int _heapmin( void );
 ```
 
@@ -48,7 +48,7 @@ The `_heapmin` function minimizes the heap by releasing unused heap memory to th
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [free](../../c-runtime-library/reference/free.md)<br/>
@@ -56,4 +56,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 [_heapchk](../../c-runtime-library/reference/heapchk.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>
 [_heapwalk](../../c-runtime-library/reference/heapwalk.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)
+[malloc](../../c-runtime-library/reference/malloc.md)<br/>

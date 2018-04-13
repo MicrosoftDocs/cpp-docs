@@ -26,7 +26,7 @@ Calls `terminate` or function you specify using `set_unexpected`.
 
 ## Syntax
 
-```
+```C
 void unexpected( void );
 ```
 
@@ -42,11 +42,11 @@ The `unexpected` routine is not used with the current implementation of C++ exce
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
 [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)<br/>
 [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
 [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
-[terminate](../../c-runtime-library/reference/terminate-crt.md)
+[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>

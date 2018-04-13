@@ -26,7 +26,7 @@ Closes a stream without thread-locking.
 
 ## Syntax
 
-```
+```C
 int _fclose_nolock(
    FILE *stream
 );
@@ -53,11 +53,11 @@ This functions is a non-locking version of `fclose`. It is identical except that
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [_close](../../c-runtime-library/reference/close.md)<br/>
 [_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fflush](../../c-runtime-library/reference/fflush.md)<br/>
 [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)
+[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>

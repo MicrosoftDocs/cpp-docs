@@ -26,7 +26,7 @@ Tests a character to determine whether it is a lead byte of a multibyte characte
 
 ## Syntax
 
-```
+```C
 int _ismbblead(
    unsigned int c
 );
@@ -38,7 +38,7 @@ int _ismbblead_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to be tested.
 
 *locale*
@@ -46,7 +46,7 @@ Locale to use.
 
 ## Return Value
 
-Returns a nonzero value if the integer `c` is the first byte of a multibyte character.
+Returns a nonzero value if the integer *c* is the first byte of a multibyte character.
 
 ## Remarks
 
@@ -71,7 +71,7 @@ Multibyte characters consist of a lead byte followed by a trailing byte. Lead by
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>

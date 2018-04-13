@@ -26,7 +26,7 @@ Changes the size of a memory block that was allocated with [_aligned_malloc](../
 
 ## Syntax
 
-```
+```C
 void * _aligned_recalloc_dbg(
    void * memblock,
    size_t num,
@@ -39,22 +39,22 @@ void * _aligned_recalloc_dbg(
 
 ### Parameters
 
-[in] *memblock*
+*memblock*
 The current memory block pointer.
 
-[in] *number*
+*number*
 The number of elements.
 
-[in] *size*
+*size*
 The size in bytes of each element.
 
-[in] *alignment*
+*alignment*
 The alignment value, which must be an integer power of 2.
 
-[in] *filename*
+*filename*
 Pointer to name of the source file that requested allocation operation or `NULL`.
 
-[in] *linenumber*
+*linenumber*
 Line number in the source file where allocation operation was requested or `NULL`.
 
 ## Return Value
@@ -87,6 +87,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.
 
-## See Also
+## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)
+[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>

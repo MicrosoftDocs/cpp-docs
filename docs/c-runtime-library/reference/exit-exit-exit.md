@@ -41,14 +41,14 @@ void _exit(
 
 ### Parameters
 
-_status_
+*status*
 Exit status code.
 
 ## Remarks
 
 The `exit`, `_Exit` and `_exit` functions terminate the calling process. The `exit` function calls destructors for thread-local objects, then calls—in last-in-first-out (LIFO) order—the functions that are registered by `atexit` and `_onexit`, and then flushes all file buffers before it terminates the process. The `_Exit` and `_exit` functions terminate the process without destroying thread-local objects or processing `atexit` or `_onexit` functions, and without flushing stream buffers.
 
-Although the `exit`, `_Exit` and `_exit` calls do not return a value, the value in _status_ is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the _status_ value to 0 to indicate a normal exit, or to some other value to indicate an error. The _status_ value is available to the operating-system batch command `ERRORLEVEL` and is represented by one of two constants: `EXIT_SUCCESS`, which represents a value of 0, or `EXIT_FAILURE`, which represents a value of 1.
+Although the `exit`, `_Exit` and `_exit` calls do not return a value, the value in *status* is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the *status* value to 0 to indicate a normal exit, or to some other value to indicate an error. The *status* value is available to the operating-system batch command `ERRORLEVEL` and is represented by one of two constants: `EXIT_SUCCESS`, which represents a value of 0, or `EXIT_FAILURE`, which represents a value of 1.
 
 The `exit`, `_Exit`, `_exit`, `quick_exit`, `_cexit`, and `_c_exit` functions behave as follows.
 
@@ -97,7 +97,7 @@ int main( void )
 }
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../../c-runtime-library/reference/abort.md)<br/>
@@ -107,4 +107,4 @@ int main( void )
 [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
 [quick_exit](../../c-runtime-library/reference/quick-exit1.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>

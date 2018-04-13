@@ -29,7 +29,7 @@ Returns a bitmask that represents the currently available disk drives.
 
 ## Syntax
 
-```
+```C
 unsigned long _getdrives( void );
 ```
 
@@ -91,6 +91,6 @@ D:
 E:
 ```
 
-## See Also
+## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)
+[Directory Control](../../c-runtime-library/directory-control.md)<br/>

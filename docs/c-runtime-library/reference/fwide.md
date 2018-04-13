@@ -26,7 +26,7 @@ Unimplemented.
 
 ## Syntax
 
-```
+```C
 int fwide(
    FILE *stream,
    int mode;

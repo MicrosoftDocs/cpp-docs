@@ -29,7 +29,7 @@ Sets the first `n` bytes of a multibyte-character string to a specified characte
 
 ## Syntax
 
-```
+```C
 unsigned char *_mbsnbset(
    unsigned char *str,
    unsigned int c,
@@ -48,10 +48,10 @@ unsigned char *_mbsnbset_l(
 *str*
 String to be altered.
 
-`c`
+*c*
 Single-byte or multibyte-character setting.
 
-`count`
+*count*
 Number of bytes to be set.
 
 *locale*
@@ -63,11 +63,11 @@ Locale to use.
 
 ## Remarks
 
-The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first `count` bytes of *str* to `c`. If `count` is greater than the length of *str*, the length of *str* is used instead of `count`. If `c` is a multibyte character and cannot be set entirely into the last byte specified by `count`, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l` does not place a terminating null at the end of *str*.
+The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first *count* bytes of *str* to *c*. If *count* is greater than the length of *str*, the length of *str* is used instead of *count*. If *c* is a multibyte character and cannot be set entirely into the last byte specified by *count*, the last byte is padded with a blank character. `_mbsnbset` and `_mbsnbset_l` does not place a terminating null at the end of *str*.
 
-`_mbsnbset` and `_mbsnbset_l` is similar to `_mbsnset`, except that it sets `count` bytes rather than `count` characters of `c`.
+`_mbsnbset` and `_mbsnbset_l` is similar to `_mbsnset`, except that it sets *count* bytes rather than *count* characters of *c*.
 
-If *str* is `NULL` or `count` is zero, this function generates an invalid parameter exception as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if `c` is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
+If *str* is `NULL` or *count* is zero, this function generates an invalid parameter exception as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if *c* is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The `_mbsnbset` version of this function uses the current locale for this locale-dependent behavior; the `_mbsnbset_l` version is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -115,9 +115,9 @@ Before: This is a test
 After:  **** is a test
 ```
 
-## See Also
+## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)<br/>
 [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)
+[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

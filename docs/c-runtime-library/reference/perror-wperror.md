@@ -26,24 +26,23 @@ Print an error message.
 
 ## Syntax
 
-```
-
-      void perror(
-   const char *string
+```C
+void perror(
+   const char *message
 );
 void _wperror(
-   const wchar_t *string
+   const wchar_t *message
 );
 ```
 
 ### Parameters
 
-`string`
+*message*
 String message to print.
 
 ## Remarks
 
-The `perror` function prints an error message to `stderr`. `_wperror` is a wide-character version of **_perror**; the `string` argument to `_wperror` is a wide-character string. `_wperror` and **_perror** behave identically otherwise.
+The `perror` function prints an error message to `stderr`. `_wperror` is a wide-character version of **_perror**; the *message* argument to `_wperror` is a wide-character string. `_wperror` and **_perror** behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -51,7 +50,7 @@ The `perror` function prints an error message to `stderr`. `_wperror` is a wide-
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tperror`|`perror`|`perror`|`_wperror`|
 
-`string` is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If `string` is a null pointer or a pointer to a null string, `perror` prints only the system error message.
+*message* is printed first, followed by a colon, then by the system error message for the last library call that produced the error, and finally by a newline character. If *message* is a null pointer or a pointer to a null string, `perror` prints only the system error message.
 
 The error number is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (defined in ERRNO.H). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. `perror` prints the appropriate error message using the `errno` value as an index to `_sys_errlist`. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array.
 
@@ -74,7 +73,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_perror.c
 // compile with: /W3
 /* This program attempts to open a file named
@@ -114,17 +113,15 @@ int main( void )
 }
 ```
 
-## Output
-
-```
+```Output
 perror says open failed: No such file or directory
 strerror says open failed: No such file or directory
 _strerror says open failed: No such file or directory
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
 [ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)
+[strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>

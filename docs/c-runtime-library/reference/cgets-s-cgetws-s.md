@@ -29,7 +29,7 @@ Gets a character string from the console. These versions of [_cgets and _cgetws]
 
 ## Syntax
 
-```
+```C
 errno_t _cgets_s(
    char *buffer,
    size_t numberOfElements,
@@ -54,13 +54,13 @@ errno_t _cgetws_s(
 
 ### Parameters
 
-[out] *buffer*
+*buffer*
 Storage location for data.
 
-[in] *numberOfElements*
+*numberOfElements*
 The size of the buffer in single-byte or wide characters, which is also the maximum number of characters to be read.
 
-[in] *pSizeRead*
+*pSizeRead*
 The number of characters actually read.
 
 ## Return Value
@@ -98,7 +98,7 @@ In C++, the use of these functions is simplified by template overloads; the over
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)
+[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>

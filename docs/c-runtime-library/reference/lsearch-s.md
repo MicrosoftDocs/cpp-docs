@@ -26,7 +26,7 @@ Performs a linear search for a value. A version of [_lsearch](../../c-runtime-li
 
 ## Syntax
 
-```
+```C
 void *_lsearch_s(
    const void *key,
    void *base,
@@ -88,9 +88,9 @@ The *context* pointer can be useful if the searched data structure is part of an
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch_s](../../c-runtime-library/reference/bsearch-s.md)<br/>
 [_lfind_s](../../c-runtime-library/reference/lfind-s.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)
+[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>

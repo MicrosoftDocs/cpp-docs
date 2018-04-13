@@ -26,7 +26,7 @@ Retrieves the current code page.
 
 ## Syntax
 
-```
+```C
 int _getmbcp( void );
 ```
 
@@ -42,6 +42,6 @@ Returns the current multibyte code page. A return value of 0 indicates that a si
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)
+[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>

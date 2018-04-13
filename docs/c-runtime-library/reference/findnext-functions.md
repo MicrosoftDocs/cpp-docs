@@ -22,11 +22,11 @@ ms.workload: ["cplusplus"]
 ---
 # _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
-Find the next name, if any, that matches the `filespec` argument in a previous call to [_findfirst](../../c-runtime-library/reference/findfirst-functions.md), and then alter the `fileinfo` structure contents accordingly.
+Find the next name, if any, that matches the *filespec* argument in a previous call to [_findfirst](../../c-runtime-library/reference/findfirst-functions.md), and then alter the *fileinfo* structure contents accordingly.
 
 ## Syntax
 
-```
+```C
 int _findnext(
    intptr_t handle,
    struct _finddata_t *fileinfo
@@ -79,10 +79,10 @@ int _wfindnext64i32(
 
 ### Parameters
 
-`handle`
+*handle*
 Search handle returned by a previous call to `_findfirst`.
 
-`fileinfo`
+*fileinfo*
 File information buffer.
 
 ## Return Value
@@ -90,7 +90,7 @@ File information buffer.
 If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.
 
 `EINVAL`
-Invalid parameter: `fileinfo` was `NULL`. Or, the operating system returned an unexpected error.
+Invalid parameter: *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
 
 `ENOENT`
 No more matching files could be found.
@@ -157,7 +157,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)
+[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>

@@ -26,7 +26,7 @@ Determines whether an integer represents a printable character.
 
 ## Syntax
 
-```
+```C
 int isprint(
    int c
 );
@@ -45,7 +45,7 @@ int _iswprint_l(
 
 ### Parameters
 
-`c`
+*c*
 Integer to test.
 
 *locale*
@@ -53,11 +53,11 @@ The locale to use.
 
 ## Return Value
 
-Each of these routines returns nonzero if `c` is a particular representation of a printable character. `isprint` returns a nonzero value if `c` is a printable character—this includes the space character (0x20 - 0x7E). `iswprint` returns a nonzero value if `c` is a printable wide character—this includes the space wide character. Each of these routines returns 0 if `c` does not satisfy the test condition.
+Each of these routines returns nonzero if *c* is a particular representation of a printable character. `isprint` returns a nonzero value if *c* is a printable character—this includes the space character (0x20 - 0x7E). `iswprint` returns a nonzero value if *c* is a printable wide character—this includes the space wide character. Each of these routines returns 0 if *c* does not satisfy the test condition.
 
-The result of the test condition for these functions depends on the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the `_l` suffix use the current locale for any locale-dependent behavior; the versions that do have the `_l` suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The result of the test condition for these functions depends on the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions that do not have the **_l** suffix use the current locale for any locale-dependent behavior; the versions that do have the **_l** suffix are identical except that they use the locale that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-The behavior of `isprint` and `_isprint_l` is undefined if `c` is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and `c` is not one of these values, the functions raise an assertion.
+The behavior of `isprint` and `_isprint_l` is undefined if *c* is not EOF or in the range 0 through 0xFF, inclusive. When a debug CRT library is used and *c* is not one of these values, the functions raise an assertion.
 
 ### Generic-Text Routine Mappings
 
@@ -76,8 +76,8 @@ The behavior of `isprint` and `_isprint_l` is undefined if `c` is not EOF or in 
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>

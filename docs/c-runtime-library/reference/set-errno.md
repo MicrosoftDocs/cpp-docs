@@ -26,15 +26,13 @@ Set the value of the `errno` global variable.
 
 ## Syntax
 
-```
-errno_t _set_errno( 
-   int value 
-);
+```C
+errno_t _set_errno( int error_value );
 ```
 
 ### Parameters
 
-[in] `value`
+*error_value*
 The new value of `errno`.
 
 ## Return Value
@@ -47,7 +45,7 @@ Possible values are defined in Errno.h. Also, see [errno Constants](../../c-runt
 
 ## Example
 
-```
+```C
 // crt_set_errno.c
 #include <stdio.h>
 #include <errno.h>
@@ -71,7 +69,7 @@ Oops: Illegal byte sequence
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [_get_errno](../../c-runtime-library/reference/get-errno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

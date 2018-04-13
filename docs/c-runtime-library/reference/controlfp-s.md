@@ -26,7 +26,7 @@ Gets and sets the floating-point control word. This version of [_control87, _con
 
 ## Syntax
 
-```
+```C
 errno_t _controlfp_s(
     unsigned int *currentControl,
     unsigned int newControl,
@@ -165,7 +165,7 @@ Default:  0x9001f
 0.1 * 0.1 = 1.000000000000000e-002
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>

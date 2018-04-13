@@ -138,4 +138,4 @@ int main( void )
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [rand](../../c-runtime-library/reference/rand.md)<br/>
-[srand](../../c-runtime-library/reference/srand.md)
+[srand](../../c-runtime-library/reference/srand.md)<br/>

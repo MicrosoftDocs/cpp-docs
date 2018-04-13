@@ -26,7 +26,7 @@ Gets and sets the floating-point control word. A more secure version of **_contr
 
 ## Syntax
 
-```
+```C
 unsigned int _control87(
    unsigned int new,
    unsigned int mask
@@ -170,7 +170,7 @@ Default:  0x0001
 0.1 * 0.1 = 1.000000000000000e-002
 ```
 
-## See Also
+## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
