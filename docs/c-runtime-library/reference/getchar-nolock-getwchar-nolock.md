@@ -33,7 +33,7 @@ wint_t _getwchar_nolock( void );
 
 ## Return Value
 
-See [getchar, getwchar](../../c-runtime-library/reference/getchar-getwchar.md).
+See [getchar, getwchar](getchar-getwchar.md).
 
 ## Remarks
 
@@ -56,7 +56,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_getchar_nolock.c
 // Use _getchar_nolock to read a line from stdin.
 
@@ -88,8 +88,8 @@ This textInput was: This text
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>
+[ungetc, ungetwc](ungetc-ungetwc.md)<br/>

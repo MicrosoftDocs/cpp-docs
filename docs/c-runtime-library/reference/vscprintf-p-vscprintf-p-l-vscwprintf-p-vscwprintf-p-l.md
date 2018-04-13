@@ -52,7 +52,7 @@ int _vscwprintf_p _l(
 *format*
 Format-control string.
 
-`argptr`
+*argptr*
 Pointer to list of arguments.
 
 *locale*
@@ -93,10 +93,10 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
+See the example for [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
 
 ## See also
 
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](../../c-runtime-library/reference/scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)<br/>
-[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)<br/>
+[_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)<br/>
+[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)<br/>

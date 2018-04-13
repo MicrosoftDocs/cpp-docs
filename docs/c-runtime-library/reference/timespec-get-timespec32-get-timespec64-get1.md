@@ -44,7 +44,7 @@ int _timespec64_get(
 
 ### Parameters
 
-`time_spec`
+*time_spec*
 Pointer to a struct that is set to the time in seconds and nanoseconds since the start of the epoch.
 
 *base*
@@ -56,11 +56,11 @@ The value of *base* if successful, otherwise it returns zero.
 
 ## Remarks
 
-The `timespec_get` functions set the current time in the struct pointed to by the `time_spec` argument. All versions of this struct have two members, `tv_sec` and `tv_nsec`. The `tv_sec` value is set to the whole number of seconds and `tv_nsec` to the integral number of nanoseconds, rounded to the resolution of the system clock, since the start of the epoch specified by *base*.
+The `timespec_get` functions set the current time in the struct pointed to by the *time_spec* argument. All versions of this struct have two members, `tv_sec` and `tv_nsec`. The `tv_sec` value is set to the whole number of seconds and `tv_nsec` to the integral number of nanoseconds, rounded to the resolution of the system clock, since the start of the epoch specified by *base*.
 
 **Microsoft Specific**
 
-These functions support only `TIME_UTC` as the *base* value. This sets the `time_spec` value to the number of seconds and nanoseconds since the epoch start, Midnight, January 1, 1970, Coordinated Universal Time (UTC). In a `struct _timespec32`, `tv_sec` is a `__time32_t` value. In a `struct _timespec64`, `tv_sec` is a `__time64_t` value. In a `struct timespec`, `tv_sec` is a `time_t` type, which is 32 bits or 64 bits in length depending on whether the preprocessor macro  _USE_32BIT_TIME_T is defined. The `timespec_get` function is an inline function that calls `_timespec32_get` if _USE_32BIT_TIME_T is defined; otherwise it calls `_timespec64_get`.
+These functions support only `TIME_UTC` as the *base* value. This sets the *time_spec* value to the number of seconds and nanoseconds since the epoch start, Midnight, January 1, 1970, Coordinated Universal Time (UTC). In a `struct _timespec32`, `tv_sec` is a `__time32_t` value. In a `struct _timespec64`, `tv_sec` is a `__time64_t` value. In a `struct timespec`, `tv_sec` is a `time_t` type, which is 32 bits or 64 bits in length depending on whether the preprocessor macro  _USE_32BIT_TIME_T is defined. The `timespec_get` function is an inline function that calls `_timespec32_get` if _USE_32BIT_TIME_T is defined; otherwise it calls `_timespec64_get`.
 
 **End Microsoft Specific**
 
@@ -75,12 +75,12 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](utime-utime32-utime64-wutime-wutime32-wutime64.md)<br/>

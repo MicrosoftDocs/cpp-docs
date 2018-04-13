@@ -63,8 +63,8 @@ The behavior of `isupper` and `_isupper_l` is undefined if *c* is not EOF or in 
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istupper`|`isupper`|[_ismbcupper](../../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|`iswupper`|
-|`_istupper_l`|`_isupper_l`|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](../../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|`_iswupper_l`|
+|`_istupper`|`isupper`|[_ismbcupper](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|`iswupper`|
+|`_istupper_l`|`_isupper_l`|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|`_iswupper_l`|
 
 ## Requirements
 

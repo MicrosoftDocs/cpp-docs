@@ -100,7 +100,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_locking.c
 /* This program opens a file with sharing. It locks
 * some bytes before reading them, then unlocks them. Note that the
@@ -149,15 +149,15 @@ int main( void )
 }
 ```
 
-## Input: crt_locking.txt
+### Input: crt_locking.txt
 
-```
+```Input
 The first thirty bytes of this file will be locked.
 ```
 
 ## Sample Output
 
-```
+```Output
 No one can change these bytes while I'm reading them
 30 bytes read: The first thirty bytes of this
 Now I'm done. Do what you will with them
@@ -166,5 +166,5 @@ Now I'm done. Do what you will with them
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

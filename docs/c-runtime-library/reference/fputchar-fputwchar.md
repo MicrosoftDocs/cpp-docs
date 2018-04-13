@@ -67,7 +67,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_fputchar.c
 // This program uses _fputchar
 // to send a character array to stdout.
@@ -93,5 +93,5 @@ This is a test of _fputchar!!
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>

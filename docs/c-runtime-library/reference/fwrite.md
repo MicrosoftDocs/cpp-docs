@@ -71,12 +71,12 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [fread](../../c-runtime-library/reference/fread.md).
+See the example for [fread](fread.md).
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[fread](../../c-runtime-library/reference/fread.md)<br/>
-[_fwrite_nolock](../../c-runtime-library/reference/fwrite-nolock.md)<br/>
-[_write](../../c-runtime-library/reference/write.md)<br/>
+[_setmode](setmode.md)<br/>
+[fread](fread.md)<br/>
+[_fwrite_nolock](fwrite-nolock.md)<br/>
+[_write](write.md)<br/>

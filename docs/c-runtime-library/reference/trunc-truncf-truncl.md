@@ -54,7 +54,7 @@ Otherwise, may return one of the following:
 |*x* =  ±0|x|
 |*x* = NaN|NaN|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -74,7 +74,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
-[ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
-[round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
+[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
+[round, roundf, roundl](round-roundf-roundl.md)<br/>

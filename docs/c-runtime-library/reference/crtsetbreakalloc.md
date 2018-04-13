@@ -63,7 +63,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-```
+```C
 // crt_setbrkal.c
 // compile with: -D_DEBUG /MTd -Od -Zi -W3 /c /link -verbose:lib -debug
 

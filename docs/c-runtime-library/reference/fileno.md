@@ -60,7 +60,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_fileno.c
 // This program uses _fileno to obtain
 // the file descriptor for some standard C streams.
@@ -85,7 +85,7 @@ The file descriptor for stderr is 2
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[_filelength, _filelengthi64](../../c-runtime-library/reference/filelength-filelengthi64.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
+[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
+[_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[freopen, _wfreopen](freopen-wfreopen.md)<br/>

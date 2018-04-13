@@ -66,5 +66,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fetestexcept](fetestexcept1.md)<br/>

@@ -70,7 +70,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-Each *argument* (if any) is converted according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
+Each *argument* (if any) is converted according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -96,5 +96,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
-[_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](../../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>
+[_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
+[_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _mbccpy_s, _mbccpy_s_l
 
-Copies one multibyte character from a string to another string. These versions of [_mbccpy, _mbccpy_l](../../c-runtime-library/reference/mbccpy-mbccpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copies one multibyte character from a string to another string. These versions of [_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -81,7 +81,7 @@ Zero if successful; an error code on failure. If *src* or *dest* is `NULL`, or i
 
 ## Remarks
 
-The `_mbccpy_s` function copies one multibyte character from *src* to *dest*. If *src* does not point to the lead byte of a multibyte character as determined by an implicit call to [_ismbblead](../../c-runtime-library/reference/ismbblead-ismbblead-l.md), then the single byte that *src* points to is copied. If *src* points to a lead byte but the following byte is 0 and thus invalid, then 0 is copied to *dest*, `errno` is set to `EILSEQ`, and the function returns `EILSEQ`.
+The `_mbccpy_s` function copies one multibyte character from *src* to *dest*. If *src* does not point to the lead byte of a multibyte character as determined by an implicit call to [_ismbblead](ismbblead-ismbblead-l.md), then the single byte that *src* points to is copied. If *src* points to a lead byte but the following byte is 0 and thus invalid, then 0 is copied to *dest*, `errno` is set to `EILSEQ`, and the function returns `EILSEQ`.
 
 `_mbccpy_s` does not append a null terminator; however, if *src* points to a null character, then that null is copied to *dest* (this is just a regular single-byte copy).
 
@@ -119,4 +119,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

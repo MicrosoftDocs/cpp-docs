@@ -51,26 +51,26 @@ unsigned char *_mbsdec_l(
 
 ### Parameters
 
-`start`
-Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `start` must precede `current` in the source string.
+*start*
+Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; *start* must precede *current* in the source string.
 
-`current`
-Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; `current` must follow `start` in the source string.
+*current*
+Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; *current* must follow *start* in the source string.
 
 *locale*
 Locale to use.
 
 ## Return Value
 
-`_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes `current`; `_mbsdec` returns `NULL` if the value of `start` is greater than or equal to that of `current`. `_tcsdec` maps to one of these functions and its return value depends on the mapping.
+`_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes *current*; `_mbsdec` returns `NULL` if the value of *start* is greater than or equal to that of *current*. `_tcsdec` maps to one of these functions and its return value depends on the mapping.
 
 ## Remarks
 
-The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes `current` in the string that contains `start`.
+The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes *current* in the string that contains *start*.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If `start` or `current` is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
+If *start* or *current* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
 
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
@@ -100,9 +100,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 The following example shows a use of `_tcsdec`.
 
-```
-
-      #include <iostream>
+```cpp
+// crt_tcsdec.cpp
+// Compile by using: cl /EHsc crt_tcsdec.cpp
+#include <iostream>
 #include <tchar.h>
 using namespace std;
 
@@ -121,12 +122,13 @@ int main()
 
    return (0);
 }
-
 ```
 
 The following example shows a use of `_mbsdec`.
 
-```
+```cpp
+// crt_mbsdec.cpp
+// Compile by using: cl /EHsc crt_mbsdec.c
 #include <iostream>
 #include <mbstring.h>
 using namespace std;
@@ -147,12 +149,11 @@ int main()
 
    return (0);
 }
-
 ```
 
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_strinc, _wcsinc, _mbsinc, _mbsinc_l](../../c-runtime-library/reference/strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
-[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](../../c-runtime-library/reference/strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>
-[_strninc, _wcsninc, _mbsninc, _mbsninc_l](../../c-runtime-library/reference/strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>
+[_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
+[_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l](strnextc-wcsnextc-mbsnextc-mbsnextc-l.md)<br/>
+[_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>

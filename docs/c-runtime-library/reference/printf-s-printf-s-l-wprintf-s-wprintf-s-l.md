@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 
-Prints formatted output to the standard output stream. These versions of [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Prints formatted output to the standard output stream. These versions of [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -70,7 +70,7 @@ The main difference between `printf_s` and `printf` is that `printf_s` checks th
 
 For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-`printf_s` and `fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+`printf_s` and `fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
 `wprintf_s` is a wide-character version of `printf_s`; *format* is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.
 
@@ -85,13 +85,13 @@ The versions of these functions with the **_l** suffix are identical except that
 
 The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line
 
-```
+```C
 printf_s("Line one\n\t\tLine two\n");
 ```
 
 produces the output
 
-```
+```Output
 Line one
         Line two
 ```
@@ -99,7 +99,7 @@ Line one
 [Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (`%`) and are read left to right. When `printf_s` encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
 
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string.
+> Ensure that *format* is not a user-defined string.
 
 ## Requirements
 
@@ -112,7 +112,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_printf_s.c
 /* This program uses the printf_s and wprintf_s functions
 * to produce formatted output.
@@ -160,9 +160,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Integer formats:
    Decimal: -9234  Justified: -009234  Unsigned: 4294958062
 Decimal -9234 as:
@@ -193,8 +193,8 @@ Address as:   0012FF78
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

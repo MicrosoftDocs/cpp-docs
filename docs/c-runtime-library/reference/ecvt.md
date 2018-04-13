@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _ecvt
 
-Converts a **double** number to a string. A more secure version of this function is available; see [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md).
+Converts a **double** number to a string. A more secure version of this function is available; see [_ecvt_s](ecvt-s.md).
 
 ## Syntax
 
@@ -108,6 +108,6 @@ source: 3.1415926535   buffer: '3141592654'  decimal: 1  sign: 0
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
-[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
-[_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[_fcvt](fcvt.md)<br/>
+[_gcvt](gcvt.md)<br/>

@@ -94,5 +94,5 @@ Status: 80000 - denormal
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>
-[_status87, _statusfp, _statusfp2](../../c-runtime-library/reference/status87-statusfp-statusfp2.md)<br/>
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>

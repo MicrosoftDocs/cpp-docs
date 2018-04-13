@@ -55,14 +55,14 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See the example for [_chsize](../../c-runtime-library/reference/chsize.md).
+See the example for [_chsize](chsize.md).
 
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chsize](../../c-runtime-library/reference/chsize.md)<br/>
-[_fileno](../../c-runtime-library/reference/fileno.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
+[_chsize](chsize.md)<br/>
+[_fileno](fileno.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>

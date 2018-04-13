@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # getcwd
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_getcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_getcwd](getcwd-wgetcwd.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

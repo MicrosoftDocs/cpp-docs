@@ -42,7 +42,7 @@ If a read follows a call to `_flushall`, new data is read from the input files i
 
 The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with Commode.obj. In the resulting executable file, calls to `_flushall` write the contents of all buffers to disk. Only `_flushall` and `fflush` are affected by Commode.obj.
 
-For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](../../c-runtime-library/reference/fopen-wfopen.md), and [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md).
+For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
 
 ## Requirements
 
@@ -54,7 +54,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_flushall.c
 // This program uses _flushall
 // to flush all open buffers.
@@ -77,7 +77,7 @@ There were 3 streams flushed
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_commit](../../c-runtime-library/reference/commit.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[fflush](../../c-runtime-library/reference/fflush.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>
+[_commit](commit.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[fflush](fflush.md)<br/>
+[setvbuf](setvbuf.md)<br/>

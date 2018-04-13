@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # wctomb, _wctomb_l
 
-Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md).
+Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
 
 ## Syntax
 
@@ -68,7 +68,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 This program illustrates the behavior of the wctomb function.
 
-```
+```cpp
 // crt_wctomb.cpp
 // compile with: /W3
 #include <stdio.h>
@@ -98,8 +98,8 @@ Convert a wide character:
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
 [WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

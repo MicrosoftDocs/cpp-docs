@@ -53,7 +53,7 @@ Read/write accessibility to determine for the memory range.
 
 Starting with the CRT library in Visual Studio 2010, the *size* and *access* parameters are ignored, and `_CrtIsValidPointer` only verifies that the specified *address* is not null. Because this test is easy to perform yourself, we do not recommend you use this function. In versions before Visual Studio 2010, the function verifies that the memory range beginning at *address* and extending for *size* bytes is valid for the specified accessibility operation or operations. When *access* is set to TRUE, the memory range is verified for both reading and writing. When *access* is FALSE, the memory range is only validated for reading. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsValidPointer` are removed during preprocessing.
 
-Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the memory range is not valid for both reading and writing operations:
+Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the memory range is not valid for both reading and writing operations:
 
 ```C
 _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );
@@ -75,7 +75,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.
+See the example for the [_CrtIsValidHeapPointer](crtisvalidheappointer.md) topic.
 
 ## See also
 

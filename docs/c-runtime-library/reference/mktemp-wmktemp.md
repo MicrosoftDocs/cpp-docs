@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _mktemp, _wmktemp
 
-Creates a unique file name. More secure versions of these functions are available; see [_mktemp_s, _wmktemp_s](../../c-runtime-library/reference/mktemp-s-wmktemp-s.md).
+Creates a unique file name. More secure versions of these functions are available; see [_mktemp_s, _wmktemp_s](mktemp-s-wmktemp-s.md).
 
 ## Syntax
 
@@ -97,7 +97,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_mktemp.c
 // compile with: /W3
 /* The program uses _mktemp to create
@@ -184,10 +184,10 @@ Out of unique filenames.
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_getpid](../../c-runtime-library/reference/getpid.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[tmpfile](../../c-runtime-library/reference/tmpfile.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_getpid](getpid.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[tmpfile](tmpfile.md)<br/>

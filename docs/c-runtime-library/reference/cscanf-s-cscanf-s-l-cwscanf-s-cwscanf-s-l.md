@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
-Reads formatted data from the console. These more secure versions of [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from the console. These more secure versions of [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -69,7 +69,7 @@ These functions validate their parameters. If *format* is a null pointer, these 
 
 ## Remarks
 
-The `_cscanf_s` function reads data directly from the console into the locations given by *argument*. The [_getche](../../c-runtime-library/reference/getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf_s](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf_s` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
+The `_cscanf_s` function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf_s` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
 
 Like other secure versions of functions in the `scanf` family, `_cscanf_s` and `_cswscanf_s` require size arguments for the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
@@ -100,7 +100,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_cscanf_s.c
 // compile with: /c
 /* This program prompts for a string
@@ -125,22 +125,18 @@ int main( void )
 }
 ```
 
-## Input
-
-```
+```Input
 1 2 3
 ```
 
-## Output
-
-```
+```Output
 You entered 1 2 3
 ```
 
 ## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)<br/>
+[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
+[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>

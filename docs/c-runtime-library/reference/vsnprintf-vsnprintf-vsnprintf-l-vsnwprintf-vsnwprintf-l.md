@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
-Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).
+Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).
 
 ## Syntax
 
@@ -109,7 +109,7 @@ Maximum number of characters to write.
 *format*
 Format specification.
 
-`argptr`
+*argptr*
 Pointer to list of arguments.
 
 *locale*
@@ -119,7 +119,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by *count* is not sufficiently large to contain the output specified by *format* and `argptr`, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if *count* were sufficiently large. If the return value is greater than *count* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+The `vsnprintf` function returns the number of characters written, not counting the terminating null character. If the buffer size specified by *count* is not sufficiently large to contain the output specified by *format* and *argptr*, the return value of `vsnprintf` is the number of characters that would be written, not counting the null character, if *count* were sufficiently large. If the return value is greater than *count* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
 
 Both `_vsnprintf` and `_vsnwprintf` functions return the number of characters written if the number of characters to write is less than or equal to *count*; if the number of characters to write is greater than *count*, these functions return -1 indicating that output has been truncated.
 
@@ -244,7 +244,7 @@ nSize: 10, buff: Hi there!
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
 [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

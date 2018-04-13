@@ -21,7 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
-Writes formatted data to a string. More secure versions of these functions are available; see [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](../../c-runtime-library/reference/snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
+Writes formatted data to a string. More secure versions of these functions are available; see [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
 
 ## Syntax
 
@@ -91,6 +91,7 @@ int _snwprintf_l(
 ```
 
 ### Parameters
+
 *buffer*
 Storage location for the output.
 
@@ -109,6 +110,7 @@ The locale to use.
 For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
+
 Let `len` be the length of the formatted data string, not including the terminating null. Both `len` and *count* are in bytes for `snprintf` and `_snprintf`, wide characters for `_snwprintf`.
 
 For all functions, if `len` < *count*, `len` characters are stored in *buffer*, a null-terminator is appended, and `len` is returned.
@@ -124,7 +126,8 @@ If *buffer* is a null pointer and *count* is nonzero, or if *format* is a null p
 For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
-The `snprintf` function and the `_snprintf` family of functions format and store *count* or fewer characters in *buffer*. The `snprintf` function always stores a terminating null character, truncating the output if necessary. The `_snprintf` family of functions only appends a terminating null character if the formatted string length is strictly less than *count* characters. Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
+
+The `snprintf` function and the `_snprintf` family of functions format and store *count* or fewer characters in *buffer*. The `snprintf` function always stores a terminating null character, truncating the output if necessary. The `_snprintf` family of functions only appends a terminating null character if the formatted string length is strictly less than *count* characters. Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. Because the `_snprintf` functions do not guarantee NULL termination—in particular, when the return value is *count*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
@@ -267,10 +270,11 @@ character count = 69
 ```
 
 ## See also
+
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

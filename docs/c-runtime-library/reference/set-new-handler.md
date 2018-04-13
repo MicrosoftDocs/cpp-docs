@@ -26,10 +26,8 @@ Transfers control to your error-handling mechanism if the `new` operator fails t
 
 ## Syntax
 
-```C
-_PNH _set_new_handler(
-   _PNH pNewHandler
-);
+```cpp
+_PNH _set_new_handler( _PNH pNewHandler );
 ```
 
 ### Parameters
@@ -51,12 +49,15 @@ There is no default handler.
 
 An occurrence of the `_set_new_handler` function in a program registers the exception-handling function specified in the argument list with the run-time system:
 
-```
+```cpp
+// set_new_handler1.cpp
 #include <new.h>
+
 int handle_program_memory_depletion( size_t )
 {
    // Your code
 }
+
 int main( void )
 {
    _set_new_handler( handle_program_memory_depletion );
@@ -66,17 +67,19 @@ int main( void )
 
 You can save the function address that was last passed to the `_set_new_handler` function and reinstate it later:
 
-```
-_PNH old_handler = _set_new_handler( my_handler );
+```cpp
+   _PNH old_handler = _set_new_handler( my_handler );
    // Code that requires my_handler
+   // . . .
    _set_new_handler( old_handler )
    // Code that requires old_handler
+   // . . .
 ```
 
-The C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function sets the new handler mode for [malloc](../../c-runtime-library/reference/malloc.md). The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by `_set_new_handler`. By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `malloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call:
+The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by `_set_new_handler`. By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `malloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call:
 
-```
-_set_new_mode(1)
+```cpp
+_set_new_mode(1);
 ```
 
 early in your program or link with Newmode.obj.
@@ -99,7 +102,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 In this example, when the allocation fails, control is transferred to MyNewHandler. The argument passed to MyNewHandler is the number of bytes requested. The value returned from MyNewHandler is a flag indicating whether allocation should be retried: a nonzero value indicates that allocation should be retried, and a zero value indicates that allocation has failed.
 
-```
+```cpp
 // crt_set_new_handler.cpp
 // compile with: /c
 #include <stdio.h>
@@ -148,6 +151,6 @@ Please contact the application's support team for more information.
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[free](../../c-runtime-library/reference/free.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)<br/>
+[calloc](calloc.md)<br/>
+[free](free.md)<br/>
+[realloc](realloc.md)<br/>

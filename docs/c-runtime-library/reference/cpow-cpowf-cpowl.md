@@ -70,7 +70,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)<br/>
-[clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
+[clog, clogf, clogl](clog-clogf-clogl.md)<br/>

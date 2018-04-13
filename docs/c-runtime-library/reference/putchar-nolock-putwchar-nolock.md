@@ -70,7 +70,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_putchar_nolock.c
 /* This program uses putchar to write buffer
 * to stdout. If an error occurs, the program
@@ -92,14 +92,14 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 This is the line of output
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>

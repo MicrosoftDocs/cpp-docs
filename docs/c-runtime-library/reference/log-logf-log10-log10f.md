@@ -53,7 +53,7 @@ The **log** functions return the natural logarithm (base *e*) of *x* if successf
 |± 0|ZERODIVIDE|_SING|
 |*x* < 0|INVALID|_DOMAIN|
 
-**log** and **log10** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
+**log** and **log10** have an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 ## Remarks
 
@@ -125,8 +125,8 @@ Log base 2 of 65536.000000 is 16.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md) <br/>
-[_matherr](../../c-runtime-library/reference/matherr.md) <br/>
-[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md) <br/>
+[exp, expf, expl](exp-expf.md) <br/>
+[_matherr](matherr.md) <br/>
+[pow, powf, powl](pow-powf-powl.md) <br/>
 [_CIlog](../../c-runtime-library/cilog.md) <br/>
 [_CIlog10](../../c-runtime-library/cilog10.md)<br/>

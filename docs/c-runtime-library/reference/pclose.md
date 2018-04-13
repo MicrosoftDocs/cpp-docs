@@ -48,7 +48,7 @@ For information about these and other error codes, see [_doserrno, errno, _sys_e
 
 ## Remarks
 
-The `_pclose` function looks up the process ID of the command processor (Cmd.exe) started by the associated `_popen` call, executes a [_cwait](../../c-runtime-library/reference/cwait.md) call on the new command processor, and closes the stream on the associated pipe.
+The `_pclose` function looks up the process ID of the command processor (Cmd.exe) started by the associated `_popen` call, executes a [_cwait](cwait.md) call on the new command processor, and closes the stream on the associated pipe.
 
 ## Requirements
 
@@ -65,5 +65,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pipe](../../c-runtime-library/reference/pipe.md)<br/>
-[_popen, _wpopen](../../c-runtime-library/reference/popen-wpopen.md)<br/>
+[_pipe](pipe.md)<br/>
+[_popen, _wpopen](popen-wpopen.md)<br/>

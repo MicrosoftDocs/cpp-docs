@@ -56,7 +56,7 @@ Floating-point values.
 
 ## Return Value
 
-**fmod** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **fmod** returns a quiet NaN. For information about representation of a quiet NaN by the **printf** family, see [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
+**fmod** returns the floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **fmod** returns a quiet NaN. For information about representation of a quiet NaN by the **printf** family, see [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
@@ -97,7 +97,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)<br/>
-[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
-[floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
+[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
 [_CIfmod](../../c-runtime-library/cifmod.md)<br/>

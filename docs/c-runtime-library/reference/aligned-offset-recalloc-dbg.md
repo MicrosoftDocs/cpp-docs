@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_recalloc_dbg
 
-Changes the size of a memory block that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).
+Changes the size of a memory block that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).
 
 ## Syntax
 
@@ -67,7 +67,7 @@ Line number in the source file where the `realloc` operation was requested or NU
 
 ## Remarks
 
-`_aligned_offset_realloc_dbg` is a debug version of the [_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_offset_recalloc_dbg` is reduced to a call to `_aligned_offset_recalloc`. Both `_aligned_offset_recalloc` and `_aligned_offset_recalloc_dbg` reallocate a memory block in the base heap, but `_aligned_offset_recalloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+`_aligned_offset_realloc_dbg` is a debug version of the [_aligned_offset_recalloc](aligned-offset-recalloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_offset_recalloc_dbg` is reduced to a call to `_aligned_offset_recalloc`. Both `_aligned_offset_recalloc` and `_aligned_offset_recalloc_dbg` reallocate a memory block in the base heap, but `_aligned_offset_recalloc_dbg` accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
 `_aligned_offset_realloc_dbg` reallocates the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 

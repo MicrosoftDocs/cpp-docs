@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # wcrtomb
 
-Convert a wide character into its multibyte character representation. A more secure version of this function is available; see [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md).
+Convert a wide character into its multibyte character representation. A more secure version of this function is available; see [wcrtomb_s](wcrtomb-s.md).
 
 ## Syntax
 
@@ -61,7 +61,7 @@ The `wcrtomb` function converts a wide character, beginning in the specified con
 
 If *mbstate* is null, the internal `mbstate_t` object containing the conversion state of *mbchar* is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the `errno` is set to `EILSEQ`.
 
-The `wcrtomb` function differs from [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
+The `wcrtomb` function differs from [wctomb, _wctomb_l](wctomb-wctomb-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
 
 In C++, this function has a template overload that invokes the newer, secure counterparts of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -71,7 +71,7 @@ The `wcrtomb` function is multithread safe as long as no function in the current
 
 ## Example
 
-```
+```C
 // crt_wcrtomb.c
 // compile with: /W3
 // This program converts a wide character
@@ -123,4 +123,4 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>
+[mbsinit](mbsinit.md)<br/>

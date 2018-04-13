@@ -66,7 +66,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See [_getmaxstdio](../../c-runtime-library/reference/getmaxstdio.md) for an example of using `_setmaxstdio`.
+See [_getmaxstdio](getmaxstdio.md) for an example of using `_setmaxstdio`.
 
 ## See also
 

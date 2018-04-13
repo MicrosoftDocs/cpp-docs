@@ -84,6 +84,6 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
-[_cabs](../../c-runtime-library/reference/cabs.md)<br/>
-[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
+[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
+[_cabs](cabs.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>

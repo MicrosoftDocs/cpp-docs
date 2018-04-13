@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # rmdir
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_rmdir](../../c-runtime-library/reference/rmdir-wrmdir.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_rmdir](rmdir-wrmdir.md) instead.

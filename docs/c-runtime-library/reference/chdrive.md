@@ -62,15 +62,15 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 ## Example
 
-See the example for [_getdrive](../../c-runtime-library/reference/getdrive.md).
+See the example for [_getdrive](getdrive.md).
 
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdrive](../../c-runtime-library/reference/getdrive.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
+[_getdrive](getdrive.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+[system, _wsystem](system-wsystem.md)<br/>

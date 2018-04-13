@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # clearerr
 
-Resets the error indicator for a stream. A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).
+Resets the error indicator for a stream. A more secure version of this function is available; see [clearerr_s](clearerr-s.md).
 
 ## Syntax
 
@@ -39,11 +39,11 @@ Pointer to `FILE` structure.
 
 ## Remarks
 
-The `clearerr` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
+The `clearerr` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr`, [fseek](fseek-fseeki64.md), `fsetpos`, or `rewind` is called.
 
 If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns. For more information on `errno` and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
-A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).
+A more secure version of this function is available; see [clearerr_s](clearerr-s.md).
 
 ## Requirements
 
@@ -55,7 +55,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_clearerr.c
 // This program creates an error
 // on the standard input stream, then clears
@@ -104,7 +104,7 @@ No read error
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_eof](../../c-runtime-library/reference/eof.md)<br/>
-[feof](../../c-runtime-library/reference/feof.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[_eof](eof.md)<br/>
+[feof](feof.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

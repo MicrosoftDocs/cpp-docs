@@ -69,7 +69,7 @@ The *func* argument is an address to a signal handler that you write, or to one 
 
 If you are testing for floating-point exceptions (**SIGFPE**), *func* points to a function that takes an optional second argument that is one of several manifest constants, defined in FLOAT.H, of the form **FPE_xxx**. When a **SIGFPE** signal occurs, you can test the value of the second argument to determine the kind of floating-point exception and then take appropriate action. This argument and its possible values are Microsoft extensions.
 
-For floating-point exceptions, the value of *func* is not reset when the signal is received. To recover from floating-point exceptions, use try/except clauses to surround the floating point operations. It's also possible to recover by using [setjmp](../../c-runtime-library/reference/setjmp.md) with [longjmp](../../c-runtime-library/reference/longjmp.md). In either case, the calling process resumes execution and leaves the floating-point state of the process undefined.
+For floating-point exceptions, the value of *func* is not reset when the signal is received. To recover from floating-point exceptions, use try/except clauses to surround the floating point operations. It's also possible to recover by using [setjmp](setjmp.md) with [longjmp](longjmp.md). In either case, the calling process resumes execution and leaves the floating-point state of the process undefined.
 
 If the signal handler returns, the calling process resumes execution immediately following the point at which it received the interrupt signal. This is true regardless of the kind of signal or operating mode.
 
@@ -79,7 +79,7 @@ Because signal-handler routines are usually called asynchronously when an interr
 
 - Do not issue low-level or STDIO.H I/O routines (for example, **printf** or **fread**).
 
-- Do not call heap routines or any routine that uses the heap routines (for example, **malloc**, **_strdup**, or **_putenv**). See [malloc](../../c-runtime-library/reference/malloc.md) for more information.
+- Do not call heap routines or any routine that uses the heap routines (for example, **malloc**, **_strdup**, or **_putenv**). See [malloc](malloc.md) for more information.
 
 - Do not use any function that generates a system call (for example, **_getcwd** or **time**).
 
@@ -91,7 +91,7 @@ A program must contain floating-point code if it is to trap the **SIGFPE** excep
 
 `volatile double d = 0.0f;`
 
-The **SIGILL** and **SIGTERM** signals are not generated under Windows. They are included for ANSI compatibility. Therefore, you can set signal handlers for these signals by using **signal**, and you can also explicitly generate these signals by calling [raise](../../c-runtime-library/reference/raise.md).
+The **SIGILL** and **SIGTERM** signals are not generated under Windows. They are included for ANSI compatibility. Therefore, you can set signal handlers for these signals by using **signal**, and you can also explicitly generate these signals by calling [raise](raise.md).
 
 Signal settings are not preserved in spawned processes that are created by calls to [_exec](../../c-runtime-library/exec-wexec-functions.md) or [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) functions. The signal settings are reset to the default values in the new process.
 
@@ -105,7 +105,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-The following example shows how to use **signal** to add some custom behavior to the **SIGABRT** signal. For additional information about abort behavior, see [_set_abort_behavior](../../c-runtime-library/reference/set-abort-behavior.md).
+The following example shows how to use **signal** to add some custom behavior to the **SIGABRT** signal. For additional information about abort behavior, see [_set_abort_behavior](set-abort-behavior.md).
 
 ```C
 // crt_signal.c
@@ -143,8 +143,8 @@ Please contact the application's support team for more information.
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
+[abort](abort.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_fpreset](../../c-runtime-library/reference/fpreset.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[_fpreset](fpreset.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>

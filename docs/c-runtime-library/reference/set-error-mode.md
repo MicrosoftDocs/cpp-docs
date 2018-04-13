@@ -59,7 +59,7 @@ The *mode_val* parameter can be set to one of the following values.
 
 If a value other than those listed is passed in, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_set_error_mode` sets `errno` to `EINVAL` and returns -1.
 
-When it's used with an [assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md), `_set_error_mode` displays the failed statement in the dialog box and gives you the option of choosing the `Ignore` button so that you can continue to run the program.
+When it's used with an [assert](assert-macro-assert-wassert.md), `_set_error_mode` displays the failed statement in the dialog box and gives you the option of choosing the `Ignore` button so that you can continue to run the program.
 
 ## Requirements
 
@@ -91,4 +91,4 @@ Please contact the application's support team for more information.
 
 ## See also
 
-[assert Macro, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
+[assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)<br/>

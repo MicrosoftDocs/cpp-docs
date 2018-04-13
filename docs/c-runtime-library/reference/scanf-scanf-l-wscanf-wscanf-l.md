@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # scanf, _scanf_l, wscanf, _wscanf_l
 
-Reads formatted data from the standard input stream. More secure versions of these function are available; see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+Reads formatted data from the standard input stream. More secure versions of these function are available; see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
 ## Syntax
 
@@ -71,7 +71,7 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 The `scanf` function reads data from the standard input stream `stdin` and writes the data into the location given by *argument*. Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  When reading a string with `scanf`, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) or [fgets](../../c-runtime-library/reference/fgets-fgetws.md).
+>  When reading a string with `scanf`, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, improperly formatted input can easily cause a buffer overrun. Alternately, consider using [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) or [fgets](fgets-fgetws.md).
 
 `wscanf` is a wide-character version of `scanf`; the *format* argument to `wscanf` is a wide-character string. `wscanf` and `scanf` behave identically if the stream is opened in ANSI mode. `scanf` doesn't currently support input from a UNICODE stream.
 
@@ -138,7 +138,7 @@ The contents are: 36 92.300003 y n Wide characters
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

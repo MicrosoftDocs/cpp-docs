@@ -60,19 +60,17 @@ The `_fullpath` function expands the relative path name in *relPath* to its full
 
 For example, to use C run-time routines, the application must include the header files that contain the declarations for the routines. Each header file include statement references the location of the file in a relative manner (from the application's working directory):
 
-```
+```C
 #include <stdlib.h>
 ```
 
 when the absolute path (actual file system location) of the file might be:
 
-```
-\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h
-```
+`\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
 `_fullpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wfullpath` is a wide-character version of `_fullpath`; the string arguments to `_wfullpath` are wide-character strings. `_wfullpath` and `_fullpath` behave identically except that `_wfullpath` does not handle multibyte-character strings.
 
-If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](../../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md).
+If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
 
 This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
 
@@ -82,7 +80,7 @@ This function invokes the invalid parameter handler, as described in [Parameter 
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tfullpath`|`_fullpath`|`_fullpath`|`_wfullpath`|
 
-If the *absPath* buffer is `NULL`, `_fullpath` calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](../../c-runtime-library/reference/free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
+If the *absPath* buffer is `NULL`, `_fullpath` calls [malloc](malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
 
 ## Requirements
 
@@ -95,7 +93,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_fullpath.c
 // This program demonstrates how _fullpath
 // creates a full path from a partial path.
@@ -131,7 +129,7 @@ Full path is: C:\Documents and Settings\user\test
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)<br/>
-[_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
-[_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
+[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
+[_makepath, _wmakepath](makepath-wmakepath.md)<br/>
+[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>

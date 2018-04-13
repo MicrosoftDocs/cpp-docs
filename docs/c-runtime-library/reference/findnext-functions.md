@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
-Find the next name, if any, that matches the *filespec* argument in a previous call to [_findfirst](../../c-runtime-library/reference/findfirst-functions.md), and then alter the *fileinfo* structure contents accordingly.
+Find the next name, if any, that matches the *filespec* argument in a previous call to [_findfirst](findfirst-functions.md), and then alter the *fileinfo* structure contents accordingly.
 
 ## Syntax
 
@@ -89,20 +89,17 @@ File information buffer.
 
 If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.
 
-`EINVAL`
-Invalid parameter: *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
-
-`ENOENT`
-No more matching files could be found.
-
-`ENOMEM`
-Not enough memory or the file name's length exceeded `MAX_PATH`.
+|errno value|Condition|
+|-|-|
+`EINVAL`|Invalid parameter: *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
+`ENOENT`|No more matching files could be found.
+`ENOMEM`|Not enough memory or the file name's length exceeded `MAX_PATH`.
 
 If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## Remarks
 
-You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished using either the `_findfirst` or `_findnext` function (or any variants). This frees up resources used by these functions in your application.
+You must call [_findclose](findclose.md) after you are finished using either the `_findfirst` or `_findnext` function (or any variants). This frees up resources used by these functions in your application.
 
 The variations of these functions with the `w` prefix are wide-character versions; otherwise, they are identical to the corresponding single-byte functions.
 

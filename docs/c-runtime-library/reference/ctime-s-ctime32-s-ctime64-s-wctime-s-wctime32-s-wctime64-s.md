@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
-Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -117,15 +117,13 @@ Zero if successful. If there is a failure due to an invalid parameter, the inval
 
 ## Remarks
 
-The **ctime_s** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The *sourceTime* value is usually obtained from a call to [time](../../c-runtime-library/reference/time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
+The **ctime_s** function converts a time value stored as a [time_t](../../c-runtime-library/standard-types.md) structure into a character string. The *sourceTime* value is usually obtained from a call to [time](time-time32-time64.md), which returns the number of seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC). The return value string contains exactly 26 characters and has the form:
 
-```
-Wed Jan 02 02:03:55 1980\n\0
-```
+`Wed Jan 02 02:03:55 1980\n\0`
 
 A 24-hour clock is used. All fields have a constant width. The new line character ('\n') and the null character ('\0') occupy the last two positions of the string.
 
-The converted character string is also adjusted according to the local time zone settings. See the [time](../../c-runtime-library/reference/time-time32-time64.md), [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime32_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](../../c-runtime-library/reference/tzset.md) function for information about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. See the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
 
 **_wctime32_s** and **_wctime64_s** are the wide-character version of **_ctime32_s** and **_ctime64_s**; returning a pointer to wide-character string. Otherwise, **_ctime64_s**, **_wctime32_s**, and **_wctime64_s** behave identically to **_ctime32_s**.
 
@@ -191,9 +189,9 @@ The time is Fri Apr 25 13:03:39 2003
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

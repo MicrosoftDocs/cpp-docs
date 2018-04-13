@@ -126,6 +126,6 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_cabs](../../c-runtime-library/reference/cabs.md)<br/>
-[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)<br/>
-[imaxabs](../../c-runtime-library/reference/imaxabs.md)<br/>
+[_cabs](cabs.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[imaxabs](imaxabs.md)<br/>

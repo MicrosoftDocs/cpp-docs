@@ -71,7 +71,7 @@ The `strcmp` function performs an ordinal comparison of *string1* and *string2* 
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcscmp`|`strcmp`|`_mbscmp`|`wcscmp`|
 
-The `strcmp` functions differ from the `strcoll` functions in that `strcmp` comparisons are ordinal, and are not affected by locale. `strcoll` compares strings lexicographically by using the `LC_COLLATE` category of the current locale. For more information about the `LC_COLLATE` category, see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).
+The `strcmp` functions differ from the `strcoll` functions in that `strcmp` comparisons are ordinal, and are not affected by locale. `strcoll` compares strings lexicographically by using the `LC_COLLATE` category of the current locale. For more information about the `LC_COLLATE` category, see [setlocale, _wsetlocale](setlocale-wsetlocale.md).
 
 In the "C" locale, the order of characters in the character set (ASCII character set) is the same as the lexicographic character order. However, in other locales, the order of characters in the character set may differ from the lexicographic order. For example, in certain European locales, the character 'a' (value 0x61) comes before the character 'ä' (value 0xE4) in the character set, but the character 'ä' comes in front of the character 'a' lexicographically.
 
@@ -90,6 +90,7 @@ The `strcmp` functions are case-sensitive. `_stricmp`, `_wcsicmp`, and `_mbsicmp
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
+
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
 ## Example
@@ -144,12 +145,12 @@ Compare strings:
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
-[_memicmp, _memicmp_l](../../c-runtime-library/reference/memicmp-memicmp-l.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[_memicmp, _memicmp_l](memicmp-memicmp-l.md)<br/>
 [strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
+[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
+[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>

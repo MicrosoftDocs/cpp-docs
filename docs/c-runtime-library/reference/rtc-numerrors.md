@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _RTC_NumErrors
 
-Returns the total number of errors that can be detected by run-time error checks (RTC). You can use this number as the control in a **for** loop, where each value in the loop is passed to [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md).
+Returns the total number of errors that can be detected by run-time error checks (RTC). You can use this number as the control in a **for** loop, where each value in the loop is passed to [_RTC_GetErrDesc](rtc-geterrdesc.md).
 
 ## Syntax
 
@@ -50,5 +50,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)<br/>
+[_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
 [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

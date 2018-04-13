@@ -38,7 +38,7 @@ The macro yields the operator ~.
 
 ## Example
 
-```
+```cpp
 // iso646_compl.cpp
 // compile with: /EHsc
 #include <iostream>

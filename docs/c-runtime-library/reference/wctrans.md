@@ -34,12 +34,12 @@ wctrans_t wctrans(
 
 ### Parameters
 
-`property`
+*property*
 A string that specifies one of the valid transformations.
 
 ## Return Value
 
-If the `LC_CTYPE` category of the current locale does not define a mapping whose name matches the property string `property`, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](../../c-runtime-library/reference/towctrans.md).
+If the `LC_CTYPE` category of the current locale does not define a mapping whose name matches the property string *property*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](towctrans.md).
 
 ## Remarks
 
@@ -49,8 +49,8 @@ The following pairs of calls have the same behavior in all locales, but it is po
 
 |Function|Same As|
 |--------------|-------------|
-|`tolower(`  `c`  `)`|`towctrans(`  `c` `, wctrans("towlower" ) )`|
-|`towupper(`  `c`  `)`|`towctrans(`  `c` `, wctrans( "toupper" ) )`|
+|tolower(c)|towctrans(c, wctrans("towlower"))|
+|towupper(c)|towctrans(c, wctrans("toupper"))|
 
 ## Requirements
 
@@ -62,7 +62,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_wctrans.cpp
 // compile with: /EHsc
 // This example determines a mapping from one set of character
@@ -99,4 +99,4 @@ int main()
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

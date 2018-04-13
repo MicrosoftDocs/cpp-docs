@@ -58,7 +58,7 @@ int _wutime64(
 *filename*
 Pointer to a string that contains the path or filename.
 
-`times`
+*times*
 Pointer to stored time values.
 
 ## Return Value
@@ -69,7 +69,7 @@ Each of these functions returns 0 if the file-modification time was changed. A r
 Path specifies directory or read-only file
 
 `EINVAL`
-Invalid `times` argument
+Invalid *times* argument
 
 `EMFILE`
 Too many open files (the file must be opened to change its modification time)
@@ -83,7 +83,7 @@ The date can be changed for a file if the change date is after midnight, January
 
 ## Remarks
 
-The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If `times` is a `NULL` pointer, the modification time is set to the current local time. Otherwise, `times` must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
+The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If *times* is a `NULL` pointer, the modification time is set to the current local time. Otherwise, *times* must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
 
 The `_utimbuf` structure stores file access and modification times used by `_utime` to change file-modification dates. The structure has the following fields, which are both of type `time_t`:
 
@@ -121,7 +121,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 This program uses `_utime` to set the file-modification time to the current time.
 
-```
+```C
 // crt_utime.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -166,9 +166,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Volume in drive C has no label.
 Volume Serial Number is 9CAC-DE74
 
@@ -191,12 +191,12 @@ Directory of C:\test
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[_futime, _futime32, _futime64](../../c-runtime-library/reference/futime-futime32-futime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[_futime, _futime32, _futime64](futime-futime32-futime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

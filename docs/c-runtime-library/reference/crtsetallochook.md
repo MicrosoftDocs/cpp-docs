@@ -47,10 +47,10 @@ Returns the previously defined allocation hook function, or `NULL` if *allocHook
 
 The `_CrtSetAllocHook` function installs the new client-defined allocation function specified in *allocHook* and returns the previously defined hook function. The following example demonstrates how a client-defined allocation hook should be prototyped:
 
-```
-int YourAllocHook( int allocType, void *userData, size_t size, int
-blockType, long requestNumber, const unsigned char *filename, int
-lineNumber);
+```C
+int YourAllocHook( int allocType, void *userData, size_t size,
+                   int blockType, long requestNumber,
+                   const unsigned char *filename, int lineNumber);
 ```
 
 The `allocType` argument specifies the type of allocation operation `(_HOOK_ALLOC`, `_HOOK_REALLOC`, and `_HOOK_FREE`) that triggered the call to the allocation's hook function. When the triggering allocation type is `_HOOK_FREE`, *userData* is a pointer to the user data section of the memory block about to be freed. However, when the triggering allocation type is `_HOOK_ALLOC` or `_HOOK_REALLOC`, *userData* is `NULL` because the memory block has not been allocated yet.
@@ -87,4 +87,4 @@ For a sample of how to use `_CrtSetAllocHook`, see [crt_dbg2](https://github.com
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtGetAllocHook](../../c-runtime-library/reference/crtgetallochook.md)<br/>
+[_CrtGetAllocHook](crtgetallochook.md)<br/>

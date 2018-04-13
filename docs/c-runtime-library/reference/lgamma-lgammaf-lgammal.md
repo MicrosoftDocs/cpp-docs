@@ -55,7 +55,7 @@ If successful, return the natural logarithm of the absolute value of the gamma f
 |pole error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -73,5 +73,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[tgamma, tgammaf, tgammal](../../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[tgamma, tgammaf, tgammal](tgamma-tgammaf-tgammal.md)<br/>

@@ -37,7 +37,7 @@ File handle.
 
 ## Remarks
 
-The `_lock_file` function locks the `FILE` object specified by *file*. The underlying file is not locked by `_lock_file`. Use [_unlock_file](../../c-runtime-library/reference/unlock-file.md) to release the lock on the file. Calls to `_lock_file` and `_unlock_file` must be matched in a thread.
+The `_lock_file` function locks the `FILE` object specified by *file*. The underlying file is not locked by `_lock_file`. Use [_unlock_file](unlock-file.md) to release the lock on the file. Calls to `_lock_file` and `_unlock_file` must be matched in a thread.
 
 ## Requirements
 
@@ -125,6 +125,6 @@ eFciornsdt
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_unlock_file](../../c-runtime-library/reference/unlock-file.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_unlock_file](unlock-file.md)<br/>

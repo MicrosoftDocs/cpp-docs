@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # swab
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_swab](../../c-runtime-library/reference/swab.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_swab](swab.md) instead.

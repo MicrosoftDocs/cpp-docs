@@ -137,6 +137,6 @@ Attempt to convert a NULL pointer to a wide character:
 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

@@ -84,7 +84,7 @@ Locale to use.
 
 If *str* is a null pointer or is *count* is 0, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), `errno` is set to `EINVAL`, and the function returns 0.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 
@@ -111,7 +111,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_mbsnbcnt.c
 
 #include  <mbstring.h>
@@ -130,9 +130,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 The first 10 characters are single-byte.
 ```
 
@@ -141,4 +141,4 @@ The first 10 characters are single-byte.
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)<br/>
+[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

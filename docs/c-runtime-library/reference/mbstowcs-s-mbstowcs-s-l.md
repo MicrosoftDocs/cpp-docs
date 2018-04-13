@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # mbstowcs_s, _mbstowcs_s_l
 
-Converts a sequence of multibyte characters to a corresponding sequence of wide characters. Versions of [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a sequence of multibyte characters to a corresponding sequence of wide characters. Versions of [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -96,11 +96,11 @@ If any of these conditions occurs, the invalid parameter exception is invoked as
 
 The `mbstowcs_s` function converts a string of multibyte characters pointed to by *mbstr* into wide characters stored in the buffer pointed to by *wcstr*. The conversion will continue for each character until one of these conditions is met:
 
--   A multibyte null character is encountered
+- A multibyte null character is encountered
 
--   An invalid multibyte character is encountered
+- An invalid multibyte character is encountered
 
--   The number of wide characters stored in the *wcstr* buffer equals *count*.
+- The number of wide characters stored in the *wcstr* buffer equals *count*.
 
 The destination string is always null-terminated (even in the case of an error).
 
@@ -134,7 +134,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 [Locale](../../c-runtime-library/locale.md)<br/>
 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

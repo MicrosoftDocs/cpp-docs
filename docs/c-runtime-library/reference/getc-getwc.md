@@ -50,7 +50,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 Each routine reads a single character from a file at the current position and increments the associated file pointer (if defined) to point to the next character. The file is associated with *stream*.
 
-These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](../../c-runtime-library/reference/getc-nolock-getwc-nolock.md).
+These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md).
 
 Routine-specific remarks follow.
 
@@ -76,7 +76,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_getc.c
 // Use getc to read a line from a file.
 
@@ -111,23 +111,23 @@ int main()
 }
 ```
 
-## Input: crt_getc.txt
+### Input: crt_getc.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Input was: Line one.
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>
+[ungetc, ungetwc](ungetc-ungetwc.md)<br/>

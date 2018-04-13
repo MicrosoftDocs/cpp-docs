@@ -48,7 +48,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Sample
 
-```
+```cpp
 // crt_get_heap_handle.cpp
 // compile with: /MT
 #include <windows.h>

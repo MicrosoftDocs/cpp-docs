@@ -43,7 +43,7 @@ The **rewind** function repositions the file pointer associated with *stream* to
 
 **(void) fseek(** *stream***, 0L,** `SEEK_SET` **);**
 
-However, unlike `fseek`, **rewind** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike `fseek`, **rewind** does not return a value to indicate whether the pointer was successfully moved.
+However, unlike [fseek](fseek-fseeki64.md), **rewind** clears the error indicators for the stream as well as the end-of-file indicator. Also, unlike [fseek](fseek-fseeki64.md), **rewind** does not return a value to indicate whether the pointer was successfully moved.
 
 To clear the keyboard buffer, use **rewind** with the stream `stdin`, which is associated with the keyboard by default.
 
@@ -65,7 +65,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_rewind.c
 /* This program first opens a file named
 * crt_rewind.out for input and output and writes two
@@ -96,9 +96,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 The values written are: 1 and -37
 The values read are: 1 and -37
 ```

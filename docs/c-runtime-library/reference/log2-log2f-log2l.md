@@ -68,7 +68,7 @@ Otherwise, may return one of the following values:
 |domain error|NaN|
 |pole error|-HUGE_VAL, -HUGE_VALF, or -HUGE_VALL|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -84,6 +84,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[exp2, exp2f, exp2l](../../c-runtime-library/reference/exp2-exp2f-exp2l.md)<br/>
-[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
+[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>

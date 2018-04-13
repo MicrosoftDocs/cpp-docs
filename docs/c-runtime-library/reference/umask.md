@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _umask
 
-Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](../../c-runtime-library/reference/umask-s.md).
+Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](umask-s.md).
 
 ## Syntax
 
@@ -74,7 +74,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_umask.c
 // compile with: /W3
 // This program uses _umask to set
@@ -105,7 +105,7 @@ Oldmask = 0x0000
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

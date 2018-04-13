@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _aligned_recalloc
 
-Changes the size of a memory block that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0.
+Changes the size of a memory block that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md) and initializes the memory to 0.
 
 ## Syntax
 
@@ -57,7 +57,7 @@ It is an error to reallocate memory and change the alignment of a block.
 
 ## Remarks
 
-`_aligned_recalloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](../../c-runtime-library/reference/malloc.md).
+`_aligned_recalloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](malloc.md).
 
 This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_recalloc` validates its parameters. If *alignment* is not a power of 2, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
@@ -70,5 +70,5 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 ## See also
 
 [Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
-[_recalloc](../../c-runtime-library/reference/recalloc.md)<br/>
-[_aligned_offset_recalloc](../../c-runtime-library/reference/aligned-offset-recalloc.md)<br/>
+[_recalloc](recalloc.md)<br/>
+[_aligned_offset_recalloc](aligned-offset-recalloc.md)<br/>

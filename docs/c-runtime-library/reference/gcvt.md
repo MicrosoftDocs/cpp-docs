@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _gcvt
 
-Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [_gcvt_s](../../c-runtime-library/reference/gcvt-s.md).
+Converts a floating-point value to a string, which it stores in a buffer. A more secure version of this function is available; see [_gcvt_s](gcvt-s.md).
 
 ## Syntax
 
@@ -125,6 +125,6 @@ buffer: '-1.23456789012e-002' (19 chars)
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
-[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[_ecvt](ecvt.md)<br/>
+[_fcvt](fcvt.md)<br/>

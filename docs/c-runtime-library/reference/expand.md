@@ -58,7 +58,7 @@ The `_expand` function changes the size of a previously allocated memory block b
 > [!NOTE]
 >  On 64-bit platforms, `_expand` might not contract the block if the new size is less than the current size; in particular, if the block was less than 16K in size and therefore allocated in the Low Fragmentation Heap, `_expand` leaves the block unchanged and returns *memblock*.
 
-When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](../../c-runtime-library/reference/expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. If *size* is greater than `_HEAP_MAXREQ`, `errno` is set to `ENOMEM` and the function returns `NULL`.
 
@@ -72,7 +72,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_expand.c
 
 #include <stdio.h>
@@ -107,8 +107,8 @@ Expanded block to 1024 bytes at 002C12BC
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[free](../../c-runtime-library/reference/free.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[_msize](../../c-runtime-library/reference/msize.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)<br/>
+[calloc](calloc.md)<br/>
+[free](free.md)<br/>
+[malloc](malloc.md)<br/>
+[_msize](msize.md)<br/>
+[realloc](realloc.md)<br/>

@@ -55,7 +55,7 @@ int _vcwprintf_p_l(
 *format*
 The format specification.
 
-`argptr`
+*argptr*
 A pointer to a list of arguments.
 
 *locale*
@@ -100,7 +100,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_vcprintf_p.c
 // compile with: /c
 #include <conio.h>
@@ -132,6 +132,6 @@ parameter 2 = 222; parameter 1 = one
 ## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
 [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md)<br/>

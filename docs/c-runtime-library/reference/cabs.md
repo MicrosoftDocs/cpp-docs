@@ -39,7 +39,7 @@ Complex number.
 
 ## Return Value
 
-`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets `errno` to `ERANGE`. You can change error handling with [_matherr](../../c-runtime-library/reference/matherr.md).
+`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets `errno` to `ERANGE`. You can change error handling with [_matherr](matherr.md).
 
 ## Remarks
 
@@ -81,5 +81,5 @@ The absolute value of 3.000000 + 4.000000i is 5.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
-[fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)   
+[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)   

@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # write
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_write](../../c-runtime-library/reference/write.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_write](write.md) instead.

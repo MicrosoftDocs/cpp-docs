@@ -55,7 +55,7 @@ Maximum length of path in characters: `char` for `_getdcwd` and `wchar_t` for `_
 
 ## Return Value
 
-See [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md).
+See [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
 ## Remarks
 
@@ -79,8 +79,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdrive](../../c-runtime-library/reference/getdrive.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
+[_getdrive](getdrive.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>

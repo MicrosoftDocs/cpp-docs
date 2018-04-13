@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # bsearch_s
 
-Performs a binary search of a sorted array. This is version of [bsearch](../../c-runtime-library/reference/bsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a binary search of a sorted array. This is version of [bsearch](bsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -95,9 +95,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-This program sorts a string array with [qsort_s](../../c-runtime-library/reference/qsort-s.md), and then uses bsearch_s to find the word "cat".
+This program sorts a string array with [qsort_s](qsort-s.md), and then uses bsearch_s to find the word "cat".
 
-```
+```cpp
 // crt_bsearch_s.cpp
 // This program uses bsearch_s to search a string array,
 // passing a locale as the context.
@@ -182,6 +182,6 @@ cat found at 002F0F04
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](../../c-runtime-library/reference/lfind.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

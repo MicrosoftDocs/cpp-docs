@@ -90,7 +90,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[c16rtomb, c32rtomb](../../c-runtime-library/reference/c16rtomb-c32rtomb1.md)<br/>
-[mbrtowc](../../c-runtime-library/reference/mbrtowc.md)<br/>
-[mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md)<br/>
-[mbsrtowcs_s](../../c-runtime-library/reference/mbsrtowcs-s.md)<br/>
+[c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)<br/>
+[mbrtowc](mbrtowc.md)<br/>
+[mbsrtowcs](mbsrtowcs.md)<br/>
+[mbsrtowcs_s](mbsrtowcs-s.md)<br/>

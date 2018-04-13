@@ -92,8 +92,8 @@ asinh( 0.868671 ) = 0.785398
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](../../c-runtime-library/reference/acosh-acoshf-acoshl.md)<br/>
-[atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](../../c-runtime-library/reference/cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)<br/>
+[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
+[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>

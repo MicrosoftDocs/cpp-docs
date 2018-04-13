@@ -71,7 +71,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt__write.c
 //
 // This program opens a file for output and uses _write to write
@@ -130,7 +130,7 @@ Wrote 36 bytes to file.
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_read](read.md)<br/>
+[_setmode](setmode.md)<br/>

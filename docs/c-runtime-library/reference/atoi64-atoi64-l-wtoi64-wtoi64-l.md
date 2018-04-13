@@ -67,11 +67,9 @@ The input string is a sequence of characters that can be interpreted as a numeri
 
 The *str* argument to `_atoi64` has the following form:
 
-```
-[whitespace] [sign] [digits]]
-```
+> [*whitespace*] [*sign*] [*digits*]
 
-A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.
+A *whitespace* consists of space or tab characters, which are ignored; *sign* is either plus (+) or minus (-); and *digits* are one or more digits.
 
 `_wtoi64` is identical to `_atoi64` except that it takes a wide character string as a parameter.
 
@@ -95,7 +93,7 @@ The versions of these functions with the **_l** suffix are identical except that
 
 This program shows how numbers stored as strings can be converted to numeric values using the `_atoi64` functions.
 
-```
+```C
 // crt_atoi64.c
 // This program shows how numbers stored as
 // strings can be converted to numeric values
@@ -145,8 +143,8 @@ Overflow condition occurred.
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
-[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
-[_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](../../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>
+[_ecvt](ecvt.md)<br/>
+[_fcvt](fcvt.md)<br/>
+[_gcvt](gcvt.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>

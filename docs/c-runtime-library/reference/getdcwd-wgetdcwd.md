@@ -70,9 +70,9 @@ The `_getdcwd` function gets the full path of the current working directory on t
 
 This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.
 
-The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](../../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md).
+The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md).
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getdcwd` and `_wgetdcwd` are replaced by calls to `_getdcwd_dbg` and `_wgetdcwd_dbg` so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](../../c-runtime-library/reference/getdcwd-dbg-wgetdcwd-dbg.md).
+When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getdcwd` and `_wgetdcwd` are replaced by calls to `_getdcwd_dbg` and `_wgetdcwd_dbg` so that you can debug memory allocations. For more information, see[_getdcwd_dbg, _wgetdcwd_dbg](getdcwd-dbg-wgetdcwd-dbg.md).
 
 ### Generic-Text Routine Mappings
 
@@ -91,13 +91,13 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See the example in [_getdrive](../../c-runtime-library/reference/getdrive.md).
+See the example in [_getdrive](getdrive.md).
 
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdrive](../../c-runtime-library/reference/getdrive.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
+[_getdrive](getdrive.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>

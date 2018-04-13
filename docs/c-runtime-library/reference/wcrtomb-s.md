@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # wcrtomb_s
 
-Convert a wide character into its multibyte character representation. A version of [wcrtomb](../../c-runtime-library/reference/wcrtomb.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a wide character into its multibyte character representation. A version of [wcrtomb](wcrtomb.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ Returns the number of bytes written or -1 if an error occurred.
 *mbchar*
 The resulting multibyte converted character.
 
-`sizeOfmbchar`
+*sizeOfmbchar*
 The size of the *mbchar* variable in bytes.
 
 *wchar*
@@ -70,7 +70,7 @@ The `wcrtomb_s` function converts a wide character, beginning in the specified c
 
 If *mbstate* is null, the internal `mbstate_t` conversion state is used. If the character contained in *wchar* does not have a corresponding multibyte character, the value of *pReturnValue* will be -1 and the function will return the `errno` value of `EILSEQ`.
 
-The `wcrtomb_s` function differs from [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
+The `wcrtomb_s` function differs from [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcslen`, if a subsequent call to `wcsrtombs_s` were used instead of `wcstombs_s.`
 
 In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -80,7 +80,7 @@ The `wcrtomb_s` function is multithread safe as long as no function in the curre
 
 ## Example
 
-```
+```C
 // crt_wcrtomb_s.c
 // This program converts a wide character
 // to its corresponding multibyte character.
@@ -133,4 +133,4 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>
+[mbsinit](mbsinit.md)<br/>

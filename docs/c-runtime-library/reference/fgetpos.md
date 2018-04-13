@@ -59,7 +59,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_fgetpos.c
 // This program uses fgetpos and fsetpos to
 // return to a location in a file.
@@ -101,13 +101,13 @@ int main( void )
 
 ## Input: crt_fgetpos.txt
 
-```
+```Input
 fgetpos gets a stream's file-position indicator.
 ```
 
 ### Output crt_fgetpos.txt
 
-```
+```Output
 after fgetpos: gets a stream
 after fsetpos: gets a stream
 ```
@@ -115,4 +115,4 @@ after fsetpos: gets a stream
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fsetpos](../../c-runtime-library/reference/fsetpos.md)<br/>
+[fsetpos](fsetpos.md)<br/>

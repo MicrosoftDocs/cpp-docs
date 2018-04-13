@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # strnicmp, wcsnicmp
 
-These POSIX functions are deprecated. Use the ISO C++ conformant [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) instead.

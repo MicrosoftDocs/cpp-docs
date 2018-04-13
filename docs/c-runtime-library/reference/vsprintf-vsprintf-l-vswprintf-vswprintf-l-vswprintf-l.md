@@ -21,7 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
-Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).
+Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).
 
 ## Syntax
 
@@ -85,6 +85,7 @@ int _vswprintf_l(
 ```
 
 ### Parameters
+
 *buffer*
 Storage location for output.
 
@@ -94,24 +95,26 @@ Maximum number of characters to store, in the `UNICODE` version of this function
 *format*
 Format specification.
 
-`argptr`
+*argptr*
 Pointer to list of arguments.
 
 *locale*
 The locale to use.
 
 ## Return Value
+
 `vsprintf` and `vswprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If *buffer* or *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
+
 Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
->  Using `vsprintf`, there is no way to limit the number of characters written, which means that code using this function is susceptible to buffer overruns. Use [_vsnprintf](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) instead, or call [_vscprintf](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) to determine how large a buffer is needed. Also, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+>  Using `vsprintf`, there is no way to limit the number of characters written, which means that code using this function is susceptible to buffer overruns. Use [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) instead, or call [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) to determine how large a buffer is needed. Also, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 `vswprintf` conforms to the ISO C Standard, which requires the second parameter, *count*, of type `size_t`. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS.` The old behavior may not be in a future version, so code should be changed to use the new conformant behavior.
 
@@ -137,7 +140,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_vsprintf.c
 // compile with: /W3
 // This program uses vsprintf to write to a buffer.
@@ -182,10 +185,11 @@ This is a string
 ```
 
 ## See also
+
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
 [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

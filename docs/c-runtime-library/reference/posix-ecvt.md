@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # ecvt
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_ecvt](../../c-runtime-library/reference/ecvt.md) or security-enhanced [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_ecvt](ecvt.md) or security-enhanced [_ecvt_s](ecvt-s.md) instead.

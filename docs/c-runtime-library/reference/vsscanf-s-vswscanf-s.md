@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 ---
 # vsscanf_s, vswscanf_s
 
-Reads formatted data from a string. These versions of [vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from a string. These versions of [vsscanf, vswscanf](vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Stored data
 *format*
 Format-control string. For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
-`arglist`
+*arglist*
 Variable argument list.
 
 ## Return Value
@@ -59,11 +59,11 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The `vsscanf_s` function reads data from *buffer* into the locations that are given by each argument in the `arglist` argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version `vsscanf`, a buffer size parameter is required when you use the type field characters `c`, `C`, `s`, `S`, or string-control sets that are enclosed in `[]`. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.
+The `vsscanf_s` function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. The arguments in the argument list specify pointers to variables that have a type that corresponds to a type specifier in *format*. Unlike the less secure version `vsscanf`, a buffer size parameter is required when you use the type field characters `c`, `C`, `s`, `S`, or string-control sets that are enclosed in `[]`. The buffer size in characters must be supplied as an additional parameter immediately after each buffer parameter that requires it.
 
 The buffer size includes the terminating null. A width specification field may be used to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
 
-For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
+For more information, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) and [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
 >  The size parameter is of type `unsigned`, not `size_t`.
@@ -89,7 +89,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_vsscanf_s.c
 // compile with: /W3
 // This program uses vsscanf_s to read data items
@@ -142,8 +142,8 @@ Real:     = 15.000000
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[vsscanf, vswscanf](vsscanf-vswscanf.md)<br/>

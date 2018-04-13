@@ -61,15 +61,15 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example in [sin, sinf, sinl](../../c-runtime-library/reference/sin-sinf-sinl.md).
+See the example in [sin, sinf, sinl](sin-sinf-sinl.md).
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[_matherr](../../c-runtime-library/reference/matherr.md)<br/>
-[sin, sinf, sinl](../../c-runtime-library/reference/sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](../../c-runtime-library/reference/tan-tanf-tanl.md)<br/>
+[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
+[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
+[_matherr](matherr.md)<br/>
+[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
 [_CIcos](../../c-runtime-library/cicos.md)<br/>

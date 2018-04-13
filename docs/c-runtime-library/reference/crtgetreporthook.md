@@ -59,4 +59,4 @@ For a sample of how to use `_CrtSetReportHook`, see [report](https://github.com/
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md)<br/>
+[_CrtSetReportHook](crtsetreporthook.md)<br/>

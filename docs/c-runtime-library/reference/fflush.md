@@ -52,7 +52,7 @@ If *stream* is `NULL`, the behavior is the same as a call to `fflush` on each op
 
 Buffers are normally maintained by the operating system, which determines the optimal time to write the data automatically to disk: when a buffer is full, when a stream is closed, or when a program terminates normally without closing the stream. The commit-to-disk feature of the run-time library lets you ensure that critical data is written directly to disk rather than to the operating-system buffers. Without rewriting an existing program, you can enable this feature by linking the program's object files with COMMODE.OBJ. In the resulting executable file, calls to `_flushall` write the contents of all buffers to disk. Only `_flushall` and `fflush` are affected by COMMODE.OBJ.
 
-For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](../../c-runtime-library/reference/fopen-wfopen.md), and [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md).
+For information about controlling the commit-to-disk feature, see [Stream I/O](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), and [_fdopen](fdopen-wfdopen.md).
 
 This function locks the calling thread and is therefore thread-safe. For a non-locking version, see `_fflush_nolock`.
 
@@ -66,7 +66,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_fflush.c
 #include <stdio.h>
 #include <conio.h>
@@ -115,6 +115,6 @@ This is a test
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_flushall](flushall.md)<br/>
+[setvbuf](setvbuf.md)<br/>

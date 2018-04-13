@@ -59,15 +59,15 @@ The *size* argument gives the new size of the block, in bytes. The contents of t
 
 `realloc` sets `errno` to `ENOMEM` if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-`realloc` calls `malloc` in order to use the C++ [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `realloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call
+`realloc` calls `malloc` in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, `malloc` is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, `malloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `realloc` fails to allocate memory, `malloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call
 
-```
-_set_new_mode(1)
+```C
+_set_new_mode(1);
 ```
 
 early in ones program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, `realloc` resolves to [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, `realloc` resolves to [_realloc_dbg](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 `realloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
@@ -81,7 +81,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_realloc.c
 // This program allocates a block of memory for
 // buffer and then uses _msize to display the size of that
@@ -129,6 +129,6 @@ Size of block after realloc of 1000 more longs: 8000
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[free](../../c-runtime-library/reference/free.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
+[calloc](calloc.md)<br/>
+[free](free.md)<br/>
+[malloc](malloc.md)<br/>

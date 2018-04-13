@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strtime_s, _wstrtime_s
 
-Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](../../c-runtime-library/reference/strtime-wstrtime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](strtime-wstrtime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -76,7 +76,7 @@ Passing a value for *numberOfElements* that is greater than the actual size of t
 
 ## Remarks
 
-These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
+These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.
 
 `_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.
 
@@ -99,7 +99,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // strtime_s.c
 
 #include <time.h>
@@ -143,10 +143,10 @@ OS date:            04/25/03
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>

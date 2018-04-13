@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # wcstombs_s, _wcstombs_s_l
 
-Converts a sequence of wide characters to a corresponding sequence of multibyte characters. A version of [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a sequence of wide characters to a corresponding sequence of multibyte characters. A version of [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -98,11 +98,11 @@ If any of these conditions occurs, the invalid parameter exception is invoked as
 
 The `wcstombs_s` function converts a string of wide characters pointed to by *wcstr* into multibyte characters stored in the buffer pointed to by *mbstr*. The conversion will continue for each character until one of these conditions is met:
 
--   A null wide character is encountered
+- A null wide character is encountered
 
--   A wide character that cannot be converted is encountered
+- A wide character that cannot be converted is encountered
 
--   The number of bytes stored in the *mbstr* buffer equals *count*.
+- The number of bytes stored in the *mbstr* buffer equals *count*.
 
 The destination string is always null-terminated (even in the case of an error).
 
@@ -178,8 +178,8 @@ Convert wide-character string:
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md)<br/>
 [WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

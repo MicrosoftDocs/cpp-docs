@@ -26,10 +26,8 @@ Installs your own termination function to be called by `unexpected`.
 
 ## Syntax
 
-```C
-unexpected_function set_unexpected(
-   unexpected_function unexpFunction
-);
+```cpp
+unexpected_function set_unexpected( unexpected_function unexpFunction );
 ```
 
 ### Parameters
@@ -45,7 +43,7 @@ Returns a pointer to the previous termination function registered by `_set_unexp
 
 The `set_unexpected` function installs *unexpFunction* as the function called by `unexpected`. `unexpected` is not used in the current C++ exception-handling implementation. The `unexpected_function` type is defined in EH.H as a pointer to a user-defined unexpected function, *unexpFunction* that returns `void`. Your custom *unexpFunction* function should not return to its caller.
 
-```
+```cpp
 typedef void ( *unexpected_function )( );
 ```
 
@@ -70,8 +68,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[_get_unexpected](../../c-runtime-library/reference/get-unexpected.md)<br/>
-[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
-[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>
+[abort](abort.md)<br/>
+[_get_unexpected](get-unexpected.md)<br/>
+[set_terminate](set-terminate-crt.md)<br/>
+[terminate](terminate-crt.md)<br/>
+[unexpected](unexpected-crt.md)<br/>

@@ -28,23 +28,23 @@ Convert strings to an unsigned long-integer value.
 
 ```C
 unsigned long strtoul(
-   const char *nptr,
+   const char *strSource,
    char **endptr,
    int base
 );
 unsigned long _strtoul_l(
-   const char *nptr,
+   const char *strSource,
    char **endptr,
    int base,
    _locale_t locale
 );
 unsigned long wcstoul(
-   const wchar_t *nptr,
+   const wchar_t *strSource,
    wchar_t **endptr,
    int base
 );
 unsigned long _wcstoul_l(
-   const wchar_t *nptr,
+   const wchar_t *strSource,
    wchar_t **endptr,
    int base,
    _locale_t locale
@@ -53,10 +53,10 @@ unsigned long _wcstoul_l(
 
 ### Parameters
 
-`nptr`
+*strSource*
 Null-terminated string to convert.
 
-`endptr`
+*endptr*
 Pointer to character that stops scan.
 
 *base*
@@ -73,13 +73,13 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-Each of these functions converts the input string `nptr` to an `unsigned` `long`.
+Each of these functions converts the input string *strSource* to an `unsigned` `long`.
 
-`strtoul` stops reading the string `nptr` at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. The `LC_NUMERIC` category setting of the locale determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strtoul` and `wcstoul` use the current locale; `_strtoul_l` and `_wcstoul_l` are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+`strtoul` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. The `LC_NUMERIC` category setting of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). `strtoul` and `wcstoul` use the current locale; `_strtoul_l` and `_wcstoul_l` are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If `endptr` is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by `endptr`. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of `nptr` is stored at the location pointed to by `endptr`.
+If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
-`wcstoul` is a wide-character version of `strtoul`; its `nptr` argument is a wide-character string. Otherwise these functions behave identically.
+`wcstoul` is a wide-character version of `strtoul`; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
 ### Generic-Text Routine Mappings
 
@@ -88,11 +88,11 @@ If `endptr` is not `NULL`, a pointer to the character that stopped the scan is s
 |`_tcstoul`|`strtoul`|`strtoul`|`wcstoul`|
 |`_tcstoul_l`|`strtoul_l`|`_strtoul_l`|`_wcstoul_l`|
 
-`strtoul` expects `nptr` to point to a string of the following form:
+`strtoul` expects *strSource* to point to a string of the following form:
 
 [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits`]
 
-A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits. The first character that does not fit this form stops the scan. If *base* is between 2 and 36, then it is used as the base of the number. If *base* is 0, the initial characters of the string pointed to by `nptr` are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. The first character outside the range of the base stops the scan. For example, if *base* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`-`) sign prefix; a leading minus sign indicates that the return value is negated.
+A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits. The first character that does not fit this form stops the scan. If *base* is between 2 and 36, then it is used as the base of the number. If *base* is 0, the initial characters of the string pointed to by *strSource* are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. The first character outside the range of the base stops the scan. For example, if *base* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`-`) sign prefix; a leading minus sign indicates that the return value is negated.
 
 ## Requirements
 
@@ -107,15 +107,15 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [strtod](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md).
+See the example for [strtod](strtod-strtod-l-wcstod-wcstod-l.md).
 
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[localeconv](localeconv.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
-[strtod, _strtod_l, wcstod, _wcstod_l](../../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)<br/>
-[strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
+[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
+[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>

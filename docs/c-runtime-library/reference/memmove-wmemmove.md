@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # memmove, wmemmove
 
-Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](../../c-runtime-library/reference/memmove-s-wmemmove-s.md).
+Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
 
 ## Syntax
 
@@ -62,10 +62,14 @@ Copies *count* bytes (`memmove`) or characters (`wmemmove`) from *src* to *dest*
 
 The `memmove` and `wmemmove` functions will only be deprecated if the constant `_CRT_SECURE_DEPRECATE_MEMORY` is defined prior to the inclusion statement in order for the functions to be deprecated, such as in the example below:
 
-```
+```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
 #include <string.h>
+```
+
 or
+
+```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
 #include <wchar.h>
 ```
@@ -81,7 +85,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_memcpy.c
 // Illustrate overlapping copy: memmove
 // always handles it correctly; memcpy may handle
@@ -118,7 +122,7 @@ New string: aaaabb
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _splitpath_s, _wsplitpath_s
 
-Breaks a path name into components. These are versions of [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Breaks a path name into components. These are versions of [_splitpath, _wsplitpath](splitpath-wsplitpath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -143,7 +143,7 @@ If the full path does not contain a component (for example, a filename), `_split
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## Requirements
 
@@ -156,13 +156,13 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).
+See the example for [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md).
 
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>
-[_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
+[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
+[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_makepath, _wmakepath](makepath-wmakepath.md)<br/>
+[_setmbcp](setmbcp.md)<br/>

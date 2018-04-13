@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _putenv_s, _wputenv_s
 
-Creates, modifies, or removes environment variables. These are versions of [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md) but have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Creates, modifies, or removes environment variables. These are versions of [_putenv, _wputenv](putenv-wputenv.md) but have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -93,10 +93,10 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-For a sample that shows how to use `_putenv_s`, see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).
+For a sample that shows how to use `_putenv_s`, see [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)<br/>
+[getenv, _wgetenv](getenv-wgetenv.md)<br/>
+[_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>

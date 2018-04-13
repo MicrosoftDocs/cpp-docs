@@ -42,7 +42,7 @@ Returns the character read. There is no error return.
 
 The `_getche` and `_getwche` functions read a single character from the console with echo, meaning that the character is displayed at the console. None of these functions can be used to read CTRL+C. When reading a function key or an arrow key, each function must be called twice; the first call returns 0 or 0xE0, and the second call returns the actual key code.
 
-These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getche_nolock, _getwche_nolock](../../c-runtime-library/reference/getche-nolock-getwche-nolock.md).
+These functions lock the calling thread and are therefore thread-safe. For non-locking versions, see [_getche_nolock, _getwche_nolock](getche-nolock-getwche-nolock.md).
 
 ### Generic-Text Routine Mappings
 
@@ -61,7 +61,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getche.c
 // compile with: /c
 // This program reads characters from
@@ -99,5 +99,5 @@ Type 'Y' when finished typing keys: abcdefyY
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>
+[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>

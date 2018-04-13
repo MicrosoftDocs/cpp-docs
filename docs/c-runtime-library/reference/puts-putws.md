@@ -87,14 +87,14 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Hello world from puts!
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)<br/>
-[fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)<br/>
+[fputs, fputws](fputs-fputws.md)<br/>
+[fgets, fgetws](fgets-fgetws.md)<br/>

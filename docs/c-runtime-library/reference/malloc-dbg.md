@@ -53,11 +53,11 @@ The *filename* and *linenumber* parameters are only available when `_malloc_dbg`
 
 ## Return Value
 
-On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](../../c-runtime-library/reference/malloc.md) function.
+On successful completion, this function returns a pointer to the user portion of the allocated memory block, calls the new handler function, or returns NULL. For a complete description of the return behavior, see the following Remarks section. For more information about how the new handler function is used, see the [malloc](malloc.md) function.
 
 ## Remarks
 
-`_malloc_dbg` is a debug version of the [malloc](../../c-runtime-library/reference/malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_malloc_dbg` is reduced to a call to `malloc`. Both `malloc` and `_malloc_dbg` allocate a block of memory in the base heap, but `_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+`_malloc_dbg` is a debug version of the [malloc](malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_malloc_dbg` is reduced to a call to `malloc`. Both `malloc` and `_malloc_dbg` allocate a block of memory in the base heap, but `_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
 `_malloc_dbg` allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
 
@@ -84,6 +84,6 @@ For a sample of how to use `_malloc_dbg`, see [crt_dbg1](https://github.com/Micr
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)<br/>
-[_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md)<br/>
+[malloc](malloc.md)<br/>
+[_calloc_dbg](calloc-dbg.md)<br/>
+[_calloc_dbg](calloc-dbg.md)<br/>

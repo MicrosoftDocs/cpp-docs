@@ -85,7 +85,7 @@ For more information about **errno** and possible error return values, see [errn
 
 ## Remarks
 
-**FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](../../c-runtime-library/reference/ldexp.md).
+**FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](ldexp.md).
 
 Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **long** **double** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
 
@@ -115,15 +115,15 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 6.4 times FLT_RADIX to the power of 3 is 51.2
 ```
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[frexp](../../c-runtime-library/reference/frexp.md)<br/>
-[ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
-[modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>
+[frexp](frexp.md)<br/>
+[ldexp](ldexp.md)<br/>
+[modf, modff, modfl](modf-modff-modfl.md)<br/>

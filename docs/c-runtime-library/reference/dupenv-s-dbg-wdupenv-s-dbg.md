@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _dupenv_s_dbg, _wdupenv_s_dbg
 
-Get a value from the current environment.  Versions of [_dupenv_s, _wdupenv_s](../../c-runtime-library/reference/dupenv-s-wdupenv-s.md) that allocate memory with [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) to provide additional debugging information.
+Get a value from the current environment.  Versions of [_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md) that allocate memory with [_malloc_dbg](malloc-dbg.md) to provide additional debugging information.
 
 ## Syntax
 
@@ -75,7 +75,7 @@ If these functions cannot allocate enough memory, they set *buffer* to `NULL` an
 
 ## Remarks
 
-The `_dupenv_s_dbg` and `_wdupenv_s_dbg` functions are identical to `_dupenv_s` and `_wdupenv_s` except that, when `_DEBUG` is defined, these functions use the debug version of [malloc](../../c-runtime-library/reference/malloc.md), [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).
+The `_dupenv_s_dbg` and `_wdupenv_s_dbg` functions are identical to `_dupenv_s` and `_wdupenv_s` except that, when `_DEBUG` is defined, these functions use the debug version of [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md), to allocate memory for the value of the environment variable. For information on the debugging features of `_malloc_dbg`, see [_malloc_dbg](malloc-dbg.md).
 
 You do not need to call these functions explicitly in most cases. Instead, you can define the flag `_CRTDBG_MAP_ALLOC`. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_dupenv_s` and `_wdupenv_s` are remapped to `_dupenv_s_dbg` and `_wdupenv_s_dbg`, respectively, with the *blockType* set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information on block types, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -127,5 +127,5 @@ nonexistentvariable = (null)
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
-[_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)<br/>
+[getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)<br/>
+[_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)<br/>

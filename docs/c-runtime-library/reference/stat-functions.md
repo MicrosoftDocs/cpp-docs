@@ -104,7 +104,7 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 `_stat` is equivalent to `_stat64i32`, and `struct _stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct _stat` contains a 32-bit time. The same is true for `_stati64`.
 
 > [!NOTE]
->  `_wstat` does not work with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.
+>  `_wstat` does not work with [!INCLUDE[wiprlhext](includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.
 
 This function validates its parameters. If either *path* or *buffer* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -179,7 +179,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_stat.c
 // This program uses the _stat function to
 // report information about the file named crt_stat.c.
@@ -243,7 +243,7 @@ Time modified : Thu Feb 07 14:39:36 2002
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](../../c-runtime-library/reference/access-waccess.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
+[_access, _waccess](access-waccess.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_setmbcp](setmbcp.md)<br/>

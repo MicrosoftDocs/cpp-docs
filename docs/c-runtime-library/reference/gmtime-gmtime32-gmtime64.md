@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # gmtime, _gmtime32, _gmtime64
 
-Converts a **time_t** time value to a **tm** structure. More secure versions of these functions are available; see [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).
+Converts a **time_t** time value to a **tm** structure. More secure versions of these functions are available; see [gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md).
 
 ## Syntax
 
@@ -53,7 +53,7 @@ A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md)
 |**tm_yday**|Day of year (0 - 365; January 1 = 0).|
 |**tm_isdst**|Always 0 for **gmtime**.|
 
-Both the 32-bit and 64-bit versions of **gmtime**, [mktime](../../c-runtime-library/reference/mktime-mktime32-mktime64.md), [mkgmtime](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) all use one common **tm** structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *sourceTime* represents a date before midnight, January 1, 1970, **gmtime** returns **NULL**. There is no error return.
+Both the 32-bit and 64-bit versions of **gmtime**, [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md), and [localtime](localtime-localtime32-localtime64.md) all use one common **tm** structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *sourceTime* represents a date before midnight, January 1, 1970, **gmtime** returns **NULL**. There is no error return.
 
 **_gmtime64**, which uses the **__time64_t** structure, enables dates to be expressed up through 23:59:59, December 31, 3000, UTC, whereas **_gmtime32** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both functions.
 
@@ -63,7 +63,7 @@ These functions validate their parameters. If *sourceTime* is a null pointer, or
 
 ## Remarks
 
-The **_gmtime32** function breaks down the *sourceTime* value and stores it in a statically allocated structure of type **tm**, defined in TIME.H. The value of *sourceTime* is typically obtained from a call to the [time](../../c-runtime-library/reference/time-time32-time64.md) function.
+The **_gmtime32** function breaks down the *sourceTime* value and stores it in a statically allocated structure of type **tm**, defined in TIME.H. The value of *sourceTime* is typically obtained from a call to the [time](time-time32-time64.md) function.
 
 > [!NOTE]
 > In most cases, the target environment tries to determine whether daylight savings time is in effect. The C run-time library assumes that the United States rules for implementing the calculation of Daylight Saving Time (DST) are used.
@@ -112,11 +112,11 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[_mkgmtime, _mkgmtime32, _mkgmtime64](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

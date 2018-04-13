@@ -63,10 +63,10 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [_fpreset](../../c-runtime-library/reference/fpreset.md).
+See the example for [_fpreset](fpreset.md).
 
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[longjmp](../../c-runtime-library/reference/longjmp.md)<br/>
+[longjmp](longjmp.md)<br/>
 [_setjmp3](../../c-runtime-library/setjmp3.md)<br/>

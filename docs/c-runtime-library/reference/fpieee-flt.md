@@ -60,9 +60,9 @@ The **_FPIEEE_RECORD** structure, defined in Fpieee.h, contains information pert
 |**RoundingMode**<br/>**Precision**|These **unsigned** **int** fields contain information about the floating-point environment at the time the exception occurred.|
 |**Operation**|This **unsigned** **int** field indicates the type of operation that caused the trap. If the type is a comparison (**_FpCodeCompare**), you can supply one of the special **_FPIEEE_COMPARE_RESULT** values (as defined in Fpieee.h) in the **Result.Value** field. The conversion type (**_FpCodeConvert**) indicates that the trap occurred during a floating-point conversion operation. You can look at the **Operand1** and **Result** types to determine the type of conversion being attempted.|
 |**Operand1**<br/>**Operand2**<br/>**Result**|These **_FPIEEE_VALUE** structures indicate the types and values of the proposed result and operands. Each structure contains these fields:<br /><br /> **OperandValid** - Flag indicating whether the responding value is valid.<br />**Format** - Data type of the corresponding value. The format type might be returned even if the corresponding value is not valid.<br />**Value** - Result or operand data value.|
-|**Cause**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** contains one bit field per type of floating point exception. There is a correspondence between these fields and the arguments used to mask the exceptions supplied to [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md). The exact meaning of each bit depends on context:<br /><br /> **Cause** - Each set bit indicates the particular exception that was raised.<br />**Enable** - Each set bit indicates that the particular exception is currently unmasked.<br />**Status** - Each set bit indicates that the particular exception is currently pending. This includes exceptions that have not been raised because they were masked by **_controlfp**.|
+|**Cause**<br/>**Enable**<br/>**Status**|**_FPIEEE_EXCEPTION_FLAGS** contains one bit field per type of floating point exception. There is a correspondence between these fields and the arguments used to mask the exceptions supplied to [_controlfp](control87-controlfp-control87-2.md). The exact meaning of each bit depends on context:<br /><br /> **Cause** - Each set bit indicates the particular exception that was raised.<br />**Enable** - Each set bit indicates that the particular exception is currently unmasked.<br />**Status** - Each set bit indicates that the particular exception is currently pending. This includes exceptions that have not been raised because they were masked by **_controlfp**.|
 
-Pending exceptions that are disabled are raised when you enable them. This can result in undefined behavior when using **_fpieee_flt** as an exception filter. Always call [_clearfp](../../c-runtime-library/reference/clear87-clearfp.md) before enabling floating point exceptions.
+Pending exceptions that are disabled are raised when you enable them. This can result in undefined behavior when using **_fpieee_flt** as an exception filter. Always call [_clearfp](clear87-clearfp.md) before enabling floating point exceptions.
 
 ## Requirements
 
@@ -142,5 +142,5 @@ int main( void )
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>
-[_controlfp_s](../../c-runtime-library/reference/controlfp-s.md)<br/>
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+[_controlfp_s](controlfp-s.md)<br/>

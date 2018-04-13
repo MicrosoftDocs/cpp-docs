@@ -56,7 +56,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_kbhit.c
 // compile with: /c
 /* This program loops until the user
@@ -79,9 +79,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!! Hit me!!
 Key struck was 'q'
 ```

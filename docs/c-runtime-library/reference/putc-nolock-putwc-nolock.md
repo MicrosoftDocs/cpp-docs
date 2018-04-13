@@ -76,7 +76,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_putc_nolock.c
 /* This program uses putc to write buffer
 * to a stream. If an error occurs, the program
@@ -99,14 +99,14 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 This is the line of output
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

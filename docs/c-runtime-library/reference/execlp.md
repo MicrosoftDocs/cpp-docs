@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # execlp
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_execlp](../../c-runtime-library/reference/execlp-wexeclp.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_execlp](execlp-wexeclp.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

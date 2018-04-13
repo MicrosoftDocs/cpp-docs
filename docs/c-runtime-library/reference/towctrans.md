@@ -35,19 +35,19 @@ wint_t towctrans(
 
 ### Parameters
 
-`c`
+*c*
 The character you want to transform.
 
 *category*
-An identifier that contains the return value of [wctrans](../../c-runtime-library/reference/wctrans.md).
+An identifier that contains the return value of [wctrans](wctrans.md).
 
 ## Return Value
 
-The character `c`, after `towctrans` used the transform rule in *category*.
+The character *c*, after `towctrans` used the transform rule in *category*.
 
 ## Remarks
 
-The value of *category* must have been returned by an earlier successful call to [wctrans](../../c-runtime-library/reference/wctrans.md).
+The value of *category* must have been returned by an earlier successful call to [wctrans](wctrans.md).
 
 ## Requirements
 

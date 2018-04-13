@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
-Initializes characters of a string to a given character. These versions of [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Initializes characters of a string to a given character. These versions of [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  `_mbsnset_s` and `_mbsnset_s_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -79,7 +79,7 @@ String to be altered.
 *numberOfElements*
 The size of the *str* buffer.
 
-`c`
+*c*
 Character setting.
 
 *count*
@@ -96,13 +96,13 @@ These functions validate their arguments. If *str* is not a valid null-terminate
 
 ## Remarks
 
-These functions set, at most, the first *count* characters of *str* to `c`. If *count* is greater than the size of *str*, the size of *str* is used instead of *count*. An error occurs if *count* is greater than *numberOfElements* and both those parameters are greater than the size of *str*.
+These functions set, at most, the first *count* characters of *str* to *c*. If *count* is greater than the size of *str*, the size of *str* is used instead of *count*. An error occurs if *count* is greater than *numberOfElements* and both those parameters are greater than the size of *str*.
 
 `_wcsnset_s` and `_mbsnset_s` are wide-character and multibyte-character versions of `_strnset_s`. The string argument of `_wcsnset_s` is a wide-character string; that of `_mbsnset_s` is amultibyte-character string. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### Generic-Text Routine Mappings
 
@@ -125,7 +125,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_strnset_s.c
 #include <string.h>
 #include <stdio.h>
@@ -150,7 +150,7 @@ After:  **** is a test
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
-[strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
+[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
+[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # qsort_s
 
-Performs a quick sort. A version of [qsort](../../c-runtime-library/reference/qsort.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a quick sort. A version of [qsort](qsort.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -57,7 +57,7 @@ A pointer to a context, which can be any object that the *compare* routine needs
 
 The `qsort_s` function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. `qsort_s` overwrites this array with the sorted elements. The argument *compare* is a pointer to a user-supplied routine that compares two array elements and returns a value specifying their relationship. `qsort_s` calls the *compare* routine one or more times during the sort, passing pointers to two array elements on each call:
 
-```
+```C
 compare( context, (void *) & elem1, (void *) & elem2 );
 ```
 
@@ -90,7 +90,7 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 |-------------|---------------------|
 |`qsort_s`|\<stdlib.h> and \<search.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
+For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 **Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).
 
@@ -98,7 +98,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 The following example demonstrates how to use the *context* parameter in the `qsort_s` function. The *context* parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different *context* parameter in each sort. In this example, a locale object is used as the *context* parameter.
 
-```
+```cpp
 // crt_qsort_s.cpp
 // compile with: /EHsc /MT
 #include <stdlib.h>
@@ -175,7 +175,7 @@ void sort_array(char *array[], int num, locale &loc)
 void print_array(char *a[], int c)
 {
    for (int i = 0; i < c; i++)
-     printf("%s ", a[i]);
+      printf("%s ", a[i]);
    printf("\n");
 
 }
@@ -197,7 +197,6 @@ void sort_english(void * Dummy)
 
 int main( )
 {
-
    int i;
    HANDLE threads[3];
 
@@ -233,13 +232,12 @@ int main( )
    print_array(array1, 6);
    print_array(array2, 3);
    print_array(array3, 3);
-
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Unsorted input:
 weiß weis annehmen weizen Zeit weit
 Español España espantado
@@ -253,6 +251,6 @@ table tablet tableux
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](../../c-runtime-library/reference/bsearch-s.md)<br/>
-[_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)<br/>
+[bsearch_s](bsearch-s.md)<br/>
+[_lsearch_s](lsearch-s.md)<br/>
+[qsort](qsort.md)<br/>

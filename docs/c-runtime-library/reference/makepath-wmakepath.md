@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _makepath, _wmakepath
 
-Create a path name from components. More secure versions of these functions are available; see [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).
+Create a path name from components. More secure versions of these functions are available; see [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md).
 
 ## Syntax
 
@@ -126,6 +126,6 @@ Path extracted with _splitpath:
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)<br/>
-[_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md)<br/>
+[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
+[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
+[_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)<br/>

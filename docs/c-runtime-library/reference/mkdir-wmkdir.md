@@ -78,7 +78,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_makedir.c
 
 #include <direct.h>
@@ -101,9 +101,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Directory '\testtmp' was successfully created
 Volume in drive C has no label.
 Volume Serial Number is E078-087A
@@ -120,5 +120,5 @@ Directory '\testtmp' was successfully removed
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>

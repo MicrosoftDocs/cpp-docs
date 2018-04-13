@@ -52,7 +52,7 @@ When the runtime calls the invalid parameter function, it usually means that a n
 
 The invalid parameter handler function must have the following prototype:
 
-```
+```C
 void _invalid_parameter(
    const wchar_t * expression,
    const wchar_t * function,
@@ -74,7 +74,7 @@ The `_set_invalid_parameter_handler` and `_set_thread_local_invalid_parameter_ha
 
 ## Example
 
-In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md).
+In the following example, an invalid parameter error handler is used to print the function that received the invalid parameter and the file and line in CRT sources. When the debug CRT library is used, invalid parameter errors also raise an assertion, which is disabled in this example using [_CrtSetReportMode](crtsetreportmode.md).
 
 ```C
 // crt_set_invalid_parameter_handler.c
@@ -120,6 +120,6 @@ Expression: format != nullptr
 
 ## See also
 
-[_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)<br/>
+[_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)<br/>
 [Security-Enhanced Versions of CRT Functions](../../c-runtime-library/security-enhanced-versions-of-crt-functions.md)<br/>
 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

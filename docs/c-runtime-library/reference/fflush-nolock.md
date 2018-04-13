@@ -39,7 +39,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-See [fflush](../../c-runtime-library/reference/fflush.md).
+See [fflush](fflush.md).
 
 ## Remarks
 
@@ -56,6 +56,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_flushall](flushall.md)<br/>
+[setvbuf](setvbuf.md)<br/>

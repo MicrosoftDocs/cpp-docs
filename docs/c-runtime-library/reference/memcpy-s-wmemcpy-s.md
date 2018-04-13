@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # memcpy_s, wmemcpy_s
 
-Copies bytes between buffers. These are versions of [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copies bytes between buffers. These are versions of [memcpy, wmemcpy](memcpy-wmemcpy.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -85,7 +85,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_memcpy_s.c
 // Copy memory in a more secure way.
 
@@ -126,11 +126,11 @@ int main()
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
-[memmove, wmemmove](../../c-runtime-library/reference/memmove-wmemmove.md)<br/>
-[memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
-[strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[memmove, wmemmove](memmove-wmemmove.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>

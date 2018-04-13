@@ -62,14 +62,14 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example in [sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md).
+See the example in [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md).
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](../../c-runtime-library/reference/acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)<br/>
-[_matherr](../../c-runtime-library/reference/matherr.md)<br/>
-[sinh, sinhf, sinhl](../../c-runtime-library/reference/sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](../../c-runtime-library/reference/tanh-tanhf-tanhl.md)<br/>
+[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
+[_matherr](matherr.md)<br/>
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _access, _waccess
 
-Determines if a file is read-only or not. More secure versions are available; see [_access_s, _waccess_s](../../c-runtime-library/reference/access-s-waccess-s.md).
+Determines if a file is read-only or not. More secure versions are available; see [_access_s, _waccess_s](access-s-waccess-s.md).
 
 ## Syntax
 
@@ -49,14 +49,11 @@ Read/write attribute.
 
 Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.
 
-`EACCES`
-Access denied: the file's permission setting does not allow specified access.
-
-`ENOENT`
-File name or path not found.
-
-`EINVAL`
-Invalid parameter.
+|||
+|-|-|
+`EACCES`|Access denied: the file's permission setting does not allow specified access.
+`ENOENT`|File name or path not found.
+`EINVAL`|Invalid parameter.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -94,7 +91,7 @@ This function validates its parameters. If *path* is `NULL` or *mode* does not s
 
 The following example uses `_access` to check the file named crt_ACCESS.C to see whether it exists and whether writing is allowed.
 
-```
+```C
 // crt_access.c
 // compile with: /W1
 // This example uses _access to check the file named
@@ -127,7 +124,7 @@ File crt_ACCESS.C does not have write permission.
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>

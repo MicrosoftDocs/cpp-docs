@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _creat, _wcreat
 
-Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) instead.
+Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md) instead.
 
 ## Syntax
 
@@ -77,9 +77,9 @@ If the file specified by *filename* does not exist, a new file is created with t
 |`_S_IREAD`|Reading permitted.|
 |`_S_IREAD &#124; _S_IWRITE`|Reading and writing permitted.|
 
-If write permission is not given, the file is read-only. All files are always readable; it is impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using `_creat` are always opened in compatibility mode (see [_sopen](../../c-runtime-library/reference/sopen-wsopen.md)) with `_SH_DENYNO`.
+If write permission is not given, the file is read-only. All files are always readable; it is impossible to give write-only permission. The modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are then equivalent. Files opened using `_creat` are always opened in compatibility mode (see [_sopen](sopen-wsopen.md)) with `_SH_DENYNO`.
 
-`_creat` applies the current file-permission mask to *pmode* before setting the permissions (see [_umask](../../c-runtime-library/reference/umask.md)). `_creat` is provided primarily for compatibility with previous libraries. A call to `_open` with `_O_CREAT` and `_O_TRUNC` in the *oflag* parameter is equivalent to `_creat` and is preferable for new code.
+`_creat` applies the current file-permission mask to *pmode* before setting the permissions (see [_umask](umask.md)). `_creat` is provided primarily for compatibility with previous libraries. A call to `_open` with `_O_CREAT` and `_O_TRUNC` in the *oflag* parameter is equivalent to `_creat` and is preferable for new code.
 
 ## Requirements
 
@@ -92,7 +92,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_creat.c
 // compile with: /W3
 // This program uses _creat to create
@@ -128,10 +128,10 @@ Created data file.
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_chsize](../../c-runtime-library/reference/chsize.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_umask](../../c-runtime-library/reference/umask.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_chsize](chsize.md)<br/>
+[_close](close.md)<br/>
+[_dup, _dup2](dup-dup2.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_sopen, _wsopen](sopen-wsopen.md)<br/>
+[_umask](umask.md)<br/>

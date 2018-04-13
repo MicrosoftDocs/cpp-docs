@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # tmpnam_s, _wtmpnam_s
 
-Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -94,7 +94,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_tmpnam_s.c
 // This program uses tmpnam_s to create a unique filename in the
 // current working directory.
@@ -128,7 +128,7 @@ int main( void )
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[malloc](malloc.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
+[tmpfile_s](tmpfile-s.md)<br/>

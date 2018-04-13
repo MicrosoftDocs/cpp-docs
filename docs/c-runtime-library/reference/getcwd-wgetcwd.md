@@ -59,7 +59,7 @@ The `_getcwd` function gets the full path of the current working directory for t
 
 `_wgetcwd` is a wide-character version of `_getcwd`; the *buffer* argument and return value of `_wgetcwd` are wide-character strings. `_wgetcwd` and `_getcwd` behave identically otherwise.
 
-When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getcwd` and `_wgetcwd` are replaced by calls to `_getcwd_dbg` and `_wgetcwd_dbg` to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](../../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md).
+When `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, calls to `_getcwd` and `_wgetcwd` are replaced by calls to `_getcwd_dbg` and `_wgetcwd_dbg` to allow for debugging memory allocations. For more information, see [_getcwd_dbg, _wgetcwd_dbg](getcwd-dbg-wgetcwd-dbg.md).
 
 ### Generic-Text Routine Mappings
 
@@ -78,7 +78,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getcwd.c
 // This program places the name of the current directory in the
 // buffer array, then displays the name of the current directory
@@ -112,6 +112,6 @@ C:\Code
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>

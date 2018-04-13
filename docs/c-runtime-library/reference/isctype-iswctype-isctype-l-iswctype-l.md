@@ -53,7 +53,7 @@ int _iswctype_l(
 Integer to test.
 
 `desc`
-Property to test for. This is normally retrieved using ctype or [wctype](../../c-runtime-library/reference/wctype.md).
+Property to test for. This is normally retrieved using ctype or [wctype](wctype.md).
 
 *locale*
 The locale to use for any locale-dependent tests.

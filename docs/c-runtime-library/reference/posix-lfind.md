@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # lfind
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_lfind](../../c-runtime-library/reference/lfind.md) or security-enhanced [_lfind_s](../../c-runtime-library/reference/lfind-s.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_lfind](lfind.md) or security-enhanced [_lfind_s](lfind-s.md) instead.

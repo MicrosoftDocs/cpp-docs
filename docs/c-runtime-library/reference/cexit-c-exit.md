@@ -33,7 +33,7 @@ void _c_exit( void );
 
 ## Remarks
 
-The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions registered by `atexit` and `_onexit`. Then `_cexit` flushes all I/O buffers and closes all open streams before returning. `_c_exit` is the same as `_exit` but returns to the calling process without processing `atexit` or `_onexit` or flushing stream buffers. The behavior of `exit`,`_exit`, `_cexit`, and `_c_exit` is shown in the following table.
+The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions registered by `atexit` and `_onexit`. Then `_cexit` flushes all I/O buffers and closes all open streams before returning. `_c_exit` is the same as `_exit` but returns to the calling process without processing `atexit` or `_onexit` or flushing stream buffers. The behavior of `exit`, `_exit`, `_cexit`, and `_c_exit` is shown in the following table.
 
 |Function|Behavior|
 |--------------|--------------|
@@ -44,7 +44,7 @@ The `_cexit` function calls, in last-in, first-out (LIFO) order, the functions r
 
 When you call the `_cexit` or `_c_exit` functions, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is an object that is defined in a function where the object is not declared to be static. A temporary object is an object created by the compiler. To destroy an automatic object before calling `_cexit` or `_c_exit`, explicitly call the destructor for the object, as follows:
 
-```
+```cpp
 myObject.myClass::~myClass( );
 ```
 
@@ -60,10 +60,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[atexit](../../c-runtime-library/reference/atexit.md)<br/>
+[abort](abort.md)<br/>
+[atexit](atexit.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>
+[system, _wsystem](system-wsystem.md)<br/>

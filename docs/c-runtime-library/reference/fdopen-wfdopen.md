@@ -55,7 +55,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 The `_fdopen` function associates an I/O stream with the file that is identified by *fd*, and thus allows a file that is opened for low-level I/O to be buffered and formatted. `_wfdopen` is a wide-character version of `_fdopen`; the *mode* argument to `_wfdopen` is a wide-character string. `_wfdopen` and `_fdopen` otherwise behave identically.
 
-File descriptors passed into `_fdopen` are owned by the returned `FILE *` stream. If `_fdopen` is successful, do not call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor. Calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
+File descriptors passed into `_fdopen` are owned by the returned `FILE *` stream. If `_fdopen` is successful, do not call [\_close](close.md) on the file descriptor. Calling [fclose](fclose-fcloseall.md) on the returned `FILE *` also closes the file descriptor.
 
 ### Generic-Text Routine Mappings
 
@@ -83,12 +83,12 @@ Opens an empty file for both reading and writing. If the given file exists, its 
 `"a+"`
 Opens for reading and appending. Creates the file if it does not exist.
 
-When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, `fseek`, or `rewind` operation. You can specify the current position for the `fsetpos` or `fseek` operation, if you want to.
+When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, [fseek](fseek-fseeki64.md), or `rewind` operation. You can specify the current position for the `fsetpos` or [fseek](fseek-fseeki64.md) operation, if you want to.
 
 In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
 
 `t`
-Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` checks for a Ctrl+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file that ends with a Ctrl+Z might cause `fseek` to behave incorrectly near the end of the file.
+Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. In files opened for reading/writing, `fopen` checks for a Ctrl+Z at the end of the file and removes it, if possible. This is done because using the [fseek](fseek-fseeki64.md) and `ftell` functions to move within a file that ends with a Ctrl+Z might cause [fseek](fseek-fseeki64.md) to behave incorrectly near the end of the file.
 
 `b`
 Open in binary (untranslated) mode. Any translations from `t` mode are suppressed.
@@ -103,7 +103,7 @@ The `t`, `c`, and `n` *mode* options are Microsoft extensions for `fopen` and `_
 
 If `t` or `b` is not given in *mode*, the default translation mode is defined by the global variable [\_fmode](../../c-runtime-library/fmode.md). If `t` or `b` is prefixed to the argument, the function fails and returns NULL. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-Valid characters for the *mode* string used in `fopen` and `_fdopen` correspond to *oflag* arguments used in [\_open](../../c-runtime-library/reference/open-wopen.md) and [\_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as shown in this table:
+Valid characters for the *mode* string used in `fopen` and `_fdopen` correspond to *oflag* arguments used in [\_open](open-wopen.md) and [\_sopen](sopen-wsopen.md), as shown in this table:
 
 |Characters in *mode* string|Equivalent *oflag* value for `_open` and `_sopen`|
 |---------------------------------|---------------------------------------------------|
@@ -166,22 +166,22 @@ int main( void )
 
 ### Input: crt_fdopen.txt
 
-```
+```Input
 Line one
 Line two
 ```
 
 ### Output
 
-```
+```Output
 Lines in file: 2
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
-[fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[\_open, \_wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[\_dup, \_dup2](dup-dup2.md)<br/>
+[fclose, \_fcloseall](fclose-fcloseall.md)<br/>
+[fopen, \_wfopen](fopen-wfopen.md)<br/>
+[freopen, \_wfreopen](freopen-wfreopen.md)<br/>
+[\_open, \_wopen](open-wopen.md)<br/>

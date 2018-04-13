@@ -71,5 +71,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_get_errno](../../c-runtime-library/reference/get-errno.md)<br/>
+[_get_errno](get-errno.md)<br/>
 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

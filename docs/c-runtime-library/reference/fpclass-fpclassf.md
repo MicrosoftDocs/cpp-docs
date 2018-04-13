@@ -60,7 +60,7 @@ The **_fpclass** and **_fpclassf** functions return an integer value that indica
 
 ## Remarks
 
-The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are similar to [fpclassify](../../c-runtime-library/reference/fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
+The **_fpclass** and **_fpclassf** functions are Microsoft specific. They are similar to [fpclassify](fpclassify.md), but return more detailed information about the argument. The **_fpclassf** function is only available when compiled for the x64 platform.
 
 ## Requirements
 
@@ -73,5 +73,5 @@ For more compatibility and conformance information, see [Compatibility](../../c-
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
-[fpclassify](../../c-runtime-library/reference/fpclassify.md)<br/>
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+[fpclassify](fpclassify.md)<br/>

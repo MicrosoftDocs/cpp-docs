@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strdate_s, _wstrdate_s
 
-Copy the current system date to a buffer. These are versions of [_strdate, _wstrdate](../../c-runtime-library/reference/strdate-wstrdate.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Copy the current system date to a buffer. These are versions of [_strdate, _wstrdate](strdate-wstrdate.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -98,15 +98,15 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ## Example
 
-See the example for [time](../../c-runtime-library/reference/time-time32-time64.md).
+See the example for [time](time-time32-time64.md).
 
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>

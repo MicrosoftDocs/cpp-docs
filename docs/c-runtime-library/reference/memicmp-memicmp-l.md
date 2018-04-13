@@ -84,7 +84,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_memicmp.c
 // This program uses _memicmp to compare
 // the first 29 letters of the strings named first and
@@ -120,10 +120,10 @@ First is equal to second.
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
-[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>
+[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

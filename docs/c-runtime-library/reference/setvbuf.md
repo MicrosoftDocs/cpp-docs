@@ -86,7 +86,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_setvbuf.c
 // This program opens two streams: stream1
 // and stream2. It then uses setvbuf to give stream1 a
@@ -124,7 +124,7 @@ int main( void )
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[fflush](../../c-runtime-library/reference/fflush.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[setbuf](../../c-runtime-library/reference/setbuf.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[fflush](fflush.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[setbuf](setbuf.md)<br/>

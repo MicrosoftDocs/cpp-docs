@@ -45,9 +45,9 @@ Pointer to the beginning of an allocated memory block.
 
 We do not recommend that you use this function. Starting with the Visual Studio 2010 CRT library, all CRT libraries share one OS heap, the *process heap*. The `_CrtIsValidHeapPointer` function reports whether the pointer was allocated in a CRT heap, but not that it was allocated by the caller's CRT library. For example, consider a block allocated by using the Visual Studio 2010 version of the CRT library. If the `_CrtIsValidHeapPointer` function exported by the Visual Studio 2012 version of the CRT library tests the pointer, it returns TRUE. This is no longer a useful test. In versions of the CRT library before Visual Studio 2010, the function is used to ensure that a specific memory address is within the local heap. The local heap refers to the heap created and managed by a particular instance of the C run-time library. If a dynamic-link library (DLL) contains a static link to the run-time library, it has its own instance of the run-time heap, and therefore its own heap, independent of the application's local heap. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtIsValidHeapPointer` are removed during preprocessing.
 
-Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:
+Because this function returns TRUE or FALSE, it can be passed to one of the [_ASSERT](assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:
 
-```
+```C
 _ASSERTE( _CrtIsValidHeapPointer( userData ) );
 ```
 
@@ -69,13 +69,11 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 The following example demonstrates how to test whether memory is valid when it is used with C run-time libraries before Visual Studio 2010. This example is provided for users of legacy CRT library code.
 
-```
+```C
 // crt_isvalid.c
-/*
-* This program allocates a block of memory using _malloc_dbg
-* and then tests the validity of this memory by calling
-* _CrtIsMemoryBlock,_CrtIsValidPointer, and _CrtIsValidHeapPointer.
-*/
+// This program allocates a block of memory using _malloc_dbg
+// and then tests the validity of this memory by calling
+// _CrtIsMemoryBlock,_CrtIsValidPointer, and _CrtIsValidHeapPointer.
 
 #include <stdio.h>
 #include <string.h>
@@ -87,40 +85,36 @@ The following example demonstrates how to test whether memory is valid when it i
 
 int main( void )
 {
-        char *my_pointer;
+    char *my_pointer;
 
-        /*
-         * Call _malloc_dbg to include the filename and line number
-         * of our allocation request in the header information
-         */
-        my_pointer = (char *)_malloc_dbg( sizeof(char) * 10,
+    // Call _malloc_dbg to include the filename and line number
+    // of our allocation request in the header information
+    my_pointer = (char *)_malloc_dbg( sizeof(char) * 10,
         _NORMAL_BLOCK, __FILE__, __LINE__ );
 
-        // Ensure that the memory got allocated correctly
-        _CrtIsMemoryBlock((const void *)my_pointer, sizeof(char) * 10,
+    // Ensure that the memory got allocated correctly
+    _CrtIsMemoryBlock((const void *)my_pointer, sizeof(char) * 10,
         NULL, NULL, NULL );
 
-         // Test for read/write accessibility
-        if (_CrtIsValidPointer((const void *)my_pointer,
+    // Test for read/write accessibility
+    if (_CrtIsValidPointer((const void *)my_pointer,
         sizeof(char) * 10, TRUE))
-                printf("my_pointer has read and write accessibility.\n");
-        else
-                printf("my_pointer only has read access.\n");
+        printf("my_pointer has read and write accessibility.\n");
+    else
+        printf("my_pointer only has read access.\n");
 
-        // Make sure my_pointer is within the local heap
-        if (_CrtIsValidHeapPointer((const void *)my_pointer))
-                printf("my_pointer is within the local heap.\n");
-        else
-                printf("my_pointer is not located within the local"
-                       " heap.\n");
+    // Make sure my_pointer is within the local heap
+    if (_CrtIsValidHeapPointer((const void *)my_pointer))
+        printf("my_pointer is within the local heap.\n");
+    else
+        printf("my_pointer is not located within the local"
+               " heap.\n");
 
-        free(my_pointer);
+    free(my_pointer);
 }
 ```
 
-## Output
-
-```
+```Output
 my_pointer has read and write accessibility.
 my_pointer is within the local heap.
 ```

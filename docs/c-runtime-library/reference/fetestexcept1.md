@@ -69,6 +69,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>
-[feraiseexcept](../../c-runtime-library/reference/feraiseexcept.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[feclearexcept](feclearexcept1.md)<br/>
+[feraiseexcept](feraiseexcept.md)<br/>

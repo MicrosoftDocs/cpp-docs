@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _splitpath, _wsplitpath
 
-Break a path name into components. More secure versions of these functions are available, see [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).
+Break a path name into components. More secure versions of these functions are available, see [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
 ## Syntax
 
@@ -64,7 +64,7 @@ Filename extension, including leading period (`.`). You can pass `NULL` for this
 
 The `_splitpath` function breaks a path into its four components. `_splitpath` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. `_wsplitpath` is a wide-character version of `_splitpath`; the arguments to `_wsplitpath` are wide-character strings. These functions behave identically otherwise.
 
-**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). More secure versions of these functions are available; see [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).
+**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). More secure versions of these functions are available; see [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
 ### Generic-Text Routine Mappings
 
@@ -102,13 +102,13 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [_makepath](../../c-runtime-library/reference/makepath-wmakepath.md).
+See the example for [_makepath](makepath-wmakepath.md).
 
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)<br/>
+[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_makepath, _wmakepath](makepath-wmakepath.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
+[_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)<br/>

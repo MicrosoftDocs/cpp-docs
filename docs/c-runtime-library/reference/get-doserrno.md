@@ -43,9 +43,9 @@ If `_get_doserrno` succeeds, it returns zero; if it fails, it returns an error c
 
 ## Remarks
 
-The `_doserrno` global macro is set to zero during CRT initialization, before process execution begins. It is set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it is never reset to zero during execution. When you write code to check the error value returned by a function, always clear `_doserrno` by using [_set_doserrno](../../c-runtime-library/reference/set-doserrno.md) before the function call. Because another function call may overwrite `_doserrno`, check the value by using `_get_doserrno` immediately after the function call.
+The `_doserrno` global macro is set to zero during CRT initialization, before process execution begins. It is set to the operating-system error value returned by any system-level function call that returns an operating-system error, and it is never reset to zero during execution. When you write code to check the error value returned by a function, always clear `_doserrno` by using [_set_doserrno](set-doserrno.md) before the function call. Because another function call may overwrite `_doserrno`, check the value by using `_get_doserrno` immediately after the function call.
 
-We recommend [_get_errno](../../c-runtime-library/reference/get-errno.md) instead of `_get_doserrno` for portable error codes.
+We recommend [_get_errno](get-errno.md) instead of `_get_doserrno` for portable error codes.
 
 Possible values of `_doserrno` are defined in \<errno.h>.
 
@@ -59,5 +59,5 @@ Possible values of `_doserrno` are defined in \<errno.h>.
 
 ## See also
 
-[_set_doserrno](../../c-runtime-library/reference/set-doserrno.md)<br/>
+[_set_doserrno](set-doserrno.md)<br/>
 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

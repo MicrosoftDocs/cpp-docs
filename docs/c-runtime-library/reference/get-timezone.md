@@ -59,6 +59,6 @@ For more information, see [Compatibility](../../c-runtime-library/compatibility.
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
-[_get_daylight](../../c-runtime-library/reference/get-daylight.md)<br/>
-[_get_dstbias](../../c-runtime-library/reference/get-dstbias.md)<br/>
-[_get_tzname](../../c-runtime-library/reference/get-tzname.md)<br/>
+[_get_daylight](get-daylight.md)<br/>
+[_get_dstbias](get-dstbias.md)<br/>
+[_get_tzname](get-tzname.md)<br/>

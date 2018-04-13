@@ -99,7 +99,7 @@ The square root of 45.35 is 6.73
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
-[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
-[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
+[exp, expf, expl](exp-expf.md)<br/>
+[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
+[pow, powf, powl](pow-powf-powl.md)<br/>
 [_CIsqrt](../../c-runtime-library/cisqrt.md)<br/>

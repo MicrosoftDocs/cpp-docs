@@ -56,7 +56,7 @@ The `_setmode` function sets to *mode* the translation mode of the file given by
 You can also pass `_O_U16TEXT`, `_O_U8TEXT`, or `_O_WTEXT` to enable Unicode mode, as demonstrated in the second example later in this document. `_setmode` is typically used to modify the default translation mode of `stdin` and `stdout`, but you can use it on any file. If you apply `_setmode` to the file descriptor for a stream, call `_setmode` before you perform any input or output operations on the stream.
 
 > [!CAUTION]
->  If you write data to a file stream, explicitly flush the code by using [fflush](../../c-runtime-library/reference/fflush.md) before you use `_setmode` to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
+>  If you write data to a file stream, explicitly flush the code by using [fflush](fflush.md) before you use `_setmode` to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
 
 ## Requirements
 
@@ -68,7 +68,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_setmode.c
 // This program uses _setmode to change
 // stdin from text mode to binary mode.
@@ -96,7 +96,7 @@ int main( void )
 
 ## Example
 
-```
+```C
 // crt_setmodeunicode.c
 // This program uses _setmode to change
 // stdout to Unicode. Cyrillic and Ideographic
@@ -117,7 +117,7 @@ int main(void) {
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_set_fmode](../../c-runtime-library/reference/set-fmode.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_set_fmode](set-fmode.md)<br/>

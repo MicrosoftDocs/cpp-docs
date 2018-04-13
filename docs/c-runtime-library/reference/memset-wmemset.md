@@ -75,7 +75,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_memset.c
 /* This program uses memset to
 * set the first four chars of buffer to "*".
@@ -94,16 +94,16 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Before: This is a test of the memset function
 After:  **** is a test of the memset function
 ```
 
 Here's an example of the use of wmemset:
 
-```
+```C
 // crt_wmemset.c
 /* This program uses memset to
 * set the first four chars of buffer to "*".
@@ -122,9 +122,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Before: This is a test of the wmemset function
 After:  **** is a test of the wmemset function
 ```
@@ -132,8 +132,8 @@ After:  **** is a test of the wmemset function
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>

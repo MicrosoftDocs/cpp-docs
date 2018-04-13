@@ -51,7 +51,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-See [fread](../../c-runtime-library/reference/fread.md).
+See [fread](fread.md).
 
 ## Remarks
 
@@ -68,5 +68,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_read](read.md)<br/>

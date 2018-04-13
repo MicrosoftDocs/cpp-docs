@@ -53,7 +53,7 @@ Returns the size (in bytes) as an unsigned integer.
 
 The *alignment* and *offset* values must be the same as the values passed to the function that allocated the block.
 
-`_aligned_msize_dbg` is a debug version of the [_aligned_msize](../../c-runtime-library/reference/aligned-msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_msize_dbg` is reduced to a call to `_aligned_msize`. Both `_aligned_msize` and `_aligned_msize_dbg` calculate the size of a memory block in the base heap, but `_aligned_msize_dbg` adds a debugging feature: It includes the buffers on either side of the user portion of the memory block in the returned size.
+`_aligned_msize_dbg` is a debug version of the [_aligned_msize](aligned-msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_msize_dbg` is reduced to a call to `_aligned_msize`. Both `_aligned_msize` and `_aligned_msize_dbg` calculate the size of a memory block in the base heap, but `_aligned_msize_dbg` adds a debugging feature: It includes the buffers on either side of the user portion of the memory block in the returned size.
 
 This function validates its parameter. If *memblock* is a null pointer or *alignment* is not a power of 2, `_msize` invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.
 

@@ -74,7 +74,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_fputs.c
 // This program uses fputs to write
 // a single line to the stdout stream.
@@ -94,6 +94,6 @@ Hello world from fputs.
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)<br/>
+[fgets, fgetws](fgets-fgetws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](../../c-runtime-library/reference/puts-putws.md)<br/>
+[puts, _putws](puts-putws.md)<br/>

@@ -79,7 +79,7 @@ Otherwise, may return one of the following errors:
 |Underflow range error|correct value (after rounding)|
 |*x* or *y* is NaN|NaN|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -97,6 +97,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[fmax, fmaxf, fmaxl](../../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)<br/>
-[abs, labs, llabs, _abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
+[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>

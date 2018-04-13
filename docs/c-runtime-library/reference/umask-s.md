@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _umask_s
 
-Sets the default file-permission mask. A version of [_umask](../../c-runtime-library/reference/umask.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Sets the default file-permission mask. A version of [_umask](umask.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -38,7 +38,7 @@ errno_t _umask_s(
 *mode*
 Default permission setting.
 
-`oldMode`
+*oldMode*
 The previous value of the permission setting.
 
 ## Return Value
@@ -47,7 +47,7 @@ Returns an error code if `Mode` does not specify a valid mode or the `pOldMode` 
 
 ### Error Conditions
 
-|*mode*|`pOldMode`|**Return Value**|**Contents of**  `oldMode`|
+|*mode*|`pOldMode`|**Return Value**|**Contents of**  *oldMode*|
 |------------|----------------|----------------------|--------------------------------|
 |any|`NULL`|`EINVAL`|not modified|
 |invalid mode|any|`EINVAL`|not modified|
@@ -83,7 +83,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_umask_s.c
 /* This program uses _umask_s to set
 * the file-permission mask so that all future
@@ -119,8 +119,8 @@ Oldmask = 0x0000
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_umask](../../c-runtime-library/reference/umask.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_umask](umask.md)<br/>

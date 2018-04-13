@@ -59,7 +59,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_isatty.c
 /* This program checks to see whether
 * stdout has been redirected to a file.
@@ -77,9 +77,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 stdout has not been redirected to a file
 ```
 

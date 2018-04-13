@@ -60,21 +60,21 @@ The default behavior of FE_TONEAREST is to round results midway between represen
 
 The current rounding mode affects these operations:
 
--   String conversions.
+- String conversions.
 
--   The results of floating-point arithmetic operators outside of constant expressions.
+- The results of floating-point arithmetic operators outside of constant expressions.
 
--   The library rounding functions, such as **rint** and **nearbyint**.
+- The library rounding functions, such as **rint** and **nearbyint**.
 
--   Return values from standard library mathematical functions.
+- Return values from standard library mathematical functions.
 
 The current rounding mode does not affect these operations:
 
--   The **trunc**, **ceil**, **floor**, and **lround** library functions.
+- The **trunc**, **ceil**, **floor**, and **lround** library functions.
 
--   Floating-point to integer implicit casts and conversions, which always round towards zero.
+- Floating-point to integer implicit casts and conversions, which always round towards zero.
 
--   The results of floating-point arithmetic operators in constant expressions, which always round to the nearest value.
+- The results of floating-point arithmetic operators in constant expressions, which always round to the nearest value.
 
 To use these functions, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
@@ -88,7 +88,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[nearbyint, nearbyintf, nearbyintl](../../c-runtime-library/reference/nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[rint, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)<br/>
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](../../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
+[rint, rintf, rintl](rint-rintf-rintl.md)<br/>
+[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>

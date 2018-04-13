@@ -65,7 +65,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_heapchk.c
 // This program checks the heap for
 // consistency and prints an appropriate message.
@@ -110,6 +110,6 @@ OK - heap is fine
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapmin](../../c-runtime-library/reference/heapmin.md)<br/>
+[_heapmin](heapmin.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../../c-runtime-library/reference/heapwalk.md)<br/>
+[_heapwalk](heapwalk.md)<br/>

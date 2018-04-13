@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # strrev, wcsrev
 
-These POSIX functions are deprecated. Use the ISO C++ conformant [_strrev, _wcsrev, _mbsrev, _mbsrev_l](../../c-runtime-library/reference/strrev-wcsrev-mbsrev-mbsrev-l.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [_strrev, _wcsrev, _mbsrev, _mbsrev_l](strrev-wcsrev-mbsrev-mbsrev-l.md) instead.

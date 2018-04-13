@@ -65,13 +65,13 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
+See the example for [fopen](fopen-wfopen.md).
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[fflush](../../c-runtime-library/reference/fflush.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
+[_close](close.md)<br/>
+[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
+[fflush](fflush.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[freopen, _wfreopen](freopen-wfreopen.md)<br/>

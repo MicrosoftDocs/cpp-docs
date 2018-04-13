@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # localtime, _localtime32, _localtime64
 
-Converts a time value and corrects for the local time zone. More secure versions of these functions are available; see [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).
+Converts a time value and corrects for the local time zone. More secure versions of these functions are available; see [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md).
 
 ## Syntax
 
@@ -69,11 +69,11 @@ If the **TZ** environment variable is set, the C run-time library assumes rules 
 
 ## Remarks
 
-The **localtime** function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [tm](../../c-runtime-library/standard-types.md). The **long** value *sourceTime* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [time](../../c-runtime-library/reference/time-time32-time64.md) function.
+The **localtime** function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [tm](../../c-runtime-library/standard-types.md). The **long** value *sourceTime* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [time](time-time32-time64.md) function.
 
-Both the 32-bit and 64-bit versions of [gmtime](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [mktime](../../c-runtime-library/reference/mktime-mktime32-mktime64.md), [mkgmtime](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md), and **localtime** all use a single **tm** structure per thread for the conversion. Each call to one of these routines destroys the result of the previous call.
+Both the 32-bit and 64-bit versions of [gmtime](gmtime-gmtime32-gmtime64.md), [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md), and **localtime** all use a single **tm** structure per thread for the conversion. Each call to one of these routines destroys the result of the previous call.
 
-**localtime** corrects for the local time zone if the user first sets the global environment variable **TZ**. When **TZ** is set, three other environment variables (**_timezone**, **_daylight**, and **_tzname**) are automatically set as well. If the **TZ** variable is not set, **localtime** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific Time Zone, is used by default. See [_tzset](../../c-runtime-library/reference/tzset.md) for a description of these variables. **TZ** is a Microsoft extension and not part of the ANSI standard definition of **localtime**.
+**localtime** corrects for the local time zone if the user first sets the global environment variable **TZ**. When **TZ** is set, three other environment variables (**_timezone**, **_daylight**, and **_tzname**) are automatically set as well. If the **TZ** variable is not set, **localtime** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific Time Zone, is used by default. See [_tzset](tzset.md) for a description of these variables. **TZ** is a Microsoft extension and not part of the ANSI standard definition of **localtime**.
 
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
@@ -134,10 +134,10 @@ Tue Feb 12 10:05:58 AM
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>

@@ -51,7 +51,7 @@ Report hook to install or remove in the narrow-character or wide-character versi
 
 ## Remarks
 
-`_CrtSetReportHook2` and `_CrtSetReportHookW2` let you hook or unhook a function, whereas [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) only lets you hook a function.
+`_CrtSetReportHook2` and `_CrtSetReportHookW2` let you hook or unhook a function, whereas [_CrtSetReportHook](crtsetreporthook.md) only lets you hook a function.
 
 `_CrtSetReportHook2` or `_CrtSetReportHookW2` should be used instead of `_CrtSetReportHook` when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with `_CrtSetReportHook`.
 
@@ -59,20 +59,20 @@ Any hook functions added with `_CrtSetReportHook` are called if there are no hoo
 
 The wide-character version of this function is available. The report hook functions take a string whose type (wide or narrow characters) must match the version of this function used. Use the following function prototype for the report hooks used with the wide-character version of this function:
 
-```
+```C
 int YourReportHook( int reportType, wchar_t *message, int *returnValue );
 ```
 
 Use the following prototype for the narrow-character report hooks:
 
-```
+```C
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
 These functions validate their parameters. If *mode* or `pfnNewNook` is invalid, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
 
 > [!NOTE]
->  If your application is compiled with `/clr` and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.
+> If your application is compiled with `/clr` and the reporting function is called after the application has exited main, the CLR will throw an exception if the reporting function calls any CRT functions.
 
 ## Requirements
 
@@ -89,7 +89,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-```
+```C
 // crt_setreporthook2.c
 #include <windows.h>
 #include <stdio.h>
@@ -221,9 +221,9 @@ int   main(int argc, char* argv[])
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 _CrtSetReportHook2(_CRT_RPTHOOK_INSTALL, TestHook1) returned 0
 _CrtSetReportHook2(_CRT_RPTHOOK_INSTALL, TestHook2) returned 0
 _CrtSetReportHook2(_CRT_RPTHOOK_INSTALL, TestHook2) returned 0

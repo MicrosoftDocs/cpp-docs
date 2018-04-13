@@ -61,7 +61,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-```
+```cpp
 // crt_crtreportblocktype.cpp
 // compile with: /MDd
 
@@ -99,9 +99,9 @@ int main(void)
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Dumper found block at 00314F78: type 4, subtype 3
 Dumper found block at 00314F38: type 4, subtype 2
 Dumper found block at 00314F00: type 4, subtype 1
@@ -120,7 +120,7 @@ Object dump complete.
 
 ## See also
 
-[_CrtDoForAllClientObjects](../../c-runtime-library/reference/crtdoforallclientobjects.md)<br/>
-[_CrtSetDumpClient](../../c-runtime-library/reference/crtsetdumpclient.md)<br/>
-[_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md)<br/>
-[_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md)<br/>
+[_CrtDoForAllClientObjects](crtdoforallclientobjects.md)<br/>
+[_CrtSetDumpClient](crtsetdumpclient.md)<br/>
+[_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md)<br/>
+[_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md)<br/>

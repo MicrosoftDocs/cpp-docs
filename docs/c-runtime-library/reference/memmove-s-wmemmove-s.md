@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # memmove_s, wmemmove_s
 
-Moves one buffer to another. These are versions of [memmove, wmemmove](../../c-runtime-library/reference/memmove-wmemmove.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Moves one buffer to another. These are versions of [memmove, wmemmove](memmove-wmemmove.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -84,7 +84,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_memmove_s.c
 //
 // The program demonstrates the
@@ -111,9 +111,9 @@ int main()
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Before: 0123456789
 After: 0012345789
 ```
@@ -121,9 +121,9 @@ After: 0012345789
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[strcpy_s, wcscpy_s, _mbscpy_s](../../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
-[strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
+[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

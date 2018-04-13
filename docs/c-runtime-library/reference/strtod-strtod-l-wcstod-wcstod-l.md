@@ -28,20 +28,20 @@ Convert strings to a double-precision value.
 
 ```C
 double strtod(
-   const char *nptr,
+   const char *strSource,
    char **endptr
 );
 double _strtod_l(
-   const char *nptr,
+   const char *strSource,
    char **endptr,
    _locale_t locale
 );
 double wcstod(
-   const wchar_t *nptr,
+   const wchar_t *strSource,
    wchar_t **endptr
 );
 double wcstod_l(
-   const wchar_t *nptr,
+   const wchar_t *strSource,
    wchar_t **endptr,
    _locale_t locale
 );
@@ -49,7 +49,7 @@ double wcstod_l(
 
 ### Parameters
 
-*nptr*
+*strSource*
 Null-terminated string to convert.
 
 *endptr*
@@ -66,7 +66,7 @@ The locale to use.
 
 ## Remarks
 
-Each function converts the input string *nptr* to a `double`. The `strtod` function converts *nptr* to a double-precision value. `strtod` stops reading the string *nptr* at the first character it cannot recognize as part of a number. This may be the terminating null character. `wcstod` is a wide-character version of `strtod`; its *nptr* argument is a wide-character string. These functions behave identically otherwise.
+Each function converts the input string *strSource* to a `double`. The `strtod` function converts *strSource* to a double-precision value. `strtod` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. `wcstod` is a wide-character version of `strtod`; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -75,11 +75,11 @@ Each function converts the input string *nptr* to a `double`. The `strtod` funct
 |`_tcstod`|`strtod`|`strtod`|`wcstod`|
 |`_tcstod_l`|`_strtod_l`|`_strtod_l`|`_wcstod_l`|
 
-The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *nptr*. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *strSource*. For more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *nptr* is stored at the location pointed to by *endptr*.
+If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
-`strtod` expects *nptr* to point to a string of one of the following forms:
+`strtod` expects *strSource* to point to a string of one of the following forms:
 
 [*whitespace*] [*sign*] {*digits* [*radix* *digits*] &#124; *radix* *digits*} [{**e** &#124; **E**} [*sign*] *digits*]
 [*whitespace*] [*sign*] {**0x** &#124; **0X**} {*hexdigits* [*radix* *hexdigits*] &#124; *radix* *hexdigits*} [{**p** &#124; **P**} [*sign*] *hexdigits*]
@@ -171,9 +171,9 @@ string = 10110134932
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
-[strtol, wcstol, _strtol_l, _wcstol_l](../../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)<br/>
-[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
-[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
-[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
-[_free_locale](../../c-runtime-library/reference/free-locale.md)<br/>
+[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
+[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[localeconv](localeconv.md)<br/>
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
+[_free_locale](free-locale.md)<br/>

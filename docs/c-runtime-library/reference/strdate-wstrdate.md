@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strdate, _wstrdate
 
-Copy current system date to a buffer. More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md).
+Copy current system date to a buffer. More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md).
 
 ## Syntax
 
@@ -54,7 +54,7 @@ Each of these functions returns a pointer to the resulting character string *dat
 
 ## Remarks
 
-More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.
+More secure versions of these functions are available; see [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). It is recommended that the more secure functions be used wherever possible.
 
 The `_strdate` function copies the current system date to the buffer pointed to by *datestr*, formatted `mm`/`dd`/`yy`, where `mm` is two digits representing the month, `dd` is two digits representing the day, and `yy` is the last two digits of the year. For example, the string `12/05/99` represents December 5, 1999. The buffer must be at least 9 bytes long.
 
@@ -81,7 +81,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // strdate.c
 // compile with: /W3
 #include <time.h>
@@ -108,10 +108,10 @@ OS date: 04/25/03
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>

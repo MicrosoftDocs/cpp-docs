@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # chmod
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_chmod](../../c-runtime-library/reference/chmod-wchmod.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_chmod](chmod-wchmod.md) instead.

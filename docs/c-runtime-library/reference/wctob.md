@@ -59,7 +59,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 This program illustrates the behavior of the `wcstombs` function.
 
-```
+```C
 // crt_wctob.c
 #include <stdio.h>
 #include <wchar.h>
@@ -94,8 +94,8 @@ Determined the corresponding multibyte character to be "A".
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
 [WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>

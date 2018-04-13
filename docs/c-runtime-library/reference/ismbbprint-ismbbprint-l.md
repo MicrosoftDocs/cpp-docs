@@ -48,9 +48,7 @@ Locale to use.
 
 `_ismbbprint` returns a nonzero value if the expression:
 
-```
-isprint || _ismbbkprint
-```
+`isprint(c) || _ismbbkprint(c)`
 
 is nonzero for *c*, or 0 if it is not. `_ismbbprint` uses the current locale for any locale-dependent behavior. `_ismbbprint_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

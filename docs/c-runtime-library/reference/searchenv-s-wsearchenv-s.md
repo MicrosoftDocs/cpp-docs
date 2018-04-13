@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _searchenv_s, _wsearchenv_s
 
-Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](searchenv-wsearchenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -115,7 +115,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_searchenv_s.c
 /* This program searches for a file in
 * a directory specified by an environment variable.
@@ -152,6 +152,6 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md)<br/>
-[getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>
+[_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>
+[getenv, _wgetenv](getenv-wgetenv.md)<br/>
+[_putenv, _wputenv](putenv-wputenv.md)<br/>

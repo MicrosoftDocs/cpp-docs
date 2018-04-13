@@ -72,7 +72,7 @@ A range error may occur if the magnitude of *x* is too large or too small for th
 |overflow range error|±HUGE_VAL, ±HUGE_VALF, or ±HUGE_VALL|
 |underflow range error|the correct value, after rounding.|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -90,5 +90,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[lgamma, lgammaf, lgammal](../../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)<br/>

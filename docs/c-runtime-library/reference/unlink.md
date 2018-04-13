@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # unlink
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_unlink](../../c-runtime-library/reference/unlink-wunlink.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_unlink](unlink-wunlink.md) instead.

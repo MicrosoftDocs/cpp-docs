@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _control87, _controlfp, __control87_2
 
-Gets and sets the floating-point control word. A more secure version of **_controlfp** is available; see [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md).
+Gets and sets the floating-point control word. A more secure version of **_controlfp** is available; see [_controlfp_s](controlfp-s.md).
 
 ## Syntax
 
@@ -173,6 +173,6 @@ Default:  0x0001
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
-[_status87, _statusfp, _statusfp2](../../c-runtime-library/reference/status87-statusfp-statusfp2.md)<br/>
-[_controlfp_s](../../c-runtime-library/reference/controlfp-s.md)<br/>
+[_clear87, _clearfp](clear87-clearfp.md)<br/>
+[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
+[_controlfp_s](controlfp-s.md)<br/>

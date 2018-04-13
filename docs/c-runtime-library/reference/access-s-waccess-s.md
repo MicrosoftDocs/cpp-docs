@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _access_s, _waccess_s
 
-Determines file read/write permissions. This is a version of [_access, _waccess](../../c-runtime-library/reference/access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Determines file read/write permissions. This is a version of [_access, _waccess](access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -94,7 +94,7 @@ These functions validate their parameters. If *path* is `NULL` or *mode* does no
 
 This example uses `_access_s` to check the file named crt_access_s.c to see whether it exists and whether writing is allowed.
 
-```
+```C
 // crt_access_s.c
 
 #include <io.h>
@@ -137,8 +137,8 @@ File crt_access_s.c does not have write permission.
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](../../c-runtime-library/reference/access-waccess.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
+[_access, _waccess](access-waccess.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _malloca
 
-Allocates memory on the stack. This is a version of [_alloca](../../c-runtime-library/reference/alloca.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Allocates memory on the stack. This is a version of [_alloca](alloca.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -45,20 +45,20 @@ A stack overflow exception is generated if the space cannot be allocated. The st
 
 ## Remarks
 
-`_malloca` allocates *size* bytes from the program stack or the heap if the request exceeds a certain size in bytes given by `_ALLOCA_S_THRESHOLD`. The difference between `_malloca` and `_alloca` is that `_alloca` always allocates on the stack, regardless of the size. Unlike `_alloca`, which does not require or permit a call to `free` to free the memory so allocated, `_malloca` requires the use of [_freea](../../c-runtime-library/reference/freea.md) to free memory. In debug mode, `_malloca` always allocates memory from the heap.
+`_malloca` allocates *size* bytes from the program stack or the heap if the request exceeds a certain size in bytes given by `_ALLOCA_S_THRESHOLD`. The difference between `_malloca` and `_alloca` is that `_alloca` always allocates on the stack, regardless of the size. Unlike `_alloca`, which does not require or permit a call to `free` to free the memory so allocated, `_malloca` requires the use of [_freea](freea.md) to free memory. In debug mode, `_malloca` always allocates memory from the heap.
 
 There are restrictions to explicitly calling `_malloca` in an exception handler (EH). EH routines that run on x86-class processors operate in their own memory frame: They perform their tasks in memory space that is not based on the current location of the stack pointer of the enclosing function. The most common implementations include Windows NT structured exception handling (SEH) and C++ catch clause expressions. Therefore, explicitly calling `_malloca` in any of the following scenarios results in program failure during the return to the calling EH routine:
 
--   Windows NT SEH exception filter expression: `__except` (`_malloca ()` )
+- Windows NT SEH exception filter expression: `__except` (`_malloca ()` )
 
--   Windows NT SEH final exception handler: `__finally` {`_malloca ()` }
+- Windows NT SEH final exception handler: `__finally` {`_malloca ()` }
 
--   C++ EH catch clause expression
+- C++ EH catch clause expression
 
 However, `_malloca` can be called directly from within an EH routine or from an application-supplied callback that gets invoked by one of the EH scenarios previously listed.
 
 > [!IMPORTANT]
->  In Windows XP, if `_malloca` is called inside a try/catch block, you must call [_resetstkoflw](../../c-runtime-library/reference/resetstkoflw.md) in the catch block.
+>  In Windows XP, if `_malloca` is called inside a try/catch block, you must call [_resetstkoflw](resetstkoflw.md) in the catch block.
 
 In addition to the above restrictions, when using the [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, `_malloca` cannot be used in `__except` blocks. For more information, see [/clr Restrictions](../../build/reference/clr-restrictions.md).
 
@@ -70,7 +70,7 @@ In addition to the above restrictions, when using the [/clr (Common Language Run
 
 ## Example
 
-```
+```C
 // crt_malloca_simple.c
 #include <stdio.h>
 #include <malloc.h>
@@ -90,7 +90,7 @@ int main()
 
 ## Example
 
-```
+```C
 // crt_malloca_exception.c
 // This program demonstrates the use of
 // _malloca and trapping any exceptions
@@ -148,22 +148,22 @@ int main()
 }
 ```
 
-## Input
+### Input
 
-```
+```Input
 1000
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Enter the number of bytes to allocate using _malloca: 1000
 ```
 
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)<br/>
-[_resetstkoflw](../../c-runtime-library/reference/resetstkoflw.md)<br/>
+[calloc](calloc.md)<br/>
+[malloc](malloc.md)<br/>
+[realloc](realloc.md)<br/>
+[_resetstkoflw](resetstkoflw.md)<br/>

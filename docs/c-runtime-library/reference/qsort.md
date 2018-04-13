@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # qsort
 
-Performs a quick sort. A more secure version of this function is available; see [qsort_s](../../c-runtime-library/reference/qsort-s.md).
+Performs a quick sort. A more secure version of this function is available; see [qsort_s](qsort-s.md).
 
 ## Syntax
 
@@ -55,7 +55,7 @@ The `qsort` function implements a quick-sort algorithm to sort an array of *numb
 
 `qsort` calls the *compare* routine one or more times during the sort, and passes pointers to two array elements on each call.
 
-```
+```C
 compare( (void *) & elem1, (void *) & elem2 );
 ```
 
@@ -81,7 +81,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_qsort.c
 // arguments: every good boy deserves favor
 
@@ -126,5 +126,5 @@ boy deserves every favor good
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
+[bsearch](bsearch.md)<br/>
+[_lsearch](lsearch.md)<br/>

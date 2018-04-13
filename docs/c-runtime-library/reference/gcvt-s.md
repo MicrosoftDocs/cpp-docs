@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _gcvt_s
 
-Converts a floating-point value to a string. This is a version of [_gcvt](../../c-runtime-library/reference/gcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a floating-point value to a string. This is a version of [_gcvt](gcvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -77,7 +77,7 @@ The **_gcvt_s** function converts a floating-point *value* to a character string
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug version of this function first fills the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug version of this function first fills the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## Requirements
 
@@ -122,7 +122,7 @@ Converted value: 1.2
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt_s](../../c-runtime-library/reference/ecvt-s.md)<br/>
-[_fcvt_s](../../c-runtime-library/reference/fcvt-s.md)<br/>
-[_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[_ecvt_s](ecvt-s.md)<br/>
+[_fcvt_s](fcvt-s.md)<br/>
+[_gcvt](gcvt.md)<br/>

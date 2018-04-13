@@ -73,11 +73,11 @@ The character string *mode* specifies the type of access requested for the file,
 
 Use the `"w"` and `"w+"` types with care, as they can destroy existing files.
 
-When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned using `fseek` or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for update). However, when switching between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters can be included in *mode* to specify the translation mode for new lines, and for file management.
+When a file is opened with the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned using [fseek](fseek-fseeki64.md) or `rewind`, but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the `"r+"`, `"w+"`, or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for update). However, when switching between reading and writing, there must be an intervening [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. The current position can be specified for the `fsetpos` or [fseek](fseek-fseeki64.md) operation, if desired. In addition to the above values, one of the following characters can be included in *mode* to specify the translation mode for new lines, and for file management.
 
 |Term|Definition|
 |----------|----------------|
-|`t`|Opens a file in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z might cause `fseek` to behave improperly near the end of the file.|
+|`t`|Opens a file in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into single line feeds (LF) on input and LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or reading/writing, `_fsopen` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and `ftell` to move within a file that ends with a CTRL+Z might cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file.|
 |`b`|Opens a file in binary (untranslated) mode; the above translations are suppressed.|
 |`S`|Specifies that caching is optimized for, but not restricted to, sequential access from disk.|
 |`R`|Specifies that caching is optimized for, but not restricted to, random access from disk.|
@@ -111,7 +111,7 @@ The argument *shflag* is a constant expression consisting of one of the followin
 
 ## Example
 
-```
+```C
 // crt_fsopen.c
 
 #include <stdio.h>
@@ -144,12 +144,12 @@ No one else in the network can write to this file until we are done.
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[_fileno](../../c-runtime-library/reference/fileno.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
+[ferror](ferror.md)<br/>
+[_fileno](fileno.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_setmode](setmode.md)<br/>
+[_sopen, _wsopen](sopen-wsopen.md)<br/>

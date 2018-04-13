@@ -86,7 +86,7 @@ The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and 
 Monetary-formatting information returned by the `localeconv` function.
 
 `LC_NUMERIC`
-Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` also sets the thousands separator and the grouping control string returned by [localeconv](../../c-runtime-library/reference/localeconv.md).
+Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` also sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
 
 `LC_TIME`
 The `strftime` and `wcsftime` functions.
@@ -171,7 +171,7 @@ The category must be either `LC_ALL` or `LC_CTYPE` to effect a change of code pa
 
 For more information, see the [setlocale](../../preprocessor/setlocale.md) pragma directive in the [C/C++ Preprocessor Reference](../../preprocessor/c-cpp-preprocessor-reference.md).
 
-The function [_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md) is used to control whether `setlocale` affects the locale of all threads in a program or only the locale of the calling thread.
+The function [_configthreadlocale](configthreadlocale.md) is used to control whether `setlocale` affects the locale of all threads in a program or only the locale of the calling thread.
 
 ## Requirements
 
@@ -289,17 +289,17 @@ The time in de-DE locale is: 'Mittwoch, 12. Mai 2004'
 ## See also
 
 [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md)<br/>
-[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[_configthreadlocale](configthreadlocale.md)<br/>
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
+[localeconv](localeconv.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>
+[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
 [strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
-[wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

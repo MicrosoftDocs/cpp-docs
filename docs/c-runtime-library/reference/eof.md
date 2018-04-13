@@ -55,7 +55,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_eof.c
 // This program reads data from a file
 // ten bytes at a time until the end of the
@@ -93,15 +93,15 @@ int main( void )
 }
 ```
 
-## Input: crt_eof.txt
+### Input: crt_eof.txt
 
-```
+```Input
 This file contains some text.
 ```
 
 ### Output
 
-```
+```Output
 Number of bytes read = 29
 ```
 
@@ -109,7 +109,7 @@ Number of bytes read = 29
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[feof](../../c-runtime-library/reference/feof.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[feof](feof.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

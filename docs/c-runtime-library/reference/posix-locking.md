@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # locking
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_locking](../../c-runtime-library/reference/locking.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_locking](locking.md) instead.

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # setbuf
 
-Controls stream buffering. This function is deprecated; use [setvbuf](../../c-runtime-library/reference/setvbuf.md) instead.
+Controls stream buffering. This function is deprecated; use [setvbuf](setvbuf.md) instead.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ User-allocated buffer.
 
 The `setbuf` function controls buffering for *stream*. The *stream* argument must refer to an open file that has not been read or written. If the *buffer* argument is `NULL`, the stream is un-buffered. If not, the buffer must point to a character array of length `BUFSIZ`, where `BUFSIZ` is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The `stderr` stream is un-buffered by default, but you can use `setbuf` to assign buffers to `stderr`.
 
-`setbuf` has been replaced by [setvbuf](../../c-runtime-library/reference/setvbuf.md), which is the preferred routine for new code. `setbuf` is retained for compatibility with existing code.
+`setbuf` has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. `setbuf` is retained for compatibility with existing code.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_setbuf.c
 // compile with: /W3
 // This program first opens files named DATA1 and
@@ -97,7 +97,7 @@ stream2 buffering disabled
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[fflush](../../c-runtime-library/reference/fflush.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[setvbuf](../../c-runtime-library/reference/setvbuf.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[fflush](fflush.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[setvbuf](setvbuf.md)<br/>

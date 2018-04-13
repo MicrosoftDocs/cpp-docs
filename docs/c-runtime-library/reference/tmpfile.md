@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # tmpfile
 
-Creates a temporary file. This function is deprecated because a more secure version is available; see [tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md).
+Creates a temporary file. This function is deprecated because a more secure version is available; see [tmpfile_s](tmpfile-s.md).
 
 ## Syntax
 
@@ -36,7 +36,7 @@ If successful, `tmpfile` returns a stream pointer. Otherwise, it returns a `NULL
 
 ## Remarks
 
-The `tmpfile` function creates a temporary file and returns a pointer to that stream. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) or [tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](../../c-runtime-library/reference/fopen-wfopen.md).
+The `tmpfile` function creates a temporary file and returns a pointer to that stream. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) or [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](fopen-wfopen.md).
 
 If the file cannot be opened, `tmpfile` returns a `NULL` pointer. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.
 
@@ -55,7 +55,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 > [!NOTE]
 >  This example requires administrative privileges to run on Windows Vista.
 
-```
+```C
 // crt_tmpfile.c
 // compile with: /W3
 // This program uses tmpfile to create a
@@ -92,5 +92,5 @@ Temporary file 3 was created
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_rmtmp](../../c-runtime-library/reference/rmtmp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[_rmtmp](rmtmp.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

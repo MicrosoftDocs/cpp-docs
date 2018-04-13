@@ -34,12 +34,12 @@ wctype_t wctype(
 
 ### Parameters
 
-`property`
+*property*
 Property string.
 
 ## Return Value
 
-If the `LC_CTYPE` category of the current locale does not define a classification rule whose name matches the property string `property`, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](../../c-runtime-library/reference/towctrans.md).
+If the `LC_CTYPE` category of the current locale does not define a classification rule whose name matches the property string *property*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [towctrans](towctrans.md).
 
 ## Remarks
 
@@ -47,17 +47,17 @@ The function determines a classification rule for wide-character codes. The foll
 
 |Function|Same as|
 |--------------|-------------|
-|`iswalnum(`  `c`  `)`|`iswctype(`  `c` `, wctype( "alnum" ) )`|
-|`iswalpha(`  `c`  `)`|`iswctype(`  `c` `, wctype( "alpha" ) )`|
-|`iswcntrl(`  `c`  `)`|`iswctype(`  `c` `, wctype( "cntrl" ) )`|
-|`iswdigit(`  `c`  `)`|`iswctype(`  `c` `, wctype( "digit" ) )`|
-|`iswgraph(`  `c`  `)`|`iswctype(`  `c` `, wctype( "graph" ) )`|
-|`iswlower(`  `c`  `)`|`iswctype(`  `c` `, wctype( "lower" ) )`|
-|`iswprint(`  `c`  `)`|`iswctype(`  `c` `, wctype( "print" ) )`|
-|`iswpunct(`  `c`  `)`|`iswctype(`  `c` `, wctype( "punct" ) )`|
-|`iswspace(`  `c`  `)`|`iswctype(`  `c` `, wctype( "space" ) )`|
-|`iswupper(`  `c`  `)`|`iswctype(`  `c` `, wctype( "upper" ) )`|
-|`iswxdigit(`  `c`  `)`|`iswctype(`  `c` `, wctype( "xdigit" ) )`|
+|iswalnum(c)|iswctype(c, wctype( "alnum" ) )|
+|iswalpha(c)|iswctype(c, wctype( "alpha" ) )|
+|iswcntrl(c)|iswctype(c, wctype( "cntrl" ) )|
+|iswdigit(c)|iswctype(c, wctype( "digit" ) )|
+|iswgraph(c)|iswctype(c, wctype( "graph" ) )|
+|iswlower(c)|iswctype(c, wctype( "lower" ) )|
+|iswprint(c)|iswctype(c, wctype( "print" ) )|
+|iswpunct(c)|iswctype(c, wctype( "punct" ) )|
+|iswspace(c)|iswctype(c, wctype( "space" ) )|
+|iswupper(c)|iswctype(c, wctype( "upper" ) )|
+|iswxdigit(c)|iswctype(c, wctype( "xdigit" ) )|
 
 ## Requirements
 
@@ -70,4 +70,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

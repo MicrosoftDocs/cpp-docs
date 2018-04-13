@@ -128,9 +128,9 @@ int_arr1 is equal to int_arr2.
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](../../c-runtime-library/reference/memccpy.md)<br/>
-[memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
-[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

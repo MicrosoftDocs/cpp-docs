@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_recalloc
 
-Changes the size of a memory block that was allocated with [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0.
+Changes the size of a memory block that was allocated with [_aligned_malloc](aligned-malloc.md) or [_aligned_offset_malloc](aligned-offset-malloc.md) and initializes the memory to 0.
 
 ## Syntax
 
@@ -61,9 +61,9 @@ The offset into the memory allocation to force the alignment.
 
 ## Remarks
 
-Like [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md), `_aligned_offset_recalloc` allows a structure to be aligned at an offset within the structure.
+Like [_aligned_offset_malloc](aligned-offset-malloc.md), `_aligned_offset_recalloc` allows a structure to be aligned at an offset within the structure.
 
-`_aligned_offset_recalloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](../../c-runtime-library/reference/malloc.md). If *memblock* is `NULL`, the function calls `_aligned_offset_malloc` internally.
+`_aligned_offset_recalloc` is based on `malloc`. For more information about using `_aligned_offset_malloc`, see [malloc](malloc.md). If *memblock* is `NULL`, the function calls `_aligned_offset_malloc` internally.
 
 This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size (*number* * *size*) was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, `_aligned_offset_recalloc` validates its parameters. If *alignment* is not a power of 2 or if *offset* is greater than or equal to the requested size and nonzero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `NULL` and sets `errno` to `EINVAL`.
 
@@ -76,5 +76,5 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 ## See also
 
 [Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
-[_recalloc](../../c-runtime-library/reference/recalloc.md)<br/>
-[_aligned_recalloc](../../c-runtime-library/reference/aligned-recalloc.md)<br/>
+[_recalloc](recalloc.md)<br/>
+[_aligned_recalloc](aligned-recalloc.md)<br/>

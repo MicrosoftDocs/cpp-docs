@@ -51,9 +51,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](../../c-runtime-library/reference/free.md)<br/>
+[free](free.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapchk](../../c-runtime-library/reference/heapchk.md)<br/>
+[_heapchk](heapchk.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../../c-runtime-library/reference/heapwalk.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
+[_heapwalk](heapwalk.md)<br/>
+[malloc](malloc.md)<br/>

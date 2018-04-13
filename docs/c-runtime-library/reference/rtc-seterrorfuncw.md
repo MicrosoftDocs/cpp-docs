@@ -49,7 +49,7 @@ The `_RTC_SetErrorFuncW` callback applies only to the component that it was link
 
 Make sure that the address that you pass to `_RTC_SetErrorFuncW` is that of a valid error handling function.
 
-If an error has been assigned a type of -1 by using [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md), the error handling function is not called.
+If an error has been assigned a type of -1 by using [_RTC_SetErrorType](rtc-seterrortype.md), the error handling function is not called.
 
 Before you can call this function, you must first call one of the run-time error-check initialization functions. For more information, see [Using Run-Time Checks Without the C Run-Time Library](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).
 
@@ -60,7 +60,7 @@ Before you can call this function, you must first call one of the run-time error
 where:
 
 `errorType`
-The type of error that's specified by [_RTC_SetErrorType](../../c-runtime-library/reference/rtc-seterrortype.md).
+The type of error that's specified by [_RTC_SetErrorType](rtc-seterrortype.md).
 
 *filename*
 The source file where the failure occurred, or null if no debug information is available.
@@ -90,5 +90,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)<br/>
+[_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
 [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>

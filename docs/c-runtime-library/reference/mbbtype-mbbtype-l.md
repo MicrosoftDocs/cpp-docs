@@ -68,7 +68,7 @@ The locale to use.
 
 The `_mbbtype` function determines the type of a byte in a multibyte character. If the value of *type* is any value except 1, `_mbbtype` tests for a valid single-byte or lead byte of a multibyte character. If the value of *type* is 1, `_mbbtype` tests for a valid trail byte of a multibyte character.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The `_mbbtype` version of this function uses the current locale for this locale-dependent behavior; the `_mbbtype_l` version is identical except that it use the locale parameter that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The `_mbbtype` version of this function uses the current locale for this locale-dependent behavior; the `_mbbtype_l` version is identical except that it use the locale parameter that's passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In earlier versions, `_mbbtype` was named `chkctype`. For new code, use `_mbbtype` instead.
 

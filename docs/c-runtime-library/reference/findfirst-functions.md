@@ -87,7 +87,7 @@ File information buffer.
 
 ## Return Value
 
-If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the *filespec* specification, which can be used in a subsequent call to [_findnext](../../c-runtime-library/reference/findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.
+If successful, `_findfirst` returns a unique search handle identifying the file or group of files that match the *filespec* specification, which can be used in a subsequent call to [_findnext](findnext-functions.md) or to `_findclose`. Otherwise, `_findfirst` returns -1 and sets `errno` to one of the following values.
 
 `EINVAL`
 Invalid parameter: *filespec* or *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
@@ -107,7 +107,7 @@ If an invalid parameter is passed in, these functions invoke the invalid paramet
 
 ## Remarks
 
-You must call [_findclose](../../c-runtime-library/reference/findclose.md) after you are finished with either the `_findfirst` or `_findnext` function (or any variants). This frees resources used by these functions in your application.
+You must call [_findclose](findclose.md) after you are finished with either the `_findfirst` or `_findnext` function (or any variants). This frees resources used by these functions in your application.
 
 The variations of these functions that have the `w` prefix are wide-character versions; otherwise, they are identical to the corresponding single-byte functions.
 

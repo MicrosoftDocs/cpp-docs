@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # getenv, _wgetenv
 
-Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).
+Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -73,7 +73,7 @@ When two copies of the environment (MBCS and Unicode) exist simultaneously in a 
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tgetenv`|`getenv`|`getenv`|`_wgetenv`|
 
-To check or change the value of the `TZ` environment variable, use `getenv`, `_putenv` and `_tzset` as necessary. For more information about `TZ`, see [_tzset](../../c-runtime-library/reference/tzset.md) and [_daylight, timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+To check or change the value of the `TZ` environment variable, use `getenv`, `_putenv` and `_tzset` as necessary. For more information about `TZ`, see [_tzset](tzset.md) and [_daylight, timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
@@ -86,7 +86,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_getenv.c
 // compile with: /W3
 // This program uses getenv to retrieve
@@ -129,5 +129,5 @@ New LIB variable is: c:\mylib;c:\yourlib
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>
+[_putenv, _wputenv](putenv-wputenv.md)<br/>
 [Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>

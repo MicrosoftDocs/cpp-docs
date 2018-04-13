@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _open, _wopen
 
-Opens a file. These functions are deprecated because more-secure versions are available; see [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).
+Opens a file. These functions are deprecated because more-secure versions are available; see [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md).
 
 ## Syntax
 
@@ -87,7 +87,7 @@ The `_open` function opens the file specified by *filename* and prepares it for 
 Moves the file pointer to the end of the file before every write operation.
 
 `_O_BINARY`
-Opens the file in binary (untranslated) mode. (See [fopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)
+Opens the file in binary (untranslated) mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.)
 
 `_O_CREAT`
 Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when `_O_CREAT` is specified.
@@ -117,7 +117,7 @@ Opens file for both reading and writing. Cannot be specified with `_O_RDONLY` or
 Specifies that caching is optimized for, but not restricted to, sequential access from disk.
 
 `_O_TEXT`
-Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](../../c-runtime-library/reference/fopen-wfopen.md).)
+Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](fopen-wfopen.md).)
 
 `_O_TRUNC`
 Opens a file and truncates it to zero length; the file must have write permission. Cannot be specified with `_O_RDONLY`. `_O_TRUNC` used with `_O_CREAT` opens an existing file or creates a file.
@@ -147,7 +147,7 @@ If `_open` is called with `_O_WRONLY|_O_APPEND` (append mode) and `_O_WTEXT`, `_
 
 When two or more manifest constants are used to form the *oflag* argument, the constants are combined with the bitwise-OR operator ( `|` ). For a discussion of binary and text modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-The *pmode* argument is required only when `_O_CREAT` is specified. If the file already exists, *pmode* is ignored. Otherwise, *pmode* specifies the file permission settings, which are set when the new file is closed the first time. `_open` applies the current file-permission mask to *pmode* before the permissions are set. (For more information, see [_umask](../../c-runtime-library/reference/umask.md).) *pmode* is an integer expression that contains one or both of the following manifest constants, which are defined in \<sys\stat.h>.
+The *pmode* argument is required only when `_O_CREAT` is specified. If the file already exists, *pmode* is ignored. Otherwise, *pmode* specifies the file permission settings, which are set when the new file is closed the first time. `_open` applies the current file-permission mask to *pmode* before the permissions are set. (For more information, see [_umask](umask.md).) *pmode* is an integer expression that contains one or both of the following manifest constants, which are defined in \<sys\stat.h>.
 
 `_S_IREAD`
 Only reading permitted.
@@ -177,7 +177,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_open.c
 // compile with: /W3
 /* This program uses _open to open a file
@@ -216,9 +216,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Open succeeded on input file
 Open succeeded on output file
 ```
@@ -226,9 +226,9 @@ Open succeeded on output file
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_close](close.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_dup, _dup2](dup-dup2.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_sopen, _wsopen](sopen-wsopen.md)<br/>

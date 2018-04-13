@@ -47,7 +47,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getdrive.c
 // compile with: /c
 // Illustrates drive functions including:
@@ -98,6 +98,6 @@ G: (Current directory is G:\)
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdrive](../../c-runtime-library/reference/chdrive.md)<br/>
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)<br/>
+[_chdrive](chdrive.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
+[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>

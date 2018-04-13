@@ -53,7 +53,7 @@ The behavior of `isalnum` and `_isalnum_l` is undefined if *c* is not EOF or in 
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istalnum`|`isalnum`|[_ismbcalnum](../../c-runtime-library/reference/ismbcalnum-functions.md)|`iswalnum`|
+|`_istalnum`|`isalnum`|[_ismbcalnum](ismbcalnum-functions.md)|`iswalnum`|
 |`_istalnum_l`|`_isalnum_l`|`_ismbcalnum_l`|`_iswalnum_l`|
 
 ## Requirements

@@ -42,7 +42,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-See[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md).
+See[fgetc, fgetwc](fgetc-fgetwc.md).
 
 ## Remarks
 
@@ -65,7 +65,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_fgetc_nolock.c
 // This program uses getc to read the first
 // 80 input characters (or until the end of input)
@@ -101,14 +101,14 @@ int main( void )
 
 ## Input: crt_fgetc_nolock.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Line one.
 Line two.
 ```
@@ -116,5 +116,5 @@ Line two.
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

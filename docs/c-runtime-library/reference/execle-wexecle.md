@@ -96,9 +96,9 @@ See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[atexit](../../c-runtime-library/reference/atexit.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
+[abort](abort.md)<br/>
+[atexit](atexit.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>
+[system, _wsystem](system-wsystem.md)<br/>

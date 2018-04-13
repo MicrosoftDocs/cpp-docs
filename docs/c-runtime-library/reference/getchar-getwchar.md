@@ -37,9 +37,9 @@ Returns the character read. To indicate a read error or end-of-file condition, `
 
 ## Remarks
 
-Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), but it is implemented as a function and as a macro.
+Each routine reads a single character from `stdin` and increments the associated file pointer to point to the next character. `getchar` is the same as [_fgetchar](fgetc-fgetwc.md), but it is implemented as a function and as a macro.
 
-These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](../../c-runtime-library/reference/getchar-nolock-getwchar-nolock.md).
+These functions lock the calling thread and are therefore thread-safe. For a non-locking version, see [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md).
 
 ### Generic-Text Routine Mappings
 
@@ -58,7 +58,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_getchar.c
 // Use getchar to read a line from stdin.
 
@@ -89,8 +89,8 @@ This textInput was: This text
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>
+[ungetc, ungetwc](ungetc-ungetwc.md)<br/>

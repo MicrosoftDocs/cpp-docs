@@ -55,7 +55,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getw.c
 // This program uses _getw to read a word
 // from a stream, then performs an error check.
@@ -88,20 +88,20 @@ int main( void )
 }
 ```
 
-## Input: crt_getw.txt
+### Input: crt_getw.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 First data word in file: 0x656e694c
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_putw](../../c-runtime-library/reference/putw.md)<br/>
+[_putw](putw.md)<br/>

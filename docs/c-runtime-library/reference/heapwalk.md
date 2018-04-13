@@ -162,6 +162,6 @@ OK - end of heap
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapchk](../../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../../c-runtime-library/reference/heapmin.md)<br/>
+[_heapchk](heapchk.md)<br/>
+[_heapmin](heapmin.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>

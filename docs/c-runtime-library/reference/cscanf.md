@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # cscanf
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_cscanf](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_cscanf](cscanf-cscanf-l-cwscanf-cwscanf-l.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

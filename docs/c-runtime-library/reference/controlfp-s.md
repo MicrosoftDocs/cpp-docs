@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _controlfp_s
 
-Gets and sets the floating-point control word. This version of [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets and sets the floating-point control word. This version of [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -86,7 +86,7 @@ _controlfp_s(&current_word, _DN_FLUSH, _MCW_DN);
 // and x64 processors with SSE2 support. Ignored on other x86 platforms.
 ```
 
-On ARM platforms, the **_controlfp_s** function applies to the FPSCR register. On [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **_controlfp_s** affects the control words for both the x87 and the SSE2, if present. It is possible for the two control words to be inconsistent with each other (because of a previous call to [__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md), for example); if there is an inconsistency between the two control words, **_controlfp_s** sets the **EM_AMBIGUOUS** flag in *currentControl*. This is a warning that the returned control word might not represent the state of both floating-point control words accurately.
+On ARM platforms, the **_controlfp_s** function applies to the FPSCR register. On [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architectures, only the SSE2 control word that's stored in the MXCSR register is affected. On Intel (x86) platforms, **_controlfp_s** affects the control words for both the x87 and the SSE2, if present. It is possible for the two control words to be inconsistent with each other (because of a previous call to [__control87_2](control87-controlfp-control87-2.md), for example); if there is an inconsistency between the two control words, **_controlfp_s** sets the **EM_AMBIGUOUS** flag in *currentControl*. This is a warning that the returned control word might not represent the state of both floating-point control words accurately.
 
 On the ARM and [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architectures, changing the infinity mode or the floating-point precision is not supported. If the precision control mask is used on the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platform, the function raises an assertion and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -168,6 +168,6 @@ Default:  0x9001f
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](../../c-runtime-library/reference/clear87-clearfp.md)<br/>
-[_status87, _statusfp, _statusfp2](../../c-runtime-library/reference/status87-statusfp-statusfp2.md)<br/>
-[_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md)<br/>
+[_clear87, _clearfp](clear87-clearfp.md)<br/>
+[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
+[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>

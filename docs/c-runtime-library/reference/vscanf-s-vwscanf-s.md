@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 ---
 # vscanf_s, vwscanf_s
 
-Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](vscanf-vwscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -41,7 +41,7 @@ int vwscanf_s(
 *format*
 Format control string.
 
-`arglist`
+*arglist*
 Variable argument list.
 
 ## Return Value
@@ -52,7 +52,7 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The `vscanf_s` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the `arglist` argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
+The `vscanf_s` function reads data from the standard input stream `stdin` and writes the data into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. If copying occurs between strings that overlap, the behavior is undefined.
 
 `vwscanf_s` is a wide-character version of `vscanf_s`; the *format* argument to `vwscanf_s` is a wide-character string. `vwscanf_s` and `vscanf_s` behave identically if the stream is opened in ANSI mode. `vscanf_s` doesn't support input from a UNICODE stream.
 
@@ -84,7 +84,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_vscanf_s.c
 // compile with: /W3
 // This program uses the vscanf_s and vwscanf_s functions
@@ -150,7 +150,7 @@ The contents are: 36 92.300003 y n Wide characters
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
+[vscanf, vwscanf](vscanf-vwscanf.md)<br/>

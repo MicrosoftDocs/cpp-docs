@@ -72,7 +72,7 @@ The `_mbsnbcmp` functions compare at most the first *count* bytes in *string1* a
 
 `_mbsnbcmp` resembles `_mbsncmp`, except that `_mbsncmp` compares strings by characters rather than by bytes.
 
-The output value is affected by the `LC_CTYPE` category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The `_mbsnbcmp` function uses the current locale for this locale-dependent behavior. The `_mbsnbcmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the `LC_CTYPE` category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The `_mbsnbcmp` function uses the current locale for this locale-dependent behavior. The `_mbsnbcmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If either *string1* or *string2* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `_NLSCMPERROR` and `errno` is set to `EINVAL`.
 
@@ -80,8 +80,8 @@ If either *string1* or *string2* is a null pointer, these functions invoke the i
 
 |Tchar.h routine|_UNICODE and  _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|---------------------------------------|--------------------|-----------------------|
-|`_tcsncmp`|[strncmp](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|`_mbsnbcmp`|[wcsncmp](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
-|`_tcsncmp_l`|[strncmp](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|`_mbsnbcml`|[wcsncmp](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
+|`_tcsncmp`|[strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|`_mbsnbcmp`|[wcsncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
+|`_tcsncmp_l`|[strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|`_mbsnbcml`|[wcsncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)|
 
 ## Requirements
 
@@ -94,7 +94,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_mbsnbcmp.c
 #include <mbstring.h>
 #include <stdio.h>
@@ -129,9 +129,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Compare strings:
           The quick brown dog jumps over the lazy fox
           The QUICK brown fox jumps over the lazy dog
@@ -146,9 +146,9 @@ Result:   String 1 is equal to string 2
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md)<br/>
-[_mbsnbicmp, _mbsnbicmp_l](../../c-runtime-library/reference/mbsnbicmp-mbsnbicmp-l.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
+[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
+[_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

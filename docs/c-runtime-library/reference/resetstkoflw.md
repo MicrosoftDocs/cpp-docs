@@ -30,9 +30,7 @@ Recovers from stack overflow.
 ## Syntax
 
 ```C
-
-int _resetstkoflw ( void );
-
+int _resetstkoflw( void );
 ```
 
 ## Return Value
@@ -47,39 +45,39 @@ If a thread in an application causes an **EXCEPTION_STACK_OVERFLOW** exception, 
 
 When the code causes the stack pointer to point to an address on this page, an exception occurs and the system does the following three things:
 
--   Removes the PAGE_GUARD protection on the guard page so that the thread can read and write data to the memory.
+- Removes the PAGE_GUARD protection on the guard page so that the thread can read and write data to the memory.
 
--   Allocates a new guard page that is located one page below the last one.
+- Allocates a new guard page that is located one page below the last one.
 
--   Reruns the instruction that raised the exception.
+- Reruns the instruction that raised the exception.
 
 In this way, the system can increase the size of the stack for the thread automatically. Each thread in a process has a maximum stack size. The stack size is set at compile time by the [/STACK (Stack Allocations)](../../build/reference/stack-stack-allocations.md), or by the [STACKSIZE](../../build/reference/stacksize.md) statement in the .def file for the project.
 
 When this maximum stack size is exceeded, the system does the following three things:
 
--   Removes the PAGE_GUARD protection on the guard page, as previously described.
+- Removes the PAGE_GUARD protection on the guard page, as previously described.
 
--   Tries to allocate a new guard page below the last one. However, this fails because the maximum stack size has been exceeded.
+- Tries to allocate a new guard page below the last one. However, this fails because the maximum stack size has been exceeded.
 
--   Raises an exception so that the thread can handle it in the exception block.
+- Raises an exception so that the thread can handle it in the exception block.
 
 Note that, at that point, the stack no longer has a guard page. The next time that the program grows the stack all the way to the end, where there should be a guard page, the program writes beyond the end of the stack and causes an access violation.
 
 Call `_resetstkoflw` to restore the guard page whenever recovery is done after a stack overflow exception. This function can be called from inside the main body of an `__except` block or outside an **__except** block. However, there are some restrictions on when it should be used. `_resetstkoflw` should never be called from:
 
--   A filter expression.
+- A filter expression.
 
--   A filter function.
+- A filter function.
 
--   A function called from a filter function.
+- A function called from a filter function.
 
--   A **catch** block.
+- A **catch** block.
 
--   A `__finally` block.
+- A `__finally` block.
 
 At these points, the stack is not yet sufficiently unwound.
 
-Stack overflow exceptions are generated as structured exceptions, not C++ exceptions, so `_resetstkoflw` is not useful in an ordinary **catch** block because it will not catch a stack overflow exception. However, if [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) is used to implement a structured exception translator that throws C++ exceptions (as in the second example), a stack overflow exception results in a C++ exception that can be handled by a C++ catch block.
+Stack overflow exceptions are generated as structured exceptions, not C++ exceptions, so `_resetstkoflw` is not useful in an ordinary **catch** block because it will not catch a stack overflow exception. However, if [_set_se_translator](set-se-translator.md) is used to implement a structured exception translator that throws C++ exceptions (as in the second example), a stack overflow exception results in a C++ exception that can be handled by a C++ catch block.
 
 It is not safe to call **_resetstkoflw** in a C++ catch block that is reached from an exception thrown by the structured exception translator function. In this case, the stack space is not freed and the stack pointer is not reset until outside the catch block, even though destructors have been called for any destructible objects before the catch block. This function should not be called until the stack space is freed and the stack pointer has been reset. Therefore, it should be called only after exiting the catch block. As little stack space as possible should be used in the catch block because a stack overflow that occurs in the catch block that is itself attempting to recover from a previous stack overflow is not recoverable and can cause the program to stop responding as the overflow in the catch block triggers an exception that itself is handled by the same catch block.
 
@@ -101,7 +99,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 The following example shows the recommended usage of the `_resetstkoflw` function.
 
-```
+```C
 // crt_resetstkoflw.c
 // Launch program with and without arguments to observe
 // the difference made by calling _resetstkoflw.
@@ -168,11 +166,9 @@ int main(int ac)
 }
 ```
 
-## Sample Output
+Sample output with no program arguments:
 
-With no program arguments:
-
-```
+```Output
 loop #1
 ```
 
@@ -180,7 +176,7 @@ The program stops responding without executing further iterations.
 
 With program arguments:
 
-```
+```Output
 loop #1
 resetting stack overflow
 loop #2
@@ -209,7 +205,7 @@ The following example shows the recommended use of `_resetstkoflw` in a program 
 
 ### Code
 
-```
+```cpp
 // crt_resetstkoflw2.cpp
 // compile with: /EHa
 // _set_se_translator requires the use of /EHa
@@ -227,71 +223,69 @@ class StackOverflowException : Exception { };
 #pragma warning (disable: 4717)
 void CauseStackOverflow (int i)
 {
-        // Overflow the stack by allocating a large stack-based array
-        // in a recursive function.
-        int a[10000];
-        printf("%d ", i);
-        CauseStackOverflow (i + 1);
+    // Overflow the stack by allocating a large stack-based array
+    // in a recursive function.
+    int a[10000];
+    printf("%d ", i);
+    CauseStackOverflow (i + 1);
 }
 
 void __cdecl SEHTranslator (unsigned int code, _EXCEPTION_POINTERS*)
 {
-   // For stack overflow exceptions, throw our own C++
-   // exception object.
-   // For all other exceptions, throw a generic exception object.
-   // Use minimal stack space in this function.
-   // Do not call _resetstkoflw in this function.
+    // For stack overflow exceptions, throw our own C++
+    // exception object.
+    // For all other exceptions, throw a generic exception object.
+    // Use minimal stack space in this function.
+    // Do not call _resetstkoflw in this function.
 
-   if (code == EXCEPTION_STACK_OVERFLOW)
-      throw StackOverflowException ( );
-   else
-      throw Exception( );
+    if (code == EXCEPTION_STACK_OVERFLOW)
+        throw StackOverflowException ( );
+    else
+        throw Exception( );
 }
 
 int main ( )
 {
-        bool stack_reset = false;
-        bool result = false;
+    bool stack_reset = false;
+    bool result = false;
 
-        // Set up a function to handle all structured exceptions,
-        // including stack overflow exceptions.
-        _set_se_translator (SEHTranslator);
+    // Set up a function to handle all structured exceptions,
+    // including stack overflow exceptions.
+    _set_se_translator (SEHTranslator);
 
-        try
-        {
-            CauseStackOverflow (0);
-        }
-        catch (StackOverflowException except)
-        {
-                // Use minimal stack space here.
-                // Do not call _resetstkoflw here.
-                printf("\nStack overflow!\n");
-                stack_reset = true;
-        }
-        catch (Exception except)
-        {
-                // Do not call _resetstkoflw here.
-                printf("\nUnknown Exception!\n");
-        }
-        if (stack_reset)
-        {
-          result = _resetstkoflw();
-          // If stack reset failed, terminate the application.
-          if (result == 0)
-             exit(1);
-        }
+    try
+    {
+        CauseStackOverflow (0);
+    }
+    catch (StackOverflowException except)
+    {
+        // Use minimal stack space here.
+        // Do not call _resetstkoflw here.
+        printf("\nStack overflow!\n");
+        stack_reset = true;
+    }
+    catch (Exception except)
+    {
+        // Do not call _resetstkoflw here.
+        printf("\nUnknown Exception!\n");
+    }
+    if (stack_reset)
+    {
+        result = _resetstkoflw();
+        // If stack reset failed, terminate the application.
+        if (result == 0)
+            exit(1);
+    }
 
-        void* pv = _alloca(100000);
-        printf("Recovered from stack overflow and allocated 100,000 bytes"
-               " using _alloca.");
+    void* pv = _alloca(100000);
+    printf("Recovered from stack overflow and allocated 100,000 bytes"
+           " using _alloca.");
 
-   return 0;
+    return 0;
 }
 ```
 
-## Sample Output
-
-```
+```Output
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 Stack overflow!
 Recovered from stack overflow and allocated 100,000 bytes using _alloca.
@@ -299,4 +293,4 @@ Recovered from stack overflow and allocated 100,000 bytes using _alloca.
 
 ## See also
 
-[_alloca](../../c-runtime-library/reference/alloca.md)<br/>
+[_alloca](alloca.md)<br/>

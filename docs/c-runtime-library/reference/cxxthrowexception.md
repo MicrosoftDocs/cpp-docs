@@ -51,4 +51,4 @@ This method is included in a compiler-only file that the compiler uses to proces
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>

@@ -59,13 +59,13 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See the example for [_open](../../c-runtime-library/reference/open-wopen.md).
+See the example for [_open](open-wopen.md).
 
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chsize](../../c-runtime-library/reference/chsize.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_unlink, _wunlink](../../c-runtime-library/reference/unlink-wunlink.md)<br/>
+[_chsize](chsize.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_dup, _dup2](dup-dup2.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_unlink, _wunlink](unlink-wunlink.md)<br/>

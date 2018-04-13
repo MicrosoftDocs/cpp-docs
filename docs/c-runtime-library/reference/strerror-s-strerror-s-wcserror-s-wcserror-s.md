@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
-Get a system error message (`strerror_s`, `_wcserror_s`) or print a user-supplied error message (`_strerror_s`, `__wcserror_s`). These are versions of [strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Get a system error message (`strerror_s`, `_wcserror_s`) or print a user-supplied error message (`_strerror_s`, `__wcserror_s`). These are versions of [strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -77,10 +77,10 @@ Buffer to hold error string.
 *numberOfElements*
 Size of buffer.
 
-`errnum`
+*errnum*
 Error number.
 
-`strErrMsg`
+*strErrMsg*
 User-supplied message.
 
 ## Return Value
@@ -89,16 +89,16 @@ Zero if successful, an error code on failure.
 
 ### Error Condtions
 
-|*buffer*|*numberOfElements*|`strErrMsg`|Contents of *buffer*|
+|*buffer*|*numberOfElements*|*strErrMsg*|Contents of *buffer*|
 |--------------|------------------------|-----------------|--------------------------|
 |`NULL`|any|any|n/a|
 |any|0|any|not modified|
 
 ## Remarks
 
-The `strerror_s` function maps `errnum` to an error-message string, returning the string in *buffer*. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The `strerror_s` function maps *errnum* to an error-message string, returning the string in *buffer*. `_strerror_s` doesn't take the error number; it uses the current value of `errno` to determine the appropriate message. Neither `strerror_s` nor `_strerror_s` actually prints the message: For that, you need to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
-```
+```C
 if (( _access( "datafile",2 )) == -1 )
 {
    _strerror_s(buffer, 80);
@@ -106,7 +106,7 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-If `strErrMsg` is `NULL`, `_strerror_s` returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If `strErrMsg` is not equal to `NULL`, then `_strerror_s` returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is `NULL`, `_strerror_s` returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to `NULL`, then `_strerror_s` returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 These functions truncate the error message if its length exceeds *numberOfElements* -1. The resulting string in *buffer* is always null-terminated.
 
@@ -120,7 +120,7 @@ These functions validate their parameters. If buffer is `NULL` or if the size pa
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### Generic-Text Routine Mappings
 
@@ -139,11 +139,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).
+See the example for [perror](perror-wperror.md).
 
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

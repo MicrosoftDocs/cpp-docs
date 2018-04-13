@@ -66,4 +66,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
+[ldexp](ldexp.md)<br/>

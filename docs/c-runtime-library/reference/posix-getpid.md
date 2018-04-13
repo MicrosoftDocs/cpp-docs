@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # getpid
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_getpid](../../c-runtime-library/reference/getpid.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_getpid](getpid.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

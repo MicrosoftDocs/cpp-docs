@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # asctime, _wasctime
 
-Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).
+Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Time/date structure.
 
 ## Remarks
 
-More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).
+More secure versions of these functions are available; see [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
 The `asctime` function converts a time stored as a structure to a character string. The *timeptr* value is usually obtained from a call to `gmtime` or `localtime`, which both return a pointer to a `tm` structure, defined in TIME.H.
 
@@ -62,7 +62,7 @@ The `asctime` function converts a time stored as a structure to a character stri
 |`tm_yday`|Day of year (0-365; January 1 = 0)|
 |`tm_year`|Year (current year minus 1900)|
 
-The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](../../c-runtime-library/reference/time-time32-time64.md), [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md), and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions and the [_tzset](../../c-runtime-library/reference/tzset.md) function for information about defining the time zone environment and global variables.
+The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
 
 The string result produced by `asctime` contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. `asctime` uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
@@ -87,7 +87,7 @@ These functions validate their parameters. If *timeptr* is a null pointer, or if
 
 This program places the system time in the long integer `aclock`, translates it into the structure `newtime` and then converts it to string form for output, using the `asctime` function.
 
-```
+```C
 // crt_asctime.c
 // compile with: /W3
 
@@ -118,10 +118,10 @@ Current date and time: Sun Feb 03 11:38:58 2002
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>

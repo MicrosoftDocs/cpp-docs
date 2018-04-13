@@ -45,7 +45,7 @@ Pointer to the memory block.
 
 The `_msize` function returns the size, in bytes, of the memory block allocated by a call to `calloc`, `malloc`, or `realloc`.
 
-When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](../../c-runtime-library/reference/msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, `_msize` resolves to [_msize_dbg](msize-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 This function validates its parameter. If *memblock* is a null pointer, `_msize` invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function sets `errno` to `EINVAL` and returns -1.
 
@@ -63,12 +63,12 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-See the example for [realloc](../../c-runtime-library/reference/realloc.md).
+See the example for [realloc](realloc.md).
 
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[_expand](../../c-runtime-library/reference/expand.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)<br/>
+[calloc](calloc.md)<br/>
+[_expand](expand.md)<br/>
+[malloc](malloc.md)<br/>
+[realloc](realloc.md)<br/>

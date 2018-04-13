@@ -47,7 +47,7 @@ A pointer to the memory block that was allocated or `NULL` if the operation fail
 
 ## Remarks
 
-`_aligned_malloc` is based on [malloc](../../c-runtime-library/reference/malloc.md).
+`_aligned_malloc` is based on [malloc](malloc.md).
 
 `_aligned_malloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
@@ -61,7 +61,7 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 ## Example
 
-```
+```C
 // crt_aligned_malloc.c
 
 #include <malloc.h>

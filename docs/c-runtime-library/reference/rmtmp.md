@@ -53,11 +53,11 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-See the example for [tmpfile](../../c-runtime-library/reference/tmpfile.md).
+See the example for [tmpfile](tmpfile.md).
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[tmpfile](../../c-runtime-library/reference/tmpfile.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[_flushall](flushall.md)<br/>
+[tmpfile](tmpfile.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

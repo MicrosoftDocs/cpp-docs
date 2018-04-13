@@ -52,7 +52,7 @@ Each of these functions returns a pointer to the storage location for the copied
 
 ## Remarks
 
-The `_strdup` function calls [malloc](../../c-runtime-library/reference/malloc.md) to allocate storage space for a copy of *strSource* and then copies *strSource* to the allocated space.
+The `_strdup` function calls [malloc](malloc.md) to allocate storage space for a copy of *strSource* and then copies *strSource* to the allocated space.
 
 `_wcsdup` and `_mbsdup` are wide-character and multibyte-character versions of `_strdup`. The arguments and return value of `_wcsdup` are wide-character strings; those of `_mbsdup` are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -62,9 +62,9 @@ The `_strdup` function calls [malloc](../../c-runtime-library/reference/malloc.m
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tcsdup`|`_strdup`|`_mbsdup`|`_wcsdup`|
 
-Because `_strdup` calls `malloc` to allocate storage space for the copy of *strSource*, it is good practice always to release this memory by calling the [free](../../c-runtime-library/reference/free.md) routine on the pointer that's returned by the call to `_strdup`.
+Because `_strdup` calls `malloc` to allocate storage space for the copy of *strSource*, it is good practice always to release this memory by calling the [free](free.md) routine on the pointer that's returned by the call to `_strdup`.
 
-If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, `_strdup` and `_wcsdup` are replaced by calls to `_strdup_dbg` and `_wcsdup_dbg` to allow for debugging memory allocations. For more information, see [_strdup_dbg, _wcsdup_dbg](../../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md).
+If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are defined, `_strdup` and `_wcsdup` are replaced by calls to `_strdup_dbg` and `_wcsdup_dbg` to allow for debugging memory allocations. For more information, see [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md).
 
 ## Requirements
 
@@ -78,7 +78,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_strdup.c
 
 #include <string.h>
@@ -103,12 +103,12 @@ Copy:     This is the buffer text
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
-[strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
-[strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>
+[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
+[strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
+[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
+[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

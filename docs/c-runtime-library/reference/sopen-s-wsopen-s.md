@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _sopen_s, _wsopen_s
 
-Opens a file for sharing. These versions of [_sopen and _wsopen](../../c-runtime-library/reference/sopen-wsopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Opens a file for sharing. These versions of [_sopen and _wsopen](sopen-wsopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -94,7 +94,7 @@ The integer expression *oflag* is formed by combining one or more manifest const
 Repositions a file pointer to the end of the file before every write operation.
 
 `_O_BINARY`
-Opens a file in binary (untranslated) mode. (See [fopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)
+Opens a file in binary (untranslated) mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.)
 
 `_O_CREAT`
 Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists.
@@ -124,7 +124,7 @@ Opens a file for both reading and writing. Cannot be specified with `_O_RDONLY` 
 Specifies primarily sequential access from disk.
 
 `_O_TEXT`
-Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](../../c-runtime-library/reference/fopen-wfopen.md).)
+Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](fopen-wfopen.md).)
 
 `_O_TRUNC`
 Opens a file and truncates it to zero length; the file must have write permission. Cannot be specified with `_O_RDONLY`. `_O_TRUNC` used with `_O_CREAT` opens an existing file or creates a file.
@@ -177,7 +177,7 @@ Reading and writing permitted.
 
 If write permission is not given, the file is read-only. In the Windows operating system, all files are readable; it is not possible to give write-only permission. Therefore, the modes `_S_IWRITE` and `_S_IREAD | _S_IWRITE` are equivalent.
 
-`_sopen_s` applies the current file-permission mask to *pmode* before the permissions are set. (See [_umask](../../c-runtime-library/reference/umask.md).)
+`_sopen_s` applies the current file-permission mask to *pmode* before the permissions are set. (See [_umask](umask.md).)
 
 ## Requirements
 
@@ -190,13 +190,13 @@ If write permission is not given, the file is read-only. In the Windows operatin
 
 ## Example
 
-See the example for [_locking](../../c-runtime-library/reference/locking.md).
+See the example for [_locking](locking.md).
 
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_close](close.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_fsopen, _wfsopen](fsopen-wfsopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

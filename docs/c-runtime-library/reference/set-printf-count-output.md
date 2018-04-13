@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _set_printf_count_output
 
-Enable or disable support of the `%n` format in [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)-family functions.
+Enable or disable support of the `%n` format in [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-family functions.
 
 ## Syntax
 
@@ -82,4 +82,4 @@ i = 5
 
 ## See also
 
-[_get_printf_count_output](../../c-runtime-library/reference/get-printf-count-output.md)<br/>
+[_get_printf_count_output](get-printf-count-output.md)<br/>

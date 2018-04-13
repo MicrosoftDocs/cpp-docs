@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # bsearch
 
-Performs a binary search of a sorted array. A more secure version of this function is available; see [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).
+Performs a binary search of a sorted array. A more secure version of this function is available; see [bsearch_s](bsearch-s.md).
 
 ## Syntax
 
@@ -81,7 +81,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 This program sorts a string array with qsort, and then uses bsearch to find the word "cat".
 
-```
+```C
 // crt_bsearch.c
 #include <search.h>
 #include <string.h>
@@ -125,6 +125,6 @@ cat found at 002F0F04
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](../../c-runtime-library/reference/lfind.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

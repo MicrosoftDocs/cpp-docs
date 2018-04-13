@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _getcwd_dbg, _wgetcwd_dbg
 
-Debug versions of the [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) functions (only available during debug).
+Debug versions of the [_getcwd, _wgetcwd](getcwd-wgetcwd.md) functions (only available during debug).
 
 ## Syntax
 
@@ -68,7 +68,7 @@ For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../
 
 ## Remarks
 
-The `_getcwd_dbg` and `_wgetcwd_dbg` functions are identical to `_getcwd` and `_wgetcwd` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc` and `_malloc_dbg` to allocate memory if `NULL` is passed as the first parameter. For more information, see [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).
+The `_getcwd_dbg` and `_wgetcwd_dbg` functions are identical to `_getcwd` and `_wgetcwd` except that, when `_DEBUG` is defined, these functions use the debug version of `malloc` and `_malloc_dbg` to allocate memory if `NULL` is passed as the first parameter. For more information, see [_malloc_dbg](malloc-dbg.md).
 
 You do not need to call these functions explicitly in most cases. Instead, you can define the `_CRTDBG_MAP_ALLOC` flag. When `_CRTDBG_MAP_ALLOC` is defined, calls to `_getcwd` and `_wgetcwd` are remapped to `_getcwd_dbg` and `_wgetcwd_dbg`, respectively, with the *blockType* set to `_NORMAL_BLOCK`. Thus, you do not need to call these functions explicitly unless you want to mark the heap blocks as `_CLIENT_BLOCK`. For more information, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -89,6 +89,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md)<br/>
+[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
 [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # strerror, _strerror, _wcserror, __wcserror
 
-Gets a system error message string (`strerror`, `_wcserror`) or formats a user-supplied error message string (`_strerror`, `__wcserror`). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md).
+Gets a system error message string (`strerror`, `_wcserror`) or formats a user-supplied error message string (`_strerror`, `__wcserror`). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](strerror-s-strerror-s-wcserror-s-wcserror-s.md).
 
 ## Syntax
 
@@ -43,10 +43,10 @@ wchar_t * __wcserror(
 
 ### Parameters
 
-`errnum`
+*errnum*
 Error number.
 
-`strErrMsg`
+*strErrMsg*
 User-supplied message.
 
 ## Return Value
@@ -55,14 +55,14 @@ All of these functions return a pointer to the error-message string. Subsequent 
 
 ## Remarks
 
-The `strerror` function maps `errnum` to an error-message string and returns a pointer to the string. Neither `strerror` nor `_strerror` actually prints the message: For that, you have to call an output function such as [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):
+The `strerror` function maps *errnum* to an error-message string and returns a pointer to the string. Neither `strerror` nor `_strerror` actually prints the message: For that, you have to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
-```
+```C
 if (( _access( "datafile",2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If `strErrMsg` is passed as `NULL`, `_strerror` returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If `strErrMsg` is not equal to `NULL`, then `_strerror` returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is passed as `NULL`, `_strerror` returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to `NULL`, then `_strerror` returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 The actual error number for `_strerror` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call `_strerror` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror` or `_strerror` can overwrite the `errno` value.
 
@@ -90,11 +90,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [perror](../../c-runtime-library/reference/perror-wperror.md).
+See the example for [perror](perror-wperror.md).
 
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

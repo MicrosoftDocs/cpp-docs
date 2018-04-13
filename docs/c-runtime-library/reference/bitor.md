@@ -37,7 +37,7 @@ The macro yields the operator &#124;.
 
 ## Example
 
-```
+```cpp
 // iso646_bitor.cpp
 // compile with: /EHsc
 #include <iostream>

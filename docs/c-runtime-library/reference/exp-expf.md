@@ -60,7 +60,7 @@ The **exp** functions return the exponential value of the floating-point paramet
 |x ≥ 7.097827e+002|INEXACT+OVERFLOW|OVERFLOW|
 |X ≤ -7.083964e+002|INEXACT+UNDERFLOW|UNDERFLOW|
 
-The **exp** function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
+The **exp** function has an implementation that uses Streaming SIMD Extensions 2 (SSE2). See [_set_SSE2_enable](set-sse2-enable.md) for information and restrictions on using the SSE2 implementation.
 
 ## Remarks
 
@@ -98,5 +98,5 @@ exp( 2.302585 ) = 10.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)<br/>
+[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
 [_CIexp](../../c-runtime-library/ciexp.md)<br/>

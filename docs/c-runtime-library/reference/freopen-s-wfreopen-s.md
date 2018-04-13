@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # freopen_s, _wfreopen_s
 
-Reassigns a file pointer. These versions of [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reassigns a file pointer. These versions of [freopen, _wfreopen](freopen-wfreopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -93,14 +93,14 @@ Opens for reading and appending; the appending operation includes the removal of
 
 Use the `"w"` and `"w+"` types with care, as they can destroy existing files.
 
-When a file is opened with the `"a"` or `"a+"` access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using `fseek` or `rewind`, the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten.
+When a file is opened with the `"a"` or `"a+"` access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [fseek](fseek-fseeki64.md) or `rewind`, the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten.
 
 The `"a"` mode does not remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. The `"a+"` mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The `"a+"` mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 
-When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fsetpos](../../c-runtime-library/reference/fsetpos.md), [fseek](../../c-runtime-library/reference/fseek-fseeki64.md), or [rewind](../../c-runtime-library/reference/rewind.md) operation. The current position can be specified for the `fsetpos` or `fseek` operation, if desired. In addition to the above values, one of the following characters may be included in the *mode* string to specify the translation mode for new lines.
+When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. The current position can be specified for the `fsetpos` or [fseek](fseek-fseeki64.md) operation, if desired. In addition to the above values, one of the following characters may be included in the *mode* string to specify the translation mode for new lines.
 
 `t`
-Open in text (translated) mode; carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with `"a+"`, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file may cause `fseek` to behave improperly near the end of the file. The `t` option is a Microsoft extension that should not be used where ANSI portability is desired.
+Open in text (translated) mode; carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with `"a+"`, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and `ftell` to move within a file may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file. The `t` option is a Microsoft extension that should not be used where ANSI portability is desired.
 
 `b`
 Open in binary (untranslated) mode; the above translations are suppressed.
@@ -120,7 +120,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_freopen_s.c
 // This program reassigns stderr to the file
 // named FREOPEN.OUT and writes a line to that file.
@@ -156,10 +156,10 @@ This will go to the file 'freopen.out'
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[_fileno](../../c-runtime-library/reference/fileno.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
+[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
+[_fileno](fileno.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_setmode](setmode.md)<br/>

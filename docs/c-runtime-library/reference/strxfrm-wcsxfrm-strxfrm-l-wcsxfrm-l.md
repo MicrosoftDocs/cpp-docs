@@ -71,7 +71,7 @@ Returns the length of the transformed string, not counting the terminating null 
 
 ## Remarks
 
-The `strxfrm` function transforms the string pointed to by *strSource* into a new collated form that is stored in *strDest*. No more than *count* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's `LC_COLLATE` category setting. For more information on `LC_COLLATE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strxfrm` uses the current locale for its locale-dependent behavior; `_strxfrm_l` is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `strxfrm` function transforms the string pointed to by *strSource* into a new collated form that is stored in *strDest*. No more than *count* characters, including the null character, are transformed and placed into the resulting string. The transformation is made using the locale's `LC_COLLATE` category setting. For more information on `LC_COLLATE`, see [setlocale](setlocale-wsetlocale.md). `strxfrm` uses the current locale for its locale-dependent behavior; `_strxfrm_l` is identical except that it uses the locale passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 After the transformation, a call to `strcmp` with the two transformed strings yields results identical to those of a call to `strcoll` applied to the original two strings. As with `strcoll` and `stricoll`, `strxfrm` automatically handles multibyte-character strings as appropriate.
 
@@ -94,13 +94,11 @@ In locales for which the character set and the lexicographic character order dif
 
 The value of the following expression is the size of the array needed to hold the `strxfrm` transformation of the source string:
 
-```
-1 + strxfrm( NULL, string, 0 )
-```
+`1 + strxfrm( NULL, string, 0 )`
 
 In the "C" locale only, `strxfrm` is equivalent to the following:
 
-```
+```C
 strncpy( _string1, _string2, _count );
 return( strlen( _string1 ) );
 ```
@@ -119,10 +117,10 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[localeconv](../../c-runtime-library/reference/localeconv.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[localeconv](localeconv.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _ecvt_s
 
-Converts a **double** number to a string. This is a version of [_ecvt](../../c-runtime-library/reference/ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **double** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -80,7 +80,7 @@ In the case of an invalid parameter, as listed in the following table, this func
 |any|any|any|any|**NULL**|any|**EINVAL**|Not modified.|
 |any|any|any|any|any|**NULL**|**EINVAL**|Not modified.|
 
-**Security Issues**
+## Security Issues
 
 **_ecvt_s** might generate an access violation if *buffer* does not point to valid memory and is not **NULL**.
 
@@ -96,7 +96,7 @@ The difference between **_ecvt_s** and **_fcvt_s** is in the interpretation of t
 
 In C++, using this function is simplified by a template overload; the overload can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug version of this function first fills the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug version of this function first fills the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## Requirements
 
@@ -142,7 +142,7 @@ Converted value: 12000
 
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
-[_fcvt_s](../../c-runtime-library/reference/fcvt-s.md)<br/>
-[_gcvt_s](../../c-runtime-library/reference/gcvt-s.md)<br/>
+[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+[_ecvt](ecvt.md)<br/>
+[_fcvt_s](fcvt-s.md)<br/>
+[_gcvt_s](gcvt-s.md)<br/>

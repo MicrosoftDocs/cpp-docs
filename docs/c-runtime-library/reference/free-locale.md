@@ -53,5 +53,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_get_current_locale](../../c-runtime-library/reference/get-current-locale.md)<br/>
-[_create_locale, _wcreate_locale](../../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[_get_current_locale](get-current-locale.md)<br/>
+[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>

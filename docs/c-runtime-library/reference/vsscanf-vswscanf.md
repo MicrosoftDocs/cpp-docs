@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # vsscanf, vswscanf
 
-Reads formatted data from a string. More secure versions of these functions are available; see [vsscanf_s, vswscanf_s](../../c-runtime-library/reference/vsscanf-s-vswscanf-s.md).
+Reads formatted data from a string. More secure versions of these functions are available; see [vsscanf_s, vswscanf_s](vsscanf-s-vswscanf-s.md).
 
 ## Syntax
 
@@ -47,7 +47,7 @@ Stored data
 *format*
 Format-control string. For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
-`arglist`
+*arglist*
 Variable argument list.
 
 ## Return Value
@@ -60,7 +60,7 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 
 ## Remarks
 
-The `vsscanf` function reads data from *buffer* into the locations that are given by each argument in the `arglist` argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *format*. The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the `scanf` function. If copying takes place between strings that overlap, the behavior is undefined.
+The `vsscanf` function reads data from *buffer* into the locations that are given by each argument in the *arglist* argument list. Every argument in the list must be a pointer to a variable that has a type that corresponds to a type specifier in *format*. The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the `scanf` function. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
 >  When you use `vsscanf` to read a string, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, incorrectly formatted input can cause a buffer overrun.
@@ -84,7 +84,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_vsscanf.c
 // compile with: /W3
 // This program uses vsscanf to read data items
@@ -136,7 +136,7 @@ Real:     = 15.000000
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vsscanf_s, vswscanf_s](../../c-runtime-library/reference/vsscanf-s-vswscanf-s.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[vsscanf_s, vswscanf_s](vsscanf-s-vswscanf-s.md)<br/>

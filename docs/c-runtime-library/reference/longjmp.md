@@ -51,9 +51,9 @@ Call `longjmp` before the function that called `setjmp` returns; otherwise the r
 
 Observe the following restrictions when using `longjmp`:
 
--   Do not assume that the values of the register variables will remain the same. The values of register variables in the routine calling `setjmp` may not be restored to the proper values after `longjmp` is executed.
+- Do not assume that the values of the register variables will remain the same. The values of register variables in the routine calling `setjmp` may not be restored to the proper values after `longjmp` is executed.
 
--   Do not use `longjmp` to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via `longjmp` if it first reinitializes the floating-point math package by calling `_fpreset`.
+- Do not use `longjmp` to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via `longjmp` if it first reinitializes the floating-point math package by calling `_fpreset`.
 
      **Note** Be careful when using `setjmp` and `longjmp` in C++ programs. Because these functions do not support C++ object semantics, it is safer to use the C++ exception-handling mechanism.
 
@@ -73,9 +73,9 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-See the example for [_fpreset](../../c-runtime-library/reference/fpreset.md).
+See the example for [_fpreset](fpreset.md).
 
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[setjmp](../../c-runtime-library/reference/setjmp.md)<br/>
+[setjmp](setjmp.md)<br/>

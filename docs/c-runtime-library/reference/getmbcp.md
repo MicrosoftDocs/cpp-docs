@@ -44,4 +44,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
+[_setmbcp](setmbcp.md)<br/>

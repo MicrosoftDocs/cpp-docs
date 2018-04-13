@@ -69,4 +69,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
-[pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)<br/>
+[pow, powf, powl](pow-powf-powl.md)<br/>

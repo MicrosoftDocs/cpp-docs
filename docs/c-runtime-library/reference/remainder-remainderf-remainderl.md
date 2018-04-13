@@ -47,7 +47,7 @@ The denominator.
 
 ## Return Value
 
-The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
+The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remainder** returns a quiet NaN. For information about the representation of a quiet NaN by the **printf** family, see [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## Remarks
 
@@ -88,7 +88,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>
-[imaxdiv](../../c-runtime-library/reference/imaxdiv.md)<br/>
-[fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
-[remquo, remquof, remquol](../../c-runtime-library/reference/remquo-remquof-remquol.md)<br/>
+[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[imaxdiv](imaxdiv.md)<br/>
+[fmod, fmodf](fmod-fmodf.md)<br/>
+[remquo, remquof, remquol](remquo-remquof-remquol.md)<br/>

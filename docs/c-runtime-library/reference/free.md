@@ -43,13 +43,13 @@ The `free` function deallocates a memory block (*memblock*) that was previously 
 
 If an error occurs in freeing the memory, `errno` is set with information from the operating system on the nature of the failure. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-After a memory block has been freed, [_heapmin](../../c-runtime-library/reference/heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that is not released to the operating system is restored to the free pool and is available for allocation again.
+After a memory block has been freed, [_heapmin](heapmin.md) minimizes the amount of free memory on the heap by coalescing the unused regions and releasing them back to the operating system. Freed memory that is not released to the operating system is restored to the free pool and is available for allocation again.
 
-When the application is linked with a debug version of the C run-time libraries, `free` resolves to [_free_dbg](../../c-runtime-library/reference/free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, `free` resolves to [_free_dbg](free-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
 `free` is marked `__declspec(noalias)`, meaning that the function is guaranteed not to modify global variables. For more information, see [noalias](../../cpp/noalias.md).
 
-To free memory allocated with [_malloca](../../c-runtime-library/reference/malloca.md), use [_freea](../../c-runtime-library/reference/freea.md).
+To free memory allocated with [_malloca](malloca.md), use [_freea](freea.md).
 
 ## Requirements
 
@@ -61,15 +61,15 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [malloc](../../c-runtime-library/reference/malloc.md).
+See the example for [malloc](malloc.md).
 
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_alloca](../../c-runtime-library/reference/alloca.md)<br/>
-[calloc](../../c-runtime-library/reference/calloc.md)<br/>
-[malloc](../../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../../c-runtime-library/reference/realloc.md)<br/>
-[_free_dbg](../../c-runtime-library/reference/free-dbg.md)<br/>
-[_heapmin](../../c-runtime-library/reference/heapmin.md)<br/>
-[_freea](../../c-runtime-library/reference/freea.md)<br/>
+[_alloca](alloca.md)<br/>
+[calloc](calloc.md)<br/>
+[malloc](malloc.md)<br/>
+[realloc](realloc.md)<br/>
+[_free_dbg](free-dbg.md)<br/>
+[_heapmin](heapmin.md)<br/>
+[_freea](freea.md)<br/>

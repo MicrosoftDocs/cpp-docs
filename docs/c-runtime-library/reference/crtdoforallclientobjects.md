@@ -64,6 +64,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md)<br/>
+[_CrtSetDbgFlag](crtsetdbgflag.md)<br/>
 [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details)<br/>
-[_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)<br/>
+[_CrtReportBlockType](crtreportblocktype.md)<br/>

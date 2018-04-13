@@ -32,7 +32,7 @@ struct lconv *localeconv( void );
 
 ## Return Value
 
-`localeconv` returns a pointer to a filled-in object of type [struct lconv](../../c-runtime-library/standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to `localeconv`. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) with *category* values of `LC_ALL`, `LC_MONETARY`, or `LC_NUMERIC` overwrite the contents of the structure.
+`localeconv` returns a pointer to a filled-in object of type [struct lconv](../../c-runtime-library/standard-types.md). The values contained in the object are copied from the locale settings in thread-local storage, and can be overwritten by subsequent calls to `localeconv`. Changes made to the values in this object do not modify the locale settings. Calls to [setlocale](setlocale-wsetlocale.md) with *category* values of `LC_ALL`, `LC_MONETARY`, or `LC_NUMERIC` overwrite the contents of the structure.
 
 ## Remarks
 
@@ -106,9 +106,9 @@ The values of `grouping` and `mon_grouping` are interpreted according to the fol
 
 The values for `int_curr_symbol` are interpreted according to the following rules:
 
--   The first three characters specify the alphabetic international currency symbol as defined in the *ISO 4217 Codes for the Representation of Currency and Funds* standard.
+- The first three characters specify the alphabetic international currency symbol as defined in the *ISO 4217 Codes for the Representation of Currency and Funds* standard.
 
--   The fourth character (immediately preceding the null character) separates the international currency symbol from the monetary quantity.
+- The fourth character (immediately preceding the null character) separates the international currency symbol from the monetary quantity.
 
 The values for `p_cs_precedes` and `n_cs_precedes` are interpreted according to the following rules (the `n_cs_precedes` rule is in parentheses):
 
@@ -151,5 +151,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 [Locale](../../c-runtime-library/locale.md)<br/>
 [setlocale](../../preprocessor/setlocale.md)<br/>
 [strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
+[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>

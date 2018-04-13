@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # gmtime_s, _gmtime32_s, _gmtime64_s
 
-Converts a time value to a **tm** structure. These are versions of [_gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a time value to a **tm** structure. These are versions of [_gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -65,7 +65,7 @@ In the case of the first two error conditions, the invalid parameter handler is 
 
 ## Remarks
 
-The **_gmtime32_s** function breaks down the *sourceTime* value and stores it in a structure of type **tm**, defined in Time.h. The address of the structure is passed in *tmDest*. The value of *sourceTime* is usually obtained from a call to the [time](../../c-runtime-library/reference/time-time32-time64.md) function.
+The **_gmtime32_s** function breaks down the *sourceTime* value and stores it in a structure of type **tm**, defined in Time.h. The address of the structure is passed in *tmDest*. The value of *sourceTime* is usually obtained from a call to the [time](time-time32-time64.md) function.
 
 > [!NOTE]
 > The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .
@@ -143,11 +143,11 @@ Coordinated universal time is Fri Apr 25 20:12:33 2003
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[_mkgmtime, _mkgmtime32, _mkgmtime64](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 
-Converts a string to lowercase. More secure versions of these functions are available; see [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](../../c-runtime-library/reference/strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
+Converts a string to lowercase. More secure versions of these functions are available; see [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md).
 
 > [!IMPORTANT]
 >  `_mbslwr` and `_mbslwr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -94,7 +94,7 @@ Each of these functions returns a pointer to the converted string. Because the m
 
 ## Remarks
 
-The `_strlwr` function converts any uppercase letters in *str* to lowercase as determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for their locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The `_strlwr` function converts any uppercase letters in *str* to lowercase as determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for their locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 The `_wcslwr` and `_mbslwr` functions are wide-character and multibyte-character versions of `_strlwr`. The argument and return value of `_wcslwr` are wide-character strings; those of `_mbslwr` are multibyte-character strings. These three functions behave identically otherwise.
 
@@ -121,7 +121,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_strlwr.c
 // compile with: /W3
 // This program uses _strlwr and _strupr to create
@@ -159,4 +159,4 @@ Upper: THE STRING TO END ALL STRINGS!
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](../../c-runtime-library/reference/strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md)<br/>
+[_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr](strupr-strupr-l-mbsupr-mbsupr-l-wcsupr-l-wcsupr.md)<br/>

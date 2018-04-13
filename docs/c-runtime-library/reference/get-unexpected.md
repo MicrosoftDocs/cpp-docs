@@ -32,7 +32,7 @@ unexpected_function _get_unexpected( void );
 
 ## Return Value
 
-Returns a pointer to the function registered by [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
+Returns a pointer to the function registered by [set_unexpected](set-unexpected-crt.md). If no function has been set, the return value may be used to restore the default behavior; this value may be NULL.
 
 ## Requirements
 
@@ -45,7 +45,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
-[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>
+[abort](abort.md)<br/>
+[set_terminate](set-terminate-crt.md)<br/>
+[terminate](terminate-crt.md)<br/>
+[unexpected](unexpected-crt.md)<br/>

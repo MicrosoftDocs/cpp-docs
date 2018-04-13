@@ -45,8 +45,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)<br/>
-[set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)<br/>
-[set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
-[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
+[abort](abort.md)<br/>
+[_set_se_translator](set-se-translator.md)<br/>
+[set_terminate](set-terminate-crt.md)<br/>
+[set_unexpected](set-unexpected-crt.md)<br/>
+[terminate](terminate-crt.md)<br/>

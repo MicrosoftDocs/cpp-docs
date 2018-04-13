@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _strtime, _wstrtime
 
-Copy the time to a buffer. More secure versions of these functions are available; see [_strtime_s, _wstrtime_s](../../c-runtime-library/reference/strtime-s-wstrtime-s.md).
+Copy the time to a buffer. More secure versions of these functions are available; see [_strtime_s, _wstrtime_s](strtime-s-wstrtime-s.md).
 
 ## Syntax
 
@@ -45,18 +45,18 @@ wchar_t *_wstrtime(
 
 ### Parameters
 
-`timestr`
+*timestr*
 Time string.
 
 ## Return Value
 
-Returns a pointer to the resulting character string `timestr`.
+Returns a pointer to the resulting character string *timestr*.
 
 ## Remarks
 
-The `_strtime` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long.
+The `_strtime` function copies the current local time into the buffer pointed to by *timestr*. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long.
 
-`_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.If `timestr` is `NULL` pointer or if `timestr` is formatted incorrectly, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the exception is allowed to continue, these functions return a NULL and set `errno` to `EINVAL` if `timestr` was a NULL or set `errno` to `ERANGE` if `timestr` is formatted incorrectly.
+`_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.If *timestr* is `NULL` pointer or if *timestr* is formatted incorrectly, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the exception is allowed to continue, these functions return a NULL and set `errno` to `EINVAL` if *timestr* was a NULL or set `errno` to `ERANGE` if *timestr* is formatted incorrectly.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -77,7 +77,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_strtime.c
 // compile with: /W3
 
@@ -100,10 +100,10 @@ The current time is 14:21:44
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
-[_tzset](../../c-runtime-library/reference/tzset.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>
+[_tzset](tzset.md)<br/>

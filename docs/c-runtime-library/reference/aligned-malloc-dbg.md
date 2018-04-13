@@ -55,7 +55,7 @@ A pointer to the memory block that was allocated or `NULL` if the operation fail
 
 ## Remarks
 
-`_aligned_malloc_dbg` is a debug version of the [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_malloc_dbg` is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and `_aligned_malloc_dbg` allocate a block of memory in the base heap, but `_aligned_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests.
+`_aligned_malloc_dbg` is a debug version of the [_aligned_malloc](aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_aligned_malloc_dbg` is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and `_aligned_malloc_dbg` allocate a block of memory in the base heap, but `_aligned_malloc_dbg` offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests.
 
 `_aligned_malloc_dbg` allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
 

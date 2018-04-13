@@ -81,7 +81,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_fgets.c
 // This program uses fgets to display
 // a line from a file on the screen.
@@ -105,22 +105,22 @@ int main( void )
 }
 ```
 
-## Input: crt_fgets.txt
+### Input: crt_fgets.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Line one.
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)<br/>
+[fputs, fputws](fputs-fputws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](../../c-runtime-library/reference/puts-putws.md)<br/>
+[puts, _putws](puts-putws.md)<br/>

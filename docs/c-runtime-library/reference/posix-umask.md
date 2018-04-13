@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # umask
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_umask](../../c-runtime-library/reference/umask.md) or security-enhanced [_umask_s](../../c-runtime-library/reference/umask-s.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_umask](umask.md) or security-enhanced [_umask_s](umask-s.md) instead.

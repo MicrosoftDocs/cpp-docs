@@ -71,7 +71,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_fread.c
 // This program opens a file named FREAD.OUT and
 // writes 25 characters to the file. It then tries to open
@@ -122,5 +122,5 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_read](read.md)<br/>

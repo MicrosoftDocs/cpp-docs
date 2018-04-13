@@ -63,11 +63,11 @@ The `_CrtIsMemoryBlock` function verifies that a specified memory block is locat
 
 If `_CrtIsMemoryBlock` fails, it returns `FALSE` and the output parameters are initialized to default values: *requestNumber* and `lineNumber` are set to 0 and *filename* is set to `NULL`.
 
-Because this function returns `TRUE` or `FALSE`, it can be passed to one of the [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:
+Because this function returns `TRUE` or `FALSE`, it can be passed to one of the [_ASSERT](assert-asserte-assert-expr-macros.md) macros to create a simple debugging error handling mechanism. The following example causes an assertion failure if the specified address is not located within the local heap:
 
-```
+```C
 _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
-&filename, &linenumber ) );
+          &filename, &linenumber ) );
 ```
 
 For more information about how `_CrtIsMemoryBlock` can be used with other debug functions and macros, see [Macros for Reporting](/visualstudio/debugger/macros-for-reporting). For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
@@ -86,7 +86,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-See the example for the [_CrtIsValidHeapPointer](../../c-runtime-library/reference/crtisvalidheappointer.md) topic.
+See the example for the [_CrtIsValidHeapPointer](crtisvalidheappointer.md) topic.
 
 ## See also
 

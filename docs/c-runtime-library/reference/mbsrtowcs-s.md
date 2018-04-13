@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs_s
 
-Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](mbsrtowcs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -82,11 +82,11 @@ If any one of these conditions occurs, the invalid parameter exception is invoke
 
 The `mbsrtowcs_s` function converts a string of multibyte characters indirectly pointed to by *mbstr* into wide characters stored in the buffer pointed to by *wcstr*, by using the conversion state contained in *mbstate*. The conversion will continue for each character until one of these conditions is met:
 
--   A multibyte null character is encountered
+- A multibyte null character is encountered
 
--   An invalid multibyte character is encountered
+- An invalid multibyte character is encountered
 
--   The number of wide characters stored in the *wcstr* buffer equals *count*.
+- The number of wide characters stored in the *wcstr* buffer equals *count*.
 
 The destination string *wcstr* is always null-terminated, even in the case of an error, unless *wcstr* is a null pointer.
 
@@ -105,7 +105,7 @@ If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of `mbs
 > [!IMPORTANT]
 >  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of multibyte characters to convert.
 
-The `mbsrtowcs_s` function differs from [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application should use `mbsrlen` instead of `mbslen`, if a subsequent call to `mbsrtowcs_s` is used instead of `mbstowcs_s.`
+The `mbsrtowcs_s` function differs from [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application should use `mbsrlen` instead of `mbslen`, if a subsequent call to `mbsrtowcs_s` is used instead of `mbstowcs_s.`
 
 In C++, using this function is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the requirement to specify a size argument) and they can automatically replace older, non-secure functions by using their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -124,7 +124,7 @@ The `mbsrtowcs_s` function is multithread safe if no function in the current thr
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbrtowc](../../c-runtime-library/reference/mbrtowc.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
-[mbsinit](../../c-runtime-library/reference/mbsinit.md)<br/>
+[mbrtowc](mbrtowc.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)<br/>
+[mbsinit](mbsinit.md)<br/>

@@ -66,7 +66,7 @@ If successful, returns the base-2 exponent of *x*, that is, 2<sup>x</sup>. Other
 |Overflow range error|+HUGE_VAL, +HUGE_VALF, or +HUGE_VALL|
 |Underflow range error|Correct result, after rounding|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -82,6 +82,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)<br/>
-[log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[exp, expf, expl](exp-expf.md)<br/>
+[log2, log2f, log2l](log2-log2f-log2l.md)<br/>

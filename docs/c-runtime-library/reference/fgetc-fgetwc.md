@@ -73,7 +73,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_fgetc.c
 // This program uses getc to read the first
 // 80 input characters (or until the end of input)
@@ -110,14 +110,14 @@ int main( void )
 
 ## Input: crt_fgetc.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Line one.
 Line two.
 ```
@@ -125,5 +125,5 @@ Line two.
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

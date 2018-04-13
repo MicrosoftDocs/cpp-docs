@@ -79,4 +79,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)<br/>
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

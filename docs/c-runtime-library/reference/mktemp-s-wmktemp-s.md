@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _mktemp_s, _wmktemp_s
 
-Creates a unique file name. These are versions of [_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Creates a unique file name. These are versions of [_mktemp, _wmktemp](mktemp-wmktemp.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -110,7 +110,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```cpp
 // crt_mktemp_s.cpp
 /* The program uses _mktemp to create
 * five unique filenames. It opens each filename
@@ -152,9 +152,9 @@ int main()
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Unique filename is fna03188
 Unique filename is fnb03188
 Unique filename is fnc03188
@@ -165,10 +165,10 @@ Unique filename is fne03188
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_getpid](../../c-runtime-library/reference/getpid.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_getpid](getpid.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
+[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+[tmpfile_s](tmpfile-s.md)<br/>

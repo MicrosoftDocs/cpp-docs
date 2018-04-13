@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # cprintf
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_cprintf](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) or security-enhanced [_cprintf_s](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_cprintf](cprintf-cprintf-l-cwprintf-cwprintf-l.md) or security-enhanced [_cprintf_s](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

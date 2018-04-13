@@ -26,10 +26,8 @@ Installs your own termination routine to be called by `terminate`.
 
 ## Syntax
 
-```C
-terminate_function set_terminate(
-   terminate_function termFunction
-);
+```cpp
+terminate_function set_terminate( terminate_function termFunction );
 ```
 
 ### Parameters
@@ -49,12 +47,12 @@ In a multithreaded environment, terminate functions are maintained separately fo
 
 The `terminate_function` type is defined in EH.H as a pointer to a user-defined termination function, *termFunction* that returns `void`. Your custom function *termFunction* can take no arguments and should not return to its caller. If it does, `abort` is called. An exception may not be thrown from within *termFunction*.
 
-```
+```cpp
 typedef void ( *terminate_function )( );
 ```
 
 > [!NOTE]
->  The `set_terminate` function only works outside the debugger.
+> The `set_terminate` function only works outside the debugger.
 
 There is a single `set_terminate` handler for all dynamically linked DLLs or EXEs; even if you call `set_terminate` your handler may be replaced by another, or you may be replacing a handler set by another DLL or EXE.
 
@@ -68,13 +66,13 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [terminate](../../c-runtime-library/reference/terminate-crt.md).
+See the example for [terminate](terminate-crt.md).
 
 ## See also
 
 [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[_get_terminate](../../c-runtime-library/reference/get-terminate.md)<br/>
-[set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)<br/>
-[terminate](../../c-runtime-library/reference/terminate-crt.md)<br/>
-[unexpected](../../c-runtime-library/reference/unexpected-crt.md)<br/>
+[abort](abort.md)<br/>
+[_get_terminate](get-terminate.md)<br/>
+[set_unexpected](set-unexpected-crt.md)<br/>
+[terminate](terminate-crt.md)<br/>
+[unexpected](unexpected-crt.md)<br/>

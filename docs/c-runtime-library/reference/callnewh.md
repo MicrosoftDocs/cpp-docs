@@ -60,5 +60,5 @@ The *new handler* is called if the [new operator](../../cpp/new-operator-cpp.md)
 
 ## See also
 
-[_set_new_handler](../../c-runtime-library/reference/set-new-handler.md)<br/>
-[_set_new_mode](../../c-runtime-library/reference/set-new-mode.md)<br/>
+[_set_new_handler](set-new-handler.md)<br/>
+[_set_new_mode](set-new-mode.md)<br/>

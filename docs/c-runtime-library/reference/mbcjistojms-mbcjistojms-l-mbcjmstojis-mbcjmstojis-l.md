@@ -66,7 +66,7 @@ The `_mbcjmstojis` function converts a Shift JIS character to a JIS character. T
 
 The value *c* should be a 16-bit value whose upper 8 bits represent the lead byte of the character to convert and whose lower 8 bits represent the trail byte.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In earlier versions, `_mbcjistojms` and `_mbcjmstojis` were called `jistojms` and `jmstojis`, respectively. `_mbcjistojms`, `_mbcjistojms_l`, `_mbcjmstojis` and `_mbcjmstojis_l` should be used instead.
 

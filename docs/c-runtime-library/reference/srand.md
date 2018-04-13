@@ -49,9 +49,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [rand](../../c-runtime-library/reference/rand.md).
+See the example for [rand](rand.md).
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[rand](../../c-runtime-library/reference/rand.md)<br/>
+[rand](rand.md)<br/>

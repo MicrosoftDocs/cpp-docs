@@ -50,7 +50,7 @@ The `_onexit` function is passed the address of a function (*function*) to be ca
 
 In the case when `_onexit` is called from within a DLL, routines registered with `_onexit` run on a DLL's unloading after `DllMain` is called with DLL_PROCESS_DETACH.
 
-`_onexit` is a Microsoft extension. For ANSI portability, use [atexit](../../c-runtime-library/reference/atexit.md). The `_onexit_m` version of the function is for mixed mode use.
+`_onexit` is a Microsoft extension. For ANSI portability, use [atexit](atexit.md). The `_onexit_m` version of the function is for mixed mode use.
 
 ## Requirements
 
@@ -62,7 +62,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_onexit.c
 
 #include <stdlib.h>
@@ -105,9 +105,9 @@ int fn4()
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 This is executed first.
 This is executed next.
 ```
@@ -115,6 +115,6 @@ This is executed next.
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[atexit](../../c-runtime-library/reference/atexit.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
+[atexit](atexit.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [__dllonexit](../../c-runtime-library/dllonexit.md)<br/>

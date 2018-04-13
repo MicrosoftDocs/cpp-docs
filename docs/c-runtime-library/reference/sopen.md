@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # sopen
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_sopen](../../c-runtime-library/reference/sopen-wsopen.md) or security-enhanced [_sopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_sopen](sopen-wsopen.md) or security-enhanced [_sopen_s](sopen-s-wsopen-s.md) instead.

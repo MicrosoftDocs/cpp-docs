@@ -55,11 +55,11 @@ The `_mkgmtime32` and `_mkgmtime64` functions convert a UTC time to a `__time32_
 
 The time structure passed in will be changed as follows, in the same way as they are changed with the `_mktime` functions: the `tm_wday` and `tm_yday` fields are set to new values based on the values of `tm_mday` and `tm_year`. When specifying a `tm` structure time, set the `tm_isdst` field to:
 
--   Zero (0) to indicate that standard time is in effect.
+- Zero (0) to indicate that standard time is in effect.
 
--   A value greater than 0 to indicate that daylight saving time is in effect.
+- A value greater than 0 to indicate that daylight saving time is in effect.
 
--   A value less than zero to have the C run-time library code compute whether standard time or daylight saving time is in effect.
+- A value less than zero to have the C run-time library code compute whether standard time or daylight saving time is in effect.
 
 The C run-time library uses the TZ environment variable to determine the correct daylight savings time. If TZ is not set, the operating system is queried to get the correct regional daylight savings time behavior. `tm_isdst` is a required field. If not set, its value is undefined and the return value from `mktime` is unpredictable.
 
@@ -69,7 +69,7 @@ Note that `gmtime` and `localtime` use a single statically allocated buffer for 
 
 ## Example
 
-```
+```C
 // crt_mkgmtime.c
 #include <stdio.h>
 #include <time.h>
@@ -104,9 +104,9 @@ int main()
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Seconds since midnight, January 1, 1970
 My time: 1171588492
 GM time (UTC): 1171588492
@@ -118,7 +118,7 @@ Greenwich Mean Time: Fri Feb 16 01:14:52 2007
 
 The following example shows how the incomplete structure is filled out with the computed values of the day of the week and the day of the year.
 
-```
+```C
 // crt_mkgmtime2.c
 #include <stdio.h>
 #include <time.h>
@@ -153,9 +153,9 @@ int main()
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Before calling _mkgmtime, t1 = Sun Feb 12 00:00:00 2003
 t.tm_yday = 0
 After calling _mkgmtime, t1 = Wed Feb 12 00:00:00 2003
@@ -165,10 +165,10 @@ t.tm_yday = 42
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

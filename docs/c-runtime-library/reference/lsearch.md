@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _lsearch
 
-Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md).
+Performs a linear search for a value; adds to end of list if not found. A more secure version of this function is available; see [_lsearch_s](lsearch-s.md).
 
 ## Syntax
 
@@ -75,7 +75,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_lsearch.c
 #include <search.h>
 #include <string.h>
@@ -118,6 +118,6 @@ wordlist after _lsearch: hello thanks bye extra
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
-[_lfind](../../c-runtime-library/reference/lfind.md)<br/>
-[_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)<br/>
+[bsearch](bsearch.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch_s](lsearch-s.md)<br/>

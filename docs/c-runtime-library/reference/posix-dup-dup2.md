@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # dup, dup2
 
-These POSIX functions are deprecated. Use the ISO C++ conformant [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [_dup, _dup2](dup-dup2.md) instead.

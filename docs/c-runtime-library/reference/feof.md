@@ -45,7 +45,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The `feof` routine (implemented both as a function and as a macro) determines whether the end of *stream* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until `rewind`, `fsetpos`, `fseek`, or `clearerr` is called against it.
+The `feof` routine (implemented both as a function and as a macro) determines whether the end of *stream* has been passed. When the end of file is passed, read operations return an end-of-file indicator until the stream is closed or until `rewind`, `fsetpos`, [fseek](fseek-fseeki64.md), or `clearerr` is called against it.
 
 For example, if a file contains 10 bytes and you read 10 bytes from the file, `feof` will return 0 because, even though the file pointer is at the end of the file, you have not attempted to read beyond the end. Only after you try to read an 11th byte will `feof` return a nonzero value.
 
@@ -59,7 +59,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_feof.c
 // This program uses feof to indicate when
 // it reaches the end of the file CRT_FEOF.TXT. It also
@@ -99,14 +99,14 @@ int main( void )
 
 ## Input: crt_feof.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Number of bytes read = 19
 ```
 
@@ -114,7 +114,7 @@ Number of bytes read = 19
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[_eof](../../c-runtime-library/reference/eof.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[_eof](eof.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

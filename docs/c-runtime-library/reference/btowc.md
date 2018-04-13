@@ -51,4 +51,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

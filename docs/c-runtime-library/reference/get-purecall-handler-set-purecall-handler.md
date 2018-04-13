@@ -113,4 +113,4 @@ In _purecall_handler.
 ## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[_purecall](../../c-runtime-library/reference/purecall.md)<br/>
+[_purecall](purecall.md)<br/>

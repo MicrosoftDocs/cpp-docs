@@ -68,7 +68,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[cexp, cexpf, cexpl](../../c-runtime-library/reference/cexp-cexpf-cexpl.md)<br/>
-[cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)<br/>
-[clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
+[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
+[clog, clogf, clogl](clog-clogf-clogl.md)<br/>

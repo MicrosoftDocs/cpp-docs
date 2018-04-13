@@ -57,7 +57,7 @@ Each of these functions writes the single character *c* to a file at the positio
 
 The two functions behave identically if the stream is opened in ANSI mode. `fputc` does not currently support output into a UNICODE stream.
 
-The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. For more information, see[_fputc_nolock, _fputwc_nolock](../../c-runtime-library/reference/fputc-nolock-fputwc-nolock.md).
+The versions with the `_nolock` suffix are identical except that they are not protected from interference by other threads. For more information, see[_fputc_nolock, _fputwc_nolock](fputc-nolock-fputwc-nolock.md).
 
 Routine-specific remarks follow.
 
@@ -83,7 +83,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_fputc.c
 // This program uses fputc
 // to send a character array to stdout.
@@ -109,5 +109,5 @@ This is a test of fputc!!
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>

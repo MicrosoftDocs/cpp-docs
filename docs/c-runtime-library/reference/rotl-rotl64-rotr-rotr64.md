@@ -102,9 +102,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 0xfd93 rotated left three times is 0x7ec98
 0xfd93 rotated right four times is 0x30000fd9
 101010101010101 rotated left three times is 808080808080808
@@ -114,4 +114,4 @@ int main( void )
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_lrotl, _lrotr](../../c-runtime-library/reference/lrotl-lrotr.md)<br/>
+[_lrotl, _lrotr](lrotl-lrotr.md)<br/>

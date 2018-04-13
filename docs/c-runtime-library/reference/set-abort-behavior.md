@@ -81,4 +81,4 @@ Suppressing the abort message. If successful, this message will be the only outp
 
 ## See also
 
-[abort](../../c-runtime-library/reference/abort.md)<br/>
+[abort](abort.md)<br/>

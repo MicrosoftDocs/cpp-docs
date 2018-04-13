@@ -52,4 +52,4 @@ When these methods walk a table of function entries, they skip `NULL` entries an
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>

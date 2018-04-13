@@ -141,9 +141,9 @@ int main(int argc, char* argv[])
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Locale set to: "Japanese_Japan.932"
 Currently in middle of mb conversion, state = 9a
 Currently in middle of mb conversion, state = e0

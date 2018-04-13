@@ -59,7 +59,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getche_nolock.c
 // compile with: /c
 // This program reads characters from
@@ -97,5 +97,5 @@ Type 'Y' when finished typing keys: abcdefyY
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>
+[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>

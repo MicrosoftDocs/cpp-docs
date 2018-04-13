@@ -59,8 +59,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[fegetenv](../../c-runtime-library/reference/fegetenv1.md)<br/>
-[feclearexcept](../../c-runtime-library/reference/feclearexcept1.md)<br/>
-[feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>
-[fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fegetenv](fegetenv1.md)<br/>
+[feclearexcept](feclearexcept1.md)<br/>
+[feholdexcept](feholdexcept2.md)<br/>
+[fesetexceptflag](fesetexceptflag2.md)<br/>

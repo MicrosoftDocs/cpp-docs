@@ -69,7 +69,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 This program uses _unlink to delete CRT_UNLINK.TXT.
 
-```
+```C
 // crt_unlink.c
 
 #include <stdio.h>
@@ -85,18 +85,18 @@ int main( void )
 
 ### Input: crt_unlink.txt
 
-```
+```Input
 This file will be deleted.
 ```
 
 ### Sample Output
 
-```
+```Output
 Deleted 'CRT_UNLINK.TXT'
 ```
 
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[remove, _wremove](../../c-runtime-library/reference/remove-wremove.md)<br/>
+[_close](close.md)<br/>
+[remove, _wremove](remove-wremove.md)<br/>

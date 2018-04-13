@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # putw
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_putw](../../c-runtime-library/reference/putw.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_putw](putw.md) instead.

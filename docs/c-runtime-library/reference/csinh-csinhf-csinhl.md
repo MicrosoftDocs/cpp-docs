@@ -67,16 +67,16 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)<br/>
-[ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)<br/>
-[catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)<br/>
-[casinh, casinhf, casinhl](../../c-runtime-library/reference/casinh-casinhf-casinhl.md)<br/>
-[ccosh, ccoshf, ccoshl](../../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md)<br/>
-[cacosh, cacoshf, cacoshl](../../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)<br/>
-[cacos, cacosf, cacosl](../../c-runtime-library/reference/cacos-cacosf-cacosl.md)<br/>
-[ctan, ctanf, ctanl](../../c-runtime-library/reference/ctan-ctanf-ctanl.md)<br/>
-[csin, csinf, csinl](../../c-runtime-library/reference/csin-csinf-csinl.md)<br/>
-[casin, casinf, casinl](../../c-runtime-library/reference/casin-casinf-casinl.md)<br/>
-[ccos, ccosf, ccosl](../../c-runtime-library/reference/ccos-ccosf-ccosl.md)<br/>
-[csqrt, csqrtf, csqrtl](../../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
+[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
+[catan, catanf, catanl](catan-catanf-catanl.md)<br/>
+[casinh, casinhf, casinhl](casinh-casinhf-casinhl.md)<br/>
+[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)<br/>
+[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)<br/>
+[cacos, cacosf, cacosl](cacos-cacosf-cacosl.md)<br/>
+[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)<br/>
+[csin, csinf, csinl](csin-csinf-csinl.md)<br/>
+[casin, casinf, casinl](casin-casinf-casinl.md)<br/>
+[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)<br/>
+[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)<br/>

@@ -42,7 +42,7 @@ Input stream.
 
 ## Return Value
 
-See [getc, getwc](../../c-runtime-library/reference/getc-getwc.md).
+See [getc, getwc](getc-getwc.md).
 
 ## Remarks
 
@@ -65,7 +65,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getc_nolock.c
 // Use getc to read a line from a file.
 
@@ -99,23 +99,23 @@ int main()
 }
 ```
 
-## Input: crt_getc_nolock.txt
+### Input: crt_getc_nolock.txt
 
-```
+```Input
 Line the first.
 Line the second.
 ```
 
 ### Output
 
-```
+```Output
 Input was: Line the first.
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../../c-runtime-library/reference/ungetc-ungetwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>
+[ungetc, ungetwc](ungetc-ungetwc.md)<br/>

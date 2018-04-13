@@ -42,7 +42,7 @@ Target the `FILE` structure.
 
 ## Return Value
 
-Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)**.**
+Same as `ftell` and `_ftelli64`. For more information, see [ftell, _ftelli64](ftell-ftelli64.md)**.**
 
 ## Remarks
 
@@ -60,7 +60,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetpos](../../c-runtime-library/reference/fgetpos.md)<br/>
-[fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)<br/>
+[fgetpos](fgetpos.md)<br/>
+[fseek, _fseeki64](fseek-fseeki64.md)<br/>
+[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
+[ftell, _ftelli64](ftell-ftelli64.md)<br/>

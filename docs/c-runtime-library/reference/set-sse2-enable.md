@@ -45,28 +45,28 @@ Nonzero if SSE2 implementation is enabled; zero if SSE2 implementation is disabl
 
 The following functions have SSE2 implementations that can be enabled by using **_set_SSE2_enable**:
 
--   [atan](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
+- [atan](atan-atanf-atanl-atan2-atan2f-atan2l.md)
 
--   [ceil](../../c-runtime-library/reference/ceil-ceilf-ceill.md)
+- [ceil](ceil-ceilf-ceill.md)
 
--   [exp](../../c-runtime-library/reference/exp-expf.md)
+- [exp](exp-expf.md)
 
--   [floor](../../c-runtime-library/reference/floor-floorf-floorl.md)
+- [floor](floor-floorf-floorl.md)
 
--   [log](../../c-runtime-library/reference/log-logf-log10-log10f.md)
+- [log](log-logf-log10-log10f.md)
 
--   [log10](../../c-runtime-library/reference/log-logf-log10-log10f.md)
+- [log10](log-logf-log10-log10f.md)
 
--   [modf](../../c-runtime-library/reference/modf-modff-modfl.md)
+- [modf](modf-modff-modfl.md)
 
--   [pow](../../c-runtime-library/reference/pow-powf-powl.md)
+- [pow](pow-powf-powl.md)
 
 The SSE2 implementations of these functions might give slightly different answers than the default implementations, because SSE2 intermediate values are 64-bit floating-point quantities but the default implementation intermediate values are 80-bit floating-point quantities.
 
 > [!NOTE]
 >  If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **_set_SSE2_enable** has no effect. The `/Oi` compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **_set_SSE2_enable**. If you want to guarantee that `/Oi` does not override **_set_SSE2_enable**, use `/Oi-` to compile your project. This might also be good practice when you use other compiler switches that imply `/Oi`.
 
-The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md) to mask exceptions.
+The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](control87-controlfp-control87-2.md) to mask exceptions.
 
 ## Requirements
 

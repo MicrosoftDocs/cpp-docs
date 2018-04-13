@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _ftime, _ftime32, _ftime64
 
-Get the current time. More secure versions of these functions are available; see [_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md).
+Get the current time. More secure versions of these functions are available; see [_ftime_s, _ftime32_s, _ftime64_s](ftime-s-ftime32-s-ftime64-s.md).
 
 ## Syntax
 
@@ -43,7 +43,7 @@ The `_ftime` function gets the current local time and stores it in the structure
 
 |Field|Description|
 |-|-|
-|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)|
+|**dstflag**|Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](tzset.md) for an explanation of how daylight savings time is determined.)|
 |**millitm**|Fraction of a second in milliseconds.|
 |**time**|Time in seconds since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).|
 |**timezone**|Difference in minutes, moving westward, between UTC and local time. The value of `timezone` is set from the value of the global variable `_timezone` (see `_tzset`).|
@@ -66,7 +66,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_ftime.c
 // compile with: /W3
 // This program uses _ftime to obtain the current
@@ -122,8 +122,8 @@ The time is Mon Apr 28 11:08:54.230 2003
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)<br/>
+[asctime, _wasctime](asctime-wasctime.md)<br/>
+[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
+[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
+[time, _time32, _time64](time-time32-time64.md)<br/>

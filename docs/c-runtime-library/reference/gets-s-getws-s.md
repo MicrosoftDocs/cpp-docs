@@ -55,7 +55,7 @@ The size of the buffer.
 
 ## Return Value
 
-Returns *buffer* if successful. A `NULL` pointer indicates an error or end-of-file condition. Use [ferror](../../c-runtime-library/reference/ferror.md) or [feof](../../c-runtime-library/reference/feof.md) to determine which one has occurred.
+Returns *buffer* if successful. A `NULL` pointer indicates an error or end-of-file condition. Use [ferror](ferror.md) or [feof](feof.md) to determine which one has occurred.
 
 ## Remarks
 
@@ -113,6 +113,6 @@ The line entered was: Hello there!
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[fgets, fgetws](../../c-runtime-library/reference/fgets-fgetws.md)<br/>
-[fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)<br/>
-[puts, _putws](../../c-runtime-library/reference/puts-putws.md)<br/>
+[fgets, fgetws](fgets-fgetws.md)<br/>
+[fputs, fputws](fputs-fputws.md)<br/>
+[puts, _putws](puts-putws.md)<br/>

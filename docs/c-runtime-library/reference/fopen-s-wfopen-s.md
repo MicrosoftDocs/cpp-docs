@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # fopen_s, _wfopen_s
 
-Opens a file. These versions of [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Opens a file. These versions of [fopen, _wfopen](fopen-wfopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -60,11 +60,11 @@ Zero if successful; an error code on failure. See [errno, _doserrno, _sys_errlis
 |-------------|----------------|------------|------------------|------------------------|
 |`NULL`|any|any|`EINVAL`|unchanged|
 |any|`NULL`|any|`EINVAL`|unchanged|
-|any|any|NULL|`EINVAL`|unchanged|
+|any|any|`NULL`|`EINVAL`|unchanged|
 
 ## Remarks
 
-Files that are opened by `fopen_s` and `_wfopen_s` are not sharable. If you require that a file be sharable, use [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, `_SH_DENYNO` for read/write sharing.
+Files that are opened by `fopen_s` and `_wfopen_s` are not sharable. If you require that a file be sharable, use [_fsopen, _wfsopen](fsopen-wfsopen.md) with the appropriate sharing mode constant—for example, `_SH_DENYNO` for read/write sharing.
 
 The `fopen_s` function opens the file that's specified by *filename*. `_wfopen_s` is a wide-character version of `fopen_s`; the arguments to `_wfopen_s` are wide-character strings. `_wfopen_s` and `fopen_s` behave identically otherwise.
 
@@ -127,16 +127,16 @@ Opens an empty file for both reading and writing. If the file exists, its conten
 `"a+"`
 Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file and the EOF marker is restored after writing is complete. Creates the file if it doesn't exist.
 
-When a file is opened by using the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using `fseek` or `rewind`, but it's always moved back to the end of the file before any write operation is carried out so that existing data cannot be overwritten.
+When a file is opened by using the `"a"` or `"a+"` access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or `rewind`, but it's always moved back to the end of the file before any write operation is carried out so that existing data cannot be overwritten.
 
 The `"a"` mode does not remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data that's appended to the file. The `"a+"` mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The `"a+"` mode is required for appending to a stream file that is terminated by using the CTRL+Z EOF marker.
 
-When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, `fseek`, and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.
+When the `"r+"`, `"w+",` or `"a+"` access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file-positioning function. The file-positioning functions are `fsetpos`, [fseek](fseek-fseeki64.md), and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file-positioning function.
 
 In addition to the above values, the following characters can be included in *mode* to specify the translation mode for newline characters:
 
 `t`
-Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with `"a+"`, `fopen_s` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using `fseek` and `ftell` to move within a file that ends with a CTRL+Z, may cause `fseek` to behave improperly near the end of the file.
+Open in text (translated) mode. In this mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with `"a+"`, `fopen_s` checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and `ftell` to move within a file that ends with a CTRL+Z, may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file.
 
 Also, in text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the `mbtowc` function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the `wctomb` function).
 
@@ -171,7 +171,7 @@ Specifies a file as temporary. It is deleted when the last file pointer is close
 `ccs=ENCODING`
 Specify the coded character set to use (UTF-8, UTF-16LE, and UNICODE) for this file. Leave this unspecified if you want ANSI encoding.
 
-Valid characters for the *mode* string used in `fopen_s` and `_fdopen` correspond to *oflag* arguments used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.
+Valid characters for the *mode* string used in `fopen_s` and `_fdopen` correspond to *oflag* arguments used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
 
 |Characters in mode string|Equivalent *oflag* value for `_open`/`_sopen`|
 |-------------------------------|----------------------------------------------------|
@@ -277,10 +277,10 @@ Number of files closed by _fcloseall: 1
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](../../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[_fileno](../../c-runtime-library/reference/fileno.md)<br/>
-[freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
+[ferror](ferror.md)<br/>
+[_fileno](fileno.md)<br/>
+[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_setmode](setmode.md)<br/>

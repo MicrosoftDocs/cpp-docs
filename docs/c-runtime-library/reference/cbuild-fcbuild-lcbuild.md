@@ -41,7 +41,7 @@ A **_Dcomplex**, **_Fcomplex**, or **_Lcomplex** structure that represents the c
 
 ## Remarks
 
-The **_Cbuild**, **_FCbuild**, and **_LCbuild** functions simplify creation of complex types. Use the [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md) and [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md) functions to retrieve the real and imaginary portions of the represented complex numbers.
+The **_Cbuild**, **_FCbuild**, and **_LCbuild** functions simplify creation of complex types. Use the [creal, crealf, creall](creal-crealf-creall.md) and [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) functions to retrieve the real and imaginary portions of the represented complex numbers.
 
 ## Requirements
 
@@ -53,13 +53,13 @@ These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, 
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_Cmulcc, _FCmulcc, _LCmulcc](../../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md)<br/>
-[_Cmulcr, _FCmulcr, _LCmulcr](../../c-runtime-library/reference/cmulcr-fcmulcr-lcmulcr.md)<br/>
-[norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
-[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
-[creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>
-[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[_Cmulcc, _FCmulcc, _LCmulcc](cmulcc-fcmulcc-lcmulcc.md)<br/>
+[_Cmulcr, _FCmulcr, _LCmulcr](cmulcr-fcmulcr-lcmulcr.md)<br/>
+[norm, normf, norml](norm-normf-norml1.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

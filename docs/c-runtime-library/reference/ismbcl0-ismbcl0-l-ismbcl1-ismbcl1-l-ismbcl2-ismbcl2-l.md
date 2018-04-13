@@ -69,7 +69,7 @@ Each of these routines returns a nonzero value if the character satisfies the te
 
 Each of these functions tests a given multibyte character for a given condition.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 |Routine|Test condition (code page 932 only)|
 |-------------|-------------------------------------------|
@@ -80,7 +80,7 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 |`_ismbcl2`|JIS level-2: 0x989F<=*c*<=0xEAA4.|
 |`_ismbcl2_l`|JIS level-2: 0x989F<=*c*<=0xEAA4.|
 
-The functions check that the specified value *c* matches the test conditions described above, but do not check that *c* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](../../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
+The functions check that the specified value *c* matches the test conditions described above, but do not check that *c* is a valid multibyte character. If the lower byte is in the ranges 0x00 - 0x3F, 0x7F, or 0xFD - 0xFF, these functions return a nonzero value, indicating that the character satisfies the test condition. Use [_ismbbtrail](ismbbtrail-ismbbtrail-l.md) to test whether the multibyte character is defined.
 
 **End Code Page 932 Specific**
 

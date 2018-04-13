@@ -49,23 +49,23 @@ The multibyte code page also affects multibyte-character processing by the follo
 
 ||||
 |-|-|-|
-|[_exec functions](../../c-runtime-library/exec-wexec-functions.md)|[_mktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)|[_stat](../../c-runtime-library/reference/stat-functions.md)|
-|[_fullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)|[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)|
-|[_makepath](../../c-runtime-library/reference/makepath-wmakepath.md)|[_splitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md)|[tmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md)|
+|[_exec functions](../../c-runtime-library/exec-wexec-functions.md)|[_mktemp](mktemp-wmktemp.md)|[_stat](stat-functions.md)|
+|[_fullpath](fullpath-wfullpath.md)|[_spawn functions](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
+|[_makepath](makepath-wmakepath.md)|[_splitpath](splitpath-wsplitpath.md)|[tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
 
 In addition, all run-time library routines that receive multibyte-character *argv* or *envp* program arguments as parameters (such as the `_exec` and `_spawn` families) process these strings according to the multibyte code page. Therefore, these routines are also affected by a call to `_setmbcp` that changes the multibyte code page.
 
 The *codepage* argument can be set to any of the following values:
 
--   `_MB_CP_ANSI` Use ANSI code page obtained from operating system at program startup.
+- `_MB_CP_ANSI` Use ANSI code page obtained from operating system at program startup.
 
--   `_MB_CP_LOCALE` Use the current locale's code page obtained from a previous call to [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).
+- `_MB_CP_LOCALE` Use the current locale's code page obtained from a previous call to [setlocale](setlocale-wsetlocale.md).
 
--   `_MB_CP_OEM` Use OEM code page obtained from operating system at program startup.
+- `_MB_CP_OEM` Use OEM code page obtained from operating system at program startup.
 
--   `_MB_CP_SBCS` Use single-byte code page. When the code page is set to `_MB_CP_SBCS`, a routine such as [_ismbblead](../../c-runtime-library/reference/ismbblead-ismbblead-l.md) always returns false.
+- `_MB_CP_SBCS` Use single-byte code page. When the code page is set to `_MB_CP_SBCS`, a routine such as [_ismbblead](ismbblead-ismbblead-l.md) always returns false.
 
--   Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7 and UTF-8, which are not supported).
+- Any other valid code page value, regardless of whether the value is an ANSI, OEM, or other operating-system-supported code page (except UTF-7 and UTF-8, which are not supported).
 
 ## Requirements
 
@@ -77,5 +77,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

@@ -96,7 +96,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_popen.c
 /* This program uses _popen and _pclose to receive a
 * stream of text from a system process.
@@ -138,17 +138,17 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
 This output assumes that there is only one file in the current directory with a .c file name extension.
 
-```
-Volume in drive C is CDRIVE
-Volume Serial Number is 0E17-1702
+```Output
+ Volume in drive C is CDRIVE
+ Volume Serial Number is 0E17-1702
 
 Directory of D:\proj\console\test1
 
-07/17/98  07:26p                   780 popen.c
+ 07/17/98  07:26p                   780 popen.c
                1 File(s)            780 bytes
                              86,597,632 bytes free
 
@@ -158,5 +158,5 @@ Process returned 0
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pclose](../../c-runtime-library/reference/pclose.md)<br/>
-[_pipe](../../c-runtime-library/reference/pipe.md)<br/>
+[_pclose](pclose.md)<br/>
+[_pipe](pipe.md)<br/>

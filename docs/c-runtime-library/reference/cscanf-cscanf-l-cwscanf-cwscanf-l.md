@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
-Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](../../c-runtime-library/reference/cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
+Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -67,7 +67,7 @@ The number of fields that were successfully converted and assigned. The return v
 
 ## Remarks
 
-The `_cscanf` function reads data directly from the console into the locations given by *argument*. The [_getche](../../c-runtime-library/reference/getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
+The `_cscanf` function reads data directly from the console into the locations given by *argument*. The [_getche](getch-getwch.md) function is used to read characters. Each optional parameter must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The format controls the interpretation of the input fields and has the same form and function as the *format* parameter for the [scanf](scanf-scanf-l-wscanf-wscanf-l.md) function. While `_cscanf` normally echoes the input character, it does not do so if the last call was to `_ungetch`.
 
 This function validates its parameters. If format is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.
 
@@ -91,7 +91,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_cscanf.c
 // compile with: /c /W3
 /* This program prompts for a string
@@ -117,15 +117,11 @@ int main( void )
 }
 ```
 
-## Input
-
-```
+```Input
 1 2 3
 ```
 
-## Output
-
-```
+```Output
 Enter three integers: 1 2 3
 You entered 3 2 1
 ```
@@ -133,7 +129,7 @@ You entered 3 2 1
 ## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
+[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

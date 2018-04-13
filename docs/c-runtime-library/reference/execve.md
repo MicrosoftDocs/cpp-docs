@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # execve
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_execve](../../c-runtime-library/reference/execve-wexecve.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_execve](execve-wexecve.md) instead.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

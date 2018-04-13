@@ -52,7 +52,7 @@ If the function succeeds, the return value is zero. If the function fails, the r
 
 The `_diskfree_t` structure is defined in Direct.h.
 
-```
+```C
 struct _diskfree_t {
    unsigned total_clusters;
    unsigned avail_clusters;

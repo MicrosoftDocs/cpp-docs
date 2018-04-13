@@ -36,7 +36,7 @@ Returns a number that represents the number of simultaneously open files current
 
 ## Remarks
 
-Use [_setmaxstdio](../../c-runtime-library/reference/setmaxstdio.md) to configure the number of simultaneously open files permitted at the `stdio` level.
+Use [_setmaxstdio](setmaxstdio.md) to configure the number of simultaneously open files permitted at the `stdio` level.
 
 ## Requirements
 
@@ -48,7 +48,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_setmaxstdio.c
 // The program retrieves the maximum number
 // of open files and prints the results

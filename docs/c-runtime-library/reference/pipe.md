@@ -70,7 +70,7 @@ The standard output descriptor of `PROGRAM1` is attached to the pipe's write des
 
 The `_pipe` function returns two file descriptors to the pipe in the *pfds* argument. The element *pfds*[0] contains the read descriptor, and the element *pfds*[1] contains the write descriptor. Pipe file descriptors are used in the same way as other file descriptors. (The low-level input and output functions `_read` and `_write` can read from and write to a pipe.) To detect the end-of-pipe condition, check for a `_read` request that returns 0 as the number of bytes read.
 
-The *psize* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *textmode* argument specifies the translation mode for the pipe. The manifest constant `_O_TEXT` specifies a text translation, and the constant `_O_BINARY` specifies binary translation. (See [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) for a description of text and binary modes.) If the *textmode* argument is 0, `_pipe` uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
+The *psize* argument specifies the amount of memory, in bytes, to reserve for the pipe. The *textmode* argument specifies the translation mode for the pipe. The manifest constant `_O_TEXT` specifies a text translation, and the constant `_O_BINARY` specifies binary translation. (See [fopen, _wfopen](fopen-wfopen.md) for a description of text and binary modes.) If the *textmode* argument is 0, `_pipe` uses the default translation mode that's specified by the default-mode variable [_fmode](../../c-runtime-library/fmode.md).
 
 In multithreaded programs, no locking is performed. The file descriptors that are returned are newly opened and should not be referenced by any thread until after the `_pipe` call is complete.
 
@@ -331,4 +331,4 @@ This is speaker beep number 10...
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

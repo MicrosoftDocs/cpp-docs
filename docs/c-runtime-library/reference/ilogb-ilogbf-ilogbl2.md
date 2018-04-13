@@ -64,7 +64,7 @@ Otherwise, returns one of the following values, defined in \<math.h>:
 |±0|FP_ILOGB0|
 |±inf, ±nan, indefinite|FP_ILOGBNAN|
 
-Errors are reported as specified in [_matherr](../../c-runtime-library/reference/matherr.md).
+Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
@@ -82,6 +82,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[frexp](../../c-runtime-library/reference/frexp.md)<br/>
-[logb, logbf, logbl, _logb, _logbf](../../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[frexp](frexp.md)<br/>
+[logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # clearerr_s
 
-Resets the error indicator for a stream. This is a version of [clearerr](../../c-runtime-library/reference/clearerr.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Resets the error indicator for a stream. This is a version of [clearerr](clearerr.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -43,7 +43,7 @@ Zero if successful; `EINVAL` if *stream* is NULL.
 
 ## Remarks
 
-The `clearerr_s` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, `fseek`, `fsetpos`, or `rewind` is called.
+The `clearerr_s` function resets the error indicator and end-of-file indicator for *stream*. Error indicators are not automatically cleared; once the error indicator for a specified stream is set, operations on that stream continue to return an error value until `clearerr_s`, `clearerr`, [fseek](fseek-fseeki64.md), `fsetpos`, or `rewind` is called.
 
 If *stream* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
 
@@ -113,8 +113,8 @@ Will input cause an error? n
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[_eof](../../c-runtime-library/reference/eof.md)<br/>
-[feof](../../c-runtime-library/reference/feof.md)<br/>
-[ferror](../../c-runtime-library/reference/ferror.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[_eof](eof.md)<br/>
+[feof](feof.md)<br/>
+[ferror](ferror.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

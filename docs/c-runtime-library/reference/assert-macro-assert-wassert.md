@@ -60,7 +60,7 @@ The line number in the source file of the failed assertion.
 
 The `assert` macro is typically used to identify logic errors during program development. Use it to stop program execution when unexpected conditions occur by implementing the *expression* argument to evaluate to `false` only when the program is operating incorrectly. Assertion checks can be turned off at compile time by defining the macro `NDEBUG`. You can turn off the `assert` macro without modifying your source files by using a **/DNDEBUG** command-line option. You can turn off the `assert` macro in your source code by using a `#define NDEBUG` directive before \<assert.h> is included.
 
-The `assert` macro prints a diagnostic message when *expression* evaluates to `false` (0) and calls [abort](../../c-runtime-library/reference/abort.md) to terminate program execution. No action is taken if *expression* is `true` (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
+The `assert` macro prints a diagnostic message when *expression* evaluates to `false` (0) and calls [abort](abort.md) to terminate program execution. No action is taken if *expression* is `true` (nonzero). The diagnostic message includes the failed expression, the name of the source file and line number where the assertion failed.
 
 The diagnostic message is printed in wide characters. Thus, it will work as expected even if there are Unicode characters in the expression.
 
@@ -72,7 +72,7 @@ For more information about CRT debugging, see [CRT Debugging Techniques](/visual
 
 The `_assert` and `_wassert` functions are internal CRT functions. They help minimize the code required in your object files to support assertions. We do not recommend that you call these functions directly.
 
-The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when `NDEBUG` is not defined. When `NDEBUG` is defined, the macro is available but does not evaluate its argument and has no effect. When it is enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) and [_ASSERT_EXPR](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [_DEBUG](../../c-runtime-library/debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
+The `assert` macro is enabled in both the release and debug versions of the C run-time libraries when `NDEBUG` is not defined. When `NDEBUG` is defined, the macro is available but does not evaluate its argument and has no effect. When it is enabled, the `assert` macro calls `_wassert` for its implementation. Other assertion macros, [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) and [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), are also available, but they only evaluate the expressions passed to them when the [_DEBUG](../../c-runtime-library/debug.md) macro has been defined and when they are in code linked with the debug version of the C run-time libraries.
 
 ## Requirements
 
@@ -86,7 +86,7 @@ The signature of the `_assert` function is not available in a header file. The s
 
 In this program, the `analyze_string` function uses the `assert` macro to test several conditions related to string and length. If any of the conditions fails, the program prints a message indicating what caused the failure.
 
-```
+```C
 // crt_assert.c
 // compile by using: cl /W4 crt_assert.c
 #include <stdio.h>
@@ -137,8 +137,8 @@ If a debugger is installed, choose the **Debug** button to start the debugger, o
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[raise](../../c-runtime-library/reference/raise.md)<br/>
-[signal](../../c-runtime-library/reference/signal.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
+[abort](abort.md)<br/>
+[raise](raise.md)<br/>
+[signal](signal.md)<br/>
+[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)<br/>
 [_DEBUG](../../c-runtime-library/debug.md)<br/>

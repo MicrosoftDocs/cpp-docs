@@ -119,5 +119,5 @@ The quotient is 67, and the remainder is 5
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)<br/>
-[imaxdiv](../../c-runtime-library/reference/imaxdiv.md)<br/>
+[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[imaxdiv](imaxdiv.md)<br/>

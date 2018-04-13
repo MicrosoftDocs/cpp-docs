@@ -39,7 +39,7 @@ Pointer to `_CrtMemState` structure to fill with the memory checkpoint.
 
 ## Remarks
 
-The `_CrtMemCheckpoint` function creates a snapshot of the current state of the debug heap at any given moment. This snapshot can be used by other heap state functions such as [_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md) to help detect memory leaks and other problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemState` are removed during preprocessing.
+The `_CrtMemCheckpoint` function creates a snapshot of the current state of the debug heap at any given moment. This snapshot can be used by other heap state functions such as [_CrtMemDifference](crtmemdifference.md) to help detect memory leaks and other problems. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtMemState` are removed during preprocessing.
 
 The application must pass a pointer to a previously allocated instance of the `_CrtMemState` structure, defined in Crtdbg.h, in the *state* parameter. If `_CrtMemCheckpoint` encounters an error during the checkpoint creation, the function generates a `_CRT_WARN` debug report describing the problem.
 
@@ -60,4 +60,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md)<br/>
+[_CrtMemDifference](crtmemdifference.md)<br/>

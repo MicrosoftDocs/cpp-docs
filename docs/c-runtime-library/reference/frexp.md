@@ -103,5 +103,5 @@ frexp( 16.400000, &n ) = 0.512500, n = 5
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldexp](../../c-runtime-library/reference/ldexp.md)<br/>
-[modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)<br/>
+[ldexp](ldexp.md)<br/>
+[modf, modff, modfl](modf-modff-modfl.md)<br/>

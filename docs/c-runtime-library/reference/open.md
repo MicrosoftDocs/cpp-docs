@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # open
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_open](../../c-runtime-library/reference/open-wopen.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_open](open-wopen.md) instead.

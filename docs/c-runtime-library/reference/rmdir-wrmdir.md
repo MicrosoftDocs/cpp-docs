@@ -82,10 +82,10 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-See the example for [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md).
+See the example for [_mkdir](mkdir-wmkdir.md).
 
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](../../c-runtime-library/reference/chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
+[_chdir, _wchdir](chdir-wchdir.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>

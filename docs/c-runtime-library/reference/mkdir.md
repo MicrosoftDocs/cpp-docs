@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # mkdir
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_mkdir](mkdir-wmkdir.md) instead.

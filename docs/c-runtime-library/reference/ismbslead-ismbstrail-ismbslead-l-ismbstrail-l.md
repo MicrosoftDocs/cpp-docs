@@ -55,7 +55,7 @@ int _ismbstrail_l(
 *str*
 Pointer to the start of the string or the previous known lead byte.
 
-`current`
+*current*
 Pointer to the position in the string to be tested.
 
 *locale*

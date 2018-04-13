@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _makepath_s, _wmakepath_s
 
-Creates a path name from components. These are versions of [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Creates a path name from components. These are versions of [_makepath, _wmakepath](makepath-wmakepath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -113,7 +113,7 @@ If path is `NULL`, the invalid parameter handler is invoked, as described in [Pa
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ## Requirements
 
@@ -177,6 +177,6 @@ Path extracted with _splitpath_s:
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md)<br/>
-[_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)<br/>
-[_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md)<br/>
+[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
+[_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)<br/>
+[_makepath, _wmakepath](makepath-wmakepath.md)<br/>

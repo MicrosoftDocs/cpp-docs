@@ -62,7 +62,7 @@ Returns the value of *x*<sup>*y*</sup>. No error message is printed on overflow 
 
 **pow** does not recognize integral floating-point values greater than 2<sup>64</sup> (for example, `1.0E100`).
 
-**pow** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).
+**pow** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 
 Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, **pow** always takes two **double** values and returns a **double** value.
 
@@ -100,7 +100,7 @@ int main( void )
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[exp, expf, expl](../../c-runtime-library/reference/exp-expf.md) <br/>
-[log, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md) <br/>
-[sqrt, sqrtf, sqrtl](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md) <br/>
+[exp, expf, expl](exp-expf.md) <br/>
+[log, logf, log10, log10f](log-logf-log10-log10f.md) <br/>
+[sqrt, sqrtf, sqrtl](sqrt-sqrtf-sqrtl.md) <br/>
 [_CIpow](../../c-runtime-library/cipow.md)<br/>

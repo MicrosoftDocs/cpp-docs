@@ -57,7 +57,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_set_fmode.c
 #include <stdlib.h>
 #include <stdio.h>
@@ -121,6 +121,6 @@ A   B   C   D   E   F   G   H   I   J   K   L
 ## See also
 
 [_fmode](../../c-runtime-library/fmode.md)<br/>
-[_get_fmode](../../c-runtime-library/reference/get-fmode.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
+[_get_fmode](get-fmode.md)<br/>
+[_setmode](setmode.md)<br/>
 [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

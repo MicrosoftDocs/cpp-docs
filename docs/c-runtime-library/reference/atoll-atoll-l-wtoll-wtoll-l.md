@@ -67,11 +67,9 @@ The input string is a sequence of characters that can be interpreted as a numeri
 
 The *str* argument to `atoll` has the following form:
 
-```
-[whitespace] [sign] [digits]
-```
+> [*whitespace*] [*sign*] [*digits*]
 
-A `whitespace` consists of space or tab characters, which are ignored; `sign` is either plus (+) or minus (-); and `digits` are one or more digits.
+A *whitespace* consists of space or tab characters, which are ignored; *sign* is either plus (+) or minus (-); and *digits* are one or more digits.
 
 `_wtoll` is identical to `atoll` except that it takes a wide character string as a parameter.
 
@@ -96,7 +94,7 @@ The versions of these functions that have the **_l** suffix are identical to the
 
 This program shows how to use the `atoll` functions to convert numbers stored as strings to numeric values.
 
-```
+```C
 // crt_atoll.c
 // Build with: cl /W4 /Tc crt_atoll.c
 // This program shows how to use the atoll
@@ -148,8 +146,8 @@ Overflow condition occurred.
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
-[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
-[_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](../../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>
+[_ecvt](ecvt.md)<br/>
+[_fcvt](fcvt.md)<br/>
+[_gcvt](gcvt.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>

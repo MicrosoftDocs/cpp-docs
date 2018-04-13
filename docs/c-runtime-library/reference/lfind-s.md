@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _lfind_s
 
-Performs a linear search for the specified key. A version of [_lfind](../../c-runtime-library/reference/lfind.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a linear search for the specified key. A version of [_lfind](lfind.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -88,7 +88,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```cpp
 // crt_lfind_s.cpp
 // This program uses _lfind_s to search a string array,
 // passing a locale as the context.
@@ -169,7 +169,7 @@ weit found
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](../../c-runtime-library/reference/bsearch-s.md)<br/>
-[_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)<br/>
-[qsort_s](../../c-runtime-library/reference/qsort-s.md)<br/>
-[_lfind](../../c-runtime-library/reference/lfind.md)<br/>
+[bsearch_s](bsearch-s.md)<br/>
+[_lsearch_s](lsearch-s.md)<br/>
+[qsort_s](qsort-s.md)<br/>
+[_lfind](lfind.md)<br/>

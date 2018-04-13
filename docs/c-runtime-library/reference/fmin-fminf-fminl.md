@@ -70,7 +70,7 @@ If successful, returns the smaller of *x* or *y*.
 |*y* is NaN|*x*|
 |*x* and *y* are NaN|NaN|
 
-The function does not cause [_matherr](../../c-runtime-library/reference/matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
+The function does not cause [_matherr](matherr.md) to be invoked, cause any floating-point exceptions, or change the value of **errno**.
 
 ## Remarks
 
@@ -86,5 +86,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
 [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>

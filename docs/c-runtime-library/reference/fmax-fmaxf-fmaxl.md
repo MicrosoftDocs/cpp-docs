@@ -74,7 +74,7 @@ Otherwise, may return one of the following values:
 |*y* = NaN|*x*|
 |*x* and *y* = NaN|NaN|
 
-This function does not use the errors specified in  [_matherr](../../c-runtime-library/reference/matherr.md).
+This function does not use the errors specified in  [_matherr](matherr.md).
 
 ## Remarks
 
@@ -90,5 +90,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
 [fmin, fminf, fminl](fmin-fminf-fminl.md)<br/>

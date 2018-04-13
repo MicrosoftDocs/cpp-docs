@@ -47,7 +47,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns the character written. For error information, see [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md).
+Each of these functions returns the character written. For error information, see [fputc, fputwc](fputc-fputwc.md).
 
 ## Remarks
 
@@ -72,7 +72,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_fputc_nolock.c
 // This program uses _fputc_nolock
 // to send a character array to stdout.
@@ -98,5 +98,5 @@ This is a test of _fputc_nolock!!
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)<br/>
-[putc, putwc](../../c-runtime-library/reference/putc-putwc.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>

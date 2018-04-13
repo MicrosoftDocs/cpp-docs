@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # j0, j1, jn
 
-These POSIX functions are deprecated. Use the ISO C++ conformant [_j0, _j1, _jn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md) instead.
+These POSIX functions are deprecated. Use the ISO C++ conformant [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) instead.

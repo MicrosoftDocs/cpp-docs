@@ -55,11 +55,11 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-See the example in [_set_fmode](../../c-runtime-library/reference/set-fmode.md).
+See the example in [_set_fmode](set-fmode.md).
 
 ## See also
 
 [_fmode](../../c-runtime-library/fmode.md)<br/>
-[_set_fmode](../../c-runtime-library/reference/set-fmode.md)<br/>
-[_setmode](../../c-runtime-library/reference/setmode.md)<br/>
+[_set_fmode](set-fmode.md)<br/>
+[_setmode](setmode.md)<br/>
 [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

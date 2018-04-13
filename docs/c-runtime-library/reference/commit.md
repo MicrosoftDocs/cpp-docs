@@ -58,7 +58,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
-[_write](../../c-runtime-library/reference/write.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_read](read.md)<br/>
+[_write](write.md)<br/>

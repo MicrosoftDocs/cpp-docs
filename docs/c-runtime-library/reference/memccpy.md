@@ -73,7 +73,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_memccpy.c
 
 #include <memory.h>
@@ -96,9 +96,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Function: _memccpy 60 characters or to character 's'
 Source: The quick brown dog jumps over the lazy fox
 Result: The quick brown dog jumps
@@ -108,7 +108,7 @@ Length: 25 characters
 ## See also
 
 [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[memchr, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)<br/>
-[memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>

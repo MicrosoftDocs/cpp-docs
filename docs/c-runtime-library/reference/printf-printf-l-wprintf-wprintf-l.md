@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # printf, _printf_l, wprintf, _wprintf_l
 
-Prints formatted output to the standard output stream. More secure versions of these functions are available; see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
+Prints formatted output to the standard output stream. More secure versions of these functions are available; see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
 
 ## Syntax
 
@@ -66,7 +66,7 @@ For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist,
 
 ## Remarks
 
-The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.
+The `printf` function formats and prints a series of characters and values to the standard output stream, `stdout`. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments. `printf` and [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) behave identically except that `printf` writes output to `stdout` rather than to a destination of type `FILE`.
 
 `wprintf` is a wide-character version of `printf`; *format* is a wide-character string. `wprintf` and `printf` behave identically if the stream is opened in ANSI mode. `printf` does not currently support output into a UNICODE stream.
 
@@ -80,13 +80,13 @@ The versions of these functions with the **_l** suffix are identical except that
 
 The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to `stdout` in order of their appearance. For example, the line:
 
-```
+```C
 printf("Line one\n\t\tLine two\n");
 ```
 
 produces the output:
 
-```
+```Output
 Line one
         Line two
 ```
@@ -114,7 +114,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_printf.c
 // This program uses the printf and wprintf functions
 // to produce formatted output.
@@ -171,9 +171,9 @@ int main( void )
 }
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Integer formats:
    Decimal: -9234  Justified: -009234  Unsigned: 4294958062
 Decimal -9234 as:
@@ -203,9 +203,9 @@ Address as:   0012FF3C
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](../../c-runtime-library/reference/fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
 [_set_output_format](../../c-runtime-library/set-output-format.md)<br/>

@@ -70,8 +70,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
-[feholdexcept](../../c-runtime-library/reference/feholdexcept2.md)<br/>
-[fetestexcept](../../c-runtime-library/reference/fetestexcept1.md)<br/>
-[feupdateenv](../../c-runtime-library/reference/feupdateenv.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fesetexceptflag](fesetexceptflag2.md)<br/>
+[feholdexcept](feholdexcept2.md)<br/>
+[fetestexcept](fetestexcept1.md)<br/>
+[feupdateenv](feupdateenv.md)<br/>

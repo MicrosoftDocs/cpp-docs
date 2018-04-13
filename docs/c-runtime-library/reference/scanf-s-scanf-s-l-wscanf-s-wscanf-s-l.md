@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l
 
-Reads formatted data from the standard input stream. These versions of [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads formatted data from the standard input stream. These versions of [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -85,7 +85,7 @@ The buffer size includes the terminating null. You can use a width specification
 
 The following example shows that the buffer size parameter describes the maximum number of characters, not bytes. In the call to `wscanf_s`, the character width that is indicated by the buffer type does not match the character width that is indicated by the format specifier.
 
-```
+```C
 wchar_t ws[10];
 wscanf_s(L"%9S", ws, (unsigned)_countof(ws));
 ```
@@ -94,15 +94,17 @@ The `S` format specifier indicates the use of the character width that is "oppos
 
 In the case of characters, a single character may be read as follows:
 
-`char c;`
-
-`scanf_s("%c", &c, 1);`
+```C
+char c;
+scanf_s("%c", &c, 1);
+```
 
 When multiple characters for non-null terminated strings are read, integers are used as the width specification and the buffer size.
 
-`char c[4];`
-
-`scanf_s("%4c", &c, (unsigned)_countof(c)); // not null terminated`
+```C
+char c[4];
+scanf_s("%4c", &c, (unsigned)_countof(c)); // not null terminated
+```
 
 For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
@@ -126,7 +128,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_scanf_s.c
 // This program uses the scanf_s and wscanf_s functions
 // to read formatted input.
@@ -159,9 +161,10 @@ int main( void )
 
 This program produces the following output when given this input:
 
-`71 98.6 h z Byte characters`
-
-`36 92.3 y n Wide characters`
+```Input
+71 98.6 h z Byte characters
+36 92.3 y n Wide characters
+```
 
 ```Output
 The number of fields input is 6
@@ -175,7 +178,7 @@ The contents are: 36 92.300003 y n Wide characters
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[fscanf, _fscanf_l, fwscanf, _fwscanf_l](../../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>

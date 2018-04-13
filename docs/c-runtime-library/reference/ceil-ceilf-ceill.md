@@ -57,7 +57,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 |-----------|-------------------|-----------------------|
 |± **QNAN**,**IND**|none|**_DOMAIN**|
 
-**ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).
+**ceil** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 
 ## Remarks
 
@@ -73,11 +73,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [floor](../../c-runtime-library/reference/floor-floorf-floorl.md).
+See the example for [floor](floor-floorf-floorl.md).
 
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)<br/>
-[fmod, fmodf](../../c-runtime-library/reference/fmod-fmodf.md)<br/>
-[round, roundf, roundl](../../c-runtime-library/reference/round-roundf-roundl.md)<br/>
+[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
+[fmod, fmodf](fmod-fmodf.md)<br/>
+[round, roundf, roundl](round-roundf-roundl.md)<br/>

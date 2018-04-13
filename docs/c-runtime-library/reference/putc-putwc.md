@@ -47,7 +47,7 @@ Pointer to **FILE** structure.
 
 ## Return Value
 
-Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return `EOF`; `putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](../../c-runtime-library/reference/ferror.md) or [feof](../../c-runtime-library/reference/feof.md) to check for an error or end of file. If passed a null pointer for *stream*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` or **WEOF** and set `errno` to `EINVAL`.
+Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return `EOF`; `putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` or **WEOF** and set `errno` to `EINVAL`.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 
@@ -78,7 +78,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_putc.c
 /* This program uses putc to write buffer
 * to a stream. If an error occurs, the program
@@ -101,14 +101,14 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 This is the line of output
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

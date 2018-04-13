@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # mbstowcs, _mbstowcs_l
 
-Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md).
+Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md).
 
 ## Syntax
 
@@ -195,8 +195,8 @@ Convert back to wide-character string:
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
 [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
-[mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)<br/>
-[wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
+[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
+[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
 [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>

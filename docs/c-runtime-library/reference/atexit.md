@@ -59,7 +59,7 @@ To generate an ANSI-compliant application, use the ANSI-standard `atexit` functi
 
 This program pushes four functions onto the stack of functions to be executed when `atexit` is called. When the program exits, these programs are executed on a last in, first out basis.
 
-```
+```C
 // crt_atexit.c
 #include <stdlib.h>
 #include <stdio.h>
@@ -104,6 +104,6 @@ This is executed next.
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
+[abort](abort.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[_onexit, _onexit_m](onexit-onexit-m.md)<br/>

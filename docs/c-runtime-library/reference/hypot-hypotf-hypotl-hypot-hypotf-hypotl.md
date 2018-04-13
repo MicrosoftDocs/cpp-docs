@@ -103,5 +103,5 @@ If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_cabs](../../c-runtime-library/reference/cabs.md)<br/>
-[_matherr](../../c-runtime-library/reference/matherr.md)<br/>
+[_cabs](cabs.md)<br/>
+[_matherr](matherr.md)<br/>

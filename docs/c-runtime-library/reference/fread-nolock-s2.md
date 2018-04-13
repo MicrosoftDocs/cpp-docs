@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 ---
 # _fread_nolock_s
 
-Reads data from a stream, without locking other threads. This version of [fread_nolock](../../c-runtime-library/reference/fread-nolock.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads data from a stream, without locking other threads. This version of [fread_nolock](fread-nolock.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -54,7 +54,7 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-See [fread_s](../../c-runtime-library/reference/fread-s.md).
+See [fread_s](fread-s.md).
 
 ## Remarks
 
@@ -71,5 +71,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_read](read.md)<br/>

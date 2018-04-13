@@ -87,7 +87,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_renamer.c
 /* This program attempts to rename a file named
 * CRT_RENAMER.OBJ to CRT_RENAMER.JBO. For this operation
@@ -111,9 +111,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 ```
 

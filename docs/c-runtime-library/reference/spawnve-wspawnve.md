@@ -95,12 +95,12 @@ See the example in [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wsp
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[abort](../../c-runtime-library/reference/abort.md)<br/>
-[atexit](../../c-runtime-library/reference/atexit.md)<br/>
+[abort](abort.md)<br/>
+[atexit](atexit.md)<br/>
 [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_flushall](../../c-runtime-library/reference/flushall.md)<br/>
-[_getmbcp](../../c-runtime-library/reference/getmbcp.md)<br/>
-[_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)<br/>
-[_setmbcp](../../c-runtime-library/reference/setmbcp.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>
+[exit, _Exit, _exit](exit-exit-exit.md)<br/>
+[_flushall](flushall.md)<br/>
+[_getmbcp](getmbcp.md)<br/>
+[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
+[_setmbcp](setmbcp.md)<br/>
+[system, _wsystem](system-wsystem.md)<br/>

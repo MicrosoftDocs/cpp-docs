@@ -71,7 +71,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_remove.c
 /* This program uses remove to delete crt_remove.txt */
 
@@ -86,19 +86,19 @@ int main( void )
 }
 ```
 
-## Input: crt_remove.txt
+### Input: crt_remove.txt
 
-```
+```Input
 This file will be deleted.
 ```
 
-## Sample Output
+### Sample Output
 
-```
+```Output
 Deleted 'CRT_REMOVE.TXT'
 ```
 
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_unlink, _wunlink](../../c-runtime-library/reference/unlink-wunlink.md)<br/>
+[_unlink, _wunlink](unlink-wunlink.md)<br/>

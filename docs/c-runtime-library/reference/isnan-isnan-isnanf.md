@@ -58,7 +58,7 @@ In C++, the **isnan** template functions return **true** if the argument *x* is 
 
 ## Remarks
 
-The C **isnan** macro and the **_isnan** and **_isnanf** functions test floating-point value *x*, returning a nonzero value if *x* is a Not a Number (NAN) value. A NAN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NAN is represented for output, see [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).
+The C **isnan** macro and the **_isnan** and **_isnanf** functions test floating-point value *x*, returning a nonzero value if *x* is a Not a Number (NAN) value. A NAN is generated when the result of a floating-point operation can't be represented in IEEE-754 floating-point format for the specified type. For information about how a NAN is represented for output, see [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 When compiled as C++, the **isnan** macro is not defined, and an **isnan** template function is defined instead. It returns a value of type **bool** instead of an integer.
 
@@ -76,5 +76,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_finite, _finitef](../../c-runtime-library/reference/finite-finitef.md)<br/>
-[_fpclass, _fpclassf](../../c-runtime-library/reference/fpclass-fpclassf.md)<br/>
+[_finite, _finitef](finite-finitef.md)<br/>
+[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>

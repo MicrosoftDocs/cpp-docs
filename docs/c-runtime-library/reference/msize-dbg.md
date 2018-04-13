@@ -47,7 +47,7 @@ On successful completion, `_msize_dbg` returns the size (in bytes) of the specif
 
 ## Remarks
 
-`_msize_dbg` is a debug version of the _[msize](../../c-runtime-library/reference/msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_msize_dbg` is reduced to a call to `_msize`. Both `_msize` and `_msize_dbg` calculate the size of a memory block in the base heap, but `_msize_dbg` adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
+`_msize_dbg` is a debug version of the _[msize](msize.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to `_msize_dbg` is reduced to a call to `_msize`. Both `_msize` and `_msize_dbg` calculate the size of a memory block in the base heap, but `_msize_dbg` adds two debugging features: It includes the buffers on either side of the user portion of the memory block in the returned size and it allows size calculations for specific block types.
 
 For information about how memory blocks are allocated, initialized, and managed in the debug version of the base heap, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). For information about the allocation block types and how they are used, see [Types of blocks on the debug heap](/visualstudio/debugger/crt-debug-heap-details). For information about the differences between calling a standard heap function and its debug version in a debug build of an application, see [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
@@ -67,7 +67,7 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## Example
 
-```
+```C
 // crt_msize_dbg.c
 // compile with: /MTd
 /*
@@ -117,9 +117,9 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Size of block after _malloc_dbg of 40 longs: 160
 Size of block after _realloc_dbg of 40 more longs: 320
 ```
@@ -127,4 +127,4 @@ Size of block after _realloc_dbg of 40 more longs: 320
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md)<br/>
+[_malloc_dbg](malloc-dbg.md)<br/>

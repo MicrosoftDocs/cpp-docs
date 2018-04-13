@@ -86,7 +86,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_lseek.c
 /* This program first opens a file named lseek.txt.
 * It then uses _lseek to find the beginning of the file,
@@ -136,9 +136,9 @@ int main( void )
 }
 ```
 
-## Input: crt_lseek.c_input
+### Input: crt_lseek.c_input
 
-```
+```Input
 Line one.
 Line two.
 Line three.
@@ -146,9 +146,9 @@ Line four.
 Line five.
 ```
 
-## Output
+### Output
 
-```
+```Output
 Position for beginning of file seek = 0
 Position for current position seek = 10
 Position for end of file seek = 57
@@ -157,5 +157,5 @@ Position for end of file seek = 57
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[fseek, _fseeki64](../../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_tell, _telli64](../../c-runtime-library/reference/tell-telli64.md)<br/>
+[fseek, _fseeki64](fseek-fseeki64.md)<br/>
+[_tell, _telli64](tell-telli64.md)<br/>

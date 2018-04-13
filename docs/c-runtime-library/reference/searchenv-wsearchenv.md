@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _searchenv, _wsearchenv
 
-Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](../../c-runtime-library/reference/searchenv-s-wsearchenv-s.md).
+Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -133,6 +133,6 @@ C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>
-[_searchenv_s, _wsearchenv_s](../../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)<br/>
+[getenv, _wgetenv](getenv-wgetenv.md)<br/>
+[_putenv, _wputenv](putenv-wputenv.md)<br/>
+[_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)<br/>

@@ -53,7 +53,7 @@ A pointer to the memory block that was allocated or `NULL` if the operation fail
 
 `_aligned_offset_malloc` is useful in situations where alignment is needed on a nested element; for example, if alignment was needed on a nested class.
 
-`_aligned_offset_malloc` is based on `malloc`; for more information, see [malloc](../../c-runtime-library/reference/malloc.md).
+`_aligned_offset_malloc` is based on `malloc`; for more information, see [malloc](malloc.md).
 
 `_aligned_offset_malloc` is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
@@ -67,7 +67,7 @@ This function sets `errno` to `ENOMEM` if the memory allocation failed or if the
 
 ## Example
 
-For more information, see [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).
+For more information, see [_aligned_malloc](aligned-malloc.md).
 
 ## See also
 

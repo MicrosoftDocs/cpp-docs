@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _lfind
 
-Performs a linear search for the specified key. A more secure version of this function is available; see [_lfind_s](../../c-runtime-library/reference/lfind-s.md).
+Performs a linear search for the specified key. A more secure version of this function is available; see [_lfind_s](lfind-s.md).
 
 ## Syntax
 
@@ -73,7 +73,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_lfind.c
 // This program uses _lfind to search a string array
 // for an occurrence of "hello".
@@ -111,7 +111,7 @@ Hello found
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind_s](../../c-runtime-library/reference/lfind-s.md)<br/>
-[bsearch](../../c-runtime-library/reference/bsearch.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
-[qsort](../../c-runtime-library/reference/qsort.md)<br/>
+[_lfind_s](lfind-s.md)<br/>
+[bsearch](bsearch.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

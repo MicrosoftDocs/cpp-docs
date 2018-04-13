@@ -62,7 +62,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_tell.c
 // This program uses _tell to tell the
 // file pointer position after a file read.
@@ -93,21 +93,21 @@ int main( void )
 }
 ```
 
-## Input: crt_tell.txt
+### Input: crt_tell.txt
 
-```
+```Input
 Line one.
 Line two.
 ```
 
 ### Output
 
-```
+```Output
 Current file position is: 20
 ```
 
 ## See also
 
 [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)<br/>
-[_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)<br/>
+[ftell, _ftelli64](ftell-ftelli64.md)<br/>
+[_lseek, _lseeki64](lseek-lseeki64.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # getenv_s, _wgetenv_s
 
-Gets a value from the current environment. These versions of [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Gets a value from the current environment. These versions of [getenv, _wgetenv](getenv-wgetenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -112,7 +112,7 @@ In C++, use of these functions is simplified by template overloads; the overload
 |---------------------|------------------------------------|--------------------|-----------------------|
 |`_tgetenv_s`|`getenv_s`|`getenv_s`|`_wgetenv_s`|
 
-To check or change the value of the `TZ` environment variable, use `getenv_s`, `_putenv`, and `_tzset`, as required. For more information about `TZ`, see [_tzset](../../c-runtime-library/reference/tzset.md) and [_daylight, _dstbias, _timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+To check or change the value of the `TZ` environment variable, use `getenv_s`, `_putenv`, and `_tzset`, as required. For more information about `TZ`, see [_tzset](tzset.md) and [_daylight, _dstbias, _timezone, and _tzname](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ## Requirements
 
@@ -190,5 +190,5 @@ New LIB variable is: c:\mylib;c:\yourlib
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)<br/>
-[_dupenv_s, _wdupenv_s](../../c-runtime-library/reference/dupenv-s-wdupenv-s.md)<br/>
+[_putenv, _wputenv](putenv-wputenv.md)<br/>
+[_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md)<br/>

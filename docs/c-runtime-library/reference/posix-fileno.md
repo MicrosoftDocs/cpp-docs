@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # fileno
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_fileno](../../c-runtime-library/reference/fileno.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_fileno](fileno.md) instead.

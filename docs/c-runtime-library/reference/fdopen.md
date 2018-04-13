@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # fdopen
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_fdopen](fdopen-wfdopen.md) instead.

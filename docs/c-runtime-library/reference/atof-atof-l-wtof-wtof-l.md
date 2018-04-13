@@ -143,8 +143,8 @@ Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 [Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[_ecvt](../../c-runtime-library/reference/ecvt.md)<br/>
-[_fcvt](../../c-runtime-library/reference/fcvt.md)<br/>
-[_gcvt](../../c-runtime-library/reference/gcvt.md)<br/>
-[setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](../../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>
+[_ecvt](ecvt.md)<br/>
+[_fcvt](fcvt.md)<br/>
+[_gcvt](gcvt.md)<br/>
+[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>

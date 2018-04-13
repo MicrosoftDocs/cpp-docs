@@ -131,7 +131,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_fstat.c
 // This program uses _fstat to report
 // the size of a file named F_STAT.OUT.
@@ -197,7 +197,7 @@ Time modified : Wed May 07 15:25:11 2003
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](../../c-runtime-library/reference/access-waccess.md)<br/>
-[_chmod, _wchmod](../../c-runtime-library/reference/chmod-wchmod.md)<br/>
-[_filelength, _filelengthi64](../../c-runtime-library/reference/filelength-filelengthi64.md)<br/>
-[_stat, _wstat Functions](../../c-runtime-library/reference/stat-functions.md)<br/>
+[_access, _waccess](access-waccess.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
+[_stat, _wstat Functions](stat-functions.md)<br/>

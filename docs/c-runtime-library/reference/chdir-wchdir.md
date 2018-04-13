@@ -48,7 +48,7 @@ These functions return a value of 0 if successful. A return value of -1 indicate
 
 The `_chdir` function changes the current working directory to the directory specified by *dirname*. The *dirname* parameter must refer to an existing directory. This function can change the current working directory on any drive. If a new drive letter is specified in *dirname*, the default drive letter is changed as well. For example, if A is the default drive letter and \BIN is the current working directory, the following call changes the current working directory for drive C and establishes C as the new default drive:
 
-```
+```C
 _chdir("c:\\temp");
 ```
 
@@ -133,6 +133,6 @@ int main( int argc, char *argv[] )
 ## See also
 
 [Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)<br/>
-[system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)<br/>
+[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+[system, _wsystem](system-wsystem.md)<br/>

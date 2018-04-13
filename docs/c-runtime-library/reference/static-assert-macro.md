@@ -38,7 +38,7 @@ Expression (including pointers) that evaluates to nonzero (`TRUE`) or 0 (`FALSE`
 
 ## Remarks
 
-This macro resembles the [_ASSERT and _ASSERTE macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), except that *booleanExpression* is evaluated at compile time instead of at runtime. If *booleanExpression* evaluates to `FALSE` (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
+This macro resembles the [_ASSERT and _ASSERTE macros](assert-asserte-assert-expr-macros.md), except that *booleanExpression* is evaluated at compile time instead of at runtime. If *booleanExpression* evaluates to `FALSE` (0), [Compiler Error C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) is generated.
 
 ## Example
 
@@ -70,5 +70,5 @@ int main()
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)<br/>

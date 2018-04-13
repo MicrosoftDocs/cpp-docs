@@ -73,5 +73,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 ## See also
 
 [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
-[_getch, _getwch](../../c-runtime-library/reference/getch-getwch.md)<br/>
+[_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
+[_getch, _getwch](getch-getwch.md)<br/>

@@ -60,7 +60,7 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## Example
 
-```
+```C
 // crt_fgetchar.c
 // This program uses _fgetchar to read the first
 // 80 input characters (or until the end of input)
@@ -99,5 +99,5 @@ Line two.
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)<br/>
-[getc, getwc](../../c-runtime-library/reference/getc-getwc.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
-Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of `swprintf` and `_swprintf_l` do not take a *count* parameter.
+Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of `swprintf` and `_swprintf_l` do not take a *count* parameter.
 
 ## Syntax
 
@@ -100,10 +100,10 @@ The number of characters written, or -1 if an error occurred. If *buffer* or *fo
 
 ## Remarks
 
-The `sprintf` function formats and stores a series of characters and values in *buffer*. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
+The `sprintf` function formats and stores a series of characters and values in *buffer*. Each *argument* (if any) is converted and output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md). A null character is appended after the last character written. If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
->  Using `sprintf`, there is no way to limit the number of characters written, which means that code using `sprintf` is susceptible to buffer overruns. Consider using the related function [_snprintf](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to be written to *buffer*, or use [_scprintf](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
+>  Using `sprintf`, there is no way to limit the number of characters written, which means that code using `sprintf` is susceptible to buffer overruns. Consider using the related function [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to be written to *buffer*, or use [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
 
 `swprintf` is a wide-character version of `sprintf`; the pointer arguments to `swprintf` are wide-character strings. Detection of encoding errors in `swprintf` may differ from that in `sprintf`. `swprintf` and `fwprintf` behave identically except that `swprintf` writes output to a string rather than to a destination of type `FILE`, and `swprintf` requires the *count* parameter to specify the maximum number of characters to be written. The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -129,7 +129,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-```
+```C
 // crt_sprintf.c
 // compile with: /W3
 // This program uses sprintf to format various
@@ -166,7 +166,7 @@ character count = 79
 
 ## Example
 
-```
+```C
 // crt_swprintf.c
 // wide character example
 // also demonstrates swprintf returning error code
@@ -191,8 +191,8 @@ wrote -1 characters
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
 [vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>

@@ -51,7 +51,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
-```
+```C
 // crt_getpid.c
 // This program uses _getpid to obtain
 // the process ID and then prints the ID.
@@ -75,4 +75,4 @@ Process id: 3584
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md)<br/>
+[_mktemp, _wmktemp](mktemp-wmktemp.md)<br/>

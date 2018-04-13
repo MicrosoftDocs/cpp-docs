@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 ---
 # fread_s
 
-Reads data from a stream. This version of [fread](../../c-runtime-library/reference/fread.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Reads data from a stream. This version of [fread](fread.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -142,5 +142,5 @@ Contents of buffer after write/read:
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](../../c-runtime-library/reference/fwrite.md)<br/>
-[_read](../../c-runtime-library/reference/read.md)<br/>
+[fwrite](fwrite.md)<br/>
+[_read](read.md)<br/>

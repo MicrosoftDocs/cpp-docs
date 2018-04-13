@@ -57,14 +57,14 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## Example
 
-See the example for [feof](../../c-runtime-library/reference/feof.md).
+See the example for [feof](feof.md).
 
 ## See also
 
 [Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](../../c-runtime-library/reference/clearerr.md)<br/>
-[_eof](../../c-runtime-library/reference/eof.md)<br/>
-[feof](../../c-runtime-library/reference/feof.md)<br/>
-[fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[perror, _wperror](../../c-runtime-library/reference/perror-wperror.md)<br/>
+[clearerr](clearerr.md)<br/>
+[_eof](eof.md)<br/>
+[feof](feof.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[perror, _wperror](perror-wperror.md)<br/>

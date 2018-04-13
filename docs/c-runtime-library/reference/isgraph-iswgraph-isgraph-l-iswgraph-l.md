@@ -60,8 +60,8 @@ The behavior of `isgraph` and `_isgraph_l` is undefined if *c* is not EOF or in 
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_istgraph`|`isgraph`|[_ismbcgraph](../../c-runtime-library/reference/ismbcgraph-functions.md)|`iswgraph`|
-|`_istgraph_l`|`_isgraph_l`|[_ismbcgraph_l](../../c-runtime-library/reference/ismbcgraph-functions.md)|`_iswgraph_l`|
+|`_istgraph`|`isgraph`|[_ismbcgraph](ismbcgraph-functions.md)|`iswgraph`|
+|`_istgraph_l`|`_isgraph_l`|[_ismbcgraph_l](ismbcgraph-functions.md)|`_iswgraph_l`|
 
 ## Requirements
 

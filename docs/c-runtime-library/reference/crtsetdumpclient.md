@@ -41,21 +41,21 @@ Returns the previously defined client block dump function.
 
 ## Remarks
 
-The `_CrtSetDumpClient` function allows the application to hook its own function to dump objects stored in `_CLIENT_BLOCK` memory blocks into the C run-time debug memory dump process. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](../../c-runtime-library/reference/crtdumpmemoryleaks.md) dumps a `_CLIENT_BLOCK` memory block, the application's dump function is called as well. `_CrtSetDumpClient` provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in `_CLIENT_BLOCK` blocks. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDumpClient` are removed during preprocessing.
+The `_CrtSetDumpClient` function allows the application to hook its own function to dump objects stored in `_CLIENT_BLOCK` memory blocks into the C run-time debug memory dump process. As a result, every time a debug dump function such as [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) or [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) dumps a `_CLIENT_BLOCK` memory block, the application's dump function is called as well. `_CrtSetDumpClient` provides an application with an easy method for detecting memory leaks and validating or reporting the contents of data stored in `_CLIENT_BLOCK` blocks. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, calls to `_CrtSetDumpClient` are removed during preprocessing.
 
 The `_CrtSetDumpClient` function installs the new application-defined dump function specified in *dumpClient* and returns the previously defined dump function. An example of a client block dump function is as follows:
 
-```
+```C
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
 The `userPortion` argument is a pointer to the beginning of the user data portion of the memory block and `blockSize` specifies the size of the allocated memory block in bytes. The client block dump function must return `void`. The pointer to the client dump function that is passed to `_CrtSetDumpClient` is of type `_CRT_DUMP_CLIENT`, as defined in Crtdbg.h:
 
-```
+```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 ```
 
-For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](/visualstudio/debugger/client-block-hook-functions). The [_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md) function can be used to return information about block types and subtypes.
+For more information about functions that operate on `_CLIENT_BLOCK` type memory blocks, see [Client Block Hook Functions](/visualstudio/debugger/client-block-hook-functions). The [_CrtReportBlockType](crtreportblocktype.md) function can be used to return information about block types and subtypes.
 
 ## Requirements
 
@@ -72,5 +72,5 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 ## See also
 
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtReportBlockType](../../c-runtime-library/reference/crtreportblocktype.md)<br/>
-[_CrtGetDumpClient](../../c-runtime-library/reference/crtgetdumpclient.md)<br/>
+[_CrtReportBlockType](crtreportblocktype.md)<br/>
+[_CrtGetDumpClient](crtgetdumpclient.md)<br/>

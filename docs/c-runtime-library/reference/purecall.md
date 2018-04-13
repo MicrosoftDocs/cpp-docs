@@ -34,7 +34,7 @@ extern "C" int __cdecl _purecall();
 
 The `_purecall` function is a Microsoft-specific implementation detail of the Microsoft Visual C++ compiler. This function is not intended to be called by your code directly, and it has no public header declaration. It is documented here because it is a public export of the C Runtime Library.
 
-A call to a pure virtual function is an error because it has no implementation. The compiler generates code to invoke the `_purecall` error handler function when a pure virtual function is called. By default, `_purecall` terminates the program. Before terminating, the `_purecall` function invokes a `_purecall_handler` function if one has been set for the process. You can install your own error handler function for pure virtual function calls, to catch them for debugging or reporting purposes. To use your own error handler, create a function that has the `_purecall_handler` signature, then use [_set_purecall_handler](../../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md) to make it the current handler.
+A call to a pure virtual function is an error because it has no implementation. The compiler generates code to invoke the `_purecall` error handler function when a pure virtual function is called. By default, `_purecall` terminates the program. Before terminating, the `_purecall` function invokes a `_purecall_handler` function if one has been set for the process. You can install your own error handler function for pure virtual function calls, to catch them for debugging or reporting purposes. To use your own error handler, create a function that has the `_purecall_handler` signature, then use [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) to make it the current handler.
 
 ## Requirements
 
@@ -42,5 +42,5 @@ The `_purecall` function does not have a header declaration. The `_purecall_hand
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_get_purecall_handler, _set_purecall_handler](../../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[_get_purecall_handler, _set_purecall_handler](get-purecall-handler-set-purecall-handler.md)<br/>

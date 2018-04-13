@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 ---
 # memicmp
 
-This POSIX function is deprecated. Use the ISO C++ conformant [_memicmp](../../c-runtime-library/reference/memicmp-memicmp-l.md) instead.
+This POSIX function is deprecated. Use the ISO C++ conformant [_memicmp](memicmp-memicmp-l.md) instead.

@@ -67,9 +67,9 @@ Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt
 
 ## Example
 
-See the example for [_beginthread](../../c-runtime-library/reference/beginthread-beginthreadex.md).
+See the example for [_beginthread](beginthread-beginthreadex.md).
 
 ## See also
 
 [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
+[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>

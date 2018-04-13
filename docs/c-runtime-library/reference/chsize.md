@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 ---
 # _chsize
 
-Changes the size of a file. A more secure version is available; see [_chsize_s](../../c-runtime-library/reference/chsize-s.md).
+Changes the size of a file. A more secure version is available; see [_chsize_s](chsize-s.md).
 
 ## Syntax
 
@@ -101,6 +101,6 @@ File length after:  329678
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_sopen, _wsopen](../../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_close](close.md)<br/>
+[_sopen, _wsopen](sopen-wsopen.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

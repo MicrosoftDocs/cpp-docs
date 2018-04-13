@@ -65,7 +65,7 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## Example
 
-```
+```C
 // crt_putw.c
 /* This program uses _putw to write a
 * word to a stream, then performs an error check.
@@ -95,13 +95,13 @@ int main( void )
 }
 ```
 
-## Output
+### Output
 
-```
+```Output
 Wrote ten words
 ```
 
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getw](../../c-runtime-library/reference/getw.md)<br/>
+[_getw](getw.md)<br/>

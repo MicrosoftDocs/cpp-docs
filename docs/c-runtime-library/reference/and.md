@@ -37,7 +37,7 @@ The macro yields the operator &&.
 
 ## Example
 
-```
+```cpp
 // iso646_and.cpp
 // compile with: /EHsc
 #include <iostream>

@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _chsize_s
 
-Changes the size of a file. This is a version of [_chsize](../../c-runtime-library/reference/chsize.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Changes the size of a file. This is a version of [_chsize](chsize.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -66,7 +66,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chsize](../../c-runtime-library/reference/chsize.md)<br/>
-[_close](../../c-runtime-library/reference/close.md)<br/>
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)<br/>
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)<br/>
+[_chsize](chsize.md)<br/>
+[_close](close.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

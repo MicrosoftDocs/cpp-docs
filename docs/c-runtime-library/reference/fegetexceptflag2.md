@@ -73,5 +73,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](../../c-runtime-library/reference/fesetexceptflag2.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+[fesetexceptflag](fesetexceptflag2.md)<br/>

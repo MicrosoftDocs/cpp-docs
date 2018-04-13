@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _lsearch_s
 
-Performs a linear search for a value. A version of [_lsearch](../../c-runtime-library/reference/lsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a linear search for a value. A version of [_lsearch](lsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -91,6 +91,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](../../c-runtime-library/reference/bsearch-s.md)<br/>
-[_lfind_s](../../c-runtime-library/reference/lfind-s.md)<br/>
-[_lsearch](../../c-runtime-library/reference/lsearch.md)<br/>
+[bsearch_s](bsearch-s.md)<br/>
+[_lfind_s](lfind-s.md)<br/>
+[_lsearch](lsearch.md)<br/>
