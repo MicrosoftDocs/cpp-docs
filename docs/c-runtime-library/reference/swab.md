@@ -42,24 +42,24 @@ Data to be copied and swapped.
 *dest*
 Storage location for swapped data.
 
-`n`
+*n*
 Number of bytes to be copied and swapped.
 
 ## Return value
 
-The `swab` function does not return a value. The function sets `errno` to `EINVAL` if either the *src* or *dest* pointer is null or `n` is less than zero, and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+The **swab** function does not return a value. The function sets **errno** to **EINVAL** if either the *src* or *dest* pointer is null or *n* is less than zero, and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this and other return codes.
 
 ## Remarks
 
-If `n` is even, the `_swab` function copies `n` bytes from *src*, swaps each pair of adjacent bytes, and stores the result at *dest*. If `n` is odd, `_swab` copies and swaps the first `n-1` bytes of *src*, and the final byte is not copied. The `_swab` function is typically used to prepare binary data for transfer to a machine that uses a different byte order.
+If *n* is even, the **_swab** function copies *n* bytes from *src*, swaps each pair of adjacent bytes, and stores the result at *dest*. If *n* is odd, **_swab** copies and swaps the first *n*-1 bytes of *src*, and the final byte is not copied. The **_swab** function is typically used to prepare binary data for transfer to a machine that uses a different byte order.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_swab`|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
+|**_swab**|C: \<stdlib.h> C++: \<cstdlib> or \<stdlib.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 

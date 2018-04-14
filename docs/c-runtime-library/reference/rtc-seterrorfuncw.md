@@ -55,11 +55,11 @@ Before you can call this function, you must first call one of the run-time error
 
 **_RTC_error_fnW** is defined as follows:
 
-**typedef int (__cdecl \*_RTC_error_fnW)(int**  `errorType` **, const wchar_t \*** *filename* **, int**  *linenumber* **, const wchar_t \*** *moduleName* **, const wchar_t \*** *format* **, ...);**
+> **typedef int (__cdecl \*_RTC_error_fnW)(int** *errorType* **, const wchar_t \*** *filename* **, int**  *linenumber* **, const wchar_t \*** *moduleName* **, const wchar_t \*** *format* **, ...);**
 
 where:
 
-`errorType`
+*errorType*
 The type of error that's specified by [_RTC_SetErrorType](rtc-seterrortype.md).
 
 *filename*

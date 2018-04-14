@@ -51,11 +51,15 @@ If a valid *locale* and *category* are given, returns a pointer to the string as
 
 For example, the call
 
-`setlocale( LC_ALL, "en-US" );`
+```C
+setlocale( LC_ALL, "en-US" );
+```
 
 sets all categories, returning only the string
 
-`en-US`
+```Output
+en-US
+```
 
 You can copy the string returned by `setlocale` to restore that part of the program's locale information. Global or thread local storage is used for the string returned by `setlocale`. Later calls to `setlocale` overwrite the string, which invalidates string pointers returned by earlier calls.
 
@@ -73,23 +77,14 @@ Use the `setlocale` function to set, change, or query some or all of the current
 
 The *category* argument specifies the parts of a program's locale information that are affected. The macros used for *category* and the parts of the program they affect are as follows:
 
-`LC_ALL`
-All categories in the following list.
-
-`LC_COLLATE`
-The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions.
-
-`LC_CTYPE`
-The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected).
-
-`LC_MONETARY`
-Monetary-formatting information returned by the `localeconv` function.
-
-`LC_NUMERIC`
-Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` also sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
-
-`LC_TIME`
-The `strftime` and `wcsftime` functions.
+|*category* flag|Affects|
+|-|-|
+`LC_ALL`|All categories, as listed below.
+`LC_COLLATE`|The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions.
+`LC_CTYPE`|The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected).
+`LC_MONETARY`|Monetary-formatting information returned by the `localeconv` function.
+`LC_NUMERIC`|Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
+`LC_TIME`|The `strftime` and `wcsftime` functions.
 
 This function validates the category parameter. If the category parameter is not one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns `NULL`.
 
@@ -103,65 +98,73 @@ The *locale* argument can take a locale name, a language string, a language stri
 
 A null pointer that's passed as the *locale* argument tells `setlocale` to query instead of to set the international environment. If the *locale* argument is a null pointer, the program's current locale setting is not changed. Instead, `setlocale` returns a pointer to the string that's associated with the *category* of the thread's current locale. If the *category* argument is `LC_ALL`, the function returns a string that indicates the current setting of each category, separated by semicolons. For example, the sequence of calls
 
-`// Set all categories and return "en-US"`
-
-`setlocale(LC_ALL, "en-US");`
-
-`// Set only the LC_MONETARY category and return "fr-FR"`
-
-`setlocale(LC_MONETARY, "fr-FR");`
-
-`printf("%s\n", setlocale(LC_ALL, NULL));`
+```C
+// Set all categories and return "en-US"
+setlocale(LC_ALL, "en-US");
+// Set only the LC_MONETARY category and return "fr-FR"
+setlocale(LC_MONETARY, "fr-FR");
+printf("%s\n", setlocale(LC_ALL, NULL));
+```
 
 returns
 
-`LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US`
+```Output
+LC_COLLATE=en-US;LC_CTYPE=en-US;LC_MONETARY=fr-FR;LC_NUMERIC=en-US;LC_TIME=en-US
+```
 
 which is the string that's associated with the `LC_ALL` category.
 
 The following examples pertain to the `LC_ALL` category. Either of the strings ".OCP" and ".ACP" can be used instead of a code page number to specify use of the user-default OEM code page and user-default ANSI code page, respectively.
 
-`setlocale( LC_ALL, "" );`
-Sets the locale to the default, which is the user-default ANSI code page obtained from the operating system.
+- `setlocale( LC_ALL, "" );`
 
-`setlocale( LC_ALL, ".OCP" );`
-Explicitly sets the locale to the current OEM code page obtained from the operating system.
+   Sets the locale to the default, which is the user-default ANSI code page obtained from the operating system.
 
-`setlocale( LC_ALL, ".ACP" );`
-Sets the locale to the ANSI code page obtained from the operating system.
+- `setlocale( LC_ALL, ".OCP" );`
 
-`setlocale( LC_ALL, "<localename>" );`
-Sets the locale to the locale name that's indicated by *\<localename>*.
+   Explicitly sets the locale to the current OEM code page obtained from the operating system.
 
-`setlocale( LC_ALL, "<language>_<country>" );`
-Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system.
+- `setlocale( LC_ALL, ".ACP" );`
 
-`setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
-Sets the locale to the language, country/region, and code page indicated by the *\<language>*, *\<country>*, and *<code_page>* strings. You can use various combinations of language, country/region, and code page. For example, this call sets the locale to French Canada with code page 1252:
+   Sets the locale to the ANSI code page obtained from the operating system.
 
-`setlocale( LC_ALL, "French_Canada.1252" );`
+- `setlocale( LC_ALL, "<localename>" );`
 
-This call sets the locale to French Canada with the default ANSI code page:
+   Sets the locale to the locale name that's indicated by *\<localename>*.
 
-`setlocale( LC_ALL, "French_Canada.ACP" );`
+- `setlocale( LC_ALL, "<language>_<country>" );`
 
-This call sets the locale to French Canada with the default OEM code page:
+   Sets the locale to the language and country/region indicated by *\<language>* and *\<country>*, together with the default code page obtained from the host operating system.
 
-`setlocale( LC_ALL, "French_Canada.OCP" );`
+- `setlocale( LC_ALL, "<language>_<country>.<code_page>" );`
 
-`setlocale( LC_ALL, "<language>" );`
-Sets the locale to the language that's indicated by *\<language>*, and uses the default country/region for the specified language and the user-default ANSI code page for that country/region as obtained from the host operating system. For example, the following calls to `setlocale` are functionally equivalent:
+   Sets the locale to the language, country/region, and code page indicated by the *\<language>*, *\<country>*, and *\<code_page>* strings. You can use various combinations of language, country/region, and code page. For example, this call sets the locale to French Canada with code page 1252:
 
-`setlocale( LC_ALL, "en-US" );`
+   `setlocale( LC_ALL, "French_Canada.1252" );`
 
-`setlocale( LC_ALL, "English" );`
+   This call sets the locale to French Canada with the default ANSI code page:
 
-`setlocale( LC_ALL, "English_United States.1252" );`
+   `setlocale( LC_ALL, "French_Canada.ACP" );`
 
-We recommend the first form for performance and maintainability.
+   This call sets the locale to French Canada with the default OEM code page:
 
-`setlocale( LC_ALL, ".<code_page>" );`
-Sets the code page to the value indicated by *<code_page>*, together with the default country/region and language (as defined by the host operating system) for the specified code page.
+   `setlocale( LC_ALL, "French_Canada.OCP" );`
+
+- `setlocale( LC_ALL, "<language>" );`
+
+   Sets the locale to the language that's indicated by *\<language>*, and uses the default country/region for the specified language and the user-default ANSI code page for that country/region as obtained from the host operating system. For example, the following calls to `setlocale` are functionally equivalent:
+
+   `setlocale( LC_ALL, "en-US" );`
+
+   `setlocale( LC_ALL, "English" );`
+
+   `setlocale( LC_ALL, "English_United States.1252" );`
+
+   We recommend the first form for performance and maintainability.
+
+- `setlocale( LC_ALL, ".<code_page>" );`
+
+   Sets the code page to the value indicated by *<code_page>*, together with the default country/region and language (as defined by the host operating system) for the specified code page.
 
 The category must be either `LC_ALL` or `LC_CTYPE` to effect a change of code page. For example, if the default country/region and language of the host operating system are "United States" and "English," the following two calls to `setlocale` are functionally equivalent:
 

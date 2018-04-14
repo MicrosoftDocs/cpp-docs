@@ -57,7 +57,7 @@ The `_create_locale` function allows you to create an object that represents cer
 
 The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in the following table.
 
-|||
+|*category* flag|Affects|
 |-|-|
 `LC_ALL`|All categories, as listed below.
 `LC_COLLATE`|The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions.

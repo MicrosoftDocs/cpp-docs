@@ -49,14 +49,11 @@ Permission setting.
 
 Each function returns 0 if the file has the given mode. The function returns an error code if the named file does not exist or is not accessible in the given mode. In this case, the function returns an error code from the set as follows and also sets `errno` to the same value.
 
-`EACCES`
-Access denied. The file's permission setting does not allow specified access.
-
-`ENOENT`
-File name or path not found.
-
-`EINVAL`
-Invalid parameter.
+|errno value|Condition|
+|-|-|
+`EACCES`|Access denied. The file's permission setting does not allow specified access.
+`ENOENT`|File name or path not found.
+`EINVAL`|Invalid parameter.
 
 For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

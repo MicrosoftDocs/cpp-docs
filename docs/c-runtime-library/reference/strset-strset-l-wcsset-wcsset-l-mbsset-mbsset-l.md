@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Sets characters of a string to a character. More secure versions of these functions are available; see [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).
 
 > [!IMPORTANT]
->  `_mbsset` and `_mbsset_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsset** and **_mbsset_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -64,7 +64,7 @@ unsigned char *_mbsset_l(
 *str*
 Null-terminated string to be set.
 
-`c`
+*c*
 Character setting.
 
 *locale*
@@ -76,11 +76,11 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The `_strset` function sets all characters (except the terminating null character) of *str* to `c`, converted to `char`. `_wcsset` and `_mbsset_l` are wide-character and multibyte-character versions of `_strset`, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **_strset** function sets all characters (except the terminating null character) of *str* to *c*, converted to **char**. **_wcsset** and **_mbsset_l** are wide-character and multibyte-character versions of **_strset**, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
-`_mbsset` validates its parameters. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbsset` returns `NULL` and sets `errno` to `EINVAL`. `_strset` and `_wcsset` do not validate their parameters.
+**_mbsset** validates its parameters. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbsset** returns **NULL** and sets **errno** to **EINVAL**. **_strset** and **_wcsset** do not validate their parameters.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale and the ones that do have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
@@ -89,18 +89,18 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsset`|`_strset`|`_mbsset`|`_wcsset`|
-|`_tcsset_l`|`_strset_l`|`_mbsset_l`|`_wcsset_l`|
+|**_tcsset**|**_strset**|**_mbsset**|**_wcsset**|
+|**_tcsset_l**|**_strset_l**|**_mbsset_l**|**_wcsset_l**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_strset`|\<string.h>|
-|`_strset_l`|\<tchar.h>|
-|`_wcsset`|\<string.h> or \<wchar.h>|
-|`_wcsset_l`|\<tchar.h>|
-|`_mbsset`, `_mbsset_l`|\<mbstring.h>|
+|**_strset**|\<string.h>|
+|**_strset_l**|\<tchar.h>|
+|**_wcsset**|\<string.h> or \<wchar.h>|
+|**_wcsset_l**|\<tchar.h>|
+|**_mbsset**, **_mbsset_l**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -63,9 +63,9 @@ Always check the return value to see whether the pointer is NULL before you perf
 
 **fopen** supports Unicode file streams. To open a Unicode file, pass a **ccs** flag that specifies the desired encoding to **fopen**, as follows.
 
-`FILE *fp = fopen("newfile.txt", "rt+, ccs=encoding");`
+> **FILE *fp = fopen("newfile.txt", "rt+, ccs=**_encoding_**");**
 
-Allowed values of **encoding** are **UNICODE**, **UTF-8**, and **UTF-16LE**.
+Allowed values of *encoding* are **UNICODE**, **UTF-8**, and **UTF-16LE**.
 
 When a file is opened in Unicode mode, input functions translate the data that's read from the file into UTF-16 data stored as type **wchar_t**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **wchar_t**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it is written, and the file's UTF-8-encoded content is translated into UTF-16 when it is read. An attempt to read or write an odd number of bytes in Unicode mode causes a [parameter validation](../../c-runtime-library/parameter-validation.md) error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You are responsible for any required encoding translation.
 
@@ -143,25 +143,25 @@ Valid characters for the *mode* string that is used in **fopen** and `_fdopen` c
 
 |Characters in mode string|Equivalent *oflag* value for `_open`/`_sopen`|
 |-------------------------------|----------------------------------------------------|
-|`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|
-|`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|
-|`r`|`_O_RDONLY`|
-|`r+`|`_O_RDWR`|
-|`w`|`_O_WRONLY` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|
-|`w+`|`_O_RDWR` (usually `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|
-|`b`|`_O_BINARY`|
-|`t`|`_O_TEXT`|
-|`c`|None|
-|`n`|None|
-|`S`|`_O_SEQUENTIAL`|
-|`R`|`_O_RANDOM`|
-|`T`|`_O_SHORTLIVED`|
-|`D`|`_O_TEMPORARY`|
-|`ccs=UNICODE`|`_O_WTEXT`|
-|`ccs=UTF-8`|`_O_UTF8`|
-|`ccs=UTF-16LE`|`_O_UTF16`|
+|**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND**)|
+|**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
+|**r**|**_O_RDONLY**|
+|**r+**|**_O_RDWR**|
+|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC**)|
+|**w+**|**_O_RDWR** (usually **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
+|**b**|**_O_BINARY**|
+|**t**|**_O_TEXT**|
+|**c**|None|
+|**n**|None|
+|**S**|**_O_SEQUENTIAL**|
+|**R**|**_O_RANDOM**|
+|**T**|**_O_SHORTLIVED**|
+|**D**|**_O_TEMPORARY**|
+|**ccs=UNICODE**|**_O_WTEXT**|
+|**ccs=UTF-8**|**_O_UTF8**|
+|**ccs=UTF-16LE**|**_O_UTF16**|
 
-If you are using `rb` mode, you do not have to port your code, and if you expect to read most of a large file or are not concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
+If you are using **rb** mode, you do not have to port your code, and if you expect to read most of a large file or are not concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
 
 ## Requirements
 
@@ -172,9 +172,9 @@ If you are using `rb` mode, you do not have to port your code, and if you expect
 
 **_wfopen** is a Microsoft extension. For more information about compatibility, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-The `c`, `n`, `t`, `S`, `R`, `T`, and `D` *mode* options are Microsoft extensions for **fopen** and `_fdopen` and should not be used where ANSI portability is desired.
+The **c**, **n**, **t**, **S**, **R**, **T**, and **D** *mode* options are Microsoft extensions for **fopen** and `_fdopen` and should not be used where ANSI portability is desired.
 
-## Example
+## Example 1
 
 The following program opens two files.  It uses `fclose` to close the first file and `_fcloseall` to close all remaining files.
 
@@ -227,7 +227,7 @@ The file 'data2' was opened
 Number of files closed by _fcloseall: 1
 ```
 
-## Example
+## Example 2
 
 The following program creates a file (or overwrites one if it exists), in text mode that has Unicode encoding.  It then writes two strings into the file and closes the file. The output is a file named _wfopen_test.xml, which contains the data from the output section.
 
