@@ -45,7 +45,7 @@ Locale to use.
 
 ## Return Value
 
-`_ismbbalnum` returns a nonzero value if the expression:
+**_ismbbalnum** returns a nonzero value if the expression:
 
 `isalnum(c) || _ismbbkalnum(c)`
 
@@ -57,8 +57,8 @@ The version of this function with the **_l** suffix is identical except that it 
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_ismbbalnum`|\<mbctype.h>|
-|`_ismbbalnum_l`|\<mbctype.h>|
+|**_ismbbalnum**|\<mbctype.h>|
+|**_ismbbalnum_l**|\<mbctype.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -39,27 +39,20 @@ The **_tzset** function uses the current setting of the environment variable **T
 
 > **set TZ=**_tzn_ \[**+**&#124;**-**]*hh*\[**:**_mm_\[**:**_ss_] ][*dzn*]
 
-*tzn*
-Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.
-
-*hh*
-Difference in hours between UTC and local time. Sign (+) optional for positive values.
-
-*mm*
-Minutes. Separated from *hh* by a colon (**:**).
-
-*ss*
-Seconds. Separated from *mm* by a colon (**:**).
-
-*dzn*
-Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
+|Parameter|Description|
+|-|-|
+*tzn*|Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.
+*hh*|Difference in hours between UTC and local time. Sign (+) optional for positive values.
+*mm*|Minutes. Separated from *hh* by a colon (**:**).
+*ss*|Seconds. Separated from *mm* by a colon (**:**).
+*dzn*|Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
 
 > [!NOTE]
 > Take care in computing the sign of the time difference. Because the time difference is the offset from local time to UTC (rather than the reverse), its sign may be the opposite of what you might intuitively expect. For time zones ahead of UTC, the time difference is negative; for those behind UTC, the difference is positive.
 
 For example, to set the **TZ** environment variable to correspond to the current time zone in Germany, enter the following on the command line:
 
-`set TZ=GST-1GDT`
+> **set TZ=GST-1GDT**
 
 This command uses GST to indicate German standard time, assumes that UTC is one hour behind Germany (or in other words, that Germany is one hour ahead of UTC), and assumes that Germany observes daylight-saving time.
 

@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
 Copy characters of one string to another. More secure versions of these functions are available; see [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).
 
 > [!IMPORTANT]
->  `_mbsncpy` and `_mbsncpy_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsncpy** and **_mbsncpy_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -124,14 +124,14 @@ Returns *strDest*. No return value is reserved to indicate an error.
 
 ## Remarks
 
-The `strncpy` function copies the initial *count* characters of *strSource* to *strDest* and returns *strDest*. If *count* is less than or equal to the length of *strSource*, a null character is not appended automatically to the copied string. If *count* is greater than the length of *strSource*, the destination string is padded with null characters up to length *count*. The behavior of `strncpy` is undefined if the source and destination strings overlap.
+The **strncpy** function copies the initial *count* characters of *strSource* to *strDest* and returns *strDest*. If *count* is less than or equal to the length of *strSource*, a null character is not appended automatically to the copied string. If *count* is greater than the length of *strSource*, the destination string is padded with null characters up to length *count*. The behavior of **strncpy** is undefined if the source and destination strings overlap.
 
 > [!IMPORTANT]
->  `strncpy` does not check for sufficient space in *strDest*; this makes it a potential cause of buffer overruns. The *count* argument limits the number of characters copied; it is not a limit on the size of *strDest*. See the following example. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> **strncpy** does not check for sufficient space in *strDest*; this makes it a potential cause of buffer overruns. The *count* argument limits the number of characters copied; it is not a limit on the size of *strDest*. See the following example. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-If *strDest* or *strSource* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`
+If *strDest* or *strSource* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
-`wcsncpy` and `_mbsncpy` are wide-character and multibyte-character versions of `strncpy`. The arguments and return value of `wcsncpy` and `_mbsncpy` vary accordingly. These six functions behave identically otherwise.
+**wcsncpy** and **_mbsncpy** are wide-character and multibyte-character versions of **strncpy**. The arguments and return value of **wcsncpy** and **_mbsncpy** vary accordingly. These six functions behave identically otherwise.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale passed in instead of the current locale for their locale-dependent behavior. For more information, see [Locale](../../c-runtime-library/locale.md).
 
@@ -141,25 +141,25 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 |TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcsncpy`|`strncpy`|`_mbsnbcpy`|`wcsncpy`|
-|`_tcsncpy_l`|`_strncpy_l`|`_mbsnbcpy_l`|`_wcsncpy_l`|
+|**_tcsncpy**|**strncpy**|**_mbsnbcpy**|**wcsncpy**|
+|**_tcsncpy_l**|**_strncpy_l**|**_mbsnbcpy_l**|**_wcsncpy_l**|
 
 > [!NOTE]
->  `_strncpy_l` and `_wcsncpy_l` have no locale dependence; they are provided just for `_tcsncpy_l` and are not intended to be called directly.
+> **_strncpy_l** and **_wcsncpy_l** have no locale dependence; they are provided just for **_tcsncpy_l** and are not intended to be called directly.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`strncpy`|\<string.h>|
-|`wcsncpy`|\<string.h> or \<wchar.h>|
-|`_mbsncpy`, `_mbsncpy_l`|\<mbstring.h>|
+|**strncpy**|\<string.h>|
+|**wcsncpy**|\<string.h> or \<wchar.h>|
+|**_mbsncpy**, **_mbsncpy_l**|\<mbstring.h>|
 
 For additional platform compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
-The following example demonstrates the use of `strncpy` and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to `strncpy` similar to **crt_strncpy_x86.c(15) : warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.**
+The following example demonstrates the use of **strncpy** and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to **strncpy** similar to **crt_strncpy_x86.c(15) : warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.**
 
 ```C
 // crt_strncpy_x86.c

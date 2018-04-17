@@ -89,7 +89,9 @@ Because signal-handler routines are usually called asynchronously when an interr
 
 A program must contain floating-point code if it is to trap the **SIGFPE** exception by using the function. If your program does not have floating-point code and requires the run-time library's signal-handling code, just declare a volatile double and initialize it to zero:
 
-`volatile double d = 0.0f;`
+```C
+volatile double d = 0.0f;
+```
 
 The **SIGILL** and **SIGTERM** signals are not generated under Windows. They are included for ANSI compatibility. Therefore, you can set signal handlers for these signals by using **signal**, and you can also explicitly generate these signals by calling [raise](raise.md).
 

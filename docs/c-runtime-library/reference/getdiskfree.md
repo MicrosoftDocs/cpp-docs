@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _getdiskfree
 
-Uses information about a disk drive to populate a `_diskfree_t` structure.
+Uses information about a disk drive to populate a **_diskfree_t** structure.
 
 > [!IMPORTANT]
 >  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -42,44 +42,32 @@ unsigned _getdiskfree(
 The disk drive for which you want information.
 
 *driveinfo*
-A `_diskfree_t` structure that will be populated with information about the drive.
+A **_diskfree_t** structure that will be populated with information about the drive.
 
 ## Return Value
 
-If the function succeeds, the return value is zero. If the function fails, the return value is the error code. The value `errno` is set for any errors that are returned by the operating system. For more information about error conditions that are indicated by `errno`, see [errno Constants](../../c-runtime-library/errno-constants.md).
+If the function succeeds, the return value is zero. If the function fails, the return value is the error code. The value **errno** is set for any errors that are returned by the operating system. For more information about error conditions that are indicated by **errno**, see [errno Constants](../../c-runtime-library/errno-constants.md).
 
 ## Remarks
 
-The `_diskfree_t` structure is defined in Direct.h.
+The **_diskfree_t** structure is defined in Direct.h.
 
 ```C
 struct _diskfree_t {
-   unsigned total_clusters;
-   unsigned avail_clusters;
-   unsigned sectors_per_cluster;
-   unsigned bytes_per_sector;
+   unsigned total_clusters;      // The total number of clusters, both used and available, on the disk.
+   unsigned avail_clusters;      // The number of unused clusters on the disk.
+   unsigned sectors_per_cluster; // The number of sectors in each cluster.
+   unsigned bytes_per_sector;    // The size of each sector in bytes.
 };
 ```
 
-This function validates its parameters. If the *driveinfo* pointer is `NULL` or *drive* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
-
-`total_clusters`
-The total number of clusters, both used and available, on the disk.
-
-`avail_clusters`
-The number of unused clusters on the disk.
-
-`sectors_per_cluster`
-The number of sectors in each cluster.
-
-`bytes_per_sector`
-The size of each sector in bytes.
+This function validates its parameters. If the *driveinfo* pointer is **NULL** or *drive* specifies an invalid drive, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **EINVAL** and sets **errno** to **EINVAL**. Valid drives range from 0 to 26. A *drive* value of 0 specifies the current drive; thereafter, numbers map to letters of the English alphabet such that 1 indicates drive A, 3 indicates drive C, and so on.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_getdiskfree`|\<direct.h>|
+|**_getdiskfree**|\<direct.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

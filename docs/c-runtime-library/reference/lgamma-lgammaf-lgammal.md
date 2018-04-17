@@ -44,7 +44,7 @@ The value to compute.
 
 ## Return Value
 
-If successful, return the natural logarithm of the absolute value of the gamma function of `x.`
+If successful, return the natural logarithm of the absolute value of the gamma function of *x*.
 
 |Issue|Return|
 |-----------|------------|

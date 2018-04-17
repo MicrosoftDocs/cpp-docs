@@ -51,7 +51,7 @@ errno_t _wmktemp_s(
 File name pattern.
 
 *sizeInChars*
-Size of the buffer in single-byte characters in `_mktemp_s`; wide characters in `_wmktemp_s`, including the null terminator.
+Size of the buffer in single-byte characters in **_mktemp_s**; wide characters in **_wmktemp_s**, including the null terminator.
 
 ## Return Value
 
@@ -61,41 +61,41 @@ Both of these functions return zero on success; an error code on failure.
 
 |*nameTemplate*|*sizeInChars*|Return value|New value in *nameTemplate*|
 |----------------|-------------------|----------------------|-------------------------------|
-|`NULL`|any|`EINVAL`|`NULL`|
-|Incorrect format (see `Remarks` section for correct format)|any|`EINVAL`|empty string|
-|any|<= number of X's|`EINVAL`|empty string|
+|**NULL**|any|**EINVAL**|**NULL**|
+|Incorrect format (see Remarks section for correct format)|any|**EINVAL**|empty string|
+|any|<= number of X's|**EINVAL**|empty string|
 
-If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`.
+If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the functions returns **EINVAL**.
 
 ## Remarks
 
-The `_mktemp_s` function creates a unique file name by modifying the *nameTemplate* argument, so that after the call, the *nameTemplate* pointer points to a string containing the new file name. `_mktemp_s` automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. `_wmktemp_s` is a wide-character version of `_mktemp_s`; the argument of `_wmktemp_s` is a wide-character string. `_wmktemp_s` and `_mktemp_s` behave identically otherwise, except that `_wmktemp_s` does not handle multibyte-character strings.
+The **_mktemp_s** function creates a unique file name by modifying the *nameTemplate* argument, so that after the call, the *nameTemplate* pointer points to a string containing the new file name. **_mktemp_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **_wmktemp_s** is a wide-character version of **_mktemp_s**; the argument of **_wmktemp_s** is a wide-character string. **_wmktemp_s** and **_mktemp_s** behave identically otherwise, except that **_wmktemp_s** does not handle multibyte-character strings.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tmktemp_s`|`_mktemp_s`|`_mktemp_s`|`_wmktemp_s`|
+|**_tmktemp_s**|**_mktemp_s**|**_mktemp_s**|**_wmktemp_s**|
 
-The *nameTemplate* argument has the form `baseXXXXXX`, where *base* is the part of the new file name that you supply and each X is a placeholder for a character supplied by `_mktemp_s`. Each placeholder character in *nameTemplate* must be an uppercase X. `_mktemp_s` preserves *base* and replaces the first trailing X with an alphabetic character. `_mktemp_s` replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
+The *nameTemplate* argument has the form **baseXXXXXX**, where *base* is the part of the new file name that you supply and each X is a placeholder for a character supplied by **_mktemp_s**. Each placeholder character in *nameTemplate* must be an uppercase X. **_mktemp_s** preserves *base* and replaces the first trailing X with an alphabetic character. **_mktemp_s** replaces the following trailing X's with a five-digit value; this value is a unique number identifying the calling process, or in multithreaded programs, the calling thread.
 
-Each successful call to `_mktemp_s` modifies *nameTemplate*. In each subsequent call from the same process or thread with the same *nameTemplate* argument, `_mktemp_s` checks for file names that match names returned by `_mktemp_s` in previous calls. If no file exists for a given name, `_mktemp_s` returns that name. If files exist for all previously returned names, `_mktemp_s` creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *base* is:
+Each successful call to **_mktemp_s** modifies *nameTemplate*. In each subsequent call from the same process or thread with the same *nameTemplate* argument, **_mktemp_s** checks for file names that match names returned by **_mktemp_s** in previous calls. If no file exists for a given name, **_mktemp_s** returns that name. If files exist for all previously returned names, **_mktemp_s** creates a new name by replacing the alphabetic character it used in the previously returned name with the next available lowercase letter, in order, from 'a' through 'z'. For example, if *base* is:
 
-`fn`
+> **fn**
 
-and the five-digit value supplied by `_mktemp_s` is 12345, the first name returned is:
+and the five-digit value supplied by **_mktemp_s** is 12345, the first name returned is:
 
-`fna12345`
+> **fna12345**
 
 If this name is used to create file FNA12345 and this file still exists, the next name returned on a call from the same process or thread with the same *base* for *nameTemplate* is:
 
-`fnb12345`
+> **fnb12345**
 
 If FNA12345 does not exist, the next name returned is again:
 
-`fna12345`
+> **fna12345**
 
-`_mktemp_s` can create a maximum of 26 unique file names for any given combination of *base* and *nameTemplate* values. Therefore, FNZ12345 is the last unique file name `_mktemp_s` can create for the *base* and *nameTemplate* values used in this example.
+**_mktemp_s** can create a maximum of 26 unique file names for any given combination of *base* and *nameTemplate* values. Therefore, FNZ12345 is the last unique file name **_mktemp_s** can create for the *base* and *nameTemplate* values used in this example.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -103,8 +103,8 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 |Routine|Required header|
 |-------------|---------------------|
-|`_mktemp_s`|\<io.h>|
-|`_wmktemp_s`|\<io.h> or \<wchar.h>|
+|**_mktemp_s**|\<io.h>|
+|**_wmktemp_s**|\<io.h> or \<wchar.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.
 

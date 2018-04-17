@@ -129,14 +129,14 @@ int main( void )
     wprintf( L"The number of fields input is %d\n", result );
     wprintf( L"The contents are: %d %f %C %c %hs %s\n", i, fp, c, wc, s, ws);
 }
-
 ```
 
 When this program is given the input in the example, it produces this output:
 
-`71 98.6 h z Byte characters`
-
-`36 92.3 y n Wide characters`
+```Input
+71 98.6 h z Byte characters
+36 92.3 y n Wide characters
+```
 
 ```Output
 The number of fields input is 6

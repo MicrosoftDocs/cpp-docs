@@ -43,7 +43,7 @@ Returns zero if successful; an error code on failure. If *pmode* is `NULL`, the 
 
 ## Remarks
 
-The function gets the value of the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as `_open`, `_pipe`, `fopen`, and `freopen`.
+The function gets the value of the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for both low-level and stream file I/O operations, such as `_open`, `_pipe`, `fopen`, and [freopen](freopen-wfreopen.md).
 
 ## Requirements
 

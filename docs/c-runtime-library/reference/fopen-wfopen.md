@@ -105,11 +105,11 @@ The character string *mode* specifies the kind of access that is requested for t
 **"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
 **"a+"**|Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist.
 
-When a file is opened by using the **"a"** access type or the **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or `rewind`, but is always moved back to the end of the file before any write operation is performed. Therefore, existing data cannot be overwritten.
+When a file is opened by using the **"a"** access type or the **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but is always moved back to the end of the file before any write operation is performed. Therefore, existing data cannot be overwritten.
 
 The **"a"** mode does not remove the EOF marker before it appends to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. Before it appends to the file, the **"a+"** mode does remove the EOF marker. After appending, the MS-DOS TYPE command shows all data in the file. The **"a+"** mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 
-When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file positioning function. The file positioning functions are `fsetpos`, [fseek](fseek-fseeki64.md), and `rewind`. When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file positioning function.
+When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are enabled (the file is said to be open for "update"). However, when you switch from reading to writing, the input operation must encounter an EOF marker. If there is no EOF, you must use an intervening call to a file positioning function. The file positioning functions are `fsetpos`, [fseek](fseek-fseeki64.md), and [rewind](rewind.md). When you switch from writing to reading, you must use an intervening call to either `fflush` or to a file positioning function.
 
 In addition to the earlier values, the following characters can be appended to *mode* to specify the translation mode for newline characters.
 
@@ -141,7 +141,7 @@ The following options can be appended to *mode* to specify additional behaviors.
 
 Valid characters for the *mode* string that is used in **fopen** and `_fdopen` correspond to *oflag* arguments that are used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
 
-|Characters in mode string|Equivalent *oflag* value for `_open`/`_sopen`|
+|Characters in *mode* string|Equivalent *oflag* value for _open/_sopen|
 |-------------------------------|----------------------------------------------------|
 |**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND**)|
 |**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|

@@ -64,7 +64,7 @@ The following functions have SSE2 implementations that can be enabled by using *
 The SSE2 implementations of these functions might give slightly different answers than the default implementations, because SSE2 intermediate values are 64-bit floating-point quantities but the default implementation intermediate values are 80-bit floating-point quantities.
 
 > [!NOTE]
->  If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **_set_SSE2_enable** has no effect. The `/Oi` compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **_set_SSE2_enable**. If you want to guarantee that `/Oi` does not override **_set_SSE2_enable**, use `/Oi-` to compile your project. This might also be good practice when you use other compiler switches that imply `/Oi`.
+> If you use the [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) compiler option to compile the project, it may appear that **_set_SSE2_enable** has no effect. The `/Oi` compiler option gives the compiler the authority to use intrinsics to replace CRT calls; this behavior overrides the effect of **_set_SSE2_enable**. If you want to guarantee that `/Oi` does not override **_set_SSE2_enable**, use `/Oi-` to compile your project. This might also be good practice when you use other compiler switches that imply `/Oi`.
 
 The SSE2 implementation is only used if all exceptions are masked. Use [_control87, _controlfp](control87-controlfp-control87-2.md) to mask exceptions.
 
@@ -95,9 +95,9 @@ int main()
 }
 ```
 
-**Output**
-
-`SSE2 enabled.`
+```Output
+SSE2 enabled.
+```
 
 ## See also
 
