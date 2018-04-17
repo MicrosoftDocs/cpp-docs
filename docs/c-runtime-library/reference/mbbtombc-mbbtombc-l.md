@@ -55,7 +55,7 @@ If `_mbbtombc` successfully converts *c*, it returns a multibyte character; othe
 
 The `_mbbtombc` function converts a given single-byte multibyte character to a corresponding double-byte multibyte character. Characters must be within the range 0x20 - 0x7E or 0xA1 - 0xDF to be converted.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of this function are identical, except that `_mbbtombc` uses the current locale for this locale-dependent behavior and `_mbbtombc_l` instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of this function are identical, except that `_mbbtombc` uses the current locale for this locale-dependent behavior and `_mbbtombc_l` instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In earlier versions, `_mbbtombc` was named `hantozen`. For new code, use `_mbbtombc`.
 

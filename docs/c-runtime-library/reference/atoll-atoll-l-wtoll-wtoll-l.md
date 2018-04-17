@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # atoll, _atoll_l, _wtoll, _wtoll_l
 
-Converts a string to a `long long` integer.
+Converts a string to a **long** **long** integer.
 
 ## Syntax
 
@@ -53,15 +53,15 @@ Locale to use.
 
 ## Return Value
 
-Each function returns the `long long` value that's produced by interpreting the input characters as a number. The return value for `atoll` is 0 if the input cannot be converted to a value of that type.
+Each function returns the **long** **long** value that's produced by interpreting the input characters as a number. The return value for `atoll` is 0 if the input cannot be converted to a value of that type.
 
 For overflow with large positive integral values, `atoll` returns `LLONG_MAX`, and for overflow with large negative integral values, it returns `LLONG_MIN`.
 
-In all out-of-range cases, **errno** is set to `ERANGE`. If the parameter that's passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
+In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter that's passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
 ## Remarks
 
-These functions convert a character string to a `long long` integer value.
+These functions convert a character string to a **long** **long** integer value.
 
 The input string is a sequence of characters that can be interpreted as a numerical value of the specified type. The function stops reading the input string at the first character that it cannot recognize as part of a number. This character might be the null character ('\0' or L'\0') that terminates the string.
 

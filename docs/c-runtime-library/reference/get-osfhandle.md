@@ -39,7 +39,7 @@ An existing file descriptor.
 
 ## Return Value
 
-Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets **errno** to `EBADF`, indicating an invalid file handle.
+Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets **errno** to **EBADF**, indicating an invalid file handle.
 
 ## Remarks
 

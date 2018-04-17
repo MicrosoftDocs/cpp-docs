@@ -53,7 +53,7 @@ Execution mode for a calling process.
 Path of the file to be executed.
 
 *argv*<br/>
-Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a path in real mode or to the program name in protected mode, and *argv*[1] through *argv*[`n`] are pointers to the character strings forming the new argument list. The argument *argv*[`n` +1] must be a `NULL` pointer to mark the end of the argument list.
+Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a path in real mode or to the program name in protected mode, and *argv*[1] through *argv*[`n`] are pointers to the character strings forming the new argument list. The argument *argv*[`n` +1] must be a **NULL** pointer to mark the end of the argument list.
 
 *envp*<br/>
 Array of pointers to environment settings.
@@ -64,11 +64,11 @@ The return value from a synchronous `_spawnve` or `_wspawnve` (`_P_WAIT` specifi
 
 |||
 |-|-|
-`E2BIG`|Argument list exceeds 1024 bytes.
+**E2BIG**|Argument list exceeds 1024 bytes.
 **EINVAL**|*mode* argument is invalid.
 **ENOENT**|File or path is not found.
-`ENOEXEC`|Specified file is not executable or has invalid executable-file format.
-`ENOMEM`|Not enough memory is available to execute the new process.
+**ENOEXEC**|Specified file is not executable or has invalid executable-file format.
+**ENOMEM**|Not enough memory is available to execute the new process.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

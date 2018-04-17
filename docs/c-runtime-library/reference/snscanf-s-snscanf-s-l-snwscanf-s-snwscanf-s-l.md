@@ -70,9 +70,9 @@ Optional arguments to be assigned according to the format string.
 
 ## Return Value
 
-Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
+Both of these functions returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is **EOF** for an error or if the end of the string is reached before the first conversion. For more information, see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-If *input* or *format* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set **errno** to **EINVAL**.
+If *input* or *format* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and set **errno** to **EINVAL**.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -83,7 +83,7 @@ This function is like `sscanf_s` except that it provides the ability to specify 
 The buffer size parameter is required with the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
->  The size parameter is of type `unsigned`, not `size_t`.
+>  The size parameter is of type **unsigned**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

@@ -62,7 +62,7 @@ Locale to use.
 
 ## Return Value
 
-Each of these functions returns the number of characters in *str*, excluding the terminal `NULL`. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
+Each of these functions returns the number of characters in *str*, excluding the terminal **NULL**. No return value is reserved to indicate an error, except for `_mbstrlen` and `_mbstrlen_l`, which return `((size_t)(-1))` if the string contains an invalid multibyte character.
 
 ## Remarks
 
@@ -78,9 +78,9 @@ Each of these functions returns the number of characters in *str*, excluding the
 |`_tcsclen`|`strlen`|`_mbslen`|`wcslen`|
 |`_tcsclen_l`|`strlen`|`_mbslen_l`|`wcslen`|
 
-`_mbslen` and `_mbslen_l` return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. `_mbstrlen` and `_mbstrlen_l` test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to `_mbstrlen` or `_mbstrlen_l` contains an invalid multibyte character for the code page, the function returns -1 and sets **errno** to `EILSEQ`.
+`_mbslen` and `_mbslen_l` return the number of multibyte characters in a multibyte-character string but they do not test for multibyte-character validity. `_mbstrlen` and `_mbstrlen_l` test for multibyte-character validity and recognize multibyte-character sequences. If the string passed to `_mbstrlen` or `_mbstrlen_l` contains an invalid multibyte character for the code page, the function returns -1 and sets **errno** to **EILSEQ**.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 

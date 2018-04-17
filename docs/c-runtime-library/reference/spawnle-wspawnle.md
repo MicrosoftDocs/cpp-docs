@@ -59,7 +59,7 @@ Execution mode for the calling process.
 Path of the file to be executed.
 
 *arg0*, *arg1*, ... *argn*<br/>
-List of pointers to arguments. The *arg0* argument is usually a pointer to *cmdname*. The arguments *arg1* through *argn* are pointers to the character strings forming the new argument list. Following *argn*, there must be a `NULL` pointer to mark the end of the argument list.
+List of pointers to arguments. The *arg0* argument is usually a pointer to *cmdname*. The arguments *arg1* through *argn* are pointers to the character strings forming the new argument list. Following *argn*, there must be a **NULL** pointer to mark the end of the argument list.
 
 *envp*<br/>
 Array of pointers to environment settings.
@@ -70,11 +70,11 @@ The return value from a synchronous `_spawnle` or `_wspawnle` (`_P_WAIT` specifi
 
 |||
 |-|-|
-`E2BIG`|Argument list exceeds 1024 bytes.
+**E2BIG**|Argument list exceeds 1024 bytes.
 **EINVAL**|*mode* argument is invalid.
 **ENOENT**|File or path is not found.
-`ENOEXEC`|Specified file is not executable or has invalid executable-file format.
-`ENOMEM`|Not enough memory is available to execute the new process.
+**ENOEXEC**|Specified file is not executable or has invalid executable-file format.
+**ENOMEM**|Not enough memory is available to execute the new process.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

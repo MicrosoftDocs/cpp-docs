@@ -62,7 +62,7 @@ if (( _access( "datafile",2 )) == -1 )
    fprintf( stderr, _strerror(NULL) );
 ```
 
-If *strErrMsg* is passed as `NULL`, `_strerror` returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to `NULL`, then `_strerror` returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is passed as **NULL**, `_strerror` returns a pointer to a string that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then `_strerror` returns a pointer to a string that contains (in order) your string message, a colon, a space, the system error message for the last library call that produces an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 The actual error number for `_strerror` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). To produce accurate results, call `_strerror` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror` or `_strerror` can overwrite the **errno** value.
 

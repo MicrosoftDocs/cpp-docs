@@ -49,16 +49,16 @@ void _wsplitpath(
 Full path.
 
 *drive*
-Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (`:`). You can pass **NULL** for this parameter if you do not need the drive letter.
 
 *dir*
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
 
 *fname*
-Base filename (no extension). You can pass `NULL` for this parameter if you do not need the filename.
+Base filename (no extension). You can pass **NULL** for this parameter if you do not need the filename.
 
 *ext*
-Filename extension, including leading period (**.**). You can pass `NULL` for this parameter if you do not need the filename extension.
+Filename extension, including leading period (**.**). You can pass **NULL** for this parameter if you do not need the filename extension.
 
 ## Remarks
 
@@ -87,9 +87,9 @@ The following table lists the values of the manifest constants.
 
 If the full path does not contain a component (for example, a filename), `_splitpath` assigns empty strings to the corresponding buffers.
 
-You can pass `NULL` to `_splitpath` for any parameter other than *path* that you do not need.
+You can pass **NULL** to `_splitpath` for any parameter other than *path* that you do not need.
 
-If *path* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
+If *path* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
 
 ## Requirements
 

@@ -60,7 +60,7 @@ The locale to use.
 
 ## Return Value
 
-Returns the number of characters printed, or a negative value if an error occurs. If *format* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**. If **EOF** (0xFFFF) is encountered in *argument*, the function returns -1.
+Returns the number of characters printed, or a negative value if an error occurs. If *format* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**. If **EOF** (0xFFFF) is encountered in *argument*, the function returns -1.
 
 For information on **errno** and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

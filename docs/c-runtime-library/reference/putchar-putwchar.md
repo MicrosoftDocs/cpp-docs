@@ -42,7 +42,7 @@ Character to be written.
 
 ## Return Value
 
-Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return `EOF`; `putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` or **WEOF** and set **errno** to **EINVAL**.
+Returns the character written. To indicate an error or end-of-file condition, `putc` and `putchar` return **EOF`; **putwc` and `putwchar` return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

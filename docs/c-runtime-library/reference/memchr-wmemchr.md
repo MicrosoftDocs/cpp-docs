@@ -72,7 +72,7 @@ Number of characters to check.
 
 ## Return Value
 
-If successful, returns a pointer to the first location of *c* in *buffer*. Otherwise it returns `NULL`.
+If successful, returns a pointer to the first location of *c* in *buffer*. Otherwise it returns **NULL**.
 
 ## Remarks
 

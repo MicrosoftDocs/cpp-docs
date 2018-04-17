@@ -57,9 +57,9 @@ Each of these functions returns a file descriptor for the opened file. A return 
 |errno value|Condition|
 |-|-|
 **EACCES**|Tried to open a read-only file for writing, file's sharing mode does not allow the specified operations, or the given path is a directory.
-`EEXIST`|`_O_CREAT` and `_O_EXCL` flags specified, but *filename* already exists.
+**EEXIST**|`_O_CREAT` and `_O_EXCL` flags specified, but *filename* already exists.
 **EINVAL**|Invalid *oflag* or *pmode* argument.
-`EMFILE`|No more file descriptors are available (too many files are open).
+**EMFILE**|No more file descriptors are available (too many files are open).
 **ENOENT**|File or path not found.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
@@ -100,7 +100,7 @@ To specify the file access mode, you must specify either `_O_RDONLY`, `_O_RDWR`,
 
 If `_O_WTEXT` is used to open a file for reading, `_open` reads the beginning of the file and checks for a byte order mark (BOM). If there is a BOM, the file is treated as UTF-8 or UTF-16LE, depending on the BOM. If no BOM is present, the file is treated as ANSI. When a file is opened for writing by using `_O_WTEXT`, UTF-16 is used. Regardless of any previous setting or byte order mark, if `_O_U8TEXT` is used, the file is always opened as UTF-8; if `_O_U16TEXT` is used, the file is always opened as UTF-16.
 
-When a file is opened in Unicode mode by using `_O_WTEXT`, `_O_U8TEXT`, or `_O_U16TEXT`, input functions translate the data that's read from the file into UTF-16 data stored as type `wchar_t`. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type `wchar_t`. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it is written, and the file's UTF-8-encoded content is translated into UTF-16 when it is read. An attempt to read or write an odd number of bytes in Unicode mode causes a parameter validation error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You are responsible for any required encoding translation.
+When a file is opened in Unicode mode by using `_O_WTEXT`, `_O_U8TEXT`, or `_O_U16TEXT`, input functions translate the data that's read from the file into UTF-16 data stored as type **wchar_t**. Functions that write to a file opened in Unicode mode expect buffers that contain UTF-16 data stored as type **wchar_t**. If the file is encoded as UTF-8, then UTF-16 data is translated into UTF-8 when it is written, and the file's UTF-8-encoded content is translated into UTF-16 when it is read. An attempt to read or write an odd number of bytes in Unicode mode causes a parameter validation error. To read or write data that's stored in your program as UTF-8, use a text or binary file mode instead of a Unicode mode. You are responsible for any required encoding translation.
 
 If `_open` is called with `_O_WRONLY` | `_O_APPEND` (append mode) and `_O_WTEXT`, `_O_U16TEXT`, or `_O_U8TEXT`, it first tries to open the file for reading and writing, read the BOM, then reopen it for writing only. If opening the file for reading and writing fails, it opens the file for writing only and uses the default value for the Unicode mode setting.
 

@@ -67,7 +67,7 @@ Copy destination.
 Size of the destination buffer.
 
 *pCopied*<br/>
-Filled with the number of bytes copied (1 or 2 if successful). Pass `NULL` if you don't care about the number.
+Filled with the number of bytes copied (1 or 2 if successful). Pass **NULL** if you don't care about the number.
 
 *src*<br/>
 Multibyte character to copy.
@@ -77,22 +77,22 @@ Locale to use.
 
 ## Return Value
 
-Zero if successful; an error code on failure. If *src* or *dest* is `NULL`, or if more than `buffSizeinBytes` bytes would be copied to *dest*, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **EINVAL** and **errno** is set to **EINVAL**.
+Zero if successful; an error code on failure. If *src* or *dest* is **NULL**, or if more than `buffSizeinBytes` bytes would be copied to *dest*, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return **EINVAL** and **errno** is set to **EINVAL**.
 
 ## Remarks
 
-The `_mbccpy_s` function copies one multibyte character from *src* to *dest*. If *src* does not point to the lead byte of a multibyte character as determined by an implicit call to [_ismbblead](ismbblead-ismbblead-l.md), then the single byte that *src* points to is copied. If *src* points to a lead byte but the following byte is 0 and thus invalid, then 0 is copied to *dest*, **errno** is set to `EILSEQ`, and the function returns `EILSEQ`.
+The `_mbccpy_s` function copies one multibyte character from *src* to *dest*. If *src* does not point to the lead byte of a multibyte character as determined by an implicit call to [_ismbblead](ismbblead-ismbblead-l.md), then the single byte that *src* points to is copied. If *src* points to a lead byte but the following byte is 0 and thus invalid, then 0 is copied to *dest*, **errno** is set to **EILSEQ**, and the function returns **EILSEQ**.
 
 `_mbccpy_s` does not append a null terminator; however, if *src* points to a null character, then that null is copied to *dest* (this is just a regular single-byte copy).
 
-The value in *pCopied* is filled with the number of bytes copied. Possible values are 1 and 2 if the operation is successful. If `NULL` is passed in, this parameter is ignored.
+The value in *pCopied* is filled with the number of bytes copied. Possible values are 1 and 2 if the operation is successful. If **NULL** is passed in, this parameter is ignored.
 
 |*src*|copied to *dest*|*pCopied*|Return value|
 |-----------|----------------------|---------------|------------------|
 |non-lead-byte|non-lead-byte|1|0|
 |0|0|1|0|
 |lead-byte followed by non-0|lead-byte followed by non-0|2|0|
-|lead-byte followed by 0|0|1|`EILSEQ`|
+|lead-byte followed by 0|0|1|**EILSEQ**|
 
 Note that the second row is just a special case of the first. Also note that the table assumes *buffSizeInBytes* >= *pCopied*.
 

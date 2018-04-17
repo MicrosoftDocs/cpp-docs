@@ -78,13 +78,13 @@ Zero if successful; otherwise, an error code on failure.
 
 |*pReturnValue*|*buffer*|*numberOfElements*|*varname*|Return Value|
 |--------------------|--------------|------------------------|---------------|------------------|
-|`NULL`|any|any|any|**EINVAL**|
-|any|`NULL`|>0|any|**EINVAL**|
-|any|any|any|`NULL`|**EINVAL**|
+|**NULL**|any|any|any|**EINVAL**|
+|any|**NULL**|>0|any|**EINVAL**|
+|any|any|any|**NULL**|**EINVAL**|
 
 Any of these error conditions invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
 
-Also, if the buffer is too small, these functions return `ERANGE`. They do not invoke an invalid parameter handler. They write out the required buffer size in *pReturnValue*, and thereby enable programs to call the function again with a larger buffer.
+Also, if the buffer is too small, these functions return **ERANGE**. They do not invoke an invalid parameter handler. They write out the required buffer size in *pReturnValue*, and thereby enable programs to call the function again with a larger buffer.
 
 ## Remarks
 
@@ -92,9 +92,9 @@ The `getenv_s` function searches the list of environment variables for *varname*
 
 `_wgetenv_s` is a wide-character version of `getenv_s`; the argument and return value of `_wgetenv_s` are wide-character strings. The `_wenviron` global variable is a wide-character version of `_environ`.
 
-In an MBCS program (for example, in an SBCS ASCII program), `_wenviron` is initially `NULL` because the environment is composed of multibyte-character strings. Then, on the first call to `_wputenv`, or on the first call to `_wgetenv_s`, if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by `_wenviron`.
+In an MBCS program (for example, in an SBCS ASCII program), `_wenviron` is initially **NULL** because the environment is composed of multibyte-character strings. Then, on the first call to `_wputenv`, or on the first call to `_wgetenv_s`, if an (MBCS) environment already exists, a corresponding wide-character string environment is created and is then pointed to by `_wenviron`.
 
-Similarly in a Unicode `(_wmain`) program, `_environ` is initially `NULL` because the environment is composed of wide-character strings. Then, on the first call to `_putenv`, or on the first call to `getenv_s` if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by `_environ`.
+Similarly in a Unicode `(_wmain`) program, `_environ` is initially **NULL** because the environment is composed of wide-character strings. Then, on the first call to `_putenv`, or on the first call to `getenv_s` if a (Unicode) environment already exists, a corresponding MBCS environment is created and is then pointed to by `_environ`.
 
 When two copies of the environment (MBCS and Unicode) exist simultaneously in a program, the run-time system must maintain both copies, and this causes slower execution time. For example, when you call `_putenv`, a call to `_wputenv` is also executed automatically so that the two environment strings correspond.
 

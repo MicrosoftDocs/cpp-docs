@@ -65,7 +65,7 @@ The following table lists the report types defined in Crtdbg.h.
 |-----------------|-----------------|
 |`_CRT_WARN`|Warnings, messages, and information that does not need immediate attention.|
 |`_CRT_ERROR`|Errors, unrecoverable problems, and issues that require immediate attention.|
-|`_CRT_ASSERT`|Assertion failures (asserted expressions that evaluate to `FALSE`).|
+|`_CRT_ASSERT`|Assertion failures (asserted expressions that evaluate to **FALSE**).|
 
 The `_CrtSetReportMode` function assigns the new report mode specified in *reportMode* to the report type specified in *reportType* and returns the previously defined report mode for *reportType*. The following table lists the available choices for *reportMode* and the resulting behavior of `_CrtDbgReport`. These options are defined as bit flags in Crtdbg.h.
 

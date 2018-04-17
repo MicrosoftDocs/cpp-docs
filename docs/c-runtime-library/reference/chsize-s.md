@@ -43,7 +43,7 @@ New length of the file in bytes.
 
 ## Return Value
 
-`_chsize_s` returns the value 0 if the file size is successfully changed. A nonzero return value indicates an error: the return value is **EACCES** if the specified file is locked against access, `EBADF` if the specified file is read-only or the descriptor is invalid, `ENOSPC` if no space is left on the device, or **EINVAL** if size is less than zero. **errno** is set to the same value.
+`_chsize_s` returns the value 0 if the file size is successfully changed. A nonzero return value indicates an error: the return value is **EACCES** if the specified file is locked against access, **EBADF** if the specified file is read-only or the descriptor is invalid, **ENOSPC** if no space is left on the device, or **EINVAL** if size is less than zero. **errno** is set to the same value.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -54,7 +54,7 @@ When the specified process has successfully completed, returns the handle of the
 
 |Value|Description|
 |-----------|-----------------|
-|`ECHILD`|No specified process exists, *procHandle* is invalid, or the call to the [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx) or [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032.aspx) API failed.|
+|**ECHILD**|No specified process exists, *procHandle* is invalid, or the call to the [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx) or [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032.aspx) API failed.|
 |**EINVAL**|*action* is invalid.|
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).

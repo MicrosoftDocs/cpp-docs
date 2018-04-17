@@ -73,16 +73,16 @@ Size of the buffer in words.
 Size of the buffer in bytes.
 
 *drive*<br/>
-Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. `_makepath_s` inserts the colon automatically in the composite path if it is missing. If *drive* is `NULL` or points to an empty string, no drive letter appears in the composite *path* string.
+Contains a letter (A, B, and so on) corresponding to the desired drive and an optional trailing colon. `_makepath_s` inserts the colon automatically in the composite path if it is missing. If *drive* is **NULL** or points to an empty string, no drive letter appears in the composite *path* string.
 
 *dir*<br/>
-Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *dir* argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If *dir* is `NULL` or points to an empty string, no directory path is inserted in the composite *path* string.
+Contains the path of directories, not including the drive designator or the actual file name. The trailing slash is optional, and either a forward slash (/) or a backslash (\\) or both might be used in a single *dir* argument. If no trailing slash (/ or \\) is specified, it is inserted automatically. If *dir* is **NULL** or points to an empty string, no directory path is inserted in the composite *path* string.
 
 *fname*<br/>
-Contains the base file name without any file name extensions. If *fname* is `NULL` or points to an empty string, no filename is inserted in the composite *path* string.
+Contains the base file name without any file name extensions. If *fname* is **NULL** or points to an empty string, no filename is inserted in the composite *path* string.
 
 *ext*<br/>
-Contains the actual file name extension, with or without a leading period (.). `_makepath_s` inserts the period automatically if it does not appear in *ext*. If *ext* is `NULL` or points to an empty string, no extension is inserted in the composite *path* string.
+Contains the actual file name extension, with or without a leading period (.). `_makepath_s` inserts the period automatically if it does not appear in *ext*. If *ext* is **NULL** or points to an empty string, no extension is inserted in the composite *path* string.
 
 ## Return Value
 
@@ -92,10 +92,10 @@ Zero if successful; an error code on failure.
 
 |*path*|*sizeInWords* / *sizeInBytes*|Return|Contents of *path*|
 |------------|------------------------------------|------------|------------------------|
-|`NULL`|any|**EINVAL**|not modified|
+|**NULL**|any|**EINVAL**|not modified|
 |any|<= 0|**EINVAL**|not modified|
 
-If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the functions returns **EINVAL**. `NULL` is allowed for the parameters *drive*, *fname*, and *ext*. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.
+If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the functions returns **EINVAL**. **NULL** is allowed for the parameters *drive*, *fname*, and *ext*. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.
 
 ## Remarks
 
@@ -109,7 +109,7 @@ The `_makepath_s` function creates a composite path string from individual compo
 
 The *path* argument must point to an empty buffer large enough to hold the complete path. The composite *path* must be no larger than the `_MAX_PATH` constant, defined in Stdlib.h.
 
-If path is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). In addition, **errno** is set to **EINVAL**. `NULL` values are allowed for all other parameters.
+If path is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). In addition, **errno** is set to **EINVAL**. **NULL** values are allowed for all other parameters.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

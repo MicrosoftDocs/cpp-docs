@@ -42,7 +42,7 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-`fgetc` returns the character read as an `int` or returns `EOF` to indicate an error or end of file. `fgetwc` returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *stream* is `NULL`, `fgetc` and `fgetwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return `EOF`.
+`fgetc` returns the character read as an **int** or returns **EOF** to indicate an error or end of file. `fgetwc` returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use `feof` or `ferror` to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *stream* is **NULL**, `fgetc` and `fgetwc` invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
 
 ## Remarks
 

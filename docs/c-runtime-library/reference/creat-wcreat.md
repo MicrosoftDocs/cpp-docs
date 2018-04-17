@@ -52,7 +52,7 @@ These functions, if successful, return a file descriptor to the created file. Ot
 |**errno** setting|Description|
 |---------------------|-----------------|
 |**EACCES**|*filename* specifies an existing read-only file or specifies a directory instead of a file.|
-|`EMFILE`|No more file descriptors are available.|
+|**EMFILE**|No more file descriptors are available.|
 |**ENOENT**|Specified file could not be found.|
 
 If *filename* is NULL, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.

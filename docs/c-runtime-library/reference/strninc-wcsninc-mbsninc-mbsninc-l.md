@@ -62,7 +62,7 @@ Locale to use.
 
 ## Return Value
 
-Each of these routines returns a pointer to *str* after *str* has been incremented by *count* characters or `NULL` if the supplied pointer is `NULL`. If *count* is greater than or equal to the number of characters in *str*, the result is undefined.
+Each of these routines returns a pointer to *str* after *str* has been incremented by *count* characters or **NULL** if the supplied pointer is **NULL**. If *count* is greater than or equal to the number of characters in *str*, the result is undefined.
 
 ## Remarks
 

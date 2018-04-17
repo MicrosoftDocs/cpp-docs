@@ -49,7 +49,7 @@ The `_CrtSetDumpClient` function installs the new application-defined dump funct
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
-The `userPortion` argument is a pointer to the beginning of the user data portion of the memory block and `blockSize` specifies the size of the allocated memory block in bytes. The client block dump function must return `void`. The pointer to the client dump function that is passed to `_CrtSetDumpClient` is of type `_CRT_DUMP_CLIENT`, as defined in Crtdbg.h:
+The *userPortion* argument is a pointer to the beginning of the user data portion of the memory block and *blockSize* specifies the size of the allocated memory block in bytes. The client block dump function must return **void**. The pointer to the client dump function that is passed to `_CrtSetDumpClient` is of type `_CRT_DUMP_CLIENT`, as defined in Crtdbg.h:
 
 ```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );

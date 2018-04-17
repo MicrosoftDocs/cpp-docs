@@ -105,7 +105,7 @@ The `strncat` function appends, at most, the first *count* characters of *strSou
 
 `wcsncat` and `_mbsncat` are wide-character and multibyte-character versions of `strncat`. The string arguments and return value of `wcsncat` are wide-character strings; those of `_mbsncat` are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, these functions have template overloads. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

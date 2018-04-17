@@ -63,13 +63,13 @@ If successful, these functions do not return to the calling process. A return va
 
 |**errno** value|Description|
 |-------------------|-----------------|
-|`E2BIG`|The space that's required for the arguments and the environment settings exceeds 32 KB.|
+|**E2BIG**|The space that's required for the arguments and the environment settings exceeds 32 KB.|
 |**EACCES**|The specified file has a locking or sharing violation.|
 |**EINVAL**|Invalid parameter.|
-|`EMFILE`|Too many files are open. (The specified file must be opened to determine whether it is executable.)|
+|**EMFILE**|Too many files are open. (The specified file must be opened to determine whether it is executable.)|
 |**ENOENT**|The file or path is not found.|
-|`ENOEXEC`|The specified file is not executable or has an invalid executable-file format.|
-|`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, which indicates that the calling process was not allocated correctly.|
+|**ENOEXEC**|The specified file is not executable or has an invalid executable-file format.|
+|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, which indicates that the calling process was not allocated correctly.|
 
 For more information about these return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

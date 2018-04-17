@@ -55,17 +55,17 @@ The size of the buffer.
 
 ## Return Value
 
-Returns *buffer* if successful. A `NULL` pointer indicates an error or end-of-file condition. Use [ferror](ferror.md) or [feof](feof.md) to determine which one has occurred.
+Returns *buffer* if successful. A **NULL** pointer indicates an error or end-of-file condition. Use [ferror](ferror.md) or [feof](feof.md) to determine which one has occurred.
 
 ## Remarks
 
 The `gets_s` function reads a line from the standard input stream `stdin` and stores it in *buffer*. The line consists of all characters up to and including the first newline character ('\n'). `gets_s` then replaces the newline character with a null character ('\0') before returning the line. In contrast, the `fgets_s` function retains the newline character.
 
-If the first character read is the end-of-file character, a null character is stored at the beginning of *buffer* and `NULL` is returned.
+If the first character read is the end-of-file character, a null character is stored at the beginning of *buffer* and **NULL** is returned.
 
 `_getws_s` is a wide-character version of `gets_s`; its argument and return value are wide-character strings.
 
-If *buffer* is `NULL` or *sizeInCharacters* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set errno to `ERANGE`.
+If *buffer* is **NULL** or *sizeInCharacters* is less than or equal to zero, or if the buffer is too small to contain the input line and null terminator, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set errno to **ERANGE**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

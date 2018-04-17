@@ -52,9 +52,9 @@ File mode.
 
 Returns 0 if successful. Returns -1 to indicate an error. On error, **errno** is set to one of these values:
 
-- `EMFILE`, which indicates that no more file descriptors are available.
+- **EMFILE**, which indicates that no more file descriptors are available.
 
-- `ENFILE`, which indicates a system-file-table overflow.
+- **ENFILE**, which indicates a system-file-table overflow.
 
 - **EINVAL**, which indicates that either the array *pfds* is a null pointer or that an invalid value for *textmode* was passed in.
 

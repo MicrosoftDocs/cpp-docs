@@ -39,7 +39,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-`fclose` returns 0 if the stream is successfully closed. Returns `EOF` to indicate an error.
+`fclose` returns 0 if the stream is successfully closed. Returns **EOF** to indicate an error.
 
 ## Remarks
 

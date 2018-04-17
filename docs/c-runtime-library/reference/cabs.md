@@ -39,7 +39,7 @@ Complex number.
 
 ## Return Value
 
-`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets **errno** to `ERANGE`. You can change error handling with [_matherr](matherr.md).
+`_cabs` returns the absolute value of its argument if successful. On overflow, `_cabs` returns `HUGE_VAL` and sets **errno** to **ERANGE**. You can change error handling with [_matherr](matherr.md).
 
 ## Remarks
 

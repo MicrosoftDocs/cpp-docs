@@ -62,11 +62,11 @@ The locale to use.
 
 `strtod` returns the value of the floating-point number, except when the representation would cause an overflow, in which case the function returns +/-`HUGE_VAL`. The sign of `HUGE_VAL` matches the sign of the value that cannot be represented. `strtod` returns 0 if no conversion can be performed or an underflow occurs.
 
-`wcstod` returns values analogously to `strtod`. For both functions, **errno** is set to `ERANGE` if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this and other return codes.
+`wcstod` returns values analogously to `strtod`. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this and other return codes.
 
 ## Remarks
 
-Each function converts the input string *strSource* to a `double`. The `strtod` function converts *strSource* to a double-precision value. `strtod` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. `wcstod` is a wide-character version of `strtod`; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+Each function converts the input string *strSource* to a **double**. The `strtod` function converts *strSource* to a double-precision value. `strtod` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character. `wcstod` is a wide-character version of `strtod`; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -75,9 +75,9 @@ Each function converts the input string *strSource* to a `double`. The `strtod` 
 |`_tcstod`|`strtod`|`strtod`|`wcstod`|
 |`_tcstod_l`|`_strtod_l`|`_strtod_l`|`_wcstod_l`|
 
-The `LC_NUMERIC` category setting of the current locale determines recognition of the radix point character in *strSource*. For more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **LC_NUMERIC** category setting of the current locale determines recognition of the radix point character in *strSource*. For more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; `_strtod_l` is identical to `_strtod_l` except that they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
+If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
 `strtod` expects *strSource* to point to a string of one of the following forms:
 

@@ -85,13 +85,13 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The `_strnset` function sets, at most, the first *count* characters of *str* to *c* (converted to `char`). If *count* is greater than the length of *str*, the length of *str* is used instead of *count*.
+The `_strnset` function sets, at most, the first *count* characters of *str* to *c* (converted to **char**). If *count* is greater than the length of *str*, the length of *str* is used instead of *count*.
 
 `_wcsnset` and `_mbsnset` are wide-character and multibyte-character versions of `_strnset`. The string arguments and return value of `_wcsnset` are wide-character strings; those of `_mbsnset` are multibyte-character strings. These three functions behave identically otherwise.
 
 `_mbsnset` validates its parameters; if *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, `_mbsnset` returns NULL and sets **errno** to **EINVAL**. `_strnset` and `_wcsnset` do not validate their parameters.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 

@@ -45,7 +45,7 @@ Character to be output.
 
 ## Return Value
 
-Returns *c* if successful. If `_putch` fails, it returns `EOF`; if **_putwch** fails, it returns **WEOF**.
+Returns *c* if successful. If `_putch` fails, it returns **EOF**; if **_putwch** fails, it returns **WEOF**.
 
 ## Remarks
 

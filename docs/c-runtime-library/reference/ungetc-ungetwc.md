@@ -47,13 +47,13 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and `ungetc` returns `EOF`; `ungetwc` returns `WEOF`. If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `EOF` or `WEOF` is returned and **errno** is set to **EINVAL**.
+If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and `ungetc` returns **EOF`; **ungetwc` returns **WEOF**. If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The `ungetc` function pushes the character *c* back onto *stream* and clears the end-of-file indicator. The stream must be open for reading. A subsequent read operation on *stream* starts with *c*. An attempt to push `EOF` onto the stream using `ungetc` is ignored.
+The `ungetc` function pushes the character *c* back onto *stream* and clears the end-of-file indicator. The stream must be open for reading. A subsequent read operation on *stream* starts with *c*. An attempt to push **EOF** onto the stream using `ungetc` is ignored.
 
 Characters placed on the stream by `ungetc` may be erased if `fflush`, [fseek](fseek-fseeki64.md), `fsetpos`, or [rewind](rewind.md) is called before the character is read from the stream. The file-position indicator will have the value it had before the characters were pushed back. The external storage corresponding to the stream is unchanged. On a successful `ungetc` call against a text stream, the file-position indicator is unspecified until all the pushed-back characters are read or discarded. On each successful `ungetc` call against a binary stream, the file-position indicator is decremented; if its value was 0 before a call, the value is undefined after the call.
 

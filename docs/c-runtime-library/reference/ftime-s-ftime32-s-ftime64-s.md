@@ -39,7 +39,7 @@ Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.
 
 ## Return Value
 
-Zero if successful, an error code on failure. If *timeptr* is `NULL`, the return value is **EINVAL**.
+Zero if successful, an error code on failure. If *timeptr* is **NULL**, the return value is **EINVAL**.
 
 ## Remarks
 

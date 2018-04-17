@@ -62,7 +62,7 @@ void _invalid_parameter(
 );
 ```
 
-The *expression* argument is a wide string representation of the argument expression that raised the error. The *function* argument is the name of the CRT function that received the invalid argument. The *file* argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value `NULL` unless a debug version of the CRT library is used.
+The *expression* argument is a wide string representation of the argument expression that raised the error. The *function* argument is the name of the CRT function that received the invalid argument. The *file* argument is the name of the CRT source file that contains the function. The *line* argument is the line number in that file. The last argument is reserved. The parameters all have the value **NULL** unless a debug version of the CRT library is used.
 
 ## Requirements
 

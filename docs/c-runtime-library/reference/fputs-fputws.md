@@ -47,7 +47,7 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns a nonnegative value if it is successful. On an error, `fputs` and `fputws` return `EOF`. If *str* or *stream* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and then `fputs` returns `EOF`, and `fputws` returns `WEOF`.
+Each of these functions returns a nonnegative value if it is successful. On an error, `fputs` and `fputws` return **EOF**. If *str* or *stream* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and then `fputs` returns **EOF**, and `fputws` returns **WEOF**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

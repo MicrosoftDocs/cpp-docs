@@ -39,7 +39,7 @@ New client-defined allocation function to hook into the C run-time debug memory 
 
 ## Return Value
 
-Returns the previously defined allocation hook function, or `NULL` if *allocHook* is `NULL`.
+Returns the previously defined allocation hook function, or **NULL** if *allocHook* is **NULL**.
 
 ## Remarks
 
@@ -53,15 +53,15 @@ int YourAllocHook( int allocType, void *userData, size_t size,
                    const unsigned char *filename, int lineNumber);
 ```
 
-The `allocType` argument specifies the type of allocation operation `(_HOOK_ALLOC`, `_HOOK_REALLOC`, and `_HOOK_FREE`) that triggered the call to the allocation's hook function. When the triggering allocation type is `_HOOK_FREE`, *userData* is a pointer to the user data section of the memory block about to be freed. However, when the triggering allocation type is `_HOOK_ALLOC` or `_HOOK_REALLOC`, *userData* is `NULL` because the memory block has not been allocated yet.
+The `allocType` argument specifies the type of allocation operation `(_HOOK_ALLOC`, `_HOOK_REALLOC`, and `_HOOK_FREE`) that triggered the call to the allocation's hook function. When the triggering allocation type is `_HOOK_FREE`, *userData* is a pointer to the user data section of the memory block about to be freed. However, when the triggering allocation type is `_HOOK_ALLOC` or `_HOOK_REALLOC`, *userData* is **NULL** because the memory block has not been allocated yet.
 
 *size* specifies the size of the memory block in bytes, *blockType* indicates the type of the memory block, *requestNumber* is the object allocation order number of the memory block, and, if available, *filename* and `lineNumber` specify the source file name and line number where the triggering allocation operation was initiated.
 
-After the hook function has finished processing, it must return a Boolean value, which tells the main C run-time allocation process how to continue. When the hook function wants the main allocation process to continue as if the hook function had never been called, then the hook function should return `TRUE`. This causes the original triggering allocation operation to be executed. Using this implementation, the hook function can gather and save allocation information for later analysis, without interfering with the current allocation operation or state of the debug heap.
+After the hook function has finished processing, it must return a Boolean value, which tells the main C run-time allocation process how to continue. When the hook function wants the main allocation process to continue as if the hook function had never been called, then the hook function should return **TRUE**. This causes the original triggering allocation operation to be executed. Using this implementation, the hook function can gather and save allocation information for later analysis, without interfering with the current allocation operation or state of the debug heap.
 
-When the hook function wants the main allocation process to continue as if the triggering allocation operation was called and it failed, then the hook function should return `FALSE`. Using this implementation, the hook function can simulate a wide range of memory conditions and debug heap states to test how the application handles each situation.
+When the hook function wants the main allocation process to continue as if the triggering allocation operation was called and it failed, then the hook function should return **FALSE**. Using this implementation, the hook function can simulate a wide range of memory conditions and debug heap states to test how the application handles each situation.
 
-To clear the hook function, pass `NULL` to `_CrtSetAllocHook`.
+To clear the hook function, pass **NULL** to `_CrtSetAllocHook`.
 
 For more information about how `_CrtSetAllocHook` can be used with other memory management functions or how to write your own client-defined hook functions, see [Debug Hook Function Writing](/visualstudio/debugger/debug-hook-function-writing).
 

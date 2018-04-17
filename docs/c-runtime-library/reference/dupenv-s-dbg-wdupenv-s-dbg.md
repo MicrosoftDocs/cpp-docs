@@ -60,18 +60,18 @@ Environment variable name.
 Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
 *filename*<br/>
-Pointer to the name of the source file or `NULL`.
+Pointer to the name of the source file or **NULL**.
 
 *linenumber*<br/>
-Line number in source file or `NULL`.
+Line number in source file or **NULL**.
 
 ## Return Value
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *buffer* or *varname* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
+These functions validate their parameters; if *buffer* or *varname* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
 
-If these functions cannot allocate enough memory, they set *buffer* to `NULL` and *numberOfElements* to 0, and return `ENOMEM`.
+If these functions cannot allocate enough memory, they set *buffer* to **NULL** and *numberOfElements* to 0, and return **ENOMEM**.
 
 ## Remarks
 

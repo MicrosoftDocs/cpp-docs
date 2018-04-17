@@ -39,7 +39,7 @@ File descriptor referring to the open file.
 
 ## Return Value
 
-`_eof` returns 1 if the current position is end of file, or 0 if it is not. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EBADF`, which indicates an invalid file descriptor.
+`_eof` returns 1 if the current position is end of file, or 0 if it is not. A return value of -1 indicates an error; in this case, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EBADF**, which indicates an invalid file descriptor.
 
 ## Remarks
 

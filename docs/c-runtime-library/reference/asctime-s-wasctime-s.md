@@ -68,11 +68,11 @@ Zero if successful. If there is a failure, the invalid parameter handler is invo
 
 |*buffer*|*numberOfElements*|*tmSource*|Return|Value in *buffer*|
 |--------------|------------------------|----------|------------|-----------------------|
-|`NULL`|Any|Any|**EINVAL**|Not modified|
-|Not `NULL` (points to valid memory)|0|Any|**EINVAL**|Not modified|
-|Not `NULL`|0< size < 26|Any|**EINVAL**|Empty string|
-|Not `NULL`|>= 26|`NULL`|**EINVAL**|Empty string|
-|Not `NULL`|>= 26|Invalid time structure or out of range values for components of the time|**EINVAL**|Empty string|
+|**NULL**|Any|Any|**EINVAL**|Not modified|
+|Not **NULL** (points to valid memory)|0|Any|**EINVAL**|Not modified|
+|Not **NULL**|0< size < 26|Any|**EINVAL**|Empty string|
+|Not **NULL**|>= 26|**NULL**|**EINVAL**|Empty string|
+|Not **NULL**|>= 26|Invalid time structure or out of range values for components of the time|**EINVAL**|Empty string|
 
 > [!NOTE]
 > Error conditions for `wasctime_s` are similar to `asctime_s` with the exception that the size limit is measured in words.
@@ -116,7 +116,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 ## Security
 
-If the buffer pointer is not `NULL` and the pointer does not point to a valid buffer, the function will overwrite whatever is at the location. This can also result in an access violation.
+If the buffer pointer is not **NULL** and the pointer does not point to a valid buffer, the function will overwrite whatever is at the location. This can also result in an access violation.
 
 A [buffer overrun](http://msdn.microsoft.com/library/windows/desktop/ms717795) can occur if the size argument passed in is greater than the actual size of the buffer.
 

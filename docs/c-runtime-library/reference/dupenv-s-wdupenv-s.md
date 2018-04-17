@@ -57,9 +57,9 @@ Environment variable name.
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *buffer* or *varname* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
+These functions validate their parameters; if *buffer* or *varname* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
 
-If these functions cannot allocate enough memory, they set *buffer* to `NULL` and *numberOfElements* to 0, and return `ENOMEM`.
+If these functions cannot allocate enough memory, they set *buffer* to **NULL** and *numberOfElements* to 0, and return **ENOMEM**.
 
 ## Remarks
 
@@ -68,9 +68,9 @@ The `_dupenv_s` function searches the list of environment variables for *varname
 > [!NOTE]
 > It is the calling program's responsibility to free the memory by calling [free](free.md).
 
-If the variable is not found, then *buffer* is set to `NULL`, *numberOfElements* is set to 0, and the return value is 0 because this situation is not considered to be an error condition.
+If the variable is not found, then *buffer* is set to **NULL**, *numberOfElements* is set to 0, and the return value is 0 because this situation is not considered to be an error condition.
 
-If you are not interested in the size of the buffer you can pass `NULL` for *numberOfElements*.
+If you are not interested in the size of the buffer you can pass **NULL** for *numberOfElements*.
 
 `_dupenv_s` is not case sensitive in the Windows operating system. `_dupenv_s` uses the copy of the environment pointed to by the global variable `_environ` to access the environment. See the Remarks in [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) for a discussion of `_environ`.
 

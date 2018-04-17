@@ -45,7 +45,7 @@ Path for a new directory.
 
 Each of these functions returns the value 0 if the new directory was created. On an error, the function returns -1 and sets **errno** as follows.
 
-`EEXIST` Directory was not created because *dirname* is the name of an existing file, directory, or device.
+**EEXIST** Directory was not created because *dirname* is the name of an existing file, directory, or device.
 
 **ENOENT** Path was not found.
 

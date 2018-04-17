@@ -62,7 +62,7 @@ The return value indicates the relationship between the buffers.
 
 ## Remarks
 
-Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as `unsigned char` for `memcmp`, and as `wchar_t` for `wmemcmp`.
+Compares the first *count* characters of *buffer1* and *buffer2* and returns a value that indicates their relationship. The sign of a non-zero return value is the sign of the difference between the first differing pair of values in the buffers. The values are interpreted as **unsigned** **char** for `memcmp`, and as **wchar_t** for `wmemcmp`.
 
 ## Requirements
 

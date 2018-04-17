@@ -75,7 +75,7 @@ The versions of these functions with the **_l** suffix are identical except that
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
 
-If *format* or *argument* are `NULL`, or of the format string contains invalid formatting characters, `_printf_p` and `_wprintf_p` functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
+If *format* or *argument* are **NULL**, or of the format string contains invalid formatting characters, `_printf_p` and `_wprintf_p` functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

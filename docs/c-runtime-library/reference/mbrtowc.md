@@ -38,7 +38,7 @@ size_t mbrtowc(
 ### Parameters
 
 *wchar*<br/>
-Address of a wide character to receive the converted wide character string (type `wchar_t`). This value can be a null pointer if no return wide character is required.
+Address of a wide character to receive the converted wide character string (type **wchar_t**). This value can be a null pointer if no return wide character is required.
 
 *mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).

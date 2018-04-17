@@ -63,9 +63,9 @@ Zero if successful; an error code on failure
 
 |*dest*|*numberOfElements*|*src*|Return value|Contents of *dest*|
 |------------|------------------------|-----------|------------------|------------------------|
-|`NULL`|any|any|**EINVAL**|not modified|
-|any|any|`NULL`|**EINVAL**|not modified|
-|any|< *count*|any|`ERANGE`|not modified|
+|**NULL**|any|any|**EINVAL**|not modified|
+|any|any|**NULL**|**EINVAL**|not modified|
+|any|< *count*|any|**ERANGE**|not modified|
 
 ## Remarks
 

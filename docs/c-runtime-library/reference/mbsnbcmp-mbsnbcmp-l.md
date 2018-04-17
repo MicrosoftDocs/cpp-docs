@@ -72,7 +72,7 @@ The `_mbsnbcmp` functions compare at most the first *count* bytes in *string1* a
 
 `_mbsnbcmp` resembles `_mbsncmp`, except that `_mbsncmp` compares strings by characters rather than by bytes.
 
-The output value is affected by the `LC_CTYPE` category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The `_mbsnbcmp` function uses the current locale for this locale-dependent behavior. The `_mbsnbcmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the **LC_CTYPE** category setting of the locale, which specifies the lead bytes and trailing bytes of multibyte characters. For more information, see [setlocale](setlocale-wsetlocale.md). The `_mbsnbcmp` function uses the current locale for this locale-dependent behavior. The `_mbsnbcmp_l` function is identical except that it uses the *locale* parameter instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If either *string1* or *string2* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return `_NLSCMPERROR` and **errno** is set to **EINVAL**.
 

@@ -39,7 +39,7 @@ A pointer to an integer to be filled with the current default mode: `_O_TEXT` or
 
 ## Return Value
 
-Returns zero if successful; an error code on failure. If *pmode* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
+Returns zero if successful; an error code on failure. If *pmode* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **EINVAL**.
 
 ## Remarks
 

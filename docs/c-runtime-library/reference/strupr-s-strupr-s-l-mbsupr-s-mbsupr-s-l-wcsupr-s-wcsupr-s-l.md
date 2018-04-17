@@ -101,13 +101,13 @@ The locale to use.
 
 Zero if successful; a non-zero error code on failure.
 
-These functions validate their parameters. If *str* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**. If *numberOfElements* is less than the length of the string, the functions return `ERANGE` and set **errno** to `ERANGE`.
+These functions validate their parameters. If *str* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**. If *numberOfElements* is less than the length of the string, the functions return **ERANGE** and set **errno** to **ERANGE**.
 
 ## Remarks
 
 The `_strupr_s` function converts, in place, each lowercase letter in *str* to uppercase. `_wcsupr_s` is the wide-character version of `_strupr_s`. `_mbsupr_s` is the multi-byte character version of `_strupr_s`.
 
-The conversion is determined by the `LC_CTYPE` category setting of the locale. Other characters are not affected. For more information on `LC_CTYPE`, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale; the visions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The conversion is determined by the **LC_CTYPE** category setting of the locale. Other characters are not affected. For more information on **LC_CTYPE**, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale; the visions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

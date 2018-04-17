@@ -85,14 +85,14 @@ Zero if successful; an error code on failure. If any of the following conditions
 
 |value|buffer|size|radix|Return|
 |-----------|------------|----------------------|-----------|------------|
-|any|`NULL`|any|any|**EINVAL**|
+|any|**NULL**|any|any|**EINVAL**|
 |any|any|<=0|any|**EINVAL**|
 |any|any|<= length of the result string required|any|**EINVAL**|
 |any|any|any|*radix* < 2 or *radix* > 36|**EINVAL**|
 
 ### Security issues
 
-These functions can generate an access violation if *buffer* does not point to valid memory and is not `NULL`, or if the length of the buffer is not long enough to hold the result string.
+These functions can generate an access violation if *buffer* does not point to valid memory and is not **NULL**, or if the length of the buffer is not long enough to hold the result string.
 
 ## Remarks
 

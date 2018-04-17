@@ -86,29 +86,29 @@ The locale to use.
 
 ## Return Value
 
-Returns a pointer to the next token found in *str*. Returns `NULL` when no more tokens are found. Each call modifies *str* by substituting a `NULL` character for the first delimiter that occurs after the returned token.
+Returns a pointer to the next token found in *str*. Returns **NULL** when no more tokens are found. Each call modifies *str* by substituting a **NULL** character for the first delimiter that occurs after the returned token.
 
 ### Error Conditions
 
 |*str*|*delimiters*|*context*|Return value|**errno**|
 |----------------|------------------|---------------|------------------|-------------|
-|`NULL`|any|pointer to a null pointer|`NULL`|**EINVAL**|
-|any|`NULL`|any|`NULL`|**EINVAL**|
-|any|any|`NULL`|`NULL`|**EINVAL**|
+|**NULL**|any|pointer to a null pointer|**NULL**|**EINVAL**|
+|any|**NULL**|any|**NULL**|**EINVAL**|
+|any|any|**NULL**|**NULL**|**EINVAL**|
 
-If *str* is `NULL` but *context* is a pointer to a valid context pointer, there is no error.
+If *str* is **NULL** but *context* is a pointer to a valid context pointer, there is no error.
 
 ## Remarks
 
 The `strtok_s` family of functions finds the next token in *str*. The set of characters in *delimiters* specifies possible delimiters of the token to be found in *str* on the current call. `wcstok_s` and `_mbstok_s` are wide-character and multibyte-character versions of `strtok_s`. The arguments and return values of `wcstok_s` and `_wcstok_s_l` are wide-character strings; those of `_mbstok_s` and `_mbstok_s_l` are multibyte-character strings. These functions behave identically otherwise.
 
-This function validates its parameters. If an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return `NULL`.
+This function validates its parameters. If an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **NULL**.
 
-On the first call to `strtok_s` the function skips leading delimiters and returns a pointer to the first token in *str*, terminating the token with a null character. More tokens can be broken out of the remainder of *str* by a series of calls to `strtok_s`. Each call to `strtok_s` modifies *str* by inserting a null character after the token returned by that call. The *context* pointer keeps track of which string is being read and where in the string the next token is to be read. To read the next token from *str*, call `strtok_s` with a `NULL` value for the *str* argument, and pass the same *context* parameter. The `NULL` *str* argument causes `strtok_s` to search for the next token in the modified *str*. The *delimiters* argument can take any value from one call to the next so that the set of delimiters may vary.
+On the first call to `strtok_s` the function skips leading delimiters and returns a pointer to the first token in *str*, terminating the token with a null character. More tokens can be broken out of the remainder of *str* by a series of calls to `strtok_s`. Each call to `strtok_s` modifies *str* by inserting a null character after the token returned by that call. The *context* pointer keeps track of which string is being read and where in the string the next token is to be read. To read the next token from *str*, call `strtok_s` with a **NULL** value for the *str* argument, and pass the same *context* parameter. The **NULL** *str* argument causes `strtok_s` to search for the next token in the modified *str*. The *delimiters* argument can take any value from one call to the next so that the set of delimiters may vary.
 
 Since the *context* parameter supersedes the static buffers used in `strtok` and `_strtok_l`, it is possible to parse two strings simultaneously in the same thread.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except that they instead use the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except that they instead use the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 

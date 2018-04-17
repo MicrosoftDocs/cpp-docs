@@ -43,7 +43,7 @@ None.
 
 ## Remarks
 
-The `_freea` function deallocates a memory block (*memblock*) that was previously allocated by a call to [_malloca](malloca.md). `_freea` checks to see if the memory was allocated on the heap or the stack. If it was allocated on the stack, `_freea` does nothing. If it was allocated on the heap, the number of freed bytes is equivalent to the number of bytes requested when the block was allocated. If *memblock* is `NULL`, the pointer is ignored and `_freea` immediately returns. Attempting to free an invalid pointer (a pointer to a memory block that was not allocated by `_malloca`) might affect subsequent allocation requests and cause errors.
+The `_freea` function deallocates a memory block (*memblock*) that was previously allocated by a call to [_malloca](malloca.md). `_freea` checks to see if the memory was allocated on the heap or the stack. If it was allocated on the stack, `_freea` does nothing. If it was allocated on the heap, the number of freed bytes is equivalent to the number of bytes requested when the block was allocated. If *memblock* is **NULL**, the pointer is ignored and `_freea` immediately returns. Attempting to free an invalid pointer (a pointer to a memory block that was not allocated by `_malloca`) might affect subsequent allocation requests and cause errors.
 
 `_freea` calls `free` internally if it finds that the memory is allocated on the heap. Whether the memory is on the heap or the stack is determined by a marker placed in memory at the address immediately preceding the allocated memory.
 

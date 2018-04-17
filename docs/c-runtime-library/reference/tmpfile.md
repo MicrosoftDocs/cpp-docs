@@ -32,13 +32,13 @@ FILE *tmpfile( void );
 
 ## Return Value
 
-If successful, `tmpfile` returns a stream pointer. Otherwise, it returns a `NULL` pointer.
+If successful, `tmpfile` returns a stream pointer. Otherwise, it returns a **NULL** pointer.
 
 ## Remarks
 
 The `tmpfile` function creates a temporary file and returns a pointer to that stream. The temporary file is created in the root directory. To create a temporary file in a directory other than the root, use [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) or [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) in conjunction with [fopen](fopen-wfopen.md).
 
-If the file cannot be opened, `tmpfile` returns a `NULL` pointer. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.
+If the file cannot be opened, `tmpfile` returns a **NULL** pointer. This temporary file is automatically deleted when the file is closed, when the program terminates normally, or when `_rmtmp` is called, assuming that the current working directory does not change. The temporary file is opened in `w+b` (binary read/write) mode.
 
 Failure can occur if you attempt more than TMP_MAX (see STDIO.H) calls with `tmpfile`.
 

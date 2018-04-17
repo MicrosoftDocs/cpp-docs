@@ -97,9 +97,9 @@ The locale to use.
 
 `_snprintf_s` returns the number of characters stored in *buffer*, not counting the terminating null character. `_snwprintf_s` returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
 
-If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to `ERANGE`, and return -1.
+If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
 
-If *buffer* or *format* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

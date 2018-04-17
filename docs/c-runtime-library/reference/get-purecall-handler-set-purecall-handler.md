@@ -41,7 +41,7 @@ The function to be called when a pure virtual function is called. A `_purecall_h
 
 ## Return Value
 
-The previous `_purecall_handler`. Returns `nullptr` if there was no previous handler.
+The previous `_purecall_handler`. Returns **nullptr** if there was no previous handler.
 
 ## Remarks
 
@@ -51,7 +51,7 @@ A call to a pure virtual function is an error because it has no implementation. 
 
 Because there is only one `_purecall_handler` for each process, when you call `_set_purecall_handler` it immediately impacts all threads. The last caller on any thread sets the handler.
 
-To restore the default behavior, call `_set_purecall_handler` by using a `nullptr` argument.
+To restore the default behavior, call `_set_purecall_handler` by using a **nullptr** argument.
 
 ## Requirements
 

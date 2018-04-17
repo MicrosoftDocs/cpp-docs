@@ -39,7 +39,7 @@ A pointer to a string to be filled with the current value of the `_wpgmptr` vari
 
 ## Return Value
 
-Returns zero if successful; an error code on failure. If *pValue* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
+Returns zero if successful; an error code on failure. If *pValue* is **NULL**, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 

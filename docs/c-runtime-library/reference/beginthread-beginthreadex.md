@@ -66,20 +66,20 @@ Argument list to be passed to a new thread, or NULL.
 Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is NULL, the handle cannot be inherited. Must be NULL for Windows 95 applications.
 
 *initflag*<br/>
-Flags that control the initial state of a new thread. Set *initflag* to `0` to run immediately, or to `CREATE_SUSPENDED` to create the thread in a suspended state; use [ResumeThread](http://msdn.microsoft.com/library/windows/desktop/ms685086.aspx) to execute the thread. Set *initflag* to `STACK_SIZE_PARAM_IS_A_RESERVATION` flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
+Flags that control the initial state of a new thread. Set *initflag* to 0 to run immediately, or to **CREATE_SUSPENDED** to create the thread in a suspended state; use [ResumeThread](http://msdn.microsoft.com/library/windows/desktop/ms685086.aspx) to execute the thread. Set *initflag* to **STACK_SIZE_PARAM_IS_A_RESERVATION** flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
 
 *thrdaddr*<br/>
 Points to a 32-bit variable that receives the thread identifier. If it's NULL, it's not used.
 
 ## Return Value
 
-If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, `_beginthread` might not return a valid handle. (See the discussion in the Remarks section.) On an error, `_beginthread` returns -1L, and **errno** is set to `EAGAIN` if there are too many threads, to **EINVAL** if the argument is invalid or the stack size is incorrect, or to **EACCES** if there are insufficient resources (such as memory). On an error, `_beginthreadex` returns 0, and **errno** and `_doserrno` are set.
+If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, `_beginthread` might not return a valid handle. (See the discussion in the Remarks section.) On an error, `_beginthread` returns -1L, and **errno** is set to **EAGAIN** if there are too many threads, to **EINVAL** if the argument is invalid or the stack size is incorrect, or to **EACCES** if there are insufficient resources (such as memory). On an error, `_beginthreadex` returns 0, and **errno** and `_doserrno` are set.
 
 If *start_address* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-For more information about `uintptr_t`, see [Standard Types](../../c-runtime-library/standard-types.md).
+For more information about **uintptr_t**, see [Standard Types](../../c-runtime-library/standard-types.md).
 
 ## Remarks
 

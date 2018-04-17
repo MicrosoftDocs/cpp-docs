@@ -61,12 +61,12 @@ The *category* argument specifies the parts of the locale-specific behavior that
 |-|-|
 `LC_ALL`|All categories, as listed below.
 `LC_COLLATE`|The `strcoll`, `_stricoll`, `wcscoll`, `_wcsicoll`, `strxfrm`, `_strncoll`, `_strnicoll`, `_wcsncoll`, `_wcsnicoll`, and `wcsxfrm` functions.
-`LC_CTYPE`|The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected).
+**LC_CTYPE**|The character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected).
 `LC_MONETARY`|Monetary-formatting information returned by the `localeconv` function.
-`LC_NUMERIC`|Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, `LC_NUMERIC` sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
+**LC_NUMERIC**|Decimal-point character for the formatted output routines (such as `printf`), for the data-conversion routines, and for the non-monetary formatting information returned by `localeconv`. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
 `LC_TIME`|The `strftime` and `wcsftime` functions.
 
-This function validates the *category* and *locale* parameters. If the category parameter is not one of the values given in the previous table or if *locale* is `NULL`, the function returns `NULL`.
+This function validates the *category* and *locale* parameters. If the category parameter is not one of the values given in the previous table or if *locale* is **NULL**, the function returns **NULL**.
 
 The *locale* argument is a pointer to a string that specifies the locale. For information about the format of the *locale* argument, see [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
 

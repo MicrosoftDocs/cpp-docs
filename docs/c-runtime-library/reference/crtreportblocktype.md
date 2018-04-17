@@ -39,7 +39,7 @@ Pointer to a valid debug heap block.
 
 ## Return Value
 
-When passed a valid debug heap pointer, the `_CrtReportBlockType` function returns the block type and subtype in the form of an `int`. When passed an invalid pointer, the function returns -1.
+When passed a valid debug heap pointer, the `_CrtReportBlockType` function returns the block type and subtype in the form of an **int**. When passed an invalid pointer, the function returns -1.
 
 ## Remarks
 

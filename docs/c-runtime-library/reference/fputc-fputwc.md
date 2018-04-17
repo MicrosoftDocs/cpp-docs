@@ -47,7 +47,7 @@ Pointer to `FILE` structure.
 
 ## Return Value
 
-Each of these functions returns the character written. For `fputc`, a return value of `EOF` indicates an error. For `fputwc`, a return value of `WEOF` indicates an error. If *stream* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` and set **errno** to **EINVAL**.
+Each of these functions returns the character written. For `fputc`, a return value of **EOF** indicates an error. For `fputwc`, a return value of **WEOF** indicates an error. If *stream* is **NULL**, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** and set **errno** to **EINVAL**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

@@ -47,21 +47,21 @@ Length in bytes of each element.
 
 ## Return Value
 
-`_recalloc` returns a `void` pointer to the reallocated (and possibly moved) memory block.
+`_recalloc` returns a **void** pointer to the reallocated (and possibly moved) memory block.
 
-If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and `NULL` is returned.
+If there is not enough available memory to expand the block to the given size, the original block is left unchanged, and **NULL** is returned.
 
-If the requested size is zero, then the block pointed to by *memblock* is freed; the return value is `NULL`, and *memblock* is left pointing at a freed block.
+If the requested size is zero, then the block pointed to by *memblock* is freed; the return value is **NULL**, and *memblock* is left pointing at a freed block.
 
-The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than `void`, use a type cast on the return value.
+The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **void**, use a type cast on the return value.
 
 ## Remarks
 
-The `_recalloc` function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is `NULL`, `_recalloc` behaves the same way as [calloc](calloc.md) and allocates a new block of *number* * *size* bytes. Each element is initialized to 0. If *memblock* is not `NULL`, it should be a pointer returned by a previous call to `calloc`, [malloc](malloc.md), or [realloc](realloc.md).
+The `_recalloc` function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is **NULL**, `_recalloc` behaves the same way as [calloc](calloc.md) and allocates a new block of *number* * *size* bytes. Each element is initialized to 0. If *memblock* is not **NULL**, it should be a pointer returned by a previous call to `calloc`, [malloc](malloc.md), or [realloc](realloc.md).
 
 Because the new block can be in a new memory location, the pointer returned by `_recalloc` is not guaranteed to be the pointer passed through the *memblock* argument.
 
-`_recalloc` sets **errno** to `ENOMEM` if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+`_recalloc` sets **errno** to **ENOMEM** if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 `recalloc` calls `realloc` in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, `realloc` is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, `realloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `_recalloc` fails to allocate memory, `realloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call
 

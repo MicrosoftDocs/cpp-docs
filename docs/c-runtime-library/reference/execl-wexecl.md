@@ -58,13 +58,13 @@ If successful, these functions do not return to the calling process. A return va
 
 |errno value|Description|
 |-----------------|-----------------|
-|`E2BIG`|The space required for the arguments and environment settings exceeds 32 KB.|
+|**E2BIG**|The space required for the arguments and environment settings exceeds 32 KB.|
 |**EACCES**|The specified file has a locking or sharing violation.|
 |**EINVAL**|Invalid parameter (one or more of the parameters was a null pointer or empty string).|
-|`EMFILE`|Too many files open (the specified file must be opened to determine whether it is executable).|
+|**EMFILE**|Too many files open (the specified file must be opened to determine whether it is executable).|
 |**ENOENT**|The file or path is not found.|
-|`ENOEXEC`|The specified file is not executable or has an invalid executable-file format.|
-|`ENOMEM`|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|
+|**ENOEXEC**|The specified file is not executable or has an invalid executable-file format.|
+|**ENOMEM**|Not enough memory is available to execute the new process; the available memory has been corrupted; or an invalid block exists, indicating that the calling process was not allocated properly.|
 
 ## Remarks
 

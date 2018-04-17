@@ -48,7 +48,7 @@ Null-terminated source string.
 
 ## Return Value
 
-Each of these functions returns a pointer to the storage location for the copied string or `NULL` if storage cannot be allocated.
+Each of these functions returns a pointer to the storage location for the copied string or **NULL** if storage cannot be allocated.
 
 ## Remarks
 

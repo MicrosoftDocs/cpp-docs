@@ -72,7 +72,7 @@ Locale to use.
 
 ## Return Value
 
-`_mbsnbcnt` and `_mbsnbcnt_l` return the number of bytes found in the first *count* of multibyte characters of *str*. `_mbsnccnt` and `_mbsnccnt_l` return the number of characters found in the first *count* of bytes of *str*. If a NULL character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the NULL character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type `int` rather than `size_t`.
+`_mbsnbcnt` and `_mbsnbcnt_l` return the number of bytes found in the first *count* of multibyte characters of *str*. `_mbsnccnt` and `_mbsnccnt_l` return the number of characters found in the first *count* of bytes of *str*. If a NULL character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the NULL character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type **int** rather than **size_t**.
 
 `_strncnt` returns the number of characters in the first *count* bytes of the single-byte string *str*. `_wcsncnt` returns the number of characters in the first *count* wide characters of the wide-character string *str*.
 
@@ -84,7 +84,7 @@ Locale to use.
 
 If *str* is a null pointer or is *count* is 0, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), **errno** is set to **EINVAL**, and the function returns 0.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 

@@ -73,28 +73,28 @@ errno_t _wsplitpath_s(
 Full path.
 
 *drive*<br/>
-Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
+Drive letter, followed by a colon (`:`). You can pass **NULL** for this parameter if you do not need the drive letter.
 
 *driveNumberOfElements*<br/>
-The size of the *drive* buffer in single-byte or wide characters. If *drive* is `NULL`, this value must be 0.
+The size of the *drive* buffer in single-byte or wide characters. If *drive* is **NULL**, this value must be 0.
 
 *dir*<br/>
-Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
+Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass **NULL** for this parameter if you do not need the directory path.
 
 *dirNumberOfElements*<br/>
-The size of the *dir* buffer in single-byte or wide characters. If *dir* is `NULL`, this value must be 0.
+The size of the *dir* buffer in single-byte or wide characters. If *dir* is **NULL**, this value must be 0.
 
 *fname*<br/>
-Base filename (without extension). You can pass `NULL` for this parameter if you do not need the filename.
+Base filename (without extension). You can pass **NULL** for this parameter if you do not need the filename.
 
 *nameNumberOfElements*<br/>
-The size of the *fname* buffer in single-byte or wide characters. If *fname* is `NULL`, this value must be 0.
+The size of the *fname* buffer in single-byte or wide characters. If *fname* is **NULL**, this value must be 0.
 
 *ext*<br/>
-Filename extension, including leading period (**.**).You can pass `NULL` for this parameter if you do not need the filename extension.
+Filename extension, including leading period (**.**).You can pass **NULL** for this parameter if you do not need the filename extension.
 
 *extNumberOfElements*<br/>
-The size of *ext* buffer in single-byte or wide characters. If *ext* is `NULL`, this value must be 0.
+The size of *ext* buffer in single-byte or wide characters. If *ext* is **NULL**, this value must be 0.
 
 ## Return Value
 
@@ -104,19 +104,19 @@ Zero if successful; an error code on failure.
 
 |Condition|Return Value|
 |---------------|------------------|
-|*path* is `NULL`|**EINVAL**|
-|*drive* is `NULL`, *driveNumberOfElements* is non-zero|**EINVAL**|
-|*drive* is non-`NULL`, *driveNumberOfElements* is zero|**EINVAL**|
-|*dir* is `NULL`, *dirNumberOfElements* is non-zero|**EINVAL**|
-|*dir* is non-`NULL`, *dirNumberOfElements* is zero|**EINVAL**|
-|*fname* is `NULL`, *nameNumberOfElements* is non-zero|**EINVAL**|
-|*fname* is non-`NULL`, *nameNumberOfElements* is zero|**EINVAL**|
-|*ext* is `NULL`, *extNumberOfElements* is non-zero|**EINVAL**|
-|*ext* is non-`NULL`, *extNumberOfElements* is zero|**EINVAL**|
+|*path* is **NULL**|**EINVAL**|
+|*drive* is **NULL**, *driveNumberOfElements* is non-zero|**EINVAL**|
+|*drive* is non-**NULL**, *driveNumberOfElements* is zero|**EINVAL**|
+|*dir* is **NULL**, *dirNumberOfElements* is non-zero|**EINVAL**|
+|*dir* is non-**NULL**, *dirNumberOfElements* is zero|**EINVAL**|
+|*fname* is **NULL**, *nameNumberOfElements* is non-zero|**EINVAL**|
+|*fname* is non-**NULL**, *nameNumberOfElements* is zero|**EINVAL**|
+|*ext* is **NULL**, *extNumberOfElements* is non-zero|**EINVAL**|
+|*ext* is non-**NULL**, *extNumberOfElements* is zero|**EINVAL**|
 
 If any of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
-If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set **errno** to `ERANGE`, and return `ERANGE`.
+If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set **errno** to **ERANGE**, and return **ERANGE**.
 
 ## Remarks
 

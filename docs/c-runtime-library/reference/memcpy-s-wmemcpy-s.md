@@ -64,15 +64,15 @@ Zero if successful; an error code on failure.
 |*dest*|*destSize*|*src*|*count*|Return value|Contents of *dest*|
 |------------|----------------|-----------|---|------------------|------------------------|
 |any|any|any|0|0|Not modified|
-|`NULL`|any|any|non-zero|**EINVAL**|Not modified|
-|any|any|`NULL`|non-zero|**EINVAL**|*dest* is zeroed out|
-|any|< *count*|any|non-zero|`ERANGE`|*dest* is zeroed out|
+|**NULL**|any|any|non-zero|**EINVAL**|Not modified|
+|any|any|**NULL**|non-zero|**EINVAL**|*dest* is zeroed out|
+|any|< *count*|any|non-zero|**ERANGE**|*dest* is zeroed out|
 
 ## Remarks
 
 `memcpy_s` copies *count* bytes from *src* to *dest*; `wmemcpy_s` copies *count* wide characters (two bytes). If the source and destination overlap, the behavior of `memcpy_s` is undefined. Use `memmove_s` to handle overlapping regions.
 
-These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** or `ERANGE` and set **errno** to the return value.
+These functions validate their parameters. If *count* is non-zero and *dest* or *src* is a null pointer, or *destSize* is smaller than *count*, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** or **ERANGE** and set **errno** to the return value.
 
 ## Requirements
 

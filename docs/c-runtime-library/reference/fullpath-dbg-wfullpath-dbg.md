@@ -48,26 +48,26 @@ wchar_t *_wfullpath_dbg(
 ### Parameters
 
 *absPath*<br/>
-Pointer to a buffer containing the absolute or full path name, or `NULL`.
+Pointer to a buffer containing the absolute or full path name, or **NULL**.
 
 *relPath*<br/>
 Relative path name.
 
 *maxLength*<br/>
-Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (**wchar_t**) for `_wfullpath`.
 
 *blockType*<br/>
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
 *filename*<br/>
-Pointer to the name of the source file that requested allocation operation or `NULL`.
+Pointer to the name of the source file that requested allocation operation or **NULL**.
 
 *linenumber*<br/>
-Line number in the source file where the allocation operation was requested or `NULL`.
+Line number in the source file where the allocation operation was requested or **NULL**.
 
 ## Return Value
 
-Each function returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*) the function returns `NULL`.
+Each function returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*) the function returns **NULL**.
 
 ## Remarks
 

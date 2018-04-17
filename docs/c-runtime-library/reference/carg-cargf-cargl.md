@@ -55,7 +55,7 @@ The argument (also known as the phase) of *z*. The result is in the interval [-Ï
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `carg` that take `_Fcomplex` or `_Lcomplex` values, and return `float` or `long double` values. In a C program, `carg` always takes a `_Dcomplex` value and returns a `double` value.
+Because C++ allows overloading, you can call overloads of `carg` that take `_Fcomplex` or `_Lcomplex` values, and return **float** or **long** **double** values. In a C program, `carg` always takes a `_Dcomplex` value and returns a **double** value.
 
 ## Requirements
 

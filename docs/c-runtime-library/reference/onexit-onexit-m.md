@@ -42,7 +42,7 @@ Pointer to a function to be called at exit.
 
 ## Return Value
 
-`_onexit` returns a pointer to the function if successful or `NULL` if there is no space to store the function pointer.
+`_onexit` returns a pointer to the function if successful or **NULL** if there is no space to store the function pointer.
 
 ## Remarks
 

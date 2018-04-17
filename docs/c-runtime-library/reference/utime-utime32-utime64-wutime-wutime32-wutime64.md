@@ -69,7 +69,7 @@ Each of these functions returns 0 if the file-modification time was changed. A r
 |-|-|
 **EACCES**|Path specifies directory or read-only file
 **EINVAL**|Invalid *times* argument
-`EMFILE`|Too many open files (the file must be opened to change its modification time)
+**EMFILE**|Too many open files (the file must be opened to change its modification time)
 **ENOENT**|Path or filename not found
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
@@ -78,7 +78,7 @@ The date can be changed for a file if the change date is after midnight, January
 
 ## Remarks
 
-The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If *times* is a `NULL` pointer, the modification time is set to the current local time. Otherwise, *times* must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
+The `_utime` function sets the modification time for the file specified by *filename**.* The process must have write access to the file in order to change the time. In the Windows operating system, you can change the access time and the modification time in the `_utimbuf` structure. If *times* is a **NULL** pointer, the modification time is set to the current local time. Otherwise, *times* must point to a structure of type `_utimbuf`, defined in SYS\UTIME.H.
 
 The `_utimbuf` structure stores file access and modification times used by `_utime` to change file-modification dates. The structure has the following fields, which are both of type `time_t`:
 

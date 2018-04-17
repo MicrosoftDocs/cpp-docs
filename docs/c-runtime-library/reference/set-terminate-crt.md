@@ -45,7 +45,7 @@ The `set_terminate` function installs *termFunction* as the function called by `
 
 In a multithreaded environment, terminate functions are maintained separately for each thread. Each new thread needs to install its own terminate function. Thus, each thread is in charge of its own termination handling.
 
-The `terminate_function` type is defined in EH.H as a pointer to a user-defined termination function, *termFunction* that returns `void`. Your custom function *termFunction* can take no arguments and should not return to its caller. If it does, [abort](abort.md) is called. An exception may not be thrown from within *termFunction*.
+The `terminate_function` type is defined in EH.H as a pointer to a user-defined termination function, *termFunction* that returns **void**. Your custom function *termFunction* can take no arguments and should not return to its caller. If it does, [abort](abort.md) is called. An exception may not be thrown from within *termFunction*.
 
 ```cpp
 typedef void ( *terminate_function )( );

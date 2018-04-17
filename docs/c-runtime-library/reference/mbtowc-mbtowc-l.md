@@ -43,7 +43,7 @@ int _mbtowc_l(
 ### Parameters
 
 *wchar*<br/>
-Address of a wide character (type `wchar_t`).
+Address of a wide character (type **wchar_t**).
 
 *mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).

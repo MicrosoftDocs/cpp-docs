@@ -63,9 +63,9 @@ The locale to use.
 
 ## Return Value
 
-The number of fields that were successfully converted and assigned. The return value does not include fields that were read but not assigned. The return value is `EOF` for an attempt to read at end of file. This can occur when keyboard input is redirected at the operating-system command-line level. A return value of 0 means that no fields were assigned.
+The number of fields that were successfully converted and assigned. The return value does not include fields that were read but not assigned. The return value is **EOF** for an attempt to read at end of file. This can occur when keyboard input is redirected at the operating-system command-line level. A return value of 0 means that no fields were assigned.
 
-These functions validate their parameters. If *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and **errno** is set to **EINVAL**.
+These functions validate their parameters. If *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EOF** and **errno** is set to **EINVAL**.
 
 ## Remarks
 
@@ -74,7 +74,7 @@ The `_cscanf_s` function reads data directly from the console into the locations
 Like other secure versions of functions in the `scanf` family, `_cscanf_s` and `_cswscanf_s` require size arguments for the type field characters `c`, `C`, `s`, `S`, and `[`. For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
->  The size parameter is of type `unsigned`, not `size_t`.
+>  The size parameter is of type **unsigned**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

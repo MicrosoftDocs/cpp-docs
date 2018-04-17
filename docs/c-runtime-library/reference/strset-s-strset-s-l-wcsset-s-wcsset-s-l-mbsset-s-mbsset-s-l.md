@@ -87,9 +87,9 @@ These functions validate their arguments. If *str* is a null pointer, or the *nu
 
 ## Remarks
 
-The `_strset_s` function sets all the characters of *str* to *c* (converted to `char`), except the terminating null character. `_wcsset_s` and `_mbsset_s` are wide-character and multibyte-character versions of `_strset_s`. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The `_strset_s` function sets all the characters of *str* to *c* (converted to **char**), except the terminating null character. `_wcsset_s` and `_mbsset_s` are wide-character and multibyte-character versions of `_strset_s`. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 The debug versions of these functions first fill the buffer with 0xFD. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 

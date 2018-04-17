@@ -67,7 +67,7 @@ Error Conditions
 
 |*mbchar*|*sizeInBytes*|Return value|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
-|`NULL`|>0|**EINVAL**|not modified|
+|**NULL**|>0|**EINVAL**|not modified|
 |any|>`INT_MAX`|**EINVAL**|not modified|
 |any|too small|**EINVAL**|not modified|
 

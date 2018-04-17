@@ -62,15 +62,15 @@ Locale to use.
 
 ## Return Value
 
-`_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes *current*; `_mbsdec` returns `NULL` if the value of *start* is greater than or equal to that of *current*. `_tcsdec` maps to one of these functions and its return value depends on the mapping.
+`_mbsdec`, `_mbsdec_l`, `_strdec`, and `_wcsdec` each return a pointer to the character that immediately precedes *current*; `_mbsdec` returns **NULL** if the value of *start* is greater than or equal to that of *current*. `_tcsdec` maps to one of these functions and its return value depends on the mapping.
 
 ## Remarks
 
 The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of the multibyte character that immediately precedes *current* in the string that contains *start*.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If *start* or *current* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
+If *start* or *current* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).

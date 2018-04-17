@@ -45,9 +45,9 @@ Integer to test.
 
 ## Remarks
 
-The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (`EOF`) to `UCHAR_MAX` (0xFF), inclusive.
+The `isleadbyte` macro returns a nonzero value if its argument is the first byte of a multibyte character. `isleadbyte` produces a meaningful result for any integer argument from -1 (**EOF**) to `UCHAR_MAX` (0xFF), inclusive.
 
-The expected argument type of `isleadbyte` is `int`; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.
+The expected argument type of `isleadbyte` is **int**; if a signed character is passed, the compiler may convert it to an integer by sign extension, yielding unpredictable results.
 
 The version of this function with the **_l** suffix is identical except that it uses the locale passed in instead of the current locale for its locale-dependent behavior.
 

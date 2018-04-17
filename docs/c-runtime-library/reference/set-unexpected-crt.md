@@ -41,7 +41,7 @@ Returns a pointer to the previous termination function registered by `_set_unexp
 
 ## Remarks
 
-The `set_unexpected` function installs *unexpFunction* as the function called by `unexpected`. `unexpected` is not used in the current C++ exception-handling implementation. The `unexpected_function` type is defined in EH.H as a pointer to a user-defined unexpected function, *unexpFunction* that returns `void`. Your custom *unexpFunction* function should not return to its caller.
+The `set_unexpected` function installs *unexpFunction* as the function called by `unexpected`. `unexpected` is not used in the current C++ exception-handling implementation. The `unexpected_function` type is defined in EH.H as a pointer to a user-defined unexpected function, *unexpFunction* that returns **void**. Your custom *unexpFunction* function should not return to its caller.
 
 ```cpp
 typedef void ( *unexpected_function )( );

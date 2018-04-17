@@ -43,7 +43,7 @@ Position-indicator storage.
 
 ## Return Value
 
-If successful, `fgetpos` returns 0. On failure, it returns a nonzero value and sets **errno** to one of the following manifest constants (defined in STDIO.H): `EBADF`, which means the specified stream is not a valid file pointer or is not accessible, or **EINVAL**, which means the *stream* value or the value of *pos* is invalid, such as if either is a null pointer. If *stream* or *pos* is a `NULL` pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+If successful, `fgetpos` returns 0. On failure, it returns a nonzero value and sets **errno** to one of the following manifest constants (defined in STDIO.H): **EBADF**, which means the specified stream is not a valid file pointer or is not accessible, or **EINVAL**, which means the *stream* value or the value of *pos* is invalid, such as if either is a null pointer. If *stream* or *pos* is a **NULL** pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## Remarks
 

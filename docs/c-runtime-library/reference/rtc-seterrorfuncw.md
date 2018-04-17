@@ -39,7 +39,7 @@ The address of the function that will handle run-time error checks.
 
 ## Return Value
 
-The previously defined error function; or `NULL` if there is no previously defined function.
+The previously defined error function; or **NULL** if there is no previously defined function.
 
 ## Remarks
 

@@ -106,7 +106,7 @@ Variations of these functions support 32- or 64-bit time types, and 32- or 64-bi
 > [!NOTE]
 >  `_wstat` does not work with [!INCLUDE[wiprlhext](includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.
 
-This function validates its parameters. If either *path* or *buffer* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
+This function validates its parameters. If either *path* or *buffer* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ### Time Type and File Length Type Variations of _stat
 

@@ -48,11 +48,11 @@ Pointer to a buffer containing the absolute or full path name, or NULL.
 Relative path name.
 
 *maxLength*<br/>
-Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
+Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (**wchar_t**) for `_wfullpath`.
 
 ## Return Value
 
-Each of these functions returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*), the function returns `NULL`.
+Each of these functions returns a pointer to a buffer containing the absolute path name (*absPath*). If there is an error (for example, if the value passed in *relPath* includes a drive letter that is not valid or cannot be found, or if the length of the created absolute path name (*absPath*) is greater than *maxLength*), the function returns **NULL**.
 
 ## Remarks
 
@@ -72,7 +72,7 @@ when the absolute path (actual file system location) of the file might be:
 
 If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
 
-This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns `NULL`.
+This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
 
 ### Generic-Text Routine Mappings
 
@@ -80,7 +80,7 @@ This function invokes the invalid parameter handler, as described in [Parameter 
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |`_tfullpath`|`_fullpath`|`_fullpath`|`_wfullpath`|
 
-If the *absPath* buffer is `NULL`, `_fullpath` calls [malloc](malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
+If the *absPath* buffer is **NULL**, `_fullpath` calls [malloc](malloc.md) to allocate a buffer and ignores the *maxLength* argument. It is the caller's responsibility to deallocate this buffer (using [free](free.md)) as appropriate. If the *relPath* argument specifies a disk drive, the current directory of this drive is combined with the path.
 
 ## Requirements
 

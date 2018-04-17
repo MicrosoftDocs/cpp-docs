@@ -52,7 +52,7 @@ A pointer to an `mbstate_t` object.
 
 ## Return Value
 
-The number of bytes stored in array object *mbchar*, including any shift sequences. If *wchar* is not a valid wide character, the value (`size_t`)(-1) is returned, **errno** is set to `EILSEQ`, and the value of *state* is unspecified.
+The number of bytes stored in array object *mbchar*, including any shift sequences. If *wchar* is not a valid wide character, the value (**size_t**)(-1) is returned, **errno** is set to **EILSEQ**, and the value of *state* is unspecified.
 
 ## Remarks
 

@@ -80,7 +80,7 @@ These functions do not translate line-feed characters into carriage return-line 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-These functions validate the input pointer and the format string. If *format* or *argument* is `NULL`, or if the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+These functions validate the input pointer and the format string. If *format* or *argument* is **NULL**, or if the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

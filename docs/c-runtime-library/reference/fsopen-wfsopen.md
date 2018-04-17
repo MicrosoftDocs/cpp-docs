@@ -52,7 +52,7 @@ Type of sharing allowed.
 
 ## Return Value
 
-Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *filename* or *mode* is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set **errno** to **EINVAL**.
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *filename* or *mode* is **NULL** or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set **errno** to **EINVAL**.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -84,7 +84,7 @@ When a file is opened with the `"a"` or `"a+"` access type, all write operations
 |`T`|Specifies a file as temporary. If possible, it is not flushed to disk.|
 |`D`|Specifies a file as temporary. It is deleted when the last file pointer is closed.|
 
-If `t` or `b` is not given in *mode*, the translation mode is defined by the default-mode variable `_fmode`. If `t` or `b` is prefixed to the argument, the function fails and returns `NULL`. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+If `t` or `b` is not given in *mode*, the translation mode is defined by the default-mode variable `_fmode`. If `t` or `b` is prefixed to the argument, the function fails and returns **NULL**. For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
 The argument *shflag* is a constant expression consisting of one of the following manifest constants, defined in Share.h.
 

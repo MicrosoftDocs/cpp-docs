@@ -77,7 +77,7 @@ The *pathname* buffer should be at least `_MAX_PATH` characters long to accommod
 
 If *filename* is an empty string, these functions return **ENOENT**.
 
-If *filename* or *pathname* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *filename* or *pathname* is a **NULL** pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 For more information about **errno** and error codes, see [errno Constants](../../c-runtime-library/errno-constants.md).
 

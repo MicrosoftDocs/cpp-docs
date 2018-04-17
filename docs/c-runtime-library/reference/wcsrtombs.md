@@ -68,7 +68,7 @@ Thus, the multibyte character string at *mbstr* is null-terminated only if `wcsr
 
 The `wcsrtombs` function differs from [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions.  For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
 
-If the *mbstr* argument is `NULL`, `wcsrtombs` returns the required size in bytes of the destination string. If *mbstate* is null, the internal `mbstate_t` conversion state is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to `EILSEQ`.
+If the *mbstr* argument is **NULL**, `wcsrtombs` returns the required size in bytes of the destination string. If *mbstate* is null, the internal `mbstate_t` conversion state is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to **EILSEQ**.
 
 In C++, this function has a template overload that invokes the newer, secure counterpart of this function. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

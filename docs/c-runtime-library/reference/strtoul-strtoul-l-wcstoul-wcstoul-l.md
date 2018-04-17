@@ -67,17 +67,17 @@ Locale to use.
 
 ## Return Value
 
-`strtoul` returns the converted value, if any, or `ULONG_MAX` on overflow. `strtoul` returns 0 if no conversion can be performed. `wcstoul` returns values analogously to `strtoul`. For both functions, **errno** is set to `ERANGE` if overflow or underflow occurs.
+`strtoul` returns the converted value, if any, or `ULONG_MAX` on overflow. `strtoul` returns 0 if no conversion can be performed. `wcstoul` returns values analogously to `strtoul`. For both functions, **errno** is set to **ERANGE** if overflow or underflow occurs.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.
 
 ## Remarks
 
-Each of these functions converts the input string *strSource* to an `unsigned` `long`.
+Each of these functions converts the input string *strSource* to an **unsigned** **long**.
 
-`strtoul` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. The `LC_NUMERIC` category setting of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). `strtoul` and `wcstoul` use the current locale; `_strtoul_l` and `_wcstoul_l` are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+`strtoul` stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. The **LC_NUMERIC** category setting of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). `strtoul` and `wcstoul` use the current locale; `_strtoul_l` and `_wcstoul_l` are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If *endptr* is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
+If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 
 `wcstoul` is a wide-character version of `strtoul`; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
@@ -90,9 +90,9 @@ If *endptr* is not `NULL`, a pointer to the character that stopped the scan is s
 
 `strtoul` expects *strSource* to point to a string of the following form:
 
-[`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits`]
+> [*whitespace*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **X** }]] [*digits*  &#124; *letters*]
 
-A `whitespace` may consist of space and tab characters, which are ignored; `digits` are one or more decimal digits. The first character that does not fit this form stops the scan. If *base* is between 2 and 36, then it is used as the base of the number. If *base* is 0, the initial characters of the string pointed to by *strSource* are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. The first character outside the range of the base stops the scan. For example, if *base* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`-`) sign prefix; a leading minus sign indicates that the return value is negated.
+A *whitespace* may consist of space and tab characters, which are ignored. *digits* are one or more decimal digits. *letters* are one or more of the letters 'a' through 'z' (or 'A' through 'Z'). The first character that does not fit this form stops the scan. If *base* is between 2 and 36, then it is used as the base of the number. If *base* is 0, the initial characters of the string pointed to by *strSource* are used to determine the base. If the first character is 0 and the second character is not 'x' or 'X', the string is interpreted as an octal integer. If the first character is '0' and the second character is 'x' or 'X', the string is interpreted as a hexadecimal integer. If the first character is '1' through '9', the string is interpreted as a decimal integer. The letters 'a' through 'z' (or 'A' through 'Z') are assigned the values 10 through 35; only letters whose assigned values are less than *base* are permitted. The first character outside the range of the base stops the scan. For example, if *base* is 0 and the first character scanned is '0', an octal integer is assumed and an '8' or '9' character will stop the scan. `strtoul` allows a plus (`+`) or minus (`-`) sign prefix; a leading minus sign indicates that the return value is negated.
 
 ## Requirements
 

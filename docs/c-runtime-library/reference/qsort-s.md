@@ -77,10 +77,10 @@ If invalid parameters are passed to the function, the invalid parameter handler 
 
 |key|base|compare|num|width|errno|
 |---------|----------|-------------|---------|-----------|-----------|
-|`NULL`|any|any|any|any|**EINVAL**|
-|any|`NULL`|any|!= 0|any|**EINVAL**|
+|**NULL**|any|any|any|any|**EINVAL**|
+|any|**NULL**|any|!= 0|any|**EINVAL**|
 |any|any|any|any|<= 0|**EINVAL**|
-|any|any|`NULL`|any|any|**EINVAL**|
+|any|any|**NULL**|any|any|**EINVAL**|
 
 `qsort_s` has the same behavior as `qsort` but has the *context* parameter and sets **errno**. By passing a *context* parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the *context* parameter makes `qsort_s` more secure because *context* can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the *compare* function.
 

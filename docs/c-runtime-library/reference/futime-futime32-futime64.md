@@ -51,7 +51,7 @@ Pointer to the structure containing the new modification date.
 
 ## Return Value
 
-Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to `EBADF`, indicating an invalid file descriptor, or **EINVAL**, indicating an invalid parameter.
+Return 0 if successful. If an error occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to **EBADF**, indicating an invalid file descriptor, or **EINVAL**, indicating an invalid parameter.
 
 ## Remarks
 

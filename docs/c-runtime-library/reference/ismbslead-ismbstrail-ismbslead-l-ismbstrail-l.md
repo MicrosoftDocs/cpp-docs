@@ -63,7 +63,7 @@ The locale to use.
 
 ## Return Value
 
-`_ismbslead` returns -1 if the character is a lead byte and `_ismbstrail` returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set **errno** to **EINVAL**.
+`_ismbslead` returns -1 if the character is a lead byte and `_ismbstrail` returns -1 if the character is a trail byte. If the input strings are valid but are not a lead byte or trail byte, these functions return zero. If either argument is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **NULL** and set **errno** to **EINVAL**.
 
 ## Remarks
 

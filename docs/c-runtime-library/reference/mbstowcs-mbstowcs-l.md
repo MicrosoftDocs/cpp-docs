@@ -69,7 +69,7 @@ The locale to use.
 
 ## Return Value
 
-If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the *wcstr* argument is `NULL`, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns -1. If the return value is *count*, the wide-character string is not null-terminated.
+If `mbstowcs` successfully converts the source string, it returns the number of converted multibyte characters. If the *wcstr* argument is **NULL**, the function returns the required size (in wide characters) of the destination string. If `mbstowcs` encounters an invalid multibyte character, it returns -1. If the return value is *count*, the wide-character string is not null-terminated.
 
 > [!IMPORTANT]
 >  Ensure that *wcstr* and *mbstr* do not overlap, and that *count* correctly reflects the number of multibyte characters to convert.
@@ -78,9 +78,9 @@ If `mbstowcs` successfully converts the source string, it returns the number of 
 
 The `mbstowcs` function converts up to a maximum number of *count* multibyte characters pointed to by *mbstr* to a string of corresponding wide characters that are determined by the current locale. It stores the resulting wide-character string at the address represented by *wcstr*. The result is similar to a series of calls to `mbtowc`. If `mbstowcs` encounters the single-byte null character ('\0') either before or when *count* occurs, it converts the null character to a wide-character null character (L'\0') and stops. Thus the wide-character string at *wcstr* is null-terminated only if a null character is encountered during conversion. If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior is undefined.
 
-If the *wcstr* argument is `NULL`, `mbstowcs` returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
+If the *wcstr* argument is **NULL**, `mbstowcs` returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
 
-If the *mbstr* argument is `NULL`, or if *count* is > `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, errno is set to **EINVAL** and the function returns -1.
+If the *mbstr* argument is **NULL**, or if *count* is > `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, errno is set to **EINVAL** and the function returns -1.
 
 `mbstowcs` uses the current locale for any locale-dependent behavior; `_mbstowcs_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

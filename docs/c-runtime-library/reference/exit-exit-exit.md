@@ -72,7 +72,7 @@ void last_fn() {}
 }
 ```
 
-Do not use `DLL_PROCESS_ATTACH` to call `exit` from `DllMain`. To exit the `DLLMain` function, return `FALSE` from `DLL_PROCESS_ATTACH`.
+Do not use `DLL_PROCESS_ATTACH` to call `exit` from `DllMain`. To exit the `DLLMain` function, return **FALSE** from `DLL_PROCESS_ATTACH`.
 
 ## Requirements
 

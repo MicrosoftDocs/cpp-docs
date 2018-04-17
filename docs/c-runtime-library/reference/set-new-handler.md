@@ -37,11 +37,11 @@ Pointer to the application-supplied memory handling function. An argument of 0 c
 
 ## Return Value
 
-Returns a pointer to the previous exception handling function registered by `_set_new_handler`, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be `NULL`.
+Returns a pointer to the previous exception handling function registered by `_set_new_handler`, so that the previous function can be restored later. If no previous function has been set, the return value can be used to restore the default behavior; this value can be **NULL**.
 
 ## Remarks
 
-The C++ `_set_new_handler` function specifies an exception-handling function that gains control if the `new` operator fails to allocate memory. If `new` fails, the run-time system automatically calls the exception-handling function that was passed as an argument to `_set_new_handler`. `_PNH`, defined in New.h, is a pointer to a function that returns type `int` and takes an argument of type `size_t`. Use `size_t` to specify the amount of space to be allocated.
+The C++ `_set_new_handler` function specifies an exception-handling function that gains control if the `new` operator fails to allocate memory. If `new` fails, the run-time system automatically calls the exception-handling function that was passed as an argument to `_set_new_handler`. `_PNH`, defined in New.h, is a pointer to a function that returns type **int** and takes an argument of type **size_t**. Use **size_t** to specify the amount of space to be allocated.
 
 There is no default handler.
 

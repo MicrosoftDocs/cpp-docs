@@ -94,7 +94,7 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 
 Each of these functions takes a pointer to an argument list, and then formats and writes the given data to the memory pointed to by *buffer*.
 
-`vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, *count*, of type `size_t`.
+`vswprintf_s` conforms to the ISO C Standard for `vswprintf`, which requires the second parameter, *count*, of type **size_t**.
 
 These functions differ from the non-secure versions only in that the secure versions support positional parameters. For more information, see [printf_p Positional Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
 

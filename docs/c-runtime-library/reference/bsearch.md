@@ -55,7 +55,7 @@ Callback function that compares two elements. The first is a pointer to the key 
 
 ## Return Value
 
-`bsearch` returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns `NULL`. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
+`bsearch` returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 ## Remarks
 
@@ -67,7 +67,7 @@ The `bsearch` function performs a binary search of a sorted array of *number* el
 |0|Key is equal to array element.|
 |> 0|Key is greater than array element.|
 
-This function validates its parameters. If *compare*, *key* or *number* is `NULL`, or if *base* is `NULL` and **number* is nonzero, or if *width* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `NULL`.
+This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and **number* is nonzero, or if *width* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**.
 
 ## Requirements
 

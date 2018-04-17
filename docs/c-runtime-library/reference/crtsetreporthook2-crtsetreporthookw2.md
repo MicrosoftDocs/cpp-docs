@@ -47,7 +47,7 @@ Report hook to install or remove in the narrow-character or wide-character versi
 
 ## Return Value
 
--1 if an error was encountered, with **EINVAL** or `ENOMEM` set; otherwise returns the reference count of *pfnNewHook* after the call.
+-1 if an error was encountered, with **EINVAL** or **ENOMEM** set; otherwise returns the reference count of *pfnNewHook* after the call.
 
 ## Remarks
 
@@ -55,7 +55,7 @@ Report hook to install or remove in the narrow-character or wide-character versi
 
 `_CrtSetReportHook2` or `_CrtSetReportHookW2` should be used instead of `_CrtSetReportHook` when the hook call is made in a DLL and when multiple DLLs might be loaded and setting their own hook functions. In such a situation, DLLs can be unloaded in a different order than they were loaded and the hook function can be left pointing at an unloaded DLL. Any debug output crashes the process if the hook functions were added with `_CrtSetReportHook`.
 
-Any hook functions added with `_CrtSetReportHook` are called if there are no hook functions added with `_CrtSetReportHook2` or `_CrtSetReportHookW2` or if all hook functions added with `_CrtSetReportHook2` and `_CrtSetReportHookW2` return `FALSE`.
+Any hook functions added with `_CrtSetReportHook` are called if there are no hook functions added with `_CrtSetReportHook2` or `_CrtSetReportHookW2` or if all hook functions added with `_CrtSetReportHook2` and `_CrtSetReportHookW2` return **FALSE**.
 
 The wide-character version of this function is available. The report hook functions take a string whose type (wide or narrow characters) must match the version of this function used. Use the following function prototype for the report hooks used with the wide-character version of this function:
 

@@ -71,9 +71,9 @@ The return value is zero if successful; otherwise, an error code if a failure oc
 
 |*buffer*|*numberOfElements*|*pSizeRead*|Return|Contents of *buffer*|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|`NULL`|any|any|**EINVAL**|n/a|
-|not `NULL`|zero|any|**EINVAL**|not modified|
-|not `NULL`|any|`NULL`|**EINVAL**|zero-length string|
+|**NULL**|any|any|**EINVAL**|n/a|
+|not **NULL**|zero|any|**EINVAL**|not modified|
+|not **NULL**|any|**NULL**|**EINVAL**|zero-length string|
 
 ## Remarks
 

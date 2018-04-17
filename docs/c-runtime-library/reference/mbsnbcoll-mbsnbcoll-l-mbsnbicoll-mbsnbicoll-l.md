@@ -75,7 +75,7 @@ The return value indicates the relation of the substrings of *string1* and *stri
 |0|*string1* substring identical to *string2* substring.|
 |> 0|*string1* substring greater than *string2* substring.|
 
-If *string1* or *string2* is `NULL` or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.
+If *string1* or *string2* is **NULL** or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.
 
 ## Remarks
 
@@ -85,7 +85,7 @@ For some code pages and corresponding character sets, the order of characters in
 
 Because the `coll` functions collate strings lexicographically for comparison, whereas the `cmp` functions simply test for string equality, the `coll` functions are much slower than the corresponding `cmp` versions. Therefore, the `coll` functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the comparison.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 

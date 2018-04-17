@@ -52,15 +52,15 @@ Storage location for the path, or **NULL**.
 If **NULL** is specified, this function allocates a buffer of at least *maxlen* size by using **malloc**, and the return value of `_getdcwd` is a pointer to the allocated buffer. The buffer can be freed by calling `free` and passing it the pointer.
 
 *maxlen*<br/>
-A nonzero positive integer that specifies the maximum length of the path, in characters: `char` for `_getdcwd` and `wchar_t` for `_wgetdcwd`.
+A nonzero positive integer that specifies the maximum length of the path, in characters: **char** for `_getdcwd` and **wchar_t** for `_wgetdcwd`.
 
 If *maxlen* is not greater than zero, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
 
 ## Return Value
 
-Pointer to a string that represents the full path of the current working directory on the specified drive, or `NULL`, which indicates an error.
+Pointer to a string that represents the full path of the current working directory on the specified drive, or **NULL**, which indicates an error.
 
-If *buffer* is specified as `NULL` and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to `ENOMEM`. If the length of the path,  which includes the terminating null character, exceeds *maxlen*, an error occurs and **errno** is set to `ERANGE`. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path,  which includes the terminating null character, exceeds *maxlen*, an error occurs and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

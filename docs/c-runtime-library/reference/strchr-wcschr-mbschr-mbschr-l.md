@@ -95,15 +95,15 @@ Locale to use.
 
 ## Return Value
 
-Each of these functions returns a pointer to the first occurrence of *c* in *str*, or `NULL` if *c* is not found.
+Each of these functions returns a pointer to the first occurrence of *c* in *str*, or **NULL** if *c* is not found.
 
 ## Remarks
 
-The `strchr` function finds the first occurrence of *c* in *str*, or it returns `NULL` if *c* is not found. The null terminating character is included in the search.
+The `strchr` function finds the first occurrence of *c* in *str*, or it returns **NULL** if *c* is not found. The null terminating character is included in the search.
 
-`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings; those of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbschr` returns `NULL` and sets **errno** to **EINVAL**. `strchr` and `wcschr` do not validate their parameters. These three functions behave identically otherwise.
+`wcschr`, `_mbschr` and `_mbschr_l` are wide-character and multibyte-character versions of `strchr`. The arguments and return value of `wcschr` are wide-character strings; those of `_mbschr` are multibyte-character strings. `_mbschr` recognizes multibyte-character sequences. Also, if the string is a null pointer, `_mbschr` invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbschr` returns **NULL** and sets **errno** to **EINVAL**. `strchr` and `wcschr` do not validate their parameters. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; for more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C, these functions take a `const` pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to `const` returns a pointer to `const`; the version that takes a pointer to non-`const` returns a pointer to non-`const`. The macro `_CRT_CONST_CORRECT_OVERLOADS` is defined if both the `const` and non-`const` versions of these functions are available. If you require the non-`const` behavior for both C++ overloads, define the symbol `_CONST_RETURN`.
 

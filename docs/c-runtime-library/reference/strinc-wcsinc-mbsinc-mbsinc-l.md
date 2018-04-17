@@ -66,7 +66,7 @@ The `_mbsinc` function returns a pointer to the first byte of the multibyte char
 
 The generic-text function `_tcsinc`, defined in Tchar.h, maps to `_mbsinc` if `_MBCS` has been defined, or to `_wcsinc` if `_UNICODE` has been defined. Otherwise, `_tcsinc` maps to `_strinc`. `_strinc` and `_wcsinc` are single-byte-character and wide-character versions of `_mbsinc`. `_strinc` and `_wcsinc` are provided only for this mapping and should not be used otherwise. For more information, see [Using Generic-Text Mappings](../../c-runtime-library/using-generic-text-mappings.md) and [Generic-Text Mappings](../../c-runtime-library/generic-text-mappings.md).
 
-If *current* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
+If *current* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).

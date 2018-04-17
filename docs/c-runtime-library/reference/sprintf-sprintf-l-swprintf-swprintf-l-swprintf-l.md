@@ -107,7 +107,7 @@ The `sprintf` function formats and stores a series of characters and values in *
 
 `swprintf` is a wide-character version of `sprintf`; the pointer arguments to `swprintf` are wide-character strings. Detection of encoding errors in `swprintf` may differ from that in `sprintf`. `swprintf` and `fwprintf` behave identically except that `swprintf` writes output to a string rather than to a destination of type `FILE`, and `swprintf` requires the *count* parameter to specify the maximum number of characters to be written. The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-`swprintf` conforms to the ISO C Standard, which requires the second parameter, *count*, of type `size_t`. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS`. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
+`swprintf` conforms to the ISO C Standard, which requires the second parameter, *count*, of type **size_t**. To force the old nonstandard behavior, define `_CRT_NON_CONFORMING_SWPRINTFS`. In a future version, the old behavior may be removed, so code should be changed to use the new conformant behavior.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
