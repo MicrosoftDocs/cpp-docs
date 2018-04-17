@@ -59,15 +59,15 @@ Permission setting.
 
 Each of these functions returns a file descriptor for the opened file.
 
-If *filename* or *oflag* is a `NULL` pointer, or if *oflag* or *shflag* is not within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to one of the following values.
+If *filename* or *oflag* is a `NULL` pointer, or if *oflag* or *shflag* is not within a valid range of values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to one of the following values.
 
 |errno value|Condition|
 |-|-|
-`EACCES`|The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
+**EACCES**|The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
 `EEXIST`|`_O_CREAT` and `_O_EXCL` flags were specified, but *filename* already exists.
-`EINVAL`|Invalid *oflag* or *shflag* argument.
+**EINVAL**|Invalid *oflag* or *shflag* argument.
 `EMFILE`|No more file descriptors are available.
-`ENOENT`|File or path is not found.
+**ENOENT**|File or path is not found.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

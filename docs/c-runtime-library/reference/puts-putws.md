@@ -42,7 +42,7 @@ Output string.
 
 ## Return Value
 
-Returns a nonnegative value if successful. If `puts` fails, it returns `EOF`; if `_putws` fails, it returns **WEOF**. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EOF` or **WEOF**.
+Returns a nonnegative value if successful. If `puts` fails, it returns `EOF`; if `_putws` fails, it returns **WEOF**. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return `EOF` or **WEOF**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -47,7 +47,7 @@ New size in bytes.
 
 `_expand` returns `NULL` when an error is detected during its operation. For example, if `_expand` is used to shrink a memory block, it might detect corruption in the small block heap or an invalid block pointer and return `NULL`.
 
-If there is insufficient memory available to expand the block to the given size without moving it, the function returns `NULL`. `_expand` never returns a block expanded to a size less than requested. If a failure occurs, `errno` indicates the nature of the failure. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If there is insufficient memory available to expand the block to the given size without moving it, the function returns `NULL`. `_expand` never returns a block expanded to a size less than requested. If a failure occurs, **errno** indicates the nature of the failure. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To check the new size of the item, use `_msize`. To get a pointer to a type other than `void`, use a type cast on the return value.
 
@@ -60,7 +60,7 @@ The `_expand` function changes the size of a previously allocated memory block b
 
 When the application is linked with a debug version of the C run-time libraries, `_expand` resolves to [_expand_dbg](expand-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
-This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. If *size* is greater than `_HEAP_MAXREQ`, `errno` is set to `ENOMEM` and the function returns `NULL`.
+This function validates its parameters. If *memblock* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `NULL`. If *size* is greater than `_HEAP_MAXREQ`, **errno** is set to `ENOMEM` and the function returns `NULL`.
 
 ## Requirements
 

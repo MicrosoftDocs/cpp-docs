@@ -67,11 +67,11 @@ The locale to use.
 
 ## Return Value
 
-`strtoimax` returns the value that's represented in the string *strSource*, except when the representation would cause an overflow—in that case, it returns `INTMAX_MAX` or `INTMAX_MIN`, and `errno` is set to `ERANGE`. The function returns 0 if no conversion can be performed. `wcstoimax` returns values analogously to `strtoimax`.
+`strtoimax` returns the value that's represented in the string *strSource*, except when the representation would cause an overflow—in that case, it returns `INTMAX_MAX` or `INTMAX_MIN`, and **errno** is set to `ERANGE`. The function returns 0 if no conversion can be performed. `wcstoimax` returns values analogously to `strtoimax`.
 
 `INTMAX_MAX` and `INTMAX_MIN` are defined in stdint.h.
 
-If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, `errno` is set to `EINVAL`.
+If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
 For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

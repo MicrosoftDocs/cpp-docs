@@ -86,13 +86,13 @@ Each of these functions returns a value that indicates the relationship of the s
 |0|*string1* is identical to *string2*.|
 |> 0|*string1* is greater than *string2*.|
 
-Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either STRING.h or MBSTRING.h. `_wcsncoll` can fail if either *string1* or *string2* contains wide-character codes that are outside the domain of the collating sequence. When an error occurs, `_wcsncoll` may set `errno` to `EINVAL`. To check for an error on a call to `_wcsncoll`, set `errno` to 0 and then check `errno` after you call `_wcsncoll`.
+Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either STRING.h or MBSTRING.h. `_wcsncoll` can fail if either *string1* or *string2* contains wide-character codes that are outside the domain of the collating sequence. When an error occurs, `_wcsncoll` may set **errno** to **EINVAL**. To check for an error on a call to `_wcsncoll`, set **errno** to 0 and then check **errno** after you call `_wcsncoll`.
 
 ## Remarks
 
 Each of these functions performs a case-sensitive comparison of the first *count* characters in *string1* and *string2*, according to the code page that's currently in use. Use these functions only when there is a difference between the character set order and the lexicographic character order in the code page, and when this difference is of interest for the string comparison. The character set order is locale-dependent. The versions of these functions that don't have the **_l** suffix use the current locale, but the versions that have the **_l** suffix use the locale that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

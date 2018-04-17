@@ -101,7 +101,7 @@ The locale to use.
 
 Zero if successful; a non-zero error code on failure.
 
-These functions validate their parameters. If *str* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return `EINVAL` and set `errno` to `EINVAL`. If *numberOfElements* is less than the length of the string, the functions return `ERANGE` and set `errno` to `ERANGE`.
+These functions validate their parameters. If *str* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**. If *numberOfElements* is less than the length of the string, the functions return `ERANGE` and set **errno** to `ERANGE`.
 
 ## Remarks
 

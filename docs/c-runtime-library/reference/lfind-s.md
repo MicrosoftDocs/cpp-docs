@@ -61,16 +61,16 @@ A pointer to an object that might be accessed in the comparison function.
 
 If the key is found, `_lfind_s` returns a pointer to the element of the array at *base* that matches *key*. If the key is not found, `_lfind_s` returns `NULL`.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `NULL`.
 
 ### Error Conditions
 
 |key|base|compare|num|size|errno|
 |---------|----------|-------------|---------|----------|-----------|
-|`NULL`|any|any|any|any|`EINVAL`|
-|any|`NULL`|any|!= 0|any|`EINVAL`|
-|any|any|any|any|zero|`EINVAL`|
-|any|any|`NULL`|an|any|`EINVAL`|
+|`NULL`|any|any|any|any|**EINVAL**|
+|any|`NULL`|any|!= 0|any|**EINVAL**|
+|any|any|any|any|zero|**EINVAL**|
+|any|any|`NULL`|an|any|**EINVAL**|
 
 ## Remarks
 

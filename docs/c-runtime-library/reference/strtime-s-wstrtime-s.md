@@ -63,9 +63,9 @@ If an error condition occurs, the invalid parameter handler is invoked, as descr
 
 |*buffer*|*numberOfElements*|Return|Contents of *buffer*|
 |--------------|------------------------|------------|--------------------------|
-|`NULL`|(any)|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0 < size < 9|`EINVAL`|Empty string|
+|`NULL`|(any)|**EINVAL**|Not modified|
+|Not `NULL` (pointing to valid buffer)|0|**EINVAL**|Not modified|
+|Not `NULL` (pointing to valid buffer)|0 < size < 9|**EINVAL**|Empty string|
 |Not `NULL` (pointing to valid buffer)|Size > 9|0|Current time formatted as specified in the remarks|
 
 ## Security Issues

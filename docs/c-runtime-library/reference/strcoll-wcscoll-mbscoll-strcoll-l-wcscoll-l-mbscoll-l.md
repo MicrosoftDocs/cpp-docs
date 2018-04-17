@@ -77,13 +77,13 @@ Each of these functions returns a value indicating the relationship of *string1*
 |0|*string1* identical to *string2*|
 |> 0|*string1* greater than *string2*|
 
-Each of these functions returns `_NLSCMPERROR` on an error. To use `_NLSCMPERROR`, include either STRING.H or MBSTRING.H. `wcscoll` can fail if either *string1* or *string2* is NULL or contains wide-character codes outside the domain of the collating sequence. When an error occurs, `wcscoll` may set `errno` to `EINVAL`. To check for an error on a call to `wcscoll`, set `errno` to 0 and then check `errno` after calling `wcscoll`.
+Each of these functions returns `_NLSCMPERROR` on an error. To use `_NLSCMPERROR`, include either STRING.H or MBSTRING.H. `wcscoll` can fail if either *string1* or *string2* is NULL or contains wide-character codes outside the domain of the collating sequence. When an error occurs, `wcscoll` may set **errno** to **EINVAL**. To check for an error on a call to `wcscoll`, set **errno** to 0 and then check **errno** after calling `wcscoll`.
 
 ## Remarks
 
 Each of these functions performs a case-sensitive comparison of *string1* and *string2* according to the code page currently in use. These functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
-All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or if *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, or if *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
 
 The comparison of the two strings is a locale-dependent operation since each locale has different rules for ordering characters. The versions of these functions without the **_l** suffix use the current thread's locale for this locale-dependent behavior; the versions with the **_l** suffix are identical to the corresponding function without the suffix except that they use the locale passed in as a parameter instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 

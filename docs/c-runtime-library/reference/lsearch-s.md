@@ -61,16 +61,16 @@ A pointer to an object that might be accessed in the comparison function.
 
 If *key* is found, `_lsearch_s` returns a pointer to the element of the array at *base* that matches *key*. If *key* is not found, `_lsearch_s` returns a pointer to the newly added item at the end of the array.
 
-If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, then `errno` is set to `EINVAL` and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If invalid parameters are passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, then **errno** is set to **EINVAL** and the function returns `NULL`. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error Conditions
 
-|*key*|*base*|*compare*|*number*|*size*|`errno`|
+|*key*|*base*|*compare*|*number*|*size*|**errno**|
 |-----------|------------|---------------|-----------|------------|-------------|
-|`NULL`|any|any|any|any|`EINVAL`|
-|any|`NULL`|any|!= 0|any|`EINVAL`|
-|any|any|any|any|zero|`EINVAL`|
-|any|any|`NULL`|an|any|`EINVAL`|
+|`NULL`|any|any|any|any|**EINVAL**|
+|any|`NULL`|any|!= 0|any|**EINVAL**|
+|any|any|any|any|zero|**EINVAL**|
+|any|any|`NULL`|an|any|**EINVAL**|
 
 ## Remarks
 

@@ -57,7 +57,7 @@ Environment variable name.
 
 Zero on success, an error code on failure.
 
-These functions validate their parameters; if *buffer* or *varname* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EINVAL`.
+These functions validate their parameters; if *buffer* or *varname* is `NULL`, the invalid parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
 
 If these functions cannot allocate enough memory, they set *buffer* to `NULL` and *numberOfElements* to 0, and return `ENOMEM`.
 

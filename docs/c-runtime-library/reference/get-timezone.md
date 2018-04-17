@@ -39,13 +39,13 @@ The difference in seconds between UTC and local time.
 
 ## Return Value
 
-Zero if successful or an `errno` value if an error occurs.
+Zero if successful or an **errno** value if an error occurs.
 
 ## Remarks
 
 The `_get_timezone` function retrieves the difference in seconds between UTC and local time as an integer. The default value is 28,800 seconds, for Pacific Standard Time (eight hours behind UTC).
 
-If *seconds* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+If *seconds* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Requirements
 

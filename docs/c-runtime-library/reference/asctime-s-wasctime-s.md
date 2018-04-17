@@ -68,11 +68,11 @@ Zero if successful. If there is a failure, the invalid parameter handler is invo
 
 |*buffer*|*numberOfElements*|*tmSource*|Return|Value in *buffer*|
 |--------------|------------------------|----------|------------|-----------------------|
-|`NULL`|Any|Any|`EINVAL`|Not modified|
-|Not `NULL` (points to valid memory)|0|Any|`EINVAL`|Not modified|
-|Not `NULL`|0< size < 26|Any|`EINVAL`|Empty string|
-|Not `NULL`|>= 26|`NULL`|`EINVAL`|Empty string|
-|Not `NULL`|>= 26|Invalid time structure or out of range values for components of the time|`EINVAL`|Empty string|
+|`NULL`|Any|Any|**EINVAL**|Not modified|
+|Not `NULL` (points to valid memory)|0|Any|**EINVAL**|Not modified|
+|Not `NULL`|0< size < 26|Any|**EINVAL**|Empty string|
+|Not `NULL`|>= 26|`NULL`|**EINVAL**|Empty string|
+|Not `NULL`|>= 26|Invalid time structure or out of range values for components of the time|**EINVAL**|Empty string|
 
 > [!NOTE]
 > Error conditions for `wasctime_s` are similar to `asctime_s` with the exception that the size limit is measured in words.
@@ -95,7 +95,7 @@ The `asctime` function converts a time stored as a structure to a character stri
 
 The converted character string is also adjusted according to the local time zone settings. See the [time, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md), and [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
 
-The string result produced by `asctime_s` contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as the second parameter should be at least this big. If it is less, an error code, `EINVAL`, will be returned.
+The string result produced by `asctime_s` contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as the second parameter should be at least this big. If it is less, an error code, **EINVAL**, will be returned.
 
 `_wasctime_s` is a wide-character version of `asctime_s`. `_wasctime_s` and `asctime_s` behave identically otherwise.
 

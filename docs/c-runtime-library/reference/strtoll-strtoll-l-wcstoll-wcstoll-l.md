@@ -71,7 +71,7 @@ The locale to use.
 
 `LLONG_MAX` and `LLONG_MIN` are defined in LIMITS.H.
 
-If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, `errno` is set to `EINVAL`.
+If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
 For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

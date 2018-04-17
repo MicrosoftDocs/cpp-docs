@@ -45,7 +45,7 @@ Bytes to allocate.
 
 The `malloc` function allocates a memory block of at least *size* bytes. The block may be larger than *size* bytes because of the space that's required for alignment and maintenance information.
 
-`malloc` sets `errno` to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+`malloc` sets **errno** to `ENOMEM` if a memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information about this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 The startup code uses `malloc` to allocate storage for the `_environ`, *envp*, and *argv* variables. The following functions and their wide-character counterparts also call `malloc`.
 

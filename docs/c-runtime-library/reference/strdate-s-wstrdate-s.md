@@ -61,9 +61,9 @@ Zero if successful. The return value is an error code if there is a failure. Err
 
 |*buffer*|*numberOfElements*|Return|Contents of *buffer*|
 |--------------|------------------------|------------|--------------------------|
-|`NULL`|(any)|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0|`EINVAL`|Not modified|
-|Not `NULL` (pointing to valid buffer)|0 < *numberOfElements* < 9|`EINVAL`|Empty string|
+|`NULL`|(any)|**EINVAL**|Not modified|
+|Not `NULL` (pointing to valid buffer)|0|**EINVAL**|Not modified|
+|Not `NULL` (pointing to valid buffer)|0 < *numberOfElements* < 9|**EINVAL**|Empty string|
 |Not `NULL` (pointing to valid buffer)|*numberOfElements* >= 9|0|Current date formatted as specified in the remarks|
 
 ## Security Issues
@@ -78,7 +78,7 @@ These functions provide more secure versions of `_strdate` and `_wstrdate`. The 
 
 `_wstrdate_s` is a wide-character version of `_strdate_s`; the argument and return value of `_wstrdate_s` are wide-character strings. These functions behave identically otherwise.
 
-If *buffer* is a `NULL` pointer, or if *numberOfElements* is less than 9 characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL` if the buffer is `NULL` or if *numberOfElements* is less than or equal to 0, or set `errno` to `ERANGE` if *numberOfElements* is less than 9.
+If *buffer* is a `NULL` pointer, or if *numberOfElements* is less than 9 characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL** if the buffer is `NULL` or if *numberOfElements* is less than or equal to 0, or set **errno** to `ERANGE` if *numberOfElements* is less than 9.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

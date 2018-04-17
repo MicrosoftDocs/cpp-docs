@@ -74,7 +74,7 @@ The `_makepath` function creates a composite path string from individual compone
 
 The *path* argument must point to an empty buffer large enough to hold the complete path. The composite *path* must be no larger than the `_MAX_PATH` constant, defined in Stdlib.h.
 
-If path is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). In addition, `errno` is set to `EINVAL`. `NULL` values are allowed for all other parameters.
+If path is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). In addition, **errno** is set to **EINVAL**. `NULL` values are allowed for all other parameters.
 
 ## Requirements
 

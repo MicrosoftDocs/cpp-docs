@@ -126,7 +126,7 @@ For an overview of memory management and the debug heap, see [CRT Debug Heap Det
 
 To disable a flag with the `_CrtSetDbgFlag` function, you should **AND** the variable with the bitwise **NOT** of the bitmask.
 
-If *newFlag* is not a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns the previous state of `_crtDbgFlag`.
+If *newFlag* is not a valid value, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns the previous state of `_crtDbgFlag`.
 
 ## Requirements
 

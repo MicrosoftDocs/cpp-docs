@@ -67,7 +67,7 @@ Locale to use.
 
 ## Return Value
 
-`strtoumax` returns the converted value, if any, or `UINTMAX_MAX` on overflow. `strtoumax` returns 0 if no conversion can be performed. `wcstoumax` returns values analogously to `strtoumax`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
+`strtoumax` returns the converted value, if any, or `UINTMAX_MAX` on overflow. `strtoumax` returns 0 if no conversion can be performed. `wcstoumax` returns values analogously to `strtoumax`. For both functions, **errno** is set to `ERANGE` if overflow or underflow occurs.
 
 For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

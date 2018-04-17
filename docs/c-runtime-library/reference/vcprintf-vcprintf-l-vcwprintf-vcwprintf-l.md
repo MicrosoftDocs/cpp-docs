@@ -65,7 +65,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-The number of characters written, or a negative value if an output error occurs. If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and -1 is returned.
+The number of characters written, or a negative value if an output error occurs. If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and -1 is returned.
 
 ## Remarks
 

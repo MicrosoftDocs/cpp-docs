@@ -78,11 +78,11 @@ Zero if successful; otherwise, an error code on failure.
 
 |*pReturnValue*|*buffer*|*numberOfElements*|*varname*|Return Value|
 |--------------------|--------------|------------------------|---------------|------------------|
-|`NULL`|any|any|any|`EINVAL`|
-|any|`NULL`|>0|any|`EINVAL`|
-|any|any|any|`NULL`|`EINVAL`|
+|`NULL`|any|any|any|**EINVAL**|
+|any|`NULL`|>0|any|**EINVAL**|
+|any|any|any|`NULL`|**EINVAL**|
 
-Any of these error conditions invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set `errno` to `EINVAL` and return `EINVAL`.
+Any of these error conditions invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions set **errno** to **EINVAL** and return **EINVAL**.
 
 Also, if the buffer is too small, these functions return `ERANGE`. They do not invoke an invalid parameter handler. They write out the required buffer size in *pReturnValue*, and thereby enable programs to call the function again with a larger buffer.
 

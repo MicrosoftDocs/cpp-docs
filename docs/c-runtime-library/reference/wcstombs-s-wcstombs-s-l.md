@@ -86,13 +86,13 @@ The locale to use.
 
 Zero if successful, an error code on failure.
 
-|Error condition|Return value and `errno`|
+|Error condition|Return value and **errno**|
 |---------------------|------------------------------|
-|*mbstr* is `NULL` and *sizeInBytes* > 0|`EINVAL`|
-|*wcstr* is `NULL`|`EINVAL`|
+|*mbstr* is `NULL` and *sizeInBytes* > 0|**EINVAL**|
+|*wcstr* is `NULL`|**EINVAL**|
 |The destination buffer is too small to contain the converted string (unless *count* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
 
-If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
+If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
 
 ## Remarks
 
@@ -110,7 +110,7 @@ If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md)
 
 If `wcstombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not `NULL`). This occurs even if the *mbstr* argument is `NULL` and provides a way to determine the required buffer size. Note that if *mbstr* is `NULL`, *count* is ignored.
 
-If `wcstombs_s` encounters a wide character it cannot convert to a multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
+If `wcstombs_s` encounters a wide character it cannot convert to a multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets **errno** to `EILSEQ`, and returns `EILSEQ`.
 
 If the sequences pointed to by *wcstr* and *mbstr* overlap, the behavior of `wcstombs_s` is undefined.
 

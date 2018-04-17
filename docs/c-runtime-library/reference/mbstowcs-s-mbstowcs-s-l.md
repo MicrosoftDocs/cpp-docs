@@ -83,14 +83,14 @@ The locale to use.
 
 Zero if successful, an error code on failure.
 
-|Error condition|Return value and `errno`|
+|Error condition|Return value and **errno**|
 |---------------------|------------------------------|
-|*wcstr* is `NULL` and *sizeInWords* > 0|`EINVAL`|
-|*mbstr* is `NULL`|`EINVAL`|
+|*wcstr* is `NULL` and *sizeInWords* > 0|**EINVAL**|
+|*mbstr* is `NULL`|**EINVAL**|
 |The destination buffer is too small to contain the converted string (unless *count* is `_TRUNCATE`; see Remarks below)|`ERANGE`|
-|*wcstr* is not `NULL` and *sizeInWords* == 0|`EINVAL`|
+|*wcstr* is not `NULL` and *sizeInWords* == 0|**EINVAL**|
 
-If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets `errno` as indicated in the table.
+If any of these conditions occurs, the invalid parameter exception is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns an error code and sets **errno** as indicated in the table.
 
 ## Remarks
 
@@ -108,7 +108,7 @@ If *count* is the special value [_TRUNCATE](../../c-runtime-library/truncate.md)
 
 If `mbstowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string, including the null terminator, into `*pReturnValue` (provided *pReturnValue* is not `NULL`). This occurs even if the *wcstr* argument is `NULL` and provides a way to determine the required buffer size. Note that if *wcstr* is `NULL`, *count* is ignored, and *sizeInWords* must be 0.
 
-If `mbstowcs_s` encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.
+If `mbstowcs_s` encounters an invalid multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets **errno** to `EILSEQ`, and returns `EILSEQ`.
 
 If the sequences pointed to by *mbstr* and *wcstr* overlap, the behavior of `mbstowcs_s` is undefined.
 

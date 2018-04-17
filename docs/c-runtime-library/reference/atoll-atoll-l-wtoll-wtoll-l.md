@@ -57,7 +57,7 @@ Each function returns the `long long` value that's produced by interpreting the 
 
 For overflow with large positive integral values, `atoll` returns `LLONG_MAX`, and for overflow with large negative integral values, it returns `LLONG_MIN`.
 
-In all out-of-range cases, `errno` is set to `ERANGE`. If the parameter that's passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return 0.
+In all out-of-range cases, **errno** is set to `ERANGE`. If the parameter that's passed in is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 
 ## Remarks
 

@@ -45,7 +45,7 @@ File descriptor referring to the open file.
 
 The `_commit` function forces the operating system to write the file associated with *fd* to disk. This call ensures that the specified file is flushed immediately, not at the operating system's discretion.
 
-If *fd* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and `errno` is set to `EBADF`.
+If *fd* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and **errno** is set to `EBADF`.
 
 ## Requirements
 

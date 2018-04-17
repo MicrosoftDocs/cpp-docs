@@ -76,7 +76,7 @@ The versions of these functions with the **_l** suffix are identical except that
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
 
-Also, like `_cprintf_s` and `_cwprintf_s`, they validate the input pointer and the format string. If *format* or *argument* are `NULL`, or of the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+Also, like `_cprintf_s` and `_cwprintf_s`, they validate the input pointer and the format string. If *format* or *argument* are `NULL`, or of the format string contains invalid formatting characters, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

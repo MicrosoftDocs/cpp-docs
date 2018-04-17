@@ -106,17 +106,17 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 `vsnprintf_s`,`_vsnprintf_s` and `_vsnwprintf_s` return the number of characters written, not including the terminating null, or a negative value if an output error occurs. `vsnprintf_s` is identical to `_vsnprintf_s`. `vsnprintf_s` is included for compliance to the ANSI standard. `_vnsprintf` is retained for backward compatibility.
 
-If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set `errno` to `ERANGE`, and return -1.
+If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to `ERANGE`, and return -1.
 
-If *buffer* or *format* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If *buffer* or *format* is a `NULL` pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 ### Error Conditions
 
-|`Condition`|Return|`errno`|
+|`Condition`|Return|**errno**|
 |-----------------|------------|-------------|
-|*buffer* is `NULL`|-1|`EINVAL`|
-|*format* is `NULL`|-1|`EINVAL`|
-|*count* <= 0|-1|`EINVAL`|
+|*buffer* is `NULL`|-1|**EINVAL**|
+|*format* is `NULL`|-1|**EINVAL**|
+|*count* <= 0|-1|**EINVAL**|
 |*sizeOfBuffer* too small (and *count* != `_TRUNCATE`)|-1 (and *buffer* set to an empty string)|`ERANGE`|
 
 ## Remarks

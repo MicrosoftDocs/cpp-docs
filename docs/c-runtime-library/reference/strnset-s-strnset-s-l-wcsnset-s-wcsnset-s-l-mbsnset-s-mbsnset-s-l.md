@@ -92,7 +92,7 @@ Locale to use.
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If *str* is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.
+These functions validate their arguments. If *str* is not a valid null-terminated string or the size argument is less than or equal to 0, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return an error code and set **errno** to that error code. The default error code is **EINVAL** if a more specific value does not apply.
 
 ## Remarks
 

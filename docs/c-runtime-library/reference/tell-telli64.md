@@ -44,7 +44,7 @@ File descriptor referring to open file.
 
 The current position of the file pointer. On devices incapable of seeking, the return value is undefined.
 
-A return value of -1L indicates an error. If *handle* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EBADF` and return -1L.
+A return value of -1L indicates an error. If *handle* is an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to `EBADF` and return -1L.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on this, and other, return codes.
 

@@ -70,7 +70,7 @@ The `_mbsdec` and `_mbsdec_l` functions return a pointer to the first byte of th
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information.  `_mbsdec` recognizes multibyte-character sequences according to the locale that's currently in use, while `_mbsdec_l` is identical except that it instead uses the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-If *start* or *current* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `EINVAL` and sets `errno` to `EINVAL`.
+If *start* or *current* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 > [!IMPORTANT]
 >  These functions might be vulnerable to buffer overrun threats. Buffer overruns can be used for system attacks because they can cause an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).

@@ -43,7 +43,7 @@ New report mode or modes for *reportType*.
 
 ## Return Value
 
-On successful completion, `_CrtSetReportMode` returns the previous report mode or modes for the report type specified in *reportType*. If an invalid value is passed in as *reportType* or an invalid mode is specified for *reportMode*, `_CrtSetReportMode` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns -1. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+On successful completion, `_CrtSetReportMode` returns the previous report mode or modes for the report type specified in *reportType*. If an invalid value is passed in as *reportType* or an invalid mode is specified for *reportMode*, `_CrtSetReportMode` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns -1. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -73,7 +73,7 @@ The `_CrtSetReportMode` function assigns the new report mode specified in *repor
 |-----------------|-----------------------------|
 |`_CRTDBG_MODE_DEBUG`|Writes the message to the debugger's output window.|
 |`_CRTDBG_MODE_FILE`|Writes the message to a user-supplied file handle. [_CrtSetReportFile](crtsetreportfile.md) should be called to define the specific file or stream to use as the destination.|
-|`_CRTDBG_MODE_WNDW`|Creates a message box to display the message along with the `Abort`, `Retry`, and `Ignore` buttons.|
+|`_CRTDBG_MODE_WNDW`|Creates a message box to display the message along with the [abort](abort.md), `Retry`, and `Ignore` buttons.|
 |`_CRTDBG_REPORT_MODE`|Returns *reportMode* for the specified *reportType*:<br /><br /> 1   `_CRTDBG_MODE_FILE`<br /><br /> 2   `_CRTDBG_MODE_DEBUG`<br /><br /> 4   `_CRTDBG_MODE_WNDW`|
 
 Each report type can be reported using one, two, or three modes or no mode at all. Therefore, it is possible to have more than one destination defined for a single report type. For example, the following code fragment causes assertion failures to be sent to both a debug message window and to `stderr`:

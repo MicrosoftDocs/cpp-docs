@@ -69,7 +69,7 @@ The C run-time library will determine the daylight savings time behavior from th
 
 Note that `gmtime` and `localtime` (and `_gmtime32`, `_gmtime64`, `_localtime32`, and `_localtime64`) use a single buffer per thread for the conversion. If you supply this buffer to `mktime`, `_mktime32` or `_mktime64`, the previous contents are destroyed.
 
-These functions validate their parameter. If *timeptr* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+These functions validate their parameter. If *timeptr* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 ## Requirements
 

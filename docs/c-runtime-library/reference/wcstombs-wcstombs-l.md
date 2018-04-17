@@ -69,7 +69,7 @@ The locale to use.
 
 ## Return Value
 
-If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *mbstr* argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type `size_t` and sets `errno` to `EILSEQ`.
+If `wcstombs` successfully converts the multibyte string, it returns the number of bytes written into the multibyte output string, excluding the terminating `NULL` (if any). If the *mbstr* argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string. If `wcstombs` encounters a wide character it cannot convert to a multibyte character, it returns -1 cast to type `size_t` and sets **errno** to `EILSEQ`.
 
 ## Remarks
 
@@ -79,7 +79,7 @@ If `wcstombs` encounters the wide-character null character (L'\0') either before
 
 If the *mbstr* argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string.
 
-`wcstombs` validates its parameters. If *wcstr* is `NULL`, or if *count* is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.
+`wcstombs` validates its parameters. If *wcstr* is `NULL`, or if *count* is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns -1.
 
 `wcstombs` uses the current locale for any locale-dependent behavior; `_wcstombs_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

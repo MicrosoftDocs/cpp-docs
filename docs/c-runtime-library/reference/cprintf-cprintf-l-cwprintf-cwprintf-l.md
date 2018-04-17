@@ -69,7 +69,7 @@ An important distinction is that `_cwprintf` displays Unicode characters when us
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current locale.
 
-`_cprintf` validates the *format* parameter. If *format* is a null pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
+`_cprintf` validates the *format* parameter. If *format* is a null pointer, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
 
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.

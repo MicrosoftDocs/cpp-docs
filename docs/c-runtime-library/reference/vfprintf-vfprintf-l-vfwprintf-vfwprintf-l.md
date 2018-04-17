@@ -69,7 +69,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-`vfprintf` and `vfwprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If either *stream* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+`vfprintf` and `vfwprintf` return the number of characters written, not including the terminating null character, or a negative value if an output error occurs. If either *stream* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

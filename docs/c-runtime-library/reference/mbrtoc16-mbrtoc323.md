@@ -67,7 +67,7 @@ On success, returns the value of the first of these conditions that applies, giv
 |Between 1 and *max_bytes*, inclusive|The value returned is the number of bytes of *source* that complete a valid multibyte character. The converted wide character is stored  if *destination* is not null.|
 |-3|The next wide character resulting from a previous call to the function has been stored in *destination* if *destination* is not null. No bytes from *source* are consumed by this call to the function.<br /><br /> When  *source* points to a multibyte character that requires more than one wide character to represent (for example, a surrogate pair), then the *state* value is updated so that the next function call writes  out the additional character.|
 |-2|The next *max_bytes* bytes represent an incomplete, but potentially valid, multibyte character. No value is stored in *destination*. This result can occur if *max_bytes* is zero.|
-|-1|An encoding error has occurred. The next *max_bytes* or fewer bytes do not contribute to a complete and valid multibyte character. No value is stored in *destination*.<br /><br /> `EILSEQ` is stored in `errno` and the conversion state *state* is unspecified.|
+|-1|An encoding error has occurred. The next *max_bytes* or fewer bytes do not contribute to a complete and valid multibyte character. No value is stored in *destination*.<br /><br /> `EILSEQ` is stored in **errno** and the conversion state *state* is unspecified.|
 
 ## Remarks
 

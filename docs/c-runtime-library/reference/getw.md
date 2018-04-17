@@ -39,7 +39,7 @@ Pointer to the `FILE` structure.
 
 ## Return Value
 
-`_getw` returns the integer value read. A return value of `EOF` indicates either an error or end of file. However, because the `EOF` value is also a legitimate integer value, use `feof` or `ferror` to verify an end-of-file or error condition. If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `EOF`.
+`_getw` returns the integer value read. A return value of `EOF` indicates either an error or end of file. However, because the `EOF` value is also a legitimate integer value, use `feof` or `ferror` to verify an end-of-file or error condition. If *stream* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `EOF`.
 
 ## Remarks
 

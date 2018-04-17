@@ -47,15 +47,15 @@ Permission setting.
 
 ## Return Value
 
-These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set `errno` as shown in the following table.
+These functions, if successful, return a file descriptor to the created file. Otherwise, the functions return -1 and set **errno** as shown in the following table.
 
-|`errno` setting|Description|
+|**errno** setting|Description|
 |---------------------|-----------------|
-|`EACCES`|*filename* specifies an existing read-only file or specifies a directory instead of a file.|
+|**EACCES**|*filename* specifies an existing read-only file or specifies a directory instead of a file.|
 |`EMFILE`|No more file descriptors are available.|
-|`ENOENT`|Specified file could not be found.|
+|**ENOENT**|Specified file could not be found.|
 
-If *filename* is NULL, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If *filename* is NULL, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

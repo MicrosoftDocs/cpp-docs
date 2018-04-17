@@ -55,7 +55,7 @@ The **raise** function sends *sig* to the executing program. If a previous call 
 |`SIGSEGV`|Illegal storage access|Terminates the calling program|
 |`SIGTERM`|Termination request sent to the program|Ignores the signal|
 
-If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If not handled, the function sets `errno` to `EINVAL` and returns a nonzero value.
+If the argument is not a valid signal as specified above, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If not handled, the function sets **errno** to **EINVAL** and returns a nonzero value.
 
 ## Requirements
 

@@ -49,9 +49,9 @@ Maximum number of bytes.
 
 `_read` returns the number of bytes read, which might be less than *count* if there are fewer than *count* bytes left in the file or if the file was opened in text mode, in which case each carriage return-line feed pair `\r\n` is replaced with a single linefeed character `\n`. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
 
-If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file is not open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EBADF`.
+If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file is not open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to `EBADF`.
 
-If *buffer* is **NULL**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and `errno` is set to `EINVAL`.
+If *buffer* is **NULL**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **errno** is set to **EINVAL**.
 
 For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

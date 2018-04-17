@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
 Specifies the action to be taken when a program is abnormally terminated.
 
 > [!NOTE]
-> Do not use the `abort` function to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](http://go.microsoft.com/fwlink/?LinkId=865936). For more information, see [UWP app lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=865934).
+> Do not use the [abort](abort.md) function to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](http://go.microsoft.com/fwlink/?LinkId=865936). For more information, see [UWP app lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=865934).
 
 ## Syntax
 
@@ -37,10 +37,10 @@ unsigned int _set_abort_behavior(
 ### Parameters
 
 *flags*
-New value of the `abort` flags.
+New value of the [abort](abort.md) flags.
 
 *mask*
-Mask for the `abort` flags bits to set.
+Mask for the [abort](abort.md) flags bits to set.
 
 ## Return Value
 
@@ -48,7 +48,7 @@ The old value of the flags.
 
 ## Remarks
 
-There are two `abort` flags: `_WRITE_ABORT_MSG` and `_CALL_REPORTFAULT`. `_WRITE_ABORT_MSG` determines whether a helpful text message is printed when a program is abnormally terminated. The message states that the application has called the `abort` function. The default behavior is to print the message. `_CALL_REPORTFAULT`, if set, specifies that a Watson crash dump is generated and reported when `abort` is called. By default, crash dump reporting is enabled in non-DEBUG builds.
+There are two [abort](abort.md) flags: `_WRITE_ABORT_MSG` and `_CALL_REPORTFAULT`. `_WRITE_ABORT_MSG` determines whether a helpful text message is printed when a program is abnormally terminated. The message states that the application has called the [abort](abort.md) function. The default behavior is to print the message. `_CALL_REPORTFAULT`, if set, specifies that a Watson crash dump is generated and reported when [abort](abort.md) is called. By default, crash dump reporting is enabled in non-DEBUG builds.
 
 ## Requirements
 

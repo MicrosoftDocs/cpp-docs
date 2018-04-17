@@ -76,7 +76,7 @@ The versions of these functions with the **_l** suffix are identical except that
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string.
 
-Like the non-secure versions (see [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *format* is a null pointer. These functions differ from the non-secure versions in that the format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions invoke the invalid parameter handler. In all cases, If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+Like the non-secure versions (see [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *format* is a null pointer. These functions differ from the non-secure versions in that the format string itself is also validated. If there are any unknown or badly formed formatting specifiers, these functions invoke the invalid parameter handler. In all cases, If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

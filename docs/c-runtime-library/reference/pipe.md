@@ -50,13 +50,13 @@ File mode.
 
 ## Return Value
 
-Returns 0 if successful. Returns -1 to indicate an error. On error, `errno` is set to one of these values:
+Returns 0 if successful. Returns -1 to indicate an error. On error, **errno** is set to one of these values:
 
 - `EMFILE`, which indicates that no more file descriptors are available.
 
 - `ENFILE`, which indicates a system-file-table overflow.
 
-- `EINVAL`, which indicates that either the array *pfds* is a null pointer or that an invalid value for *textmode* was passed in.
+- **EINVAL**, which indicates that either the array *pfds* is a null pointer or that an invalid value for *textmode* was passed in.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -86,7 +86,7 @@ In the Windows operating system, a pipe is destroyed when all of its descriptors
 
 1 For `_O_BINARY` and `_O_TEXT` definitions.
 
-2 `errno` definitions.
+2 **errno** definitions.
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

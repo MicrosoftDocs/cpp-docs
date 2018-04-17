@@ -60,7 +60,7 @@ If *maxlen* is not greater than zero, the invalid-parameter handler, which is de
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or `NULL`, which indicates an error.
 
-If *buffer* is specified as `NULL` and there is insufficient memory to allocate *maxlen* characters, an error occurs and `errno` is set to `ENOMEM`. If the length of the path,  which includes the terminating null character, exceeds *maxlen*, an error occurs and `errno` is set to `ERANGE`. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as `NULL` and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to `ENOMEM`. If the length of the path,  which includes the terminating null character, exceeds *maxlen*, an error occurs and **errno** is set to `ERANGE`. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

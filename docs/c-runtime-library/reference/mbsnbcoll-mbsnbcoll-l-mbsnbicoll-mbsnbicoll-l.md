@@ -75,7 +75,7 @@ The return value indicates the relation of the substrings of *string1* and *stri
 |0|*string1* substring identical to *string2* substring.|
 |> 0|*string1* substring greater than *string2* substring.|
 
-If *string1* or *string2* is `NULL` or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.
+If *string1* or *string2* is `NULL` or *count* is greater than `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**. To use `_NLSCMPERROR`, include either String.h or Mbstring.h.
 
 ## Remarks
 

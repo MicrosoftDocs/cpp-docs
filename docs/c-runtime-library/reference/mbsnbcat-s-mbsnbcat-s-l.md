@@ -83,11 +83,11 @@ Zero if successful; otherwise, an error code.
 
 |`Dest`|*sizeInBytes*|*src*|Return value|
 |------------|-------------------|-----------|------------------|
-|`NULL`|any|any|`EINVAL`|
-|Any|<= 0|any|`EINVAL`|
-|Any|any|`NULL`|`EINVAL`|
+|`NULL`|any|any|**EINVAL**|
+|Any|<= 0|any|**EINVAL**|
+|Any|any|`NULL`|**EINVAL**|
 
-If any of the error conditions occurs, the function generates an invalid parameter error, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function returns `EINVAL` and sets `errno` to `EINVAL`.
+If any of the error conditions occurs, the function generates an invalid parameter error, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 ## Remarks
 

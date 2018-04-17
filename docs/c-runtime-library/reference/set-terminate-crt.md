@@ -41,11 +41,11 @@ Returns a pointer to the previous function registered by `set_terminate` so that
 
 ## Remarks
 
-The `set_terminate` function installs *termFunction* as the function called by `terminate`. `set_terminate` is used with C++ exception handling and may be called at any point in your program before the exception is thrown. `terminate` calls `abort` by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. After performing any desired cleanup tasks, *termFunction* should exit the program. If it does not exit (if it returns to its caller), `abort` is called.
+The `set_terminate` function installs *termFunction* as the function called by `terminate`. `set_terminate` is used with C++ exception handling and may be called at any point in your program before the exception is thrown. `terminate` calls [abort](abort.md) by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. After performing any desired cleanup tasks, *termFunction* should exit the program. If it does not exit (if it returns to its caller), [abort](abort.md) is called.
 
 In a multithreaded environment, terminate functions are maintained separately for each thread. Each new thread needs to install its own terminate function. Thus, each thread is in charge of its own termination handling.
 
-The `terminate_function` type is defined in EH.H as a pointer to a user-defined termination function, *termFunction* that returns `void`. Your custom function *termFunction* can take no arguments and should not return to its caller. If it does, `abort` is called. An exception may not be thrown from within *termFunction*.
+The `terminate_function` type is defined in EH.H as a pointer to a user-defined termination function, *termFunction* that returns `void`. Your custom function *termFunction* can take no arguments and should not return to its caller. If it does, [abort](abort.md) is called. An exception may not be thrown from within *termFunction*.
 
 ```cpp
 typedef void ( *terminate_function )( );

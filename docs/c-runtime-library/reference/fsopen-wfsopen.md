@@ -52,7 +52,7 @@ Type of sharing allowed.
 
 ## Return Value
 
-Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *filename* or *mode* is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set `errno` to `EINVAL`.
+Each of these functions returns a pointer to the stream. A null pointer value indicates an error. If *filename* or *mode* is `NULL` or an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `NULL` and set **errno** to **EINVAL**.
 
 For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -81,8 +81,8 @@ Zero if successful; an error code on failure.
 
 |*strDestination*|*numberOfElements*|*strSource*|Return value|Contents of *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|`NULL` or unterminated|any|any|`EINVAL`|not modified|
-|any|any|`NULL`|`EINVAL`|*strDestination*[0] set to 0|
+|`NULL` or unterminated|any|any|**EINVAL**|not modified|
+|any|any|`NULL`|**EINVAL**|*strDestination*[0] set to 0|
 |any|0, or too small|any|`ERANGE`|*strDestination*[0] set to 0|
 
 ## Remarks
@@ -100,7 +100,7 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 
 `wcscat_s` and `_mbscat_s` are wide-character and multibyte-character versions of `strcat_s`. The arguments and return value of `wcscat_s` are wide-character strings; those of `_mbscat_s` are multibyte-character strings. These three functions behave identically otherwise.
 
-If *strDestination* is a null pointer, or is not null-terminated, or if *strSource* is a `NULL` pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+If *strDestination* is a null pointer, or is not null-terminated, or if *strSource* is a `NULL` pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

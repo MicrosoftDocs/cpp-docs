@@ -46,7 +46,7 @@ Variable argument list.
 
 ## Return Value
 
-Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `vscanf_s` and `vwscanf_s` return `EOF` and set `errno` to `EINVAL`.
+Returns the number of fields successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. The return value is `EOF` for an error, or if the end-of-file character or the end-of-string character is encountered in the first attempt to read a character. If *format* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `vscanf_s` and `vwscanf_s` return `EOF` and set **errno** to **EINVAL**.
 
 For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

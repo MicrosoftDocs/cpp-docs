@@ -94,7 +94,7 @@ Each of these functions returns the number of characters in *str*, not including
 
 `strnlen_s` and `wcsnlen_s` validate their parameters. If *str* is `NULL`, the functions return 0.
 
-`_mbstrnlen` also validates its parameters. If *str* is `NULL`, or if *numberOfElements* is greater than `INT_MAX`, `_mbstrnlen` generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbstrnlen` sets `errno` to `EINVAL` and returns -1.
+`_mbstrnlen` also validates its parameters. If *str* is `NULL`, or if *numberOfElements* is greater than `INT_MAX`, `_mbstrnlen` generates an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `_mbstrnlen` sets **errno** to **EINVAL** and returns -1.
 
 ### Generic-Text Routine Mappings
 
@@ -104,7 +104,7 @@ Each of these functions returns the number of characters in *str*, not including
 |`_tcscnlen`|`strnlen`|`_mbsnlen`|`wcsnlen`|
 |`_tcscnlen_l`|`strnlen`|`_mbsnlen_l`|`wcsnlen`|
 
-`_mbsnlen` and `_mbstrnlen` return the number of multibyte characters in a multibyte-character string. `_mbsnlen` recognizes multibyte-character sequences according to the multibyte code page that's currently in use or according to the locale that's passed in; it does not test for multibyte-character validity. `_mbstrnlen` tests for multibyte-character validity and recognizes multibyte-character sequences. If the string that's passed to `_mbstrnlen` contains an invalid multibyte character, `errno` is set to `EILSEQ`.
+`_mbsnlen` and `_mbstrnlen` return the number of multibyte characters in a multibyte-character string. `_mbsnlen` recognizes multibyte-character sequences according to the multibyte code page that's currently in use or according to the locale that's passed in; it does not test for multibyte-character validity. `_mbstrnlen` tests for multibyte-character validity and recognizes multibyte-character sequences. If the string that's passed to `_mbstrnlen` contains an invalid multibyte character, **errno** is set to `EILSEQ`.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale, _wsetlocale](setlocale-wsetlocale.md) for more information. The versions of these functions are identical, except that the ones that don't have the **_l** suffix use the current locale for this locale-dependent behavior and the versions that have the **_l** suffix instead use the locale parameter that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 

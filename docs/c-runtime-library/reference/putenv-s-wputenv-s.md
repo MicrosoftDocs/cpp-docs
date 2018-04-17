@@ -56,10 +56,10 @@ Returns 0 if successful, or an error code.
 
 |*varname*|*value_string*|Return value|
 |------------|-------------|------------------|
-|`NULL`|any|`EINVAL`|
-|any|`NULL`|`EINVAL`|
+|`NULL`|any|**EINVAL**|
+|any|`NULL`|**EINVAL**|
 
-If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+If one of the error conditions occurs, these functions invoke an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
 
 ## Remarks
 

@@ -87,12 +87,12 @@ File information buffer.
 
 ## Return Value
 
-If successful, returns 0. Otherwise, returns -1 and sets `errno` to a value indicating the nature of the failure. Possible error codes are shown in the following table.
+If successful, returns 0. Otherwise, returns -1 and sets **errno** to a value indicating the nature of the failure. Possible error codes are shown in the following table.
 
 |errno value|Condition|
 |-|-|
-`EINVAL`|Invalid parameter: *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
-`ENOENT`|No more matching files could be found.
+**EINVAL**|Invalid parameter: *fileinfo* was `NULL`. Or, the operating system returned an unexpected error.
+**ENOENT**|No more matching files could be found.
 `ENOMEM`|Not enough memory or the file name's length exceeded `MAX_PATH`.
 
 If an invalid parameter is passed in, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).

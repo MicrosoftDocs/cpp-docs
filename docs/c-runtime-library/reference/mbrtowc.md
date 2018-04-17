@@ -60,7 +60,7 @@ The next *count* or fewer bytes complete the multibyte character that represents
 The next *count* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character. The wide character equivalent is stored in *wchar*, if *wchar* is not a null pointer.
 
 (size_t)(-1)
-An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, `errno` is set to EILSEQ and the conversion shift state in *mbstate* is unspecified.
+An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, **errno** is set to EILSEQ and the conversion shift state in *mbstate* is unspecified.
 
 (size_t)(-2)
 The next *count* bytes contribute to an incomplete but potentially valid multibyte character, and all *count* bytes have been processed. No value is stored in *wchar*, but *mbstate* is updated to restart the function.

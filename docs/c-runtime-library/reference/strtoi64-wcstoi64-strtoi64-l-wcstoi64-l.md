@@ -71,7 +71,7 @@ The locale to use.
 
 `_I64_MAX` and `_I64_MIN` are defined in LIMITS.H.
 
-If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, `errno` is set to `EINVAL`.
+If *strSource* is `NULL` or the *base* is nonzero and either less than 2 or greater than 36, **errno** is set to **EINVAL**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
 

@@ -67,7 +67,7 @@ Line number in the source file where the allocation operation was requested or `
 
 ## Return Value
 
-Returns a pointer to *buffer*. A `NULL` return value indicates an error, and `errno` is set either to `ENOMEM`, indicating that there is insufficient memory to allocate *maxlen* bytes (when a `NULL` argument is given as *buffer*), or to `ERANGE`, indicating that the path is longer than *maxlen* characters. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Returns a pointer to *buffer*. A `NULL` return value indicates an error, and **errno** is set either to `ENOMEM`, indicating that there is insufficient memory to allocate *maxlen* bytes (when a `NULL` argument is given as *buffer*), or to `ERANGE`, indicating that the path is longer than *maxlen* characters. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

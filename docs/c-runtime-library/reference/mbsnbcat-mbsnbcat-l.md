@@ -82,7 +82,7 @@ The output value is affected by the setting of the `LC_CTYPE` category setting o
 
 **Security Note** Use a null-terminated string. The null-terminated string must not exceed the size of the destination buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
-If *dest* or *src* is `NULL`, the function will generate an invalid parameter error, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function returns `EINVAL` and sets `errno` to `EINVAL`.
+If *dest* or *src* is `NULL`, the function will generate an invalid parameter error, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If the error is handled, the function returns **EINVAL** and sets **errno** to **EINVAL**.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

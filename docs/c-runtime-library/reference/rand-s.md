@@ -35,7 +35,7 @@ A pointer to an integer to hold the generated value.
 
 ## Return Value
 
-Zero if successful, otherwise, an error code. If the input pointer _randomValue_ is a null pointer, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `EINVAL` and sets `errno` to `EINVAL`. If the function fails for any other reason, *_randomValue_ is set to 0.
+Zero if successful, otherwise, an error code. If the input pointer _randomValue_ is a null pointer, the function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns **EINVAL** and sets **errno** to **EINVAL**. If the function fails for any other reason, *_randomValue_ is set to 0.
 
 ## Remarks
 

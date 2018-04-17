@@ -41,7 +41,7 @@ Permission setting for the file.
 
 ## Return Value
 
-These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file could not be found, `errno` is set to `ENOENT`; if a parameter is invalid, `errno` is set to `EINVAL`.
+These functions return 0 if the permission setting is successfully changed. A return value of -1 indicates failure. If the specified file could not be found, **errno** is set to **ENOENT**; if a parameter is invalid, **errno** is set to **EINVAL**.
 
 ## Remarks
 
@@ -57,7 +57,7 @@ When both constants are given, they are joined with the bitwise `OR` operator ( 
 
 `_wchmod` is a wide-character version of `_chmod`; the *filename* argument to `_wchmod` is a wide-character string. `_wchmod` and `_chmod` behave identically otherwise.
 
-This function validates its parameters. If *pmode* is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores those. If *filename* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
+This function validates its parameters. If *pmode* is not a combination of one of the manifest constants or incorporates an alternate set of constants, the function simply ignores those. If *filename* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
 
 ### Generic-Text Routine Mappings
 

@@ -69,7 +69,7 @@ The routine compares the elements and returns one of the following values.
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-This function validates its parameters. If *compare* or *number* is `NULL`, or if *base* is `NULL` and **number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and `errno` is set to `EINVAL`.
+This function validates its parameters. If *compare* or *number* is `NULL`, or if *base* is `NULL` and **number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **errno** is set to **EINVAL**.
 
 ## Requirements
 

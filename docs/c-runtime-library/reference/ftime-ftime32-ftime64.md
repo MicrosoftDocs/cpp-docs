@@ -52,7 +52,7 @@ The `_ftime64` function, which uses the `__timeb64` structure, allows file-creat
 
 The `_ftime` function is equivalent to `_ftime64`, and `_timeb` contains a 64-bit time unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime` uses a 32-bit time and `_timeb` contains a 32-bit time.
 
-`_ftime` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.
+`_ftime` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
 
 ## Requirements
 

@@ -69,7 +69,7 @@ Locale to use.
 
 The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in *str* that does not belong to the set of characters in *charset*. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.
 
-If either *str* or *charset* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
+If either *str* or *charset* is a null pointer, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

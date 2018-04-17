@@ -61,7 +61,7 @@ The `_recalloc` function changes the size of an allocated memory block. The *mem
 
 Because the new block can be in a new memory location, the pointer returned by `_recalloc` is not guaranteed to be the pointer passed through the *memblock* argument.
 
-`_recalloc` sets `errno` to `ENOMEM` if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+`_recalloc` sets **errno** to `ENOMEM` if the memory allocation fails or if the amount of memory requested exceeds `_HEAP_MAXREQ`. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 `recalloc` calls `realloc` in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, `realloc` is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, `realloc` does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when `_recalloc` fails to allocate memory, `realloc` calls the new handler routine in the same way that the `new` operator does when it fails for the same reason. To override the default, call
 

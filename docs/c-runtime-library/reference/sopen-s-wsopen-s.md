@@ -62,17 +62,17 @@ Permission setting.
 
 ## Return Value
 
-A nonzero return value indicates an error; in that case `errno` is set to one of the following values.
+A nonzero return value indicates an error; in that case **errno** is set to one of the following values.
 
 |errno value|Condition|
 |-|-|
-`EACCES`| The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
+**EACCES**| The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
 `EEXIST`| `_O_CREAT` and `_O_EXCL` flags were specified, but *filename* already exists.
-`EINVAL`| Invalid *oflag*, *shflag*, or *pmode* argument, or *pfh* or *filename* was a null pointer.
+**EINVAL**| Invalid *oflag*, *shflag*, or *pmode* argument, or *pfh* or *filename* was a null pointer.
 `EMFILE`|No more file descriptors available.
-`ENOENT`|File or path not found.
+**ENOENT**|File or path not found.
 
-If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and `EINVAL` is returned.
+If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **EINVAL** is returned.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

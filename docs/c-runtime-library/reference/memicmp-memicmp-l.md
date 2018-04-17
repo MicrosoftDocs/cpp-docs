@@ -69,7 +69,7 @@ The return value indicates the relationship between the buffers.
 
 The `_memicmp` function compares the first *count* characters of the two buffers *buffer1* and *buffer2* byte by byte. The comparison is not case-sensitive.
 
-If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
+If either *buffer1* or *buffer2* is a null pointer, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets **errno** to **EINVAL**.
 
 `_memicmp` uses the current locale for locale-dependent behavior; `_memicmp_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

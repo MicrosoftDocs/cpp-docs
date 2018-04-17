@@ -51,9 +51,9 @@ The index of one of the two time zone names to retrieve.
 
 ## Return Value
 
-Zero if successful, otherwise an `errno` type value.
+Zero if successful, otherwise an **errno** type value.
 
-If either *timeZoneName* is `NULL`, or *sizeInBytes* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+If either *timeZoneName* is `NULL`, or *sizeInBytes* is zero or less than zero (but not both), an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ### Error Conditions
 
@@ -61,9 +61,9 @@ If either *timeZoneName* is `NULL`, or *sizeInBytes* is zero or less than zero (
 |--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
 |size of TZ name|`NULL`|0|0 or 1|0|not modified|
 |size of TZ name|any|> 0|0 or 1|0|TZ name|
-|not modified|`NULL`|> 0|any|`EINVAL`|not modified|
-|not modified|any|zero|any|`EINVAL`|not modified|
-|not modified|any|> 0|> 1|`EINVAL`|not modified|
+|not modified|`NULL`|> 0|any|**EINVAL**|not modified|
+|not modified|any|zero|any|**EINVAL**|not modified|
+|not modified|any|> 0|> 1|**EINVAL**|not modified|
 
 ## Remarks
 
@@ -75,7 +75,7 @@ The `_get_tzname` function retrieves the character string representation of the 
 |-------------|--------------------------------|----------------------------------|
 |0|Time zone name|"PST"|
 |1|Daylight standard time zone name|"PDT"|
-|> 1 or < 0|`errno` set to `EINVAL`|not modified|
+|> 1 or < 0|**errno** set to **EINVAL**|not modified|
 
 Unless the values are explicitly changed during run time, the default values are "PST" and "PDT" respectively.  The sizes of these character arrays are governed by `TZNAME_MAX` value.
 

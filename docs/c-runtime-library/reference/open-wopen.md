@@ -52,15 +52,15 @@ Permission mode.
 
 ## Return Value
 
-Each of these functions returns a file descriptor for the opened file. A return value of -1 indicates an error; in that case `errno` is set to one of the following values.
+Each of these functions returns a file descriptor for the opened file. A return value of -1 indicates an error; in that case **errno** is set to one of the following values.
 
 |errno value|Condition|
 |-|-|
-`EACCES`|Tried to open a read-only file for writing, file's sharing mode does not allow the specified operations, or the given path is a directory.
+**EACCES**|Tried to open a read-only file for writing, file's sharing mode does not allow the specified operations, or the given path is a directory.
 `EEXIST`|`_O_CREAT` and `_O_EXCL` flags specified, but *filename* already exists.
-`EINVAL`|Invalid *oflag* or *pmode* argument.
+**EINVAL**|Invalid *oflag* or *pmode* argument.
 `EMFILE`|No more file descriptors are available (too many files are open).
-`ENOENT`|File or path not found.
+**ENOENT**|File or path not found.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -116,7 +116,7 @@ The *pmode* argument is required only when `_O_CREAT` is specified. If the file 
 
 When both constants are given, they are joined with the bitwise-OR operator ( `|` ). In Windows, all files are readable; write-only permission is not available. Therefore, the modes `_S_IWRITE` and `_S_IREAD` | `_S_IWRITE` are equivalent.
 
-If a value other than some combination of `_S_IREAD` and `_S_IWRITE` is specified for *pmode*—even if it would specify a valid *pmode* in another operating system—or if any value other than the allowed *oflag* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.
+If a value other than some combination of `_S_IREAD` and `_S_IWRITE` is specified for *pmode*—even if it would specify a valid *pmode* in another operating system—or if any value other than the allowed *oflag* values is specified, the function generates an assertion in Debug mode and invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
 
 ## Requirements
 

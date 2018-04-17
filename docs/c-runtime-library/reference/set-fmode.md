@@ -39,13 +39,13 @@ The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value
 
-Returns zero if successful, an error code on failure. If *mode* is not `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `EINVAL`.
+Returns zero if successful, an error code on failure. If *mode* is not `_O_TEXT` or `_O_BINARY` or `_O_WTEXT`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **EINVAL**.
 
 ## Remarks
 
 The function sets the [_fmode](../../c-runtime-library/fmode.md) global variable. This variable specifies the default file translation mode for the file I/O operations `_open` and `_pipe`.
 
-`_O_TEXT` and `_O_BINARY` are defined in Fcntl.h. `EINVAL` is defined in Errno.h.
+`_O_TEXT` and `_O_BINARY` are defined in Fcntl.h. **EINVAL** is defined in Errno.h.
 
 ## Requirements
 

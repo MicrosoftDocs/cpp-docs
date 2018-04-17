@@ -61,7 +61,7 @@ Each of these functions returns an error code. If an error occurs, the original 
 
 ## Remarks
 
-The **freopen_s** function closes the file currently associated with *stream* and reassigns *stream* to the file specified by `path.` **_wfreopen_s** is a wide-character version of **_freopen_s**; the *path* and *mode* arguments to **_wfreopen_s** are wide-character strings. **_wfreopen_s** and **_freopen_s** behave identically otherwise.
+The **freopen_s** function closes the file currently associated with *stream* and reassigns *stream* to the file specified by *path*. **_wfreopen_s** is a wide-character version of **_freopen_s**; the *path* and *mode* arguments to **_wfreopen_s** are wide-character strings. **_wfreopen_s** and **_freopen_s** behave identically otherwise.
 
 If any of *pFile*, *path*, *mode*, or *stream* are **NULL**, or if *path* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 

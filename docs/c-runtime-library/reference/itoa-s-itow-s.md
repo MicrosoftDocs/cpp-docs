@@ -85,10 +85,10 @@ Zero if successful; an error code on failure. If any of the following conditions
 
 |value|buffer|size|radix|Return|
 |-----------|------------|----------------------|-----------|------------|
-|any|`NULL`|any|any|`EINVAL`|
-|any|any|<=0|any|`EINVAL`|
-|any|any|<= length of the result string required|any|`EINVAL`|
-|any|any|any|*radix* < 2 or *radix* > 36|`EINVAL`|
+|any|`NULL`|any|any|**EINVAL**|
+|any|any|<=0|any|**EINVAL**|
+|any|any|<= length of the result string required|any|**EINVAL**|
+|any|any|any|*radix* < 2 or *radix* > 36|**EINVAL**|
 
 ### Security issues
 

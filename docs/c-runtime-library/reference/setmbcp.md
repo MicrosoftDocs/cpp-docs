@@ -39,7 +39,7 @@ New code page setting for locale-independent multibyte routines.
 
 ## Return Value
 
-Returns 0 if the code page is set successfully. If an invalid code page value is supplied for *codepage*, returns -1 and the code page setting is unchanged. Sets `errno` to `EINVAL` if a memory allocation failure occurs.
+Returns 0 if the code page is set successfully. If an invalid code page value is supplied for *codepage*, returns -1 and the code page setting is unchanged. Sets **errno** to **EINVAL** if a memory allocation failure occurs.
 
 ## Remarks
 

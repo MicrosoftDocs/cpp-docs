@@ -73,9 +73,9 @@ Points to a 32-bit variable that receives the thread identifier. If it's NULL, i
 
 ## Return Value
 
-If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, `_beginthread` might not return a valid handle. (See the discussion in the Remarks section.) On an error, `_beginthread` returns -1L, and `errno` is set to `EAGAIN` if there are too many threads, to `EINVAL` if the argument is invalid or the stack size is incorrect, or to `EACCES` if there are insufficient resources (such as memory). On an error, `_beginthreadex` returns 0, and `errno` and `_doserrno` are set.
+If successful, each of these functions returns a handle to the newly created thread; however, if the newly created thread exits too quickly, `_beginthread` might not return a valid handle. (See the discussion in the Remarks section.) On an error, `_beginthread` returns -1L, and **errno** is set to `EAGAIN` if there are too many threads, to **EINVAL** if the argument is invalid or the stack size is incorrect, or to **EACCES** if there are insufficient resources (such as memory). On an error, `_beginthreadex` returns 0, and **errno** and `_doserrno` are set.
 
-If *start_address* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1.
+If *start_address* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -108,7 +108,7 @@ You can call [_endthread](endthread-endthreadex.md) or `_endthreadex` explicitly
 
 The operating system handles the allocation of the stack when either `_beginthread` or `_beginthreadex` is called; you don't have to pass the address of the thread stack to either of these functions. In addition, the *stack_size* argument can be 0, in which case the operating system uses the same value as the stack that's specified for the main thread.
 
-*arglist* is a parameter to be passed to the newly created thread. Typically, it is the address of a data item, such as a character string. *arglist* can be NULL if it is not needed, but `_beginthread` and `_beginthreadex` must be given some value to pass to the new thread. All threads are terminated if any thread calls `abort`, `exit`, `_exit`, or `ExitProcess`.
+*arglist* is a parameter to be passed to the newly created thread. Typically, it is the address of a data item, such as a character string. *arglist* can be NULL if it is not needed, but `_beginthread` and `_beginthreadex` must be given some value to pass to the new thread. All threads are terminated if any thread calls [abort](abort.md), `exit`, `_exit`, or `ExitProcess`.
 
 The locale of the new thread is initialized by using the per-process global current locale info. If per-thread locale is enabled by a call to [_configthreadlocale](configthreadlocale.md) (either globally or for new threads only), the thread can change its locale independently from other threads by calling `setlocale` or `_wsetlocale`. Threads that don't have the per-thread locale flag set can affect the locale info in all other threads that also don't have the per-thread locale flag set, as well as all newly-created threads. For more information, see [Locale](../../c-runtime-library/locale.md).
 

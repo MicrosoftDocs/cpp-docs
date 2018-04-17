@@ -49,7 +49,7 @@ _set_new_mode(1);
 
 early in your program or link with Newmode.obj (see [Link Options](../../c-runtime-library/link-options.md)).
 
-This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_**`set_new_mode` returns -1 and sets `errno` to `EINVAL`.
+This function validates its parameter. If *newhandlermode* is anything other than 0 or 1, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_**`set_new_mode` returns -1 and sets **errno** to **EINVAL**.
 
 ## Requirements
 

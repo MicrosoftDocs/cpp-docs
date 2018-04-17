@@ -67,7 +67,7 @@ Locale to use.
 
 ## Return Value
 
-`strtol` returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns `LONG_MAX` or `LONG_MIN`. `strtol` returns 0 if no conversion can be performed. `wcstol` returns values analogously to `strtol`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
+`strtol` returns the value represented in the string *strSource*, except when the representation would cause an overflow, in which case it returns `LONG_MAX` or `LONG_MIN`. `strtol` returns 0 if no conversion can be performed. `wcstol` returns values analogously to `strtol`. For both functions, **errno** is set to `ERANGE` if overflow or underflow occurs.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.
 

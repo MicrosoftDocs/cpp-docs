@@ -116,7 +116,7 @@ int main() {
 
 An alternative is to call [_create_locale, _wcreate_locale](create-locale-wcreate-locale.md) and pass the returned locale object as a parameter to `_wcsicmp_l`.
 
-All of these functions validate their parameters. If either *string1* or *string2* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* are null pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

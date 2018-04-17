@@ -67,7 +67,7 @@ For more information, see [Format Specification Syntax: printf and wprintf Funct
 
 The number of characters written, or a negative value if an output error occurs.
 
-Like the less secure versions of these functions, if *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *format* does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set `errno` to that error code. The default error code is `EINVAL` if a more specific value does not apply.
+Like the less secure versions of these functions, if *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). Additionally, unlike the less secure versions of these functions, if *format* does not specify a valid format, an invalid parameter exception is generated. If execution is allowed to continue, these functions return an error code and set **errno** to that error code. The default error code is **EINVAL** if a more specific value does not apply.
 
 ## Remarks
 

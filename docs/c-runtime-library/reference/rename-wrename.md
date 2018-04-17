@@ -47,13 +47,13 @@ Pointer to new name.
 
 ## Return Value
 
-Each of these functions returns 0 if it is successful. On an error, the function returns a nonzero value and sets `errno` to one of the following values:
+Each of these functions returns 0 if it is successful. On an error, the function returns a nonzero value and sets **errno** to one of the following values:
 
 |errno value|Condition|
 |-|-|
-`EACCES`|File or directory specified by *newname* already exists or could not be created (invalid path); or *oldname* is a directory and *newname* specifies a different path.
-`ENOENT`|File or path specified by *oldname* not found.
-`EINVAL`|Name contains invalid characters.
+**EACCES**|File or directory specified by *newname* already exists or could not be created (invalid path); or *oldname* is a directory and *newname* specifies a different path.
+**ENOENT**|File or path specified by *oldname* not found.
+**EINVAL**|Name contains invalid characters.
 
 For other possible return values, see [_doserrno, _errno, syserrlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

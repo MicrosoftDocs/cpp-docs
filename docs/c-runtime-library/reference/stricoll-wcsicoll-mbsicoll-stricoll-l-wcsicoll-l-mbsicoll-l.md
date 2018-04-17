@@ -78,7 +78,7 @@ Each of these functions returns a value indicating the relationship of *string1*
 |> 0|*string1* greater than *string2*|
 |`_NLSCMPERROR`|An error occurred.|
 
-Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either `STRING.H` or `MBSTRING.H`. `_wcsicoll` can fail if either *string1* or *string2* contains wide-character codes outside the domain of the collating sequence. When an error occurs, `_wcsicoll` may set `errno` to `EINVAL`. To check for an error on a call to `_wcsicoll`, set `errno` to 0 and then check `errno` after calling `_wcsicoll`.
+Each of these functions returns `_NLSCMPERROR`. To use `_NLSCMPERROR`, include either `STRING.H` or `MBSTRING.H`. `_wcsicoll` can fail if either *string1* or *string2* contains wide-character codes outside the domain of the collating sequence. When an error occurs, `_wcsicoll` may set **errno** to **EINVAL**. To check for an error on a call to `_wcsicoll`, set **errno** to 0 and then check **errno** after calling `_wcsicoll`.
 
 ## Remarks
 
@@ -86,7 +86,7 @@ Each of these functions performs a case-insensitive comparison of *string1* and 
 
 `_stricmp` differs from `_stricoll` in that the `_stricmp` comparison is affected by `LC_CTYPE`, whereas the `_stricoll` comparison is according to the `LC_CTYPE` and `LC_COLLATE` categories of the locale. For more information on the `LC_COLLATE` category, see [setlocale](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale; the versions with the **_l** suffix are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* are `NULL` pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* are `NULL` pointers, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

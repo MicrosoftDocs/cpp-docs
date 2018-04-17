@@ -59,7 +59,7 @@ Returns the number of bytes required to represent the converted multibyte charac
 
 The `wcrtomb` function converts a wide character, beginning in the specified conversion state contained in *mbstate*, from the value contained in *wchar*, into the address represented by *mbchar*. The return value is the number of bytes required to represent the corresponding multibyte character, but it will not return more than `MB_CUR_MAX` bytes.
 
-If *mbstate* is null, the internal `mbstate_t` object containing the conversion state of *mbchar* is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the `errno` is set to `EILSEQ`.
+If *mbstate* is null, the internal `mbstate_t` object containing the conversion state of *mbchar* is used. If the character sequence *wchar* does not have a corresponding multibyte character representation, a -1 is returned and the **errno** is set to `EILSEQ`.
 
 The `wcrtomb` function differs from [wctomb, _wctomb_l](wctomb-wctomb-l.md) by its restartability. The conversion state is stored in *mbstate* for subsequent calls to the same or other restartable functions. Results are undefined when mixing the use of restartable and nonrestartable functions. For example, an application would use `wcsrlen` rather than `wcsnlen`, if a subsequent call to `wcsrtombs` were used instead of `wcstombs`.
 

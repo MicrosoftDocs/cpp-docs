@@ -82,7 +82,7 @@ Locale to use.
 
 `_mbsnccnt` and `_mbsnccnt_l` count the number of characters found in the first *count* of bytes of *str*. If `_mbsnccnt` and `_mbsnccnt_l` encounter a NULL in the second byte of a double-byte character, the first byte is also considered to be NULL and is not included in the returned count value. `_mbsnccnt` and `_mbsnccnt_l` replace `btom` and should be used in place of `btom`.
 
-If *str* is a null pointer or is *count* is 0, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), `errno` is set to `EINVAL`, and the function returns 0.
+If *str* is a null pointer or is *count* is 0, these functions invoke the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), **errno** is set to **EINVAL**, and the function returns 0.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

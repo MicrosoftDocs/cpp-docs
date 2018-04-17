@@ -95,7 +95,7 @@ The characters from 91 to 96 in the ASCII table ('[', '\\', ']', '^', '_', and '
 
 `_wcsnicmp` and `_mbsnicmp` are wide-character and multibyte-character versions of `_strnicmp`. The arguments of `_wcsnicmp` are wide-character strings; those of `_mbsnicmp` are multibyte-character strings. `_mbsnicmp` recognizes multibyte-character sequences according to the current multibyte code page and returns `_NLSCMPERROR` on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise. These functions are affected by the locale setting—the versions that don't have the **_l** suffix use the current locale for their locale-dependent behavior; the versions that do have the **_l** suffix instead use the *locale* that's passed in. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set `errno` to `EINVAL`.
+All of these functions validate their parameters. If either *string1* or *string2* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `_NLSCMPERROR` and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

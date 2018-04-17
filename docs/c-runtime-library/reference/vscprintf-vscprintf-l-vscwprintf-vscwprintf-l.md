@@ -66,7 +66,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 ## Remarks
 

@@ -104,19 +104,19 @@ Zero if successful; an error code on failure.
 
 |Condition|Return Value|
 |---------------|------------------|
-|*path* is `NULL`|`EINVAL`|
-|*drive* is `NULL`, *driveNumberOfElements* is non-zero|`EINVAL`|
-|*drive* is non-`NULL`, *driveNumberOfElements* is zero|`EINVAL`|
-|*dir* is `NULL`, *dirNumberOfElements* is non-zero|`EINVAL`|
-|*dir* is non-`NULL`, *dirNumberOfElements* is zero|`EINVAL`|
-|*fname* is `NULL`, *nameNumberOfElements* is non-zero|`EINVAL`|
-|*fname* is non-`NULL`, *nameNumberOfElements* is zero|`EINVAL`|
-|*ext* is `NULL`, *extNumberOfElements* is non-zero|`EINVAL`|
-|*ext* is non-`NULL`, *extNumberOfElements* is zero|`EINVAL`|
+|*path* is `NULL`|**EINVAL**|
+|*drive* is `NULL`, *driveNumberOfElements* is non-zero|**EINVAL**|
+|*drive* is non-`NULL`, *driveNumberOfElements* is zero|**EINVAL**|
+|*dir* is `NULL`, *dirNumberOfElements* is non-zero|**EINVAL**|
+|*dir* is non-`NULL`, *dirNumberOfElements* is zero|**EINVAL**|
+|*fname* is `NULL`, *nameNumberOfElements* is non-zero|**EINVAL**|
+|*fname* is non-`NULL`, *nameNumberOfElements* is zero|**EINVAL**|
+|*ext* is `NULL`, *extNumberOfElements* is non-zero|**EINVAL**|
+|*ext* is non-`NULL`, *extNumberOfElements* is zero|**EINVAL**|
 
-If any of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+If any of the above conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
-If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set `errno` to `ERANGE`, and return `ERANGE`.
+If any of the buffers is too short to hold the result, these functions clear all the buffers to empty strings, set **errno** to `ERANGE`, and return `ERANGE`.
 
 ## Remarks
 

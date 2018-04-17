@@ -42,7 +42,7 @@ Path of new working directory.
 
 ## Return Value
 
-These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path could not be found, `errno` is set to `ENOENT`. If *dirname* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns -1.
+These functions return a value of 0 if successful. A return value of -1 indicates failure. If the specified path could not be found, **errno** is set to **ENOENT**. If *dirname* is NULL, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns -1.
 
 ## Remarks
 

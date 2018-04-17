@@ -61,7 +61,7 @@ If the key is found, `_lfind` returns a pointer to the element of the array at *
 
 The `_lfind` function performs a linear search for the value *key* in an array of *number* elements, each of *width* bytes. Unlike `bsearch`, `_lfind` does not require the array to be sorted. The *base* argument is a pointer to the base of the array to be searched. The *compare* argument is a pointer to a user-supplied routine that compares two array elements and then returns a value specifying their relationship. `_lfind` calls the *compare* routine one or more times during the search, passing pointers to two array elements on each call. The *compare* routine must compare the elements and then return nonzero (meaning the elements are different) or 0 (meaning the elements are identical).
 
-This function validates its parameters. If *compare*, *key* or *number* is `NULL`, or if *base* is NULL and **number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`.
+This function validates its parameters. If *compare*, *key* or *number* is `NULL`, or if *base* is NULL and **number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `NULL`.
 
 ## Requirements
 

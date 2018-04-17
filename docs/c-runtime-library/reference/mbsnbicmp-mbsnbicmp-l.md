@@ -67,7 +67,7 @@ Two strings containing characters located between 'Z' and 'a' in the ASCII table
 
 `_mbsnbicmp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. It is not affected by the current locale setting.
 
-If either *string1* or *string2* is a null pointer, `_mbsnbicmp` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets `errno` to `EINVAL`.
+If either *string1* or *string2* is a null pointer, `_mbsnbicmp` invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `_NLSCMPERROR` and sets **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

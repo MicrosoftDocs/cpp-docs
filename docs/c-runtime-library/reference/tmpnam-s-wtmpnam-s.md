@@ -62,10 +62,10 @@ Both of these functions return 0 if successful or an error number on failure.
 |||||
 |-|-|-|-|
 |*str*|*sizeInChars*|**Return Value**|**Contents of**  *str*|
-|`NULL`|any|`EINVAL`|not modified|
+|`NULL`|any|**EINVAL**|not modified|
 |not `NULL` (points to valid memory)|too short|`ERANGE`|not modified|
 
-If *str* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+If *str* is `NULL`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
 ## Remarks
 

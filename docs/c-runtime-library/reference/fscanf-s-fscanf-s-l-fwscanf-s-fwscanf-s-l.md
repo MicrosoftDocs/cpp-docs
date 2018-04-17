@@ -69,7 +69,7 @@ The locale to use.
 
 Each of these functions returns the number of fields that are successfully converted and assigned; the return value does not include fields that were read but not assigned. A return value of 0 indicates that no fields were assigned. If an error occurs, or if the end of the file stream is reached before the first conversion, the return value is `EOF` for `fscanf_s` and `fwscanf_s`.
 
-These functions validate their parameters. If *stream* is an invalid file pointer, or *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set `errno` to `EINVAL`.
+These functions validate their parameters. If *stream* is an invalid file pointer, or *format* is a null pointer, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EOF` and set **errno** to **EINVAL**.
 
 ## Remarks
 

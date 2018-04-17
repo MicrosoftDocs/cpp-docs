@@ -72,7 +72,7 @@ when the absolute path (actual file system location) of the file might be:
 
 If `_DEBUG` and `_CRTDBG_MAP_ALLOC` are both defined, calls to `_fullpath` and `_wfullpath` are replaced by calls to `_fullpath_dbg` and `_wfullpath_dbg` to allow for debugging memory allocations. For more information, see [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
 
-This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets `errno` to `EINVAL` and returns `NULL`.
+This function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if *maxlen* is less than or equal to 0. If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns `NULL`.
 
 ### Generic-Text Routine Mappings
 

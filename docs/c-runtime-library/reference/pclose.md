@@ -42,7 +42,7 @@ Return value from the previous call to `_popen`.
 
 ## Return Value
 
-Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for `_cwait`, except the low-order and high-order bytes are swapped. If stream is **NULL**, `_pclose` sets `errno` to `EINVAL` and returns -1.
+Returns the exit status of the terminating command processor, or -1 if an error occurs. The format of the return value is the same as that for `_cwait`, except the low-order and high-order bytes are swapped. If stream is **NULL**, `_pclose` sets **errno** to **EINVAL** and returns -1.
 
 For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

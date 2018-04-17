@@ -68,7 +68,7 @@ The string result produced by `asctime` contains exactly 26 characters and has t
 
 `_wasctime` is a wide-character version of `asctime`. `_wasctime` and `asctime` behave identically otherwise.
 
-These functions validate their parameters. If *timeptr* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets `errno` to `EINVAL`.
+These functions validate their parameters. If *timeptr* is a null pointer, or if it contains out-of-range values, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns `NULL` and sets **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mapping
 

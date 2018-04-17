@@ -67,7 +67,7 @@ The locale to use.
 
 ## Return Value
 
-`fprintf` returns the number of bytes written. `fwprintf` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *stream* or *format* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`. The format string is not checked for valid formatting characters as it is when using `fprintf_s` or `fwprintf_s`.
+`fprintf` returns the number of bytes written. `fwprintf` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs. If *stream* or *format* is `NULL`, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**. The format string is not checked for valid formatting characters as it is when using `fprintf_s` or `fwprintf_s`.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

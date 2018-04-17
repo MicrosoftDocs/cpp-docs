@@ -70,7 +70,7 @@ These functions differ from `_vscprintf` and `_vscwprintf` only in that they sup
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+If *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 > [!IMPORTANT]
 >  Ensure that if *format* is a user-defined string, it is null terminated and has the correct number and type of parameters. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).

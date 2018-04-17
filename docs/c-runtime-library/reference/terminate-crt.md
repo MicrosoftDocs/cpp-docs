@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # terminate (CRT)
 
-Calls `abort` or a function you specify using `set_terminate`.
+Calls [abort](abort.md) or a function you specify using `set_terminate`.
 
 ## Syntax
 
@@ -40,7 +40,7 @@ The `terminate` function is used with C++ exception handling and is called in th
 
 - The stack is corrupted after throwing an exception.
 
-`terminate` calls `abort` by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. For more information, see [Unhandled C++ Exceptions](../../cpp/unhandled-cpp-exceptions.md).
+`terminate` calls [abort](abort.md) by default. You can change this default by writing your own termination function and calling `set_terminate` with the name of your function as its argument. `terminate` calls the last function given as an argument to `set_terminate`. For more information, see [Unhandled C++ Exceptions](../../cpp/unhandled-cpp-exceptions.md).
 
 ## Requirements
 

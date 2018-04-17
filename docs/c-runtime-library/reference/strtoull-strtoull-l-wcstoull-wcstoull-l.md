@@ -67,7 +67,7 @@ Locale to use.
 
 ## Return Value
 
-`strtoull` returns the converted value, if any, or `ULLONG_MAX` on overflow. `strtoull` returns 0 if no conversion can be performed. `wcstoull` returns values analogously to `strtoull`. For both functions, `errno` is set to `ERANGE` if overflow or underflow occurs.
+`strtoull` returns the converted value, if any, or `ULLONG_MAX` on overflow. `strtoull` returns 0 if no conversion can be performed. `wcstoull` returns values analogously to `strtoull`. For both functions, **errno** is set to `ERANGE` if overflow or underflow occurs.
 
 For more information about return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

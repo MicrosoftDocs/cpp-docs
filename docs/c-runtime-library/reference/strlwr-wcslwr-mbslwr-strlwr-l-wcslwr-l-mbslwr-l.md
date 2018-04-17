@@ -98,7 +98,7 @@ The `_strlwr` function converts any uppercase letters in *str* to lowercase as d
 
 The `_wcslwr` and `_mbslwr` functions are wide-character and multibyte-character versions of `_strlwr`. The argument and return value of `_wcslwr` are wide-character strings; those of `_mbslwr` are multibyte-character strings. These three functions behave identically otherwise.
 
-If *str* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return the original string and set `errno` to `EINVAL`.
+If *str* is a `NULL` pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, these functions return the original string and set **errno** to **EINVAL**.
 
 In C++, these functions have template overloads that invoke the newer, secure counterparts of these functions. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

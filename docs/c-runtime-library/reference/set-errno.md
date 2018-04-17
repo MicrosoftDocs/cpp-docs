@@ -22,7 +22,7 @@ ms.workload: ["cplusplus"]
 ---
 # _set_errno
 
-Set the value of the `errno` global variable.
+Set the value of the **errno** global variable.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ errno_t _set_errno( int error_value );
 ### Parameters
 
 *error_value*
-The new value of `errno`.
+The new value of **errno**.
 
 ## Return Value
 

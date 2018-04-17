@@ -67,7 +67,7 @@ The `_mbsnbset` and `_mbsnbset_l` functions set, at most, the first *count* byte
 
 `_mbsnbset` and `_mbsnbset_l` is similar to `_mbsnset`, except that it sets *count* bytes rather than *count* characters of *c*.
 
-If *str* is `NULL` or *count* is zero, this function generates an invalid parameter exception as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the function returns `NULL`. Also, if *c* is not a valid multibyte character, `errno` is set to `EINVAL` and a space is used instead.
+If *str* is `NULL` or *count* is zero, this function generates an invalid parameter exception as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns `NULL`. Also, if *c* is not a valid multibyte character, **errno** is set to **EINVAL** and a space is used instead.
 
 The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The `_mbsnbset` version of this function uses the current locale for this locale-dependent behavior; the `_mbsnbset_l` version is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

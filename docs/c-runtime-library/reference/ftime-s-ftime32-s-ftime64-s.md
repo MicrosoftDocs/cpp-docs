@@ -39,7 +39,7 @@ Pointer to a `_timeb`, `__timeb32`, or `__timeb64` structure.
 
 ## Return Value
 
-Zero if successful, an error code on failure. If *timeptr* is `NULL`, the return value is `EINVAL`.
+Zero if successful, an error code on failure. If *timeptr* is `NULL`, the return value is **EINVAL**.
 
 ## Remarks
 
@@ -56,7 +56,7 @@ The `_ftime64_s` function, which uses the `__timeb64` structure, allows file-cre
 
 The `_ftime_s` function is equivalent to `_ftime64_s`, and `_timeb` contains a 64-bit time, unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_ftime_s` uses a 32-bit time and `_timeb` contains a 32-bit time.
 
-`_ftime_s` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to `EINVAL`.
+`_ftime_s` validates its parameters. If passed a null pointer as *timeptr*, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL**.
 
 ## Requirements
 

@@ -52,7 +52,7 @@ The time value supplied must fit within the range of `time_t`. `time_t` is a 64-
 
 `difftime` is an inline function that evaluates to either `_difftime32` or `_difftime64` depending on whether `_USE_32BIT_TIME_T` is defined. _difftime32 and _difftime64 can be used directly to force the use of a particular size of the time type.
 
-These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return 0 and set `errno` to `EINVAL`.
+These functions validate their parameters. If either of the parameters is zero or negative, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return 0 and set **errno** to **EINVAL**.
 
 ## Requirements
 

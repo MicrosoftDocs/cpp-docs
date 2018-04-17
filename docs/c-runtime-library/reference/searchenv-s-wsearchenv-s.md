@@ -74,17 +74,17 @@ Size of the *pathname* buffer.
 
 Zero if successful; an error code on failure.
 
-If *filename* is an empty string, the return value is `ENOENT`.
+If *filename* is an empty string, the return value is **ENOENT**.
 
 ### Error Conditions
 
 |*filename*|*varname*|*pathname*|*numberOfElements*|Return value|Contents of *pathname*|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|any|any|`NULL`|any|`EINVAL`|n/a|
-|`NULL`|any|any|any|`EINVAL`|not changed|
-|any|any|any|<= 0|`EINVAL`|not changed|
+|any|any|`NULL`|any|**EINVAL**|n/a|
+|`NULL`|any|any|any|**EINVAL**|not changed|
+|any|any|any|<= 0|**EINVAL**|not changed|
 
-If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
+If any of these error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 
 ## Remarks
 

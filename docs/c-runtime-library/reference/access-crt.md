@@ -21,4 +21,5 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # access (CRT)
+
 This POSIX function is deprecated. Use the ISO C++ conformant [_access](access-waccess.md) or security-enhanced [_access_s](access-s-waccess-s.md) instead.

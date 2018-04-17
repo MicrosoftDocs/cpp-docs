@@ -83,7 +83,7 @@ Locale to use.
 
 Zero if successful, otherwise an error code.
 
-These functions validate their arguments. If *str* is a null pointer, or the *numberOfElements* argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return `EINVAL` and set `errno` to `EINVAL`.
+These functions validate their arguments. If *str* is a null pointer, or the *numberOfElements* argument is less than or equal to 0, or the block passed in is not null-terminated, then the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
 
 ## Remarks
 

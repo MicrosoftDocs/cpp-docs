@@ -63,14 +63,14 @@ Pointer to stored time values.
 
 ## Return Value
 
-Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and `errno` is set to one of the following values:
+Each of these functions returns 0 if the file-modification time was changed. A return value of -1 indicates an error. If an invalid parameter is passed, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and **errno** is set to one of the following values:
 
 |errno value|Condition|
 |-|-|
-`EACCES`|Path specifies directory or read-only file
-`EINVAL`|Invalid *times* argument
+**EACCES**|Path specifies directory or read-only file
+**EINVAL**|Invalid *times* argument
 `EMFILE`|Too many open files (the file must be opened to change its modification time)
-`ENOENT`|Path or filename not found
+**ENOENT**|Path or filename not found
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.
 

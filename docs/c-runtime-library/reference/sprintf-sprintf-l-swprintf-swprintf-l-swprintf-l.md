@@ -94,7 +94,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-The number of characters written, or -1 if an error occurred. If *buffer* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set `errno` to `EINVAL`.
+The number of characters written, or -1 if an error occurred. If *buffer* or *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
 
 `sprintf` returns the number of bytes stored in *buffer*, not counting the terminating null character. `swprintf` returns the number of wide characters stored in *buffer*, not counting the terminating null wide character.
 

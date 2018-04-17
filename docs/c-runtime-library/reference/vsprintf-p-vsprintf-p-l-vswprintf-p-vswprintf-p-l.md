@@ -87,7 +87,7 @@ These functions differ from the `vsprintf_s` and `vswprintf_s` only in that they
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-If the *buffer* or *format* parameters are NULL pointers, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set `errno` to `EINVAL`.
+If the *buffer* or *format* parameters are NULL pointers, if count is zero, or if the format string contains invalid formatting characters, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
 ### Generic-Text Routine Mappings
 

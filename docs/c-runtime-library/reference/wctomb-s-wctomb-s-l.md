@@ -67,11 +67,11 @@ Error Conditions
 
 |*mbchar*|*sizeInBytes*|Return value|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
-|`NULL`|>0|`EINVAL`|not modified|
-|any|>`INT_MAX`|`EINVAL`|not modified|
-|any|too small|`EINVAL`|not modified|
+|`NULL`|>0|**EINVAL**|not modified|
+|any|>`INT_MAX`|**EINVAL**|not modified|
+|any|too small|**EINVAL**|not modified|
 
-If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `wctomb` returns `EINVAL` and sets `errno` to `EINVAL`.
+If any of the above error conditions occurs, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `wctomb` returns **EINVAL** and sets **errno** to **EINVAL**.
 
 ## Remarks
 

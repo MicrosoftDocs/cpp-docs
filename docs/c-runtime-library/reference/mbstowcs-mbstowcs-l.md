@@ -80,7 +80,7 @@ The `mbstowcs` function converts up to a maximum number of *count* multibyte cha
 
 If the *wcstr* argument is `NULL`, `mbstowcs` returns the number of wide characters that would result from conversion, not including a null terminator. The source string must be null-terminated for the correct value to be returned. If you need the resulting wide character string to be null-terminated, add one to the returned value.
 
-If the *mbstr* argument is `NULL`, or if *count* is > `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, errno is set to `EINVAL` and the function returns -1.
+If the *mbstr* argument is `NULL`, or if *count* is > `INT_MAX`, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, errno is set to **EINVAL** and the function returns -1.
 
 `mbstowcs` uses the current locale for any locale-dependent behavior; `_mbstowcs_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
