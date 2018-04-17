@@ -46,16 +46,16 @@ intptr_t _wspawnve(
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 Execution mode for a calling process.
 
-*cmdname*
+*cmdname*<br/>
 Path of the file to be executed.
 
-*argv*
+*argv*<br/>
 Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a path in real mode or to the program name in protected mode, and *argv*[1] through *argv*[`n`] are pointers to the character strings forming the new argument list. The argument *argv*[`n` +1] must be a `NULL` pointer to mark the end of the argument list.
 
-*envp*
+*envp*<br/>
 Array of pointers to environment settings.
 
 ## Return Value

@@ -48,10 +48,10 @@ unsigned int _mbsnextc_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Source string.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

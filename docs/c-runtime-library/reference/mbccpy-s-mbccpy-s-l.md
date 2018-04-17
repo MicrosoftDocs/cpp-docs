@@ -60,19 +60,19 @@ errno_t _mbccpy_s_l(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Copy destination.
 
-*buffSizeInBytes*
+*buffSizeInBytes*<br/>
 Size of the destination buffer.
 
-*pCopied*
+*pCopied*<br/>
 Filled with the number of bytes copied (1 or 2 if successful). Pass `NULL` if you don't care about the number.
 
-*src*
+*src*<br/>
 Multibyte character to copy.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

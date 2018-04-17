@@ -37,7 +37,7 @@ wint_t fgetwc(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

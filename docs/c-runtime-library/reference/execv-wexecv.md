@@ -42,10 +42,10 @@ intptr_t _wexecv(
 
 ### Parameters
 
-*cmdname*
+*cmdname*<br/>
 Path of the file to execute.
 
-*argv*
+*argv*<br/>
 Array of pointers to parameters.
 
 ## Return Value

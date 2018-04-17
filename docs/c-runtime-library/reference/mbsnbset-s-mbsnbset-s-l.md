@@ -60,19 +60,19 @@ errno_t _mbsnbset_s_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be altered.
 
-*size*
+*size*<br/>
 The size of the string buffer.
 
-*c*
+*c*<br/>
 Single-byte or multibyte-character setting.
 
-*count*
+*count*<br/>
 Number of bytes to be set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

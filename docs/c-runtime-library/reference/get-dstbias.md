@@ -32,7 +32,7 @@ error_t _get_dstbias( int* seconds );
 
 ### Parameters
 
-*seconds*
+*seconds*<br/>
 The offset in seconds of daylight saving time.
 
 ## Return Value

@@ -53,16 +53,16 @@ size_t wcsxfrm_l(
 
 ### Parameters
 
-*strDest*
+*strDest*<br/>
 Destination string.
 
-*strSource*
+*strSource*<br/>
 Source string.
 
-*count*
+*count*<br/>
 Maximum number of characters to place in *strDest*.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

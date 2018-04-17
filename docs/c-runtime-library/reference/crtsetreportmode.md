@@ -35,10 +35,10 @@ int _CrtSetReportMode(
 
 ### Parameters
 
-*reportType*
+*reportType*<br/>
 Report type: `_CRT_WARN`, `_CRT_ERROR`, and `_CRT_ASSERT`.
 
-*reportMode*
+*reportMode*<br/>
 New report mode or modes for *reportType*.
 
 ## Return Value

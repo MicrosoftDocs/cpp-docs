@@ -42,16 +42,16 @@ int _memicmp_l(
 
 ### Parameters
 
-*buffer1*
+*buffer1*<br/>
 First buffer.
 
-*buffer2*
+*buffer2*<br/>
 Second buffer.
 
-*count*
+*count*<br/>
 Number of characters.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

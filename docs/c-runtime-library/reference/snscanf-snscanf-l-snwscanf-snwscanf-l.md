@@ -57,19 +57,19 @@ int __cdecl _snwscanf_l(
 
 ### Parameters
 
-*input*
+*input*<br/>
 Input string to examine.
 
-*length*
+*length*<br/>
 Number of characters to examine in *input*.
 
-*format*
+*format*<br/>
 One or more format specifiers.
 
-*...*
+*...*<br/>
 Optional variables that will be used to store the values extracted from the input string by the format specifiers in *format*.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

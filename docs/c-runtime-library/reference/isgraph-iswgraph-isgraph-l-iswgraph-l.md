@@ -45,7 +45,7 @@ int _iswgraph_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
 ## Return Value

@@ -68,13 +68,13 @@ size_t _mbstrnlen_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the string buffer.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

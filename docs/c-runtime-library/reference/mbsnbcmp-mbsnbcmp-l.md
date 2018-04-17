@@ -48,10 +48,10 @@ int _mbsnbcmp_l(
 *string1*, *string2*<br/>
 The strings to compare.
 
-*count*
+*count*<br/>
 The number of bytes to compare.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

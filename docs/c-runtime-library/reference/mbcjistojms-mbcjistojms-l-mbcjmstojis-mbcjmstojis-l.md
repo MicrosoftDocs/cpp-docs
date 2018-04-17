@@ -48,10 +48,10 @@ unsigned int _mbcjmstojis_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to convert.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

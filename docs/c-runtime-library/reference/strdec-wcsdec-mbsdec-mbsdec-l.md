@@ -51,13 +51,13 @@ unsigned char *_mbsdec_l(
 
 ### Parameters
 
-*start*
+*start*<br/>
 Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; *start* must precede *current* in the source string.
 
-*current*
+*current*<br/>
 Pointer to any character (or for `_mbsdec` and `_mbsdec_l`, the first byte of any multibyte character) in the source string; *current* must follow *start* in the source string.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

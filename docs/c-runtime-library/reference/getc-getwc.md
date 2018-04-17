@@ -37,7 +37,7 @@ wint_t getwc(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Input stream.
 
 ## Return Value

@@ -34,7 +34,7 @@ _se_translator_function _set_se_translator(
 
 ### Parameters
 
-*seTransFunction*
+*seTransFunction*<br/>
 Pointer to a C structured exception translator function that you write.
 
 ## Return Value

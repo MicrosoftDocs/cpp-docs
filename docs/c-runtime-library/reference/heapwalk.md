@@ -35,7 +35,7 @@ int _heapwalk( _HEAPINFO *entryinfo );
 
 ### Parameters
 
-*entryinfo*
+*entryinfo*<br/>
 Buffer to contain heap information.
 
 ## Return Value

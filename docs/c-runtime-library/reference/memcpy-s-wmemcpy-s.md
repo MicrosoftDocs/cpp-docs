@@ -43,16 +43,16 @@ errno_t wmemcpy_s(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 New buffer.
 
-*destSize*
+*destSize*<br/>
 Size of the destination buffer, in bytes for memcpy_s and wide characters (wchar_t) for wmemcpy_s.
 
-*src*
+*src*<br/>
 Buffer to copy from.
 
-*count*
+*count*<br/>
 Number of characters to copy.
 
 ## Return Value

@@ -34,7 +34,7 @@ __time64_t _time64( __time64_t *destTime );
 
 ### Parameters
 
-*destTime*
+*destTime*<br/>
 Pointer to the storage location for time.
 
 ## Return Value

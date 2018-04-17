@@ -34,7 +34,7 @@ int mbsinit(
 
 ### Parameters
 
-*ps*
+*ps*<br/>
 A pointer to an [mbstate_t](../../c-runtime-library/standard-types.md) variable.
 
 ## Return Value

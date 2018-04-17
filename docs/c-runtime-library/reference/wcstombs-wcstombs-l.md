@@ -55,16 +55,16 @@ size_t _wcstombs_l(
 
 ### Parameters
 
-*mbstr*
+*mbstr*<br/>
 The address of a sequence of multibyte characters.
 
-*wcstr*
+*wcstr*<br/>
 The address of a sequence of wide characters.
 
-*count*
+*count*<br/>
 The maximum number of bytes that can be stored in the multibyte output string.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

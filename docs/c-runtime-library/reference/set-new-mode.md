@@ -32,7 +32,7 @@ int _set_new_mode( int newhandlermode );
 
 ### Parameters
 
-*newhandlermode*
+*newhandlermode*<br/>
 New handler mode for `malloc`; valid value is 0 or 1.
 
 ## Return Value

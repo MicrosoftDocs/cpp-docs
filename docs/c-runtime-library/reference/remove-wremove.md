@@ -37,7 +37,7 @@ int _wremove(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Path of file to be removed.
 
 ## Return Value

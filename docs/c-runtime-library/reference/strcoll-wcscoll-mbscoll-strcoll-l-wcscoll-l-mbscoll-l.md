@@ -61,10 +61,10 @@ int _mbscoll_l(
 
 ### Parameters
 
-*string1*, *string2*
+*string1*, *string2*<br/>
 Null-terminated strings to compare.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

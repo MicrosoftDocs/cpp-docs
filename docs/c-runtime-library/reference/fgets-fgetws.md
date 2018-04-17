@@ -41,13 +41,13 @@ wchar_t *fgetws(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Storage location for data.
 
-*numChars*
+*numChars*<br/>
 Maximum number of characters to read.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

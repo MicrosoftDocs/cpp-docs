@@ -40,7 +40,7 @@ wint_t _putwch(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be output.
 
 ## Return Value

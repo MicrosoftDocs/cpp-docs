@@ -112,19 +112,19 @@ errno_t _mbsncat_s_l(
 
 ### Parameters
 
-*strDest*
+*strDest*<br/>
 Null-terminated destination string.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the destination buffer.
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string.
 
-*count*
+*count*<br/>
 Number of characters to append, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

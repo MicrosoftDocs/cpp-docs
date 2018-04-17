@@ -35,10 +35,10 @@ int fgetpos(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Target stream.
 
-*pos*
+*pos*<br/>
 Position-indicator storage.
 
 ## Return Value

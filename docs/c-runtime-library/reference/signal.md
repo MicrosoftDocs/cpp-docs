@@ -33,10 +33,10 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 
 ### Parameters
 
-*sig*
+*sig*<br/>
 Signal value.
 
-*func*
+*func*<br/>
 The second parameter is a pointer to the function to be executed. The first parameter is a signal value and the second parameter is a sub-code that can be used when the first parameter is SIGFPE.
 
 ## Return Value

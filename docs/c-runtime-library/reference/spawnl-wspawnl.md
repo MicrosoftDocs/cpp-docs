@@ -50,10 +50,10 @@ intptr_t _wspawnl(
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 Execution mode for the calling process.
 
-*cmdname*
+*cmdname*<br/>
 Path of the file to be executed.
 
 *arg0*, *arg1*, ... *argn*<br/>

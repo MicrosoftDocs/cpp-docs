@@ -34,7 +34,7 @@ wint_t btowc(
 
 ### Parameters
 
-*character*
+*character*<br/>
 Integer to test.
 
 ## Return Value

@@ -38,19 +38,19 @@ void * _aligned_realloc_dbg(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 The current memory block pointer.
 
-*size*
+*size*<br/>
 The size of the requested memory allocation.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested the `realloc` operation or NULL.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the `realloc` operation was requested or NULL.
 
 ## Return Value

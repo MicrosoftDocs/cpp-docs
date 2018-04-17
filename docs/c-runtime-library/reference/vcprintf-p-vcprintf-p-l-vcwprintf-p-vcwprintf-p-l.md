@@ -52,13 +52,13 @@ int _vcwprintf_p_l(
 
 ### Parameters
 
-*format*
+*format*<br/>
 The format specification.
 
-*argptr*
+*argptr*<br/>
 A pointer to a list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

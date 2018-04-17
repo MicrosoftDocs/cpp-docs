@@ -34,7 +34,7 @@ wctype_t wctype(
 
 ### Parameters
 
-*property*
+*property*<br/>
 Property string.
 
 ## Return Value

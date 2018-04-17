@@ -39,10 +39,10 @@ _locale_t _wcreate_locale(
 
 ### Parameters
 
-*category*
+*category*<br/>
 Category.
 
-*locale*
+*locale*<br/>
 Locale specifier.
 
 ## Return Value

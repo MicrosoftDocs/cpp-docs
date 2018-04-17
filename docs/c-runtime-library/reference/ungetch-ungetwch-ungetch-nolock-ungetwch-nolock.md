@@ -46,7 +46,7 @@ wint_t _ungetwch_nolock(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be pushed.
 
 ## Return Value

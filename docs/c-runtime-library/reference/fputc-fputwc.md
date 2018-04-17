@@ -39,10 +39,10 @@ wint_t fputwc(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be written.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

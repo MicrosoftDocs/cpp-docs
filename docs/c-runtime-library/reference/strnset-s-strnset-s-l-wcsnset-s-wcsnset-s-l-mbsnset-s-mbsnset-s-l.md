@@ -73,19 +73,19 @@ errno_t _mbsnset_s_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be altered.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the *str* buffer.
 
-*c*
+*c*<br/>
 Character setting.
 
-*count*
+*count*<br/>
 Number of characters to be set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

@@ -37,16 +37,16 @@ int setvbuf(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
-*buffer*
+*buffer*<br/>
 User-allocated buffer.
 
-*mode*
+*mode*<br/>
 Mode of buffering.
 
-*size*
+*size*<br/>
 Buffer size in bytes. Allowable range: 2 <= *size* <= INT_MAX (2147483647). Internally, the value supplied for *size* is rounded down to the nearest multiple of 2.
 
 ## Return Value

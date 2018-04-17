@@ -34,7 +34,7 @@ void _freea(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 Previously allocated memory block to be freed.
 
 ## Return Value

@@ -57,22 +57,22 @@ int _vswprintf_p_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 Size of *buffer* in characters.
 
-*count*
+*count*<br/>
 Maximum number of characters to store, in the UNICODE version of this function.
 
-*format*
+*format*<br/>
 Format specification.
 
-*argptr*
+*argptr*<br/>
 Pointer to list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

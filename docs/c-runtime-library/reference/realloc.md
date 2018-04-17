@@ -35,10 +35,10 @@ void *realloc(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 Pointer to previously allocated memory block.
 
-*size*
+*size*<br/>
 New size in bytes.
 
 ## Return Value

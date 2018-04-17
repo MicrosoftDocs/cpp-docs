@@ -47,22 +47,22 @@ wchar_t *_wfullpath_dbg(
 
 ### Parameters
 
-*absPath*
+*absPath*<br/>
 Pointer to a buffer containing the absolute or full path name, or `NULL`.
 
-*relPath*
+*relPath*<br/>
 Relative path name.
 
-*maxLength*
+*maxLength*<br/>
 Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
 
-*blockType*
+*blockType*<br/>
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested allocation operation or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the allocation operation was requested or `NULL`.
 
 ## Return Value

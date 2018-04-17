@@ -85,13 +85,13 @@ const unsigned char *_mbspbrk_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated, searched string.
 
-*strCharSet*
+*strCharSet*<br/>
 Null-terminated character set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

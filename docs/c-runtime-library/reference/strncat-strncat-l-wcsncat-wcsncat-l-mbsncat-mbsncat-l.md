@@ -80,16 +80,16 @@ unsigned char *_mbsncat_l(
 
 ### Parameters
 
-*strDest*
+*strDest*<br/>
 Null-terminated destination string.
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string.
 
-*count*
+*count*<br/>
 Number of characters to append.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

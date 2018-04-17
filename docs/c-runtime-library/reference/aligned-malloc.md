@@ -35,10 +35,10 @@ void * _aligned_malloc(
 
 ### Parameters
 
-*size*
+*size*<br/>
 Size of the requested memory allocation.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
 ## Return Value

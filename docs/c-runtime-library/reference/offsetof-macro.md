@@ -34,10 +34,10 @@ size_t offsetof(
 
 ### Parameters
 
-*structName*
+*structName*<br/>
 Name of the parent data structure.
 
-*memberName*
+*memberName*<br/>
 Name of the member in the parent data structure for which to determine the offset.
 
 ## Return Value

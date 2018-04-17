@@ -42,7 +42,7 @@ int _mbsnbicmp(
 *string1*, *string2*<br/>
 Null-terminated strings to compare.
 
-*count*
+*count*<br/>
 Number of bytes to compare.
 
 ## Return Value

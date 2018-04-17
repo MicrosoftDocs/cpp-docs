@@ -39,10 +39,10 @@ wchar_t *_wsetlocale(
 
 ### Parameters
 
-*category*
+*category*<br/>
 Category affected by locale.
 
-*locale*
+*locale*<br/>
 Locale specifier.
 
 ## Return Value

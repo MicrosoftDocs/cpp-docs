@@ -35,7 +35,7 @@ int __toascii(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to convert.
 
 ## Return Value

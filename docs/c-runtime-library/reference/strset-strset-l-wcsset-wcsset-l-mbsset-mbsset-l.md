@@ -61,13 +61,13 @@ unsigned char *_mbsset_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to be set.
 
-*c*
+*c*<br/>
 Character setting.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

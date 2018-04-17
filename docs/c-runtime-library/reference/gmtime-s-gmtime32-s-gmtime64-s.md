@@ -43,10 +43,10 @@ errno_t _gmtime64_s(
 
 ### Parameters
 
-*tmDest*
+*tmDest*<br/>
 Pointer to a [tm](../../c-runtime-library/standard-types.md) structure. The fields of the returned structure hold the evaluated value of the *timer* argument in UTC rather than in local time.
 
-*sourceTime*
+*sourceTime*<br/>
 Pointer to stored time. The time is represented as seconds elapsed since midnight (00:00:00), January 1, 1970, coordinated universal time (UTC).
 
 ## Return Value

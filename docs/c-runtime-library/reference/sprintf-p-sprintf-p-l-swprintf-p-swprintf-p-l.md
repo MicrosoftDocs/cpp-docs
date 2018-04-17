@@ -57,19 +57,19 @@ int _swprintf_p_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output
 
-*sizeOfBuffer*
+*sizeOfBuffer*<br/>
 Maximum number of characters to store.
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument_list*
+*argument_list*<br/>
 Optional arguments to the format string.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

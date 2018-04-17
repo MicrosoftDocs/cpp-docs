@@ -41,13 +41,13 @@ int vswscanf(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Stored data
 
-*format*
+*format*<br/>
 Format-control string. For more information, see [Format Specification Fields: scanf and wscanf Functions](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
-*arglist*
+*arglist*<br/>
 Variable argument list.
 
 ## Return Value

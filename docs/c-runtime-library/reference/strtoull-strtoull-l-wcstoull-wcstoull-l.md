@@ -53,16 +53,16 @@ unsigned long long _wcstoull_l(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated string to convert.
 
-*endptr*
+*endptr*<br/>
 Pointer to the character that stops the scan.
 
-*base*
+*base*<br/>
 Number base to use.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

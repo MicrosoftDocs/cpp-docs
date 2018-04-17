@@ -64,7 +64,7 @@ int _mbsicoll_l(
 *string1*, *string2*<br/>
 Null-terminated strings to compare.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

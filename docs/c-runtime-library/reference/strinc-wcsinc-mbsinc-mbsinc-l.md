@@ -50,10 +50,10 @@ unsigned char *_mbsinc_l(
 
 ### Parameters
 
-*current*
+*current*<br/>
 Character pointer.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

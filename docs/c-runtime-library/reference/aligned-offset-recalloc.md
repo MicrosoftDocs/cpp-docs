@@ -38,19 +38,19 @@ void * _aligned_offset_recalloc(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 The current memory block pointer.
 
-*number*
+*number*<br/>
 Number of elements.
 
-*size*
+*size*<br/>
 Length in bytes of each element.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*offset*
+*offset*<br/>
 The offset into the memory allocation to force the alignment.
 
 ## Return Value

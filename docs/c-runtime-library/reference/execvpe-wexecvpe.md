@@ -44,13 +44,13 @@ intptr_t _wexecvpe(
 
 ### Parameters
 
-*cmdname*
+*cmdname*<br/>
 Path of the file to execute.
 
-*argv*
+*argv*<br/>
 Array of pointers to parameters.
 
-*envp*
+*envp*<br/>
 Array of pointers to environment settings.
 
 ## Return Value

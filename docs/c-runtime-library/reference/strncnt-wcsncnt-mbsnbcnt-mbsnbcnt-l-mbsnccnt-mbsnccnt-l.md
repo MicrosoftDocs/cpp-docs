@@ -61,13 +61,13 @@ size_t _mbsnccnt_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be examined.
 
-*count*
+*count*<br/>
 Number of characters or bytes to be examined in *str*.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

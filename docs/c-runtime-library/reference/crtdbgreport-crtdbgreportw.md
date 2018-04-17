@@ -47,22 +47,22 @@ int _CrtDbgReportW(
 
 ### Parameters
 
-*reportType*
+*reportType*<br/>
 Report type: `_CRT_WARN`, `_CRT_ERROR`, and `_CRT_ASSERT`.
 
-*filename*
+*filename*<br/>
 Pointer to name of source file where assert/report occurred or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in source file where assert/report occurred or `NULL`.
 
-*moduleName*
+*moduleName*<br/>
 Pointer to name of module (.exe or .dll) where assert or report occurred.
 
-*format*
+*format*<br/>
 Pointer to format-control string used to create the user message.
 
-*argument*
+*argument*<br/>
 Optional substitution arguments used by *format*.
 
 ## Return Value

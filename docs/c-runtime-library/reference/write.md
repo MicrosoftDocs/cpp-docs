@@ -36,13 +36,13 @@ int _write(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor of file into which data is written.
 
-*buffer*
+*buffer*<br/>
 Data to be written.
 
-*count*
+*count*<br/>
 Number of bytes.
 
 ## Return Value

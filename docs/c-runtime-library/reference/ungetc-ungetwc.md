@@ -39,10 +39,10 @@ wint_t ungetwc(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be pushed.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

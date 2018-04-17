@@ -92,19 +92,19 @@ int _snwprintf_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for the output.
 
-*count*
+*count*<br/>
 Maximum number of characters to store.
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument*
+*argument*<br/>
 Optional arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

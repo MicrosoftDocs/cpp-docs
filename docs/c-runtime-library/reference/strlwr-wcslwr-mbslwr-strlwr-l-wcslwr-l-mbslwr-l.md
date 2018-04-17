@@ -82,10 +82,10 @@ unsigned char *_mbslwr_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to convert to lowercase.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

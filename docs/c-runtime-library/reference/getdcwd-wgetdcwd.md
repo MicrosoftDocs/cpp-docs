@@ -41,17 +41,17 @@ wchar_t *_wgetdcwd(
 
 ### Parameters
 
-*drive*
+*drive*<br/>
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
 If the specified drive is not available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) cannot be determined, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
 
-*buffer*
+*buffer*<br/>
 Storage location for the path, or **NULL**.
 
 If **NULL** is specified, this function allocates a buffer of at least *maxlen* size by using **malloc**, and the return value of `_getdcwd` is a pointer to the allocated buffer. The buffer can be freed by calling `free` and passing it the pointer.
 
-*maxlen*
+*maxlen*<br/>
 A nonzero positive integer that specifies the maximum length of the path, in characters: `char` for `_getdcwd` and `wchar_t` for `_wgetdcwd`.
 
 If *maxlen* is not greater than zero, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.

@@ -53,16 +53,16 @@ int _fwprintf_p_l(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to the `FILE` structure.
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument*
+*argument*<br/>
 Optional arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

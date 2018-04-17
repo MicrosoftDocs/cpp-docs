@@ -49,13 +49,13 @@ double wcstod_l(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated string to convert.
 
-*endptr*
+*endptr*<br/>
 Pointer to character that stops scan.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

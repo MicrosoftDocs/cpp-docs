@@ -44,10 +44,10 @@ int _timespec64_get(
 
 ### Parameters
 
-*time_spec*
+*time_spec*<br/>
 Pointer to a struct that is set to the time in seconds and nanoseconds since the start of the epoch.
 
-*base*
+*base*<br/>
 A non-zero implementation-specific value that specifies the time base.
 
 ## Return Value

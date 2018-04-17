@@ -35,7 +35,7 @@ int _fcloseall( void );
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

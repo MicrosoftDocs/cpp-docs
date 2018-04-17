@@ -61,10 +61,10 @@ int _iswcsymf_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test. *c* should be in the range of 0-255 for the narrow character version of the function.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

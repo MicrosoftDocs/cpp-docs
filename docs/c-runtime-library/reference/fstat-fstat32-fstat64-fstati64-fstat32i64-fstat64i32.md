@@ -55,10 +55,10 @@ int _fstat64i32(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor of the open file.
 
-*buffer*
+*buffer*<br/>
 Pointer to the structure to store results.
 
 ## Return Value

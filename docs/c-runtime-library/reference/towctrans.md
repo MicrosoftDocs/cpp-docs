@@ -35,10 +35,10 @@ wint_t towctrans(
 
 ### Parameters
 
-*c*
+*c*<br/>
 The character you want to transform.
 
-*category*
+*category*<br/>
 An identifier that contains the return value of [wctrans](wctrans.md).
 
 ## Return Value

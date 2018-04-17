@@ -42,10 +42,10 @@ const wchar_t *mode
 
 ### Parameters
 
-*command*
+*command*<br/>
 Command to be executed.
 
-*mode*
+*mode*<br/>
 Mode of the returned stream.
 
 ## Return Value

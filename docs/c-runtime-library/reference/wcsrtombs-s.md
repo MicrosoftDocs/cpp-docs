@@ -47,22 +47,22 @@ errno_t wcsrtombs_s(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 The number of characters converted.
 
-*mbstr*
+*mbstr*<br/>
 The address of a buffer for the resulting converted multibyte character string.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 The size in bytes of the *mbstr* buffer.
 
-*wcstr*
+*wcstr*<br/>
 Points to the wide character string to be converted.
 
-*count*
+*count*<br/>
 The maximum number of bytes to be stored in the *mbstr* buffer, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object.
 
 ## Return Value

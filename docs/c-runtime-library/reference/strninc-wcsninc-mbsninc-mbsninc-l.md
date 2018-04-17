@@ -51,13 +51,13 @@ unsigned char *_mbsninc(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Source string.
 
-*count*
+*count*<br/>
 Number of characters to increment a string pointer.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

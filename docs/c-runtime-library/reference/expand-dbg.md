@@ -38,19 +38,19 @@ void *_expand_dbg(
 
 ### Parameters
 
-*userData*
+*userData*<br/>
 Pointer to the previously allocated memory block.
 
-*newSize*
+*newSize*<br/>
 Requested new size for the block (in bytes).
 
-*blockType*
+*blockType*<br/>
 Requested type for resized block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested expand operation or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the expand operation was requested or `NULL`.
 
 The *filename* and *linenumber* parameters are only available when `_expand_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.

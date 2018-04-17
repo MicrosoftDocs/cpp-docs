@@ -38,19 +38,19 @@ void *_realloc_dbg(
 
 ### Parameters
 
-*userData*
+*userData*<br/>
 Pointer to the previously allocated memory block.
 
-*newSize*
+*newSize*<br/>
 Requested size for the reallocated block (bytes).
 
-*blockType*
+*blockType*<br/>
 Requested type for the reallocated block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested the `realloc` operation or NULL.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the `realloc` operation was requested or NULL.
 
 The *filename* and *linenumber* parameters are only available when `_realloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.

@@ -34,7 +34,7 @@ intptr_t _get_osfhandle(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 An existing file descriptor.
 
 ## Return Value

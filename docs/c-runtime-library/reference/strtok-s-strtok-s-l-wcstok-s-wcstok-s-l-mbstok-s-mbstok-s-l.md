@@ -72,16 +72,16 @@ unsigned char* _mbstok_s(
 
 ### Parameters
 
-*str*
+*str*<br/>
 A string containing the token or tokens to find.
 
-*delimiters*
+*delimiters*<br/>
 The set of delimiter characters to use.
 
-*context*
+*context*<br/>
 Used to store position information between calls to the function.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

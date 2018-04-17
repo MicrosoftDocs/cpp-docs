@@ -62,10 +62,10 @@ int _mbsncmp_l(
 *string1*, *string2*<br/>
 Strings to compare.
 
-*count*
+*count*<br/>
 Number of characters to compare.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

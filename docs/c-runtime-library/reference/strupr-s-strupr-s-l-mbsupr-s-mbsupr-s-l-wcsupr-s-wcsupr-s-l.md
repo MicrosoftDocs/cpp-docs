@@ -88,13 +88,13 @@ errno_t _mbsupr_s_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to capitalize.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the buffer.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

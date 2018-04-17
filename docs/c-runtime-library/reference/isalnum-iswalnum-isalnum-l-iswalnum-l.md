@@ -35,10 +35,10 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

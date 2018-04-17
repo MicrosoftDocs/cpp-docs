@@ -36,13 +36,13 @@ void *_recalloc(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 Pointer to previously allocated memory block.
 
-*number*
+*number*<br/>
 Number of elements.
 
-*size*
+*size*<br/>
 Length in bytes of each element.
 
 ## Return Value

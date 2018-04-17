@@ -41,13 +41,13 @@ FILE *_wfreopen(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Path of new file.
 
-*mode*
+*mode*<br/>
 Type of access permitted.
 
-*stream*
+*stream*<br/>
 Pointer to **FILE** structure.
 
 ## Return Value

@@ -34,7 +34,7 @@ int wctob(
 
 ### Parameters
 
-*wchar*
+*wchar*<br/>
 Value to translate.
 
 ## Return Value

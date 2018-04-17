@@ -49,13 +49,13 @@ int _iswctype_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
-*desc*
+*desc*<br/>
 Property to test for. This is normally retrieved using ctype or [wctype](wctype.md).
 
-*locale*
+*locale*<br/>
 The locale to use for any locale-dependent tests.
 
 ## Return Value

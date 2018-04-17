@@ -112,19 +112,19 @@ errno_t _mbsncpy_s_l(
 
 ### Parameters
 
-*strDest*
+*strDest*<br/>
 Destination string.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the destination string, in characters.
 
-*strSource*
+*strSource*<br/>
 Source string.
 
-*count*
+*count*<br/>
 Number of characters to be copied, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

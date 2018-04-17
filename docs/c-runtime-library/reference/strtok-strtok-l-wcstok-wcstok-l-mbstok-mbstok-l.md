@@ -51,13 +51,13 @@ unsigned char *_mbstok(
 
 ### Parameters
 
-*strToken*
+*strToken*<br/>
 String containing token or tokens.
 
-*strDelimit*
+*strDelimit*<br/>
 Set of delimiter characters.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

@@ -41,10 +41,10 @@ unsigned int _mbbtombc_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Single-byte character to convert.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

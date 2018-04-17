@@ -46,7 +46,7 @@ long double cargl(
 
 ### Parameters
 
-*z*
+*z*<br/>
 A complex number.
 
 ## Return Value

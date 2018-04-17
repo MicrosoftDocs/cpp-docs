@@ -49,13 +49,13 @@ int _scwprintf_l(
 
 ### Parameters
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument*
+*argument*<br/>
 Optional arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

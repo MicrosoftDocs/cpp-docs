@@ -45,10 +45,10 @@ __int64 _wtoi64_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be converted.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

@@ -34,7 +34,7 @@ __declspec(noreturn) void quick_exit(
 
 ### Parameters
 
-*status*
+*status*<br/>
 The status code to return to the host environment.
 
 ## Return Value

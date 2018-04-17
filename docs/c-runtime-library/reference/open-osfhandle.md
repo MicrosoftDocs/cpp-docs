@@ -35,10 +35,10 @@ int _open_osfhandle (
 
 ### Parameters
 
-*osfhandle*
+*osfhandle*<br/>
 Operating-system file handle.
 
-*flags*
+*flags*<br/>
 Types of operations allowed.
 
 ## Return Value

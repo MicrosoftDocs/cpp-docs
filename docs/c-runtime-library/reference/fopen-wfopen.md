@@ -39,10 +39,10 @@ FILE *_wfopen(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 File name.
 
-*mode*
+*mode*<br/>
 Kind of access that's enabled.
 
 ## Return Value

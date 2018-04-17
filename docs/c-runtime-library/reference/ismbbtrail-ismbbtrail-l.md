@@ -38,10 +38,10 @@ int _ismbbtrail_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 The integer to be tested.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

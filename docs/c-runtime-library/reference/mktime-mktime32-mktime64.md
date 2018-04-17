@@ -40,7 +40,7 @@ __time64_t _mktime64(
 
 ### Parameters
 
-*timeptr*
+*timeptr*<br/>
 Pointer to time structure; see [asctime](asctime-wasctime.md).
 
 ## Return Value

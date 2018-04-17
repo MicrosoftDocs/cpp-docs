@@ -79,10 +79,10 @@ int _wstat64i32(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Pointer to a string containing the path of existing file or directory.
 
-*buffer*
+*buffer*<br/>
 Pointer to structure that stores results.
 
 ## Return Value

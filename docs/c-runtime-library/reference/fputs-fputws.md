@@ -39,10 +39,10 @@ int fputws(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Output string.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

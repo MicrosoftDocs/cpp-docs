@@ -84,13 +84,13 @@ const unsigned char *_mbsstr_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to search.
 
-*strSearch*
+*strSearch*<br/>
 Null-terminated string to search for.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

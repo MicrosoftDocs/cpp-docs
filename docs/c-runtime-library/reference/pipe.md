@@ -39,13 +39,13 @@ int _pipe(
 
 ### Parameters
 
-*pfds*
+*pfds*<br/>
 Pointer to an array of two **int** to hold read and write file descriptors.
 
-*psize*
+*psize*<br/>
 Amount of memory to reserve.
 
-*textmode*
+*textmode*<br/>
 File mode.
 
 ## Return Value

@@ -46,7 +46,7 @@ _Lcomplex ccosl(
 
 ### Parameters
 
-*z*
+*z*<br/>
 A complex number that represents the angle, in radians.
 
 ## Return Value

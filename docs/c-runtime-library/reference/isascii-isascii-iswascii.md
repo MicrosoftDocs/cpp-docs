@@ -39,7 +39,7 @@ int iswascii(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
 ## Return Value

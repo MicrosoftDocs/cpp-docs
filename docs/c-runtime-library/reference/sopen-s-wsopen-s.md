@@ -45,19 +45,19 @@ errno_t _wsopen_s(
 
 ### Parameters
 
-*pfh*
+*pfh*<br/>
 The file handle, or -1 in the case of an error.
 
-*filename*
+*filename*<br/>
 File name.
 
-*oflag*
+*oflag*<br/>
 The kind of operations allowed.
 
-*shflag*
+*shflag*<br/>
 The kind of sharing allowed.
 
-*pmode*
+*pmode*<br/>
 Permission setting.
 
 ## Return Value

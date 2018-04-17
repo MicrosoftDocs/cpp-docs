@@ -37,16 +37,16 @@ void * _aligned_recalloc(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 The current memory block pointer.
 
-*number*
+*number*<br/>
 The number of elements.
 
-*size*
+*size*<br/>
 The size in bytes of each element.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
 ## Return Value

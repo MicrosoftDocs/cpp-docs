@@ -37,7 +37,7 @@ _onexit_t_m _onexit_m(
 
 ### Parameters
 
-*function*
+*function*<br/>
 Pointer to a function to be called at exit.
 
 ## Return Value

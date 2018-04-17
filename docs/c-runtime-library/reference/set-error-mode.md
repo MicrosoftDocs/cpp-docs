@@ -37,7 +37,7 @@ int _set_error_mode(
 
 ### Parameters
 
-*mode_val*
+*mode_val*<br/>
 Destination of error messages.
 
 ## Return Value

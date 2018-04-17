@@ -41,13 +41,13 @@ wchar_t *wmemmove(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Destination object.
 
-*src*
+*src*<br/>
 Source object.
 
-*count*
+*count*<br/>
 Number of bytes (`memmove`) or characters (`wmemmove`) to copy.
 
 ## Return Value

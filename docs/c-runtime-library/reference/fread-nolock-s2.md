@@ -37,19 +37,19 @@ size_t _fread_nolock_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for data.
 
-*bufferSize*
+*bufferSize*<br/>
 Size of the destination buffer in bytes.
 
-*elementSize*
+*elementSize*<br/>
 Size of the item to read in bytes.
 
-*elementCount*
+*elementCount*<br/>
 Maximum number of items to be read.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

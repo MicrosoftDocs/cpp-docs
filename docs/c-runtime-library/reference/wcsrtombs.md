@@ -44,16 +44,16 @@ size_t wcsrtombs(
 
 ### Parameters
 
-*mbstr*
+*mbstr*<br/>
 The resulting converted multibyte character string's address location.
 
-*wcstr*
+*wcstr*<br/>
 Indirectly points to the location of the wide character string to be converted.
 
-*count*
+*count*<br/>
 The number of character to be converted.
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an `mbstate_t` conversion state object.
 
 ## Return Value

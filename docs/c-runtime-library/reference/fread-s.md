@@ -37,19 +37,19 @@ size_t fread_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for data.
 
-*bufferSize*
+*bufferSize*<br/>
 Size of the destination buffer in bytes.
 
-*elementSize*
+*elementSize*<br/>
 Size of the item to read in bytes.
 
-*count*
+*count*<br/>
 Maximum number of items to be read.
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

@@ -44,19 +44,19 @@ errno_t _wctomb_s_l(
 
 ### Parameters
 
-*pRetValue*
+*pRetValue*<br/>
 The number of bytes, or a code indicating the result.
 
-*mbchar*
+*mbchar*<br/>
 The address of a multibyte character.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 Size of the buffer *mbchar*.
 
-*wchar*
+*wchar*<br/>
 A wide character.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

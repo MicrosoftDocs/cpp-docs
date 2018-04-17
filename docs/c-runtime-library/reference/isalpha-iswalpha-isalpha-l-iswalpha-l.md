@@ -45,10 +45,10 @@ int _iswalpha_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
-*locale*
+*locale*<br/>
 The locale to use instead of the current locale.
 
 ## Return Value

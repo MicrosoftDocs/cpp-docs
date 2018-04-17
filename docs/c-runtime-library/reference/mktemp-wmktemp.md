@@ -45,7 +45,7 @@ wchar_t *_wmktemp(
 
 ### Parameters
 
-*nameTemplate*
+*nameTemplate*<br/>
 File name pattern.
 
 ## Return Value

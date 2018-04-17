@@ -53,16 +53,16 @@ long long _wcstoll_l(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated string to convert.
 
-*endptr*
+*endptr*<br/>
 Pointer to the character that stops the scan.
 
-*base*
+*base*<br/>
 Number base to use.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

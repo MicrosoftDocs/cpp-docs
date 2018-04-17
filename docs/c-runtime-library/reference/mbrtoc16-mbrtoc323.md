@@ -45,16 +45,16 @@ size_t mbrtoc32(
 
 ### Parameters
 
-*destination*
+*destination*<br/>
 Pointer to the `char16_t` or `char32_t` equivalent of the multibyte character to convert. If null, the function does not store a value.
 
-*source*
+*source*<br/>
 Pointer to the multibyte character string to convert.
 
-*max_bytes*
+*max_bytes*<br/>
 The maximum number of bytes in *source* to examine for a character to convert. This should be a value between one and the number of bytes, including any null terminator, remaining in *source*.
 
-*state*
+*state*<br/>
 Pointer to a `mbstate_t` conversion state object used to interpret the multibyte string to one or more output characters.
 
 ## Return Value

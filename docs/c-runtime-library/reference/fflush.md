@@ -34,7 +34,7 @@ int fflush(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
 ## Return Value

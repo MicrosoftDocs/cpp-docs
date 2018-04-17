@@ -75,19 +75,19 @@ int _sprintf_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output
 
-*count*
+*count*<br/>
 Maximum number of characters to store in the Unicode version of this function.
 
-*format*
+*format*<br/>
 Format-control string
 
-*argument*
+*argument*<br/>
 Optional arguments
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

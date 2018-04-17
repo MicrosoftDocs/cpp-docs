@@ -41,13 +41,13 @@ int _wopen(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 File name.
 
-*oflag*
+*oflag*<br/>
 The kind of operations allowed.
 
-*pmode*
+*pmode*<br/>
 Permission mode.
 
 ## Return Value

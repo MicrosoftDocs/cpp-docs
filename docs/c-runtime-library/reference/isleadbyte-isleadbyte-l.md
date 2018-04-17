@@ -36,7 +36,7 @@ int _isleadbyte_l( int c );
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
 ## Return Value

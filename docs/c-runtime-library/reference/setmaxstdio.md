@@ -34,7 +34,7 @@ int _setmaxstdio(
 
 ### Parameters
 
-*newmax*
+*newmax*<br/>
 New maximum for the number of simultaneously open files at the `stdio` level.
 
 ## Return Value

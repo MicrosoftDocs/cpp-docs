@@ -35,10 +35,10 @@ errno_t _chsize_s(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor referring to an open file.
 
-*size*
+*size*<br/>
 New length of the file in bytes.
 
 ## Return Value

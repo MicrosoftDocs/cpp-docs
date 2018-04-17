@@ -48,10 +48,10 @@ int _ismbckata_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be tested.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

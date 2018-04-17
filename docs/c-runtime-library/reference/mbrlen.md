@@ -36,13 +36,13 @@ size_t mbrlen(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Pointer to the next byte to inspect in a multibyte character string.
 
-*count*
+*count*<br/>
 The maximum number of bytes to inspect.
 
-*mbstate*
+*mbstate*<br/>
 Pointer to the current shift state of the initial byte of *str*.
 
 ## Return Value

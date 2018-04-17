@@ -34,7 +34,7 @@ size_t _msize(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 Pointer to the memory block.
 
 ## Return Value

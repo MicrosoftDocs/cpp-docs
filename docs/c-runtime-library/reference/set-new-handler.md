@@ -32,7 +32,7 @@ _PNH _set_new_handler( _PNH pNewHandler );
 
 ### Parameters
 
-*pNewHandler*
+*pNewHandler*<br/>
 Pointer to the application-supplied memory handling function. An argument of 0 causes the new handler to be removed.
 
 ## Return Value

@@ -43,7 +43,7 @@ unsigned char *_mbsdup(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string.
 
 ## Return Value

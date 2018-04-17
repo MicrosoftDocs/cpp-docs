@@ -32,7 +32,7 @@ int _umask( int pmode );
 
 ### Parameters
 
-*pmode*
+*pmode*<br/>
 Default permission setting.
 
 ## Return Value

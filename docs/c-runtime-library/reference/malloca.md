@@ -34,7 +34,7 @@ void *_malloca(
 
 ### Parameters
 
-*size*
+*size*<br/>
 Bytes to be allocated from the stack.
 
 ## Return Value

@@ -79,10 +79,10 @@ int _wfindnext64i32(
 
 ### Parameters
 
-*handle*
+*handle*<br/>
 Search handle returned by a previous call to `_findfirst`.
 
-*fileinfo*
+*fileinfo*<br/>
 File information buffer.
 
 ## Return Value

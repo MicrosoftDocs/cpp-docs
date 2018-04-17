@@ -37,16 +37,16 @@ void *_malloc_dbg(
 
 ### Parameters
 
-*size*
+*size*<br/>
 Requested size of the memory block (in bytes).
 
-*blockType*
+*blockType*<br/>
 Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested the allocation operation or NULL.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the allocation operation was requested or NULL.
 
 The *filename* and *linenumber* parameters are only available when `_malloc_dbg` has been called explicitly or the [_CRTDBG_MAP_ALLOC](../../c-runtime-library/crtdbg-map-alloc.md) preprocessor constant has been defined.

@@ -60,19 +60,19 @@ errno_t _mbsnbcpy_s_l(
 
 ### Parameters
 
-*strDest*
+*strDest*<br/>
 Destination for character string to be copied.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 Destination buffer size.
 
-*strSource*
+*strSource*<br/>
 Character string to be copied.
 
-*count*
+*count*<br/>
 Number of bytes to be copied.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

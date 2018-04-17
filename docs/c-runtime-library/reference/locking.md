@@ -36,13 +36,13 @@ int _locking(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor.
 
-*mode*
+*mode*<br/>
 Locking action to perform.
 
-*nbytes*
+*nbytes*<br/>
 Number of bytes to lock.
 
 ## Return Value

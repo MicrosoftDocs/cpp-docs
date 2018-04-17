@@ -43,10 +43,10 @@ errno_t _localtime64_s(
 
 ### Parameters
 
-*tmDest*
+*tmDest*<br/>
 Pointer to the time structure to be filled in.
 
-*sourceTime*
+*sourceTime*<br/>
 Pointer to the stored time.
 
 ## Return Value

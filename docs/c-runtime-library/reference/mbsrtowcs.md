@@ -44,16 +44,16 @@ size_t mbsrtowcs(
 
 ### Parameters
 
-*wcstr*
+*wcstr*<br/>
 Address to store the resulting converted wide character string.
 
-*mbstr*
+*mbstr*<br/>
 Indirect pointer to the location of the multibyte character string to convert.
 
-*count*
+*count*<br/>
 The maximum number of characters (not bytes) to convert and store in *wcstr*.
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* parameter.
 
 ## Return Value

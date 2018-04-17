@@ -58,16 +58,16 @@ errno_t _wgetenv_s(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 The buffer size that's required, or 0 if the variable is not found.
 
-*buffer*
+*buffer*<br/>
 Buffer to store the value of the environment variable.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of *buffer*.
 
-*varname*
+*varname*<br/>
 Environment variable name.
 
 ## Return Value

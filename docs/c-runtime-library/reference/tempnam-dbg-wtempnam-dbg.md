@@ -45,19 +45,19 @@ wchar_t *_wtempnam_dbg(
 
 ### Parameters
 
-*dir*
+*dir*<br/>
 The path used in the file name if there is no TMP environment variable, or if TMP is not a valid directory.
 
-*prefix*
+*prefix*<br/>
 The string that will be pre-pended to names returned by `_tempnam`.
 
-*blockType*
+*blockType*<br/>
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to name of source file that requested allocation operation or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in source file where allocation operation was requested or `NULL`.
 
 ## Return Value

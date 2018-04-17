@@ -35,10 +35,10 @@ size_t _msize_dbg(
 
 ### Parameters
 
-*userData*
+*userData*<br/>
 Pointer to the memory block for which to determine the size.
 
-*blockType*
+*blockType*<br/>
 Type of the specified memory block: `_CLIENT_BLOCK` or **_NORMAL_BLOCK**.
 
 ## Return Value

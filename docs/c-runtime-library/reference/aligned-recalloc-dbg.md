@@ -39,22 +39,22 @@ void * _aligned_recalloc_dbg(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 The current memory block pointer.
 
-*number*
+*number*<br/>
 The number of elements.
 
-*size*
+*size*<br/>
 The size in bytes of each element.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*filename*
+*filename*<br/>
 Pointer to name of the source file that requested allocation operation or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where allocation operation was requested or `NULL`.
 
 ## Return Value

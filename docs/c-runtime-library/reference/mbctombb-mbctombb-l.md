@@ -41,10 +41,10 @@ unsigned int _mbctombb_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Multibyte character to convert.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

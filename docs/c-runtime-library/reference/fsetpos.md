@@ -35,10 +35,10 @@ int fsetpos(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
-*pos*
+*pos*<br/>
 Position-indicator storage.
 
 ## Return Value

@@ -39,10 +39,10 @@ int __cdecl _seh_filter_exe(
 
 ### Parameters
 
-*_ExceptionNum*
+*_ExceptionNum*<br/>
 The identifier for the exception.
 
-*_ExceptionPtr*
+*_ExceptionPtr*<br/>
 A pointer to the exception information.
 
 ## Return Value

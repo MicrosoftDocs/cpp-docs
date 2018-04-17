@@ -60,19 +60,19 @@ errno_t _mbsnbcat_s_l(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Null-terminated multibyte-character destination string.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 Size of the *dest* buffer in bytes.
 
-*src*
+*src*<br/>
 Null-terminated multibyte-character source string.
 
-*count*
+*count*<br/>
 Number of bytes from *src* to append to *dest*.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

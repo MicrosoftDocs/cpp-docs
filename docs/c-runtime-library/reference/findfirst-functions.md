@@ -79,10 +79,10 @@ intptr_t _wfindfirst64i32(
 
 ### Parameters
 
-*filespec*
+*filespec*<br/>
 Target file specification (can include wildcard characters).
 
-*fileinfo*
+*fileinfo*<br/>
 File information buffer.
 
 ## Return Value

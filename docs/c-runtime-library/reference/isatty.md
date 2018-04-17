@@ -32,7 +32,7 @@ int _isatty( int fd );
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor that refers to the device to be tested.
 
 ## Return Value

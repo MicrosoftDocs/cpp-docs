@@ -67,16 +67,16 @@ unsigned char *_mbsnset_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be altered.
 
-*c*
+*c*<br/>
 Character setting.
 
-*count*
+*count*<br/>
 Number of characters to be set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

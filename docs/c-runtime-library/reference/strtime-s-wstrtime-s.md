@@ -47,10 +47,10 @@ errno_t _wstrtime_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 A buffer, at least 10 bytes long, where the time will be written.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the buffer.
 
 ## Return Value

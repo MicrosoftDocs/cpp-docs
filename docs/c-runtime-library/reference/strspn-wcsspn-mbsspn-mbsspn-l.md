@@ -51,13 +51,13 @@ size_t _mbsspn_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to search.
 
-*strCharSet*
+*strCharSet*<br/>
 Null-terminated character set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

@@ -82,10 +82,10 @@ unsigned char *_mbsupr_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to capitalize.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

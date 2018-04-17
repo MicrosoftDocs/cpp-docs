@@ -33,10 +33,10 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 Name of the existing file.
 
-*pmode*
+*pmode*<br/>
 Permission setting for the file.
 
 ## Return Value

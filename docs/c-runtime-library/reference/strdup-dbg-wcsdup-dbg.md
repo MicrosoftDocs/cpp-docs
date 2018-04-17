@@ -43,16 +43,16 @@ wchar_t *_wcsdup_dbg(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string.
 
-*blockType*
+*blockType*<br/>
 Requested type of memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to name of source file that requested allocation operation or NULL.
 
-*linenumber*
+*linenumber*<br/>
 Line number in source file where allocation operation was requested or NULL.
 
 ## Return Value

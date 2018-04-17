@@ -45,19 +45,19 @@ wchar_t *_wgetcwd_dbg(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for the path.
 
-*maxlen*
+*maxlen*<br/>
 Maximum length of the path in characters: `char` for `_getcwd_dbg` and `wchar_t` for `_wgetcwd_dbg`.
 
-*blockType*
+*blockType*<br/>
 Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested the allocation operation or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the allocation operation was requested or `NULL`.
 
 ## Return Value

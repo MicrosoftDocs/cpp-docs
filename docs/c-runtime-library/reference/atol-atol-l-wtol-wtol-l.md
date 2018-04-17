@@ -45,10 +45,10 @@ long _wtol_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 String to be converted.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

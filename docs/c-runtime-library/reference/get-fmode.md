@@ -34,7 +34,7 @@ errno_t _get_fmode( 
 
 ### Parameters
 
-*pmode*
+*pmode*<br/>
 A pointer to an integer to be filled with the current default mode: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value

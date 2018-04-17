@@ -49,13 +49,13 @@ int _scwprintf_p _l(
 
 ### Parameters
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument*
+*argument*<br/>
 Optional arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

@@ -37,7 +37,7 @@ int _wrmdir(
 
 ### Parameters
 
-*dirname*
+*dirname*<br/>
 Path of the directory to be removed.
 
 ## Return Value

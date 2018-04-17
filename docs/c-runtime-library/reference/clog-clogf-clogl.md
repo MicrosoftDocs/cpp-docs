@@ -46,7 +46,7 @@ _Lcomplex clogl(
 
 ### Parameters
 
-*z*
+*z*<br/>
 The base of the logarithm.
 
 ## Return Value

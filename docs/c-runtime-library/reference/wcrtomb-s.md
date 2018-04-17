@@ -45,19 +45,19 @@ errno_t wcrtomb_s(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 Returns the number of bytes written or -1 if an error occurred.
 
-*mbchar*
+*mbchar*<br/>
 The resulting multibyte converted character.
 
-*sizeOfmbchar*
+*sizeOfmbchar*<br/>
 The size of the *mbchar* variable in bytes.
 
-*wchar*
+*wchar*<br/>
 A wide character to convert.
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an **mbstate_t** object.
 
 ## Return Value

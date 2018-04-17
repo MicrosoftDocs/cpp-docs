@@ -52,13 +52,13 @@ int _cwprintf_s_l(
 
 ### Parameters
 
-*format*
+*format*<br/>
 Format-control string.
 
-*argument*
+*argument*<br/>
 Optional parameters.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

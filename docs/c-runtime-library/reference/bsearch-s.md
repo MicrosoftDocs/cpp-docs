@@ -39,22 +39,22 @@ void *bsearch_s(
 
 ### Parameters
 
-*key*
+*key*<br/>
 Object to search for.
 
-*base*
+*base*<br/>
 Pointer to base of search data.
 
-*number*
+*number*<br/>
 Number of elements.
 
-*width*
+*width*<br/>
 Width of elements.
 
-*compare*
+*compare*<br/>
 Callback function that compares two elements. The first argument is the *context* pointer. The second argument is a pointer to the *key* for the search. The third argument is a pointer to the array element to be compared with *key*.
 
-*context*
+*context*<br/>
 A pointer to an object that can be accessed in the comparison function.
 
 ## Return Value

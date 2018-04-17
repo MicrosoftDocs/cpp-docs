@@ -35,10 +35,10 @@ int fwide(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure (ignored).
 
-*mode*
+*mode*<br/>
 The new width of the stream: positive for wide character, negative for byte, zero to leave unchanged. (This value is ignored.)
 
 ## Return Value

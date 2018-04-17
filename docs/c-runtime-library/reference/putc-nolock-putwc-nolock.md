@@ -39,10 +39,10 @@ wint_t _putwc_nolock(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be written.
 
-*stream*
+*stream*<br/>
 Pointer to the **FILE** structure.
 
 ## Return Value

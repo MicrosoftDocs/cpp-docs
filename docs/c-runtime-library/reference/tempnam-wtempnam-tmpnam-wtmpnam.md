@@ -45,13 +45,13 @@ wchar_t *_wtmpnam(
 
 ### Parameters
 
-*prefix*
+*prefix*<br/>
 The string that will be pre-pended to names returned by `_tempnam`.
 
-*dir*
+*dir*<br/>
 The path used in the file name if there is no TMP environment variable, or if TMP is not a valid directory.
 
-*str*
+*str*<br/>
 Pointer that will hold the generated name and will be identical to the name returned by the function. This is a convenient way to save the generated name.
 
 ## Return Value

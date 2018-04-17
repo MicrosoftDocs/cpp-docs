@@ -32,7 +32,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 
 ### Parameters
 
-*dumpClient*
+*dumpClient*<br/>
 New client-defined memory dump function to hook into the C run-time debug memory dump process.
 
 ## Return Value

@@ -47,10 +47,10 @@ errno_t _wstrdate_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 A pointer to a buffer which will be filled in with the formatted date string.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the buffer.
 
 ## Return Value

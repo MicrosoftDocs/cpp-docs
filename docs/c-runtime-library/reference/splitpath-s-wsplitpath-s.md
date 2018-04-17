@@ -69,31 +69,31 @@ errno_t _wsplitpath_s(
 
 ### Parameters
 
-*path*
+*path*<br/>
 Full path.
 
-*drive*
+*drive*<br/>
 Drive letter, followed by a colon (`:`). You can pass `NULL` for this parameter if you do not need the drive letter.
 
-*driveNumberOfElements*
+*driveNumberOfElements*<br/>
 The size of the *drive* buffer in single-byte or wide characters. If *drive* is `NULL`, this value must be 0.
 
-*dir*
+*dir*<br/>
 Directory path, including trailing slash. Forward slashes ( `/` ), backslashes ( `\` ), or both may be used. You can pass `NULL` for this parameter if you do not need the directory path.
 
-*dirNumberOfElements*
+*dirNumberOfElements*<br/>
 The size of the *dir* buffer in single-byte or wide characters. If *dir* is `NULL`, this value must be 0.
 
-*fname*
+*fname*<br/>
 Base filename (without extension). You can pass `NULL` for this parameter if you do not need the filename.
 
-*nameNumberOfElements*
+*nameNumberOfElements*<br/>
 The size of the *fname* buffer in single-byte or wide characters. If *fname* is `NULL`, this value must be 0.
 
-*ext*
+*ext*<br/>
 Filename extension, including leading period (**.**).You can pass `NULL` for this parameter if you do not need the filename extension.
 
-*extNumberOfElements*
+*extNumberOfElements*<br/>
 The size of *ext* buffer in single-byte or wide characters. If *ext* is `NULL`, this value must be 0.
 
 ## Return Value

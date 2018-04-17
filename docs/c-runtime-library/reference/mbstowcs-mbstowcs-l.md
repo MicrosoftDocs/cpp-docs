@@ -55,16 +55,16 @@ size_t _mbstowcs_l(
 
 ### Parameters
 
-*wcstr*
+*wcstr*<br/>
 The address of a sequence of wide characters.
 
-*mbstr*
+*mbstr*<br/>
 The address of a sequence of null terminated multibyte characters.
 
-*count*
+*count*<br/>
 The maximum number of multibyte characters to convert.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

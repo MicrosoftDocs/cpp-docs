@@ -32,7 +32,7 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 
 ### Parameters
 
-*unexpFunction*
+*unexpFunction*<br/>
 Pointer to a function that you write to replace the `unexpected` function.
 
 ## Return Value

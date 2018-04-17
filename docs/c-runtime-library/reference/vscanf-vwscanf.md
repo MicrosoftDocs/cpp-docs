@@ -39,10 +39,10 @@ int vwscanf(
 
 ### Parameters
 
-*format*
+*format*<br/>
 Format control string.
 
-*arglist*
+*arglist*<br/>
 Variable argument list.
 
 ## Return Value

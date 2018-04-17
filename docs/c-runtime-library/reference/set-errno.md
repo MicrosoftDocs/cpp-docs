@@ -32,7 +32,7 @@ errno_t _set_errno( int error_value );
 
 ### Parameters
 
-*error_value*
+*error_value*<br/>
 The new value of **errno**.
 
 ## Return Value

@@ -41,13 +41,13 @@ wchar_t *wmemcpy(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 New buffer.
 
-*src*
+*src*<br/>
 Buffer to copy from.
 
-*count*
+*count*<br/>
 Number of characters to copy.
 
 ## Return Value

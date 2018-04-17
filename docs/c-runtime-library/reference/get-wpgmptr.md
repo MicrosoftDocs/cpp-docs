@@ -34,7 +34,7 @@ errno_t _get_wpgmptr( 
 
 ### Parameters
 
-*pValue*
+*pValue*<br/>
 A pointer to a string to be filled with the current value of the `_wpgmptr` variable.
 
 ## Return Value

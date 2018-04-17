@@ -38,10 +38,10 @@ unsigned _getdiskfree(
 
 ### Parameters
 
-*drive*
+*drive*<br/>
 The disk drive for which you want information.
 
-*driveinfo*
+*driveinfo*<br/>
 A **_diskfree_t** structure that will be populated with information about the drive.
 
 ## Return Value

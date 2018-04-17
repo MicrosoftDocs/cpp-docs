@@ -34,7 +34,7 @@ int atexit(
 
 ### Parameters
 
-*func*
+*func*<br/>
 Function to be called.
 
 ## Return Value

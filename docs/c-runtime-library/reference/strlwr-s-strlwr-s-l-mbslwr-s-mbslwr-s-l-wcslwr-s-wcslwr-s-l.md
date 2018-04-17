@@ -88,13 +88,13 @@ errno_t _wcslwr_s_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to convert to lowercase.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the buffer.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

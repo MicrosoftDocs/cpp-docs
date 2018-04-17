@@ -38,7 +38,7 @@ int _wmkdir(
 
 ### Parameters
 
-*dirname*
+*dirname*<br/>
 Path for a new directory.
 
 ## Return Value

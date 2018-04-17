@@ -36,10 +36,10 @@ unsigned int _set_abort_behavior(
 
 ### Parameters
 
-*flags*
+*flags*<br/>
 New value of the [abort](abort.md) flags.
 
-*mask*
+*mask*<br/>
 Mask for the [abort](abort.md) flags bits to set.
 
 ## Return Value

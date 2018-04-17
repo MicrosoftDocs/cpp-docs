@@ -41,13 +41,13 @@ wchar_t *_wfullpath(
 
 ### Parameters
 
-*absPath*
+*absPath*<br/>
 Pointer to a buffer containing the absolute or full path name, or NULL.
 
-*relPath*
+*relPath*<br/>
 Relative path name.
 
-*maxLength*
+*maxLength*<br/>
 Maximum length of the absolute path name buffer (*absPath*). This length is in bytes for `_fullpath` but in wide characters (`wchar_t`) for `_wfullpath`.
 
 ## Return Value

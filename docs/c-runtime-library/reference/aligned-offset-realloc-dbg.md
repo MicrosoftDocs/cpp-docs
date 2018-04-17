@@ -39,22 +39,22 @@ void * _aligned_offset_realloc_dbg(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 The current memory block pointer.
 
-*size*
+*size*<br/>
 The size of the memory allocation.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*offset*
+*offset*<br/>
 The offset into the memory allocation to force the alignment.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file that requested the `aligned_offset_realloc` operation or NULL.
 
-*linenumber*
+*linenumber*<br/>
 Line number in the source file where the `aligned_offset_realloc` operation was requested or NULL.
 
 ## Return Value

@@ -43,10 +43,10 @@ wchar_t * __wcserror(
 
 ### Parameters
 
-*errnum*
+*errnum*<br/>
 Error number.
 
-*strErrMsg*
+*strErrMsg*<br/>
 User-supplied message.
 
 ## Return Value

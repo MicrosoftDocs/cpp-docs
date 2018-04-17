@@ -36,13 +36,13 @@ void * _aligned_offset_malloc(
 
 ### Parameters
 
-*size*
+*size*<br/>
 The size of the requested memory allocation.
 
-*alignment*
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
-*offset*
+*offset*<br/>
 The offset into the memory allocation to force the alignment.
 
 ## Return Value

@@ -69,19 +69,19 @@ int vswprintf_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of *buffer* in characters.
 
-*format*
+*format*<br/>
 Format specification.
 
-*argptr*
+*argptr*<br/>
 Pointer to list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

@@ -35,7 +35,7 @@ int raise(
 
 ### Parameters
 
-*sig*
+*sig*<br/>
 Signal to be raised.
 
 ## Return Value

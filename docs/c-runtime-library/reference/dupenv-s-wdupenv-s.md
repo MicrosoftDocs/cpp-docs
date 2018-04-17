@@ -44,13 +44,13 @@ errno_t _wdupenv_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Buffer to store the variable's value.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of *buffer*.
 
-*varname*
+*varname*<br/>
 Environment variable name.
 
 ## Return Value

@@ -41,13 +41,13 @@ FILE *_wfsopen(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 Name of the file to open.
 
-*mode*
+*mode*<br/>
 Type of access permitted.
 
-*shflag*
+*shflag*<br/>
 Type of sharing allowed.
 
 ## Return Value

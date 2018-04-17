@@ -42,13 +42,13 @@ size_t wcrtomb(
 
 ### Parameters
 
-*mbchar*
+*mbchar*<br/>
 The resulting multibyte converted character.
 
-*wchar*
+*wchar*<br/>
 A wide character to convert.
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an `mbstate_t` object.
 
 ## Return Value

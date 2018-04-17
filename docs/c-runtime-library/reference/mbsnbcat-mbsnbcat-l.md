@@ -58,16 +58,16 @@ unsigned char *_mbsnbcat_l(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Null-terminated multibyte-character destination string.
 
-*src*
+*src*<br/>
 Null-terminated multibyte-character source string.
 
-*count*
+*count*<br/>
 Number of bytes from *src* to append to *dest*.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

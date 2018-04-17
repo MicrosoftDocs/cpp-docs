@@ -67,16 +67,16 @@ errno_t _mbsset_s_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to be set.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the *str* buffer.
 
-*c*
+*c*<br/>
 Character setting.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

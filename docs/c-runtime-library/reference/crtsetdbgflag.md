@@ -34,7 +34,7 @@ int _CrtSetDbgFlag(
 
 ### Parameters
 
-*newFlag*
+*newFlag*<br/>
 New state for **_crtDbgFlag**.
 
 ## Return Value

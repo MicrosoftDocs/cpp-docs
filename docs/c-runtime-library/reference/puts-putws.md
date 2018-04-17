@@ -37,7 +37,7 @@ int _putws(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Output string.
 
 ## Return Value

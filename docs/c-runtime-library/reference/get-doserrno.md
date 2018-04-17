@@ -34,7 +34,7 @@ errno_t _get_doserrno( 
 
 ### Parameters
 
-*pValue*
+*pValue*<br/>
 A pointer to an integer to be filled with the current value of the `_doserrno` global macro.
 
 ## Return Value

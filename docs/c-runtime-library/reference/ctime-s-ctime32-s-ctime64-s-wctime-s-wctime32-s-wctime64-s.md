@@ -84,7 +84,7 @@ errno_t _wctime64_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Must be large enough to hold 26 characters. A pointer to the character string result, or **NULL** if:
 
 - *sourceTime* represents a date before midnight, January 1, 1970, UTC.
@@ -95,10 +95,10 @@ Must be large enough to hold 26 characters. A pointer to the character string re
 
 - If you use **_ctime_s** or **_wctime_s**, these functions are wrappers to the previous functions. See the Remarks section.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the buffer.
 
-*sourceTime*
+*sourceTime*<br/>
 Pointer to stored time.
 
 ## Return Value

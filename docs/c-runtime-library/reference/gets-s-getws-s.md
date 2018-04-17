@@ -47,10 +47,10 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for input string.
 
-*sizeInCharacters*
+*sizeInCharacters*<br/>
 The size of the buffer.
 
 ## Return Value

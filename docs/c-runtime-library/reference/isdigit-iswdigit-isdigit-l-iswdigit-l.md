@@ -45,10 +45,10 @@ int _iswdigit_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

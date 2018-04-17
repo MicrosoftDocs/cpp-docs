@@ -36,13 +36,13 @@ int _read(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor referring to the open file.
 
-*buffer*
+*buffer*<br/>
 Storage location for data.
 
-*count*
+*count*<br/>
 Maximum number of bytes.
 
 ## Return Value

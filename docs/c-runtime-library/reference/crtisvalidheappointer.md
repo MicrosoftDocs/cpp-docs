@@ -34,7 +34,7 @@ int _CrtIsValidHeapPointer(
 
 ### Parameters
 
-*userData*
+*userData*<br/>
 Pointer to the beginning of an allocated memory block.
 
 ## Return Value

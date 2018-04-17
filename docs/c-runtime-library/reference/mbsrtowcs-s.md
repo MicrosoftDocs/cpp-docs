@@ -47,22 +47,22 @@ errno_t mbsrtowcs_s(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 The number of characters converted.
 
-*wcstr*
+*wcstr*<br/>
 Address of buffer to store the resulting converted wide character string.
 
-*sizeInWords*
+*sizeInWords*<br/>
 The size of *wcstr* in words (wide characters).
 
-*mbstr*
+*mbstr*<br/>
 Indirect pointer to the location of the multibyte character string to be converted.
 
-*count*
+*count*<br/>
 The maximum number of wide characters to store in the *wcstr* buffer, not including the terminating null, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*mbstate*
+*mbstate*<br/>
 A pointer to an **mbstate_t** conversion state object. If this value is a null pointer, a static internal conversion state object is used. Because the internal **mbstate_t** object is not thread-safe, we recommend that you always pass your own *mbstate* parameter.
 
 ## Return Value

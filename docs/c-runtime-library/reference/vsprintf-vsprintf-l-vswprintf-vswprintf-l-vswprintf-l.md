@@ -86,19 +86,19 @@ int _vswprintf_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output.
 
-*count*
+*count*<br/>
 Maximum number of characters to store, in the wide string versions of this function.
 
-*format*
+*format*<br/>
 Format specification.
 
-*argptr*
+*argptr*<br/>
 Pointer to list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

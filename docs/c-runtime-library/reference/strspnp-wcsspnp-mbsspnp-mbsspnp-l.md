@@ -52,13 +52,13 @@ unsigned char *_mbsspnp_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated string to search.
 
-*charset*
+*charset*<br/>
 Null-terminated character set.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

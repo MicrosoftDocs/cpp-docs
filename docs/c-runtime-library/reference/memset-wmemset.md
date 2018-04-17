@@ -41,13 +41,13 @@ wchar_t *wmemset(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Pointer to destination.
 
-*c*
+*c*<br/>
 Character to set.
 
-*count*
+*count*<br/>
 Number of characters.
 
 ## Return Value

@@ -49,13 +49,13 @@ int _wprintf_p_l(
 
 ### Parameters
 
-*format*
+*format*<br/>
 Format control.
 
-*argument*
+*argument*<br/>
 Optional arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

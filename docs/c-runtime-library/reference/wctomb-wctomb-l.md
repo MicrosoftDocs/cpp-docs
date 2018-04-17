@@ -40,10 +40,10 @@ int _wctomb_l(
 
 ### Parameters
 
-*mbchar*
+*mbchar*<br/>
 The address of a multibyte character.
 
-*wchar*
+*wchar*<br/>
 A wide character.
 
 ## Return Value

@@ -39,22 +39,22 @@ void *_lsearch_s(
 
 ### Parameters
 
-*key*
+*key*<br/>
 Object to search for.
 
-*base*
+*base*<br/>
 Pointer to the base of array to be searched.
 
-*number*
+*number*<br/>
 Number of elements.
 
-*size*
+*size*<br/>
 Size of each array element in bytes.
 
-*compare*
+*compare*<br/>
 Pointer to the comparison routine. The second parameter is a pointer to the key for search. The third parameter is a pointer to an array element to be compared with the key.
 
-*context*
+*context*<br/>
 A pointer to an object that might be accessed in the comparison function.
 
 ## Return Value

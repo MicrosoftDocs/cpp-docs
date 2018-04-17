@@ -61,10 +61,10 @@ unsigned char *_mbscat(
 
 ### Parameters
 
-*strDestination*
+*strDestination*<br/>
 Null-terminated destination string.
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string.
 
 ## Return Value

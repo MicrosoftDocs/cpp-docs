@@ -36,13 +36,13 @@ int _CrtMemDifference(
 
 ### Parameters
 
-*stateDiff*
+*stateDiff*<br/>
 Pointer to a `_CrtMemState` structure that is used to store the differences between the two memory states (returned).
 
-*oldState*
+*oldState*<br/>
 Pointer to an earlier memory state (`_CrtMemState` structure).
 
-*newState*
+*newState*<br/>
 Pointer to a later memory state (`_CrtMemState` structure).
 
 ## Return Value

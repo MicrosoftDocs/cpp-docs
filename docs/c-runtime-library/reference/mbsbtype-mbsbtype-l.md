@@ -43,13 +43,13 @@ int _mbsbtype_l(
 
 ### Parameters
 
-*mbstr*
+*mbstr*<br/>
 Address of a sequence of multibyte characters.
 
-*count*
+*count*<br/>
 Byte offset from head of string.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

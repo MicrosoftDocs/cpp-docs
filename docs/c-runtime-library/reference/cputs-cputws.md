@@ -40,7 +40,7 @@ int _cputws(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Output string.
 
 ## Return Value

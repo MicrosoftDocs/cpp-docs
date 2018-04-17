@@ -34,7 +34,7 @@ error_t _get_timezone(
 
 ### Parameters
 
-*seconds*
+*seconds*<br/>
 The difference in seconds between UTC and local time.
 
 ## Return Value

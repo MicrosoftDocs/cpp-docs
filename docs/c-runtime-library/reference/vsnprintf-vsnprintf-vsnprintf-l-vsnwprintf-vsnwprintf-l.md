@@ -100,19 +100,19 @@ int _vsnwprintf_l(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output.
 
-*count*
+*count*<br/>
 Maximum number of characters to write.
 
-*format*
+*format*<br/>
 Format specification.
 
-*argptr*
+*argptr*<br/>
 Pointer to list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

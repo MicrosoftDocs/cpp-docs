@@ -43,16 +43,16 @@ errno_t _wfreopen(
 
 ### Parameters
 
-*pFile*
+*pFile*<br/>
 A pointer to the file pointer to be provided by the call.
 
-*path*
+*path*<br/>
 Path of new file.
 
-*mode*
+*mode*<br/>
 Type of access permitted.
 
-*stream*
+*stream*<br/>
 Pointer to **FILE** structure.
 
 ## Return Value

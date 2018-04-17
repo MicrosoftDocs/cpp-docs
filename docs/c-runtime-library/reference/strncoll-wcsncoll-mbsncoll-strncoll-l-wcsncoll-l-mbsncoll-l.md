@@ -70,10 +70,10 @@ int _mbsncoll_l(
 *string1*, *string2*<br/>
 Null-terminated strings to compare.
 
-*count*
+*count*<br/>
 The number of characters to compare.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

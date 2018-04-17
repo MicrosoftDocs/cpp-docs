@@ -34,7 +34,7 @@ int _getw(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to the `FILE` structure.
 
 ## Return Value

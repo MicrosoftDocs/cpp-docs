@@ -39,13 +39,13 @@ intptr_t _cwait(
 
 ### Parameters
 
-*termstat*
+*termstat*<br/>
 Pointer to a buffer where the result code of the specified process will be stored, or NULL.
 
-*procHandle*
+*procHandle*<br/>
 The handle to the process to wait on (that is, the process that has to terminate before `_cwait` can return).
 
-*action*
+*action*<br/>
 NULL: Ignored by Windows operating system applications; for other applications: action code to perform on *procHandle*.
 
 ## Return Value

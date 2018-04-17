@@ -45,10 +45,10 @@ int _iswlower_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to test.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

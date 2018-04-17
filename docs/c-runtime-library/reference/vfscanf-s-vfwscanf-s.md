@@ -41,13 +41,13 @@ int vfwscanf_s(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure.
 
-*format*
+*format*<br/>
 Format-control string.
 
-*arglist*
+*arglist*<br/>
 Variable argument list.
 
 ## Return Value

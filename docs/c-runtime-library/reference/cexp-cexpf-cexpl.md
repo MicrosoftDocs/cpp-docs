@@ -39,7 +39,7 @@ _Lcomplex cexp( _Lcomplex z );  // C++ only
 
 ### Parameters
 
-*z*
+*z*<br/>
 A complex number that represents the exponent.
 
 ## Return Value

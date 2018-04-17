@@ -39,22 +39,22 @@ void *_lfind_s(
 
 ### Parameters
 
-*key*
+*key*<br/>
 Object to search for.
 
-*base*
+*base*<br/>
 Pointer to the base of search data.
 
-*number*
+*number*<br/>
 Number of array elements.
 
-*size*
+*size*<br/>
 Size of array elements in bytes.
 
-*compare*
+*compare*<br/>
 Pointer to comparison routine. The first parameter is the *context* pointer. The second parameter is a pointer to key for search. The third parameter is a pointer to array element to be compared with key.
 
-*context*
+*context*<br/>
 A pointer to an object that might be accessed in the comparison function.
 
 ## Return Value

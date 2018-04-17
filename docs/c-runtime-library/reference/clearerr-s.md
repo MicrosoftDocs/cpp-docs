@@ -34,7 +34,7 @@ errno_t clearerr_s(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to `FILE` structure
 
 ## Return Value

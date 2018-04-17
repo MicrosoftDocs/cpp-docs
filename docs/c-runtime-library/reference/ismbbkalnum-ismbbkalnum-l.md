@@ -38,10 +38,10 @@ int _ismbbkalnum_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Integer to be tested.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

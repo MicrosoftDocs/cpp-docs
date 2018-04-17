@@ -47,10 +47,10 @@ errno_t _wtmpnam_s(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Pointer that will hold the generated name.
 
-*sizeInChars*
+*sizeInChars*<br/>
 The size of the buffer in characters.
 
 ## Return Value

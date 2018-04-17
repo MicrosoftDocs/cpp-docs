@@ -61,13 +61,13 @@ const wchar_t *wmemchr(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Pointer to buffer.
 
-*c*
+*c*<br/>
 Character to look for.
 
-*count*
+*count*<br/>
 Number of characters to check.
 
 ## Return Value

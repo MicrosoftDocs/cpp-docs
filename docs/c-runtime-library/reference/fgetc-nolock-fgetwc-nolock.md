@@ -37,7 +37,7 @@ wint_t _fgetwc_nolock(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to the `FILE` structure.
 
 ## Return Value

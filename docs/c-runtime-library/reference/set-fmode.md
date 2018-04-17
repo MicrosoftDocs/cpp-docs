@@ -34,7 +34,7 @@ errno_t _set_fmode( 
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 The file translation mode desired: `_O_TEXT` or `_O_BINARY`.
 
 ## Return Value

@@ -64,22 +64,22 @@ errno_t _wcstombs_s_l(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 The number of characters converted.
 
-*mbstr*
+*mbstr*<br/>
 The address of a buffer for the resulting converted multibyte character string.
 
-*sizeInBytes*
+*sizeInBytes*<br/>
 The size in bytes of the *mbstr* buffer.
 
-*wcstr*
+*wcstr*<br/>
 Points to the wide character string to be converted.
 
-*count*
+*count*<br/>
 The maximum number of bytes to store in the *mbstr* buffer, not including the terminating null character, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

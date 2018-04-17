@@ -37,16 +37,16 @@ size_t mbrtowc(
 
 ### Parameters
 
-*wchar*
+*wchar*<br/>
 Address of a wide character to receive the converted wide character string (type `wchar_t`). This value can be a null pointer if no return wide character is required.
 
-*mbchar*
+*mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).
 
-*count*
+*count*<br/>
 Number of bytes to check.
 
-*mbstate*
+*mbstate*<br/>
 Pointer to conversion state object. If this value is a null pointer, the function uses a static internal conversion state object. Because the internal `mbstate_t` object is not thread-safe, we recommend that you always pass your own *mbstate* argument.
 
 ## Return Value

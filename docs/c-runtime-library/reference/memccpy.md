@@ -37,16 +37,16 @@ void *_memccpy(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Pointer to the destination.
 
-*src*
+*src*<br/>
 Pointer to the source.
 
-*c*
+*c*<br/>
 Last character to copy.
 
-*count*
+*count*<br/>
 Number of characters.
 
 ## Return Value

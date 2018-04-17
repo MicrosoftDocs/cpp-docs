@@ -64,13 +64,13 @@ errno_t _mbscat_s(
 
 ### Parameters
 
-*strDestination*
+*strDestination*<br/>
 Null-terminated destination string buffer.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the destination string buffer.
 
-*strSource*
+*strSource*<br/>
 Null-terminated source string buffer.
 
 ## Return Value

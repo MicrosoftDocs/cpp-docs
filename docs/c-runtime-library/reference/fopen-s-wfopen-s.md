@@ -41,13 +41,13 @@ errno_t _wfopen_s(
 
 ### Parameters
 
-*pFile*
+*pFile*<br/>
 A pointer to the file pointer that will receive the pointer to the opened file.
 
-*filename*
+*filename*<br/>
 Filename.
 
-*mode*
+*mode*<br/>
 Type of access permitted.
 
 ## Return Value

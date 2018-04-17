@@ -32,7 +32,7 @@ int _configthreadlocale( int per_thread_locale_type );
 
 ### Parameters
 
-*per_thread_locale_type*
+*per_thread_locale_type*<br/>
 The option to set. One of the options listed in the following table.
 
 ## Return Value

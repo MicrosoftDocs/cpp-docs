@@ -84,13 +84,13 @@ const unsigned char *_mbschr_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Null-terminated source string.
 
-*c*
+*c*<br/>
 Character to be located.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

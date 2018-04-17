@@ -33,10 +33,10 @@ int _dup2( int fd1, int fd2 );
 
 ### Parameters
 
-*fd*, *fd1*
+*fd*, *fd1*<br/>
 File descriptors referring to open file.
 
-*fd2*
+*fd2*<br/>
 Any file descriptor.
 
 ## Return Value

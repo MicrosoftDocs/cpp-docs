@@ -34,7 +34,7 @@ const char * _RTC_GetErrDesc(
 
 ### Parameters
 
-*errnum*
+*errnum*<br/>
 A number between zero and one less than the value returned by `_RTC_NumErrors`.
 
 ## Return Value

@@ -43,13 +43,13 @@ int _mbbtype_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 The character to test.
 
-*type*
+*type*<br/>
 The type of byte to test for.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

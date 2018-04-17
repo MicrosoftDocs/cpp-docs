@@ -47,22 +47,22 @@ errno_t _wdupenv_s_dbg(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Buffer to store the variable's value.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of *buffer*.
 
-*varname*
+*varname*<br/>
 Environment variable name.
 
-*blockType*
+*blockType*<br/>
 Requested type of the memory block: `_CLIENT_BLOCK` or `_NORMAL_BLOCK`.
 
-*filename*
+*filename*<br/>
 Pointer to the name of the source file or `NULL`.
 
-*linenumber*
+*linenumber*<br/>
 Line number in source file or `NULL`.
 
 ## Return Value

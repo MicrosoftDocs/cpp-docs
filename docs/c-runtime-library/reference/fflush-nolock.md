@@ -34,7 +34,7 @@ int _fflush_nolock(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to the `FILE` structure.
 
 ## Return Value

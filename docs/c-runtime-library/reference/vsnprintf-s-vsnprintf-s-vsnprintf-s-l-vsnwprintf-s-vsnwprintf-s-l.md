@@ -82,22 +82,22 @@ int _vsnwprintf_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output.
 
-*sizeOfBuffer*
+*sizeOfBuffer*<br/>
 The size of the *buffer* for output, as the character count.
 
-*count*
+*count*<br/>
 Maximum number of characters to write (not including the terminating null), or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*format*
+*format*<br/>
 Format specification.
 
-*argptr*
+*argptr*<br/>
 Pointer to list of arguments.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

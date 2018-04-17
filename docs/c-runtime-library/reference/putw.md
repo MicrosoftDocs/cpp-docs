@@ -35,10 +35,10 @@ int _putw(
 
 ### Parameters
 
-*binint*
+*binint*<br/>
 Binary integer to be output.
 
-*stream*
+*stream*<br/>
 Pointer to the **FILE** structure.
 
 ## Return Value

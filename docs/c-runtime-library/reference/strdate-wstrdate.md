@@ -45,7 +45,7 @@ wchar_t *_wstrdate(
 
 ### Parameters
 
-*datestr*
+*datestr*<br/>
 A pointer to a buffer containing the formatted date string.
 
 ## Return Value

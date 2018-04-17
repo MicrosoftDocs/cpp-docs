@@ -41,13 +41,13 @@ int _fseeki64_nolock(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to the **FILE** structure.
 
-*offset*
+*offset*<br/>
 Number of bytes from *origin*.
 
-*origin*
+*origin*<br/>
 Initial position.
 
 ## Return Value

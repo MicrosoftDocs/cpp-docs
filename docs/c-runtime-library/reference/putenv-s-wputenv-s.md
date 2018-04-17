@@ -42,10 +42,10 @@ errno_t _wputenv_s(
 
 ### Parameters
 
-*varname*
+*varname*<br/>
 The environment variable name.
 
-*value_string*
+*value_string*<br/>
 The value to set the environment variable to.
 
 ## Return Value

@@ -40,7 +40,7 @@ wchar_t c
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be output.
 
 ## Return Value

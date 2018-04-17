@@ -37,7 +37,7 @@ wint_t putwchar(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be written.
 
 ## Return Value

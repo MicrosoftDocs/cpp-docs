@@ -43,16 +43,16 @@ int _wsopen(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 File name.
 
-*oflag*
+*oflag*<br/>
 The kind of operations allowed.
 
-*shflag*
+*shflag*<br/>
 The kind of sharing allowed.
 
-*pmode*
+*pmode*<br/>
 Permission setting.
 
 ## Return Value

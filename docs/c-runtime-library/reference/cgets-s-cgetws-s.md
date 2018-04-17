@@ -54,13 +54,13 @@ errno_t _cgetws_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for data.
 
-*numberOfElements*
+*numberOfElements*<br/>
 The size of the buffer in single-byte or wide characters, which is also the maximum number of characters to be read.
 
-*pSizeRead*
+*pSizeRead*<br/>
 The number of characters actually read.
 
 ## Return Value

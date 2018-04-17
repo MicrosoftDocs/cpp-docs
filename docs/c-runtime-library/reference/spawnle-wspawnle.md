@@ -52,16 +52,16 @@ intptr_t _wspawnle(
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 Execution mode for the calling process.
 
-*cmdname*
+*cmdname*<br/>
 Path of the file to be executed.
 
 *arg0*, *arg1*, ... *argn*<br/>
 List of pointers to arguments. The *arg0* argument is usually a pointer to *cmdname*. The arguments *arg1* through *argn* are pointers to the character strings forming the new argument list. Following *argn*, there must be a `NULL` pointer to mark the end of the argument list.
 
-*envp*
+*envp*<br/>
 Array of pointers to environment settings.
 
 ## Return Value

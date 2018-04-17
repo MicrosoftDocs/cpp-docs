@@ -69,10 +69,10 @@ int _ismbcspace_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to be determined.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

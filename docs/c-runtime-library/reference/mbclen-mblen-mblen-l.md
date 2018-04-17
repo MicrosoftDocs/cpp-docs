@@ -46,16 +46,16 @@ int _mblen_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Multibyte character.
 
-*mbstr*
+*mbstr*<br/>
 Address of a multibyte-character byte sequence.
 
-*count*
+*count*<br/>
 Number of bytes to check.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Return Value

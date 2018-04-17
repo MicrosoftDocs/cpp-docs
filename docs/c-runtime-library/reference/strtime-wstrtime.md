@@ -45,7 +45,7 @@ wchar_t *_wstrtime(
 
 ### Parameters
 
-*timestr*
+*timestr*<br/>
 Time string.
 
 ## Return Value

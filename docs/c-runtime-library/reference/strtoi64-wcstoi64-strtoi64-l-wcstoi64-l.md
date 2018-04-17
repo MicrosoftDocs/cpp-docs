@@ -53,16 +53,16 @@ __int64 _wcstoi64_l(
 
 ### Parameters
 
-*strSource*
+*strSource*<br/>
 Null-terminated string to convert.
 
-*endptr*
+*endptr*<br/>
 Pointer to character that stops scan.
 
-*base*
+*base*<br/>
 Number base to use.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

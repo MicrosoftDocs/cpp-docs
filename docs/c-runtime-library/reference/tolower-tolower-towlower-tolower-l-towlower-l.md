@@ -47,10 +47,10 @@ int _towlower_l(
 
 ### Parameters
 
-*c*
+*c*<br/>
 Character to convert.
 
-*locale*
+*locale*<br/>
 Locale to use for locale-specific translation.
 
 ## Return Value

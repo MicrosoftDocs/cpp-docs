@@ -32,7 +32,7 @@ error_t _get_daylight( int* hours );
 
 ### Parameters
 
-*hours*
+*hours*<br/>
 The offset in hours of daylight saving time.
 
 ## Return Value

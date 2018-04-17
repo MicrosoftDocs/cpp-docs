@@ -35,10 +35,10 @@ errno_t _umask_s(
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 Default permission setting.
 
-*pOldMode*
+*pOldMode*<br/>
 The previous value of the permission setting.
 
 ## Return Value

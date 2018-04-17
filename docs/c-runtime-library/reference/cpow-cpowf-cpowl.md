@@ -46,10 +46,10 @@ _Lcomplex cpowl(
 
 ### Parameters
 
-*x*
+*x*<br/>
 The base.
 
-*y*
+*y*<br/>
 The exponent.
 
 ## Return Value

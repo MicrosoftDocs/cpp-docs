@@ -61,22 +61,22 @@ errno_t _mbstowcs_s_l(
 
 ### Parameters
 
-*pReturnValue*
+*pReturnValue*<br/>
 The number of characters converted.
 
-*wcstr*
+*wcstr*<br/>
 Address of buffer for the resulting converted wide character string.
 
-*sizeInWords*
+*sizeInWords*<br/>
 The size of the *wcstr* buffer in words.
 
-*mbstr*
+*mbstr*<br/>
 The address of a sequence of null terminated multibyte characters.
 
-*count*
+*count*<br/>
 The maximum number of wide characters to store in the *wcstr* buffer, not including the terminating null, or [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

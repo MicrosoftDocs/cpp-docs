@@ -52,13 +52,13 @@ int _ismbstrail_l(
 
 ### Parameters
 
-*str*
+*str*<br/>
 Pointer to the start of the string or the previous known lead byte.
 
-*current*
+*current*<br/>
 Pointer to the position in the string to be tested.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

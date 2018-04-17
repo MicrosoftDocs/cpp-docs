@@ -36,7 +36,7 @@ _purecall_handler __cdecl _set_purecall_handler(
 
 ### Parameters
 
-*function*
+*function*<br/>
 The function to be called when a pure virtual function is called. A `_purecall_handler` function must have a void return type.
 
 ## Return Value

@@ -71,16 +71,16 @@ errno_t __wcserror_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Buffer to hold error string.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of buffer.
 
-*errnum*
+*errnum*<br/>
 Error number.
 
-*strErrMsg*
+*strErrMsg*<br/>
 User-supplied message.
 
 ## Return Value

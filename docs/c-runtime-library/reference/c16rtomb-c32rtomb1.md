@@ -41,13 +41,13 @@ size_t c32rtomb(
 
 ### Parameters
 
-*mbchar*
+*mbchar*<br/>
 Pointer to an array to store the multibyte converted character.
 
-*wchar*
+*wchar*<br/>
 A wide character to convert.
 
-*state*
+*state*<br/>
 A pointer to an `mbstate_t` object.
 
 ## Return Value

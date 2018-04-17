@@ -69,19 +69,19 @@ int swprintf_s(
 
 ### Parameters
 
-*buffer*
+*buffer*<br/>
 Storage location for output
 
-*sizeOfBuffer*
+*sizeOfBuffer*<br/>
 Maximum number of characters to store.
 
-*format*
+*format*<br/>
 Format-control string
 
-*...*
+*...*<br/>
 Optional arguments to be formatted
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).

@@ -42,16 +42,16 @@ int _mbtowc_l(
 
 ### Parameters
 
-*wchar*
+*wchar*<br/>
 Address of a wide character (type `wchar_t`).
 
-*mbchar*
+*mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).
 
-*count*
+*count*<br/>
 Number of bytes to check.
 
-*locale*
+*locale*<br/>
 The locale to use.
 
 ## Return Value

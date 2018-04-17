@@ -43,16 +43,16 @@ errno_t wmemmove_s(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Destination object.
 
-*numberOfElements*
+*numberOfElements*<br/>
 Size of the destination buffer.
 
-*src*
+*src*<br/>
 Source object.
 
-*count*
+*count*<br/>
 Number of bytes (`memmove_s`) or characters (`wmemmove_s`) to copy.
 
 ## Return Value

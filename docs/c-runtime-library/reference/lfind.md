@@ -38,19 +38,19 @@ void *_lfind(
 
 ### Parameters
 
-*key*
+*key*<br/>
 Object to search for.
 
-*base*
+*base*<br/>
 Pointer to the base of search data.
 
-*number*
+*number*<br/>
 Number of array elements.
 
-*width*
+*width*<br/>
 Width of array elements.
 
-*compare*
+*compare*<br/>
 Pointer to comparison routine. The first parameter is a pointer to key for search. The second parameter is a pointer to array element to be compared with key.
 
 ## Return Value

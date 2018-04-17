@@ -36,13 +36,13 @@ int _CrtIsValidPointer(
 
 ### Parameters
 
-*address*
+*address*<br/>
 Points to the beginning of the memory range to test for validity.
 
-*size*
+*size*<br/>
 Size of the specified memory range (in bytes).
 
-*access*
+*access*<br/>
 Read/write accessibility to determine for the memory range.
 
 ## Return Value

@@ -39,10 +39,10 @@ int _CrtSetReportHookW2(
 
 ### Parameters
 
-*mode*
+*mode*<br/>
 The action to take: `_CRT_RPTHOOK_INSTALL` or `_CRT_RPTHOOK_REMOVE`.
 
-*pfnNewHook*
+*pfnNewHook*<br/>
 Report hook to install or remove in the narrow-character or wide-character version of this function.
 
 ## Return Value

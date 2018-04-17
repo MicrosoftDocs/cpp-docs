@@ -30,7 +30,7 @@ errno_t rand_s(unsigned int* randomValue);
 
 ### Parameters
 
-*randomValue*
+*randomValue*<br/>
 A pointer to an integer to hold the generated value.
 
 ## Return Value

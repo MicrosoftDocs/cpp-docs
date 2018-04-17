@@ -39,10 +39,10 @@ int _wcreat(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 Name of new file.
 
-*pmode*
+*pmode*<br/>
 Permission setting.
 
 ## Return Value
