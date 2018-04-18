@@ -21,8 +21,8 @@ The arguments in the prototype
   
 ```  
   
-int main( int  
-argc[ ,char*argv[] [,char*envp[] ] ] );intwmain(intargc[ ,wchar_t*argv[] [,wchar_t*envp[] ] ] );  
+int main( int argc, char* argv[], char* envp[]);
+int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);  
 ```  
   
  allow convenient command-line parsing of arguments and, optionally, access to environment variables. The argument definitions are as follows:  

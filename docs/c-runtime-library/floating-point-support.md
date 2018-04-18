@@ -1,7 +1,7 @@
 ---
 title: "Math and floating-point support | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/05/2018"
+ms.date: "04/06/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -23,8 +23,6 @@ Many of the floating point math library functions have different implementations
 Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported the **long double** type as an 80-bit precision floating-point data type. In later versions of Visual C++, the **long double** data type is a 64-bit precision floating-point data type identical to the **double** type. The compiler treats **long double** and **double** as distinct types, but the **long double** functions are identical to their **double** counterparts. The CRT provides **long double** versions of the math functions for ISO C99 source code compatibility, but note that the binary representation may differ from other compilers.
 
 ## Supported math and floating-point routines
-
-The CRT supports these floating point functions:
 
 |Routine|Use|
 |-|-|

@@ -46,7 +46,7 @@ A B C D E F G H I J K L M
 N O P Q R S T U V W X Y Z  
 ```  
   
- Certain ranges of universal character names are also allowed in an identifier.  A universal character name in an identifier cannot designate a control character or a character in the basic source character set. For more information, see [Character Sets](../cpp/character-sets2.md). These Unicode code point number ranges are allowed as universal character names for any character in an identifier:  
+ Certain ranges of universal character names are also allowed in an identifier.  A universal character name in an identifier cannot designate a control character or a character in the basic source character set. For more information, see [Character Sets](../cpp/character-sets.md). These Unicode code point number ranges are allowed as universal character names for any character in an identifier:  
   
 -   00A8, 00AA, 00AD, 00AF, 00B2-00B5, 00B7-00BA, 00BC-00BE, 00C0-00D6, 00D8-00F6, 00F8-00FF, 0100-02FF, 0370-167F, 1681-180D, 180F-1DBF, 1E00-1FFF, 200B-200D, 202A-202E, 203F-2040, 2054, 2060-206F, 2070-20CF, 2100-218F, 2460-24FF, 2776-2793, 2C00-2DFF, 2E80-2FFF, 3004-3007, 3021-302F, 3031-303F, 3040-D7FF, F900-FD3D, FD40-FDCF, FDF0-FE1F, FE30-FE44, FE47-FFFD, 10000-1FFFD, 20000-2FFFD, 30000-3FFFD, 40000-4FFFD, 50000-5FFFD, 60000-6FFFD, 70000-7FFFD, 80000-8FFFD, 90000-9FFFD, A0000-AFFFD, B0000-BFFFD, C0000-CFFFD, D0000-DFFFD, E0000-EFFFD  
   

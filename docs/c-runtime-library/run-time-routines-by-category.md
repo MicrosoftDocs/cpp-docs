@@ -1,7 +1,7 @@
 ---
 title: "Universal C runtime routines by category | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2018"
+ms.date: "04/06/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "article"
 f1_keywords: ["c.runtime"]

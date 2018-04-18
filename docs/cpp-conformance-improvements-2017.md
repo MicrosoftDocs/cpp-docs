@@ -65,7 +65,7 @@ New attributes to silence warnings when an entity is not used, or to create a wa
 
 ### Using attribute namespaces without repetition
 
-New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes2.md).
+New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes.md).
 
 ### Structured bindings
 
@@ -1704,6 +1704,32 @@ int main() {
 }
 
 ```
+
+### Variadic template constructor base class initialization list
+
+In previous editions of Visual Studio, a variadic template constructor base class initialization list that was missing template arguments was erroneously allowed without error. In Visual Studio 2017 version 15.7, a compiler error is raised.
+
+The following code example in Visual Studio 2017 version 15.7 raises *error C2614: D\<int>: illegal member initialization: 'B' is not a base or member*
+
+```cpp
+template<typename T>
+struct B {};
+
+template<typename T>
+struct D : B<T>
+{
+
+    template<typename ...C>
+    D() : B() {} // C2614. Missing template arguments to B.
+};
+
+D<int> d;
+
+```
+
+To fix the error, change the B() expression to B\<T>().
+
+
 
 ## See also
 

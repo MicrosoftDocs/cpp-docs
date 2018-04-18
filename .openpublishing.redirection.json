@@ -181,6 +181,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/cpp/attributes2.md",
+            "redirect_url": "/cpp/cpp/attributes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/character-sets2.md",
+            "redirect_url": "/cpp/cpp/character-sets",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/cpp/index.md",
             "redirect_url": "/cpp/cpp/cpp-language-reference",
             "redirect_document_id": false
